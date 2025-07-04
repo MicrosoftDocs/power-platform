@@ -46,7 +46,7 @@ In this article, learn about all the functions available in [Power Automate for 
 
 **[Blank](reference/function-isblank-isempty.md)** – Returns a _blank_ value that can be used to insert a NULL value in a data source.
 
-**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or untyped value to a Boolean value.
+**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or dynamic value to a Boolean value.
 
 ## C
 

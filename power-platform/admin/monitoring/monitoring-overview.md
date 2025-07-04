@@ -4,7 +4,7 @@ description: Learn how to use the Monitor > Overview page to monitor and improve
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/23/2025
+ms.date: 06/19/2025
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
@@ -19,7 +19,6 @@ contributors:
 # Monitor the health of your resources (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Your organization can use the **Monitor** area of the Power Platform admin center to measure and improve operational health metrics of resources that are built or deployed. Those resources include apps and flows. 
 
@@ -81,7 +80,7 @@ For resources that are available in the Monitor experience, you can learn more a
 | Product | Resource | Availability in the Power Platform admin center | Availability in the maker experience |
 |---|---|---|---|
 | Power Apps | Canvas app | Preview | Preview |
-| Power Apps | Model-driven apps | Not yet available | Not yet available |
+| Power Apps | Model-driven apps | Preview | Preview |
 | Power Automate | Cloud flows | Preview | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Power Automate | Desktop flows | Preview | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Power Automate | Work queue | Not yet available| Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |

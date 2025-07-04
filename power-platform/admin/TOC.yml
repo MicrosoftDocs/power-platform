@@ -440,6 +440,8 @@
               href: monitoring/monitoring-overview.md
             - name: View event logs and error logs (preview)
               href: monitoring/logs.md
+            - name: Create alerts for your resources (preview)
+              href: monitoring/alerts.md
             - name: Metrics and recommendations
               items:
                 - name: For Power Apps (preview)
@@ -447,7 +449,11 @@
                 - name: For Power Automate (preview)
                   href: monitoring/monitor-power-automate.md
         - name: Copilot
-          href: copilot/copilot-hub.md
+          items:
+            - name: Track, manage, and scale Copilot adoption
+              href: copilot/copilot-hub.md
+            - name: View agent inventory (preview)
+              href: tenant-wide-agent-inventory.md
         - name: Security
           items:
             - name: Security overview
@@ -854,11 +860,13 @@
                   href: powerplatform-api-create-service-principal.md
                 - name: Reference
                   items:
-                    - name: "2024-10-01"
+                    - name: Power Platform API for .NET
+                      href: /dotnet/api/?view=power-platform-latest
+                    - name: "Power Platform REST API v2024-10-01"
                       href: /rest/api/power-platform
-                    - name: 2022-03-01-preview
+                    - name: "Power Platform REST API v2022-03-01-preview"
                       href: /rest/api/power-platform
-                    - name: "2020-10-01"
+                    - name: "Power Platform REST API v2020-10-01"
                       items:
                         - name: Environments
                           items:
