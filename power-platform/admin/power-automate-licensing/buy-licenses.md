@@ -28,11 +28,11 @@ You can purchase Power Automate plans from [Microsoft 365 admin center](https://
 1. Go to **Marketplace** > **All products**, and then search for "Power Automate" to find all relevant plans.
 1. Select the plan that you want to buy.
 
-   ![Purchase services by selecting a plan](../media/power-automate-licensing/select-plan.png)
+   :::image type="content" source="../media/power-automate-licensing/select-plan.png" alt-text="Screenshot that shows purchasing services by selecting a plan in the Microsoft 365 admin center." lightbox="../media/power-automate-licensing/select-plan.png":::
 
 1. Provide the **Details** of the plan and then select **Buy**.
 
-   ![Image showing the detail for the plan selected](../media/power-automate-licensing/selected-plan.png)
+   :::image type="content" source="../media/power-automate-licensing/selected-plan.png" alt-text="Screenshot that shows the details for the selected Power Automate plan." lightbox="../media/power-automate-licensing/selected-plan.png":::
 
 ## Manage licenses
 
@@ -110,7 +110,7 @@ Follow these steps to assign Process capacity to an environment.
 
 1. Select **Save**.
 
-   ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-process-license-environment-new.png)
+   :::image type="content" source="../media/power-automate-licensing/assign-process-license-environment-new.png" alt-text="Screenshot that shows the steps needed to assign a Process license to an environment in the new admin center." lightbox="../media/power-automate-licensing/assign-process-license-environment-new.png":::
 
 # [Classic admin center](#tab/classic)
 
@@ -128,11 +128,11 @@ Follow these steps to assign Process capacity to an environment.
 
 1. Select **Save**.
 
-   ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-process-license-environment.png)
+   :::image type="content" source="../media/power-automate-licensing/assign-process-license-environment.png" alt-text="Screenshot that shows the steps needed to assign a Process license to an environment in the classic admin center." lightbox="../media/power-automate-licensing/assign-process-license-environment.png":::
 
 ---
 
-#### Assign a Process license to a flow.
+#### Assign a Process license to a flow
 
 After you assign the Process licenses to an environment, you can choose which flows can use the Process licenses.
 
@@ -142,7 +142,7 @@ After you assign the Process licenses to an environment, you can choose which fl
 
 1. To have a flow use the Process license, select **Edit** in the details panel. You then see the **Name**, **Description**, and **Plan** that the flow uses. If your environment has the Process license assigned, you can move that flow to use the Process license. Otherwise, you need to assign capacity.
 
-   ![Image that shows that not per flow capacity is available.](../media/power-automate-licensing/per-flow-plan-capacity-needed.png)
+   :::image type="content" source="../media/power-automate-licensing/per-flow-plan-capacity-needed.png" alt-text="Screenshot that shows that per flow capacity is not available and needs to be assigned." lightbox="../media/power-automate-licensing/per-flow-plan-capacity-needed.png":::
 
 After you update your flow, anyone will be able to use that flow, even if it uses premium connectors. Additionally, capacity is dedicated to that flow.
 
@@ -150,7 +150,7 @@ After you update your flow, anyone will be able to use that flow, even if it use
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/), select **Users** > **Active users**.
 
-   ![Image displays active users selected.](../media/power-automate-licensing/active-users.png)
+   :::image type="content" source="../media/power-automate-licensing/active-users.png" alt-text="Screenshot that shows the Active users section selected in the Microsoft 365 admin center." lightbox="../media/power-automate-licensing/active-users.png":::
 
 1. Select the user to whom you assign the license.
 
@@ -158,7 +158,7 @@ After you update your flow, anyone will be able to use that flow, even if it use
 
 1. Select the checkbox for the license you want to assign to the user, and then save your changes.
 
-   ![This image displays the list of licenses that can be assigned to a user.](../media/power-automate-licensing/user-licenses-apps.png)
+   :::image type="content" source="../media/power-automate-licensing/user-licenses-apps.png" alt-text="Screenshot that shows the list of licenses that can be assigned to a user." lightbox="../media/power-automate-licensing/user-licenses-apps.png":::
 
 ### Assign per flow license
 
@@ -192,7 +192,7 @@ Follow these steps to allocate add-ons to an environment.
    > The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in each environment.
 1. Select **Save**.
 
-   ![An image that displays the steps needed to assign a license to an environment and manage add-ons.](../media/power-automate-licensing/assign-license-environment-new.png)
+   :::image type="content" source="../media/power-automate-licensing/assign-license-environment-new.png" alt-text="Screenshot that shows the steps needed to assign a per flow license to an environment and manage add-ons in the new admin center." lightbox="../media/power-automate-licensing/assign-license-environment-new.png":::
 
 # [Classic admin center](#tab/classic)
 
@@ -208,7 +208,7 @@ Follow these steps to allocate add-ons to an environment.
    > The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in each environment.
 1. Select **Save**.
 
-   ![An image that displays the steps needed to assign a license to an environment and manage add-ons.](../media/power-automate-licensing/assign-license-environment.png)
+   :::image type="content" source="../media/power-automate-licensing/assign-license-environment.png" alt-text="Screenshot that shows the steps needed to assign a per flow license to an environment and manage add-ons in the classic admin center." lightbox="../media/power-automate-licensing/assign-license-environment.png":::
 
 
 ---
@@ -220,11 +220,11 @@ After you assign a per flow plan add-on to an environment, you can choose which 
 
    When you select a flow, you see a new section in the details pane that tells you if the flow is assigned to a user, or if it's part of the per-flow plan. The default for a flow is to use the license of the user.
 
-   ![An image that displays that a flow uses per user plan by default.](../media/power-automate-licensing/per-user-plan-assigned.png)
+   :::image type="content" source="../media/power-automate-licensing/per-user-plan-assigned.png" alt-text="Screenshot that shows that a flow uses per user plan by default." lightbox="../media/power-automate-licensing/per-user-plan-assigned.png":::
 
 1. To have a flow use the per-flow plan, select **Edit** in the details panel. You then see the **Name**, **Description**, and **Plan** that the flow uses. If your environment has the per flow add-on allocated, you can move that flow to use the per flow plan. Otherwise, you need to allocate capacity.
 
-   ![Image that shows that not per flow capacity is available.](../media/power-automate-licensing/per-flow-plan-capacity-needed.png)
+   :::image type="content" source="../media/power-automate-licensing/per-flow-plan-capacity-needed.png" alt-text="Screenshot that shows that per flow capacity is not available and needs to be assigned." lightbox="../media/power-automate-licensing/per-flow-plan-capacity-needed.png":::
 
 After you update your flow, anyone will be able to use that flow, even if it uses premium connectors. Additionally, capacity is dedicated to that flow.
 
@@ -237,7 +237,7 @@ After you update your flow, anyone will be able to use that flow, even if it use
 1. In the **Licensing** pane, select **Capacity add-ons**. 
 1. Select **Add-ons** > **Manage** in the add-on section.
 
-![An image that displays how to assign unattended add-ons.](../media/power-automate-licensing/assign-unattended-add-on-new.png)
+:::image type="content" source="../media/power-automate-licensing/assign-unattended-add-on-new.png" alt-text="Screenshot that shows how to assign unattended RPA add-ons in the new admin center." lightbox="../media/power-automate-licensing/assign-unattended-add-on-new.png":::
 
 # [Classic admin center](#tab/classic)
 
@@ -245,7 +245,7 @@ After you update your flow, anyone will be able to use that flow, even if it use
 1. Select **Resources** > **Capacity** on the left side of the screen.
 1. Select **Add-ons** > **Manage** in the add-on section.
 
-![An image that displays how to assign unattended add-ons.](../media/power-automate-licensing/assign-unattended-add-on.png)
+:::image type="content" source="../media/power-automate-licensing/assign-unattended-add-on.png" alt-text="Screenshot that shows how to assign unattended RPA add-ons in the classic admin center." lightbox="../media/power-automate-licensing/assign-unattended-add-on.png":::
 
 ---
 
@@ -266,7 +266,7 @@ Follow these steps to monitor license usage.
 
 1. Go to **Billing** > **Licenses** to see all licenses that are assigned or available.
 
-   ![An image that displays the list of available or assigned licenses.](../media/power-automate-licensing/trial-licenses.png)
+   :::image type="content" source="../media/power-automate-licensing/trial-licenses.png" alt-text="Screenshot that shows the list of available or assigned licenses in the Microsoft 365 admin center." lightbox="../media/power-automate-licensing/trial-licenses.png":::
 
 1. Select the progress bar in the **Assigned licenses** column to see which users have licenses assigned to them.
 
@@ -317,7 +317,7 @@ Users can use Power Automate either as individuals or as a part of their organiz
 
 Power Automate allows you to create data groups for business and non-business data. After you implement these data loss prevention policies, users can't design nor run flows that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
 
-![An image that displays a sample data loss prevention configuration.](../media/power-automate-licensing/data-loss-prevention-policy.png)
+:::image type="content" source="../media/power-automate-licensing/data-loss-prevention-policy.png" alt-text="Screenshot that shows a sample data loss prevention policy configuration." lightbox="../media/power-automate-licensing/data-loss-prevention-policy.png":::
 
 
 ## I'm a maker
@@ -343,7 +343,7 @@ Yes. To get started, use the [self-service purchase](/microsoft-365/commerce/sub
 
 Customers can make a self-service purchase from Power Automate. To do this, they first provide their email address to confirm if they're a user in an existing Microsoft Entra tenant. Next, they need to sign in by using their Microsoft Entra credentials. After customers sign-in, they need to indicate the number subscriptions they want to purchase and provide a credit card for payment. When the purchase is complete, they can start using their subscription. The purchaser can also access a limited view of the Microsoft 365 admin center where they can enable other people in their organization to use the product.
 
-![This image displays the self service get started screen with all the necessary steps](../media/power-automate-licensing/get-started-self-service.png)
+:::image type="content" source="../media/power-automate-licensing/get-started-self-service.png" alt-text="Screenshot that shows the self-service purchase get started screen with all the necessary steps." lightbox="../media/power-automate-licensing/get-started-self-service.png":::
 
 Admins can turn off self-service purchasing on a per product basis via the [MSCommerce PowerShell module](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell).
 
@@ -375,11 +375,11 @@ Yes.
 
 1. Go to the [Microsoft Power Automate](https://flow.microsoft.com/pricing/) pricing page and select **Buy now** for the license that you need.
 
-   ![An image that displays a view of the Power Automate pricing page on the Internet.](../media/power-automate-licensing/pricing.png)
+   :::image type="content" source="../media/power-automate-licensing/pricing.png" alt-text="Screenshot that shows the Power Automate pricing page on the internet." lightbox="../media/power-automate-licensing/pricing.png":::
 
 1. Fill in the details, and then send the request to your admin.
 
-   ![An image that shows a request to be sent to an admin for a license.](../media/power-automate-licensing/maker-request-to-admin.png)
+   :::image type="content" source="../media/power-automate-licensing/maker-request-to-admin.png" alt-text="Screenshot that shows a license request form to be sent to an admin." lightbox="../media/power-automate-licensing/maker-request-to-admin.png":::
 
 1. Admins can see your request in the Microsoft 365 admin center and assign a license to you.
 
