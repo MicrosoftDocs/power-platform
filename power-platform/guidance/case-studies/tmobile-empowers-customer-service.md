@@ -1,24 +1,24 @@
 ---
 title: T-Mobile empowers customer service representatives using Power Apps and Copilot Studio
-description: Learn how T-Mobile empowers customer service representatives to answer customer questions faster and streamline customer service.
+description: Learn how T-Mobile empowers customer service representatives to answer questions faster and improve the customer experience.
 #customer intent: As a Power Platform user, I want to learn how T-Mobile uses Power Apps and Copilot Studio to empower customer service representatives so that I can apply similar solutions in my organization.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 07/03/2025
+ms.date: 07/07/2025
 ---
 
 # T-Mobile empowers customer service representatives using Power Apps and Copilot Studio
 
-In this case study, you learn how T-Mobile empowers customer service representatives (CSRs) with the PromoGenius app, built using Power Apps and Copilot Studio. T-Mobile leads the U.S. wireless industry and operates the second largest network in the country. The company serves more than 130 million customers. The PromoGenius app brings information from different sources together in one place, so CSRs can use natural language queries to get answers quickly.
+In this case study, you learn how [T-Mobile](https://www.t-mobile.com/our-story) empowers customer service representatives (CSRs) with the PromoGenius app, built using Power Apps, and Copilot Studio. T-Mobile leads the U.S. wireless industry and operates the second largest network in the country. The company serves more than 130 million customers. The PromoGenius app brings information from different sources together in one place, so CSRs can use natural language queries to get answers quickly.
 
 ## Challenges
 
 T-Mobile frontline retail employees need instant access to promotional offers and other key sales information. They need data about new devices, discounts, trade-in offers, and technical details about devices.
 
-Some information is in internal data sources, but technical details about devices are spread across device manufacturers' websites. Finding the right information on these sites can take time, especially if the customer wants to compare products across multiple sites.
+Some information is in internal data sources, but technical details about devices are spread across device manufacturers' websites. Finding the right information on these sites takes time, especially if the customer wants to compare products across multiple sites.
 
 To address this challenge, CSRs receive a daily report in PDF format with the latest updates on devices and available offers. Over time, the document became more complex and harder to search. CSRs printed the document for quick reference and accessed multiple systems to find technical details, switching between several applications on an iPad. This way of working wasn't efficient or environmentally friendly. It was time to move away from this paper-heavy and time-consuming process.
 
@@ -40,7 +40,7 @@ For instance, users can ask to compare connectivity.
 
 :::image type="content" source="media/t-mobile/connectivity.png" alt-text="Screenshot of device connectivity comparison in the PromoGenius app." lightbox="media/t-mobile/connectivity.png":::
 
-The user is presented with comparison details instantly, without navigating to the manufacturer's different websites for manual comparisons.
+The user is presented with comparison details instantly, without navigating to the manufacturers' websites for manual comparisons.
 
 :::image type="content" source="media/t-mobile/details.png" alt-text="Screenshot of instant device comparison results in the PromoGenius app." lightbox="media/t-mobile/details.png":::
 
@@ -82,7 +82,7 @@ This image illustrates the generative AI settings in Copilot Studio:
 
 The initial idea was to obtain data from websites by adding the websites as knowledge sources in the agent and to use Dataverse for promotional data. This agent journey covered exploring different ways of having the agent leverage external website data.
 
-The following image shows some of the knowledge sources used, including public websites and specific device documents, as well as Dataverse for promotions. The Dataverse information is updated nightly from other sources via Fabric pipelines.
+The following image shows some of the knowledge sources used, including public websites and specific device documents, as well as Dataverse for promotions. The Dataverse information is updated nightly from other sources via Microsoft Fabric pipelines.
 
 :::image type="content" source="media/t-mobile/knowledge-source.png" alt-text="Screenshot of knowledge sources including public websites, device documents, and Dataverse for promotions." lightbox="media/t-mobile/knowledge-source.png":::
 
@@ -92,7 +92,7 @@ To get precise and reliable results for website knowledge sources, the team expl
 
 Using Bing Custom Search for generative answer nodes in a topic lets you prioritize websites and restrict certain parts, which isn't possible when adding a website as a knowledge source for the agent. In this case, websites as knowledge sources are used as a fallback.
 
-T-Mobile uses Bing Custom Search in the PromoGenius app both for device technical information from manufacturer's websites and for promotional data from their own website. The following image shows some of the active listed pages in the Bing Custom Search web portal.
+T-Mobile uses Bing Custom Search in the PromoGenius app both for device technical information from manufacturers' websites and for promotional data from their own website. The following image shows some of the active listed pages in the Bing Custom Search web portal.
 
 :::image type="content" source="media/t-mobile/bing-portal.png" alt-text="Screenshot of Bing Custom Search Web Portal with active listed web pages for device data." lightbox="media/t-mobile/bing-portal.png":::
 
@@ -100,7 +100,7 @@ Certain website pages are blocked, so answers come from sources other than the b
 
 :::image type="content" source="media/t-mobile/blocked-pages.png" alt-text="Screenshot of Bing Custom Search Web Portal showing blocked T-Mobile web pages." lightbox="media/t-mobile/blocked-pages.png":::
 
-The following image shows details of a Copilot Studio topic related to comparing two devices, with the **Test your agent** preview demonstrating a comparison of the iPhone 16 Pro and the Pixel 9 Pro:
+This image shows details of a Copilot Studio topic related to comparing two devices, with the **Test your agent** preview demonstrating a comparison of the iPhone 16 Pro and the Pixel 9 Pro:
 
 :::image type="content" source="media/t-mobile/config-topic.png" alt-text="Screenshot of configuration of a Copilot Studio topic named Compare Devices." lightbox="media/t-mobile/config-topic.png":::
 
@@ -108,9 +108,11 @@ The following image shows details of a Copilot Studio topic related to comparing
 
 To improve the user experience when comparing devices, T-Mobile decided to present the output in a table. To achieve this goal, they instructed the agent to structure the information in a tabular format (as shown in general instructions to [the embedded Copilot Studio agent](#the-embedded-copilot-studio-agent)):
 
-> When providing device details, format the information into a bullet-point list for clarity. When comparing devices, format the features and specifications in a well-organized, side-by-side comparison using tabular format.
+```copilot-prompt
+When providing device details, format the information into a bullet-point list for clarity. When comparing devices, format the features and specifications in a well-organized, side-by-side comparison using tabular format.
+```
 
-The following image illustrates the agent's response when a user requests a comparison between two devices:
+The following image illustrates the agent's response when a user requests a comparison between two devices, the iPhone 16 Pro and Pixel 9 Pro:
 
 :::image type="content" source="media/t-mobile/agent-response.png" alt-text="Screenshot of Copilot Studio agent response with device comparison in tabular format." lightbox="media/t-mobile/agent-response.png":::
 
@@ -124,7 +126,7 @@ Under the Generative AI options, you can choose a primary response model, as sho
 
 ### ALM with Power Platform Pipelines
 
-Application lifecycle management (ALM) routines support the PromoGenius app and Copilot Studio agent. Three environments have been set up: development, test, and production. Power Platform Pipelines manage deployments. Environment variables point to different services with values specific to each environment.
+Application lifecycle management (ALM) routines support the PromoGenius app and Copilot Studio agent. Three environments were set up: development, test, and production. Power Platform Pipelines manage deployments. Environment variables point to different services with values specific to each environment.
 
 ## Technologies used
 
@@ -157,7 +159,7 @@ This case study demonstrates the benefits of using Power Apps and Copilot Studio
 Here are key takeaways for IT professionals who want to set up a similar solution in their organization:
 
 - Use Custom Bing Search to prioritize data sources and exclude data.
-- Use Fabric pipelines to add data from other sources to Dataverse when heavy data transformations are required.
+- Use Microsoft Fabric pipelines to add data from other sources to Dataverse when heavy data transformations are required.
 - Optimize the presentation layer by providing clear instructions and specifying how the agent should respond.
 
 Since releasing the PromoGenius app, T-Mobile has realized the following benefits:
@@ -168,7 +170,7 @@ Since releasing the PromoGenius app, T-Mobile has realized the following benefit
 
 As the second most popular app at T-Mobile, PromoGenius supports all T-Mobile retail outlets and call centers, with more than 83,000 unique users and 500,000 launches a month.
 
-Brian highlights that key lessons from this project include the importance of involving end users in developing the solution and getting users onboard early.
+Brian highlights that key lessons from this project include the importance of involving end users in developing the solution and getting users onboard early:
 
 > One of the key lessons is the importance of engaging directly with the people who use the solution. Talking with them about the user interface and functionality helps create a better experience. This platform makes that possible, offering speed and efficiency. Unlike traditional development tools, which don't let you collaborate on interface design in real time, this platform lets you sit with users and refine the experience together.
 >

@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 07/03/2025
+ms.date: 07/07/2025
 ---
 
 # SLB enhances productivity with Power Platform and AI
@@ -201,8 +201,7 @@ The tax-association chatbot provides SLB with the following benefits:
 
 ### Canvas app to extract and map data between systems
 
-SAHL (which means "ease" in Arabic) is an application built with Power Apps that uses Power Automate and Dataverse to integrate Drilling and Workover Integrated Logistic & Invoicing Platform (DILIP) eTickets with the Field Delivery Platform (FDP). The app streamlines the process and
-eliminates the need for double data entry and manual effort, while ensuring data consistency across both systems.
+SAHL (which means "ease" in Arabic) is an application built with Power Apps that uses Power Automate and Dataverse to integrate Drilling and Workover Integrated Logistic & Invoicing Platform (DILIP) eTickets with the Field Delivery Platform (FDP). The app streamlines the process and eliminates the need for double data entry and manual effort, while ensuring data consistency across both systems.
 
 The current billing system in the Kingdom of Saudi Arabia (KSA) requires redundant data entry and manual effort to record financial costs in both DILIP and FDP. The new solution aims to automate this process, ensuring data integrity between the internal business system and the client's external business system.
 
@@ -212,7 +211,7 @@ The current KSA billing system requires redundant data entry and manual effort t
 
 #### Solution
 
-By developing a canvas app that automates the data extraction and mapping process between DILIP and FDP, SLB eliminated the need for manual double-entry by Product and Service Delivery personnel.
+By developing a canvas app that automates the data extraction and mapping process between DILIP and FDP, SLB eliminated the need for manual double-entry by Product and Service Delivery (PSD) personnel.
 
 The following diagram shows the detailed architecture of the technologies used to build SLB's SAHL application:
 
@@ -229,17 +228,17 @@ All data used by the SAHL application is stored in Microsoft Dataverse.
 
 #### Takeaways
 
-"Our collaboration has led to the development and implementation of a robust integration platform (SAHL) between our internal system (FDP) and our customers' billing systems (DILIP)," explained Teena Bindal, SLB Solution Architect. "This initiative has significantly improved user experience, enhanced data integrity, and unlocked performance across our operations."
+"Our collaboration has led to the development and implementation of a robust integration platform (SAHL) between our internal system (FDP) and our customers' billing systems (DILIP)," explained Teena Bindal, an SLB Solution Architect. "This initiative has significantly improved user experience, enhanced data integrity, and unlocked performance across our operations."
 
 Here are some key takeaways for IT and product-testing professionals who are looking to implement a similar solution in their own organizations:
 
-- **Data extraction**: Data extracted from PDFs.
-- **Data mapping**: Automated mapping to SLB master data IDs: SPNs, Rig, Well.
-- **Data transmission**: Auto-entry into the FDP system.
+- **Data extraction**: Extract data from PDFs.
+- **Data mapping**: Automate mapping to master data IDs: SPNs, Rig, Well.
+- **Data transmission**: Automate entry into the target (FDP) system.
 
 The back end uses Microsoft Dataverse, while the front end is built with Power Platform's canvas apps. Security is managed through Azure Key Vault for secret management and role-based access control (RBAC) ensures proper permissions within the system.
 
-Teena Bindal, a Solution Architect at SLB, explains the benefits: "This automation eliminates the need for double entry, streamlines the billing process, and ensures a smoother, more intuitive experience for all users involved."
+Teena Bindal explains the benefits: "This automation eliminates the need for double entry, streamlines the billing process, and ensures a smoother, more intuitive experience for all users involved."
 
 The canvas app provides SLB with the following benefits:
 
@@ -272,8 +271,8 @@ Here are some key takeaways for IT professionals who want to implement similar s
 
 - **Share project information**: Use Power Apps, AI Builder, and Power Automate to build an app that collects project information from a global team.
 - **Store information in Dataverse and SharePoint**.
-    - Empower employees to find projects they can join or learn from so that they can build and contribute similar projects.
-    - Extract data: Use Power Automate and AI Builder to extract data from online documents like invoices and shipping logs.
+    - Empower employees to find projects they can join or learn from so that they can build and contribute to similar projects.
+    - Use Power Automate and AI Builder to extract data from online documents like invoices and shipping logs.
 - **Compare and validate data**: Automatically compare and validate data from multiple sources, such as emails, an online system, PDFs on SharePoint, or data in Dataverse entered through a Power Apps app.
 - **Update systems of record**: Use Power Automate to update systems of record and report any issues, for tax identification, accounting records, shipping and supply chain management, invoice validation, or similar tasks.
 - **Secure credentials**: Use Azure Key Vault for secure secret management, including sensitive data like passwords, encryption keys, and API tokens.
@@ -286,14 +285,14 @@ Since building solutions with Microsoft Power Platform, SLB has obtained the fol
 - **1,000 emails processed automatically each month**: Improved scalability saved time and effort, equivalent to one full-time employee.
 - **Fewer errors**: Business validations generated accurate airline GST reports.
 - **No double entry**: Doubled productivity by reducing duplicate data entry between DILIP and FDP systems.
-- **Easier discount management**: Discount handling is simpler and error-free.
+- **Easier discount management**: Makes discount handling easier and error-free.
 - **Significant cost savings**: Aims to save 11 full-time employees (PSD assistants), for an annual cost saving of about $500,000.
 
 ## Looking ahead
 
 SLB has revolutionized employee productivity with Power Platform in the oilfield services and equipment industry. 
 
-SLB continues to benefit from the project discovery application, which drives global employee collaboration and leads to create similar projects each month. Many of these projects include automation solutions built on Power Platform like the examples described in this article. SLB plans to focus on scaling their adoption of Power Platform to improve other aspects of its business.
+SLB continues to benefit from the project discovery application, which drives global employee collaboration and innovation. Many of these projects include automation solutions built on Power Platform like the examples described in this article. SLB plans to focus on scaling their adoption of Power Platform to improve other aspects of its business.
 
 ## Related information
 
