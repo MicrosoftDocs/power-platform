@@ -177,7 +177,7 @@ The solution implemented employs a Power Automate flow to automate the extractio
 
 The following diagram illustrates the automated extraction and processing of flight invoices at SLB:
 
-:::image type="content" source="media/slb/automated-extration.png" alt-text="Siagram showing the automated extraction and processing of flight invoices at SLB using Power Automate and AI Builder." lightbox="media/slb/automated-extration.png":::
+:::image type="content" source="media/slb/automated-extraction.png" alt-text="Siagram showing the automated extraction and processing of flight invoices at SLB using Power Automate and AI Builder." lightbox="media/slb/automated-extraction.png":::
 
 #### Takeaways
 
@@ -215,7 +215,7 @@ By developing a canvas app that automates the data extraction and mapping proces
 
 The following diagram shows the detailed architecture of the technologies used to build SLB's SAHL application:
 
-:::image type="content" source="media/slb/sahl.png" alt-text="Diagram showing the architecture of the SAHL application, which integrates DILIP and FDP systems using Power Platform tools such as Power Automate, Power Apps, and Dataverse." lightbox="media/slb/sahl.png":::
+:::image type="content" source="media/slb/canvas-app-workflow.png" alt-text="Diagram showing the architecture of the SAHL application, which integrates DILIP and FDP systems using Power Platform tools such as Power Automate, Power Apps, and Dataverse." lightbox="media/slb/canvas-app-workflow.png":::
 
 The following high-level tasks are performed by the SAHL app:
 
