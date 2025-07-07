@@ -17,10 +17,10 @@ search.audienceType:
 ---
 # Integrate data into Microsoft Dataverse
 
-The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. It supports integrating data between finance and operations apps and Dataverse. It also supports integrating data into finance and operations apps and Dynamics 365 Sales. This service has been generally available since July 2017.   
+The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. It supports integrating data between finance and operations apps and Dataverse. It also supports integrating data into finance and operations apps and Dynamics 365 Sales. This service is generally available since July 2017.   
 
 > [!NOTE]
-> We highly recommend customers start using [dual-write](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page) which provides tightly coupled, bidirectional integration between finance and operations apps and Dataverse. Any data change in finance and operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to finance and operations apps. This automated data flow provides an integrated user experience across the apps. 
+> We highly recommend customers start using [dual-write](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page), which provides tightly coupled, bidirectional integration between finance and operations apps and Dataverse. Any data change in finance and operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to finance and operations apps. This automated data flow provides an integrated user experience across the apps. 
 
 > [!TIP]
 > Check out the blog: [Data Integrator Updates – New features with an intuitive user interface providing a fluent experience](https://powerapps.microsoft.com/blog/data-integrator-updates-new-features-with-an-intuitive-user-interface-providing-a-fluent-experience/).
@@ -41,9 +41,9 @@ and [PSA (Project Service Automation) integration](/dynamics365/unified-operatio
 
 ## Data Integrator Platform
 
-The Data Integrator (for Admins) consists of the Data Integration platform, out-of-the-box templates provided by our application teams (for example, finance and operations apps and Dynamics 365 Sales) and custom templates created by our customers and partners. We have built an application-agnostic platform that can scale across various sources. At the very core of it, you create connections (to integration end points), choose one of the customizable templates with predefined mappings (that you can further customize), and create and execute the data integration project.  
+The Data Integrator (for Admins) consists of the Data Integration platform, out-of-the-box templates provided by our application teams (for example, finance and operations apps and Dynamics 365 Sales) and custom templates created by our customers and partners. We have built an application-agnostic platform that can scale across various sources. At the core of it, you create connections (to integration end points), choose one of the customizable templates with predefined mappings (that you can further customize), and create and execute the data integration project.  
 
-Integration templates serve as a blueprint with predefined entities and field mappings to enable flow of data from source to destination. It also provides the ability to transform the data before importing it. Many times, the schema between the source and destinations apps can be very different and a template with predefined entities and field mappings serves as a great starting point for an integration project.  
+Integration templates serve as a blueprint with predefined entities and field mappings to enable flow of data from source to destination. It also allows you to transform the data before importing it. Many times, the schema between the source and destinations apps can be different and a template with predefined entities and field mappings serves as a great starting point for an integration project.  
 
 > [!div class="mx-imgBorder"]
 > ![Data Integration platform.](media/data-integrator/DIPlatform.PNG "Data Integration platform")
@@ -78,7 +78,7 @@ Before you can create a data integration project, you must provision a connectio
     > [!div class="mx-imgBorder"] 
     > ![Create connection.](media/data-integrator/CreateConnection780.png "Create connection")
 
-4. Once you select your connection, select **Create**. Then you will be prompted for credentials.
+4. After you select your connection, select **Create**. Then you're prompted for credentials.
 
 5. After you provide your credentials, the connection will be listed under your connections.
 
@@ -86,7 +86,7 @@ Before you can create a data integration project, you must provision a connectio
     > ![Connection list.](media/data-integrator/CreateConnection1780.png "Connection list")
 
 > [!NOTE]
-> Please make sure that the account you specify for each connection has access to entities for the corresponding applications. Additionally, the account for each connection can be in a different tenant. 
+> Make sure that the account you specify for each connection has access to entities for the corresponding applications. Additionally, the account for each connection can be in a different tenant. 
 
 ### How to create a connection set
 
@@ -109,14 +109,14 @@ Connection sets are a collection of two connections, environments for the connec
 
 6. Repeat the steps by choosing your next connection (think of these as source and destination in no specific order).
 
-7. Specify the organization to business unit mapping (if you are integrating between finance and operations apps and Sales systems).
+7. Specify the organization to business unit mapping (if you're integrating between finance and operations apps and Sales systems).
   
     > [!NOTE]
     > You can specify multiple mappings for each connection set.
   
-8. Once you have completed all the fields, select **Create**.
+8. After you complete all the fields, select **Create**.
 
-9. You will see the new connection set you just created under the Connection sets list page.
+9. You see the new connection set you created under the Connection sets list page.
     
     > [!div class="mx-imgBorder"] 
     > ![Connection set list.](media/data-integrator/CreateConnectionSet2780.png "Connection set list")
@@ -142,14 +142,14 @@ Projects enable the flow of data between systems. A project contains mappings fo
 
 4. Provide a name for your integration project.
 
-5. Select one of the available templates (or [create your own template](#how-to-create-your-own-template)). In this case, we are moving the Products entity from finance and operations apps to Sales.
+5. Select one of the available templates (or [create your own template](#how-to-create-your-own-template)). In this case, we're moving the Products entity from finance and operations apps to Sales.
 
     > [!div class="mx-imgBorder"] 
     > ![Select template to create new project.](media/data-integrator/CreateNewProjectSelectTemplate780.png "Select template to create new project")
 
 6. Select **Next** and choose a connection set you created earlier (or [create a new connection set](#how-to-create-a-connection-set)).
 
-7. Make sure you have chosen the right one by confirming the connection and environment names.
+7. Make sure you chose the right one by confirming the connection and environment names.
 
     > [!div class="mx-imgBorder"] 
     > ![Create a new connection set.](media/data-integrator/CreateNewProjectSelectConnectionSet780.png "Create a new connection set")
@@ -161,12 +161,12 @@ Projects enable the flow of data between systems. A project contains mappings fo
 
 9. Review and accept the privacy notice and consent on the next screen.
 
-10. Proceed to create the project and then run the project which in turn executes the project.
+10. Proceed to create the project and then run the project, which in turn executes the project.
 
     > [!div class="mx-imgBorder"] 
     > ![Run project.](media/data-integrator/RunProject780.png "Run project")
 
-    On this screen, you will notice several tabs—**Scheduling** and **Execution history**—along with some buttons—**Add task**, **Refresh entities**, and **Advanced Query**—that will be described later in this article.
+    On this screen, you notice several tabs—**Scheduling** and **Execution history**—along with some buttons—**Add task**, **Refresh entities**, and **Advanced Query**—that are described later in this article.
 
 ### Execution history
 
@@ -184,19 +184,19 @@ Execution history shows the history of all project executions with project name,
 
 -   For execution failures, you can drill down to see the root cause.
 
-    Here is an example of a failure with project validation errors. In this case, the project validation error is due to missing source fields in the entity mappings.
+    Here's an example of a failure with project validation errors. In this case, the project validation error is due to missing source fields in the entity mappings.
 
     > [!div class="mx-imgBorder"] 
     > ![Execution history failure.](media/data-integrator/ExecutionHistoryFailures3780.png "Execution history failure")
 
--   If the project execution is in 'ERROR' state, then it will retry execution at the next scheduled run.
+-   If the project execution is in 'ERROR' state, then it retries execution at the next scheduled run.
 
--   If the project execution is in 'WARNING' state, then you will need to fix the issues on the source. It will retry execution at the next scheduled run.
+-   If the project execution is in 'WARNING' state, then you need to fix the issues on the source. It retries execution at the next scheduled run.
 
     In either case, you could also choose to manually 're-run execution.'
 
 > [!NOTE]
-> Anytime you execute a project, manually or schedule based, it generates a detailed log which shows project name, last updated timestamp along with status. You can view this under the execution history for each project. Project execution history is maintained for 45 days after which it is automatically purged.
+> Anytime you execute a project, manually or schedule based, it generates a detailed log, which shows project name, last updated timestamp along with status. You can view this under the execution history for each project. Project execution history is maintained for 45 days after which it's automatically purged.
 
 ### How to set up a schedule-based refresh
 
@@ -219,12 +219,12 @@ After you create an integration project, you get the option to run it manually o
     > [!div class="mx-imgBorder"] 
     > ![Schedule-based writes.](media/data-integrator/Schedulebasedwrites780.png "Schedule-based writes")
 
-3. Select **Recur every** and once you have completed all the fields, select **Save schedule**.
+3. Select **Recur every** and after you complete all the fields, select **Save schedule**.
 
     > [!div class="mx-imgBorder"] 
     > ![Save schedule.](media/data-integrator/Schedulebasedwrites1780.png "Save schedule")
 
-You can set a frequency as often as 1 minute or have it recur a certain number of hours, days, weeks, or months. Note that the next refresh won't start until the previous project task completes its run.
+You can set a frequency as often as 1 minute or have it recur some hours, days, weeks, or months. The next refresh won't start until the previous project task completes its run.
 
 Also note that under Notifications, you can opt in for email-based alert notifications, which would alert you on job executions that either completed with warnings and/or failed due to errors. You can provide multiple recipients, including groups separated by commas.
 
@@ -234,10 +234,10 @@ Also note that under Notifications, you can opt in for email-based alert notific
 > [!NOTE]
 > - Currently, we support scheduling 50 integration projects at any given time per paid tenant. However you can create more projects and run them interactively.
 For trial tenants, we have an additional limitation that a scheduled project would only run for first 50 executions.
-> - While we support scheduling projects to run every minute, please bear in mind that this may put a lot of stress on your apps and in turn impact overall performance. We highly encourage users to test project executions under true load conditions and optimize for performance with less frequent refreshes.
-In production environments, we do not recommend running more than 5 projects per minute per tenant.
+> - While we support scheduling projects to run every minute, bear in mind that this may put much stress on your apps and in turn impact overall performance. We highly encourage users to test project executions under true load conditions and optimize for performance with less frequent refreshes.
+In production environments, we don't recommend running more than five projects per minute per tenant.
 > - To optimize performance and not overload the apps, we currently limit project executions to 500k rows per execution per project.
-> - Anytime you execute a project, manually or schedule based, it generates a detailed log which shows project name, last updated timestamp along with status. You can view this under the execution history for each project. Project execution history is maintained for 45 days after which it is automatically purged.
+> - Anytime you execute a project, manually or schedule based, it generates a detailed log, which shows project name, last updated timestamp along with status. You can view this under the execution history for each project. Project execution history is maintained for 45 days after which it's automatically purged.
 
 ## Customizing projects, templates, and mappings 
 
@@ -267,7 +267,7 @@ You can customize projects and templates in these ways:
     > [!div class="mx-imgBorder"] 
     > ![Field mapping customize.](media/data-integrator/FieldMappingCustomize780.png "Field mapping customize")
 
-4. Once you have customized your field mappings, select **Save**.
+4. After you've customized your field mappings, select **Save**.
 
 ### How to create your own template 
 
@@ -286,7 +286,7 @@ You can customize projects and templates in these ways:
     > [!div class="mx-imgBorder"] 
     > ![Customize template.](media/data-integrator/CustomizeTemplate780.png "Customize template")
 
-    This will launch the **Add task** dialog.
+    This launches the **Add task** dialog.
 
 6. Provide a meaningful task name and add source and destination entities of your choice.
 
@@ -303,7 +303,7 @@ You can customize projects and templates in these ways:
     > [!div class="mx-imgBorder"] 
     > ![Customize template add task3.](media/data-integrator/CustomizeTemplateAddtask275.png "Customize template add task3")
 
-8. Once you create the task, you will see your new task listed and you can delete the original task.
+8. After you create the task, you see your new task listed and you can delete the original task.
 
     > [!div class="mx-imgBorder"] 
     > ![Customize template add task4.](media/data-integrator/CustomizeTemplateAddtask3780.png "Customize template add task4")
@@ -333,13 +333,13 @@ You can customize projects and templates in these ways:
 
 4. Follow the steps 6 through 9 <a href="#CreateProject">here</a> to finish creating a data integration project. Select **Save**.
 
-5. You'll see the Tasks page which is empty since it's a blank template, without any tasks. Select **Add task** to pick an entity from the drop-down list and add a new task.
-   In this case, for demo purposes, we will create an **Activities Sales to Fin and Ops** task by picking **Activities** entity for finance and operations apps and Dynamics 365 Sales. Select **Create**.
+5. You see the Tasks page, which is empty since it's a blank template, without any tasks. Select **Add task** to pick an entity from the drop-down list and add a new task.
+   In this case, for demo purposes, we create an **Activities Sales to Fin and Ops** task by picking **Activities** entity for finance and operations apps and Dynamics 365 Sales. Select **Create**.
 
     > [!div class="mx-imgBorder"] 
     > ![ActivitiesSales to Fin and Ops task.](media/activities-sales-fin-opps-task.png "ActivitiesSales to Fin and Ops task")
 
-6. You'll see a new task has been added **Activities Sales to Fin and Ops**. Select **Save** to save your changes.
+6. You see a new task is added **Activities Sales to Fin and Ops**. Select **Save** to save your changes.
 
     > [!div class="mx-imgBorder"] 
     > ![New task added.](media/new-task-added.png "New task added")
@@ -354,7 +354,7 @@ You can customize projects and templates in these ways:
     > [!div class="mx-imgBorder"] 
     > ![Save project as template.](media/save-describe-share.png "Save project as template")
 
-You'll see the newly created template listed on the **Templates** list page.
+You see the newly created template listed on the **Templates** list page.
 
 > [!div class="mx-imgBorder"] 
 > ![Newly created template.](media/newly-created-template.png "Newly created template")
@@ -380,12 +380,12 @@ With Power Query support, we provide advanced filtering and data transformation 
     > [!div class="mx-imgBorder"] 
     > ![Select Advanced Query.](media/data-integrator/EnablePQ1780.png "Select Advanced Query")
 
-3. You will get a warning that enabling advanced query is a one-way operation and cannot be undone. Select **OK** to proceed and then select the source and destination mapping arrow.
+3. You get a warning that enabling advanced query is a one-way operation and can't be undone. Select **OK** to proceed and then select the source and destination mapping arrow.
 
     > [!div class="mx-imgBorder"] 
     > ![Warning.](media/data-integrator/EnablePQ275.png "Warning")
 
-4. You are now presented with the familiar entity mapping page with a link to launch Advanced Query and Filtering.
+4. You're now presented with the familiar entity mapping page with a link to launch Advanced Query and Filtering.
 
     > [!div class="mx-imgBorder"] 
     > ![Advanced Query and Filtering.](media/data-integrator/EnablePQ3780.png "Advanced Query and Filtering")
@@ -438,26 +438,26 @@ With Power Query support, we provide advanced filtering and data transformation 
 For more information on Power Query, see [Power Query documentation](/power-query/).
 
 > [!NOTE]
-> - Once **Advanced Query and Filtering** is enabled, transforms via **Fn** are not supported, and instead should be defined using Advanced Query and Filtering. 
-> - Currently, we do not support doing joins across multiple data sources (either via the **Get data** button or M query) in Advanced Query and Filtering.
+> - After **Advanced Query and Filtering** is enabled, transforms via **Fn** aren't supported, and instead should be defined using Advanced Query and Filtering. 
+> - Currently, we don't support doing joins across multiple data sources (either via the **Get data** button or M query) in Advanced Query and Filtering.
 > - If you encounter Power Query evaluation limits with the error: 
 > 
->   <i>The powerquery job failed with error: Exception ExceptionType:MashupEvaluationException, ExceptionMessage:EvaluationQuotaReached, EvaluationResponse:{"ResultType":"ErrorCode","Code":"EvaluationQuotaReached"</i> 
+>   <i>The power query job failed with error: Exception ExceptionType:MashupEvaluationException, ExceptionMessage:EvaluationQuotaReached, EvaluationResponse:{"ResultType":"ErrorCode","Code":"EvaluationQuotaReached"</i> 
 >
 >   Review the guidance on [Power Query Online Limits](/power-query/power-query-online-limits).
-> - Modifying the _url_ directly in the mashup editor is not supported. Only the filter applied using the mashup editor UI or specified in source filter edit field on mapping page will be used.
+> - Modifying the _url_ directly in the mashup editor isn't supported. Only the filter applied using the mashup editor UI or specified in source filter edit field on mapping page is used.
 
 ## Performance tuning
 
 There are several factors that impact the performance of an integration scenario. Performance is highly dependent on: 
 
-- Which applications you are integrating: finance and operations apps and Dataverse
+- Which applications you're integrating: finance and operations apps and Dataverse
 
 - Which entities are used: the entities' shape, validation, and business logic (standard and customizations)
 
-The Data Integrator takes the data from the source application and pushes it into the target application. The main performance considerations are on how source and target applications scale with the concerned entities. It leverages the best available technologies to pull/push data in a performant manner.
+The Data Integrator takes the data from the source application and pushes it into the target application. The main performance considerations are on how source and target applications scale with the concerned entities. It uses the best available technologies to pull/push data in a performant manner.
 
-finance and operations apps uses the data management framework which provides a way to pull/push data in the most performant fashion. The data management framework is used to manage data entities and data entity packages in finance and operations apps. 
+finance and operations apps uses the data management framework, which provides a way to pull/push data in the most performant fashion. The data management framework is used to manage data entities and data entity packages in finance and operations apps. 
 
 Dynamics 365 for Dataverse uses OData APIs along with parallelism to maximize the performance. 
 
@@ -469,17 +469,17 @@ You can use the following settings to tune the performance of finance and operat
   Make sure the entities used for integration support direct export (**skip Staging On**). This allows export to run in bulk fashion and the staging table is bypassed. If you run with **skip Staging Off**, then it falls back to row by row calls and data is inserted in the staging table. 
 
 - Enable change tracking for entities
-  Change tracking enables incremental export of data from finance and operations apps by using data management. In an incremental export, only records that have changed are exported. To enable incremental export, you must enable change tracking on entities. Without change tracking, you will do full exports which may affect performance. For complex scenarios, use custom query for change tracking.
+  Change tracking enables incremental export of data from finance and operations apps by using data management. In an incremental export, only records that have changed are exported. To enable incremental export, you must enable change tracking on entities. Without change tracking, you do full exports, which may affect performance. For complex scenarios, use custom query for change tracking.
 
 ### Importing data to finance and operations apps:
 
 - Make sure the entity itself is performant. If possible, create set-based entities.
 
-- If the number of rows to be imported are high and entity does not support set operations: 
+- If the number of rows to be imported are high and entity doesn't support set operations: 
   Data management can be configured to import the entity with parallel tasks. This can be configured in data management (parameters), by configuring the entity execution parameters. This would use batch framework to create parallel tasks, which is based on resource availability to run in parallel.  
 
 - Turning off validations (optional): 
-  While the Data Integrator does not bypass any business logic and validations, you may optionally turn off the ones that are not required to improve performance.
+  While the Data Integrator doesn't bypass any business logic and validations, you may optionally turn off the ones that aren't required to improve performance.
 
 Consider the following tips to ensure performance while importing or exporting data from environments.
 
