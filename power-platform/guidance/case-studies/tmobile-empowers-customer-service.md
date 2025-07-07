@@ -34,11 +34,11 @@ The agent is useful for product comparisons, as it not only gathers the data but
 
 In the following image of the PromoGenius app, notice how filters be applied (on the top). Using natural language, users can ask questions about devices and compare the technical details.
 
-:::image type="content" source="media/t-mobile/promogenius.png" alt-text="Screenshot of the PromoGenius app interface with filters and device comparison options visible." lightbox="media/t-mobile/promogenius.png":::
+:::image type="content" source="media/t-mobile/app-promotions.png" alt-text="Screenshot of the PromoGenius app interface with filters and device comparison options visible." lightbox="media/t-mobile/app-promotions.png":::
 
 For instance, users can ask to compare connectivity.
 
-:::image type="content" source="media/t-mobile/connectivity.png" alt-text="Screenshot of device connectivity comparison in the PromoGenius app." lightbox="media/t-mobile/connectivity.png":::
+:::image type="content" source="media/t-mobile/connectivity.png" alt-text="Screenshot of device connectivity comparison in the PromoGenius app.":::
 
 The user is presented with comparison details instantly, without navigating to the manufacturers' websites for manual comparisons.
 
@@ -58,15 +58,15 @@ Key factors for success included 100% uptime, a scalable knowledge source such a
 
 The PromoGenius app is built as a Power Apps canvas app, with an embedded Copilot Studio agent. As shown in the following image, the agent is embedded using the fly-out option, a configuration done in the canvas app under **Settings**.
 
-:::image type="content" source="media/t-mobile/selectagent.png" alt-text="Screenshot of embedding the Copilot Studio agent in the PromoGenius Power Apps canvas app using the Settings option." lightbox="media/t-mobile/selectagent.png":::
+:::image type="content" source="media/t-mobile/select-agent.png" alt-text="Screenshot of embedding the Copilot Studio agent in the PromoGenius Power Apps canvas app using the Settings option." lightbox="media/t-mobile/select-agent.png":::
 
 This image shows the PromoGenius app including filters and the Copilot fly-out menu:
 
-:::image type="content" source="media/t-mobile/pgapp.png" alt-text="Screenshot of the PromoGenius app interface showing the Copilot fly-out menu." lightbox="media/t-mobile/pgapp.png":::
+:::image type="content" source="media/t-mobile/app-filters-device-model.png" alt-text="Screenshot of the PromoGenius app interface showing the Copilot fly-out menu." lightbox="media/t-mobile/app-filters-device-model.png":::
 
 This image shows how filters can be set to show available promotions:
 
-:::image type="content" source="media/t-mobile/setfilters.png" alt-text="Screenshot of filter settings for available promotions in the PromoGenius app." lightbox="media/t-mobile/setfilters.png":::
+:::image type="content" source="media/t-mobile/set-filters.png" alt-text="Screenshot of filter settings for available promotions in the PromoGenius app." lightbox="media/t-mobile/set-filters.png":::
 
 ### The embedded Copilot Studio agent
 
@@ -74,11 +74,11 @@ The process of creating the agent involved trying out different approaches for f
 
 The following image illustrates the general instructions and generative AI orchestration enabled for the agent:
 
-:::image type="content" source="media/t-mobile/generalinstructions.png" alt-text="Screenshot of Copilot Studio agent settings showing general instructions including the use of generative AI orchestration." lightbox="media/t-mobile/generalinstructions.png":::
+:::image type="content" source="media/t-mobile/general-instructions.png" alt-text="Screenshot of Copilot Studio agent settings showing general instructions including the use of generative AI orchestration." lightbox="media/t-mobile/general-instructions.png":::
 
 This image illustrates the generative AI settings in Copilot Studio:
 
-:::image type="content" source="media/t-mobile/aisettings.png" alt-text="Screenshot of generative AI settings in Copilot Studio agent configuration." lightbox="media/t-mobile/aisettings.png":::
+:::image type="content" source="media/t-mobile/ai-settings.png" alt-text="Screenshot of generative AI settings in Copilot Studio agent configuration." lightbox="media/t-mobile/ai-settings.png":::
 
 The initial idea was to obtain data from websites by adding the websites as knowledge sources in the agent and to use Dataverse for promotional data. This agent journey covered exploring different ways of having the agent leverage external website data.
 
