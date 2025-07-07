@@ -6,16 +6,14 @@ ms.reviewer: sericks
 
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/07/2025
+ms.date: 06/26/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
 ---
 
-# Authentication
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+# Authentication (legacy)
 
 This article provides an overview of the authentication setup for the various programmability tools.
 
