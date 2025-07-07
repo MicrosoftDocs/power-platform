@@ -3,17 +3,19 @@ title: Integrate data into Microsoft Dataverse
 description: Integrate data from multiple sources into Microsoft Dataverse
 ms.topic: how-to
 ms.component: cds
-ms.date: 02/01/2021
+ms.date: 07/07/2025
 ms.subservice: admin
 ms.author: nhelgren
 author: NHelgren
 ms.reviewer: sericks
+ms.contributors:
+  - lsuresh
+contributors:
+  - lavanyapg
 search.audienceType: 
   - admin
 ---
 # Integrate data into Microsoft Dataverse
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. It supports integrating data between finance and operations apps and Dataverse. It also supports integrating data into finance and operations apps and Dynamics 365 Sales. This service has been generally available since July 2017.   
 
@@ -56,7 +58,7 @@ There are three primary steps:
 
 3. Create a data integration project using a template (create or use predefined mappings for one or more entities).
 
-Once you create an integration project, you get the option to run the project manually and also set up a schedule-based refresh for the future. The rest of this article expands on these three steps.
+After you create an integration project, you get the option to run the project manually and also set up a schedule-based refresh for the future. The rest of this article expands on these three steps.
 
 > [!NOTE]
 > The user interface for Data Integrator project management is hosted at <https://dataintegrator.trafficmanager.net>. Your organization policies may require adding this site to your allowlist to access the interface.
