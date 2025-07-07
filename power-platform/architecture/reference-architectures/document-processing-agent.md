@@ -161,10 +161,10 @@ _Microsoft maintains this article. The following contributors wrote this article
 
 Principal authors:
 
-- **[Jaganmohan Naidu Penikalapati](https://www.linkedin.com/in/jaganmohan-naidu-penikalapati-4558b117/)**, principal software engineering manager
-- **[Ceren Kiroglu](https://www.linkedin.com/in/cerenoneykiroglu/)**, senior product manager
-- **[Durga Yelavarthi](https://www.linkedin.com/in/durga-yelavarthi/)**, principal architect
-- **[Jo Ruas](https://www.linkedin.com/in/joao-otavio-de-lima-ruas/)**, software engineer
+- **[Jaganmohan Naidu Penikalapati](https://www.linkedin.com/in/jaganmohan-naidu-penikalapati-4558b117/)**, Principal Software Engineering Manager
+- **[Ceren Kiroglu](https://www.linkedin.com/in/cerenoneykiroglu/)**, Senior Product Manager
+- **[Durga Yelavarthi](https://www.linkedin.com/in/durga-yelavarthi/)**, Principal Architect
+- **[Jo Ruas](https://www.linkedin.com/in/joao-otavio-de-lima-ruas/)**, Software Engineer
 
 ## Related resources
 

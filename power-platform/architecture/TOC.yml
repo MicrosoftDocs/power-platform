@@ -38,13 +38,13 @@
         - name: Manage solution performance
           items:
             - name: Overview
-              href: key-concepts/performance/overview.md
-            - name: UX strategies
+              href: key-concepts/performance/index.md
+            - name: Explore UX strategies
               href: key-concepts/performance/ux-strategies.md
-            - name: Monitoring and reporting tools
-              href: key-concepts/performance/tools.md
-            - name: Identifying and mitigating canvas app performance issues
+            - name: Identify and mitigate canvas app performance
               href: key-concepts/performance/top-issues.md
+            - name: Measure and maintain solution performance
+              href: key-concepts/performance/tools.md
     - name: Reference architectures
       items:
         - name: Overview

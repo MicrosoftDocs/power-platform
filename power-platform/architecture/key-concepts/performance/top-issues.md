@@ -1,20 +1,20 @@
 ---
-title: Identify and mitigate canvas apps performance issues
+title: Identify and mitigate canvas app performance issues
 description: Discover best practices to spot and resolve slowdowns in canvas apps. Improve speed and user experience with proven tips.
 #customer intent: As a Power Platform user, I want to identify performance issues in my canvas app so that I can improve speed and user experience.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
-ms.topic: overview
-ms.date: 06/03/2025
+ms.topic: best-practice
+ms.date: 07/07/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
   - ai-seo-date:06/03/2025
 ---
 
-# Identify and mitigate canvas apps performance issues
+# Identify and mitigate canvas app performance issues
 
 Performance issues in canvas apps often appear gradually as the app grows and changes, so they're hard for app developers to notice right away. Small inefficiencies can add up over time, especially as the app uses more data, and can affect user experience and productivity. To prevent these problems, identify and fix potential performance bottlenecks during development instead of waiting until the app is finished. Early detection and fixes keep app performance smooth, reduce costly revisions, and give users a more reliable, friendly experience.
 
@@ -88,12 +88,10 @@ By finding and fixing Cross-screen References and Select N+1 query patterns earl
 
 You might run into issues, depending on your app and usage patterns.
 
-
 Clear coding standards and a strong community that shares those standards and their benefits help you build apps at scale.
 
+## Related resources
 
-
-## Related information
 - [Nurturing a Power Platform community within your organization](/power-platform/guidance/adoption/nurture-best-practices)
 - [Power Apps coding guidelines](/power-apps/guidance/coding-guidelines/overview)
 - [Troubleshooting canvas app performance issues](/troubleshoot/power-platform/power-apps/canvas-app-performance/troubleshoot-perf-table)

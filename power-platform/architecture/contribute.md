@@ -16,7 +16,7 @@ ms.custom:
 
 # Contribute to Power Platform and Copilot Studio Architecture Center
 
-At Microsoft, the team turns internal notes, years of experience, and various types of documents into comprehensive architecture guidance. Microsoft isn't the only source of expertise on using Power Platform and Copilot Studio. The community includes experts in different aspects of implementation. If you have a reference architecture, a pattern, or a solution idea that works well across several implementations, share it here on Microsoft Learn to help the community work more productively and efficiently in their projects.
+At Microsoft, the team turns internal notes, years of experience, and various types of documents into comprehensive architecture guidance. Microsoft isn't the only source of expertise on using Power Platform and Copilot Studio. The community includes experts in different aspects of implementation. When you have a reference architecture, pattern, or solution idea that works well across several implementations, share it here on Microsoft Learn to help the community work more productively and efficiently in their projects.
 
 ## How to contribute
 
@@ -37,17 +37,19 @@ Microsoft reviews the article, lets you know if there are any questions, and pub
 
 Contribute architectural guidance, like solution ideas and design patterns. If you have a best practice or reference implementation, open a [GitHub issue](https://github.com/microsoft/PowerPnPGuidanceHub/issues/new?template=new_architecture_submission.yml) to submit your proposal.
 
-- **Reference architectures**: Reference architectures describe a solution architecture and suggest best practices for a specific scenario. This guidance aligns with [well-architected design principles](/power-platform/well-architected/). It doesn't include code. The template is based on the [Azure Architecture Guide template](/contribute/content/architecture-center/aac-contribute).
+- **Reference architectures**: Reference architectures describe a solution architecture and suggest best practices for a specific scenario. This guidance aligns with [well-architected design principles](/power-platform/well-architected/). It doesn't include code. The template is based on the [Azure Architecture Center template](/contribute/content/architecture-center/aac-contribute).
 
-- **Solution ideas**: Solution ideas summarize the overall architecture with images, components, and flows. These articles are brief and aren't based on proven guidance. The goal is to help readers explore solution possibilities on Power Platform and Copilot Studio. Solution ideas describe small architectures for Power Platform and Copilot Studio. The template is also based on the [Azure Architecture Guide template](/contribute/content/architecture-center/aac-contribute).
+- **Solution ideas**: Solution ideas summarize the overall architecture with images, components, and flows. These articles are brief and aren't based on proven guidance. The goal is to help readers explore solution possibilities on Power Platform and Copilot Studio. Solution ideas describe small architectures for Power Platform and Copilot Studio. The template is also based on the [Azure Architecture Center template](/contribute/content/architecture-center/aac-contribute).
 
 - **Key concepts**: Key concepts describe generalized architecture patterns that form a core architecture with solutions that work across many scenarios. Use this type for content that provides design patterns used in architecture. The article must include context and problem, solution, issues, and considerations, but doesn't follow a template. Review [existing key concepts](key-concepts/index.md) and submit your document with your own structure and headings.
 
 ## Contributor recognition
 
-The Contributors section lists key contributors by name and links to their LinkedIn profiles. The following screenshot shows an anonymized version of the *Contributors* section in an article. If you provide your LinkedIn profile when you submit a contribution, you are listed as a contributor.
+The Contributors section lists key contributors by name and links to their LinkedIn profiles. The following screenshot shows an anonymized version of the *Contributors* section in an article. If you provide your LinkedIn profile when you submit a contribution, you'll be listed as a contributor.
 
-:::image type="content" source="media/contributors-azure.png" alt-text="Screenshot of an example Contributors section. The section shows the principal author and three contributors, each with a link to their LinkedIn profile." border="true":::
+:::image type="content" source="media/contributors-mock.png" alt-text="Screenshot of an example Contributors section. The section shows the principal author and three contributors, each with a link to their LinkedIn profile." border="true":::
+
+<!--
 
 ## Contributors
 
@@ -62,6 +64,8 @@ Other contributors:
 - **[Name 2](https://www.linkedin.com/)**, Senior Program Manager
 - **[Name 3](https://www.linkedin.com/)**, Principal Engineering Manager
 - **[Name 4](https://www.linkedin.com/)**, Principal Architect
+
+-->
 
 ## Related information
 

@@ -47,7 +47,7 @@ The workflow has two main sections: one for autonomous bug report creation and o
 
 - **Microsoft Outlook (autonomous agent)**: Outlook lets you use autonomous agents from Copilot Studio, so agents can be triggered directly from your email workflow. Learn more in [Event trigger overview](/microsoft-copilot-studio/authoring-triggers-about).
 - [**Copilot Studio agent**](/microsoft-copilot-studio/): An autonomous agent that analyses emails and creates bugs in Azure DevOps.
-- [**Azure DevOps**](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops): Azure DevOps supports the software development lifecycle and tracks bugs and features.
+- [**Azure DevOps**](/azure/devops/user-guide/what-is-azure-devops): Azure DevOps supports the software development lifecycle and tracks bugs and features.
 - **[Power Automate](/power-automate/):** Power Automate automates repetitive tasks and workflows. It connects services and apps to perform tasks automatically, saving time and reducing the chance of human error.
 - **[AI Builder](/ai-builder/)**: AI Builder lets you add artificial intelligence to your apps without deep technical knowledge. It helps build features like predictive analytics or automated insights.
 - **Knowledge**: Knowledge is the information and data sources that agents use to provide relevant and accurate responses.

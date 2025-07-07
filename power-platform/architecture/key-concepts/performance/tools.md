@@ -6,14 +6,13 @@ author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
-ms.topic: overview
-ms.date: 06/02/2025
+ms.topic: best-practice
+ms.date: 07/07/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
   - ai-seo-date:06/02/2025
 ---
-
 
 # Measure and maintain Power Platform solution performance
 
@@ -55,7 +54,6 @@ Azure Application Insights is a monitoring service that integrates with Power Pl
 
 To set up Application Insights, create an instance in the Azure portal. Then, configure your Power Platform solution or related components to send telemetry data to it—this can involve adding instrumentation code or setting up connectors. After setup, use the Application Insights dashboard to visualize trends, set up alerts, and drill into specific issues. This helps you keep your app performing well and quickly fix problems.
 
-
 ### Solution Checker
 
 Solution Checker is a built-in tool in Power Platform that scans your solutions for common performance, reliability, and security issues. It analyzes your customizations like plugins, workflows, and configurations and gives a report with actionable recommendations to improve efficiency and compliance with best practices.
@@ -67,8 +65,6 @@ To use Solution Checker, go to your solution in the Power Apps portal, select **
 Performance testing simulates real-world usage of your Power Platform solution to see how it behaves under different conditions, like multiple users or large data volumes. This helps you find how your solution scales and where it can struggle as demand increases. Benchmarking compares your solution's performance against predefined standards or previous versions to measure improvements or regressions.
 
 Run performance testing manually by having users do typical tasks and measuring response times, or use automated tools to simulate load and capture metrics. Regular testing and benchmarking help keep your solution responsive and reliable as it evolves, and provide concrete data to guide optimization.
-
-
 
 ### Distributed tracing
 
@@ -103,8 +99,6 @@ In addition to the items in the "all" category, medium risk solutions need to ke
 
 Tools like **Power Apps Monitor**, **Power Automate Analytics**, and **Dataverse Analytics** will best help provide valuable insights that help you clearly see how your Power Platform solutions are performing.
 
-
-
 [Learn more about Power Apps Monitor](#power-apps-monitor)
 
 [Learn more about Power Automate Analytics](#power-automate-analytics)
@@ -120,8 +114,6 @@ In addition to the tools in the low and medium-risk sections, high risk and/or h
 [Learn more about Azure Application Insights](#azure-application-insights)
 
 [Learn more about Performance testing and benchmarking](#performance-testing-and-benchmarking)
-
-
 
 > [!CAUTION]
 > Avoid traditional load-testing methods that rapidly send large numbers of requests directly to Power Platform services, as this can trigger platform throttling and negatively impact your testing results. Instead, consider approaches such as:
