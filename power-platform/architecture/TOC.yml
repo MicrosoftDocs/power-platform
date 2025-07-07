@@ -89,7 +89,7 @@
           href: solution-ideas/agent-travel-customer.md
         - name: Ticket management system with Copilot Studio agents
           href: solution-ideas/agent-ticket-and-refund.md
-        - name: Automate the bug reporting process in software development with Auto AI Triage
+        - name: Automate software bug reporting with Auto AI Triage
           href: solution-ideas/auto-ai-triage.md
         - name: Cardio Triage AI workflow with Power Platform
           href: solution-ideas/cardio-triage-agent.md
