@@ -109,7 +109,8 @@ This image shows details of a Copilot Studio topic related to comparing two devi
 To improve the user experience when comparing devices, T-Mobile decided to present the output in a table. To achieve this goal, they instructed the agent to structure the information in a tabular format (as shown in general instructions to [the embedded Copilot Studio agent](#the-embedded-copilot-studio-agent)):
 
 ```copilot-prompt
-When providing device details, format the information into a bullet-point list for clarity. When comparing devices, format the features and specifications in a well-organized, side-by-side comparison using tabular format.
+When providing device details, format the information into a bullet-point list for clarity. 
+When comparing devices, format the features and specifications in a well-organized, side-by-side comparison using tabular format.
 ```
 
 The following image illustrates the agent's response when a user requests a comparison between two devices, the iPhone 16 Pro and Pixel 9 Pro:
