@@ -36,7 +36,7 @@ To access these reports:
 
 ## Who can view these reports?
 
-Admins with the these roles and a [license](pricing-billing-skus.md) can view the reports in Power Automate analytics:
+Admins with these roles and a [license](pricing-billing-skus.md) can view the reports in Power Automate analytics:
 
 - Environment Admin - can view reports for the environments that the admin has access to.
 - Power Platform admin – can view reports for all environments.
