@@ -3,12 +3,14 @@ title: View analytics for Power Automate desktop flows | Microsoft Docs
 description: Learn about trends, usage patterns, and more analytics for desktop flows in the Power Platform admin center.
 author: Zeffin
 ms.topic: how-to
-ms.date: 08/03/2023
+ms.date: 07/08/2025
 ms.subservice: admin
 ms.author: cvassallo
 ms.reviewer: sericks
 search.audienceType: 
   - flowadmin
+contributors:
+  - isaacwinoto 
 ---
 
 # View analytics for desktop flows
@@ -25,11 +27,11 @@ This article discusses the viewing desktop flows analytics reports in the Power 
 
 The easiest option for an admin to view analytics for the desktop flows in their organization is to visit Power Platform admin center. You'll find the following three reports:
 
-Report | Description
---- | ---
-Runs | This report gives you an overview of the daily, weekly, and monthly desktop flows run statistics. This report also provides trend lines and run results (success/failure/cancel). This report gives insights on how actively desktop flows are used in each environment.
-Usage | This report shows you the desktop flows that are being used most, giving you insights into your automation inventory.
-Created | This report shows you analytics against recently created desktop flows, giving you insights into your most active desktop flows makers.
+|Report | Description|
+|--- | ---|
+|Runs | This report gives you an overview of the daily, weekly, and monthly desktop flows run statistics. This report also provides trend lines and run results (success/failure/cancel). This report gives insights on how actively desktop flows are used in each environment.
+|Usage | This report shows you the desktop flows that are being used most, giving you insights into your automation inventory.|
+|Created | This report shows you analytics against recently created desktop flows, giving you insights into your most active desktop flows makers.|
 
 ## Data storage
 When a user creates an environment in a region, the environment is hosted in that region. All data for that environment resides within that region for a maximum period of 28 days.
@@ -116,9 +118,9 @@ You can filter your view to display reports from a specific **environment** or f
    ![A screenshot of the desktop flow created reports.](./media/analytics-ui-flow/created-ppac.png)
 
 ## Limitations of downloaded reports
-Some fields—such as the creator’s email and the app or flow display name—may appear blank in the exported reports. This is expected behavior, as these values are resolved at runtime and are not part of the underlying stored dataset.
+Some fields, such as the creator’s email address and the app or flow display name, may appear blank in the exported reports. This is expected behavior, as these values are resolved at runtime and are not part of the underlying stored dataset.
 
-## Learn more
+## Related content
 
 - Run [desktop flows](/power-automate/desktop-flows/run-desktop-flow).
 
