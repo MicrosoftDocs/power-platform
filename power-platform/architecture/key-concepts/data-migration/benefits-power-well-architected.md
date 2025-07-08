@@ -89,7 +89,7 @@ Operational Excellence in data migration is achieved through strategic planning,
 - **Proactive monitoring**: Real-time monitoring and alerting provide visibility into migration progress, enabling rapid response to issues.
 - **On-time, on-budget delivery**: This proactive approach ensures migrations meet timelines, budgets, and quality standards.
 
-- **Embrace fusion development**: Fusion development fosters collaboration between developers, IT, and business users, enabling faster, more tailored migration solutions. Low-code tools empower business users to actively contribute, reducing reliance on IT and accelerating delivery. This approach ensures alignment across stakeholders and drives more effective execution of the migration strategy.
+- **Embrace fusion development**: Fusion development fosters collaboration between developers, IT, and business users, enabling faster, more tailored migration solutions. Low-code tools empower business users to actively contribute, reducing reliance on IT and accelerating delivery. This approach ensures alignment across stakeholders and drives more effective execution of the migration strategy. Learn more: [Fusion development in Power Platform](/power-platform/developer/fusion-development).
 
 - **Establish development standards**: Consistent development standards are key to predictable, scalable, and high-quality migrations. These standards cover coding practices, documentation, testing, and validation. By following them, teams reduce errors, improve reliability, and ensure repeatable outcomes. Standardization also enhances collaboration and communication, enabling more efficient project execution across teams.
 
