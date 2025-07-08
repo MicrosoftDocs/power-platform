@@ -17,7 +17,7 @@ contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-As an admin, you will need to view the overall status of automation that runs in your organization. There are two options to monitor the analytics for automation that's built with desktop flows:
+As an admin, you need to view the overall status of automation that runs in your organization. There are two options to monitor the analytics for automation that's built with desktop flows:
 
 - The Power Platform admin center.
 - The Center of Excellence (CoE) Starter Kit.
@@ -25,7 +25,7 @@ As an admin, you will need to view the overall status of automation that runs in
 This article discusses the viewing desktop flows analytics reports in the Power Platform admin center.
 
 
-The easiest option for an admin to view analytics for the desktop flows in their organization is to visit Power Platform admin center. You'll find the following three reports:
+The easiest option for an admin to view analytics for the desktop flows in their organization is to visit Power Platform admin center. There are three reports:
 
 |Report | Description|
 |--- | ---|
@@ -118,7 +118,7 @@ You can filter your view to display reports from a specific **environment** or f
    ![A screenshot of the desktop flow created reports.](./media/analytics-ui-flow/created-ppac.png)
 
 ## Limitations of downloaded reports
-Some fields, such as the creator’s email address and the app or flow display name, may appear blank in the exported reports. This is expected behavior, as these values are resolved at runtime and are not part of the underlying stored dataset.
+Some fields, such as the creator’s email address and the app or flow display name, may appear blank in the exported reports. This is expected behavior, as these values are resolved at runtime and aren't part of the underlying stored dataset.
 
 ## Related content
 
