@@ -29,6 +29,7 @@ Tools and utilities for copilot management
 |[pac copilot extract-template](#pac-copilot-extract-template)|Extracts a template file from an existing copilot in an environment.|
 |[pac copilot extract-translation](#pac-copilot-extract-translation)|Extracts file containing localized content for one or more bots.|
 |[pac copilot list](#pac-copilot-list)|List of copilots in the current or target Dataverse environment.|
+|[pac copilot mcp](#pac-copilot-mcp)|Information about local MCP (Model Context Protocol) server.|
 |[pac copilot merge-translation](#pac-copilot-merge-translation)|Merge files containing localized content for one or more bots.|
 |[pac copilot model list](#pac-copilot-model-list)|AI Builder models in the current environment.|
 |[pac copilot model predict](#pac-copilot-model-predict)|Sends text or prompt to AI Model|
@@ -168,6 +169,12 @@ List of copilots in the current or target Dataverse environment.
 Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [copilot-list-remarks](includes/copilot-list-remarks.md)]
+
+## pac copilot mcp
+
+Information about local MCP (Model Context Protocol) server.
+
+[!INCLUDE [copilot-mcp-remarks](includes/copilot-mcp-remarks.md)]
 
 ## pac copilot merge-translation
 
