@@ -14,48 +14,26 @@ ms.custom:
 search.audienceType: 
   - admin
 contributors:
+  - matapg007
   - wifun
 ---
  
 # Set up Virtual Network support for Power Platform
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Azure Virtual Network support for Power Platform allows you to integrate Power Platform and Dataverse components with cloud services, or services hosted inside your private enterprise network, without exposing them to the public internet. This article helps you set up virtual network support in your Power Platform environments.
 
 ## Prerequisites
 
-> [!NOTE]
-> To allow Virtual Network support for Power Platform, environments must be [Managed Environments](managed-environment-overview.md).
+- **Review your Power Platform resources**: Review your apps, flows, and plug-in code to ensure they connect over your virtual network. They shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration allows for such calls. Learn more in [Considerations to enable Virtual Network support for Power Platform environment](vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in the [FAQ](vnet-support-overview.md#faq).
+- **Prepare your tenant and set up permissions**:
+    - **Azure subscription**: Ensure you have an Azure subscription where virtual network, subnet, and enterprise policy resources will be created.
+    - **Assign roles**: Ensure you have the required roles to create resources and enterprise policy.
+      - In the Azure portal, assign the Azure Network Administrator role, such as the [network contributor role](/azure/role-based-access-control/built-in-roles#network-contributor) or an equivalent custom role.
+      - In the Microsoft Entra admin center, assign the Power Platform Administrator role.
 
-- Review your apps, flows, and plug-in code to ensure they connect over your virtual network. They shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration allows such calls. Learn more in [Considerations to enable Virtual Network support for Power Platform Environment](./vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in [the FAQ](./vnet-support-overview.md#can-i-make-internet-bound-calls-from-plug-ins-or-connectors-after-my-environment-is-subnet-delegated).
+## Set up the virtual network and subnets
 
-- Prepare your tenant, set up permissions:
-  - Have an Azure subscription where virtual network, subnet, and enterprise policy resources will be created.
-  - In the Azure portal, assign the Azure Network Administrator role such as the [network contributor role](/azure/role-based-access-control/built-in-roles#network-contributor) or equivalent custom role.
-  - In the Microsoft Entra admin center, assign the [Power Platform Administrator role](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator).
-
-- Prepare to use PowerShell:
-  - Use Windows PowerShell or [Install PowerShell Core](/powershell/scripting/install/installing-powershell)
-  - Clone the GitHub repository to obtain the [PowerShell scripts for enterprise policies](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies)
-  - Run the ["install modules and setup subscription" scripts](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#how-to-run-setup-scripts)
-
-The following diagram depicts the functions of the roles in the setup process for virtual network support in a Power Platform environment.
-
-:::image type="content" source="media/vnet-support/vnet-support-configurations.png" alt-text="Screenshot that shows the configurations for virtual network support in a Power Platform environment." lightbox="media/vnet-support/vnet-support-configurations.png":::
-
-## Set up Virtual Network support
-
-1. [Set up the virtual network and subnets](#set-up-the-virtual-network-and-subnets).
-1. [Create the enterprise policy](#create-the-enterprise-policy).
-1. [Configure your Power Platform environment](#configure-your-power-platform-environment).
-
-### Set up the virtual network and subnets
-
-> [!NOTE]
-> Power Platform doesn't support the Central US region. [Review the list of supported regions](./vnet-support-overview.md#supported-regions).
-
-1. Create [virtual networks](/azure/virtual-network/virtual-networks-overview) in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is United States, your virtual networks should be created in the **eastus** or **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
+1. **Create virtual networks**: Create [virtual networks](/azure/virtual-network/virtual-networks-overview) in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is in the United States, your virtual networks should be created in the **eastus** or **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
 
     > [!IMPORTANT]
     > - If there are two or more supported regions for the geo, such as the United States with **eastus** and  **westus**, two virtual networks in ***different*** regions are required to create the enterprise policy for [business continuity and disaster recovery] or failover scenarios.
