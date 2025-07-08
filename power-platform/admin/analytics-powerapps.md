@@ -104,9 +104,11 @@ Select the environment and time period from the drop-down lists, and then select
 
 :::image type="content" source="media/powerapps-analytics-change-environments.png" alt-text="Shows how to view and change environments in Power Apps analytics." lightbox="media/powerapps-analytics-change-environments.png":::
 
-### Why are some apps missing in my report?
+### Limitations of Downloaded Reports
 
-Currently, Power Apps analytics reports don't display model-driven apps data. Only canvas apps related data is displayed.
+Currently, Power Apps analytics reports don't display model-driven apps data. Only canvas apps related data is displayed. 
+
+Moreover, some fields—such as the creator’s email and the app or flow display name—may appear blank in exported reports. This is expected behavior, as these values are resolved at runtime and are not part of the underlying stored dataset.
 
 ### See also
 
