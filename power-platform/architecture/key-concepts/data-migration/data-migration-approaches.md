@@ -26,7 +26,7 @@ Approach:
 
 - **Data assessment**: Identify relevant tables and columns for migration; perform basic data quality checks.
 - **Export and transform**: Use tools like Excel or CSV exports; apply basic transformations with Power Query.
-- **Import to Dataverse**: Use Dataverse’s built-in import wizard.
+- **Import to Dataverse**: Use Dataverse’s built-in import wizard. Learn more: [How to import data](/power-apps/user/import-data).
 - **Verification**: Perform spot checks to confirm data integrity and functionality.
 
 ## Medium data migration
