@@ -59,13 +59,13 @@ Key transformation steps:
 
   Use the OptionSetMapping table to efficiently transform and update optionset values in bulk. For example, to update all optionset values in the Contact table based on matching text values:
 
-    `
+    ```
     Update C.\<OptionsetValue\> = M.\<TargetValue\> 
     FROM Contact C 
     JOIN OptionsetMapping M 
       ON C.OptionsetText = M.TargetText 
       AND M.TargetTableName = 'Contact'
-    `
+    ```
 
 - **Avoid custom GUIDs:** Let Dataverse generate GUIDs to prevent fragmentation and performance issues.
 - **String length checks:** Ensure string values fit Dataverse limits. Trim or adjust as needed.
