@@ -97,6 +97,10 @@ The reports are built with Power BI. Users can select the ellipsis (…) for a K
 
 :::image type="content" source="media/analytics-flow/export-report.png" alt-text="Shows the Power Automate export report." lightbox="media/analytics-flow/export-report.png":::
 
+## Limitations of downloaded reports
+
+Some fields—such as the creator’s email and the app or flow display name—may appear blank in exported reports. This is expected behavior, as these values are resolved at runtime and are not part of the underlying stored dataset.
+
 ## View reports in other environments
 
 To view reports in another environment:
