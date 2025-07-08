@@ -16,7 +16,7 @@ ms.custom:
 
 # Explore user experience strategies for mitigating performance concerns
 
-Canvas-based Power Apps let you build custom applications flexibly. Performance issues can occur if you don't optimize your app. This article provides practical strategies to improve user experience and resolve common performance concerns.
+Canvas-based Power Apps provide a flexible, intuitive way to build custom applications. However, performance issues can occur if apps aren't optimized for performance. This article provides practical strategies to improve user experience and resolve common performance concerns.
 
 Set standards for app responsiveness using the following table, which shows how users perceive response times in applications.
 
@@ -35,9 +35,9 @@ Set standards for app responsiveness using the following table, which shows how 
 
 Good app performance means different things to different people. Set performance goals early in the development cycle to ensure your solution starts quickly and remains efficient.
 
-- **Benchmark the current process**: If your solution replaces an old app or process, aim to improve on the current experience. If you're replacing an app, make sure your new app loads as quickly as the old one and lets users finish tasks faster. At a minimum, keep app performance the same.
+- **Benchmark the current process**: If your solution replaces an old app or process, aim to improve on the current experience. If you're replacing an app, make sure your new app loads as quickly as the old one and allows users to accomplish tasks faster. At a minimum, keep app performance the same.
 
-- **Don't cause new problems**: If you're replacing a business process, focus your benchmark on the timing of the full cycle. Make sure your solution removes bottlenecks so users finish work faster, and doesn't create new ones. Help users understand how your new solution fits into their existing process.
+- **Don't cause new problems**: If you're replacing a business process, focus your benchmark on the timing of the full cycle. Enure your solution removes bottlenecks so users complete tasks faster, and doesn't introduce new bottlenecks in the process. Help users understand how your new solution fits into their existing processes.
 
 Learn more about [defining performance targets](/power-platform/well-architected/performance-efficiency/performance-targets).
 
@@ -68,4 +68,4 @@ Learn more about [optimizing your solution's logic](/power-platform/well-archite
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Identify and mitigate canvas app performance issues](top-issues.md)
+> [Measure and maintain solution performance](tools.md)

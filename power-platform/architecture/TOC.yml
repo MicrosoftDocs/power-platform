@@ -41,10 +41,10 @@
               href: key-concepts/performance/index.md
             - name: Explore UX strategies
               href: key-concepts/performance/ux-strategies.md
-            - name: Identify and mitigate canvas app performance
-              href: key-concepts/performance/top-issues.md
             - name: Measure and maintain solution performance
               href: key-concepts/performance/tools.md
+            - name: Identify and mitigate canvas app performance
+              href: key-concepts/performance/top-issues.md
     - name: Reference architectures
       items:
         - name: Overview
