@@ -115,6 +115,8 @@ You can filter your view to display reports from a specific **environment** or f
 
    ![A screenshot of the desktop flow created reports.](./media/analytics-ui-flow/created-ppac.png)
 
+## Limitations of downloaded reports
+Some fields—such as the creator’s email and the app or flow display name—may appear blank in the exported reports. This is expected behavior, as these values are resolved at runtime and are not part of the underlying stored dataset.
 
 ## Learn more
 
