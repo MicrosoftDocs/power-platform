@@ -100,9 +100,6 @@ Default environment (ID, url, unique name, or partial name).
 
 This parameter requires no value. It's a switch.
 
-#### `--kind` `-k`
-
-**Deprecated**: This parameter is ignored.
 #### `--managedIdentity` `-mi`
 
 Use Azure Managed Identity.
