@@ -95,7 +95,7 @@ It's often best to work in parallel with Microsoft Support. For example, conside
 
 It's important to make support contact information available to the team. Keep in mind that Microsoft Support might also need access to data to effectively engage in problem solving.
 
-For more information, see [Get Help + Support in Power Platform](/power-platform/admin/get-help-support).
+For more information, see [Get Support in Power Platform](/power-platform/admin/get-help-support).
 
 ### Learn from findings
 
