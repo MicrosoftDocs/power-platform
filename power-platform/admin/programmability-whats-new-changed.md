@@ -5,27 +5,51 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 04/17/2025
+ms.date: 07/01/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
 ---
 
-# Programmability and extensibility - What's new or changed 
+# Programmability and extensibility - What's new or changed
 
 Learn about the latest changes and new capabilities for Power Platform API and administrator SDKs in the Power Platform.
+
+## June 2025
+
+| Item | Type | Description |
+|------|------|-------------|
+| Microsoft.PowerPlatform.Management | SDK | [.NET API reference](/dotnet/api/?view=power-platform-latest) published |
+
+## May 2025
+
+| Item | Type | Description |
+|------|------|-------------|
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.43.6#releasenotes-body-tab) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
+| Microsoft.PowerPlatform.Management | SDK | [Initial NuGet package release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3060.142) |
+
+## April 2025
+
+| Item | Type | Description |
+|------|------|-------------|
+| Get Bot Quarantine Status | API | New endpoint: [Get Bot Quarantine Status](/rest/api/power-platform/powervirtualagents/bots/get-bot-quarantine-status) |
+| Set Bot As Quarantined | API | New endpoint: [Set Bot As Quarantined](/rest/api/power-platform/powervirtualagents/bots/set-bot-as-quarantined) |
+| Set Bot As Unquarantined | API | New endpoint: [Set Bot As Unquarantined](/rest/api/power-platform/powervirtualagents/bots/set-bot-as-unquarantined) |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.42.1#releasenotes-body-tab) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
 
 ## March 2025
 
 | Item | Type | Description |
 |------|------|-------------|
 | Get Storage Warning by Category | API | New endpoint: [Get Storage Warning By Category](/rest/api/power-platform/licensing/storage-warnings/get-storage-warning-by-category) |
-| Get Storage Warning by Category and Entity | API | New endpoint: [Get Storage Warning By Category And Entity](/rest/api/power-platform/licensing/storage-warnings/get-storage-warning-by-category-and-entity) | 
-| List Storage Warnings | API | New endpoint: [List Storage Warnings](/rest/api/power-platform/licensing/storage-warnings/list-storage-warnings) | 
+| Get Storage Warning by Category and Entity | API | New endpoint: [Get Storage Warning By Category And Entity](/rest/api/power-platform/licensing/storage-warnings/get-storage-warning-by-category-and-entity) |
+| List Storage Warnings | API | New endpoint: [List Storage Warnings](/rest/api/power-platform/licensing/storage-warnings/list-storage-warnings) |
 | Retrieve Temporary Currency Entitlement Count | API | New endpoint: [Retrieve Temporary Currency Entitlement Count](/rest/api/power-platform/licensing/temporary-currency-entitlement/retrieve-temporary-currency-entitlement-count) |
 | Get Tenant Capacity Details | API | New endpoint: [Get Tenant Capacity Details](/rest/api/power-platform/licensing/tenant-capacity-details/get-tenant-capacity-details) |
-| List Currency Reports | API | New endpoint: [List Currency Reports](/rest/api/power-platform/licensing/currency-reports/list-currency-reports) | 
+| List Currency Reports | API | New endpoint: [List Currency Reports](/rest/api/power-platform/licensing/currency-reports/list-currency-reports) |
 | Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.41.1#releasenotes-body-tab) |  
 
 ## February 2025
@@ -42,7 +66,6 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 | Create Environment Group Rule Based Assignment | API | New endpoint: [Create Environment Group Rule Based Assignment](/rest/api/power-platform/governance/rule-based-policies/create-enviornment-group-rule-based-assignment) |
 | List Rule Assignments | API | New endpoint: [List Rule Based Assignments](/rest/api/power-platform/governance/rule-based-policies/list-rule-assignments) |
 | Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.40.4#releasenotes-body-tab) |  
-
 
 ## January 2025
 
