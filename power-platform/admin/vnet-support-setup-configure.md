@@ -33,10 +33,10 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
 
 ## Set up the virtual network and subnets
 
-1. **Create virtual networks**: Create [virtual networks](/azure/virtual-network/virtual-networks-overview) in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is in the United States, your virtual networks should be created in the **eastus** or **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
+1. **Create virtual networks**: Create [virtual networks](/azure/virtual-network/virtual-networks-overview) in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is the United States, create your virtual networks in the **eastus** or **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
 
     > [!IMPORTANT]
-    > - If there are two or more supported regions for the geo, such as the United States with **eastus** and  **westus**, two virtual networks in ***different*** regions are required to create the enterprise policy for [business continuity and disaster recovery] or failover scenarios.
+    > - If there are two or more supported regions for the geo, such as the United States with **eastus** and  **westus**, two virtual networks in ***different*** regions are required to create the enterprise policy for business continuity and disaster recovery or failover scenarios.
     > - Be sure that the subnet you create has been appropriately sized according to [Estimating subnet size for Power Platform environments](./vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
     
     You can [reuse existing virtual networks](./vnet-support-overview.md#can-i-use-an-existing-virtual-network-for-power-platform) if desired. Subnets on the other hand, [can't be reused in multiple enterprise policies](./vnet-support-overview.md#can-i-reuse-the-same-delegated-subnet-in-multiple-enterprise-policies).
@@ -44,15 +44,16 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
 1. Create a subnet in each of your virtual networks. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment. Both subnets must have the same number of available IP addresses.
 
     > [!IMPORTANT]
-    > Be sure that the subnet you create has at least a /24 Classless Inter-Domain Routing (CIDR) address block, which equates to 251 IP addresses, including five reserved IP addresses. If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24.
-
-    To allow public internet access for Power Platform components, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the subnets.
+    > - If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24. Review for subnet sizing guidance [Estimating subnet size for Power Platform environments](vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
+    > - To allow public internet access for Power Platform components, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the subnets.
 
 1. Ensure that your Azure subscription is registered for the Microsoft.PowerPlatform resource provider by running the [SetupSubscriptionForPowerPlatform.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#how-to-run-setup-scripts).
 
-1. Ensure your subnets don't have any resources connected to them. Delegate each subnet to Microsoft.PowerPlatform/enterprisePolicies by running the [SetupVnetForSubnetDelegation.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) for each subnet.
+1. Ensure your subnets don't have any resources connected to them. Delegate each subnet to Microsoft.PowerPlatform/enterprisePolicies by running the [SetupVnetForSubnetDelegation.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) for each subnet. If you don’t want to use Powershell you can also delegate subnet while creating virtual network in Azure portal to the service **Microsoft.PowerPlatform/enterprisePolicies**.
 
     Learn more at [Add or remove a subnet delegation](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal).
+
+1. After you have created paired virtual networks, you can see below in your azure resource group.
 
 ### Create the enterprise policy
 
