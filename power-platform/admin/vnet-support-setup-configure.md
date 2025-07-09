@@ -158,7 +158,7 @@ Azure virtual network support for Power Platform allows you to integrate Power P
     - **Virtual network 2 subnet name**: Enter the name of the subnet from the second virtual network.
     - **Virtual network 2 resource ID**: Enter the resource ID from the second virtual network.
 
-1. Select **Review and create** to finalize the enterprise policy.
+1. Select **Review + create** to finalize the enterprise policy.
 
     :::image type="content" source="media/virtual-networks-json-script.png" alt-text="Select **Review and create** to finalize the enterprise policy." lightbox="media/virtual-networks-json-script.png":::
 
@@ -189,6 +189,6 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 1.	Select the environment you want to assign to the enterprise policy, select the policy, and select **Save**. Now the enterprise policy is linked to the environment.
 
 ## Best practices
-- Ensure you choose the subnet size as per your requirement. After the subnet is delegated to Power Platform&mdash;and if later, there's a need to change the subnet range&mdash;it requires Microsoft Support to reflect the updated subnet changes.
+Ensure you choose the subnet size as per your requirement. After the subnet is delegated to Power Platform&mdash;and if later, there's a need to change the subnet range&mdash;it requires Microsoft Support to reflect the updated subnet changes.
 
 
