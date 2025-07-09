@@ -28,8 +28,8 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 - **Prepare your tenant and set up permissions**:
     - **Azure subscription**: Ensure you have an Azure subscription where virtual network, subnet, and enterprise policy resources will be created.
     - **Assign roles**: Ensure you have the required roles to create resources and enterprise policy.
-      - In the Azure portal, assign the Azure Network Administrator role, such as the [network contributor role](/azure/role-based-access-control/built-in-roles#network-contributor) or an equivalent custom role.
-      - In the Microsoft Entra admin center, assign the Power Platform Administrator role.
+      - In the Azure portal, assign the Azure network administrator role, such as the [network contributor role](/azure/role-based-access-control/built-in-roles#network-contributor) or an equivalent custom role.
+      - In the Microsoft Entra admin center, assign the Power Platform administrator role.
 
 ## Set up the virtual network and subnets
 
@@ -44,33 +44,97 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 1. Create a subnet in each of your virtual networks. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment. Both subnets must have the same number of available IP addresses.
 
     > [!IMPORTANT]
-    > - If you plan to use the same delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24. Review for subnet sizing guidance [Estimating subnet size for Power Platform environments](vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
+    > - If you plan to use the same, delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24. Review subnet sizing guidance in [Estimating subnet size for Power Platform environments](vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
     > - To allow public internet access for Power Platform components, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the subnets.
 
 1. Ensure that your Azure subscription is registered for the Microsoft.PowerPlatform resource provider by running the [SetupSubscriptionForPowerPlatform.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#how-to-run-setup-scripts).
 
-1. Ensure your subnets don't have any resources connected to them. Delegate each subnet to Microsoft.PowerPlatform/enterprisePolicies by running the [SetupVnetForSubnetDelegation.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) for each subnet. If you don’t want to use Powershell you can also delegate subnet while creating virtual network in Azure portal to the service **Microsoft.PowerPlatform/enterprisePolicies**.
+1. Ensure your subnets don't have any resources connected to them. Delegate each subnet to Microsoft.PowerPlatform/enterprisePolicies by running the [SetupVnetForSubnetDelegation.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) for each subnet. If you don’t want to use Powershell, you can delegate subnet while creating the virtual network in Azure portal to the service **Microsoft.PowerPlatform/enterprisePolicies**.
 
     Learn more at [Add or remove a subnet delegation](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal).
 
-1. After you have created paired virtual networks, you can see below in your azure resource group.
+1. After you have created paired virtual networks, you can view them in your Azure resource group, as shown in the image below.
 
     :::image type="content" source="media/virtual-networks.png" alt-text="Virtual networks in your Azure resource group." lightbox="media/virtual-networks.png":::
 
-## Creating Enterprise Policy
+## Creating enterprise policy
 
-### Option 1: Using Azure ARM Template
-1. Ensure you have captured the below necessary details from the virtual network you have created in prior steps.
-    - Vnet One subnet name
-    - Vnet One Resource ID 
-    - Vnet Two subnet name 
-    - Vnet Two Resource ID
+### Option 1: Using Azure ARM template
+1. Ensure you have captured the necessary details, such as the following information, from the virtual networks you have created.
+    - Virtual network 1 subnet name
+    - Virtual network 1 resource ID 
+    - Virtual network 2 subnet name 
+    - Virtual network 2 resource ID
 
-1. Go to azure portal [Deploy a custom template](https://ms.portal.azure.com/#create/Microsoft.Template) in Azure and select the **Build your own template in the editor** link and copy paste the JSON script.
+1. [Deploy a custom template](https://ms.portal.azure.com/#create/Microsoft.Template) in Azure portal. Select the **Build your own template in the editor** link and copy and paste the JSON script.
+
+    ```JSON template
+    {
+        "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+        "contentVersion": "1.0.0.0",
+        "parameters": {
+            "policyName": {
+                "type": "String",
+                "metadata": {
+                    "description": "The name of the Enterprise Policy."
+                }
+            },
+            "powerplatformEnvironmentRegion": {
+                "type": "String",
+                "metadata": {
+                    "description": "Geo of the PowerPlatform environment."
+                }
+            },
+            "vNetOneSubnetName": {
+                "type": "String"
+            },
+            "vNetOneResourceId": {
+                "type": "String"
+            },
+            "vNetTwoSubnetName": {
+                "defaultValue": "",
+                "type": "String"
+            },
+            "vNetTwoResourceId": {
+                "defaultValue": "",
+                "type": "String"
+            }
+        },
+        "variables": {
+            "vNetOne": {
+                "id": "[parameters('vNetOneResourceId')]",
+                "subnet": {
+                    "name": "[parameters('vNetOneSubnetName')]"
+                }
+            },
+            "vNetTwo": {
+                "id": "[parameters('vNetTwoResourceId')]",
+                "subnet": {
+                    "name": "[parameters('vNnetTwoSubnetName')]"
+                }
+            },
+            "vNetTwoSupplied": "[and(not(empty(parameters('vNetTwoSubnetName'))), not(empty(parameters('vNetTwoResourceId'))))]"
+        },
+        "resources": [
+            {
+                "type": "Microsoft.PowerPlatform/enterprisePolicies",
+                "apiVersion": "2020-10-30",
+                "name": "[parameters('policyName')]",
+                "location": "[parameters('powerplatformEnvironmentRegion')]",
+                "kind": "NetworkInjection",
+                "properties": {
+                    "networkInjection": {
+                        "virtualNetworks": "[if(variables('vNetTwoSupplied'), concat(array(variables('vNetOne')), array(variables('vNetTwo'))), array(variables('vNetOne')))]"
+                    }
+                }
+            }
+        ]
+    }
+    ```
 
 1. Save the template and fill in the details to create the enterprise policy.
-    - **Policy Name**: Name of the enterprise policy that appears in the Power Platform admin center 13.
-    - **Location**: Select the location of the enterprise policy, corresponding with the Dataverse environment’s region
+    - **Policy name**: Name of the enterprise policy that appears in the Power Platform admin center.
+    - **Location**: Select the location of the enterprise policy, corresponding with the Dataverse environment’s region:
         - '"unitedstates"'
         - '"southafrica"'
         - '"uk"'
@@ -89,77 +153,14 @@ Azure virtual network support for Power Platform allows you to integrate Power P
         - '"norway"'
         - '"singapore"'
         - '"sweden"'
+    - **Virtual network 1 subnet name**: Enter the name of the subnet from the first virtual network.
+    - **Virtual network 1 resource ID**: Enter the resource ID from the first virtual network.
+    - **Virtual network 2 subnet name**: Enter the name of the subnet from the second virtual network.
+    - **Virtual network 2 resource ID**: Enter the resource ID from the second virtual network.
 
-    - Vnet One subnet name: Enter the name of subnet from first virtual network.
-    - Vnet One Resource ID: Enter the resource ID from first virtual network.
-    - Vnet Two subnet name: Enter the name of subnet from second virtual network.
-    - Vnet Two Resource ID: Enter the resource ID from second virtual network.
+1. Select **Review and create** to finalize the enterprise policy.
 
-1. Click **Review and create** to finalize the enterprise policy.
 
-```JSON template
-{
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-        "policyName": {
-            "type": "String",
-            "metadata": {
-                "description": "The name of the Enterprise Policy."
-            }
-        },
-        "powerplatformEnvironmentRegion": {
-            "type": "String",
-            "metadata": {
-                "description": "Geo of the PowerPlatform environment."
-            }
-        },
-        "vNetOneSubnetName": {
-            "type": "String"
-        },
-        "vNetOneResourceId": {
-            "type": "String"
-        },
-        "vNetTwoSubnetName": {
-            "defaultValue": "",
-            "type": "String"
-        },
-        "vNetTwoResourceId": {
-            "defaultValue": "",
-            "type": "String"
-        }
-    },
-    "variables": {
-        "vNetOne": {
-            "id": "[parameters('vNetOneResourceId')]",
-            "subnet": {
-                "name": "[parameters('vNetOneSubnetName')]"
-            }
-        },
-        "vNetTwo": {
-            "id": "[parameters('vNetTwoResourceId')]",
-            "subnet": {
-                "name": "[parameters('vNnetTwoSubnetName')]"
-            }
-        },
-        "vNetTwoSupplied": "[and(not(empty(parameters('vNetTwoSubnetName'))), not(empty(parameters('vNetTwoResourceId'))))]"
-    },
-    "resources": [
-        {
-            "type": "Microsoft.PowerPlatform/enterprisePolicies",
-            "apiVersion": "2020-10-30",
-            "name": "[parameters('policyName')]",
-            "location": "[parameters('powerplatformEnvironmentRegion')]",
-            "kind": "NetworkInjection",
-            "properties": {
-                "networkInjection": {
-                    "virtualNetworks": "[if(variables('vNetTwoSupplied'), concat(array(variables('vNetOne')), array(variables('vNetTwo'))), array(variables('vNetOne')))]"
-                }
-            }
-        }
-    ]
-}
-```
 ### Option 2: Using PowerShell
 1. Run the [CreateSubnetInjectionEnterprisePolicy.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions.
  
