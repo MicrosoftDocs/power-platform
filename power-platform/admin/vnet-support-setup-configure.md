@@ -57,9 +57,9 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 
     :::image type="content" source="media/virtual-networks.png" alt-text="Virtual networks in your Azure resource group." lightbox="media/virtual-networks.png":::
 
-## Creating enterprise policy
+## Create the enterprise policy
 
-### Option 1: Using Azure ARM template
+### Option 1: Use the Azure ARM template
 1. Ensure you have captured the necessary details, such as the following information, from the virtual networks you have created.
     - Virtual network 1 subnet name
     - Virtual network 1 resource ID 
@@ -162,14 +162,14 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 
     :::image type="content" source="media/virtual-networks-json-script.png" alt-text="Select **Review and create** to finalize the enterprise policy." lightbox="media/virtual-networks-json-script.png":::
 
-### Option 2: Using PowerShell
+### Option 2: Use PowerShell
 1. Run the [CreateSubnetInjectionEnterprisePolicy.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions.
  
 1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform Administrator role.
 
-## Configuring your Power Platform environment
+## Configure your Power Platform environment
 
-### Option 1: Using Power Platform admin center
+### Option 1: Use the Power Platform admin center
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1.	The enterprise policies link works if the Status shows Succeeded.
 1.	In the command bar, select **History**.
@@ -177,11 +177,11 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 1.	In the **Manage Pane**, select **Environments**.
 1.	In the navigation pane, select **Manage**.
 
-### Option 2: Using PowerShell
+### Option 2: Use PowerShell
 1.	Run the NewSubnetInjection.ps1 script to apply the enterprise policy to your environment.
 1.	If you want to remove the enterprise policy from the environment, you can run the RevertSubnetInjection.ps1 script.
 
-### Validating the connection
+### Validate the connection
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1.	In the navigation pane, select **Security**.
 1.	In the **Security** pane, select **Data and privacy**.
