@@ -55,6 +55,8 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
 
 1. After you have created paired virtual networks, you can see below in your azure resource group.
 
+    :::image type="content" source="media/virtual-networks.png" alt-text="Virtual networks in your Azure resource group." lightbox="media/virtual-networks.png":::
+
 ### Create the enterprise policy
 
 1. Run the [CreateSubnetInjectionEnterprisePolicy.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions.
