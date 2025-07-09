@@ -1,6 +1,6 @@
 ---
-title: Set up Virtual Network support for Power Platform
-description: Learn how to set up Azure Virtual Network support for Power Platform.
+title: Set up virtual network support for Power Platform
+description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 07/09/2025
@@ -18,13 +18,13 @@ contributors:
   - wifun
 ---
  
-# Set up Virtual Network support for Power Platform
+# Set up virtual network support for Power Platform
 
-Azure Virtual Network support for Power Platform allows you to integrate Power Platform and Dataverse components with cloud services, or services hosted inside your private enterprise network, without exposing them to the public internet. This article helps you set up virtual network support in your Power Platform environments.
+Azure virtual network support for Power Platform allows you to integrate Power Platform and Dataverse components with cloud services, or services hosted inside your private enterprise network, without exposing them to the public internet. This article helps you set up virtual network support in your Power Platform environments.
 
 ## Prerequisites
 
-- **Review your Power Platform resources**: Review your apps, flows, and plug-in code to ensure they connect over your virtual network. They shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration allows for such calls. Learn more in [Considerations to enable Virtual Network support for Power Platform environment](vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in the [FAQ](vnet-support-overview.md#faq).
+- **Review your Power Platform resources**: Review your apps, flows, and plug-in code to ensure they connect over your virtual network. They shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration allows for such calls. Learn more in [Considerations to enable virtual network support for Power Platform environment](vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in the [FAQ](vnet-support-overview.md#faq).
 - **Prepare your tenant and set up permissions**:
     - **Azure subscription**: Ensure you have an Azure subscription where virtual network, subnet, and enterprise policy resources will be created.
     - **Assign roles**: Ensure you have the required roles to create resources and enterprise policy.
@@ -183,7 +183,7 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
 1.	Sign in to the Power Platform admin center.
 2.	In the navigation pane, select Security.
 3.	In the Security Pane, select Data and privacy.
-4.	In the Data protection and Privacy page, select Azure Virtual Network policies.
+4.	In the Data protection and Privacy page, select Azure virtual network policies.
 5.	Select the environment you want to assign to the enterprise policy, select the policy, and save. Now the enterprise policy is linked to the environment.
 
 ## Best practices
