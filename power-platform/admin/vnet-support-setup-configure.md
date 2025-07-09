@@ -57,51 +57,102 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
 
     :::image type="content" source="media/virtual-networks.png" alt-text="Virtual networks in your Azure resource group." lightbox="media/virtual-networks.png":::
 
-### Create the enterprise policy
+Creating Enterprise Policy
+Option 1: Using Azure ARM Template
+•	Ensure you have captured the below necessary details from the virtual network you have created in prior steps.
+o	Vnet One subnet name
+o	Vnet One Resource ID 
+o	Vnet Two subnet name 
+o	Vnet Two Resource ID
+•	Go to azure portal  Deploy a custom template in Azure and select the Build your own template in the editor link and copy paste the JSON script.
+•	Save the template and fill in the details to create the enterprise policy.
+o	Policy Name: Name of the enterprise policy that appears in the Power Platform admin center 13.
+o	Location: Select the location of the enterprise policy, corresponding with the Dataverse environment’s region
+	'"unitedstates"'
+	'"southafrica"'
+	'"uk"'
+	'"japan"'
+	'"india"'
+	'"france"'
+	'"europe"'
+	'"germany"'
+	'"switzerland"'
+	'"canada"'
+	'"brazil"'
+	'"australia"'
+	'"asia"'
+	'"uae"'
+	'"korea"'
+	'"norway"'
+	'"singapore"'
+	'"sweden"'
 
-1. Run the [CreateSubnetInjectionEnterprisePolicy.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions.
-   
-    > [!IMPORTANT]
-    > If you wish to delete the virtual network or subnet, or are getting errors like `InUseSubnetCannotBeDeleted` and `SubnetMissingRequiredDelegation`, you **must delete the enterprise policy** if it exists. You can delete the enterprise policy with the following command.
-    >
-    > ```powershell
-    > Remove-AzResource -ResourceId $policyArmId -Force
-    > ```
-    >
-    > Various PowerShell scripts are available to [get the enterprise policy](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#4-get-subnet-injection-enterprise-policies-in-subscription) for the ARM resource ID.
+o	Vnet One subnet name: Enter the name of subnet from first virtual network.
+o	Vnet One Resource ID: Enter the resource ID from first virtual network.
+o	Vnet Two subnet name: Enter the name of subnet from second virtual network.
+o	Vnet Two Resource ID: Enter the resource ID from second virtual network.
+Click "Review and create" to finalize the enterprise policy.
 
-1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform Administrator role.
+JSON template
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "policyName": {
+            "type": "String",
+            "metadata": {
+                "description": "The name of the Enterprise Policy."
+            }
+        },
+        "powerplatformEnvironmentRegion": {
+            "type": "String",
+            "metadata": {
+                "description": "Geo of the PowerPlatform environment."
+            }
+        },
+        "vNetOneSubnetName": {
+            "type": "String"
+        },
+        "vNetOneResourceId": {
+            "type": "String"
+        },
+        "vNetTwoSubnetName": {
+            "defaultValue": "",
+            "type": "String"
+        },
+        "vNetTwoResourceId": {
+            "defaultValue": "",
+            "type": "String"
+        }
+    },
+    "variables": {
+        "vNetOne": {
+            "id": "[parameters('vNetOneResourceId')]",
+            "subnet": {
+                "name": "[parameters('vNetOneSubnetName')]"
+            }
+        },
+        "vNetTwo": {
+            "id": "[parameters('vNetTwoResourceId')]",
+            "subnet": {
+                "name": "[parameters('vNnetTwoSubnetName')]"
+            }
+        },
+        "vNetTwoSupplied": "[and(not(empty(parameters('vNetTwoSubnetName'))), not(empty(parameters('vNetTwoResourceId'))))]"
+    },
+    "resources": [
+        {
+            "type": "Microsoft.PowerPlatform/enterprisePolicies",
+            "apiVersion": "2020-10-30",
+            "name": "[parameters('policyName')]",
+            "location": "[parameters('powerplatformEnvironmentRegion')]",
+            "kind": "NetworkInjection",
+            "properties": {
+                "networkInjection": {
+                    "virtualNetworks": "[if(variables('vNetTwoSupplied'), concat(array(variables('vNetOne')), array(variables('vNetTwo'))), array(variables('vNetOne')))]"
+                }
+            }
+        }
+    ]
+}
 
-### Configure your Power Platform environment
-
-Run the [NewSubnetInjection.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#7-set-subnet-injection-for-an-environment) to apply the enterprise policy to your environment.
-
-> [!Note]
-> If you want to remove the enterprise policy from the environment, you can run the [RevertSubnetInjection.ps1 script](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#9-remove-subnet-injection-from-an-environment).
-
-### Validate the connection
-
-## [New admin center](#tab/new)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **History**.
-1. The **enterprise policies link** works if the **Status** shows **Succeeded**.
-
-## [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **History**.
-1. The **enterprise policies link** works if the **Status** shows **Succeeded**.
-
----
-
-### Related content
-
-- Deploy enterprise policies with the [Microsoft.PowerPlatform/enterprisePolicies ARM template](/azure/templates/microsoft.powerplatform/enterprisepolicies?pivots=deployment-language-arm-template)
-- [Quickstart: Use the Azure portal to create a virtual network](/azure/virtual-network/quick-create-portal)
-- [Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins)
