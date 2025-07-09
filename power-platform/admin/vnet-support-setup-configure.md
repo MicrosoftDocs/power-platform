@@ -170,25 +170,25 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 ## Configuring your Power Platform environment
 
 ### Option 1: Using Power Platform admin center
-1.	Sign in to the Power Platform admin center.
-2.	The enterprise policies link works if the Status shows Succeeded.
-3.	In the command bar, select History.
-4.	On the Environments page, select an environment.
-5.	In the Manage Pane, select Environments.
-6.	In the navigation pane, select Manage.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1.	The enterprise policies link works if the Status shows Succeeded.
+1.	In the command bar, select **History**.
+1.	On the **Environments** page, select an environment.
+1.	In the **Manage Pane**, select **Environments**.
+1.	In the navigation pane, select **Manage**.
 
 ### Option 2: Using PowerShell
 1.	Run the NewSubnetInjection.ps1 script to apply the enterprise policy to your environment.
-2.	If you want to remove the enterprise policy from the environment, you can run the RevertSubnetInjection.ps1 script.
+1.	If you want to remove the enterprise policy from the environment, you can run the RevertSubnetInjection.ps1 script.
 
 ### Validating the connection
-1.	Sign in to the Power Platform admin center.
-2.	In the navigation pane, select Security.
-3.	In the Security Pane, select Data and privacy.
-4.	In the Data protection and Privacy page, select Azure virtual network policies.
-5.	Select the environment you want to assign to the enterprise policy, select the policy, and save. Now the enterprise policy is linked to the environment.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1.	In the navigation pane, select **Security**.
+1.	In the **Security** pane, select **Data and privacy**.
+1.	In the **Data protection and privacy** page, select **Azure Virtual Network policies**. The **Virtual Network policies** pane is displayed.
+1.	Select the environment you want to assign to the enterprise policy, select the policy, and select **Save**. Now the enterprise policy is linked to the environment.
 
 ## Best practices
-- Ensure you choose the subnet size as per your requirement because once subnet is delegated to Power platform and later if there is a need to change the subnet range it requires Microsoft support to reflect the updated subnet changes.
+- Ensure you choose the subnet size as per your requirement. After the subnet is delegated to Power Platform&mdash;and if later there's a need to change the subnet range&mdash;it requires Microsoft Support to reflect the updated subnet changes.
 
 
