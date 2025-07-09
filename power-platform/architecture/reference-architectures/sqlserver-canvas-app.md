@@ -31,7 +31,7 @@ SQL Server is a widely used solution for storing enterprise data. This article o
 While many previous implementations of Power Apps with SQL Server used a gateway, this example architecture highlights the virtual private network (VNET) architecture with SQL Server. A SQL Server instance can be [Azure SQL](/azure/azure-sql/) or an on-premises SQL database exposed to the cloud through [Azure Arc](/sql/sql-server/azure-arc/overview). In both cases, communication is private and secure.
 
 - **Contoso VNET** is a virtual private network that you create in your tenant.
-- **Azure resources/Contoso resources** are resources you make available in the virtual network from within your tenant. These resources include services like an Azure SQL database or an on-premises SQL Server database made available through [Azure Arc](/sql/sql-server/azure-arc/overview).
+- **Azure resources/Contoso resources** are resources you make available in the virtual network from within your tenant. These resources include services like an Azure SQL database or an on-premises SQL Server database made available through Azure Arc.
 - **Delegated subnet** sits within your virtual network and provides a container for Power Platform to let services like the SQL connector or a Dataverse plug-in work with your resources.
 
 ## Components
