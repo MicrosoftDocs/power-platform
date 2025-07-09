@@ -1,9 +1,9 @@
 ---
-title: "Associate a pipeline with development environments in a group (preview)"
+title: "Set a default pipeline"
 description: "Use the default deployment pipeline rule to associate a pipeline with all development environments in an environment group."
 Keywords: pipelines, ALM, environment groups
 author: asheehi1
-ms.author: asheehi
+ms.author: caburk
 ms.reviewer: matp
 ms.topic: how-to
 ms.date: 05/13/2025
@@ -11,11 +11,7 @@ ms.custom: template-how-to
 ---
 # Associate a pipeline with development environments in a group (preview)
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
 The default deployment pipeline rule for environment groups is designed to mitigate steps required to implement standardized application lifecycle management (ALM) processes at scale. These rules ensure consistent application of pipeline settings and configurations across an entire group, simplifying governance and compliance for your organization.
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Prerequisites to configure the default deployment pipeline rule
 
