@@ -55,13 +55,13 @@ Select N+1 data queries occur when an app makes one query to get a list of recor
 
 ### How Select N+1 data queries are created
 
-In canvas apps, Select N+1 queries happen when an app gets a list of items from a data source (the initial query) and runs more queries for each item to retrieve related details or data. For example, an app might first get a list of customer orders (the initial query), and for each order, separately get customer details or product information (the more queries). This pattern consists of one initial query plus "N" more queries, where "N" is the number of items from the first query—so it's called "Select N+1."
+In canvas apps, Select N+1 queries happen when an app gets a list of items from a data source (the initial query) and runs more queries for each item to retrieve related details or data. For example, an app might first get a list of customer orders (the initial query), and for each order, separately get customer details or product information (the "more" queries). This pattern consists of one initial query plus "N" more queries, where "N" is the number of items from the first query—so it's called "Select N+1."
 
 This scenario often happens when developers use functions like `LookUp`, `Filter`, or `First` inside loops or galleries. The app repeatedly queries the data source for each item displayed.
 
 ### Why Select N+1 queries negatively impact performance
 
-Select N+1 queries slow down app performance because each extra query adds more network calls, processing, and delays. Instead of retrieving all required data in one step, the app repeatedly communicates with the data source, creating delays and causing the app to feel slow to the user. As the number of items grows, the performance impact worsens and users feel frustrated.
+Select N+1 queries slow down app performance because each extra query adds more network calls, processing, and delays. Instead of retrieving all required data in one step, the app repeatedly communicates with the data source, creating delays and causing the app to feel slow to the user. As the number of items grows, performance worsens and users feel frustrated.
 
 For example, an app might show a gallery of 50 customer orders. If the app gets the initial list of orders with one query, that's one network call. If the app uses a separate `LookUp` function in the gallery to get customer details for each order, it makes 50 more network calls—one for each order. This means 51 network requests in total (one initial query plus 50 more), which increases network traffic and delay compared to getting all the data in one step.
 

@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: best-practice
-ms.date: 07/08/2025
+ms.date: 07/09/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -16,7 +16,7 @@ ms.custom:
 
 # Measure and maintain Power Platform solution performance
 
-This article provides an overview of tools for monitoring and optimizing Power Platform solution performance. Each tool offers unique features to help you diagnose issues, analyze usage patterns, and ensure that your apps, flows, and data services run efficiently. Depending on the business criticality and/or risk for a particular solution, you may need to use a different mix of tools to help prevent potential issues. Examples are provided in [Recommendations across solution complexity](#recommendations-across-solution-complexity).
+This article provides an overview of tools for monitoring and optimizing Power Platform solution performance. Each tool offers unique features to help you diagnose issues, analyze usage patterns, and ensure that your apps, flows, and data services run efficiently. Depending on the business criticality and/or risk for the solution, you may need to use a different mix of tools to help prevent potential issues. Examples are provided in [Recommendations across solution complexity](#recommendations-across-solution-complexity).
 
 ## Monitoring and reporting tools and processes
 
@@ -46,13 +46,13 @@ To access these analytics, go to your flow in Power Automate and select **Analyt
 
 Dataverse Analytics offers insights into the underlying data platform used by many Power Platform solutions. It shows metrics on data storage, API usage, and query performance, helping you to understand how your solution interacts with its data sources. This information helps you identify slow queries, excessive data operations, and potential capacity issues.
 
-Access Dataverse Analytics in the Power Platform admin center by selecting your environment and navigating to the **Analytics** section under Dataverse. Review the dashboards and reports that break down usage patterns and performance statistics. Monitoring these metrics allows you to proactively address issues (optimizing queries or managing data growth, for example) before they impact users.
+Access Dataverse Analytics in the Power Platform admin center by selecting your environment and navigating to the **Analytics** section under Dataverse. Review the dashboards and reports that break down usage patterns and performance statistics. Monitoring these metrics allows you proactively address issues (optimizing queries or managing data growth, for example) before they impact users.
 
 ### Azure Application Insights
 
 Azure Application Insights is a monitoring service that integrates with Power Platform solutions, especially those that use custom connectors, plugins, or Azure services. It collects telemetry data like user interactions, response times, exceptions, and dependency calls, providing a complete view of your app's health and performance.
 
-To set up Application Insights, create an instance in the Azure portal. Then, configure your Power Platform solution or related components to send telemetry data to it—this can involve adding instrumentation code or setting up connectors. After setup, use the Application Insights dashboard to visualize trends, set up alerts, and drill into specific issues. These insights into your app's performance help you maintain high performance and quickly resolve issues.
+To set up Application Insights, create an instance in the Azure portal. Then, configure your Power Platform solution or related components to send telemetry data to it—this might involve adding instrumentation code or setting up connectors. After setup, use the Application Insights dashboard to visualize trends, set up alerts, and drill into specific issues. These insights into your app's performance help you maintain high performance and quickly resolve issues.
 
 ### Solution Checker
 
@@ -85,11 +85,11 @@ As the complexity increases from low to high risk, the requirements for monitori
 > [!NOTE]
 > These recommendations across risk categories are an example. Your context may require you to make changes to best fit your needs.
 
-### All, low-risk, or personal productivity solutions
+### All, low risk, or personal productivity solutions
 
 When you implement standards across apps and solutions in your tenant, stick to tools that don't require additional permissions or bookmarks.
 
-Determine which items flagged by the Power Apps Checker are possible to ignore and which require mitigation. Document your recommendations and promote that knowledge within your internal Power Platform community.
+Determine which items flagged by the Power Apps Checker can be ignored and which require mitigation. Document your recommendations and promote that knowledge within your internal Power Platform community.
 
 Ensure that **Inefficient delay loading** within the App Checker is **cleared entirely**. Inefficient delay loading typically occurs when an app has [cross-screen references](top-issues.md), such as a control property that references a control on another screen. When this happens, Power Apps load the second screen to show the current screen. If the second screen has a similar issue, it might need to load a third screen, and so on. This issue typically arises when developers copy and paste a control from one screen to another.
 
@@ -97,7 +97,7 @@ A tangled web of references is hard to undo. To avoid such issues, store shared 
 
 Learn more about [Power Apps Checker](#power-apps-checker).
 
-### Medium-risk solutions
+### Medium risk solutions
 
 In addition to the items in the "all" category, medium risk solutions require careful monitoring of potential issues as solution data grows over time. Ensure that you're gathering the right data to react quickly to issues and to identify improvements that increase the business value of your solution.
 
@@ -108,9 +108,9 @@ Learn more about:
 - [Power Automate Analytics](#power-automate-analytics)
 - [Dataverse Analytics](#dataverse-analytics)
 
-### High-risk solutions
+### High risk solutions
 
-In addition to the tools suggested for low- and medium-risk tiers, high-risk and high-business criticality solutions require tools that help teams support apps, enable developers to react quickly to fix issues, and provide data and reporting metrics to help the organization achieve its business goals. Performance is critical because apps perceived as slow, taking too long, or blocking business processes are quickly abandoned by users.
+In addition to the tools suggested for low and medium risk tiers, high-risk and high-business criticality solutions require tools that help teams support apps, enable developers to react quickly to fix issues, and provide data and reporting metrics to help the organization achieve its business goals. Performance is critical because apps perceived as slow, taking too long, or blocking business processes are quickly abandoned by users.
 
 Learn more about:
 - [Azure Application Insights](#azure-application-insights)

@@ -18,7 +18,11 @@ ms.custom:
 
 Canvas-based Power Apps provide a flexible, intuitive way to build custom applications. However, performance issues can occur if apps aren't optimized for performance. This article provides practical strategies to improve user experience and resolve common performance concerns.
 
-Set standards for app responsiveness using the following table, which shows how users perceive response times in applications.
+## Set performance targets
+
+Good app performance means different things to different people. 
+
+To set standards for app responsiveness, use the following guide, which shows how users perceive response times in applications.
 
 | Response time | User perception                             |
 |---------------|---------------------------------------------|
@@ -31,13 +35,11 @@ Set standards for app responsiveness using the following table, which shows how 
 
 *Source: [Nielsen Norman Group&ndash;Response Times: The 3 Important Limits](https://www.nngroup.com/articles/response-times-3-important-limits/)*
 
-## Set performance targets
-
-Good app performance means different things to different people. Set performance goals early in the development cycle to ensure your solution starts quickly and remains efficient.
+Set performance goals early in the development cycle to ensure your solution starts quickly and remains efficient.
 
 - **Benchmark the current process**: If your solution replaces an old app or process, aim to improve on the current experience. If you're replacing an app, make sure your new app loads as quickly as the old one and allows users to accomplish tasks faster. At a minimum, keep app performance the same.
 
-- **Don't cause new problems**: If you're replacing a business process, focus your benchmark on the timing of the full cycle. Enure your solution removes bottlenecks so users complete tasks faster, and doesn't introduce new bottlenecks in the process. Help users understand how your new solution fits into their existing processes.
+- **Don't cause new problems**: If you're replacing a business process, focus your benchmark on the timing of the full cycle. Ensure your solution removes bottlenecks so users complete tasks faster, and doesn't introduce new bottlenecks in the process. Help users understand how your new solution fits into their existing processes.
 
 Learn more about [defining performance targets](/power-platform/well-architected/performance-efficiency/performance-targets).
 
@@ -45,7 +47,7 @@ Learn more about [defining performance targets](/power-platform/well-architected
 
 Run performance tests and checks throughout solution development to catch potential issues early and avoid extensive rework.
 
-- **Match the production data size**: Ensure your development data sources reflect the size and scope of production data as closely as possible. If you can't match production data, test your solution with small datasets to check functionality. Measure performance with different data sizes&mdash;like 100, 1,000, and 10,000 rows&mdash;and compare results. If performance increases with data size, estimate how it performs at production scale and make sure it stays within your agreed parameters.
+- **Match the production data size**: Ensure your development data sources reflect the size and scope of production data as closely as possible. If you can't match production data, test your solution with small datasets to check functionality. Measure performance with different data sizes&mdash;like 100, 1,000, and 10,000 rows&mdash;and compare results. If performance increases with data size, estimate how the solution performs at production scale and make sure it stays within your agreed parameters.
 
 - **Track your solution performance over time**: Track your performance test results and compare them across test runs. If you run these tests often, trace what changed since the last test and identify where to make fixes. Track significant performance changes, whether positive or negative, and include them in lessons learned or best practices for future solutions.
 
@@ -55,7 +57,7 @@ Learn more about [continuous performance optimization](/power-platform/well-arch
 
 ## Reduce data load
 
-Loading large amounts of data can significantly slow down your app:
+Loading large amounts of data can significantly slow down your app.
 
 - **Limit data retrieval**: Loading more data than your user needs at one time can slow down your app and overwhelm the user with unnecessary information. Instead, show a clear, manageable amount of data by default, and let users easily search or filter to find exactly what they're looking for. This approach keeps your app fast, user-friendly, and focused on what's useful.
 
