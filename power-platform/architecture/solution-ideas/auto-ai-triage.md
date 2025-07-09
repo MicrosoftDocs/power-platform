@@ -1,11 +1,11 @@
 ---
-title: Automate the bug reporting process in software development with Auto AI Triage
-description: Discover how to use Copilot Studio and Power Platform to automate the bug reporting and updating processes in software development with Auto AI Triage
-#customer intent: As a Power Platform user, I want to use automate the bug reporting and updating processes in software development
+title: Automate software bug reporting with the Auto Triage AI Agent
+description: Discover how to use Copilot Studio and Power Platform to automate the bug reporting and updating processes in software development with the Auto Triage AI agent
+#customer intent: As a business decision maker, I want to evaluate Auto Triage AI's operational benefits so that I can reduce manual effort, improve efficiency, and enhance the user experience.  
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 06/05/2025
+ms.date: 07/09/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -15,52 +15,50 @@ search.audienceType:
   - flowmaker
 ---
 
-# Automate the bug reporting process in software development with Auto AI Triage
+# Automate software bug reporting with the Auto Triage AI Agent
 
-This article describes the Auto Triage AI Agent, which automates bug reporting and updating in software development. Two agents handle bug creation and follow-up, which improves user experience and operational speed.
+In this article, you learn about the Auto Triage AI Agent, which automates bug reporting and updating processes in software development. The solution highlights the efficiency gained through using generative AI to automate the triage of product issues, improving not only the burden on customer support teams but also enhancing the overall customer experience.
 
-For a demo and more information, go to [Auto AI Triage on GitHub](https://github.com/Shrusti13/TriageAutonomousAgent?tab=readme-ov-file).
+For a demo and more information, visit the Auto Triage AI Agent solution on [GitHub](https://github.com/Shrusti13/TriageAutonomousAgent?tab=readme-ov-file​).
 
 [!INCLUDE [pp-arch-solution-idea-tip](../../includes/pp-arch-solution-idea-tip.md)]
 
 ## Architecture diagram
 
-:::image type="content" source="media/auto-triage/auto-triage.jpg" alt-text="Architecture diagram of the Cardio Triage AI solution." border="true" lightbox="media/auto-triage/auto-triage.jpg":::
+:::image type="content" source="media/auto-triage/auto-triage.jpg" alt-text="Architecture diagram of the Auto Triage AI Agent solution." border="true" lightbox="media/auto-triage/auto-triage.jpg":::
 
 ## Workflow
 
-The workflow has two main sections: one for autonomous bug report creation and one for autonomous bug update and follow-up. Each section is handled by a dedicated agent.
+The solution consists of two agents: one dedicated to bug report creation, and the other to bug updates and follow-up. 
 
 ### Agent 1: Autonomous bug report creation
 
-- When an email detailing a product issue arrives, Agent 1 starts. The agent uses generative AI to analyze the email and extract key details, like the issue title. The agent uses the title to cross-reference product documentation—including specifications, business and technical process flows, installation manuals, error codes, and troubleshooting guides—to generate clear reproduction steps and system information. These details are essential for triage.
-- The AI creates a bug in Azure DevOps and fills in fields like the issue description, repro steps, and system information.
-- After creating the bug, the agent emails the user the tracking number and confirms that the bug is logged.
+1. When an email detailing a product issue arrives, Agent 1 is triggered. The agent uses generative AI to analyze the email and extract key details, such as the issue title. The agent uses the title to cross-reference product documentation—including specifications, business and technical process flows, installation manuals, error codes, and troubleshooting guides—to generate comprehensive reproduction steps and system information. These details are essential for the triage process.
+1. The AI autonomously creates a bug in Azure DevOps and fills in fields like the issue description, reproduction steps, and system information.
+1. After creating the bug, the agent emails the user the tracking number, confirming successfully logging of the bug.
 
 ### Agent 2: Autonomous bug update and follow-up
 
-- When a user replies with more information or asks for an update on their tracking ID, Agent 2 retrieves the bug details from Azure DevOps using the tracking ID.
-- Generative AI analyzes the email and updates the bug report, so the information is always up to date.
-- The agent sends a follow-up email to the user with the current bug status and confirms that the new information is added. This automation reduces human error, speeds up the process, and makes sure all bug reports are consistent, accurate, and detailed.
+1. When a user replies with more information or asks for an update on their tracking ID, Agent 2 retrieves the bug details from Azure DevOps using the tracking ID.
+1. Generative AI analyzes the email and updates the bug report, ensuring the information is always up to date.
+1. The agent sends a follow-up email to the user with the current bug status and confirms that the new information has been added. 
+
+This intelligent automation reduces human error, speeds up the process, and ensures that all bug reports are consistent, accurate, and detailed.
 
 ## Components
 
-- **Microsoft Outlook (autonomous agent)**: Outlook lets you use autonomous agents from Copilot Studio, so agents can be triggered directly from your email workflow. Learn more in [Event trigger overview](/microsoft-copilot-studio/authoring-triggers-about).
-- [**Copilot Studio agent**](/microsoft-copilot-studio/): An autonomous agent that analyses emails and creates bugs in Azure DevOps.
-- [**Azure DevOps**](/azure/devops/user-guide/what-is-azure-devops): Azure DevOps supports the software development lifecycle and tracks bugs and features.
-- **[Power Automate](/power-automate/):** Power Automate automates repetitive tasks and workflows. It connects services and apps to perform tasks automatically, saving time and reducing the chance of human error.
-- **[AI Builder](/ai-builder/)**: AI Builder lets you add artificial intelligence to your apps without deep technical knowledge. It helps build features like predictive analytics or automated insights.
-- **Knowledge**: Knowledge is the information and data sources that agents use to provide relevant and accurate responses.
-  - Product specification
-  - Business and technical process flows
-  - Installation manuals
-  - Error codes
-  - Troubleshooting guides
+- **Microsoft Outlook (autonomous agent)**: Outlook provides seamless access to autonomous agents from Copilot Studio, allowing agents to be triggered directly from an employee's email workflow. Learn more in [Event trigger overview](/microsoft-copilot-studio/authoring-triggers-about).
+- [**Copilot Studio agent**](/microsoft-copilot-studio/): The Copilot Studio agent is an autonomous agent that analyzes emails and creates bugs in Azure DevOps.
+- [**Azure DevOps**](/azure/devops/user-guide/what-is-azure-devops): Azure DevOps supports the software development lifecycle and is used to track bugs and features.
+- **[Power Automate](/power-automate/):** Power Automate automates repetitive tasks and workflows. It connects services and apps to perform tasks automatically, saving time and reducing human error.
+- **[AI Builder](/ai-builder/)**: AI Builder lets you add artificial intelligence to your apps without requiring deep technical knowledge. It helps build features like predictive analytics or automated insights.
+- **Knowledge**: "Knowledge" refers to the information and data sources that an agent uses to provide relevant and accurate responses. This knowledge can include product specifications, business and technical process flows, installation guides, lists of error codes, and troubleshooting knowledge bases.
 
 ## Scenario details
 
-Managing and triaging product issues quickly is critical in today’s software development environments. As the number of bug reports grows, support teams can get overwhelmed by the repetitive and time-consuming task of logging and updating bugs. For example, a product support specialist might get hundreds of emails each day from users reporting product issues. For each email, the support specialist needs to create a bug report in Azure DevOps, pull relevant information from documentation, and send follow-up emails to users. This manual process is slow, error prone, and doesn't scale.
-Auto Triage AI changes this process by automating it with generative AI. With two intelligent copilot agents working together, Auto Triage AI handles both the initial bug creation and follow-up updates, so you get faster resolution times and a better user experience without manual work.
+In today's software development environments, managing and triaging product issues effectively is critical to delivering high-quality products. As the number of bug reports grows, support teams increasingly become overwhelmed by the repetitive and time-consuming task of manually logging and updating bugs. For example, a product support specialist might receive hundreds of emails daily from users reporting product issues. For each email, the support specialist needs to manually create bug reports in Azure DevOps, extract relevant information from knowledge documentation, and send follow-up emails to users. This manual process is slow, error prone, and doesn't scale.
+
+Auto Triage AI changes this process by automating it with generative AI. With two intelligent copilot agents working seamlessly together, Auto Triage AI autonomously handles both the initial bug creation and follow-up updates. By combining advanced AI capabilities with real-time automation, Auto Triage AI transforms a traditionally manual, slow, and error-prone process into a streamlined, efficient workflow.
 
 ## Considerations
 
@@ -68,40 +66,40 @@ Auto Triage AI changes this process by automating it with generative AI. With tw
 
 ### Reliability
 
-- Automates triage of bug reports with no drop in performance, even at high volume.
-- Uses cloud architecture for scalable and resilient operations.
-- Uses redundancy, parallel processing, and automatic scaling on demand.
+- Automates bug report triage without degrading performance, even at high volume.
+- Uses cloud architecture to ensure scalable and resilient operations.
+- Implements redundancy, parallel processing, and automatic scaling on demand.
 
 ### Security
 
 - Uses enterprise-grade authentication with Microsoft Entra ID for secure access.
 - Uses secure connections and access controls to protect sensitive data.
-- Keeps data in secure systems that follow Azure DevOps security standards.
+- Ensures data resides within secure systems, following Azure DevOps security standards.
 
 ### Operational Excellence
 
-- Automation reduces manual work in bug triage.
-- Delivers consistent quality and response time for bug reports.
-- Monitors system health with integrated tools to keep high uptime.
+- Reduces manual intervention in bug triage processes.
+- Ensures consistent quality and response time for bug reports.
+- Monitors system health with integrated tools, ensuring high operational uptime.
 
 ### Performance Efficiency
 
-- System scales automatically based on the number of bug reports.
+- Scales automatically based on the volume of bug reports.
 - Uses Power Automate and AI Builder to optimize performance without manual scaling.
-- Uses cloud resources efficiently to deliver a smooth experience.
+- Uses cloud resources efficiently to deliver a smooth and performant experience.
 
 ### Experience Optimization
 
-- Reduces manual tasks and speeds up issue resolution to improve user experience.
-- Triages bugs quickly with AI-powered insights to improve the user experience.
+- Reduces manual tasks and speeds up issue resolution.
+- Triages bugs quickly with AI-powered insights.
 
 ### Responsible AI
 
 - **Fairness:** AI models trained on diverse datasets deliver balanced bug classification.
 - **Reliability and safety:** The architecture delivers reliable AI-powered decisions.
-- **Privacy and security:** Data stays in secure environments to keep it confidential.
+- **Privacy and security:** Data stays in secure environments to maintain confidentiality.
 - **Transparency:** The AI decision-making process is traceable for transparency.
-- **Accountability:** Clear access controls and auditing mechanisms keep the system accountable.
+- **Accountability:** Clear access controls and auditing mechanisms ensure accountability for actions taken by the system.
 
 ## Contributors
 
@@ -119,4 +117,4 @@ Principal authors:
 
 ## Next steps
 
-For a demo video, more details about functionality, architecture, source code, and other resources, go to the Auto AI Triage solution on [GitHub](https://github.com/Shrusti13/TriageAutonomousAgent?tab=readme-ov-file​).
+For a demo video, more details about functionality, architecture, source code, and more, visit the Auto Triage AI Agent solution on [GitHub](https://github.com/Shrusti13/TriageAutonomousAgent?tab=readme-ov-file​).
