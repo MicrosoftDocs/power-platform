@@ -7,21 +7,20 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: bap-template, NEWPPAC
 ms.topic: concept-article
-ms.date: 06/03/2025
+ms.date: 07/09/2025
 ms.contributors:
   - lsuresh
 contributors:
   - srpoduri 
   - shahzorkhan123
   - lavanyapg
-
 ---
 
 # Security roles and privileges
 
 To control who can access restricted or sensitive data and resources and what they can do with them, assign users to security roles. This article provides an overview of security roles and their associated privileges.
 
-You can assign security roles using the [new, modern UI](#security-roles-and-the-new-modern-ui), or the [legacy UI](#security-roles-and-the-legacy-ui).
+You can assign security roles using the [new, modern UI](#security-roles-and-the-new-modern-ui).
 
 ## Security roles and the new, modern UI
 
