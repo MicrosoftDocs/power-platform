@@ -127,12 +127,12 @@ The next step is to determine and implement your approach to loading data into D
 
 1. **Error handling**: Don’t ignore errors—resolve them to prevent cascading failures. Use defaults (for example, blank lookups, default optionset values) to insert placeholder records and capture GUIDs.
 1. **Status updates**: Only set the active status during initial record insertion. For inactive records or custom state/status codes, update them after data validation. For most custom tables, status updates can follow immediately after insert. However, for special tables like Case, Opportunity, or Lead, delay status updates until the end of the migration. Once these records are closed, they can’t be modified unless reopened—a time-consuming process that risks data integrity.
-1. **Ownership and security**: Set the correct record owner during data insertion, as both user-level and business unit (BU) security in Dataverse are tied to the owner’s BU. Assigning the right BU at creation is critical—updating it afterwards removes all security roles.
-    - **Use stub users**: 
-        - Dataverse supports stub users (nonlicensed), which are useful for large or historical migrations. Stub users are automatically assigned the Salesperson security role—don't rename or modify this role. Stub users can own records if they have user-level read access to the relevant tables.
+1. **Ownership and security**: Set the correct record owner during data insertion, as both user-level and business unit security in Dataverse are tied to the owner’s business unit. Assigning the right business unit at creation is critical—updating it afterwards removes all security roles.
+    - **Use [stub users](/power-platform/admin/create-users?tabs=new#how-stub-users-are-created)**: 
+        - Dataverse supports stub users (nonlicensed), which are useful for large or historical migrations. Stub users are automatically assigned the Salesperson security role—don't rename or modify this role. Stub users can own records if they have user-level read access to the relevant tables. 
     - **Recommendations**:
-        - Create all nonlicensed users during migration with the correct BU set at insert time.
-        - Don't change the BU after creation—doing so removes all roles, including Salesperson.
+        - Create all nonlicensed users during migration with the correct business unit set at insert time.
+        - Don't change the business unit after creation—doing so removes all roles, including Salesperson.
         - Ensure the Salesperson role has read access to all migration-eligible tables.
         - Even users disabled in the Dataverse environment with this role can own records.
 
