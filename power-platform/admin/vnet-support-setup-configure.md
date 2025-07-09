@@ -39,7 +39,7 @@ Azure virtual network support for Power Platform allows you to integrate Power P
     > - If there are two or more supported regions for the geo, such as the United States with **eastus** and  **westus**, two virtual networks in ***different*** regions are required to create the enterprise policy for business continuity and disaster recovery or failover scenarios.
     > - Be sure that the subnet you create has been appropriately sized according to [Estimating subnet size for Power Platform environments](./vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
     
-    You can [reuse existing virtual networks](./vnet-support-overview.md#can-i-use-an-existing-virtual-network-for-power-platform) if desired. Subnets on the other hand, [can't be reused in multiple enterprise policies](./vnet-support-overview.md#can-i-reuse-the-same-delegated-subnet-in-multiple-enterprise-policies).
+    You can [reuse existing virtual networks](./vnet-support-overview.md#can-i-use-an-existing-virtual-network-for-power-platform), if desired. Subnets [can't be reused in multiple enterprise policies](./vnet-support-overview.md#can-i-reuse-the-same-delegated-subnet-in-multiple-enterprise-policies).
 
 1. Create a subnet in each of your virtual networks. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment. Both subnets must have the same number of available IP addresses.
 
@@ -49,11 +49,11 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 
 1. Ensure that your Azure subscription is registered for the Microsoft.PowerPlatform resource provider by running the [SetupSubscriptionForPowerPlatform.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#how-to-run-setup-scripts).
 
-1. Ensure your subnets don't have any resources connected to them. Delegate each subnet to Microsoft.PowerPlatform/enterprisePolicies by running the [SetupVnetForSubnetDelegation.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) for each subnet. If you don’t want to use Powershell, you can delegate subnet while creating the virtual network in Azure portal to the service **Microsoft.PowerPlatform/enterprisePolicies**.
+1. Ensure your subnets don't have any resources connected to them. Delegate each subnet to Microsoft.PowerPlatform/enterprisePolicies by running the [SetupVnetForSubnetDelegation.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#1-setup-virtual-network-for-subnet-injection) for each subnet. If you don’t want to use PowerShell, you can delegate subnet while creating the virtual network in Azure portal to the service **Microsoft.PowerPlatform/enterprisePolicies**.
 
     Learn more at [Add or remove a subnet delegation](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal).
 
-1. After you have created paired virtual networks, you can view them in your Azure resource group, as shown in the image below.
+1. After you have created paired virtual networks, you can view them in your Azure resource group, as shown in the following image.
 
     :::image type="content" source="media/virtual-networks.png" alt-text="Virtual networks in your Azure resource group." lightbox="media/virtual-networks.png":::
 
@@ -189,6 +189,6 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 1.	Select the environment you want to assign to the enterprise policy, select the policy, and select **Save**. Now the enterprise policy is linked to the environment.
 
 ## Best practices
-- Ensure you choose the subnet size as per your requirement. After the subnet is delegated to Power Platform&mdash;and if later there's a need to change the subnet range&mdash;it requires Microsoft Support to reflect the updated subnet changes.
+- Ensure you choose the subnet size as per your requirement. After the subnet is delegated to Power Platform&mdash;and if later, there's a need to change the subnet range&mdash;it requires Microsoft Support to reflect the updated subnet changes.
 
 
