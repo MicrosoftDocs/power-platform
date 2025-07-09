@@ -3,7 +3,7 @@ title: Set up Virtual Network support for Power Platform
 description: Learn how to set up Azure Virtual Network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/08/2025
+ms.date: 07/09/2025
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -57,43 +57,47 @@ Azure Virtual Network support for Power Platform allows you to integrate Power P
 
     :::image type="content" source="media/virtual-networks.png" alt-text="Virtual networks in your Azure resource group." lightbox="media/virtual-networks.png":::
 
-Creating Enterprise Policy
-Option 1: Using Azure ARM Template
-•	Ensure you have captured the below necessary details from the virtual network you have created in prior steps.
-o	Vnet One subnet name
-o	Vnet One Resource ID 
-o	Vnet Two subnet name 
-o	Vnet Two Resource ID
-•	Go to azure portal  Deploy a custom template in Azure and select the Build your own template in the editor link and copy paste the JSON script.
-•	Save the template and fill in the details to create the enterprise policy.
-o	Policy Name: Name of the enterprise policy that appears in the Power Platform admin center 13.
-o	Location: Select the location of the enterprise policy, corresponding with the Dataverse environment’s region
-	'"unitedstates"'
-	'"southafrica"'
-	'"uk"'
-	'"japan"'
-	'"india"'
-	'"france"'
-	'"europe"'
-	'"germany"'
-	'"switzerland"'
-	'"canada"'
-	'"brazil"'
-	'"australia"'
-	'"asia"'
-	'"uae"'
-	'"korea"'
-	'"norway"'
-	'"singapore"'
-	'"sweden"'
+## Creating Enterprise Policy
 
-o	Vnet One subnet name: Enter the name of subnet from first virtual network.
-o	Vnet One Resource ID: Enter the resource ID from first virtual network.
-o	Vnet Two subnet name: Enter the name of subnet from second virtual network.
-o	Vnet Two Resource ID: Enter the resource ID from second virtual network.
-Click "Review and create" to finalize the enterprise policy.
+### Option 1: Using Azure ARM Template
+1. Ensure you have captured the below necessary details from the virtual network you have created in prior steps.
+    - Vnet One subnet name
+    - Vnet One Resource ID 
+    - Vnet Two subnet name 
+    - Vnet Two Resource ID
 
-JSON template
+1. Go to azure portal [Deploy a custom template](https://ms.portal.azure.com/#create/Microsoft.Template) in Azure and select the **Build your own template in the editor** link and copy paste the JSON script.
+
+1. Save the template and fill in the details to create the enterprise policy.
+    - **Policy Name**: Name of the enterprise policy that appears in the Power Platform admin center 13.
+    - **Location**: Select the location of the enterprise policy, corresponding with the Dataverse environment’s region
+        - '"unitedstates"'
+        - '"southafrica"'
+        - '"uk"'
+        - '"japan"'
+        - '"india"'
+        - '"france"'
+        - '"europe"'
+        - '"germany"'
+        - '"switzerland"'
+        - '"canada"'
+        - '"brazil"'
+        - '"australia"'
+        - '"asia"'
+        - '"uae"'
+        - '"korea"'
+        - '"norway"'
+        - '"singapore"'
+        - '"sweden"'
+
+    - Vnet One subnet name: Enter the name of subnet from first virtual network.
+    - Vnet One Resource ID: Enter the resource ID from first virtual network.
+    - Vnet Two subnet name: Enter the name of subnet from second virtual network.
+    - Vnet Two Resource ID: Enter the resource ID from second virtual network.
+
+1. Click **Review and create** to finalize the enterprise policy.
+
+```JSON template
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
@@ -155,4 +159,5 @@ JSON template
         }
     ]
 }
+```
 
