@@ -66,7 +66,7 @@ Azure virtual network support for Power Platform allows you to integrate Power P
     - Virtual network 2 subnet name 
     - Virtual network 2 resource ID
 
-1. [Deploy a custom template](https://ms.portal.azure.com/#create/Microsoft.Template) in Azure portal. Select the **Build your own template in the editor** link and copy and paste the JSON script.
+1. [Deploy a custom template](https://ms.portal.azure.com/#create/Microsoft.Template) in Azure portal. Select the **Build your own template in the editor** link and copy and paste the following JSON script.
 
     ```JSON template
     {
@@ -160,6 +160,7 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 
 1. Select **Review and create** to finalize the enterprise policy.
 
+    :::image type="content" source="media/virtual-networks-json-script.png" alt-text="Select **Review and create** to finalize the enterprise policy." lightbox="media/virtual-networks-json-script.png":::
 
 ### Option 2: Using PowerShell
 1. Run the [CreateSubnetInjectionEnterprisePolicy.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions.
