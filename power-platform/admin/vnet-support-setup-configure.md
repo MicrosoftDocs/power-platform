@@ -135,24 +135,24 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 1. Save the template and fill in the details to create the enterprise policy.
     - **Policy name**: Name of the enterprise policy that appears in the Power Platform admin center.
     - **Location**: Select the location of the enterprise policy, corresponding with the Dataverse environment’s region:
-        - '"unitedstates"'
-        - '"southafrica"'
-        - '"uk"'
-        - '"japan"'
-        - '"india"'
-        - '"france"'
-        - '"europe"'
-        - '"germany"'
-        - '"switzerland"'
-        - '"canada"'
-        - '"brazil"'
-        - '"australia"'
-        - '"asia"'
-        - '"uae"'
-        - '"korea"'
-        - '"norway"'
-        - '"singapore"'
-        - '"sweden"'
+        - unitedstates
+        - southafrica
+        - uk
+        - japan
+        - india
+        - france
+        - europe
+        - germany
+        - switzerland
+        - canada
+        - brazil
+        - australia
+        - asia
+        - uae
+        - korea
+        - norway
+        - singapore
+        - sweden
     - **Virtual network 1 subnet name**: Enter the name of the subnet from the first virtual network.
     - **Virtual network 1 resource ID**: Enter the resource ID from the first virtual network.
     - **Virtual network 2 subnet name**: Enter the name of the subnet from the second virtual network.
