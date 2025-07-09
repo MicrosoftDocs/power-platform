@@ -1,0 +1,730 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API - powerautomate",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
+    "version": "2022-03-01-preview"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/powerautomate/environments/{environmentId}/cloudFlows": {
+      "get": {
+        "tags": [
+          "CloudFlows"
+        ],
+        "summary": "Retrieve cloud flows with filters.",
+        "description": "Returns a list of cloud flows.",
+        "operationId": "ListCloudFlows",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "workflowId",
+            "description": "The workflow ID.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "resourceId",
+            "description": "The resource ID.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "createdBy",
+            "description": "The creator Dataverse ID.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "ownerId",
+            "description": "The owner Dataverse ID.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "createdOnStartDate",
+            "description": "Filter for created on or after this date.",
+            "type": "string",
+            "format": "date"
+          },
+          {
+            "in": "query",
+            "name": "createdOnEndDate",
+            "description": "Filter for created on or before this date.",
+            "type": "string",
+            "format": "date"
+          },
+          {
+            "in": "query",
+            "name": "modifiedOnStartDate",
+            "description": "Filter for modified on or after this date.",
+            "type": "string",
+            "format": "date"
+          },
+          {
+            "in": "query",
+            "name": "modifiedOnEndDate",
+            "description": "Filter for modified on or before this date.",
+            "type": "string",
+            "format": "date"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. One or more cloud flows were returned.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/CloudFlow"
+                  }
+                },
+                "nextLink": {
+                  "description": "URL to retrieve the next page of results, if any. Page size is 250.",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No content. No matching cloud flows found."
+          },
+          "400": {
+            "description": "Bad request.",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "403": {
+            "description": "Forbidden."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/powerautomate/environments/{environmentId}/flowActions": {
+      "get": {
+        "tags": [
+          "FlowActions"
+        ],
+        "summary": "Retrieve flow actions with filters.",
+        "description": "Returns a list of flow actions.",
+        "operationId": "ListFlowActions",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "workflowId",
+            "description": "The workflow ID.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "parentProcessStageId",
+            "description": "The parent process stage ID.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "connector",
+            "description": "The connector name.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "isTrigger",
+            "description": "Indicates if the flow action is a trigger. Defaults to no filtering if not specified.",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "parameterName",
+            "description": "A keyword to search within the parameter name field.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "parameterValue",
+            "description": "A keyword to search within the parameter value field.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "exact",
+            "description": "Indicates whether exact matching should be used for `parameterName` and `parameterValue`.",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of flow actions matching the filters.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/FlowAction"
+                  }
+                },
+                "nextLink": {
+                  "description": "URL to retrieve the next page of results, if any. Page size is 250.",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No content. No matching flow actions found."
+          },
+          "400": {
+            "description": "Bad request.",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "403": {
+            "description": "Forbidden."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/powerautomate/environments/{environmentId}/flowRuns": {
+      "get": {
+        "tags": [
+          "FlowRuns"
+        ],
+        "summary": "Retrieve flow runs by workflow ID.",
+        "description": "Returns a list of flow runs.",
+        "operationId": "ListFlowRuns",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "workflowId",
+            "description": "The workflow ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of flow runs matching the workflow ID.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/FlowRun"
+                  }
+                },
+                "nextLink": {
+                  "description": "URL to retrieve the next page of results, if any. Page size is 250.",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No content. No matching flow runs found."
+          },
+          "400": {
+            "description": "Bad request.",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "403": {
+            "description": "Forbidden."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CloudFlow": {
+      "description": "The cloud flow object.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The display name of the flow.",
+          "type": "string",
+          "example": "Scheduled flow"
+        },
+        "createdOn": {
+          "format": "date-time",
+          "description": "Created date and time of the flow (UTC).",
+          "type": "string",
+          "example": "2025-05-09T23:31:19.0000000+00:00"
+        },
+        "modifiedOn": {
+          "format": "date-time",
+          "description": "Last modified date and time of the flow (UTC).",
+          "type": "string",
+          "example": "2025-06-20T22:29:21.0000000+00:00"
+        },
+        "description": {
+          "description": "Description of the flow.",
+          "type": "string"
+        },
+        "workflowId": {
+          "format": "uuid",
+          "description": "The workflow ID.",
+          "type": "string"
+        },
+        "resourceId": {
+          "format": "uuid",
+          "description": "The resource ID.",
+          "type": "string"
+        },
+        "parentWorkflowId": {
+          "format": "uuid",
+          "description": "The parent workflow ID.",
+          "type": "string"
+        },
+        "stateCode": {
+          "$ref": "#/definitions/WorkflowStateCode"
+        },
+        "statusCode": {
+          "$ref": "#/definitions/WorkflowStatusCode"
+        },
+        "modernFlowType": {
+          "$ref": "#/definitions/ModernFlowType"
+        },
+        "definition": {
+          "description": "Client data field of the workflow record.",
+          "type": "string"
+        },
+        "uniqueName": {
+          "description": "The Dataverse unique name.",
+          "type": "string"
+        },
+        "createdBy": {
+          "format": "uuid",
+          "description": "The created by Dataverse ID.",
+          "type": "string"
+        },
+        "createdOnBehalfBy": {
+          "format": "uuid",
+          "description": "The created on behalf by Dataverse ID.",
+          "type": "string"
+        },
+        "modifiedBy": {
+          "format": "uuid",
+          "description": "The modified by Dataverse ID.",
+          "type": "string"
+        },
+        "modifiedOnBehalfBy": {
+          "format": "uuid",
+          "description": "The modified on behalf by ID.",
+          "type": "string"
+        },
+        "ownerId": {
+          "format": "uuid",
+          "description": "The owner Dataverse ID.",
+          "type": "string"
+        },
+        "owningBusinessUnit": {
+          "format": "uuid",
+          "description": "The owning business unit Dataverse ID.",
+          "type": "string"
+        },
+        "owningTeam": {
+          "format": "uuid",
+          "description": "The owning team Dataverse ID.",
+          "type": "string"
+        },
+        "owningUser": {
+          "format": "uuid",
+          "description": "The owning user Dataverse ID.",
+          "type": "string"
+        }
+      }
+    },
+    "FlowAction": {
+      "description": "The flow action object.",
+      "type": "object",
+      "properties": {
+        "workflowId": {
+          "format": "uuid",
+          "description": "The workflow ID.",
+          "type": "string"
+        },
+        "ownerId": {
+          "format": "uuid",
+          "description": "The owner Dataverse ID.",
+          "type": "string"
+        },
+        "parentProcessStageId": {
+          "format": "uuid",
+          "description": "The parent process stage ID.",
+          "type": "string"
+        },
+        "connector": {
+          "description": "The connector name.",
+          "type": "string",
+          "example": "flowpush"
+        },
+        "isTrigger": {
+          "description": "Whether the action is a trigger.",
+          "type": "boolean"
+        },
+        "operationId": {
+          "description": "The operation ID.",
+          "type": "string"
+        },
+        "operationKind": {
+          "$ref": "#/definitions/FlowActionKind"
+        },
+        "operationType": {
+          "$ref": "#/definitions/FlowActionType"
+        },
+        "owningBusinessUnit": {
+          "format": "uuid",
+          "description": "The owning business unit Dataverse ID.",
+          "type": "string"
+        },
+        "parameterName": {
+          "description": "The parameter name.",
+          "type": "string"
+        },
+        "parameterValue": {
+          "description": "The parameter value.",
+          "type": "string"
+        },
+        "processStageId": {
+          "format": "uuid",
+          "description": "The process stage ID.",
+          "type": "string"
+        },
+        "stageName": {
+          "description": "The stage name.",
+          "type": "string"
+        }
+      }
+    },
+    "FlowRun": {
+      "description": "The flow run object.",
+      "type": "object",
+      "properties": {
+        "flowRunId": {
+          "format": "uuid",
+          "description": "The flow run ID.",
+          "type": "string"
+        },
+        "parentRunId": {
+          "description": "The parent run ID.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The flow run name.",
+          "type": "string"
+        },
+        "createdOn": {
+          "format": "date-time",
+          "description": "The date and time when the flow run was created.",
+          "type": "string",
+          "example": "2025-05-09T23:31:19Z (UTC)"
+        },
+        "modifiedOn": {
+          "format": "date-time",
+          "description": "The date and time when the flow run was last modified.",
+          "type": "string",
+          "example": "2025-05-10T23:31:19Z (UTC)"
+        },
+        "startTime": {
+          "format": "date-time",
+          "description": "The start time of the flow run",
+          "type": "string",
+          "example": "2025-05-20T23:31:19Z (UTC)"
+        },
+        "endTime": {
+          "format": "date-time",
+          "description": "The end time of the flow run.",
+          "type": "string",
+          "example": "2025-05-20T23:35:19Z (UTC)"
+        },
+        "status": {
+          "description": "The status of the flow run.",
+          "type": "string"
+        },
+        "durationMs": {
+          "format": "int64",
+          "description": "Duration of the flow run in milliseconds.",
+          "type": "integer"
+        },
+        "ttlInSeconds": {
+          "format": "int32",
+          "description": "Time to live in seconds.",
+          "type": "integer"
+        },
+        "workflowId": {
+          "format": "uuid",
+          "description": "The workflow ID.",
+          "type": "string"
+        },
+        "modernFlowType": {
+          "$ref": "#/definitions/ModernFlowType"
+        },
+        "triggerType": {
+          "description": "The trigger type.",
+          "type": "string"
+        },
+        "runningUser": {
+          "format": "uuid",
+          "description": "The Dataverse ID of the user running the flow.",
+          "type": "string"
+        },
+        "ownerId": {
+          "format": "uuid",
+          "description": "The owner Dataverse ID.",
+          "type": "string"
+        }
+      }
+    },
+    "ErrorResponse": {
+      "description": "The error response object.",
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "description": "Error code indicating the type of failure (e.g., BadRequest, InternalServerError).",
+              "type": "string"
+            },
+            "message": {
+              "description": "Description of the error.",
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "WorkflowStateCode": {
+      "description": "Indicates the workflow state.",
+      "enum": [
+        "Draft",
+        "Published",
+        "Suspended"
+      ],
+      "type": "string"
+    },
+    "WorkflowStatusCode": {
+      "description": "Indicates the workflow status.",
+      "enum": [
+        "Default",
+        "Draft",
+        "Published",
+        "CompanyDLPViolation",
+        "Quarantined"
+      ],
+      "type": "string"
+    },
+    "ModernFlowType": {
+      "description": "Indicates the modernflow type.",
+      "enum": [
+        "PowerAutomateFlow",
+        "AgentFlow"
+      ],
+      "type": "string"
+    },
+    "FlowActionKind": {
+      "description": "Indicates the kind of the operation used in the process stage.",
+      "enum": [
+        "Http",
+        "PowerApp",
+        "PowerAppV2",
+        "Button",
+        "ApiConnection",
+        "Alert",
+        "EventGrid",
+        "CurrentTime",
+        "ConvertTimeZone",
+        "GetFutureTime",
+        "GetPastTime",
+        "AddToTime",
+        "SubtractFromTime",
+        "AzureMonitorAlert",
+        "SecurityCenterAlert",
+        "JsonToJson",
+        "JsonToText",
+        "XmlToJson",
+        "XmlToText",
+        "Geofence",
+        "ODataOpenApiConnection",
+        "IndexOf",
+        "Substring",
+        "VirtualAgent",
+        "FormatNumber",
+        "Skills",
+        "PowerPages",
+        "TeamsWebhook"
+      ],
+      "type": "string"
+    },
+    "FlowActionType": {
+      "description": "Indicates the type of the operation used in the process stage.",
+      "enum": [
+        "Http",
+        "ApiApp",
+        "Recurrence",
+        "Workflow",
+        "Flow",
+        "Wait",
+        "ApiConnection",
+        "OpenApiConnection",
+        "Manual",
+        "ApiConnectionWebhook",
+        "OpenApiConnectionWebhook",
+        "Response",
+        "HttpWebhook",
+        "Compose",
+        "Query",
+        "Function",
+        "ApiManagement",
+        "XmlValidation",
+        "FlatFileEncoding",
+        "Scope",
+        "Request",
+        "If",
+        "Foreach",
+        "Until",
+        "Xslt",
+        "FlatFileDecoding",
+        "Terminate",
+        "IntegrationAccountArtifactLookup",
+        "Switch",
+        "ParseJson",
+        "Table",
+        "Join",
+        "Select",
+        "InitializeVariable",
+        "IncrementVariable",
+        "DecrementVariable",
+        "SetVariable",
+        "AppendToArrayVariable",
+        "AppendToStringVariable",
+        "Batch",
+        "SendToBatch",
+        "SlidingWindow",
+        "Expression",
+        "Liquid",
+        "JavascriptCode",
+        "As2Decode",
+        "As2Encode",
+        "RosettaNetEncode",
+        "RosettaNetDecode",
+        "RosettaNetWaitForResponse",
+        "ApiConnectionNotification",
+        "Changeset",
+        "SwiftEncode"
+      ],
+      "type": "string"
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "scopes": {
+        ".default": ".default"
+      },
+      "description": "Microsoft Entra ID OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [
+        ".default"
+      ]
+    }
+  ]
+}
