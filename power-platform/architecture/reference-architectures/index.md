@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 04/17/2025
+ms.date: 07/09/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors: 

@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 07/07/2025
+ms.date: 07/09/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -22,7 +22,7 @@ Get the latest info about what's new and what's changed in the Power Platform  a
 
 New key concepts:
 
-- [Managing Power Platform solution performance](key-concepts/performance/index.md)
+- [Manage Power Platform solution performance](key-concepts/performance/index.md)
 
 New reference architectures:
 
