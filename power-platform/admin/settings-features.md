@@ -69,6 +69,13 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 ## Copilot Studio agents
 
+### Accessing transcripts from conversations in Copilot Studio agents
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Allow agent owners and editors to see session transcripts from conversation interactions | When **On**, makers and admins can see and download transcripts in [Copilot Studio](/microsoft-copilot-studio/analytics-transcripts-studio) for agents in the environment. When turned off, the options to see or download transcripts is unavailable. | On |
+| Allow conversation transcripts and their associated metadata to be saved in Dataverse (required for enhanced reporting). | When **On**, transcripts are saved in Dataverse and can be viewed and downloaded in [Power Apps](/microsoft-copilot-studio/analytics-transcripts-powerapps). When turned off, transcripts aren't saved for any conversations that occur in the environment. Transcripts for conversations that occurred before saving was turned off are still available. If this setting is re-enabled, transcripts are only saved for any conversations that occur after the setting is re-enabled in the environment. Transcripts for conversations that occurred when the setting was off will still be unavailable.  | On |
+
 ### Sharing Copilot Studio agent data with Viva Insights (preview)
 
 | Setting | Description | Default value |
