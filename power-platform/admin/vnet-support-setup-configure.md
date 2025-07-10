@@ -171,7 +171,7 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 
 ### Prerequisites
 
-In the following procedures, you'll assign your environment to an enterprise policy. You're environment must be a [managed environment](managed-environment-overview.md) to assign an enterprise policy to it.
+In the following procedures, you assign your environment to an enterprise policy. You're environment must be a [managed environment](managed-environment-overview.md) to assign an enterprise policy to it.
 
 ### Option 1: Use the Power Platform admin center
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
