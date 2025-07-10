@@ -8,9 +8,10 @@ ms.reviewer: sericks
 ms.custom:
 - "admin-security"
 - bap-template
+- NewPPAC
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/08/2025
+ms.date: 07/10/2025
 search.audienceType: 
 - admin
 ---
@@ -26,6 +27,11 @@ Create security roles or edit the privileges associated with an existing securit
 [Make sure you have the System Administrator permission](/power-apps/user/view-your-user-profile). If you don't, contact your system administrator.
 
 ## Create a security role
+
+# [New admin center](#tab/new)
+
+
+# [Classic admin center](#tab/classic)
 
 1. Sign in to the Power Platform admin center and select an environment.
 
@@ -54,8 +60,14 @@ Create security roles or edit the privileges associated with an existing securit
 
     > [!Note]
     > You may need to repeat the last two steps of this procedure if there is more than one table in your app.
+---
 
 ## Create a security role by Copy Role
+
+# [New admin center](#tab/new)
+
+
+# [Classic admin center](#tab/classic)
 
 1. Sign in to the Power Platform admin center and select an environment.
 
@@ -72,6 +84,7 @@ Create security roles or edit the privileges associated with an existing securit
 1. Use the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience to specify privileges for the security role.
 
 1. Select **Save + close**.
+---
 
 ## Edit a security role
 
@@ -79,6 +92,11 @@ Before you edit a security role, make sure you understand the principles of [con
 
 > [!NOTE]
 > You can't edit the System Administrator security role. Instead, copy the System Administrator security role and make changes to the new role.
+
+# [New admin center](#tab/new)
+
+
+# [Classic admin center](#tab/classic)
 
 1. Sign in to the Power Platform admin center and select an environment.
 
@@ -89,6 +107,7 @@ Before you edit a security role, make sure you understand the principles of [con
 1. Use the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience to specify privileges for the security role.
 
 1. Select **Save + close**.
+---
 
 ## Minimum privileges for common tasks
 
@@ -127,7 +146,7 @@ and assign the following privilege on the Business Management tab: Read User.
 
  [!INCLUDE [cc_privacy_crm_print](../includes/cc-privacy-crm-print.md)]
 
-### See also
+### Related content
 
 [Security concepts](../admin/wp-security-cds.md)
 [Predefined security roles](database-security.md#predefined-security-roles)
