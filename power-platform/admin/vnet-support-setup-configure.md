@@ -195,14 +195,30 @@ In the following procedures, you assign your environment to an enterprise policy
 1.	If you want to remove the enterprise policy from the environment, you can run the [RevertSubnetInjection.ps1](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#9-remove-subnet-injection-from-an-environment) script.
 
 ### Validate the connection
+## [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
-1. In the command bar, seelect **History**.
+1. In the command bar, select **History**.
 1. Verify that the **Status** shows **Succeeded**. 
+
+## [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, select **History**.
+1. Verify that the **Status** shows **Succeeded**.
 
 ## Best practices
 Ensure you choose the subnet size as per your requirement. After the subnet is delegated to Power Platform&mdash;and if later, there's a need to change the subnet range&mdash;it requires Microsoft Support to reflect the updated subnet changes.
+
+### Related content
+
+- Deploy enterprise policies with the [Microsoft.PowerPlatform/enterprisePolicies ARM template](/azure/templates/microsoft.powerplatform/enterprisepolicies?pivots=deployment-language-arm-template)
+- [Quickstart: Use the Azure portal to create a virtual network](/azure/virtual-network/quick-create-portal)
+- [Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins)
 
 
