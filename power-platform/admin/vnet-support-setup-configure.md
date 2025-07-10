@@ -182,6 +182,16 @@ In the following procedures, you assign your environment to an enterprise policy
 
 ### Option 2: Use PowerShell
 1.	Run the [NewSubnetInjection.ps1](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#7-set-subnet-injection-for-an-environment) script to apply the enterprise policy to your environment.
+
+     > [!IMPORTANT]
+    > If you wish to delete the virtual network or subnet, or are getting errors like `InUseSubnetCannotBeDeleted` and `SubnetMissingRequiredDelegation`, you **must delete the enterprise policy** if it exists. You can delete the enterprise policy with the following command.
+    >
+    > ```powershell
+    > Remove-AzResource -ResourceId $policyArmId -Force
+    > ```
+    >
+    > Various PowerShell scripts are available to [get the enterprise policy](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#4-get-subnet-injection-enterprise-policies-in-subscription) for the ARM resource ID.
+
 1.	If you want to remove the enterprise policy from the environment, you can run the [RevertSubnetInjection.ps1](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#9-remove-subnet-injection-from-an-environment) script.
 
 ### Validate the connection
@@ -190,7 +200,7 @@ In the following procedures, you assign your environment to an enterprise policy
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, seelect **History**.
-1. Verify that the **Status** shows **Succeeded**. That's how you know the enterprise policy link works.
+1. Verify that the **Status** shows **Succeeded**. 
 
 ## Best practices
 Ensure you choose the subnet size as per your requirement. After the subnet is delegated to Power Platform&mdash;and if later, there's a need to change the subnet range&mdash;it requires Microsoft Support to reflect the updated subnet changes.
