@@ -26,7 +26,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Deprecation of support for the contact tracking feature in the Dynamics 365 App for Outlook
 
-Starting October 1, 2025, the contact tracking feature in the Dynamics 365 App for Outlook will reach end of support. This feature allowed users to track Outlook contacts directly in Dynamics 365 Sales from the Outlook (classic) desktop application.
+Starting October 1, 2025, the [contact tracking](/dynamics365/outlook-app/user/track-contacts) feature in the Dynamics 365 App for Outlook will reach end of support. This feature allowed users to track Outlook contacts directly in Dynamics 365 Sales from the Outlook (classic) desktop application.
 
 ### Why is this needed?
 
