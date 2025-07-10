@@ -1,10 +1,10 @@
 ---
 title: Programmability and Extensibility - Authentication 
-description: Overview of Microsoft Entra setup for calling Power Platform API and other platform programmability tools
+description: Overview of Microsoft Entra setup for calling Power Platform API and other platform programmability tools.
 author: laneswenka
 ms.reviewer: sericks
 ms.topic: reference
-ms.date: 06/26/2025
+ms.date: 07/10/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -28,7 +28,9 @@ Navigate to the [Microsoft Entra app registration](https://go.microsoft.com/fwli
 ## Step 2. Configure API permissions
 Within your new app registration, navigate to the **Manage - API Permissions** tab. Under the **Configure permissions** section, select **Add a Permission**. On the dialog window that opens, select the **APIs my organization uses** tab, and then search for **Power Platform API**. You might see several entries with a name similar to this, so ensure you use the one with the GUID **8578e004-a5c6-46e7-913e-12f58912df43**.  
 
-If you don't see Power Platform API showing up in the list when searching by GUID, it's possible that you still have access to it but the visibility isn't refreshed. To force a refresh, run the following PowerShell script:
+If you don't see Power Platform API showing up in the list when searching by GUID, it's possible that you still have access to it but the visibility isn't refreshed. To force a refresh, run the following script:
+
+### [PowerShell](#tab/powershell)
 
 ```powershell
 #Install the Microsoft Graph PowerShell SDK module
@@ -36,6 +38,14 @@ Install-Module Microsoft.Graph -Scope CurrentUser -Repository PSGallery -Force
 
 Connect-MgGraph
 New-MgServicePrincipal -AppId 8578e004-a5c6-46e7-913e-12f58912df43 -DisplayName "Power Platform API"
+```
+
+### [Azure CLI](#tab/azcli)
+
+```bash
+az login
+
+az ad sp create --id 8578e004-a5c6-46e7-913e-12f58912df43
 ```
 
 From here, you must select the permissions you require. These are grouped by [**Namespaces** ](/rest/api/power-platform). Within a namespace, you see resource types and actions for example *AppManagement.ApplicationPackages.Read* which give read permissions for application packages. For more information, see our [Permission reference](programmability-permission-reference.md) article.
