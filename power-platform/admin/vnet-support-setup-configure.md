@@ -190,7 +190,7 @@ In the following procedures, you assign your environment to an enterprise policy
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, seelect **History**.
-1. The **enterprise policies** link works if the **Status** shows **Succeeded**.
+1. Verify that the **Status** shows **Succeeded**. That's how you know the enterprise policy link works.
 
 ## Best practices
 Ensure you choose the subnet size as per your requirement. After the subnet is delegated to Power Platform&mdash;and if later, there's a need to change the subnet range&mdash;it requires Microsoft Support to reflect the updated subnet changes.
