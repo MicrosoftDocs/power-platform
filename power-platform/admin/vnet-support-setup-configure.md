@@ -164,7 +164,16 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 
 ### Option 2: Use PowerShell
 1. Run the [CreateSubnetInjectionEnterprisePolicy.ps1 script](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#2-create-subnet-injection-enterprise-policy), using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions.
- 
+
+    > [!IMPORTANT]
+    > If you wish to delete the virtual network or subnet, or are getting errors like `InUseSubnetCannotBeDeleted` and `SubnetMissingRequiredDelegation`, you **must delete the enterprise policy** if it exists. You can delete the enterprise policy with the following command.
+    >
+    > ```powershell
+    > Remove-AzResource -ResourceId $policyArmId -Force
+    > ```
+    >
+    > Various PowerShell scripts are available to [get the enterprise policy](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#4-get-subnet-injection-enterprise-policies-in-subscription) for the ARM resource ID.
+
 1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform Administrator role.
 
 ## Configure your Power Platform environment
@@ -182,16 +191,6 @@ In the following procedures, you assign your environment to an enterprise policy
 
 ### Option 2: Use PowerShell
 1.	Run the [NewSubnetInjection.ps1](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#7-set-subnet-injection-for-an-environment) script to apply the enterprise policy to your environment.
-
-     > [!IMPORTANT]
-    > If you wish to delete the virtual network or subnet, or are getting errors like `InUseSubnetCannotBeDeleted` and `SubnetMissingRequiredDelegation`, you **must delete the enterprise policy** if it exists. You can delete the enterprise policy with the following command.
-    >
-    > ```powershell
-    > Remove-AzResource -ResourceId $policyArmId -Force
-    > ```
-    >
-    > Various PowerShell scripts are available to [get the enterprise policy](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#4-get-subnet-injection-enterprise-policies-in-subscription) for the ARM resource ID.
-
 1.	If you want to remove the enterprise policy from the environment, you can run the [RevertSubnetInjection.ps1](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#9-remove-subnet-injection-from-an-environment) script.
 
 ### Validate the connection
