@@ -24,6 +24,22 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Deprecation of support for the contact tracking feature in the Dynamics 365 App for Outlook
+
+Starting October 1, 2025, the contact tracking feature in the Dynamics 365 App for Outlook will reach end of support. This feature allowed users to track Outlook contacts directly in Dynamics 365 Sales from the Outlook (classic) desktop application.
+
+### Why is this needed?
+
+This change aligns with the evolution of Outlook, as the contact tracking functionality is not available in the new Outlook experience. Microsoft is focusing on supporting features that are compatible with the latest Outlook versions and providing a consistent experience across platforms.
+
+### Impact
+
+This deprecation only impacts users of the Outlook (classic) desktop application who use the contact tracking feature. Users of the new Outlook are not affected.
+
+### Replacement feature
+
+There is no direct replacement for the contact tracking feature in the new Outlook. As an alternative, users can manually add contacts to Dynamics 365 Sales using the application.
+
 ## Deprecation of support for personal Microsoft service accounts in Power Automate
 
 Starting May 27, 2025, support for personal Microsoft service accounts will be deprecated in Power Automate. This deprecation will end July 26, 2025. To continue using Power Automate, users must perform the procedure in the [Replacement feature](#replacement-feature) section before deprecation ends.
