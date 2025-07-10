@@ -45,7 +45,7 @@ This section outlines the step-by-step process followed in the CardioTriage-AI w
     - The system validates and securely stores extracted values in Dataverse, updating the patient record in real time.
 1. **Autonomous triage trigger**:
     - When the lab report is submitted successfully, a Power Automate flow starts automatically.
-    - This flow activates the Triage Master Agent, an autonomous AI agent designed using Copilot Studio, which starts the triage evaluation.
+    - This flow activates the triage master agent, an autonomous AI agent designed using Copilot Studio, which starts the triage evaluation.
 1. **AI-powered data evaluation and triage decision-making**:
     - The triage master agent evaluates the patient's lab data by referencing the following:
         - Intelligent cardiac triage guidelines, to assess criticality and risk.
@@ -73,7 +73,7 @@ The following components are used in the CardioTriage-AI solution.
 
 [**Microsoft Dataverse**](/power-apps/maker/data-platform/): Dataverse is a secure, scalable database solution that stores and organizes data from different sources. It's designed to handle large amounts of structured and unstructured data, making it easy to store and retrieve information in a consistent way. In a healthcare solution, use Dataverse to store patient records, appointment data, and other critical information, while ensuring that data is secure and easy to access.
 
-[**AI Builders**](/ai-builder/): AI Builder is a tool that lets you add artificial intelligence to your apps without needing deep technical knowledge. It helps build features like predictive analytics or automated insights. In a healthcare solution, use AI Builder to assess patient conditions, predict future health risks, or help staff make data-driven decisions quickly.
+[**AI Builder**](/ai-builder/): AI Builder is a tool that lets you add artificial intelligence to your apps without needing deep technical knowledge. It helps build features like predictive analytics or automated insights. In a healthcare solution, use AI Builder to assess patient conditions, predict future health risks, or help staff make data-driven decisions quickly.
 
 ### Agents
 
@@ -91,7 +91,7 @@ Learn about [building intelligent conversational agents with Microsoft Copilot S
 
 ### Azure App Registration
 
-Azure App Registrations lets you register apps within Azure Active Directory (Azure AD) for secure access and authentication. It ensures that only authorized users or applications can access sensitive data. Use Azure App Registrations to manage app security and ensure safe, seamless integration with services like Microsoft Graph and Power Apps.
+Azure App Registrations lets you register apps within Microsoft Entra ID (formerly Azure Active Directory) for secure access and authentication. It ensures that only authorized users or applications can access sensitive data. Use Azure App Registrations to manage app security and ensure safe, seamless integration with services like Microsoft Graph and Power Apps. Learn more in [Register an application in Microsoft Entra ID](/entra/identity-platform/quickstart-register-app).
 
 ### Azure Key Vault
 
@@ -148,7 +148,7 @@ CardioTriage-AI delivers measurable improvements in clinical outcomes and operat
 ### Security
 
 - Azure Key Vault secures secrets like API tokens and database connection strings.
-- Azure active directory (AAD) and role-based access control (RBAC) manage authentication and authorization for all users, like doctors and front desk staff.
+- Microsoft Entra ID and role-based access control (RBAC) manage authentication and authorization for all users, like doctors and front desk staff.
 - Private endpoints ensure secure traffic routing within Microsoft's backbone network.
 - The solution follows compliance standards relevant for healthcare, like HIPAA and GDPR, to ensure data privacy.
 
@@ -166,7 +166,7 @@ CardioTriage-AI delivers measurable improvements in clinical outcomes and operat
 
 ### Experience Optimization
 
-- Power Apps UI is tailored for each persona (for example, doctors, lab techs, front desk) to ensure role-specific experiences.
+- Power Apps UI is tailored for each persona (for example, doctors, lab technicians, front desk) to ensure role-specific experiences.
 - Microsoft Bookings integration offers seamless appointment scheduling, reducing friction for both staff and patients.
 - Agents enhance interactivity by enabling natural language-based interactions, improving ease of use for non-technical users.
 
@@ -174,7 +174,7 @@ CardioTriage-AI delivers measurable improvements in clinical outcomes and operat
 
 - Transparent and documented reasoning: The agent's decision-making is based on clinically approved guideline documents, ensuring consistent, explainable, and evidence-based outputs. All AI actions are logged for traceability and auditability.
 - Purpose-specific AI design: AI Builder is used for extracting patient lab report values (for example, biomarkers, ECG readings) from structured and unstructured data, reducing manual errors while preserving clinical accuracy.
-- Human-in-the-loop oversight: Although decisions are AI-augmented, doctors and clinical staff remain in control, reviewing AI-driven suggestions before any critical action (for example, patient triage or scheduling) is finalized.
+- Human-in-the-loop oversight: Although decisions are AI-augmented, doctors and clinical staff remain in control and review AI-driven suggestions before any critical action (for example, patient triage or scheduling) is finalized.
 
 ## Contributors
 

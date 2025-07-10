@@ -61,7 +61,7 @@ This intelligent automation reduces human error, speeds up the process, and ensu
 
 **[AI Builder](/ai-builder/)**: AI Builder lets you add artificial intelligence to your apps without requiring deep technical knowledge. It helps build features like predictive analytics or automated insights.
 
-**Knowledge**: "Knowledge" sources" refers to the information and data sources that an agent uses to provide relevant and accurate responses. Sources of knowledge can include product specifications, business and technical process flows, installation guides, lists of error codes, and knowledge bases. Learn more about [knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio).
+**Knowledge**: "Knowledge" refers to the information and data sources that an agent uses to provide relevant and accurate responses. Sources of knowledge can include product specifications, business and technical process flows, installation guides, lists of error codes, and knowledge bases. Learn more about [knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio).
 
 ## Scenario details
 
