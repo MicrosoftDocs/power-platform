@@ -164,10 +164,12 @@ You can add custom code that executes before, during, and after the package is i
         // Validate the state of the runtime settings object.  
         if (RuntimeSettings != null)  
         {  
-            PackageLog.Log(string.Format("Runtime Settings populated.  Count = {0}", RuntimeSettings.Count));  
+            PackageLog.Log(string.Format("Runtime Settings populated.  Count = {0}",
+                RuntimeSettings.Count));  
             foreach (var setting in RuntimeSettings)  
             {  
-                PackageLog.Log(string.Format("Key={0} | Value={1}", setting.Key, setting.Value.ToString()));  
+                PackageLog.Log(string.Format("Key={0} | Value={1}", setting.Key, 
+                    setting.Value.ToString()));  
             }  
 
             // Check to see if skip checks is present.  
@@ -205,14 +207,15 @@ You can add custom code that executes before, during, and after the package is i
 
       ```csharp
       public override UserRequestedImportAction OverrideSolutionImportDecision(
-        string solutionUniqueName, Version organizationVersion, Version packageSolutionVersion, Version inboundSolutionVersion, Version deployedSolutionVersion, ImportAction systemSelectedImportAction)
+        string solutionUniqueName, Version organizationVersion,
+        Version packageSolutionVersion, Version inboundSolutionVersion,
+        Version deployedSolutionVersion, ImportAction systemSelectedImportAction )
       {
         return systemSelectedImportAction == 
             ImportAction.Import ? UserRequestedImportAction.ForceUpdate
-            : base.OverrideSolutionImportDecision(solutionUniqueName, organizationVersion
+            : base.OverrideSolutionImportDecision(solutionUniqueName, organizationVersion,
             packageSolutionVersion, inboundSolutionVersion, deployedSolutionVersion,
             systemSelectedImportAction);
-
       }
       ```
 
@@ -233,8 +236,10 @@ You can add custom code that executes before, during, and after the package is i
       {  
           get  
           {  
-              // WARNING this value directly correlates to the folder name in the Solution Explorer where the ImportConfig.xml and sub content is located.  
-              // Changing this name requires that you also change the correlating name in the Solution Explorer  
+              // WARNING this value directly correlates to the folder name in Solution 
+              // Explorer where the ImportConfig.xml and sub content is located.  
+              // Changing this name requires that you also change the correlating name
+              // in Solution Explorer.
               return "PkgFolder";  
           }  
       }  
@@ -254,12 +259,10 @@ You can add custom code that executes before, during, and after the package is i
    10. Change the package description by editing the return value under the `GetImportPackageDescriptionText` property.  
 
        ```csharp  
-
        public override string GetImportPackageDescriptionText  
        {  
            get { return "Package Description"; }  
        }  
-
        ```  
 
         This returned value is the package description that appears alongside the package name on the package selection page in the Package Deployer wizard.  
@@ -267,12 +270,10 @@ You can add custom code that executes before, during, and after the package is i
    11. Change the package long name by editing the return value under the `GetLongNameOfImport` property.  
 
        ```csharp  
-
        public override string GetLongNameOfImport  
        {  
            get { return "Package Long Name"; }  
        }  
-
        ```  
 
         The package long name appears on the next page after you have selected the package to install.  
