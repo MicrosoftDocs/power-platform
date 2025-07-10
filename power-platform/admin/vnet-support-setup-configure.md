@@ -3,7 +3,7 @@ title: Set up virtual network support for Power Platform
 description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/09/2025
+ms.date: 07/10/2025
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -167,15 +167,18 @@ Azure virtual network support for Power Platform allows you to integrate Power P
  
 1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform Administrator role.
 
-## Configure your Power Platform environment
+## Configure your Power Platform environment with the enterprise policy
+
+### Prerequisites
+
+You're environment must be a [managed environment] to assign an enterprise policy to it.
 
 ### Option 1: Use the Power Platform admin center
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1.	The enterprise policies link works if the Status shows Succeeded.
-1.	In the command bar, select **History**.
-1.	On the **Environments** page, select an environment.
-1.	In the **Manage Pane**, select **Environments**.
-1.	In the navigation pane, select **Manage**.
+1.	In the navigation pane, select **Security**.
+1.	In the **Security** pane, select **Data and privacy**.
+1.	In the **Data protection and privacy** page, select **Azure Virtual Network policies**. The **Virtual Network policies** pane is displayed.
+1.	Select the environment you want to assign to the enterprise policy, select the policy, and select **Save**. Now the enterprise policy is linked to the environment.
 
 ### Option 2: Use PowerShell
 1.	Run the NewSubnetInjection.ps1 script to apply the enterprise policy to your environment.
@@ -183,10 +186,11 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 
 ### Validate the connection
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1.	In the navigation pane, select **Security**.
-1.	In the **Security** pane, select **Data and privacy**.
-1.	In the **Data protection and privacy** page, select **Azure Virtual Network policies**. The **Virtual Network policies** pane is displayed.
-1.	Select the environment you want to assign to the enterprise policy, select the policy, and select **Save**. Now the enterprise policy is linked to the environment.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, seelect **History**.
+1. The **enterprise policies** link works if the **Status** shows **Succeeded**.
 
 ## Best practices
 Ensure you choose the subnet size as per your requirement. After the subnet is delegated to Power Platform&mdash;and if later, there's a need to change the subnet range&mdash;it requires Microsoft Support to reflect the updated subnet changes.
