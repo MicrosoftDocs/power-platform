@@ -5,7 +5,7 @@ description: Discover how to use Copilot Studio and Power Platform to automate t
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 07/09/2025
+ms.date: 07/10/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Automate software bug reporting with the Auto Triage AI Agent
 
-In this article, you learn about the Auto Triage AI Agent, which automates bug reporting and updating processes in software development. The solution highlights the efficiency gained through using generative AI to automate the triage of product issues, improving not only the burden on customer support teams but also enhancing the overall customer experience.
+In this article, you learn about the Auto Triage AI Agent, which automates bug reporting in software development. The solution highlights the efficiency gained through using generative AI to automate triage and follow-up of product issues, reducing the burden on customer support teams and enhancing the customer experience.
 
 For a demo and more information, visit the Auto Triage AI Agent solution on [GitHub](https://github.com/Shrusti13/TriageAutonomousAgent?tab=readme-ov-file​).
 
@@ -25,7 +25,7 @@ For a demo and more information, visit the Auto Triage AI Agent solution on [Git
 
 ## Architecture diagram
 
-:::image type="content" source="media/auto-triage/auto-triage.jpg" alt-text="Architecture diagram of the Auto Triage AI Agent solution." border="true" lightbox="media/auto-triage/auto-triage.jpg":::
+:::image type="content" source="media/auto-triage/auto-triage.jpg" alt-text="Architecture diagram of the Auto Triage AI Agent solution." lightbox="media/auto-triage/auto-triage.jpg":::
 
 ## Workflow
 
@@ -33,14 +33,18 @@ The solution consists of two agents: one dedicated to bug report creation, and t
 
 ### Agent 1: Autonomous bug report creation
 
-1. When an email detailing a product issue arrives, Agent 1 is triggered. The agent uses generative AI to analyze the email and extract key details, such as the issue title. The agent uses the title to cross-reference product documentation—including specifications, business and technical process flows, installation manuals, error codes, and troubleshooting guides—to generate comprehensive reproduction steps and system information. These details are essential for the triage process.
+1. When an email detailing a product issue arrives, Agent 1 is triggered. The agent uses generative AI to analyze the email and extract key details, such as the issue title. The agent uses the title to cross reference product documentation—including specifications, business and technical process flows, installation manuals, error codes, and troubleshooting guides—to generate comprehensive reproduction steps and system information. These details are essential for the triage process.
+
 1. The AI autonomously creates a bug in Azure DevOps and fills in fields like the issue description, reproduction steps, and system information.
+
 1. After creating the bug, the agent emails the user the tracking number, confirming successfully logging of the bug.
 
 ### Agent 2: Autonomous bug update and follow-up
 
 1. When a user replies with more information or asks for an update on their tracking ID, Agent 2 retrieves the bug details from Azure DevOps using the tracking ID.
+
 1. Generative AI analyzes the email and updates the bug report, ensuring the information is always up to date.
+
 1. The agent sends a follow-up email to the user with the current bug status and confirms that the new information has been added. 
 
 This intelligent automation reduces human error, speeds up the process, and ensures that all bug reports are consistent, accurate, and detailed.
@@ -48,11 +52,16 @@ This intelligent automation reduces human error, speeds up the process, and ensu
 ## Components
 
 - **Microsoft Outlook (autonomous agent)**: Outlook provides seamless access to autonomous agents from Copilot Studio, allowing agents to be triggered directly from an employee's email workflow. Learn more in [Event trigger overview](/microsoft-copilot-studio/authoring-triggers-about).
+
 - [**Copilot Studio agent**](/microsoft-copilot-studio/): The Copilot Studio agent is an autonomous agent that analyzes emails and creates bugs in Azure DevOps.
+
 - [**Azure DevOps**](/azure/devops/user-guide/what-is-azure-devops): Azure DevOps supports the software development lifecycle and is used to track bugs and features.
+
 - **[Power Automate](/power-automate/):** Power Automate automates repetitive tasks and workflows. It connects services and apps to perform tasks automatically, saving time and reducing human error.
+
 - **[AI Builder](/ai-builder/)**: AI Builder lets you add artificial intelligence to your apps without requiring deep technical knowledge. It helps build features like predictive analytics or automated insights.
-- **Knowledge**: "Knowledge" refers to the information and data sources that an agent uses to provide relevant and accurate responses. This knowledge can include product specifications, business and technical process flows, installation guides, lists of error codes, and troubleshooting knowledge bases.
+
+- **Knowledge**: "Knowledge" refers to the information and data sources that an agent uses to provide relevant and accurate responses. This knowledge can include product specifications, business and technical process flows, installation guides, lists of error codes, and knowledge bases.
 
 ## Scenario details
 
