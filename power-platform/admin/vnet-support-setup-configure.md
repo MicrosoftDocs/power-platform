@@ -153,10 +153,10 @@ Azure virtual network support for Power Platform allows you to integrate Power P
         - norway
         - singapore
         - sweden
-    - **Virtual network 1 subnet name**: Enter the name of the subnet from the first virtual network.
-    - **Virtual network 1 resource ID**: Enter the resource ID from the first virtual network.
-    - **Virtual network 2 subnet name**: Enter the name of the subnet from the second virtual network.
-    - **Virtual network 2 resource ID**: Enter the resource ID from the second virtual network.
+    - **Vnet 1 subnet name**: Enter the name of the subnet from the first virtual network.
+    - **Vnet 1 resource ID**: Enter the resource ID from the first virtual network.
+    - **Vnet 2 subnet name**: Enter the name of the subnet from the second virtual network.
+    - **Vnet 2 resource ID**: Enter the resource ID from the second virtual network.
 
 1. Select **Review + create** to finalize the enterprise policy.
 
