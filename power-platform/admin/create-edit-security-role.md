@@ -26,7 +26,7 @@ Create security roles or edit the privileges associated with an existing securit
 
 ## Create a security role
 
-# [New admin center](#tab/new)
+## [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
@@ -49,7 +49,7 @@ Create security roles or edit the privileges associated with an existing securit
     > You may need to repeat the last two steps of this procedure if there is more than one table in your app.
 
 
-# [Classic admin center](#tab/classic)
+## [Classic admin center](#tab/classic)
 
 1. Sign in to the Power Platform admin center and select an environment.
 1. Select **Settings** > **Users + permissions** > **Security roles**.
@@ -73,10 +73,10 @@ Create security roles or edit the privileges associated with an existing securit
 
 ## Create a security role by Copy Role
 
-# [New admin center](#tab/new)
+## [New admin center](#tab/new)
 
 
-# [Classic admin center](#tab/classic)
+## [Classic admin center](#tab/classic)
 
 1. Sign in to the Power Platform admin center and select an environment.
 
@@ -102,10 +102,10 @@ Before you edit a security role, make sure you understand the principles of [con
 > [!NOTE]
 > You can't edit the System Administrator security role. Instead, copy the System Administrator security role and make changes to the new role.
 
-# [New admin center](#tab/new)
+## [New admin center](#tab/new)
 
 
-# [Classic admin center](#tab/classic)
+## [Classic admin center](#tab/classic)
 
 1. Sign in to the Power Platform admin center and select an environment.
 
