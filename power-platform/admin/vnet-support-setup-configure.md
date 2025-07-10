@@ -181,8 +181,8 @@ You're environment must be a [managed environment] to assign an enterprise polic
 1.	Select the environment you want to assign to the enterprise policy, select the policy, and select **Save**. Now the enterprise policy is linked to the environment.
 
 ### Option 2: Use PowerShell
-1.	Run the NewSubnetInjection.ps1 script to apply the enterprise policy to your environment.
-1.	If you want to remove the enterprise policy from the environment, you can run the RevertSubnetInjection.ps1 script.
+1.	Run the [NewSubnetInjection.ps1](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#7-set-subnet-injection-for-an-environment) script to apply the enterprise policy to your environment.
+1.	If you want to remove the enterprise policy from the environment, you can run the [RevertSubnetInjection.ps1](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies#9-remove-subnet-injection-from-an-environment) script.
 
 ### Validate the connection
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
