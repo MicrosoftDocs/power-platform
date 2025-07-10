@@ -18,8 +18,6 @@ search.audienceType:
 
 # Create or edit a security role to manage access
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Create security roles or edit the privileges associated with an existing security role to accommodate changes in your business requirements. You can [export your changes as a solution](/powerapps/maker/common-data-service/use-solutions-for-your-customizations) to make a backup or for use in a different implementation.
 
 ## Prerequisites
@@ -29,33 +27,44 @@ Create security roles or edit the privileges associated with an existing securit
 ## Create a security role
 
 # [New admin center](#tab/new)
-
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the Power Platform admin center and select an environment.
-
-1. Select **Settings** > **Users + permissions** > **Security roles**.
-
-1. Select **+ New role**.
-
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. In the command bar, select **Settings**.
+1. Expand the **Users + permissions** node. Then select **Security roles**.
+1. In the command bar, select **+ New role**. The **Create New Role** pane is displayed.
 1. Enter a role name.
-
 1. Select a business unit.
-
-1. To allow team members to inherit the privileges of this role when it's assigned to a team, accept the default **Member's privilege inheritance** setting, which is **Direct User (Basic) access level and Team privileges**.
-
+1. To allow team members to inherit the privileges of this role when it's assigned to a team, accept the default **Member's privilege inheritance** setting, which is **Direct User (Basic) access level and Team privileges**. Learn more about the **Member's privilege inheritance** setting in [Security roles and privileges](security-roles-privileges.md).
 1. To use the new role to run model-driven apps, accept the default **Include App Opener privileges for running Model-Driven apps** setting, which is set to **On**.
-
-1. Use the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience to specify privileges for the security role.
-
 1. Select **Save**. The properties of the new role are displayed.
 
    > [!NOTE]
    > You must grant your app's table privileges to this newly created security role. You also need to review and update the default privileges that were copied from the [App Opener security role's minimum privileges for common tasks](#minimum-privileges-for-common-tasks). There are some privileges that were granted with an **Organization**-level read access, such as Process (Flows), that allow the user to run system-supplied flows. If your app or user doesn't need to run system-supplied flows, you can change this privilege to **User** (basic) level.
 
 1. Enter your table name in the **Search** input field to find your app's table.
+1. Select your table and set the **Permission settings**. Then select the **Save** button.
 
+    > [!Note]
+    > You may need to repeat the last two steps of this procedure if there is more than one table in your app.
+
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the Power Platform admin center and select an environment.
+1. Select **Settings** > **Users + permissions** > **Security roles**.
+1. Select **+ New role**.
+1. Enter a role name.
+1. Select a business unit.
+1. To allow team members to inherit the privileges of this role when it's assigned to a team, accept the default **Member's privilege inheritance** setting, which is **Direct User (Basic) access level and Team privileges**.
+1. To use the new role to run model-driven apps, accept the default **Include App Opener privileges for running Model-Driven apps** setting, which is set to **On**.
+1. Use the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience to specify privileges for the security role.
+1. Select **Save**. The properties of the new role are displayed.
+
+   > [!NOTE]
+   > You must grant your app's table privileges to this newly created security role. You also need to review and update the default privileges that were copied from the [App Opener security role's minimum privileges for common tasks](#minimum-privileges-for-common-tasks). There are some privileges that were granted with an **Organization**-level read access, such as Process (Flows), that allow the user to run system-supplied flows. If your app or user doesn't need to run system-supplied flows, you can change this privilege to **User** (basic) level.
+
+1. Enter your table name in the **Search** input field to find your app's table.
 1. Select your table and set the **Permission settings**. Then select the **Save** button.
 
     > [!Note]
