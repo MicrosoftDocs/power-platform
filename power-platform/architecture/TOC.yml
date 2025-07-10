@@ -91,7 +91,7 @@
           href: solution-ideas/agent-ticket-and-refund.md
         - name: Automate software bug reporting with Auto AI Triage
           href: solution-ideas/auto-ai-triage.md
-        - name: Cardio Triage AI workflow with Power Platform
+        - name: Intelligent cardiac triage and scheduling with Power Platform
           href: solution-ideas/cardio-triage-agent.md
     - name: Power Platform products
       items:

@@ -2,10 +2,10 @@
 title: Solution ideas for Power Platform and Copilot Studio
 description: Learn how to transform your business processes with practical examples of Power Platform and Copilot Studio solutions.
 author: manuelap-msft
-#customer intent: As a Power Platform user, I want to explore solution ideas for Power Platform and Copilot Studio so that I can address various business needs.
+#customer intent: As a business decision maker, I want to explore solution ideas for Power Platform and Copilot Studio so that I can address various business needs and gain inspiration.
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 04/17/2025
+ms.date: 07/10/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
@@ -31,5 +31,5 @@ Solution ideas are practical examples that showcase the versatility and power of
 | [**Custom contact center solution with Copilot Studio agent**](agent-custom-contact-center.md) | Enhances customer service efficiency through integrated platforms and technologies. |
 | [**Travel concierge using generative AI with Copilot Studio**](agent-travel-customer.md) | Employs AI-driven solutions to enhance customer interactions and streamline information access. |
 | [**Ticket management system with Copilot Studio agents**](agent-ticket-and-refund.md) | Improves ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
-| [**Automate the bug reporting process in software development with Auto AI Triage**](auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle bug creation and follow-up, which improves user experience and operational speed.  |
-| [**Cardio Triage AI workflow with Power Platform**](cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients by using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
+| [**Automate software bug reporting process with Auto Triage AI**](auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle issue creation and follow-up, reducing the burden on customer support teams and enhancing the customer experience. |
+| [**Intelligent cardiac triage and scheduling with Power Platform**](cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |

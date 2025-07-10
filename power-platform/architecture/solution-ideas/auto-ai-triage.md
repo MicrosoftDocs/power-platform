@@ -51,23 +51,23 @@ This intelligent automation reduces human error, speeds up the process, and ensu
 
 ## Components
 
-- **Microsoft Outlook (autonomous agent)**: Outlook provides seamless access to autonomous agents from Copilot Studio, allowing agents to be triggered directly from an employee's email workflow. Learn more in [Event trigger overview](/microsoft-copilot-studio/authoring-triggers-about).
+**Microsoft Outlook (autonomous agent)**: Outlook provides seamless access to autonomous agents from Copilot Studio, allowing agents to be triggered directly from an employee's email workflow. Learn more in [Event trigger overview](/microsoft-copilot-studio/authoring-triggers-about).
 
-- [**Copilot Studio agent**](/microsoft-copilot-studio/): The Copilot Studio agent is an autonomous agent that analyzes emails and creates bugs in Azure DevOps.
+[**Copilot Studio agent**](/microsoft-copilot-studio/): The Copilot Studio agent is an autonomous agent that analyzes emails and creates bugs in Azure DevOps.
 
-- [**Azure DevOps**](/azure/devops/user-guide/what-is-azure-devops): Azure DevOps supports the software development lifecycle and is used to track bugs and features.
+[**Azure DevOps**](/azure/devops/user-guide/what-is-azure-devops): Azure DevOps supports the software development lifecycle and is used to track bugs and features.
 
-- **[Power Automate](/power-automate/):** Power Automate automates repetitive tasks and workflows. It connects services and apps to perform tasks automatically, saving time and reducing human error.
+**[Power Automate](/power-automate/):** Power Automate automates repetitive tasks and workflows. It connects services and apps to perform tasks automatically, saving time and reducing human error.
 
-- **[AI Builder](/ai-builder/)**: AI Builder lets you add artificial intelligence to your apps without requiring deep technical knowledge. It helps build features like predictive analytics or automated insights.
+**[AI Builder](/ai-builder/)**: AI Builder lets you add artificial intelligence to your apps without requiring deep technical knowledge. It helps build features like predictive analytics or automated insights.
 
-- **Knowledge**: "Knowledge" refers to the information and data sources that an agent uses to provide relevant and accurate responses. This knowledge can include product specifications, business and technical process flows, installation guides, lists of error codes, and knowledge bases.
+**Knowledge**: "Knowledge" sources" refers to the information and data sources that an agent uses to provide relevant and accurate responses. Sources of knowledge can include product specifications, business and technical process flows, installation guides, lists of error codes, and knowledge bases. Learn more about [knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio).
 
 ## Scenario details
 
 In today's software development environments, managing and triaging product issues effectively is critical to delivering high-quality products. As the number of bug reports grows, support teams increasingly become overwhelmed by the repetitive and time-consuming task of manually logging and updating bugs. For example, a product support specialist might receive hundreds of emails daily from users reporting product issues. For each email, the support specialist needs to manually create bug reports in Azure DevOps, extract relevant information from knowledge documentation, and send follow-up emails to users. This manual process is slow, error prone, and doesn't scale.
 
-Auto Triage AI changes this process by automating it with generative AI. With two intelligent copilot agents working seamlessly together, Auto Triage AI autonomously handles both the initial bug creation and follow-up updates. By combining advanced AI capabilities with real-time automation, Auto Triage AI transforms a traditionally manual, slow, and error-prone process into a streamlined, efficient workflow.
+Auto Triage AI changes this process by automating it with generative AI. With two intelligent agents working seamlessly together, Auto Triage AI autonomously handles both the initial bug creation and follow-up updates. By combining advanced AI capabilities with real-time automation, Auto Triage AI transforms a traditionally manual, slow, and error-prone process into a streamlined, efficient workflow.
 
 ## Considerations
 
