@@ -21,7 +21,7 @@ ms.custom:
 
 # Intelligent cardiac triage and scheduling with Power Platform
 
-CardioTriage-AI is a Power Platform-based AI solution designed to automate and enhance the triage process for cardiology patients by using AI Builder, Copilot Studio, and Microsoft 365 integrations. This solution aims to improve patient prioritization, reduce delays in treatment, optimize appointment scheduling, and support clinical decision-making while ensuring data security and compliance.
+CardioTriage-AI is a Power Platform-based AI solution designed to automate and enhance the triage process for cardiology patients by using AI Builder, Copilot Studio, and Microsoft 365 integrations. The solution aims to improve patient prioritization, reduce delays in treatment, optimize appointment scheduling, and support clinical decision making while ensuring data security and compliance.
 
 For a demo and more information about the CardioTriage-AI solution, visit [GitHub](https://github.com/microsoft/Powerful-Devs-Hack-Together/issues/34).
 
@@ -37,7 +37,7 @@ This section outlines the step-by-step process followed in the CardioTriage-AI w
 
 1. **Patient registration and check-in**:
     - A front desk interactive agent (built using Microsoft Copilot Studio) guides the front desk staff or patient through registration.
-    - At check-in, the agent generates an Outpatient (OP) ticket and records patient information in Microsoft Dataverse.
+    - At check-in, the agent generates an OutPatient (OP) ticket and records patient information in Microsoft Dataverse.
     - The triage process starts and creates a unique case identifier for tracking.
 1. **Lab report submission and data extraction**:
     - A lab technician or patient uploads the diagnostic lab report through the CardiaLite Power Apps interface.
@@ -46,7 +46,7 @@ This section outlines the step-by-step process followed in the CardioTriage-AI w
 1. **Autonomous triage trigger**:
     - When the lab report is submitted successfully, a Power Automate flow starts automatically.
     - This flow activates the triage master agent, an autonomous AI agent designed using Copilot Studio, which starts the triage evaluation.
-1. **AI-powered data evaluation and triage decision-making**:
+1. **AI-powered data evaluation and triage decision making**:
     - The triage master agent evaluates the patient's lab data by referencing the following:
         - Intelligent cardiac triage guidelines, to assess criticality and risk.
         - Intelligent clinic scheduling guidelines, to determine if a consultation is necessary and what expertise is required.
@@ -73,7 +73,7 @@ The following components are used in the CardioTriage-AI solution.
 
 [**Microsoft Dataverse**](/power-apps/maker/data-platform/): Dataverse is a secure, scalable database solution that stores and organizes data from different sources. It's designed to handle large amounts of structured and unstructured data, making it easy to store and retrieve information in a consistent way. In a healthcare solution, use Dataverse to store patient records, appointment data, and other critical information, while ensuring that data is secure and easy to access.
 
-[**AI Builder**](/ai-builder/): AI Builder is a tool that lets you add artificial intelligence to your apps without needing deep technical knowledge. It helps build features like predictive analytics or automated insights. In a healthcare solution, use AI Builder to assess patient conditions, predict future health risks, or help staff make data-driven decisions quickly.
+[**AI Builder**](/ai-builder/): AI Builder is a tool that lets you add artificial intelligence to your apps without needing deep technical knowledge. It helps build features like predictive analytics or automated insights. In a healthcare solution, use AI Builder to assess patient conditions, predict future health risks, or help staff quickly make data-driven decisions.
 
 ### Agents
 
@@ -83,15 +83,15 @@ Learn about [building intelligent conversational agents with Microsoft Copilot S
 
 ### Microsoft Bookings
 
-[Microsoft Bookings](/microsoft-365/bookings/) is a scheduling tool that makes it easier for patients to book appointments and for staff to manage their schedules. It helps optimize resources by providing an easy-to-use interface for managing appointments. Use Microsoft Bookings to simplify appointment management. Patients schedule visits, and staff organize their time effortlessly.
+[Microsoft Bookings](/microsoft-365/bookings/) is a scheduling tool that makes it easier for patients to book appointments and for staff to manage their schedules. It helps optimize resources by providing an easy-to-use interface for managing appointments. Use Microsoft Bookings to simplify appointment management, so patients can easily schedule visits and staff effortlessly organize their time.
 
 ### Microsoft Graph
 
 [Microsoft Graph](https://developer.microsoft.com/graph) is an API that gives access to a wide range of data from Microsoft 365 services, like calendars, emails, and tasks. Use Microsoft Graph to pull important data from services like patient schedules or staff calendars, ensuring timetables are in sync and up to date in real time.
 
-### Azure App Registration
+### App registration
 
-Azure App Registrations lets you register apps within Microsoft Entra ID (formerly Azure Active Directory) for secure access and authentication. It ensures that only authorized users or applications can access sensitive data. Use Azure App Registrations to manage app security and ensure safe, seamless integration with services like Microsoft Graph and Power Apps. Learn more in [Register an application in Microsoft Entra ID](/entra/identity-platform/quickstart-register-app).
+Register apps in Microsoft Entra ID (formerly Azure Active Directory) for secure access and authentication. Registering your application establishes a trust relationship between your app and the Microsoft identity platform and ensures that only authorized users or applications can access sensitive data. Use App registration to manage app security and ensure safe, seamless integration with services like Microsoft Graph and Power Apps. Learn more in [Register an application in Microsoft Entra ID](/entra/identity-platform/quickstart-register-app).
 
 ### Azure Key Vault
 
@@ -118,8 +118,8 @@ CardioTriage-AI is a Power Platform-based AI solution designed to address these 
 
 - Automatically extract and analyze lab reports using AI Builder to remove manual data interpretation.
 - Use an autonomous agent to assess condition severity and recommend specialist care based on:
-    - Intelligent Cardiac Triage system documentation
-    - Intelligent Clinic scheduling guidelines
+    - Intelligent cardiac triage system documentation
+    - Intelligent clinic scheduling guidelines
 - Prioritize patients in real time and update triage queues dynamically.
 - Streamline appointment scheduling using Microsoft Bookings to match critical cases to available specialists quickly.
 - Trigger automated workflows using Power Automate to notify doctors, book slots, and update records.
@@ -154,7 +154,7 @@ CardioTriage-AI delivers measurable improvements in clinical outcomes and operat
 
 ### Operational Excellence
 
-- Power Platform admin center is used to monitor and govern apps, flows, and usage metrics.
+- [Power Platform admin center](/power-platform/admin/) is used to monitor and govern apps, flows, and usage metrics.
 - Solutions are deployed using managed environments, enabling consistent ALM (application lifecycle management) practices.
 - Monitoring via Power Platform telemetry, flow analytics, and alerts supports proactive maintenance and incident response.
 
@@ -172,7 +172,7 @@ CardioTriage-AI delivers measurable improvements in clinical outcomes and operat
 
 ### Responsible AI
 
-- Transparent and documented reasoning: The agent's decision-making is based on clinically approved guideline documents, ensuring consistent, explainable, and evidence-based outputs. All AI actions are logged for traceability and auditability.
+- Transparent and documented reasoning: The agent's decision making is based on clinically approved guideline documents, ensuring consistent, explainable, and evidence-based outputs. All AI actions are logged for traceability and auditability.
 - Purpose-specific AI design: AI Builder is used for extracting patient lab report values (for example, biomarkers, ECG readings) from structured and unstructured data, reducing manual errors while preserving clinical accuracy.
 - Human-in-the-loop oversight: Although decisions are AI-augmented, doctors and clinical staff remain in control and review AI-driven suggestions before any critical action (for example, patient triage or scheduling) is finalized.
 
