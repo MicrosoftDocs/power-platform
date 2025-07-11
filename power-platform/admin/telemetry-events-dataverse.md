@@ -222,7 +222,7 @@ Any outbound call made by the plug-in will automatically be logged as a dependen
 
 ### Can I view telemetry for a specific request? 
 
-Dataverse returns x-ms-service-requestId in the header response to all requests. Using this requestId, you can query for all telemetry. 
+Dataverse returns `x-ms-service-request-id` in the header response to all requests. Using this request ID, you can query for all telemetry. 
 
 ```kusto
 union *
