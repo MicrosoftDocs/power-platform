@@ -18,7 +18,7 @@ ms.custom:
 
 The Power Platform CoE Starter Kit is a collection of components and tools designed to help you develop a strategy for adopting and supporting Power Platform. The kit doesn't represent the entire Center of Excellence or CoE. Managing a CoE requires more than tools. A CoE needs people, communication, and defined requirements and processes. Tools are a means to an end, and each organization must thoughtfully design its CoE based on its unique needs and goals.
 
-Learn more about  the role of a Center of Excellence for Power Platform adoption in [Establish a Microsoft Power Platform Center of Excellence](../adoption/coe.md).
+Learn more about creating a Center of Excellence for Power Platform adoption in [Establish a Microsoft Power Platform Center of Excellence](../adoption/coe.md).
 
 ## What is the CoE Starter Kit?
 
@@ -61,11 +61,11 @@ First, [install the CoE Starter Kit solution](setup.md). Then start to become fa
 
     Start by asking:
 
-       - What are the requirements of a compliant app or maker?
-       - What information do you need per app or maker?
-       - What happens to noncompliant apps and makers?
-       - How do you plan to support your maker community in building compliant apps that follow best practices?
-       - What actions do you plan to take based on your collected information?
+      - What are the requirements of a compliant app or maker?
+      - What information do you need per app or maker?
+      - What happens to noncompliant apps and makers?
+      - How do you plan to support your maker community in building compliant apps that follow best practices?
+      - What actions do you plan to take based on your collected information?
 
 1. Embrace your maker community and develop a nurture and adoption strategy. Think about how to onboard new makers. Organize internal events such as training workshops and hackathons. Put together templates and best practices for your makers to use. Learn more in [Nurture your Power Platform community](../adoption/nurture-best-practices.md).
 
