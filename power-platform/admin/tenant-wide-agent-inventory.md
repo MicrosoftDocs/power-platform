@@ -4,7 +4,7 @@ description: Learn how to get visibility into all Microsoft Copilot Studio agent
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/02/2025
+ms.date: 07/11/2025
 ms.custom: NewPPAC
 author: mikferland-msft
 ms.author: miferlan
