@@ -133,9 +133,9 @@ Projects enable the flow of data between systems. A project contains mappings fo
 
 1. Go to [Power Apps admin center](https://admin.powerapps.com).
 
-2. Select the **Data Integration** tab in the left navigation pane.
+2. Select the **Data integration** tab in the left navigation pane.
 
-3. While in the **Projects** tab, select **New Project** in the top right corner.
+3. While in the **Projects** tab, select **+ New project** in the top right corner.
 
     > [!div class="mx-imgBorder"] 
     > ![Create project.](media/data-integrator/CreateNewProject780.png "Create project")
