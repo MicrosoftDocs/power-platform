@@ -92,7 +92,7 @@ The following matrix shows what management is possible with the various service 
 |Microsoft Dataverse|Yes|Yes|Yes<sup>2</sup>|No|  
 |Power Automate|Yes|Yes|Yes<sup>2</sup>|No|  
 |Power Apps|Yes|Yes|Yes<sup>2</sup>|No|  
-|**Help + support**|||||
+|**Support**|||||
 |Create and access support requests|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Data integration**|||||
 |Create new project and connection set|Yes|Yes|Yes<sup>2</sup>|No|  
