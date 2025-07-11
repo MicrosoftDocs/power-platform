@@ -76,7 +76,7 @@ To view details about an agent:
 - Select an item, then select the **Details** option, under the page name.
 - Select the agent's display name to be redirected to its details page in the Copilot Studio portal.
     > [!NOTE]
-    > You must have edit permissions on the selected agent to access its details page. If you do not have sufficient permissions, you will see a "This link is broken" error.
+    > You must have edit permissions on the selected agent to access its details page. If you don't have sufficient permissions, you see a "This link is broken" error.
 
 To view details about an environment, select the environment name to view the environment details.
 
@@ -100,7 +100,7 @@ This is similar to other standard, preinstalled, model-driven apps such as the P
 
 ### Why can't I find an agent on the Copilot Studio page?
 
-Occasionally, you might not be able to locate a specific agent in your on the **Copilot Studio** page. Use the following steps to resolve the issue.
+Occasionally, you might not be able to locate a specific agent on the **Copilot Studio** page. Use the following steps to resolve the issue.
 
 #### Step 1: Clear all filters and sorts
 
