@@ -161,6 +161,134 @@ You can impose even more control in two ways. First, you can disallow manual cre
 
 Initially, environment routing supports routing new and existing makers away from the default environment when they use *make.powerapps.com*. Over time, other Power Platform services will support the environment routing feature.
 
+### Maker welcome content
+
+Provide [customized welcome content](/power-platform/admin/welcome-content) to help makers get started with Power Apps and Copilot Studio. When you add your own help content, it replaces the default Power Apps first-time help experience for makers. The custom welcome message can inform makers about the company rules and what they can do in each environment or group of environments.
+
+Here are some suggestions for how your organization might use the welcome message in each type of environment. Include an image that identifies the environment type or owners to help with user adoption and error prevention.
+
+#### Default environment
+
+The default environment is often the most restricted, with data loss prevention (DLP) policies and sharing controls. Create a welcome message that warns your makers about restrictions and possible limitations, and include a link to your organization's policy website or document.
+
+For example, you might want to inform makers to use the default environment only for solutions that are related to Microsoft 365 applications, not to use production applications in the default environment, and to share their canvas apps only with a limited number of individuals. The following example shows how to create such a message in Managed Environments settings:
+
+:::image type="content" source="media/mae/image3.png" alt-text="Screenshot of Maker welcome content settings in Power Apps.":::
+
+```markdown
+[Contoso](https://i.ibb.co/SNSTCx3/something.png)
+## Welcome to Contoso Personal Productivity Environment
+
+### Before you start, here are some considerations
+
+Use this environment if you plan to build apps that integrate with Office 365.
+
+Before you start, be aware of these limitations:
+
+1. You can't share your apps with more than five users.
+1. The data in Dataverse is shared with everyone in the organization.
+1. You can only use Office 365 connectors.
+
+If you're not sure you're in the right place, follow [this guidance**](#).
+```
+
+Here's the rendered welcome message:
+
+:::image type="content" source="media/mae/image2.png" alt-text="Screenshot of the Welcome message for the default environment created by the first example.":::
+
+#### Production environments
+
+Production environments are typically used for deploying solutions that support the enterprise and team productivity. It's important that apps and data comply with organizational policies. Since you need to control which users have access to the production environment, it's a good idea to inform users if you have a policy of refreshing access. You might allow more connectors and increase the sharing limits in a production environment. You can also use the welcome message to inform makers of the right team to reach out to for support. The following example shows how to create such a message:
+
+```markdown
+[Contoso](https://i.ibb.co/SNSTCx3/something.png)
+## Welcome to HR Europe Environment
+
+### Before you start, here are some considerations
+
+Use this environment if you're on the HR team and your data is located in Europe.
+
+Before you start, be aware of these limitations:
+
+1. You can only share apps with security groups. [Follow this process](#) to share your apps.
+1. The data in Dataverse is stored in Europe.
+1. You can only use social media connectors with read actions.
+1. If you need more connectors, [submit a request](#).
+
+If you're not sure you're in the right place, follow [this guidance**](#).
+```
+
+:::image type="content" source="media/mae/image4.png" alt-text="Screenshot of the Welcome message for a production environment created by the second example.":::
+
+#### Developer environments
+
+Developer environments are most often where developers build their solutions. Since the developers are working on the applications, they aren't in production and scalability is limited. Normally, dev environments have more relaxed DLPs due to the nature of the makers. To avoid developers using production assets in their dev environments, limit sharing capabilities and use a specific DLP for this type of environment. Here's an example of a welcome message for a development environment:
+
+```markdown
+[Contoso](https://i.ibb.co/SNSTCx3/something.png)
+## Welcome to a Developer Environment
+
+### Before you start, here are some considerations
+
+Use this environment if you're a developer and you're building solutions.
+
+Before you start, be aware of these limitations:
+
+1. You can only share resources with up to two members of your team. If you need to share with more people, [submit a change request](#).
+1. Use resources only while you're developing a solution.
+1. Be mindful of the connectors and data you're using.
+1. If you need more connectors, [submit a request](#).
+
+If you're not sure you're in the right place, follow [this guidance**](#).
+```
+
+:::image type="content" source="media/mae/image5.png" alt-text="Screenshot of the Welcome message for a developer environment created by the third example.":::
+
+#### Sandbox environments
+
+Typically, sandbox environments are used to test solutions. Because some tests involve a significant number of users, these environments scale, up to a point, and have more capacity than a developer environment. Sandbox environments are also commonly used as development environments and are typically shared by multiple developers. Here's an example of a welcome message for such an environment:
+
+```markdown
+[Contoso](https://i.ibb.co/SNSTCx3/something.png)
+## Welcome to a Test Environment
+
+### Before you start, here are some considerations
+
+Use this environment only if you're testing solutions.
+
+Before you start, be aware of these limitations:
+
+1. You can only share resources with your team. If you need to share with more people, [submit a change request](#).
+1. You're not allowed to edit or import solutions directly in this environment.
+1. Be mindful of the test data and compliance.
+1. If you need help from a security export or IT support, [submit a request](#).
+
+If you're not sure you're in the right place, follow [this guidance**](#).
+```
+
+:::image type="content" source="media/mae/image6.png" alt-text="Screenshot of the Welcome message for a sandbox environment created by the fourth example.":::
+
+
+### Limit sharing
+
+Admins can [limit how broadly users can share canvas apps, flows, and agents](/power-platform/admin/managed-environment-sharing-limits). The limit only applies to future sharing, however. If you apply a sharing limit of 20 to an environment with resources that are already shared with more than 20 users, those resources continue to work for all users the resources were shared with. You should have a process in place to inform the makers of apps, flows, and agents that are shared with more than the new limit to reduce the number of users their resources are shared with. In some cases, you might decide to move the solution to another environment. Sharing limits apply to canvas apps, flows, and agents.
+
+Admins typically need to control how makers share their apps, flows, and agents when:
+
+- **Resources are shared in a personal productivity environment**. If you have an environment where users can create resources for their own work, resources without global business value, or resources without support from IT, it's important that you don't allow makers to share them across the organization. If resources start as personal productivity but later become popular and are widely used, be mindful about the limit you set on sharing. A common limit is between 5 and 50 users.
+
+- **Resources are shared with security groups or everyone**. Resources that are shared with a security group can be run by all members of the group. In a developer environment, you might want the developer to control how resources are shared instead of relying on group membership. In other scenarios, you might want to allow sharing with everyone. If your organization's policy is that resources are shared with a security group that includes all users who are authorized to run the resource and is managed by the IT department, you might want to restrict makers from sharing with other security groups.
+
+Here are common sharing limits for each environment type:
+
+- **Default**: Select Exclude sharing with security groups, select Limit total individuals who can share to, and select 20 for the value.
+
+- **Developer**: Select Exclude sharing with security groups, select Limit total individuals who can share to, and select 5 for the value.
+
+- **Sandbox**: Select Exclude sharing with security groups and leave Limit total individuals who can share to unselected. Use this option if apps are shared with an IT-managed security group that includes the users who are authorized to run the application. If the maker, user, or team can manage which users are permitted to test a solution, select Don't set limits (default).
+
+- **Production**: Select Don't set limits (default). To control sharing based on a specific security group, select Exclude sharing with security groups and leave Limit total individuals who can share to unselected.
+
 ### Microsoft Dataverse
 
 Dataverse securely stores and manages data that's used by applications. In the context of an environment strategy, the [Dataverse solution feature](/power-apps/developer/data-platform/introduction-solutions) lets you transport apps and components from one environment to another. Makers build their assets in containers—solutions—that track what they build. Solutions can easily be transported to other environments. Using this approach, you can separate developer environments, where makers build resources, from the production environments where they're used. Both makers and users benefit. Makers can continue to evolve their resources, and users aren't surprised by sudden changes. When makers are ready to publish their changes, they can request to promote the updated resource to the production environment.
@@ -193,11 +321,27 @@ Pipelines work together with environment groups. They can be preconfigured for d
 
 Pipelines in Power Platform store the definitions of each pipeline in a host environment that Microsoft manages by default. However, you can define multiple host environments in your tenant that you manage, allowing you to handle unique requirements.
 
+### Solution checker enforcement
+
+It's common for a Center of Excellence (CoE) team to set up guardrails to reduce the risk of users importing noncompliant solutions into an environment. Admins can easily [enforce rich static analysis checks of solutions](/admin/managed-environment-solution-checker) against a set of best practice rules to identify problematic patterns. Organizations with decentralized CoEs often find it necessary to activate solution checker enforcement along with proactively reaching out to makers by email to offer support.
+
+Solution checker enforcement offers three levels of control, None, Warn, and Block. Administrators configure the effect of the check, whether it provides a warning but allows the import or blocks the import altogether, while also providing the result of the import to the maker.
+
+Organizations that use this feature configure it differently depending on the environment type. It's normal to have exceptions, and this guidance should always be aligned with your needs. However, here are the most common settings for solution checker enforcement in each environment type:
+
+- Default: Select **Block** and **Send emails**.
+- Developer: Select **Warn** and leave **Send emails** unselected.
+- Sandbox: Select **Warn** and leave **Send emails** unselected.
+- Production: Select **Block** and **Send emails**.
+- Teams Environment: Select **Block** and **Send emails**.
+
 ### Catalog in Power Platform
 
 Organizations where developers and makers build and share components like apps, flows, and templates—advanced starting points—tend to get more value from Power Platform. [The Power Platform catalog](/power-apps/maker/data-platform/catalog-overview) makes it easy for makers to share their components and templates across environments.
 
 The catalog is installed in an environment and can be installed with the pipeline host in the same environment. It's also possible to handle unique resource segmentation requirements by having multiple environments with a catalog installed.
+
+Organizations that encourage developers and makers to build and share components and templates in the catalog derive more value from their investment in Power Platform. Simply building isn't enough. Sharing the artifacts, at scale, fosters communities and supports groups that can unlock value from a diverse set of personnel in the organization. In fact, organizations that are most successful with Power Platform adopt a fusion team model, where pro developers, makers, and admins work together to help their fellow employees derive the highest value possible from the platform by reusing solutions, templates, and components.
 
 ### Feature roadmap
 
