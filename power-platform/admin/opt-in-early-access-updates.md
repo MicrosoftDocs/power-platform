@@ -6,7 +6,7 @@ ms.subservice: admin
 ms.author: paulda
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 06/25/2025
+ms.date: 07/11/2025
 search.audienceType: 
   - admin
 contributors:
@@ -36,6 +36,7 @@ Early access begins approximately two months before general availability of each
 - Sovereign early access: Second Monday of February
 
 **Release wave 2**
+
 - Early access: First Monday of August
 - Sovereign early access: Second Monday of August
 
@@ -67,7 +68,7 @@ Early access begins approximately two months before general availability of each
 
 General availability dates are listed in [General availability deployment](general-availability-deployment.md#deployment-schedule). These dates are updated with each release wave.
 
-> [!NOTE]
+> [!IMPORTANT]
 > You must explicitly opt in for early access.
 > - For each _release wave_, you must opt in for early access updates.
 > - For each _environment that you want updated_, you must opt in for early access updates.
@@ -91,7 +92,7 @@ The early access updates are available for all types of environments, including 
 > Although you can get early access updates in a production environment, we highly recommend that you create a copy of your production environment as a sandbox environment to try out the new features first. The updates can't be reverted after they've been deployed; therefore, if you test and validate the updates in a sandbox environment before enabling them in a production environment, you can determine the impact they'll have on users in your organization.
 >
 > Be sure to:
-> - Learn about the Dynamics 365 [release plan](/dynamics365-release-plan/2021wave1/) and Microsoft Power Platform [release plan](/power-platform-release-plan/2021wave1/), and the new features available for early access. 
+> - Learn about the Dynamics 365 [release plan](/dynamics365-release-plan/2024wave1/) and Microsoft Power Platform [release plan](/power-platform-release-plan/2024wave1/), and the new features available for early access. 
 > - Review [Prepare for a release wave](#prepare-for-a-release-wave). 
 > - Validate and test the updates in a sandbox environment before rolling out to production. 
 
@@ -135,7 +136,7 @@ Some apps require more steps to turn on early access features. If you have any o
 
 |Early access apps  |Description of manual steps  |
 |---------|---------|
-|Microsoft Cloud for Healthcare | If you have Microsoft Cloud for Healthcare solutions powered by Dynamics 365, you must update or deploy from the [Microsoft Cloud Solution Center](https://solutions.microsoft.com/Microsoft%20Cloud%20for%20Healthcare#). For detailed instructions, see [Deploy Microsoft Cloud for Healthcare](/dynamics365/industry/healthcare/deploy). | 
+|Microsoft Cloud for Healthcare | If you have Microsoft Cloud for Healthcare solutions powered by Dynamics 365, you must update or deploy from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). For detailed instructions, see [Deploy Microsoft Cloud for Healthcare](/dynamics365/industry/healthcare/deploy). | 
 | Dynamics 365 Service Scheduling | After you opt in to early access: <br /> 1. Sign in to the Power Platform admin center as a tenant admin. <br />2. Select **Dynamics 365 Service Scheduling**. <br /> 3. Select **Install** and follow the steps. |
 
 > [!IMPORTANT]
@@ -157,11 +158,9 @@ The updates might take a few hours. If multiple retry attempts fail after 24 hou
 
 ### Confirm update complete 
 
-To verify that a release wave is deployed, open the environment, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **About** to see the release wave that's deployed.
+To verify that a release wave is deployed, open the environment, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **About** to see the release wave that's deployed as shown in the example screenshot.        |. 
 
-|In Unified Interface  |In the web client interface  | 
-|---------|-------|
-|![Opt in status](media/update-status.png "Opt in status")<br /> An example screenshot. May not be current wave.        | ![Opt in status webclient](media/update-status-webclient.png "Opt in status webclient") <br /> An example screenshot. May not be current wave.         |
+![Opt in status webclient](media/update-status-webclient.png "Opt in status webclient") <br /> 
 
 > [!NOTE]
 > You need to select **About** from a Dynamics 365 apps page that's displayed in [Unified Interface](about-unified-interface.md), such as Sales Hub or Customer Service Hub pages. 
