@@ -19,7 +19,7 @@ ms.custom:
 
 # Microsoft Power Platform Center of Excellence (CoE) Starter Kit
 
-A Center of Excellence or Center of Enablement (CoE) in an organization drives innovation and improvement and brings together like-minded people with similar business goals to share knowledge and success, while at the same time providing standards, consistency, and governance to the organization. Learn more about the benefits in [Establish a Microsoft Power Platform Center of Excellence](../adoption/coe.md).
+A Center of Excellence or Center of Enablement (CoE) in an organization drives innovation and improvement and brings together like-minded people with similar business goals to share knowledge and success, while providing standards, consistency, and governance to the organization. Learn more about the benefits in [Establish a Microsoft Power Platform Center of Excellence](../adoption/coe.md).
 
 The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps, Power Automate, and Microsoft Copilot Studio.
 
@@ -36,7 +36,7 @@ The Microsoft Power Platform CoE Starter Kit is a collection of components and t
       :::image type="icon" source="media/i_setup.svg":::<br><br>**Govern**<br>Establish required audit and compliance processes.<br><ul><li>[Set up](setup-governance-components.md)</li><li>[Use](governance-components.md)</li><li>[Deep dive](example-processes.md)</li></ul>
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="media/i_get-started.svg":::<br><br>**Nurture**<br>Accelerate your adoption by thriving with a community of makers.<br><ul><li>[Set up](setup-nurture-components.md)</li><li>[Use](nurture-components.md)</li></ul>
+      :::image type="icon" source="media/i_get-started-icon.svg":::<br><br>**Nurture**<br>Accelerate your adoption by thriving with a community of makers.<br><ul><li>[Set up](setup-nurture-components.md)</li><li>[Use](nurture-components.md)</li></ul>
    :::column-end:::
 :::row-end:::
 

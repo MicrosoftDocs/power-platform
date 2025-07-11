@@ -1,6 +1,6 @@
-<svg width="30.72pt" height="35.04pt" version="1.1" viewBox="0 0 40.96 46.72" xmlns="http://www.w3.org/2000/svg">
- <path d="m0.64 0.64h39.68v39.68h-39.68z" fill="#fff" stroke="#556a8a" stroke-miterlimit="10" stroke-width="1.28"/>
- <path d="m0 26.24h40.96m-15.36-25.6v25.6m0-16h14.72m-26.88 16v20.48" fill="none" stroke="#556a8a" stroke-miterlimit="10" stroke-width="1.28"/>
- <path d="m1.28 26.88h11.52v19.2h-11.52z" fill="#e5e5e5" stroke-width=".64"/>
- <path d="m26.24 10.88h13.44v21.12h-13.44z" fill="#2bc7f4" stroke-width=".64"/>
+<svg width="38.88pt" height="44.348pt" version="1.1" viewBox="0 0 51.84 59.13" xmlns="http://www.w3.org/2000/svg">
+ <path d="m0.81 0.81h50.22v50.22h-50.22z" fill="#fff" stroke="#556a8a" stroke-miterlimit="10" stroke-width="1.62"/>
+ <path d="m0 33.21h51.84m-19.44-32.4v32.4m0-20.25h18.63m-34.02 20.25v25.92" fill="none" stroke="#556a8a" stroke-miterlimit="10" stroke-width="1.62"/>
+ <path d="m1.62 34.02h14.58v24.3h-14.58z" fill="#e5e5e5" stroke-width=".81"/>
+ <path d="m33.21 13.77h17.01v26.73h-17.01z" fill="#2bc7f4" stroke-width=".81"/>
 </svg>
