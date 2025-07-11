@@ -412,12 +412,6 @@ Imports the solution asynchronously.
 
 This parameter requires no value. It's a switch.
 
-#### `--convert-to-managed` `-cm`
-
-Convert to a managed solution.
-
-This parameter requires no value. It's a switch.
-
 #### `--environment` `-env`
 
 Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
