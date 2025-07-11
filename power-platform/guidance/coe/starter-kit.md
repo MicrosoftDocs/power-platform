@@ -30,7 +30,7 @@ The Microsoft Power Platform CoE Starter Kit is a collection of components and t
       :::image type="icon" source="media/i_overview.svg":::<br><br>**Overview**<br>Define goals and expected outcomes of your CoE and get started.<br><ul><li>[Overview](overview.md)</li><li>[Download](<https://aka.ms/coestarterkitdownload>)</li></ul>
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="media/i_dashboard.svg":::<br><br>**Admin**<br>Gain insights into your Microsoft Power Platform adoption.<br><ul><li>[Set up](setup-core-components.md)</li><li>[Use](core-components.md)</li><li>[Deep dive](power-bi.md)</li></ul>
+      :::image type="icon" source="media/i_dashboard-icon.svg":::<br><br>**Admin**<br>Gain insights into your Microsoft Power Platform adoption.<br><ul><li>[Set up](setup-core-components.md)</li><li>[Use](core-components.md)</li><li>[Deep dive](power-bi.md)</li></ul>
    :::column-end:::
    :::column span="":::
       :::image type="icon" source="media/i_setup.svg":::<br><br>**Govern**<br>Establish required audit and compliance processes.<br><ul><li>[Set up](setup-governance-components.md)</li><li>[Use](governance-components.md)</li><li>[Deep dive](example-processes.md)</li></ul>
