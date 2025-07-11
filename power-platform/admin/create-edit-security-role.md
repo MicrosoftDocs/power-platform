@@ -132,7 +132,7 @@ Before you edit a security role, make sure you understand the principles of [con
 
 Make sure that your users have a security role with the minimum privileges that are needed for common tasks like opening model-driven apps.
 
-Don't use the [**min prv apps use** role](https://go.microsoft.com/fwlink/?linkid=2221577) that's available in the Microsoft Download Center. It's being retired soon. Instead, use or [copy the predefined security role App Opener](#create-a-security-role-by-copy-role), and then set the appropriate privileges.
+Don't use the [**min prv apps use** role](https://go.microsoft.com/fwlink/?linkid=2221577) that's available in the Microsoft Download Center. It's being retired soon. Instead, use or [copy the predefined security role App Opener](#create-a-security-role-by-copying-an-existing-role), and then set the appropriate privileges.
 
 - To allow users to open a model-driven app or any Dynamics 365 customer engagement app, assign the **App Opener** role.
 
