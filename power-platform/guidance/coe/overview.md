@@ -147,7 +147,7 @@ Tenant-level insights in the Power Platform admin center provide you with a grea
 - Explore the [Power Platform admin documentation](../../admin/admin-documentation.md).
 - Find training resources like guided learning and step-by-step guides at [aka.ms/PowerPlatformLabs](https://aka.ms/powerplatformlabs).
 - Read up on customer success stories and find resources relevant to your experience, technical background, and skill level at [aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources).
-- Get started with the Microsoft Power Platform [learning path](/training/browse/?resource_type=learning path&terms=power platform).
+- Get started with the Microsoft Power Platform [training](training/powerplatform/).
 - Learn more about Power Platform adoption [Microsoft Power Platform guidance documentation](../index.yml).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
