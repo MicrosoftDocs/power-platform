@@ -1,19 +1,23 @@
 ---
-title: Set up the CoE Starter Kit 
-description: Prerequisites and instructions for setting up the Center of Excellence (CoE) Starter Kit for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate.
-author: Grant-Archibald-MS 
+title: "Set up the CoE Starter Kit: Prerequisites and instructions"
+description: Discover prerequisites and step-by-step instructions for installing the CoE Starter Kit to streamline Power Platform governance and adoption.
+#customer intent: As a Power Platform admin, I want to understand the prerequisites for installing the CoE Starter Kit so that I can ensure a successful setup.  
+author: Grant-Archibald-MS
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/02/2024
+ms.date: 07/11/2025
 ms.subservice: guidance-toolkit
 ms.author: grarchib
 ms.reviewer: sericks
-search.audienceType: 
+search.audienceType:
   - admin
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:07/11/2025
 ---
-# Before setting up the CoE Starter Kit
 
-The Center of Excellence (CoE) Starter Kit is a collection of components and tools to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate. For more information about individual components, see [CoE Starter Kit explained](starter-kit-explained.md)
+# Set up the CoE Starter Kit: Prerequisites and instructions
 
 This article prepares you to install the CoE Starter Kit and provides guidance on:
 
@@ -23,7 +27,7 @@ This article prepares you to install the CoE Starter Kit and provides guidance o
 
 ## Which identity should I use to install the CoE Starter Kit?
 
-The CoE Starter Kit requires access to your tenant's Power Platform environments. Therefore, the identity you set up for the CoE Starter Kit needs the following licenses and roles:
+The CoE Starter Kit requires access to your tenant's Power Platform environments. Therefore, the identity you set up for the CoE Starter Kit requires the following licenses and roles:
 
 - [Microsoft Power Platform service admin](../../admin/use-service-admin-role-manage-tenant.md#power-platform-administrator) or global tenant admin.
 
@@ -76,7 +80,7 @@ You need an individual named *admin* to receive these communications:
 
 ## What data source should I use for my Power Platform inventory?
 
-At the heart of the CoE Starter Kit are processes that gather information about your Power Platform inventory to provide processes to manage, govern, and nurture Power Platform adoption in your tenant.
+The CoE Starter Kit uses processes to gather information about your Power Platform inventory, helping you manage, govern, and nurture Power Platform adoption in your tenant.
 
 The CoE Starter Kit offers two mechanisms to gather this data:
 
@@ -119,12 +123,7 @@ For more information, see [Updating the Center of Excellence (CoE) Starter Kit](
 
 ## Create your environments
 
-We recommend creating two environments to install the CoE Starter Kit solution:
-
-1. One for testing
-1. One for production use
-
-For more information, see [Updating the CoE Starter Kit](after-setup.md).
+We recommend creating two environments to install the CoE Starter Kit solution, one for testing and one for production. Learn more in [Updating the CoE Starter Kit](after-setup.md).
 
 Create two production environments to install the CoE Starter Kit solutions:
 
@@ -135,7 +134,7 @@ Create two production environments to install the CoE Starter Kit solutions:
 - After [importing the solution](setup-core-components.md) and completing the setup steps, set the *ProductionEnvironment* variable to *no* in your test environment. This means you can test the CoE Starter Kit processes without impacting makers and end users.
 
 > [!IMPORTANT]
-> Using Data Export as a mechanism to retrieve inventory and telemetry is currently in preview. We recommend you test this in a dedicated test environment before using this feature in production.
+> Using Data Export as a mechanism to retrieve inventory and telemetry is currently in preview. We recommend you test this feature in a dedicated test environment before using it in production.
 
 ### Validate data loss prevention (DLP) policies
 
@@ -176,13 +175,11 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 
 ## Download the solution
 
-[Download the CoE Starter Kit solution and Power BI dashboard files](https://aka.ms/CoEStarterKitDownload) to your device.
+If you haven't already, [download the CoE Starter Kit solution and Power BI dashboard files](https://aka.ms/CoEStarterKitDownload).
 
-The content package contains various files that support different features of the CoE Starter Kit. The setup instructions walk you through when to use each file.
+The content package contains files that support various features of the CoE Starter Kit. The setup instructions walk you through when to use each file.
 
-The following table is an overview of each file:
-
-| File Name | Description |
+| File name | Description |
 | --------- | ----------- |
 | admintaskanalysis_core_x_xx_managed.zip | [Power Platform admin task planner components](setup-admin-tasks-component.md). |
 | BYODL_CoEDashboard_MMMYYYY.pbit  | [CoE Dashboard Power BI template file](power-bi.md). Required during [configuration of the Power BI dashboard](setup-powerbi.md) if using experimental Data Export feature.|
@@ -200,17 +197,19 @@ The following table is an overview of each file:
 | Sample-task-data.xlsx | Provides a set of tasks for the [Power Platform admin task planner components](admin-tasks-component.md) app. [Configuration of the Power Platform admin task planner components](setup-admin-tasks-component.md). |
 | ToolIcons.zip | Provides a set of starter icons for the [Innovation Backlog](innovationbacklog-components.md). Required during [configuration of the Innovation Backlog](setup-innovationbacklog.md#turn-on-the-flows). |
 
-> [!div class="nextstepaction"]
-> [Next step: Set up inventory components](setup-core-components.md)
-
-## What's next: After installing the CoE Starter Kit
+## What's next after installing the CoE Starter Kit?
 
 > [!IMPORTANT]
 > We recommend upgrading the CoE Starter Kit solution at least **every three months**. With the fast pace of change for Power Platform, leaving updates longer than three months can result in unexpected issues with your next update.
 
-If you already installed the CoE Starter Kit, check instructions for
+If you already installed the CoE Starter Kit, check instructions to:
 
 - [Update the CoE Starter Kit](after-setup.md) with a new release.
 - [Extend the CoE Starter Kit](modify-components.md).
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Next step: Set up inventory components](setup-core-components.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
