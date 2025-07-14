@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.date: 07/14/2025
 ms.subservice: guidance-toolkit
 ms.author: grarchib
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 search.audienceType:
   - admin
 ms.custom:
