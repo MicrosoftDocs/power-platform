@@ -106,5 +106,7 @@ Be aware of the following known issues with the feature:
 ## Authentication for agents
 This feature allows administrators to configure authentication for all agent interactions in the environment. Admins can select one of the following options:
 
-- **Authenticate with Microsoft or Authnticate Manually** allows you to force authentication through Microsoft Entra ID or some other source. This helps prevent makers from creating or using agents with no authentication.
+- **Authenticate with Microsoft or Authenticate Manually** allows you to force authentication through Microsoft Entra ID or some other source. This helps prevent makers from creating or using agents with no authentication.
 - **No authentication** allows anonymous access.
+
+For information about the authentication options in Copilot Studio, go to [Configure user authentication in Copilot Studio](/microsoft-copilot-studio/configuration-end-user-authentication).
