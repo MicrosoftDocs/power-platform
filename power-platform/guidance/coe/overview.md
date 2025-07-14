@@ -16,11 +16,15 @@ ms.custom:
 
 # CoE Starter Kit overview
 
-The Power Platform CoE Starter Kit is a collection of components and tools designed to help you develop a strategy for adopting and supporting Power Platform. The kit doesn't represent the entire Center of Excellence or CoE. Managing a CoE requires more than tools. A CoE needs people, communication, and defined requirements and processes. Tools are a means to an end, and each organization must thoughtfully design its CoE based on its unique needs and goals.
+The Power Platform CoE Starter Kit is a collection of components and tools designed to help you develop a strategy for adopting and supporting Power Platform. 
 
-Learn more about creating a Center of Excellence for Power Platform adoption in [Establish a Microsoft Power Platform Center of Excellence](../adoption/coe.md).
+## What is a Center of Excellence (CoE)?    
 
-## What is the CoE Starter Kit?
+A Center of Excellence (CoE) is a team or entity within an organization that provides leadership, best practices, research, support, and training for a specific focus area, in this case, Power Platform. 
+
+The Power Platform CoE Starter Kit doesn't represent the entire Center of Excellence or CoE. Managing a CoE requires more than tools. A CoE needs people, communication, and defined requirements and processes. Tools are a means to an end, and each organization must thoughtfully design its CoE based on its unique needs and goals. Learn more about creating a Center of Excellence for Power Platform adoption in [Establish a Microsoft Power Platform Center of Excellence](../adoption/coe.md).
+
+## What's in the CoE Starter Kit?
 
 The CoE Starter Kit is a set of templates designed to help you develop a strategy for adopting, maintaining, and supporting Power Platform. The kit includes: 
 
@@ -47,7 +51,7 @@ Download the most recently updated assets from the [coe-starter-kit](https://aka
 First, [set up the CoE Starter Kit solution](setup.md). Then start to become familiar with the resources in your tenant.
 
 > [!NOTE]
-> The following steps are examples of what you can do with the CoE Starter Kit. Explore the rest of the guidance to discover what's available and to use the kit effectively.
+> The following steps are examples of what you can do with the CoE Starter Kit. Explore the rest of this guidance to discover what's available and to use the kit effectively.
 
 <!-- Add links to adoption articles that cover steps 3 and 4 in-depth or just remove? Trim the image or replace.  -->
 
@@ -77,7 +81,7 @@ The [Automation Kit](https://aka.ms/automationcoe) is set of tools that accelera
 
 The kit is especially useful to an Automation Center of Excellence (CoE) team, which is a team of experts who support automation within your organization. This team typically has solid knowledge of Power Automate for desktop, sets up and maintains the Automation Kit, and maintains configuration data such as departments, process categories, goals, and more.
 
-The Automation Kit can be used standalone or alongside the CoE Starter Kit.
+The Automation Kit can be used standalone or alongside the CoE Starter Kit. Learn more about the Automation Kit in [Overview of the Automation Kit](/power-automate/guidance/automation-kit/overview/introduction).
 
 ## Administrative tools available
 
@@ -101,17 +105,15 @@ The CoE Starter Kit encourages experimentation and innovation with an open-sourc
 
 Start with the out-of-the-box capabilities in Power Platform admin center and Managed Environments. These capabilities are robust and fully supported. If you need more capabilities to govern your tenant, check if features in the CoE Starter Kit complement what you get out of the box.
 
-<!-- Stopping here -->
-
 #### Individual features
 
-Let's consider the individual features of Managed Environments to see how they compare to what's in the CoE Starter Kit.
+Consider the individual features of Managed Environments to see how they compare to what's in the CoE Starter Kit.
 
 - **[Maker welcome content](/power-platform/admin/welcome-content)**
 
-  In Managed Environments, admins can provide customized welcome content to help their makers get started with Power Apps. When welcome content is enabled, makers signing in to Power Apps are greeted with customized getting started information.
+  In Managed Environments, admins can provide customized welcome content to help their makers get started with Power Apps. When welcome content is enabled, makers signing in to Power Apps are greeted with customized getting-started information.
   
-  A similar concept in the CoE Starter Kit is the [welcome email](core-components.md), which sends an email to new makers only after they created an app, flow, or agent for the first time. Makers may get necessary information only after they create their first resource, whereas the Managed Environments feature shows them information when they sign in to Power Apps.
+  A similar concept in the CoE Starter Kit is the [welcome email](core-components.md), which is sent to new makers only after they create an app, flow, or agent for the first time. Makers may get necessary information only after they create their first resource, whereas the Managed Environments feature shows them information when they sign in to Power Apps.
 
 - **[Weekly digest](/power-platform/admin/managed-environment-weekly-digests)**
 
@@ -132,22 +134,24 @@ Let's consider the individual features of Managed Environments to see how they c
 > [!NOTE]
 > The CoE Starter Kit offers capabilities that aren't yet met with Managed Environments, such as bulk updating permissions, cleaning up abandoned resources, surveying makers, and calculating the ROI of ideas.
 
+<!-- Still true above? -->
+
 ### Tenant-level analytics
 
-[Tenant-level analytics](/power-platform/admin/tenant-level-analytics) in Power Platform admin center provide a holistic overview of usage and inventory for apps, flows, makers, and environments. The analytics help you identify metrics like the most used apps and top makers.
+[Tenant-level analytics](/power-platform/admin/tenant-level-analytics) in Power Platform admin center provide a holistic overview of usage and inventory for apps, flows, makers, and environments. These analytics help you identify metrics like the most used apps and top makers.
 
 The [Power BI dashboard](/power-platform/guidance/coe/power-bi) in the CoE Starter Kit combines your tenant-level inventory and usage data with organizational data to provide more granular insights into which departments, cities, and countries or regions use Power Platform.
 
 You can use a broader range of customizable filters to view your inventory by connector, classification (premium or standard), or the number of users with the shared app.
 
-Tenant-level insights in the Power Platform admin center provide a great starting point to understand your tenant's adoption of Power Platform. As your need for insights grows, explore the rich and customizable reports in the CoE Starter Kit.
+Tenant-level insights in the Power Platform admin center provide a great starting point to understand your tenant's adoption of Power Platform. As your need for insights grows, explore the rich and customizable reports available in the CoE Starter Kit.
 
 ## Next steps
 
 - Explore the [Power Platform admin documentation](../../admin/admin-documentation.md).
 - Find training resources like guided learning and step-by-step guides at [aka.ms/PowerPlatformLabs](https://aka.ms/powerplatformlabs).
 - Read up on customer success stories and find resources relevant to your experience, technical background, and skill level at [aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources).
-- Get started with [Microsoft Power Platform training](/training/powerplatform/).
+- Explore [Microsoft Power Platform training](/training/powerplatform/).
 - Learn more about [Power Platform adoption](../index.yml).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

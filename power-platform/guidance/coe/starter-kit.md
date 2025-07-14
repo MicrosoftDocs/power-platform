@@ -5,7 +5,7 @@ description: Learn how the Microsoft Power Platform CoE Starter Kit helps organi
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 07/11/2025
+ms.date: 07/14/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -50,6 +50,5 @@ The Microsoft Power Platform CoE Starter Kit is a collection of components and t
 - [Power Apps documentation](/powerapps)
 - [Power Automate documentation](/power-automate)
 - [Microsoft Copilot Studio documentation](/microsoft-copilot-studio/)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

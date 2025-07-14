@@ -42,7 +42,7 @@ The CoE Starter Kit requires access to your tenant's Power Platform environments
   >
 - Power Apps Per User license (nontrial) and Microsoft 365 license.
 - Power Automate Per User license, or Per Flow licenses (nontrial).
-- Power BI Premium per user or per capacity (if using [data export](#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory)
+- Power BI Premium per user or per capacity (if using [data export](#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory).
 - The identity must have access to an Office 365 mailbox that meets all requirements to use the [Office 365 Outlook](/connectors/office365/) connector.
 - If you'd like to collect usage information, such as app launches and unique users per app, you must have access to an Azure app registration. The app registrations need to have permissions to read data from the [Microsoft 365 audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log) to complete the setup. You only need this app registration if you're using [Cloud flows](#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory.
 - To share the [Power BI report](power-bi.md) that's part of the CoE Starter Kit, make sure the identity has a Power BI Pro license.
@@ -81,7 +81,7 @@ These cards can't be assigned to a group. You need an individual named *admin* t
 
 - Individual to receive chat bot chats
 - Individual to receive approvals
-- 
+
 <!-- What term should we use instead of chat bot chats...flow bot notification? -->
 
 ### What data source should I use for my Power Platform inventory?
@@ -111,7 +111,7 @@ The CoE Starter Kit offers two mechanisms to gather this data:
 
    Proceed with the CoE Starter Kit configuration only when you see inventory data files in your storage account. The initial data export can take up to five days.
 
-1. [Download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with data export and use the [setup wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to configure the feature in your tenant.
+1. [Download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with data export and [use the setup wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to configure the feature in your tenant.
 
 1. Post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION). Your feedback is critical to this process.
 
@@ -188,7 +188,7 @@ If you haven't already, [download the CoE Starter Kit solution and Power BI dash
 
 The content package contains files that support various features of the CoE Starter Kit. The setup instructions walk you through when to use each file.
 
-| File name | Description |
+| Filename  | Description |
 | --------- | ----------- |
 | admintaskanalysis_core_x_xx_managed.zip | [Power Platform admin task planner components](setup-admin-tasks-component.md). |
 | BYODL_CoEDashboard_MMMYYYY.pbit  | [CoE Dashboard Power BI](power-bi.md) template file. Required during [configuration of the Power BI dashboard](setup-powerbi.md) if using experimental data export feature.|
@@ -196,14 +196,14 @@ The content package contains files that support various features of the CoE Star
 | CenterofExcellenceCoreComponents_x.xx_managed.zip  | [Core components](core-components.md) solution file. Required during [setup of the core components](setup-core-components.md) in a production environment. |
 | CenterofExcellenceInnovationBacklog_x.xx_managed.zip  | [Innovation Backlog components](innovationbacklog-components.md) solution file. Required during [setup of the Innovation Backlog](setup-innovationbacklog.md) components. |
 | CenterofExcellenceNurtureComponents_x.xx_managed.zip  |  [Nurture components](nurture-components.md) solution file. Required during [setup of the Nurture components](setup-nurture-components.md). Has a dependency on [core components](core-components.md) being installed first. |
-| MakerAssessmentStarterData.xlsx | Provides a set of starter questions and answers for the [Maker Assessment](nurture-components.md#maker-assessment-components) app. Required during [configuration of the Maker Assessment](setup-nurture-components.md#set-up-maker-assessment-components) app. |
+| MakerAssessmentStarterData.xlsx | Provides a set of starter questions and answers for the [Maker Assessment app](nurture-components.md#maker-assessment-components). Required during [configuration of the Maker Assessment app](setup-nurture-components.md#set-up-maker-assessment-components). |
 | microsoft-video-hub-starter-data.xlsx | Provides a set of starter videos for the [Video hub](nurture-components.md#video-hub-components) app. |
 | Power Platform Administration Planning.pbit  | [Power Platform admin task planner Power BI](power-bi.md) template file. Required during [configuration of the Power Platform admin planning component](setup-admin-tasks-component.md). |
 | PowerPlatformAdminAnalytics-DF-MMYYYY  | Dataflow file required during [configuration of the Power BI dashboard](setup-powerbi.md) if using experimental data export feature.|
-| PowerPlatformGovernance_CoEDashboard_MMMYYYY.pbit  | [CoE Governance and Compliance Dashboard Power BI](power-bi-compliance.md) template file. Required during [configuration of the Power BI dashboard](setup-powerbi.md) |
-| Production_CoEDashboard_MMMYYYY.pbit  | [CoE Dashboard Power BI](power-bi.md) template file. Required during [configuration of the Power BI dashboard](setup-powerbi.md) |
+| PowerPlatformGovernance_CoEDashboard_MMMYYYY.pbit  | [CoE Governance and Compliance Dashboard Power BI](power-bi-compliance.md) template file. Required during [configuration of the Power BI dashboard](setup-powerbi.md). |
+| Production_CoEDashboard_MMMYYYY.pbit  | [CoE Dashboard Power BI](power-bi.md) template file. Required during [configuration of the Power BI dashboard](setup-powerbi.md). |
 | Pulse_CoEDashboard.pbit | [Pulse survey Power BI](nurture-components.md#pulse-survey-components) template file. Required during [configuration of Pulse survey](setup-nurture-components.md#set-up-pulse-feedback-survey) components. |
-| Sample-task-data.xlsx | Provides a set of tasks for the [Power Platform admin task planner components](admin-tasks-component.md) app. Required during [configuration of the Power Platform admin planning component](setup-admin-tasks-component.md). |
+| Sample-task-data.xlsx | Provides a set of tasks for the [Power Platform admin task planner components app](admin-tasks-component.md). Required during [configuration of the Power Platform admin planning component](setup-admin-tasks-component.md). |
 | ToolIcons.zip | Provides a set of starter icons for the [Innovation Backlog](innovationbacklog-components.md). Required during [configuration of the Innovation Backlog](setup-innovationbacklog.md). |
 
 ## What's next after installing the CoE Starter Kit?
