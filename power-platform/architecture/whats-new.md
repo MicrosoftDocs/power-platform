@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 07/09/2025
+ms.date: 07/14/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -26,12 +26,12 @@ New key concepts:
 
 New reference architectures:
 
-- [Use SQL with canvas apps](reference-architectures/sqlserver-canvas-app.md)
+- [Use SQL Server with canvas apps](reference-architectures/sqlserver-canvas-app.md)
 
 New solution ideas:
 
-- [Automate the bug reporting process in software development with Auto AI Triage](solution-ideas/auto-ai-triage.md)
-- [Cardio Triage AI workflow with Power Platform](solution-ideas/cardio-triage-agent.md)
+- [Automate software bug reporting with the Auto Triage AI Agent](solution-ideas/auto-ai-triage.md)
+- [Intelligent cardiac triage and scheduling with Power Platform](solution-ideas/cardio-triage-agent.md)
 
 Other updates:
 
