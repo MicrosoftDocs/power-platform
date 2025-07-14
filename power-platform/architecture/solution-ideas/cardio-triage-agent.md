@@ -29,7 +29,7 @@ For a demo and more information about the CardioTriage-AI solution, visit [GitHu
 
 ## Architecture diagram
 
-:::image type="content" source="media/cardio-triage/cardio-triage.png" alt-text="Architecture diagram of the Cardio Triage AI solution." border="true" lightbox="media/cardio-triage/cardio-triage.png":::
+:::image type="content" source="media/cardio-triage/cardio-triage.jpg" alt-text="Architecture diagram of the Cardio Triage AI solution." border="true" lightbox="media/cardio-triage/cardio-triage.jpg":::
 
 ## Workflow
 
