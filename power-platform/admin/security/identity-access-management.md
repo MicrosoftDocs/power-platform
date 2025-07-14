@@ -4,13 +4,15 @@ description: Learn how to manage identity and access in the Power Platform admin
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/30/2025
+ms.date: 07/14/2025
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+  - 
 ---
 
 # Identity and access management
@@ -100,3 +102,6 @@ Be aware of the following known issues with the feature:
 
 - The **Membership** page for the security role shows only the security roles in the default business unit. To view all security roles across all business units, turn off the **Display only parent security roles** option.
 - After you remove a user from the System administrator role, it takes about 24 hours for the page to show the updated administrator count.
+
+## Authentication for agents
+This setting allows admins to enforce Microsoft Entra ID authentication or allow anonymous access to all agent interactions in the environment.
