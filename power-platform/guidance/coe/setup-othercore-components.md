@@ -42,7 +42,7 @@ This app provides a guided step by step experience through the configuration ste
 
 [Update environment variables](faq.md#update-environment-variables) used by these components:
 
-The **Community URL** lets you link to your internal Microsoft Power Platform community, for example Yammer or Teams. You need the URL for the flow: Admin: Welcome Email v3. For more information, see [How to communicate with your admins, makers, and end users](setup.md#how-to-communicate-with-your-admins-makers-and-users).
+The **Community URL** lets you link to your internal Microsoft Power Platform community, for example Yammer or Teams. You need the URL for the flow: Admin: Welcome Email v3. For more information, see [How to communicate with your admins, makers, and end users](setup.md#whats-the-best-way-to-communicate-with-admins-makers-and-users).
 
 ### Turn on flows
 

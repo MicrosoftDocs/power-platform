@@ -25,16 +25,16 @@ The Microsoft Power Platform CoE Starter Kit is a collection of components and t
 
 :::row:::
    :::column span="":::
-      :::image type="icon" source="media/i_overview-icon.svg":::<br><br>**Overview**<br>Define goals and expected outcomes of your CoE and get started.<br><ul><li>[Overview](overview.md)</li><li>[Download](<https://aka.ms/coestarterkitdownload>)</li></ul>
+      :::image type="icon" source="media/i-overview-icon.svg":::<br><br>**Overview**<br>Define goals and expected outcomes of your CoE and get started.<br><ul><li>[Overview](overview.md)</li><li>[Download](<https://aka.ms/coestarterkitdownload>)</li></ul>
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="media/i_dashboard-icon.svg":::<br><br>**Admin**<br>Gain insights into your Power Platform adoption.<br><ul><li>[Set up](setup-core-components.md)</li><li>[Use](core-components.md)</li><li>[Deep dive](power-bi.md)</li></ul>
+      :::image type="icon" source="media/i-dashboard-icon.svg":::<br><br>**Admin**<br>Gain insights into your Power Platform adoption.<br><ul><li>[Set up](setup-core-components.md)</li><li>[Use](core-components.md)</li><li>[Deep dive](power-bi.md)</li></ul>
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="media/i_setup-icon.svg":::<br><br>**Govern**<br>Establish required audit and compliance processes.<br><ul><li>[Set up](setup-governance-components.md)</li><li>[Use](governance-components.md)</li><li>[Deep dive](example-processes.md)</li></ul>
+      :::image type="icon" source="media/i-setup-icon.svg":::<br><br>**Govern**<br>Establish required audit and compliance processes.<br><ul><li>[Set up](setup-governance-components.md)</li><li>[Use](governance-components.md)</li><li>[Deep dive](example-processes.md)</li></ul>
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="media/i_get-started-icon.svg":::<br><br>**Nurture**<br>Accelerate your adoption by thriving with a community of makers.<br><ul><li>[Set up](setup-nurture-components.md)</li><li>[Use](nurture-components.md)</li></ul>
+      :::image type="icon" source="media/i-get-started-icon.svg":::<br><br>**Nurture**<br>Accelerate your adoption by thriving with a community of makers.<br><ul><li>[Set up](setup-nurture-components.md)</li><li>[Use](nurture-components.md)</li></ul>
    :::column-end:::
 :::row-end:::
 
