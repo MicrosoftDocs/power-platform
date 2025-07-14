@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: best-practice
-ms.date: 07/08/2025
+ms.date: 07/14/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -39,7 +39,7 @@ Cross-screen references also make the app harder to maintain and debug. Changes 
 To find cross-screen references in your canvas apps:
 
 - Review your app's formulas and check for references to controls or variables from other screens.
-- Use the built-in App Checker tool in Power Apps Studio to highlight potential performance issues, including cross-screen references. These references appear in the performance section of the Apps Checker, under "Inefficent Delay Loading."
+- Use the built-in App Checker tool in Power Apps Studio to highlight potential performance issues, including cross-screen references. These references appear in the performance section of the Apps Checker, under "Inefficient Delay Loading."
 
 ### How to mitigate cross-screen references
 

@@ -5,7 +5,7 @@ description: Discover how CardioTriage-AI automates cardiac triage using Power P
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 07/10/2025
+ms.date: 07/14/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:

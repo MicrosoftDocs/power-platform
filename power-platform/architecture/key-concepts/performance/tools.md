@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: best-practice
-ms.date: 07/09/2025
+ms.date: 07/14/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -87,7 +87,7 @@ As the complexity increases from low to high risk, the requirements for monitori
 
 ### All, low risk, or personal productivity solutions
 
-When you implement standards across apps and solutions in your tenant, make the standards easy enough to follow without having to constantly refer back to them, and stick to tools that don't require additional permissions or process to use.
+When you implement standards across apps and solutions in your tenant, make the standards easy enough to follow without needing to constantly refer back to them, and use tools that don't require additional permissions or processes.
 
 Determine which items flagged by the Power Apps Checker can be ignored and which require mitigation. Document your recommendations and promote that knowledge within your internal Power Platform community.
 
