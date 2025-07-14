@@ -40,4 +40,4 @@ Focus on performance from the start and keep improving it to provide users with 
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Explore user experience strategies for mitigating performance concerns](ux-strategies.md)
+> [Explore strategies for mitigating performance concerns](ux-strategies.md)
