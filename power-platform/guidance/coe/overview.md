@@ -4,7 +4,7 @@ description: Learn how to set up a Power Platform CoE using the CoE Starter Kit,
 #customer intent: As a business decision maker, I want to evaluate the CoE Starter Kit so that I can determine its alignment with our organizational goals.  
 author: manuelap-msft
 ms.topic: overview
-ms.date: 07/11/2025
+ms.date: 07/14/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -44,7 +44,7 @@ Download the most recently updated assets from the [coe-starter-kit](https://aka
 
 ## Get started using the CoE Starter Kit
 
-First, [install the CoE Starter Kit solution](setup.md). Then start to become familiar with the resources in your tenant.
+First, [set up the CoE Starter Kit solution](setup.md). Then start to become familiar with the resources in your tenant.
 
 > [!NOTE]
 > The following steps are examples of what you can do with the CoE Starter Kit. Explore the rest of the guidance to discover what's available and to use the kit effectively.
@@ -69,7 +69,7 @@ First, [install the CoE Starter Kit solution](setup.md). Then start to become fa
 
 1. Embrace your maker community and develop a nurture and adoption strategy. Think about how to onboard new makers. Organize internal events such as training workshops and hackathons. Put together templates and best practices for your makers to use. Learn more in [Nurture your Power Platform community](../adoption/nurture-best-practices.md).
 
-   :::image type="content" source="media/coe5.PNG" alt-text="Screenshot of an email that welcomes new makers, presenting information on Power Apps and Power Automate including resources to get started.":::
+   :::image type="content" source="media/coe5.PNG" alt-text="Screenshot of an email that welcomes new makers and presents information on Power Apps and Power Automate including resources to get started.":::
 
 ## Use the CoE Starter Kit alongside Automation Kit
 
@@ -109,45 +109,45 @@ Let's consider the individual features of Managed Environments to see how they c
 
 - **[Maker welcome content](/power-platform/admin/welcome-content)**
 
-  In Managed Environments, admins can provide customized welcome content to help their makers get started with Power Apps. When the welcome content is enabled, upon signing in to Power Apps, makers are greeted with customized getting started information.
+  In Managed Environments, admins can provide customized welcome content to help their makers get started with Power Apps. When welcome content is enabled, makers signing in to Power Apps are greeted with customized getting started information.
   
-  A similar concept in the CoE Starter Kit is the [welcome email](core-components.md), which sends an email to new makers only after they created an app, flow, or bot for the first time. Makers may get necessary information only after they create their first resource, whereas the Managed Environments feature shows them information when they sign in to Power Apps.
+  A similar concept in the CoE Starter Kit is the [welcome email](core-components.md), which sends an email to new makers only after they created an app, flow, or agent for the first time. Makers may get necessary information only after they create their first resource, whereas the Managed Environments feature shows them information when they sign in to Power Apps.
 
 - **[Weekly digest](/power-platform/admin/managed-environment-weekly-digests)**
 
-  The CoE Starter Kit doesn't have a weekly digest for admins, instead admins self-serve information through the [Power BI dashboard](/power-platform/guidance/coe/power-bi). Inactive apps and flows are highlighted in the Weekly digest email. In the CoE Starter Kit, a similar goal is achieved with the [inactivity notification process](governance-components.md#inactivity-processes), which notifies makers of their inactive resources and asks for approval to delete them.
+  The CoE Starter Kit doesn't have a weekly digest for admins. Instead, admins self-serve information through the [Power BI dashboard](/power-platform/guidance/coe/power-bi). Inactive apps and flows are highlighted in the Weekly digest email. In the CoE Starter Kit, a similar goal is achieved with the [inactivity notification process](governance-components.md#inactivity-processes), which notifies makers of their inactive resources and asks for approval to delete them.
   
-  One of the main goals of Managed Environments and the CoE Starter Kit is to provide more insights, allowing admins to take action. The CoE kit provides more capabilities, which can reduce the burden on the admin dealing with inactive resources, as the CoE can direct resource management to the maker thus making the owner responsible for their own resources.
+  One main goal of Managed Environments and the CoE Starter Kit is to provide insights that help admins take action. The CoE kit offers more capabilities that reduce the admin's burden of managing inactive resources. For example, it directs resource management to the maker, making the owner responsible for their own resources.
 
-- **[Sharing limits](/power-platform/admin/managed-environment-sharing-limits)**
+- **[Limit sharing](/power-platform/admin/managed-environment-sharing-limits)**
 
-  The CoE Starter Kit can't limit sharing on resources. Proactive governance can only be done through Managed Environments. The [Compliance process](example-processes.md) in the CoE Starter Kit offers a reactive way to identify highly shared resources.
-  
-  This process identifies highly shared resources and asks makers to provide additional information, so that admins can better support solutions. For example, admins can move resources to a dedicated environment. With the Power BI dashboard, admins can also identify highly shared resources.
+  The CoE Starter Kit doesn't limit sharing on resources. Proactive governance is only possible through Managed Environments. 
+
+  The [Compliance process](governance-components.md) in the CoE Starter Kit offers a reactive way to identify highly shared resources. This process identifies highly shared resources and asks makers to provide additional information, enabling admins to make better support solutions. For example, admins might choose to move resources to a dedicated environment. With the Power BI dashboard, admins can also identify highly shared resources.
 
 - **[Data policies](/power-platform/admin/managed-environment-data-policies)**
 
-  Managed Environments allows you to see what data policies apply to the environment. The [DLP Editor](core-components.md), part of the CoE Starter Kit, can also show you data policies that are applied to an environment. The DLP Editor shows you the impact of data policies on existing apps and flows in the environment.
+  Managed Environments allows you to see what data policies apply to the environment. The [DLP Editor](core-components.md), part of the CoE Starter Kit, also shows you data policies that are applied to an environment, and the impact of data policies on existing apps and flows in that environment.
 
 > [!NOTE]
-> The CoE Starter Kit offers capabilities that aren't yet met with Managed Environments, including as bulk updating permissions, cleaning up abandoned resources, surveying makers and calculating the ROI of ideas.
+> The CoE Starter Kit offers capabilities that aren't yet met with Managed Environments, such as bulk updating permissions, cleaning up abandoned resources, surveying makers, and calculating the ROI of ideas.
 
 ### Tenant-level analytics
 
-[Tenant-level analytics](/power-platform/admin/tenant-level-analytics) in Power Platform admin center offer a great way to get a holistic overview of usage and inventory of your apps, flows, makers, and environments. The analytics allow you to identify metrics like top used apps and top makers.
+[Tenant-level analytics](/power-platform/admin/tenant-level-analytics) in Power Platform admin center provide a holistic overview of usage and inventory for apps, flows, makers, and environments. The analytics help you identify metrics like the most used apps and top makers.
 
-The [Power BI dashboard](/power-platform/guidance/coe/power-bi) in the CoE Starter Kit combines your tenant-level inventory and usage data with your organization's data for more granular insights into what departments, cities, and countries/regions are using Power Platform.
+The [Power BI dashboard](/power-platform/guidance/coe/power-bi) in the CoE Starter Kit combines your tenant-level inventory and usage data with organizational data to provide more granular insights into which departments, cities, and countries or regions use Power Platform.
 
-A broader range of customizable filters is available so you can view your inventory by connector, classification (premium/standard), or number of users with the shared app.
+You can use a broader range of customizable filters to view your inventory by connector, classification (premium or standard), or the number of users with the shared app.
 
-Tenant-level insights in the Power Platform admin center provide you with a great starting point to get familiar with your tenants adoption of Power Platform. As your need for those insights matures, you can explore the rich and customizable reports of the CoE Starter Kit.
+Tenant-level insights in the Power Platform admin center provide a great starting point to understand your tenant's adoption of Power Platform. As your need for insights grows, explore the rich and customizable reports in the CoE Starter Kit.
 
 ## Next steps
 
 - Explore the [Power Platform admin documentation](../../admin/admin-documentation.md).
 - Find training resources like guided learning and step-by-step guides at [aka.ms/PowerPlatformLabs](https://aka.ms/powerplatformlabs).
 - Read up on customer success stories and find resources relevant to your experience, technical background, and skill level at [aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources).
-- Get started with Microsoft Power Platform [training](/training/powerplatform/).
-- Learn more about Power Platform adoption [Microsoft Power Platform guidance documentation](../index.yml).
+- Get started with [Microsoft Power Platform training](/training/powerplatform/).
+- Learn more about [Power Platform adoption](../index.yml).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

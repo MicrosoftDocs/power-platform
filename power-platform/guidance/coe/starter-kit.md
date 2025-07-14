@@ -1,6 +1,6 @@
 ---
 title: Microsoft Power Platform Center of Excellence Starter Kit
-description: Learn how the Microsoft Power Platform CoE Starter Kit helps organizations drive innovation, establish governance, and accelerate adoption of Power Apps and Power Automate.
+description: Learn how the Microsoft Power Platform CoE Starter Kit helps organizations drive innovation, establish governance, and accelerate adoption of Power Apps, Power Automate, and Microsoft Copilot Studio.
 #customer intent: As an admin, I want to understand the purpose of the Microsoft Power Platform CoE Starter Kit so that I can evaluate its benefits for my organization.  
 author: manuelap-msft
 ms.component: pa-admin
@@ -23,8 +23,6 @@ A Center of Excellence or Center of Enablement (CoE) in an organization drives i
 
 The Microsoft Power Platform CoE Starter Kit is a collection of components and tools designed to help you develop a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps, Power Automate, and Microsoft Copilot Studio.
 
-<!-- Sure about MCS? -->
-
 :::row:::
    :::column span="":::
       :::image type="icon" source="media/i_overview-icon.svg":::<br><br>**Overview**<br>Define goals and expected outcomes of your CoE and get started.<br><ul><li>[Overview](overview.md)</li><li>[Download](<https://aka.ms/coestarterkitdownload>)</li></ul>
@@ -42,7 +40,7 @@ The Microsoft Power Platform CoE Starter Kit is a collection of components and t
 
 [Watch a quick overview](https://www.youtube.com/embed/3eF__GY0Vzg) of the CoE Starter Kit.
 
-<!-- Is there a more recent video or training? -->
+<!-- Is there a more recent video or training link we can provide? -->
 
 ## Related information
 
