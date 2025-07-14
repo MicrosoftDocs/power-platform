@@ -115,18 +115,26 @@ Before you edit a security role, make sure you understand the principles of [con
 > You can't edit the System Administrator security role. Instead, copy the System Administrator security role and make changes to the new role.
 
 ## [New admin center](#tab/new)
-
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. In the command bar, select **Settings**.
+1. Expand the **Users + permissions** node.
+1. Select **Security roles**. The **Security roles** page is displayed.
+1. Select the security role you want to edit.
+1. [Specify privileges for the security role.](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
+1. Select **Save + close**.
 
 ## [Classic admin center](#tab/classic)
 
-1. Sign in to the Power Platform admin center and select an environment.
-
-1. Select **Settings** > **Users + permissions** > **Security roles**.
-
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Environments** in the navigation pane. The Environments page is displayed.
+1. Select an environment.
+1. In the command bar, select **Settings**.
+1. Expand the **Users + permissions** node.
+1. Select **Security roles**. The **Security roles** page is displayed.
 1. Select the security role you want to edit.
-
-1. Use the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience to specify privileges for the security role.
-
+1. [Specify privileges for the security role.](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
 1. Select **Save + close**.
 ---
 
