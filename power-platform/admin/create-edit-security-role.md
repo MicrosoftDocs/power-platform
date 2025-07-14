@@ -31,7 +31,8 @@ Create security roles or edit the privileges associated with an existing securit
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. In the command bar, select **Settings**.
-1. Expand the **Users + permissions** node. Then select **Security roles**.
+1. Expand the **Users + permissions** node.
+1. Select **Security roles**. The **Security roles** page is displayed.
 1. In the command bar, select **+ New role**. The **Create New Role** pane is displayed.
 1. Enter a role name.
 1. Select a business unit.
@@ -54,7 +55,8 @@ Create security roles or edit the privileges associated with an existing securit
 1. Select **Environments** in the navigation pane. The Environments page is displayed.
 1. Select an environment.
 1. In the command bar, select **Settings**.
-1. Expand the **Users + permissions** node. Then select **Security roles**.
+1. Expand the **Users + permissions** node.
+1. Select **Security roles**. The **Security roles** page is displayed.
 1. Select **+ New role**.
 1. Enter a role name.
 1. Select a business unit.
@@ -70,6 +72,7 @@ Create security roles or edit the privileges associated with an existing securit
 
     > [!Note]
     > You may need to repeat the last two steps of this procedure if there is more than one table in your app.
+
 ---
 
 ## Create a security role by copying an existing role
@@ -79,30 +82,28 @@ Create security roles or edit the privileges associated with an existing securit
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. In the command bar, select **Settings**.
-1. Expand the **Users + permissions** node. Then select **Security roles**.
+1. Expand the **Users + permissions** node.
+1. Select **Security roles**. The **Security roles** page is displayed.
 1. Select the security role you want to copy.
-1. Select **Copy security role**. The **Copy role** dialog box is displayed.
+1. Select **Copy security role** in the command bar. The **Copy role** dialog box is displayed.
 1. Enter a name for the new role. Select **Copy**.
-1. Go back to the Security roles page and select the new role you created by copying an existing role.
+1. Go back to the **Security roles** page and select the new role you created by copying an existing role.
 1. Specify privileges for the security role. Learn more in [Security roles and privileges](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
 1. Select **Save + close**.
 
 ## [Classic admin center](#tab/classic)
 
-1. Sign in to the Power Platform admin center and select an environment.
-
-1. Select **Settings** > **Users + permissions** > **Security roles**.
-
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Environments** in the navigation pane. The Environments page is displayed.
+1. Select an environment.
+1. In the command bar, select **Settings**.
+1. Expand the **Users + permissions** node.
+1. Select **Security roles**. The **Security roles** page is displayed.
 1. Select the security role you want to copy.
-
-1. Select **Copy**.
-
-1. Enter a name for the new role.
-
-1. Select **OK**.
-
-1. Use the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience to specify privileges for the security role.
-
+1. Select **Copy security role** in the command bar. The **Copy role** dialog box is displayed.
+1. Enter a name for the new role. Select **Copy**.
+1. Go back to the **Security roles** page and select the new role you created by copying an existing role.
+1. Specify privileges for the security role. Learn more in [Security roles and privileges](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
 1. Select **Save + close**.
 ---
 
