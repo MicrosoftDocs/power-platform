@@ -182,7 +182,7 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 
 - Check that no other DLP policies apply to this environment. Learn more in [Combined effect of multiple DLP policies](../../admin/dlp-combined-effect-multiple-policies.md).
 
-## Download and install the solution
+## Download and install
 
 If you haven't already, [download the CoE Starter Kit solution and Power BI dashboard files](https://aka.ms/CoEStarterKitDownload).
 
