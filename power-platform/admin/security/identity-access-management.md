@@ -104,7 +104,7 @@ Be aware of the following known issues with the feature:
 - After you remove a user from the System administrator role, it takes about 24 hours for the page to show the updated administrator count.
 
 ## Authentication for agents
-This feature allows administrators to configure authentication to all agent interactions in this environment. Admins can select one of the following options:
+This feature allows administrators to configure authentication to all agent interactions in the environment. Admins can select one of the following options:
 
 - **Authenticate with Microsoft or Authnticate Manually** allows you to force authentication through Microsoft Entra ID or some other source. This helps prevent makers from creating or using agents with no authentication.
 - **No authentication** allows anonymous access.
