@@ -48,7 +48,6 @@ Create security roles or edit the privileges associated with an existing securit
     > [!Note]
     > You may need to repeat the last two steps of this procedure if there is more than one table in your app.
 
-
 ## [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
