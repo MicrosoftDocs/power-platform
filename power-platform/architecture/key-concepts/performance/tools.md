@@ -87,7 +87,7 @@ As the complexity increases from low to high risk, the requirements for monitori
 
 ### All, low risk, or personal productivity solutions
 
-When you implement standards across apps and solutions in your tenant, stick to tools that don't require additional permissions or bookmarks.
+When you implement standards across apps and solutions in your tenant, make the standards easy enough to follow without having to constantly refer back to them, and stick to tools that don't require additional permissions or process to use.
 
 Determine which items flagged by the Power Apps Checker can be ignored and which require mitigation. Document your recommendations and promote that knowledge within your internal Power Platform community.
 
@@ -136,4 +136,4 @@ Learn more about:
 - [Introduction to Application Insights](/azure/azure-monitor/app/app-insights-overview) 
 - [Improve solution performance, stability, and reliability](/power-apps/maker/data-platform/use-powerapps-checker) 
 - [​​Distributed tracing across multiple services​ in Power Platform](../distributed-tracing.md)
-
+- [Debugging canvas apps with Live monitor](/power-apps/maker/monitor-canvasapps)

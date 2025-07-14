@@ -23,7 +23,7 @@ ms.custom:
 
 CardioTriage-AI is a Power Platform-based AI solution designed to automate and enhance the triage process for cardiology patients by using AI Builder, Copilot Studio, and Microsoft 365 integrations. The solution aims to improve patient prioritization, reduce delays in treatment, optimize appointment scheduling, and support clinical decision making while ensuring data security and compliance.
 
-For a demo and more information about the CardioTriage-AI solution, visit [GitHub](https://github.com/microsoft/Powerful-Devs-Hack-Together/issues/34).
+For a demo and more information about the CardioTriage-AI solution, visit [GitHub](https://github.com/ganeshglitz/CardioTriage-AI).
 
 [!INCLUDE [pp-arch-solution-idea-tip](../../includes/pp-arch-solution-idea-tip.md)]
 
@@ -91,7 +91,7 @@ Learn about [building intelligent conversational agents with Microsoft Copilot S
 
 ### App registration
 
-Register apps in Microsoft Entra ID (formerly Azure Active Directory) for secure access and authentication. Registering your application establishes a trust relationship between your app and the Microsoft identity platform and ensures that only authorized users or applications can access sensitive data. Use App registration to manage app security and ensure safe, seamless integration with services like Microsoft Graph and Power Apps. Learn more in [Register an application in Microsoft Entra ID](/entra/identity-platform/quickstart-register-app).
+Register apps in Microsoft Entra ID for secure access and authentication. Registering your application establishes a trust relationship between your app and the Microsoft identity platform and ensures that only authorized users or applications can access sensitive data. Use App registration to manage app security and ensure safe, seamless integration with services like Microsoft Graph and Power Apps. Learn more in [Register an application in Microsoft Entra ID](/entra/identity-platform/quickstart-register-app).
 
 ### Azure Key Vault
 
@@ -193,4 +193,4 @@ Principal authors:
 
 ## Next steps
 
-For a demo video, more details about functionality, architecture, source code, and other resources, visit the CardioTriage-AI solution on [GitHub](https://github.com/microsoft/Powerful-Devs-Hack-Together/issues/34).
+For a demo video, more details about functionality, architecture, source code, and other resources, visit the CardioTriage-AI solution on [GitHub](https://github.com/ganeshglitz/CardioTriage-AI).
