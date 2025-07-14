@@ -104,4 +104,4 @@ Be aware of the following known issues with the feature:
 - After you remove a user from the System administrator role, it takes about 24 hours for the page to show the updated administrator count.
 
 ## Authentication for agents
-This feature allows administrators to enforce authentication standards by configuring either Microsoft Entra ID authentication or manual authentication. It helps prevent makers from creating or using agents with no authentication&mdash;such as anonymous&mdash;access across environments. This helps secure your agents and keep your data protected.
+This feature allows administrators to enforce authentication standards by configuring either Microsoft Entra ID authentication or manual authentication. It helps prevent makers from creating or using agents with no authentication&mdash;such as anonymous access&mdash;across environments. This helps secure your agents and keep your data protected.
