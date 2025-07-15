@@ -8,6 +8,7 @@ author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
+ms.custom: NewPPAC
 ms.contributors:
   - lsuresh
 contributors:
