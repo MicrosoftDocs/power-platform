@@ -19,7 +19,6 @@ Environment admins can access analytics for Power Automate in the Microsoft [Pow
 
 > [!IMPORTANT]
 > Solution-aware flows (flows created as part of a solution) are currently not included in analytics reports.
->
 
 To access these reports:
 
