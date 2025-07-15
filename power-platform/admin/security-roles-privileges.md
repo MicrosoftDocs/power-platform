@@ -58,7 +58,7 @@ A security role consists of record-level privileges and task-based privileges of
 
 - **Tables:** Table privileges define which tasks a user with access to a table record can do, such as Read, Create, Delete, Write, Assign, Share, Append, and Append To. *Append* means to attach another record, such as an activity or note, to a record. *Append to* means to be attached to a record. [Set table privileges](#table-privileges).
 
-- **Miscellaneous privileges:** These task-based privileges give a user permission to perform specific, miscellaneous (non-record) tasks, such as publish articles or activate business rules. [Learn more about miscellaneous privileges](miscellaneous-privileges.md).
+- **Miscellaneous privileges:** These task-based privileges give a user permission to perform specific, miscellaneous (nonrecord) tasks, such as publish articles or activate business rules. [Learn more about miscellaneous privileges](miscellaneous-privileges.md).
 
 - **Privacy-related privileges**: These privileges give a user permission to perform tasks that involve data that's integrated, downloaded, or exported outside of Dataverse, such as exporting data to Microsoft Excel or printing. [Learn more about privacy-related privileges](privacy-related-privileges.md).
 
@@ -128,7 +128,7 @@ Setting the privileges for each table in your app can be time-consuming and tedi
 
 > [!TIP] 
 > Create your new security roles by copying the [predefined template security roles](database-security.md) in an environment.
-> - Use **App Opener** role which has the minimum privileges to run an app.
+> - Use **App Opener** role, which has the minimum privileges to run an app.
 > - Use **Basic User** role for the minimum privileges and including privileges to the core business tables.
 
 1. Select a table, and then select **Copy table permissions**.
