@@ -262,7 +262,7 @@ When the Microsoft Entra group is deleted from the Azure.portal, all members are
 - [Change the business unit for a team](manage-teams.md#change-the-business-unit-for-a-team)
 
 
-### See also
+### Related content
 
 [Manage teams](manage-teams.md) <br />
 [Video: Microsoft Entra group membership](https://youtu.be/GW2Rz53BX6o) <br />
