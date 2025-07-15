@@ -50,7 +50,7 @@ For text-based conversations, an intent recognition process identifies and route
 
 The following image shows the text-based agent embedded on Rabobank's website.
 
-:::image type="content" source="media/rabobank/text-based-agent.png" alt-text="Screenshot of the text-based Copilot Studio agent embedded on Rabobank's website." lightbox="media/rabobank/text-based-agent.png":::
+:::image type="content" source="media/rabobank/text-based-agent.png" alt-text="Screenshot of the text-based Copilot Studio agent embedded on Rabobank's website.":::
 
 ## Implementation approach
 
