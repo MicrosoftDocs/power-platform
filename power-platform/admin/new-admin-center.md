@@ -13,6 +13,10 @@ ai-usage: ai-assisted
 author: praveenmantha
 ms.author: pmantha
 ms.reviewer: sericks
+ms.contributors:
+  - lsuresh
+contributors:
+- lavanyapg
 search.audienceType: 
   - admin
 ---
@@ -44,7 +48,7 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 5           | Security             | Security         | [Security overview](security/security-overview.md)   |
 | 6           | Analytics > Dataverse       | Manage > Products > Dataverse | [View and download Microsoft Dataverse analytics](analytics-common-data-service.md) |
 | 7           | Analytics > Power Automate | Manage > Products > Power Automate | [View analytics for cloud flows](analytics-flow.md)<br>[View analytics for desktop flows](analytics-ui-flow.md)  |
-| 8           | Analytics > Power Apps| Manage > Prodcuts > Power Apps |[Admin Analytics for Power Apps](analytics-powerapps.md)|
+| 8           | Analytics > Power Apps| Manage > Products > Power Apps |[Admin Analytics for Power Apps](analytics-powerapps.md)|
 | 9           | Analytics > Data export | Manage  > Products > Data export |[Set up Microsoft Power Platform self-service analytics to export inventory and usage data (preview)](self-service-analytics.md)    |
 | 10          | Billing > Licenses   | Licensing > Products > Power Apps | [Manage Power Apps licenses in your organization](signup-question-and-answer.md)    |
 | 11          | Billing > Billing plans      | Licensing > Billing plans | [Pay-as-you-go plan](pay-as-you-go-overview.md)  |
@@ -54,7 +58,7 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 15          | Resources > Catalogs | Deployment > Catalogs |[Administer the catalog](administer-catalog.md)   |
 | 16          | Resources > Dynamics 365 apps | Manage > Products > Dynamics 365 apps | [Manage Dynamics 365 apps](manage-apps.md)  |
 | 17          | Resources > Power Pages sites | Manage > Products > Power Pages sites<br><br>**Note:** The security data of pages will be moved to Security > Products > Power Pages. | [What is Power Pages?](/power-pages/introduction)  |
-| 18          | Help + Support       | Support         | [Get Help + Support](get-help-support.md) |
+| 18          | Help + Support       | Support         | [Get Support](get-help-support.md) |
 | 19          | Data integration     | Manage > Data > Data integration  | [Integrate data into Microsoft Dataverse](data-integrator.md) |
 | 20          | Data (Preview)       | Manage > Data > Data (Preview) |  [On-premises data gateway management](onpremises-data-gateway-management.md) |
 | 21          | Policies > Data policies | Security > Settings > Data and privacy > Data policies | [Data loss prevention (DLP) policies](wp-data-loss-prevention.md)    |
