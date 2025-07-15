@@ -12,7 +12,7 @@ metadata:
   author: manuelap-msft
   ms.author: mapichle
   ms.reviewer: jhaskett-msft
-  ms.date: 04/17/2025
+  ms.date: 07/15/2025
 
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -53,7 +53,7 @@ productDirectory:
           url: reference-architectures/app-integrate-lakehouse.md
         - text: Perform predictive data analysis using Dataverse, Fabric, and Azure AI services
           url: reference-architectures/ai-predictive-data-analysis.md
-        - text: Secure Power Platform access to Azure resources
+        - text: Secure Power Platform access to resources inside your virtual network
           url: reference-architectures/secure-access-azure-resources.md
         - text: More...
           url: reference-architectures/index.md
