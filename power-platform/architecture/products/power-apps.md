@@ -1,13 +1,13 @@
 ---
 title: Power Apps reference architectures and solution ideas
 description: Learn about key concepts, reference architectures, and solution ideas to build robust and maintainable Power Apps solutions.
-#customer intent: As a Power Platform user, I want to understand Power Apps key concepts, reference architectures, and solution ideas so that I can design robust and maintainable solutions.
+#customer intent: As a business decision maker, I want to understand Power Apps key concepts, reference architectures, and solution ideas so that I can design robust and maintainable solutions.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 07/07/2025
+ms.date: 07/15/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -31,7 +31,7 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | Title | Description |
 | --- | --- |
 | [**Distributed tracing across multiple services in Power Platform**](../key-concepts/distributed-tracing.md) | Learn how to achieve observability across services like Power Platform, Azure, and Dynamics 365. |
-| [**Manage Power Platform solution performance](../key-concepts/performance/index.md)** | Learn about key concepts and considerations for managing the performance of Power Platform solutions. |
+| [**Manage Power Platform solution performance**](../key-concepts/performance/index.md) | Learn about key concepts and considerations for managing the performance of Power Platform solutions. |
 | [**Power Apps coding guidelines**](/power-apps/guidance/coding-guidelines/overview) | Learn about standards for naming objects, collections, and variables, and guidelines for developing consistent, well-performing, and easily maintainable apps. |
 | [**Build large and complex canvas apps**](/power-apps/maker/canvas-apps/working-with-large-apps) | Use the recommendations in this article to better work with large and complex apps in Power Apps Studio and improve your apps' runtime performance. |
 | [**Optimize app or page load for peak performance**](/power-apps/maker/canvas-apps/fast-app-page-load) | One of the key factors that shape a user's perception of an app is how quickly it opens and starts to work. Use the guidelines in this article to build apps that load quickly. |
@@ -64,7 +64,7 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Healthcare Patient Support Agent**](../solution-ideas/agent-healthcare-patient-support.md) | Streamline patient interactions and reduce administrative burdens for healthcare providers. |
 | [**Property rental portal with AI-driven search and payment processing**](../solution-ideas/agent-rental-portal.md) | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 | [**Revolutionize vehicle inspections with EVVIE**](../solution-ideas/app-evvie.md) | Inspect vehicles and assess damage using generative AI and Power Platform. |
-| [**Cardio Triage AI workflow with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients by using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
+| [**Intelligent cardiac triage and scheduling with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
 
 ## Related resources
 

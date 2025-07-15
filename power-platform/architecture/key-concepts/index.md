@@ -5,7 +5,7 @@ description: Learn foundational principles to design scalable and efficient solu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 07/07/2025
+ms.date: 07/15/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:

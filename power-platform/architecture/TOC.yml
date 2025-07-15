@@ -57,7 +57,7 @@
           href: reference-architectures/app-legacy-data-integration.md
         - name: Use Dataverse background operations
           href: reference-architectures/dataverse-background-operations.md
-        - name: Secure Power Platform access to Azure resources
+        - name: Secure Power Platform access to resources
           href: reference-architectures/secure-access-azure-resources.md
         - name: Integrate Power Platform with SAP
           href: reference-architectures/arch-pattern-sap.md
@@ -83,15 +83,15 @@
           href: solution-ideas/agent-rental-portal.md
         - name: Revolutionize vehicle inspections with EVVIE
           href: solution-ideas/app-evvie.md
-        - name: Custom contact center solution with Copilot Studio agent
+        - name: Custom contact center solution with Copilot Studio
           href: solution-ideas/agent-custom-contact-center.md
         - name: Travel concierge using generative AI with Copilot Studio
           href: solution-ideas/agent-travel-customer.md
         - name: Ticket management system with Copilot Studio agents
           href: solution-ideas/agent-ticket-and-refund.md
-        - name: Automate software bug reporting with Auto Triage AI Agent
+        - name: Automate bug reporting with Auto Triage AI Agent
           href: solution-ideas/auto-ai-triage.md
-        - name: Intelligent cardiac triage and scheduling with Power Platform
+        - name: Intelligent cardiac triage and scheduling
           href: solution-ideas/cardio-triage-agent.md
     - name: Power Platform products
       items:

@@ -1,11 +1,11 @@
 ---
 title: Overview of Power Platform and Copilot Studio reference architectures
 description: Discover how Power Platform and Copilot Studio reference architectures can help you build scalable, reliable solutions tailored to your business needs.
-#customer intent: As a Power-Platform user, I want to understand the architectures of Power Platform so that I can build scalable and reliable solutions.
+#customer intent: As a business decision maker, I want to understand the architectures of Power Platform so that I can build scalable and reliable solutions.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 07/09/2025
+ms.date: 07/15/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors: 

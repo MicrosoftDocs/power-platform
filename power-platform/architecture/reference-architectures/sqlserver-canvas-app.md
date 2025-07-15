@@ -5,7 +5,7 @@ description: Learn how to use SQL Server with canvas apps to create custom user 
 author: lanced  
 ms.subservice: architecture-center  
 ms.topic: example-scenario  
-ms.date: 07/14/2025
+ms.date: 07/15/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087  
 ms.contributors:  

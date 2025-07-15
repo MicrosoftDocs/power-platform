@@ -1,13 +1,13 @@
 ---
 title: Microsoft Dataverse reference architectures and solution ideas
 description: Learn about key concepts, reference architectures, and solution ideas to create robust and maintainable solutions that use data in Dataverse.
-#customer intent: As a Power Platform user, I want to understand Dataverse key concepts, reference architectures, and solution ideas so that I can create robust and maintainable solutions.
+#customer intent: As a business decision maker, I want to understand Dataverse key concepts, reference architectures, and solution ideas so that I can create robust and maintainable solutions.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 04/17/2025
+ms.date: 07/15/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -46,7 +46,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Use Dataverse background operations**](../reference-architectures/dataverse-background-operations.md) | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | [**Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables**](../reference-architectures/app-integrate-lakehouse.md) | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | [**Use Dataverse as a data source for canvas apps**](../reference-architectures/dataverse-canvas-app.md) | Learn how creating a Power Apps canvas app that uses Dataverse as a data source helps build a more custom user experience. |
-| **[Use an autonomous agent in Copilot Studio for document processing](../reference-architectures/document-processing-agent.md)** | Learn how to build an autonomous agent in Copilot Studio for document processing. |
+| [**Use an autonomous agent in Copilot Studio for document processing**](../reference-architectures/document-processing-agent.md) | Learn how to build an autonomous agent in Copilot Studio for document processing. |
 
 ## Solution ideas
 
@@ -58,7 +58,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Custom contact center solution with Copilot Studio agent**](../solution-ideas/agent-custom-contact-center.md) | Enhance customer service efficiency through integrated platforms and technologies. |
 | [**Travel concierge using generative AI with Copilot Studio**](../solution-ideas/agent-travel-customer.md) | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
 | [**Ticket management system with Copilot Studio agents**](../solution-ideas/agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
-| [**Cardio Triage AI workflow with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients by using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
+| [**Intelligent cardiac triage and scheduling with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
 
 ## Related resources
 

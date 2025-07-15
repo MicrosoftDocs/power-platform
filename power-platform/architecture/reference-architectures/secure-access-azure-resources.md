@@ -5,7 +5,7 @@ description: Learn how to integrate Power Platform with Azure Virtual Network to
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 04/17/2025
+ms.date: 07/15/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
