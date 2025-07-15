@@ -1,7 +1,7 @@
 ---
 title: Travel concierge using generative AI with Copilot Studio
 description: Explore a travel concierge solution that uses Copilot Studio to reduce call center interactions, enhance data management, and optimize customer engagement.
-#customer intent: As a Power Platform user, I want to explore an example implementation that employs AI-driven solutions so that I can improve my own organization's customer service experience.
+#customer intent: As a business decision maker, I want to explore an example implementation that employs AI-driven solutions so that I can improve my own organization's customer service experience.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
