@@ -3,7 +3,7 @@ title: How access to a record is determined | Microsoft Docs
 description: How access to a record is determined 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/02/2023
+ms.date: 07/15/2025
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -77,7 +77,7 @@ Users can have access to perform an action on a record because of the security r
 |**The record belongs to a business unit that is not a descendant of the user's business unit**  |  In this case, the user must either have or belong to a team that has a role assigned with Organization-level access privilege.       |
 
 > [!NOTE]
-> <sup>*</sup>For roles assigned to teams with Basic-level access user privilege, the role's inheritance configuration also comes into play. If the team has the **Member's privilege inheritance** set to **Team privileges only**, then the user will only be able to make use of that privilege for records owned by the team. For more information, go to [Team member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance).
+> <sup>*</sup>For roles assigned to teams with Basic-level access user privilege, the role's inheritance configuration also comes into play. If the team has the **Member's privilege inheritance** set to **Team privileges only**, then the user will only be able to make use of that privilege for records owned by the team. For more information, go to [Security roles and privileges](security-roles-privileges.md).
 > 
 > :::image type="content" source="media/member-privilege-inheritance.png" alt-text="Member's privilege inheritance":::  
 
