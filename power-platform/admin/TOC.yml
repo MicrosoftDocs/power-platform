@@ -452,7 +452,7 @@
           items:
             - name: Track, manage, and scale Copilot adoption
               href: copilot/copilot-hub.md
-            - name: View agent inventory
+            - name: View agent inventory (preview)
               href: tenant-wide-agent-inventory.md
         - name: Security
           items:
@@ -860,11 +860,13 @@
                   href: powerplatform-api-create-service-principal.md
                 - name: Reference
                   items:
-                    - name: "2024-10-01"
+                    - name: Power Platform API for .NET
+                      href: /dotnet/api/?view=power-platform-latest
+                    - name: "Power Platform REST API v2024-10-01"
                       href: /rest/api/power-platform
-                    - name: 2022-03-01-preview
+                    - name: "Power Platform REST API v2022-03-01-preview"
                       href: /rest/api/power-platform
-                    - name: "2020-10-01"
+                    - name: "Power Platform REST API v2020-10-01"
                       items:
                         - name: Environments
                           items:
@@ -1200,7 +1202,7 @@
               href: for-partners-delegated-administrator.md
         - name: Support
           items:
-            - name: Get Help + Support
+            - name: Get Support
               href: get-help-support.md
             - name: Support overview
               href: support-overview.md

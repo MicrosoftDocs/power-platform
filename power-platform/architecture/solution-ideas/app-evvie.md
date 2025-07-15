@@ -1,7 +1,7 @@
 ---
 title: Revolutionize vehicle inspections with EVVIE
 description: Discover how the Enterprise Visual Vehicle Inspection Engine uses AI and Power Platform to automate vehicle inspections, saving time and improving accuracy.
-#customer intent: As a Power Platform user, I want to understand the workflow of EVVIE so that I can design a similar solution.
+#customer intent: As a business decision maker, I want to understand the workflow of EVVIE so that I can design a similar solution.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
