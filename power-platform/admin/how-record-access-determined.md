@@ -36,16 +36,16 @@ For example, for Account, the privileges are:
 |**Assign**|Required to give ownership of a record to another user. Which records can be assigned depends on the access level of the permission defined in your security role.|  
 |**Share**|Required to give access to a record to another user while keeping your own access. Which records can be shared depends on the access level of the permission defined in your security role.|  
 
-In order to perform an action on a record, the user needs to have either the required privilege assigned through a role directly, or needs to be member of a team that has a security role with the privilege assigned. If this is not the case, then the user will get an access denied error stating that they do not hold the necessary privilege to perform the action.
+In order to perform an action on a record, the user needs to have either the required privilege assigned through a role directly, or needs to be member of a team that has a security role with the privilege assigned. If not, then the user gets an access denied error stating that they don't hold the necessary privilege to perform the action.
  
-For example, in a scenario where a user wants to create an Account record, it is necessary that the user has the Create privilege either through a security role assigned to them or to a team they belong to.
+For example, in a scenario where a user wants to create an Account record, it's necessary that the user has the Create privilege either through a security role assigned to them or to a team they belong to.
  
 > [!NOTE]
-> When creating or editing a security role, a privilege is granted to that role with a given access level. The access level is not taken into account in the privilege check, this is done in the access check when the privilege check is passed.
+> When creating or editing a security role, a privilege is granted to that role with a given access level. The access level isn't taken into account in the privilege check, this is done in the access check when the privilege check is passed.
 
 ## Access check
  
-If the privilege check is passed, then the access check takes place. The access check verifies that the user has the required rights to perform the action they are trying to do.
+If the privilege check is passed, then the access check takes place. The access check verifies that the user has the required rights to perform the action they're trying to do.
 
 There are four different ways in which a user can have access rights to perform an action in a particular record. These are:
 - Ownership
@@ -54,7 +54,7 @@ There are four different ways in which a user can have access rights to perform 
 - Hierarchy access
 
 > [!IMPORTANT]
-> All of these are checked during the access check so it is possible that the user has access to perform the required action on the record in more than one way.
+> All of these are checked during the access check so it's possible that the user has access to perform the required action on the record in more than one way.
 
 ### Ownership
  
@@ -65,7 +65,7 @@ A user can have access to a particular record because either they own the record
 
 ### Role access
  
-Users can have access to perform an action on a record because of the security roles they hold. In this case, the access level of the privilege a role has is taken into account. There are four major scenarios that correspond to the different access levels that are not User, which is covered in the ownership case.
+Users can have access to perform an action on a record because of the security roles they hold. In this case, the access level of the privilege a role has is taken into account. There are four major scenarios that correspond to the different access levels that aren't User, which is covered in the ownership case.
 
 | &nbsp;  | &nbsp;  |
 |---------|---------|
