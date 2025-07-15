@@ -15,8 +15,6 @@ search.audienceType:
 
 # How access to a record is determined
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 There are different ways to obtain access to a particular record in Dataverse. To be able to do a certain action with a table (Create, Read, Write, Delete, Append, Append to, Assign, Share), two major checks are done: privilege and access checks. 
  
 ## Privilege check
@@ -115,7 +113,7 @@ There are two environment database settings to configure to use the **Who has ac
 - **IsAccessCheckerAllUsersEnabled**: This allows the admin to see who has access to the row.
 - **IsAccessCheckerNonAdminAllUsersEnabled**: This allows the admin, owner of the record, and users who have access to the row to see who has access.
 
-### See also
+### Related content
 [Security roles and privileges](security-roles-privileges.md) <br />
 [Create users](create-users.md) <br />
 [Create or edit a security role to manage access](create-edit-security-role.md) <br />
