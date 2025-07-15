@@ -5,12 +5,14 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 07/15/2025
 ms.subservice: admin
-author: sericks007
-ms.author: sericks
+author: paulliew
+ms.author: paulliew
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - NewPPAC
 ---
 
 # Miscellaneous privileges
