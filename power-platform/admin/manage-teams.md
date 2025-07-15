@@ -380,7 +380,7 @@ You can reassign the owner team's records to another user or team.
 
 See [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
 
-### See also
+### Related content
 
  [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team)
  [Create a team template and add to an entity form](create-team-template-add-entity-form.md)
