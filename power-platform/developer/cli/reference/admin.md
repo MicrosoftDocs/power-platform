@@ -787,7 +787,7 @@ Update tenant settings.
 
 #### `--setting-name` `-n`
 
-Name of the setting to be updated.
+Name of the setting to be updated. For example: powerPlatform.helpSupportSettings.useSupportBingSearchByAllUsers
 
 #### `--setting-value` `-v`
 
