@@ -15,8 +15,6 @@ ms.custom: bap-template
 
 # Miscellaneous privileges
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can assign other privileges to a security role than the familiar Read, Write, Append, and so on. Use either the [security roles and privileges](security-roles-privileges.md) experience to assign privileges to a security role.
 
 The following table describes the miscellaneous privileges, which in the new, modern UI are listpred alphabetically on the **Miscellaneous privileges** tab of the security role editor.
