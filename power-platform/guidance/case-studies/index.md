@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 05/13/2025
+ms.date: 07/15/2025
 ---
 
 # Real-world case studies
@@ -39,4 +39,5 @@ Case studies are detailed accounts of real-world applications and implementation
 | [EY automates payment processing](global-finance.md) | This case study covers how the Global Finance team at Ernst & Young used Power Automate, AI Builder, and Dataverse to automate customer payment processing. |
 | [Holland America Line transforms customer experience with Copilot Studio](holland-america-customer-experience.md) | This case study covers how Holland America Line used Copilot Studio to create a sophisticated virtual agent to act as a digital concierge on their website. |
 | [John Cockerill streamlines enterprise business processes](engineering-time-tracking.md) | This case study covers how international engineering company John Cockerill uses Power Platform to develop enterprise apps. |
+| [Rabobank embraces conversational banking with Copilot Studio](rabobank.md) | This case study covers how Rabobank uses Microsoft Copilot Studio to enhance customer service through conversational AI with text and voice-enabled chatbot functionality. |
 | [Teck automates data extraction with Power Automate and AI Builder](teck-automates-data-extraction.md) | This case study covers how Teck uses Power Automate and AI Builder to automate data extraction processes. |
