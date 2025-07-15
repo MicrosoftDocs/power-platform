@@ -3,7 +3,7 @@ title: Miscellaneous privileges
 description: Learn about the miscellaneous privileges that you can assign to a security role in Power Platform.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/19/2024
+ms.date: 07/15/2025
 ms.subservice: admin
 author: sericks007
 ms.author: sericks
@@ -17,9 +17,7 @@ ms.custom: bap-template
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-You can assign other privileges to a security role than the familiar Read, Write, Append, and so on. Use either the [new](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role) or [legacy](security-roles-privileges.md#security-roles-and-the-legacy-ui) experience to assign privileges to a security role.
-
-## New experience
+You can assign other privileges to a security role than the familiar Read, Write, Append, and so on. Use either the [security roles and privileges](security-roles-privileges.md) experience to assign privileges to a security role.
 
 The following table describes the miscellaneous privileges, which in the new, modern UI are listpred alphabetically on the **Miscellaneous privileges** tab of the security role editor.
 
@@ -93,83 +91,3 @@ The following table describes the miscellaneous privileges, which in the new, mo
 | View Audit Summary | prvReadAuditSummary | [Power Apps activity logging](logging-powerapps.md) |
 | Web Mail Merge | prvWebMailMerge | [Work with mail merge templates](work-mail-merge-templates.md) |
 | Write own calendar | prvWriteOwnCalendar | Not applicable |
-
-## Legacy experience
-
-The privileges described in the previous table are grouped by tab, shown in the following list:
-
-- **Core Records tab**
-  - Add Reporting Services Reports
-  - Bulk Delete
-  - Delete Audit Partitions
-  - Delete Audit Record Change History
-  - Manage Data Encryption key - Activate
-  - Manage Data Encryption key - Change
-  - Manage Data Encryption key - Read
-  - Manage User Synchronization Filters
-  - Promote User to Microsoft Dynamics 365 Administrator Role
-  - Publish Duplicate Detection Rules
-  - Publish Email Templates
-  - Publish Mail Merge Templates to Organization
-  - Publish Reports
-  - Run SharePoint Integration Wizard
-  - Turn On Tracing
-  - View Audit History
-  - View Audit Partitions
-  - View Audit Summary
-- **Marketing tab**  
-  - Configure Internet Marketing module
-  - Create Quick Campaign
-  - Use internet marketing module
-- **Sales tab**
-  - Override Invoice Pricing
-  - Override Opportunity Pricing
-  - Override Order Pricing
-  - Override Quote Order Invoice Delete
-  - Override Quote Pricing
-- **Service tab**
-  - Approve Knowledge Articles
-  - Publish Articles
-  - Publish Knowledge Articles
-- **Business Management tab**
-  - Act on Behalf of Another User
-  - Approve Email Addresses for Users or Queues
-  - Assign manager for a user
-  - Assign position for a user
-  - Assign Territory to User
-  - Bulk Edit
-  - Change Hierarchy Security Settings
-  - Dynamics 365 Address Book
-  - Enable or Disable a Business Unit
-  - Enable or Disable User
-  - Language Settings
-  - Merge
-  - Override Created on or Created by for Records during Data Import
-  - Perform in sync rollups on goals
-  - Read License info
-  - Reparent Business unit
-  - Reparent team
-  - Reparent user
-  - Send Email as Another User
-  - Send Invitation
-  - Web Mail Merge
-- **Service Management tab**
-  - Browse availability
-  - Create own calendar
-  - Delete own calendar
-  - Read own calendar
-  - Search Availability
-  - Write own calendar
-- **Customization tab**
-  - Activate Business Process Flows
-  - Activate Business Rules
-  - Activate Real-time Processes
-  - Configure Yammer
-  - Execute Workflow Job
-  - Export Customizations
-  - Import Customizations
-  - ISV Extensions
-  - Learning Path Authoring
-  - Publish Customizations
-  - Retrieve Multiple Social Insights
-  - Run Flows
