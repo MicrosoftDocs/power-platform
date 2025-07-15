@@ -4,11 +4,13 @@ description: How access to a record is determined
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 07/15/2025
-author: sericks007
+author: paulliew
 ms.subservice: admin
-ms.author: sericks
+ms.author: paulliew
 ms.reviewer: sericks
-ms.custom: "admin-security"
+ms.custom: 
+  - admin-security
+  - NewPPAC
 search.audienceType: 
   - admin
 ---
