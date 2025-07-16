@@ -50,39 +50,39 @@ The Branch Translation App is simple and powerful. Bank employees speak in Engli
 
 The Branch Translation App significantly improves customer service. It lets Lloyds Banking Group serve a broader range of customers. The app is especially helpful in branches in multicultural areas, where the need for multilingual support is high. By offering this service, Lloyds Banking Group shows its commitment to inclusivity and customer satisfaction, setting a new standard for customer service in the banking industry.
 
-:::image type="content" source="media/lloyds-banking-group/translation-app.png" alt-text="Screenshot of the Branch Translation App interface in use at Lloyds Banking Group, showing multilingual support features." lightbox="media/lloyds-banking-group/translation-app.png":::
+:::image type="content" source="media/lloyds-banking-group/translation-app.png" alt-text="Annotated screenshot of the Branch Translation App interface in use at Lloyds Banking Group, showing multilingual support features." lightbox="media/lloyds-banking-group/translation-app.png":::
 
 The Branch Translation App uses the following workflow:
 
-- Spoken Text pane: The response from the speech service includes the spoken text, which shows in this Power Apps label component.
+- **Spoken Text pane**: The response from the speech service includes the spoken text, which shows in this Power Apps label component.
 
-- Speaker icons: The speaker PCF components connect to the Speech SDK to enable speech synthesis of the spoken and translated text.
+- **Speaker icons**: The speaker PCF components connect to the Speech SDK to enable speech synthesis of the spoken and translated text.
 
-- Translated Text pane: The Speech SDK also returns the translated text, which shows in this Power Apps label component.
+- **Translated Text pane**: The Speech SDK also returns the translated text, which shows in this Power Apps label component.
 
-- Personal Data pane: The language API gets the spoken text to redact all personal data. It then shows the extracted entities in this gallery.
+- **Personal Data pane**: The language API gets the spoken text to redact all personal data. It then shows the extracted entities in this gallery.
 
-- Our Services pane: The spoken text goes to the OpenAI service to get a list of services for the customer, based on what they said.
+- **Our Services pane**: The spoken text goes to the OpenAI service to get a list of services for the customer, based on what they said.
 
-- Microphone icon: Speech is captured by the PCF component, which uses the JavaScript Speech API to communicate with Azure Speech Services.
+- **Microphone icon**: Speech is captured by the PCF component, which uses the JavaScript Speech API to communicate with Azure Speech Services.
 
 ### Components
 
 The architecture of the Branch Translation App consists of several key components that work together to deliver seamless translation services:
 
-- Power Apps: The app uses Microsoft Power Apps, which gives a user-friendly interface for bank employees. Power Apps lets teams develop and deploy apps quickly, so the app rolls out fast across multiple branches.
+- **Power Apps**: The app uses Microsoft Power Apps, which gives a user-friendly interface for bank employees. Power Apps lets teams develop and deploy apps quickly, so the app rolls out fast across multiple branches.
 
-- Azure AI services: The app uses Azure AI services, specifically Azure AI Language and Speech, to handle translation tasks. Language Studio has tools for building and integrating language features, while Speech Studio offers speech-to-text and text-to-speech capabilities.
+- **Azure AI services**: The app uses Azure AI services, specifically Azure AI Language and Speech, to handle translation tasks. Language Studio has tools for building and integrating language features, while Speech Studio offers speech-to-text and text-to-speech capabilities.
 
-- Controls and connectors: The app's core function is real-time translation, which works through the integration of Azure AI Services using connectors and a custom PCF control.
+- **Controls and connectors**: The app's core function is real-time translation, which works through the integration of Azure AI Services using connectors and a custom PCF control.
 
 ### Implementation and deployment
 
 The implementation of the Branch Translation App includes these steps:
 
-- Development and testing: The team developed and tested the app over an eight-week period, showing the efficiency of using Power Apps for rapid app development. The team tested the app to check its accuracy and reliability.
+- **Development and testing**: The team developed and tested the app over an eight-week period, showing the efficiency of using Power Apps for rapid app development. The team tested the app to check its accuracy and reliability.
 
-- Deployment: The team rolled out the app across multiple branches, and each branch employee has access to the app on their workstation. This wide deployment means all customers, regardless of their language, get the same high level of service.
+- **Deployment**: The team rolled out the app across multiple branches, and each branch employee has access to the app on their workstation. This wide deployment means all customers, regardless of their language, get the same high level of service.
 
 The architecture of the Branch Translation App shows the power of combining Microsoft Power Apps with Azure AI services to create innovative solutions that solve real-world challenges. By using these technologies, Lloyds Banking Group improves its ability to serve a diverse customer base and enhance overall customer satisfaction.
 
@@ -123,11 +123,17 @@ The Lloyds Branch Translation App case study shows how Power Apps and Azure AI s
 Here are key takeaways for IT professionals who want to build a similar solution:
 
 - Power Apps lets you easily build the language translation app.
+
 - Power Automate flows integrate the components with the app, including the PCF component, custom REST connectors, and AI Builder.
+
 - AI Builder connects with Azure AI Vision for advanced camera-based visual document processing.
+
 - Azure API Management simplifies the external calls to and from Azure AI Services.
+
 - Azure AI services provide language translation, personal information extraction, speech-to-text generation, text-to-speech generation, visual document processing, and OpenAI-based banking services recommendations.
+
 - Their operational app was ready in eight weeks.
+
 - They greatly enhanced customer communication and satisfaction.
 
 "Colleagues have told us they feel like we have listened to them, when they asked for English-as-a-second-language solutions," Georgette Loring explained.
@@ -151,12 +157,12 @@ By using the right tools, Lloyds Banking Group continues to enhance its operatio
 - [What is Power Apps?](/power-apps/powerapps-overview)
     - [Training for Power Apps](/training/powerplatform/power-apps)
     - [Copilot in Power Apps overview](/power-apps/maker/canvas-apps/ai-overview)
-    - [Microsoft Power Platform Center of Excellence Kit](/power-platform/guidance/coe/starter-kit)
+    - [Microsoft Power Platform Center of Excellence (coE) Starter Kit](/power-platform/guidance/coe/starter-kit)
 - [Overview of AI Builder](/ai-builder/overview)
 - [What is Power Automate?](/power-automate/flow-types)
-    - [Get started with Power Automate](/training/modules/get-started-flows/)
+    - [Get started with Power Automate](/training/modules/get-started-flows/) (training module)
 - [What are Azure AI services?](/azure/ai-services/what-are-ai-services)
     - [What is Azure AI Language?](/azure/ai-services/language-service/overview)
-    - [Develop natural language processing solutions with Azure AI services](/training/paths/develop-language-solutions-azure-ai/)
+    - [Develop natural language processing solutions in Azure](/training/paths/develop-language-solutions-azure-ai/) (training path)
     - [What is the Speech service?](/azure/ai-services/speech-service/overview)
-    - [Speech Studio overview](/azure/ai-services/speech-service/speech-studio-overview)
+    - [What is Speech Studio?](/azure/ai-services/speech-service/speech-studio-overview)
