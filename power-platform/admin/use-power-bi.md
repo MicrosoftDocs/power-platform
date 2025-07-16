@@ -39,7 +39,8 @@ To learn more about how to add Power BI tiles to personal dashboards, see [Embed
 To learn more about how to add Power BI dashboards to personal dashboards, see [Add a Power BI dashboard on your personal dashboard](/powerapps/user/add-powerbi-dashboards).  
 
 ## Get support for Power BI
-Though you administer Power BI from the [Power BI admin portal](https://app.powerbi.com/), you request support for Power BI through [Help + Support](get-help-support.md) in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+Though you administer Power BI from the [Power BI admin portal](https://app.powerbi.com/), you request support for Power BI through [Support](get-help-support.md) in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
   
 ### See also  
