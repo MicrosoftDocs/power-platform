@@ -5,9 +5,9 @@ services: powerapps
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 07/16/2025
-author: srpoduri 
+author: isaacwinoto 
 ms.subservice: admin
-ms.author: sripod
+ms.author: isaacwinoto
 ms.reviewer: sericks
 search.audienceType: 
   - admin
