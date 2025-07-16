@@ -7,16 +7,16 @@ ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 07/15/2025
+ms.date: 07/16/2025
 ---
 
 # Rabobank embraces conversational banking with Copilot Studio
 
-Rabobank is a multinational banking and financial services company based in the Netherlands. As part of its mission to grow a better world together, Rabobank has embraced conversational banking&mdash;prioritized friendly and efficient customer service on demand, in alignment with the company's principles of cooperation and putting people first.  
+Rabobank is a multinational banking and financial services company based in the Netherlands. As part of its mission to grow a better world together, Rabobank has embraced conversational banking&mdash;prioritizing friendly and efficient customer service on demand, in alignment with the company's principles of cooperation and putting people first.  
 
 In this case study, you learn how to:
 
-- Use Copilot Studio to help bank customers
+- Use Copilot Studio to assist bank customers
 - Continuously improve intent recognition
 - Anonymize customer conversations for testing
 - Use generative AI features and stay compliant
@@ -54,17 +54,17 @@ The following image shows the text-based agent embedded on Rabobank's website.
 
 ## Implementation approach
 
-Rabobank migrated from its previous platform to Microsoft Copilot Studio. The implementation included migration of topics. Setting up the Copilot Studio agents was a straightforward process, with the text-based agents created and deployed within just three months.
+Rabobank migrated from its previous platform to Copilot Studio. The implementation included migration of topics. Setting up the Copilot Studio agents was a straightforward process, with the text-based agents created and deployed within just three months.
 
 To provide escalation to human live agents, Rabobank chose Genesys Cloud. With no native integration between Genesys Cloud and Copilot Studio, the team built custom middleware to bridge the gap.
 
 Specific processes were integrated with APIs, mainly using Power Automate and HTTP calls. For customer inquiries that can't be solved, fallback topics are invoked, which rely on generative AI.
 
-Challenges faced during implementation included improving intent recognition and overcoming barriers related to using generative AI features.
+Challenges faced during implementation included [improving intent recognition](#intent-recognition), [managing communication between Genesys Cloud and Copilot Studio](#genesys-cloud-and-copilot-studio-integration), and [overcoming barriers related to using generative AI features](#generative-ai-features).
 
 ### Intent recognition
 
-Rabobank found intent recognition essential for creating successful agents. If the voice-enabled agent doesn't understand the intent, it might route the call to the wrong advisor. Likewise, a text-based agent that doesn't understand the customer's intent isn't able to help that customer.
+Rabobank finds intent recognition essential for creating successful agents. If the voice-enabled agent doesn't understand the intent, it might route the call to the wrong advisor. Similarly, a text-based agent that doesn't understand the customer's intent isn't able to help that customer.
 
 Rabobank plans to work on improving intent recognition and put a process in place to find areas for improvement and methods to properly test the changes.
 
@@ -73,7 +73,7 @@ The intent recognition process includes:
 - Genesys Cloud and Pega Business Rules
 - An external intent catalog, based on TIBCO EBX
 - Copilot Studio topics and specified trigger phrases
-- Escalation to the appropriate live agent's queue for the voice enabled chatbot
+- Escalation to the appropriate live agent's queue for the voice-enabled chatbot
 
 All calls and text inquiries start in Genesys Cloud. The voice-enabled agent focuses on intent recognition to route calls to the correct team, whereas the text-based agent solves more end-to-end processes.
 
@@ -82,9 +82,9 @@ designed to solve entire end-to-end processes, such as blocking a credit card.
 
 ### Genesys Cloud and Copilot Studio integration
 
-Genesys Cloud and Copilot Studio lack native interoperability, so Rabobank uses custom-built middleware to manage communication. For text-based agents, a Java application manages translation between systems. For voice-enabled agents, AudioCodes handles translation, while Azure Speech to Text and Text to Speech process the interaction.
+Genesys Cloud and Copilot Studio lack native interoperability, so Rabobank uses custom-built middleware to manage communication. For text-based agents, a Java application manages translation between the systems. For voice-enabled agents, AudioCodes handles translation, while Azure Speech to Text and Text to Speech process the interaction.
 
-Rabobank is working to strengthen their voice branding by making their voice-enabled bot sound more natural. They're exploring the possibility of using a voice that is a good fit for their brand. The process involves inviting the chosen individual into a studio to create a synthetic voice, which will then be integrated into Azure AI Speech services.
+Rabobank plans to strengthen its voice branding by making their voice-enabled bot sound more natural. They're exploring the possibility of using a voice that is a good fit for their brand. The process involves inviting the chosen individual into a studio to create a synthetic voice, which will then be integrated into Azure AI Speech services.
 
 ### Generative AI features
 
@@ -100,7 +100,7 @@ Their decision is driven by three key factors:
 
 Rabobank uses generative AI in their fallback topics when the agent can't answer a question. However, the setup resides outside Copilot Studio.
 
-They currently use Azure AI Foundry to deploy AI models, within their own Azure subscription to ensure compliance, which is important to Rabobank. To use generative AI in SaaS products, certain approvals are required. Deploying models in their own Azure subscription is a more efficient way to use generative AI.
+They currently use Azure AI Foundry to deploy AI models, within their own Azure subscription to ensure compliance, which is important to Rabobank. To use generative AI in SaaS (Software as a Sevice) products, certain approvals are required. Deploying models in their own Azure subscription is a more efficient way to use generative AI.
 
 An Azure Function is called from the agent's fallback topic, through an HTTP call, including the conversation ID and bot ID. It performs the following functions:
 
@@ -140,7 +140,6 @@ This solution uses the following technologies:
   - Power BI to track conversation success
 - Azure services:
   - Azure AI Search for more accurate information retrieval from Rabobank's website
-  - Azure OpenAI for generative AI capabilities
   - Azure AI Foundry as a compliant generative AI enabler that uses specific AI models
   - Azure AI Speech service for the voice-enabled agent
 
@@ -157,9 +156,9 @@ For voice-enabled interactions:
 1. A customer calls and the call lands in Genesys Cloud.
 1. The conversation redirects to the Copilot Studio agent. AudioCodes manages translations.
 1. Azure Speech-to-Text translates the message.
-1. The Copilot Studio agent authenticates the customer and managed intent recognition. The conversation is labeled by intent.
+1. The Copilot Studio agent authenticates the customer and manages intent recognition. The conversation is labeled by intent.
 1. The text output from the agent is converted into speech using Azure Text-to-Speech before it's delivered to the customer.
-1. In Genesys Cloud, Pega business rules use parameters (like business area and intent in the external intent catalog) to determine to which live agent queue to redirect the conversation.
+1. In Genesys Cloud, Pega Business Rules use parameters (like business area and intent in the external intent catalog) to determine to which live agent queue to redirect the conversation.
 
 For text-enabled interactions, the process is similar. A customer starts a chat and it lands in Genesys Cloud (A). The chat redirects to the Copilot Studio agent, which uses topics for intent recognition and management of end-to-end processes (B). Fallback topics use generative AI to better answer customer inquiries (not shown).
 
@@ -172,6 +171,7 @@ Rabobank's transition to Microsoft Copilot Studio demonstrates how you can use C
 - Consider different approaches when seeking approvals to use generative AI in SaaS products.
 
 With the migration to Copilot Studio, Rabobank has improved customer experience through faster response times and more accurate answers:
+
 - 20,000 daily calls and 7,000 daily chats
 - 62 percent self-service rate for chats (that is, not escalated to live agents)
 
