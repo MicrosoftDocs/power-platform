@@ -94,9 +94,9 @@ To clear all filters and sorts, select any column and select **Clear all filters
 
 ### Why am I seeing multiple agents with identical names&mdash;for example, _Copilot in Power Apps_&mdash;across different environments?
 
-Power Apps been has creating a platform-owned agent named **Copilot in Power Apps** in each environment but is no longer being created in new environments. The admin setting "Copilot in Power Apps (Preview)" has no impact the creation of this agent.
+Power Apps has been creating a platform-owned agent named **Copilot in Power Apps** in each environment but is no longer being created in new environments. The admin setting "Copilot in Power Apps (Preview)" has no impact the creation of this agent.
 
-This agent will be removed in the future since we are now using maker created agents associated with a model apps. It is only editable by a Power Platform admin and isn't published to any channels by default. Although this agent can be viewed in Copilot Studio, this agent shouldn't be edited since it's not being used by model-driven apps. Learn more in [Customize Copilot chat using Copilot Studio](/power-apps/maker/model-driven-apps/customize-copilot-chat). It can be manually removed instead of waiting for the removal from an upcoming solution update.
+This agent will be removed in the future since we are now using maker created agents associated with model apps. It is only editable by a Power Platform admin and isn't published to any channels by default. Although this agent can be viewed in Copilot Studio, this agent shouldn't be edited since it's not being used by model-driven apps. Learn more in [Customize Copilot chat using Copilot Studio](/power-apps/maker/model-driven-apps/customize-copilot-chat). It can be manually removed instead of waiting for the removal from an upcoming solution update.
 
 This agent is similar to other standard, preinstalled, model-driven apps such as the Power Platform Environment Settings.
 
