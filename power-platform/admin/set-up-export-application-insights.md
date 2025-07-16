@@ -32,7 +32,7 @@ Learn how to export data to Application Insights from the Power Platform admin c
   > [!NOTE]
    > This feature is turned on and supported for Managed Environments only.
 
-- To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you must be a member of the Power Platform admin or Dynamics 365 admin role.
+- To configure telemetry export, the user must have administrative privileges. This includes being assigned the Power Platform Admin or Dynamics 365 Admin role at the tenant level in Azure Active Directory, or having the Environment Admin or System Administrator role within the Dataverse environment. Without these permissions, the integration cannot be enabled.
   
     > [!IMPORTANT] 
     > The Application Insights exporting functionality for Power Automate and Dynamics 365 Customer Service is in public preview in all public sovereign geos.  Power Automate and Dynamics 365 Customer Service functionality in public preview is not available in Government Community Cloud (GCC) or Government Community Cloud - High (GCC High) sovereign clouds.
@@ -60,14 +60,21 @@ Learn how to export data to Application Insights from the Power Platform admin c
 1. Select the environment that you're exporting data _from_. You can choose to filter based on the environment type. Select **Next**.
 
 1. Select the Azure subscription, resource group, and Application Insights environment that you're exporting data _to_. Select **Next**.
-
-    You must have contributor, writer, or admin rights to the Application Insights environment. Typically, one production environment or tenant maps to one Application Insights environment. 
+   > [!NOTE]
+    > Confirm that you have **Contributor** or **Owner** access to the Azure Application Insights resource you intend to use. If you don’t, ask an Azure administrator to grant you access, or create a new Application Insights instance that you own. Typically, one production environment or tenant maps to one Application Insights environment.
 
 1. Review the details that you entered for the new export package, and then select **Create** to set up the data export connection. 
 
    The data export connection should now be set up. Within the next 24 hours, data will start being exported to your Application Insights environment.
 
    :::image type="content" source="media/Step5a_AppInsights.png" alt-text="Data export success.":::
+
+### Troubleshooting for missing telemetry 
+If no data appears in Application Insights within 24 hours of setup, verify the following:
+- The integration was enabled by a user with the required permissions (e.g., Power Platform Admin, Dynamics 365 Admin, or Environment/System Administrator).
+- The correct Application Insights instrumentation key was applied.
+
+A common cause of missing telemetry is insufficient permissions during setup.
 
 ## Delete an export package
 
