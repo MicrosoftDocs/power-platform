@@ -12,21 +12,21 @@ ms.date: 07/16/2025
 
 # Lloyds Banking Group bridges language barriers with Power Apps and Azure AI Services 
 
-In this article, you learn how [Lloyds Banking Group](https://www.lloydsbank.com/), the UK's largest digital bank, uses Microsoft Power Apps and Azure AI services to bridge language barriers by enabling real-time and seamless translation between English and the customer's chosen language. 
+In this article, you learn how [Lloyds Banking Group](https://www.lloydsbank.com/), the UK's largest digital bank, uses Microsoft Power Apps and Azure AI services to bridge language barriers by enabling real-time and seamless translation between English and the customer's preferred language. 
 
-The organization serves 28 million customers through a wide range of channels, including about 1,500 retail branches, online and digital channels, telephony, and mobile services. Lloyds Banking Group has made a strategic commitment to Microsoft Power Platform, to modernize its applications and create a more sustainable, inclusive, and accessible future for customers and businesses.
-
-## Challenges
-
-According to the UK census, 9% of the population doesn't speak English as their first language, and 161,000 people lack English skills.
-
-"We wanted to bring the group together and come up with a solution for customers to communicate with us in their preferred language," explained Georgette Loring, Assistant Manager of Group Customer Inclusion at Lloyds Banking Group.
-
-Lloyds Banking Group understands that using modern AI to create an app where language doesn't matter increases diversity and equity, and creates many more banking opportunities for people in the UK.
+The organization serves 28 million customers through a wide range of channels, including approximately 1,500 retail branches, online and digital channels, telephony, and mobile services. Lloyds Banking Group has made a strategic commitment to Microsoft Power Platform, to modernize its applications and create a more sustainable, inclusive, and accessible future for customers and businesses.
 
 > About four years ago, we were looking at automation tools. We came across Microsoft Power Platform and realized it perfectly suited our identified needs."
 >
 > — *Vickie Evans, Engineering Lead for the Center of Excellence at Lloyds Banking Group*
+
+## Challenges
+
+According to the UK census, 9 percent of the population doesn't speak English as their first language, and 161,000 people lack English skills.
+
+"We wanted to bring the group together and come up with a solution for customers to communicate with us in their preferred language," explained Georgette Loring, Assistant Manager of Group Customer Inclusion at Lloyds Banking Group.
+
+Lloyds Banking Group understands that using modern AI to create an app where language doesn't matter increases diversity and equity, and creates many more banking opportunities for people in the UK.
 
 ## Solution
 
@@ -38,7 +38,7 @@ By using Power Apps, Azure AI services, and custom PCF controls, Lloyds is showc
 
 ### Center of Excellence
 
-To support widespread adoption and effective use of Power Platform, Lloyds Banking Group set up a Center of Excellence, using the [Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/starter-kit) for optimal governance. This center comprises over 12 specialists and 65 Power Hubs across various functions within the group. These hubs empower over 1,400 business developers to work on the platform, which fosters a culture of innovation and collaboration, and enables the development of multiple applications and automated solutions across the organization.
+To support widespread adoption and effective use of Power Platform, Lloyds Banking Group set up a Center of Excellence, using the [Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/starter-kit) for optimal governance. This center includes over 12 specialists and 65 Power Hubs across various functions within the group. These hubs empower over 1,400 business developers to work on the platform, which fosters a culture of innovation and collaboration, and enables the development of multiple applications and automated solutions across the organization.
 
 Feedback from using Power Platform is overwhelmingly positive. Employees say they feel heard and supported, especially with solutions like the Branch Translation App. Additionally, the group's success stories underscore the platform's robustness and scalability. These initiatives have not only improved customer service but also positioned Lloyds Banking Group among the leaders in using technology to enhance banking experiences.
 
@@ -62,13 +62,13 @@ The Branch Translation App is composed of four panes, together with speaker and 
 
 - **Our Services pane**: The spoken text is sent to the OpenAI service to retrieve a list of relevant banking services for the customer, based on the spoken input.
 
-- **Microphone icon**: Speech is captured by the PCF component, which uses the JavaScript Speech API to communicate with Azure Speech Services.
+- **Microphone icon**: Speech is captured by the PCF component, which uses a JavaScript Speech API to communicate with Azure Speech Services.
 
 ## Components
 
 The architecture of the Branch Translation App consists of several key components that work together to deliver seamless translation services:
 
-- **Power Apps**: The app is built using Microsoft Power Apps, which provides a user-friendly interface for bank employees. Power Apps enables rapid development and deployment, enabling the app to be quickly rolled out across multiple branches.
+- **Power Apps**: The app is built using Microsoft Power Apps, which provides a user-friendly interface for bank employees. Power Apps enables rapid development and deployment, enabling quick rollout across multiple branches.
 
 - **Azure AI services**: The app uses Azure AI services, specifically Azure AI Language and Speech, to handle translation tasks. Language Studio provides tools for building and integrating language features, while Speech Studio offers speech-to-text and text-to-speech capabilities.
 
@@ -86,7 +86,7 @@ The implementation of the Branch Translation App involved several steps to ensur
 
 The architecture of the Branch Translation App showcases the power of combining Microsoft Power Apps with Azure AI services to create innovative solutions that solve real-world challenges. By leveraging these technologies, Lloyds Banking Group has improved its ability to serve a diverse customer base and enhance overall customer satisfaction.
 
-:::image type="content" source="media/lloyds-banking-group/arch.png" alt-text="Diagram illustrating the high-level app architecture and components for the Lloyds Banking Group Branch Translation App, with the left side representing the app's front-end and orchestration, and the right side illustrating the AI services that power its functionality." lightbox="media/lloyds-banking-group/arch.png":::
+:::image type="content" source="media/lloyds-banking-group/arch.png" alt-text="Diagram illustrating the high-level app architecture and components for the Lloyds Branch Translation App, with the left side representing the app's front-end and orchestration, and the right side illustrating the AI services that power its functionality." lightbox="media/lloyds-banking-group/arch.png":::
 
 The high-level flow of the Branch Translation App is as follows:
 
@@ -94,7 +94,7 @@ The high-level flow of the Branch Translation App is as follows:
 
 1. Power Automate flows send information from the PCF Component, the Connectors, and AI Builder to the Power Apps application.
 
-1. The PCF Component uses a JavaScript SDK to send a request and response through Azure API Management and to receive translation and personal-information extraction from the Azure AI Language service.
+1. The PCF Component uses a JavaScript SDK to send a request and response through Azure API Management and to receive translation and personal information (PII) extraction from the Azure AI Language service.
 
 1. The Connectors send a custom REST request through API Management to receive OpenAI-powered banking service recommendations and AI Language translations, which are then sent back with a JSON response.
 
@@ -102,7 +102,7 @@ The high-level flow of the Branch Translation App is as follows:
 
 The following flow diagram illustrates the speech translation process.
 
-:::image type="content" source="media/lloyds-banking-group/speech-translation.png" alt-text="Flow diagram illustrating the speech translation process in the Lloyds Banking Group Branch Translation App." lightbox="media/lloyds-banking-group/speech-translation.png":::
+:::image type="content" source="media/lloyds-banking-group/speech-translation.png" alt-text="Flow diagram illustrating the speech translation process in the Lloyds Branch Translation App." lightbox="media/lloyds-banking-group/speech-translation.png":::
 
 The user flow is seamless, intuitive, and emphasizes accuracy:
 
@@ -126,7 +126,7 @@ The Lloyds Branch Translation App case study demonstrates the potential of using
 
 - Azure AI services provide language translation, personal information extraction, speech-to-text generation, text-to-speech generation, visual document processing, and OpenAI-based banking services recommendations.
 
-The Lloyds Branch Translation App became operational in eight weeks, improving customer communication and satisfaction in record time. 
+The Lloyds Branch Translation App became operational in just eight weeks, improving customer communication and satisfaction in record time. 
 
 "Colleagues have told us they feel like we have listened to them, when they asked for English-as-a-second-language solutions," Georgette Loring explained.
 
