@@ -1,5 +1,5 @@
 ---
-title: View event logs and error logs (preview)
+title: View event logs and error logs
 description: Learn how to use event logs and error logs to help with operational health analysis.
 ms.subservice: admin
 ms.component: pa-admin
@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# View event logs and error logs (preview)
+# View event logs and error logs
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
@@ -27,7 +27,7 @@ All metrics that are part of the monitoring experience can be accessed on the **
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Monitor**.
 1. In the **Monitor** section, select **Logs**.
-1. On the **Logs (preview)** page, follow these steps:
+1. On the **Logs** page, follow these steps:
 
     1. Select a resource.
     1. Select a metric.
