@@ -48,8 +48,6 @@ The control with focus may be visually different based on the [**FocusedBorderCo
 
 You cannot set the focus to controls that are within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) control, [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, or [Component](/power-apps/maker/canvas-apps/create-component). **SetFocus** can be used with a control in a scrollable screen.
 
-You cannot set the focus to controls that are within a [**Container**](/power-apps/maker/canvas-apps/controls/control-container) control.
-
 You can only set the focus to controls on the same screen as the formula containing the **SetFocus** call.
 
 Attempting to set the focus to a control that has its [**DisplayMode**](/power-apps/maker/canvas-apps/controls/properties-core) property set to **Disabled** has no effect. Focus will remain where it was previously.
@@ -107,7 +105,7 @@ When validating a form, it can be helpful to not only display a message if there
 
 ![An animation of validating a data entry form and having not only a message displayed but also setting the input focus to the offending input control, even if it is scrolled off the screen.](media/function-setfocus/scrollable-screen.gif)
 
-In this animation, the validation button is repeatedly pressed until all the fields have been filled in properly. Note that the mouse pointer doesn't move down from the top of the screen. Instead the **SetFocus** function hsa moved the input focus to the control that requires attention with this formula:
+In this animation, the validation button is repeatedly pressed until all the fields have been filled in properly. Note that the mouse pointer doesn't move down from the top of the screen. Instead the **SetFocus** function has moved the input focus to the control that requires attention with this formula:
 
 ```power-fx
 If( IsBlank( Name ),
