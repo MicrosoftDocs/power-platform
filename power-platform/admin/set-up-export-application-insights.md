@@ -45,7 +45,7 @@ Export data to Application Insights from the Power Platform admin center.
 
 ## Create an export package
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Data export** in the navigation pane.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Manage** from the navigation pane, then under that section, choose **Data export**.
 
 1. On the **Data export** page, select the **App Insights** tab. Then select **New data export**.
 
@@ -80,7 +80,7 @@ A common cause of missing telemetry is insufficient permissions during setup.
 
 ## Delete an export package
 
-1. In the Power Platform admin center, select **Data export** in the navigation pane.
+1. In the Power Platform admin center, select **Manage** from the navigation pane, then under that section, choose **Data export**.
 
 1. On the **Data export** page, select the **App Insights** tab. 
 
