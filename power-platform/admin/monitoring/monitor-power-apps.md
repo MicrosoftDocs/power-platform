@@ -41,7 +41,10 @@ Power Apps operational health metrics and recommendations are available in the n
 |Canvas apps | App open success rate| A percentage that describes how often end users are able to successfully open the app. | Generally available |
 |Canvas apps| Time to interactive (TTI)| The time (in seconds) that end users have to wait to interact with the first screen that's displayed after the app opens. | Generally available |
 |Canvas apps| Time to full load (TTFL) | The time (in seconds) that end users have to wait to have all the data requests for the first screen that's displayed after the app opens. | Generally available |
-
+|Canvas apps| App session count | The number of distinct user sessions in a canvas app in one day. A session begins when a user opens the app and ends after a period of inactivity or when the app is closed | Generally available |
+|Model-driven apps | App open success rate| A percentage that describes how often end users are able to successfully open the app. | Generally available |
+|Model-driven apps| App session count | The number of distinct user sessions in a model-driven app in one day. A session begins when a user opens the app and ends after a period of inactivity or when the app is closed | Generally available |
+|Model-driven apps | Row summary dwell time| The time (in seconds) that end users spend on the expanded AI row summary of a main form. | Preview |
 
 ### Metric and recommendation pairings
 | Metric | Secondary metric | Title of recommendation | Description of recommendation |
@@ -49,6 +52,7 @@ Power Apps operational health metrics and recommendations are available in the n
 | App Open Success Rate | ErrorCode = AppForbidden | Evaluate if the app should be shared with users without permission | X% of sessions ended without users accessing the app because users didn't have permission to access the app. It's possible that the app may benefit from being shared with more users. The logs show which users&mdash;without permissions&mdash;are attempting to open the app. |
 | Time to interactive | Not applicable | Users wait longer to access the app due to high App.OnStart latencies | App.OnStart durations impact end-user wait times to access an app. Evaluate simplifying Power Fx in App.OnStart and moving some Power Fx to App.Formulas. |
 | Time to full load | Not applicable | Users wait longer to see data in the app due to many data requests during app start up | More data requests correlate with longer end-user wait times to meaningfully use an app. Evaluate reducing data calls in App.OnStart and screen.OnVisible and move Power Fx to App.Formulas. |
+| Row summary dwell time | Not applicable | Users may not be engaging fully with row summaries | Improve summaries by adjusting the summary prompt for the X table. Summary details that are seen for at least 10 seconds correlates with increased engagement and higher user satisfaction. |
 
 ## Monitoring experiences for makers
 
