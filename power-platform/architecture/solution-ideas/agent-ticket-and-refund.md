@@ -1,7 +1,7 @@
 ---
 title: Ticket management system with Copilot Studio agents
 description: Explore a cinema company's use of Copilot Studio agents to automate ticket management and optimize customer service.
-#customer intent: As a Power Platform user, I want to explore an example implementation that uses Copilot Studio agents so that I can gain insights into improving my own organization's customer and employee experiences.
+#customer intent: As a business decision maker, I want to explore an example implementation that uses Copilot Studio agents so that I can gain insights into improving my own organization's customer and employee experiences.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
