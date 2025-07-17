@@ -54,11 +54,11 @@ The Branch Translation App is composed of four panes, together with speaker and 
 
 - **Spoken Text pane**: The response from the speech service includes the original English input.
 
-- **Speaker icons**: The speaker PCF components connect to the Speech SDK to enable speech synthesis of the spoken and translated text.
+- **Speaker icons**: The speaker PCF components connect to the Speech JavaScript SDK to enable speech synthesis of the spoken and translated text.
 
-- **Translated Text pane**: The Speech SDK also returns the translation of the spoken input.
+- **Translated Text pane**: The Speech JavaScript SDK also returns the translation of the spoken input.
 
-- **Personal Data pane**: The language API is called to redact all personal data from the spoken text. Extracted entities are displayed.
+- **Personal Data pane**: The Language API is called to redact all personal data from the spoken text. Extracted entities are displayed.
 
 - **Our Services pane**: The spoken text is sent to the OpenAI service to retrieve a list of relevant banking services for the customer, based on the spoken input.
 
@@ -92,9 +92,9 @@ The high-level flow of the Branch Translation App is as follows:
 
 1. Power Apps provides a user-friendly interface. 
 
-1. Power Automate flows send information from the PCF Component, the Connectors, and AI Builder to the Power Apps application.
+1. Power Automate flows send information from the PCF component, the Connectors, and AI Builder to the Power Apps application.
 
-1. The PCF Component uses a JavaScript SDK to send a request and response through Azure API Management and to receive translation and personal information (PII) extraction from the Azure AI Language service.
+1. The PCF component uses a JavaScript SDK to send a request and response through Azure API Management and to receive translation and personal information (PII) extraction from the Azure AI Language service.
 
 1. The Connectors send a custom REST request through API Management to receive OpenAI-powered banking service recommendations and AI Language translations, which are then sent back with a JSON response.
 
@@ -107,9 +107,9 @@ The following flow diagram illustrates the speech translation process.
 The user flow is seamless, intuitive, and emphasizes accuracy:
 
 1. The user selects the microphone button to speak into the device.
-1. The Power Apps application initializes the PCF Component and sends the recorded audio.
-1. The PCF Component initializes the Speech JavaScript SDK and sends the voice file to Azure AI services to analyze and translate the audio.
-1. Azure AI services return the translated results to the Speech JavaScript SDK and to the PCF Component, which then updates the parameters around the data.
+1. The Power Apps application initializes the PCF component and sends the recorded audio.
+1. The PCF component initializes the Speech JavaScript SDK and sends the voice file to Azure AI services to analyze and translate the audio.
+1. Azure AI services return the translated results to the Speech JavaScript SDK and to the PCF component, which then updates the parameters around the data.
 1. The Power Apps application renders the results to the user.
 
 ## Key takeaways
@@ -118,7 +118,7 @@ The Lloyds Branch Translation App case study demonstrates the potential of using
 
 - Power Apps simplified the process of building apps, in this case a language translation app.
 
-- Power Automate flows integrate the various components with the app, including the PCF Component, custom REST connectors, and AI Builder.
+- Power Automate flows integrate the various components with the app, including the PCF component, custom REST connectors, and AI Builder.
 
 - AI Builder provides simple communication with the Azure AI Vision service for advanced camera-based visual document processing.
 
