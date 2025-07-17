@@ -1,5 +1,5 @@
 ---
-title: Metrics and recommendations for Power Apps (preview)
+title: Metrics and recommendations for Power Apps
 description: Learn more about the metrics and recommendations for Power Apps.
 ms.subservice: admin
 ms.component: pa-admin
@@ -16,7 +16,7 @@ contributors:
   - trdehove
 ---
 
-# Metrics and recommendations for Power Apps (preview)
+# Metrics and recommendations for Power Apps
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
@@ -31,16 +31,16 @@ Power Apps operational health metrics and recommendations are available in the n
  1. In the navigation pane, select **Monitor**.
  1. In the **Monitor** pane, under **Products**, select **Power Apps**.
 
-    The **Power Apps (preview)** page displays the metrics and recommendations.
+    The **Power Apps** page displays the metrics and recommendations.
 
 ## Power Apps metrics and recommendations
 
 ### Metric definitions
-|Type | Metric | Definition |
-|---|---|---|
-|Canvas apps | App open success rate| A percentage that describes how often end users are able to successfully open the app. |
-|Canvas apps| Time to interactive (TTI)| The time (in seconds) that end users have to wait to interact with the first screen that's displayed after the app opens. |
-|Canvas apps| Time to full load (TTFL) | The time (in seconds) that end users have to wait to have all the data requests for the first screen that's displayed after the app opens. |
+|Type | Metric | Definition | Support |
+|---|---|---|---|
+|Canvas apps | App open success rate| A percentage that describes how often end users are able to successfully open the app. | Generally available |
+|Canvas apps| Time to interactive (TTI)| The time (in seconds) that end users have to wait to interact with the first screen that's displayed after the app opens. | Generally available |
+|Canvas apps| Time to full load (TTFL) | The time (in seconds) that end users have to wait to have all the data requests for the first screen that's displayed after the app opens. | Generally available |
 
 
 ### Metric and recommendation pairings
