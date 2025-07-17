@@ -52,15 +52,13 @@ Export data to Application Insights from the Power Platform admin center.
 
 1. On the **Data export** page, select the **App Insights** tab. Then select **New data export**.
 
-1. Provide a friendly name of the export package to identify the Azure Application Insights instance. Then select the specific data type you would like to export, such as **Dataverse diagnostics and performance** or **Power Automate**.
+1. Select the specific data type you would like to export, such as **Dataverse diagnostics and performance**, **Power Apps**, or **Power Automate**.
    
    If you select **Power Automate**, select whether to export cloud flow runs, triggers, and/or actions.
 
 1. Select one or more filters that allow you to view specific, filtered data.
    
    :::image type="content" source="media/dataverse-app-insights-filter.png" alt-text="Data filter experience.":::
-   
-1. Select the environment that you're exporting data _from_. You can choose to filter based on the environment type. Select **Next**.
 
 1. Select the Azure subscription, resource group, and Application Insights environment that you're exporting data _to_. Select **Next**.
 
@@ -78,15 +76,13 @@ Export data to Application Insights from the Power Platform admin center.
 1. In the navigation pane, expand **Analytics**. Then select **Data export**.
 1. On the **Data export** page, select the **App Insights** tab. Then select **New data export**.
 
-1. Provide a friendly name of the export package to identify the Azure Application Insights instance. Then select the specific data type you would like to export, such as **Dataverse diagnostics and performance** or **Power Automate**.
+1. Select the specific data type you would like to export, such as **Dataverse diagnostics and performance**, **Power Apps**, or **Power Automate**.
    
    If you select **Power Automate**, select whether to export cloud flow runs, triggers, and/or actions.
 
 1. Select one or more filters that allow you to view specific, filtered data.
    
    :::image type="content" source="media/dataverse-app-insights-filter.png" alt-text="Data filter experience.":::
-   
-1. Select the environment that you're exporting data _from_. You can choose to filter based on the environment type. Select **Next**.
 
 1. Select the Azure subscription, resource group, and Application Insights environment that you're exporting data _to_. Select **Next**.
 
