@@ -1,5 +1,5 @@
 ---
-title: Metrics and recommendations for Power Automate (preview)
+title: Metrics and recommendations for Power Automate
 description: Learn more about the metrics and recommendations for Power Automate.
 ms.subservice: admin
 ms.component: pa-admin
