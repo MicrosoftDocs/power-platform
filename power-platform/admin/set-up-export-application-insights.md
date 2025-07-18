@@ -19,7 +19,7 @@ contributors:
 
 # Export data to Application Insights 
 
-Export data to Application Insights from the Power Platform admin center.
+Learn how to set up data export from the Power Platform admin center to Application Insights for monitoring and analyzing your Power Platform applications. This guide walks you through the complete setup process, from prerequisites to configuration.
 
 ## Prerequisites
 
