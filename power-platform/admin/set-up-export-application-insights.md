@@ -7,6 +7,7 @@ ms.topic: how-to
 ms.date: 07/18/2025
 author: isaacwinoto 
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: isaacwinoto
 ms.reviewer: sericks
 search.audienceType: 
@@ -17,8 +18,6 @@ contributors:
 ---
 
 # Export data to Application Insights 
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Export data to Application Insights from the Power Platform admin center.
 
@@ -57,8 +56,6 @@ Export data to Application Insights from the Power Platform admin center.
    If you select **Power Automate**, select whether to export cloud flow runs, triggers, and/or actions.
 
 1. Select one or more filters that allow you to view specific, filtered data.
-   
-   :::image type="content" source="media/dataverse-app-insights-filter.png" alt-text="Data filter experience.":::
 
 1. Select the environment that you're exporting data _from_. You can choose to filter based on the environment type. Select **Next**.
   
@@ -71,8 +68,6 @@ Export data to Application Insights from the Power Platform admin center.
 
    The data export connection should now be set up. Within the next 24 hours, data starts being exported to your Application Insights environment.
 
-   :::image type="content" source="media/Step5a_AppInsights.png" alt-text="Data export success.":::
-
 ### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, expand **Analytics**. Then select **Data export**.
@@ -83,8 +78,6 @@ Export data to Application Insights from the Power Platform admin center.
    If you select **Power Automate**, select whether to export cloud flow runs, triggers, and/or actions.
 
 1. Select one or more filters that allow you to view specific, filtered data.
-   
-   :::image type="content" source="media/dataverse-app-insights-filter.png" alt-text="Data filter experience.":::
 
 1. Select the environment that you're exporting data _from_. You can choose to filter based on the environment type. Select **Next**.
 
@@ -96,8 +89,6 @@ Export data to Application Insights from the Power Platform admin center.
 1. Review the details that you entered for the new export package, and then select **Create** to set up the data export connection. 
 
    The data export connection should now be set up. Within the next 24 hours, data starts being exported to your Application Insights environment.
-
-   :::image type="content" source="media/Step5a_AppInsights.png" alt-text="Data export success.":::
 ---
 
 
