@@ -53,7 +53,7 @@ Learn how to set up data export from the Power Platform admin center to Applicat
 
 1. Provide a friendly name of the export package to identify the Azure Application Insights instance. Then select the specific data type you would like to export, such as **Dataverse diagnostics and performance** or **Power Automate**.
    
-   If you select **Power Automate**, select whether to export cloud flow runs, triggers, and/or actions.
+   If you select **Power Automate**, select whether to export cloud flow runs, triggers, or actions.
 
 1. Select one or more filters that allow you to view specific, filtered data.
 
@@ -75,7 +75,7 @@ Learn how to set up data export from the Power Platform admin center to Applicat
 
 1. Provide a friendly name of the export package to identify the Azure Application Insights instance. Then select the specific data type you would like to export, such as **Dataverse diagnostics and performance** or **Power Automate**.
    
-   If you select **Power Automate**, select whether to export cloud flow runs, triggers, and/or actions.
+   If you select **Power Automate**, select whether to export cloud flow runs, triggers, or actions.
 
 1. Select one or more filters that allow you to view specific, filtered data.
 
@@ -106,7 +106,7 @@ A common cause of missing telemetry is insufficient permissions during setup.
 ### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
-1. then under that section, choose **Data export**.
+1. Then under that section, choose **Data export**.
 
 1. On the **Data export** page, select the **App Insights** tab. 
 
