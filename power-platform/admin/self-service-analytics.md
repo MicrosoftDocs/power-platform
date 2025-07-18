@@ -13,8 +13,8 @@ contributors:
 search.audienceType: 
   - admin
 ms.contributors:
+  - johnev
 ms.custom: sfi-ga-blocked
-- johnev
 ---
 
 # Set up Microsoft Power Platform self-service analytics to export inventory and usage data (preview)

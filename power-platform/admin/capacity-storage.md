@@ -10,13 +10,13 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
+  - olegovanesyan
+  - ianceicys-msft 
+  - amiyapatr-zz
+  - pnghub
 ms.custom:
   - NewPPAC
   - sfi-ga-nochange
-- olegovanesyan
-- ianceicys-msft 
-- amiyapatr-zz
-- pnghub
 ---
 
 # Dataverse capacity-based storage details

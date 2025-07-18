@@ -11,11 +11,11 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
+   - paulliew
+   - MSFTSimranKaur 
 ms.custom:
   - "admin-security"
   - sfi-image-nochange
-- paulliew
-- MSFTSimranKaur 
 ---
 
 # Manage the encryption key 

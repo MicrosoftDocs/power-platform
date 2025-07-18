@@ -10,10 +10,10 @@ ms.author: sericks
 contributors:
   - marcelbf
 ms.contributors:
+  - iyanni
 ms.custom:
   - NewPPAC
   - sfi-image-nochange
-- iyanni
 ---
 # Power Platform environments overview
 

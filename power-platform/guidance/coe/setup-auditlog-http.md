@@ -11,8 +11,8 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
+   - Grant-Archibald-MS 
 ms.custom: sfi-image-nochange
-- Grant-Archibald-MS 
 ---
 
 # Collect audit logs using Office 365 Management API

@@ -12,11 +12,11 @@ search.audienceType:
 contributors:
   - lavanyapg
 ms.contributors:
+  - lekha27
+  - swatim
+  - matleon
+  - lsuresh
 ms.custom: sfi-image-nochange
-- lekha27
-- swatim
-- matleon
-- lsuresh
 ---
 # Opt in to early access updates 
 

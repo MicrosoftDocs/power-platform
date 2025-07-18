@@ -13,11 +13,11 @@ ms.subservice: admin
 search.audienceType: 
   - admin
 contributors:
+  - arjunmayur
+  - yingchin
+  - sericks
 ms.custom:
   - sfi-image-nochange
-- arjunmayur
-- yingchin
-- sericks
 ---
 # Limit sharing
 

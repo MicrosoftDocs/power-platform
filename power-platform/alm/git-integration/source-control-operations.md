@@ -9,9 +9,9 @@ ms.topic: how-to
 ms.reviewer: tapanm
 ms.collection: 
 ms.contributors:
+  - mikefactorial
 ms.custom:
   - sfi-image-nochange
-- mikefactorial
 ---
 # Source control repository operations
 

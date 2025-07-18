@@ -12,10 +12,10 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.contributors:
+  - nenellim
+  - avkatiyar
+  - Zeffin
 ms.custom: sfi-image-nochange
-- nenellim
-- avkatiyar
-- Zeffin
 ---
 
 # Conversation diagnostics in Azure Application Insights (preview)

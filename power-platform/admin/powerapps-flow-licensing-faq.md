@@ -13,10 +13,10 @@ ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: sericks
 ms.contributors:
+  - jessechen
+  - v-kgallagher
+  - ellenwehrle
 ms.custom: sfi-image-nochange
-- jessechen
-- v-kgallagher
-- ellenwehrle
 ---
 
 # Power Platform licensing FAQs

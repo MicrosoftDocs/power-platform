@@ -13,10 +13,10 @@ contributors:
 search.audienceType: 
   - admin
 ms.contributors:
+  - mspilde
 ms.custom:
   - NewPPAC
   - sfi-image-nochange
-- mspilde
 ---
 
 # Use /mention to link to records in Outlook web client
