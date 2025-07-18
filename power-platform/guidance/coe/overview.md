@@ -7,6 +7,7 @@ ms.date: 02/08/2023
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
+ms.custom: sfi-image-nochange
 ---
 
 # Center of Excellence (CoE) overview

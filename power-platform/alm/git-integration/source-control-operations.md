@@ -5,11 +5,12 @@ author: caburk
 ms.subservice: alm
 ms.author: caburk
 ms.date: 04/21/2025
-ms.custom: 
 ms.topic: how-to
 ms.reviewer: tapanm
 ms.collection: 
 ms.contributors:
+ms.custom:
+  - sfi-image-nochange
 - mikefactorial
 ---
 # Source control repository operations

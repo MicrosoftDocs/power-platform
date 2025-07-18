@@ -6,11 +6,13 @@ ms.topic: how-to
 ms.date: 04/24/2025
 ms.reviewer: sericks
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: sericks
 contributors:
   - marcelbf
 ms.contributors:
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 - iyanni
 ---
 # Power Platform environments overview

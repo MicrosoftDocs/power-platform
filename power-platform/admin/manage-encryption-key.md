@@ -8,10 +8,12 @@ author: mikferland-msft
 ms.subservice: admin
 ms.author: miferlan
 ms.reviewer: sericks
-ms.custom: "admin-security"
 search.audienceType: 
   - admin
 contributors:
+ms.custom:
+  - "admin-security"
+  - sfi-image-nochange
 - paulliew
 - MSFTSimranKaur 
 ---

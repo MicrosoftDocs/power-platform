@@ -13,6 +13,7 @@ ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: sericks
 ms.contributors:
+ms.custom: sfi-image-nochange
 - jessechen
 - v-kgallagher
 - ellenwehrle

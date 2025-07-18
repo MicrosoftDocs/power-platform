@@ -8,12 +8,13 @@ author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
 ms.subservice: admin
-ms.custom:
 - "admin-security"
 -  NewPPAC
 search.audienceType: 
   - admin
 contributors:
+ms.custom:
+  - sfi-image-nochange
 - arjunmayur
 - yingchin
 - sericks

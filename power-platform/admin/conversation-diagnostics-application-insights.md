@@ -12,6 +12,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.contributors:
+ms.custom: sfi-image-nochange
 - nenellim
 - avkatiyar
 - Zeffin

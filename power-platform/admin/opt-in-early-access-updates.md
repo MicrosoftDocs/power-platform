@@ -12,6 +12,7 @@ search.audienceType:
 contributors:
   - lavanyapg
 ms.contributors:
+ms.custom: sfi-image-nochange
 - lekha27
 - swatim
 - matleon

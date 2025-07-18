@@ -14,6 +14,7 @@ contributors:
 - Mattp123
 - JimDaly
 ms.contributors:
+ms.custom: sfi-image-nochange
 - erjost
 - hnatuva
 ---

@@ -13,6 +13,7 @@ search.audienceType:
 ms.contributors:
   - lsuresh
 contributors:
+ms.custom: sfi-image-nochange
 - prabhav
 - lavanyapg
 

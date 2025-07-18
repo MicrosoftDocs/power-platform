@@ -5,14 +5,15 @@ author: srpoduri
 ms.subservice: admin
 ms.author: sripod
 ms.reviewer: sericks
-ms.custom: 
-  - "admin-security"
-  - NewPPAC
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 06/16/2025
 search.audienceType: 
   - admin
+ms.custom:
+  - "admin-security"
+  - NewPPAC
+  - sfi-image-nochange
 ---
 # Add users to an environment  
 

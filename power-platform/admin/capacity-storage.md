@@ -6,11 +6,13 @@ ms.topic: concept-article
 author: marianaraujo 
 ms.subservice: admin
 ms.author: maaraujo
-ms.custom: NewPPAC
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 - olegovanesyan
 - ianceicys-msft 
 - amiyapatr-zz

@@ -5,10 +5,12 @@ ms.topic: how-to
 ms.date: 06/24/2025
 ms.subservice: admin
 author: matapg007
-ms.custom: NewPPAC
 ms.author: matgupta
 ms.reviewer: ellenwehrle
 contributors: 
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 - tapas1447
 - ttreen
 - Funken1766

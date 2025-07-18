@@ -12,6 +12,7 @@ search.audienceType:
   - admin
 ms.collection: bap-ai-copilot
 contributors:
+ms.custom: sfi-image-nochange
 - lavanyakr01 
 - iaanw 
 - kavehkazms 

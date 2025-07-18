@@ -13,6 +13,7 @@ contributors:
 search.audienceType: 
   - admin
 ms.contributors:
+ms.custom: sfi-ga-blocked
 - johnev
 ---
 
