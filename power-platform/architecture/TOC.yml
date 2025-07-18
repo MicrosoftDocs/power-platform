@@ -57,16 +57,18 @@
           href: reference-architectures/app-legacy-data-integration.md
         - name: Use Dataverse background operations
           href: reference-architectures/dataverse-background-operations.md
-        - name: Secure Power Platform access to resources
-          href: reference-architectures/secure-access-azure-resources.md
         - name: Integrate Power Platform with SAP
           href: reference-architectures/arch-pattern-sap.md
+        - name: Secure Power Platform access to resources
+          href: reference-architectures/secure-access-azure-resources.md
         - name: ​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables
           href: reference-architectures/app-integrate-lakehouse.md
-        - name: Use REST APIs to extend functionality of canvas apps
-          href: reference-architectures/custom-connector-canvas.md
         - name: Use Dataverse as a data source for canvas apps
           href: reference-architectures/dataverse-canvas-app.md
+        - name: Use REST APIs to extend functionality of canvas apps
+          href: reference-architectures/custom-connector-canvas.md
+        - name: Optimize performance of canvas apps requiring complex logic
+          href: reference-architectures/optimize-performance-canvas-apps.md
         - name: Reduce infrastructure challenges with Hosted RPA in Power Automate​
           href: reference-architectures/rpa-scale-operations.md
         - name: Use SQL Server with canvas apps

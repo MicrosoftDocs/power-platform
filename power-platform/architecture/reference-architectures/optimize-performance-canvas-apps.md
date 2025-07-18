@@ -31,7 +31,7 @@ To optimize data interaction, shift logic and data retrieval operations from the
 
 In this diagram, Power Fx functions are used to shift complex business logic from the canvas app to Dataverse. You can also use a Dataverse custom API to achieve the same result. For help deciding which option to use, see [Recommendations](#recommendations).
 
-:::image type="content" source="media/optimize-canvas-apps/arch.png" alt-text="Architecture diagram that shows the difference between using canvas app built-in capabilities for data operations and using Power Fx functions." lightbox="media/optimize-canvas-apps/arch.png":::
+:::image type="content" source="media/optimize-canvas-apps/arch.png" alt-text="Architecture diagram that shows the difference between using canvas app built-in capabilities for data operations and using Power Fx functions.":::
 
 ## Workflow
 
@@ -111,7 +111,7 @@ Choose **Power Fx functions** if your use case meets these criteria:
 - You need **transactional consistency** but don't require advanced .NET capabilities.
 - You want to **centralize logic** for reuse across apps and flows without involving .NET developers.
 
-Power Fx functions are in preview. Learn more in [Functions in Microsoft Dataverse (preview)](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-overview).
+Learn more in [Functions in Microsoft Dataverse (preview)](/power-apps/maker/data-platform/functions-overview).
 
 Choose **Dataverse Custom APIs** if your use case requires:
 
