@@ -22,7 +22,7 @@ By default, when an application queries data or perform multiple modifications, 
 
 This implementation pattern causes waiting times, especially when the app sends multiple requests, such as in a [ForAll function](../../power-fx/reference/function-forall.md). Waiting time negatively impacts performance and user experience. For example, if the app retrieves and transforms data multiple times in a ForAll loop, the overall waiting time can become substantial, leading to a slow and inefficient user experience.
 
-To optimize data interaction, shift logic and data retrieval operations from the canvas app to Dataverse using either a Dataverse custom API or Power Fx function. Data modification operations complete within a transaction, ensuring data consistency if an error occurs.
+To optimize data interaction, shift logic and data retrieval operations from the canvas app to Dataverse using either Dataverse custom APIs or Power Fx functions. Data modification operations complete within a transaction, ensuring data consistency if an error occurs.
 
 > [!TIP]
 > This article provides an example scenario and a generalized example architecture to illustrate how canvas apps that use Dataverse can shift complex business logic to Dataverse custom APIs and Power Fx function to improve performance. The architecture example can be modified for many different scenarios and industries.
@@ -35,13 +35,13 @@ In this diagram, Power Fx functions are used to shift complex business logic fro
 
 ## Workflow
 
-1. The Power Apps canvas application uses Dataverse to manage allocation of resources. The app uses a Power Fx function (a Dataverse custom API would serve the same purpose) for heavy data operations instead of directly using built-in   access capabilities. The appstill uses built-in Dataverse capabilities for lower-volume data operations and tasks that don't require transactional support.
+1. The Power Apps canvas application uses Dataverse to manage allocation of resources. The app uses a Power Fx function (a Dataverse custom API would serve the same purpose) for heavy data operations instead of directly using built-in access capabilities. The app still uses built-in Dataverse capabilities for lower-volume data operations and tasks that don't require transactional support.
 
 1. The Power Fx function (or Dataverse custom API) is configured to pass input parameters from the calling app and receive the outcome (response parameters) from the function (or API) via defined output parameters. For:
 
     - **Power Fx function (preview):** Logic is implemented in the Power Apps portal. With Power Fx functions, makers are able to construct complex logic with little or no coding expertise. Learn more in [Power Fx functions](#power-fx-functions).
 
-    - **Dataverse custom API:** Logic is implemented by creating a Dataverse .NET plug-in. Custom .NET plug-ins require more coding knowledge but provides greater control and extensibility. Learn more in [Dataverse custom APIs](#dataverse-custom-apis).
+    - **Dataverse custom API:** Logic is implemented by creating a Dataverse .NET plug-in. Custom .NET plug-ins require more coding knowledge but provide greater control and extensibility. Learn more in [Dataverse custom APIs](#dataverse-custom-apis).
 
 ## Use case details
 
@@ -49,7 +49,7 @@ Power Apps allows organizations to create custom user experiences and to central
 
 In the example, the Power Apps canvas application allows makers to efficiently allocate resources to teams and tasks. This architecture pattern can be applied to similar scenarios where the canvas application includes data operations and/or requires:
 
-- Multiple loops in the canvas app, which can't be achieved using the [concurrent function](../../power-fx/reference/function-concurrent.md) capability.
+- Multiple loops in the canvas app, which can't be achieved using the [Concurrent function](../../power-fx/reference/function-concurrent.md) capability.
 - Intensive calculations for multiple data transformations.
 - Consistent execution time, independent of the number of items in a loop or the user's internet connection.
 - Data consistency across multiple data modification operations.
@@ -79,7 +79,7 @@ ForAll(Resources,
 
 This logic generates multiple HTTP calls to Dataverse when the application runs. While the best practice is to consolidate data into Dataverse views, or use concurrent functions or other Power Fx techniques, this approach isn't always possible or fails to meet performance objectives.
 
-To address this issue, eliminate multiple HTTP from the canvas app by shifting the data transformation—processing of data and returning the required results in a single response. This approach reduces the waiting time for data retrieval, enhances the overall performance of the canvas app, and provides a smoother and more responsive user experience. Centralizing the data transformation logic ensures consistent and efficient processing on the server side, which makes the solution scalable for large volumes of data and complex transformations.
+To address this issue, eliminate multiple HTTP from the canvas app by shifting the data transformation—processing of data and required results in a single response. This approach reduces the waiting time for data retrieval, enhances the overall performance of the canvas app, and provides a smoother and more responsive user experience. Centralizing the data transformation logic ensures consistent and efficient processing on the server side, which makes the solution scalable for large volumes of data and complex transformations.
 
 ### Options
 
@@ -87,9 +87,9 @@ Both Dataverse custom APIs and Power Fx functions extend the business logic of D
 
 #### Power Fx functions
 
-A Power Fx function is an abstraction of the Dataverse Custom API capability that allows Power Fx to be used for the logic. Internally, a Power Fx function executes like a Dataverse custom API and is an event handler that executes in response to specific events.
+A Power Fx function is an abstraction of the Dataverse custom API capability that allows Power Fx to be used for the logic. Internally, a Power Fx function executes like a Dataverse custom API and is an event handler that executes in response to specific events.
 
-Power Fx functions extend the business logic of Dataverse and can be invoked on demand from Power Platform components like Power Apps canvas apps, Power Automate flows, and from custom agents created with Microsoft Copilot Studio. This functionality supports the implementation of more basic logic that isn't complex enough to require using the full Dataverse Custom API capability.
+Power Fx functions extend the business logic of Dataverse and can be invoked on demand from Power Platform components like Power Apps canvas apps, Power Automate flows, and from custom agents created with Microsoft Copilot Studio. This functionality supports the implementation of more basic logic that isn't complex enough to require using the full Dataverse custom API capability.
 
 #### Dataverse custom APIs
 
@@ -113,7 +113,7 @@ Choose **Power Fx functions** if your use case meets these criteria:
 
 Learn more in [Functions in Microsoft Dataverse (preview)](/power-apps/maker/data-platform/functions-overview).
 
-Choose **Dataverse Custom APIs** if your use case requires:
+Choose **Dataverse custom APIs** if your use case requires:
 
 - **Complex business logic** that Power Fx can't express.
 - **Advanced capabilities** like custom error handling, telemetry, and integration with external systems.
@@ -123,7 +123,7 @@ Choose **Dataverse Custom APIs** if your use case requires:
 
 Learn more in [Create and use custom APIs](/power-apps/developer/data-platform/custom-api).
 
-If your goal is to streamline canvas app performance while keeping the solution accessible and maintainable by makers, Power Fx functions are the better choice. If you're building a mission-critical, highly customized backend, consider Dataverse Custom APIs.
+If your goal is to streamline canvas app performance while keeping the solution accessible and maintainable by makers, Power Fx functions are the better choice. If you're building a mission-critical, highly customized backend, consider Dataverse custom APIs.
 
 ## Alternatives
 
@@ -139,7 +139,7 @@ Learn more in [Use REST APIs to extend the functionality of canvas apps](custom-
 
 ### Reliability
 
-**Design your workload to avoid unnecessary complexity**: Shifting your data operations and logic from your canvas app avoids unnecessary complexity in the app. This approach also centralizes the logic so that other applications in the organization can use it. In addition, Power Apps makers benefit from performance enhancements without complexity to the app.
+**Design your workload to avoid unnecessary complexity**: Shifting your data operations and logic from your canvas app avoids unnecessary complexity in the app. This approach also centralizes the logic so that other applications in the organization can use it. In addition, Power Apps makers benefit from performance enhancements without adding complexity to the app.
 
 **Test for resiliency and availability**: Moving the logic from the canvas app to either Dataverse custom APIs or Power Fx functions enables you to test the API/function independently from the app.
 
@@ -157,7 +157,7 @@ Learn more in [Use REST APIs to extend the functionality of canvas apps](custom-
 
 **Optimize logic (Dataverse custom APIs):** As logic becomes more complex in a canvas app, Dataverse custom APIs enable you to offload that logic to a centralized, reusable service.
 
-**Test performance**: Along with testing for functionality and failures, test and develop a baseline for performance. Evaluate this baseline during your release cycle if the custom API/Power Fx function is sensitive to changes in work completion time.
+**Test performance**: Along with testing for functionality and failures, test and develop a baseline for performance. Evaluate this baseline during your release cycle if the Dataverse custom API/Power Fx function is sensitive to changes in work completion time.
 
 ## Related resources
 
