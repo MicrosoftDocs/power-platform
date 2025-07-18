@@ -10,11 +10,11 @@ author: NHelgren
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-contributors: 
+contributors:
+   - JasonHQX
 ms.custom:
   - sfi-image-nochange
   - sfi-ropc-blocked
-- JasonHQX
 ---
 # Replicate data to Azure SQL Database using Data Export Service
 
