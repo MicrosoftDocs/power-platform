@@ -106,7 +106,7 @@ A common cause of missing telemetry is insufficient permissions during setup.
 ### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
-1. Then under that section, choose **Data export**.
+1. In the **Manage** pane, select **Data export**.
 
 1. On the **Data export** page, select the **App Insights** tab. 
 
