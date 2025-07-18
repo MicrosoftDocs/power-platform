@@ -92,7 +92,6 @@ Learn how to set up data export from the Power Platform admin center to Applicat
 ---
 
 
-
 ### Troubleshooting for missing telemetry 
 If no data appears in Application Insights within 24 hours of setup, verify the following:
 
