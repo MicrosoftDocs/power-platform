@@ -8,17 +8,17 @@ author: matapg007
 ms.author: matgupta
 ms.reviewer: ellenwehrle
 contributors: 
+  - tapas1447
+  - ttreen
+  - Funken1766
+  - Daniel2327
+  - elijohnson-ms
+  - iscohen-microsoft
+  - yingchin
+  - sericks
 ms.custom:
   - NewPPAC
   - sfi-image-nochange
-- tapas1447
-- ttreen
-- Funken1766
-- Daniel2327
-- elijohnson-ms
-- iscohen-microsoft
-- yingchin
-- sericks
 ---
 
 # Back up and restore environments
