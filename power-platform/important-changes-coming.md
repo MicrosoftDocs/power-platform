@@ -24,6 +24,22 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Deprecation of Viva Engage (Yammer) connector support for Open Authorization connections
+
+Starting September 1st, 2025, the [Viva Engage](https://learn.microsoft.com/connectors/yammer/) connector will no longer support OAuth 2.0 (Open Authorization) connections.
+
+### Why is this needed?
+
+This change is a result of the [Yammer REST API](https://learn.microsoft.com/rest/api/yammer/rest-api-rate-limits) deprecating support for OAuth 2.0
+
+### Impact
+
+This deprecation impacts all existing Viva Engage connector implementations currently utilizing OAuth 2.0 connections.
+
+### Replacement feature
+
+All implementations utilizing the Viva Engage connector will need to migrate to using Entra ID connections, and all new implementations will need to utilize Entra ID connections.
+
 ## Deprecation of support for the contact tracking feature in the Dynamics 365 App for Outlook
 
 Starting October 1, 2025, the [contact tracking](/dynamics365/outlook-app/user/track-contacts) feature in the Dynamics 365 App for Outlook will reach end of support. This feature allowed users to track Outlook contacts directly in Dynamics 365 Sales from the Outlook (classic) desktop application.
