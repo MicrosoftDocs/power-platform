@@ -1,21 +1,21 @@
 ---
-title: "Administrator analytics and reports for Microsoft Power Apps"
-description: "Admins can view Microsoft Power Apps analytics in the Power Platform admin center, including reports on environment-level usage, errors, and service performance."
+title: Administrator analytics and reports for Microsoft Power Apps
+description: Admins can view Microsoft Power Apps analytics in the Power Platform admin center, including reports on environment-level usage, errors, and service performance.
 author: Zeffin
-contributor: yingchin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/02/2025
+ms.date: 07/08/2025
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: ellenwehrle
+ms.reviewer: sericks
 ms.custom: NewPPAC
 search.audienceType: 
   - admin
+contributors:
+  - yingchin
+  - isaacwinoto 
 ---
 # Admin Analytics for Power Apps
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Analytics for the environment admin is available at the Microsoft Power Platform admin center. The admin reports provide a view into environment level usage, errors, service performance to drive governance, and change management services to users. These reports are available for canvas apps only and not available for model-driven apps.
 
@@ -49,7 +49,7 @@ Admins with the these roles and a [license](pricing-billing-skus.md) can view th
 
 For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
-## Data Storage
+## Data storage
 
 When a user first creates an environment from a region, the environment is always hosted in that region. The data is stored only in the region that an environment is hosted in. Data is stored for a maximum of 28 days. The data refresh cycle is about 24 hours and the last refresh time in UTC time standard is displayed on the upper-right corner of the page.
 
@@ -104,11 +104,13 @@ Select the environment and time period from the drop-down lists, and then select
 
 :::image type="content" source="media/powerapps-analytics-change-environments.png" alt-text="Shows how to view and change environments in Power Apps analytics." lightbox="media/powerapps-analytics-change-environments.png":::
 
-### Why are some apps missing in my report?
+### Limitations of downloaded reports
 
-Currently, Power Apps analytics reports don't display model-driven apps data. Only canvas apps related data is displayed.
+Currently, Power Apps analytics reports don't display model-driven apps data. Only canvas apps related data is displayed. 
 
-### See also
+Some fields, such as the creator’s email address and the app or flow display name, may appear blank in exported reports. This is expected behavior, as these values are resolved at runtime and are not part of the underlying stored dataset.
+
+### Related content
 
 [Tenant-level analytics (default)](tenant-level-analytics.md) <br />
 [Tenant-level Analytics for Power Apps (preview)](powerapps-analytics-reports.md)

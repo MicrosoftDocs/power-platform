@@ -30,7 +30,8 @@ The [Document Processing agent](/microsoft-copilot-studio/template-managed-docum
 The following instructions create the autonomous agent:
 
 ```copilot-prompt
-You are a helpful, polite, document processing agent. You help users process documents and extract valuable information. If the user asks about any topic other than document processing, politely decline and offer to help with document-related queries.
+You are a helpful, polite, document processing agent. You help users process documents and extract valuable information. 
+If the user asks about any topic other than document processing, politely decline and offer to help with document-related queries.
 When asked to process a document with a specific document processing event ID, extract the information from that document.
 When told that a document processing event status of a document changes to Processed, validate the extracted information from the document.
 When told that a document processing event status of a document changes to Validated, import the extracted information from the document into the system.
@@ -161,10 +162,10 @@ _Microsoft maintains this article. The following contributors wrote this article
 
 Principal authors:
 
-- **[Jaganmohan Naidu Penikalapati](https://www.linkedin.com/in/jaganmohan-naidu-penikalapati-4558b117/)**, principal software engineering manager
-- **[Ceren Kiroglu](https://www.linkedin.com/in/cerenoneykiroglu/)**, senior product manager
-- **[Durga Yelavarthi](https://www.linkedin.com/in/durga-yelavarthi/)**, principal architect
-- **[Jo Ruas](https://www.linkedin.com/in/joao-otavio-de-lima-ruas/)**, software engineer
+- **[Jaganmohan Naidu Penikalapati](https://www.linkedin.com/in/jaganmohan-naidu-penikalapati-4558b117/)**, Principal Software Engineering Manager
+- **[Ceren Kiroglu](https://www.linkedin.com/in/cerenoneykiroglu/)**, Senior Product Manager
+- **[Durga Yelavarthi](https://www.linkedin.com/in/durga-yelavarthi/)**, Principal Architect
+- **[Jo Ruas](https://www.linkedin.com/in/joao-otavio-de-lima-ruas/)**, Software Engineer
 
 ## Related resources
 

@@ -1,21 +1,24 @@
 ---
-title: "View analytics for Power Automate cloud flows"
-description: "Admins can view Microsoft Power Automate analytics in the Power Platform admin center, including reports on run data of flows, flows created, usage, and errors."
+title: View analytics for Power Automate cloud flows
+description: Admins can view Microsoft Power Automate analytics in the Power Platform admin center, including reports on run data of flows, flows created, usage, and errors.
 author: Zeffin 
 ms.topic: how-to
-ms.date: 06/02/2025
+ms.date: 07/15/2025
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: ellenwehrle
+ms.reviewer: sericks
 ms.custom: NewPPAC
 search.audienceType: 
   - admin
+contributors:
+ - isaacwinoto
 ---
 # View analytics for cloud flows
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Environment admins can access analytics for Power Automate in the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created—such as automated, button, scheduled, approval, and business process flows. They also include details on shared flows and connectors associated with each flow type. However, these reports don't include insights for desktop flows.
+
+> [!IMPORTANT]
+> Solution-aware flows (flows created as part of a solution) are currently not included in analytics reports.
 
 To access these reports:
 
@@ -36,7 +39,7 @@ To access these reports:
 
 ## Who can view these reports?
 
-Admins with the these roles and a [license](pricing-billing-skus.md) can view the reports in Power Automate analytics:
+Admins with these roles and a [license](pricing-billing-skus.md) can view the reports in Power Automate analytics:
 
 - Environment Admin - can view reports for the environments that the admin has access to.
 - Power Platform admin – can view reports for all environments.
@@ -96,6 +99,10 @@ This report provides details on connectors and their associated flows. Metrics l
 The reports are built with Power BI. Users can select the ellipsis (…) for a KPI and then select **Export data**.
 
 :::image type="content" source="media/analytics-flow/export-report.png" alt-text="Shows the Power Automate export report." lightbox="media/analytics-flow/export-report.png":::
+
+## Limitations of downloaded reports
+
+Some fields, such as the creator’s email address and the app or flow display name, may appear blank in exported reports. This is expected behavior, as these values are resolved at runtime and are not part of the underlying stored dataset.
 
 ## View reports in other environments
 
