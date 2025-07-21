@@ -1,6 +1,6 @@
 ---
 title: SLB enhances productivity with Power Platform and AI
-description: Learn how SLB uses Power Apps, AI Builder, and Power Automate to boost efficiency, automate workflows, and drive innovation.
+description: Learn how Schlumberger (SLB) uses Power Apps, AI Builder, and Power Automate to boost efficiency, automate workflows, and drive innovation.
 #customer intent: As a Power Platform user,  I want to learn how SLB increased productivity with Power Apps, AI Builder, and Power Automate so that I can apply similar solutions in my organization.
 author: manuelap-msft
 ms.author: mapichle
@@ -14,9 +14,9 @@ ms.date: 07/07/2025
 
 In this case study, you learn how [SLB](https://www.slb.com/SLB), one of the world's largest oilfield services and equipment suppliers, increased their process and employee productivity by using Microsoft Power Platform tools like Power Apps, AI Builder, Power Automate, and Dataverse, along with SharePoint and Microsoft Azure services.
 
-This article highlights four solutions SLB employees developed to increase global productivity and impact:
+This article highlights four solutions developed by SLB employees to increase global productivity and impact:
 
-- [AI-powered project discovery](#ai-powered-project-discovery): Mitanshu Garg, a Digital Cell Lead at SLB, used Power Apps and Power Automate to connect global teams to scale innovation across SLB. The solution streamlines the project lifecycle from validation to review, and in particular helps the global SLB workforce with project discovery. Enabling employees to find and collaborate on similar projects has increased their productivity in areas such as project consolidation, collaboration, and implementation.
+- [AI-powered project discovery](#ai-powered-project-discovery): Mitanshu Garg, a Digital Cell Lead at SLB, used Power Apps and Power Automate to connect global teams and scale innovation across SLB. The solution streamlines the project lifecycle from validation to review, and helps the global SLB workforce with project discovery. Enabling employees to find and collaborate on similar projects has increased their productivity in areas such as project consolidation, collaboration, and implementation.
 
 - [Automated document processing](#automated-document-processing): Dipankar Sutradhar, a Software Architect at SLB, used AI Builder and Power Automate to automate document processing by extracting shipment details and associating the information with existing orders and entities. The solution creates an automated workflow to handle shipping documents stored in SharePoint. SLB automated the entire process without extensive coding.
 
@@ -44,7 +44,7 @@ The following section explores four different scenarios where SLB leveraged Powe
 
 ### AI-powered project discovery
 
-As part of SLB's 2024 internal strategy initiative, its globally distributed facilities consolidated their project records into a single spreadsheet. Financial controllers then validated the results to ensure accuracy and compliance. Then, these projects were reviewed by the management team.
+As part of SLB's 2024 internal strategy initiative, its globally distributed facilities consolidated their project records into a single spreadsheet. Financial controllers then validated the results to ensure accuracy and compliance. The management team then reviewed these projects.
 
 #### Challenges
 
@@ -96,7 +96,7 @@ The AI-powered project discovery tool has redefined how SLB's globally distribut
 
 Within the first 28 days of launch:
 
-- **800+ AI-powered matches generated**: Users actively used the system, discovered previously hidden synergies.
+- **800+ AI-powered matches generated**: Users actively used the system, discovering previously hidden synergies.
 - **150 similar projects inspired**: Facilities worldwide initiated projects inspired by matches, leading to a wave of cross-facility innovation.
 
 ### Automated document processing
@@ -105,7 +105,7 @@ In the ever-evolving world of oilfield services, SLB faced the challenge of trac
 
 #### Challenges
 
-SLB required an efficient method to process shipping documents from various partners and to seamlessly integrate the extracted data with SAP orders and entities. The manual handling of these documents wasn't only time-consuming but also prone to errors, which affected the company's ability to accurately recover export duties.
+SLB required an efficient method to process shipping documents from various partners and to seamlessly integrate the extracted data with SAP orders and entities. The manual handling of these documents was time-consuming and prone to errors, which affected the company's ability to accurately recover export duties.
 
 #### Solution
 
@@ -139,7 +139,7 @@ The data points to be extracted from these documents have been extensively resea
 
 This success story demonstrates how AI Builder can revolutionize document processing and showcases the financial and operational benefits. By leveraging low-code development, SLB achieved remarkable results, setting a benchmark for efficiency and innovation in the oilfield services industry.
 
-Here are some key takeaways for IT and product-testing professionals who are looking to implement a similar solution in their own organizations:
+Here are some key takeaways for IT and product-testing professionals who want to implement a similar solution in their own organizations:
 
 - **AI Builder and Power Automate**:
   - Easily add AI features to apps with AI Builder.
@@ -177,7 +177,7 @@ The solution implemented employs a Power Automate flow to automate the extractio
 
 The following diagram illustrates the automated extraction and processing of flight invoices at SLB:
 
-:::image type="content" source="media/slb/automated-extraction.png" alt-text="Siagram showing the automated extraction and processing of flight invoices at SLB using Power Automate and AI Builder." lightbox="media/slb/automated-extraction.png":::
+:::image type="content" source="media/slb/automated-extraction.png" alt-text="Diagram showing the automated extraction and processing of flight invoices at SLB using Power Automate and AI Builder." lightbox="media/slb/automated-extraction.png":::
 
 #### Takeaways
 
@@ -242,7 +242,7 @@ Teena Bindal explains the benefits: "This automation eliminates the need for dou
 
 The canvas app provides SLB with the following benefits:
 
-- **Eliminates double entry**: Increases productivity by two times, when reducing duplication of data entry between DlLIP and FDP systems.
+- **Eliminates double entry**: Increases productivity by two times, reducing duplication of data entry between DlLIP and FDP systems.
 - **Streamlines financial cost recording**: Ensures accurate and efficient tracking for KSA.
 - **Instant approval notifications**: Facilitates faster decisions with real-time updates.
 - **Simplified discount management**: Makes discount handling easier and error-free.
@@ -253,7 +253,7 @@ The canvas app provides SLB with the following benefits:
 
 ## Technologies used
 
-The SLB team used a variety of Microsoft technologies in the development and implementation of these solutions:
+The SLB team used a variety of Microsoft technologies to develop and implement these solutions:
 
 - **Power Apps**: Used to build the project discovery app and to  integrate multiple data entry platforms.
 - **AI Builder**: Used to build project recommendations and to accurately extract shipment details.
@@ -265,7 +265,7 @@ The SLB team used a variety of Microsoft technologies in the development and imp
 
 ## Key takeaways
 
-This case study shows how SLB used Power Platform—Power Apps, AI Builder, and Power Automate—to set up a project discovery and collaboration application and to streamline data extraction workflows.
+This case study shows how SLB used Power Platform—Power Apps, AI Builder, and Power Automate—to set up a project discovery and collaboration application and streamline data extraction workflows.
 
 Here are some key takeaways for IT professionals who want to implement similar solutions in their organization:
 
@@ -285,7 +285,7 @@ Since building solutions with Microsoft Power Platform, SLB has obtained the fol
 - **1,000 emails processed automatically each month**: Improved scalability saved time and effort, equivalent to one full-time employee.
 - **Fewer errors**: Business validations generated accurate airline GST reports.
 - **No double entry**: Doubled productivity by reducing duplicate data entry between DILIP and FDP systems.
-- **Easier discount management**: Makes discount handling easier and error-free.
+- **Easier discount management**: Made discount handling easier and error-free.
 - **Significant cost savings**: Aims to save 11 full-time employees (PSD assistants), for an annual cost saving of about $500,000.
 
 ## Looking ahead
