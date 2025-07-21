@@ -18,21 +18,21 @@ In this case study, you learn how [T-Mobile](https://www.t-mobile.com/our-story)
 
 T-Mobile frontline retail employees need instant access to promotional offers and other key sales information. They need data about new devices, discounts, trade-in offers, and technical details about devices.
 
-Some information is in internal data sources, but technical details about devices are spread across device manufacturers' websites. Finding the right information on these sites takes time, especially if the customer wants to compare products across multiple sites.
+While some information is available in internal data sources, technical details about devices are spread across device manufacturers' websites. Finding the right information on these sites takes time, especially if the customer wants to compare products across multiple sites.
 
 To address this challenge, CSRs receive a daily report in PDF format with the latest updates on devices and available offers. Over time, the document became more complex and harder to search. CSRs printed the document for quick reference and accessed multiple systems to find technical details, switching between several applications on an iPad. This way of working wasn't efficient or environmentally friendly. It was time to move away from this paper-heavy and time-consuming process.
 
-Brian Hodel, Solution Architect and Developer at T-Mobile in Bellevue, Washington, built the solution. With a professional developer background, Brian streamlines business operations and automates processes across the organization using tools in Power Platform. After his success with the [Orbit app](https://www.microsoft.com/en-us/power-platform/blog/power-apps/tmobile/), Brian was consulted to build this solution to help make the retail department more efficient.
+Brian Hodel, Solution Architect and Developer at T-Mobile in Bellevue, Washington, built the solution. With a professional developer background, Brian streamlines business operations and automates processes across the organization using tools in Power Platform. After his success with the [Orbit app](https://www.microsoft.com/en-us/power-platform/blog/power-apps/tmobile/), T-mobile consulted Brian to build this solution to help make the retail department more efficient.
 
 ## Solution
 
-The PromoGenius app is a Power Apps canvas app with an embedded Copilot Studio agent. It's designed with a series of drop-down menus to minimize the time that a CSR spends entering a query. The CSRs can access the app on iPads on the retail floor, and the app can also be accessed online by call center representatives. Results from a query are displayed in a presentation format that can be shared directly with customers.
+The PromoGenius app is a Power Apps canvas app with an embedded Copilot Studio agent. It is designed with a series of drop-down menus to minimize the time that a CSR spends entering a query. CSRs can access the app on iPads on the retail floor, and call center representatives can also access the app online. The app displays results from a query in a presentation format that can be shared directly with customers.
 
-The Copilot Studio agent connects to over 20 device manufacturers' web sites and assembles product information instantly and automatically. It uses generative answers, enabling a CSR to ask deep technical questions using natural language queries in the context of a customer's question. The agent can also understand a question in the context of previous questions.
+The Copilot Studio agent connects to over 20 device manufacturers' websites and assembles product information instantly and automatically. It uses generative answers, enabling a CSR to ask deep technical questions using natural language queries in the context of a customer's question. The agent can also understand a question in the context of previous questions.
 
-The agent is useful for product comparisons, as it not only gathers the data but formats it into clear comparison tables that can be presented to a customer.
+The agent is useful for product comparisons, as it not only gathers the data but also formats it into clear comparison tables that can be presented to a customer.
 
-In the following image of the PromoGenius app, notice how filters be applied (on the top). Using natural language, users can ask questions about devices and compare the technical details.
+In the following image of the PromoGenius app, notice how filters can be applied (on the top). Using natural language, users can ask questions about devices and compare the technical details.
 
 :::image type="content" source="media/t-mobile/app-promotions.png" alt-text="Screenshot of the PromoGenius app interface with filters and device comparison options visible." lightbox="media/t-mobile/app-promotions.png":::
 
@@ -40,7 +40,7 @@ For instance, users can ask to compare connectivity.
 
 :::image type="content" source="media/t-mobile/connectivity.png" alt-text="Screenshot of device connectivity comparison in the PromoGenius app.":::
 
-The user is presented with comparison details instantly, without navigating to the manufacturers' websites for manual comparisons.
+The app presents comparison details instantly, without navigating to the manufacturers' websites for manual comparisons.
 
 :::image type="content" source="media/t-mobile/details.png" alt-text="Screenshot of instant device comparison results in the PromoGenius app." lightbox="media/t-mobile/details.png":::
 
@@ -70,7 +70,9 @@ This image shows how filters can be set to show available promotions:
 
 ### The embedded Copilot Studio agent
 
-The process of creating the agent involved trying out different approaches for fetching data from multiple sources. General instructions are placed in the agent settings, and generative orchestration is used. Custom topics have been set up to match user queries. There are plans to move from having multiple topics to multiple agents.
+The process of creating the agent involved trying out different approaches for fetching data from multiple sources. The team placed general instructions in the agent settings, and used generative orchestration. They set up custom topics to match user queries. 
+
+There are plans to move from having multiple topics to multiple agents.
 
 The following image illustrates the general instructions and generative AI orchestration enabled for the agent:
 
@@ -82,7 +84,7 @@ This image illustrates the generative AI settings in Copilot Studio:
 
 The initial idea was to obtain data from websites by adding the websites as knowledge sources in the agent and to use Dataverse for promotional data. This agent journey covered exploring different ways of having the agent leverage external website data.
 
-The following image shows some of the knowledge sources used, including public websites and specific device documents, as well as Dataverse for promotions. The Dataverse information is updated nightly from other sources via Microsoft Fabric pipelines.
+The following image shows some of the knowledge sources used, including public websites and specific device documents, as well as Dataverse for promotions. The team updates the Dataverse information nightly from other sources via Microsoft Fabric pipelines.
 
 :::image type="content" source="media/t-mobile/knowledge-source.png" alt-text="Screenshot of knowledge sources including public websites, device documents, and Dataverse for promotions." lightbox="media/t-mobile/knowledge-source.png":::
 
@@ -119,7 +121,7 @@ The following image illustrates the agent's response when a user requests a comp
 
 ### AI model options for the agent
 
-You can choose an AI model for your agent in Copilot Studio and extend it with Azure AI Foundry models. T-Mobile tried different models, like GTP-4-1, and noticed improved answers in agent conversations for some use cases but not all. Based on this conclusion, T-Mobile plans to shifts from multiple custom topics to exploring a multi-agent architecture. This approach involves several agents, each dedicated to specific tasks and using specialized models, and allowing each use case to have a dedicated model.  
+You can choose an AI model for your agent in Copilot Studio and extend it with Azure AI Foundry models. T-Mobile tried different models, like GTP-4-1, and noticed improved answers in agent conversations for some use cases but not all. Based on this conclusion, T-Mobile plans to shift from multiple custom topics to exploring a multi-agent architecture. This approach involves several agents, each dedicated to specific tasks and using specialized models, allowing each use case to have a dedicated model.  
 
 Under the Generative AI options, you can choose a primary response model, as shown in the following image. Note that options may change as Copilot Studio evolves.
 
@@ -127,7 +129,7 @@ Under the Generative AI options, you can choose a primary response model, as sho
 
 ### ALM with Power Platform Pipelines
 
-Application lifecycle management (ALM) routines support the PromoGenius app and Copilot Studio agent. Three environments were set up: development, test, and production. Power Platform Pipelines manage deployments. Environment variables point to different services with values specific to each environment.
+Application lifecycle management (ALM) routines support the PromoGenius app and Copilot Studio agent. The team set up three environments: development, test, and production. Power Platform Pipelines manage deployments. Environment variables point to different services with values specific to each environment.
 
 ## Technologies used
 
