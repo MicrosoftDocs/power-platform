@@ -87,7 +87,7 @@ Both Dataverse custom APIs and Power Fx functions extend the business logic of D
 
 #### Power Fx functions
 
-A Power Fx function is an abstraction of the Dataverse custom API capability that allows Power Fx to be used for the logic. Internally, a Power Fx function executes like a Dataverse custom API and is an event handler that executes in response to specific events.
+A Power Fx function is an abstraction of the Dataverse custom API capability that allows [Power Fx](../../power-fx/overview.md) to be used for the logic. Internally, a Power Fx function executes like a Dataverse custom API and is an event handler that executes in response to specific events.
 
 Power Fx functions extend the business logic of Dataverse and can be invoked on demand from Power Platform components like Power Apps canvas apps, Power Automate flows, and from custom agents created with Microsoft Copilot Studio. This functionality supports the implementation of more basic logic that isn't complex enough to require using the full Dataverse custom API capability.
 
@@ -101,7 +101,7 @@ With both Power Fx functions and Dataverse custom APIs, makers can invoke a func
 
 ## Recommendations
 
-Power Fx functions and Dataverse custom APIs complete data modification operations in a transaction.
+Both Power Fx functions and Dataverse custom APIs complete data modification operations in a transaction.
 
 Choose **Power Fx functions** if your use case meets these criteria:
 
