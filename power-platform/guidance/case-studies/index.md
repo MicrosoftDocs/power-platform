@@ -1,6 +1,6 @@
 ---
 title: Power Platform real-world case studies
-description: Explore real-world Power Platform case studies to see how customers create innovative solutions, improve processes, and achieve goals.
+description: Explore real-world Power Platform case studies to understand how customers create innovative solutions, improve processes, and achieve goals.
 #customer intent: As a business leader, I want to learn how organizations use Power Platform so that I can identify solutions for my own challenges.
 author: robstand
 ms.author: rstand
@@ -22,9 +22,9 @@ Case studies are detailed accounts of real-world applications and implementation
 
 - **Discover best practices**: Each case study highlights the strategies and best practices that led to successful outcomes. These insights can help you adopt proven methods and avoid common pitfalls in your own projects.
 
-- **See the impact**: Case studies often include quantifiable results, such as efficiency gains, cost savings, and improved customer satisfaction. These metrics provide concrete evidence of the benefits of using Power Platform, helping you build a strong business case for your initiatives.
+- **Understand the impact**: Case studies often include quantifiable results, such as efficiency gains, cost savings, and improved customer satisfaction. These metrics provide concrete evidence of the benefits of using Power Platform, helping you build a strong business case for your initiatives.
 
-- **Get inspired**: Reading about the innovative solutions developed by others can spark new ideas and inspire you to think creatively about how to use the Power Platform in your own work. Whether you're looking to automate processes, enhance customer experiences, or drive digital transformation, case studies can provide the motivation and direction you need.
+- **Get inspired**: Reading about the innovative solutions developed by others can spark new ideas and inspire you to think creatively about how to use Power Platform in your own work. Whether you're looking to automate processes, enhance customer experiences, or drive digital transformation, case studies can provide the motivation and direction you need.
  
 ## Current case studies
 
