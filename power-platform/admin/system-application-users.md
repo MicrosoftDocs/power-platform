@@ -3,7 +3,7 @@ title: Special system users and application users
 description: Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/27/2025
+ms.date: 07/21/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -15,6 +15,7 @@ ms.contributors:
 - sanjeevgoyalmsft 
 - gattimassimo
 - saponcer
+- cdgolmar
 ---
 
 # System and application users
