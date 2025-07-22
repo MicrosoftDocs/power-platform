@@ -31,7 +31,7 @@ Starting September 1, 2025, the [Viva Engage](/connectors/yammer/) connector wil
 
 ### Why is this needed?
 
-This change is a result of the [Yammer REST API](https://learn.microsoft.com/rest/api/yammer/rest-api-rate-limits) deprecating support for OAuth 2.0
+This change is a result of the [Yammer REST API](/rest/api/yammer/rest-api-rate-limits) deprecating support for OAuth 2.0
 
 ### Impact
 
@@ -118,7 +118,7 @@ Effective February 19, 2025, the **Train with examples** feature to transform ex
 
 ## Deprecation of Snowflake connector [Deprecated]
 
-The [Snowflake (Deprecated)](/connectors/snowflakepa/) connector will be discontinued on May 26, 2025. A new and improved version with more features is now available. For more details, visit the new [Snowflake (Preview)](/connectors/snowflakev2/) connector reference article. We strongly encourage you to switch soon to take advantage of the upgrades.  
+The Snowflake connector was discontinued on May 26, 2025. A new and improved version with more features is now available. For more details, visit the new [Snowflake (Preview)](/connectors/snowflakev2/) connector reference article. We strongly encourage you to switch soon to take advantage of the upgrades.  
 
 ## What action do I need to take?
 
@@ -128,7 +128,7 @@ Make sure you replace your existing connections of the deprecated Snowflake conn
 - [Manage connections in canvas apps - Power Apps | Microsoft Learn](/power-apps/maker/canvas-apps/add-manage-connections)
 
 ### Impact 
-If action isn't taken by May 26, 2025, the application(s) utilizing [Snowflake (Deprecated)](/connectors/snowflakepa/) connector will no longer function as expected.
+If action isn't taken by May 26, 2025, the application(s) utilizing the Snowflake (Deprecated) connector will no longer function as expected.
 
 ## Deprecation of Ask a virtual agent
 
