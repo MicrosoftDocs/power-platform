@@ -44,7 +44,7 @@ These encryption key operations are available with customer-managed key (CMK):
 - Migrate [bring-your-own-key (BYOK)](cmk-migrate-from-byok.md) environments to CMK by applying CMK key.
 
 Currently, all your customer data stored *only* in the following apps and services can be encrypted with customer-managed key:
-
+### Commercial cloud
 - Dataverse (Custom solutions and Microsoft services)
 - Dataverse [Copilot for model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)  
 - [Power Automate](/power-automate/customer-managed-keys)
@@ -59,6 +59,15 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Project Operations (Finance and operations)
 - Dynamics 365 Supply Chain Management (Finance and operations)
 - Dynamics 365 Fraud Protection (Finance and operations)
+- [Copilot Studio](/microsoft-copilot-studio/admin-customer-managed-keys)
+
+### Sovereign cloud - GCC High (preview)
+- Dataverse (Custom solutions and Microsoft services)
+- Dataverse [Copilot for model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)  
+- Chat for Dynamics 365
+- [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
+- Dynamics 365 Customer Service
+- [Dynamics 365 Customer Insights - Data](/dynamics365/customer-insights/data/overview)
 - [Copilot Studio](/microsoft-copilot-studio/admin-customer-managed-keys)
 
 > [!NOTE]
