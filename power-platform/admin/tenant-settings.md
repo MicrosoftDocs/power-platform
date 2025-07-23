@@ -43,7 +43,7 @@ The following settings apply to all environments within your tenant.
 | [Environment routing (Preview)](default-environment-routing.md) | Allow Power Platform admins to automatically direct new or existing makers into their own personal developer environments. |
 | Catalog Assignments  | This setting is reserved for future use. No enforcement is driven by this setting at the current time.       |
 | Copilot feedback data | When using Copilot in Power Apps, allow users to share their prompts, questions, and requests with Microsoft. |
-| Support requests visibility | Allows users, who already have access to the **Help + Support** page in the Power Platform admin center, to see support requests created by other users in the tenant.  |
+| Support requests visibility | Allows users, who already have access to the **Support** page in the Power Platform admin center, to see support requests created by other users in the tenant.  |
 
 *This setting applies only to Managed Environments.
 

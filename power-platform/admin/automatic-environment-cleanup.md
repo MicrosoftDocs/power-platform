@@ -3,7 +3,7 @@ title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/23/2025
+ms.date: 07/17/2025
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -12,7 +12,9 @@ search.audienceType:
   - admin
 ms.custom: bap-template
 contributors:
-  - iscohen-microsoft 
+  - iscohen-microsoft
+ms.contributors:
+  - albatist 
 ---
 
 # Automatic deletion of Power Platform environments
@@ -89,9 +91,6 @@ The environment's administrators are notified by email according to the followin
 | 402 days with no [user activity](#definition-of-user-activity) | 120 days with no [user activity](#definition-of-user-activity) | The environment is deleted, a new Default environment without Dataverse is created for the tenant. An email notice is sent stating that the environment has been deleted. |
 
 A warning message appears on the **Environments** list page and **Environment** page when the Default environment is within 30 days of deletion.
-
-> [!Note]
-> Default environment cleanup is in the process of rolling out and might not be available in your region yet.
 
 ### Definition of user activity
 

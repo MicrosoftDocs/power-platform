@@ -1,13 +1,13 @@
 ---
 title: Copilot Studio architecture key concepts and solution ideas
 description: Learn key architecture concepts and solution ideas to create intelligent applications and solutions with advanced AI capabilities in Microsoft Copilot Studio.
-#customer intent: As a Power Platform user, I want to understand Microsoft Copilot Studio key concepts and solution ideas so that I can create intelligent applications with advanced AI capabilities.
+#customer intent: As a business decision maker, I want to understand Microsoft Copilot Studio key concepts and solution ideas so that I can create intelligent applications with advanced AI capabilities.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 04/17/2025
+ms.date: 07/15/2025
 ---
 
 # Copilot Studio architecture key concepts and solution ideas
@@ -47,6 +47,8 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 | [**Custom contact center solution with Copilot Studio agent**](../solution-ideas/agent-custom-contact-center.md) | Enhance customer service efficiency through integrated platforms and technologies. |
 | [**Travel concierge using generative AI with Copilot Studio**](../solution-ideas/agent-travel-customer.md) | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
 | [**Ticket management system with Copilot Studio agents**](../solution-ideas/agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
+| [**Automate software bug reporting with Auto Triage AI Agent**](../solution-ideas/auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle issue creation and follow-up, reducing the burden on customer support teams and enhancing the customer experience. |
+| [**Intelligent cardiac triage and scheduling with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
 
 ## Related resources
 
