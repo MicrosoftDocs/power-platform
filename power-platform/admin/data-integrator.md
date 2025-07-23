@@ -159,13 +159,9 @@ Connection sets are a collection of two connections, environments for the connec
 ---
 Your connection set is ready to be used across various integration projects.
 
-### How to create a data integration project
+### Create a data integration project
 
-Projects enable the flow of data between systems. A project contains mappings for one or more entities. Mappings indicate which fields map to which other fields.
-
-<a name="CreateProject">
-
-**To create a data integration project**
+Projects enable the flow of data between systems. A project contains mappings for one or more entities. Mappings indicate which fields map to which other fields. To create a data integration project, perform the following steps: 
 
 1. Select the **Data integration** tab in the left navigation pane.
 
@@ -202,9 +198,7 @@ Projects enable the flow of data between systems. A project contains mappings fo
 
     On this screen, you notice several tabs—**Scheduling** and **Execution history**—along with some buttons—**Add task**, **Refresh entities**, and **Advanced Query**—that are described later in this article.
 
----
-
-### Execution history
+### View execution history
 
 Execution history shows the history of all project executions with project name, timestamp of when the project was executed, and status of execution along with the number of upserts and/or errors.
 
@@ -234,7 +228,7 @@ Execution history shows the history of all project executions with project name,
 > [!NOTE]
 > Anytime you execute a project, manually or schedule based, it generates a detailed log, which shows project name, last updated timestamp along with status. You can view this under the execution history for each project. Project execution history is maintained for 45 days after which it's automatically purged.
 
-### How to set up a schedule-based refresh
+### Set up a schedule-based refresh
 
 We support two types of executions/writes today:
 
@@ -244,9 +238,7 @@ We support two types of executions/writes today:
 
 After you create an integration project, you get the option to run it manually or configure schedule-based writes, which lets you set up automatic refresh for your projects.
 
-**To set up schedule-based writes**
-
-You can schedule projects in two different ways.<br> 
+You can schedule projects in two different ways.
 
 1. Select the project and select the **Scheduling** tab or launch the scheduler from the project list page by selecting the ellipsis next to the project name.
 
@@ -273,7 +265,7 @@ In production environments, we don't recommend running more than five projects p
 > - To optimize performance and not overload the apps, we currently limit project executions to 500k rows per execution per project.
 > - Anytime you execute a project, manually or schedule based, it generates a detailed log, which shows project name, last updated timestamp along with status. You can view this under the execution history for each project. Project execution history is maintained for 45 days after which it's automatically purged.
 
-## Customizing projects, templates, and mappings 
+## Customize projects, templates, and mappings 
 
 You use a template to create a data integration project. A template commoditizes the movement of data that in turn helps a business user or administrator expedite integrating data from sources to destination and reduces overall burden and cost. A business user or administrator can start with an out-of-the-box template published by Microsoft or its partner and then further customize it before creating a project. You can then save the project as a template and share with your organization and/or create a new project. 
 
@@ -285,9 +277,9 @@ You can customize projects and templates in these ways:
 
 - Customize a template by adding an entity of your choice.
 
-### How to customize field mappings
+### Customize field mappings
 
-**To create a connection set**
+To create a connection set, perform the following steps:
 
 1. Select the project for which you want to customize field mappings and then select the arrow between source and destination fields.
 
@@ -301,9 +293,9 @@ You can customize projects and templates in these ways:
 
 1. After you've customized your field mappings, select **Save**.
 
-### How to create your own template 
+### Create your own template 
 
-**To create your own template by modifying existing templates**
+To create your own template by modifying existing templates, perform the following steps:
 
 1. Identify source and destination and direction of flow for your new template.
 
@@ -350,7 +342,9 @@ You can customize projects and templates in these ways:
     > [!div class="mx-imgBorder"] 
     > ![Name and description.](media/data-integrator/CustomizeTemplateSaveAsTemplate175.png "Name and description")
 
-**To create your own template from blank templates**
+### Create your own template from blank templates
+
+To create your own template from a blank template, perform the following steps:
 
 1. Create a data integration project. 
 1. Select the **Data integration** tab in the left navigation pane.
@@ -395,13 +389,11 @@ Additionally, after creating a new integration project, when you choose **Select
 > ![New data integration project.](media/new-data-integration-project.png "New data integration project")
 
 
-## Advanced data transformation and filtering 
+## Perform advanced data transformation and filtering 
 
 With Power Query support, we provide advanced filtering and data transformation of source data. Power Query enables users to reshape data to fit their needs, with an easy-to-use, engaging, and no-code user experience. You can enable this on a project-by-project basis. 
 
-### How to enable advanced query and filtering
-
-**To set up advanced filtering and data transformation**
+To enable advanced data transformation and filtering, perform the following steps:
 
 1. Select the project where you want to enable advanced query and then select **Advanced Query**.
 
@@ -475,7 +467,7 @@ For more information on Power Query, see [Power Query documentation](/power-quer
 >   Review the guidance on [Power Query Online Limits](/power-query/power-query-online-limits).
 > - Modifying the _url_ directly in the mashup editor isn't supported. Only the filter applied using the mashup editor UI or specified in source filter edit field on mapping page is used.
 
-## Performance tuning
+## Factors that impact performance tuning
 
 There are several factors that impact the performance of an integration scenario. Performance is highly dependent on: 
 
@@ -491,7 +483,7 @@ Dynamics 365 for Dataverse uses OData APIs along with parallelism to maximize th
 
 You can use the following settings to tune the performance of finance and operations apps based on load, entity, and resources.
 
-### Exporting data from finance and operations apps:
+### Export data from finance and operations apps:
 
 - Direct export (**skip Staging On**)
   Make sure the entities used for integration support direct export (**skip Staging On**) to allow export to run in bulk fashion and the staging table is bypassed. If you run with **skip Staging Off**, then it falls back to row by row calls and data is inserted in the staging table. 
@@ -499,7 +491,7 @@ You can use the following settings to tune the performance of finance and operat
 - Enable change tracking for entities
   Change tracking enables incremental export of data from finance and operations apps by using data management. In an incremental export, only records that changed are exported. To enable incremental export, you must enable change tracking on entities. Without change tracking, you do full exports, which may affect performance. For complex scenarios, use custom query for change tracking.
 
-### Importing data to finance and operations apps:
+### Import data to finance and operations apps:
 
 - Make sure the entity itself is performant. If possible, create set-based entities.
 
@@ -511,9 +503,8 @@ You can use the following settings to tune the performance of finance and operat
 
 Consider the following tips to ensure performance while importing or exporting data from environments.
 
-### Importing/Exporting data to/from customer engagement apps
+### Import/Export data to/from customer engagement apps
 
 - Ensure indexes are defined for integration keys.
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
