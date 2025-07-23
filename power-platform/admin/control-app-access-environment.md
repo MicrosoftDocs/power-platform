@@ -223,7 +223,7 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 | d3590ed6-52b3-4102-aeff-aad2292ab01c | Microsoft Access client |
 | 51f81489-12ee-4a9e-aaae-a2591f45987d | [XrmToolBox](https://www.xrmtoolbox.com) |
 | 2ad88395-b77d-4561-9441-d0e40824f9bc | PowerShell |
-| a672d62c-fc7b-4e81-a576-e60dc46e951d | Power BI |
+| 00000009-0000-0000-c000-000000000000 | Power BI |
 
 ## Recommended steps
 
