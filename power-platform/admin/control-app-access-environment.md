@@ -8,7 +8,7 @@ ms.component: pa-admin
 ms.custom: NewPPAC
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 02/24/2025
+ms.date: 07/23/2025
 search.audienceType: 
   - admin
 ---
@@ -210,6 +210,8 @@ Here are some commonly used apps that are safe to allow.
 | c92229fa-e4e7-47fc-81a8-01386459c021 | CDSUserManagement |
 | e548fb5c-c385-41a6-a31d-6dbc2f0ca8a3 | JobsServiceProd |
 | ef32e2a3-262a-44e5-a270-4dfb7b6d0bb2 | AiBuilder PAIO-CDS Prod |
+| 99335b6b-7d9d-4216-8dee-883b26e0ccf7 | Power Platform Dataflows Common Data Service Client |
+| 0c906d81-7073-46b5-a95c-3726fca3e3a3 | Power Platform Insights and Recommendations Data Plane Prod |
 
 ##### Apps you might want to block
 
@@ -221,7 +223,7 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 | d3590ed6-52b3-4102-aeff-aad2292ab01c | Microsoft Access client |
 | 51f81489-12ee-4a9e-aaae-a2591f45987d | [XrmToolBox](https://www.xrmtoolbox.com) |
 | 2ad88395-b77d-4561-9441-d0e40824f9bc | PowerShell |
-| a672d62c-fc7b-4e81-a576-e60dc46e951d | Power BI |
+| 00000009-0000-0000-c000-000000000000 | Power BI |
 
 ## Recommended steps
 
