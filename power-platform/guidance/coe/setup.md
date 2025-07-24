@@ -1,6 +1,6 @@
 ---
 title: "Set up the CoE Starter Kit: Prerequisites and instructions"
-description: Discover prerequisites and step-by-step instructions for installing the CoE Starter Kit to streamline Power Platform governance and adoption.
+description: Prerequisites and step-by-step instructions for setting up the CoE Starter Kit to support Power Platform Center of Excellence implementation, governance, and adoption across Power Apps and Power Automate.
 #customer intent: As a Power Platform admin, I want to understand the prerequisites for installing the CoE Starter Kit so that I can ensure a successful setup.  
 author: Grant-Archibald-MS
 ms.component: pa-admin

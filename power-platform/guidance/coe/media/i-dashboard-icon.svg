@@ -1,59 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   viewBox="0 0 44.826299 51.13"
-   version="1.1"
-   id="svg4"
-   sodipodi:docname="i_dashboard-icon.svg"
-   width="33.619724pt"
-   height="38.3475pt"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs4" />
-  <sodipodi:namedview
-     id="namedview4"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="11.578125"
-     inkscape:cx="31.956815"
-     inkscape:cy="32"
-     inkscape:window-width="1680"
-     inkscape:window-height="979"
-     inkscape:window-x="-8"
-     inkscape:window-y="18"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg4"
-     inkscape:document-units="pt" />
-  <path
-     stroke="#556a8a"
-     stroke-miterlimit="10"
-     stroke-width="1.40082"
-     fill="#ffffff"
-     d="M 0.70041096,0.70041001 H 44.12589 V 44.125889 H 0.70041096 Z"
-     id="path1" />
-  <path
-     d="M 0,28.716848 H 44.826301 M 28.016438,0.70041001 V 28.716848 m 0,-17.510274 H 44.12589 M 14.70863,28.716848 v 22.413151"
-     stroke="#556a8a"
-     stroke-miterlimit="10"
-     stroke-width="1.40082"
-     fill="none"
-     id="path2" />
-  <path
-     fill="#e5e5e5"
-     d="M 1.4008219,29.417259 H 14.008219 V 50.429588 H 1.4008219 Z"
-     id="path3"
-     style="stroke-width:0.700411" />
-  <path
-     fill="#2bc7f4"
-     d="m 28.716849,11.906985 h 14.70863 v 23.113562 h -14.70863 z"
-     id="path4"
-     style="stroke-width:0.700411" />
+<svg viewBox="0 0 44.826299 51.13" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-label="Dashboard icon">
+  <path stroke="#556a8a" stroke-miterlimit="10" stroke-width="1.40082" fill="#ffffff" d="M 0.70041096,0.70041001 H 44.12589 V 44.125889 H 0.70041096 Z"/>
+  <path d="M 0,28.716848 H 44.826301 M 28.016438,0.70041001 V 28.716848 m 0,-17.510274 H 44.12589 M 14.70863,28.716848 v 22.413151" stroke="#556a8a" stroke-miterlimit="10" stroke-width="1.40082" fill="none"/>
+  <path fill="#e5e5e5" d="M 1.4008219,29.417259 H 14.008219 V 50.429588 H 1.4008219 Z"/>
+  <path fill="#2bc7f4" d="m 28.716849,11.906985 h 14.70863 v 23.113562 h -14.70863 z"/>
 </svg>
