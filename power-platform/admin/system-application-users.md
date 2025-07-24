@@ -3,7 +3,7 @@ title: Special system users and application users
 description: Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/21/2025
+ms.date: 07/24/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -87,6 +87,7 @@ Most of these users are hidden from user views but they can be found by using th
 | Apollo | capaeinfra@microsoft.com | For performing organization lifecycle operations for Dataverse | Service Writer Role |
 | Dataverse Information Protection | dvinfoprotection@microsoft.com | Allows Microsoft Purview to integrate with Dataverse. | Service Reader Role, PurviewLabelRole |
 | PowerAutomate-DesktopFlowAI | PowerAutomate-DesktopFlowAI@onmicrosoft.com | Service application to perform data integration between Dataverse and the Power Automate AI features | Desktop Flows AI Application User |
+| PowerAutomate-MachineProvisioning | PowerAutomate-MachineProvisioning@onmicrosoft.com | The user performs database operations during Hosted Machine and Hosted Machine Groups provisioning. | System Administrator |
 
 ## The purpose of the system account?
 
