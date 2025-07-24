@@ -87,7 +87,7 @@ Most of these users are hidden from user views but they can be found by using th
 | Apollo | capaeinfra@microsoft.com | For performing organization lifecycle operations for Dataverse | Service Writer Role |
 | Dataverse Information Protection | dvinfoprotection@microsoft.com | Allows Microsoft Purview to integrate with Dataverse. | Service Reader Role, PurviewLabelRole |
 | PowerAutomate-DesktopFlowAI | PowerAutomate-DesktopFlowAI@onmicrosoft.com | Service application to perform data integration between Dataverse and the Power Automate AI features | Desktop Flows AI Application User |
-| PowerAutomate-MachineProvisioning | PowerAutomate-MachineProvisioning@onmicrosoft.com | This application user performs database operations in the course of Hosted Machine and Hosted Machine Groups provisioning | System Administrator |
+| PowerAutomate-MachineProvisioning | PowerAutomate-MachineProvisioning@onmicrosoft.com | The user performs database operations during Hosted Machine and Hosted Machine Groups provisioning. | System Administrator |
 
 ## The purpose of the system account?
 
