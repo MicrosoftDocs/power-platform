@@ -5,7 +5,7 @@ description: Learn how the Microsoft Power Platform CoE Starter Kit helps organi
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 07/14/2025
+ms.date: 07/25/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -39,8 +39,6 @@ The Microsoft Power Platform CoE Starter Kit is a collection of components and t
 :::row-end:::
 
 [Watch a quick overview](https://www.youtube.com/embed/3eF__GY0Vzg) of the CoE Starter Kit.
-
-<!-- Is there a more recent video or training link we can provide? -->
 
 ## Related information
 

@@ -5,7 +5,7 @@ description: Prerequisites and step-by-step instructions for setting up the CoE 
 author: Grant-Archibald-MS
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/14/2025
+ms.date: 07/25/2025
 ms.subservice: guidance-toolkit
 ms.author: grarchib
 ms.reviewer: jhaskett-msft
@@ -81,8 +81,6 @@ These cards can't be assigned to a group. You need an individual named *admin* t
 
 - Individual to receive chat bot chats
 - Individual to receive approvals
-
-<!-- What term should we use instead of chat bot chats...flow bot notification? -->
 
 ### What data source should I use for my Power Platform inventory?
 

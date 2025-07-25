@@ -4,7 +4,7 @@ description: Establish a Power Platform Center of Excellence using the CoE Start
 #customer intent: As a business decision maker, I want to understand how to establish a Power Platform Center of Excellence and evaluate the CoE Starter Kit components to support our organizational transformation and governance goals.
 author: manuelap-msft
 ms.topic: overview
-ms.date: 07/14/2025
+ms.date: 07/25/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -14,34 +14,34 @@ ms.custom:
   - ai-seo-date:07/11/2025
 ---
 
-# Power Platform Center of Excellence (CoE) Starter Kit
+# Power Platform Center of Excellence (CoE) Starter Kit overview
 
 The Power Platform CoE Starter Kit is a comprehensive reference implementation that demonstrates how to build sophisticated governance, monitoring, and adoption capabilities using Power Platform's native low-code tools. This collection of components and solutions helps you develop a strategy for adopting and supporting Power Platform while showcasing what's possible with the platform's out-of-the-box features. 
 
 ## What is a Center of Excellence (CoE)?    
 
-A Center of Excellence (CoE) is a team or entity within an organization that provides leadership, best practices, research, support, and training for a specific focus area, in this case, Power Platform. 
+A Center of Excellence (CoE) is a team or entity within an organization that provides leadership, best practices, research, support, and training for a specific focus area—in this case, Power Platform. 
 
 The Power Platform CoE Starter Kit doesn't represent the entire Center of Excellence or CoE. Managing a CoE requires more than tools. A CoE needs people, communication, and defined requirements and processes. Tools are a means to an end, and each organization must thoughtfully design its CoE based on its unique needs and goals. Learn more about creating a Center of Excellence for Power Platform adoption in [Establish a Microsoft Power Platform Center of Excellence](../adoption/coe.md).
 
-## Strategic Foundation: Power Platform Center of Excellence
+## Strategic foundation: Power Platform Center of Excellence
 
 A Power Platform Center of Excellence (CoE) is a strategic organizational capability that provides leadership, governance, and enablement for low-code transformation. 
 
-The CoE Starter Kit demonstrates this capability through a reference low-code solution built entirely using out-of-the-box Power Platform features—including Power Apps, Power Automate, Power BI, and Dataverse. This approach showcases how organizations can implement sophisticated governance and monitoring capabilities using the platform's native low-code tools.
+The CoE Starter Kit demonstrates this capability through a reference low-code solution built entirely using out-of-the-box Power Platform features, including Power Apps, Power Automate, Power BI, and Dataverse. This approach showcases how organizations can implement sophisticated governance and monitoring capabilities using the platform's native low-code tools.
 
 Unlike traditional IT approaches, a Power Platform CoE:
 
-- **Balances Innovation and Control**: Enables rapid business solution development while maintaining governance
-- **Drives Cultural Change**: Transforms how organizations approach automation and app development
-- **Scales Citizen Development**: Empowers business users while providing expert guidance and support
-- **Delivers Measurable Outcomes**: Connects low-code initiatives to business metrics and ROI
+- **Balances innovation and control**: Enables rapid business solution development while maintaining governance.
+- **Drives cultural change**: Transforms how organizations approach automation and app development.
+- **Scales citizen development**: Empowers business users while providing expert guidance and support.
+- **Delivers measurable outcomes**: Connects low-code initiatives to business metrics and return on investment (ROI).
 
-## CoE Starter Kit: Strategy to Implementation
+## CoE Starter Kit: Strategy to implementation
 
 The CoE Starter Kit bridges the gap between strategic vision and practical implementation by providing a comprehensive reference example of what's possible with Power Platform's low-code capabilities. While establishing a CoE requires organizational commitment, change management, and cultural transformation, the Starter Kit provides the technical foundation and operational processes to support your strategic goals.
 
-**Strategic + Technical Approach**: Successful CoE implementation combines organizational strategy (people, processes, governance) with technical enablement (monitoring, automation, analytics). The Starter Kit addresses the technical implementation while supporting your broader strategic transformation—all through low-code solutions that demonstrate the platform's enterprise capabilities.
+**Strategic + technical approach**: Successful CoE implementation combines organizational strategy (people, processes, governance) with technical enablement (monitoring, automation, analytics). The Starter Kit addresses the technical implementation while supporting your broader strategic transformation—all through low-code solutions that demonstrate the platform's enterprise capabilities.
 
 ## What's in the CoE Starter Kit?
 
@@ -71,8 +71,6 @@ First, [set up the CoE Starter Kit solution](setup.md). Then start to become fam
 > [!NOTE]
 > The following steps are examples of what you can do with the CoE Starter Kit. Explore the rest of this guidance to discover what's available and to use the kit effectively.
 
-<!-- Add links to adoption articles that cover steps 3 and 4 in-depth or just remove? Trim the image or replace.  -->
-
 1. Launch the Power BI dashboard and familiarize yourself with resources and makers that are already in your environments.
 
    :::image type="content" source="media/coe1.PNG" alt-text="Screenshot of the CoE Power BI dashboard.":::
@@ -95,7 +93,7 @@ First, [set up the CoE Starter Kit solution](setup.md). Then start to become fam
 
 ## Use the CoE Starter Kit alongside Automation Kit
 
-The [Automation Kit](https://aka.ms/automationcoe) is set of tools that accelerates the use and support of Power Automate for desktop for automation projects. The kit provides tools that help you manage automation projects and monitor them to estimate savings and return on investment (ROI).
+The [Automation Kit](https://aka.ms/automationcoe) is set of tools that accelerates the use and support of Power Automate for desktop for automation projects. The kit provides tools that help you manage automation projects and monitor them to estimate savings and ROI.
 
 The kit is especially useful to an Automation Center of Excellence (CoE) team, which is a team of experts who support automation within your organization. This team typically has solid knowledge of Power Automate for desktop, sets up and maintains the Automation Kit, and maintains configuration data such as departments, process categories, goals, and more.
 
@@ -112,8 +110,6 @@ A Power Platform CoE manages Power Platform administration, nurturing, and opera
 ## How to use the CoE Starter Kit alongside Power Platform admin center
 
 Managed Environments and tenant-level analytics assist with administrative tasks, such as managing Power Platform at scale and providing insights into usage and inventory.
-
-<!-- Still true below? See 2nd paragraph, for instance. -->
 
 ### Managed Environments for Power Platform
 
@@ -151,8 +147,6 @@ Consider the individual features of Managed Environments to see how they compare
 
 > [!NOTE]
 > The CoE Starter Kit offers capabilities that aren't yet met with Managed Environments, such as bulk updating permissions, cleaning up abandoned resources, surveying makers, and calculating the ROI of ideas.
-
-<!-- Still true above? -->
 
 ### Tenant-level analytics
 
