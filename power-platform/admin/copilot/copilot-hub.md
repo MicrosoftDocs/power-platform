@@ -44,7 +44,7 @@ Admins can define who within an environment can use Copilot capabilities&mdash;e
 
 | Product | Feature |
 |---------|---------|
-| Dynamis 365 Sales | Lead Summary |
+| Dynamics 365 Sales | Lead Summary |
 | Dynamics 365 Sales | Opportunity Summary |
 | Dynamics 365 Sales | [Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot) |
 | Power Apps | [Copilot chat](/power-apps/user/use-copilot-model-driven-apps)| 
@@ -56,7 +56,7 @@ The product pages contain usage and cost insights specific to each product. Curr
 
 ### Copilot Studio
 
-The **Copilot Studio** page provides valuable insights about agents built in Copilot Studio. Admins can view message consumption data, with additional licensing details available through the **Licensing** area of the Power Platform admin center. Admins can view the number of active agents, defined as agents with active sessions in the last 28 days, and the agent session success rate, which is the percentage of sessions resolved by conversational agents or runs that are successful for autonomous agents. Furthermore, the agent table displays the top 10 agents ranked by monthly active sessions.  
+The **Copilot Studio** page provides valuable insights about agents built in Copilot Studio. Admins can view message consumption data, with more licensing details available through the **Licensing** area of the Power Platform admin center. Admins can view the number of active agents, defined as agents with active sessions in the last 28 days, and the agent session success rate, which is the percentage of sessions resolved by conversational agents or runs that are successful for autonomous agents. Furthermore, the agent table displays the top 10 agents ranked by monthly active sessions.  
 
 > [!Note]
 > - The **Copilot Studio** page doesn't include agents built with Microsoft 365 Agent Builder at this time.
@@ -64,7 +64,7 @@ The **Copilot Studio** page provides valuable insights about agents built in Cop
 
 ### Power Apps
 
-Admins can view usage analytics for the data entry agent and data exploration agent on the **Power Apps** page to understand the value that end users are getting from AI in Power Apps. The page includes monthly active user count information for each agent, as well as the number of actions taken. For the data entry agent, this action count is the number of forms where Copilot assisted in filling in information. For data exploration agent, this action count is for the number of natural language queries that users have entered to search and filter their grid view using natural language. Furthermore, admins can deep dive into each agent by selecting them from the bottom table view. This opens a panel where you can see top environments and drill into those to see apps where users are interacting with each agent the most. 
+Admins can view usage analytics for the data entry agent and data exploration agent on the **Power Apps** page to understand the value that end users are getting from AI in Power Apps. The page includes monthly active user count information for each agent, and the number of actions taken. For the data entry agent, this action count is the number of forms where Copilot helped fill in information. For data exploration agent, this action count is for the number of natural language queries that users have entered to search and filter their grid view using natural language. Furthermore, admins can deep dive into each agent by selecting them from the bottom table view. This opens a panel where you can see top environments and drill into those to see apps where users are interacting with each agent the most. 
 
 > [!Note]
 > During the initial weeks of rollout, data is populated over a 28-day lookback period, resulting in an incomplete month initially.
@@ -114,7 +114,7 @@ To learn more information on each feature, use the following links.
 
 ## Governance 
 
-The **Governance** section displays the percentage of environments in your tenant that have specific Copilot features turned on or off. When selecting the Power Automate or Copilot Studio features, you'll find documentation with detailed information on that Copilot’s capabilities, prerequisites, and how to turn it on or off.  
+The **Governance** section displays the percentage of environments in your tenant that have specific Copilot features turned on or off. When selecting the Power Automate or Copilot Studio features, you find documentation with detailed information on that Copilot’s capabilities, prerequisites, and how to turn it on or off.  
 
 Selecting the Power Platform Settings, Power Apps settings or **Manage settings** next to the governance header opens the settings panel where you can modify [tenant](../tenant-settings.md) and [environment-level Copilot settings](../settings-features.md#copilot-preview). Select your environment, your Power Platform product, and set your controls before selecting **Save**. 
 
