@@ -16,10 +16,11 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-Microsoft Power Platform administrators often have the need to orchestrate and automate routine activities for their tenant.  This can be accomplished in a variety of ways using the tools outlined below.  
+
+Microsoft Power Platform administrators often need to orchestrate and automate routine activities for their tenant. This can be accomplished using a variety of programmable tools, all of which are now developed with an API-first strategy. New features and properties are released first in the Power Platform API, then surface in SDKs, CLI, PowerShell cmdlets, and connectors. This approach enables faster innovation, more consistent experiences, and easier automation and integration for both administrators and developers.
 
 > [!NOTE]
-> Programmability tools are currently developed API-first, meaning new properties and functionality is first exposed in the latest API versions made available. They're later taken into updates to our Power Platform CLI, PowerShell cmdlets, and connectors. In the future, this becomes synchronized across all available tools automatically.  
+> Microsoft has shifted from a UX-first to an API-first development model for Power Platform programmability. New capabilities are introduced in the API first, and then quickly synchronized across all supported tools, reducing lag and ensuring consistency. For more background, see [Power Platform API and SDKs: From UX-first to API-first](https://devblogs.microsoft.com/powerplatform/power-platform-api-and-sdks-from-ux-first-to-api-first/).
 
 ## Customer management plane vs customer data plane
 
@@ -33,19 +34,21 @@ Ultimately, customers have two primary APIs: one for the management plane and on
 
 ## Available tools
 
-Several programmability tools are available for administrators. These gradually increase in complexity and also capability. Over time, more libraries will become available in various programming languages. To keep up with the latest updates, review the [release plans](/dynamics365/release-plans/#microsoft-power-platform).
+Several programmability tools are available for administrators. These gradually increase in complexity and also capability. Over time, more libraries will become available in various programming languages. To keep up with the latest updates, review [What's New or Changed](./programmability-whats-new-changed.md)
 
 ### Power Platform API
 
-Use the Power Platform API to access the customer management plane capabilities of Power Platform admin center. There are two implementations of the Power Platform API available today: a REST API, and a .NET API.
+Use the Power Platform API to access the customer management plane capabilities of Power Platform admin center.
 
 Learn more about the REST API in the [REST API reference overview](/rest/api/power-platform).
-
-The .NET API is distributed as a NuGet package named [Microsoft.PowerPlatform.Management](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/). The API reference is available through the .NET API browser - [API: Power Platform management](/dotnet/api/?view=power-platform-latest).
 
 ### Power Platform for Admins V2 connector
 
 The new [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2) is generally available for use in both Power Automate and Logic Apps. It's a strongly-typed representation of the Microsoft Power Platform API.
+
+### Power Platform Management SDK
+
+The .NET SDK is distributed as a NuGet package named [Microsoft.PowerPlatform.Management](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/). The API reference is available through the .NET API browser - [API: Power Platform management](/dotnet/api/?view=power-platform-latest).
 
 ### Power Platform CLI
 

@@ -17,10 +17,14 @@ search.audienceType:
 Learn about the latest changes and new capabilities for Power Platform API and administrator SDKs in the Power Platform.
 
 ## June 2025
-
 | Item | Type | Description |
 |------|------|-------------|
-| Microsoft.PowerPlatform.Management | SDK | [.NET API reference](/dotnet/api/?view=power-platform-latest) published |
+| List Cloud Flows | API | New endpoint: [List Cloud Flows](/rest/api/power-platform/powerautomate/cloud-flows/list-cloud-flows) |
+| List Flow Actions | API | New endpoint: [List Flow Actions](/rest/api/power-platform/powerautomate/flow-actions/list-flow-actions) |
+| List Flow Runs | API | New endpoint: [List Flow Runs](/rest/api/power-platform/powerautomate/flow-runs/list-flow-runs) |
+| Microsoft.PowerPlatform.Management | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3126.165#readme-body-tab) |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.45.3#releasenotes-body-tab) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
 
 ## May 2025
 
