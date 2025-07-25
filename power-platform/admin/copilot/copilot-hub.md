@@ -22,8 +22,6 @@ The **Copilot** area in the Power Platform admin center is a centralized locatio
 
 # [New admin center](#tab/new)
 
-[This content is prerelease documentation and is subject to change.]
-
 When you select **Copilot** in the navigation pane, the following pages are available for you to select in the **Copilot** pane of the Power Platform admin center.
 
 ## Get started 
@@ -39,6 +37,9 @@ The **What’s new** page in the **Copilot** area provides admins with a central
 The **Settings** page displays settings grouped by product. Some settings span across Power Platform and are located at the top in the **Power Platform** section. Settings can be configured at the environment level, with some settings also configurable through environment groups and rules. Selecting a setting opens a panel where you can select your environment, select **Add**, and configure the control. Some settings in the Copilot Studio product direct you to documentation with instructions on how you can configure a data loss prevention (DLP) policy.
 
 ### Control who can use Copilot features in Power Apps (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
 Admins can define who within an environment can use Copilot capabilities&mdash;either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is current in preview and is only for environments with [Managed Environments activated](../../guidance/white-papers/managed-environment-activation.md), with a subset of Copilot features adhering to it. Review the table below to learn which capabilities adhere to this configuration.
 
 | Product | Feature |
