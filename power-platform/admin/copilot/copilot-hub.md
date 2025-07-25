@@ -50,6 +50,9 @@ Admins can define who within an environment can use Copilot capabilities—eithe
 | Power Apps | [Copilot chat](/power-apps/user/use-copilot-model-driven-apps)|
 | Power Apps | [Form fill assistance](/power-apps/user/form-filling-assistance#use-form-fill-assistance) |
 | Power Apps | [Smart paste](/power-apps/user/form-filling-assistance#use-smart-paste-preview) |
+| Power Apps | [Row summary](/power-apps/user/record-summaries |
+| Power Apps | [Visualize with Copilot](/power-apps/user/visualize-data-in-copilot)|
+| Power Apps | [Natural language search and filtering](/power-apps/user/find-data-with-ai) |
 
 ## Product pages
 The product pages contain usage and cost insights specific to each product. Currently, there are product pages for **Copilot Studio**, **Power Apps**, and **Power Pages**.
