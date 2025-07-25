@@ -39,16 +39,16 @@ The **What’s new** page in the **Copilot** area provides admins with a central
 The **Settings** page displays settings grouped by product. Some settings span across Power Platform and are located at the top in the **Power Platform** section. Settings can be configured at the environment level, with some settings also configurable through environment groups and rules. Selecting a setting opens a panel where you can select your environment, select **Add**, and configure the control. Some settings in the Copilot Studio product direct you to documentation with instructions on how you can configure a data loss prevention (DLP) policy.
 
 ### Control who can use Copilot features in Power Apps (preview)
-Admins can define who within an environment can use Copilot capabilities - either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is current in preview and is only for environments with [Managed Environments activated](../../guidance/white-papers/managed-environment-activation.md), with a subset of Copilot features adhering to it. Review the table below to learn which capabilities adhere to this configuration.
+Admins can define who within an environment can use Copilot capabilities&mdash;either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is current in preview and is only for environments with [Managed Environments activated](../../guidance/white-papers/managed-environment-activation.md), with a subset of Copilot features adhering to it. Review the table below to learn which capabilities adhere to this configuration.
 
 | Product | Feature |
 |---------|---------|
-| D365 Sales | Lead Summary |
-| D365 Sales | Opportunity Summary |
-| D365 Sales | Copilot in D365 Sales |
-| Power Apps | Copilot chat | 
-| Power Apps | Form Fill | 
-| Power Apps | Smart Paste | 
+| Dynamis 365 Sales | Lead Summary |
+| Dynamics 365 Sales | Opportunity Summary |
+| Dynamics 365 Sales | [Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot) |
+| Power Apps | [Copilot chat](/power-apps/user/use-copilot-model-driven-apps)| 
+| Power Apps | [Form fill assistance](/power-apps/user/form-filling-assistance#use-form-fill-assistance) | 
+| Power Apps | [Smart paste](/power-apps/user/form-filling-assistance#use-smart-paste-preview) | 
 
 ## Product pages 
 The product pages contain usage and cost insights specific to each product. Currently, there are product pages for **Copilot Studio**, **Power Apps**, and **Power Pages**.
