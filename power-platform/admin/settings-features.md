@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/30/2025
+ms.date: 07/21/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
@@ -132,6 +132,7 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 |---------|-------------|---------------|
 | Enable this feature for:  | When searching for data in a grid, you can ask questions with natural language. For example, requesting “cases with high priority with overdue follow-up by date” filters your view to display only those relevant cases. Learn more in [Smart grid (preview)](/power-apps/user/grid-filters#smart-grid-preview).<br><br>To allow natural language search in an environment, users in that environment must have a Dynamics 365 license. If the environment only has users with Power Apps licensing, other Copilot licenses are required to use this feature in production.   | Users as the feature becomes available (default)<br><br>**Note**: Starting with the December monthly channel, users with Dynamics 365 licenses start seeing the feature in their apps.  We expect this rollout to be gradual. While quality of the feature is maintained for all users, it's possible that different users might see some UI variations in their experience.|
 | Allow AI to generate charts to visualize the data in a view (Preview) | When **On**, users can select the **Visualize** button on the view pages of model-driven apps to see an AI-generated chart that aggregates the records in the view to show trends and distributions. Learn more in [Visualize data in a view with Copilot](/power-apps/user/visualize-data-in-copilot). | Auto<br><br>This feature is turned on by default for all users who have **Natural language grid and view search (preview)** turned on.|
+| Apply AI-generated chart styling to all charts | When **On**, charts created from the legacy chart designer have the same usability enhancements like modern colors and styling as AI-generated charts. Learn more in [Visualize data in a view with Copilot](/power-apps/user/visualize-data-in-copilot). | Auto<br><br>This feature is turned on by default for all users that have **Allow AI to generate charts to visualize the data in a view (Preview)** set to **On** .|
 
 ## AI insight cards (preview)
 
