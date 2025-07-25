@@ -4,10 +4,10 @@ description: Learn about the details and properties of the Persona control in th
 author: denise-msft
 ms.component: pa-maker
 ms.topic: concept-article
-ms.date: 11/02/2022
+ms.date: 07/25/2025
 ms.subservice: guidance-toolkit
 ms.author: demora
-ms.reviewer: tapanm
+ms.reviewer: jhaskett-msft
 search.audienceType: 
   - maker
 contributors:
@@ -23,7 +23,7 @@ contributors:
 A control designed to display formatted information.
 
 > [!NOTE]
-> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/persona).
+> Full documentation and source code are found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Persona).
 
 > [!IMPORTANT]
 > - This is a preview feature.

@@ -4,10 +4,10 @@ description: Learn about the details and properties of the Dialog control in the
 author: denise-msft
 ms.component: pa-maker
 ms.topic: concept-article
-ms.date: 05/16/2022
+ms.date: 07/25/2025
 ms.subservice: guidance-toolkit
 ms.author: demora
-ms.reviewer: tapanm
+ms.reviewer: jhaskett-msft
 search.audienceType: 
   - maker
 contributors:
@@ -30,9 +30,10 @@ A control used to group content.
 
 A dialog box (Dialog) is a temporary pop-up window that takes focus from the page or app and requires people to interact with it. It's primarily used for confirming actions, such as deleting a file, or asking people to make a choice.
 
-This canvas component mimics the style and behavior of the [Fluent UI Dialog control](https://developer.microsoft.com/fluentui#/controls/web/Dialog). See documentation for best practices.
+This canvas component mimics the style and behavior of the [Fluent UI Dialog control](https://developer.microsoft.com/fluentui#/controls/web/Dialog). See the documentation for best practices.
 
-[View the component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src).
+[View the component in the Creator Kit GitHub repository](
+https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/src/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri.msapp).
 
 ## Properties
 

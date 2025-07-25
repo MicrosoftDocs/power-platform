@@ -4,10 +4,10 @@ description: Learn about the details and properties of the PeoplePicker control 
 author: denise-msft
 ms.component: pa-maker
 ms.topic: concept-article
-ms.date: 11/02/2022
+ms.date: 07/25/2025
 ms.subservice: guidance-toolkit
 ms.author: demora
-ms.reviewer: tapanm
+ms.reviewer: jhaskett-msft
 search.audienceType: 
   - maker
 contributors:
@@ -23,7 +23,7 @@ contributors:
 A control used to create a loading experience.
 
 > [!NOTE]
-> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/peoplepicker).
+> Full documentation and source code are found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/PeoplePicker).
 
 :::image type="content" source="media/peoplepicker.png" alt-text="PeoplePicker control.":::
 
@@ -168,7 +168,6 @@ At this point, the people picker should be working and the selected members can 
 ```power-fx
 PeoplePicker1.SelectedPeople
 ```
-
 
 ## Limitations
 

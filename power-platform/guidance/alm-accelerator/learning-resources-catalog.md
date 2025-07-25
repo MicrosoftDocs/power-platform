@@ -2,11 +2,11 @@
 title: Learn more about the ALM Accelerator
 description: Learn about the resources available to help you become familiar with the ALM Accelerator for Power Platform.
 ms.topic: concept-article
-ms.date: 05/22/2023
+ms.date: 07/25/2025
 ms.subservice: guidance-toolkit
 author: rsantos00
 ms.author: rusant
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 ms.custom: bap-template
 ---
 
@@ -17,10 +17,6 @@ The ALM Accelerator for Power Platform includes a canvas app that sits on top of
 The ALM Accelerator complements our [Power Platform ALM guidance](/power-platform/alm/overview-alm) and was originally developed to facilitate ALM for our own CoE Starter Kit team. We're sharing and open-sourcing it to help you apply ALM patterns and practices to your Power Platform solutions. You can use the ALM Accelerator as-is, customize it to meet your requirements, or as a reference implementation to see how we addressed ALM scenarios.
 
 To get back to this page easily, use the shortcut: [https://aka.ms/AA4PPLearning](https://aka.ms/AA4PPLearning).
-
-## Blogs
-
-- [Introducing the ALM Accelerator for Power Platform](https://powerapps.microsoft.com/blog/introducing-the-alm-accelerator-for-power-platform/)
 
 ## Videos
 
@@ -45,17 +41,9 @@ To get back to this page easily, use the shortcut: [https://aka.ms/AA4PPLearning
 - [Center of Excellence ALM Accelerator](https://github.com/microsoft/coe-starter-kit/tree/main/CenterofExcellenceALMAccelerator): Includes the full ALM Accelerator for Power Platform solution.
 - [Center of Excellence ALM Accelerator Templates](https://github.com/microsoft/coe-alm-accelerator-templates): Includes the pipelines and PowerShell scripts used in Azure DevOps for the ALM Accelerator for Power Platform.
 
-## FAQ
-
-- [Any updates on when the ALM Accelerator for Power Platform will work over GitHub?](https://github.com/microsoft/coe-starter-kit/discussions/2336)
-- [Do we have a date for when the accelerator will move from preview to GA?](https://github.com/microsoft/coe-starter-kit/discussions/2334)
-
 ## Release notes
 
-- Release notes and change log are part of each release. [CoE Starter Kit releases](https://github.com/microsoft/coe-starter-kit/releases/)
+- Release notes and change log are part of each release: [CoE Starter Kit releases](https://github.com/microsoft/coe-starter-kit/releases/)
 
-<!-- ## Customer Stories
-
-- Soon -->
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
