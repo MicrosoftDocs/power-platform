@@ -21,11 +21,11 @@ Power Platform administrators often need to orchestrate and automate routine act
 
 ## Customer management plane vs customer data plane
 
-Historically, Power Platform administrators have had disparate APIs from which to manage their tenant and its resources within the platform. This included an API for managing environments, another API for managing Power Apps, and yet another for managing Power Automate flows. With Power Platform API, Microsoft collects, harmonizes, and provides a single API surface from which customers can manage these resources.
+Historically, Power Platform administrators have had disparate APIs from which to manage their tenant and its resources within the platform. This included an API for managing environments, another API for managing Power Apps, and yet another for managing Power Automate flows. With Power Platform API, Microsoft collects, harmonizes, and provides a single API surface that customers can use to manage these resources.
 
-The customer management plane is where tenant-level resources and environments are surfaced. This includes operations like creating environments (with or without Dataverse), managing billing policies for [Pay-as-you-go](/power-platform/admin/pay-as-you-go-overview), querying and reporting on capacity consumption, and so on. These capabilities are available under Power Platform API, and Microsoft adds more features regularly.  
+The customer management plane is where tenant-level resources and environments are surfaced. This includes operations like creating environments (with or without Dataverse), managing billing policies for [Pay-as-you-go](/power-platform/admin/pay-as-you-go-overview), querying and reporting on capacity consumption, and so on. These capabilities are available through Power Platform API, and Microsoft adds more features regularly.  
 
-The customer data plane is for interacting with data and records stored inside of an environment database. This database is most commonly referred to as Microsoft Dataverse, which includes its own [rich OData-based API](/powerapps/developer/data-platform/webapi/overview). Operations using Dataverse APIs include retrieving data from a table, using functions and actions, and executing batch operations.
+The customer data plane is for interacting with data and records stored in an environment database. This database is most commonly called Microsoft Dataverse, which includes its own [rich OData-based API](/powerapps/developer/data-platform/webapi/overview). Operations using Dataverse APIs include retrieving data from a table, using functions and actions, and executing batch operations.
 
 Ultimately, customers have two primary APIs: one for the management plane and one for the data plane. This documentation is strictly for the management plane available as Power Platform API and tools that make use of it.
 
