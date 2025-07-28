@@ -4,7 +4,7 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/25/2025
+ms.date: 07/28/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -44,8 +44,8 @@ Admins can define who within an environment can use Copilot capabilities—eithe
 
 | Product | Feature |
 |---------|---------|
-| Dynamics 365 Sales | [Lead summary](/dynamics365/sales/enable-setup-copilot) |
-| Dynamics 365 Sales | [Opportunity summary](/dynamics365/sales/enable-setup-copilot) |
+| Dynamics 365 Sales | [Lead summary](/dynamics365/sales/copilot-configure-summary-fields) |
+| Dynamics 365 Sales | [Opportunity summary](/dynamics365/sales/copilot-configure-summary-fields) |
 | Dynamics 365 Sales | [Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot) |
 | Power Apps | [Copilot chat](/power-apps/user/use-copilot-model-driven-apps)|
 | Power Apps | [Form fill assistance](/power-apps/user/form-filling-assistance#use-form-fill-assistance) |
