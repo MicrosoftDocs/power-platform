@@ -1,6 +1,6 @@
 ---
 title: Programmability and extensibility - What's new or changed 
-description: Learn about the latest changes and new capabilities for Power Platform API and admin SDKs in the Power Platform.
+description: Learn about the latest changes and new capabilities for Power Platform API and admin SDKs.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
@@ -14,9 +14,10 @@ search.audienceType:
 
 # Programmability and extensibility - What's new or changed
 
-Learn about the latest changes and new capabilities for Power Platform API and administrator SDKs in the Power Platform.
+Learn about the latest changes and new capabilities for Power Platform API and admin SDKs.
 
 ## June 2025
+
 | Item | Type | Description |
 |------|------|-------------|
 | List Cloud Flows | API | New endpoint: [List Cloud Flows](/rest/api/power-platform/powerautomate/cloud-flows/list-cloud-flows) |

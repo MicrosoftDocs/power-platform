@@ -14,13 +14,14 @@ search.audienceType:
 
 # Permission reference
 
-This article provides an overview of the Power Platform API granular permissions. These permissions are initially available for registering client applications in Microsoft Entra and may become available in security role form in the future.
+This article provides an overview of the Power Platform API granular permissions. These permissions are initially available for registering client applications in Microsoft Entra and might become available in security role form in the future.
 
 ## Naming convention
 
 Permissions in Power Platform API are named in the following manner: `{namespace}.{resourceType}.{action}`, where:
+
 * `namespace` is the logical grouping of resources and functionality
-* `resourceType` is the specific resource type on which the permission is defined and must be unique across the resource type's namespace and
+* `resourceType` is the specific resource type on which the permission is defined and must be unique across the resource type's namespace, and
 * `action` is named in the following table
 
   HTTP Method | Path Structure | Action Name(s)
