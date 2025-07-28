@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 07/01/2025
+ms.date: 07/28/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -13,9 +13,6 @@ search.audienceType:
 ---
 
 # Programmability and extensibility overview
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 
 Microsoft Power Platform administrators often need to orchestrate and automate routine activities for their tenant. This can be accomplished using a variety of programmable tools, all of which are now developed with an API-first strategy. New features and properties are released first in the Power Platform API, then surface in SDKs, CLI, PowerShell cmdlets, and connectors. This approach enables faster innovation, more consistent experiences, and easier automation and integration for both administrators and developers.
 
