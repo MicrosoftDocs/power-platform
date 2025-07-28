@@ -48,7 +48,7 @@ The new [Power Platform for Admins V2 connector](/connectors/powerplatformadminv
 
 ### Power Platform Management SDK
 
-The .NET SDK is distributed as a NuGet package named [Microsoft.PowerPlatform.Management](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/). The API reference is available through the .NET API browser - [API: Power Platform management](/dotnet/api/?view=power-platform-latest).
+The .NET SDK is distributed as a NuGet package named [Microsoft.PowerPlatform.Management](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/). The API reference is available through the .NET API browser - [API: Power Platform management](/dotnet/api/?view=power-platform-latest&preserve-view=true).
 
 ### Power Platform CLI
 
