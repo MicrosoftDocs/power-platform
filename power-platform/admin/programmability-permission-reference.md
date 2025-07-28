@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-This article provides an overview of the Power Platform API granular permissions. These permissions will be initially available for registering client applications in Microsoft Entra and may become available in security role form in the future.
+This article provides an overview of the Power Platform API granular permissions. These permissions are initially available for registering client applications in Microsoft Entra and may become available in security role form in the future.
 
 ## Naming convention
 
@@ -50,9 +50,9 @@ Name | Display name | Description
 `AiFlows.Workflows.Execute` | Perform actions (like activate) AI flow | Allows to perform actions (like activate) AI flows.
 `AiFlows.Workflows.Read` | Read AI flow | Allows reading AI flows.
 `AiFlows.Workflows.Write` | Write AI flow | Allows writing AI flows.
-`AiTools.Prompt.Invoke` | Invoke AI Prompts | Allows invoking of AI Prompts.
-`AiTools.Prompt.Read` | Read AI Prompts | Allows reading of AI Prompts.
-`AiTools.Prompt.Write` | Read and Write AI Prompts | Allows reading and writing of AI Prompts.
+`AiTools.Prompt.Invoke` | Invoke AI Prompts | Allows invoking of AI prompts.
+`AiTools.Prompt.Read` | Read AI Prompts | Allows reading of AI prompts.
+`AiTools.Prompt.Write` | Read and Write AI Prompts | Allows reading and writing of AI prompts.
 `Analytics.AdvisorActions.Execute` | Analytics.AdvisorActions.Execute | Allows user to execute advisor actions.
 `Analytics.AdvisorRecommendations.Read` | Analytics.AdvisorRecommendations.Read | Allows users to read advisor recommendations.
 `AppManagement.ApplicationPackages.Install` | Install Application Packages | Allows installing application packages.
@@ -70,20 +70,20 @@ Name | Display name | Description
 `CopilotGovernance.Settings.Write` | Write copilot governance settings | Permission required to write copilot governance settings.
 `CopilotStudio.AdminActions.Invoke` | Allows admins to invoke administrative actions | Allow admins to invoke administrative actions on agents created in Microsoft Copilot Studio.
 `CopilotStudio.Copilots.Invoke` | Allows Invoking Copilots | Allows interacting with authenticated copilots hosted by Copilot Studio.
-`EnvironmentManagement.Environments.Read` | Read Environments | Allows reading of Environments.
-`EnvironmentManagement.Groups.Read` | Read Environment Groups | Allows reading of Environment Groups.
-`EnvironmentManagement.Groups.ReadWrite` | Read and Write Environment Groups | Allows reading and writing of Environment Groups.
-`EnvironmentManagement.Settings.Read` | Read Environment Management Settings | Allows reading of Environment Management Settings.
-`EnvironmentManagement.Settings.ReadWrite` | Update Environment Management Settings | Allows update of Environment Management Settings.
+`EnvironmentManagement.Environments.Read` | Read Environments | Allows reading of environments.
+`EnvironmentManagement.Groups.Read` | Read Environment Groups | Allows reading of environment groups.
+`EnvironmentManagement.Groups.ReadWrite` | Read and Write Environment Groups | Allows reading and writing of environment groups.
+`EnvironmentManagement.Settings.Read` | Read Environment Management Settings | Allows reading of environment management settings.
+`EnvironmentManagement.Settings.ReadWrite` | Update Environment Management Settings | Allows update of environment management settings.
 `Licensing.Allocations.Read` | Read Currency Allocations | Allows reading currency allocations.
 `Licensing.Allocations.ReadWrite` | Read and Write Currency Allocations | Allows reading and writing currency allocations.
 `Licensing.BillingPolicies.Read` | Read Billing Policies | Allows reading billing policies.
-`Licensing.BillingPolicies.ReadWrite` | Read and Write Billing Policies | Read and Write Billing Policies.
+`Licensing.BillingPolicies.ReadWrite` | Read and Write Billing Policies | Read and write billing policies.
 `Licensing.IsvContracts.Read` | Read ISV Contracts | Allows reading ISV contracts.
 `Licensing.IsvContracts.ReadWrite` | Read and Write ISV Contracts | Allows reading and writing ISV contracts.
 `PowerApps.Apps.Play` | Play Power Apps | Allows playing Power Apps.
 `PowerApps.Apps.Read` | Read Power App | Allows reading Power Apps.
-`PowerAutomate.Flows.Read` | Read Power Automate Flows | Allows reading Power Automate Flows.
-`PowerAutomate.Flows.Write` | Write Power Automate Flows | Allows writing Power Automate Flows.
+`PowerAutomate.Flows.Read` | Read Power Automate Flows | Allows reading Power Automate flows.
+`PowerAutomate.Flows.Write` | Write Power Automate Flows | Allows writing Power Automate flows.
 `PowerPages.Websites.Read` | Read Power Pages Websites | Allows reading Power Pages websites.
 `PowerPages.Websites.Write` | Write Power Pages Websites | Allows writing Power Pages websites.
