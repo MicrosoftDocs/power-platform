@@ -4,13 +4,15 @@ description: Learn how to get visibility into all Microsoft Copilot Studio agent
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/11/2025
+ms.date: 07/28/2025
 ms.custom: NewPPAC
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+  - adrianorth 
 ---
 
 # View agent inventory (preview)
@@ -94,9 +96,9 @@ To clear all filters and sorts, select any column and select **Clear all filters
 
 ### Why am I seeing multiple agents with identical names&mdash;for example, _Copilot in Power Apps_&mdash;across different environments?
 
-Power Apps has been creating a platform-owned agent named **Copilot in Power Apps** in each environment but is no longer being created in new environments. This agent will be removed in the future. It can be manually removed instead of waiting for the removal from an upcoming solution update.
+Power Apps has been creating a platform-owned agent, named **Copilot in Power Apps**, in each environment. This agent is no longer being created in new environments. This agent will be removed in the future. It can be manually removed now, or you can wait for the removal in an upcoming solution update.
 
-The admin setting "Copilot in Power Apps (Preview)" has no impact on the creation of this agent. Learn more in [Add copilot chat to your app](/power-apps/maker/model-driven-apps/add-ai-copilot).
+The admin setting **Copilot in Power Apps (Preview)** has no impact on the creation of this agent. Learn more in [Add copilot chat to your app](/power-apps/maker/model-driven-apps/add-ai-copilot).
 
 ### Why can't I find an agent on the Copilot Studio page?
 
