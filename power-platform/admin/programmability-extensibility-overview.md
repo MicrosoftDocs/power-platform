@@ -20,7 +20,7 @@ search.audienceType:
 Microsoft Power Platform administrators often need to orchestrate and automate routine activities for their tenant. This can be accomplished using a variety of programmable tools, all of which are now developed with an API-first strategy. New features and properties are released first in the Power Platform API, then surface in SDKs, CLI, PowerShell cmdlets, and connectors. This approach enables faster innovation, more consistent experiences, and easier automation and integration for both administrators and developers.
 
 > [!NOTE]
-> Microsoft has shifted from a UX-first to an API-first development model for Power Platform programmability. New capabilities are introduced in the API first, and then quickly synchronized across all supported tools, reducing lag and ensuring consistency. For more background, see [Power Platform API and SDKs: From UX-first to API-first](https://devblogs.microsoft.com/powerplatform/power-platform-api-and-sdks-from-ux-first-to-api-first/).
+> Microsoft has shifted from a user experience-first to an API-first development model for Power Platform programmability. New capabilities are introduced in the API first, and then quickly synchronized across all supported tools, reducing lag and ensuring consistency. For more background, go to [Power Platform API and SDKs: From UX-first to API-first](https://devblogs.microsoft.com/powerplatform/power-platform-api-and-sdks-from-ux-first-to-api-first/).
 
 ## Customer management plane vs customer data plane
 
@@ -34,7 +34,7 @@ Ultimately, customers have two primary APIs: one for the management plane and on
 
 ## Available tools
 
-Several programmability tools are available for administrators. These gradually increase in complexity and also capability. Over time, more libraries will become available in various programming languages. To keep up with the latest updates, review [What's New or Changed](./programmability-whats-new-changed.md)
+Several programmability tools are available for administrators. These gradually increase in complexity and also capability. Over time, more libraries will become available in various programming languages. To keep up with the latest updates, review [What's New or Changed](./programmability-whats-new-changed.md).
 
 ### Power Platform API
 
@@ -48,7 +48,7 @@ The new [Power Platform for Admins V2 connector](/connectors/powerplatformadminv
 
 ### Power Platform Management SDK
 
-The .NET SDK is distributed as a NuGet package named [Microsoft.PowerPlatform.Management](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/). The API reference is available through the .NET API browser - [API: Power Platform management](/dotnet/api/?view=power-platform-latest&preserve-view=true).
+The .NET SDK is distributed as a NuGet package named [Microsoft.PowerPlatform.Management](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/). The API reference is available through the .NET API browser. Learn more in [API: Power Platform management](/dotnet/api/?view=power-platform-latest&preserve-view=true).
 
 ### Power Platform CLI
 
