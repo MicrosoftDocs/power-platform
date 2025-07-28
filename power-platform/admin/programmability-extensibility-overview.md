@@ -14,7 +14,7 @@ search.audienceType:
 
 # Programmability and extensibility overview
 
-Microsoft Power Platform administrators often need to orchestrate and automate routine activities for their tenant. This can be accomplished using a variety of programmable tools, all of which are now developed with an API-first strategy. New features and properties are released first in the Power Platform API, then surface in SDKs, CLI, PowerShell cmdlets, and connectors. This approach enables faster innovation, more consistent experiences, and easier automation and integration for both administrators and developers.
+Microsoft Power Platform administrators often need to orchestrate and automate routine activities for their tenant. This can be accomplished using various programmable tools, all of which are now developed with an API-first strategy. New features and properties are released first in the Power Platform API, then surface in SDKs, CLI, PowerShell cmdlets, and connectors. This approach enables faster innovation, more consistent experiences, and easier automation and integration for both administrators and developers.
 
 > [!NOTE]
 > Microsoft has shifted from a user experience-first to an API-first development model for Power Platform programmability. New capabilities are introduced in the API first, and then quickly synchronized across all supported tools, reducing lag and ensuring consistency. For more background, go to [Power Platform API and SDKs: From UX-first to API-first](https://devblogs.microsoft.com/powerplatform/power-platform-api-and-sdks-from-ux-first-to-api-first/).
@@ -23,7 +23,7 @@ Microsoft Power Platform administrators often need to orchestrate and automate r
 
 Historically, Power Platform administrators have had disparate APIs from which to manage their tenant and its resources within the platform. This included an API for managing environments, another API for managing Power Apps, and yet another for managing Power Automate flows. With Power Platform API, Microsoft is collecting, harmonizing, and ultimately providing a single API surface from which customers can manage these resources.
 
-The customer management plane is where tenant-level resources and environments are surfaced. This includes operations like creating environments (with or without Dataverse), managing billing policies for [Pay-as-you-go](/power-platform/admin/pay-as-you-go-overview), querying and reporting on capacity consumption, and so on. These capabilities are surfaced under Power Platform API and more features will be added regularly.  
+The customer management plane is where tenant-level resources and environments are surfaced. This includes operations like creating environments (with or without Dataverse), managing billing policies for [Pay-as-you-go](/power-platform/admin/pay-as-you-go-overview), querying and reporting on capacity consumption, and so on. These capabilities are surfaced under Power Platform API and more features are added regularly.  
 
 The customer data plane is for interacting with data and records stored inside of an environment database. This database is most commonly referred to as Microsoft Dataverse of which includes its own [rich OData-based API](/powerapps/developer/data-platform/webapi/overview). Operations using Dataverse APIs include retrieving data from a table, using functions and actions, and executing batch operations.
 
@@ -41,7 +41,7 @@ Learn more about the REST API in the [REST API reference overview](/rest/api/pow
 
 ### Power Platform for Admins V2 connector
 
-The new [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2) is generally available for use in both Power Automate and Logic Apps. It's a strongly-typed representation of the Microsoft Power Platform API.
+The new [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2) is generally available for use in both Power Automate and Logic Apps. It's a strongly typed representation of the Microsoft Power Platform API.
 
 ### Power Platform Management SDK
 
