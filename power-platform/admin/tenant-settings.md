@@ -3,7 +3,7 @@ title: Tenant settings
 description: Review and configure tenant-level settings linked from this page.
 author: amiyapatr-zz
 ms.topic: overview
-ms.date: 7/24/2025
+ms.date: 7/28/2025
 ms.author: ampatra
 ms.reviewer: sericks
 contributors:
@@ -20,7 +20,17 @@ ms.contributors:
 
 # Tenant settings
 
-Use the **Tenant settings** page to review and manage tenant-level settings.
+Use the **Tenant settings** page to review and manage tenant-level settings. 
+
+You need to have one of the following user roles to access the **Tenant settings** page:
+
+- Global Administrator
+
+- Power Platform Administrator
+
+- Dynamics 365 Administrator
+
+For more information on the user roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 
 ### [New admin center](#tab/new)
 
