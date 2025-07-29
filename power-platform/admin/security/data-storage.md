@@ -23,11 +23,7 @@ ms.contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-First, it’s important to distinguish between *personal data* and *customer data*.
-
-- **Personal data** is information about people that can be used to identify them.
-
-- **Customer data** includes personal data and other customer information, including URLs, metadata, and employee authentication information, such as DNS names.
+The Power Platform processes both **personal data** and **customer data**. Learn more about personal data and customer data at the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
 
 ## Data residency
 
@@ -35,9 +31,7 @@ A Microsoft Entra tenant houses information that's relevant to an organization a
 
 Some organizations have a global presence. For example, a business may be headquartered in the United States but do business in Australia. It may need certain Power Platform data to be stored in Australia to comply with local regulations. When Power Platform services are deployed in more than one Azure geography, it's referred to as a *multi-geo* deployment. In this case, only metadata related to the environment is stored in the home geo. All metadata and product data in that environment is stored in the remote geo.
 
-Microsoft may replicate data to other regions for data resiliency. We don't replicate or move personal data outside the geo, however. Data replicated to other regions may include nonpersonal data such as employee authentication information.
-
-Power Platform services are available in specific Azure geographies. For more information about where Power Platform services are available, where your data is stored, and how it's used, go to [Microsoft Trust Center](https://www.microsoft.com/trustcenter). Commitments concerning the location of customer data at rest are specified in the Data Processing Terms of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31). Microsoft also provides data centers for [sovereign entities](../regions-overview.md).
+Power Platform services are available in specific Azure geographies. For more information about where Power Platform services are available, where your data is stored and replicated to for resiliency, and how it's used, go to [Microsoft Trust Center](https://www.microsoft.com/trustcenter). Commitments concerning the location of customer data at rest are specified in the Data Processing Terms of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31). Microsoft also provides data centers for [sovereign entities](../regions-overview.md).
 
 ## Data handling
 
