@@ -57,7 +57,7 @@ landingContent:
   # Card
   - title: Manage security and users
     linkLists:
-       - linkListType: overview
+       - linkListType: concept
          links:
           - text: Security overview
             url: wp-security.md
