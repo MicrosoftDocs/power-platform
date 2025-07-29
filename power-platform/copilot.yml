@@ -67,6 +67,18 @@ landingContent:
         url: developer/cli/reference/copilot.md
 
 # Card
+  - title: Power Platform and Copilot Studio Architecture Center
+    linkLists:
+      - linkListType: architecture
+        links:
+          - text: Use an autonomous agent in Copilot Studio for document processing
+            url: architecture/reference-architectures/document-processing-agent.md
+      - linkListType: reference
+        links:
+          - text: Solution ideas for Copilot Studio
+            url: architecture/products/copilot-studio.md#solution-ideas
+
+# Card
   - title: Power Platform Well-Architected
     linkLists:
       - linkListType: overview
@@ -81,19 +93,7 @@ landingContent:
         links:
           - text: Power Platform Well-Architected assessment
             url: /assessments/689fd8d9-1000-4cbb-8096-a6c8f3294fc7/
-
-# Card
-  - title: Power Platform and Copilot Studio Architecture Center
-    linkLists:
-      - linkListType: architecture
-        links:
-          - text: Use an autonomous agent in Copilot Studio for document processing
-            url: architecture/reference-architectures/document-processing-agent
-      - linkListType: reference
-        links:
-          - text: Solution ideas for Copilot Studio
-            url: architecture/products/copilot-studio#solution-ideas
-            
+          
 ## Card
   - title: Related copilot products and resources
     linkLists:
