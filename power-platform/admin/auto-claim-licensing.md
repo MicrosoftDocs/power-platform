@@ -7,9 +7,11 @@ ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
 ms.author: ampatra
-ms.custom: bap-template
 search.audienceType: 
  - admin
+ms.custom:
+  - bap-template
+  - sfi-ga-nochange
 ---
 
 # Auto-claim policies for Power Apps licenses
