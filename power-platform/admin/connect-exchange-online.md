@@ -6,7 +6,6 @@ ms.topic: how-to
 ms.date: 06/27/2025
 author: rahulmital 
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: rahulmital
 ms.contributors:
   - yingchin
@@ -14,6 +13,10 @@ ms.contributors:
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 # Connect to Exchange Online
 

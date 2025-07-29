@@ -7,6 +7,7 @@ ms.reviewer: jhaskett-msft
 ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: concept-article
+ms.custom: sfi-image-nochange
 ---
 
 # Recommendations for prioritizing ease of use

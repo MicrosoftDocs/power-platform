@@ -21,6 +21,7 @@ contributors:
   - DanaMartens
   - sericks007
   - angieandrews
+ms.custom: sfi-image-nochange
 ---
 
 # View the Power Platform connector activity logs

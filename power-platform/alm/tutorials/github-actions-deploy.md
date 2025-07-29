@@ -9,6 +9,7 @@ ms.reviewer: pehecke
 ms.topic: tutorial
 search.audienceType: 
   - maker
+ms.custom: sfi-image-nochange
 ---
 
 # Tutorial: Automate solution deployment using GitHub Actions for Microsoft Power Platform
