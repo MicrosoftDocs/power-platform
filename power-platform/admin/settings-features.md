@@ -5,6 +5,7 @@ author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 07/21/2025
+ms.update-cycle: 180-days
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
