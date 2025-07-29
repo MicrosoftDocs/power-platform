@@ -51,6 +51,8 @@ landingContent:
             url: power-platform-settings.md
           - text: Manage environment updates
             url: opt-in-early-access-updates.md
+          - text: Automatic deletion of Power Platform environments
+            url: automatic-environment-cleanup.md
           
   # Card
   - title: Manage security and users
