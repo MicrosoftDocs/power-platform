@@ -64,7 +64,7 @@ landingContent:
        - linkListType: concept
          links:
           - text: Security overview
-            url: wp-security.md
+            url: security/security-overview.md
           - text: Security roles and privileges
             url: security-roles-privileges.md
           - text: Data protection and privacy
