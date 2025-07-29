@@ -12,6 +12,7 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
   - ai-seo-date:07/11/2025
+  - sfi-image-nochange
 ---
 
 # Power Platform Center of Excellence (CoE) Starter Kit overview

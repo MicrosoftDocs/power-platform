@@ -10,6 +10,7 @@ ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Use governance components
