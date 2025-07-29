@@ -6,15 +6,17 @@ ms.topic: concept-article
 author: marianaraujo 
 ms.subservice: admin
 ms.author: maaraujo
-ms.custom: NewPPAC
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
-- olegovanesyan
-- ianceicys-msft 
-- amiyapatr-zz
-- pnghub
+  - olegovanesyan
+  - ianceicys-msft 
+  - amiyapatr-zz
+  - pnghub
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 ---
 
 # Dataverse capacity-based storage details
