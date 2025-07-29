@@ -9,6 +9,7 @@ ms.author: pathaku
 ms.subservice: developer
 contributors:
  - Pankaj-Thakur
+ms.custom: sfi-image-nochange
 ---
 
 # Install and configure development tools
