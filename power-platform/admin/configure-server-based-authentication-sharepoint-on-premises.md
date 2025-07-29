@@ -10,6 +10,7 @@ ms.author: aorth
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-ga-nochange
 ---
 # Configure server-based authentication with SharePoint on-premises
 
