@@ -8,13 +8,15 @@ author: sericks007
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
-ms.custom: "admin-security"
 search.audienceType: 
   - admin
 contributors:
   - alaug
   - tapanm-msft
   - sericks
+ms.custom:
+  - "admin-security"
+  - sfi-image-nochange
 ---
 # Invite users with Microsoft Entra B2B collaboration
 

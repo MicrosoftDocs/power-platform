@@ -10,6 +10,7 @@ ms.author: paulliew
 ms.reviewer: matp 
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Access audit data using Azure Synapse Link for Dataverse and Power BI
 

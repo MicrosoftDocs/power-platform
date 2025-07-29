@@ -12,9 +12,10 @@ search.audienceType:
   - admin
 ms.collection: bap-ai-copilot
 contributors:
-- lavanyakr01 
-- iaanw 
-- kavehkazms 
+   - lavanyakr01 
+   - iaanw 
+   - kavehkazms 
+ms.custom: sfi-image-nochange
 ---
 # Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365
 

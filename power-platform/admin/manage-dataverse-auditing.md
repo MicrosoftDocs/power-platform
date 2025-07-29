@@ -14,6 +14,7 @@ contributors:
   - lavanyapg
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Manage Dataverse auditing
