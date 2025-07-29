@@ -47,10 +47,14 @@ landingContent:
             url: environments-overview.md
           - text: Automatic deletion of Power Platform environments
             url: automatic-environment-cleanup.md
+          - text: General availability deployment
+            url: general-availability-deployment.md
        - linkListType: how-to-guide
          links:  
           - text: Create and manage environments
             url: create-environment.md
+          - text: Change the environment type
+            url: switch-environment.md
           - text: Opt in to early access updates
             url: opt-in-early-access-updates.md
           
