@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 07/22/2025
+ms.date: 07/29/2025
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -27,7 +27,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Deprecation of Viva Engage (Yammer) connector support for open authorization connections
 
-Starting September 1, 2025, the [Viva Engage](/connectors/yammer/) connector will no longer support OAuth 2.0 (open authorization) connections, new connections must use **Entra ID authentication** beginning on this date. Existing OAuth2 connections will continue to work until **November 15th, 2025**, they should be switched to use Entra ID authentication to avoid disruptions.
+Starting September 1, 2025, the [Viva Engage](/connectors/yammer/) connector will no longer support OAuth 2.0 (open authorization) connections. New connections must use Entra ID authentication beginning on this date. Existing OAuth2 connections will continue to work until November 15, 2025, and they should be switched to use Entra ID authentication to avoid disruptions.
 
 ### Why is this needed?
 
