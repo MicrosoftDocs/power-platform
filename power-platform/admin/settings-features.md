@@ -33,22 +33,25 @@ Use feature settings to adjust how features appear and function in Power Apps [c
 These settings can be found in the Power Platform admin center for an environment.
 
 ## [New admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
-1. Expand **Product**, and then select **Features**. 
+1. Expand **Product**, and then select **Features**.
 
 ## [Classic admin center](#tab/classic)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
-1. Expand **Product**, and then select **Features**. 
+1. Expand **Product**, and then select **Features**.
+
 ---
 
-Make sure you have the System Administrator security role or equivalent permissions to update the settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+Make sure you have the System Administrator security role or equivalent permissions to update the settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don't have the correct permissions, contact your system administrator.
 
 > [!NOTE]
 > These settings might not yet be available in your environment. The settings availability depends on the region's release plan.
@@ -76,18 +79,12 @@ Make sure you have the System Administrator security role or equivalent permissi
 | Allow agent owners and editors to see session transcripts from conversation interactions | When **On**, makers and admins can see and download transcripts in [Copilot Studio](/microsoft-copilot-studio/analytics-transcripts-studio) for agents in the environment. When turned off, the options to see or download transcripts is unavailable. | On |
 | Allow conversation transcripts and their associated metadata to be saved in Dataverse (required for enhanced reporting). | When **On**, transcripts are saved in Dataverse and can be viewed and downloaded in [Power Apps](/microsoft-copilot-studio/analytics-transcripts-powerapps). When turned off, transcripts aren't saved for any conversations that occur in the environment. Transcripts for conversations that occurred before saving was turned off are still available. If this setting is re-enabled, transcripts are only saved for any conversations that occur after the setting is re-enabled in the environment. Transcripts for conversations that occurred when the setting was off will still be unavailable.  | On |
 
-### Sharing Copilot Studio agent data with Viva Insights (preview)
+### Sharing Copilot Studio agent data with Viva Insights
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Allow Copilot Studio to share data with Viva Insights | When **On**, enables Copilot Studio data to flow to Microsoft Viva Insights for [analytical reports](/microsoft-copilot-studio/analytics-viva-insights). Also requires [Microsoft 365 services](geographical-availability-copilot.md#copilots-and-generative-ai-features-that-depend-on-data-movement-across-regions) to be turned on. For information on what data is shared with Viva Insights, see [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). | On |
 | Allow cross-geo boundary sharing of aggregated analytics data of your tenant preferred data location for Viva Insights is different than the location of your Copilot Studio environment | For tenants with Power Platform environments across [multiple geos](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features). When **On**, Microsoft Copilot Studio is sent and stored in the base location of the tenant in Viva Insights, even when crossing geo boundaries. Requires turning on **Allow Copilot Studio to share data with Viva Insights**.  | Off |
-
-## Microsoft 365 Copilot
-
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-| Allow data and objects in this environment to be used with Microsoft 365 Copilot. | Use this setting to allow integration of Copilot plugins from this environment. Learn more in [Use actions in Microsoft Copilot](/microsoft-copilot-studio/copilot-plugins-overview#use-actions-in-microsoft-copilot).  | Off |
 
 ## AI Builder
 
@@ -130,22 +127,31 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable this feature for:  | When searching for data in a grid, you can ask questions with natural language. For example, requesting “cases with high priority with overdue follow-up by date” filters your view to display only those relevant cases. Learn more in [Smart grid (preview)](/power-apps/user/grid-filters#smart-grid-preview).<br><br>To allow natural language search in an environment, users in that environment must have a Dynamics 365 license. If the environment only has users with Power Apps licensing, other Copilot licenses are required to use this feature in production.   | Users as the feature becomes available (default)<br><br>**Note**: Starting with the December monthly channel, users with Dynamics 365 licenses start seeing the feature in their apps.  We expect this rollout to be gradual. While quality of the feature is maintained for all users, it's possible that different users might see some UI variations in their experience.|
+| Enable this feature for:  | When searching for data in a grid, you can ask questions with natural language. For example, requesting "cases with high priority with overdue follow-up by date" filters your view to display only those relevant cases. Learn more in [Smart grid (preview)](/power-apps/user/grid-filters#smart-grid-preview).<br><br>To allow natural language search in an environment, users in that environment must have a Dynamics 365 license. If the environment only has users with Power Apps licensing, other Copilot licenses are required to use this feature in production.   | Users as the feature becomes available (default)<br><br>**Note**: Starting with the December monthly channel, users with Dynamics 365 licenses start seeing the feature in their apps.  We expect this rollout to be gradual. While quality of the feature is maintained for all users, it's possible that different users might see some UI variations in their experience.|
 | Allow AI to generate charts to visualize the data in a view (Preview) | When **On**, users can select the **Visualize** button on the view pages of model-driven apps to see an AI-generated chart that aggregates the records in the view to show trends and distributions. Learn more in [Visualize data in a view with Copilot](/power-apps/user/visualize-data-in-copilot). | Auto<br><br>This feature is turned on by default for all users who have **Natural language grid and view search (preview)** turned on.|
 | Apply AI-generated chart styling to all charts | When **On**, charts created from the legacy chart designer have the same usability enhancements like modern colors and styling as AI-generated charts. Learn more in [Visualize data in a view with Copilot](/power-apps/user/visualize-data-in-copilot). | Auto<br><br>This feature is turned on by default for all users that have **Allow AI to generate charts to visualize the data in a view (Preview)** set to **On** .|
 
 ## AI insight cards (preview)
 
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Displays a summary generated by Copilot on records in model-driven app main forms. | If **On**, summaries generated by Copilot are displayed to users for rows (records) on model-driven app main forms. More information: [Configure a row summary for a model-driven app main form](/power-apps/maker/data-platform/configure-form-row-summary) | Off |
+
+## Power Automate Process Mining
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Allow users to access production-ready preview Process Mining features. | If **On**, Power Automate Process Mining users in this environment have access to production-ready preview features in Process Mining. | On |
 
 ## Embedded content
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Power BI visualization embedding| Learn more in [Add or edit Power BI visualizations on your dashboard](/powerapps/user/add-powerbi-dashboards).| Off |
-|Bing Maps| If **On**, Customer Engagement (on-premises) users need to enter a Bing Maps key. Users don't need to enter a key. | Off | 
+|Bing Maps| If **On**, Customer Engagement (on-premises) users need to enter a Bing Maps key. Users don't need to enter a key. | Off |
 |Prevent social data in Dynamics | If you don't want to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service), select **Off**. If you disable social engagement, your organization can't receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service). Users can continue to work with existing social data, however.| Off  |
 
 ## Communications
@@ -222,20 +228,14 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 |---------|-------------|---------------|
 | Allow records to be merged asynchronously | If **On**, records merged through the Unified Client interface are merged asynchronously in the background. |Off |
 
-## Create new canvas apps and cloud flows in a Dataverse solution (preview)
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+## Create new canvas apps and cloud flows in Dataverse solutions
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Canvas apps | Learn more in [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default). | Off |
 | Cloud flows | Learn more in [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default). | Off |
 
-## Cloud flow run history in Dataverse (preview)
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+## Cloud flow run history in Dataverse
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
@@ -263,7 +263,7 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable admins to link Dataverse tables with a Microsoft Fabric workspace and get real-time insights. |  Enables a system admin to disable the “Link to Fabric: feature in the selected environment. The [Link to Fabric](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric) feature is used to get insights on Dataverse and Finance and operations data. Admins can reduce data exposure by disabling this feature in specific environments such as sandbox and dev environments. | On |
+| Enable admins to link Dataverse tables with a Microsoft Fabric workspace and get real-time insights. |  Enables a system admin to disable the "Link to Fabric: feature in the selected environment. The [Link to Fabric](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric) feature is used to get insights on Dataverse and Finance and operations data. Admins can reduce data exposure by disabling this feature in specific environments such as sandbox and dev environments. | On |
 | Enable users to define Dataverse virtual tables using data from Microsoft Fabric and build apps (preview). | Enables a system admin to disable the feature where makers can [create virtual tables using Fabric OneLake data](/power-apps/maker/data-platform/azure-synapse-link-build-apps-with-fabric). While this feature is useful for building apps and driving insights from Fabric One Lake data, admins can disable this feature in specific sandbox and developer environments as needed. | On |
 
 ## Power Automate capacity
@@ -342,16 +342,6 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Share ideas query data to help improve ideas results. |To help Microsoft improve Power Apps Ideas, you can share your ideas query data with Microsoft. Learn more in [Power Apps Ideas (preview)](/power-apps/maker/canvas-apps/power-apps-ideas).|  Off |
-
-## Power BI components (preview)
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
-
-| Setting | Description | Default value |
-|---------|-------------|---------------|
- |Allow creation of Power BI components  |  If **Off**, the environment doesn't have access to Power BI. Environments with a Dataverse database have this setting. Creating a Power BI component generates a dedicated Power BI workspace for that environment. All the Power BI artifacts corresponding to the Power BI components created in an environment are generated in that dedicated Power BI environment workspace. Learn more in [Permission sync between Power Apps environment and Power BI workspace](/power-apps/maker/model-driven-apps/customize-manage-powerbi-components#permission-sync-between-power-apps-environment-and-power-bi-workspace). |On |
-|Automatically assign permission to Power BI workspaces | If **On**, synchronization takes place between predefined role privileges and the permissions of the dedicated Power BI environment workspace. The following roles are assigned with permissions:<br/><br/>System administrator: Power BI workspace admin > Power BI workspace admin permission.<br/><br/> System Customizer: Power BI workspace contributor > Power BI workspace contributor permission.<br/><br/> Power BI workspace viewer > Power BI workspace viewer permission.<br/><br/> [Learn more about Power BI workspace permission](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles). | On|
- |Allow information sharing between this environment and Power BI workspaces in other geographic regions | When this setting is **On** and the Power BI tenant setting **[Power Platform interregional access](/power-bi/admin/service-admin-portal-integration#power-platform-interregional-access)** is also **On**, cross-geo operations can take place. Learn more in [Cross-geo operations](/power-bi/collaborate-share/service-power-bi-powerapps-integration-considerations#cross-geo-operations). |On|
 
 ## Recycle Bin (preview)
 
