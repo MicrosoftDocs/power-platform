@@ -63,6 +63,12 @@ landingContent:
             url: wp-security.md
           - text: Security roles and privileges
             url: security-roles-privileges.md
+          - text: Data protection and privacy
+            url: security/data-protection-privacy.md
+          - text: Identity and access management
+            url: security/identity-access-management.md
+          - text: Compliance
+            url: security/compliance.md
        - linkListType: how-to-guide
          links:
           - text: Create and manage users
