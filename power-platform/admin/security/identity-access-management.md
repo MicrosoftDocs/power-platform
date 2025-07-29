@@ -103,7 +103,7 @@ Be aware of the following known issues with the feature:
 - The **Membership** page for the security role shows only the security roles in the default business unit. To view all security roles across all business units, turn off the **Display only parent security roles** option.
 - After you remove a user from the System administrator role, it takes about 24 hours for the page to show the updated administrator count.
 
-## Authentication for agents
+## Authentication for agents (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
@@ -115,7 +115,7 @@ This feature allows administrators to configure authentication for all agent int
 
 For information about the authentication options in Copilot Studio, go to [Configure user authentication in Copilot Studio](/microsoft-copilot-studio/configuration-end-user-authentication).
 
-The **Authenitcation for agents** feature is a modernized framework of the existing virtual connector, **Chat without Microsoft Entra ID**. It helps you scale through environment-level configurations and rules. If you're using both the virtual connector and the **Authentication for agents** setting in the **Security** area of the Power Platform admin center, then access must be allowed in both places for it to be allowed at runtime. If you block anonymous access in either one of the places, then at runtime the most restrictive behavior is enforced and it will be blocked. For example, consider the information in the following table.
+The **Authenitcation for agents** feature is a modernized framework of the existing [virtual connector](../wp-data-loss-prevention.md#virtual-connectors), **Chat without Microsoft Entra ID**. It helps you scale through environment-level configurations and rules. If you're using both the virtual connector and the **Authentication for agents** setting in the **Security** area of the Power Platform admin center, then access must be allowed in both places for it to be allowed at runtime. If you block anonymous access in either one of the places, then at runtime the most restrictive behavior is enforced and it will be blocked. For example, consider the information in the following table.
 
 | Access in the virtual connector | Access in the _Authentication for agents_ settings in Power Platform admin center| Runtime enforeement |
 |------|-----------------------------|----------------------|
@@ -126,7 +126,7 @@ The **Authenitcation for agents** feature is a modernized framework of the exist
 
 We recommend that all customers move towards using the **Authentication for agents** setting in the Power Platform admin center to leverage the capability of groups and rules.
 
-## Agent access points
+## Agent access points (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
