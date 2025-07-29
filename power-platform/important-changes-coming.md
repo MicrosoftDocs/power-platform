@@ -118,7 +118,7 @@ Effective February 19, 2025, the **Train with examples** feature to transform ex
 
 ## Deprecation of Snowflake connector [Deprecated]
 
-The Snowflake connector was discontinued on May 26, 2025. A new and improved version with more features is now available. For more details, visit the new [Snowflake (Preview)](/connectors/snowflakev2/) connector reference article. We strongly encourage you to switch soon to take advantage of the upgrades.  
+The Snowflake connector was discontinued on May 26, 2025. A new and improved version with more features is now available. For more details, go to the new [Snowflake (Preview)](/connectors/snowflakev2/) connector reference article. We encourage you to switch soon to take advantage of the upgrades.  
 
 ## What action do I need to take?
 
