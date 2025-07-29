@@ -5,13 +5,16 @@ author: sericks007
 ms.topic: how-to
 ms.date: 06/02/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: sericks
 ms.reviewer: ellenwehrle
 ms.contriutors:
  - yingchin
  - mbajwa
  - olegov
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 
 # View and download Microsoft Dataverse analytics

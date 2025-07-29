@@ -7,11 +7,13 @@ ms.date: 05/16/2025
 author: DanaMartens
 contributors: yingchin
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: dmartens
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 # Connect to Exchange Server (on-premises)
 

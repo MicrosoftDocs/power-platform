@@ -15,6 +15,7 @@ ms.subservice: admin
 ms.author: samathur
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # PowerShell support for Power Apps and Power Automate

@@ -9,11 +9,13 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 06/13/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: matgupta 
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 
 # Automatic deletion of inactive Dataverse for Teams environments
