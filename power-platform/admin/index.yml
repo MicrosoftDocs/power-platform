@@ -103,7 +103,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Get help & support
+          - text: Get support
             url: get-help-support.md
           - text: Check online service health
             url: check-online-service-health.md
