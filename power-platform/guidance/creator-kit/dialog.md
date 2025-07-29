@@ -1,18 +1,22 @@
 ---
 title: Dialog control reference (experimental) | Creator Kit
-description: Learn about the details and properties of the Dialog control in the Creator Kit.
+description: Learn about the Dialog control in the Creator Kit, including its properties, behavior, and configuration for canvas apps.
 author: denise-msft
 ms.component: pa-maker
 ms.topic: concept-article
-ms.date: 05/16/2022
+ms.date: 07/29/2025
 ms.subservice: guidance-toolkit
 ms.author: demora
-ms.reviewer: tapanm
-search.audienceType: 
+ms.reviewer: jhaskett-msft
+search.audienceType:
   - maker
 contributors:
   - tapanm-msft
   - slaouist
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:07/28/2025
 ---
 # :::no-loc text="Dialog"::: control (experimental)
 
@@ -24,15 +28,16 @@ A control used to group content.
 
 > [!IMPORTANT]
 > - This is an experimental feature.
-> - Experimental features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
 ## Description
 
 A dialog box (Dialog) is a temporary pop-up window that takes focus from the page or app and requires people to interact with it. It's primarily used for confirming actions, such as deleting a file, or asking people to make a choice.
 
-This canvas component mimics the style and behavior of the [Fluent UI Dialog control](https://developer.microsoft.com/fluentui#/controls/web/Dialog). See documentation for best practices.
+This canvas component mimics the style and behavior of the [Fluent UI Dialog control](https://developer.microsoft.com/fluentui#/controls/web/Dialog). Consult the documentation for best practices.
 
-[View the component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src).
+[View the component in the Creator Kit GitHub repository](
+https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/src/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri.msapp).
 
 ## Properties
 
@@ -40,14 +45,14 @@ This canvas component mimics the style and behavior of the [Fluent UI Dialog con
 
 | Property | Description |
 | -------- | ----------- |
-| `Buttons` | A dataset that defines the buttons (see properties below) |
-| `Title` | Text displayed in the title section |
-| `OverlayColor` | Color displayed in the overlay area |
-| `DialogWidth` | The width of the dialog (not to be confused with the control width, which should span the app width) |
+| `Buttons` | A dataset that defines the buttons (learn more in [Button properties](#buttons-properties)). |
+| `Title` | Text displayed in the title section. |
+| `OverlayColor` | Color displayed in the overlay area. |
+| `DialogWidth` | The width of the dialog (not to be confused with the control width, which should span the app width). |
 | `DialogHeight` | The height of the dialog (not to be confused with the control height, which should span the app height). |
-| `SubTitle` | Text displayed under the title |
+| `SubTitle` | Text displayed under the title. |
 
-### `Buttons` properties
+### Buttons properties
 
 | Property | Description |
 | -------- | ----------- |
@@ -70,22 +75,22 @@ Table(
 
 | Property | Description |
 | -------- | ----------- |
-| `Theme` | Theme object. See [theming](theme.md) for guidance on how to configure. |
+| `Theme` | Theme object. Learn more about [theming](theme.md). |
 
-For formatting, see guidance in the Format panel content section of [Panel](./panel.md#format-panel-content).
+Learn about formatting in the Format panel content section of [Panel](./panel.md#format-panel-content).
 
 ### Event properties
 
 | Property | Description |
 | -------- | ----------- |
-| `OnCloseSelect` | Action expression that's executed when the close button is selected. |
-| `OnButtonSelect` | Action expression that's executed when one of the action buttons are selected. |
+| `OnCloseSelect` | Action expression executed when the close button is selected. |
+| `OnButtonSelect` | Action expression executed when one of the action buttons is selected. |
 
 ## Behavior
 
 ### Configure Dialog visibility
 
-Make the `Dialog` control itself (or the surface it's located within) visible when a Boolean (true/false) type variable changes to true, and assign that variable to the dialog's visibility property. After the dialog is displayed, you can hide the dialog by updating the variable on the reset property, which is triggered when the close icon is selected.
+Make the `Dialog` control itself (or the surface it's located within) visible when a Boolean (true/false) variable changes to true. Assign that variable to the dialog's visibility property. To hide the dialog after it's displayed, update the variable on the reset property triggered when the close icon is selected.
 
 The following shows the Power Fx formula to open the dialog in an action formula on another component somewhere in the app (for example, the `OnSelect` property of a button):
 
