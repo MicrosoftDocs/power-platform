@@ -104,9 +104,20 @@ Be aware of the following known issues with the feature:
 - After you remove a user from the System administrator role, it takes about 24 hours for the page to show the updated administrator count.
 
 ## Authentication for agents
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
 This feature allows administrators to configure authentication for all agent interactions in the environment. Admins can select one of the following options:
 
 - **Authenticate with Microsoft or Authenticate Manually** allows you to force authentication through Microsoft Entra ID or [authenticate manually](/microsoft-copilot-studio/configuration-end-user-authentication#authenticate-manually). This helps prevent makers from creating or using agents with no authentication.
 - **No authentication** allows anonymous access.
 
 For information about the authentication options in Copilot Studio, go to [Configure user authentication in Copilot Studio](/microsoft-copilot-studio/configuration-end-user-authentication).
+
+## Agent access points
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+
