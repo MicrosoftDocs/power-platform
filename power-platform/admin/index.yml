@@ -79,6 +79,12 @@ landingContent:
     # Card
   - title: Copilot
     linkLists:
+       - linkListType: concept
+         links:
+          - text: Copilots and generative AI in Power Platform
+            url: copilot.md
+          - text: Responsible AI FAQs for Microsoft Power Platform
+            url: responsible-ai-overview.md
       - linkListType: how-to-guide
         links:
           - text: Move data across regions for Copilots and generative AI features
