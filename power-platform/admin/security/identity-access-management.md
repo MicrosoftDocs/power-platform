@@ -120,4 +120,15 @@ For information about the authentication options in Copilot Studio, go to [Confi
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
+This feature gives administrators control over where agents can be published, allowing customer engagement across multiple platforms. Admins can select multiple available channels, such as Microsoft Teams, Direct Line, Facebook, Dynamics 365 for Customer Service, SharePoint, and WhatsApp. 
+ 
+The **Agent access points** feature is a modernized framework of the existing virtual connectors. The feature helps you scale through environment-level configurations and rules. If you're using both legacy, data loss prevention (DLP) virtual connectors and the modern **Agent access points** settings in the **Security** area of the Power Platform admin center, then access must be allowed in both places for it to be allowed at runtime. If you block anonymous access in either one of the places, then at runtime the most restrictive behavior is enforced and it will be blocked. For example, consider the information in the following table.
 
+| Access in the data loss prevention (DLP) virtual connector | Access in the _Agent access points_ settings in Power Platform admin center| Runtime enforeement |
+|------|-----------------------------|----------------------|
+| Blocked | Blocked | Blocked |
+| Allowed | Blocked| Blocked|
+| Blocked| Allowed | Blocked|
+| Allowed| Allowed | Allowed|
+
+We recommend that all customers move towards using the **Agent access points** settings in the Power Platform admin center to leverage the capability of groups and rules.
