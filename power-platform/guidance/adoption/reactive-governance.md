@@ -64,9 +64,9 @@ You should keep a few things in mind when you're considering using Managed Envir
 
 Managed Environments is a set of features that's designed to make governance of Power Platform easier by giving more control to and requiring less effort from admins. The governance processes of many organizations were influenced by the [CoE Starter Kit](/power-platform/guidance/coe/overview). Others are based on the kit's out-of-the-box features, extended to meet an organization's specific needs. Still others use the CoE Starter Kit to expand the governance features of Managed Environments.
 
-The engineering team for Managed Environments worked closely with [Power CAT](https://aka.ms/whoispowercat), the team responsible for the Starter Kit, to identify the most-used features in the kit and add them to Managed Environments. As a result, some features are available in both products. When you use Managed Environments, in-product features are managed and supported by Microsoft. You don't need to update or maintain them&mdash;they're updated automatically with Power Platform release waves. If your organization uses the CoE Starter Kit, it's important to establish and maintain an internal process to update it monthly. Follow the suggestions presented in the [CoE Starter Kit Office Hours](https://aka.ms/coeofficehours).
+The engineering team for Managed Environments worked closely with [Power CAT](https://aka.ms/whoispowercat), the team responsible for the CoE Starter Kit, to identify the most-used features in the kit and add them to Managed Environments. As a result, some features are available in both products. When you use Managed Environments, in-product features are managed and supported by Microsoft. You don't need to update or maintain them&mdash;they're updated automatically with Power Platform release waves. If your organization uses the CoE Starter Kit, it's important to establish and maintain an internal process to update it monthly. Follow the suggestions presented in the [CoE Starter Kit Office Hours](https://aka.ms/coeofficehours).
 
-The recommended approach is to use both&mdash;start with Managed Environments, and fill in any gaps with the Starter Kit. [How to decide whether to use Managed Environments with the CoE Starter Kit](#how-to-decide-whether-to-use-managed-environments-with-the-coe-starter-kit).
+We recommend starting with Managed Environments. If you discover any gaps in your governance requirements, explore whether the CoE Starter Kit offers features that can address them.  [How to decide whether to use Managed Environments with the CoE Starter Kit](#how-to-decide-whether-to-use-managed-environments-with-the-coe-starter-kit).
 
 Since the kit is community-driven, it isn't subject to the same service level agreements as our licensed products. Go to the [GitHub site](https://github.com/microsoft/coe-starter-kit/issues) to report bugs, ask questions, and request new features.
 
@@ -88,6 +88,11 @@ It's important to understand what happens if your organization stops using Manag
 | Extended backup (7 to 28 days)| None | Indirect: The feature is limited. |
 | Export to App Insights | None | Indirect: The feature is limited. |
 | Catalog in Power Platform | None | Indirect: The feature is limited. |
+| Environment routing | Direct: They will not be routed to their personal developer environments. | Indirect: They can't control where makers are routed to. |
+| Environment groups | None | Direct: They can't apply policies and manage settings across multiple environments. |
+| Actions page | None | Direct: They can't monitor and respond to governance issues from a single location. |
+| Governance recommendations | None | Direct: They don't receive suggestions on how to improve governance practices. |
+| Inventory explorer | None | Direct: They can't easily view and manage all resources within the environment. |
 
 ## Common settings for Managed Environments
 
@@ -130,7 +135,7 @@ If you're considering activating Managed Environments, you might find the follow
 
 ## How to decide whether to use Managed Environments with the CoE Starter Kit
 
-The CoE Starter Kit offers a comprehensive set of features to administer, govern, and nurture Power Platform adoption. It's a product of our experimentation and innovation with an open-source, low-code model that's heavily influenced by customer feedback. Some of its features overlap features of Managed Environments, and Managed Environments is planned to eventually replace some features of the kit. As Managed Environments is evolving, we're continuing to add new features to the kit to gauge interest. The CoE Starter Kit isn't intended to duplicate features that exist in Managed Environments. It focuses on innovation and addressing unmet customer requests as we gauge feedback on what's needed next.
+The CoE Starter Kit offers a comprehensive set of features to administer, govern, and nurture Power Platform adoption. It's a product of our experimentation and innovation with an open-source, low-code model that's heavily influenced by customer feedback. Some of its features overlap features of Managed Environments, and Managed Environments features are replacing some features of the kit. The CoE Starter Kit isn't intended to duplicate features that exist in Managed Environments. It focuses on innovation and addressing unmet customer requests as we gauge feedback on what's needed next.
 
 You can use Managed Environments alone or with the CoE Starter Kit to administer and govern your adoption of Power Platform. How do you know which option to choose?
 
@@ -144,7 +149,7 @@ The CoE Starter Kit uses publicly available APIs and actions to apply guardrails
 
 Managed Environments continually evolves based on customer feedback and learnings from customers who are using the CoE Starter Kit. Some features fully or partially overlap. Conversely, the Starter Kit has features that organizations can use to do things that aren't yet possible with Managed Environments, and vice versa. We recommend that you review the [Center of Excellence (CoE) overview](../coe/overview.md).
 
-The following comparison of features of Managed Environments and the CoE Starter Kit should help guide your decisions.
+The following comparison of some features of Managed Environments and the CoE Starter Kit should help guide your decisions.
 
 **Managed Environments feature:** Maker welcome
 **Available in CoE Starter Kit:** Partially
