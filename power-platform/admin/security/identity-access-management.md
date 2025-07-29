@@ -4,7 +4,7 @@ description: Learn how to manage identity and access in the Power Platform admin
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/14/2025
+ms.date: 07/29/2025
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
@@ -115,6 +115,17 @@ This feature allows administrators to configure authentication for all agent int
 
 For information about the authentication options in Copilot Studio, go to [Configure user authentication in Copilot Studio](/microsoft-copilot-studio/configuration-end-user-authentication).
 
+The **Authenitcation for agents** feature is a modernized framework of the existing virtual connector, **Chat without Microsoft Entra ID**. It helps you scale through environment-level configurations and rules. If you're using both data policy, virtual connectors and the **Authenticate with Microsoft or Authenticate Manually** setting in the **Security** area of the Power Platform admin center, then access must be allowed in both places for it to be allowed at runtime. If you block anonymous access in either one of the places, then at runtime the most restrictive behavior is enforced and it will be blocked. For example, consider the information in the following table.
+
+| Access in the data policy, virtual connector | Access is set to _Authenticate with Microsoft or Authenticate Manually_ in Power Platform admin center| Runtime enforeement |
+|------|-----------------------------|----------------------|
+| Blocked | Blocked | Blocked |
+| Allowed | Blocked| Blocked|
+| Blocked| Allowed | Blocked|
+| Allowed| Allowed | Allowed|
+
+We recommend that all customers move towards using the **Authenticate with Microsoft or Authenticate Manually** settings in the Power Platform admin center to leverage the capability of groups and rules.
+
 ## Agent access points
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
@@ -122,7 +133,7 @@ For information about the authentication options in Copilot Studio, go to [Confi
 
 This feature gives administrators control over where agents can be published, allowing customer engagement across multiple platforms. Admins can select multiple available channels, such as Microsoft Teams, Direct Line, Facebook, Dynamics 365 for Customer Service, SharePoint, and WhatsApp. 
  
-The **Agent access points** feature is a modernized framework of the existing virtual connectors. The feature helps you scale through environment-level configurations and rules. If you're using both legacy, data loss prevention (DLP) virtual connectors and the modern **Agent access points** settings in the **Security** area of the Power Platform admin center, then access must be allowed in both places for it to be allowed at runtime. If you block anonymous access in either one of the places, then at runtime the most restrictive behavior is enforced and it will be blocked. For example, consider the information in the following table.
+The **Agent access points** feature is a modernized framework of the existing virtual connectors. It helps you scale through environment-level configurations and rules. If you're using both data policy, virtual connectors and the **Agent access points** settings in the **Security** area of the Power Platform admin center, then access must be allowed in both places for it to be allowed at runtime. If you block anonymous access in either one of the places, then at runtime the most restrictive behavior is enforced and it will be blocked. For example, consider the information in the following table.
 
 | Access in the data loss prevention (DLP) virtual connector | Access in the _Agent access points_ settings in Power Platform admin center| Runtime enforeement |
 |------|-----------------------------|----------------------|
