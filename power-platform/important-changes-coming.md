@@ -100,7 +100,7 @@ If action isn't taken, beginning 30 June 2025, the application(s) using the V1 a
 
 ### Required action
 
-Please make sure you replace the V1 actions with the new V2 actions of the SQL server connector in all of the applications utilizing it. If you need assistance in Migrating V1 operations to V2 equivalent. Please check here: [SQL server actions](/connectors/sql/#migrate-v1-operations-to-v2-equivalent)
+Be sure to replace the V1 actions with the new V2 actions of the SQL server connector in all of the applications utilizing it. If you need assistance in Migrating V1 operations to V2 equivalent. Check here: [SQL server actions](/connectors/sql/#migrate-v1-operations-to-v2-equivalent)
 
 ## Deprecation of rich text editor classic experience
 
@@ -122,7 +122,7 @@ The Snowflake connector was discontinued on May 26, 2025. A new and improved ver
 
 ## What action do I need to take?
 
-Make sure you replace your existing connections of the deprecated Snowflake connector with the new [Snowflake (Preview)](/connectors/snowflakev2/) connector in all of the applications utilizing this connector. If you need assistance in replacing your connections in Power Automate Flows or Power Apps, please refer to the below following documentation:
+Make sure you replace your existing connections of the deprecated Snowflake connector with the new [Snowflake (Preview)](/connectors/snowflakev2/) connector in all of the applications utilizing this connector. If you need assistance in replacing your connections in Power Automate Flows or Power Apps, refer to the below following documentation:
 
 - [Manage connections in Power Automate - Power Automate | Microsoft Learn](/power-automate/add-manage-connections)
 - [Manage connections in canvas apps - Power Apps | Microsoft Learn](/power-apps/maker/canvas-apps/add-manage-connections)
@@ -298,7 +298,7 @@ If custom code in web resources had a dependency on this library, it stopped wor
 
 ### Are you impacted?
 
-Now that the library is removed, you'll see errors in any web resources that depended on this library.
+Now that the library is removed, you see errors in any web resources that depended on this library.
 You can search your web resource code for this line: `/_static/_common/scripts/jquery-2.1.1.min.js`.
 
 If your code isn't already in a source code repository, you should export your solutions and extract the contents. There are many tools you might use to search the contents. For example, you can use the search capabilities of Visual Studio Code. More information: [Visual Studio Code: Basic Editing > Search across files](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files)
@@ -345,7 +345,7 @@ Evaluate existing forms that include a deprecated control and replace them with 
 
 ## Microsoft Dataverse (legacy) connector for Power Automate flows is deprecated
 
-Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (previously referred to as the CDS 2.0 connector) is deprecated. The connector will continue to work in existing flows until a final date is announced. You'll have one year from the date of announcement to move to the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector.
+Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (previously referred to as the CDS 2.0 connector) is deprecated. The connector continues to work in existing flows until a final date is announced. You have one year from the date of announcement to move to the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector.
 
 ### Why is this needed?
 
@@ -357,7 +357,7 @@ Cloud flows that use the [Microsoft Dataverse (legacy)](/connectors/commondatase
 
 ### Action required by you
 
-Review the cloud flows you own that use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector and identify which are ready to update. As of January 2024, most flows using the legacy connector are recommended for migration with the exception of flows triggering based on changes in other environments.
+Review the cloud flows you own that use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector and identify which are ready to update. As of January 2024, most flows using the legacy connector are recommended for migration except for flows triggering based on changes in other environments.
 
 A migration assistant is available on the detail page of cloud flows that are able to be automatically updated. The assistant creates a copy of the flow with the legacy connector's triggers, actions, and dynamic content references replaced.
 
