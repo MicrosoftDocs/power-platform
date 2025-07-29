@@ -225,16 +225,38 @@ In these examples, replace `<url>`, `<table collection name>`, and `<recordid>` 
 
   `https://<url>/api/data/v9.1/<table collection name>(<recordid>)?$select=<column_name>&UnMaskedData=true`
 
+#### Reading unmasked values on the form
+Users who were granted permission to [read unmasked fields](#grant-permissions-to-a-secured-column-with-a-masking-rule) will see a button to read the unmasked values on the form.
+
+<screenshot>
+
+To read the unmasked values, select the "Read" icon (image).
+
+All read unmasked value requests are audited.
+
+#### Creating and updating unmasked values on the form
+
+When you create a new record, you enter the sensitive field as unmasked values. After you save, the form automatically refreshes, and the sensitive field is immediately masked. 
+
+To update the field, you will need the [**allowed read unmasked** and **allowed update** permissions](#grant-permissions-to-a-secured-column-with-a-masking-rule). 
+
+Select the read unmasked field button to get the unmasked value, then update the field and save. 
+
+### Audit logs on masked fields
+All create and update record events will show the before and after values as masked values.
+<image>
+Read unmasked value is also logged.
+<image>
+
 ## Known limitations/Not supported
 
-- **Reading unmasked values on the form**
+- **Reading unmasked values on the form** (available only for users who have system administrator security role assigned)
 
-  Masked values are displayed on the detail/main form. In future releases, there should be a button to allow users who have the *Read unmasked* permission to read the unmasked values.
-
-- **Creating and updating unmasked values on the form**
-
-  When you create a new record, you enter the sensitive field as unmasked values. After you save, the form automatically refreshes, and the sensitive field is immediately masked. You can update the field but make sure that you enter the unmasked values.
+  Masked values are displayed on the detail/main form. There is a button to allow users who have the *allowed read unmasked* permission to read the unmasked values.
 
 - **Embedded images in Rich text data**
 
   If you're using Rich text format in a large text area, like email body, and you accept embedded images, the masking rules continue to be applied to the image making it unreadable. 
+
+- **Masked fields Audit logs details**
+  Details of the masked fields audit logs for Read is only available on the Power Platform Environment settings Auditing tab. The Audit History screen on the client form does not show the masking details.
