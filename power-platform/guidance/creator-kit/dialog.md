@@ -4,7 +4,7 @@ description: Learn about the Dialog control in the Creator Kit, including its pr
 author: denise-msft
 ms.component: pa-maker
 ms.topic: concept-article
-ms.date: 07/28/2025
+ms.date: 07/29/2025
 ms.subservice: guidance-toolkit
 ms.author: demora
 ms.reviewer: jhaskett-msft
@@ -45,14 +45,14 @@ https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/Solut
 
 | Property | Description |
 | -------- | ----------- |
-| `Buttons` | A dataset that defines the buttons (see properties below). |
+| `Buttons` | A dataset that defines the buttons (learn more in [Button properties](#buttons-properties)). |
 | `Title` | Text displayed in the title section. |
 | `OverlayColor` | Color displayed in the overlay area. |
 | `DialogWidth` | The width of the dialog (not to be confused with the control width, which should span the app width). |
 | `DialogHeight` | The height of the dialog (not to be confused with the control height, which should span the app height). |
 | `SubTitle` | Text displayed under the title. |
 
-### `Buttons` properties
+### Buttons properties
 
 | Property | Description |
 | -------- | ----------- |
@@ -75,7 +75,7 @@ Table(
 
 | Property | Description |
 | -------- | ----------- |
-| `Theme` | Theme object. Learn more about [theming](theme.md) including on configuration. |
+| `Theme` | Theme object. Learn more about [theming](theme.md). |
 
 Learn about formatting in the Format panel content section of [Panel](./panel.md#format-panel-content).
 

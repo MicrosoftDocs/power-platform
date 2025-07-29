@@ -154,12 +154,12 @@ PeoplePicker1.SelectedPeople
 
     Add Users or specific users from the table to the items collection (under `Suggestions_Items` property) of `PeoplePicker`.
 
-    - `AAD Users` table
+    - `AAD Users` table:
 
       ```power-fx
       Search('AAD Users', Self.SearchText,"displayname" ,"mail")
       ```
-    - `Users` table
+    - `Users` table:
     
       ```power-fx
       Search('Users', Self.SearchText,"fullname","internalemailaddress")

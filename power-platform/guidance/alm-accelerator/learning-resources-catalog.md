@@ -2,7 +2,7 @@
 title: Learn more about the ALM Accelerator
 description: Learn about the resources available to help you become familiar with the ALM Accelerator for Power Platform.
 ms.topic: concept-article
-ms.date: 07/25/2025
+ms.date: 07/29/2025
 ms.subservice: guidance-toolkit
 author: rsantos00
 ms.author: rusant

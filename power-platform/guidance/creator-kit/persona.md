@@ -4,7 +4,7 @@ description: Learn about the Persona control in the Creator Kit, a feature for d
 author: denise-msft
 ms.component: pa-maker
 ms.topic: concept-article
-ms.date: 07/28/2025
+ms.date: 07/29/2025
 ms.subservice: guidance-toolkit
 ms.author: demora
 ms.reviewer: jhaskett-msft

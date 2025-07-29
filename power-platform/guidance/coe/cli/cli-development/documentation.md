@@ -3,7 +3,7 @@ title: CoE CLI development documentation (Deprecated)
 description: Learn how to document and manage commands for the CoE CLI, including add Markdown pages and record command-line sessions.
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.date: 07/25/2025
+ms.date: 07/29/2025
 ms.topic: how-to
 ms.reviewer: jhaskett-msft
 search.audienceType:
@@ -44,7 +44,7 @@ Example diagrams:
 
 ### Diagram styles
 
-To style the diagram **sample.mmd**.
+To style the diagram **sample.mmd**:
 
 1. Use subgroup styles.
 
@@ -57,7 +57,7 @@ To style the diagram **sample.mmd**.
         style journey fill:transparent,stroke:green,stroke-width:2px
     ```
 
-1. Apply CSS styles with a file in the same folder. For example, in the sample, create **sample.css** in same folder as the .mmd file.
+1. Apply CSS styles with a file in the same folder. For example, create **sample.css** in same folder as the .mmd file.
 
     ```css
     #L-start-finish path {
@@ -127,7 +127,7 @@ This command displays the contents of [help](https://aka.ms/coe-cli/help/alm).
 
 To include a short animated recording of commands that demonstrate the expected output, use the following process.
 
-1. Install **termtosvg** in a Unix based terminal.
+1. Install **termtosvg** in a Unix-based terminal.
 
     ```bash
     pip3 install --user termtosvg
