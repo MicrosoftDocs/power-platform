@@ -28,11 +28,11 @@ landingContent:
             url: admin-documentation.md
           - text: Power Platform licensing
             url: pricing-billing-skus.md
-          - text: New storage model
+          - text: Dataverse capacity-based storage details
             url: capacity-storage.md
-          - text: Sign in to your apps
+          - text: Sign in to Dynamics 365 and Office apps
             url: sign-in-office-365-apps.md
-          - text: Use the new Power Platform admin center
+          - text: Use the new and imporoved Power Platform admin center
             url: new-admin-center.md
        
 
@@ -41,17 +41,17 @@ landingContent:
     linkLists:
        - linkListType: concept
          links:
-          - text: Understand environments
+          - text: Environment management capabilities
+            url: environment-management-overview.md
+          - text: Power Platform environments overview
             url: environments-overview.md
           - text: Automatic deletion of Power Platform environments
             url: automatic-environment-cleanup.md
        - linkListType: how-to-guide
          links:  
-          - text: Create an environment
+          - text: Create and manage environments
             url: create-environment.md
-          - text: Manage environment settings
-            url: power-platform-settings.md
-          - text: Manage environment updates
+          - text: Opt in to early access updates
             url: opt-in-early-access-updates.md
           
   # Card
