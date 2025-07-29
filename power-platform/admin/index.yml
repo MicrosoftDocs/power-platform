@@ -85,8 +85,8 @@ landingContent:
             url: copilot.md
           - text: Responsible AI FAQs for Microsoft Power Platform
             url: responsible-ai-overview.md
-      - linkListType: how-to-guide
-        links:
+       - linkListType: how-to-guide
+         links:
           - text: Move data across regions for Copilots and generative AI features
             url: geographical-availability-copilot.md
           - text: Track, manage, and scale Copilot adoption in the Power Platform
