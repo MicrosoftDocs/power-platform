@@ -93,7 +93,7 @@ landingContent:
          links:
           - text: Move data across regions for Copilots and generative AI features
             url: geographical-availability-copilot.md
-          - text: Track, manage, and scale Copilot adoption in the Power Platform
+          - text: Track, manage, and scale Copilot adoption
             url: copilot/copilot-hub.md
           - text: View agent inventory (preview)
             url: tenant-wide-agent-inventory.md
