@@ -7,6 +7,7 @@ ms.date: 09/05/2023
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
+ms.custom: sfi-image-nochange
 ---
 
 # Data Export inventory setup

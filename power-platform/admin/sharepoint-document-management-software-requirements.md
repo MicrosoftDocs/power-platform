@@ -9,6 +9,7 @@ ms.date: 09/10/2020
 ms.author: matp
 search.audienceType: 
   - admin
+ms.custom: sfi-ga-nochange
 ---
 # SharePoint document management software requirements
 
