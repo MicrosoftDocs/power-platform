@@ -8,15 +8,16 @@ author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
 ms.subservice: admin
-ms.custom:
-- "admin-security"
--  NewPPAC
 search.audienceType: 
   - admin
 contributors:
-- arjunmayur
-- yingchin
-- sericks
+  - arjunmayur
+  - yingchin
+  - sericks
+ms.custom:
+  - admin-security
+  - NewPPAC
+  - sfi-image-nochange
 ---
 # Limit sharing
 

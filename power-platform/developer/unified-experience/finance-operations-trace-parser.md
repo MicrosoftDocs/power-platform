@@ -7,6 +7,7 @@ ms.topic: how-to
 ms.subservice: developer
 ms.reviewer: pehecke
 ms.author: pvillads
+ms.custom: sfi-image-nochange
 ---
 
 # Diagnose issues and analyze performance using the Trace Parser

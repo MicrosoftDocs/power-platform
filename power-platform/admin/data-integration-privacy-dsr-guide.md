@@ -10,6 +10,7 @@ ms.author: nhelgren
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Responding to Data Subject Rights (DSR) requests for Data Integration for Microsoft Dataverse customer data
 

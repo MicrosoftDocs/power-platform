@@ -5,7 +5,6 @@ ms.subservice: admin
 author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
-ms.custom: "admin-security"
 ms.topic: how-to
 ms.date: 06/04/2025
 ms.contributors:
@@ -14,6 +13,9 @@ contributors:
   - lavanyapg
 search.audienceType: 
   - admin
+ms.custom:
+  - "admin-security"
+  - sfi-image-nochange
 ---
 
 # Delete users from an environment

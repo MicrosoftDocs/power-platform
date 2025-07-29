@@ -18,12 +18,14 @@ contributors:
   - paulliew
   - sericks007
   - syalandur24
-ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 06/18/2025
 search.audienceType: 
   - admin
+ms.custom:
+  - "admin-security"
+  - sfi-image-nochange
 ---
 
 # Control user access to environments with security groups and licenses

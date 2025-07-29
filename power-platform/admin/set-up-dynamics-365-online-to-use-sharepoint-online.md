@@ -7,11 +7,13 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 06/09/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: matp
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 ---
 # Set up customer engagement apps to use SharePoint Online
 
