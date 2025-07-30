@@ -19,9 +19,6 @@ ms.custom:
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-
-## Overview
-
 The **User License Consumption (Preview)** experience in Power Platform admin center helps admins monitor and manage licensing needs for Dynamics 365 Finance and Operations (F&O) apps. It offers transparency into which users need licenses, which ones are properly assigned, and where gaps exist—so you can take action before per user license validation deadlines.
 
 Key capabilities include:
@@ -41,7 +38,7 @@ Key capabilities include:
 
 > ⏱️ The report is refreshed every 24 hours. Last updated timestamp appears at the top right of the report.
 
- :::image type="content" source="media/user-license-consumption-overview.png" alt-text="User License Consumption summary" lightbox="media/user-license-consumption-overview.png":::
+ :::image type="content" source="media/fno-user-licensing/user-license-consumption-overview.png" alt-text="User License Consumption summary" lightbox="media/fno-user-licensing/user-license-consumption-overview.png":::
 
 ## Top-Level Metrics
 
@@ -50,7 +47,7 @@ Key capabilities include:
 
 These metrics are clickable and provide access to user-level data views.
 
- :::image type="content" source="media/user-license-consumption-metrics.png" alt-text="User License Consumption summary" lightbox="media/user-license-consumption-metrics.png":::
+ :::image type="content" source="media/fno-user-licensing/user-license-consumption-metrics.png" alt-text="User License Consumption metrics" lightbox="media/fno-user-licensing/user-license-consumption-metrics.png":::
 
 ## Application-Level License Summaries
 
@@ -73,7 +70,7 @@ Supported applications include:
 
 Click **View all** to drill into the license assignment list for each app.
 
- :::image type="content" source="media/user-license-consumption-card-view-all.png" alt-text="Download license summary" lightbox="media/user-license-consumption-card-view-all.png":::
+ :::image type="content" source="media/fno-user-licensing/user-license-consumption-card-view-all.png" alt-text="Download license summary" lightbox="media/fno-user-licensing/user-license-consumption-card-view-all.png":::
 
 ## Users with Unassigned Licenses
 
@@ -99,7 +96,7 @@ Use the **Assigned Licenses in M365** column dropdown to:
 
 This helps triage misassigned or missing licenses at scale.
 
- :::image type="content" source="media/user-license-consumption-filtering.png" alt-text="Download license summary" lightbox="media/user-license-consumption-filtering.png":::
+ :::image type="content" source="media/fno-user-licensing/user-license-consumption-filtering.png" alt-text="Download license summary" lightbox="media/fno-user-licensing/user-license-consumption-filtering.png":::
 
 ### Filter by Missing License
 
@@ -119,7 +116,7 @@ Click a **Required License** link to open the **Required license details per env
 
 This helps validate **why** a license is needed and in **which environment**.
 
- :::image type="content" source="media/user-license-consumption-environment-details.png" alt-text="Download license summary" lightbox="media/user-license-consumption-environment-details.png":::
+ :::image type="content" source="media/fno-user-licensing/user-license-consumption-environment-details.png" alt-text="Download license summary" lightbox="media/fno-user-licensing/user-license-consumption-environment-details.png":::
 
 ## Analyze Role License Entitlements
 
@@ -143,7 +140,7 @@ View **menu items and access levels** (Read/Write) that contribute to license re
 
 This helps explain the **why** behind a license requirement for each role.
 
- :::image type="content" source="media/user-license-consumption-role-duty-privilege.png" alt-text="Download license summary" lightbox="media/user-license-consumption-role-duty-privilege.png":::
+ :::image type="content" source="media/fno-user-licensing/user-license-consumption-role-duty-privilege.png" alt-text="Download license summary" lightbox="media/fno-user-licensing/user-license-consumption-role-duty-privilege.png":::
 
 ## Export to CSV
 
@@ -160,7 +157,7 @@ You can export user data by selecting **Export to CSV** in the top-right corner.
 
 For full entitlement or role mapping detail, use the interactive UI.
 
- :::image type="content" source="media/user-license-consumption-export-csv.png" alt-text="Download license summary" lightbox="media/user-license-consumption-export-csv.png":::
+ :::image type="content" source="media/fno-user-licensing/user-license-consumption-export-csv.png" alt-text="Download license summary" lightbox="media/fno-user-licensing/user-license-consumption-export-csv.png":::
 
 ## Best Practices
 
