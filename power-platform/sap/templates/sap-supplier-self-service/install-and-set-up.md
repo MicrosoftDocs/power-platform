@@ -8,6 +8,7 @@ ms.author: sandhan
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 06/27/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
