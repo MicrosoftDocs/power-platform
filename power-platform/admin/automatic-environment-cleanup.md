@@ -76,7 +76,7 @@ A cleanup mechanism in Power Platform automatically removes Default environments
 - Default environments with Microsoft 365 agents or Microsoft Planner are excluded from deletion.
 - Admins receive two warning notifications before the Default environment is deleted due to inactivity. Default environments are deleted 30 days after the first notification.
 
-As part of this cleanup process, a new replacement Default environment without Dataverse is created, with an option to add Dataverse later. The original Default environment is deleted, but can be recovered as a production environment within seven days. [Any activity triggered](#trigger-activity-in-an-inactive-environment) on the environment resets the inactivity period.
+As part of this cleanup process, a new replacement Default environment without Dataverse is created, with an option to add Dataverse later. The original Default environment is deleted, but can be recovered as a sandbox environment within seven days. [Any activity triggered](#trigger-activity-in-an-inactive-environment) on the environment resets the inactivity period.
 
 ### Timeline for unused Default environments
 
