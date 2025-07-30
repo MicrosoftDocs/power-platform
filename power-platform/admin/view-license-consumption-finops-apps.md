@@ -86,7 +86,7 @@ This view filters the report to highlight users with missing license assignments
 | **Missing Licenses** | Echo of required license if not yet assigned |
 
 > [!IMPORTANT]
-> Users in the (Users with unassigned licenses) view will be blocked from sign-in once license validation begins.
+> Users in the (Users with unassigned licenses) view will be unable to login to the system once license validation begins.
 
 ## Filter and Sort Capabilities
 
