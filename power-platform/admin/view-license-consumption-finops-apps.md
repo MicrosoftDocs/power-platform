@@ -14,22 +14,16 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# View license consumption for finance and operations apps
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
-<!-- fwlink: https://go.microsoft.com/fwlink/?linkid=2206011 -->
-
-[!INCLUDE preview-note]
-
-# View and Understand License Consumption for Dynamics 365 finance and operations apps in Power Platform Admin Center
-
 > **Applies to:**  
 > Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, Dynamics 365 Human Resources, Dynamics 365 Project Operations, Dynamics 365 Team Members, and Dynamics 365 Operations (Legacy licenses)
 
+[!INCLUDE preview-note]
+
+# View and Understand License Consumption for Dynamics 365 finance and operations apps in Power Platform admin center
+
 ## Overview
 
-The **User License Consumption (Preview)** experience in Power Platform Admin Center helps admins monitor and manage licensing needs for Dynamics 365 Finance and Operations (F&O) apps. It offers transparency into which users need licenses, which ones are properly assigned, and where gaps exist—so you can take action before per user license validation deadlines.
+The **User License Consumption (Preview)** experience in Power Platform admin center helps admins monitor and manage licensing needs for Dynamics 365 Finance and Operations (F&O) apps. It offers transparency into which users need licenses, which ones are properly assigned, and where gaps exist—so you can take action before per user license validation deadlines.
 
 Key capabilities include:
 
@@ -42,7 +36,7 @@ Key capabilities include:
 
 ## Access the Report
 
-1. Sign in to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. Select **Licensing** in the left menu.
 3. Choose the **Finance and Operations** tab under **User License Consumption**.
 
