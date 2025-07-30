@@ -1,9 +1,9 @@
 ---
-title: "Set up inventory components"
-description: "Learn how to set up the inventory components solution of the Microsoft CoE Starter Kit."
+title: Set up inventory components
+description: Learn how to set up inventory components in the Microsoft CoE Starter Kit to sync, monitor, and manage Power Platform resources.
 author: manuelap-msft
 ms.topic: how-to
-ms.date: 09/05/2023
+ms.date: 07/30/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -24,7 +24,7 @@ The flows and dataflows in this solution sync all your resources into tables. Th
 
 > [!NOTE]
 >
-> - If you are trying out [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory, we recommend you don't depend on this feature just yet and test it in a dedicated test environment first. Trying out this feature helps us validate that the feature is what you need and that we're not introducing unintended side effects.
+> - If you're trying out [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory, we recommend you don't depend on this feature yet and test it in a dedicated test environment first. Trying out this feature helps us validate that the feature is what you need and that we're not introducing unintended side effects.
 > - Your feedback is critical to this process. Post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
 > - Setting up the inventory components using [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) is only supported through the [setup wizard](#set-up-the-inventory-components-using-the-setup-wizard). Manual setup instructions are available after the experimental preview.
 
@@ -129,7 +129,7 @@ You can store the client secret either in plain text in the **Command Center - C
 | Command Center - Client Secret | The application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
 | Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable. This variable expects the Azure Key Vault reference, not the secret. For more information, see [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview). |
 
-### Modify the Command Center app & get Microsoft 365 service messages flow for a GCC High or DoD tenant
+### Modify the Command Center app and get Microsoft 365 service messages flow for a GCC High or DoD tenant
 
 > [!IMPORTANT]
 > If your CoE Starter Kit is installed in a *commercial* or *GCC* tenant, you can skip this step.
