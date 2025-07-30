@@ -9,6 +9,7 @@ ms.author: stjeffer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Establishing tenant hygiene with the CoE Starter Kit

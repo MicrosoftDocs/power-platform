@@ -5,7 +5,6 @@ author: paulliew
 ms.reviewer: sericks
 ms.subservice: admin
 ms.author: paulliew
-ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 6/4/2025
@@ -21,6 +20,9 @@ ms.contributors:
   - paulliew
   - sericks
   - syalandur
+ms.custom:
+  - "admin-security"
+  - sfi-image-nochange
 
 ---
 # Assign a security role to a user  

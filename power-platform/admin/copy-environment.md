@@ -14,6 +14,7 @@ ms.contributors:
 - ellenwehrle
 - syalandur
 ms.reviewer: sericks
+ms.custom: sfi-image-nochange
 ---
 # Copy an environment
 
