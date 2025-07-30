@@ -476,6 +476,8 @@
                       href: cmk-migrate-from-byok.md
                     - name: Encrypt column-level data
                       href: data-encryption.md
+                - name: Advanced connector policies (preview)
+                  href: advanced-connector-policies.md
                 - name: Data policies
                   items:
                     - name: Data policies for Managed Environments
@@ -496,8 +498,6 @@
                           href: connector-off-by-default.md
                         - name: Design-time versus runtime
                           href: dlp-impact-policies-apps-flows.md
-                        - name: Exempt apps and flows
-                          href: dlp-resource-exemption.md
                     - name: Certified connectors
                       items:
                         - name: Connector classification
@@ -604,8 +604,6 @@
                   items:
                     - name: Configure content security policy
                       href: content-security-policy.md
-                - name: Advanced connector policies (preview)
-                  href: advanced-connector-policies.md
                 - name: Configure column-level security
                   items:
                     - name: Column-level security
