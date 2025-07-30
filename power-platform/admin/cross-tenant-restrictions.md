@@ -8,13 +8,15 @@ author: mihaelablendea
 ms.subservice: admin
 ms.author: mihaelab
 ms.reviewer: sericks
-ms.custom: NewPPAC
 search.audienceType: 
   - admin
 contributors:
   - cmerino01 
   - jahnavisunil
   - akadrno
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 
 # Cross-tenant inbound and outbound restrictions

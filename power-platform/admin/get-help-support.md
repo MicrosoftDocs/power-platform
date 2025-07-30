@@ -13,9 +13,9 @@ search.audienceType:
 ms.contributors:
   - lsuresh
 contributors:
-- prabhav
-- lavanyapg
-
+  - prabhav
+  - lavanyapg
+ms.custom: sfi-image-nochange
 ---
 # Get Support
 

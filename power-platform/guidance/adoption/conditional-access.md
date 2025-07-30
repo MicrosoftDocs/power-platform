@@ -12,7 +12,8 @@ ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
 contributors:
-- alaug
+  - alaug
+ms.custom: sfi-ga-nochange
 ---
 
 # Configure identity and access management
