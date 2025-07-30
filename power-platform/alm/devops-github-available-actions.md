@@ -5,12 +5,14 @@ keywords:
 author: kkanakas
 ms.subservice: alm
 ms.author: kartikka
-ms.custom: ""
 ms.date: 03/29/2024
 ms.reviewer: "pehecke"
 ms.topic: "article"
 search.audienceType: 
   - developer
+ms.custom:
+  - ""
+  - sfi-ropc-nochange
 ---
 
 # Available GitHub Actions for Microsoft Power Platform development

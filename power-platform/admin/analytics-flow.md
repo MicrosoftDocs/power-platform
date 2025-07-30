@@ -7,11 +7,13 @@ ms.date: 07/15/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
-ms.custom: NewPPAC
 search.audienceType: 
   - admin
 contributors:
  - isaacwinoto
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 ---
 # View analytics for cloud flows
 

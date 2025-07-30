@@ -7,11 +7,13 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/16/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: sericks
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 # Manage Microsoft Dataverse settings
 

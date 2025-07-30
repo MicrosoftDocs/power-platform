@@ -4,6 +4,7 @@ description: Review and configure tenant-level settings linked from this page.
 author: amiyapatr-zz
 ms.topic: overview
 ms.date: 7/28/2025
+ms.update-cycle: 180-days
 ms.author: ampatra
 ms.reviewer: sericks
 contributors:
