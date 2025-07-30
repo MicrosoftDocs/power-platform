@@ -3,13 +3,20 @@ title: "Enable preview features to get early access"
 description: "Learn how to enable preview features in Power Platfiorm that have limited functionality to get early access and provide feedback."
 author: sericks007
 ms.topic: how-to
-ms.date: 05/4/2023
+ms.date: 7/30/2025
 ms.subservice: admin
 ms.author: sericks
+ms.contributors:
+    - sericks
+    - syalandur
+contributors:
+    - sericks007
+    - syalandur24
+ms.custom:
+    - NewPPAC    
 ---
-# What are preview features, and how do I enable them? 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+# What are preview features, and how do I enable them?
 
 Preview features are features that aren't complete, but are made available on a "preview" basis so customers can get early access and provide feedback. Preview features:  
   
@@ -23,9 +30,9 @@ Preview features are features that aren't complete, but are made available on a 
   
 - May be available only in selected geographic areas.  
   
-## How do I enable a Preview feature?  
+## How do I enable a Preview feature?
 
-### In the Power Platform admin center
+### In the New Power Platform admin center
 
 1. Make sure you have the System Administrator security role or equivalent permissions.
   
@@ -35,7 +42,29 @@ Preview features are features that aren't complete, but are made available on a 
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
+2. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+3. In the navigation pane, select **Manage**.
+
+4. In the **Manage** pane, select **Environments**, select an environment and select **Settings**.
+
+    :::image type="content" source="media/select-env-settings.png" alt-text="Select the settings for an environment":::
+
+5. Under **Product**, select **Features** and then select **On** for the feature to enable. Preview features will be labeled as "preview".
+
+    :::image type="content" source="media/turn-on-preview-new.png" alt-text="Turn on preview features in the new admin center":::  
+
+### In the Classic Power Platform admin center
+
+1. Make sure you have the System Administrator security role or equivalent permissions.
+  
+    Check your security role  
+  
+   - [!INCLUDE[proc_follow_steps_in_link](../includes/proc-follow-steps-in-link.md)]  
+  
+   - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
+  
+2. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 3. Select **Environments** in the left navigation pane, select your environment, and then select **Settings** on the top menu bar.
 
@@ -65,7 +94,8 @@ To enable a Preview feature, you must be an administrator.
   
     :::image type="content" source="media/system-settings-previews75.png" alt-text="System settings preview":::
 
-## How do I report an issue or provide other feedback?  
+## How do I report an issue or provide other feedback?
+ 
 If you'd like to provide feedback, offer suggestions, or report issues for a preview feature, go to the appropriate ideas website that provides a collaboration platform for gathering actionable feedback to build and improve products and services:
 
 - [Power Apps ideas](https://aka.ms/powerappsidea)
