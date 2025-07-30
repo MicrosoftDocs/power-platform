@@ -18,7 +18,7 @@ ms.custom:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The **User License Consumption (Preview)** experience in Power Platform admin center helps admins monitor and manage licensing needs for Dynamics 365 Finance and Operations (F&O) apps. It offers transparency into which users need licenses, which ones are properly assigned, and where gaps exist—so you can take action before per user license validation deadlines.
+The **User License Consumption (Preview)** experience in Power Platform admin center helps admins monitor and manage licensing needs for Dynamics 365 finance and operations apps. It offers transparency into which users need licenses, which ones are properly assigned, and where gaps exist—so you can take action before per user license validation deadlines.
 
 Key capabilities include:
 
@@ -35,13 +35,14 @@ Key capabilities include:
 2. Select **Licensing** in the left menu.
 3. Choose the **Finance and Operations** tab under **User License Consumption**.
 
-> ⏱️ The report is refreshed every 24 hours. Last updated timestamp appears at the top right of the report.
+> [!Note]
+> The report is refreshed every 24 hours. Last updated timestamp appears at the top of the report.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-overview.png" alt-text="User License Consumption summary" lightbox="media/fno-user-licensing/user-license-consumption-overview.png":::
 
 ## Top-Level Metrics
 
-- **Total users**: All users across connected F&O environments.
+- **Total users**: All users across connected finance and operations environments.
 - **Users with unassigned licenses**: Users who are assigned roles that require a license but don’t have one provisioned.
 
 These metrics are clickable and provide access to user-level data views.
@@ -73,7 +74,7 @@ Click **View all** to drill into the license assignment list for each app.
 
 ## Users with Unassigned Licenses
 
-This view filters the report to highlight users with unmet license assignments.
+This view filters the report to highlight users with missing license assignments.
 
 | Column | Description |
 |--------|-------------|
