@@ -171,7 +171,6 @@ For full entitlement or role mapping detail, use the interactive UI.
 - GUIDs may appear in place of names if identity metadata is incomplete  
 - Non-production telemetry may be limited  
 - Custom roles may require re-analysis to properly align with licensing  
-- Reports may differ from LCS, M365 Admin Center, or 3rd party tools  
 
 ## Related Resources
 
@@ -179,4 +178,3 @@ For full entitlement or role mapping detail, use the interactive UI.
 - [User security governance overview](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview)
 - [Dynamics 365 Finance and Operations Apps Security Role FAQ](https://go.microsoft.com/fwlink/?linkid=2319108)  
 - [Assign Microsoft 365 licenses to user accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell)
-
