@@ -1,18 +1,18 @@
 ---
 title: Programmability and extensibility - What's new or changed 
-description: Learn about the latest changes and new capabilities for Power Platform API and admin SDKs.
+description: Learn about the latest changes and new capabilities for the Power Platform API and admin SDKs.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 07/28/2025
+ms.date: 07/30/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
 ---
 
-# Programmability and extensibility - What's new or changed
+# Programmability and extensibility - what's new or changed
 
 Learn about the latest changes and new capabilities for Power Platform API and admin SDKs.
 
@@ -20,20 +20,20 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 
 | Item | Type | Description |
 |------|------|-------------|
-| List Cloud Flows | API | New endpoint: [List Cloud Flows](/rest/api/power-platform/powerautomate/cloud-flows/list-cloud-flows) |
-| List Flow Actions | API | New endpoint: [List Flow Actions](/rest/api/power-platform/powerautomate/flow-actions/list-flow-actions) |
-| List Flow Runs | API | New endpoint: [List Flow Runs](/rest/api/power-platform/powerautomate/flow-runs/list-flow-runs) |
-| Microsoft.PowerPlatform.Management | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3126.165#readme-body-tab) |
-| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.45.3#releasenotes-body-tab) |
-| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
+| List cloud flows | API | New endpoint: [List Cloud Flows](/rest/api/power-platform/powerautomate/cloud-flows/list-cloud-flows). |
+| List flow actions | API | New endpoint: [List Flow Actions](/rest/api/power-platform/powerautomate/flow-actions/list-flow-actions). |
+| List flow runs | API | New endpoint: [List Flow Runs](/rest/api/power-platform/powerautomate/flow-runs/list-flow-runs). |
+| Microsoft.PowerPlatform.Management | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3126.165#readme-body-tab). |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.45.3#releasenotes-body-tab). |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/). |
 
 ## May 2025
 
 | Item | Type | Description |
 |------|------|-------------|
-| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.43.6#releasenotes-body-tab) |
-| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
-| Microsoft.PowerPlatform.Management | SDK | [Initial NuGet package release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3060.142) |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.43.6#releasenotes-body-tab). |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/). |
+| Microsoft.PowerPlatform.Management | SDK | [Initial NuGet package release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3060.142). |
 
 ## April 2025
 
