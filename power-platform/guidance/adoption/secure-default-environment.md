@@ -7,16 +7,17 @@ ms.author: rranjit
 ms.reviewer: jhaskett-msft
 ms.topic: how-to
 ms.date: 05/14/2025
-ms.custom:
-  - bap-template
-  - ai-gen-docs-bap
-  - ai-gen-description
-  - ai-seo-date:05/01/2025
 ms.subservice: guidance
 contributors:
   - arjunmayur
 ms.contributors:
   - mapichle
+ms.custom:
+  - bap-template
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:05/01/2025
+  - sfi-ga-nochange
 ---
 
 # Secure the default environment

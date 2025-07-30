@@ -6,7 +6,6 @@ ms.topic: how-to
 ms.date: 05/16/2025
 author: DanaMartens
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: dmartens
 ms.reviewer: sericks
 contributors:
@@ -14,6 +13,9 @@ contributors:
 - EllenWehrle
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 
 # Connect Gmail accounts by using OAuth 2.0 

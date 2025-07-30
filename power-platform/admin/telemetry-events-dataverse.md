@@ -11,6 +11,7 @@ ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Telemetry events for Microsoft Dataverse
 

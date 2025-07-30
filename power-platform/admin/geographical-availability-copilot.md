@@ -5,6 +5,7 @@ author: amchern
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 06/30/2025
+ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
