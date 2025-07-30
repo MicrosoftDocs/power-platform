@@ -40,7 +40,9 @@ The easiest way to get finance and operations apps up and running in Power Platf
 
 ### Knowing which template to provision
 
-All Dynamics 365 environment templates are associated with their related full user licenses, which means that the admin user in the Power Platform admin center must have a full license assigned to them to be able to create one of these environments, and the same holds true when using tools like PowerShell as well. The following table shows the mapping between various finance and operations apps licenses and their template details.
+All Dynamics 365 environment templates require that the tenant has purchased a related license. However, users who are assigned the Power Platform Administrator role or the Dynamics 365 Administrator role in Microsoft Entra do not require a full user license assigned to them in order to create or manage these environments. If the role was just recently assigned, please note there is a 12 hour cache before the provisioning system will allow a user without a license to create a new environment.
+
+The following table shows the mapping between various finance and operations apps licenses and their template details.
 
 | License | Template name | Template ID | Comments |
 | ----------- | ----------- |----------- |----------- |
@@ -56,50 +58,65 @@ Be sure to check out the latest known limitations available in the overview arti
 
 ## Step-by-step provisioning guide
 
-To create a new environment where finance and operations apps are preinstalled, perform the following steps:
+You can provision a new environment with finance and operations apps preinstalled using the Power Platform admin center UI or PowerShell as follows:
 
-Open your PowerShell console application, and run the following commands to generate the environment.
+# [New admin center](#tab/new)
 
- - Your environment name must be **globally unique and less than 20 characters** because that derives the environment URL.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+2. Select **Manage** in the navigation pane.
+3. In the **Manage** pane, select **Environments**.
+4. Click the **New** button and fill out the environment details. The environment name must be globally unique because it impacts the Finance and Operations URL.
+5. If you wish to leverage preview releases of Finance and Operations, select the **Get new features early** option.
+6. Select 'Yes' for **Add a Dataverse data store**.
+7. On the following screen, select 'Yes' for **Enable Dynamics 365 apps**.
+8. Choose an available template such as Finance (preview), Supply Chain Management (preview), and so on.
 
- - Note the variables, so that you can change the input values as required.
- 
- - If you want to use a service principal, follow the instructions in [Creating a service principal application using PowerShell](../powershell-create-service-principal.md).
+# [Classic admin center](#tab/classic)
 
- - The **DevToolsEnabled** parameter determines whether your sandbox environment is provisioned with support for X++ development, or whether it becomes a traditional sandbox environment for user acceptance testing (UAT) and training purposes. If you set the value to **true**, you can do development. If you set the value to **false** or omit the parameter, you receive a traditional sandbox environment that has finance and operations apps installed.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+2. Go to **Environments** in the navigation pane.
+3. Click the **New** button and fill out the environment details. The environment name must be globally unique because it impacts the Finance and Operations URL.
+4. If you wish to leverage preview releases of Finance and Operations, select the **Get new features early** option.
+5. Select 'Yes' for **Add a Dataverse data store**.
+6. On the following screen, select 'Yes' for **Enable Dynamics 365 apps**.
+7. Choose an available template such as Finance (preview), Supply Chain Management (preview), and so on.
 
-```powershell
-#Install the module
-Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
+# [PowerShell](#tab/PowerShell)
 
-Write-Host "Creating a session against the Power Platform API"
-
-Add-PowerAppsAccount -Endpoint prod
-
-#To construct the json object to pass in
-$jsonObject= @" 
-{ 
- "PostProvisioningPackages": 
- [ 
- { 
- "applicationUniqueName": "msdyn_FinanceAndOperationsProvisioningAppAnchor", 
-"parameters": "DevToolsEnabled=true|DemoDataEnabled=true" 
- } 
- ] 
-} 
-"@ | ConvertFrom-Json
-
-# To kick off new environment Provisionment
-# IMPORTANT - This has to be a single line, after the copy & paste the command
-New-AdminPowerAppEnvironment -DisplayName "MyUniqueNameHere" -EnvironmentSku Sandbox -Templates "D365_FinOps_Finance" -TemplateMetadata $jsonObject -LocationName "Canada" -ProvisionDatabase
-```
+1. Open your PowerShell console application.
+2. Install the required module:
+    ```powershell
+    Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
+    ```
+3. Add your Power Platform account:
+    ```powershell
+    Add-PowerAppsAccount -Endpoint prod
+    ```
+4. Construct the JSON object for template parameters:
+    ```powershell
+    $jsonObject= @"
+    {
+      "PostProvisioningPackages":
+      [
+        {
+          "applicationUniqueName": "msdyn_FinanceAndOperationsProvisioningAppAnchor",
+          "parameters": "DevToolsEnabled=true|DemoDataEnabled=true"
+        }
+      ]
+    }
+    "@ | ConvertFrom-Json
+    ```
+5. Provision the new environment (replace values as needed, and ensure your chosen environment name is globally unique and under 20 characters):
+    ```powershell
+    New-AdminPowerAppEnvironment -DisplayName "MyUniqueNameHere" -EnvironmentSku Sandbox -Templates "D365_FinOps_Finance" -TemplateMetadata $jsonObject -LocationName "Canada" -ProvisionDatabase
+    ```
 
 > [!IMPORTANT]
-> If you require the user interface (UI), follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md). You can't currently use the UI to create new sandbox and production environments that have finance and operations apps.
+> If you require the user interface (UI), follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md). You can't currently use the UI to create new developer-focused sandbox and production environments that have finance and operations apps.
 
 ## Delete the environment
 
-In this step, delete the environment you previously created. Deleting an environment is an action commonly done by admins who want to free up the Dataverse and Operations storage consumed by this environment for other needs. An environment can be deleted using the Power Platform admin center, or PowerShell as follows: 
+In this step, delete the environment you previously created. Deleting an environment is an action commonly done by admins who want to free up the Dataverse and Operations storage consumed by this environment for other needs. An environment can be deleted using the Power Platform admin center, or PowerShell as follows:
 
 # [New admin center](#tab/new)
  
