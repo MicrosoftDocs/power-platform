@@ -26,7 +26,7 @@ According to the UK census, 9 percent of the population doesn't speak English as
 
 "We wanted to bring the group together and come up with a solution for customers to communicate with us in their preferred language," explained Georgette Loring, Assistant Manager of Group Customer Inclusion at Lloyds Banking Group.
 
-Lloyds Banking Group recognises that modern AI can help create apps where language is no longer a barrier. This approach promotes diversity and equity, while opening up many more banking opportunities for people across the UK.
+Lloyds Banking Group recognizes that modern AI can help create apps where language is no longer a barrier. This approach promotes diversity and equity, while opening up many more banking opportunities for people across the UK.
 
 ## Solution
 
