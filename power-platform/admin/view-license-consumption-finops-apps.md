@@ -29,7 +29,7 @@ Key capabilities include:
 - Powerful filters for unmet or misaligned licenses  
 - Export-ready reports for compliance and planning  
 
-## Access the Report
+## Access User License Consumption reporting
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. Select **Licensing** in the left menu.
@@ -45,19 +45,21 @@ Key capabilities include:
 - **Total users**: All users across connected finance and operations environments.
 - **Users with unassigned licenses**: Users who are assigned roles that require a license but don’t have one provisioned.
 
-These metrics are clickable and provide access to user-level data views.
+These metrics are clickable and provide access to user-level views.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-metrics.png" alt-text="User License Consumption metrics" lightbox="media/fno-user-licensing/user-license-consumption-metrics.png":::
 
-## Application-Level License Summaries
+## Product-Level License Summaries
 
-Each Dynamics 365 application has a dedicated card showing:
+Each Dynamics 365 finance and operations product has a card displaying:
 
-- Users requiring a license  
-- Licenses purchased and assigned  
-- Licenses purchased but unassigned (available to assign)  
+- Total users requiring a license  
+- By Product, Base licenses purchased and assigned  
+- By Product, Attach licenses purchased and assigned  
+- By Product, Base Licenses purchased but unassigned (available to assign)  
+- By Product, Attach Licenses purchased but unassigned (available to assign)  
 
-Supported applications include:
+Supported products for User License Consumption reporting include:
 
 - Finance  
 - Supply Chain Management  
@@ -68,13 +70,13 @@ Supported applications include:
 - Operations – Activity  
 - Operations (Legacy licenses) 
 
-Click **View all** to drill into the license assignment list for each app.
+Click **View all** to drill into the license assignments for users of each product.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-card-view-all.png" alt-text="User Licensing Consumption Summary" lightbox="media/fno-user-licensing/user-license-consumption-card-view-all.png":::
 
 ## Users with Unassigned Licenses
 
-This view filters the report to highlight users with missing license assignments.
+This view filters the report to highlight users with missing license assignments in Microsoft 365 admin center.
 
 | Column | Description |
 |--------|-------------|
@@ -83,7 +85,8 @@ This view filters the report to highlight users with missing license assignments
 | **Assigned License in M365** | Whether license is provisioned |
 | **Missing Licenses** | Echo of required license if not yet assigned |
 
-> ⚠️ Users in this view will be blocked from sign-in once license validation begins.
+> [!IMPORTANT]
+> Users in this view will be blocked from sign-in once license validation begins.
 
 ## Filter and Sort Capabilities
 
@@ -101,7 +104,7 @@ This helps triage misassigned or missing licenses at scale.
 ### Filter by Missing License
 
 In the **Missing License** column, use the filter to isolate users missing a specific license (e.g., Supply Chain Management only).  
-This enables targeted action based on application or priority.
+This enables targeted action based on product.
 
 ## Drill into User License Details
 
@@ -109,10 +112,10 @@ Click a **Required License** link to open the **Required license details per env
 
 | Field | Description |
 |-------|-------------|
-| **Environment name** | Where the user holds the role |
-| **Environment type** | Production or Sandbox |
+| **Environment name** | Where the user is assigned the security role |
+| **Environment type** | Production |
 | **Security role** | Assigned role |
-| **Required license** | License obligation triggered by role |
+| **Required license** | License required triggered by role |
 
 This helps validate **why** a license is needed and in **which environment**.
 
@@ -120,11 +123,11 @@ This helps validate **why** a license is needed and in **which environment**.
 
 ## Analyze Role License Entitlements
 
-From the user’s role, you can drill further into the role-to-license mapping.
+From the user’s role, you can drill furtherinto the role-to-license mapping.
 
 ### Role License Matrix
 
-- View all compatible licenses for a role (e.g., SCM, Finance Premium)  
+- View all compatible licenses for a role (e.g., Commerce, Finance, Human Resources)  
 - See how many users are correctly licensed vs. not  
 
 ### Securable Object Breakdown
@@ -134,7 +137,7 @@ View **menu items and access levels** (Read/Write) that contribute to license re
 | Field | Description |
 |-------|-------------|
 | **Securable Type** | e.g., MenuItemDisplay |
-| **AOT Name** | Object name in metadata |
+| **AOT Name** | Application Object tree name |
 | **Access Level** | Read or Write |
 | **Entitlement** | Whether it requires a license |
 
@@ -155,7 +158,7 @@ You can export user data by selecting **Export to CSV** in the top-right corner.
 > - `MissingLicense(s)`  
 > - `RefreshedOn`  
 
-For full entitlement or role mapping detail, use the interactive UI.
+For full entitlement or role mapping detail, use the views in Power Platform admin center.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-export-csv.png" alt-text="User Licensing Consumption Export CSV" lightbox="media/fno-user-licensing/user-license-consumption-export-csv.png":::
 
@@ -163,15 +166,14 @@ For full entitlement or role mapping detail, use the interactive UI.
 
 - Assign licenses to users with PowerShell automation to scale provisioning  
 - Align license assignment with actual usage telemetry, not job titles  
-- Use version 10.0.44+ to validate roles using the Security Analysis tool  
-- Review monthly and clean up legacy or unused roles  
+- Use version 10.0.44 (or later) to validate roles using the [User Security Governance]((/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) feature 
+- Review monthly and remove   
 - Coordinate with procurement to align purchases with system needs  
 
-## Known Limitations (Preview)
+## Known Limitations
 
-- GUIDs may appear in place of names if identity metadata is incomplete  
-- Non-production telemetry may be limited  
-- Custom roles may require re-analysis to properly align with licensing  
+- GUIDs may appear in place of names if identity metadata is incomplete or users in Entra have been deleted but not removed from Finance and Operations security role assignements 
+- Custom security roles may require re-analysis to properly align with licensing  
 
 ## Related Resources
 
