@@ -99,7 +99,7 @@ Using these steps, you set up the Entra app registration used in a cloud flow to
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 1. Go to **Microsoft Entra ID** > **App registrations**.
-   :::image type="content" source="media/coe33.png" alt-text="Screenshot showing the Entra app registration." lightbox="media/coe33.png":::
+   :::image type="content" source="media/coe33.png" alt-text="Screenshot showing the Microsoft Entra app registration." lightbox="media/coe33.png":::
 1. Select **+ New Registration**.
 1. Enter a name. For example, use the **CoE Command Center** name. Don't change any other settings and select **Register**.
 1. Select **API Permissions** > **+ Add a permission**.
