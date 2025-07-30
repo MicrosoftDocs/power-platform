@@ -11,7 +11,7 @@ ms.custom:
 - NewPPAC
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/15/2025
+ms.date: 07/30/2025
 search.audienceType: 
 - admin
 ---
@@ -159,7 +159,7 @@ and assign the following privilege on the Business Management tab: Read User.
 
 - To render tables: assign Read privilege on the table
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=85201287-5bcf-45a3-8e9f-f0ded7cd17c4]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=dedfa2ae-ebc4-45ee-8c03-7455e2264ee0 ]
 
 ## Privacy notices
 
