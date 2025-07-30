@@ -14,12 +14,10 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-[!INCLUDE preview-note]
-
-> **Applies to:**  
-> Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, Dynamics 365 Human Resources, Dynamics 365 Project Operations, Dynamics 365 Team Members, and Dynamics 365 Operations (Legacy licenses)
-
 # View and Understand License Consumption for Dynamics 365 finance and operations apps in Power Platform admin center
+
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 
 ## Overview
