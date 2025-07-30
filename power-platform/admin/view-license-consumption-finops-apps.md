@@ -14,7 +14,7 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# View and Understand License Consumption for Dynamics 365 finance and operations apps in Power Platform admin center
+# View License Consumption for Dynamics 365 finance and operations apps
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
