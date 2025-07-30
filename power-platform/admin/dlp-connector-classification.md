@@ -53,6 +53,9 @@ All third-party connectors can be blocked. All Microsoft-owned premium connector
 
 All connectors driving core Microsoft Power Platform functionality (like Dataverse, Approvals, and Notifications), in addition to connectors that enable core Office customization scenarios like Microsoft Enterprise Plan standard connectors, will remain non-blockable to ensure that core user scenarios remain fully functional.
 
+> [!NOTE]
+> These connectors can now be limited or disabled using [Advanced Connector Policies](./advanced-connector-policies.md).
+
 However, these non-blockable connectors can be classified into **Business** or **Non-Business** data groups. These connectors broadly fall into the following categories:
 
 - Microsoft Enterprise Plan standard connectors (with no additional licensing implications).
