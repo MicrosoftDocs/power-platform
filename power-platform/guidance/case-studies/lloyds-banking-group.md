@@ -94,11 +94,11 @@ The high-level flow of the Branch Translation App is as follows:
 
 1. Power Apps provides a user-friendly interface. 
 
-1. Power Automate flows send information from the PCF component, the Connectors, and AI Builder to the Power Apps application.
+1. Power Automate flows send information from the PCF component, the connectors, and AI Builder to the Power Apps application.
 
 1. The PCF component uses a JavaScript SDK to send a request and response through Azure API Management and to receive translation and personal information (PII) extraction from the Azure AI Language service.
 
-1. The Connectors send a custom REST request through API Management to receive OpenAI-powered banking service recommendations and AI Language translations, which are then sent back with a JSON response.
+1. The connectors send a custom REST request through API Management to receive OpenAI-powered banking service recommendations and AI Language translations, returned as a JSON response.
 
 1. AI Builder provides a simple drag and drop interface that sends a document processing request and response through API Management to Azure.
 
@@ -113,7 +113,7 @@ The user flow is seamless, intuitive, and emphasizes accuracy:
 1. The user selects the microphone button to speak into the device.
 1. The Power Apps application initializes the PCF component and sends the recorded audio.
 1. The PCF component initializes the Speech JavaScript SDK and sends the voice file to Azure AI services to analyze and translate the audio.
-1. Azure AI services return the translated results to the Speech JavaScript SDK and to the PCF component, which then updates the parameters around the data.
+1. Azure AI services return the translated results to the Speech JavaScript SDK and to the PCF component, which then updates the data parameters.
 1. The Power Apps application renders the results to the user.
 
 ## Key takeaways
@@ -130,19 +130,19 @@ The Lloyds Branch Translation App case study demonstrates the potential of using
 
 - Azure AI services provide language translation, personal information extraction, speech-to-text generation, text-to-speech generation, visual document processing, and OpenAI-based banking services recommendations.
 
-The Lloyds Branch Translation App became operational in just eight weeks, improving customer communication and satisfaction in record time. 
+The app became operational in just eight weeks, improving customer communication and satisfaction in record time. 
 
 "Colleagues have told us they feel like we have listened to them, when they asked for English-as-a-second-language solutions," Georgette Loring explained.
 
 "Lloyds Banking Group has partnered with Microsoft on innovations that bring us closer to our customers and help us resolve their issues faster," added Vickie Evans.
 
-Since building the Branch Translation App, Lloyds Banking Group has greatly enhanced their customer experience. Customers and employees are delighted that they can communicate much more freely.
+Since building the Branch Translation App, Lloyds Banking Group has greatly enhanced their customer experience. Both customers and employees are delighted that they can communicate much more freely.
 
 ## Looking ahead
 
 Lloyds Banking Group is already working on expanding their capabilities with Copilot Studio, advanced integrations with Power Automate data flows, and use cases that cover mission-critical applications.
 
-By leveraging the right tools, Lloyds Banking Group plans to continue enhancing its operations while enabling employees to shape the future of the financial industry.
+By leveraging the right tools, the organization plans to continue enhancing its operations while enabling employees to shape the future of the financial industry.
 
 "The advancement of AI, Copilot in Power Apps, and Power Automate is becoming increasingly important in the banking industry," shared Jo Brown, Modern Workplace Director at Lloyds Banking Group. "Looking ahead, it will be important to provide the right technology and capabilities, ensuring all colleagues are included in the journey." 
 
