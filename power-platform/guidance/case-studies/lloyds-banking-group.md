@@ -26,13 +26,13 @@ According to the UK census, 9 percent of the population doesn't speak English as
 
 "We wanted to bring the group together and come up with a solution for customers to communicate with us in their preferred language," explained Georgette Loring, Assistant Manager of Group Customer Inclusion at Lloyds Banking Group.
 
-Lloyds Banking Group understands that using modern AI to create an app where language doesn't matter increases diversity and equity, and creates many more banking opportunities for people in the UK.
+Lloyds Banking Group recognises that modern AI can help create apps where language is no longer a barrier. This approach promotes diversity and equity, while opening up many more banking opportunities for people across the UK.
 
 ## Solution
 
 Lloyds Banking Group saw the opportunity and importance of connecting and communicating with customers in any language, and turned to Power Platform to build its Branch Translation App. The app improves communication with customers who don't speak English by using Microsoft Power Apps and Azure AI Services. It enables bank employees to speak in English, and the tool translates the conversation into the customer's preferred language.
 
-Translation isn't a new problem, but creating a seamless experience with this simple innovation has enhanced the company's service delivery. Both employees and customers have provided positive feedback. The application's seamless integration into daily operations has significantly improved customer experiences, especially in multicultural areas where language support is crucial.
+Translation isn't a new problem, but creating a seamless experience with this simple innovation has enhanced the company's service delivery. Both employees and customers have provided positive feedback. The application's seamless integration into daily operations has improved customer experiences, especially in multicultural areas where language support is crucial.
 
 By using Power Apps, Azure AI services, and custom PCF controls, Lloyds is showcasing its commitment to innovation and customer-focused solutions. The app is deployed across all branches of the bank. The app's successful development, testing, and deployment highlights the organization's agility in adopting cutting-edge technologies to improve inclusivity, accessibility, and customer satisfaction.
 
@@ -84,7 +84,7 @@ The implementation of the Branch Translation App involved several steps to ensur
   
 ## Architecture
 
-The architecture of the Branch Translation App showcases the power of combining Microsoft Power Apps with Azure AI services to create innovative solutions that solve real-world challenges. By leveraging these technologies, Lloyds Banking Group has improved its ability to serve a diverse customer base and enhance overall customer satisfaction.
+The architecture of the Branch Translation App showcases the power of combining Microsoft Power Apps with Azure AI services to create innovative solutions that solve real-world challenges. By using these technologies, Lloyds Banking Group has improved its ability to serve a diverse customer base and enhance overall customer satisfaction.
 
 :::image type="content" source="media/lloyds-banking-group/arch.png" alt-text="Diagram illustrating the high-level app architecture and components for the Lloyds Branch Translation App, with the left side representing the app's front-end and orchestration, and the right side illustrating the AI services that power its functionality." lightbox="media/lloyds-banking-group/arch.png":::
 
@@ -142,7 +142,7 @@ Since building the Branch Translation App, Lloyds Banking Group has greatly enha
 
 Lloyds Banking Group is already working on expanding their capabilities with Copilot Studio, advanced integrations with Power Automate data flows, and use cases that cover mission-critical applications.
 
-By leveraging the right tools, the organization plans to continue enhancing its operations while enabling employees to shape the future of the financial industry.
+By using the right tools, the organization plans to continue enhancing its operations while enabling employees to shape the future of the financial industry.
 
 "The advancement of AI, Copilot in Power Apps, and Power Automate is becoming increasingly important in the banking industry," shared Jo Brown, Modern Workplace Director at Lloyds Banking Group. "Looking ahead, it will be important to provide the right technology and capabilities, ensuring all colleagues are included in the journey." 
 
