@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 07/16/2025
+ms.date: 07/30/2025
 ---
 
 # Lloyds Banking Group bridges language barriers with Power Apps and Azure AI Services 
@@ -16,7 +16,7 @@ In this article, you learn how [Lloyds Banking Group](https://www.lloydsbank.com
 
 The organization serves 28 million customers through a wide range of channels, including approximately 1,500 retail branches, online and digital channels, telephony, and mobile services. Lloyds Banking Group has made a strategic commitment to Microsoft Power Platform, to modernize its applications and create a more sustainable, inclusive, and accessible future for customers and businesses.
 
-> "About four years ago, we were looking at automation tools. We came across Microsoft Power Platform and realized it perfectly suited our identified needs."
+> About four years ago, we were looking at automation tools. We came across Microsoft Power Platform and realized it perfectly suited our identified needs.
 >
 > — *Vickie Evans, Engineering Lead for the Center of Excellence at Lloyds Banking Group*
 
