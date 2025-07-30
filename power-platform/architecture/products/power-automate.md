@@ -1,13 +1,13 @@
 ---
 title: Power Automate reference architectures and solution ideas
 description: Learn about key concepts, reference architectures, and solution ideas to easily streamline your business processes and automate tasks with Power Automate.
-#customer intent: As a Power Platform user, I want to understand Power Automate key concepts, reference architectures, and solution ideas so that I can design well-architected automation workflows.
+#customer intent: As a business decision maker, I want to understand Power Automate key concepts, reference architectures, and solution ideas so that I can design well-architected automation workflows.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 04/17/2025
+ms.date: 07/15/2025
 ---
 
 # Power Automate reference architectures and solution ideas
@@ -49,6 +49,8 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Property rental portal with AI-driven search and payment processing**](../solution-ideas/agent-rental-portal.md) | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 | [**Travel concierge using generative AI with Copilot Studio**](../solution-ideas/agent-travel-customer.md) | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
 | [**Ticket management system with Copilot Studio agents**](../solution-ideas/agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
+| [**Automate software bug reporting with Auto Triage AI Agent**](../solution-ideas/auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle issue creation and follow-up, reducing the burden on customer support teams and enhancing the customer experience. |
+| [**Intelligent cardiac triage and scheduling with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
 
 ## Related resources
 

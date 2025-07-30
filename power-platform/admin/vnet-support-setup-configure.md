@@ -3,7 +3,7 @@ title: Set up virtual network support for Power Platform
 description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/10/2025
+ms.date: 07/22/2025
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -33,7 +33,18 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 
 ## Set up the virtual network and subnets
 
-1. Create [virtual networks](/azure/virtual-network/virtual-networks-overview) in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is the United States, create your virtual networks in the **eastus** or **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
+## Set up Virtual Network support
+
+1. [Set up the virtual network and subnets](#set-up-the-virtual-network-and-subnets).
+1. [Create the enterprise policy](#create-the-enterprise-policy).
+1. [Configure your Power Platform environment](#configure-your-power-platform-environment).
+
+### Set up the virtual network and subnets
+
+> [!NOTE]
+> Power Platform doesn't support the Central US region. [Review the list of supported regions](./vnet-support-overview.md#supported-regions).
+
+1. Create [virtual networks](/azure/virtual-network/virtual-networks-overview) in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is United States, your virtual networks should be created in the **eastus** and **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
 
     > [!IMPORTANT]
     > - If there are two or more supported regions for the geo, such as the United States with **eastus** and  **westus**, two virtual networks in ***different*** regions are required to create the enterprise policy for business continuity and disaster recovery or failover scenarios.
