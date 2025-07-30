@@ -180,7 +180,7 @@ For full entitlement or role mapping detail, use the interactive UI.
 
 ## Related Resources
 
-- [Dynamics 365 Licensing Guide](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/licensing-requirements)  
-- [Role-Based Security in F&O](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security)  
-- [Group-Based License Assignment in Entra ID](https://learn.microsoft.com/en-us/entra/identity/licensing/group-based)
+- [Dynamics 365 Licensing Guide](/dynamics365/fin-ops-core/fin-ops/get-started/licensing-requirements)  
+- [Role-Based Security in F&O](/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security)  
+- [Assign Microsoft 365 licenses to user accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide)
 
