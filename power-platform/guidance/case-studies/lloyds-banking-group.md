@@ -54,7 +54,7 @@ The Branch Translation App is composed of four panes, together with speaker and 
 
 - **Spoken Text pane**: Displays the original English input from the speech service.
 
-- **Speaker icons**: PCF components connected to the Speech JavaScript SDK enable speech synthesis of both spoken and translated text.
+- **Speaker icons**: Power Apps Component Framework (PCF) connected to the Speech JavaScript SDK enable speech synthesis of both spoken and translated text.
 
 - **Translated Text pane**: Shows the translation of the spoken input, returned by the Speech JavaScript SDK.
 
