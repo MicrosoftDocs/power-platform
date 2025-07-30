@@ -1,12 +1,12 @@
 ---
 title: View license consumption for finance and operations apps 
-description: Learn how to view your organization's Power Apps license consumption for finance and operations apps. 
-author: amiyapatr-zz
+description: Learn how to view your organization's User license consumption for finance and operations apps. 
+author: ceian
 ms.date: 09/25/2024
 ms.reviewer: sericks
 ms.topic: how-to
 ms.subservice:
-ms.author: ampatra
+ms.author: ceian
 search.audienceType: 
  - admin
 ms.custom:
@@ -20,65 +20,171 @@ ms.custom:
 
 <!-- fwlink: https://go.microsoft.com/fwlink/?linkid=2206011 -->
 
+# View and Understand License Consumption for Dynamics 365 Finance and Operations Apps in Power Platform Admin Center
 
-You can use the **Licenses** page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to see how different user licenses are consumed in your finance and operations environments. With this information, you can get answers to questions like:
+> **Applies to:**  
+> Dynamics 365 Finance, Supply Chain Management, Commerce, Human Resources, Project Operations, Team Members, and Operations (Legacy licenses)
 
-- What types of finance and operations licenses do you have available for your tenant?
-- How many licenses have been assigned to users?
-- How many roles have been assigned to users in different finance and operations environments, and what licenses are needed based on their role assignment?
-- Are extra licenses needed based on role assignments in your tenant?
+## Overview
 
+The **User License Consumption (Preview)** experience in Power Platform Admin Center helps admins monitor and manage licensing needs for Dynamics 365 Finance and Operations (F&O) apps. It offers transparency into which users need licenses, which ones are properly assigned, and where gaps exist—so you can take action before enforcement deadlines.
 
-## Summary tab
+Key capabilities include:
 
-To see a summary of license usage:
+- Role-based user license analysis  
+- Environment-level license requirement breakdown  
+- Security role-to-license mapping  
+- Drill-down into access-level entitlements  
+- Powerful filters for unmet or misaligned licenses  
+- Export-ready reports for compliance and planning  
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. From **Billing**, select **Licenses**.
-1. Select the **Summary** tab.
-1. Select **Finance and operations** from the **Product** list.
+## Access the Report
 
-### User license level summary
+1. Sign in to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
+2. Select **Licensing** in the left menu.
+3. Choose the **Finance and Operations** tab under **User License Consumption**.
 
-The **User license level summary** section provides a summary count of user licenses available, assigned, and required for the tenant for finance and operations environments.
+> ⏱️ The report is refreshed every 24 hours. Last updated timestamp appears at the top right of the report.
 
-> [!IMPORTANT]
-> Device license aren't included in the count of licenses available, assigned, or required for the tenant for finance and operations environments.
+ :::image type="content" source="media/user-license-consumption-overview.png" alt-text="User License Consumption summary" lightbox="media/user-license-consumption-overview.png":::
 
-| Information | Description |
-| ------- | ----------- |
-| User license level | Type of finance and operations license available, or required by the tenant. |
-| Available seats | Number of seats for a user license level available for the tenant. |
-| Assigned seats | Number of users who are assigned licenses. |
-| Required seats | Number of users who need licenses based on role assignment in finance and operations environments. |
-| License utilization status | This status is calculated by comparing the number of roles assigned versus the number of licenses available |
+## Top-Level Metrics
 
-You can view the individual licenses mapped to a license level, and the number of seats available for the individual license by selecting the number in the **Available seats** for a specific user license level.
+- **Total users**: All users across connected F&O environments.
+- **Users with unassigned licenses**: Users who are assigned roles that require a license but don’t have one provisioned.
 
-### Drill-down view
+These metrics are clickable and provide access to user-level data views.
 
-Select the specific **User license level** to see a list, and more details of users who are required to have the selected license.
+ :::image type="content" source="media/user-license-consumption-metrics.png" alt-text="User License Consumption summary" lightbox="media/user-license-consumption-metrics.png":::
 
-| Information | Description |
-| ------- | ----------- |
-| Email/User ID | List of users who need a selected user license type. For guest users, user IDs are displayed. |
-| Environment | Name of the environment in which the user has been assigned a role. |
-| Security role | Name of the security role assigned to the user. |
-| Role license | The role license mapped to the security role. |
-| Required license | Mapped user license level for the role license. |
-| Assigned license | The license assigned to the user. |
+## Application-Level License Summaries
 
-The following is a screenshot of the **Licenses** page displaying **User license level**.
+Each Dynamics 365 application has a dedicated card showing:
 
-You can filter the view using **Environment, Security role, Role license** and **Assigned license** filters.
+- Users requiring a license  
+- Licenses purchased and assigned  
+- Licenses purchased but unassigned (available to assign)  
 
-Select an **Email/User ID** to view the details of all roles assigned to the selected user across all finance and operations environments in the tenant. This view also provides recommendations on what licenses should be assigned to the user based on the user's assigned roles. This can be seen in the following image.
+Supported applications include:
 
-   :::image type="content" source="media/view-license-consumption-finops-apps.png" alt-text="View User license level summary" lightbox="media/view-license-consumption-finops-apps.png":::
+- Finance  
+- Supply Chain Management  
+- Commerce  
+- Human Resources  
+- Project Operations  
+- Team Members  
+- Operations – Activity  
+- Operations (Legacy licenses) 
 
-## Download
+Click **View all** to drill into the license assignment list for each app.
 
-To download the license usage information, select **Export to CSV** in the **Summary** tab to start download process. After a .csv file is generated, you can download the same file again within five days without having to start a new download.
+ :::image type="content" source="media/user-license-consumption-card-view-all.png" alt-text="Download license summary" lightbox="media/user-license-consumption-card-view-all.png":::
 
-   :::image type="content" source="media/view-license-consumption-finops-apps-download.png" alt-text="Download license summary" lightbox="media/view-license-consumption-finops-apps-download.png":::
+## Users with Unassigned Licenses
+
+This view filters the report to highlight users with unmet license assignments.
+
+| Column | Description |
+|--------|-------------|
+| **Email/User ID** | Entra ID identity |
+| **Required License** | Based on role telemetry |
+| **Assigned License in M365** | Whether license is provisioned |
+| **Missing Licenses** | Echo of required license if not yet assigned |
+
+> ⚠️ Users in this view will be blocked from sign-in once license validation begins.
+
+## Filter and Sort Capabilities
+
+### Filter by Assigned License
+
+Use the **Assigned Licenses in M365** column dropdown to:
+
+- Sort results (ascending/descending)  
+- Filter by specific license types (e.g., Finance, SCM, Team Members)
+
+This helps triage misassigned or missing licenses at scale.
+
+ :::image type="content" source="media/user-license-consumption-filtering.png" alt-text="Download license summary" lightbox="media/user-license-consumption-filtering.png":::
+
+### Filter by Missing License
+
+In the **Missing License** column, use the filter to isolate users missing a specific license (e.g., Supply Chain Management only).  
+This enables targeted action based on application or priority.
+
+## Drill into User License Details
+
+Click a **Required License** link to open the **Required license details per environment** screen.
+
+| Field | Description |
+|-------|-------------|
+| **Environment name** | Where the user holds the role |
+| **Environment type** | Production or Sandbox |
+| **Security role** | Assigned role |
+| **Required license** | License obligation triggered by role |
+
+This helps validate **why** a license is needed and in **which environment**.
+
+ :::image type="content" source="media/user-license-consumption-environment-details.png" alt-text="Download license summary" lightbox="media/user-license-consumption-environment-details.png":::
+
+## Analyze Role License Entitlements
+
+From the user’s role, you can drill further into the role-to-license mapping.
+
+### Role License Matrix
+
+- View all compatible licenses for a role (e.g., SCM, Finance Premium)  
+- See how many users are correctly licensed vs. not  
+
+### Securable Object Breakdown
+
+View **menu items and access levels** (Read/Write) that contribute to license requirement.
+
+| Field | Description |
+|-------|-------------|
+| **Securable Type** | e.g., MenuItemDisplay |
+| **AOT Name** | Object name in metadata |
+| **Access Level** | Read or Write |
+| **Entitlement** | Whether it requires a license |
+
+This helps explain the **why** behind a license requirement for each role.
+
+ :::image type="content" source="media/user-license-consumption-role-duty-privilege.png" alt-text="Download license summary" lightbox="media/user-license-consumption-role-duty-privilege.png":::
+
+## Export to CSV
+
+You can export user data by selecting **Export to CSV** in the top-right corner.
+
+> 🧾 The exported file contains only the following columns:
+>
+> - `TenantId`  
+> - `UserEmail`  
+> - `UserId`  
+> - `AssignedLicense(s)`  
+> - `MissingLicense(s)`  
+> - `RefreshedOn`  
+
+For full entitlement or role mapping detail, use the interactive UI.
+
+ :::image type="content" source="media/user-license-consumption-export-csv.png" alt-text="Download license summary" lightbox="media/user-license-consumption-export-csv.png":::
+
+## Best Practices
+
+- Assign licenses to users with PowerShell automation to scale provisioning  
+- Align license assignment with actual usage telemetry, not job titles  
+- Use version 10.0.44+ to validate roles using the Security Analysis tool  
+- Review monthly and clean up legacy or unused roles  
+- Coordinate with procurement to align purchases with system needs  
+
+## Known Limitations (Preview)
+
+- GUIDs may appear in place of names if identity metadata is incomplete  
+- Non-production telemetry may be limited  
+- Custom roles may require re-analysis to properly align with licensing  
+- Reports may differ from LCS, M365 Admin Center, or 3rd party tools  
+
+## Related Resources
+
+- [Dynamics 365 Licensing Guide](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/licensing-requirements)  
+- [Role-Based Security in F&O](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security)  
+- [Group-Based License Assignment in Entra ID](https://learn.microsoft.com/en-us/entra/identity/licensing/group-based)
 
