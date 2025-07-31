@@ -168,7 +168,7 @@ For full entitlement or role mapping detail, use the views in Power Platform adm
 
 ## Best Practices
 
-- Remove inactive user accounts that no longer need access, by using the [User Security Governance User Activity Aging Report](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/setup-security-gov-para#user-aging-periods). 
+- Remove inactive user accounts that no longer need access, by using the [User Security Governance User Activity Aging Report](https://go.microsoft.com/fwlink/?linkid=2330144). 
 - Assign licenses to users with PowerShell automation for bulk user provisioning  
 - Align license assignment with actual usage telemetry, not job titles  
 - Use version 10.0.44 (or later) to validate roles using the [User Security Governance](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) feature 
