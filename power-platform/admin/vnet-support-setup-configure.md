@@ -3,7 +3,7 @@ title: Set up virtual network support for Power Platform
 description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/22/2025
+ms.date: 07/31/2025
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -30,6 +30,14 @@ Azure virtual network support for Power Platform allows you to integrate Power P
     - **Assign roles**: Ensure you have the required roles to create resources and enterprise policy.
       - In the Azure portal, assign the Azure network administrator role, such as the [network contributor role](/azure/role-based-access-control/built-in-roles#network-contributor) or an equivalent custom role.
       - In the Microsoft Entra admin center, assign the Power Platform administrator role.
+- Prepare to use PowerShell:
+  - Use Windows PowerShell or [Install PowerShell Core](/powershell/scripting/install/installing-powershell)
+  - Clone the GitHub repository to obtain the [PowerShell scripts for enterprise policies](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies)
+  - Run the ["install modules and setup subscription" scripts](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#how-to-run-setup-scripts)
+
+The following diagram depicts the functions of the roles in the setup process for virtual network support in a Power Platform environment.
+
+:::image type="content" source="media/vnet-support/vnet-support-configurations.png" alt-text="Screenshot that shows the configurations for virtual network support in a Power Platform environment." lightbox="media/vnet-support/vnet-support-configurations.png":::
 
 ## Set up the virtual network and subnets
 
@@ -72,10 +80,11 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 
 ### Option 1: Use the Azure ARM template
 1. Ensure you have captured the necessary details, such as the following information, from the virtual networks you have created.
-    - Virtual network 1 subnet name
-    - Virtual network 1 resource ID 
-    - Virtual network 2 subnet name 
-    - Virtual network 2 resource ID
+   
+    - VnetOneSubnetName
+    - VnetOneResourceId 
+    - VnetTwoSubnetName 
+    - VnetTwoResourceId
 
 1. [Deploy a custom template](https://ms.portal.azure.com/#create/Microsoft.Template) in Azure portal. Select the **Build your own template in the editor** link and copy and paste the following JSON script.
 
@@ -143,7 +152,7 @@ Azure virtual network support for Power Platform allows you to integrate Power P
     }
     ```
 
-1. Save the template and fill in the details to create the enterprise policy.
+1. Save the template and fill in the details to create the enterprise policy, which includes the following inforamtion:
     - **Policy name**: Name of the enterprise policy that appears in the Power Platform admin center.
     - **Location**: Select the location of the enterprise policy, corresponding with the Dataverse environment’s region:
         - unitedstates
@@ -164,10 +173,10 @@ Azure virtual network support for Power Platform allows you to integrate Power P
         - norway
         - singapore
         - sweden
-    - **Vnet 1 subnet name**: Enter the name of the subnet from the first virtual network.
-    - **Vnet 1 resource ID**: Enter the resource ID from the first virtual network.
-    - **Vnet 2 subnet name**: Enter the name of the subnet from the second virtual network.
-    - **Vnet 2 resource ID**: Enter the resource ID from the second virtual network.
+    - **VnetOneSubnetName**: Enter the name of the subnet from the first virtual network.
+    - **VnetOneResourceId**: Enter the resource ID from the first virtual network.
+    - **VnetTwoSubnetName**: Enter the name of the subnet from the second virtual network.
+    - **VnetTwoResourceId**: Enter the resource ID from the second virtual network. It should match the strings from Json script, for example: vNetOneResourceId, vNetOneSubnetName
 
 1. Select **Review + create** to finalize the enterprise policy.
 
