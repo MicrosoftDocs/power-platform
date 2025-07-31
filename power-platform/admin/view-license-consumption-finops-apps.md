@@ -111,14 +111,14 @@ In the **Missing license** column, use the filter to show users missing a specif
 
 ## Drill into user license details
 
-Select a **Required license** link to open the **Required license details per environment** screen.
+On a user, select a **Required license** link to open the **Required license details per environment** screen.
 
 | Field | Description |
 |-------|-------------|
 | **Environment name** | Where the user is assigned the security role |
 | **Environment type** | Production |
-| **Security role** | Assigned role |
-| **Required license** | License required triggered by role |
+| **Security role** | assigned security role |
+| **Required license** | License required triggered by security role |
 
 This helps you check why a license is needed and in which environment.
 
@@ -126,11 +126,11 @@ This helps you check why a license is needed and in which environment.
 
 ## Analyze role license entitlements
 
-From the user's role, you can drill further into the role-to-license mapping.
+From the user's role, you can drill further into the security role-to-license mapping.
 
 ### Role license matrix
 
-- View all compatible licenses for a role, like Commerce, Finance, or Human Resources.  
+- View all compatible licenses for a security role, like Commerce, Finance, Human Resources, Supply Chain, Team members, or activity.  
 - See how many users are correctly licensed vs. incorrectly licensed
 
 ### Securable object breakdown
@@ -140,7 +140,7 @@ View **menu items and access levels** (Read/Write) that contribute to license re
 | Field | Description |
 |-------|-------------|
 | **Securable Type** | Example: `MenuItemDisplay` |
-| **AOT Name** | Application Object tree name |
+| **AOT Name** | Application Object Tree name |
 | **Access Level** | Read or Write |
 | **Entitled** | Included in the mapped license scope |
 | **Not Entitled** | Not included in the mapped license scope |
