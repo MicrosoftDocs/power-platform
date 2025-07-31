@@ -10,6 +10,7 @@ ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-ga-nochange
 ---
 # Remove user personal data
 

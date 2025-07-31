@@ -7,7 +7,9 @@ ms.subservice: guidance-toolkit
 author: rajeevpentyala
 ms.author: grarchib
 ms.reviewer: sericks
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Use the ALM Accelerator with Power Pages sites
