@@ -81,9 +81,9 @@ This view filters the report to highlight users with missing license assignments
 | Column | Description |
 |--------|-------------|
 | **Email/User ID** | Entra ID identity |
-| **Required License** | Based on role telemetry |
-| **Assigned License in M365** | Whether license is provisioned |
-| **Missing Licenses** | Echo of required license if not yet assigned |
+| **Required License** | Based on security role corresponding duties and priveleges |
+| **Assigned License in M365** | Whether license is assigned to the user |
+| **Missing Licenses** | Required licenses required to be assigned to the user |
 
 > [!IMPORTANT]
 > Users in the **Users with unassigned licenses** view will be unable to login to the system once license validation begins.
