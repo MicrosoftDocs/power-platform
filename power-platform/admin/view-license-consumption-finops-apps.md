@@ -14,7 +14,7 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# View license consumption for Dynamics 365 finance and operations apps
+# View license consumption for Dynamics 365 finance and operations apps 
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -131,7 +131,7 @@ From the user's role, you can drill further into the role-to-license mapping.
 ### Role license matrix
 
 - View all compatible licenses for a role, like Commerce, Finance, or Human Resources.  
-- See how many users are correctly licensed versus not.
+- See how many users are correctly licensed vs. incorrectly licensed
 
 ### Securable object breakdown
 
