@@ -165,7 +165,7 @@ For full entitlement or role mapping details, use the views in Power Platform ad
 
 ## Best practices
 
-- Assign licenses to users with PowerShell automation for [bulk user provisioning](microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
+- Assign licenses to users with PowerShell automation for [bulk user provisioning](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 - Align license assignment with actual usage telemetry, not job titles.  
 - Use version 10.0.44 or later to validate roles using the [User security governance](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) feature.
 - Review monthly and remove [dormant user security accounts in finance and operations](https://community.dynamics.com/blogs/post/?postid=164a42b4-fbf7-43ea-b4db-a07733b8bafb).
