@@ -4,7 +4,6 @@ description: Learn how Power Platform authenticates users.
 ms.date: 02/14/2022
 ms.service: power-platform
 ms.topic: how-to
-ms.custom: "admin-security"
 ms.collection: get-started
 author: lancedMicrosoft
 ms.subservice: admin
@@ -12,6 +11,9 @@ ms.author: lanced
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom:
+  - "admin-security"
+  - sfi-image-nochange
 ---
 # Authenticating to Power Platform services
 

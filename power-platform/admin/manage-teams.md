@@ -16,11 +16,12 @@ contributors:
   - paulliew
   - sericks007
   - syalandur24
+search.audienceType: 
+  - admin
 ms.custom:
   - admin-security
   - NewPPAC
-search.audienceType: 
-  - admin
+  - sfi-image-nochange
 ---
 # Microsoft Dataverse teams management
 

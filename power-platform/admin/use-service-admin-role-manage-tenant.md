@@ -5,7 +5,6 @@ author: srpoduri
 ms.subservice: admin
 ms.author: sericks 
 ms.reviewer: sericks
-ms.custom: "admin-security"
 ms.component: pa-admin
 contributors:
 - JesseParsons 
@@ -15,6 +14,9 @@ ms.topic: how-to
 ms.date: 08/20/2024
 search.audienceType: 
   - admin
+ms.custom:
+  - "admin-security"
+  - sfi-ga-nochange
 ---
 # Use service admin roles to manage your tenant
 
