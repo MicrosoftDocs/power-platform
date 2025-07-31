@@ -6,6 +6,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
 ms.custom:
+- DevRelAdv
 - "admin-security"
 - bap-template
 - NewPPAC
@@ -19,6 +20,8 @@ search.audienceType:
 # Create or edit a security role to manage access
 
 Create security roles or edit the privileges associated with an existing security role to accommodate changes in your business requirements. You can [export your changes as a solution](/powerapps/maker/common-data-service/use-solutions-for-your-customizations) to make a backup or for use in a different implementation.
+
+This article also also helps you make sure that your users have a security role with the minimum privileges that are needed for common tasks like opening model-driven apps. Be sure to watch the video in [Minimum privileges for common tasks](#minimum-privileges-for-common-tasks).
 
 ## Prerequisites
 
