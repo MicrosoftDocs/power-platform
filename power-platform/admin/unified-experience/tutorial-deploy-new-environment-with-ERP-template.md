@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/19/2025
+ms.date: 07/31/2025
 ms.subservice: admin
 ms.author: laswenka
 ms.contributors:
@@ -40,7 +40,7 @@ The easiest way to get finance and operations apps up and running in Power Platf
 
 ### Knowing which template to provision
 
-All Dynamics 365 environment templates require that the tenant has purchased a related license. However, users who are assigned the Power Platform Administrator role or the Dynamics 365 Administrator role in Microsoft Entra do not require a full user license assigned to them in order to create or manage these environments. If the role was just recently assigned, please note there is a 12 hour cache before the provisioning system will allow a user without a license to create a new environment.
+All Dynamics 365 environment templates require that the tenant has purchased a related license. However, users who are assigned the Power Platform Administrator role or the Dynamics 365 Administrator role in Microsoft Entra don't require a full user license assigned to them to create or manage these environments. If the role was just recently assigned, note there's a 12 hour cache before the provisioning system allows a user without a license to create a new environment.
 
 The following table shows the mapping between various finance and operations apps licenses and their template details.
 
@@ -58,41 +58,44 @@ Be sure to check out the latest known limitations available in the overview arti
 
 ## Step-by-step provisioning guide
 
-You can provision a new environment with finance and operations apps preinstalled using the Power Platform admin center UI or PowerShell as follows:
+You can provision a new environment with finance and operations apps preinstalled using the Power Platform admin center or PowerShell.
 
 # [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2. Select **Manage** in the navigation pane.
 3. In the **Manage** pane, select **Environments**.
-4. Click the **New** button and fill out the environment details. The environment name must be globally unique because it impacts the Finance and Operations URL.
-5. If you wish to leverage preview releases of Finance and Operations, select the **Get new features early** option.
-6. Select 'Yes' for **Add a Dataverse data store**.
-7. On the following screen, select 'Yes' for **Enable Dynamics 365 apps**.
+4. Select the **New** button and fill out the environment details. The environment name must be globally unique because it impacts the finance and operations URL.
+5. If you want to use preview releases of finance and operations, select the **Get new features early** option.
+6. Select **Yes** for **Add a Dataverse data store**.
+7. On the following screen, select **Yes** for **Enable Dynamics 365 apps**.
 8. Choose an available template such as Finance (preview), Supply Chain Management (preview), and so on.
 
 # [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2. Go to **Environments** in the navigation pane.
-3. Click the **New** button and fill out the environment details. The environment name must be globally unique because it impacts the Finance and Operations URL.
-4. If you wish to leverage preview releases of Finance and Operations, select the **Get new features early** option.
-5. Select 'Yes' for **Add a Dataverse data store**.
-6. On the following screen, select 'Yes' for **Enable Dynamics 365 apps**.
+3. Select the **New** button and fill out the environment details. The environment name must be globally unique because it impacts the finance and operations URL.
+4. If you want to use preview releases of finance and operations, select the **Get new features early** option.
+5. Select **Yes** for **Add a Dataverse data store**.
+6. On the following screen, select **Yes** for **Enable Dynamics 365 apps**.
 7. Choose an available template such as Finance (preview), Supply Chain Management (preview), and so on.
 
 # [PowerShell](#tab/PowerShell)
 
 1. Open your PowerShell console application.
-2. Install the required module:
+1. Install the required module.
+   
     ```powershell
     Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
     ```
-3. Add your Power Platform account:
+1. Add your Power Platform account.
+   
     ```powershell
     Add-PowerAppsAccount -Endpoint prod
     ```
-4. Construct the JSON object for template parameters:
+1. Construct the JSON object for template parameters.
+
     ```powershell
     $jsonObject= @"
     {
@@ -106,7 +109,8 @@ You can provision a new environment with finance and operations apps preinstalle
     }
     "@ | ConvertFrom-Json
     ```
-5. Provision the new environment (replace values as needed, and ensure your chosen environment name is globally unique and under 20 characters):
+1. Provision the new environment (replace values as needed, and ensure your chosen environment name is globally unique and under 20 characters).
+
     ```powershell
     New-AdminPowerAppEnvironment -DisplayName "MyUniqueNameHere" -EnvironmentSku Sandbox -Templates "D365_FinOps_Finance" -TemplateMetadata $jsonObject -LocationName "Canada" -ProvisionDatabase
     ```
