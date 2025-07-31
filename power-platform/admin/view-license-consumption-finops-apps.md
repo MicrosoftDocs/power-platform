@@ -43,7 +43,7 @@ Key capabilities include:
 ## Top-level metrics
 
 - **Total users**: All users across connected finance and operations environments.
-- **Users with unassigned licenses**: Users who are assigned roles that require a license but don't have one provisioned.
+- **Users with unassigned licenses**: Users who are assigned roles that require a license but do not have a a license assigned in in [Microsoft 365 admin center](https://admin.microsoft.com).
 
 You can select metrics to view user-level details.
 
