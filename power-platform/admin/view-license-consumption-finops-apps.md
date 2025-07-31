@@ -1,5 +1,5 @@
 ---
-title: (Preview) View license consumption for finance and operations apps 
+title: View license consumption for finance and operations apps (preview)
 description: Learn how to view your organization's User license consumption for finance and operations apps. 
 author: ceian
 ms.date: 09/25/2024
@@ -14,7 +14,7 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# View License Consumption for Dynamics 365 finance and operations apps
+# View License Consumption for Dynamics 365 finance and operations apps (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
