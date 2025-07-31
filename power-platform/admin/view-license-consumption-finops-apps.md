@@ -169,8 +169,8 @@ For full entitlement or role mapping detail, use the views in Power Platform adm
 - Assign licenses to users with PowerShell automation for bulk user provisioning  
 - Align license assignment with actual usage telemetry, not job titles  
 - Use version 10.0.44 (or later) to validate roles using the [User Security Governance](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) feature 
-- Review monthly and remove   
-- Coordinate with procurement to align purchases with system needs  
+- Review monthly and remove [dormant user security accounts in Finance and Operations](https://community.dynamics.com/blogs/post/?postid=164a42b4-fbf7-43ea-b4db-a07733b8bafb)
+- Coordinate with procurement to align purchases with requires licenses needed for users  
 
 ## Known Limitations
 
