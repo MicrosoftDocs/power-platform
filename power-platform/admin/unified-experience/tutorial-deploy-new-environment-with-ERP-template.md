@@ -63,23 +63,23 @@ You can provision a new environment with finance and operations apps preinstalle
 # [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2. Select **Manage** in the navigation pane.
-3. In the **Manage** pane, select **Environments**.
-4. Select the **New** button and fill out the environment details. The environment name must be globally unique because it impacts the finance and operations URL.
-5. If you want to use preview releases of finance and operations, select the **Get new features early** option.
-6. Select **Yes** for **Add a Dataverse data store**.
-7. On the following screen, select **Yes** for **Enable Dynamics 365 apps**.
-8. Choose an available template such as Finance (preview), Supply Chain Management (preview), and so on.
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**.
+1. Select the **New** button and fill out the environment details. The environment name must be globally unique because it impacts the finance and operations URL.
+1. If you want to use preview releases of finance and operations, select the **Get new features early** option.
+1. Select **Yes** for **Add a Dataverse data store**.
+1. On the following screen, select **Yes** for **Enable Dynamics 365 apps**.
+1. Choose an available template such as Finance (preview), Supply Chain Management (preview), and so on.
 
 # [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2. Go to **Environments** in the navigation pane.
-3. Select the **New** button and fill out the environment details. The environment name must be globally unique because it impacts the finance and operations URL.
-4. If you want to use preview releases of finance and operations, select the **Get new features early** option.
-5. Select **Yes** for **Add a Dataverse data store**.
-6. On the following screen, select **Yes** for **Enable Dynamics 365 apps**.
-7. Choose an available template such as Finance (preview), Supply Chain Management (preview), and so on.
+1. Go to **Environments** in the navigation pane.
+1. Select the **New** button and fill out the environment details. The environment name must be globally unique because it impacts the finance and operations URL.
+1. If you want to use preview releases of finance and operations, select the **Get new features early** option.
+1. Select **Yes** for **Add a Dataverse data store**.
+1. On the following screen, select **Yes** for **Enable Dynamics 365 apps**.
+1. Choose an available template such as Finance (preview), Supply Chain Management (preview), and so on.
 
 # [PowerShell](#tab/PowerShell)
 
