@@ -18,10 +18,7 @@ search.audienceType:
 The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. It supports integrating data between finance and operations apps and Dataverse. It also supports integrating data into finance and operations apps and Dynamics 365 Sales. This service is generally available since July 2017.
 
 > [!NOTE]
-> We highly recommend customers start using [dual-write](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page), which provides tightly coupled, bidirectional integration between finance and operations apps and Dataverse. Any data change in finance and operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to finance and operations apps. This automated data flow provides an integrated user experience across the apps. 
-
-> [!TIP]
-> Check out the blog: [Data Integrator Updates – New features with an intuitive user interface providing a fluent experience](https://powerapps.microsoft.com/blog/data-integrator-updates-new-features-with-an-intuitive-user-interface-providing-a-fluent-experience/).
+> We highly recommend customers start using dual-write, which provides tightly coupled, bidirectional integration between finance and operations apps and Dataverse. Any data change in finance and operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to finance and operations apps. This automated data flow provides an integrated user experience across the apps. More information: [Dual-write](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page)
 
 ## How can you use the Data Integrator for your business?
 
@@ -33,8 +30,8 @@ The Prospect to Cash integration enables sellers to handle and monitor their sal
 
 For more information about the Prospect to Cash integration, see the documentation on the [Prospect to Cash solution](/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash).
 
-We also support [Field Service integration](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
-and [PSA (Project Service Automation) integration](/dynamics365/unified-operations/financials/project-management/psa-integration?toc=%2ffin-and-ops%2ftoc.json) to finance and operations apps.
+[Field Service integration](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
+and [PSA (Project Service Automation) integration](/dynamics365/unified-operations/financials/project-management/psa-integration?toc=%2ffin-and-ops%2ftoc.json) are also supported for data integration.
 
 ## Data Integrator Platform
 
@@ -348,5 +345,10 @@ You can use the following settings to tune the performance of finance and operat
 ### Importing/Exporting data to/from customer engagement apps
 
 Ensure indexes are defined for integration keys.
+
+## Related content
+
+> [!TIP]
+[Data Integrator Updates – New features with an intuitive user interface providing a fluent experience](https://powerapps.microsoft.com/blog/data-integrator-updates-new-features-with-an-intuitive-user-interface-providing-a-fluent-experience/).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

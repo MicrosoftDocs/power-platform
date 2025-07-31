@@ -24,7 +24,7 @@ ms.custom:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-With the Power Platform admin center, you can export Power Platform inventory and usage data directly into [Azure Data Lake Storage](https://azure.microsoft.com/solutions/data-lake/) for your organization's business needs. Having the data in your own data lake means you can store data for the durations specified in your organization's data retention policies.
+With the Power Platform admin center, you can export Power Platform inventory and usage data directly into Azure Data Lake Storage for your organization's business needs. Having the data in your own data lake means you can store data for the durations specified in your organization's data retention policies.
 You can also create custom reports with Power BI, with views at the business unit level and detailed app reports at the tenant and environment level.
 
 > [!IMPORTANT]
@@ -107,5 +107,7 @@ When setting up the first data export to your organization's data lake, Microsof
 ### Related articles
 
 [Create custom dashboards by using Power Platform inventory and usage data](build-custom-reports.md)
+
+[Azure Data Lake Storage](https://azure.microsoft.com/solutions/data-lake/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
