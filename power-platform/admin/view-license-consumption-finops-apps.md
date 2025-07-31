@@ -18,7 +18,7 @@ ms.custom:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The **User License Consumption (Preview)** experience in Power Platform admin center helps admins monitor and manage licensing needs for Dynamics 365 finance and operations apps. It offers transparency into which users need licenses, which ones are properly assigned, and where gaps exist—so you can take action before per user license validation deadlines.
+The **User License Consumption (Preview)** experience in Power Platform admin center helps admins monitor and manage licensing needs for Dynamics 365 finance and operations apps. It offers transparency into which users need licenses, which ones are properly assigned, and where gaps exist so you can take action before per user license validation deadlines.
 
 Key capabilities include:
 
@@ -86,7 +86,7 @@ This view filters the report to highlight users with missing license assignments
 | **Missing Licenses** | Echo of required license if not yet assigned |
 
 > [!IMPORTANT]
-> Users in the (Users with unassigned licenses) view will be unable to login to the system once license validation begins.
+> Users in the **Users with unassigned licenses** view will be unable to login to the system once license validation begins.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png" alt-text="Users with unassigned licenses" lightbox="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png":::
 
