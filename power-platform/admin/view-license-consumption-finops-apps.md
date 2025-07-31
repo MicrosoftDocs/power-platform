@@ -88,6 +88,8 @@ This view filters the report to highlight users with missing license assignments
 > [!IMPORTANT]
 > Users in the (Users with unassigned licenses) view will be unable to login to the system once license validation begins.
 
+ :::image type="content" source="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png" alt-text="Users with unassigned licenses" lightbox="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png":::
+
 ## Filter and Sort Capabilities
 
 ### Filter by Assigned License
