@@ -82,11 +82,11 @@ This view filters the report to show users with missing license assignments in [
 |--------|-------------|
 | **Email/User ID** | Entra ID identity |
 | **Required License** | Based on security role corresponding duties and privileges |
-| **Assigned License in M365** | Finance and Operations app license(s) assigned to the user |
-| **Missing Licenses** | Required Finance and Operations app license(s) not assigned to the user |
+| **Assigned License in M365** | Finance and Operations app license(s) assigned to the user in  [Microsoft 365 admin center](https://admin.microsoft.com) |
+| **Missing Licenses** | Required Finance and Operations app license(s) not assigned to the user in [Microsoft 365 admin center](https://admin.microsoft.com) |
 
 > [!IMPORTANT]
-> Users in the **Users with unassigned licenses** view can't sign in to the system once license validation starts.
+> Users in the **Users with unassigned licenses** view will be unable to sign in to the system once license validation starts.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png" alt-text="Users with unassigned licenses" lightbox="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png":::
 
