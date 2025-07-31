@@ -548,7 +548,7 @@
                       href: apps-to-allow.md
             - name: Compliance
               items:
-                - name: Comliance tools
+                - name: Compliance tools
                   href: security/compliance.md
                 - name: Auditing
                   items:
