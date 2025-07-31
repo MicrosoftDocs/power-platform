@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/30/2025
+ms.date: 07/31/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -80,7 +80,6 @@ Name | Display name | Description
 `Licensing.BillingPolicies.ReadWrite` | Read and Write Billing Policies | Read and write billing policies.
 `Licensing.IsvContracts.Read` | Read ISV Contracts | Allows reading ISV contracts.
 `Licensing.IsvContracts.ReadWrite` | Read and Write ISV Contracts | Lets you read and write ISV contracts.
-
 `PowerApps.Apps.Play` | Play Power Apps | Allows playing Power Apps.
 `PowerApps.Apps.Read` | Read Power App | Allows reading Power Apps.
 `PowerAutomate.Flows.Read` | Read Power Automate Flows | Allows reading Power Automate flows.
