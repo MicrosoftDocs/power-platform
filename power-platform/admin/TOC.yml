@@ -548,7 +548,7 @@
                       href: apps-to-allow.md
             - name: Compliance
               items:
-                - name: Comliance tools
+                - name: Compliance tools
                   href: security/compliance.md
                 - name: Auditing
                   items:
@@ -861,7 +861,7 @@
                 - name: Reference
                   items:
                     - name: Power Platform API for .NET
-                      href: /dotnet/api/?view=power-platform-latest
+                      href: /dotnet/api/
                     - name: "Power Platform REST API v2024-10-01"
                       href: /rest/api/power-platform
                     - name: "Power Platform REST API v2022-03-01-preview"
