@@ -43,7 +43,7 @@ Key capabilities include:
 ## Top-level metrics
 
 - **Total users**: All users across connected finance and operations environments.
-- **Users with unassigned licenses**: Users who are assigned roles that require a license but don't have one provisioned.
+- **Users with unassigned licenses**: Users who are assigned roles that require a license but do not have a a license assigned in in [Microsoft 365 admin center](https://admin.microsoft.com).
 
 You can select metrics to view user-level details.
 
@@ -82,11 +82,11 @@ This view filters the report to show users with missing license assignments in [
 |--------|-------------|
 | **Email/User ID** | Entra ID identity |
 | **Required License** | Based on security role corresponding duties and privileges |
-| **Assigned License in M365** | Finance and Operations app license(s) assigned to the user |
-| **Missing Licenses** | Required Finance and Operations app license(s) not assigned to the user |
+| **Assigned License in M365** | Finance and Operations app license(s) assigned to the user in  [Microsoft 365 admin center](https://admin.microsoft.com) |
+| **Missing Licenses** | Required Finance and Operations app license(s) not assigned to the user in [Microsoft 365 admin center](https://admin.microsoft.com) |
 
 > [!IMPORTANT]
-> Users in the **Users with unassigned licenses** view can't sign in to the system once license validation starts.
+> Users in the **Users with unassigned licenses** view will be unable to sign in to the system once license validation starts.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png" alt-text="Users with unassigned licenses" lightbox="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png":::
 
@@ -109,7 +109,7 @@ In the **Missing license** column, use the filter to show users missing a specif
 
 ## Drill into user license details
 
-Select a **Required license** link to open the **Required license details per environment** screen to check why a license is needed and in which environment.
+On a user, select a **Required license** link to open the **Required license details per environment** screen.
 
 | Field | Description |
 |-------|-------------|
@@ -118,15 +118,17 @@ Select a **Required license** link to open the **Required license details per en
 | **Security role** | Assigned role |
 | **Required license** | License required triggered by role |
 
+This helps you check why a license is needed and in which environment.
+
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-environment-details.png" alt-text="User Licensing Consumption Environment details" lightbox="media/fno-user-licensing/user-license-consumption-environment-details.png":::
 
 ## Analyze role license entitlements
 
-From the user's role, you can drill further into the role-to-license mapping.
+From the user's role, you can drill further into the security role-to-license mapping.
 
 ### Role license matrix
 
-- View all compatible licenses for a role, like Commerce, Finance, or Human Resources.  
+- View all compatible licenses for a security role, like Commerce, Finance, Human Resources, Supply Chain, Team members, or activity.  
 - See how many users are correctly licensed vs. incorrectly licensed
 
 ### Securable object breakdown
@@ -136,7 +138,7 @@ View **menu items and access levels** (Read/Write) that contribute to license re
 | Field | Description |
 |-------|-------------|
 | **Securable Type** | Example: `MenuItemDisplay` |
-| **AOT Name** | Application Object tree name |
+| **AOT Name** | Application Object Tree name |
 | **Access Level** | Read or Write |
 | **Entitled** | Included in the mapped license scope |
 | **Not Entitled** | Not included in the mapped license scope |
