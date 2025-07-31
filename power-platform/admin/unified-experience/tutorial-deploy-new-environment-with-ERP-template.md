@@ -117,6 +117,7 @@ You can provision a new environment with finance and operations apps preinstalle
 
 > [!IMPORTANT]
 > If you require the user interface (UI), follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md). You can't currently use the UI to create new developer-focused sandbox and production environments that have finance and operations apps.
+---
 
 ## Delete the environment
 
