@@ -95,7 +95,7 @@ This view filters the report to highlight users with missing license assignments
 Use the **Assigned Licenses in M365** column dropdown to:
 
 - Sort results (ascending/descending)  
-- Filter by specific license types (e.g., Finance, SCM, Team Members)
+- Filter by specific license types (for example, Commerce, Finance, Human Resources, Supply Chain Management, Team Members)
 
 This helps triage misassigned or missing licenses at scale.
 
@@ -103,8 +103,7 @@ This helps triage misassigned or missing licenses at scale.
 
 ### Filter by Missing License
 
-In the **Missing License** column, use the filter to isolate users missing a specific license (e.g., Supply Chain Management only).  
-This enables targeted action based on product.
+In the **Missing License** column, use the filter to isolate users missing a specific license (for example, Supply Chain Management only), enabling targeted action (for example assigning Supply Chain Management base licenses) based on product.
 
 ## Drill into User License Details
 
@@ -164,7 +163,7 @@ For full entitlement or role mapping detail, use the views in Power Platform adm
 
 ## Best Practices
 
-- Assign licenses to users with PowerShell automation to scale provisioning  
+- Assign licenses to users with PowerShell automation for bulk user provisioning  
 - Align license assignment with actual usage telemetry, not job titles  
 - Use version 10.0.44 (or later) to validate roles using the [User Security Governance]((/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) feature 
 - Review monthly and remove   
@@ -172,7 +171,7 @@ For full entitlement or role mapping detail, use the views in Power Platform adm
 
 ## Known Limitations
 
-- GUIDs may appear in place of names if identity metadata is incomplete or users in Entra have been deleted but not removed from Finance and Operations security role assignements 
+- For Dynamics 365 Finance and Operations, a GUID is how the system uniquely ties a user record to a identity in Entra ID. A GUID may appear in place of an email address if identity metadata is incomplete or users have been deleted in Entra but user records not been removed from Finance and Operations security role assignements 
 - Custom security roles may require re-analysis to properly align with licensing  
 
 ## Related Resources
