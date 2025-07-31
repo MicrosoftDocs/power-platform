@@ -3,7 +3,7 @@ title: Set up inventory components
 description: Learn how to set up inventory components in the Microsoft CoE Starter Kit to sync, monitor, and manage Power Platform resources.
 author: manuelap-msft
 ms.topic: how-to
-ms.date: 07/30/2025
+ms.date: 07/31/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -29,6 +29,8 @@ The flows and dataflows in this solution sync all your resources into tables. Th
 > - Setting up the inventory components using [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) is only supported through the [setup wizard](#set-up-the-inventory-components-using-the-setup-wizard). Manual setup instructions are available after the experimental preview.
 
 ## Import the Creator Kit and make connections
+
+Import the Creator Kit and establish required connections to enable inventory components in the CoE Starter Kit.
 
 ### Import Creator Kit
 
@@ -60,6 +62,8 @@ The import can take up to an hour to be complete, and upgrades can take up to tw
 > After importing your solution, you might see this warning: *Solution "Center of Excellence - Core components" imported successfully with warnings: Flow client error returned with status code Bad Request*. This warning message can be ignored, and you can proceed with opening the **Setup Wizard** app to continue the setup and configuration of the solution.
 
 ## Set up the Inventory components using the Setup Wizard
+
+Use the Setup Wizard to quickly configure inventory components for the CoE Starter Kit.
 
 ### Open the Setup Wizard to complete the configuration
 
@@ -95,7 +99,7 @@ However, you might wish to experiment with the **Data Export (Preview)** data so
 
 The [CoE Admin Command Center](core-components.md#coe-admin-command-center) connects to [Microsoft Graph API](/graph/api/serviceannouncement-list-messages) to get [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates.
 
-Using these steps, you set up the Entra app registration used in a cloud flow to connect to the Graph API. For more information, see [Use the Microsoft Graph API](/graph/use-the-api).
+Using these steps, you set up the Entra app registration used in a cloud flow to connect to the Graph API. For more information, learn more at [Use the Microsoft Graph API](/graph/use-the-api).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 1. Go to **Microsoft Entra ID** > **App registrations**.
@@ -127,7 +131,7 @@ You can store the client secret either in plain text in the **Command Center - C
 |------|-------------|
 | Command Center - Application Client ID | The application client ID from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. |
 | Command Center - Client Secret | The application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
-| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable. This variable expects the Azure Key Vault reference, not the secret. For more information, see [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview). |
+| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable. This variable expects the Azure Key Vault reference, not the secret. For more information, learn more at [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview). |
 
 ### Modify the Command Center app and get Microsoft 365 service messages flow for a GCC High or DoD tenant
 
@@ -146,11 +150,11 @@ If your CoE Starter Kit is installed in a *GCC High* or *DoD* tenant, update the
 > [!NOTE]
 > Only set up the Audit Log solution if you chose [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
 
-The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users and launches) for apps. The CoE Starter Kit works without this flow. However, usage information, such as app launches and unique users, in the Power BI dashboard is blank. For more information, see [Set up the audit log](setup-auditlog-http.md).
+The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users and launches) for apps. The CoE Starter Kit works without this flow. However, usage information, such as app launches and unique users, in the Power BI dashboard is blank. For more information, learn more at [Set up the audit log](setup-auditlog-http.md).
 
 ## Set up the Power BI dashboard
 
-The CoE Power BI dashboard provides a holistic view with visualizations and insights into resources in your tenant: environments, apps, Power Automate flows, connectors, connection references, makers, and audit logs. Telemetry from the audit log is stored from the moment you set up the CoE Starter Kit. Over time, you can identify trends longer than 28 days. For more information, see [Set up the Power BI dashboard](setup-powerbi.md).
+The CoE Power BI dashboard provides a holistic view with visualizations and insights into resources in your tenant: environments, apps, Power Automate flows, connectors, connection references, makers, and audit logs. Telemetry from the audit log is stored from the moment you set up the CoE Starter Kit. Over time, you can identify trends longer than 28 days. For more information, learn more at [Set up the Power BI dashboard](setup-powerbi.md).
 
 ## Share apps with other admins
 
@@ -163,7 +167,7 @@ Share these apps with other Power Platform admins and assign them the **Power Pl
 
 Take a look at the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app, which is your central place to open all CoE Starter Kit apps.
 
-For more information, see [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment).
+For more information, learn more at [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment).
 
 ## Wait for flows to finish
 
@@ -179,10 +183,7 @@ The first run of the inventory can take many hours depending on the number of en
 
 1. View **Runs**.
 
-## What's next?
 
-- Learn how to [regularly upgrade and extend](after-setup.md) the CoE Starter Kit.
-- Check out [other components part of the core solution](core-components.md#environment-request-management-components), and the [governance](governance-components.md) and [nurture](nurture-components.md) solutions.
 
 ## All environment variables
 
@@ -201,7 +202,7 @@ Environment variables are used to store application and flow configuration data 
 |CoE System User ID | In the maker table, we store a user for a system with an ID. Storing the ID here gives you an easy reference, so you don't have to look up the ID often. | Not applicable |
 | Command Center - Application Client ID | (optional) The application client ID from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave this ID empty if you want to use the Azure Key Vault to store your client ID and secret. | Not applicable |
 | Command Center - Client Secret | (optional) The application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave this secret empty if you want to use Azure Key Vault to store your client ID and secret. | Not applicable |
-| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave this secret empty if you want to store your client ID in plain text in the Command Center - Client Secret environment variable. For more information, see [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)| Not applicable |
+| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave this secret empty if you want to store your client ID in plain text in the Command Center - Client Secret environment variable. For more information, learn  at [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)| Not applicable |
 | CompanyName | The name of the company to be displayed in various apps and emails. Currently, this name is only used by the [Video Hub](nurture-components.md#video-hub) app. | Not applicable |
 | DelayInventory | If *Yes*, runs a delay step to assist with the Dataverse load balancing. Only set to *No* for debugging. | Yes |
 | DelayObjectInventory | If *Yes*, runs a delay step in individual inventory flows to assist with data source throttling experienced by larger tenants. Set to *Yes* if you experience this type of throttling. | No |
@@ -212,21 +213,26 @@ Environment variables are used to store application and flow configuration data 
 | FullInventory | Determines whether you want to update only changed objects or all objects. Switching to *Yes* causes the flows to inventory every single app, flow, and bot in the tenant every day. The *Yes* setting isn't recommended for large tenants.  | No |
 | Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High, and DoD environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).| Not applicable |
 | Host Domains | Domains to consider as local for cross domain identity reports. As a comma-separated string: `myCo.onmicrosoft.com`, `partnerCo.onmicrosoft.com` | Not applicable |
-| Individual Admin | Communications in the starter kit are sent to this email address. Communications can't be sent to a group. For more information, see [How to communicate with your admins, makers, and users](setup.md#whats-the-best-way-to-communicate-with-admins-makers-and-users). | Not applicable |
+| Individual Admin | Communications in the starter kit are sent to this email address. Communications can't be sent to a group. For more information, learn more at [How to communicate with your admins, makers, and users](setup.md#whats-the-best-way-to-communicate-with-admins-makers-and-users). | Not applicable |
 | Inventory and Telemetry in Azure Data Storage account | Sets up data export in PPAC with your inventory and telemetry in an Azure Data Storage folder. This variable also represents a **Bring your own Datalake / self-serve analytics** feature. | No |
 | InventoryFilter_DaysToLookBack | When not running a full inventory, we filter back a set number of days and see if the object needs to update.| 7 |
 | is All Environments Inventory | If true (default), the CoE inventory tracks all environments. New environments added to the inventory have their **Excuse from Inventory** set to *false*. You can opt out of individual environments. If *false*, the CoE inventory tracks a subset of environments. New environments added to the inventory have their **Excuse from Inventory** set to *true*. You can opt in to individual environments.  | Yes |
-| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group, which contains all your Power Platform makers. With this ID, you can communicate and share apps with makers. This ID is needed for the inventory setup in the **Admin > Add Maker to Group** flow. For more information, see [How to communicate with your admins, makers, and users](setup.md#whats-the-best-way-to-communicate-with-admins-makers-and-users). | Not applicable |
-| Power Platform User Microsoft 365 Group | Get the ID of the Microsoft 365 group, which contains all your Power Platform users, such as end users with your shared apps. You use this ID to communicate and share apps with users. For more information, see [How to communicate with your admins, makers, and users](setup.md#whats-the-best-way-to-communicate-with-admins-makers-and-users). | Not applicable |
+| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group, which contains all your Power Platform makers. With this ID, you can communicate and share apps with makers. This ID is needed for the inventory setup in the **Admin > Add Maker to Group** flow. For more information, learn more at [How to communicate with your admins, makers, and users](setup.md#whats-the-best-way-to-communicate-with-admins-makers-and-users). | Not applicable |
+| Power Platform User Microsoft 365 Group | Get the ID of the Microsoft 365 group, which contains all your Power Platform users, such as end users with your shared apps. You use this ID to communicate and share apps with users. For more information, learn more at [How to communicate with your admins, makers, and users](setup.md#whats-the-best-way-to-communicate-with-admins-makers-and-users). | Not applicable |
 | Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://make.powerautomate.com/environments/> <br>For a GCC, GCC High, or DoD environment: [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). | Not applicable |
 | PowerApp Maker environment variable | The URL used by the Power Apps maker portal for your cloud, including a trailing slash `/`. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment: [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). | Not applicable|
 | PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including a trailing slash `/`.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us/> | Not applicable |
 | ProductionEnvironment | Set to *No* if you're creating a development/test environment. This variable allows some flows to set target users to the admin instead of resource owners.| Yes |
 | Sync Flow Errors Delete After X Days | Number of days back to store sync flow error records. Deletes records older than this number of days.| 7 |
-| TenantID | Your Azure Tenant ID. For more information, see [Find Tenant ID through the Azure portal](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant#find-tenant-id-through-the-azure-portal). | Not applicable |
+| TenantID | Your Azure Tenant ID. For more information, learn more at [Find Tenant ID through the Azure portal](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant#find-tenant-id-through-the-azure-portal). | Not applicable |
 
-## I found a bug with the CoE Starter Kit; where should I go?
+## How to file an issue?
 
 To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+## What's next?
+
+- Learn how to [regularly upgrade and extend](after-setup.md) the CoE Starter Kit.
+- Check out [other components part of the core solution](core-components.md#environment-request-management-components), and the [governance](governance-components.md) and [nurture](nurture-components.md) solutions.
