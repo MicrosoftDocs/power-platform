@@ -76,7 +76,7 @@ Select **View all** to drill into the license assignments for users of each prod
 
 ## Users with unassigned licenses
 
-This view filters the report to show users with missing license assignments in Microsoft 365 admin center.
+This view filters the report to show users with missing license assignments in [Microsoft 365 admin center](https://admin.microsoft.com).
 
 | Column | Description |
 |--------|-------------|
