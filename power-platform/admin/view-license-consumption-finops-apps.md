@@ -138,7 +138,10 @@ View **menu items and access levels** (Read/Write) that contribute to license re
 | **Securable Type** | e.g., MenuItemDisplay |
 | **AOT Name** | Application Object tree name |
 | **Access Level** | Read or Write |
-| **Entitlement** | Whether it requires a license |
+| **Entitled** | Included in the mapped license scope |
+| **Not Entitled** | Not included in the mapped license scope |
+| **Not Required** | Doesn’t affect license scope |
+
 
 This helps explain the **why** behind a license requirement for each role.
 
@@ -165,7 +168,7 @@ For full entitlement or role mapping detail, use the views in Power Platform adm
 
 - Assign licenses to users with PowerShell automation for bulk user provisioning  
 - Align license assignment with actual usage telemetry, not job titles  
-- Use version 10.0.44 (or later) to validate roles using the [User Security Governance]((/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) feature 
+- Use version 10.0.44 (or later) to validate roles using the [User Security Governance](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) feature 
 - Review monthly and remove   
 - Coordinate with procurement to align purchases with system needs  
 
