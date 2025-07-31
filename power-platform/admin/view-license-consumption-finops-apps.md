@@ -81,9 +81,9 @@ This view filters the report to show users with missing license assignments in M
 | Column | Description |
 |--------|-------------|
 | **Email/User ID** | Entra ID identity |
-| **Required License** | Based on role telemetry |
-| **Assigned License in M365** | Whether license is provisioned |
-| **Missing Licenses** | Echo of required license if not yet assigned |
+| **Required License** | Based on security role corresponding duties and privileges |
+| **Assigned License in M365** | Finance and Operations app license(s) assigned to the user |
+| **Missing Licenses** | Required Finance and Operations app license(s) not assigned to the user |
 
 > [!IMPORTANT]
 > Users in the **Users with unassigned licenses** view can't sign in to the system once license validation starts.
