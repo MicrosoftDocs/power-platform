@@ -133,7 +133,7 @@ From the user's role, you can drill further into the security role-to-license ma
 
 ### Securable object breakdown
 
-View **menu items and access levels** (Read/Write) that contribute to license requirement to understand license requirements for each role.
+View **menu items and access levels** (Read/Write) that contribute to license requirements to better understand license requirements for each role:
 
 | Field | Description |
 |-------|-------------|
