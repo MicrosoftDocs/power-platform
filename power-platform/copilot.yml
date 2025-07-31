@@ -8,14 +8,14 @@ metadata:
   description: Get an overview of where to find documentation and training for copilots and generative AI in Power Platform.
   author: jhaskett-msft
   ms.author: jhaskett
-  ms.date: 07/29/2025
+  ms.date: 07/31/2025
   ms.topic: landing-page # DON'T CHANGE
   ms.custom: 
     - bap-template #Required; don't change
     - copilot-learning-hub
   ms.collection: bap-ai-copilot
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | overview | reference | sample | video | whats-new
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | learn | video | whats-new
 
 landingContent:
 
@@ -24,18 +24,16 @@ landingContent:
     linkLists:
     - linkListType: get-started
       links:
-      - text: Move data across regions for Copilots and generative AI features
-        url: admin/geographical-availability-copilot.md
       - text: AI Builder
         url: /ai-builder/
+      - text: Copilot Studio
+        url: /microsoft-copilot-studio/
       - text: Copilot in Power Apps
         url: /power-apps/maker/canvas-apps/ai-overview
       - text: Copilot in Power Automate
         url: /power-automate/copilot-overview
       - text: Copilot in Power Pages
         url: /power-pages/configure/ai-copilot-overview
-      - text: Copilot Studio
-        url: /microsoft-copilot-studio/
 
 # Card
   - title: Copilot training for Power Platform
@@ -53,12 +51,16 @@ landingContent:
 
   - title: Copilot guidance and development
     linkLists:
-    - linkListType: concept
+    - linkListType: deploy
       links:
+      - text: Track, manage, and scale Copilot adoption
+        url: /admin/copilot/copilot-hub.md
       - text: Use Copilot to generate deployment notes in pipelines
         url: alm/copilot-deployment-notes-pipelines.md
       - text: Extend Microsoft 365 Copilot
         url: /microsoft-365-copilot/extensibility/
+      - text: Move data across regions for Copilots and generative AI features
+        url: admin/geographical-availability-copilot.md
       - text: Generative language models used in Dynamics 365 and Power Platform
         url: language-models-list.md
     - linkListType: reference
@@ -73,8 +75,6 @@ landingContent:
         links:
           - text: Use an autonomous agent in Copilot Studio for document processing
             url: architecture/reference-architectures/document-processing-agent.md
-      - linkListType: reference
-        links:
           - text: Solution ideas for Copilot Studio
             url: architecture/products/copilot-studio.md#solution-ideas
 
@@ -89,15 +89,27 @@ landingContent:
         links:
           - text: Intelligent application workload
             url: well-architected/intelligent-application/index.yml
-      - linkListType: reference
+      - linkListType: how-to-guide
         links:
           - text: Power Platform Well-Architected assessment
             url: /assessments/689fd8d9-1000-4cbb-8096-a6c8f3294fc7/
           
+# Card
+  - title: Responsible AI
+    linkLists:
+    - linkListType: concept
+      links:
+      - text: Responsible AI FAQs for Power Platform
+        url: responsible-ai-overview.md
+      - text: FAQ about Copilot data security and privacy
+        url: faqs-copilot-data-security-privacy.md
+      - text: FAQ about optional data sharing for Copilot features
+        url: faqs-copilot-data-sharing.md
+
 ## Card
   - title: Related copilot products and resources
     linkLists:
-    - linkListType: reference
+    - linkListType: concept
       links:
       - text: Copilot availability in Power Platform by geography, language, product, and feature
         url: https://aka.ms/bapcopilot-intl-report-external
