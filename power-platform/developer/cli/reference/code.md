@@ -45,16 +45,20 @@ Use the include files to add additional content to this topic.
 
 The api id of the datasource.
 
+
+### Optional Parameters for code add-data-source
+
 #### `--connectionId` `-c`
 
 The connection id of the datasource.
 
-
-### Optional Parameters for code add-data-source
-
 #### `--dataset` `-d`
 
 The dataset name of the datasource.
+
+#### `--environment` `-env`
+
+The environment URL to connect to the data source.
 
 #### `--storedProcedure` `-sp`
 
