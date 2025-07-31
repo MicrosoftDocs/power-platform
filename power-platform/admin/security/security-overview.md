@@ -104,7 +104,7 @@ The system generates various recommendations, based on common best practices tha
 - Administrators are guided through an intuitive experience where they take relevant actions on environments, based on specific recommendations.
 - Each recommendation shows the potential increase to the overall security score.
 
-Although the recommendations span all environments, you can act on them only in Managed Environments. In the case of non-Managed Environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
+Although the recommendations span all environments, you can act on them only in Managed Environments. If non-Managed Environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
 
 ## Conditions that trigger feature recommendations
 
@@ -198,7 +198,7 @@ The security score is calculated based on the security features that are turned 
 
 ### Why don't all environments appear in the recommended action?
 
-Although the recommendations span all environments, you can act on them only in Managed Environments. In the case of non-Managed Environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
+Although the recommendations span all environments, you can act on them only in Managed Environments. If non-Managed Environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
 
 ### Can customers modify the recommendations based on their needs?
 
