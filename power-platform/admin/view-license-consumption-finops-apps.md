@@ -14,7 +14,7 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# View license consumption for Dynamics 365 finance and operations apps
+# View license consumption for Dynamics 365 finance and operations apps 
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -76,7 +76,7 @@ Select **View all** to drill into the license assignments for users of each prod
 
 ## Users with unassigned licenses
 
-This view filters the report to show users with missing license assignments in Microsoft 365 admin center.
+This view filters the report to show users with missing license assignments in [Microsoft 365 admin center](https://admin.microsoft.com).
 
 | Column | Description |
 |--------|-------------|
@@ -127,7 +127,7 @@ From the user's role, you can drill further into the role-to-license mapping.
 ### Role license matrix
 
 - View all compatible licenses for a role, like Commerce, Finance, or Human Resources.  
-- See how many users are correctly licensed versus not.
+- See how many users are correctly licensed vs. incorrectly licensed
 
 ### Securable object breakdown
 
@@ -163,7 +163,7 @@ For full entitlement or role mapping details, use the views in Power Platform ad
 
 ## Best practices
 
-- Assign licenses to users with PowerShell automation for bulk user provisioning.
+- Assign licenses to users with PowerShell automation for [bulk user provisioning](microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 - Align license assignment with actual usage telemetry, not job titles.  
 - Use version 10.0.44 or later to validate roles using the [User security governance](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) feature.
 - Review monthly and remove [dormant user security accounts in finance and operations](https://community.dynamics.com/blogs/post/?postid=164a42b4-fbf7-43ea-b4db-a07733b8bafb).
