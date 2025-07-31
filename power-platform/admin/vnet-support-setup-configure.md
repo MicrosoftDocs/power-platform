@@ -25,11 +25,13 @@ Azure virtual network support for Power Platform allows you to integrate Power P
 ## Prerequisites
 
 - **Review your Power Platform resources**: Review your apps, flows, and plug-in code to ensure they connect over your virtual network. They shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration allows for such calls. Learn more in [Considerations to enable virtual network support for Power Platform environment](vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in the [FAQ](vnet-support-overview.md#faq).
+
 - **Prepare your tenant and set up permissions**:
     - **Azure subscription**: Ensure you have an Azure subscription where virtual network, subnet, and enterprise policy resources will be created.
     - **Assign roles**: Ensure you have the required roles to create resources and enterprise policy.
       - In the Azure portal, assign the Azure network administrator role, such as the [network contributor role](/azure/role-based-access-control/built-in-roles#network-contributor) or an equivalent custom role.
       - In the Microsoft Entra admin center, assign the Power Platform administrator role.
+
 - **Prepare to use PowerShell**:
   - Use Windows PowerShell or [Install PowerShell Core](/powershell/scripting/install/installing-powershell)
   - Clone the GitHub repository to obtain the [PowerShell scripts for enterprise policies](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies)
