@@ -76,14 +76,14 @@ Select **View all** to drill into the license assignments for users of each prod
 
 ## Users with unassigned licenses
 
-This view filters the report to show users with missing license assignments in [Microsoft 365 admin center](https://admin.microsoft.com).
+You can see users with missing license assignments in [Microsoft 365 admin center](https://admin.microsoft.com) using the **Users with unassigned licenses** view.
 
 | Column | Description |
 |--------|-------------|
 | **Email/User ID** | Entra ID identity |
-| **Required License** | Based on security role corresponding duties and privileges |
-| **Assigned License in M365** | Finance and Operations app license(s) assigned to the user in  [Microsoft 365 admin center](https://admin.microsoft.com) |
-| **Missing Licenses** | Required Finance and Operations app license(s) not assigned to the user in [Microsoft 365 admin center](https://admin.microsoft.com) |
+| **Required license** | Based on security role corresponding duties and privileges |
+| **Assigned license in M365** | Finance and Operations app license(s) assigned to the user in  [Microsoft 365 admin center](https://admin.microsoft.com) |
+| **Missing licenses** | Required Finance and Operations app license(s) not assigned to the user in [Microsoft 365 admin center](https://admin.microsoft.com) |
 
 > [!IMPORTANT]
 > Users in the **Users with unassigned licenses** view will be unable to sign in to the system once license validation starts.
@@ -96,7 +96,7 @@ You can filter and sort by assigned licenses or by missing licenses.
 
 ### Filter and sort by assigned license
 
-Use the **Assigned Licenses in M365** column dropdown to find missing or incorrectly assigned licenses at scale:
+You can use the **Assigned Licenses in M365** column dropdown to find missing or incorrectly assigned licenses at scale:
 
 - Sort results (ascending or descending).
 - Filter by specific license types, like Commerce, Finance, Human Resources, Supply Chain Management, or Team Members.
@@ -165,7 +165,7 @@ For full entitlement or role mapping details, use the views in Power Platform ad
 
 ## Best practices
 
-- Assign licenses to users with PowerShell automation for [bulk user provisioning](microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
+- Assign licenses to users with PowerShell automation for [bulk user provisioning](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 - Align license assignment with actual usage telemetry, not job titles.  
 - Use version 10.0.44 or later to validate roles using the [User security governance](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) feature.
 - Review monthly and remove [dormant user security accounts in finance and operations](https://community.dynamics.com/blogs/post/?postid=164a42b4-fbf7-43ea-b4db-a07733b8bafb).
