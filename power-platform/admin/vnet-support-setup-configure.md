@@ -30,7 +30,7 @@ Azure virtual network support for Power Platform allows you to integrate Power P
     - **Assign roles**: Ensure you have the required roles to create resources and enterprise policy.
       - In the Azure portal, assign the Azure network administrator role, such as the [network contributor role](/azure/role-based-access-control/built-in-roles#network-contributor) or an equivalent custom role.
       - In the Microsoft Entra admin center, assign the Power Platform administrator role.
-- Prepare to use PowerShell:
+- **Prepare to use PowerShell**:
   - Use Windows PowerShell or [Install PowerShell Core](/powershell/scripting/install/installing-powershell)
   - Clone the GitHub repository to obtain the [PowerShell scripts for enterprise policies](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/enterprisePolicies)
   - Run the ["install modules and setup subscription" scripts](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#how-to-run-setup-scripts)
