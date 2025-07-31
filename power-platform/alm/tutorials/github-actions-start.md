@@ -9,6 +9,7 @@ ms.reviewer: pehecke
 ms.topic: tutorial
 search.audienceType: 
   - maker
+ms.custom: sfi-image-nochange
 ---
 
 # Tutorial: Get started with GitHub Actions for Microsoft Power Platform

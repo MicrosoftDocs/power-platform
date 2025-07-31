@@ -10,6 +10,9 @@ ms.author: arthii
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 
 # On-premises data gateway management

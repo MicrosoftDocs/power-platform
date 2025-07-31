@@ -5,18 +5,20 @@ author: sericks007
 ms.reviewer: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.custom: 
-  - "admin-security"
-  - NewPPAC
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/29/2025
 search.audienceType: 
   - admin
 contributors:
-- shahzorkhan123 
-- srpoduri
-- val-bc 
+  - shahzorkhan123 
+  - srpoduri
+  - val-bc 
+ms.custom:
+  - "admin-security"
+  - NewPPAC
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 # Create users
 
