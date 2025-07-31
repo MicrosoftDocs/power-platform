@@ -96,7 +96,7 @@ You can get support in two ways:
 
 - Full technical support is provided if the issue is caused by a service or platform. Commercially reasonable support is provided to all other scenarios. When an adequate solution to your issue isn't achieved, you might be referred to other support channels that are available for the non-Microsoft software.
 
-### Which support plan do I need in order to request a Root-Cause Analysis (RCA)?
+### Which support plan do I need in order to request a Root Cause Analysis (RCA)?
 
 Technical support doesn't conduct RCAs as part of any support experience.
 
