@@ -45,8 +45,8 @@ Keep the following information in mind:
 - [Support plans](https://www.microsoft.com/en-us/dynamics-365/)
 - [Dynamics 365 support](https://www.microsoft.com/en-us/dynamics-365/support)
 - [On-premises support](https://support.serviceshub.microsoft.com/supportforbusiness/onboarding?origin=/supportforbusiness/create)
-- Learn more in [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
-- Learn more in [Volume licensing information](https://www.microsoft.com/licensing/servicecenter/home.aspx).
+- [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support)
+- [Volume licensing information](https://www.microsoft.com/licensing/servicecenter/home.aspx)
 
 ## Technical support vs. advisory services
 
