@@ -18,7 +18,7 @@ ms.custom:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The license consumption experience in Power Platform admin center lets admins monitor and manage licensing needs for Dynamics 365 finance and operations apps. It shows which users need licenses, which ones are properly assigned, and where gaps exist so you can take action before per-user license validation deadlines.
+The User License Consumption experience in Power Platform admin center lets admins monitor and manage licensing needs for Microsoft Dynamics 365 finance and operations apps. It shows which users need licenses, which ones are properly assigned, and where gaps exist so you can take action before per-user license validation deadlines.
 
 Key capabilities include:
 
@@ -96,12 +96,10 @@ You can filter and sort by assigned licenses or by missing licenses.
 
 ### Filter and sort by assigned license
 
-Use the **Assigned Licenses in M365** column dropdown to:
+Use the **Assigned Licenses in M365** column dropdown to find missing or incorrectly assigned licenses at scale:
 
 - Sort results (ascending or descending).
 - Filter by specific license types, like Commerce, Finance, Human Resources, Supply Chain Management, or Team Members.
-
-This helps you find missing or incorrectly assigned licenses at scale.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-filtering.png" alt-text="User Licensing Consumption Filtering" lightbox="media/fno-user-licensing/user-license-consumption-filtering.png":::
 
@@ -111,7 +109,7 @@ In the **Missing license** column, use the filter to show users missing a specif
 
 ## Drill into user license details
 
-Select a **Required license** link to open the **Required license details per environment** screen.
+Select a **Required license** link to open the **Required license details per environment** screen to check why a license is needed and in which environment.
 
 | Field | Description |
 |-------|-------------|
@@ -119,8 +117,6 @@ Select a **Required license** link to open the **Required license details per en
 | **Environment type** | Production |
 | **Security role** | Assigned role |
 | **Required license** | License required triggered by role |
-
-This helps you check why a license is needed and in which environment.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-environment-details.png" alt-text="User Licensing Consumption Environment details" lightbox="media/fno-user-licensing/user-license-consumption-environment-details.png":::
 
@@ -135,7 +131,7 @@ From the user's role, you can drill further into the role-to-license mapping.
 
 ### Securable object breakdown
 
-View **menu items and access levels** (Read/Write) that contribute to license requirement.
+View **menu items and access levels** (Read/Write) that contribute to license requirement to understand license requirements for each role.
 
 | Field | Description |
 |-------|-------------|
@@ -145,8 +141,6 @@ View **menu items and access levels** (Read/Write) that contribute to license re
 | **Entitled** | Included in the mapped license scope |
 | **Not Entitled** | Not included in the mapped license scope |
 | **Not Required** | Doesn't affect license scope |
-
-This helps you understand license requirements for each role.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-role-duty-privilege.png" alt-text="User Licensing Consumption Role Duty Privilege" lightbox="media/fno-user-licensing/user-license-consumption-role-duty-privilege.png":::
 
