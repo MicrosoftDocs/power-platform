@@ -14,7 +14,7 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# View license consumption for Dynamics 365 finance and operations apps 
+# View license consumption for Dynamics 365 finance and operations apps
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -54,10 +54,10 @@ You can select metrics to view user-level details.
 Each Dynamics 365 finance and operations product has a card displaying:
 
 - Total users requiring a license  
-- By Product, Base licenses purchased and assigned  
-- By Product, Attach licenses purchased and assigned  
-- By Product, Base Licenses purchased but unassigned (available to assign)  
-- By Product, Attach Licenses purchased but unassigned (available to assign)  
+- By product, *base licenses* purchased and assigned  
+- By product, *attach licenses* purchased and assigned  
+- By product, *base licenses* purchased but unassigned (available to assign)  
+- By product, *attach licenses* purchased but unassigned (available to assign)  
 
 Supported products for User License Consumption reporting include:
 
