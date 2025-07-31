@@ -61,14 +61,14 @@ Each Dynamics 365 finance and operations product has a card displaying:
 
 Supported products for User License Consumption reporting include:
 
-- Finance  
-- Supply Chain Management  
 - Commerce  
+- Finance  
 - Human Resources  
 - Project Operations  
 - Team Members  
 - Operations – Activity  
 - Operations (Legacy licenses) 
+- Supply Chain Management  
 
 Click **View all** to drill into the license assignments for users of each product.
 
