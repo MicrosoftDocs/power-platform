@@ -36,9 +36,9 @@ Power Apps operational health metrics and recommendations are available in the n
 |Canvas apps | App open success rate| A percentage that describes how often end users are able to successfully open the app. | Generally available |
 |Canvas apps| Time to interactive (TTI)| The time (in seconds) that end users have to wait to interact with the first screen that's displayed after the app opens. | Generally available |
 |Canvas apps| Time to full load (TTFL) | The time (in seconds) that end users have to wait to have all the data requests for the first screen that's displayed after the app opens. | Generally available |
-|Canvas apps| App session count | The number of distinct user sessions in a canvas app in one day. A session begins when a user opens the app and ends after a period of inactivity or when the app is closed | Generally available |
+|Canvas apps| App session count | The number of distinct user sessions in a canvas app in one day. A session begins when a user opens the app and ends after a period of inactivity or when the app is closed. | Generally available |
 |Model-driven apps | App open success rate| A percentage that describes how often end users are able to successfully open the app. | Generally available |
-|Model-driven apps| App session count | The number of distinct user sessions in a model-driven app in one day. A session begins when a user opens the app and ends after a period of inactivity or when the app is closed | Generally available |
+|Model-driven apps| App session count | The number of distinct user sessions in a model-driven app in one day. A session begins when a user opens the app and ends after a period of inactivity or when the app is closed. | Generally available |
 |Model-driven apps | Row summary dwell time| The time (in seconds) that end users spend on the expanded AI row summary of a main form. | Preview |
 
 ### Metric and recommendation pairings
