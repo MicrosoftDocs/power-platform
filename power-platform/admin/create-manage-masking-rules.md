@@ -228,7 +228,7 @@ In these examples, replace `<url>`, `<table collection name>`, and `<recordid>` 
 #### Reading unmasked values on the form
 Users who were granted permission to [read unmasked fields](#grant-permissions-to-a-secured-column-with-a-masking-rule) will see a button to read the unmasked values on the form.
 
-<image - eye icon >
+:::image type="content" source="media/eye-icon.png" alt-text="Select the eye icon to read the unmasked values on the form." lightbox="media/eye-icon.png":::
 
 To read the unmasked values, select the "Read" icon (icon image).
 
@@ -244,10 +244,12 @@ Select the read unmasked field button to get the unmasked value, then update the
 
 ### Audit logs on masked fields
 All create and update record events will show the before and after values as masked values.
-<audit 1 image>
+
+:::image type="content" source="media/audit-1-image.png" alt-text="All create and update record events will show the before and after values as masked values." lightbox="media/audit-1-image.png":::
 
 Read unmasked value is also logged.
-<audit 2 image>
+
+:::image type="content" source="media/audit-2-image.png" alt-text="Read unmasked value is also logged." lightbox="media/audit-2-image.png":::
 
 ## Known limitations/Not supported
 
