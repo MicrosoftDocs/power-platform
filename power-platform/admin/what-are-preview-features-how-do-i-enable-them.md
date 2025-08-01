@@ -69,26 +69,6 @@ Preview features are features that aren't complete, but are made available on a 
 
 5. Select **Save**.
 
-### In a Unified Interface app
-
-Follow these steps for [Unified Interface](about-unified-interface.md) apps.
-
-To enable a Preview feature, you must be an administrator.  
-  
-1. Sign in to [Power Apps](https://make.powerapps.com).
-
-2. Select your environment from the top-right corner, and select **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
-
-3. Select **Settings** > **Administration**.
-  
-4. Select **System Settings**, and then select the **Previews** tab.  
-  
-5. Read the [license terms](https://go.microsoft.com/fwlink/p/?LinkId=511446), and if you agree, select the **I've read and agree to the license terms** check box.  
-  
-6. For each Preview feature you want to enable, select **Yes**.  
-  
-    :::image type="content" source="media/system-settings-previews75.png" alt-text="System settings preview":::
-
 ## How do I report an issue or provide other feedback?
  
 If you'd like to provide feedback, offer suggestions, or report issues for a preview feature, go to the appropriate ideas website that provides a collaboration platform for gathering actionable feedback to build and improve products and services:
