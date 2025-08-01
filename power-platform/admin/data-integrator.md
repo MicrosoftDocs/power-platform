@@ -148,10 +148,9 @@ After you create an integration project, you have the option to run it manually 
 To set up schedule-based writes follow these steps:
 
 1. Go to [Power Platform admin center](https://admin.powerapps.com).
-
-2. Select the project and then select **...** > **Schedule**.
-
-3. Select **Recur every** and once you have completed all the fields, select **Save schedule**.
+1. Select **Manage** > **Data integration** on the left navigation pane.
+1. On the **Projects** tab, select the project and then select **...** > **Schedule**.
+1. Select **Recur every** and once you have completed all the fields, select **Save schedule**.
 
 You can set a frequency as often as one minute or have it recur a certain number of hours, days, weeks, or months. Note that the next refresh won't start until the previous project task completes its run.
 
@@ -180,24 +179,22 @@ You can customize projects and templates in these ways:
 To create a connection set, follow these steps:
 
 1. Go to [Power Platform admin center](https://admin.powerapps.com).
-
-2. Select the project for which you want to customize field mappings, select **...** > **Connection set details**.
-
-3. Select the **Organizations** tab, and then select **+ Add mapping**.
-
-4. Once you have customized your field mappings, select **Save** on the command bar.
+1. Select **Manage** > **Data integration** on the left navigation pane.
+1. On the **Projects** tab, select the project for which you want to customize field mappings, select **...** > **Connection set details**.
+1. Select the **Organizations** tab, and then select **+ Add mapping**.
+1. Once you have customized your field mappings, select **Save** on the command bar.
 
 ### How to create your own template 
 
 #### Create your own template by modifying existing templates
+<!-- Templates don't exist and weren't possible to create in my tenant where I'm a global admin-->
+1. Sign in to [Power Platform admin center](https://admin.powerapps.com).
 
-1. Go to [Power Platform admin center](https://admin.powerapps.com).
+2. Select **Manage** > **Data integration** on the left navigation pane.
 
-2. Identify source and destination and direction of flow for your new template.
+3. On the **Templates** tab, create a project by selecting an existing template that matches your choice of source and destination and direction of flow.
 
-3. Create a project by choosing an existing template that matches your choice of source and destination and direction of flow.
-
-4. Create the project after choosing the appropriate connection.
+4. Choose the appropriate connection.
 
 5. Before you save or run the project, select **Add task** on the command bar.
 
@@ -225,9 +222,9 @@ To create a connection set, follow these steps:
     > ![Name and description.](media/data-integrator/CustomizeTemplateSaveAsTemplate175.png "Name and description")
 
 #### Create your own template from a blank template
-
-1. Go to [Power Platform admin center](https://admin.powerapps.com).
-2. Create a data integration project. Select **Manage** > **Data integration** on the left navigation pane.
+<!-- Templates don't exist and weren't possible to create in my tenant where I'm a global admin-->
+1. Sign in to [Power Platform admin center](https://admin.powerapps.com).
+2. Go to **Manage** > **Data integration** on the left navigation pane.
 3. Select **New project** and provide a name for your project. For example, *Demo_CreateYourOwnTemplate project*.
 4. In the **Select a template** list page, pick a generic blank template. 
 For this example, choose the **Sales to Fin and Ops** template since we want to move data from finance and operations apps to Dynamics 365 Sales.
