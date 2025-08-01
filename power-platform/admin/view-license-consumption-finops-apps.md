@@ -7,9 +7,11 @@ ms.reviewer: sericks
 ms.topic: how-to
 ms.subservice:
 ms.author: ampatra
-ms.custom: bap-template
 search.audienceType: 
  - admin
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # View license consumption for finance and operations apps

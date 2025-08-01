@@ -4,13 +4,15 @@ description: Learn how to get visibility into all Microsoft Copilot Studio agent
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/02/2025
+ms.date: 07/28/2025
 ms.custom: NewPPAC
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+  - adrianorth 
 ---
 
 # View agent inventory (preview)
@@ -76,7 +78,7 @@ To view details about an agent:
 - Select an item, then select the **Details** option, under the page name.
 - Select the agent's display name to be redirected to its details page in the Copilot Studio portal.
     > [!NOTE]
-    > You must have edit permissions on the selected agent to access its details page. If you do not have sufficient permissions, you will see a "This link is broken" error.
+    > You must have edit permissions on the selected agent to access its details page. If you don't have sufficient permissions, you see a "This link is broken" error.
 
 To view details about an environment, select the environment name to view the environment details.
 
@@ -89,19 +91,18 @@ To clear all filters and sorts, select any column and select **Clear all filters
 - **Limited scope**: This experience supports only agents built directly in Copilot Studio. Agents that are created in Copilot Studio agent builder, in the Microsoft 365 Copilot app, aren't supported in this release.
 - **Data refresh frequency**: Inventory data updates once every 24 hours. Newly created agents might take up to 24 hours to appear, and deleted agents might remain visible for up to 48 hours after removal.
 - **Item display limit**: The inventory page displays a maximum of 500 agents at one time. If more than 500 agents match your search or filter criteria, only the first 500 are displayed. Use more filters to narrow down your results. The primary search box, at the top of the page, only searches across those 500 agents.
-- **Teams environments**: Currently, it's not possible to filter agents created in Microsoft Teams environments. These agents still appear in the inventory list; however, the **Environment Type** column is blank. This issue will be resolved shortly.
 
 ## Frequently asked questions
 
 ### Why am I seeing multiple agents with identical names&mdash;for example, _Copilot in Power Apps_&mdash;across different environments?
 
-Power Apps creates a platform-owned agent named **Copilot in Power Apps** in each environment. This agent is only editable by a Power Platform admin and isn't published to any channels by default. Although this agent can be viewed in Copilot Studio, this agent shouldn't be edited since it's not used by model-driven apps. Learn more in [Customize Copilot chat using Copilot Studio](/power-apps/maker/model-driven-apps/customize-copilot-chat).
+Power Apps has been creating a platform-owned agent, named **Copilot in Power Apps**, in each environment. This agent is no longer being created in new environments. This agent will be removed in the future. It can be manually removed now, or you can wait for the removal in an upcoming solution update.
 
-This is similar to other standard, preinstalled, model-driven apps such as the Power Platform Environment Settings.
+The admin setting **Copilot in Power Apps (Preview)** has no impact on the creation of this agent. Learn more in [Add copilot chat to your app](/power-apps/maker/model-driven-apps/add-ai-copilot).
 
 ### Why can't I find an agent on the Copilot Studio page?
 
-Occasionally, you might not be able to locate a specific agent in your on the **Copilot Studio** page. Use the following steps to resolve the issue.
+Occasionally, you might not be able to locate a specific agent on the **Copilot Studio** page. Use the following steps to resolve the issue.
 
 #### Step 1: Clear all filters and sorts
 

@@ -14,8 +14,9 @@ contributors:
 - Mattp123
 - JimDaly
 ms.contributors:
-- erjost
-- hnatuva
+   - erjost
+   - hnatuva
+ms.custom: sfi-image-nochange
 ---
 
 # Restore deleted Microsoft Dataverse table records (preview)
