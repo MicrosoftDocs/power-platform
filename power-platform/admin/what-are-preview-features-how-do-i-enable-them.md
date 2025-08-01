@@ -1,9 +1,9 @@
 ---
-title: "Enable preview features to get early access"
-description: "Learn how to enable preview features in Power Platform that have limited functionality to get early access and provide feedback."
+title: Enable preview features to get early access
+description: Learn how to enable preview features in Power Platform that have limited functionality to get early access and provide feedback.
 author: sericks007
 ms.topic: how-to
-ms.date: 7/30/2025
+ms.date: 08/01/2025
 ms.subservice: admin
 ms.author: sericks
 ms.contributors:
@@ -14,6 +14,7 @@ contributors:
     - syalandur24
 ms.custom:
     - NewPPAC    
+    
 ---
 
 # What are preview features, and how do I enable them?
@@ -48,11 +49,7 @@ Preview features are features that aren't complete, but are made available on a 
 
 4. In the **Manage** pane, select **Environments**, select an environment, and select **Settings**.
 
-    :::image type="content" source="media/select-env-settings.png" alt-text="Select the settings for an environment":::
-
-5. Under **Product**, select **Features** and then select **On** for the feature to enable. Preview features are labeled as "preview".
-
-    :::image type="content" source="media/turn-on-preview-new.png" alt-text="Turn on preview features in the new admin center":::  
+5. Under **Product**, select **Features** and then select **On** for the feature to enable. Preview features are labeled as _preview_.
 
 ### In the Classic Power Platform admin center
 
@@ -69,8 +66,6 @@ Preview features are features that aren't complete, but are made available on a 
 3. Select **Environments** in the left navigation pane, select your environment, and then select **Settings** on the top menu bar.
 
 4. Under **Product**, select **Features** and then select **On** for the feature to enable. Preview features are labeled as "preview".
-
-   :::image type="content" source="media/turn-on-preview.png" alt-text="Turn on preview features":::
 
 5. Select **Save**.
 
