@@ -73,11 +73,11 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Power Platform Well-Architected intelligent application workloads
+          - text: "Power Platform Well-Architected: Intelligent application workloads"
             url: well-architected/intelligent-application/index.yml  
       - linkListType: architecture
         links:
-          - text: Power Platform and Copilot Studio Architecture Center
+          - text: "Power Platform and Copilot Studio Architecture Center: Reference architectures and solution ideas"
             url: architecture/products/copilot-studio.md
 
 # Card
