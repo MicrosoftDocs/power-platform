@@ -152,46 +152,6 @@ We recommend that you should test the IP firewall in your test environment first
 > [!NOTE]
 > By default, [TDS endpoint](settings-features.md#tds-endpoint) is turned on within the Power Platform environment.
 
-## SPN filtering for application users
-The IP Firewall feature in Power Platform allows administrators to restrict access to environments based on IP address ranges. For scenarios where specific application users (Service Principal Names or SPNs) need to bypass these restrictions, SPN filtering can be enabled using the following API-based approach.
-
-## Steps to Enable SPN Filtering
-1. Assign Security Roles to the Application User
-   Add the application user to the target environment and assign the appropriate security roles.
-   Example:
-   Add the app user with ID 123 and name TestSPN to the environment and assign the necessary roles
-2. Retrieve the System User ID
-   Use the following API call to fetch the systemuserid for the application user:
-   ~~~
-GET https://{root-url}/api/data/v9.0/systemusers?$filter=applicationid eq {application-id}&$select=systemuserid
-HTTP/1.1
-Content-Type: application/json
-OData-MaxVersion: 4.0
-OData-Version: 4.0
-~~~
-
-3. Allowlist the Application User
-
-~~~
-https://{yourorg}.api.crm*.dynamics.com/api/data/v9.2/systemusers(SystemuserID)
-HTTP/1.1
-Content-Type: application/json
-OData-MaxVersion: 4.0
-OData-Version: 4.0
-~~~
-
-**Payload**
-
-~~~
-[
-{
-	“Isallowedbyipfirewall”:” true”
-    }
-]
-~~~
-4. Configure IP Firewall Settings in PPAC
-Navigate to the Power Platform Admin Center (PPAC) and configure the IP Firewall settings.
-Ensure that the option “Allow access for all application users” is unchecked to enforce filtering.
  
 ## Licensing requirements for IP firewall
 
