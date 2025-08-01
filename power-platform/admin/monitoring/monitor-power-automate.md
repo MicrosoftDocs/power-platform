@@ -4,7 +4,7 @@ description: Learn more about the metrics and recommendations for Power Automate
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/23/2025
+ms.date: 08/01/2025
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
@@ -18,12 +18,7 @@ contributors:
 
 # Metrics and recommendations for Power Automate
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Power Automate operational health metrics and recommendations are available in the new Power Platform admin center.
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## View Power Automate metrics and recommendations
 
