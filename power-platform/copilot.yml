@@ -8,7 +8,7 @@ metadata:
   description: Get an overview of where to find documentation and training for Copilots and generative AI in Power Platform.
   author: jhaskett-msft
   ms.author: jhaskett
-  ms.date: 07/31/2025
+  ms.date: 08/01/2025
   ms.topic: landing-page # DON'T CHANGE
   ms.custom: 
     - bap-template #Required; don't change
@@ -49,7 +49,7 @@ landingContent:
       - text: Explore more training available
         url: /training/browse/?products=power-platform&terms=copilot
 
-  - title: Copilot guidance and development
+  - title: Copilot development and deployment
     linkLists:
     - linkListType: deploy
       links:
@@ -69,30 +69,16 @@ landingContent:
         url: developer/cli/reference/copilot.md
 
 # Card
-  - title: Power Platform and Copilot Studio Architecture Center
+  - title: Power Platform generative AI guidance
     linkLists:
-      - linkListType: architecture
-        links:
-          - text: Use an autonomous agent in Copilot Studio for document processing
-            url: architecture/reference-architectures/document-processing-agent.md
-          - text: Solution ideas for Copilot Studio
-            url: architecture/products/copilot-studio.md#solution-ideas   
-
-# Card
-  - title: Power Platform Well-Architected
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Power Platform Well-Architected?
-            url: well-architected/what-is-power-well-architected.md
       - linkListType: concept
         links:
-          - text: Intelligent application workload
-            url: well-architected/intelligent-application/index.yml
-      - linkListType: how-to-guide
+          - text: Power Platform Well-Architected intelligent application workloads
+            url: well-architected/intelligent-application/index.yml  
+      - linkListType: architecture
         links:
-          - text: Power Platform Well-Architected assessment
-            url: /assessments/689fd8d9-1000-4cbb-8096-a6c8f3294fc7/
+          - text: Power Platform and Copilot Studio Architecture Center
+            url: architecture/products/copilot-studio.md
 
 # Card
   - title: Responsible AI
