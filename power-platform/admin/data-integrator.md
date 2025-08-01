@@ -348,7 +348,6 @@ Ensure indexes are defined for integration keys.
 
 ## Related content
 
-> [!TIP]
 [Data Integrator Updates – New features with an intuitive user interface providing a fluent experience](https://powerapps.microsoft.com/blog/data-integrator-updates-new-features-with-an-intuitive-user-interface-providing-a-fluent-experience/).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
