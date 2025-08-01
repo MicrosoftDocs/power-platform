@@ -1,10 +1,10 @@
 ---
-title: Metrics and recommendations for Power Automate (preview)
+title: Metrics and recommendations for Power Automate
 description: Learn more about the metrics and recommendations for Power Automate.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/23/2025
+ms.date: 08/01/2025
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
@@ -16,14 +16,9 @@ contributors:
   - trdehove
 ---
 
-# Metrics and recommendations for Power Automate (preview)
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+# Metrics and recommendations for Power Automate
 
 Power Automate operational health metrics and recommendations are available in the new Power Platform admin center.
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## View Power Automate metrics and recommendations
 
@@ -31,17 +26,17 @@ Power Automate operational health metrics and recommendations are available in t
  1. In the navigation pane, select **Monitor**.
  1. In the **Monitor** pane, under **Products**, select **Power Automate**.
 
-    The **Power Automate (preview)** page displays the metrics and recommendations.
+    The **Power Automate** page displays the metrics and recommendations.
 
 ## Power Automate metrics and recommendations
 
 ### Metric definitions
-| Type | Metric | Definition |
-|---|---|---|
-| Flows| Success rate| A percentage that describes how often flows are able to run successfully. |
-| Flows| Run count| Count of flow runs. |
-| Flows| Duration| Average (in seconds) total execution time of flow run. |
-| Desktop flows| Time in queue| The minimum time (in seconds) that the slowest 10% of desktop flows have to wait before a machine is assigned to run them. |
+| Type | Metric | Definition | Support |
+|---|---|---|---|
+| Flows| Success rate| A percentage that describes how often flows are able to run successfully. | Generally available |
+| Flows| Run count| Count of flow runs. | Generally available |
+| Flows| Duration| Average (in seconds) total execution time of flow run. | Generally available |
+| Desktop flows| Time in queue| The minimum time (in seconds) that the slowest 10% of desktop flows have to wait before a machine is assigned to run them. | Generally available |
 
 
 ### Metric and recommendation pairings
