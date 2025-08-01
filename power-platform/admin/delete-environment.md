@@ -43,7 +43,7 @@ You can delete an environment to recover storage space and to remove Personally 
 
 ### [Classic admin center](#tab/classic)
 
-1. Sign in to [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com).  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).  
 
 2. Select an environment and then select **Delete**.
 
