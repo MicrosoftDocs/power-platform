@@ -152,6 +152,7 @@ We recommend that you should test the IP firewall in your test environment first
 > [!NOTE]
 > By default, [TDS endpoint](settings-features.md#tds-endpoint) is turned on within the Power Platform environment.
 
+
 ## Licensing requirements for IP firewall
 
 IP firewall is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md) with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
