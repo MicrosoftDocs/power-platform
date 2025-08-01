@@ -18,7 +18,7 @@ ms.custom:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The User License Consumption experience in Power Platform admin center lets admins monitor and manage licensing needs for Microsoft Dynamics 365 finance and operations apps. It shows which users need licenses, which ones are properly assigned, and where gaps exist so you can take action before per-user license validation deadlines.
+The User License Consumption experience in Power Platform admin center lets admins monitor and manage licensing for Microsoft Dynamics 365 finance and operations apps. It shows which users need licenses, which ones are properly assigned, and where gaps exist so you can take action before per-user license validation deadlines.
 
 Key capabilities include:
 
@@ -45,13 +45,13 @@ Key capabilities include:
 - **Total users**: All users across connected finance and operations environments.
 - **Users with unassigned licenses**: Users who are assigned roles that require a license but do not have a a license assigned in in [Microsoft 365 admin center](https://admin.microsoft.com).
 
-You can select metrics to view user-level details.
+Select metrics to view details for each user.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-metrics.png" alt-text="User License Consumption metrics" lightbox="media/fno-user-licensing/user-license-consumption-metrics.png":::
 
 ## Product-level license summaries
 
-Each Dynamics 365 finance and operations product has a card displaying:
+Each Dynamics 365 finance and operations product shows a card with:
 
 - Total users requiring a license  
 - By product, *base licenses* purchased and assigned  
@@ -76,7 +76,7 @@ Select **View all** to drill into the license assignments for users of each prod
 
 ## Users with unassigned licenses
 
-You can see users with missing license assignments in [Microsoft 365 admin center](https://admin.microsoft.com) using the **Users with unassigned licenses** view.
+Identify users with missing license assignments in [Microsoft 365 admin center](https://admin.microsoft.com) using the **Users with unassigned licenses** view.
 
 | Column | Description |
 |--------|-------------|
@@ -86,17 +86,17 @@ You can see users with missing license assignments in [Microsoft 365 admin cente
 | **Missing licenses** | Required Finance and Operations app license(s) not assigned to the user in [Microsoft 365 admin center](https://admin.microsoft.com) |
 
 > [!IMPORTANT]
-> Users in the **Users with unassigned licenses** view will be unable to sign in to the system once license validation starts.
+> Users in the **Users with unassigned licenses** view can't sign in to the system once license validation starts.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png" alt-text="Users with unassigned licenses" lightbox="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png":::
 
 ## Filter and sort capabilities
 
-You can filter and sort by assigned licenses or by missing licenses.
+Filter and sort by assigned licenses or by missing licenses.
 
 ### Filter and sort by assigned license
 
-You can use the **Assigned Licenses in M365** column dropdown to find missing or incorrectly assigned licenses at scale:
+Use the **Assigned Licenses in M365** column dropdown to find missing or incorrectly assigned licenses at scale:
 
 - Sort results (ascending or descending).
 - Filter by specific license types, like Commerce, Finance, Human Resources, Supply Chain Management, or Team Members.
@@ -105,11 +105,11 @@ You can use the **Assigned Licenses in M365** column dropdown to find missing or
 
 ### Filter by missing license
 
-In the **Missing license** column, use the filter to show users missing a specific license, like Supply Chain Management. This lets you assign the right base licenses based on product.
+Use the filter in the **Missing license** column to show users missing a specific license, like Supply Chain Management. Assign the right base licenses based on product.
 
 ## Drill into user license details
 
-On a user, select a **Required license** link to open the **Required license details per environment** screen.
+On a user, select a **Required license** link to open the **Required license details per environment** screen so you can check why a license is needed and in which environment.
 
 | Field | Description |
 |-------|-------------|
@@ -117,8 +117,6 @@ On a user, select a **Required license** link to open the **Required license det
 | **Environment type** | Production |
 | **Security role** | Assigned role |
 | **Required license** | License required triggered by role |
-
-This helps you check why a license is needed and in which environment.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-environment-details.png" alt-text="User Licensing Consumption Environment details" lightbox="media/fno-user-licensing/user-license-consumption-environment-details.png":::
 
@@ -173,7 +171,7 @@ For full entitlement or role mapping details, use the views in Power Platform ad
 
 ## Known limitations
 
-- For finance and operations apps in Dynamics 365, a GUID uniquely ties a user record to an identity in Microsoft Entra ID. A GUID can appear instead of an email address if identity metadata is incomplete or users are deleted in Entra but user records aren't removed from finance and operations security role assignments.
+- For finance and operations apps in Dynamics 365, a GUID uniquely ties a user record to an identity in Microsoft Entra ID. A GUID can appear instead of an email address if identity metadata is incomplete or if someone deletes users in Entra but doesn't remove user records from finance and operations security role assignments.
 - Custom security roles might need reanalysis to align with licensing.
 
 ## Related resources
