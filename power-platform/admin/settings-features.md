@@ -4,12 +4,12 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/30/2025
+ms.date: 07/31/2025
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 contributors:
     - jekom1
     - sriharibs-msft 
@@ -17,6 +17,7 @@ contributors:
     - jasongr
     - v-aangie
     - steph-kent-ms
+    - EllenWehrle
 ms.Contributors:
     - v-linhvovan
 search.audienceType: 
@@ -295,7 +296,7 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 ## Power Automate capacity
 
 | Setting | Description | Default value |
-|---------|-------------|---------------| 
+|---------|-------------|---------------|
 | Allow process capacity overage  |  When **On**, enables machines and cloud flows to go into process capacity overage. New process capacity overage is only possible in an environment with at least one process / hosted process / unattended capacity assigned. Learn more in [Process capacity overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage). | On |
 | Allow auto-claim of process capacity |  When **On**, enables automatic assignment of process capacity to the environment (if any is available in the admin center) when required by an assignation of process capacity to a cloud flow, or to a machine while there's no available capacity in the environment. Learn more in [Process capacity](/power-automate/desktop-flows/capacity-process). | On |
 
