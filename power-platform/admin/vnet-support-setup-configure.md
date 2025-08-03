@@ -97,30 +97,30 @@ The following diagram shows the functions of the roles in the setup process for 
         "contentVersion": "1.0.0.0",
         "parameters": {
             "policyName": {
-                "type": "String",
+                "type": "string",
                 "metadata": {
                     "description": "The name of the Enterprise Policy."
                 }
             },
             "powerplatformEnvironmentRegion": {
-                "type": "String",
+                "type": "string",
                 "metadata": {
                     "description": "Geo of the PowerPlatform environment."
                 }
             },
             "vNetOneSubnetName": {
-                "type": "String"
+                "type": "string"
             },
             "vNetOneResourceId": {
-                "type": "String"
+                "type": "string"
             },
             "vNetTwoSubnetName": {
                 "defaultValue": "",
-                "type": "String"
+                "type": "string"
             },
             "vNetTwoResourceId": {
                 "defaultValue": "",
-                "type": "String"
+                "type": "string"
             }
         },
         "variables": {
@@ -141,7 +141,7 @@ The following diagram shows the functions of the roles in the setup process for 
         "resources": [
             {
                 "type": "Microsoft.PowerPlatform/enterprisePolicies",
-                "apiVersion": "2020-10-30",
+                "apiVersion": "2020-10-30-preview",
                 "name": "[parameters('policyName')]",
                 "location": "[parameters('powerplatformEnvironmentRegion')]",
                 "kind": "NetworkInjection",
