@@ -112,7 +112,10 @@ The following diagram shows the functions of the roles in the setup process for 
                 "type": "string"
             },
             "vNetOneResourceId": {
-                "type": "string"
+                "type": "string",
+          			"metadata": {
+                    "description": "Fully qualified name, such as /subscription/{subscriptionid}/..."
+                }
             },
             "vNetTwoSubnetName": {
                 "defaultValue": "",
@@ -120,7 +123,10 @@ The following diagram shows the functions of the roles in the setup process for 
             },
             "vNetTwoResourceId": {
                 "defaultValue": "",
-                "type": "string"
+                "type": "string",
+          			"metadata": {
+                    "description": "Fully qualified name, such as /subscription/{subscriptionid}/..."
+                }
             }
         },
         "variables": {
