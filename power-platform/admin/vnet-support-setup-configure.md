@@ -133,7 +133,7 @@ The following diagram shows the functions of the roles in the setup process for 
             "vNetTwo": {
                 "id": "[parameters('vNetTwoResourceId')]",
                 "subnet": {
-                    "name": "[parameters('vNnetTwoSubnetName')]"
+                    "name": "[parameters('vNetTwoSubnetName')]"
                 }
             },
             "vNetTwoSupplied": "[and(not(empty(parameters('vNetTwoSubnetName'))), not(empty(parameters('vNetTwoResourceId'))))]"
