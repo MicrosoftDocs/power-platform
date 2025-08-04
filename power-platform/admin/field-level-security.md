@@ -57,6 +57,9 @@ Use the following steps to secure a column:
 
 1. Select **Save**.
 
+> [!Note]
+> Enabling column level security on a column will deny access unless a column security profile is assigned.
+
 ## Add teams or users to a column security profile to control access
 
 A column security profile determines:
@@ -118,17 +121,14 @@ You can view this area when you [create or edit a column](/power-apps/maker/data
 Columns that can't be secured include:
 
 - Columns in virtual tables
-- [Lookup columns](/power-apps/maker/data-platform/types-of-fields#different-types-of-lookups)
 - [Formula columns](/power-apps/maker/data-platform/formula-columns)
 - Primary name columns (The single-line of text column each table has to show the value in a lookup field. Typically with a name ending with `name`.)
 - System columns like `createdon`, `modifiedon`, `statecode`, and `statuscode`.
-
-> [!Note]
 - File and Image data types can be secured, but they can't be masked.
 - Text data type with Rich text format can be secured, but an embedded image in Rich text can't be masked or bypassed for masking.
 
-Whether the **Enable column security** checkbox is enabled depends on the value of these column properties: `CanBeSecuredForCreate`, `CanBeSecuredForRead`, and `CanBeSecuredForUpdate`. A developer can write a query to retrieve a list of these columns and you can view this data by installing the Metadata Browser solution described in [Browse the Metadata for Your Organization](/powerapps/developer/common-data-service/browse-your-metadata). Learn more about [which columns can be secured](/power-apps/developer/data-platform/field-security-entities#which-attributes-can-be-secured) and [how developers can retrieve this data](/power-apps/developer/data-platform/query-schema-definitions).
-
+> [!Note]
+> Whether the **Enable column security** checkbox is enabled depends on the value of these column properties: `CanBeSecuredForCreate`, `CanBeSecuredForRead`, and `CanBeSecuredForUpdate`. A developer can write a query to retrieve a list of these columns and you can view this data by installing the Metadata Browser solution described in [Browse the Metadata for Your Organization](/powerapps/developer/common-data-service/browse-your-metadata). Learn more about [which columns can be secured](/power-apps/developer/data-platform/field-security-entities#which-attributes-can-be-secured) and [how developers can retrieve this data](/power-apps/developer/data-platform/query-schema-definitions).
 
 ## Best practices
 
