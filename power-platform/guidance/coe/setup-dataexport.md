@@ -135,8 +135,4 @@ This section includes the full list of environment variables that affect the Dat
 | Maker Dataflow ID | Dataflow ID of the CoE BYODL Makers dataflow. Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory). | Not applicable |
 | Model App Dataflow ID | Dataflow ID of the CoE BYODL Model Driven Apps dataflow. Only used when mechanism for inventory is [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory). | Not applicable |
 
-## I found a bug with the CoE Starter Kit; where should I go?
-
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]

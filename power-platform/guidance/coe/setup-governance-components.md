@@ -112,8 +112,4 @@ Environment variables are used to store application and flow configuration data 
 | Compliance – Apps - Number Users Shared | If the app is shared with this many or more users, makers are asked for a business justification. | 20 |
 | Compliance – Chatbots – Number Launches | If the chatbot is launched this many or more times, makers are asked for a business justification. | 50 |
 
-## I found a bug with the CoE Starter Kit. Where should I go?
-
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]
