@@ -17,13 +17,13 @@ contributors:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-The IP firewall helps to protect your organizational data by limiting user access to Microsoft Dataverse from only allowed IP locations. The IP firewall analyzes the IP address of each request in real time. For example, suppose the IP firewall is turned on in your production Dataverse environment, and allowed IP addresses are in the ranges associated with your office locations and not any external IP location like a coffee shop. If a user tries to access organizational resources from a coffee shop, Dataverse denies access in real time.
+The IP firewall protects your organizational data by ensuring users can only access Microsoft Dataverse from allowed IP locations. The IP firewall analyzes the IP address of each request in real time. For example, you can turn on the IP firewall in your production Dataverse environment and set allowed IP addresses in the ranges associated with your office locations and not any external IP location, like a coffee shop. If a user tries to access organizational resources from a coffee shop, Dataverse denies access in real time.
 
 :::image type="content" source="media/ip-firewall-dataverse-diagram.png" alt-text="Diagram illustrating the IP firewall feature in Dataverse.":::
 
 ## Key benefits
 
-Enabling the IP firewall in your Power Platform environments offers several key benefits.
+Turning on the IP firewall in your Power Platform environments offers several key benefits.
 
 - **Mitigate insider threats like data exfiltration**: A malicious user who tries to download data from Dataverse using a client tool like Excel or Power BI from a disallowed IP location is blocked from doing so in real time.
 - **Prevent token replay attacks**: If a user steals an access token and tries to use it to access Dataverse from outside allowed IP ranges, Dataverse denies the attempt in real time.
