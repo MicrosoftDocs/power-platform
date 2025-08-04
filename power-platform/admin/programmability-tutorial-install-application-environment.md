@@ -10,6 +10,7 @@ ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Tutorial: Install an application to a target environment

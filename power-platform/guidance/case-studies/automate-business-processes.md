@@ -6,6 +6,7 @@ ms.author: sashi
 ms.topic: overview
 ms.subservice: guidance
 ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
 
 ---
 

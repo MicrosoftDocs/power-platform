@@ -6,7 +6,6 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.topic: how-to
 ms.date: 07/23/2025
-ms.custom: template-how-to
 ms.contributors:
   - samathur
   - kakazemi
@@ -19,6 +18,10 @@ contributors:
   - lauravasiliums
   - sericks007
   - syalandur24
+ms.custom:
+  - template-how-to
+  - sfi-image-nochange
+  - template-how-to
 ---
 
 # Manage your customer-managed encryption key
