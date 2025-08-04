@@ -1,5 +1,5 @@
 ---
-title: Copilot Studio architecture key concepts and solution ideas
+title: Copilot Studio reference architectures and solution ideas
 description: Learn key architecture concepts and solution ideas to create intelligent applications and solutions with advanced AI capabilities in Microsoft Copilot Studio.
 #customer intent: As a business decision maker, I want to understand Microsoft Copilot Studio key concepts and solution ideas so that I can create intelligent applications with advanced AI capabilities.
 author: manuelap-msft
@@ -7,10 +7,10 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 07/15/2025
+ms.date: 08/01/2025
 ---
 
-# Copilot Studio architecture key concepts and solution ideas
+# Copilot Studio reference architectures and solution ideas
 
 Microsoft Copilot Studio is a graphical, low-code platform that allows organizations to create powerful applications and solutions that integrate advanced AI capabilities. You can use Copilot Studio to create custom agents and to extend a Microsoft 365 Copilot with your own enterprise data.
 

@@ -5,6 +5,7 @@ ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/29/2025
+ms.update-cycle: 180-days
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
