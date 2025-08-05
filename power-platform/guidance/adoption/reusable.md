@@ -15,6 +15,7 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
   - ai-seo-date:03/28/2025
+  - sfi-image-nochange
 ---
 
 # Share templates and reusable components
