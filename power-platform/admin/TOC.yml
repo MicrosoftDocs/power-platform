@@ -544,7 +544,7 @@
                   href: managed-environment-sharing-limits.md
                 - name: App access control
                   items:
-                    - name: Control which apps are allowed in your environment (preview)
+                    - name: Control which apps are allowed in your environment
                       href: control-app-access-environment.md
                     - name: Commonly used Microsoft first-party services and portal apps
                       href: apps-to-allow.md
