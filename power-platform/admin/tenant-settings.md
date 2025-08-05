@@ -83,10 +83,6 @@ The following settings apply to all environments within your tenant.
 |Tenant licensing summary view| Controls who can view the tenant licensing summary.|
 |[Trial environment assignments](control-environment-creation.md)       | Controls who can create and manage trial environments.|
 |[Weekly digest](managed-environment-usage-insights.md)*     | Manages more recipients for the weekly digest email for Managed Environments.  |
-<!--
-    |[Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features](../transparency-note-copilot-data-sharing.md) | Enables Microsoft to capture and human review inputs, outputs, telemetry from Dynamics 365 Copilot and Power Platform Copilot AI features to build, improve, and validate Microsoft's machine leaning models, features, services, and related systems. <br/> By default, this setting is disabled. |
-    | Copilot feedback data | When using Copilot in Power Apps, allows users to share their prompts, questions, and requests with Microsoft. |
---/>
 
 *This setting applies only to Managed Environments.
 
