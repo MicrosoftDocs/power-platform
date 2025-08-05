@@ -44,7 +44,7 @@ Create these connections manually ahead of installing the kit to ensure they're 
 
 1. Go to [Power Automate](https://make.powerautomate.com/).
 1. Select your CoE environment and go to **Data** > **Connections** > **+ New connection**.
-1. Create a connection for [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra ID Resource URI (Application ID URI)** to [https://graph.microsoft.com/](https://graph.microsoft.com/) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
+1. Create a connection for [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra ID Resource URI (Application ID URI)** to `https://graph.microsoft.com` for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
 ### Import the core components solution
 
@@ -133,7 +133,7 @@ You can store the client secret either in plain text in the **Command Center - C
 | Command Center - Client Secret | The application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
 | Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable. This variable expects the Azure Key Vault reference, not the secret. For more information, learn more at [environment variables for Power Platform overview](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview). |
 
-### Modify the Command Center app and get Microsoft 365 service messages flow for a GCC High or DoD tenant
+### Modify the Command Center app for a GCC High or DoD tenant
 
 > [!IMPORTANT]
 > If your CoE Starter Kit is installed in a *commercial* or *GCC* tenant, you can skip this step.
@@ -142,7 +142,7 @@ If your CoE Starter Kit is installed in a *GCC High* or *DoD* tenant, update the
 
 1. Go to [make.powerautomate.com](https://make.powerautomate.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
 1. Edit the **Command Center App > Get M365 Service Messages** flow.
-1. Update the **List serviceAnnouncements from Graph** action and change the **Authority** to [https://login.microsoftonline.us/](https://login.microsoftonline.us/) for a GCC High or DoD tenant.
+1. Update the **List serviceAnnouncements from Graph** action and change the **Authority** to `https://login.microsoftonline.us` for a GCC High or DoD tenant.
 1. **Save** this flow.
 
 ## Set up Audit Logs solution
@@ -231,5 +231,5 @@ Environment variables are used to store application and flow configuration data 
 
 ## What's next?
 
-- Learn more at [Updating the Center of Excellence (CoE) Starter Kit](after-setup.md).
+- Learn more at [Update the Center of Excellence (CoE) Starter Kit](after-setup.md).
 - Check out [Environment Request management components](core-components.md#environment-request-management-components), and the [Use governance components](governance-components.md) and [Use nurture components](nurture-components.md).

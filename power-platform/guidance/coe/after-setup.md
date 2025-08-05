@@ -10,7 +10,7 @@ ms.reviewer: sericks
 
 ---
 
-# Updating the Center of Excellence (CoE) Starter Kit
+# Update the Center of Excellence (CoE) Starter Kit
 
 This article prepares you to upgrade the CoE Starter Kit. It provides guidance on:
 
