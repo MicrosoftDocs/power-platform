@@ -6,11 +6,14 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/30/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: matp
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 # About the Microsoft Dataverse for Teams environment 
 
