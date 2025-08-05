@@ -5,7 +5,7 @@ description: Discover best practices for managing Dataverse for Teams environmen
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/14/2025
+ms.date: 08/05/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -31,7 +31,7 @@ Use Power Platform to manage Power Platform. Using Power Automate, send welcome 
 
 ## Govern environment creation
 
-We recommend setting up reactive governance workflows and monitoring abilities. This gives team owners the ability to provide a business justification, and admins the ability to review the business justification:
+Set up reactive governance workflows and monitoring capabilities. This approach gives team owners the ability to provide a business justification, and gives admins the ability to review the business justification:
 
 1. The team owner provides a business justification for their new environment within *n* days of creating the environment.
 
@@ -53,7 +53,9 @@ Dedicated Dataverse for Teams environments are used for appropriate business use
 
 Admins can use Power Apps and Power Automate analytics reports in the Power Platform admin center to view usage, performance, and errors related to Dataverse for Teams environments.
 
-Admins can monitor capacity usage for Microsoft Teams environments by using dedicated [capacity views in the Power Platform admin center](../../admin/about-teams-environment.md#capacity-limits). Notifications are sent to the makers in Microsoft Teams when the environment is nearing 80 percent of its capacity. Notifications are also sent to tenant admins when the tenant is reaching 80 percent capacity. These capacity limits can't be extended. Admins can monitor inactive Microsoft Teams environments in the tenant and invoke cleanup when necessary, in addition to performing automated cleanup of unused environments to help free up capacity.
+Admins can monitor capacity usage for Microsoft Teams environments by using dedicated [capacity views in the Power Platform admin center](../../admin/about-teams-environment.md#capacity-limits). The makers in Microsoft Teams receive notifications when the environment is nearing 80 percent of its capacity. Tenant admins receive notifications when the tenant is reaching 80 percent capacity. These capacity limits can't be extended. Admins can monitor inactive Microsoft Teams environments in the tenant and invoke cleanup when necessary, in addition to performing automated cleanup of unused environments to help free up capacity.
+
+<!-- Update or remove entirely. Current image is hard to see in any case. Now under Licensing > Capacity add-ons. Then from Capacity page select Microsoft Teams. No data in my enviro.-->
 
 :::image type="content" source="media/teams-4.png" alt-text="Screenshot of dedicated view for monitoring Microsoft Teams environments capacity in Power Platform admin center.":::
 
@@ -83,6 +85,6 @@ Global or Microsoft Teams admins can use Microsoft Teams app controls through th
 | **Shared Microsoft Copilot Studio** | Ability to use Dataverse or Dataverse for Teams Microsoft Copilot Studio agents within Microsoft Teams by using the *Built by your colleagues* catalog.|
 | **Various sample apps** | Ability to create new apps, flows, and bots by using sample apps within Microsoft Teams, tied to the implicit ability to create new Dataverse for Teams environments. |
 
-Given that these controls block environment creator, maker, and user access, we recommend that admins instead use reactive constructs&mdash;either by building their own or by using the templates in the CoE Starter Kit&mdash;to govern Dataverse for Teams environment creation workflows.
+Because these controls block environment creator, maker, and user access, we recommend that admins use reactive constructs instead. To govern Dataverse for Teams environment creation workflows, consider building your own reactive constructs or using the templates in the CoE Starter Kit.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

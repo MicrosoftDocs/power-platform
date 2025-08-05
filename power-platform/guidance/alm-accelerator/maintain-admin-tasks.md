@@ -2,11 +2,11 @@
 title: Maintain ALM Accelerator projects
 description: Learn how to perform maintenance tasks and Azure DevOps project configurations in the ALM Accelerator for Power Platform.
 ms.topic: how-to
-ms.date: 05/22/2023
+ms.date: 08/05/2025
 ms.subservice: guidance-toolkit
 author: mikefactorial
 ms.author: jeschro
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 ms.custom: bap-template
 ---
 
@@ -52,10 +52,10 @@ When a new maker or deployment environment joins the ALM process, you need to on
 
 1. Select **New app user**.
 
-1. Select the Azure App Registration, **Business Unit**, and **Security Role**.
+1. Select the Microsoft Entra application, **Business Unit**, and **Security Role**.
 
     > [!NOTE]
-    > We recommend that you give this user system administrator role privileges, so that the user can perform the required functions in each of the environments.
+    > We recommend that you give this user system administrator role privileges, so the user can perform the required functions in each of the environments.
 
 ### Create, edit, and delete service connections
 
@@ -71,12 +71,12 @@ Create a service connection to the new environment to deploy the solution to it.
 
 A variable group is created when you set up a new project using the project wizard. This variable group drives many of the pipelines in the ALM Accelerator. To view the variable group, select the **View** button.
 
-## Read more
+## Related information
 
-- [Use the ALM Accelerator for Power Platform app](overview.md)
+- [ALM Accelerator for Power Platform](overview.md)
 - [Configure deployment user settings](setup-deployment-user-settings.md)
-- [Configuring deployment profiles](setup-deployment-user-profiles.md)
-- [Configuration and data deployment in pipelines](setup-data-deployment-configuration.md)
-- [Configuring pipeline sync](setup-pipeline-sync.md)
+- [Configure deployment profiles](setup-deployment-user-profiles.md)
+- [Deployment configuration guide](setup-data-deployment-configuration.md)
+- [Configure pipeline sync](setup-pipeline-sync.md)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
