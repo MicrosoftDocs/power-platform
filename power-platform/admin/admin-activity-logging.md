@@ -66,15 +66,44 @@ Each activity event contains a payload of metadata that is specific to the indiv
 
 ## Activity category: Environment groups & rules
 
+All activities for environment groups and rules are recorded under the *PowerPlatformAdministratorActivity* record type.
+
 Each activity event contains a payload of metadata that is specific to the individual event. The following environment group activities are delivered to Microsoft Purview.
 
-| **Record type** | **Event** | **Description** |
-|-------------------------|-------------------------|-------------------------|
-| PowerPlatformAdministratorActivity | NewEnvironmentGroup | Emitted when a new environment group is created. |
-| PowerPlatformAdministratorActivity | DeleteEnvironmentGroup | Emitted when an environment group is deleted. |
-| PowerPlatformAdministratorActivity | UpdateEnvironmentGroup | Emitted when an environment group's name and/or description are updated. |
-| PowerPlatformAdministratorActivity | EnvironmentAddedToEnvironmentGroup | Emitted when an environment is added to an environment group. |
-| PowerPlatformAdministratorActivity | EnvironmentRemovedFromEnvironmentGroup | Emitted when an environment is removed from an environment group. |
+| **Event** | **Description** |
+|-------------------------|-------------------------|
+| NewEnvironmentGroup | Emitted when a new environment group is created. |
+| DeleteEnvironmentGroup | Emitted when an environment group is deleted. |
+| UpdateEnvironmentGroup | Emitted when an environment group's name and/or description are updated. |
+| EnvironmentAddedToEnvironmentGroup | Emitted when an environment is added to an environment group. |
+| EnvironmentRemovedFromEnvironmentGroup | Emitted when an environment is removed from an environment group. |
+
+The following rules activities are delivered to Microsoft Purview for these 9 rules:
+- AI-generated descriptions (preview)
+- Backup retention
+- Generative AI settings
+- Sharing agents with Editor
+- Sharing agents with Viewer
+- Sharing controls for canvas apps
+- Sharing controls for solution-aware cloud flows
+- Solution checker enforcement
+- Usage insights
+
+| **Event** | **Description** |
+|-------------------------|-------------------------|
+| CreateRuleSetOperation | Emitted when a rule is added to an environment group for the first time. |
+| UpdateRuleSetOperation | Emitted whenever a rule is edited in an environment group. |
+| DeleteRuleSetOperation | Emitted when an environment group is deleted. |
+
+The following rules activities are delivered to Microsoft Purview for the remaining rules.
+
+| **Event** | **Description** |
+|-------------------------|-------------------------|
+| CreateRuleBasedPolicyOperation   | Emitted when a rule is added to an environment group for the first time. |
+| CreateRuleBasedPolicyAssignmentOperation | Emitted when a rule is added to an environment group for the first time. |
+| UpdateRuleBasedPolicyOperation  | Emitted whenever a rule is edited in an environment group. |
+| DeleteRuleBasedPolicyOperation  | Emitted when an environment group is deleted. |
+| PowerPlatformAdministratorActivity | DeleteRuleBasedPolicyAssignmentOperation  | Emitted when an environment group is deleted. |
 
 ## Activity category: Business model and licensing
 
