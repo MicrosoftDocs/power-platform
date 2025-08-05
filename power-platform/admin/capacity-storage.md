@@ -71,7 +71,7 @@ To check whether you have any of these licenses, sign in to the Microsoft 365 ad
 
     The new licensing storage model looks like the following image.
 
-    **Request**: Require a similar image in green PPAC
+    **Request**: Require the licensing storage model image in green PPAC
 
 #### [Classic admin center](#tab/classic)
 
