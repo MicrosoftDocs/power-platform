@@ -70,6 +70,8 @@
               items:
                 - name: View license consumption for Power Apps and Power Automate (preview)
                   href: view-license-consumption-issues.md
+                - name: View license consumption for Power Pages
+                  href: /power-pages/admin/capacity-management
                 - name: View license consumption for finance and operations apps
                   href: view-license-consumption-finops-apps.md
                 - name: Manage Copilot Studio messages and capacity
