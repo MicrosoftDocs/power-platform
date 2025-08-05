@@ -1,20 +1,22 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 05/29/2025
+ms.date: 06/25/2025
 ms.topic: concept-article
 author: marianaraujo 
 ms.subservice: admin
 ms.author: maaraujo
-ms.custom: NewPPAC
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
-- olegovanesyan
-- ianceicys-msft 
-- amiyapatr-zz
-- pnghub
+  - olegovanesyan
+  - ianceicys-msft 
+  - amiyapatr-zz
+  - pnghub
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 ---
 
 # Dataverse capacity-based storage details
@@ -26,7 +28,7 @@ Data volume continues to grow exponentially, as businesses advance their digital
 We're rolling out this feature now so check back if your user experience varies from the following content.
 
 > [!NOTE]
-> For licensing information, go to the [Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+> For licensing information, go to the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 >
 > If you purchased your Dynamics 365 subscription through a Microsoft partner, contact them to manage storage capacity. The following steps don't apply to partner-based subscriptions.
 
@@ -79,7 +81,7 @@ All tables of Dataverse, including system tables, are included in the storage ca
 |Number  |Description |
 |---------|---------|
 |(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following tables store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box table that has columns of datatype file or image (full size)</li><li>Any table that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-tables-ending-in---analytics-in-my-capacity-report) </li> </ul></li><ul><li>WebResourceBase</li></ul><ul><li>RibbonClientMetadataBase</li></ul><li>**Log**: The following tables are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li><li>Elastic tables</li></ul><li>**Database only**: All other tables are counted for your database</li></ul>  |
-|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: More capacity added for every user license purchased</li><li>**Additional storage**: Any extra storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: Learn more at [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
+|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign up </li><li>**User licenses**: More capacity added for every user license purchased</li><li>**Additional storage**: Any extra storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: Learn more at [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 |(4)  |  **Add-ons**:  Your organization's add-on usage details. Learn more at [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center). |
 
@@ -212,7 +214,20 @@ In the **Top environments consuming storage** tile, select **See all environment
 In the **Usage per storage type** tile, you can view the consumption of your database, log, and file storage. This section displays your prepaid allocated capacity, if any, along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a pay-as-you-go plan. 
 
 #### Consumption per table 
-In the **Consumption per table** section, you can view the amount of storage consumed by each Dataverse table. To see table consumption for a specific storage type, select **Database**, **File**, or **Log** in the **Usage per storage type tile**. Select the  table name for the consumption trend, with the option to track daily usage trends for up to the past three months. 
+In the **Consumption per table** section, you can view the amount of storage consumed by each Dataverse table. To see table consumption for a specific storage type, select **Database**, **File**, or **Log** in the **Usage per storage type** tile. Select the table name for the consumption trend, with the option to track daily usage trends, for up to the past three months.
+
+### Dataverse search consumption and reporting
+In addition to database and file storage, Dataverse search includes the indexes that power different experiences. These indexes support search and generative AI across structured or tabular data and unstructured data stored in Dataverse, such as files.
+
+Storage consumed by Dataverse search is reported at the environment-level as a table called **DataverseSearch**. It was previously named **RelevanceSearch**.
+ 
+#### Dataverse search can also be monitored at the Dataverse Environment report in the Power Platform admin center:
+
+- New admin center: Licensing > Dataverse > Environments tab (consumption per table reporting) 
+- Classic admin center: Billing > Licenses > Dataverse > Environments tab (consumption per table reporting)
+
+#### How much does the indexed Dataverse search data cost?
+All Dataverse indexes are reported at the Dataverse database capacity rate. Turning on Dataverse search doesn't turn on any other experience automatically. Learn more in [What is Dataverse search?](/power-apps/user/relevance-search-benefits)
 
 ### Allocate capacity for an environment 
 
@@ -309,10 +324,7 @@ This tenant is 10 GB over in log usage but has 20 GB available in database capac
 
 You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, go to the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
 
-
-
-
-## FAQ
+## Frequently asked questions (FAQ)
 
 ### Why is my storage consumption decreasing in database and growing in file?
 
@@ -322,9 +334,7 @@ We're constantly optimizing Dataverse for ease of use, performance, and efficien
 
 As part of moving file-type data such as “Annotation” and “Attachment” out from database and into file storage, we periodically reclaim the freed database space. This leads to decreased usage of database capacity, while the table and file data size computations remain unchanged.
 
-
 ### Do indexes affect database storage usage?
-
 Database storage includes both the database rows and index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Dataverse stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Dataverse is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity.  Common causes for an increase in index size are:
 
 - An organization making use of new functionality (this can be custom, out-of-the-box, or part of an update or solution installation).
@@ -337,14 +347,77 @@ If Quick Find lookups are configured for data frequently used, this also creates
 - The volume of rows for the tables and columns.
 - The complexity of the database structure.
 
-Because custom Quick Find lookups are created by an admin in the org, these can be user-controlled. Admins can reduce some of the storage used by these custom indexes by doing the following: 
+Because custom Quick Find lookups are created by an admin in the org, these can be user-controlled. Admins can reduce some of the storage used by these custom indexes by taking the following action: 
 
 - Removing unneeded columns or tables.
 - Eliminating multiline text columns from inclusion.
 
-### What is the RelevanceSearch table and how can I reduce it?
+> [!NOTE]
+> The Dataverse search indexed data is the data that allows generative AI experiences to interpret the content using natural language. This index accrues to the overall Dataverse search consumption.
 
-The **RelevanceSearch** table is the cumulative storage used by the global search. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment. Learn more in [Configure Dataverse search to improve search results and performance](configure-relevance-search-organization.md). You can reduce the table size by removing find columns, view columns, and filter conditions for one or more tables.
+### What is the "DataverseSearch" table and how can I reduce it?
+
+The **DataverseSearch** table (previously known as **RelevanceSearch**) is the cumulative storage used by the global search and generative AI experiences that are used by it. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment and Copilot semantic indexes. 
+
+### Can Dataverse search be managed?
+An admin can manage Dataverse search through the three states associated with this setting:
+
+**On:**
+- When Dataverse search is turned on, the search bar becomes visible.
+- Generative AI experiences using Dataverse data are available. 
+
+**Default:**
+- When Dataverse search is set to **Default**, the search bar is hidden.  
+- Generative AI experiences using Dataverse data remain available.
+
+**Off:**
+- When Dataverse search is turned off, the search bar is hidden.
+- Generative AI experiences using Dataverse data are limited.
+
+> [!NOTE]
+> - Dataverse search is set to **On** for any new production, sandbox, or default environment type and is set to **Default** for any new other type of environment.
+> - No other setting is turned on if Dataverse search is turned **On** or **Default**.
+
+### What actions can admins take?
+To ensure optimal operations for the organization, admins with the proper permissions can either increase capacity storage or reduce Dataverse search by performing all the following actions:
+
+- Go to the Power Platform admin center and turn off Copilot experiences in model-driven apps. 
+- Turn off Copilot experiences in Microsoft Copilot Studio.
+- Removing knowledge in Copilot Studio.
+- Turn off Copilot in Dynamics 365 applications.
+- Turn off AI prompts.
+- Go to the Power Platform admin center and turn off Dataverse search.
+    > [!IMPORTANT]
+    > We don't recommended that you perform this action as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
+
+### Turning Dataverse search off
+If Dataverse search is manually set to **Off**, its Dataverse indexed data is deleted, and the experiences that depend on it are limited or unusable for all users of those experiences, which includes search and generative AI conversational capabilities.
+
+Environment admins have 12 hours to turn the feature back on without indexed data loss.
+
+**During 12 hours:** 
+- Dataverse search can be turned back on without indexed data loss.
+
+**After 12 hours:**
+- All indexed Dataverse data is permanently deleted.
+- Turning Dataverse search back on will re-trigger the indexing of Dataverse data.
+
+> [!IMPORTANT]
+> Turning off Dataverse search deprovisions and removes the index within a period of 12 hours. If you turn on Dataverse search after its been off for 12 hours, it provisions a fresh index that needs to go through a full sync. Syncing may take up to an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
+
+### What happens if Dataverse search is turned off?
+All experiences that are used by Dataverse search are limited. Learn more in [Frequently asked questions about Dataverse search](/power-apps/user/relevance-faq).
+
+### Turning on Dataverse search again
+
+- **Selecting On**:
+    When Dataverse search is set back to **On** after being set to **Off**, all indexes are immediately re-triggered across all enabled experiences for them to work accordingly, and Dataverse search costs resume.
+
+- **Selecting Default**:
+    When Dataverse search is set to **Default** after being set to **Off**, the indexes are only re-generated when triggered. Examples inlcude when a Copilot Studio agent uses a file&mdash; such as a local file, OneDrive file, or SharePoint file or Dataverse table&mdash;or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
+
+> [!NOTE]
+> Dataverse search can't be turned **On** or **Off** for different applications in the same environment. The status of the setting applies to all applications in the environment.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
 

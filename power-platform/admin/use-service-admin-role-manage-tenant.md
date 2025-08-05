@@ -5,7 +5,6 @@ author: srpoduri
 ms.subservice: admin
 ms.author: sericks 
 ms.reviewer: sericks
-ms.custom: "admin-security"
 ms.component: pa-admin
 contributors:
 - JesseParsons 
@@ -15,6 +14,9 @@ ms.topic: how-to
 ms.date: 08/20/2024
 search.audienceType: 
   - admin
+ms.custom:
+  - "admin-security"
+  - sfi-ga-nochange
 ---
 # Use service admin roles to manage your tenant
 
@@ -92,7 +94,7 @@ The following matrix shows what management is possible with the various service 
 |Microsoft Dataverse|Yes|Yes|Yes<sup>2</sup>|No|  
 |Power Automate|Yes|Yes|Yes<sup>2</sup>|No|  
 |Power Apps|Yes|Yes|Yes<sup>2</sup>|No|  
-|**Help + support**|||||
+|**Support**|||||
 |Create and access support requests|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Data integration**|||||
 |Create new project and connection set|Yes|Yes|Yes<sup>2</sup>|No|  

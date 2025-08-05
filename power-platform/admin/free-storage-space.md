@@ -21,6 +21,7 @@ ms.contributors:
   - syalandur 
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Free up storage space
