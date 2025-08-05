@@ -128,9 +128,9 @@ sections:
     links:
     - componentType: link
       url: /power-platform/architecture
-      text: Browse the Guidance for architecting solutions with Power Platform and Copilot Studio
+      text: Browse guidance for architecting solutions with Power Platform and Copilot Studio
   - componentType: text
-    title: Power Platform guidance documentation guidance
+    title: Power Platform guidance documentation
     links:
     - componentType: link
       url: /power-platform/guidance
