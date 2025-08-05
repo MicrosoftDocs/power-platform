@@ -24,9 +24,7 @@ contributors:
 Data masking helps protect sensitive information during customer interactions and prevents data leaks. Data masking, also known as de-identification or obfuscation, replaces sensitive data with masked strings. The masked strings ensure that the original, unmasked values remain hidden. Only authorized users can read the unmasked values—one record at a time. In the context of customer interactions, frontline support users are prevented from exposing sensitive information like credit card numbers, social security numbers, or any personal data.
 
 > [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> Ensure your environment is activated as a [managed environment](managed-environment-overview.md) before you [add a masking rule to a secured column](#add-a-masking-rule-to-a-secured-column).
 
 ## How does masking work?
 
@@ -119,7 +117,7 @@ When a customer sends you an email with sensitive data and the email has this ma
 
 1. Go to the [Power Apps portal](https://make.powerapps.com).
 
-1. Select the environment where you want to add a masking rule to a column.
+1. Select the [managed environment](managed-environment-overview.md) where you want to add a masking rule to a column.
 
 1. Select **Tables** from the navigation menu and choose your preferred table with a secured column.
 
