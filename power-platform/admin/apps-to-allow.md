@@ -1,5 +1,5 @@
 ---
-title: Commonly used Microsoft first-party services and portal apps (preview)
+title: Commonly used Microsoft first-party services and portal apps
 description: Learn more about what apps you might want to allow.
 author: paulliew
 ms.author: paulliew
@@ -12,17 +12,13 @@ search.audienceType:
   - admin
 ---
 
-# Commonly used Microsoft first-party services and portal apps (preview)
+# Commonly used Microsoft first-party services and portal apps
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
 The following apps are Microsoft first-party services. This list might vary based on your environment and installed solutions. Most of these apps can be allowed or blocked using the [client app access control feature](control-app-access-environment.md).
 
-Certain [apps are automatically allowed](#commonly-used-microsoft-first-party-services-and-portal-apps-preview) in all environments, such as Dataverse. You can manage access to other apps by assigning the appropriate user license or Dataverse security role. For example, to use the Power Apps maker portal, a maker must be assigned to an Environment Maker, System Customizer, or System Administrator security role. Apps automatically allowed in all environments aren't listed on the **Security** page.
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+Certain [apps are automatically allowed](#commonly-used-microsoft-first-party-services-and-portal-apps) in all environments, such as Dataverse. You can manage access to other apps by assigning the appropriate user license or Dataverse security role. For example, to use the Power Apps maker portal, a maker must be assigned to an Environment Maker, System Customizer, or System Administrator security role. Apps automatically allowed in all environments aren't listed on the **Security** page.
 
 | Application ID | Application name |
 |----------------|------------------|
