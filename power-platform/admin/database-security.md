@@ -8,14 +8,16 @@ ms.reviewer: sericks
 contributors:
   - hamenon-ms
   - shahzorkhan123
-ms.custom:
-  - "admin-security"
-  - bap-template
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 02/11/2025
 search.audienceType: 
   - admin
+ms.custom:
+  - "admin-security"
+  - bap-template
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 
 # Role-based security roles

@@ -6,7 +6,6 @@ ms.topic: concept-article
 author: marianaraujo 
 ms.subservice: admin
 ms.author: maaraujo
-ms.custom: NewPPAC
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -20,6 +19,9 @@ ms.contributors:
 - ceian
 - ampatra
 - maraujo
+ms.custom:
+- NewPPAC
+- sfi-ga-nochange
 ---
 
 # Dataverse capacity-based storage details

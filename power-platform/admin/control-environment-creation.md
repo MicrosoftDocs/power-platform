@@ -6,13 +6,15 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/17/2024
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: matp
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
   - marcelbf
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 ---
 # Control who can create and manage environments in Power Platform
 

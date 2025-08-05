@@ -10,6 +10,7 @@ ms.author: laswenka
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Automation of tasks with PowerShell 

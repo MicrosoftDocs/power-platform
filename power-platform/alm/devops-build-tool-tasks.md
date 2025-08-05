@@ -9,6 +9,7 @@ ms.reviewer: pehecke
 ms.topic: how-to
 search.audienceType: 
   - developer
+ms.custom: sfi-ropc-nochange
 ---
 
 # Microsoft Power Platform Build Tools tasks

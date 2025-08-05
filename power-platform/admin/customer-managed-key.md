@@ -5,8 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 06/11/2025
-ms.custom: template-how-to
+ms.date: 07/23/2025
 ms.contributors:
   - samathur
   - kakazemi
@@ -19,6 +18,10 @@ contributors:
   - lauravasiliums
   - sericks007
   - syalandur24
+ms.custom:
+  - template-how-to
+  - sfi-image-nochange
+  - template-how-to
 ---
 
 # Manage your customer-managed encryption key
@@ -44,7 +47,7 @@ These encryption key operations are available with customer-managed key (CMK):
 - Migrate [bring-your-own-key (BYOK)](cmk-migrate-from-byok.md) environments to CMK by applying CMK key.
 
 Currently, all your customer data stored *only* in the following apps and services can be encrypted with customer-managed key:
-
+### Commercial cloud
 - Dataverse (Custom solutions and Microsoft services)
 - Dataverse [Copilot for model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)  
 - [Power Automate](/power-automate/customer-managed-keys)
@@ -59,6 +62,19 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Project Operations (Finance and operations)
 - Dynamics 365 Supply Chain Management (Finance and operations)
 - Dynamics 365 Fraud Protection (Finance and operations)
+- [Copilot Studio](/microsoft-copilot-studio/admin-customer-managed-keys)
+
+### Sovereign cloud - GCC High (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+- Dataverse (Custom solutions and Microsoft services)
+- Dataverse [Copilot for model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)  
+- Chat for Dynamics 365
+- [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
+- Dynamics 365 Customer Service
+- [Dynamics 365 Customer Insights - Data](/dynamics365/customer-insights/data/overview)
 - [Copilot Studio](/microsoft-copilot-studio/admin-customer-managed-keys)
 
 > [!NOTE]
@@ -411,7 +427,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
 1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**, and then seleect an environment from the available list of environments.
+1. In the **Manage** pane, select **Environments**, and then select an environment from the available list of environments.
 1. Select **Enable Managed Environments**.
 1. Select **Enable**.
 
@@ -528,7 +544,7 @@ Follow these steps if you want to return to a Microsoft-managed encryption key.
    > - **Microsoft Managed key** - The Microsoft-managed key encryption is active.  
    > - **Failed** - The enterprise policy encryption key isn't used by **all** Dataverse storage services. They require more time to process and you can rerun the **Add environment** operation. Contact Support if the rerun operation fails.
    >
-   >     A **Failed** encryption status doesn't impact your environment data and its operations. This means that some of the Dataverse storage services are encrypting your data with your key and some continue to use the Microsoft-managed key. A revert isn't recommended as when you re-run the **Add environment** operation, the service resumes from where it left off.
+   >     A **Failed** encryption status doesn't impact your environment data and its operations. This means that some of the Dataverse storage services are encrypting your data with your key and some continue to use the Microsoft-managed key. A revert isn't recommended as when you rerun the **Add environment** operation, the service resumes from where it left off.
    >
    > - **Warning** - The enterprise policy encryption key is active and one of the service's data continues to be encrypted with the Microsoft-managed key. Learn more in [Power Automate CMK application warning messages](/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages).
 
@@ -540,7 +556,7 @@ You can see the [environment history](environments-overview.md#environment-histo
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
 1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**, and then seleect an environment from the available list of environments.
+1. In the **Manage** pane, select **Environments**, and then select an environment from the available list of environments.
 1. On the command bar, select **History.**
 1. Locate the history for **Update Customer Managed Key**.
 
@@ -557,7 +573,7 @@ You can see the [environment history](environments-overview.md#environment-histo
    >
    > The **Status** shows **Running** when the encryption is in progress. It shows **Succeeded** when the encryption is complete. The status shows **Failed** when there's some problem with one of the services not able to apply the encryption key.
    >
-   > A **Failed** state can be a **warning** and you don't need to re-run the **Add environment** option. You can confirm if it's a [warning](customer-managed-key.md#review-the-encryption-status-from-enterprise-policies).
+   > A **Failed** state can be a **warning** and you don't need to rerun the **Add environment** option. You can confirm if it's a [warning](customer-managed-key.md#review-the-encryption-status-from-enterprise-policies).
 
 ### Change the environment's encryption key with a new enterprise policy and key
 
