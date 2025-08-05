@@ -99,11 +99,11 @@ The following rules activities are delivered to Microsoft Purview for the remain
 
 | **Event** | **Description** |
 |-------------------------|-------------------------|
-| CreateRuleBasedPolicyOperation   | Emitted when a rule is added to an environment group for the first time. |
-| CreateRuleBasedPolicyAssignmentOperation | Emitted when a rule is added to an environment group for the first time. |
-| UpdateRuleBasedPolicyOperation  | Emitted whenever a rule is edited in an environment group. |
+| CreateRuleBasedPolicyOperation   | Emitted when any rule is added to an environment group for the first time. |
+| CreateRuleBasedPolicyAssignmentOperation | Emitted when any rule is added to an environment group for the first time. |
+| UpdateRuleBasedPolicyOperation  | Emitted whenever any rule is added, edited, or removed from an environment group. |
 | DeleteRuleBasedPolicyOperation  | Emitted when an environment group is deleted. |
-| PowerPlatformAdministratorActivity | DeleteRuleBasedPolicyAssignmentOperation  | Emitted when an environment group is deleted. |
+| DeleteRuleBasedPolicyAssignmentOperation  | Emitted when an environment group is deleted. |
 
 ## Activity category: Business model and licensing
 
