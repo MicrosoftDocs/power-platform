@@ -64,6 +64,18 @@ Each activity event contains a payload of metadata that is specific to the indiv
 |-------------------------|-------------------------|
 | Changed property on environment | Communicates when a property on an environment has changed. In general, properties are metadata (names) that is associated with an environment. Includes changes to:<ul><li>Display name</li><li>Domain name</li><li>Security group ID</li><li>Admin mode</li><li>Background operations state</li></ul> |
 
+## Activity category: Environment groups & rules
+
+Each activity event contains a payload of metadata that is specific to the individual event. The following environment group activities are delivered to Microsoft Purview.
+
+| **Record type** | **Event** | **Description** |
+|-------------------------|-------------------------|-------------------------|
+| PowerPlatformAdministratorActivity | NewEnvironmentGroup | Emitted when a new environment group is created. |
+| PowerPlatformAdministratorActivity | DeleteEnvironmentGroup | Emitted when an environment group is deleted. |
+| PowerPlatformAdministratorActivity | UpdateEnvironmentGroup | Emitted when an environment group's name and/or description are updated. |
+| PowerPlatformAdministratorActivity | EnvironmentAddedToEnvironmentGroup | Emitted when an environment is added to an environment group. |
+| PowerPlatformAdministratorActivity | EnvironmentRemovedFromEnvironmentGroup | Emitted when an environment is removed from an environment group. |
+
 ## Activity category: Business model and licensing
 
 Each activity event contains a payload of metadata that is specific to the individual event. The following business model and licensing activities are delivered to Microsoft Purview.
