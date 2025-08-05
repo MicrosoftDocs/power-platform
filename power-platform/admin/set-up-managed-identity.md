@@ -110,7 +110,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
 ## Create managed identity record in Dataverse
 To provision managed identity record in Dataverse, complete the following steps.
 
-1. Make a POST call using [Insomia](https://insomnia.rest/download) or any other tool of your choice.  You can use a URL with payload in the following format.
+1. Make a POST call using [Insomnia](https://insomnia.rest/download) or any other tool of your choice.  You can use a URL with payload in the following format.
    
    `POST https://<<orgURL>>/api/data/v9.0/managedidentities`
    
