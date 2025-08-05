@@ -52,7 +52,7 @@ Follow these steps to view the legacy licensing storage model:
 
 The legacy licensing storage model looks like the following image.
 
-**Request:** Require the image in green PPAC.
+**Request:** Require the legacy licensing storage model image in green PPAC.
 
 ###### [Classic admin center](#tab/classic)
 
