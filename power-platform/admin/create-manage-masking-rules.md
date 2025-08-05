@@ -2,13 +2,13 @@
 title: Create and manage masking rules (preview)
 description: Learn how to create and manage masking rules in Microsoft Power Apps.
 ms.component: pa-admin
-ms.date: 05/07/2025
+ms.date: 08/05/2025
 ms.topic: overview
 ms.custom: "admin-security"
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -34,7 +34,7 @@ Data masking helps protect sensitive information during customer interactions an
 
 - These rules use *regular expressions* to identify specific patterns, for example a credit card number, social security number, and email address.
 
-- These patterns are detected and the sensitive fields are replaced with masked characters when the row is retrieved. 
+- These patterns are detected and the sensitive fields are replaced with masked characters when the row is retrieved.
 
 ## Create masking rules
 
@@ -71,32 +71,33 @@ Get a predefined set of masking rules, to start, or you can create your own.
 
 1. Enter an original value in the **Enter Rich Text Test Data** field, such as a social security number, or email address (for testing Text Data type with Rich text format columns).
 
-    > [!NOTE]
-    > For **Rich text** field, the raw value of the field needs to be taken into account when defining the **Regular Expression**. You can view the raw value using a Web API to query the table/column with rich text. For example, 
-    > `https://<org url>/api/data/v9.2/maskingrules(<id>)?$select=richtestdata`
-    >
-    > (result)
-    >
-    > "richtestdata": "<div class=\"ck-content\" data-wrapper=\"true\" dir=\"ltr\" style=\"--ck-image-style-spacing: 1.5em; --ck-inline-image-style-spacing: calc(var(--ck-image-style-spacing) / 2); --ck-color-selector-caption-background: hsl(0, 0%, 97%); --ck-color-selector-caption-text: hsl(0, 0%, 20%); font-family: Segoe UI; font-size: 11pt;\"><p style=\"margin: 0;\">123-45-789<//p><//div>"
->
+   > [!NOTE]
+   >
+   > For **Rich text** field, the raw value of the field needs to be taken into account when defining the **Regular Expression**. You can view the raw value using a Web API to query the table/column with rich text. For example:
+   >
+   > `https://<org url>/api/data/v9.2/maskingrules(<id>)?$select=richtestdata`
+   >
+   > (result)
+   >
+   > `"richtestdata": "<div class=\"ck-content\" data-wrapper=\"true\" dir=\"ltr\" style=\"--ck-image-style-spacing: 1.5em; --ck-inline-image-style-spacing: calc(var(--ck-image-style-spacing) / 2); --ck-color-selector-caption-background: hsl(0, 0%, 97%); --ck-color-selector-caption-text: hsl(0, 0%, 20%); font-family: Segoe UI; font-size: 11pt;\"><p style=\"margin: 0;\">123-45-789<//p><//div>"`
 
-1. Select **Save**.
+10. Select **Save**.
 
-   **Masked Plain Text test data**, and **Masked Rich Text test data** display on the screen.
+    **Masked Plain Text test data**, and **Masked Rich Text test data** display on the screen.
 
-   Your masked values might be masked like this:
+Your masked values might be masked like this:
 
-    |Regular expression | Original values         | Masked values         |
-    |---------|-----------------------------------|-----------------------|
-    | `\d(?=\d{2}-\d{2}-\d{4}|\d-\d{2}-\d{4}|-\d{2}-\d{4}|\d-\d{4}|-\d{4})`| **SSN** `123-45-6789` | **SSN** `###-##-6789` |
-    |`[STFGM]\d{4}` | **AccountNbr** `S1234567z` | **AccountNbr** `#567z` |
-    | `(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})` | **MasterCard** `5678912345678912` | **MasterCard** `#` |
-    | `(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})` | **Visa** `4567891234567891` | **Visa** `#` |
-    | `\S+@\S+\.\S+` | **Email** `name@sample.com` | **Email** `#` |
+| Regular expression | Original values   | Masked values   |
+|--------------------------|------------------------|--------------------|
+| `\d(?=\d{2}-\d{2}-\d{4}\|\d-\d{2}-\d{4}\|-\d{2}-\d{4}l\d-\d{4}\|-\d{4})`| **SSN** `123-45-6789` | **SSN** `###-##-6789` |
+  |`[STFGM]\d{4}` | **AccountNbr** `S1234567z` | **AccountNbr** `#567z` |
+  | `(?:4[0-9]{12}(?:[0-9]{3})?\|[25][1-7][0-9]{14}\|6[?:011\|5[0-9][0-9]](0-9){12}\|3[47][0-9]{13}\|3[?:0[0-5]\|[68][0-9]](0-9){11}\|(?:2131\|1800\|35\d{3})\d{11})` | **MasterCard** `5678912345678912` | **MasterCard** `#` |
+  | `(?:4[0-9]{12}(?:[0-9]{3})?\|[25][1-7][0-9]{14}\|6[?:011\|5[0-9][0-9]](0-9){12}\|3[47][0-9]{13}\|3[?:0[0-5]\|[68][0-9]](0-9){11}\|(?:2131\|1800\|35\d{3})\d{11})` | **Visa** `4567891234567891` | **Visa** `#` |
+  | `\S+@\S+\.\S+` | **Email** `name@sample.com` | **Email** `#` |
 
-     When a customer sends you an email with sensitive data and the email has this masking rule, only the masked values display in the body of the email:
+When a customer sends you an email with sensitive data and the email has this masking rule, only the masked values display in the body of the email:
 
-     :::image type="content" source="media/create-and-manage-masking-rules/masking-rule-applied.png" alt-text="Screensot showing the result of applying the masking rule in the body of the email.":::
+:::image type="content" source="media/create-and-manage-masking-rules/masking-rule-applied.png" alt-text="Screenshot showing the result of applying the masking rule in the body of the email.":::
 
 ## Manage masking rules
 
@@ -141,7 +142,8 @@ Get a predefined set of masking rules, to start, or you can create your own.
 1. Select **Save**.
 
 > [!NOTE]
-> Data types for masking rules: 
+> Data types for masking rules:
+>
 > 1. Text (single-line and multi-line).
 > 1. Number.
 
@@ -226,6 +228,7 @@ In these examples, replace `<url>`, `<table collection name>`, and `<recordid>` 
   `https://<url>/api/data/v9.1/<table collection name>(<recordid>)?$select=<column_name>&UnMaskedData=true`
 
 #### Reading unmasked values on the form
+
 Users who were granted permission to [read unmasked fields](#grant-permissions-to-a-secured-column-with-a-masking-rule) will see a button to read the unmasked values on the form.
 
 :::image type="content" source="media/eye-icon.png" alt-text="Select the eye icon to read the unmasked values on the form." lightbox="media/eye-icon.png":::
@@ -236,13 +239,14 @@ All read unmasked value requests are audited.
 
 #### Creating and updating unmasked values on the form
 
-When you create a new record, you enter the sensitive field as unmasked values. After you save, the form automatically refreshes, and the sensitive field is immediately masked. 
+When you create a new record, you enter the sensitive field as unmasked values. After you save, the form automatically refreshes, and the sensitive field is immediately masked.
 
-To update the field, you will need the [**allowed read unmasked** and **allowed update** permissions](#grant-permissions-to-a-secured-column-with-a-masking-rule). 
+To update the field, you will need the [**allowed read unmasked** and **allowed update** permissions](#grant-permissions-to-a-secured-column-with-a-masking-rule).
 
-Select the read unmasked field button to get the unmasked value, then update the field and save. 
+Select the read unmasked field button to get the unmasked value, then update the field and save.
 
 ### Audit logs on masked fields
+
 All create and update record events will show the before and after values as masked values.
 
 :::image type="content" source="media/audit-1-image.png" alt-text="All create and update record events will show the before and after values as masked values." lightbox="media/audit-1-image.png":::
@@ -259,7 +263,7 @@ Read unmasked value is also logged.
 
 - **Embedded images in Rich text data**
 
-  If you're using Rich text format in a large text area, like email body, and you accept embedded images, the masking rules continue to be applied to the image making it unreadable. 
+  If you're using Rich text format in a large text area, like email body, and you accept embedded images, the masking rules continue to be applied to the image making it unreadable.
 
 - **Masked fields Audit logs details**
   Details of the masked fields audit logs for Read is only available on the Power Platform Environment settings Auditing tab. The Audit History screen on the client form does not show the masking details.
