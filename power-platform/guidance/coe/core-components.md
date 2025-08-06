@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Use core components
 
-These components provide the core to get started setting up a Center of Excellence (CoE). The components sync all your resources into tables and build admin apps on top of them to help you get more visibility of the apps, flows, and makers in your environment. Apps like **Manage Permissions** help with daily admin tasks. The core components solution contains assets relevant only to admins. For more information, learn more at [Set up inventory components](setup-core-components.md) and [Watch](https://www.youtube.com/embed/l0kJQAeKthw) how to use the core components solution.
+These components provide the core to get started setting up a Center of Excellence (CoE). The components sync all your resources into tables and build admin apps on top of them to help you get more visibility of the apps, flows, and makers in your environment. Apps like **Manage Permissions** help with daily admin tasks. The core components solution contains assets relevant only to admins. For more information, learn more in [Set up inventory components](setup-core-components.md).
 
 [Watch an overview](https://www.youtube.com/embed/l0kJQAeKthw) on how to use the core components solution.
 
@@ -23,13 +23,13 @@ These components provide the core to get started setting up a Center of Excellen
 ### Tables
 
 > [!NOTE]
-> To easily explore and manage data stored in Dataverse, we recommend you install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). For more information, learn more at [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/).
+> To easily explore and manage data stored in Dataverse, we recommend installing the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). For more information, learn more at [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/).
 
 #### Tenant objects
 
 The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to the following Dataverse tables. All tables provide information about _created by_ or _created on_ and _modified by_ or _modified on_, plus resource-specific information.
 
-- **AiBuilderModel** is an Ai Builder Model.
+- **AiBuilderModel** is an AI Builder model.
 
 - **Business Process Flow** is a business process flow.
 
@@ -67,7 +67,7 @@ There are several concepts of _users_ in the inventory.
 
 - **Power Platform User** is who an app is shared with.
 
-- **Power Platform User Role** represents the role a Microsoft Power Platform user has for a specific app. This has a one-to-many relationship with the Power Platform User and PowerApps App tables. The following information is available for each role:
+- **Power Platform User Role** represents the role a Microsoft Power Platform user has for a specific app. This role has a one-to-many relationship with the Power Platform User and PowerApps App tables. The following information is available for each role:
   - App
   - Microsoft Power Platform user
   - Role name (Owner, CanEdit, CanView)
@@ -140,33 +140,33 @@ These tables store information about usage for management.
 
 These tables are used to manage the CoE solution itself.
 
-- **CoE Solution Metadata** holds meta-data about flows and apps part of the CoE Starter Kit in a table and is used in the [CoE Admin Command Center](#coe-admin-command-center).
+- **CoE Solution Metadata** stores metadata about flows and apps that are part of the CoE Starter Kit in a table. The [CoE Admin Command Center](#coe-admin-command-center) uses this metadata.
 
-- **Command Center Config** holds bookmark information to for the Bookmarks page of the [CoE Admin Command Center](#coe-admin-command-center).
+- **Command Center Config** stores bookmark information for the Bookmarks page of the [CoE Admin Command Center](#coe-admin-command-center).
 
-- **Customized Email** holds metadata about emails sent from flows in the Core Solution to allow for admins to tailor them without making unmanaged layers on the flows.
+- **Customized Email** stores metadata about emails sent from flows in the Core Solution. Admins can use this metadata to tailor emails without adding unmanaged layers on the flows.
 
-- **Setup Wizard State metadata** represents the current state of the user in the Setup Wizard. This metadata is used to guide them through the steps.
+- **Setup Wizard State metadata** shows the current state of the user in the Setup Wizard. The solution uses this metadata to guide users through the steps.
 
-- **Sync Flow Errors** represents the daily occurrence of sync flow errors to provide a summary email to an admin. The following information is available for each sync flow error.
+- **Sync Flow Errors** shows the daily occurrence of sync flow errors to provide a summary email to an admin. Each sync flow error includes the following information:
 
   - Flow instance URL
   - Environment
   - Created on
 
-- **Tenant Security Roles** are all security roles in the tenant and allow you to determine which ones you want to gather.
+- **Tenant Security Roles** are all security roles in the tenant. Use this table to determine which ones you want to gather.
 
 ### Security roles
 
 These security roles only grant permissions to the custom tables but not to the environment as a whole. If you want users to view apps and flows in the environment, grant them access individually to each object. You can add them to another security role like **System Admin** or **Environment Maker**.
 
-For more information, learn more at [Security roles and privileges](/power-platform/admin/security-roles-privileges).
+For more information, learn more in [Security roles and privileges](/power-platform/admin/security-roles-privileges).
 
-- **Power Platform Admin SR** gives full access to create, read, write, and delete operations on the custom tables.
+- **Power Platform Admin SR** grants full access to create, read, write, and delete operations on the custom tables.
 
-- **Power Platform Maker SR** gives read and write access to the custom tables, such as environments or apps.
+- **Power Platform Maker SR** grants read and write access to the custom tables, such as environments or apps.
 
-- **Power Platform User SR** gives read-only access to resources in the custom tables.
+- **Power Platform User SR** grants read-only access to resources in the custom tables.
 
 ### Flows
 The following table lists each flow in the CoE Starter Kit, including its name, type, run interval, and a brief description.
@@ -230,16 +230,16 @@ The following table lists each flow in the CoE Starter Kit, including its name, 
 | SYNC HELPER - Get Security Role Users | Child Flow | Called by **Admin \| Sync Template v4** (security roles) | Gets the **System Admin SR** users into inventory for a given environment. |
 
 ### Apps
-The following section introduces key apps in the CoE Starter Kit, designed to help you configure, manage, and enhance your Power Platform environment.
+The following section introduces key apps in the CoE Starter Kit. These apps help you configure, manage, and enhance your Power Platform environment.
 #### CoE Setup and Upgrade Wizard
 
-An app used by admins to set up and upgrade their CoE installs.
-Launch after each clean install or upgrade to use.
+An app admins use to set up and upgrade their CoE installs.
+Launch this app after each clean install or upgrade.
 
 Use this app to:
 
-- Ensure all new environment variables are filled or exposed to you.
-- Ensure all new flows are turned on in the correct order.
+- Ensure you fill or expose all new environment variables.
+- Ensure you turn on all new flows in the correct order.
 - Choose between settings the kit offers for solution management.
 
 **Permission**: Intended to be used only by the admin identity that owns the kit install.
@@ -250,24 +250,24 @@ Use this app to:
 
 #### CoE Admin Command Center
 
-An app used by admins to manage their kit implementation.
+An app admins use to manage their kit implementation.
 
 Use this app to:
 
 - Launch CoE Starter Kit apps and other bookmarks.
-- Review CoE Starter Kit service health by checking sync flows recently failed.
+- Review CoE Starter Kit service health by checking sync flows that recently failed.
 - Manage the cloud flows used within the kit.
 - Update environment variables used in the CoE Starter Kit.
 - View Microsoft 365 Message Center news related to Power Platform.
 - Download the latest CoE Starter Kit version and raise support tickets with the team.
 - Launch learning paths to learn more about Microsoft Power Platform.
-- Launch the latest posts of the Power Apps, Power Automate, Power BI and Microsoft Copilot Studio blogs.
-- Configure email subject and body text for emails send through the CoE Starter Kit.
+- Launch the latest posts of the Power Apps, Power Automate, Power BI, and Microsoft Copilot Studio blogs.
+- Configure email subject and body text for emails sent through the CoE Starter Kit.
 
 **Prerequisite**: This app uses Dataverse and other premium connectors. A premium license is required for every app user.
 
 > [!NOTE]
-> When you first launch the app, bookmarks to all apps included in the CoE Starter Kit get created. Add other relevant bookmarks such as links to the Power BI dashboard, your Power Platform wiki, and community by selecting **Edit bookmarks**.
+> When you first launch the app, it creates bookmarks to all apps included in the CoE Starter Kit. Add other relevant bookmarks such as links to the Power BI dashboard, your Power Platform wiki, and community by selecting **Edit bookmarks**.
 
 :::image type="content" source="media\commandcenter1.png" alt-text="Screenshot showing the Bookmarks page of the Command Center menu." lightbox="media\commandcenter1.png":::
 
@@ -283,33 +283,33 @@ Use this app to:
 - See what effect each change has on existing canvas apps and cloud flows.
 - Mitigate the risk by contacting and working with makers.
 
-For more information, learn more at [Data Loss Prevention policies](../../admin/wp-data-loss-prevention.md).
+For more information, learn more in [Data Loss Prevention policies](../../admin/wp-data-loss-prevention.md).
 
-**Permission**: Intended to be used only by admins. Power Platform Service Admin or user accounts with admin permissions is required. Share this app with your CoE admins.
+**Permission**: Intended for use only by admins. Requires Power Platform Service Admin or user accounts with admin permissions. Share this app with your CoE admins.
 
 :::image type="content" source="media/dlp_new1.png" alt-text="Screenshot that shows the DLP Impact Analysis page of the Data policy impact analysis menu.":::
 
 > [!NOTE]
-> This app can't detect or work with endpoint filtering in DLP. For more information, learn more at [Connector endpoint filtering](../../admin/connector-endpoint-filtering.md).
+> This app can't detect or work with endpoint filtering in DLP. For more information, learn more in [Connector endpoint filtering](../../admin/connector-endpoint-filtering.md).
 >
-> This app can't check for DLP impact in other object types. However, you can get help to determine DLP impact of Desktop Flows [RPA CLI](https://github.com/rpapostolis/rpa-cli).
+> This app can't check for DLP impact in other object types. However, you can use [RPA CLI](https://github.com/rpapostolis/rpa-cli) to determine the DLP impact of Desktop Flows.
 
 ### Manage Permissions
 
-Manage Permissions is an app that an admin can use to manage various permissions across the tenant.
+Manage Permissions is an app that admins use to manage various permissions across the tenant.
 
-Permissions you can change with this app include:
+With this app, you can change permissions for:
 
 - Canvas app ownership
 - Cloud flow ownership
-- Security Roles in tenant environments
+- Security roles in tenant environments
 - Connections across the tenant
 
-**Permission**: This app is intended to be used only by admins. Power Platform Service Admin or user accounts with admin permissions is required. Share this app with your CoE admins.
+**Permission**: Only admins should use this app. You need to be a Power Platform Service Admin or have admin permissions. Share this app with your CoE admins.
 
 #### Power Platform Admin View
 
-**Power Platform Admin View** is a model-driven app that provides an interface used to browse items in Dataverse custom tables. The app gives you access to views and forms for the custom tables in the solution.
+**Power Platform Admin View** is a model-driven app that provides an interface you use to browse items in Dataverse custom tables. The app gives you access to views and forms for the custom tables in the solution.
 
 Use this app to:
 
@@ -322,19 +322,19 @@ Use this app to:
 - Manage capacity alerts.
 - Set app and flow permissions for individual resources.
 
-**Permission**: This app is intended to be used only by admins. Power Platform Service Admin or user accounts with admin permissions is required. Share this app with your CoE admins.
+**Permission**: Only admins should use this app. You need to be a Power Platform Service Admin or have admin permissions. Share this app with your CoE admins.
 
 :::image type="content" source="media/coe-mda1.png" alt-text="Screenshot that shows the Power Platform Dashboard page from the Overview Dashboard menu of the Power Platform Admin View." lightbox="media/coe-mda1.png":::
 
-You can use this app to see with whom an app is shared, what roles (editor or viewer) the users have, and for groups. You can check the size of the group.
+Use this app to see with whom an app is shared, what roles (editor or viewer) the users have, and for groups. You can check the size of the group.
 
 :::image type="content" source="media/coe-mda2.png" alt-text="Screenshot that shows a PowerApps App page with the App Shared With (list) section highlighted." lightbox="media/coe-mda2.png":::
 
-You can use this app to manage permissions for apps and flows by selecting **Manage Permissions** from the command bar.
+Use this app to manage permissions for apps and flows by selecting **Manage Permissions** from the command bar.
 
 :::image type="content" source="media/ppadmin-setapp.png" alt-text="Screenshot that shows the Manage Permissions pane from the Manage Permissions button in the menu bar." lightbox="media/ppadmin-setapp.png":::
 
-You can use this app to email app owners and app users by selecting **Email Users** from the command bar.
+Use this app to email app owners and app users by selecting **Email Users** from the command bar.
 
 :::image type="content" source="media/ppadmin-email.png" alt-text="Screenshot that shows the Email Users pane opened from the Email Users button on the menu bar." lightbox="media/ppadmin-email.png":::
 
@@ -342,7 +342,7 @@ You can use this app to email app owners and app users by selecting **Email User
 
 With Power BI reports, you can get a holistic view of Dataverse data. You can understand visualizations and insights for **Environment**, **PowerApps App**, **Flow**, **Connector**, **Connection Reference**, **Maker**, and **Audit Log** tables.
 
-Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. For more information, learn more at [Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard](power-bi.md).
+Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. For more information, learn more in [Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard](power-bi.md).
 
 :::image type="content" source="media/pb-2.png" alt-text="Screenshot that shows how to filter your apps in the Overview - Power Apps page of Power BI." lightbox="media/pb-2.png":::
 
@@ -364,7 +364,7 @@ The following section describes the Environment Request Tables, outlining each t
 
 ### Environment Request Flows
 
-The following table lists the Environment Request Flows, detailing each flow’s name, type, run interval, and a brief description of its function in the CoE Starter Kit.
+The following table lists the Environment Request Flows. It details each flow's name, type, run interval, and a brief description of its function in the CoE Starter Kit.
 
 | Flow Name | Type | Interval | Description |
 | ---- | ---- | --- | ---- |
@@ -380,21 +380,21 @@ The following table lists the Environment Request Flows, detailing each flow’s
 
 ### Environment Request Apps
 
-The following section introduces the Environment Request Apps, designed to help manage and streamline environment requests in the CoE Starter Kit.
+The following section introduces the Environment Request Apps, designed to help you manage and streamline environment requests in the CoE Starter Kit.
 
 #### CoE Admin Environment Request
 
-The CoE Admin Environment Request app is used by admins as an interface to view and approve or reject requests to create or modify Power Platform development resources. The app supports **Environment Creation Requests** and changes to DLP policies are logged in the **DLP Policy Change Request** table.
+Admins use the CoE Admin Environment Request app as an interface to view and approve or reject requests to create or modify Power Platform development resources. The app supports **Environment Creation Requests** and logs changes to DLP policies in the **DLP Policy Change Request** table.
 
 Use this app to:
 
 - View all **Environment Creation Requests** in detail.
 - Approve or reject **Environment Creation Requests**.
-- Check if connectors are blocked or restricted by existing or modified DLP policies. Modifications made in the app update those policies.
+- Check if connectors are blocked or restricted by existing or modified DLP policies. Modifications you make in the app update those policies.
 
-**Permission**: Intended to be used only by admins. Power Platform Service Admin or user accounts with admin permissions is required. Share this app with your CoE admins.
+**Permission**: Intended for use only by admins. Requires Power Platform Service Admin or user accounts with admin permissions. Share this app with your CoE admins.
 
-**Prerequisite**: This app uses Dataverse. End-users must have a **Per User** license and the app must be assigned a **Per App** license or the environment must be covered by pay-as-you-go.
+**Prerequisite**: This app uses Dataverse. End users must have a **Per User** license. The app must be assigned a **Per App** license, or the environment must be covered by pay-as-you-go.
 
 :::image type="content" source="media\dev-resources-admin-details.png" alt-text="Screenshot that shows the Environment Creation Requests details page." lightbox="media\dev-resources-admin-details.png":::
 
@@ -408,9 +408,9 @@ Use this app to:
 - Submit new **Environment Creation Requests**.
 - View existing requests in any state submitted by that user. Here you can find an expiration timeline and link to the live environments.
 
-**Permission**: As soon as you're using this process, you can share the app with all authorized makers or the entire organization, depending on which users you want to allow **Environment** ownership. Requires the Power Platform Maker SR (security role) to use the Dataverse tables.
+**Permission**: Share the app with all authorized makers or the entire organization, depending on which users you want to allow **Environment** ownership. Requires the Power Platform Maker SR (security role) to use the Dataverse tables.
 
-**Prerequisite**: This app uses Dataverse. End-users must have a **Per User** license, the app must be assigned a **Per App** license, or the environment must be covered by pay-as-you-go.
+**Prerequisite**: This app uses Dataverse. End users must have a **Per User** license. The app must be assigned a **Per App** license, or the environment must be covered by pay-as-you-go.
 
 :::image type="content" source="media\dev-resources-maker-env.png" alt-text="Screenshot that shows the Environment Creation Requests page." lightbox="media\dev-resources-maker-env.png":::
 
@@ -424,28 +424,28 @@ This section covers other core components in the CoE Starter Kit, including othe
 
 ### Other Flows
 
-The following table lists other flow in the CoE Starter Kit, including its name, type, run interval, and a brief description.
+The following table lists other flows in the CoE Starter Kit, including each flow's name, type, run interval, and a brief description.
 
 | Flow Name | Type | Interval | Description |
 | ---- | ---- | --- | ---- |
-| Admin \| Add-ons Alerts | Scheduled | Daily | This flow checks add-on consumption and compares it with approved capacity that an admin sets. The flow sends an alert to the admin for environments that exceed the approved add-on consumption or are at 80% of approved capacity. The approved capacity can be set in the **Power Platform Admin View** model-driven app. |
-| Admin \| Capacity Alerts | Scheduled | Daily | This flow checks capacity consumption and compares it with approved capacity that an admin sets. The flow sends an alert to the admin for environments that exceed the approved capacity or are at 80% of approved capacity. The approved capacity can be set in the **Power Platform Admin View** model-driven app. |
+| Admin \| Add-ons Alerts | Scheduled | Daily | This flow checks add-on consumption and compares it with approved capacity that an admin sets. The flow sends an alert to the admin for environments that exceed the approved add-on consumption or are at 80% of approved capacity. The admin sets the approved capacity in the **Power Platform Admin View** model-driven app. |
+| Admin \| Capacity Alerts | Scheduled | Daily | This flow checks capacity consumption and compares it with approved capacity that an admin sets. The flow sends an alert to the admin for environments that exceed the approved capacity or are at 80% of approved capacity. The admin sets the approved capacity in the **Power Platform Admin View** model-driven app. |
 | Admin \| Welcome Email v3 | Automated | When any sync flow adds a new maker to the **Maker** table | This flow sends an email to a user who created an app, flow, custom connector, or environment. This flow triggers when a new record is created in the **Maker** table. You can customize the email sent out by the flow. |
 | App Catalog > Request Access | Instant | From the App Catalog | This flow sends an access request approval to the maker. |
 
-### Other Apps
+### Other apps
 
-The following section introduces the Other Apps, designed to help manage and streamline apps in the CoE Starter Kit.
+The following section introduces the other apps, designed to help you manage and streamline apps in the CoE Starter Kit.
 
 #### App Catalog
 
 An app gives visibility to some apps in the organization. Admins can choose which apps to highlight in the app catalog if the app meets admin requirements and is meant to be shared broadly.
 
-When you first open the app catalog, you don't see any apps there. There's a field on the **Power Apps App** table called **In App Catalog**, which is a two-option set type field (Boolean). If the value is set to **Yes**, the app shows up in the catalog. To publish an app to the app catalog, follow the [app auditing process](example-processes.md) in the **Power Platform Admin View** app.
+When you first open the app catalog, you don't see any apps there. There's a field on the **Power Apps App** table called **In App Catalog**, which is a two-option set type field (Boolean). If you set the value to **Yes**, the app shows up in the catalog. To publish an app to the app catalog, follow the [app auditing process](example-processes.md) in the **Power Platform Admin View** app.
 
 **Permission**: As soon as you use this process, you can share the app catalog with the entire organization.
 
-**Prerequisite**: This app uses Dataverse. If you installed this solution in a production environment, end-users need to have a **Per User** license, or the app needs to be assigned a **Per App** license, or the environment needs to be covered by pay-as-you-go.
+**Prerequisite**: This app uses Dataverse. If you install this solution in a production environment, end-users need to have a **Per User** license, or the app needs to be assigned a **Per App** license, or the environment needs to be covered by pay-as-you-go.
 
 :::image type="content" source="media/coe67.png" alt-text="Screenshot that shows the App Catalog page of Power Apps." lightbox="media/coe67.png":::
 
