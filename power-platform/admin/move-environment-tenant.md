@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 05/21/2025
+ms.date: 08/06/2025
 ms.topic: concept-article
 author: matapg007
 contributors:
@@ -11,12 +11,12 @@ contributors:
   - ImadYanni
   - bevans 
   - LaurentPepin 
+ms.contributors: ralinga
 ms.subservice: admin
 ms.author: matgupta
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-
 ---
 
 # Tenant-to-tenant migrations
@@ -321,11 +321,18 @@ After moving environments to another tenant:
 Complete the following procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages.
 
 ### Post-migration process for Power Automate
-After the migration has completed, step through the **Review components** section as a checklist to get flows and other components adjusted and activated. The key steps are:
 
-1. Create connections for all connection references.
-1. Start all flows, including starting child flows before parent flows.
-1. For any HTTP triggered flows, retrieve the new URL and place it in any calling apps or flows to refresh those references.
+After the migration is complete, review the imported components and perform the following steps to ensure flows and other assets work correctly:
+
+1. Create or map connections for all connection references.
+    - Open the solution in the target environment.
+    - Navigate to the connection references and re-authenticate or link each one to an existing connection.
+1. Enable all flows.
+    - Imported flows are turned off by default.
+    - Start any child flows before enabling parent flows that call them to avoid errors.
+3. Update HTTP trigger URLs.
+    - HTTP-triggered flows generate a new URL after import.
+    - Update any calling apps, parent flows, or external systems to use the new URL.
 
 ### Post-migration process for Power Apps
 
