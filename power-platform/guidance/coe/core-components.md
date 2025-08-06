@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Use core components
 
-These components provide the core to get started setting up a Center of Excellence (CoE). The components sync all your resources into tables and build admin apps on top of them to help you get more visibility of the apps, flows, and makers in your environment. Apps like **Manage Permissions** help with daily admin tasks. The core components solution contains assets relevant only to admins. For more information, see [Set up core components](setup-core-components.md) and [Watch](https://www.youtube.com/embed/l0kJQAeKthw) how to use the core components solution.
+These components provide the core to get started setting up a Center of Excellence (CoE). The components sync all your resources into tables and build admin apps on top of them to help you get more visibility of the apps, flows, and makers in your environment. Apps like **Manage Permissions** help with daily admin tasks. The core components solution contains assets relevant only to admins. For more information, learn more at [Set up core components](setup-core-components.md) and [Watch](https://www.youtube.com/embed/l0kJQAeKthw) how to use the core components solution.
 
 [Watch an overview](https://www.youtube.com/embed/l0kJQAeKthw) on how to use the core components solution.
 
@@ -23,7 +23,7 @@ These components provide the core to get started setting up a Center of Excellen
 ### Tables
 
 > [!NOTE]
-> To easily explore and manage data stored in Dataverse, we recommend you install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). For more information, see [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/).
+> To easily explore and manage data stored in Dataverse, we recommend you install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). For more information, learn more at [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/).
 
 #### Tenant objects
 
@@ -160,7 +160,7 @@ These tables are used to manage the CoE solution itself.
 
 These security roles only grant permissions to the custom tables but not to the environment as a whole. If you want users to view apps and flows in the environment, grant them access individually to each object. You can add them to another security role like **System Admin** or **Environment Maker**.
 
-For more information, see [Security roles and privileges](/power-platform/admin/security-roles-privileges).
+For more information, learn more at [Security roles and privileges](/power-platform/admin/security-roles-privileges).
 
 - **Power Platform Admin SR** gives full access to create, read, write, and delete operations on the custom tables.
 
@@ -283,14 +283,14 @@ Use this app to:
 - See what effect each change has on existing canvas apps and cloud flows.
 - Mitigate the risk by contacting and working with makers.
 
-For more information, see [Data Loss Prevention policies](../../admin/wp-data-loss-prevention.md).
+For more information, learn more at [Data Loss Prevention policies](../../admin/wp-data-loss-prevention.md).
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or user accounts with admin permissions is required. Share this app with your CoE admins.
 
 :::image type="content" source="media/dlp_new1.png" alt-text="Screenshot that shows the DLP Impact Analysis page of the Data policy impact analysis menu.":::
 
 > [!NOTE]
-> This app can't detect or work with endpoint filtering in DLP. For more information, see [Connector Endpoint Filtering](../../admin/connector-endpoint-filtering.md).
+> This app can't detect or work with endpoint filtering in DLP. For more information, learn more at [Connector Endpoint Filtering](../../admin/connector-endpoint-filtering.md).
 >
 > This app can't check for DLP impact in other object types. However, you can get help to determine DLP impact of Desktop Flows [RPA CLI](https://github.com/rpapostolis/rpa-cli).
 
@@ -342,7 +342,7 @@ You can use this app to email app owners and app users by selecting **Email User
 
 With Power BI reports, you can get a holistic view of Dataverse data. You can understand visualizations and insights for **Environment**, **PowerApps App**, **Flow**, **Connector**, **Connection Reference**, **Maker**, and **Audit Log** tables.
 
-Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. For more information, see [Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard](power-bi.md).
+Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. For more information, learn more at [Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard](power-bi.md).
 
 :::image type="content" source="media/pb-2.png" alt-text="Screenshot that shows how to filter your apps in the Overview - Power Apps page of Power BI." lightbox="media/pb-2.png":::
 
