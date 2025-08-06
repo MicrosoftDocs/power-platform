@@ -438,17 +438,17 @@
                   href: wp-task-automation-flow.md
         - name: Monitor
           items:
-            - name: Overview (preview)
+            - name: Overview
               href: monitoring/monitoring-overview.md
-            - name: View event logs and error logs (preview)
+            - name: View event logs and error logs
               href: monitoring/logs.md
             - name: Create alerts for your resources (preview)
               href: monitoring/alerts.md
             - name: Metrics and recommendations
               items:
-                - name: For Power Apps (preview)
+                - name: For Power Apps
                   href: monitoring/monitor-power-apps.md
-                - name: For Power Automate (preview)
+                - name: For Power Automate
                   href: monitoring/monitor-power-automate.md
         - name: Copilot
           items:
@@ -544,9 +544,9 @@
                   href: managed-environment-sharing-limits.md
                 - name: App access control
                   items:
-                    - name: Control which apps are allowed in your environment (preview)
+                    - name: Control which apps are allowed in your environment
                       href: control-app-access-environment.md
-                    - name: Commonly used Microsoft first-party services and portal apps (preview)
+                    - name: Commonly used Microsoft first-party services and portal apps
                       href: apps-to-allow.md
             - name: Compliance
               items:
@@ -863,7 +863,7 @@
                 - name: Reference
                   items:
                     - name: Power Platform API for .NET
-                      href: /dotnet/api/
+                      href: /dotnet/api/?view=power-platform-latest&preserve-view=true
                     - name: "Power Platform REST API v2024-10-01"
                       href: /rest/api/power-platform
                     - name: "Power Platform REST API v2022-03-01-preview"
