@@ -169,6 +169,7 @@ For more information, see [Security roles and privileges](/power-platform/admin/
 - **Power Platform User SR** gives read-only access to resources in the custom tables.
 
 ### Flows
+The following table lists each flow in the CoE Starter Kit, including its name, type, run interval, and a brief description.
 
 | Flow Name | Type | Interval | Description |
 | ---- | ---- | --- | ---- |
@@ -229,7 +230,7 @@ For more information, see [Security roles and privileges](/power-platform/admin/
 | SYNC HELPER - Get Security Role Users | Child Flow | Called by **Admin \| Sync Template v4** (security roles) | Gets the **System Admin SR** users into inventory for a given environment. |
 
 ### Apps
-
+The following section introduces key apps in the CoE Starter Kit, designed to help you configure, manage, and enhance your Power Platform environment.
 #### CoE Setup and Upgrade Wizard
 
 An app used by admins to set up and upgrade their CoE installs.
@@ -351,6 +352,8 @@ Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboa
 
 ### Environment Request Tables
 
+The following section describes the Environment Request Tables, outlining each table’s purpose in managing environment requests within the CoE Starter Kit.
+
 - **Environment Creation Request** is a request submitted by nonadmins to create a new Environment. This request has a many-to-many relationship with the Maker and PowerApps Connector tables.
 
 - **DLP Impact Analysis** is an instance of an object, which violates a draft DLP Policy.
@@ -360,6 +363,8 @@ Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboa
 - **DLP Policy Change Request** is a request to change the definition of an existing DLP policy in the tenant.
 
 ### Environment Request Flows
+
+The following table lists the Environment Request Flows, detailing each flow’s name, type, run interval, and a brief description of its function in the CoE Starter Kit.
 
 | Flow Name | Type | Interval | Description |
 | ---- | ---- | --- | ---- |
@@ -374,6 +379,8 @@ Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboa
 | Env Request \| Notify requestor when rejected | Automated | When an **Environment Creation Request**’s status is updated to the _Rejected_ state | Sends an email notification to the requestor with the rejection status and reason, then changes the request to inactive. |
 
 ### Environment Request Apps
+
+The following section introduces the Environment Request Apps, designed to help manage and streamline environment requests in the CoE Starter Kit.
 
 #### CoE Admin Environment Request
 
@@ -409,11 +416,15 @@ Use this app to:
 
 ## Other core components
 
+This section covers other core components in the CoE Starter Kit, including other tables, flows, and apps that enhance governance, automation, and management capabilities for Power Platform.
+
 ### Other Tables
 
 - **App Catalog Feedback** represents feedback gathered for an app.
 
 ### Other Flows
+
+The following table lists other flow in the CoE Starter Kit, including its name, type, run interval, and a brief description.
 
 | Flow Name | Type | Interval | Description |
 | ---- | ---- | --- | ---- |
@@ -423,6 +434,8 @@ Use this app to:
 | App Catalog > Request Access | Instant | From the App Catalog | This flow sends an access request approval to the maker. |
 
 ### Other Apps
+
+The following section introduces the Other Apps, designed to help manage and streamline apps in the CoE Starter Kit.
 
 #### App Catalog
 
