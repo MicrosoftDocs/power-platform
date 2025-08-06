@@ -1,26 +1,24 @@
 ---
-title: Commonly used Microsoft first-party services and portal apps (preview)
+title: Commonly used Microsoft first-party services and portal apps
 description: Learn more about what apps you might want to allow.
 author: paulliew
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 12/12/2024
+ms.date: 08/05/2025
 search.audienceType: 
   - admin
 ---
 
-# Commonly used Microsoft first-party services and portal apps (preview)
+# Commonly used Microsoft first-party services and portal apps
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
 The following apps are Microsoft first-party services. This list might vary based on your environment and installed solutions. Most of these apps can be allowed or blocked using the [client app access control feature](control-app-access-environment.md).
 
-Certain [apps are automatically allowed](#commonly-used-microsoft-first-party-services-and-portal-apps-preview) in all environments, such as Dataverse. You can manage access to other apps by assigning the appropriate user license or Dataverse security role. For example, to use the Power Apps maker portal, a maker must be assigned to an Environment Maker, System Customizer, or System Administrator security role. Apps automatically allowed in all environments aren't listed on the **Security** page.
+Certain [apps are automatically allowed](#commonly-used-microsoft-first-party-services-and-portal-apps) in all environments, such as Dataverse. You can manage access to other apps by assigning the appropriate user license or Dataverse security role. For example, to use the Power Apps maker portal, a maker must be assigned to an Environment Maker, System Customizer, or System Administrator security role. Apps automatically allowed in all environments aren't listed on the **Security** page.
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
@@ -30,9 +28,9 @@ Certain [apps are automatically allowed](#commonly-used-microsoft-first-party-se
 | 065d9450-1e87-434e-ac2f-69af271549ed | PowerPlatformAdminCenter |
 | 4e291c71-d680-4d0e-9640-0a3358e31177 | Power Apps |
 | 8c1a9936-578e-4d13-9bd9-9afe53ef7de8 | Finance Copilot |
-| d024ca46-2708-4d20-903e-b18b7e1d95dc | Dynamics365Assistant |   
+| d024ca46-2708-4d20-903e-b18b7e1d95dc | Dynamics365Assistant |
 | 61ccfc51-60d1-470a-9dca-f78fcf640d23 | MicrosoftServiceCopilot-Prod |
-| e97edbaf-39b2-4546-ba61-0a24e1bef890 | EHRTeleHealth | 
+| e97edbaf-39b2-4546-ba61-0a24e1bef890 | EHRTeleHealth |
 | 7c4f9118-450a-4e75-b96b-df2d0cac4c0d | d365-dani-exceladdinprod |
 | 7f67af8a-fedc-4b08-8b4e-37c4d127b6cf | Power BI Desktop |
 | 871c010f-5e61-4fb1-83ac-98610a7e9110 | MicrosoftPowerBI |
@@ -170,10 +168,10 @@ Certain [apps are automatically allowed](#commonly-used-microsoft-first-party-se
 | 5a24b264-c8f3-474d-92f6-a998cca942c1 | Dynamics 365 for Marketing |
 | 60d240cc-7621-469e-80f1-584c53e9cafa | DYN365AISERVICEINSIGHTS |
 | a8f7a65c-f5ba-4859-b2d6-df772c264e9d | make.powerapps.com |
-| 48af08dc-f6d2-435f-b2a7-069abd99c086 | Connectors | 
+| 48af08dc-f6d2-435f-b2a7-069abd99c086 | Connectors |
 | b15cc146-2b25-46c7-90c1-daa6c3e8386b | CRM Groups Integration |
 | 945d3a88-db20-40bd-a9e3-8f2383a17c88 | make.powerpages.microsoft.com |
-| b861dbcc-a7ef-4219-a005-0e4de4ea7dcf | CrmExporter | 
+| b861dbcc-a7ef-4219-a005-0e4de4ea7dcf | CrmExporter |
 | 0b820e0a-8d08-45d1-8740-bde894f7e1c2 | Lobe Client |
 | 3d3f56ed-9c38-4480-b172-0fa5d8838516 | TrustedPublishersProxyServicePPE |
 | 00000009-0000-0000-c000-000000000000 | Power BI |
@@ -181,7 +179,7 @@ Certain [apps are automatically allowed](#commonly-used-microsoft-first-party-se
 | 8d25f88c-09fe-41eb-9ee1-0545adf985df | Dynamics 365 Field Service |
 | c495cfdc-814f-46a1-89f0-657921c9fbe0 | Azure AD Identity Governance - Dynamics 365 Management |
 | 8578e004-a5c6-46e7-913e-12f58912df43 | Power Platform API |
-| 7ab7862c-4c57-491e-8a45-d52a7e023983 | App Service | 
+| 7ab7862c-4c57-491e-8a45-d52a7e023983 | App Service |
 | ce9f9f18-dd0c-473e-b9b2-47812435e20d | Microsoft Dynamics CRM for tablets and phones |
 | e64aa8bc-8eb4-40e2-898b-cf261a25954f | CRM Power BI Integration |
 | 71234da4-b92f-429d-b8ec-6e62652e50d7 | Microsoft Customer Engagement Portal |
