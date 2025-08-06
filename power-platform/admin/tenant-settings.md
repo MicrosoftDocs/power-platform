@@ -3,7 +3,7 @@ title: Tenant settings
 description: Review and configure tenant-level settings linked from this page.
 author: amiyapatr-zz
 ms.topic: overview
-ms.date: 7/28/2025
+ms.date: 08/05/2025
 ms.update-cycle: 180-days
 ms.author: ampatra
 ms.reviewer: sericks
@@ -69,6 +69,7 @@ The following settings apply to all environments within your tenant.
 |[Copilot in Power Apps (preview)](/power-apps/maker/canvas-apps/ai-overview)|Enables Copilot preview features for users who make apps. |
 |[Copilot Studio authors (preview)](/microsoft-copilot-studio/billing-licensing)| Enables the selection of a security group that might use Copilot Studio.|
 |[Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy)*   | Enables the Customer Lockbox policy for Managed Environments.        |
+|[Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features](../transparency-note-copilot-data-sharing.md) | Enables Microsoft to capture and human review inputs, outputs, telemetry from Dynamics 365 Copilot and Power Platform Copilot AI features to build, improve, and validate Microsoft's machine leaning models, features, services, and related systems. <br/> By default, this setting is disabled. |
 |[Desktop flow actions in DLP](/power-automate/prevent-data-loss#data-loss-prevention-for-desktop-flows-preview)| When enabled, desktop flow action groups are visible when creating or editing DLP policies.|
 |[Developer environment assignments](control-environment-creation.md)   | Controls who can create and manage developer environments.  |
 |[Environment routing](default-environment-routing.md)* | Allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments. |
@@ -83,10 +84,6 @@ The following settings apply to all environments within your tenant.
 |Tenant licensing summary view| Controls who can view the tenant licensing summary.|
 |[Trial environment assignments](control-environment-creation.md)       | Controls who can create and manage trial environments.|
 |[Weekly digest](managed-environment-usage-insights.md)*     | Manages more recipients for the weekly digest email for Managed Environments.  |
-<!--
-    |[Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features](../transparency-note-copilot-data-sharing.md) | Enables Microsoft to capture and human review inputs, outputs, telemetry from Dynamics 365 Copilot and Power Platform Copilot AI features to build, improve, and validate Microsoft's machine leaning models, features, services, and related systems. <br/> By default, this setting is disabled. |
-    | Copilot feedback data | When using Copilot in Power Apps, allows users to share their prompts, questions, and requests with Microsoft. |
---/>
 
 *This setting applies only to Managed Environments.
 
