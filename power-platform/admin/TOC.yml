@@ -446,9 +446,9 @@
               href: monitoring/alerts.md
             - name: Metrics and recommendations
               items:
-                - name: For Power Apps (preview)
+                - name: For Power Apps
                   href: monitoring/monitor-power-apps.md
-                - name: For Power Automate (preview)
+                - name: For Power Automate
                   href: monitoring/monitor-power-automate.md
         - name: Copilot
           items:
