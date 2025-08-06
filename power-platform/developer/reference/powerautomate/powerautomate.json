@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - Power Automate",
+    "title": "Microsoft Power Platform REST API - powerautomate",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -27,8 +27,7 @@
             "name": "environmentId",
             "description": "The environment ID.",
             "required": true,
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
           },
           {
             "in": "query",
@@ -152,8 +151,7 @@
             "name": "environmentId",
             "description": "The environment ID.",
             "required": true,
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
           },
           {
             "in": "query",
@@ -266,8 +264,7 @@
             "name": "environmentId",
             "description": "The environment ID.",
             "required": true,
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
           },
           {
             "in": "query",
@@ -608,7 +605,7 @@
       "type": "string"
     },
     "ModernFlowType": {
-      "description": "Indicates the modern flow type.",
+      "description": "Indicates the modernflow type.",
       "enum": [
         "PowerAutomateFlow",
         "AgentFlow"

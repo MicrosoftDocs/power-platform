@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - environment smanagement",
+    "title": "Microsoft Power Platform REST API - environmentmanagement",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -282,12 +282,124 @@
         }
       }
     },
+    "/environmentmanagement/environments/{environmentId}/governancesetting/disablemanaged": {
+      "post": {
+        "tags": [
+          "EnvironmentManagedGovernance"
+        ],
+        "summary": "Disables managed governance for the specified environment (Preview).",
+        "operationId": "DisableManagedEnvironment",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of Environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.ManageGovernance.Write"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/governancesetting/enablemanaged": {
+      "post": {
+        "tags": [
+          "EnvironmentManagedGovernance"
+        ],
+        "summary": "Enables managed governance for the specified environment (Preview).",
+        "operationId": "EnableManagedEnvironment",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of Environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.ManageGovernance.Write"
+      }
+    },
     "/environmentmanagement/environments/{environmentId}/operations": {
       "get": {
         "tags": [
           "Operations"
         ],
-        "summary": "List the available operations for an environment.",
+        "summary": "List the available operations for an environment (Preview).",
         "description": "Returns a list of the available operations for an environment.",
         "operationId": "ListOperationsForEnvironment",
         "produces": [
@@ -339,7 +451,7 @@
         "tags": [
           "Operations"
         ],
-        "summary": "Retrieve the operation by ID.",
+        "summary": "Retrieve the operation by ID (Preview).",
         "description": "Retrieve the operation specified by ID.",
         "operationId": "GetOperationByID",
         "produces": [
@@ -909,9 +1021,86 @@
         "loggingEnabledForIpBasedStorageAccessSignature": {
           "type": "boolean"
         },
-        "rowRevision": {
-          "format": "int64",
-          "type": "integer"
+        "powerPages_AllowMakerCopilotsForNewSites": {
+          "type": "string"
+        },
+        "powerPages_AllowMakerCopilotsForExistingSites": {
+          "type": "string"
+        },
+        "powerPages_AllowProDevCopilotsForSites": {
+          "type": "string"
+        },
+        "powerPages_AllowSiteCopilotForSites": {
+          "type": "string"
+        },
+        "powerPages_AllowSearchSummaryCopilotForSites": {
+          "type": "string"
+        },
+        "powerPages_AllowListSummaryCopilotForSites": {
+          "type": "string"
+        },
+        "powerPages_AllowIntelligentFormsCopilotForSites": {
+          "type": "string"
+        },
+        "powerPages_AllowSummarizationAPICopilotForSites": {
+          "type": "string"
+        },
+        "powerPages_AllowNonProdPublicSites": {
+          "type": "string"
+        },
+        "powerPages_AllowNonProdPublicSites_Exemptions": {
+          "type": "string"
+        },
+        "powerPages_AllowProDevCopilotsForEnvironment": {
+          "type": "string"
+        },
+        "powerApps_ChartVisualization": {
+          "type": "boolean"
+        },
+        "powerApps_FormPredictSmartPaste": {
+          "type": "boolean"
+        },
+        "powerApps_FormPredictAutomatic": {
+          "type": "boolean"
+        },
+        "powerApps_CopilotChat": {
+          "type": "boolean"
+        },
+        "powerApps_NLSearch": {
+          "type": "boolean"
+        },
+        "powerApps_EnableFormInsights": {
+          "type": "boolean"
+        },
+        "powerApps_AllowCodeApps": {
+          "type": "boolean"
+        },
+        "copilotStudio_ConnectedAgents": {
+          "type": "boolean"
+        },
+        "copilotStudio_CodeInterpreter": {
+          "type": "boolean"
+        },
+        "copilotStudio_ConversationAuditLoggingEnabled": {
+          "type": "boolean"
+        },
+        "d365CustomerService_Copilot": {
+          "type": "boolean"
+        },
+        "d365CustomerService_AIAgents": {
+          "type": "boolean"
+        },
+        "copilotStudio_ComputerUseAppAllowlist": {
+          "type": "string"
+        },
+        "copilotStudio_ComputerUseWebAllowlist": {
+          "type": "string"
+        },
+        "copilotStudio_ComputerUseSharedMachines": {
+          "type": "boolean"
+        },
+        "copilotStudio_ComputerUseCredentialsAllowed": {
+          "type": "boolean"
         }
       },
       "additionalProperties": false
@@ -1025,6 +1214,10 @@
         },
         "geo": {
           "description": "The geographical region of the environment.",
+          "type": "string"
+        },
+        "environmentGroupId": {
+          "description": "The ID of the environment group to which this environment belongs.",
           "type": "string"
         },
         "azureRegion": {
@@ -1146,7 +1339,7 @@
         },
         "extensions": {
           "type": "object",
-          "additionalProperties": {},
+          "additionalProperties": { },
           "readOnly": true
         }
       },
