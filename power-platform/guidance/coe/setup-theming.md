@@ -31,13 +31,21 @@ Before you begin, review the [prerequisites](setup.md) for using the starter kit
 The Power Apps theming solution contains Power Apps component framework elements. You must enable publishing of canvas apps with code components for the environment:
 
 1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
+
 1. In the navigation pane, select **Manage**.
+
 1. From the Manage pane, select **Environments**.
+
 1. Choose the environment where your CoE solution is installed, or the environment where you plan to import the solution.
+
 1. Select **Settings**.
+
 1. Select **Product** > **Features**.
+
     :::image type="content" source="media/theming-2.png" alt-text="Power Platform admin center Environment Product Settings.":::
+
 1. Make sure **Allow publishing of canvas apps with code components** is enabled.
+
     :::image type="content" source="media/theming-3.png" alt-text="Enable publishing of canvas apps with code components in the Power Platform admin center.":::
 
 ## Import the solution
