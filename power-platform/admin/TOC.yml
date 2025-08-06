@@ -544,9 +544,9 @@
                   href: managed-environment-sharing-limits.md
                 - name: App access control
                   items:
-                    - name: Control which apps are allowed in your environment (preview)
+                    - name: Control which apps are allowed in your environment
                       href: control-app-access-environment.md
-                    - name: Commonly used Microsoft first-party services and portal apps (preview)
+                    - name: Commonly used Microsoft first-party services and portal apps
                       href: apps-to-allow.md
             - name: Compliance
               items:
@@ -863,7 +863,7 @@
                 - name: Reference
                   items:
                     - name: Power Platform API for .NET
-                      href: /dotnet/api/
+                      href: /dotnet/api/?view=power-platform-latest&preserve-view=true
                     - name: "Power Platform REST API v2024-10-01"
                       href: /rest/api/power-platform
                     - name: "Power Platform REST API v2022-03-01-preview"
