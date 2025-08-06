@@ -3,16 +3,19 @@ title: View Power Platform administrative logs using auditing solutions in Micro
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/23/2024
+ms.date: 08/06/2025
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: sericks 
+ms.reviewer: ellenwehrle 
 search.audienceType: 
   - admin
 ms.contributors:
  - modhawan1 
  - drkestel
+ - miferlan
+ - laswenka
+ - wifun
 
 ---
 
@@ -66,7 +69,7 @@ Each activity event contains a payload of metadata that is specific to the indiv
 
 ## Activity category: Environment groups & rules
 
-All activities for environment groups and rules are recorded under the *PowerPlatformAdministratorActivity* record type.
+All activities for environment groups and rules are recorded under the _PowerPlatformAdministratorActivity_ record type.
 
 Each activity event contains a payload of metadata that is specific to the individual event. The following environment group activities are delivered to Microsoft Purview.
 
@@ -79,6 +82,7 @@ Each activity event contains a payload of metadata that is specific to the indiv
 | EnvironmentRemovedFromEnvironmentGroup | Emitted when an environment is removed from an environment group. |
 
 The following rules activities are delivered to Microsoft Purview for these 9 rules:
+
 - AI-generated descriptions (preview)
 - Backup retention
 - Generative AI settings
