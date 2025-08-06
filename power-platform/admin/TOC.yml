@@ -438,9 +438,9 @@
                   href: wp-task-automation-flow.md
         - name: Monitor
           items:
-            - name: Overview (preview)
+            - name: Overview
               href: monitoring/monitoring-overview.md
-            - name: View event logs and error logs (preview)
+            - name: View event logs and error logs
               href: monitoring/logs.md
             - name: Create alerts for your resources (preview)
               href: monitoring/alerts.md

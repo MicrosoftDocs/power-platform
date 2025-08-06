@@ -1,10 +1,10 @@
 ---
-title: Monitor the health of your resources (preview)
+title: Monitor the health of your resources
 description: Learn how to use the Monitor > Overview page to monitor and improve operational health.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/01/2025
+ms.date: 08/06/2025
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
