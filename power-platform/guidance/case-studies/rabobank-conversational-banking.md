@@ -12,7 +12,7 @@ ms.date: 07/16/2025
 
 # Rabobank embraces conversational banking with Copilot Studio
 
-Rabobank is a multinational banking and financial services company based in the Netherlands. As part of its mission to grow a better world together, Rabobank has embraced conversational banking&mdash;prioritizing friendly and efficient customer service on demand, in alignment with the company's principles of cooperation and putting people first.  
+Rabobank, a multinational banking and financial services company based in the Netherlands is committed to growing a better world together. As part of this mission, Rabobank has embraced conversational banking&mdash;prioritizing friendly and efficient customer service on demand, in alignment with the company's principles of cooperation and putting people first.  
 
 In this case study, you learn how to:
 
@@ -24,13 +24,13 @@ In this case study, you learn how to:
 
 ## Business challenges
 
-Rabobank started to explore chatbot functionality for customer self-service to improve efficiency and lower operational costs. With rising customer expectations and increased inquiries, Rabobank decided it needed a chatbot to answer common customer questions.
+Rabobank started to explore chatbot functionality for customer self-service to improve efficiency and lower operational costs. With rising customer expectations and increased inquiries, the bank needed a chatbot to answer common customer questions.
 
-Rabobank initially set up text- and voice-enabled chatbot functionality on another platform, partly on-premises, and relied on vendors for implementation and maintenance. 
+Initially, Rabobank set up text- and voice-enabled chatbot functionality on another platform, partly on-premises, and relied on vendors for implementation and maintenance. 
 
-However, the solution presented several challenges:
+However, this solution presented several challenges:
 
-- **Inefficient**: The systems for chat and voice support had to be updated with new conversations and logic separately, even when the systems used the same information and models.
+- **Inefficiency**: Chat and voice systems had to be updated with new conversations and logic separately, even when the systems used the same information and models.
 
 - **Slow to market**: The platform required specialized developer support, which slowed innovation and time to market.
 
