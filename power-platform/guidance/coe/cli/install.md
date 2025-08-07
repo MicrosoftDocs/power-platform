@@ -1,5 +1,5 @@
 ---
-title: Install and set up the CoE CLI (deprecated)
+title: Install the CoE CLI (Deprecated)
 description: Learn how to install and set up the CoE command line interface using local or Docker methods.
 author: Grant-Archibald-MS
 ms.author: grarchib
@@ -14,7 +14,7 @@ search.audienceType:
   - admin
 ---
 
-# Install and set up the CoE CLI (deprecated)
+# Install the CoE CLI (Deprecated)
 
 > [!NOTE]
 > The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
@@ -31,13 +31,13 @@ To install the Center of Excellence (CoE) command line interface (CLI):
    cd coe-cli
    ```
 
-Next, select either [local install](#local-install) or [Docker install](#docker-install).
+Perform a [local install](#local-install) or [Docker install](#docker-install).
 
 ## Local install
 
 Install the CoE CLI locally on your computer to run the CLI commands directly from your command prompt or terminal. 
 
-If you don't have administrative rights, ensure that you install the [Prerequisites for a non-administrator](#prerequisites-for-a-non-administrator). The [Install instructions](#install) are the same for both administrator and non-administrator installs.
+If you don't have administrative rights, make sure you install the [prerequisites for a non-administrator](#prerequisites-for-a-non-administrator). The [installation instructions](#install) are the same for both administrator and non-administrator installs.
 
 ### Prerequisites as administrator
 
@@ -45,8 +45,8 @@ If you don't have administrative rights, ensure that you install the [Prerequisi
 
 - Azure CLI (version 2.37.0+). You need Azure CLI for user authentication and Microsoft Entra integration. Follow the install instructions for your operating system at [Install Azure CLI](/cli/azure/install-azure-cli).
 
-    - > [!Important]
-    - > The CoE CLI works with Azure CLI versions up to 2.38.0.
+    > [!Important]
+    > The CoE CLI works with Azure CLI versions up to 2.38.0.
 
 - PowerShell Core (version 7.2+), available at [/powershell/scripting/install/installing-powershell](/powershell/scripting/install/installing-powershell).
 
@@ -68,8 +68,6 @@ To check that you installed the prerequisites correctly and have the right versi
 
 ### Prerequisites for a non-administrator
 
-If you don't have administrative rights, follow these steps to prepare for the installation on Windows.
-
 - [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/), a free bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a few other useful packages. 
 
 - [Node.js](https://nodejs.org/). To install:
@@ -83,7 +81,7 @@ If you don't have administrative rights, follow these steps to prepare for the i
 
 - Prepare your system:
 
-    1. Open `%USERPROFILE%\dev.bat` with Notepad and make the following edit:
+    1. Open `%USERPROFILE%\dev.bat` with a text editor like Notepad and make the following edit:
 
         ```text
         SET PATH=%PATH%;%USERPROFILE%/nodejs
@@ -92,7 +90,7 @@ If you don't have administrative rights, follow these steps to prepare for the i
 
     1. Save the file.
 
-    1. Install the Azure CLI using [pip](https://pypi.org/project/pip/), the Python package manager:
+    1. Install the Azure CLI by using [pip](https://pypi.org/project/pip/), the Python package manager:
 
         ```cmd
         pip install azure-cli
@@ -136,16 +134,16 @@ For a demo of the steps, go to [Video demo of local installation](#video-demo-of
 
 1. Verify that the CoE CLI is installed.
 
-  ```cmd
-  coe --help    
-  ```
+    ```cmd
+    coe --help    
+   ```
 
 > [!NOTE]
 > On Windows, you might need to add `%APPDATA%\npm` to your PATH environment variable to access the `coe` command.
 
 #### Video demo of local installation
 
-The following video captures the results of a sample local install.
+The following video shows the results of a sample local install.
 
 :::image type="content" source="./media/install-local.svg" alt-text="Demo of example local installation of CoE CLI.":::
 
@@ -179,13 +177,13 @@ To run the CoE CLI application, you need to install [Docker](https://docs.docker
 
 #### Video demo of Docker installation
 
-The following video captures the results of a sample Docker install on Linux.
+The following video shows the results of a sample Docker install on Linux.
 
-:::image type="content" source="./media/install-docker.svg" alt-text="Demo of example Docker installation of CoE CLI on Linux.":::
+![Demo of example Docker installation of CoE CLI on Linux.](./media/install-docker.svg)
 
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Install ALM Accelerator](./alm/overview.md)
+> [Install the CoE CLI ALM accelerator](./alm/overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
