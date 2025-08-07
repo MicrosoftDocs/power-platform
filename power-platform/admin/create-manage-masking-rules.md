@@ -174,7 +174,7 @@ Users or Teams groups can be granted access through column security:
   **Allowed**: Users are allowed to create records.
   
 > [!NOTE]
-> System and application users with **Read** and **Read unmasked** permissions get masked values by default. To read unmasked values, go to [options for viewing masked fields](#options-for-viewing-masked-fields).
+> System and application users with **Read** and **Read unmasked** permissions get masked values by default. To read unmasked values, go to [Viewing unmasked data](#viewing-unmasked-data).
 
 ### View all columns that have a masking rule
 
