@@ -1608,6 +1608,21 @@
       "source_path": "power-platform/guidance/adoption/sharing-alerts.md",
       "redirect_url": "/power-platform/guidance/adoption/reactive-governance",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/non-administrator-local-install.md",
+      "redirect_url": "/power-platform/guidance/coe/cli/install",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/sample-docker-install.md",
+      "redirect_url": "/power-platform/guidance/coe/cli/install",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/sample-local-install.md",
+      "redirect_url": "/power-platform/guidance/coe/cli/install",
+      "redirect_document_id": false
     }
   ]
 }
