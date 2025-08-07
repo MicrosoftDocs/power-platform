@@ -122,8 +122,6 @@
                   href: ../coe/cli/alm/key-concepts.md
                 - name: Maker set-up
                   href: ../coe/cli/alm/maker-setup.md
-                - name: Maturity
-                  href: ../coe/cli/alm/personas.md
                 - name: Personas
                   href: ../coe/cli/alm/personas.md
             - name: CLI development
