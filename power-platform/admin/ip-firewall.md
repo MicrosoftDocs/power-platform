@@ -166,8 +166,8 @@ The IP Firewall feature in Power Platform allows administrators to restrict acce
 
 ## Steps to Enable SPN Filtering
 
-1. Assign Security Roles to the Application User.
-   Add the application user to the target environment and assign the appropriate security roles.
+1. Add the application user.
+   If not already added start with adding the [application user](https://learn.microsoft.com/power-platform/admin/manage-application-users?tabs=new) to the target environment and assign the appropriate security roles.
    Example:
    Add the app user with ID 123 and name TestSPN to the environment and assign the necessary roles
 2. Retrieve the System User ID.
@@ -188,7 +188,7 @@ OData-Version: 4.0
 ```http
 
 
-https://{yourorg}.api.crm*.dynamics.com/api/data/v9.2/systemusers(SystemuserID)
+POST https://{yourorg}.api.crm*.dynamics.com/api/data/v9.2/systemusers(SystemuserID)
 HTTP/1.1
 Content-Type: application/json
 OData-MaxVersion: 4.0
