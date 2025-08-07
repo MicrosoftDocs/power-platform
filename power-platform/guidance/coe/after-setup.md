@@ -10,7 +10,7 @@ ms.reviewer: sericks
 
 ---
 
-# Update the Center of Excellence (CoE) Starter Kit
+# Updating the Center of Excellence (CoE) Starter Kit
 
 This article prepares you to upgrade the CoE Starter Kit. It provides guidance on:
 
@@ -20,7 +20,7 @@ This article prepares you to upgrade the CoE Starter Kit. It provides guidance o
 - How to test the latest release.
 
 > [!NOTE]
-> If you are setting up the CoE Starter Kit for the first time, check out our [setup instructions](setup.md). If you are looking to extend the CoE Starter Kit with your own customizations, refer to our guidance for [extending the CoE Starter Kit](modify-components.md).
+> If you're setting up the CoE Starter Kit for the first time, check out our [setup instructions](setup.md). If you're looking to extend the CoE Starter Kit with your own customizations, refer to our guidance for [extending the CoE Starter Kit](modify-components.md).
 
 >[!IMPORTANT]
 > We recommend upgrading the CoE Starter Kit solution at least **every three months**. With the fast pace of change for Microsoft Power Platform, leaving updates longer than three months could result in unexpected issues when you do update.
@@ -86,7 +86,7 @@ First, read the [latest release notes](https://github.com/microsoft/coe-starter-
 Download the latest version of the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
 > [!IMPORTANT]
-> **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components as well as non-solution aware components that make up the CoE Starter Kit.
+> **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components and nonsolution aware components that make up the CoE Starter Kit.
 
 ### Remove unmanaged layers from inventory flows
 
@@ -94,7 +94,7 @@ Before installing the upgrade, check that the solution is in a healthy state to 
 
 Making any changes to flows or apps in the solution creates an unmanaged layer. Components with unmanaged layers won't receive updates until you remove that unmanaged layer. Learn more: [Solution layers](/power-platform/alm/solution-layers-alm)
 
-All flows with *Admin \| Sync Template v* in the name are responsible for collecting your tenant's inventory and building the foundation that the CoE Starter Kit relies on. These flows should not be customized. If you have additional requirements on what inventory to collect, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=&labels=coe-starter-kit%2Cenhancement&template=3-coe-starter-kit-feature.yml&title=%5BCoE+Starter+Kit+-+Feature%5D%3A+FEATURE+TITLE) or create your own flow. Learn more: [Extending the CoE Starter Kit](modify-components.md)
+All flows with *Admin \| Sync Template v* in the name are responsible for collecting your tenant's inventory and building the foundation that the CoE Starter Kit relies on. These flows shouldn't be customized. If you have additional requirements on what inventory to collect, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=&labels=coe-starter-kit%2Cenhancement&template=3-coe-starter-kit-feature.yml&title=%5BCoE+Starter+Kit+-+Feature%5D%3A+FEATURE+TITLE) or create your own flow. Learn more: [Extending the CoE Starter Kit](modify-components.md)
 
 Your first check before installing the upgrade is removing unmanaged layers from the inventory flows.
 
@@ -135,7 +135,7 @@ Once you've removed unmanaged layers, you can import the new solution version:
 
 1. [Import the solution](faq.md#installing-a-solution-in-a-production-environment).
  
-1. Select **Upgrade** (default setting). [Solution upgrades](/power-platform/alm/solution-concepts-alm#solution-lifecycle) will delete components that existed but are no longer included in the upgraded version.
+1. Select **Upgrade** (default setting). [Solution upgrades](/power-platform/alm/solution-concepts-alm#solution-lifecycle) delete components that existed but are no longer included in the upgraded version.
  
    ![Select upgrade to install the new solution version](media/coe-upgrade1.png "Select upgrade to install the new solution version")
     
@@ -161,7 +161,7 @@ Once you've removed unmanaged layers, you can import the new solution version:
 
 ## Updating the Audit Log solution
 
-Connections to custom connectors have to be re-established after solution upgrade. If you are using the Audit Log solution, [reset the connection](https://github.com/microsoft/coe-starter-kit/issues/1424) to the custom connector.
+Connections to custom connectors have to be re-established after solution upgrade. If you're using the Audit Log solution, [reset the connection](https://github.com/microsoft/coe-starter-kit/issues/1424) to the custom connector.
 
 ## Testing strategy
 
