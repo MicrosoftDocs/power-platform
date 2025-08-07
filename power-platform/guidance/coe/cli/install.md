@@ -37,13 +37,13 @@ Perform a [local install](#local-install) or [Docker install](#docker-install).
 
 Install the CoE CLI locally on your computer to run the CLI commands directly from your command prompt or terminal. 
 
-If you don't have administrative rights, make sure you install the [prerequisites for a non-administrator](#prerequisites-for-a-non-administrator). The [installation instructions](#install) are the same for both administrator and non-administrator installs.
+If you don't have administrative privileges, make sure you install the [prerequisites for a non-administrator](#prerequisites-for-a-non-administrator). The [installation instructions](#install) are the same for both administrator and non-administrator installs.
 
 ### Prerequisites as administrator
 
-- Node 16+, available at [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+- Node.js 16+, available at [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
-- Azure CLI (version 2.37.0+). You need Azure CLI for user authentication and Microsoft Entra integration. Follow the install instructions for your operating system at [Install Azure CLI](/cli/azure/install-azure-cli).
+- Azure CLI (version 2.37.0+). You need Azure CLI for user authentication and Microsoft Entra integration. Follow the installation instructions for your operating system in [How to install the Azure CLI](/cli/azure/install-azure-cli).
 
     > [!Important]
     > The CoE CLI works with Azure CLI versions up to 2.38.0.
@@ -70,14 +70,20 @@ To check that you installed the prerequisites correctly and have the right versi
 
 - [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/), a free bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a few other useful packages. 
 
-- [Node.js](https://nodejs.org/). To install:
+- Node.js 16+. To install:
 
-    - Go to [Download Node.js](https://nodejs.org/en/download/).
-    - Download the Windows binary for your operating system type.
+    - [Download Node.js](https://nodejs.org/en/download/).
+    - Download the Windows binary for your operating system.
     - Extract the downloaded zip file.
     - In Windows Explorer, open **%USERPROFILE%**.
     - Create a folder named *nodejs*.
     - Copy all files from the zip file into the **nodejs** folder.
+
+- Azure CLI. Install by using [pip](https://pypi.org/project/pip/), the Python package manager:
+
+    ```cmd
+   pip install azure-cli
+   ```
 
 - Prepare your system:
 
@@ -90,19 +96,13 @@ To check that you installed the prerequisites correctly and have the right versi
 
     1. Save the file.
 
-    1. Install the Azure CLI by using [pip](https://pypi.org/project/pip/), the Python package manager:
+To check that you installed the prerequisites correctly and have the right versions, use the following commands:
 
-        ```cmd
-        pip install azure-cli
-        ```
-
-    1. Verify all prerequisites are installed:
-
-         ```cmd
-         az --version
-         node --version
-         pac --version
-         ```
+```cmd
+az --version
+node --version
+pac --version
+```
 
 ### Install
 
@@ -143,13 +143,13 @@ For a demo of the steps, go to [Video demo of local installation](#video-demo-of
 
 #### Video demo of local installation
 
-The following video shows the results of a sample local install.
+The following demo shows the results of a sample local install.
 
 :::image type="content" source="./media/install-local.svg" alt-text="Demo of example local installation of CoE CLI.":::
 
 ## Docker install
 
-Another way to install the CoE CLI is by using Docker. For a demo of the steps, go to [Video demo of Docker installation](#video-demo-of-docker-installation).
+Another way to install the CoE CLI is using Docker. For a demo of the steps, go to [Video demo of Docker installation](#video-demo-of-docker-installation).
 
 ### Prerequisites
 
@@ -177,9 +177,9 @@ To run the CoE CLI application, you need to install [Docker](https://docs.docker
 
 #### Video demo of Docker installation
 
-The following video shows the results of a sample Docker install on Linux.
+The following demo shows the results of a sample Docker install on Linux. 
 
-![Demo of example Docker installation of CoE CLI on Linux.](./media/install-docker.svg)
+:::image type="content" source="./media/install-docker.svg" alt-text="Demo of example Docker installation of CoE CLI on Linux.":::
 
 ## Next step
 
