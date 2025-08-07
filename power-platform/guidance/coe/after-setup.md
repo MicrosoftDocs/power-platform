@@ -1,9 +1,9 @@
 ---
-title: "Updating the Center of Excellence (CoE) Starter Kit"
-description: "The CoE Starter Kit is updated each month. Learn best practices for managing the update process in your organization."
+title: Updating the Center of Excellence (CoE) Starter Kit
+description: Learn how to upgrade, test, and manage new releases for the Center of Excellence Starter Kit to keep your organization current.
 author: stjeffer
 ms.topic: how-to
-ms.date: 04/13/2023
+ms.date: 08/07/2025
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: sericks
