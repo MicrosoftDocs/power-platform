@@ -31,6 +31,7 @@ Power Automate operational health metrics and recommendations are available in t
 ## Power Automate metrics and recommendations
 
 ### Metric definitions
+
 | Type | Metric | Definition | Support |
 |---|---|---|---|
 | Flows| Success rate| A percentage that describes how often flows are able to run successfully. | Generally available |
@@ -38,8 +39,8 @@ Power Automate operational health metrics and recommendations are available in t
 | Flows| Duration| Average (in seconds) total execution time of flow run. | Generally available |
 | Desktop flows| Time in queue| The minimum time (in seconds) that the slowest 10% of desktop flows have to wait before a machine is assigned to run them. | Generally available |
 
-
 ### Metric and recommendation pairings
+
 | Metric | Secondary metric | Title of recommendation | Description of recommendation|
 |---|---|---|---|
 | Success rate | Not applicable  |There are one or more runs that need your attention. | Review the list of runs and open flows or run details to troubleshoot.| 
