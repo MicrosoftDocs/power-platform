@@ -74,7 +74,7 @@ Read more in the [help](https://aka.ms/coe-cli/help/overview) articles for detai
 
 ## Learn more
 
-- [CoE CLI upgrade](./upgrade.md) - How to upgrade to a new version of the CoE CLI install.
+- [Upgrade the CoE CLI](./upgrade.md) - How to upgrade to a new version of the CoE CLI install.
 
 ## How does it work
 
