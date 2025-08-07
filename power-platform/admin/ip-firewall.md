@@ -1,7 +1,7 @@
 ---
 title: IP firewall in Power Platform environments
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 08/04/2025
+ms.date: 08/07/2025
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
@@ -167,7 +167,7 @@ The IP Firewall feature in Power Platform allows administrators to restrict acce
 ## Steps to enable SPN filtering
 
 1. **Add the application user.**
-   If not already added, add the [application user](/manage-application-users) to the target environment and assign the appropriate security roles.
+   If not already added, add the [application user](manage-application-users.md) to the target environment and assign the appropriate security roles.
    Example:
    Add the app user with ID 123 and name TestSPN to the environment and assign the necessary roles
 2. **Retrieve the system user ID.**
