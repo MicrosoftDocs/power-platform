@@ -161,7 +161,7 @@ Users or Teams groups can be granted access through column security:
 
 - **Read unmasked**
 
-  **Not Allowed**: When **Read** is allowed and **Read unmasked** isn't allowed, masked values are shown. [Learn more about viewing unmasked data](#viewing-unmasked-data)
+  **Not Allowed**: When **Read** is allowed and **Read unmasked** isn't allowed, masked values are shown. [Learn more about viewing unmasked data](#options-for-viewing-masked-columns)
 
   **One Record**: Users are allowed to read unmasked values. Unmasked values are only returned when you request one record at a time. These values should be allowed for users who manage and maintain secured columns.
 
