@@ -1628,6 +1628,11 @@
       "source_path": "power-platform/guidance/coe/code-samples/css/default-value-eMail-Header-Style.md",
       "redirect_url": "/power-platform/guidance/coe/setup-core-components",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases/latest",
+      "redirect_document_id": false
     }
   ]
 }
