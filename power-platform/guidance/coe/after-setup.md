@@ -157,7 +157,7 @@ After you remove unmanaged layers, import the new solution version:
 1. Open the **CoE Setup and Upgrade Wizard** app.
 1. This app provides a guided step-by-step experience through the configuration steps. During an upgrade, it shows the solution history, any components with unmanaged layers, and any new apps, flows, and environment variables that are added during this upgrade.
 
-1. When you finish this step, move on to [testing](#testing-strategy).
+1. When you finish this step, move on to [testing](#test-strategy).
 
 ## Update the Audit Log solution
 
