@@ -137,7 +137,7 @@ The data points to be extracted from these documents have been extensively resea
 
 #### Takeaways
 
-This success story demonstrates how AI Builder can revolutionize document processing and showcases the financial and operational benefits. By leveraging low-code development, SLB achieved remarkable results, setting a benchmark for efficiency and innovation in the oilfield services industry.
+This success story demonstrates how AI Builder can revolutionize document processing and showcases the financial and operational benefits. Dipankar Sutradhar played a key role in designing and implementing a low-code solution that transformed SLB’s approach to document processing, highlighting the power of individual expertise in reshaping business processes. SLB achieved remarkable results, setting a benchmark for efficiency and innovation in the oilfield services industry.
 
 Here are some key takeaways for IT and product-testing professionals who want to implement a similar solution in their own organizations:
 
@@ -173,7 +173,7 @@ The manual process wasn't only time-consuming but also prone to errors—incorre
 
 #### Solution
 
-The solution implemented employs a Power Automate flow to automate the extraction and processing of flight invoices. The automation process starts by retrieving emails from the bot's inbox and filtering vendor emails to identify relevant invoices. It then uses AI Builder to extract 22 key fields from each invoice, ensuring precise data capture. Business validations are performed to verify the extracted details, reducing errors and inconsistencies. Finally, the system generates an Airline GST Report, which is shared with the business for seamless tax processing and compliance.
+The solution implemented employs a Power Automate flow to automate the extraction and processing of flight invoices. The automation process starts by retrieving emails from the bot's inbox and filtering vendor emails to identify relevant invoices. It then uses AI Builder to extract 22 key fields from each invoice, ensuring precise data capture. Business validations are performed to verify the extracted details, reducing errors and inconsistencies. Finally, the system generates an Airline  (Goods and Services Tax) Report, which is shared with the business for seamless tax processing and compliance.
 
 The following diagram illustrates the automated extraction and processing of flight invoices at SLB:
 
