@@ -149,7 +149,7 @@ More Copilots and generative AI features will be available in the future.
 
 | Product | Feature  | Available in GCC? | Documentation
 |-------------------------|-------------------------|-------------------------|-------------------------|
-| Dynamics 365 Customer Insights | Copilot | No | Customer Insights - Journeys: [Give consent to use Copilot in Customer Insights - Journeys](/dynamics365/customer-insights/journeys/copilot-consent-journeys) <br> Customer Insights: Data: [Give consent to use Copilot in Customer Insights - Data](/dynamics365/customer-insights/data/copilot-global-consent)
+| Dynamics 365 Customer Insights | Copilot | No | Customer Insights - Journeys: [Give consent to use Copilot in Customer Insights - Journeys](/dynamics365/customer-insights/journeys/copilot-consent-journeys) <br> Customer Insights: Data: [Give consent to use Copilot in Customer Insights - Data](/dynamics365/customer-insights/data/copilot-global-consent) |
 | Dynamics 365 Customer Service | Copilot | No | [Manage Copilot features in Customer Service](/dynamics365/customer-service/administer/configure-copilot-features)|
 | Dynamics 365 Sales | Copilot | No | [Copilot in Dynamics 365 Sales overview](/dynamics365/sales/copilot-overview)|
 | Microsoft Copilot Studio | Generative AI in copilots | Yes | [AI-based copilot authoring overview](/microsoft-copilot-studio/nlu-gpt-overview) and [Configure data movement for Copilot Studio generative AI features outside the United States](/microsoft-copilot-studio/manage-data-movement-outside-us) |
