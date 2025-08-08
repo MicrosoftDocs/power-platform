@@ -124,7 +124,7 @@ sections:
   
 # Text section
   - componentType: text
-    title: Power Platform & Copilot Studio Architecture Center
+    title: Power Platform and Copilot Studio Architecture Center
     links:
     - componentType: link
       url: /power-platform/architecture
