@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 07/07/2025
+ms.date: 08/08/2025
 ---
 
 # T-Mobile empowers customer service representatives using Power Apps and Copilot Studio
@@ -80,13 +80,13 @@ The following image illustrates the general instructions and generative AI orche
 
 This image illustrates the generative AI settings in Copilot Studio:
 
-:::image type="content" source="media/t-mobile/ai-settings.png" alt-text="Screenshot of generative AI settings in Copilot Studio agent configuration." lightbox="media/t-mobile/ai-settings.png":::
+:::image type="content" source="media/t-mobile/ai-settings.png" alt-text="Screenshot of generative AI settings in Copilot Studio agent configuration.":::
 
 The initial idea was to obtain data from websites by adding the websites as knowledge sources in the agent and to use Dataverse for promotional data. This agent journey covered exploring different ways of having the agent leverage external website data.
 
 The following image shows some of the knowledge sources used, including public websites and specific device documents, as well as Dataverse for promotions. The team updates the Dataverse information nightly from other sources via Microsoft Fabric pipelines.
 
-:::image type="content" source="media/t-mobile/knowledge-source.png" alt-text="Screenshot of knowledge sources including public websites, device documents, and Dataverse for promotions." lightbox="media/t-mobile/knowledge-source.png":::
+:::image type="content" source="media/t-mobile/knowledge-source.png" alt-text="Screenshot of knowledge sources including public websites, device documents, and Dataverse for promotions.":::
 
 To get precise and reliable results for website knowledge sources, the team explored alternative methods. One successful method involved using Bing Custom Search within topics. This approach enabled the team to prioritize data sources and exclude parts by configuring blocked pages within Bing Custom Search.
 
@@ -104,7 +104,7 @@ Certain website pages are blocked, so answers come from sources other than the b
 
 This image shows details of a Copilot Studio topic related to comparing two devices, with the **Test your agent** preview demonstrating a comparison of the iPhone 16 Pro and the Pixel 9 Pro:
 
-:::image type="content" source="media/t-mobile/config-topic.png" alt-text="Screenshot of configuration of a Copilot Studio topic named Compare Devices." lightbox="media/t-mobile/config-topic.png":::
+:::image type="content" source="media/t-mobile/config-topic.png" alt-text="Screenshot of configuration of a Copilot Studio topic named Compare Devices.":::
 
 ### Results presented in tabular format
 
@@ -117,7 +117,7 @@ When comparing devices, format the features and specifications in a well-organiz
 
 The following image illustrates the agent's response when a user requests a comparison between two devices, the iPhone 16 Pro and Pixel 9 Pro:
 
-:::image type="content" source="media/t-mobile/agent-response.png" alt-text="Screenshot of Copilot Studio agent response with device comparison in tabular format." lightbox="media/t-mobile/agent-response.png":::
+:::image type="content" source="media/t-mobile/agent-response.png" alt-text="Screenshot of Copilot Studio agent response with device comparison in tabular format.":::
 
 ### AI model options for the agent
 

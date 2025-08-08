@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 07/07/2025
+ms.date: 08/08/2025
 ---
 
 # SLB enhances productivity with Power Platform and AI
@@ -173,7 +173,7 @@ The manual process wasn't only time-consuming but also prone to errors—incorre
 
 #### Solution
 
-The solution implemented employs a Power Automate flow to automate the extraction and processing of flight invoices. The automation process starts by retrieving emails from the bot's inbox and filtering vendor emails to identify relevant invoices. It then uses AI Builder to extract 22 key fields from each invoice, ensuring precise data capture. Business validations are performed to verify the extracted details, reducing errors and inconsistencies. Finally, the system generates an Airline  (Goods and Services Tax) Report, which is shared with the business for seamless tax processing and compliance.
+The solution implemented employs a Power Automate flow to automate the extraction and processing of flight invoices. The automation process starts by retrieving emails from the bot's inbox and filtering vendor emails to identify relevant invoices. It then uses AI Builder to extract 22 key fields from each invoice, ensuring precise data capture. Business validations are performed to verify the extracted details, reducing errors and inconsistencies. Finally, the system generates an Airline GST (Goods and Services Tax) report, which is shared with the business for seamless tax processing and compliance.
 
 The following diagram illustrates the automated extraction and processing of flight invoices at SLB:
 
