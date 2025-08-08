@@ -35,8 +35,6 @@ Perform a [local install](#local-install) or [Docker install](#docker-install).
 
 ## Local install
 
-Install the CoE CLI locally on your computer to run the CLI commands directly from your command prompt or terminal. 
-
 If you don't have administrative privileges, make sure you install the [prerequisites for a non-administrator](#prerequisites-for-a-non-administrator). The [installation instructions](#install) are the same for both administrator and non-administrator installs.
 
 ### Prerequisites as administrator

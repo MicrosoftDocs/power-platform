@@ -19,7 +19,7 @@ search.audienceType:
 > [!NOTE]
 > The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
-The upgrade steps depend on how you installed the CoE CLI.
+The upgrade steps depend on how you [installed the CoE CLI](./install.md).
 
 ## Download
 
@@ -41,7 +41,7 @@ When you have a local version of the CoE CLI, go to the **coe-cli** folder:
 cd coe-cli
 ```
 
-### Local upgrade
+## Local upgrade
 
 If you installed the CoE CLI locally, run the following commands from the **coe-cli** folder.
 
@@ -63,7 +63,7 @@ If you installed the CoE CLI locally, run the following commands from the **coe-
    npm link --force
    ```
 
-## Docker image
+## Docker upgrade
 
 If you installed the CoE CLI as a Docker image, run the following command to build a new docker image:
 
