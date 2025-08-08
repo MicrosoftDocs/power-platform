@@ -97,7 +97,7 @@ Your masked values might be masked like this:
 
 When a customer sends you an email with sensitive data and the email has this masking rule, only the masked values display in the body of the email:
 
-     :::image type="content" source="media/create-and-manage-masking-rules/masking-rule-applied.png" alt-text="Screenshot showing the result of applying the masking rule in the body of the email.":::
+   :::image type="content" source="media/create-and-manage-masking-rules/masking-rule-applied.png" alt-text="Screenshot showing the result of applying the masking rule in the body of the email.":::
 
 ## Manage masking rules
 
