@@ -1,16 +1,18 @@
 ---
 title: Manage Dynamics 365 apps that run on Microsoft Dataverse
-description: "Learn how to install, configure, and manage Dynamics 365 apps in Power Platform admin center. Manage apps from either the tenant or environment level."
+description: Learn how to install, configure, and manage Dynamics 365 apps in Power Platform admin center. Manage apps from either the tenant or environment level.
 author: sericks007
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/24/2025
+ms.date: 05/29/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: sericks
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 
 # Manage Dynamics 365 apps

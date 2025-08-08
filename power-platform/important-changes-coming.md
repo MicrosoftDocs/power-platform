@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 05/20/2025
+ms.date: 07/30/2025
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -10,6 +10,7 @@ ms.custom:
  - dyn365-hub
 author: sericks007
 contributors:
+  - v-jlandrum 
   - sbasi19
   - v-aangie
 ms.author: sericks
@@ -23,6 +24,38 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Deprecation of Viva Engage (Yammer) connector support for open authorization connections
+
+Starting September 1, 2025, the [Viva Engage](/connectors/yammer/) connector will no longer support OAuth 2.0 (open authorization) connections. New connections must use Entra ID authentication beginning on this date. Existing OAuth2 connections will continue to work until November 15, 2025, and they should be switched to use Entra ID authentication to avoid disruptions.
+
+### Why is this needed?
+
+This change is a result of the [Yammer REST API](/rest/api/yammer/rest-api-rate-limits) deprecating support for OAuth 2.0
+
+### Impact
+
+This deprecation impacts all existing Viva Engage connector implementations currently utilizing OAuth 2.0 connections.
+
+### Replacement feature
+
+All implementations utilizing the Viva Engage connector must migrate to using Entra ID connections, and all new implementations need to utilize Entra ID connections.
+
+## Deprecation of support for the contact tracking feature in Dynamics 365 App for Outlook
+
+Starting October 1, 2025, the [contact tracking](/dynamics365/outlook-app/user/track-contacts) feature in Dynamics 365 App for Outlook will reach end of support. This feature allowed users to track Outlook contacts directly in Dynamics 365 Sales from the Outlook (classic) desktop application.
+
+### Why is this needed?
+
+This change aligns with the evolution of Outlook, as the contact tracking functionality isn't available in the new Outlook experience. Microsoft is focusing on supporting features that are compatible with the latest Outlook versions and providing a consistent experience across platforms.
+
+### Impact
+
+This deprecation only impacts users of the Outlook (classic) desktop application who use the contact tracking feature. Users of the new Outlook aren't affected.
+
+### Replacement feature
+
+There's no direct replacement for the contact tracking feature in the new Outlook. As an alternative, users can manually add contacts to Dynamics 365 Sales using the application.
 
 ## Deprecation of support for personal Microsoft service accounts in Power Automate
 
@@ -47,7 +80,7 @@ After deprecation ends, Microsoft service account users will experience the foll
 To continue using Power Automate, we recommend that you transition to the Power Apps Developer Plan. This transition provides access to modern features and allows for seamless management of your workflows. The Power Apps Developer Plan includes flow creation and integration with Microsoft Dataverse, making it an excellent option for automation enthusiasts and professionals.
 
 1. If you don't have a [trial Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account), create one.
-1. Using the Azure account you just created, [set up a new Microsoft Entra tenant](/entra/identity-platform/quickstart-create-new-tenant).
+1. Using the Azure account you created, [set up a new Microsoft Entra tenant](/entra/identity-platform/quickstart-create-new-tenant).
 1. Using the Azure account and Entra tenant you set up in this procedure, create a [Power Apps developer environment](developer/create-developer-environment.md).
 
     Learn more about capabilities in [About the Developer Plan](developer/plan.md).
@@ -59,15 +92,15 @@ To continue using Power Automate, we recommend that you transition to the Power 
 
 The [SQL server connector's V1 actions](/connectors/sql/#migrate-v1-operations-to-v2-equivalent) are being retired and starting 30 June 2025 these actions will no longer be supported and will be disabled.
 
-We have V2 actions already available in the SQL server connector which can be used as an alternative. You can find more details about the new V2 actions here: [SQL server actions](/connectors/sql/#migrate-v1-operations-to-v2-equivalent). We strongly encourage you to migrate to the new V2 actions as soon as possible to take full advantage of these improvements.
+We have V2 actions already available in the SQL server connector that can be used as an alternative. You can find more details about the new V2 actions here: [SQL server actions](/connectors/sql/#migrate-v1-operations-to-v2-equivalent). We strongly encourage you to migrate to the new V2 actions as soon as possible to take full advantage of these improvements.
 
 ### How does this affect me?
 
-If action isn't taken, beginning 30 June 2025, the application(s) using the V1 actions of SQL server will be impacted and might no longer function as expected.
+If action isn't taken, beginning 30 June 2025, the applications using the V1 actions of SQL server will be impacted and might no longer function as expected.
 
 ### Required action
 
-Please make sure you replace the V1 actions with the new V2 actions of the SQL server connector in all of the applications utilizing it. If you need assistance in Migrating V1 operations to V2 equivalent. Please check here: [SQL server actions](/connectors/sql/#migrate-v1-operations-to-v2-equivalent)
+Be sure to replace the V1 actions with the new V2 actions of the SQL server connector in all of the applications utilizing it. If you need assistance in Migrating V1 operations to V2 equivalent. Check here: [SQL server actions](/connectors/sql/#migrate-v1-operations-to-v2-equivalent)
 
 ## Deprecation of rich text editor classic experience
 
@@ -85,17 +118,17 @@ Effective February 19, 2025, the **Train with examples** feature to transform ex
 
 ## Deprecation of Snowflake connector [Deprecated]
 
-The [Snowflake (Deprecated)](/connectors/snowflakepa/) connector will be discontinued on May 26, 2025. A new and improved version with more features is now available. For more details, visit the new [Snowflake (Preview)](/connectors/snowflakev2/) connector reference article. We strongly encourage you to switch soon to take advantage of the upgrades.  
+The Snowflake connector was discontinued on May 26, 2025. A new and improved version with more features is now available. For more details, go to the new [Snowflake (Preview)](/connectors/snowflakev2/) connector reference article. We encourage you to switch soon to take advantage of the upgrades.  
 
 ## What action do I need to take?
 
-Make sure you replace your existing connections of the deprecated Snowflake connector with the new [Snowflake (Preview)](/connectors/snowflakev2/) connector in all of the applications utilizing this connector. If you need assistance in replacing your connections in Power Automate Flows or Power Apps, please refer to the below following documentation:
+Make sure you replace your existing connections of the deprecated Snowflake connector with the new [Snowflake (Preview)](/connectors/snowflakev2/) connector in all of the applications utilizing this connector. If you need assistance in replacing your connections in Power Automate Flows or Power Apps, refer to the below following documentation:
 
 - [Manage connections in Power Automate - Power Automate | Microsoft Learn](/power-automate/add-manage-connections)
 - [Manage connections in canvas apps - Power Apps | Microsoft Learn](/power-apps/maker/canvas-apps/add-manage-connections)
 
 ### Impact 
-If action isn't taken by May 26, 2025, the application(s) utilizing [Snowflake (Deprecated)](/connectors/snowflakepa/) connector will no longer function as expected.
+If action isn't taken by May 26, 2025, the applications utilizing the Snowflake (Deprecated) connector will no longer function as expected.
 
 ## Deprecation of Ask a virtual agent
 
@@ -103,7 +136,7 @@ Effective March 11, 2025, the **Ask a virtual agent** feature in Power Apps is d
 
 ## Deprecation of bring-your-own-key (BYOK) Dataverse service
 
-Starting January 6, 2026, we will discontinue support for the bring-your-own-key (BYOK) feature. Customers are encouraged to transition to [customer-managed keys (CMK)](admin/customer-managed-key.md), an enhanced solution that offers improved functionality, broader support for data sources, and better performance.
+Starting January 6, 2026, we'll discontinue support for the bring-your-own-key (BYOK) feature. Customers are encouraged to transition to [customer-managed keys (CMK)](admin/customer-managed-key.md), an enhanced solution that offers improved functionality, broader support for data sources, and better performance.
 
 ### What happens if migration isn't completed?
 
@@ -146,7 +179,7 @@ Support for app-only tokens by multitenant apps that don't have a service princi
 
 ## Deprecation of hierarchy control in model-driven apps
 
-Effective October 2024, the hierarchy control, which is used to define and query hierarchically related data in model-driven apps, is deprecated. The control will continue to work in existing apps until October 2025, at which time it will be removed from the product.
+Effective October 2024, the hierarchy control, which is used to define and query hierarchically related data in model-driven apps, is deprecated. The control continues to work in existing apps until October 2025, at which time it will be removed from the product.
 
 The hierarchy control allows users to visualize relationships between records for a table. This is applicable for any table that has a self-referential relationship.
 
@@ -162,7 +195,7 @@ After its removal, end users won't be able to view the visual representation of 
 
 You can temporarily enable the control until its removed in the product by editing the app settings. Go to Power Apps (make.powerapps.com) and open the app you want for editing. Then go to **Settings** > **Features** tab and enable the **Enable the "View hierarchy" capability** setting.
 
-This feature will be fully removed October 2025.
+This feature is fully removed October 2025.
 
 If the hierarchy view is essential to your app, a custom PCF control that handles the hierarchy view must be created and deployed. For information about how to create a code component, go to [Create and build a code component](/power-apps/developer/component-framework/create-custom-controls-using-pcf).
 
@@ -188,7 +221,7 @@ The Connector Certification Portal was a preview portal that allowed partners to
 
 After careful consideration, and thanks to the feedback from partners, a decision was made to decommission the portal starting January 15, 2025.
 
-While the portal will be decommissioned, the program will continue. For the latest information on the status of the program and how to certify your connector, learn more about the [Data Factory Connector Certification](/fabric/data-factory/connector-certification).
+While the portal will be decommissioned, the program continues. For the latest information on the status of the program and how to certify your connector, learn more about the [Data Factory Connector Certification](/fabric/data-factory/connector-certification).
 
 
 ## DLP resource exemption feature
@@ -213,7 +246,7 @@ Depending on your geographic location and rollout cadence, this change impacts y
 
 Admins can turn the **Switch to classic** option back on in the Power Platform admin center for specific environments. The modern app, form, and view designers are at core feature parity with the deprecated classic designers. As such, makers are expected to fully transition to use only the modern designers to build model-driven apps and components. More information: [Manage behavior settings](admin/settings-behavior.md)
 
-## Dynamics 365 for phones and tablets will be deprecated for online users and replaced by Power Apps
+## Dynamics 365 for phones and tablets is deprecated for online users and replaced by Power Apps
 
 Effective April 2024, Dynamics 365 for phones and tablets (iOS and Android) are deprecated for online users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
 
@@ -265,7 +298,7 @@ If custom code in web resources had a dependency on this library, it stopped wor
 
 ### Are you impacted?
 
-Now that the library is removed, you'll see errors in any web resources that depended on this library.
+Now that the library is removed, you see errors in any web resources that depended on this library.
 You can search your web resource code for this line: `/_static/_common/scripts/jquery-2.1.1.min.js`.
 
 If your code isn't already in a source code repository, you should export your solutions and extract the contents. There are many tools you might use to search the contents. For example, you can use the search capabilities of Visual Studio Code. More information: [Visual Studio Code: Basic Editing > Search across files](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files)
@@ -291,7 +324,7 @@ The model allowed you to quickly create and train models to classify images into
 
 The impact of the deprecation of this capability is that you'll no longer be able to use the model to classify images and you won't be able to download the Lobe application. Models built with Lobe might continue to work and serve their purpose, but they won't be supported by the AI Builder team. Your Lobe installation might also continue to function, but won't be supported.
 
- If you're impacted by the deprecation of this feature, you can use other methods to classify images, such as [Azure Cognitive Services for Custom Vision](/azure/cognitive-services/Custom-Vision-Service/overview). Custom Vision is a cloud-based image classification service that enables you to quickly and easily create custom image classifiers. With Custom Vision, you can upload your own images and label them with the categories you want the model to recognize. The service then uses machine learning to train a custom model that can accurately identify the categories in new images. The service also provides a range of tools to evaluate and improve your models, such as testing accuracy and providing feedback on how to improve the model. You can also create custom image classifiers that can be used for a variety of applications, such as object recognition, facial recognition, and more.
+ If you're impacted by the deprecation of this feature, you can use other methods to classify images, such as [Azure Cognitive Services for Custom Vision](/azure/cognitive-services/Custom-Vision-Service/overview). Custom Vision is a cloud-based image classification service that enables you to quickly and easily create custom image classifiers. With Custom Vision, you can upload your own images and label them with the categories you want the model to recognize. The service then uses machine learning to train a custom model that can accurately identify the categories in new images. The service also provides a range of tools to evaluate and improve your models, such as testing accuracy and providing feedback on how to improve the model. You can also create custom image classifiers that can be used for various applications, such as object recognition, facial recognition, and more.
 
 ## Model-driven app controls deprecation
 
@@ -299,7 +332,7 @@ Effective January 2023, the following controls for model-driven apps are depreca
 
 ### Why is this needed?
 
-We'll be introducing new Fluent UI controls that have better usability, accessibility, and dark mode support.
+We are introducing new Fluent UI controls that have better usability, accessibility, and dark mode support.
 
 ### Impact
 
@@ -312,7 +345,7 @@ Evaluate existing forms that include a deprecated control and replace them with 
 
 ## Microsoft Dataverse (legacy) connector for Power Automate flows is deprecated
 
-Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (previously referred to as the CDS 2.0 connector) is deprecated. The connector will continue to work in existing flows until a final date is announced. You'll have one year from the date of announcement to move to the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector.
+Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (previously referred to as the CDS 2.0 connector) is deprecated. The connector continues to work in existing flows until a final date is announced. You have one year from the date of announcement to move to the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector.
 
 ### Why is this needed?
 
@@ -324,7 +357,7 @@ Cloud flows that use the [Microsoft Dataverse (legacy)](/connectors/commondatase
 
 ### Action required by you
 
-Review the cloud flows you own that use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector and identify which are ready to update. As of January 2024, most flows using the legacy connector are recommended for migration with the exception of flows triggering based on changes in other environments.
+Review the cloud flows you own that use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector and identify which are ready to update. As of January 2024, most flows using the legacy connector are recommended for migration except for flows triggering based on changes in other environments.
 
 A migration assistant is available on the detail page of cloud flows that are able to be automatically updated. The assistant creates a copy of the flow with the legacy connector's triggers, actions, and dynamic content references replaced.
 
@@ -335,9 +368,9 @@ Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondat
 There will be a phased-in approach before deprecation takes place. Here's the timeline:
 
 - **August 30, 2022:** The actions and triggers in Dataverse legacy connector became available in the Dataverse connector.
-  - Existing Dataverse Legacy connector triggers and actions can continue to be used in existing logic apps for backward compatibility for a period of time with more timelines available in August 2023.
-  - All new logic apps will be created using the new actions.
-- **August 2022 through preview period:** Both new and legacy actions and triggers will be available during new flow creation. By January 2024, a date for the move to general availability will be provided.
+  - Existing Dataverse Legacy connector triggers and actions can continue to be used in existing logic apps for backward compatibility for time with more timelines available in August 2023.
+  - All new logic apps are created using the new actions.
+- **August 2022 through preview period:** Both new and legacy actions and triggers are available during new flow creation. By January 2024, a date for the move to general availability will be provided.
 - **Date TBD:** No new logic apps can be created using the legacy actions and triggers, but existing logic apps with those actions and triggers will continue to work. Updates will be provided in January 2024.
 
 In August 2023, we provided a timeline when all existing logic apps using the deprecated legacy actions and triggers will stop working. Users need to review their existing logic apps to update them to the new Azure Logic Apps triggers by the specified timeline (typically one year from the announcement date).
@@ -709,7 +742,7 @@ authenticating resource in 'clear text' form, relying solely on the transport
 encryption to provide security for the initial leg of the authentication, until
 such point as the token service returns an authentication token to use.
 Additionally, the WS-Trust protocol doesn't support modern forms of
-Multi-Factor Authentication and conditional access controls to customer data.
+multifactor authentication and conditional access controls to customer data.
 
 With this change, the intent is to guide developers away from this
 authentication flow and help application developers to utilize the capabilities
@@ -785,7 +818,7 @@ and supported until they're officially removed from a future major release. *A p
 
 |Deprecated Client API |Replacement Client API |Comments |
 |-----|-----|-----|
-|[Xrm.Page](/previous-versions/dynamicscrm-2015/developers-guide/gg328474(v%3dcrm.7))| **Forms**: ExecutionContext.[getFormContext](/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext)<br/>**Commands**: Send it as the [PrimaryControl](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions#form-and-grid-context-in-ribbon-actions) parameter |Use of the **Xrm.Page** object as a static access to the primary form context is still supported to maintain backward compatibility with the existing scripts. Based on the feedback, we understand that the usage of **Xrm.Page** is high, and it won't be removed as soon as some other client API methods listed in this section. We encourage you to use the new way of getting form content where possible. More information: [Client API form context](/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context)<br/>Although **Xrm.Page** is deprecated, **parent.Xrm.Page** will continue to work in case of HTML web resources embedded in forms as this is the only way to access the form context from the HTML web resource.|
+|[Xrm.Page](/previous-versions/dynamicscrm-2015/developers-guide/gg328474(v%3dcrm.7))| **Forms**: ExecutionContext.[getFormContext](/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext)<br/>**Commands**: Send it as the [PrimaryControl](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions#form-and-grid-context-in-ribbon-actions) parameter |Use of the **Xrm.Page** object as a static access to the primary form context is still supported to maintain backward compatibility with the existing scripts. Based on the feedback, we understand that the usage of **Xrm.Page** is high, and it won't be removed as soon as some other client API methods listed in this section. We encourage you to use the new way of getting form content where possible. More information: [Client API form context](/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context)<br/>Although **Xrm.Page** is deprecated, **parent.Xrm.Page** will continue to work if HTML web resources embedded in forms as this is the only way to access the form context from the HTML web resource.|
 |[Xrm.Page.context](/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v%3dcrm.7))|Xrm.Utility.[getGlobalContext](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-utility/getglobalcontext)|Allows access to the global context without going through the form context.|
 |Xrm.Page.context.<br />[getQueryStringParameters](/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v%3dcrm.7)#getquerystringparameters) |formContext.data.attributes| The formContext.data.attributes API will make retrieval of nonentity bound data consistent across entity forms, metadata-driven dialogs, and task-based flows. The data will be a combination of custom values sent using the query string and what was specified in the parameters in the [openForm](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openform) method. |
 |Xrm.Page.context.<br />[getTimeZoneOffsetMinutes](/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#gettimezoneoffsetminutes) |globalContext.<br />userSettings.<br />getTimeZoneOffsetMinutes| Moved to:<br />globalContext.<br />userSettings|

@@ -369,7 +369,7 @@
         "tags": [
           "CrossTenantConnectionReports"
         ],
-        "summary": "Create a request to generate a cross-tenant connection report for a tenant or return an existing report.",
+        "summary": "Generate or fetch a cross-tenant connection report.",
         "operationId": "CreateCrossTenantConnectionReport",
         "produces": [
           "application/json"

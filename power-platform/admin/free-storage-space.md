@@ -1,10 +1,10 @@
 ---
-title: "Free up storage space  | MicrosoftDocs"
+title: Free up storage space
 description: Reduce storage space usage by deleting notes, attachments, import history, and other data with one-time or recurring jobs.
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/29/2024
+ms.date: 05/29/2025
 ms.subservice: admin
 ms.author: ceian 
 ms.reviewer: sericks
@@ -14,6 +14,7 @@ contributors:
   - meesposi 
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Free up storage space

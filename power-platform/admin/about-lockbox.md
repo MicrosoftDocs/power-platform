@@ -4,7 +4,8 @@ description: This article covers information on how customers can review and app
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/13/2025
+ms.date: 05/29/2025
+ms.update-cycle: 180-days
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -12,9 +13,10 @@ search.audienceType:
   - admin
 ms.collection: bap-ai-copilot
 contributors:
-- lavanyakr01 
-- iaanw 
-- kavehkazms 
+   - lavanyakr01 
+   - iaanw 
+   - kavehkazms 
+ms.custom: sfi-image-nochange
 ---
 # Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365
 

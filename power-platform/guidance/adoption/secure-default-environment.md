@@ -7,16 +7,17 @@ ms.author: rranjit
 ms.reviewer: jhaskett-msft
 ms.topic: how-to
 ms.date: 05/14/2025
-ms.custom:
-  - bap-template
-  - ai-gen-docs-bap
-  - ai-gen-description
-  - ai-seo-date:05/01/2025
 ms.subservice: guidance
 contributors:
   - arjunmayur
 ms.contributors:
   - mapichle
+ms.custom:
+  - bap-template
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:05/01/2025
+  - sfi-ga-nochange
 ---
 
 # Secure the default environment
@@ -58,7 +59,7 @@ Add links to any other internal resources your makers might find helpful.
 
 ## Enable managed environments
 
-Maintain robust security and governance by making use of managed environment features in the default environment. Managed environment features provide advanced capabilities, such as monitoring, compliance, and security controls that are important for protecting your data. By enabling this feature, you can configure [sharing limits](/power-platform/admin/managed-environment-sharing-limits), gain more [usage insights](/power-platform/admin/managed-environment-usage-insights), [limit user access to Microsoft Dataverse](/power-platform/admin/ip-firewall) from only allowed IP locations, and use [Power Platform Advisor](/power-platform/admin/power-platform-advisor) to get personalized recommendations to optimize the environment. Evaluate the current managed environments features and stay up to date with the product roadmap to maintain a secure, compliant, and well-governed default environment.
+Maintain robust security and governance by making use of managed environment features in the default environment. Managed environment features provide advanced capabilities, such as monitoring, compliance, and security controls that are important for protecting your data. By enabling this feature, you can configure [sharing limits](/power-platform/admin/managed-environment-sharing-limits), gain more [usage insights](/power-platform/admin/managed-environment-usage-insights), [limit user access to Microsoft Dataverse](/power-platform/admin/ip-firewall) from only allowed IP locations, and use the [Actions page](/power-platform/admin/power-platform-advisor) to get personalized recommendations to optimize the environment. Evaluate the current managed environments features and stay up to date with the product roadmap to maintain a secure, compliant, and well-governed default environment.
 
 ## Prevent oversharing
 

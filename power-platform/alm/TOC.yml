@@ -36,7 +36,7 @@
           items:
             - name: Organize solutions
               href: organize-solutions.md
-            - name: Use segmented solutions
+            - name: Use table segmentation in solutions
               href: segmented-solutions-alm.md
     - name: Tools and apps used
       href: tools-apps-used-alm.md
@@ -109,7 +109,7 @@
                   href: extend-pipelines-github-export.md
             - name: Run pipelines
               href: run-pipeline.md
-            - name: Associate a pipeline with development environments in a group (preview)
+            - name: Set a default pipeline
               href: default-deployment-pipeline-rule-for-environment-groups.md
             - name: Enable cross-geo solution deployments
               href: enable-cross-geo-solution-deployments.md

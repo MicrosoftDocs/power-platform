@@ -4,11 +4,12 @@ description: "Learn about what build tool tasks are available plus some examples
 author: marcelbf
 ms.author: marcelbf
 ms.subservice: alm
-ms.date: 12/03/2024
+ms.date: 06/26/2025
 ms.reviewer: pehecke
 ms.topic: how-to
 search.audienceType: 
   - developer
+ms.custom: sfi-ropc-nochange
 ---
 
 # Microsoft Power Platform Build Tools tasks
@@ -164,7 +165,6 @@ steps:
     HoldingSolution: true
     OverwriteUnmanagedCustomizations: true
     SkipProductUpdateDependencies: true
-    ConvertToManaged: true
 ```
 
 ```yml
@@ -191,7 +191,7 @@ steps:
 | `HoldingSolution`<br/>Import as a holding solution | An advance parameter (true\|false) used when a solution needs to be upgraded. This parameter hosts the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run. |
 | `OverwriteUnmanagedCustomizations`<br/>Overwrite un-managed customizations | Specify whether to overwrite un-managed customizations (true\|false). |
 | `SkipProductUpdateDependencies`<br/>Skip product update dependencies | Specify whether the enforcement of dependencies related to product updates should be skipped (true\|false). |
-| `ConvertToManaged`<br/>Convert to managed | Specify whether to import as a managed solution (true\|false). |
+| `ConvertToManaged`<br/>Convert to managed | Obsolete. The system will convert unmanaged solution components to managed when you import a managed solution. |
 | `AsyncOperation`<br/>Asynchronous import | If selected (**true**), the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. Selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached (true\|false). |
 | `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
 | `PublishWorkflows`<br/>Activate processes after import | Specify whether any processes (workflows) in the solution should be activated after import (true\|false). |
@@ -707,6 +707,7 @@ steps:
     OverrideFriendlyName: true
     FriendlyName: 'Contoso Test'
     SkipAuditData: true
+    MaxAsyncWaitTime: 60
 ```
 
 #### Parameters (Copy-env)
@@ -721,6 +722,7 @@ steps:
 | `OverrideFriendlyName`<br/>Override friendly name | Change the target environment's friendly name to another name (true\|false). |
 | `FriendlyName`<br/>Friendly name | The friendly name of the target environment. |
 | `SkipAuditData`<br/>SkipAuditData | Whether to skip audit data during copy operation. (true\|false). |
+| `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
 
 ### Power Platform Restore Environment
 
