@@ -2,7 +2,7 @@
 title: Create and manage masking rules (preview)
 description: Learn how to create and manage masking rules in Microsoft Power Apps.
 ms.component: pa-admin
-ms.date: 05/07/2025
+ms.date: 08/06/2025
 ms.topic: overview
 ms.custom: "admin-security"
 author: paulliew
@@ -159,7 +159,7 @@ Users or Teams groups can be granted access through column security:
 
 - **Read unmasked**
 
-  **Not Allowed**: When **Read** is allowed and **Read unmasked** isn't allowed, masked values are shown.
+  **Not Allowed**: When **Read** is allowed and **Read unmasked** isn't allowed, masked values are shown. [Learn more about viewing unmasked data](#viewing-unmasked-data)
 
   **One Record**: Users are allowed to read unmasked values. Unmasked values are only returned when you request one record at a time. These values should be allowed for users who manage and maintain secured columns.
 
@@ -174,7 +174,7 @@ Users or Teams groups can be granted access through column security:
   **Allowed**: Users are allowed to create records.
   
 > [!NOTE]
-> System and application users with **Read** and **Read unmasked** permissions get masked values by default. To read unmasked values, go to [options for viewing masked fields](#options-for-viewing-masked-fields).
+> System and application users with **Read** and **Read unmasked** permissions get masked values by default. To read unmasked values, go to [Viewing unmasked data](#viewing-unmasked-data).
 
 ### View all columns that have a masking rule
 
@@ -206,24 +206,9 @@ If you have permission to **Read** unmasked fields, you see masked values by def
 > [!NOTE]
 > Audit log shows masked values in the before-and-after update events. Grant reading audit logs to only authorized users.
 
-### Options for viewing masked fields
+### Viewing unmasked data
 
-> [!NOTE]
-> These options are available during preview.
-
-Permission to read unmasked values is required. You can read unmasked values in a record.
-
-In these examples, replace `<url>`, `<table collection name>`, and `<recordid>` with your own values.
-
-- Example for all masked columns in a record:
-
-  `https://<url>/api/data/v9.1/<table collection name>(<recordid>)?UnMaskedData=true`
-
-- Example for individual masked columns:
-
-  Replace `<column_name>` with your secured column name.
-
-  `https://<url>/api/data/v9.1/<table collection name>(<recordid>)?$select=<column_name>&UnMaskedData=true`
+When a column security is configured to allow reading unmasked data, a developer can write code that is able to show unmasked data using the [UnMaskedData optional parameter](/power-apps/developer/data-platform/optional-parameters?tabs=webapi#return-unmasked-data). [Learn how to retrieve unmasked data](/power-apps/developer/data-platform/column-level-security#retrieve-unmasked-data)
 
 ## Known limitations/Not supported
 
@@ -238,3 +223,7 @@ In these examples, replace `<url>`, `<table collection name>`, and `<recordid>` 
 - **Embedded images in Rich text data**
 
   If you're using Rich text format in a large text area, like email body, and you accept embedded images, the masking rules continue to be applied to the image making it unreadable. 
+
+### Related information
+
+[Column-level security with code](/power-apps/developer/data-platform/column-level-security)

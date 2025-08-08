@@ -6,7 +6,6 @@ ms.topic: how-to
 ms.date: 06/24/2025
 author: swylezol
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: swylezol
 ms.reviewer: ellenwehrle 
 contributors:
@@ -15,6 +14,9 @@ contributors:
   - sericks
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 # Clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables
 

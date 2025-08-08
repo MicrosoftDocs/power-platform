@@ -13,6 +13,7 @@ contributors:
   - ShawnNandiMSFT
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # View usage and billing information
 

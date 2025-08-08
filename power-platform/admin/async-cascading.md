@@ -12,8 +12,8 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.contributors:
-- erjost
-
+  - erjost
+ms.custom: sfi-image-nochange
 ---
 
 # Asynchronous processing of cascading transactions
