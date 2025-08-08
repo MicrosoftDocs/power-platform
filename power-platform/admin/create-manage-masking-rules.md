@@ -242,7 +242,7 @@ Read unmasked value is also logged.
 
 ## Known limitations/Not supported
 
-### Reading unmasked values on the form
+### Reading unmasked values on a form
 
 Masked values are displayed on the detail area of a main form.
 
