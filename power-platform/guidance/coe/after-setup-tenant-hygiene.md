@@ -12,7 +12,7 @@ search.audienceType:
 ms.custom: sfi-image-nochange
 ---
 
-# Establishing tenant hygiene with the CoE Starter Kit
+# Establish tenant hygiene with the CoE Starter Kit
 
 The natural expansion of Microsoft Power Platform can sometimes conflict with an organization's established strategies, such as their environment strategy. This challenge can make it difficult for Center of Excellence (CoE) teams to fully understand the purpose and usage of the various apps, environments, cloud flows, and bots.
 

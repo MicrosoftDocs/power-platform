@@ -1,14 +1,14 @@
 - name: Power Platform toolkits
   href: index.yml
   items:
-    - name: Power Platform Center of Excellence (CoE) Kit
+    - name: Power Platform Center of Excellence (CoE) Starter Kit
       href: ../coe/starter-kit.md
       items:
         - name: Overview
           href: ../coe/overview.md
-        - name: Establishing tenant hygiene
+        - name: Establish tenant hygiene
           href: ../coe/after-setup-tenant-hygiene.md
-        - name: Set up the CoE starter kit
+        - name: Set up the CoE Starter Kit
           items:
             - name: Get started with setup
               href: ../coe/setup.md
@@ -52,13 +52,13 @@
               href: ../coe/setup-theming.md
             - name: Set up the Business value toolkit
               href: ../coe/setup-business-value-toolkit.md              
-            - name: What's next - updating the CoE Starter Kit
+            - name: Updating the CoE Starter Kit
               href: ../coe/after-setup.md
-            - name: What's next - extending the CoE Starter Kit
+            - name: Extend and customize components
               href: ../coe/modify-components.md
-        - name: What's in the CoE starter kit
+        - name: What's in the CoE Starter Kit
           items:
-            - name: CoE starter kit modules
+            - name: CoE Starter Kit modules
               href: ../coe/starter-kit-explained.md
             - name: Components overview
               items:
@@ -131,16 +131,16 @@
                   href: ../coe/cli/cli-development/adding-new-command.md
                 - name: Documentation
                   href: ../coe/cli/cli-development/documentation.md
-        - name: FAQ and Tips
+        - name: FAQ and tips
           items:
-            - name: CoE Starter Kit - FAQ
+            - name: CoE Starter Kit FAQ
               href: ../coe/faq.md
             - name: Questions related to the Data Export integration
               href: ../coe/faq-dataexport.md
         - name: Limitations
           href: ../coe/limitations.md
         - name: Release notes
-          href: ../coe/release-notes.md
+          href: https://github.com/microsoft/coe-starter-kit/releases
         - name: Feedback and support
           href: ../coe/feedback-support.md
     - name: Power Platform ALM Accelerator
@@ -303,9 +303,11 @@
               href: ../creator-kit/theme.md
             - name: Set focus
               href: ../creator-kit/setfocus.md
-    - href: /power-apps/maker/data-platform/dataverse-accelerator/dataverse-accelerator
-      name: Dataverse Accelerator overview
-    - href: /power-automate/guidance/automation-kit/overview/introduction
-      name: Automation Kit overview
-    - href: /power-automate/guidance/business-approvals-templates/introduction
-      name: Business Approvals templates overview
+    - name: Related documentation
+      items:    
+      - href: /power-apps/maker/data-platform/dataverse-accelerator/dataverse-accelerator
+        name: Dataverse Accelerator (preview)
+      - href: /power-automate/guidance/automation-kit/overview/introduction
+        name: Power Automate Automation Kit
+      - href: /power-automate/guidance/business-approvals-templates/introduction
+        name: Business Approvals templates (preview)
