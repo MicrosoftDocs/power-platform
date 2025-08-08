@@ -40,7 +40,7 @@ In this technical case study, you learn how:
 
 ## Scenarios
 
-The following section explores four different scenarios where SLB leveraged Power Platform solutions to drive productivity and innovation.
+The following section explores four different scenarios where SLB used Power Platform solutions to drive productivity and innovation.
 
 ### AI-powered project discovery
 
