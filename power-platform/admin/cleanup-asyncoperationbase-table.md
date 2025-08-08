@@ -130,7 +130,7 @@ To clean up workflow records from the AsyncOperation table, in the **Look for** 
 
 Add the following conditions to your query:
 
-- **System Job Type** Equals **Workflow** - target workflow records.
+- **System Job Type** Equals **Workflow** (*Optional*)- target workflow records.
 - **Status** Equals **Completed** - only completed workflows are valid to complete.
 - [Optional] Filter on the **Status Reason** Equals **Succeeded/Failed/Canceled** - valid for completed status.
 - [Optional] Filter on **Completed On** field to only delete older workflows.
