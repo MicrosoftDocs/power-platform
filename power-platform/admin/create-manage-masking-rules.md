@@ -2,7 +2,7 @@
 title: Create and manage masking rules (preview)
 description: Learn how to create and manage masking rules in Microsoft Power Apps.
 ms.component: pa-admin
-ms.date: 08/05/2025
+ms.date: 08/06/2025
 ms.topic: overview
 ms.custom: "admin-security"
 author: paulliew
@@ -161,7 +161,7 @@ Users or Teams groups can be granted access through column security:
 
 - **Read unmasked**
 
-  **Not Allowed**: When **Read** is allowed and **Read unmasked** isn't allowed, masked values are shown.
+  **Not Allowed**: When **Read** is allowed and **Read unmasked** isn't allowed, masked values are shown. [Learn more about viewing unmasked data](#viewing-unmasked-data)
 
   **One Record**: Users are allowed to read unmasked values. Unmasked values are only returned when you request one record at a time. These values should be allowed for users who manage and maintain secured columns.
 
@@ -210,22 +210,7 @@ If you have permission to **Read** unmasked columns, you see masked values by de
 
 ### Options for viewing masked columns
 
-> [!NOTE]
-> These options are available during preview.
-
-Permission to read unmasked values is required. You can read unmasked values in a record.
-
-In these examples, replace `<url>`, `<table collection name>`, and `<recordid>` with your own values.
-
-- Example for all masked columns in a record:
-
-  `https://<url>/api/data/v9.1/<table collection name>(<recordid>)?UnMaskedData=true`
-
-- Example for individual masked columns:
-
-  Replace `<column_name>` with your secured column name.
-
-  `https://<url>/api/data/v9.1/<table collection name>(<recordid>)?$select=<column_name>&UnMaskedData=true`
+When a column security is configured to allow reading unmasked data, a developer can write code that is able to show unmasked data using the [UnMaskedData optional parameter](/power-apps/developer/data-platform/optional-parameters?tabs=webapi#return-unmasked-data). [Learn how to retrieve unmasked data](/power-apps/developer/data-platform/column-level-security#retrieve-unmasked-data)
 
 #### Reading unmasked values on the form
 
@@ -271,3 +256,6 @@ If you're using rich text format in a large text area, like an email body and yo
 
 ## Related articles
 [Column-level security to control access](field-level-security.md)
+
+[Column-level security with code](/power-apps/developer/data-platform/column-level-security)
+
