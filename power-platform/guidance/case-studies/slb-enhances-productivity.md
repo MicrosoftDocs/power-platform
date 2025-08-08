@@ -12,7 +12,7 @@ ms.date: 07/07/2025
 
 # SLB enhances productivity with Power Platform and AI
 
-In this case study, you learn how [SLB](https://www.slb.com/SLB), one of the world's largest oilfield services and equipment suppliers, increased their process and employee productivity by using Microsoft Power Platform tools like Power Apps, AI Builder, Power Automate, and Dataverse, along with SharePoint and Microsoft Azure services.
+In this case study, you learn how [SLB](https://www.slb.com/), one of the world's largest oilfield services and equipment suppliers, increased their process and employee productivity by using Microsoft Power Platform tools like Power Apps, AI Builder, Power Automate, and Dataverse, along with SharePoint and Microsoft Azure services.
 
 This article highlights four solutions developed by SLB employees to increase global productivity and impact:
 
