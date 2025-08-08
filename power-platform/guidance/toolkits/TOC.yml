@@ -101,16 +101,18 @@
             - name: Capacity alerting and reporting
               href: ../coe/capacity-alerting.md
         - name: CoE command line interface
-          href: ../coe/cli/overview.md
           items:
+            - name: Overview              
+              href: ../coe/cli/overview.md
             - name: Install CoE CLI
               href: ../coe/cli/install.md
             - name: Upgrade CoE CLI
               href: ../coe/cli/upgrade.md
-            - name: ALM Accelerator for Power Platform
-              href: ../coe/cli/alm/overview.md
+            - name: CoE CLI ALM accelerator
               items:
-                - name: Set up ALM Accelerator for Power Platform
+                - name: Overview
+                  href: ../coe/cli/alm/overview.md
+                - name: Set up ALM accelerator
                   href: ../coe/cli/alm/admin-install.md
                 - name: Before you start
                   href: ../coe/cli/alm/before-you-start.md
@@ -125,17 +127,18 @@
                 - name: Personas
                   href: ../coe/cli/alm/personas.md
             - name: CLI development
-              href: ../coe/cli/cli-development/overview.md
               items:
-                - name: Adding a new command
+                - name: CoE CLI development
+                  href: ../coe/cli/cli-development/overview.md
+                - name: Add a new command
                   href: ../coe/cli/cli-development/adding-new-command.md
-                - name: Documentation
+                - name: Documentation best practices
                   href: ../coe/cli/cli-development/documentation.md
-        - name: FAQ and tips
+        - name: Tips and FAQs
           items:
-            - name: CoE Starter Kit FAQ
+            - name: CoE Starter Kit tips and FAQs 
               href: ../coe/faq.md
-            - name: Questions related to the Data Export integration
+            - name: Data Export integration FAQs
               href: ../coe/faq-dataexport.md
         - name: Limitations
           href: ../coe/limitations.md
