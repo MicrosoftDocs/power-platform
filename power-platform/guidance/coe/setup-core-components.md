@@ -206,7 +206,7 @@ Environment variables are used to store application and flow configuration data 
 | DelayInventory | If *Yes*, runs a delay step to assist with the Dataverse load balancing. Only set to *No* for debugging. | Yes |
 | DelayObjectInventory | If *Yes*, runs a delay step in individual inventory flows to assist with data source throttling experienced by larger tenants. Set to *Yes* if you experience this type of throttling. | No |
 | Disabled Users are Orphaned | If an AD user has property *Account* enabled as *false*, the user is orphaned. | No |
-| eMail Header Style | The CSS / Style to use for eMails. | [Default CSS](/power-platform/guidance/coe/code-samples/css/default-value-email-header-style) |
+| eMail Header Style | The CSS / Style to use for eMails. | [Default CSS](#default-value-for-email-header-style-environmental-variable) |
 | eMail Body Start | Starting HTML format for eMails. | Default style provided |
 | eMail Body Stop | Ending HTML format for eMails. | Default style provided |
 | FullInventory | Determines whether you want to update only changed objects or all objects. Switching to *Yes* causes the flows to inventory every single app, flow, and bot in the tenant every day. The *Yes* setting isn't recommended for large tenants.  | No |
@@ -226,11 +226,10 @@ Environment variables are used to store application and flow configuration data 
 | TenantID | Your Azure Tenant ID. For more information, see [Find Tenant ID through the Azure portal](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant#find-tenant-id-through-the-azure-portal). | Not applicable |
 
 
-### Default CSS used for eMail Header Style
+### Default value for eMail Header Style environmental variable
 
 <details>
-<summary>Default value for  eMail Header Style environmental variable
-</summary>
+<summary>Default CSS</summary>
 
 ```css
 <head> <style> 

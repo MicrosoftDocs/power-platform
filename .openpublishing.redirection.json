@@ -1623,6 +1623,11 @@
       "source_path": "power-platform/guidance/coe/cli/sample-local-install.md",
       "redirect_url": "/power-platform/guidance/coe/cli/install",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/code-samples/css/default-value-eMail-Header-Style.md",
+      "redirect_url": "/power-platform/guidance/coe/setup-core-components",
+      "redirect_document_id": false
     }
   ]
 }
