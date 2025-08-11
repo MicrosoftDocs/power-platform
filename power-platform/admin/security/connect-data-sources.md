@@ -6,9 +6,9 @@ ms.service: power-platform
 ms.topic: how-to
 ms.custom: "admin-security"
 ms.collection: get-started
-author: lancedMicrosoft
+author: sericks007
 ms.subservice: admin
-ms.author: lanced
+ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -83,13 +83,10 @@ Learn more about the [difference between explicit and implicit connections](/pow
 
 ### Related articles
 
-[Security in Microsoft Power Platform](./overview.md)  
-[Authenticating to Power Platform services](./authenticate-services.md)  
-[Data storage in Power Platform](./data-storage.md)  
-[Power Platform security FAQs](./faqs.md)  
-
-### See also
-
+- [Security overview](security/security-overview.md)  
+- [Authenticating to Power Platform services](./authenticate-services.md)  
+- [Data storage in Power Platform](./data-storage.md)  
+- [Power Platform security FAQs](./faqs.md) 
 - [Connect canvas apps to Microsoft Dataverse](/powerapps/maker/canvas-apps/connections/connection-common-data-service)
 - [Difference between explicit and implicit connections](/powerapps/maker/canvas-apps/connections/sql-server-security#difference-between-explicit-and-implicit-connections)
 - [Power Platform connectors reference - Microsoft Dataverse](/connectors/commondataserviceforapps/)
