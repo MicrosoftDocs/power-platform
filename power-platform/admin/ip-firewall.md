@@ -1,7 +1,7 @@
 ---
 title: IP firewall in Power Platform environments
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 08/04/2025
+ms.date: 08/07/2025
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
@@ -164,13 +164,13 @@ You should test the IP firewall in your test environment first, followed by audi
 
 The IP Firewall feature in Power Platform allows administrators to restrict access to environments based on IP address ranges. For scenarios where specific application users (Service Principal Names or SPNs) need to bypass these restrictions, you can enable SPN filtering using an API-based approach.
 
-## Steps to Enable SPN Filtering
+## Steps to enable SPN filtering
 
-1. Assign Security Roles to the Application User.
-   Add the application user to the target environment and assign the appropriate security roles.
+1. **Add the application user.**
+   If not already added, add the [application user](manage-application-users.md) to the target environment and assign the appropriate security roles.
    Example:
    Add the app user with ID 123 and name TestSPN to the environment and assign the necessary roles
-2. Retrieve the System User ID.
+2. **Retrieve the system user ID.**
    Use the following API call to fetch the `systemuserid` for the application user:
 
 ```http
@@ -183,12 +183,12 @@ OData-MaxVersion: 4.0
 OData-Version: 4.0
 ```
 
-3. Allowlist the Application User
+3. **Allowlist the application user.**
 
 ```http
 
 
-https://{yourorg}.api.crm*.dynamics.com/api/data/v9.2/systemusers(SystemuserID)
+POST https://{yourorg}.api.crm*.dynamics.com/api/data/v9.2/systemusers(SystemuserID)
 HTTP/1.1
 Content-Type: application/json
 OData-MaxVersion: 4.0
@@ -206,7 +206,7 @@ OData-Version: 4.0
 ]
 ```
 
-4. Configure IP Firewall Settings in PPAC.
+4. **Configure IP firewall settings in PPAC.**
    Navigate to the Power Platform Admin Center (PPAC) and configure the IP Firewall settings.
    Ensure that the option "Allow access for all application users" is unchecked to enforce filtering.
 
