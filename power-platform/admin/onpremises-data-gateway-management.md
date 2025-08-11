@@ -69,7 +69,7 @@ Select a gateway cluster and then select **Details** to see the following inform
 
 - **Name**: The name of the gateway member.
 - **Device**: The physical device on which the gateway is installed.
-- **Status**: Select (![Gateway status.](media/gateway-status.png "Gateway status")) to check the status of a gateway member.
+- **Status**: Select the **Gateway status** icon to check the status of a gateway member.
 - **Version**: The gateway software version installed on the machine.
 - **State**: Select to enable or disable a gateway member.
 
@@ -77,7 +77,7 @@ After selecting a gateway member, you can select **Remove** to remove it. This s
 
 ## Settings
 
-Select **Settings** to set on-premises data gateway settings such as the gateway cluster name, department, General settings, and Power BI settings. 
+To set on-premises data gateway settings such as the gateway cluster name, department, General settings, and Power BI settings, select **Settings**.
 
 > [!div class="mx-imgBorder"] 
 > ![Data gateway settings.](media/data-gateways-settings.png "Data gateway settings")
@@ -145,10 +145,8 @@ Use **Search** to find gateway clusters and see their details. You can search fo
 
 ## Status
 
-Select a gateway cluster, then select **Details** > **Check status** (![Gateway status.](media/gateway-status.png "Gateway status")) to check the status of a gateway cluster.
+Select a gateway cluster, then select **Details** > **Check status** to check the status of a gateway cluster.
 
-> [!div class="mx-imgBorder"] 
-> ![Check status.](media/data-gateways-status.png "Check status")
 
 ## Manage gateway installers
 
