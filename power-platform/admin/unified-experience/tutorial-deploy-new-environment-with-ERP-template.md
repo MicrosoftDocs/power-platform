@@ -121,7 +121,7 @@ You can provision a new environment with finance and operations apps preinstalle
 
 ## Delete the environment
 
-In this step, delete the environment you previously created. Deleting an environment is an action commonly done by admins who want to free up the Dataverse and Operations storage consumed by this environment for other needs. An environment can be deleted using the Power Platform admin center, or PowerShell as follows:
+In this procedure, delete the environment you previously created. Deleting an environment is an action commonly done by admins who want to free up the Dataverse and Operations storage consumed by this environment for other needs. An environment can be deleted using the Power Platform admin center, or PowerShell as follows:
 
 ### [New admin center](#tab/new)
  
