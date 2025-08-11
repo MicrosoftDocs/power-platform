@@ -28,18 +28,10 @@ The on-premises data gateway acts as a bridge, providing quick and secure data t
 
 On the **Data** page of the [Power Platform admin center](https://admin.powerplatform.microsoft.com), you can view and manage on-premises data gateways.
 
-# [New admin center](#tab/new)
- 
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, under **Data** section, select **Data (preview)**. 
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Data(preview)** in the left-side menu.
-
----
 
 Users who are part of the Microsoft Entra Global administrator role (which includes Global admins), Power BI service administrators, and Gateway administrators have access to data gateway management on the Power Platform admin center. However, there might be differences in the features available and the operations performed by each of these roles.
 
