@@ -12,7 +12,7 @@ ms.date: 07/16/2025
 
 # Rabobank embraces conversational banking with Copilot Studio
 
-Rabobank is a multinational banking and financial services company based in the Netherlands. As part of its mission to grow a better world together, Rabobank has embraced conversational banking&mdash;prioritizing friendly and efficient customer service on demand, in alignment with the company's principles of cooperation and putting people first.  
+Rabobank, a multinational banking and financial services company based in the Netherlands is committed to growing a better world together. As part of this mission, Rabobank has embraced conversational banking&mdash;prioritizing friendly and efficient customer service on demand, in alignment with the company's principles of cooperation and putting people first.  
 
 In this case study, you learn how to:
 
@@ -24,13 +24,13 @@ In this case study, you learn how to:
 
 ## Business challenges
 
-Rabobank started to explore chatbot functionality for customer self-service to improve efficiency and lower operational costs. With rising customer expectations and increased inquiries, Rabobank decided it needed a chatbot to answer common customer questions.
+Rabobank started to explore chatbot functionality for customer self-service to improve efficiency and lower operational costs. With rising customer expectations and increased inquiries, the bank needed a chatbot to answer common customer questions.
 
-Rabobank initially set up text- and voice-enabled chatbot functionality on another platform, partly on-premises, and relied on vendors for implementation and maintenance. 
+Initially, Rabobank set up text- and voice-enabled chatbot functionality on another platform, partly on-premises, and relied on vendors for implementation and maintenance. 
 
-However, the solution presented several challenges:
+However, this solution presented several challenges:
 
-- **Inefficient**: The systems for chat and voice support had to be updated with new conversations and logic separately, even when the systems used the same information and models.
+- **Inefficiency**: Chat and voice systems had to be updated with new conversations and logic separately. Even when the systems used the same information and models, they required separate updates.
 
 - **Slow to market**: The platform required specialized developer support, which slowed innovation and time to market.
 
@@ -100,7 +100,7 @@ Their decision is driven by three key factors:
 
 Rabobank uses generative AI in their fallback topics when the agent can't answer a question. However, the setup resides outside Copilot Studio.
 
-They currently use Azure AI Foundry to deploy AI models, within their own Azure subscription to ensure compliance, which is important to Rabobank. To use generative AI in SaaS (Software as a Sevice) products, certain approvals are required. Deploying models in their own Azure subscription is a more efficient way to use generative AI.
+They currently use Azure AI Foundry to deploy AI models, within their own Azure subscription to ensure compliance, which is important to Rabobank. To use generative AI in SaaS (Software as a Service) products, certain approvals are required. Deploying models in their own Azure subscription is a more efficient way to use generative AI.
 
 An Azure Function is called from the agent's fallback topic, through an HTTP call, including the conversation ID and bot ID. It performs the following functions:
 
@@ -186,7 +186,7 @@ In addition, Rabobank can now manage and update its virtual agents without exter
 Rabobank plans to transition to built-in features for generative AI, while examining how to remain compliant. This includes:
 
 - Testing generative orchestration and verifying that it improves recognition.
-- Using generative answers for questions that leverage Rabobank's knowledge bases.
+- Using generative answers for questions that use Rabobank's knowledge bases.
 - Connecting generative actions with the bank's systems and APIs.
 - Exploring future options in Copilot Studio, such as bringing in their own model.
 
