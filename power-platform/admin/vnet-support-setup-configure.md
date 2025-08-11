@@ -3,7 +3,7 @@ title: Set up virtual network support for Power Platform
 description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/31/2025
+ms.date: 08/11/2025
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -97,30 +97,36 @@ The following diagram shows the functions of the roles in the setup process for 
         "contentVersion": "1.0.0.0",
         "parameters": {
             "policyName": {
-                "type": "String",
+                "type": "string",
                 "metadata": {
                     "description": "The name of the Enterprise Policy."
                 }
             },
             "powerplatformEnvironmentRegion": {
-                "type": "String",
+                "type": "string",
                 "metadata": {
                     "description": "Geo of the PowerPlatform environment."
                 }
             },
             "vNetOneSubnetName": {
-                "type": "String"
+                "type": "string"
             },
             "vNetOneResourceId": {
-                "type": "String"
+                "type": "string",
+          			"metadata": {
+                    "description": "Fully qualified name, such as /subscription/{subscriptionid}/..."
+                }
             },
             "vNetTwoSubnetName": {
                 "defaultValue": "",
-                "type": "String"
+                "type": "string"
             },
             "vNetTwoResourceId": {
                 "defaultValue": "",
-                "type": "String"
+                "type": "string",
+          			"metadata": {
+                    "description": "Fully qualified name, such as /subscription/{subscriptionid}/..."
+                }
             }
         },
         "variables": {
@@ -133,7 +139,7 @@ The following diagram shows the functions of the roles in the setup process for 
             "vNetTwo": {
                 "id": "[parameters('vNetTwoResourceId')]",
                 "subnet": {
-                    "name": "[parameters('vNnetTwoSubnetName')]"
+                    "name": "[parameters('vNetTwoSubnetName')]"
                 }
             },
             "vNetTwoSupplied": "[and(not(empty(parameters('vNetTwoSubnetName'))), not(empty(parameters('vNetTwoResourceId'))))]"
@@ -141,7 +147,7 @@ The following diagram shows the functions of the roles in the setup process for 
         "resources": [
             {
                 "type": "Microsoft.PowerPlatform/enterprisePolicies",
-                "apiVersion": "2020-10-30",
+                "apiVersion": "2020-10-30-preview",
                 "name": "[parameters('policyName')]",
                 "location": "[parameters('powerplatformEnvironmentRegion')]",
                 "kind": "NetworkInjection",
