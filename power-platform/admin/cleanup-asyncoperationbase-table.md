@@ -86,17 +86,20 @@ All environments are configured with an out-of-the-box bulk deletion job to dele
 
 All environments include a built-in bulk deletion job that removes successfully completed workflow system jobs older than 30 days. Customers can create more bulk deletion jobs to delete AsyncOperation records. We recommend configuring a job that deletes any completed system job—regardless of type or result—older than 30 days to prevent unnecessary buildup in the AsyncOperation table.
 
-You can use the bulk deletion system jobs to delete unneeded records from both AsyncOperation and WorkflowLog tables. 
+You can use the bulk deletion system jobs to delete unneeded records from both the AsyncOperation and WorkflowLog tables. 
 
 ### View the bulk deletion system jobs
+
 The bulk record deletion jobs show the history of system jobs that were run and the results. 
+
 > [!NOTE]
-> This Deletion service deletes the system jobs in the backend and deleted bulk deletion system jobs will no longer show up **All System jobs** or the **All Bulk Deletion System jobs** lists.
+> This deletion service deletes the system jobs and deleted bulk deletion system jobs no longer show up in the **All System jobs** or the **All Bulk Deletion System jobs** lists.
 
 ### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Data management**, then select **Bulk deletion**.
@@ -109,8 +112,7 @@ The bulk record deletion jobs show the history of system jobs that were run and 
 1. In the command bar, select **Settings**.  
 1. Expand **Data management**, then select **Bulk deletion**.
 
-You can also access the **Bulk record deletion** from the Power Platform Environment Settings app.
-From the left nav, **Data Management**/**Bulk record deletion**.
+You can also access the **Bulk record deletion** from the Power Platform Environment Settings app. From the left navigation, select **Data Management** > **Bulk record deletion**.
 
 ---
 
@@ -126,7 +128,7 @@ If you switch the view to display jobs that are scheduled, in progress, or compl
 
 If the [Deletion service](deletion-service-to-automatically-delete-completed-system-jobs) or the out-of-the-box system bulk deletion jobs don't meet your organization's needs, you can create your own bulk deletion job.
 
-First turn the Deletion Service off by:
+First, turn the Deletion Service off by:
 1. Add and edit the [EnableSystemJobCleanup](https://learn.microsoft.com/power-platform/admin/environment-database-settings#override-database-settings).
 1. Set the **EnableSystemJobCleanup** to 'false'.
 
