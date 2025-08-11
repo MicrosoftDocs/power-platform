@@ -60,7 +60,7 @@ Be sure to check out the latest known limitations available in the overview arti
 
 You can provision a new environment with finance and operations apps preinstalled using the Power Platform admin center or PowerShell.
 
-# [New admin center](#tab/new)
+### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
@@ -71,7 +71,7 @@ You can provision a new environment with finance and operations apps preinstalle
 1. On the following screen, select **Yes** for **Enable Dynamics 365 apps**.
 1. Choose an available template such as Finance (preview), Supply Chain Management (preview), and so on.
 
-# [Classic admin center](#tab/classic)
+### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Go to **Environments** in the navigation pane.
@@ -81,7 +81,7 @@ You can provision a new environment with finance and operations apps preinstalle
 1. On the following screen, select **Yes** for **Enable Dynamics 365 apps**.
 1. Choose an available template such as Finance (preview), Supply Chain Management (preview), and so on.
 
-# [PowerShell](#tab/PowerShell)
+### [PowerShell](#tab/PowerShell)
 
 1. Open your PowerShell console application.
 1. Install the required module.
@@ -123,20 +123,20 @@ You can provision a new environment with finance and operations apps preinstalle
 
 In this step, delete the environment you previously created. Deleting an environment is an action commonly done by admins who want to free up the Dataverse and Operations storage consumed by this environment for other needs. An environment can be deleted using the Power Platform admin center, or PowerShell as follows:
 
-# [New admin center](#tab/new)
+### [New admin center](#tab/new)
  
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**.
 1. Select an appropriate environment, and then select the **Delete** button in the action bar at the top of the page. Confirm that you want to delete the environment and proceed.
 
-# [Classic admin center](#tab/classic)
+### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
 1. Go to **Environments**.
 1. Select an appropriate environment, and then select the **Delete** button in the action bar at the top of the page. Confirm that you want to delete the environment and proceed.
 
-# [PowerShell](#tab/PowerShell)
+### [PowerShell](#tab/PowerShell)
 
 Use the following script to delete the previously created environment. Set the **environmentID** appropriately.
 
