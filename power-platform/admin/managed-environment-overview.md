@@ -49,7 +49,7 @@ A Managed Environment encompasses, but isn't limited to, the following features:
 - [Virtual Network support for Power Platform](vnet-support-overview.md)
 - [Conditional access on individual apps](/power-platform/admin/admin-manage-apps#conditional-access-on-granular-apps-preview)
 - [Control which apps are allowed in your environment](control-app-access-environment.md)
-- [Dataverse auditing](manage-dataverse-auditing.md#configure-auditing-for-an-environment)
+- [Configure auditing for an environment](manage-dataverse-auditing.md#configure-auditing-for-an-environment)
 - [Secured column with masking](create-manage-masking-rules.md)
 
 > [!NOTE]
