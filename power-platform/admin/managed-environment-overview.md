@@ -8,6 +8,7 @@ author: mihaelablendea
 ms.author: mihaelab 
 ms.reviewer: sericks
 contributors:
+  - paulliew
   - akadrno 
   - ritesp 
   - ShawnNandiMSFT
@@ -16,9 +17,8 @@ ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
-contributors:
-  - paulliew
 ---
+
 # Managed Environments overview 
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2206011 and 2211534 -->
