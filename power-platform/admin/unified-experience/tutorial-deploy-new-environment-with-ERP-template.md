@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/31/2025
+ms.date: 08/11/2025
 ms.subservice: admin
 ms.author: laswenka
 ms.contributors:
@@ -40,7 +40,7 @@ The easiest way to get finance and operations apps up and running in Power Platf
 
 ### Knowing which template to provision
 
-All Dynamics 365 environment templates require that the tenant has purchased a related license. However, users who are assigned the Power Platform Administrator role or the Dynamics 365 Administrator role in Microsoft Entra don't require a full user license assigned to them to create or manage these environments. If the role was just recently assigned, note there's a 12 hour cache before the provisioning system allows a user without a license to create a new environment.
+All Dynamics 365 environment templates require that the tenant has purchased a related license. However, users who are assigned the Power Platform Administrator role or the Dynamics 365 Administrator role in Microsoft Entra ID don't require a full user license to create or manage these environments. If the role was just recently assigned, note there's a 12 hour cache before the provisioning system allows a user without a license to create a new environment.
 
 The following table shows the mapping between various finance and operations apps licenses and their template details.
 
