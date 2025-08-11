@@ -181,7 +181,7 @@ To get the most value from these tools and ensure compliance, consider these act
 
 Learn more:
 
-- [Exclude environments from the compliance processes](setup-governance-components?branch=main#exempt-environments-from-the-compliance-process)
+- [Exclude environments from the compliance processes](setup-governance-components.md#exempt-environments-from-the-compliance-process)
 - [Exempt environments from inactivity notifications](setup-archive-components.md#exempt-environments-from-the-inactivity-notifications-process)
 - [Quarantine non-compliant apps](governance-components.md#admin--quarantine-non-compliant-apps)
 
