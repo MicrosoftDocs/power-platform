@@ -80,9 +80,9 @@ You can provision a new environment with finance and operations apps preinstalle
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Go to **Environments** in the navigation pane.
 1. Select the **New** button and fill out the environment details. Keep the following points in mind:
-- The environment name must be globally unique because it impacts the finance and operations URL.
-- If you want to use preview releases of finance and operations, select the **Get new features early** option.
-- Select **Yes** for **Add a Dataverse data store**.
+    - The environment name must be globally unique because it impacts the finance and operations URL.
+    - If you want to use preview releases of finance and operations, select the **Get new features early** option.
+    - Select **Yes** for **Add a Dataverse data store**.
 1. Select **Next**. On the following screen, complete the following tasks:
     - Select a security group to restrict access to the environment.
     - Select **Yes** for the **Enable Dynamics 365 apps** option.
