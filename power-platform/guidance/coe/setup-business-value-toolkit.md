@@ -10,6 +10,7 @@ ms.author: stjeffer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Set up the Business value toolkit
 

@@ -9,7 +9,7 @@ metadata:
   author: robstand
   ms.author: rstand
   ms.reviewer: jhaskett-msft
-  ms.date: 05/16/2024
+  ms.date: 08/05/2025
 sections:
   # Intro
   - componentType: text 
@@ -124,11 +124,17 @@ sections:
   
 # Text section
   - componentType: text
-    title: Power Platform prescriptive guidance
+    title: Power Platform and Copilot Studio Architecture Center
+    links:
+    - componentType: link
+      url: /power-platform/architecture
+      text: Browse guidance for architecting solutions with Power Platform and Copilot Studio
+  - componentType: text
+    title: Power Platform guidance documentation
     links:
     - componentType: link
       url: /power-platform/guidance
-      text: Browse the prescriptive guidance for Power Platform
+      text: Browse the guidance documentation for Power Platform
   - componentType: text
     title: Power Platform product documentation
     links:

@@ -8,12 +8,14 @@ ms.date: 07/08/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
-ms.custom: NewPPAC
 search.audienceType: 
   - admin
 contributors:
   - yingchin
   - isaacwinoto 
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 ---
 # Admin Analytics for Power Apps
 
