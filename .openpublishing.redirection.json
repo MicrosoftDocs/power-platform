@@ -1633,11 +1633,6 @@
       "source_path": "power-platform/guidance/coe/release-notes.md",
       "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases/latest",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "power-platform/guidance/coe/release-notes/auditlog-1.0.md",
-      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases/latest",
-      "redirect_document_id": false
     }
   ]
 }
