@@ -24,8 +24,8 @@ company employs around 100,000 people worldwide.
 
 After becoming an independent company, Daimler Truck embraced the
 opportunity to design a modern set of tools and processes tailored to
-its evolving needs. Recognizing that the former corporate policy
-database system no longer aligned with the company's goals led to a
+its evolving needs. The company recognized that the former corporate policy
+database system no longer aligned with its goals. This recognition led to a
 focused exploration of the Microsoft Power Platform, unlocking new
 possibilities for flexibility, productivity, and future-ready
 operations.
@@ -33,7 +33,7 @@ operations.
 The project Policy Navigator marked an important step as the most
 comprehensive solution built on Microsoft Power Platform in the company,
 designed for all employees. Transitioning to a new platform came with
-some limitations as certain former processes could not be replicated
+some limitations as certain former processes couldn't be replicated
 one-to-one.
 
 This shift also encouraged the project team to identify opportunities to
@@ -76,15 +76,15 @@ rate than previous solutions.
 
 The Policy Navigator App has three components:
 
-- **Power Apps canvas app**: This application allows the users (internal
+- **Power Apps canvas app**: This application enables users (internal
   employees) to search, filter, find, and read the policies.
 
-- **Power Apps model-driven app**: This application allows
+- **Power Apps model-driven app**: This application enables
   administrators to track each policy's lifecycle, from draft to
   publication. The app includes information about the new policy
   versions and when minor changes are made.
 
-- **SharePoint**: A folder system is used for collaboration on the
+- **SharePoint**: A folder system for collaboration on the
   policy files.
 
 ### User application implemented with Canvas Apps
@@ -189,14 +189,14 @@ digital business environment.
 
 ## Looking ahead
 
-Daimler Truck is currently exploring how artificial intelligence can
-enhance the Policy Navigator App. AI-powered automation is being tested
+Daimler Truck is exploring how artificial intelligence can
+enhance the Policy Navigator App. The company is testing AI-powered automation
 to help employees quickly locate relevant corporate policies and better
 understand their content.
 
-Daimler Truck's Power Platform journey illustrates a robust commitment
+Daimler Truck's Power Platform journey shows its strong commitment
 to leveraging cutting-edge technologies, both as a productivity tool and
-a strategic asset in reshaping its digital future.
+as a strategic asset in reshaping its digital future.
 
 ## Related resources
 
