@@ -1,11 +1,11 @@
 ---
-title: "Tutorial: Install the Finance and Operations Provisioning app"
+title: Tutorial: Install the Finance and Operations Provisioning app
 description: Learn how to install the Finance and Operations Provisioning app onto an existing Power Platform environment.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/19/2025
+ms.date: 08/11/2025
 ms.subservice: admin
 ms.author: laswenka
 ms.contributors:
@@ -32,7 +32,7 @@ For example, a customer who already purchased other Dynamics 365 apps wants to a
 > [!IMPORTANT]
 > If a user tries to install the **Dynamics 365 Finance and Operations Provisioning app** on a Dataverse organization that is already linked to a Lifecycle Services (LCS) managed environment, the app installation fails. This application should only be used while provisioning a new unified environment.
 
-- All Dynamics 365 apps require that the tenant has purchased a related license. However, users who are assigned the Power Platform Administrator or Dynamics 365 Administrator role in Microsoft Entra do not require a full user license assigned to their user identity in order to create or manage environments or install apps. If either role was just recently assigned, note that there is a 12-hour cache before the provisioning system will allow a user without a license to create or manage environments or install the provisioning app.
+- All Dynamics 365 apps require that the tenant has purchased a related license. However, users who are assigned the Power Platform Administrator or Dynamics 365 Administrator role in Microsoft Entra ID, don't require a full user license assigned to their user identity to create or manage environments or install apps. If either role was just recently assigned, note that there is a 12-hour cache before the provisioning system allowa a user without a license to create or manage environments or install the provisioning app.
 
     Example licenses that meet the purchase requirement:
     - Dynamics 365 Finance
