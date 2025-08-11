@@ -1,12 +1,13 @@
 ---
 title: Power Platform real-world case studies
-description: Explore real-world Power Platform case studies to see how customers create innovative solutions, improve processes, and achieve goals.
+description: Explore real-world Power Platform case studies to understand how customers create innovative solutions, improve processes, and achieve goals.
+#customer intent: As a business leader, I want to learn how organizations use Power Platform so that I can identify solutions for my own challenges.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 07/15/2025
+ms.date: 08/11/2025
 ---
 
 # Real-world case studies
@@ -21,9 +22,9 @@ Case studies are detailed accounts of real-world applications and implementation
 
 - **Discover best practices**: Each case study highlights the strategies and best practices that led to successful outcomes. These insights can help you adopt proven methods and avoid common pitfalls in your own projects.
 
-- **See the impact**: Case studies often include quantifiable results, such as efficiency gains, cost savings, and improved customer satisfaction. These metrics provide concrete evidence of the benefits of using Power Platform, helping you build a strong business case for your initiatives.
+- **Understand the impact**: Case studies often include quantifiable results, such as efficiency gains, cost savings, and improved customer satisfaction. These metrics provide concrete evidence of the benefits of using Power Platform, helping you build a strong business case for your initiatives.
 
-- **Get inspired**: Reading about the innovative solutions developed by others can spark new ideas and inspire you to think creatively about how to use the Power Platform in your own work. Whether you're looking to automate processes, enhance customer experiences, or drive digital transformation, case studies can provide the motivation and direction you need.
+- **Get inspired**: Reading about the innovative solutions developed by others can spark new ideas and inspire you to think creatively about how to use Power Platform in your own work. Whether you're looking to automate processes, enhance customer experiences, or drive digital transformation, case studies can provide the motivation and direction you need.
  
 ## Current case studies
 
@@ -40,4 +41,6 @@ Case studies are detailed accounts of real-world applications and implementation
 | [Holland America Line transforms customer experience with Copilot Studio](holland-america-customer-experience.md) | This case study covers how Holland America Line used Copilot Studio to create a sophisticated virtual agent to act as a digital concierge on their website. |
 | [John Cockerill streamlines enterprise business processes](engineering-time-tracking.md) | This case study covers how international engineering company John Cockerill uses Power Platform to develop enterprise apps. |
 | [Rabobank embraces conversational banking with Copilot Studio](rabobank-conversational-banking.md) | This case study covers how Rabobank uses Copilot Studio to enhance customer service through conversational AI with text and voice-enabled chatbot functionality. |
+| [SLB enhances productivity with Power Platform and AI](slb-enhances-productivity.md) | This case study covers how SLB enhanced process and employee productivity using Power Apps, AI Builder, Power Automate, and Dataverse. |
 | [Teck automates data extraction with Power Automate and AI Builder](teck-automates-data-extraction.md) | This case study covers how Teck uses Power Automate and AI Builder to automate data extraction processes. |
+| [T-Mobile empowers customer service representatives using Power Apps and Copilot Studio](tmobile-empowers-customer-service.md) | This case study covers how T-Mobile empowers customer service representatives with an app designed to provide quick, accurate device information and improve customer support. |
