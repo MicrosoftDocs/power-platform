@@ -87,11 +87,9 @@ The Policy Navigator App has three components:
 - **SharePoint**: A folder system is used for collaboration on the
   policy files.
 
-## User Application implemented with Canvas Apps
+### User application implemented with Canvas Apps
 
-The following images show the app’s user pages. Employees can access the
-different corporate policies via this app, presented in a modern,
-user-friendly format that streamlines the readability and usability.
+Employees can access the different corporate policies via this app, presented in a modern, user-friendly format that streamlines the readability and usability.
 
 A host of user-centric functionalities further enhance the app's value.
 Advanced filtering options allow employees to search for corporate
@@ -100,17 +98,17 @@ ensures quick and relevant access to information. The app also includes
 a policy request feature, enabling employees to suggest new corporate
 policies directly within the system through a structured process.
 
-The image below shows the Policy Navigator Home page, where the user can
+The following image shows the Policy Navigator Home page, where the user can
 browse, search and filter policies.
 
-<img src="media/microsoft-learn-use-case---daimler-truck---clean-version---final/image2.png" style="width:6.5in;height:1.82847in"
+<img src="media/daimler-truck-modernizes-policies/image2.png"
 alt="Ein Bild, das Screenshot, Text, Software, Webseite enthält. KI-generierte Inhalte können fehlerhaft sein." />
 
 The following image displays a policy detail page, providing a clear
 description of the policy along with comprehensive information and
 direct access to related documents.
 
-<img src="media/microsoft-learn-use-case---daimler-truck---clean-version---final/image3.png" style="width:6.5in;height:2.46458in"
+<img src="media/daimler-truck-modernizes-policies/image3.png"
 alt="Ein Bild, das Text, Software, Computersymbol, Zahl enthält. KI-generierte Inhalte können fehlerhaft sein." />
 
 Furthermore, the policy detail page includes the "Keep Me Posted"
@@ -118,17 +116,19 @@ feature, which enables real-time notifications about policy updates.
 This helps strengthen engagement and supports greater transparency
 throughout the organization.
 
-## Administrative model-driven application
+### Administrative model-driven application
 
 The following image shows the administrative model-driven application,
 which allows administrators to add new policies or edit existing
 policies.
 
-<img src="media/microsoft-learn-use-case---daimler-truck---clean-version---final/image4.png" style="width:6.5in;height:2.16667in" />
+<img src="media/daimler-truck-modernizes-policies/image4.png"/>
 
 The following illustrations show policy creation process, where
 administrators can set permissions and make further
-changes.<img src="media/microsoft-learn-use-case---daimler-truck---clean-version---final/image5.png" style="width:6.5in;height:2.76042in"
+changes.
+
+<img src="media/daimler-truck-modernizes-policies/image5.png"
 alt="Ein Bild, das Text, Software, Zahl, Computersymbol enthält. KI-generierte Inhalte können fehlerhaft sein." />
 
 For policy updates, the app streamlines processes by enabling minor
@@ -136,7 +136,7 @@ revisions without requiring new version creation. The app maintains
 structured workflows for major updates to ensure clarity and
 communication across stakeholders.
 
-## Governance
+### Governance
 
 Governance has been a key area of focus, with Daimler Truck establishing
 a specialized global delivery team to drive operational maturity with
@@ -148,7 +148,7 @@ The company established the Policy Navigator App and activated over
 4,000 Power Platform Managed Environments to make sure they use the
 latest and greatest capabilities that help keep their tenant secure.
 
-# Key takeaways
+## Key takeaways
 
 Operational efficiency has improved significantly, simplifying policy
 access and saving valuable time and resources across the organization.
@@ -190,7 +190,7 @@ and value. This solution underscores the company’s commitment to
 adapting, innovating, and thriving in an increasingly dynamic and
 digital business environment.
 
-# Looking ahead
+## Looking ahead
 
 Daimler Truck is currently exploring how artificial intelligence can
 enhance the Policy Navigator App. AI-powered automation is being tested
@@ -201,25 +201,12 @@ Daimler Truck’s Power Platform journey illustrates a robust commitment
 to leveraging cutting-edge technologies, both as a productivity tool and
 a strategic asset in reshaping its digital future.
 
-# Related information
+## Related resources
 
-- [What is Power
-  Apps?](https://learn.microsoft.com/en-us/power-apps/powerapps-overview)
-
-  - [Training for Power
-    Apps](https://learn.microsoft.com/en-us/training/powerplatform/power-apps)
-
-  - [Overview of building canvas
-    apps](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/getting-started)
-
-  - [Overview of building a model-driven app with Power
-    Apps](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-driven-app-overview)
-
-- [What is Microsoft
-  Dataverse?](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro)
-
-  - [Get started using Microsoft
-    Dataverse](https://learn.microsoft.com/en-us/training/paths/get-started-cds/)
-
-- [Managed Environments
-  overview](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview)
+- [What is Power Apps?](/power-apps/powerapps-overview)
+  - [Training for PowerApps](/training/powerplatform/power-apps)
+  - [Overview of building canvas apps](/power-apps/maker/canvas-apps/getting-started)
+  - [Overview of building a model-driven app with Power Apps](/power-apps/maker/model-driven-apps/model-driven-app-overview)
+- [What is Microsoft Dataverse?](/power-apps/maker/data-platform/data-platform-intro)
+  - [Get started using Microsoft Dataverse](/training/paths/get-started-cds/)
+- [Managed Environments overview](/power-platform/admin/managed-environment-overview)
