@@ -7,12 +7,12 @@ ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 07/16/2025
+ms.date: 08/11/2025
 ---
 
 # Rabobank embraces conversational banking with Copilot Studio
 
-Rabobank, a multinational banking and financial services company based in the Netherlands is committed to growing a better world together. As part of this mission, Rabobank has embraced conversational banking&mdash;prioritizing friendly and efficient customer service on demand, in alignment with the company's principles of cooperation and putting people first.  
+Rabobank, a multinational banking and financial services company based in the Netherlands, is committed to growing a better world together. As part of this mission, Rabobank has embraced conversational banking&mdash;prioritizing friendly and efficient customer service on demand, in alignment with the company's principles of cooperation and putting people first.  
 
 In this case study, you learn how to:
 
