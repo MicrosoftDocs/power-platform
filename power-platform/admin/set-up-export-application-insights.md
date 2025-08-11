@@ -4,7 +4,7 @@ description: Learn how to export data to Application Insights from the Power Pla
 services: powerapps
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/18/2025
+ms.date: 08/11/2025
 author: isaacwinoto 
 ms.subservice: admin
 ms.custom: NewPPAC
