@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Install the Finance and Operations Provisioning app
+title: "Tutorial: Install the Finance and Operations Provisioning app"
 description: Learn how to install the Finance and Operations Provisioning app onto an existing Power Platform environment.
 author: laneswenka
 ms.reviewer: sericks
