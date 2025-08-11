@@ -6,9 +6,9 @@ ms.service: power-platform
 ms.topic: faq
 ms.custom: 
   - "admin-security"
-author: lancedMicrosoft
+author: sericks007
 ms.subservice: admin
-ms.author: lanced
+ms.author: sericks
 ms.reviewer: sericks
 ms.contributors: JesseParsons
 search.audienceType: 
@@ -189,7 +189,7 @@ The latest penetration tests and security assessments can be found on the [Micro
 
 ### Related articles
 
-[Security in Microsoft Power Platform](overview.md)  
+[Security overview](security-overview.md)  
 [Authenticating to Power Platform services](authenticate-services.md)  
 [Connecting and authenticating to data sources](connect-data-sources.md)  
 [Data storage in Power Platform](data-storage.md)  
