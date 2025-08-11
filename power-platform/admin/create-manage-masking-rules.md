@@ -2,7 +2,7 @@
 title: Create and manage masking rules (preview)
 description: Learn how to create and manage masking rules in Microsoft Power Apps.
 ms.component: pa-admin
-ms.date: 08/05/2025
+ms.date: 08/11/2025
 ms.topic: overview
 ms.custom: "admin-security"
 author: paulliew
