@@ -50,7 +50,7 @@ A Managed Environment encompasses, but isn't limited to, the following features:
 - [Conditional access on individual apps](/power-platform/admin/admin-manage-apps#conditional-access-on-granular-apps-preview)
 - [Control which apps are allowed in your environment](control-app-access-environment.md)
 - [Configure auditing for an environment](manage-dataverse-auditing.md#configure-auditing-for-an-environment)
-- [Secured column with masking](create-manage-masking-rules.md)
+- [Create and manage masking rules](create-manage-masking-rules.md)
 
 > [!NOTE]
 > Managed Environments is included as an entitlement with standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses. Trial licenses can be used to license users in Managed Environments, with the restrictions specific to these types of licenses. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
