@@ -73,9 +73,6 @@ The gateway cluster list includes both on-premises data gateways and on-premises
 Select a gateway cluster and then select **Details** to see the following information on gateway members.
 
 > [!div class="mx-imgBorder"] 
-> ![Gateway details.](media/data-gateways-details.png "Gateway details")
-
-> [!div class="mx-imgBorder"] 
 > ![Gateway member details.](media/data-gateways-member-details.png "Gateway member details")
 
 - **Name**: The name of the gateway member.
@@ -89,9 +86,6 @@ After selecting a gateway member, you can select **Remove** to remove it. This s
 ## Settings
 
 Select **Settings** to set on-premises data gateway settings such as the gateway cluster name, department, General settings, and Power BI settings. 
-
-> [!div class="mx-imgBorder"] 
-> ![Data gateway settings tab.](media/data-gateways-settings-tab.png "Data gateway settings tab")
 
 > [!div class="mx-imgBorder"] 
 > ![Data gateway settings.](media/data-gateways-settings.png "Data gateway settings")
@@ -126,9 +120,6 @@ For on-premises data gateways in standard mode, users can be added in any of the
 ## Remove a gateway cluster
 
 Use **Remove** to remove a gateway cluster. This operation is available for data gateways in standard mode and personal mode.
-
-> [!div class="mx-imgBorder"] 
-> ![Remove gateway cluster.](media/data-gateways-remove.png "Remove gateway cluster")
 
 For more information, go to [Remove or delete an on-premises data gateway](/data-integration/gateway/service-gateway-manage#remove-or-delete-an-on-premises-data-gateway).
 
