@@ -298,7 +298,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
@@ -354,7 +354,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
