@@ -222,6 +222,9 @@ To read the unmasked values, select the "Read" icon (icon image).
 
 All read unmasked value requests are audited.
 
+> [!NOTE]
+> The **Read** icon is currently visible only to users with the System Administrator security role with **Read Unmasked** permissions. We’re working on enabling visibility for non-administrator users in an upcoming update.
+
 #### Creating and updating unmasked values on the form
 
 When you create a new record, you enter the sensitive field as unmasked values. After you save, the form automatically refreshes, and the sensitive field is immediately masked.
@@ -244,7 +247,9 @@ Read unmasked value is also logged.
 
 ### Reading unmasked values on a form
 
-Masked values are displayed on the detail area of a main form.
+Masked values are displayed on the detail area of a main form.  
+
+Currently, only system administrators can view the **Read** icon on the form. We're working to make it visible to non-administrators in the next update.
 
 ### Creating and updating unmasked values on the form
 
