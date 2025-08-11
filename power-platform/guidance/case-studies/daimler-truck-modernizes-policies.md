@@ -87,7 +87,7 @@ The Policy Navigator App has three components:
 - **SharePoint**: A folder system for collaboration on the
   policy files.
 
-### User application implemented with Canvas Apps
+### User application implemented with canvas app
 
 Employees can access the different corporate policies via this app, presented in a modern, user-friendly format that streamlines the readability and usability.
 
@@ -114,7 +114,7 @@ feature, which enables real-time notifications about policy updates.
 This helps strengthen engagement and supports greater transparency
 throughout the organization.
 
-### Administrative model-driven application
+### Administrative model-driven app
 
 The following image shows the administrative model-driven application,
 which allows administrators to add new policies or edit existing
@@ -202,8 +202,8 @@ as a strategic asset in reshaping its digital future.
 
 - [What is Power Apps?](/power-apps/powerapps-overview)
   - [Training for PowerApps](/training/powerplatform/power-apps)
-  - [Overview of building canvas apps](/power-apps/maker/canvas-apps/getting-started)
-  - [Overview of building a model-driven app with Power Apps](/power-apps/maker/model-driven-apps/model-driven-app-overview)
+  - [What are canvas apps?](/power-apps/maker/canvas-apps/getting-started)
+  - [What are model-driven apps in Power Apps?](/power-apps/maker/model-driven-apps/model-driven-app-overview)
 - [What is Microsoft Dataverse?](/power-apps/maker/data-platform/data-platform-intro)
-  - [Get started using Microsoft Dataverse](/training/paths/get-started-cds/)
+  - [Get started using Dataverse](/training/paths/get-started-cds/)
 - [Managed Environments overview](/power-platform/admin/managed-environment-overview)
