@@ -30,7 +30,7 @@ Initially, Rabobank set up text- and voice-enabled chatbot functionality on anot
 
 However, this solution presented several challenges:
 
-- **Inefficiency**: Chat and voice systems had to be updated with new conversations and logic separately, even when the systems used the same information and models.
+- **Inefficiency**: Chat and voice systems had to be updated with new conversations and logic separately. Even when the systems used the same information and models, they required separate updates.
 
 - **Slow to market**: The platform required specialized developer support, which slowed innovation and time to market.
 
@@ -186,7 +186,7 @@ In addition, Rabobank can now manage and update its virtual agents without exter
 Rabobank plans to transition to built-in features for generative AI, while examining how to remain compliant. This includes:
 
 - Testing generative orchestration and verifying that it improves recognition.
-- Using generative answers for questions that leverage Rabobank's knowledge bases.
+- Using generative answers for questions that use Rabobank's knowledge bases.
 - Connecting generative actions with the bank's systems and APIs.
 - Exploring future options in Copilot Studio, such as bringing in their own model.
 
