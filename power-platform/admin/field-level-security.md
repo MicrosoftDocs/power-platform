@@ -3,7 +3,7 @@ title: Column-level security
 description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/05/2025
+ms.date: 08/06/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -57,6 +57,9 @@ Use the following steps to secure a column:
 
 1. Select **Save**.
 
+> [!TIP]
+> [Learn how a developer can retrieve a list of all the secured columns in an environment](/power-apps/developer/data-platform/column-level-security#retrieve-column-data-filtered-on-issecured) or [secure a column using code](/power-apps/developer/data-platform/column-level-security#secure-a-column-with-code)
+
 ## Add teams or users to a column security profile to control access
 
 A column security profile determines:
@@ -85,7 +88,7 @@ Configure a combination of these four permissions to determine the user privileg
 
 To add a column and set permissions for a column security profile, use the following steps:
 
-# [New admin center](#tab/new)
+#### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
@@ -96,7 +99,7 @@ To add a column and set permissions for a column security profile, use the follo
 1. Select the **Column Permission** tab, in the **Name** column select one or more columns, and then select **Edit**. Configure the four properties for the desired access. These permissions control whether people in this security profile can read or set column values.
 1. Select **Save**.
 
-# [Classic admin center](#tab/classic)
+#### [Classic admin center](#tab/classic)
 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using an account that is assigned the System Administrator security role.
@@ -107,7 +110,12 @@ To add a column and set permissions for a column security profile, use the follo
 1. Select the **Column Permission** tab, in the **Name** column select one or more columns, and then select **Edit**. Configure the four properties for the desired access. These permissions control whether people in this security profile can read or set column values.
 1. Select **Save**.
 
-## Which columns can be secured? 
+---
+
+> [!TIP]
+> [Learn how a developer can provide access to secured columns using code](/power-apps/developer/data-platform/column-level-security#provide-access-to-secured-columns)
+
+## Which columns can be secured?
 
 When a column is eligible for column-level security, the **Enable column security** checkbox is enabled in the **Advanced options** area of the column definition in [Power Apps](https://make.powerapps.com/).
 
@@ -123,11 +131,14 @@ Columns that can't be secured include:
 - Primary name columns (The single-line of text column each table has to show the value in a lookup field. Typically with a name ending with `name`.)
 - System columns like `createdon`, `modifiedon`, `statecode`, and `statuscode`.
 
-> [!Note]
-- File and Image data types can be secured, but they can't be masked.
-- Text data type with Rich text format can be secured, but an embedded image in Rich text can't be masked or bypassed for masking.
+> [!NOTE]
+> - File and Image data types can be secured, but they can't be masked.
+> - Text data type with Rich text format can be secured, but an embedded image in Rich text can't be masked or bypassed for masking.
 
-Whether the **Enable column security** checkbox is enabled depends on the value of these column properties: `CanBeSecuredForCreate`, `CanBeSecuredForRead`, and `CanBeSecuredForUpdate`. A developer can write a query to retrieve a list of these columns and you can view this data by installing the Metadata Browser solution described in [Browse the Metadata for Your Organization](/powerapps/developer/common-data-service/browse-your-metadata). Learn more about [which columns can be secured](/power-apps/developer/data-platform/field-security-entities#which-attributes-can-be-secured) and [how developers can retrieve this data](/power-apps/developer/data-platform/query-schema-definitions).
+Whether the **Enable column security** checkbox is enabled depends on the value of these column properties: `CanBeSecuredForCreate`, `CanBeSecuredForRead`, and `CanBeSecuredForUpdate`. You can view this data by installing the Metadata Browser solution described in [Browse table definitions in your environment](/power-apps/developer/data-platform/browse-your-metadata).
+
+> [!TIP]
+> [Learn how a developer can query Dataverse to get a list of all the columns that can be secured](/power-apps/developer/data-platform/field-security-entities#discover-which-columns-can-be-secured)
 
 
 ## Best practices
@@ -137,14 +148,14 @@ When a [calculated column](/power-apps/maker/data-platform/define-calculated-fie
 _Composite columns_ include data from multiple columns. For example, the [`contact` table](/power-apps/developer/data-platform/reference/entities/contact) [`fullname`](/power-apps/developer/data-platform/reference/entities/contact#BKMK_FullName) and [`address1_composite`](/power-apps/developer/data-platform/reference/entities/contact#BKMK_Address1_Composite) columns are composite columns. To completely secure data included in composite columns, you must secure and configure the appropriate column security profiles on multiple columns for the table. For example, to completely secure the `address1_composite` column, you need to secure all of these the columns that begin with `address1_` in both the [contact](/power-apps/developer/data-platform/reference/entities/contact) and [address (`customeraddress`)](/power-apps/developer/data-platform/reference/entities/customeraddress) tables.
 
 
-> [!Note]
+> [!NOTE]
 > Changes to column security require a browser refresh from the end user on the client (like a model-driven app) for the changes to take effect. This should be considered when dynamically adjusting access rules.
 
 ### Related information
 
-[Enable or disable security for a column to control access](enable-disable-security-field.md) 
-[Column-level security example](column-level-security-example.md) 
-[Hierarchy security](hierarchy-security.md)
-
+[Enable or disable security for a column to control access](enable-disable-security-field.md)  
+[Column-level security example](column-level-security-example.md)  
+[Hierarchy security](hierarchy-security.md)  
+[Column-level security with code](/power-apps/developer/data-platform/column-level-security)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
