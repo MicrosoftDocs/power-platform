@@ -72,7 +72,7 @@ rate than previous solutions.
 
 ### Components
 
-:::image type="content" source="media/daimler-truck-modernizes-policies/components.png" alt-text="Screenshot of the Policy Navigator App components showing Power Apps canvas app, model-driven app, and SharePoint integration.":::
+:::image type="content" source="media/daimler-truck-modernizes-policies/components.png" alt-text="Screenshot of the Policy Navigator App components showing Power Apps canvas app, model-driven app, and SharePoint integration." lightbox="media/daimler-truck-modernizes-policies/components.png":::
 
 The Policy Navigator App has three components:
 
@@ -101,13 +101,13 @@ policies directly within the system through a structured process.
 The following image shows the Policy Navigator Home page, where the user can
 browse, search and filter policies.
 
-:::image type="content" source="media/daimler-truck-modernizes-policies/image2.png" alt-text="Screenshot of the Policy Navigator Home page with search and filter options.":::
+:::image type="content" source="media/daimler-truck-modernizes-policies/pn_home.png" alt-text="Screenshot of the Policy Navigator Home page with search and filter options." lightbox="media/daimler-truck-modernizes-policies/pn_home.png":::
 
 The following image displays a policy detail page, providing a clear
 description of the policy along with comprehensive information and
 direct access to related documents.
 
-:::image type="content" source="media/daimler-truck-modernizes-policies/image3.png" alt-text="Screenshot of a policy detail page showing comprehensive policy information and documents.":::
+:::image type="content" source="media/daimler-truck-modernizes-policies/detail.png" alt-text="Screenshot of a policy detail page showing comprehensive policy information and documents." lightbox="media/daimler-truck-modernizes-policies/detail.png":::
 
 Furthermore, the policy detail page includes the "Keep Me Posted"
 feature, which enables real-time notifications about policy updates.
@@ -120,13 +120,13 @@ The following image shows the administrative model-driven application,
 which allows administrators to add new policies or edit existing
 policies.
 
-:::image type="content" source="media/daimler-truck-modernizes-policies/image4.png" alt-text="Screenshot of the administrative model-driven application for policy management.":::
+:::image type="content" source="media/daimler-truck-modernizes-policies/model_driven.png" alt-text="Screenshot of the administrative model-driven application for policy management." lightbox="media/daimler-truck-modernizes-policies/model_driven.png":::
 
 The following illustrations show policy creation process, where
 administrators can set permissions and make further
 changes.
 
-:::image type="content" source="media/daimler-truck-modernizes-policies/image5.png" alt-text="Screenshot of the policy creation process with permissions and editing options.":::
+:::image type="content" source="media/daimler-truck-modernizes-policies/policy_creation.png" alt-text="Screenshot of the policy creation process with permissions and editing options." lightbox="media/daimler-truck-modernizes-policies/policy_creation.png":::
 
 For policy updates, the app streamlines processes by enabling minor
 revisions without requiring new version creation. The app maintains
