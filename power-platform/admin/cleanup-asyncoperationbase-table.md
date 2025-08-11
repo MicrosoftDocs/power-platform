@@ -128,7 +128,7 @@ If you switch the view to display jobs that are scheduled, in progress, or compl
 
 If the [Deletion service](deletion-service-to-automatically-delete-completed-system-jobs) or the out-of-the-box system bulk deletion jobs don't meet your organization's needs, you can create your own bulk deletion job.
 
-First, turn the Deletion Service off by:
+First, turn the Deletion Service off by completing the following steps.
 1. Add and edit the [EnableSystemJobCleanup](environment-database-settings.md#override-database-settings).
 1. Set the **EnableSystemJobCleanup** to 'false'.
 
@@ -157,17 +157,19 @@ To unblock customers that have significant asyncoperation size, we introduced a 
 - There's no change with respect to creation steps for bulk, delete jobs.
 
 ## Plug-in trace logs
-[Plug-in](/power-apps/developer/data-platform/tutorial-write-plug-in) can be used for asynchronous operation, an example is to create a task upon an account creation. When you are testing the plug-in, you can set [PluginTraceLogSetting](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging) to all or exceptions. You can view the plug-in trace logs in Power Platform Environment Settings. 
-To automate the cleanup of Plug-in Trace logs, Dataverse provides a recurring job that deletes records older than 1 day.
--	This job runs every day, ensuring that the system does not retain unnecessary Plug-in Trace logs indefinitely.
+[Plug-in](/power-apps/developer/data-platform/tutorial-write-plug-in) can be used for asynchronous operation. An example is to create a task upon an account creation. When you are testing the plug-in, you can set [PluginTraceLogSetting](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging) to all or exceptions. You can view the plug-in trace logs in the Power Platform Environment Settings app. 
+
+To automate the cleanup of Plug-in trace logs, Dataverse provides a recurring job that deletes records older than one day.
+-	This job runs every day, ensuring that the system does not retain unnecessary Plug-in trace logs indefinitely.
 -	The deletion process helps free up storage space and keeps the system performing efficiently.
 
-Although you can delete Plug-in trace logs daily, it's recommended not to enable this option in your Production environment as it may affect system performance and storage. Instead, ensure that the [PluginTraceLogSetting](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging) is set to off for the Production environment. This best practice ensures that the plugin trace log table will not grow uncontrollably and causes the database to reach its capacity limit.
+Although you can delete Plug-in trace logs daily, it's recommended not to allow this option in your production environment, as it may affect system performance and storage. Instead, ensure that the [PluginTraceLogSetting](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging) is set to off for the production environment. This best practice ensures that the plug-in trace log table doesn't grow uncontrollably and cause the database to reach its capacity limit.
 
-## Process sessions for Sync Workflows
-Process session (dialog session) is created when a user run or execute a dialog process. It contains the logs about the run such as the user who ran it, time the process started, and the actions performed.
-To automate the cleanup of Process sessions, Dataverse provides a recurring job that deletes records older than 1 day. 
-- This job runs every day, ensuring that the system does not retain unnecessary process sessions indefinitely.
+## Process sessions for sync workflows
+Process session (dialog session) is created when a user runs or executes a dialog process. It contains the logs about the run, such as the user who ran it, time the process started, and the actions performed.
+
+To automate the cleanup of process sessions, Dataverse provides a recurring job that deletes records older than one day. 
+- This job runs every day, ensuring that the system doesn't retain unnecessary process sessions indefinitely.
 - The deletion process helps free up storage space and keeps the system performing efficiently.
 
 ## Best practices for designing workflows
