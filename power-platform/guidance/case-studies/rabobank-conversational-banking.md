@@ -100,7 +100,7 @@ Their decision is driven by three key factors:
 
 Rabobank uses generative AI in their fallback topics when the agent can't answer a question. However, the setup resides outside Copilot Studio.
 
-They currently use Azure AI Foundry to deploy AI models, within their own Azure subscription to ensure compliance, which is important to Rabobank. To use generative AI in SaaS (Software as a Sevice) products, certain approvals are required. Deploying models in their own Azure subscription is a more efficient way to use generative AI.
+They currently use Azure AI Foundry to deploy AI models, within their own Azure subscription to ensure compliance, which is important to Rabobank. To use generative AI in SaaS (Software as a Service) products, certain approvals are required. Deploying models in their own Azure subscription is a more efficient way to use generative AI.
 
 An Azure Function is called from the agent's fallback topic, through an HTTP call, including the conversation ID and bot ID. It performs the following functions:
 
