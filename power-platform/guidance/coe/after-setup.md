@@ -33,7 +33,7 @@ We announce updates (bug fixes, enhancements, new features, and deprecations) th
 
 ### GitHub release notes
 
-Each release of the CoE Starter Kit includes release notes that detail bug fixes and enhancements addressed by the release. Review the release notes before installing the new version in your organization.
+Each release of the CoE Starter Kit includes release notes that detail bug fixes and enhancements that the release addresses. Review the release notes before you install the new version in your organization.
 
 #### View release notes
 
@@ -92,9 +92,9 @@ Download the latest version of the CoE Starter Kit compressed file ([aka.ms/CoeS
 
 Before installing the upgrade, check that the solution is in a healthy state to receive the new updates.
 
-Making any changes to flows or apps in the solution creates an unmanaged layer. Components with unmanaged layers don't receive updates until you remove that unmanaged layer. For more information, see [Solution layers](/power-platform/alm/solution-layers-alm).
+Making any changes to flows or apps in the solution creates an unmanaged layer. Components with unmanaged layers don't receive updates until you remove that unmanaged layer. Learn more in [Solution layers](/power-platform/alm/solution-layers-alm).
 
-All flows with *Admin \| Sync Template v* in the name are responsible for collecting your tenant's inventory and building the foundation that the CoE Starter Kit relies on. Don't customize these flows. If you have extra requirements for what inventory to collect, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=&labels=coe-starter-kit%2Cenhancement&template=3-coe-starter-kit-feature.yml&title=%5BCoE+Starter+Kit+-+Feature%5D%3A+FEATURE+TITLE) or create your own flow. For more information, see [Extending the CoE Starter Kit](modify-components.md).
+All flows with *Admin \| Sync Template v* in the name are responsible for collecting your tenant's inventory and building the foundation that the CoE Starter Kit relies on. Don't customize these flows. If you have extra requirements for what inventory to collect, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=&labels=coe-starter-kit%2Cenhancement&template=3-coe-starter-kit-feature.yml&title=%5BCoE+Starter+Kit+-+Feature%5D%3A+FEATURE+TITLE) or create your own flow. Learn more in [Extending the CoE Starter Kit](modify-components.md).
 
 Before installing the upgrade, remove unmanaged layers from the inventory flows.
 
@@ -117,9 +117,9 @@ You can check for unmanaged layers on the inventory flows by using the [Coe Admi
 
 You won't receive updates for any cloud flow or canvas app that you changed until you remove the unmanaged layer.
 
-1. To keep your changes, see [extend the CoE Starter Kit](modify-components.md).
+1. To keep your changes, learn more in [extend the CoE Starter Kit](modify-components.md).
  
-1. To remove your changes, delete all unmanaged layers before the update. A component likely changed if the modified date is more recent than the latest install. To avoid creating unmanaged layers, see our recommendations for [extending the CoE Starter Kit](modify-components.md).
+1. To remove your changes, delete all unmanaged layers before the update. A component likely changed if the modified date is more recent than the latest install. To avoid creating unmanaged layers, learn more in [extending the CoE Starter Kit](modify-components.md).
    
    1. Select the ellipsis (**...**) > **See solution layers**.
         
