@@ -218,7 +218,7 @@ Users who were granted permission to [read unmasked fields](#grant-permissions-t
 
 :::image type="content" source="media/eye-icon.png" alt-text="Select the eye icon to read the unmasked values on the form." lightbox="media/eye-icon.png":::
 
-To read the unmasked values, select the "Read" icon :::image type="content" source="media/-and-manage-masking-rules/icon-read.png" alt-text="A screenshot of read icon.":::.
+To read the unmasked values, select the "Read" icon :::image type="content" source="media/create-and-manage-masking-rules/icon-read.png" alt-text="A screenshot of read icon.":::.
 
 All read unmasked value requests are audited.
 
