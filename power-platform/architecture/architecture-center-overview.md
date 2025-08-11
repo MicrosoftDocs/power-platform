@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 04/17/2025
+ms.date: 07/15/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -43,3 +43,8 @@ Use Power Platform Well-Architected to evaluate and align your decisions with de
 - [Experience Optimization](/power-platform/well-architected/experience-optimization/)
 
 Evaluate the trade-offs between these architectural pillars to create a design that meets business requirements and is durable, maintainable, secure, and scalable.
+
+## Related resources
+
+- [Azure Architecture Center](/azure/architecture/)
+- [Dynamics 365 reference architectures](/dynamics365/guidance/reference-architectures/)

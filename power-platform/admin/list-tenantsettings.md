@@ -6,6 +6,7 @@ ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 01/10/2025
+ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -106,7 +107,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |disableSurveyFeedback | Boolean | Ability to disable all NPS survey feedback prompts in Power Platform. Default value is false.|
 |disableTrialEnvironmentCreationByNonAdminusers | Boolean | Restrict all trial environments to be created by tenant admins, Power Platform admins, or Dynamics 365 service admins. Default value is false.|
 |disableCapacityAllocationByEnvironmentAdmins | Boolean | Ability to disable capacity allocation by environment administrators. Default value is false.|
-|disableSupportTicketsVisibleByAllUsers | Boolean | Allows users, who already have access to the **Help + Support** page in Power Platform admin center, to see support requests created by other users in the tenant. Default value is True, which means this feature is turned off by default.|
+|disableSupportTicketsVisibleByAllUsers | Boolean | Allows users, who already have access to the **Support** page in Power Platform admin center, to see support requests created by other users in the tenant. Default value is True, which means this feature is turned off by default.|
 |powerPlatform.search.disableDocsSearch | Boolean | When this setting is true, users in the environment can see a message that indicates Microsoft Learn and documentation search categories have been turned off by the administrator. Default value is false.|
 |powerPlatform.search.disableCommunitySearch | Boolean | When this setting is true, users in the environment can see a message that indicates community and blog search categories have been turned off by the administrator. Default value is false.|
 |powerPlatform.search.disableBingVideoSearch | Boolean | When this setting is true, users in the environment can see a message that indicates video search categories have been turned off by the administrator. Default value is false.|

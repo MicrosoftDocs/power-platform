@@ -6,13 +6,15 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 01/27/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: ampatra 
 ms.reviewer: sericks
 contributors:
   - ShawnNandiMSFT
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 ---
 # Set up pay-as-you-go 
 

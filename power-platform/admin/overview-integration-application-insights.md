@@ -11,6 +11,7 @@ ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Overview of integration with Application Insights

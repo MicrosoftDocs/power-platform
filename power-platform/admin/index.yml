@@ -24,7 +24,7 @@ landingContent:
     linkLists:
        - linkListType: overview
          links:
-          - text: Overview
+          - text: Overview of the Power Platform admin center
             url: admin-documentation.md
           - text: Power Platform licensing
             url: pricing-billing-skus.md
