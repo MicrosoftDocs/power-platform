@@ -1,10 +1,9 @@
 ---
-title: "Data loss prevention activity logging  | MicrosoftDocs"
-description: Data loss prevention activity logging
-
+title: Data policy activity logging 
+description: Data policy activity logging
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/07/2024
+ms.date: 08/12/2025
 ms.subservice: admin
 author: sericks007
 ms.author: sericks
@@ -14,9 +13,7 @@ search.audienceType:
 ms.custom: sfi-image-nochange
 ---
 
-# Data loss prevention activity logging
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+# Data policy activity logging
 
 > [!Warning]
 > The schema documented in this article is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin-activity-logging.md#activity-category-data-policy-events).
@@ -24,9 +21,9 @@ ms.custom: sfi-image-nochange
 > [!NOTE]
 > Activity logging for data loss protection policies is not currently available in sovereign clouds.
 
-Data loss protection (DLP) policy activities are tracked from the [Microsoft 365 Security and Compliance Center](/microsoft-365/?view=o365-worldwide&preserve-view=true). 
+Data policy activities are tracked from the [Microsoft 365 Security and Compliance Center](/microsoft-365/?view=o365-worldwide&preserve-view=true). 
 
-To log DLP activities, follow these steps:
+To log data policy activities, follow these steps:
 
 1. Sign in to the [Security & Compliance center](https://protection.office.com) as a tenant admin.
 
@@ -40,15 +37,15 @@ On the **Audit log search** screen, you can search audit logs across many popula
 
 After you access **Audit log search**, you can filter for specific activities by expanding **Activities** and then scrolling to find the section dedicated to Microsoft Power Platform activities. 
 
-## What DLP events are audited
+## What data policy events are audited
 
 The following are the user actions you can audit:
 
-- Created DLP Policy: When a new DLP policy is created 
-- Updated DLP Policy: When an existing DLP policy is updated 
-- Deleted DLP Policy: When a DLP policy is deleted 
+- Created Data Policy: When a new data policy is created 
+- Updated Data Policy: When an existing data policy is updated 
+- Deleted Data Policy: When a data policy is deleted 
  
-## Base schema for DLP audit events 
+## Base schema for data policy audit events 
 
 Schemas define which fields are sent to the [Microsoft 365 Security and Compliance Center](/microsoft-365/?view=o365-worldwide&preserve-view=true). Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to DLP policies. In the following table, **Name** and **Additional Info** are the DLP policy–specific columns. 
 
@@ -158,8 +155,8 @@ The following is an example of the **Additional Info** JSON for an update operat
 ```
 
 
-### See also
-[Data loss prevention policies](wp-data-loss-prevention.md)
+### Related content
+[Data policies](wp-data-loss-prevention.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
