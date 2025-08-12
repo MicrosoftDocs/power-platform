@@ -60,8 +60,8 @@ and self-service capabilities, enabling efficient interaction with
 corporate policies. Simultaneously, the Power Apps model-driven app
 offers a powerful backend for administrators to manage policy lifecycles
 and ensure governance compliance. These dual applications address both
-user accessibility and operational governance, creating a comprehensive
-solution that's tailored to diverse organizational needs.
+user accessibility and operational governance that create a comprehensive
+solution which is tailored to diverse organizational needs.
 
 Cost efficiency is another benefit of the Policy Navigator App. By
 utilizing existing enterprise-wide Power Apps licenses, additional
