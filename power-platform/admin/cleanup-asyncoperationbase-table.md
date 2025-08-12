@@ -157,7 +157,7 @@ To unblock customers that have significant asyncoperation size, we introduced a 
 - There's no change with respect to creation steps for bulk, delete jobs.
 
 ## Plug-in trace logs
-[Plug-in](/power-apps/developer/data-platform/tutorial-write-plug-in) can be used for asynchronous operation. An example is to create a task upon an account creation. When you're testing the plug-in, you can set [PluginTraceLogSetting](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging) to all or exceptions. You can view the plug-in trace logs in the Power Platform Environment Settings app. 
+[Plug-in](/power-apps/developer/data-platform/tutorial-write-plug-in) can be used for asynchronous operations. An example is to create a task upon account creation. When you're testing the plug-in, you can set [PluginTraceLogSetting](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging) to all or exceptions. You can view the plug-in trace logs in the Power Platform Environment Settings app. 
 
 To automate the cleanup of Plug-in trace logs, Dataverse provides a recurring job that deletes records older than one day.
 -	This job runs every day, ensuring that the system doesn't retain unnecessary Plug-in trace logs indefinitely.
