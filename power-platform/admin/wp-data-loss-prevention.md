@@ -52,9 +52,9 @@ Explore virtual connectors and their role in [data loss prevention in Microsoft 
 
 ### Model Context Protocol (MCP) connectors
 
-Model Context Protocol (MCP) connectors are a class of connectors that provide additional metadata to expose MCP-enabled API endpoints, known as Tools. MCP connectors extend typical connector functionality and enable richer experiences for generative AI in Microsoft Copilot Studio.
+Model Context Protocol (MCP) connectors are a class of connectors that provide additional metadata to expose MCP-enabled API endpoints, known as _tools_. MCP connectors extend typical connector functionality and enable richer experiences for generative AI in Microsoft Copilot Studio.
 
-Many of the non-blockable connectors in Microsoft Power Platform now support MCP.  These connectors and their MCP Servers can be managed and restricted through [Advanced Connector Policies](./advanced-connector-policies.md).
+Many of the non-blockable connectors in Microsoft Power Platform now support MCP. These connectors and their MCP servers can be managed and restricted through [advanced connector policies](./advanced-connector-policies.md).
 
 ## Connections 
 When a maker is building an app or a flow and needs to connect to data, they can use one of the above connector types.  When a connector is first added to an app, a connection is established using the authentication protocols supported by that particular connector.  These connections represent a saved credential and are stored within the environment that is hosting the app or flow.  For more information about authenticating to connectors, see [Connecting and authenticating to data sources](/power-platform/admin/security/connect-data-sources).
