@@ -43,15 +43,15 @@ Key capabilities include:
 ## Top-level metrics
 
 - **Total users**: All users across connected finance and operations environments.
-- **Users with unassigned licenses**: Users who are assigned roles that require a license but do not have a a license assigned in in [Microsoft 365 admin center](https://admin.microsoft.com).
+- **Users with unassigned licenses**: Users who are assigned roles that require a license but do not have a license assigned in in [Microsoft 365 admin center](https://admin.microsoft.com).
 
-Select metrics to view details for each user.
+Select Total users or Users with unassigned licenses metrics to **view details** for each user.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-metrics.png" alt-text="User License Consumption metrics" lightbox="media/fno-user-licensing/user-license-consumption-metrics.png":::
 
 ## Product-level license summaries
 
-Each Dynamics 365 finance and operations product shows a card with:
+This view helps you check whether the licenses you own match the licenses your users need. By comparing required licenses to those that are purchased, assigned, and available, you can quickly spot gaps and decide whether to reallocate existing licenses or purchase more. Each Dynamics 365 finance and operations product shows a card with:
 
 - Total users requiring a license  
 - By product, *base licenses* purchased and assigned  
@@ -86,7 +86,7 @@ Identify users with missing license assignments in [Microsoft 365 admin center](
 | **Missing licenses** | Required Finance and Operations app license(s) not assigned to the user in [Microsoft 365 admin center](https://admin.microsoft.com) |
 
 > [!IMPORTANT]
-> Users in the **Users with unassigned licenses** view can't sign in to the system once license validation starts.
+> Users in the **Users with unassigned licenses** view cannot sign in to the system once license validation starts.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png" alt-text="Users with unassigned licenses" lightbox="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png":::
 
@@ -109,7 +109,7 @@ Use the filter in the **Missing license** column to show users missing a specifi
 
 ## Drill into user license details
 
-On a user, select a **Required license** link to open the **Required license details per environment** screen so you can check why a license is needed and in which environment.
+For any user, select the **Required license** link to open the **Required license details per environment** screen, where you can see why the license is needed and which environment requires it.
 
 | Field | Description |
 |-------|-------------|
