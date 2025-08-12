@@ -2,7 +2,7 @@
 title: Create and manage masking rules (preview)
 description: Learn how to create and manage masking rules in Microsoft Power Apps.
 ms.component: pa-admin
-ms.date: 08/05/2025
+ms.date: 08/11/2025
 ms.topic: overview
 ms.custom: "admin-security"
 author: paulliew
@@ -218,9 +218,12 @@ Users who were granted permission to [read unmasked fields](#grant-permissions-t
 
 :::image type="content" source="media/eye-icon.png" alt-text="Select the eye icon to read the unmasked values on the form." lightbox="media/eye-icon.png":::
 
-To read the unmasked values, select the "Read" icon (icon image).
+To read the unmasked values, select the "Read" icon (:::image type="content" source="media/create-and-manage-masking-rules/icon-read.png" alt-text="A screenshot of read icon.":::).
 
 All read unmasked value requests are audited.
+
+> [!NOTE]
+> The **Read** icon is currently visible only to users with the System Administrator security role with **Read Unmasked** permissions. We’re working on enabling visibility for non-administrator users in an upcoming update.
 
 #### Creating and updating unmasked values on the form
 
@@ -244,7 +247,9 @@ Read unmasked value is also logged.
 
 ### Reading unmasked values on a form
 
-Masked values are displayed on the detail area of a main form.
+Masked values are displayed on the detail area of a main form.  
+
+Currently, only system administrators can view the **Read** icon on the form. We're working to make it visible to non-administrators in the next update.
 
 ### Creating and updating unmasked values on the form
 
