@@ -1,208 +1,116 @@
 ---
-title: Daimler Truck modernizes policies with Power Platform
-description: Learn how Daimler Truck built a comprehensive policy management solution with Power Apps and Dataverse.
-#customer intent: As a Power Platform developer, I want to learn how to build a comprehensive policy management solution using Power Apps and Dataverse, so that I can modernize my organization's policy management processes.
+title: Daimler Truck transforms policy management with Power Apps, Dataverse, and Managed Environments
+description: Discover how Daimler Truck modernized policy management using Power Apps, Dataverse, and Managed Environments to enhance efficiency and collaboration.
+#customer intent: As a business decision maker, I want to evaluate the benefits of using Power Apps, Dataverse, and Managed Environments for policy management so that I can improve operational efficiency and reduce costs.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 08/11/2025
+ms.date: 08/12/2025
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:08/12/2025
 ---
 
-# Daimler Truck modernizes policies with Power Platform
+# Daimler Truck transforms policy management with Power Apps, Dataverse, and Managed Environments
 
-[Daimler Truck](https://www.daimlertruck.com), one of the world's
-largest commercial vehicle manufacturers, is modernizing policy
-management with Microsoft Power Platform and Dataverse.
+[Daimler Truck](https://www.daimlertruck.com), one of the world's largest commercial vehicle manufacturers, is modernizing policy management with Microsoft Power Platform.
 
-The company operates globally, focusing on the development, production,
-and distribution of trucks and buses across various industries. The
-company employs around 100,000 people worldwide.
+The company operates globally and focuses on developing, producing, and distributing trucks and buses across various industries. It employs about 100,000 people worldwide.
 
 ## Challenges
 
-After becoming an independent company, Daimler Truck embraced the
-opportunity to design a modern set of tools and processes tailored to
-its evolving needs. The company recognized that the former corporate policy
-database system no longer aligned with its goals. This recognition led to a
-focused exploration of the Microsoft Power Platform, unlocking new
-possibilities for flexibility, productivity, and future-ready
-operations.
+After becoming an independent company, Daimler Truck embraced the opportunity to design a modern set of tools and processes tailored to its evolving needs. The company recognized that the former corporate policy database system no longer aligned with its goals. This recognition led to a focused exploration of the Microsoft Power Platform, unlocking new possibilities for flexibility, productivity, and future-ready operations.
 
-The project Policy Navigator marked an important step as the most
-comprehensive solution built on Microsoft Power Platform in the company,
-designed for all employees. Transitioning to a new platform came with
-some limitations as certain former processes couldn't be replicated
-one-to-one.
+The project Policy Navigator marked an important step as the most comprehensive solution built on  Power Platform in the company, designed for all employees. Transitioning to a new platform came with some limitations because certain former processes couldn't be replicated one-to-one.
 
-This shift also encouraged the project team to identify opportunities to
-rethink and improve several process steps, making them more aligned with
-the platform's capabilities and the company's evolving needs.
+This shift encouraged the project team to identify opportunities to rethink and improve several process steps, aligning them with the platform's capabilities and the company's evolving needs.
 
 ## Solution
 
-In response to the challenge of establishing a new, independent database
-system, Daimler Truck uses Power Platform's low-code development
-capabilities, robust collaboration tools, and cost-efficiency. The data
-is stored in Microsoft Dataverse, a unified and scalable data platform
-that offers security, compliance, and deep integration across the
-Microsoft ecosystem. This strategic adoption aligns with the company's
-digital roadmap, which is aimed at fostering scalability, operational
-efficiency, and innovation.
+Daimler Truck addressed the challenge of creating a new independent database system by using Power Platform's low-code development capabilities, collaboration tools, and cost efficiency. The data is stored in Microsoft Dataverse, a unified and scalable data platform that offers security, compliance, and deep integration across the Microsoft ecosystem. This strategic adoption aligns with the company's digital roadmap, which is aimed at fostering scalability, operational efficiency, and innovation.
 
-The Policy Navigator App is used by employees throughout the company,
-acting as an achievement the company-wide adoption of Power Platform.
+Employees across the company use the Policy Navigator App, achieving company-wide adoption of Power Platform.
 
-The app is designed with an intuitive and user-focused interface. For
-everyday users, the Power Apps canvas app provides seamless navigation
-and self-service capabilities, enabling efficient interaction with
-corporate policies. Simultaneously, the Power Apps model-driven app
-offers a powerful backend for administrators to manage policy lifecycles
-and ensure governance compliance. These dual applications address both
-user accessibility and operational governance that create a comprehensive
-solution which is tailored to diverse organizational needs.
+The app is designed with an intuitive and user-focused interface. For everyday users, the Power Apps canvas app provides seamless navigation and self-service capabilities, enabling efficient interaction with corporate policies. Simultaneously, the Power Apps model-driven app offers a powerful backend for administrators to manage policy lifecycles and ensure governance compliance. These dual applications address both user accessibility and operational governance, creating a comprehensive solution tailored to diverse organizational needs.
 
-Cost efficiency is another benefit of the Policy Navigator App. By
-utilizing existing enterprise-wide Power Apps licenses, additional
-licensing costs were avoided. The app also replaces the former system
-with a scalable, agile solution, which drives additional cost savings.
-Because the app is intuitive, it benefits from a higher adoption
-rate than previous solutions.
+Cost efficiency is another benefit of the Policy Navigator App. By using existing enterprise-wide Power Apps licenses, the app avoids additional licensing costs. The app also replaces the former system with a scalable and agile solution, driving cost savings. In addition, its intuitive design has led to a higher adoption rate than previous solutions.  
 
-### Components
+## Components
 
-:::image type="content" source="media/daimler-truck-modernizes-policies/components.png" alt-text="Screenshot of the Policy Navigator App components showing Power Apps canvas app, model-driven app, and SharePoint integration." lightbox="media/daimler-truck-modernizes-policies/components.png":::
+The Policy Navigator app includes three components:  
 
-The Policy Navigator App has three components:
+- **Power Apps canvas app**: Enables users (internal employees) to search, filter, find, and read corporate policies.
+- **Power Apps model-driven app**: Enables administrators to track each policy's lifecycle, from draft to publication. The app provides details about new policy versions and the timing of minor changes.
+- **SharePoint**: Provides a folder system for collaboration on the policy files.
 
-- **Power Apps canvas app**: This application enables users (internal
-  employees) to search, filter, find, and read the policies.
+:::image type="content" source="media/daimler-truck-modernizes-policies/components.png" alt-text="Diagram showing the three components of the Policy Navigator app, including the canvas app for internal users, model-driven app for admins, and SharePoint for document collaboration." lightbox="media/daimler-truck-modernizes-policies/components.png":::
 
-- **Power Apps model-driven app**: This application enables
-  administrators to track each policy's lifecycle, from draft to
-  publication. The app includes information about the new policy
-  versions and when minor changes are made.
+### Canvas app user application
 
-- **SharePoint**: A folder system for collaboration on the
-  policy files.
+Employees access the various corporate policies via the canvas app. Information is presented in a modern, user-friendly format that streamlines readability and usability.
 
-### User application implemented with canvas app
+User-focused features further enhance the app's value. Advanced filtering options allow employees to search for corporate policies by department, region, plant ID, and business role, with the goal to provide quick and relevant access to information. The app also includes a policy request feature, enabling employees to suggest new corporate policies directly within the system through a structured process.
 
-Employees can access the different corporate policies via this app, presented in a modern, user-friendly format that streamlines the readability and usability.
+The following image shows the Policy Navigator Home page, where the user can browse, search, and filter policies.
 
-A host of user-centric functionalities further enhance the app's value.
-Advanced filtering options allow employees to search for corporate
-policies by department, region, plant ID, or business role, which
-ensures quick and relevant access to information. The app also includes
-a policy request feature, enabling employees to suggest new corporate
-policies directly within the system through a structured process.
+:::image type="content" source="media/daimler-truck-modernizes-policies/policy-navigator-home.png" alt-text="Screenshot of the Policy Navigator Home page with search and filter options." lightbox="media/daimler-truck-modernizes-policies/policy-navigator-home.png":::
 
-The following image shows the Policy Navigator Home page, where the user can
-browse, search and filter policies.
+The following image shows a policy detail page with a description of the policy, detailed information, and links to related documents.
 
-:::image type="content" source="media/daimler-truck-modernizes-policies/pn_home.png" alt-text="Screenshot of the Policy Navigator Home page with search and filter options." lightbox="media/daimler-truck-modernizes-policies/pn_home.png":::
+:::image type="content" source="media/daimler-truck-modernizes-policies/detail.png" alt-text="Screenshot of a policy detail page showing comprehensive policy information and related documents." lightbox="media/daimler-truck-modernizes-policies/detail.png":::
 
-The following image displays a policy detail page, providing a clear
-description of the policy along with comprehensive information and
-direct access to related documents.
+The policy detail page includes the "Keep Me Posted" feature, which enables real-time notifications about policy updates. This feature strengthens engagement and supports greater transparency across the organization.
 
-:::image type="content" source="media/daimler-truck-modernizes-policies/detail.png" alt-text="Screenshot of a policy detail page showing comprehensive policy information and documents." lightbox="media/daimler-truck-modernizes-policies/detail.png":::
+### Model-driven admin app
 
-Furthermore, the policy detail page includes the "Keep Me Posted"
-feature, which enables real-time notifications about policy updates.
-This helps strengthen engagement and supports greater transparency
-throughout the organization.
+The following image shows the model-driven application. It enables administrators to add new policies or edit existing ones.
 
-### Administrative model-driven app
+:::image type="content" source="media/daimler-truck-modernizes-policies/model-driven-app.png" alt-text="Screenshot of the administrative model-driven application for policy management." lightbox="media/daimler-truck-modernizes-policies/model-driven-app.png":::
 
-The following image shows the administrative model-driven application,
-which allows administrators to add new policies or edit existing
-policies.
+The following images show the policy creation process, where administrators set permissions and make further changes.
 
-:::image type="content" source="media/daimler-truck-modernizes-policies/model_driven.png" alt-text="Screenshot of the administrative model-driven application for policy management." lightbox="media/daimler-truck-modernizes-policies/model_driven.png":::
+:::image type="content" source="media/daimler-truck-modernizes-policies/policy-creation.png" alt-text="Screenshot of the policy creation process with permissions and editing options." lightbox="media/daimler-truck-modernizes-policies/policy-creation.png":::
 
-The following illustrations show policy creation process, where
-administrators can set permissions and make further
-changes.
-
-:::image type="content" source="media/daimler-truck-modernizes-policies/policy_creation.png" alt-text="Screenshot of the policy creation process with permissions and editing options." lightbox="media/daimler-truck-modernizes-policies/policy_creation.png":::
-
-For policy updates, the app streamlines processes by enabling minor
-revisions without requiring new version creation. The app maintains
-structured workflows for major updates to ensure clarity and
-communication across stakeholders.
+For policy updates, the app streamlines processes by enabling minor revisions without creating new versions. It maintains structured workflows for major updates to ensure clarity and communication with stakeholders.
 
 ### Governance
 
-Governance has been a key area of focus, with Daimler Truck establishing
-a specialized global delivery team to drive operational maturity with
-Power Platform Managed Environments. The organization has cultivated a
-thriving low-code ecosystem, with over 8,000 makers driving innovation
-and putting over 1,400 active apps in production.
+Governance is a key area of focus. Daimler Truck has established a specialized global delivery team to drive operational maturity with Power Platform Managed Environments. The organization has cultivated a thriving low-code ecosystem, with over 8,000 makers driving innovation and putting over 1,400 active apps in production.
 
-The company established the Policy Navigator App and activated over
-4,000 Power Platform Managed Environments to make sure they use the
-latest and greatest capabilities that help keep their tenant secure.
+The company established the Policy Navigator App and activated over 4,000 Power Platform Managed Environments to ensure they use the latest capabilities to help keep their tenant secure.
 
 ## Key takeaways
 
-Operational efficiency has improved significantly, simplifying policy
-access and saving valuable time and resources across the organization.
-The app has also facilitated collaboration among Daimler Truck's
-globally distributed responsibilities for corporate policies and works
-agreements. Transitioning from the former system to a low-code solution
-has also optimized costs, reinforcing the company's commitment to
-technology-driven transformation.
+Operational efficiency has improved significantly, simplifying policy access and saving valuable time and resources across the organization. The app has also facilitated collaboration among Daimler Truck's globally distributed responsibilities for corporate policies and works agreements. Transitioning from the former system to a low-code solution has also optimized costs and reinforced the company's commitment to technology-driven transformation.
 
-The case study of Daimler Truck's Policy Navigator App demonstrates the
-potential of using Power Apps, Dataverse, and Managed Environments to
-build a policy exploration and administration application, and it
-demonstrates the opportunity to scale the impact by enabling hundreds of
-their employees to create their own low-code applications to increase
-productivity. Also, the idea of using a model-driven application as
-backend and a canvas app as frontend is creative and opens up many possibilities.
+The case study of Daimler Truck's Policy Navigator App demonstrates the potential of using Power Apps, Dataverse, and Managed Environments to build a policy exploration and administration application. It also demonstrates how organizations can scale their impact by enabling hundreds of their employees to create their own low-code applications to increase productivity. Using a model-driven application as the backend and a canvas app as the frontend is a creative approach that unlocks many possibilities.
 
 Here are some key takeaways:
 
 - Achieve operational efficiency.
-
 - Save time and resources.
-
-- Automation of core processes.
-
+- Automate core processes.
 - Foster cross-organizational collaboration.
-
 - Optimize and reduce system and resource costs.
+- Establish and grow a forward-thinking reputation that embraces opportunities from technological innovations.
 
-- Establish and grow a forward-thinking reputation that embraces
-  opportunities from technological innovations.
-
-The project enabled to streamline policy management, reduce costs, and
-enhancing collaboration. As the organization continues to integrate AI
-technologies and scale its governance frameworks, it's well-positioned
-to lead in using low-code platforms to drive business innovation
-and value. This solution underscores the company's commitment to
-adapting, innovating, and thriving in an increasingly dynamic and
-digital business environment.
+The project streamlined policy management, reduced costs, and enhanced collaboration. As the organization continues to integrate AI technologies and scale its governance frameworks, it's well-positioned to lead in using low-code platforms to drive business innovation and value. This solution highlights the company's commitment to adapting, innovating, and thriving in an increasingly dynamic, digital business environment.
 
 ## Looking ahead
 
-Daimler Truck is exploring how artificial intelligence can
-enhance the Policy Navigator App. The company is testing AI-powered automation
-to help employees quickly locate relevant corporate policies and better
-understand their content.
+Daimler Truck is currently exploring how artificial intelligence can enhance the Policy Navigator App. The company is testing AI-powered automation to help employees quickly locate relevant corporate policies and better understand the content.
 
-Daimler Truck's Power Platform journey shows its strong commitment
-to use cutting-edge technologies, both as a productivity tool and
-as a strategic asset in reshaping its digital future.
+Daimler Truck's Power Platform journey demonstrates its commitment to using cutting-edge technologies, both as a productivity tool and a strategic asset in reshaping its digital future.
 
-## Related resources
+## Related information
 
 - [What is Power Apps?](/power-apps/powerapps-overview)
-  - [Training for PowerApps](/training/powerplatform/power-apps)
+  - [Training for Power Apps](/training/powerplatform/power-apps)
   - [What are canvas apps?](/power-apps/maker/canvas-apps/getting-started)
   - [What are model-driven apps in Power Apps?](/power-apps/maker/model-driven-apps/model-driven-app-overview)
 - [What is Microsoft Dataverse?](/power-apps/maker/data-platform/data-platform-intro)
-  - [Get started using Dataverse](/training/paths/get-started-cds/)
+  - [Get started using Dataverse](/training/paths/get-started-cds/) (training)
 - [Managed Environments overview](/power-platform/admin/managed-environment-overview)
