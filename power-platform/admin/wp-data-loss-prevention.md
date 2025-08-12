@@ -52,12 +52,12 @@ Explore virtual connectors and their role in [data loss prevention in Microsoft 
 
 ### Model Context Protocol (MCP) connectors
 
-Model Context Protocol (MCP) connectors are a class of connectors that provide additional metadata to expose MCP-enabled API endpoints, known as _tools_. MCP connectors extend typical connector functionality and enable richer experiences for generative AI in Microsoft Copilot Studio.
+Model Context Protocol (MCP) connectors are a class of connectors that provide more metadata to expose MCP-enabled API endpoints, known as _tools_. MCP connectors extend typical connector functionality and enable richer experiences for generative AI in Microsoft Copilot Studio.
 
-Many of the non-blockable connectors in Microsoft Power Platform now support MCP. These connectors and their MCP servers can be managed and restricted through [advanced connector policies](./advanced-connector-policies.md).
+Many of the nonblockable connectors in Microsoft Power Platform now support MCP. These connectors and their MCP servers can be managed and restricted through [advanced connector policies](./advanced-connector-policies.md).
 
 ## Connections 
-When a maker is building an app or a flow and needs to connect to data, they can use one of the above connector types.  When a connector is first added to an app, a connection is established using the authentication protocols supported by that particular connector.  These connections represent a saved credential and are stored within the environment that is hosting the app or flow.  For more information about authenticating to connectors, see [Connecting and authenticating to data sources](/power-platform/admin/security/connect-data-sources).
+When a maker is building an app or a flow and needs to connect to data, they can use one of the above connector types. When a connector is first added to an app, a connection is established using the authentication protocols supported by that particular connector. These connections represent a saved credential and are stored within the environment that is hosting the app or flow.  or more information about authenticating to connectors, see [Connecting and authenticating to data sources](/power-platform/admin/security/connect-data-sources).
 
 ## Design-time versus runtime
 When an administrator chooses to limit access to either a whole connector or specific actions of a connector, there are impacts both to the maker experience and to the execution of previously created apps, flows, and chatbots.
@@ -75,10 +75,10 @@ As new data policies are created, or when existing policies are updated, there's
 4. When a configuration change is detected, each app, flow, and chatbot is evaluated to see if it violates the policy.
 5. If a violation occurs, the app, flow, or chatbot is put in to a _suspended_ or _quarantine_ state so that it can't operate.
 6. Connections are scanned. If the policy blocks the whole connector then the connection is set to a _disabled_ state so that it can't operate.
-7. Any resources which are running and attempting to use an inactive connection, action, trigger, or MCP server that is blocked, fail at runtime.   
+7. Any resources that are running and attempting to use an inactive connection, action, trigger, or MCP server that is blocked, fail at runtime.   
 
 ## Latency considerations
-The time it takes to effectively implement data policies varies from customer to customer based on their volume of environments and resources within those environments. The more apps, flows, and chatbots a customer has the longer it takes for policy changes to take full effect. For the most extreme cases, the latency for full enforcement is 24 hours. In most cases it is within an hour.
+The time it takes to effectively implement data policies varies from customer to customer based on their volume of environments and resources within those environments. The more apps, flows, and chatbots a customer has, the longer it takes for policy changes to take full effect. For the most extreme cases, the latency for full enforcement is 24 hours. In most cases, it is within an hour.
 
 ### Related content
 
