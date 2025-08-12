@@ -1,15 +1,15 @@
 ---
-title: "Connector classification  | MicrosoftDocs"
+title: Connector classification 
 description: About ways to categorize connectors within a DLP policy.
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/04/2024
+ms.date: 08/12/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
 contributors:
+  - laneswenka 
   - mikferland-msft
   - mihaelablendea
   - kavehkazms 
@@ -19,8 +19,6 @@ search.audienceType:
 ---
 
 # Connector classification
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Data groups are a simple way to categorize connectors within a data loss prevention (DLP) policy. The three data groups available are the **Business** data group, the **Non-Business** data group, and the **Blocked** data group. 
 
@@ -54,7 +52,7 @@ All third-party connectors can be blocked. All Microsoft-owned premium connector
 All connectors driving core Microsoft Power Platform functionality (like Dataverse, Approvals, and Notifications), in addition to connectors that enable core Office customization scenarios like Microsoft Enterprise Plan standard connectors, will remain non-blockable to ensure that core user scenarios remain fully functional.
 
 > [!NOTE]
-> These connectors can now be limited or disabled using [Advanced Connector Policies](./advanced-connector-policies.md).
+> These connectors can be limited or blocked using [Advanced connector policies](./advanced-connector-policies.md).
 
 However, these non-blockable connectors can be classified into **Business** or **Non-Business** data groups. These connectors broadly fall into the following categories:
 
