@@ -3,7 +3,7 @@ title: Update the Center of Excellence (CoE) Starter Kit
 description: Learn how to upgrade, test, and manage new releases for the Center of Excellence Starter Kit to keep your organization current.
 author: stjeffer
 ms.topic: how-to
-ms.date: 08/07/2025
+ms.date: 08/12/2025
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: sericks
