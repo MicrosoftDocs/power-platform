@@ -19,7 +19,7 @@ ms.custom: sfi-image-nochange
 > The schema documented in this article is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin-activity-logging.md#activity-category-data-policy-events).
 
 > [!NOTE]
-> Activity logging for data loss protection policies is not currently available in sovereign clouds.
+> Activity logging for data policies is not currently available in sovereign clouds.
 
 Data policy activities are tracked from the [Microsoft 365 Security and Compliance Center](/microsoft-365/?view=o365-worldwide&preserve-view=true). 
 
@@ -47,7 +47,7 @@ The following are the user actions you can audit:
  
 ## Base schema for data policy audit events 
 
-Schemas define which fields are sent to the [Microsoft 365 Security and Compliance Center](/microsoft-365/?view=o365-worldwide&preserve-view=true). Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to DLP policies. In the following table, **Name** and **Additional Info** are the DLP policy–specific columns. 
+Schemas define which fields are sent to the [Microsoft 365 Security and Compliance Center](/microsoft-365/?view=o365-worldwide&preserve-view=true). Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to data policies. In the following table, **Name** and **Additional Info** are the data policy–specific columns. 
 
 |Field name  |Type  |Mandatory  |Description  |
 |---------|---------|---------|---------|
@@ -64,7 +64,7 @@ Schemas define which fields are sent to the [Microsoft 365 Security and Complian
 
 ### Additional Info 
 
-The **Additional Info** field is a JSON object that contains operation-specific properties. For a DLP policy operation, it contains the following properties. 
+The **Additional Info** field is a JSON object that contains operation-specific properties. For a data policy operation, it contains the following properties. 
 
 
 |Field name   |Type  |Mandatory?  |Description  |
