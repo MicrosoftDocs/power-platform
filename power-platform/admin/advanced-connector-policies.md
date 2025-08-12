@@ -70,9 +70,9 @@ During publishing, an environment lifecycle operation is performed on every envi
 
 ### More visibility and control
 
-In [data policies](managed-environment-data-policies.md) customers couldn't see triggers, internal actions, or if an action is deprecated.  We have added these tags across all certified connectors so that administrators can quickly decide to block specific triggers from use or turn off actions which are deprecated and no longer supported by the connector publisher.
+In [data policies](managed-environment-data-policies.md) customers couldn't see triggers, internal actions, or if an action is deprecated.  We have added these tags across all certified connectors so that administrators can quickly decide to block specific triggers from use or turn off actions that are deprecated and no longer supported by the connector publisher.
 
-:::image type="content" source="media/advanced-connector-policies-2.png" alt-text="Admins can quickly decide to block specific triggers from use or turn off actions which are deprecated and no longer supported." lightbox="media/advanced-connector-policies-2.png":::
+:::image type="content" source="media/advanced-connector-policies-2.png" alt-text="Admins can quickly decide to block specific triggers from use or turn off actions that are deprecated and no longer supported." lightbox="media/advanced-connector-policies-2.png":::
 
 ### Easier management experience
 
@@ -86,13 +86,13 @@ Advanced connector policies have shipped as part of environment groups and rules
 
 Advanced connector policies now support visibility and management of Model Context Protocol (MCP) servers. MCP servers are special connector endpoints that expose MCP-enabled APIs and tooling capabilities within Power Platform.
 
-Within advanced connector policies, administrators can now see MCP servers listed alongside other connector types and may choose to block an entire MCP server. Note that, as of now, granular control over individual MCP tools (endpoints and actions) within an MCP server is not available. Blocking the entire MCP server is supported.
+Within advanced connector policies, administrators can now see MCP servers listed alongside other connector types and may choose to block an entire MCP server. As of now, granular control over individual MCP tools (endpoints and actions) within an MCP server isn't available. Blocking the entire MCP server is supported.
 
 :::image type="content" source="media/block-mcp.png" alt-text="Block MCP server in advanced connector policies.":::
 
 ## Data policy mixed mode
 
-Advanced connector policies (ACP) can be used in mixed mode with classic data policies. This allows for complimenting configurations to be made such that data policies can achieve action control and endpoint filtering until such time as those features are native to ACP.  In addition, you can use ACP to block any connector which isn't possible in classic data policies.  
+Advanced connector policies (ACP) can be used in mixed mode with classic data policies. This allows for complimenting configurations to be made such that data policies can achieve action control and endpoint filtering until such time as those features are native to ACP.  In addition, you can use ACP to block any connector that isn't possible in classic data policies.  
 
 At runtime, when a connector operation is invoked, it queries the effective policy for the current hosting environment. This includes a combined policy that merges the most restrictive settings from both classic data policies and ACP to provide full enforcement.
 
