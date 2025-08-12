@@ -43,7 +43,7 @@ the platform's capabilities and the company's evolving needs.
 ## Solution
 
 In response to the challenge of establishing a new, independent database
-system, Daimler Truck leverages Power Platform's low-code development
+system, Daimler Truck uses Power Platform's low-code development
 capabilities, robust collaboration tools, and cost-efficiency. The data
 is stored in Microsoft Dataverse, a unified and scalable data platform
 that offers security, compliance, and deep integration across the
@@ -67,7 +67,7 @@ Cost efficiency is another benefit of the Policy Navigator App. By
 utilizing existing enterprise-wide Power Apps licenses, additional
 licensing costs were avoided. The app also replaces the former system
 with a scalable, agile solution, which drives additional cost savings.
-Because the app is intuitive, it benefits from a much higher adoption
+Because the app is intuitive, it benefits from a higher adoption
 rate than previous solutions.
 
 ### Components
@@ -161,28 +161,27 @@ build a policy exploration and administration application, and it
 demonstrates the opportunity to scale the impact by enabling hundreds of
 their employees to create their own low-code applications to increase
 productivity. Also, the idea of using a model-driven application as
-backend and a canvas app as frontend is very creative and opens up a lot
-of possibilities.
+backend and a canvas app as frontend is creative and opens up many possibilities.
 
 Here are some key takeaways:
 
-- Achieve operational efficiency,
+- Achieve operational efficiency.
 
-- Save time and resources,
+- Save time and resources.
 
-- Automation of core processes,
+- Automation of core processes.
 
-- Foster cross-organizational collaboration,
+- Foster cross-organizational collaboration.
 
-- Optimize and reduce system and resource costs,
+- Optimize and reduce system and resource costs.
 
 - Establish and grow a forward-thinking reputation that embraces
   opportunities from technological innovations.
 
 The project enabled to streamline policy management, reduce costs, and
 enhancing collaboration. As the organization continues to integrate AI
-technologies and scale its governance frameworks, it is well-positioned
-to lead in leveraging low-code platforms to drive business innovation
+technologies and scale its governance frameworks, it's well-positioned
+to lead in using low-code platforms to drive business innovation
 and value. This solution underscores the company's commitment to
 adapting, innovating, and thriving in an increasingly dynamic and
 digital business environment.
@@ -195,7 +194,7 @@ to help employees quickly locate relevant corporate policies and better
 understand their content.
 
 Daimler Truck's Power Platform journey shows its strong commitment
-to leveraging cutting-edge technologies, both as a productivity tool and
+to use cutting-edge technologies, both as a productivity tool and
 as a strategic asset in reshaping its digital future.
 
 ## Related resources
