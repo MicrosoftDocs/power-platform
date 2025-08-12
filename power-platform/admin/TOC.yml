@@ -484,7 +484,7 @@
                   items:
                     - name: Data policies for Managed Environments
                       href: managed-environment-data-policies.md
-                    - name: Data loss prevention (DLP) policies
+                    - name: Data policies
                       href: wp-data-loss-prevention.md
                     - name: Known limitations
                       href: dlp-known-issues.md
