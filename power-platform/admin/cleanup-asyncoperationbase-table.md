@@ -3,7 +3,7 @@ title: Delete completed system jobs and process log to comply with retention pol
 description: Learn how to clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/11/2025
+ms.date: 08/12/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -193,7 +193,7 @@ Historically, the entire async operation context used to be serialized directly 
 
 For more information on Dataverse storage model and reporting, see [New Microsoft Dataverse storage capacity](capacity-storage.md).
 
-### See also
+### Related content
 
 [Reduce database storage](free-storage-space.md#reduce-database-storage) <br />
 [Remove a large amount of specific, targeted data with bulk deletion](delete-bulk-records.md) <br />
