@@ -764,7 +764,7 @@
               items:
                 - name: Recover storage space
                   href: free-storage-space.md
-                - name: Clean up System Job and Process Log tables
+                - name: Delete completed system jobs and process log
                   href: cleanup-asyncoperationbase-table.md
             - name: Finance and Operations storage capacity
               href: finance-operations-storage-capacity.md
