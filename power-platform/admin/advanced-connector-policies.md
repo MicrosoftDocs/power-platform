@@ -3,7 +3,7 @@ title: Advanced connector policies (preview)
 description: Learn how to use Advanced connector policies to govern connector usage in Power Platform.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/15/2025
+ms.date: 08/12/2025
 author: laneswenka
 ms.author: laswenka
 ms.reviewer: sericks
@@ -82,13 +82,13 @@ Based on customer feedback, we drastically simplified the management experience 
 
 Advanced connector policies have shipped as part of environment groups and rules. These have publicly documented APIs available on [Power Platform API](/rest/api/power-platform/environmentmanagement/environment-groups) so that you can build automated scenarios such as creating new policies, updating policies, and moving environments in to groups for management at scale. 
 
-### Model Context Protocol (MCP) Server Management
+### Model Context Protocol (MCP) server management
 
-Advanced connector policies now support visibility and management of Model Context Protocol (MCP) Servers. MCP Servers are special connector endpoints that expose MCP-enabled APIs and tooling capabilities within Power Platform.
+Advanced connector policies now support visibility and management of Model Context Protocol (MCP) servers. MCP servers are special connector endpoints that expose MCP-enabled APIs and tooling capabilities within Power Platform.
 
-Within advanced connector policies, administrators can now see MCP Servers listed alongside other connector types and may choose to disable (block) an entire MCP Server. Note that, as of now, granular control over individual MCP Tools (endpoints and actions) within an MCP Server is not available-only disabling the entire MCP Server is supported.
+Within advanced connector policies, administrators can now see MCP servers listed alongside other connector types and may choose to block an entire MCP server. Note that, as of now, granular control over individual MCP tools (endpoints and actions) within an MCP server is not available. Blocking the entire MCP server is supported.
 
-:::image type="content" source="media/block-mcp.png" alt-text="Block MCP Server in advanced connector policies.":::
+:::image type="content" source="media/block-mcp.png" alt-text="Block MCP server in advanced connector policies.":::
 
 ## Data policy mixed mode
 
