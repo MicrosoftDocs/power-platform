@@ -1,5 +1,5 @@
 ---
-title: "Custom connector parity | MicrosoftDocs"
+title: Custom connector parity
 description: About allowing makers to create and share custom connectors.
 ms.topic: concept-article
 ms.date: 05/03/2024
@@ -15,17 +15,15 @@ search.audienceType:
   - admin
 ---
 
-# DLP for custom connectors
+# Data policies for custom connectors
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
-Power Platform allows makers to create and share [custom connectors](/connectors/custom-connectors/). You can manage custom connectors for tenant and environment level data loss prevention (DLP) policies. Specifically:
+Power Platform allows makers to create and share [custom connectors](/connectors/custom-connectors/). You can manage custom connectors for tenant and environment-level data policies. Specifically:
 
 1. Environment admins can use the Power Platform admin center to classify individual, custom connectors by name for environment-level data policies.
 2. Tenant admins can use the Power Platform admin center and PowerShell to classify custom connector by their Host URL endpoints using a pattern matching construct for tenant-level data policies.
 
 > [!NOTE]
-> **DLP for custom connectors** is now generally available.
+> **Data policies for custom connectors** is now generally available.
 
 ## Custom connector classification
 
@@ -35,7 +33,7 @@ Environment admins can find all the custom connectors in their environments, alo
 
 :::image type="content" source="media/dlp-environment-level-connector.png" alt-text="Environment admins can see all custom connectors in their environments, alongside prebuilt connectors, on the **Connectors** page in data policies.":::
 
-You can use data policy, PowerShell commands to set custom connectors into **Business**, **Non-Business**, and **Blocked** groups. More information: [Data loss prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)
+You can use data policy, PowerShell commands to set custom connectors into **Business**, **Non-Business**, and **Blocked** groups. More information: [Data policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)
 
 ### Tenant-level data policies 
 
@@ -43,7 +41,7 @@ The Power Platform admin center has support for tenant admins to classify custom
 
 The rule for the wildcard character (*) is that it's always the last entry in the list, which applies to all custom connectors. Admins can tag the `*` pattern to **Blocked**, **Business**, **Non-business**, or **Ignore**. By default, the pattern is set as **Ignore** for new data policies. 
 
-**Ignore** ignores DLP classification for all connectors in this tenant-level policy, and defers evaluation of a pattern to other environments or tenant-level policies to attribute them into the **Business**, **Non-Business**, or **Blocked** grouping as appropriate. If no specific rule exists for the custom connectors, an **Ignore \*** rule allows custom connectors to be used with both **Business** and **Non-Business** connector groupings. Except for the last entry in the list, **Ignore** as an action isn't supported for any other URL pattern added to the custom connector pattern rules. 
+**Ignore** ignores data policies classification for all connectors in this tenant-level policy, and defers evaluation of a pattern to other environments or tenant-level policies to attribute them into the **Business**, **Non-Business**, or **Blocked** grouping as appropriate. If no specific rule exists for the custom connectors, an **Ignore \*** rule allows custom connectors to be used with both **Business** and **Non-Business** connector groupings. Except for the last entry in the list, **Ignore** as an action isn't supported for any other URL pattern added to the custom connector pattern rules. 
 
 :::image type="content" source="media/dlp-tenant-level-connector-ignore-rule.png" alt-text="The Ignore rule in a list of rules.":::
 
@@ -80,7 +78,7 @@ $UrlPatterns = @{
 ```
 
 > [!NOTE]
-> In the following cmdlets, *PolicyName* refers to the unique GUID. You can retrieve the DLP GUID by running the **Get-DlpPolicy** cmdlet.
+> In the following cmdlets, *PolicyName* refers to the unique GUID. You can retrieve the data policies GUID by running the **Get-DlpPolicy** cmdlet.
 
 ### Retrieve existing custom connector URL patterns for a policy
 ```powershell
@@ -128,6 +126,6 @@ New-PowerAppPolicyUrlPatterns -TenantId $TenantId -PolicyName $PolicyId -NewUrlP
 ```
 
 ## Known limitations
-- The use of custom connectors isn't enforced by DLP in apps that were last published before October 2020.
+- The use of custom connectors isn't enforced by data policies in apps that were last published before October 2020.
 - When an environment admin creates or updates an environment-level data policy, they can only view custom connectors for which they're an owner or that have been shared with them.
 - If a custom connector has been added by name to a tenant-level policy (by using PowerShell cmdlets), the custom connector URL pattern rules is superseded by the existing classification for the connector by name. Use the Remove-DlpPolicy cmdlet to remove the custom connectors from the policy for these rules to take effect. We recommend that tenant-level policies only use custom connector host URL patterns. Don't manage custom connectors by name in tenant-level policies because individual custom connector scope is limited to the environment boundary and a custom connector's name has no significance at the tenant level.
