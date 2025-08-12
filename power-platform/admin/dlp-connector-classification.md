@@ -108,11 +108,11 @@ The rule for the wildcard character (`*`) is the last entry in the list, which a
 
 **Ignore** ignores data polciy classification for all connectors in this tenant-level policy, and defers evaluation of a pattern to other environments or tenant-level policies to attribute them into the **Business**, **Non-Business**, or **Blocked** grouping as appropriate. If no specific rule exists for the custom connectors, an **Ignore \*** rule allows custom connectors to be used with both **Business** and **Non-Business** connector groupings. Except for the last entry in the list, **Ignore** as an action isn't supported for any other URL pattern added to the custom connector pattern rules. 
 
-:::image type="content" source="media/dlp-tenant-level-connector-ignore-rule.png" alt-text="The Ignore rule in a list of rules.":::
+:::image type="content" source="media/ignore-connector.png" alt-text="The Ignore rule in a list of rules." lightbox="media/ignore-connector.png":::
 
-You can further add new rules by selecting **Add connector pattern** on the **Custom Connectors** page.  
+You can further add new rules by selecting **Add connector pattern** on the **Custom connectors** page.  
 
-:::image type="content" source="media/dlp-select-add-connector-pattern.png" alt-text="Select Add connector pattern.":::
+:::image type="content" source="media/add-connector-pattern-button.png" alt-text="Select Add connector pattern." lightbox="media/add-connector-pattern-button.png":::
 
 This opens a side panel where you can add custom connector URL patterns and classify them. New rules are added to the end of the pattern list (as the second-to-the-last rule, because `*` is the last entry in the list). However, you can update the order while adding a new pattern. 
 
@@ -120,11 +120,9 @@ This opens a side panel where you can add custom connector URL patterns and clas
 
 You can also update the order of the patterns by using the **Order** dropdown list or selecting **Move up** or **Move down**. 
 
-:::image type="content" source="media/dlp-update-pattern-order.png" alt-text="Update the order of the patterns by using the Order dropdown list or Move up and Move down.":::
+:::image type="content" source="media/multiple-connectors.png" alt-text="Update the order of the patterns by using the Order dropdown list or Move up and Move down." lightbox="media/multiple-connectors.png":::
 
 After a pattern has been added, you can edit or delete these patterns by selecting a specific row and selecting **Edit** or **Delete**. 
-
-:::image type="content" source="media/dlp-edit-delete-pattern.png" alt-text="Edit or delete custom patterns.":::
 
 ## Default data group for new connectors
 
