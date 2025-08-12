@@ -67,7 +67,48 @@ In the email notification, select **Go to Alert** to open a Power Platform page 
 
 ### Notes to be aware of
 -	A tenant can have 25 alerts rules turned on at one time. However, you can create an unlimited number of alert rules. Consider deleting or turning off any existing alert rule if you’ve reached the maximum.
--	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the Monitor area is evaluated every 24 hours after the newest 24 hour aggregates are produced. The alert rule does an on-demand evaluation upon its creation. 
+-	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the Monitor area is evaluated every 24 hours after the newest 24 hour aggregates are produced. The alert rule does an on-demand evaluation upon its creation.
+
+
+## Alert FAQs
+
+### What’s the difference between an alert rule and a triggered alert?
+Alert rule: A monitoring rule you configure (scope, metric, threshold, severity, notification).                                                                                                                                               
+Triggered alert: An instance when one or more resources meet the rule’s condition (e.g., “Is under 90% for app open success rate”).
+
+
+### Who can create and manage alerts?
+You must be a **Tenant administrator** or an **Environment administrator**
+
+
+### What environments are supported?
+All environment types (e.g. Production, Sandbox, Trial, and Developer) are supported, but they must be a Managed Environment. You select the environment in the Id field after choosing Scope = Environment. 
+
+
+### Where do I manage my created alerts?
+Go to Power Platform admin center → Monitor → Alerts and manage existing rules on the Alert rules tab (edit, delete, enable/disable).
+
+
+### What is the last run column in the Alert rules tab?
+The data in this column informs you the last time the alert rule ran. Alerts should run every 24 hours, so the values in this column should change accordingly. 
+
+
+### Does the severity level affect how alerts are processed?
+Severity (Low/Medium/High) is a **classification label** for triage and reporting. It does not change evaluation frequency or email notification behavior. 
+
+
+### Does this work for the default environment?
+Yes, **if** your default environment is a **managed environment**. Alerts are only supported on managed environments. 
+
+
+### Any tips and/or best practices?
+1. Start small: Create a few high-value rules first (e.g., performance-open times, error rates, usage spikes).
+2. Name consistently: Use clear names like Prod – Canvas apps – Availability < 90.
+3. Set appropriate severity: Use High for production-impacting metrics, Medium/Low for trend monitoring.
+4. Manage the 25-rule limit: Disable or delete obsolete rules.
+5. Validate email routing: Ensure recipients can receive emails from PowerPlat-noreply@microsoft.com.
+6. Monitor the 24‑hour cadence: Expect daily evaluation; it’s not real-time.
+
 
 
 
