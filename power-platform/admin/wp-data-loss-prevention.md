@@ -1,9 +1,9 @@
 ---
-title: Data loss prevention (DLP) policies
+title: Data policies
 description: You can create data policies that can act as guardrails to help reduce the risk of users from unintentionally exposing organizational data.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 07/22/2024
+ms.date: 08/12/2025
 author: laneswenka
 ms.subservice: admin
 ms.author: laswenka
@@ -14,12 +14,11 @@ search.audienceType:
 contributors:
 - ChrisGarty 
 ---
-# Data loss prevention (DLP) policies 
+# Data policies 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-Data loss prevention (DLP) is a critical aspect of maintaining data security and compliance within the Microsoft Power Platform ecosystem. 
+Data policies are a critical aspect of maintaining data security and compliance within the Microsoft Power Platform ecosystem. 
 
-You can create data policies that can act as guardrails to help reduce the risk of users from unintentionally exposing organizational data. A core component of Power Apps, Power Automate, and Microsoft Copilot Studio is the use of connectors to enumerate, populate, push, and pull data. **Data policies** in Power Platform admin center allow administrators to control access to these connectors in various ways to help reduce risk in your organization.
+You can create data policies that can act as guardrails to help reduce the risk of users from unintentionally exposing organizational data. A core component of Power Apps, Power Automate, and Microsoft Copilot Studio is the use of connectors to enumerate, populate, push, and pull data. Data policies in Power Platform admin center allow administrators to control access to these connectors in various ways to help reduce risk in your organization.
 
 This overview describes some high-level concepts related to connectors and several important considerations to take into account when setting up your policies or making policy changes. 
 
@@ -83,8 +82,8 @@ The time it takes to effectively implement data policies varies from customer to
 
 ### Related content
 
-- [Manage data loss prevention (DLP) policies](prevent-data-loss.md)
-- [DLP policies for Power Automate](/power-automate/prevent-data-loss)
+- [Manage data policies](prevent-data-loss.md)
+- [Data policies for Power Automate](/power-automate/prevent-data-loss)
 - [Advanced connector policies](./advanced-connector-policies.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
