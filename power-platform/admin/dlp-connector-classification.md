@@ -98,8 +98,6 @@ In general, the list of Power Platform connectors can differ depending on where 
 
 Environment admins can now find all the custom connectors in their environments alongside prebuilt connectors on the **Connectors** page in **Data Policies**. Similar to prebuilt connectors, you can classify custom connectors into **Blocked**, **Business**, or **Non-Business** categories. Custom connectors that aren't explicitly classified will be put under the default group (or **Non-Business**, if no default group setting is explicitly chosen by admins). 
 
-:::image type="content" source="media/dlp-environment-level-connector.png" alt-text="Environment admins can now see all custom connectors in their environments alongside of prebuilt connectors on the **Connectors** page in data policies.":::
-
 You can also use data policy PowerShell commands to set custom connectors into **Business**, **Non-Business**, and **Blocked** groups. More information: [Data policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)
 
 ### Tenant-level data policies 
