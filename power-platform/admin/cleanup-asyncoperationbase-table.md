@@ -126,7 +126,7 @@ If you switch the view to display jobs that are scheduled, in progress, or compl
 
 ## Create your own bulk deletion jobs
 
-If the [Deletion service](deletion-service-to-automatically-delete-completed-system-jobs) or the out-of-the-box system bulk deletion jobs don't meet your organization's needs, you can create your own bulk deletion job.
+If the [Deletion service](#deletion-service-to-automatically-delete-completed-system-jobs) or the out-of-the-box system bulk deletion jobs don't meet your organization's needs, you can create your own bulk deletion job.
 
 First, turn off the Deletion Service by completing the following steps.
 1. Add and edit the [EnableSystemJobCleanup](environment-database-settings.md#override-database-settings).
