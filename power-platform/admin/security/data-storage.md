@@ -192,7 +192,7 @@ This information helps tenant admins correct any misconfiguration in the environ
 
 ### Related articles
 
-[Security in Microsoft Power Platform](./overview.md)  
+[Security overview](security-overview.md)  
 [Authenticating to Power Platform services](./authenticate-services.md)  
 [Connecting and authenticating to data sources](./connect-data-sources.md)  
 [Power Platform security FAQs](./faqs.md)  
