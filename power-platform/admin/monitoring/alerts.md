@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Tenant and environment administrators in Power Platform can use _alerts_ to track the operational health of their resources. Admins can set up custom thresholds and receive notifications when metrics for their resources pass specific thresholds. Alerts can be created on any metrics in the Monitor area of the Power Platform admin center.
+Tenant and environment admins in Power Platform use _alerts_ to track the operational health of their resources. Admins set up custom thresholds and get notifications when metrics for their resources pass specific thresholds. Create alerts on any metrics in the Monitor area of the Power Platform admin center.
 
 Keep the following principles in mind:
 
@@ -26,9 +26,9 @@ Keep the following principles in mind:
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## When to use alerts
-- Teams and admins can use alerts to discover resources that are used more than expected. For example, an administrator can create an alert to let them know if apps in the default environment exceed 50 launches a day.
-- Teams can use alerts to find resources with degraded health&mdash;and engage with their makers to find resolutions.
-- For operations, admins can create alerts to let them know if apps in their production environment are slow to open for end-users. 
+- Teams and admins use alerts to find resources that are used more than expected. For example, an admin creates an alert to know if apps in the default environment exceed 50 launches a day.
+- Teams use alerts to find resources with degraded health, and work with their makers to fix issues.
+- For operations, admins create alerts to know if apps in their production environment are slow to open for users.
 
 ## Prerequisites
 -	You must be a tenant administrator or an environment administrator to access alerts. 
@@ -39,8 +39,8 @@ Keep the following principles in mind:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Monitor**.
 1. In the **Monitor** pane, select **Alerts**. The **Alerts** page is displayed.
-    > [!Note]
-    > You can manage your existing alert rules in the **Alert rules** tab. Use the **More user actions** icon to see options for editing or deleting your alert rule. You can also turn your alert rule on or off by using the toggle in the **Status** column.
+        > [!Note]
+    > Manage your existing alert rules in the **Alert rules** tab. Use the **More user actions** icon to see options for editing or deleting your alert rule. Turn your alert rule on or off by using the toggle in the **Status** column.
 1. Select **+ Alert rule** to create your new alert rule. The **New alert rule** pane is displayed.
 1. In the **Alert rule name** field, enter the name of your alert.
 1. In the **Product** list, select the product you want to monitor with the alert, **Power Apps** or **Power Automate**.
@@ -56,7 +56,7 @@ Keep the following principles in mind:
     - If you select **Email**, you and up to four other recipients&mdash;that you specify in the **Recipient(s)** field&mdash;will get an email when the alert is triggered. The email comes from `PowerPlat-noreply@microsoft.com`.
 1. Select **Save**.
 
-After you’ve created your alert, the system does an on-demand evaluation and scans all the applicable resources under its scope. 
+After you’ve created your alert, the system does an on-demand evaluation and scans all the applicable resources under its scope.
 
 ## When an alert is triggered
 If you selected to receive email notifications when any resource triggers an alert, you get an email notification sent to you.
