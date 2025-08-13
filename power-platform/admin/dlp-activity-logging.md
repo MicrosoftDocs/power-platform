@@ -3,7 +3,7 @@ title: Data policy activity logging
 description: Data policy activity logging
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/12/2025
+ms.date: 08/13/2025
 ms.subservice: admin
 author: sericks007
 ms.author: sericks
@@ -19,7 +19,7 @@ ms.custom: sfi-image-nochange
 > The schema documented in this article is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin-activity-logging.md#activity-category-data-policy-events).
 
 > [!NOTE]
-> Activity logging for data policies is not currently available in sovereign clouds.
+> Activity logging for data policies isn't currently available in sovereign clouds.
 
 Data policy activities are tracked from the [Microsoft 365 Security and Compliance Center](/microsoft-365/?view=o365-worldwide&preserve-view=true). 
 
@@ -52,7 +52,7 @@ Schemas define which fields are sent to the [Microsoft 365 Security and Complian
 |Field name  |Type  |Mandatory  |Description  |
 |---------|---------|---------|---------|
 |Date     |Edm.Date|No         |Date and time of when the log was generated in UTC          |
-|App Name   |Edm.String         |No         |Unique Identifier of the PowerApp        |
+|App Name   |Edm.String         |No         |Unique Identifier of the Power App        |
 |Id     |Edm.Guid         |No         |Unique GUID for every row logged          |
 |Result Status     |Edm.String         |No         |Status of the row logged. Success in most cases.          |
 |Organization Id     |Edm.Guid         |Yes        |Unique identifier of the organization from which the log was generated.       |
@@ -60,7 +60,7 @@ Schemas define which fields are sent to the [Microsoft 365 Security and Complian
 |Operation     |Edm.Date         |No         |Name of operation         |
 |UserKey     |Edm.String         |No         |Unique Identifier of the User in Microsoft Entra ID       |
 |UserType     |Self.UserType         |No         |The audit type (Admin, Regular, System)         |
-|Additional Info     |Edm.String        |No         |More information if any (e.g. the environment name)       |
+|Additional Info     |Edm.String        |No         |More information if any (for example, the environment name)       |
 
 ### Additional Info 
 
