@@ -14,6 +14,8 @@ search.audienceType:
 
 # Create alerts for your resources (preview)
 
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 Tenant and environment administrators in Power Platform can use _alerts_ to track the operational health of their resources. Admins can set up custom thresholds and receive notifications when metrics for their resources pass specific thresholds. Alerts can be created on any metrics in the Monitor area of the Power Platform admin center.
 
 Keep the following principles in mind:
