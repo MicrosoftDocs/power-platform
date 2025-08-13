@@ -54,7 +54,7 @@ Logging takes place at the SDK layer, which means a single action can trigger mu
 |Imported new canvas app |Every time new canvas app is imported |
 |Imported existing canvas app   |Every time existing canvas app is imported |
 |Published solution canvas app version |When canvas app version from solution is published |
-|Added DataLossPreventionEvaluationResult | When DLP evaluation occurs for the App |
+|Added DataLossPreventionEvaluationResult | When data policy evaluation occurs for the App |
 |Admin restored deleted app    |When the deleted app is restored by the admin|
 |Admin set desired logical name  |When the desired logical name of the app is set by the admin|
 |Admin modified app owner |When the app owner is modified by the admin  |

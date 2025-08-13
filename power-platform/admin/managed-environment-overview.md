@@ -41,7 +41,7 @@ A Managed Environment encompasses, but isn't limited to, the following features:
 - [Customer Managed Key (CMK)](customer-managed-key.md)
 - [Lockbox](about-lockbox.md)
 - [Extended backup](backup-restore-environments.md)
-- [DLP for desktop flow](/power-automate/prevent-data-loss)
+- [Data policies for desktop flow](/power-automate/prevent-data-loss)
 - [Export data to Azure Application Insights](overview-integration-application-insights.md)
 - [Administer the catalog](administer-catalog.md)
 - [Default environment routing](default-environment-routing.md)

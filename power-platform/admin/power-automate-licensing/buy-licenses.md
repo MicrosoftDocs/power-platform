@@ -315,9 +315,9 @@ Users can use Power Automate either as individuals or as a part of their organiz
 
 #### How can I restrict my users' ability to access my organization's business data?
 
-Power Automate allows you to create data groups for business and non-business data. After you implement these data loss prevention policies, users can't design nor run flows that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
+Power Automate allows you to create data groups for business and non-business data. After you implement these data policies, users can't design nor run flows that combine business and non-business data. For more details, See [Data policies](/power-automate/prevent-data-loss).
 
-:::image type="content" source="../media/power-automate-licensing/data-loss-prevention-policy.png" alt-text="Screenshot that shows a sample data loss prevention policy configuration." lightbox="../media/power-automate-licensing/data-loss-prevention-policy.png":::
+:::image type="content" source="../media/power-automate-licensing/data-loss-prevention-policy.png" alt-text="Screenshot that shows a sample data policy configuration." lightbox="../media/power-automate-licensing/data-loss-prevention-policy.png":::
 
 
 ## I'm a maker

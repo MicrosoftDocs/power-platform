@@ -633,7 +633,7 @@ See [data policies policy commands](powerapps-powershell.md#data-loss-prevention
 
 ### See also
 
-[Data loss prevention policies](wp-data-loss-prevention.md) <br />
+[Data policies](wp-data-loss-prevention.md) <br />
 [data policies policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands) <br />
 [Power Platform data policies SDK](data-loss-prevention-sdk.md)
 
