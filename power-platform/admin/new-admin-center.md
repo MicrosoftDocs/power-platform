@@ -4,7 +4,7 @@ description: Learn how to use the updated Power Platform admin center's new UI a
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/16/2025
+ms.date: 08/13/2025
 ms.custom: 
   - NewPPAC
   - ignite-2024
@@ -16,7 +16,8 @@ ms.reviewer: sericks
 ms.contributors:
   - lsuresh
 contributors:
-- lavanyapg
+  - arjunmayur 
+  - lavanyapg
 search.audienceType: 
   - admin
 ---
@@ -71,7 +72,7 @@ Most of the pages from the classic admin center are available in the new one, ei
 
 In addition to reorganized pages based on admin tasks, we're introducing a new [*monitoring pages* experience](monitoring/monitoring-overview.md). Monitoring pages allow admins and makers to track performance statistics in their tenant, helping them identify app accessibility problems or slow-loading Power Pages sites.  
 
-These new experiences help you measure and improve the operational health of your organizational resources such as apps. They provide insights into overall operational health in a tenant or specific environments. Metrics are derived from aggregated event logs of runtime activities, with recommendations based on these logs or static analysis of resource properties. Event logs used for metric calculations are available for review and download for further analysis.
+These new experiences help you measure and improve the operational health of your organizational resources such as apps. They provide insights into overall operational health in a tenant or specific environments. Metrics are derived from aggregated event logs of runtime activities, with recommendations based on these logs or static analysis of resource properties. Event logs used for metric calculations are available for review and download for further analysis. Administrators can also set up [alerts](monitoring/alerts.md) to proactively monitor the operational health of their resources against custom thresholds and be notified when the performance of the resources dips below that threshold. 
 
 ## Watch a video about the new admin center
 
