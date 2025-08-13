@@ -31,6 +31,7 @@ Power Apps operational health metrics and recommendations are available in the n
 ## Power Apps metrics and recommendations
 
 ### Metric definitions
+
 |Type | Metric | Definition | Support |
 |---|---|---|---|
 |Canvas apps | App open success rate| A percentage that describes how often end users are able to successfully open the app. | Generally available |
@@ -42,6 +43,7 @@ Power Apps operational health metrics and recommendations are available in the n
 |Model-driven apps | Row summary dwell time| The time (in seconds) that end users spend on the expanded AI row summary of a main form. | Preview |
 
 ### Metric and recommendation pairings
+
 | Metric | Secondary metric | Title of recommendation | Description of recommendation |
 |---|---|---|---|
 | App Open Success Rate | ErrorCode = AppForbidden | Evaluate if the app should be shared with users without permission | X% of sessions ended without users accessing the app because users didn't have permission to access the app. It's possible that the app may benefit from being shared with more users. The logs show which users&mdash;without permissions&mdash;are attempting to open the app. |

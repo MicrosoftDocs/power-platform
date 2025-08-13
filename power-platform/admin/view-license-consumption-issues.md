@@ -2,11 +2,19 @@
 title: View license consumption for Power Apps and Power Automate (preview)
 description: Learn how to view your organization's Power Apps license consumption and find potential license issues. 
 author: amiyapatr-zz
-ms.date: 04/23/2024
+ms.date: 6/30/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
 ms.author: ampatra
+contributors:
+ - ampatra
+ - sericks
+ - syalandur
+ms.contributors:
+ - ampatra-zz
+ - sericks007
+ - syalandur24
 ms.custom: bap-template
 search.audienceType: 
  - admin
@@ -14,13 +22,16 @@ search.audienceType:
 
 # View license consumption for Power Apps and Power Automate (preview)
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 <!-- fwlink: https://go.microsoft.com/fwlink/?linkid=2206011 -->
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use the **Billing (preview)** > **Licenses (preview)** page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to monitor the consumption of your organization's Power Apps licenses and easily spot environments that might have licensing issues. Get answers to questions like these:
+Use the following options in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to monitor the consumption of your organization's Power Apps licenses and easily spot environments that might have licensing issues.
+
+- New admin center: **Licensing** on the navigation pane.
+- Classic admin center: **Billing** > **Licenses** page.
+
+Get answers to questions like these:
 
 - How many Power Apps licenses are purchased?
 - How many of those Power Apps licenses are assigned to users? 
@@ -39,7 +50,7 @@ Use the **Billing (preview)** > **Licenses (preview)** page in the [Power Platfo
 
 ## Summary tab
 
-The **Summary** tab on the **Licenses (preview)** page displays a summary of any environments in your tenant that require licensing attention.
+The **Summary** tab on the **Licenses** page displays a summary of any environments in your tenant that require licensing attention.
 
 | Setting | Description |
 | ------- | ----------- |
@@ -48,8 +59,12 @@ The **Summary** tab on the **Licenses (preview)** page displays a summary of any
 | Environment | A list of environments that have a licensing issue. |
 | License issues | The number of licensing issues for an environment. |
 
-### Power Apps licensing summary 
-From the **Product** dropdown list, select **Power Apps** to view license consumption information for Power Apps.
+### Power Apps licensing summary
+
+Use the following options in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to view the license consumption information for Power Apps:
+
+- New admin center: Select **Licensing** on the navigation pane, and select **Power Apps** under **Products**.
+- Classic admin center: On the **Licenses** > **Summary** page, select **Power Apps** under **Summaries**.
 
 The **Power Apps licensing summary** section provides details of how many Power Apps licenses have been purchased, how many of those licenses are assigned, and how many of those licenses are being actively used. This view is available to Power Platform admin and Dynamics 365 admins roles.
 
@@ -68,10 +83,14 @@ The **Power Apps licensing summary** section provides details of how many Power 
 | **License type: Power App Per App** | If the selected environment has per app licenses assigned, a list of apps consuming app pass licenses, the number of users the app has been shared with, and the number of users who have opened the app using per app licenses is displayed. |
 | Download | Downloads the information in CSV format. Select a specific license type to start the download. After a CSV file is generated, you can download the same file again within five days without having to start a new download. The download process is asynchronous, which allows you to start the download and return after a few minutes to monitor its progress. |
 
-### Power Automate licensing summary 
-From the **Product** dropdown list, select **Power Automate** to view license consumption information for Power Automate.
+### Power Automate licensing summary
 
-This view is available to Power Platform admin and Dynamics 365 admins roles.
+Use the following options in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to view the license consumption information for Power Automate:
+
+- New admin center: Select **Licensing** on the navigation pane, and select **Power Automate** under **Products**.
+- Classic admin center: On the **Licenses** > **Summary** page, select **Power Apps** under **Summaries**.
+
+The license consumption information can be viewed by Power Platform admin and Dynamics 365 admins roles.
 
 The **Power Automate licensing summary** section provides details of how many Power Automate licenses have been purchased, assigned, and consumed in your entire tenant. It provides details of which flow runs are consuming licenses. 
 
@@ -97,7 +116,7 @@ The **Attention needed** section provides a summary count of flows requiring lic
 
 ## Environments tab
 
-The **Environments** tab on the **Licenses (preview)** page displays licensing information from the last 30 days for the selected environment.
+The **Environments** tab on the **Licenses** page displays licensing information from the last 30 days for the selected environment.
 
 | Setting | Description |
 | ------- | ----------- |
@@ -141,4 +160,4 @@ The **Environments** tab on the **Licenses (preview)** page displays licensing i
 ## Other ways to view licensing pages
 
 - **Managed Environments**: Select **View licensing details** on the **Enable Managed Environments** page.
-- **Standard environments**: You'll see an alert about license requirements for users with only Microsoft 365 licenses.
+- **Standard environments**: You can see an alert about license requirements for users with only Microsoft 365 licenses.
