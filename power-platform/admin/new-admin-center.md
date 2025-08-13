@@ -4,7 +4,7 @@ description: Learn how to use the updated Power Platform admin center's new UI a
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/16/2025
+ms.date: 08/13/2025
 ms.custom: 
   - NewPPAC
   - ignite-2024
@@ -16,7 +16,8 @@ ms.reviewer: sericks
 ms.contributors:
   - lsuresh
 contributors:
-- lavanyapg
+  - arjunmayur 
+  - lavanyapg
 search.audienceType: 
   - admin
 ---
