@@ -82,27 +82,26 @@ You must be a **Tenant administrator** or an **Environment administrator** to cr
 All environment types, such as production, sandbox, trial, and developer environment types are supported, but they must be a Managed Environment. You select the environment in the **ID** field after setting the **Scope** field to **Environment**. 
 
 ### Where do I manage my created alerts?
-Go to Power Platform admin center and select **Monitor > Alerts** and manage existing rules on the **Alert rules** tab (edit, delete, enable/disable).
+Go to Power Platform admin center and select **Monitor > Alerts** and manage existing rules on the **Alert rules** tab.
 
-### What is the last run column in the Alert rules tab?
+### What is the Last Run column in the Alert rules tab?
 The data in this column informs you the last time the alert rule ran. Alerts should run every 24 hours, so the values in this column should change accordingly. 
 
-
 ### Does the severity level affect how alerts are processed?
-Severity (Low/Medium/High) is a **classification label** for triage and reporting. It does not change evaluation frequency or email notification behavior. 
-
+The **Severity**, such as **Low**, **Medium**, ir **High** is a classification label for triage and reporting. It doesn't change evaluation frequency or email notification behavior. 
 
 ### Does this work for the default environment?
-Yes, **if** your default environment is a **managed environment**. Alerts are only supported on managed environments. 
+Yes, **if** your default environment is a **Managed Environment**. Alerts are only supported in Managed Environments. 
 
+### Any tips or best practices?
+Yes! Follow these best practices:
 
-### Any tips and/or best practices?
-1. Start small: Create a few high-value rules first (e.g., performance-open times, error rates, usage spikes).
-2. Name consistently: Use clear names like Prod – Canvas apps – Availability < 90.
-3. Set appropriate severity: Use High for production-impacting metrics, Medium/Low for trend monitoring.
-4. Manage the 25-rule limit: Disable or delete obsolete rules.
-5. Validate email routing: Ensure recipients can receive emails from PowerPlat-noreply@microsoft.com.
-6. Monitor the 24‑hour cadence: Expect daily evaluation; it’s not real-time.
+- **Start small**: Create a few high-value rules first, such as performance-open times, error rates, usage spikes.
+- **Name consistently**: Use clear names like **Prod – Canvas apps – Availability < 90**.
+- **Set appropriate severity**: Use **High** for production-impacting metrics and **Medium** or **Low** for trend monitoring.
+- **Manage the 25-rule limit**: Delete obsolete rules.
+- **Validate email routing**: Ensure recipients can receive emails from **PowerPlat-noreply@microsoft.com**.
+- **Monitor the 24‑hour cadence**: Expect daily evaluation; it’s not real-time.
 
 
 
