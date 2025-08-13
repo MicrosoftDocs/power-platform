@@ -152,14 +152,14 @@ View **menu items and access levels** (Read/Write) that contribute to license re
 
 You can export user data to a CSV by selecting the **Export to CSV** button located on the page.
 
-🧾 The exported file contains only the following columns:
-
-- `TenantId`  
-- `UserEmail`  
-- `UserId`  
-- `AssignedLicense(s)`  
-- `MissingLicense(s)`  
-- `RefreshedOn`  
+> 🧾 The exported file contains only the following columns:
+>
+> - `TenantId`  
+> - `UserEmail`
+> - `UserId`
+> - `AssignedLicense(s)`
+> - `MissingLicense(s)`
+> - `RefreshedOn`  
 
 For full entitlement or role mapping details, use the views in Power Platform admin center.
 
