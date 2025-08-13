@@ -10,6 +10,7 @@ ms.author: ritesp
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Set up managed identity for Power Platform (preview)

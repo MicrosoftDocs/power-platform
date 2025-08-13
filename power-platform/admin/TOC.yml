@@ -70,6 +70,8 @@
               items:
                 - name: View license consumption for Power Apps and Power Automate (preview)
                   href: view-license-consumption-issues.md
+                - name: View license consumption for Power Pages
+                  href: /power-pages/admin/capacity-management
                 - name: View license consumption for finance and operations apps
                   href: view-license-consumption-finops-apps.md
                 - name: Manage Copilot Studio messages and capacity
@@ -436,21 +438,23 @@
                   href: wp-task-automation-flow.md
         - name: Monitor
           items:
-            - name: Overview (preview)
+            - name: Overview
               href: monitoring/monitoring-overview.md
-            - name: View event logs and error logs (preview)
+            - name: View event logs and error logs
               href: monitoring/logs.md
+            - name: Create alerts for your resources (preview)
+              href: monitoring/alerts.md
             - name: Metrics and recommendations
               items:
-                - name: For Power Apps (preview)
+                - name: For Power Apps
                   href: monitoring/monitor-power-apps.md
-                - name: For Power Automate (preview)
+                - name: For Power Automate
                   href: monitoring/monitor-power-automate.md
         - name: Copilot
           items:
             - name: Track, manage, and scale Copilot adoption
               href: copilot/copilot-hub.md
-            - name: View agent inventory
+            - name: View agent inventory (preview)
               href: tenant-wide-agent-inventory.md
         - name: Security
           items:
@@ -474,11 +478,13 @@
                       href: cmk-migrate-from-byok.md
                     - name: Encrypt column-level data
                       href: data-encryption.md
+                - name: Advanced connector policies (preview)
+                  href: advanced-connector-policies.md
                 - name: Data policies
                   items:
                     - name: Data policies for Managed Environments
                       href: managed-environment-data-policies.md
-                    - name: Data loss prevention (DLP) policies
+                    - name: Data policies
                       href: wp-data-loss-prevention.md
                     - name: Known limitations
                       href: dlp-known-issues.md
@@ -494,8 +500,6 @@
                           href: connector-off-by-default.md
                         - name: Design-time versus runtime
                           href: dlp-impact-policies-apps-flows.md
-                        - name: Exempt apps and flows
-                          href: dlp-resource-exemption.md
                     - name: Certified connectors
                       items:
                         - name: Connector classification
@@ -540,13 +544,13 @@
                   href: managed-environment-sharing-limits.md
                 - name: App access control
                   items:
-                    - name: Control which apps are allowed in your environment (preview)
+                    - name: Control which apps are allowed in your environment
                       href: control-app-access-environment.md
-                    - name: Commonly used Microsoft first-party services and portal apps (preview)
+                    - name: Commonly used Microsoft first-party services and portal apps
                       href: apps-to-allow.md
             - name: Compliance
               items:
-                - name: Comliance tools
+                - name: Compliance tools
                   href: security/compliance.md
                 - name: Auditing
                   items:
@@ -602,8 +606,6 @@
                   items:
                     - name: Configure content security policy
                       href: content-security-policy.md
-                - name: Advanced connector policies (preview)
-                  href: advanced-connector-policies.md
                 - name: Configure column-level security
                   items:
                     - name: Column-level security
@@ -762,7 +764,7 @@
               items:
                 - name: Recover storage space
                   href: free-storage-space.md
-                - name: Clean up System Job and Process Log tables
+                - name: Delete completed system jobs and process log
                   href: cleanup-asyncoperationbase-table.md
             - name: Finance and Operations storage capacity
               href: finance-operations-storage-capacity.md
@@ -858,11 +860,13 @@
                   href: powerplatform-api-create-service-principal.md
                 - name: Reference
                   items:
-                    - name: "2024-10-01"
+                    - name: Power Platform API for .NET
+                      href: /dotnet/api/?view=power-platform-latest&preserve-view=true
+                    - name: "Power Platform REST API v2024-10-01"
                       href: /rest/api/power-platform
-                    - name: 2022-03-01-preview
+                    - name: "Power Platform REST API v2022-03-01-preview"
                       href: /rest/api/power-platform
-                    - name: "2020-10-01"
+                    - name: "Power Platform REST API v2020-10-01"
                       items:
                         - name: Environments
                           items:
@@ -1198,7 +1202,7 @@
               href: for-partners-delegated-administrator.md
         - name: Support
           items:
-            - name: Get Help + Support
+            - name: Get Support
               href: get-help-support.md
             - name: Support overview
               href: support-overview.md

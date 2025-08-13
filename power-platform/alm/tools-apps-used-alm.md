@@ -27,7 +27,7 @@ administrators can manage environments, data integration, gateways, data policie
 
 More information:
 
-- [Power Platform admin center features](../admin/admin-documentation.md#manage-your-environments-and-settings)
+- [Overview of the Power Platform admin center](../admin/admin-documentation.md)
 - [Administer Power Apps](../admin/admin-guide.md)
 - White paper: [Administering a low-code development platform](https://aka.ms/powerappsadminwhitepaper)
 

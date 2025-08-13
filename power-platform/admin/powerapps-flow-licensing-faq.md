@@ -2,7 +2,7 @@
 title: Power Platform licensing FAQs
 description: Learn FAQs for licensing Power Apps, Power Automate, Copilot Studio, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
 ms.topic: faq
-ms.date: 03/31/2025
+ms.date: 06/27/2025
 author: chrisgarty
 contributors:
   - Antoine2F
@@ -13,8 +13,10 @@ ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: sericks
 ms.contributors:
-- jessechen
-- v-kgallagher
+  - jessechen
+  - v-kgallagher
+  - ellenwehrle
+ms.custom: sfi-image-nochange
 ---
 
 # Power Platform licensing FAQs
@@ -25,22 +27,22 @@ This article lists common questions and answers for licensing and plan options.
 
 For more details about Microsoft Power Platform licensing, download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-## Licensing for Copilot chat and form fill assistance in model-driven apps 
+## Licensing for Copilot chat and form fill assistance in model-driven apps
 
-### What are the licensing implications of generally available Copilot capabilities for end users of model-driven apps? 
+### What are the licensing implications of generally available Copilot capabilities for end users of model-driven apps?
 
 As part of 2024 release wave 1, Copilot chat and form fill assistance are both generally available and on-by-default for Dynamics 365 users.  
 
-To utilize these features, you need any of the following licenses: 
-- Dynamics 365 Sales Enterprise or Sales Premium
+To utilize these features, you need any of the following licenses:
 
+- Dynamics 365 Sales Enterprise or Sales Premium
 - Dynamics 365 Customer Insights
 - Dynamics 365 Field Service
 - Dynamics 365 Project Operations
 
 For more information about Dynamics 365 licensing, see [Dynamics 365 license transition guide](/dynamics365/get-started/license-transition). For more information about Copilot data security and privacy, see [FAQ for Copilot data security and privacy for Dynamics 365 and Power Platform](/dynamics365/faqs-copilot-data-security-privacy).
 
-> [!Note]
+> [!NOTE]
 > For standalone Power Apps, these features continue to be in public preview and customers can opt-in to these features from the Power Platform admin center.  
 
 Learn more about Copilot chat and form fill assistance from the following table.
@@ -114,7 +116,7 @@ Power Apps per app is designed to help organizations solve for one business scen
 
 An important part of this feature simplification is that we'll no longer require any standalone plans for maker or admin capabilities. Previously admins required a Power Apps P2 license for certain management operations; this will no longer be the case.
 
-### Do embedded canvas apps in model-driven apps count consume multiple per app plans?
+### Do embedded canvas apps in model-driven apps count consume multiple per-app plans?
 
 No. Embedded canvas components within the model-driven app are recognized as a single app.
 
@@ -161,7 +163,7 @@ This new offer includes all the benefits of Power Automate per user with attende
 - **List Price (USD)**: $150 per bot/month
 - **Entitlements**: Licensed per bot, Power Automate Process licenses a single 'automation' bot that can be used for <u>unattended</u> robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization.
 
-> [!Note]
+> [!NOTE]
 > Any software automated with an unattended bot may require extra licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365 require the Microsoft 365 - Unattended License. To learn more, go to [Product Terms](https://www.microsoft.com/licensing/terms/).
 
 #### Are there minimum purchase requirements for Power Automate Process?
@@ -193,7 +195,7 @@ No, there's no limit to the number of users per tenant.
 
 #### Is there a trial version of Power Automate Process Mining?
 
-Yes, Process Mining offers a free 30-day trial giving access to many of the key features of Process Mining. The free Process Mining trial is included in the Power Automate trial available [here](https://signup.microsoft.com/get-started/signup?sku=f30db892-07e9-47e9-837c-80727f46fd3d&pbi_source=web&pi=1&ru=https%3a%2f%2fflow.microsoft.com%2fsignIn%3fredirectUrl%3dhttps%253a%252f%252fflow.microsoft.com%252fen-us%252f&products=f30db892-07e9-47e9-837c-80727f46fd3d&ali=1&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9).
+Yes, Process Mining offers a free 30-day trial giving access to many of the key features of Process Mining. The free Process Mining trial is included in the [Power Automate trial](https://signup.microsoft.com/get-started/signup?sku=f30db892-07e9-47e9-837c-80727f46fd3d&pbi_source=web&pi=1&ru=https%3a%2f%2fflow.microsoft.com%2fsignIn%3fredirectUrl%3dhttps%253a%252f%252fflow.microsoft.com%252fen-us%252f&products=f30db892-07e9-47e9-837c-80727f46fd3d&ali=1&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9).
 
 #### Will Process Mining use rights come with any other Power Platform or Dynamics 365 licenses?
 
@@ -225,24 +227,22 @@ The Power Automate Premium trial will include 100 MB of Process Mining stored da
 
 #### What are the pricing and licensing details for Power Automate Hosted RPA?
 
--   **List Price (USD)**: $215 per bot/month
--   **Entitlements**: Licensed per bot, the Power Automate Hosted RPA add-on license provides capacity for a single Microsoft RPA bot and a virtual machine for running automations.
--   **Qualifying prerequisite**: Power Automate Premium, Power Automate Process
-    -   Multiple hosted RPA add-on licenses can be added with a single qualifying base license.
-    -   Concurrent instances of a singular process require an extra unattended bot for each instance.
+- **List Price (USD)**: $215 per bot/month
+- **Entitlements**: Licensed per bot, the Power Automate Hosted RPA add-on license provides capacity for a single Microsoft RPA bot and a virtual machine for running automations.
+- **Qualifying prerequisite**: Power Automate Premium, Power Automate Process
+  - Multiple hosted RPA add-on licenses can be added with a single qualifying base license.
+  - Concurrent instances of a singular process require an extra unattended bot for each instance.
 
-> [!Note]
->  Any software automated with an unattended bot may require extra licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365 require the Microsoft 365 - Unattended License. See the [Product Terms](https://www.microsoft.com/licensing/terms/) for more information.
-
+> [!NOTE]
+> Any software automated with an unattended bot may require extra licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365 require the Microsoft 365 - Unattended License. See the [Product Terms](https://www.microsoft.com/licensing/terms/) for more information.
 
 #### Is Power Automate per flow an eligible prerequisite for the Hosted RPA add-on?
-
 
 Yes, per flow is eligible.
 
 #### How are the bots hosted?
 
-The bots are hosted with Azure virtual machines usimg Virtual Machine Scale Sets. This is an Azure Compute resource which can be used to deploy and manage a set of identical VMs providing (up to 1,000 VMs) by spreading VMs across fault domains in a region or within an Availability Zone.
+The bots are hosted with Azure virtual machines using Virtual Machine Scale Sets. This is an Azure Compute resource which can be used to deploy and manage a set of identical VMs providing (up to 1,000 VMs) by spreading VMs across fault domains in a region or within an Availability Zone.
 
 #### Is this offer available worldwide?
 
@@ -266,28 +266,29 @@ Follow these steps to apply unattended RPA add-ons for your flows.
 1. The environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment.
 1. Makers can now run unattended desktop flows within the environment that has the unattended capacity.
 
-> [!Note]
+> [!NOTE]
 > The unattended add-on is environment-specific. If you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them. If you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
 
 ## Microsoft Copilot Studio
 
 ### What are the licensing details for Microsoft Copilot Studio?
-Licensed by tenant, Microsoft Copilot Studio entitles a tenant to 25,000 messages per month. Users in the tenant can create and iterate on topics by describing them, and AI features build them. Generative answers can be used as primary information sources in the chatbots, or used when authored topics are unable to address a user's query. As a result, functional bots can be quickly created and deployed without users having to manually author multiple topics. Power Automate for Copilot Studio use rights are limited to cloud flows within the context of Microsoft Copilot Studio bots.  
 
-- **Entitlements**: Customers who purchase the new Microsoft Copilot Studio receive the following entitlements. 
-   -   Messages: 25,000 messages per tenant/month   
-   -   Billed messages definition: Microsoft Copilot Studio messages are the common currency across Microsoft Copilot Studio capabilities. A billed message is a request or message sent to the copilot triggering an action or response. Examples:
-       - User asks copilot when a store is open, and copilot replies with store hours = 1 billed message
-       - Copilot proactively greets the user on a website = 1 billed message
-       - User asks copilot for store hours for the upcoming holiday, and copilot responds using GenAnswers = 2 billed messages. 
-   -   Message Consumption rates: Customers can use a mix of Regular and Generative AI messages.
-       - Regular (nongenerative AI) = 1 message
-       - Generative AI (Gen AI) answers over your data = two messages
-   -   Gen AI-enabled conversations: Consumption rate of two messages when Generative AI is used 
-   -   Copilot: Create and iterate chatbot topics using expanded natural language capabilities   
-   -   Power Automate for Microsoft Copilot: Create cloud flows (Automated, instant, and scheduled flows) within the context of Microsoft Copilot Studio bots   
-   -   Connectors: Standard, Premium, and Custom connectors   
-   -   Dataverse for Microsoft Copilot (Dataverse default capacity): 5 GB Database, 20 GB File, 2 GB Log  
+Licensed by tenant, Microsoft Copilot Studio entitles a tenant to 25,000 messages per month. Users in the tenant can create and iterate on topics by describing them, and AI features build them. Generative answers can be used as primary information sources for agents and chatbots, or used when authored topics are unable to address a user's query. As a result, functional bots can be quickly created and deployed without users having to manually author multiple topics. Power Automate for Copilot Studio use rights are limited to cloud flows within the context of Microsoft Copilot Studio bots.  
+
+- **Entitlements**: Customers who purchase the new Microsoft Copilot Studio receive the following entitlements.
+  - Messages: 25,000 messages per tenant/month
+  - Billed messages definition: Microsoft Copilot Studio messages are the common currency across Microsoft Copilot Studio capabilities. A billed message is a request or message sent to the copilot triggering an action or response. Examples:
+    - User asks copilot when a store is open, and copilot replies with store hours = 1 billed message
+    - Copilot proactively greets the user on a website = 1 billed message
+    - User asks copilot for store hours for the upcoming holiday, and copilot responds using GenAnswers = 2 billed messages.
+  - Message Consumption rates: Customers can use a mix of Regular and Generative AI messages.
+    - Regular (nongenerative AI) = 1 message
+    - Generative AI (Gen AI) answers over your data = two messages
+  - Gen AI-enabled conversations: Consumption rate of two messages when Generative AI is used
+  - Copilot: Create and iterate chatbot topics using expanded natural language capabilities
+  - Power Automate for Microsoft Copilot: Create cloud flows (Automated, instant, and scheduled flows) within the context of Microsoft Copilot Studio bots
+  - Connectors: Standard, Premium, and Custom connectors
+  - Dataverse for Microsoft Copilot (Dataverse default capacity): 5 GB Database, 20 GB File, 2 GB Log  
 
 ### Microsoft Copilot Studio User License
 
@@ -301,7 +302,7 @@ Microsoft Copilot Studio for Teams enables customers with select Microsoft 365 o
 #### Are there more Microsoft Copilot Studio licensing requirements to create and edit with Copilot?
 
 - You need a Microsoft Copilot Studio license and you must create an account.
-    - If you don't have a Microsoft Copilot Studio account, or you haven't created chatbots with Copilot Studio, go to the <u>[Quickstart guide](/power-virtual-agents/nlu-gpt-quickstart)</u> for building bots with GPT.
+  - If you don't have a Microsoft Copilot Studio account, or you haven't created chatbots with Copilot Studio, go to the <u>[Quickstart guide](/power-virtual-agents/nlu-gpt-quickstart)</u> for building bots with GPT.
 - This capability might be subject to usage limits or capacity throttling.
 
 ## Power Pages
@@ -311,14 +312,14 @@ Microsoft Copilot Studio for Teams enables customers with select Microsoft 365 o
 Power Pages (formerly Power Apps portals) licensing is capacity based and offers two types of capacities based on user type: **Authenticated users per website/month** and **Anonymous users per website/month**.
 
 - **Authenticated users**
-    -  The **Authenticated user capacity** subscription license can be purchased for the anticipated number of unique, authenticated users. For example, **employees (internal)** or **non-employees (external)** accessing a website during a month. 
-    -  The **Authenticated user pay-as-you-go meter** enables customers to pay-as-you-go based on the actual number of authenticated users who have accessed a website in a month.
+  - The **Authenticated user capacity** subscription license can be purchased for the anticipated number of unique, authenticated users. For example, **employees (internal)** or **non-employees (external)** accessing a website during a month.
+  - The **Authenticated user pay-as-you-go meter** enables customers to pay-as-you-go based on the actual number of authenticated users who have accessed a website in a month.
 
 **Meter Definition:** Power Pages Authenticated user pay-as-you-go meter: A measure of the number of unique authenticated users per website per month.
 
 - **Anonymous users**
-    -  The **Anonymous user monthly capacity** subscription license can be purchased for the anticipated number of unique, anonymous users accessing a website in a month.
-    -  The **Anonymous user pay-as-you-go meter** enables customers to pay-as-you-go based on the actual number of anonymous users who have accessed a website in a month.
+  - The **Anonymous user monthly capacity** subscription license can be purchased for the anticipated number of unique, anonymous users accessing a website in a month.
+  - The **Anonymous user pay-as-you-go meter** enables customers to pay-as-you-go based on the actual number of anonymous users who have accessed a website in a month.
 
 ### What is an authenticated user and how are authenticated users per website/month calculated?
 
@@ -336,18 +337,18 @@ Anonymous users per website/month are calculated as unique users who access one 
 
 There are several scenarios in which a user who has anonymously browsed the website won't be counted in the meter. Some of these are described below:
 
--  Any access of a website running in trial mode won't be counted.
--  Any access of a website running in private mode won't be counted.
--  If the user accesses specific pages on the website, then they aren't counted as anonymous users. These are:
-    -  Pages related to log in like sign-in, register, invitation, and external authentication call back. This is done to ensure if the user is trying to authenticate to the website, they aren't counted as an anonymous user.
-    -  System pages like the ones starting with **/\_** such as **/\_services** and **/\_resource**.
-    -  If a page returns a redirect response (http 3xx status).
-    -  If a page returns an error response (http 5xx status).
-    -  If a page returns 404, or any http 4xx response.
--  Bots and crawler accessing anonymous pages of the website isn't counted.
--  If there's a monitoring system set up to test website availability periodically, it's removed if it sends a nonbrowser user agent. In case your monitoring system sends a user agent that is of any standard browser, it might be counted. If using a monitoring system to test website availability, we recommend targeting **/\_services/about** page of your website to ensure that it isn't counted in anonymous user access.
--  If a user is accessing only static resources (CSS, JavaScript, and images), it won't be counted.
--  If a user is browsing anonymously and later logs in to the website within the same day (UTC time zone), then that user will only be counted as an authenticated user and won't be counted as an anonymous user.
+- Any access of a website running in trial mode won't be counted.
+- Any access of a website running in private mode won't be counted.
+- If the user accesses specific pages on the website, then they aren't counted as anonymous users. These are:
+  - Pages related to log in like sign-in, register, invitation, and external authentication call back. This is done to ensure if the user is trying to authenticate to the website, they aren't counted as an anonymous user.
+  - System pages like the ones starting with **/\_** such as **/\_services** and **/\_resource**.
+  - If a page returns a redirect response (http 3xx status).
+  - If a page returns an error response (http 5xx status).
+  - If a page returns 404, or any http 4xx response.
+- Bots and crawler accessing anonymous pages of the website isn't counted.
+- If there's a monitoring system set up to test website availability periodically, it's removed if it sends a nonbrowser user agent. In case your monitoring system sends a user agent that is of any standard browser, it might be counted. If using a monitoring system to test website availability, we recommend targeting **/\_services/about** page of your website to ensure that it isn't counted in anonymous user access.
+- If a user is accessing only static resources (CSS, JavaScript, and images), it won't be counted.
+- If a user is browsing anonymously and later logs in to the website within the same day (UTC time zone), then that user will only be counted as an authenticated user and won't be counted as an anonymous user.
 
 ### If a user accesses a site anonymously and then logs in to the site in the same session, will the user be counted as both an anonymous and an authenticated user?
 
@@ -377,7 +378,7 @@ The Power Pages authenticated per user and Power Pages anonymous per user offers
 | - | - | - | - |
 | Tier 1 | One pack | 500+ users | $75 |
 | Tier 2 | 20 packs | 10,000+ users | $37.50 |
-| Tier 3 | 200 packs | 100,000+ users | $25 | 
+| Tier 3 | 200 packs | 100,000+ users | $25 |
 
 Prices quoted above are list prices for commercial channel. Special prices are offered for education and non-profit customers.
 
@@ -401,9 +402,9 @@ Yes, Dataverse Database and Dataverse File capacity is included with the authent
 
 Authenticated users licensed with Power Apps or Dynamics 365 enterprise licenses are granted use rights for Power Pages as described below.
 
-1.  Power Apps per app licensed users: One Power Pages website.
-2.  Power Apps per user licensed users: Unlimited Power Pages websites.
-3.  Dynamics 365 enterprise licensed users: Unlimited Power Pages websites. These websites must map to the licensed Dynamics 365 application context and map to the same environment as the licensed Dynamics 365 application.
+1. Power Apps per app licensed users: One Power Pages website.
+2. Power Apps per user licensed users: Unlimited Power Pages websites.
+3. Dynamics 365 enterprise licensed users: Unlimited Power Pages websites. These websites must map to the licensed Dynamics 365 application context and map to the same environment as the licensed Dynamics 365 application.
 
 ### What are the main differences between Power Pages and Power Apps portals licensing?
 
@@ -418,9 +419,7 @@ Authenticated users licensed with Power Apps or Dynamics 365 enterprise licenses
 
 ### If I'm building a Power Pages website for my employees who log in using their Microsoft Entra credentials, what Power Pages licenses do I need?
 
-Internal authenticated users of a Power Pages website can use one of the following type of licenses:
-
-**Subscription based**
+Internal authenticated users of a Power Pages website can use one of the four types of **subscription-based** licenses:
 
 1. **Power Apps per app**: Users can access one Power Pages website that should be part of the environment to which Power Apps per app capacity licenses are assigned.
 1. **Power Apps per user licensed users**: Users who have been assigned Power Apps per user licenses can use unlimited Power Pages websites.
@@ -428,20 +427,22 @@ Internal authenticated users of a Power Pages website can use one of the followi
 1. **Power Pages authenticated user/website subscription**: Users can access one Power Pages website to which Power Pages authenticated per user/website capacity is assigned. If a user accessing the website has a Power Apps per user or a Dynamics 365 enterprise license assigned, then that user won't be counted in Power Pages authenticated user/website capacity.
 
 In order for Power Apps per users/premium and Dynamics 365 enterprise licenses to be recognized:
+
 - Users should access the Power Pages site using their Entra ID and utilizing the out of the box Azure AD provider.
 - Users need a license assigned in the same tenant as the Power Pages site. If the user's license is assigned in a different tenant, it's not recognized.
 
 ### What is the difference between Power Apps portals login capacity and Power Pages authenticated per user/month capacity?
 
-Power Pages Authenticated per user/month capacity counts the number of unique users in a month that have accessed the website in an authenticated manner whereas Power Apps login capacity counts the number of total logins all users had on the website over a 24-hour period.    
-    
+Power Pages Authenticated per user/month capacity counts the number of unique users in a month that have accessed the website in an authenticated manner whereas Power Apps login capacity counts the number of total logins all users had on the website over a 24-hour period.
+
 For example, consider a scenario where a website was accessed by a total of 100 authenticated users in a month with each user logging in once every day to the website. In this scenario, if we apply both meters, here's how they work:
 
-1. **Power Pages authenticated per user**
- 
+- **Power Pages authenticated per user**
+
     With Power Pages authenticated per user per website monthly capacity, the total number of users would be 100 and the customer will need to purchase capacity for 100 users for the website.
-1. **Power Apps portal login**
- 
+
+- **Power Apps portal login**
+
     With Power Apps portal logins, total number of logins would be 100 \* 30 = 3,000 (as each user is logging in once every day) and customer will need to purchase capacity for 3,000 logins for the website.
 
 ### Suppose I create a Power Pages website that can potentially be used by 100,000 authenticated users. However, in a given month it will only be used by 5,000 users (out of the 100,000). Do I need to purchase authenticated per user capacity for 100,000 users or 5,000 users?
@@ -460,16 +461,16 @@ No. Both CDN and WAF capabilities are included as part of Power Pages licensing 
 
     For example, if you have three websites (in three different environments) and bought one authenticated user pack (100 users), you can assign them in the following ways:
 
-    - Environment 1: 25 (min 25)
-    - Environment 2: 35 (min 25)
-    - Environment 3: 40 (min 25)
+  - Environment 1: 25 (min 25)
+  - Environment 2: 35 (min 25)
+  - Environment 3: 40 (min 25)
 
 - **Anonymous users**: Minimum 200 per environment. After that you can assign 1 at a minimum.
 
     For example, if you have two websites (in two different environments) and licensed one anonymous user pack (500 users), you can assign them in the following ways:
 
-    - Environment 1: 220 (min 200)
-    - Environment 2: 280 (min 200)
+  - Environment 1: 220 (min 200)
+  - Environment 2: 280 (min 200)
 
 ### Can I still purchase Power Apps portals login and page view subscriptions?
 
@@ -477,13 +478,13 @@ Power Apps portals login and page view subscriptions will be available for purch
 
 - **Existing customers who have Power Apps portals login and page view subscriptions**
 
-    - Power Apps portals customers whose agreements expired before March 31, 2023, will have the option to renew their agreements using the existing Power Apps portals SKUs for one more agreement term.
-    - During this transition period, existing customers will also be able to purchase more capacity for existing SKUs to create new websites or augment capacity for existing websites.  
-    - Power Apps portals customers whose agreements expire after March 31, 2023, will need to transition to the new Power Pages licensing upon expiration of their Power Apps portals subscription term.
+  - Power Apps portals customers whose agreements expired before March 31, 2023, will have the option to renew their agreements using the existing Power Apps portals SKUs for one more agreement term.
+  - During this transition period, existing customers will also be able to purchase more capacity for existing SKUs to create new websites or augment capacity for existing websites.  
+  - Power Apps portals customers whose agreements expire after March 31, 2023, will need to transition to the new Power Pages licensing upon expiration of their Power Apps portals subscription term.
 
 - **New customers**
-    - Power Apps portals per login and per page view SKUs will be available for new customers to purchase until March 31, 2023.
-    - After March 31, 2023, new customers will purchase the new Power Pages SKUs.
+  - Power Apps portals per login and per page view SKUs will be available for new customers to purchase until March 31, 2023.
+  - After March 31, 2023, new customers will purchase the new Power Pages SKUs.
 
 ### Do unused Power Pages subscription licenses (authenticated per user and anonymous per user) carry forward to the next month?
 
@@ -519,17 +520,13 @@ Dataverse for Teams is a built-in flexible datastore that provides data storage 
 
 - Power Apps capabilities seeded in Microsoft 365 licenses are expanding to enable building and deploying custom apps natively within Teams. This includes using custom [APIs built using Azure API Management](/azure/api-management/export-api-power-platform).
 
-
 - Additionally, Microsoft Copilot Studio capabilities have been introduced to Teams. Customers will now be able to build and deploy custom chatbots directly within Teams only.
-
 
 The existing Microsoft Power Platform functionality available for use in Microsoft 365 more broadly outside of Teams remains otherwise unchanged.
 
 #### Is there any new capability coming with Dataverse for Teams to Power Automate rights included with Microsoft 365?
 
-
 Yes. With Dataverse for Teams, users now can build flows that operate in a Dataverse for Teams environment. Note that a Dataverse for Teams environment needs to be created first by either authoring an app or chatbot.
-
 
 #### Which Microsoft 365 subscriptions include Dataverse for Teams and Microsoft Copilot Studio capabilities with Teams?
 
@@ -569,7 +566,7 @@ In both cases:
 
 - Users who want to create/install new apps, chatbots, flows, or tables in that environment will be notified that the capacity limit is reached, and they need to reduce storage usage or contact their admins.
 
-- Existing solutions in the environment continue to work (CRUD allowed). The environments will be able to continue to grow beyond the 2 GB limit. 
+- Existing solutions in the environment continue to work (CRUD allowed). The environments will be able to continue to grow beyond the 2 GB limit.
 
 - Existing solutions within the environment can be updated.
 
@@ -613,14 +610,14 @@ This capability isn't available yet, but is included in our roadmap.
 - Rich access control, auditing
 - Governance and security
 
-> [!Note]
+> [!NOTE]
 > Accessing an environment with Dataverse requires all users to have a corresponding standalone Power Platform license for each service being utilized. For example, a user accessing an app running on Dataverse needs to be licensed by either the Power Apps per app or per user plan depending on the customer scenario.
 
 #### Why do I see a Dataverse plan in select Microsoft 365 subscriptions? Is this related to Dataverse for Teams?
 
 No. A limited set of Dataverse capabilities were recently added to Microsoft 365 licenses to support service capabilities available (for example, Microsoft Project). A standalone Power Apps, Power Automate, or Copilot Studio plan is still needed to run apps/flows/bots with Dataverse. To learn more about this feature, go to [Dataverse capabilities with Microsoft 365 licenses](pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses).
 
-> [!Note]
+> [!NOTE]
 > There's a service plan called *Dataverse for Teams* that's related to the Dataverse for Teams capabilities. Our platform uses this service plan for granting customer tenants Dataverse for Teams storage capacity. Don't deactivate it.
 
 #### Is geo migration supported for Dataverse for Teams environments?
@@ -687,12 +684,10 @@ More information:
 
 The following list provides add-ons applicable to all standalone Power Apps and Power Automate plans:
 
-
 - **Power Platform Requests add-on (formally the Power Apps and Power Automate capacity add-on**) increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
 - Dataverse Database Capacity (1 GB) $40 per month
 - Dataverse File Capacity (1 GB) $2 per month
 - Dataverse Log Capacity (1 GB) $10 per month
-
 
 ### Trial licenses
 
@@ -720,7 +715,7 @@ More information: [About trial environments](trial-environments.md)
 
 For Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications, go to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-The SQL, Azure, and Dynamics 365 connectors in the following list are now classified as Premium. Non-Microsoft connectors that had previously been classified as standard connectors are still available to Microsoft 365 users. A standalone Power Apps or Power Automate plan license is required to access all Premium, on-premises and custom connectors.
+The SQL, Azure, and Dynamics 365 connectors in the following list are now classified as Premium. Non-Microsoft connectors that had previously been classified as [standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) are still available to Microsoft 365 users. A standalone Power Apps or Power Automate plan license is required to access all [Premium](/connectors/connector-reference/connector-reference-premium-connectors), on-premises, and custom connectors.
 
 Premium connectors list:
 
@@ -771,32 +766,26 @@ Although apps may be granted to use the Dynamics 365 connector for an extended t
 
 #### I have apps and flows that were in an extended transition period until October 1, 2024, under the Power Apps and Power Automate use rights for Microsoft 365 applications. What happens to my apps and flows after October 1, 2024?
 
-The period for extended use rights concludes on October 1, 2024 and users are required to have appropriate licenses to maintain compliance. In-product licensing enforcement will begin April 1, 2025, until which your users will be able to use these apps and flows. However, if an action to purchase and assign Premium licenses to users isn't taken now before the full enforcement date of April 1, 2025, such users will be unable to use these apps and flows.
+The period for extended use rights concludes on October 1, 2024 and users are required to have appropriate licenses to maintain compliance. In-product licensing enforcement begins April 1, 2025, until which your users are able to use these apps and flows. However, if an action to purchase and assign Premium licenses to users isn't taken before the full enforcement date of April 1, 2025, such users will be unable to use these apps and flows.
 
-#### What is the recommendation before the enforcement of Premium connector licensing requirements begins from April 1, 2025?
+#### How do I ensure my organization has purchased appropriate licenses and the licenses are assigned to users?
 
-- Ensure that you have appropriate licenses purchased. Refer to the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for the Power Apps and Power Automate licenses with use rights for premium connectors, custom connectors and on-premises data gateways.
-- Ensure users have licenses assigned. For this, we highly recommend that you immediately enable [auto-claim policies for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  and [auto-claim policies for Power Automate licenses](/power-platform/admin/power-automate-licensing/power-automate-auto-claim) to benefit from automatic assignment of licenses to users. 
+- To ensure you have appropriate licenses purchased, refer to the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for the Power Apps and Power Automate licenses with use rights for premium connectors, custom connectors, and on-premises data gateways.
+- To ensure users have licenses assigned, we highly recommend that you immediately enable [auto-claim policies for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  and [auto-claim policies for Power Automate licenses](/power-platform/admin/power-automate-licensing/power-automate-auto-claim) to benefit from automatic assignment of licenses to users.
 
 #### How do I identify users using apps with premium connectors under extended use rights?
 
 Use the [Power Platform actions page](licensing-and-capacity-recommendations.md#assign-licenses-to-active-users-using-premium-apps-with-standard-licenses) recommendation that lists users actively using Power Apps applications with Microsoft 365 under extended use rights. Learn more in [Use the actions page](power-platform-advisor.md#view-recommendations).
 
-#### How do I identify apps and flows that are using specific connectors that were under the extended use rights? 
+#### How do I identify apps and flows that are using specific connectors that were under the extended use rights?
 
-The following inventory reports are available in the Power Platform admin center to help you identify your apps and flows with the connectors being used -  
+You can access inventory reports in the[Power Platform admin center](<https://admin.powerplatform.microsoft.com/home>) to help you identify your apps and flows that are using specific connectors.
 
-  - [Power Apps inventory report](/power-platform/admin/powerapps-analytics-reports#power-apps---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Apps** > **Overview** tab > **App Inventory** tab. You can view the connectors list in the drill through the report. Right-click on the app with the connections and in the menu that opens, select **Drill-through** > **App Connectors**
+- [Power Apps inventory report](/power-platform/admin/powerapps-analytics-reports#power-apps---inventory-report)
 
-    :::image type="content" source="media/powerapps-flow-licensing-faq/inventory-reports-power-apps.png" alt-text="A screenshot of Power Apps Inventory report":::
+- [Power Automate Inventory report](/power-platform/admin/power-automate-analytics-reports#power-automate---inventory-report)
 
-    This takes you to the Connectors used by the app.
-
-    :::image type="content" source="media/powerapps-flow-licensing-faq/app-inventory.png" alt-text="A screenshot of details about connectors in Power Apps Inventory report":::
-
-- [Power Automate Inventory report](/power-platform/admin/power-automate-analytics-reports#power-automate---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Automate** > **Overview** tab > **Inventory** tab. Steps to view the connectors list in the drill through **Flow connectors** report are similar to the steps described above for Power Apps. 
-
-#### Can licenses be automatically assigned to ensure these apps and flows continue to function for users? 
+#### Can licenses be automatically assigned to ensure these apps and flows continue to function for users?
 
 Yes, we highly recommend that you enable auto-claim policy to help you automatically assign licenses to users and avoid any disruption. Similar to how [auto-claim policy is enabled by default for managed environments](/power-platform/admin/auto-claim-licensing#auto-claim-policy-enabled-by-default), starting January 2025 auto-claim policy will also be enabled for all customers who were in an extended transition period. More information: [Manage auto-claim policies in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  
 
@@ -816,9 +805,9 @@ Yes, you can use the finance and operations apps connector to build canvas apps 
 
 ## Power Platform security and governance licensing requirements
 
-### Managed Environments 
+### Managed Environments
 
-Managed Environments is included as an entitlement with: 
+Managed Environments is included as an entitlement with:
 
 - Power Apps Premium
 - Power Apps per app
@@ -845,7 +834,7 @@ Customer Managed Key policy will only be enforced in environments that are activ
 - Microsoft 365 F5 Security & Compliance
 - Microsoft 365 E5/F5/G5 Information Protection and Governance
 
-For more information, see [Licensing requirements for Customer Managed Key](/power-platform/admin/customer-managed-key#licensing-requirements-for-customer-managed-key). 
+For more information, see [Licensing requirements for Customer Managed Key](/power-platform/admin/customer-managed-key#licensing-requirements-for-customer-managed-key).
 
 #### Customer Lockbox
 
@@ -856,11 +845,12 @@ Enabling Customer Lockbox enforces the policy only for environments that are act
 - Microsoft 365 F5 Security & Compliance
 - Microsoft 365 E5/F5/G5 Insider Risk Management
 
-Note: Customer Lockbox is available in public clouds and US Government Community Cloud (GCC), GCC High, and Department of Defense (DoD) regions.
+> [!NOTE]
+> Customer Lockbox is available in public clouds and US Government Community Cloud (GCC), GCC High, and Department of Defense (DoD) regions.
 
-For more information, see [Licensing requirements for Customer Lockbox](/power-platform/admin/about-lockbox#licensing-requirements-for-customer-lockbox). 
+For more information, see [Licensing requirements for Customer Lockbox](/power-platform/admin/about-lockbox#licensing-requirements-for-customer-lockbox).
 
-#### Azure Virtual Network (vNet) 
+#### Azure Virtual Network (vNet)
 
 To enable Virtual Network support for Power Platform, environments must be Managed Environments. In addition, access to using Virtual Network support for Power platform requires users in the environments where the Virtual Network is enabled to have one of these subscriptions:
 
@@ -871,6 +861,6 @@ To enable Virtual Network support for Power Platform, environments must be Manag
 - Microsoft 365 E5/F5/G5 Insider Risk Management
 - Organization must have an Azure subscription with permissions to create a virtual network, subnet, and the enterprise policy resources.
 
-For more information, see Set up [Virtual Network support for Power Platform](/power-platform/admin/vnet-support-setup-configure). 
+For more information, see Set up [Virtual Network support for Power Platform](/power-platform/admin/vnet-support-setup-configure).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

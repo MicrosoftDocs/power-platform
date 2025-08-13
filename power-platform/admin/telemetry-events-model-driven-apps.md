@@ -11,6 +11,7 @@ ms.author: johnev
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # What data is available for model-driven apps?

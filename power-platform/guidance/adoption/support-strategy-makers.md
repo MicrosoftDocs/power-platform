@@ -73,7 +73,7 @@ Over time, help desk personnel will improve their troubleshooting and problem re
 
 ## Microsoft support
 
-Based on your support plan, you might be eligible for advisory support services provided through Premier/Unified support. Learn more about the support available to you in [Get Help + Support](../../admin/get-help-support.md).
+Based on your support plan, you might be eligible for advisory support services provided through Premier/Unified support. Learn more about the support available to you in [Get Support](../../admin/get-help-support.md).
 
 Refer to the comprehensive [Microsoft Power Platform documentation](../../index.yml). It's an authoritative resource that helps with troubleshooting and finding information.
 

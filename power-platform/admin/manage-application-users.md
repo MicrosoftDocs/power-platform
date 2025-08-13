@@ -15,6 +15,7 @@ contributors:
   - lavanyapg
 ms.contributors:
   - lsuresh
+ms.custom: sfi-image-nochange
   
 ---
 # Manage application users in the Power Platform admin center

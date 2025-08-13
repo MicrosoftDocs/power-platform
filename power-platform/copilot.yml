@@ -1,21 +1,21 @@
 ### YamlMime:Landing
 
 title: Copilots and generative AI in Power Platform
-summary: Get an overview of where to find documentation and training for copilots and generative AI in Power Platform.
+summary: Get an overview of where to find documentation and training for Copilots and generative AI in Power Platform.
 
 metadata:
   title: Copilots and generative AI in Power Platform
-  description: Get an overview of where to find documentation and training for copilots and generative AI in Power Platform.
+  description: Get an overview of where to find documentation and training for Copilots and generative AI in Power Platform.
   author: jhaskett-msft
   ms.author: jhaskett
-  ms.date: 02/28/2025
+  ms.date: 08/01/2025
   ms.topic: landing-page # DON'T CHANGE
   ms.custom: 
     - bap-template #Required; don't change
     - copilot-learning-hub
   ms.collection: bap-ai-copilot
 
-# linkListType: concept | deploy | download | get-started | how-to-guide | overview | reference | sample | video | whats-new
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | learn | video | whats-new
 
 landingContent:
 
@@ -24,8 +24,10 @@ landingContent:
     linkLists:
     - linkListType: get-started
       links:
-      - text: Move data across regions for Copilots and generative AI features
-        url: admin/geographical-availability-copilot.md
+      - text: AI Builder
+        url: /ai-builder/
+      - text: Copilot Studio
+        url: /microsoft-copilot-studio/
       - text: Copilot in Power Apps
         url: /power-apps/maker/canvas-apps/ai-overview
       - text: Copilot in Power Automate
@@ -47,14 +49,18 @@ landingContent:
       - text: Explore more training available
         url: /training/browse/?products=power-platform&terms=copilot
 
-  - title: Copilot guidance and development
+  - title: Copilot development and deployment
     linkLists:
-    - linkListType: concept
+    - linkListType: deploy
       links:
+      - text: Track, manage, and scale Copilot adoption
+        url: /admin/copilot/copilot-hub.md
       - text: Use Copilot to generate deployment notes in pipelines
         url: alm/copilot-deployment-notes-pipelines.md
       - text: Extend Microsoft 365 Copilot
         url: /microsoft-365-copilot/extensibility/
+      - text: Move data across regions for Copilots and generative AI features
+        url: admin/geographical-availability-copilot.md
       - text: Generative language models used in Dynamics 365 and Power Platform
         url: language-models-list.md
     - linkListType: reference
@@ -63,43 +69,37 @@ landingContent:
         url: developer/cli/reference/copilot.md
 
 # Card
-  - title: Power Platform Well-Architected
+  - title: Power Platform generative AI guidance
     linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Power Platform Well-Architected?
-            url: well-architected/what-is-power-well-architected.md
       - linkListType: concept
         links:
-          - text: Intelligent application workload
-            url: well-architected/intelligent-application/index.yml
-      - linkListType: reference
+          - text: "Power Platform Well-Architected: Intelligent application workloads"
+            url: well-architected/intelligent-application/index.yml  
+      - linkListType: architecture
         links:
-          - text: Power Platform Well-Architected assessment
-            url: /assessments/689fd8d9-1000-4cbb-8096-a6c8f3294fc7/
+          - text: "Power Platform and Copilot Studio Architecture Center: Reference architectures and solution ideas"
+            url: architecture/products/copilot-studio.md
 
 # Card
   - title: Responsible AI
     linkLists:
-    - linkListType: overview
+    - linkListType: concept
       links:
-      - text: FAQs for Microsoft Power Platform
+      - text: Responsible AI FAQs for Power Platform
         url: responsible-ai-overview.md
-      - text: FAQs for Power Apps
-        url: /power-apps/maker/common/responsible-ai-overview
-      - text: FAQs for Power Automate
-        url: /power-automate/responsible-ai-overview
-      - text: FAQs for Power Pages
-        url: /power-pages/responsible-ai-overview
+      - text: FAQ about Copilot data security and privacy
+        url: faqs-copilot-data-security-privacy.md
+      - text: FAQ about optional data sharing for Copilot features
+        url: faqs-copilot-data-sharing.md
 
 ## Card
   - title: Related copilot products and resources
     linkLists:
-    - linkListType: reference
+    - linkListType: concept
       links:
       - text: Copilot availability in Power Platform by geography, language, product, and feature
         url: https://aka.ms/bapcopilot-intl-report-external
-      - text: Microsoft Copilot Studio
-        url: /microsoft-copilot-studio/   
-      - text: Microsoft Copilot learning hub
+      - text: Microsoft Learn Copilot learning hub
         url: /copilot/   
+      - text: Microsoft Learn AI learning hub
+        url: /ai/   

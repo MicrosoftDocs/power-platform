@@ -4,7 +4,7 @@ description: Learn how to manage security in the Power Platform admin center by 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/08/2025
+ms.date: 07/31/2025
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
@@ -14,8 +14,6 @@ search.audienceType:
 ---
 
 # Security overview
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The **Security** > **Overview** page in the Power Platform admin center is designed to enhance your organization's security and streamline management. It provides a centralized location where you can view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization.
 
@@ -46,8 +44,6 @@ To access the **Security** > **Overview** page, you must have Microsoft Entra ID
 > - On every security page, features that apply to Managed Environments are marked with the following meter symbol:
 >
 >     :::image type="content" source="media/managed-environments-icon.png" alt-text="Symbol that indicates that a Managed Environment is required.":::
-
-## Key capabilities
 
 ## Security score (preview)
 
@@ -83,6 +79,24 @@ In this case, your total score is 2 &plus; 10 &plus; 5 = 17, and the total possi
 > - The score calculation considers all environments, both Managed Environments and non-Managed Environments.
 > - If there are no Managed Environments that you can take action on in the recommendation pane, no environments are listed.
 
+## Turn on environment management to unlock full security benefits
+
+> [!Note]
+> This feature is in the process of rolling out and might not be available in your region yet.
+
+To ensure your organization benefits from the complete suite of managed security features, each environment must be configured as a managed environment.
+
+As an admin, you can now view the percentage of environments in your tenant that are currently unmanaged. This new experience allows you to convert environments from unmanaged to managed at scale—with just a few clicks.
+
+1. Select **Get started** to begin the conversion process. The **Get enhanced security features** pane appears.
+1. Select environments from the **Recommended environments** tab, which prioritizes environments based on data volume. Alternatively, switch to the **All eligible environments** tab to manually select environments you want to convert.
+1. Review and accept the terms and conditions.
+1. Select **Turn on environment management** to complete the conversion.
+
+If you prefer to turn on environment management later, select **Not now** to dismiss the prompt and revisit when ready.
+
+By using [environment management](../environment-management-overview.md), you’re taking a proactive step toward stronger, more consistent security across your organization.
+
 ## Reactive governance through recommendations
 
 The system generates various recommendations, based on common best practices that improve the security score of your tenant. Recommendations refer to actions or measures that the administrator can take to enhance the overall security status.
@@ -90,7 +104,7 @@ The system generates various recommendations, based on common best practices tha
 - Administrators are guided through an intuitive experience where they take relevant actions on environments, based on specific recommendations.
 - Each recommendation shows the potential increase to the overall security score.
 
-Although the recommendations span all environments, you can act on them only in Managed Environments. In the case of non-Managed Environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
+Although the recommendations span all environments, you can act on them only in Managed Environments. If non-Managed Environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
 
 ## Conditions that trigger feature recommendations
 
@@ -155,7 +169,7 @@ To make a recommendation active again, complete the following steps.
 ## Manage security settings at an environment group-level
 Managing Power Platform at scale presents challenges for IT teams overseeing numerous environments. To streamline security governance, administrators can configure security settings at the *environment group* level, ensuring uniform enforcement of policies across all environments within a group.
 
-Currently, security management at the environment group-level is available for **Sharing** features, with plans to extend support to additional security capabilities in the near future. This structured approach simplifies administration, enhances security, and optimizes large-scale environment management for both startups and enterprises.
+Currently, security management at the environment group-level is available for **Sharing**, **IP Firewall**, and **IP address-based cookie binding** features, with plans to extend support to other security capabilities soon. This structured approach simplifies administration, enhances security, and optimizes large-scale environment management for both startups and enterprises.
 
 To configure security settings at the environment group-level, complete the following steps.
 
@@ -184,7 +198,7 @@ The security score is calculated based on the security features that are turned 
 
 ### Why don't all environments appear in the recommended action?
 
-Although the recommendations span all environments, you can act on them only in Managed Environments. In the case of non-Managed Environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
+Although the recommendations span all environments, you can act on them only in Managed Environments. If non-Managed Environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
 
 ### Can customers modify the recommendations based on their needs?
 

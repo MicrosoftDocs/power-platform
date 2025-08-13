@@ -14,6 +14,9 @@ contributors:
   - jahnavisunil 
   - Zeffin
   - johnev
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ga-blocked
 ---
 
 # Tenant-level analytics

@@ -5,13 +5,16 @@ author: sericks007
 ms.topic: how-to
 ms.date: 06/02/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: sericks
 ms.reviewer: ellenwehrle
 ms.contriutors:
  - yingchin
  - mbajwa
  - olegov
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 
 # View and download Microsoft Dataverse analytics
@@ -85,31 +88,31 @@ The Active users dashboard shows you how many [!INCLUDE[pn_dyn_365](../includes/
 > [!NOTE]
 > Exports are limited to a maximum of 3000 records.
 
-|Chart element|Description|  
-|--------------|-----------------|  
-|             Total Active Users              |   Total number of active users (unique users) who perform an operation that causes one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.   |
-|             Most Used  Entities             |  Ten Entities that have the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.  |
-|             Total Page Requests             | The number of page-load requests for forms, dashboards, and reports received by the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] server. Pages cached while browsing aren't counted. |
-|              Total Operations               |  The number of operations (`Create`, `Update`, `Deletes`, `Reads`) that occur in the environment with a Dataverse database for a selected time period. |
-| Active Users Performing Specific Operations |  Total number of active users (unique users) over time who perform an operation that causes one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                       |
-|                Active Users                 |Number of active users (unique users) in your environment who perform an operation that causes one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update` over time.                  |
-|   Most Active Users Performing Operations   |                        List of  most active users (unique users) over time who perform an operation that causes one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                        |
-|          Most Used Custom Entities          |   List of custom entities that have the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.                                                       |
-|           Most Used OOB Entities            |  List of out-of-box entities that have the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.                                                     |
-|          Usage Active Users by OS           |   The number of active users by operating system.      |
-|         Active Users by Device Type         |                                                                                             The number of active users by device type.                                                                                              |
-|           Active Users by Browser           |                                                                                               The number of active users by browser.                                                                                                |
-|       Active Users by Security Roles        |                                                                                            The number of active users by security roles.                                                                                            |
-|           Users by Business Unit            | The number of active users by business unit.    |
-|         Number of Creates by Entity         |   The number of create operations performed by a selected user in the environment with a Dataverse database for a selected time period.                                    |
-|         Number of Updates by Entity         |                         The number of update operations performed on different entities by a selected user in the environment with a Dataverse database for a selected time period.                         |
-|          Number of Reads by Entity          |                          the number of read operations performed on different entities by a selected user in the environment with a Dataverse database for a selected time period.                          |
-|         Number of Deletes by Entity         |                        The number of delete operations performed on different entities by a selected user in the environment with a Dataverse database for a selected time period.                         |
-|         Total Operations Over Time          |                                        The number of operations performed by a selected user in the environment with a Dataverse database over a selected time period.                                         |
-|         Total Operations by Entity          |                              The total operations performed on different entities by a selected user in the environment with a Dataverse database for a selected time period.                              |
-|          Active Users by Entities           |                                                                            The active users distributed over different entities                                                                            |
-|           Active Users by Client            |                                                                                   The active users distributed by client type                                                                                  |
-|   Active Users Using More than One Client   |                                                      The number of active users using more than one client, distributed over different client combinations                                                       |
+
+> [!div class="mx-tableFixed"]
+> |Chart element|Description|  
+> |--------------|-----------------|  
+> |             Total Active Users              |   Total number of active users (unique users) who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.   | 
+> |             Most Used  Entities             |  Ten Entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.  | 
+> |             Total Page Requests             | The number of page load requests for forms, dashboards, and reports. This is the count of requests received by the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] server. Pages that are cached while browsing won't be counted. | 
+> |              Total Operations               |  This chart shows how many operations (create, update, deletes, reads) have occurred in the environment with a Dataverse database for the selected time period. | 
+> | Active Users Performing Specific Operations |  Total number of active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                       | 
+> |                Active Users                 |Number of active users (unique users) in your environment who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update` over time.                  | 
+> |   Most Active Users Performing Operations   |                        List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                        | 
+> |          Most Used Custom Entities          |   List of custom entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.                                                       | 
+> |           Most Used OOB Entities            |  List of out-of-box entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.                                                     | 
+> |          Usage Active Users by OS           |   The number of active users by operating system.      | 
+> |         Active Users by Device Type         |                                                                                             The number of active users by device type.                                                                                              | 
+> |           Active Users by Browser           |                                                                                               The number of active users by browser.                                                                                                | 
+> |       Active Users by Security Roles        |                                                                                            The number of active users by security roles.                                                                                            | 
+> |           Users by Business Unit            | The number of active users by business unit.    | 
+> |         Number of Creates by Entity         |   How many create operations are performed by the selected user in the environment with a Dataverse database for the selected time period.                                    | 
+> |         Number of Updates by Entity         |                         How many update operations are performed on different entities by the selected user in the environment with a Dataverse database for the selected time period.                         | 
+> |          Number of Reads by Entity          |                          How many read operations are performed on different entities by the selected user in the environment with a Dataverse database for the selected time period.                          | 
+> |         Number of Deletes by Entity         |                         How many delete operations are performed on different entities by the selected user in the environment with a Dataverse database for the selected time period.                         | 
+> |         Total Operations Over Time          |                                        The total operations performed by the selected user in the environment with a Dataverse database over the selected time period.                                         | 
+> |         Total Operations by Entity          |                              The total operations performed on different entities by the selected user in the environment with a Dataverse database for the selected time period.                              | 
+> |          Active Users by Entities           |                                                                            Show the active users distributed over different entities                                                                               | 
 
 > [!NOTE]
 > **Retrieve** and **RetrieveMultiple** SDK calls are reported as **Reads**.  
