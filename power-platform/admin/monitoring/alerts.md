@@ -67,27 +67,22 @@ In the email notification, select **Go to Alert** to open a Power Platform page 
 
 ### Notes to be aware of
 -	A tenant can have 25 alerts rules turned on at one time. However, you can create an unlimited number of alert rules. Consider deleting or turning off any existing alert rule if you’ve reached the maximum.
--	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the Monitor area is evaluated every 24 hours after the newest 24 hour aggregates are produced. The alert rule does an on-demand evaluation upon its creation.
+-	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the **Monitor** area is evaluated every 24 hours after the newest 24 hour aggregates are produced. The alert rule does an on-demand evaluation upon its creation.
 
-
-## Alert FAQs
+## Frequently asked questions (FAQs)
 
 ### What’s the difference between an alert rule and a triggered alert?
-Alert rule: A monitoring rule you configure (scope, metric, threshold, severity, notification).                                                                                                                                               
-Triggered alert: An instance when one or more resources meet the rule’s condition (e.g., “Is under 90% for app open success rate”).
-
+An _alert rule_ is a monitoring rule you configure, including the scope, metric, threshold, severity, and notification.                                                                                                                                               
+A _triggered alert_ is an instance when one or more resources meet the rule’s condition. For example, the **Is under 90% for app open success rate** condition is met.
 
 ### Who can create and manage alerts?
-You must be a **Tenant administrator** or an **Environment administrator**
-
+You must be a **Tenant administrator** or an **Environment administrator** to create and manage alerts.
 
 ### What environments are supported?
-All environment types (e.g. Production, Sandbox, Trial, and Developer) are supported, but they must be a Managed Environment. You select the environment in the Id field after choosing Scope = Environment. 
-
+All environment types, such as production, sandbox, trial, and developer environment types are supported, but they must be a Managed Environment. You select the environment in the **ID** field after setting the **Scope** field to **Environment**. 
 
 ### Where do I manage my created alerts?
-Go to Power Platform admin center → Monitor → Alerts and manage existing rules on the Alert rules tab (edit, delete, enable/disable).
-
+Go to Power Platform admin center and select **Monitor > Alerts** and manage existing rules on the **Alert rules** tab (edit, delete, enable/disable).
 
 ### What is the last run column in the Alert rules tab?
 The data in this column informs you the last time the alert rule ran. Alerts should run every 24 hours, so the values in this column should change accordingly. 
