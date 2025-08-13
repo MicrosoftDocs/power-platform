@@ -90,7 +90,7 @@ The data in this column informs you the last time the alert rule ran. Alerts sho
 ### Does the severity level affect how alerts are processed?
 The **Severity**, such as **Low**, **Medium**, ir **High** is a classification label for triage and reporting. It doesn't change evaluation frequency or email notification behavior. 
 
-### Do Alerts work on the default environment?
+### Do alerts work on the default environment?
 Yes, **if** your default environment is a **Managed Environment**. Alerts are only supported in Managed Environments. 
 
 ### Any tips or best practices?
