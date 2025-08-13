@@ -21,7 +21,7 @@ search.audienceType:
 
 # Delete environment
 
-You can delete an environment to recover storage space and to remove Personally Identifiable Information (PII). 
+You can delete an environment to recover storage space and to remove Personally Identifiable Information (PII).
 
 > [!NOTE]
 > You can't delete the [default environment](environments-overview.md#default-environment).
@@ -34,12 +34,11 @@ You can delete an environment to recover storage space and to remove Personally 
 
 3. In the **Manage** pane, select **Environments**, and then select the source environment to delete.
 
+4. Select the ellipsis next to the environment to delete, and select **Delete**.
+
   :::image type="content" source="media/delete-environment-updated-new.png" alt-text="Delete a selected environment in the new admin center.":::
 
 4. Provide the confirmation data and then select **Confirm**.
-
-> [!NOTE]
-> The URL of a deleted environment can't be used again for another environment until at least 24 hours have passed since the environment deletion.
 
 ### [Classic admin center](#tab/classic)
 
@@ -51,9 +50,10 @@ You can delete an environment to recover storage space and to remove Personally 
 
 3. Provide the confirmation data and then select **Confirm**.
 
+---
+
 > [!NOTE]
 > The URL of a deleted environment can't be used again for another environment until at least 24 hours have passed since the environment deletion.
-
 
 ## See also
 
