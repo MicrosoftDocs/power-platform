@@ -11,6 +11,7 @@ ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Monitor with the CoE Power BI dashboard
 

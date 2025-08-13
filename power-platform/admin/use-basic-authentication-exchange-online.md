@@ -10,6 +10,7 @@ ms.author: dmartens
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Use of Basic authentication with Exchange Online 
 

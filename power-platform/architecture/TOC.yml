@@ -7,60 +7,72 @@
       href: whats-new.md
     - name: Architecture key concepts
       items:
-      - name: Overview
-        href: key-concepts/index.md
-      - name: ExpressRoute and Power Platform
-        items:
-          - name: Overview
-            href: key-concepts/expressroute/overview.md
-          - name: Benefits of using ExpressRoute
-            href: key-concepts/expressroute/benefits.md
-          - name: How ExpressRoute works
-            href: key-concepts/expressroute/how-expressroute-works.md
-          - name: Before you use ExpressRoute
-            href: key-concepts/expressroute/things-to-consider.md
-          - name: Understand Power Platform architecture
-            href: key-concepts/expressroute/understanding-architecture.md
-          - name: Plan an ExpressRoute deployment
-            href: key-concepts/expressroute/planning-expressroute.md
-          - name: Set up ExpressRoute
-            href: key-concepts/expressroute/setup.md
-          - name: Checklist for ExpressRoute readiness
-            href: key-concepts/expressroute/checklist.md
-      - name: Dataverse auditing
-        href: key-concepts/dataverse-auditing.md
-      - name: Distributed tracing across multiple services
-        items:
-          - name: Overview
-            href: key-concepts/distributed-tracing.md
-          - name: Implement distributed tracing
-            href: key-concepts/distributed-tracing-details.md
+        - name: Overview
+          href: key-concepts/index.md
+        - name: ExpressRoute and Power Platform
+          items:
+            - name: Overview
+              href: key-concepts/expressroute/overview.md
+            - name: Benefits of using ExpressRoute
+              href: key-concepts/expressroute/benefits.md
+            - name: How ExpressRoute works
+              href: key-concepts/expressroute/how-expressroute-works.md
+            - name: Before you use ExpressRoute
+              href: key-concepts/expressroute/things-to-consider.md
+            - name: Understand Power Platform architecture
+              href: key-concepts/expressroute/understanding-architecture.md
+            - name: Plan an ExpressRoute deployment
+              href: key-concepts/expressroute/planning-expressroute.md
+            - name: Set up ExpressRoute
+              href: key-concepts/expressroute/setup.md
+            - name: Checklist for ExpressRoute readiness
+              href: key-concepts/expressroute/checklist.md
+        - name: Dataverse auditing
+          href: key-concepts/dataverse-auditing.md
+        - name: Distributed tracing across multiple services
+          items:
+            - name: Overview
+              href: key-concepts/distributed-tracing.md
+            - name: Implement distributed tracing
+              href: key-concepts/distributed-tracing-details.md
+        - name: Manage solution performance
+          items:
+            - name: Overview
+              href: key-concepts/performance/index.md
+            - name: Explore UX strategies
+              href: key-concepts/performance/ux-strategies.md
+            - name: Measure and maintain solution performance
+              href: key-concepts/performance/tools.md
+            - name: Identify and mitigate canvas app performance
+              href: key-concepts/performance/top-issues.md
     - name: Reference architectures
       items:
-      - name: Overview
-        href: reference-architectures/index.md
-      - name: Streamline document processing with AI Builder
-        href: reference-architectures/ai-document-processing.md
-      - name: Perform predictive data analysis
-        href: reference-architectures/ai-predictive-data-analysis.md
-      - name: Integrate legacy data with Power Automate and SharePoint
-        href: reference-architectures/app-legacy-data-integration.md
-      - name: Use Dataverse background operations
-        href: reference-architectures/dataverse-background-operations.md
-      - name: Secure Power Platform access to Azure resources
-        href: reference-architectures/secure-access-azure-resources.md
-      - name: Integrate Power Platform with SAP
-        href: reference-architectures/arch-pattern-sap.md
-      - name: ​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables
-        href: reference-architectures/app-integrate-lakehouse.md
-      - name: Use REST APIs to extend functionality of canvas apps
-        href: reference-architectures/custom-connector-canvas.md
-      - name: Use Dataverse as a data source for canvas apps
-        href: reference-architectures/dataverse-canvas-app.md
-      - name: Reduce infrastructure challenges with Hosted RPA in Power Automate​
-        href: reference-architectures/rpa-scale-operations.md
-      - name: Use an autonomous agent in Copilot Studio for document processing
-        href: reference-architectures/document-processing-agent.md
+        - name: Overview
+          href: reference-architectures/index.md
+        - name: Streamline document processing with AI Builder
+          href: reference-architectures/ai-document-processing.md
+        - name: Perform predictive data analysis
+          href: reference-architectures/ai-predictive-data-analysis.md
+        - name: Integrate legacy data with Power Automate and SharePoint
+          href: reference-architectures/app-legacy-data-integration.md
+        - name: Use Dataverse background operations
+          href: reference-architectures/dataverse-background-operations.md
+        - name: Secure Power Platform access to resources
+          href: reference-architectures/secure-access-azure-resources.md
+        - name: Integrate Power Platform with SAP
+          href: reference-architectures/arch-pattern-sap.md
+        - name: ​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables
+          href: reference-architectures/app-integrate-lakehouse.md
+        - name: Use REST APIs to extend functionality of canvas apps
+          href: reference-architectures/custom-connector-canvas.md
+        - name: Use Dataverse as a data source for canvas apps
+          href: reference-architectures/dataverse-canvas-app.md
+        - name: Reduce infrastructure challenges with Hosted RPA in Power Automate​
+          href: reference-architectures/rpa-scale-operations.md
+        - name: Use SQL Server with canvas apps
+          href: reference-architectures/sqlserver-canvas-app.md
+        - name: Use an autonomous agent in Copilot Studio for document processing
+          href: reference-architectures/document-processing-agent.md
     - name: Solution ideas
       items:
         - name: Overview
@@ -71,12 +83,16 @@
           href: solution-ideas/agent-rental-portal.md
         - name: Revolutionize vehicle inspections with EVVIE
           href: solution-ideas/app-evvie.md
-        - name: Custom contact center solution with Copilot Studio agent
+        - name: Custom contact center solution with Copilot Studio
           href: solution-ideas/agent-custom-contact-center.md
         - name: Travel concierge using generative AI with Copilot Studio
           href: solution-ideas/agent-travel-customer.md
         - name: Ticket management system with Copilot Studio agents
           href: solution-ideas/agent-ticket-and-refund.md
+        - name: Automate bug reporting with Auto Triage AI Agent
+          href: solution-ideas/auto-ai-triage.md
+        - name: Intelligent cardiac triage and scheduling
+          href: solution-ideas/cardio-triage-agent.md
     - name: Power Platform products
       items:
         - name: Power Apps
@@ -89,6 +105,8 @@
           href: products/microsoft-dataverse.md
         - name: Copilot Studio
           href: products/copilot-studio.md
+    - name: Contribute
+      href: contribute.md
     - name: Power Platform icons
       href: /power-platform/guidance/icons?toc=/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
     - name: Power Platform Well-Architected

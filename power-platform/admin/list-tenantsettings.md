@@ -6,6 +6,7 @@ ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 01/10/2025
+ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 

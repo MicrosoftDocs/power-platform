@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: overview
-ms.date: 05/16/2024
+ms.date: 08/05/2025
 ---
 
 # What is Power Platform Well-Architected?

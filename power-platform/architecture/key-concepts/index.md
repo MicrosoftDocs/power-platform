@@ -5,7 +5,7 @@ description: Learn foundational principles to design scalable and efficient solu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 04/17/2025
+ms.date: 07/15/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
@@ -30,3 +30,4 @@ The following table describes the key concepts of Power Platform and Copilot Stu
 | **[ExpressRoute and Power Platform](expressroute/overview.md)** | Learn how to use Microsoft Azure ExpressRoute to connect your on-premises network to Microsoft cloud services by using private connectivity. |
 | **[Dataverse auditing](dataverse-auditing.md)** | Learn how to track and record changes to data, user activities, and system events with Dataverse auditing. |
 | **[Distributed tracing across multiple services](distributed-tracing.md)** | Learn how to achieve comprehensive observability across services like Power Platform, Azure, and Dynamics 365. |
+| **[Manage Power Platform solution performance](performance/index.md)** | Learn about key concepts and considerations for managing the performance of Power Platform solutions. |
