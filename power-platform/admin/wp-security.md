@@ -36,8 +36,8 @@ The following is a high-level overview of how security model is implemented in D
 > [!TIP]
 > To learn about how to help secure and govern Microsoft Power Platform apps like Power Automate, check out [Introduction to Power Automate security and governance](/training/modules/security-governance-intro/).
 
-### See also
-[Security in Power Platform](security/overview.md)<br/>
+### Related content
+[Security overview](security/security-overview.md)<br/>
 [Data storage in Power Platform](security/data-storage.md)<br/>
 [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)<br/>
 [Security concepts in Dataverse](wp-security-cds.md)<br />
