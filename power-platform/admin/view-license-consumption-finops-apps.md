@@ -56,10 +56,8 @@ Select **view details** in the *Total users* card or *Users with unassigned lice
 The product-level license summary view helps you check whether the licenses you own match the licenses your users need. By comparing required licenses to those that are purchased, assigned, and available, you can quickly spot gaps and decide whether to reallocate existing licenses or buy more. Each Dynamics 365 finance and operations product shows a card with:
 
 - Total users requiring a license  
-- By product, *base licenses* purchased and assigned  
-- By product, *attach licenses* purchased and assigned  
-- By product, *base licenses* purchased but unassigned (available to assign)  
-- By product, *attach licenses* purchased but unassigned (available to assign)  
+- By product, *base licenses* assigned, *base licenses* available to assign
+- By product, *attach licenses* assigned, *attach licenses* available to assign
 
 User License Consumption reporting supports these products:
 
