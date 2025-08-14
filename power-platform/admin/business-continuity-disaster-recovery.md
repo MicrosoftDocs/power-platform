@@ -1,23 +1,24 @@
 ---
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
-author: ImadYanni 
+author: rashmansur
 ms.date: 08/14/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
-ms.author: iyanni
+ms.author: rashmim 
 ms.custom: NewPPAC
 search.audienceType: 
  - admin
 contributors:
-- jasunil
+ - himakurada
+ - jasunil
 ---
 
 # Business continuity and disaster recovery
 
 > [!Note]
-> As of August 21, 2025, the business continuity and disaster recovery feature has been expanded to include failover support for [Dynamics 365 Contact Center](https://learn.microsoft.com/en-us/dynamics365/contact-center/). With this enhancement, organizations can now seamlessly initiate failover for their contact center environments, ensuring smooth execution of disaster recovery drills or continued operations from an alternate region, when needed.
+> As of August 21, 2025, the business continuity and disaster recovery feature has been expanded to include failover support for [Dynamics 365 Contact Center](/dynamics365/contact-center/). With this enhancement, organizations can now seamlessly initiate failover for their contact center environments, ensuring smooth execution of disaster recovery drills or continued operations from an alternate region, when needed.
 
 Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to have a documented business continuity plan that aims to minimize the effects of outages. Be sure the plan includes stakeholders, processes, and specific steps to be taken to recover and resume operations.
 
