@@ -132,7 +132,7 @@ For any user, select the **Required license** link to open the **Required licens
 
 ## Assign licenses in Microsoft 365 admin center
 
-For any user, select the missing lincense link to bring up the license options screeen and click **Manage in Microsoft 365 Admin Center** button to open M3icrosoft 65 admin center to that user and assign the required license .
+For any user, select the missing license link to bring up the license options screeen and click **Manage in Microsoft 365 Admin Center** button to open [Microsoft 365 admin center](https://admin.microsoft.com) to that user and assign the required license .
 
  :::image type="content" source="media/fno-user-licensing/user-license-options-assignment.png" alt-text="User license options with link to assign license in admin.microsft.com" lightbox="media/fno-user-licensing/user-license-options-assignment.png"::: 
 
