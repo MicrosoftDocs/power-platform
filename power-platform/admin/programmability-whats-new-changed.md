@@ -16,6 +16,18 @@ search.audienceType:
 
 Learn about the latest changes and new capabilities for Power Platform API and admin SDKs.
 
+## July 2025
+
+| Item | Type | Description |
+|------|------|-------------|
+| Enable Managed Environment | API | New endpoint: [Enable Managed Environment (Preview)](/rest/api/power-platform/environmentmanagement/environmentmanagement/environment-managed-governance/enable-managed-environment) |
+| Disable Managed Environment | API | New endpoint: [Disable Managed Environment (Preview)](/rest/api/power-platform/environmentmanagement/environmentmanagement/environment-managed-governance/disable-managed-environment) |
+| List Connectors | API | New endpoint: [List Connectors](/rest/api/power-platform/connectivity/connectivity/connectors/list-connectors) |
+| Get Connector by ID | API | New endpoint: [Get Connector by ID](/rest/api/power-platform/connectivity/connectivity/connectors/get-connector-by-id) |
+| Microsoft.PowerPlatform.Management | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/) |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.47.1#releasenotes-body-tab) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
+
 ## June 2025
 
 | Item | Type | Description |
