@@ -96,7 +96,7 @@ Identify users with missing license assignments in [Microsoft 365 admin center](
 
 Once license validation starts, any user who does not have the required license and tries to sign in to a Dynamics 365 finance and operations app they are blocked from accessing the app, and the user will see the following screen.
 
- :::image type="content" source="media/fno-user-licensing/user-license-validation-screen.png" alt-text="You need a license to access this app" lightbox="media/user-license-validation-screen.png":::
+ :::image type="content" source="media/fno-user-licensing/user-license-validation-screen.png" alt-text="You need a license to access this app" lightbox="media/fno-user-licensing/user-license-validation-screen.png":::
 
 The screen states:
 
