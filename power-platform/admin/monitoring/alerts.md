@@ -39,7 +39,7 @@ Keep the following principles in mind:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Monitor**.
 1. In the **Monitor** pane, select **Alerts**. The **Alerts** page is displayed.
-        > [!Note]
+    > [!Note]
     > Manage your existing alert rules in the **Alert rules** tab. Use the **More user actions** icon to see options for editing or deleting your alert rule. Turn your alert rule on or off by using the toggle in the **Status** column.
 1. Select **+ Alert rule** to create your new alert rule. The **New alert rule** pane is displayed.
 1. In the **Alert rule name** field, enter the name of your alert.
