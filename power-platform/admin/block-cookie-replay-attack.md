@@ -2,7 +2,7 @@
 title: Safeguarding Dataverse sessions with IP cookie binding
 description: Discover methods for using IP-based cookie binding to stop cookie replay, ensuring secure sessions in Dataverse against unauthorized access by internet service providers.
 ms.date: 10/30/2024
-ms.topic: conceptual
+ms.topic: how-to
 author: ritesp
 ms.reviewer: sericks
 ms.author: ritesp
@@ -11,6 +11,8 @@ search.audienceType:
   - admin
 ---
 # Safeguarding Dataverse sessions with IP cookie binding
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Prevent session hijacking exploits in Dataverse with IP address-based cookie binding. Let's say that a malicious user copies a valid session cookie from an authorized computer that has cookie IP binding enabled. The user then tries to use the cookie on a different computer to gain unauthorized access to Dataverse. In real time, Dataverse compares the IP address of the cookie's origin against the IP address of the computer making the request. If the two are different, the attempt is blocked, and an error message is shown.
 

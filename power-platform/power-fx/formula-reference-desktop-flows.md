@@ -16,6 +16,7 @@ contributors:
   - MikeStall
   - gregli-msft
   - gregli
+ms.custom: sfi-ropc-nochange
 ---
 
 # Formula reference - desktop flows
@@ -32,18 +33,6 @@ In this article, learn about all the functions available in [Power Automate for 
 
 **[AddColumns](reference/function-table-shaping.md)** – Returns a table with [columns](/power-apps/maker/canvas-apps/working-with-tables#columns) added.
 
-**[AIClassify](reference/function-ai.md)** – Classifies text into one or more of categories.
-
-**[AIExtract](reference/function-ai.md)** – Extracts specified entities such as registration numbers, phone numbers, or names of people.
-
-**[AIReply](reference/function-ai.md)** – Drafts a reply to the message that you provide.
-
-**[AISentiment](reference/function-ai.md)** – Detects the sentiment of the text that you provide.
-
-**[AISummarize](reference/function-ai.md)** – Summarizes the text that you provide.
-
-**[AITranslate](reference/function-ai.md)** – Translates text from another language.
-
 **[And](reference/function-logicals.md)** – Boolean logic AND. Returns **true** if all arguments are **true**. You can also use the [**&&** operator](reference/operators.md).
 
 **[Asin](reference/function-trig.md)** – Returns the arcsine of a number, in radians.
@@ -58,13 +47,19 @@ In this article, learn about all the functions available in [Power Automate for 
 
 **[Blank](reference/function-isblank-isempty.md)** – Returns a _blank_ value that can be used to insert a NULL value in a data source.
 
-**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or untyped value to a Boolean value.
+**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or dynamic value to a Boolean value.
 
 ## C
 
 **[Char](reference/function-char.md)** – Translates a character code into a string.
 
+**[Clear](reference/function-clear-collect-clearcollect.md)** – Deletes all data from a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections).
+
+**[ClearCollect](reference/function-clear-collect-clearcollect.md)** – Deletes all data from a collection and then adds a set of [records](/power-apps/maker/canvas-apps/working-with-tables#records).
+
 **[Coalesce](reference/function-isblank-isempty.md)** – Replaces _blank_ values while leaving non-_blank_ values unchanged.
+
+**[Collect](reference/function-clear-collect-clearcollect.md)** – Creates a collection or adds data to a data source.
 
 **[Concat](reference/function-concatenate.md)** – Concatenates strings in a data source.
 
@@ -100,6 +95,8 @@ In this article, learn about all the functions available in [Power Automate for 
 
 **[Dec2Hex](reference/function-hexdec.md)** – Convert a number to a hexadecimal text string.
 
+**[Decimal](reference/function-value.md)** – Converts a string to a [decimal number](data-types.md#decimal-numbers).
+
 **[Degrees](reference/function-trig.md)** - Converts radians to degrees.
 
 **[Distinct](reference/function-distinct.md)** – Summarizes records of a table, removing duplicates.
@@ -109,6 +106,8 @@ In this article, learn about all the functions available in [Power Automate for 
 ## E
 
 **[EDate](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, without changing the day of the month.
+
+**[EncodeHTML](reference/function-encode-decode.md)** – Encodes characters that need to be escaped to be used in an HTML context.
 
 **[EncodeUrl](reference/function-encode-decode.md)** – Encodes special characters using URL encoding.
 
@@ -129,6 +128,8 @@ In this article, learn about all the functions available in [Power Automate for 
 **[First](reference/function-first-last.md)** – Returns the first record of a table.
 
 **[FirstN](reference/function-first-last.md)** – Returns the first set of records (N records) of a table.
+
+**[Float](reference/function-value.md)** – Converts a string to a [floating point number](data-types.md#floating-point-numbers).
 
 **[ForAll](reference/function-forall.md)** – Calculates values and performs actions for all records of a table.
 
@@ -210,6 +211,8 @@ In this article, learn about all the functions available in [Power Automate for 
 
 ## P
 
+**[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
+
 **[Pi](reference/function-trig.md)** – Returns the number &pi;.
 
 **[PlainText](reference/function-encode-decode.md)** – Removes HTML and XML tags from a string.
@@ -226,6 +229,10 @@ In this article, learn about all the functions available in [Power Automate for 
 
 **[RandBetween](reference/function-rand.md)** – Returns a pseudo-random number between two numbers.
 
+**[Remove](reference/function-remove-removeif.md)** – Removes one or more specific records from a data source.
+
+**[RenameColumns](reference/function-table-shaping.md)** – Renames columns of a table.
+
 **[Replace](reference/function-replace-substitute.md)** – Replaces part of a string with another string, by starting position of the string.
 
 **[Right](reference/function-left-mid-right.md)** – Returns the right-most portion of a string.
@@ -238,13 +245,23 @@ In this article, learn about all the functions available in [Power Automate for 
 
 ## S
 
+**[Search](reference/function-filter-lookup.md)** – Finds records in a table that contain a string in one of their columns.
+
 **[Second](reference/function-datetime-parts.md)** – Retrieves the second portion of a date/time value.
 
 **[Sequence](reference/function-sequence.md)** – Generate a table of sequential numbers, useful when iterating with **ForAll**.
 
+**[Set](reference/function-set.md)** – Sets the value of a global variable.
+
+**[ShowColumns](reference/function-table-shaping.md)** – Returns a table with only selected columns.
+
 **[Shuffle](reference/function-shuffle.md)** – Randomly reorders the records of a table.
 
+**[Sin](reference/function-trig.md)** – Returns the sine of an angle specified in radians.
+
 **[Sort](reference/function-sort.md)** – Returns a sorted table based on a formula.
+
+**[SortByColumns](reference/function-sort.md)** – Returns a sorted table based on one or more columns.
 
 **[Split](reference/function-split.md)** – Splits a text string into a table of substrings.
 
@@ -286,6 +303,8 @@ In this article, learn about all the functions available in [Power Automate for 
 
 ## U
 
+**[UniChar](reference/function-char.md)** – Translates a Unicode code into a string.
+
 **[Upper](reference/function-lower-upper-proper.md)** – Converts letters in a string of text to all uppercase.
 
 ## V
@@ -297,6 +316,8 @@ In this article, learn about all the functions available in [Power Automate for 
 ## W
 
 **[Weekday](reference/function-datetime-parts.md)** – Retrieves the weekday portion of a date/time value.
+
+**[WeekNum](reference/function-weeknum.md)** – Returns the week number of a date/time value.
 
 **[With](reference/function-with.md)** – Calculates values and performs actions for a single record, including inline records of named values.
 

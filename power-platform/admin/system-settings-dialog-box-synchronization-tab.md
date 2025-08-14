@@ -3,7 +3,7 @@ title: "System SettingsSynchronization tab  | MicrosoftDocs"
 description: System Settings Synchronization tab 
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/15/2023
 ms.subservice: admin
 ms.author: sericks
@@ -13,6 +13,8 @@ contributors:
 - DanaMartens 
 ---
 # System Settings Synchronization tab 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Use the settings on this page to determine how data is synchronized between customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)]. For example, you can control synchronization between pairs of fields or enable or disable synchronization of additional mailing addresses, assigned tasks, or appointment attachments.  
   

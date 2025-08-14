@@ -4,7 +4,7 @@ description: Set up Skype or Skype for Business
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/09/2020
 ms.subservice: admin
 ms.author: sericks
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Set up customer engagement apps to use Skype or Skype for Business
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 > [!Note]
 > This feature was retired on July 31, 2021. More information: [Skype integration with customer engagement apps is deprecated](../important-changes-coming.md#skype-integration-with-customer-engagement-apps-is-deprecated)

@@ -1,4 +1,4 @@
----
+﻿---
 title: Blank, Coalesce, IsBlank, and IsEmpty functions
 description: Reference information including syntax and examples for the Blank, Coalesce, IsBlank, and IsEmpty functions.
 author: gregli-msft
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
 ms.component: canvas
-ms.date: 6/10/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -19,9 +19,10 @@ contributors:
 ---
 
 # Blank, Coalesce, IsBlank, and IsEmpty functions
+[!INCLUDE[function-isblank-isempty-applies-to](includes/function-isblank-isempty-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages
- :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
+ 
 
 Tests whether a value is blank or a [table](/power-apps/maker/canvas-apps/working-with-tables) contains no [records](/power-apps/maker/canvas-apps/working-with-tables#records), and provides a way to create _blank_ values.
 
@@ -35,18 +36,15 @@ _Empty string_ refers to a string that contains no characters. The [**Len** func
 
 In the context of the **IsEmpty** function, _empty_ is specific to tables that contain no records. The table structure may be intact, complete with [column](/power-apps/maker/canvas-apps/working-with-tables#columns) names, but no data is in the table. A table may start as empty, take on records and no longer be empty, and then have the records removed and again be empty.
 
-> [!NOTE]
-> We are in a period of transition. Until now, _blank_ has also been used to report errors, making it impossible to differentiate a valid "no value" from an error. For this reason, at this time, storing _blank_ values is supported only for local collections. You can store _blank_ values in other data sources if you turn on the **Formula-level error management** experimental feature under **Settings** > **Upcoming features** > **Experimental**. We are actively working to finish this feature and complete the proper separation of _blank_ values from errors.
-
 ## Blank
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns
+  
 
 The **Blank** function returns a _blank_ value. Use this to store a NULL value in a data source that supports these values, effectively removing any value from the field.
 
 ## IsBlank
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps  
+ 
 
 The **IsBlank** function tests for a _blank_ value or an empty string. The test includes empty strings to ease app creation since some data sources and controls use an empty string when there is no value present. To test specifically for a _blank_ value use `if( Value = Blank(), ...` instead of **IsBlank**. The **IsBlank** function considers empty tables as not blank, and **IsEmpty** should be used to test a table.
 
@@ -56,7 +54,7 @@ The return value for **IsBlank** is a boolean **true** or **false**.
 
 ## Coalesce
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps  
+ 
 
 The **Coalesce** function evaluates its arguments in order and returns the first value that isn't _blank_ or an empty string. Use this function to replace a _blank_ value or empty string with a different value but leave non-_blank_ and non-empty string values unchanged. If all the arguments are _blank_ or empty strings then the function returns _blank_, making **Coalesce** a good way to convert empty strings to _blank_ values.
 
@@ -66,7 +64,7 @@ All arguments to **Coalesce** must be of the same type; for example, you can't m
 
 ## IsEmpty
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps  
+ 
 
 The **IsEmpty** function tests whether a table contains any records. It's equivalent to using the **[CountRows](function-table-counts.md)** function and checking for zero. You can check for data-source errors by combining **IsEmpty** with the **[Errors](function-errors.md)** function.
 
@@ -91,9 +89,6 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 ## Examples
 
 ### Blank
-
-> [!NOTE]
-> At this time, the following example only works for local collections. You can store _blank_ values in other data sources if you turn on the **Formula-level error management** experimental feature under **Settings** > **Upcoming features** > **Experimental**. We are actively working to finish this feature and complete the separation of _blank_ values from errors.
 
 1. Create an app from scratch, and add a **Button** control.
 2. Set the button's **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:
@@ -205,3 +200,139 @@ You can also use **IsEmpty** to test whether a calculated table is empty, as the
 | **IsEmpty( Filter( [&nbsp;1,&nbsp;2,&nbsp;3&nbsp;], Value > 5 ) )** | The single-column table contains no values that are greater than 5. The result from the filter doesn't contain any records and is empty. | **true**  |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

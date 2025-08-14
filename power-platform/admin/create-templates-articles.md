@@ -4,7 +4,7 @@ description: Create templates for articles
 author: shubhadaj
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/17/2021
 ms.subservice: admin
 ms.author: shujoshi
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Create templates for articles
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 <!-- legacy procedure -->
 

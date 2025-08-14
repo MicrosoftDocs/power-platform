@@ -3,15 +3,18 @@ title: "Use Microsoft Dataverse to detect duplicate records and merge  | Microso
 description: About detecting and merging duplicate records.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/01/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Detect duplicate records and merge
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Duplicate records can creep into your data when you or others enter data manually or import data in bulk. Microsoft Dataverse helps you address potential duplicates by detecting duplicates for active records such as accounts and contacts.
 

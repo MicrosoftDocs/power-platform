@@ -2,7 +2,7 @@
 title: Tenant-level Analytics for Power Apps
 description: View tenant-level analytics for Power Apps.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/16/2022
 author: Zeffin
 ms.subservice: admin
@@ -10,9 +10,12 @@ ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Tenant-level analytics for Power Apps
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Tenant-level analytics allow Power Platform admins to extract key service metrics based on user adoption across the environments they manage. Tailor made analytics are contained within reports embedded in Power Platform admin center. 
 

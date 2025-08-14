@@ -1,12 +1,20 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 07/23/2024
-ms.topic: conceptual
+ms.date: 06/03/2025
+ms.topic: concept-article
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
+ms.contributors:
+    - paulliew
+    - sericks
+    - syalandur
+contributors:
+    - paulliew
+    - sericks007
+    - syalandur24    
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -26,14 +34,14 @@ Dataverse uses role-based security to group together a collection of privileges.
 ## Business units
 
 > [!TIP]
-> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Modernize business units](https://www.microsoft.com/videoplayer/embed/RWOdR4). 
+> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Modernize business units](https://learn-video.azurefd.net/vod/player?id=66e9e218-232d-4559-afb6-100433531b47). 
 
 
 Business units work with security roles to determine the effective security that a user has. Business units are a security modeling building block that helps in managing users and the data they can access. Business units define a security boundary. Every Dataverse database has a single root business unit.
 
 You can [create child business units](./create-edit-business-units.md) to help further segment your users and data. Every user assigned to an environment belongs to a business unit. While business units could be used to model 1:1 a true organization hierarchy, more often they lean more towards just defined security boundaries to help achieve the security model needs.
 
-To better understand let’s look at the following example. We have three business units. Woodgrove is the root business unit and will always be at the top, that is unchangeable. We've created two other child business units A and B. Users in these business units have different access needs. When we associate a user with this environment, we can set the user to be in one of these three business units. Where the user is associated determines which business unit owns the records that user is the owner of. Having that association allows us to tailor a security role to allow the user to see all records in that business unit.
+To better understand, let’s look at the following example. We have three business units. Woodgrove is the root business unit and will always be at the top, that is unchangeable. We've created two other child business units A and B. Users in these business units have different access needs. When we associate a user with this environment, we can set the user to be in one of these three business units. Where the user is associated determines which business unit owns the records that user is the owner of. Having that association allows us to tailor a security role to allow the user to see all records in that business unit.
 
 ### Hierarchical data access structure  
 
@@ -60,14 +68,28 @@ User A can be associated with any of the business units, including the root busi
 #### Enable the Matrix data access structure
 
 > [!NOTE]
-> Before you enable this feature, you must publish all your customizations to enable all your new unpublished tables for the feature. If you find that you have unpublished tables that are not working with this feature after you have turned it on, you can set the **RecomputeOwnershipAcrossBusinessUnits** setting using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). Setting **RecomputeOwnershipAcrossBusinessUnits** to true allows the [Owning Business Unit](#owning-business-unit) field to be set and updated.
+> Before you enable this feature, you must publish all your customizations to enable all your new unpublished tables for the feature. If you find that you have unpublished tables that aren't working with this feature after you have turned it on, you can set the **RecomputeOwnershipAcrossBusinessUnits** setting using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). Setting **RecomputeOwnershipAcrossBusinessUnits** to true allows the [Owning Business Unit](#owning-business-unit) field to be set and updated.
 
-1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin or Microsoft Power Platform admin). 
+###### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**, and then choose the environment that you want to enable this feature for.
+1. Select **Settings** > **Product** > **Features**.
+1. Turn **On** the **Record ownership across business units** switch.
+1. Select **Save**.
+
+###### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin). 
 2. Select **Environments**, and then choose the environment that you want to enable this feature for. 
 3. Select **Settings** > **Product** > **Features**. 
-4. Turn **On** the **Record ownership across business units** switch. 
+4. Turn **On** the **Record ownership across business units** switch.
+5. Select **Save**.
 
-Once this feature switch is turned on, you can select Business unit when you [assign a security role to a user](assign-security-roles.md). This allows you to assign security role from different business units to a user. The user also requires a security role from the business unit that the user is assigned to with [user settings privileges](assign-security-roles.md#user-settings-privileges-for-record-ownership-across-business-units) to run model-driven apps. You can refer to the [Basic User](database-security.md#predefined-security-roles) security role to find how these user settings privileges are enabled. 
+---
+
+After this feature switch is turned on, you can select Business unit when you [assign a security role to a user](assign-security-roles.md). This allows you to assign security role from different business units to a user. The user also requires a security role from the business unit that the user is assigned to with [user settings privileges](assign-security-roles.md#user-settings-privileges-for-record-ownership-across-business-units) to run model-driven apps. You can refer to the [Basic User](database-security.md#predefined-security-roles) security role to find how these user settings privileges are enabled. 
 
 You can assign a user as record owner in any business unit without the need to assign a security role in the record's owning business unit as long as the user has a security role that has Read privilege to the record table. See [Record Ownership in Modernized Business Units](wp-security-cds.md#record-ownership-in-modernized-business-units). 
 
@@ -103,11 +125,11 @@ To allow your user to set this column, you can enable this column in the followi
 3. [Column mappings](/powerapps/developer/data-platform/customize-entity-attribute-mappings). If you're using the [AutoMapEntity](/powerapps/developer/data-platform/customize-entity-attribute-mappings#auto-mapping-columns-between-tables), you can specify the column in your column mapping. 
 
 > [!NOTE]
-> If you have a job/process to sync data between environments and the **Owning Business Unit** is included as part of the schema, your job will fail with a **Foreign KEY** constraint violation if the target environment does not have the same **Owning Business Unit** value. 
+> If you have a job/process to sync data between environments and the **Owning Business Unit** is included as part of the schema, your job fails with a **Foreign KEY** constraint violation if the target environment doesn't have the same **Owning Business Unit** value. 
 > 
 > You can either remove the **Owning Business Unit** column from the source schema, or update the **Owning Business Unit** column value of the Source to any of the business units of the target.
 >
-> If you have a job/process to copy data from an environment to an external resource, for example PowerBI, you will need to select or deselect the **Owning Business Unit** column from your source. Select it if your resource can receive it otherwise deselect it.
+> If you have a job/process to copy data from an environment to an external resource, for example Power BI, you'll need to select or deselect the **Owning Business Unit** column from your source. Select it if your resource can receive it otherwise deselect it.
 
 ## Table/record ownership
 
@@ -127,7 +149,7 @@ In the above you can see the standard privilege types for each table Create, Rea
 > ![Security role privileges key.](media/security-role-privileges-key.png "Security role privileges key")
 
 
-In the above example, we have given organization level access to Contact which means that the user in Division A could see and update contacts owned by anyone. In fact, one of the most common administrative mistakes is getting frustrated with permissions and just over granting access. Very quickly a well-crafted security model starts looking like swiss cheese (full of holes!).
+In the above example, we have given organization level access to Contact which means that the user in Division A could see and update contacts owned by anyone. In fact, one of the most common administrative mistakes is getting frustrated with permissions and just over granting access. Very quickly a well-crafted security model starts looking like Swiss cheese (full of holes!).
 
 ## Record Ownership in Modernized Business Units ##
 
@@ -147,12 +169,12 @@ For all non-production environments, you just need to set **AlwaysMoveRecordToOw
 ## Teams (including [group teams](manage-group-teams.md))
 
 Teams are another important security building block. Teams are owned by a Business Unit. Every Business Unit has one default team that is automatically created when the Business Unit is created. The default team members are managed by Dataverse and always contain all users associated with that Business Unit. You can’t manually add or remove members from the default team, they're dynamically adjusted by the system as [new users are associated/disassociated with business units](./create-edit-business-units.md). There are two types of teams, owning teams and access teams.
-- Owning Teams can own records, which give any team member direct access to that record. Users can be members of multiple teams. This will allow it to be a powerful way of granting permissions to users in a broad way without micromanaging access at the individual user level. 
+- Owning Teams can own records, which give any team member direct access to that record. Users can be members of multiple teams. This allows it to be a powerful way of granting permissions to users in a broad way without micromanaging access at the individual user level. 
 - Access teams are discussed in the next section as part of record sharing.
 
 ## Record sharing
 
-Individual records can be shared on a one-by-one basis with another user. This is a powerful way of handling exceptions that don’t fall into the record ownership or is a member of a business unit access model. It should be an exception, though, because it's a less performant way of controlling access. Sharing is tougher to troubleshoot because it's not a consistently implemented access control. Sharing can be done at both the user and team level. Sharing with a team is a more efficient way of sharing. A more advanced concept of sharing is with Access Teams, which provides auto-creation of a team and sharing of record access with the team is based on an Access Team Template (template of permissions) which is applied. Access teams can also be used without the templates, with just manually adding or removing its members. Access teams are more performant because they don’t allow owning records by the team or having security roles assigned to the team. Users get access because the record is shared with the team and the user is a member.
+Individual records can be shared on a one-by-one basis with another user. This is a powerful way of handling exceptions that don’t fall into the record ownership or is a member of a business unit access model. It should be an exception, though, because it's a less performant way of controlling access. Sharing is tougher to troubleshoot because it's not a consistently implemented access control. Sharing can be done at both the user and team level. Sharing with a team is a more efficient way of sharing. A more advanced concept of sharing is with Access Teams, which provides auto-creation of a team and sharing of record access with the team is based on an Access Team Template (template of permissions) which is applied. Access teams can also be used without the templates, with manually adding or removing its members. Access teams are more performant because they don’t allow owning records by the team or having security roles assigned to the team. Users get access because the record is shared with the team and the user is a member.
 
 ### Record-level security in Dataverse
 
@@ -170,7 +192,7 @@ Security roles and Column Security Profiles can be packaged up and moved from on
 
 ### Configuring users environment security
 
-Once roles, teams, and business units are created in an environment, it's time to assign the users their security configurations. First, when you create a user, you'll associate the user with a business unit. By default, this is the root business unit in the organization. They're also added to the default team of that business unit.
+Once roles, teams, and business units are created in an environment, it's time to assign the users their security configurations. First, when you create a user, you associate the user with a business unit. By default, this is the root business unit in the organization. They're also added to the default team of that business unit.
 
 In addition, you would assign any security roles that user needs. You would also add them as members of any teams. Remember teams can also have security roles, so the effective rights of the user is the combination of directly assigned security roles combined with those of any teams they're members of. Security is always additive offering the least restrictive permission of any of their entitlements. The following is a good walkthrough of [configuring environment security](database-security.md).
 

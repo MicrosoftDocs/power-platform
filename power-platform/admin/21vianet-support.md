@@ -4,7 +4,7 @@ description: Provides information about the support for Power Platform and Dynam
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: sericks
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Support for Power Platform and Dynamics 365 apps - operated by 21Vianet in China
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Microsoft Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation), provide self-service support options and support through 21Vianet in China.
 

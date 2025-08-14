@@ -2,11 +2,12 @@
 title: "Data Export inventory setup"
 description: "Instructions for how to set up the inventory components solution of the Microsoft CoE Starter Kit using Data Export."
 author: jenefer-monroe
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.date: 09/05/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
+ms.custom: sfi-image-nochange
 ---
 
 # Data Export inventory setup

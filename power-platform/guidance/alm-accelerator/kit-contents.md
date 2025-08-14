@@ -1,9 +1,9 @@
 ---
 title: What's in the kit?
 description: Learn about the components of the ALM Accelerator for Power Platform that help you follow ALM patterns and practices.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/10/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 author: jenschristianschroder
 ms.author: jeschro
 ms.reviewer: sericks

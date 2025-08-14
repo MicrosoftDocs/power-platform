@@ -6,7 +6,7 @@ ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/02/2024
 contributors:
     - ColeHarrison-Microsoft 
@@ -14,6 +14,8 @@ search.audienceType:
   - admin
 ---
 # Server cipher suites and TLS requirements
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 A [cipher suite](/windows/win32/secauthn/cipher-suites-in-schannel) is a set of cryptographic algorithms. This is used to encrypt messages between clients/servers and other servers. Dataverse is using the latest **TLS 1.3 & 1.2 cipher suites as approved by Microsoft Crypto Board.** 
 

@@ -4,7 +4,7 @@ description: "Learn to create and edit subjects to categorize service cases, kno
 author: shubhadaj
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/17/2021
 ms.subservice: admin
 ms.author: shujoshi
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Define subjects to categorize cases, products, and articles
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), include a subject organizational structure that lets you mark and categorize service cases, knowledge base articles, products, and sales literature. By using the subject hierarchy, you can classify service cases to quickly provide service to your customer. You can also provide the appropriate sales literature. You'll also be able to better understand gaps in your sales literature, evaluate service quality by subject area, and improve reporting on the performance of your products.  
 

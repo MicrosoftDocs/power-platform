@@ -4,7 +4,7 @@ description: "Enable the rich text experience for appointment activities."
 author: Mattp123
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/04/2018
 ms.subservice: admin
 ms.author: matp
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Rich text experience for appointment activities
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 When you enable the rich text experience, server-side synchronization and appointment activities support rich text. With the rich text editor, appointment descriptions can contain rich text. 
 

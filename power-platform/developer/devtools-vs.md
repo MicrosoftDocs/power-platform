@@ -2,9 +2,9 @@
 title: "What is Power Platform Tools for Visual Studio | Microsoft Docs"
 description: "Learn about the Power Platform Tools extension for Visual Studio and how to install and uninstall it."
 ms.custom: ""
-ms.date: 01/27/2023
+ms.date: 02/04/2025
 ms.reviewer: "pehecke"
-ms.topic: "article"
+ms.topic: concept-article
 author: "phecke" # GitHub ID
 ms.subservice: developer
 ms.author: "pehecke" # MSFT alias of Microsoft employees only
@@ -14,7 +14,7 @@ ms.author: "pehecke" # MSFT alias of Microsoft employees only
 
 Power Platform Tools for Visual Studio supports the rapid creation, debugging, and deployment of plug-ins. Other capabilities include development of custom workflow activities, web resources, integration technologies like Azure Service endpoints and webhooks, and more.
 
-This topic describes how to install and uninstall the tools in Visual Studio.
+This topic describes how to install and uninstall the Power Platform Tools extension in Visual Studio.
 
 :::image type="content" source="media/tools/devtools-main-views.png" alt-text="Power Platform Tools." lightbox="media/tools/devtools-main-views.png":::
 
@@ -27,7 +27,7 @@ Before installing Power Platform Tools into Visual Studio you must have the foll
 
 - Microsoft Visual Studio 2019 or 2022.
 
-- .NET Framework 4.6.2 (required only for plug-in and workflow activity development)
+- .NET Framework 4.6.2 (required only for plug-in and workflow activity development), or later
 
 - C# programming language
 
@@ -44,6 +44,8 @@ To install Power Platform Tools, follow these steps:
 1. Expand the left navigation panel node **Online** > **Visual Studio Marketplace**. Search for "Power Platform Tools", then download and install the extension.
 
 > [!IMPORTANT]
+> There are two different tool extensions currently available for download from the [Marketplace](https://marketplace.visualstudio.com/). The extension named "Power Platform Tools" is for Visual Studio 2019. The extension named "Power Platform Tools for VS 2022" is for Visual Studio 2022.
+>
 > After installing Power Platform Tools, you will not find any Power Platform Tools related menu items or views in the Visual Studio user interface until you create or load a Visual Studio solution that contains at least one project created from a Power Platform Tools template.
 
 ### Uninstall Power Platform Tools extension

@@ -3,7 +3,7 @@ title: Configure pipeline sync
 description: Learn how to create a pipeline to sync the latest ALM Accelerator for Power Platform pipeline templates to your Azure DevOps repository.
 ms.topic: how-to
 ms.date: 04/07/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 author: jenschristianschroder
 ms.author: jeschro
 ms.reviewer: sericks

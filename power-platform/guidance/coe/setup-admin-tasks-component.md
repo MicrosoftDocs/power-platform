@@ -3,9 +3,9 @@ title: "Set up the Power Platform administration planning component | Microsoft 
 description: "Instructions for how to set up the Power Platform administration planning component of the CoE Starter Kit."
 author: stjeffer
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/07/2022
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: sericks
 search.audienceType: 

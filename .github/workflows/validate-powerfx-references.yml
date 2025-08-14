@@ -1,0 +1,65 @@
+name: Validate PowerFx references
+run-name: ${{ github.actor }} validating PowerFx references
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - power-platform/power-fx/**   
+
+jobs:
+  
+  validate:
+    runs-on: windows-latest
+    permissions:
+      contents: read
+      pull-requests: write 
+      actions: read 
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Get Job ID
+        id: get_job_id
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          $jobID = (Invoke-RestMethod -Headers @{Authorization = "token $env:GITHUB_TOKEN"} `
+            -Uri "https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs").jobs `
+            | Where-Object { $_.name -eq "${{ github.job }}" } `
+            | Select-Object -ExpandProperty id
+          echo "JOB_ID=$jobID" >> $env:GITHUB_ENV
+          $jobURL = "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/job/$jobID#step:5:1" 
+          echo "JOB_URL=$jobURL" >> $env:GITHUB_ENV
+
+      - name: Get Latest Commit SHA
+        id: get_commit_sha
+        run: |
+          $commitSHA = "${{ github.event.pull_request.head.sha }}" | cut -c1-7
+          echo "COMMIT_SHA=$commitSHA" >> $env:GITHUB_ENV
+          $commitURL = "${{ github.server_url }}/${{ github.repository }}/commit/${{ github.event.pull_request.head.sha }}"
+          echo "COMMIT_URL=$commitURL" >> $env:GITHUB_ENV
+
+      - name: Run validation script
+        id: validation_run
+        run: |
+          .\power-platform\power-fx\funcjson\validate.ps1
+        shell: pwsh 
+        env: 
+          GITHUB_OUTPUT: ${{ steps.validation_run.outputs.GITHUB_OUTPUT }}  
+
+      - name: Add PR comment
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `${{ steps.validation_run.outputs.SCRIPT_OUTPUT }}`
+            })
+
+      - name: Set job status
+        run: |
+          if ("${{ steps.validation_run.outputs.JOB_STATUS }}" -eq "success") { exit 0 } else { exit 1 }

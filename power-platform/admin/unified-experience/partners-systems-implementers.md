@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/06/2024
+ms.date: 08/11/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -13,6 +13,8 @@ search.audienceType:
 ---
 
 # Administration for partners and systems implementers
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Microsoft partners and systems implementers play a crucial role in deploying, managing, and optimizing solutions that are built for finance and operations apps. The transition of administrative capabilities to the Power Platform admin center brings significant changes and enhancements in both technology and processes. This article provides an overview of the improvements. It focuses on the key differences in terminology and processes between the Power Platform admin center and the previous admin center, Microsoft Dynamics Lifecycle Services.
 
@@ -105,3 +107,12 @@ Partners can request a GDAP relationship with their customers through Partner Ce
 3. **Manage access**: Partners manage their access through Partner Center and adjust permissions as needed.
 
 For more detailed information about how to set up and manage GDAP, review the [Granular Delegated Admin Privileges](/partner-center/gdap-introduction) documentation.
+
+## Partner and ISV offers
+
+The following table details how partners and ISVs can use specific-offer URLs to operate in both the Power Platform admin center and Microsoft Dynamics Lifecycle Services (LCS).
+
+| Offer | Applicable admin center | Details |
+|-------|------------------------|------------------------|
+| [Dynamics 365 for Finance and Operations Preview Trial](https://signup.microsoft.com/get-started/signup?OfferId=AA972CC1-91DB-4CF9-94A1-4A9163ED50C9&pc=2c50e379-9378-4761-84f9-e328da74e657&dl=ERP_INSTANCE_SKU&ali=1&products=AA972CC1-91DB-4CF9-94A1-4A9163ED50C9) | LCS | This offer is being deprecated and may stop working in the future. It was previously available for provisioning preview trial environments in LCS. |
+| [Dynamics 365 Operations Application Partner Sandbox](https://experience.dynamics.com/requestlicense/) | LCS, Power Platform admin center | This is the recommended path for partners and ISVs. While the offer has "Sandbox" in the name, it actually provides user licenses and storage capacity in Power Platform admin center for use in deploying environments with the finance and operations app installed. It also provides a partner implementation project in LCS with a single sandbox. |

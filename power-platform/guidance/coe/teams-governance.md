@@ -4,9 +4,9 @@ description: "This article describes a sample process for managing Microsoft Tea
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/05/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
@@ -87,9 +87,9 @@ The page visualizes:
 
 ![Microsoft Teams environment dashboard.](media/pb-6.png "Microsoft Teams environment dashboard")
 
-### See also
+## Related information
 
-[What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)
+- [What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

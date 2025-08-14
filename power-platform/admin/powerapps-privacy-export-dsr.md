@@ -4,17 +4,19 @@ description: Walkthrough of how to respond to Data Subject Rights (DSR) requests
 author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/09/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
-contributors:
-- royshea 
+contributors: royshea 
+ms.custom: sfi-image-nochange
 ---
 
 # Responding to Data Subject Rights (DSR) requests to export Power Apps customer data
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The "right of data portability" allows a data subject to request a copy of their personal data in an electronic format (that is, a structured, commonly used, machine readable and interoperable format) that may be transmitted to another data controller:
 

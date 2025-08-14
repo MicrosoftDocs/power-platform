@@ -3,16 +3,19 @@ title: Set up managed identity for Power Platform (preview)
 description: Learn how to set up Power Platform managed identity.
 author: ritesp
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/09/2024
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Set up managed identity for Power Platform (preview)
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -69,7 +72,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
 7. Select issuer as **Other issuer**. 
 8. Enter the following information:
    
-    - **Issuer**: The URL of the token issuer. Format similar to this: `https://[environment ID prefix].[environment ID suffix].enviornment.api.powerplatform.com/sts`     
+    - **Issuer**: The URL of the token issuer. Format similar to this: `https://[environment ID prefix].[environment ID suffix].environment.api.powerplatform.com/sts`     
       - **Environment ID prefix** - The environment ID, except for the last two characters.
       - **Environment ID suffix** - The last two characters of the environment ID.
       

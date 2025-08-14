@@ -4,9 +4,9 @@ description: "Get insights into the tasks and time involved in administering Pow
 author: stjeffer
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/07/2022
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: sericks
 search.audienceType: 

@@ -7,7 +7,7 @@ ms.author: sericks
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/01/2024
 search.audienceType: 
   - admin
@@ -16,6 +16,8 @@ contributors:
 ---
 
 # Add more Microsoft Dataverse capacity for your tenant
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You have options when you're running low on storage capacity. You can [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more storage capacity to be compliant with storage usage requirements. Learn more about storage capacity add-ons in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
 

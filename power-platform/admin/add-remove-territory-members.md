@@ -3,7 +3,7 @@ title: "Manage a sales territory by adding or removing members"
 description: "Learn how to manage your Power Platform users by adding or removing members assigned to a sales territory."
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/30/2017
 author: sericks007
 ms.subservice: admin
@@ -21,6 +21,8 @@ searchScope:
   - Customer Engagement
 ---
 # Add or remove sales territory members
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 <!-- legacy procedure -->
 

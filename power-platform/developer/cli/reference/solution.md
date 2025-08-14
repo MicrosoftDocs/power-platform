@@ -5,9 +5,8 @@ keywords: "pac cli"
 ms.subservice: developer
 author: laneswenka
 ms.author: laswenka
-ms.date: 12/2/2024
 ms.reviewer: jdaly
-ms.topic: reference
+ms.topic: generated-reference
 contributors: 
  - JimDaly
 ---
@@ -107,6 +106,12 @@ Name of the solution.
 #### `--AddRequiredComponents` `-arc`
 
 Indicates whether other solution components required by the solution component that you're adding should also be added to the unmanaged solution.
+
+This parameter requires no value. It's a switch.
+
+#### `--async` `-a`
+
+Imports the solution asynchronously.
 
 This parameter requires no value. It's a switch.
 
@@ -404,12 +409,6 @@ This parameter requires no value. It's a switch.
 #### `--async` `-a`
 
 Imports the solution asynchronously.
-
-This parameter requires no value. It's a switch.
-
-#### `--convert-to-managed` `-cm`
-
-Convert to a managed solution.
 
 This parameter requires no value. It's a switch.
 

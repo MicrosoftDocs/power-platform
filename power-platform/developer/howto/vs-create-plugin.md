@@ -2,9 +2,9 @@
 title: "Quickstart: Create a plug-in using Visual Studio with Power Platform Tools | Microsoft Docs"
 description: "Learn how to create and register a Dataverse plug-in using the Power Platform Tools extension for Visual Studio."
 ms.custom: ""
-ms.date: 03/15/2024
+ms.date: 01/31/2025
 ms.reviewer: "pehecke"
-ms.topic: "article"
+ms.topic: quickstart
 author: "phecke" # GitHub ID
 ms.subservice: developer
 ms.author: "pehecke" # MSFT alias of Microsoft employees only
@@ -169,7 +169,7 @@ After you select **Add Image** in the context menu, fill out the form that appea
 
 :::image type="content" source="./media/devtools-create-image.png" alt-text="Define an entity image.":::
 
-In the form, **Pre Image**/**Post Image** specifies the entity data as it exists before (Pre) or after (Post) the core operation. The **Name** field defines the logical name of the entity that you want data for. **Entity Alias** is the named index that you'll use in your code to identify the row in the image table that contains the target entity data. **Parameters** is the list of entity data columns that you want. Specify only the columns that you need since plug-in performance is reduced the more columns you specify.
+In the form, **Pre Image**/**Post Image** specifies the entity data as it exists before (Pre) or after (Post) the core operation. The **Name** field defines the logical name of the entity that you want data for. **Entity Alias** is the named index that you'll use in your code to identify the row in the image table that contains the target entity data. **Parameters** is the list of entity data columns that you want. Click the "..." button to the right of the **Parameters** form field and then specify only the columns that you need since plug-in performance is reduced the more columns you specify.
 
 More information: [Define entity images](/power-apps/developer/data-platform/register-plug-in#define-entity-images).
 

@@ -1,10 +1,13 @@
 - name: Power Platform guidance
   href: index.yml
   items:
-    - name: Power Platform adoption best practices
-      href: adoption/methodology.md
+    - name: Power Platform adoption guidance
       items:
-        - name: Adoption maturity model
+        - name: What's new
+          href: adoption/whats-new.md
+        - name: Overview
+          href: adoption/methodology.md
+        - name: Maturity model
           items:
             - name: Overview
               href: adoption/maturity-model.md
@@ -12,476 +15,219 @@
               href: adoption/maturity-model-goals.md
             - name: Detailed capabilities
               href: adoption/maturity-model-details.md
-        - name: Strategy and vision
-          href: adoption/strategy-best-practices.md
+        - name: Strategy
           items:
-            - name: Establishing a Center of Excellence
-              href: adoption/coe.md
+            - name: Overview
+              href: adoption/strategy-best-practices.md
+            - name: Assess Power Platform adoption strategy
+              href: adoption/take-assessment.md
+            - name: Define vision, metrics, and goals
+              href: adoption/vision.md
+            - name: Common goals
+              items:
+                - name: Overview of common goals
+                  href: adoption/common-vision/index.md
+                - name: Establish a Center of Excellence with governance patterns and practices
+                  href: adoption/common-vision/establish-coe.md
+                - name: Measure value and realize return on investment
+                  href: adoption/common-vision/realize-value.md
+                - name: Get leadership buy-in and organization alignment
+                  href: adoption/common-vision/get-leadership-buyin.md
+                - name: Nurture a maker and champion community
+                  href: adoption/common-vision/enable-maker-community.md
+                - name: Empower innovation and AI culture
+                  href: adoption/common-vision/empower-innovation.md
+                - name: Enhance operational efficiency
+                  href: adoption/common-vision/enhance-opex.md
+                - name: Improve employee experience
+                  href: adoption/common-vision/improve-employee-ex.md
             - name: Measure business value
-              href: adoption/business-value.md
-            - name: Roles and responsibilities
-              href: adoption/roles.md
-            - name: Executive sponsorship
+              items:
+                - name: Measure and communicate business value
+                  href: adoption/business-value.md
+                - name: Choose methods and tools
+                  href: adoption/business-value-methods.md
+                - name: Use business value plays
+                  href: adoption/value-plays.md
+            - name: Get executive sponsorship
               href: adoption/executive-sponsorship.md
-            - name: Delivery models
-              href: adoption/delivery-models.md
-            - name: License assignment strategies
-              href: adoption/license-assignment-strategies.md
+            - name: Establish a Center of Excellence
+              href: adoption/coe.md
             - name: "Case study: Success Hub"
               items:
                 - name: Overview
                   href: successhub/overview.md
                 - name: Digitizing Digital Transformation Platform group
                   href: successhub/digitizing-digital-transformation-platform-group.md
-        - name: Admin and governance
-          items:
-            - name: Best practices checklist
-              href: adoption/admin-best-practices.md
-            - name: Manage
-              items:
-                - name: Designate a Power Platform admin
-                  href: adoption/pp-admin.md
-                - name: Plan and manage licenses and capacity
-                  href: adoption/capacity-and-licenses.md
-                - name: Establish an environment strategy
-                  href: white-papers/environment-strategy.md
-                - name: Manage Dataverse for Teams environments
-                  href: adoption/teams-environment-strategy.md
-                - name: Manage the default environment
-                  href: adoption/manage-default-environment.md
-            - name: Secure
-              items:
-                - name: Establish DLP policies
-                  href: adoption/dlp-strategy.md
-                - name: Set up Microsoft Entra Conditional Access
-                  href: adoption/conditional-access.md
-                - name: Enable cross-tenant isolation
-                  href: /power-platform/admin/cross-tenant-restrictions
-                - name: Secure the default environment
-                  href: adoption/secure-default-environment.md
-            - name: Monitor and alert
-              items:
-                - name: Report on resource usage
-                  href: adoption/resource-usage.md
-                - name: Track user access
-                  href: adoption/access-usage.md
-                - name: Monitor Microsoft Dataverse usage
-                  href: adoption/cds-usage.md
-                - name: Monitor new connectors
-                  href: adoption/new-connectors.md
-                - name: Set up sharing alerts and mitigations
-                  href: adoption/sharing-alerts.md
-        - name: Nurture and educate
-          items:
-            - name: Best practices checklist
-              href: adoption/nurture-best-practices.md
-            - name: Community
-              items:
-                - name: Identify champions
-                  href: adoption/champions.md
-                - name: Onboard new makers
-                  href: adoption/onboard-makers.md
-                - name: Create an internal wiki and community
-                  href: adoption/wiki-community.md
-                - name: Share your own templates and re-usable components
-                  href: adoption/reusable.md
-            - name: Evangelism
-              items:
-                - name: Share success stories
-                  href: adoption/show-and-tell.md
-                - name: Organize hackathons
-                  href: adoption/hackathons.md
-            - name: Training
-              items:
-                - name: Training and upskilling strategy
-                  href: adoption/training-strategy.md
-                - name: Internal training events
-                  href: adoption/in-a-day.md
-                - name: Solution envisioning workshops
-                  href: adoption/solution-envisioning.md
-        - name: Support
-          items:
-            - name: Support strategy - Overview
-              href: adoption/support-strategy.md
-            - name: End-user support
-              href: adoption/support-strategy-solutions.md
-            - name: Maker support
-              href: adoption/support-strategy-makers.md
-            - name: Support strategy - Maturity Levels
-              href: adoption/support-strategy-maturity.md
-    - name: Power Platform Center of Excellence (CoE) Kit
-      href: coe/starter-kit.md
-      items:
-        - name: Overview
-          href: coe/overview.md
-        - name: Establishing tenant hygiene
-          href: coe/after-setup-tenant-hygiene.md
-        - name: Set up the CoE starter kit
-          items:
-            - name: Get started with setup
-              href: coe/setup.md
-            - name: Set up inventory components
-              href: coe/setup-core-components.md
-            - name: Set up environment request management
-              href: coe/setup-environment-components.md
-            - name: Set up other core components
-              href: coe/setup-othercore-components.md
-            - name: Get started with setting up governance components
-              href: coe/before-setup-gov.md
-            - name: Set up compliance processes
-              href: coe/setup-governance-components.md
-            - name: Set up inactivity processes
-              href: coe/setup-archive-components.md
-            - name: Set up Microsoft Teams governance processes
-              href: coe/setup-teams-components.md
-            - name: Set up cleanup for orphaned resources
-              href: coe/setup-orphan-components.md
-            - name: Set up app quarantine components
-              href: coe/setup-quarantine-components.md
-            - name: Collect audit log data
-              items:
-                  - name: Using Microsoft Graph API (recommended)
-                    href: coe/setup-auditlog-http-graphapi.md  
-                  - name: Using Office 365 Management API
-                    href: coe/setup-auditlog-http.md
-                  - name: Collect historic audit log events
-                    href: coe/setup-auditlog-http-old-data.md
-                  - name: Troubleshooting
-                    href: coe/setup-auditlog-troubleshooting.md
-            - name: Set up Power BI reports
-              href: coe/setup-powerbi.md
-            - name: Set up nurture components
-              href: coe/setup-nurture-components.md
-            - name: Set up Innovation Backlog components
-              href: coe/setup-innovationbacklog.md
-            - name: Set up administration planning components
-              href: coe/setup-admin-tasks-component.md
-            - name: Set up theming components
-              href: coe/setup-theming.md
-            - name: Set up the Business value toolkit
-              href: coe/setup-business-value-toolkit.md              
-            - name: What's next - updating the CoE Starter Kit
-              href: coe/after-setup.md
-            - name: What's next - extending the CoE Starter Kit
-              href: coe/modify-components.md
-        - name: What's in the CoE starter kit
-          items:
-            - name: CoE starter kit modules
-              href: coe/starter-kit-explained.md
-            - name: Components overview
-              items:
-                - name: Core components
-                  href: coe/core-components.md
-                - name: Business value toolkit
-                  href: coe/business-value-toolkit.md
-                - name: Governance components
-                  href: coe/governance-components.md
-                - name: Nurture components
-                  href: coe/nurture-components.md
-                - name: Theming components
-                  href: coe/theming-components.md
-                - name: Innovation backlog components
-                  href: coe/innovationbacklog-components.md
-        - name: How to use the CoE Starter Kit
-          items:
-            - name: CoE dashboard explained
-              items:
-                - name: Overview
-                  href: coe/power-bi.md
-                - name: Monitor
-                  href: coe/power-bi-monitor.md
-                - name: Govern
-                  href: coe/power-bi-govern.md
-                - name: Nurture
-                  href: coe/power-bi-nurture.md
-                - name: Compliance and Adoption
-                  href: coe/power-bi-compliance.md
-            - name: Sample audit process
-              href: coe/example-processes.md
-            - name: Dataverse for Teams environment management
-              href: coe/teams-governance.md
-            - name: Use the Innovation Backlog app
-              href: coe/use-innovationbacklog.md
-            - name: Use the Administration planning components
-              href: coe/admin-tasks-component.md
-            - name: Environment management
-              href: coe/env-mgmt.md
-            - name: Capacity alerting and reporting
-              href: coe/capacity-alerting.md
-        - name: CoE command line interface
-          href: coe/cli/overview.md
-          items:
-            - name: Install CoE CLI
-              href: coe/cli/install.md
-            - name: Install CoE CLI using Docker
-              href: coe/cli/sample-docker-install.md
-            - name: Install CoE CLI using local machine
-              href: coe/cli/sample-local-install.md
-            - name: Upgrade CoE CLI
-              href: coe/cli/upgrade.md
-            - name: ALM Accelerator for Power Platform
-              href: coe/cli/alm/overview.md
-              items:
-                - name: Set up ALM Accelerator for Power Platform
-                  href: coe/cli/alm/admin-install.md
-                - name: Before you start
-                  href: coe/cli/alm/before-you-start.md
-                - name: Branching and merging
-                  href: coe/cli/alm/branching-and-merging.md
-                - name: Development environments
-                  href: coe/cli/alm/development-environments.md
-                - name: Key concepts
-                  href: coe/cli/alm/key-concepts.md
-                - name: Maker set-up
-                  href: coe/cli/alm/maker-setup.md
-                - name: Maturity
-                  href: coe/cli/alm/personas.md
-                - name: Personas
-                  href: coe/cli/alm/personas.md
-            - name: CLI development
-              href: coe/cli/cli-development/overview.md
-              items:
-                - name: Adding a new command
-                  href: coe/cli/cli-development/adding-new-command.md
-                - name: Documentation
-                  href: coe/cli/cli-development/documentation.md
-        - name: FAQ and Tips
-          items:
-            - name: CoE Starter Kit - FAQ
-              href: coe/faq.md
-            - name: Questions related to the Data Export integration
-              href: coe/faq-dataexport.md
-        - name: Limitations
-          href: coe/limitations.md
-        - name: Release notes
-          href: coe/release-notes.md
-        - name: Feedback and support
-          href: coe/feedback-support.md
-    - name: Power Platform ALM Accelerator
-      items:
-        - name: Overview
-          href: alm-accelerator/overview.md
-        - name: Maturity model
-          href: alm-accelerator/maturity/overview.md
-        - name: Branching and environment strategy
-          href: alm-accelerator/branching-environment-strategy.md
-        - name: Scenarios
-          items:
-            - name: Deployment scenarios
-              href: alm-accelerator/scenarios/overview.md
-            - name: DevOps deployment model
-              href: alm-accelerator/scenarios/devops-deployment-model.md
-            - name: Tenant deployments
-              href: alm-accelerator/scenarios/tenant-deployments.md
-        - name: Install the ALM Accelerator
-          items:
-            - name: Configure the ALM Accelerator using the admin app
-              href: alm-accelerator/setup-admin-tasks.md
-            - name: Configure the ALM Accelerator manually
-              href: alm-accelerator/setup-components-manually.md
-            - name: Upgrade the ALM Accelerator
-              href: alm-accelerator/setup-upgrade-configuration.md
-        - name: Configure the ALM Accelerator
-          items:
-            - name: Configure deployment user settings
-              href: alm-accelerator/setup-deployment-user-settings.md
-            - name: Configure deployment profiles
-              href: alm-accelerator/setup-deployment-user-profiles.md
-            - name: Deployment configuration guide
-              href: alm-accelerator/setup-data-deployment-configuration.md
-            - name: Configure user permissions
-              href: alm-accelerator/setup-app-user-permissions.md
-            - name: Configure pipelines
-              href: alm-accelerator/configure-azuredevops-pipelines.md
-            - name: Configure pipeline sync
-              href: alm-accelerator/setup-pipeline-sync.md
-            - name: Customize deployment pipelines with templates
-              href: alm-accelerator/customize-deployment-pipelines.md
-            - name: Configure pipeline extension points
-              href: alm-accelerator/setup-hook-extensions.md
-            - name: Considerations when creating Azure app registrations
-              href: alm-accelerator/app-registration-strategy.md
-            - name: Deployment settings
-              href: alm-accelerator/deployment-settings-payload.md
-        - name: Use the ALM Accelerator
-          items:
-            - name: What's in the ALM Accelerator
-              href: alm-accelerator/kit-contents.md
-            - name: New maker experience
-              href: alm-accelerator/new-maker-experience.md
-            - name: Advanced maker experience
-              href: alm-accelerator/advanced-maker-experience.md
-            - name: Create an import configuration
-              href: alm-accelerator/create-import-deployment-configuration.md
-            - name: Configure for Power Pages
-              href: alm-accelerator/configure-power-pages.md
-            - name: Build and package code-first components
-              href: alm-accelerator/build-package-codefirst-components.md
-            - name: Maintenance tasks
-              href: alm-accelerator/maintain-admin-tasks.md
-            - name: Learn more about the ALM Accelerator
-              href: alm-accelerator/learning-resources-catalog.md
-    - name: Power Platform Creator Kit
-      items:
-        - name: Overview
-          href: creator-kit/overview.md
-        - name: Install the Creator Kit
-          href: creator-kit/setup.md
-        - name: Use the Creator Kit
-          href: creator-kit/creator-kit-explained.md
-        - name: Creator Kit components
+        - name: Plan
           items:
             - name: Overview
-              href: creator-kit/components.md
-            - name: Basic Inputs
-              items:
-                - name: AutoWidthLabel
-                  href: creator-kit/autowidthlabel.md
-                - name: Icon
-                  href: creator-kit/icon.md
-                - name: ResizableTextArea
-                  href: creator-kit/resizabletextarea.md
-                - name: SearchBox (preview)
-                  href: creator-kit/searchbox.md
-                - name: SpinButton (preview)
-                  href: creator-kit/spinbutton.md
-            - name: Commands, Menus & Navs
-              items:
-                - name: Breadcrumb
-                  href: creator-kit/breadcrumb.md
-                - name: ContextMenu
-                  href: creator-kit/contextmenu.md
-                - name: CommandBar
-                  href: creator-kit/commandbar.md
-                - name: Header (experimental)
-                  href: creator-kit/header.md
-                - name: ExpandMenu (experimental)
-                  href: creator-kit/expandmenu.md
-                - name: Nav
-                  href: creator-kit/nav.md
-                - name: Pivot
-                  href: creator-kit/pivot.md
-                - name: SubwayNav (preview)
-                  href: creator-kit/subwaynav.md
-            - name: Items and Lists
-              items:
-                - name: DetailsList
-                  href: creator-kit/detailslist.md
-                - name: Facepile (preview)
-                  href: creator-kit/facepile.md
-                - name: Persona (preview)
-                  href: creator-kit/persona.md
-                - name: TagList
-                  href: creator-kit/taglist.md
-            - name: Pickers
-              items:
-                - name: Calendar
-                  href: creator-kit/calendar.md
-                - name: PeoplePicker (preview)
-                  href: creator-kit/peoplepicker.md
-                - name: Picker
-                  href: creator-kit/picker.md
-            - name: Progress
-              items:
-                - name: Shimmer
-                  href: creator-kit/shimmer.md
-                - name: Spinner
-                  href: creator-kit/spinner.md
-                - name: ProgressIndicator
-                  href: creator-kit/progressindicator.md
-            - name: Surfaces
-              items:
-                - name: Dialog (experimental)
-                  href: creator-kit/dialog.md
-                - name: Panel (experimental)
-                  href: creator-kit/panel.md
-            - name: Charts
-              items:
-                - name: DonutChart (preview)
-                  href: creator-kit/donutchart.md
-                - name: GaugeChart (preview)
-                  href: creator-kit/gaugechart.md
-                - name: HorizontalBar
-                  items:
-                  - name: HorizontalBarChart (preview)
-                    href: creator-kit/horizontalbarchart.md
-                  - name: HorizontalBarChart - Stacked (preview)
-                    href: creator-kit/stackedbarchart.md
-            - name: Utilities
-              items:
-                - name: Elevation
-                  href: creator-kit/elevation.md
-                - name: KeyboardShortcuts
-                  href: creator-kit/keyboardshortcuts.md
-        - name: Reference
+              href: adoption/plan-overview.md
+            - name: Define roles and responsibilities
+              href: adoption/roles.md
+            - name: Evaluate delivery models
+              href: adoption/delivery-models.md
+            - name: Establish license assignment strategies
+              href: adoption/license-assignment-strategies.md
+            - name: Modernize applications with Power Platform
+              href: adoption/application-modernization.md
+        - name: Security
           items:
-            - name: Theming
-              href: creator-kit/theme.md
-            - name: Set focus
-              href: creator-kit/setfocus.md
-    - name: Automation adoption best practices
-      href: /power-automate/guidance/automation-coe/overview
-    - name: ExpressRoute and Power Platform
-      items:
-        - name: Overview
-          href: expressroute/overview.md
-        - name: Benefits of using ExpressRoute
-          href: expressroute/benefits.md
-        - name: How ExpressRoute works
-          href: expressroute/how-expressroute-works.md
-        - name: Before you use ExpressRoute
-          href: expressroute/things-to-consider.md
-        - name: Understand Microsoft Power Platform architecture
-          href: expressroute/understanding-architecture.md
-        - name: Plan an ExpressRoute deployment
-          href: expressroute/planning-expressroute.md
-        - name: Set up ExpressRoute for Microsoft Power Platform
-          href: expressroute/setup.md
-        - name: ExpressRoute readiness checklist
-          href: expressroute/checklist.md
-    - name: Real-world architecture examples
-      items:
-        - name: Overview
-          href: architecture/real-world-examples/overview.md
-        - name: Using the SharePoint connector with canvas apps
-          href: architecture/real-world-examples/sharepoint-canvas.md
-        - name: Using Dataverse with canvas apps
-          href: architecture/real-world-examples/dataverse-canvas-app.md
-        - name: Using Azure Functions to extend a canvas app
-          href: architecture/real-world-examples/azure-function-canvas.md
-        - name: Using REST APIs through custom connectors with canvas apps
-          href: architecture/real-world-examples/custom-connector-canvas.md
-        - name: Using business process flows, Dataverse, custom connectors, and Power Automate with canvas apps
-          href: architecture/real-world-examples/bpf-dataverse-powerautomate.md
-        - name: Using on-premises SQL Server with canvas apps
-          href: architecture/real-world-examples/sql-gateway-canvas.md
-        - name: Using Power Apps component framework with canvas apps
-          href: architecture/real-world-examples/pcf-canvas-components.md
+            - name: Overview
+              href: adoption/secure-overview.md
+            - name: Understand your security posture and challenges
+              href: adoption/assess-security-posture.md
+            - name: Enhance your security posture
+              href: adoption/security-posture-management.md
+            - name: Detect threats to your organization
+              href: adoption/threat-detection.md
+            - name: Establish data protection and privacy controls
+              href: adoption/data-protection.md
+            - name: Implement a DLP strategy
+              href: adoption/dlp-strategy.md
+            - name: Configure identity and access management
+              href: adoption/conditional-access.md
+            - name: Meet compliance requirements
+              href: adoption/compliance.md
+            - name: Secure the default environment
+              href: adoption/secure-default-environment.md
+            - name: Review the security checklist
+              href: adoption/security-checklist.md
+        - name: Governance
+          items:
+            - name: Overview
+              href: adoption/admin-best-practices.md
+            - name: Designate a Power Platform admin
+              href: adoption/pp-admin.md
+            - name: Manage adoption at scale
+              href: adoption/govern-at-scale.md
+            - name: Develop a tenant environment strategy
+              href: adoption/environment-strategy.md
+            - name: Implement reactive governance controls
+              href: adoption/reactive-governance.md
+            - name: Manage Dataverse for Teams environments
+              href: adoption/teams-environment-strategy.md
+            - name: Manage and govern the default environment
+              href: adoption/manage-default-environment.md
+        - name: Operations
+          items:
+            - name: Overview
+              href: adoption/operate-overview.md
+            - name: Establish effective ALM practices
+              href: adoption/alm.md
+            - name: Gain insights into Power Platform adoption
+              href: adoption/observability.md
+            - name: Report on resource usage
+              href: adoption/resource-usage.md
+            - name: Monitor license and capacity consumption
+              href: adoption/cds-usage.md
+            - name: Ensure data retention and mobility
+              href: adoption/data-retention.md
+            - name: Define your support process
+              items:
+                - name: Support strategy overview
+                  href: adoption/support-strategy.md
+                - name: End-user support
+                  href: adoption/support-strategy-solutions.md
+                - name: Maker support
+                  href: adoption/support-strategy-makers.md
+                - name: Support strategy maturity Levels
+                  href: adoption/support-strategy-maturity.md
+            - name: Manage resistance and avoid anti-patterns
+              href: adoption/manage-resistance.md
+        - name: Availability
+          items:
+            - name: Overview
+              href: adoption/availability-overview.md
+            - name: Plan mission critical workloads
+              href: adoption/plan-mission-critical.md
+            - name: Build a disaster recovery plan
+              href: adoption/plan-disaster-recovery.md
+        - name: Readiness
+          items:
+            - name: Overview
+              href: adoption/ready-overview.md
+            - name: Establish a training and upskilling strategy
+              href: adoption/training-strategy.md
+            - name: Host internal training events
+              href: adoption/in-a-day.md
+            - name: Set up tools to support your community
+              href: adoption/wiki-community.md
+            - name: Get started with a SharePoint site template
+              href: adoption/sharepoint-site-template.md
+            - name: Share templates and reusable components
+              href: adoption/reusable.md
+            - name: Envision and uncover high-value use cases
+              href: adoption/solution-envisioning.md
+        - name: Community
+          items:
+            - name: Overview
+              href: adoption/nurture-best-practices.md
+            - name: Define community purpose and goals
+              href: adoption/community-goals.md
+            - name: Define community core team responsibilities
+              href: adoption/community-core-team.md
+            - name: Promote the community and establish partnerships
+              href: adoption/community-promote.md
+            - name: Identify champions
+              href: adoption/champions.md
+            - name: Onboard new community members and makers
+              href: adoption/onboard-makers.md
+            - name: Share success stories
+              href: adoption/show-and-tell.md
+            - name: Organize hackathons
+              href: adoption/hackathons.md
+    - name: Power Platform toolkits
+      href: toolkits/index.yml
     - name: Real-world case studies
       items:
+        - name: Overview
+          href: case-studies/index.md
         - name: A1 Inteligencia em Viagens boosts team efficiency
           href: case-studies/boost-efficiency-experience-case-study.md
-        - name: Epiq streamlines employee onboarding
-          href: case-studies/streamline-employee-onboarding.md
-        - name: Degrees of Change automates nonprofit operations
-          href: case-studies/nonprofit.md
+        - name: ABN AMRO enhances AI capabilities
+          href: case-studies/abn-amro-enhances-ai.md
+        - name: AECOM simplifies project onboarding
+          href: case-studies/aecom-streamlined-onboarding.md
         - name: Cineplex automates business processes
           href: case-studies/automate-business-processes.md
+        - name: Degrees of Change automates nonprofit operations
+          href: case-studies/nonprofit.md
+        - name: Deutsche Bahn empowers citizen developers
+          href: case-studies/db-empowers-citizen-devs.md
+        - name: Epiq streamlines employee onboarding
+          href: case-studies/streamline-employee-onboarding.md
+        - name: EY automates payment processing
+          href: case-studies/global-finance.md
+        - name: Holland America Line transforms customer experience
+          href: case-studies/holland-america-customer-experience.md
+        - name: John Cockerill streamlines business processes
+          href: case-studies/engineering-time-tracking.md
+        - name: Rabobank embraces conversational banking
+          href: case-studies/rabobank-conversational-banking.md
+        - name: SLB enhances productivity with Power Platform and AI
+          href: case-studies/slb-enhances-productivity.md
+        - name: Teck automates data extraction
+          href: case-studies/teck-automates-data-extraction.md
+        - name: T-mobile empowers customer service representatives
+          href: case-studies/tmobile-empowers-customer-service.md
     - name: White papers
       items:
         - name: Power Platform white papers
           href: white-papers/index.md
-        - name: Develop an environment strategy
-          href: white-papers/environment-strategy.md
-        - name: Enterprise security
+        - name: Enterprise security with Power Platform
           href: white-papers/enterprise-security.md
         - name: Activating Managed Environments
           href: white-papers/managed-environment-activation.md
-        - name: Application modernization with Power Platform
-          href: white-papers/application-modernization.md
         - name: Migrating apps and flows from the default environment
           href: white-papers/migrating-from-default-environment.md
     - name: Resources
       items:
         - name: Icons
           href: icons.md
+        - name: Automation adoption best practices
+          href: /power-automate/guidance/automation-coe/overview
+        - name: Microsoft Power Platform Well-Architected
+          href: /power-platform/well-architected/
+        - name: Microsoft Power Platform Training
+          href: /training/browse/?products=power-platform

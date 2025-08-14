@@ -4,7 +4,7 @@ description: Deploy Microsoft 365 groups
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.date: 08/26/2021
 ms.subservice: admin
 ms.author: sericks
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Deploy Microsoft 365 groups 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 > [!NOTE]
 > Effective February 2022, support for Microsoft 365 Groups (previously known as Office Groups) and Yammer in Dynamics 365 will be deprecated. This will impact customers who use Microsoft 365 Groups and/or Yammer for collaboration in Dynamics 365. We recommend that customers transition to Microsoft Teams for more advanced collaboration functionalities. For information about integrating Dynamics 365 with Teams, see [Integrate customer engagement apps in Dynamics 365 with Microsoft Teams](/dynamics365/teams-integration/teams-integration).

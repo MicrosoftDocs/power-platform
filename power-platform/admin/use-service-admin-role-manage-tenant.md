@@ -5,25 +5,29 @@ author: srpoduri
 ms.subservice: admin
 ms.author: sericks 
 ms.reviewer: sericks
-ms.custom: "admin-security"
 ms.component: pa-admin
 contributors:
 - JesseParsons 
 - srpoduri
 - kavehkazms 
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/20/2024
 search.audienceType: 
   - admin
+ms.custom:
+  - "admin-security"
+  - sfi-ga-nochange
 ---
 # Use service admin roles to manage your tenant
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 To help you administer environments and settings for the Microsoft Power Platform, you can assign users to manage the service at the tenant level without having to assign a role that provides access to other services within the tenant.
 
 There are two Power Platform related service admin roles you can assign to provide a high level of admin management.
 
 > [!NOTE]
-> These ([and other](database-security.md#predefined-security-roles)) admin roles only apply to [what you can do in the Power Platform admin center](admin-documentation.md#power-platform-admin-center-features). For example, Dynamics 365 Finance and Dynamics 365 Supply Chain Management are currently not managed in the Power Platform admin center.
+> These ([and other](database-security.md#predefined-security-roles)) admin roles only apply to [what you can do in the Power Platform admin center](admin-documentation.md). For example, Dynamics 365 Finance and Dynamics 365 Supply Chain Management are currently not managed in the Power Platform admin center.
 
 ## Dynamics 365 administrator
 
@@ -90,7 +94,7 @@ The following matrix shows what management is possible with the various service 
 |Microsoft Dataverse|Yes|Yes|Yes<sup>2</sup>|No|  
 |Power Automate|Yes|Yes|Yes<sup>2</sup>|No|  
 |Power Apps|Yes|Yes|Yes<sup>2</sup>|No|  
-|**Help + support**|||||
+|**Support**|||||
 |Create and access support requests|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Data integration**|||||
 |Create new project and connection set|Yes|Yes|Yes<sup>2</sup>|No|  

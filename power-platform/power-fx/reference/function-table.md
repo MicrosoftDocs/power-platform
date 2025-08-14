@@ -1,4 +1,4 @@
----
+﻿---
 title: Table function
 description: Reference information including syntax and examples for the Table function.
 author: gregli-msft
@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur tapanm
-ms.date: 03/27/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Table function
+[!INCLUDE[function-table-applies-to](includes/function-table-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Creates a temporary [table](/power-apps/maker/canvas-apps/working-with-tables).
 
@@ -39,9 +40,9 @@ You can also create a single-column table with the **[ value1, value2, ... ]** s
 
 - _RecordOrTable(s)_ - Required. The records or table to add to the result table. If a table is provided, the records of the table are added to the resulting table as if they had been individually added.
 
-**Table**( _Untyped_ )
+**Table**( _Dynamic_ )
 
-- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a table or array. Acceptable values are dependent on the untyped provider. For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON array. Regardless of the content type of the Untyped array, the resulting table is a single-column table of Untyped objects.
+- _Dynamic_ - Required. [**Dynamic**](../untyped-object.md) value that represents a table or array. Acceptable values are dependent on the untyped provider. For [**JSON**](function-parsejson.md), the dynamic value is expected to be a JSON array. Regardless of the content type of the Untyped array, the resulting table is a single-column table of dynamic values.
 
 ## Examples
 
@@ -65,3 +66,137 @@ You can also create a single-column table with the **[ value1, value2, ... ]** s
   ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

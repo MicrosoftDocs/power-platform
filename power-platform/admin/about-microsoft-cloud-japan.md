@@ -4,7 +4,7 @@ description: About Microsoft Cloud Japan
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: sericks
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # About the Microsoft Cloud Japan datacenter
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
  If you’re an existing customer with a billing address mapping to a new data center region, review the information in this topic to understand the move process:  
   

@@ -1,11 +1,11 @@
----
-title: AISummarize, AISentiment, AIReply, AITranslate, AIClassify, and AIExtract functions
-description: Reference information including syntax and examples for the AISummarize, AISentiment, AIReply, AITranslate, AIClassify, and AIExtract functions.
+﻿---
+title: AIClassify, AIExtract, AIReply,AISummarize, AISentiment, and AITranslate functions
+description: Reference information including syntax and examples for the AIClassify, AIExtract, AIReply,AISummarize, AISentiment, and AITranslate functions.
 author: paulliew
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/22/2024
+ms.date: 06/20/2025
 ms.subservice: power-fx
 ms.author: paulliew
 search.audienceType:
@@ -15,9 +15,10 @@ contributors:
   - mduelae
 ---
 
-# AIClassify, AIExtract, AIReply, AISentiment, AISummarize, and AITranslate
+# AIClassify, AIExtract, AIReply, AISentiment, AISummarize, AISummarizeRecord, and AITranslate
+[!INCLUDE[function-ai-applies-to](includes/function-ai-applies-to.md)]
 
-Applies to: :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps 
+
 
 ## Description
 
@@ -36,13 +37,14 @@ Dataverse provides a variety of ready-to-use AI functions that are preconfigured
 - **AIReply** drafts a reply to the message that you provide. For example, this function drafts a reply to a customer's review of a product.
 - **AISentiment** detects the sentiment of the text that you provide. For example, this function detects whether the sentiment of a customer review is positive, negative, or neutral.
 - **AISummarize** summarizes the text that you provide. For example, this function summarizes an email message or text from a document.
+- - **AISummarizeRecord** summarizes the information in a record. For example, this function summarizes a customer's information based on a record in the Customers table.
 - **AITranslate** translates text from another language. For example, this function translates a customer email or product review. The source language doesn't need to be specified, and is automatically detected.
 
     For more information about languages supported for the source and target language, see [Translator language support—Translation](/azure/ai-services/translator/language-support) and review the list of supported languages under the **Auto Language Detection** column. 
 
 Learn more about how to use AI functions in the following video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1iGPI]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f8308ee0-9bf6-45a4-a940-e0b49a41354f]
 
 ## Prerequisites
 For more information on prerequisites, see [Requirements and licensing for prebuilt prompts](/ai-builder/prebuilt-prompts#prerequisites).
@@ -100,6 +102,10 @@ Here's an example:
 
 **AISummarize**( _Text_ )
 - _Text_ - Required. The text to summarize.
+- For canvas apps, the return value is in the _SummarizedText_ column.
+
+**AISummarizeRecord**( _Entity_ )
+- _Entity_ - Required. The Dataverse record to summarize.
 - For canvas apps, the return value is in the _SummarizedText_ column.
 
 **AITranslate**(_Text_, _TargetLanguage_)
@@ -191,6 +197,24 @@ To setup the following examples:
    an abundance of high-quality seafood options.
    ```
 
+### AISummarizeRecord
+
+1. In canvas apps, set the **OnSelect** property of the **Button** control to:
+   ```power-fx
+   Set( Result, Environment.AISummarizeRecord( First(Accounts) ).SummarizedText )
+   ```
+   For all other products, use this formula:
+   ```power-fx
+   Set( Result, AISummarizeRecord( First(Accounts) ) )
+   ```
+1. Press the button. The **Text** control displays a result similar to:
+   ```
+   The record provided was created on July 2, 2024, at 17:24:32 in the selected time zone. 
+   The account number for this record is ACC0001, associated with the company
+   [USMF](pagetype=entityrecord&etn=cdm_company&id=bdcdb6ff-7[204-4345](tel:2044345)-b46f-9545195385fd).
+   The record was last modified on July 2, 2024, at 17:24:32 in the selected time zone.
+
+
 ### AISentiment
 
 1. In canvas apps, set the **OnSelect** property of the **Button** control to:
@@ -210,7 +234,7 @@ To setup the following examples:
 
 1. In canvas apps, set the **OnSelect** property of the **Button** control to:
    ```power-fx
-   Set( Result, Environment.AITranslate( {Text:Subject, Language: "fr"} ).TranslatedText )
+   Set( Result, Environment.AITranslate( {Text:Subject, TargetLanguage: "fr"} ).TranslatedText )
    ```
    For all other products, use this formula:
    ```power-fx
@@ -225,3 +249,140 @@ To setup the following examples:
    le crabe et les palourdes. L’État possède un long littoral et de nombreuses rivières et lacs 
    qui fournissent des fruits de mer abondants et de haute qualité.
    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,25 +1,29 @@
 ---
 title: IP firewall in Power Platform environments
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 10/30/2024
+ms.date: 08/07/2025
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.custom:
   - template-overview
   - bap-template
+contributors:
+  - matapg007 
 ---
 
 # IP firewall in Power Platform environments
 
-The IP firewall helps to protect your organizational data by limiting user access to Microsoft Dataverse from only allowed IP locations. The IP firewall analyzes the IP address of each request in real time. For example, suppose the IP firewall is turned on in your production Dataverse environment, and allowed IP addresses are in the ranges associated with your office locations and not any external IP location like a coffee shop. If a user tries to access organizational resources from a coffee shop, Dataverse denies access in real time.
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
+The IP firewall protects your organizational data by ensuring users can only access Microsoft Dataverse from allowed IP locations. The IP firewall analyzes the IP address of each request in real time. For example, you can turn on the IP firewall in your production Dataverse environment and set allowed IP addresses in the ranges associated with your office locations and not any external IP location, like a coffee shop. If a user tries to access organizational resources from a coffee shop, Dataverse denies access in real time.
 
 :::image type="content" source="media/ip-firewall-dataverse-diagram.png" alt-text="Diagram illustrating the IP firewall feature in Dataverse.":::
 
 ## Key benefits
 
-Enabling the IP firewall in your Power Platform environments offers several key benefits.
+Turning on the IP firewall in your Power Platform environments offers several key benefits.
 
 - **Mitigate insider threats like data exfiltration**: A malicious user who tries to download data from Dataverse using a client tool like Excel or Power BI from a disallowed IP location is blocked from doing so in real time.
 - **Prevent token replay attacks**: If a user steals an access token and tries to use it to access Dataverse from outside allowed IP ranges, Dataverse denies the attempt in real time.
@@ -42,22 +46,49 @@ You can enable the IP firewall in a Power Platform environment by using either P
 ### Enable the IP firewall using Power Platform admin center
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an administrator.
-1. Select **Environments**, and then select an environment.
-1. Select **Settings** > **Product** > **Privacy + Security**.
-1. Under **IP address settings**, set **Enable IP address based firewall rule** to **On**.
-1. Under **Allowed list of IPv4/IPv6 ranges**, specify the allowed IP ranges in classless interdomain routing (CIDR) format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632). If you have multiple IP ranges, separate them with a comma. This field accepts up to 4,000 alphanumeric characters and allows a maximum of 200 IP ranges. IPv6 addresses are allowed both in hexadecimal and compressed format.
-1. Select other settings, as appropriate:
+1. In the navigation pane, select **Security**.
+1. In the **Security** pane, select **Identity and access**.
+1. In the **Identity and access management** page, select **IP firewall**.
+1. In the **Set up IP firewall** pane, select an environment. Then select **Set up IP firewall**.
+1. In the **Set up IP firewall for this environment** pane, select **IP Firewall** to **On**.
+1. Under **Allowed list of IP addresses**, specify the allowed IP ranges in classless interdomain routing (CIDR) format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632). If you have multiple IP ranges, separate them with a comma. This field accepts up to 4,000 alphanumeric characters and allows a maximum of 200 IP ranges. IPv6 addresses are allowed both in hexadecimal and compressed format.
+1. Select other advanced settings, as appropriate:
 
-   - **Service tags to be allowed by IP firewall**: From the list, select service tags that can bypass IP firewall restrictions.
+   - **Allowed list of service tags**: From the list, select service tags that can bypass IP firewall restrictions.
    - **Allow access for Microsoft trusted services**: This setting enables Microsoft trusted services like monitoring and [support user](support-environment.md) etc. to bypass the IP firewall restrictions to access the Power Platform environment with Dataverse. Enabled by default.
    - **Allow access for all application users**: This setting allows [all application users](system-application-users.md) third-party and first-party access to Dataverse APIs. Enabled by default. If you clear this value, it only blocks third-party application users.
-   - [**Enable IP firewall in audit-only mode**](#what-is-audit-only-mode): This setting enables the IP firewall but allows requests regardless of their IP address. Enabled by default.
+   - [**Enable IP firewall in audit-only mode**][def]: This setting enables the IP firewall but allows requests regardless of their IP address. Enabled by default.
    - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses separated by commas. The reverse proxy setting applies to both [IP-based cookie binding](block-cookie-replay-attack.md) and the IP firewall. Reach out to your network administrator to get the reverse proxy IP addresses.
-     
-     > [!NOTE]
-     > Reverse proxy must be configured to send user client IP addresses in the [forwarded](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded) header.
+
+   > [!NOTE]
+   > Reverse proxy must be configured to send user client IP addresses in the [forwarded](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded) header.
 
 1. Select **Save**.
+
+### Enable IP firewall at an environment group-level
+
+To configure IP firewall settings at the environment group-level, complete the following steps.
+Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. In the navigation pane, select **Security**.
+1. In the **Security** pane, select **Identity and access**.
+1. Select a IP firewall pane.
+1. In the pane that is displayed, select the **Environment groups** tab to which you want the security setting applied.Then select **Set up IP firewall**.
+1. In the **Set up IP firewall** pane, select **IP Firewall** to **On**.
+1. Under **Allowed list of IP addresses**, specify the allowed IP ranges in classless interdomain routing (CIDR) format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632). If you have multiple IP ranges, separate them with a comma. This field accepts up to 4,000 alphanumeric characters and allows a maximum of 200 IP ranges. IPv6 addresses are allowed both in hexadecimal and compressed format.
+1. Select other advanced settings, as appropriate:
+
+   - **Allowed list of service tags**: From the list, select service tags that can bypass IP firewall restrictions.
+   - **Allow access for Microsoft trusted services**: This setting enables Microsoft trusted services like monitoring and [support user](support-environment.md) etc. to bypass the IP firewall restrictions to access the Power Platform environment with Dataverse. Enabled by default.
+   - **Allow access for all application users**: This setting allows [all application users](system-application-users.md) third-party and first-party access to Dataverse APIs. Enabled by default. If you clear this value, it only blocks third-party application users.
+   - [**Enable IP firewall in audit-only mode**][def]: This setting enables the IP firewall but allows requests regardless of their IP address. Enabled by default.
+   - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses separated by commas. The reverse proxy setting applies to both [IP-based cookie binding](block-cookie-replay-attack.md) and the IP firewall. Reach out to your network administrator to get the reverse proxy IP addresses.
+1. Select **Save**.
+
+    > [!Note]
+    > Reverse proxy must be configured to send user client IP addresses in the [forwarded](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded) header.
+    >
+    > Selected settings are applied to all the environments in that environment group.
 
 ### Enable IP firewall using the Dataverse OData API
 
@@ -70,17 +101,22 @@ You have the flexibility to select the tools that you prefer. Use the following 
 
 **Configure the IP firewall by using the OData API**
 
-~~~
+```http
+
+
 PATCH https://{yourorg}.api.crm*.dynamics.com/api/data/v9.2/organizations({yourorgID})
 HTTP/1.1
 Content-Type: application/json
 OData-MaxVersion: 4.0
 OData-Version: 4.0
-~~~
+
+```
 
 **Payload**
 
-~~~
+```json
+
+
 [
     {
         "enableipbasedfirewallrule": true,
@@ -91,18 +127,18 @@ OData-Version: 4.0
         "allowmicrosofttrustedservicetags": true
     }
 ]
-~~~
+```
 
-- **enableipbasedfirewallrule** – Enable the feature by setting the value to **true**, or disable it by setting the value to **false**.
-- **allowediprangeforfirewall** — List the IP ranges that should be allowed. Provide them in CIDR notation, separated by a comma.
+- `enableipbasedfirewallrule` – Enable the feature by setting the value to **true**, or disable it by setting the value to **false**.
+- `allowediprangeforfirewall` — List the IP ranges that should be allowed. Provide them in CIDR notation, separated by a comma.
 
-    > [!IMPORTANT]
-    > Make sure that the service tag names exactly match what you see on the IP firewall's settings page. If there's any discrepancy, IP restrictions might not work correctly.
+   > [!IMPORTANT]
+   > Make sure that the service tag names exactly match what you see on the IP firewall's settings page. If there's any discrepancy, IP restrictions might not work correctly.
 
-- **enableipbasedfirewallruleinauditmode** – A value of **true** indicates audit-only mode, whereas a value of **false** indicates enforcement mode.
-- **allowedservicetagsforfirewall** – List the service tags that should be allowed, separated by a comma. If you don't want to configure any service tags, leave the value null.
-- **allowapplicationuseraccess** – The default value is **true**.
-- **allowmicrosofttrustedservicetags** – The default value is **true**.
+- `enableipbasedfirewallruleinauditmode` – A value of **true** indicates audit-only mode, whereas a value of **false** indicates enforcement mode.
+- `allowedservicetagsforfirewall` – List the service tags that should be allowed, separated by a comma. If you don't want to configure any service tags, leave the value null.
+- `allowapplicationuseraccess` – The default value is **true**.
+- `allowmicrosofttrustedservicetags` – The default value is **true**.
 
 > [!IMPORTANT]
 > When **Allow Access for Microsoft trusted services** and **Allow access for all application users** are disabled, some services that use Dataverse, such as Power Automate flows, might no longer work.
@@ -119,15 +155,64 @@ You should test the IP firewall to verify that it's working.
 
    You should have the access to the environment that's defined by your security role.
 
-We recommend that you should test the IP firewall in your test environment first, followed by audit-only mode in Production environment before enforcing the IP firewall on your Production environment.
+You should test the IP firewall in your test environment first, followed by audit-only mode in Production environment before enforcing the IP firewall on your Production environment.
 
 > [!NOTE]
 > By default, [TDS endpoint](settings-features.md#tds-endpoint) is turned on within the Power Platform environment.
 
+## SPN filtering for application users
+
+The IP Firewall feature in Power Platform allows administrators to restrict access to environments based on IP address ranges. For scenarios where specific application users (Service Principal Names or SPNs) need to bypass these restrictions, you can enable SPN filtering using an API-based approach.
+
+## Steps to enable SPN filtering
+
+1. **Add the application user.**
+   If not already added, add the [application user](manage-application-users.md) to the target environment and assign the appropriate security roles.
+   Example:
+   Add the app user with ID 123 and name TestSPN to the environment and assign the necessary roles
+2. **Retrieve the system user ID.**
+   Use the following API call to fetch the `systemuserid` for the application user:
+
+```http
+
+
+GET https://{root-url}/api/data/v9.0/systemusers?$filter=applicationid eq {application-id}&$select=systemuserid
+HTTP/1.1
+Content-Type: application/json
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+```
+
+3. **Allowlist the application user.**
+
+```http
+
+
+POST https://{yourorg}.api.crm*.dynamics.com/api/data/v9.2/systemusers(SystemuserID)
+HTTP/1.1
+Content-Type: application/json
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+
+```
+
+**Payload**
+
+```json
+[
+    {
+        "isallowedbyipfirewall": true
+    }
+]
+```
+
+4. **Configure IP firewall settings in PPAC.**
+   Navigate to the Power Platform Admin Center (PPAC) and configure the IP Firewall settings.
+   Ensure that the option "Allow access for all application users" is unchecked to enforce filtering.
 
 ## Licensing requirements for IP firewall
 
-IP firewall is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md) with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+The IP firewall is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md) with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 In addition, access to using IP firewall for Dataverse requires users in the environments where the IP firewall is enforced to have one of these subscriptions:
 
@@ -137,8 +222,7 @@ In addition, access to using IP firewall for Dataverse requires users in the env
 - Microsoft 365 A5/E5/F5/G5 Information Protection and Governance
 - Microsoft 365 A5/E5/F5/G5 Insider Risk Management
 
-[Learn more about these licenses](https://go.microsoft.com/fwlink/?linkid=2214240)
-
+[Learn more about Microsoft 365 licenses](https://go.microsoft.com/fwlink/?linkid=2214240)
 
 ## Frequently asked questions (FAQ)
 
@@ -193,11 +277,15 @@ In the IP firewall settings, allow the service tags listed in [Managed connector
 Make sure your reverse proxy is configured to send the client IP address in the forwarded header.
 
 ### IP firewall audit functionality isn't working in my environment. What should I do?
+
 IP firewall audit logs aren't supported in tenants enabled for bring-your-own-key [(BYOK)](manage-encryption-key.md) encryption keys. If your tenant is enabled for bring-your-own-key, then all environments in a BYOK-enabled tenant are locked down to SQL only, therefore audit logs can only be stored in SQL. We recommend that you migrate to [customer-managed key](customer-managed-key.md). To migrate from BYOK to customer-managed key (CMKv2), follow the steps in [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
 
 ### Does IP firewall support IPv6 IP ranges?
+
 Yes, IP firewall supports IPv6 IP ranges.
 
 ## Next steps
 
 [Security in Microsoft Dataverse](wp-security.md)
+
+[def]: #what-is-audit-only-mode

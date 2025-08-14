@@ -4,7 +4,7 @@ description: Use Power BI
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/15/2021
 ms.subservice: admin
 ms.author: sericks
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Use Power BI
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Power BI works with model-driven apps in Microsoft Dataverse to provide a self-service analytics solution. The Power BI service automatically refreshes the data displayed. With [!INCLUDE[pn_power_bi_desktop](../includes/pn-power-bi-desktop.md)] or [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)] Power Query for authoring reports and Power BI for sharing dashboards and refreshing data from model-driven apps or Dynamics 365 apps, such as Dynamics 365 Sales and Dynamics 365 Customer Service. Integrating Power BI with Dataverse provides the personnel in your organization a powerful way to work with data.  
   
@@ -37,7 +39,8 @@ To learn more about how to add Power BI tiles to personal dashboards, see [Embed
 To learn more about how to add Power BI dashboards to personal dashboards, see [Add a Power BI dashboard on your personal dashboard](/powerapps/user/add-powerbi-dashboards).  
 
 ## Get support for Power BI
-Though you administer Power BI from the [Power BI admin portal](https://app.powerbi.com/), you request support for Power BI through [Help + Support](get-help-support.md) in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+Though you administer Power BI from the [Power BI admin portal](https://app.powerbi.com/), you request support for Power BI through [Support](get-help-support.md) in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
   
 ### See also  

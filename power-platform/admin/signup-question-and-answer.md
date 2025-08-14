@@ -4,15 +4,18 @@ description: Explore the guidelines for granting and managing user access for Po
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/16/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-ga-nochange
 ---
 
 # Manage Power Apps licenses in your organization 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 This topic describes how users in your organization can get access to use Power Apps, and how you can control access to the Power Apps service. Visit the [Power Automate administration FAQs](/power-automate/organization-q-and-a) to learn about admin controls.
 

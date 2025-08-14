@@ -4,13 +4,15 @@ description: Learn how to access your storage and view the data that's in your s
 author: MilindaV2
 ms.author: milindav
 ms.subservice: admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/08/2024
 ms.reviewer: matp
 search.audienceType: 
   - admin
 ---
 # Access your storage
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Storage has important data from your environment. As a Power Platform administrator, there are a couple ways you can access your storage:
 

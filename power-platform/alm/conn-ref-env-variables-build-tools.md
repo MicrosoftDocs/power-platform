@@ -3,13 +3,15 @@ title: Pre-populate connection references and environment variables for automate
 description: Learn about pre-populating connection references and environment variables to truly automate your deployments.
 author: marcelbf
 ms.author: marcelbf
-ms.custom: ""
 ms.date: 08/20/2021
 ms.reviewer: angieandrews
 ms.subservice: alm
-ms.topic: conceptual
+ms.topic: concept-article
 search.audienceType: 
   - developer
+ms.custom:
+  - ""
+  - sfi-image-nochange
 ---
 
 # Pre-populate connection references and environment variables for automated deployments

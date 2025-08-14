@@ -4,7 +4,7 @@ description: Run bulk system jobs to detect duplicate records
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/09/2020
 ms.subservice: admin
 ms.author: sericks
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Run bulk system jobs to detect duplicate records
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 To maintain the integrity of system data, you should check for duplicates regularly to make sure that users don't inadvertently create duplicate contacts, accounts, leads, or other types of records.  
   

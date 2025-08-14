@@ -6,7 +6,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.date: 09/11/2024
 ms.subservice: well-architected
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Recommendations for optimizing logic
@@ -82,6 +82,10 @@ To optimize logic, consider the following strategies:
 - _Optimize data queries._ Only load the data that you need in an app or flow. Use server-side views to prefilter data to narrow down data relevant to your query.
 
 Review the performance recommendations specific to the Power Platform product you're working with. Evaluate your logic against these recommendations to identify areas for improvement.
+
+Learn more about [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/) and [Power Apps coding guidelines](/power-apps/guidance/coding-guidelines/overview) that can help you optimize logic.
+
+[!INCLUDE [pp-tip-powercat-toolkit](~/../shared-content/shared/guidance-includes/pp-tip-powercat-toolkit.md)]
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Optimizing logic and hot paths requires expertise. Identifying logic inefficiencies is subjective and might require highly skilled individuals, whom you may need to pull from other tasks.
 

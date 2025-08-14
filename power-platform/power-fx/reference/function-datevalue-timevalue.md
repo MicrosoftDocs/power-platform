@@ -1,4 +1,4 @@
----
+﻿---
 title: DateValue, TimeValue, and DateTimeValue functions
 description: Reference information including syntax and examples for the DateValue, TimeValue, and DateTimeValue functions.
 author: gregli-msft
@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 6/10/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -18,25 +18,26 @@ contributors:
 ---
 
 # DateValue, TimeValue, and DateTimeValue functions
+[!INCLUDE[function-datevalue-timevalue-applies-to](includes/function-datevalue-timevalue-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Converts date, time, or both in a _string_ to a _date/time_ value.
 
 ## Description
 
-- **DateValue** function converts a _date string_ (for example, "10/01/2014") to a _date/time_ value.
+- **DateValue** function converts a _date string_ (like "10/01/2014") to a _date/time_ value.
 
-- **TimeValue** function converts a _time string_ (for example, "12:15 PM") to a _date/time_ value.
+- **TimeValue** function converts a _time string_ (like "12:15 PM") to a _date/time_ value.
 
-- **DateTimeValue** function converts a _date and time string_ (for example, "January 10, 2013 12:13 AM") to a _date/time_ value.
+- **DateTimeValue** function converts a _date and time string_ (like "January 10, 2013 12:13 AM") to a _date/time_ value.
 
-**DateValue** function ignores any time information in the date string, and the **TimeValue** function ignores any date information in the time string.
+**DateValue** function ignores any time information in the date string, and **TimeValue** function ignores any date information in the time string.
 
 > [!NOTE]
 > The DateValue, TimeValue, and DateTimeValue functions by default use the language from the current user's settings. You can override it to ensure that strings are interpreted properly. For example, "10/1/1920" is interpreted as _October 1<sup>st</sup>_ in "_en_" and as _January 10<sup>th</sup>_ in "_fr_".
 
-Dates must be in one of these formats:
+Dates must use one of these formats:
 
 - MM/DD/YYYY or MM-DD-YYYY
 - DD/MM/YYYY or DD-MM-YYYY
@@ -49,10 +50,10 @@ Dates must be in one of these formats:
 To convert from numeric date, month and year components, read [Date](function-date-time.md). <br>
 To convert from numeric hour, minute and second components, read [Time](function-date-time.md).
 
-For more information, read:
+For more information, see:
 
-- [Working with date and time](/power-apps/maker/canvas-apps/show-text-dates-times).
-- [Date/time and data types](../data-types.md#date-time-and-datetime).
+- [Working with date and time](/power-apps/maker/canvas-apps/show-text-dates-times)
+- [Date/time and data types](../data-types.md#date-time-and-datetime)
 
 ## Syntax
 
@@ -63,11 +64,11 @@ For more information, read:
 - _String_ - Required. A text string that contains a date, time, or combination date and time value.
 - _Language_ - Optional. A language string, such as would be returned by the first two characters from the [Language](function-language.md) function. If not provided, the language of the current user's settings is used.
 
-**DateValue**( _Untyped_ )<br>
-**DateTimeValue**( _Untyped_ )<br>
-**TimeValue**( _Untyped_ )
+**DateValue**( _Dynamic_ )<br>
+**DateTimeValue**( _Dynamic_ )<br>
+**TimeValue**( _Dynamic_ )
 
-- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a date or time. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON string that contains a date and time in ISO 8601 format. Dates or times in other formats will result in an error. Consider converting such values to [**Text**](function-text.md) first, then to a date or time. Keep in mind that time zones and locale-related formats are important considerations when communicating with external systems.
+- _Dynamic_ - Required. [**Dynamic** value](../untyped-object.md) that represents a date or time. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the dynamic value is expected to be a JSON string that contains a date and time in ISO 8601 format. Dates or times in other formats will result in an error. Consider converting such values to [**Text**](function-text.md) first, then to a date or time. Keep in mind that time zones and locale-related formats are important considerations when communicating with external systems.
 
 ## Examples
 
@@ -94,7 +95,7 @@ If you type **10/11/2014** into a text-input control named **Startdate**, and th
 
   Device set to **en** locale shows the label as **Monday, November 10, 2014**.
 
-If you typed **October 20, 2014** instead:
+If you enter **October 20, 2014** instead:
 
 - Convert a date from a string in the user's locale and calculate the difference between two days, in days
 
@@ -152,3 +153,139 @@ If( TimeValue( FinishedAt.Text ) < TimeValue( "5:00:00.000 PM" ),
 - If you type **5:00:00.000 PM** in the **FinishedAt** control, the label shows "_Too late!_"
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

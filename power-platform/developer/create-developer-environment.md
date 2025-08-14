@@ -4,9 +4,9 @@ description: "Sign up for the Power Apps Developer Plan and create a developer e
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
-ms.date: 02/23/2024
+ms.date: 05/28/2025
 ms.reviewer: jdaly
-ms.topic: article
+ms.topic: how-to
 search.audienceType: 
   - developer
 contributors:
@@ -20,7 +20,7 @@ To fully use the [Power Apps Developer Plan](plan.md) as a developer, you need a
 
 ## Where do I start?
 
-If you have a work account, and want to use it to learn Power Platform, go to the next section.
+If you have a [work account](/power-apps/maker/signup-for-powerapps#what-email-address-can-i-use), and want to use it to learn Power Platform, go to the [next section](#sign-up-for-the-power-apps-developer-plan).
 
 If you don't have a work account or prefer a Sandbox tenant to learn Power Platform, read information in the [create a test tenant](#how-to-create-a-test-tenant) section later in this article before signing up for the developer environment.
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: SaveData, LoadData, and ClearData functions
 description: Reference information including syntax and examples for the SaveData, LoadData, and ClearData functions.
 author: gregli-msft
@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/22/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -19,13 +19,12 @@ contributors:
 ---
 
 # SaveData, LoadData, and ClearData functions
+[!INCLUDE[function-savedata-loaddata-applies-to](includes/function-savedata-loaddata-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
+
 
 Saves and reloads a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) from the app host's storage.
 
-> [!NOTE]
-> These functions can now be used when playing an app in a web browser as an [experimental feature](/power-apps/maker/canvas-apps/working-with-experimental-preview). This feature is disabled by default. To enable, navigate to **Settings** > **Upcoming features** > **Experimental** > **Enabled SaveData, LoadData, ClearData on web player.**" and turn the switch on. To submit feedback regarding this experimental feature, go to [Power Apps community forum](https://powerusers.microsoft.com/t5/Power-Apps-Community/ct-p/PowerApps1).
 
 ## Description
 
@@ -211,3 +210,138 @@ Following simple example captures and stores the names and pictures of everyday 
 For a detailed example, see the article on [simple offline capabilities](/power-apps/maker/canvas-apps/offline-apps).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

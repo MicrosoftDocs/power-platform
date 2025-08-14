@@ -3,7 +3,7 @@ title: "Telemetry events for model-driven apps | Microsoft Docs"
 description: About telemetry events for model-driven apps.
 services: powerapps
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/06/2022
 author: Zeffin
 ms.subservice: admin
@@ -11,9 +11,12 @@ ms.author: johnev
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # What data is available for model-driven apps?
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Performance data related to page loads and Unified Interface (UCI) outbound network requests is available for model-driven apps.  
 

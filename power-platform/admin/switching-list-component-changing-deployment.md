@@ -4,7 +4,7 @@ description: "Learn how to switch from list component to server-based authentica
 author: Mattp123
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/25/2021
 ms.subservice: admin
 ms.author: matp
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Switch from the list component or change the SharePoint deployment
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 This article provides an overview about how to switch from the deprecated list component to server-based authentication. This article can also help if you change the [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] deployment type, such as moving from [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises to [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)].
 

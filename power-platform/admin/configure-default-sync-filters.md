@@ -2,7 +2,7 @@
 title: "Set up default sync filters for multiple users for appointments, contacts, or tasks | MicrosoftDocs"
 description: Configure default sync filters for appointments, contacts, or task rows.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/12/2021
 author: sericks007
 ms.subservice: admin
@@ -13,6 +13,8 @@ search.audienceType:
 ---
 
 # Set up default sync filters for multiple users for appointments, contacts, or tasks
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Server-side synchronization uses the sync filter criteria that has been set by a user to determine which app rows will be synchronized with Exchange for that user. Sync filters are initialized when a user first configures server-side synchronization for rows such as appointments, contacts, and tasks. More information: [Create or modify online synchronization filters](choose-records-synchronize-dynamics-365-outlook-exchange.md#create-or-modify-online-synchronization-filters)
 

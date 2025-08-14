@@ -4,7 +4,7 @@ description: "The Microsoft Cloud datacenter offers French organizations a compl
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: sericks
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # About Microsoft Cloud France  
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 As of July 2019, Microsoft Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), Finance and Supply Chain Management, Power Apps, and Power Automate are available in France’s datacenters. This new deployment option serves customers in regulated industry and commercial organizations that do business with tables in France that require local data residency. Power BI has been available since March 2019.
 

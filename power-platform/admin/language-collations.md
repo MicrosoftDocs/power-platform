@@ -4,7 +4,7 @@ description: "Understand the Microsoft Dataverse language collations"
 keywords: ""
 ms.date: 06/30/2020
 ms.custom: 
-ms.topic: conceptual
+ms.topic: concept-article
 author: "NHelgren"
 ms.subservice: admin
 ms.author: nhelgren
@@ -13,6 +13,8 @@ search.audienceType:
   - maker
 ---
 # Microsoft Dataverse language collations
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 When an environment with a Dataverse database is created, admins are asked to select which default language they would like to use. This sets the dictionary, time and date
 format, number format, and indexing properties for the environment.

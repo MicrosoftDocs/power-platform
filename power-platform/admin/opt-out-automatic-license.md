@@ -6,12 +6,14 @@ ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/28/2021
 search.audienceType: 
   - admin
 ---
 # Opt-out of automatic license-based user roles management 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
  
 
 ## How to request my organization opt-outs?

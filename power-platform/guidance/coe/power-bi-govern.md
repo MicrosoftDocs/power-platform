@@ -4,10 +4,10 @@ description: "Perform risk assessments and identify critical, orphaned, or unuse
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 
 ms.date: 09/06/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 

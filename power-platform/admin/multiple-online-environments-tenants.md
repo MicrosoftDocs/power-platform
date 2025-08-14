@@ -6,7 +6,7 @@ ms.date: 09/30/2022
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: conceptual
+ms.topic: concept-article
 applies_to: 
   - "Dynamics 365 (online)"
 author: sericks007
@@ -19,6 +19,8 @@ search.audienceType:
 ---
 
 # About multiple online environments or tenants
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing), gives you options for segregating your data and user access. For most companies, adding and using multiple Power Platform environments provides the right mix of functionality and ease of management. Enterprises with separate entities that may want to separate directory and licenses might consider using multiple tenants. Multiple environments can be accessed by all users in the tenant. Multiple tenants need to invite other tenant users as guest users to give them access.
   

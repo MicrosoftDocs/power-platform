@@ -1,9 +1,9 @@
 ---
 title: Deployment settings for the ALM Accelerator
 description: Learn about the settings you can change to customize deployment pipelines with the ALM Accelerator for Power Platform.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/22/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 author: mikefactorial
 ms.author: rusant
 ms.reviewer: sericks

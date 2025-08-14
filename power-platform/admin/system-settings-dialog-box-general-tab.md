@@ -4,7 +4,7 @@ description: System Settings General tab
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/17/2021
 ms.subservice: admin
 ms.author: sericks
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # System Settings General tab
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Use the settings on this page to change general system-level settings like preferences for saving, decimal and currency precision, and other default settings for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
 

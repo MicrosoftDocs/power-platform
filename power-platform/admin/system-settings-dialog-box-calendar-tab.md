@@ -4,7 +4,7 @@ description: System Settings Calendar tab
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/31/2020
 ms.subservice: admin
 ms.author: sericks
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # System Settings Calendar tab
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Use the settings on this page to configure calendar settings for model-driven apps in Dynamics 365.  
   

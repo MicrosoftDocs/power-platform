@@ -4,7 +4,7 @@ description: Turn duplicate detection rules on or off for the whole organization
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2020
 ms.subservice: admin
 ms.author: sericks 
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Turn duplicate detection rules on or off for the whole organization
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 To maintain the integrity of your data, it’s a good idea to set up duplicate detection rules to reduce duplicate records in the system. Remember that after you create duplicate detection rules, you need to turn them on.  
   

@@ -3,9 +3,9 @@ title: "Use the Creator Kit | Creator Kit"
 description: "The Creator Kit is shipped as a single, self-contained solution. Learn about the building blocks designed to help you create Fluent UI–based apps."
 author: denise-msft
 ms.component: pa-maker
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/10/2024
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
@@ -14,6 +14,7 @@ contributors:
   - tapanm-msft
   - slaouist
   - DanaMartens
+ms.custom: sfi-image-nochange
 ---
 
 # Use the Creator Kit

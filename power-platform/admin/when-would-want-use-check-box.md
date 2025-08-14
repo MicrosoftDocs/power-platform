@@ -2,7 +2,7 @@
 title: "When would I want to use this check box?  | MicrosoftDocs"
 description: When would I want to use this check box?
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2020
 author: sericks007
 ms.subservice: admin
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # When would I want to use this check box?
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
  A user can be a member of more than one Dynamics 365 organization, but an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] mailbox (email address) can only synchronize emails, appointments, contacts, and tasks with one organization, and a user that belongs to that organization can only synchronize emails, appointments, contacts, and tasks with one Exchange mailbox. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) store the organization ID (`OrgID`) for the synchronizing organization and the last time the user synced in Exchange.  
   

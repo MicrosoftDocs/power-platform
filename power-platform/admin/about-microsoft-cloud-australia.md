@@ -3,7 +3,7 @@ title: "About Microsoft Cloud Australia  | MicrosoftDocs"
 description: About Microsoft Cloud Australia
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/20/2022
 ms.subservice: admin
 ms.author: sericks
@@ -11,6 +11,8 @@ search.audienceType:
   - admin
 ---
 # About the Microsoft Cloud Australia datacenter
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
  If you’re an existing Power Apps customer with a billing address mapping to a new data center region, review the information in this topic to understand the move process.  
   

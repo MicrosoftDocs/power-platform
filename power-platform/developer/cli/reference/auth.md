@@ -5,9 +5,8 @@ keywords: "pac cli"
 ms.subservice: developer
 author: laneswenka
 ms.author: laswenka
-ms.date: 12/2/2024
 ms.reviewer: jdaly
-ms.topic: reference
+ms.topic: generated-reference
 contributors: 
  - JimDaly
 ---
@@ -101,9 +100,6 @@ Default environment (ID, url, unique name, or partial name).
 
 This parameter requires no value. It's a switch.
 
-#### `--kind` `-k`
-
-**Deprecated**: This parameter is ignored.
 #### `--managedIdentity` `-mi`
 
 Use Azure Managed Identity.
@@ -129,7 +125,7 @@ Tenant ID if using application ID/client secret or application ID/client certifi
 **Deprecated**: Use `--environment` instead.
 #### `--username` `-un`
 
-Optional: The username to authenticate with; shows Microsoft Entra ID dialog if not specified.
+Optional: The username to authenticate with; shows a Microsoft Entra ID dialog if not specified.
 
 [!INCLUDE [auth-create-remarks](includes/auth-create-remarks.md)]
 

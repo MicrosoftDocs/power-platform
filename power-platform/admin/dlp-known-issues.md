@@ -1,13 +1,14 @@
 ---
 title: Known limitations for data loss prevention (DLP) policies
 description: Learn more about the known limitations when using our suite of data loss prevention (DLP) capabilities.
-ms.topic: conceptual
-ms.date: 11/04/2024
+ms.topic: concept-article
+ms.date: 02/05/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
 contributors:
+  - laneswenka
   - mikferland-msft
   - mihaelablendea
   - ChrisGarty
@@ -17,10 +18,13 @@ search.audienceType:
 ---
 
 # Known limitations
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 Below are known limitations to know about when using our suite of data loss prevention (DLP) capabilities:
 
 ## General
-- If you delete an environment and it's still within the 7-day recovery period, you'll still be able to see it in DLP policies when you view them in PowerShell. Once the recovery period ends, the environment is permanently deleted. However, it may take up to 7 days for all references to the environment to be automatically removed from your DLP policies.
+- Runtime enforcement is being allowed across all Power Platform regions. For customers who have used the [connector action control](connector-action-control.md) to block all new actions for a given connector, this could block triggers implicitly.  To identify and resolve any blocked triggers, review [Identify blocked Power Automate flows](identify-blocked-flows-data-policies.md) for a script to review and add to your policies.
+- If you delete an environment and it's still within the seven day recovery period, you can see it in DLP policies when you view them in PowerShell. Once the recovery period ends, the environment is permanently deleted. However, it may take up to seven days for all references to the environment to be automatically removed from your DLP policies.
 - There's limited support for DLP actions in the [Power Platform for Admins connector](/connectors/powerplatformforadmins/). The ability to block a connector is only supported in the DLP actions labeled with "V2" (such as "Create DLP Policy V2"). Connector action control, connector endpoint filtering, and DLP for custom connectors can't be configured using the Power Platform for Admins connector.
 - Tabular functions in the [Power Apps expression language](/powerapps/maker/canvas-apps/formula-reference) can't be governed with DLP.
 - Solution flows need to be activated once, to create a runtime representation, before they can be targeted for DLP enforcement exemption using the [Set-PowerAppDlpPolicyExemptResources cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/set-powerappdlppolicyexemptresources). If activation of the flow isn't allowed as-is because of a current DLP violation, then you could make changes to avoid violations, save, activate, add the exemption, then edit as desired with the exemption active.
@@ -42,5 +46,5 @@ Power Apps treats [Dataverse native](/power-apps/maker/canvas-apps/data-platform
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
-### See also
+### Related content
 [DLP for desktop flows](/power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview)

@@ -3,12 +3,12 @@ title: Set up Application Insights with Power Automate
 description: Learn about how to set up Azure Application Insights with Power Automate to create monitor cloud flows.
 services: powerapps
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 07/23/2024
-author: sericks007
+ms.topic: how-to
+ms.date: 01/16/2025
+author: samathur
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: sericks
+ms.author: samathur
+ms.reviewer: angieandrews
 search.audienceType: 
   - admin
 contributors:
@@ -20,6 +20,8 @@ ms.contributors:
 ---
 
 # Set up Application Insights with Power Automate 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Power Automate telemetry flows into two tables on Application Insights – **Requests** and **Dependencies.** All the downstream alerting and monitoring capabilities we could do on Power Automate data would be within these two tables within Application Insights.
 
@@ -173,10 +175,6 @@ Since all the raw telemetry is now flowing into Application Insights, you can us
 - **Cloud flow triggers and actions** data is available on the **Dependencies** table
 
 Within these tables, **Custom Dimensions** column contains most of the metadata required for detailed debugging of cloud flows – such as environment ID, flow ID and action names.
-
-## Known limitations
-
-When an environment is enabled for [customer-managed keys](/power-automate/customer-managed-keys), then Power Automate data can't be sent to Application Insights.
 
 ## Related information
 

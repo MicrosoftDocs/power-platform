@@ -7,10 +7,13 @@ ms.date: 06/06/2024
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
+ms.custom: sfi-image-nochange
 
 ---
 
 # Overview of unified admin experience for finance and operations apps
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Users of finance and operations apps can now administer their environments, policies, licensing, and capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 

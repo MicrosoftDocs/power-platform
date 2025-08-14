@@ -8,7 +8,7 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/25/2024
 search.audienceType: 
   - admin
@@ -19,6 +19,8 @@ search.audienceType:
 
 # Create a team template to control access rights for automatically created teams
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 <!-- legacy procedure -->
 
 A team template can be used for the entities that are enabled for automatically created access teams. In the team template, you have to specify the entity type and the access rights on the entity record. For example, you can create a team template for an account entity and specify the Read, Write, and Share access rights on the account record that the team members are granted when the team is automatically created. 
@@ -27,7 +29,7 @@ After you create a team template, you have to customize the entity main form to 
 
 To learn more about creating, using, and adding access teams to a solution, watch the following video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW18Hte] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=16ecba96-02be-4d54-aaa2-5359c18983cd] 
 
     
 ## Enable an entity for access teams  

@@ -1,53 +1,48 @@
 ---
-title: "Work with solutions using the Dataverse SDK | Microsoft Docs"
-description: "Learn about the .NET APIs that are available to manage Microsoft Dataverse solutions."
+title: "Work with solutions using the Dataverse SDK with Power Platform"
+description: "Learn about the .NET APIs that are available to manage Microsoft Dataverse solutions with Power Platform."
 author: marcelbf
 ms.author: marcelbf
-ms.date: 04/05/2022
+ms.date: 06/30/2025
 ms.reviewer: pehecke
-ms.topic: article
+ms.topic: how-to
 search.audienceType: 
   - developer
 ---
-
 # Work with solutions using the Dataverse SDK
 
-As part of your development to production lifecycle you may want to create
+As part of your development to production lifecycle you might want to create
 custom automation to handle certain tasks. For example, in your DevOps project
 pipeline you might want to execute some custom code or script that creates a
 sandbox environment, imports an unmanaged solution, exports that unmanaged
-solution as a managed solution, and, finally, deletes the environment. You can do
-this and more by using the APIs that are available to you. Below are some examples
-of what you can accomplish using the [Dataverse SDK for .NET](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) and custom code.
+solution as a managed solution, and, finally, deletes the environment. You can do these operations and more by using the APIs that are available to you. Here are some examples of what you can accomplish using the [Dataverse SDK for .NET](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) and custom code.
 
 > [!NOTE]
 > You can also perform these same operations using the Web API. The related actions are: [ImportSolution](/dynamics365/customer-engagement/web-api/importsolution), [ExportSolution](/dynamics365/customer-engagement/web-api/exportsolution), [CloneAsPatch](/dynamics365/customer-engagement/web-api/cloneaspatch), and [CloneAsSolution](/dynamics365/customer-engagement/web-api/cloneassolution).
+>
+> The code samples in this article are using early-bound entity types generated using either CrmSvcUtil or PAC CLI. More information: [Late-bound and early-bound programming using the SDK for .NET](/power-apps/developer/data-platform/org-service/early-bound-programming)
 
 ## Create, export, or import an unmanaged solution
 
-Let's see how to perform some common solution operations by using C# code. To
+Learn how to perform some common solution operations by using C# code. To
 view the complete working C# code sample that demonstrates these types of
-solution operations (and more), see [Sample: Work with solutions](/powerapps/developer/common-data-service/org-service/samples/work-solutions).
+solution operations, and more, go to [Sample: Work with solutions](/powerapps/developer/common-data-service/org-service/samples/work-solutions).
 
 ### Create a publisher
 
-Every solution requires a publisher, represented by the [Publisher entity](/powerapps/developer/common-data-service/reference/entities/publisher). A publisher requires the following:
+Every solution requires a publisher, represented by the [Publisher table](/powerapps/developer/common-data-service/reference/entities/publisher). A publisher requires the these properties:
 
 - A customization prefix
 - A unique name
 - A friendly name
 
 > [!NOTE]
-> For a healthy ALM approach, always use a custom publisher and solution, not the
-default solution and publisher, for deploying your customizations.
+> For a healthy application lifecycle management (ALM) approach, always use a custom publisher and solution, not the default solution and publisher, for deploying your customizations.
 
-The following code sample first defines a publisher and then checks to see
+The following code sample first defines a publisher and then checks to determine
 whether the publisher already exists based on the unique name. If it already
-exists, the customization prefix might have been changed, so this sample seeks to
-capture the current customization prefix. The `PublisherId` is also captured so
-that the publisher record can be deleted. If the publisher isn't found, a new
-publisher is created using
-the [IOrganizationService](/dotnet/api/microsoft.xrm.sdk.iorganizationservice).[Create](/dotnet/api/microsoft.xrm.sdk.iorganizationservice.create) method.
+exists, the customization prefix might have been changed. This sample seeks to capture the current customization prefix. The `PublisherId` is also captured so that the publisher record can be deleted. If the publisher isn't found, a new
+publisher is created using the [IOrganizationService](/dotnet/api/microsoft.xrm.sdk.iorganizationservice).[Create](/dotnet/api/microsoft.xrm.sdk.iorganizationservice.create) method.
 
 ```csharp
 // Define a new publisher
@@ -101,19 +96,18 @@ if (SamplePublisherResults == null)
 ### Create an unmanaged solution
 
 After you have a custom publisher available, you can then create an unmanaged
-solution. The following table lists the fields with descriptions that a solution
-contains.
+solution. The following table lists the columns with descriptions that a solution contains.
 
-| **Field Label**        | **Description**          |
+| **Column Label**        | **Description**          |
 |------------------------|-----------------------|
 | Display Name       | The name for the solution.   |
 | Name               | Microsoft Dataverse generates a unique name based on the **Display Name**. You can edit the unique name. The unique name must only contain alphanumeric characters or the underscore character.   |
 | Publisher          | Use the **Publisher** lookup to associate the solution with a publisher.      |
-| Version            | Specify a version by using the following format: *major.minor.build.revision* (for example, 1.0.0.0.    |
+| Version            | Specify a version by using the format: *major.minor.build.revision*, for example, 1.0.0.0.    |
 | Configuration Page | If you include an HTML Web resource in your solution, you can use this lookup to add it as your designated solution configuration page.    |
-| Description        | Use this field to include any relevant details about your solution.     |
+| Description        | Use this column to include any relevant details about your solution.     |
 
-Below is sample code to create an unmanaged solution that uses the publisher we
+Here's sample code to create an unmanaged solution that uses the publisher we
 created in the previous section.
 
 ```csharp
@@ -157,10 +151,9 @@ if (SampleSolutionResults == null)
 }
 ```
 
-After you create an unmanaged solution, you can add solution components by
+After you create an unmanaged solution, add solution components by
 creating them in the context of this solution or by adding existing components
-from other solutions. More information: [Add a new solution component](#add-a-new-solution-component)
-and [Add an existing solution component](#add-an-existing-solution-component)
+from other solutions. More information: [Add a new solution component](#add-a-new-solution-component) and [Add an existing solution component](#add-an-existing-solution-component)
 
 ### Export an unmanaged solution
 
@@ -205,12 +198,9 @@ _serviceProxy.Execute(impSolReq);
 
 #### Tracking import success
 
-You can use the ImportJob entity to capture data about the success of the
+You can use the ImportJob table to capture data about the success of the
 solution import. When you specify an `ImportJobId` for the
-[ImportSolutionRequest](/dotnet/api/microsoft.crm.sdk.messages.importsolutionrequest),
-you can use that value to query the ImportJob entity about the status of the
-import. The `ImportJobId` can also be used to download an import log file using
-the
+[ImportSolutionRequest](/dotnet/api/microsoft.crm.sdk.messages.importsolutionrequest), you can use that value to query the `ImportJob` table about the status of the import. The `ImportJobId` can also be used to download an import log file using the
 [RetrieveFormattedImportJobResultsRequest](/dotnet/api/microsoft.crm.sdk.messages.retrieveformattedimportjobresultsrequest)
 message.
 
@@ -279,8 +269,8 @@ The content of the `Data` property is a string representing the solution XML fil
 Learn how to add and remove solution components using code.
 
 ### Add a new solution component
- 
-This sample shows how to create a solution component that is associated with a specific solution. If you don't associate the solution component to a specific solution when it is created it will only be added to the default solution and you will need to add it to a solution manually or by using the code included in the [Add an existing solution component](#add-an-existing-solution-component).  
+
+This sample shows how to create a solution component that is associated with a specific solution. If you don't associate the solution component to a specific solution when it's created it will only be added to the default solution and you must add it to a solution manually or by using the code included in the [Add an existing solution component](#add-an-existing-solution-component).  
   
  This code creates a new global option set and adds it to the solution with a unique name equal to `_primarySolutionName`.  
   
@@ -310,7 +300,7 @@ _serviceProxy.Execute(createOptionSetRequest);
 
 This sample shows how to add an existing solution component to a solution.  
   
-The following code uses the <xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> to add the `Account` entity as a solution component to an unmanaged solution.  
+The following code uses the <xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> to add the `Account` table as a solution component to an unmanaged solution.  
   
  ```csharp
 // Add an existing Solution Component
@@ -331,7 +321,7 @@ _serviceProxy.Execute(addReq);
 
 ### Remove a solution component  
 
-This sample shows how to remove a solution component from an unmanaged solution. The following code uses the <xref:Microsoft.Crm.Sdk.Messages.RemoveSolutionComponentRequest> to remove an entity solution component from an unmanaged solution. The `solution.UniqueName` references the solution created in [Create an unmanaged solution](#create-an-unmanaged-solution).  
+This sample shows how to remove a solution component from an unmanaged solution. The following code uses the <xref:Microsoft.Crm.Sdk.Messages.RemoveSolutionComponentRequest> to remove a table solution component from an unmanaged solution. The `solution.UniqueName` references the solution created in [Create an unmanaged solution](#create-an-unmanaged-solution).  
   
  ```csharp
 // Remove a Solution Component
@@ -377,16 +367,16 @@ Console.WriteLine("Deleted the {0} solution.", ImportedSolution.FriendlyName);
 
 ## Cloning, patching, and upgrading
 
-You can perform additional solution operations by using the available APIs. For cloning and patching solutions use the [CloneAsPatchRequest](/dotnet/api/microsoft.crm.sdk.messages.cloneaspatchrequest)
+You can perform additional solution operations by using the available APIs. For cloning and patching solutions, use the [CloneAsPatchRequest](/dotnet/api/microsoft.crm.sdk.messages.cloneaspatchrequest)
 and [CloneAsSolutionRequest](/dotnet/api/microsoft.crm.sdk.messages.cloneassolutionrequest). For information about cloning and patching, see [Create solution patches](/powerapps/maker/common-data-service/solution-patches).
 
-When performing solution upgrades use the [StageAndUpgradeRequest](/dotnet/api/microsoft.crm.sdk.messages.stageandupgraderequest) and [DeleteAndPromoteRequest](/dotnet/api/microsoft.crm.sdk.messages.deleteandpromoterequest). For more information about the process of staging and upgrades, see [Upgrade or update a solution](/powerapps/maker/common-data-service/update-solutions).
+When performing solution upgrades use the [StageAndUpgradeRequest](/dotnet/api/microsoft.crm.sdk.messages.stageandupgraderequest) and [DeleteAndPromoteRequest](/dotnet/api/microsoft.crm.sdk.messages.deleteandpromoterequest). For more information about the process of staging and upgrades, go to [Upgrade or update a solution](/powerapps/maker/common-data-service/update-solutions).
 
 ## Detect solution dependencies
 
- This sample shows how to create a report showing the dependencies between solution components.  
+This sample shows how to create a report showing the dependencies between solution components.  
   
- This code will:  
+This code performs these operations:  
   
 - Retrieve all the components for a solution.  
   
@@ -517,9 +507,9 @@ public void DependencyReport(Dependency dependency)
 }
 ```
   
-### Detect whether a solution component may be deleted
+### Detect whether a solution component can be deleted
 
- Use the <xref:Microsoft.Crm.Sdk.Messages.RetrieveDependenciesForDeleteRequest> message to identify any other solution components which would prevent a given solution component from being deleted. The following code sample looks for any attributes using a known global optionset. Any attribute using the global optionset would prevent the global optionset from being deleted.  
+ Use the <xref:Microsoft.Crm.Sdk.Messages.RetrieveDependenciesForDeleteRequest> message to identify any other solution components which would prevent a given solution component from being deleted. The following code sample looks for any attributes using a known global choice column. Any attribute using the global choice would prevent the global choice from being deleted.  
   
 ```csharp
 // Use the RetrieveOptionSetRequest message to retrieve  

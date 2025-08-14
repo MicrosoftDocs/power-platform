@@ -1,11 +1,11 @@
----
+﻿---
 title: Decimal, Float, and Value functions
 description: Reference information including syntax and examples for the Decimal, Float, and Value functions.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 6/10/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 contributors:
@@ -15,8 +15,9 @@ contributors:
 ---
 
 # Decimal, Float, and Value functions
+[!INCLUDE[function-value-applies-to](includes/function-value-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Converts a string of text or other types to a number.
 
@@ -50,11 +51,11 @@ To convert date and time values, use the [**DateValue**](function-datevalue-time
 - _String_ - Required. String to convert to a numeric value.
 - _LanguageTag_ - Optional. The language tag in which to parse the string. If not specified, the language of the current user is used.
 
-**Decimal**( _Untyped_ )<br>
-**Float**( _Untyped_ )<br>
-**Value**( _Untyped_ )
+**Decimal**( _Dynamic_ )<br>
+**Float**( _Dynamic_ )<br>
+**Value**( _Dynamic_ )
 
-- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a number. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON number, boolean, or text that can be converted to a number. Keep in mind that locale-related formats are important considerations when communicating with external systems.
+- _Dynamic_ - Required. [**Dynamic**](../untyped-object.md) value that represents a number. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the dynamic value is expected to be a JSON number, boolean, or text that can be converted to a number. Keep in mind that locale-related formats are important considerations when communicating with external systems.
 
 ## Examples
 
@@ -91,3 +92,137 @@ Where things diverge is if larger or smaller numbers are used.
 | **Decimal(&nbsp;"10000000000.0000000001"&nbsp;)** |  The number in the text string is within both the range and precision of a **Decimal** numbers. | 10000000000.0000000001 (**Decimal**) |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

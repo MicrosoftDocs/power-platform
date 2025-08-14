@@ -3,7 +3,7 @@ title: "About Microsoft Cloud Canada  | MicrosoftDocs"
 description: About Microsoft Cloud Canada
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: sericks
@@ -11,6 +11,8 @@ search.audienceType:
   - admin
 ---
 # About the Microsoft Cloud Canada datacenter
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 <a name="BKMK_NewCloud"></a>   
 ## New Microsoft Cloud Services in Canada  

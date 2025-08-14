@@ -3,9 +3,9 @@ title: SpinButton control reference (preview) | Creator Kit
 description: Learn about the details and properties of the SpinButton control in the Creator Kit.
 author: denise-msft
 ms.component: pa-maker
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/30/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 

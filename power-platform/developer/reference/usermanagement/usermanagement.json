@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API",
-    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "title": "Microsoft Power Platform REST API - user management",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
   "host": "api.powerplatform.com",
@@ -15,19 +15,20 @@
         "tags": [
           "Users"
         ],
-        "summary": "Grants requesting tenant admin user the system admin role within Dataverse in the environment.",
+        "summary": "Apply the system administrator role to the selected user.",
         "operationId": "ApplyAdminRole",
         "parameters": [
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -38,20 +39,6 @@
             "description": "Success"
           }
         }
-      }
-    }
-  },
-  "definitions": {
-    "SyncReport": {
-      "description": "Organization Sync report contains last sync information from kepler",
-      "type": "object",
-      "properties": {
-        "lastSyncTime": {
-          "description": "Last sync time for the org",
-          "type": "string",
-          "example": ""
-        },
-        "additionalProperties": false
       }
     }
   },

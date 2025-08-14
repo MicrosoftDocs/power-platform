@@ -3,11 +3,13 @@ title: Use the ALM Accelerator with Power Pages sites
 description: Learn how to use the ALM Accelerator for Power Platform to apply source-control strategies and automate builds and deployment for your Power Pages sites. 
 ms.topic: how-to
 ms.date: 04/10/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 author: rajeevpentyala
-ms.author: rajeevpe
+ms.author: grarchib
 ms.reviewer: sericks
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Use the ALM Accelerator with Power Pages sites
@@ -107,6 +109,6 @@ Site administrators can use this method. It requires more setup and planning but
 
 1. Refresh the website in your browser to see the changes.
 
-### See also
+## Related information
 
 [Learn more about deployment profiles in the portal CLI documentation](../../developer/cli/reference/paportal.md)

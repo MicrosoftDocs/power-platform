@@ -5,9 +5,8 @@ keywords: "pac cli"
 ms.subservice: developer
 author: laneswenka
 ms.author: laswenka
-ms.date: 12/2/2024
 ms.reviewer: jdaly
-ms.topic: reference
+ms.topic: generated-reference
 contributors: 
  - JimDaly
 ---
@@ -784,7 +783,15 @@ Update tenant settings.
 [!INCLUDE [admin-update-tenant-settings-intro](includes/admin-update-tenant-settings-intro.md)]
 
 
-### Required Parameters for admin update-tenant-settings
+### Optional Parameters for admin update-tenant-settings
+
+#### `--setting-name` `-n`
+
+Name of the setting to be updated. For example: powerPlatform.helpSupportSettings.useSupportBingSearchByAllUsers
+
+#### `--setting-value` `-v`
+
+Value of the setting to be updated.
 
 #### `--settings-file` `-s`
 

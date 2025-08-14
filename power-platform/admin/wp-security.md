@@ -18,6 +18,8 @@ ms.contributors:
 ---
 # Security in Microsoft Dataverse
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 This section provides information on how [**Microsoft Dataverse**](/powerapps/maker/common-data-service/data-platform-intro), the underlying data platform for Power Platform components, handles security from user authentication to authorization that allows users to perform actions with data and services. Conceptually, security in Dataverse is there to ensure users can do the work they need to do with the least amount of friction, while still protecting the data and services. Security in Dataverse can be implemented as a simple security model with broad access all the way to highly complex security models where users have specific record and field level access. 
 
 The following is a high-level overview of how security model is implemented in Dataverse.
@@ -34,8 +36,8 @@ The following is a high-level overview of how security model is implemented in D
 > [!TIP]
 > To learn about how to help secure and govern Microsoft Power Platform apps like Power Automate, check out [Introduction to Power Automate security and governance](/training/modules/security-governance-intro/).
 
-### See also
-[Security in Power Platform](security/overview.md)<br/>
+### Related content
+[Security overview](security/security-overview.md)<br/>
 [Data storage in Power Platform](security/data-storage.md)<br/>
 [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)<br/>
 [Security concepts in Dataverse](wp-security-cds.md)<br />

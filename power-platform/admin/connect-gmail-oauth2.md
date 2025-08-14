@@ -2,17 +2,25 @@
 title: "Connect Gmail accounts using OAuth 2.0| MicrosoftDocs"
 description: "Connect Gmail accounts using OAuth 2.0 "
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 04/04/2022
+ms.topic: how-to
+ms.date: 05/16/2025
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
 ms.reviewer: sericks
+contributors:
+- yingchin
+- EllenWehrle
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 
 # Connect Gmail accounts by using OAuth 2.0 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) from Gmail accounts by using OAuth 2.0 as the authorization mechanism.
 
@@ -78,51 +86,46 @@ Follow the steps for **Create a project** in [Create, shut down, and restore pro
 
 ## Step 4. Create an email server profile
 
-1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment. 
+1. In the command bar, select **Settings**.
+1. Expand **Email**, then select **Server profiles**.
+1. In the command bar, select **New server profile**.
 
-2. On the command bar, select **Settings** > **Email** > **Server profiles**.  
-    
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of email server profile settings.](media/server-profile-settings.png "Email server profile setting")
+### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. In the command bar, click **Settings**.
+1. Expand **Email**, then select **Server profiles**.
+1. In the command bar, click **New server profile**.
 
-3. On the command bar, select **New server profile**.
+---
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of creating a new server profile.](media/new-server-profile.png "Create a new server profile")
-
-4. For **Email Server Type**, select **Gmail**, and then specify a meaningful **Name** for the profile.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of creating a new server profile for Gmail.](media/gmail-profile.png "Create a new server profile for Gmail")
-
-5. If you want to use this server profile as the default profile for new mailboxes, turn on **Set as default profile for new mailboxes**.
-
-6. For **Authentication Type**, select **Gmail OAuth**.
-
-7. For **Client ID** and **Client Secret**, enter the information you noted in step 8 of the previous procedure.
+In the **Set up server profile** panel:
+1. For **Email Server Type**, select **Gmail**, then enter a meaningful **Name** for the profile.
+2. To set this server profile as the default for new mailboxes, enable **Set as default profile for new mailboxes**.
+3. For **Authentication Type**, select **Gmail OAuth**.
+4. Enter the **Client ID** and **Client Secret** from step 8 of the previous procedure.
 
    > [!NOTE]
    > The **Locations and ports** fields are automatically populated.
 
-8. Expand **Advanced**, and then use the tooltips to choose your email processing options.
-
-10. When you're done, select **Save**.
-
+5. Expand **Advanced**, and use the tooltips to configure your email processing options.
+6. When finished, click **Save**.
 
 ## Step 5. Configure the mailbox
 
 > [!NOTE]
 > These steps should be done by the mailbox user.
 
-1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
-
-2. Select **Settings** > **Administration**.
-
-3. Select **Settings** > **Email configuration** > **Mailboxes**.
-
-4. Select the mailbox for the user configured in previous steps.
-
-5. Use the following settings:
+1. In a Dynamics 365 app, click **Settings** in the top command bar, then select **Advanced Settings**.
+2. Under the **System** group, select **Email configuration**, then click **Mailboxes**.
+3. Select the mailbox for the user configured in previous steps.
+4. In the **Synchronization Method** pane, enter the following settings:
 
    |Setting  |Use  |
    |---------|---------|
@@ -130,15 +133,15 @@ Follow the steps for **Create a project** in [Create, shut down, and restore pro
    |Incoming email    | Server-Side Synchronization or Email Router       |
    |Outgoing email | Server-Side Synchronization or Email Router   |
 
-6. Select **Save**.
+5. Select **Save** to apply the changes.
 
-7. Select **Signin to Gmail**.
+6. Select **Signin to Gmail**.
 
-8. Proceed through the Gmail sign-in and authorization pages.
+7. Follow the Gmail sign-in and authorization pages.
 
 ## Step 6. Add test users
 
-In the Google Cloud Platform (Developer Console), add users in the **Test Users** section when publishing the app. More information: [Google Cloud Platform Console Help](https://support.google.com/cloud/answer/7454865)
+In the Google Cloud Platform (Developer Console), add users in the **Test Users** section when publishing the app. You can learn more about adding test users in [Google Cloud Platform Console Help](https://support.google.com/cloud/answer/7454865).
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of adding test users.](media/gmail-oauth-add-users.png "Add test users")

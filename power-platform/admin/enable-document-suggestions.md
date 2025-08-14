@@ -4,7 +4,7 @@ description: Enable document suggestions for Dynamics 365 for Customer Engagemen
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/27/2020
 ms.subservice: admin
 ms.author: sericks 
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Enable document suggestions to recommend related documents
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 > [!IMPORTANT]
 > The document suggestions feature has been deprecated for all tables, except the case table. The case table is available with Dynamics 365 Customer Service. More information: [Create a case](/dynamics365/customer-service/customer-service-hub-user-guide-create-a-case)

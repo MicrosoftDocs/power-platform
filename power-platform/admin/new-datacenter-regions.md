@@ -1,11 +1,11 @@
 ---
-title: "Power Platform and Dynamics 365 datacenter regions"
-description: "Provides information about Power Platform and Dynamics 365 apps hosted in datacenters across many regions. Find a list of regions and URLs, plus how to migrate to a new datacenter."
+title: Power Platform and Dynamics 365 datacenter regions
+description: Provides information about Power Platform and Dynamics 365 apps hosted in datacenters across many regions. Find a list of regions and URLs, plus how to migrate to a new datacenter.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.collection: get-started
-ms.date: 05/19/2022
+ms.date: 03/07/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,13 +13,15 @@ search.audienceType:
 ---
 # Datacenter regions
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Microsoft Dynamics 365 and Microsoft Power Platform online services are being hosted in datacenters in more and more regions. After these services become available in a new region, the following apply:  
   
 - For new organizations, the datacenter will be aligned with the country/region you selected during sign-up.  
   
 - For existing organizations, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will soon accommodate migrations to datacenters in the new region when requested by the customer as long as the organization meets certain business requirements.  
   
-For information about datacenter regions for Dynamics 365 and Power Platform, see [Product Availability by Geography](https://dynamics.microsoft.com/availability-reports/georeport/). Also, see [Where your data is located](https://www.microsoft.com/trust-center/privacy/data-location).  
+For information about datacenter regions for Dynamics 365 and Power Platform, see [Product Availability by Geography](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport). Also, see [Where your data is located](https://www.microsoft.com/trust-center/privacy/data-location).  
   
 The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing).
 

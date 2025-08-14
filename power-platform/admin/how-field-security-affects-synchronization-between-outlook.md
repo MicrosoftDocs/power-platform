@@ -3,7 +3,7 @@ title: "How field security affects synchronization between customer engagement a
 description: How field security affects synchronization between customer engagement apps and Outlook 
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/17/2021
 ms.subservice: admin
 ms.author: sericks
@@ -11,6 +11,8 @@ search.audienceType:
   - admin
 ---
 # How field security affects synchronization with Outlook
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 <!-- legacy procedure -->
 

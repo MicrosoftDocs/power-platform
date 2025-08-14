@@ -4,7 +4,8 @@ description: Learn how to use Copilot to generate deployment notes during pipeli
 author: ASheehi1
 ms.author: matp
 ms.topic: how-to
-ms.date: 11/4/2024
+ms.date: 01/06/2025
+ms.update-cycle: 180-days
 ms.collection: bap-ai-copilot
 contributors:
    - ASheehi1
@@ -18,7 +19,7 @@ When you deploy solutions in a pipeline in Power Platform, you can [deploy with 
 
 > [!IMPORTANT]
 >
-> - This capability is powered by [ Azure OpenAI Service](/azure/cognitive-services/openai/overview).
+> - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
 > - Learn more with our [FAQ for Copilot data security and privacy in Dynamics 365](/dynamics365/transparency-note-copilot-data-security-privacy).
 > - This capability is in process of rolling out, and may not be available in your region yet.
 > - This capability  may be subject to usage limits or capacity throttling.
@@ -28,6 +29,8 @@ When you deploy solutions in a pipeline in Power Platform, you can [deploy with 
 - One or more pipelines must already be created and associated with the environment that's used for development.
 - You must have access to run a pipeline. More information: [Grant access to edit or run pipelines](custom-host-pipelines.md#grant-access-to-edit-or-run-pipelines)
 - The setting for **AI deployment notes** must be set to **Enabled** in the **Deployment Pipeline Configuration** app for each pipeline you want to use this feature with.
+
+:::image type="content" source="media/enable-ai-deployment-notes.png" alt-text="Enable AI deployment notes in pipeline settings within the Deployment Pipeline Configuration app" lightbox="media/enable-ai-deployment-notes.png":::
 
 ## Deploy a solution with Copilot generated deployment notes
 

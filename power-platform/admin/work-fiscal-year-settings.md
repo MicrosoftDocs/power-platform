@@ -3,7 +3,7 @@ title: "Work with fiscal year settings  | MicrosoftDocs"
 description: Work with fiscal year settings
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/09/2022
 ms.subservice: admin
 ms.author: sericks
@@ -11,6 +11,8 @@ search.audienceType:
   - admin
 ---
 # Work with fiscal year settings
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 <!-- legacy procedure -->
 

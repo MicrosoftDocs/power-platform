@@ -2,7 +2,7 @@
 title: "End of support for Internet Explorer | MicrosoftDocs"
 description: Information about end of support for Internet Explorer.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/18/2022
 ms.subservice: admin
 ms.author: aorth 
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Support end for Internet Explorer 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Microsoft Internet Explorer and Microsoft Edge Legacy support has ended. This topic outlines the experience that administrators and end users will see related to the support end.
  

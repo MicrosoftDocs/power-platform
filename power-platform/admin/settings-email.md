@@ -2,29 +2,49 @@
 title: "Manage email settings  | MicrosoftDocs"
 description: View and manage email settings for Microsoft Dataverse.
 author: sericks007
+contributor: yingchin
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 09/19/2022
+ms.topic: concept-article
+ms.date: 05/16/2025
 ms.subservice: admin
-ms.author: sericks 
+ms.custom: NewPPAC
+ms.author: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
 # Manage email settings
 
-Use Email settings to adjust how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, features appear and function.
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Email settings**.
+You can use email settings to adjust how features appear and function in Dynamics 365 model-driven apps, such as Dynamics 365 Sales and Customer Service.
+
+The email settings can be found in the Power Platform admin center.
+
+Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the email settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+
+
+#### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the left navigation pane, select **Manage**.
+1. In the **Manage** panel, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Email**, then select **Email settings**.
+
+#### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the left navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**.  
+1. Expand **Email**, then select **Email settings**.
+---
+
 
 > [!TIP]
 > In addition to the settings mentioned below, there are more settings available to control synchronization behavior. For more information, see [OrgDBOrgSettings for server-side synchronization](OrgDbOrgSettings.md).
-
-Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
-
-**Check your security role**
-
-- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator.
 
 > [!div class="mx-tableFixed"]
 > |Settings|Description|  
@@ -49,15 +69,16 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Outgoing email|Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the Email Router, or server-side synchronization for processing outgoing email.|  
 > |Appointments, contacts, and tasks|Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] or server-side synchronization to synchronize appointments, contacts, and tasks between [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] and [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)]. **Note:**  You can’t synchronize appointments, contacts, and tasks if you’re synchronizing with a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] email server.|  
 > |**Email form options**||  
-> |Use secure frames to restrict email message content|Default: Off. If this is set to **On**, you may see the following error message when you’re reading email: “This content cannot be displayed in a frame”. Although this can make sending sensitive content in email less secure, changing the setting to **Off** typically eliminates this error.|  
+> |Use secure frames to restrict email message content|Default: Off. If this is set to *On*, you may see the following error message when you’re reading email: *This content cannot be displayed in a frame*. Although this can make sending sensitive content in email less secure, changing the setting to **Off** typically eliminates this error.|  
 > |People can send emails with unresolved recipients|Default: Off. Set this to **On** if you want to send email messages that have unresolved recipients.|  
 > |If there are multiple possible recipient matches in the to, CC, or BCC fields, set them as unresolved|Default: Off. Use this setting to choose which record an email address resolves to when there are multiple possible matches in **to**, **cc**, or **bcc** fields of an email. When you select **On**, if the **to**, **cc**, or **bcc** fields of an email have an email address that can be resolved to multiple contacts (or other records), the email address will be resolved in the unresolved mode instead of resolving to all possible records. Unresolved email addresses can then be resolved individually as you encounter them.|  
-> |When someone manually resolves an unresolved email address, apply it to all similar unresolved addresses|When set to **Yes**, the same email address is applied to all similar unresolved email addresses when resolved in one email activity.  When set to **Off**, the email address is applied only to the specific email activity and does not resolve similar addresses present in other email activities. The default value is **On**. <br /><br />This setting is configurable when **Set To, cc, bcc, fields as unresolved values is multiple matches are found in Incoming Emails** is set to **On**.|
+> |When someone manually resolves an unresolved email address, apply it to all similar unresolved addresses|When set to **On**, the same email address is applied to all similar unresolved email addresses when resolved in one email activity.  When set to **Off**, the email address is applied only to the specific email activity and does not resolve similar addresses present in other email activities. The default value is **On**. <br /><br />This setting is configurable when **Set To, cc, bcc, fields as unresolved values is multiple matches are found in Incoming Emails** is set to **On**.|
 > | **Additional app-specific settings**   |   |
 > | Enhanced email for Timeline  | The enhanced email experience allows users to compose an email without leaving the record they're working on. This setting is available with environments that have customer engagement apps in Dynamics 365, such as Dynamics 365 Sales or Dynamics 365 Customer Service.   |
 
   
-### See also  
+### See also
+
  [Track Outlook email by moving it to a tracked Exchange folder](track-outlook-email-by-moving-it-tracked-exchange-folder.md)   
  [Frequently asked questions about synchronizing records between model-driven apps in Dynamics 365 and Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml)   
  [Set up email through server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)   

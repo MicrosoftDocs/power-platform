@@ -15,19 +15,21 @@ contributors:
   - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/01/2024
-ms.custom: ignite-2024
+ms.date: 06/17/2025
 ms.service: power-platform
 ms.subservice: sap
+ms.custom:
+  - ignite-2024
+  - sfi-image-nochange
 # Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID with certificates so users can access SAP data through Power Platform with single sign.
 ---
 
-# Microsoft Entra ID (with certificates) - single sign-on
+# Set up Microsoft Entra ID with certificates for SSO
 
-This guide walks you through setting up the connector so your users can access SAP data and run RFCs (Remote Function Call) in Microsoft Power Platform using their Microsoft Entra ID for authentication. T​he process involves configuring both public and private certificates for secure communication.
+This guide walks you through setting up the SAP ERP connector so your users can access SAP data and run Remote Function Calls (RFCs) in Microsoft Power Platform using their Microsoft Entra ID for authentication. T​he process involves configuring both public and private certificates for secure communication.
 
-> [!IMPORTANT]
-> This article is for setting up a proof of concept only. The settings and recommendations are not intended for production use. For more information about this topic, consult your security team, internal policies, and Microsoft Partner for more guidance.
+> [!NOTE]
+> While the example in this article uses self-generated public key infrastructure that isn't recommended, ensure settings and certificates align with your business requirements and your [Microsoft partner](https://partner.microsoft.com/partnership/find-a-partner).
 
 ## Prerequisites
 
@@ -143,7 +145,7 @@ Take these steps to add users signing certificate and certificate chain to Windo
 openssl pkcs12 -export -out user_signing_cert.p12 -inkey .\signingUsersCert\users.key.pem -in .\signingUsersCert\users.cert.pem
 ```
 
-2. Open the Windows Certificate Manager:
+1. Open the Windows Certificate Manager:
     1. Press `Win + R`, type `certlm.msc`, and press Enter.
 1. Import the public Root CA certificate.
     1. Import into `Trusted Root Certification Authorities`.
@@ -194,7 +196,7 @@ Then create the following rule in t-code `CERTRULE`
 > [!NOTE]
 > Wait two minutes to ensure cached connections to SAP have expired and then retest the connection. If not, you may run into the *No suitable SAP user found for X.509-client certificate* error.
 
-## User intermediate certificate
+### User intermediate certificate
 
 Take these steps to add a user intermediate certificate to SAP:
 
@@ -226,3 +228,4 @@ Replace the connection with a new one that uses `Microsoft Entra ID (using certi
 
 Learn more:
 [On-premises data gateway FAQ](/data-integration/gateway/service-gateway-onprem-faq)
+[Configure certificate-based authentication](/power-automate/desktop-flows/configure-certificate-based-auth)

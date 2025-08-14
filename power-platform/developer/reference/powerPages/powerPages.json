@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API",
-    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "title": "Microsoft Power Platform REST API - Power Pages",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
   "host": "api.powerplatform.com",
@@ -16,7 +16,7 @@
           "Websites"
         ],
         "summary": "List Power Pages websites.",
-        "description": "Get a list of all the websites in your environment",
+        "description": "Get a list of all the websites in your environment.",
         "operationId": "GetWebsites",
         "produces": [
           "application/json"
@@ -25,18 +25,20 @@
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "skip",
+            "description": "The number of items to skip before returning the remaining items.",
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -68,7 +70,7 @@
           "Websites"
         ],
         "summary": "Create a Power Pages website.",
-        "description": "Trigger the creation of a new website",
+        "description": "Trigger the creation of a new website.",
         "operationId": "CreateWebsite",
         "consumes": [
           "application/json"
@@ -80,13 +82,14 @@
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -137,7 +140,7 @@
           "Websites"
         ],
         "summary": "Get the Power Pages website details by specifying its unique identifier (ID).",
-        "description": "Get website details from Website Id",
+        "description": "Get website details using a specified website ID.",
         "operationId": "GetWebsiteById",
         "produces": [
           "application/json"
@@ -146,19 +149,21 @@
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "id",
+            "description": "Website unique identifier (ID).",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -196,7 +201,7 @@
           "Websites"
         ],
         "summary": "Delete a Power Pages website.",
-        "description": "Trigger the deletion of a website by specifying the website ID",
+        "description": "Trigger the deletion of a website by specifying the website ID.",
         "operationId": "DeleteWebsite",
         "produces": [
           "application/json"
@@ -205,25 +210,28 @@
           {
             "in": "header",
             "name": "Operation-Location",
+            "description": "Operation location.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "id",
+            "description": "Website unique identifier (ID).",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -260,72 +268,14 @@
         }
       }
     },
-    "/powerpages/environments/{environmentId}/websites/{id}/restart": {
-      "post": {
+    "/powerpages/environments/{environmentId}/websites/{id}/addAllowedIpAddresses": {
+      "put": {
         "tags": [
           "Websites"
         ],
-        "summary": "Restart a Power Pages website.",
-        "description": "Restart the website for the given site id",
-        "operationId": "RestartWebsite",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "environmentId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          }
-        }
-      }
-    },
-    "/powerpages/environments/{environmentId}/websites/{id}/setPortalDataModelVersion": {
-      "post": {
-        "tags": [
-          "Websites"
-        ],
-        "summary": "Stamp data model version for website.",
-        "description": "Stamp data model version for website",
-        "operationId": "SetPortalDataModelVersion",
+        "summary": "Add allowed IP addresses on a Power Pages website.",
+        "description": "Add allowed IP addressed on the given website.",
+        "operationId": "AddAllowedIpAddresses",
         "consumes": [
           "application/json"
         ],
@@ -336,19 +286,21 @@
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "id",
+            "description": "Website unique identifier (ID).",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -358,13 +310,16 @@
             "name": "body",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/PortalDataModelDto"
+              "$ref": "#/definitions/IpAddressConfiguration"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AllowedIpAddressesConfiguration"
+            }
           },
           "400": {
             "description": "Bad Request",
@@ -387,14 +342,17 @@
         }
       }
     },
-    "/powerpages/environments/{environmentId}/websites/{id}/stop": {
-      "post": {
+    "/powerpages/environments/{environmentId}/websites/{id}/createWafRules": {
+      "put": {
         "tags": [
           "Websites"
         ],
-        "summary": "Stop a Power Pages website.",
-        "description": "Stop the website for the given site id",
-        "operationId": "StopWebsite",
+        "summary": "Create web application firewall rules on a Power Pages website.",
+        "description": "Create web application firewall rules on the given website.",
+        "operationId": "CreateWafRules",
+        "consumes": [
+          "application/json"
+        ],
         "produces": [
           "application/json"
         ],
@@ -402,27 +360,37 @@
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "id",
+            "description": "Website unique identifier (ID).",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/WebApplicationFirewallRules"
+            }
           }
         ],
         "responses": {
-          "200": {
-            "description": "Success"
+          "202": {
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",
@@ -445,14 +413,14 @@
         }
       }
     },
-    "/powerpages/environments/{environmentId}/websites/{id}/start": {
+    "/powerpages/environments/{environmentId}/websites/{id}/disableWaf": {
       "post": {
         "tags": [
           "Websites"
         ],
-        "summary": "Start a Power Pages website.",
-        "description": "Start the website for the given site id",
-        "operationId": "StartWebsite",
+        "summary": "Disable web application firewall on a Power Pages website.",
+        "description": "Disable web application firewall on the given website.",
+        "operationId": "DisableWaf",
         "produces": [
           "application/json"
         ],
@@ -460,19 +428,21 @@
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "id",
+            "description": "Website unique identifier (ID).",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -480,7 +450,10 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/WebApplicationFirewallStatus"
+            }
           },
           "400": {
             "description": "Bad Request",
@@ -508,8 +481,8 @@
         "tags": [
           "Websites"
         ],
-        "summary": "Enable Web Application Firewall on a Power Pages website.",
-        "description": "Enable Web Application Firewall on the given website",
+        "summary": "Enable web application firewall on a Power Pages website.",
+        "description": "Enable web application firewall on the given website.",
         "operationId": "EnableWAF",
         "produces": [
           "application/json"
@@ -518,19 +491,21 @@
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "id",
+            "description": "Website unique identifier (ID).",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -573,13 +548,86 @@
         }
       }
     },
+    "/powerpages/environments/{environmentId}/websites/{id}/getWafRules": {
+      "get": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Get the web application firewall rules.",
+        "description": "Get the web application firewall rules associated with the given website.",
+        "operationId": "GetWAFRules",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ruleType",
+            "description": "Type of web application firewall rules to retrieve.",
+            "type": "string",
+            "enum": [
+              "managed",
+              "custom"
+            ]
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/WebApplicationFirewallConfiguration"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
     "/powerpages/environments/{environmentId}/websites/{id}/getWafStatus": {
       "get": {
         "tags": [
           "Websites"
         ],
-        "summary": "Get the Web Application Firewall status.",
-        "description": "Get the status of Web Application Firewall associated with the given website",
+        "summary": "Get the web application firewall status.",
+        "description": "Get the status of web application firewall associated with the given website.",
         "operationId": "GetWAFStatus",
         "produces": [
           "application/json"
@@ -588,19 +636,21 @@
           {
             "in": "path",
             "name": "environmentId",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "id",
+            "description": "Website unique identifier (ID).",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -612,6 +662,704 @@
             "schema": {
               "$ref": "#/definitions/WebApplicationFirewallStatus"
             }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/restart": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Restart a Power Pages website.",
+        "description": "Restart the website for the given site ID.",
+        "operationId": "RestartWebsite",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/scan/deep/getLatestCompletedReport": {
+      "get": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Get deep scan report for a Power Pages website.",
+        "description": "Get the deep scan report for a Power Pages website.",
+        "operationId": "GetSecurityScanReport",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/SiteSecurityResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/scan/deep/getSecurityScore": {
+      "get": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Get deep scan score for a Power Pages website.",
+        "description": "Get the deep scan score for a Power Pages website.",
+        "operationId": "GetSecurityScanScore",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/SiteSecurityScore"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/scan/deep/start": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Start deep scan for a Power Pages website.",
+        "description": "Start deep scan for a Power Pages website.",
+        "operationId": "StartDeepScan",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accpeted"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/scan/quick/execute": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Execute quick scan for a Power Pages website.",
+        "description": "Execute a quick scan for a Power Pages website.",
+        "operationId": "StartQuickScan",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "lcid",
+            "description": "Language code identifier (LCID) for the website.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/PortalScanIssues"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/SetPortalBootstrapV5Enabled": {
+      "patch": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Stamp bootstrap version five (5) status as enabled for website.",
+        "description": "Stamp bootstrap version five (5) status as enabled for website.",
+        "operationId": "SetPortalBootstrapV5Enabled",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/setPortalDataModelVersion": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Stamp data model version for website.",
+        "description": "Stamp data model version for website.",
+        "operationId": "SetPortalDataModelVersion",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PortalDataModelDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/start": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Start a Power Pages website.",
+        "description": "Start the website for the given site ID.",
+        "operationId": "StartWebsite",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/stop": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Stop a Power Pages website.",
+        "description": "Stop the website for the given site ID.",
+        "operationId": "StopWebsite",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/updatePortalSecurityGroup": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Update security group for site visibility for a website.",
+        "description": "Update the security group for site visibility for a website.",
+        "operationId": "UpdatePortalSecurityGroup",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "securityGroupId",
+            "description": "Security group ID.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/updateSiteVisibility": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Update site visibility for a website.",
+        "description": "Update site visibility for a website.",
+        "operationId": "UpdateSiteVisibility",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "siteVisibility",
+            "description": "Site visibility.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -677,14 +1425,6 @@
         "websiteRecordId": {
           "description": "Dataverse record unique identifier (ID) of the website",
           "type": "string"
-        }
-      }
-    },
-    "ODataWebsiteDto": {
-      "type": "object",
-      "properties": {
-        "@odata.metadata": {
-          "$ref": "#/definitions/WebsiteDto"
         }
       }
     },
@@ -864,7 +1604,7 @@
           "type": "boolean"
         },
         "applicationUserAadAppId": {
-          "description": "Azure Active Directory (AAD) object unique identifier (ID)",
+          "description": "Entra ID (formerly Azure Active Directory) object unique identifier (ID)",
           "type": "string"
         },
         "ownerId": {
@@ -904,7 +1644,7 @@
       }
     },
     "WebApplicationFirewallStatus": {
-      "description": "Web Application Firewall status",
+      "description": "Web application firewall status",
       "enum": [
         "None",
         "Creating",
@@ -914,6 +1654,529 @@
         "DeletionFailed"
       ],
       "type": "string"
+    },
+    "WafRuleAction": {
+      "description": "Action to take for the rule",
+      "enum": [
+        "Allow",
+        "Block",
+        "Log",
+        "AnomalyScoring"
+      ],
+      "type": "string"
+    },
+    "WafRuleType": {
+      "enum": [
+        "MatchRule",
+        "RateLimitRule"
+      ],
+      "type": "string"
+    },
+    "IpAddressType": {
+      "description": "The type of the IP address",
+      "enum": [
+        "IPv4",
+        "IPv6"
+      ],
+      "type": "string"
+    },
+    "CustomRule": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Name of the custom rule",
+          "type": "string"
+        },
+        "priority": {
+          "format": "int32",
+          "description": "Priority of the rule",
+          "type": "integer"
+        },
+        "enabledState": {
+          "description": "State of the rule",
+          "enum": [
+            "Enabled",
+            "Disabled"
+          ],
+          "type": "string"
+        },
+        "ruleType": {
+          "$ref": "#/definitions/WafRuleType"
+        },
+        "rateLimitDurationInMinutes": {
+          "format": "int32",
+          "description": "Duration in minutes for rate limiting",
+          "type": "integer"
+        },
+        "rateLimitThreshold": {
+          "format": "int32",
+          "description": "Threshold for rate limiting",
+          "type": "integer"
+        },
+        "matchConditions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "matchVariable": {
+                "description": "Variable to match",
+                "type": "string"
+              },
+              "selector": {
+                "description": "Selector for the match variable",
+                "type": "string"
+              },
+              "operator": {
+                "description": "Operator for the match condition",
+                "enum": [
+                  "GeoMatch",
+                  "Equals",
+                  "Contains",
+                  "StartsWith",
+                  "EndsWith"
+                ],
+                "type": "string"
+              },
+              "negateCondition": {
+                "description": "Whether to negate the condition",
+                "type": "boolean"
+              },
+              "matchValue": {
+                "description": "Values to match",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "transforms": {
+                "description": "Transformations to apply",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "action": {
+          "description": "Action to take when the rule matches",
+          "enum": [
+            "Allow",
+            "Block",
+            "Log"
+          ],
+          "type": "string"
+        }
+      }
+    },
+    "WebApplicationFirewallRules": {
+      "type": "object",
+      "properties": {
+        "customRules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CustomRule"
+          }
+        },
+        "managedRules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "RuleSetType": {
+                "description": "Type of the managed rule set",
+                "type": "string"
+              },
+              "RuleSetVersion": {
+                "description": "Version of the managed rule set",
+                "type": "string"
+              },
+              "RuleSetAction": {
+                "description": "Action to take for the rule set",
+                "enum": [
+                  "Allow",
+                  "Block",
+                  "Log"
+                ],
+                "type": "string"
+              },
+              "Exclusions": {
+                "description": "List of exclusions for the rule set",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "RuleGroupOverrides": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "RuleGroupName": {
+                      "description": "Name of the rule group",
+                      "type": "string"
+                    },
+                    "Exclusions": {
+                      "description": "List of exclusions for the rule group",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "Rules": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "RuleId": {
+                            "description": "ID of the rule",
+                            "type": "string"
+                          },
+                          "EnabledState": {
+                            "description": "State of the rule",
+                            "enum": [
+                              "Enabled",
+                              "Disabled"
+                            ],
+                            "type": "string"
+                          },
+                          "Action": {
+                            "$ref": "#/definitions/WafRuleAction"
+                          },
+                          "Exclusions": {
+                            "description": "List of exclusions for the rule",
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "WebApplicationFirewallConfiguration": {
+      "type": "object",
+      "properties": {
+        "ManagedRules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "description": "Unique identifier of the managed rule set",
+                "type": "string"
+              },
+              "name": {
+                "description": "Name of the managed rule set",
+                "type": "string"
+              },
+              "properties": {
+                "type": "object",
+                "properties": {
+                  "provisioningState": {
+                    "description": "Provisioning state of the managed rule set",
+                    "enum": [
+                      "Succeeded",
+                      "Failed",
+                      "Updating"
+                    ],
+                    "type": "string"
+                  },
+                  "ruleSetId": {
+                    "description": "Unique identifier of the rule set",
+                    "type": "string"
+                  },
+                  "ruleSetType": {
+                    "description": "Type of the rule set",
+                    "type": "string"
+                  },
+                  "ruleSetVersion": {
+                    "description": "Version of the rule set",
+                    "type": "string"
+                  },
+                  "ruleGroups": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "ruleGroupName": {
+                          "description": "Name of the rule group",
+                          "type": "string"
+                        },
+                        "description": {
+                          "description": "Description of the rule group",
+                          "type": "string"
+                        },
+                        "rules": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "ruleId": {
+                                "description": "Unique identifier of the rule",
+                                "type": "string"
+                              },
+                              "defaultState": {
+                                "description": "Default state of the rule",
+                                "enum": [
+                                  "Enabled",
+                                  "Disabled"
+                                ],
+                                "type": "string"
+                              },
+                              "defaultAction": {
+                                "$ref": "#/definitions/WafRuleAction"
+                              },
+                              "description": {
+                                "description": "Description of the rule",
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "CustomRules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CustomRule"
+          }
+        }
+      }
+    },
+    "IpAddressConfiguration": {
+      "type": "object",
+      "properties": {
+        "IpAddresses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "IpAddress": {
+                "description": "The IP address or CIDR range",
+                "type": "string"
+              },
+              "IpAddressType": {
+                "$ref": "#/definitions/IpAddressType"
+              }
+            }
+          }
+        }
+      }
+    },
+    "AllowedIpAddressesConfiguration": {
+      "type": "object",
+      "properties": {
+        "AllowedIpAddresses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "IpAddress": {
+                "description": "The IP address or CIDR range",
+                "type": "string"
+              },
+              "IpType": {
+                "$ref": "#/definitions/IpAddressType"
+              },
+              "TenantId": {
+                "format": "uuid",
+                "description": "The unique identifier of the tenant",
+                "type": "string"
+              },
+              "CreatedOn": {
+                "format": "date-time",
+                "description": "The creation timestamp of the IP address entry",
+                "type": "string"
+              },
+              "LastModifiedOn": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "PortalScanIssues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "issue": {
+            "description": "The specific issue identified",
+            "type": "string"
+          },
+          "category": {
+            "description": "The category of the issue",
+            "enum": [
+              "Provisioning issues",
+              "Configuration Issues",
+              "Portal Startup Issue",
+              "Performance",
+              "Security"
+            ],
+            "type": "string"
+          },
+          "result": {
+            "description": "The result of the issue check",
+            "enum": [
+              "Pass",
+              "Warning",
+              "Error"
+            ],
+            "type": "string"
+          },
+          "description": {
+            "description": "Detailed description of the issue",
+            "type": "string"
+          },
+          "learnMoreUrl": {
+            "format": "uri",
+            "description": "URL for more information about the issue",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "SiteSecurityScore": {
+      "type": "object",
+      "properties": {
+        "totalRules": {
+          "description": "Total number of rules",
+          "type": "integer"
+        },
+        "succeededRules": {
+          "description": "Number of rules that succeeded",
+          "type": "integer"
+        }
+      }
+    },
+    "SiteSecurityResult": {
+      "type": "object",
+      "properties": {
+        "TotalRuleCount": {
+          "description": "Total number of rules evaluated",
+          "type": "integer"
+        },
+        "FailedRuleCount": {
+          "description": "Number of rules that failed",
+          "type": "integer"
+        },
+        "TotalAlertCount": {
+          "description": "Total number of alerts generated",
+          "type": "integer"
+        },
+        "UserName": {
+          "description": "Name of the user who initiated the scan",
+          "type": "string"
+        },
+        "StartTime": {
+          "format": "date-time",
+          "description": "Start time of the scan",
+          "type": "string"
+        },
+        "EndTime": {
+          "format": "date-time",
+          "description": "End time of the scan",
+          "type": "string"
+        },
+        "Rules": {
+          "description": "List of rules evaluated during the scan",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Rule"
+          }
+        }
+      }
+    },
+    "Rule": {
+      "type": "object",
+      "properties": {
+        "RuleId": {
+          "description": "Unique identifier of the rule",
+          "type": "string"
+        },
+        "RuleName": {
+          "description": "Name of the rule",
+          "type": "string"
+        },
+        "RuleStatus": {
+          "description": "Status of the rule",
+          "enum": [
+            "RuleFailed",
+            "RulePassed"
+          ],
+          "type": "string"
+        },
+        "AlertsCount": {
+          "description": "Number of alerts generated by the rule",
+          "type": "integer"
+        },
+        "Alerts": {
+          "description": "List of alerts generated by the rule",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Alert"
+          }
+        }
+      }
+    },
+    "Alert": {
+      "type": "object",
+      "properties": {
+        "AlertId": {
+          "description": "Unique identifier of the alert",
+          "type": "string"
+        },
+        "AlertName": {
+          "description": "Name of the alert",
+          "type": "string"
+        },
+        "Description": {
+          "description": "Detailed description of the alert",
+          "type": "string"
+        },
+        "Mitigation": {
+          "description": "Steps to mitigate the issue",
+          "type": "string"
+        },
+        "Risk": {
+          "description": "Risk level associated with the alert",
+          "type": "integer"
+        },
+        "RuleId": {
+          "description": "Identifier of the rule that generated the alert",
+          "type": "string"
+        },
+        "LearnMoreLink": {
+          "description": "Links to learn more about the alert",
+          "type": "array",
+          "items": {
+            "format": "uri",
+            "type": "string"
+          }
+        },
+        "CallToAction": {
+          "description": "Actions to address the alert",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
     }
   },
   "securityDefinitions": {

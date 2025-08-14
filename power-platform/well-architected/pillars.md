@@ -5,8 +5,8 @@ author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
-ms.topic: conceptual
-ms.date: 05/16/2024
+ms.topic: concept-article
+ms.date: 08/05/2025
 ---
 
 # Power Platform Well-Architected pillars

@@ -3,9 +3,8 @@ title: Formula reference - canvas apps
 description: Reference information for all functions in canvas apps.
 author: gregli-msft
 ms.topic: reference
-ms.custom: canvas
 ms.reviewer: mkaur-msft
-ms.date: 3/22/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,18 +13,21 @@ contributors:
   - mduelae
   - gregli-msft
   - gregli
+ms.custom:
+  - canvas
+  - sfi-ropc-nochange
 ---
 
 # Formula reference - canvas apps
 
-In this article, learn about all the functions available in canvas apps.
+This article explains all the functions you can use in canvas apps.
 
-Formulas in canvas apps combine many elements. Listed below are:
+Formulas in canvas apps combine several elements. Here are the main types:
 
-- **Functions** take parameters, perform an operation, and return a value. For example, **Sqrt(25)** returns **5**. Functions are modeled after Microsoft Excel functions. Some functions have side effects, such as **SubmitForm**, which are appropriate only in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) such as **Button.OnSelect**.
+- **Functions** take parameters, perform an operation, and return a value. For example, **Sqrt(25)** returns **5**. Functions are similar to Microsoft Excel functions. Some functions can have side effects, like **SubmitForm**, which you use only in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) such as **Button.OnSelect**.
 - **Signals** return information about the environment. For example, **[Location](reference/signals.md)** returns the device's current GPS coordinates. Signals don't take parameters or have side effects.
-- **Enumerations** return a pre-defined constant value. For example, **[Color](reference/function-colors.md)** is an enumeration that has pre-defined values for **Color.Red**, **Color.Blue**, and so forth. Common enumerations are included here; function-specific enumerations are described with the function.
-- **Named operators**, such as **[ThisItem](reference/operators.md#thisitem-thisrecord-and-as-operators)** and **[Self](reference/operators.md#self-and-parent-operators)**, provide access to information from within a container.
+- **Enumerations** return a predefined constant value. For example, **[Color](reference/function-colors.md)** is an enumeration with predefined values like **Color.Red** and **Color.Blue**. Common enumerations are included here, and function-specific enumerations are described with the function.
+- **Named operators**, like **[ThisItem](reference/operators.md#thisitem-thisrecord-and-as-operators)** and **[Self](reference/operators.md#self-and-parent-operators)**, let you access information from within a container.
 
 Other elements include:
 
@@ -35,7 +37,7 @@ Other elements include:
 
 ## <a id="-a"></a> A
 
-**[Abs](reference/function-numericals.md)** – Absolute value of a number.
+**[Abs](reference/function-numericals.md)** – Returns the absolute value of a number.
 
 **[Acceleration](reference/signals.md)** – Reads the acceleration sensor in your device.
 
@@ -43,13 +45,13 @@ Other elements include:
 
 **[Acot](reference/function-trig.md)** – Returns the arccotangent of a number, in radians.
 
-**[AddColumns](reference/function-table-shaping.md)** – Returns a table with [columns](/power-apps/maker/canvas-apps/working-with-tables#columns) added.
+**[AddColumns](reference/function-table-shaping.md)** – Returns a table with additional [columns](/power-apps/maker/canvas-apps/working-with-tables#columns).
 
 **[And](reference/function-logicals.md)** – Boolean logic AND. Returns **true** if all arguments are **true**. You can also use the [**&&** operator](reference/operators.md).
 
-**[AIClassify](reference/function-ai.md)** – Classifies text into one or more of categories.
+**[AIClassify](reference/function-ai.md)** – Classifies text into one or more categories.
 
-**[AIExtract](reference/function-ai.md)** – Extracts specified entities such as registration numbers, phone numbers, or names of people.
+**[AIExtract](reference/function-ai.md)** – Extracts specified entities like registration numbers, phone numbers, or people’s names.
 
 **[AIReply](reference/function-ai.md)** – Drafts a reply to the message that you provide.
 
@@ -57,15 +59,15 @@ Other elements include:
 
 **[AISummarize](reference/function-ai.md)** – Summarizes the text that you provide.
 
-**[AITranslate](reference/function-ai.md)** – Translates text from another language.
+**[AITranslate](reference/function-ai.md)** – Translates text from one language to another.
 
-**[App](reference/object-app.md)** – Provides information about the currently running app and control over the app's behavior.
+**[App](reference/object-app.md)** – Provides information about the currently running app and lets you control the app's behavior.
 
 **[Asin](reference/function-trig.md)** – Returns the arcsine of a number, in radians.
 
 **[Assert](reference/function-assert.md)** – Evaluates to true or false in a test.
 
-**[As](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Names the current record in gallery, form, and record scope functions such as **ForAll**, **With**, and **Sum**.
+**[As](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Names the current record in gallery, form, and record scope functions like **ForAll**, **With**, and **Sum**.
 
 **[AsType](reference/function-astype-istype.md)** – Treats a record reference as a specific table type.
 
@@ -77,11 +79,11 @@ Other elements include:
 
 ## B
 
-**[Back](reference/function-navigate.md)** – Displays the previous screen.
+**[Back](reference/function-navigate.md)** – Shows the previous screen.
 
-**[Blank](reference/function-isblank-isempty.md)** – Returns a _blank_ value that can be used to insert a NULL value in a data source.
+**[Blank](reference/function-isblank-isempty.md)** – Returns a _blank_ value you can use to insert a NULL value in a data source.
 
-**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or untyped value to a Boolean value.
+**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or dynamic value to a Boolean value.
 
 ## C
 
@@ -109,9 +111,9 @@ Other elements include:
 
 **[ColorValue](reference/function-colors.md)** – Translates a CSS color name or a hex code to a color value.
 
-**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from a [Dynamic value](untyped-object.md).
 
-**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from a [Dynamic value](untyped-object.md).
 
 **[Compass](reference/signals.md)** – Returns your compass heading.
 
@@ -195,7 +197,6 @@ Other elements include:
 
 **[Exp](reference/function-numericals.md)** – Returns _e_ raised to a power.
 
-
 ## F
 
 **[Filter](reference/function-filter-lookup.md)** – Returns a filtered table based on one or more criteria.
@@ -254,8 +255,6 @@ Other elements include:
 **[IsToday](reference/function-now-today-istoday.md)** – Checks whether a date/time value is sometime today in the user's time zone.
 
 **[IsType](reference/function-astype-istype.md)** – Checks whether a record reference refers to a specific table type.
-
-**[IsUTCToday](reference/function-now-today-istoday.md)** – Checks whether a date/time value is sometime today in Coordinated Universal Time (UTC).
 
 ## J
 
@@ -327,7 +326,7 @@ Other elements include:
 
 **[Parent](reference/operators.md#self-and-parent-operators)** – Provides access to a container control's properties.
 
-**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
+**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to a [Dynamic value](untyped-object.md) value.
 
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
 
@@ -338,6 +337,8 @@ Other elements include:
 **[PlainText](reference/function-encode-decode.md)** – Removes HTML and XML tags from a string.
 
 **[Power](reference/function-numericals.md)** – Returns a number raised to a power. You can also use the [**^** operator](reference/operators.md).
+
+**[Print](reference/function-print.md)** - Opens the current screen in the default browser print dialog.
 
 **[Proper](reference/function-lower-upper-proper.md)** – Converts the first letter of each word in a string to uppercase, and converts the rest to lowercase.
 
@@ -352,6 +353,8 @@ Other elements include:
 **[ReadNFC](reference/function-readnfc.md)** – Reads a Near Field Communication (NFC) tag.
 
 **[RecordInfo](reference/function-recordinfo.md)** – Provides information about a record of a data source.
+
+**[RecordOf](reference/function-type.md)** - Extracts the type of a record from a table.
 
 **[Refresh](reference/function-refresh.md)** – Refreshes the records of a data source.
 
@@ -396,8 +399,6 @@ Other elements include:
 **[Self](reference/operators.md#self-and-parent-operators)** – Provides access to the properties of the current control.
 
 **[Sequence](reference/function-sequence.md)** – Generate a table of sequential numbers, useful when iterating with **ForAll**.
-
-**[SendAppNotification (preview)](reference/function-send-app-notification.md)** – Send an in-app notification with optional actions to a recipient.
 
 **[Set](reference/function-set.md)** – Sets the value of a global variable.
 
@@ -461,6 +462,8 @@ Other elements include:
 
 **[Trunc](reference/function-round.md)** – Truncates the number to only the integer portion by removing any decimal portion.
 
+**[Type](reference/function-type.md)** - Defines a user defined type.
+
 ## U
 
 **[Ungroup](reference/function-groupby.md)** – Removes a grouping.
@@ -478,10 +481,6 @@ Other elements include:
 **[Upper](reference/function-lower-upper-proper.md)** – Converts letters in a string of text to all uppercase.
 
 **[User](reference/function-user.md)** – Returns information about the current user.
-
-**[UTCNow](reference/function-now-today-istoday.md)** – Returns the current date/time value in Coordinated Universal Time (UTC).
-
-**[UTCToday](reference/function-now-today-istoday.md)** – Returns the current date-only value in Coordinated Universal Time (UTC).
 
 ## V
 

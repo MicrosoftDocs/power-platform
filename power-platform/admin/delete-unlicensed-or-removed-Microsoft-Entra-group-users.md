@@ -6,13 +6,15 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 08/27/2024
 search.audienceType: 
   - admin
 ---
 
 # Delete unlicensed or removed Microsoft Entra group members 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 There are different scenarios where a user’s status might be set to _disabled_, including the following scenarios:
 

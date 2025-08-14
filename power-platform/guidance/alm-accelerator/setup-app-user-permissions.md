@@ -3,7 +3,7 @@ title: Configure user permissions
 description: Learn how to configure user permissions to access the ALM Accelerator for Power Platform app and pipelines.
 ms.topic: how-to
 ms.date: 05/22/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 author: jenschristianschroder
 ms.author: jeschro
 ms.reviewer: sericks

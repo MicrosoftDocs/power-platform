@@ -1,17 +1,20 @@
 ---
-title: "Exchange Online cross-tenant authentication | MicrosoftDocs"
+title: Exchange Online cross-tenant authentication 
 description: Exchange Online cross tenant authentication
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 01/13/2022
+ms.topic: how-to
+ms.date: 01/23/2025
 author: gattimassimo 
 ms.author: magatti
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Exchange Online cross-tenant authentication
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Use server-side synchronization to synchronize Exchange Online mailboxes that reside on different Exchange Online tenants. Follow the steps in this topic to complete the prerequisites before you set up an Exchange Online server profile that uses Oauth cross-tenant authentication. More information: [Create an email server profile for Exchange Online](connect-exchange-online.md#create-an-email-server-profile-for-exchange-online)
 
@@ -56,9 +59,7 @@ To allow your app to have access to Exchange Online, you need to grant **Office 
    > ![Screenshot of Request API permissions.](media/type-of-permission.png "Select a permission type")
 
    > [!NOTE]
-   > If it doesn't align with your business requirements to have an app with full access on all mailboxes, the Exchange Online admin can scope the mailboxes that the app can access by using Application Access Policy or configuring the Application Impersonation role on Exchange. More information:
-   > - [Scoping application permissions to specific Exchange Online mailboxes](/graph/auth-limit-mailbox-access)
-   > - [Configure impersonation](/exchange/client-developer/exchange-web-services/how-to-configure-impersonation)
+   > If it doesn't align with your business requirements to have an app with full access on all mailboxes, the Exchange Online admin can scope the mailboxes that the app can access by using an Application Access Policy. Learn more in [Scoping application permissions to specific Exchange Online mailboxes](/graph/auth-limit-mailbox-access).
 
 4. On the **Configured permissions** screen, select **Grant admin consent for *tenant name***.
 

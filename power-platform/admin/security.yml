@@ -24,7 +24,7 @@ landingContent:
        - linkListType: overview
          links:
           - text: Security in Microsoft Power Platform
-            url: ./security/overview.md
+            url: ./security/security-overview.md
           - text: Authenticating to Power Platform services
             url: ./security/authenticate-services.md
           - text: Securely access customer data
@@ -113,12 +113,10 @@ landingContent:
             url: field-level-security.md
       - linkListType: how-to-guide
         links:
-          - text: Set permissions for a field
-            url: set-up-security-permissions-field.md
-          - text: Enable or disable field security
-            url: enable-disable-security-field.md
-          - text: Add teams or users to field security
-            url: add-teams-users-field-security-profile.md
+          - text: Create and manage masking rules (preview)
+            url: create-manage-masking-rules.md
+          - text: Column-level security example
+            url: column-level-security-example.md
 
   # Card
   - title: Encryption

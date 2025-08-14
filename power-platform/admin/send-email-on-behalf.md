@@ -2,7 +2,7 @@
 title: "Send email on another user's behalf  | MicrosoftDocs"
 description: Set up users to send an outgoing email by updating the From field to another user or queue.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 04/27/2021
 author: sericks007
 ms.subservice: admin
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Send email on behalf of another user 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Dynamics 365 users can send an outgoing email on behalf of another user by updating the **From** field to another user or queue.
 

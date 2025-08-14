@@ -3,7 +3,7 @@ title: Dynamics 365 service description
 description: Learn about features that are specific to Microsoft Dynamics 365 US Government as public sector customers deploy into government community cloud (GCC). 
 author: carrema
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/03/2024
 ms.subservice: admin
 ms.author: macarrer
@@ -18,6 +18,8 @@ ms.contributors:
 ---
 
 # Dynamics 365 US Government  
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government tables in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are represented by eight discrete functions: 
 
@@ -37,7 +39,7 @@ In response to the unique and evolving requirements of the United States public 
 Microsoft strives to maintain functional parity between our commercially available services and those enabled though our U.S. Government clouds, specifically:
 
 - US Government Community Cloud (GCC)
-- US GC High
+- US GCC High
 - US Department of Defense (US DoD)
 
 There are exceptions to the principle of maintaining product functional parity within the U.S. Government clouds. These exceptions are highlighted through the [Product and Feature Availability](https://aka.ms/bapfunctionalparity) document, and intended to help customers understand and plan for successful implementations of their business application solutions. Microsoft continues to evaluate these services and capabilities for inclusion and updates in future releases.  Check back on a monthly basis for important updates and revisions. Refer to the [Global Geographic Availability](https://dynamics.microsoft.com/geographic-availability/) tool to see where the Dynamics 365 Apps and Offers are available throughout the world, including approximate availability timelines. 

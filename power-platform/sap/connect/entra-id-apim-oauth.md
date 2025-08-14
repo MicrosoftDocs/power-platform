@@ -19,19 +19,19 @@ ms.service: power-platform
 ms.subservice: sap
 ms.custom: ignite-2024
 ms.topic: how-to
-ms.date: 11/01/2024
+ms.date: 12/09/2024
 # Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID, Azure API Management, and SAP for SSO from SAP OData connector so my users can sign
 ---
 
 # Set up Microsoft Entra ID, Azure API Management, and SAP for SSO from SAP OData connector
 
-You can set up the Power Platform SAP OData connector to use Microsoft Entra ID credentials for single sign-on (SSO) to SAP. Your users can access SAP data in Power Platform solutions without having to sign in multiple times to multiple services while honoring their authorizations and assigned roles in SAP.
+You can set up the SAP OData connector for Power Platform to use Microsoft Entra ID credentials for single sign-on (SSO) to SAP. This allows your users to access SAP data in Power Platform solutions without having to sign in multiple times to multiple services while honoring their authorizations and assigned roles in SAP.
 
 This article walks you through the process, including setting up a trust between SAP and Microsoft Entra ID and configuring Azure API Management to convert the Microsoft Entra ID OAuth token to a SAML token that's used to make OData calls to SAP.
 
 :::image type="content" source="media/entra-id-apim-oauth/traffic_flow.jpg" alt-text="Solution diagram that shows the traffic flow from Power Platform and Copilot to SAP through Azure API Management." lightbox="media/entra-id-apim-oauth/traffic_flow.jpg":::
 
-Gain additional insights and context into the setup process from this [blog post](https://community.powerplatform.com/blogs/post/?postid=c6a609ab-3556-ef11-a317-6045bda95bf0).
+You can also gain additional insights and context into the setup process in the blog post, [Hurray! SAP OData connector now supports OAuth2 and SAP Principal Propagation](https://community.powerplatform.com/blogs/post/?postid=c6a609ab-3556-ef11-a317-6045bda95bf0).
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ To set up a trust relationship between SAP and Microsoft Entra ID using SAML 2.0
 
 Perform these steps as an SAP Basis admin in SAP GUI.
 
-1. In SAP GUI, run the transaction *SAML2* to open the relevant SAP-client dependent wizard and choose the *Local Provider* tab.
+1. In SAP GUI, run the transaction **SAML2** to open the relevant SAP-client dependent wizard and choose the **Local Provider** tab.
 
 1. Select **Metadata**, and then select **Download Metadata**. You'll upload the SAP SAML metadata to Microsoft Entra ID in a later step.
 
@@ -91,13 +91,13 @@ Perform these steps as a Microsoft Entra ID admin in the [Azure portal](https://
 
 1. Come back to this article once the OAuth2 client is created in SAP.
 
-See [SAP's official documentation](https://help.sap.com/docs/SAP_NETWEAVER_750/3c4e8fc004cb4401a4fdd737f02ac2b9/7e80a762e8b4441fb53b1f6d9bde4f4d.html) for additional details.
+See [SAP's official documentation about SAP NETWEAVER](https://help.sap.com/docs/SAP_NETWEAVER_750/3c4e8fc004cb4401a4fdd737f02ac2b9/7e80a762e8b4441fb53b1f6d9bde4f4d.html) for additional details. Note, you must be an SAP administrator to access the information.
 
 ## Create a Microsoft Entra ID application that represents the Azure API Management resource
 
 Set up a Microsoft Entra ID application that grants access to the Microsoft Power Platform SAP OData connector. This application allows an Azure API Management resource to convert OAuth tokens to SAML ones.
 
-Perform these steps as a Microsoft Entra ID admin in the [Azure portal](https://portal.azure.com).
+Take these steps as a Microsoft Entra ID admin in the [Azure portal](https://portal.azure.com).
 
 1. Select **Microsoft Entra ID** > **App registrations** > **New Registration**.
 
@@ -107,7 +107,7 @@ Perform these steps as a Microsoft Entra ID admin in the [Azure portal](https://
 
 1. Enter a **Description**, and then select **Add**.
 
-1. Copy and save this secret somewhere secure.
+1. Copy and save this *secret* somewhere secure.
 
 1. Select **API Permissions** > **Add a permission**.
 
@@ -125,15 +125,15 @@ Perform these steps as a Microsoft Entra ID admin in the [Azure portal](https://
 
 1. Select **Expose an API**.
 
-1. Next to **Application ID URI**, select **Add**.
+1. Next to *Application ID URI*, select **Add**.
 
-1. Accept the default value and select **Save**.
+1. Accept the **default value** and select **Save**.
 
 1. Select **Add a scope**.
 
 1. Set **Scope name** to *user_impersonation*.
 
-1. Set **Who can consent?** to **Admins and users**.
+1. Set *Who can consent?* to **Admins and users**.
 
 1. Select **Add a scope**.
 
@@ -189,7 +189,7 @@ Import the SAP OData XML metadata into your Azure API Management instance. Then,
 
 1. Open your Azure API Management instance and follow [the steps](/azure/api-management/sap-api?tabs=odata) to create an SAP OData API.
 
-1. Under **APIs**, select **Named values**.
+1. Under *APIs*, select **Named values**.
 
 1. Add the following key/value pairs:
 
@@ -222,9 +222,9 @@ Use Azure API Management policies to convert a Microsoft Entra ID issued token t
 
 1. Select **All operations**.
 
-1. Under **Inbound processing**, select **Policies </>**.
+1. Under *Inbound processing*, select **Policies </>**.
 
-1. Delete the existing policy and paste the policy that you copied.
+1. Delete the **existing policy** and paste the **policy that you copied**.
 
 1. Select **Save**.
 
@@ -234,5 +234,4 @@ Use Azure API Management policies to convert a Microsoft Entra ID issued token t
 - [SAP OData connector now supports OAuth2 and SAP Principal Propagation](https://community.powerplatform.com/blogs/post/?postid=c6a609ab-3556-ef11-a317-6045bda95bf0) | Power Automate community blog
 - [Azure API Management policy for SAP SuccessFactors](https://github.com/Azure/api-management-policy-snippets/blob/master/examples/Request%20OAuth2%20access%20token%20from%20SuccessFactors%20using%20AAD%20JWT%20token.xml) | GitHub
 - [SAP OData connector for SAP SuccessFactors](https://community.sap.com/t5/technology-blogs-by-members/perform-sap-principal-propagation-with-microsoft-entra-id-for-sap/ba-p/13860532) | SAP community blog
-- [SAP Integration Suite policy for SAP SuccessFactors](https://api.sap.com/policytemplate/SuccessFactors_Principal_Propagation_via_Entra_Id) | SAP Business Accelerator Hub
-- [SAP Integration Suite policy for SAP NetWeaver](https://api.sap.com/policytemplate/Principal_Propagation_via_Entra_Id) | SAP Business Accelerator Hub
+- The SAP Business Accelerator Hub also offers content related to the SAP integration suite policy for SuccessFactors and NetWeaver. You must have an SAP account to access this content.

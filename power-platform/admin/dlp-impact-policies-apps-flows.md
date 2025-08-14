@@ -2,7 +2,7 @@
 title: Impact of data policies on apps and flows 
 description: About the impact of data policies on apps and flows.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/03/2024
 ms.subservice: admin
 author: mikferland-msft
@@ -18,6 +18,8 @@ search.audienceType:
 ---
 
 # Impact of data policies on apps and flows
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 If you've disallowed certain connectors to be used together in an environment by classifying them as **Business** or **Non-Business**, or marked certain connectors as **Blocked** by using tenant-level or environment-level data loss prevention (DLP) policies, these restrictions can negatively affect makers and users of Power Apps and Power Automate. The restrictions are enforced at both design time and at runtime.
 

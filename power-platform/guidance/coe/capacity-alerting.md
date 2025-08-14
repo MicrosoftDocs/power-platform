@@ -3,13 +3,14 @@ title: "Environment capacity management & alerting | MicrosoftDocs"
 description: "This article describes a sample process for managing environment capacity and receiving alerts for overages."
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/18/2020
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Environment capacity management & alerting
 

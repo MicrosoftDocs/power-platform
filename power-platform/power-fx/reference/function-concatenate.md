@@ -1,4 +1,4 @@
----
+﻿---
 title: Concat and Concatenate functions
 description: Reference information including syntax and examples for the Concat and Concatenate functions.
 author: gregli-msft
@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 6/10/2024
+ms.date: 06/20/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Concat and Concatenate functions
+[!INCLUDE[function-concatenate-applies-to](includes/function-concatenate-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Concatenates individual strings of text and strings in [tables](/power-apps/maker/canvas-apps/working-with-tables).
 
@@ -93,7 +94,7 @@ For these examples, set the **Text** property of a label to a formula from the f
 
 | Formula | Description | Result |
 | --- | --- | --- |
-| **Concat( Products, Name, ", " )** | Evaluates the expression **Name** for each record of **Products** and concatenates the results together into a single text string separated by **", "**. | "'Violin',&nbsp;'Cello',&nbsp;'Trumpet'" |
+| **Concat( Products, Name, ", " )** | Evaluates the expression **Name** for each record of **Products** and concatenates the results together into a single text string separated by **", "**. | "Violin,&nbsp;Cello,&nbsp;Trumpet" |
 | **Concat( Products, "'" & Name & "'", ", " )** | Evaluates the expression **"'" & Name & "'"** for each record of **Products** and concatenates the results together into a single text string separated by **", "**. | "'Violin',&nbsp;'Cello',&nbsp;'Trumpet'" |
 | **Concat( Filter(&nbsp;Products,&nbsp;Type&nbsp;=&nbsp;"String"&nbsp;), Name, ", " )** | Evaluates the formula **Name** for each record of **Products** that satisfies the filter **Type = "String"**, and concatenates the results into a single text string separated by **", "**. | "Violin,&nbsp;Cello" |
 
@@ -109,3 +110,140 @@ For these examples, add a blank, vertical gallery, set its **Items** property to
 | **Split( Concat(&nbsp;Products,&nbsp;Name,&nbsp;",&nbsp;"&nbsp;), ", " )** | Splits the text string with the separator **", "**. | A single-column table with a `Value` column containing the following values: "Violin", "Cello", "Trumpet" |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

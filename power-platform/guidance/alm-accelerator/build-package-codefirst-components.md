@@ -4,9 +4,9 @@ description: Learn how to use the ALM Accelerator for Power Platform to source c
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/10/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 author: rajeevpentyala
-ms.author: rajeevpe
+ms.author: grarchib
 ms.reviewer: sericks
 ms.custom: bap-template
 ---

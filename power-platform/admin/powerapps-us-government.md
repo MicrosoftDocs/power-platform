@@ -3,16 +3,21 @@ title: Power Apps US Government | Microsoft Docs
 description: Provides information about Power Apps US Government service description, plans, and limitations.
 author: carrema
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 09/25/2023
+ms.topic: how-to
+ms.date: 01/22/2025
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.contributors:
+ - heortaol
+ - nyarbrough
 ---
 
 # Power Apps US Government
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Apps US Government, which consists of several plans for US government organizations. This section provides an overview of features that are specific to Power Apps US Government. It is recommended that you read this supplementary section alongside the Power Apps [documentation](/powerapps/powerapps-overview), which covers information about the general Power Apps service description. For brevity, this service is commonly referred to as Power Apps Government Community Cloud (GCC), or Power Apps Government Community Cloud – High (GCC High), or Power Apps Department of Defense (DoD).
 
@@ -155,14 +160,15 @@ For those customers that implement network restrictions, ensure access to the fo
 *.azure.us  
 *.azureedge.net  
 *.azureedge.us  
-*.usgovcloudapi.net  
+*.azurefd.net  
+*.usgovcloudapi.net   
 *.microsoftonline.com  
 *.microsoft.com  
 *.windows.net  
 *.crm9.dynamics.com  
 *.dynamics365portals.us
 
-Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to environments that users and administrators may create within your tenants well as other Azure services leveraged by the platform:
+Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/details.aspx?id=57063) to enable access to environments that users and administrators may create within your tenants well as other Azure services leveraged by the platform:
 
 - GCC and GCC High: (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 - DoD:  Focus on USDoD East and USDoD Central 
@@ -176,6 +182,7 @@ Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confi
 *.azure.us  
 *.azureedge.net  
 *.azureedge.us  
+*.azurefd.net  
 *.usgovcloudapi.net  
 *.microsoftonline.us  
 *.microsoftdynamics.us (GCC High)  
@@ -185,7 +192,7 @@ Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confi
 *.crm.appsplatform.us (DoD)  
 *.appsplatformportals.us (DoD) 
 
-Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to environments that users and administrators may create within your tenant as well as other Azure services leveraged by the platform:
+Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/details.aspx?id=57063) to enable access to environments that users and administrators may create within your tenant as well as other Azure services leveraged by the platform:
 
 - GCC and GCC High: (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 - DoD:  Focus on USDoD East and USDoD Central 
@@ -203,7 +210,7 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to o
 -	US DoD East
 -	US DoD Central
 
-Refer to the Azure IP Ranges and [Service Tags – US Government Cloud document](https://www.microsoft.com/download/confirmation.aspx?id=57063), focusing attention on AzureCloud.usgovtexas, AzureCloud.usgovvirginia, and/or US DoD East, and US DoD Central as noted above. Also note that these are the IP ranges required in order for your end users to have access to the service URLs.
+Refer to the Azure IP Ranges and [Service Tags – US Government Cloud document](https://www.microsoft.com/download/details.aspx?id=57063), focusing attention on AzureCloud.usgovtexas, AzureCloud.usgovvirginia, and/or US DoD East, and US DoD Central as noted above. Also note that these are the IP ranges required in order for your end users to have access to the service URLs.
 
 ## Configure mobile clients
 

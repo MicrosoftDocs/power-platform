@@ -3,9 +3,9 @@ title: "Rule set for PowerApps Checker (mspcat_rulesetforpowerappschecker) table
 description: "Includes schema information and supported messages for the Rule set for PowerApps Checker (mspcat_rulesetforpowerappschecker) table/entity with Power Platform Catalog Manager."
 ms.date: 11/05/2024
 ms.service: power-platform
-ms.topic: reference
-author: JimDaly
-ms.author: jdaly
+ms.topic: generated-reference
+author: isaacwinoto
+ms.author: isaacwinoto
 search.audienceType: 
   - developer
 ---

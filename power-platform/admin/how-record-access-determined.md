@@ -2,13 +2,15 @@
 title: How access to a record is determined | Microsoft Docs
 description: How access to a record is determined 
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 03/02/2023
-author: sericks007
+ms.topic: concept-article
+ms.date: 07/15/2025
+author: paulliew
 ms.subservice: admin
-ms.author: sericks
+ms.author: paulliew
 ms.reviewer: sericks
-ms.custom: "admin-security"
+ms.custom: 
+  - admin-security
+  - NewPPAC
 search.audienceType: 
   - admin
 ---
@@ -34,16 +36,16 @@ For example, for Account, the privileges are:
 |**Assign**|Required to give ownership of a record to another user. Which records can be assigned depends on the access level of the permission defined in your security role.|  
 |**Share**|Required to give access to a record to another user while keeping your own access. Which records can be shared depends on the access level of the permission defined in your security role.|  
 
-In order to perform an action on a record, the user needs to have either the required privilege assigned through a role directly, or needs to be member of a team that has a security role with the privilege assigned. If this is not the case, then the user will get an access denied error stating that they do not hold the necessary privilege to perform the action.
+In order to perform an action on a record, the user needs to have either the required privilege assigned through a role directly, or needs to be member of a team that has a security role with the privilege assigned. If not, then the user gets an access denied error stating that they don't hold the necessary privilege to perform the action.
  
-For example, in a scenario where a user wants to create an Account record, it is necessary that the user has the Create privilege either through a security role assigned to them or to a team they belong to.
+For example, in a scenario where a user wants to create an Account record, it's necessary that the user has the Create privilege either through a security role assigned to them or to a team they belong to.
  
 > [!NOTE]
-> When creating or editing a security role, a privilege is granted to that role with a given access level. The access level is not taken into account in the privilege check, this is done in the access check when the privilege check is passed.
+> When creating or editing a security role, a privilege is granted to that role with a given access level. The access level isn't taken into account in the privilege check, this is done in the access check when the privilege check is passed.
 
 ## Access check
  
-If the privilege check is passed, then the access check takes place. The access check verifies that the user has the required rights to perform the action they are trying to do.
+If the privilege check is passed, then the access check takes place. The access check verifies that the user has the required rights to perform the action they're trying to do.
 
 There are four different ways in which a user can have access rights to perform an action in a particular record. These are:
 - Ownership
@@ -52,7 +54,7 @@ There are four different ways in which a user can have access rights to perform 
 - Hierarchy access
 
 > [!IMPORTANT]
-> All of these are checked during the access check so it is possible that the user has access to perform the required action on the record in more than one way.
+> All of these are checked during the access check so it's possible that the user has access to perform the required action on the record in more than one way.
 
 ### Ownership
  
@@ -63,7 +65,7 @@ A user can have access to a particular record because either they own the record
 
 ### Role access
  
-Users can have access to perform an action on a record because of the security roles they hold. In this case, the access level of the privilege a role has is taken into account. There are four major scenarios that correspond to the different access levels that are not User, which is covered in the ownership case.
+Users can have access to perform an action on a record because of the security roles they hold. In this case, the access level of the privilege a role has is taken into account. There are four major scenarios that correspond to the different access levels that aren't User, which is covered in the ownership case.
 
 | &nbsp;  | &nbsp;  |
 |---------|---------|
@@ -75,7 +77,7 @@ Users can have access to perform an action on a record because of the security r
 |**The record belongs to a business unit that is not a descendant of the user's business unit**  |  In this case, the user must either have or belong to a team that has a role assigned with Organization-level access privilege.       |
 
 > [!NOTE]
-> <sup>*</sup>For roles assigned to teams with Basic-level access user privilege, the role's inheritance configuration also comes into play. If the team has the **Member's privilege inheritance** set to **Team privileges only**, then the user will only be able to make use of that privilege for records owned by the team. For more information, go to [Team member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance).
+> <sup>*</sup>For roles assigned to teams with Basic-level access user privilege, the role's inheritance configuration also comes into play. If the team has the **Member's privilege inheritance** set to **Team privileges only**, then the user will only be able to make use of that privilege for records owned by the team. For more information, go to [Security roles and privileges](security-roles-privileges.md).
 > 
 > :::image type="content" source="media/member-privilege-inheritance.png" alt-text="Member's privilege inheritance":::  
 
@@ -113,7 +115,7 @@ There are two environment database settings to configure to use the **Who has ac
 - **IsAccessCheckerAllUsersEnabled**: This allows the admin to see who has access to the row.
 - **IsAccessCheckerNonAdminAllUsersEnabled**: This allows the admin, owner of the record, and users who have access to the row to see who has access.
 
-### See also
+### Related content
 [Security roles and privileges](security-roles-privileges.md) <br />
 [Create users](create-users.md) <br />
 [Create or edit a security role to manage access](create-edit-security-role.md) <br />

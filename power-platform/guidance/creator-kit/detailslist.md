@@ -3,9 +3,9 @@ title: DetailsList control reference | Creator Kit
 description: Learn about the details and properties of the DetailsList control in the Creator Kit.
 author: denise-msft
 ms.component: pa-maker
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/01/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
@@ -303,7 +303,7 @@ Using a cell type of `image` or `clickableimage`, you can configure inline image
 
 The image content can be defined by prefixing with:
 
-- `https:`  A link to an external image. for example, https://via.placeholder.com/100x70
+- `https:`  A link to an external image. for example, `https://via.placeholder.com/100x70`
 - `icon:` Using one of the [Fluent UI icons](https://developer.microsoft.com/en-us/fluentui#/styles/web/icons) for example, `icon:SkypeCircleCheck`
 - `data:` Using inline svg image data: for example, `data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%2020...`
 

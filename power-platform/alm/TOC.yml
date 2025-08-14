@@ -36,7 +36,7 @@
           items:
             - name: Organize solutions
               href: organize-solutions.md
-            - name: Use segmented solutions
+            - name: Use table segmentation in solutions
               href: segmented-solutions-alm.md
     - name: Tools and apps used
       href: tools-apps-used-alm.md
@@ -73,15 +73,19 @@
       items:
         - name: Manage solutions using PowerShell
           href: powershell-api.md
-        - name: Source control integration (preview)
+        - name: Source control integration 
           href: git-integration/overview.md
           items:
-            - name: Dataverse Git integration setup
+            - name: Connect to Git
               href: git-integration/connecting-to-git.md
             - name: Source control operations
               href: git-integration/source-control-operations.md   
+            - name: Source control canvas apps
+              href: git-integration/canvas-apps-git-integration.md
             - name: Frequently asked questions
               href: git-integration/faqs.md
+        - name: View solution deployments in deployment hub (preview)
+          href: admin-deployment-hub.md
         - name: Deploy solutions using pipelines
           items:
             - name: What are pipelines?
@@ -105,6 +109,8 @@
                   href: extend-pipelines-github-export.md
             - name: Run pipelines
               href: run-pipeline.md
+            - name: Set a default pipeline
+              href: default-deployment-pipeline-rule-for-environment-groups.md
             - name: Enable cross-geo solution deployments
               href: enable-cross-geo-solution-deployments.md
             - name: Import solutions from a pipelines host

@@ -2,7 +2,7 @@
 title: "Microsoft Power Platform data loss prevention (DLP) SDK"
 description: "Learn about the capabilities of the Microsoft Power Platform data loss prevention (DLP) software development kit (SDK) and run a sample in PowerShell."
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/08/2021
 author: sericks007
 ms.subservice: admin
@@ -13,6 +13,8 @@ search.audienceType:
   - admin
 ---
 # Power Platform data loss prevention (DLP) SDK 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 This topic introduces the capabilities of the DLP SDK and shows you how DLP can help you manage your tenant and environment policy with experiences ranging from creating, reading, updating, to removing DLP policies. More information : [Data loss prevention policies](wp-data-loss-prevention.md)
 

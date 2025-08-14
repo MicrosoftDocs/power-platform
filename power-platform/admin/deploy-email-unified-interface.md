@@ -3,7 +3,7 @@ title: "Enable accessible email flow | MicrosoftDocs"
 description: Enable accessible email flow
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/04/2020
 ms.subservice: admin
 ms.author: sericks
@@ -11,6 +11,8 @@ search.audienceType:
   - admin
 ---
 # Enable accessible email flow
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 <!-- legacy procedure -->
 

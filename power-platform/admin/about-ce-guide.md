@@ -4,13 +4,15 @@ description: Administer customer engagement apps
 author: sericks007
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 09/03/2020
+ms.date: 02/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
 ---
 # Administer customer engagement apps in Dynamics 365 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Administrators can use the Microsoft Power Platform admin center (https://admin.powerplatform.microsoft.com) to manage certain settings for their environments (earlier called instances) that also have customer engagement apps installed (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 
@@ -25,9 +27,6 @@ For example, many of these admin settings in the legacy web client...
 ![Environment settings.](media/environment-settings-mini.png)
 
 Use links on this page to manage organization-wide settings. App-specific settings will remain in the respective apps, and will be accessed through the respective app settings. More information about managing environment settings in the Power Platform admin center: [Manage environment settings](admin-settings.md) 
-
-### See also
-[Working with the admin portals](wp-work-with-admin-portals.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

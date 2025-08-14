@@ -24,7 +24,7 @@ landingContent:
     linkLists:
        - linkListType: overview
          links:
-          - text: Overview
+          - text: Overview of the Power Platform admin center
             url: admin-documentation.md
           - text: Power Platform licensing
             url: pricing-billing-skus.md
@@ -32,7 +32,7 @@ landingContent:
             url: capacity-storage.md
           - text: Sign in to your apps
             url: sign-in-office-365-apps.md
-          - text: Use the new Power Platform admin center (preview)
+          - text: Use the new Power Platform admin center
             url: new-admin-center.md
        
 
@@ -78,8 +78,8 @@ landingContent:
             url: get-help-support.md
           - text: Check online service health
             url: check-online-service-health.md
-          - text: Common user access issues
-            url: troubleshooting-user-needs-read-write-access-organization.md      
+          - text: View troubleshooting content
+            url: /troubleshoot/power-platform/      
 
 
   # Card

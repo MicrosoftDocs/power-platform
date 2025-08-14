@@ -1,20 +1,23 @@
 ---
-title: "Tutorial: Create a daily capacity report (preview) | Microsoft Docs"
-description: This tutorial demonstrates how to use the Power Platform API (preview) to create a daily capacity report.
+title: "Tutorial: Create a daily capacity report | Microsoft Docs"
+description: This tutorial demonstrates how to use the Power Platform API to create a daily capacity report.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/22/2021
+ms.date: 03/03/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
-# Tutorial: Create a daily capacity report (preview)
+# Tutorial: Create a daily capacity report
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The Power Platform API can be used to extract various details and metadata from your Microsoft Power Platform environments  with or without a Microsoft Dataverse database. The API is used internally by various clients available today such as PowerShell.
 
@@ -26,9 +29,6 @@ In this tutorial, you learn how to:
 - Save the consumption data into a table for display.
 
 As an example of this scenario, a customer is looking to get a handle on their capacity consumption so that they can better understand the allocation of their total tenant capacity by department. This helps the customer to perform some internal cost accounting functions and charge backs based on how much each department is consuming of the total available capacity. This customer is using the environment Description to call out the department that owns each environment.  
-
-> [!IMPORTANT]
-> The Power Platform API is in preview. The host name and data contracts are subject to change by the time the endpoints become generally available.
 
 ## Connect and variable setup
 

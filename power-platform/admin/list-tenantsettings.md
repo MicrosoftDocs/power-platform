@@ -5,12 +5,14 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 11/19/2024
+ms.date: 01/10/2025
+ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
 contributors:
+- DBEKI 
 - arjunmayur 
 - bibekTimalsina948
 - dannylevymsft
@@ -20,6 +22,8 @@ ms.collection: bap-ai-copilot
 ---
 
 # List tenant settings (preview)
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -103,7 +107,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |disableSurveyFeedback | Boolean | Ability to disable all NPS survey feedback prompts in Power Platform. Default value is false.|
 |disableTrialEnvironmentCreationByNonAdminusers | Boolean | Restrict all trial environments to be created by tenant admins, Power Platform admins, or Dynamics 365 service admins. Default value is false.|
 |disableCapacityAllocationByEnvironmentAdmins | Boolean | Ability to disable capacity allocation by environment administrators. Default value is false.|
-|disableSupportTicketsVisibleByAllUsers | Boolean | Allows users, who already have access to the **Help + Support** page in Power Platform admin center, to see support requests created by other users in the tenant. Default value is True, which means this feature is turned off by default.|
+|disableSupportTicketsVisibleByAllUsers | Boolean | Allows users, who already have access to the **Support** page in Power Platform admin center, to see support requests created by other users in the tenant. Default value is True, which means this feature is turned off by default.|
 |powerPlatform.search.disableDocsSearch | Boolean | When this setting is true, users in the environment can see a message that indicates Microsoft Learn and documentation search categories have been turned off by the administrator. Default value is false.|
 |powerPlatform.search.disableCommunitySearch | Boolean | When this setting is true, users in the environment can see a message that indicates community and blog search categories have been turned off by the administrator. Default value is false.|
 |powerPlatform.search.disableBingVideoSearch | Boolean | When this setting is true, users in the environment can see a message that indicates video search categories have been turned off by the administrator. Default value is false.|
@@ -119,6 +123,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams. Default value is 10000 but can be increased or decreased, as required.|
 |powerPlatform.powerAutomate.disableCopilot | Boolean | Disables cloud flows copilot in Power Automate.<br><br>It doesn't control the ability to add AI-related connectors or actions in the flow designer. For example, the Skills connector or AI Builder creates text with a GPT action. Default value is false.|
 |powerPlatform.powerAutomate.disableCopilotWithBing | Boolean | Disables the copilot-enhanced help feature within Power Automate to enhance answers on product documentation through Bing Search. Default value is false.|
+|powerPlatform.powerAutomate.disableFlowRunResubmission | Boolean | When this setting is **True**, Power Automate cloud flows initiated using instant triggers can't utilize the flow run resubmission function to restart a previous flow run.  Default value is **True**.  Set the value to **False** to allow users to resubmit previous flow runs that were started with instant triggers.
 |powerPlatform.environments.preferredEnvironmentLocation | String | Explicitly set the default location (Geo) for environments that are created without a location (Geo) specified. This includes Teams environments.|
 |powerPlatform.environments.disablePreferredDataLocationForTeamsEnvironment | Boolean | Ignore the Teams group-preferred data location when provisioning a Teams environment. Default value is false.|
 |powerPlatform.governance.disableAdminDigest | Boolean | Disables the weekly admin digest email for Managed Environments. Default value is false. |

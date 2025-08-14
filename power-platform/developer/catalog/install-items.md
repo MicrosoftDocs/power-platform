@@ -1,17 +1,16 @@
 ---
 title: "Install items from the catalog in Power Platform using code"
 description: "Learn how to install items to your organization's catalog of templates and components using code."
-author: MattB-msft
-ms.author: mbarbour
+author: isaacwinoto
+ms.author: isaacwinoto
 ms.subservice: developer
 ms.date: 11/05/2024
 ms.reviewer: jdaly
-ms.topic: article
+ms.topic: install-set-up-deploy
 search.audienceType: 
   - developer
 contributors:
- - JimDaly
- - singhguru2001us  
+ - skotapalle
 ---
 # Install items from the catalog in Power Platform using code
 

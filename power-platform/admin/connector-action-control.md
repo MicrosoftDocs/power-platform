@@ -1,9 +1,9 @@
 ---
-title: "Connector action control | MicrosoftDocs"
+title: Connector action control
 description: You can use connector action control to allow or block individual actions within a given connector.
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 1/29/2024
+ms.topic: concept-article
+ms.date: 02/05/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -23,7 +23,14 @@ search.app:
 
 # Connector action control
 
-You can use connector action control to allow or block individual actions within a given connector.
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
+You can use connector action control to allow or block individual actions or triggers within a given connector.
+
+> [!IMPORTANT]
+> In February 2025, support for triggers is added to the connector action control. This can be administered through PowerShell. Support for triggers is planned for the Power Platform admin center in the future, as well.
+>
+> Making changes to policies through the Power Platform admin center doesn't remove triggers that were added via PowerShell.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
 1. On the left navigation pane, select **Policies** > **Data policies**.
@@ -46,6 +53,9 @@ You can use connector action control to allow or block individual actions within
 
 
 ## Known limitations
+
+### Triggers are only supported in PowerShell
+Support for allowing and blocking individual triggers is currently available only via PowerShell. Support is planned for the Power Platform admin center in the future. For an example of how to allow triggers that're already in use by Power Automate flows, see [Identify blocked Power Automate flows](identify-blocked-flows-data-policies.md).
 
 ### Admins need to have maker access to Power Apps
 

@@ -4,7 +4,7 @@ description: Walkthrough of how to respond to DSR requests for Microsoft Dataver
 author: sericks007
 ms.reviewer: sericks
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/26/2024
 ms.subservice: admin
 ms.author: paulliew
@@ -13,6 +13,8 @@ search.audienceType:
 ---
 
 # Responding to Data Subject Rights (DSR) requests for Microsoft Dataverse customer data
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 [!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 

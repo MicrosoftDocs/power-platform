@@ -2,12 +2,14 @@
 title: "Try Power Platform apps for free | MicrosoftDocs"
 description: Try Power Platform apps (Power Apps, Power Automate, Power BI, Power Pages, and Microsoft Copilot Studio) for free before you buy  
 author: sericks007
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/07/2024
 ms.author: sericks
 
 ---
 # Try Power Platform apps for free
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You can explore all Power Platform apps for free by signing up for trial licenses.
 

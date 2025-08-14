@@ -3,16 +3,17 @@ title: Epiq streamlines employee onboarding with Power Automate, Microsoft Datav
 description: Learn from legal and business services firm Epiq how to streamline onboarding with Power Automate, Dataverse, and AI Builder.
 author: shellyhaverkamp
 ms.author: sashi
-ms.topic: how-to
+ms.topic: overview
 ms.subservice: guidance
 ms.date: 08/05/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Epiq streamlines employee onboarding with Power Automate, Microsoft Dataverse, and AI Builder
 
 In this article, you learn from a real-world example how Epiq, a global legal and compliance firm, built an employee onboarding solution with Power Automate, Microsoft Dataverse, and AI Builder.
 
-Before building its onboarding solution with Power Platform tools, [Epiq](https://www.epiqglobal.com/) faced challenges with inconsistent and manual onboarding processes across its 6,000-person workforce in 18 countries. The COVID-19 pandemic highlighted the need for a more efficient solution. Colton Coan, Senior Manager of Rapid Development, spearheaded the implementation of the company's Launchpad onboarding solution using Power Automate and Dataverse.
+Before building its onboarding solution with Power Platform tools, [Epiq](https://www.epiqglobal.com/) faced challenges with inconsistent and manual onboarding processes across its 6,000-person workforce in 18 countries/regions. The COVID-19 pandemic highlighted the need for a more efficient solution. Colton Coan, Senior Manager of Rapid Development, spearheaded the implementation of the company's Launchpad onboarding solution using Power Automate and Dataverse.
 
 The Launchpad initiative streamlined the onboarding process, integrating seamlessly with Epiq’s existing systems and eliminating manual tasks. The solution enabled rapid scaling for short-term projects, significantly reducing onboarding time and costs. As a result, new hires gained quicker access to necessary tools, and IT staff could focus on higher-value tasks.
 

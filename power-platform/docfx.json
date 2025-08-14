@@ -65,13 +65,17 @@
       "ms.service": {
         "**.*": "power-platform"
       },
+      "ms.date": {
+        "developer/cli/reference/**.md": "3/26/2025"
+      },
       "ms.subservice": {
         "power-fx/**/*.md": "power-fx",
         "guidance/**/*.md": "guidance",
         "alm/**/*.md": "alm",
         "admin/**/*.md": "admin",
         "developer/**/*.md": "developer",
-        "well-architected/**/*.md": "well-architected"
+        "well-architected/**/*.md": "well-architected",
+        "test-engine/**/*.md": "developer"
       },
       "search.app": {
         "power-fx/**/*.md": [ "powerapps-docs" ],

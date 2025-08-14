@@ -3,7 +3,7 @@ title: "Telemetry events for Microsoft Dataverse | Microsoft Docs"
 description: About telemetry events for Microsoft Dataverse 
 services: powerapps
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/12/2022
 author: Zeffin
 ms.subservice: admin
@@ -11,8 +11,11 @@ ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Telemetry events for Microsoft Dataverse
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The data stream currently provides performance data related to Dataverse API incoming calls, Dataverse plug-in execution calls, and Dataverse SDK calls. It also provides data for failures in plug-in and Dataverse SDK operations.
 

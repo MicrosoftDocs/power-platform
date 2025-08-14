@@ -37,7 +37,7 @@ pac auth list
 
 Running the `pac auth list` command returns all authentication profiles:
 
-```powershell
+```output
 Index Active Kind      Name Friendly Name                   Url                                 User                                     Cloud  Type
 [1]   *      UNIVERSAL      Personal Productivity (Default) https://x.crm.dynamics.com/         user@contoso.onmicrosoft.com             Public User
 ```

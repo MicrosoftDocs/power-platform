@@ -3,7 +3,7 @@ title: AsyncOperationBase table storage
 description: Learn about managing AsyncOperationBase table storage.
 author: ceian
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/14/2024
 ms.subservice: admin
 ms.author: ceian
@@ -16,6 +16,8 @@ search.audienceType:
 ---
 
 # AsyncOperationBase table
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The **AsyncOperationBase** table is used to store system jobs. System jobs represent asynchronous extensions, such as:
 

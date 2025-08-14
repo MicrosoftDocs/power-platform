@@ -9,15 +9,18 @@ contributors:
   - ShawnNandiMSFT 
   - PriyaKodukula 
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 10/11/2024
+ms.topic: concept-article
+ms.date: 05/29/2025
 ms.subservice: admin
 ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Requests limits and allocations
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Power Platform requests limits exist to help ensure service levels, availability, and quality of the platform. There are limits to the number of requests users can make each day across Power Apps, Power Automate, Microsoft Copilot Studio, and Dynamics 365 applications.
 

@@ -4,7 +4,7 @@ description: "Learn about the security roles and permissions required for docume
 author: Mattp123
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/30/2017
 ms.subservice: admin
 ms.author: matp
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Permissions required for document management tasks
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The following table shows the default security roles or other permissions that are needed to perform each document management with [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] task.  
   

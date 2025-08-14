@@ -8,11 +8,13 @@ ms.reviewer: sericks
 ms.custom:
   - "admin-security"
   - bap-template
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/21/2023
 ---
 
 # View information about plug-in steps
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 _Plug-ins_ contain code that enables server-side customization of Microsoft Dataverse data operations. Each plug-in is registered to execute at a specific point within that operation, which is called a step. You may need to find which plug-in steps are registered for specific events and you may need to temporarily disable plug-in steps to avoid issues caused by the plug-in.
 
 This article describes how you can view information about plug-ins and disable and enable them using the Power Platform admin center or Power Apps. You can also perform these actions by installing and using the [Plug-in Registration tool](/power-apps/developer/data-platform/download-tools-nuget) (PRT).

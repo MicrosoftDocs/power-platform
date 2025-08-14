@@ -3,7 +3,7 @@ title: "Data loss prevention activity logging  | MicrosoftDocs"
 description: Data loss prevention activity logging
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/07/2024
 ms.subservice: admin
 author: sericks007
@@ -11,9 +11,12 @@ ms.author: sericks
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Data loss prevention activity logging
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 > [!Warning]
 > The schema documented in this article is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin-activity-logging.md#activity-category-data-policy-events).

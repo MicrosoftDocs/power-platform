@@ -7,7 +7,7 @@ documentationcenter: na
 author: schabungbam
 editor: ''
 tags: ''
-ms.topic: conceptual
+ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/30/2024
@@ -21,9 +21,12 @@ contributors:
   - DanaMartens
   - sericks007
   - angieandrews
+ms.custom: sfi-image-nochange
 ---
 
 # View the Power Platform connector activity logs
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Audit logs are logs for important system level events. In the audit log feature, audit logs are available for events related to connections and custom connectors.
 

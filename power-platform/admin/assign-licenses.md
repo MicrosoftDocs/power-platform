@@ -8,12 +8,14 @@ ms.author: sericks
 ms.custom: "admin-security"
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/26/2024
 search.audienceType: 
   - admin
 ---
 # Assign licenses
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 A user account must be assigned a license in order for the user to have access to the service.
 

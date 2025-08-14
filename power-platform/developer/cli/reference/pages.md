@@ -5,9 +5,8 @@ keywords: "pac cli"
 ms.subservice: developer
 author: laneswenka
 ms.author: laswenka
-ms.date: 12/2/2024
 ms.reviewer: jdaly
-ms.topic: reference
+ms.topic: generated-reference
 contributors: 
  - JimDaly
 ---
@@ -28,9 +27,11 @@ Commands for working with Power Pages website.
 |---------|---------|
 |[pac pages bootstrap-migrate](#pac-pages-bootstrap-migrate)|Migrates HTML code from bootstrap V3 to V5.|
 |[pac pages download](#pac-pages-download)|Download Power Pages website content from the current Dataverse environment.|
+|[pac pages download-code-site](#pac-pages-download-code-site)|Download Power Pages website content from the current Dataverse environment.|
 |[pac pages list](#pac-pages-list)|List all Power Pages websites from the current Dataverse environment.|
 |[pac pages migrate-datamodel](#pac-pages-migrate-datamodel)|Manage data model migration for your Power Pages website.|
 |[pac pages upload](#pac-pages-upload)|Upload Power Pages website content to current Dataverse environment.|
+|[pac pages upload-code-site](#pac-pages-upload-code-site)|Uploads your compiled code to Power Pages site|
 
 
 ## pac pages bootstrap-migrate
@@ -91,6 +92,38 @@ Power Pages website content to overwrite
 This parameter requires no value. It's a switch.
 
 [!INCLUDE [pages-download-remarks](includes/pages-download-remarks.md)]
+
+## pac pages download-code-site
+
+Download Power Pages website content from the current Dataverse environment.
+
+[!INCLUDE [pages-download-code-site-intro](includes/pages-download-code-site-intro.md)]
+
+
+### Required Parameters for pages download-code-site
+
+#### `--path` `-p`
+
+Path where the Power Pages website content is downloaded
+
+#### `--webSiteId` `-id`
+
+Power Pages website ID to download
+
+
+### Optional Parameters for pages download-code-site
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
+#### `--overwrite` `-o`
+
+Power Pages website content to overwrite
+
+This parameter requires no value. It's a switch.
+
+[!INCLUDE [pages-download-code-site-remarks](includes/pages-download-code-site-remarks.md)]
 
 ## pac pages list
 
@@ -200,6 +233,32 @@ This parameter requires no value. It's a switch.
 Power Pages website data model version to upload.
 
 [!INCLUDE [pages-upload-remarks](includes/pages-upload-remarks.md)]
+
+## pac pages upload-code-site
+
+Uploads your compiled code to Power Pages site
+
+[!INCLUDE [pages-upload-code-site-intro](includes/pages-upload-code-site-intro.md)]
+
+
+### Required Parameters for pages upload-code-site
+
+#### `--rootPath` `-rp`
+
+Root source folder to initialize Power Pages code
+
+
+### Optional Parameters for pages upload-code-site
+
+#### `--compiledPath` `-cp`
+
+Location of compiled code
+
+#### `--siteName` `-sn`
+
+Name of the site
+
+[!INCLUDE [pages-upload-code-site-remarks](includes/pages-upload-code-site-remarks.md)]
 
 [!INCLUDE [pages-remarks](includes/pages-remarks.md)]
 

@@ -3,7 +3,7 @@ title: "About Unified Interface  | MicrosoftDocs"
 description: About Unified Interface
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/20/2021
 author: sericks007
 ms.subservice: admin
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # About Unified Interface for model-driven apps in Power Apps 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Unified Interface uses responsive web design principles to provide an optimal viewing and interaction experience for any screen size, device, or orientation. It brings all the rich experiences to any client that you are using. Whether you are using a browser, tablet, or phone, you will be able to consume similar experiences.
 

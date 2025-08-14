@@ -2,7 +2,7 @@
 title: "View policies and scope  | MicrosoftDocs"
 description: View policies and policy scope.
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/03/2024
 ms.subservice: admin
 author: mikferland-msft
@@ -17,6 +17,8 @@ search.audienceType:
 ---
 
 # View data policies
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Using the view policy feature (select **Policies** > **Data policies** on the left pane), environment admins can view tenant-level policies&mdash;and policies within environments that the admin has access to&mdash;at an individual policy level. Non-admins can also view tenant-level policies by using this feature.
 

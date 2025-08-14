@@ -3,7 +3,7 @@ title: Finance and operations storage capacity
 description: Learn to use the finance and operations storage capacity report to understand your storage usage vs. your entitlement and get answers to frequently asked questions.
 author: ianceicys-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/17/2024
 ms.subservice: admin
 ms.author: ceian 
@@ -13,6 +13,8 @@ search.audienceType:
 ---
 
 # Finance and operations storage capacity
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The finance and operations storage capacity report shows how much finance and operations storage your organization is using compared with how much its license entitles it to.
 

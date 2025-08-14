@@ -4,9 +4,10 @@ description: Learn how to prioritize ease of use or usability during the design 
 author: RobStand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/05/2025
 ms.subservice: well-architected
-ms.topic: conceptual
+ms.topic: concept-article
+ms.custom: sfi-image-nochange
 ---
 
 # Recommendations for prioritizing ease of use
@@ -130,7 +131,6 @@ Copilot-powered experiences in Power Apps can help users discover valuable insig
 - [Add a custom Copilot to a canvas app](/power-apps/maker/canvas-apps/add-custom-copilot)
 - [Add Copilot for app users in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)
 - [Filter, sort, and search galleries with Copilot](/power-apps/user/smartgrid)
-- [Draft well-written input text with Copilot](/power-apps/user/well-written-input-text-copilot)
 
 For canvas apps, you can indicate progress and loading states with the [progress bar](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-progress-bar) and [spinner](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-spinner) modern controls. Use the [badge control](/power-apps/maker/canvas-apps/controls/modern-controls/modern-controls-badge) to display status information.
 

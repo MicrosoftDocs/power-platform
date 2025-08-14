@@ -1,5 +1,5 @@
 ---
-title: "Hierarchy security  | MicrosoftDocs"
+title: Hierarchy security  
 description: Learn how to use hierarchy security to control access.
 author: paulliew
 ms.subservice: admin
@@ -7,12 +7,20 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 03/20/2024
+ms.topic: concept-article
+ms.date: 6/4/2025
+ms.contributors:
+  - paulliew
+  - pmantha
+  - sericks
+  - syalandur
+contributors:
+  - paulliew
+  - praveenmantha
+  - sericks007
+  - syalandur24
 search.audienceType: 
   - admin
-ms.contributors:
-- pmantha
 ---
 
 # Hierarchy security to control access
@@ -84,9 +92,43 @@ To set up hierarchy security, make sure you have the System Administrator permis
   
 The hierarchy security is disabled by default. To enable hierarchy security, complete the following steps.
 
-1. Select an environment and go to **Settings** > **Users + Permissions** > **Hierarchy security**.
+#### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+
+2. In the navigation pane, select **Manage**.
+
+3. In the **Manage** pane, select **Environments**, and then select an environment from the list.
+
+4. Go to **Settings** > **Users + Permissions** > **Hierarchy security**.
   
-1. Under **Hierarchy Model**, select either **Enable Manager Hierarchy Model** or **Enable Position Hierarchy Model** depending on your requirements.  
+5. Under **Hierarchy Model**, select either **Enable Manager Hierarchy Model** or **Enable Position Hierarchy Model** depending on your requirements.  
+  
+    > [!IMPORTANT]
+    > To make any changes in **Hierarchy security**, you must have the **Change Hierarchy Security Settings** privilege.
+
+    In the **Hierarchy Table Management** area, all system tables are enabled for hierarchy security by default, but you can exclude selective tables from the hierarchy. To exclude specific tables from the hierarchy model, clear the checkboxes for the tables that you want to exclude and save your changes.
+
+    :::image type="content" source="media/hierarchy-security/hierarchy-security-new.png" alt-text="Screenshot of the Hierarchy Security page in Settings for Environments." lightbox="media/hierarchy-security/hierarchy-security-new.png":::
+
+5. Set the **Depth** to a desired value to limit how many levels deep a manager has a read-only access to the data of their reports.
+  
+    For example, if the depth equals to 2, a manager can only access their own accounts and the accounts of the reports two levels deep. In our example, if you sign in to customer engagement apps as a nonadministrator VP of Sales, you only see the active accounts of the users as shown:  
+
+    :::image type="content" source="media/sales-vp-access.png" alt-text="Screenshot that shows Read access for VP of Sales and other positions.":::
+
+    > [!NOTE]
+    > While, the hierarchy security grants the VP of Sales access to the records in the red rectangle, additional access can be available based on the security role that the VP of Sales has.
+
+#### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+
+2. Select Environments, and then select an environment from the list.
+
+3. Go to **Settings** > **Users + Permissions** > **Hierarchy security**.
+  
+4. Under **Hierarchy Model**, select either **Enable Manager Hierarchy Model** or **Enable Position Hierarchy Model** depending on your requirements.  
   
     > [!IMPORTANT]
     > To make any changes in **Hierarchy security**, you must have the **Change Hierarchy Security Settings** privilege.
@@ -95,29 +137,17 @@ The hierarchy security is disabled by default. To enable hierarchy security, com
 
     :::image type="content" source="media/hierarchy-security/hierarchy-security.png" alt-text="Screenshot of the Hierarchy Security page in Settings for Environments." lightbox="media/hierarchy-security/hierarchy-security.png":::
 
-1. Set the **Depth** to a desired value to limit how many levels deep a manager has a read-only access to the data of their reports.
+5. Set the **Depth** to a desired value to limit how many levels deep a manager has a read-only access to the data of their reports.
   
     For example, if the depth equals to 2, a manager can only access their own accounts and the accounts of the reports two levels deep. In our example, if you sign in to customer engagement apps as a nonadministrator VP of Sales, you only see the active accounts of the users as shown:  
 
     :::image type="content" source="media/sales-vp-access.png" alt-text="Screenshot that shows Read access for VP of Sales and other positions.":::
-  
+
     > [!NOTE]
-    >  While, the hierarchy security grants the VP of Sales access to the records in the red rectangle, additional access can be available based on the security role that the VP of Sales has.  
+    > While, the hierarchy security grants the VP of Sales access to the records in the red rectangle, additional access can be available based on the security role that the VP of Sales has.  
   
-1. In the **Hierarchy Table Management** section, all system tables are enabled for hierarchy security, by default. To exclude a specific table from the hierarchy model, clear the check mark next to the table name and save your changes.
+---
 
-    ### [New, modern UI in preview](#tab/preview)
-  
-    :::image type="content" source="media/hierarchy-security/hierarchy-security.png" alt-text="Screenshot that shows where to set up hierarchy security in Settings of the new, modern UI.":::
-
-    [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
-
-    ### [Legacy UI](#tab/LegacyUI)
-  
-    :::image type="content" source="media/hierarchy-security/hierarchy-security-setup2.png" alt-text="Screenshot that shows where to set up hierarchy security in the legacy UI.":::
-
-    ---
-  
 ## Set up manager and position hierarchies
 
 The manager hierarchy is easily created by using the manager relationship on the system user record. You use the Manager (**ParentsystemuserID**) lookup field to specify the manager of the user. If you created the position hierarchy, you can also tag the user with a particular position in the position hierarchy. In the following example, the sales person reports to the sales manager in the manager hierarchy and also has the sales position in the position hierarchy:  
@@ -148,9 +178,18 @@ The manager hierarchy is easily created by using the manager relationship on the
   
    :::image type="content" source="../admin/media/hierachy-security-enabled-users.png" alt-text="Screenshot that shows enabled users with assigned positions.":::
 
+## Edit and update multiple levels of records for direct reports
+
+By default, managers can update records for their direct reports and records for individuals who report to their direct reports. Essentailly, you can update records that are three levels deep. You can change the default setting by completing the following steps.
+
+ 1. Install the [OrganizationSettingsEditor tool](environment-database-settings.md#install-the-organizationsettingseditor-tool).
+ 1. Edit the **HierarchyLevelForHierarchyFeature** setting.
+ 2. Enter the number of direct level depth. For example, enter 5.
+ 3. Select **Update**.
+
 ## Include or exclude records owned by direct report with the disabled user status
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/embed/RW1jVin]
+> [!VIDEO 3d49a8e0-9ab5-43be-bc86-4ee1b59ff855]
 
 Managers can see their disabled status direct report's records for environments where hierarchy security is enabled after January 31, 2024. For other environments, disabled status direct report's records aren't included in the manager's view. 
 
@@ -169,6 +208,7 @@ Managers can see their disabled status direct report's records for environments 
  1. Re-enable it again.
 
 > [!NOTE]
+
 > - When you disable and re-enable the hierarchy modeling, the update can take time, since the system needs to recompute manager record access.
 > - If you see a timeout, reduce the number of tables under the **Hierarchy Table Management** list to include only tables that need to be viewed by manager. If the timeout persists, submit a support ticket to request assistance.
 > - Disabled status direct report's records are included if these records are shared with another direct report who is active. You can exclude these records by removing the **share**.
@@ -179,7 +219,9 @@ Managers can see their disabled status direct report's records for environments 
   
 - Keep the effective hierarchy security to 50 users or less under a manager or position. Your hierarchy might have more than 50 users under a manager or position, but you can use the **Depth** setting to reduce the number of levels for read-only access and with this limit the effective number of users under a manager or position to 50 users or less.  
   
-- Use hierarchy security models with other existing security models for more complex scenarios. Avoid creating a large number of business units, instead, create fewer business units and add hierarchy security.  
+- Use hierarchy security models with other, existing security models for more complex scenarios. Avoid creating a large number of business units. Instead, create fewer business units and add hierarchy security.
+
+- Keep the **HierarchyLevelForHierarchyFeature** number to its lowest number of direct level depth as required by your business requirements to allow managers to update their direct reports' records.  
   
 ### See also
 

@@ -17,6 +17,8 @@ ms.custom:
 
 # Audit security roles
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Audit your organization's security roles to better understand changes made to them in your Power Platform environment.
 
 ## Prerequisites
@@ -33,7 +35,7 @@ Audit your organization's security roles to better understand changes made to th
 
 ## Change a security role
 
-[Change a security role](database-security.md#create-edit-or-copy-a-security-role-using-the-new-modern-ui).
+[Change a security role](database-security-configure.md#create-edit-or-copy-a-security-role).
 
 ## View the audit report
 

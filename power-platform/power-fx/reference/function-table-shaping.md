@@ -1,4 +1,4 @@
----
+﻿---
 title: AddColumns, DropColumns, RenameColumns, and ShowColumns functions
 description: Reference information including syntax and examples for the AddColumns, DropColumns, RenameColumns, and ShowColumns functions.
 author: gregli-msft
@@ -18,19 +18,20 @@ contributors:
 ---
 
 # AddColumns, DropColumns, RenameColumns, and ShowColumns functions
+[!INCLUDE[function-table-shaping-applies-to](includes/function-table-shaping-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
-Shapes a [table](/power-apps/maker/canvas-apps/working-with-tables) by adding, dropping, renaming, and selecting its [columns](/power-apps/maker/canvas-apps/working-with-tables#columns).
 
-The **[ForAll](function-forall.md) function can also be used to shape a table, by returning a table of new records created from existing columns.
+Shapes a [table or record](/power-apps/maker/canvas-apps/working-with-tables) by adding, dropping, renaming, and selecting its [columns](/power-apps/maker/canvas-apps/working-with-tables#columns).
+
+The [ForAll](function-forall.md) function can also be used to shape a table, by returning a table of new records created from existing columns.
 
 ## Overview
 
-These functions shape a table by adjusting its columns:
+These functions shape a table or record by adjusting its columns:
 
-- Reduce a table that contains multiple columns down to a single column for use with single-column functions, such as **[Lower](function-lower-upper-proper.md)** or **[Sqrt](function-numericals.md)**.
-- Add a calculated column to a table (for example, a **Total Price** column that shows the results of multiplying **Quantity** by **Unit Price**).
+- Reduce a table or record that contains multiple columns down to a single column for use with single-column functions, such as **[Lower](function-lower-upper-proper.md)** or **[Sqrt](function-numericals.md)**.
+- Add a calculated column to a table or record (for example, a **Total Price** column that shows the results of multiplying **Quantity** by **Unit Price**).
 - Rename a column to something more meaningful, for display to users or for use in formulas.
 
 A table is a value in Power Apps, just like a string or a number. You can specify a table as an argument in a formula, and functions can return a table as a result.
@@ -42,18 +43,18 @@ You can't modify the columns of a [data source](/power-apps/maker/canvas-apps/wo
 
 ## Description
 
-The **AddColumns** function adds a column to a table, and a formula defines the values in that column. Existing columns remain unmodified.
+The **AddColumns** function adds a column to a table or record, and a formula defines the values in that column. Existing columns remain unmodified.
 
-The formula is evaluated for each record of the table.
+The formula is evaluated for the provided record, or for each record of the provided table.
 [!INCLUDE [record-scope](../../includes/record-scope.md)]
 
-The **DropColumns** function excludes columns from a table. All other columns remain unmodified. **DropColumns** excludes columns, and **ShowColumns** includes columns.
+The **DropColumns** function excludes columns from a table or record. All other columns remain unmodified. **DropColumns** excludes columns, and **ShowColumns** includes columns.
 
-Use the **RenameColumns** function to rename one or more columns of a table by providing at least one argument pair that specifies the name of a column that the table contains (the old name, which you want to replace) and the name of a column that the table doesn't contain (the new name, which you want to use). The old name must already exist in the table, and the new name must not exist. Each column name might appear only once in the argument list as either an old column name or a new column name. To rename a column to an existing column name, first drop the existing column with **DropColumns**, or rename the existing column out of the way by nesting one **RenameColumns** function within another.
+Use the **RenameColumns** function to rename one or more columns of a table or record by providing at least one argument pair that specifies the name of a column that the table or record contains (the old name, which you want to replace) and the name of a column that the table or record doesn't contain (the new name, which you want to use). The old name must already exist in the table or record, and the new name must not exist. Each column name may appear only once in the argument list as either an old column name or a new column name. To rename a column to an existing column name, first drop the existing column with **DropColumns**, or rename the existing column out of the way by nesting one **RenameColumns** function within another.
 
-The **ShowColumns** function includes columns of a table and drops all other columns. You can use **ShowColumns** to create a single-column table from a multi-column table. **ShowColumns** includes columns, and **DropColumns** excludes columns.
+The **ShowColumns** function includes columns of a table or record and drops all other columns. You can use **ShowColumns** to create a single-column table or record from a multi-column table or record. **ShowColumns** includes columns, and **DropColumns** excludes columns.
 
-For all these functions, the result is a new table with the transform applied. The original table isn't modified. You can't modify an existing table with a formula. SharePoint, Microsoft Dataverse, SQL Server, and other data sources provide tools for modifying the columns of lists, tables, and tables, which are often referred to as the schema. The functions in this article only transform an input table, without modifying the original, into an output table for further use.
+For all these functions, the result is a new table or record with the transform applied. The original table or record isn't modified. You can't modify an existing table or record with a formula. SharePoint, Microsoft Dataverse, SQL Server, and other data sources provide tools for modifying the columns of lists and tables, which are often referred to as the schema. The functions in this topic only transform an input table or record, without modifying the original, into an output table or record for further use.
 
 The arguments to these functions support delegation. For example, a **Filter** function used as an argument to pull in related records searches through all listings, even if the **'[dbo].[AllListings]'** data source contains a million rows:
 
@@ -73,26 +74,26 @@ If you use **AddColumns** in this manner, **Filter** must make separate calls to
 
 ## Syntax
 
-**AddColumns**( _Table_, _ColumnName1_, _Formula1_ [, *ColumnName2*, *Formula2*, ... ] )
+**AddColumns**( _TableOrRecord_, _ColumnName1_, _Formula1_ [, *ColumnName2*, *Formula2*, ... ] )
 
-- _Table_ - Required. Table to operate on.
+- _TableOrRecord_ - Required. Table or record to operate on.
 - _ColumnName(s)_ - Required. Names of the columns to add. 
-- _Formula(s)_ - Required. Formulas to evaluate for each record. The result is added as the value of the corresponding new column. You can reference other columns of the table in this formula.
+- _Formula(s)_ - Required. Formulas to evaluate for each record. The result is added as the value of the corresponding new column. You can reference other columns of the table or record in this formula.
 
-**DropColumns**( _Table_, _ColumnName1_ [, *ColumnName2*, ... ] )
+**DropColumns**( _TableOrRecord_, _ColumnName1_ [, *ColumnName2*, ... ] )
 
-- _Table_ - Required. Table to operate on.
+- _TableOrRecord_ - Required. Table or record to operate on.
 - _ColumnName(s)_ - Required. Names of the columns to drop. 
 
-**RenameColumns**( _Table_, _OldColumnName1_, _NewColumnName1_ [, *OldColumnName2*, *NewColumnName2*, ... ] )
+**RenameColumns**( _TableOrRecord_, _OldColumnName1_, _NewColumnName1_ [, *OldColumnName2*, *NewColumnName2*, ... ] )
 
-- _Table_ - Required. Table to operate on.
-- _OldColumnName(s)_ - Required. Names of the columns to rename from the original table. This element appears first in the argument pair (or first in each argument pair if the formula includes more than one pair).
+- _TableOrRecord_ - Required. Table or record to operate on.
+- _OldColumnName(s)_ - Required. Names of the columns to rename from the original table or record. This element appears first in the argument pair (or first in each argument pair if the formula includes more than one pair).
 - _NewColumnName(s)_ - Required. Replacement names. This element appears last in the argument pair (or last in each argument pair if the formula includes more than one pair). 
 
-**ShowColumns**( _Table_, _ColumnName1_ [, *ColumnName2*, ... ] )
+**ShowColumns**( _TableOrRecord_, _ColumnName1_ [, *ColumnName2*, ... ] )
 
-- _Table_ - Required. Table to operate on.
+- _TableOrRecord_ - Required. Table or record to operate on.
 - _ColumnName(s)_ - Required. Names of the columns to include. 
 
 ## Examples
@@ -155,3 +156,137 @@ Let's try some of the examples from earlier in this article.
 See [Map columns](/power-apps/maker/canvas-apps/map-component-input-fields#map-columns).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

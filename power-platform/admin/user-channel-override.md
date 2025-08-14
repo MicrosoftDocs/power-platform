@@ -3,7 +3,7 @@ title: User channel override
 description: Learn how to override the release channel for a user.
 author: adrianorth 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/06/2023
 ms.subservice: admin
 ms.reviewer: sericks
@@ -12,6 +12,8 @@ search.audienceType:
   - admin 
 ---
 # User channel override
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 With [release channels](/power-apps/maker/model-driven-apps/channel-overview), you can control how often the users in your organization get new features by specifying the release channel.
 

@@ -3,7 +3,7 @@ title: "System Settings Auditing tab  | MicrosoftDocs"
 description: System Settings Auditing tab 
 author: Mattp123
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/05/2022
 ms.subservice: admin
 ms.author: matp
@@ -11,6 +11,8 @@ search.audienceType:
   - admin
 ---
 # System Settings Auditing tab
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Enable auditing to track changes to your organization's data and maintain a log of changes. 
   

@@ -4,9 +4,9 @@ description: "Frequently asked questions about the CoE Starter Kits integration 
 author: manuelap-msft
 manager: devkeydet
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: faq
 ms.date: 09/25/2024
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 

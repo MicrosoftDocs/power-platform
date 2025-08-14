@@ -1,11 +1,11 @@
----
+﻿---
 title: Text function
 description: Reference information including syntax and examples for the Text function.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 6/10/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 contributors:
@@ -15,8 +15,9 @@ contributors:
 ---
 
 # Text function
+[!INCLUDE[function-text-applies-to](includes/function-text-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Converts any value and formats a number or date/time value to a string of text.
 
@@ -157,9 +158,9 @@ By default, **Text** uses the language of the user running the app. The **Langua
 
 - _AnyValue_ - Required. Value to convert to a text representation. A default format is used.
 
-**Text** ( _Untyped_ )
+**Text** ( _Dynamic_ )
 
-- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a string. Acceptable values are dependent on the untyped provider. For [**JSON**](function-parsejson.md), if the untyped object is a number or boolean, it will be converted to text.
+- _Dynamic_ - Required. [**Dynamic**](../untyped-object.md) value that represents a string. Acceptable values are dependent on the untyped provider. For [**JSON**](function-parsejson.md), if the dynamic value is a number or boolean, it will be converted to text.
 
 ## Examples
 
@@ -209,3 +210,137 @@ Unless otherwise specified, the user running these formulas is located in the Un
 | **Left(&nbsp;Text(&nbsp;GUID()&nbsp;),&nbsp;4&nbsp;)**        | Returns the first four characters of a generated GUID.                                                                                                                                                            | "2d9c"                                 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

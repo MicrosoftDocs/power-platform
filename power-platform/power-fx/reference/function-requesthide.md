@@ -1,4 +1,4 @@
----
+﻿---
 title: RequestHide function
 description: Reference information including syntax and examples for the RequestHide function.
 author: emcoope-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # RequestHide function
+[!INCLUDE[function-requesthide-applies-to](includes/function-requesthide-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps
+
 
 Hides the [SharePoint form](/power-apps/maker/canvas-apps/sharepoint-form-integration#understand-the-sharepointintegration-control).
 
@@ -47,3 +48,138 @@ This function is not required for the **SharePointIntegration** control's **OnCa
 | **RequestHide()** | Hides the form. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,7 +2,7 @@
 title: "Test connection to Exchange Server (on-premises) | MicrosoftDocs"
 description: Learn how to test your app connection to  Exchange Server (on-premises)
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/13/2021
 author: DanaMartens
 ms.subservice: admin
@@ -10,8 +10,11 @@ ms.author: dmartens
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Test connection to Exchange Server (on-premises)
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The following guidance is for those having issues with connecting customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) to a mailbox hosted on their Microsoft Exchange on-premise deployment using server-side synchronization.
 

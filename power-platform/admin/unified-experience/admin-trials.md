@@ -2,7 +2,7 @@
 title: "Unified admin trials"
 description: "Subscription-based trial environments for administrators of finance and operations apps."
 author: laneswenka
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/06/2024
 ms.subservice: admin
 ms.author: laswenka
@@ -11,6 +11,8 @@ ms.reviewer: sericks
 ---
 
 # Unified admin trials
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Administrators, partners, and ISVs historically have had to use cloud-hosted environments in Lifecycle Services to create demo or trial environments for finance and operations apps. This was to demonstrate the software capabilities and try out new features of the product on a low-cost basis.
 

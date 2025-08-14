@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant TestEngine
+    participant AzureCLI as Azure CLI
+    participant MicrosoftEntra as Microsoft Entra
+    participant Dataverse
+    
+    TestEngine->>AzureCLI: Request access token
+    AzureCLI->>MicrosoftEntra: Authenticate
+    MicrosoftEntra->>AzureCLI: Return token with permissions
+    AzureCLI->>TestEngine: Return access token
+    TestEngine->>Dataverse: Authenticate with token
+    Dataverse->>TestEngine: Grant access based on token claims

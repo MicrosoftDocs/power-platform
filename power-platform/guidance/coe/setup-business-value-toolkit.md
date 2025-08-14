@@ -3,13 +3,14 @@ title: Set up the Business value toolkit
 description: Instructions for how to set up the Business value toolkit component of the CoE Starter Kit.
 author: stjeffer
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/07/2024
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Set up the Business value toolkit
 

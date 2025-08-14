@@ -4,9 +4,9 @@ description: Learn how your organization can use Power Platform Managed Environm
 author: rsantos00
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 01/10/2024
+ms.date: 07/25/2025
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 ms.subservice: guidance
 contributors:
   - RobStand
@@ -20,9 +20,6 @@ ms.custom:
 # Activating Managed Environments
 
 This white paper describes the key features and capabilities of Managed Environments and their benefits for organizations and admins.
-
-> [!NOTE]
-> You can save or print this white paper by selecting **Print** from your browser, and then selecting **Save as PDF**.
 
 ## Managed Environments overview
 
@@ -41,7 +38,6 @@ In this white paper, you'll learn about the following features and get examples 
 - [**Customer-managed key**](#customer-managed-key) offers added data protection, encrypting your data using the encryption key from your own key vault.
 - [**Customer Lockbox**](#customer-lockbox) provides an interface where you can approve data access requests from Microsoft Support.
 - [**Extended backup**](#extended-backup-7-to-28-days) extends the backup retention period from 7 days to up to 28 days.
-- [**DLP for desktop flow**](#dlp-for-desktop-flows) governs desktop flow models and individual model actions in Power Automate.
 - [**Export data to Application Insights**](#export-data-to-application-insights) helps with diagnosing and troubleshooting issues related to errors and performance.
 - [**Catalog in Power Platform**](#catalog-in-power-platform) promotes collaboration and productivity through sharing Power Platform artifacts at scale.
 - [**Default environment routing**](#default-environment-routing) automatically directs new makers into their own personal developer environments.
@@ -258,18 +254,6 @@ Regular, frequent backups protect your data in Power Platform and Dataverse from
 Set-AdminPowerAppEnvironmentBackupRetentionPeriod -EnvironmentName <YourEnvironmentID> -NewBackupRetentionPeriodInDays 28
 ```
 
-### DLP for desktop flows
-
-In Power Automate, you can create [data loss prevention policies](/power-automate/prevent-data-loss) that classify desktop flow modules and individual module actions as *Business*, *Nonbusiness*, or *Blocked*. Categorizing them this way prevents makers from combining modules and actions from different categories in a desktop flow or between a cloud flow and the desktop flow it uses&mdash;in Managed Environments only. Although you can create DLP policies for desktop flows in unmanaged environments, those policies aren't enforced.
-
-By default, action groups for desktop flows don't appear when a DLP policy is being created. An admin needs to turn on the tenant setting **Show desktop flow actions in DLP policies** in the Power Platform admin center.
-
-:::image type="content" source="media/mae/image17.png" alt-text="Screenshot of the Desktop flow actions in DLP pane in the Power Platform admin center.":::
-
-Anyone in your organization can make Windows desktop flows in the default environment. It's as important to have a DLP strategy for desktop flows as it is for cloud flows to make sure that makers comply with organizational policies. For example, if your policies block running scripts on user PCs, you should prevent makers from creating desktop flows with a **Run Script** action. Similarly, if your policies limit usage of the HTTP connector in cloud flows, it's a good idea to block similar actions in desktop flows.
-
-If you're not sure how a DLP policy will affect your makers' desktop flows, use the [DLP impact analysis tool](/power-automate/guidance/automation-kit/dlp-impact-analysis) in the [Automation Kit](/power-automate/guidance/automation-kit/overview/introduction).
-
 ### Export data to Application Insights
 
 [Application Insights](/power-platform/admin/overview-integration-application-insights) can receive diagnostics and performance data from Dataverse that you can use to diagnose and troubleshoot errors and performance issues. Organizations use Application Insights, a feature of [Azure Monitor](/azure/azure-monitor/overview), to get more control over their assets.
@@ -294,7 +278,7 @@ requests
 
 ### Catalog in Power Platform
 
-The [catalog in Power Platform](/power-platform/developer/catalog) is a central location where makers and developers can discover and share solutions, templates, and code components for reuse across the organization. It also provides a central location for admins to store and maintain Power Platform artifacts, with management capabilities and approval workflows to ensure compliance with regulatory and statutory requirements.
+The [catalog in Power Platform](/power-platform/developer/catalog/overview) is a central location where makers and developers can discover and share solutions, templates, and code components for reuse across the organization. It also provides a central location for admins to store and maintain Power Platform artifacts, with management capabilities and approval workflows to ensure compliance with regulatory and statutory requirements.
 
 Makers and developers submit their solutions, templates, and components to the catalog to help their colleagues solve business problems. Admins and line-of-business approvers review and approve them. The catalog serves as a single source of truth for Power Platform artifacts, which can be curated and controlled to accelerate value for makers and developers. It streamlines the process of finding, creating, and sharing solutions and templates, making it easier for organizations to apply apps to business problems and achieve their goals.
 
@@ -334,7 +318,6 @@ It's important to understand what happens if your organization stops using Manag
 | IP firewall | None | Indirect: The feature is limited. |
 | Customer Lockbox | None | Indirect: The feature is limited. |
 | Extended backup (7 to 28 days)| None | Indirect: The feature is limited. |
-| DLP for desktop flows | Direct: They can run previously blocked actions. | None |
 | Export to App Insights | None | Indirect: The feature is limited. |
 | Catalog in Power Platform | None | Indirect: The feature is limited. |
 
@@ -452,6 +435,6 @@ Since these solutions are tightly integrated with the product, the CoE Starter K
 
 Managed Environments with premium governance capabilities stands as a pivotal solution for IT admins who are tasked with managing and governing Power Platform adoption at scale. By providing a robust suite of tools and controls, it empowers governance teams to maintain a delicate balance between innovation and security. With granular access controls, streamlined solution deployment, and policy enforcement, Managed Environments offers the foundation for organizations to confidently harness the full potential of Power Platform while ensuring compliance, data integrity, and optimal performance. In an era where data governance is paramount, these capabilities make Power Platform a cornerstone in modern enterprise IT strategies, fostering efficiency and peace of mind for administrators and stakeholders alike.
 
-### See also
+> [!NOTE]
+> You can save or print this white paper by selecting **Print** from your browser, and then selecting **Save as PDF**.
 
-- [Power Platform white papers](index.md)

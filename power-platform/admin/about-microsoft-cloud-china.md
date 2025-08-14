@@ -3,8 +3,8 @@ title: Power Platform and Dynamics 365 apps operated by 21Vianet in China
 description: This article provides information about Microsoft Power Platform and Dynamics 365 apps that are operated by 21Vianet in China.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 09/25/2023
+ms.topic: concept-article
+ms.date: 02/12/2025
 ms.subservice: admin
 ms.author: sericks
 ms.contributors:
@@ -16,6 +16,8 @@ contributors:
 - Akshay-Koushik-Hothur 
 ---
 # Power Platform and Dynamics 365 apps operated by 21Vianet in China
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Microsoft Power Platform and Dynamics 365 apps services operated by 21Vianet are designed to comply with regulatory requirements in China. The services are a physically separated environment of cloud services that's currently operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd ("21Vianet"). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd., located in China.
 
@@ -58,7 +60,7 @@ As customer tenants are selected for transition, notifications will be distribut
 
 Existing workloads aren't expected to require customer reconfiguration or updates. However, we understand that some of our customers apply firewall filters that are sensitive to recognizable IPs. In this case, the configurations must be reviewed to ensure that the IP ranges in the following downloadable JSON file are configured as trusted Azure operated by 21Vianet IP ranges:
 
-[Download Azure IP Ranges and Service Tags – China Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/confirmation.aspx?id=57062)
+[Download Azure IP Ranges and Service Tags – China Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=57062)
 
 In this JSON file, the Business Applications engineering team recommends a focused review of defined IP filtering that's related to the following tags:
 

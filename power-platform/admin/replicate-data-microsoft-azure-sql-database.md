@@ -2,7 +2,7 @@
 title: "Replicate data to Azure SQL Database using Data Export Service | MicrosoftDocs"
 description: Replicate data to Azure SQL Database using Data Export Service 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/20/2023
 ms.subservice: admin
 ms.author: nhelgren
@@ -10,10 +10,15 @@ author: NHelgren
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-contributors: 
-- JasonHQX
+contributors:
+   - JasonHQX
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-blocked
 ---
 # Replicate data to Azure SQL Database using Data Export Service
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 > [!NOTE]
 > Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. More information: https://aka.ms/DESDeprecationBlog

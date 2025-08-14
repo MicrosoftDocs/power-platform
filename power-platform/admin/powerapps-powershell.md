@@ -1,21 +1,26 @@
 ---
 title: PowerShell support for Power Apps and Power Automate
 description: Learn about the PowerShell cmdlets and get a tutorial of how to install and run them.
-author: laneswenka
+author: samathur
 contributors:
+  - samathur
+  - taiki-yoshida 
   - ChrisGarty
   - v-aangie
 ms.reviewer: angieandrews
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/06/2024
+ms.date: 03/11/2025
 ms.subservice: admin
-ms.author: cgarty
+ms.author: samathur
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # PowerShell support for Power Apps and Power Automate
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 With [PowerShell](/powershell/scripting/overview) cmdlets for Power Platform creators and administrators, you can automate many monitoring and management tasks. Tasks that are only possible _manually_ today in [Power Apps](https://make.powerapps.com/), [Power Automate](https://make.powerautomate.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
@@ -36,7 +41,7 @@ For information on the Power Apps admin module, see [Get started using the Power
 
 If you're new to PowerShell and need help with finding and launching it, go to [Getting Started with PowerShell](/powershell/scripting/learn/ps101/01-getting-started). If you need help with using PowerShell or the cmdlets, go to [The PowerShell Help System](/powershell/scripting/learn/ps101/02-help-system).
 
-## Prerequisites
+## Prerequisites for PowerShell
 
 PowerShell in this article requires **Windows PowerShell** version 5.x. To check the version of PowerShell running on your machine, run the following command:
 
@@ -57,7 +62,7 @@ To run PowerShell cmdlets for app creators:
 
    :::image type="content" source="media/open-powershell-as-admin75.png" alt-text="Screenshot that shows how to run PowerShell as an administrator.":::
 
-2. Import the necessary modules.
+1. Import the necessary modules.
 
    ```powershell
    Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
@@ -71,11 +76,11 @@ To run PowerShell cmdlets for app creators:
    Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Scope CurrentUser
    ```
 
-3. If you're prompted to accept the change to the _InstallationPolicy_ value of the repository, accept `[A] Yes` to all modules by typing `A`, then press `Enter` for each module.
+1. If you're prompted to accept the change to the _InstallationPolicy_ value of the repository, accept `[A] Yes` to all modules by typing `A`, then press `Enter` for each module.
 
    :::image type="content" source="media/accept-installationpolicy-value75.png" alt-text="Screenshot that shows where to accept the InstallationPolicy value in PowerShell.":::
 
-4. Optionally, before accessing the commands, you can provide your credentials. Credentials are refreshed for up to eight hours before you're required to sign in again.  If credentials aren't provided before a command is executed, then a prompt for credentials appears.
+1. Optionally, before accessing the commands, you can provide your credentials. Credentials are refreshed for up to eight hours before you're required to sign in again.  If credentials aren't provided before a command is executed, then a prompt for credentials appears.
     ```powershell
     # Opens a prompt to collect credentials (Microsoft Entra account and password).
     Add-PowerAppsAccount
@@ -87,7 +92,7 @@ To run PowerShell cmdlets for app creators:
     Add-PowerAppsAccount -Username user@contoso.com -Password $pass
     ```
 
-5. Optionally, a specific endpoint can be targeted. The default endpoint is `prod`. If a user wants to run a PowerShell script targeting an environment in a non-production region, such as GCC, the `-Endpoint` parameter can be changed to `usgov` for GCC Moderate, or `usgovhigh` for GCC High, or `dod` for GCC DOD. The full list of endpoints supported is: "prod,preview,tip1,tip2,usgov,usgovhigh,dod,china".
+1. Optionally, a specific endpoint can be targeted. The default endpoint is `prod`. If a user wants to run a PowerShell script targeting an environment in a non-production region, such as GCC, the `-Endpoint` parameter can be changed to `usgov` for GCC Moderate, or `usgovhigh` for GCC High, or `dod` for GCC DOD. The full list of endpoints supported is: "prod,preview,tip1,tip2,usgov,usgovhigh,dod,china".
 
     ```powershell
     # An environment in another region, such as GCC, can be targeted using the -Endpoint parameter.
@@ -124,14 +129,14 @@ Update-Module -Name "Microsoft.PowerApps.PowerShell"
 
 ## Power Apps cmdlets for app creators
 
-### Prerequisites
+### Prerequisites for Power Apps cmdlets
 
 Users with a valid Power Apps license can perform the operations in these cmdlets. However, they only have access to resources, like apps and flows, that are created or shared with them.
 
 ### Cmdlet list - Maker Cmdlets
 
 > [!NOTE]
-> We've updated some of the cmdlets function names in the latest release in order to add appropriate prefixes to prevent collisions. Refer the following table for an overview of what has changed.
+> We updated some of the cmdlets function names in the latest release in order to add appropriate prefixes to prevent collisions. For an overview of what changed, refer the following table.
 
 | Purpose | Cmdlet |
 | --- | --- |
@@ -259,7 +264,7 @@ A Hero app appears at the top of the list in the Power Apps mobile player. There
 The pipe `|` character between two cmdlets takes the output of the first cmdlet and passes it as the input value of the second, if the function is written to accommodate the pipe.
 
 > [!NOTE]
-> An app must already be a featured app before it's changed to a Hero.
+> An app must already be a featured app before it is changed to a Hero.
 
 ### Display the number of apps each user owns
 
@@ -285,7 +290,7 @@ Get-AdminPowerApp | Select -ExpandProperty EnvironmentName | Group | %{ New-Obje
 Get-AdminPowerAppsUserDetails -OutputFilePath '.\adminUserDetails.txt' –UserPrincipalName 'admin@bappartners.onmicrosoft.com'
 ```
 
-The above command stores the Power Apps user details (basic usage information about the input user via their user principal name) in the specified text file. It creates a new file if there's no existing file with that name, and overwrites the text file if it already exists.
+The previous command stores the Power Apps user details (basic usage information about the input user via their user principal name) in the specified text file. It creates a new file if there's no existing file with that name, and overwrites the text file if it already exists.
 
 ### Export a list of assigned user licenses
 
@@ -298,7 +303,7 @@ Exports all the assigned user licenses (Power Apps and Power Automate) in your t
 The export can take a while for tenants with a large number of Microsoft Power Platform users.
 
 > [!NOTE]
-> Output of the Get-AdminPowerAppLicenses cmdlet only includes licenses for users that have accessed Power Platform services (for example, Power Apps, Power Automate, or Power Platform admin center). Users that have had licenses assigned in Microsoft Entra ID (typically via the Microsoft 365 admin center) but have never accessed Power Platform services won't have their licenses included in the generated .csv output. Furthermore, since the Power Platform licensing services caches the licenses, updates made to license assignments in Microsoft Entra ID can take up to seven days to reflect in the output for users that haven't accessed the service recently.
+> Output of the Get-AdminPowerAppLicenses cmdlet only includes licenses for users who accessed Power Platform services (for example, Power Apps, Power Automate, or Power Platform admin center). Users who had licenses assigned in Microsoft Entra ID (typically via the Microsoft 365 admin center) but never accessed Power Platform services don't have their licenses included in the generated .csv output. Furthermore, since the Power Platform licensing services caches the licenses, updates made to license assignments in Microsoft Entra ID can take up to seven days to reflect in the output for users who didn't access the service recently.
 
 ### Set logged in user as the owner of a canvas app
 
@@ -488,6 +493,20 @@ Parameter variations can be used to migrate only specific flows, add into a spec
 
 For technical details, see [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution).
 
+### List HTTP Action flows
+
+```powershell
+Get-AdminFlowWithHttpAction -EnvironmentName <String>
+```
+
+Lists flows with HTTP action(s).
+
+|DisplayName  |FlowName  |EnvironmentName  |
+|---------|---------|---------|
+|Get Invoice HTTP     | flow-1   | environment-1    |
+|Pay Invoice from App     | flow-2  | environment-2    |
+|Reconcile Account   | flow-3    | environment-3    |
+
 ## API connection commands
 
 View and manage API connections in your tenant.
@@ -533,10 +552,10 @@ Gets policy objects for the signed-in admin's tenant.
 
 > [!NOTE]
 >
-> - When viewing a DLP policy using PowerShell, the display name of connectors are from when the DLP policy was created or when the connectors were last moved within the policy. New changes to the display names of connectors won't be reflected.
-> - When viewing a DLP policy using PowerShell, new connectors in the default group that haven't been moved won't be returned.
+> - When you view a DLP policy using PowerShell, the display name of connectors are from when the DLP policy was created or when the connectors were last moved within the policy. New changes to the display names of connectors aren't reflected.
+> - When you view a DLP policy using PowerShell, new connectors in the default group that weren't moved aren't returned.
 >
-> For both of these known issues, a workaround is to move the affected connector to another group within the policy and then move it back to the correct group.  After doing this, each of the connectors will be visible with their correct name.
+> For both of these known issues, a workaround is to move the affected connector to another group within the policy and then move it back to the correct group. After doing this, each of the connectors is visible with their correct name.
 
 ### Update a DLP policy
 
@@ -715,19 +734,19 @@ Get-AllowedConsentPlans
 
 The allowed consent plans cmdlets can be used to add or remove access to a particular type of consent plan from a tenant. "Internal" consent plans are either trial licenses or developer plans that users can sign themselves up for via Power Apps/Power Automate portals/Power Automate for desktop. "Ad-hoc subscription" or "Viral" consent plans are trial licenses that users can sign themselves up for at `https://signup.microsoft.com`. Admins can assign users through Microsoft Entra ID or the Microsoft 365 admin portal.
 
-By default all types of consent plans are allowed in a tenant. However, a Power Platform admin might want to block users from assigning themselves trial licenses but retain the ability to assign trial licenses on behalf of users. This rule can be accomplished by using the `Remove-AllowedConsentPlans -Types "Internal"` command and disabling the setting **AllowAdHocSubscriptions** in Microsoft Entra ID.
+By default, all types of consent plans are allowed in a tenant. However, a Power Platform admin might want to block users from assigning themselves trial licenses, but retain the ability to assign trial licenses on behalf of users. This rule can be accomplished by using the `Remove-AllowedConsentPlans -Types "Internal"` command and by not allowing the setting **Update-MgPolicyAuthorizationPolicy -AllowedToSignUpEmailBasedSubscriptions** in Microsoft Entra ID.
 
 > [!IMPORTANT]
-> When using `Remove-AllowedConsentPlans`, all existing plans of the specified type are removed from all users in the tenant and aren't recoverable. This command blocks all future assignments of that type. If the Power Platform admin wishes to re-enable plans of that type, they can use `Add-AllowedConsentPlans`. If they want to view the current state of allowed consent plans, they can use `Get-AllowedConsentPlans`.
+> When you use `Remove-AllowedConsentPlans`, all existing plans of the specified type are removed from all users in the tenant and aren't recoverable. This command blocks all future assignments of that type. If the Power Platform admin wishes to re-enable plans of that type, they can use `Add-AllowedConsentPlans`. If they want to view the current state of allowed consent plans, they can use `Get-AllowedConsentPlans`.
 
 ## If you have questions
 
-If you have any comments, suggestions, or questions, post them on the [Administering Power Apps community board](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps).
+If you have comments, suggestions, or questions, post them on the [Administering Power Apps community board](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps).
 
-### See also
+## Related information
 
-[Get started using the Power Apps admin module.](/powershell/powerapps/get-started-powerapps-admin) <br>
-[Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell) <br>
-[Preview: Programmability and extensibility overview](programmability-extensibility-overview.md)
+- [Get started using the Power Apps admin module.](/powershell/powerapps/get-started-powerapps-admin) <br>
+- [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell) <br>
+- [Preview: Programmability and extensibility overview](programmability-extensibility-overview.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: "Set incoming and outgoing email synchronization | MicrosoftDocs"
 description: You can set a synchronization method for user mailboxes and specify incoming and outgoing email messaging options.
 author: DanaMartens
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/12/2021
 ms.subservice: admin
 ms.author: dmartens
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Set incoming and outgoing email synchronization 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You have several options for synchronizing email messages with Microsoft Dataverse or customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)). Use the information in this topic to deploy the best option for your company.
   

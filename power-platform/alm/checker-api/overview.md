@@ -6,7 +6,7 @@ ms.date: 05/01/2024
 
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: how-to
 applies_to: 
   - "Dynamics 365 (online)"
 ms.assetid: 0d5f7579-304a-4d28-ba73-df30722205eb
@@ -174,7 +174,7 @@ AuthenticationResult tokenResult =
      await authBuilder.AcquireTokenInteractive(scopes).ExecuteAsync();
 ```
 
-For the full working code, see the Web API [QuickStart sample](https://github.com/microsoft/PowerApps-Samples/tree/master/dataverse/webapi/C%23-NETx/QuickStart).
+For the full working code, see the Web API [QuickStart sample](https://github.com/microsoft/PowerApps-Samples/tree/master/dataverse/webapi/CSharp-NETx/QuickStart).
 
 Once you have acquired the token, it's advised that you provide the same token to subsequent calls in the request lifecycle. However, more requests may warrant a new token be acquired for security reasons.
 

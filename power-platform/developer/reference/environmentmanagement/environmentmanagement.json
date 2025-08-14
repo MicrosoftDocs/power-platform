@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API",
-    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "title": "Microsoft Power Platform REST API - environment management",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
   "host": "api.powerplatform.com",
@@ -10,6 +10,614 @@
     "https"
   ],
   "paths": {
+    "/environmentmanagement/environments/{environmentId}/settings": {
+      "post": {
+        "tags": [
+          "EnvironmentManagementSettings"
+        ],
+        "summary": "Create environment management settings.",
+        "operationId": "CreateEnvironmentManagementSettings",
+        "consumes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/xml",
+          "application/prs.odatatestxx-odata",
+          "application/json-patch+json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/xml",
+          "application/prs.odatatestxx-odata",
+          "text/plain",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Payload for the environment management setting",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/CreateEnvironmentManagementSettingResponse"
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/CreateEnvironmentManagementSettingResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/CreateEnvironmentManagementSettingResponse"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "EnvironmentManagementSettings"
+        ],
+        "summary": "Get environment management setting by ID.",
+        "operationId": "ListEnvironmentManagementSettings",
+        "produces": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/xml",
+          "application/prs.odatatestxx-odata",
+          "text/plain",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "ID for the environment management setting.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$top",
+            "description": "Number of records to retrieve. If not set, five humdred (500) records are returned.",
+            "type": "integer"
+          },
+          {
+            "in": "query",
+            "name": "$select",
+            "description": "List of properties to select for this entity.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "EnvironmentManagementSettings"
+        ],
+        "summary": "Update fields on the environment management setting.",
+        "operationId": "UpdateEnvironmentManagementSettings",
+        "consumes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/xml",
+          "application/prs.odatatestxx-odata",
+          "application/json-patch+json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/xml",
+          "application/prs.odatatestxx-odata",
+          "text/plain",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID for the environment management setting being updated.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Details on the environment management setting to be updated",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/OperationResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/OperationResponse"
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/OperationResponse"
+            }
+          },
+          "412": {
+            "description": "Precondition Failed",
+            "schema": {
+              "$ref": "#/definitions/OperationResponse"
+            }
+          }
+        }
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/governancesetting/disablemanaged": {
+      "post": {
+        "tags": [
+          "EnvironmentManagedGovernance"
+        ],
+        "summary": "Disables managed governance for the specified environment (Preview).",
+        "operationId": "DisableManagedEnvironment",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.ManageGovernance.Write"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/governancesetting/enablemanaged": {
+      "post": {
+        "tags": [
+          "EnvironmentManagedGovernance"
+        ],
+        "summary": "Enables managed governance for the specified environment (Preview).",
+        "operationId": "EnableManagedEnvironment",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.ManageGovernance.Write"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/operations": {
+      "get": {
+        "tags": [
+          "Operations"
+        ],
+        "summary": "List the available operations for an environment (Preview).",
+        "description": "Returns a list of the available operations for an environment.",
+        "operationId": "ListOperationsForEnvironment",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "description": "String indicating to limit the results.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "The continuation token provided from a previous response.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResultPagedCollection"
+            }
+          }
+        }
+      }
+    },
+    "/environmentmanagement/operations/{operationId}": {
+      "get": {
+        "tags": [
+          "Operations"
+        ],
+        "summary": "Retrieve the operation by ID (Preview).",
+        "description": "Retrieve the operation specified by ID.",
+        "operationId": "GetOperationByID",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "operationId",
+            "description": "The operation ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
+            }
+          }
+        }
+      }
+    },
+    "/environmentmanagement/environmentGroupOperations/{operationId}": {
+      "get": {
+        "tags": [
+          "EnvironmentGroups"
+        ],
+        "summary": "Get operation status.",
+        "operationId": "GetEnvironmentGroupOperation",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "operationId",
+            "description": "The operation ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/environmentmanagement/environmentGroups": {
+      "post": {
+        "tags": [
+          "EnvironmentGroups"
+        ],
+        "summary": "Create the environment group.",
+        "operationId": "CreateEnvironmentGroup",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The group.",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/EnvironmentGroup"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/EnvironmentGroup"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "EnvironmentGroups"
+        ],
+        "summary": "List the environment groups.",
+        "operationId": "ListEnvironmentGroups",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/EnvironmentGroupResponseWithOdataContinuation"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
     "/environmentmanagement/environmentGroups/{groupId}": {
       "get": {
         "tags": [
@@ -24,14 +632,14 @@
           {
             "in": "path",
             "name": "groupId",
-            "description": "The group Id.",
+            "description": "The group ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -71,7 +679,7 @@
           {
             "in": "path",
             "name": "groupId",
-            "description": "The group Id.",
+            "description": "The group ID.",
             "required": true,
             "type": "string",
             "format": "uuid"
@@ -79,7 +687,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -125,14 +733,14 @@
           {
             "in": "path",
             "name": "groupId",
-            "description": "The group Id.",
+            "description": "The group ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -141,94 +749,6 @@
         "responses": {
           "200": {
             "description": "Success"
-          },
-          "204": {
-            "description": "No Content"
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
-          }
-        }
-      }
-    },
-    "/environmentmanagement/environmentGroups": {
-      "get": {
-        "tags": [
-          "EnvironmentGroups"
-        ],
-        "summary": "List the environment groups.",
-        "operationId": "ListEnvironmentGroups",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/EnvironmentGroupResponseWithOdataContinuation"
-            }
-          },
-          "204": {
-            "description": "No Content"
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "EnvironmentGroups"
-        ],
-        "summary": "Create the environment group.",
-        "operationId": "CreateEnvironmentGroup",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "description": "The group.",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/EnvironmentGroup"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/EnvironmentGroup"
-            }
           },
           "204": {
             "description": "No Content"
@@ -256,7 +776,7 @@
           {
             "in": "path",
             "name": "groupId",
-            "description": "The group Id.",
+            "description": "The group ID.",
             "required": true,
             "type": "string",
             "format": "uuid"
@@ -264,14 +784,14 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment Id.",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -307,7 +827,7 @@
           {
             "in": "path",
             "name": "groupId",
-            "description": "The group Id.",
+            "description": "The group ID.",
             "required": true,
             "type": "string",
             "format": "uuid"
@@ -315,14 +835,14 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment Id.",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -344,191 +864,103 @@
         }
       }
     },
-    "/environmentmanagement/environmentGroupOperations/{operationId}": {
+    "/environmentmanagement/environments": {
       "get": {
         "tags": [
-          "EnvironmentGroups"
+          "Environments"
         ],
-        "summary": "Get Operation Status.",
-        "operationId": "GetEnvironmentGroupOperation",
+        "summary": "Retrieve a list of environments (preview).",
+        "description": "Returns a list of environments available for the authenticated user.",
+        "operationId": "ListEnvironmentsForUser",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of environments.",
+            "schema": {
+              "$ref": "#/definitions/EnvironmentList"
+            }
+          }
+        }
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}": {
+      "get": {
+        "tags": [
+          "Environments"
+        ],
+        "summary": "Retrieves a single environment by ID (preview).",
+        "operationId": "GetEnvironmentByIdForUser",
         "produces": [
           "application/json"
         ],
         "parameters": [
           {
             "in": "path",
-            "name": "operationId",
-            "description": "The operation id.",
-            "required": true,
-            "type": "string",
-            "format": "uuid"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          },
-          "204": {
-            "description": "No Content"
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
-          }
-        }
-      }
-    },
-    "/EnvironmentManagement/Environments/{environmentId}/Settings": {
-      "post": {
-        "tags": [
-          "EnvironmentManagementSettings"
-        ],
-        "summary": "Create Environment Management Settings",
-        "operationId": "CreateEnvironmentManagementSettings",
-        "consumes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/xml",
-          "application/prs.odatatestxx-odata",
-          "application/json-patch+json",
-          "text/json",
-          "application/*+json"
-        ],
-        "produces": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/xml",
-          "application/prs.odatatestxx-odata",
-          "text/plain",
-          "text/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
             "name": "environmentId",
-            "description": "The environment Id",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "description": "Payload for the Environment Management Setting",
-            "schema": {
-              "type": "object",
-              "additionalProperties": {
-                "type": "string"
-              }
-            }
           }
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Success",
             "schema": {
-              "$ref": "#/definitions/CreateEnvironmentManagementSettingResponse"
-            }
-          },
-          "409": {
-            "description": "Conflict",
-            "schema": {
-              "$ref": "#/definitions/CreateEnvironmentManagementSettingResponse"
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/CreateEnvironmentManagementSettingResponse"
+              "$ref": "#/definitions/EnvironmentResponse"
             }
           }
         }
       },
-      "get": {
+      "delete": {
         "tags": [
-          "EnvironmentManagementSettings"
+          "Environments"
         ],
-        "summary": "Gets Environment Management Setting by Id.  Only columns provided in the $select queryOption will be returned.\r\nA list of selectable properties is defined in the Microsoft.Dynamics.Artemis.Infrastructure.Models.EnvironmentManagementSetting type.",
-        "operationId": "ListEnvironmentManagementSettings",
+        "summary": "Delete the environment by ID (Preview).",
+        "description": "Delete the environment specified by ID.",
+        "operationId": "DeleteEnvironmentByID",
         "produces": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/xml",
-          "application/prs.odatatestxx-odata",
           "text/plain",
+          "application/json",
           "text/json"
         ],
         "parameters": [
           {
             "in": "path",
             "name": "environmentId",
-            "description": "Id for the EnvironmentManagementSetting",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
-            "name": "$top",
-            "description": "Number of records to retrieve. If not set, 500 records are returned.",
-            "type": "integer"
-          },
-          {
-            "in": "query",
-            "name": "$select",
-            "description": "List of properties to select for this entity.",
-            "type": "string"
+            "name": "ValidateOnly",
+            "description": "Boolean flag indicating to validate instead of executing the delete operation.",
+            "type": "boolean"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -536,132 +968,398 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
-            }
-          },
-          "429": {
-            "description": "Too Many Requests",
-            "schema": {
-              "$ref": "#/definitions/GetEnvironmentManagementSettingResponse"
-            }
-          }
-        }
-      },
-      "patch": {
-        "tags": [
-          "EnvironmentManagementSettings"
-        ],
-        "summary": "Updates fields on a EnvironmentManagementSetting. This API currently doesn't return any entity data in the response body.",
-        "operationId": "UpdateEnvironmentManagementSettings",
-        "consumes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/xml",
-          "application/prs.odatatestxx-odata",
-          "application/json-patch+json",
-          "text/json",
-          "application/*+json"
-        ],
-        "produces": [
-          "application/json;odata.metadata=minimal;odata.streaming=true",
-          "application/json;odata.metadata=minimal;odata.streaming=false",
-          "application/json;odata.metadata=minimal",
-          "application/json;odata.metadata=full;odata.streaming=true",
-          "application/json;odata.metadata=full;odata.streaming=false",
-          "application/json;odata.metadata=full",
-          "application/json;odata.metadata=none;odata.streaming=true",
-          "application/json;odata.metadata=none;odata.streaming=false",
-          "application/json;odata.metadata=none",
-          "application/json;odata.streaming=true",
-          "application/json;odata.streaming=false",
-          "application/json",
-          "application/xml",
-          "application/prs.odatatestxx-odata",
-          "text/plain",
-          "text/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "environmentId",
-            "description": "The Id for the EnvironmentManagementSetting being updated",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "description": "Details on the EnvironmentManagementSetting to be updated",
-            "schema": {
-              "type": "object",
-              "additionalProperties": {
-                "type": "string"
-              }
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/OperationResponse"
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/OperationResponse"
-            }
-          },
-          "409": {
-            "description": "Conflict",
-            "schema": {
-              "$ref": "#/definitions/OperationResponse"
-            }
-          },
-          "412": {
-            "description": "Precondition Failed",
-            "schema": {
-              "$ref": "#/definitions/OperationResponse"
-            }
+            "description": "OK"
           }
         }
       }
     }
   },
   "definitions": {
+    "CreateEnvironmentManagementSettingResponse": {
+      "description": "Represents the response object for APIs in this service.",
+      "type": "object",
+      "properties": {
+        "objectResult": {
+          "description": "Gets or sets the ID of the entity being created in the response",
+          "type": "string"
+        },
+        "errors": {
+          "$ref": "#/definitions/ErrorResponse"
+        },
+        "nextLink": {
+          "format": "uri",
+          "description": "Gets or sets the next link if there are more records to be returned",
+          "type": "string"
+        },
+        "responseMessage": {
+          "description": "Gets or sets the error message.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentManagementSetting": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "tenantId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "enableIpBasedStorageAccessSignatureRule": {
+          "type": "boolean"
+        },
+        "allowedIpRangeForStorageAccessSignatures": {
+          "type": "string"
+        },
+        "ipBasedStorageAccessSignatureMode": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "loggingEnabledForIpBasedStorageAccessSignature": {
+          "type": "boolean"
+        },
+        "powerPages_AllowMakerCopilotsForNewSites": {
+          "type": "string"
+        },
+        "powerPages_AllowMakerCopilotsForExistingSites": {
+          "type": "string"
+        },
+        "powerPages_AllowProDevCopilotsForSites": {
+          "type": "string"
+        },
+        "powerPages_AllowSiteCopilotForSites": {
+          "type": "string"
+        },
+        "powerPages_AllowSearchSummaryCopilotForSites": {
+          "type": "string"
+        },
+        "powerPages_AllowListSummaryCopilotForSites": {
+          "type": "string"
+        },
+        "powerPages_AllowIntelligentFormsCopilotForSites": {
+          "type": "string"
+        },
+        "powerPages_AllowSummarizationAPICopilotForSites": {
+          "type": "string"
+        },
+        "powerPages_AllowNonProdPublicSites": {
+          "type": "string"
+        },
+        "powerPages_AllowNonProdPublicSites_Exemptions": {
+          "type": "string"
+        },
+        "powerPages_AllowProDevCopilotsForEnvironment": {
+          "type": "string"
+        },
+        "powerApps_ChartVisualization": {
+          "type": "boolean"
+        },
+        "powerApps_FormPredictSmartPaste": {
+          "type": "boolean"
+        },
+        "powerApps_FormPredictAutomatic": {
+          "type": "boolean"
+        },
+        "powerApps_CopilotChat": {
+          "type": "boolean"
+        },
+        "powerApps_NLSearch": {
+          "type": "boolean"
+        },
+        "powerApps_EnableFormInsights": {
+          "type": "boolean"
+        },
+        "powerApps_AllowCodeApps": {
+          "type": "boolean"
+        },
+        "copilotStudio_ConnectedAgents": {
+          "type": "boolean"
+        },
+        "copilotStudio_CodeInterpreter": {
+          "type": "boolean"
+        },
+        "copilotStudio_ConversationAuditLoggingEnabled": {
+          "type": "boolean"
+        },
+        "d365CustomerService_Copilot": {
+          "type": "boolean"
+        },
+        "d365CustomerService_AIAgents": {
+          "type": "boolean"
+        },
+        "copilotStudio_ComputerUseAppAllowlist": {
+          "type": "string"
+        },
+        "copilotStudio_ComputerUseWebAllowlist": {
+          "type": "string"
+        },
+        "copilotStudio_ComputerUseSharedMachines": {
+          "type": "boolean"
+        },
+        "copilotStudio_ComputerUseCredentialsAllowed": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ErrorDetail": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "target": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ErrorResponse": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ErrorDetail"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "GetEnvironmentManagementSettingResponse": {
+      "description": "Represents the response object for APIs in this service.",
+      "type": "object",
+      "properties": {
+        "objectResult": {
+          "description": "Gets or sets the fields for the entities being queried.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnvironmentManagementSetting"
+          }
+        },
+        "errors": {
+          "$ref": "#/definitions/ErrorResponse"
+        },
+        "nextLink": {
+          "format": "uri",
+          "description": "Gets or sets the next link if there are more records to be returned",
+          "type": "string"
+        },
+        "responseMessage": {
+          "description": "Gets or sets the error message.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "OperationResponse": {
+      "description": "Represents the response object for APIs in this service.",
+      "type": "object",
+      "properties": {
+        "objectResult": {
+          "description": "Gets or sets the response's object"
+        },
+        "errors": {
+          "$ref": "#/definitions/ErrorResponse"
+        },
+        "nextLink": {
+          "format": "uri",
+          "description": "Gets or sets the next link if there are more records to be returned",
+          "type": "string"
+        },
+        "debugErrors": {
+          "description": "Gets or sets debug errors, that are only shown for private/local testing",
+          "type": "string"
+        },
+        "responseMessage": {
+          "description": "Gets or sets the error message.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The value of id property on the environment object.",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "The display name of the environment.",
+          "type": "string"
+        },
+        "tenantId": {
+          "description": "The value of tenantId property on the environment object.",
+          "type": "string"
+        },
+        "type": {
+          "description": "The type of environment.",
+          "type": "string"
+        },
+        "geo": {
+          "description": "The geographical region of the environment.",
+          "type": "string"
+        },
+        "environmentGroupId": {
+          "description": "The ID of the environment group to which this environment belongs.",
+          "type": "string"
+        },
+        "azureRegion": {
+          "description": "The Azure region of the environment.",
+          "type": "string"
+        },
+        "createdDateTime": {
+          "format": "date-time",
+          "description": "The creation date and time of the environment.",
+          "type": "string"
+        },
+        "deletedDateTime": {
+          "format": "date-time",
+          "description": "The deletion date and time of the environment.",
+          "type": "string"
+        },
+        "dataverseId": {
+          "description": "The value of dataverseId property on the environment object.",
+          "type": "string"
+        },
+        "url": {
+          "description": "The URL of the environment.",
+          "type": "string"
+        },
+        "version": {
+          "description": "The version of the environment.",
+          "type": "string"
+        },
+        "domainName": {
+          "description": "The domain name of the environment.",
+          "type": "string"
+        },
+        "state": {
+          "description": "The state of the environment.",
+          "type": "string"
+        },
+        "adminMode": {
+          "description": "The administrative mode of the environment.",
+          "type": "string"
+        },
+        "backgroundOperationsState": {
+          "description": "The background operations state of the environment.",
+          "type": "string"
+        },
+        "protectionLevel": {
+          "description": "The protection level of the environment.",
+          "type": "string"
+        },
+        "retentionDetails": {
+          "description": "The retention details of the environment.",
+          "type": "object",
+          "properties": {
+            "retentionPeriod": {
+              "description": "The retention period of the environment.",
+              "type": "string"
+            },
+            "availableFromDateTime": {
+              "format": "date-time",
+              "description": "The available from date and time of the environment.",
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "EnvironmentList": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnvironmentResponse"
+          }
+        }
+      }
+    },
+    "Principal": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "tenantId": {
+          "type": "string"
+        },
+        "userPrincipalName": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ProblemDetails": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "status": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "detail": {
+          "type": "string"
+        },
+        "instance": {
+          "type": "string"
+        },
+        "extensions": {
+          "type": "object",
+          "additionalProperties": { },
+          "readOnly": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentGroupResponseWithOdataContinuation": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnvironmentGroup"
+          }
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
     "EnvironmentGroup": {
       "type": "object",
       "properties": {
@@ -703,2572 +1401,144 @@
       },
       "additionalProperties": false
     },
-    "EnvironmentGroupResponseWithOdataContinuation": {
+    "UserIdentity": {
       "type": "object",
       "properties": {
-        "value": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/EnvironmentGroup"
-          }
+        "userId": {
+          "description": "The user ID.",
+          "type": "string"
         },
-        "@odata.nextLink": {
+        "displayName": {
+          "description": "The display name.",
+          "type": "string"
+        },
+        "tenantId": {
+          "description": "The tenant ID.",
           "type": "string"
         }
       },
       "additionalProperties": false
     },
-    "ProblemDetails": {
+    "OperationStatus": {
+      "description": "The operation status.",
+      "enum": [
+        "Queued",
+        "InProgress",
+        "Succeeded",
+        "ValidationError",
+        "Failed",
+        "NoOperation",
+        "Validated"
+      ],
+      "type": "string"
+    },
+    "OperationExecutionResultPagedCollection": {
       "type": "object",
       "properties": {
-        "type": {
-          "type": "string"
+        "collection": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/OperationExecutionResult"
+          }
         },
-        "title": {
+        "continuationToken": {
+          "description": "The continuation token from a previous response.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "OperationExecutionResult": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The result name.",
           "type": "string"
         },
         "status": {
-          "format": "int32",
-          "type": "integer"
+          "$ref": "#/definitions/OperationStatus"
         },
-        "detail": {
+        "operationId": {
+          "description": "The operation ID.",
           "type": "string"
         },
-        "instance": {
+        "startTime": {
+          "format": "date-time",
+          "description": "The start time.",
           "type": "string"
         },
-        "extensions": {
-          "type": "object",
-          "additionalProperties": { },
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "Principal": {
-      "type": "object",
-      "properties": {
-        "id": {
+        "endTime": {
+          "format": "date-time",
+          "description": "The end time.",
           "type": "string"
         },
-        "displayName": {
-          "type": "string"
+        "updatedEnvironment": {
+          "$ref": "#/definitions/Environment"
         },
-        "email": {
-          "type": "string"
+        "requestedBy": {
+          "$ref": "#/definitions/UserIdentity"
         },
-        "type": {
-          "type": "string"
+        "errorDetail": {
+          "$ref": "#/definitions/ErrorInfo"
         },
-        "tenantId": {
-          "type": "string"
-        },
-        "userPrincipalName": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "AddressFamily": {
-      "format": "int32",
-      "enum": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        28,
-        29,
-        65536,
-        65537,
-        -1
-      ],
-      "type": "integer"
-    },
-    "ApplyClause": {
-      "type": "object",
-      "properties": {
-        "transformations": {
+        "jobStatuses": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/TransformationNode"
+            "$ref": "#/definitions/JobStatus"
           }
         }
       },
       "additionalProperties": false
     },
-    "ApplyQueryOption": {
-      "type": "object",
-      "properties": {
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "resultClrType": {
-          "type": "string",
-          "readOnly": true
-        },
-        "applyClause": {
-          "$ref": "#/definitions/ApplyClause"
-        },
-        "rawValue": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "AsnEncodedData": {
-      "type": "object",
-      "properties": {
-        "oid": {
-          "$ref": "#/definitions/Oid"
-        },
-        "rawData": {
-          "format": "byte",
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "AsymmetricAlgorithm": {
-      "type": "object",
-      "properties": {
-        "keySize": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "legalKeySizes": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/KeySizes"
-          },
-          "readOnly": true
-        },
-        "signatureAlgorithm": {
-          "type": "string",
-          "readOnly": true
-        },
-        "keyExchangeAlgorithm": {
-          "type": "string",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "AvailabilityZonesInfo": {
-      "type": "object",
-      "properties": {
-        "supportsAvailabilityZones": {
-          "type": "boolean"
-        }
-      },
-      "additionalProperties": false
-    },
-    "AzureRegion": {
+    "JobStatus": {
       "type": "object",
       "properties": {
         "name": {
-          "type": "string",
-          "readOnly": true
-        },
-        "displayName": {
-          "type": "string",
-          "readOnly": true
-        },
-        "availabilityZonesInfo": {
-          "$ref": "#/definitions/AvailabilityZonesInfo"
-        }
-      },
-      "additionalProperties": false
-    },
-    "CancellationToken": {
-      "type": "object",
-      "properties": {
-        "isCancellationRequested": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "canBeCanceled": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "waitHandle": {
-          "$ref": "#/definitions/WaitHandle"
-        }
-      },
-      "additionalProperties": false
-    },
-    "Claim": {
-      "type": "object",
-      "properties": {
-        "issuer": {
+          "description": "The job name.",
           "type": "string"
         },
-        "originalIssuer": {
+        "status": {
+          "description": "The job status.",
           "type": "string"
         },
-        "properties": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          },
-          "readOnly": true
-        },
-        "subject": {
-          "$ref": "#/definitions/ClaimsIdentity"
-        },
-        "type": {
+        "startTime": {
+          "format": "date-time",
+          "description": "The job start time.",
           "type": "string"
         },
-        "value": {
-          "type": "string"
-        },
-        "valueType": {
+        "endTime": {
+          "format": "date-time",
+          "description": "The job end time.",
           "type": "string"
         }
       },
       "additionalProperties": false
     },
-    "ClaimsIdentity": {
-      "type": "object",
-      "properties": {
-        "authenticationType": {
-          "type": "string"
-        },
-        "isAuthenticated": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "actor": {
-          "$ref": "#/definitions/ClaimsIdentity"
-        },
-        "bootstrapContext": { },
-        "claims": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Claim"
-          }
-        },
-        "label": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string",
-          "readOnly": true
-        },
-        "nameClaimType": {
-          "type": "string",
-          "readOnly": true
-        },
-        "roleClaimType": {
-          "type": "string",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "ClaimsPrincipal": {
-      "type": "object",
-      "properties": {
-        "claims": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Claim"
-          },
-          "readOnly": true
-        },
-        "identities": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ClaimsIdentity"
-          }
-        },
-        "identity": {
-          "$ref": "#/definitions/IIdentity"
-        }
-      },
-      "additionalProperties": false
-    },
-    "CombinedOrganizationLifecycleODataQueryOptions": {
-      "type": "object",
-      "properties": {
-        "ifMatch": {
-          "readOnly": true
-        },
-        "ifNoneMatch": {
-          "readOnly": true
-        },
-        "request": {
-          "$ref": "#/definitions/HttpRequest"
-        },
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawValues": {
-          "$ref": "#/definitions/ODataRawQueryOptions"
-        },
-        "selectExpand": {
-          "$ref": "#/definitions/SelectExpandQueryOption"
-        },
-        "apply": {
-          "$ref": "#/definitions/ApplyQueryOption"
-        },
-        "filter": {
-          "$ref": "#/definitions/FilterQueryOption"
-        },
-        "orderBy": {
-          "$ref": "#/definitions/OrderByQueryOption"
-        },
-        "skip": {
-          "$ref": "#/definitions/SkipQueryOption"
-        },
-        "skipToken": {
-          "$ref": "#/definitions/SkipTokenQueryOption"
-        },
-        "top": {
-          "$ref": "#/definitions/TopQueryOption"
-        },
-        "count": {
-          "$ref": "#/definitions/CountQueryOption"
-        },
-        "validator": {
-          "$ref": "#/definitions/ODataQueryValidator"
-        }
-      },
-      "additionalProperties": false
-    },
-    "ConnectionInfo": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string"
-        },
-        "remoteIpAddress": {
-          "$ref": "#/definitions/IPAddress"
-        },
-        "remotePort": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "localIpAddress": {
-          "$ref": "#/definitions/IPAddress"
-        },
-        "localPort": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "clientCertificate": {
-          "$ref": "#/definitions/X509Certificate2"
-        }
-      },
-      "additionalProperties": false
-    },
-    "ContactCenterChannelODataQueryOptions": {
-      "type": "object",
-      "properties": {
-        "ifMatch": {
-          "readOnly": true
-        },
-        "ifNoneMatch": {
-          "readOnly": true
-        },
-        "request": {
-          "$ref": "#/definitions/HttpRequest"
-        },
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawValues": {
-          "$ref": "#/definitions/ODataRawQueryOptions"
-        },
-        "selectExpand": {
-          "$ref": "#/definitions/SelectExpandQueryOption"
-        },
-        "apply": {
-          "$ref": "#/definitions/ApplyQueryOption"
-        },
-        "filter": {
-          "$ref": "#/definitions/FilterQueryOption"
-        },
-        "orderBy": {
-          "$ref": "#/definitions/OrderByQueryOption"
-        },
-        "skip": {
-          "$ref": "#/definitions/SkipQueryOption"
-        },
-        "skipToken": {
-          "$ref": "#/definitions/SkipTokenQueryOption"
-        },
-        "top": {
-          "$ref": "#/definitions/TopQueryOption"
-        },
-        "count": {
-          "$ref": "#/definitions/CountQueryOption"
-        },
-        "validator": {
-          "$ref": "#/definitions/ODataQueryValidator"
-        }
-      },
-      "additionalProperties": false
-    },
-    "ContactCenterODataQueryOptions": {
-      "type": "object",
-      "properties": {
-        "ifMatch": {
-          "readOnly": true
-        },
-        "ifNoneMatch": {
-          "readOnly": true
-        },
-        "request": {
-          "$ref": "#/definitions/HttpRequest"
-        },
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawValues": {
-          "$ref": "#/definitions/ODataRawQueryOptions"
-        },
-        "selectExpand": {
-          "$ref": "#/definitions/SelectExpandQueryOption"
-        },
-        "apply": {
-          "$ref": "#/definitions/ApplyQueryOption"
-        },
-        "filter": {
-          "$ref": "#/definitions/FilterQueryOption"
-        },
-        "orderBy": {
-          "$ref": "#/definitions/OrderByQueryOption"
-        },
-        "skip": {
-          "$ref": "#/definitions/SkipQueryOption"
-        },
-        "skipToken": {
-          "$ref": "#/definitions/SkipTokenQueryOption"
-        },
-        "top": {
-          "$ref": "#/definitions/TopQueryOption"
-        },
-        "count": {
-          "$ref": "#/definitions/CountQueryOption"
-        },
-        "validator": {
-          "$ref": "#/definitions/ODataQueryValidator"
-        }
-      },
-      "additionalProperties": false
-    },
-    "ContactCenterResourceODataQueryOptions": {
-      "type": "object",
-      "properties": {
-        "ifMatch": {
-          "readOnly": true
-        },
-        "ifNoneMatch": {
-          "readOnly": true
-        },
-        "request": {
-          "$ref": "#/definitions/HttpRequest"
-        },
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawValues": {
-          "$ref": "#/definitions/ODataRawQueryOptions"
-        },
-        "selectExpand": {
-          "$ref": "#/definitions/SelectExpandQueryOption"
-        },
-        "apply": {
-          "$ref": "#/definitions/ApplyQueryOption"
-        },
-        "filter": {
-          "$ref": "#/definitions/FilterQueryOption"
-        },
-        "orderBy": {
-          "$ref": "#/definitions/OrderByQueryOption"
-        },
-        "skip": {
-          "$ref": "#/definitions/SkipQueryOption"
-        },
-        "skipToken": {
-          "$ref": "#/definitions/SkipTokenQueryOption"
-        },
-        "top": {
-          "$ref": "#/definitions/TopQueryOption"
-        },
-        "count": {
-          "$ref": "#/definitions/CountQueryOption"
-        },
-        "validator": {
-          "$ref": "#/definitions/ODataQueryValidator"
-        }
-      },
-      "additionalProperties": false
-    },
-    "CountQueryOption": {
-      "type": "object",
-      "properties": {
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawValue": {
-          "type": "string"
-        },
-        "value": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "validator": {
-          "$ref": "#/definitions/CountQueryValidator"
-        }
-      },
-      "additionalProperties": false
-    },
-    "CountQueryValidator": {
-      "type": "object",
-      "additionalProperties": false
-    },
-    "CreateEnvironmentManagementSettingResponse": {
-      "description": "Represents the response object for APIs in this service.",
-      "type": "object",
-      "properties": {
-        "objectResult": {
-          "description": "Gets or sets the Id of the entity being created in the response",
-          "type": "string"
-        },
-        "errors": {
-          "$ref": "#/definitions/ErrorResponse"
-        },
-        "nextLink": {
-          "format": "uri",
-          "description": "Gets or sets the nextLink if there are more records to be returned",
-          "type": "string"
-        },
-        "responseMessage": {
-          "description": "Gets or sets the error message.",
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "DatabaseIdentifier": {
-      "required": [
-        "azureRegion",
-        "connectionString",
-        "databaseName",
-        "sqlServerName"
-      ],
-      "type": "object",
-      "properties": {
-        "databaseName": {
-          "minLength": 1,
-          "type": "string"
-        },
-        "sqlServerName": {
-          "minLength": 1,
-          "type": "string"
-        },
-        "connectionString": {
-          "minLength": 1,
-          "type": "string"
-        },
-        "azureRegion": {
-          "$ref": "#/definitions/AzureRegion"
-        }
-      },
-      "additionalProperties": false
-    },
-    "DefaultQuerySettings": {
-      "type": "object",
-      "properties": {
-        "enableExpand": {
-          "type": "boolean"
-        },
-        "enableSelect": {
-          "type": "boolean"
-        },
-        "enableCount": {
-          "type": "boolean"
-        },
-        "enableOrderBy": {
-          "type": "boolean"
-        },
-        "enableFilter": {
-          "type": "boolean"
-        },
-        "maxTop": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "enableSkipToken": {
-          "type": "boolean"
-        }
-      },
-      "additionalProperties": false
-    },
-    "EdmContainerElementKind": {
-      "format": "int32",
-      "enum": [
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "type": "integer"
-    },
-    "EdmExpressionKind": {
-      "format": "int32",
-      "enum": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25
-      ],
-      "type": "integer"
-    },
-    "EdmOnDeleteAction": {
-      "format": "int32",
-      "enum": [
-        0,
-        1
-      ],
-      "type": "integer"
-    },
-    "EdmPropertyKind": {
-      "format": "int32",
-      "enum": [
-        0,
-        1,
-        2
-      ],
-      "type": "integer"
-    },
-    "EdmReferentialConstraintPropertyPair": {
-      "type": "object",
-      "properties": {
-        "dependentProperty": {
-          "$ref": "#/definitions/IEdmStructuralProperty"
-        },
-        "principalProperty": {
-          "$ref": "#/definitions/IEdmStructuralProperty"
-        }
-      },
-      "additionalProperties": false
-    },
-    "EdmSchemaElementKind": {
-      "format": "int32",
-      "enum": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "type": "integer"
-    },
-    "EdmTypeKind": {
-      "format": "int32",
-      "enum": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ],
-      "type": "integer"
-    },
-    "EnvironmentManagementSetting": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string"
-        },
-        "tenantId": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "enableIpBasedStorageAccessSignatureRule": {
-          "type": "boolean"
-        },
-        "allowedIpRangeForStorageAccessSignatures": {
-          "type": "string"
-        },
-        "ipBasedStorageAccessSignatureMode": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "loggingEnabledForIpBasedStorageAccessSignature": {
-          "type": "boolean"
-        },
-        "rowRevision": {
-          "format": "int64",
-          "type": "integer"
-        }
-      },
-      "additionalProperties": false
-    },
-    "EnvironmentManagementSettingODataQueryOptions": {
-      "type": "object",
-      "properties": {
-        "ifMatch": {
-          "readOnly": true
-        },
-        "ifNoneMatch": {
-          "readOnly": true
-        },
-        "request": {
-          "$ref": "#/definitions/HttpRequest"
-        },
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawValues": {
-          "$ref": "#/definitions/ODataRawQueryOptions"
-        },
-        "selectExpand": {
-          "$ref": "#/definitions/SelectExpandQueryOption"
-        },
-        "apply": {
-          "$ref": "#/definitions/ApplyQueryOption"
-        },
-        "filter": {
-          "$ref": "#/definitions/FilterQueryOption"
-        },
-        "orderBy": {
-          "$ref": "#/definitions/OrderByQueryOption"
-        },
-        "skip": {
-          "$ref": "#/definitions/SkipQueryOption"
-        },
-        "skipToken": {
-          "$ref": "#/definitions/SkipTokenQueryOption"
-        },
-        "top": {
-          "$ref": "#/definitions/TopQueryOption"
-        },
-        "count": {
-          "$ref": "#/definitions/CountQueryOption"
-        },
-        "validator": {
-          "$ref": "#/definitions/ODataQueryValidator"
-        }
-      },
-      "additionalProperties": false
-    },
-    "ErrorDetail": {
+    "ErrorInfo": {
       "type": "object",
       "properties": {
         "code": {
+          "description": "The error code.",
           "type": "string"
         },
-        "message": {
-          "type": "string"
-        },
-        "target": {
-          "type": "string"
-        },
-        "value": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "ErrorResponse": {
-      "type": "object",
-      "properties": {
-        "code": {
-          "type": "string"
-        },
-        "message": {
-          "type": "string"
-        },
-        "details": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ErrorDetail"
-          }
-        }
-      },
-      "additionalProperties": false
-    },
-    "FilterClause": {
-      "type": "object",
-      "properties": {
-        "expression": {
-          "$ref": "#/definitions/SingleValueNode"
-        },
-        "rangeVariable": {
-          "$ref": "#/definitions/RangeVariable"
-        },
-        "itemType": {
-          "$ref": "#/definitions/IEdmTypeReference"
-        }
-      },
-      "additionalProperties": false
-    },
-    "FilterQueryOption": {
-      "type": "object",
-      "properties": {
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "validator": {
-          "$ref": "#/definitions/FilterQueryValidator"
-        },
-        "filterClause": {
-          "$ref": "#/definitions/FilterClause"
-        },
-        "rawValue": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "FilterQueryValidator": {
-      "type": "object",
-      "additionalProperties": false
-    },
-    "GetEnvironmentManagementSettingResponse": {
-      "description": "Represents the response object for APIs in this service.",
-      "type": "object",
-      "properties": {
-        "objectResult": {
-          "description": "Gets or sets the fields for the entities being queried",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/EnvironmentManagementSetting"
-          }
-        },
-        "errors": {
-          "$ref": "#/definitions/ErrorResponse"
-        },
-        "nextLink": {
-          "format": "uri",
-          "description": "Gets or sets the nextLink if there are more records to be returned",
-          "type": "string"
-        },
-        "responseMessage": {
-          "description": "Gets or sets the error message.",
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "HandleNullPropagationOption": {
-      "format": "int32",
-      "enum": [
-        0,
-        1,
-        2
-      ],
-      "type": "integer"
-    },
-    "HostString": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "string"
-        },
-        "hasValue": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "host": {
-          "type": "string"
-        },
-        "port": {
-          "format": "int32",
-          "type": "integer"
-        }
-      },
-      "additionalProperties": false
-    },
-    "HttpContext": {
-      "type": "object",
-      "properties": {
-        "features": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/TypeObjectKeyValuePair"
-          },
-          "readOnly": true
-        },
-        "request": {
-          "$ref": "#/definitions/HttpRequest"
-        },
-        "response": {
-          "$ref": "#/definitions/HttpResponse"
-        },
-        "connection": {
-          "$ref": "#/definitions/ConnectionInfo"
-        },
-        "webSockets": {
-          "$ref": "#/definitions/WebSocketManager"
-        },
-        "user": {
-          "$ref": "#/definitions/ClaimsPrincipal"
-        },
-        "items": {
-          "type": "object",
-          "additionalProperties": { }
-        },
-        "requestServices": {
-          "$ref": "#/definitions/IServiceProvider"
-        },
-        "requestAborted": {
-          "$ref": "#/definitions/CancellationToken"
-        },
-        "traceIdentifier": {
-          "type": "string"
-        },
-        "session": {
-          "$ref": "#/definitions/ISession"
-        }
-      },
-      "additionalProperties": false
-    },
-    "HttpRequest": {
-      "type": "object",
-      "properties": {
-        "httpContext": {
-          "$ref": "#/definitions/HttpContext"
-        },
-        "method": {
-          "type": "string"
-        },
-        "scheme": {
-          "type": "string"
-        },
-        "isHttps": {
-          "type": "boolean"
-        },
-        "host": {
-          "$ref": "#/definitions/HostString"
-        },
-        "pathBase": {
-          "type": "string"
-        },
-        "path": {
-          "type": "string"
-        },
-        "queryString": {
-          "$ref": "#/definitions/QueryString"
-        },
-        "query": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/StringStringValuesKeyValuePair"
-          }
-        },
-        "protocol": {
-          "type": "string"
-        },
-        "headers": {
+        "fieldErrors": {
           "type": "object",
           "additionalProperties": {
             "type": "array",
             "items": {
+              "description": "The individual errors.",
               "type": "string"
             }
-          },
-          "readOnly": true
-        },
-        "cookies": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/StringStringKeyValuePair"
-          }
-        },
-        "contentLength": {
-          "format": "int64",
-          "type": "integer"
-        },
-        "contentType": {
-          "type": "string"
-        },
-        "body": {
-          "format": "binary",
-          "type": "string"
-        },
-        "bodyReader": {
-          "format": "binary",
-          "type": "string",
-          "readOnly": true
-        },
-        "hasFormContentType": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "form": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/StringStringValuesKeyValuePair"
-          }
-        },
-        "routeValues": {
-          "type": "object",
-          "additionalProperties": { }
-        }
-      },
-      "additionalProperties": false
-    },
-    "HttpResponse": {
-      "type": "object",
-      "properties": {
-        "httpContext": {
-          "$ref": "#/definitions/HttpContext"
-        },
-        "statusCode": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "headers": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "readOnly": true
-        },
-        "body": {
-          "format": "binary",
-          "type": "string"
-        },
-        "bodyWriter": {
-          "$ref": "#/definitions/PipeWriter"
-        },
-        "contentLength": {
-          "format": "int64",
-          "type": "integer"
-        },
-        "contentType": {
-          "type": "string"
-        },
-        "cookies": {
-          "$ref": "#/definitions/IResponseCookies"
-        },
-        "hasStarted": {
-          "type": "boolean",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmDirectValueAnnotationsManager": {
-      "type": "object",
-      "additionalProperties": false
-    },
-    "IEdmEntityContainer": {
-      "type": "object",
-      "properties": {
-        "elements": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/IEdmEntityContainerElement"
-          },
-          "readOnly": true
-        },
-        "schemaElementKind": {
-          "$ref": "#/definitions/EdmSchemaElementKind"
-        },
-        "namespace": {
-          "type": "string",
-          "readOnly": true
-        },
-        "name": {
-          "type": "string",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmEntityContainerElement": {
-      "type": "object",
-      "properties": {
-        "containerElementKind": {
-          "$ref": "#/definitions/EdmContainerElementKind"
-        },
-        "container": {
-          "$ref": "#/definitions/IEdmEntityContainer"
-        },
-        "name": {
-          "type": "string",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmExpression": {
-      "type": "object",
-      "properties": {
-        "expressionKind": {
-          "$ref": "#/definitions/EdmExpressionKind"
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmModel": {
-      "type": "object",
-      "properties": {
-        "schemaElements": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/IEdmSchemaElement"
-          },
-          "readOnly": true
-        },
-        "vocabularyAnnotations": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/IEdmVocabularyAnnotation"
-          },
-          "readOnly": true
-        },
-        "referencedModels": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/IEdmModel"
-          },
-          "readOnly": true
-        },
-        "declaredNamespaces": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "readOnly": true
-        },
-        "directValueAnnotationsManager": {
-          "$ref": "#/definitions/IEdmDirectValueAnnotationsManager"
-        },
-        "entityContainer": {
-          "$ref": "#/definitions/IEdmEntityContainer"
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmNavigationProperty": {
-      "type": "object",
-      "properties": {
-        "partner": {
-          "$ref": "#/definitions/IEdmNavigationProperty"
-        },
-        "onDelete": {
-          "$ref": "#/definitions/EdmOnDeleteAction"
-        },
-        "containsTarget": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "referentialConstraint": {
-          "$ref": "#/definitions/IEdmReferentialConstraint"
-        },
-        "propertyKind": {
-          "$ref": "#/definitions/EdmPropertyKind"
-        },
-        "type": {
-          "$ref": "#/definitions/IEdmTypeReference"
-        },
-        "declaringType": {
-          "$ref": "#/definitions/IEdmStructuredType"
-        },
-        "name": {
-          "type": "string",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmNavigationPropertyBinding": {
-      "type": "object",
-      "properties": {
-        "navigationProperty": {
-          "$ref": "#/definitions/IEdmNavigationProperty"
-        },
-        "target": {
-          "$ref": "#/definitions/IEdmNavigationSource"
-        },
-        "path": {
-          "$ref": "#/definitions/IEdmPathExpression"
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmNavigationSource": {
-      "type": "object",
-      "properties": {
-        "navigationPropertyBindings": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/IEdmNavigationPropertyBinding"
-          },
-          "readOnly": true
-        },
-        "path": {
-          "$ref": "#/definitions/IEdmPathExpression"
-        },
-        "type": {
-          "$ref": "#/definitions/IEdmType"
-        },
-        "name": {
-          "type": "string",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmPathExpression": {
-      "type": "object",
-      "properties": {
-        "pathSegments": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "readOnly": true
-        },
-        "path": {
-          "type": "string",
-          "readOnly": true
-        },
-        "expressionKind": {
-          "$ref": "#/definitions/EdmExpressionKind"
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmProperty": {
-      "type": "object",
-      "properties": {
-        "propertyKind": {
-          "$ref": "#/definitions/EdmPropertyKind"
-        },
-        "type": {
-          "$ref": "#/definitions/IEdmTypeReference"
-        },
-        "declaringType": {
-          "$ref": "#/definitions/IEdmStructuredType"
-        },
-        "name": {
-          "type": "string",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmReferentialConstraint": {
-      "type": "object",
-      "properties": {
-        "propertyPairs": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/EdmReferentialConstraintPropertyPair"
-          },
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmSchemaElement": {
-      "type": "object",
-      "properties": {
-        "schemaElementKind": {
-          "$ref": "#/definitions/EdmSchemaElementKind"
-        },
-        "namespace": {
-          "type": "string",
-          "readOnly": true
-        },
-        "name": {
-          "type": "string",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmStructuralProperty": {
-      "type": "object",
-      "properties": {
-        "defaultValueString": {
-          "type": "string",
-          "readOnly": true
-        },
-        "propertyKind": {
-          "$ref": "#/definitions/EdmPropertyKind"
-        },
-        "type": {
-          "$ref": "#/definitions/IEdmTypeReference"
-        },
-        "declaringType": {
-          "$ref": "#/definitions/IEdmStructuredType"
-        },
-        "name": {
-          "type": "string",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmStructuredType": {
-      "type": "object",
-      "properties": {
-        "isAbstract": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "isOpen": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "baseType": {
-          "$ref": "#/definitions/IEdmStructuredType"
-        },
-        "declaredProperties": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/IEdmProperty"
-          },
-          "readOnly": true
-        },
-        "typeKind": {
-          "$ref": "#/definitions/EdmTypeKind"
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmTerm": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "$ref": "#/definitions/IEdmTypeReference"
-        },
-        "appliesTo": {
-          "type": "string",
-          "readOnly": true
-        },
-        "defaultValue": {
-          "type": "string",
-          "readOnly": true
-        },
-        "schemaElementKind": {
-          "$ref": "#/definitions/EdmSchemaElementKind"
-        },
-        "namespace": {
-          "type": "string",
-          "readOnly": true
-        },
-        "name": {
-          "type": "string",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmType": {
-      "type": "object",
-      "properties": {
-        "typeKind": {
-          "$ref": "#/definitions/EdmTypeKind"
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmTypeReference": {
-      "type": "object",
-      "properties": {
-        "isNullable": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "definition": {
-          "$ref": "#/definitions/IEdmType"
-        }
-      },
-      "additionalProperties": false
-    },
-    "IEdmVocabularyAnnotatable": {
-      "type": "object",
-      "additionalProperties": false
-    },
-    "IEdmVocabularyAnnotation": {
-      "type": "object",
-      "properties": {
-        "qualifier": {
-          "type": "string",
-          "readOnly": true
-        },
-        "term": {
-          "$ref": "#/definitions/IEdmTerm"
-        },
-        "target": {
-          "$ref": "#/definitions/IEdmVocabularyAnnotatable"
-        },
-        "value": {
-          "$ref": "#/definitions/IEdmExpression"
-        }
-      },
-      "additionalProperties": false
-    },
-    "IIdentity": {
-      "type": "object",
-      "properties": {
-        "authenticationType": {
-          "type": "string",
-          "readOnly": true
-        },
-        "isAuthenticated": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "name": {
-          "type": "string",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "IPAddress": {
-      "type": "object",
-      "properties": {
-        "addressFamily": {
-          "$ref": "#/definitions/AddressFamily"
-        },
-        "scopeId": {
-          "format": "int64",
-          "type": "integer"
-        },
-        "isIPv6Multicast": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "isIPv6LinkLocal": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "isIPv6SiteLocal": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "isIPv6Teredo": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "isIPv6UniqueLocal": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "isIPv4MappedToIPv6": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "address": {
-          "format": "int64",
-          "type": "integer"
-        }
-      },
-      "additionalProperties": false
-    },
-    "IResponseCookies": {
-      "type": "object",
-      "additionalProperties": false
-    },
-    "IServiceProvider": {
-      "type": "object",
-      "additionalProperties": false
-    },
-    "ISession": {
-      "type": "object",
-      "properties": {
-        "isAvailable": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "id": {
-          "type": "string",
-          "readOnly": true
-        },
-        "keys": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "KeySizes": {
-      "type": "object",
-      "properties": {
-        "minSize": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "maxSize": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "skipSize": {
-          "format": "int32",
-          "type": "integer"
-        }
-      },
-      "additionalProperties": false
-    },
-    "ODataPath": {
-      "type": "object",
-      "properties": {
-        "edmType": {
-          "$ref": "#/definitions/IEdmType"
-        },
-        "navigationSource": {
-          "$ref": "#/definitions/IEdmNavigationSource"
-        },
-        "segments": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ODataPathSegment"
-          }
-        },
-        "pathTemplate": {
-          "type": "string",
-          "readOnly": true
-        },
-        "path": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ODataPathSegment"
-          },
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "ODataPathSegment": {
-      "type": "object",
-      "properties": {
-        "edmType": {
-          "$ref": "#/definitions/IEdmType"
-        },
-        "identifier": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "ODataQueryContext": {
-      "type": "object",
-      "properties": {
-        "defaultQuerySettings": {
-          "$ref": "#/definitions/DefaultQuerySettings"
-        },
-        "model": {
-          "$ref": "#/definitions/IEdmModel"
-        },
-        "elementType": {
-          "$ref": "#/definitions/IEdmType"
-        },
-        "navigationSource": {
-          "$ref": "#/definitions/IEdmNavigationSource"
-        },
-        "elementClrType": {
-          "type": "string"
-        },
-        "path": {
-          "$ref": "#/definitions/ODataPath"
-        },
-        "requestContainer": {
-          "$ref": "#/definitions/IServiceProvider"
-        }
-      },
-      "additionalProperties": false
-    },
-    "ODataQueryOptions": {
-      "type": "object",
-      "properties": {
-        "request": {
-          "$ref": "#/definitions/HttpRequest"
-        },
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawValues": {
-          "$ref": "#/definitions/ODataRawQueryOptions"
-        },
-        "selectExpand": {
-          "$ref": "#/definitions/SelectExpandQueryOption"
-        },
-        "apply": {
-          "$ref": "#/definitions/ApplyQueryOption"
-        },
-        "filter": {
-          "$ref": "#/definitions/FilterQueryOption"
-        },
-        "orderBy": {
-          "$ref": "#/definitions/OrderByQueryOption"
-        },
-        "skip": {
-          "$ref": "#/definitions/SkipQueryOption"
-        },
-        "skipToken": {
-          "$ref": "#/definitions/SkipTokenQueryOption"
-        },
-        "top": {
-          "$ref": "#/definitions/TopQueryOption"
-        },
-        "count": {
-          "$ref": "#/definitions/CountQueryOption"
-        },
-        "validator": {
-          "$ref": "#/definitions/ODataQueryValidator"
-        },
-        "ifMatch": {
-          "readOnly": true
-        },
-        "ifNoneMatch": {
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "ODataQuerySettings": {
-      "type": "object",
-      "properties": {
-        "ensureStableOrdering": {
-          "type": "boolean"
-        },
-        "handleNullPropagation": {
-          "$ref": "#/definitions/HandleNullPropagationOption"
-        },
-        "enableConstantParameterization": {
-          "type": "boolean"
-        },
-        "enableCorrelatedSubqueryBuffering": {
-          "type": "boolean"
-        },
-        "pageSize": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "handleReferenceNavigationPropertyExpandFilter": {
-          "type": "boolean"
-        }
-      },
-      "additionalProperties": false
-    },
-    "ODataQueryValidator": {
-      "type": "object",
-      "additionalProperties": false
-    },
-    "ODataRawQueryOptions": {
-      "type": "object",
-      "properties": {
-        "filter": {
-          "type": "string",
-          "readOnly": true
-        },
-        "apply": {
-          "type": "string",
-          "readOnly": true
-        },
-        "orderBy": {
-          "type": "string",
-          "readOnly": true
-        },
-        "top": {
-          "type": "string",
-          "readOnly": true
-        },
-        "skip": {
-          "type": "string",
-          "readOnly": true
-        },
-        "select": {
-          "type": "string",
-          "readOnly": true
-        },
-        "expand": {
-          "type": "string",
-          "readOnly": true
-        },
-        "count": {
-          "type": "string",
-          "readOnly": true
-        },
-        "format": {
-          "type": "string",
-          "readOnly": true
-        },
-        "skipToken": {
-          "type": "string",
-          "readOnly": true
-        },
-        "deltaToken": {
-          "type": "string",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "Oid": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "string"
-        },
-        "friendlyName": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "OperationResponse": {
-      "description": "Represents the response object for APIs in this service.",
-      "type": "object",
-      "properties": {
-        "objectResult": {
-          "description": "Gets or sets the response's object"
-        },
-        "errors": {
-          "$ref": "#/definitions/ErrorResponse"
-        },
-        "nextLink": {
-          "format": "uri",
-          "description": "Gets or sets the nextLink if there are more records to be returned",
-          "type": "string"
-        },
-        "debugErrors": {
-          "description": "Gets or sets DebugErrors, only shown for private/local testing",
-          "type": "string"
-        },
-        "responseMessage": {
-          "description": "Gets or sets the error message.",
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "OrderByClause": {
-      "type": "object",
-      "properties": {
-        "thenBy": {
-          "$ref": "#/definitions/OrderByClause"
-        },
-        "expression": {
-          "$ref": "#/definitions/SingleValueNode"
-        },
-        "direction": {
-          "$ref": "#/definitions/OrderByDirection"
-        },
-        "rangeVariable": {
-          "$ref": "#/definitions/RangeVariable"
-        },
-        "itemType": {
-          "$ref": "#/definitions/IEdmTypeReference"
-        }
-      },
-      "additionalProperties": false
-    },
-    "OrderByDirection": {
-      "format": "int32",
-      "enum": [
-        0,
-        1
-      ],
-      "type": "integer"
-    },
-    "OrderByNode": {
-      "type": "object",
-      "properties": {
-        "direction": {
-          "$ref": "#/definitions/OrderByDirection"
-        }
-      },
-      "additionalProperties": false
-    },
-    "OrderByQueryOption": {
-      "type": "object",
-      "properties": {
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "orderByNodes": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/OrderByNode"
-          },
-          "readOnly": true
-        },
-        "rawValue": {
-          "type": "string"
-        },
-        "validator": {
-          "$ref": "#/definitions/OrderByQueryValidator"
-        },
-        "orderByClause": {
-          "$ref": "#/definitions/OrderByClause"
-        }
-      },
-      "additionalProperties": false
-    },
-    "OrderByQueryValidator": {
-      "type": "object",
-      "additionalProperties": false
-    },
-    "OrganizationLifecycleODataQueryOptions": {
-      "type": "object",
-      "properties": {
-        "ifMatch": {
-          "readOnly": true
-        },
-        "ifNoneMatch": {
-          "readOnly": true
-        },
-        "request": {
-          "$ref": "#/definitions/HttpRequest"
-        },
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawValues": {
-          "$ref": "#/definitions/ODataRawQueryOptions"
-        },
-        "selectExpand": {
-          "$ref": "#/definitions/SelectExpandQueryOption"
-        },
-        "apply": {
-          "$ref": "#/definitions/ApplyQueryOption"
-        },
-        "filter": {
-          "$ref": "#/definitions/FilterQueryOption"
-        },
-        "orderBy": {
-          "$ref": "#/definitions/OrderByQueryOption"
-        },
-        "skip": {
-          "$ref": "#/definitions/SkipQueryOption"
-        },
-        "skipToken": {
-          "$ref": "#/definitions/SkipTokenQueryOption"
-        },
-        "top": {
-          "$ref": "#/definitions/TopQueryOption"
-        },
-        "count": {
-          "$ref": "#/definitions/CountQueryOption"
-        },
-        "validator": {
-          "$ref": "#/definitions/ODataQueryValidator"
-        }
-      },
-      "additionalProperties": false
-    },
-    "OrganizationLifecyclePropertyODataQueryOptions": {
-      "type": "object",
-      "properties": {
-        "ifMatch": {
-          "readOnly": true
-        },
-        "ifNoneMatch": {
-          "readOnly": true
-        },
-        "request": {
-          "$ref": "#/definitions/HttpRequest"
-        },
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawValues": {
-          "$ref": "#/definitions/ODataRawQueryOptions"
-        },
-        "selectExpand": {
-          "$ref": "#/definitions/SelectExpandQueryOption"
-        },
-        "apply": {
-          "$ref": "#/definitions/ApplyQueryOption"
-        },
-        "filter": {
-          "$ref": "#/definitions/FilterQueryOption"
-        },
-        "orderBy": {
-          "$ref": "#/definitions/OrderByQueryOption"
-        },
-        "skip": {
-          "$ref": "#/definitions/SkipQueryOption"
-        },
-        "skipToken": {
-          "$ref": "#/definitions/SkipTokenQueryOption"
-        },
-        "top": {
-          "$ref": "#/definitions/TopQueryOption"
-        },
-        "count": {
-          "$ref": "#/definitions/CountQueryOption"
-        },
-        "validator": {
-          "$ref": "#/definitions/ODataQueryValidator"
-        }
-      },
-      "additionalProperties": false
-    },
-    "OrganizationODataQueryOptions": {
-      "type": "object",
-      "properties": {
-        "ifMatch": {
-          "readOnly": true
-        },
-        "ifNoneMatch": {
-          "readOnly": true
-        },
-        "request": {
-          "$ref": "#/definitions/HttpRequest"
-        },
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawValues": {
-          "$ref": "#/definitions/ODataRawQueryOptions"
-        },
-        "selectExpand": {
-          "$ref": "#/definitions/SelectExpandQueryOption"
-        },
-        "apply": {
-          "$ref": "#/definitions/ApplyQueryOption"
-        },
-        "filter": {
-          "$ref": "#/definitions/FilterQueryOption"
-        },
-        "orderBy": {
-          "$ref": "#/definitions/OrderByQueryOption"
-        },
-        "skip": {
-          "$ref": "#/definitions/SkipQueryOption"
-        },
-        "skipToken": {
-          "$ref": "#/definitions/SkipTokenQueryOption"
-        },
-        "top": {
-          "$ref": "#/definitions/TopQueryOption"
-        },
-        "count": {
-          "$ref": "#/definitions/CountQueryOption"
-        },
-        "validator": {
-          "$ref": "#/definitions/ODataQueryValidator"
-        }
-      },
-      "additionalProperties": false
-    },
-    "OrganizationPropertyODataQueryOptions": {
-      "type": "object",
-      "properties": {
-        "ifMatch": {
-          "readOnly": true
-        },
-        "ifNoneMatch": {
-          "readOnly": true
-        },
-        "request": {
-          "$ref": "#/definitions/HttpRequest"
-        },
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawValues": {
-          "$ref": "#/definitions/ODataRawQueryOptions"
-        },
-        "selectExpand": {
-          "$ref": "#/definitions/SelectExpandQueryOption"
-        },
-        "apply": {
-          "$ref": "#/definitions/ApplyQueryOption"
-        },
-        "filter": {
-          "$ref": "#/definitions/FilterQueryOption"
-        },
-        "orderBy": {
-          "$ref": "#/definitions/OrderByQueryOption"
-        },
-        "skip": {
-          "$ref": "#/definitions/SkipQueryOption"
-        },
-        "skipToken": {
-          "$ref": "#/definitions/SkipTokenQueryOption"
-        },
-        "top": {
-          "$ref": "#/definitions/TopQueryOption"
-        },
-        "count": {
-          "$ref": "#/definitions/CountQueryOption"
-        },
-        "validator": {
-          "$ref": "#/definitions/ODataQueryValidator"
-        }
-      },
-      "additionalProperties": false
-    },
-    "PipeWriter": {
-      "type": "object",
-      "properties": {
-        "canGetUnflushedBytes": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "unflushedBytes": {
-          "format": "int64",
-          "type": "integer",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "PublicKey": {
-      "type": "object",
-      "properties": {
-        "encodedKeyValue": {
-          "$ref": "#/definitions/AsnEncodedData"
-        },
-        "encodedParameters": {
-          "$ref": "#/definitions/AsnEncodedData"
-        },
-        "key": {
-          "$ref": "#/definitions/AsymmetricAlgorithm"
-        },
-        "oid": {
-          "$ref": "#/definitions/Oid"
-        }
-      },
-      "additionalProperties": false
-    },
-    "QueryNodeKind": {
-      "format": "int32",
-      "enum": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33
-      ],
-      "type": "integer"
-    },
-    "QueryString": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "string"
-        },
-        "hasValue": {
-          "type": "boolean",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "RangeVariable": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "readOnly": true
-        },
-        "typeReference": {
-          "$ref": "#/definitions/IEdmTypeReference"
-        },
-        "kind": {
-          "format": "int32",
-          "type": "integer",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "RecoverableOrganizationODataQueryOptions": {
-      "type": "object",
-      "properties": {
-        "ifMatch": {
-          "readOnly": true
-        },
-        "ifNoneMatch": {
-          "readOnly": true
-        },
-        "request": {
-          "$ref": "#/definitions/HttpRequest"
-        },
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawValues": {
-          "$ref": "#/definitions/ODataRawQueryOptions"
-        },
-        "selectExpand": {
-          "$ref": "#/definitions/SelectExpandQueryOption"
-        },
-        "apply": {
-          "$ref": "#/definitions/ApplyQueryOption"
-        },
-        "filter": {
-          "$ref": "#/definitions/FilterQueryOption"
-        },
-        "orderBy": {
-          "$ref": "#/definitions/OrderByQueryOption"
-        },
-        "skip": {
-          "$ref": "#/definitions/SkipQueryOption"
-        },
-        "skipToken": {
-          "$ref": "#/definitions/SkipTokenQueryOption"
-        },
-        "top": {
-          "$ref": "#/definitions/TopQueryOption"
-        },
-        "count": {
-          "$ref": "#/definitions/CountQueryOption"
-        },
-        "validator": {
-          "$ref": "#/definitions/ODataQueryValidator"
-        }
-      },
-      "additionalProperties": false
-    },
-    "SafeWaitHandle": {
-      "type": "object",
-      "properties": {
-        "isInvalid": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "isClosed": {
-          "type": "boolean",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "SelectExpandClause": {
-      "type": "object",
-      "properties": {
-        "selectedItems": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/SelectItem"
-          }
-        },
-        "allSelected": {
-          "type": "boolean"
-        }
-      },
-      "additionalProperties": false
-    },
-    "SelectExpandQueryOption": {
-      "type": "object",
-      "properties": {
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawSelect": {
-          "type": "string",
-          "readOnly": true
-        },
-        "rawExpand": {
-          "type": "string",
-          "readOnly": true
-        },
-        "validator": {
-          "$ref": "#/definitions/SelectExpandQueryValidator"
-        },
-        "selectExpandClause": {
-          "$ref": "#/definitions/SelectExpandClause"
-        },
-        "levelsMaxLiteralExpansionDepth": {
-          "format": "int32",
-          "type": "integer"
-        }
-      },
-      "additionalProperties": false
-    },
-    "SelectExpandQueryValidator": {
-      "type": "object",
-      "additionalProperties": false
-    },
-    "SelectItem": {
-      "type": "object",
-      "additionalProperties": false
-    },
-    "SingleValueNode": {
-      "type": "object",
-      "properties": {
-        "typeReference": {
-          "$ref": "#/definitions/IEdmTypeReference"
-        },
-        "kind": {
-          "$ref": "#/definitions/QueryNodeKind"
-        }
-      },
-      "additionalProperties": false
-    },
-    "SkipQueryOption": {
-      "type": "object",
-      "properties": {
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawValue": {
-          "type": "string"
-        },
-        "value": {
-          "format": "int32",
-          "type": "integer",
-          "readOnly": true
-        },
-        "validator": {
-          "$ref": "#/definitions/SkipQueryValidator"
-        }
-      },
-      "additionalProperties": false
-    },
-    "SkipQueryValidator": {
-      "type": "object",
-      "additionalProperties": false
-    },
-    "SkipTokenQueryOption": {
-      "type": "object",
-      "properties": {
-        "rawValue": {
-          "type": "string"
-        },
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "validator": {
-          "$ref": "#/definitions/SkipTokenQueryValidator"
-        },
-        "querySettings": {
-          "$ref": "#/definitions/ODataQuerySettings"
-        },
-        "queryOptions": {
-          "$ref": "#/definitions/ODataQueryOptions"
-        }
-      },
-      "additionalProperties": false
-    },
-    "SkipTokenQueryValidator": {
-      "type": "object",
-      "additionalProperties": false
-    },
-    "StringStringKeyValuePair": {
-      "type": "object",
-      "properties": {
-        "key": {
-          "type": "string"
-        },
-        "value": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "StringStringValuesKeyValuePair": {
-      "type": "object",
-      "properties": {
-        "key": {
-          "type": "string"
-        },
-        "value": {
-          "type": "array",
-          "items": {
-            "type": "string"
           }
         }
       },
       "additionalProperties": false
     },
-    "TopQueryOption": {
+    "Environment": {
       "type": "object",
       "properties": {
-        "context": {
-          "$ref": "#/definitions/ODataQueryContext"
-        },
-        "rawValue": {
-          "type": "string"
-        },
-        "value": {
-          "format": "int32",
-          "type": "integer",
-          "readOnly": true
-        },
-        "validator": {
-          "$ref": "#/definitions/TopQueryValidator"
-        }
-      },
-      "additionalProperties": false
-    },
-    "TopQueryValidator": {
-      "type": "object",
-      "additionalProperties": false
-    },
-    "TransformationNode": {
-      "type": "object",
-      "properties": {
-        "kind": {
-          "$ref": "#/definitions/TransformationNodeKind"
-        }
-      },
-      "additionalProperties": false
-    },
-    "TransformationNodeKind": {
-      "format": "int32",
-      "enum": [
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "type": "integer"
-    },
-    "TypeObjectKeyValuePair": {
-      "type": "object",
-      "properties": {
-        "key": {
-          "type": "string"
-        },
-        "value": { }
-      },
-      "additionalProperties": false
-    },
-    "UpdateDatabaseDetailsRequest": {
-      "required": [
-        "primaryDatabaseIdentifier"
-      ],
-      "type": "object",
-      "properties": {
-        "primaryDatabaseIdentifier": {
-          "$ref": "#/definitions/DatabaseIdentifier"
-        },
-        "continuousCopies": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/DatabaseIdentifier"
-          }
-        },
-        "organizationId": {
-          "format": "uuid",
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "WaitHandle": {
-      "type": "object",
-      "properties": {
-        "handle": { },
-        "safeWaitHandle": {
-          "$ref": "#/definitions/SafeWaitHandle"
-        }
-      },
-      "additionalProperties": false
-    },
-    "WebSocketManager": {
-      "type": "object",
-      "properties": {
-        "isWebSocketRequest": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "webSocketRequestedProtocols": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "X500DistinguishedName": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "readOnly": true
-        },
-        "oid": {
-          "$ref": "#/definitions/Oid"
-        },
-        "rawData": {
-          "format": "byte",
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "X509Certificate2": {
-      "type": "object",
-      "properties": {
-        "archived": {
-          "type": "boolean"
-        },
-        "extensions": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/X509Extension"
-          },
-          "readOnly": true
-        },
-        "friendlyName": {
-          "type": "string"
-        },
-        "hasPrivateKey": {
-          "type": "boolean",
-          "readOnly": true
-        },
-        "privateKey": {
-          "$ref": "#/definitions/AsymmetricAlgorithm"
-        },
-        "issuerName": {
-          "$ref": "#/definitions/X500DistinguishedName"
-        },
-        "notAfter": {
-          "format": "date-time",
-          "type": "string",
-          "readOnly": true
-        },
-        "notBefore": {
-          "format": "date-time",
-          "type": "string",
-          "readOnly": true
-        },
-        "publicKey": {
-          "$ref": "#/definitions/PublicKey"
-        },
-        "rawData": {
-          "format": "byte",
-          "type": "string"
-        },
-        "serialNumber": {
-          "type": "string",
-          "readOnly": true
-        },
-        "signatureAlgorithm": {
-          "$ref": "#/definitions/Oid"
-        },
-        "subjectName": {
-          "$ref": "#/definitions/X500DistinguishedName"
-        },
-        "thumbprint": {
-          "type": "string",
-          "readOnly": true
-        },
-        "version": {
-          "format": "int32",
-          "type": "integer",
-          "readOnly": true
-        },
-        "handle": { },
-        "issuer": {
-          "type": "string",
-          "readOnly": true
-        },
-        "subject": {
-          "type": "string",
-          "readOnly": true
-        }
-      },
-      "additionalProperties": false
-    },
-    "X509Extension": {
-      "type": "object",
-      "properties": {
-        "critical": {
-          "type": "boolean"
-        },
-        "oid": {
-          "$ref": "#/definitions/Oid"
-        },
-        "rawData": {
-          "format": "byte",
+        "environmentId": {
+          "description": "The environment ID.",
           "type": "string"
         }
       },

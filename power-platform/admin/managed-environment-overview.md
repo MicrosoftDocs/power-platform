@@ -2,12 +2,14 @@
 title: Managed Environments overview 
 description: Use Managed Environments to view and control your Dynamics 365 applications with less effort.
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 05/28/2024
+ms.topic: concept-article
+ms.date: 08/11/2025
 author: mihaelablendea 
 ms.author: mihaelab 
 ms.reviewer: sericks
 contributors:
+  - paulliew
+  - akadrno 
   - ritesp 
   - ShawnNandiMSFT
   - AngelMarshall
@@ -16,6 +18,7 @@ ms.custom: "admin-security"
 search.audienceType: 
   - admin
 ---
+
 # Managed Environments overview 
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2206011 and 2211534 -->
@@ -44,14 +47,17 @@ A Managed Environment encompasses, but isn't limited to, the following features:
 - [Default environment routing](default-environment-routing.md)
 - [Create an app description with Copilot](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
 - [Virtual Network support for Power Platform](vnet-support-overview.md)
-  
+- [Conditional access on individual apps](/power-platform/admin/admin-manage-apps#conditional-access-on-granular-apps-preview)
+- [Control which apps are allowed in your environment](control-app-access-environment.md)
+- [Configure auditing for an environment](manage-dataverse-auditing.md#configure-auditing-for-an-environment)
+- [Create and manage masking rules](create-manage-masking-rules.md)
 
 > [!NOTE]
 > Managed Environments is included as an entitlement with standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses. Trial licenses can be used to license users in Managed Environments, with the restrictions specific to these types of licenses. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 >
 > Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
 
-### See also
+### Related content
 - [Enable Managed Environments](managed-environment-enable.md)   
 - [Usage insights](managed-environment-usage-insights.md)  
 - [Limit sharing](managed-environment-sharing-limits.md)  

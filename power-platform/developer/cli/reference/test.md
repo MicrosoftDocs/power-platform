@@ -5,9 +5,8 @@ keywords: "pac cli"
 ms.subservice: developer
 author: laneswenka
 ms.author: laswenka
-ms.date: 12/2/2024
 ms.reviewer: jdaly
-ms.topic: reference
+ms.topic: generated-reference
 contributors: 
  - JimDaly
 ---
@@ -53,22 +52,67 @@ Path to the Test Plan file
 
 ### Optional Parameters for test run
 
-#### `--domain` `-d`
+#### `--auth` `-a`
 
-The player domain for the app being tested
+The certificate provider for the user authentication for app being tested
 
 Use one of these values:
 
-- `Public`
-- `Preview`
-- `UsGov`
-- `UsGovHigh`
-- `UsGovDoD`
-- `Mooncake`
+- `None`
+- `Certenv`
+- `Certstore`
+
+#### `--domain` `-d`
+
+The player domain for the app being tested for Canvas provider or endpoint for other provider types.
+
+#### `--log-level` `-l`
+
+Log detail level
+
+Use one of these values:
+
+- `Trace`
+- `Debug`
+- `Information`
+- `Warning`
+- `Error`
+- `Critical`
+- `None`
 
 #### `--output-directory` `-o`
 
 Path to save test output and logs
+
+#### `--provider` `-p`
+
+The application type being tested
+
+Use one of these values:
+
+- `Canvas`
+- `Mda`
+- `Portal`
+- `Powerfx`
+
+#### `--queryparams` `-q`
+
+Query parameters for the app being tested
+
+#### `--use-static-context` `-c`
+
+Enable use of static context for Playwright browser
+
+This parameter requires no value. It's a switch.
+
+#### `--user-auth` `-u`
+
+The user authentication type for app being tested
+
+Use one of these values:
+
+- `Storagestate`
+- `Dataverse`
 
 [!INCLUDE [test-run-remarks](includes/test-run-remarks.md)]
 

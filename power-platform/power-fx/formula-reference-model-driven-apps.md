@@ -4,7 +4,7 @@ description: Reference information for functions, signals, and enumerations avai
 author: gregli-msft
 ms.topic: reference
 ms.reviewer: matp
-ms.date: 6/25/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -15,15 +15,13 @@ contributors:
   - gregli
 ---
 
-# Formula reference - model-driven apps
+# Formula reference - Model-driven apps
 
 In this article, learn about all the functions available with [commanding in Power Apps model-driven apps](/power-apps/maker/model-driven-apps/commanding-use-powerfx).
 
 ## A
 
 **[Abs](reference/function-numericals.md )** – Absolute value of a number.
-
-**[Acceleration](reference/signals.md)** – Reads the acceleration sensor in your device.
 
 **[Acos](reference/function-trig.md)** – Returns the arccosine of a number, in radians.
 
@@ -33,11 +31,7 @@ In this article, learn about all the functions available with [commanding in Pow
 
 **[And](reference/function-logicals.md )** – Boolean logic AND. Returns true if all arguments are true. You can also use the [&& operator](reference/operators.md).
 
-**[App](reference/object-app.md)** – Provides information about the currently running app and control over the app's behavior.
-
 **[Asin](reference/function-trig.md)** – Returns the arcsine of a number, in radians.
-
-**[Assert](reference/function-assert.md)** – Evaluates to true or false in a test.
 
 **[As](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Names the current record in gallery, form, and record scope functions such as **ForAll**, **With**, and **Sum**.
 
@@ -53,7 +47,7 @@ In this article, learn about all the functions available with [commanding in Pow
 
 **[Blank](reference/function-isblank-isempty.md )** – Returns a *blank* value that can be used to insert a NULL value in a data source.
 
-**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or untyped value to a Boolean value.
+**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or dynamic value to a Boolean value.
 
 ## C
 
@@ -75,21 +69,17 @@ In this article, learn about all the functions available with [commanding in Pow
 
 **[ColorValue](reference/function-colors.md)** – Translates a CSS color name or a hex code to a color value.
 
-**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from a [Dynamic value](untyped-object.md).
 
-**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from a [Dynamic value](untyped-object.md).
 
-**[Compass](reference/signals.md)** – Returns your compass heading.
+**[Confirm](reference/function-confirm.md)** - Display a confirmation dialog box.
 
 **[Concat](reference/function-concatenate.md)** – Concatenates strings in a data source.
 
 **[Concatenate](reference/function-concatenate.md )** – Concatenates strings.
 
 **[Concurrent](reference/function-concurrent.md)** – Evaluates multiple formulas concurrently with one another.
-
-**[Connection](reference/signals.md)** – Returns information about your network connection.
-
-**[Copy](reference/function-copy.md)** – Copies text to the clipboard on the device where the app is running.
 
 **[Count](reference/function-table-counts.md)** – Counts table records that contain numbers.
 
@@ -128,8 +118,6 @@ In this article, learn about all the functions available with [commanding in Pow
 **[Defaults](reference/function-defaults.md )** – Returns the default values for a data source.
 
 **[Degrees](reference/function-trig.md)** – Converts radians to degrees.
-
-**[Disable](reference/function-enable-disable.md)** – Disables a signal, such as **[Location](reference/signals.md)** for reading the GPS.
 
 **[Download](reference/function-download.md)** – Downloads a file from the web to the local device.
 
@@ -179,8 +167,6 @@ In this article, learn about all the functions available with [commanding in Pow
 
 **[Hex2Dec](reference/function-hexdec.md)** – Convert a hexadecimal text string to a number.
 
-**[Host](reference/object-host.md)** – Provides information about the current host running the app.
-
 **[Hour](reference/function-datetime-parts.md )** – Returns the hour portion of a date/time value.
 
 ## I
@@ -213,8 +199,6 @@ In this article, learn about all the functions available with [commanding in Pow
 
 **[IsType](reference/function-astype-istype.md)** – Checks whether a record reference refers to a specific table type.
 
-**[IsUTCToday](reference/function-now-today-istoday.md )** – Checks whether a date/time value is sometime today in Coordinated Universal Time (UTC).
-
 ## J
 
 **[JSON](reference/function-json.md )** – Generates a JSON text string for a table, a record, or a value.
@@ -230,8 +214,6 @@ In this article, learn about all the functions available with [commanding in Pow
 **[Len](reference/function-len.md)** – Returns the length of a string.
 
 **[Ln](reference/function-numericals.md)** – Returns the natural log.
-
-**[Location](reference/signals.md)** – Returns your location as a map coordinate by using the Global Positioning System (GPS) and other information.
 
 **[Log](reference/function-numericals.md)** – Returns the logarithm in any base of a number.
 
@@ -259,8 +241,6 @@ In this article, learn about all the functions available with [commanding in Pow
 
 ## N
 
-**[Navigate](reference/function-navigate.md#navigate)** – Changes which screen is displayed.
-
 **[Not](reference/function-logicals.md )** – Boolean logic NOT. Returns true if its argument is false, and returns false if its argument is true. You can also use the [! operator](reference/operators.md).
 
 **[Notify](reference/function-showerror.md)** – Displays a banner message to the user.
@@ -275,11 +255,9 @@ In this article, learn about all the functions available with [commanding in Pow
 
 **[Parent](reference/operators.md#self-and-parent-operators)** – Provides access to a container control's properties.
 
-**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
+**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to a [Dynamic value](untyped-object.md).
 
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
-
-**[PDF](reference/function-pdf.md)** – Export contents from the current screen to an object for use in multiple scenarios.
 
 **[Pi](reference/function-trig.md)** – Returns the number &pi;.
 
@@ -329,13 +307,9 @@ In this article, learn about all the functions available with [commanding in Pow
 
 **[Second](reference/function-datetime-parts.md )** – Retrieves the second portion of a date/time value.
 
-**[Select](reference/function-select.md)** – Simulates a select action on a control, causing the **OnSelect** formula to be evaluated.
-
 **[Self](reference/operators.md#self-and-parent-operators)** – Provides access to the properties of the current control.
 
 **[Sequence](reference/function-sequence.md)** – Generate a table of sequential numbers, useful when iterating with **ForAll**.
-
-**[SendAppNotification (preview)](reference/function-send-app-notification.md)** – Send an in-app notification with optional actions to a recipient.
 
 **[SetFocus](reference/function-setfocus.md)** – Moves input focus to a specific control.
 
@@ -406,10 +380,6 @@ In this article, learn about all the functions available with [commanding in Pow
 **[UpdateIf](reference/function-update-updateif.md)** – Modifies a set of records in a data source based on a condition.
 
 **[Upper](reference/function-lower-upper-proper.md )** – Converts letters in a string of text to all uppercase.
-
-**[UTCNow](reference/function-now-today-istoday.md )** – Returns the current date/time value in Coordinated Universal Time (UTC).
-
-**[UTCToday](reference/function-now-today-istoday.md )** – Returns the current date-only value in Coordinated Universal Time (UTC).
 
 ## V
 

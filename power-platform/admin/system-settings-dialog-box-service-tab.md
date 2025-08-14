@@ -3,7 +3,7 @@ title: "System Settings Service tab | MicrosoftDocs"
 description: System Settings Service tab 
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/12/2024
 ms.subservice: admin
 ms.author: sericks
@@ -13,6 +13,8 @@ ms.contributors:
 - v-fanwar
 ---
 # System Settings Service tab
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Use this tab to set preferences for the customer service area, such as service level agreements and entitlements in model-driven apps in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 

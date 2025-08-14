@@ -1,4 +1,4 @@
----
+﻿---
 title: EndsWith and StartsWith functions
 description: Reference information including syntax and examples for the EndsWith and StartsWith functions.
 author: gregli-msft
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # EndsWith and StartsWith functions
+[!INCLUDE[function-startswith-applies-to](includes/function-startswith-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Tests whether a text string begins or ends another text string.
 
@@ -29,9 +30,9 @@ The **EndsWith** function tests whether one text string ends with another.
 
 The **StartsWith** function tests whether one text string begins with another.
 
-For both functions, the tests are case insensitive. The return value of both is a Boolean **true** or **false**.
+For both functions, the tests are case insensitive if the back-end datasource supports it by default. For example, collections, Dataverse, SharePoint, and SQL Server support case insensitivity by default. Oracle does not. The return value of both is a Boolean **true** or **false**.
 
-Use **EndsWith** and **StartsWith** with the **[Filter](function-filter-lookup.md)** function to search the data within your app. You can also use the **[in](operators.md#in-and-exactin-operators)** operator or the **[Search](function-filter-lookup.md)** function to look anywhere within text strings, not just at the beginning or end. Your choice of functions will depend on the needs of your app and which function can be [delegated](/power-apps/maker/canvas-apps/delegation-overview) for your particular data source. If one of these functions can't be delegated, a delegation warning will appear at authoring time to warn you of this limitation.
+Use **EndsWith** and **StartsWith** with the **[Filter](function-filter-lookup.md)** function to search the data within your app. You can also use the **[in](operators.md#in-and-exactin-operators)** operator or the **[Search](function-filter-lookup.md)** function to look anywhere within text strings, not just at the beginning or end. Your choice of functions will depend on the needs of your app and which function can be [delegated](/power-apps/maker/canvas-apps/delegation-overview) for your particular data source. If one of these functions can't be delegated, a delegation warning will appear at authoring time to warn you of this limitation. 
 
 ## Syntax
 
@@ -98,3 +99,138 @@ You can expand your search to include the **Company** column as well as the **Na
 | **Search( Customers, SearchInput.Text, "Name", "Company" )**                                                       | Similar to using the **in** operator, the **Search** function searches the **Customers** data source for records in which either the **Name** column or the **Company** column contains the search string (for example, **co**) anywhere within it. The **Search** function is easier to read and write than **Filter** if you want to specify multiple columns and multiple **in** operators. Note that you must enclose the names of the columns in double quotation marks. | ![Filter with search text in name, company.](media/function-startswith/customers-all-co-contains.png) |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

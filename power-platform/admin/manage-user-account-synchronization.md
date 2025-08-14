@@ -3,7 +3,7 @@ title: "Manage user account synchronization  | MicrosoftDocs"
 description: Manage user account synchronization
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/21/2021
 author: sericks007
 ms.subservice: admin
@@ -14,6 +14,8 @@ search.audienceType:
   - admin
 ---
 # Manage user account synchronization 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Because user identities are provisioned through [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)], you have multiple options for managing user synchronization between your online and on-premises environments.  
   

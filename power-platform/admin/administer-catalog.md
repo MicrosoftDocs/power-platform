@@ -1,16 +1,20 @@
 ---
 title: "Administer the catalog"
 description: "Learn how to administer the catalog for Power Platform. Administering the catalog involves setting up users, approving or rejecting submission requests, and other work related to tracking catalog items."
-author: derekkwanpm
-ms.author: derekkwan
-ms.date: 11/05/2024
+author: isaacwinoto
+ms.author: isaacwinoto
+ms.date: 05/30/2025
 ms.reviewer: matp
-ms.topic: article
+ms.topic: how-to
 ms.subservice: admin
 search.audienceType:
 - admin
+contributors:
+ - skotapalle
 ---
 # Administer the catalog
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The catalog in Power Platform enables developers and makers to:
 
@@ -44,7 +48,7 @@ The catalog has a separate set of access controls from Power Platform. This mean
 
 Any environment that has a catalog has these roles that can be viewed from the Power Platform admin center, and can be [assigned to groups or individuals](../admin/security-roles-privileges.md) just like any other security role.
 
-Power Platform admins and system customizers already have full access to the catalog. However, don't assign these roles for generally managing catalog access, and instead use one of the roles mentioned in the previous table.
+Use the security roles in the previous table to provide people with just the level of access that they need. You don't need to assign these roles to people who have the System Administrator and System Customizer security roles because these roles provide full access to the catalog. 
 
 ## Set up the catalog
 

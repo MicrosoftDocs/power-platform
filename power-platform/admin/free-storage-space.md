@@ -1,10 +1,10 @@
 ---
-title: "Free up storage space  | MicrosoftDocs"
+title: Free up storage space
 description: Reduce storage space usage by deleting notes, attachments, import history, and other data with one-time or recurring jobs.
 author: ianceicys-msft
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 07/29/2024
+ms.topic: how-to
+ms.date: 05/29/2025
 ms.subservice: admin
 ms.author: ceian 
 ms.reviewer: sericks
@@ -14,9 +14,12 @@ contributors:
   - meesposi 
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Free up storage space
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You can reduce the amount of storage space used by removing or deleting information from Dynamics 365 apps, such as:
 

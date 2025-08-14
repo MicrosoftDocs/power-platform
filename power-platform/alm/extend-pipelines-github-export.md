@@ -1,12 +1,13 @@
 ---
 title: Extend pipelines using GitHub Actions
-description: Download, unpack, and commit a solution using a GitHub workflow called from a Power Automate Flow.
+description: Download, unpack, and commit a solution using a GitHub workflow called from a Power Automate flow with Power Apps.
 author: mikefactorial
 ms.author: caburk
-ms.reviewer: sericks
+ms.reviewer: matp
 ms.topic: overview
-ms.date: 06/15/2023
-ms.custom: 
+ms.date: 04/16/2025
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # Extend pipelines using GitHub Actions
@@ -30,7 +31,7 @@ The workflow consists of the following steps:
 
 The following workflow inputs are required or optional:
 
-- `artifact_url` (required): The URL of the Dataverse row (record) ID for the artifact created by the pipelines.
+- `artifact_url` (required): The URL of the Microsoft Dataverse row (record) ID for the artifact created by the pipelines.
 - `solution_name` (required): Name of the solution in the Dataverse environment.
 - `source_branch` (required): Branch for the solution commit.
 - `target_branch` (optional): Branch to create for the solution commit. If not specified, the `source_branch` is used.
@@ -44,7 +45,7 @@ The following secrets are required to connect to Dataverse using an Application 
 - `TENANT_ID`: The tenant ID of the Microsoft Entra directory associated with the Microsoft Entra application.
 - `CLIENT_SECRET`: The client secret of the registered Microsoft Entra application.
 
-For more information see [Creating and using encrypted secrets](https://docs.github.com/actions/reference/encrypted-secrets) and [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
+For more information, go to [Creating and using encrypted secrets](https://docs.github.com/actions/reference/encrypted-secrets) and [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
 
 ## Workflow code
 
@@ -155,10 +156,12 @@ jobs:
               git push origin ${{ github.event.inputs.source_branch }}
           }
 ```
+> [!NOTE]
+> The Dataverse web API used to download the solution artifact has a maximum file size limit of 16 MB.
 
 ## Example Power Automate flow
 
-To call a GitHub workflow, you can create a Power Automate flow that is triggered when a deployment request is made in Dataverse. The flow can be configured to pass the required inputs to the GitHub workflow. For more information on how to create a Power Automate flow, see [Create a flow](/power-automate/getting-started#create-a-flow).
+To call a GitHub workflow, you can create a Power Automate flow that is triggered when a deployment request is made in Dataverse. The flow can be configured to pass the required inputs to the GitHub workflow. For more information on how to create a Power Automate flow, go to [Create a flow](/power-automate/getting-started#create-a-flow).
 
 ## Flow details
 
@@ -178,7 +181,7 @@ The values passed into the `artifact_url`, `solution_name`, and `user_name` are 
 - `user_name`: `@{triggerOutputs()?['body/OutputParameters/DeployAsUser']}`
 - `commit_message`: `@{outputs('Retrieve_the_Deployment_Stage_Run')?['body/deploymentnotes']}`
 
-The flow also uses a personal access token (PAT) to authenticate with GitHub. For more information on how to create a GitHub personal access token see [Creating a personal access token](https://docs.github.com/github/authenticating-to-github/creating-a-personal-access-token). The PAT is passed in the `Authorization` header of the HTTP request.
+The flow also uses a personal access token (PAT) to authenticate with GitHub. For more information on how to create a GitHub personal access token, go to [Creating a personal access token](https://docs.github.com/github/authenticating-to-github/creating-a-personal-access-token). The PAT is passed in the `Authorization` header of the HTTP request.
 
 Update the following values in the Flow:
 

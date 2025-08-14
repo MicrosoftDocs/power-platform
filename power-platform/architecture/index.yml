@@ -1,0 +1,152 @@
+### YamlMime:Hub
+title: Microsoft Power Platform and Copilot Studio Architecture Center
+summary: Guidance for architecting solutions with Microsoft Power Platform and Copilot Studio using established patterns and best practices.
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: dynamics
+metadata:
+  title: Microsoft Power Platform and Copilot Studio Architecture Center
+  description: Guidance for architecting solutions with Power Platform and Copilot Studio using established patterns and best practices.
+  ms.service: power-platform
+  ms.topic: hub-page
+  ms.subservice: architecture-center
+  author: manuelap-msft
+  ms.author: mapichle
+  ms.reviewer: jhaskett-msft
+  ms.date: 07/15/2025
+
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Browse reference architectures
+      itemType: architecture
+      url: reference-architectures/index.md
+    # Card
+    - title: Learn what's new
+      url: whats-new.md
+      itemType: whats-new
+    # Card
+    - title: Power Platform Well-Architected
+      url: /power-platform/well-architected/
+      itemType: how-to-guide
+# productDirectory section (optional)
+productDirectory:
+  title: Architecting workloads on Power Platform and Copilot Studio
+  items:
+    # Card
+    - title: Architecture key concepts
+      imageSrc: /office/media/icons/walkthrough-map.png
+      links:
+      - text: Auditing in Dataverse
+        url: key-concepts/dataverse-auditing.md
+      - text: ExpressRoute and Power Platform
+        url: key-concepts/expressroute/overview.md
+      - text: Distributed tracing across multiple services
+        url: key-concepts/distributed-tracing.md
+      - text: More...
+        url: key-concepts/index.md
+    # Card
+    - title: Reference architectures
+      imageSrc: /office/media/icons/blocks.png
+      links:
+        - text: ​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables
+          url: reference-architectures/app-integrate-lakehouse.md
+        - text: Perform predictive data analysis using Dataverse, Fabric, and Azure AI services
+          url: reference-architectures/ai-predictive-data-analysis.md
+        - text: Secure Power Platform access to resources inside your virtual network
+          url: reference-architectures/secure-access-azure-resources.md
+        - text: More...
+          url: reference-architectures/index.md
+    # Card
+    - title: Solution ideas
+      imageSrc: /office/media/icons/lightbulb-idea-capture.png
+      links:
+        - text: Healthcare Patient Support Agent
+          url: solution-ideas/agent-healthcare-patient-support.md
+        - text: Property rental portal with AI-driven search and payment processing
+          url: solution-ideas/agent-rental-portal.md
+        - text: Revolutionize vehicle inspections with EVVIE
+          url: solution-ideas/app-evvie.md
+        - text: More...
+          url: solution-ideas/index.md
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Related guidance centers
+      summary: Guidance for individual Power Platform components # < 160 chars (optional)
+      items:
+        # Cards with links style
+        # Card
+        - title: Power Apps guidance
+          links:
+            - text: Power Apps patterns
+              url: /power-apps/guidance/patterns/overview
+            - text: Planning a Power Apps project
+              url: /power-apps/guidance/planning/introduction
+            - text: Collaborating and co-developing apps
+              url: /power-apps/guidance/co-develop/overview
+            - text: More...
+              url: /power-apps/guidance
+        # Card
+        - title: Power Automate guidance
+          links:
+            - text: Planning a Power Automate project
+              url: /power-automate/guidance/planning/introduction
+            - text: RPA with SAP
+              url: /power-automate/guidance/rpa-sap-playbook/introduction
+            - text: Automation Kit
+              url: /power-automate/guidance/automation-kit/overview/introduction
+            - text: More...
+              url: /power-automate/guidance
+        # Card
+        - title: Power BI guidance
+          links:
+            - text: Migrate to Power BI
+              url: /power-bi/guidance/powerbi-migration-overview
+            - text: Power BI adoption roadmap
+              url: /power-bi/guidance/powerbi-adoption-roadmap-overview
+            - text: Power BI implementation planning
+              url: /power-bi/guidance/powerbi-implementation-planning-introduction
+            - text: More...
+              url: /power-bi/guidance
+        # Card
+        - title: Power Pages guidance
+          links:
+            - text: Architecture white paper
+              url: /power-pages/guidance/white-papers/architecture
+            - text: Security white paper
+              url: /power-pages/guidance/white-papers/security
+            - text: More...
+              url: /power-pages/guidance
+        # Card
+        - title: Microsoft Copilot Studio guidance
+          links:
+            - text: Topics best practices
+              url: /power-virtual-agents/guidance/topics-overview
+            - text: Trigger phrases best practices
+              url: /power-virtual-agents/guidance/trigger-phrases-best-practices
+            - text: Measuring agent engagement
+              url: /power-virtual-agents/guidance/measuring-engagement
+            - text: More...
+              url: /power-virtual-agents/guidance
+    - title: Build your skills with Microsoft Learn training
+      summary: Learning paths and modules to help you build your skills with Microsoft Power Platform.
+      items:
+        - title: Microsoft Power Platform Solution Architect course
+          url: /training/courses/pl-600t00
+        - title: Architect solutions for Dynamics 365 and Microsoft Power Platform
+          url: /training/paths/become-solution-architect/
+        - title: Design Microsoft Power Platform solutions
+          url: /training/paths/solution-architect-data/
+    - title: Power Platform adoption and workload design
+      summary: Build a strong Power Platform adoption strategy and consistent approach to workload design.
+      items:
+      - title: Power Platform adoption guidance
+        url: /power-platform/guidance/
+      - title: Power Platform Well-Architected
+        url: /power-platform/well-architected/
+      - title: Power Platform Well-Architected assessment
+        url: https://aka.ms/powa/assessment

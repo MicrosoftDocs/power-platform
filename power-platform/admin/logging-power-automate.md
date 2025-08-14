@@ -2,7 +2,7 @@
 title: View Power Automate audit logs
 description: Learn how to view Power Automate logs in the Microsoft Purview compliance portal.
 author: msftman
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/16/2024
 ms.subservice: admin
 ms.author: kenseongtan
@@ -12,6 +12,8 @@ search.audienceType:
   - enduser
 ---
 # View Power Automate audit logs
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You can find logs of Power Automate activities in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
 

@@ -2,13 +2,14 @@
 title: Run pipelines in Power Platform
 description: Learn how to deploy solutions using pipelines.
 author: caburk
-ms.author: matp
+ms.author: caburk
 ms.topic: how-to
-ms.date: 08/14/2023
+ms.date: 01/30/2025
 contributors:
    - ASheehi1
    - caburk
 ms.custom: template-how-to
+ms.reviewer: matp
 ---
 # Run pipelines in Power Platform
 
@@ -40,25 +41,26 @@ For more information about these prerequisites, go to [Set up pipelines](set-up-
 > [!NOTE]
 >
 > - Pipelines aren't visible within the default solution, managed solutions, or target environments.
-> - You must complete the deployment stages in order. For example, you can't deploy version 1.0.0.1 to production before it has been deployed to test. After deploying to test, the same solution that was deployed will then be deployed to production, even if afterward you made changes to the solution without incrementing the version.
+> - You must complete the deployment stages in order. For example, you can't deploy version 1.0.0.1 to production before it has been deployed to test. After you deploy to test, the same solution that was deployed will then be deployed to production, even if afterward you made changes to the solution without incrementing the version.
 > - A message stating your request to deploy here is pending, which means your admin attached [background processes or approvals](extend-pipelines.md) that run before your deployment can proceed.
 
 ## Cancel a scheduled deployment
+
 If you have a scheduled deployment, you can cancel it through three different methods:
+
+- In the pipeline **Details** section where you began your deployment, there's an option to **Cancel deployment** before the scheduled deployment time.
+- In **Run history**, selecting **...** on a scheduled deployment displays a **Cancel deployment** option.
+- In the *Information* pane, select a deployment record in **Run history**, and then select **Cancel deployment** under the *Status* of a scheduled deployment.
 
 :::image type="content" source="media/pipeline-cancel-deployment.png" alt-text="Screenshot of the pipelines page with a cancelable deployment":::
 
-- In the pipeline **Details** section where you began your deployment, there's an option to **Cancel deployment** before the scheduled deployment time.
-
-- In **Run history**, selecting **...** on a scheduled deployment displays a **Cancel deployment** option.
-
-- In the *Information* pane, select a deployment record in **Run history**, and then select **Cancel deployment** under the *Status* of a scheduled deployment.
-
 ## Change the time of a scheduled deployment as a pipeline admin
-In the Deployment Pipeline Configuration app,
+
+In the Deployment Pipeline Configuration app, perform the following steps:
+
 1. Navigate to **Run history** under *Deployments*.
 1. Select the record for the scheduled deployment that you want to change.
-1. Change the **Scheduled Time** (shown in UTC, which may differ from your time zone) as desired.
+1. Change the **Scheduled Time** (shown in UTC, which might differ from your time zone) as desired.
 
 ## Monitor pipeline deployments
 
@@ -68,6 +70,7 @@ Select a pipeline, then select **Run history** to view more detail and error inf
 
 :::image type="content" source="media/pipeline-monitoring.png" alt-text="Screenshot of the pipelines page":::
 
-### See also
+### Related articles
 
-[Solution concepts](solution-concepts-alm.md)
+- [Create a pipeline in Microsoft Power Platform - Learn Module](/training/modules/create-pipeline)
+- [Solution concepts](solution-concepts-alm.md)

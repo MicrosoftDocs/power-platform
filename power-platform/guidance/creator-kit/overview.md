@@ -3,9 +3,9 @@ title: "Creator Kit - overview (preview) | MicrosoftDocs"
 description: Overview of the Creator Kit
 author: denise-msft
 ms.component: pa-maker
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 08/12/2024
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 

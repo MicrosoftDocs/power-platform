@@ -3,7 +3,7 @@ title: "Control field synchronization with Outlook  | MicrosoftDocs"
 description: Control field synchronization with Outlook
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/17/2021
 ms.subservice: admin
 ms.author: sericks
@@ -11,6 +11,8 @@ search.audienceType:
   - admin
 ---
 # Control field synchronization with Outlook
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 <!-- legacy procedure -->
 
@@ -44,14 +46,15 @@ With field synchronization, admins can set the sync direction between customer e
 ## Performance and synchronization  
  Configuring synchronization might have an impact on the time it takes to sync between [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] and customer engagement apps. You should test your configuration before deploying to ensure satisfactory sync times.  
   
-## Permissions and synchronization  
- Role-based security controls access to a specific entity type, record-based security controls access to individual records, and field-level security controls access to specific fields. All these can impact what is synchronized between customer engagement apps and [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] or [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)].  
+## Permissions and synchronization 
+
+Role-based security controls access to a specific entity type, record-based security controls access to individual records, and field-level security controls access to specific fields. All these can impact what is synchronized between customer engagement apps and [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] or [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)].  
+
+Best practice is to review the security settings for these security methods to ensure field synchronization is processes as desired. For more information see:  
   
- Best practice is to review the security settings for these security methods to ensure field synchronization is processes as desired. For more information see:  
+-  Securing roles: [Create or edit a security role](../admin/create-edit-security-role.md)  
   
--   Securing roles: [Create or edit a security role](../admin/create-edit-security-role.md)  
-  
--   Securing fields: [Add or remove security from a field](enable-disable-security-field.md)  
+-  Securing fields: [Enable column security](field-level-security.md#enable-column-security)  
   
 [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How field security affects synchronization between customer engagement apps and Outlook](../admin/how-field-security-affects-synchronization-between-outlook.md) and [Security concepts](../admin/wp-security-cds.md)  
   

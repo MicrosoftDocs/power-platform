@@ -1,23 +1,24 @@
 ---
-title: Remove dependencies between fields and views
-description: "Dependencies sometimes can block operations. This article describes how field and view dependencies can be removed."
+title: Remove dependencies between columns and views
+description: "Dependencies sometimes can block operations. This article describes how column and view dependencies can be removed in Power Platform."
 author: ccdietrich
 ms.author: cdietric
+ms.reviewer: matp
 ms.subservice: alm
 ms.topic: how-to
-ms.date: 06/17/2020
+ms.date: 03/13/2025
 ---
-# Remove dependencies between fields and views
+# Remove dependencies between columns and views
 
-To remove dependencies between fields (attributes) and views (saved queries), locate the view in the customizations page.
+To remove dependencies between columns (formerly fields and also known as attributes) and views (saved queries), locate the view in the table and open it.
 
-In the field editor, find the reference to the component you no longer want the view to depend on. In this example, you see the field **Number Field** being used as a select column and a filter.
+In the view editor, find the reference to the component you no longer want the view to depend on. In this example, you observe the column named **Number column** being used as a view column and a filter.
 
 ![Edit view.](media/solution-dependency-component-view.png "Edit view")
 
-Remove both, save, and then publish the view.
+Remove both the filter and column, save, and then publish the view.
 
-## Related content
+## Related articles
 
 - [Removing dependencies overview](removing-dependencies.md)
 - [Remove dependencies between fields and workflows](remove-field-workflow.md)

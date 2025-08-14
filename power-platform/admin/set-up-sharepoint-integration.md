@@ -4,7 +4,7 @@ description: "Learn about the benefits of using the document management capabili
 author: Mattp123
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/28/2020
 ms.subservice: admin
 ms.author: matp
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Set up SharePoint integration
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 This article discusses the document management capabilities of [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] from within a Microsoft Dataverse model-driven or customer engagement app. Apps include Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation. 
 

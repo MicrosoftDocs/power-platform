@@ -14,6 +14,8 @@ search.audienceType:
 
 # List environments (preview) 
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 You can list environments for your tenant.

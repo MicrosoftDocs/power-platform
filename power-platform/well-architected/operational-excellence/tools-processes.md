@@ -6,7 +6,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.date: 09/11/2024
 ms.subservice: well-architected
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Recommendations for standardizing tools and processes
@@ -76,6 +76,10 @@ The style guide should cover:
 - Error handling standards
 - Common patterns or libraries
 
+Learn more about [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/) and [Power Apps coding guidelines](/power-apps/guidance/coding-guidelines/overview).
+
+[!INCLUDE [pp-tip-powercat-toolkit](~/../shared-content/shared/guidance-includes/pp-tip-powercat-toolkit.md)]
+
 Keep track of architecture decisions to help teams maintain a fresh understanding of the workload and allow new team members to learn about the design decisions made during the workload's life cycle. Include in your architecture decision document the tools and technologies that were considered, the reason for a decision, and functional and nonfunctional requirements that were factored into decisions. Record decisions to avoid repeating explanations or revisiting discussions with new members or stakeholders.
 
 ### Implement standards and guidelines for addressing technical debt
@@ -116,7 +120,7 @@ Require your workload team to understand the security practices related to devel
 
 [Automate tests with Azure Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor).
 
-[Power CAT Code Review Tool](https://github.com/microsoft/powerapps-tools/tree/master/Tools/Apps/Microsoft.PowerApps.CodeReview) allows you to perform code reviews.
+[Power CAT Code Review Tool](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftpowercatarch.powercattools?tab=Overview) allows you to perform code reviews.
 
 [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) allows you to configure agents and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the agent responses are evaluated against expected results.
 

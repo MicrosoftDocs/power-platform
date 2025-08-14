@@ -24,15 +24,18 @@ The AI cursor provides a way for you to interact with the generated data or ask 
 When content is generated, follow these steps to use the AI cursor:
 
 1. Select the AI cursor or use the keyboard shortcut **Alt + C**.
-2. Select an area or block of content to ask a question about and enter your question.
-3. Select **Generate** > **Generate as new blueprint** to create a new blueprint, or **Update block** to regenerate content in the selected block. Pressing **Enter** instead of manually selecting one of the two options generates a new blueprint as well. 
+2. Select an area or block of content to ask a question about and enter your question. You can also select a generated suggestion.
+3. Select one of the following:
+   - **Update block** to regenerate content in the selected block. You can also press **Enter** to update the block.
+   - **Generate as new blueprint** to create a new blueprint.
+   - **Attach data** ![attach data button](media/attach-data-button.png) to connect to or upload new [data sources](data-connections.md).
 
 > [!TIP]
 > - **Update block**: If you experience unexpected results, you can ask Project "Sophia" to adjust the results. For example, update an existing block to use another chart type, group by something else, or explain what an acronym means in your source data to help get better results. When you press **Enter** it generates a new blueprint instead of updating an existing block on the current blueprint.
 > - **Add data**: You can add additional data to an existing workspace using the AI cursor. You can add more data by [uploading files](data-connections.md#uploading-files) or [connecting to a data source](data-connections.md#connecting-to-a-data-source). If you already have a data connection established in the workspace, Project "Sophia" will consider the data source to answer the question.
    
    > [!div class="mx-imgBorder"]
-   > ![Use the AI cursor.](media/ai-cursor.png)
+   > ![Use the AI cursor.](media/ai-cursor-affect.png)
 
 ## Journey lines
 

@@ -2,9 +2,9 @@
 title: "Set up inventory components"
 description: "Learn how to set up the inventory components solution of the Microsoft CoE Starter Kit."
 author: manuelap-msft
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/05/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 
@@ -212,12 +212,12 @@ Environment variables are used to store application and flow configuration data 
 | FullInventory | Determines whether you want to update only changed objects or all objects. Switching to *Yes* causes the flows to inventory every single app, flow, and bot in the tenant every day. The *Yes* setting isn't recommended for large tenants.  | No |
 | Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High, and DoD environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).| Not applicable |
 | Host Domains | Domains to consider as local for cross domain identity reports. As a comma-separated string: `myCo.onmicrosoft.com`, `partnerCo.onmicrosoft.com` | Not applicable |
-| Individual Admin | Communications in the starter kit are sent to this email address. Communications can't be sent to a group. For more information, see [How to communicate with your admins, makers, and users](setup.md#how-to-communicate-with-your-admins-makers-and-users). | Not applicable |
+| Individual Admin | Communications in the starter kit are sent to this email address. Communications can't be sent to a group. For more information, see [How to communicate with your admins, makers, and users](setup.md#whats-the-best-way-to-communicate-with-admins-makers-and-users). | Not applicable |
 | Inventory and Telemetry in Azure Data Storage account | Sets up data export in PPAC with your inventory and telemetry in an Azure Data Storage folder. This variable also represents a **Bring your own Datalake / self-serve analytics** feature. | No |
 | InventoryFilter_DaysToLookBack | When not running a full inventory, we filter back a set number of days and see if the object needs to update.| 7 |
 | is All Environments Inventory | If true (default), the CoE inventory tracks all environments. New environments added to the inventory have their **Excuse from Inventory** set to *false*. You can opt out of individual environments. If *false*, the CoE inventory tracks a subset of environments. New environments added to the inventory have their **Excuse from Inventory** set to *true*. You can opt in to individual environments.  | Yes |
-| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group, which contains all your Power Platform makers. With this ID, you can communicate and share apps with makers. This ID is needed for the inventory setup in the **Admin > Add Maker to Group** flow. For more information, see [How to communicate with your admins, makers, and users](setup.md#how-to-communicate-with-your-admins-makers-and-users). | Not applicable |
-| Power Platform User Microsoft 365 Group | Get the ID of the Microsoft 365 group, which contains all your Power Platform users, such as end users with your shared apps. You use this ID to communicate and share apps with users. For more information, see [How to communicate with your admins, makers, and users](setup.md#how-to-communicate-with-your-admins-makers-and-users). | Not applicable |
+| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group, which contains all your Power Platform makers. With this ID, you can communicate and share apps with makers. This ID is needed for the inventory setup in the **Admin > Add Maker to Group** flow. For more information, see [How to communicate with your admins, makers, and users](setup.md#whats-the-best-way-to-communicate-with-admins-makers-and-users). | Not applicable |
+| Power Platform User Microsoft 365 Group | Get the ID of the Microsoft 365 group, which contains all your Power Platform users, such as end users with your shared apps. You use this ID to communicate and share apps with users. For more information, see [How to communicate with your admins, makers, and users](setup.md#whats-the-best-way-to-communicate-with-admins-makers-and-users). | Not applicable |
 | Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://make.powerautomate.com/environments/> <br>For a GCC, GCC High, or DoD environment: [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). | Not applicable |
 | PowerApp Maker environment variable | The URL used by the Power Apps maker portal for your cloud, including a trailing slash `/`. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment: [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). | Not applicable|
 | PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including a trailing slash `/`.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us/> | Not applicable |

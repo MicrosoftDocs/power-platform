@@ -1,20 +1,61 @@
-
 {
   "redirections": [
-   {
-
+    {
+      "source_path": "power-platform/admin/security/overview.md",
+      "redirect_url": "power-platform/admin/security/security-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/dlp-resource-exemption.md",
+      "redirect_url": "power-platform/admin/wp-data-loss-prevention",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/add-teams-users-field-security-profile.md",
+      "redirect_url": "field-level-security#add-teams-or-users-to-a-column-security-profile-to-control-access",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/enable-disable-security-field.md",
+      "redirect_url": "field-level-security#enable-column-security",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/set-up-security-permissions-field.md",
+      "redirect_url": "field-level-security#add-teams-or-users-to-a-column-security-profile-to-control-access",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/wp-work-with-admin-portals.md",
+      "redirect_url": "power-platform/admin/admin-documentation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/security/access-control.md",
+      "redirect_url": "power-platform/admin/security/identity-access-management",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/security/network-security.md",
+      "redirect_url": "power-platform/admin/security/data-protection-privacy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/security/threat-detection.md",
+      "redirect_url": "power-platform/admin/security/compliance",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/security/security-posture-overview.md",
       "redirect_url": "power-platform/admin/security/security-overview",
       "redirect_document_id": "false"
-   },
+    },
     {
-
       "source_path": "power-platform/developer/submit-catalog-items.md",
       "redirect_url": "catalog/submit-items",
       "redirect_document_id": "false"
-   },
-   {
-
+    },
+    {
       "source_path": "power-platform/admin/control-client-app-access-to-environment.md",
       "redirect_url": "/power-platform/admin/admin-documentation",
       "redirect_document_id": "false"
@@ -24,62 +65,62 @@
       "redirect_url": "important-changes-coming#isv-studio-removed",
       "redirect_document_id": "false"
     },
-   {
+    {
       "source_path": "power-platform/developer/isvstudio/app.md",
       "redirect_url": "../../important-changes-coming#isv-studio-removed",
       "redirect_document_id": "false"
-   },
-   {
+    },
+    {
       "source_path": "power-platform/developer/isvstudio/appsource-checker.md",
       "redirect_url": "../../important-changes-coming#isv-studio-removed",
       "redirect_document_id": "false"
-   },
-   {
+    },
+    {
       "source_path": "power-platform/developer/isvstudio/auto-update.md",
       "redirect_url": "../../important-changes-coming#isv-studio-removed",
       "redirect_document_id": "false"
-   },
-   {
+    },
+    {
       "source_path": "power-platform/developer/isvstudio/connector-certification.md",
       "redirect_url": "../../important-changes-coming#isv-studio-removed",
       "redirect_document_id": "false"
-   },
-   {
+    },
+    {
       "source_path": "power-platform/developer/isvstudio/embed-analytics.md",
       "redirect_url": "../../important-changes-coming#isv-studio-removed",
       "redirect_document_id": "false"
-   },
-   {
+    },
+    {
       "source_path": "power-platform/developer/isvstudio/home.md",
       "redirect_url": "../../important-changes-coming#isv-studio-removed",
       "redirect_document_id": "false"
-   },
-   {
+    },
+    {
       "source_path": "power-platform/developer/isvstudio/index.md",
       "redirect_url": "../../important-changes-coming#isv-studio-removed",
       "redirect_document_id": "false"
-   },
-   {
+    },
+    {
       "source_path": "power-platform/developer/isvstudio/install-failure-analytics.md",
       "redirect_url": "../../important-changes-coming#isv-studio-removed",
       "redirect_document_id": "false"
-   },
-   {
+    },
+    {
       "source_path": "power-platform/developer/isvstudio/tenant.md",
       "redirect_url": "../../important-changes-coming#isv-studio-removed",
       "redirect_document_id": "false"
-   },
-   {
+    },
+    {
       "source_path": "power-platform/developer/isvstudio/usage-analytics.md",
       "redirect_url": "../../important-changes-coming#isv-studio-removed",
       "redirect_document_id": "false"
-   },
-   {
+    },
+    {
       "source_path": "power-platform/developer/cli/reference/powerpages.md",
       "redirect_url": "pages",
       "redirect_document_id": "false"
     },
-   {
+    {
       "source_path": "power-platform/developer/cli/reference/org.md",
       "redirect_url": "env",
       "redirect_document_id": "false"
@@ -1055,11 +1096,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "power-platform/guidance/adoption/environment-strategy.md",
-      "redirect_url": "/power-platform/guidance/white-papers/environment-strategy",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "power-platform/admin/power-automate-licensing/overview.md",
       "redirect_url": "/power-platform/admin/power-automate-licensing/types",
       "redirect_document_id": false
@@ -1098,6 +1134,490 @@
       "source_path": "power-platform/power-fx/formula-reference.md",
       "redirect_url": "/power-platform/power-fx/formula-reference-canvas-apps",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/dataverse-canvas-app.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/dataverse-canvas-app",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/pcf-canvas-components.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/sharepoint-canvas.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/sql-gateway-canvas.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/azure-function-canvas.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/overview.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/bpf-dataverse-powerautomate.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/benefits.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/benefits",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/checklist.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/checklist",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/how-expressroute-works.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/how-expressroute-works",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/overview.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/planning-expressroute.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/planning-expressroute",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/setup.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/setup",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/things-to-consider.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/things-to-consider",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/expressroute/understanding-architecture.md",
+      "redirect_url": "/power-platform/architecture/key-concepts/expressroute/understanding-architecture",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/architecture/real-world-examples/custom-connector-canvas.md",
+      "redirect_url": "/power-platform/architecture/reference-architectures/custom-connector-canvas",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshooting-user-needs-read-write-access-organization.md",
+      "redirect_url": "/troubleshoot/power-platform/dataverse/environment-app-access/troubleshooting-user-needs-read-write-access-organization"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshoot-missing-environments.md",
+      "redirect_url": "/troubleshoot/power-platform/dataverse/environment-app-access/troubleshoot-missing-environments"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshoot-word-templates-dynamics-365.md",
+      "redirect_url": "/troubleshoot/power-platform/power-apps/integrate-products/troubleshoot-word-templates-dynamics-365"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/setup-auditlog-troubleshooting.md",
+      "redirect_url": "/troubleshoot/power-platform/dataverse/auditing/setup-auditlog-troubleshooting"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshooting-server-based-authentication.md",
+      "redirect_url": "/troubleshoot/power-platform/power-apps/integrate-products/troubleshooting-server-based-authentication"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshooting-conditional-access-authentication.md",
+      "redirect_url": "/troubleshoot/power-platform/power-apps/integrate-products/troubleshooting-conditional-access-authentication"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshoot-set-up-sharepoint-online.md",
+      "redirect_url": "/troubleshoot/power-platform/power-apps/integrate-products/troubleshoot-set-up-sharepoint-online"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshoot-doc-management-issues.md",
+      "redirect_url": "/troubleshoot/power-platform/power-apps/integrate-products/troubleshoot-doc-management-issues"
+    },
+    {
+      "source_path": "power-platform/admin/doc-management-known-issues.md",
+      "redirect_url": "/troubleshoot/power-platform/power-apps/integrate-products/doc-management-known-issues"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshooting-monitoring-server-side-synchronization.md",
+      "redirect_url": "/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization"
+    },
+    {
+      "source_path": "power-platform/admin/data-integrator-error-management.md",
+      "redirect_url": "/troubleshoot/power-platform/dataverse/data-integration/data-integrator-error-management"
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/employee-kudos/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/employee-kudos/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/employee-kudos/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/awards-and-recognition/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/awards-and-recognition/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/awards-and-recognition/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/awards-and-recognition/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/onboarding-buddy/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/onboarding-buddy/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/onboarding-buddy/customize.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/onboarding-buddy/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/onboarding-buddy/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/expense-reimbursement/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/expense-reimbursement/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/expense-reimbursement/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/hr/expense-reimbursement/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/hardware-request-and-management/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/hardware-request-and-management/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/hardware-request-and-management/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/hardware-request-and-management/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/appointment-booking/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/appointment-booking/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/appointment-booking/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/appointment-booking/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/meeting-rm-serv/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/meeting-rm-serv/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/meeting-rm-serv/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/meeting-rm-serv/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/checklist/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/checklist/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/checklist/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/checklist/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/parking-reservation/overview.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/parking-reservation/install-and-set-up.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/parking-reservation/manage.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/it/parking-reservation/use.md",
+      "redirect_url": "https://appsource.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/overview.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/get-started.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/sap-setup-assistant/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/install-and-set-up.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/sap-setup-assistant/install-and-set-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/requirements.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/set-up-environments-data-policies.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/set-up-environments-data-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/set-up-gateway.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/set-up-gateway",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/configure-authentication.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/configure-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/install.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/install",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/set-up-connections.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/set-up-connections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/configure-environment-variables.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/configure-environment-variables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/configure-security-groups.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/configure-security-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/apply-seed-data.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/apply-seed-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/monitor-errors.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/monitor-errors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/customize-solutions.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/customize-solutions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/extend-canvas-apps.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/extend-canvas-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/extend-model-apps-dataverse.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/extend-model-apps-dataverse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/administer/extend-cloud-flows.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/administer/extend-cloud-flows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/use/vendor-management.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/use/vendor-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/use/requisition-management.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/use/requisition-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/use/purchase-order-management.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/use/purchase-order-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/use/goods-receipt-management.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/use/goods-receipt-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/use/vendor-invoice-management.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/use/vendor-invoice-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/use/payment-management.md",
+      "redirect_url": "/power-platform/sap/templates/sap-procurement/use/payment-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-supplier-self-service/overview.md",
+      "redirect_url": "/power-platform/sap/templates/sap-supplier-self-service/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-supplier-self-service/install-and-set-up.md",
+      "redirect_url": "/power-platform/sap/templates/sap-supplier-self-service/install-and-set-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-supplier-self-service/manage.md",
+      "redirect_url": "/power-platform/sap/templates/sap-supplier-self-service/manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/enterprise-templates/finance/sap-procurement/faqs.md",
+      "redirect_url": "/power-platform/sap/explore/faqs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/white-papers/application-modernization.md",
+      "redirect_url": "/power-platform/guidance/adoption/application-modernization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/white-papers/environment-strategy.md",
+      "redirect_url": "/power-platform/guidance/adoption/environment-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/adoption/access-usage.md",
+      "redirect_url": "/power-platform/guidance/adoption/resource-usage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/adoption/capacity-and-licenses.md",
+      "redirect_url": "/power-platform/guidance/adoption/cds-usage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/adoption/monitor-resource-health.md",
+      "redirect_url": "/power-platform/guidance/adoption/observability",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/adoption/new-connectors.md",
+      "redirect_url": "/power-platform/guidance/adoption/reactive-governance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/adoption/sharing-alerts.md",
+      "redirect_url": "/power-platform/guidance/adoption/reactive-governance",
+      "redirect_document_id": false
     }
   ]
 }

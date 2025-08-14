@@ -4,9 +4,9 @@ description: Learn user-centered design strategies to ensure your workloads are 
 author: RobStand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/05/2025
 ms.subservice: well-architected
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Recommendations for a user-centered design strategy

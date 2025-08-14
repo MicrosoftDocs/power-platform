@@ -4,7 +4,7 @@ description: About broadcast announcements to an entire organization
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/09/2021
 ms.subservice: admin
 ms.author: sericks 
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Broadcast announcements to an entire organization 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 > [!IMPORTANT]
 > Announcements are deprecated and are removed from current releases.

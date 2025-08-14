@@ -10,7 +10,7 @@ metadata:
   ms.author: edleh
   author: edlehman
   ms.reviewer: ellenwehrle
-  ms.date: 10/31/2024
+  ms.date: 03/27/2025
   ms.collection: power-platform
   brand: power-platform
 sections:
@@ -56,13 +56,13 @@ sections:
         #   text: Watch videos
         #   url: /collections/20mijo44z6xq6
      - componentType: card
-       title: "Step 4. Leverage templates"
-       summary: Use one of the SAP templates for Power Platform as is, extend it to meet your requirements, or build your own solution based on template patterns.
+       title: "Step 4. Leverage templates and prebuilt agents"
+       summary: Use templates and prebuilt agents to accelerate your Power Platform and SAP integration and solution development.
        imageUrl: media/index-page/Leverage_templates.png
       # links: 
       #   - componentType: link
-      #     text: Procurement template for SAP
-       url: https://learn.microsoft.com/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started
+      #     text: Use templates and prebuilt agents
+       url: templates/overview.md
 - componentType: grid
   title: Find Power Platform and SAP resources for your role
     # summary: Discover how Power Platform and SAP integration is relevant to your role and explore these Microsoft Learn resources.
@@ -125,7 +125,7 @@ sections:
     - componentType: summary-card
       title: SAP Setup Assistant
       summary: Follow a guided process to install the on-premises data gateway and SAP Procurement template.
-      url: /power-platform/enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview
+      url: templates/sap-procurement/administer/sap-setup-assistant/overview.md
     - componentType: summary-card
       title: SAP ERP connector
       summary: Get started with the SAP ERP connector.

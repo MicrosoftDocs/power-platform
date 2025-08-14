@@ -1,4 +1,4 @@
----
+﻿---
 title: Select function
 description: Reference information including syntax and examples for the Select function.
 author: gregli-msft
@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/22/2024
+ms.date: 06/20/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Select function
+[!INCLUDE[function-select-applies-to](includes/function-select-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+
 
 Simulates a select action on a control, causing the **OnSelect** formula to be evaluated.
 
@@ -109,7 +110,7 @@ The select function can also be used with a gallery. For example, it can be used
 
 4. Set the **OnSelect** property of the image control to this formula:
 
-   **Notify( "Image Selected", Success )**
+   **Notify( "Image Selected", NotificationType.Success )**
 
 5. While holding down the Alt key, click or tap the various elements of the gallery.
 
@@ -128,3 +129,138 @@ The select function can also be used with a gallery. For example, it can be used
    A **Image Selected** notification appears across the top of your app. The button click simulated selecting the image in row 2 of the gallery.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

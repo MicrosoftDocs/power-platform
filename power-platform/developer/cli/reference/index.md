@@ -5,9 +5,8 @@ keywords: "pac cli"
 ms.subservice: developer
 author: laneswenka
 ms.author: laswenka
-ms.date: 12/2/2024
 ms.reviewer: jdaly
-ms.topic: reference
+ms.topic: generated-reference
 contributors: 
  - JimDaly
 ---
@@ -27,6 +26,7 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac auth](auth.md)|Manage how you authenticate to various services|
 |[pac canvas](canvas.md)|Operating with Power Apps .msapp files|
 |[pac catalog](catalog.md)|Commands for working with Catalog in Power Platform|
+|[pac code](code.md)|(Preview) Commands to manage your Code apps.|
 |[pac connection](connection.md)|Commands for working with Dataverse connection.|
 |[pac connector](connector.md)|Commands for working with Power Platform Connectors|
 |[pac copilot](copilot.md)|Tools and utilities for copilot management|

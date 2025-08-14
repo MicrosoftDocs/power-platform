@@ -4,7 +4,7 @@ description: Move configuration data across organizations
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/21/2023
 ms.subservice: admin
 ms.author: sericks
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Move configuration data across environments and organizations with the Configuration Migration tool
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The Configuration Migration tool enables you to move configuration data across environments and organizations. Configuration data is used to define custom functionality in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and is typically stored in custom entities. Configuration data is different from end user data (account, contacts, and so on). A typical example of configuration data is what you define in [!INCLUDE[pn_unified_service_desk_for_crm](../includes/pn-unified-service-desk-for-crm.md)] to configure a customized call center agent application. The [!INCLUDE[pn_unified_service_desk](../includes/pn-unified-service-desk.md)] entities, along with the configuration data that is stored in the entities, define an agent application. For more information about [!INCLUDE[pn_unified_service_desk](../includes/pn-unified-service-desk.md)], see [Unified Service Desk Guide](/dynamics365/customer-engagement/unified-service-desk/unified-service-desk).  
   

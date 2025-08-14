@@ -10,6 +10,8 @@ ms.author: sericks
 
 # What's the role of a Power Platform administrator?
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 Administration of Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio is done through the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 
@@ -22,7 +24,7 @@ The navigation pane on the left provides answers to these questions and guides y
 To get you started administering Power Platform:
 * Learn about how to [try Power Platform for free](try-powerapps-dynamics-365.md) and [licensing](pricing-billing-skus.md)
 * Learn about [Power Platform environments](environments-overview.md)
-* Learn about [security in Power Platform](security/overview.md)
+* Learn about [security in Power Platform](security/security-overview.md)
 * Learn about various [analytics and reporting options](analytics-common-data-service.md)
 
 

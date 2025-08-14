@@ -6,13 +6,15 @@ ms.subservice: admin
 ms.author: sericks
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/19/2020
 search.audienceType: 
   - admin
 ---
 
 # Select a data map
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 1. Select a data map to tell the Import Data wizard how to organize your imported data into the right columns and fields in customer engagement apps.  
   

@@ -3,14 +3,19 @@ title: "View and manage settings for Microsoft Power Platform"
 description: "Configure settings for Microsoft Power Platform, including governance, themes, notifications, password, and contact preferences."
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/06/2022
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ga-blocked
 ---
 # Microsoft Power Platform settings
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Configuring the settings for Power Platform admin center, such as the view theme, language, and password, are just a click away.
 

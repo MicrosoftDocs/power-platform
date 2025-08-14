@@ -4,9 +4,9 @@ description: Learn how to optimize app layout for different platforms and device
 author: RobStand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 08/05/2025
 ms.subservice: well-architected
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Recommendations for optimizing layout

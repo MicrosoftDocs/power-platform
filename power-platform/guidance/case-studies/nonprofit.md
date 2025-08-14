@@ -3,7 +3,7 @@ title: Degrees of Change automates nonprofit operations with Power Apps, Power P
 description: Learn from nonprofit Degrees of Change how to automate nonprofit operations with Power Apps, Power Pages, and AI Builder.
 author: shellyhaverkamp
 ms.author: sashi
-ms.topic: how-to
+ms.topic: overview
 ms.subservice: guidance
 ms.date: 08/28/2024
 ---
@@ -12,15 +12,11 @@ ms.date: 08/28/2024
 
 In this article, you learn how [Degrees of Change](https://www.degreesofchange.org/), a nonprofit dedicated to helping underrepresented students succeed in college and their careers, used Power Apps, Power Pages, and AI Builder to streamline its operations.
 
-
 Through its Act Six and Seed Internships programs, Degrees of Change provides access to college education and graduate employment opportunities for exceptional students from underrepresented backgrounds. The team consists of 20 staff, more than 100 community volunteers, and one full-time IT resource.
-
 
 Since Degrees of Change transformed the application and selection process with Power Platform and generative AI, it's able to deliver services to more students. This shift also streamlined operations and improved data tracking and analysis.
 
-
 *“Part of our work is how we empower and give the tools to local, grassroots community nonprofits. We provide the technology, training, and curriculum assistance to be able to deliver the Act Six program in their community.”*&mdash;Tim Herron, Founder & Chief Innovation Officer
-
 
 Read the full story: [Nonprofit organization expands career programs by using Power Pages and generative AI](https://customers.microsoft.com/story/1703120647074644538-degreesofchange-nonprofit-power-platform)
 
@@ -28,9 +24,7 @@ Read the full story: [Nonprofit organization expands career programs by using Po
 
 The team works with seven communities, 17 partner colleges, and a growing number of employers in the northwestern United States. Each community recruits volunteers to run the Act Six and Seed Internships programs locally, with centralized support from Degrees of Change staff.
 
-
 Before building its Act Six and Seed Internships solutions with Power Platform tools, the Degrees of Change team faced some operational challenges:
-
 
 - **Manual and time-consuming processes** for managing program applications and selections, limiting their ability to scale and serve more students.
 - **Lack of integration between different systems**, leading to data silos and making it difficult to track and analyze student progress and outcomes effectively.

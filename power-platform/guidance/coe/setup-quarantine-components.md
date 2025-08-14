@@ -4,13 +4,14 @@ description: "Learn how to set up the app quarantine components of the CoE Start
 author: manuelap-msft
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/13/2024
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Set up app quarantine components

@@ -4,7 +4,7 @@ description: Learn about deploying packages using Package Deployer and Windows P
 ms.custom: 
 ms.date: 08/12/2021
 ms.reviewer: 
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.assetid: 27676d3a-d35c-4452-9ff3-bcdadd943bef
 caps.latest.revision: 36
 author: Mattp123
@@ -14,6 +14,8 @@ search.audienceType:
   - admin
 ---
 # Deploy packages using Package Deployer and Windows PowerShell
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 [!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages to an environment. 
 

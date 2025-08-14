@@ -1,9 +1,9 @@
 ---
-title: "Data encryption | MicrosoftDocs"
+title: Encrypt column-level data 
 description: Data encryption
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 09/04/2020
+ms.topic: how-to
+ms.date: 01/21/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -15,9 +15,11 @@ ms.custom: "admin-security"
 search.audienceType: 
   - admin
 ---
-# Enhance security by encrypting your data 
+# Encrypt column-level data 
 
-The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), use standard [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] cell level encryption for a set of default table attributes that contain sensitive information, such as user names and email passwords. This feature can help organizations meet FIPS 140-2 compliance.  
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
+The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), use standard [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] cell-level encryption for a set of default table columns that contain sensitive information, such as user names and email passwords. This feature can help organizations meet FIPS 140-2 compliance.  
   
 All new and upgraded organizations use data encryption by default. Data encryption can’t be turned off.  
   

@@ -8,12 +8,14 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/23/2024
 search.audienceType: 
   - admin
 ---
 # Reset a user's password
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 If a user loses a password, you can reset it. For step-by-step instructions, see [Reset a User’s Password](/microsoft-365/admin/add-users/reset-passwords).  
   

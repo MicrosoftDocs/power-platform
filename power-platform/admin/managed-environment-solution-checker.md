@@ -1,7 +1,7 @@
 ---
 title: Solution checker enforcement in Managed Environments
 description: Learn about using solution checker enforcement to automatically prevent security and reliability validations during solution import.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/20/2024
 author: sidhartg
 ms.author: sidhartg
@@ -17,6 +17,8 @@ contributors:
 ---
 
 # Solution checker enforcement in Managed Environments
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The solution checker is a powerful tool that performs a comprehensive static analysis of your solution objects against a set of best practice rules. By using solution checker, you can quickly identify problematic patterns in solution components and receive detailed reports that highlight issues, affected components, and provide links to documentation on how to resolve each issue.
 

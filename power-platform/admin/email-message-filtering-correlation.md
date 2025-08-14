@@ -15,6 +15,8 @@ ms.custom: bap-template
 
 # Specify which emails are automatically tracked
 
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
 With server-side synchronization and Dynamics 365 App for Outlook, you can automatically create email activities for received messages in customer engagement apps such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Customer Service](/dynamics365/customer-service/help-hub), [Marketing](/dynamics365/marketing/help-hub), [Field Service](/dynamics365/field-service/overview), and [Project Service Automation](/dynamics365/project-operations/psa/overview).
 
 By default, the sync process evaluates only messages in the Inbox folder of a mailbox for automatic tracking. Email that's in a subfolder of the inbox is processed only if the subfolder is configured for [folder-level tracking](../admin/configure-outlook-exchange-folder-level-tracking.md), even if you move a message back to the Inbox folder before the next sync. Server-side sync tracks the received date of the last email it processes. During the next sync cycle, it evaluates only emails that are received after that date and time. To process an email that wasn't in the Inbox folder, use one of the following options:

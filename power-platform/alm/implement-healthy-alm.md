@@ -1,23 +1,22 @@
 ---
-title: "Use scenarios to implement healthy ALM with Microsoft Power Apps"
+title: "Use scenarios to implement healthy ALM with Microsoft Power Platform"
 description: "Learn about the scenarios that can help you implement healthy application lifecycle management (ALM) by using Microsoft Power Apps and Power Automate."
 keywords: 
 author: Mattp123
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 02/04/2025
 ms.reviewer: ""
-
-ms.topic: "article"
+ms.topic: concept-article
 search.audienceType: 
   - maker
 ---
-
 # About healthy ALM 
-This section provides information about the various scenarios that will help you reach the end goal of implementing and practicing healthy application lifecycle management (ALM) by using Power Apps, Power Automate, and Microsoft Dataverse in your organization. 
 
-The scenarios range from people who are new to Microsoft Power Platform to existing users practicing unhealthy ALM, and show how you can move to a recommended, successful ALM implementation. 
+This section provides information about the various scenarios that help you reach the end goal of implementing and practicing healthy application lifecycle management (ALM) by using Power Apps, Power Automate, and Microsoft Dataverse in your organization.
+
+The scenarios range from people who are new to Microsoft Power Platform to existing users practicing unhealthy ALM, and show how you can move to a recommended, successful ALM implementation.
 
 > [Scenario 0: ALM for a new project](new-project-alm.md)
 
@@ -36,6 +35,7 @@ The scenarios range from people who are new to Microsoft Power Platform to exist
 > [Scenario 7: Add canvas apps in solutions by default](canvas-apps-solution-default.md)
 
 ### See also
+
 [ALM basics in Power Apps](basics-alm.md)
 
 

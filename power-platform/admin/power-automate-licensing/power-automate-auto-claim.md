@@ -2,7 +2,7 @@
 title: Auto-claim policies for Power Automate licenses
 description: Discover how to automatically assign Power Automate licenses to users with auto-claim policies in the Microsoft 365 admin center.
 author: kenseongtan
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: admin
 ms.author: kenseongtan
 contributors:
@@ -16,9 +16,12 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc
   - ai-seo-date:02/07/2024
+  - sfi-ga-nochange
 ---
 
 # Auto-claim policies for Power Automate licenses
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 As an administrator, you traditionally assign licenses to users _manually_. [Auto-claim for Power Automate licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies) allows administrators to easily set up policies in the Microsoft 365 admin center, similar to other Microsoft products and services. Once a policy is configured, any user in the organization who requires an individual Power Automate user license is automatically assigned a license.
 

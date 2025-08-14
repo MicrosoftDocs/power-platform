@@ -2,7 +2,7 @@
 title: "Update a record Owner and Owning Business Unit"
 description: "Learn to update a record’s owner, an Owning Business Unit, or both an Owner and Owning Business Unit because the record changes ownership."
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/28/2023
 ms.subservice: admin
 author: paulliew
@@ -10,6 +10,8 @@ ms.author: paulliew
 ms.reviewer: sericks
 ---
 # Update a record Owner and Owning Business Unit
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 There are situations where you need to update a record’s owner, an Owning Business Unit, or both an owner and Owning Business Unit because the record changes ownership. If you have enabled the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure), you can update the record’s owning business unit. 
 

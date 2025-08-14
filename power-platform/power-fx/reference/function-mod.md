@@ -1,4 +1,4 @@
----
+﻿---
 title: Mod function
 description: Reference information including syntax and examples for the Mod function.
 author: gregli-msft
@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 6/10/2024
+ms.date: 06/20/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -18,8 +18,9 @@ contributors:
 ---
 
 # Mod function
+[!INCLUDE[function-mod-applies-to](includes/function-mod-applies-to.md)]
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+
 
 Returns the remainder of a division.
 
@@ -36,4 +37,149 @@ The result has the same sign as the divisor.
 - _Number_ - Required. Number to divide.
 - _Divisor_ - Required. Number to divide by.
 
+## Examples
+
+| Formula | Description | Result |
+| --- | --- | --- |
+| **Mod(25, 4)** | The number that remains after dividing 25 by 4 | 1 |
+| **Mod(25, -4)** | The number that remains after dividing 25 by -4 | -3 |
+| **Mod(-25, -4)** | The number that remains after dividing -25 by -4 | -1 |
+| **Mod(-25, 4)** | The number that remains after dividing -25 by 4 | 3 |
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

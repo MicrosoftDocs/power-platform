@@ -46,6 +46,8 @@ Use one of the following options to ask questions about your data:
     
 Your data is analyzed to create a blueprint that provides valuable insights, charts, and actionable steps.
 
+You can also start an analysis with **New workspace**. A new workspace is a blank canvas where you can explore and [ask questions](ask-question.md) related to your business. You can add business data and [ask questions about the data](ask-question.md#ask-questions-about-your-data). Access the workspace from the **Home** screen.
+
 For more info about uploading files and supported data files, go to [Uploading files](data-connections.md#uploading-files)
 
 For more info about data sources that you can connect to, go to [Connecting to a data source](data-connections.md#connecting-to-a-data-source)
@@ -55,17 +57,18 @@ For more info about data sources that you can connect to, go to [Connecting to a
  You can take the following actions when content is generated:
 
 > [!div class="mx-imgBorder"]
-> ![Actions.](media/content-actions.png)
+> ![A labelled screenshot of the actions you can take with a blueprint](media/blueprint-labelled.png)
 
 Legend:
 
-1. **Home**: Go to the Home screen.
-1. **New workspace**: Opens a blank canvas where you can explore and [ask questions](ask-question.md) related to your business. Or you can add business data and [ask questions about the data](ask-question.md#ask-questions-about-your-data). When you ask a question, a workspace is created which can be accessed from the Home screen.
-1. **Workspace name**: To rename a workspace, select the default name **Untitled** and rename it. 
-1. **Keep it**: Saves the generated content. Select the **Untitled** text box and enter a name for the generated workspace. If you don’t save the generated information, the system automatically saves it as, **Untitled**. You can access all workspaces from the Home screen.
-1. **Regenerate**: Regenerates the results or select **Regenerate with new data** to replace with another data set instead of starting over. The **Regenerate** option can generate different results, but the level of difference depends on the specificity of the question asked. For example, a general question such as "tell me something interesting about my data," generates different results, whereas as question such as "show me my top 10 accounts based on last years sales numbers" generate similar results.
-1. **Discard**: Deletes the generated content.
-1. **Show work and discard**: Option to view more information about the generated content or discard it. **Show work** provides clarity on how the content was generated and what skills were used to produce the content. **Discard** Removes the block of research. 
-1. **Select tool**: Use the **Select tool** to select a template or a block. 
+1. **Workspace name**: To rename a workspace, select the default name **Untitled** and rename it.
+1. Choose a domain, add [data](data-connections.md) and modify the [context](context-manage.md) Project "Sophia" uses to interpret information and produce blueprints.
+1. Actions you can take on the entire blueprint:
+    - **Regenerate** ![Regenerate button](media/regenerate-button.png): Regenerate the results. Select **Regenerate with new data** to replace with another data set instead of starting over. The **Regenerate** option can generate different results, but the level of difference depends on the specificity of the question asked. For example, a general question such as "tell me something interesting about my data" generates different results.
+    - **Delete** ![Delete button](media/delete-button.png): Delete the blueprint.
+    - **Copy** ![Copy button](media/copy-button.png): Copy the blueprint.
+    - Provide feedback: Select ![Thumbs up](media/thumbs-up-button.png) or ![Thumbs down button](media/thumbs-down-button.png) to provide feedback on the blueprint.
+1. **Continue exploring your data**: Create another blueprint to further explore your data. To learn more, go to [Journey lines](ai-cursor.md#journey-lines).
 1. **AI cursor**: Use the [AI cursor](ai-cursor.md) to ask questions about the content on a blueprint or a block of content in the blueprint.
+1. **Select tool**: Select a template or a block.
 1. **Zoom and pan**: Use the zoom and pan options to quickly navigate content. The pan button provides an overview of the entire workspace, which lets you navigate and zoom in and out on a blueprint.

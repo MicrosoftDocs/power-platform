@@ -1,6 +1,6 @@
 ---
-title: "Creating a service principal application using API (preview) | Microsoft Docs"
-description: Power Platform API and service principal authentication
+title: Creating a service principal application using API
+description: Learn about Power Platform API and service principal authentication.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
@@ -13,6 +13,8 @@ search.audienceType:
 ---
 
 # Creating a service principal application using API (preview) 
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -61,4 +63,4 @@ Learn more about the [pac admin create-service-principal](../developer/cli/refer
 
 Currently, service principal authentication works for environment management, tenant settings, and Power Apps management. APIs related to Flow are supported for service principal authentication in situations where a license isn't required, as it isn't possible to assign licenses to service principal identities in Microsoft Entra ID.
 
-Service principal applications are treated within Power Platform similar to how normal users are with the Power Platform Administrator role assigned. Granular roles and permissions can't be assigned to limit their capabilities. The application doesn't get any special role assigned in Microsoft Entra ID, as this is how platform services treat requests made by service principals.
+Service principal applications are treated within Power Platform like how normal users are with the Power Platform Administrator role assigned. Granular roles and permissions can't be assigned to limit their capabilities. The application doesn't get any special role assigned in Microsoft Entra ID, as this is how platform services treat requests made by service principals.

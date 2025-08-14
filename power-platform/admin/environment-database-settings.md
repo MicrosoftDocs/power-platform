@@ -4,7 +4,7 @@ description: "Power Platform environments provide default database settings, but
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/04/2019
 ms.subservice: admin
 ms.author: sericks 
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Environment database settings
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 There is a set of database settings for each environment that provides default option behavior.  You can update these default options through a special OrgDBSettings tool. This tool allows the system admin to override the default database settings. You can find the list of database settings in the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). 
 

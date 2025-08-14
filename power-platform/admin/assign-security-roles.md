@@ -5,12 +5,24 @@ author: paulliew
 ms.reviewer: sericks
 ms.subservice: admin
 ms.author: paulliew
-ms.custom: "admin-security"
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 08/07/2024
+ms.topic: how-to
+ms.date: 6/4/2025
 search.audienceType: 
   - admin
+contributors:
+  - jordanchodakWork
+  - paulliew
+  - sericks007
+  - syalandur24
+ms.contributors:
+  - jordanchodak
+  - paulliew
+  - sericks
+  - syalandur
+ms.custom:
+  - "admin-security"
+  - sfi-image-nochange
 
 ---
 # Assign a security role to a user  
@@ -25,14 +37,36 @@ Consider the following information about security roles:
 - To assign security roles to a user, you need to have the appropriate privileges (minimum privileges are **Read** and **Assign** on the **Security Role** table). To prevent elevation of security role privileges, the person who is assigning the security role can't assign someone else to a security role that has more privileges than the assigner. For example, a CSR Manager can't assign another user to the System Administrator role. This privilege validation includes checking each privilege that the assigner has at the privilege depth-level and business unit. For example, you can't assign a security role from a different business unit to another user if you don't have a security role with the appropriate privilege-level assigned from that business unit.
 
 > [!NOTE]
->  By default, the System Administrator security role has all the required privileges to assign security roles to any user, including assigning the System Administrator security role. If you have a need to allow **non-System Administrators** to assign security roles, you should consider creating a custom security role with all the privileges listed in [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md). Assign the custom security role and all the security roles that the non-System Administrator can assign to other users, to the non-System Administrator. This security role requirement is also required if you allow non-System Administrators to [manage team members in owner teams](manage-teams.md#manage-team-members) .
+> By default, the System Administrator security role has all the required privileges to assign security roles to any user, including assigning the System Administrator security role. If you have a need to allow **non-System Administrators** to assign security roles, you should consider creating a custom security role with all the privileges listed in [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md). Assign the custom security role and all the security roles that the non-System Administrator can assign to other users, to the non-System Administrator. This security role requirement is also required if you allow non-System Administrators to [manage team members in owner teams](manage-teams.md#manage-team-members).
+>
+> The System Administrator role should be assigned directly to users, or to a security group the users are part of.
+> 
+> It's important to note that custom security roles are **not** supported for canvas apps.
  
 For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).
 
 > [!TIP]
-> Check out the following video: [Assigning security roles in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr6).
+> Check out the following video: [Assigning security roles in the Power Platform admin center](https://learn-video.azurefd.net/vod/player?id=fa663203-981a-4a08-8e25-2ec1e8d793f6).
   
 Follow these steps to assign a security role.
+
+### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
+
+2. In the navigation pane, select **Manage**.
+
+3. In the **Manage** pane, select **Environments**, and then select an environment from the list.
+
+3. Select **Settings**.
+
+4. Select **Users + permissions**, and then select **Users**.
+
+5. On the **Users** page select a user, and then select **Manage security roles**.
+
+6. Select or deselect security roles. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles aren't assigned.
+
+### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
 
@@ -44,15 +78,17 @@ Follow these steps to assign a security role.
 
 5. On the **Users** page select a user, and then select **Manage security roles**.
 
-6. Select or deselect security roles. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles aren't assigned. 
+6. Select or deselect security roles. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles aren't assigned.
 
-When the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure) is enabled, you can select security roles from different business unit. 
+---
+
+When the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure) is enabled, you can select security roles from different business units. 
 
 > [!IMPORTANT] 
 > You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-group-teams.md). The service doesn't allow access to users who don't have at least one security role.
 
 > [!NOTE]
-> The panel shown above shows and manages only direct role assignments for the user. [Manage group teams](manage-group-teams.md) explains how to see and manage roles assigned as a member of a [group team](manage-group-teams.md).
+> The specified steps help you manage only direct role assignments for the user. [Manage group teams](manage-group-teams.md) explains how to see and manage roles assigned as a member of a [group team](manage-group-teams.md).
 
 ## User settings privileges for record ownership across business units
   

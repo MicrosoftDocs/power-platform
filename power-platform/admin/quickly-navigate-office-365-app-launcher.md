@@ -4,7 +4,7 @@ description: "Learn how to use the Microsoft 365 app launcher to quickly move be
 author: sericks007
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/26/2020
 ms.subservice: admin
 ms.author: sericks
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Quickly navigate with the Microsoft 365 app launcher
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 <a name="BKMK_AppLauncher"></a>   
 ## Quickly move between apps with the app launcher  

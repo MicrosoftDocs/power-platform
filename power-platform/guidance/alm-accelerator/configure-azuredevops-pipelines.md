@@ -3,7 +3,7 @@ title: Configure ALM Accelerator pipelines
 description: Learn how to customize Azure Pipelines in ALM Accelerator for Power Platform.
 ms.topic: how-to
 ms.date: 09/05/2023
-ms.subservice: guidance
+ms.subservice: guidance-toolkit
 author: mikefactorial
 ms.author: rusant
 ms.reviewer: sericks

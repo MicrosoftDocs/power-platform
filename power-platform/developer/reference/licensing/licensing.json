@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API",
-    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "title": "Microsoft Power Platform REST API - licensing",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
   "host": "api.powerplatform.com",
@@ -24,13 +24,13 @@
           {
             "in": "query",
             "name": "$top",
-            "description": "Top limit of results",
+            "description": "The ISV contract ID.",
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -70,7 +70,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -78,7 +78,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "The billing policy",
+            "description": "The billing policy.",
             "schema": {
               "$ref": "#/definitions/BillingPolicyPostRequestModel"
             }
@@ -117,14 +117,14 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy ID",
+            "description": "The billing policy ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -167,14 +167,14 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy ID",
+            "description": "The billing policy ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -219,14 +219,14 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy ID",
+            "description": "The billing policy ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -265,14 +265,14 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy ID",
+            "description": "The billing policy ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -314,21 +314,21 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy ID",
+            "description": "The billing policy ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment ID",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -339,6 +339,163 @@
             "description": "Success",
             "schema": {
               "$ref": "#/definitions/BillingPolicyEnvironmentResponseModelV1"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}/environments/add": {
+      "post": {
+        "tags": [
+          "BillingPolicyEnvironment"
+        ],
+        "summary": "Link billing policy ID with environments.",
+        "operationId": "AddBillingPolicyEnvironment",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Model to represents the list of environments to be linked.",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyEnvironmentAddRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}/environments/remove": {
+      "post": {
+        "tags": [
+          "BillingPolicyEnvironment"
+        ],
+        "summary": "Unlink billing policy ID from environments.",
+        "operationId": "RemoveBillingPolicyEnvironment",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Model to represents the list of environments to be unlinked.",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyEnvironmentRemoveRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}/refreshProvisioningStatus": {
+      "post": {
+        "tags": [
+          "BillingPolicy"
+        ],
+        "summary": "Refresh the billing policy provisioning status.",
+        "operationId": "RefreshProvisioningStatus",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModel"
             }
           },
           "400": {
@@ -370,14 +527,14 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment ID",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -420,14 +577,14 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment ID",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -435,7 +592,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Environment currency allocation",
+            "description": "Environment currency allocation.",
             "schema": {
               "$ref": "#/definitions/AllocationsByEnvironmentPatchRequestModelV1"
             }
@@ -447,163 +604,6 @@
             "schema": {
               "$ref": "#/definitions/AllocationsByEnvironmentResponseModelV1"
             }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "404": {
-            "description": "Not Found"
-          }
-        }
-      }
-    },
-    "/licensing/billingPolicies/{billingPolicyId}/refreshProvisioningStatus": {
-      "post": {
-        "tags": [
-          "BillingPolicy"
-        ],
-        "summary": "Refresh the billing policy provisioning status.",
-        "operationId": "RefreshProvisioningStatus",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "billingPolicyId",
-            "description": "The billing policy ID",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/BillingPolicyResponseModel"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "404": {
-            "description": "Not Found"
-          }
-        }
-      }
-    },
-    "/licensing/billingPolicies/{billingPolicyId}/environments/add": {
-      "post": {
-        "tags": [
-          "BillingPolicyEnvironment"
-        ],
-        "summary": "Link billing policy ID with environments.",
-        "operationId": "AddBillingPolicyEnvironment",
-        "consumes": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "billingPolicyId",
-            "description": "The billing policy ID",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "description": "Model to represents the list of environments to be linked",
-            "schema": {
-              "$ref": "#/definitions/BillingPolicyEnvironmentAddRequestModel"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "404": {
-            "description": "Not Found"
-          }
-        }
-      }
-    },
-    "/licensing/billingPolicies/{billingPolicyId}/environments/remove": {
-      "post": {
-        "tags": [
-          "BillingPolicyEnvironment"
-        ],
-        "summary": "Unlink billing policy ID from environments.",
-        "operationId": "RemoveBillingPolicyEnvironment",
-        "consumes": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "billingPolicyId",
-            "description": "The billing policy ID",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "description": "Model to represents the list of environments to be unlinked",
-            "schema": {
-              "$ref": "#/definitions/BillingPolicyEnvironmentRemoveRequestModel"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
           },
           "400": {
             "description": "Bad Request"
@@ -634,14 +634,14 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment ID",
+            "description": "The environment ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -681,13 +681,13 @@
           {
             "in": "query",
             "name": "$top",
-            "description": "Top limit of results",
+            "description": "Top limit of results.",
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -728,7 +728,7 @@
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -776,14 +776,14 @@
           {
             "in": "path",
             "name": "isvContractId",
-            "description": "The ISV contract ID",
+            "description": "The ISV contract ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -827,14 +827,14 @@
           {
             "in": "path",
             "name": "isvContractId",
-            "description": "The ISV contract ID",
+            "description": "The ISV contract ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -880,14 +880,14 @@
           {
             "in": "path",
             "name": "isvContractId",
-            "description": "The ISV contract ID",
+            "description": "The ISV contract ID.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The API version",
+            "description": "The API version.",
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
@@ -911,6 +911,290 @@
           }
         }
       }
+    },
+    "/licensing/storageWarning/{storageCategory}": {
+      "get": {
+        "tags": [
+          "StorageWarnings"
+        ],
+        "summary": "Storage warning thresholds filtered by category.",
+        "operationId": "GetStorageWarningByCategory",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "storageCategory",
+            "description": "The storage category value.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/StorageWarningThresholdsDocument"
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/licensing/storageWarning/{storageCategory}/{entityName}": {
+      "get": {
+        "tags": [
+          "StorageWarnings"
+        ],
+        "summary": "Storage warning thresholds filtered by category and storage entity name.",
+        "operationId": "GetStorageWarningByCategoryAndEntity",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "storageCategory",
+            "description": "The storage category value.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "entityName",
+            "description": "The name of the entity.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/StorageWarningThresholdsDocument"
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/licensing/storageWarning/getAllStorageWarnings": {
+      "get": {
+        "tags": [
+          "StorageWarnings"
+        ],
+        "summary": "Storage warning thresholds.",
+        "operationId": "ListStorageWarnings",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/StorageWarningThresholdsDocument"
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/licensing/TemporaryCurrencyEntitlement/{currencyType}/Count": {
+      "post": {
+        "tags": [
+          "TemporaryCurrencyEntitlement"
+        ],
+        "summary": "Get the temporary currency count and limit for the month by type.",
+        "operationId": "RetrieveTemporaryCurrencyEntitlementCount",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "currencyType",
+            "description": "The currency type.",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "AI",
+              "AppPass",
+              "AppPassForTeams",
+              "Invoice",
+              "MCSSessions",
+              "MCSMessages",
+              "PAHostedRPA",
+              "PAUnattendedRPA",
+              "PerFlowPlan",
+              "PortalAddOns",
+              "PortalLogins",
+              "PortalViews",
+              "PowerPagesAuthenticated",
+              "PowerPagesAnonymous",
+              "PowerAutomatePerProcess",
+              "ProcessMiningDataStorage",
+              "SCMessages",
+              "VAConversations"
+            ]
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GetTemporaryCurrencyEntitlementCountResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/licensing/tenantCapacity": {
+      "get": {
+        "tags": [
+          "TenantCapacityDetails"
+        ],
+        "summary": "Get the tenant capacity details for the tenant.",
+        "operationId": "GetTenantCapacityDetails",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/TenantCapacityDetailsModel"
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/tenantCapacity/currencyReports": {
+      "get": {
+        "tags": [
+          "CurrencyReports"
+        ],
+        "summary": "Get the currency report for the tenant.",
+        "operationId": "ListCurrencyReports",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "includeAllocations",
+            "description": "Flag indicating to include allocations.",
+            "type": "boolean",
+            "default": true
+          },
+          {
+            "in": "query",
+            "name": "includeConsumptions",
+            "description": "Flag indicating to include consumptions.",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/CurrencyReportV2"
+              }
+            }
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -918,7 +1202,7 @@
       "type": "object",
       "properties": {
         "currencyAllocations": {
-          "description": "Specify the request body with environment ID and currency details",
+          "description": "Specify the request body with environment ID and currency details.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/CurrencyAllocationRequestModelV1"
@@ -928,16 +1212,16 @@
       "additionalProperties": false
     },
     "AllocationsByEnvironmentResponseModelV1": {
-      "description": "The response body includes environment ID and allocated currencies",
+      "description": "The response body includes environment ID and allocated currencies.",
       "type": "object",
       "properties": {
         "environmentId": {
-          "description": "The environment ID for which the currency has been allocated",
+          "description": "The environment ID for which the currency has been allocated.",
           "type": "string",
           "example": "00000000-0000-0000-0000-000000000000"
         },
         "currencyAllocations": {
-          "description": "The collection of currencies with allocation count",
+          "description": "The collection of currencies with allocation count.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/CurrencyAllocationResponseModelV1"
@@ -954,7 +1238,7 @@
         },
         "allocated": {
           "format": "int32",
-          "description": "Specify the currency count",
+          "description": "Specify the currency count.",
           "type": "integer",
           "example": 10
         }
@@ -976,18 +1260,61 @@
       },
       "additionalProperties": false
     },
+    "CurrencyConsumption": {
+      "type": "object",
+      "properties": {
+        "unitsConsumed": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "lastUpdatedDay": {
+          "format": "date-time",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CurrencyReportV2": {
+      "type": "object",
+      "properties": {
+        "currencyType": {
+          "$ref": "#/definitions/ExternalCurrencyType"
+        },
+        "purchased": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "allocated": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "consumed": {
+          "$ref": "#/definitions/CurrencyConsumption"
+        }
+      },
+      "additionalProperties": false
+    },
     "ExternalCurrencyType": {
-      "description": "Available currency type which can be allocated to environment",
+      "description": "Available currency type which can be allocated to environment.",
       "enum": [
-        "AppPass",
         "AI",
+        "AppPass",
+        "AppPassForTeams",
+        "Invoice",
+        "MCSSessions",
+        "MCSMessages",
+        "PAHostedRPA",
+        "PAUnattendedRPA",
+        "PerFlowPlan",
+        "PortalAddOns",
         "PortalLogins",
         "PortalViews",
-        "PerFlowPlan",
-        "VAConversations",
-        "AppPassForTeams",
-        "PAUnattendedRPA",
-        "PowerAutomatePerProcess"
+        "PowerPagesAuthenticated",
+        "PowerPagesAnonymous",
+        "PowerAutomatePerProcess",
+        "ProcessMiningDataStorage",
+        "SCMessages",
+        "VAConversations"
       ],
       "type": "string",
       "example": "PowerAutomatePerProcess"
@@ -1024,7 +1351,7 @@
           "type": "boolean"
         },
         "requiredApis": {
-          "description": "A list of connectors, at least one of which which must be involved in the metered usage to be attributed.",
+          "description": "A list of connectors, at least one of which must be involved in the metered usage to be attributed.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/BillingPolicyConditionsApiModel"
@@ -1204,6 +1531,136 @@
       ],
       "type": "string"
     },
+    "CapacityAvailabilityStatus": {
+      "enum": [
+        "None",
+        "Available",
+        "AvailableByOverflow",
+        "NotAvailable"
+      ],
+      "type": "string"
+    },
+    "CapacityEntitlementType": {
+      "enum": [
+        "None",
+        "DatabaseBase",
+        "DatabaseIncremental",
+        "DatabaseAddOn",
+        "FileBase",
+        "FileIncremental",
+        "FileAddOn",
+        "LogBase",
+        "LogAddOn",
+        "SubscriptionTrialDatabaseBase",
+        "SubscriptionTrialFileBase",
+        "SubscriptionTrialLogBase",
+        "SubscriptionTrialEnvironmentCountBase",
+        "SubscriptionTrialEnvironmentCountIncremental",
+        "TrialDatabaseBase",
+        "TrialFileBase",
+        "TrialLogBase",
+        "M365DatabaseBase",
+        "M365DatabaseIncremental",
+        "M365EnvironmentCountBase",
+        "M365EnvironmentCountIncremental",
+        "ApiCallCountIncremental",
+        "ApiCallCountBase",
+        "CapacityPassBase",
+        "FinOpsDatabaseBase",
+        "FinOpsDatabaseIncremental",
+        "FinOpsFileBase",
+        "FinOpsFileIncremental"
+      ],
+      "type": "string"
+    },
+    "CapacityStatusMessageCode": {
+      "enum": [
+        "AllCapacityAvailable",
+        "DBCapacityOver",
+        "LogOverDBCover",
+        "LogCapacityOver",
+        "FileOverDBCover",
+        "FileOverLogCover",
+        "FileOverDBAndLogCover",
+        "FileCapacityOver",
+        "DBAndLogOver",
+        "DBAndFileOver",
+        "LogAndFileOverDBCover",
+        "LogAndFileOver",
+        "AllCapacityOver",
+        "LegacyCapacityAvailable",
+        "LegacyCapacityOver",
+        "FinOpsAllCapacityAvailable",
+        "FinOpsNotAvailable",
+        "FinOpsAllCapacityOver",
+        "FinOpsDBCapacityOver",
+        "FinOpsFileCapacityOver",
+        "LegacyCapacityMoreThanEightyFive",
+        "DBCapacityMoreThanEightyFive",
+        "LogCapacityMoreThanEightyFive",
+        "FileCapacityMoreThanEightyFive",
+        "DBAndFileCapacityMoreThanEightyFive",
+        "DBAndLogCapacityMoreThanEightyFive",
+        "LogAndFileCapacityMoreThanEightyFive",
+        "AllCapacityMoreThanEightyFive"
+      ],
+      "type": "string"
+    },
+    "CapacitySummary": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/CapacityAvailabilityStatus"
+        },
+        "statusMessage": {
+          "type": "string"
+        },
+        "statusMessageCode": {
+          "$ref": "#/definitions/CapacityStatusMessageCode"
+        },
+        "finOpsStatus": {
+          "$ref": "#/definitions/CapacityAvailabilityStatus"
+        },
+        "finOpsStatusMessage": {
+          "type": "string"
+        },
+        "finOpsStatusMessageCode": {
+          "$ref": "#/definitions/CapacityStatusMessageCode"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CapacityType": {
+      "enum": [
+        "None",
+        "Database",
+        "File",
+        "Log",
+        "TrialDatabase",
+        "TrialFile",
+        "TrialLog",
+        "SubscriptionTrialDatabase",
+        "SubscriptionTrialFile",
+        "SubscriptionTrialLog",
+        "M365Database",
+        "M365EnvironmentCount",
+        "SubscriptionTrialEnvironmentCount",
+        "CapacityPass",
+        "ApiCallCount",
+        "FinOpsDatabase",
+        "FinOpsFile",
+        "PIProcess"
+      ],
+      "type": "string"
+    },
+    "CapacityUnits": {
+      "enum": [
+        "None",
+        "Unit",
+        "MB"
+      ],
+      "type": "string"
+    },
     "ConsumerIdentityModel": {
       "description": "The consumer identity for ISV contract.",
       "type": "object",
@@ -1215,6 +1672,46 @@
           "example": {
             "tenantId": "00000000-0000-0000-0000-000000000000"
           }
+        }
+      },
+      "additionalProperties": false
+    },
+    "ConsumptionModel": {
+      "type": "object",
+      "properties": {
+        "actual": {
+          "format": "double",
+          "type": "number"
+        },
+        "rated": {
+          "format": "double",
+          "type": "number"
+        },
+        "actualUpdatedOn": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "ratedUpdatedOn": {
+          "format": "date-time",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "GetTemporaryCurrencyEntitlementCountResponseModel": {
+      "type": "object",
+      "properties": {
+        "temporaryCurrencyEntitlementCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "temporaryCurrencyEntitlementsAllowedPerMonth": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "entitledQuantity": {
+          "format": "int64",
+          "type": "integer"
         }
       },
       "additionalProperties": false
@@ -1242,7 +1739,7 @@
           "$ref": "#/definitions/BillingPolicyStatus"
         },
         "geo": {
-          "description": "Specify the desired resource location for creation of Azure Power Platform account for billing. Once set, this property cannot be updated. Power Platform Environments using this ISV Contract for pay-as-you-go billing must be in the same location.",
+          "description": "Specify the desired resource location for creation of an Azure Power Platform account for billing. Once set, this property cannot be updated. Power Platform environments using this ISV Contract for pay-as-you-go billing must be in the same location.",
           "type": "string",
           "items": {
             "example": [
@@ -1388,8 +1885,108 @@
       },
       "additionalProperties": false
     },
+    "LegacyCapacityModel": {
+      "type": "object",
+      "properties": {
+        "totalCapacity": {
+          "format": "double",
+          "type": "number"
+        },
+        "totalConsumption": {
+          "format": "double",
+          "type": "number"
+        },
+        "capacityUnits": {
+          "$ref": "#/definitions/CapacityUnits"
+        }
+      },
+      "additionalProperties": false
+    },
+    "LicenseDetailsModel": {
+      "type": "object",
+      "properties": {
+        "entitlementCode": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "isTemporaryLicense": {
+          "type": "boolean"
+        },
+        "temporaryLicenseExpiryDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "servicePlanId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "skuId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "paid": {
+          "$ref": "#/definitions/LicenseQuantity"
+        },
+        "trial": {
+          "$ref": "#/definitions/LicenseQuantity"
+        },
+        "totalCapacity": {
+          "format": "double",
+          "type": "number"
+        },
+        "nextLifecycleDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "capabilityStatus": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "LicenseModel": {
+      "enum": [
+        "None",
+        "Legacy",
+        "StorageDriven"
+      ],
+      "type": "string"
+    },
+    "LicenseQuantity": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "warning": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "suspended": {
+          "format": "int32",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "OverflowCapacityModel": {
+      "type": "object",
+      "properties": {
+        "capacityType": {
+          "$ref": "#/definitions/CapacityType"
+        },
+        "value": {
+          "format": "double",
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
     "PowerAutomatePolicyModel": {
-      "description": "The Power Platform Requests policies.",
+      "description": "The Power Platform requests policies.",
       "type": "object",
       "properties": {
         "cloudFlowRunsPayAsYouGoState": {
@@ -1431,6 +2028,173 @@
         "DelegatedAdmin"
       ],
       "type": "string"
+    },
+    "ProblemDetails": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "status": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "detail": {
+          "type": "string"
+        },
+        "instance": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": { }
+    },
+    "StorageWarningThresholds": {
+      "type": "object",
+      "properties": {
+        "storageCategory": {
+          "type": "string"
+        },
+        "storageEntity": {
+          "type": "string"
+        },
+        "thresholdInMB": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "warningMessageConstKey": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "StorageWarningThresholdsDocument": {
+      "type": "object",
+      "properties": {
+        "storageCategory": {
+          "type": "string"
+        },
+        "storageEntity": {
+          "type": "string"
+        },
+        "thresholds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/StorageWarningThresholds"
+          }
+        },
+        "isActive": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TemporaryLicenseInfo": {
+      "type": "object",
+      "properties": {
+        "hasTemporaryLicense": {
+          "type": "boolean"
+        },
+        "temporaryLicenseExpiryDate": {
+          "format": "date-time",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantCapacityAndConsumptionModel": {
+      "type": "object",
+      "properties": {
+        "capacityType": {
+          "$ref": "#/definitions/CapacityType"
+        },
+        "capacityUnits": {
+          "$ref": "#/definitions/CapacityUnits"
+        },
+        "totalCapacity": {
+          "format": "double",
+          "type": "number"
+        },
+        "maxCapacity": {
+          "format": "double",
+          "type": "number"
+        },
+        "consumption": {
+          "$ref": "#/definitions/ConsumptionModel"
+        },
+        "status": {
+          "$ref": "#/definitions/CapacityAvailabilityStatus"
+        },
+        "overflowCapacity": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/OverflowCapacityModel"
+          }
+        },
+        "capacityEntitlements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TenantCapacityEntitlementModel"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantCapacityDetailsModel": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "licenseModelType": {
+          "$ref": "#/definitions/LicenseModel"
+        },
+        "capacitySummary": {
+          "$ref": "#/definitions/CapacitySummary"
+        },
+        "tenantCapacities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TenantCapacityAndConsumptionModel"
+          }
+        },
+        "legacyModelCapacity": {
+          "$ref": "#/definitions/LegacyCapacityModel"
+        },
+        "temporaryLicenseInfo": {
+          "$ref": "#/definitions/TemporaryLicenseInfo"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantCapacityEntitlementModel": {
+      "type": "object",
+      "properties": {
+        "capacityType": {
+          "$ref": "#/definitions/CapacityType"
+        },
+        "capacitySubType": {
+          "$ref": "#/definitions/CapacityEntitlementType"
+        },
+        "totalCapacity": {
+          "format": "double",
+          "type": "number"
+        },
+        "maxNextLifecycleDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "licenses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LicenseDetailsModel"
+          }
+        }
+      },
+      "additionalProperties": false
     }
   },
   "securityDefinitions": {

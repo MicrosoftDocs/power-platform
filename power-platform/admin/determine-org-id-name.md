@@ -2,35 +2,62 @@
 title: "Find your environment and organization ID and name"
 description: "If you need to find your Power Platform environment's organization ID and name for any reason, this page explains how to find this information in your settings."
 author: sericks007
+contributors: yingchin
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 05/30/2022
+ms.topic: how-to
+ms.date: 05/16/2025
 ms.subservice: admin
+ms.custom: NewPPAC
 ms.author: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
 
-# Find your environment and organization ID and name
+# Find your Environment and organization ID and name
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 Use the following steps to find your environment ID, organization ID, and organization name.
 
 ## Find your environment and organization ID
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the **Details** section, locate the **Organization ID** and **Environment ID**.
 
-2. Select an environment and review the information in the **Details** section.
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the **Details** section, locate the **Organization ID** and **Environment ID**.
+---
 
 ## Find your organization name
 
-1.	In the Power Platform admin center, select an environment. Select **Settings** > **Resources** > **All legacy settings**.
+#### [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the **Resources** section, select **Power Apps**.
+1. On the **Power Apps** page, open any app.
+1. In the command bar of the opened app, select **Settings**, then select **Advanced Settings**.
+1. In the navigation pane, select **Administration**, then select **Resources in use**.
+1. Locate the **Dynamics 365 Organization Name**.
 
-    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings**.
-   
-2. Go to **Settings** > **Customizations** > **Developer Resources**.
-
-3. Under **Instance Reference Information**, make note of **ID** and **Unique Name**. **Unique Name** is the organization name.
-
-   :::image type="content" source="media/org-id-name-sm.png" alt-text="Find the organization ID and name.":::
+#### [Classic admin center](#tab/classic)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the **Resources** section, select **Power Apps**.
+1. On the **Power Apps** page, open any app.
+1. In the command bar of the opened app, select **Settings**, then select **Advanced Settings**.
+1. In the navigation pane, select **Administration**, then select **Resources in use**.
+1. Locate the **Dynamics 365 Organization Name**.
+---
 
 > [!NOTE]
 > The organization name is derived from the domain name when the environment was provisioned. You cannot change the organization name using the [Business Unit](create-edit-business-units.md) form but it can be changed using the [Web API](/dynamics365/customer-engagement/web-api/businessunit?view=dynamics-ce-odata-9).

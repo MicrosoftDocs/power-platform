@@ -1,40 +1,41 @@
 ---
-title: "Tutorial: Allocate add-ons to environments (preview) | Microsoft Docs"
+title: "Tutorial: Allocate add-ons to environments | Microsoft Docs"
 description: Learn how to allocate add-ons to environments manually, as well as programmatically.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/01/2023
+ms.date: 03/03/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
 ---
 
-# Tutorial: Allocate add-ons to environments (preview)
+# Tutorial: Allocate add-ons to environments 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Add-ons provide extra capabilities that Power Apps, Power Automate flows, and other resources can use. These capabilities can be assigned at the environment level in the Power Platform admin center and are made available based on prior license purchases. To learn more about add-on management, reporting, and access control, see [Add-on capacity management](./capacity-add-on.md).
 
 In this tutorial, you'll learn to:
 
-- Manually allocate an add-on to an environment in the Power Platform admin center.
-- Allocate add-ons, at scale, using PowerShell.
-- Unassign an add-on.
+> [!div class="checklist"]
+> + Manually allocate an add-on to an environment in the Power Platform admin center.
+> + Allocate add-ons, at scale, using PowerShell.
+> + Unassign an add-on.
   
 As an example of this scenario, a customer who has purchased AI Builder credits and Power Automate per Process flows can assign those add-ons to an environment to account for usage in that environment.
 
-> [!IMPORTANT]
-> This is a preview feature.
-> Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Allocate an add-on to an environment
 
 To start, sign in as a Power Platform administrator and allocate AI Builder credits to the environment where they'll be used.
 
 Not all add-ons are available in the Power Platform admin center UI. As new add-ons become available, they're often first surfaced using API and programmability tools to get customer feedback before making them more generally available in the UI. Such an example is the Power Automate per Process add-on, which can be allocated using PowerShell, as shown in the following PowerShell example.
+
+> [!TIP]
+> For full REST API reference, visit [Currency allocation](/rest/api/power-platform/licensing/currency-allocation).
 
 # [Power Platform admin center](#tab/PPAC)
 
@@ -52,6 +53,14 @@ Not all add-ons are available in the Power Platform admin center UI. As new add-
     :::image type="content" source="media/tutorial-allocate-addons2.png" alt-text="Select an environment and review all of the various add-ons you could assign.":::
 
 4. Select **Save**.
+
+# [Power Automate / Logic Apps](#tab/Automate)
+
+### Allocate an add-on using Power Automate flows or Logic Apps
+
+Add a new action to the canvas, searching for "Allocate and deallocate the currencies for the environment".  Set the parameters to higher numeric values to perform assignment.
+
+:::image type="content" source="media/tutorial-allocate-addons-flow1.png" alt-text="Allocate and deallocate the currencies screenshot.":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -89,6 +98,8 @@ $patchRequestResponse
 ```
 ---
 
+Power Platform API reference: [Currency Allocation - Patch Currency Allocation By Environment](/rest/api/power-platform/licensing/currency-allocation/patch-currency-allocation-by-environment)
+
 ## Unassign an add-on
 You can unassign an add-on. This is also commonly done by admins who wish to reclaim capacity for other purposes.
 
@@ -100,6 +111,14 @@ You can unassign an add-on. This is also commonly done by admins who wish to rec
 3. Select **Manage** in the **Add-ons** section.
 4. Find your environment and remove the AI Builder credits allocation that was assigned earlier in this article.
 5. Select **Save**.
+
+# [Power Automate / Logic Apps](#tab/Automate)
+
+### Unassign an add-on using Power Automate flows or Logic Apps
+
+Add a new action to the canvas, searching for "Allocate and deallocate the currencies for the environment".  Set the parameters to lower numeric values to perform unassignment.
+
+:::image type="content" source="media/tutorial-allocate-addons-flow1.png" alt-text="Allocate and deallocate the currencies screenshot.":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -132,3 +151,4 @@ $patchRequestResponse = Invoke-RestMethod -Method Patch -Uri "https://api.powerp
 $patchRequestResponse
 ```
 ---
+Power Platform API reference: [Currency Allocation - Patch Currency Allocation By Environment](/rest/api/power-platform/licensing/currency-allocation/patch-currency-allocation-by-environment)

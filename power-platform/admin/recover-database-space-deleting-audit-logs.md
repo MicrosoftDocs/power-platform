@@ -3,7 +3,7 @@ title: "Recover database space by deleting audit logs  | MicrosoftDocs"
 description: Recover database space by deleting audit logs
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/29/2024
 ms.subservice: admin
 ms.author: sericks
@@ -13,6 +13,8 @@ contributors:
 - paulliew 
 ---
 # Recover database space by deleting audit logs
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 When you enable auditing, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), store the change history for transactions in the form of audit logs in the database. You can delete old or unwanted logs to restore database space. You can choose to delete audit logs by table, by access logs, or by date range. 
 

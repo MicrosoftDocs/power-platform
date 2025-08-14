@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 11/13/2024
+ms.date: 01/30/2025
 ms.reviewer: "matp"
 ms.topic: "overview"
 contributors:
@@ -126,6 +126,9 @@ The deploying identity. For standard deployments, the owner is the requesting ma
 
 No. We recommend using Azure DevOps or GitHub for this scenario. 
 
+### Why can't I access the "Manage pipelines" button in the command bar?
+If the user has the "Deployment Pipeline Administrator" security role the "Manage pipelines" button will be enabled and it will open the "Deployment Pipeline Configuration" app. The button will also not be enabled if there is no platform host or custom host available. More information: [Accessing the "Deployment Pipeline Configuration" app](platform-host-pipelines.md#accessing-the-deployment-pipeline-configuration-app-from-power-apps)
+
 ### What should I do if my development or target environment is reset or deleted?
 
 You should delete the environment record and update the pipeline configuration when needed. If an environment is reset, you re-create the environment record then associate it with your pipeline. 
@@ -152,7 +155,7 @@ Yes. You can configure bulk delete jobs in the Dataverse pipelines host to delet
 
 ### Can I specify advanced solution import behaviors such as update versus upgrade?
 
-Not currently. Pipelines default import behavior is _Upgrade_ with _Overwrite customizations_.
+Not currently. Pipelines default import behavior is _Upgrade_ without _Overwrite customizations_.
 
 ### Can an environment be associated with multiple hosts?
 
@@ -215,7 +218,7 @@ We encourage customers to use pipelines for core deployment functionality, and w
 
 ## Next steps
 
-[Set up pipelines](set-up-pipelines.md)
+[Set up pipelines](set-up-pipelines.md)  
 [Extend pipelines](extend-pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
@@ -223,4 +226,5 @@ We encourage customers to use pipelines for core deployment functionality, and w
 
 ## Related information
 
-[Deploy solutions using Pipeline in Power Apps (video)](https://youtu.be/iziCkYl8Shc?feature=shared)
+- [Deploy solutions using Pipeline in Power Apps (video)](https://youtu.be/iziCkYl8Shc?feature=shared)
+- [Simplify Microsoft Power Platform deployments by using pipelines - Learning Path](/training/paths/simplify-power-platform-deployments)

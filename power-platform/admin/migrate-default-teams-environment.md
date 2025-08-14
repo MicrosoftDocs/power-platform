@@ -1,7 +1,7 @@
 ---
 title: "Migrate default and Dataverse for Teams environments  | MicrosoftDocs"
 description: The article provides information about how to migrate the default environment within a tenant.
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.date: 11/28/2022
 ms.subservice: admin
 author: sericks007
@@ -10,6 +10,8 @@ ms.reviewer: sericks007
 ---
 
 # Migrate default and Dataverse for Teams environments
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The [default](environments-overview.md#default-environment) and [Dataverse for Teams](about-teams-environment.md) environments are special types of environments that are created by the system. In most cases, system administrators can't decide the geographical region for these types of environments. This choice is made for them based on the country or region selected during the account creation.
 

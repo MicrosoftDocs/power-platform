@@ -3,7 +3,7 @@ title: "Management and monitoring  | MicrosoftDocs"
 description: About management and monitoring.
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/12/2022
 ms.subservice: admin
 ms.author: sericks
@@ -11,6 +11,8 @@ search.audienceType:
   - admin
 ---
 # Management and monitoring
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 This article discusses the tools that you can use to manage and monitor what is going on in your environments. It's important for you to understand that each organization has its own operational model and requirements for creating an app development platform.
 

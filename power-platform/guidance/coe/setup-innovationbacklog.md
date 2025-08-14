@@ -1,16 +1,17 @@
 ---
-title: "Set up Innovation Backlog components | MicrosoftDocs"
-description: "The Innovation Backlog components contain a canvas app that can be used for managing an idea backlog, estimating ROI, and voting on ideas."
+title: Set up Innovation Backlog components 
+description: The Innovation Backlog components contain a canvas app that can be used for managing an idea backlog, estimating ROI, and voting on ideas.
 author: manuelap-msft
 
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 06/06/2023
-ms.subservice: guidance
+ms.topic: how-to
+ms.date: 02/12/2025
+ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Set up Innovation Backlog components
@@ -19,7 +20,7 @@ Use the Innovation Backlog app to ask users to submit ideas for apps and flows t
 
 Pick the most impactful ideas for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
 
-The Innovation Backlog solution contains assets that are relevant to all users in your organization, and can be installed in [production](../../admin/environments-overview.md#power-platform-environment-types) or [Dataverse for Teams](/powerapps/teams/overview-data-platform) environments.
+The Innovation Backlog solution contains assets that are relevant to all users in your organization, and can be installed in [production](../../admin/environments-overview.md#environment-types) or [Dataverse for Teams](/powerapps/teams/overview-data-platform) environments.
 
 > [!IMPORTANT]
 > The Innovation Backlog components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.

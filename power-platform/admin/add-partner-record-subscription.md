@@ -3,7 +3,7 @@ title: "Add a Partner of Record (POR) for sales and tech support"
 description: "A Microsoft Partner of Record (POR) can provide sales and tech expertise for your Dataverse. Add a POR at the time of purchase or to an existing subscription."
 author: sericks007
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/16/2020
 ms.subservice: admin
 ms.author: sericks
@@ -12,6 +12,8 @@ search.audienceType:
   - admin
 ---
 # Add a Partner of Record (POR) to your subscription
+
+[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You can choose to work with a designated Microsoft partner who can provide the sales and technical expertise you need to help set up, customize, deploy, and administer your environments. You can find a designated Partner of Record (POR) on the [Microsoft Partner Center](https://partnercenter.microsoft.com/pcv/register/joinnow/enrollmentWelcome/valueaddedreseller) site. Once you find a partner, request their Microsoft Partner ID and designate them in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
