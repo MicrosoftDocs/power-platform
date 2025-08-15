@@ -34,7 +34,7 @@ A geography includes at least one Azure region that is typically made up of thre
 
 Microsoft recognizes that infrastructure components such as network, power, or cooling can fail unexpectedly, for example, due to a lightning strike and can affect one or more datacenters. To ensure resilience, we architected and deployed availability zones, where your environments are replicated across at least two distinct zones.
 
-Microsoft automatically detects availability zone-level failures and switches to other availability zones in the region almost instantly to protect you from data loss, while keeping the downtime near zero in most circumstances. This in-region capability is available for production-type environments that are expected to host business-critical application processes and data. To protect yourself against disruption, make sure your production processes and data aren't deployed in non-production types such as sandbox, developer, or trial environment types.
+Microsoft automatically detects availability zone-level failures and switches to other availability zones in the region almost instantly to protect you from data loss, while keeping the downtime near zero in most circumstances. This in-region capability is available for production-type environments that are expected to host business-critical application processes and data. To protect yourself against disruption, make sure your production processes and data aren't deployed in nonproduction types such as sandbox, developer, or trial environment types.
 
 To ensure seamless disaster recovery, availability zones provide built-in resilience without requiring manual intervention. Zone-redundant data services replicate the data across multiple zones so that a failure in one zone doesn't affect the availability of the data. The recovery point objective is near zero and the rapid recovery, or recovery time objective, is less than five minutes. If one zone experiences a failure, traffic is automatically rerouted to the remaining zones with minimal service disruption.
 
@@ -63,7 +63,7 @@ Self-service disaster recovery is a Power Platform infrastructure capability tha
 
 Customers typically have multiple environments of different types created in their tenant. This capability is available specifically for production-type.
 
-In order to turn on self-service disaster recovery the environment must be managed, [Managed Environments](managed-environment-overview.md) and must first be linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md).
+To turn on self-service disaster recovery, the environment must be managed and must first be linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md). For more information about Managed Environments, go to [Managed Environments](managed-environment-overview.md).
 
 ## Turn on self-service disaster recovery
 
@@ -101,7 +101,7 @@ To turn on disaster recovery, complete the following steps.
 You may also want to turn on disaster recovery for other events, such as:
 
 - Disaster recovery drill.
-- Emergency response in the event of a major regional outage.
+- Emergency response for a major regional outage.
 
 ## Disaster recovery drills
 
@@ -131,47 +131,47 @@ We recommend that you perform disaster recovery drills or an emergency response 
 
 ## Frequently Asked Questions
 
-### What are the costs associated with enabling self-service disaster recovery?
+### What are the costs associated with using self-service disaster recovery?
 
-- Capacity charges will be based on the consumption of the environment's paired region for Database, File, and Log storage types.
-- Capacity consumption will be reflected in the familiar licensing experience within the Power Platform Admin Center. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
+- Capacity charges are based on the consumption of the environment's paired region for Database, File, and Log storage types.
+- Capacity consumption is reflected in the familiar licensing experience within the Power Platform Admin Center. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
 
 ### How does billing work for self-service disaster recovery?
 
 - If your environment is configured to draw capacity from your tenant's Dataverse capacity entitlement, then entitled capacity is consumed first and a pay-as-you-go billing plan is still required so you can avoid capacity overages.
 - Admins can allocate capacity to the environment, after which the pay-as-you-go plan will be billed.
-- Customers cannot turn off the pay-as-you-go plan in the billing experience if self-service disaster recovery is turned on.
+- Customers can't turn off the pay-as-you-go plan in the billing experience if self-service disaster recovery is turned on.
 
 ### Can I switch regions during a regional outage?
 
-   In the case of a regional outage, the system supports failover to the designated secondary region as part of self-service disaster recovery, but it does not allow switching to any other arbitrary regions.
+In the case of a regional outage, the system supports failover to the designated secondary region as part of self-service disaster recovery, but it doesn't allow switching to any other arbitrary regions.
 
 ### What should I know about the capacity experience?
 
-- When you enable self-service disaster recovery, you'll notice that additional storage consumption is displayed in the Dataverse capacity graph, clearly indicating the extra capacity used by the cross-region backup.
-- When you don't enable self-service disaster recovery, the capacity graph shows standard usage without the additional storage for replication.
-- When the self-service disaster recovery is active, the capacity graph will display the extra consumption from cross-region replication, with a *Disaster recovery active* tag in the Dataverse capacity summary.
+- When you allow self-service disaster recovery, you notice that more storage consumption is displayed in the Dataverse capacity graph, clearly indicating the extra capacity used by the cross-region backup.
+- When you don't allow self-service disaster recovery, the capacity graph shows standard usage without the extra storage for replication.
+- When the self-service disaster recovery is active, the capacity graph displays the extra consumption from cross-region replication, with a *Disaster recovery active* tag in the Dataverse capacity summary.
 
 ### How do I disable self-service disaster recovery?
 
-   To disable self-service disaster recovery, go to the *disaster recovery pane* in Power platform admin center and uncheck the **Turn on disaster recovery** checkbox.
+To disable self-service disaster recovery, go to the *disaster recovery pane* in Power platform admin center and uncheck the **Turn on disaster recovery** checkbox.
 
 ### What happens when I disable self-service disaster recovery?
 
-   Disabling self-service disaster recovery deletes all replicated environment data in the paired region. You'll be prompted to confirm the environment's name before proceeding.
+Disabling self-service disaster recovery deletes all replicated environment data in the paired region. You are prompted to confirm the environment's name before proceeding.
 
 ### Can I disable self-service disaster recovery while in a paired region?
 
-   No, self-service disaster recovery cannot be disabled while the environment is in a paired region. You must switch to the primary region first.
+No, self-service disaster recovery can't be disabled while the environment is in a paired region. You must switch to the primary region first.
 
-### Are there any known limitations during a region-wide outage that self-service disaster recovery cannot mitigate?
+### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
 
-   In the rare event of a region-wide outage, the following scenarios may experience temporary degradation, depending on the severity of the outage.
+In the rare event of a region-wide outage, the following scenarios may experience temporary degradation, depending on the severity of the outage.
 
-- Power Automate flows impacted by the regional outage may not recover through self-service disaster recovery and will remain unavailable until the primary region is restored.
+- Power Automate flows impacted by the regional outage may not recover through self-service disaster recovery and remain unavailable until the primary region is restored.
 - Copilot Studio conversation requests may fail until Microsoft restores the service in the primary region.
 - In Dynamics 365, analytics and automation in Sales, real-time updates in Customer Insights, and case or knowledge base access in customer service may be unavailable.
 - Under field service, Resource Scheduling Optimization (RSO), may be impacted during a regional outage. For AI workloads, training and predictive analytics may fail in the secondary region.
 - Connectors may have recovery issues, when dependent on external systems like SharePoint or SQL.
-- Dynamics 365 Sales: Analytics, reporting, and functions dependent on automation (such as sales forecasting) will be unavailable.
-- Finance and operations products are not currently supported for self-serve disaster recovery during regional outages.
+- Dynamics 365 Sales: Analytics, reporting, and functions dependent on automation (such as sales forecasting) are unavailable.
+- Finance and operations products aren't currently supported for self-serve disaster recovery during regional outages.
