@@ -4,7 +4,7 @@ description: Learn how to build high-performing workload teams with fusion devel
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -42,11 +42,11 @@ The following recommendations can help you adopt and implement fusion developmen
 
 ### Continuous learning and improvement
 
-**Use enablement teams to the workload teams' advantage.** Some organizations have a Center of Excellence or Center of Enablement team that provides standards and guidance to ensure consistency in design and process. Empower your workload team to work collaboratively with this team to improve processes and share knowledge. Support a mindset of continuous learning and improvement in your team through open communication. Learn more in [Power Platform Center of Excellence Starter Kit](/power-platform/guidance/coe/starter-kit).
+**Use enablement teams to the workload teams' advantage.** Some organizations have a Center of Excellence or Center of Enablement team that provides standards and guidance to ensure consistency in design and process. Empower your workload team to work collaboratively with this team to improve processes and share knowledge. Support a mindset of continuous learning and improvement in your team through open communication. Learn more in [Establish a Microsoft Power Platform Center of Excellence](/power-platform/guidance/adoption/coe).
 
 **Learn from each other to develop a cross-functional team.** Establish a team structure in which everyone is a specialist in their function and a generalist in all other functions so that team members can support each other when needed. Cross-functionality helps team members develop appreciation for each other's expertise and can help them understand the complexity of the entire workload.
 
-**Encourage upskilling**. A team member might start out as a low-code or business expert but become more interested in code-first components of the platform. Encourage and allow time for acquiring new knowledge and expertise, which improves employee engagement and facilitates career journeys.
+**Encourage upskilling**. A team member might start out as a low-code or business expert but become more interested in code-first components of the platform. Encourage and allow time for acquiring new knowledge and expertise, which improves employee engagement and facilitates career journeys. Learn more in [Establish a training and upskilling strategy for makers](/power-platform/guidance/adoption/training-strategy).
 
 **Invest in your professional development by staying up to date with the latest Power Platform features and capabilities.** [Microsoft Learn for Power Platform](/training/powerplatform/) offers certifications and learning paths to help you master the skills and concepts of low-code app development, data analysis, automation, and AI. Deepening your knowledge increases your confidence and credibility in designing, building, and managing Power Platform solutions, and also validates your expertise and demonstrates value to your organization. Join the [Power Platform Community](https://powerusers.microsoft.com/) to gain access to events, webinars, forums, communities, and networking opportunities with other professionals.
 
