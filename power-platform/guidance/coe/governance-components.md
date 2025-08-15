@@ -65,6 +65,8 @@ You can customize the email that the flow sends out. By default, it looks like t
 
 ### Apps
 
+The Governance components solution includes several apps that support compliance and governance processes. These apps enable makers to submit business justifications, view compliance status, and help administrators manage governance workflows effectively.
+
 #### Developer Compliance Center
 
 Use this app in the [auditing process](example-processes.md) to check whether you comply with app compliance requirements for apps, flows, chatbots, or custom connectors you own. Use it to submit information to the CoE admins as business justification to stay in compliance.
@@ -110,6 +112,8 @@ For **Missing Details**, makers can achieve compliance by providing additional i
 :::image type="content" source="media/coe57.png" alt-text="Developer Compliance Center app details":::
 
 ### Business process flows (BPFs)
+
+Business process flows provide structured guidance for administrators during governance and approval processes. These flows visualize the approval stages and help ensure consistent review procedures for different types of Power Platform resources.
 
 #### Power Apps App Approval BPF
 
@@ -199,6 +203,8 @@ All business process flows are disabled by default. To enable them, follow these
 
 ### Tables
 
+The inactivity processes use custom Dataverse tables to track and manage approval workflows for inactive resources.
+
 #### Inactivity notifications approval
 
 Represents inactivity notifications approval tasks that start during the Admin | Inactivity notifications v2 flows.
@@ -207,8 +213,8 @@ Represents inactivity notifications approval tasks that start during the Admin |
 
 | Flow | Type | Schedule |
 | --- | --- | --- |
-| [Admin \| Inactivity notifications (Start Approval for Apps)](#admin--inactivity-notifications-v2-start-approval-for-apps) | Schedule | Weekly |
-| [Admin \| Inactivity notifications (Start Approval for Flows)](#admin--inactivity-notifications-v2-start-approval-for-flows) | Schedule | Weekly |
+| [Admin \| Inactivity notifications v2 (Start Approval for Apps)](#admin--inactivity-notifications-v2-start-approval-for-apps) | Schedule | Weekly |
+| [Admin \| Inactivity notifications v2 (Start Approval for Flows)](#admin--inactivity-notifications-v2-start-approval-for-flows) | Schedule | Weekly |
 | [Admin \| Inactivity notifications v2 (Check Approval)](#admin--inactivity-notifications-check-approval) | Schedule | Daily |
 | [Admin \| Inactivity notifications v2 (Clean Up and Delete)](#admin--inactivity-notifications-clean-up-and-delete) | Schedule | Daily |
 | [Admin \| Email Managers Ignored Approvals](#admin--email-managers-ignored-inactivity-notifications-approvals) | Instant | Weekly |
@@ -258,6 +264,8 @@ Works with the other Inactivity notifications flows. It looks for approvals from
 
 ### Apps
 
+The inactivity processes include management applications that help administrators and managers handle cleanup tasks and review objects marked for archival or deletion.
+
 #### Cleanup Old Objects App
 
 Asking makers to respond if objects are still useful with the archival flows described earlier, they sometimes ignore these requests. In that case, a flow sends their manager this email.
@@ -284,7 +292,7 @@ This app gives the admin a view of all objects currently being considered for ar
 
 If the reason is sound, they can choose to exempt the object from future runs and consideration for archival and deletion.
 
-![Excuse from archival flows.](media/ArchiveApps6.png "Excuse from archival flows")
+![Excuse from archival flows.](media/ArchiveApps6.png "Excuse from archival flows.")
 
 ## Microsoft Teams governance
 
@@ -377,6 +385,8 @@ If they choose to see the items individually, they can make these decisions gran
 ![Orphaned object item.](media/orphanedobjects3.png "Orphaned object item")
 
 ## App Quarantine process
+
+The app quarantine process automatically restricts access to non-compliant applications and provides mechanisms for administrators to manage quarantined apps and notify makers of compliance requirements.
 
 ### Environment variables
 
