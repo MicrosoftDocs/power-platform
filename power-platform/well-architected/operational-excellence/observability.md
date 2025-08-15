@@ -159,6 +159,10 @@ To help ensure that the system remains healthy, responsive, and secure, set aler
 
 Alerts are generated when thresholds are crossed, as detected by your monitoring system. Ensure that the thresholds you set generally give you enough time to implement the necessary changes to your workload to avoid degradation or outages. You should also implement necessary error handling and catch known errors in your workload to reduce the number of alerts. For example, configure retry policies for your actions in cloud flows so that a retry is attempted as part of the flow run, and only if repeated retries fail and flow failure is recorded and an alert is sent. Learn more in [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md).
 
+## Example
+
+[Distributed tracing across multiple services in Power Platform](/power-platform/architecture/key-concepts/distributed-tracing) provides an example scenario and visual representation of how to trace events across multiple services. This guidance provides practical applications and use cases for distributed tracing and explains how to implement it across multiple services in Power Platform.
+
 ## Power Platform facilitation
 
 Power Platform integrates with [Application Insights](/azure/azure-monitor/app/app-insights-overview), which is part of the [Azure Monitor](/azure/azure-monitor/overview) ecosystem. Use this integration to:
@@ -194,6 +198,7 @@ The [Agent Inventory feature](https://github.com/microsoft/Power-CAT-Copilot-Stu
 
 - [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md)
 - [Recommendations for monitoring and threat detection](../security/monitor-threats.md)
+- [Dataverse auditing](/power-platform/architecture/key-concepts/dataverse-auditing)
 
 ## Next steps
 
