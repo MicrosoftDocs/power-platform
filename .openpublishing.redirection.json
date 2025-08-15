@@ -1608,6 +1608,11 @@
       "source_path": "power-platform/guidance/adoption/sharing-alerts.md",
       "redirect_url": "/power-platform/guidance/adoption/reactive-governance",
       "redirect_document_id": false
+    },
+        {
+      "source_path": "power-platform/guidance/white-papers/managed-environment-activation.md",
+      "redirect_url": "/power-platform/guidance/adoption/admin-best-practices",
+      "redirect_document_id": false
     }
   ]
 }
