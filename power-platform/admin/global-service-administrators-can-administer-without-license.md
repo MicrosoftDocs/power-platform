@@ -12,6 +12,7 @@ search.audienceType:
   - admin
 contributors:
   - srpoduri 
+ms.custom: sfi-ga-nochange
 ---
 # Global admins and Power Platform admins can administer without a license
 
