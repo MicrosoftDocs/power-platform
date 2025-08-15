@@ -1,30 +1,25 @@
 ---
-title: "Programmability and extensibility - Power Platform API - Getting started (preview) | Microsoft Docs"
-description: Power Platform API getting started
+title: "Programmability and extensibility - Power Platform API - Getting started | Microsoft Docs"
+description: Getting started with Power Platform API
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
 ms.collection: get-started
-ms.date: 03/09/2022
+ms.date: 08/15/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
 ---
 
-# Get started with Power Platform API (preview)
+# Get started with Power Platform API
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+Welcome to the Power Platform API! With the Power Platform API, you can unlock the full potential of Microsoft Power Platform—giving you unified programmability and automation to manage environments, enable tenant-wide governance, and gain insights into capacity usage across all your business applications. Whether you are an admin, IT, or developer, the Power Platform API empowers you to confidently build, integrate, and transform how your organization works with a robust, secure, and scalable platform.
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+Ready to get started? Explore these helpful links to accelerate your journey:
 
-Power Platform API is currently used to manage environments, tenant settings, and to query capacity consumption. 
+- [Power Platform API documentation and reference (latest)](/rest/api/power-platform)
+- [Authentication](./programmability-authentication-v2.md)
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
-
-Check out the latest technical reference for API Version [2022-03-01-preview](/rest/api/power-platform). 
 
