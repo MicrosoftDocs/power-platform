@@ -109,13 +109,7 @@ The next step is to determine and implement your approach to loading data into D
 1. **Key considerations (tool-agnostic)**:
     - **Handle cyclic dependencies**: Sequence table loads to minimize circular lookups. Insert records without dependent lookups, then update them later.
     - **Track record IDs**: Capture Dataverse GUIDs in a success table, then update the main table using a unique identifier (for example, importsequencenumber).
-    - **Optimize batch size and number of threads**: To maximize performance, use [ExecuteMultipleRequests](/power-apps/developer/data-platform/org-service/execute-multiple-requests), which can execute 1,000 requests per batch and up to 52 parallel threads. Consider [Service Protection API limits](/power-apps/developer/data-platform/api-limits?tabs=sdk#how-service-protection-api-limits-are-enforced).
-
-        | **Measure**                   | **Description**                                               | **Limit per web server**                                      |
-        |-------------------------------|---------------------------------------------------------------|---------------------------------------------------------------|
-        | Number of requests            | The cumulative number of requests made by the user.           | 6000 within the 5-minute sliding window                       |
-        | Execution time                | The combined execution time of all requests made by the user. | 20 minutes (1,200 seconds) within the five-minute sliding window |
-        | Number of concurrent requests | The number of concurrent requests made by the user            | 52 or higher                                                  |
+    - **Optimize batch size and number of threads**: Review guidance for [optimizing performance for bulk operations](/power-apps/developer/data-platform/optimize-performance-create-update). The application you use must manage service protection errors that will be thrown when extraordinary numbers of requests are sent to Dataverse. If you are writing your own code and using the Dataverse Web API, make sure you retry 429 errors as described in [Service protection API limits[/power-apps/developer/data-platform/optimize-performance-create-update]. If you are using the Dataverse SDK, it will manage these for you.
 
         To achieve optimal performance, tune batch size and thread count based on table complexity:
         - **Out-of-the-box (OOB) tables** (for example, Contact, Account, Lead): These tables are slower due to built-in plugins and jobs. Recommended: Batch size 200–300, up to 30 threads (if ≤10 lookups and 50–70 columns).

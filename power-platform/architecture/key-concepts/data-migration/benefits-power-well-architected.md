@@ -24,7 +24,6 @@ Data migration is a critical step in modernizing business systems and ensuring s
 This architecture ensures reliability through several key infrastructure choices:
 
 - **Regional proximity**: Hosting the virtual machine (VM) in the same region as Dataverse reduces latency and improves data transfer speeds, enabling efficient and stable migrations.
-- **High-capacity virtual machine**: A D4-series VM (8 cores, 28-GB RAM, 500-GB storage) supports high-volume data processing without performance degradation.
 - **Local database**: Using a local database instead of an Azure-hosted one reduces reliance on external services, minimizing the risk of connectivity issues or service outages.
 - **Co-located Azure Data Factory**: Deploying Azure Data Factory in the same region as Dataverse ensures consistent, high-throughput data processing.
 

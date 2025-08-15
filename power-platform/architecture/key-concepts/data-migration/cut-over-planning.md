@@ -24,6 +24,8 @@ Cutover planning is often a challenge after complex data migrations. A well-stru
 
 Developers often build migration jobs for development or test environments without accounting for production data volumes. Always measure CRUD  (create, read, update, or delete) throughput (records/sec) and estimate expected production load. Include a 20–30% buffer for monitoring overhead to better predict full migration duration.
 
+Also consider that the production environment might be faster than test or development environments. Environments with a large number of licensed users support more concurrent threads. Learn more about [sending requests in parallel](/power-apps/developer/data-platform/send-parallel-requests?tabs=sdk) and review the guidance for [optimizing performance for bulk operations](/power-apps/developer/data-platform/optimize-performance-create-update).
+
 ## Plan for full or delta load
 
 Full data migrations can be time-consuming. Even at 100–200 records per second, migrating 120 million records may take up to two weeks of continuous runtime. At 50 records per second, it could take four weeks—often impractical for business operations.
