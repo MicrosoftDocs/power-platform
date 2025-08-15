@@ -73,7 +73,7 @@ For backward compatibility, filters can be applied to support both legacy and ne
 
 To validate which emails/users would get updated on the new appid use following fetchxml to evaluate. 
 
-`fetch xml
+```fetch xml
 <fetch>
   <entity name="applicationuser">
     <attribute name="applicationid" />
@@ -89,7 +89,7 @@ To validate which emails/users would get updated on the new appid use following 
     </link-entity>
   </entity>
 </fetch>
-`
+```
 
 In rare cases if the application ID is not available reach out to Microsoft with urgent case.
 
