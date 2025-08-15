@@ -1,7 +1,6 @@
 ---
 title: Support environments and consent to access customer data
 description: Understand why Microsoft Support may need your consent to access your customer data and create a support environment in your tenant to resolve an issue.
-ms.custom: ""
 ms.date: 08/24/2022
 ms.reviewer: "yinkafatona"
 ms.suite: ""
@@ -18,6 +17,9 @@ ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+ms.custom:
+  - ""
+  - sfi-image-nochange
 ---
 
 # Support environments and consent to access customer data

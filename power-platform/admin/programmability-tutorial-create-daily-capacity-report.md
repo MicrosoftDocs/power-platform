@@ -10,6 +10,9 @@ ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
 # Tutorial: Create a daily capacity report

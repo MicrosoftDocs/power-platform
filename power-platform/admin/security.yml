@@ -24,7 +24,7 @@ landingContent:
        - linkListType: overview
          links:
           - text: Security in Microsoft Power Platform
-            url: ./security/overview.md
+            url: ./security/security-overview.md
           - text: Authenticating to Power Platform services
             url: ./security/authenticate-services.md
           - text: Securely access customer data

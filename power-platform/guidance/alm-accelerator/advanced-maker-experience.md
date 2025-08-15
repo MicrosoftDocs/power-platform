@@ -8,7 +8,9 @@ author: alvarezskinner
 manager: devkeydet
 ms.author: mapichle
 ms.reviewer: sericks
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # ALM Accelerator for Power Platform advanced maker experience

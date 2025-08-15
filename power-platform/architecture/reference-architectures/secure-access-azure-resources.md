@@ -1,11 +1,11 @@
 ---
-title: Secure Power Platform access to Azure resources
-description: Learn how to integrate Power Platform with Azure Virtual Network to protect your Azure resources from exposure to the public internet.
-#customer intent: As a Power Platform user, I want to secure Power Platform access to Azure resources so that I can integrate without exposing resources to the public internet.
+title: Secure Power Platform access to resources inside your virtual network
+description: Learn how to integrate Power Platform with Azure Virtual Network to protect resources inside your virtual network from exposure to the public internet.
+#customer intent: As a Power Platform user, I want to secure Power Platform access to resources inside my virtual network so that I can integrate without exposing resources to the public internet.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 04/17/2025
+ms.date: 07/15/2025
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
 contributors:
@@ -22,7 +22,7 @@ ms.custom:
   - ai-seo-date:03/11/2025
 ---
 
-# Secure Power Platform access to Azure resources
+# Secure Power Platform access to resources inside your virtual network
 
 Power Platform supports the use of Azure Virtual Network to access resources inside your virtual network without exposing them to the public internet. 
 
