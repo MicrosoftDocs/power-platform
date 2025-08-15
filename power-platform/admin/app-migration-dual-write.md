@@ -47,7 +47,7 @@ Dual-write now uses this abstraction. All recent quality updates contain this en
 1. **Dependency with Microsoft-provided solutions**
     Customers using older versions of Microsoft-provided dual-write solutions should validate upgrade paths before the September 1, 2025, deadline. While these solutions are designed to be backward compatible, customizations or applications built on older versions may require evaluation.
    
-For support or questions, you can contact the following resources:
+    For support or questions, you can contact the following resources:
 
     - **Dual-write Application Core Solutions**: didev@microsoft.com
     - **Dual-write Core Solution**: didev@microsoft.com
