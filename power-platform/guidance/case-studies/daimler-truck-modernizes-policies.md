@@ -101,7 +101,7 @@ The project streamlined policy management, reduced costs, and enhanced collabora
 
 ## Looking ahead
 
-Daimler Truck is currently exploring how artificial intelligence can enhance the Policy Navigator App. The company is testing AI-powered automation to help employees quickly locate relevant corporate policies and better understand the content.
+Daimler Truck is currently exploring how artificial intelligence can enhance the Policy Navigator App. The company is testing AI-powered automation to help employees quickly locate relevant corporate policies and better understand their content.
 
 Daimler Truck's Power Platform journey demonstrates its commitment to using cutting-edge technologies, both as a productivity tool and a strategic asset in reshaping its digital future.
 
