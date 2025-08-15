@@ -243,10 +243,6 @@ The following steps apply to the administrator-initiated, value assessment scena
 
 1. The administrator identifies an app either through CoE Starter Kit dashboard, Power Platform admin center dashboard, or a custom solution.
 
-    <!-- Update or remove? Manage -> Power Apps (under Products). No data in my enviro. -->
-
-    :::image type="content" source="media/admin-dashboard-PPAC.png" alt-text="Screenshot of Power Platform admin center screen.":::
-
 1. The administrator copies the ID of the app and ID of the environment.
 
 1. The administrator runs the cloud flow titled, **New-AdminInitiatedAssessment**, pasting the ID for the app and environment.

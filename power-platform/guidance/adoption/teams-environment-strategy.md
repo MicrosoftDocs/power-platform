@@ -55,8 +55,6 @@ Admins can use Power Apps and Power Automate analytics reports in the Power Plat
 
 Admins can monitor capacity usage for Microsoft Teams environments by using dedicated [capacity views in the Power Platform admin center](../../admin/about-teams-environment.md#capacity-limits). The makers in Microsoft Teams receive notifications when the environment is nearing 80 percent of its capacity. Tenant admins receive notifications when the tenant is reaching 80 percent capacity. These capacity limits can't be extended. Admins can monitor inactive Microsoft Teams environments in the tenant and invoke cleanup when necessary, in addition to performing automated cleanup of unused environments to help free up capacity.
 
-<!-- Update or remove entirely. Current image is hard to see in any case. Now under Licensing > Capacity add-ons. Then from Capacity page select Microsoft Teams. No data in my enviro.-->
-
 :::image type="content" source="media/teams-4.png" alt-text="Screenshot of dedicated view for monitoring Microsoft Teams environments capacity in Power Platform admin center.":::
 
 A dashboard in the CoE Starter Kit further identifies the usage of Dataverse for Teams environments, in addition to inactive environments without apps or flows.
