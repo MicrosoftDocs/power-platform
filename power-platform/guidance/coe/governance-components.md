@@ -4,7 +4,7 @@ description: Learn how to use governance components for automating auditing and 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/06/2023
+ms.date: 08/15/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -312,7 +312,7 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 #### Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
 
 > [!NOTE]
-> Automatically deleting an inactive Dataverse for Teams environment is now part of the Power Platform admin center. For more information, see [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md).
+> Automatically deleting an inactive Dataverse for Teams environment is now part of the Power Platform admin center. Learn more in [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md).
 
 > [!IMPORTANT]
 > This flow deletes environments for which no business justification exists, or where the business justification is rejected. Environment owners have 7 days to provide a business justification before the environment gets deleted.
@@ -328,7 +328,7 @@ This flow runs weekly and deletes environments that:
 Environments are deleted from the tenant and marked as deleted in the Environment table of the CoE Starter Kit. You can view deleted environments in the [Power Platform Admin View](core-components.md).
 
 > [!IMPORTANT]
-> You can recover a recently deleted environment (within seven days of deletion) by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment. For more information, see [Recover environment](../../admin/recover-environment.md#power-platform-admin-center).
+> You can recover a recently deleted environment (within seven days of deletion) by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment. Learn more in [Recover environment](../../admin/recover-environment.md#power-platform-admin-center).
 
 Save a copy of this flow if you want to make any changes to the criteria for when environments are deleted.
 
