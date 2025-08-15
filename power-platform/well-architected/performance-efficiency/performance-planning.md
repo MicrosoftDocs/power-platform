@@ -4,7 +4,7 @@ description: Learn how to conduct performance and capacity planning in your Powe
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -180,6 +180,7 @@ Understanding how OData and API requests travel in canvas apps can help you to o
 
 ## Related information
 
+- [Manage solution performance](/power-platform/architecture/key-concepts/performance/)
 - [Azure Monitor](/azure/azure-monitor/overview)
 - [Application Insights](/azure/azure-monitor/app/app-insights-overview)
 - [Log Analytics](/azure/azure-monitor/logs/log-analytics-overview)

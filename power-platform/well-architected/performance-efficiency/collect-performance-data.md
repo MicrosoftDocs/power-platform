@@ -4,7 +4,7 @@ description: Learn how to collect performance data to help you assess the perfor
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -149,6 +149,10 @@ When you create an alert rule, you can define the criteria that determine when a
 - [Create custom trace events in canvas apps](/power-apps/maker/canvas-apps/application-insights#create-custom-trace-events)
 - [Create custom alerts for cloud flows](/power-platform/admin/app-insights-cloud-flow#create-a-custom-alert)
 - [Analyze agent performance and usage in Copilot Studio](/microsoft-copilot-studio/analytics-summary)
+
+## Related information
+
+- [Manage solution performance](/power-platform/architecture/key-concepts/performance/)
 
 ## Performance Efficiency checklist
 
