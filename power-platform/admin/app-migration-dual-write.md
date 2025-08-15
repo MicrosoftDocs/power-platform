@@ -18,7 +18,7 @@ search.audienceType:
 As part of ongoing efforts to enhance communication security between finance and operations apps and Dataverse, the platform team will be updating the AppID used by [dual-write](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page) functionality.
 
 - **Current configuration**: Dual-write currently uses the AppID, **00000015-0000-0000-c000-000000000000**, for communication from finance and operations to Dataverse.
-- **New configuration**: Starting September 1, 2025, a new AppID, **f1752846-f0df-4766-96f5-c109adf67d7f**, will be used.
+- **New configuration**: On September 1, 2025, a new AppID, **f1752846-f0df-4766-96f5-c109adf67d7f**, will be used.
 - **Provisioning status**: The new AppID is already included in most provisioned Dataverse environments.
 - **Release timeline**: The change is scheduled to go live on September 1, 2025.
 - **Impact**: This update may affect integration configurations, authentication flows, and environment-specific customizations.
@@ -92,7 +92,7 @@ To validate which users would get updated to the new AppID, use following FetchX
 </fetch>
 ```
 
-In rare cases if the application ID isn't available reach out to Microsoft with urgent case.
+If the application ID isn't available, contact Microsoft support.
 
 If there are compliance requirements related to the **ModifiedBy** and **CreatedBy** fields in Dataverse audit logs, note that changes associated with the new AppID applies to all records created or modified on or after September 1, 2025.
 
