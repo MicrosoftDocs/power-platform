@@ -56,6 +56,43 @@ For support or questions, please contact:
 
     External solutions and processes that rely on the legacy AppID (00000015-0000-0000-c000-000000000000)—especially those modifying system fields like CreatedBy or ModifiedBy in Dataverse—may experience unexpected behavior. These fields are not recommended for logical operations. If such dependencies exist, remap them to the new AppID or a designated user to ensure continuity.
 
+## Call for Action 
+Customers are advised to upgrade their Dual Write environments to the latest available versions of the Dataverse App Core solutions if their current solution version is at or below the specified thresholds. This ensures compatibility with upcoming platform changes and continued support.
+
+| Solution name | Minimum required version|
+|----------|------------------------|
+| Dual-write Party and Global Address Book Solutions | 3.5.1.135 |
+| Dual Write Supply Chain Extended Solution| 2.3.4.265 |
+
+If your current solution version is above the specified threshold, there is no immediate need to upgrade. However, upgrading to the latest version is still recommended to ensure optimal compatibility and support.
+
+Customers with custom solutions that depend on the legacy AppID (00000015-0000-0000-c000-000000000000), or the associated user reflected in the ModifiedBy field in Dataverse should reconfigure their solutions to use the new AppID or user.
+
+For backward compatibility, filters can be applied to support both legacy and new AppIDs/users. This approach helps ensure a smoother transition and minimizes disruption to business processes.
+
+To validate which emails/users would get updated on the new appid use following fetchxml to evaluate. 
+
+``fetch xml
+<fetch>
+  <entity name="applicationuser">
+    <attribute name="applicationid" />
+    <attribute name="applicationname" />
+    <filter>
+      <filter>
+        <condition attribute="applicationid" operator="eq" value="f1752846-f0df-4766-96f5-c109adf67d7f" />
+      </filter>
+    </filter>
+    <link-entity name="systemuser" from="applicationid" to="applicationid" link-type="inner" alias="appuser">
+      <attribute name="fullname" />
+      <attribute name="internalemailaddress" />
+    </link-entity>
+  </entity>
+</fetch>
+``
+
+In rare cases if the application ID is not available reach out to Microsoft with urgent case.
+
+If there are compliance requirements related to the ModifiedBy and CreatedBy fields in Dataverse audit logs, please note that changes associated with the new AppID will apply to all records created or modified on or after September 1, 2025.
 
 
 
