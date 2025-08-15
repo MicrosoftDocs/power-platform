@@ -1,5 +1,5 @@
 ---
-title: App migration for Dual write F&O to DV communications
+title: App migration from dual-write in finance and operations to Dataverse communications
 description: Learn how to...
 ms.subservice: admin
 ms.component: pa-admin
@@ -12,37 +12,37 @@ search.audienceType:
   - admin
 ---
 
-# App migration for Dual write F&O to DV communications
+# App migration from dual-write in finance and operations to Dataverse communications
 
-## Upcoming Change to Dual Write System Configuration
-As part of ongoing efforts to enhance communication security between Finance and Operations (F&O) and Dataverse (DV), the platform team will be updating the AppID used by Dual Write.
+## Upcoming change to dual-write system configuration
+As part of ongoing efforts to enhance communication security between finance and operations apps and Dataverse, the platform team will be updating the AppID used by [dual-write](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page) functionality.
 
-- **Current configuration**: Dual Write currently uses the AppID 00000015-0000-0000-c000-000000000000 for communication from F&O to DV.
-- **New configuration**: Starting September 1, 2025, this will be replaced with a new AppID: f1752846-f0df-4766-96f5-c109adf67d7f.
-- **Provisioning status**: The new AppID is already included in most provisioned DV environments.
+- **Current configuration**: Dual-write currently uses the AppID, **00000015-0000-0000-c000-000000000000**, for communication from finance and operations to Dataverse.
+- **New configuration**: Starting September 1, 2025, a new AppID, **f1752846-f0df-4766-96f5-c109adf67d7f**, will be used.
+- **Provisioning status**: The new AppID is already included in most provisioned Dataverse environments.
 - **Release timeline**: The change is scheduled to go live on September 1, 2025.
 - **Impact**: This update may affect integration configurations, authentication flows, and environment-specific customizations.
 
 ## Why this change
-The new application (f1752846-f0df-4766-96f5-c109adf67d7f) was introduced in the Finance and Operations (F&O) platform as part of the PU 43 release. It provides a more secure and robust framework for communication with Dataverse, including abstraction for token exchange between F&O and Dataverse.
+The new application ID, **f1752846-f0df-4766-96f5-c109adf67d7f**, was introduced in the finance and operations platform as part of the [Platform update 43 release](/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-43). It provides a more secure and robust framework for communication with Dataverse, including abstraction for token exchange between finance and operations and Dataverse.
 
-Dual Write now leverages this abstraction, which is currently flighted. The rollout of this change was delayed ensuring it was included in all customer platform updates. It has now been confirmed that all recent quality updates contain this enhancement.
+Dual-write now leverages this abstraction. All recent quality updates contain this enhancement.
 
 ## Expected changes
-1. Changes in APPId will change the modifiedby/createdby for records edited or created as part of Dual write runtime. The changes can be perceived from audit logs or updates on records. Typical default users assigned are `FinanceAndOperationsServiceUser@dynamics.com` (for 00000015-0000-0000-c000-000000000000) will change to `FinanceandOperationsRuntimeIntegrationUser@onmicrosoft.com` ( for f1752846-f0df-4766-96f5-c109adf67d7f).
+1. Changes in AppID change the **Modified By** and **Created By** dates for records edited or created as part of the dual-write runtime. The changes can be viewed from audit logs or updates on records. Typical default users assigned are `FinanceAndOperationsServiceUser@dynamics.com` (for the AppID of **00000015-0000-0000-c000-000000000000**) change to `FinanceandOperationsRuntimeIntegrationUser@onmicrosoft.com` (for the AppID of **f1752846-f0df-4766-96f5-c109adf67d7f**).
 
-    An observed difference can be seen on audit logs for Dataverse records
+    An observed difference can be seen on audit logs for Dataverse records.
 
     (image)
 
-1. As part of Dual write, Microsoft provided standard solutions dependencies will also get migrated to the new app. The packages are available on app source for proactive uptake till Sept 1st, 2025. MSFT will be making force updates on these packages so that there are no breaking changes on Dual write live sync. Following are packages that will be force updated to the latest available version as of publish date.
+1. As part of the dual-write functionality, Microsoft-provided, standard solution dependencies get migrated to the new app. The packages are available on app source for proactive uptake until Sept 1, 2025. Microsoft will be making updates on these packages so that there are no breaking changes on the dual-write live sync. The following packages will be updated to the latest available version.
   
-    - Dual-write Application Core Solutions
+    - Dual-write application core solutions
     - Dual-write core solution
-    - Dual-write Party and Global Address Book Solutions
-    - Dual Write Supply Chain Extended Solution
+    - Dual-write party and global address book solutions
+    - Dual-write supply chain extended solution
 
-## Impact for Dual write Customers
+## Impact for dual-write customers
 
 1. **Dependency with Microsoft provided solutions**
     Customers using older versions of Microsoft-provided Dual Write solutions should validate upgrade paths before the September 1, 2025, deadline. While these solutions are designed to be backward compatible, customizations or applications built on older versions may require evaluation.
