@@ -66,7 +66,7 @@ Customers are advised to upgrade their dual-write environments to the latest ava
 | Dual-write party and global address book solutions | 3.5.1.135 |
 | Dual-write supply chain extended solution| 2.3.4.265 |
 
-If your current solution version is above the specified threshold, there is no immediate need to upgrade. However, upgrading to the latest version is still recommended to ensure optimal compatibility and support.
+If your current solution version is above the specified threshold, there's no immediate need to upgrade. However, upgrading to the latest version is still recommended to ensure optimal compatibility and support.
 
 Customers with custom solutions that depend on the legacy AppID **00000015-0000-0000-c000-000000000000**, or the associated user reflected in the **ModifiedBy** field in Dataverse should reconfigure their solutions to use the new AppID or user.
 
@@ -92,7 +92,7 @@ To validate which users would get updated to the new AppID, use following FetchX
 </fetch>
 ```
 
-In rare cases if the application ID is not available reach out to Microsoft with urgent case.
+In rare cases if the application ID isn't available reach out to Microsoft with urgent case.
 
 If there are compliance requirements related to the **ModifiedBy** and **CreatedBy** fields in Dataverse audit logs, note that changes associated with the new AppID applies to all records created or modified on or after September 1, 2025.
 
