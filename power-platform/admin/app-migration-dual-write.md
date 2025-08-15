@@ -26,7 +26,7 @@ As part of ongoing efforts to enhance communication security between finance and
 ## Why this change
 The new application ID, **f1752846-f0df-4766-96f5-c109adf67d7f**, was introduced in the finance and operations platform as part of the [Platform update 43 release](/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-43). It provides a more secure and robust framework for communication with Dataverse, including abstraction for token exchange between finance and operations and Dataverse.
 
-Dual-write now leverages this abstraction. All recent quality updates contain this enhancement.
+Dual-write now uses this abstraction. All recent quality updates contain this enhancement.
 
 ## Expected changes
 1. Changes in AppID change the **ModifiedBy** and **CreatedBy** dates for records edited or created as part of the dual-write runtime. The changes can be viewed from audit logs or updates on records. Typical default users assigned are `FinanceAndOperationsServiceUser@dynamics.com` for the AppID of **00000015-0000-0000-c000-000000000000** change to `FinanceandOperationsRuntimeIntegrationUser@onmicrosoft.com` for the AppID of **f1752846-f0df-4766-96f5-c109adf67d7f**.
@@ -94,7 +94,7 @@ To validate which users would get updated to the new AppID, use following FetchX
 
 In rare cases if the application ID is not available reach out to Microsoft with urgent case.
 
-If there are compliance requirements related to the ModifiedBy and CreatedBy fields in Dataverse audit logs, please note that changes associated with the new AppID will apply to all records created or modified on or after September 1, 2025.
+If there are compliance requirements related to the **ModifiedBy** and **CreatedBy** fields in Dataverse audit logs, note that changes associated with the new AppID applies to all records created or modified on or after September 1, 2025.
 
 
 
