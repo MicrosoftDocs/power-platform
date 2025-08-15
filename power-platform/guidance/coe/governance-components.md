@@ -67,7 +67,7 @@ You can customize the email that the flow sends out. By default, it looks like t
 
 #### Developer Compliance Center
 
-Use this app in the [auditing process](example-processes.md) to check whether apps, flows, chatbots, or custom connectors you own are compliant. Use it to submit information to the CoE admins as business justification to stay in compliance.
+Use this app in the [auditing process](example-processes.md) to check whether you comply with app compliance requirements for apps, flows, chatbots, or custom connectors you own. Use it to submit information to the CoE admins as business justification to stay in compliance.
 
 **Permission**: Share this app with your app makers as soon as you're using the app auditing process. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
 
@@ -315,7 +315,7 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 > Automatically deleting an inactive Dataverse for Teams environment is now part of the Power Platform admin center. Learn more in [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md).
 
 > [!IMPORTANT]
-> This flow deletes environments for which no business justification exists, or where the business justification is rejected. Environment owners have 7 days to provide a business justification before the environment gets deleted.
+> This flow deletes environments for which no business justification exists, or where the business justification is rejected. Environment owners have seven days to provide a business justification before the environment gets deleted.
 
 This flow runs weekly and deletes environments that:
 
