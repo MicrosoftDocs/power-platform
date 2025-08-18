@@ -4,7 +4,7 @@ description: Learn how to...
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/31/2025
+ms.date: 08/18/2025
 author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
@@ -33,7 +33,7 @@ Dual-write now uses this abstraction. All recent quality updates contain this en
 
     An observed difference can be seen on audit logs for Dataverse records.
 
-    (image)
+    :::image type="content" source="media/audit-history.png" alt-text="Tenant capacity extension in admin center." lightbox="media/audit-history.png":::
 
 1. As part of the dual-write functionality, Microsoft-provided, standard solution dependencies get migrated to the new app. The packages are available on app source for proactive uptake until Sept 1, 2025. Microsoft will be making updates on these packages so that there are no breaking changes on the dual-write live sync. The following packages will be updated to the latest available version.
   
