@@ -3,7 +3,7 @@ title: CoE CLI development documentation (Deprecated)
 description: Learn how to document and manage commands for the CoE CLI, including add Markdown pages and record command-line sessions.
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.date: 08/18/2025
+ms.date: 07/29/2025
 ms.topic: how-to
 ms.subservice: guidance-toolkit
 ms.reviewer: jhaskett-msft

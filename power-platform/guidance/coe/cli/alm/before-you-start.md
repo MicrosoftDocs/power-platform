@@ -4,7 +4,7 @@ description: "Key prerequisites and requirements for the ALM Accelerator using t
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.date: 08/18/2025
+ms.date: 09/26/2024
 ms.subservice: guidance-toolkit
 ms.topic: concept-article
 ms.reviewer: sericks
