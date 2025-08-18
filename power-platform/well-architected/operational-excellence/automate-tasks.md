@@ -80,7 +80,7 @@ When you use a hybrid manual and automated approach, you need to be especially c
 
 Power Automate approvals (out of the box) or the [approvals kit](https://www.microsoft.com/power-platform/blog/power-automate/introducing-approvals-kit/) (a custom solution) enable you to implement both simple and complex approval flows that can aid in automation scenarios. Learn more in [Business approvals templates overview](/power-automate/guidance/business-approvals-templates/introduction).
 
-[Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) enables you to build agents and agent flows. With Copilot Studio, you connect to other data sources using either prebuilt or custom plugins. This flexibility enables users to create and orchestrate sophisticated logic, ensuring that their agent experiences are both powerful and intuitive.
+[Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) enables you to build agents and agent flows. With Copilot Studio, you connect to other data sources using either prebuilt or custom plugins. Consider building an agent that [automates bug reporting](/power-platform/architecture/solution-ideas/auto-ai-triage).
 
 [GitHub Actions](https://help.github.com/articles/about-github-actions) enable developers to build automated software development life cycle workflows. With [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions), you can create workflows in your repository to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Power Platform.
 

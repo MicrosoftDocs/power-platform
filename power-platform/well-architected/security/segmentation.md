@@ -114,6 +114,10 @@ Consider consistency while accommodating several organizational models when assi
 
 Segmentation allows you to isolate workload resources from other parts of the organization or even within the team. Power Platform constructs, such as environments and solutions, are ways of organizing your resources that promote segmentation.
 
+## Example
+
+Review the reference architecture for how to [secure Power Platform access to resources inside your virtual network](/power-platform/architecture/reference-architectures/secure-access-azure-resources). This article provides an example scenario and a generalized example architecture to illustrate how to secure Power Platform access to Azure resources with Azure Virtual Network.
+
 ## Power Platform facilitation
 
 The following sections describe Power Platform features and capabilities you can use to implement a segmentation strategy.

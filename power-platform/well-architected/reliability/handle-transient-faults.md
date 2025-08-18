@@ -174,6 +174,7 @@ Use the Application Insights integrations to log errors in Power Automate and Po
 
 - [Business continuity and disaster recovery for Dynamics 365 SaaS apps](/power-platform/admin/business-continuity-disaster-recovery)
 - [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/)
+- [Use Dataverse background operations](/power-platform/architecture/reference-architectures/dataverse-background-operations)
 
 ## Reliability checklist
 
