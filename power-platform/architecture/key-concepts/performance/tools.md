@@ -26,7 +26,7 @@ Use these essential tools to monitor and report on the performance of your Power
 
 Power Apps Checker is a built-in tool in Power Apps Studio that identifies potential performance, accessibility, and formula issues in canvas apps. It provides immediate feedback on areas that can affect app responsiveness or user experience, so you can proactively address problems before deployment.
 
-To use Power Apps Checker, open your app in Power Apps Studio and select the **Apps Checker**  (stethoscope) icon from the toolbar. The tool displays a list of issues by severity, with explanations and recommendations for resolving each issue. Regularly review and address these findings to ensure your apps remain performant and user friendly.
+To use Power Apps Checker, open your app in Power Apps Studio and select the **Apps Checker** (stethoscope) icon from the toolbar. The tool displays a list of issues by severity, with explanations and recommendations for resolving each issue. Regularly review and address these findings to ensure your apps remain performant and user friendly.
 
 ### Power Apps Monitor
 
@@ -36,7 +36,7 @@ To use Power Apps Monitor, open your app in Power Apps Studio and select **Monit
 
 Review this data to help identify which parts of your app need optimization and to take action to improve performance.
 
-Learn more in [Use Monitor to get insights and recommendations for your canvas app (preview)](/power-apps/maker/canvas-apps/monitor-app-performance).
+Learn more in [Use Monitor to get insights and recommendations for your canvas app (preview)](/power-apps/maker/common/monitor-app-performance).
 
 ### Power Automate Analytics
 
@@ -140,7 +140,7 @@ Learn more about:
 ## Related resources
 
 - [Understand Power Apps Studio](/power-apps/maker/canvas-apps/power-apps-studio)
-- [Use Monitor to get insights and recommendations for your canvas app (preview)](/power-apps/maker/canvas-apps/monitor-app-performance)
+- [Use Monitor to get insights and recommendations for your canvas app (preview)](/power-apps/maker/common/monitor-app-performance)
 - [View and download Microsoft Dataverse analytics](../../../admin/analytics-common-data-service.md)
 - [Introduction to Application Insights](/azure/azure-monitor/app/app-insights-overview) 
 - [Improve solution performance, stability, and reliability](/power-apps/maker/data-platform/use-powerapps-checker) 
