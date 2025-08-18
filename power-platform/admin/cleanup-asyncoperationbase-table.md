@@ -1,14 +1,16 @@
 ---
-title: "Clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables"
-description: "Learn how to clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables."
+title: Delete completed system jobs and process log to comply with retention policy
+description: Learn how to clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/24/2025
-author: swylezol
+ms.date: 08/12/2025
+author: paulliew
 ms.subservice: admin
-ms.author: swylezol
-ms.reviewer: ellenwehrle 
+ms.author: paulliew
+ms.reviewer: sericks 
 contributors:
+  - swylezol
+  - Paulliew
   - dhsinms 
   - MicroSri
   - sericks
@@ -17,29 +19,87 @@ search.audienceType:
 ms.custom:
   - NewPPAC
   - sfi-image-nochange
+
 ---
-# Clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+# Delete completed system jobs and process log to comply with retention policy
 
-The [System Job (AsyncOperation) table](/power-apps/developer/data-platform/reference/entities/asyncoperation) stores system jobs. The name of the actual database table is `AsyncOperationBase`. System jobs represent asynchronous operations, including registered workflows, plug-ins, and background operations such as bulk deletion, bulk import, and rollup operations. After the system triggers an event, it executes all synchronous extensions. Then, it serializes the context for any asynchronous extensions and stores it in the database as an AsyncOperation record.
+Managing completed system jobs and the process log is crucial for maintaining data privacy compliance and ensuring optimal system performance in Dataverse. 
 
-When an asynchronous workflow is triggered in your Dataverse organization, a record is created in the AsyncOperation table to track the processing of the async job. More records also are created in the [Process Log (WorkflowLog) table](/power-apps/developer/data-platform/reference/entities/workflowlog) to maintain logs for the workflow execution. The name of the actual database table is `WorkflowLogBase`. [Business process flows](/power-automate/business-process-flows-overview) (BPF) also store BPF stage transition and action logs for the BPF in the WorkflowLog table.
+The System Job [AsyncOperation](/power-apps/developer/data-platform/reference/entities/asyncoperation) table stores system jobs. The actual database table name is AsyncOperationBase. System jobs represent asynchronous operations, including registered workflows, plug-ins, and background operations such as bulk deletion, bulk import, and roll-up operations.
+
+When an asynchronous workflow starts in your Dataverse organization, a record is created in the AsyncOperation table to track its progress. More records are created in the Process Log (WorkflowLog) table to keep logs of the workflow execution. The actual database table name for these logs is WorkflowLogBase. Business process flows also store logs for stage transitions and actions in the WorkflowLog table.
+
+Every time a system job completes, its outcome is logged as a system job in a AsyncOperation record. Completed system jobs are records that capture the results of these various automated operations in Dataverse.  Over time, these records accumulate and, if unmanaged, can impact system storage and performance.
 
 If your organization relies heavily on workflows or business process flows, the associated tables can grow significantly over time, potentially leading to performance degradation and excessive database storage consumption.
 
+## Types of completed system jobs and their statuses
+### System jobs
+- Delete plug-in trace log records
+- Delete completed system jobs
+- Delete completed process sessions for Sync workflows
+
+Completed system jobs are categorized into three main types based on their completion status:
+
+- **Succeeded**: Jobs that have been completed successfully without errors. 
+- **Failed**: Jobs that have encountered errors and haven't completed as intended.
+- **Canceled**: Jobs that were stopped before completion, either by user intervention or by system constraints.
+
+## Deletion service to automatically delete completed system jobs
+By default, the system provides a deletion service to automatically delete system jobs that either completed successfully, failed, or were canceled. This default is set in the OrganizationSettingsEditor tool. 
+
+To check this setting:
+
+1. Install the [OrganizationSettingsEditor tool](environment-database-settings.md#install-the-organizationsettingseditor-tool).
+2. Add and edit the [EnableSystemJobCleanup](environment-database-settings.md#override-database-settings).
+3. Set the **EnableSystemJobCleanup** to 'true' (if this isn't already set to **true**).
+
+## Set retention policy
+There are three parameters to allow different retention periods to be set.
+
+- **SucceededSystemJobPersistenceInDays** for succeeded jobs.
+    - Add and edit [SucceededSystemJobPersistenceInDays](environment-database-settings.md#override-database-settings).
+    - The default is 30 days.
+    - Update this with your own day period.
+   
+- **FailedSystemJobPersistenceInDays** for failed jobs.
+    -  Add and edit [FailedSystemJobPersistenceInDays](environment-database-settings.md#override-database-settings).
+    -  The default is 60 days.
+    -  Update this with your own day period.
+   
+- **CancelledSystemJobPersistenceInDays** for canceled jobs.
+    -  Add and edit [CancelledSystemJobPersistenceInDays](environment-database-settings.md#override-database-settings).
+    -  The default is 60 days.
+    -  Update this with your own day period.
+   
+> [!NOTE]
+> This deletion service deletes the system jobs. Deleted system jobs no longer show up in the **All System jobs** or the **All Bulk Deletion System jobs** lists.
+> There's a recurring job called **Delete completed system jobs**. This job is suspended when the deletion service is on.
+
 ## Bulk deletion jobs
+
+> [!Important]
+> This job is in a **suspended** state when the deletion service is used. 
 
 All environments are configured with an out-of-the-box bulk deletion job to delete successfully completed workflow system jobs older than 30 days. Customers can configure other bulk deletion jobs to delete AsyncOperation records. We recommend setting up a job to delete completed system jobs—regardless of type or outcome—that are older than 30 days. This job helps prevent the AsyncOperation table from accumulating excess records. 
 
 All environments include a built-in bulk deletion job that removes successfully completed workflow system jobs older than 30 days. Customers can create more bulk deletion jobs to delete AsyncOperation records. We recommend configuring a job that deletes any completed system job—regardless of type or result—older than 30 days to prevent unnecessary buildup in the AsyncOperation table.
 
-You can use the bulk deletion system jobs to delete unneeded records from both AsyncOperation and WorkflowLog tables. To view the bulk deletion system jobs:
+You can use the bulk deletion system jobs to delete unneeded records from both the AsyncOperation and WorkflowLog tables. 
+
+### View the bulk deletion system jobs
+
+The bulk record deletion jobs show the history of system jobs that were run and the results. 
+
+> [!NOTE]
+> This deletion service deletes the system jobs and deleted bulk deletion system jobs no longer show up in the **All System jobs** or the **All Bulk Deletion System jobs** lists.
 
 ### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Data management**, then select **Bulk deletion**.
@@ -51,6 +111,8 @@ You can use the bulk deletion system jobs to delete unneeded records from both A
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Data management**, then select **Bulk deletion**.
+
+You can also access the **Bulk record deletion** from the Power Platform Environment Settings app. From the left navigation, select **Data Management** > **Bulk record deletion**.
 
 ---
 
@@ -64,7 +126,11 @@ If you switch the view to display jobs that are scheduled, in progress, or compl
 
 ## Create your own bulk deletion jobs
 
-If the out-of-the-box system bulk deletion jobs don't meet your organization's needs, you can create your own bulk deletion job.
+If the [Deletion service](#deletion-service-to-automatically-delete-completed-system-jobs) or the out-of-the-box system bulk deletion jobs don't meet your organization's needs, you can create your own bulk deletion job.
+
+First, turn off the Deletion Service by completing the following steps.
+1. Add and edit the [EnableSystemJobCleanup](environment-database-settings.md#override-database-settings).
+1. Set the **EnableSystemJobCleanup** to 'false'.
 
 From the **Bulk Deletion** grid, select **New** on the command bar to define a query for the records you want to delete. Use the preview feature to review the records the query returns and verify that it captures the intended data set.
 
@@ -72,7 +138,7 @@ To clean up workflow records from the AsyncOperation table, in the **Look for** 
 
 Add the following conditions to your query:
 
-- **System Job Type** Equals **Workflow** - target workflow records.
+- **System Job Type** Equals **Workflow** (*Optional*)- target workflow records.
 - **Status** Equals **Completed** - only completed workflows are valid to complete.
 - [Optional] Filter on the **Status Reason** Equals **Succeeded/Failed/Canceled** - valid for completed status.
 - [Optional] Filter on **Completed On** field to only delete older workflows.
@@ -89,6 +155,22 @@ To unblock customers that have significant asyncoperation size, we introduced a 
 - Organizations can define up to five priority jobs. Any more jobs are created with default priority.
 - Regardless of the number of jobs for other entities in the queue, one AsyncOperation job can always be created with priority.
 - There's no change with respect to creation steps for bulk, delete jobs.
+
+## Plug-in trace logs
+[Plug-in](/power-apps/developer/data-platform/tutorial-write-plug-in) can be used for asynchronous operations. An example is to create a task upon account creation. When you're testing the plug-in, you can set [PluginTraceLogSetting](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging) to all or exceptions. You can view the plug-in trace logs in the Power Platform Environment Settings app. 
+
+To automate the cleanup of Plug-in trace logs, Dataverse provides a recurring job that deletes records older than one day.
+-	This job runs every day, ensuring that the system doesn't retain unnecessary Plug-in trace logs indefinitely.
+-	The deletion process helps free up storage space and keeps the system performing efficiently.
+
+Although you can delete Plug-in trace logs daily, it's recommended not to allow this option in your production environment, as it may affect system performance and storage. Instead, ensure that the [PluginTraceLogSetting](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging) is set to off for the production environment. This best practice ensures that the plug-in trace log table doesn't grow uncontrollably and cause the database to reach its capacity limit.
+
+## Process sessions for sync workflows
+Process session (dialog session) is created when a user runs or executes a dialog process. It contains the logs about the run, such as the user who ran it, time the process started, and the actions performed.
+
+To automate the cleanup of process sessions, Dataverse provides a recurring job that deletes records older than one day. 
+- This job runs every day, ensuring that the system doesn't retain unnecessary process sessions indefinitely.
+- The deletion process helps free up storage space and keeps the system performing efficiently.
 
 ## Best practices for designing workflows
 
@@ -111,7 +193,7 @@ Historically, the entire async operation context used to be serialized directly 
 
 For more information on Dataverse storage model and reporting, see [New Microsoft Dataverse storage capacity](capacity-storage.md).
 
-### See also
+### Related content
 
 [Reduce database storage](free-storage-space.md#reduce-database-storage) <br />
 [Remove a large amount of specific, targeted data with bulk deletion](delete-bulk-records.md) <br />
