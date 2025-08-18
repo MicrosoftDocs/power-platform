@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 08/06/2025
+ms.date: 08/18/2025
 ---
 
 # Meet compliance requirements
@@ -54,7 +54,7 @@ Dataverse audit capabilities in the Power Platform admin center provide comprehe
 
 [Microsoft Purview](/purview/register-scan-dataverse?) supports detailed auditing across Power Platform, including Copilot Studio events, to meet compliance requirements. It lets you customize audit logs and provides detailed reports for AI-driven scenarios to enhance security and compliance.
 
-To meet your enterprise’s compliance requirements with greater granularity, Dataverse offers robust data logging capabilities within [managed security](/power-platform/admin/security/managed-security). This feature is essential for investigating security incidents and is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. You can customize your Dataverse audit for various entities and fields to gain visibility into your data interactions, helping to maintain a secure and compliant environment. Learn more: [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing?tabs=new#turn-on-auditing)
+To meet your enterprise’s compliance requirements with greater granularity, Dataverse offers robust data logging capabilities within [managed security](/power-platform/admin/security/managed-security). This feature is essential for investigating security incidents and is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. You can customize your Dataverse audit for various entities and fields to gain visibility into your data interactions, helping to maintain a secure and compliant environment. Learn more in [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing?tabs=new#turn-on-auditing).
 
 :::image type="content" source="media/sec-envauditing.png" alt-text="Screenshot of Environment auditing in the Power Platform admin center." lightbox="media/sec-envauditing.png":::
 

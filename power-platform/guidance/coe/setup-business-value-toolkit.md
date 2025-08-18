@@ -4,7 +4,7 @@ description: Learn how to install, import, and configure the Business value tool
 author: stjeffer
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/05/2025
+ms.date: 08/18/2025
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: jhaskett-msft

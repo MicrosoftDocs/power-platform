@@ -3,7 +3,7 @@ title: Capture and communicate value with the Business value toolkit
 description: Learn how to measure, analyze, and communicate solution benefits with the Business value toolkit to ensure success and return on investment.
 author: stjeffer
 ms.topic: how-to
-ms.date: 08/05/2025
+ms.date: 08/18/2025
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: jhaskett-msft

@@ -4,7 +4,7 @@ description: Learn how to install and configure theming components for canvas ap
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/05/2025
+ms.date: 08/18/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

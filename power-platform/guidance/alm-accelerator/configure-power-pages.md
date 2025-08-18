@@ -2,7 +2,7 @@
 title: Use the ALM Accelerator with Power Pages sites
 description: Learn how to use the ALM Accelerator for Power Platform to apply source-control strategies and automate builds and deployment for your Power Pages sites. 
 ms.topic: how-to
-ms.date: 08/05/2025
+ms.date: 08/18/2025
 ms.subservice: guidance-toolkit
 author: rajeevpentyala
 ms.author: grarchib
@@ -29,7 +29,7 @@ With the ALM Accelerator, you can source-control your Power Pages websites, tran
 
 1. Select the website from the **Website** list, and then select **COMMIT SOLUTION**.
 
-   :::image type="content" source="media/setup-almacceleratorpowerplatform/IncludingPortalWebsite-solution-commit.png" alt-text="Screenshot of the Commit Solution pane in the ALM Accelerator, with the Include Power Apps setting and website highlighted.":::<!-- EDITOR'S NOTE: Please include the Include Power Pages setting in the red box. -->
+   :::image type="content" source="media/setup-almacceleratorpowerplatform/IncludingPortalWebsite-solution-commit.png" alt-text="Screenshot of the Commit Solution pane in the ALM Accelerator, with the Include Power Apps setting and website highlighted.":::
 
    After the commit succeeds, the website components are contained in a folder named *{SolutionName}\PowerPages\{SiteName}* under the repository branch.
 
@@ -47,7 +47,7 @@ When you work with multiple environments, consider using deployment profiles to 
 
 1. Select **Upload File**.
 
-:::image type="content" source="media/setup-almacceleratorpowerplatform/upload-deployment-profile-yml-files.png" alt-text="Screenshot of uploading a deployment profile.":::<!-- EDITOR'S NOTE: Please highlight the Power Pages tab. -->
+:::image type="content" source="media/setup-almacceleratorpowerplatform/upload-deployment-profile-yml-files.png" alt-text="Screenshot of uploading a deployment profile.":::
 
 ### Add deployment profiles to the solution branch
 

@@ -2,7 +2,7 @@
 title: Maintain ALM Accelerator projects
 description: Learn how to perform maintenance tasks and Azure DevOps project configurations in the ALM Accelerator for Power Platform.
 ms.topic: how-to
-ms.date: 08/05/2025
+ms.date: 08/18/2025
 ms.subservice: guidance-toolkit
 author: mikefactorial
 ms.author: jeschro
