@@ -31,9 +31,6 @@ Managed availability uses Azure availability zones to replicate production envir
 ## Automated backups and self-serve disaster recovery
 Environments with databases benefit from automated backups that can be restored to any system backup from the past seven days (extendable to 28 days for managed environments). 
 
-> [!Note]
-> Self-serve disaster recovery is currently in public preview. Learn more about this feature in [Business continuity and disaster recovery](business-continuity-disaster-recovery.md).
-
 Self-serve disaster recovery allows organizations to:
 - Define and test cross-region failover strategies directly from the Power Platform admin center.
 - Maintain a secondary environment copy in another region for business continuity.
