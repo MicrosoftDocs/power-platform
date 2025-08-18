@@ -1133,7 +1133,7 @@
                   href: unified-experience/tutorial-perform-transactionless-copy.md
                 - name: "Tutorial: Back up and restore unified environment"
                   href: unified-experience/tutorial-backup-restore-unified-environment.md
-            - name: App migration from dual-write in finance and operations to Dataverse communications
+            - name: App migration from dual-write to Dataverse communications
               href: app-migration-dual-write.md
             - name: Admin trials for finance and operations apps
               href: unified-experience/admin-trials.md
