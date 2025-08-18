@@ -82,11 +82,11 @@ Identify users with missing license assignments in [Microsoft 365 admin center](
 |--------|-------------|
 | **Email/User ID** | Entra ID identity |
 | **Required license** | Based on security role corresponding duties and privileges |
-| **Assigned license in M365** | Finance and Operations app license(s) assigned to the user in  [Microsoft 365 admin center](https://admin.microsoft.com) |
-| **Missing licenses** | Required Finance and Operations app license(s) not assigned to the user in [Microsoft 365 admin center](https://admin.microsoft.com) |
+| **Assigned license in M365** | Finance and Operations app licenses assigned to the user in  [Microsoft 365 admin center](https://admin.microsoft.com) |
+| **Missing licenses** | Required Finance and Operations app licenses not assigned to the user in [Microsoft 365 admin center](https://admin.microsoft.com) |
 
 > [!IMPORTANT]
-> Users in the **Users with unassigned licenses** view cannot sign in to the system once license validation starts.
+> Users in the **Users with unassigned licenses** view can't sign in to the system once license validation starts.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png" alt-text="Users with unassigned licenses" lightbox="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png":::
 
@@ -132,7 +132,7 @@ For any user, select the **Required license** link to open the **Required licens
 
 ## Assign licenses in the Microsoft 365 admin center
 
-For any user, select the missing license link to bring up the license options screeen and select the **Manage in Microsoft 365 admin center** button to open the [Microsoft 365 admin center](https://admin.microsoft.com) to that user and assign the required license.
+For any user, select the missing license link to bring up the license options screen and select the **Manage in Microsoft 365 admin center** button to open the [Microsoft 365 admin center](https://admin.microsoft.com) to that user and assign the required license.
 
  :::image type="content" source="media/fno-user-licensing/user-license-options-assignment.png" alt-text="User license options with link to assign license in the Microsoft 365 admin center." lightbox="media/fno-user-licensing/user-license-options-assignment.png"::: 
 
