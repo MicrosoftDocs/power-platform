@@ -90,7 +90,7 @@ Identify users with missing license assignments in [Microsoft 365 admin center](
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png" alt-text="Users with unassigned licenses" lightbox="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png":::
 
-## Per User License validation
+## Per user license validation
 
 Once license validation begins, any user without the required license is blocked from signing in to a Dynamics 365 finance and operations app. When this happens, they see the following screen.
 
@@ -181,7 +181,7 @@ For full entitlement or role mapping details, use the views in Power Platform ad
 
 You can copy the license summary to your clipboard by selecting the **Summarize** button at the top of the page.
 
- :::image type="content" source="media/fno-user-licensing/user-license-summarize-copy-to-clipboard.png" alt-text="User licensing consumption Copy to Clipboard" lightbox="media/fno-user-licensing/user-license-summarize-copy-to-clipboard.png":::
+ :::image type="content" source="media/fno-user-licensing/user-license-summarize-copy-to-clipboard.png" alt-text="Copy the license summary to your clipboard by selecting the "Summarize" button." lightbox="media/fno-user-licensing/user-license-summarize-copy-to-clipboard.png":::
 
 ## Best practices
 
