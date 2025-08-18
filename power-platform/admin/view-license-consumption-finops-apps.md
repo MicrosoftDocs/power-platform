@@ -1,9 +1,9 @@
 ---
 title: View license consumption for finance and operations apps
-description: Learn how to view your organization's User license consumption for finance and operations apps. 
+description: Learn how to view your organization's user license consumption for finance and operations apps. 
 author: ceian
-ms.date: 08/13/2025
-ms.reviewer: ellenwehrle
+ms.date: 08/18/2025
+ms.reviewer: sericks
 ms.topic: how-to
 ms.subservice:
 ms.author: ceian
@@ -92,13 +92,13 @@ Identify users with missing license assignments in [Microsoft 365 admin center](
 
 ## Per User License validation
 
-Once license validation begins, any user without the required license will be blocked from signing in to a Dynamics 365 Finance and Operations app. When this happens, they will see the following screen.
+Once license validation begins, any user without the required license is blocked from signing in to a Dynamics 365 finance and operations app. When this happens, they see the following screen.
 
  :::image type="content" source="media/fno-user-licensing/user-license-validation-screen.png" alt-text="You need a license to access this app" lightbox="media/fno-user-licensing/user-license-validation-screen.png":::
 
 The screen tells the user they need a license to access the app and to request one from their administrator. End users should contact their system administrator to obtain the required license before trying to sign in again.
 
-For more details on licensing requirements, see the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544)
+For more details on licensing requirements, go to the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 ## Filter and sort capabilities
 
@@ -130,9 +130,9 @@ For any user, select the **Required license** link to open the **Required licens
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-environment-details.png" alt-text="User Licensing Consumption Environment details" lightbox="media/fno-user-licensing/user-license-consumption-environment-details.png":::
 
-## Assign licenses in Microsoft 365 admin center
+## Assign licenses in the Microsoft 365 admin center
 
-For any user, select the missing license link to bring up the license options screeen and click **Manage in Microsoft 365 Admin Center** button to open [Microsoft 365 admin center](https://admin.microsoft.com) to that user and assign the required license .
+For any user, select the missing license link to bring up the license options screeen and select the **Manage in Microsoft 365 admin center** button to open the [Microsoft 365 admin center](https://admin.microsoft.com) to that user and assign the required license.
 
  :::image type="content" source="media/fno-user-licensing/user-license-options-assignment.png" alt-text="User license options with link to assign license in admin.microsft.com" lightbox="media/fno-user-licensing/user-license-options-assignment.png"::: 
 
@@ -179,7 +179,7 @@ For full entitlement or role mapping details, use the views in Power Platform ad
 
  ## Summarize (Copy to Clipboard)
 
-You can copy the license summary to your clipboard by selecting the **Summarize** button located at the top of the page.
+You can copy the license summary to your clipboard by selecting the **Summarize** button at the top of the page.
 
  :::image type="content" source="media/fno-user-licensing/user-license-summarize-copy-to-clipboard.png" alt-text="User Licensing Consumption Copy to Clipboard" lightbox="media/fno-user-licensing/user-license-summarize-copy-to-clipboard.png":::
 
