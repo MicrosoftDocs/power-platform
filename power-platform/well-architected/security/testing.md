@@ -178,7 +178,7 @@ Microsoft Sentinel solution for Microsoft Power Platform allows customers to det
 - Phishing attacks made through Power Apps
 - Power Automate flows activity by departing employees
 - Microsoft Power Platform connectors added to an environment
-- Update or removal of Microsoft Power Platform data loss prevention policies
+- Update or removal of Microsoft Power Platform data policies
 
 For more information, see [Microsoft Sentinel solution for Microsoft Power Platform overview](/azure/sentinel/business-applications/power-platform-solution-overview).
 

@@ -119,7 +119,7 @@ Power Platform resources log activities in the [Microsoft Purview compliance por
 - [Copilot Studio](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Power Pages](/power-platform/admin/logging-power-pages)
 - [Power Platform connectors](/power-platform/admin/connector-events-power-platform)
-- [Data loss prevention](/power-platform/admin/dlp-activity-logging)
+- [Data Policies](/power-platform/admin/dlp-activity-logging)
 - [Power Platform administrative logs](/power-platform/admin/admin-activity-logging)
 - [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 
