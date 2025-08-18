@@ -5,6 +5,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 ms.date: 07/29/2025
 ms.topic: how-to
+ms.subservice: guidance-toolkit
 ms.reviewer: jhaskett-msft
 search.audienceType:
   - admin
