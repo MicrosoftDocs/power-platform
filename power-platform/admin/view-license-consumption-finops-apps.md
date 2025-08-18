@@ -94,7 +94,7 @@ Identify users with missing license assignments in [Microsoft 365 admin center](
 
 Once license validation begins, any user without the required license is blocked from signing in to a Dynamics 365 finance and operations app. When this happens, they see the following screen.
 
- :::image type="content" source="media/fno-user-licensing/user-license-validation-screen.png" alt-text="You need a license to access this app" lightbox="media/fno-user-licensing/user-license-validation-screen.png":::
+ :::image type="content" source="media/fno-user-licensing/user-license-validation-screen.png" alt-text="You need a license to access this app." lightbox="media/fno-user-licensing/user-license-validation-screen.png":::
 
 The screen tells the user they need a license to access the app and to request one from their administrator. End users should contact their system administrator to obtain the required license before trying to sign in again.
 
@@ -134,7 +134,7 @@ For any user, select the **Required license** link to open the **Required licens
 
 For any user, select the missing license link to bring up the license options screeen and select the **Manage in Microsoft 365 admin center** button to open the [Microsoft 365 admin center](https://admin.microsoft.com) to that user and assign the required license.
 
- :::image type="content" source="media/fno-user-licensing/user-license-options-assignment.png" alt-text="User license options with link to assign license in admin.microsft.com" lightbox="media/fno-user-licensing/user-license-options-assignment.png"::: 
+ :::image type="content" source="media/fno-user-licensing/user-license-options-assignment.png" alt-text="User license options with link to assign license in the Microsoft 365 admin center." lightbox="media/fno-user-licensing/user-license-options-assignment.png"::: 
 
 ## Analyze role license entitlements
 
@@ -181,7 +181,7 @@ For full entitlement or role mapping details, use the views in Power Platform ad
 
 You can copy the license summary to your clipboard by selecting the **Summarize** button at the top of the page.
 
- :::image type="content" source="media/fno-user-licensing/user-license-summarize-copy-to-clipboard.png" alt-text="User Licensing Consumption Copy to Clipboard" lightbox="media/fno-user-licensing/user-license-summarize-copy-to-clipboard.png":::
+ :::image type="content" source="media/fno-user-licensing/user-license-summarize-copy-to-clipboard.png" alt-text="User licensing consumption Copy to Clipboard" lightbox="media/fno-user-licensing/user-license-summarize-copy-to-clipboard.png":::
 
 ## Best practices
 
@@ -196,7 +196,7 @@ You can copy the license summary to your clipboard by selecting the **Summarize*
 - For finance and operations apps in Dynamics 365, a GUID uniquely ties a user record to an identity in Microsoft Entra ID. A GUID can appear instead of an email address if identity metadata is incomplete or if someone deletes users in Entra but doesn't remove user records from finance and operations security role assignments.
 - Custom security roles might need reanalysis to align with licensing.
 
-## Related resources
+## Related content
 
 - [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544)
 - [User security governance overview](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview)
