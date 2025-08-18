@@ -40,7 +40,7 @@ The **Settings** page displays settings grouped by product. Some settings span a
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-Admins can define who within an environment can use Copilot capabilities—either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is currently in preview and is only for environments with [Managed Environments activated](../../guidance/white-papers/managed-environment-activation.md), with a subset of Copilot features adhering to it. Review the table below to learn which capabilities adhere to this configuration.
+Admins can define who within an environment can use Copilot capabilities—either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is currently in preview and is only for environments activated for [Managed Environments](../managed-environments-enable.md), with a subset of Copilot features adhering to it. Review the table below to learn which capabilities adhere to this configuration.
 
 | Product | Feature |
 |---------|---------|

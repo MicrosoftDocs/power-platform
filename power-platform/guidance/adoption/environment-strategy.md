@@ -5,7 +5,7 @@ description: Learn how to best use the features of the platform to implement an 
 author: robstand
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/14/2025
+ms.date: 08/18/2025
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.custom: bap-template
@@ -171,12 +171,14 @@ Here are some suggestions for how your organization might use the welcome messag
 
 The default environment is often the most restricted, with data loss prevention (DLP) policies and sharing controls. Create a welcome message that warns your makers about restrictions and possible limitations, and include a link to your organization's policy website or document.
 
-For example, you might want to inform makers to use the default environment only for solutions that are related to Microsoft 365 applications, not to use production applications in the default environment, and to share their canvas apps only with a limited number of individuals. The following example shows how to create such a message in Managed Environments settings:
+For example, you might want to inform makers to use the default environment only for solutions that are related to Microsoft 365 applications, avoid using production applications in the default environment, and to share their canvas apps only with a limited number of individuals. The following example shows how to create such a message in Managed Environments settings:
 
-:::image type="content" source="media/mae/image3.png" alt-text="Screenshot of Maker welcome content settings in Power Apps.":::
+:::image type="content" source="media/mae/maker-welcome-default-markdown.png" alt-text="Screenshot of Maker welcome content settings in Power Apps.":::
+
+Example Markdown input:
 
 ```markdown
-[Contoso](https://i.ibb.co/SNSTCx3/something.png)
+![Contoso](https://i.ibb.co/SNSTCx3/something.png)
 ## Welcome to Contoso Personal Productivity Environment
 
 ### Before you start, here are some considerations
@@ -189,19 +191,19 @@ Before you start, be aware of these limitations:
 1. The data in Dataverse is shared with everyone in the organization.
 1. You can only use Office 365 connectors.
 
-If you're not sure you're in the right place, follow [this guidance**](#).
+If you're not sure you're in the right place, follow **[this guidance](#)**.
 ```
 
 Here's the rendered welcome message:
 
-:::image type="content" source="media/mae/image2.png" alt-text="Screenshot of the Welcome message for the default environment created by the first example.":::
+:::image type="content" source="media/mae/maker-welcome-default-output.png" alt-text="Screenshot of the Welcome message for the default environment created by the first example." lightbox="media/mae/maker-welcome-default-output.png":::
 
 #### Production environments
 
 Production environments are typically used for deploying solutions that support the enterprise and team productivity. It's important that apps and data comply with organizational policies. Since you need to control which users have access to the production environment, it's a good idea to inform users if you have a policy of refreshing access. You might allow more connectors and increase the sharing limits in a production environment. You can also use the welcome message to inform makers of the right team to reach out to for support. The following example shows how to create such a message:
 
 ```markdown
-[Contoso](https://i.ibb.co/SNSTCx3/something.png)
+![Contoso](https://i.ibb.co/SNSTCx3/something.png)
 ## Welcome to HR Europe Environment
 
 ### Before you start, here are some considerations
@@ -215,17 +217,19 @@ Before you start, be aware of these limitations:
 1. You can only use social media connectors with read actions.
 1. If you need more connectors, [submit a request](#).
 
-If you're not sure you're in the right place, follow [this guidance**](#).
+If you're not sure you're in the right place, follow **[this guidance](#)**.
 ```
 
-:::image type="content" source="media/mae/image4.png" alt-text="Screenshot of the Welcome message for a production environment created by the second example.":::
+Here is sample output:
+
+:::image type="content" source="media/mae/maker-welcome-prod-output.png" alt-text="Screenshot of the Welcome message for a production environment created by the second example." lightbox="media/mae/maker-welcome-prod-output.png":::
 
 #### Developer environments
 
-Developer environments are most often where developers build their solutions. Since the developers are working on the applications, they aren't in production and scalability is limited. Normally, dev environments have more relaxed DLPs due to the nature of the makers. To avoid developers using production assets in their dev environments, limit sharing capabilities and use a specific DLP for this type of environment. Here's an example of a welcome message for a development environment:
+Developer environments are most often where developers build their solutions. Since the developers are working on the applications, they aren't in production, and scalability is limited. Normally, dev environments have more relaxed DLPs due to the nature of the makers. To avoid developers using production assets in their dev environments, limit sharing capabilities and use a specific DLP for this type of environment. Here's an example of a welcome message for a development environment:
 
 ```markdown
-[Contoso](https://i.ibb.co/SNSTCx3/something.png)
+![Contoso](https://i.ibb.co/SNSTCx3/something.png)
 ## Welcome to a Developer Environment
 
 ### Before you start, here are some considerations
@@ -239,17 +243,19 @@ Before you start, be aware of these limitations:
 1. Be mindful of the connectors and data you're using.
 1. If you need more connectors, [submit a request](#).
 
-If you're not sure you're in the right place, follow [this guidance**](#).
+If you're not sure you're in the right place, follow **[this guidance](#)**.
 ```
 
-:::image type="content" source="media/mae/image5.png" alt-text="Screenshot of the Welcome message for a developer environment created by the third example.":::
+Here is sample output for a developer environment:
+
+:::image type="content" source="media/mae/maker-welcome-dev-output.png" alt-text="Screenshot of the Welcome message for a developer environment created by the third example." lightbox="media/mae/maker-welcome-dev-output.png":::
 
 #### Sandbox environments
 
 Typically, sandbox environments are used to test solutions. Because some tests involve a significant number of users, these environments scale, up to a point, and have more capacity than a developer environment. Sandbox environments are also commonly used as development environments and are typically shared by multiple developers. Here's an example of a welcome message for such an environment:
 
 ```markdown
-[Contoso](https://i.ibb.co/SNSTCx3/something.png)
+![Contoso](https://i.ibb.co/SNSTCx3/something.png)
 ## Welcome to a Test Environment
 
 ### Before you start, here are some considerations
@@ -263,15 +269,16 @@ Before you start, be aware of these limitations:
 1. Be mindful of the test data and compliance.
 1. If you need help from a security export or IT support, [submit a request](#).
 
-If you're not sure you're in the right place, follow [this guidance**](#).
+If you're not sure you're in the right place, follow **[this guidance](#)**.
 ```
 
-:::image type="content" source="media/mae/image6.png" alt-text="Screenshot of the Welcome message for a sandbox environment created by the fourth example.":::
+Here is sample output for a sandbox or test environment:
 
+:::image type="content" source="media/mae/maker-welcome-sandbox-output.png" alt-text="Screenshot of the Welcome message for a sandbox environment created by the fourth example." lightbox="media/mae/maker-welcome-sandbox-output.png":::
 
 ### Limit sharing
 
-Admins can [limit how broadly users can share canvas apps, flows, and agents](/power-platform/admin/managed-environment-sharing-limits). The limit only applies to future sharing, however. If you apply a sharing limit of 20 to an environment with resources that are already shared with more than 20 users, those resources continue to work for all users the resources were shared with. You should have a process in place to inform the makers of apps, flows, and agents that are shared with more than the new limit to reduce the number of users their resources are shared with. In some cases, you might decide to move the solution to another environment. Sharing limits apply to canvas apps, flows, and agents.
+Admins can [limit how broadly users can share canvas apps, flows, and agents](/power-platform/admin/managed-environment-sharing-limits). The limit only applies to future sharing, however. If you apply a sharing limit of 20 to an environment with resources that are already shared with more than 20 users, those resources continue to work for all users the resources were shared with. Create a process to inform makers of apps, flows, and agents shared with more than the new limit so they can reduce the number of users their resources are shared with. In some cases, you might decide to move the solution to another environment. Sharing limits apply to canvas apps, flows, and agents.
 
 Admins typically need to control how makers share their apps, flows, and agents when:
 
@@ -281,13 +288,13 @@ Admins typically need to control how makers share their apps, flows, and agents 
 
 Here are common sharing limits for each environment type:
 
-- **Default**: Select Exclude sharing with security groups, select Limit total individuals who can share to, and select 20 for the value.
+- **Default**: Select **Exclude sharing with security groups**, select **Limit total individuals who can share to**, and select 20 for the value.
 
-- **Developer**: Select Exclude sharing with security groups, select Limit total individuals who can share to, and select 5 for the value.
+- **Developer**: Select **Exclude sharing with security groups**, select **Limit total individuals who can share to**, and select 5 for the value.
 
-- **Sandbox**: Select Exclude sharing with security groups and leave Limit total individuals who can share to unselected. Use this option if apps are shared with an IT-managed security group that includes the users who are authorized to run the application. If the maker, user, or team can manage which users are permitted to test a solution, select Don't set limits (default).
+- **Sandbox**: Select **Exclude sharing with security groups** and leave **Limit total individuals who can share to** unselected. Use this option if apps are shared with an IT-managed security group that includes the users who are authorized to run the application. If the maker, user, or team can manage which users are permitted to test a solution, select **Don't set limits** (default).
 
-- **Production**: Select Don't set limits (default). To control sharing based on a specific security group, select Exclude sharing with security groups and leave Limit total individuals who can share to unselected.
+- **Production**: Select **Don't set limits** (default). To control sharing based on a specific security group, select **Exclude sharing with security groups** and leave **Limit total individuals who can share to** unselected.
 
 ### Microsoft Dataverse
 
@@ -407,7 +414,7 @@ In the foundation environment strategy, all new maker environments are routed to
 
 As makers become more advanced, you can allow them to request access to more capabilities. Instead of removing them from the original environment group and manually managing the exception, you can use another environment group to track these advanced makers.
 
-:::image type="content" source="media/environment-strategy/image9.png" alt-text="Diagram illustrating the addition of makers with more skills to an environment for advanced makers  which has relaxed governance.":::
+:::image type="content" source="media/environment-strategy/image9.png" alt-text="Diagram illustrating the addition of makers with more skills to an environment for advanced makers that has relaxed governance.":::
 
 *Figure: Add more capable makers to an environment that has relaxed governance rules.*
 

@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: pankajsharma2087
-ms.date: 05/14/2025
+ms.date: 08/18/2025
 ---
 
 # Implement reactive governance controls
@@ -66,7 +66,7 @@ Managed Environments is a set of features that's designed to make governance of 
 
 The engineering team for Managed Environments worked closely with [Power CAT](https://aka.ms/whoispowercat), the team responsible for the CoE Starter Kit, to identify the most-used features in the kit and add them to Managed Environments. As a result, some features are available in both products. When you use Managed Environments, in-product features are managed and supported by Microsoft. You don't need to update or maintain them&mdash;they're updated automatically with Power Platform release waves. If your organization uses the CoE Starter Kit, it's important to establish and maintain an internal process to update it monthly. Follow the suggestions presented in the [CoE Starter Kit Office Hours](https://aka.ms/coeofficehours).
 
-We recommend starting with Managed Environments. If you discover any gaps in your governance requirements, explore whether the CoE Starter Kit offers features that can address them.  [How to decide whether to use Managed Environments with the CoE Starter Kit](#how-to-decide-whether-to-use-managed-environments-with-the-coe-starter-kit).
+We recommend starting with Managed Environments. If you discover any gaps in your governance requirements, explore whether the CoE Starter Kit offers features that can address them. Learn more in [How to decide whether to use Managed Environments with the CoE Starter Kit](#how-to-decide-whether-to-use-managed-environments-with-the-coe-starter-kit).
 
 Since the kit is community-driven, it isn't subject to the same service level agreements as our licensed products. Go to the [GitHub site](https://github.com/microsoft/coe-starter-kit/issues) to report bugs, ask questions, and request new features.
 
