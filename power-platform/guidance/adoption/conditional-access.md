@@ -151,7 +151,7 @@ As the race to adopt AI is prioritized across industries, admins are looking to 
 
 For Copilot Studio agent scenarios, admins have fine-grained controls over editor versus viewer permissions on a per environment or environment group basis. They can also restrict viewers to specific security groups, individuals, or a set number of viewers.
 
-:::image type="content" source="media/limit-sharing.png" alt-text="Screenshot of managing sharing limits in the Power Platform admin center." lightbox="media/limit-sharing.png":::
+:::image type="content" source="media/limit-sharing.png" alt-text="Screenshot of managing sharing limits in the Power Platform admin center.":::
 
 In addition to these granular sharing limits, also limit the makers' ability to use the [*Everyone* shorthand to share apps](/power-platform/admin/powerapps-powershell?branch=ppadoption-refresh-mapichle#display-tenant-setting-for-ability-to-share-apps-with-everyone) with everyone in the organization. 
 
