@@ -6,7 +6,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: concept-article
-ms.date: 05/16/2024
+ms.date: 08/18/2025
 ---
 
 # Reliability design principles

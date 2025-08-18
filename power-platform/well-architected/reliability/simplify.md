@@ -4,7 +4,7 @@ description: Learn how to design your Power Platform workload with business requ
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -99,6 +99,8 @@ As part of your architectural design, you need to consider how to store your dat
 - **Make a copy of the data**: In situations where original data should never be modified or overwritten, you can copy the data to another data store such as Dataverse. This strategy keeps the original system's data unchanged while allowing your app to work with it. This scenario is common when working with data in accounting and revenue-related systems. You need to consider how data is copied, how often it's updated, and whether a two-way sync needs to take place.
 
 ## Power Platform facilitation
+
+You can use [Plan designer](/power-apps/maker/plan-designer/plan-designer) to describe your business case in natural language and provide information, like business process flows or screenshots of legacy systems. Plan designer will then generate a complete Power Platform solution tailored to your needs. Plan designer also generated process diagrams to help you clarify user interactions.
 
 For practical design advice, consult the following articles:
 

@@ -4,7 +4,7 @@ description: Learn how to strengthen the resiliency of your Power Platform workl
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -172,7 +172,8 @@ Use the Application Insights integrations to log errors in Power Automate and Po
 
 ## Related information
 
-[Business continuity and disaster recovery for Dynamics 365 SaaS apps](/power-platform/admin/business-continuity-disaster-recovery)
+- [Business continuity and disaster recovery for Dynamics 365 SaaS apps](/power-platform/admin/business-continuity-disaster-recovery)
+- [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/)
 
 ## Reliability checklist
 
