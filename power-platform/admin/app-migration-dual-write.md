@@ -14,7 +14,6 @@ search.audienceType:
 
 # App migration from dual-write in finance and operations to Dataverse communications
 
-## Upcoming change to dual-write system configuration
 As part of ongoing efforts to enhance communication security between finance and operations apps and Dataverse, the platform team will be updating the AppID used by [dual-write](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page) functionality.
 
 - **Current configuration**: Dual-write currently uses the AppID, **00000015-0000-0000-c000-000000000000**, for communication from finance and operations to Dataverse.
