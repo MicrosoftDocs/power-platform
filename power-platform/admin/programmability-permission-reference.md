@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/31/2025
+ms.date: 08/18/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -14,7 +14,7 @@ search.audienceType:
 
 # Permission reference
 
-This article provides an overview of the Power Platform API granular permissions. These permissions are available for registering client applications in Microsoft Entra and might become available in security role form in the future.
+This article provides an overview of the Power Platform API granular permissions. These permissions are available for registering client applications in Microsoft Entra ID and might become available in security role form in the future.
 
 ## Naming convention
 
@@ -39,21 +39,21 @@ The following table lists the currently defined permissions in Power Platform AP
 
 Name | Display name | Description
 ---- | ------------ | -----------
-AiFlows.Ai.Execute | Execute AI related operations (like Generate) on AI flow | Allows to execute AI related operations (like Generate) on AI flows
-AiFlows.Ai.Read | AI related read operations on AI flow | Allows to do AI related read operations on AI flows
-AiFlows.Ai.Write | AI related write operations on AI flow | Allows to do AI related write operations on AI flows
-AiFlows.Connections.Read | Read AI Flow Connection | Allows reading AI flow connections
-AiFlows.Runs.Execute | Perform actions on AI flow run | Allows performing actions on AI flow runs
-AiFlows.Runs.Read | Read Copilot Flow Run | Allows reading AI flow runs
-AiFlows.Runs.Write | Write AI Flow Run | Allows writing AI flow runs
-AiFlows.Workflows.Execute | Perform actions (like activate) AI flow | Allows to perform actions (like activate) AI flows
-AiFlows.Workflows.Read | Read AI flow | Allows reading AI flows
-AiFlows.Workflows.Write | Write AI flow | Allows writing AI flows
-AiTools.Prompt.Invoke | Invoke AI Prompts | Allows invoking of AI Prompts.
-AiTools.Prompt.Read | Read AI Prompts | Allows reading of AI Prompts.
-AiTools.Prompt.Write | Read and Write AI Prompts | Allows reading and writing of AI Prompts.
-Analytics.AdvisorActions.Execute | Analytics.AdvisorActions.Execute | Allows user to execute advisor actions
-Analytics.AdvisorRecommendations.Read | Analytics.AdvisorRecommendations.Read | Allows users to read advisor recommendations
+AiFlows.Ai.Execute | Execute AI related operations (like Generate) on AI flow | Allows you to execute AI-related operations (like Generate) on AI flows.
+AiFlows.Ai.Read | AI related read operations on AI flow | Allows you to do AI-related read operations on AI flows.
+AiFlows.Ai.Write | AI related write operations on AI flow | Allows you to do AI-related write operations on AI flows.
+AiFlows.Connections.Read | Read AI Flow Connection | Allows reading AI flow connections.
+AiFlows.Runs.Execute | Perform actions on AI flow run | Allows performing actions on AI flow runs.
+AiFlows.Runs.Read | Read Copilot flow run | Allows reading AI flow runs.
+AiFlows.Runs.Write | Write AI flow run | Allows writing AI flow runs.
+AiFlows.Workflows.Execute | Perform actions (like activate) AI flow | Allows you to perform actions (like activate) on AI flows.
+AiFlows.Workflows.Read | Read AI flow | Allows reading AI flows.
+AiFlows.Workflows.Write | Write AI flow | Allows writing AI flows.
+AiTools.Prompt.Invoke | Invoke AI Prompts | Allows invoking of AI prompts.
+AiTools.Prompt.Read | Read AI Prompts | Allows reading of AI prompts.
+AiTools.Prompt.Write | Read and Write AI Prompts | Allows reading and writing of AI prompts.
+Analytics.AdvisorActions.Execute | Analytics.AdvisorActions.Execute | Allows users to execute advisor actions.
+Analytics.AdvisorRecommendations.Read | Analytics.AdvisorRecommendations.Read | Allows users to read advisor recommendations.
 AppManagement.ApplicationPackages.Install | Install Application Packages | Allows installing application packages
 AppManagement.ApplicationPackages.Read | Read Application Packages | Allows reading application packages
 Authorization.RoleAssignments.Read | Power Platform role assignment reader | Allows reading Power Platform role assignments
