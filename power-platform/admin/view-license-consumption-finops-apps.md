@@ -179,7 +179,7 @@ For full entitlement or role mapping details, use the views in Power Platform ad
 
  ## Summarize (Copy to Clipboard)
 
-You can copy the license summary to your clipboard by selecting the **Summarize** button at the top of the page.
+You can copy the license summary to your clipboard by selecting the **Summarize** button at the top of the page. 
 
  :::image type="content" source="media/fno-user-licensing/user-license-summarize-copy-to-clipboard.png" alt-text="Copy the license summary to your clipboard by selecting the "Summarize" button." lightbox="media/fno-user-licensing/user-license-summarize-copy-to-clipboard.png":::
 
