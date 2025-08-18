@@ -4,7 +4,7 @@ description: Learn how to establish a testing strategy that supports and tests t
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---

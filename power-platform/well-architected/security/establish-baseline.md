@@ -4,7 +4,7 @@ description: Learn how to establish a security baseline for Power Platform workl
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -32,7 +32,7 @@ Establishing a security baseline for Microsoft Power Platform involves several s
 
 - Understanding the architecture and components of Power Platform, such as environments, connectors, Dataverse, Power Apps, Power Automate, and Copilot Studio.
 
-- Configuring the security settings and roles for Power Platform at the tenant, environment and resource level, such as Data Loss Prevention policies, environment permissions, and security groups.
+- Configuring the security settings and roles for Power Platform at the tenant, environment and resource level, such as Data policies, environment permissions, and security groups.
 
 - Leveraging Microsoft Entra ID to manage user identities, authentication, and authorization for Power Platform, and integrating with other Entra ID features such as conditional access and multifactor authentication.
 
@@ -44,7 +44,7 @@ Establishing a security baseline for Microsoft Power Platform involves several s
 
 This guide helps you set a security baseline that considers both internal and external factors. Internal factors include your business needs, risk factors, and asset evaluation. External factors include industry benchmarks and regulatory standards. By following these steps and considerations, an organization can establish a security baseline for Power Platform that aligns with its business objectives, compliance requirements, and risk appetite. A security baseline can help an organization to maximize the benefits of Power Platform while minimizing the potential threats and challenges.
 
-**Definitions** 
+**Definitions**
 
 | Term | Definition |
 |---|---|
@@ -181,6 +181,7 @@ The Power Platform service follows the Security Development Lifecycle (SDL). The
 The Microsoft cloud security benchmark (MCSB) is a comprehensive security best-practice framework you can use as a starting point for your security baseline. Use it along with other resources that provide input to your baseline. For more information, see [Introduction to the Microsoft cloud security benchmark](/security/benchmark/azure/introduction).
 
 The [Security page](/power-platform/admin/security/security-posture-overview) in the Power Platform admin center helps you to manage your organization's security with best practices and a comprehensive set of features to ensure maximum security. For example, to:
+
 - **Assess your security status:** Understand and improve your organization's security policies to meet your specific needs.
 - **Act on recommendations:** Identify and implement the most impactful recommendations to improve the assessment.
 - **Set up proactive policies:** Use the rich set of tools and security capabilities available to gain deep visibility, detect threats, and proactively establish policies to help safeguard the organization from vulnerabilities and risks.
@@ -202,6 +203,7 @@ Ensure the security baseline you establish for Power Platform is well aligned wi
 - [Responsible AI FAQs for Copilot Studio](/microsoft-copilot-studio/responsible-ai-overview)
 - [Overview of the Microsoft cloud security benchmark](/security/benchmark/azure/overview)
 - [What is incident response? Plan and steps](https://www.microsoft.com/security/business/security-101/what-is-incident-response)
+- [Understand your security posture and challenges](/power-platform/guidance/adoption/assess-security-posture)
 
 ## Security checklist
 

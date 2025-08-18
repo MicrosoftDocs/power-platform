@@ -4,7 +4,7 @@ description: Learn how to establish incident response procedures that reduce the
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -98,6 +98,10 @@ Generate incident reports for internal use and, if necessary, for regulatory com
 ## Power Platform facilitation
 
 The following sections describe the mechanisms you can employ as part of your security incident response procedures.
+
+### Security page in the Power Platform admin center
+
+The [Security > Overview page](/power-platform/admin/security/security-overview) in the Power Platform admin center is designed to enhance your organization's security and streamline management. It provides a centralized location where you can view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization. Review this page and identify impactful recommendations that the system generates. These recommendations are based on best practices for improving a tenant's security score.
 
 ### Microsoft Sentinel
 

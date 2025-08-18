@@ -4,7 +4,7 @@ description: Learn how to manage identities that are required to or may be attem
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -248,7 +248,7 @@ Threat detection can take the form of reacting to an alert of suspicious activit
 
 ### Identity logging
 
-Power Apps, Power Automate, Copilot Studio, Connectors, and Data Loss Prevention activity logging are tracked and viewed from the Microsoft Purview compliance portal. For more information, see [Learn about Microsoft Purview](/purview/purview).
+Power Apps, Power Automate, Copilot Studio, Connectors, and Data Policy activity logging are tracked and viewed from the Microsoft Purview compliance portal. For more information, see [Learn about Microsoft Purview](/purview/purview).
 
 Logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. This auditing is enabled at the environment level, and additional configuration is required for individual tables and columns.
 
@@ -280,8 +280,15 @@ Learn more:
 
 Most operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. With Power Platform Customer Lockbox, we provide an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. For example, it's used when a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft. For more information, see [Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365](/power-platform/admin/about-lockbox).
 
+### Manage guest users
+
+ou might need to let guest users access environments and Power Platform resources. As with internal users, you can use Microsoft Entra ID conditional access and continuous access evaluation to ensure that guest users are held to an elevated level of security.
+
+To further enhance security and reduce the risk of incidental over-sharing, you can also block or enable [access by Microsoft Entra guests](/power-platform/admin/security/identity-access-management#guest-access-preview) to your Dataverse-backed environments, as needed.
+
 ## Related information
 
+- [Configure identity and access management](/power-platform/guidance/adoption/conditional-access)
 - [Connecting and authenticating to data sources](/power-platform/admin/security/connect-data-sources)
 - [Authenticating to Power Platform services](/power-platform/admin/security/authenticate-services)
 - [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds)

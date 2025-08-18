@@ -4,7 +4,7 @@ description: Learn how to maintain a secure development lifecycle.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -56,11 +56,11 @@ Security requirement gathering is a critical part of this phase. Without this ef
 
 During this phase, the security requirements are converted to technical requirements. In your technical specification, document all design decisions to prevent ambiguity during implementation. Here are some typical tasks:
 
-- **Define the security dimension of the architecture.** Overlay the architecture with security controls. For example, controls that are practical on the network isolation boundaries, the types of identities and authentication methods needed for the components of the workload, and the type of encryption methods to use. <!--For some example architectures, see [TODO].-->
+- **Define the security dimension of the architecture.** Overlay the architecture with security controls. For example, controls that are practical on the network isolation boundaries, the types of identities and authentication methods needed for the components of the workload, and the type of encryption methods to use. 
 
 - **Evaluate platform-provided affordances.** It's important to understand the **division of responsibility between you and Power Platform**. Avoid overlap or duplication with Power Platform native security controls. You'll get better security coverage and be able to reallocate development resources to the needs of the application.
 
-    For example, instead of creating custom logic that reactively identifies and alerts on unapproved usage patterns in apps and flows, use Data Loss Prevention policies to categorize how connectors can be used.
+    For example, instead of creating custom logic that reactively identifies and alerts on unapproved usage patterns in apps and flows, use Data Policies to categorize how connectors can be used.
 
     **Choose only trusted reference implementations, templates, code components, scripts, and libraries**. Your design should also specify secure version control. Application dependencies should be sourced from trusted parties. **Third-party vendors should be able to meet your security requirements** and share their responsible disclosure plan. Any security incident should be promptly reported so that you can take necessary actions. Also, certain libraries or reference implementations might be prohibited by your organization. For example, even if it's secure and free from vulnerabilities, it might still be disallowed because it uses features not yet approved by your organization, licensing restrictions, or the support model of the reference implementation.
 
@@ -163,7 +163,6 @@ Maintenance also includes incident fixes. If issues are found in production, the
 Continuously improve your secure coding practices to keep up with the threat landscape.
 
 ### SDL in Microsoft Power Platform
-<!-- this may need a different header but should highlight Microsofts responsibility towards SDL -->
 
 Power Platform is built on a culture and methodology of secure design. Both culture and methodology are constantly reinforced through Microsoft's industry-leading [Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/practices) (SDL) and [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling) practices.
 

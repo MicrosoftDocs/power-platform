@@ -4,7 +4,7 @@ description: Learn how to implement a monitoring strategy that helps you gain aw
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -146,6 +146,10 @@ Detect **anomalous user access patterns** so that you can identify and investiga
 
 **Detect threats during pre-deployment and post-deployment stages.** During the pre-deployment phase, incorporate vulnerability scanning into pipelines and take necessary actions based on the results. Post-deployment, continue to conduct vulnerability scanning. You can use tools like Microsoft Defender for Containers, which scans container images. Include the results in the collected data. For information about secure development practices, see [Recommendations for safe deployment practices](../operational-excellence/safe-deployments.md).
 
+## Example
+
+[Distributed tracing across multiple services in Power Platform](/power-platform/architecture/key-concepts/distributed-tracing) provides an example scenario and visual representation of how to trace events across multiple services. This guidance provides practical applications and use cases for distributed tracing and explains how to implement it across multiple services in Power Platform.
+
 ## Power Platform facilitation
 
 The following sections describe the mechanisms you can use to monitor and detect threats in Power Platform.
@@ -212,6 +216,7 @@ DevOps advocates change management of workloads via continuous integration and c
 
 ## Related information
 
+- [Detect threats to your organization](/power-platform/guidance/adoption/threat-detection)
 - [What is Microsoft Sentinel?](/azure/sentinel/overview)
 - [Threat intelligence integration in Microsoft Sentinel](/azure/sentinel/threat-intelligence-integration)
 - [Identify advanced threats with User and Entity Behavior Analytics (UEBA) in Microsoft Sentinel](/azure/sentinel/identify-threats-with-entity-behavior-analytics)
