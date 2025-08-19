@@ -151,6 +151,45 @@ After loading data into Dataverse, follow these steps to ensure data integrity a
     - Use blank or default values for unresolved lookups.
     - Even placeholder records can help generate GUIDs needed for lookups in related tables.
 
+## Usage of elastic tables for data migration
+
+[Elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables) are designed to handle large volumes of data in real-time. With elastic tables, you can import, store, and analyze large volumes of data without scalability, latency, or performance issues.
+
+Elastic tables have unique capabilities for flexible schema, horizontal scaling, and automatic removal of data after a time-period.
+
+Elastic tables are stored in Azure Cosmos DB and support:
+
+- Schema-less data via JSON columns
+- Automatic horizontal scaling
+- Time-to-live (TTL) for auto-deletion of stale data
+- Partitioning for performance optimization
+
+Elastic tables are best suited for bulk imports with variable schema.
+
+### Recommended data types for elastic tables during data migration
+
+1. **Raw ingestion data**
+    - Source logs, sensor feeds, or bulk exports from legacy systems. For example, customer interaction logss from a legacy ERP, old email threads and support tickets from the previous system
+
+1. **Semi-structured records**
+    - Data with optional or evolving fields that don’t fit a rigid schema. For example, customer feedback forms with optional fields, even tregistration froms with custom notes or tags
+1. **Staging data for validation**
+    - Temporary holding zone before syncing data to relational tables. For example, imported lead data awaiting deduplication and validation before being added to the main Leads table
+1. **Time-sensitive or expirable data**
+    - Use TTL (Time-to-Live) for auto-deletion of temporary CRM records. For example, promotional discout codes tied to a campaign, one-time access links for customer surveys or onboardin portals, temporary survey responses
+1. **Partitioned bulk data**
+    - Partitioning by ID or category for performance and scalability. For example, partion by Account ID or Region ID during bulk data migration, segmenting customer activity logs by Campaign ID for analytics
+
+### Data types unsuitable for elastic tables
+
+Elastic Tables are optimized for flexible, high-scale scenarios—but not every data type fits. This section highlights common CRM data patterns that are better stored elsewhere to ensure performance, cost-efficiency, and maintainability. Learn more about [features currently not supported with elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables#features-currently-not-supported-with-elastic-tables)
+
+| Data type | Reason |
+| --- | --- |
+| Highly relational data | Elastic tables don’t support joins or lookups |
+| Business-critical records | No transactional integrity or plugin support |
+| Data requiring complex validation | Better handled in standard tables with business rules |
+
 ## Functional data segmentation and archival framework
 
 Effective technical planning includes selecting the right tools and infrastructure, aligning source and target data volumes, and setting up auditing and reconciliation processes. Many migrations become complex due to a lack of upfront analysis, especially around what data needs to move and where it belongs. This section outlines the core principles of data analysis to support a successful migration.
