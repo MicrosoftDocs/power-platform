@@ -24,7 +24,7 @@ The company operates globally and focuses on developing, producing, and distribu
 
 After becoming an independent company, Daimler Truck embraced the opportunity to design a modern set of tools and processes tailored to its evolving needs. The company recognized that the former corporate policy database system no longer aligned with its goals. This recognition led to a focused exploration of the Microsoft Power Platform, unlocking new possibilities for flexibility, productivity, and future-ready operations.
 
-The Policy Navigator project marked an important step as the most comprehensive solution built on  Power Platform in the company, designed for all employees. Transitioning to a new platform came with some limitations because certain former processes couldn't be replicated one-to-one.
+The Policy Navigator project marked an important step as the most comprehensive solution built on Power Platform in the company, designed for all employees. Transitioning to a new platform came with some limitations because certain former processes couldn't be replicated one-to-one.
 
 This shift encouraged the project team to identify opportunities to rethink and improve several process steps, aligning them with the platform's capabilities and the company's evolving needs.
 
