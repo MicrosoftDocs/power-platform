@@ -248,7 +248,7 @@ Threat detection can take the form of reacting to an alert of suspicious activit
 
 ### Identity logging
 
-Power Apps, Power Automate, Copilot Studio, Connectors, and Data Policy activity logging are tracked and viewed from the Microsoft Purview compliance portal. For more information, see [Learn about Microsoft Purview](/purview/purview).
+Power Apps, Power Automate, Copilot Studio, Connectors, and Data Loss Prevention activity logging are tracked and viewed from the Microsoft Purview compliance portal. For more information, see [Learn about Microsoft Purview](/purview/purview).
 
 Logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. This auditing is enabled at the environment level, and additional configuration is required for individual tables and columns.
 
@@ -282,9 +282,9 @@ Most operations, support, and troubleshooting performed by Microsoft personnel (
 
 ### Manage guest users
 
-ou might need to let guest users access environments and Power Platform resources. As with internal users, you can use Microsoft Entra ID conditional access and continuous access evaluation to ensure that guest users are held to an elevated level of security.
+You might need to let guest users access environments and Power Platform resources. Like internal users, you can use Microsoft Entra ID conditional access and continuous access evaluation to ensure that guest users meet an elevated level of security.
 
-To further enhance security and reduce the risk of incidental over-sharing, you can also block or enable [access by Microsoft Entra guests](/power-platform/admin/security/identity-access-management#guest-access-preview) to your Dataverse-backed environments, as needed.
+To further enhance security and reduce the risk of incidental over-sharing, block or enable [access by Microsoft Entra guests](/power-platform/admin/security/identity-access-management#guest-access-preview) to your Dataverse-backed environments as needed.
 
 ## Related information
 

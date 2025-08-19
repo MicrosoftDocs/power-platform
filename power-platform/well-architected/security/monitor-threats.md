@@ -138,7 +138,7 @@ By combining several smaller tools, you can emulate some functions of a SIEM sys
 
 **Be proactive about threat detection** and be vigilant for signs of abuse, like identity brute force attacks on an SSH component or an RDP endpoint. Although external threats might generate a lot of noise, especially if the application is exposed to the internet, **internal threats are often a greater concern**. An unexpected brute force attack from a trusted network source or an inadvertent misconfiguration, for instance, should be investigated immediately.
 
-**Keep up with your hardening practices.** Monitoring isn't a substitute for proactively hardening your environment. A larger surface area is prone to more attacks. Tighten controls as much as practice. Detect and disable unused accounts, use an IP firewall, and block endpoints that aren't required with Data Policies, for example.
+**Keep up with your hardening practices.** Monitoring isn't a substitute for proactively hardening your environment. A larger surface area is prone to more attacks. Tighten controls as much as practice. Detect and disable unused accounts, use an IP firewall, and block endpoints that aren't required with data policies, for example.
 
 **Signature-based detection** can inspect a system in detail. It involves looking for signs or correlations between activities that might indicate a potential attack. A detection mechanism might identify certain characteristics that are indicative of a specific type of attack. It might not always be possible to directly detect the command-and-control mechanism of an attack. However, there are often hints or patterns associated with a particular command-and-control process. For example, an attack might be indicated by a certain flow rate from a request perspective, or it might frequently access domains that have specific endings.
 
@@ -170,7 +170,7 @@ For more information, see [Microsoft Sentinel solution for Microsoft Power Platf
 
 ### Microsoft Purview Activity Logging
 
-Power Apps, Power Automate, Connectors, Data Policy, and Power Platform administrative activity logging are tracked and viewed from the Microsoft Purview compliance portal.
+Power Apps, Power Automate, Connectors, Data Loss Prevention, and Power Platform administrative activity logging are tracked and viewed from the Microsoft Purview compliance portal.
 
 For more information, see:
 
@@ -179,7 +179,7 @@ For more information, see:
 - [Copilot Studio activity logging](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Power Pages activity logging](/power-platform/admin/logging-power-pages)
 - [Power Platform connector activity logging](/power-platform/admin/connector-events-power-platform)
-- [Data Policy activity logging](/power-platform/admin/dlp-activity-logging)
+- [Data policy activity logging](/power-platform/admin/dlp-activity-logging)
 - [Power Platform administrative actions activity logging](/power-platform/admin/admin-activity-logging)
 - [Microsoft Dataverse and model-driven apps activity logging](/power-platform/admin/enable-use-comprehensive-auditing)
 

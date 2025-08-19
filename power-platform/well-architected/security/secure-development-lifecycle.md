@@ -60,7 +60,7 @@ During this phase, the security requirements are converted to technical requirem
 
 - **Evaluate platform-provided affordances.** It's important to understand the **division of responsibility between you and Power Platform**. Avoid overlap or duplication with Power Platform native security controls. You'll get better security coverage and be able to reallocate development resources to the needs of the application.
 
-    For example, instead of creating custom logic that reactively identifies and alerts on unapproved usage patterns in apps and flows, use Data Policies to categorize how connectors can be used.
+    For example, instead of creating custom logic that reactively identifies and alerts on unapproved usage patterns in apps and flows, use data policies to categorize how connectors can be used.
 
     **Choose only trusted reference implementations, templates, code components, scripts, and libraries**. Your design should also specify secure version control. Application dependencies should be sourced from trusted parties. **Third-party vendors should be able to meet your security requirements** and share their responsible disclosure plan. Any security incident should be promptly reported so that you can take necessary actions. Also, certain libraries or reference implementations might be prohibited by your organization. For example, even if it's secure and free from vulnerabilities, it might still be disallowed because it uses features not yet approved by your organization, licensing restrictions, or the support model of the reference implementation.
 

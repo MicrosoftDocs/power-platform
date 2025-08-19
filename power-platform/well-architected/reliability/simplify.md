@@ -100,7 +100,7 @@ As part of your architectural design, you need to consider how to store your dat
 
 ## Power Platform facilitation
 
-You can use [Plan designer](/power-apps/maker/plan-designer/plan-designer) to describe your business case in natural language and provide information, like business process flows or screenshots of legacy systems. Plan designer will then generate a complete Power Platform solution tailored to your needs. Plan designer also generated process diagrams to help you clarify user interactions.
+You can use [Plan designer](/power-apps/maker/plan-designer/plan-designer) to describe your business case in natural language and provide information, like business process flows or screenshots of legacy systems. Plan designer will then generate a complete Power Platform solution tailored to your needs. Plan designer also generates process diagrams to help you clarify user interactions.
 
 For practical design advice, consult the following articles:
 

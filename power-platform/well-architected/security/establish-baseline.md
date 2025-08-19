@@ -32,7 +32,7 @@ Establishing a security baseline for Microsoft Power Platform involves several s
 
 - Understanding the architecture and components of Power Platform, such as environments, connectors, Dataverse, Power Apps, Power Automate, and Copilot Studio.
 
-- Configuring the security settings and roles for Power Platform at the tenant, environment and resource level, such as Data policies, environment permissions, and security groups.
+- Configuring the security settings and roles for Power Platform at the tenant, environment and resource level, such as data policies, environment permissions, and security groups.
 
 - Leveraging Microsoft Entra ID to manage user identities, authentication, and authorization for Power Platform, and integrating with other Entra ID features such as conditional access and multifactor authentication.
 

@@ -119,7 +119,7 @@ For more information, see [Microsoft Sentinel solution for Microsoft Power Platf
 
 ### Microsoft Purview Activity Logging
 
-Power Apps, Power Automate, Connectors, Data Policy, and Power Platform administrative activity logging are tracked and viewed from the Microsoft Purview compliance portal.
+Power Apps, Power Automate, Connectors, Data Loss Prevention, and Power Platform administrative activity logging are tracked and viewed from the Microsoft Purview compliance portal.
 
 For more information, see:
 
@@ -128,7 +128,7 @@ For more information, see:
 - [Copilot Studio activity logging](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Power Pages activity logging](/power-platform/admin/logging-power-pages)
 - [Power Platform connector activity logging](/power-platform/admin/connector-events-power-platform)
-- [Data Policy activity logging](/power-platform/admin/dlp-activity-logging)
+- [Data policy activity logging](/power-platform/admin/dlp-activity-logging)
 - [Power Platform administrative actions activity logging](/power-platform/admin/admin-activity-logging)
 - [Microsoft Dataverse and model-driven apps activity logging](/power-platform/admin/enable-use-comprehensive-auditing)
 

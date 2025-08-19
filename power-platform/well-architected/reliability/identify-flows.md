@@ -207,7 +207,7 @@ The following example provides a complete scenario and illustrates important poi
 
 ## Power Platform facilitation
 
-Use [Plan designer](/power-apps/maker/plan-designer/plan-designer) to describe your business case in natural language and provide information, like business process flows or screenshots of legacy systems. Plan designer will then generate a complete Power Platform solution tailored to your needs. Plan designer also generated process diagrams to help you clarify user interactions.
+Use [Plan designer](/power-apps/maker/plan-designer/plan-designer) to describe your business case in natural language and provide information, like business process flows or screenshots of legacy systems. Plan designer will then generate a complete Power Platform solution tailored to your needs. Plan designer also generates process diagrams to help you clarify user interactions.
 
 Consider using [process mining and task mining in Power Automate](/power-automate/process-advisor-overview) including a [process map](/power-automate/process-advisor-visualize), a powerful tool that can help you visualize and analyze your business processes.
 
