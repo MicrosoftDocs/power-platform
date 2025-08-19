@@ -882,6 +882,8 @@
           items:
             - name: Integrate data into Dataverse
               href: data-integrator.md
+            - name: Migrating the dual-write app
+              href: app-migration-dual-write.md
         - name: Data sources and gateway clusters
           items:
             - name: About on-premises gateway
@@ -1135,10 +1137,6 @@
                   href: unified-experience/tutorial-perform-transactionless-copy.md
                 - name: "Tutorial: Back up and restore unified environment"
                   href: unified-experience/tutorial-backup-restore-unified-environment.md
-            - name: Dual-write functionality
-              items: 
-                - name: Migrating the dual-write app
-                  href: app-migration-dual-write.md
         - name: Performance tuning and optimization
           items:
             - name: Overview
