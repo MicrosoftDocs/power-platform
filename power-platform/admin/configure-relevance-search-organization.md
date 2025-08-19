@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: marianaraujo 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 06/25/2025
+ms.date: 08/19/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: maaraujo
@@ -12,12 +12,11 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
-- wobushixinxin67
+  - JasonHQX
+  - wobushixinxin67
 
 ---
 # Configure Dataverse search for your environment
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Dataverse search delivers fast and comprehensive search results across multiple tables in a single list, sorted by [relevance](/azure/search/index-similarity-and-scoring), to give you an easy and well-informed search experience in model-driven apps. As an administrator with environment-level permissions, you can go to the [Power Platform admin center](/power-platform/admin/new-admin-center) to configure Dataverse search for all the model-driven apps within a specific environment using Quick Find views to manage global, quick find, and lookup search behavior.
 
@@ -173,9 +172,10 @@ By default, the following system tables are indexed for Dataverse search. Howeve
 The table's Quick Find view drives the searchable table fields and filters used for Dataverse search. The complete set of **Find columns**, **View columns**, and **Filter columns** in a table's Quick Find view become part of the Dataverse search index when you enable it for Dataverse search. There's no limit to how many searchable fields you can add for each table. However, as previously noted, there's a limit on the total number of indexed fields.
 
 - The **Find columns** on a Quick Find view define the searchable fields in the Dataverse search index. Text fields such as _Single Line of Text_ and _Multiple Lines of Text_, _Lookups_, and _Option Sets_ are searchable. **Find columns** of all other data types are ignored.
+  
   > [!NOTE]
   > Currency fields must be added to the **Find Columns** so the currency symbol that is visible on the record are returned in the search results. If the currency field isn't added to the search index, users see the currency symbol localized according to their language settings.
-  > To use a **lookup field**, the reference table also needs to be turned on for searchable
+  > To use a **lookup field**, the reference table needs to be turned on to be searchable.
 
 - The **View columns** on a Quick Find view define the fields that are displayed in model-driven apps' search results page when the matched results are returned.
 
@@ -213,7 +213,9 @@ To edit the searchable fields of a table:
 7. Select **Save and Publish** to publish the changes to the view.
 
 > [!IMPORTANT]
->To ensure search results are available, confirm that 1) The table is included in the model-driven app. 2) The **Quick Find View** is set as the default view for the table.
+> To ensure search results are available, confirm that:
+> - The table is included in the model-driven app.
+> - The **Quick Find View** is set as the default view for the table.
 > 
 > Changes to Quick Find view also apply to single-table and multi-table Quick Find configurations. Therefore, **we don't prevent you from including fields that aren't supported for Dataverse search when you configure Quick Find view**. However, unsupported fields aren't synced to the Dataverse search index and don't appear in the Dataverse search results.
 
@@ -221,7 +223,6 @@ To edit the searchable fields of a table:
 > You can use the **Quick Find view** to define which fields appear as facets in model-driven apps with Dataverse search enabled. All **View columns** with data types other than _Single Line of Text_ and _Multiple Lines of Text_ are marked as facetable and filterable in the index. By default, the first four facetable fields in the **Quick Find view** for the selected table appear as facets when users search by using Dataverse search. At any time, you can only select four fields as facets.
 
 > [!NOTE]
->
 > - Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for large size organizations.
 >
 > - The maximum search-term size is 1,024 characters.
