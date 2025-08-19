@@ -882,7 +882,7 @@
           items:
             - name: Integrate data into Dataverse
               href: data-integrator.md
-            - name: Migrating the dual-write app
+            - name: Migrate the dual-write app
               href: app-migration-dual-write.md
         - name: Data sources and gateway clusters
           items:
