@@ -50,8 +50,7 @@ Dataverse search has these benefits:
   
 - **Allows generative AI experiences**: Process and organize data so that agents can provide more accurate and relevant answers and insights.
   
-For more information about Dataverse search, see [Search for tables and rows by using Dataverse search](/powerapps/user/relevance-search).
-
+For more information about Dataverse search, go to [Search for tables and rows by using Dataverse search](/powerapps/user/relevance-search).
 
 ### Availability and language support
 
@@ -69,8 +68,8 @@ For more information about Dataverse search, see [Search for tables and rows by
 
 Dataverse search is an opt-out feature, set to **On** for all new production and default environments. We recommend using Dataverse search so users have a search experience in model-driven apps.
 
-- When set to **On**: The search bar, in the header of all model-driven apps in the environment, is visible, allowing users to have a global, search experience. Generative AI experiences may be available if they are turned on.
-- When set to **Default**: The search bar, in the header of all model-driven apps in the environment, is hidden. Generative AI experiences available if they are turned on.
+- When set to **On**: The search bar, in the header of all model-driven apps in the environment, is visible, allowing users to have a global, search experience. Generative AI experiences may be available if they're turned on.
+- When set to **Default**: The search bar, in the header of all model-driven apps in the environment, is hidden. Generative AI experiences available if they're turned on.
 - When set to **Off**: The search bar, in the header of all model-driven apps in the environment, is hidden. Generative AI experiences are limited. Learn more in [What is Dataverse search?](/power-apps/user/relevance-search-benefits).
 
 Individual users aren't able to switch to [Quick Find search, formerly known as categorized search](/powerapps/user/quick-find). Tables must be included in the application you're using with Dataverse search. Be sure that any table you want users to search on are included in your application.
@@ -331,12 +330,12 @@ There's a table called **DataverseSearch** (previously known as **RelevanceSearc
 1. On the **Licenses** page, go to the **Environments** tab, then select an environment to view.
 ---
 
-We recommend turning on Dataverse search so users can enjoy a better search experience in model-driven apps with optimized, generative AI experiences. As an environment admin, you can opt out of this feature by turning if off. Note that if Dataverse search is turned **Off**, generative AI experiences are limited for makers and end users.
+We recommend turning on Dataverse search so users can enjoy a better search experience in model-driven apps with optimized, generative AI experiences. As an environment admin, you can opt out of this feature by turning if off. If Dataverse search is turned **Off**, generative AI experiences are limited for makers and end users.
 
 > [!IMPORTANT]
 > Dataverse search counts towards the different storage entitlements you have in the tenant.
 
-For all FAQ about Dataverse search see [Frequently asked questions about Dataverse search](/power-apps/user/relevance-faq).
+For all FAQ about Dataverse search, go to [Frequently asked questions about Dataverse search](/power-apps/user/relevance-faq).
 
 ### Related content
 
