@@ -239,7 +239,7 @@ To edit the searchable fields of a table:
 >   - **statuscode** (Label of optionset)
 >   - **name** (Primary name field of any table that may or may not be the same as the logical name, such as _fullname_ or _subject_, of the table.)
 >
-> - If you add a common field to any table for Dataverse search, search is performed for that common field across all entities. However, once you choose a specific table through the Record Type facet, Dataverse search follows the tables' defined settings you set up through Quick Find view.
+> - If you add a common field to any table for Dataverse search, search is performed for that common field across all entities in global search. However, once you choose a specific table through the Record Type facet, Dataverse search follows the tables' defined settings you set up through Quick Find view. As a result, the number of records returned in Global Search may differ from those returned in an entity-level search. This behavior is expected and by design.
 
 ### Configure quick actions that appear with Dataverse search in model-driven apps
 
