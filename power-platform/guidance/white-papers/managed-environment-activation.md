@@ -4,9 +4,9 @@ description: Learn how your organization can use Power Platform Managed Environm
 author: rsantos00
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 12/18/2024
+ms.date: 07/25/2025
 ms.author: rstand
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 ms.subservice: guidance
 contributors:
   - RobStand
@@ -20,9 +20,6 @@ ms.custom:
 # Activating Managed Environments
 
 This white paper describes the key features and capabilities of Managed Environments and their benefits for organizations and admins.
-
-> [!NOTE]
-> You can save or print this white paper by selecting **Print** from your browser, and then selecting **Save as PDF**.
 
 ## Managed Environments overview
 
@@ -438,6 +435,6 @@ Since these solutions are tightly integrated with the product, the CoE Starter K
 
 Managed Environments with premium governance capabilities stands as a pivotal solution for IT admins who are tasked with managing and governing Power Platform adoption at scale. By providing a robust suite of tools and controls, it empowers governance teams to maintain a delicate balance between innovation and security. With granular access controls, streamlined solution deployment, and policy enforcement, Managed Environments offers the foundation for organizations to confidently harness the full potential of Power Platform while ensuring compliance, data integrity, and optimal performance. In an era where data governance is paramount, these capabilities make Power Platform a cornerstone in modern enterprise IT strategies, fostering efficiency and peace of mind for administrators and stakeholders alike.
 
-## Related information
+> [!NOTE]
+> You can save or print this white paper by selecting **Print** from your browser, and then selecting **Save as PDF**.
 
-- [Power Platform white papers](index.md)

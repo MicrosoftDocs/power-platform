@@ -19,6 +19,7 @@ ms.contributors:
   - psherlekar
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Power Platform URLs and IP address ranges
 
