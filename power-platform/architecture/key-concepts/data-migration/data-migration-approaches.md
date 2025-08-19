@@ -1,19 +1,19 @@
 ---
 title: Data migration approaches
-description: Learn how to plan and execute simple, medium, and complex data migrations in Power Platform. Discover tools, best practices, and next steps.
+description: Learn how to plan and execute simple, medium, and complex data migrations to Microsoft Dataverse. Discover tools, best practices, and next steps.
 #customer intent: As a data migration specialist, I want to understand different data migration approaches so that I can choose the best method for my organization's needs.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
-ms.date: 06/26/2025
+ms.reviewer: jhaskett-msft
+ms.date: 08/19/2025
 ---
 
 # Data migration approaches
 
-The right approach for migrating data from an external CRM system to Microsoft Dataverse depends on your data’s size and complexity. This guide outlines simple, medium, and complex migration strategies, recommends tools for each scenario, and shares best practices to help you plan and execute a successful migration.
+The right approach for migrating data from an external CRM system to Microsoft Dataverse depends on your data's size and complexity. This article outlines simple, medium, and complex migration strategies, recommends tools for each scenario, and shares best practices to help you plan and execute a successful migration.
 
 ## Simple data migration
 
@@ -24,9 +24,9 @@ Definition:
 
 Approach:
 
-- **Data assessment**: Identify relevant tables and columns for migration; perform basic data quality checks.
-- **Export and transform**: Use tools like Excel or CSV exports; apply basic transformations with Power Query.
-- **Import to Dataverse**: Use Dataverse’s built-in import wizard. Learn more: [How to import data](/power-apps/user/import-data).
+- **Data assessment**: Identify relevant tables and columns for migration. Perform basic data quality checks.
+- **Export and transform**: Use tools like Excel or CSV exports. Apply basic transformations with Power Query.
+- **Import to Dataverse**: Use Dataverse's built-in import wizard. Learn more in [How to import data](/power-apps/user/import-data).
 - **Verification**: Perform spot checks to confirm data integrity and functionality.
 
 ## Medium data migration
@@ -56,7 +56,7 @@ Approach:
 - **Comprehensive analysis**: Review source schema, dependencies, and customizations thoroughly.
 - **Specialized tools**: Use scalable solutions like Azure Data Factory, SSIS (SQL Server Integration Services), Azure Synapse Analytics, Microsoft Fabric, or custom migration solutions for scalable data handling.
 - **Custom development**: Build scripts or apps to handle APIs, complex relationships, and workflow logic.
-- **Phased migration**: Break migration into stages; run pilots before full rollout to reduce risk.
+- **Phased migration**: Break migration into stages. Run pilots before full rollout to reduce risk.
 - **Continuous validation**: Test at each phase to ensure data accuracy and business continuity.
 - **Post-migration optimization**: Optimize Dataverse configurations, workflows, and relationships after migration to achieve improved performance.
 
@@ -71,5 +71,3 @@ The next article outlines the strategic role of a staging database in large-scal
 
 - [Ingest exported Dataverse data with Azure Data Factory](/power-apps/maker/data-platform/export-to-data-lake-data-adf)
 - [Link your Dataverse environment to Microsoft Fabric and unlock deep insights](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)
-
-

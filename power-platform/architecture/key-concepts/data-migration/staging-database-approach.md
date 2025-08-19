@@ -1,19 +1,23 @@
 ---
 title: Use a staging database for data migration
-description: Learn how to execute a staged data migration to Dataverse.
-#customer intent: As a data migration specialist, I want to understand different data migration approaches so that I can choose the best method for my organization's needs.
+description: Learn how to use a staging database for data migration to Dataverse, ensuring data quality, integrity, and scalability in complex migration scenarios.
+#customer intent: As a data migration specialist, I want to learn the steps involved in using a staging database so that I can implement a reliable and auditable migration process.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: concept-article
+ms.topic: example-scenario
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
-ms.date: 06/26/2025
+ms.reviewer: jhaskett-msft
+ms.date: 08/19/2025
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:08/19/2025
 ---
 
 # Use a staging database for data migration
 
-This reference architecture emphasizes the strategic role of a staging database in large-scale and complex data migrations. Rather than transferring data directly from the source system to the target environment, the process introduces an intermediate staging layer. Data is first ingested into a temporary migration staging database, where it undergoes transformation and validation. Only after these steps are completed, the data is loaded into Dataverse. This pattern enhances data quality, ensures integrity, and reduces the likelihood of errors during the migration process.
+This reference architecture highlights the strategic role of a staging database in large-scale and complex data migrations. Rather than transferring data directly from the source system to the target environment, the process introduces an intermediate staging layer. Data is first ingested into a temporary migration staging database, where it undergoes transformation and validation. Only after these steps are completed, the data is loaded into Dataverse. This pattern improves data quality, ensures integrity, and reduces the likelihood of errors during the migration process.
 
 ## Architecture diagram
 
@@ -24,7 +28,7 @@ This reference architecture emphasizes the strategic role of a staging database 
 - **Extract**: Data is extracted from source systems.
 - **Stage**: Data is loaded into the source staging database.
 - **Transform**: Migration scripts process and transform the data.
-- **Load**: Transformed data is loaded into the Destination Staging DB.
+- **Load**: Transformed data is loaded into the destination staging database.
 - **Validate**: Excel templates are used to validate master data.
 - **Integrate**: Data Migration Tools load data into Dataverse and files into Azure Blob or SharePoint.
 
@@ -33,17 +37,17 @@ This reference architecture emphasizes the strategic role of a staging database 
 - **Source system**: The original data source, which might include legacy databases, ERP systems, or non-Microsoft applications.
 - **Staging database**: A temporary, intermediate data store used to ingest, transform, and validate data before final migration. This layer decouples the source and target systems, allowing for controlled and auditable data preparation.
 - **ETL/ELT process**: Extract, Transform, and Load (or Extract, Load, Transform) pipelines that move data from the source to the staging database, apply business rules, and prepare it for Dataverse.
-- **Reference data**: Used to validate and enrich master data during migration. For example, Excel master data templates.
+- **Reference data**: Data used to validate and enrich master data during migration. For example, Excel master data templates.
 - **Dataverse**: The target system where the cleansed and validated data is ultimately loaded for use in Power Platform applications.
-- **File storage**: Storage for unstructured data such as attachments and documents. For example, Azure Blob Storage/SharePoint.
+- **File storage**: Storage for unstructured data such as attachments and documents. For example, Azure Blob Storage or SharePoint.
 
 ## Scenario details
 
-This architecture is applicable to scenarios where:
+This architecture works well for scenarios where:
 
 - The source system contains large volumes of data or complex relational structures that require transformation before ingestion into Dataverse.
 - Direct migration isn't feasible due to data quality issues, schema mismatches, or the need for business rule enforcement.
-- The migration process must be auditable, repeatable, and support rollback or reprocessing of specific data segments.
+- The migration process needs to be auditable, repeatable, and support rollback or reprocessing of specific data segments.
 - The organization requires a phased or incremental migration approach, such as during a system modernization or cloud transition project.
 
 ### Example use cases
@@ -59,7 +63,7 @@ This architecture is applicable to scenarios where:
 
 ### Key benefits
 
-- **Data quality assurance**: The staging layer allows for thorough validation and transformation before data reaches the production environment.
+- **Data quality assurance**: The staging layer enables thorough validation and transformation before data reaches the production environment.
 - **Error isolation**: Issues can be identified and resolved in the staging environment without impacting the source or target systems.
 - **Scalability**: Supports large volumes of data and complex transformation logic.
 - **Auditability**: Enables tracking of data lineage and transformation history.
@@ -71,12 +75,12 @@ This architecture is applicable to scenarios where:
 ### Reliability
 
 - Design the staging and migration process to be resilient to failures. Implement retry logic and checkpointing in ETL pipelines to handle transient errors.
-- Validate data completeness and integrity before loading into Dataverse to avoid partial or corrupt migrations.
+- Validate data completeness and integrity before loading data into Dataverse to avoid partial or corrupt migrations.
 
 ### Security
 
 - Apply role-based access control (RBAC) to restrict access to the staging database and migration tools.
-- Encrypt data at rest and in transit, especially when handling sensitive or personal data (personal data).
+- Encrypt data at rest and in transit, especially when handling sensitive or personal data.
 - Log and monitor access to the staging environment and Dataverse to support audit and compliance requirements.
 
 ### Performance Efficiency
@@ -93,7 +97,7 @@ This architecture is applicable to scenarios where:
 
 ## Next step
 
-The next article outlines a proven approach for managing large-scale migrations. One of the biggest challenges in complex migrations is tracking what's loaded, handling errors, and retrying failed records. Since these migrations can span days or even weeks, a phased strategy is recommended—migrating only delta data during the final production cutover to minimize disruption.
+The next article outlines a proven approach for managing large-scale migrations. One of the biggest challenges in complex migrations is tracking loaded data, handling errors, and retrying failed records. Since these migrations can span days or even weeks, use a phased strategy. This strategy migrates only delta data during the final production cutover to minimize disruption.
 
 > [!div class="nextstepaction"]
 > [Plan a phased migration](workflow-complex-data-migration.md)
