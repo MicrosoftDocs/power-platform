@@ -31,7 +31,7 @@ Common migration challenges include:
 Choose your migration strategy based on data size and complexity. This guide categorizes migrations as simple, medium, or complex and offers best practices to help you plan and execute a successful transition to Dataverse.
 
 > [!NOTE]
-> This example assumes that process analysis and solution evaluation have already been conducted, and that Dataverse has been identified as the appropriate destination for the data. Teams should always assess whether a first-party application, such as Dynamics 365 Finance & Operations (F&O),  better aligns with business needs before proceeding with custom implementations in Dataverse.
+> This example assumes that process analysis and solution evaluation have already been conducted, and that Dataverse has been identified as the appropriate destination for the data. Teams should always assess whether a first-party application, such as Dynamics 365 Finance and Operations (F&O), better aligns with business needs before proceeding with custom implementations in Dataverse.
 >
 > Learn more: [Dynamics 365 implementation guide](/dynamics365/guidance/implementation-guide/overview)
 

@@ -57,7 +57,7 @@ This architecture works well for scenarios where:
 - Performing preload data enrichment, such as geocoding addresses or mapping legacy codes to new taxonomies.
 
 > [!NOTE]
-> This example assumes that process analysis and solution evaluation have already been conducted, and that Dataverse has been identified as the appropriate destination for the data. Teams should always assess whether a first-party application, such as Dynamics 365 Finance & Operations (F&O),  better aligns with business needs before proceeding with custom implementations in Dataverse.
+> This example assumes that process analysis and solution evaluation have already been conducted, and that Dataverse has been identified as the appropriate destination for the data. Teams should always assess whether a first-party application, such as Dynamics 365 Finance and Operations (F&O), better aligns with business needs before proceeding with custom implementations in Dataverse.
 >
 > Learn more: [Dynamics 365 implementation guide](/dynamics365/guidance/implementation-guide/overview)
 
