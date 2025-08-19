@@ -118,7 +118,7 @@ Test your entire deployment failure mitigation strategy frequently. Like emergen
 
 ## Power Platform facilitation
 
-The [Deployment page](/power-platform/alm/admin-deployment-hub) in the Power Platform Admin Center. This page provides a streamlined experience to help administrators navigate the complexities of managing Power Platform application lifecycle management (ALM) workloads, including managing pipelines deployments at enterprise scale. Admins have visibility to all the deployments in their tenant and can approve deployment requests and troubleshoot issues.
+The [Deployment page](/power-platform/alm/admin-deployment-hub) in the Power Platform admin center provides a streamlined experience to help administrators navigate the complexities of managing Power Platform application lifecycle management (ALM) workloads, including managing pipelines deployments at enterprise scale. Admins have visibility to all the deployments in their tenant and can approve deployment requests and troubleshoot issues.
 
 [Pipelines in Power Platform](/power-platform/alm/pipelines) aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service.
 

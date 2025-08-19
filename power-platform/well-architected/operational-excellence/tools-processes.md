@@ -38,7 +38,7 @@ Tools should provide the following functions:
 
 In some cases, one tool or a suite of tools might provide several functions. Ensure that you understand the capabilities of your tools and their limitations so that they meet your requirements across functions.
 
-Determine if you should invest in premium features of the platform or premium versions of tools. Consider the time and effort of developing your own solutions compared to features that the premium tools provide. Consider one-time costs versus recurring costs. In most cases, off-the-shelf tools provide higher value to your team. For example, [Environment management](/power-platform/admin/managed-environment-overview) capabilities offer out-of-the-box features to set a maker onboarding message or to limit sharing proactively. Building these features yourself requires development and ongoing maintenance effort that might prove more costly than investing in premium capabilities.
+Determine if you should invest in premium features of the platform or premium versions of tools. Consider the time and effort of developing your own solutions compared to features that the premium tools provide. Consider one-time costs versus recurring costs. In most cases, off-the-shelf tools provide higher value to your team. For example, [Managed Environment](/power-platform/admin/managed-environment-overview) capabilities offer out-of-the-box features to set a maker onboarding message or to limit sharing proactively. Building these features yourself requires development and ongoing maintenance effort that might prove more costly than investing in premium capabilities.
 
 Use AI tools when practical. AI tools can help with code development, reviews, and optimization.
 
@@ -106,9 +106,9 @@ Require your workload team to understand the security practices related to devel
 
 ## Power Platform facilitation
 
-The [Deployment page](/power-platform/alm/admin-deployment-hub) in the Power Platform Admin Center. This page provides a streamlined experience to help administrators navigate the complexities of managing Power Platform application lifecycle management (ALM) workloads, including managing pipelines deployments at enterprise scale. Admins have visibility to all the deployments in their tenant and can approve deployment requests and troubleshoot issues.
+The [Deployment page](/power-platform/alm/admin-deployment-hub) in the Power Platform admin center provides a streamlined experience to help administrators navigate the complexities of managing Power Platform application lifecycle management (ALM) workloads, including managing pipelines deployments at enterprise scale. Admins have visibility to all the deployments in their tenant and can approve deployment requests and troubleshoot issues.
 
-[Pipelines in Power Platform](/power-platform/alm/pipelines) aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service. Pipelines can be custom tailored to serve the unique needs of an organization, For example you can add approvals, deploy via service rpincipals, and integrate with internal systems of record, Azure DevOps, GitHub, and more. Learn more: [Extend pipelines in Power Platform](/power-platform/alm/extend-pipelines)
+[Pipelines in Power Platform](/power-platform/alm/pipelines) aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service. Pipelines can be custom tailored to serve the unique needs of an organization, For example you can add approvals, deploy via service principals, and integrate with internal systems of record, Azure DevOps, GitHub, and more. Learn more in [Extend pipelines in Power Platform](/power-platform/alm/extend-pipelines).
 
 [Copilot-generated deployment notes](/power-platform/alm/copilot-deployment-notes-pipelines) in pipelines generate a solution summary and prefill the deployment notes field, giving anyone viewing the deployment request or record enough context to understand what the solution does and what it contains.
 
@@ -140,9 +140,9 @@ Other tools and services that can help you standardize your development practice
 
 ## Related information
 
-The [Power Platform and Copilot Studio Architecture Center](/power-platform/architecture/) provides a structured framework for documenting solution architectures. Follow the same template to document your solutions can ensure consistency, clarity, and alignment with best practices across their solutions. This framework is especially useful for communicating complex architectures, facilitating reviews, and enabling future scalability and governance.
+- The [Power Platform and Copilot Studio Architecture Center](/power-platform/architecture/) provides a structured framework for documenting solution architectures. Following the same template to document your solutions ensures consistency, clarity, and alignment with best practices across solutions. This framework is especially useful for communicating complex architectures, facilitating reviews, and enabling future scalability and governance.
 
-[Codevelopment governance](/power-apps/guidance/co-develop/governance)
+- [Co-development governance](/power-apps/guidance/co-develop/governance)
 
 ## Next steps
 

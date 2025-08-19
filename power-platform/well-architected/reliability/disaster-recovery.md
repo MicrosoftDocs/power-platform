@@ -105,7 +105,7 @@ Microsoft Business Applications provide business continuity and disaster recover
 
 [Self-service disaster recovery](/power-platform/admin/business-continuity-disaster-recovery) enables you to define, test, and execute a cross-region failover approach for your Power Platform environments. This approach helps you meet compliance requirements and ensures that your workloads continue to run during an unexpected region-wide issue.
 
-With [self-service disaster recovery](/power-platform/admin/business-continuity-disaster-recovery), you control when to execute failover drills to meet compliance requirements and when to perform emergency failovers and failbacks. Perform drills on a copy of the production environment because this process involves downtime that can last several minutes. For example, copy the production environment to a sandbox environment, and then change its type to production.
+With self-service disaster recovery, you control when to execute failover drills to meet compliance requirements and when to perform emergency failovers and failbacks. Perform drills on a copy of the production environment because this process involves downtime that can last several minutes. For example, copy the production environment to a sandbox environment, and then change its type to production.
 
 ## Related information
 

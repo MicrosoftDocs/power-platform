@@ -123,7 +123,7 @@ Background tasks must offer sufficient performance to ensure that they don't blo
 
 ## Example
 
-[Use Dataverse background operations](/power-platform/architecture/reference-architectures/dataverse-background-operations) provides an example scenarios and a generalized example architecture to illustrate how to use background operations in Dataverse.
+[Use Dataverse background operations](/power-platform/architecture/reference-architectures/dataverse-background-operations) provides example scenarios and a generalized example architecture to illustrate how to use background operations in Dataverse.
 
 ## Power Platform facilitation
 

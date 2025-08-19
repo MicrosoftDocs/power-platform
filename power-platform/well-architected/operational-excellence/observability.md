@@ -177,7 +177,7 @@ Power Platform integrates with [Application Insights](/azure/azure-monitor/app/a
 
 - Capture telemetry data from your [Microsoft Copilot Studio agent](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights. You can use this telemetry to monitor logged messages and events sent to and from your agent, topics to be triggered during user conversations, and custom telemetry events that can be sent from your topics.
 
-Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. For more information about logging activities in Power Platform, see:
+Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. For more information about logging activities in Power Platform, consult:
 
 - [Power Apps](/power-platform/admin/logging-powerapps)
 - [Power Automate](/power-platform/admin/logging-power-automate)
@@ -194,7 +194,7 @@ The [Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) i
 
 The [Power Platform Automation Kit](/power-automate/guidance/automation-kit/overview/introduction) is set of tools that accelerates the use and support of Power Automate for desktop for automation projects. The kit provides tools that help you manage automation projects and monitor them to estimate money saved and return on investment (ROI). Part of the Automation Kit is the [control center](/power-automate/guidance/automation-kit/control-center-overview), which complements the Monitor desktop flow runs feature. The key focus of the control center is an orchestrator view for support analysts and organizations to monitor, take action, and alert when necessary.
 
-The [Agent Inventory feature](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit/blob/main/AGENT_INVENTORY.md) of the [Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit/blob/main/README.md) provides administrators with a tenant-wide view to all Copilot Studio custom agents in their organization, including detailed information on the features they are using, authentication mode, knowledge sources, orchestration type and more.
+The [Agent Inventory feature](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit/blob/main/AGENT_INVENTORY.md) of the [Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit/blob/main/README.md) provides administrators with a tenant-wide view to all Copilot Studio custom agents in their organization, including detailed information on the features they are using, authentication mode, knowledge sources, orchestration type, and more.
 
 ## Related information
 

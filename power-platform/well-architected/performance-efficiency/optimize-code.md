@@ -83,7 +83,7 @@ To optimize logic, consider the following strategies:
 
 Review the performance recommendations specific to the Power Platform product you're working with. Evaluate your logic against these recommendations to identify areas for improvement.
 
-Learn more about [Power Automate cloud flow coding guidelines](/power-automate/guidance/coding-guidelines/), [Power Apps coding guidelines](/power-apps/guidance/coding-guidelines/overview), and [Power Automate desktop flow coding guidelines](/power-automate/guidance/desktop-flow-coding-guidelines/) that can help you optimize logic.
+Learn more about [Power Automate cloud flow coding guidelines](/power-automate/guidance/coding-guidelines/), [Power Apps coding guidelines](/power-apps/guidance/coding-guidelines/overview), and [Power Automate desktop flow coding guidelines](/power-automate/guidance/desktop-flow-coding-guidelines/) to optimize logic.
 
 [!INCLUDE [pp-tip-powercat-toolkit](~/../shared-content/shared/guidance-includes/pp-tip-powercat-toolkit.md)]
 
