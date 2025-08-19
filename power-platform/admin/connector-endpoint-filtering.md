@@ -3,7 +3,7 @@ title: Connector endpoint filtering (preview)
 description: Learn how to configure connector endpoint filtering in DLP policies to control app, flow, and chatbot connections.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/04/2025
+ms.date: 08/19/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
