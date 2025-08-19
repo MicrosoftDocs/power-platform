@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: marianaraujo 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 06/25/2025
+ms.date: 08/19/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: maaraujo
@@ -12,12 +12,11 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
+- JasonHQX
 - wobushixinxin67
 
 ---
 # Configure Dataverse search for your environment
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Dataverse search delivers fast and comprehensive search results across multiple tables in a single list, sorted by [relevance](/azure/search/index-similarity-and-scoring), to give you an easy and well-informed search experience in model-driven apps. As an administrator with environment-level permissions, you can go to the [Power Platform admin center](/power-platform/admin/new-admin-center) to configure Dataverse search for all the model-driven apps within a specific environment using Quick Find views to manage global, quick find, and lookup search behavior.
 
@@ -239,7 +238,7 @@ To edit the searchable fields of a table:
 >   - **statuscode** (Label of optionset)
 >   - **name** (Primary name field of any table that may or may not be the same as the logical name, such as _fullname_ or _subject_, of the table.)
 >
-> - If you add a common field to any table for Dataverse search, search is performed for that common field across all entities in global search. However, once you choose a specific table through the Record Type facet, Dataverse search follows the tables' defined settings you set up through Quick Find view. As a result, the number of records returned in Global Search may differ from those returned in an entity-level search. This behavior is expected and by design.
+> - If you add a common field to any table for Dataverse search, search is performed for that common field across all entities in global search. However, once you choose a specific table through the Record Type facet, Dataverse search follows the tables' defined settings you set up through Quick Find view. As a result, the number of records returned in global search may differ from those returned in an entity-level search. This behavior is expected and by design.
 
 ### Configure quick actions that appear with Dataverse search in model-driven apps
 
