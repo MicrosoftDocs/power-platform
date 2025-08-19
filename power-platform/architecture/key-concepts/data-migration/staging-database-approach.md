@@ -52,6 +52,11 @@ This architecture is applicable to scenarios where:
 - Consolidating data from multiple legacy systems into a unified Dataverse environment.
 - Performing preload data enrichment, such as geocoding addresses or mapping legacy codes to new taxonomies.
 
+> [!NOTE]
+> This example assumes that process analysis and solution evaluation have already been conducted, and that Dataverse has been identified as the appropriate destination for the data. Teams should always assess whether a first-party application, such as Dynamics 365 Finance & Operations (F&O),  better aligns with business needs before proceeding with custom implementations in Dataverse.
+>
+> Learn more: [Dynamics 365 implementation guide](/dynamics365/guidance/implementation-guide/overview)
+
 ### Key benefits
 
 - **Data quality assurance**: The staging layer allows for thorough validation and transformation before data reaches the production environment.
