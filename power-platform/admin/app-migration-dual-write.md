@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Migrating the Dual-Write App to Strengthen Communication from Finance & Operations (F&O) to Dataverse  
+# Migrating the dual-write app to strengthen communication from finance and operations to Dataverse  
 
 As part of ongoing efforts to enhance communication security between finance and operations apps and Dataverse, the platform team will be updating the AppID used by [dual-write](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page) functionality.
 
