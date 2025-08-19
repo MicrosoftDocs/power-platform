@@ -106,8 +106,8 @@ Take these steps to turn on Dataverse search:
 Turning on Dataverse search allows global search in all model-driven apps in that environment and allows generative AI experiences to work. 
 
 > [!NOTE]
-- You can't turn off Dataverse search in specific apps.
-- Dataverse search doesn't turn on any other feature automatically.
+> - You can't turn off Dataverse search in specific apps.
+> - Dataverse search doesn't turn on any other feature automatically.
 
 When you provision a Dataverse search index, an indication that provisioning is in progress is visible. Once index provisioning is complete, it may take anywhere between an hour or more to complete a full sync for average size organizations, to a couple of days for large organizations.
 
@@ -217,7 +217,6 @@ To edit the searchable fields of a table:
 > You can use the **Quick Find view** to define which fields appear as facets in model-driven apps with Dataverse search enabled. All **View columns** with data types other than _Single Line of Text_ and _Multiple Lines of Text_ are marked as facetable and filterable in the index. By default, the first four facetable fields in the **Quick Find view** for the selected table appear as facets when users search by using Dataverse search. At any time, you can only select four fields as facets.
 
 > [!NOTE]
->
 > - Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for large size organizations.
 >
 > - The maximum search-term size is 1,024 characters.
