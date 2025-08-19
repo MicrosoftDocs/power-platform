@@ -175,6 +175,7 @@ The table's Quick Find view drives the searchable table fields and filters used 
 - The **Find columns** on a Quick Find view define the searchable fields in the Dataverse search index. Text fields such as _Single Line of Text_ and _Multiple Lines of Text_, _Lookups_, and _Option Sets_ are searchable. **Find columns** of all other data types are ignored.
   > [!NOTE]
   > Currency fields must be added to the **Find Columns** so the currency symbol that is visible on the record are returned in the search results. If the currency field isn't added to the search index, users see the currency symbol localized according to their language settings.
+  > To use a **lookup field**, the reference table also needs to be turned on for searchable
 
 - The **View columns** on a Quick Find view define the fields that are displayed in model-driven apps' search results page when the matched results are returned.
 
@@ -212,6 +213,8 @@ To edit the searchable fields of a table:
 7. Select **Save and Publish** to publish the changes to the view.
 
 > [!IMPORTANT]
+>To ensure search results are available, confirm that 1) The table is included in the model-driven app. 2) The **Quick Find View** is set as the default view for the table.
+> 
 > Changes to Quick Find view also apply to single-table and multi-table Quick Find configurations. Therefore, **we don't prevent you from including fields that aren't supported for Dataverse search when you configure Quick Find view**. However, unsupported fields aren't synced to the Dataverse search index and don't appear in the Dataverse search results.
 
 > [!TIP]
