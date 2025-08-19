@@ -7,8 +7,8 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
-ms.date: 06/26/2025
+ms.reviewer: jhaskett-msft
+ms.date: 08/19/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -62,8 +62,8 @@ Security is foundational to data migration. This architecture incorporates multi
 
 - **Security readiness**
     - In Dataverse, security is role-based and tied to ownership and business units.
-    - Use disabled user accounts as stubs with minimal privileges (for example, the “Salesperson” role).
-    - Store source data in secure environments such as VMs or databases with restricted access.
+    - Use disabled user accounts as stubs with minimal privileges (for example, the "Salesperson" role).
+    - Store source data in secure environments, such as VMs or databases with restricted access.
 
 - **Protecting confidentiality**
     - Assign data ownership to appropriate business units and roles.
@@ -82,10 +82,10 @@ Security is foundational to data migration. This architecture incorporates multi
 
 Operational Excellence in data migration is achieved through strategic planning, continuous improvement, and adherence to best practices. This architecture is designed to deliver secure, high-performance migrations with minimal disruption.
 
-- **Efficient and secure design**: The architecture ensures data is migrated efficiently and securely, maintaining high performance and reliability throughout the process.
+- **Efficient and secure design**: Data is migrated efficiently and securely while maintaining high performance and reliability throughout the process.
 - **Continuous improvement**: Regular audits and assessments identify opportunities to refine processes and adopt innovative solutions.
 - **Streamlined execution**: Advanced technologies and methodologies reduce downtime and minimize business disruption.
-- **Proactive monitoring**: Real-time monitoring and alerting provide visibility into migration progress, enabling rapid response to issues.
+- **Proactive monitoring**: Real-time monitoring and alerting provide visibility into the migration progress, enabling rapid response to issues.
 - **On-time, on-budget delivery**: This proactive approach ensures migrations meet timelines, budgets, and quality standards.
 
 - **Embrace fusion development**: Fusion development fosters collaboration between developers, IT, and business users, enabling faster, more tailored migration solutions. Low-code tools empower business users to actively contribute, reducing reliance on IT and accelerating delivery. This approach ensures alignment across stakeholders and drives more effective execution of the migration strategy. Learn more: [Fusion development in Power Platform](/power-platform/developer/fusion-development).
@@ -96,7 +96,7 @@ Operational Excellence in data migration is achieved through strategic planning,
 
 - **Deploy with confidence**: This architecture supports a reliable deployment process through rigorous testing and validation. Unit, integration, and user acceptance testing ensure that migrated data is accurate, complete, and functional in the target environment. Thorough predeployment validation minimizes post-migration issues and enables a smooth transition for end users. This disciplined approach builds stakeholder confidence and helps ensure a successful, on-time migration.
 
-- **Automate for efficiency**: Automation enhances efficiency and reduces human error in data migration. Scripts and workflows handle repetitive tasks such as ETL (Extract, Transform, Load), validation, and testing—ensuring speed, consistency, and accuracy. This frees up resources for higher-value activities like optimization and stakeholder engagement. Automation also simplifies scaling for large or complex migrations, making the process more manageable and reliable.
+- **Automate for efficiency**: Automation enhances efficiency and reduces human error in data migration. Scripts and workflows handle repetitive tasks such as ETL (Extract, Transform, Load), validation, and testing—ensuring speed, consistency, and accuracy. This approach frees up resources for higher-value activities like optimization and stakeholder engagement. Automation also simplifies scaling for large or complex migrations, making the process more manageable and reliable.
 
 - **Adopt safe deployment practices**: Safe deployment practices protect data integrity and security throughout the migration. Key strategies include:
     - **Backup and recovery**: Implement robust backup procedures and recovery plans to safeguard against data loss.
@@ -110,7 +110,7 @@ Operational Excellence in data migration is achieved through strategic planning,
 
 Advanced monitoring and automation tools enhance the speed, reliability, and efficiency of data migration. Real-time tracking of key performance indicators (KPIs)—such as data transfer rates, system resource usage, and error rates—helps identify and resolve bottlenecks quickly. Automated scripts and workflows reduce manual effort, minimize errors, and improve consistency. This performance-focused approach ensures a smooth migration and supports continuous optimization.
 
-- **Realistic performance**: Achieving realistic performance in data migration starts with setting attainable goals based on thorough testing and analysis. The architecture accounts for the capabilities and limitations of both source and target systems to define practical performance benchmarks. This approach prevents system overload, reduces failure risk, and keeps the migration aligned with project timelines and resource constraints—ensuring a stable and successful execution.
+- **Realistic performance**: You achieve realistic performance in data migration when you set attainable goals based on thorough testing and analysis. The architecture accounts for the capabilities and limitations of both source and target systems to define practical performance benchmarks. This approach prevents system overload, reduces failure risk, and keeps the migration aligned with project timelines and resource constraints, ensuring a stable and successful execution.
 
 - **Designed to meet performance requirements**: The data migration architecture is built to meet strict performance standards through best practices in coding, testing, and validation. Rigorous performance testing simulates real-world scenarios to uncover potential issues early. Scalable design elements—such as load balancing and parallel processing—enable efficient handling of large data volumes. This approach ensures the migration process meets defined performance benchmarks and supports a smooth, high-speed transition to the target system.
 

@@ -1,14 +1,14 @@
 ---
 title: Suggested workflow for a complex data migration
-description: Learn how to plan and execute complex data migrations from Salesforce to Dataverse, including technical steps, error handling, and best practices.
-#customer intent: As a data migration specialist, I want to plan and execute a complex data migration, such as from Salesforce, to Dataverse so that I can ensure data integrity and minimize business disruption.
+description: Learn how to plan and execute complex data migrations to Dataverse, with advice on technical workflows, error resolution, and best practices to ensure data integrity.
+#customer intent: As a data migration specialist, I want to plan and execute a complex data migration to Dataverse so that I can ensure data integrity and minimize business disruption.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: concept-article
+ms.topic: best-practice
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
-ms.date: 06/26/2025
+ms.reviewer: jhaskett-msft
+ms.date: 08/19/2025
 ---
 
 # Suggested workflow for a complex data migration
@@ -28,7 +28,7 @@ Ensure a smooth migration by following a structured approach—extract, transfor
 
 ### Extract data from source to staging database
 
-For complex data migrations, we recommended staging data in a separate database (for example, SQL Server). This staging area captures a snapshot of the source system without disrupting ongoing business operations.
+For complex data migrations, we recommend staging data in a separate database (for example, SQL Server). This staging area captures a snapshot of the source system without disrupting ongoing business operations.
 
 Key considerations:
 
@@ -40,12 +40,12 @@ Key considerations:
 
 ### Transform data into target staging database
 
-After extracting data from the source system, transform it into a target staging database that mirrors the Dataverse schema and contains values ready for direct insert or update.
+After you extract data from the source system, transform it into a target staging database that mirrors the Dataverse schema and contains values ready for direct insert or update.
 
 Key transformation steps:
 
 - **Field mapping:** Map source columns to target Dataverse columns. Use scripts to join and merge tables where needed.
-- **Optionset conversion:** Convert text-based optionset values to Dataverse integers using a mapping table (for example, OptionSetMapping) and bulk update queries. Create a table to standardize and automate the transformation of optionset values from source to target systems.
+- **Optionset conversion:** Convert text-based optionset values to Dataverse integers by using a mapping table (for example, OptionSetMapping) and bulk update queries. Create a table to standardize and automate the transformation of optionset values from source to target systems.
 
    **Table**: OptionSetMapping
 
@@ -108,8 +108,8 @@ The next step is to determine and implement your approach to loading data into D
     - XrmToolBox’s Data Transporter
 1. **Key considerations (tool-agnostic)**:
     - **Handle cyclic dependencies**: Sequence table loads to minimize circular lookups. Insert records without dependent lookups, then update them later.
-    - **Track record IDs**: Capture Dataverse GUIDs in a success table, then update the main table using a unique identifier (for example, importsequencenumber).
-    - **Optimize batch size and number of threads**: Review guidance for [optimizing performance for bulk operations](/power-apps/developer/data-platform/optimize-performance-create-update). The application you use must manage service protection errors that will be thrown when extraordinary numbers of requests are sent to Dataverse. If you are writing your own code and using the Dataverse Web API, make sure you retry 429 errors as described in [Service protection API limits[/power-apps/developer/data-platform/optimize-performance-create-update]. If you are using the Dataverse SDK, it will manage these for you.
+    - **Track record IDs**: Capture Dataverse GUIDs in a success table, then update the main table by using a unique identifier (for example, importsequencenumber).
+    - **Optimize batch size and number of threads**: Review guidance for [optimizing performance for bulk operations](/power-apps/developer/data-platform/optimize-performance-create-update). The application you use must manage service protection errors that occur when extraordinary numbers of requests are sent to Dataverse. If you write your own code and use the Dataverse Web API, make sure you retry 429 errors as described in [Service protection API limits](/power-apps/developer/data-platform/optimize-performance-create-update). If you use the Dataverse SDK, it manages these errors for you.
 
         To achieve optimal performance, tune batch size and thread count based on table complexity:
         - **Out-of-the-box (OOB) tables** (for example, Contact, Account, Lead): These tables are slower due to built-in plugins and jobs. Recommended: Batch size 200–300, up to 30 threads (if ≤10 lookups and 50–70 columns).
@@ -119,9 +119,9 @@ The next step is to determine and implement your approach to loading data into D
 
 1. **Infrastructure tips**: To maximize data migration performance, run your migration from a virtual machine (VM) located in the same region as your Dataverse environment. This approach significantly reduces latency and speeds up the entire process. Learn how to [determine the region of your Dataverse environment](/power-platform/admin/regions-overview?tabs=new#using-power-platform-admin-center).
 
-1. **Error handling**: Don’t ignore errors—resolve them to prevent cascading failures. Use defaults (for example, blank lookups, default optionset values) to insert placeholder records and capture GUIDs.
-1. **Status updates**: Only set the active status during initial record insertion. For inactive records or custom state/status codes, update them after data validation. For most custom tables, status updates can follow immediately after insert. However, for special tables like Case, Opportunity, or Lead, delay status updates until the end of the migration. Once these records are closed, they can’t be modified unless reopened—a time-consuming process that risks data integrity.
-1. **Ownership and security**: Set the correct record owner during data insertion, as both user-level and business unit security in Dataverse are tied to the owner’s business unit. Assigning the right business unit at creation is critical—updating it afterwards removes all security roles.
+1. **Error handling**: Don't ignore errors—resolve them to prevent cascading failures. Use defaults (for example, blank lookups, default optionset values) to insert placeholder records and capture GUIDs.
+1. **Status updates**: Only set the active status during initial record insertion. For inactive records or custom state/status codes, update them after data validation. For most custom tables, status updates can follow immediately after insert. However, for special tables like Case, Opportunity, or Lead, delay status updates until the end of the migration. Once these records are closed, they can't be modified unless reopened—a time-consuming process that risks data integrity.
+1. **Ownership and security**: Set the correct record owner during data insertion, as both user-level and business unit security in Dataverse are tied to the owner's business unit. Assign the right business unit at creation—updating it afterwards removes all security roles.
     - **Use [stub users](/power-platform/admin/create-users?tabs=new#how-stub-users-are-created)**: 
         - Dataverse supports stub users (nonlicensed), which are useful for large or historical migrations. Stub users are automatically assigned the Salesperson security role—don't rename or modify this role. Stub users can own records if they have user-level read access to the relevant tables. 
     - **Recommendations**:
@@ -130,32 +130,32 @@ The next step is to determine and implement your approach to loading data into D
         - Ensure the Salesperson role has read access to all migration-eligible tables.
         - Even users disabled in the Dataverse environment with this role can own records.
 
-1. **Currency handling**: Set exchange rates during insert using a prevalidation plugin, as Dataverse doesn’t support historical rates.
+1. **Currency handling**: Set exchange rates during insert by using a prevalidation plugin, as Dataverse doesn't support historical rates.
 
 ### Post data load into Dataverse
 
 After loading data into Dataverse, follow these steps to ensure data integrity and minimize downstream issues:
 
 1. **Update the main table with GUIDs**:
-    - After a successful load, copy the Dataverse record GUIDs from the Success Table into the Main Table using a unique identifier (for example, importsequencenumber).
+    - After a successful load, copy the Dataverse record GUIDs from the Success Table into the Main Table by using a unique identifier, such as `importsequencenumber`.
     - Update the Processing Flag to mark records as:
         - P – Processed
         - E – Errored
         - U – Unprocessed
     This strategy enables efficient reruns by skipping already processed records and supports lookup resolution in subsequent loads.
 
-2. **Retry failed records**: To reduce rework and maintain referential integrity:
+1. **Retry failed records**: To reduce rework and maintain referential integrity, consider these actions:
     - Trim string values if they exceed allowed lengths.
     - Apply default optionset values when mappings are missing.
-    - Assign a fallback owner if the original owner isn’t available (even as a stub user).
+    - Assign a fallback owner if the original owner isn't available (even as a stub user).
     - Use blank or default values for unresolved lookups.
     - Even placeholder records can help generate GUIDs needed for lookups in related tables.
 
-## Usage of elastic tables for data migration
+## Using elastic tables for data migration
 
-[Elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables) are designed to handle large volumes of data in real-time. With elastic tables, you can import, store, and analyze large volumes of data without scalability, latency, or performance issues.
+[Elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables) are designed to handle large volumes of data in real time. With elastic tables, you can import, store, and analyze large volumes of data without scalability, latency, or performance issues.
 
-Elastic tables have unique capabilities for flexible schema, horizontal scaling, and automatic removal of data after a time-period.
+Elastic tables offer unique capabilities for flexible schema, horizontal scaling, and automatic removal of data after a specific time period.
 
 Elastic tables are stored in Azure Cosmos DB and support:
 
@@ -169,24 +169,23 @@ Elastic tables are best suited for bulk imports with variable schema.
 ### Recommended data types for elastic tables during data migration
 
 1. **Raw ingestion data**
-    - Source logs, sensor feeds, or bulk exports from legacy systems. For example, customer interaction logss from a legacy ERP, old email threads and support tickets from the previous system
-
+    - Source logs, sensor feeds, or bulk exports from legacy systems. For example, customer interaction logs from a legacy ERP, old email threads, and support tickets from the previous system.
 1. **Semi-structured records**
-    - Data with optional or evolving fields that don’t fit a rigid schema. For example, customer feedback forms with optional fields, even tregistration froms with custom notes or tags
+    - Data with optional or evolving fields that don't fit a rigid schema. For example, customer feedback forms with optional fields, or event registration forms with custom notes or tags.
 1. **Staging data for validation**
-    - Temporary holding zone before syncing data to relational tables. For example, imported lead data awaiting deduplication and validation before being added to the main Leads table
-1. **Time-sensitive or expirable data**
-    - Use TTL (Time-to-Live) for auto-deletion of temporary CRM records. For example, promotional discout codes tied to a campaign, one-time access links for customer surveys or onboardin portals, temporary survey responses
+    - A temporary holding zone before syncing data to relational tables. For example, imported lead data awaiting deduplication and validation before being added to the main Leads table.
+1. **Time-sensitive or expiring data**
+    - Use TTL (Time-to-Live) for auto-deletion of temporary CRM records. For example, promotional discount codes tied to a campaign, one-time access links for customer surveys or onboarding portals, and temporary survey responses.
 1. **Partitioned bulk data**
-    - Partitioning by ID or category for performance and scalability. For example, partion by Account ID or Region ID during bulk data migration, segmenting customer activity logs by Campaign ID for analytics
+    - Partition data by ID or category to improve performance and scalability. For example, partition by account ID or region ID during bulk data migration, or segment customer activity logs by campaign ID for analytics.
 
 ### Data types unsuitable for elastic tables
 
-Elastic Tables are optimized for flexible, high-scale scenarios—but not every data type fits. This section highlights common CRM data patterns that are better stored elsewhere to ensure performance, cost-efficiency, and maintainability. Learn more about [features currently not supported with elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables#features-currently-not-supported-with-elastic-tables)
+Elastic tables are optimized for flexible, high-scale scenarios—but not every data type fits. This section highlights common CRM data patterns that are better stored elsewhere to ensure performance, cost-efficiency, and maintainability. Learn more about [features currently not supported with elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables#features-currently-not-supported-with-elastic-tables)
 
 | Data type | Reason |
 | --- | --- |
-| Highly relational data | Elastic tables don’t support joins or lookups |
+| Highly relational data | Elastic tables don't support joins or lookups |
 | Business-critical records | No transactional integrity or plugin support |
 | Data requiring complex validation | Better handled in standard tables with business rules |
 
@@ -210,7 +209,7 @@ This simple analysis can significantly reduce migration scope. In long-running C
 
 #### Columns relevancy
 
-Some source system columns might map directly to Dataverse, while others might become calculated fields. Separate these columns and consult business stakeholders to decide if migration jobs are needed.
+Some source system columns map directly to Dataverse, while others become calculated fields. Separate these columns and consult business stakeholders to decide if migration jobs are needed.
 
 Ignore columns that are only relevant in the source system or not meaningful in the target. This includes many out-of-the-box fields like Created By, Modified By, or Row Version Number, unless they serve a specific purpose in your migration.
 
@@ -223,7 +222,7 @@ If your source system includes file-type data, flag these fields early and plan 
 - **Large volumes or file sizes**: If storage cost is a concern, use Azure Blob Storage or the native file column in Dataverse, which uses Azure Blob behind the scenes.
 - **Malware protection**: Run files through a malware detection tool (for example, Azure Advanced Threat Protection) before migration to ensure security.
 
-After reviewing file relevance, you’ll often find that total data volume drops significantly—especially in long-running CRM systems—making the migration more efficient.
+After reviewing file relevance, you often find that total data volume drops significantly—especially in long-running CRM systems—making the migration more efficient.
 
 ### Data archival strategies
 
@@ -239,12 +238,12 @@ Common candidates include:
 - Disqualified leads
 - Marketing emails, posts, and audit logs
 
-Review your system to identify other tables that can be archived.
+Review your system to identify other tables that you can archive.
 
 #### Step 2: Choose an archival approach
 
 - Keep data in the source system. Retain a few admin licenses for access while deactivating others to reduce costs.
-- Move to external storage. Use local databases, Azure Blob Storage, or Azure Tables to store archived records. This reduces storage and migration costs but requires a separate migration strategy.
+- Move to external storage. Use local databases, Azure Blob Storage, or Azure Tables to store archived records. This approach reduces storage and migration costs but requires a separate migration strategy.
 - Use a separate Dataverse environment. This option is less common, but it's useful if you want to isolate archived data. You can retire this environment later to simplify cutover planning.
 
 ## Recommended data migration infrastructure
@@ -253,7 +252,7 @@ To ensure fast and reliable data migration into Dataverse:
 
 - Use a virtual machine (VM) in the same region as your Dataverse environment to reduce latency and improve migration speed.
 - Choose a high-performance VM. At minimum, use a D4 VM with eight cores, 28-GB RAM, and 500-GB storage to handle large data volumes efficiently.
-- Prefer a local database on the VM. Avoid remote connections during migration. If using Azure Data Factory, deploy it in the same region as your Dataverse environment for optimal performance.
+- Prefer a local database on the VM. Avoid remote connections during migration. If you use Azure Data Factory, deploy it in the same region as your Dataverse environment for optimal performance.
 
 ## Next step
 
