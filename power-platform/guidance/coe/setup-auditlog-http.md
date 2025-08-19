@@ -15,12 +15,12 @@ contributors:
 ms.custom: sfi-image-nochange
 ---
 
-# Collect audit logs using Office 365 Management API
+# Collect audit logs by using the Office 365 Management API
 
 The audit log sync flows connect to the [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference) to gather telemetry data, such as unique users and launches for apps. The flows use an HTTP action to access the API. In this article, you set up the app registration for the HTTP action and the environment variables that are needed to run the flows.
 
 > [!NOTE]
-> The Center of Excellence (CoE) Starter Kit works without these flows. However, if the flows aren't used, usage information such as app launches and unique users is blank in the Power BI dashboard.
+> The Center of Excellence (CoE) Starter Kit works without these flows. However, if you don't use the flows, usage information such as app launches and unique users is blank in the Power BI dashboard.
 
 ## Prerequisites
 
@@ -38,7 +38,7 @@ The audit log sync flows connect to the [Office 365 Management Activity API refe
 1. Microsoft Entra permissions might be required to configure the Microsoft Entra app registration. Depending on your Microsoft Entra configuration, these permissions could be an **Application Developer** role or higher. You can find more guidance in [Least privileged roles by task in Microsoft Entra ID](/entra/identity/role-based-access-control/delegate-by-task).
 
 > [!NOTE]
-> To grant rights for your application to access the Office 365 Management APIs, you can use authentication services that the APIs provide through Microsoft Entra ID.
+> To grant rights for your application to access the Office 365 Management APIs, use authentication services that the APIs provide through Microsoft Entra ID.
 
 ## Create a Microsoft Entra app registration for Office 365 Management API access
 
@@ -60,7 +60,7 @@ Follow these steps to set up a Microsoft Entra app registration for an HTTP call
 
 1. Select **Office 365 Management API**, and configure permissions as follows:
 
-   1. Select **Application permissions**, and then select **ActivityFeed.Read**.
+   1. Select **Application permissions**, then select **ActivityFeed.Read**.
 
        :::image type="content" source="media/coe36new.png" alt-text="Screenshot that shows the ActivityFeed.Read setting on the Request API permissions page of the API permissions menu." lightbox="media/coe36new.png":::
 
@@ -68,7 +68,7 @@ Follow these steps to set up a Microsoft Entra app registration for an HTTP call
 
 1. Select **Grant Admin Consent for \<*your organization*\>**. Learn more about how to set up admin content in [Prerequisites](/azure/active-directory/manage-apps/grant-admin-consent#prerequisites).
 
-   The API permissions now reflect delegated **ActivityFeed.Read** permissions with a status of **Granted for \<*your organization*\>**.
+   The API permissions now show delegated **ActivityFeed.Read** permissions with a status of **Granted for \<*your organization*\>**.
 
 1. Select **Certificates and secrets**.
 
@@ -78,11 +78,11 @@ Follow these steps to set up a Microsoft Entra app registration for an HTTP call
 
 1. Copy and paste the application (client) ID to a text document such as a Notepad file.
 
-1. Select **Overview**, and copy and paste the application (client) ID and directory (tenant) ID values to the same text document. Be sure to make a note of which globally unique identifier (GUID) is for which value. You need these values when you configure the custom connector.
+1. Select **Overview**, and copy and paste the application (client) ID and directory (tenant) ID values to the same text document. Make sure you note which globally unique identifier (GUID) corresponds to each value. You need these values when you configure the custom connector.
 
 ### Update environment variables
 
-Environment variables are used to control whether the legacy Office 365 Management API or the Graph API is used. They are also used to store the client ID and secret for the app registration. In addition, depending on the type of cloud that you use for the HTTP action, they are used to define audience and authority service endpoints. Your cloud type might be commercial, US Government Community Cloud (GCC), US GCC High, or US Department of Defense (DoD). Update the [environment variables](faq.md#update-environment-variables) before you turn on the flows.
+Use environment variables to control whether the legacy Office 365 Management API or the Graph API is used. Use them to store the client ID and secret for the app registration. Depending on the type of cloud that you use for the HTTP action, use them to define audience and authority service endpoints. Your cloud type might be commercial, US Government Community Cloud (GCC), US GCC High, or US Department of Defense (DoD). Update the [environment variables](faq.md#update-environment-variables) before you turn on the flows.
 
 You can store the client secret in plain text in the **Audit Logs - Client Secret** environment variable. However, we don't recommend this approach. Instead, we recommend that you create and store the client secret in Azure Key Vault and reference it in the **Audit Logs - Client Azure Secret** environment variable.
 
@@ -101,16 +101,16 @@ You can store the client secret in plain text in the **Audit Logs - Client Secre
 ### Start a subscription to audit log content
 
 1. Go to [make.powerapps.com](https://make.powerapps.com).
-2. Select **Solutions**.
-3. Open the **Center of Excellence – Core Components** solution.
-4. Turn on the **Admin | Audit Logs | Office 365 Management API Subscription** flow and run it, enter _start_ as the operation to run.
+1. Select **Solutions**.
+1. Open the **Center of Excellence – Core Components** solution.
+1. Turn on the **Admin | Audit Logs | Office 365 Management API Subscription** flow. Run the flow and enter _start_ as the operation to run.
    
    :::image type="content" source="media/coe-startsubscription.png" alt-text="Screenshot that shows the location of the Run button in the navigation bar and the start operation in the Run flow pane." lightbox="media/coe-startsubscription.png":::
    
-5. Open the flow, and verify that the action to start the subscription is passed.
+1. Open the flow, and verify that the action to start the subscription passes.
 
 > [!IMPORTANT]
-> If you previously enabled the subscription, you see a _(400) The subscription is already enabled_ message. This means the subscription successfully enabled in the past. You can ignore this message and continue with the setup.
+> If you previously enabled the subscription, you see a _(400) The subscription is already enabled_ message. This message means the subscription is already enabled. You can ignore this message and continue with the setup.
 > 
 > If you don't see the above message or a (200) response, the request likely failed. There might be an error with your setup that's keeping the flow from working. Common issues to check are:
 >
