@@ -193,7 +193,7 @@ All business process flows are disabled by default. To enable them, follow these
 
 1. Select **Process** from the filter option at the top.
 
-1. In **Power Apps App Approval BPF**, select the ellipsis (…) button, then select **Turn On**.
+1. In **Power Apps App Approval BPF**, select the ellipsis (...), then select **Turn On**.
 
 1. Repeat the previous step for **Flow Approval BPF**, **Custom Connector Approval BPF**, and **Chatbot Approval BPF**.
 
