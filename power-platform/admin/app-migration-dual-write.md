@@ -10,6 +10,10 @@ ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.contributors:
+  - ritesp
+  - ashishjh
+  - laswenka
 ---
 
 # Migrate the dual-write app to strengthen communication from finance and operations to Dataverse  
