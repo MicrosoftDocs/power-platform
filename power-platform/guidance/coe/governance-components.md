@@ -4,7 +4,7 @@ description: Learn how to use governance components for automating auditing and 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/15/2025
+ms.date: 08/19/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -71,7 +71,7 @@ The Governance components solution includes several apps that support compliance
 
 Use this app in the [auditing process](example-processes.md) to check whether you comply with app compliance requirements for apps, flows, chatbots, or custom connectors you own. Use it to submit information to the CoE admins as business justification to stay in compliance.
 
-**Permission**: Share this app with your app makers as soon as you're using the app auditing process. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
+**Permission**: Share this app with your app makers as soon as you're using the app auditing process. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, then share this app with the security group.
 
 **Prerequisite**: This app uses Microsoft Dataverse. If you install this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
@@ -207,7 +207,7 @@ The inactivity processes use custom Dataverse tables to track and manage approva
 
 #### Inactivity notifications approval
 
-Represents inactivity notifications approval tasks that start during the Admin | Inactivity notifications v2 flows.
+Represents inactivity notifications approval tasks that start during the **Admin | Inactivity notifications v2** flows.
 
 ### Flows
 
@@ -268,7 +268,7 @@ The inactivity processes include management applications that help administrator
 
 #### Cleanup Old Objects App
 
-Asking makers to respond if objects are still useful with the archival flows described earlier, they sometimes ignore these requests. In that case, a flow sends their manager this email.
+This app sends an email to managers when makers don't respond to requests about whether objects are still useful, as described in the archival flows.
 
 ![Mail sent to managers.](media/ArchiveApps1.png "Mail sent to managers")
 
@@ -384,9 +384,9 @@ If they choose to see the items individually, they can make these decisions gran
 
 ![Orphaned object item.](media/orphanedobjects3.png "Orphaned object item")
 
-## App Quarantine process
+## App quarantine process
 
-The app quarantine process automatically restricts access to non-compliant applications and provides mechanisms for administrators to manage quarantined apps and notify makers of compliance requirements.
+The app quarantine process automatically restricts access to noncompliant applications and provides mechanisms for administrators to manage quarantined apps and notify makers of compliance requirements.
 
 ### Environment variables
 
