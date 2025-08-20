@@ -1,11 +1,11 @@
 ---
-title: "Buy Power Automate licenses"
-description: "Buy Power Automate licenses."
-author: PriyaKodukula
+title: Buy Power Automate licenses
+description: Buy Power Automate licenses.
+author: sericks007
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 06/18/2025
-ms.author: prkoduku
+ms.author: sericks
 ms.contributors:
   - lsuresh
 contributors:
