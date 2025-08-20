@@ -1,7 +1,7 @@
 ---
 title: PowerShell support for Power Apps and Power Automate
 description: Learn about the PowerShell cmdlets and get a tutorial of how to install and run them.
-author: samathur
+author: sericks007
 contributors:
   - samathur
   - taiki-yoshida 
@@ -10,9 +10,9 @@ contributors:
 ms.reviewer: angieandrews
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/11/2025
+ms.date: 08/20/2025
 ms.subservice: admin
-ms.author: samathur
+ms.author: sericks
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
@@ -183,8 +183,8 @@ Following are some common scenarios that show how to use new and existing Power 
 - [Power Apps Commands](#power-apps-commands)
 - [Power Automate commands](#power-automate-commands)
 - [API connection commands](#api-connection-commands)
-- [Data policy commands](#data-loss-prevention-dlp-policy-commands)
-- [Data policy resource exemption cmdlets](#dlp-resource-exemption-cmdlets)
+- [Data policy commands](#data-policy-commands)
+- [Data resource exemption cmdlets](#data-resource-exemption-cmdlets)
 - [Block trial licenses commands](#block-trial-licenses-commands)
 
 ## Environments commands
