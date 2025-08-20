@@ -88,11 +88,11 @@ Make sure you have the System Administrator security role or equivalent permissi
 | Allow Copilot Studio to share data with Viva Insights | When **On**, enables Copilot Studio data to flow to Microsoft Viva Insights for [analytical reports](/microsoft-copilot-studio/analytics-viva-insights). Also requires [Microsoft 365 services](geographical-availability-copilot.md#copilots-and-generative-ai-features-that-depend-on-data-movement-across-regions) to be turned on. For information on what data is shared with Viva Insights, see [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). | On |
 | Allow cross-geo boundary sharing of aggregated analytics data of your tenant preferred data location for Viva Insights is different than the location of your Copilot Studio environment | For tenants with Power Platform environments across [multiple geos](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features). When **On**, Microsoft Copilot Studio is sent and stored in the base location of the tenant in Viva Insights, even when crossing geo boundaries. Requires turning on **Allow Copilot Studio to share data with Viva Insights**.  | Off |
 
-## AI Builder
+## Preview and experimental AI models (formerly AI Builder)
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable the usage of AI Builder model types that are in preview.  | If **Off**, the environment doesn't have access to AI Builder model types that are in preview. Not all environments have this setting. Learn more about environments that are eligible for this feature and related details in [Administer AI Builder](/ai-builder/administer).  | On |
+| Enable the usage of preview and experimental AI models in Copilot Studio and in flows and apps using AI prompts or AI Builder model types.  | If **Off**, the environment doesn't have access to AI models that are experimental or in preview. Learn more about the related details in [Administer AI Builder](/ai-builder/administer).  | On |
 
 ## AI prompts
 
