@@ -24,9 +24,9 @@ The flows and dataflows in this solution sync all your resources into tables. Th
 
 > [!NOTE]
 >
-> - If you're trying out [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory, we recommend you don't depend on this feature yet and test it in a dedicated test environment first. Trying out this feature helps us validate that the feature is what you need and that we're not introducing unintended side effects.
+> - If you try [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory, we recommend that you don't depend on this feature yet and test it in a dedicated test environment. Trying out this feature helps us validate that the feature is what you need and that we're not introducing unintended side effects.
 > - Your feedback is critical to this process. Post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
-> - Setting up the inventory components using [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) is only supported through the [setup wizard](#set-up-the-inventory-components-using-the-setup-wizard). Manual setup instructions are available after the experimental preview.
+> - Setting up the inventory components by using [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) is only supported through the [setup wizard](#set-up-the-inventory-components-using-the-setup-wizard). Manual setup instructions are available after the experimental preview.
 
 ## Import the Creator Kit and make connections
 
@@ -40,7 +40,7 @@ The CoE Starter Kit requires the installation of the [Creator Kit](../creator-ki
 
 ### Create connections
 
-Create these connections manually ahead of installing the kit to ensure they're correctly configured.
+Create these connections manually before installing the kit to ensure they're correctly configured.
 
 1. Go to [Power Automate](https://make.powerautomate.com/).
 1. Select your CoE environment and go to **Data** > **Connections** > **+ New connection**.
@@ -50,56 +50,56 @@ Create these connections manually ahead of installing the kit to ensure they're 
 
 1. Download the CoE Starter Kit [compressed file](https://aka.ms/CoeStarterKitDownload) to your computer.
 
-1. Extract the compressed zip file. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
+1. Extract the compressed file. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
 
 1. Import the **CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip** solution file from the extracted folder.
 
 1. For an environment in the commercial cloud, leave all environment variable values blank. For a GCC, GCC High, and DoD environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints) and enter the value for your cloud in the **Graph URL Environment Variable** environment variable.
 
-The import can take up to an hour to be complete, and upgrades can take up to two hours.
+The import can take up to an hour to complete, and upgrades can take up to two hours.
 
 > [!NOTE]
-> After importing your solution, you might see this warning: *Solution "Center of Excellence - Core components" imported successfully with warnings: Flow client error returned with status code Bad Request*. This warning message can be ignored, and you can proceed with opening the **Setup Wizard** app to continue the setup and configuration of the solution.
+> After importing your solution, you might see this warning: *Solution "Center of Excellence - Core components" imported successfully with warnings: Flow client error returned with status code Bad Request*. You can ignore this warning message. Proceed with opening the **Setup Wizard** app to continue the setup and configuration of the solution.
 
-## Set up the Inventory components using the Setup Wizard
+## Set up the Inventory components by using the Setup Wizard
 
 Use the Setup Wizard to quickly configure inventory components for the CoE Starter Kit.
 
 ### Open the Setup Wizard to complete the configuration
 
-1. After the solution import is successful, open the **Center of Excellence - Core Components** solution.
+1. After the solution import succeeds, open the **Center of Excellence - Core Components** solution.
 1. Open the **CoE Setup and Upgrade Wizard** app.
-1. This app guides you through the configuration steps.
+1. Follow the steps in this app for configuration.
    :::image type="content" source="media\coesetupwizard.png" alt-text="Screenshot that shows the CoE Setup Wizard." lightbox="media\coesetupwizard.png":::
 
 #### Troubleshooting
 
-If you see an *Error Loading Control* warning when opening the Setup Wizard app, it means some of the flows required to run the wizard couldn't be turned on automatically. Navigate to the solution and turn on the following flows manually:
+If you see an *Error Loading Control* warning when opening the Setup Wizard app, it means some of the flows required to run the wizard couldn't be turned on automatically. Go to the solution and turn on the following flows manually:
 
 - SetupWizard > GetCurrentEnvironment
 - SetupWizard > GetTenantID
 - SetupWizard > GetUserDetails
 
-Once turned on, you can return to the Setup Wizard to continue the setup.
+After you turn on these flows, return to the Setup Wizard to continue the setup.
 
 ### Choose data source
 
-You can choose your data source for inventory. **Cloud flows** is the default and currently recommended path for gathering your inventory.
+Choose your data source for inventory. **Cloud flows** is the default and currently recommended path for gathering your inventory.
 
-However, you might wish to experiment with the **Data Export (Preview)** data source. To experiment, use the [Data Export setup](setup-dataexport.md) instructions when you get to the **Configure dataflows** page.
+However, you might want to experiment with the **Data Export (Preview)** data source. To experiment, use the [Data Export setup](setup-dataexport.md) instructions when you get to the **Configure dataflows** page.
 
 :::image type="content" source="media\setupWizard-datasource.png" alt-text="Screenshot that shows the Setup Wizard data source selection." lightbox="media\setupWizard-datasource.png":::
 
 ## Set up the CoE Admin Command Center app
 
 > [!IMPORTANT]
-> Only complete these steps if you want to review Power Platform–related [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates in the **[CoE Admin Command Center](core-components.md#coe-admin-command-center)** canvas app. The **CoE Admin Command Center** app can be used without this configuration.
+> Only complete these steps if you want to review Power Platform–related [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates in the **[CoE Admin Command Center](core-components.md#coe-admin-command-center)** canvas app. You can use the **CoE Admin Command Center** app without this configuration.
 
 ### Create a Microsoft Entra app registration to connect to Microsoft Graph
 
 The [CoE Admin Command Center](core-components.md#coe-admin-command-center) connects to [Microsoft Graph API](/graph/api/serviceannouncement-list-messages) to get [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates.
 
-Using these steps, you set up the Entra app registration used in a cloud flow to connect to the Graph API. For more information, learn more at [Use the Microsoft Graph API](/graph/use-the-api).
+Use these steps to set up the Microsoft Entra app registration that a cloud flow uses to connect to the Graph API. For more information, see [Use the Microsoft Graph API](/graph/use-the-api).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 1. Go to **Microsoft Entra ID** > **App registrations**.
@@ -109,14 +109,14 @@ Using these steps, you set up the Entra app registration used in a cloud flow to
 1. Select **API Permissions** > **+ Add a permission**.
    :::image type="content" source="media\coe34.png" alt-text="Screenshot that shows API permissions." lightbox="media\coe34.png":::
 1. Select **Microsoft Graph** and configure permissions as follows:
-   1. Select **Application permissions**, and then select **ServiceMessage.Read.All**.
+   1. Select **Application permissions**, then select **ServiceMessage.Read.All**.
    1. Select **Add permissions**.
 1. Select **Grant Admin Consent for (your organization)**.
 1. Select **Certificates and secrets**.
 1. Select **+ New client secret**.
-1. Add a description and expiration (in line with your organization's policies), and then select **Add**.
+1. Add a description and expiration (in line with your organization's policies), then select **Add**.
 1. Copy and paste the **Secret** to a text document such as Notepad.
-1. Select **Overview** and copy and paste the application (client) ID value to the same text document. Be sure to make a note of which GUID is for which value.
+1. Select **Overview** and copy and paste the application (client) ID value to the same text document. Make sure you note which GUID corresponds to each value.
 
 ### Update environment variables
 
@@ -140,7 +140,7 @@ You can store the client secret either in plain text in the **Command Center - C
 
 If your CoE Starter Kit is installed in a *GCC High* or *DoD* tenant, update the **Authority** in HTTP action:
 
-1. Go to [make.powerautomate.com](https://make.powerautomate.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
+1. Go to [make.powerautomate.com](https://make.powerautomate.com), select **Solutions**, then open the **Center of Excellence - Core Components** solution to view the flows.
 1. Edit the **Command Center App > Get M365 Service Messages** flow.
 1. Update the **List serviceAnnouncements from Graph** action and change the **Authority** to `https://login.microsoftonline.us` for a GCC High or DoD tenant.
 1. **Save** this flow.
@@ -148,13 +148,13 @@ If your CoE Starter Kit is installed in a *GCC High* or *DoD* tenant, update the
 ## Set up Audit Logs solution
 
 > [!NOTE]
-> Only set up the Audit Log solution if you chose [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
+> Set up the Audit Log solution only if you chose [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
 
-The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users and launches) for apps. The CoE Starter Kit works without this flow. However, usage information, such as app launches and unique users, in the Power BI dashboard is blank. For more information, learn more at [collect audit logs using Office 365 Management API](setup-auditlog-http.md).
+The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users and launches) for apps. The CoE Starter Kit works without this flow. However, usage information, such as app launches and unique users, in the Power BI dashboard is blank. For more information, see [collect audit logs using Office 365 Management API](setup-auditlog-http.md).
 
 ## Set up the Power BI dashboard
 
-The CoE Power BI dashboard provides a holistic view with visualizations and insights into resources in your tenant: environments, apps, Power Automate flows, connectors, connection references, makers, and audit logs. Telemetry from the audit log is stored from the moment you set up the CoE Starter Kit. Over time, you can identify trends longer than 28 days. For more information, learn more at [Set up the Power BI dashboard](setup-powerbi.md).
+The CoE Power BI dashboard provides a holistic view with visualizations and insights into resources in your tenant: environments, apps, Power Automate flows, connectors, connection references, makers, and audit logs. Telemetry from the audit log is stored from the moment you set up the CoE Starter Kit. Over time, you can identify trends longer than 28 days. For more information, see [Set up the Power BI dashboard](setup-powerbi.md).
 
 ## Share apps with other admins
 
@@ -167,7 +167,7 @@ Share these apps with other Power Platform admins and assign them the **Power Pl
 
 Take a look at the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app, which is your central place to open all CoE Starter Kit apps.
 
-For more information, learn more at [Share an app from a production environment](faq.md#share-an-app-from-a-production-environment).
+For more information, see [Share an app from a production environment](faq.md#share-an-app-from-a-production-environment).
 
 ## Wait for flows to finish
 
@@ -192,7 +192,7 @@ This section includes the full list of environment variables that affect the inv
 > [!IMPORTANT]
 > You don't have to change the values during setup. However, you can change an environment variable that you configured during import or when you want to change a default value. To make sure the latest values are picked up, restart all flows after you change environment variables.
 
-Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
+Use environment variables to store application and flow configuration data with data specific to your organization or environment.
 
 | Name | Description | Default value |
 |------|-------------|---------------|
@@ -231,5 +231,5 @@ Environment variables are used to store application and flow configuration data 
 
 ## What's next?
 
-- Learn more at [Update the Center of Excellence (CoE) Starter Kit](after-setup.md).
-- Check out [Environment Request management components](core-components.md#environment-request-management-components), and the [Use governance components](governance-components.md) and [Use nurture components](nurture-components.md).
+- For more information, see [Update the Center of Excellence (CoE) Starter Kit](after-setup.md).
+- See [Environment Request management components](core-components.md#environment-request-management-components), [Use governance components](governance-components.md), and [Use nurture components](nurture-components.md).
