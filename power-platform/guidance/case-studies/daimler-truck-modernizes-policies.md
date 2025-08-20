@@ -36,7 +36,7 @@ Employees across the organization use the Policy Navigator app, achieving compan
 
 The app features an intuitive and user-focused interface. For everyday users, the Power Apps canvas app provides seamless navigation and self-service capabilities, enabling efficient interaction with corporate policies. Simultaneously, the Power Apps model-driven app offers a powerful backend for administrators to manage policy lifecycles and ensure governance compliance. These dual applications address both user accessibility and operational governance, creating a comprehensive solution tailored to diverse organizational needs.
 
-Cost efficiency is another key benefit of the Policy Navigator app. By using existing enterprise-wide Power Apps licenses, the app avoids additional licensing costs. It replaces the former system with a scalable and agile solution, driving cost savings. Additionally, its intuitive design has led to a higher adoption rate than previous solutions.  
+Cost efficiency is another benefit of the Policy Navigator app. By using existing enterprise-wide Power Apps licenses, the app avoids additional licensing costs. It replaces the former system with a scalable and agile solution, driving cost savings. Additionally, its intuitive design has led to a higher adoption rate than previous solutions.  
 
 ## Components
 
