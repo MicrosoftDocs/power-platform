@@ -26,7 +26,7 @@ The flows and dataflows in this solution sync all your resources into tables. Th
 >
 > - If you try [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory, we recommend that you don't depend on this feature yet and test it in a dedicated test environment. Trying out this feature helps us validate that the feature is what you need and that we're not introducing unintended side effects.
 > - Your feedback is critical to this process. Post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
-> - Setting up the inventory components by using [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) is only supported through the [setup wizard](#set-up-the-inventory-components-using-the-setup-wizard). Manual setup instructions are available after the experimental preview.
+> - Setting up the inventory components by using [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) is only supported through the [setup wizard](#set-up-the-inventory-components-by-using-the-setup-wizard). Manual setup instructions are available after the experimental preview.
 
 ## Import the Creator Kit and make connections
 
