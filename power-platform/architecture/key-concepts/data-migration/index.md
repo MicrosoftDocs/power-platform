@@ -1,5 +1,5 @@
 ---
-title: "CRM migration to Dataverse: Key insights and best practices"
+title: "CRM data migration to Dataverse: Key insights and best practices"
 description: Learn how to move data from external CRM systems to Microsoft Dataverse, overcome common challenges, and ensure business continuity.
 #customer intent: As a business analyst, I want to understand the challenges of migrating CRM data to Dataverse so that I can plan a smooth transition.
 author: manuelap-msft
@@ -15,7 +15,7 @@ ms.custom:
   - ai-seo-date:05/21/2025
 ---
 
-# CRM migration to Dataverse: Key insights and best practices
+# CRM data migration to Dataverse: Key insights and best practices
 
 Migrating data from external customer relationship management (CRM) systems to Microsoft Dataverse can range from simple to highly complex, depending on the source data. Success depends on thorough planning and preparation to address common challenges such as schema mismatches, data volume, relationship complexity, and system dependencies. Maintaining data integrity, consistency, and security is essential to ensure business continuity.
 

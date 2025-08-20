@@ -168,16 +168,15 @@ Elastic tables are best suited for bulk imports with variable schema.
 
 ### Recommended data types for elastic tables during data migration
 
-1. **Raw ingestion data**
-    - Source logs, sensor feeds, or bulk exports from legacy systems. For example, customer interaction logs from a legacy ERP, old email threads, and support tickets from the previous system.
-1. **Semi-structured records**
-    - Data with optional or evolving fields that don't fit a rigid schema. For example, customer feedback forms with optional fields, or event registration forms with custom notes or tags.
-1. **Staging data for validation**
-    - A temporary holding zone before syncing data to relational tables. For example, imported lead data awaiting deduplication and validation before being added to the main Leads table.
-1. **Time-sensitive or expiring data**
-    - Use TTL (Time-to-Live) for auto-deletion of temporary CRM records. For example, promotional discount codes tied to a campaign, one-time access links for customer surveys or onboarding portals, and temporary survey responses.
-1. **Partitioned bulk data**
-    - Partition data by ID or category to improve performance and scalability. For example, partition by account ID or region ID during bulk data migration, or segment customer activity logs by campaign ID for analytics.
+Elastic tables are ideal for specific data types. 
+ 
+| Data type                     | Description                                                                                |
+|-------------------------------|--------------------------------------------------------------------------------------------|
+| Raw ingestion data            | Source logs, sensor feeds, or bulk exports from legacy systems. For example, customer interaction logs from a legacy ERP, old email threads, and support tickets from the previous system.                 |
+| Semi-structured records       | Data with optional or evolving fields that don't fit a rigid schema. For example, customer feedback forms with optional fields, or event registration forms with custom notes or tags.                      |
+| Staging data for validation   | A temporary holding zone before syncing data to relational tables. For example, imported lead data awaiting deduplication and validation before being added to the main Leads table.                      |
+| Time-sensitive or expiring data | Use TTL (Time-to-Live) for auto-deletion of temporary CRM records. For example, promotional discount codes tied to a campaign, one-time access links for customer surveys or onboarding portals, and temporary survey responses. |
+| Partitioned bulk data         | Partition data by ID or category to improve performance and scalability. For example, partition by account ID or region ID during bulk data migration, or segment customer activity logs by campaign ID for analytics. |
 
 ### Data types unsuitable for elastic tables
 
