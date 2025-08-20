@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/security/overview.md",
+      "redirect_url": "power-platform/admin/security/security-overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/dlp-resource-exemption.md",
       "redirect_url": "power-platform/admin/wp-data-loss-prevention",
       "redirect_document_id": "false"
@@ -1612,6 +1617,11 @@
     {
       "source_path": "power-platform/guidance/adoption/sharing-alerts.md",
       "redirect_url": "/power-platform/guidance/adoption/reactive-governance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/white-papers/managed-environment-activation.md",
+      "redirect_url": "/power-platform/guidance/adoption/admin-best-practices",
       "redirect_document_id": false
     }
   ]
