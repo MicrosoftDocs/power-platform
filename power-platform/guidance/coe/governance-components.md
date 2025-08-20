@@ -57,7 +57,7 @@ This flow sends an email to users who have chatbots in the tenant that aren't co
 
 - The chatbot has business justification details and an indication of high business impact, but no mitigation plan is submitted to the attachments field.
 
-You can customize the criteria for when makers are asked to provide a business justification by using [environment variables](faq.md#update-environment-variables). Default values are provided.
+You can customize the criteria for when makers are asked to provide a business justification by using [Update environment variables](faq.md#update-environment-variables). Default values are provided.
 
 You can customize the email that the flow sends out. By default, it looks like the following image:
 
@@ -69,9 +69,9 @@ The Governance components solution includes several apps that support compliance
 
 #### Developer Compliance Center
 
-Use this app in the [auditing process](example-processes.md) to check whether you comply with app compliance requirements for apps, flows, chatbots, or custom connectors you own. Use it to submit information to the CoE admins as business justification to stay in compliance.
+Use this app in the [App auditing process](example-processes.md) to check whether you comply with app compliance requirements for apps, flows, chatbots, or custom connectors you own. Use it to submit information to the CoE admins as business justification to stay in compliance.
 
-**Permission**: Share this app with your app makers as soon as you're using the app auditing process. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, then share this app with the security group.
+**Permission**: Share this app with your app makers as soon as you're using the app auditing process. If you intend to use this process, modify the [Set up nurture components](setup-nurture-components.md) flow to add users to a security group, then share this app with the security group.
 
 **Prerequisite**: This app uses Microsoft Dataverse. If you install this solution in a production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
@@ -227,7 +227,7 @@ It recommends that the app owner backs up the app if they want to restore it lat
 
 This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
-**Customize**: By default, this flow assigns approvals to the app owner. To test in a debug environment without involving users, update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**. The admin account then receives the approvals.
+**Customize**: By default, this flow assigns approvals to the app owner. To test in a debug environment without involving users, update the [All environment variables](setup-governance-components.md#all-environment-variables) to **No**. The admin account then receives the approvals.
 
 ![Inactivity notifications v2 - workflow for Apps.](media/archivalFlow-Apps.png "Inactivity notifications v2 - workflow for Apps")
 
@@ -239,7 +239,7 @@ It recommends that the flow owner backs up the app if they want to restore it la
 
 This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
-**Customize**: By default, this flow assigns approvals to the flow owner. To test in a debug environment without involving users, update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**. The admin account then receives the approvals.
+**Customize**: By default, this flow assigns approvals to the flow owner. To test in a debug environment without involving users, update the [All environment variables](setup-governance-components.md#all-environment-variables) to **No**. The admin account then receives the approvals.
 
 ![Inactivity notifications - workflow for Flows.](media/archivalFlow-Flows.png "Inactivity notifications v2 - workflow for Flows")
 
@@ -311,11 +311,11 @@ If the reason is sound, they can choose to exempt the object from future runs an
 
 This flow runs daily and checks whether new environments of type [Microsoft Teams](../../admin/about-teams-environment.md) are created. Team owners who create Microsoft Teams environments receive an adaptive card via Teams that prompts them to provide a business justification.
 
-Additionally, this flow sends a welcome email to new team owners to provide them with further information about their environment. This email includes a link to the policy documentation you set up as part of [configuring the CoE Settings](setup-core-components.md).
+Additionally, this flow sends a welcome email to new team owners to provide them with further information about their environment. This email includes a link to the policy documentation you set up as part of [Set up inventory components](setup-core-components.md).
 
 Save a copy of this flow if you want to change the wording in the emails or adaptive cards.
 
-Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](teams-governance.md)
+Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Dataverse for Teams environment management](teams-governance.md)
 
 #### Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
 
@@ -336,11 +336,11 @@ This flow runs weekly and deletes environments that:
 Environments are deleted from the tenant and marked as deleted in the Environment table of the CoE Starter Kit. You can view deleted environments in the [Power Platform Admin View](core-components.md).
 
 > [!IMPORTANT]
-> You can recover a recently deleted environment (within seven days of deletion) by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment. Learn more in [Recover environment](../../admin/recover-environment.md#power-platform-admin-center).
+> You can recover a recently deleted environment (within seven days of deletion) by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment. Learn more in [Power Platform admin center](../../admin/recover-environment.md#power-platform-admin-center).
 
 Save a copy of this flow if you want to make any changes to the criteria for when environments are deleted.
 
-Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](teams-governance.md)
+Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Dataverse for Teams environment management](teams-governance.md)
 
 #### Microsoft Teams Admin \| Send Reminder Mail
 
