@@ -20,7 +20,7 @@ This article helps you upgrade the CoE Starter Kit. It provides guidance on:
 - How to test the latest release.
 
 > [!NOTE]
-> If you're setting up the CoE Starter Kit for the first time, check out our [setup instructions](setup.md). If you want to extend the CoE Starter Kit with your own customizations, see our guidance for [extending the CoE Starter Kit](modify-components.md).
+> If you're setting up the CoE Starter Kit for the first time, check out our [Set up the CoE Starter Kit](setup.md). If you want to extend the CoE Starter Kit with your own customizations, see our guidance for [Extend and customize CoE Starter Kit components](modify-components.md).
 
 > [!IMPORTANT]
 > We recommend upgrading the CoE Starter Kit solution at least **every three months**. With the fast pace of change for Microsoft Power Platform, leaving updates longer than three months could result in unexpected issues when you update.
@@ -94,7 +94,7 @@ Before installing the upgrade, check that the solution is in a healthy state to 
 
 Making any changes to flows or apps in the solution creates an unmanaged layer. Components with unmanaged layers don't receive updates until you remove that unmanaged layer. Learn more in [Solution layers](/power-platform/alm/solution-layers-alm).
 
-All flows with *Admin \| Sync Template v* in the name are responsible for collecting your tenant's inventory and building the foundation that the CoE Starter Kit relies on. Don't customize these flows. If you have extra requirements for what inventory to collect, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=&labels=coe-starter-kit%2Cenhancement&template=3-coe-starter-kit-feature.yml&title=%5BCoE+Starter+Kit+-+Feature%5D%3A+FEATURE+TITLE) or create your own flow. Learn more in [Extending the CoE Starter Kit](modify-components.md).
+All flows with *Admin \| Sync Template v* in the name are responsible for collecting your tenant's inventory and building the foundation that the CoE Starter Kit relies on. Don't customize these flows. If you have extra requirements for what inventory to collect, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=&labels=coe-starter-kit%2Cenhancement&template=3-coe-starter-kit-feature.yml&title=%5BCoE+Starter+Kit+-+Feature%5D%3A+FEATURE+TITLE) or create your own flow. Learn more in [Extend and customize CoE Starter Kit components](modify-components.md).
 
 Before installing the upgrade, remove unmanaged layers from the inventory flows.
 
@@ -117,9 +117,9 @@ You can check for unmanaged layers on the inventory flows by using the [Coe Admi
 
 You won't receive updates for any cloud flow or canvas app that you changed until you remove the unmanaged layer.
 
-1. To keep your changes, learn more in [extend the CoE Starter Kit](modify-components.md).
+1. To keep your changes, learn more in [Extend and customize CoE Starter Kit components](modify-components.md).
  
-1. To remove your changes, delete all unmanaged layers before the update. A component likely changed if the modified date is more recent than the latest install. To avoid creating unmanaged layers, learn more in [extending the CoE Starter Kit](modify-components.md).
+1. To remove your changes, delete all unmanaged layers before the update. A component likely changed if the modified date is more recent than the latest install. To avoid creating unmanaged layers, learn more in [Extend and customize CoE Starter Kit components](modify-components.md).
    
    1. Select the ellipsis (**...**) > **See solution layers**.
         
@@ -139,9 +139,9 @@ After you remove unmanaged layers, import the new solution version:
  
    ![Select upgrade to install the new solution version](media/coe-upgrade1.png "Select upgrade to install the new solution version")
     
-1. If the upgrade adds new environment variables or connection references, establish connections and update environment variable values. You can find the expected values in our [setup instructions](setup-core-components.md).
+1. If the upgrade adds new environment variables or connection references, establish connections and update environment variable values. You can find the expected values in our [Set up inventory components](setup-core-components.md).
  
-1. Wait for the upgrade to finish. This process can take up to 15 minutes. During the upgrade, the new version is installed first and then the old version is deleted. While the upgrade is processing, you might see two solutions with the same name in your solution explorer. Check the [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
+1. Wait for the upgrade to finish. This process can take up to 15 minutes. During the upgrade, the new version is installed first and then the old version is deleted. While the upgrade is processing, you might see two solutions with the same name in your solution explorer. Check the [solution history](/power-apps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
  
    ![Check the solution history](/power-platform/guidance/coe/media/coe-upgrade3.png "Check the solution history")
     
@@ -149,7 +149,7 @@ After you remove unmanaged layers, import the new solution version:
  
    ![Check that the end time for the solution import is not empty](/power-platform/guidance/coe/media/coe-upgrade2.png "Check that the end time for the solution import is not empty")
     
-1. The [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) also shows if the upgrade fails and why. [Raise an issue](https://aka.ms/coe-starter-kit-issues) and [provide the solution operation error details](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
+1. The [solution history](/power-apps/maker/data-platform/solution-history#view-solution-history) also shows if the upgrade fails and why. [Raise an issue](https://aka.ms/coe-starter-kit-issues) and [provide the solution operation error details](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
  
    ![View solution operation error details](/power-platform/guidance/coe/media/coe-upgrade4.png "View solution operation error details")
 
@@ -157,7 +157,7 @@ After you remove unmanaged layers, import the new solution version:
 1. Open the **CoE Setup and Upgrade Wizard** app.
 1. This app provides a guided step-by-step experience through the configuration steps. During an upgrade, it shows the solution history, any components with unmanaged layers, and any new apps, flows, and environment variables that are added during this upgrade.
 
-1. When you finish this step, move on to [testing](#test-strategy).
+1. When you finish this step, move on to [Test strategy](#test-strategy).
 
 ## Update the Audit Log solution
 
