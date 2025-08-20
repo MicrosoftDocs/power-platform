@@ -478,11 +478,13 @@
                       href: cmk-migrate-from-byok.md
                     - name: Encrypt column-level data
                       href: data-encryption.md
+                - name: Advanced connector policies (preview)
+                  href: advanced-connector-policies.md
                 - name: Data policies
                   items:
                     - name: Data policies for Managed Environments
                       href: managed-environment-data-policies.md
-                    - name: Data loss prevention (DLP) policies
+                    - name: Data policies
                       href: wp-data-loss-prevention.md
                     - name: Known limitations
                       href: dlp-known-issues.md
@@ -498,8 +500,6 @@
                           href: connector-off-by-default.md
                         - name: Design-time versus runtime
                           href: dlp-impact-policies-apps-flows.md
-                        - name: Exempt apps and flows
-                          href: dlp-resource-exemption.md
                     - name: Certified connectors
                       items:
                         - name: Connector classification
@@ -606,8 +606,6 @@
                   items:
                     - name: Configure content security policy
                       href: content-security-policy.md
-                - name: Advanced connector policies (preview)
-                  href: advanced-connector-policies.md
                 - name: Configure column-level security
                   items:
                     - name: Column-level security
@@ -766,7 +764,7 @@
               items:
                 - name: Recover storage space
                   href: free-storage-space.md
-                - name: Clean up System Job and Process Log tables
+                - name: Delete completed system jobs and process log
                   href: cleanup-asyncoperationbase-table.md
             - name: Finance and Operations storage capacity
               href: finance-operations-storage-capacity.md
@@ -884,6 +882,8 @@
           items:
             - name: Integrate data into Dataverse
               href: data-integrator.md
+            - name: Migrate the dual-write app
+              href: app-migration-dual-write.md
         - name: Data sources and gateway clusters
           items:
             - name: About on-premises gateway
@@ -1121,20 +1121,22 @@
               href: unified-experience/finance-operations-apps-overview.md
             - name: Administration for partners and systems implementers
               href: unified-experience/partners-systems-implementers.md
-            - name: "Tutorial: Provision a new environment with an ERP-based template"
-              href: unified-experience/tutorial-deploy-new-environment-with-erp-template.md
-            - name: "Tutorial: Install the Finance and Operations Provisioning apps"
-              href: unified-experience/tutorial-install-finance-operations-provisioning-app.md
-            - name: "Tutorial: Update the Finance and Operations Provisioning app"
-              href: unified-experience/tutorial-update-finance-operations-provisioning-app.md
-            - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
-              href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
-            - name: "Tutorial: Perform a transaction-less copy between environments"
-              href: unified-experience/tutorial-perform-transactionless-copy.md
-            - name: "Tutorial: Back up and restore unified environment"
-              href: unified-experience/tutorial-backup-restore-unified-environment.md
             - name: Admin trials for finance and operations apps
               href: unified-experience/admin-trials.md
+            - name: Tutorials
+              items:
+                - name: "Tutorial: Provision a new environment with an ERP-based template"
+                  href: unified-experience/tutorial-deploy-new-environment-with-erp-template.md
+                - name: "Tutorial: Install the Finance and Operations Provisioning apps"
+                  href: unified-experience/tutorial-install-finance-operations-provisioning-app.md
+                - name: "Tutorial: Update the Finance and Operations Provisioning app"
+                  href: unified-experience/tutorial-update-finance-operations-provisioning-app.md
+                - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
+                  href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
+                - name: "Tutorial: Perform a transaction-less copy between environments"
+                  href: unified-experience/tutorial-perform-transactionless-copy.md
+                - name: "Tutorial: Back up and restore unified environment"
+                  href: unified-experience/tutorial-backup-restore-unified-environment.md
         - name: Performance tuning and optimization
           items:
             - name: Overview

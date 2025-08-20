@@ -1,0 +1,311 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API - connectivity",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
+    "version": "2022-03-01-preview"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/connectivity/environments/{environmentId}/connectors": {
+      "get": {
+        "tags": [
+          "Connectors"
+        ],
+        "summary": "List connectors in environment.",
+        "description": "Retrieves a list of connectors in the specified environment.",
+        "operationId": "ListConnectors",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "ID of the environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$filter",
+            "description": "Filter query to specify the environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of connectors in the specified environment.",
+            "schema": {
+              "$ref": "#/definitions/ListConnectorsResponse"
+            }
+          }
+        }
+      }
+    },
+    "/connectivity/environments/{environmentId}/connectors/{connectorId}": {
+      "get": {
+        "tags": [
+          "Connectors"
+        ],
+        "summary": "Get connector by ID.",
+        "description": "Retrieves a specific connector by ID in the specified environment.",
+        "operationId": "GetConnectorById",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "ID of the environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "connectorId",
+            "description": "ID of the connector.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$filter",
+            "description": "Filter query to specify the environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A specific connector in the specified environment.",
+            "schema": {
+              "$ref": "#/definitions/GetConnectorByIdResponse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ListConnectorsResponse": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GetConnectorByIdResponse"
+          }
+        }
+      }
+    },
+    "GetConnectorByIdResponse": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "shared_powerplatformadminv2"
+        },
+        "id": {
+          "type": "string",
+          "example": "/providers/Microsoft.PowerApps/apis/shared_powerplatformadminv2"
+        },
+        "type": {
+          "type": "string",
+          "example": "Microsoft.PowerApps/apis"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "displayName": {
+              "type": "string",
+              "example": "Power Platform for Admins V2"
+            },
+            "iconUri": {
+              "format": "uri",
+              "type": "string",
+              "example": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/v1.0.1758/1.0.1758.4260/powerplatformadminv2/icon.png"
+            },
+            "iconBrandColor": {
+              "type": "string",
+              "example": "#000000"
+            },
+            "apiEnvironment": {
+              "type": "string",
+              "example": "Shared"
+            },
+            "isCustomApi": {
+              "type": "boolean",
+              "example": false
+            },
+            "blobUrisAreProxied": {
+              "type": "boolean",
+              "example": false
+            },
+            "runtimeUrls": {
+              "type": "array",
+              "items": {
+                "format": "uri",
+                "type": "string"
+              },
+              "example": [
+                "https://msmanaged-na.azure-apim.net/apim/powerplatformadminv2"
+              ]
+            },
+            "primaryRuntimeUrl": {
+              "format": "uri",
+              "type": "string",
+              "example": "https://msmanaged-na.azure-apim.net/apim/powerplatformadminv2"
+            },
+            "doNotUseApiHubNetRuntimeUrl": {
+              "format": "uri",
+              "type": "string",
+              "example": "https://msmanaged-na.azure-apim.net/apim/powerplatformadminv2"
+            },
+            "metadata": {
+              "type": "object",
+              "properties": {
+                "source": {
+                  "type": "string",
+                  "example": "marketplace"
+                },
+                "brandColor": {
+                  "type": "string",
+                  "example": "#000000"
+                },
+                "allowSharing": {
+                  "type": "boolean",
+                  "example": true
+                },
+                "useNewApimVersion": {
+                  "type": "string",
+                  "example": "true"
+                },
+                "version": {
+                  "type": "object",
+                  "properties": {
+                    "previous": {
+                      "type": "string",
+                      "example": "v1.0.1756"
+                    },
+                    "current": {
+                      "type": "string",
+                      "example": "v1.0.1758"
+                    }
+                  }
+                }
+              }
+            },
+            "capabilities": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "actions",
+                "triggers"
+              ]
+            },
+            "interfaces": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "revisions": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "object",
+                      "properties": {
+                        "baseUrl": {
+                          "type": "string",
+                          "example": "/"
+                        },
+                        "status": {
+                          "type": "string",
+                          "example": "Production"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "description": {
+              "type": "string",
+              "example": "Unified connector for all administrative capabilities in Microsoft Power Platform."
+            },
+            "createdTime": {
+              "format": "date-time",
+              "type": "string",
+              "example": "2016-12-10T01:36:29.9852880+00:00"
+            },
+            "changedTime": {
+              "format": "date-time",
+              "type": "string",
+              "example": "2025-07-01T00:01:16.2089028+00:00"
+            },
+            "releaseTag": {
+              "type": "string",
+              "example": "Production"
+            },
+            "tier": {
+              "type": "string",
+              "example": "Premium"
+            },
+            "publisher": {
+              "type": "string",
+              "example": "Microsoft"
+            },
+            "rateLimit": {
+              "type": "integer",
+              "example": 0
+            },
+            "apiVersion": {
+              "type": "string",
+              "example": "None"
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "scopes": {
+        ".default": ".default"
+      },
+      "description": "Microsoft Entra ID OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [
+        ".default"
+      ]
+    }
+  ]
+}

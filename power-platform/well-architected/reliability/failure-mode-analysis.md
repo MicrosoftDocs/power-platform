@@ -4,7 +4,7 @@ description: Learn how to identify potential failure points within your Power Pl
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -138,7 +138,7 @@ Power Platform resources log activities in the [Microsoft Purview compliance por
 - [Copilot Studio](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Power Pages](/power-platform/admin/logging-power-pages)
 - [Power Platform connectors](/power-platform/admin/connector-events-power-platform)
-- [Data loss prevention](/power-platform/admin/dlp-activity-logging)  
+- [Data policy activity logging](/power-platform/admin/dlp-activity-logging)  
 - [Power Platform administrative logs](/power-platform/admin/admin-activity-logging)
 - [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 

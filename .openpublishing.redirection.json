@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/security/overview.md",
+      "redirect_url": "power-platform/admin/security/security-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/dlp-resource-exemption.md",
+      "redirect_url": "power-platform/admin/wp-data-loss-prevention",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/add-teams-users-field-security-profile.md",
       "redirect_url": "field-level-security#add-teams-or-users-to-a-column-security-profile-to-control-access",
       "redirect_document_id": "false"
@@ -1807,6 +1817,8 @@
     {
       "source_path": "power-platform/guidance/coe/release-notes/theming-1.2.md",
       "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "source_path": "power-platform/guidance/white-papers/managed-environment-activation.md",
+      "redirect_url": "/power-platform/guidance/adoption/admin-best-practices",
       "redirect_document_id": false
     }
   ]

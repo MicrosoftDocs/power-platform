@@ -3,11 +3,9 @@ title: Center of Excellence (CoE) command line interface (CLI) overview (Depreca
 description: Learn how to automate setup and administration tasks for the CoE Starter Kit using command-line tools.
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.custom:
-  - ai-gen-docs-bap
-  - ai-gen-description
-  - ai-seo-date:08/07/2025
-ms.date: 08/07/2025
+ms.custom: ""
+ms.date: 08/20/2025
+ms.subservice: guidance-toolkit
 ms.topic: overview
 ms.reviewer: jhaskett-msft
 search.audienceType:
