@@ -4,7 +4,7 @@ description: Administer and manage a Microsoft Dataverse for Teams environment
 author: paulliew
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/30/2025
+ms.date: 08/20/2025
 ms.subservice: admin
 ms.author: matp
 ms.reviewer: ellenwehrle
@@ -325,7 +325,7 @@ Microsoft offers a solution that applies a data policy to all Teams environments
 Follow these steps to apply a data policy:
 
 1. Choose or create the policy that you want applied to your Teams environments. This policy must be marked to apply to specific environments, which can be done as follows: 
-   - In [PowerShell](powerapps-powershell.md#create-a-dlp-policy), make sure its `environmenType` is `OnlyEnvironments`. 
+   - In [PowerShell](powerapps-powershell.md#create-a-data-policy), make sure its `environmenType` is `OnlyEnvironments`. 
    - In the [web app](prevent-data-loss.md), make sure the scope is set to multiple environments. 
 
 You need to add at least one environment to save your policy. Any environments you add now get overridden by the PowerShell function, which automatically adds the Teams environments to the policy. 
