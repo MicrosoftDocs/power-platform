@@ -20,7 +20,7 @@ This article helps you upgrade the CoE Starter Kit. It provides guidance on:
 - How to test the latest release.
 
 > [!NOTE]
-> If you're setting up the CoE Starter Kit for the first time, check out our [setup instructions](setup.md). If you're looking to extend the CoE Starter Kit with your own customizations, refer to our guidance for [extending the CoE Starter Kit](modify-components.md).
+> If you're setting up the CoE Starter Kit for the first time, check out our [setup instructions](setup.md). If you want to extend the CoE Starter Kit with your own customizations, see our guidance for [extending the CoE Starter Kit](modify-components.md).
 
 > [!IMPORTANT]
 > We recommend upgrading the CoE Starter Kit solution at least **every three months**. With the fast pace of change for Microsoft Power Platform, leaving updates longer than three months could result in unexpected issues when you update.
@@ -44,7 +44,7 @@ To view the details of a release:
 
    ![Screenshot showing where to find the latest release notes for the CoE Starter Kit](media/coe-upgrade5.png "View new releases on GitHub")
 
-Release notes contain a changelog of issues (bug fixes and enhancements) addressed by the new version. They might also include specific upgrade instructions that are new for the release. This information could cover turning on a new flow or notes on deprecated features.
+Release notes contain a changelog of issues (bug fixes and enhancements) that the new version addresses. They might also include specific upgrade instructions that are new for the release. This information could cover turning on a new flow or notes on deprecated features.
 
 #### Subscribe to CoE Starter Kit releases
 
