@@ -2,7 +2,7 @@
 title: Custom connector parity
 description: About allowing makers to create and share custom connectors.
 ms.topic: concept-article
-ms.date: 05/03/2024
+ms.date: 08/20/2024
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -33,7 +33,7 @@ Environment admins can find all the custom connectors in their environments, alo
 
 :::image type="content" source="media/dlp-environment-level-connector.png" alt-text="Environment admins can see all custom connectors in their environments, alongside prebuilt connectors, on the **Connectors** page in data policies.":::
 
-You can use data policy, PowerShell commands to set custom connectors into **Business**, **Non-Business**, and **Blocked** groups. More information: [Data policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)
+You can use data policy, PowerShell commands to set custom connectors into **Business**, **Non-Business**, and **Blocked** groups. More information: [Data policy commands](powerapps-powershell.md#data-policy-commands)
 
 ### Tenant-level data policies 
 
