@@ -17,7 +17,7 @@ search.audienceType:
 
 # Disable new connectors by default in GCC High and DoD
 
-All new connectors that are introduced by Microsoft and partners to the Power Platform are disabled by default for customers operating in the following US government clouds: Government Community Cloud - High (GCC High) and Department of Defencse (DoD). Administrators can review these new connectors before authorizing their use across the organization in the **Data policy** page of the Power Platform admin center. Connectors already published in GCC High and DoD remain enabled.
+All new connectors that are introduced by Microsoft and partners to the Power Platform are disabled by default for customers operating in the following US government clouds: Government Community Cloud - High (GCC High) and Department of Defense (DoD). Administrators can review these new connectors before authorizing their use across the organization in the **Data policy** page of the Power Platform admin center. Connectors already published in GCC High and DoD remain enabled.
 
 Power Platform and third parties continuously release new connectors and administrators can set a [default classification](dlp-connector-classification.md#default-data-group-for-new-connectors) for those connectors via its data policies. Depending on how these data policies are configured within the customer's tenant, new connectors can unintentionally become available to makers in certain environments without administrators approving their use. Such occurrences must be avoided in US government clouds where strict compliance is mandated. Administrators can rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
 
