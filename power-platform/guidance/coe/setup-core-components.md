@@ -18,9 +18,9 @@ The flows and dataflows in this solution sync all your resources into tables. Th
 
 ## Prerequisites
 
-1. Complete the [Get started](setup.md) article
-1. [Set up your environment](setup.md#create-your-environments).
-1. Sign in with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
+1. Complete the [Set up the CoE Starter Kit](setup.md) article
+1. [Create your environments](setup.md#create-your-environments).
+1. Sign in with the [Which identity should I use to install the CoE Starter Kit](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 
 > [!NOTE]
 >
@@ -44,7 +44,7 @@ Create these connections manually before installing the kit to ensure they're co
 
 1. Go to [Power Automate](https://make.powerautomate.com/).
 1. Select your CoE environment and go to **Data** > **Connections** > **+ New connection**.
-1. Create a connection for [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra ID Resource URI (Application ID URI)** to `https://graph.microsoft.com` for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
+1. Create a connection for [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra ID Resource URI (Application ID URI)** to `https://graph.microsoft.com` for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
 ### Import the core components solution
 
@@ -86,14 +86,14 @@ After you turn on these flows, return to the Setup Wizard to continue the setup.
 
 Choose your data source for inventory. **Cloud flows** is the default and currently recommended path for gathering your inventory.
 
-However, you might want to experiment with the **Data Export (Preview)** data source. To experiment, use the [Data Export setup](setup-dataexport.md) instructions when you get to the **Configure dataflows** page.
+However, you might want to experiment with the **Data Export (Preview)** data source. To experiment, use the [Data Export inventory setup](setup-dataexport.md) instructions when you get to the **Configure dataflows** page.
 
 :::image type="content" source="media\setupWizard-datasource.png" alt-text="Screenshot that shows the Setup Wizard data source selection." lightbox="media\setupWizard-datasource.png":::
 
 ## Set up the CoE Admin Command Center app
 
 > [!IMPORTANT]
-> Only complete these steps if you want to review Power Platform–related [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates in the **[CoE Admin Command Center](core-components.md#coe-admin-command-center)** canvas app. You can use the **CoE Admin Command Center** app without this configuration.
+> Only complete these steps if you want to review Power Platform–related [Track new and changed features in the Microsoft 365 Message center](/microsoft-365/admin/manage/message-center) updates in the **[CoE Admin Command Center](core-components.md#coe-admin-command-center)** canvas app. You can use the **CoE Admin Command Center** app without this configuration.
 
 ### Create a Microsoft Entra app registration to connect to Microsoft Graph
 
@@ -131,7 +131,7 @@ You can store the client secret either in plain text in the **Command Center - C
 |------|-------------|
 | Command Center - Application Client ID | The application client ID from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. |
 | Command Center - Client Secret | The application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
-| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable. This variable expects the Azure Key Vault reference, not the secret. For more information, learn more at [environment variables for Power Platform overview](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview). |
+| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable. This variable expects the Azure Key Vault reference, not the secret. For more information, learn more at [Environment variables for Power Platform overview](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview). |
 
 ### Modify the Command Center app for a GCC High or DoD tenant
 
@@ -167,7 +167,7 @@ Share these apps with other Power Platform admins and assign them the **Power Pl
 
 Take a look at the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app, which is your central place to open all CoE Starter Kit apps.
 
-For more information, see [Share an app from a production environment](faq.md#share-an-app-from-a-production-environment).
+Learn more in [Share an app from a production environment](faq.md#share-an-app-from-a-production-environment).
 
 ## Wait for flows to finish
 
@@ -202,7 +202,7 @@ Use environment variables to store application and flow configuration data with 
 |CoE System User ID | In the maker table, we store a user for a system with an ID. Storing the ID here gives you an easy reference, so you don't have to look up the ID often. | Not applicable |
 | Command Center - Application Client ID | (optional) The application client ID from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave this ID empty if you want to use the Azure Key Vault to store your client ID and secret. | Not applicable |
 | Command Center - Client Secret | (optional) The application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave this secret empty if you want to use Azure Key Vault to store your client ID and secret. | Not applicable |
-| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave this secret empty if you want to store your client ID in plain text in the Command Center - Client Secret environment variable. For more information, learn  at [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)| Not applicable |
+| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create a Microsoft Entra app registration to connect to Microsoft Graph](#create-a-microsoft-entra-app-registration-to-connect-to-microsoft-graph) step. Leave this secret empty if you want to store your client ID in plain text in the Command Center - Client Secret environment variable. Learn more in [Environment variables for Power Platform overview](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview)| Not applicable |
 | CompanyName | The name of the company to be displayed in various apps and emails. Currently, this name is only used by the [Video Hub](nurture-components.md#video-hub) app. | Not applicable |
 | DelayInventory | If *Yes*, runs a delay step to assist with the Dataverse load balancing. Only set to *No* for debugging. | Yes |
 | DelayObjectInventory | If *Yes*, runs a delay step in individual inventory flows to assist with data source throttling experienced by larger tenants. Set to *Yes* if you experience this type of throttling. | No |
@@ -231,5 +231,5 @@ Use environment variables to store application and flow configuration data with 
 
 ## What's next?
 
-- For more information, see [Update the Center of Excellence (CoE) Starter Kit](after-setup.md).
-- See [Environment Request management components](core-components.md#environment-request-management-components), [Use governance components](governance-components.md), and [Use nurture components](nurture-components.md).
+- [Update the Center of Excellence (CoE) Starter Kit](after-setup.md).
+- [Environment Request management components](core-components.md#environment-request-management-components), [Use governance components](governance-components.md), and [Use nurture components](nurture-components.md).
