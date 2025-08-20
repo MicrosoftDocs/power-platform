@@ -3,10 +3,16 @@ title: Enable Managed Environments
 description: Learn how to enable Managed Environments for Power Platform in the admin center or PowerShell.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/01/2025
+ms.date: 8/20/2025
 author: mikferland-msft
 ms.author: miferlan
-ms.contributor: ellenwehrle
+ms.contributors: 
+  - ellenwehrle
+  - syalandur
+contributors:
+  - miferland-msft
+  - ellenwehrle
+  - syalandur24
 ms.reviewer: sericks
 ms.subservice: admin
 ms.custom: "admin-security"
@@ -14,10 +20,6 @@ search.audienceType:
   - admin
 ---
 # Enable Managed Environments
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
-<!-- https://go.microsoft.com/fwlink/?linkid=2194805 and 2211456 -->
 
 Admins enable, disable, and edit Managed Environments in the Power Platform admin center. Admins can also use PowerShell to disable Managed Environments. This article explains the permissions you need to manage environments and the steps to get started in the Microsoft Power Platform admin center or with PowerShell.
 
@@ -36,11 +38,17 @@ To enable or edit Managed Environments, you need the Power Platform Administrato
 ### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Manage** and then in the manage pane, select **Environments**.
+
+1. In the navigation pane, select **Manage**, and then in the **Manage** pane, select **Environments**.
+
+1. Select the ellipsis next to an environment, and then in the menu, select **Enable Managed Environments**. If the environment is already managed, select **Edit Managed Environments**.
+
+1. Configure the settings, and then select **Enable** or **Save**.
 
 ### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
 1. In the navigation pane, select **Environments**.
 
 3. Select the check mark to the left of an environment.
@@ -49,7 +57,7 @@ To enable or edit Managed Environments, you need the Power Platform Administrato
 
 5. Configure the settings, and then select **Enable** or **Save**.
 
-:::image type="content" source="media/managed-environment-enable/managed-environments-enable.png" alt-text="Screenshot of the Enable Managed Environments panel you can access in the Power Platform admin center.":::
+:::image type="content" source="media/managed-environment-enable/managed-environments-edit.png" alt-text="Screenshot of the Edit Managed Environments panel you can access in the Power Platform admin center.":::
 
 Use the following settings to increase visibility and control for the selected environment.
 
