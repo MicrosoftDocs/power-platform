@@ -83,7 +83,7 @@ $UpdatedGovernanceConfiguration = [pscustomobject]@{
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentID> -UpdatedGovernanceConfiguration $UpdatedGovernanceConfiguration
 ```
 
-### See also
+### Related content
 
 - [Managed Environments overview](managed-environment-overview.md)
 - [Usage insights](managed-environment-usage-insights.md)
