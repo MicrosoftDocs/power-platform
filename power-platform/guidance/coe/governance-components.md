@@ -4,7 +4,7 @@ description: Learn how to use governance components for automating auditing and 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/19/2025
+ms.date: 08/20/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
