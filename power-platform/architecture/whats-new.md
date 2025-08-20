@@ -22,7 +22,7 @@ Get the latest info about what's new and what's changed in the Power Platform  a
 
 New in [Architecture key concepts](key-concepts/index.md):
 
-- [CRM migration to Dataverse: Key insights and best practices](key-concepts/data-migration/index.md)
+- [CRM data migration to Dataverse: Key insights and best practices](key-concepts/data-migration/index.md)
 
 ## July 2025
 
