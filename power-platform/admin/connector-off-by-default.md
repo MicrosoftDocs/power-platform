@@ -4,7 +4,7 @@ description: Describes how new connectors are disabled by default in GCC High an
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/25/2022
+ms.date: 08/20/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -19,17 +19,17 @@ search.audienceType:
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-All new connectors that are introduced by Microsoft and partners to the Power Platform will be disabled by default for customers operating in the following US government clouds: GCC High and DoD. Administrators will be able to review these new connectors before  authorizing their use across the organization in the **Data policy** page of the Power Platform admin center. Connectors already published in GCC High and DoD will remain enabled.
+All new connectors that are introduced by Microsoft and partners to the Power Platform are disabled by default for customers operating in the following US government clouds: GCC High and DoD. Administrators can review these new connectors before authorizing their use across the organization in the **Data policy** page of the Power Platform admin center. Connectors already published in GCC High and DoD remain enabled.
 
 Power Platform and third parties continuously release new connectors and administrators can set a [default classification](dlp-connector-classification.md#default-data-group-for-new-connectors) for those connectors via its data policies. Depending on how these data policies are configured within the customer's tenant, new connectors can unintentionally become available to makers in certain environments without administrators approving their use. Such occurrences must be avoided in US government clouds where strict compliance is mandated. Administrators can rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
 
 > [!NOTE]
 > - Custom connectors can't be disabled via this new data policy control.
-> - When a connector is disabled, the administrators can still classify and configure the connector in the data policies, but its use will be blocked in Power Apps and Power Automate.
+> - When a connector is disabled, the administrators can still classify and configure the connector in the data policies, but its use is blocked in Power Apps and Power Automate.
 
 ## Availability
 
-This feature is being progressively released, and all customers operating in GCC High and DoD will have access to it by the end of March 2022. Sign-up is not required.
+This feature is being progressively released, and all customers operating in GCC High and DoD have access to it at the end of March 2022. Sign-up isn't required.
 
 ## Workflow
 
