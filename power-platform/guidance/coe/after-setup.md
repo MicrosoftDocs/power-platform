@@ -141,7 +141,7 @@ After you remove unmanaged layers, import the new solution version:
     
 1. If the upgrade adds new environment variables or connection references, establish connections and update environment variable values. You can find the expected values in our [Set up inventory components](setup-core-components.md).
  
-1. Wait for the upgrade to finish. This process can take up to 15 minutes. During the upgrade, the new version is installed first and then the old version is deleted. While the upgrade is processing, you might see two solutions with the same name in your solution explorer. Check the [solution history](/power-apps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
+1. Wait for the upgrade to finish. This process can take up to 15 minutes. During the upgrade, the new version is installed first and then the old version is deleted. While the upgrade is processing, you might see two solutions with the same name in your solution explorer. [View solution history](/power-apps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
  
    ![Check the solution history](/power-platform/guidance/coe/media/coe-upgrade3.png "Check the solution history")
     
@@ -149,7 +149,7 @@ After you remove unmanaged layers, import the new solution version:
  
    ![Check that the end time for the solution import is not empty](/power-platform/guidance/coe/media/coe-upgrade2.png "Check that the end time for the solution import is not empty")
     
-1. The [solution history](/power-apps/maker/data-platform/solution-history#view-solution-history) also shows if the upgrade fails and why. [Raise an issue](https://aka.ms/coe-starter-kit-issues) and [provide the solution operation error details](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
+1. The [View solution history](/power-apps/maker/data-platform/solution-history#view-solution-history) also shows if the upgrade fails and why. [Raise an issue](https://aka.ms/coe-starter-kit-issues) and [provide the solution operation error details](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
  
    ![View solution operation error details](/power-platform/guidance/coe/media/coe-upgrade4.png "View solution operation error details")
 
