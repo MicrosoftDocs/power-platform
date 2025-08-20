@@ -29,7 +29,7 @@
               href: key-concepts/expressroute/checklist.md
         - name: Dataverse auditing
           href: key-concepts/dataverse-auditing.md
-        - name: CRM migration to Dataverse
+        - name: CRM data migration to Dataverse
           items:
             - name: Overview
               href: key-concepts/data-migration/index.md
