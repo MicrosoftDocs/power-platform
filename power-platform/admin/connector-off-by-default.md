@@ -32,7 +32,7 @@ This feature is being progressively released, and all customers operating in GCC
 
 ## Workflow
 
-### Step one: View the new connector
+### Step 1: View the new connector
 
 1. Select the **Data policies** tab where all data policies are located.
 
@@ -44,7 +44,7 @@ This feature is being progressively released, and all customers operating in GCC
 
 :::image type="content" source="media/enable-connector.png" alt-text="Enabled connector":::
 
-### Step two: Enable or disable the new connector
+### Step 2: Enable or disable the new connector
 
 1. If you want to keep the connector disabled, select **Mark as reviewed**.
 
@@ -56,7 +56,7 @@ This feature is being progressively released, and all customers operating in GCC
 
 :::image type="content" source="media/connector-mark-as-reviewed.png" alt-text="Disabled connector Mark as reviewed":::
 
-### Step three: View a disabled connector in a data policy
+### Step 3: View a disabled connector in a data policy
 
 1. Select a data policy in the **Data policies** page.
 
@@ -64,7 +64,7 @@ This feature is being progressively released, and all customers operating in GCC
 
 :::image type="content" source="media/disabled-connector.png" alt-text="Disabled connector":::
 
-### Step four: Attempt to add a disabled connector in a Power App
+### Step 4: Attempt to add a disabled connector in a Power App
 
 1. Open any Power App.
 
