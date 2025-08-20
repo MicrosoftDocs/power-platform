@@ -18,7 +18,7 @@ ms.custom:
 
 # Use core components
 
-The Center of Excellence (CoE) Starter Kit provides a set of core components to help you start to build a Center of Excellence (CoE). The components sync your resources into tables and build administrative apps on top of them to help you get more visibility into the apps, flows, and makers in your environment. For example, the [Manage Permissions app](#manage-permissions) helps with administrative tasks related to permission management. 
+The Center of Excellence (CoE) Starter Kit provides a set of core components to help you start building a Center of Excellence (CoE). The components sync your resources into tables and build administrative apps on top of them to help you get more visibility into the apps, flows, and makers in your environment. For example, the [Manage Permissions app](#manage-permissions) helps with administrative tasks related to permission management. 
 
 Learn how to get started in [Set up inventory components](setup-core-components.md). [Watch an overview](https://www.youtube.com/embed/l0kJQAeKthw) on how to use the core components solution. 
 
@@ -169,7 +169,7 @@ These tables are used to manage the CoE solution itself.
 
 These security roles only grant permissions to the custom tables but not to the environment as a whole. If you want users to view apps and flows in the environment, grant them access individually to each object. You can add them to another security role like **System Admin** or **Environment Maker**.
 
-Learn more in [Security roles and privileges](/power-platform/admin/security-roles-privileges).
+For more information, see [Security roles and privileges](/power-platform/admin/security-roles-privileges).
 
 - **Power Platform Admin SR** grants full access to create, read, write, and delete operations on the custom tables.
 
@@ -361,11 +361,11 @@ Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboa
 
 ### Environment Request Tables
 
-The following section describes the Environment Request Tables, outlining each table’s purpose in managing environment requests within the CoE Starter Kit.
+The following section describes the Environment Request Tables and explains each table's role in managing environment requests within the CoE Starter Kit.
 
-- **Environment Creation Request** is a request submitted by non-admins to create a new environment. This request has a many-to-many relationship with the Maker and PowerApps Connector tables.
+- **Environment Creation Request** is a request that non-admins submit to create a new environment. This request has a many-to-many relationship with the Maker and PowerApps Connector tables.
 
-- **DLP Impact Analysis** is an instance of an object, which violates a draft data policy.
+- **DLP Impact Analysis** is an instance of an object that violates a draft data policy.
 
 - **DLP Policy** is a data policy you can offer to makers for selection in an environment request.
 
