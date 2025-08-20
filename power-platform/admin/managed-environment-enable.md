@@ -35,8 +35,6 @@ To enable or edit Managed Environments, you need the Power Platform Administrato
 
 ## Enable or edit Managed Environments in the admin center
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 1. In the navigation pane, select **Manage**, and then in the **Manage** pane, select **Environments**.
@@ -44,18 +42,6 @@ To enable or edit Managed Environments, you need the Power Platform Administrato
 1. Select the ellipsis next to an environment, and then in the menu, select **Enable Managed Environments**. If the environment is already managed, select **Edit Managed Environments**.
 
 1. Configure the settings, and then select **Enable** or **Save**.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-1. In the navigation pane, select **Environments**.
-
-3. Select the check mark to the left of an environment.
-
-4. On the command bar, select **Enable Managed Environments**. If the environment is already managed, select **Edit Managed Environments**. 
-
-5. Configure the settings, and then select **Enable** or **Save**.
 
 :::image type="content" source="media/managed-environment-enable/managed-environments-edit.png" alt-text="Screenshot of the Edit Managed Environments panel you can access in the Power Platform admin center.":::
 
