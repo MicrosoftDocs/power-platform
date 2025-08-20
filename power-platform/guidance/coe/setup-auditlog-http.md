@@ -24,12 +24,12 @@ The audit log sync flows connect to the [Office 365 Management Activity API refe
 
 ## Prerequisites
 
-1. Complete the [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) articles.
-1. [Set up your environment](setup.md#create-your-environments).
-1. Sign in with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
+1. Complete the [Set up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) articles.
+1. [Create your environments](setup.md#create-your-environments).
+1. Sign in with the [Which identity should I use to install the CoE Starter Kit](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 
 > [!TIP]
-> Set up the audit log flows only if you chose [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
+> Set up the audit log flows only if you chose [What data source should I use for my Power Platform inventory](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
 
 ## Before you set up the audit log flows
 
@@ -82,7 +82,7 @@ Follow these steps to set up a Microsoft Entra app registration for an HTTP call
 
 ### Update environment variables
 
-Use environment variables to control whether the legacy Office 365 Management API or the Graph API is used. Use them to store the client ID and secret for the app registration. Depending on the type of cloud that you use for the HTTP action, use them to define audience and authority service endpoints. Your cloud type might be commercial, US Government Community Cloud (GCC), US GCC High, or US Department of Defense (DoD). Update the [environment variables](faq.md#update-environment-variables) before you turn on the flows.
+Use environment variables to control whether the legacy Office 365 Management API or the Graph API is used. Use them to store the client ID and secret for the app registration. Depending on the type of cloud that you use for the HTTP action, use them to define audience and authority service endpoints. Your cloud type might be commercial, US Government Community Cloud (GCC), US GCC High, or US Department of Defense (DoD). [Update environment variables](faq.md#update-environment-variables) before you turn on the flows.
 
 You can store the client secret in plain text in the **Audit Logs - Client Secret** environment variable. However, we don't recommend this approach. Instead, we recommend that you create and store the client secret in Azure Key Vault and reference it in the **Audit Logs - Client Azure Secret** environment variable.
 
