@@ -42,7 +42,7 @@ This feature is being progressively released, and all customers operating in GCC
 
 4. Connectors that have already been reviewed and authorized have the status **Reviewed**.
 
-:::image type="content" source="media/enable-connector.png" alt-text="Enabled connector":::
+    :::image type="content" source="media/enable-connector.png" alt-text="Enabled connector":::
 
 ### Step 2: Enable or disable the new connector
 
@@ -54,7 +54,7 @@ This feature is being progressively released, and all customers operating in GCC
 
 4. Select **Save**. The status of the connector is now set to **Reviewed**.
 
-:::image type="content" source="media/connector-mark-as-reviewed.png" alt-text="Disabled connector Mark as reviewed":::
+    :::image type="content" source="media/connector-mark-as-reviewed.png" alt-text="Disabled connector Mark as reviewed":::
 
 ### Step 3: View a disabled connector in a data policy
 
@@ -62,7 +62,7 @@ This feature is being progressively released, and all customers operating in GCC
 
 2. Consult the **Prebuilt connectors** tab. Connectors that are disabled have the status "Disabled".
 
-:::image type="content" source="media/disabled-connector.png" alt-text="Disabled connector":::
+    :::image type="content" source="media/disabled-connector.png" alt-text="Disabled connector":::
 
 ### Step 4: Attempt to add a disabled connector in a Power App
 
@@ -70,10 +70,10 @@ This feature is being progressively released, and all customers operating in GCC
 
 2. Add a connector that has been disabled. An error message appears.
 
-:::image type="content" source="media/disabled-connector-error-message.png" alt-text="Disabled connector error message":::
+    :::image type="content" source="media/disabled-connector-error-message.png" alt-text="Disabled connector error message":::
 
-> [!NOTE]
-> - This new tenant-level setting is also enforced on existing apps and flows that were built using connectors that are now disabled.
+    > [!NOTE]
+    > This new tenant-level setting is also enforced on existing apps and flows that were built using connectors that are now disabled.
 
 ## PowerShell support
 
