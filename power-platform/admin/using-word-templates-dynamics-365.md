@@ -3,7 +3,7 @@ title: Use Word templates to create standardized documents
 description: Learn how to create a standardized document with one click using Word templates in Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/02/2025
+ms.date: 08/20/2025
 author: chrisgarty
 ms.subservice: admin
 ms.custom: NewPPac
@@ -21,7 +21,7 @@ search.audienceType:
 
 <!-- legacy procedure -->
 
- After you create and import [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] templates into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), with one click users can generate standardized documents automatically populated with data. This feature has some special considerations you should know about to successfully create [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates.  
+  After you create and import [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] templates into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), users select one button to generate standardized documents automatically populated with data. This feature has some special considerations you need to know to successfully create [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates.
 
 > [!WARNING]
 > There's a known issue when creating templates in [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]. This topic contains information on how to prevent interactions that could potentially destabilize [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]. See [Important! A known issue and how to avoid it](#important-a-known-issue-and-how-to-avoid-it) to learn more.
@@ -76,14 +76,14 @@ There are two places in customer engagement apps where you can create a [!INCLUD
    ![Create a Word template from an entity.](../admin/media/word-template-create-from-entity.png "Create a Word template from an entity")  
 
 > [!TIP]
-> To delete personal document templates, do the following:  
+> To delete personal document templates, follow these steps:  
 >
 > 1. Select **Advanced Find** (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button.PNG "Screen shot of Advanced Find button")).  
 > 1. For *Look for*, select **Personal Document Templates**.  
 > 1. Select **Results** (!).  
 > 1. Choose the personal document template to delete and then select **Delete** (![Delete button.](../admin/media/nb-ua-r1-trashbin.png "Delete button")).  
 >
-> To update templates, delete the template and then upload an updated version of that template.
+> To update templates, delete the template and then upload an updated version.
 
 In the *Create template from CRM data* dialog box:
 
@@ -99,7 +99,7 @@ In the *Create template from CRM data* dialog box:
 
 ### What are 1:N, N:1, and N:N relationships?
 
- This screen requires an understanding of your customer engagement apps data structure. Your administrator or customizer can provide information about entity relationships. For admin content, see: [Entity relationships overview](/powerapps/maker/common-data-service/relationships-overview).  
+ This screen requires an understanding of your customer engagement apps data structure. Your admin or customizer can provide information about entity relationships. For admin content, see: [Entity relationships overview](/powerapps/maker/common-data-service/relationships-overview).  
 
  Here are some example relationships for the Account entity.  
 
@@ -112,14 +112,14 @@ In the *Create template from CRM data* dialog box:
  The relationships you select on this screen determine what entities and fields are available later when you define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template. Only select relationships you need to add data to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
 
 > [!NOTE]
-> To ensure documents download in a timely matter, there is an upper limit of 100 for the number of related records returned for each relationship. For example, if you're exporting a template for an account, and you want to include a list of its contacts, the document will return at most 100 of the account's contacts.  
+> To ensure documents download quickly, only return up to 100 related records for each relationship. For example, if you export a template for an account, and want to include a list of its contacts, the document will return at most 100 of the account's contacts.  
 
 ### Download the template
 
 Select **Download Template** on the **Select Entity** page to create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file on your local computer with the exported entity included as XML data.  
 
 > [!IMPORTANT]
-> Document template downloaded from one environment can only be used within that environment. environment to environment migration for Word or Excel templates isn't currently supported.
+> You can only use a document template in the environment where you downloaded it. Environment-to-environment migration for Word or Excel templates isn't supported.
 
 <a name="BKMK_EnableDeveloper"></a>
 
@@ -224,7 +224,7 @@ Use the XML Mapping Pane to define the [!INCLUDE[pn_ms_Word_short](../includes/p
 
    ![Set the table row to repeating.](../admin/media/word-template-set-table-row-repeating.png "Set the table row to repeating")  
 
-   When you use the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template in customer engagement apps to create a document, the table will populate with multiple rows of data.  
+   When you use the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template in customer engagement apps to create a document, the table populates with multiple rows of data.  
 
    When the template has the fields and formatting you want, save it and upload it into customer engagement apps.
 
