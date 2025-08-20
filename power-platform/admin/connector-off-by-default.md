@@ -17,15 +17,14 @@ search.audienceType:
 ---
 # Disable new connectors by default in GCC High and DoD
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 All new connectors that are introduced by Microsoft and partners to the Power Platform are disabled by default for customers operating in the following US government clouds: Government Community Cloud - High (GCC High) and Department of Defencse (DoD). Administrators can review these new connectors before authorizing their use across the organization in the **Data policy** page of the Power Platform admin center. Connectors already published in GCC High and DoD remain enabled.
 
 Power Platform and third parties continuously release new connectors and administrators can set a [default classification](dlp-connector-classification.md#default-data-group-for-new-connectors) for those connectors via its data policies. Depending on how these data policies are configured within the customer's tenant, new connectors can unintentionally become available to makers in certain environments without administrators approving their use. Such occurrences must be avoided in US government clouds where strict compliance is mandated. Administrators can rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
 
 > [!NOTE]
-> - Custom connectors can't be disabled via this new data policy control.
-> - When a connector is disabled, the administrators can still classify and configure the connector in the data policies, but its use is blocked in Power Apps and Power Automate.
+> Custom connectors can't be disabled with this new data policy control.
+> 
+> When a connector is disabled, administrators can still classify and configure the connector in the data policies, but its use is blocked in Power Apps and Power Automate.
 
 ## Availability
 
@@ -39,9 +38,9 @@ This feature is being progressively released, and all customers operating in GCC
 
 2. Select **Enable connectors** in the toolbar.
 
-3. New connectors (those that haven’t been reviewed) have the status "Mark as reviewed".
+3. New connectors (those that haven’t been reviewed) have the status **Mark as reviewed**.
 
-4. Connectors that have already been reviewed and authorized have the status "Reviewed".
+4. Connectors that have already been reviewed and authorized have the status **Reviewed**.
 
 :::image type="content" source="media/enable-connector.png" alt-text="Enabled connector":::
 
@@ -51,9 +50,9 @@ This feature is being progressively released, and all customers operating in GCC
 
 2. If you want to enable the connector, select the **Enable** toggle.
 
-3. In both cases, the status is changed to "Reviewing".
+3. In both cases, the status is changed to **Reviewing**.
 
-4. Select **Save**. The status of the connector is now set to "Reviewed".
+4. Select **Save**. The status of the connector is now set to **Reviewed**.
 
 :::image type="content" source="media/connector-mark-as-reviewed.png" alt-text="Disabled connector Mark as reviewed":::
 
