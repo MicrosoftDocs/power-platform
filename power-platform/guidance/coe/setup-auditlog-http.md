@@ -4,7 +4,7 @@ description: Learn how to connect audit log sync flows to the audit log by using
 author: pete-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/15/2024
+ms.date: 08/20/2025
 ms.subservice: guidance-toolkit
 ms.author: petrip
 ms.reviewer: sericks
@@ -112,7 +112,7 @@ You can store the client secret in plain text in the **Audit Logs - Client Secre
 > [!IMPORTANT]
 > If you previously enabled the subscription, you see a _(400) The subscription is already enabled_ message. This message means the subscription is already enabled. You can ignore this message and continue with the setup.
 > 
-> If you don't see the above message or a (200) response, the request likely failed. There might be an error with your setup that's keeping the flow from working. Common issues to check are:
+> If you don't see the preceding message or a (200) response, the request likely failed. There might be an error with your setup that's keeping the flow from working. Common issues to check are:
 >
 > - Are audit logs enabled, and do you have permission to view the audit logs? Test if the logs are enabled by searching in [Microsoft Compliance Manager](https://compliance.microsoft.com/auditlogsearch).
 > - Did you enable the audit log recently? If so, try again in a few minutes, to give the audit log time to activate.
