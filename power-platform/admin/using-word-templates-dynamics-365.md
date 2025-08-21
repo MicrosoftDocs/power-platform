@@ -3,7 +3,7 @@ title: Use Word templates to create standardized documents
 description: Learn how to create a standardized document with one click using Word templates in Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/20/2025
+ms.date: 08/21/2025
 author: chrisgarty
 ms.subservice: admin
 ms.custom: NewPPac
@@ -17,16 +17,14 @@ search.audienceType:
 ---
 # Use Word templates to create standardized documents
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 <!-- legacy procedure -->
 
   After you create and import [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] templates into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), users select one button to generate standardized documents automatically populated with data. This feature has some special considerations you need to know to successfully create [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates.
 
 > [!WARNING]
-> There's a known issue when creating templates in [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]. This topic contains information on how to prevent interactions that could potentially destabilize [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]. See [Important! A known issue and how to avoid it](#important-a-known-issue-and-how-to-avoid-it) to learn more.
+> There's a known issue when creating templates in [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]. It's important to review and follow the guidance in the [Avoid a known issue when creating templates](#avoid-a-known-issue-when-creating-templates) section of this article to prevent interactions that could potentially destabilize [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)].
 
- The following are the supported versions of [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)].  
+ **Supported versions of [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]**  
 
 |                                                                          Area                                                                           | [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Version |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
@@ -36,7 +34,7 @@ search.audienceType:
 > [!NOTE]
 > Macro-enabled Word documents (.docm) are not supported.
 
- Follow the steps in this topic to successfully create and use [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates in customer engagement apps.  
+ Follow the steps in this article to successfully create and use [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates in customer engagement apps.  
 
 ## Step 1: Create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template  
 
@@ -141,9 +139,9 @@ To see and add customer engagement apps XML data, you need to enable the [!INCLU
 
    ![Developer tool on Word Ribbon.](../admin/media/word-template-developer-tool-word-ribbon.png "Developer tool on Word Ribbon")  
 
-### Important! A known issue and how to avoid it
+### Avoid a known issue when creating templates
 
- There's a known issue with customer engagement apps apps-generated [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates and [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. Be sure to follow the guidance in this section to prevent issues with control fields before going to step three where you add XML content control fields to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
+ There's a known issue with customer engagement apps' apps-generated [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates and [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. Follow the guidance in this section to prevent issues with control fields before going to [step three](#step-3-define-the-template) where you add XML content control fields to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
 
 > [!WARNING]
 > A few things  can cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze, requiring you to use [!INCLUDE[pn_ms_TaskManager_short](../includes/pn-ms-taskmanager-short.md)] to stop [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]:  
@@ -179,7 +177,7 @@ You can make formatting changes to content control fields, such as bolding the t
 
 1. Select **OK**.
 
-## Step 3: Define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template  
+## Step 3: Define the template  
 
 Use the XML Mapping Pane to define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template with entity fields.  
 
@@ -258,11 +256,11 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 
 3. Select **Word Template** > **Upload**.  
 
-   ![Click Upload to bring the template into customer engagement apps.](../admin/media/word-template-upload-button.png "Click Upload to bring the template into customer engagement apps")  
+   ![Select Upload to bring the template into customer engagement apps.](../admin/media/word-template-upload-button.png "Click Upload to bring the template into customer engagement apps")  
 
 4. Drag the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file in the dialog box or browse to the file.  
 
-5. Click **Upload**.  
+5. Select **Upload**.  
 
 <a name="BKMK_Generate"></a>
 
@@ -272,7 +270,7 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 
 1. Open a record with information you want to create a document. For example, open a customer account record in Sales.  
 
-2. Click **More** (**…**) **> Word Templates**, and then under **Word Templates** select the template you created.  
+2. Select **More** (**…**) **> Word Templates**, and then under **Word Templates** select the template you created.  
 
     If the template you created is not visible, there are two possibilities:  
 
@@ -304,7 +302,7 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 
 1. Open a record with information with the entity type that matches the sample template. For example, open a customer account record in Sales to apply the Account Summary template.  
 
-2. Click **More** (**…**) **> Word Templates**, and then under **Word Templates** select the sample template.  
+2. Select **More** (**…**) **> Word Templates**, and then under **Word Templates** select the sample template.  
 
    Open the newly-created [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template and give it a look.  
 
@@ -319,13 +317,13 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 
  Administrators can control access to Word templates with some granularity. For example, you can give salespeople Read but not Write access to a Word template.  
 
-1. Click **Settings** > **Security** > **Security Roles**.  
+1. Select **Settings** > **Security** > **Security Roles**.  
 
 2. Select a role, and then click the Business Management tab.  
 
 3. Select **Document Template** to set access for templates available to the entire organization. Select **Personal Document Template** for templates shared to individual users.  
 
-4. Click the circles to adjust the level of access.  
+4. Select the circles to adjust the level of access.  
 
    ![Adjust access using the security role.](../admin/media/excel-template-restrict-access-using-security-role.png "Adjust access using the security role")  
 
