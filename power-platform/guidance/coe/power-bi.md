@@ -1,5 +1,5 @@
 ---
-title: Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard
+title: CoE Power BI Dashboard for Power Platform Admins
 description: Learn more how the CoE Power BI dashboard helps admins track adoption, govern resources, and nurture makers. Start exploring insights.
 author: manuelap-msft
 
@@ -12,7 +12,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard
+# CoE Power BI Dashboard for Power Platform Admins
 
 As a Microsoft Power Platform admin, you want visibility into how your organization uses Power Apps and Power Automate. Insights into your adoption help you govern and secure the platform, identify patterns, and enable you to nurture your makers to accelerate adoption.
 
