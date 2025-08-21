@@ -118,6 +118,8 @@ To fully update your entire inventory again, change the **Full inventory** envir
 
 ## Update inventory for a selected app or flow
 
+You can manually trigger an inventory update for a specific app or flow if you need the latest details outside the regular sync schedule.
+
 ### Force inventory on objects
 
 To reduce API calls, the inventory flows don't update all objects with each synchronization run. Instead, the flows only update objects modified since the last inventory. However, if you want to force the inventory for an individual object, use the **Inventory Me** flag. All objects have this flag.
@@ -147,6 +149,8 @@ To force inventory to run for your flow, use the **Inventory My FlowActionDetail
 1. Change the **Inventory My FlowActionDetails** flag to **Yes**.
 
 ## Update environment variables
+
+Use environment variables to manage configuration settings for your CoE Starter Kit across environments. This section explains how to update them and highlights important limitations.
 
 ### Limitations for environment variables
 
