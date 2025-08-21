@@ -3,11 +3,10 @@ title: Update the Center of Excellence (CoE) Starter Kit
 description: Learn how to upgrade, test, and manage new releases for the Center of Excellence Starter Kit to keep your organization current.
 author: stjeffer
 ms.topic: how-to
-ms.date: 08/14/2025
+ms.date: 08/21/2025
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
-ms.reviewer: sericks
-
+ms.reviewer: jhaskett-msft
 ---
 
 # Update the Center of Excellence (CoE) Starter Kit
@@ -133,7 +132,7 @@ You won't receive updates for any cloud flow or canvas app that you changed unti
 
 After you remove unmanaged layers, import the new solution version:
 
-1. [Import the solution](faq.md#installing-a-solution-in-a-production-environment).
+1. [Import the solution](faq.md#install-a-solution-in-a-production-environment).
  
 1. Select **Upgrade** (default setting). [Solution upgrades](/power-platform/alm/solution-concepts-alm#solution-lifecycle) delete components that existed but aren't included in the upgraded version.
  

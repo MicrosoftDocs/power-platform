@@ -207,4 +207,4 @@ Before you begin:
 
 You can now [use the Innovation Backlog app](innovationbacklog-components.md).
 
-[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]
+[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

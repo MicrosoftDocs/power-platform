@@ -111,4 +111,4 @@ Environment variables are used to store application and flow configuration data 
 | InactivityNotifications-PastTime-Unit | The units for the past time for how far back to go to see if an app/flow is useful. | Month. |
 
 
-[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]
+[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

@@ -112,4 +112,4 @@ Environment variables are used to store application and flow configuration data 
 | Compliance – Apps - Number Users Shared | If the app is shared with this many or more users, makers are asked for a business justification. | 20 |
 | Compliance – Chatbots – Number Launches | If the chatbot is launched this many or more times, makers are asked for a business justification. | 50 |
 
-[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]
+[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

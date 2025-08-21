@@ -5,7 +5,7 @@ description: Prerequisites and step-by-step instructions for setting up the CoE 
 author: Grant-Archibald-MS
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/25/2025
+ms.date: 08/21/2025
 ms.subservice: guidance-toolkit
 ms.author: grarchib
 ms.reviewer: jhaskett-msft
@@ -109,7 +109,7 @@ The CoE Starter Kit offers two mechanisms to gather this data:
 
    Proceed with the CoE Starter Kit configuration only when you see inventory data files in your storage account. The initial data export can take up to five days.
 
-1. [Download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with data export and [use the setup wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to configure the feature in your tenant.
+1. [Download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with data export and [use the setup wizard](setup-core-components.md#set-up-the-inventory-components-by-using-the-setup-wizard) to configure the feature in your tenant.
 
 1. Post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION). Your feedback is critical to this process.
 

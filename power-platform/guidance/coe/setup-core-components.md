@@ -324,7 +324,7 @@ th, td {
 
 ## I found a bug with the CoE Starter Kit; where should I go?
 
-[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]
+[!INCLUDE[file-an-issue](../../includes/file-issue.md)]
 
 ## What's next?
 

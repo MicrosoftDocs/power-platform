@@ -1,14 +1,13 @@
 ---
-title: "Set up nurture components"
-description: "Multiple nurture components are provided in the Center of Excellence (CoE) Starter Kit. Follow these instructions to install the components where you need them."
+title: "Set up nurture component
+description: Follow these instructions to install the nurture components provided in the Center of Excellence (CoE) Starter Kit.
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/05/2023
+ms.date: 08/21/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 ---
@@ -27,7 +26,7 @@ Multiple nurture components are provided in the Center of Excellence (CoE) Start
 
 The core components solution is required for the nurture components solution to work.
 
-1. Import the `CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip` file solution from the download to [install the solution](faq.md#installing-a-solution-in-a-production-environment).
+1. Import the `CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip` file solution from the download to [install the solution](faq.md#install-a-solution-in-a-production-environment).
 1. Leave all environment variables blank on import.
 
 ## Set up **Video hub** components
@@ -347,4 +346,4 @@ Environment variables are used to store application and flow configuration data 
 | **Video hub** - Enable comments | Enable or disable end users to leave comments on videos published via the **Video hub**. Disabled by default. | No |
 | **Video hub** - Related Videos | Enable or disable showing related videos in the **Video hub**. Enabled by default. | Yes |
 
-[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]
+[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

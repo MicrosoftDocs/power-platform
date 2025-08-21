@@ -82,4 +82,4 @@ Environment variables are used to store application and flow configuration data 
 |------|---------------|------|
 | Quarantine Apps after x days of non-compliance | If using the Compliance flow for apps to gather compliance details from makers, specify whether you want to quarantine apps if they're not compliant and for how many days.  | 7 days |
 
-[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]
+[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

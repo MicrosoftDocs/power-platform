@@ -73,4 +73,4 @@ This environment variable affects other components:
 
 You might need to [update environment variables](faq.md#update-environment-variables) after import.
 
-[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]
+[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

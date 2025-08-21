@@ -253,4 +253,4 @@ Change the privacy level and update the credentials to resolve the issue:
 1. Select **Edit credentials**, set the privacy level to **Organizational** for both data sources, and select **Sign in** for each data source.
    :::image type="content" source="media/coepbi-byodl4.png" alt-text="Screenshot that shows where to configure privacy settings." lightbox="media/coepbi-byodl4.png":::
 
-[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]
+[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

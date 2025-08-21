@@ -1,13 +1,12 @@
 ---
-title: "Extend and customize CoE Starter Kit components"
-description: "Extend and modify the components of the Power Platform Center of Excellence (CoE) Starter Kit."
+title: Extend and customize CoE Starter Kit components
+description: Learn how to extend and modify the components of the Power Platform Center of Excellence (CoE) Starter Kit.
 author: conorto
 ms.topic: how-to
-ms.date: 08/02/2023
+ms.date: 08/21/2025
 ms.subservice: guidance-toolkit
 ms.author: conorto
-ms.reviewer: sericks 
-
+ms.reviewer: jhaskett-msft
 ---
 
 # Extend and customize CoE Starter Kit components
@@ -147,7 +146,7 @@ Next, create a copy of the canvas app:
 
    ![Remove from solution](media/coe-extension-11.png "Remove from solution")
 
-   Verify that app in the CoE solution from where you copied does not have unmanaged layer created. If it does, then remove [unmanaged layers](after-setup.md#removing-other-customizations) to continue receiving updates to the original app. You may want to compare them to your changes.
+   Verify that app in the CoE solution from where you copied does not have unmanaged layer created. If it does, then remove [unmanaged layers](after-setup.md#remove-other-customizations) to continue receiving updates to the original app. You may want to compare them to your changes.
 
 You can now safely edit your own copy.
 
@@ -207,7 +206,7 @@ Customize an existing flow:
 
     ![Edit as the flow](media/coe-extension-26.png "Edit as the flow")
    
-   Verify that the flow in the CoE solution from where you copied does not have unmanaged layer created. if it does, then remove [unmanaged layers](after-setup.md#removing-other-customizations) to continue receiving updates to the original flow.
+   Verify that the flow in the CoE solution from where you copied does not have unmanaged layer created. if it does, then remove [unmanaged layers](after-setup.md#remove-other-customizations) to continue receiving updates to the original flow.
 
 > [!NOTE]
 > Creating a copy of a cloud flow to extend and customize means you'll no longer receive updates for this cloud flow during an upgrade.
