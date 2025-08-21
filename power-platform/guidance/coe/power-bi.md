@@ -5,14 +5,14 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/02/2023
+ms.date: 08/21/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# CoE Power BI Dashboard for Power Platform Admins
+# CoE Power BI dashboard for Power Platform Admins
 
 As a Microsoft Power Platform admin, you want visibility into how your organization uses Power Apps and Power Automate. Insights into your adoption help you govern and secure the platform, identify patterns, and enable you to nurture your makers to accelerate adoption.
 
