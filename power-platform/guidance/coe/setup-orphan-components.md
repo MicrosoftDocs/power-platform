@@ -47,8 +47,4 @@ Turn on the following flows, which are installed as part of the governance compo
 - [Request Orphaned Objects Reassigned (Child)](governance-components.md#request-orphaned-objects-reassigned-child)
 - [Request Orphaned Objects Reassigned (Parent)](governance-components.md#request-orphaned-objects-reassigned-parent)
 
-## It looks like I found a bug with the CoE Starter Kit; where should I go?
-
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]

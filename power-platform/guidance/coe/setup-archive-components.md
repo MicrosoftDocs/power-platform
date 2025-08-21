@@ -110,8 +110,5 @@ Environment variables are used to store application and flow configuration data 
 | InactivityNotifications-PastTime-Interval | The interval for the past time for how far back to go to see if an app/flow is useful. | 6 (months) |
 | InactivityNotifications-PastTime-Unit | The units for the past time for how far back to go to see if an app/flow is useful. | Month. |
 
-## It looks like I found a bug with the CoE Starter Kit; where should I go?
 
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]

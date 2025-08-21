@@ -57,10 +57,4 @@ Turn on flows installed as part of the **Governance components** solution:
 - [Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created](governance-components.md#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created)
 - [Microsoft Teams Admin | Send Reminder Mail](governance-components.md#microsoft-teams-admin--send-reminder-mail)
 
-## I found a bug with the CoE Starter Kit—where should I go?
-
-To file a bug against the solution, start a new issue at:
-
-[Issue: 🐞 [CoE Starter Kit] Bug report](https://aka.ms/coe-starter-kit-issues).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]

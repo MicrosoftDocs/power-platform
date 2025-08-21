@@ -347,8 +347,4 @@ Environment variables are used to store application and flow configuration data 
 | **Video hub** - Enable comments | Enable or disable end users to leave comments on videos published via the **Video hub**. Disabled by default. | No |
 | **Video hub** - Related Videos | Enable or disable showing related videos in the **Video hub**. Enabled by default. | Yes |
 
-## I found a bug with the CoE Starter Kit. Where should I go?
-
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]

@@ -251,8 +251,4 @@ Once configured, this solution collects app launches, though isn't set up to col
 
 You can load historic data into the CoE Starter Kit tables manually. For more information, see [How to import old Audit Logs](https://github.com/microsoft/coe-starter-kit/issues/3040).
 
-## I found a bug with the CoE Starter Kit. Where should I go?
-
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]

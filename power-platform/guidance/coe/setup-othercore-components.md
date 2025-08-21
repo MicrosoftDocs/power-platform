@@ -73,8 +73,4 @@ This environment variable affects other components:
 
 You might need to [update environment variables](faq.md#update-environment-variables) after import.
 
-## I found a bug with the CoE Starter Kit. Where should I go?
-
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]
