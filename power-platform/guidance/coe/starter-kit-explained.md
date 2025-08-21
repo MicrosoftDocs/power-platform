@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/05/2023
+ms.date: 08/21/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
