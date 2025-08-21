@@ -54,7 +54,7 @@ sections:
 
     image:
       componentType: image
-      src: ./_images/well-architected-hub.png   
+      src: ./_images/WAH-no-margin-test.svg
 
   # bifold with image and text blocks
   #- componentType: bifold
