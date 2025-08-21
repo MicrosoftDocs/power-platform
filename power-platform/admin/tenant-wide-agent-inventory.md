@@ -69,7 +69,7 @@ The **Copilot Studio** page provides the option to display more columns to help 
 
 1. Select the **column chooser** icon, located next to the search box on the right side of the page.
 1. Select the columns you wish to display or hide.
-1. Select **Save**. 
+1. Select **Save**.
 
 ## View agent or environment details
 
