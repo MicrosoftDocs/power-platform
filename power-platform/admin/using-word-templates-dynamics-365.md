@@ -192,7 +192,7 @@ Use the XML Mapping Pane to define the [!INCLUDE[pn_ms_Word_short](../includes/p
    ![Select the XML schema.](../admin/media/word-template-select-xml-schema.png "Select the XML schema")  
 
    > [!IMPORTANT]
-   > If you have frequent accidental edits that cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze or have performance degradation, be sure to turn off the AutoCorrect options according to the section, [A known issue and how to avoid it](#important-a-known-issue-and-how-to-avoid-it).  
+   > If you have frequent accidental edits that cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze or have performance degradation, be sure to turn off the AutoCorrect options according to the section, [Avoid a known issue when creating templates](#avoid-a-known-issue-when-creating-templates).  
 
 3. Expand the entity, right-click the entity field, and then select **Insert Content Control** > **Plain Text**.  
 
