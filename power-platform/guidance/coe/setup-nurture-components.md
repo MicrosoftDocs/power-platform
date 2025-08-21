@@ -1,5 +1,5 @@
 ---
-title: "Set up nurture component
+title: Set up nurture component
 description: Follow these instructions to install the nurture components provided in the Center of Excellence (CoE) Starter Kit.
 author: manuelap-msft
 ms.component: pa-admin
