@@ -1,6 +1,6 @@
 ---
-title: "CoE Starter Kit explained: building blocks and add-ons"
-description: "The Power Platform CoE Starter Kit is shipped in multiple components. Learn about the building blocks and add-ons designed to help you innovate and improve."
+title: CoE Starter Kit modules
+description: Learn how core, governance, and nurture modules streamline Power Platform management and foster maker communities.
 author: manuelap-msft
 
 ms.component: pa-admin
@@ -17,6 +17,8 @@ search.audienceType:
 The Center of Excellence (CoE) Starter Kit is shipped in multiple components:
 
 ## Building blocks
+
+The building blocks section introduces the essential components that make up the solution.
 
 ### Center of Excellence – core components
 
@@ -39,6 +41,8 @@ The nurture components solution contains assets that are relevant to everyone in
 We recommend becoming familiar with the CoE core components solution before you add governance, nurture, or theming components.
 
 ## Standalone add-ons
+
+Standalone add-ons are separate features or services that you can add to your existing subscription. These add-ons let you customize your experience and access additional capabilities as needed.
 
 ### Center of Excellence - Power Platform Administration Planner
 
