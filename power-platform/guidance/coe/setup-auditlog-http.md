@@ -66,7 +66,7 @@ Follow these steps to set up a Microsoft Entra app registration for an HTTP call
 
    1. Select **Add permissions**.
 
-1. Select **Grant Admin Consent for \<*your organization*\>**. Learn more about how to set up admin content in [Prerequisites](/azure/active-directory/manage-apps/grant-admin-consent#prerequisites).
+1. Select **Grant Admin Consent for <*your organization*>**. Learn more about how to set up admin content in [Prerequisites](/azure/active-directory/manage-apps/grant-admin-consent#prerequisites).
 
    The API permissions now show delegated **ActivityFeed.Read** permissions with a status of **Granted for \<*your organization*\>**.
 
