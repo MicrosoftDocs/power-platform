@@ -85,7 +85,7 @@ You can selectively enable CoE Starter Kit processes for specific environments:
 > [!IMPORTANT]
 > A starter kit process isn't a security feature and doesn't implement data privacy or row-level security. The process is solely intended to facilitate the monitoring and management of environments for organizational units.
 
-1. After you import the **Core** components and before you turn on flows, set the value of the **is All Environments Inventory** environment variable to **No**. For more information, see [Update environment variables](#update-environment-variables).
+1. After you import the **Core** components and before you turn on flows, set the value of the **is All Environments Inventory** environment variable to **No**. Learn more in [Update environment variables](#update-environment-variables).
 1. Continue with the [inventory setup](setup-core-components.md) and turn on all inventory flows.
 1. Wait for the first inventory run of **Admin | Sync Template v3** to complete. All environments in the tenant are added as excluded from inventory.
    :::image type="content" source="media/tips-Opt-In-Envt1.png" alt-text="Screenshot that shows the location of the Environment Excused from Inventory page from the Environments menu." lightbox="media/tips-Opt-In-Envt1.png":::
@@ -107,11 +107,11 @@ Inventory flow actions:
 1. Checks each object in the filtered result to see if its current modified date is more recent than the inventory date.
 1. Updates these objects with the more recent _modified by_ date.
 
-If you turn off your sync flows for longer than seven days, you can only get the inventory updates you missed by modifying the **InventoryFilter_DaysToLookBack** environment variable. For more information, see [Update environment variables](#update-environment-variables).
+If you turn off your sync flows for longer than seven days, you can only get the inventory updates you missed by modifying the **InventoryFilter_DaysToLookBack** environment variable. Learn more in [Update environment variables](#update-environment-variables).
 
 To fully update your entire inventory again, change the **Full inventory** environment variable:
 
-1. Set the value of the **Full inventory** environment variable to **Yes**. For more information, see [Update environment variables](#update-environment-variables).
+1. Set the value of the **Full inventory** environment variable to **Yes**. Learn more in [Update environment variables](#update-environment-variables).
 1. Run the **Admin | Sync Template v4 (Driver)** flow.
 1. Wait until the flow finishes running.
 1. Set the **Full inventory** environment variable to **No**.
@@ -240,7 +240,7 @@ Some users might encounter throttling by the product backends, such as updating 
 
 To use this environment variable, change `DelayObjectInventory` to **Yes**.
 
-For more information, see [How to update environment variables](#update-environment-variables).
+Learn more in [How to update environment variables](#update-environment-variables).
 
 ## Cross tenant connection identities
 
@@ -256,7 +256,7 @@ Enter any hosts you want to add as a comma-separated string.
 
 :::image type="content" source="media/coe-cross-tenant-connection-reference2.png" alt-text="Screenshot that shows the Configure Environment Variable pane from a selected environment variable name." lightbox="media/coe-cross-tenant-connection-reference2.png":::
 
-For more information, see [How to update environment variables](#update-environment-variables).
+Learn more in [How to update environment variables](#update-environment-variables).
 
 ### How to update data to respect configured local tenants
 
