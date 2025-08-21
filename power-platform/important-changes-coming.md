@@ -199,9 +199,9 @@ This feature is fully removed October 2025.
 
 If the hierarchy view is essential to your app, a custom PCF control that handles the hierarchy view must be created and deployed. For information about how to create a code component, go to [Create and build a code component](/power-apps/developer/component-framework/create-custom-controls-using-pcf).
 
-## Deprecation of schema for DLP activity logging
+## Deprecation of schema for data policy activity logging
 
-The schema DLP activity logging is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin/admin-activity-logging.md#activity-category-data-policy-events).
+The schema for data policy activity logging is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin/admin-activity-logging.md#activity-category-data-policy-events).
 
 ## Deprecation of schema for Lockbox audit events
 
@@ -224,9 +224,9 @@ After careful consideration, and thanks to the feedback from partners, a decisio
 While the portal will be decommissioned, the program continues. For the latest information on the status of the program and how to certify your connector, learn more about the [Data Factory Connector Certification](/fabric/data-factory/connector-certification).
 
 
-## DLP resource exemption feature
+## Data policy resource exemption feature
 
-Effective March 2024, the data loss prevention (DLP) [resource exemption feature](/admin/dlp-resource-exemption.md) is deprecated for tenants that never used it. By October 2024, the resource exemption feature will be deprecated for all customers.
+Effective March 2024, the data policy [resource exemption feature](/admin/dlp-resource-exemption.md) is deprecated for tenants that never used it. By October 2024, the resource exemption feature will be deprecated for all customers.
 
 ## Activity Editor was removed in model-driven apps
 

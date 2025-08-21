@@ -63,9 +63,9 @@ Service tags help to minimize the complexity of frequent updates to network secu
 
 Microsoft manages the address prefixes in the service tag and automatically updates it as addresses change. For more information, see [Azure IP Ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519).
 
-### Data loss prevention
+### Data policies
 
-Power Platform includes extensive [data loss prevention (DLP) features](../prevent-data-loss.md) to help manage data security.  
+Power Platform includes extensive [data policy features](../prevent-data-loss.md) to help manage data security.  
 
 ## Storage Shared Access Signature (SAS) IP restriction
 
@@ -202,4 +202,4 @@ This information helps tenant admins correct any misconfiguration in the environ
 - [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
 - [Choose the region when setting up an environment](../regions-overview.md)
 - [Azure IP Ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
-- [Data Loss Prevention (DLP) features](../prevent-data-loss.md)
+- [Data policy features](../prevent-data-loss.md)
