@@ -52,7 +52,7 @@
               href: ../coe/setup-theming.md
             - name: Set up the Business value toolkit
               href: ../coe/setup-business-value-toolkit.md              
-            - name: Updating the CoE Starter Kit
+            - name: Update the CoE Starter Kit
               href: ../coe/after-setup.md
             - name: Extend and customize components
               href: ../coe/modify-components.md
@@ -96,7 +96,7 @@
               href: ../coe/use-innovationbacklog.md
             - name: Use the Administration planning components
               href: ../coe/admin-tasks-component.md
-            - name: Environment management
+            - name: Environment and data policy management
               href: ../coe/env-mgmt.md
             - name: Capacity alerting and reporting
               href: ../coe/capacity-alerting.md
@@ -112,14 +112,14 @@
               items:
                 - name: Overview
                   href: ../coe/cli/alm/overview.md
-                - name: Set up ALM accelerator
-                  href: ../coe/cli/alm/admin-install.md
                 - name: Before you start
                   href: ../coe/cli/alm/before-you-start.md
-                - name: Branching and merging
-                  href: ../coe/cli/alm/branching-and-merging.md
+                - name: Set up ALM Accelerator
+                  href: ../coe/cli/alm/admin-install.md
                 - name: Development environments
                   href: ../coe/cli/alm/development-environments.md
+                - name: Branching and merging
+                  href: ../coe/cli/alm/branching-and-merging.md
                 - name: Key concepts
                   href: ../coe/cli/alm/key-concepts.md
                 - name: Maker set-up
