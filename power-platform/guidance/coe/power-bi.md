@@ -1,5 +1,5 @@
 ---
-title: CoE Power BI Dashboard for Power Platform Admins
+title: CoE Power BI dashboard for Power Platform Admins
 description: Learn more how the CoE Power BI dashboard helps admins track adoption, govern resources, and nurture makers. Start exploring insights.
 author: manuelap-msft
 
