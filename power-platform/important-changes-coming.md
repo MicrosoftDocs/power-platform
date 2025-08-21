@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 07/30/2025
+ms.date: 08/21/2025
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -24,6 +24,24 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Deprecation of the format data by examples feature in Power Automate
+
+Starting (Kishor, please add Month DD, YYYY), the [format data by examples](/power-automate/format-data-by-examples) feature in Power Automate was deprecated. The feature was available worldwide and used the PROSE model to write expressions for a specific use case of formatting a piece of data in a flow to another permissible data type.
+
+### Why is this needed?
+
+With Copilot, we've developed a new feature to help you create and update expressions using natural language better and easier.
+
+### Impact
+
+The deprecation will have no impact to customers who have used the feature to write data formatting expressions. Going forward, the feature will be hidden.
+
+However, users will no longer be able to format dates, numbers, and text using examples in the Power Automate classic designer.
+
+### Replacement feature
+
+The *expression assistant feature* in the expression editor can be used as a replacement to the format data by example feature. Learn how to use the expression assistant feature (including a video) in [Create, update, and fix expressions with Copilot expression assistant (preview)](/power-automate/expressions-copilot).
 
 ## Deprecation of Viva Engage (Yammer) connector support for open authorization connections
 
