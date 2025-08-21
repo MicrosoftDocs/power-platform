@@ -21,10 +21,11 @@ search.app:
 # Identify blocked Power Automate flows from data policies
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-As new capabilities become available, such as the inclusion of triggers as part of [connector action control](./connector-action-control.md), it can become critical to quickly identify flows which are in violation of existing data policies.  The following scripts help you identify and provide an inventory of these flows for review, and can help you update your policies if you wish for the flows to not fail at runtime.
+
+As new capabilities become available, such as the inclusion of triggers as part of [connector action control](./connector-action-control.md), it can become critical to quickly identify flows which are in violation of existing data policies. The following scripts help you identify and provide an inventory of these flows for review. The scripts can also help you update your policies for the flows to not fail at runtime.
 
 ## Inventory flows with blocked triggers
-The following PowerShell script can be used to create an **Impacted Flows** CSV file.  It queries all data policies in your tenant and finds the applicable environments that are in scope. It recurses every environment and find Power Automate flows which are in violation of applicable policy&mdash;due to the use of triggers&mdash;which are currently blocked.  
+The following PowerShell script can be used to create an **Impacted Flows** CSV file. It queries all data policies in your tenant and finds the applicable environments that are in scope. It recurses every environment and find Power Automate flows which are in violation of applicable policy&mdash;due to the use of triggers&mdash;which are currently blocked.  
 
 > [!IMPORTANT]
 > You must be a Power Platform administrator to run the following script. Admins are able to access all policies, environments, and flows in your tenant.
@@ -69,10 +70,10 @@ Add-PowerAppsAccount
 # Initialize output
 $output = @()
 
-Write-Host "Fetching all DLP policies in the tenant..." -ForegroundColor Cyan
+Write-Host "Fetching all data policies in the tenant..." -ForegroundColor Cyan
 
 try {
-    # Fetch all DLP policies
+    # Fetch all data policies
     $dlpPolicies = Get-AdminDlpPolicy
     $totalPolicies = $dlpPolicies.Count
     if($totalPolicies -eq $null)
@@ -84,7 +85,7 @@ try {
     $allEnvironments = Get-AdminPowerAppEnvironment
     Write-Host "Done."
 } catch {
-    Write-Host "Failed to fetch DLP policies: $_" -ForegroundColor Red
+    Write-Host "Failed to fetch data policies: $_" -ForegroundColor Red
     exit
 }
 
@@ -95,7 +96,7 @@ $policyIndex++
 Write-Progress -Activity "Processing Policies" -Status "Processing $policyIndex of $totalPolicies" -PercentComplete (($policyIndex / $totalPolicies) * 100)
 
     try {
-        Write-Host "Processing DLP Policy: $($policy.DisplayName)" -ForegroundColor Cyan
+        Write-Host "Processing Data Policy: $($policy.DisplayName)" -ForegroundColor Cyan
 
         # Initialize actionBlockedConnectorIds
         $actionBlockedConnectorIds = @()
@@ -231,11 +232,11 @@ if($output.Count -gt 0)
 }
 else
 {
-    Write-Host "No triggers were found in violation of your DLP policies.  Please let Microsoft know via Support Ticket that you would like to be removed from runtime enforcement exclusion for DLP policies."
+    Write-Host "No triggers were found in violation of your data policies.  Please let Microsoft know via Support Ticket that you would like to be removed from runtime enforcement exclusion for data policies."
 }
 
 # Instructions for deep linking
-Write-Host "`nTo review a DLP policy, navigate to:" -ForegroundColor Cyan
+Write-Host "`nTo review a data policy, navigate to:" -ForegroundColor Cyan
 Write-Host "https://admin.powerplatform.microsoft.com/policies/dlp/policyId/{PolicyId}" -ForegroundColor Green
 Write-Host "You may need to adjust the PPAC Admin URL for GCC, GCCH, Mooncake, DoD, and other clouds." -ForegroundColor Cyan
 ```
@@ -293,7 +294,7 @@ foreach ($policyGroup in $groupedPolicies) {
     $flowsInPolicy = $policyGroup.Group
     $policyNeedsUpdated = $false
 
-    Write-Host "Processing DLP Policy: $policyId" -ForegroundColor Cyan
+    Write-Host "Processing Data Policy: $policyId" -ForegroundColor Cyan
 
     # Get existing connector configurations for the policy
     try {
@@ -333,15 +334,15 @@ foreach ($policyGroup in $groupedPolicies) {
 
     if($policyNeedsUpdated)
     {
-        # Update the DLP policy with modified configurations
+        # Update the data policy with modified configurations
         try {
             Set-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $policyId -UpdatedConnectorConfigurations $connectorConfigurations
-            Write-Host "Successfully updated DLP Policy: $policyId" -ForegroundColor Cyan
+            Write-Host "Successfully updated Data Policy: $policyId" -ForegroundColor Cyan
         } catch {
-            Write-Host "Failed to update DLP Policy $policyId : $_" -ForegroundColor Red
+            Write-Host "Failed to update Data Policy $policyId : $_" -ForegroundColor Red
         }
     }
 }
 
-Write-Host "All impacted flows processed and DLP policies updated." -ForegroundColor Cyan
+Write-Host "All impacted flows processed and data policies updated." -ForegroundColor Cyan
 ```
