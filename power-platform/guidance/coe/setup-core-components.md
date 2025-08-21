@@ -207,7 +207,7 @@ Use environment variables to store application and flow configuration data with 
 | DelayInventory | If *Yes*, runs a delay step to assist with the Dataverse load balancing. Only set to *No* for debugging. | Yes |
 | DelayObjectInventory | If *Yes*, runs a delay step in individual inventory flows to assist with data source throttling experienced by larger tenants. Set to *Yes* if you experience this type of throttling. | No |
 | Disabled Users are Orphaned | If an AD user has property *Account* enabled as *false*, the user is orphaned. | No |
-| eMail Header Style | The CSS / Style to use for eMails. | [Default CSS](/power-platform/guidance/coe/code-samples/css/default-value-email-header-style) |
+| eMail Header Style | The CSS / Style to use for eMails. | [Default CSS](#default-value-for-email-header-style-environmental-variable) |
 | eMail Body Start | Starting HTML format for eMails. | Default style provided |
 | eMail Body Stop | Ending HTML format for eMails. | Default style provided |
 | FullInventory | Determines whether you want to update only changed objects or all objects. Switching to *Yes* causes the flows to inventory every single app, flow, and bot in the tenant every day. The *Yes* setting isn't recommended for large tenants.  | No |
@@ -226,6 +226,103 @@ Use environment variables to store application and flow configuration data with 
 | Sync Flow Errors Delete After X Days | Number of days back to store sync flow error records. Deletes records older than this number of days.| 7 |
 | TenantID | Your Azure Tenant ID. For more information, learn more at [Find Tenant ID through the Azure portal](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant#find-tenant-id-through-the-azure-portal). | Not applicable |
 
+### Default value for eMail Header Style environmental variable
+
+<details>
+<summary>Default CSS</summary>
+
+```css
+<head> <style> 
+body {
+    background-color: #efefef;
+    font-family: Segoe UI;
+    text-align: center;
+}
+
+#content {
+    border: 1px solid #742774;
+    background-color: #ffffff;
+    width: 650px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+#logo {
+    margin-left: 52px;
+    margin-top: 40px;
+    width: 60px;
+    height: 12px;
+}
+
+#header {
+    font-size: 24px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#ribbon {
+    background-color: #742774;
+}
+
+#ribbonContent {
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+    width: 100%;
+    padding-right: 10px;
+}
+
+#message > td {
+    font-size: 14px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#footer > td {
+    font-size: 12px;
+    background-color: #cfcfcf;
+    height: 40px;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+#form {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#app {
+    width: 60%;
+    font-size: 12px;
+}
+
+.label {
+    color: #5f5f5f
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+</style> </head>
+
+```
+</details>
+
+## I found a bug with the CoE Starter Kit; where should I go?
 
 [!INCLUDE[file-an-issue](../../includes/file-an-issue.md)]
 
