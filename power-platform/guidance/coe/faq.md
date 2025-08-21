@@ -35,7 +35,7 @@ This article answers frequently asked questions (FAQs) and provides tips on sett
 
 ## Set flow run-only users properties
 
-1. Remove [unmanaged layers](after-setup.md) for all flows.
+1. Remove [Update the Center of Excellence (CoE) Starter Kit](after-setup.md) for all flows.
 1. Go to the **Details** page, then select the **Run only users** edit button.
    :::image type="content" source="media/tips-flow2.png" alt-text="Screenshot that shows the location of the Edit link on the Run only users card." lightbox="media/tips-flow2.png":::
 1. View all the connections in the child flow. For each one except Microsoft Dataverse, change the value to **Use this connection (userPrincipalName\@company.com)**. For Microsoft Dataverse, leave the value blank.
@@ -86,7 +86,7 @@ You can selectively enable CoE Starter Kit processes for specific environments:
 > A starter kit process isn't a security feature and doesn't implement data privacy or row-level security. The process is solely intended to facilitate the monitoring and management of environments for organizational units.
 
 1. After you import the **Core** components and before you turn on flows, set the value of the **is All Environments Inventory** environment variable to **No**. Learn more in [Update environment variables](#update-environment-variables).
-1. Continue with the [inventory setup](setup-core-components.md) and turn on all inventory flows.
+1. Continue with the [Set up inventory components](setup-core-components.md) and turn on all inventory flows.
 1. Wait for the first inventory run of **Admin | Sync Template v3** to complete. All environments in the tenant are added as excluded from inventory.
    :::image type="content" source="media/tips-Opt-In-Envt1.png" alt-text="Screenshot that shows the location of the Environment Excused from Inventory page from the Environments menu." lightbox="media/tips-Opt-In-Envt1.png":::
 1. Add the environments you want to monitor and manage to the inventory by selecting **No** for the **Excuse From Inventory** configuration.
@@ -306,9 +306,9 @@ Different Power Automate license types have different API limits and enforcement
 
 This guide helps you determine which license to select:
 
-  1. Understand the [Power Automate request limits](/power-platform/admin/api-request-limits-allocations).
+  1. Understand the [Requests limits and allocations](/power-platform/admin/api-request-limits-allocations).
   1. Start by assigning a Power Automate Per user license and turn on all required flows. Monitor the flows with **CLEANUP**, **Sync Template (Flows)**, and **Sync Template (Apps)** in the name. These options might consume a high number of API requests. You can use [action analytics](https://powerautomate.microsoft.com/blog/introduction-action-usage-analytics-in-power-automate/) to monitor the API requests of these flows.
-  1. If the flow runs too many actions, [change the flow owner](/power-automate/change-cloud-flow-owner) to a different account with a Power Automate Per User license. This step balances the API requests.
-  1. If the flow continues to execute too many actions, consider assigning a [Per Flow](/power-platform/admin/power-automate-licensing/types#standalone-plans) plan to it. This action allocates capacity and API requests specifically for the flow.
+  1. If the flow runs too many actions, [Change the owner of a cloud flow](/power-automate/change-cloud-flow-owner) to a different account with a Power Automate Per User license. This step balances the API requests.
+  1. If the flow continues to execute too many actions, consider assigning a [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types#standalone-plans) plan to it. This action allocates capacity and API requests specifically for the flow.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
