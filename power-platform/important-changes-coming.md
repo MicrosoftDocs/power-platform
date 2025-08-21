@@ -27,7 +27,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Deprecation of the format data by examples feature in Power Automate
 
-Starting (Kishor, please add Month DD, YYYY), the [format data by examples](/power-automate/format-data-by-examples) feature in Power Automate was deprecated. The feature was available worldwide and used the PROSE model to write expressions for a specific use case of formatting a piece of data in a flow to another permissible data type.
+As of August 2025, the [format data by examples](/power-automate/format-data-by-examples) feature in Power Automate classic designer is deprecated. The feature was available worldwide and used the PROSE model to help makers write expressions for a specific use case of formatting a piece of data in a flow to another permissible data type.
 
 ### Why is this needed?
 
