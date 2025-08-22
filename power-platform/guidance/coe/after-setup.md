@@ -1,9 +1,9 @@
 ---
 title: Update the Center of Excellence (CoE) Starter Kit
-description: Learn how to upgrade, test, and manage new releases for the Center of Excellence Starter Kit to keep your organization current.
+description: Learn how to upgrade, test, and manage new releases for the Power Platform Center of Excellence Starter Kit to keep your organization current.
 author: stjeffer
 ms.topic: how-to
-ms.date: 08/21/2025
+ms.date: 08/22/2025
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: jhaskett-msft
@@ -19,45 +19,47 @@ This article helps you upgrade the CoE Starter Kit. It provides guidance on:
 - How to test the latest release.
 
 > [!NOTE]
-> If you're setting up the CoE Starter Kit for the first time, check out our [Set up the CoE Starter Kit](setup.md). If you want to extend the CoE Starter Kit with your own customizations, see our guidance for [Extend and customize CoE Starter Kit components](modify-components.md).
+> If you're setting up the CoE Starter Kit for the first time, check out [Set up the CoE Starter Kit](setup.md). If you want to extend the CoE Starter Kit with your own customizations, consult our guidance for [extending the CoE Starter Kit](modify-components.md).
 
 > [!IMPORTANT]
-> We recommend upgrading the CoE Starter Kit solution at least **every three months**. With the fast pace of change for Microsoft Power Platform, leaving updates longer than three months could result in unexpected issues when you update.
+> We recommend upgrading the CoE Starter Kit solution at least **every three months**. With the fast pace of change for Power Platform, leaving updates longer than three months could result in unexpected issues when you update.
 
 ## How often new versions are released
 
-We release a new version of the CoE Starter Kit each month, usually in the first full week of the month. This release cadence helps you know when to review, organize, plan, and test the latest version.
+A new version of the CoE Starter Kit is released monthly, usually in the first full week of each month. This release cadence is important to know so that you can review, organize, plan, and test the latest version.
 
-We announce updates (bug fixes, enhancements, new features, and deprecations) through [GitHub release notes](https://github.com/microsoft/coe-starter-kit/releases).
+Updates (bug fixes, enhancements, new features, and deprecations) are announced through [GitHub release notes](https://github.com/microsoft/coe-starter-kit/releases).
 
 ### GitHub release notes
 
-Each release of the CoE Starter Kit includes release notes that detail bug fixes and enhancements that the release addresses. Review the release notes before you install the new version in your organization.
+Each release of the CoE Starter Kit includes release notes that detail bug fixes and enhancements that the release addresses. Review the release notes before you install the new version.
 
 #### View release notes
 
 To view the details of a release:
 
-1. Go to the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit) in GitHub.
+1. Navigate to the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit) in GitHub.
 1. Select the [latest releases](https://github.com/microsoft/coe-starter-kit/releases) notes.
 
-   ![Screenshot showing where to find the latest release notes for the CoE Starter Kit](media/coe-upgrade5.png "View new releases on GitHub")
+   :::image type="content" source="media/coe-upgrade5.png" alt-text="Screenshot showing where to find the latest release notes for the CoE Starter Kit.":::
 
-Release notes contain a changelog of issues (bug fixes and enhancements) that the new version addresses. They might also include specific upgrade instructions that are new for the release. This information could cover turning on a new flow or notes on deprecated features.
+Release notes contain a changelog of issues (bug fixes and enhancements) addressed by the new version. They might also include specific upgrade instructions that are new for the release. This information might cover turning on a new flow or notes on deprecated features.
 
 #### Subscribe to CoE Starter Kit releases
 
 Watch releases on our [GitHub repository](https://github.com/microsoft/coe-starter-kit) to get notifications about the latest release.
 
 1. Sign in to your GitHub account.
+
 1. Go to our [GitHub repository](https://github.com/microsoft/coe-starter-kit).
+
 1. Select **Watch** > **Custom**.
 
-    ![Select Watch and Custom to receive notifications about new releases](media/github-watch1.png "Select to watch the repository to receive notifications about new releases")
+    :::image type="content" source="media/github-watch1.png" alt-text="Screenshot showing how to select to watch the repository to receive notifications about new releases.":::
     
 1. Select **Releases**.
 
-     ![Check to only watch new releases](media/github-watch2.png "Check to only watch new releases")
+     :::image type="content" source="media/github-watch2.png" alt-text="Screenshot showing how to check only to watch new releases.":::
      
 1. Select **Apply**.
 
@@ -85,7 +87,7 @@ First, review the [latest release notes](https://github.com/microsoft/coe-starte
 Download the latest version of the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
 > [!IMPORTANT]
-> **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components and nonsolution aware components that make up the CoE Starter Kit.
+> Extract the zip file after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components and non-solution aware components that make up the CoE Starter Kit.
 
 ### Remove unmanaged layers from inventory flows
 
@@ -100,33 +102,38 @@ Before installing the upgrade, remove unmanaged layers from the inventory flows.
 >[!NOTE]
 >You might unknowingly create an unmanaged layer by selecting **Edit** to look at flow actions or by modifying the run-only properties of the flow.
 
-You can check for unmanaged layers on the inventory flows by using the [Coe Admin Command Center](core-components.md#coe-admin-command-center) app.
+You can check for unmanaged layers on the inventory flows by using the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app.
 
 1. Open the **CoE Admin Command Center** app from your CoE environment.
-1. Select **CoE flows** from the navigation.
+
+1. Select **CoE flows** from the navigation menu.
+
 1. Check if any of the flows show the layer icon, indicating they have unmanaged layers.
 
-   ![Screenshot showing the layer icon in the Admin Command Center app](media/coe-upgrade6.png "Detect unmanaged layers on flows in the Admin Command Center app")
+   :::image type="content" source="media/coe-upgrade6.png" alt-text="Screenshot showing the layer icon in the Admin Command Center app." lightbox="media/coe-upgrade6.png":::
 
 1. Select the layer icon to go to the solution layer page of the flow and remove the unmanaged layer.
 
-   ![Screenshot showing the Remove unmanaged layer action](media/upgrade2.png "Remove unmanaged layers")
+   :::image type="content" source="media/upgrade2.png" alt-text="Screenshot showing the Remove unmanaged layer action." lightbox="media/upgrade2.png":::
 
 ### Remove other customizations
 
 You won't receive updates for any cloud flow or canvas app that you changed until you remove the unmanaged layer.
 
-1. To keep your changes, learn more in [Extend and customize CoE Starter Kit components](modify-components.md).
+1. If you want to keep your changes, learn more about how to [extend the CoE Starter Kit](modify-components.md).
+
+1. If you don't want to keep your changes, remove all unmanaged layers before the update. A component likely changed if the modified date is more recent than the latest install. 
  
-1. To remove your changes, delete all unmanaged layers before the update. A component likely changed if the modified date is more recent than the latest install. To avoid creating unmanaged layers, learn more in [Extend and customize CoE Starter Kit components](modify-components.md).
+    > [!TIP]
+    > Read our recommendations for [extending the CoE Starter Kit](modify-components.md).
    
    1. Select the ellipsis (**...**) > **See solution layers**.
-        
-      ![See solution layers](/power-platform/guidance/coe/media/upgrade1.png "See solution layers")
-        
+
+      :::image type="content" source="/power-platform/guidance/coe/media/upgrade1.png" alt-text="Screenshot showing where in the user interface to select the See solution layers option." lightbox="/power-platform/guidance/coe/media/upgrade1.png" :::
+
    1. Select **Remove unmanaged layer**.
         
-      ![Remove unmanaged solution layer](/power-platform/guidance/coe/media/upgrade2.png "Remove unmanaged solution layer")
+      :::image type="content" source="/power-platform/guidance/coe/media/upgrade2.png" alt-text="Screenshot showing where in the user interface to select the Remove unmanaged layer option." lightbox="/power-platform/guidance/coe/media/upgrade2.png":::
 
 ## Import the new solution version
 
@@ -136,27 +143,31 @@ After you remove unmanaged layers, import the new solution version:
  
 1. Select **Upgrade** (default setting). [Solution upgrades](/power-platform/alm/solution-concepts-alm#solution-lifecycle) delete components that existed but aren't included in the upgraded version.
  
-   ![Select upgrade to install the new solution version](media/coe-upgrade1.png "Select upgrade to install the new solution version")
+   :::image type="content" source="media/coe-upgrade1.png" alt-text="Screenshot of the Import a solution pane with the Upgrade action highlighted.":::
     
-1. If the upgrade adds new environment variables or connection references, establish connections and update environment variable values. You can find the expected values in our [Set up inventory components](setup-core-components.md).
+1. If the upgrade adds new environment variables or connection references, establish connections and update environment variable values. You can find the expected values in the [setup instructions](setup-core-components.md).
  
-1. Wait for the upgrade to finish. This process can take up to 15 minutes. During the upgrade, the new version is installed first and then the old version is deleted. While the upgrade is processing, you might see two solutions with the same name in your solution explorer. [View solution history](/power-apps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
- 
-   ![Check the solution history](/power-platform/guidance/coe/media/coe-upgrade3.png "Check the solution history")
-    
-1. The upgrade completes when the end time isn't empty.
- 
-   ![Check that the end time for the solution import is not empty](/power-platform/guidance/coe/media/coe-upgrade2.png "Check that the end time for the solution import is not empty")
-    
-1. The [View solution history](/power-apps/maker/data-platform/solution-history#view-solution-history) also shows if the upgrade fails and why. [Raise an issue](https://aka.ms/coe-starter-kit-issues) and [provide the solution operation error details](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
- 
-   ![View solution operation error details](/power-platform/guidance/coe/media/coe-upgrade4.png "View solution operation error details")
+1. Wait for the upgrade to finish. 
 
+    This process can take up to 15 minutes. During the upgrade, the new version is installed first and then the old version is deleted. While the upgrade is processing, you might see two solutions with the same name in your solution explorer. Check the [solution history](/power-apps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
+ 
+   :::image type="content" source="/power-platform/guidance/coe/media/coe-upgrade3.png" alt-text="Screenshot showing where to the check the solution history." lightbox="/power-platform/guidance/coe/media/coe-upgrade3.png":::
+    
+   The upgrade completes when the end time isn't empty.
+ 
+   :::image type="content" source="/power-platform/guidance/coe/media/coe-upgrade2.png" alt-text="Screenshot showing how to check that the end time for the solution import is not empty." lightbox="/power-platform/guidance/coe/media/coe-upgrade2.png":::
+    
+1. If the [solution history](/power-apps/maker/data-platform/solution-history#view-solution-history) indicates that the upgrade failed,  [raise an issue](https://aka.ms/coe-starter-kit-issues) and [provide the solution operation error details](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
+ 
+   :::image type="content" source="/power-platform/guidance/coe/media/coe-upgrade4.png" alt-text="Screenshot showing how to view solution operation error details." lightbox="/power-platform/guidance/coe/media/coe-upgrade4.png":::
+ 
 1. After the solution import succeeds, open the **Center of Excellence - Core Components** solution.
-1. Open the **CoE Setup and Upgrade Wizard** app.
-1. This app provides a guided step-by-step experience through the configuration steps. During an upgrade, it shows the solution history, any components with unmanaged layers, and any new apps, flows, and environment variables that are added during this upgrade.
 
-1. When you finish this step, move on to [Test strategy](#test-strategy).
+1. Open the **CoE Setup and Upgrade Wizard**.
+
+    This app provides a guided step-by-step experience through the configuration steps. During an upgrade, it shows the solution history, any components with unmanaged layers, and any new apps, flows, and environment variables that have been added during this upgrade.
+
+1. When you finish this step, move on to [testing](#test-strategy).
 
 ## Update the Audit Log solution
 
@@ -164,12 +175,11 @@ Upgrading the solution requires re-establishing connections to custom connectors
 
 ## Test strategy
 
-As with installing any update, testing prior to installation in a production environment increases the likelihood of success.
+As with installing any update, testing before installation in a production environment increases the likelihood of success.
 
 > [!IMPORTANT]
 > Testing is important as it provides you with an opportunity to try out new features and confirm bug fixes work as expected. Doing this in an isolated environment protects production versions.
-> 
-> Create a dedicated testing environment for CoE Starter Kit updates.
+
 
 Here are some recommendations:
 
@@ -195,13 +205,11 @@ If you find a bug or an issue when testing, you can [raise a bug here](https://g
 
 ## Application lifecycle management
 
-This document doesn't go deep into application lifecycle management (ALM). If you're interested in recommendations and scenarios, review the [overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm). ALM covers many disciplines. This document touches lightly on the discipline of deploying solutions.
+This article doesn't cover application lifecycle management (ALM) in detail. If you're interested in recommendations and scenarios, review [Overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm). ALM covers many disciplines. This document touches lightly on the discipline of deploying solutions.
 
-### ALM accelerator for Power Platform
+### ALM Accelerator for Power Platform
 
-The [ALM accelerator for Power Platform](almacceleratorpowerplatform-components.md) is a reference implementation that sits on top of Azure Pipelines and Git source control.  
-
-The ALM Accelerator for Power Platform includes a canvas app that provides a simplified interface for makers to regularly export components in solutions to source control, and create deployment requests.
+The [ALM Accelerator for Power Platform](almacceleratorpowerplatform-components.md) is a reference implementation that sits on top of Azure Pipelines and Git source control. The ALM Accelerator includes a canvas app that provides a simplified interface for makers to regularly export components in solutions to source control and create deployment requests.
 
 ### Microsoft Power Platform Build Tools
 
