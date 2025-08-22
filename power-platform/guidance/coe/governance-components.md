@@ -36,7 +36,7 @@ These flows are part of the Core components solution. However, most of their fun
 | Admin \| Compliance request complete custom connector v3 | Automated |  Triggered when the [Custom Connector Approval BPF](#custom-connector-approval-bpf) is marked complete. |
 | Admin \| Compliance request complete flow v3 | Automated |  Triggered when the [Flow Approval BPF](#flow-approval-bpf) is marked complete. |
 | Admin \| Compliance Teams Environment BPF kickoff v3 | Automated |  Triggered when a business justification is submitted for a Microsoft Teams environment. |
-| [Admin \| Compliance Detail request v3](#admin-compliance-detail-request-v3) | Scheduled | Facilitates the process described in [App auditing process](example-processes.md). |
+| [Admin \| Compliance Detail request v3](#admin--compliance-detail-request-v3) | Scheduled | Facilitates the process described in [App auditing process](example-processes.md). |
 
 #### Admin \| Compliance Detail request v3
 
