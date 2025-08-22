@@ -256,9 +256,9 @@ TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 
 ### Errors and how to resolve them 
 - If you receive an error that says, **The User mapping file provided for Tenant To Tenant migration is invalid**, check if the user mapping file name is correct and that the user mapping file has a comma to separate values.
-- **Line '{line numbers}' have the same '{emailID}'**: Make sure there aren't any duplicate entries.
-- **Invalid Email Format '{emailid}'**: Make sure the email format is correct for `testuser@tenantdomain.com`.
-- **Target on line '{linenumber}' is same as source emailId**: Make sure the **Destination Email** is different from the **Source Email**.
+- **Line '{line numbers}' have the same '{email ID}'**: Make sure there aren't any duplicate entries.
+- **Invalid Email Format '{email ID}'**: Make sure the email format is correct for `testuser@tenantdomain.com`.
+- **Target on line '{line number}' is same as source email ID**: Make sure the **Destination Email** is different from the **Source Email**.
 - **Each line must have exactly two columns: '{line numbers}'**: Make sure each row has only two columns: the source and destination columns. Remove any extra commas.
 
 After fixing user mapping errors, you need to reupload the user mapping file using the same SAS URI.
