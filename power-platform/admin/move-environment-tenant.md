@@ -388,7 +388,7 @@ No. The environment remains in place, but the Dataverse organization is moved to
 
 #### Are there any components that aren't fully supported?
 
-Leaern more in [Before you get started](#before-you-get-started) to understand which components are supported and which components aren't supported.
+Learn more in [Before you get started](#before-you-get-started) to understand which components are supported and which components aren't supported.
 
 #### What happens to mailbox configurations?
 
