@@ -114,7 +114,7 @@ You can check for unmanaged layers on the inventory flows by using the [CoE Admi
 
 1. Select the layer icon to go to the solution layer page of the flow and remove the unmanaged layer.
 
-   :::image type="content" source="media/upgrade2.png" alt-text="Screenshot showing the Remove unmanaged layer action." lightbox="media/upgrade2.png":::
+   :::image type="content" source="media/upgrade2.png" alt-text="Screenshot showing the Remove unmanaged layer action.":::
 
 ### Remove other customizations
 
@@ -129,11 +129,11 @@ You won't receive updates for any cloud flow or canvas app that you changed unti
    
    1. Select the ellipsis (**...**) > **See solution layers**.
 
-      :::image type="content" source="/power-platform/guidance/coe/media/upgrade1.png" alt-text="Screenshot showing where in the user interface to select the See solution layers option." lightbox="/power-platform/guidance/coe/media/upgrade1.png" :::
+      :::image type="content" source="/power-platform/guidance/coe/media/upgrade1.png" alt-text="Screenshot showing where in the user interface to select the See solution layers option.":::
 
    1. Select **Remove unmanaged layer**.
         
-      :::image type="content" source="/power-platform/guidance/coe/media/upgrade2.png" alt-text="Screenshot showing where in the user interface to select the Remove unmanaged layer option." lightbox="/power-platform/guidance/coe/media/upgrade2.png":::
+      :::image type="content" source="/power-platform/guidance/coe/media/upgrade2.png" alt-text="Screenshot showing where in the user interface to select the Remove unmanaged layer option.":::
 
 ## Import the new solution version
 
