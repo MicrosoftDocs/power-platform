@@ -44,7 +44,7 @@ Learn more:
 
 ## Manage new environment creation and environment requests
 
-A key best practice for managing Power Platform environments is to implement controls and processes that restrict who can create new environments. The CoE Starter Kit includes a reference example for an environment and data loss prevention (DLP) request management process to effectively manage future environment and DLP requests. By understanding and using this solution, your CoE team can manage and govern the environments in your tenant.
+A key best practice for managing Power Platform environments is to implement controls and processes that restrict who can create new environments. The CoE Starter Kit includes a reference example for an environment and data policy request management process to effectively manage future environment and data policy requests. By understanding and using this solution, your CoE team can manage and govern the environments in your tenant.
 
 > [!NOTE]
 > Regularly check for new Power Platform connectors added to your tenant to ensure they align with your organization's data and governance policies.
@@ -109,17 +109,17 @@ Learn more:
 
 With over 900 connectors available to your organization, it's critical to establish a data policy strategy to control connector availability. However, you might be unaware of the impact that changing a data policy has on your existing apps and flows.
 
-Use the **DLP editor (impact analysis) tool** *before* making changes to existing policies or creating new policies. This tool reveals the impact of changes on existing apps and cloud flows and helps you make informed decisions.
+Use the **DLP Editor (Data Policy Impact Analysis) tool** *before* making changes to existing policies or creating new policies. This tool reveals the impact of changes on existing apps and cloud flows and helps you make informed decisions.
 
-:::image type="content" source="media/dlp_new1.png" alt-text="Screenshot of the DLP Editor." lightbox="media/dlp_new1.png":::
+:::image type="content" source="media/dlp_new1.png" alt-text="Screenshot of the Data Policy Impact Analysis Editor." lightbox="media/dlp_new1.png":::
 
-After you establish your data policy strategy, use the **DLP request management process** in the CoE Starter Kit for makers to request and evaluate available data policies.
+After you establish your data policy strategy, use the **Request Management process** in the CoE Starter Kit for makers to request and evaluate available data policies.
 
-:::image type="content" source="media/env-mgmt-process.png" alt-text="Screenshot of the environment and DLP request management process." lightbox="media/env-mgmt-process.png":::
+:::image type="content" source="media/env-mgmt-process.png" alt-text="Screenshot of the environment and data policy request management process." lightbox="media/env-mgmt-process.png":::
 
 Learn more:
 
-- [Implement a DLP strategy](/power-platform/guidance/adoption/dlp-strategy)
+- [Implement a data strategy](/power-platform/guidance/adoption/dlp-strategy)
 - [CoE Starter Kit &ndash; DLP Impact Analysis](core-components.md#dlp-impact-analysis)
 - [Role-based security roles](/power-platform/admin/database-security)
 - [Security in Microsoft Power Platform](/power-platform/admin/security/overview)

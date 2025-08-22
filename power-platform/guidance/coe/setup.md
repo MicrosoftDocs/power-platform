@@ -143,9 +143,9 @@ Create two production environments to install the CoE Starter Kit solutions:
 > [!IMPORTANT]
 > Using data export as a mechanism to retrieve inventory and telemetry is currently in preview. We recommend you test this feature in a dedicated test environment before using it in production.
 
-### Validate data loss prevention (DLP) policies
+### Validate data policies
 
-The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your CoE Starter Kit environment must allow the following connectors to be used together in the business group:
+The [data policy](/power-platform/admin/wp-data-loss-prevention) applied to your CoE Starter Kit environment must allow the following connectors to be used together in the business group:
 
 - [Approvals](/connectors/approvals/)
 - [Azure Resource Manager](/connectors/arm/)
@@ -176,9 +176,9 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 
   If your tenant is in Government Community Cloud (GCC), GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
-  You can't set up [DLP endpoint filtering](../../admin/connector-endpoint-filtering.md) for these connectors, as DLP Policies don't support dynamic endpoint evaluation.
+  You can't set up [endpoint filtering](../../admin/connector-endpoint-filtering.md) for these connectors, as data policies don't support dynamic endpoint evaluation.
 
-- Check that no other DLP policies apply to this environment. Learn more in [Combined effect of multiple DLP policies](../../admin/dlp-combined-effect-multiple-policies.md).
+- Check that no other data policies apply to this environment. Learn more in [Combined effect of multiple data policies](../../admin/dlp-combined-effect-multiple-policies.md).
 
 ## Download and install
 

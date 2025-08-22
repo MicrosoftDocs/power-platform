@@ -3,7 +3,7 @@ title: Use core components
 description: Learn how CoE Starter Kit core components help Power Platform admins create a Center of Excellence (CoE), including sync resources and build apps to gain visibility into the environment.
 author: manuelap-msft
 ms.topic: concept-article
-ms.date: 08/06/2025
+ms.date: 08/22/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -381,9 +381,9 @@ Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboa
 | Env Request \| Notify admin when a new request is submitted | Automated | When a new **Environment Creation Request** record’s status is updated by a user to a _Pending_ state | Sends an email to the admin alias with instructions on how to review the request. |
 | Env Request \| Notify requestor when rejected | Automated | When an **Environment Creation Request**’s status is updated to the _Rejected_ state | Sends an email notification to the requestor with the rejection status and reason, then changes the request to inactive. |
 
-### Environment Request Apps
+### Environment Request apps
 
-Environment Request Apps help you manage and streamline environment requests.
+Environment Request apps help you manage and streamline environment requests.
 
 #### CoE Admin Environment Request
 
