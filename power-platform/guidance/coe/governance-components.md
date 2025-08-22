@@ -60,7 +60,7 @@ You can customize the criteria for when makers are asked to provide a business j
 
 You can customize the email that the flow sends out. By default, it looks like the following image:
 
-:::image type="content" source="media/coe55.png" alt-text="Sample compliance detail request email informing a maker that their app is missing compliance details." lightbox="media/coe55.png":::
+:::image type="content" source="media/coe55.png" alt-text="Sample compliance detail request email informing a maker that their app is missing compliance details.":::
 
 The compliance detail request email informs a maker that they own an app that is currently missing compliance details, which means it needs to be audited by an admin per the support policy. Makers are prompted to complete the business justification and mitigation plan details in the Developer Compliance Center app to document the intended use of the app.
 
@@ -371,8 +371,6 @@ Runs daily and collects all orphaned objects in the tenant and attempts to assoc
 
 If the flow finds orphaned objects that can't resolve to a previous manager, it sends a list to the admin email so admins know which orphaned objects need to be cleaned manually.
 
-![Orphaned object count.](media/orphanedobjects1.png "Orphaned object count")
-
 :::image type="content" source="media/orphanedobjects1.png" alt-text="Screenshot showing sample text notifying a manager of orphaned apps and flows.":::
 
 #### Request Orphaned Objects Reassigned (Child)
@@ -386,8 +384,6 @@ For example, to:
 1. Delete them all.
 1. Assign them all to someone else.
 1. View each one individually.
-
-![Orphaned object list.](media/orphanedobjects2.png "Orphaned object list")
 
 :::image type="content" source="media/orphanedobjects2.png" alt-text="Screenshot showing sample text urging managers to take action on orphaned objects.":::
 
