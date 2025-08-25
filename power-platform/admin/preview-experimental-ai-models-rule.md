@@ -46,5 +46,5 @@ Learn more about the effects that the **Preview and experimental AI models** set
 
 ## Effect of the setting in the Power Platform (AI hub in Power Automate and Power Apps) and AI prompts
 
-Learn more about the effects that the **Preview and experimental AI models** setting has has in the Power Platform AI hub in [Enable or disable preview features or models](/ai-builder/administer.md#enable-or-disable-preview-features-or-models)
+Learn more about the effects that the **Preview and experimental AI models** setting has has in Power Automate and Power Apps in [Enable or disable preview features or models](/ai-builder/administer.md#enable-or-disable-preview-features-or-models)
 
