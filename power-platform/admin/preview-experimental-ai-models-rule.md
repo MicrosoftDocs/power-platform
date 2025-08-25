@@ -35,11 +35,11 @@ If your environment is part of an [environment group](/power-platform/admin/envi
 
 If an environment group rule governing preview and experimental AI models and features is published, it locks the preview and experimental AI models setting at the environment-level, preventing any system administrator of those individual environments from editing the setting. To change the setting, admins must modify the corresponding rule in the environment group that includes the environment. 
 
-# Effect of the setting in Copilot Studio agents
+## Effect of the setting in Copilot Studio agents
 
 See [Select a primary AI model for your agent](/microsoft-copilot-studio/authoring-select-agent-model.md)
 
-# Effect of the setting in the Power Platform (AI hub in Power Automate and Power Apps) and AI prompts
+## Effect of the setting in the Power Platform (AI hub in Power Automate and Power Apps) and AI prompts
 
 See [Enable or disable preview features or models](/ai-builder/administer.md#enable-or-disable-preview-features-or-models)
 
