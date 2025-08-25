@@ -52,9 +52,9 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 |-------------------------|-------------------------|-------------------------|
 | United States | In region* | United States| 
 | Europe\**  | Norway, Spain, Sweden, or Switzerland| United States |
-| France<br>Germany<br>Norway<br>Sweden<br>Switzerland | Norway, Spain, Sweden, or Switzerland | United States|
-| Asia<br>Brazil<br>Canada<br>Japan<br>Korea<br>South Africa<br>United Arab Emirates | United States | United States| 
-| Singapore | In region* or United States | United States |
+| France<br>Germany<br>Norway<br>Sweden<br>Switzerland\** | Norway, Spain, Sweden, or Switzerland | United States|
+| Brazil<br>Canada<br>Japan<br>Korea<br>South Africa<br>United Arab Emirates | United States | United States| 
+| Asia<br>Singapore | In region* or United States | United States |
 | Australia<br>India | In region* or United States | United States |
 | United Kingdom | In region*, Norway, Spain, Sweden, or Switzerland | United States |
 | Government cloud (GCC, GCC High) | In region* | United States |
