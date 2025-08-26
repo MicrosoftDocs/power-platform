@@ -37,7 +37,7 @@ The **What’s new** page in the **Copilot** area provides admins with a central
 The **Settings** page displays settings grouped by product. Some settings span across Power Platform and are at the top in the **Power Platform** section. Settings can be configured at the environment level, with some settings also configurable through environment groups and rules. When you select a setting, a panel opens where you can select your environment, select **Add**, and configure the control. Some settings in the Copilot Studio product direct you to documentation with instructions on how you can configure a data loss prevention (DLP) policy.
 
 > [!Note]
-> Guest users in a Microsoft Entra tenant can view Copilot feature settings to assess feature availability.
+> Tenant users with environment access can view Copilot settings.
 
 
 ### Control who can use Copilot features in Power Apps (preview)
