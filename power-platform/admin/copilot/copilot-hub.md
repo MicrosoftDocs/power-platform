@@ -4,7 +4,7 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/28/2025
+ms.date: 08/26/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -15,8 +15,6 @@ contributors:
 ---
 
 # Track, manage, and scale Copilot adoption in the Power Platform
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The **Copilot** area in the Power Platform admin center is a centralized location for usage and cost insights, upcoming features, learning documents, and granular controls to scale Copilot and agent adoption in Power Platform. Tenant admins and environment admins can access these resources in one place by selecting **Copilot** in the navigation pane.
 
@@ -38,7 +36,6 @@ The **Settings** page displays settings grouped by product. Some settings span a
 
 > [!Note]
 > Tenant users with environment access can view Copilot settings.
-
 
 ### Control who can use Copilot features in Power Apps (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
