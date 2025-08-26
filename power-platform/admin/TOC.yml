@@ -196,8 +196,12 @@
                   href: managed-environment-enable.md
                 - name: Environment groups
                   href: environment-groups.md
-                - name: Rules for environment groups
-                  href: environment-groups-rules.md
+                - name: Rules
+                  items:
+                    - name: Rules for environment groups
+                      href: environment-groups-rules.md
+                    - name: Preview and experimental AI models rule
+                      href: preview-experimental-ai-models-rule.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
                 - name: Usage insights
