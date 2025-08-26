@@ -44,6 +44,9 @@ All users within the environment must meet license requirements for [Managed Env
 
 Developers using source code integration also need an Azure DevOps license to gain access to the repository. For more information, go to [Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 
+## Can developers collaborate on a solution while working in different development environments?
+Yes. Import the solution to each additional environment and then connect to the same Git location. For more information, see [Connect multiple development environments to Git](connecting-to-git.md)
+
 ## Why am I getting the message "Failed to retrieve the default branch for the selected repository. Choose a default branch to allow creating new branches?"
 
 Make sure that your Azure DevOps Git repo is initialized. New projects and repos by default have an uninitialized repository, and you have to manually initialize the repo to create the default branch.
