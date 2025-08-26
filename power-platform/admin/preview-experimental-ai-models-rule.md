@@ -15,7 +15,7 @@ search.audienceType:
 
 # Preview and experimental AI models
 
-AI innovation moves at a rapid pace, and each AI model has different strengths and specialties. With the **Preview and experimental AI models** setting, you can allow the use of preview and experimental AI models for an environment or an environment group.
+AI innovation moves at a rapid pace, and each AI model has different strengths and specialties. With the **Preview and experimental AI models** rule and setting, you can allow the use of preview and experimental AI models for an environment or an environment group.
 
 ## Control preview and experimental AI models use for an environment
 
