@@ -194,9 +194,9 @@
                   href: managed-environment-overview.md
                 - name: Enable Managed Environments
                   href: managed-environment-enable.md
-                - name: Environment groups
+                - name: Environment groups and rules
                   items:
-                    - name: Environment groups overview
+                    - name: Environment groups
                       href: environment-groups.md
                     - name: Rules for environment groups
                       href: environment-groups-rules.md
