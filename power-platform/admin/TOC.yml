@@ -195,9 +195,9 @@
                 - name: Enable Managed Environments
                   href: managed-environment-enable.md
                 - name: Environment groups
-                  href: environment-groups.md
-                - name: Rules
                   items:
+                    - name: Environment groups overview
+                      href: environment-groups.md
                     - name: Rules for environment groups
                       href: environment-groups-rules.md
                     - name: Preview and experimental AI models rule
