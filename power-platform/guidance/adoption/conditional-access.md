@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.date: 08/18/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 contributors:
