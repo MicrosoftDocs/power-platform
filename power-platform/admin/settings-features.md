@@ -28,8 +28,6 @@ ms.collection:
 
 # Manage feature settings
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Use feature settings to adjust how features appear and function in Power Apps [canvas apps](/power-apps/maker/canvas-apps/getting-started) and [model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview).
 
 These settings can be found in the Power Platform admin center for an environment.
@@ -368,7 +366,7 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-| Block deletion of out-of-the-box attribute maps. | When **On**, the platform allows deletion of Microsoft Dynamics 365 out-of-the-box attribute mappings.|    On    |
+| Block deletion of out-of-the-box attribute maps. | When **On**, the platform allows deletion of out-of-the-box attribute mappings introduced by Microsoft solutions.|    On    |
 
 ## Power Apps ideas for canvas apps
 
