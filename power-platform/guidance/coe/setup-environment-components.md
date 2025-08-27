@@ -41,9 +41,9 @@ This article helps you set up the environment request components of the core sol
 
 ### Update environment variables
 
-Update the `Environment Request Admin App Url` environment variable with the URL for the **Admin - Environment Request** canvas app. You can [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment).
+Update the `Environment Request Admin App Url` environment variable with the URL for the **Admin - Environment Request** canvas app. You can [Get a Power Apps URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment).
 
-For more information, see [Update environment variables](faq.md#update-environment-variables). These variables are used by the environment request management components.
+Learn more in [Update environment variables](faq.md#update-environment-variables). These variables are used by the environment request management components.
 
 ### Turn on flows
 
@@ -66,13 +66,13 @@ The environment request components are two apps. One app for admins and one for 
 - [**Admin - Environment Requests**](core-components.md) app for admins to view and approve environment and connectors requests.
 - [**Maker - Environment Request**](core-components.md) app for makers to request environments and connectors.
 
-For more information, see [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment).
+Learn more in [Share an app from a production environment](faq.md#share-an-app-from-a-production-environment).
 
 ## All environment variables
 
 Environment variables can affect the environment request components.
 
-Update the `Environment Request Admin App Url` variable with the URL for the **Admin - Environment Request** canvas app. You can [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment). There's no default value for this environment variable.
+Update the `Environment Request Admin App Url` variable with the URL for the **Admin - Environment Request** canvas app. You can [get a Power Apps URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment). There's no default value for this environment variable.
 
 You might have to [update environment variables](faq.md#update-environment-variables) after import.
 

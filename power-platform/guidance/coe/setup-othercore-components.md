@@ -63,7 +63,7 @@ You can share these apps with makers or end users, then assign them the **Power 
 - The **CoE Maker Command Center** for makers.
 - The [**App Catalog**](core-components.md#other-apps) for end users.
 
-For more information, see [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment).
+Learn more: [Share an app from a production environment](faq.md#share-an-app-from-a-production-environment).
 
 ## All environment variables
 

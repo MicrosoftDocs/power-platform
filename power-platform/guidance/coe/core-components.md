@@ -349,7 +349,7 @@ Use this app to email app owners and app users by selecting **Email Users** from
 
 With Power BI reports, you can get a holistic view of Dataverse data. You can understand visualizations and insights for **Environment**, **PowerApps App**, **Flow**, **Connector**, **Connection Reference**, **Maker**, and **Audit Log** tables.
 
-Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. Learn more in [Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard](power-bi.md).
+Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. Learn more in [Gain insights into Power Platform adoption with the CoE Power BI dashboard](power-bi.md).
 
 :::image type="content" source="media/pb-2.png" alt-text="Screenshot that shows how to filter your apps in the Overview - Power Apps page of Power BI." lightbox="media/pb-2.png":::
 

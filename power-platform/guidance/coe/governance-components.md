@@ -4,7 +4,7 @@ description: Learn how to use governance components of the Center of Excellence 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/22/2025
+ms.date: 08/27/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 
 # Use governance components
 
-After you become familiar with your environments and resources, think about governance processes for your apps. You might want to gather extra information about your apps from your makers, or audit specific connectors or app usage.
+After you become familiar with your environments and resources, consider implementing governance processes for your apps. You might want to gather extra information about your apps from your makers, or audit specific connectors or app usage.
 
 [Watch an overview](https://www.youtube.com/embed/6bfaFsFtLow) of how to use the Governance components solution.
 
@@ -40,25 +40,25 @@ These flows are part of the Core components solution. However, most of their fun
 
 #### Admin \| Compliance Detail request v3
 
-This flow works with other apps and flows in the Center of Excellence (CoE) Starter Kit to facilitate the process described in [App auditing process](example-processes.md). It sends compliance detail request emails for apps and chatbots.
+This flow works with other apps and flows in the Center of Excellence (CoE) Starter Kit to facilitate the process described in [App auditing process](example-processes.md). Compliance detail request emails are sent for apps and chatbots.
 
 This flow sends an email to users who have apps in the tenant that aren't compliant with the following thresholds:
 
 - The app is shared with more than 20 users or at least one group, and no business justification details are provided for it.
 
-- The app has business justification details, but isn't published in 60 days (so it's likely not on the latest version of Power Apps) or is missing a description.
+- The app has business justification details, but hasn't been published in 60 days (so it's likely not on the latest version of Power Apps) or is missing a description.
 
-- The app has business justification details and an indication of high business impact, but no mitigation plan is submitted to the attachments field.
+- The app has business justification details and an indication of high business impact, but no mitigation plan has been submitted to the attachments field.
 
 This flow sends an email to users who have chatbots in the tenant that aren't compliant with the following thresholds:
 
 - The chatbot is launched more than 50 times, and no business justification details are provided for it.
 
-- The chatbot has business justification details and an indication of high business impact, but no mitigation plan is submitted to the attachments field.
+- The chatbot has business justification details and an indication of high business impact, but no mitigation plan has been submitted to the attachments field.
 
 You can customize the criteria for when makers are asked to provide a business justification by using [environment variables](faq.md#update-environment-variables). Default values are provided.
 
-You can customize the email that the flow sends out. By default, it looks like the following image:
+You can customize the email that the flow sends out. By default, it looks similar to the following image:
 
 :::image type="content" source="media/coe55.png" alt-text="Sample compliance detail request email informing a maker that their app is missing compliance details.":::
 
@@ -97,7 +97,7 @@ Based on the resource, makers can filter their resources to the following compli
 
 - **Missing Details** indicates that the compliance process or an admin requests more details to bring the resource back into compliance.
 - **Flagged as inactive** indicates that the resource is marked as inactive.
-- **Non-compliant** indicates that the resource is currently noncompliant with existing DLP or billing policies; often this status means that the resource can't be used until the problem is resolved.
+- **Non-compliant** indicates that the resource is currently noncompliant with existing data or billing policies; often this status means that the resource can't be used until the problem is resolved.
 - **Re-publish needed** (for canvas apps only) indicates that the app wasn't published in the past 60 days.
 - **Missing description** indicates that the resource needs a description populated to help the admin understand what the resource is used for.
 
@@ -226,7 +226,7 @@ Represents inactivity notifications approval tasks that start during the **Admin
 
 #### Admin \| Inactivity notifications v2 (Start Approval for Apps)
 
-Checks for apps that haven't been modified or launched in the last six months (configurable) and asks the app owner (via flow approvals) whether the app can be deleted.
+Checks for apps not modified or launched in the last six months (configurable) and asks the app owner (via flow approvals) whether the app can be deleted.
 
 It recommends that the app owner backs up the app if they want to restore it later.
 
@@ -238,7 +238,7 @@ This flow starts the approval process and writes the approval task to the Archiv
 
 #### Admin \| Inactivity notifications v2 (Start Approval for Flows)
 
-Similar to the previous flow, this flow checks for flows (not apps) that haven't been modified in the last six months (configurable) and asks the flow owner (via flow approvals) whether the flow can be deleted.
+Similar to the previous flow, this flow checks for flows (not apps) not modified in the last six months (configurable) and asks the flow owner (via flow approvals) whether the flow can be deleted.
 
 It recommends that the flow owner backs up the flow if they want to restore it later.
 
@@ -330,7 +330,7 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 > [!IMPORTANT]
 > This flow deletes environments for which no business justification exists, or where the business justification has been rejected. Environment owners have seven days to provide a business justification before the environment is deleted.
 
-This flow runs weekly and deletes environments that have been created:
+This flow runs weekly and deletes environments created:
 
 - More than **7 days** ago and have no business justification, or the business justification is rejected by the admin.
 - More than **90 days** ago and have no apps or flows in the environment.
@@ -434,11 +434,11 @@ This flow sets the quarantine status of the app.
 
 If the app is quarantined, the flow sends an email to the maker to inform them their app can no longer be launched. The maker is asked to submit compliance details in the Developer Compliance Center app.
 
-:::image type="content" source="media/quarantine4.png" alt-text="Example notification to inform a maker that their app has been quarantined and what to do next.":::
+:::image type="content" source="media/quarantine4.png" alt-text="Example notification to inform a maker that their app is quarantined and what to do next.":::
 
 If the app is released from quarantine, the flow sends an email to the maker to inform them the app is available for use again.
 
-:::image type="content" source="media/quarantine3.png" alt-text="Example  notification to inform a maker that their app has been released from quarantine.":::
+:::image type="content" source="media/quarantine3.png" alt-text="Example  notification to inform a maker that their app is released from quarantine.":::
 
 Apps that are quarantined also appear in the [Developer Compliance Center](#developer-compliance-center) as **Non-Compliant**.
 

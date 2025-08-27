@@ -126,7 +126,7 @@ We recommend testing upgrades in a dedicated test environment before upgrading y
 
 In your test environment, set the *ProductionEnvironment* variable to *no*. A *no* setting means no emails are sent to makers and end users as you test features.
 
-Learn more in [Updating the Center of Excellence (CoE) Starter Kit](after-setup.md).
+Learn more in [Update the Center of Excellence (CoE) Starter Kit](after-setup.md).
 
 ## Create your environments
 

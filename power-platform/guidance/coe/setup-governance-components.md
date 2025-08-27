@@ -46,11 +46,11 @@ This app guides you through the configuration steps.
 This step gets completed after you import the solution. Environment variables store application and flow configuration data. Using environment variables means that you only have to set the value once per environment and used in all necessary flows and apps in that environment.
 
 > [!TIP]
-> Learn how to update environment variables: [Update Environment Variables](faq.md#update-environment-variables).
+> Learn how to [update environment variables](faq.md#update-environment-variables).
 
 The `Developer Compliance Center URL` should be set to the URL for the **Developer Compliance Center** app.
 
-For more information, see [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment).
+Learn more: [Get a Power Apps URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment).
 
 ### Exempt environments from the compliance process
 

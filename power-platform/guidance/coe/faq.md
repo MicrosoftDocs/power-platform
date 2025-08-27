@@ -4,7 +4,7 @@ description: Optimize your Power Platform Center of Excellence Starter Kit exper
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: best-practice
-ms.date: 08/22/2025
+ms.date: 08/27/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -161,7 +161,7 @@ Inventory flow actions:
 
 1. Updates these objects with the more recent _modified by_ date.
 
-If you turn off your sync flows for longer than seven days, you can only get the inventory updates you missed by modifying the **InventoryFilter_DaysToLookBack** environment variable. Learn more in [Update environment variables](#update-environment-variables).
+If sync flows are turned off for longer than seven days, you can only get the inventory updates you missed by modifying the **InventoryFilter_DaysToLookBack** environment variable. Learn more in [Update environment variables](#update-environment-variables).
 
 To fully update your entire inventory again, change the **Full inventory** environment variable:
 
@@ -364,7 +364,7 @@ For this example, we're using the Excel Add-In due to its speed and minimal API 
 
    :::image type="content" source="media/coe-cross-tenant-connection-reference8.png" alt-text="Screenshot that highlights the Publish button.":::
 
-## How do I activate Business Process Flows
+## How do I activate Business Process Flows?
 
 Occasionally, users encounter disabled Business Process Flows (BPFs) within the kit due to installation issues.
 

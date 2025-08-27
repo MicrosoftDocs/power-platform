@@ -36,10 +36,10 @@ This article will help you to set up the app quarantine components of the govern
 
 ### Configure mandatory environment variables
 
-You'll [update these environment variables](faq.md#update-environment-variables) after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment, and it will be used in all necessary flows and apps in that environment.
+[Update environment variables](faq.md#update-environment-variables) after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment, and it will be used in all necessary flows and apps in that environment.
 
 >[!TIP]
->Learn how to update environment variables: [Update environment variables](faq.md#update-environment-variables).
+>Learn how to [update environment variables](faq.md#update-environment-variables).
 
 | Name | Description | Default value |
 |------|---------------|------|

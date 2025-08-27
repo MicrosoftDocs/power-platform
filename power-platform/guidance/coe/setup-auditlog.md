@@ -18,7 +18,7 @@ ms.custom: sfi-image-nochange
 
 > [!IMPORTANT]
 > Using the dedicated **Center of Excellence - Audit Log** solution and the Office 365 Management custom connector to collect audit log events are deprecated. The solution and custom connector will be removed from the CoE Starter Kit in August 2023.
-> We have a new flow that collects audit log events, which is part of the **Center of Excellence - Core Components** solution. This new flow uses an HTTP connector. Learn more: [Collect audit logs using an HTTP action](setup-auditlog-http.md)
+> We have a new flow that collects audit log events, which is part of the **Center of Excellence - Core Components** solution. This new flow uses an HTTP connector. Learn more in [Collect audit logs by using the Office 365 Management API](setup-auditlog-http.md)
 
 The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The flow uses a custom connector to connect to the Audit Log. In the following instructions, you set up the custom connector and configure the flow.
 
@@ -230,7 +230,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     > [!ITIP]
     > These default values work in a medium-sized tenant. You might have to adjust the values multiple times for this to work for your tenant size.
 
-For more information on updating environment variables, see [Update Environment Variables](faq.md#update-environment-variables).
+Learn more in [Update environment variables](faq.md#update-environment-variables).
 
 1. Back in the solution, turn on both the [Child] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
 

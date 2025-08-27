@@ -1,17 +1,17 @@
 ---
-title: CoE Power BI dashboard for Power Platform admins
-description: Learn more how the Power BI dashboard of the Power Platform Center of Excellence Starter Kit helps admins track adoption, govern resources, and nurture makers. Start exploring insights.
+title: Gain insights into Power Platform adoption with the CoE Power BI dashboard
+description: Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard and analyze adoption, monitor resources, and nurture makers.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/22/2025
+ms.date: 08/27/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 ---
-# CoE Power BI dashboard for Power Platform admins
+# Gain insights into Power Platform adoption with the CoE Power BI dashboard
 
 As a Microsoft Power Platform admin, you need visibility into how your organization uses Power Apps and Power Automate. Insights into your adoption help you govern and secure the platform, identify patterns, and enable you to nurture your makers to accelerate adoption.
 
@@ -22,9 +22,7 @@ The Power BI dashboard of the Center of Excellence (CoE) Starter Kit provides a 
 The dashboard provides analytics and data for the following areas:
 
 - [**Monitor with the CoE Power BI dashboard**](power-bi-monitor.md): Oversight of tenant resources
-
 - [**Govern with the CoE Power BI dashboard**](power-bi-govern.md): Drive actions through insights
-
 - [**Nurture in the CoE Power BI dashboard**](power-bi-nurture.md): Learn about your community
 
 To use the dashboard, start by installing the [core components](setup-core-components.md) of the CoE Starter Kit and configure the Power BI dashboard by following the [dashboard setup instructions](setup-powerbi.md).

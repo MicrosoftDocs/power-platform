@@ -178,7 +178,7 @@ If your CoE Starter Kit is installed in a *GCC High* or *DoD* tenant, update the
 > [!NOTE]
 > Set up the Audit Log solution only if you chose [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
 
-The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users and launches) for apps. The CoE Starter Kit works without this flow. However, usage information, such as app launches and unique users, in the Power BI dashboard is blank. Learn more in [Collect audit logs using Office 365 Management API](setup-auditlog-http.md).
+The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users and launches) for apps. The CoE Starter Kit works without this flow. However, usage information, such as app launches and unique users, in the Power BI dashboard is blank. Learn more in [Collect audit logs by using the Office 365 Management API](setup-auditlog-http.md).
 
 ## Set up the Power BI dashboard
 

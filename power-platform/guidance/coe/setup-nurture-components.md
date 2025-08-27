@@ -83,7 +83,7 @@ The **Video hub** components are two apps:
 
   A canvas app for video content. Share this app with your makers and assign them to the Power Platform SR security role.
 
-For more information, see [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment).
+Learn more: [Share an app from a production environment](faq.md#share-an-app-from-a-production-environment).
 
 ### Import starter data (optional)
 
@@ -200,7 +200,7 @@ The **Training in a day** components consist of two apps:
 - [**Nurture apps - Admin**](nurture-components.md#nurture-apps---admin) app for training organizers to view and manage events and registrations. Share this app with other admins or training organizers and assign them the Power Platform Admin SR security role.
 - [**Nurture apps - Maker**](nurture-components.md#training-in-a-day-pages-in-nurture-apps---maker-app) app for attendees to register to training events. Share this app with your makers and assign them the Power Platform Maker SR security role.
 
-For more information, see [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment).
+Learn more: [Share an app from a production environment](faq.md#share-an-app-from-a-production-environment).
 
 ## Set up maker assessment components
 
@@ -243,9 +243,7 @@ The maker assessment components consist of two apps:
 - [**Nurture apps - Admin**](nurture-components.md#nurture-apps---admin) app for admins to manage assessment questions. Share this app with other admins or training organizers, and assign them the Power Platform Admin SR security role.
 - [**Nurture apps - Maker**](nurture-components.md#solution-assessment-page-in-nurture-apps---maker-apps) app for makers to complete assessments. Share this app with your makers, and assign them the Power Platform Maker SR security role.
 
-More information:
-
-- [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
+More information: [Share an app from a production environment](faq.md#share-an-app-from-a-production-environment)
 
 ## Set up Pulse feedback survey
 
@@ -320,7 +318,7 @@ The template catalog components have one app:
 
 - [**Nurture apps - Maker**](nurture-components.md#template-catalog-page-in-nurture-apps---maker-app) app for makers and end users to browse available templates. Share this app with end users, and assign them the Power Platform User SR security role.
 
-For more information, see [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment).
+Learn more: [Share an app from a production environment](faq.md#share-an-app-from-a-production-environment).
 
 ## Set up product newsletter
 
