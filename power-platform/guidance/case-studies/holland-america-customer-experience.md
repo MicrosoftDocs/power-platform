@@ -4,7 +4,7 @@ description: Learn how Holland America Line used Microsoft Copilot Studio to cre
 #customer intent: As a Power Platform user, I want to learn how Holland America Line used Copilot Studio to create a virtual agent so that I can apply similar strategies in my organization.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 ms.subservice: guidance
 ms.topic: overview
 ms.date: 05/13/2025
