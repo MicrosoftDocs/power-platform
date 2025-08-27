@@ -16,7 +16,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/14/2025
 ms.subservice: guidance
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 ms.custom: bap-template
