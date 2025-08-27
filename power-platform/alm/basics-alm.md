@@ -94,10 +94,16 @@ Nearly every source control system has some form of branching and merging suppor
 
 ### Source control process using a solution
 
-There are two main paths you can use when working with solutions in a source control system:
+In the [Organize Solutions](/power-platform/alm/organize-solutions) section, you’ll learn about using either a single-solution or multiple-solution approach. After choosing your strategy, it’s recommended to store each solution’s source code in a source control system. This section explains how to work with the source code of a solution.
 
-- Export the unmanaged solution and place it as unpacked in the source control system. The build process imports the packed solution as unmanaged into a temporary build environment (sandbox environment). Then, export the solution as managed and store it as a build artifact in your source control system.
-- Export the solution as unmanaged and also export the solution as managed, and place both in the source control system. Although this method doesn't require a build environment, it does require maintaining two copies of all components (one copy of all unmanaged components from the unmanaged solution and one copy of all managed components from the managed solution).
+There are several way how you can export the source code of the solution to the source control system:
+
+- use the [Power Platform Git Integration](/power-platform/alm/git-integration/overview)
+- create your own Pipeline:
+   - usign the [Build tool tasks](devops-build-tool-tasks.md#build-and-release-pipelines).
+   - usign a yaml Pipeline.
+
+...
 
 ![Source control by using a solution.](media/build-pipeline-alm.png "Source control by using a solution")
 
