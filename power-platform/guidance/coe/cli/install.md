@@ -4,7 +4,8 @@ description: Learn how to install and set up the Center of Excellence command li
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.custom: ""
-ms.date: 08/20/2025
+ms.date: 08/27/2025
+ms.update-cycle: 3650-days
 ms.subservice: guidance-toolkit
 ms.topic: install-set-up-deploy
 ms.reviewer: jhaskett-msft
@@ -44,7 +45,7 @@ If you don't have administrative privileges, make sure you install the [prerequi
     > [!Important]
     > The CoE CLI works with Azure CLI versions up to 2.38.0.
 
-- PowerShell Core (version 7.2+), available at [/powershell/scripting/install/installing-powershell](/powershell/scripting/install/installing-powershell).
+- PowerShell Core (version 7.2+), available from [Install PowerShell on Windows, Linux, and macOS](/powershell/scripting/install/installing-powershell).
 
 - Git CLI (version 2.37.2+), available at [https://git-scm.com/downloads](https://git-scm.com/downloads).
  
@@ -128,7 +129,7 @@ For a demo of the steps, go to [Video demo of local installation](#video-demo-of
    npm  link
    ```
 
-1. Verify that the CoE CLI is installed.
+1. Verify that the CoE CLI is installed:
 
     ```cmd
     coe --help    

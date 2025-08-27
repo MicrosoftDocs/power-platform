@@ -3,7 +3,7 @@ title: Establish tenant hygiene with the CoE Starter Kit
 description: Establish tenant hygiene, manage environments, and secure your Power Platform with actionable governance strategies using the CoE Starter Kit.
 author: stjeffer
 ms.topic: how-to
-ms.date: 08/08/2025
+ms.date: 08/27/2025
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: jhaskett-msft
@@ -135,8 +135,6 @@ It's crucial to identify the apps and cloud flows that are heavily used within y
 
 #### CoE Starter Kit: Power BI dashboard
 
-The Power BI dashboard in the CoE Starter Kit offers a comprehensive view of the most used apps and flows in your organization. It provides valuable information that helps you make informed decisions. The dashboard provides a quick overview of the most popular apps, the number of users, usage patterns, and any other relevant information.
-
 The Power BI dashboard in the CoE Starter Kit provides visual representations of usage patterns, the number of users, and other data. These insights help you identify compliance issues and ensure your apps and cloud flows are used effectively.
 
 These visualizations help you understand how your organization is using the Power Platform as you identify areas that need attention. By providing clear and actionable insights, the dashboard helps you ensure that your Power Platform solutions are secure, compliant, and aligned with your organizational policies.
@@ -187,7 +185,7 @@ Learn more:
 
 ### Managing apps and cloud flows when the owner leaves the organization
 
-When an employee owns an app or flow within Power Platform and leaves the organization, they might leave built components behind, known as orphaned resources. These resources can pose a security risk if you don't properly manage or maintain them. To address this issue, the CoE Starter Kit includes a process to identify and clean up orphaned resources.
+When an employee owns an app or flow within Power Platform and leaves the organization, they might leave built components behind, known as orphaned resources. These resources can pose a security risk if not properly managed or maintained. To address this issue, the CoE Starter Kit includes a process to identify and clean up orphaned resources.
 
 This clean-up process runs daily checks for any resources owned by former employees. The checks ensure the resources are either reassigned to a new owner or removed from the tenant if they're no longer needed. This component helps keep your Power Platform solutions secure and compliant, even when employee turnover occurs.
 
@@ -212,11 +210,11 @@ The [Power Platform SharePoint community site template](../adoption/sharepoint-s
 
 Identifying the most active makers in your organization provides valuable insights and resources for your organization's Power Platform community. These makers are likely to be highly engaged and knowledgeable about the platform. They can be valuable allies in helping to drive adoption and improve the quality of your organization's solutions.
 
-You can engage the active makers in your organization by:
+You can engage the active makers in your organization with:
 
 - **Hackathons and training delivery**: Active makers can participate in hackathons, training sessions, and other community events to share their knowledge and experiences.
-- **CoE Advisors**: Active makers can join your CoE as advisors, providing input and guidance on future policies, events, and other initiatives.
-- **Promoting Success stories**: Active makers can share their success stories and experiences to help drive adoption and inspire others in the organization.
+- **CoE advisors**: Active makers can join your CoE as advisors, providing input and guidance on future policies, events, and other initiatives.
+- **Promotion of success stories**: Active makers can share their success stories and experiences to help drive adoption and inspire others in the organization.
 - **Opt-in for skills match**: The skills match feature helps makers build a community of makers. Active makers can connect with the organization and community to support their onboarding and upskilling.
 
 By identifying and applying the expertise and enthusiasm of your organization's most active makers, you can build a more engaged and effective Power Platform community.

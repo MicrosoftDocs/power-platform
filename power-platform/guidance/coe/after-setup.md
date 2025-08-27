@@ -3,7 +3,7 @@ title: Update the Center of Excellence (CoE) Starter Kit
 description: Learn how to upgrade, test, and manage new releases for the Power Platform Center of Excellence Starter Kit to keep your organization current.
 author: stjeffer
 ms.topic: how-to
-ms.date: 08/22/2025
+ms.date: 08/27/2025
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: jhaskett-msft
@@ -39,7 +39,7 @@ Each release of the CoE Starter Kit includes release notes that detail bug fixes
 To view the details of a release:
 
 1. Navigate to the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit) in GitHub.
-1. Select the [latest releases](https://github.com/microsoft/coe-starter-kit/releases) notes.
+1. Select the [latest release](https://github.com/microsoft/coe-starter-kit/releases) notes.
 
    :::image type="content" source="media/coe-upgrade5.png" alt-text="Screenshot showing where to find the latest release notes for the CoE Starter Kit.":::
 
@@ -95,7 +95,7 @@ Before installing the upgrade, check that the solution is in a healthy state to 
 
 Making any changes to flows or apps in the solution creates an unmanaged layer. Components with unmanaged layers don't receive updates until you remove that unmanaged layer. Learn more in [Solution layers](/power-platform/alm/solution-layers-alm).
 
-All flows with *Admin \| Sync Template v* in the name are responsible for collecting your tenant's inventory and building the foundation that the CoE Starter Kit relies on. Don't customize these flows. If you have extra requirements for what inventory to collect, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=&labels=coe-starter-kit%2Cenhancement&template=3-coe-starter-kit-feature.yml&title=%5BCoE+Starter+Kit+-+Feature%5D%3A+FEATURE+TITLE) or create your own flow. Learn more in [Extend and customize CoE Starter Kit components](modify-components.md).
+All flows with *Admin \| Sync Template v* in the name are responsible for collecting your tenant's inventory and building the foundation that the CoE Starter Kit relies on. Don't customize these flows. If you have additional requirements on what inventory to collect, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=&labels=coe-starter-kit%2Cenhancement&template=3-coe-starter-kit-feature.yml&title=%5BCoE+Starter+Kit+-+Feature%5D%3A+FEATURE+TITLE) or create your own flow. Learn more in [Extend and customize CoE Starter Kit components](modify-components.md).
 
 Before installing the upgrade, remove unmanaged layers from the inventory flows.
 
@@ -153,7 +153,7 @@ After you remove unmanaged layers, import the new solution version:
  
    :::image type="content" source="/power-platform/guidance/coe/media/coe-upgrade3.png" alt-text="Screenshot showing where to the check the solution history." lightbox="/power-platform/guidance/coe/media/coe-upgrade3.png":::
     
-   The upgrade completes when the end time isn't empty.
+   The upgrade completes when the end time is no longer empty.
  
    :::image type="content" source="/power-platform/guidance/coe/media/coe-upgrade2.png" alt-text="Screenshot showing how to check that the end time for the solution import is not empty." lightbox="/power-platform/guidance/coe/media/coe-upgrade2.png":::
     

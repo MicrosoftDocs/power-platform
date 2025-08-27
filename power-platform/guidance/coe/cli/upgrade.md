@@ -4,7 +4,8 @@ description: Learn how to update the Center of Excellence command line interface
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.custom: ""
-ms.date: 08/20/2025
+ms.date: 08/27/2025
+ms.update-cycle: 3650-days
 ms.subservice: guidance-toolkit
 ms.topic: upgrade-and-migration-article
 ms.reviewer: jhaskett-msft
