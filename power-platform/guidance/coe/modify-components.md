@@ -19,7 +19,7 @@ There are many reasons for why you may want to extend the CoE Starter Kit:
 
 - Capturing additional metadata for apps and flows—for example, as part of the [Compliance process](example-processes.md).
 - Modifying the apps and flows to fit existing processes you may have in place—for example, asking makers to provide additional information in the [Developer Compliance Center](governance-components.md#developer-compliance-center).
-- Customizing the apps to fit with your organization's brand and theme, especially for broadly used apps like the [App Catalog](core-components.md#app-catalog).
+- Customizing the apps to fit with your organization's brand and theme, especially for broadly used apps like the [App Catalog](core-components.md#other-apps).
 - Building additional apps and flows on top of the inventory gathered by the CoE Starter Kit.
 
 This article prepares you to extend the CoE Starter Kit. It provides guidance on:

@@ -61,7 +61,7 @@ There are several flows which need to be turned on for these components:
 You can share these apps with makers or end users, then assign them the **Power Platform Maker SR** security role.
 
 - The **CoE Maker Command Center** for makers.
-- The [**App Catalog**](core-components.md#app-catalog) for end users.
+- The [**App Catalog**](core-components.md#other-apps) for end users.
 
 For more information, see [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment).
 

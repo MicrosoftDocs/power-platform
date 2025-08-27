@@ -24,7 +24,7 @@ ms.custom:
 This section describes key areas of the CoE CLI to help you contribute to the open-source repository.
 
 - [Quick start](#quick-start): Provides links to the technology used to build and test the CLI.
-- [Development environment setup](#development-environment-set-up): Describes how to edit the CLI using Visual Studio Code.
+- [Development environment setup](#development-environment-setup): Describes how to edit the CLI using Visual Studio Code.
 - [Adding a new command](./adding-new-command.md): Describes how to add a new CLI command.
 - [Documentation](./documentation.md): Describes how to add documentation for commands.
 

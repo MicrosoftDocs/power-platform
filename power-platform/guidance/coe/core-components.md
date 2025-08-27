@@ -278,7 +278,7 @@ Use this app to:
 
 :::image type="content" source="media\commandcenter1.png" alt-text="Screenshot showing the Bookmarks page of the CoE Admin Command Center." lightbox="media\commandcenter1.png":::
 
-When you first launch the app, you might have to establish a connection for [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra Resource URI (Application ID URI)** to `https://graph.microsoft.com` for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
+When you first launch the app, you might have to establish a connection for [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra Resource URI (Application ID URI)** to `https://graph.microsoft.com` for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
 #### DLP Impact Analysis
 
