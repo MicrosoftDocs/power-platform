@@ -23,7 +23,7 @@ As part of ongoing efforts to enhance communication security between finance and
 - **Current configuration**: Dual-write currently uses the AppID, **00000015-0000-0000-c000-000000000000**, for communication from finance and operations to Dataverse.
 - **New configuration**: On September 1, 2025, a new AppID, **f1752846-f0df-4766-96f5-c109adf67d7f**, will be used.
 - **Provisioning status**: The new AppID is already included in most provisioned Dataverse environments.
-- **Release timeline**: The change is scheduled to go live on September 2, 2025.
+- **Release timeline**: The change is scheduled to go live on September 10, 2025.
 - **Impact**: This update may affect integration configurations, authentication flows, and environment-specific customizations.
 
 ## Why this change
