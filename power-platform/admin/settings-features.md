@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/21/2025
+ms.date: 08/27/2025
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.custom: NewPPAC
@@ -90,7 +90,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable the usage of preview and experimental AI models in Copilot Studio and in flows and apps using AI prompts or AI Builder model types.  | If **Off**, the environment doesn't have access to AI models that are experimental or in preview. Learn more about the related details in [Administer AI Builder](/ai-builder/administer).  | On |
+| Enable the usage of preview and experimental AI models in Copilot Studio and in flows and apps using AI prompts or AI Builder model types.  | If **Off**, the environment doesn't have access to AI models that are experimental or in preview. Learn more about the related details in [Preview and experimental AI models](preview-experimental-ai-models-rule.md).  | On |
 
 ## AI prompts
 
