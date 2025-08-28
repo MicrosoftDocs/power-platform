@@ -195,13 +195,13 @@ Allow access to all web pages except for the URL `https://www.microsoft.com/` an
 
 This feature allows you to define which applications and screens a desktop flow can interact with in Power Automate for desktop. Endpoints are specified using the application's process name. When the process name is **ApplicationFrameHost**, **Java**, or **Javaw**&mdash;indicating a Universal Windows Platform (UWP) or Java application where multiple instances may share the same name&mdash;Power Automate for desktop uses both the process name and the window display name to accurately identify the target. Wildcards are supported for flexible matching. 
 
-Validation occurs on any action within the UI automation group. It checks the **Process** attribute (indicated by the number 1 in the image) or the **Name** attribute (indicated by the number 2 in the image) in the selector of the targeted screen (as targeted by the arrow in the image). Usually the parent of the related UI elements is used to determine if the interaction is permitted.
+Validation occurs on any action within the UI automation group. It checks the **Process** attribute (indicated by the number 1 in the image) or the **Name** attribute (indicated by the number 2 in the image) in the selector of the targeted screen (as shown by the arrow in the image). Usually the parent of the related UI elements is used to determine if the interaction is permitted.
 
 :::image type="content" source="media/endpoint-filtering-ui-automation.png" alt-text="Screen's selector":::
 
 Endpoint filtering rules don't apply to variables or dynamically-bound endpoints. If an expression includes anything other than a literal string, filtering is bypassed&mdash;potentially allowing access to restricted connector arguments. The default policy behavior is all endpoint filtering policies include a core rule (Allow * or Deny *), defaulting to Allow * (Allow All).
-- When **Allow *** is used: Dynamic values aren't filtered. Any dynamic expression bypasses endpoint filtering, even if specific applications are restricted.
-- When **Deny *** is used: All dynamic values are blocked by default, ensuring stricter enforcement.
+- When **Allow *\** is used: Dynamic values aren't filtered. Any dynamic expression bypasses endpoint filtering, even if specific applications are restricted.
+- When **Deny *\** is used: All dynamic values are blocked by default, ensuring stricter enforcement.
 
 > [!NOTE]
 > - Endpoint filtering isn't enforced if the relevant attributes (**Process** or **Name**) are not part of the selector.
