@@ -32,6 +32,7 @@ To enable or edit Managed Environments, you need the Power Platform Administrato
 
 > [!IMPORTANT]
 > The Managed Environments property must be the same in the source and destination before you can start copy and restore environment lifecycle operations.
+> Dataverse is required to enabled Managed Environments in an environment type!
 
 ## Enable or edit Managed Environments in the admin center
 
