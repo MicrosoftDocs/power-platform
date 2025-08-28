@@ -32,8 +32,8 @@ To enable or edit Managed Environments, you need the Power Platform Administrato
 - Users with the Delegated Admin role or the Environment Admin security role can't change the Managed Environments property in an environment.
 
 > [!IMPORTANT]
-> The Managed Environments property must be the same in the source and destination before you can start copy and restore environment lifecycle operations.
-> Dataverse is required to use Managed Environments in an environment type.
+> - The Managed Environments property must be the same in the source and destination before you can start to copy and restore environment lifecycle operations.
+> - Dataverse is required to use Managed Environments in an environment type.
 
 ## Enable or edit Managed Environments in the admin center
 
