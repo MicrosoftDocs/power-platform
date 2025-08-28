@@ -7,7 +7,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 08/11/2025
+ms.date: 08/12/2025
 ---
 
 # Real-world case studies
@@ -34,6 +34,7 @@ Case studies are detailed accounts of real-world applications and implementation
 | [ABN AMRO Bank enhances AI capabilities with Copilot Studio and Azure services](abn-amro-enhances-ai.md) | This case study covers how ABN AMRO enhanced customer and employee interactions using Copilot Studio and Azure. |
 | [AECOM simplifies project onboarding with Power Platform, Azure, and Microsoft Fabric](aecom-streamlined-onboarding.md) | This case study covers how AECOM streamlined project onboarding using Power Platform, Microsoft Azure, and Microsoft Fabric. |
 | [Cineplex automates business processes](automate-business-processes.md) | This case study covers how Cineplex automates business processes with generative AI and Power Automate. |
+| [Daimler Truck transforms policy management](daimler-truck-modernizes-policies.md) | This case study covers how Daimler Truck modernized policy management using Power Apps, Dataverse, and Managed Environments to enhance efficiency and collaboration. |
 | [Degrees of Change automates nonprofit operations](nonprofit.md) | This case study covers how Degrees of Change automates nonprofit operations with Power Pages, Power Apps, and AI Builder. |
 | [Deutsche Bahn empowers citizen developers](db-empowers-citizen-devs.md) | This case study covers how Deutsche Bahn Group accelerated innovation by empowering their employees to build low-code business applications using Power Platform. |
 | [Epiq streamlines employee onboarding](streamline-employee-onboarding.md) | This case study covers how Epiq streamlines employee onboarding with Power Automate, Microsoft Dataverse, and AI Builder. |

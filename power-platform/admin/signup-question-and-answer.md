@@ -57,7 +57,7 @@ For blocking via options 2 and 3, see [Block trial licenses commands](powerapps-
 
 If a person signs up for a 30 day trial of Microsoft Power Apps, and you choose to not support them inside of your organization, they can't incur costs to your company. When an individual signs up for Microsoft Power Apps, that is a relationship between that individual and Microsoft directly, like any other public cloud services from Microsoft, such as Bing, Wunderlist, OneDrive or Outlook.com, and doesn't imply that the service is provided by your organization.
 
-Finally, if your company wants to restrict the use of its data in Microsoft Power Apps, use [data loss prevention (DLP) policies](prevent-data-loss.md).
+Finally, if your company wants to restrict the use of its data in Microsoft Power Apps, use [data policies](prevent-data-loss.md).
 
 ## Power Apps management and administration
 
@@ -105,9 +105,9 @@ Removing of the Power Apps license or service for a user in your organization, r
     ![Office menu.](./media/signup-question-and-answer/office-waffle.png)
 
 ### How can I restrict my users' ability to access my organization's business data using Power Apps?
-Power Apps allows you to create data zones for business and nonbusiness data, as shown below.  Once these data loss prevention policies are implemented, users are prevented from designing or running Power Apps that combine business and nonbusiness data. For more details, See [Data loss prevention (DLP) policies](prevent-data-loss.md).
+Power Apps allows you to create data zones for business and nonbusiness data, as shown below.  Once these data loss prevention policies are implemented, users are prevented from designing or running Power Apps that combine business and nonbusiness data. For more details, See [Data policies](prevent-data-loss.md).
 
-![Data loss prevention policies.](./media/dlp-assign-connectors.png)
+![Data policies.](./media/dlp-assign-connectors.png)
 
 ### Why did 10,000 licenses for Microsoft Power Apps show up in my Microsoft 365 tenant?
 As a qualifying organization, users in your organization are eligible to try out Microsoft Power Apps  for 30 days, and these trial licenses represent the available capacity for new Power Apps users in your tenant. There's no charge for these licenses. Specifically, there are two possible reasons why you may see a capacity 10,000 (trial) licenses for Power Apps showing up in the Microsoft 365 admin portal:

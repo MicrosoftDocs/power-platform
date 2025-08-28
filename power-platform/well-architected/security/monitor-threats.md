@@ -4,7 +4,7 @@ description: Learn how to implement a monitoring strategy that helps you gain aw
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -138,13 +138,17 @@ By combining several smaller tools, you can emulate some functions of a SIEM sys
 
 **Be proactive about threat detection** and be vigilant for signs of abuse, like identity brute force attacks on an SSH component or an RDP endpoint. Although external threats might generate a lot of noise, especially if the application is exposed to the internet, **internal threats are often a greater concern**. An unexpected brute force attack from a trusted network source or an inadvertent misconfiguration, for instance, should be investigated immediately.
 
-**Keep up with your hardening practices.** Monitoring isn't a substitute for proactively hardening your environment. A larger surface area is prone to more attacks. Tighten controls as much as practice. Detect and disable unused accounts, use an IP firewall, and block endpoints that aren't required with Data Loss Prevention policies, for example.
+**Keep up with your hardening practices.** Monitoring isn't a substitute for proactively hardening your environment. A larger surface area is prone to more attacks. Tighten controls as much as practice. Detect and disable unused accounts, use an IP firewall, and block endpoints that aren't required with data policies, for example.
 
 **Signature-based detection** can inspect a system in detail. It involves looking for signs or correlations between activities that might indicate a potential attack. A detection mechanism might identify certain characteristics that are indicative of a specific type of attack. It might not always be possible to directly detect the command-and-control mechanism of an attack. However, there are often hints or patterns associated with a particular command-and-control process. For example, an attack might be indicated by a certain flow rate from a request perspective, or it might frequently access domains that have specific endings.
 
 Detect **anomalous user access patterns** so that you can identify and investigate deviations from expected patterns. This involves comparing current user behavior with past behavior to spot anomalies. Although it might not be feasible to perform this task manually, you can use threat intelligence tools to do it. Invest in **User and Entity Behavior Analytics (UEBA) tools** that collect user behavior from monitoring data and analyze it. These tools can often perform predictive analysis that maps suspicious behaviors to potential types of attack.
 
 **Detect threats during pre-deployment and post-deployment stages.** During the pre-deployment phase, incorporate vulnerability scanning into pipelines and take necessary actions based on the results. Post-deployment, continue to conduct vulnerability scanning. You can use tools like Microsoft Defender for Containers, which scans container images. Include the results in the collected data. For information about secure development practices, see [Recommendations for safe deployment practices](../operational-excellence/safe-deployments.md).
+
+## Example
+
+[Distributed tracing across multiple services in Power Platform](/power-platform/architecture/key-concepts/distributed-tracing) provides an example scenario and visual representation of how to trace events across multiple services. This guidance provides practical applications and use cases for distributed tracing and explains how to implement it across multiple services in Power Platform.
 
 ## Power Platform facilitation
 
@@ -160,7 +164,7 @@ Microsoft Sentinel solution for Microsoft Power Platform allows customers to det
 - Phishing attacks made through Power Apps
 - Power Automate flows activity by departing employees
 - Microsoft Power Platform connectors added to an environment
-- Update or removal of Microsoft Power Platform data loss prevention policies
+- Update or removal of Microsoft Power Platform data policies
 
 For more information, see [Microsoft Sentinel solution for Microsoft Power Platform overview](/azure/sentinel/business-applications/power-platform-solution-overview).
 
@@ -175,7 +179,7 @@ For more information, see:
 - [Copilot Studio activity logging](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Power Pages activity logging](/power-platform/admin/logging-power-pages)
 - [Power Platform connector activity logging](/power-platform/admin/connector-events-power-platform)
-- [Data loss prevention activity logging](/power-platform/admin/dlp-activity-logging)
+- [Data policy activity logging](/power-platform/admin/dlp-activity-logging)
 - [Power Platform administrative actions activity logging](/power-platform/admin/admin-activity-logging)
 - [Microsoft Dataverse and model-driven apps activity logging](/power-platform/admin/enable-use-comprehensive-auditing)
 
@@ -212,6 +216,7 @@ DevOps advocates change management of workloads via continuous integration and c
 
 ## Related information
 
+- [Detect threats to your organization](/power-platform/guidance/adoption/threat-detection)
 - [What is Microsoft Sentinel?](/azure/sentinel/overview)
 - [Threat intelligence integration in Microsoft Sentinel](/azure/sentinel/threat-intelligence-integration)
 - [Identify advanced threats with User and Entity Behavior Analytics (UEBA) in Microsoft Sentinel](/azure/sentinel/identify-threats-with-entity-behavior-analytics)

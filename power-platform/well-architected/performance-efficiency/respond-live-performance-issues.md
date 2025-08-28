@@ -4,7 +4,7 @@ description: Learn how to respond to live performance issues and use root cause 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---

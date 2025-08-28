@@ -87,6 +87,13 @@
     },
     "template": [],
     "dest": "power-platform",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "rules": {
+      "filename-incomplete": {
+        "exclude": [
+          "power-fx/reference/includes/**/*.md"
+        ]
+      } 
+    }
   }
 }

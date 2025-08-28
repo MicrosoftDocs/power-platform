@@ -7,7 +7,7 @@ ms.component: pa-admin
 ms.topic: best-practice
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 ms.date: 05/14/2025
 ms.contributors:
   - vabhavir
