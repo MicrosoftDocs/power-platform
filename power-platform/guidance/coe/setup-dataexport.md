@@ -21,7 +21,7 @@ If your inventory comes from [Data Export](setup.md#what-data-source-should-i-us
 > - Only complete the steps in this article if you configured [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
 > - When you see data in your storage account set up to receive data from Data Export, use the Data Export configuration steps in this article. This configuration might show up to five days from the initial setup of Data Export in the Power Platform admin center.
 
-### Copy Azure Storage account URL
+## Copy Azure Storage account URL
 
 1. Navigate to the [Azure portal](https://portal.azure.com).
 1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
@@ -29,7 +29,7 @@ If your inventory comes from [Data Export](setup.md#what-data-source-should-i-us
 1. Copy the Data Lake Storage URL to a text editor such as Notepad.
 1. Append `/powerplatform` to the URL.
 
-### Confirm Storage Account permission
+## Confirm Storage Account permission
 
 1. Navigate to the [Azure portal](https://portal.azure.com).
 1. Search for and select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
@@ -39,14 +39,14 @@ If your inventory comes from [Data Export](setup.md#what-data-source-should-i-us
 
    :::image type="content" source="media/byodl-2.png" alt-text="Screenshot that shows the Current role assignments page in the Access Control (IAM) menu." lightbox="media/byodl-2.png":::
 
-### Copy Environment Web API endpoint
+## Copy Environment Web API endpoint
 
 1. Navigate to [make.powerapps.com](https://make.powerapps.com).
 1. Select the environment with the CoE Starter Kit.
 1. Select the **Settings** icon, then select **Developer resources**.
 1. Copy the Web API endpoint.
 
-### Configure connections to data sources
+## Configure connections to data sources
 
 1. Navigate to [make.powerapps.com](https://make.powerapps.com).
 
