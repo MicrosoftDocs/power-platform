@@ -3,8 +3,7 @@ title: Install the CoE CLI (Deprecated)
 description: Learn how to install and set up the Center of Excellence command line interface using local or Docker methods.
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.custom: ""
-ms.date: 08/27/2025
+ms.date: 08/28/2025
 ms.update-cycle: 3650-days
 ms.subservice: guidance-toolkit
 ms.topic: install-set-up-deploy

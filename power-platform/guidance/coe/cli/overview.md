@@ -1,9 +1,8 @@
 ---
 title: Center of Excellence (CoE) command line interface (CLI) overview (Deprecated)
-description: Learn how to automate setup and administration tasks for the CoE Starter Kit using command-line tools.
+description: Learn how to automate setup and administration tasks for the Center of Excellence Starter Kit using command-line tools.
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.custom: ""
 ms.date: 08/27/2025
 ms.update-cycle: 3650-days
 ms.subservice: guidance-toolkit

@@ -1,6 +1,6 @@
 ---
 title: CoE CLI development adding a new command (Deprecated)
-description: Learn how to add a new command to the Center of Excellence Command-Line interface application.
+description: Learn how to add a new command to the Center of Excellence command-line interface application.
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.date: 08/27/2025

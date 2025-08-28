@@ -1,6 +1,6 @@
 ---
 title: CoE CLI development (Deprecated)
-description: Learn how to contribute to the Center of Excellence CLI, set up your environment, and add new commands using Visual Studio Code.
+description: Learn how to contribute to the Center of Excellence command-line interface, set up your environment, and add new commands using Visual Studio Code.
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.date: 08/27/2025

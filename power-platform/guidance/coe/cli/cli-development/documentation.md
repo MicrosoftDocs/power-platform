@@ -1,6 +1,6 @@
 ---
 title: CoE CLI development documentation (Deprecated)
-description: Learn how to document and manage commands for the CoE CLI, including add Markdown pages and record command-line sessions.
+description: Learn how to document and manage commands for the Center of Excellence command-line interface, including add Markdown pages and record command-line sessions.
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.date: 08/27/2025

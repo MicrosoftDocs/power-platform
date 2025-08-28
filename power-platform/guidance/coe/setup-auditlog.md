@@ -1,11 +1,11 @@
 ---
-title: Collect audit logs using a custom connector (deprecated)
-description: "The Audit Log Sync flow connects to the Audit Log using a custom connector to gather telemetry data, such as unique users and launches, for apps in Microsoft 365."
+title: Collect audit logs using a custom connector (Deprecated)
+description: Learn how to set up a custom connector to gather Microsoft 365 app telemetry, such as unique users and launches.
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 09/26/2024
+ms.update-cycle: 3650-days
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -14,7 +14,7 @@ search.audienceType:
 ms.custom: sfi-image-nochange
 ---
 
-# Collect audit logs using a custom connector (deprecated)
+# Collect audit logs using a custom connector (Deprecated)
 
 > [!IMPORTANT]
 > Using the dedicated **Center of Excellence - Audit Log** solution and the Office 365 Management custom connector to collect audit log events are deprecated. The solution and custom connector will be removed from the CoE Starter Kit in August 2023.
