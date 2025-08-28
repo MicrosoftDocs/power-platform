@@ -94,7 +94,7 @@ If you see an *Error Loading Control* warning on opening the Setup Wizard app, i
 
 You can choose your data source for inventory. **Cloud flows** is the default and currently recommended path for gathering your inventory.
 
-However, you might want to experiment with the **Data Export (Preview)** data source. To experiment, use the [Data Export inventory setup](setup-dataexport.md) instructions when you get to the **Configure dataflows** page.
+However, you might want to experiment with the **Data export (Preview)** data source. To experiment, use the [Data Export inventory setup](setup-dataexport.md) instructions when you get to the **Configure dataflows** page.
 
 :::image type="content" source="media\setupWizard-datasource.png" alt-text="Screenshot that shows the Setup Wizard inventory data source step." lightbox="media\setupWizard-datasource.png":::
 
