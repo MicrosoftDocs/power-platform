@@ -1,6 +1,6 @@
 ---
 title: Migrate the dual-write app to strengthen communication from finance and operations to Dataverse
-description: Learn how to...
+description: Learn how to migrate the dual-write app to strengthen communication from finance and operations to Dataverse. 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
@@ -38,7 +38,7 @@ Dual-write now uses this abstraction. All recent quality updates contain this en
 
     :::image type="content" source="media/audit-history.png" alt-text="Tenant capacity extension in admin center." lightbox="media/audit-history.png":::
 
-1. As part of the dual-write functionality, Microsoft-provided, standard solution dependencies get migrated to the new app. The packages are available on app source for proactive uptake until Sept 1, 2025. Microsoft will be making updates on these packages so that there are no breaking changes on the dual-write live sync. The following packages will be updated to the latest available version.
+1. As part of the dual-write functionality, Microsoft-provided, standard solution dependencies get migrated to the new app. The packages are available on app source for proactive uptake until September 10, 2025. Microsoft will be making updates on these packages so that there are no breaking changes on the dual-write live sync. The following packages will be updated to the latest available version.
   
     - Dual-write application core solutions
     - Dual-write core solution
