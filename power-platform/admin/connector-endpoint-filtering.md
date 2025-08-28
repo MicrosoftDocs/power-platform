@@ -29,7 +29,6 @@ search.app:
 
 # Connector endpoint filtering (preview)
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 [This article is pre-release documentation and is subject to change.]
 
 Connector endpoint filtering allows admins to govern which specific endpoints makers can connect to when building apps, flows, or chatbots. It's configured within a data policy, and it's exclusively available for the following connectors:
@@ -41,7 +40,7 @@ Connector endpoint filtering allows admins to govern which specific endpoints ma
 - Azure Blob Storage
 - SMTP
 - Browser Automation
-- UI automation
+- UI Automation
 
 When a maker tries to connect their app, flow, or chatbot to a blocked endpoint, they encounter a data policy error message.
 
@@ -194,7 +193,7 @@ Allow access to all web pages except for the URL `https://www.microsoft.com/` an
 
 ### UI Automation
 
-This feature enables you to define which applications and screens a desktop flow can interact with in Power Automate for desktop. Endpoints are specified using the application's process name. When the process name is 'ApplicationFrameHost', 'java', or 'javaw' - indicating a UWP or Java application where multiple instances may share the same name - Power Automate for Desktop uses both the process name and the window display name to accurately identify the target. Wildcards are supported for flexible matching. Validation occurs on any action within the UI automation group. It checks the Process (1) and/or Name (2) attributes in the selector of the targeted screen (as targeted by the arrow below), usually the parent of the related UI elements to determine if the interaction is permitted.
+This feature allows you to define which applications and screens a desktop flow can interact with in Power Automate for desktop. Endpoints are specified using the application's process name. When the process name is **ApplicationFrameHost**, **java**, or **javaw**&mdash;indicating a UWP or Java application where multiple instances may share the same name&mdash;Power Automate for Desktop uses both the process name and the window display name to accurately identify the target. Wildcards are supported for flexible matching. Validation occurs on any action within the UI automation group. It checks the Process (1) and/or Name (2) attributes in the selector of the targeted screen (as targeted by the arrow below), usually the parent of the related UI elements to determine if the interaction is permitted.
 
 :::image type="content" source="media/endpoint-filtering-ui-automation.png" alt-text="Screen's selector":::
 
