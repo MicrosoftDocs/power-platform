@@ -195,7 +195,7 @@ Allow access to all web pages except for the URL `https://www.microsoft.com/` an
 
 This feature enables you to define which applications and screens a desktop flow can interact with in Power Automate for desktop. Endpoints are specified using the application's process name. When the process name is 'ApplicationFrameHost', 'java', or 'javaw' - indicating a UWP or Java application where multiple instances may share the same name - Power Automate for Desktop uses both the process name and the window display name to accurately identify the target. Wildcards are supported for flexible matching. Validation occurs on any action within the UI automation group. It checks the Process (1) and/or Name (2) attributes in the selector of the targeted screen (as targeted by the arrow below), usually the parent of the related UI elements to determine if the interaction is permitted.
 
-:::image type="content" source="media/endpoint_filtering_ui_automation.png" alt-text="Screen's selector":::
+:::image type="content" source="media/endpoint-filtering-ui-automation.png" alt-text="Screen's selector":::
 
 Endpoint filtering rules do not apply to variables or dynamically bound endpoints. If an expression includes anything other than a literal string, filtering is bypassed—potentially allowing access to restricted connector arguments. The default policy behavior is all endpoint filtering policies include a core rule (Allow * or Deny *), defaulting to Allow * (Allow All).
 - When Allow * is enabled:
