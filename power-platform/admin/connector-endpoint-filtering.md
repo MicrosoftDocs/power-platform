@@ -210,9 +210,9 @@ Endpoint filtering rules don't apply to variables or dynamically-bound endpoints
 
 Consider the scenario as an example. To allow access to all applications and screens, except those where the **Process** or **Name** attribute is either exactly **Calculator** or contains the string **Java**, you would configure the following rules:
 
-1. Deny **Calculator**
-1. Deny **\*Java\***
-1. Allow **\***
+1. Deny `Calculator`
+1. Deny `*Java*`
+1. Allow `*`
 
 ## PowerShell support for endpoint filtering
 
