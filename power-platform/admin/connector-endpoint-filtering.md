@@ -3,12 +3,13 @@ title: Connector endpoint filtering (preview)
 description: Learn how to configure connector endpoint filtering in data policies to control app, flow, and chatbot connections.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/19/2025
+ms.date: 08/28/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
 contributors:
+  - NikosMoutzourakis 
   - mikferland-msft
   - mihaelablendea
   - nimoutzo
