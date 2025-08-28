@@ -3,7 +3,7 @@ title: Set up inventory components
 description: Learn how to set up inventory components in the Power Platform Center of Excellence Starter Kit to sync, monitor, and manage Power Platform resources.
 author: manuelap-msft
 ms.topic: how-to
-ms.date: 08/22/2025
+ms.date: 08/28/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -18,7 +18,7 @@ The flows and dataflows in this solution sync all your resources into tables. Th
 ## Prerequisites
 
 1. Complete the [CoE Starter Kit setup steps](setup.md).
-1. [Create your environment](setup.md#create-your-environments).
+1. [Create your environments](setup.md#create-your-environments).
 1. Sign in with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 
 > [!NOTE]

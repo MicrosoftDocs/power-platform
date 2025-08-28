@@ -4,7 +4,7 @@ description: Gain deep insights into your Microsoft Power Platform adoption with
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/27/2025
+ms.date: 08/28/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -21,14 +21,14 @@ The Power BI dashboard of the Center of Excellence (CoE) Starter Kit provides a 
 
 The dashboard provides analytics and data for the following areas:
 
-- [**Monitor with the CoE Power BI dashboard**](power-bi-monitor.md): Oversight of tenant resources
-- [**Govern with the CoE Power BI dashboard**](power-bi-govern.md): Drive actions through insights
-- [**Nurture in the CoE Power BI dashboard**](power-bi-nurture.md): Learn about your community
+- [**Monitor**](power-bi-monitor.md): Oversight of tenant resources
+- [**Govern**](power-bi-govern.md): Drive actions through insights
+- [**Nurture**](power-bi-nurture.md): Learn about your community
 
 To use the dashboard, start by installing the [core components](setup-core-components.md) of the CoE Starter Kit and configure the Power BI dashboard by following the [dashboard setup instructions](setup-powerbi.md).
 
 >[!NOTE]
->Screenshots are taken from a sample of the report [published as an app](/power-bi/collaborate-share/service-create-distribute-apps). If you work in Power BI Desktop or you have published the report to a workspace, your navigation and view will be different.
+>Screenshots are taken from a sample of the report [published as an app](/power-bi/collaborate-share/service-create-distribute-apps). If you work in Power BI Desktop or have published the report to a workspace, your navigation and view will be different.
 
 The first page of the dashboard provides an overview of all areas and their purpose, in addition to buttons to use to navigate to different sections and pages.
 
