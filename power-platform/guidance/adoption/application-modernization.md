@@ -274,7 +274,7 @@ To evaluate an application, we recommend that you first determine whether it's s
 
 For example, if you determine an application isn't a good fit because Power Apps is missing a required control, you can use the [Power Apps component framework](/power-apps/developer/component-framework/reference/) (PCF) and traditional code to build a custom control. Another example is an app that has complex logic. You could centralize the logic in an API that Power Apps can access using a custom connector. In both these examples, Power Platform extensibility allowed most of the app to be built with low-code components, bridging the gaps with traditionally developed code.
 
-NSure.com, a proprietary online insurance shopping platform, offers a real-world example. The company's initial launch relied on traditionally developed Angular, Xamarin, and Azure services. By adding Power Platform and Dynamics 365, NSure.com created a next-generation solution using both low-code and traditional coding techniques, as the following diagram illustrates. [Learn more about the company's journey.](https://www.microsoft.com/en/customers/story/1728829430186194098-nsure-power-platform-insurance-usa)
+NSure.com, a proprietary online insurance shopping platform, offers a real-world example. The company's initial launch relied on traditionally developed Angular, Xamarin, and Azure services. By adding Power Platform and Dynamics 365, NSure.com created a next-generation solution using both low-code and traditional coding techniques, as the following diagram illustrates. [Learn more about the company's journey.](https://www.microsoft.com/customers/story/1728829430186194098-nsure-power-platform-insurance-usa)
 
 :::image type="content" source="media/app-mod/image2.png" alt-text="Diagram illustrating Nsure.com's insurance quotation process incorporating both traditional code and low-code components.":::
 
@@ -543,7 +543,7 @@ The following diagram illustrates an example of inbound and outbound events in a
 
 Organizations should also consider prebuilt integration options available from third parties on Microsoft AppSource. For example, Microsoft has a prebuilt solution for organizations that need to integrate SAP with Power Platform. This prebuilt solution incorporates apps and flows and adds new functionalities that facilitate communication between your organization's SAP system and Power Platform.
 
-For example, Ernst & Young used the prebuilt SAP integration to rapidly develop a solution to optimize a high-frequency global finance process. The following diagram of the [company's PowerPost solution](https://www.microsoft.com/en/customers/story/25003-ey-global-services-limited-power-apps?msockid=3611ba047493699d18b4ae1575ee6814) shows how finance users post documents to its General Ledger SAP ERP system using Power Platform.
+For example, Ernst & Young used the prebuilt SAP integration to rapidly develop a solution to optimize a high-frequency global finance process. The following diagram of the [company's PowerPost solution](https://www.microsoft.com/customers/story/25003-ey-global-services-limited-power-apps?msockid=3611ba047493699d18b4ae1575ee6814) shows how finance users post documents to its General Ledger SAP ERP system using Power Platform.
 
 :::image type="content" source="media/app-mod/image10.png" alt-text="Diagram of the Ernst & Young integrated SAP solution.":::
 
@@ -701,12 +701,12 @@ Every organization's journey to application modernization is unique. Your Micros
 - [Power Fx open-sourced repository on GitHub](https://github.com/microsoft/Power-Fx)
 - [CoE Starter Kit](/power-platform/guidance/coe/starter-kit)
 - [Power Platform Adoption Assessment](/assessments/3c62fd23-9d36-491c-8941-26d5553365f8/)
-- [Digital insurance agency automates a complex purchasing process using Power Platform](https://www.microsoft.com/en/customers/story/1728829430186194098-nsure-power-platform-insurance-usa)
+- [Digital insurance agency automates a complex purchasing process using Power Platform](https://www.microsoft.com/customers/story/1728829430186194098-nsure-power-platform-insurance-usa)
 - [PCF Gallery](https://pcf.gallery/)
-- [EY redesigns its global finance process with Microsoft Power Platform](https://www.microsoft.com/en/customers/story/25003-ey-global-services-limited-power-apps?msockid=3611ba047493699d18b4ae1575ee6814)
+- [EY redesigns its global finance process with Microsoft Power Platform](https://www.microsoft.com/customers/story/25003-ey-global-services-limited-power-apps?msockid=3611ba047493699d18b4ae1575ee6814)
 - [Azure Private Link](/power-bi/enterprise/service-security-private-links)
 - [Microsoft Azure ExpressRoute](/power-platform/guidance/expressroute/overview)
-- [Power Platform Release Planner](https://releaseplans.microsoft.com/en-US/?app=Power+Apps)
+- [Power Platform Release Planner](https://releaseplans.microsoft.com?app=Power+Apps)
 - [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 - [Microsoft outlines framework for building AI apps and copilots; expands AI plugin ecosystem](https://news.microsoft.com/source/features/ai/microsoft-outlines-framework-for-building-ai-apps-and-copilots-expands-ai-plugin-ecosystem/)
 
