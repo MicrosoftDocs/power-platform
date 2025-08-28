@@ -193,28 +193,25 @@ Allow access to all web pages except for the URL `https://www.microsoft.com/` an
 
 ### UI Automation
 
-This feature allows you to define which applications and screens a desktop flow can interact with in Power Automate for desktop. Endpoints are specified using the application's process name. When the process name is **ApplicationFrameHost**, **java**, or **javaw**&mdash;indicating a UWP or Java application where multiple instances may share the same name&mdash;Power Automate for Desktop uses both the process name and the window display name to accurately identify the target. Wildcards are supported for flexible matching. Validation occurs on any action within the UI automation group. It checks the Process (1) and/or Name (2) attributes in the selector of the targeted screen (as targeted by the arrow below), usually the parent of the related UI elements to determine if the interaction is permitted.
+This feature allows you to define which applications and screens a desktop flow can interact with in Power Automate for desktop. Endpoints are specified using the application's process name. When the process name is **ApplicationFrameHost**, **Java**, or **Javaw**&mdash;indicating a Universal Windows Platform (UWP) or Java application where multiple instances may share the same name&mdash;Power Automate for desktop uses both the process name and the window display name to accurately identify the target. Wildcards are supported for flexible matching. 
+
+Validation occurs on any action within the UI automation group. It checks the **Process** attribute (indicated by the number 1 in the image) or the **Name** attribute (indicated by the number 2 in the image) in the selector of the targeted screen (as targeted by the arrow in the image). Usually the parent of the related UI elements is used to determine if the interaction is permitted.
 
 :::image type="content" source="media/endpoint-filtering-ui-automation.png" alt-text="Screen's selector":::
 
-Endpoint filtering rules do not apply to variables or dynamically bound endpoints. If an expression includes anything other than a literal string, filtering is bypassed—potentially allowing access to restricted connector arguments. The default policy behavior is all endpoint filtering policies include a core rule (Allow * or Deny *), defaulting to Allow * (Allow All).
-- When Allow * is enabled:
-  - Dynamic values are not filtered. Any dynamic expression will bypass endpoint filtering, even if specific applications are restricted.
-- When Deny * is enabled:
-  - All dynamic values are blocked by default, ensuring stricter enforcement.
+Endpoint filtering rules don't apply to variables or dynamically-bound endpoints. If an expression includes anything other than a literal string, filtering is bypassed&mdash;potentially allowing access to restricted connector arguments. The default policy behavior is all endpoint filtering policies include a core rule (Allow * or Deny *), defaulting to Allow * (Allow All).
+- When **Allow *** is used: Dynamic values aren't filtered. Any dynamic expression bypasses endpoint filtering, even if specific applications are restricted.
+- When **Deny *** is used: All dynamic values are blocked by default, ensuring stricter enforcement.
 
 > [!NOTE]
-> - Endpoint filtering is not enforced if the relevant attributes (Process or Name) are not part of the selector.
-> - Endpoint filtering is not supported for certain Windows OS UI elements, including desktop icons, taskbar buttons, and components within the Start menu.
+> - Endpoint filtering isn't enforced if the relevant attributes (**Process** or **Name**) are not part of the selector.
+> - Endpoint filtering isn't supported for certain Windows operating system UI elements, including desktop icons, taskbar buttons, and components within the **Start** menu.
 
-The following is an example scenario:
+Consider the scenario as an example. To allow access to all applications and screens, except those where the **Process** or **Name** attribute is either exactly **Calculator** or contains the string **Java**, you would configure the following rules:
 
-To allow access to all applications and screens except those where the Process or Name attribute is either exactly `Calculator` or contains the string `Java`, you would configure the following rules:
-
-1. Deny `Calculator`
+1. Deny **Calculator**
 1. Deny `*Java*`
 1. Allow `*`
-
 
 ## PowerShell support for endpoint filtering
 
