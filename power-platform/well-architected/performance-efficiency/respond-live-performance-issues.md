@@ -4,7 +4,7 @@ description: Learn how to respond to live performance issues and use root cause 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -95,7 +95,7 @@ It's often best to work in parallel with Microsoft Support. For example, conside
 
 It's important to make support contact information available to the team. Keep in mind that Microsoft Support might also need access to data to effectively engage in problem solving.
 
-For more information, see [Get Help + Support in Power Platform](/power-platform/admin/get-help-support).
+For more information, see [Get Support in Power Platform](/power-platform/admin/get-help-support).
 
 ### Learn from findings
 

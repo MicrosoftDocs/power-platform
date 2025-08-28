@@ -1,13 +1,13 @@
 ﻿---
 title: Property rental portal with AI-driven search and payment processing
 description: Discover how to build a property rental portal with AI-driven search and payment processing using Power Platform and Microsoft Azure.
-#customer intent: As a Power Platform user, I want to visualize the major components of the rental portal so that I can design a well-architected solution.
+#customer intent: As a business decision maker, I want to visualize the major components of the AI-driven rental portal so that I can design a well-architected solution.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
 ms.date: 04/17/2025
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 contributors:
   - manuelap-msft
 search.audienceType:

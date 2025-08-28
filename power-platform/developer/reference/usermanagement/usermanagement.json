@@ -15,7 +15,7 @@
         "tags": [
           "Users"
         ],
-        "summary": "Grants requesting tenant administrator the system administrator role within Dataverse in the environment.",
+        "summary": "Apply the system administrator role to the selected user.",
         "operationId": "ApplyAdminRole",
         "parameters": [
           {

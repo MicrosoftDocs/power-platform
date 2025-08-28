@@ -5,18 +5,20 @@ author: sericks007
 ms.reviewer: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.custom: 
-  - "admin-security"
-  - NewPPAC
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/29/2025
 search.audienceType: 
   - admin
 contributors:
-- shahzorkhan123 
-- srpoduri
-- val-bc 
+  - shahzorkhan123 
+  - srpoduri
+  - val-bc 
+ms.custom:
+  - "admin-security"
+  - NewPPAC
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 # Create users
 
@@ -308,7 +310,7 @@ By default, all licensed users are created with an access mode of **Read-Write**
 1. In the command bar, select **...**, then choose **Manage user in Dynamics 365**.
 1. In the user form, select the **Administration** tab.
 1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Read-Write**.  
-1. In the coammand bar, select **Save** to apply the changes.
+1. In the command bar, select **Save** to apply the changes.
    
 ### [Classic admin center](#tab/classic)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -320,7 +322,7 @@ By default, all licensed users are created with an access mode of **Read-Write**
 1. In the command bar, select **...**, then choose **Manage user in Dynamics 365**.
 1. In the user form, select the **Administration** tab.
 1. In the **Client Access License (CAL) Information** pane, from the **Access Mode** list, select **Read-Write**.  
-1. In the coammand bar, select **Save** to apply the changes.
+1. In the command bar, select **Save** to apply the changes.
 ---
 
 ## Create an administrative user account

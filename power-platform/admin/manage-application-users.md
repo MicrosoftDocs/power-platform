@@ -7,15 +7,18 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/04/2024
+ms.date: 06/05/2025
 search.audienceType: 
   - admin
 contributors:
   - abhijananddv
+  - lavanyapg
+ms.contributors:
+  - lsuresh
+ms.custom: sfi-image-nochange
+  
 ---
 # Manage application users in the Power Platform admin center
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 We're in the process of moving application user management from the legacy web client, as documented in [Enable or disable application users](create-users.md#enable-or-disable-user-accounts). Follow these steps to manage application users in the Power Platform admin center.
 
@@ -28,28 +31,36 @@ We're in the process of moving application user management from the legacy web c
 
 On the **Application users** page, you can view and manage application users. The **Custom** app type is your local app registration, as created in Microsoft Entra ID.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
+# [New admin center](#tab/new)
 
-1. Select **Environments**, and then select an environment from the list.
-
-1. Select **Settings**.
-
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. Select **Settings**. 
 1. Select **Users + permissions**, and then select **Application users**.
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
+1. Select **Environments**, and then select an environment from the list.
+1. Select **Settings**.
+1. Select **Users + permissions**, and then select **Application users**.
+
+---
 
 ## Create an application user
 
 You can create an unlicensed application user in your environment. This application user is given access to your environment's data on behalf of the user who's using your application.
 
-In an environment, you can only have one application user for each Microsoft Entra&ndash;registered application.
+In an environment, you can only have one application user for each Microsoft Entra&ndash;registered application. 
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
+# [New admin center](#tab/new)
 
-1. Select **Environments**, and then select an environment from the list.
-
-1. Select **Settings**.
-
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. Select **Settings**. 
 1. Select **Users + permissions**, and then select **Application users**.
-
 1. Select **+ New app user** to open the **Create a new app user** page.
 
    :::image type="content" source="media/create-new-app-user.png" alt-text="Screenshot of Create a new application user.":::
@@ -71,29 +82,70 @@ In an environment, you can only have one application user for each Microsoft Ent
 
 1. Select **Create**.
 
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
+1. Select **Environments**, and then select an environment from the list.
+1. Select **Settings**.
+1. Select **Users + permissions**, and then select **Application users**.
+1. Select **+ New app user** to open the **Create a new app user** page.
+
+   :::image type="content" source="media/create-new-app-user.png" alt-text="Screenshot of Create a new application user.":::
+
+1. Select **+ Add an app** to choose the registered Microsoft Entra application that was created for the selected user, and then select **Add**.
+
+   > [!NOTE]
+   > In addition to entering the Application Name or Application ID, you can also enter an Azure Managed Identity Application ID. For Managed Identity, do not enter the Managed Identity Application Name, use the Managed Identity Application ID instead.
+   >
+   > Enterprise applications don't show in the list of applications, only Microsoft Entra app registrations show in the list. Search for the multitenant application by name or ID to assign it to the application user.  
+
+1. The selected Microsoft Entra app is displayed under **App**. You can select **Edit** (![Edit.](media/edit-button.png)) to choose another Microsoft Entra application. Under **Business Unit**, select a business unit from the dropdown list.  
+
+   :::image type="content" source="media/create-new-app-user-business-unit.png" alt-text="Screenshot of select a business unit.":::
+
+1. After choosing a business unit, you can select ![Edit.](media/edit-button.png) for **Security roles** to choose security roles for the chosen business unit to add to the new application user. After adding security roles, select **Save**.
+
+   :::image type="content" source="media/create-new-app-user-security-roles.png" alt-text="Screenshot of Add security roles to the new application user.":::
+
+1. Select **Create**.
+
+---
+
 ## View or edit the details of an application user
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
+To view or edit the details of an application user, complete the following steps:
 
-1. Select **Environments**, and then select an environment from the list.
+# [New admin center](#tab/new)
 
-1. Select **Settings**.
-
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. Select **Settings**. 
 1. Select **Users + permissions**, and then select **Application users**.
-
 1. Select an application user, and then select **Details**.
 
-    The **Details** page shows the following properties for the application user:
+# [Classic admin center](#tab/classic)
 
-    - Name
-    - Microsoft Entra application ID
-    - State
-    - Assigned security roles
-    - App type
-    - Business unit
-    - Email address
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
+1. Select **Environments**, and then select an environment from the list.
+1. Select **Settings**.
+1. Select **Users + permissions**, and then select **Application users**.
+1. Select an application user, and then select **Details**.
 
-    The business unit, email address, and security roles can be edited.
+
+---
+
+The **Details** page shows the following properties for the application user:
+
+- Name
+- Microsoft Entra application ID
+- State
+- Assigned security roles
+- App type
+- Business unit
+- Email address
+
+You can edit only the business unit, email address, and security roles properties.
 
 ## Sync the application user name with the Microsoft Entra application name  
 
@@ -104,7 +156,7 @@ When an application user is first created, the username is the same as the name 
 
 ## Manage roles for an application user
 
-In addition to using the entry point on the **Details** page to manage roles, you can select **Edit security Roles** on the menu bar on the **Application users** page. If the application user has roles assigned already, those roles appear as selected on the page.
+In addition to using the entry point on the **Details** page to manage roles, you can select **Edit security roles** on the menu bar on the **Application users** page. If the application user has roles assigned already, those roles appear as selected on the page.
 
 You can select or deselect roles, and then select **Save**. All selected roles become the current assigned roles for the application user. Any unselected roles aren't assigned.
 
@@ -113,15 +165,17 @@ You can select or deselect roles, and then select **Save**. All selected roles b
 
 ## Activate or deactivate an application user
 
-On the **Application user** page, do one of the following:
+To activate or deactivate an application user, complete the following steps:
 
-- To activate an application user, select **Activate** on the menu bar, and then select **Activate** in the confirmation dialog.  
+1. Go to the **Application user** page. 
 
-- To deactivate an application user, select **Deactivate** on the menu bar, and then select **Deactivate** in the confirmation dialog.
+    - To activate an application user, select **Activate** on the menu bar, and then select **Activate** in the confirmation dialog.  
+
+    - To deactivate an application user, select **Deactivate** on the menu bar, and then select **Deactivate** in the confirmation dialog.
 
 ## Delete an inactive, application user 
 
-To delete an inactive application user, complete the following steps.
+To delete an inactive application user, complete the following steps:
 
 1. Go to the **Application user** page.
 1. Select an inactive application user.
@@ -133,8 +187,22 @@ To delete an inactive application user, complete the following steps.
 
 ## View the details of system-provided application users
 
-
 In each of your environments, there's a set of [system-provided application users](system-application-users.md#application-users). You can now view these application users from the Power Platform admin center.
+
+# [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. Select **Settings**. 
+1. Select **Users + permissions**, and then select **Application users**.
+1. Select the **Filter** option from the command bar.
+1. Select the **Platform** option. A list of the platform, application users in the environment is displayed.
+1. Select an application user.
+1. Select **Details** from the command bar to view details of the platform, application user.
+1. Select **Close** to return to the application user list.
+
+# [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 1. Select **Environments**, and then select an environment from the list.
@@ -145,3 +213,7 @@ In each of your environments, there's a set of [system-provided application user
 1. Select an application user.
 1. Select **Details** from the command bar to view details of the platform, application user.
 1. Select **Close** to return to the application user list.
+
+---
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn how to create intentional segmentation in your architecture a
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -114,6 +114,10 @@ Consider consistency while accommodating several organizational models when assi
 
 Segmentation allows you to isolate workload resources from other parts of the organization or even within the team. Power Platform constructs, such as environments and solutions, are ways of organizing your resources that promote segmentation.
 
+## Example
+
+Review the reference architecture for how to [secure Power Platform access to resources inside your virtual network](/power-platform/architecture/reference-architectures/secure-access-azure-resources). This article provides an example scenario and a generalized example architecture to illustrate how to secure Power Platform access to Azure resources with Azure Virtual Network.
+
 ## Power Platform facilitation
 
 The following sections describe Power Platform features and capabilities you can use to implement a segmentation strategy.
@@ -131,6 +135,10 @@ With Azure Virtual Network support for Power Platform, you can integrate Power P
 [IP firewall](/power-platform/admin/ip-firewall) for Power Platform environments helps to protect your data by limiting user access to Dataverse from only allowed IP locations.
 
 [Microsoft Azure ExpressRoute](/power-platform/guidance/expressroute/overview) provides an advanced way to connect your on-premises network to Microsoft cloud services by using private connectivity. A single ExpressRoute connection can be used to access multiple online services; for example, Microsoft Power Platform, Dynamics 365, Microsoft 365, and Azure.
+
+## Related information
+
+- [Establish data protection and privacy controls](/power-platform/guidance/adoption/data-protection)
 
 ## Security checklist
 

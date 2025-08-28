@@ -6,11 +6,11 @@ summary: Learn how to create automated tests for Power Platform apps.
 metadata:
   title: Microsoft Power Apps Test Engine (preview)
   description: Learn how to create automated test for Power Platform apps.
-  ms.subservice: developer
+  ms.subservice: test-engine
   
   ms.topic: landing-page
-  author: grant-archibald-ms
-  ms.author: grarchib
+  author: pvillads
+  ms.author: pvillads
   ms.reviewer: jdaly
   ms.date: 05/19/2025
 

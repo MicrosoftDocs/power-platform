@@ -1,86 +1,73 @@
 ---
-title: "Use the Microsoft 365 admin center to manage your subscription  | MicrosoftDocs"
+title: Use the Microsoft 365 admin center to manage your subscription
 description: Use the Microsoft 365 admin center to manage your subscription
-author: sericks007
-
+author: karacortez 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 10/26/2020
+ms.date: 06/17/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: kacortez
+ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 # Use the Microsoft 365 admin center to manage your subscription 
 
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
-[The Microsoft 365 admin center](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23) is a portal site rich in features for the administrator. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), take advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
-  
- ![Microsoft 365 admin center.](../admin/media/o365-admin-center.png "Microsoft 365 admin center")  
-  
- Review the information in this topic to learn how to do common administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
-  
+[The Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview) is a portal site rich in features for the administrator. Microsoft 365, Power Platform, and Dynamics 365 admins can take advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
+
 > [!NOTE]
->  You must have the Global admin role to fully access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
+>  You must have the global admin role to fully access the Microsoft 365 admin center.
   
 ## Check your service health  
- You can quickly get real-time status of your customer engagement apps and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] services. The Service health page on the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] provides a comprehensive view of the service health of your online services. If users are having trouble signing in to customer engagement apps, check this page to see if there is a service outage.  
+You can view the health of your Microsoft services, including Office on the web, Microsoft Teams, Exchange Online, and Microsoft Dynamics 365 on the Service health page in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). 
   
-For more information, see [Check your service health](check-online-service-health.md).  
+Learn more in [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).  
 
 ## Review your messages  
- Check out the Message center to see how to fix or prevent issues, plan for service changes, or just to stay informed of new or updated features.  
+Check out the Message center to keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements.
   
- Click **Health** > **Message center**, and select messages to get more information.  
-  
- ![Microsoft 365 admin center Message Center.](../admin/media/office-365-admin-center-message-center.png "Microsoft 365 admin center Message Center")  
-  
+Click **Health** > **Message center**, and select messages to get more information.  
+
+Learn more in [Message center](/microsoft-365/admin/manage/message-center#preferences).
 
 ## Request support  
- Having a problem with your service? You can create a support request to get the issue resolved.  
+Having a problem with your service? You can create a support request to get the issue resolved.  
   
-More information: [Contact Technical Support](get-help-support.md)
+Learn more in [Contact Support](/microsoft-365/admin/get-help-support).
 
 ## Manage users  
- Each user signs in to customer engagement apps with an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID (more precisely, an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID, see the following Note). Access to customer engagement apps is controlled through the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID.  
-  
- You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to add, edit, and delete users and to reset passwords.  
-  
- ![Microsoft 365 admin center active users.](../admin/media/o365-admin-center-manage-users.png "Microsoft 365 admin center active users")  
+Each user signs in to customer engagement apps with a Microsoft 365 user ID&mdash;more precisely, a Microsoft Entra ID user ID. Access to customer engagement apps is controlled through the Microsoft 365 user ID.
+
+You use the Microsoft 365 admin center to add, edit, and delete users and to reset passwords.
   
 > [!NOTE]
-> Customer engagement apps use [Microsoft Entra ID](/azure/active-directory/active-directory-whatis) as its identity provider. You access customer engagement apps through an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID that is created and managed in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. For simplicity, we'll refer to the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID as the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID in this documentation.  
+> Customer engagement apps use [Microsoft Entra ID](/azure/active-directory/active-directory-whatis) as its identity provider. You access customer engagement apps through a Microsoft Entra ID user ID that is created and managed in the Microsoft 365 admin center. For simplicity, we refer to the Microsoft Entra ID user ID as the Microsoft 365 user ID in this documentation.
   
- If your company uses on-premises [!INCLUDE[pn_Active_Directory](../includes/pn-active-directory.md)] for user identity, you have options that can simplify user management such as providing a single sign-on experience for your users. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage user account synchronization](../admin/manage-user-account-synchronization.md)  
+If your company uses on-premises Active Directory for user identity, you have options that can simplify user management such as providing a single sign-on experience for your users. Learn more in [Manage user account synchronization](manage-user-account-synchronization.md). 
   
 ## Manage subscriptions  
- Use the Subscriptions page to adjust licenses, view your bill, add a partner of record, and lots more.  
-  
- ![Microsoft 365 admin center subscriptions.](../admin/media/o365-admin-center-manage-subscriptions.png "Microsoft 365 admin center subscriptions")  
-  
-## Set the password expiration  
- Use the Security & privacy page to set how frequently a user's password expires and the number of days before a user is notified of an upcoming expiration.  
-  
-> [!TIP]
->  Note the information on this page about users doing their own password reset. To enable your users to be able to reset their passwords themselves, you'll need to purchase an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] subscription and configure it for password self-service. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Self-service password reset in Microsoft Entra ID: how to enable, configure, and test self-service password reset](/azure/active-directory/authentication/quickstart-sspr#enable-self-service-password-reset)  
+ Use the Billing page to adjust licenses, view your bill, add a partner of record, and lots more.  
   
 ## Configure self-service password reset and other settings in Azure  
- If you have an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] Basic or Premium subscription, you can set it up so users can do their own password reset. You can access [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] configuration from the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable users to reset their Microsoft Entra passwords]([Enable self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr#enable-self-service-password-reset)  
+If you have a Microsoft Entra ID Basic or Premium subscription, you can set it up so users can do their own password reset. You can access Microsoft Entra ID configuration from the Microsoft 365 admin center. Learn more in [Enable self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr#enable-self-service-password-reset).  
+
+> [!TIP]
+>  Note the information on this page about users doing their own password reset. To allow your users to be able to reset their passwords themselves, you need to purchase a Microsoft Entra ID subscription and configure it for password self-service. Learn more in [Self-service password reset in Microsoft Entra ID: how to enable, configure, and test self-service password reset](/azure/active-directory/authentication/quickstart-sspr#enable-self-service-password-reset).  
   
- On the left-side menu of the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], choose **Admin centers** > **Microsoft Entra**. Select your subscription in [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] and then choose **Configure**.  
+On the left-side menu of the Microsoft 365 admin center, choose **Admin centers** > **Microsoft Entra**. Select your subscription in Azure and then choose **Configure**.  
   
 ## Add your domain  
- Use the Manage domains page to add your domain to your subscription. When you add your own domain, user sign-ins can match your company's URL. For example, instead of user@contoso.onmicrosoft.com, it could be user@contoso.com. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Add a domain to Microsoft 365](https://support.office.com/article/Verify-your-domain-in-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
+Use the **Manage domains** page to add your domain to your subscription. When you add your own domain, user sign-ins can match your company's URL. For example, instead of `user@contoso.onmicrosoft.com`, it could be `user@contoso.com`. Learn more in [Add a domain to Microsoft 365](https://support.office.com/article/Verify-your-domain-in-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
   
- ![Microsoft 365 admin center add your domain.](../admin/media/o365-admin-center-add0domain.png "Microsoft 365 admin center add your domain")  
+## Purchase products  
+ On the left-side menu of the Microsoft 365 admin center, select **Billing** > **Purchase products** to add licenses or purchase new online services.  
   
-## Purchase services  
- On the left-side menu of the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], click **Billing** > **Purchase services** to add licenses or purchase new online services.  
-  
- ![Microsoft 365 admin center purchase services.](../admin/media/o365-admin-center-purchase-services.png "Microsoft 365 admin center purchase services")  
-  
-### See also  
+### Related content
  [About the Microsoft 365 admin center](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23)  
  [Set an individual user's password to never expire](https://support.office.com/article/Set-an-individual-user-s-password-to-never-expire-f493e3af-e1d8-4668-9211-230c245a0466)
 

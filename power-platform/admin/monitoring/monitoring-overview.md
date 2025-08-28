@@ -1,10 +1,10 @@
 ---
-title: Monitor the health of your resources (preview)
+title: Monitor the health of your resources
 description: Learn how to use the Monitor > Overview page to monitor and improve operational health.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/23/2025
+ms.date: 08/06/2025
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
@@ -16,10 +16,7 @@ contributors:
   - trdehove
 ---
 
-# Monitor the health of your resources (preview)
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+# Monitor the health of your resources
 
 Your organization can use the **Monitor** area of the Power Platform admin center to measure and improve operational health metrics of resources that are built or deployed. Those resources include apps and flows. 
 
@@ -29,8 +26,6 @@ The **Monitor** experience is available to both makers (in experiences such as [
 - Static analysis of resource properties that can be changed to improve a health metric
 
 The event logs that are used to calculate metrics are available for review and download on the **Logs** page. They can help with operational health analysis.
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Prerequisites
 
@@ -80,10 +75,10 @@ For resources that are available in the Monitor experience, you can learn more a
 
 | Product | Resource | Availability in the Power Platform admin center | Availability in the maker experience |
 |---|---|---|---|
-| Power Apps | Canvas app | Preview | Preview |
-| Power Apps | Model-driven apps | Not yet available | Not yet available |
-| Power Automate | Cloud flows | Preview | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
-| Power Automate | Desktop flows | Preview | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
+| Power Apps | Canvas app | Generally available | Generally available |
+| Power Apps | Model-driven apps | Generally available | Generally available |
+| Power Automate | Cloud flows | Generally available | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
+| Power Automate | Desktop flows | Generally available | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Power Automate | Work queue | Not yet available| Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Dataverse | Dataverse | Not yet available | Not yet available |
 | Copilot Studio | Copilot Studio agents | Not yet available | Not yet available |

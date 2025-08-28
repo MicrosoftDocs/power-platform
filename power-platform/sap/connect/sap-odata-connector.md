@@ -11,7 +11,9 @@ ms.topic: how-to
 ms.date: 11/22/2024
 ms.service: power-platform
 ms.subservice: sap
-ms.custom: ignite-2024
+ms.custom:
+  - ignite-2024
+  - sfi-image-nochange
 # Customer intent: As an administrator, I want to learn about the SAP OData connector, so I can connect Power Platform to SAP.
 ---
 
@@ -53,3 +55,5 @@ If the SAP system you're integrating with is not accessible from the internet be
 
 > [!NOTE]
 > Using the OData connector with SAP ECC or prior versions requires configuration of OData endpoints that are not included in the ECC out-of-box setup.
+
+You can learn more about working with the OData connector and Power Platform in [Hurray! SAP OData connector now supports OAuth2 and SAP Principal Propagation](<https://community.powerplatform.com/blogs/post/?postid=c6a609ab-3556-ef11-a317-6045bda95bf0>)

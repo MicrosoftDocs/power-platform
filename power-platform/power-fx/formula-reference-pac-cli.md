@@ -5,7 +5,7 @@ ms.author: marcsc
 author: devkeydet
 ms.reviewer: jdaly
 ms.topic: reference
-ms.date: 3/22/2024
+ms.date: 06/18/2025
 ms.subservice: power-fx
 search.audienceType:
   - developer
@@ -13,6 +13,7 @@ contributors:
   - JimDaly
   - gregli-msft
   - gregli
+ms.custom: sfi-ropc-nochange
 ---
 
 # Formula reference - Power Platform CLI
@@ -45,7 +46,7 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[Blank](reference/function-isblank-isempty.md)** – Returns a _blank_ value that can be used to insert a NULL value in a data source.
 
-**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or untyped value to a Boolean value.
+**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or dynamic value to a Boolean value.
 
 ## C
 
@@ -63,9 +64,9 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[ColorValue](reference/function-colors.md)** – Translates a CSS color name or a hex code to a color value.
 
-**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+**[Column](reference/function-columnnames-column.md)** – Retrieves column names and values from a [Dynamic value](untyped-object.md).
 
-**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
+**[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from a [Dynamic value](untyped-object.md).
 
 **[Concat](reference/function-concatenate.md)** – Concatenates strings in a data source.
 
@@ -234,7 +235,7 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 ## P
 
-**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
+**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to a [Dynamic value](untyped-object.md).
 
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
 
