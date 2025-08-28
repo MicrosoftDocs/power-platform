@@ -200,8 +200,8 @@ Validation occurs on any action within the UI automation group. It checks the **
 :::image type="content" source="media/endpoint-filtering-ui-automation.png" alt-text="Screen's selector":::
 
 Endpoint filtering rules don't apply to variables or dynamically-bound endpoints. If an expression includes anything other than a literal string, filtering is bypassed&mdash;potentially allowing access to restricted connector arguments. The default policy behavior is all endpoint filtering policies include a core rule (Allow * or Deny *), defaulting to Allow * (Allow All).
-- When **Allow *\** is used: Dynamic values aren't filtered. Any dynamic expression bypasses endpoint filtering, even if specific applications are restricted.
-- When **Deny *\** is used: All dynamic values are blocked by default, ensuring stricter enforcement.
+- When **\Allow *\** is used: Dynamic values aren't filtered. Any dynamic expression bypasses endpoint filtering, even if specific applications are restricted.
+- When **\Deny *\** is used: All dynamic values are blocked by default, ensuring stricter enforcement.
 
 > [!NOTE]
 > - Endpoint filtering isn't enforced if the relevant attributes (**Process** or **Name**) are not part of the selector.
