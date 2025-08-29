@@ -144,20 +144,21 @@ When consumption exceeds the preallocated capacity, you can choose to draw capac
 
 :::image type="content" source="media/overage-management.png" alt-text="Select how you want to manage when capacity reaches zero in this environment.":::
 
-### Manage Monthly Consumption Limits for Copilot Studio Agents(Preview)
+### Manage monthly consumption limits for Copilot Studio agents (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
 Admins can now now able to define monthly consumption limits for each Copilot Studio agent—regardless of whether the environment uses pre-paid capacity or Pay-As-You-Go (Pay-G) billing.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2. On the navigation pane, select **Licensing**.
-3. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
-4. Select the **Summary** tab, select **Manage Agents**
-
-In the Copilot studi agents page you can 
-1. View all Copilot Studio agents across the tenant that have incured any billig
-2. See configured message limits (if any)
-3. see month-to-date billed credits
-4. view  the environment each agent belongs to
-5. Monitor agent status - "Nearing limit","Over limit" or "Within limit"
+1. On the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
+1. On the **Summary** tab, select **Manage Agents**. The **Agents** page is displayed where you can:
+   
+  - View all Copilot Studio agents across the tenant that have incured billing charges.
+  - See configured message limits, if any.
+  - See month-to-date billed credits.
+  - View  the environment each agent belongs to.
+  - Monitor agent status, such as **Nearing limit**, **Over limit**, or **Within limit**.
 
 You can serach for specific agent. 
 you can set a monthly cap for any agent directly from this page. For example, if an agent is consuming more credits than expected, you can define a limit to control usage:
@@ -169,6 +170,8 @@ you have the option to mark an agent as ‘OFF’ from the, effectively disablin
 Once limits are in place, you can configure two key guardrails:
 1. Notifications: Admins—both at the environment and tenant level—will receive alerts when an agent’s usage approaches the defined limit.
 2. Hard Stop: The agent will be automatically disabled once it hits the set limit.
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
    
 ## Frequently asked questions
 
