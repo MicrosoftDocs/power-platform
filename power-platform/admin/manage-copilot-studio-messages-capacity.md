@@ -18,7 +18,7 @@ search.audienceType:
 
 The Microsoft Copilot Studio capacity management experience in the Power Platform admin center allows administrators to manage Copilot Studio credit capacity, while monitoring overall capacity consumption. This experience provides an overview of the licensing models in use. This experience allows administrators to efficiently manage their available session capacity.
 
-## Use the Summary tab
+## View summary information
 
 # [New admin center](#tab/new)
 
@@ -68,7 +68,7 @@ The following cards are displayed in the **Copilot credit capacity** tab:
 
 - **Copilot credit usage by environment**: Highlights the top environments based on Copilot Studio credit usage.
 
-## Use the Environments tab
+## View credit capacity consumed per environment
 The **Environments** tab provides details on the Copilot Studio credit capacity consumed per environment, including the number of Copilot credits deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
 
 # [New admin center](#tab/new)
