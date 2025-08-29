@@ -154,22 +154,21 @@ Admins can now now able to define monthly consumption limits for each Copilot St
 1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
 1. On the **Summary** tab, select **Manage Agents**. The **Agents** page is displayed where you can:
    
-  - View all Copilot Studio agents across the tenant that have incured billing charges.
-  - See configured message limits, if any.
-  - See month-to-date billed credits.
-  - View  the environment each agent belongs to.
-  - Monitor agent status, such as **Nearing limit**, **Over limit**, or **Within limit**.
+   - Serach for a specific agent.
+   - View all Copilot Studio agents across the tenant that have incured billing charges.
+   - See configured message limits, if any.
+   - See month-to-date billed credits.
+   - Turn an agent off.
+   - View  the environment each agent belongs to.
+   - Monitor agent status, such as **Nearing limit**, **Over limit**, or **Within limit**. 
 
-You can serach for specific agent. 
-you can set a monthly cap for any agent directly from this page. For example, if an agent is consuming more credits than expected, you can define a limit to control usage:
-1. Prepaid environments: The agent must stay within the allocated pool.
-2. Pay-G environments: You can set any limit, and usage will be billed accordingly.
-
-you have the option to mark an agent as ‘OFF’ from the, effectively disabling it.
+You can set a monthly limit for any agent directly from this page. For example, if an agent is consuming more credits than expected, you can define a limit to control usage:
+- **Prepaid environments**: The agent must stay within the allocated pool.
+- **Pay-as-you go environments**: You can set any limit, and usage is billed accordingly.
 
 Once limits are in place, you can configure two key guardrails:
-1. Notifications: Admins—both at the environment and tenant level—will receive alerts when an agent’s usage approaches the defined limit.
-2. Hard Stop: The agent will be automatically disabled once it hits the set limit.
+- **Notifications**: Admins. both at the environment and tenant level, receive alerts when an agent’s usage approaches the defined limit.
+- **Hard stop**: The agent is automatically turned off once it hits the defined limit.
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
    
