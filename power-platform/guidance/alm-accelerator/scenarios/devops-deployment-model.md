@@ -31,7 +31,7 @@ As you plan your Azure DevOps deployment model, the following factors may help y
 
 - Do different teams or business units require separate locations to store and manage solutions?
 
-- Do different teams or business units have different levels of business sensitivity or data loss prevention policies that require separate handling?
+- Do different teams or business units have different levels of business sensitivity or data policies that require separate handling?
 
 - Does the benefit outweigh the cost of the overhead in managing and maintaining multiple Azure DevOps processes for different Power Platform environments?
 

@@ -39,7 +39,7 @@ Effective governance frameworks help with the successful adoption and management
     - **Scalability**: Enable the platform to grow with the organization’s needs.
 
 1. **Develop governance policies**: Create detailed guidelines and rules that govern how the platform is used and managed within your organization. These policies ensure that all activities on the Power Platform are conducted in a secure, compliant, and efficient manner.
-    - **Connector management**: Define which connectors are available in each environment and which data sources are available for use in Power Platform solutions. Learn more in [Implement a DLP (data loss prevention) strategy](dlp-strategy.md).
+    - **Connector management**: Define which connectors are available in each environment and which data sources are available for use in Power Platform solutions. Learn more in [Implement a data policy strategy](dlp-strategy.md).
     - **Environment management**: Establish guidelines for creating, managing, and decommissioning environments. Learn more in [Develop a tenant environment strategy](environment-strategy.md).
     - **Solution development**: Set standards for developing, testing, and deploying solutions.
     - **Security protocols**: Implement measures such as encryption, row-level security, and secure data storage. Learn more in [Enhance your security posture](security-posture-management.md).
@@ -76,7 +76,7 @@ Consider the following tasks:
     - Process: Implement an approval workflow to ensure that new environments are created only when necessary and meet governance standards. Consider automating the clean-up of environments that are no longer needed. 
 
 - **New connector requests**: 
-    - Purpose: Adding new connectors to existing data loss prevention (DLP) policies or creating a new DLP policy for specific environments.
+    - Purpose: Adding new connectors to existing data policies or creating a new data policy for specific environments.
     - Considerations: Evaluate the security, compliance, and compatibility of new connectors.
     - Process: Establish an approval workflow to review and authorize new connector requests. Consider who has to approve the connector request. Is it the Power Platform admin alone, or are their product or service owners that also need to approve the request? For example, if a maker requests the SAP connector for use in their environment, does the Power Platform or SAP service owner approve this request? 
 
@@ -121,7 +121,7 @@ Create a central source, such as a [SharePoint site or wiki](wiki-community.md),
 
 Your training for environment admins should include an introduction to help environment admins understand their responsibilities. Environment admins manage the day-to-day operations of specific environments, including user access, data security, and compliance. Power Platform admins oversee the governance framework, define policies, and ensure all environments follow organizational standards.
 
-Power Platform admins define governance policies, which environment admins implement in their environments. Both roles must collaborate to ensure data security and compliance. Power Platform admins [define a DLP (Data Loss Prevention) policy strategy](dlp-strategy.md), while environment admins assess the connectors and policies they need and work with Power Platform admins to assign the most appropriate policies.
+Power Platform admins define governance policies, which environment admins implement in their environments. Both roles must collaborate to ensure data security and compliance. Power Platform admins [define a data policy strategy](dlp-strategy.md), while environment admins assess the connectors and policies they need and work with Power Platform admins to assign the most appropriate policies.
 
 Power Platform admins monitor platform-wide usage and performance, while environment admins require more detailed reports on their specific environments.
 

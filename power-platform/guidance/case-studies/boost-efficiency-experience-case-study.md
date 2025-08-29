@@ -106,7 +106,7 @@ Receipt of an email acts as the workflow trigger. A [text function](https://comm
 
 ### Technical considerations
 
-- Data loss prevention (DLP) safeguards on your Microsoft Power Platform environments determine the connectors that are available, such as custom connectors to external APIs.
+- Data protection safeguards on your Microsoft Power Platform environments determine the connectors that are available, such as custom connectors to external APIs.
 - PDF analysis might require [AI Builder](/ai-builder/overview), which has licensing requirements that must be considered.
 - Triggering the automation might require the configuration of associated systems or a new work instruction for team members. As necessary, the booking system is updated to send the travel confirmation to an email address.
 - Dataverse, which is part of Microsoft Power Platform, simplifies change management:

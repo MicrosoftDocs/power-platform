@@ -2,7 +2,6 @@
 title: "Set up environment request components"
 description: "Learn how to set up the environment request components solution of the Microsoft CoE Starter Kit."
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 02/08/2023
@@ -15,12 +14,12 @@ search.audienceType:
 
 # Set up environment request components
 
-This article helps you set up the environment request components of the core solution, which automate the request, approval, and creation of environments and data loss prevention (DLP) policies.
+This article helps you set up the environment request components of the core solution, which automate the request, approval, and creation of environments and data policies.
 
 ## Prerequisites
 
 - Complete [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md).
-- [Set up your environment](setup.md#create-your-environments).
+- [Set up your environments](setup.md#create-your-environments).
 - Sign in with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 
 [Watch a walk-through](https://www.youtube.com/watch?v=16mspbGz1zA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the environment and DLP request process works.

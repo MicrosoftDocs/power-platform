@@ -61,7 +61,7 @@ Every employee in an organization that uses Power Platform has access to the def
 
 When monitoring the default environment in Power Platform, ensure optimal governance and security by focusing on these key aspects:
 
-- Track connector usage and identify which connectors are used to help inform your [data loss prevention strategy](dlp-strategy.md).  
+- Track connector usage and identify which connectors are used to help inform your [data policy strategy](dlp-strategy.md).  
 - Identify widely adopted or business-critical apps and flows to determine which solutions need more support or should move to a dedicated environment.
 - Identify unused and ownerless apps and flows that consume capacity and clutter the default environment.
 
@@ -73,7 +73,7 @@ As an administrator, you should:
 
 - Monitor usage to identify the types of flows in use.
 - Watch for errors by error type to identify common problems.
-- Identify unexpected data usage by analyzing connector usage, and adjust your data loss prevention policies for that environment to ensure the overall health of the platform.
+- Identify unexpected data usage by analyzing connector usage, and adjust your data policies for that environment to ensure the overall health of the platform.
 
 Learn more: [View analytics for cloud flows](../../admin/analytics-flow.md)
 
