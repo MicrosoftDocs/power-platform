@@ -104,7 +104,7 @@ View the Copilot Studio capacity consumed within that environment. The following
 ## Manage capacity
 Capacity allocation can be managed in the Power Platform admin center. 
 
-To allocate, complete the following steps depending on whether you're using the new admin center or the classic admin center .
+To allocate, complete the following steps depending on whether you're using the new admin center or the classic admin center.
 
 # [New admin center](#tab/new)
 
@@ -112,7 +112,7 @@ To allocate, complete the following steps depending on whether you're using the 
 1. On the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
 1. Select the **Summary** tab.
-1. Do one of the following:
+1. Complete one of the following actions:
 
    - Select **Manage Capacity** from the **Prepaid capacity** card.
 
@@ -126,7 +126,7 @@ To allocate, complete the following steps depending on whether you're using the 
 1. On the navigation pane, select **Billing** > **Licenses**. The **Licenses** page is displayed.
 1. Select the **Summary** tab.
 1. In the **Summaries** section, select **Copilot Studio**.
-1. Do one of the following:
+1. Complete one of the following actions:
 
    - Select **Manage Capacity** from the **Prepaid capacity** card.
 
@@ -147,18 +147,18 @@ When consumption exceeds the preallocated capacity, you can choose to draw capac
 ### Manage monthly consumption limits for Copilot Studio agents (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-Admins can define monthly consumption limits for each Copilot Studio agent, regardless of whether the environment uses pre-paid capacity or pay-as-you-go billing.
+Admins can define monthly consumption limits for each Copilot Studio agent, regardless of whether the environment uses prepaid capacity or pay-as-you-go billing.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
 1. On the **Summary** tab, select **Manage Agents**. The **Agents** page is displayed where you can:
    
-   - Serach for a specific agent.
-   - View all Copilot Studio agents across the tenant that have incured billing charges.
+   - Search for a specific agent.
+   - View all Copilot Studio agents across the tenant that have incurred billing charges.
    - See configured message limits, if any.
    - See month-to-date billed credits.
-   - Turn an agent off.
+   - Turn off an agent.
    - View  the environment each agent belongs to.
    - Monitor agent status, such as **Nearing limit**, **Over limit**, or **Within limit**. 
 
@@ -187,6 +187,6 @@ Pay-as-you-go plans provide these benefits:
 - **Cost savings**: Reduce the hassle of prepaid capacity inventory management. No more unused capacity expiring at the end of the month.
 - **No commitment**: Get started with pay-as-you-go right away without locking into any long-term commitments and without any upfront costs.
 
-### If I have used the pay-as-you-go plan, can I grant my users access to Copilot Studio?
+### If I used the pay-as-you-go plan, can I grant my users access to Copilot Studio?
 Yes, you can manage access to Copilot Studio. In the Power Platform admin center, navigate to **Settings** and update the **Copilot Author** setting. There, you can assign a security group, and only members of that group have access to Copilot Studio.
 
