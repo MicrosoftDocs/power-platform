@@ -1,138 +1,185 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) installation (Deprecated)"
-description: "Install instructions for the Center of Excellence Command-Line interface"
-keywords: 
+title: Install the CoE CLI (Deprecated)
+description: Learn how to install and set up the Center of Excellence command line interface using local or Docker methods.
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.custom: ""
-ms.date: 05/23/2023
+ms.date: 08/28/2025
+ms.update-cycle: 3650-days
 ms.subservice: guidance-toolkit
 ms.topic: install-set-up-deploy
-ms.reviewer: sericks
-search.audienceType: 
+ms.reviewer: jhaskett-msft
+search.audienceType:
   - admin
 ---
 
-
-# Center of Excellence (CoE) Command Line Interface (CLI) installation (Deprecated)
+# Install the CoE CLI (Deprecated)
 
 > [!NOTE]
 > The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
-To install the CoE CLI:
+To install the Center of Excellence (CoE) command line interface (CLI):
 
 1. Download the [CoE Starter Kit compressed file](https://aka.ms/CoEStarterKitCurrentMonthRelease).
-1. Extract the zip file after downloading.
-1. Open unzipped folder and open the **coe-cli** folder
+
+1. Extract the zip file.
+
+1. Open the extracted folder and then navigate to the **coe-cli** folder.
 
    ```bash
    cd coe-cli
    ```
 
-Next, select either [local install](#local-install) or [Docker install](#docker-install).
+Perform a [local install](#local-install) or [Docker install](#docker-install).
 
 ## Local install
 
-### Prerequisites
+If you don't have administrative privileges, make sure you install the [prerequisites for a non-administrator](#prerequisites-for-a-non-administrator). The [installation instructions](#install) are the same for both administrator and non-administrator installs.
 
-To run the CoE CLI application, first install these components:
-> [!NOTE]
-> The CoE CLI has been tested with Azure CLI version up to 2.38.0
+### Prerequisites as administrator
 
-1. An installation of Node 16+.
+- Node.js 16+, available at [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
-   a. [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+- Azure CLI (version 2.37.0+). You need Azure CLI for user authentication and Microsoft Entra integration. Follow the installation instructions for your operating system in [How to install the Azure CLI](/cli/azure/install-azure-cli).
 
-1. Azure CLI (version 2.37.0+) is required for user authentication and Microsoft Entra integration.
+    > [!Important]
+    > The CoE CLI works with Azure CLI versions up to 2.38.0.
 
-   a. [Install Azure CLI](/cli/azure/install-azure-cli)
+- PowerShell Core (version 7.2+), available from [Install PowerShell on Windows, Linux, and macOS](/powershell/scripting/install/installing-powershell).
 
-1. PowerShell Core (version 7.2+)
+- Git CLI (version 2.37.2+), available at [https://git-scm.com/downloads](https://git-scm.com/downloads).
+ 
+To check that you installed the prerequisites correctly and have the right versions, issue the following commands at the command prompt.
 
-   a. [/powershell/scripting/install/installing-powershell](/powershell/scripting/install/installing-powershell)
-
-1. Git CLI (version 2.37.2+)
-
-   a. [https://git-scm.com/downloads](https://git-scm.com/downloads)
-
-### Non Administrator Install
-
-If you don't have administration rights, you can use the [Non-Administration Install](./non-administrator-local-install.md)
-
-### Checking prerequisites
-
-To check that the prerequisites have been installed correctly and the correct versions are installed, use the following commands at the command prompt.
-
-1. Verify the node version.
+1. Verify the node version:
 
    ```bash
    node --version
    ```
 
-1. Verify the Azure CLI version.
+1. Verify the Azure CLI version:
 
    ```bash
    az --version
    ```
 
+### Prerequisites for a non-administrator
+
+- [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/), a free bootstrap version of Anaconda that includes only conda, Python, the packages they depend on, and a few other useful packages. 
+
+- Node.js 16+. To install:
+
+    - [Download Node.js](https://nodejs.org/en/download/).
+    - Download the Windows binary for your operating system.
+    - Extract the downloaded zip file.
+    - In Windows Explorer, open **%USERPROFILE%**.
+    - Create a folder named *nodejs*.
+    - Copy all files from the zip file into the **nodejs** folder.
+
+- Azure CLI. Install by using [pip](https://pypi.org/project/pip/), the Python package manager:
+
+    ```cmd
+   pip install azure-cli
+   ```
+
+- Prepare your system:
+
+    1. Open `%USERPROFILE%\dev.bat` with a text editor like Notepad and make the following edit:
+
+        ```text
+        SET PATH=%PATH%;%USERPROFILE%/nodejs
+        %windir%\System32\cmd.exe "/K" %USERPROFILE%\miniconda3\Scripts\activate.bat %USERPROFILE%\miniconda3
+        ```
+
+    1. Save the file.
+
+To check that you installed the prerequisites correctly and have the right versions, use the following commands:
+
+```cmd
+az --version
+node --version
+pac --version
+```
+
 ### Install
 
-1. Install application dependencies.
+For a demo of the steps, go to [Video demo of local installation](#video-demo-of-local-installation).
+
+1. Start from the **coe-cli** folder.
+
+   ```bash
+   cd coe-cli
+   ```
+
+1. Install application dependencies:
 
    ```bash
    npm install
    ```
 
-1. Build the application.
+1. Build the application:
 
    ```bash
    npm run build
    ```
 
-1. Link to the CoE CLI application.
+1. Link to the CoE CLI application:
 
    ```bash
-   npm link
+   npm  link
    ```
 
-#### Notes
+1. Verify that the CoE CLI is installed:
 
-- On Windows, you may need to add `%APPDATA%\npm` to your PATH environment variable to access the coe command.
+    ```cmd
+    coe --help    
+   ```
 
-- Install Azure CLI. Follow the install instructions for your operating system at [Install Azure CLI](/cli/azure/install-azure-cli).
+> [!NOTE]
+> On Windows, you might need to add `%APPDATA%\npm` to your PATH environment variable to access the `coe` command.
+
+#### Video demo of local installation
+
+The following demo shows the results of a sample local install.
+
+:::image type="content" source="./media/install-local.svg" alt-text="Demo of example local installation of CoE CLI.":::
 
 ## Docker install
 
-One method of installation is via Docker.
+Another way to install the CoE CLI is using Docker. For a demo of the steps, go to [Video demo of Docker installation](#video-demo-of-docker-installation).
 
-### Docker prerequisites
+### Prerequisites
 
-To run the CoE CLI application, you need the following software.
-
-- A local install of [Docker](https://docs.docker.com/get-docker/). The install can be either Community Edition or Enterprise Edition. If you're installing onto a desktop environment, you normally pick a Community Edition deployment.
+To run the CoE CLI application, you need to install [Docker](https://docs.docker.com/get-docker/) locally. You can use either the Community Edition or Enterprise Edition. If you're installing on a desktop environment, choose Community Edition.
 
 ### Docker install steps
 
 > [!NOTE]
-> On some operating systems, you may need to use `sudo` before each of the Docker commands.
+> On some operating systems, you might need to use `sudo` before each of the Docker commands.
 
-1. Build docker image.
+1. Build docker image:
 
    ```bash
    cd coe-cli
    docker build -t coe-cli . 
    ```
 
-1. Using the docker image.
+1. Use the docker image:
 
    ```bash
    docker run -it --rm coe-cli
    ```
 
-This command starts a new interactive console (`-it`) and remove the Docker container (`--rm`) when the console session exits. Using `--rm` ensures that any cached credentials are removed when you exit.
+    This command starts a new interactive console (`-it`) and removes the Docker container (`--rm`) when the console session exits. Using `--rm` removes any cached credentials when you exit.
 
-## Next steps
+#### Video demo of Docker installation
 
-Install [ALM Accelerator](./alm/overview.md)
+The following demo shows the results of a sample Docker install on Linux. 
+
+:::image type="content" source="./media/install-docker.svg" alt-text="Demo of example Docker installation of CoE CLI on Linux.":::
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Install the CoE CLI ALM accelerator](./alm/overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
