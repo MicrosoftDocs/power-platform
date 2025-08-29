@@ -42,7 +42,6 @@ The Power Fx formula reference information is organized in the following way:
 
 ### See also
 
-- [Supported expressions by cards in Power Apps](/power-apps/cards/make-a-card/power-fx/intro-to-pfx#supported-expressions)
 - [Formula reference - model-driven apps](formula-reference-model-driven-apps.md)
 - [Formula reference - Dataverse formula columns](formula-reference-formula-columns.md)
 - [Formula reference - Dataverse plug-ins](formula-reference-plug-ins.md)
