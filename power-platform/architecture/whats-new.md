@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 07/15/2025
+ms.date: 08/19/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -17,6 +17,12 @@ ms.custom:
 # What's new in the Power Platform and Copilot Studio Architecture Center
 
 Get the latest info about what's new and what's changed in the Power Platform  and Copilot Studio Architecture Center.
+
+## August 2025
+
+New in [Architecture key concepts](key-concepts/index.md):
+
+- [CRM data migration to Dataverse: Key insights and best practices](key-concepts/data-migration/index.md)
 
 ## July 2025
 

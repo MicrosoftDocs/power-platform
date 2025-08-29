@@ -4,7 +4,7 @@ description: Learn how to export data to Application Insights from the Power Pla
 services: powerapps
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/18/2025
+ms.date: 08/11/2025
 author: isaacwinoto 
 ms.subservice: admin
 ms.custom: NewPPAC
@@ -31,7 +31,7 @@ Learn how to set up data export from the Power Platform admin center to Applicat
    > [!NOTE]
    > This feature is turned on and supported for Managed Environments only.
 
-- To configure telemetry export, you need administrative privileges. This includes being assigned to the Power Platform administrator or Dynamics 365 administrator role at the tenant-level in Microsoft Entra ID, or by being assigned to the environment administrator or system administrator role within the Dataverse environment. Without these permissions, the integration doesn't work.
+- To configure telemetry export, you need administrative privileges. This includes being assigned to the Power Platform administrator or Dynamics 365 administrator role at the tenant-level in Microsoft Entra ID, **and** by being assigned to the environment administrator or system administrator role within the Dataverse environment. Without these permissions, the integration doesn't work.
   
     > [!IMPORTANT] 
     > The Application Insights exporting functionality for Power Automate and Dynamics 365 Customer Service is in public preview in all public sovereign geos.  Power Automate and Dynamics 365 Customer Service functionality in public preview isn't available in Government Community Cloud (GCC) or Government Community Cloud - High (GCC High) sovereign clouds.
