@@ -167,6 +167,8 @@ Admins can define monthly consumption limits for each Copilot Studio agent, rega
    Once limits are in place, you can configure two, key guardrails:
    - **Notifications**: Admins, both at the environment and tenant level, receive alerts when an agent’s usage approaches the defined limit.
    - **Hard stop**: The agent is automatically turned off once it hits the defined limit.
+  
+   :::image type="content" source="media/agents-capacity-limits.png" alt-text="Tenant capacity extension in admin center." lightbox="media/agents-capacity-limits.png":::
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
    
