@@ -27,7 +27,7 @@ The Center of Excellence (CoE) Starter Kit works without this flow, but the usag
 ## Prerequisites
 
 - Complete the [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) articles before continuing with the setup in this article.
-- [Set up your environment](setup.md#create-your-environments).
+- [Set up your environments](setup.md#create-your-environments).
 - Sign in with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 - (Optional) Set up the Audit Log solution only if you chose [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
 
@@ -35,19 +35,19 @@ The Center of Excellence (CoE) Starter Kit works without this flow, but the usag
 
 ## Before you use the audit log connector
 
-1. Microsoft 365 audit log search must be turned on for the audit log connector to work. For more information, see [Turn auditing on or off](/purview/audit-log-enable-disable?preserve-view=true&view=o365-worldwide&tabs=microsoft-purview-portal)
+1. Microsoft 365 audit log search must be turned on for the audit log connector to work. Learn more in [Turn auditing on or off](/purview/audit-log-enable-disable?preserve-view=true&view=o365-worldwide&tabs=microsoft-purview-portal)
 
 1. The user identity running the flow must have permission to the audit logs. Minimum permissions are described in [Before you search the audit log](/purview/audit-search?preserve-view=true&view=o365-worldwide&tabs=microsoft-purview-portal#before-you-search-the-audit-log).
 
-1. Your tenant must have a subscription that supports unified audit logging. For more information, see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+1. Your tenant must have a subscription that supports unified audit logging. Learn more in [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-1. Microsoft Entra permissions may be required to configure the Microsoft Entra app registration. Depending on your Entra configuration, this could be an **Application Developer** role or higher. Review the [Least privileged roles by task in Microsoft Entra ID](/entra/identity/role-based-access-control/delegate-by-task) fore more guidance.
+1. Microsoft Entra permissions may be required to configure the Microsoft Entra app registration. Depending on your Entra configuration, this could be an **Application Developer** role or higher. Review the [Least privileged roles by task in Microsoft Entra ID](/entra/identity/role-based-access-control/delegate-by-task) for more guidance.
 
 The Office 365 Management APIs use Microsoft Entra ID to provide authentication services that you can use to grant rights for your application to access them.
 
 ### Create a Microsoft Entra app registration for the Office 365 Management API
 
-Using these steps, you set up a Microsoft Entra app registration that is used in a custom connector and Power Automate flow to connect to the audit log. More information: [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis)
+Using these steps, you set up a Microsoft Entra app registration that is used in a custom connector and Power Automate flow to connect to the audit log. Learn more in [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -92,6 +92,7 @@ Leave the Azure portal open, because you'll need to make some configuration upda
 Now you configure and set up a custom connector that uses the [Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 1. Go to **[Power Apps](https://make.powerapps.com)** > **Dataverse** > **Custom Connectors**. The Office 365 Management API custom connector is listed here. The connector is imported with the core components solution.
+
 1. Select **Edit**.
 
 1. If your tenant is a commercial tenant, leave the **General** page as is.
@@ -102,9 +103,10 @@ Now you configure and set up a custom connector that uses the [Office 365 Manage
    > - If your tenant is a GCC High tenant, change the host to `manage.office365.us`.
    > - If your tenant is a DoD tenant, change the host to `manage.protection.apps.mil`.
    >
-   > For more information, see [Activity API operations](/office/office-365-management-api/office-365-management-activity-api-reference?preserve-view=true&view=o365-worldwide#activity-api-operations).
+   > Learn more in [Activity API operations](/office/office-365-management-api/office-365-management-activity-api-reference?preserve-view=true&view=o365-worldwide#activity-api-operations).
 
 1. Select **Security**.
+
 1. Select **Edit** at the bottom of the **OAuth 2.0** area to edit the authentication parameters.
 
    :::image type="content" source="media/coe42.png" alt-text="Screenshot that shows how you can edit the OAuth 2.0 section of Security tab of Custom connectors." lightbox="media/coe42.png":::
@@ -165,6 +167,7 @@ Go back to the custom connector to set up a connection to the custom connector a
    :::image type="content" source="media/coe43.png" alt-text="Screenshot that shows the custom connector Start Subscription." lightbox="media/coe43.png":::
 
 1. Paste the **directory (tenant) ID**—copied earlier from the **App Registration** overview page in Microsoft Entra ID—into the **Tenant** field.
+
 1. Paste the **directory (tenant) ID** into **PublisherIdentifier**.
 
 1. Select **Test Operation**.
@@ -187,22 +190,28 @@ You should see a (200) status returned, which means the query was successful.
 > - Review the steps in your [Microsoft Entra app registration](#create-a-microsoft-entra-app-registration-for-the-office-365-management-api) for correctness.
 > - The security settings of the custom connector, as described in [step 6 of the custom connector setup](#set-up-the-custom-connector), should be updated correctly.
 >
-> If you are still seeing failures, your connection might be in a bad state. For more information, see [Step-by-step instructions to repair Audit Log connection](https://github.com/microsoft/coe-starter-kit/issues/4961).
+> If you are still seeing failures, your connection might be in a bad state. Learn more in [Step-by-step instructions to repair Audit Log connection](https://github.com/microsoft/coe-starter-kit/issues/4961).
 
 ### Set up the Power Automate flow
 
 A Power Automate flow uses the custom connector, queries the audit log daily, and writes the Power Apps launch events to a Microsoft Dataverse table. This table is then used in the Power BI dashboard to report on sessions and unique users of an app.
 
 1. Download the solution in [Set up core components](setup-core-components.md).
+
 1. Go to [make.powerapps.com](https://make.powerapps.com).
+
 1. Import the Center of Excellence audit logs solution using the `CenterofExcellenceAuditLogs_*x_x_x_xxx*_managed.zip` file.
+
 1. Establish connections then activate your solution. If you create a new connection, you must select **Refresh**. You don't lose your import progress.
 
    :::image type="content" source="media/coe-custom2.png" alt-text="Screenshot that shows how to import the CoE audit log components solution." lightbox="media/coe-custom2.png":::
 
 1. Open the **Center of Excellence – Audit Log solution**.
+
 1. [Remove the unmanaged layer](after-setup.md) from the **[Child] Admin | Sync Logs**.
+
 1. Select the **[Child] Admin | Sync Logs**.
+
 1. Edit the **Run only users** settings.
 
    :::image type="content" source="media/coe49.png" alt-text="Child flow - run-only users." lightbox="media/coe49.png":::
@@ -249,6 +258,6 @@ Here are example configurations for these values:
 
 Once configured, this solution collects app launches, though isn't set up to collect historic app launches. Depending on your [Microsoft 365 license](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log), historic data is available for up to one year using the audit log within Microsoft Purview.
 
-You can load historic data into the CoE Starter Kit tables manually. For more information, see [How to import old Audit Logs](https://github.com/microsoft/coe-starter-kit/issues/3040).
+You can load historic data into the CoE Starter Kit tables manually. Learn more in [How to import old Audit Logs](https://github.com/microsoft/coe-starter-kit/issues/3040).
 
 [!INCLUDE[file-an-issue](../../includes/file-issue.md)]

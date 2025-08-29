@@ -19,7 +19,7 @@ If your inventory comes from [Data Export](setup.md#what-data-source-should-i-us
 > [!IMPORTANT]
 >
 > - Only complete the steps in this article if you configured [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
-> - When you see data in your storage account set up to receive data from Data Export, use the Data Export configuration steps in this article. This configuration might show up to five days from the initial setup of Data Export in the Power Platform admin center.
+> - When you see data in your storage account set up to receive data from Data Export, use these Data Export configuration steps. This configuration might show up to five days from the initial setup of Data Export in the Power Platform admin center.
 
 ## Copy Azure Storage account URL
 
