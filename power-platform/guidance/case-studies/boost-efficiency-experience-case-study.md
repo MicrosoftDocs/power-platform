@@ -266,7 +266,7 @@ Daniel created a Copilot Studio topic and an associated Power Automate automatio
 - [Power Platform Well-Architected](/power-platform/well-architected/)
 - [Use an incoming email to trigger an automation](/power-automate/email-overview)
 - [Popular scenarios for sending emails to end users](/power-automate/email-top-scenarios)
-- [How to use Copilot to help build your automation](/power-automate/get-started-with-copilot)
+- [How to use Copilot to help build your automation](/power-automate/create-cloud-flow-using-copilot)
 - [Automate a business process using Power Automate training](/training/paths/automate-process-power-automate/)
 - [Building your own copilot with Copilot Studio](https://www.microsoft.com/microsoft-copilot/blog/copilot-studio/building-your-own-copilot-with-copilot-studio/)
 - [Introduction to Generative AI - Exploring the basics](/training/modules/intro-generative-ai-explore-basics/)
