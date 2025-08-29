@@ -50,13 +50,13 @@ When viewing the Copilot Studio summary, the following cards are displayed in th
 
 :::image type="content" source="media/environment-tab.png" alt-text="The following cards are displayed in the **Capacity summary** section on the page.":::
 
-### Pay-as-you-go credits
+#### Pay-as-you-go credits
 This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio credit  billed to these plans. A billing plan in the Power Platform admin center is a configuration that allows administrators to group one or more environments, allowing them to track and bill Copilot Studio credit capacity usage directly to an Azure subscription on a pay-as-you-go basis.
 
-### Prepaid capacity
+#### Prepaid capacity
 The Prepaid capacity card shows the number of prepaid capacity units that have been purchased, assigned, and consumed. These units can be either session-based or Copilot credit capacity units, with a link provided to manage each type.
 
-#### Copilot credits capacity tab
+### Copilot credits capacity tab
 
 The following cards are displayed in the **Copilot credit capacity** tab:
 
@@ -147,7 +147,7 @@ When consumption exceeds the preallocated capacity, you can choose to draw capac
 ### Manage monthly consumption limits for Copilot Studio agents (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-Admins can now now able to define monthly consumption limits for each Copilot Studio agent—regardless of whether the environment uses pre-paid capacity or Pay-As-You-Go (Pay-G) billing.
+Admins can define monthly consumption limits for each Copilot Studio agent, regardless of whether the environment uses pre-paid capacity or pay-as-you-go billing.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
@@ -162,13 +162,13 @@ Admins can now now able to define monthly consumption limits for each Copilot St
    - View  the environment each agent belongs to.
    - Monitor agent status, such as **Nearing limit**, **Over limit**, or **Within limit**. 
 
-You can set a monthly limit for any agent directly from this page. For example, if an agent is consuming more credits than expected, you can define a limit to control usage:
-- **Prepaid environments**: The agent must stay within the allocated pool.
-- **Pay-as-you go environments**: You can set any limit, and usage is billed accordingly.
+   You can set a monthly limit for any agent directly from this page. For example, if an agent is consuming more credits than expected, you can define a limit to control usage:
+   - **Prepaid environments**: The agent must stay within the allocated pool.
+   - **Pay-as-you go environments**: You can set any limit, and usage is billed accordingly.
 
-Once limits are in place, you can configure two key guardrails:
-- **Notifications**: Admins. both at the environment and tenant level, receive alerts when an agent’s usage approaches the defined limit.
-- **Hard stop**: The agent is automatically turned off once it hits the defined limit.
+   Once limits are in place, you can configure two, key guardrails:
+   - **Notifications**: Admins, both at the environment and tenant level, receive alerts when an agent’s usage approaches the defined limit.
+   - **Hard stop**: The agent is automatically turned off once it hits the defined limit.
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
    
