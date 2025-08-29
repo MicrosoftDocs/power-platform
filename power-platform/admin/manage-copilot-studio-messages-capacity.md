@@ -2,7 +2,7 @@
 title: Manage Copilot Studio credits and capacity 
 description: Learn how to manage Copilot Studio credits and capacity.
 author: amiyapatr-zz
-ms.date: 01/27/2025
+ms.date: 08/29/2025
 ms.reviewer: sericks
 ms.topic: how-to
 ms.subservice: admin
@@ -38,7 +38,7 @@ The Microsoft Copilot Studio capacity management experience in the Power Platfor
 
 The licensing summary view shows usage of both prepaid and session-based capacity units.
 
-Purchasing a Copilot Studio license includes a specified number of billed copilot credits pooled across the tenant, which must be assigned to an environment to allow Copilot Studio features for agents in that environment.
+Purchasing a Copilot Studio license includes a specified number of billed Copilot credits pooled across the tenant, which must be assigned to an environment to allow Copilot Studio features for agents in that environment.
 
 Capacity management features allow administrators to allocate prepurchased capacity across environments, within the tenant, based on anticipated usage of Copilot agents in each environment. The **Capacity summary** section of the page includes daily consumption data at the environment level for up to three months, helping to determine appropriate capacity needs.
 
@@ -54,11 +54,11 @@ When viewing the Copilot Studio summary, the following cards are displayed in th
 This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio credit  billed to these plans. A billing plan in the Power Platform admin center is a configuration that allows administrators to group one or more environments, allowing them to track and bill Copilot Studio credit capacity usage directly to an Azure subscription on a pay-as-you-go basis.
 
 ### Prepaid capacity
-The Prepaid capacity card shows the number of prepaid capacity units that have been purchased, assigned, and consumed. These units can be either session-based or copilot credit capacity units, with a link provided to manage each type.
+The Prepaid capacity card shows the number of prepaid capacity units that have been purchased, assigned, and consumed. These units can be either session-based or Copilot credit capacity units, with a link provided to manage each type.
 
-#### copilot credits capacity tab
+#### Copilot credits capacity tab
 
-The following cards are displayed in the **copilot credit capacity** tab:
+The following cards are displayed in the **Copilot credit capacity** tab:
 
 - **Capacity consumption by product**: This tile presents a product-focused view of Copilot Studio credit units consumed, detailing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
 
@@ -66,10 +66,10 @@ The following cards are displayed in the **copilot credit capacity** tab:
  
 - **Total capacity consumption trend**: Displays the daily trend of capacity consumption over the past three months.
 
-- **copilotcredit usage by environment**: Highlights the top environments based on Copilot Studio credit usage.
+- **Copilot credit usage by environment**: Highlights the top environments based on Copilot Studio credit usage.
 
 ## Use the Environments tab
-The **Environments** tab provides details on the Copilot Studio credit capacity consumed per environment, including the number of copilot credits deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
+The **Environments** tab provides details on the Copilot Studio credit capacity consumed per environment, including the number of Copilot credits deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
 
 # [New admin center](#tab/new)
 
@@ -95,11 +95,11 @@ The **Environments** tab provides details on the Copilot Studio credit capacity 
 
 To view Copilot Studio capacity consumed for Microsoft 365 Copilot Chat, select the **Microsoft 365 Copilot Chat** environment on the environment selection page. 
  
-View the Copilot Studio capacity consumed within that environment. The following cards are displayed on the **copilot credits capacity** tab:
+View the Copilot Studio capacity consumed within that environment. The following cards are displayed on the **Copilot credits capacity** tab:
 
 - **Capacity consumption by product**: This tile provides a product-focused summary of Copilot credits consumed, showing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
 
-- **copilot credit consumption details**: The grid displays a list of Copilot agents consuming capacity, including the associated product, feature name, and the count of billed versus nonbillable credits.
+- **Copilot credit consumption details**: The grid displays a list of Copilot agents consuming capacity, including the associated product, feature name, and the count of billed versus nonbillable credits.
 
 ## Manage capacity
 Capacity allocation can be managed in the Power Platform admin center. 
@@ -118,7 +118,7 @@ To allocate, complete the following steps depending on whether you're using the 
 
    -or-
 
-   - Under the **Copilot Studio** heading, select **Manage copilit credits** or **Manage sessions**.
+   - Under the **Copilot Studio** heading, select **Manage Copilot credits** or **Manage sessions**.
 
 # [Classic admin center](#tab/classic)
 
@@ -132,12 +132,12 @@ To allocate, complete the following steps depending on whether you're using the 
 
    -or-
 
-   - Under the **Copilot Studio** heading, select **Manage copilot credits** or **Manage sessions**.
+   - Under the **Copilot Studio** heading, select **Manage Copilot credits** or **Manage sessions**.
    
 
 ---
 
-In the allocation panel, select an environment and specify the number of copilot credits to allocate in the **copilot credits** textbox.
+In the allocation panel, select an environment and specify the number of Copilot credits to allocate in the **Copilot credits** textbox.
 
 ### Overage management
 When consumption exceeds the preallocated capacity, you can choose to draw capacity from the available capacity in the tenant or opt to bill overages to a linked pay-as-you-go plan.
@@ -172,15 +172,15 @@ Once limits are in place, you can configure two key guardrails:
    
 ## Frequently asked questions
 
-### What is a copilot credit?
+### What is a Copilot credit?
 
-A copilot credit represents a single interaction between a user and a Copilot agent, counted as one unit of consumption. Each credit is defined as a request sent to Copilot that prompts a response or action.
+A Copilot credit represents a single interaction between a user and a Copilot agent, counted as one unit of consumption. Each credit is defined as a request sent to Copilot that prompts a response or action.
 
 ### Why should I use a pay-as-you-go plan?
 Pay-as-you-go plans provide these benefits:
 
 - **Flexibility**: Since your usage may fluctuate, pay-as-you-go plans allow for scalability and flexibility. You pay for only what you use.
-- **Business continuity**: Given that Copilot Studio is the way to pay for the use of agents that are critical to business continuity, the pay-as-you-go model overcomes any concern associated with reaching the limits of purchased copilot credits.
+- **Business continuity**: Given that Copilot Studio is the way to pay for the use of agents that are critical to business continuity, the pay-as-you-go model overcomes any concern associated with reaching the limits of purchased Copilot credits.
 - **Availability**: Your users can benefit from the agents you build, without requiring separate licenses.
 - **Cost savings**: Reduce the hassle of prepaid capacity inventory management. No more unused capacity expiring at the end of the month.
 - **No commitment**: Get started with pay-as-you-go right away without locking into any long-term commitments and without any upfront costs.
