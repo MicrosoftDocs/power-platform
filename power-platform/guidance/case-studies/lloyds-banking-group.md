@@ -12,7 +12,7 @@ ms.date: 07/30/2025
 
 # Lloyds Banking Group bridges language barriers with Power Apps and Azure AI Services 
 
-In this article, you learn how [Lloyds Banking Group](https://www.lloydsbank.com/), the UK's largest digital bank, uses Microsoft Power Apps and Azure AI services to bridge language barriers by enabling real-time, seamless translation between English and the customer's preferred language. 
+In this article, you learn how [Lloyds Banking Group](https://www.lloydsbank.com/), the UK's largest digital bank, uses Microsoft Power Apps and Azure AI services to bridge language barriers by enabling real-time, seamless translation between English and the customer's preferred language.
 
 The organization serves 28 million customers through a wide range of channels, including approximately 1,500 retail branches, online and digital channels, telephony, and mobile services. Lloyds Banking Group has made a strategic commitment to Microsoft Power Platform, to modernize its applications and create a more sustainable, inclusive, and accessible future for customers and businesses.
 
@@ -34,7 +34,7 @@ Lloyds Banking Group saw the opportunity and importance of connecting and commun
 
 Translation isn't a new problem, but creating a seamless experience with this simple innovation has enhanced the company's service delivery. Both employees and customers have provided positive feedback. The application's seamless integration into daily operations has improved customer experiences, especially in multicultural areas where language support is crucial.
 
-By using Power Apps, Azure AI services, and custom PCF controls, Lloyds is showcasing its commitment to innovation and customer-focused solutions. The app is deployed across all branches of the bank. The app's successful development, testing, and deployment highlights the organization's agility in adopting cutting-edge technologies to improve inclusivity, accessibility, and customer satisfaction.
+By using Power Apps, Azure AI services, and [code components](/power-apps/developer/component-framework/overview), Lloyds is showcasing its commitment to innovation and customer-focused solutions. The app is deployed across all branches of the bank. The app's successful development, testing, and deployment highlights the organization's agility in adopting cutting-edge technologies to improve inclusivity, accessibility, and customer satisfaction.
 
 ### Center of Excellence
 
@@ -54,7 +54,7 @@ The Branch Translation App is composed of four panes, together with speaker and 
 
 - **Spoken Text pane**: Displays the original English input from the speech service.
 
-- **Speaker icons**: Power Apps Component Framework (PCF) connected to the Speech JavaScript SDK enable speech synthesis of both spoken and translated text.
+- **Speaker icons**: Power Apps component framework connected to the Speech JavaScript SDK enable speech synthesis of both spoken and translated text.
 
 - **Translated Text pane**: Shows the translation of the spoken input, returned by the Speech JavaScript SDK.
 
@@ -62,7 +62,7 @@ The Branch Translation App is composed of four panes, together with speaker and 
 
 - **Our Services pane**: Sends spoken text to the OpenAI service to retrieve a list of relevant banking services for the customer, based on the input.
 
-- **Microphone icon**: Captures speech via the PCF component, which uses the JavaScript Speech API to communicate with Azure Speech Services.
+- **Microphone icon**: Captures speech via the code component, which uses the JavaScript Speech API to communicate with Azure Speech Services.
 
 ## Components
 
@@ -72,7 +72,7 @@ The architecture of the Branch Translation App consists of several key component
 
 - **Azure AI services**: Uses Azure AI Language and Speech, to handle translation tasks. Language Studio supports language feature integration, while Speech Studio offers speech-to-text and text-to-speech capabilities.
 
-- **Controls and connectors**: Real-time translation is achieved through integration with Azure AI Services using connectors and a custom PCF control.
+- **Controls and connectors**: Real-time translation is achieved through integration with Azure AI Services using connectors and a code component.
 
 ## Implementation and deployment
 
@@ -94,9 +94,9 @@ The high-level flow of the Branch Translation App is as follows:
 
 1. Power Apps provides a user-friendly interface. 
 
-1. Power Automate flows send information from the PCF component, the connectors, and AI Builder to the Power Apps application.
+1. Power Automate flows send information from the code component, the connectors, and AI Builder to the Power Apps application.
 
-1. The PCF component uses a JavaScript SDK to send a request and response through Azure API Management and to receive translation and personal information (PII) extraction from the Azure AI Language service.
+1. The code component uses a JavaScript SDK to send a request and response through Azure API Management and to receive translation and personal information (PII) extraction from the Azure AI Language service.
 
 1. The connectors send a custom REST request through API Management to receive OpenAI-powered banking service recommendations and AI Language translations, returned as a JSON response.
 
@@ -111,9 +111,9 @@ The following flow diagram illustrates the speech translation process.
 The user flow is seamless, intuitive, and emphasizes accuracy:
 
 1. The user selects the microphone button to speak into the device.
-1. The Power Apps application initializes the PCF component and sends the recorded audio.
-1. The PCF component initializes the Speech JavaScript SDK and sends the voice file to Azure AI services to analyze and translate the audio.
-1. Azure AI services return the translated results to the Speech JavaScript SDK and to the PCF component, which then updates the data parameters.
+1. The Power Apps application initializes the code component and sends the recorded audio.
+1. The code component initializes the Speech JavaScript SDK and sends the voice file to Azure AI services to analyze and translate the audio.
+1. Azure AI services return the translated results to the Speech JavaScript SDK and to the code component, which then updates the data parameters.
 1. The Power Apps application renders the results to the user.
 
 ## Key takeaways
@@ -122,7 +122,7 @@ The Lloyds Branch Translation App case study demonstrates the potential of using
 
 - Power Apps simplified the process of building apps, in this case a language translation app.
 
-- Power Automate flows integrate the various components with the app, including the PCF component, custom REST connectors, and AI Builder.
+- Power Automate flows integrate the various components with the app, including the code component, custom REST connectors, and AI Builder.
 
 - AI Builder provides simple communication with the Azure AI Vision service for advanced camera-based visual document processing.
 
@@ -154,6 +154,7 @@ By using the right tools, the organization plans to continue enhancing its opera
     - [Training for Power Apps](/training/powerplatform/power-apps)
     - [Copilot in Power Apps overview](/power-apps/maker/canvas-apps/ai-overview)
     - [Microsoft Power Platform Center of Excellence (coE) Starter Kit](/power-platform/guidance/coe/starter-kit)
+    - [Code components](/power-apps/developer/component-framework/custom-controls-overview)
 - [Overview of AI Builder](/ai-builder/overview)
 - [What is Power Automate?](/power-automate/flow-types)
     - [Get started with Power Automate](/training/modules/get-started-flows/) (training module)
