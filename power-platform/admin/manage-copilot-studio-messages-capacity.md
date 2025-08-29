@@ -154,7 +154,7 @@ Admins can define monthly consumption limits for each Copilot Studio agent, rega
    
    - Search for a specific agent.
    - View all Copilot Studio agents across the tenant that have incurred billing charges.
-   - See configured message limits, if any.
+   - See configured copilot credit limits, if any.
    - See month-to-date billed credits.
    - Turn off an agent.
    - View  the environment each agent belongs to.
