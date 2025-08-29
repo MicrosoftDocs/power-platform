@@ -48,8 +48,6 @@ The consumption monitoring views in capacity management provide detailed, daily 
 
 When viewing the Copilot Studio summary, the following cards are displayed in the **Capacity summary** section on the page and provide information to you.
 
-:::image type="content" source="media/environment-tab.png" alt-text="The following cards are displayed in the **Capacity summary** section on the page.":::
-
 #### Pay-as-you-go credits
 This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio credit  billed to these plans. A billing plan in the Power Platform admin center is a configuration that allows administrators to group one or more environments, allowing them to track and bill Copilot Studio credit capacity usage directly to an Azure subscription on a pay-as-you-go basis.
 
