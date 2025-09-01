@@ -29,19 +29,19 @@ In Managed Environments, admins can provide customized welcome content to help t
 
 When the welcome content is used, upon signing in to Power Apps or Copilot Studio, makers are greeted with customized getting started information. More information: [Use the learn hub](/power-apps/maker/common/learn-hub#from-your-org-preview)
 
-:::image type="content" source="media/welcome/maker-welcome-1.png" alt-text="Welcome content for makers.":::
-
 ## Add welcome content
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
-3. Select **Environments** in the left navigation pane, select a managed environment, and then select **Edit Managed Environment** on the top menu bar.
+3. In the **Manage** pane, select **Environments**, and then select a managed environment.
 
-3. Enter the help content in the text box under **Maker Welcome content**.
+4. On the top menu bar, select **Edit Managed Environment**.
+
+5. Enter the help content in the text box under **Maker Welcome content**.
  
-    :::image type="content" source="media/welcome/maker-welcome-2.png" alt-text="Enter your welcome content.":::
+    :::image type="content" source="media/welcome/maker-welcome-new.png" alt-text="Enter your welcome content.":::
       
     You can enter plain text or use Markdown, as demonstrated in this example.
    
@@ -62,7 +62,7 @@ When the welcome content is used, upon signing in to Power Apps or Copilot Studi
 
 5. Select **Preview in a new tab** to see how the text you entered, or Markdown renders.
 
-   :::image type="content" source="media/welcome/maker-welcome-3.png" alt-text="Preview content.":::
+   :::image type="content" source="media/welcome/maker-welcome-new-2.png" alt-text="Preview content.":::
 
 ## Use PowerShell to add and update welcome content
 
@@ -94,5 +94,3 @@ The following script is an example PowerShell script that uses a "Learn more" UR
 ```powershell
 SetManagedEnvironmentMakerOnboardingLearnMoreUrl -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -LearnMoreUrl "www.microsoft.com" 
 ```
- 
-
