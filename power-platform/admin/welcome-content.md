@@ -3,7 +3,7 @@ title: Enable maker welcome content
 description: Enable welcome content for makers for Managed Environments.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/07/2025
+ms.date: 9/1/2025
 author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
@@ -12,11 +12,16 @@ ms.custom: "admin-security"
 search.audienceType: 
   - admin
 ms.contributors:
-- hasharaf
+  - sericks
+  - hasharaf  
+  - syalandur
+contributors:
+  - sericks007
+  - hasharaf
+  - syalandur24
 ---
-# Enable maker welcome content
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+# Enable maker welcome content
 
 In Managed Environments, admins can provide customized welcome content to help their makers get started with [Power Apps](https://make.powerapps.com) and [Copilot Studio](https://copilotstudio.microsoft.com). When you add your own help content, it replaces the default Power Apps first-time help experience for makers. 
 
@@ -30,9 +35,11 @@ When the welcome content is used, upon signing in to Power Apps or Copilot Studi
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. Select **Environments** in the left navigation pane, select a managed environment, and then select **Edit Managed Environment** on the top menu bar.
+2. In the navigation pane, select **Manage**.
 
-3. Enter the help content in the text box under **Maker Welcome content**. 
+3. Select **Environments** in the left navigation pane, select a managed environment, and then select **Edit Managed Environment** on the top menu bar.
+
+3. Enter the help content in the text box under **Maker Welcome content**.
  
     :::image type="content" source="media/welcome/maker-welcome-2.png" alt-text="Enter your welcome content.":::
       
