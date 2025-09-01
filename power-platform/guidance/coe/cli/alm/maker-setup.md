@@ -1,11 +1,10 @@
 ---
 title: "CoE ALM Accelerator for Power Platform maker setup (Deprecated)"
-description: "Summary of how to add a maker to the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
-keywords: 
+description: "Summary of how to add a maker to the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)."
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.custom: ""
 ms.date: 05/23/2023
+ms.update-cycle: 3650-days
 ms.subservice: guidance-toolkit
 ms.topic: install-set-up-deploy
 ms.reviewer: sericks
