@@ -619,7 +619,7 @@ These columns/attributes return true for either **IsValidForCreate** or **IsVali
 |526430000|**Other**|
 |526430001|**Power Automate Maker Portal**|
 |526430002|**Power Platform Maker Portal**|
-|526430003|**Power Virtual Agents Maker Portal**|
+|526430003|**Microsoft Copilot Studio Maker Portal**|
 |526430004|**Power Platform Admin API**|
 |526430005|**PAC CLI**|
 |526430006|**PAC Build Task**|
