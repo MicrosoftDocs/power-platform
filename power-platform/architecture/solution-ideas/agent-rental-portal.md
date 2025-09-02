@@ -155,7 +155,7 @@ The Contoso rental property system provides an integrated platform for managing 
 
 **Compliance:** The architecture complies with relevant data protection regulations. Security policies are regularly reviewed and updated to maintain compliance.
 
-**Data loss prevention (DLP):** Power Platform's built-in DLP policies prevent unauthorized sharing of sensitive information. These policies protect data across all Power Platform services.
+**Data loss prevention (DLP):** Power Platform's built-in data policies prevent unauthorized sharing of sensitive information. These policies protect data across all Power Platform services.
 
 **Microsoft Purview:** Microsoft Purview, used for data governance and compliance management, maintains data integrity and ensures data handling practices meet regulatory requirements.
 

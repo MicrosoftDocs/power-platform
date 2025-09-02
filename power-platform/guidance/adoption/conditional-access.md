@@ -207,7 +207,7 @@ Effectively governing makers, users, and guests is essential to maintain securit
 
 1. **Limit [sharing with Everyone](/power-platform/admin/powerapps-powershell?branch=ppadoption-refresh-mapichle#display-tenant-setting-for-ability-to-share-apps-with-everyone), and evaluate configuring specific limits**: Avoid broad sharing permissions that allow everyone to access a resource. Configure specific sharing limits to control how many users makers can share their applications and data with. 
 
-1. **Apply data loss prevention (DLP) policies to the default and developer environments**: Apply DLP policies to the default and developer environments to restrict access to only the connectors that makers need. This approach helps prevent unauthorized data transfers and ensures that sensitive information is protected. Regularly review and update DLP policies to align with changing security requirements.
+1. **Apply data policies to the default and developer environments**: Apply data policies to the default and developer environments to restrict access to only the connectors that makers need. This approach helps prevent unauthorized data transfers and ensures that sensitive information is protected. Regularly review and update data policies to align with changing security requirements.
 
 1. **Use Microsoft Entra ID Groups to secure environment access**: Use Microsoft Entra ID groups to manage and secure access to Power Platform environments. By grouping users based on their roles and responsibilities, you can efficiently assign and manage permissions. Microsoft Entra ID groups also simplify the process of updating access controls as organizational needs evolve.
 
@@ -219,7 +219,7 @@ Review the detailed articles in this series to further enhance your security pos
 
 - [Detect threats to your organization](threat-detection.md)
 - [Establish data protection and privacy controls](data-protection.md)
-- [Implement a DLP strategy](dlp-strategy.md)
+- [Implement a data policy strategy](dlp-strategy.md)
 - [Meet compliance requirements](compliance.md)
 - [Secure the default environment](secure-default-environment.md)
 
