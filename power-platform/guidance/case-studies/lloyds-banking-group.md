@@ -153,7 +153,7 @@ By using the right tools, the organization plans to continue enhancing its opera
 - [What is Power Apps?](/power-apps/powerapps-overview)
     - [Training for Power Apps](/training/powerplatform/power-apps)
     - [Copilot in Power Apps overview](/power-apps/maker/canvas-apps/ai-overview)
-    - [Microsoft Power Platform Center of Excellence (coE) Starter Kit](/power-platform/guidance/coe/starter-kit)
+    - [Microsoft Power Platform Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/starter-kit)
     - [Code components](/power-apps/developer/component-framework/custom-controls-overview)
 - [Overview of AI Builder](/ai-builder/overview)
 - [What is Power Automate?](/power-automate/flow-types)
