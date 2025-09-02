@@ -5,7 +5,7 @@ description: Prerequisites and step-by-step instructions for setting up the CoE 
 author: Grant-Archibald-MS
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/25/2025
+ms.date: 08/21/2025
 ms.subservice: guidance-toolkit
 ms.author: grarchib
 ms.reviewer: jhaskett-msft
@@ -109,7 +109,7 @@ The CoE Starter Kit offers two mechanisms to gather this data:
 
    Proceed with the CoE Starter Kit configuration only when you see inventory data files in your storage account. The initial data export can take up to five days.
 
-1. [Download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with data export and [use the setup wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to configure the feature in your tenant.
+1. [Download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with data export and [use the setup wizard](setup-core-components.md#set-up-the-inventory-components-by-using-the-setup-wizard) to configure the feature in your tenant.
 
 1. Post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION). Your feedback is critical to this process.
 
@@ -126,7 +126,7 @@ We recommend testing upgrades in a dedicated test environment before upgrading y
 
 In your test environment, set the *ProductionEnvironment* variable to *no*. A *no* setting means no emails are sent to makers and end users as you test features.
 
-Learn more in [Updating the Center of Excellence (CoE) Starter Kit](after-setup.md).
+Learn more in [Update the Center of Excellence (CoE) Starter Kit](after-setup.md).
 
 ## Create your environments
 
@@ -143,9 +143,9 @@ Create two production environments to install the CoE Starter Kit solutions:
 > [!IMPORTANT]
 > Using data export as a mechanism to retrieve inventory and telemetry is currently in preview. We recommend you test this feature in a dedicated test environment before using it in production.
 
-### Validate data loss prevention (DLP) policies
+### Validate data policies
 
-The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your CoE Starter Kit environment must allow the following connectors to be used together in the business group:
+The [data policy](/power-platform/admin/wp-data-loss-prevention) applied to your CoE Starter Kit environment must allow the following connectors to be used together in the business group:
 
 - [Approvals](/connectors/approvals/)
 - [Azure Resource Manager](/connectors/arm/)
@@ -176,9 +176,9 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 
   If your tenant is in Government Community Cloud (GCC), GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
-  You can't set up [DLP endpoint filtering](../../admin/connector-endpoint-filtering.md) for these connectors, as DLP Policies don't support dynamic endpoint evaluation.
+  You can't set up [endpoint filtering](../../admin/connector-endpoint-filtering.md) for these connectors, as data policies don't support dynamic endpoint evaluation.
 
-- Check that no other DLP policies apply to this environment. Learn more in [Combined effect of multiple DLP policies](../../admin/dlp-combined-effect-multiple-policies.md).
+- Check that no other data policies apply to this environment. Learn more in [Combined effect of multiple data policies](../../admin/dlp-combined-effect-multiple-policies.md).
 
 ## Download and install
 
