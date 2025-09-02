@@ -4,7 +4,7 @@ description: Learn how to establish incident response procedures that reduce the
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -99,6 +99,10 @@ Generate incident reports for internal use and, if necessary, for regulatory com
 
 The following sections describe the mechanisms you can employ as part of your security incident response procedures.
 
+### Security page in the Power Platform admin center
+
+The [Security > Overview page](/power-platform/admin/security/security-overview) in the Power Platform admin center is designed to enhance your organization's security and streamline management. It provides a centralized location where you can view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization. Review this page and identify impactful recommendations that the system generates. These recommendations are based on best practices for improving a tenant's security score.
+
 ### Microsoft Sentinel
 
 Microsoft Sentinel solution for Microsoft Power Platform allows customers to detect various suspicious activities, including:
@@ -109,7 +113,7 @@ Microsoft Sentinel solution for Microsoft Power Platform allows customers to det
 - Phishing attacks made through Power Apps
 - Power Automate flows activity by departing employees
 - Microsoft Power Platform connectors added to an environment
-- Update or removal of Microsoft Power Platform data loss prevention policies
+- Update or removal of Microsoft Power Platform data policies
 
 For more information, see [Microsoft Sentinel solution for Microsoft Power Platform overview](/azure/sentinel/business-applications/power-platform-solution-overview).
 
@@ -124,7 +128,7 @@ For more information, see:
 - [Copilot Studio activity logging](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Power Pages activity logging](/power-platform/admin/logging-power-pages)
 - [Power Platform connector activity logging](/power-platform/admin/connector-events-power-platform)
-- [Data loss prevention activity logging](/power-platform/admin/dlp-activity-logging)
+- [Data policy activity logging](/power-platform/admin/dlp-activity-logging)
 - [Power Platform administrative actions activity logging](/power-platform/admin/admin-activity-logging)
 - [Microsoft Dataverse and model-driven apps activity logging](/power-platform/admin/enable-use-comprehensive-auditing)
 

@@ -1,30 +1,30 @@
 ---
-title: "Use Word templates to create standardized documents  | MicrosoftDocs"
-description: Create a standardized document with one click using Word templates in Power Platform.
+title: Use Word templates to create standardized documents
+description: Learn how to create a standardized document with one click using Word templates in Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/07/2023
+ms.date: 08/21/2025
 author: chrisgarty
 ms.subservice: admin
+ms.custom: NewPPac
 ms.author: cgarty
 ms.reviewer: sericks
 contributors: 
     - sriharibs-msft
+    - EllenWehrle
 search.audienceType: 
   - admin
 ---
 # Use Word templates to create standardized documents
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 <!-- legacy procedure -->
 
- After you create and import [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] templates into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), with one click users can generate standardized documents automatically populated with data. This feature has some special considerations you should know about to successfully create [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates.  
+  After you create and import [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] templates into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), users select one button to generate standardized documents automatically populated with data. This feature has some special considerations you need to know to successfully create [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates.
 
 > [!WARNING]
-> There is a known issue when creating templates in [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]. This topic contains information on how to prevent interactions that could potentially destabilize [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]. See: [Important! A known issue and how to avoid it](../admin/using-word-templates-dynamics-365.md#BKMK_Important)  
+> There's a known issue when creating templates in [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]. It's important to review and follow the guidance in the [Avoid a known issue when creating templates](#avoid-a-known-issue-when-creating-templates) section of this article to prevent interactions that could potentially destabilize [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)].
 
- The following are the supported versions of [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)].  
+ **Supported versions of [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]**  
 
 |                                                                          Area                                                                           | [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Version |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
@@ -34,44 +34,70 @@ search.audienceType:
 > [!NOTE]
 > Macro-enabled Word documents (.docm) are not supported.
 
- Follow the steps in this topic to successfully create and use [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates in customer engagement apps.  
-
-<a name="BKMK_AboutSelectEntity"></a>   
+ Follow the steps in this article to successfully create and use [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates in customer engagement apps.  
 
 ## Step 1: Create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template  
 
-### Where you can create a template  
- There are three places in customer engagement apps where you can create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template:  
+### Where you can create a template
 
-- **From the Settings page**. Go to **Settings** > **Templates** > **Document Templates** > **New**(![New or Add button.](../admin/media/nb-ua-r1-plus.png "New or Add button")). You'll need sufficient permissions to access to the Settings page, such as System Administrator or System Customizer.  
+There are two places in customer engagement apps where you can create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template:
 
-- **From a record**. Open a record such as an account in Sales. Go to **Sales** > **Client_Accounts** > **My Active Accounts**. Click an account to open it, and then click **More** (**…**) > **Word Templates** > **Create Word Template**. Templates created here are personal and available only to the user creating the template.  
+- **From [Power Platform admin center](https://admin.powerplatform.microsoft.com/)**.
 
-- **From a list of records**. For example, go to **Sales** > **Client_Accounts** > **My Active Accounts**. Select a single account, and then click **More** (**…**) > **Word Templates** > **Create Word Template**.  
+    Access requires sufficient permissions, such as System Administrator or System Customizer role. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don't have the correct permissions, contact your system administrator.
 
-  ![Create a Word template from an entity.](../admin/media/word-template-create-from-entity.png "Create a Word template from an entity")  
+    #### [New admin center](#tab/new)
+
+    1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+    1. In the navigation pane, select **Manage**.
+    1. In the **Manage** pane, select **Environments** and choose an environment.
+
+    #### [Classic admin center](#tab/classic)
+
+    1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+    1. In the navigation pane, select **Environments**.
+    1. On the **Environments** page, choose an environment.
+
+    ---
+
+    4. On the Environments page, go to the command bar and select **Settings**.
+    1. Expand **Templates**, then select **Document templates**.
+    1. In Microsoft Dynamics 365, go to the command bar and select **New** to open the *Create template from CRM data* dialog box.
+
+- **From a list of records**. For example:
+
+    1. Sign in to the **Sales Hub** app.
+    1. In the navigation pane, select **Opportunities**.
+    1. From the grid view selector in the command bar, select **My Open Opportunities** to display a list of records.
+    1. In the list, select **[!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Templates**, then select **Create [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Template** to open the *Create template from CRM data* dialog box.
+
+   ![Create a Word template from an entity.](../admin/media/word-template-create-from-entity.png "Create a Word template from an entity")  
 
 > [!TIP]
->  To delete personal document templates, do the following:  
->   
-> 1.  Click Advanced Find (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button.PNG "Screen shot of Advanced Find button")).  
-> 2.  For **Look for**, select **Personal Document Templates**.  
-> 3.  Click **Results** (!).  
-> 4.  Select the personal document template to delete and then click **Delete** (![Delete button.](../admin/media/nb-ua-r1-trashbin.png "Delete button")).  
+> To delete personal document templates, follow these steps:  
 >
-> To update templates, delete the template and then upload an updated version of that template.
+> 1. Select **Advanced Find** (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button.PNG "Screen shot of Advanced Find button")).  
+> 1. For *Look for*, select **Personal Document Templates**.  
+> 1. Select **Results** (!).  
+> 1. Choose the personal document template to delete and then select **Delete** (![Delete button.](../admin/media/nb-ua-r1-trashbin.png "Delete button")).  
+>
+> To update templates, delete the template and then upload an updated version.
 
+In the *Create template from CRM data* dialog box:
 
- After clicking **Create Word Template**, select an entity to filter with, and then click **Word Template** > **Select Entity**.  
+1. Select **[!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Template**.
+1. Choose an entity to filter with.
+1. Select **Select Entity** to open the *Select Entity* dialog box.  
 
  ![Choose Word Template and select entity.](../admin/media/word-template-select-entity.png "Choose Word Template and select entity")  
 
- The relationship selection page appears.  
+ In the *Select Entity* dialog box you configure the entity relationships.
 
  ![Select entities for the Word template.](../admin/media/word-template-select-entities.png "Select entities for the Word template")  
 
-### What are 1:N, N:1, and N:N relationships?  
- This screen requires an understanding of your customer engagement apps data structure. Your administrator or customizer can provide information about entity relationships. For admin content, see: [Entity relationships overview](/powerapps/maker/common-data-service/relationships-overview).  
+### What are 1:N, N:1, and N:N relationships?
+
+ This screen requires an understanding of your customer engagement apps data structure. Your admin or customizer can provide information about entity relationships. For admin content, see: [Entity relationships overview](/powerapps/maker/common-data-service/relationships-overview).  
 
  Here are some example relationships for the Account entity.  
 
@@ -84,59 +110,58 @@ search.audienceType:
  The relationships you select on this screen determine what entities and fields are available later when you define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template. Only select relationships you need to add data to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
 
 > [!NOTE]
->  To ensure documents download in a timely matter, there is an upper limit of 100 for the number of related records returned for each relationship. For example, if you're exporting a template for an account, and you want to include a list of its contacts, the document will return at most 100 of the account's contacts.  
+> To ensure documents download quickly, only return up to 100 related records for each relationship. For example, if you export a template for an account, and want to include a list of its contacts, the document will return at most 100 of the account's contacts.  
 
-### Download the template  
- Click **Download Template** on the **Select Entity** page to create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file on your local computer with the exported entity included as XML data.  
+### Download the template
 
+Select **Download Template** on the **Select Entity** page to create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file on your local computer with the exported entity included as XML data.  
 
 > [!IMPORTANT]
-> Document template downloaded from one environment can only be used within that environment. environment to environment migration for Word or Excel templates isn't currently supported.
+> You can only use a document template in the environment where you downloaded it. Environment-to-environment migration for Word or Excel templates isn't supported.
 
+<a name="BKMK_EnableDeveloper"></a>
 
-<a name="BKMK_EnableDeveloper"></a>   
-## Step 2: Enable the Developer tab  
- Open the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template file. At this point, the document appears to be blank.  
+## Step 2: Enable the Developer tab
 
- ![The Word template when first opened.](../admin/media/word-template-first-open.png "The Word template when first opened")  
+Open the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template file. At this point, the document appears to be blank.  
 
- To see and add customer engagement apps XML data, you need to enable the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Developer tab.  
+![The Word template when first opened.](../admin/media/word-template-first-open.png "The Word template when first opened")  
+
+To see and add customer engagement apps XML data, you need to enable the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Developer tab.  
 
 1. Go to **File** > **Options** > **Customize Ribbon**, and then enable **Developer**.  
 
    ![Add Developer to the Word Ribbon.](../admin/media/word-template-developer-word-ribbon.png "Add Developer to the Word Ribbon")  
 
-2. Click **OK**.  
+1. Select **OK**.  
 
    **Developer** now appears in the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] ribbon.  
 
    ![Developer tool on Word Ribbon.](../admin/media/word-template-developer-tool-word-ribbon.png "Developer tool on Word Ribbon")  
 
-<a name="BKMK_Important"></a>   
-## Important! A known issue and how to avoid it  
- There's a known issue with customer engagement apps apps-generated [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates and [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. In the next section, you'll be adding XML content control fields to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
+### Avoid a known issue when creating templates
+
+ There's a known issue with customer engagement apps' apps-generated [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates and [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. Follow the guidance in this section to prevent issues with control fields before going to [step three](#step-3-define-the-template) where you add XML content control fields to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
 
 > [!WARNING]
->  A few things  can cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze, requiring you to use [!INCLUDE[pn_ms_TaskManager_short](../includes/pn-ms-taskmanager-short.md)] to stop [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]:  
-> 
+> A few things  can cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze, requiring you to use [!INCLUDE[pn_ms_TaskManager_short](../includes/pn-ms-taskmanager-short.md)] to stop [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]:  
+>
 > - You insert a content control other than **Picture** or **Plain Text**.  
 > - You make a textual change, such as changing the capitalization or adding text, to a content control. These changes can occur through AutoCorrect as well as user edits. By default, Microsoft [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] AutoCorrect capitalizes sentences. When you add a content control field, [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] sees it as a new sentence and will capitalize it when focus shifts away from the field.  
 
- To prevent issues with control fields, do the following:  
+#### Only add fields as Plain Text or Picture
 
-#### Only add fields as Plain Text or Picture  
-
-1. You use the XML Mapping Pane to add entity fields to your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template. Be sure to only add fields as **Plain Text** or **Picture**.  
+You use the XML Mapping Pane to add entity fields to your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template. Be sure to only add fields as **Plain Text** or **Picture**.  
 
    ![Insert the field as Plain Text.](../admin/media/word-template-insertfield-plain-text.png "Insert the field as Plain Text")  
 
 #### Do not make any textual changes to the added content control  
 
-1. You can make formatting changes to content control fields, such as bolding the text, but no other textual changes, including capitalization changes.  
+You can make formatting changes to content control fields, such as bolding the text, but no other textual changes, including capitalization changes.  
 
    ![Don't change any text in these fields&#33;.](../admin/media/word-template-dont-change-text-fields.png "Don't change any text in these fields!")  
 
-   If you experience [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] freezing or performance degradation, try turning off AutoCorrect.  
+   If you experience [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] freezing or performance degradation, try turning off **AutoCorrect**.  
 
 #### Turn off AutoCorrect  
 
@@ -144,26 +169,21 @@ search.audienceType:
 
    ![In Word, select Proofing &#62; AutoCorrection Options.](../admin/media/word-template-proofing-auto-correct-options.png "In Word, select Proofing > AutoCorrection Options")  
 
-2. Deselect **Capitalize first letter of sentences** and **Automatically use suggestions from the spelling checker**.  
+1. Deselect **Capitalize first letter of sentences** and **Automatically use suggestions from the spelling checker**.  
 
    ![Deselect the AutoCorrect settings.](../admin/media/word-template-deselect-auto-correct-settings.png "Deselect the AutoCorrect settings")  
 
-3. Deselect **Hyphens (--) with dash (-)** on the **AutoFormat** and **AutoFormat as You Type** tabs.  
+1. Deselect **Hyphens (--) with dash (-)** on the **AutoFormat** and **AutoFormat as You Type** tabs.  
 
-4. Click **OK**.  
+1. Select **OK**.
 
-   If you followed the above recommendations, you're ready to define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
+## Step 3: Define the template  
 
-<a name="BKMK_DefineTemplate"></a>  
+Use the XML Mapping Pane to define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template with entity fields.  
 
-## Step 3: Define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template  
- Use the XML Mapping Pane to define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template with entity fields.  
-
-1. In your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template, click **Developer** > **XML Mapping Pane**.  
+1. In your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template, select **Developer** > **XML Mapping Pane** to select the default XML schema.  
 
    ![Select XML Mapping Pane in the Word ribbon.](../admin/media/word-template-xml-map-pane.png "Select XML Mapping Pane in the Word ribbon")  
-
-    The default XML schema is selected.  
 
    ![The default XML Mapping schema.](../admin/media/word-template-upload-dynamics-365.png "The default XML Mapping schema")  
 
@@ -172,9 +192,9 @@ search.audienceType:
    ![Select the XML schema.](../admin/media/word-template-select-xml-schema.png "Select the XML schema")  
 
    > [!IMPORTANT]
-   >  If you have frequent accidental edits that cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze or have performance degradation, be sure to turn off the AutoCorrect options according to the section: "A known issue and how to avoid it".  
+   > If you have frequent accidental edits that cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze or have performance degradation, be sure to turn off the AutoCorrect options according to the section, [Avoid a known issue when creating templates](#avoid-a-known-issue-when-creating-templates).  
 
-3. Expand the entity, right-click the entity field, and then click **Insert Content Control** > **Plain Text**.  
+3. Expand the entity, right-click the entity field, and then select **Insert Content Control** > **Plain Text**.  
 
    ![Insert the field as Plain Text.](../admin/media/word-template-insertfield-plain-text.png "Insert the field as Plain Text")  
 
@@ -194,21 +214,20 @@ search.audienceType:
 
 1. Put fields with repeating data in a table row.  
 
-2. Select the entire table row in the template.  
+1. Select the entire table row in the template.  
 
    ![Create a table and add content control fields.](../admin/media/word-template-create-table-content-control-fields.png "Create a table and add content control fields")  
 
-3. In the XML Mapping Pane, right-click the relationship containing the content control fields, and then click **Repeating**.  
+1. In the XML Mapping Pane, right-click the relationship containing the content control fields, and then click **Repeating**.  
 
    ![Set the table row to repeating.](../admin/media/word-template-set-table-row-repeating.png "Set the table row to repeating")  
 
-   When you use the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template in customer engagement apps to create a document, the table will populate with multiple rows of data.  
+   When you use the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template in customer engagement apps to create a document, the table populates with multiple rows of data.  
 
-   When the template has the fields and formatting you want, save it and upload it into customer engagement apps.  
+   When the template has the fields and formatting you want, save it and upload it into customer engagement apps.
 
-<a name="BKMK_Upload"></a>  
+## Step 4: Upload the Word template back into customer engagement apps
 
-## Step 4: Upload the Word template back into customer engagement apps 
 When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template built the way you want, save it so you can upload it into customer engagement apps.  
 
  Access to the newly created Word template depends on how you uploaded it and to the access granted to the security role. Be sure to check out [Use Security Roles to control access to templates](../admin/using-word-templates-dynamics-365.md#BKMK_SecurityRoles).  
@@ -219,13 +238,13 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 
 1. Go to **Settings** > **Templates** > **Document Templates**.  
 
-2. Click **Upload Template**.  
+2. Select **Upload Template**.  
 
 3. Drag the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file in the dialog box or browse to the file.  
 
    ![Upload Template dialog box.](../admin/media/word-template-upload-dialog-box.png "Upload Template dialog box")  
 
-4. Click **Upload**.  
+4. Select **Upload**.  
 
    Non-admin users can upload a template for their own use from a list of records.  
 
@@ -233,24 +252,25 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 
 1. Open a page with a list of records, for example, the list of customer accounts in Sales.  
 
-2. Select a single item such as an account, click **More** (**…**) > **Word Templates** > **Create Word Template**.  
+2. Select a single item such as an account, select **More** (**…**) > **Word Templates** > **Create Word Template**.  
 
-3. Click **Word Template** > **Upload**.  
+3. Select **Word Template** > **Upload**.  
 
-   ![Click Upload to bring the template into customer engagement apps.](../admin/media/word-template-upload-button.png "Click Upload to bring the template into customer engagement apps")  
+   ![Select Upload to bring the template into customer engagement apps.](../admin/media/word-template-upload-button.png "Click Upload to bring the template into customer engagement apps")  
 
 4. Drag the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file in the dialog box or browse to the file.  
 
-5. Click **Upload**.  
+5. Select **Upload**.  
 
 <a name="BKMK_Generate"></a>
 
 ## Step 5: Generate a document from the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template  
+
  To use the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template you've created, do the following:  
 
 1. Open a record with information you want to create a document. For example, open a customer account record in Sales.  
 
-2. Click **More** (**…**) **> Word Templates**, and then under **Word Templates** select the template you created.  
+2. Select **More** (**…**) **> Word Templates**, and then under **Word Templates** select the template you created.  
 
     If the template you created is not visible, there are two possibilities:  
 
@@ -263,6 +283,7 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 <a name="BKMK_SampleTemplates"></a>  
 
 ### Try out the sample [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates  
+
  There are five [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates included with customer engagement apps.  
 
  ![These templates are included with customer engagement apps.](../admin/media/template-bundled.png "These templates are included with customer engagement apps")  
@@ -281,34 +302,37 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 
 1. Open a record with information with the entity type that matches the sample template. For example, open a customer account record in Sales to apply the Account Summary template.  
 
-2. Click **More** (**…**) **> Word Templates**, and then under **Word Templates** select the sample template.  
+2. Select **More** (**…**) **> Word Templates**, and then under **Word Templates** select the sample template.  
 
    Open the newly-created [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template and give it a look.  
 
 > [!NOTE]
->  You can review but not edit templates that are included in customer engagement apps.  
+> You can review but not edit templates that are included in customer engagement apps.  
 
 ## Additional considerations  
 
-<a name="BKMK_SecurityRoles"></a> 
+<a name="BKMK_SecurityRoles"></a>
 
 ### Use Security Roles to control access to templates  
+
  Administrators can control access to Word templates with some granularity. For example, you can give salespeople Read but not Write access to a Word template.  
 
-1. Click **Settings** > **Security** > **Security Roles**.  
+1. Select **Settings** > **Security** > **Security Roles**.  
 
 2. Select a role, and then click the Business Management tab.  
 
 3. Select **Document Template** to set access for templates available to the entire organization. Select **Personal Document Template** for templates shared to individual users.  
 
-4. Click the circles to adjust the level of access.  
+4. Select the circles to adjust the level of access.  
 
    ![Adjust access using the security role.](../admin/media/excel-template-restrict-access-using-security-role.png "Adjust access using the security role")  
 
 ### Lists in created documents are not in the same order as records  
+
  Lists of records created from a custom template may not appear in the same order in [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] documents as the order in customer engagement apps. Records are listed in the order of the time and date they were created.  
 
 ### Issue with right-to-left languages
+
 Content in right-to-left (RTL) languages may have some formatting issues in the Word file after the document is created.
 
 ### See also  

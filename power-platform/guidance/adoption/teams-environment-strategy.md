@@ -5,7 +5,7 @@ description: Discover best practices for managing Dataverse for Teams environmen
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/18/2025
+ms.date: 08/20/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -67,7 +67,7 @@ Manage the data governance policies for newly created Dataverse for Teams enviro
 
 - Create a policy spanning all environments except selected ones. Limit the available connectors in this policy to those you want to expose to makers in Dataverse for Teams environments. By setting the scope of the DLP policy to *exclude certain environments,* this policy applies to any new environments that are created in your tenant, including Dataverse for Teams or trial environments. You can explicitly remove any other type of new environment, like a production or sandbox environment, from this tenant-wide DLP policy and add it to appropriate, dedicated DLP policies suited for its use case.
 
-- Create a policy specifically for Dataverse for Teams environments. Keep the available connectors in this policy limited to those you want team members to have access to. Create a script using [PowerShell cmdlets](../../admin/powerapps-powershell.md#data-loss-prevention-dlp-policy-commands), or a flow that uses admin connectors, to periodically add newly created Dataverse for Teams environments to this policy and remove them from the default tenant-level policy.
+- Create a policy specifically for Dataverse for Teams environments. Keep the available connectors in this policy limited to those you want team members to have access to. Create a script using [PowerShell cmdlets](../../admin/powerapps-powershell.md#data-policy-commands), or a flow that uses admin connectors, to periodically add newly created Dataverse for Teams environments to this policy and remove them from the default tenant-level policy.
 
 Learn more: [Implement a DLP strategy](./dlp-strategy.md)
 

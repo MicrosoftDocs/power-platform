@@ -1,6 +1,6 @@
 ---
 title: Connector endpoint filtering (preview)
-description: Learn how to configure connector endpoint filtering in DLP policies to control app, flow, and chatbot connections.
+description: Learn how to configure connector endpoint filtering in data policies to control app, flow, and chatbot connections.
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 04/29/2025
@@ -31,7 +31,7 @@ search.app:
 [!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 [This article is pre-release documentation and is subject to change.]
 
-Connector endpoint filtering allows admins to govern which specific endpoints makers can connect to when building apps, flows, or chatbots. It's configured within a data loss prevention (DLP) policy, and it's exclusively available for the following connectors:
+Connector endpoint filtering allows admins to govern which specific endpoints makers can connect to when building apps, flows, or chatbots. It's configured within a data policy, and it's exclusively available for the following connectors:
 
 - HTTP
 - HTTP with Microsoft Entra ID (AD)
@@ -41,7 +41,7 @@ Connector endpoint filtering allows admins to govern which specific endpoints ma
 - SMTP
 - DesktopFlow - Browser Automation
 
-When a maker tries to connect their app, flow, or chatbot to a blocked endpoint, they encounter a DLP error message.
+When a maker tries to connect their app, flow, or chatbot to a blocked endpoint, they encounter a data policy error message.
 
 > [!WARNING]
 > Endpoint filtering rules aren't enforced on environment variables, custom inputs, or any endpoint that is dynamically created at run-time. Only static endpoints are evaluated in the app, flow, or chatbot designers. For more information, see [Known limitations](#known-limitations).
@@ -49,7 +49,7 @@ When a maker tries to connect their app, flow, or chatbot to a blocked endpoint,
 > [!Important]
 > [!include [preview](../includes/cc-preview-features-definition.md)]
 
-## Add endpoint filtering rules to your DLP policies
+## Add endpoint filtering rules to your data policies
 
 The **Endpoint configurable** column, on the **Prebuilt Connectors** page in **Data Policies**, indicates whether the endpoint filtering capability is supported for the connector.
 
@@ -59,7 +59,7 @@ If the value of the **Endpoint configurable** column is **Yes**, you can use thi
 
 :::image type="content" source="media/dlp-configure-connector-connector-endpoints.png" alt-text="Configure connector > Connector endpoints.":::
 
-This opens a side panel where you can specify an ordered list of Allow or Deny URL patterns. The last row in the list will always be a rule for the wildcard character (`*`), which applies to all endpoints in that connector. By default, the `*` pattern is set up as Allow for new DLP policies, but you can tag this as Allow or Deny.
+This opens a side panel where you can specify an ordered list of Allow or Deny URL patterns. The last row in the list will always be a rule for the wildcard character (`*`), which applies to all endpoints in that connector. By default, the `*` pattern is set up as Allow for new data policies, but you can tag this as Allow or Deny.
 
 :::image type="content" source="media/dlp-specify-ordered-list-allow-deny-url-patterns.png" alt-text="Specify an ordered list of Allow and Deny URL patterns for custom connectors.":::
 
@@ -72,9 +72,9 @@ After a pattern has been added, you can edit or delete these patterns by selecti
 
 :::image type="content" source="media/dlp-delete-pattern.png" alt-text="Delete a pattern.":::
 
-After saving your connector endpoint filtering rules and the DLP policy in which they're defined, they become instantly enforced on the targeted environments. Below is an example where a maker tried to connect their cloud flow to an HTTP endpoint that isn't allowed.
+After saving your connector endpoint filtering rules and the data policy in which they're defined, they become instantly enforced on the targeted environments. Below is an example where a maker tried to connect their cloud flow to an HTTP endpoint that isn't allowed.
 
-:::image type="content" source="media/EF_CloudFlow.png" alt-text="DLP error because of endpoint filtering rules.":::
+:::image type="content" source="media/EF_CloudFlow.png" alt-text="Data policy error because of endpoint filtering rules.":::
 
 ## Known limitations
 
@@ -84,7 +84,7 @@ After saving your connector endpoint filtering rules and the DLP policy in which
 
     :::image type="content" source="media/EF_KnownLimitation_2.png" alt-text="Cloud flow runs successfully.":::
 
-- Some Power Apps published before October 1, 2020, need to be re-published for DLP connector action rules and endpoint rules to be enforced. The following script enables admins and makers to identify apps that must be re-published to respect these new DLP granular control rules:
+- Some Power Apps published before October 1, 2020, need to be re-published for data policy connector action rules and endpoint rules to be enforced. The following script enables admins and makers to identify apps that must be re-published to respect these new data policy granular control rules:
 
     ```powershell
     Add-PowerAppsAccount
@@ -100,10 +100,10 @@ After saving your connector endpoint filtering rules and the DLP policy in which
         $wasBackfilled = $app.Internal.properties.executionRestrictions -ne $null -and $app.Internal.properties.executionRestrictions.dataLossPreventionEvaluationResult -ne $null -and ![string]::IsNullOrEmpty($app.Internal.properties.executionRestrictions.dataLossPreventionEvaluationResult.lastAdvancedBackfillDate) 
 
         If($($olderApp -and !$wasBackfilled)){
-            Write-Host "App must be republished to be Granular DLP compliant: " $app.AppName " "  $app.Internal.properties.displayName " " $app.Internal.properties.owner.email
+            Write-Host "App must be republished to be Granular data policy compliant: " $app.AppName " "  $app.Internal.properties.displayName " " $app.Internal.properties.owner.email
         } 
         Else{ 
-            Write-Host "App is already Granular DLP compliant: " $app.AppName 
+            Write-Host "App is already Granular data policy compliant: " $app.AppName 
         }
     }
     ``` 
@@ -220,19 +220,19 @@ $ConnectorConfigurations = @{
 -	The last rule for each connector should always be applied to URL `*`, to ensure that all URLs are covered by the rules.
 -	The order property of the rules for each connector should be populated with numbers 1 to N, where N is the number of rules for that connector.
 
-**Retrieve existing connector configurations for a DLP policy**
+**Retrieve existing connector configurations for a data policy**
 
 ```powershell
 Get-PowerAppDlpPolicyConnectorConfigurations 
 ``` 
 
-**Create connector configurations for a DLP policy**
+**Create connector configurations for a data policy**
 
 ```powershell
 New-PowerAppDlpPolicyConnectorConfigurations
 ``` 
 
-**Update connector configurations for a DLP policy**
+**Update connector configurations for a data policy**
 
 ```powershell
 Set-PowerAppDlpPolicyConnectorConfigurations
@@ -256,7 +256,7 @@ For the HTTP connector:
   -	Deny all other URLs
 
 > [!NOTE]
-> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the DLP GUID by running the **Get-DlpPolicy** cmdlet.
+> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the data policy GUID by running the **Get-DlpPolicy** cmdlet.
 
 ```powershell
 $ConnectorConfigurations = @{ 

@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 07/30/2025
+ms.date: 08/21/2025
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -24,6 +24,24 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Deprecation of the format data by examples feature in Power Automate
+
+As of the first week of August 2025, the [format data by examples](/power-automate/format-data-by-examples) feature in the Power Automate classic designer is deprecated. The feature was available worldwide and used the PROSE model to help makers write expressions for a specific use case of formatting a piece of data in a flow to another permissible data type.
+
+### Why is this needed?
+
+With Copilot, we developed a new feature to help you create and update expressions using natural language better and easier.
+
+### Impact
+
+The deprecation has no impact to customers who have used the feature to write data formatting expressions. Going forward, the feature is hidden.
+
+However, users are no longer able to format dates, numbers, and text using examples in the Power Automate classic designer.
+
+### Replacement feature
+
+The *expression assistant* feature in the expression editor can be used as a replacement to the format data by example feature. Learn how to use the expression assistant feature (including a video) in [Create, update, and fix expressions with Copilot expression assistant (preview)](/power-automate/expressions-copilot).
 
 ## Deprecation of Viva Engage (Yammer) connector support for open authorization connections
 
@@ -199,9 +217,9 @@ This feature is fully removed October 2025.
 
 If the hierarchy view is essential to your app, a custom PCF control that handles the hierarchy view must be created and deployed. For information about how to create a code component, go to [Create and build a code component](/power-apps/developer/component-framework/create-custom-controls-using-pcf).
 
-## Deprecation of schema for DLP activity logging
+## Deprecation of schema for data policy activity logging
 
-The schema DLP activity logging is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin/admin-activity-logging.md#activity-category-data-policy-events).
+The schema for data policy activity logging is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin/admin-activity-logging.md#activity-category-data-policy-events).
 
 ## Deprecation of schema for Lockbox audit events
 
@@ -224,9 +242,9 @@ After careful consideration, and thanks to the feedback from partners, a decisio
 While the portal will be decommissioned, the program continues. For the latest information on the status of the program and how to certify your connector, learn more about the [Data Factory Connector Certification](/fabric/data-factory/connector-certification).
 
 
-## DLP resource exemption feature
+## Data policy resource exemption feature
 
-Effective March 2024, the data loss prevention (DLP) [resource exemption feature](/admin/dlp-resource-exemption.md) is deprecated for tenants that never used it. By October 2024, the resource exemption feature will be deprecated for all customers.
+Effective March 2024, the data policy [resource exemption feature](/admin/dlp-resource-exemption.md) is deprecated for tenants that never used it. By October 2024, the resource exemption feature will be deprecated for all customers.
 
 ## Activity Editor was removed in model-driven apps
 
