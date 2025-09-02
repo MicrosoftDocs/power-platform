@@ -4,7 +4,7 @@ description: Configure server-based authentication with SharePoint on-premises
 author: adrianorth 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/15/2025
+ms.date: 09/02/2025
 ms.subservice: admin
 ms.author: aorth
 ms.reviewer: sericks
@@ -228,7 +228,7 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
   
  The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm administrator membership.  
   
- For detailed information about these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands, go to [Use Windows PowerShell cmdlets to administer security in SharePoint 2016](/powershell/module/sharepoint-server/).  
+ For detailed information about these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands, go to [SharePoint 2016: List of PowerShell cmdlets](/archive/technet-wiki/34284.sharepoint-2016-list-of-powershell-cmdlets).  
   
 1. Enable the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] session to make changes to the security token service for the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm.  
   
