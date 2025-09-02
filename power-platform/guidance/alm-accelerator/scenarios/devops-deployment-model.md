@@ -5,13 +5,17 @@ keywords:
 author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
-ms.reviewer: sericks
-ms.custom: bap-template
-ms.date: 04/07/2023
+ms.reviewer: jhaskett-msft
+ms.custom:
+  - bap-template
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:09/02/2025
+ms.date: 09/02/2025
 ms.topic: concept-article
-search.audienceType: 
+search.audienceType:
   - admin
-search.app: 
+search.app:
   - PowerApps
   - Powerplatform
 ---
@@ -20,14 +24,14 @@ search.app:
 
 The ALM Accelerator for Power Platform supports three Azure DevOps deployment models:
 
-- [**1:1**](#11-power-platform-to-azure-devops): A single Azure DevOps organization and a single ALM Accelerator project
-- [**1:Many**](#1many-power-platform-to-azure-devops): A single Azure DevOps organization and multiple ALM Accelerator projects
-- [**Many:Many**](#manymany-power-platform-to-azure-devops): Multiple Azure DevOps organizations with multiple ALM Accelerator installations  
-    We don't recommend a Many:Many scenario. You'd need to update and manage separate instances, and projects displayed to the user would be managed by role-based security.
+- [**1:1**](#11-power-platform-to-azure-devops): A single Azure DevOps organization and a single ALM Accelerator project.
+- [**1:Many**](#1many-power-platform-to-azure-devops): A single Azure DevOps organization and multiple ALM Accelerator projects.
+- [**Many:Many**](#manymany-power-platform-to-azure-devops): Multiple Azure DevOps organizations with multiple ALM Accelerator installations.  
+    Don't use a many-to-many scenario. You need to update and manage separate instances and use role-based security to manage which projects the user sees.
 
 ## Factors to consider
 
-As you plan your Azure DevOps deployment model, the following factors may help you determine the best approach:
+As you plan your Azure DevOps deployment model, use the following factors to help you determine the best approach:
 
 - Do different teams or business units require separate locations to store and manage solutions?
 
@@ -43,17 +47,17 @@ As you plan your Azure DevOps deployment model, the following factors may help y
 
 In this scenario, the following configuration is assumed:
 
-- Has a single Power Platform maker deployment with shared Power Platform environments for the ALM Accelerator canvas app and validation, test, and production environments.
+- Single Power Platform maker deployment with shared Power Platform environments for the ALM Accelerator canvas app and validation, test, and production environments.
 
-- Has a single shared Azure DevOps organization where all makers collaborate on solutions.
+- Single shared Azure DevOps organization where all makers collaborate on solutions.
 
 ## 1:Many Power Platform to Azure DevOps
 
 In this scenario, the following configuration is assumed:
 
-- Has a single Power Platform maker deployment with shared Power Platform environments for the maker canvas app and validation, test, and production environments.
+- A single Power Platform maker deployment with shared Power Platform environments for the maker canvas app and validation, test, and production environments.
 
-- Has multiple Azure DevOps organizations for different teams or business units.
+- Multiple Azure DevOps organizations for different teams or business units.
 
 - Each Azure DevOps organization can have a different set of users protected by different role-based security rules.
 
@@ -65,9 +69,9 @@ This scenario isn't recommended because it requires the deployment and managemen
 
 In this scenario, the following configuration is assumed:
 
-- Has multiple Power Platform maker deployments with shared Power Platform Environments for the maker canvas app and validation, test, and production environments.
+- Multiple Power Platform maker deployments with shared Power Platform Environments for the maker canvas app and validation, test, and production environments.
 
-- Has multiple Azure DevOps organizations for different teams or business units.
+- Multiple Azure DevOps organizations for different teams or business units.
 
 - Each Azure DevOps organization can have a different set of users protected by different role-based security rules.
 
