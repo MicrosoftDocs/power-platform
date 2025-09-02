@@ -46,5 +46,5 @@ Learn more about the effects that the **Preview and experimental AI models** set
 
 ## Effects of the setting on the Power Platform
 
-Learn more about the effects that the **Preview and experimental AI models** setting has has on Power Automate and Power Apps in [Enable or disable preview features or models](/ai-builder/administer.md#enable-or-disable-preview-features-or-models).
+Learn more about the effects that the **Preview and experimental AI models** setting has has on Power Automate and Power Apps in [Enable or disable preview features or models](ai-builder-docs/administer.md#enable-or-disable-preview-features-or-models).
 
