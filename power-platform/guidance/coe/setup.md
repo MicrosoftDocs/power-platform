@@ -49,7 +49,7 @@ The CoE Starter Kit requires access to your tenant's Power Platform environments
 
 These roles and licenses must be available to a user directly and permanently.
 
-:::image type="content" source="media/ppadminrole.png" alt-text="Screenshot of the Power Platform admin center environments overview." lightbox="media/ppadminrole.png":::
+:::image type="content" source="media/ppadminrole.png" alt-text="Screenshot from Microsoft Azure's Assigned roles showing the Power Platform administrator's active assignment as Direct membership." lightbox="media/ppadminrole.png":::
 
 Configure multifactor authentication for the account by following the recommended settings for [conditional access and multifactor authentication in Power Automate](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow).
 

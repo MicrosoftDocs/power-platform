@@ -8,7 +8,7 @@ ms.topic: best-practice
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/14/2025
+ms.date: 09/02/2025
 ---
 
 # Manage Power Platform adoption at scale
@@ -59,10 +59,9 @@ Admins can apply rules to groups to govern environments in bulk, reducing manual
 
 ## Review recommendations
 
-Stay updated on recommended actions in the Power Platform admin center. These recommendations provide insights and best practices tailored to your organization's usage and needs. Regularly reviewing and implementing these actions helps you address potential issues, optimize performance, and ensure governance policies are applied consistently.
+Monitor [recommended actions in the Power Platform admin center](../../admin/power-platform-advisor.md) to improve the health of your Power Platform tenant and stay proactive. These recommendations provide insights and best practices tailored to your organization's usage and needs. Regularly review and implement these actions to address potential issues, optimize performance, and ensure governance policies are applied consistently.
 
-- [Review Power Advisor recommendations](../../admin/power-platform-advisor.md) to improve the health of your Power Platform tenant and stay proactive.
-- [Review Intelligent recommendations about licensing](../../admin/get-recommendations-licensing.md) to stay up to date with who in your organization would benefit from having a Power Apps premium license.
+Stay up to date with who in your organization would benefit from having a Power Apps premium license by reviewing [Intelligent recommendations about licensing](../../admin/get-recommendations-licensing.md).
 
 ### Automate and formalize processes
 
@@ -90,9 +89,9 @@ Consider the following tasks:
     - Considerations: Define best practices for solution development, testing, and deployment.
     - Process: Establish workflows to review and approve solutions before deployment. Consider using [pipelines in Power Platform](../../alm/pipelines.md).
 
-- **Power Advisor recommendations**:
-    - Purpose: Take action on Power Advisor recommendations. 
-    - Considerations: Regularly review recommendations provided by Power Advisor to identify best practices, performance improvements, and security enhancements.
+- **Power Platform admin center recommendations**:
+    - Purpose: Take action on recommendations. 
+    - Considerations: Regularly [review recommendations](../../admin/power-platform-advisor.md) provided to identify best practices, performance improvements, and security enhancements.
     - Process: Use the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector to retrieve and take action on recommendations. 
 
 Automating common governance tasks reduces manual effort, ensures consistency, and enhances efficiency. Automation helps in maintaining control over the Power Platform, enabling organizations to scale their operations while adhering to governance standards.

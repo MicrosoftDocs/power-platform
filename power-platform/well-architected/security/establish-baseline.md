@@ -38,7 +38,7 @@ Establishing a security baseline for Microsoft Power Platform involves several s
 
 - Applying data protection and encryption methods to secure the data stored and processed by Power Platform, such as sensitivity labels and customer-managed keys.
 
-- Monitoring and auditing the activities and usage of Power Platform, using tools such as the Power Platform Admin Center, Managed Environments, and Microsoft Purview.
+- Monitoring and auditing the activities and usage of Power Platform, using tools such as the Power Platform admin center, Managed Environments, and Microsoft Purview.
 
 - Implementing governance policies and processes for Power Platform, such as defining the roles and responsibilities of different stakeholders, establishing approval workflows and change management, and providing guidance and training for users and developers.
 
@@ -98,7 +98,7 @@ Here are some common categories that should be part of a baseline. The following
 
 Your design choices may be impacted by regulatory compliance requirements for specific industry segments or due to geographic restrictions. It’s key to understand the regulatory compliance requirements and include them in the architecture of your workload.
 
-The baseline should include regular evaluation of the workload against regulatory requirements. Take advantage of platform-provided tools, such as Microsoft Power Advisor, which can identify areas of noncompliance. Work with your organization's compliance team to make sure all requirements are met and maintained.
+The baseline should include regular evaluation of the workload against regulatory requirements. Take advantage of platform tools, such as the [Actions page of the Power Platform admin center](../../admin/power-platform-advisor.md), which can identify areas of noncompliance and make recommendations. Work with your organization's compliance team to make sure all requirements are met and maintained.
 
 ##### Example
 
@@ -154,9 +154,9 @@ Use the baseline to drive initiatives and decisions. Here are some ways to use t
 
 - **Track your progress against the baseline**. Monitor your security measures against the security baseline to identify trends and reveal deviations from the baseline. Use automation where possible, and use the data gathered from tracking the progress to identify and address current issues and prepare for future threats.
 
-- **Set guardrails**. Use your security baseline to establish and manage guardrails and a governance framework for your Power Platform workloads. Guardrails enforce required security configurations, technologies, and operations, based on internal factors and external factors. Guardrails help minimize the risk of inadvertent oversight and punitive fines for noncompliance. You can use out of the box features in the Power Platform Admin Center and Managed Environments to establish guardrails, or build your own by using the CoE Starter Kit reference implementation or your own scripts/tooling. You'll likely use a combination of out-of-the-box and custom tools to set up your guardrails and governance framework. Think about which parts of your security baseline can be enforced proactively, and which ones you'll monitor reactively.
+- **Set guardrails**. Use your security baseline to establish and manage guardrails and a governance framework for your Power Platform workloads. Guardrails enforce required security configurations, technologies, and operations, based on internal factors and external factors. Guardrails help minimize the risk of inadvertent oversight and punitive fines for noncompliance. You can use out of the box features in the Power Platform admin center and Managed Environments to establish guardrails, or build your own by using the Power Platform Center of Excellence (CoE) Starter Kit reference implementation or your own scripts/tooling. You'll likely use a combination of out-of-the-box and custom tools to set up your guardrails and governance framework. Think about which parts of your security baseline can be enforced proactively, and which ones you'll monitor reactively.
 
-Explore Microsoft Purview for Power Platform, Power Advisor, built-in concepts in the Power Platform Admin Center like Data Policies and Tenant Isolation, and reference implementations like the CoE Starter Kit to implement and enforce security configurations and compliance requirements.
+Explore Microsoft Purview for Power Platform, built-in features of the Power Platform admin center for data policies and tenant isolation, personalized recommendations on the [Actions page](../../admin/power-platform-advisor.md), and reference implementations like the [CoE Starter Kit](../../guidance/coe/starter-kit.md) to implement and enforce security configurations and compliance requirements.
 
 ### Evaluate the baseline regularly
 
