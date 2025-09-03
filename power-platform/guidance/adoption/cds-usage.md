@@ -24,7 +24,7 @@ Effective capacity and license monitoring in Power Platform helps you maintain o
 
 ## Monitor license consumption
 
-Use the [Billing page](/power-platform/admin/view-license-consumption-issues) in the Power Platform admin center to monitor your organization's Power Platform license consumption and identify environments with potential licensing issues.
+Use the [Licensing page](/power-platform/admin/view-license-consumption-issues) in the Power Platform admin center to monitor your organization's Power Platform license consumption and identify environments with potential licensing issues.
 
 Find answers to questions like these:
 

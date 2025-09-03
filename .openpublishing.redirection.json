@@ -1,6 +1,16 @@
 {
   "redirections": [
-    {
+   {
+      "source_path": "power-platform/admin/power-platform-api.md",
+      "redirect_url": "powerplatform-api-getting-started",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/admin/power-platform-api-overview.md",
+      "redirect_url": "powerplatform-api-getting-started",
+      "redirect_document_id": "false"
+   }, 
+   {
       "source_path": "power-platform/admin/security/overview.md",
       "redirect_url": "power-platform/admin/security/security-overview",
       "redirect_document_id": "false"

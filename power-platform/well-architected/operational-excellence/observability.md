@@ -185,7 +185,7 @@ Power Platform resources log activities in the [Microsoft Purview compliance por
 - [Power Pages](/power-platform/admin/logging-power-pages)
 - [Power Platform connectors](/power-platform/admin/connector-events-power-platform)
 - [Data Policy activity logging](/power-platform/admin/dlp-activity-logging)
-- [Power Platform administrative logs](/power-platform/admin/admin-activity-logging)
+- [View Power Platform administrative logs using auditing solutions in Microsoft Purview](/power-platform/admin/admin-activity-logging)
 - [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 
 Your Power Platform workload might include Azure resources. Learn more in [Recommendations for designing and creating a monitoring system](/azure/well-architected/operational-excellence/observability).
