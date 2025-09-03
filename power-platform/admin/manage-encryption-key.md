@@ -247,7 +247,7 @@ A customer tenant can have environments that are encrypted using the Microsoft m
 
 1. [Restore](backup-restore-environments.md) 
 
-   The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer-managed key. 
+   The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer-managed key. Additionally, a past backup taken when the environment was encrypted with microsoft-managed key cannot be restored to an environment that is currently encrypted with customer-managed key. In other words, restoring a backup to an environment is allowed when the current environment encryption state (whether microsoft-managed key or customer-managed key) matches the environment encryption state at the time of when the backup was taken.
 
    :::image type="content" source="media/customer-managed-key/restore-backup.png" alt-text="Restore backup":::
 
