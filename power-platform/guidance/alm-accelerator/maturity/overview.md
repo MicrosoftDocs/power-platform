@@ -179,7 +179,7 @@ Initial response time is four to eight hours or greater, with business hours acc
 
 1. Who can create environments?
 
-1. What [data loss prevention (DLP)](../../../admin/wp-data-loss-prevention.md) policies are in place?
+1. What [data policies](../../../admin/wp-data-loss-prevention.md) are in place?
 
 1. Do [Power Platform Service Admin](../../../admin/overview-role-powerapps-admin.md) roles exist to administer Power Platform tenants and environments?
 
@@ -225,7 +225,7 @@ Initial response time is four to eight hours or greater, with business hours acc
 
 ### Automation
 
-1. Do you have environment and DLP connector policy requests that are automated?
+1. Do you have environment and data policy connector requests that are automated?
 
 1. Do you have communication about processes and compliance between admin and makers? Is this process automated?
 
