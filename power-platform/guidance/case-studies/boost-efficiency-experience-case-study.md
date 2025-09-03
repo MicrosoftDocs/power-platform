@@ -106,7 +106,7 @@ Receipt of an email acts as the workflow trigger. A [text function](https://comm
 
 ### Technical considerations
 
-- Data loss prevention (DLP) safeguards on your Microsoft Power Platform environments determine the connectors that are available, such as custom connectors to external APIs.
+- Data protection safeguards on your Microsoft Power Platform environments determine the connectors that are available, such as custom connectors to external APIs.
 - PDF analysis might require [AI Builder](/ai-builder/overview), which has licensing requirements that must be considered.
 - Triggering the automation might require the configuration of associated systems or a new work instruction for team members. As necessary, the booking system is updated to send the travel confirmation to an email address.
 - Dataverse, which is part of Microsoft Power Platform, simplifies change management:
@@ -266,7 +266,7 @@ Daniel created a Copilot Studio topic and an associated Power Automate automatio
 - [Power Platform Well-Architected](/power-platform/well-architected/)
 - [Use an incoming email to trigger an automation](/power-automate/email-overview)
 - [Popular scenarios for sending emails to end users](/power-automate/email-top-scenarios)
-- [How to use Copilot to help build your automation](/power-automate/get-started-with-copilot)
+- [How to use Copilot to help build your automation](/power-automate/create-cloud-flow-using-copilot)
 - [Automate a business process using Power Automate training](/training/paths/automate-process-power-automate/)
 - [Building your own copilot with Copilot Studio](https://www.microsoft.com/microsoft-copilot/blog/copilot-studio/building-your-own-copilot-with-copilot-studio/)
 - [Introduction to Generative AI - Exploring the basics](/training/modules/intro-generative-ai-explore-basics/)

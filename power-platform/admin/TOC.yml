@@ -74,7 +74,7 @@
                   href: /power-pages/admin/capacity-management
                 - name: View license consumption for finance and operations apps
                   href: view-license-consumption-finops-apps.md
-                - name: Manage Copilot Studio messages and capacity
+                - name: Manage Copilot Studio credits and capacity
                   href: manage-copilot-studio-messages-capacity.md
                 - name: View intelligent recommendations about licensing
                   href: get-recommendations-licensing.md
@@ -194,10 +194,14 @@
                   href: managed-environment-overview.md
                 - name: Enable Managed Environments
                   href: managed-environment-enable.md
-                - name: Environment groups
-                  href: environment-groups.md
-                - name: Rules for environment groups
-                  href: environment-groups-rules.md
+                - name: Environment groups and rules
+                  items:
+                    - name: Environment groups
+                      href: environment-groups.md
+                    - name: Rules for environment groups
+                      href: environment-groups-rules.md
+                    - name: Preview and experimental AI models rule
+                      href: preview-experimental-ai-models-rule.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
                 - name: Usage insights

@@ -7,7 +7,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 08/12/2025
+ms.date: 08/29/2025
 ---
 
 # Real-world case studies
@@ -41,6 +41,7 @@ Case studies are detailed accounts of real-world applications and implementation
 | [EY automates payment processing](global-finance.md) | This case study covers how the Global Finance team at Ernst & Young used Power Automate, AI Builder, and Dataverse to automate customer payment processing. |
 | [Holland America Line transforms customer experience with Copilot Studio](holland-america-customer-experience.md) | This case study covers how Holland America Line used Copilot Studio to create a sophisticated virtual agent to act as a digital concierge on their website. |
 | [John Cockerill streamlines enterprise business processes](engineering-time-tracking.md) | This case study covers how international engineering company John Cockerill uses Power Platform to develop enterprise apps. |
+| [Lloyds Banking Group bridges language barriers](lloyds-banking-group.md) | This case study covers how Lloyds Banking Group uses Power Apps and Azure AI services to deliver real-time, inclusive language support in banking. |
 | [Rabobank embraces conversational banking with Copilot Studio](rabobank-conversational-banking.md) | This case study covers how Rabobank uses Copilot Studio to enhance customer service through conversational AI with text and voice-enabled chatbot functionality. |
 | [SLB enhances productivity with Power Platform and AI](slb-enhances-productivity.md) | This case study covers how SLB enhanced process and employee productivity using Power Apps, AI Builder, Power Automate, and Dataverse. |
 | [Teck automates data extraction with Power Automate and AI Builder](teck-automates-data-extraction.md) | This case study covers how Teck uses Power Automate and AI Builder to automate data extraction processes. |

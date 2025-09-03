@@ -44,7 +44,7 @@ This article provides a security checklist for key activities essential to maint
 
 | Done? | Task |
 | :-----: | ---- |
-| &check; | Create DLP policies to control data flow between connectors and environments. Regularly review and update DLP policies to align with security requirements. |
+| &check; | Create data policies to control data flow between connectors and environments. Regularly review and update data policies to align with security requirements. |
 | &check; | Consider using customer-managed keys for additional control over encryption. |
 | &check; | Incorporate privacy considerations into the design and development of applications. Ensure privacy is a fundamental aspect of your development process.|
 | &check; | Configure tenant isolation to control and restrict data access between different tenants. |
