@@ -72,7 +72,7 @@ Learn more: [Recommendations for securing a development lifecycle](/power-platfo
 Provide security training for makers and developers to help them build solutions with Power Platform that are secure and resilient against threats. This training should cover best practices for secure coding, data protection, and compliance with regulatory standards. By educating makers and developers on potential security risks and how to mitigate them, you foster a culture of security awareness and responsibility. Training should include practical exercises, real-world scenarios, and regular updates to keep pace with evolving threats.
 
 - Enhance existing Power Platform trainings by adding information on how to build secure solutions.
-- Educate users on your [environment and data loss prevention policy strategy](environment-strategy.md) and any other configurations that might impact their solutions, and provide guidance on how to request changes.
+- Educate users on your [environment and data policy strategy](environment-strategy.md) and any other configurations that might impact their solutions, and provide guidance on how to request changes.
 - Include information on the Security Development Lifecycle (SDL) phases and what users should be aware of to keep their solutions secure.
 - Communicate to users how you'll work together to progress through each phase.
 
@@ -98,7 +98,7 @@ Review the detailed articles in this series to further enhance your security pos
 
 - [Detect threats to your organization](threat-detection.md)
 - [Establish data protection and privacy controls](data-protection.md)
-- [Implement a DLP strategy](dlp-strategy.md)
+- [Implement a data policy strategy](dlp-strategy.md)
 - [Configure identity and access management](conditional-access.md)
 - [Meet compliance requirements](compliance.md)
 - [Secure the default environment](secure-default-environment.md)

@@ -50,7 +50,7 @@ Each solution has specific requirements:
 
 | Solution | Notes |
 |-|-|
-| [`CreatorKitReference(MDA)`](https://aka.ms/creatorkitreferencemda) | <li>Reference App is a Model Driven app that requires a premium license to play</li><li>Reference App uses the Dataverse connector; Environment's DLP Policies must allow the connector.</li> |
+| [`CreatorKitReference(MDA)`](https://aka.ms/creatorkitreferencemda) | <li>Reference App is a Model Driven app that requires a premium license to play</li><li>Reference App uses the Dataverse connector; Environment's data policies must allow the connector.</li> |
 | [`CreatorKitReference(Canvas)`](https://aka.ms/creatorkitreferencecanvas) | <li>Before installation, [enable the Environment setting 'Power Apps code components for canvas apps'](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature)</li> |
 
 - [Download the CreatorKitMDA solution](https://aka.ms/creatorkitreferencemda)
