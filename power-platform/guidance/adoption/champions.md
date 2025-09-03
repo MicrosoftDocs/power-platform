@@ -120,7 +120,7 @@ Find enthusiastic champions who can commit time and effort. Ask how you can help
 - Ensure champions have the resources they need, including:
   - Direct access to CoE members
   - Influence on environment and connector strategies being implemented (for example, requirements for a dataset certification policy)
-  - Influence on the creation of best practices and guidance (for example, providing recommendations for which connectors should be available via [data loss prevention (DLP)](../../admin/wp-data-loss-prevention.md) policies)
+  - Influence on the creation of best practices and guidance (for example, providing recommendations for which connectors should be available via [data policies](../../admin/wp-data-loss-prevention.md))
 - Actively involve certain champions as satellite members of the CoE. They can provide valuable input on what works and what doesn't work when it comes to administrative and governance policies, communication, and training.
 - Create a feedback loop so champions can easily provide information or submit suggestions to the CoE.
 

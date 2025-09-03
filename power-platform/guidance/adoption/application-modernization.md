@@ -600,7 +600,7 @@ Let's take a high-level look at the multiple layers of security that make up the
 - Environments act as security boundaries, allowing different security needs to be implemented in each one.
 - Power Automate flows and canvas apps use connectors. The specific connection credentials and associated service entitlements determine permissions when apps use the connectors.
 - Environments with a Dataverse instance support more advanced security models that are specific to controlling access to data and services in that Dataverse instance.
-- Connector use can be further restricted with data loss prevention (DLP) policies. Cross-tenant inbound and outbound restrictions can also be applied to the connectors.
+- Connector use can be further restricted with data policies. Cross-tenant inbound and outbound restrictions can also be applied to the connectors.
 
 It's important to note that when accessing data sources using connectors, all the underlying security that the data source offers is in addition to the layers of security described. Power Apps and Power Automate don't by default provide users with access to the connector data source that they don't already have. Users should only have access to data that they genuinely require access to.
 
