@@ -1,11 +1,9 @@
 ---
-title: "Govern with the CoE Power BI dashboard | MicrosoftDocs"
-description: "Perform risk assessments and identify critical, orphaned, or unused resources with the CoE Power BI dashboard"
+title: Govern with the CoE Power BI dashboard
+description: "Perform risk assessments and identify critical, orphaned, or unused resources with the CoE Power BI dashboard."
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: concept-article
-
 ms.date: 09/06/2023
 ms.subservice: guidance-toolkit
 ms.author: mapichle
@@ -99,9 +97,9 @@ Some typical assessments an admin might perform are described in the following s
 
 ### Identify suspended flows
 
-- Flows are suspended due to using a combination of connectors that conflict with the company [data loss prevention (DLP) policies](/power-automate/prevent-data-loss) or billing restrictions.
+- Flows are suspended due to using a combination of connectors that conflict with the company [data policies](/power-automate/prevent-data-loss) or billing restrictions.
 
-- Find those flows, and work with the maker to decide whether the flow is still needed, and if so, what policy violation they've encountered. Educate the maker or modify the DLP policy as needed.
+- Find those flows, and work with the maker to decide whether the flow is still needed, and if so, what policy violation they've encountered. Educate the maker or modify the data policy as needed.
 
 Select **State** in the decomposition tree visual and then drill down to suspended flows.
 
