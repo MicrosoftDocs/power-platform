@@ -28,7 +28,7 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
 By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don't have to. The managed keys feature in the Microsoft Power Platform admin center gives administrators the ability to self-manage the database encryption key that is associated with the Dataverse tenant. 
 
 > [!IMPORTANT]
-> Starting January 6, 2026, we will discontinue support for bring-your-own-key (BYOK). Customers are encouraged to transition to customer-managed keys (CMK), an enhanced solution that offers improved functionality, broader support for data sources, and better performance. Learn more in [Manage your customer-managed encryption key](customer-managed-key.md) and [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
+> Starting January 6, 2026, we'll discontinue support for bring-your-own-key (BYOK). Customers are encouraged to transition to customer-managed keys (CMK), an enhanced solution that offers improved functionality, broader support for data sources, and better performance. Learn more in [Manage your customer-managed encryption key](customer-managed-key.md) and [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
 
 Encryption key management is only applicable to Azure SQL environment databases. The following features and services continue to use the Microsoft-managed encryption key to encrypt their data and can't be encrypted with the self-managed encryption key:
 - Copilots and generative AI features in [Microsoft Power Platform and Microsoft Dynamics 365](geographical-availability-copilot.md) 
@@ -154,7 +154,7 @@ Once the key is activated, the following occurs:
 - When activated, the encryption key is applied to all environments that are changed from Microsoft-provided to self-managed encryption key.
 
 > [!IMPORTANT]
-> To streamline the key management process so that all environments are managed by the same key, the active key can't be updated when there are locked environments.  All locked environments must be unlocked before a new key can be activated. If there are locked environments that don't need to be unlocked, they must be deleted. 
+> To streamline the key management process so that all environments are managed by the same key, the active key can't be updated when there are locked environments. All locked environments must be unlocked before a new key can be activated. If there are locked environments that don't need to be unlocked, they must be deleted. 
 
 > [!NOTE]
 > After an encryption key is activated, you can't activate another key for 24 hours.
@@ -206,7 +206,7 @@ Since there's only one active key per tenant, locking the encryption for the ten
 5. When prompted, enter the text that is displayed on your screen to confirm that you want to lock all environments in the region, and then select **Confirm**.
   
 #### Unlock locked environments
-To unlock environments, you must first [upload](#upload-a-key-pfx-or-byok) and then [activate](#activate-an-encryption-key-for-a-tenant) the tenant encryption key with the same key that was used to [lock the tenant](#lock-the-tenant). Note that locked environments don't get unlocked automatically once the key has been activated. Each locked environment has to be unlocked individually. 
+To unlock environments, you must first [upload](#upload-a-key-pfx-or-byok) and then [activate](#activate-an-encryption-key-for-a-tenant) the tenant encryption key with the same key that was used to [lock the tenant](#lock-the-tenant). Locked environments don't get unlocked automatically once the key has been activated. Each locked environment has to be unlocked individually. 
 
 > [!IMPORTANT]
 > - You must wait at least one hour after you lock active environments before you can unlock them. 
