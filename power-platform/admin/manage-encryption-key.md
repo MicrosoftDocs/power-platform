@@ -3,7 +3,7 @@ title: Manage the encryption key
 description: Learn how you can manage database encryption keys for your environment.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/09/2025
+ms.date: 09/04/2025
 author: mikferland-msft
 ms.subservice: admin
 ms.author: miferlan
@@ -11,8 +11,9 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
-   - paulliew
-   - MSFTSimranKaur 
+  -  udmehta 
+  - paulliew
+  - MSFTSimranKaur 
 ms.custom:
   - "admin-security"
   - sfi-image-nochange
@@ -247,7 +248,7 @@ A customer tenant can have environments that are encrypted using the Microsoft m
 
 1. [Restore](backup-restore-environments.md) 
 
-   The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer-managed key. Additionally, a past backup taken when the environment was encrypted with microsoft-managed key cannot be restored to an environment that is currently encrypted with customer-managed key. In other words, restoring a backup to an environment is allowed when the current environment encryption state (whether microsoft-managed key or customer-managed key) matches the environment encryption state at the time of when the backup was taken.
+   The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer-managed key. Additionally, a past backup taken when the environment was encrypted with Microsoft-managed key can't be restored to an environment that is currently encrypted with the customer-managed key. In other words, restoring a backup to an environment is allowed when the current environment encryption state (whether Microsoft-managed key or customer-managed key) matches the environment encryption state at the time of when the backup was taken.
 
    :::image type="content" source="media/customer-managed-key/restore-backup.png" alt-text="Restore backup":::
 
