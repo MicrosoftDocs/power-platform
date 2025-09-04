@@ -37,7 +37,7 @@ Power Platform allows makers to create and share [custom connectors](/connectors
 
 Environment admins can find all the custom connectors in their environments, alongside prebuilt connectors, on the **Connectors** page in **Data Policies**. Similar to prebuilt connectors, you can classify custom connectors into **Blocked**, **Business**, or **Non-Business** categories. Custom connectors that aren't explicitly classified are put under the default group (or **Non-Business**, if no default group setting is explicitly chosen by admins).
 
-:::image type="content" source="media/dlp-environment-level-connector-new.png" alt-text="Environment admins can see all custom connectors in their environments, alongside prebuilt connectors, on the **Connectors** page in data policies.":::
+:::image type="content" source="media/policy-environment-level-connector.png" alt-text="Environment admins can see all custom connectors in their environments, alongside prebuilt connectors, on the **Connectors** page in data policies.":::
 
 You can use data policy, PowerShell commands to set custom connectors into **Business**, **Non-Business**, and **Blocked** groups. More information: [Data policy commands](powerapps-powershell.md#data-policy-commands)
 
@@ -49,11 +49,11 @@ The rule for the wildcard character (*) is that it's always the last entry in th
 
 **Ignore** ignores data policies classification for all connectors in this tenant-level policy, and defers evaluation of a pattern to other environments or tenant-level policies to attribute them into the **Business**, **Non-Business**, or **Blocked** grouping as appropriate. If no specific rule exists for the custom connectors, an **Ignore \*** rule allows custom connectors to be used with both **Business** and **Non-Business** connector groupings. Except for the last entry in the list, **Ignore** as an action isn't supported for any other URL pattern added to the custom connector pattern rules.
 
-:::image type="content" source="media/dlp-tenant-level-connector-ignore-rule-new.png" alt-text="The Ignore rule in a list of rules.":::
+:::image type="content" source="media/policy-tenant-level-connector-ignore-rule.png" alt-text="The Ignore rule in a list of rules.":::
 
 You can further add new rules by selecting **Add connector pattern** on the **Custom Connectors** page.  
 
-:::image type="content" source="media/dlp-select-add-connector-pattern-new.png" alt-text="Select Add connector pattern.":::
+:::image type="content" source="media/policy-select-add-connector-pattern.png" alt-text="Select Add connector pattern.":::
 
 This opens a side panel where you can add custom connector URL patterns and classify them. New rules are added to the end of the pattern list (as the second-to-the-last rule, because `*` is always the last entry in the list). However, you can update the order while adding a new pattern.
 
@@ -61,11 +61,11 @@ This opens a side panel where you can add custom connector URL patterns and clas
 
 You can also update the order of the patterns by using the **Order** dropdown list or selecting **Move up** or **Move down**.
 
-:::image type="content" source="media/dlp-update-pattern-order-new.png" alt-text="Update the order of the patterns by using the Order dropdown list or Move up and Move down.":::
+:::image type="content" source="media/policy-update-pattern-order.png" alt-text="Update the order of the patterns by using the Order dropdown list or Move up and Move down.":::
 
 After a pattern has been added, you can edit or delete these patterns by selecting a specific row and selecting **Edit** or **Delete**.
 
-:::image type="content" source="media/dlp-edit-delete-pattern-new.png" alt-text="Edit or delete custom patterns.":::
+:::image type="content" source="media/policy-edit-delete-pattern.png" alt-text="Edit or delete custom patterns.":::
 
 ## Powershell support for Custom Connector URL Patterns
 
