@@ -1833,6 +1833,11 @@
       "source_path": "power-platform/guidance/white-papers/managed-environment-activation.md",
       "redirect_url": "/power-platform/guidance/adoption/admin-best-practices",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/power-fx/formula-reference-cards.md",
+      "redirect_url": "/power-platform/power-fx/formula-reference-overview",
+      "redirect_document_id": false
     }
   ]
 }
