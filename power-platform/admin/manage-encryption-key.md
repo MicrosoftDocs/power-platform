@@ -237,22 +237,13 @@ To unlock environments, you must first [upload](#upload-a-key-pfx-or-byok) and t
 
 ##### Unlock environments
 1. Go to the **Environments** page, and then select the locked environment name. 
+
    > [!TIP]
    > Don't select the row. Select the environment name. 
-   >
-   ![Open environment to view settings.](media/open-environment-settings.png)
 
 1. In the **Details** section, select **See all** to display the **Details** pane on the right. 
-1. In the **Environment** encryption section on the **Details** pane, select **Manage**. 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Environment details pane.](media/details-pane.png "Environment details pane")
-
+1. In the **Environment** encryption section on the **Details** pane, select **Manage**.
 1. On the **Environment encryption** page, select **Unlock**. 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Unlock environment.](media/unlock-environment.png "Unlock environment")
-
 1. Select **Confirm** to confirm that you want to unlock the environment. 
 1. Repeat the previous steps to unlock other environments. 
 
@@ -263,13 +254,9 @@ A customer tenant can have environments that are encrypted using the Microsoft m
 
    The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer-managed key. Additionally, a past backup taken when the environment was encrypted with Microsoft-managed key can't be restored to an environment that is currently encrypted with the customer-managed key. In other words, restoring a backup to an environment is allowed when the current environment encryption state (whether Microsoft-managed key or customer-managed key) matches the environment encryption state at the time of when the backup was taken.
 
-   :::image type="content" source="media/customer-managed-key/restore-backup.png" alt-text="Restore backup":::
-
 1. [Copy](copy-environment.md)
 
    The environment to overwrite (the copied to environment) is restricted to another environment that is encrypted with the same customer-managed key. 
-
-   :::image type="content" source="media/customer-managed-key/copy-environment.png" alt-text="Copy environment":::
 
    > [!NOTE]
    > If a Support Investigation environment was created to resolve a support issue in a customer-managed environment, the encryption key for the Support Investigation environment must be changed to customer-managed key before the Copy environment operation can be performed. 
