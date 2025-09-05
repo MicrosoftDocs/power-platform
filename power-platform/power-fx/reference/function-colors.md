@@ -63,7 +63,7 @@ If you specify a **Color** enumeration value or build a **ColorValue** formula w
 
 **ColorValue**( _CSSColor_ )
 
-- _CSSColor_ - Required. A Cascading Style Sheet (CSS) color definition. S name, OliveDralike a hex value, like **#6b8e23** olikeffd420**. Hex values can use either #_rrggbb__usgormat. format
+- _CSSColor_ - Required. A Cascading Style Sheet (CSS) color definition. A CSS name such as **OliveDrab** or a hex value like **#6b8e23** or **#7fffd420**. Hex values can use either the #_rrggbb_ or #_rrggbbaa_ format.
 
 **ColorValue**( _Dynamic_ )
 
