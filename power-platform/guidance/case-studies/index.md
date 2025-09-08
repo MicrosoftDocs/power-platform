@@ -7,7 +7,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 08/08/2025
+ms.date: 08/29/2025
 ---
 
 # Real-world case studies
@@ -34,12 +34,15 @@ Case studies are detailed accounts of real-world applications and implementation
 | [ABN AMRO Bank enhances AI capabilities with Copilot Studio and Azure services](abn-amro-enhances-ai.md) | This case study covers how ABN AMRO enhanced customer and employee interactions using Copilot Studio and Azure. |
 | [AECOM simplifies project onboarding with Power Platform, Azure, and Microsoft Fabric](aecom-streamlined-onboarding.md) | This case study covers how AECOM streamlined project onboarding using Power Platform, Microsoft Azure, and Microsoft Fabric. |
 | [Cineplex automates business processes](automate-business-processes.md) | This case study covers how Cineplex automates business processes with generative AI and Power Automate. |
+| [Daimler Truck transforms policy management](daimler-truck-modernizes-policies.md) | This case study covers how Daimler Truck modernized policy management using Power Apps, Dataverse, and Managed Environments to enhance efficiency and collaboration. |
 | [Degrees of Change automates nonprofit operations](nonprofit.md) | This case study covers how Degrees of Change automates nonprofit operations with Power Pages, Power Apps, and AI Builder. |
 | [Deutsche Bahn empowers citizen developers](db-empowers-citizen-devs.md) | This case study covers how Deutsche Bahn Group accelerated innovation by empowering their employees to build low-code business applications using Power Platform. |
 | [Epiq streamlines employee onboarding](streamline-employee-onboarding.md) | This case study covers how Epiq streamlines employee onboarding with Power Automate, Microsoft Dataverse, and AI Builder. |
 | [EY automates payment processing](global-finance.md) | This case study covers how the Global Finance team at Ernst & Young used Power Automate, AI Builder, and Dataverse to automate customer payment processing. |
 | [Holland America Line transforms customer experience with Copilot Studio](holland-america-customer-experience.md) | This case study covers how Holland America Line used Copilot Studio to create a sophisticated virtual agent to act as a digital concierge on their website. |
 | [John Cockerill streamlines enterprise business processes](engineering-time-tracking.md) | This case study covers how international engineering company John Cockerill uses Power Platform to develop enterprise apps. |
+| [Lloyds Banking Group bridges language barriers](lloyds-banking-group.md) | This case study covers how Lloyds Banking Group uses Power Apps and Azure AI services to deliver real-time, inclusive language support in banking. |
+| [Rabobank embraces conversational banking with Copilot Studio](rabobank-conversational-banking.md) | This case study covers how Rabobank uses Copilot Studio to enhance customer service through conversational AI with text and voice-enabled chatbot functionality. |
 | [SLB enhances productivity with Power Platform and AI](slb-enhances-productivity.md) | This case study covers how SLB enhanced process and employee productivity using Power Apps, AI Builder, Power Automate, and Dataverse. |
 | [Teck automates data extraction with Power Automate and AI Builder](teck-automates-data-extraction.md) | This case study covers how Teck uses Power Automate and AI Builder to automate data extraction processes. |
 | [T-Mobile empowers customer service representatives using Power Apps and Copilot Studio](tmobile-empowers-customer-service.md) | This case study covers how T-Mobile empowers customer service representatives with an app designed to provide quick, accurate device information and improve customer support. |

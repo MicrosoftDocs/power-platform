@@ -2,7 +2,6 @@
 title: "Set up environment request components"
 description: "Learn how to set up the environment request components solution of the Microsoft CoE Starter Kit."
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 02/08/2023
@@ -15,12 +14,12 @@ search.audienceType:
 
 # Set up environment request components
 
-This article helps you set up the environment request components of the core solution, which automate the request, approval, and creation of environments and data loss prevention (DLP) policies.
+This article helps you set up the environment request components of the core solution, which automate the request, approval, and creation of environments and data policies.
 
 ## Prerequisites
 
 - Complete [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md).
-- [Set up your environment](setup.md#create-your-environments).
+- [Set up your environments](setup.md#create-your-environments).
 - Sign in with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 
 [Watch a walk-through](https://www.youtube.com/watch?v=16mspbGz1zA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the environment and DLP request process works.
@@ -41,9 +40,9 @@ This article helps you set up the environment request components of the core sol
 
 ### Update environment variables
 
-Update the `Environment Request Admin App Url` environment variable with the URL for the **Admin - Environment Request** canvas app. You can [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment).
+Update the `Environment Request Admin App Url` environment variable with the URL for the **Admin - Environment Request** canvas app. You can [Get a Power Apps URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment).
 
-For more information, see [Update environment variables](faq.md#update-environment-variables). These variables are used by the environment request management components.
+Learn more in [Update environment variables](faq.md#update-environment-variables). These variables are used by the environment request management components.
 
 ### Turn on flows
 
@@ -66,18 +65,14 @@ The environment request components are two apps. One app for admins and one for 
 - [**Admin - Environment Requests**](core-components.md) app for admins to view and approve environment and connectors requests.
 - [**Maker - Environment Request**](core-components.md) app for makers to request environments and connectors.
 
-For more information, see [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment).
+Learn more in [Share an app from a production environment](faq.md#share-an-app-from-a-production-environment).
 
 ## All environment variables
 
 Environment variables can affect the environment request components.
 
-Update the `Environment Request Admin App Url` variable with the URL for the **Admin - Environment Request** canvas app. You can [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment). There's no default value for this environment variable.
+Update the `Environment Request Admin App Url` variable with the URL for the **Admin - Environment Request** canvas app. You can [get a Power Apps URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment). There's no default value for this environment variable.
 
 You might have to [update environment variables](faq.md#update-environment-variables) after import.
 
-## I found a bug with the CoE Starter Kit; where should I go?
-
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

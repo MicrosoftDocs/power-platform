@@ -1,12 +1,11 @@
 ---
 title: "CoE ALM Accelerator for Power Platform personas (Deprecated)"
-description: "Overview of the personas related to Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator commands"
-keywords: 
+description: "Overview of the personas related to Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator commands."
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.custom: ""
 ms.date: 09/26/2024
-
+ms.update-cycle: 3650-days
+ms.subservice: guidance-toolkit
 ms.topic: concept-article
 ms.reviewer: sericks
 search.audienceType: 

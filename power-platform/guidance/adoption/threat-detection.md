@@ -7,7 +7,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 ms.date: 05/14/2025
 ms.custom:
   - ai-gen-docs-bap
@@ -42,7 +42,7 @@ The Microsoft Sentinel solution includes [built-in threat coverage](/azure/senti
 - Destruction of Power Apps data in Dataverse
 - A new Power Platform connector in a sensitive environment
 - Automated Power Automate activity by departing employees
-- Change or removal of a Power Platform data loss prevention (DLP) policy
+- Change or removal of a Power Platform data policy
 
 The SecOps team can use Microsoft Sentinel tools to investigate and respond to these incidents. The following screenshot shows an example of an incident: a Power Automate flow created by a fired employee.
 
@@ -68,7 +68,7 @@ Microsoft Entra ID uses adaptive machine learning algorithms, heuristics, and kn
 
 ## Activity logging
 
-[Power Apps](/power-platform/admin/logging-powerapps), [Power Automate](/power-platform/admin/logging-power-automate), [Copilot Studio](/microsoft-copilot-studio/admin-logging-copilot-studio), [Connectors](/power-platform/admin/connector-events-power-platform), [Power Pages](/power-platform/admin/logging-power-pages), [Data Loss Prevention](/power-platform/admin/dlp-activity-logging), and [Power Platform administrative](/power-platform/admin/admin-activity-logging) activity logging are tracked and viewed from Microsoft Purview. [Learn about Microsoft Purview](/purview/purview).
+[Power Apps](/power-platform/admin/logging-powerapps), [Power Automate](/power-platform/admin/logging-power-automate), [Copilot Studio](/microsoft-copilot-studio/admin-logging-copilot-studio), [Connectors](/power-platform/admin/connector-events-power-platform), [Power Pages](/power-platform/admin/logging-power-pages), [Data policy activity logging](/power-platform/admin/dlp-activity-logging), and [Power Platform administrative](/power-platform/admin/admin-activity-logging) activity logging are tracked and viewed from Microsoft Purview. [Learn about Microsoft Purview](/purview/purview).
 
 [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing) logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or the SDK in an environment. This auditing is enabled at the environment level, and additional configuration is required for individual tables and columns.
 
@@ -87,7 +87,7 @@ Learn more: [Recommendations for threat analysis](/power-platform/well-architect
 Review the other articles in this series to further enhance your security posture:
 
 - [Establish data protection and privacy controls](data-protection.md)
-- [Implement a DLP strategy](dlp-strategy.md)
+- [Implement a data policy strategy](dlp-strategy.md)
 - [Configure identity and access management](conditional-access.md)
 - [Meet compliance requirements](compliance.md)
 - [Secure the default environment](secure-default-environment.md)

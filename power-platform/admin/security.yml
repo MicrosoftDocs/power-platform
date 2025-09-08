@@ -24,7 +24,7 @@ landingContent:
        - linkListType: overview
          links:
           - text: Security in Microsoft Power Platform
-            url: ./security/overview.md
+            url: ./security/security-overview.md
           - text: Authenticating to Power Platform services
             url: ./security/authenticate-services.md
           - text: Securely access customer data
@@ -75,15 +75,15 @@ landingContent:
             url: /training/modules/get-started-security-roles/
   
   # Card
-  - title: Data loss prevention policies
+  - title: Data policies
     linkLists:
        - linkListType: concept
          links:
-          - text: DLP policies
+          - text: Data policies
             url: wp-data-loss-prevention.md
           - text: Connector classification
             url: dlp-connector-classification.md
-          - text: Manage DLP policies
+          - text: Manage data policies
             url: prevent-data-loss.md
        - linkListType: learn
          links:

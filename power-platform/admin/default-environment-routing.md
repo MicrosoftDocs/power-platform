@@ -194,9 +194,9 @@ No, the developer environments don't affect your tenant Dataverse quota.
 
 If the creation of the developer environment fails, makers are automatically routed to the default environment.
 
-### What data loss prevention (DLP) policies are applied for the developer environment?
+### What data policies are applied for the developer environment?
 
-No specific DLP policies are assigned to the developer environment. The developer environment inherits existing, tenant-level DLP policies.
+No specific data policies are assigned to the developer environment. The developer environment inherits existing, tenant-level data policies.
 
 ### What are the preconfigured Managed Environments settings for the newly created developer environments?
 

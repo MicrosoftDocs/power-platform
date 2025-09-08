@@ -7,7 +7,7 @@ ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.date: 07/15/2025
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 contributors:
   - manuelap-msft
 ms.contributors:

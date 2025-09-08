@@ -7,7 +7,7 @@ ms.subservice: architecture-center
 ms.topic: solution-idea
 ms.date: 04/17/2025
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 contributors:
 - manuelap-msft
 ms.contributors:
@@ -105,7 +105,7 @@ Implementing row-level security in Dataverse ensures that only authorized users 
 
 Azure Key Vault stores and manages credentials, API keys, and other secrets, preventing exposure in automation workflows.
 
-Data loss prevention (DLP) policies are defined by administrators in the Power Platform admin center to govern agent capabilities, including authentication, knowledge sources, and connector usage.
+Data policies are defined by administrators in the Power Platform admin center to govern agent capabilities, including authentication, knowledge sources, and connector usage.
 
 User authentication for agents can be configured to require user sign-in through Microsoft Entra ID or other OAuth2 identity providers, ensuring that only authenticated users can interact with them.
 

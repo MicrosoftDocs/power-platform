@@ -25,7 +25,7 @@ The customer-managed encryption key feature applies only to Managed Environments
 
 ## Data policies
 
-Data policies that are set up at the environment or tenant level act as guardrails to help reduce the risk that users unintentionally expose organizational data. Learn more in [Data Loss Prevention (DLP) policies](../wp-data-loss-prevention.md).
+Data policies that are set up at the environment or tenant level act as guardrails to help reduce the risk that users unintentionally expose organizational data. Learn more in [Data policies](../wp-data-loss-prevention.md).
 
 > [!NOTE]
 > The recommendation for data policies is triggered if no tenant-level policy is defined. Currently, environment-scoped data policies aren't considered when the security assessment is done for the tenant.
