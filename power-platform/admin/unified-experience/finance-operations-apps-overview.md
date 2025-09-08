@@ -24,17 +24,17 @@ As part of the unification of admin experiences of finance and operations apps w
 
 This article gives an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Microsoft Dynamics Lifecycle Services and the new experience. You can also browse more resources and articles that provide detailed information for common tasks.
 
-To learn more about the admin unification journey, see the [Power Platform admin center integration with Lifecyle Services (LCS) TechTalk](https://www.youtube.com/watch?v=HmJIuHhx3Hg).
+To learn more about the admin unification journey, see the [Power Platform admin center integration with Lifecycle Services (LCS) TechTalk](https://www.youtube.com/watch?v=HmJIuHhx3Hg).
 
 ## How do finance and operations apps surface in the Power Platform admin center?
 
-Finance and operations apps now have the same behavior that other Dynamics 365 apps have within the Power Platform admin center. The apps are available to licensed customers both during new environment creation and when they are installed in an existing environment.  
+Finance and operations apps now have the same behavior that other Dynamics 365 apps have within the Power Platform admin center. The apps are available to licensed customers both during new environment creation and when they're installed in an existing environment.  
 
 You can deploy finance and operations apps within the Power Platform admin center in one of the following ways.
 
 ### Option A: Create a new environment through templates
 
-A template is simply a bundle of Microsoft-published applications that are pre-installed in a Dataverse-based Power Platform environment. Templates help increase productivity, because you can quickly deploy an environment with a known configuration of apps without having to manually install each app in the correct sequence. When you use a template, you always get the very latest version that is available for each app at that moment.
+A template is a bundle of Microsoft-published applications that are preinstalled in a Dataverse-based Power Platform environment. Templates help increase productivity, because you can quickly deploy an environment with a known configuration of apps without having to manually install each app in the correct sequence. When you use a template, you always get the latest version that is available for each app at that moment.
 
 When you create a new environment in the Power Platform admin center, you can add a Dataverse data store and select **Enable Dynamics 365 apps**. A list of environment templates then becomes available under **Automatically deploy these apps**.   
 
@@ -55,7 +55,7 @@ With either option, your environment has two runtime URLs:
 
 ## Transition from an environment-slot purchasing model to a capacity-based model
 
-When you purchase a license for any finance and operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is entitled to 60 GB of operations database capacity and an additional 10 GB of Dataverse database capacity. With each user license, you receive an incremental amount of both operations and Dataverse database capacity.
+When you purchase a license for any finance and operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is entitled to 60 GB of operations database capacity and another 10 GB of Dataverse database capacity. With each user license, you receive an incremental amount of both operations and Dataverse database capacity.
 
 A license is required to create or install any finance and operations app in the Power Platform admin center. You must also have at least 1 GB available of both operations and Dataverse database capacity to provision one more environment. There are no strict limits on how many environments you can create. Lifecycle Services is different, where each sandbox and production environment slot has a predetermined purchase.
 
