@@ -108,7 +108,7 @@ see [Solutions](/power-apps/maker/data-platform/solutions-overview).
 
 ### Will my Power Apps Developer Plan subscription ever expire?
 
-You can continue using your Power Apps Developer Plan for free as long as there's active usage and no abuse of the plan (for example, apps aren't used for production purposes and the capacity limits aren't exceeded). Environments created using Power Apps Developer Plan that are inactive for the last 90 days will be deleted after notifying the environment owners.
+You can continue using your Power Apps Developer Plan for free as long as there's active usage and no abuse of the plan (for example, apps aren't used for production purposes and the capacity limits aren't exceeded). Environments created using Power Apps Developer Plan that are inactive for the last 30 days are automatically disabled. If, after 15 days, the environment isn't re-enabled, the environment is deleted. You have seven days to recover the environment once it has been deleted.
 
 ### Can I get or create multiple developer environments?
 
