@@ -25,7 +25,7 @@ The Data Integrator (for Admins) is a point-to-point integration service used to
 > [!TIP]
 > Check out the blog: [Data Integrator Updates – New features with an intuitive user interface providing a fluent experience](https://powerapps.microsoft.com/blog/data-integrator-updates-new-features-with-an-intuitive-user-interface-providing-a-fluent-experience/).
 
-## How can you use the Data Integrator for your business?
+## Use the Data Integrator for your business
 
 The Data Integrator (for Admins) also supports process-based integration scenarios like Prospect to Cash that provide direct synchronization between finance and operations apps and Dynamics 365 Sales. The Prospect to Cash templates that are available with the data integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between finance and operations apps and Sales. While data is flowing between finance and operations apps and Sales, you can perform sales and marketing activities in Sales, and you can handle order fulfillment by using inventory management in finance and operations apps. 
 
@@ -46,7 +46,7 @@ Integration templates serve as a blueprint with predefined entities and field ma
 
 :::image type="content" source="media/data-integrator/DIPlatform.PNG" alt-text="Data Integration platform":::
 
-## How to set up a data integration project
+## Set up a data integration project
 
 There are three primary steps:
 
@@ -61,7 +61,7 @@ After you create an integration project, you get the option to run the project m
 > [!NOTE]
 > The user interface for Data Integrator project management is hosted at https://dataintegrator.trafficmanager.net. Your organization policies might require adding this site to your allowlist to access the interface.
 
-### How to create a connection
+### Create a connection
 
 Before you can create a data integration project, you must provision a connection for each system that you intend to work with in the Microsoft Power Apps portal. Think of these connections as your points of integration.
 
@@ -85,15 +85,12 @@ After you provide your credentials, the connection is listed under your connecti
 > [!NOTE]
 > Make sure that the account you specify for each connection has access to entities for the corresponding applications. Additionally, the account for each connection can be in a different tenant.
 
-### How to create a connection set
+### Create a connection set
 
 Connection sets are a collection of two connections, environments for the connections, organization mapping information, and integration keys that can be reused among projects. You can start using a connection set for development and then switch to a different one for production. One key piece of information that is stored with a connection set is organization unit mappings—for example, mappings between the finance and operations apps legal entity (or company) and Dynamics 365 Sales organization or business units. You can store multiple organization mappings in a connection set.
 
 1. Go to [Power Platform admin center](https://admin.powerapps.com).
 
-
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 1. Select **Manage** in the navigation pane.
@@ -123,37 +120,6 @@ Connection sets are a collection of two connections, environments for the connec
     > [!div class="mx-imgBorder"] 
     > ![Connection set list.](media/data-integrator/CreateConnectionSet2780.png "Connection set list")
 
-
-# [Classic admin center](#tab/classic)
-
-1. Go to [Power Apps admin center](https://admin.powerapps.com).
-
-1. Select the **Data integration** tab in the left-hand navigation pane.
-
-1. Select the **Connection sets** tab and select **New connection set**.
-
-1. Provide a name for your connection set.
-  
-    > [!div class="mx-imgBorder"] 
-    > ![Create connection set.](media/data-integrator/CreateConnectionSet1780.png "Create connection set")
-  
-1. Choose the connections you created earlier and select the appropriate environment.
-
-1. Repeat the steps by choosing your next connection (think of these as source and destination in no specific order).
-
-1. Specify the organization to business unit mapping (if you're integrating between finance and operations apps and Sales systems).
-  
-    > [!NOTE]
-    > You can specify multiple mappings for each connection set.
-  
-1. After you complete all the fields, select **Create**.
-
-1. You see the new connection set you created under the Connection sets list page.
-    
-    > [!div class="mx-imgBorder"] 
-    > ![Connection set list.](media/data-integrator/CreateConnectionSet2780.png "Connection set list")
-
----
 Your connection set is ready to be used across various integration projects.
 
 ### Create a data integration project
@@ -169,12 +135,12 @@ Projects enable the flow of data between systems. A project contains mappings fo
 
 1. Provide a name for your integration project.
 
-1. Select one of the available templates (or [create your own template](#how-to-create-your-own-template)). In this case, we're moving the Products entity from finance and operations apps to Sales.
+1. Select one of the available templates (or [create your own template](#create-your-own-template)). In this case, we're moving the Products entity from finance and operations apps to Sales.
 
     > [!div class="mx-imgBorder"] 
     > ![Select template to create new project.](media/data-integrator/CreateNewProjectSelectTemplate780.png "Select template to create new project")
 
-1. Select **Next** and choose a connection set you created earlier (or [create a new connection set](#how-to-create-a-connection-set)).
+1. Select **Next** and choose a connection set you created earlier (or [create a new connection set](#create-a-connection-set)).
 
 1. Make sure you chose the right one by confirming the connection and environment names.
 
@@ -277,6 +243,7 @@ To create a connection set, follow these steps:
 ### Create your own template 
 
 #### Create your own template by modifying existing templates
+
 <!-- Templates don't exist and weren't possible to create in my tenant where I'm a global admin-->
 1. Sign in to [Power Platform admin center](https://admin.powerapps.com).
 
@@ -302,7 +269,7 @@ To create a connection set, follow these steps:
     > [!div class="mx-imgBorder"] 
     > ![Customize template add task3.](media/data-integrator/CustomizeTemplateAddtask275.png "Customize template add task3")
 
-8. Once you create the task, you can view your new task listed and you can delete the original task.
+8. After you create the task, you can view your new task listed and you can delete the original task.
 
 1. You just created a new template—in this case, a template to pull User entity data from SalesForce to Dataverse. Select **Save** to save your customization.
 
@@ -312,13 +279,15 @@ To create a connection set, follow these steps:
     > ![Name and description.](media/data-integrator/CustomizeTemplateSaveAsTemplate175.png "Name and description")
 
 #### Create your own template from a blank template
+
 <!-- Templates don't exist and weren't possible to create in my tenant where I'm a global admin-->
+
 1. Sign in to [Power Platform admin center](https://admin.powerapps.com).
 2. Go to **Manage** > **Data integration** on the left navigation pane.
 3. Select **New project** and provide a name for your project. For example, *Demo_CreateYourOwnTemplate project*.
 4. In the **Select a template** list page, pick a generic blank template. 
 For this example, choose the **Sales to Fin and Ops** template since we want to move data from finance and operations apps to Dynamics 365 Sales.
-5. Follow steps 6 through 9 in [How to create another data integration project](#how-to-create-a-data-integration-project) to create the data integration project you want. Then, select **Save**.
+5. Follow steps 6 through 9 in [How to create another data integration project](#create-a-data-integration-project) to create the data integration project you want. Then, select **Save**.
 6. The **Tasks** page appears, which is empty since it's a blank template, without any tasks. Select **Add task** to pick an entity from the drop-down list and add a new task.
 
    In this case, for demo purposes, we create an **Activities Sales to Fin and Ops** task by picking the **Activities** entity for finance and operations apps and Dynamics 365 Sales. Select **Create**.
