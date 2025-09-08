@@ -101,7 +101,7 @@ These continually updated scenario tutorials give a walkthrough for administrato
 ### Known limitations
 
 - The environment name can't exceed 20 characters—a limitation on the finance and operations runtime.
-- When installing the Finance and Operations (FnO) Provisioning App via PPAC UI on an existing organisation, you may encounter an error if the organisation is in an unsupported geo: `The selected region does not support the FnO app deployment.` To avoid this, provision a new unified environment in a different supported region.
+- When installing the **Dynamics 365 Finance and Operations Provisioning App** through the Power Platform admin center user interface on an existing organization, you may encounter an error if the organization is in an unsupported geo. The error says, _The selected region does not support the FnO app deployment_. To avoid this error, provision a new unified environment in a different supported region.
 
 ### Frequently asked questions
 
