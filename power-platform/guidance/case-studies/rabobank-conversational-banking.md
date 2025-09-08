@@ -4,7 +4,7 @@ description: Learn how Rabobank uses Microsoft Copilot Studio to deliver efficie
 #customer intent: As a Power Platform user, I want to learn how Rabobank uses Copilot Studio for conversational banking so that I can implement similar solutions in my organization.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 ms.subservice: guidance
 ms.topic: overview
 ms.date: 08/11/2025

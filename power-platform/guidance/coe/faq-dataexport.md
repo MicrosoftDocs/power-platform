@@ -1,14 +1,14 @@
 ---
-title: "Frequently asked questions about the Data Export integration | MicrosoftDocs"
-description: "Frequently asked questions about the CoE Starter Kits integration with Data Export data"
+title: Frequently asked questions about the Data Export integration
+description: Frequently asked questions about the CoE Starter Kits integration with Data Export data.
 author: manuelap-msft
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: faq
-ms.date: 09/25/2024
+ms.date: 08/21/2025
 ms.subservice: guidance-toolkit
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 search.app: 
@@ -19,11 +19,13 @@ search.app:
 
 # Frequently asked questions about the Data Export integration
 
+This article addresses common questions about the Data Export integration, including its setup, requirements, licensing, and functionality.
+
 ## How can I try out this feature?
 
 First, enable the [Data Export](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) feature in your tenant. Proceed with the CoE Starter Kit configuration only when you see inventory data files in your storage account. The initial data export can take up to five days.
 
-[Download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with Data Export and use the [setup wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to configure the feature in your tenant. Your feedback is critical to this process. Post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
+[Download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with Data Export and use the [setup wizard](setup-core-components.md#set-up-the-inventory-components-by-using-the-setup-wizard) to configure the feature in your tenant. Your feedback is critical to this process. Post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
 
 ## Why is this feature in preview?
 
@@ -63,7 +65,7 @@ There are two mechanisms the CoE Starter Kit uses to consume data from the Data 
 
 ## Can I migrate from using cloud flows to retrieve inventory to using Data Export?
 
-Yes, migrating from cloud flows to Data Export will be a seamless process. Use the [Setup Wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to change your data source for the CoE Starter Kit to Data Export, and continue configuring the inventory components using the Setup Wizard. However, we suggest you don't upgrade just yet, and instead try this feature out in a test environment first.
+Yes, migrating from cloud flows to Data Export will be a seamless process. Use the [Setup Wizard](setup-core-components.md#set-up-the-inventory-components-by-using-the-setup-wizard) to change your data source for the CoE Starter Kit to Data Export, and continue configuring the inventory components using the Setup Wizard. However, we suggest you don't upgrade just yet, and instead try this feature out in a test environment first.
 
 ## What will happen to my existing data when I upgrade?
 

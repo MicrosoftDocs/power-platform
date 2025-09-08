@@ -196,7 +196,7 @@ The latest penetration tests and security assessments can be found on the [Micro
 
 Microsoft performs extensive testing of the Microsoft Cloud services. This testing includes penetration testing, with results published on the Service Trust Portal for your organization. Your organization may perform your own penetration test on Microsoft Power Platform and Microsoft Dynamics 365 services. All penetration testing must follow the [Microsoft Cloud Penetration Testing Rules of Engagement](https://www.microsoft.com/msrc/pentest-rules-of-engagement). It is important to remember that in many cases, the Microsoft Cloud uses shared infrastructure to host your assets and assets belonging to other customers. You must limit all penetration tests to your assets and avoid unintended consequences for other customers around you.
 
-Follow the rules of engagement to make sure that access isn't misused. For guidance on planning and executing simulated attacks, see:
+Follow the rules of engagement to make sure that access isn't misused. Learn more about planning and executing simulated attacks:
 
 - [Penetration Testing Rules of Engagement](https://www.microsoft.com/msrc/pentest-rules-of-engagement)
 - [Penetration testing](/azure/security/fundamentals/pen-testing)

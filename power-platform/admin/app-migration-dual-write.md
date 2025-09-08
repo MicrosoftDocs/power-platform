@@ -1,10 +1,10 @@
 ---
 title: Migrate the dual-write app to strengthen communication from finance and operations to Dataverse
-description: Learn how to...
+description: Learn how to migrate the dual-write app to strengthen communication from finance and operations to Dataverse. 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/18/2025
+ms.date: 08/28/2025
 author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
@@ -21,9 +21,9 @@ ms.contributors:
 As part of ongoing efforts to enhance communication security between finance and operations apps and Dataverse, the platform team will be updating the AppID used by [dual-write](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page) functionality.
 
 - **Current configuration**: Dual-write currently uses the AppID, **00000015-0000-0000-c000-000000000000**, for communication from finance and operations to Dataverse.
-- **New configuration**: On September 1, 2025, a new AppID, **f1752846-f0df-4766-96f5-c109adf67d7f**, will be used.
+- **New configuration**: On September 10, 2025, a new AppID, **f1752846-f0df-4766-96f5-c109adf67d7f**, will be used.
 - **Provisioning status**: The new AppID is already included in most provisioned Dataverse environments.
-- **Release timeline**: The change is scheduled to go live on September 1, 2025.
+- **Release timeline**: The change is scheduled to go live on September 10, 2025.
 - **Impact**: This update may affect integration configurations, authentication flows, and environment-specific customizations.
 
 ## Why this change
@@ -38,7 +38,7 @@ Dual-write now uses this abstraction. All recent quality updates contain this en
 
     :::image type="content" source="media/audit-history.png" alt-text="Tenant capacity extension in admin center." lightbox="media/audit-history.png":::
 
-1. As part of the dual-write functionality, Microsoft-provided, standard solution dependencies get migrated to the new app. The packages are available on app source for proactive uptake until Sept 1, 2025. Microsoft will be making updates on these packages so that there are no breaking changes on the dual-write live sync. The following packages will be updated to the latest available version.
+1. As part of the dual-write functionality, Microsoft-provided, standard solution dependencies get migrated to the new app. The packages are available on app source for proactive uptake until September 10, 2025. Microsoft will be making updates on these packages so that there are no breaking changes on the dual-write live sync. The following packages will be updated to the latest available version.
   
     - Dual-write application core solutions
     - Dual-write core solution
@@ -49,7 +49,7 @@ Dual-write now uses this abstraction. All recent quality updates contain this en
 
 1. **Dependency with Microsoft-provided solutions**
    
-    Customers using older versions of Microsoft-provided dual-write solutions should validate upgrade paths before the September 1, 2025, deadline. While these solutions are designed to be backward compatible, customizations or applications built on older versions may require evaluation.
+    Customers using older versions of Microsoft-provided dual-write solutions should validate upgrade paths before the September 10, 2025, deadline. While these solutions are designed to be backward compatible, customizations or applications built on older versions may require evaluation.
 
 1. **Custom solution dependency on application ID 00000015-0000-0000-c000-000000000000**
 
@@ -91,7 +91,7 @@ To validate which users would get updated to the new AppID, use following FetchX
 
 If the application ID isn't available, contact Microsoft support.
 
-If there are compliance requirements related to the **ModifiedBy** and **CreatedBy** fields in Dataverse audit logs, note that changes associated with the new AppID applies to all records created or modified on or after September 1, 2025.
+If there are compliance requirements related to the **ModifiedBy** and **CreatedBy** fields in Dataverse audit logs, note that changes associated with the new AppID applies to all records created or modified on or after September 10, 2025.
 
 
 

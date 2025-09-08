@@ -7,7 +7,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 ms.date: 08/18/2025
 ---
 
@@ -87,7 +87,7 @@ Review the detailed articles in this series to further enhance your security pos
 
 - [Detect threats to your organization](threat-detection.md)
 - [Establish data protection and privacy controls](data-protection.md)
-- [Implement a DLP strategy](dlp-strategy.md)
+- [Implement a data policy strategy](dlp-strategy.md)
 - [Configure identity and access management](conditional-access.md)
 - [Secure the default environment](secure-default-environment.md)
 
