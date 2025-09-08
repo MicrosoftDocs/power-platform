@@ -61,9 +61,9 @@ There are several flows which need to be turned on for these components:
 You can share these apps with makers or end users, then assign them the **Power Platform Maker SR** security role.
 
 - The **CoE Maker Command Center** for makers.
-- The [**App Catalog**](core-components.md#app-catalog) for end users.
+- The [**App Catalog**](core-components.md#other-apps) for end users.
 
-For more information, see [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment).
+Learn more: [Share an app from a production environment](faq.md#share-an-app-from-a-production-environment).
 
 ## All environment variables
 
@@ -73,8 +73,4 @@ This environment variable affects other components:
 
 You might need to [update environment variables](faq.md#update-environment-variables) after import.
 
-## I found a bug with the CoE Starter Kit. Where should I go?
-
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

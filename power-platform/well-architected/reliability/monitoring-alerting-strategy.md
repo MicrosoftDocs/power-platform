@@ -118,7 +118,7 @@ Power Platform integrates with [Application Insights](/azure/azure-monitor/app/a
 
 - Capture telemetry data from your [Microsoft Copilot Studio agent](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights. You can use this telemetry to monitor logged messages and events sent to and from your agent, topics to be triggered during user conversations, and custom telemetry events that can be sent from your topics.
 
-Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. For more information about logging activities in Power Platform, see:
+Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. Learn more:
 
 - [Power Apps](/power-platform/admin/logging-powerapps)
 - [Power Automate](/power-platform/admin/logging-power-automate)
@@ -126,7 +126,7 @@ Power Platform resources log activities in the [Microsoft Purview compliance por
 - [Power Pages](/power-platform/admin/logging-power-pages)
 - [Power Platform connectors](/power-platform/admin/connector-events-power-platform)
 - [Data policy activity logging](/power-platform/admin/dlp-activity-logging)
-- [Power Platform administrative logs](/power-platform/admin/admin-activity-logging)
+- [View Power Platform administrative logs using auditing solutions in Microsoft Purview](/power-platform/admin/admin-activity-logging)
 - [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 
 Your Power Platform workload may include Azure resources. To learn more about monitoring recommendations for Azure resources, see [Recommendations for designing and creating a monitoring system](/azure/well-architected/operational-excellence/observability).

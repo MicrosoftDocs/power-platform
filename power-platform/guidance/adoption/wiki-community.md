@@ -49,7 +49,7 @@ Here are a few tips on what to include in a SharePoint communication site:
 
 - **Policies and guidelines:** Share best practices, guidelines, and policies related to the use of Power Platform to ensure that all members are aligned and informed.
   - **[Environment strategy](../white-papers/environment-strategy.md)**: Share the available environments including how to request access to existing environments or request new ones. Make sure makers know the boundaries of an environment's licensing, security, and connectors.
-  - **[Data Loss Prevention (DLP) policy strategy](dlp-strategy.md)**: Share which connectors are available in each environment and how to request additional connectors or a new environment for a specific project.
+  - **[Data policy strategy](dlp-strategy.md)**: Share which connectors are available in each environment and how to request additional connectors or a new environment for a specific project.
 
 - **Training and reusable resources**: Share internal and external training resources, reusable components and templates, and any brand guidelines or naming conventions you want your makers to follow.
 

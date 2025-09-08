@@ -19,8 +19,6 @@ The Launchpad initiative streamlined the onboarding process, integrating seamles
 
 Power Automate and Dataverse provided a ready-to-go toolkit, capable of integrating with Epiq’s existing human capital management (HCM) and IT systems. Using Power Automate and Dataverse eliminated manual effort and provided the flexibility to adapt the process for business units that needed to mass-hire short-term employees for specific projects.
 
-Read the full story: [Epiq automates employee onboarding with Power Platform and saves over $500,000 a year](https://customers.microsoft.com/story/1698782717636037949-epiq-power-platform-united-states?ocid=lp_pg427373_gdc_comm_ba).
-
 ## Business challenges
 
 Epiq specializes in handling complex legal matters including investigations, class actions, e-discovery, and document reviews for corporate and government clients. Before implementing its Power Automate and Dataverse solution, Epiq faced several common onboarding challenges:

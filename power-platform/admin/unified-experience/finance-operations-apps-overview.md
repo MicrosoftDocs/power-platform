@@ -3,12 +3,13 @@ title: Overview of unified admin experience for finance and operations apps
 description: Overview of unified admin experiences for finance and operations apps customers in the Power Platform admin center.
 author: laneswenka
 ms.topic: overview
-ms.date: 06/06/2024
+ms.date: 09/08/2025
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
 ms.custom: sfi-image-nochange
-
+contributors:
+  - aarsh-msft
 ---
 
 # Overview of unified admin experience for finance and operations apps
@@ -23,17 +24,17 @@ As part of the unification of admin experiences of finance and operations apps w
 
 This article gives an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Microsoft Dynamics Lifecycle Services and the new experience. You can also browse more resources and articles that provide detailed information for common tasks.
 
-To learn more about the admin unification journey, see the [Power Platform admin center integration with Lifecyle Services (LCS) TechTalk](https://www.youtube.com/watch?v=HmJIuHhx3Hg).
+To learn more about the admin unification journey, see the [Power Platform admin center integration with Lifecycle Services (LCS) TechTalk](https://www.youtube.com/watch?v=HmJIuHhx3Hg).
 
 ## How do finance and operations apps surface in the Power Platform admin center?
 
-Finance and operations apps now have the same behavior that other Dynamics 365 apps have within the Power Platform admin center. The apps are available to licensed customers both during new environment creation and when they are installed in an existing environment.  
+Finance and operations apps now have the same behavior that other Dynamics 365 apps have within the Power Platform admin center. The apps are available to licensed customers both during new environment creation and when they're installed in an existing environment.  
 
 You can deploy finance and operations apps within the Power Platform admin center in one of the following ways.
 
 ### Option A: Create a new environment through templates
 
-A template is simply a bundle of Microsoft-published applications that are pre-installed in a Dataverse-based Power Platform environment. Templates help increase productivity, because you can quickly deploy an environment with a known configuration of apps without having to manually install each app in the correct sequence. When you use a template, you always get the very latest version that is available for each app at that moment.
+A template is a bundle of Microsoft-published applications that are preinstalled in a Dataverse-based Power Platform environment. Templates help increase productivity, because you can quickly deploy an environment with a known configuration of apps without having to manually install each app in the correct sequence. When you use a template, you always get the latest version that is available for each app at that moment.
 
 When you create a new environment in the Power Platform admin center, you can add a Dataverse data store and select **Enable Dynamics 365 apps**. A list of environment templates then becomes available under **Automatically deploy these apps**.   
 
@@ -45,8 +46,6 @@ This list is dynamic, so you only see references to **Finance**, **Supply Chain 
 
 If you already have an environment that should function with finance and operations apps, you can simply install it instead of creating a separate environment that requires a complex integration. The environment that you use must support Dynamics 365 apps. As part of the installation process, you can select any of the supported versions of finance and operations apps. This flexibility is helpful if you want to use a version that isn't the latest generally available version.
 
-:::image type="content" source="media/install-provisioning-app.png" alt-text="Install provisioning app":::
-
 For step-by-step instructions, see [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md).
 
 With either option, your environment has two runtime URLs:
@@ -56,9 +55,7 @@ With either option, your environment has two runtime URLs:
 
 ## Transition from an environment-slot purchasing model to a capacity-based model
 
-When you purchase a license for any finance and operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is entitled to 60 GB of operations database capacity and an additional 10 GB of Dataverse database capacity. With each user license, you receive an incremental amount of both operations and Dataverse database capacity.
-
-:::image type="content" source="media/PPI-Capacity.png" alt-text="Capacity view in the Power Platform admin center":::
+When you purchase a license for any finance and operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is entitled to 60 GB of operations database capacity and another 10 GB of Dataverse database capacity. With each user license, you receive an incremental amount of both operations and Dataverse database capacity.
 
 A license is required to create or install any finance and operations app in the Power Platform admin center. You must also have at least 1 GB available of both operations and Dataverse database capacity to provision one more environment. There are no strict limits on how many environments you can create. Lifecycle Services is different, where each sandbox and production environment slot has a predetermined purchase.
 
@@ -100,6 +97,7 @@ These continually updated scenario tutorials give a walkthrough for administrato
 ### Known limitations
 
 - The environment name can't exceed 20 characters—a limitation on the finance and operations runtime.
+- When installing the **Dynamics 365 Finance and Operations Provisioning App** through the Power Platform admin center on an existing organization, you may encounter an error if the organization is in an unsupported region or in an unsupported Azure region within a region. The error says, _The selected region does not support the FnO app deployment_. To avoid this error, you can request Microsoft to move the environment to a supported region via support ticket, or provision a new unified environment in a different supported region.
 
 ### Frequently asked questions
 

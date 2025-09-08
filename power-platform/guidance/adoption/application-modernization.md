@@ -18,10 +18,7 @@ contributors:
 
 In today's rapidly evolving digital landscape, organizations face the constant challenge of modernizing their legacy applications to keep pace with changing business needs. Application modernization is crucial for improving operational efficiency, enhancing customer experiences, and staying ahead of the competition. Microsoft Power Platform offers a comprehensive suite of tools and technologies that empower businesses to transform and modernize their applications quickly and effectively.
 
-This white paper explores the benefits, strategies, and best practices of modernizing applications with Microsoft Power Platform. It provides insights and guidance on how the Microsoft low-code platform can help you ensure the success of your application modernization efforts as part of your organization's digital transformation.
-
-> [!TIP]
-> You can save or print this white paper by selecting **Print** from your browser, and then selecting **Save as PDF**.
+This article explores the benefits, strategies, and best practices of modernizing applications with Microsoft Power Platform. It provides insights and guidance on how the Microsoft low-code platform can help you ensure the success of your application modernization efforts as part of your organization's digital transformation.
 
 ## Introduction
 
@@ -277,7 +274,7 @@ To evaluate an application, we recommend that you first determine whether it's s
 
 For example, if you determine an application isn't a good fit because Power Apps is missing a required control, you can use the [Power Apps component framework](/power-apps/developer/component-framework/reference/) (PCF) and traditional code to build a custom control. Another example is an app that has complex logic. You could centralize the logic in an API that Power Apps can access using a custom connector. In both these examples, Power Platform extensibility allowed most of the app to be built with low-code components, bridging the gaps with traditionally developed code.
 
-NSure.com, a proprietary online insurance shopping platform, offers a real-world example. The company's initial launch relied on traditionally developed Angular, Xamarin, and Azure services. By adding Power Platform and Dynamics 365, NSure.com created a next-generation solution using both low-code and traditional coding techniques, as the following diagram illustrates. [Learn more about the company's journey.](https://www.microsoft.com/en/customers/story/1728829430186194098-nsure-power-platform-insurance-usa)
+NSure.com, a proprietary online insurance shopping platform, offers a real-world example. The company's initial launch relied on traditionally developed Angular, Xamarin, and Azure services. By adding Power Platform and Dynamics 365, NSure.com created a next-generation solution using both low-code and traditional coding techniques, as the following diagram illustrates. [Learn more about the company's journey.](https://www.microsoft.com/customers/story/1728829430186194098-nsure-power-platform-insurance-usa)
 
 :::image type="content" source="media/app-mod/image2.png" alt-text="Diagram illustrating Nsure.com's insurance quotation process incorporating both traditional code and low-code components.":::
 
@@ -546,7 +543,7 @@ The following diagram illustrates an example of inbound and outbound events in a
 
 Organizations should also consider prebuilt integration options available from third parties on Microsoft AppSource. For example, Microsoft has a prebuilt solution for organizations that need to integrate SAP with Power Platform. This prebuilt solution incorporates apps and flows and adds new functionalities that facilitate communication between your organization's SAP system and Power Platform.
 
-For example, Ernst & Young used the prebuilt SAP integration to rapidly develop a solution to optimize a high-frequency global finance process. The following diagram of the [company's PowerPost solution](https://customers.microsoft.com/en-SG/story/1517917618455612643-eyzilla-professionalservices) shows how finance users post documents to its General Ledger SAP ERP system using Power Platform.
+For example, Ernst & Young used the prebuilt SAP integration to rapidly develop a solution to optimize a high-frequency global finance process. The following diagram of the [company's PowerPost solution](https://www.microsoft.com/customers/story/25003-ey-global-services-limited-power-apps?msockid=3611ba047493699d18b4ae1575ee6814) shows how finance users post documents to its General Ledger SAP ERP system using Power Platform.
 
 :::image type="content" source="media/app-mod/image10.png" alt-text="Diagram of the Ernst & Young integrated SAP solution.":::
 
@@ -603,7 +600,7 @@ Let's take a high-level look at the multiple layers of security that make up the
 - Environments act as security boundaries, allowing different security needs to be implemented in each one.
 - Power Automate flows and canvas apps use connectors. The specific connection credentials and associated service entitlements determine permissions when apps use the connectors.
 - Environments with a Dataverse instance support more advanced security models that are specific to controlling access to data and services in that Dataverse instance.
-- Connector use can be further restricted with data loss prevention (DLP) policies. Cross-tenant inbound and outbound restrictions can also be applied to the connectors.
+- Connector use can be further restricted with data policies. Cross-tenant inbound and outbound restrictions can also be applied to the connectors.
 
 It's important to note that when accessing data sources using connectors, all the underlying security that the data source offers is in addition to the layers of security described. Power Apps and Power Automate don't by default provide users with access to the connector data source that they don't already have. Users should only have access to data that they genuinely require access to.
 
@@ -679,13 +676,13 @@ Using Application Insights across your applications can make it easier to correl
 
 ## Conclusion
 
-In this white paper, we explored the benefits, strategies, and best practices of modernizing your legacy applications with Microsoft Power Platform. You gained insights and guidance on employing Power Platform's low-code capabilities to ensure the success of your modernization efforts as part of your organization's digital transformation.
+In this article, we explored the benefits, strategies, and best practices of modernizing your legacy applications with Microsoft Power Platform. You gained insights and guidance on employing Power Platform's low-code capabilities to ensure the success of your modernization efforts as part of your organization's digital transformation.
 
-Legacy applications present many challenges for organizations. To overcome them, organizations must embark on application modernization initiatives to revitalize their infrastructure and take advantage of modern technologies. In this white paper, you saw how to take a low-code approach to your modernization efforts—specifically, how the low-code development capabilities of Microsoft Power Platform allow you to quickly build and deploy modern applications. 
+Legacy applications present many challenges for organizations. To overcome them, organizations must embark on application modernization initiatives to revitalize their infrastructure and take advantage of modern technologies. In this article, you saw how to take a low-code approach to your modernization efforts—specifically, how the low-code development capabilities of Microsoft Power Platform allow you to quickly build and deploy modern applications.
 
 Low-code opens the door to a broader set of people than traditional coders. A key factor of organizations that succeed with a low-code approach is making sure the people involved in modernizing applications have training in low-code development, whether they're pro developers or business users. Business users are closer to the business problem being solved and can contribute time-saving expertise. Traditional code developers can apply the techniques and skilling they already have to build extensions to fill any low-code gaps. Organizations can be most effective by blending business and technical resources on what we like to call "fusion teams."
 
-This white paper establishes the foundation for you. The next steps are yours. Here are some suggestions:
+This article establishes the foundation for you. The next steps are yours. Here are some suggestions:
 
 - Take a few minutes to find out what your organization is already doing with low-code. It might surprise you! 
 - Evaluate your application modernization opportunities.
@@ -704,12 +701,12 @@ Every organization's journey to application modernization is unique. Your Micros
 - [Power Fx open-sourced repository on GitHub](https://github.com/microsoft/Power-Fx)
 - [CoE Starter Kit](/power-platform/guidance/coe/starter-kit)
 - [Power Platform Adoption Assessment](/assessments/3c62fd23-9d36-491c-8941-26d5553365f8/)
-- [Digital insurance agency automates a complex purchasing process using Power Platform](https://www.microsoft.com/en/customers/story/1728829430186194098-nsure-power-platform-insurance-usa)
+- [Digital insurance agency automates a complex purchasing process using Power Platform](https://www.microsoft.com/customers/story/1728829430186194098-nsure-power-platform-insurance-usa)
 - [PCF Gallery](https://pcf.gallery/)
-- [EY helps enable entry at source for a global finance process with Power Platform, reducing lead times by 95 percent](https://customers.microsoft.com/en-SG/story/1517917618455612643-eyzilla-professionalservices)
+- [EY redesigns its global finance process with Microsoft Power Platform](https://www.microsoft.com/customers/story/25003-ey-global-services-limited-power-apps?msockid=3611ba047493699d18b4ae1575ee6814)
 - [Azure Private Link](/power-bi/enterprise/service-security-private-links)
 - [Microsoft Azure ExpressRoute](/power-platform/guidance/expressroute/overview)
-- [Power Platform Release Planner](https://releaseplans.microsoft.com/en-US/?app=Power+Apps)
+- [Power Platform Release Planner](https://releaseplans.microsoft.com?app=Power+Apps)
 - [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 - [Microsoft outlines framework for building AI apps and copilots; expands AI plugin ecosystem](https://news.microsoft.com/source/features/ai/microsoft-outlines-framework-for-building-ai-apps-and-copilots-expands-ai-plugin-ecosystem/)
 
