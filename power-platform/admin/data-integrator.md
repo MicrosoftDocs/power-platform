@@ -106,7 +106,7 @@ Connection sets are a collection of two connections, environments for the connec
   
 1. Choose the connections you created earlier and select the appropriate environment.
 
-1. Repeat the steps by choosing your next connection (think of these as source and destination in no specific order).
+1. Repeat the steps by choosing your next connection (think of the as source and destination in no specific order).
 
 1. Specify the organization to business unit mapping (if you're integrating between finance and operations apps and Sales systems).
   
@@ -186,7 +186,7 @@ Execution history also shows the status of execution along with the number of up
 
 -   If the project execution is in 'WARNING' state, then you need to fix the issues on the source. It retries execution at the next scheduled run.
 
-    In either case, you could also choose to manually 're-run execution.'
+    In either case, you could also choose to manually 'rerun execution.'
 
 > [!NOTE]
 > Anytime you execute a project, manually or schedule based, it generates a detailed log, which shows project name, last updated timestamp along with status. You can view this under the execution history for each project. Project execution history is maintained for 45 days after which it's automatically purged.
@@ -197,9 +197,9 @@ Two types of executions/writes are available:
 
 - Manual writes (execute and refresh project manually)
 
-- Schedule-based writes (auto-refresh)
+- Schedule-based writes (autorefresh)
 
-After you create an integration project, you have the option to run it manually or configure schedule-based writes, which lets you set up automatic refresh for your projects.
+After you create an integration project, you can run it manually or configure schedule-based writes, which lets you set up automatic refresh for your projects.
 
 To set up schedule-based writes follow these steps:
 
@@ -208,22 +208,22 @@ To set up schedule-based writes follow these steps:
 1. On the **Projects** tab, select the project and then select **...** > **Schedule**.
 1. Select **Recur every** and once you have completed all the fields, select **Save schedule**.
 
-You can set a frequency as often as one minute or have it recur a certain number of hours, days, weeks, or months. Note that the next refresh won't start until the previous project task completes its run.
+You can set a frequency as often as one minute or have it recur some hours, days, weeks, or months. The next refresh won't start until the previous project task completes its run.
 
 Also note that under **Notifications**, you can opt in for email-based alert notifications, which alerts you on job executions that either completed with warnings or failed due to errors. You can provide multiple recipients, including groups separated by commas.
 
 > [!NOTE]
 >
 > - You can schedule 50 integration projects at any given time per paid tenant. However you can create more projects and run them interactively. For trial tenants, there's an additional limitation that a scheduled project can only run for the first 50 executions.
-> - While you can schedule projects to run every minute, this might put a lot of stress on your apps and impact overall performance. We highly encourage users to test project executions under true load conditions and optimize for performance with less frequent refreshes. In production environments, we don't recommend running more than five projects per minute per tenant.
-> - To optimize performance and not overload the apps, project executions are limited to 500 K rows per execution per project.
-> - Anytime you execute a project, manually or schedule based, it generates a detailed log, which shows project name, last updated timestamp along with status. You can view this under the execution history for each project. Project execution history is maintained for 45 days after which it's automatically purged.
+> - While you can schedule projects to run every minute, this tactic might put much stress on your apps and impact overall performance. We highly encourage users to test project executions under true load conditions and optimize for performance with less frequent refreshes. In production environments, we don't recommend running more than five projects per minute per tenant.
+> - To optimize performance and not overload the apps, project executions are limited to 500-K rows per execution per project.
+> - Anytime you execute a project, manually or schedule based, it generates a detailed log, which shows project name, last updated timestamp along with status. You can view the logs under the execution history for each project. Project execution history is maintained for 45 days after which it's automatically purged.
 
 ## Customize projects, templates, and mappings 
 
 You use a template to create a data integration project. A template commoditizes the movement of data that in turn helps a business user or administrator expedite integrating data from sources to destination and reduces overall burden and cost. A business user or administrator can start with an out-of-the-box template published by Microsoft or its partner and then further customize it before creating a project. You can then save the project as a template and share with your organization and/or create a new project. 
 
-A template provides you with source, destination, and direction of data flow. You need to keep this in mind while customizing or creating your own template.  
+A template provides you with source, destination, and direction of data flow. You need to keep this fact in mind while customizing or creating your own template.  
 
 You can customize projects and templates in these ways:
 
@@ -238,7 +238,7 @@ To create a connection set, follow these steps:
 1. Select **Manage** > **Data integration** on the left navigation pane.
 1. On the **Projects** tab, select the project for which you want to customize field mappings, select **...** > **Connection set details**.
 1. Select the **Organizations** tab, and then select **+ Add mapping**.
-1. Once you have customized your field mappings, select **Save** on the command bar.
+1. After you customize your field mappings, select **Save** on the command bar.
 
 ### Create your own template 
 
@@ -292,7 +292,7 @@ For this example, choose the **Sales to Fin and Ops** template since we want to 
 
    In this case, for demo purposes, we create an **Activities Sales to Fin and Ops** task by picking the **Activities** entity for finance and operations apps and Dynamics 365 Sales. Select **Create**.
 
-7. Notice a new task has been added **Activities Sales to Fin and Ops**. Select **Save** to save your changes.
+7. Notice a new task is added **Activities Sales to Fin and Ops**. Select **Save** to save your changes.
 
 8. The project is created. On the **Projects** tab, select the project, and then select ... > **Save as template**.
 9. Provide a name and description, then select **Save**. Additionally, select **Share with everyone in my organization** to share this template.
@@ -311,7 +311,7 @@ With Power Query support, advanced filtering and data transformation of source d
 
 2. Select **Manage** > **Data integration** on the left navigation pane. 
 
-3. On the **Projects** tab, select the project where you want to enable advanced query, select **...** > **Project Details,**. Then select **Advanced query** on the command bar.
+3. On the **Projects** tab, select the project where you want to enable advanced query, select **...** > **Project Details**. Then select **Advanced query** on the command bar.
 
 4. You receive a warning that enabling advanced query is a one-way operation and can't be undone. Select **OK** to proceed and then select the source and destination mapping arrow.
 
@@ -367,7 +367,7 @@ For more information about Power Query, go to [Power Query documentation](/power
 > - Doing joins across multiple data sources (either via the **Get data** button or M query) isn't supported with Advanced Query and Filtering.
 > - If you encounter Power Query evaluation limits with the error: 
 > 
->   <i>The power query job failed with error: Exception ExceptionType:MashupEvaluationException, ExceptionMessage:EvaluationQuotaReached, EvaluationResponse:{"ResultType":"ErrorCode","Code":"EvaluationQuotaReached"</i> 
+>   <i>The power query job failed with error: Exception ExceptionType:MashupEvaluationException, ExceptionMessage:EvaluationQuotaReached, EvaluationResponse:{"ResultType":"ErrorCode,""Code":"EvaluationQuotaReached"</i> 
 >
 >   Review the guidance on [Power Query Online Limits](/power-query/power-query-online-limits).
 > - Modifying the _url_ directly in the mashup editor isn't supported. Only the filter applied using the mashup editor UI or specified in source filter edit field on mapping page is used.
