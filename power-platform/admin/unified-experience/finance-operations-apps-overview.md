@@ -46,8 +46,6 @@ This list is dynamic, so you only see references to **Finance**, **Supply Chain 
 
 If you already have an environment that should function with finance and operations apps, you can simply install it instead of creating a separate environment that requires a complex integration. The environment that you use must support Dynamics 365 apps. As part of the installation process, you can select any of the supported versions of finance and operations apps. This flexibility is helpful if you want to use a version that isn't the latest generally available version.
 
-:::image type="content" source="media/install-provisioning-app.png" alt-text="Install provisioning app":::
-
 For step-by-step instructions, see [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md).
 
 With either option, your environment has two runtime URLs:
@@ -58,8 +56,6 @@ With either option, your environment has two runtime URLs:
 ## Transition from an environment-slot purchasing model to a capacity-based model
 
 When you purchase a license for any finance and operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is entitled to 60 GB of operations database capacity and an additional 10 GB of Dataverse database capacity. With each user license, you receive an incremental amount of both operations and Dataverse database capacity.
-
-:::image type="content" source="media/PPI-Capacity.png" alt-text="Capacity view in the Power Platform admin center":::
 
 A license is required to create or install any finance and operations app in the Power Platform admin center. You must also have at least 1 GB available of both operations and Dataverse database capacity to provision one more environment. There are no strict limits on how many environments you can create. Lifecycle Services is different, where each sandbox and production environment slot has a predetermined purchase.
 
