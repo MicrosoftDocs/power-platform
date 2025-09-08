@@ -3,11 +3,12 @@ title: Tenant settings
 description: Review and configure tenant-level settings linked from this page.
 author: amiyapatr-zz
 ms.topic: overview
-ms.date: 08/05/2025
+ms.date: 09/08/2025
 ms.update-cycle: 180-days
 ms.author: ampatra
 ms.reviewer: sericks
 contributors:
+  - kenseongtan 
   - marcelbf
   - sericks007
   - syalandur24
