@@ -97,7 +97,7 @@ These continually updated scenario tutorials give a walkthrough for administrato
 ### Known limitations
 
 - The environment name can't exceed 20 characters—a limitation on the finance and operations runtime.
-- When installing the **Dynamics 365 Finance and Operations Provisioning App** through the Power Platform Admin Center on an existing organization, you may encounter an error if the organization is in an unsupported Region or in an unsupported Azure Region within a Region. The error says, _The selected region does not support the FnO app deployment_. To avoid this error, you can request Microsoft to move the environment to a supported region via support ticket, or provision a new unified environment in a different supported region.
+- When installing the **Dynamics 365 Finance and Operations Provisioning App** through the Power Platform admin center on an existing organization, you may encounter an error if the organization is in an unsupported region or in an unsupported Azure region within a region. The error says, _The selected region does not support the FnO app deployment_. To avoid this error, you can request Microsoft to move the environment to a supported region via support ticket, or provision a new unified environment in a different supported region.
 
 ### Frequently asked questions
 
