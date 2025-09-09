@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - environment management",
+    "title": "Microsoft Power Platform REST API - environmentmanagement",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -288,6 +288,7 @@
           "EnvironmentManagedGovernance"
         ],
         "summary": "Disables managed governance for the specified environment (Preview).",
+        "description": "Disables managed governance for an environment.  PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
         "operationId": "DisableManagedEnvironment",
         "produces": [
           "text/plain",
@@ -298,7 +299,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment ID.",
+            "description": "The ID of Environment.",
             "required": true,
             "type": "string"
           },
@@ -344,6 +345,7 @@
           "EnvironmentManagedGovernance"
         ],
         "summary": "Enables managed governance for the specified environment (Preview).",
+        "description": "Enables managed environments on an environment.  PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
         "operationId": "EnableManagedEnvironment",
         "produces": [
           "text/plain",
@@ -354,7 +356,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment ID.",
+            "description": "The ID of Environment.",
             "required": true,
             "type": "string"
           },

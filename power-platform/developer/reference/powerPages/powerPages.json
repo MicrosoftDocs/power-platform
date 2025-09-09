@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - Power Pages",
+    "title": "Microsoft Power Platform REST API - powerpages",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -347,8 +347,8 @@
         "tags": [
           "Websites"
         ],
-        "summary": "Create web application firewall rules on a Power Pages website.",
-        "description": "Create web application firewall rules on the given website.",
+        "summary": "Create web application Firewall rules on a Power Pages website.",
+        "description": "Create web application Firewall rules on the given website.",
         "operationId": "CreateWafRules",
         "consumes": [
           "application/json"
@@ -418,8 +418,8 @@
         "tags": [
           "Websites"
         ],
-        "summary": "Disable web application firewall on a Power Pages website.",
-        "description": "Disable web application firewall on the given website.",
+        "summary": "Disable web application Firewall on a Power Pages website.",
+        "description": "Disable web application Firewall on the given website.",
         "operationId": "DisableWaf",
         "produces": [
           "application/json"

@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - app management",
+    "title": "Microsoft Power Platform REST API - appmanagement",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -55,7 +55,7 @@
         "tags": [
           "Applications"
         ],
-        "summary": "Get the list of application packages that are available for install in a target environment.",
+        "summary": "Get the list of application packages that are available for install.",
         "description": "Get the list of available application packages that are relevant in the context of a target environment. The client can filter the application packages based on install state (NotInstalled, Installed, All) and any other response parameters utilizing standard OData capabilities.",
         "operationId": "GetEnvironmentApplicationPackage",
         "produces": [
