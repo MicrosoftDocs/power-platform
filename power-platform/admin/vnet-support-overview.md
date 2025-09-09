@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/17/2025
+ms.date: 09/09/2025
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -126,7 +126,7 @@ The following table lists the services that support Azure subnet delegation for 
 
 ## Supported environments
 
-Virtual Network support for Power Platform is not available for all [Power Platform environments](/power-platform/admin/environments-overview). Check below to see which environment types support Virtual Network.
+Virtual Network support for Power Platform isn't available for all [Power Platform environments](/power-platform/admin/environments-overview). The following table lists which environment types support Virtual Network.
 
 | Environment type              | Supported |
 |-------------------------------|-----------|
@@ -148,9 +148,9 @@ For example, a plug-in might try to connect to a publicly available service, but
 
 ## FAQ
 
-### What's the difference between a virtual network data gateway and Azure Virtual Network support for Power Platform?
+### What's the difference between a Virtual Network data gateway and Azure Virtual Network support for Power Platform?
 
-A [virtual network data gateway](/data-integration/vnet/data-gateway-architecture#hardware) is a managed gateway that allows you to access Azure and Power Platform services from within your virtual network without having to set up an on-premises data gateway. For example, the gateway is optimized for ETL (extract, transform, load) workloads in Power BI and Power Platform dataflows.
+A [Virtual Network data gateway](/data-integration/vnet/data-gateway-architecture#hardware) is a managed gateway that allows you to access Azure and Power Platform services from within your Virtual Network without having to set up an on-premises data gateway. For example, the gateway is optimized for ETL (extract, transform, load) workloads in Power BI and Power Platform dataflows.
 
 Azure Virtual Network support for Power Platform uses an Azure subnet delegation for your Power Platform environment. Subnets are used by workloads in the Power Platform environment. Power Platform API workloads use Virtual Network support because the requests are short-lived and optimized for a large number of requests.
 
