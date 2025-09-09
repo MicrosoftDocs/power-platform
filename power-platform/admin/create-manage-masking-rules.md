@@ -29,7 +29,7 @@ Data masking helps protect sensitive information during customer interactions an
 > - This is a preview feature.
 > - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-> The environment must be activated for [Managed Environments](managed-environment-overview.md) in order to [add a masking rule to a secured column](create-manage-masking-rules.md#add-a-masking-rule-to-a-secured-column). 
+> The environment must be a [Managed Environments](managed-environment-overview.md) in order to [add a masking rule to a secured column](create-manage-masking-rules.md#add-a-masking-rule-to-a-secured-column). 
 
 ## How does masking work?
 
