@@ -29,15 +29,17 @@ Data masking helps protect sensitive information during customer interactions an
 > - This is a preview feature.
 > - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-> The environment must be a [Managed Environments](managed-environment-overview.md) in order to [add a masking rule to a secured column](create-manage-masking-rules.md#add-a-masking-rule-to-a-secured-column). 
-
 ## How does masking work?
 
 - You create *masking rules* to set how sensitive information should be masked.
 
 - These rules use *regular expressions* to identify specific patterns, for example a credit card number, social security number, and email address.
 
-- These patterns are detected and the sensitive columns are replaced with masked characters when the row is retrieved. 
+- These patterns are detected and the sensitive columns are replaced with masked characters when the row is retrieved.
+
+## Prerequisite
+
+The environment must be a [Managed Environments](managed-environment-overview.md) in order to [add a masking rule to a secured column](create-manage-masking-rules.md#add-a-masking-rule-to-a-secured-column). 
 
 ## Create masking rules
 
