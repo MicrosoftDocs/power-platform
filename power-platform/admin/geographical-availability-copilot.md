@@ -31,6 +31,8 @@ ms.custom:
   - copilot-learning-hub
 ms.collection: 
     - bap-ai-copilot
+ms.contributors:
+  - nitemp
 ---
 
 # Move data across regions for Copilots and generative AI features
