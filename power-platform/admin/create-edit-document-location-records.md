@@ -25,9 +25,9 @@ To store documents for records, the document libraries or folders must be in pla
 1. Specify the following information as required:  
 
    - **Name**. Enter a name for the document location. This name displays in the location list in the table record.
-  - **Owner**. By default, you are added as the owner of this location record, but you can change this.  
-  - **Description**. Enter an optional a description for the document location.  
-  - **URL Type**. Select whether you want to create the location with an absolute URL or relative URL.  
+   - **Owner**. By default, you are added as the owner of this location record, but you can change this.  
+   - **Description**. Enter an optional a description for the document location.  
+   - **URL Type**. Select whether you want to create the location with an absolute URL or relative URL.  
      - Select **Absolute URL**, and in the **Absolute URL** box, specify the fully qualified URL of the location of the folder in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
   
         \-  OR -  
