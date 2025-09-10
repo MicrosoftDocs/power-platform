@@ -1,10 +1,10 @@
 ---
-title: "System Settings Auditing tab  | MicrosoftDocs"
-description: System Settings Auditing tab 
+title: "System Settings Auditing tab"
+description: Explains the environment settings available on the System Settings Auditing tab in Power Platform.
 author: Mattp123
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/05/2022
+ms.date: 09/10/2025
 ms.subservice: admin
 ms.author: matp
 search.audienceType: 
@@ -12,7 +12,8 @@ search.audienceType:
 ---
 # System Settings Auditing tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+> [!IMPORTANT]
+> This article describes how to use the classic settings experience for managing auditing. For information about the current experience, go to [Manage Dataverse auditing](manage-dataverse-auditing.md).
 
 Enable auditing to track changes to your organization's data and maintain a log of changes. 
   

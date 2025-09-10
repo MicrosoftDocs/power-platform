@@ -382,7 +382,7 @@
                       href: set-up-business-management-options.md
                     - name: Dynamics 365 for Outlook
                       href: /dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
-                - name: System
+                - name: System Settings (classic)
                   items:
                     - name: Overview
                       href: system-settings-dialog.md
