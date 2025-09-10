@@ -1,7 +1,7 @@
 ---
 title: Requests limits and allocations
 description: Learn about Power Platform requests limits and allocations and how to download reports from the Power Platform admin center.
-author: samathur
+author: sericks007
 contributors:
   - sericks007
   - samathur
@@ -14,7 +14,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/10/2025
 ms.subservice: admin
-ms.author: samathur
+ms.author: sericks
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
