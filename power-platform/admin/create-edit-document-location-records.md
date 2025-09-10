@@ -20,7 +20,7 @@ To store documents for records, the document libraries or folders must be in pla
 1. Select **Manage** on the left navigation pane, select **Environments**, and then open the environment you want.
 1. Select **Settings** on the command bar.
 1. Select **Integration** > **Document management settings**.
-1. Select **SharePoint Document Locations**, and then open an existing document location record. You must have SharePoint integration enabled for any document location records to exist.
+1. Select **SharePoint Document Locations**, and then open an existing document location record. You might need to change the view dropdown list to **Active Document Locations**.You must have SharePoint integration enabled for any document location records to exist.
 1. On the document location record command bar, select **New**.
 1. Specify the following information as required:  
 
