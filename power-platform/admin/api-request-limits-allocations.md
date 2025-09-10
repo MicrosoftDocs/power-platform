@@ -3,6 +3,7 @@ title: Requests limits and allocations
 description: Learn about Power Platform requests limits and allocations and how to download reports from the Power Platform admin center.
 author: samathur
 contributors:
+  - sericks007
   - samathur
   - cvassallo
   - v-aangie
@@ -11,7 +12,7 @@ contributors:
   - EllenWehrle 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/27/2025
+ms.date: 09/10/2025
 ms.subservice: admin
 ms.author: samathur
 ms.reviewer: angieandrews
@@ -141,23 +142,20 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 
 ---
 
-4. On the **Summary** tab, scroll down to the *Add-ons* section and select **Download reports**.
+1. On the **Summary** tab, scroll down to the *Add-ons* section and select **Download reports**.
 
    :::image type="content" source="media/api-request-limits-allocations/capacity-download-reports.png" alt-text="Screenshot that shows the Capacity page in the Power Platform admin center and highlights the link to download reports." lightbox="media/api-request-limits-allocations/capacity-download-reports.png":::
 
-5. On the *Downloadable Reports* page, select **New** from the command bar.
-6. Expand the **Choose a report** box and select **Microsoft Power Platform requests**.
+1. On the *Downloadable Reports* page, select **New** from the command bar.
+1. Expand the **Choose a report** box and select **Microsoft Power Platform requests**.
+1. Select the required scope of the report:
 
-    :::image type="content" source="media/api-request-limits-allocations/select-requests-report.png" alt-text="Screenshot that shows a side panel that contains the dropdown menu for the Power Platform requests reports.":::
+    - Licensed User
+    - Non-licensed User
+    - Per Flow Licensed Flows
 
-7. Select the required scope of the report:
-
-    1. Licensed User
-    1. Non-licensed User
-    1. Per Flow Licensed Flows
-
-8. Select **Submit**.
-9. Once the report is ready, select **Download** to download the report as an Excel CSV file.
+1. Select **Submit**.
+1. Once the report is ready, select **Download** to download the report as an Excel CSV file.
 
 > [!NOTE]
 > These reports are currently in preview. There are two limitations with the Licensed User preview report.
@@ -182,10 +180,6 @@ The [Licensed User](api-request-limits-allocations.md#licensed-user-request-limi
 | Power Automate Requests | Number of Power Platform requests originating from Power Automate. |
 | Power Apps Requests | Number of Power Platform requests originating from Power App. |
 
-Here's a sample of a detailed usage report:
-
-:::image type="content" source="media/api-request-limits-allocations/ppr-licensed-user-report.png" alt-text="Image showing an example of the licensed user report." lightbox="media/api-request-limits-allocations/ppr-licensed-user-report.png":::
-
 ### Non-licensed User report
 
 The [Non-licensed User](api-request-limits-allocations.md#non-licensed-user-request-limits) report shows the Power Platform request usage per day for non-licensed users and the total entitlement for non-licensed users for that tenant. The downloadable report contains the following fields:
@@ -204,10 +198,6 @@ The [Non-licensed User](api-request-limits-allocations.md#non-licensed-user-requ
 | Usage Datetime |     The date and time of when the usage was captured (UTC). |
 | Consumed Quantity |     Usage of Power Platform requests.  |
 
-Here's a sample of a detailed usage report:
-
-:::image type="content" source="media/api-request-limits-allocations/non-licensed-user-report.png" alt-text="Image showing an example of the non-licensed user report." lightbox="media/api-request-limits-allocations/non-licensed-user-report.png":::
-
 ### Per Flow report
 
 The Per Flow Licensed Flows downloadable report contains the following fields:
@@ -222,10 +212,6 @@ The Per Flow Licensed Flows downloadable report contains the following fields:
 | Usage Datetime    | The date and time of when the usage was captured (UTC). |
 | Entitled Quantity    | The value of any included entitlement for the flow.  |
 | Consumed Quantity    | Usage of Power Platform requests.  |
-
-Here's a sample of a detailed usage report:
-
-:::image type="content" source="media/api-request-limits-allocations/ppr-per-flow-licensed-flows.png" alt-text="Image showing an example of the per flow-licensed report." lightbox="media/api-request-limits-allocations/ppr-per-flow-licensed-flows.png":::
 
 ## Request limits in Power Automate
 
@@ -264,7 +250,6 @@ Power Automate request limits per license:
 Learn more about [Power Automate licenses](/power-platform/admin/power-automate-licensing/types).
 
 > [!NOTE]
->
 > - The Power Automate Process licenses can be stacked on a cloud flow to increase its PRR limit
 > - [FAQ on Power Platform Request within Power Automate](/power-platform/admin/power-automate-licensing/faqs#power-platform-requests-questions)
 
@@ -276,15 +261,15 @@ Here are a few things to be aware of during the transition period:
 
 1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the official limits to prevent potential unintended impact on your apps or flows.
 
-2. These transition period limits are applied at the cloud flow level during the transition period. Additionally, a separate per user level limit of 1,000,000 cloud flow actions is applied during the transition period to ensure users don't exceed 1M actions across all their flow runs in a day. After the transition period ends, the actual limits will be applied at user level for Premium licenses and cloud flow level for Process / per flow-plan licenses.
+1. These transition period limits are applied at the cloud flow level during the transition period. Additionally, a separate per user level limit of 1,000,000 cloud flow actions is applied during the transition period to ensure users don't exceed 1M actions across all their flow runs in a day. After the transition period ends, the actual limits will be applied at user level for Premium licenses and cloud flow level for Process / per flow-plan licenses.
 
-3. During the transition period, manual cloud flows don't use the flow owners/flow invokers limits. Every manual cloud flow has a performance profile of Medium (100,000 requests/flow/24 hours). After the transition period, manual cloud flows will use the request limits of invoking user.
+1. During the transition period, manual cloud flows don't use the flow owners/flow invokers limits. Every manual cloud flow has a performance profile of Medium (100,000 requests/flow/24 hours). After the transition period, manual cloud flows will use the request limits of invoking user.
 
-4. Since the limits are more generous during the transition period, stacking of user licenses isn't supported. If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow uses the higher plan (Dynamics 365 plan).
+1. Since the limits are more generous during the transition period, stacking of user licenses isn't supported. If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow uses the higher plan (Dynamics 365 plan).
 
-5. Power Platform requests capacity add-on packs aren't assignable to users or cloud flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your cloud flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
+1. Power Platform requests capacity add-on packs aren't assignable to users or cloud flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your cloud flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
-6. Seeded license users can only use cloud flows within the context of the app. Learn more in the [seeded licenses](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license) section. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
+1. Seeded license users can only use cloud flows within the context of the app. Learn more in the [seeded licenses](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license) section. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
 
 ## Frequently asked questions
 
@@ -316,7 +301,7 @@ Yes, if these requests are making CRUD, assign, or share–type requests, they c
 
 No, third-party data integration tools are subject to the exact same limits as scheduled, instant, or automated flows. Thus, there's no difference whether you choose to use Power Automate or a third-party tool. Moreover, requests from Power Automate to Dataverse aren't double-counted, a flow that calls one action only counts as one request against their limit, not two.
 
-### Related
+### Related content
 
 - [Dataverse API limits overview](/powerapps/maker/common-data-service/api-limits-overview)
 - [Power Automate limits and configuration](/power-automate/limits-and-config)
