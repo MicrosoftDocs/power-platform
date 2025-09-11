@@ -5,7 +5,7 @@ description: Explore real-world Power Platform case studies to understand how cu
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
-ms.subservice: guidance
+ms.subservice: case-study
 ms.topic: overview
 ms.date: 08/29/2025
 ---
