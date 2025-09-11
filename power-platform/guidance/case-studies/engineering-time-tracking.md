@@ -4,7 +4,7 @@ description: Learn how international engineering company John Cockerill engages 
 author: robstand
 ms.author: sashi
 ms.topic: overview
-ms.subservice: guidance
+ms.subservice: case-study
 ms.date: 02/03/2025
 
 ---
