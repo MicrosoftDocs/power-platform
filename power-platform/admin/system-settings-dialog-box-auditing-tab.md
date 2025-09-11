@@ -1,6 +1,6 @@
 ---
 title: "System Settings Auditing tab"
-description: Explains the environment settings available on the System Settings Auditing tab in Power Platform.
+description: Explains the environment settings available on the legacy System Settings Auditing tab in Power Platform.
 author: Mattp123
 ms.component: pa-admin
 ms.topic: concept-article
@@ -13,7 +13,7 @@ search.audienceType:
 # System Settings Auditing tab
 
 > [!IMPORTANT]
-> This article describes how to use the classic settings experience for managing auditing. For information about the current experience, go to [Manage Dataverse auditing](manage-dataverse-auditing.md).
+> This article describes how to use the legacy settings experience for managing auditing. For information about the current experience, go to [Manage Dataverse auditing](manage-dataverse-auditing.md).
 
 Enable auditing to track changes to your organization's data and maintain a log of changes. 
   
