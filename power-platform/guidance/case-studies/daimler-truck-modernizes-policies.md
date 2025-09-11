@@ -5,7 +5,7 @@ description: Discover how Daimler Truck modernized policy management using Power
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.subservice: guidance
+ms.subservice: case-study
 ms.topic: overview
 ms.date: 08/20/2025
 ms.custom:
