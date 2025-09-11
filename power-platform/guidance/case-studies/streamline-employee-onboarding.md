@@ -4,7 +4,7 @@ description: Learn from legal and business services firm Epiq how to streamline 
 author: shellyhaverkamp
 ms.author: sashi
 ms.topic: overview
-ms.subservice: guidance
+ms.subservice: case-study
 ms.date: 08/05/2024
 ms.custom: sfi-image-nochange
 ---
