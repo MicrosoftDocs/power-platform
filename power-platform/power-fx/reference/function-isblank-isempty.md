@@ -16,6 +16,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Blank","Coalesce","IsBlank","IsEmpty"]
 ---
 
 # Blank, Coalesce, IsBlank, and IsEmpty functions

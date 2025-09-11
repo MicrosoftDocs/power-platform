@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Trim","TrimEnds"]
 ---
 
 # Trim and TrimEnds functions

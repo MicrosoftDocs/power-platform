@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["AsType","IsType"]
 ---
 
 # AsType and IsType functions

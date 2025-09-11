@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Left","Mid","Right"]
 ---
 
 # Left, Mid, and Right functions

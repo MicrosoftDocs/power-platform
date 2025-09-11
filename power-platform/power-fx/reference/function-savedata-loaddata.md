@@ -16,6 +16,7 @@ contributors:
   - mduelae
   - gregli
   - melzoghbi
+no-loc: ["SaveData","LoadData","ClearData"]
 ---
 
 # SaveData, LoadData, and ClearData functions

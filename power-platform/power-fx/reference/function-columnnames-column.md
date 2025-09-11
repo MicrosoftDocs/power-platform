@@ -12,6 +12,7 @@ search.audienceType:
   - maker
 contributors:
   - carlosff
+no-loc: ["ColumnNames","Column"]
 ---
 # ColumnNames and Column functions
 [!INCLUDE[function-columnnames-column-applies-to](includes/function-columnnames-column-applies-to.md)]

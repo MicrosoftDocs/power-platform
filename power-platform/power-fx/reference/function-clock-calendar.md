@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Calendar","Clock"]
 ---
 
 # Calendar and Clock functions

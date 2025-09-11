@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Average","Max","Min","StdevP","Sum","VarP"]
 ---
 
 # Average, Max, Min, StdevP, Sum, and VarP functions

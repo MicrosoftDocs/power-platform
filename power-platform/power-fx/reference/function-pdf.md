@@ -13,6 +13,7 @@ search.audienceType:
 contributors:
   - TashasEv
   - mduelae
+no-loc: ["PDF"]
 ---
 
 # PDF function (experimental)

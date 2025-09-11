@@ -12,6 +12,7 @@ search.audienceType:
   - maker
 search.app: 
   - PowerApps
+no-loc: ["Dec2Hex","Hex2Dec"]
 ---
 # Dec2Hex and Hex2Dec functions
 [!INCLUDE[function-hexdec-applies-to](includes/function-hexdec-applies-to.md)]

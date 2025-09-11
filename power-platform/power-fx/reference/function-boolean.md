@@ -12,6 +12,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Boolean"]
 ---
 # Boolean function
 [!INCLUDE[function-boolean-applies-to](includes/function-boolean-applies-to.md)]

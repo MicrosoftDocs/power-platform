@@ -16,6 +16,7 @@ contributors:
   - mduelae
   - gregli
   - lezucket
+no-loc: ["Concurrent"]
 ---
 
 # Concurrent function

@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Enable","Disable"]
 ---
 
 # Enable and Disable functions

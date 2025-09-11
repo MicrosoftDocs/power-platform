@@ -13,6 +13,7 @@ search.audienceType:
 contributors:
   - paulliew
   - mduelae
+no-loc: ["AIClassify","AIExtract","AIReply","AISentiment","AISummarize","AISummarizeRecord","AITranslate"]
 ---
 
 # AIClassify, AIExtract, AIReply, AISentiment, AISummarize, AISummarizeRecord, and AITranslate

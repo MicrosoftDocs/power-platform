@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["DateValue","TimeValue","DateTimeValue"]
 ---
 
 # DateValue, TimeValue, and DateTimeValue functions

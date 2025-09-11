@@ -16,6 +16,7 @@ contributors:
   - mduelae
   - gregli
   - carlosff
+no-loc: ["EncodeHTML","EncodeUrl","PlainText"]
 ---
 
 # EncodeHTML, EncodeUrl, and PlainText functions

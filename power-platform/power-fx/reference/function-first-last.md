@@ -14,6 +14,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["First","FirstN","Index","Last","LastN"]
 ---
 
 # First, FirstN, Index, Last, and LastN functions

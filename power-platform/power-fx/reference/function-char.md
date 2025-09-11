@@ -16,6 +16,7 @@ contributors:
   - mduelae
   - gregli
   - carlosff
+no-loc: ["Char","UniChar"]
 ---
 
 # Char and UniChar functions
