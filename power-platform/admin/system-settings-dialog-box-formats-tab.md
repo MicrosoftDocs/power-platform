@@ -1,11 +1,10 @@
 ---
-title: "System Settings Formats tab   | MicrosoftDocs"
-description: System Settings Formats tab 
+title: "System Settings Formats tab"
+description: Legacy System Settings Formats tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/17/2021
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,7 +12,7 @@ search.audienceType:
 ---
 # System Settings Formats tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+<!-- Cannot find PPAC equivalent.-->
 
 You can control how customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), display numbers, currencies, times, and dates for your organization. 
 

@@ -1,11 +1,10 @@
 ---
-title: "System Settings Calendar tab   | MicrosoftDocs"
-description: System Settings Calendar tab 
+title: "System Settings Calendar tab "
+description: Legacy System Settings Calendar tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/31/2020
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,7 +12,7 @@ search.audienceType:
 ---
 # System Settings Calendar tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+<!-- Cannot find PPAC equivalent.-->
 
 Use the settings on this page to configure calendar settings for model-driven apps in Dynamics 365.  
   

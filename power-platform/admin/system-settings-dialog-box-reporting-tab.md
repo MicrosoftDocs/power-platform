@@ -1,20 +1,19 @@
 ---
-title: "System Settings Reporting tab | MicrosoftDocs"
-description: Configure reporting settings for model-driven apps with the System Settings Reporting tab 
+title: "System Settings Reporting tab"
+description: Legacy System Settings Reporting tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/15/2025
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
 ---
-
 # System Settings Reporting tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing Power BI embedding. For information about the current experience, go to [Embedded content](settings-features.md#embedded-content).
 
 Use the settings on this page to configure the reporting settings for model-driven apps in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 

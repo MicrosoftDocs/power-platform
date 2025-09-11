@@ -1,11 +1,10 @@
 ---
-title: "System Settings General tab  | MicrosoftDocs"
-description: System Settings General tab 
+title: "System Settings General tab "
+description: Legacy System Settings General tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/17/2021
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,15 +12,11 @@ search.audienceType:
 ---
 # System Settings General tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing environment settings for behavior. For information about the current experience, go to [Manage behavior settings](settings-behavior.md).
 
 Use the settings on this page to change general system-level settings like preferences for saving, decimal and currency precision, and other default settings for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
 
-<!-- legacy procedure -->
-
-> [!NOTE]
-> Many of these settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings**.
-  
 ## Open the System Settings dialog box 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  

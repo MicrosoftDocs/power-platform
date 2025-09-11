@@ -1,11 +1,10 @@
 ---
-title: "System Settings Customization tab  | MicrosoftDocs"
-description: System Settings Customization tab 
+title: "System Settings Customization tab"
+description: Legacy System Settings Customization tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/17/2021
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,12 +12,11 @@ search.audienceType:
 ---
 # System Settings Customization tab 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing application mode. For information about the current experience, go to [Basic behavior](settings-behavior.md#basic-behavior).
 
 Use the tab to set preferences for plug-in and workflow tracing and also the use of application mode.
 
-<!-- legacy procedure -->
-  
 ## Open the System Settings dialog box 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  

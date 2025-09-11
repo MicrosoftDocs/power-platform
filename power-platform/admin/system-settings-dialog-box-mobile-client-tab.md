@@ -1,11 +1,10 @@
 ---
-title: "System Settings Mobile Client tab  | MicrosoftDocs"
-description: System Settings Mobile Client tab 
+title: "System Settings Mobile Client tab"
+description: Legacy System Settings Mobile Client tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/17/2021
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,7 +12,8 @@ search.audienceType:
 ---
 # System Settings Mobile Client tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing mobile clients. For information about the current experience, go to [Advanced mobile offline settings for model-driven apps](settings-features.md#advanced-mobile-offline-settings-for-model-driven-apps).
 
 Use the settings on this page to manage mobile settings.
 

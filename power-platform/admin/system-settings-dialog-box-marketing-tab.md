@@ -1,11 +1,10 @@
 ---
-title: "System Settings Marketing tab  | MicrosoftDocs"
-description: System Settings Marketing tab 
+title: "System Settings Marketing tab"
+description: Legacy System Settings Marketing tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/17/2021
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,7 +12,8 @@ search.audienceType:
 ---
 # System Settings Marketing tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing Dynamics 365 Sales marketing settings. For information about the current experience, go to [Configure in-app marketing settings](/dynamics365/sales/configure-inapp-marketing).
 
 Use the settings on this page to configure marketing settings for customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 

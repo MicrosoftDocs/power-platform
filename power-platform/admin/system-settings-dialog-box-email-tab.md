@@ -1,11 +1,10 @@
 ---
-title: "System Settings Email tab | MicrosoftDocs"
-description: System Settings Email tab 
+title: "System Settings Email tab"
+description: Legacy System Settings Email tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/17/2021
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,11 +12,10 @@ search.audienceType:
 ---
 # System Settings Email tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing email. For information about the current experience, go to [Email settings](settings-email.md).
 
 Use the settings on this page to set up email processing in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
-
-<!-- legacy procedure -->
 
 > [!NOTE]
 > Many of these settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Email settings**.

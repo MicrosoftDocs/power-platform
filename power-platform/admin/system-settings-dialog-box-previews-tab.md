@@ -1,11 +1,10 @@
 ---
-title: "System Settings Previews tab  | MicrosoftDocs"
-description: System Settings Previews tab 
+title: "System Settings Previews tab"
+description: Legacy System Settings Previews tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/17/2021
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,7 +12,8 @@ search.audienceType:
 ---
 # System Settings Previews tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing previews. For information about the current experience, go to [What are preview features, and how do I enable them?](what-are-preview-features-how-do-i-enable-them.md).
 
 Use the settings on this page to enable preview features in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
