@@ -23,7 +23,7 @@ no-loc: ["AIClassify","AIExtract","AIReply","AISentiment","AISummarize","AISumma
 
 ## Description
 
-Dataverse provides a variety of ready-to-use AI functions that are preconfigured and don't require any data collection, building, or training. You can use these prebuilt AI functions in your app and workflows to improve functionality and streamline processes. The AI functions work with canvas apps, AI Builder, and low-code plugins so can easily integrate them into your solutions.
+Dataverse provides various ready-to-use AI functions that are preconfigured and don't require any data collection, building, or training. You can use these prebuilt AI functions in your app and workflows to improve functionality and streamline processes. The AI functions work with canvas apps, AI Builder, and low-code plugins so can easily integrate them into your solutions.
 
 - **AIClassify** classifies text into one of the provided categories. For example, the following list of categories can be used to classify issues submitted by your customers:
 
@@ -34,7 +34,7 @@ Dataverse provides a variety of ready-to-use AI functions that are preconfigured
 
 - **AIExtract** extracts specified entities such as registration numbers, phone numbers, or names of people.
   > [!NOTE]
-  > The AIExtract function is still in development and might not operate properly. We'll remove this note when it's ready to use.
+  > The AIExtract function is still in development and might not operate properly. We remove this note when it's ready to use.
 - **AIReply** drafts a reply to the message that you provide. For example, this function drafts a reply to a customer's review of a product.
 - **AISentiment** detects the sentiment of the text that you provide. For example, this function detects whether the sentiment of a customer review is positive, negative, or neutral.
 - **AISummarize** summarizes the text that you provide. For example, this function summarizes an email message or text from a document.
@@ -79,7 +79,7 @@ Here's an example:
    ```
 
 > [!NOTE]
-> We are in the process of adding the same function signatures that other Power Fx hosts enjoy to canvas. The new signatures will augment and not replace the current mechanism; apps using the current mechanism will continue to work without modification.
+> We are in the process of adding the same function signatures that other Power Fx hosts enjoy to canvas. The new signatures augment and not replace the current mechanism; apps using the current mechanism will continue to work without modification.
 
 ## Syntax
 
@@ -99,7 +99,7 @@ Here's an example:
 
 **AISentiment**(_Text_)
 - _Text_ - Required. The text to analyze for sentiment.
-- For canvas apps, the return value is in the _AnalyzedSentiment_ column and is "Positive", "Neutral", or "Negative". 
+- For canvas apps, the return value is in the _AnalyzedSentiment_ column and is "Positive," "Neutral," or "Negative".
 
 **AISummarize**(_Text_)
 - _Text_ - Required. The text to summarize.
@@ -116,7 +116,7 @@ Here's an example:
 
 ## Examples
 
-To setup the following examples:
+To set up the following examples:
 1. In the Tree view, select the **App** object and add the following to the **Formulas** property:
    ```power-fx
    Subject = "Washington is a state that offers a variety of food experiences for locals and visitors alike. 
@@ -135,11 +135,11 @@ To setup the following examples:
 
 1. In Canvas apps, set the **OnSelect** property of the **Button** control to:
    ```power-fx
-   Set( Result, Environment.AIClassify( {Text:Subject, Categories: ["Housing", "Food"]} ).Classification )
+   Set( Result, Environment.AIClassify( {Text:Subject, Categories: ["Housing," "Food"]} ).Classification )
    ```
    For all other products, use this formula:
    ```power-fx
-   Set( Result, AIClassify( Subject, ["Housing", "Food"] ) )
+   Set( Result, AIClassify( Subject, ["Housing," "Food"] ) )
    ```
 1. Press the button. The **Text** control displays the result:
    ```
