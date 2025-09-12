@@ -4,7 +4,7 @@ description: Learn how to establish a security baseline for Power Platform workl
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -32,19 +32,19 @@ Establishing a security baseline for Microsoft Power Platform involves several s
 
 - Understanding the architecture and components of Power Platform, such as environments, connectors, Dataverse, Power Apps, Power Automate, and Copilot Studio.
 
-- Configuring the security settings and roles for Power Platform at the tenant, environment and resource level, such as Data Loss Prevention policies, environment permissions, and security groups.
+- Configuring the security settings and roles for Power Platform at the tenant, environment and resource level, such as data policies, environment permissions, and security groups.
 
 - Leveraging Microsoft Entra ID to manage user identities, authentication, and authorization for Power Platform, and integrating with other Entra ID features such as conditional access and multifactor authentication.
 
 - Applying data protection and encryption methods to secure the data stored and processed by Power Platform, such as sensitivity labels and customer-managed keys.
 
-- Monitoring and auditing the activities and usage of Power Platform, using tools such as the Power Platform Admin Center, Managed Environments, and Microsoft Purview.
+- Monitoring and auditing the activities and usage of Power Platform, using tools such as the Power Platform admin center, Managed Environments, and Microsoft Purview.
 
 - Implementing governance policies and processes for Power Platform, such as defining the roles and responsibilities of different stakeholders, establishing approval workflows and change management, and providing guidance and training for users and developers.
 
 This guide helps you set a security baseline that considers both internal and external factors. Internal factors include your business needs, risk factors, and asset evaluation. External factors include industry benchmarks and regulatory standards. By following these steps and considerations, an organization can establish a security baseline for Power Platform that aligns with its business objectives, compliance requirements, and risk appetite. A security baseline can help an organization to maximize the benefits of Power Platform while minimizing the potential threats and challenges.
 
-**Definitions** 
+**Definitions**
 
 | Term | Definition |
 |---|---|
@@ -98,7 +98,7 @@ Here are some common categories that should be part of a baseline. The following
 
 Your design choices may be impacted by regulatory compliance requirements for specific industry segments or due to geographic restrictions. It’s key to understand the regulatory compliance requirements and include them in the architecture of your workload.
 
-The baseline should include regular evaluation of the workload against regulatory requirements. Take advantage of platform-provided tools, such as Microsoft Power Advisor, which can identify areas of noncompliance. Work with your organization's compliance team to make sure all requirements are met and maintained.
+The baseline should include regular evaluation of the workload against regulatory requirements. Take advantage of platform tools, such as the [actions page of the Power Platform admin center](../../admin/power-platform-advisor.md), which can identify areas of noncompliance and make recommendations. Work with your organization's compliance team to make sure all requirements are met and maintained.
 
 ##### Example
 
@@ -154,9 +154,9 @@ Use the baseline to drive initiatives and decisions. Here are some ways to use t
 
 - **Track your progress against the baseline**. Monitor your security measures against the security baseline to identify trends and reveal deviations from the baseline. Use automation where possible, and use the data gathered from tracking the progress to identify and address current issues and prepare for future threats.
 
-- **Set guardrails**. Use your security baseline to establish and manage guardrails and a governance framework for your Power Platform workloads. Guardrails enforce required security configurations, technologies, and operations, based on internal factors and external factors. Guardrails help minimize the risk of inadvertent oversight and punitive fines for noncompliance. You can use out of the box features in the Power Platform Admin Center and Managed Environments to establish guardrails, or build your own by using the CoE Starter Kit reference implementation or your own scripts/tooling. You'll likely use a combination of out-of-the-box and custom tools to set up your guardrails and governance framework. Think about which parts of your security baseline can be enforced proactively, and which ones you'll monitor reactively.
+- **Set guardrails**. Use your security baseline to establish and manage guardrails and a governance framework for your Power Platform workloads. Guardrails enforce required security configurations, technologies, and operations, based on internal factors and external factors. Guardrails help minimize the risk of inadvertent oversight and punitive fines for noncompliance. You can use out of the box features in the Power Platform admin center and Managed Environments to establish guardrails, or build your own by using the Power Platform Center of Excellence (CoE) Starter Kit reference implementation or your own scripts/tooling. You'll likely use a combination of out-of-the-box and custom tools to set up your guardrails and governance framework. Think about which parts of your security baseline can be enforced proactively, and which ones you'll monitor reactively.
 
-Explore Microsoft Purview for Power Platform, Power Advisor, built-in concepts in the Power Platform Admin Center like Data Policies and Tenant Isolation, and reference implementations like the CoE Starter Kit to implement and enforce security configurations and compliance requirements.
+Explore Microsoft Purview for Power Platform, built-in features of the Power Platform admin center for data policies and tenant isolation, personalized recommendations on the [actions page](../../admin/power-platform-advisor.md), and reference implementations like the [CoE Starter Kit](../../guidance/coe/starter-kit.md) to implement and enforce security configurations and compliance requirements.
 
 ### Evaluate the baseline regularly
 
@@ -181,6 +181,7 @@ The Power Platform service follows the Security Development Lifecycle (SDL). The
 The Microsoft cloud security benchmark (MCSB) is a comprehensive security best-practice framework you can use as a starting point for your security baseline. Use it along with other resources that provide input to your baseline. For more information, see [Introduction to the Microsoft cloud security benchmark](/security/benchmark/azure/introduction).
 
 The [Security page](/power-platform/admin/security/security-posture-overview) in the Power Platform admin center helps you to manage your organization's security with best practices and a comprehensive set of features to ensure maximum security. For example, to:
+
 - **Assess your security status:** Understand and improve your organization's security policies to meet your specific needs.
 - **Act on recommendations:** Identify and implement the most impactful recommendations to improve the assessment.
 - **Set up proactive policies:** Use the rich set of tools and security capabilities available to gain deep visibility, detect threats, and proactively establish policies to help safeguard the organization from vulnerabilities and risks.
@@ -202,6 +203,7 @@ Ensure the security baseline you establish for Power Platform is well aligned wi
 - [Responsible AI FAQs for Copilot Studio](/microsoft-copilot-studio/responsible-ai-overview)
 - [Overview of the Microsoft cloud security benchmark](/security/benchmark/azure/overview)
 - [What is incident response? Plan and steps](https://www.microsoft.com/security/business/security-101/what-is-incident-response)
+- [Understand your security posture and challenges](/power-platform/guidance/adoption/assess-security-posture)
 
 ## Security checklist
 

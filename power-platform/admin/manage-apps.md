@@ -7,10 +7,12 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/29/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: sericks
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 
 # Manage Dynamics 365 apps

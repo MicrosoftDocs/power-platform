@@ -1,20 +1,22 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 06/25/2025
+ms.date: 08/20/2025
 ms.topic: concept-article
 author: marianaraujo 
 ms.subservice: admin
 ms.author: maaraujo
-ms.custom: NewPPAC
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
-- olegovanesyan
-- ianceicys-msft 
-- amiyapatr-zz
-- pnghub
+  - olegovanesyan
+  - ianceicys-msft 
+  - amiyapatr-zz
+  - pnghub
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 ---
 
 # Dataverse capacity-based storage details
@@ -379,12 +381,9 @@ An admin can manage Dataverse search through the three states associated with th
 ### What actions can admins take?
 To ensure optimal operations for the organization, admins with the proper permissions can either increase capacity storage or reduce Dataverse search by performing all the following actions:
 
-- Go to the Power Platform admin center and turn off Copilot experiences in model-driven apps. 
-- Turn off Copilot experiences in Microsoft Copilot Studio.
 - Removing knowledge in Copilot Studio.
-- Turn off Copilot in Dynamics 365 applications.
-- Turn off AI prompts.
 - Go to the Power Platform admin center and turn off Dataverse search.
+  
     > [!IMPORTANT]
     > We don't recommended that you perform this action as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
 

@@ -4,7 +4,7 @@ description: Learn how to drive continuous improvement by setting performance ta
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -105,7 +105,7 @@ Evaluating user feedback involves actively seeking out and analyzing the respons
 
 Power Platform integrates with [Application Insights](/azure/azure-monitor/app/app-insights-overview), which is part of the [Azure Monitor](/azure/azure-monitor/overview) ecosystem. Azure Monitor is a full-stack monitoring service that provides a complete set of features to monitor your resources and measure performance targets. Azure Monitor collects platform metrics and provides ready-to-use dashboards. It lets you configure alerts based on metrics and also stores and correlates metrics to ensure a single source of truth. For information on how standard telemetry and custom trace events can be logged and analyzed, see [Analyze system-generated logs using Application Insights](/power-apps/maker/canvas-apps/application-insights).
 
-Power Platform ensures consistent availability and performance by applying service protection limits. These limits are usually high enough that your workload won't encounter them during normal usage. However, you might hit them if your workload handles large data volumes, bulk operations, or data migrations. If you're a workload developer, you should know how service protection limits are enforced and how to design your workload to reduce the chance of exceeding them. You should also plan for how to handle limits if they occur. For more information, see:
+Power Platform ensures consistent availability and performance by applying service protection limits. These limits are usually high enough that your workload won't encounter them during normal usage. However, you might hit them if your workload handles large data volumes, bulk operations, or data migrations. If you're a workload developer, you should know how service protection limits are enforced and how to design your workload to reduce the chance of exceeding them. You should also plan for how to handle limits if they occur. Learn more:
 
 - [Power Platform request limits and allocations](/power-platform/admin/api-request-limits-allocations)
 - [Service protection API limits](/power-apps/developer/data-platform/api-limits?tabs=sdk)

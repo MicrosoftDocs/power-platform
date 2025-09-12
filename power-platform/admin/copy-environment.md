@@ -2,17 +2,21 @@
 title: Copy an environment
 description: Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment.
 ms.topic: how-to
-ms.date: 06/24/2025
+ms.date: 2/7/2025
 author: ChrisGarty
 ms.author: cgarty
 contributors:
 - matapg007
 - ellenwehrle
+- syalandur24
+ms.contributors:
+- matgputa
+- ellenwehrle
+- syalandur
 ms.reviewer: sericks
+ms.custom: sfi-image-nochange
 ---
 # Copy an environment
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You can use the **Copy** option in the Microsoft Power Platform admin center to copy data between environments. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
@@ -132,6 +136,46 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 | IntegrationStatus | SLA | |
 
 ## How to copy an environment
+
+#### [New admin center](#tab/new)
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
+  
+   > [!NOTE]
+   > Environment Admins or System Administrators can copy all available environments. System administrators can copy environments for which they have the Environment Admin or System Administrator role.
+
+2. In the navigation pane, select **Manage**.
+
+3. In the **Manage** pane, select **Environments**, and then select the source environment to copy.
+
+4. Select **Copy** from the top menu bar.
+
+5. Select the desired copy over level.
+
+    :::image type="content" source="media/copy-environment/copy-environment-new-admin-center.png" alt-text="Select the desired copy over level in the new admin center.":::
+
+6. If you selected **Everything** to copy, select whether to copy over audit logs. See the [How to copy audit logs](#how-to-copy-audit-logs) section.
+
+7. Select a target environment.
+  
+   A target environment can be a sandbox or preview environment, not a production environment. A sandbox or preview environment can be promoted to a production environment type later after the copy environment operation. If you're copying an environment of type **Trial (subscription-based)**, you'll be able to see and select target environments of the same type that is **Trial (subscription-based)**.
+  
+   > [!WARNING]
+   > The data, components, and customizations in target environment will be deleted and replaced with a copy of the data, components, and customizations from the source environment. You won't be able to recover any deleted data.
+
+8. To restrict environment access to people in a security group select **Edit** (![Edit.](media/edit-button-new.png)).
+
+9. Edit the details for the copied environment, and then select **Copy**.
+
+    :::image type="content" source="media/copy-environment/copy-environment-admin-center-new.png" alt-text="Select Copy in the new admin center.":::
+
+10. Select **Confirm** to overwrite the target environment.
+
+    The overwrite process starts.
+
+    :::image type="content" source="media/copy-environment/copy-environment-status-new.png" alt-text="Copy environment status.":::
+
+#### [Classic admin center](#tab/classic)
   
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
   
@@ -163,17 +207,35 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 
 9. Select **Confirm** to overwrite the target environment.
 
-The overwrite process starts.
+    The overwrite process starts.
 
-:::image type="content" source="media/copy-environment/copy-environment-status.png" alt-text="Copy environment status.":::
+    :::image type="content" source="media/copy-environment/copy-environment-status.png" alt-text="Copy environment status.":::
+
+---
   
-Once the copy process is complete, the target environment is placed in [Administration mode](sandbox-environments.md#administration-mode) and background operations are disabled. The next section describes recommended Administrator actions for the newly created copy (target) environment.  
+After the copy process is complete, the target environment is placed in [Administration mode](sandbox-environments.md#administration-mode) and background operations are disabled. The next section describes recommended Administrator actions for the newly created copy (target) environment.  
 
 ### How to copy audit logs
 
-Copying audit logs can significantly add to the time it takes to copy an environment and by default isn't done. To include audit logs in the environment copy, take these steps.
+Copying audit logs can significantly add to the time it takes to copy an environment and by default isn't done. To include audit logs in the environment copy, perform these steps.
 
-1. Complete steps 1-5 above.
+##### [New admin center](#tab/new)
+
+1. Complete the New Admin Center steps 1-6 in [How to copy an environment](#how-to-copy-an-environment).
+
+2. Under **Audit logs**, select **Change this**.
+
+   :::image type="content" source="media/copy-environment/copy-environment-audit-logs-new.png" alt-text="Select Change this to include audit logs.":::
+
+3. Enable copying audit logs.
+
+   :::image type="content" source="media/copy-environment/copy-environment-audit-logs-enable-new.png" alt-text="Enable copying audit logs in the new admin center.":::
+
+4. Continue with the New Admin Center steps 7-10 in [How to copy an environment](#how-to-copy-an-environment).
+
+##### [Classic admin center](#tab/classic)
+
+1. Complete the Classic Admin Center steps 1-5 in [How to copy an environment](#how-to-copy-an-environment).
 
 2. Under **Audit logs**, select **Click here**.
 
@@ -183,7 +245,7 @@ Copying audit logs can significantly add to the time it takes to copy an environ
 
    :::image type="content" source="media/copy-environment/copy-environment-audit-logs-enable.png" alt-text="Enable copying audit logs.":::
 
-4. Continue with steps 6-9 above.
+4. Continue with the Classic Admin Center steps 6-9 in [How to copy an environment](#how-to-copy-an-environment).
 
 ### Next steps after copying an environment
 

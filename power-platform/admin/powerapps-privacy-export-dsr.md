@@ -10,8 +10,8 @@ ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
-contributors:
-- royshea 
+contributors: royshea 
+ms.custom: sfi-image-nochange
 ---
 
 # Responding to Data Subject Rights (DSR) requests to export Power Apps customer data

@@ -18,6 +18,7 @@ ms.author: sericks
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Requests limits and allocations
 

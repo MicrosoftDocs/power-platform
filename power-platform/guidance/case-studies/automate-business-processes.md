@@ -4,8 +4,9 @@ description: Learn how Cineplex uses generative AI and Power Automate for invoic
 author: robstand
 ms.author: sashi
 ms.topic: overview
-ms.subservice: guidance
+ms.subservice: case-study
 ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
 
 ---
 

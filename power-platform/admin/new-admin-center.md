@@ -4,7 +4,7 @@ description: Learn how to use the updated Power Platform admin center's new UI a
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/23/2025
+ms.date: 08/13/2025
 ms.custom: 
   - NewPPAC
   - ignite-2024
@@ -13,13 +13,18 @@ ai-usage: ai-assisted
 author: praveenmantha
 ms.author: pmantha
 ms.reviewer: sericks
+ms.contributors:
+  - lsuresh
+contributors:
+  - arjunmayur 
+  - lavanyapg
 search.audienceType: 
   - admin
 ---
 
 # Use the new and improved Power Platform admin center 
 
-We're happy to announce the general availability of the new and improved Power Platform admin center! We designed the new admin center to be easier to use, with task-oriented navigation that helps you achieve specific outcomes faster.
+We're happy to announce the general availability of the new and improved [Power Platform admin center](https://admin.powerplatform.microsoft.com)! We designed the new admin center to be easier to use, with task-oriented navigation that helps you achieve specific outcomes faster.
 
 The new Power Platform admin center is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals. The design focuses on providing an optimal user experience, catering to a wide range of stakeholders with varying needs.
 
@@ -44,7 +49,7 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 5           | Security             | Security         | [Security overview](security/security-overview.md)   |
 | 6           | Analytics > Dataverse       | Manage > Products > Dataverse | [View and download Microsoft Dataverse analytics](analytics-common-data-service.md) |
 | 7           | Analytics > Power Automate | Manage > Products > Power Automate | [View analytics for cloud flows](analytics-flow.md)<br>[View analytics for desktop flows](analytics-ui-flow.md)  |
-| 8           | Analytics > Power Apps| Manage > Prodcuts > Power Apps |[Admin Analytics for Power Apps](analytics-powerapps.md)|
+| 8           | Analytics > Power Apps| Manage > Products > Power Apps |[Admin Analytics for Power Apps](analytics-powerapps.md)|
 | 9           | Analytics > Data export | Manage  > Products > Data export |[Set up Microsoft Power Platform self-service analytics to export inventory and usage data (preview)](self-service-analytics.md)    |
 | 10          | Billing > Licenses   | Licensing > Products > Power Apps | [Manage Power Apps licenses in your organization](signup-question-and-answer.md)    |
 | 11          | Billing > Billing plans      | Licensing > Billing plans | [Pay-as-you-go plan](pay-as-you-go-overview.md)  |
@@ -54,7 +59,7 @@ Most of the pages from the classic admin center are available in the new one, ei
 | 15          | Resources > Catalogs | Deployment > Catalogs |[Administer the catalog](administer-catalog.md)   |
 | 16          | Resources > Dynamics 365 apps | Manage > Products > Dynamics 365 apps | [Manage Dynamics 365 apps](manage-apps.md)  |
 | 17          | Resources > Power Pages sites | Manage > Products > Power Pages sites<br><br>**Note:** The security data of pages will be moved to Security > Products > Power Pages. | [What is Power Pages?](/power-pages/introduction)  |
-| 18          | Help + Support       | Support         | [Get Help + Support](get-help-support.md) |
+| 18          | Help + Support       | Support         | [Get Support](get-help-support.md) |
 | 19          | Data integration     | Manage > Data > Data integration  | [Integrate data into Microsoft Dataverse](data-integrator.md) |
 | 20          | Data (Preview)       | Manage > Data > Data (Preview) |  [On-premises data gateway management](onpremises-data-gateway-management.md) |
 | 21          | Policies > Data policies | Security > Settings > Data and privacy > Data policies | [Data loss prevention (DLP) policies](wp-data-loss-prevention.md)    |
@@ -67,7 +72,7 @@ Most of the pages from the classic admin center are available in the new one, ei
 
 In addition to reorganized pages based on admin tasks, we're introducing a new [*monitoring pages* experience](monitoring/monitoring-overview.md). Monitoring pages allow admins and makers to track performance statistics in their tenant, helping them identify app accessibility problems or slow-loading Power Pages sites.  
 
-These new experiences help you measure and improve the operational health of your organizational resources such as apps. They provide insights into overall operational health in a tenant or specific environments. Metrics are derived from aggregated event logs of runtime activities, with recommendations based on these logs or static analysis of resource properties. Event logs used for metric calculations are available for review and download for further analysis.
+These new experiences help you measure and improve the operational health of your organizational resources such as apps. They provide insights into overall operational health in a tenant or specific environments. Metrics are derived from aggregated event logs of runtime activities, with recommendations based on these logs or static analysis of resource properties. Event logs used for metric calculations are available for review and download for further analysis. Administrators can also set up [alerts](monitoring/alerts.md) to proactively monitor the operational health of their resources against custom thresholds and be notified when the performance of the resources dips below that threshold. 
 
 ## Watch a video about the new admin center
 

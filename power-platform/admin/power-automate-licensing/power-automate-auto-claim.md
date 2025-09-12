@@ -16,6 +16,7 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc
   - ai-seo-date:02/07/2024
+  - sfi-ga-nochange
 ---
 
 # Auto-claim policies for Power Automate licenses
