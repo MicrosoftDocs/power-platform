@@ -1,6 +1,6 @@
 ﻿---
 title: AIClassify, AIExtract, AIReply,AISummarize, AISentiment, and AITranslate functions
-description: Reference information including syntax and examples for the AIClassify, AIExtract, AIReply,AISummarize, AISentiment, and AITranslate functions.
+description: Reference information including syntax and examples for the AIClassify, AIExtract, AIReply, AISummarize, AISentiment, and AITranslate functions.
 author: paulliew
 ms.topic: reference
 ms.custom: canvas
@@ -84,35 +84,35 @@ Here's an example:
 ## Syntax
 
 **AIClassify**(_Text_, _Categories_)
-- _Text_ - Required. A text sentences. The text to classify.
+- *Text* - Required. A text sentences. The text to classify.
 - _Categories_ - Required. Single column of table of text categories.
-- For canvas apps, the return value is in the _Classification_ column.
+- Canvas apps - The return value is in the _Classification_ column.
 
 **AIExtract**(_Text_, _Entity_)
 - _Text_ - Required. A text sentences. The text to extract the data from.
 - _Entity_ - Required. The entity to extract. The name of entity to extract.
-- For canvas apps, the return value is in the _ExtractedData_ column, a table of zero or more rows of data matching the provided entity.
+- Canvas apps - The return value is in the _ExtractedData_ column, a table of zero or more rows of data matching the provided entity.
 
 **AIReply**(_Text_)
 - _Text_ - Required. A text sentence. The text to respond to.
-- For canvas apps, the return value is in the _PreparedResponse_ column. 
+- Canvas apps - The return value is in the _PreparedResponse_ column. 
 
 **AISentiment**(_Text_)
 - _Text_ - Required. The text to analyze for sentiment.
-- For canvas apps, the return value is in the _AnalyzedSentiment_ column and is "Positive," "Neutral," or "Negative".
+- Canvas apps - The return value is in the _AnalyzedSentiment_ column and is "Positive," "Neutral," or "Negative".
 
 **AISummarize**(_Text_)
 - _Text_ - Required. The text to summarize.
-- For canvas apps, the return value is in the _SummarizedText_ column.
+- Canvas apps - The return value is in the _SummarizedText_ column.
 
 **AISummarizeRecord**(_Entity_)
 - _Entity_ - Required. The Dataverse record to summarize.
-- For canvas apps, the return value is in the _SummarizedText_ column.
+- Canvas apps - The return value is in the _SummarizedText_ column.
 
 **AITranslate**(_Text_, _TargetLanguage_)
 - _Text_ - Required. The text to translate.
-- _TargetLanguage_ - The language tag to translate into such as "fr" for French.  See the [**Language** function](./function-language.md) for more details.
-- For canvas apps, the return value is in the _TranslatedText_ column.
+- _TargetLanguage_ - The language tag to translate into such as "fr" for French. See the [**Language** function](./function-language.md) for more details.
+- Canvas apps - The return value is in the _TranslatedText_ column.
 
 ## Examples
 
