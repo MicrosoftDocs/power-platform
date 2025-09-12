@@ -129,26 +129,26 @@ The **Environment routing** setting is turned off by default and must be turned 
 1. Set the `enableDefaultEnvironmentRouting` flag to **True**.
 
    ```powershell
-   tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
+   $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
    Set-TenantSettings -RequestBody $tenantSettings
    ```
    
 1. Set the `environmentRoutingAllMakers` flag to **True** to allow routing for all makers or **False** to limit routing to new makers.
 
    ```powershell
-   tenantSettings = Get-TenantSettings
-   tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingAllMakers' -Value $True -Force
+   $tenantSettings = Get-TenantSettings
+   $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingAllMakers' -Value $True -Force
    ```
 
 1. (Optional) Set the `environmentRoutingTargetEnvironmentGroupId` to the desired Environment Group ID.
 
    ```powershell
-   tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetEnvironmentGroupId' -Value "<GUID for the group that has published rules>" -Force
+   $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetEnvironmentGroupId' -Value "<GUID for the group that has published rules>" -Force
    ```
 1. (Optional) Set the `environmentRoutingTargetSecurityGroupId` to the desired Security Group.
 
    ```powershell
-   tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetSecurityGroupId' -Value "<GUID for the security group>" -Force
+   $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetSecurityGroupId' -Value "<GUID for the security group>" -Force
 
    ```
 1. Save `TenantSettings`.
@@ -158,9 +158,9 @@ The **Environment routing** setting is turned off by default and must be turned 
 
 ### Turn off environment routing using PowerShell 
 ```powershell
-tenantSettings = Get-TenantSettings  
+$tenantSettings = Get-TenantSettings  
 
-tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $False
+$tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $False
 
 Set-TenantSettings -RequestBody $tenantSettings
 ```
