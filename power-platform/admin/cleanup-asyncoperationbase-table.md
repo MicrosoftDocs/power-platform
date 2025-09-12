@@ -184,6 +184,9 @@ For synchronous workflows, we recommend enabling **Keep logs for workflow jobs t
 
 :::image type="content" source="media/bulk-deletion-keep-logs.png" alt-text="Set Workflow Log Retention to keep logs for workflow jobs that encountered errors.":::
 
+> [!NOTE]
+> The bulk deletion job may be automatically canceled if the environment is in [Administration mode](/power-platform/admin/admin-mode#set-administration-mode).
+
 ## AsyncOperation file capacity usage
 
 Historically, the entire async operation context used to be serialized directly in the AsyncOperation table [Data property](/power-apps/developer/data-platform/reference/entities/asyncoperation#BKMK_Data), leading to quick growth in size if there are asynchronous plug-in registrations on large records (such as attachment). Since early 2021, the data portion of async operations is moved to file store. As a result, async operation data size is partially counted in database capacity and partially in file capacity. This shift helps reduce the costs—since file capacity is charged at a lower rate than database capacity—and improves overall performance by enabling more efficient queries against the AsyncOperation table.
