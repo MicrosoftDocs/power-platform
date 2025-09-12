@@ -37,7 +37,7 @@ A _language tag_ can be in one of three formats:
 
 | Return value                   | Description                                                                                                                                                                                                 |
 | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **"_lg&#8209;RE_"**            | _lg_ is the two character abbreviation for the language and _RE_ is the two character abbreviation for the region. It's the most common return type. For example, "en-GB" is returned for Great Britain. |
+| **"_lg&#8209;RE_"**            | _lg_ is the two character abbreviation for the language and _RE_ is the two character abbreviation for the region. It's the most common return type. For example, "en-GB" is returned for United Kingdom. |
 | **"_lg_"**                     | _lg_ is the two character abbreviation for the language. It's the format used when Power Apps has information about the language, but doesn't have information for the specific region.                 |
 | **"_lg&#8209;scrp&#8209;RE_"** | _lg_ is the two character abbreviation for the language, _scrp_ is the four character abbreviation for the script, and _RE_ is the two character abbreviation for the region.                               |
 
@@ -62,7 +62,7 @@ It's assumed that the host operating system and/or browser are using the default
 | **Language()** | Lisbon, Portugal          | "pt-PT"                                                               |
 | **Language()** | Rio de Janeiro, Brazil    | "pt-BR"                                                               |
 | **Language()** | Atlanta, USA              | "en-US"                                                               |
-| **Language()** | Manchester, Great Britain | "en-GB"                                                               |
+| **Language()** | Manchester, United Kingdom | "en-GB"                                                               |
 | **Language()** | Paris, France             | "fr-FR"                                                               |
 | **Language()** | Roseau, Dominica          | "en"                                                                  |
 | **Language()** | Belgrade, Serbia          | "sr-cyrl-RS" or "sr-latn-RS," depending on the user's system settings |
