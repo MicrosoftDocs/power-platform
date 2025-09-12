@@ -25,9 +25,25 @@ ms.custom: sfi-image-nochange
 
 Microsoft Power Platform requires connectivity to the internet. The endpoints listed in this article should be reachable for customers using the Power Platform services.
 
-## Internet URLs to allow
 
+## Internet URLs to allow
 Ensure that you have added the required URLs to the allow list to ensure communication through firewalls and other security mechanisms. If you can't access a service or specific URLs fail to load, a proxy or firewall might be configured to prevent you from accessing server resources. Review your proxy settings and ensure that you add all the relevant URLs to the allowed list as per your service.
+
+
+## Microsoft's Consolidated Domain Initiative
+> [Note!]
+>
+>In response to customer feedback and to streamline endpoint management, Microsoft has initiated the process of consolidating Microsoft apps and services into a select group of dedicated, secured, and purpose-managed domains within the .microsoft top level domain (TLD).
+>
+>To avoid connectivity issues for users, ensure that the following essential domains are included in your allowlist and that connectivity to these domains isn't blocked.
+
+
+|ID| Category| Domain Name | Purpose | Ports |
+|--|--|--|--|--|
+|184|Required| *.cloud.microsoft.com|Dedicated to authenticated user facing Microsoft SaaS product experiences.|TCP: 443 UDP: 443|
+|184|Required|*.static.microsoft.com|	Dedicated to static (not customer generated) content hosted on CDNs.| TCP: 443 UDP: 443|
+|184|Required|*.usercontent.microsoft.com|Content used in Microsoft experiences that requires domain isolation from applications.| TCP: 443 UDP: 443|
+
 
 ### URLs for Power Platform services
 
