@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/11/2025
+ms.date: 09/12/2025
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -30,7 +30,7 @@ Power Platform uses the Virtual Network and subnets that you delegate to make ou
 
 In a Virtual Network, you have full control over the outbound traffic from Power Platform. The traffic is subject to network policies applied by your network administrator. The following diagram shows how resources inside your network interact with a Virtual Network.
 
-:::image type="content" source="media/vnet-support/vnet-support-traffic.png" alt-text="Screenshot that shows how resources inside an enterprise network interact with a Virtual Network." lightbox="media/vnet-support/vnet-support-traffic.png":::
+:::image type="content" source="media/vnet-support/vnet-support-traffic.png" alt-text="Screenshot of how resources inside an enterprise network interact with a Virtual Network." lightbox="media/vnet-support/vnet-support-traffic.png":::
 
 ## Benefits of Virtual Network support
 
