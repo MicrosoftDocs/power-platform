@@ -65,6 +65,12 @@ You usually have multiple environments of different types in your tenant. This c
 
 To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md). For more information about managed environments, go to [Managed Environments](managed-environment-overview.md).
 
+## Enable VNet Pairing for Self-Service Disaster Recovery in Dynamics 365 
+
+If your Dynamics 365 environment is deployed within a **Virtual Network (VNet)** and you plan to use **Self-Service Disaster Recovery (SSDR)**, you must configure a **VNet pair**. This pairing ensures that your primary and secondary environments can communicate securely during failover and failback operations. Without a VNet pair, disaster recovery operations will fail because network connectivity between regions cannot be established.
+
+For setup instructions, see [Virtual Network support setup](vnet-support-setup-configure.md).
+
 ## Turn on self-service disaster recovery
 
 This action sets up resources and starts replicating data between the primary and secondary locations. The process can take up to 48 hours to finish. Admins get a notification when the process is done.
@@ -116,6 +122,10 @@ We recommend doing drills on a copy of a production environment, since this invo
 Choose this option during an emergency, when the primary region has an outage and you can't use environments or data. If you select this option, the environment fails and doesn't copy any more data except what's already replicated before the outage.
 
 When you start an emergency response, you see the amount of data loss shown in time. Compare this to your recovery point objective to check if it's acceptable before you continue. The environment stays in a Running state until disaster recovery finishes and normal operation resumes from the secondary region.
+
+> [!Note]
+> Database backups are **not replicated to secondary regions** for scenarios supported by **Self-Service Disaster Recovery (SSDR)** unless the customer has explicitly enabled SSDR. Without SSDR, backups remain in the primary region only, which means cross-region failover cannot be guaranteed. To ensure business continuity and compliance with your disaster recovery strategy, configure SSDR for your environment. 
+
 
 ## Switch back to primary region
 
