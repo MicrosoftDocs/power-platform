@@ -3,7 +3,7 @@ title: Set up virtual network support for Power Platform
 description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/11/2025
+ms.date: 09/12/2025
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -42,7 +42,7 @@ Azure virtual network support for Power Platform lets you integrate Power Platfo
 
 The following diagram shows the functions of the roles in the setup process for virtual network support in a Power Platform environment.
 
-:::image type="content" source="media/vnet-support/vnet-support-configurations.png" alt-text="Diagram that shows the configurations for virtual network support in a Power Platform environment." lightbox="media/vnet-support/vnet-support-configurations.png":::
+:::image type="content" source="media/vnet-support/vnet-support-configurations.png" alt-text="Screenshot of the configurations for virtual network support in a Power Platform environment." lightbox="media/vnet-support/vnet-support-configurations.png":::
 
 ## Set up Virtual Network support
 
@@ -77,7 +77,7 @@ The following diagram shows the functions of the roles in the setup process for 
 
 1. After you have created paired virtual networks, you can view them in your Azure resource group, as shown in the following image.
 
-    :::image type="content" source="media/virtual-networks.png" alt-text="Virtual networks in your Azure resource group." lightbox="media/virtual-networks.png":::
+    :::image type="content" source="media/virtual-networks.png" alt-text="Screenshot of virtual networks in your Azure resource group." lightbox="media/virtual-networks.png":::
 
 ## Create the enterprise policy
 
@@ -189,7 +189,7 @@ The following diagram shows the functions of the roles in the setup process for 
 
 1. Select **Review + create** to finalize the enterprise policy.
 
-    :::image type="content" source="media/virtual-networks-json-script.png" alt-text="Select **Review and create** to finalize the enterprise policy." lightbox="media/virtual-networks-json-script.png":::
+    :::image type="content" source="media/virtual-networks-json-script.png" alt-text="Screenshot of selecting Review and create to finalize the enterprise policy." lightbox="media/virtual-networks-json-script.png":::
 
 ### Option 2: Use PowerShell
 1. Run the [CreateSubnetInjectionEnterprisePolicy.ps1 script](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/README.md#2-create-subnet-injection-enterprise-policy), using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions.
