@@ -90,7 +90,7 @@ The Power Apps Maker Activity report provides insights into tenant and environme
 
 ## Power Apps - Inventory report
 
-The Power Apps Inventory report offers a complete catalog of apps distributed across the tenant. This view includes the **Last opened** filter that allows admins to identify stale and orphaned apps. The report answers questions such as:
+The Power Apps Inventory report offers a complete catalog of apps distributed across the tenant. This view includes the **Last opened** filter that allows admins to identify stale apps. The report answers questions such as:
 
 - What is the total number of model-driven and canvas apps across the tenant or environments? 
 - Which apps depend on specific connectors?
