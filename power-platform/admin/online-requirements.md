@@ -36,9 +36,9 @@ Add the required URLs to the allow list to ensure communication through firewall
 
 |ID| Category| Domain name | Purpose | Ports |
 |--|--|--|--|--|
-|184|Required| *.cloud.microsoft.com|Dedicated to authenticated user facing Microsoft SaaS product experiences.|TCP: 443 UDP: 443|
-|184|Required|*.static.microsoft.com|	Dedicated to static (not customer generated) content hosted on CDNs.| TCP: 443 UDP: 443|
-|184|Required|*.usercontent.microsoft.com|Content used in Microsoft experiences that requires domain isolation from applications.| TCP: 443 UDP: 443|
+|184|Required| *.cloud.microsoft.com|Dedicated to authenticated user facing Microsoft software-as-a-service product experiences.|TCP: 443<br>UDP: 443|
+|184|Required|*.static.microsoft.com|	Dedicated to static (not customer-generated) content hosted on content delivery networks (CDNs).| TCP: 443<br>UDP: 443|
+|184|Required|*.usercontent.microsoft.com|Content used in Microsoft experiences that requires domain isolation from applications.| TCP: 443<br>UDP: 443|
 
 ### URLs for Power Platform services
 
