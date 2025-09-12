@@ -19,7 +19,7 @@ This article includes answers to commonly asked questions about Git integration 
 
 ## What is source code integration in Power Platform?
 
-Git integration provides an easier way of syncing Power Platform customizatinos (solutions and their objects) with a Git repository. The solutions and their objects are stored in human readable formats in the repository, which allows you to easily search, track changes, and manage your solutions in a source control system.
+Git integration provides an easier way of syncing Power Platform customizations (solutions and their objects) with a Git repository. The solutions and their objects are stored in human readable formats in the repository, which allows you to easily search, track changes, and manage your solutions in a source control system.
 
 ## What's the difference between Git integration and pre-existing Developer tools?
 
