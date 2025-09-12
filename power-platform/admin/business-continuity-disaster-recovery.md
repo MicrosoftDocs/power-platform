@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: rashmansur
-ms.date: 09/03/2025
+ms.date: 09/12/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -11,6 +11,7 @@ ms.custom: NewPPAC
 search.audienceType: 
  - admin
 contributors:
+ - isaacwinoto
  - himakurada
  - jasunil
 ---
@@ -65,6 +66,12 @@ You usually have multiple environments of different types in your tenant. This c
 
 To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md). For more information about managed environments, go to [Managed Environments](managed-environment-overview.md).
 
+## Allow Virtual Network pairing for self-service disaster recovery in Dynamics 365 
+
+If your Dynamics 365 environment is deployed within a Virtual Network and you plan to use self-service disaster recovery, you must configure a **Virtual Network pair**. This pairing ensures that your primary and secondary environments can communicate securely during failover and failback operations. Without a Virtual Network pair, disaster recovery operations fail because network connectivity between regions can't be established.
+
+For setup instructions, go to [Set up virtual network support for Power Platform](vnet-support-setup-configure.md).
+
 ## Turn on self-service disaster recovery
 
 This action sets up resources and starts replicating data between the primary and secondary locations. The process can take up to 48 hours to finish. Admins get a notification when the process is done.
@@ -116,6 +123,9 @@ We recommend doing drills on a copy of a production environment, since this invo
 Choose this option during an emergency, when the primary region has an outage and you can't use environments or data. If you select this option, the environment fails and doesn't copy any more data except what's already replicated before the outage.
 
 When you start an emergency response, you see the amount of data loss shown in time. Compare this to your recovery point objective to check if it's acceptable before you continue. The environment stays in a Running state until disaster recovery finishes and normal operation resumes from the secondary region.
+
+> [!Note]
+> Database backups are **not replicated to secondary regions** for scenarios supported by self-service disaster recovery, unless the customer has explicitly allowed self-service disaster recovery. Without self-service disaster recovery, backups remain in the primary region only, which means cross-region failover can't be guaranteed. To ensure business continuity and compliance with your disaster recovery strategy, configure self-service disaster recovery for your environment. 
 
 ## Switch back to primary region
 
