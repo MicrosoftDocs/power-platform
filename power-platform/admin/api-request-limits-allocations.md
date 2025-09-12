@@ -12,7 +12,7 @@ contributors:
   - EllenWehrle 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/10/2025
+ms.date: 09/12/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: angieandrews
@@ -134,15 +134,6 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
 1. On the **Licensing** pane, select **Capacity add-ons** to view the *Capacity* page.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, expand *Resources*.
-1. Select **Capacity** to view the *Capacity* page.
-
----
-
 1. On the **Summary** tab, scroll down to the *Add-ons* section and select **Download reports**.
 
    :::image type="content" source="media/api-request-limits-allocations/capacity-download-reports.png" alt-text="Screenshot that shows the Capacity page in the Power Platform admin center and highlights the link to download reports." lightbox="media/api-request-limits-allocations/capacity-download-reports.png":::
@@ -157,6 +148,28 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 
 1. Select **Submit**.
 1. Once the report is ready, select **Download** to download the report as an Excel CSV file.
+
+### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, expand *Resources*.
+1. Select **Capacity** to view the *Capacity* page.
+1. On the **Summary** tab, scroll down to the *Add-ons* section and select **Download reports**.
+
+   :::image type="content" source="media/api-request-limits-allocations/capacity-download-reports.png" alt-text="Screenshot that shows the Capacity page in the Power Platform admin center and highlights the link to download reports." lightbox="media/api-request-limits-allocations/capacity-download-reports.png":::
+
+1. On the *Downloadable Reports* page, select **New** from the command bar.
+1. Expand the **Choose a report** box and select **Microsoft Power Platform requests**.
+1. Select the required scope of the report:
+
+    - Licensed User
+    - Non-licensed User
+    - Per Flow Licensed Flows
+
+1. Select **Submit**.
+1. Once the report is ready, select **Download** to download the report as an Excel CSV file.
+
+---
 
 > [!NOTE]
 > These reports are currently in preview. There are two limitations with the Licensed User preview report.
@@ -251,6 +264,7 @@ Power Automate request limits per license:
 Learn more about [Power Automate licenses](/power-platform/admin/power-automate-licensing/types).
 
 > [!NOTE]
+>
 > - The Power Automate Process licenses can be stacked on a cloud flow to increase its PRR limit
 > - [FAQ on Power Platform Request within Power Automate](/power-platform/admin/power-automate-licensing/faqs#power-platform-requests-questions)
 
