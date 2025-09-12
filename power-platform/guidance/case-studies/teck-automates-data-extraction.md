@@ -5,7 +5,7 @@ description: Learn how Teck automated extraction of customs data using Power Aut
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.subservice: guidance
+ms.subservice: case-study
 ms.topic: overview
 ms.date: 05/13/2025
 ---
