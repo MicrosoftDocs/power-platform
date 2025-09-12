@@ -391,14 +391,11 @@ The following Office 365 licenses include Power Automate capabilities:
 - Office 365 E1
 - Office 365 E3
 - Office 365 E5
+- Office 365 F1
 - Office 365 F3
 - Office 365 Business Basic
 - Office 365 Business Standard
 - Office 365 Business Premium
-- Office 365 F1
-- Office 365 F3
-- Office 365 E3
-- Office 365 E5
 - Windows 10 Pro
 - Windows Enterprise E3
 - Windows Enterprise E5
