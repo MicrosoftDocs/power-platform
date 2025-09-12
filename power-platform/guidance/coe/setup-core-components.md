@@ -173,7 +173,12 @@ If your CoE Starter Kit is installed in a *GCC High* or *DoD* tenant, update the
 
 1. **Save** this flow.
 
-## Set up Audit Logs solution
+## Set up Audit Logs solution (deprecated)
+
+> [!IMPORTANT]
+> Using the dedicated **Center of Excellence - Audit Log** solution and the Office 365 Management custom connector to collect audit log events are deprecated. The solution and custom connector will be removed from the CoE Starter Kit in August 2023.
+> 
+> We have a new flow that collects audit log events, which is part of the **Center of Excellence - Core Components** solution. This new flow uses an HTTP connector. Learn more: [Collect audit logs using an HTTP action](setup-auditlog-http.md)
 
 > [!NOTE]
 > Set up the Audit Log solution only if you chose [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
