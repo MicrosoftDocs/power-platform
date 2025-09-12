@@ -39,11 +39,11 @@ If you pass a single string, the return value is the converted version of that s
 
 ## Syntax
 
-**Lower**( _String_ )<br>**Upper**( _String_ )<br>**Proper**( _String_ )
+**Lower**(_String_)<br>**Upper**(_String_)<br>**Proper**(_String_)
 
 - _String_ - Required. The string to convert.
 
-**Lower**( _SingleColumnTable_ )<br>**Upper**( _SingleColumnTable_ )<br>**Proper**( _SingleColumnTable_ )
+**Lower**(_SingleColumnTable_)<br>**Upper**(_SingleColumnTable_)<br>**Proper**(_SingleColumnTable_)
 
 - _SingleColumnTable_ - Required. A single-column table of strings to convert.
 
@@ -72,9 +72,9 @@ Each formula returns a single-column table that contains the converted strings.
 
 | Formula | Description | Result |
 | --- | --- | --- |
-| **Lower( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** | Converts any letter that's lowercase to uppercase. | A single-column table with a `Value` column containing the following values: "123 main st ne", "789 sw 39th #3b" |
-| **Upper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** | Converts any letter that's lowercase to uppercase. | A single-column table with a `Value` column containing the following values: "123 MAIN ST NE", "789 SW 39TH #3B" |
-| **Proper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** | Converts any first letter of a word that's lowercase to uppercase, and converts any other letter that's uppercase to lowercase. | A single-column table with a `Value` column containing the following values: "123 Main St Ne", "789 Sw 39th #3b" |
+| **Lower(ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;))** | Converts any letter that's lowercase to uppercase. | A single-column table with a `Value` column containing the following values: "123 main st ne", "789 sw 39th #3b" |
+| **Upper(ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;))** | Converts any letter that's lowercase to uppercase. | A single-column table with a `Value` column containing the following values: "123 MAIN ST NE", "789 SW 39TH #3B" |
+| **Proper(ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;))** | Converts any first letter of a word that's lowercase to uppercase, and converts any other letter that's uppercase to lowercase. | A single-column table with a `Value` column containing the following values: "123 Main St Ne", "789 Sw 39th #3b" |
 
 ### Step-by-step example
 

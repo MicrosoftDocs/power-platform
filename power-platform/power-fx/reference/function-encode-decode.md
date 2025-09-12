@@ -41,15 +41,15 @@ The return value from these functions is the encoded or decoded string. This fun
 
 ## Syntax
 
-**EncodeUrl**( _String_ )
+**EncodeUrl**(_String_)
 
 - _String_ - Required. URL to be encoded.
 
-**EncodeHTML**( _String_ )
+**EncodeHTML**(_String_)
 
 - _String_ - Required. HTML to be encoded.
 
-**PlainText**( _String_ )
+**PlainText**(_String_)
 
 - _String_ - Required. String from which HTML and XML tags are stripped.
 

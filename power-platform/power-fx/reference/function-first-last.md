@@ -42,20 +42,20 @@ The **Index** function returns a record of a table based on its ordered position
 
 [!INCLUDE [delegation-no](../../includes/delegation-no.md)]
 
-For example, when used with a data source containing a large table with 1 million records, **Last** will be subject to the non-delegation limit and will not return the last record of the entire data source. Likewise, using **Index** to request a record in the middle of 1 million records will result in an error because the index is out of range based on the non-delegation limit.
+For example, when used with a data source containing a large table with 1 million records, **Last** is subject to the non-delegation limit and won't return the last record of the entire data source. Likewise, using **Index** to request a record in the middle of 1 million records results in an error because the index is out of range based on the non-delegation limit.
 
 ## Syntax
 
-**First**( _Table_ )<br>**Last**( _Table_ )
+**First**(_Table_)<br>**Last**(_Table_)
 
 - _Table_ - Required. Table to operate on.
 
-**FirstN**( _Table_ [, *NumberOfRecords* ] )<br>**LastN**( _Table_ [, *NumberOfRecords* ] )
+**FirstN**(_Table_ [, *NumberOfRecords* ])<br>**LastN**(_Table_ [, *NumberOfRecords* ])
 
 - _Table_ - Required. Table to operate on.
 - _NumberOfRecords_ - Optional. Number of records to return. If you don't specify this argument, the function returns one record.
 
-**Index**( _Table_, _RecordIndex_ )
+**Index**(_Table_, _RecordIndex_)
 
 - _Table_ - Required. Table to operate on.
 - _RecordIndex_ - Required. The index of the record to return. Record numbering begins with 1.

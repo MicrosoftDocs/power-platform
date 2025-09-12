@@ -34,7 +34,7 @@ Dataverse provides a variety of ready-to-use AI functions that are preconfigured
 
 - **AIExtract** extracts specified entities such as registration numbers, phone numbers, or names of people.
   > [!NOTE]
-  > The AIExtract function is still in development and might not operate properly. We will remove this note when it is ready to use.
+  > The AIExtract function is still in development and might not operate properly. We'll remove this note when it's ready to use.
 - **AIReply** drafts a reply to the message that you provide. For example, this function drafts a reply to a customer's review of a product.
 - **AISentiment** detects the sentiment of the text that you provide. For example, this function detects whether the sentiment of a customer review is positive, negative, or neutral.
 - **AISummarize** summarizes the text that you provide. For example, this function summarizes an email message or text from a document.
@@ -57,7 +57,7 @@ You can call these functions from canvas apps. However, it's a little more compl
 1. The AI functions are functions in the **Environment** namespace. Where this documentation describes calling **AISummarize( ... )**, for example, you need to use **Environment.AISummarize( ... )**.
 1. Arguments to the function must be named columns in a record, passed as the only argument. The names of the columns are given in the **Syntax** section matching the names of the parameters.
 1. The return value from these functions is always a record containing one column. The name of the column is listed in the *Syntax* section.
-1. These functions are [behavior functions](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) and cannot be used in Canvas data flow, for example as the input to the **Text** property of a **Text** control. Use the [**Set**](function-set.md) function to place the result in a global variable, and then use that value elsewhere in your app.
+1. These functions are [behavior functions](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) and can't be used in Canvas data flow, for example as the input to the **Text** property of a **Text** control. Use the [**Set**](function-set.md) function to place the result in a global variable, and then use that value elsewhere in your app.
 
 Here's an example:
 
@@ -83,29 +83,29 @@ Here's an example:
 
 ## Syntax
 
-**AIClassify**( _Text_, _Categories_ )
+**AIClassify**(_Text_, _Categories_)
 - _Text_ - Required. A text sentences. The text to classify.
 - _Categories_ - Required. Single column of table of text categories.
 - For canvas apps, the return value is in the _Classification_ column.
 
-**AIExtract**( _Text_, _Entity_ )
+**AIExtract**(_Text_, _Entity_)
 - _Text_ - Required. A text sentences. The text to extract the data from.
 - _Entity_ - Required. The entity to extract. The name of entity to extract.
 - For canvas apps, the return value is in the _ExtractedData_ column, a table of zero or more rows of data matching the provided entity.
 
-**AIReply**( _Text_ )
+**AIReply**(_Text_)
 - _Text_ - Required. A text sentence. The text to respond to.
 - For canvas apps, the return value is in the _PreparedResponse_ column. 
 
-**AISentiment**( _Text_ )
+**AISentiment**(_Text_)
 - _Text_ - Required. The text to analyze for sentiment.
 - For canvas apps, the return value is in the _AnalyzedSentiment_ column and is "Positive", "Neutral", or "Negative". 
 
-**AISummarize**( _Text_ )
+**AISummarize**(_Text_)
 - _Text_ - Required. The text to summarize.
 - For canvas apps, the return value is in the _SummarizedText_ column.
 
-**AISummarizeRecord**( _Entity_ )
+**AISummarizeRecord**(_Entity_)
 - _Entity_ - Required. The Dataverse record to summarize.
 - For canvas apps, the return value is in the _SummarizedText_ column.
 

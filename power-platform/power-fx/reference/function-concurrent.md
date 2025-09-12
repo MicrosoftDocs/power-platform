@@ -28,7 +28,7 @@ Evaluates multiple formulas concurrently with one another.
 
 ## Description
 
-The **Concurrent** function allows multiple formulas specified within the same property to be evaluated at the same time if they have connector or Dataverse calls. Normally, multiple formulas are evaluated by chaining them together with the [**;**](operators.md) (semi-colon) operator, which evaluates each formula sequentially. With the Concurrent function, the app will evaluate all formulas within a property concurrently even after using the ; operator. This concurrency will help users wait less for the same result.  
+The **Concurrent** function allows multiple formulas specified within the same property to be evaluated at the same time if they have connector or Dataverse calls. Normally, multiple formulas are evaluated by chaining them together with the [**;**](operators.md) (semi-colon) operator, which evaluates each formula sequentially. With the Concurrent function, the app will evaluate all formulas within a property concurrently even after using the **;** operator. This concurrency will help users wait less for the same result.  
 
 In the [**OnStart**](/power-apps/maker/canvas-apps/controls/control-screen) property of your app, use **Concurrent** to improve performance when the app loads data. When data calls don't start until the previous calls finish, the app must wait for the sum of all request times. If data calls start at the same time, the app needs to wait only for the longest request time. Web browsers often improve performance by performing network calls concurrently.
 
@@ -44,7 +44,7 @@ You can use **Concurrent** only in [behavior formulas](/power-apps/maker/canvas-
 
 ## Syntax
 
-**Concurrent**( _Formula1_, _Formula2_ [, ...] )
+**Concurrent**(_Formula1_, _Formula2_ [, ...])
 
 - _Formula(s)_ – Required. Formulas to evaluate concurrently. You must supply at least two formulas.
 
@@ -73,7 +73,7 @@ You can use **Concurrent** only in [behavior formulas](/power-apps/maker/canvas-
 
 5. While holding down the Alt key, select the button, and then watch the network traffic.
 
-   The tools show four requests performed in series, similar to this example. Actual times have been removed as they will vary wildly. The graph shows that each call starts after the last has finished:
+   The tools show four requests performed in series, similar to this example. Actual times have been removed as they'll vary wildly. The graph shows that each call starts after the last has finished:
 
    ![Time graph of four network requests, each one starting after the last finishes, covering the entire span of time.](media/function-concurrent/chained-network.png)
 
@@ -100,7 +100,7 @@ You can use **Concurrent** only in [behavior formulas](/power-apps/maker/canvas-
 
 10. While holding down the Alt key, select the second button, and then watch the network traffic.
 
-    The tools show four requests performed concurrently, similar to this example. Again, actual times have been removed as they will vary wildly. The graph shows that all the calls start at about the same time and do not wait for the previous one to finish:
+    The tools show four requests performed concurrently, similar to this example. Again, actual times have been removed as they'll vary wildly. The graph shows that all the calls start at about the same time and don't wait for the previous one to finish:
 
     ![Time graph of four network requests, all four starting together, covering about half of the span of time.](media/function-concurrent/concurrent-network.png)
 

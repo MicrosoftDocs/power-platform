@@ -48,15 +48,15 @@ You can supply the values for these functions as:
 
 These functions operate on numeric values only. Other types of values, such as strings or records, are ignored. Use the **[Value](function-value.md)** function to convert a string into a number.
 
-The **Average**, **Max**, **Min**, and **Sum** functions can be delegated when used with a [data source that supports delegation for these functions](/power-apps/maker/canvas-apps/delegation-overview). However, **StdevP** and **VarP** can't be delegated for any data sources. If delegation is not supported, only the first portion of the data will be retrieved and then the function applied locally. The result may not represent the complete story. A delegation warning will appear at authoring time to remind you of this limitation and to suggest switching to delegable alternatives where possible. For more information, see the [delegation overview](/power-apps/maker/canvas-apps/delegation-overview).
+The **Average**, **Max**, **Min**, and **Sum** functions can be delegated when used with a [data source that supports delegation for these functions](/power-apps/maker/canvas-apps/delegation-overview). However, **StdevP** and **VarP** can't be delegated for any data sources. If delegation isn't supported, only the first portion of the data will be retrieved and then the function applied locally. The result may not represent the complete story. A delegation warning will appear at authoring time to remind you of this limitation and to suggest switching to delegable alternatives where possible. For more information, see the [delegation overview](/power-apps/maker/canvas-apps/delegation-overview).
 
 ## Syntax
 
-**Average**( _NumericalFormula1_, [ *NumericalFormula2*, ... ] )<br>**Max**( _NumericalFormula1_, [ *NumericalFormula2*, ... ] )<br>**Min**( _NumericalFormula1_, [ *NumericalFormula2*, ... ] )<br>**Sum**( _NumericalFormula1_, [ *NumericalFormula2*, ... ] )<br>**StdevP**( _NumericalFormula1_, [ *NumericalFormula2*, ... ] )<br>**VarP**( _NumericalFormula1_, [ *NumericalFormula2*, ... ] )
+**Average**(_NumericalFormula1_, [ *NumericalFormula2*, ... ])<br>**Max**(_NumericalFormula1_, [ *NumericalFormula2*, ... ])<br>**Min**(_NumericalFormula1_, [ *NumericalFormula2*, ... ])<br>**Sum**(_NumericalFormula1_, [ *NumericalFormula2*, ... ])<br>**StdevP**(_NumericalFormula1_, [ *NumericalFormula2*, ... ])<br>**VarP**(_NumericalFormula1_, [ *NumericalFormula2*, ... ])
 
 - _NumericalFormula(s)_ - Required. Numeric values to operate on.
 
-**Average**( _Table_, _NumericalFormula_ )<br>**Max**( _Table_, _NumericalFormula_ )<br>**Min**( _Table_, _NumericalFormula_ )<br>**Sum**( _Table_, _NumericalFormula_ )<br>**StdevP**( _Table_, _NumericalFormula_ )<br>**VarP**( _Table_, _NumericalFormula_ )
+**Average**(_Table_, _NumericalFormula_)<br>**Max**(_Table_, _NumericalFormula_)<br>**Min**(_Table_, _NumericalFormula_)<br>**Sum**(_Table_, _NumericalFormula_)<br>**StdevP**(_Table_, _NumericalFormula_)<br>**VarP**(_Table_, _NumericalFormula_)
 
 - _Table_ - Required. Table to operate on.
 - _NumericalFormula_ - Required. Formula to evaluate for each record. The result of this formula is used for the aggregation. You can use columns of the table in the formula.

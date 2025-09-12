@@ -37,9 +37,9 @@ Use the [**Sequence** function](function-sequence.md) with the **ForAll** functi
 
 The result of each formula evaluation is returned in a table, in the same order as the input table.
 
-If the result of the formula is a single value, the resulting table will be a single-column table. If the result of the formula is a record, the resulting table contains records with the same columns as the result record.
+If the result of the formula is a single value, the resulting table is a single-column table. If the result of the formula is a record, the resulting table contains records with the same columns as the result record.
 
-If the result of the formula is a _blank_ value, then there is no record in the result table for that input record. In this case, there will be fewer records in the result table than the source table.
+If the result of the formula is a _blank_ value, then there is no record in the result table for that input record. In this case, there is fewer records in the result table than the source table.
 
 ### Taking action
 
@@ -49,7 +49,7 @@ When writing your formula, keep in mind that records can be processed in any ord
 
 Take care to avoid ordering dependencies. For this reason, you can't use the **[UpdateContext](function-updatecontext.md)**, **[Clear](function-clear-collect-clearcollect.md)**, and **[ClearCollect](function-clear-collect-clearcollect.md)** functions within a **ForAll** function because they could easily be used to hold variables that would be susceptible to this effect. You can use **[Collect](function-clear-collect-clearcollect.md)**, but the order in which records are added is undefined.
 
-Several functions that modify data sources, including **Collect**, **Remove**, and **Update**, return the changed data source as their return value. These return values can be large and consume significant resources if returned for every record of the **ForAll** table. You may also find that these return values are not what you expect because **ForAll** can operate in parallel and may separate the side effects of these functions from obtaining their result. If the return value from **ForAll** is not used, which is often the case with data modification functions, then the return value will not be created and there are no resource or order concerns. But if you are using the result of a **ForAll** and one of the functions that returns a data source, think carefully about how you structure the result and try it out first on small data sets.
+Several functions that modify data sources, including **Collect**, **Remove**, and **Update**, return the changed data source as their return value. These return values can be large and consume significant resources if returned for every record of the **ForAll** table. You may also find that these return values are not what you expect because **ForAll** can operate in parallel and may separate the side effects of these functions from obtaining their result. If the return value from **ForAll** is not used, which is often the case with data modification functions, then the return value won't be created and there are no resource or order concerns. But if you are using the result of a **ForAll** and one of the functions that returns a data source, think carefully about how you structure the result and try it out first on small data sets.
 
 ### Alternatives
 
@@ -99,8 +99,8 @@ This example also uses a [Microsoft Translator](/power-apps/maker/canvas-apps/co
 
 | Formula                                                              | Description                                                                                                                   | Result                                                              |
 | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| **ForAll(Expressions, MicrosoftTranslator.Translate( Value, "es"))** | For all the records in the Expressions table, translate the contents of the **Value** column into Spanish (abbreviated "es"). | ![Example with value "es."](media/function-forall/translate-es.png) |
-| **ForAll(Expressions, MicrosoftTranslator.Translate( Value, "fr"))** | For all the records in the Expressions table, translate the contents of the **Value** column into French (abbreviated "fr").  | ![Example with value "fr."](media/function-forall/translate-fr.png) |
+| **ForAll(Expressions, MicrosoftTranslator.Translate(Value, "es"))** | For all the records in the Expressions table, translate the contents of the **Value** column into Spanish (abbreviated "es"). | ![Example with value "es."](media/function-forall/translate-es.png) |
+| **ForAll(Expressions, MicrosoftTranslator.Translate(Value, "fr"))** | For all the records in the Expressions table, translate the contents of the **Value** column into French (abbreviated "fr").  | ![Example with value "fr."](media/function-forall/translate-fr.png) |
 
 ### Copying a table
 
@@ -155,7 +155,7 @@ ShowColumns(
 
 A [record scope](/power-apps/maker/canvas-apps/working-with-tables#record-scope) is created by the **Filter** and **AddColumns** functions to perform the comparison and subtraction operations, respectively, with the **'Quantity Requested'** and **'Quantity Available'** fields of each record.
 
-In this example, the **Filter** function can be delegated. This is important, as it can find all the products that meet the criteria, even if that is only a few records out of a table of millions. At this time, **ShowColumns** and **AddColumns** cannot be delegated, so the actual number of products that need to be ordered will be limited. If you know the size of this result will always be relatively small, this approach is fine.
+In this example, the **Filter** function can be delegated. This is important, as it can find all the products that meet the criteria, even if that is only a few records out of a table of millions. At this time, **ShowColumns** and **AddColumns** cannot be delegated, so the actual number of products that need to be ordered is limited. If you know the size of this result is always be relatively small, this approach is fine.
 
 And because we didn't make a copy, there is no additional copy of the information to manage or fall out of date.
 
@@ -176,7 +176,7 @@ ForAll( Products,
 
 This formula may be simpler for some people to read and write.
 
-No part of the **ForAll** is delegable. Only the first portion of the **Products** table will be evaluated, which could be a problem if this table is large. Because **Filter** could be delegated in the previous example, it could work better with large data sets.
+No part of the **ForAll** is delegable. Only the first portion of the **Products** table is evaluated, which could be a problem if this table is large. Because **Filter** could be delegated in the previous example, it could work better with large data sets.
 
 #### Collect the result
 
@@ -230,9 +230,9 @@ ForAll( Products,
 )
 ```
 
-Again, the **ForAll** function can't be delegated at this time. If our **Products** table is large, **ForAll** will look at the first set of records only and we may miss some products that need to be ordered. But for tables that we know will remain small, this approach is fine.
+Again, the **ForAll** function can't be delegated at this time. If our **Products** table is large, **ForAll** will look at the first set of records only and we may miss some products that need to be ordered. But for tables that we know is remain small, this approach is fine.
 
-Note that we are not capturing the result of the **ForAll**. The **Collect** function calls made from within it will return the **NewOrder** data source for all the records, which could add up to numerous data if we were capturing it.
+Note that we aren't capturing the result of the **ForAll**. The **Collect** function calls made from within it returns the **NewOrder** data source for all the records, which could add up to numerous data if we were capturing it.
 
 ### Map table in a component
 

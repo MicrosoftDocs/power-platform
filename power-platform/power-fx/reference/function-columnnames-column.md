@@ -29,11 +29,11 @@ The Column function returns the value of a property from a [dynamic record](../u
 The ColumnNames and Column functions return errors if the [dynamic value](../untyped-object.md) doesn't represent a record (that is, if it represents a table or a scalar or primitive value).
 
 ## Syntax
-**ColumnNames**( *DynamicRecord* )
+**ColumnNames**(*DynamicRecord*)
 
 * *DynamicRecord* – Required. A [dynamic value](../untyped-object.md) that represents a record.
 
-**Column**( *DynamicRecord*, *ColumnName* )
+**Column**(*DynamicRecord*, *ColumnName*)
 
 * *DynamicRecord* – Required. A [dynamic value](../untyped-object.md) that represents a record.
 * *ColumnName* - Required. The name of the column to be retrieved from the given record.
@@ -46,7 +46,7 @@ Given the following JSON string in a variable named `JsonString`
 { "name": "Seattle", "population": 737000 }
 ```
 
-1. The following formula returns a single-column table with a `Value` column containing the following values: "name", "population":
+1. The following formula returns a single-column table with a `Value` column containing the following values: "name," "population":
     ```power-fx
     ColumnNames( ParseJSON( JsonString ) )
     ```

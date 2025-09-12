@@ -23,26 +23,26 @@ Convert between hexadecimal text strings and numbers.
 
 ## Description
 
-Use the **Dec2Hex** function to convert a number to a hexadecimal text string.  **Dec2Hex** emits the characters `0` through `9` and upper case characters `A` through `F`; use the [**Lower**](function-lower-upper-proper.md) function to convert the result to lower case if desired.  **Dec2Hex** truncates the input number to a whole number as if the [**Trunc**](function-round.md) function has been applied first.  Use *Places* to pad a positive number with leading `0`s (zeros) and limit the length of the output; *Places* is ignored if the input is negative.
+Use the **Dec2Hex** function to convert a number to a hexadecimal text string. **Dec2Hex** emits the characters `0` through `9` and upper case characters `A` through `F`; use the [**Lower**](function-lower-upper-proper.md) function to convert the result to lower case if desired. **Dec2Hex** truncates the input number to a whole number as if the [**Trunc**](function-round.md) function has been applied first. Use *Places* to pad a positive number with leading `0`s (zeros) and limit the length of the output; *Places* is ignored if the input is negative.
 
-Use the **Hex2Dec** function to convert a text string containing hexadecimal digits (`0` through `9` and `A` through `F`) to a number.  Upper and lower case characters are accepted.  No more than 10 hexadecimal characters can be passed to **Hex2Dec**.
+Use the **Hex2Dec** function to convert a text string containing hexadecimal digits (`0` through `9` and `A` through `F`) to a number. Upper and lower case characters are accepted. No more than 10 hexadecimal characters can be passed to **Hex2Dec**.
 
 Both these functions work with a 40 bit, two's-complement, whole number. The range of accepted values for both functions is hexadecimal 8000000000 or decimal -549755813888 to hexadecimal 7FFFFFFFFF or decimal 549755813887.
 
 If you pass a single number or text string to these functions, the return value is a single result.  If you pass a single-column [table](/power-apps/maker/canvas-apps/working-with-tables) the return value is a single-column table of results, one result for each record in the argument's table. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.  
 
-If the input value is out of range or includes invalid hexadecimal characters, an **ErrorKind.Numeric** error is returned.  If the input was a single column table, the error is embedded in the output table.
+If the input value is out of range or includes invalid hexadecimal characters, an **ErrorKind.Numeric** error is returned. If the input was a single column table, the error is embedded in the output table.
 
 ## Syntax
 
-**Dec2Hex**( *Number* [, *Places*] )
+**Dec2Hex**(*Number* [, *Places*])
 
-- *Number* - Required.  Number to convert to hexadecimal.
-- *Places* - Optional.  The number of characters to use if the number is positive. If *Places* is omitted, **Dec2Hex** uses the minimum number of characters necessary. If this parameter is provided, and the result doesn't fit in the space provided, an **ErrorKind.Numeric** error is returned.  *Places* is ignored if the number to convert is negative.
+- *Number* - Required. Number to convert to hexadecimal.
+- *Places* - Optional. The number of characters to use if the number is positive. If *Places* is omitted, **Dec2Hex** uses the minimum number of characters necessary. If this parameter is provided, and the result doesn't fit in the space provided, an **ErrorKind.Numeric** error is returned. *Places* is ignored if the number to convert is negative.
 
-**Hex2Dec**( *HexString* )
+**Hex2Dec**(*HexString*)
 
-- *HexString* - Required.  String of hexadecimal digits to convert to a number.
+- *HexString* - Required. String of hexadecimal digits to convert to a number.
 
 ## Examples
 
