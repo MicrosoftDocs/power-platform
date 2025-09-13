@@ -59,7 +59,7 @@
             "description": "Not Found - The specified resource does not exist."
           },
           "500": {
-            "description": " - Unexpected server error."
+            "description": "Internal Server Error - Unexpected server error."
           }
         }
       },
@@ -100,7 +100,7 @@
             "description": "Not Found - The specified resource does not exist."
           },
           "500": {
-            "description": " - Unexpected server error."
+            "description": "Internal Server Error - Unexpected server error."
           }
         }
       }
