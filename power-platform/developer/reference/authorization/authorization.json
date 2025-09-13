@@ -144,7 +144,7 @@
             "description": "Not Found - The role assignment does not exist."
           },
           "500": {
-            "description": "Internal server srror - Unexpected server error."
+            "description": "Internal Server Error - Unexpected server error."
           }
         }
       }
