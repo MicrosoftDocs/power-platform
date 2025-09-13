@@ -15,8 +15,8 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "Create rule based policy.",
-        "description": "Create new rule based policy. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "summary": "Create a rule based policy.",
+        "description": "Create a new rule based policy. The input includes rule sets, inputs, and other metadata related to the policy.",
         "operationId": "CreateRuleBasedPolicy",
         "consumes": [
           "application/json"
@@ -59,7 +59,7 @@
             "description": "Not Found - The specified resource does not exist."
           },
           "500": {
-            "description": "Internal Server Error - Unexpected server error."
+            "description": " - Unexpected server error."
           }
         }
       },
@@ -100,7 +100,7 @@
             "description": "Not Found - The specified resource does not exist."
           },
           "500": {
-            "description": "Internal Server Error - Unexpected server error."
+            "description": " - Unexpected server error."
           }
         }
       }
