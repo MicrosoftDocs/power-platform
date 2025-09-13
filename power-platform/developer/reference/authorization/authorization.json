@@ -48,7 +48,7 @@
             "description": "Not Found - The specified resource does not exist."
           },
           "500": {
-            "description": "Internal Server Error - Unexpected server error."
+            "description": "Internal server error - Unexpected server error."
           }
         }
       },
@@ -100,7 +100,7 @@
             "description": "Not Found - The specified resource does not exist."
           },
           "500": {
-            "description": "Internal Server Error - Unexpected server error."
+            "description": "Internal server error - Unexpected server error."
           }
         }
       }
@@ -144,7 +144,7 @@
             "description": "Not Found - The role assignment does not exist."
           },
           "500": {
-            "description": "Internal Server Error - Unexpected server error."
+            "description": "Internal server srror - Unexpected server error."
           }
         }
       }
@@ -187,7 +187,7 @@
             "description": "Not Found - The specified resource does not exist."
           },
           "500": {
-            "description": "Internal Server Error - Unexpected server error."
+            "description": "Internal server error - Unexpected server error."
           }
         }
       }
@@ -204,7 +204,7 @@
             "type": "object",
             "properties": {
               "id": {
-                "description": "Role definition Id",
+                "description": "Role definition ID",
                 "type": "string",
                 "example": "roleDef1"
               },
@@ -238,17 +238,17 @@
             "type": "object",
             "properties": {
               "id": {
-                "description": "Role assignment Id",
+                "description": "Role assignment ID",
                 "type": "string",
                 "example": "assignment1"
               },
               "principalId": {
-                "description": "The Id of the assigned principal",
+                "description": "The ID of the assigned principal",
                 "type": "string",
                 "example": "user123"
               },
               "roleDefinitionId": {
-                "description": "The Id of the role definition",
+                "description": "The ID of the role definition",
                 "type": "string",
                 "example": "roleDef1"
               },
@@ -267,12 +267,12 @@
       "type": "object",
       "properties": {
         "principalId": {
-          "description": "The Id of the principal to assign",
+          "description": "The ID of the principal to assign",
           "type": "string",
           "example": "user123"
         },
         "roleDefinitionId": {
-          "description": "The Id of the role definition",
+          "description": "The ID of the role definition",
           "type": "string",
           "example": "roleDef1"
         },
