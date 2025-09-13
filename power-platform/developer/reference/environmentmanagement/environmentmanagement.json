@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - environmentmanagement",
+    "title": "Microsoft Power Platform REST API - environment management",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -299,7 +299,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
@@ -356,7 +356,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
