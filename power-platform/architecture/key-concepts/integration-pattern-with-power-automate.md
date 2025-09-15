@@ -1,13 +1,13 @@
 ---
-title: Integration pattern using Power Automate cloud flows
-description: "Power Automate integration patterns: Discover how to design effective, scalable integrations using cloud flows. Learn key considerations and best practices."
-#customer intent: As a Power Platform user,  I want to understand integration patterns using Power Automate so that I can design effective, scalable solutions for my organization.
+title: Use integration patterns with Power Automate cloud flows
+description: Discover how to design effective, scalable integrations using cloud flows. Learn key considerations and best practices.
+#customer intent: As a Power Automate architect, I want to develop effective integration patterns using Power Automate so that I can design effective, scalable solutions for my organization.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.date: 06/24/2025
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 contributors:
   - manuelap-msft
 ms.contributors:
@@ -21,7 +21,7 @@ ms.custom:
   - ai-seo-date:06/24/2025
 ---
 
-# Use integration pattern in Power Automate cloud flows
+# Use integration patterns with Power Automate cloud flows
 
 This article explores different integration patterns using Power Automate cloud flows. It covers considerations for building effective integrations for each pattern, the challenges you might face, and the decision-making process for achieving your goals.
 
