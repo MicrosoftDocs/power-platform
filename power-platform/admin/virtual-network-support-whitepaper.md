@@ -4,7 +4,7 @@ description: Learn how Azure Virtual Network support enhances the security, conn
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/02/2025
+ms.date: 09/15/2025
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -273,3 +273,4 @@ Virtual Network support for Power Platform is a crucial feature that allows orga
 - [Set up Virtual Network support for Power Platform](vnet-support-setup-configure.md)
 - [What is subnet delegation?](/azure/virtual-network/subnet-delegation-overview)
 - [Understanding Azure Network Pricing](https://azurenavigator.com/understanding-azure-network-pricing/)
+- [Troubleshoot Virtual Network issues](/troubleshoot/power-platform/power-platform-administration/troubleshoot-virtual-network-power-platform)
