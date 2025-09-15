@@ -6,7 +6,6 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/24/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: sericks
 ms.reviewer: sericks
 contributors:
@@ -14,7 +13,10 @@ contributors:
 search.audienceType: 
   - admin
 ms.contributors:
-- mspilde
+  - mspilde
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 
 # Use /mention to link to records in Outlook web client

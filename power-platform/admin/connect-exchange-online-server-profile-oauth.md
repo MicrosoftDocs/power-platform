@@ -9,6 +9,7 @@ ms.author: magatti
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Exchange Online cross-tenant authentication

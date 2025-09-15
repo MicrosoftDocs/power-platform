@@ -1,16 +1,18 @@
 ---
 title: "CoE ALM Accelerator for Power Platform before you start (Deprecated)"
-description: "Key prerequisites and requirements for the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
-keywords: 
+description: "Discover essential prerequisites and requirements before installing the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)."
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.custom: ""
 ms.date: 09/26/2024
-
+ms.update-cycle: 3650-days
+ms.subservice: guidance-toolkit
 ms.topic: concept-article
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom:
+  - ""
+  - sfi-ga-nochange
 ---
 
 # CoE ALM Accelerator for Power Platform before you start (Deprecated)

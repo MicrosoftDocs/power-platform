@@ -1,9 +1,9 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 05/21/2025
+ms.date: 08/06/2025
 ms.topic: concept-article
-author: matapg007
+author: SatishKumarkannanMs
 contributors:
   - SatishKumarkannanMs
   - val-bc 
@@ -11,12 +11,12 @@ contributors:
   - ImadYanni
   - bevans 
   - LaurentPepin 
+ms.contributors: ralinga
 ms.subservice: admin
-ms.author: matgupta
+ms.author: satishk
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-
 ---
 
 # Tenant-to-tenant migrations
@@ -256,9 +256,9 @@ TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 
 ### Errors and how to resolve them 
 - If you receive an error that says, **The User mapping file provided for Tenant To Tenant migration is invalid**, check if the user mapping file name is correct and that the user mapping file has a comma to separate values.
-- **Line '{line numbers}' have the same '{emailID}'**: Make sure there aren't any duplicate entries.
-- **Invalid Email Format '{emailid}'**: Make sure the email format is correct for `testuser@tenantdomain.com`.
-- **Target on line '{linenumber}' is same as source emailId**: Make sure the **Destination Email** is different from the **Source Email**.
+- **Line '{line numbers}' have the same '{email ID}'**: Make sure there aren't any duplicate entries.
+- **Invalid Email Format '{email ID}'**: Make sure the email format is correct for `testuser@tenantdomain.com`.
+- **Target on line '{line number}' is same as source email ID**: Make sure the **Destination Email** is different from the **Source Email**.
 - **Each line must have exactly two columns: '{line numbers}'**: Make sure each row has only two columns: the source and destination columns. Remove any extra commas.
 
 After fixing user mapping errors, you need to reupload the user mapping file using the same SAS URI.
@@ -321,11 +321,18 @@ After moving environments to another tenant:
 Complete the following procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages.
 
 ### Post-migration process for Power Automate
-After the migration has completed, step through the **Review components** section as a checklist to get flows and other components adjusted and activated. The key steps are:
 
-1. Create connections for all connection references.
-1. Start all flows, including starting child flows before parent flows.
-1. For any HTTP triggered flows, retrieve the new URL and place it in any calling apps or flows to refresh those references.
+After the migration is complete, review the imported components and perform the following steps to ensure flows and other assets work correctly:
+
+1. Create or map connections for all connection references.
+    - Open the solution in the target environment.
+    - Navigate to the connection references and re-authenticate or link each one to an existing connection.
+1. Enable all flows.
+    - Imported flows are turned off by default.
+    - Start any child flows before enabling parent flows that call them to avoid errors.
+3. Update HTTP trigger URLs.
+    - HTTP-triggered flows generate a new URL after import.
+    - Update any calling apps, parent flows, or external systems to use the new URL.
 
 ### Post-migration process for Power Apps
 
@@ -381,7 +388,7 @@ No. The environment remains in place, but the Dataverse organization is moved to
 
 #### Are there any components that aren't fully supported?
 
-Leaern more in [Before you get started](#before-you-get-started) to understand which components are supported and which components aren't supported.
+Learn more in [Before you get started](#before-you-get-started) to understand which components are supported and which components aren't supported.
 
 #### What happens to mailbox configurations?
 

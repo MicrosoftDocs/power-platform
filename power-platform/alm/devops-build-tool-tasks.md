@@ -4,11 +4,12 @@ description: "Learn about what build tool tasks are available plus some examples
 author: marcelbf
 ms.author: marcelbf
 ms.subservice: alm
-ms.date: 12/03/2024
+ms.date: 06/26/2025
 ms.reviewer: pehecke
 ms.topic: how-to
 search.audienceType: 
   - developer
+ms.custom: sfi-ropc-nochange
 ---
 
 # Microsoft Power Platform Build Tools tasks
@@ -39,6 +40,14 @@ to the versions of the tools that are required for the pipeline to run properly.
 ```
 
 ```yml
+# Installs default Power Platform Build Tools and adds the pac cli to the `PATH` environment variable
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@2
+  displayName: 'Power Platform Tool Installer'
+  inputs:
+    AddToolsToPath: true
+```
+
+```yml
 # Installs specific versions of the Power Platform Build Tools
 - task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@2
   displayName: 'Power Platform Tool Installer'
@@ -52,6 +61,7 @@ to the versions of the tools that are required for the pipeline to run properly.
 | Parameters    | Description   |
 |---------------|---------------|
 | `DefaultVersion`<br/>Use default tool versions | Set to **true** to use the default version of all tools, otherwise **false**. Required (and **false**) when any tool versions are specified. |
+| `AddToolsToPath`<br/>Add Tools To Path | Adds the pac cli to the `PATH` environment variable. Enables you to use pac cli from script tasks without needing to set up the path manually. |
 | `PowerAppsAdminVersion`<br/>`XrmToolingPackageDeploymentVersion`<br/>`MicrosoftPowerAppsCheckerVersion`<br/>`CrmSdkCoreToolsVersion`<br/>Tool version | The specific version of the tool to use. |
 
 ### Power Platform WhoAmI
@@ -65,7 +75,7 @@ Verifies a Power Platform environment service connection by connecting and makin
 - task: microsoft-IsvExpTools.PowerPlatform-BuildTools.whoami.PowerPlatformWhoAmi@2
   displayName: 'Power Platform WhoAmI'
 
-  inputs: 
+  inputs:
 #   Service Principal/client secret (supports MFA)
     authenticationType: PowerPlatformSPN
     PowerPlatformSPN: 'My service connection'
@@ -164,7 +174,6 @@ steps:
     HoldingSolution: true
     OverwriteUnmanagedCustomizations: true
     SkipProductUpdateDependencies: true
-    ConvertToManaged: true
 ```
 
 ```yml
@@ -191,7 +200,7 @@ steps:
 | `HoldingSolution`<br/>Import as a holding solution | An advance parameter (true\|false) used when a solution needs to be upgraded. This parameter hosts the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run. |
 | `OverwriteUnmanagedCustomizations`<br/>Overwrite un-managed customizations | Specify whether to overwrite un-managed customizations (true\|false). |
 | `SkipProductUpdateDependencies`<br/>Skip product update dependencies | Specify whether the enforcement of dependencies related to product updates should be skipped (true\|false). |
-| `ConvertToManaged`<br/>Convert to managed | Specify whether to import as a managed solution (true\|false). |
+| `ConvertToManaged`<br/>Convert to managed | Obsolete. The system will convert unmanaged solution components to managed when you import a managed solution. |
 | `AsyncOperation`<br/>Asynchronous import | If selected (**true**), the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. Selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached (true\|false). |
 | `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
 | `PublishWorkflows`<br/>Activate processes after import | Specify whether any processes (workflows) in the solution should be activated after import (true\|false). |
@@ -466,7 +475,13 @@ Alternatively a powershell inline task script $(Get-Date -Format yyyy.MM.dd.HHmm
 
 ### Power Platform Set Connection Variables
 
-Sets BuildTools.* variables to provide custom script tasks access to use the service connection as a single source of truth.
+Sets `PowerPlatformSetConnectionVariables.BuildTools.*` variables to provide custom script tasks access to use the service connection as a single source of truth.
+
+The following variables are set:
+- `PowerPlatformSetConnectionVariables.BuildTools.TenantId`
+- `PowerPlatformSetConnectionVariables.BuildTools.ApplicationId`
+- `PowerPlatformSetConnectionVariables.BuildTools.ClientSecret`
+- `PowerPlatformSetConnectionVariables.BuildTools.DataverseConnectionString`
 
 #### YAML snippet (SetConnectionVariables)
 

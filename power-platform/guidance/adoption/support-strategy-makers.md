@@ -31,7 +31,7 @@ This diagram shows common types of maker support that organizations can use succ
 | :::image type="icon" source="media/support-2.png" border="false"::: | **Internal community support (internal)** can be organized informally and formally. It occurs when colleagues interact with each other via internal community channels. It's often focused on makers solving specific issues as they develop an app or flow. |
 | :::image type="icon" source="media/support-3.png" border="false"::: | **Power Platform Nurture team (internal)** is responsible for enabling Power Platform at the organization level. This team can provide mentorship to makers and help them build apps/flows. It can also lead community programs and events like hackathons. |
 | :::image type="icon" source="media/support-4.png" border="false"::: | **Help desk support (internal)** handles formal support issues and requests. |
-| :::image type="icon" source="media/support-5.png" border="false"::: | **Microsoft support (external)** includes support for users and admins. Makers and users can raise questions through the [Power Apps](https://powerapps.microsoft.com/support/) or [Power Automate](https://flow.microsoft.com/support/) support page. Power Platform and Environment admins can [raise support tickets](/admin/support-overview) through [Power Platform admin center](https://aka.ms/ppac). Different technical support and advisory services are available based on your [support plan](/admin/support-overview). |
+| :::image type="icon" source="media/support-5.png" border="false"::: | **Microsoft support (external)** includes support for users and admins. Makers and users can raise questions through the [Power Apps](https://powerapps.microsoft.com/support/) or [Power Automate](https://flow.microsoft.com/support/) support page. Power Platform and Environment admins can [raise support tickets](/admin/support-overview) through the [Power Platform admin center](https://aka.ms/ppac). Different technical support and advisory services are available based on your [support plan](/admin/support-overview). |
 | :::image type="icon" source="media/support-6.png" border="false"::: | **[Partner support (external)](https://www.microsoft.com/en-us/power-platform/products/power-apps/partners)** can complement your internal support offering, and provide training to your makers, or handle complex queries from your makers. |
 | :::image type="icon" source="media/support-7.png" border="false"::: | **[Community support (external)](https://powerusers.microsoft.com/)** can help get answers directly from other users. |
 
@@ -73,7 +73,7 @@ Over time, help desk personnel will improve their troubleshooting and problem re
 
 ## Microsoft support
 
-Based on your support plan, you might be eligible for advisory support services provided through Premier/Unified support. Learn more about the support available to you in [Get Help + Support](../../admin/get-help-support.md).
+Based on your support plan, you might be eligible for advisory support services provided through Premier/Unified support. Learn more about the support available to you in [Get Support](../../admin/get-help-support.md).
 
 Refer to the comprehensive [Microsoft Power Platform documentation](../../index.yml). It's an authoritative resource that helps with troubleshooting and finding information.
 

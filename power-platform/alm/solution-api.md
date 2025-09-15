@@ -3,7 +3,7 @@ title: "Work with solutions using the Dataverse SDK with Power Platform"
 description: "Learn about the .NET APIs that are available to manage Microsoft Dataverse solutions with Power Platform."
 author: marcelbf
 ms.author: marcelbf
-ms.date: 02/06/2025
+ms.date: 06/30/2025
 ms.reviewer: pehecke
 ms.topic: how-to
 search.audienceType: 
@@ -19,6 +19,8 @@ solution as a managed solution, and, finally, deletes the environment. You can d
 
 > [!NOTE]
 > You can also perform these same operations using the Web API. The related actions are: [ImportSolution](/dynamics365/customer-engagement/web-api/importsolution), [ExportSolution](/dynamics365/customer-engagement/web-api/exportsolution), [CloneAsPatch](/dynamics365/customer-engagement/web-api/cloneaspatch), and [CloneAsSolution](/dynamics365/customer-engagement/web-api/cloneassolution).
+>
+> The code samples in this article are using early-bound entity types generated using either CrmSvcUtil or PAC CLI. More information: [Late-bound and early-bound programming using the SDK for .NET](/power-apps/developer/data-platform/org-service/early-bound-programming)
 
 ## Create, export, or import an unmanaged solution
 

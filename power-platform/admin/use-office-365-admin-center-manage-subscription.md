@@ -10,6 +10,9 @@ ms.author: kacortez
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 # Use the Microsoft 365 admin center to manage your subscription 
 

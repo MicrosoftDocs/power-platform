@@ -1,7 +1,7 @@
 ﻿---
 title: Healthcare Patient Support Agent
 description: Learn how the Healthcare Patient Support Agent streamlines patient interactions and reduces administrative burdens for healthcare providers.
-#customer intent: As a Power Platform user, I want to visualize the major components of the Healthcare Patient Support Agent architecture so that I can design a well-architected solution.
+#customer intent: As a business decision maker, I want to visualize the major components of the Healthcare Patient Support Agent architecture so that I can design a well-architected solution.
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea

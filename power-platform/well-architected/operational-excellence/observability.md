@@ -4,7 +4,7 @@ description: Learn how to design and create a monitoring framework that provides
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -159,7 +159,13 @@ To help ensure that the system remains healthy, responsive, and secure, set aler
 
 Alerts are generated when thresholds are crossed, as detected by your monitoring system. Ensure that the thresholds you set generally give you enough time to implement the necessary changes to your workload to avoid degradation or outages. You should also implement necessary error handling and catch known errors in your workload to reduce the number of alerts. For example, configure retry policies for your actions in cloud flows so that a retry is attempted as part of the flow run, and only if repeated retries fail and flow failure is recorded and an alert is sent. Learn more in [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md).
 
+## Example
+
+[Distributed tracing across multiple services in Power Platform](/power-platform/architecture/key-concepts/distributed-tracing) provides an example scenario and visual representation of how to trace events across multiple services. This guidance provides practical applications and use cases for distributed tracing and explains how to implement it across multiple services in Power Platform.
+
 ## Power Platform facilitation
+
+Use the [Monitor](/power-platform/admin/monitoring/monitoring-overview) area of the Power Platform admin center to measure and improve operational health metrics of apps and flows. The Monitor experience is available to both makers and admins. Makers use the data to improve their resources. Admins use it to understand aggregate operational health in the tenant or in specific environments. The purpose of the Monitor area of the Power Platform admin center is to bring attention to resources that have degraded operational health and highlight resources that have opportunities for improvement.
 
 Power Platform integrates with [Application Insights](/azure/azure-monitor/app/app-insights-overview), which is part of the [Azure Monitor](/azure/azure-monitor/overview) ecosystem. Use this integration to:
 
@@ -171,15 +177,15 @@ Power Platform integrates with [Application Insights](/azure/azure-monitor/app/a
 
 - Capture telemetry data from your [Microsoft Copilot Studio agent](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights. You can use this telemetry to monitor logged messages and events sent to and from your agent, topics to be triggered during user conversations, and custom telemetry events that can be sent from your topics.
 
-Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. For more information about logging activities in Power Platform, see:
+Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. For more information about logging activities in Power Platform, consult:
 
 - [Power Apps](/power-platform/admin/logging-powerapps)
 - [Power Automate](/power-platform/admin/logging-power-automate)
 - [Copilot Studio](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Power Pages](/power-platform/admin/logging-power-pages)
 - [Power Platform connectors](/power-platform/admin/connector-events-power-platform)
-- [Data Loss Prevention](/power-platform/admin/dlp-activity-logging)
-- [Power Platform administrative logs](/power-platform/admin/admin-activity-logging)
+- [Data Policy activity logging](/power-platform/admin/dlp-activity-logging)
+- [View Power Platform administrative logs using auditing solutions in Microsoft Purview](/power-platform/admin/admin-activity-logging)
 - [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 
 Your Power Platform workload might include Azure resources. Learn more in [Recommendations for designing and creating a monitoring system](/azure/well-architected/operational-excellence/observability).
@@ -188,10 +194,13 @@ The [Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) i
 
 The [Power Platform Automation Kit](/power-automate/guidance/automation-kit/overview/introduction) is set of tools that accelerates the use and support of Power Automate for desktop for automation projects. The kit provides tools that help you manage automation projects and monitor them to estimate money saved and return on investment (ROI). Part of the Automation Kit is the [control center](/power-automate/guidance/automation-kit/control-center-overview), which complements the Monitor desktop flow runs feature. The key focus of the control center is an orchestrator view for support analysts and organizations to monitor, take action, and alert when necessary.
 
+The [Agent Inventory feature](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit/blob/main/AGENT_INVENTORY.md) of the [Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit/blob/main/README.md) provides administrators with a tenant-wide view to all Copilot Studio custom agents in their organization, including detailed information on the features they are using, authentication mode, knowledge sources, orchestration type, and more.
+
 ## Related information
 
 - [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md)
 - [Recommendations for monitoring and threat detection](../security/monitor-threats.md)
+- [Dataverse auditing](/power-platform/architecture/key-concepts/dataverse-auditing)
 
 ## Next steps
 

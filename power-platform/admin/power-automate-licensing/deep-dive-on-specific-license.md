@@ -15,6 +15,7 @@ ms.author: cvassallo
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
+ms.custom: sfi-ga-nochange
 ---
 # Deep dive on specific licenses
 

@@ -4,8 +4,8 @@ description: Learn how Teck automated extraction of customs data using Power Aut
 #customer intent: As a Power Platform user, I want to learn how Teck automated data extraction using Power Automate and AI Builder and so that I can implement similar solutions to save time and reduce errors.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.subservice: case-study
 ms.topic: overview
 ms.date: 05/13/2025
 ---

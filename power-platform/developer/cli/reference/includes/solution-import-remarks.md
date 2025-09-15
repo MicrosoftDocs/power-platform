@@ -5,10 +5,3 @@ You be connected to an environment using the [pac auth](../auth.md) command to u
 #### pac solution import
 
 When `Path` parameter is not specified, it assumes the current folder is a cdsproj project. If the `SolutionPackageType` property in cdsproj file is set to `Both`, the managed solution is used by default.
-
-
-#### convert-to-managed
-
-The `convert-to-managed` parameter doesn't take an unmanaged solution and import it as managed. This parameter allows a managed solution that is being imported into an environment convert unmanaged components to managed. 
-
-If this flag isn't explicitly set, the solution system will fail the import request because managed layers can't go on top of unmanaged base components. This switch allows the solution import to succeed and the net result is that the inbound managed solution will be the base layer for each of these components – the components in the destination environment are converted from being an unmanaged component to being a managed component.

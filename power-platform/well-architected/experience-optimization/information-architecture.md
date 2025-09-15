@@ -4,7 +4,7 @@ description: Learn strategies for implementing an effective information architec
 author: RobStand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 08/05/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---

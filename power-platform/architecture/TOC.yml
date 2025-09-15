@@ -29,6 +29,20 @@
               href: key-concepts/expressroute/checklist.md
         - name: Dataverse auditing
           href: key-concepts/dataverse-auditing.md
+        - name: CRM data migration to Dataverse
+          items:
+            - name: Overview
+              href: key-concepts/data-migration/index.md
+            - name: Data migration approaches
+              href: key-concepts/data-migration/data-migration-approaches.md
+            - name: Use a staging database for data migration
+              href: key-concepts/data-migration/staging-database-approach.md
+            - name: Workflow for complex data migration
+              href: key-concepts/data-migration/workflow-complex-data-migration.md
+            - name: Power Platform Well-Architected and data migration
+              href: key-concepts/data-migration/benefits-power-well-architected.md
+            - name: Planning for go-live
+              href: key-concepts/data-migration/cut-over-planning.md
         - name: Distributed tracing across multiple services
           items:
             - name: Overview
@@ -37,8 +51,18 @@
               href: key-concepts/distributed-tracing-details.md
         - name: Cloud flow integration patterns
           items:
-            - name: Integration pattern with power automate
+            - name: Integration patterns with Power Automate
               href: key-concepts/integration-pattern-with-power-automate.md
+        - name: Manage solution performance
+          items:
+            - name: Overview
+              href: key-concepts/performance/index.md
+            - name: Explore UX strategies
+              href: key-concepts/performance/ux-strategies.md
+            - name: Measure and maintain solution performance
+              href: key-concepts/performance/tools.md
+            - name: Identify and mitigate canvas app performance
+              href: key-concepts/performance/top-issues.md
     - name: Reference architectures
       items:
         - name: Overview
@@ -52,6 +76,7 @@
         - name: Use Dataverse background operations
           href: reference-architectures/dataverse-background-operations.md
         - name: Secure Power Platform access to Azure resources
+        - name: Secure Power Platform access to resources
           href: reference-architectures/secure-access-azure-resources.md
         - name: Integrate Power Platform with SAP
           href: reference-architectures/arch-pattern-sap.md
@@ -63,6 +88,8 @@
           href: reference-architectures/dataverse-canvas-app.md
         - name: Reduce infrastructure challenges with Hosted RPA in Power Automate​
           href: reference-architectures/rpa-scale-operations.md
+        - name: Use SQL Server with canvas apps
+          href: reference-architectures/sqlserver-canvas-app.md
         - name: Use an autonomous agent in Copilot Studio for document processing
           href: reference-architectures/document-processing-agent.md
     - name: Solution ideas
@@ -75,12 +102,16 @@
           href: solution-ideas/agent-rental-portal.md
         - name: Revolutionize vehicle inspections with EVVIE
           href: solution-ideas/app-evvie.md
-        - name: Custom contact center solution with Copilot Studio agent
+        - name: Custom contact center solution with Copilot Studio
           href: solution-ideas/agent-custom-contact-center.md
         - name: Travel concierge using generative AI with Copilot Studio
           href: solution-ideas/agent-travel-customer.md
         - name: Ticket management system with Copilot Studio agents
           href: solution-ideas/agent-ticket-and-refund.md
+        - name: Automate bug reporting with Auto Triage AI Agent
+          href: solution-ideas/auto-ai-triage.md
+        - name: Intelligent cardiac triage and scheduling
+          href: solution-ideas/cardio-triage-agent.md
     - name: Power Platform products
       items:
         - name: Power Apps
@@ -93,6 +124,8 @@
           href: products/microsoft-dataverse.md
         - name: Copilot Studio
           href: products/copilot-studio.md
+    - name: Contribute
+      href: contribute.md
     - name: Power Platform icons
       href: /power-platform/guidance/icons?toc=/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
     - name: Power Platform Well-Architected
