@@ -4,7 +4,7 @@ description: Provides information about URLs and IP addresses to be added to the
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/12/2025
+ms.date: 09/15/2025
 ms.subservice: admin
 ms.author: sericks
 contributors:
@@ -30,7 +30,7 @@ Add the required URLs to the allow list to ensure communication through firewall
 
 ## Microsoft's consolidated domain initiative
 > [Note!]
-> In response to customer feedback and to streamline endpoint management, Microsoft has initiated the process of consolidating Microsoft apps and services into a select group of dedicated, secured, and purpose-managed domains within the .microsoft top level domain.
+> In response to customer feedback and to streamline endpoint management, Microsoft has initiated the process of consolidating Microsoft apps and services into a select group of dedicated, secured, and purpose-managed domains within the .microsoft top-level domain.
 >
 > To avoid connectivity issues for users, ensure that the following essential domains are included in your allowlist and that connectivity to these domains isn't blocked.
 
