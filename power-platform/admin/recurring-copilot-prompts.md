@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 environment for recurring Copilot prompts 
-description: Description goes here.
+description: Learn more about the Microsoft 365 environment that supports runtime operations required by features like Scheduled Prompts, Teams AI Workflows, and more.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
@@ -82,7 +82,7 @@ Yes. Admins can delete the Microsoft 365 environment through the Power Platform 
 No. Storage used by this environment is excluded from your tenant’s capacity calculations and doesn't appear on capacity pages.
 
 ### Can I apply custom DLP policies to this environment?
-No. This environment is governed by a fixed DLP policy, and tenant or environment-level policies do not apply to this environment.
+No. This environment is governed by a fixed DLP policy, and tenant or environment-level policies don't apply to this environment.
 
 ### Can users create custom apps, flows, or bots in this environment?
 No. All app, flow, and connection creation are blocked by default. Only runtime operations by Microsoft-owned apps are permitted.
