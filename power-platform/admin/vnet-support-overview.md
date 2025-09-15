@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/12/2025
+ms.date: 09/15/2025
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -253,3 +253,7 @@ No, [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azur
 ## Next steps
 
 [Set up Virtual Network support](vnet-support-setup-configure.md)
+
+## Related content
+
+ [Troubleshoot Virtual Network issues](/troubleshoot/power-platform/power-platform-administration/troubleshoot-virtual-network-power-platform)
