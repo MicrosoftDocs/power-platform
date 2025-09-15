@@ -13,7 +13,7 @@ search.audienceType:
 # On-off switch for Learning Path (guided help)
 
 > [!IMPORTANT]
-> Learning path has been replaced by custom help panes. More information: [Create custom help panes for your app](/powerapps/maker/model-driven-apps/create-custom-help-pages).
+> Learning path has been replaced by custom help panes. More information: [Create custom help panes for your app](/power-apps/maker/data-platform/create-custom-help-pages).
 
 ## Turn Learning Path on or off for an individual user  
  This setting affects only the person who makes this change.  
