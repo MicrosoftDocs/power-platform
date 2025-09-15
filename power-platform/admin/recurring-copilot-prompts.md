@@ -10,6 +10,8 @@ ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.contributors:
+  - saraje
 ---
 
 # Microsoft 365 environment for recurring Copilot prompts 
