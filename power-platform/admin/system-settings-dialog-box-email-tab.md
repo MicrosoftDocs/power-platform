@@ -20,7 +20,7 @@ Use the settings on this page to set up email processing in model-driven apps in
 > [!NOTE]
 > Many of these settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Email settings**.
   
-## Open the System Settings dialog box 
+## Open the System Settings Email tab 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -30,11 +30,10 @@ Use the settings on this page to set up email processing in model-driven apps in
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
-
-3. Select **Settings** > **Email Configuration**.
-  
-4. Select **Email Configuration Settings**.  
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
+5. Select the **Email** tab.  
   
 > [!div class="mx-tableFixed"]
 > |   Settings    |   Description     |

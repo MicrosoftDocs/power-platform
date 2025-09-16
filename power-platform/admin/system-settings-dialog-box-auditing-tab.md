@@ -17,7 +17,7 @@ search.audienceType:
 
 Enable auditing to track changes to your organization's data and maintain a log of changes. 
   
-## Open the System Settings dialog box 
+## Open the System Settings Auditing tab 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   

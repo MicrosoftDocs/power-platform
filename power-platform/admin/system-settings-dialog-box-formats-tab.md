@@ -18,7 +18,7 @@ You can control how customer engagement apps (Dynamics 365 Sales, Dynamics 365 C
 
 <!-- legacy procedure -->
   
-## Open the Formats System Settings dialog box (it isn't already open)  
+## Open the Formats System Settings tab  
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -28,11 +28,10 @@ You can control how customer engagement apps (Dynamics 365 Sales, Dynamics 365 C
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
-
-3. Select **Settings** > **Administration**.
-  
-4. Select **System Settings** > **Formats** tab.  
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
+5. Select the **Formats** tab.  
   
 |Settings|Description|  
 |--------------|-----------------|  

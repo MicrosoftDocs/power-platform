@@ -17,7 +17,7 @@ search.audienceType:
 
 Use the tab to set preferences for plug-in and workflow tracing and also the use of application mode.
 
-## Open the System Settings dialog box 
+## Open the System Settings Customization tab 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -27,11 +27,13 @@ Use the tab to set preferences for plug-in and workflow tracing and also the use
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
 
-3. Select **Settings** > **Customization**.
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
 
-4. Choose **System Settings** and then choose the **Customization** tab.  
+5. Select the **Customization** tab.  
+6. After making a change, select **OK** to save your changes.
   
 |                                                                       Settings                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                        Description                                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

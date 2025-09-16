@@ -19,7 +19,7 @@ Use the settings on this page to configure marketing settings for customer engag
 
 <!-- legacy procedure -->
 
-## Open the Marketing System Settings dialog box 
+## Open the Marketing System Settings tab 
 
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
 
@@ -29,11 +29,10 @@ Use the settings on this page to configure marketing settings for customer engag
 
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
 
-2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
-
-3. Select **Settings** > **Administration**.
-
-4. Select **System Settings** > **Marketing** tab.  
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
+5. Select the **Marketing** tab.  
 
 |                                                             Settings                                                              |                                                                                                                       Description                                                                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -12,11 +12,12 @@ search.audienceType:
 ---
 # System Settings Calendar tab
 
-<!-- Cannot find PPAC equivalent.-->
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for configuring the service calendar. For information about the current experience, go to [Service scheduling overview](/dynamics365/customer-service/use/uci-scheduling-overview).
 
-Use the settings on this page to configure calendar settings for model-driven apps in Dynamics 365.  
+Use the settings on this page to configure service calendar settings for model-driven apps in Dynamics 365.  
   
-## Open the Calendar System Settings dialog box 
+## Open the Calendar System Settings tab 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -26,9 +27,11 @@ Use the settings on this page to configure calendar settings for model-driven ap
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the Power Platform admin center, select an environment. 
-
-3. Select **Settings** > **Business** > **Calendar**.  
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
+5. Select the **Calendar** tab.
+6. After making a change, select **OK** to save your changes.
   
 |                  Settings                  |                                                                                                                                                                          Description                                                                                                                                                                           |
 |--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
