@@ -39,7 +39,7 @@ If you're an administrator, you can determine the region of each environment in 
 
 ## What regions are available?
 
-Select the **downloadable Infrastructure and availability PDF** link in [International availability of Microsoft Power Platform](../availability).
+Select the **downloadable Infrastructure and availability PDF** link in [International availability of Microsoft Power Platform](../availability.md).
 
 ## Who can create environments in these regions?
 
