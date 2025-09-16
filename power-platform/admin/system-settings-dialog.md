@@ -17,5 +17,4 @@ The **System Settings** dialog box is the legacy experience for managing environ
 > [!NOTE]
 > We have moved the settings described in the legacy system settings dialog articles to the Power Platform admin center. More information: [Environment settings are moving](../admin/admin-settings.md#environment-settings-are-moving).
 
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
