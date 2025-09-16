@@ -25,8 +25,8 @@ This article provides details about the environment’s characteristics, behavio
 The Microsoft 365 environment is automatically created when a user with a Copilot license uses a recurring Copilot feature for the first time. The environment is created in the region closest to the default region of the Microsoft Entra tenant.
 
 The following list includes examples of Copilot features that support recurrence:
-- **Scheduled Prompts** from Microsoft 365 Copilot
-- **AI Workflow templates** from the Workflows app in Microsoft Teams
+- **[Scheduled Prompts](https://learn.microsoft.com/en-us/copilot/microsoft-365/scheduled-prompts)** from Microsoft 365 Copilot
+- **[AI Workflow templates](https://support.microsoft.com/en-us/topic/b7023604-c62a-44d3-a097-fddb68e41ff3?preview=true)** from the Workflows app in Microsoft Teams
 
 You don't need to take any manual steps to create the environment. Only one environment is created per tenant, and it's name appears as **Microsoft 365** in the Power Platform admin center.
 
