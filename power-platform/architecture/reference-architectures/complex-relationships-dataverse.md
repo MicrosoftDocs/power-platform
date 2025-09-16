@@ -21,15 +21,15 @@ Microsoft Dataverse is an enterprise data platform in Power Platform that enable
 
 ## Architecture diagram
 
-:::image type="content" source="media/complex-relationships-dataverse/architecture.png" alt-text="Architecture diagram showing how Event, Contact, and Event Attendee tables connect to track who attends events and related data about each attendee." lightbox="media/complex-relationships-dataverse/architecture.png":::
+:::image type="content" source="media/complex-relationships-dataverse/architecture.png" alt-text="Architecture diagram showing how Event, Contact, and Event Attendee tables connect to track who attends events and related data about each attendee.":::
 
 ## Workflow
 
 A Power Apps canvas application uses Dataverse to manage data for an event management application. The application allows a user to track who attended the event (or events) hosted by the organization's sales team.
 
-1. **Table 2 - Contact**: The Contact table tracks people the sales team invites to events.
-1. **Table 1 - Event**: The Event table tracks event information like the name, date, and location of each event.
-1. **Table 3 - Event Attendee**: The Event Attendee table tracks who attends each event and their attendance data. This table has a many-to-many relationship between Contact and Event. It is created with a many-to-one relationship with the Contact table and a many-to-one relationship with the Event table. This setup allows for this many-to-many table to include data about the attendees at an event, like their RSVP status, attendance status, and whether they paid a fee.
+- **Contact**: The Contact table tracks people the sales team invites to events.
+- **Event**: The Event table tracks event information like the name, date, and location of each event.
+- **Event Attendee**: The Event Attendee table tracks who attends each event and their attendance data. This table has a many-to-many relationship between Contact and Event. It is created with a many-to-one relationship with the Contact table and a many-to-one relationship with the Event table. This setup allows for this many-to-many table to include data about the attendees at an event, like their RSVP status, attendance status, and whether they paid a fee.
 
 ## Use case
 
@@ -42,7 +42,7 @@ The main purpose of the event management application is to track event attendanc
 
 As the team building the application evaluated options for data modeling, they considered the built-in Dataverse many-to-many support. This approach allows a contact to attend multiple events. Behind the scenes, Dataverse creates an internal intersect table that tracks the connections between the Contact and one or more Event rows. However, this internal table isn't modifiable&ndash;additional columns to track data about the relationship between the two tables can't be added. While this approach satisfies part of the requirements of the app, it doesn't accommodate the need to track information about each event the contact attends, such as RSVP status.
 
-### Manual many-to-many relationship (custom table approach)
+### Manual many-to-many relationship
 
 To track additional information about each event a contact attends, consider implementing a "manual many-to-many" relationship pattern. This approach involves creating a custom table, Event Attendee, to represent the intersection between Contact and Event. The Event Attendee table includes many-to-one relationships to both Contact and Event tables, allowing it to store other fields like RSVP status, attendance status, and payment information. This approach gives you full control over security and lets you automate when and who can establish the relationship.
 
