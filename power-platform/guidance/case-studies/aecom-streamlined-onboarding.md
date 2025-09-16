@@ -5,7 +5,7 @@ description: Learn how AECOM streamlined project onboarding using Power Platform
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.subservice: guidance
+ms.subservice: case-study
 ms.topic: overview
 ms.date: 05/13/2025
 ---
