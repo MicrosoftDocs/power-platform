@@ -47,7 +47,9 @@ Completed system jobs are categorized into three main types based on their compl
 - **Canceled**: Jobs that were stopped before completion, either by user intervention or by system constraints.
 
 ## Deletion service to automatically delete completed system jobs
-By default, the system provides a deletion service to automatically delete system jobs that either completed successfully, failed, or were canceled. This default is set in the OrganizationSettingsEditor tool. 
+By default, the system provides a deletion service to automatically delete system jobs that either completed successfully, failed, or were canceled. This default is set in the OrganizationSettingsEditor tool and can be changed using the tool or from the **Environment Settings** page.
+
+### Update retention policy using OrganizationSettingsEditor
 
 To check this setting:
 
@@ -55,8 +57,8 @@ To check this setting:
 2. Add and edit the [EnableSystemJobCleanup](environment-database-settings.md#override-database-settings).
 3. Set the **EnableSystemJobCleanup** to 'true' (if this isn't already set to **true**).
 
-## Set retention policy
-There are three parameters to allow different retention periods to be set.
+#### Set retention policy
+There are three parameters to allow different retention periods to be set. 
 
 - **SucceededSystemJobPersistenceInDays** for succeeded jobs.
     - Add and edit [SucceededSystemJobPersistenceInDays](environment-database-settings.md#override-database-settings).
@@ -72,6 +74,29 @@ There are three parameters to allow different retention periods to be set.
     -  Add and edit [CancelledSystemJobPersistenceInDays](environment-database-settings.md#override-database-settings).
     -  The default is 60 days.
     -  Update this with your own day period.
+
+### Update retention policy using Environment Settings page (Preview)
+
+#### [New admin center](#tab/new)
+ 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. Select **Settings** > **Audit and logs** > **Set retention policy for system job deletions (Preview)**.
+1. Confirm that the checkbox for **Allow deletion service to delete system jobs** is checked. 
+1. Enter a period in days for each type of system jobs, **Successful jobs**, **Failed jobs**, and **Cancelled jobs**. 
+1. Select **Save**.
+
+#### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
+1. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Set retention policy for system job deletions (Preview)**.
+1. Confirm that the checkbox for **Allow deletion service to delete system jobs** is checked. 
+1. Enter a period in days for each type of system jobs, **Successful jobs**, **Failed jobs**, and **Cancelled jobs**. 
+1. Select **Save**.
+
+---
+
    
 > [!NOTE]
 > This deletion service deletes the system jobs. Deleted system jobs no longer show up in the **All System jobs** or the **All Bulk Deletion System jobs** lists.
