@@ -39,7 +39,7 @@ If you're an administrator, you can determine the region of each environment in 
 
 ## What regions are available?
 
-Select the **View Report** button in [Dynamics 365 and Microsoft Power Platform availability](https://dynamics.microsoft.com/geographic-availability/).
+Select the **downloadable Infrastructure and availability PDF** link in [International availability of Microsoft Power Platform](../availability.md).
 
 ## Who can create environments in these regions?
 
