@@ -4,7 +4,7 @@ description: Learn more about the Microsoft 365 environment that supports runtim
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/15/2025
+ms.date: 09/16/2025
 author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
@@ -27,8 +27,6 @@ The Microsoft 365 environment is automatically created when a user with a Copilo
 The following list includes examples of Copilot features that support recurrence:
 - **Scheduled Prompts** from Microsoft 365 Copilot
 - **AI Workflow templates** from the Workflows app in Microsoft Teams
-- **Teams Podcast**
-- **Clipchamp Clips**
 
 You don't need to take any manual steps to create the environment. Only one environment is created per tenant, and it's name appears as **Microsoft 365** in the Power Platform admin center.
 
