@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/19/2025
+ms.date: 09/29/2025
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
