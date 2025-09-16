@@ -21,7 +21,7 @@ Microsoft Dataverse is an enterprise data platform in Power Platform that enable
 
 ## Architecture diagram
 
-:::image type="content" source="media/use-complex-relationships-with-dataverse/arch.png" alt-text="Architecture diagram showing how Event, Contact, and Event Attendee tables connect to track who attends events and related data about each attendee." lightbox="media/use-complex-relationships-with-dataverse/arch.png":::
+:::image type="content" source="media/complex-relationships-dataverse/architecture.png" alt-text="Architecture diagram showing how Event, Contact, and Event Attendee tables connect to track who attends events and related data about each attendee." lightbox="media/complex-relationships-dataverse/architecture.png":::
 
 ## Workflow
 
