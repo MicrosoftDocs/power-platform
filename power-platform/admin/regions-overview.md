@@ -1,11 +1,11 @@
 ---
-title: "Choose the region when setting up an environment"
-description: "Learn about the factors in selecting a region when creating a new environment in Microsoft Power Platform admin center."
+title: Choose the region when setting up an environment
+description: Learn about the factors in selecting a region when creating a new environment in Microsoft Power Platform admin center.
 author: sericks007
 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/28/2024
+ms.date: 09/16/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
@@ -13,8 +13,6 @@ search.audienceType:
   - admin
 ---
 # Regions overview 
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 For multinational companies with employees and customers distributed around the world, you can create and manage environments specific to your global regions. You can create an environment in a different region than where your tenant resides. Local environments can provide quicker data access for users in that region. Be sure to read [A multi-environment deployment](multiple-online-environments-tenants.md#a-multi-environment-deployment) to understand the features of multiple environments.  
 
