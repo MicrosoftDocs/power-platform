@@ -4,7 +4,7 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/26/2025
+ms.date: 09/17/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -12,6 +12,7 @@ search.audienceType:
   - admin
 contributors:
   - jordanchodak
+  - JesseParsons
 ---
 
 # Track, manage, and scale Copilot adoption in the Power Platform
@@ -124,7 +125,3 @@ Selecting the Power Platform Settings, Power Apps settings or **Manage settings*
 
 > [!Note]
 > There may be a delay of up to eight hours for data refresh.
-
-## Content moderation 
-
-The **Content moderation** section shows a count of queries that are blocked as part of Microsoft’s Responsible AI initiatives. For more information on content moderation, go to [How does Copilot block harmful content?](../../faqs-copilot-data-security-privacy.md#how-does-copilot-block-harmful-content)
