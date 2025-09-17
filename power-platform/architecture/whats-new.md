@@ -22,7 +22,7 @@ Get the latest info about what's new and what's changed in the Power Platform  a
 
 New in [Reference architectures](reference-architectures/index.md):
 
-- [Use complex relationships with Microsoft Dataverse](complex-relationships-dataverse.md)
+- [Use complex relationships with Microsoft Dataverse](reference-architectures/complex-relationships-dataverse.md)
 
 ## August 2025
 
