@@ -64,4 +64,10 @@ You can access self-help resources in the Support experience without a support p
 >    - If you have a non-Unified/Premier Support plan, verify the plan is active. For support information, see [Community forums](https://community.dynamics.com/forums/thread/).
 
 ## Request support
-There are two experiences depending on your tenant and scenario. Most will see the new Support Agent, but some may see the older experience. Select the link below for documentation on each experience workflow.
+There are two experiences depending on your tenant and scenario. Most will see the new Support agent, but some may see the older experience.
+
+While the Support agent is in preview state, users can switch between experiences by selecting the … menu or toggle in the upper-right of the panel.
+
+### Use the support agent (preview)
+The Support agent is an agentic chat which takes you through a workflow to resolve your issue. It is an expanding and evolving service with improvements being made and tested all the time. However, it is not purely a virtual support experience. You can find self-help solutions, create a support request, and engage Microsoft representatives. The Support agent has several sequential phases.
+
