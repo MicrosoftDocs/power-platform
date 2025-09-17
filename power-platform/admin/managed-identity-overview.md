@@ -6,7 +6,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/17/2025
 ms.subservice: admin
-ms.author: abhijananddv
+ms.author: abhijanand
 ms.reviewer: sericks
 search.audienceType: 
   - admin
