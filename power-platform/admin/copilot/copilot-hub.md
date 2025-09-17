@@ -4,7 +4,7 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/26/2025
+ms.date: 09/17/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -12,6 +12,7 @@ search.audienceType:
   - admin
 contributors:
   - jordanchodak
+  - JesseParsons
 ---
 
 # Track, manage, and scale Copilot adoption in the Power Platform
