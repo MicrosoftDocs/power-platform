@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/09/2025
+ms.date: 09/12/2025
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -30,7 +30,7 @@ Power Platform uses the Virtual Network and subnets that you delegate to make ou
 
 In a Virtual Network, you have full control over the outbound traffic from Power Platform. The traffic is subject to network policies applied by your network administrator. The following diagram shows how resources inside your network interact with a Virtual Network.
 
-:::image type="content" source="media/vnet-support/vnet-support-traffic.png" alt-text="Screenshot that shows how resources inside an enterprise network interact with a Virtual Network." lightbox="media/vnet-support/vnet-support-traffic.png":::
+:::image type="content" source="media/vnet-support/vnet-support-traffic.png" alt-text="Screenshot of how resources inside an enterprise network interact with a Virtual Network." lightbox="media/vnet-support/vnet-support-traffic.png":::
 
 ## Benefits of Virtual Network support
 
@@ -185,11 +185,11 @@ Yes. You can make internet-bound calls from plug-ins or connectors, but the dele
 
 ### Can I update the subnet IP address range after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
-No, not while the feature is used in your environment. You can't change the IP address range of the subnet after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the delegation configuration is broken and the environment stops working. To change the IP address range, you must [remove the delegation feature from your environment](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#9-remove-subnet-injection-from-an-environment), make the necessary changes, and then turn on the feature for your environment.
+No, not while the feature is used in your environment. You can't change the IP address range of the subnet after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the delegation configuration is broken and the environment stops working. To change the IP address range, you must [remove the delegation feature from your environment](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/README.md#9-remove-subnet-injection-from-an-environment), make the necessary changes, and then turn on the feature for your environment.
 
 ### Can I update the DNS address of my Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
-No, not while the feature is used in your environment. You can't change the DNS address of the Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the change isn't picked up in our configuration and your environment may stop working. To change the DNS address, you must [remove the delegation feature from your environment](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#9-remove-subnet-injection-from-an-environment), make the necessary changes, and then turn on the feature for your environment.
+No, not while the feature is used in your environment. You can't change the DNS address of the Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the change isn't picked up in our configuration and your environment may stop working. To change the DNS address, you must [remove the delegation feature from your environment](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/README.md#9-remove-subnet-injection-from-an-environment), make the necessary changes, and then turn on the feature for your environment.
 
 ### Can I use the same enterprise policy for multiple Power Platform environments?
 
