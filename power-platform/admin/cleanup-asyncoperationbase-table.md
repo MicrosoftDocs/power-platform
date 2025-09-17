@@ -87,7 +87,8 @@ There are three parameters to allow different retention periods to be set.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Select **Settings** > **Audit and logs** > **Set retention policy for system job deletions (Preview)**.
 1. Confirm that the checkbox for **Allow deletion service to delete system jobs** is checked. 
-1. Enter a period in days for each type of system jobs, **Successful jobs**, **Failed jobs**, and **Cancelled jobs**. 
+1. Selecct or enter a period in days for each type of system jobs, **Successful jobs**, **Failed jobs**, and **Cancelled jobs**.
+1. Select **Custom** to enter a period in days.
 1. Select **Save**.
 
 #### [Classic admin center](#tab/classic)
@@ -95,7 +96,8 @@ There are three parameters to allow different retention periods to be set.
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
 1. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Set retention policy for system job deletions (Preview)**.
 1. Confirm that the checkbox for **Allow deletion service to delete system jobs** is checked. 
-1. Enter a period in days for each type of system jobs, **Successful jobs**, **Failed jobs**, and **Cancelled jobs**. 
+1. Enter a period in days for each type of system jobs, **Successful jobs**, **Failed jobs**, and **Cancelled jobs**.
+1. Select **Custom** to enter a period in days.
 1. Select **Save**.
 
 ---
