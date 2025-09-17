@@ -47,16 +47,13 @@ You must have on of the following security roles:
 - Teams Admin
 
 ### Support plans
-To create a request, you must also have an active support plan. 
+You can access self-help resources in the Support experience without a support plan. However, to create a request, you must have an active support plan. 
 
 - Subscription Support
 - Professional Direct Support
 - Unified Support
 
-> [!Note]
-> You can access self-help resources in the Support experience without a support plan.
-
-Learn more about and [purchase support plans](https://www.microsoft.com/en-us/dynamics-365/support).
+[Learn more about and purchase support plans](https://www.microsoft.com/en-us/dynamics-365/support).
 
 > [!Note]
 > In the following cases, you might not be able to create a support request, or we can't provide solutions:
@@ -66,3 +63,5 @@ Learn more about and [purchase support plans](https://www.microsoft.com/en-us/dy
 >    - If you have a Unified or Premier Support plan, contact your Incident Manager or Customer Success Account Manager (CSAM).
 >    - If you have a non-Unified/Premier Support plan, verify the plan is active. For support information, see [Community forums](https://community.dynamics.com/forums/thread/).
 
+## Request support
+There are two experiences depending on your tenant and scenario. Most will see the new Support Agent, but some may see the older experience. Select the link below for documentation on each experience workflow.
