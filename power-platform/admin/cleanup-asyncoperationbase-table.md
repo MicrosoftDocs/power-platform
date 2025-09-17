@@ -3,7 +3,7 @@ title: Delete completed system jobs and process log to comply with retention pol
 description: Learn how to clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/12/2025
+ms.date: 09/17/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -47,7 +47,7 @@ Completed system jobs are categorized into three main types based on their compl
 - **Canceled**: Jobs that were stopped before completion, either by user intervention or by system constraints.
 
 ## Deletion service to automatically delete completed system jobs
-By default, the system provides a deletion service to automatically delete system jobs that either completed successfully, failed, or were canceled. This default is set in the OrganizationSettingsEditor tool and can be changed using the tool or from the **Environment Settings** page.
+By default, the system provides a deletion service to automatically delete system jobs that completed successfully, failed, or were canceled. The default is set in the OrganizationSettingsEditor tool and can be changed using the tool or from the **Environment Settings** page.
 
 ### Update retention policy using OrganizationSettingsEditor
 
@@ -58,7 +58,7 @@ To check this setting:
 3. Set the **EnableSystemJobCleanup** to 'true' (if this isn't already set to **true**).
 
 #### Set retention policy
-There are three parameters to allow different retention periods to be set. 
+There are three parameters to allow different retention periods to be set.
 
 - **SucceededSystemJobPersistenceInDays** for succeeded jobs.
     - Add and edit [SucceededSystemJobPersistenceInDays](environment-database-settings.md#override-database-settings).
@@ -76,6 +76,9 @@ There are three parameters to allow different retention periods to be set.
     -  Update this with your own day period.
 
 ### Update retention policy using Environment Settings page (Preview)
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 #### [New admin center](#tab/new)
  
