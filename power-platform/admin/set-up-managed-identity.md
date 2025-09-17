@@ -4,10 +4,10 @@ description: Learn how to set up Power Platform managed identity.
 author: ritesp
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/09/2024
+ms.date: 09/17/2025
 ms.subservice: admin
 ms.author: ritesp
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
@@ -15,10 +15,7 @@ ms.custom: sfi-image-nochange
 
 # Set up managed identity for Power Platform - Dataverse Plugins
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
-
-Power Platform managed identity allows Dataverse plug-ins to connect with Azure resources supporting managed identity without the need of credentials. This article helps you set up managed identity in your Power Platform environments.
+Power Platform managed identity allows Dataverse plug-ins to connect with Azure resources to support managed identity without the need of credentials. This article helps you set up managed identity in your Power Platform environments.
 
 
 ## Prerequisites
