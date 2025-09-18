@@ -1,6 +1,6 @@
 ---
-title: Set up managed identity for Power Platform (preview)
-description: Learn how to set up Power Platform managed identity.
+title: Set up managed identity for Power Platform - Dataverse Plugins
+description: Learn how to set up Power Platform managed identity for Dataverse Plugins
 author: ritesp
 ms.component: pa-admin
 ms.topic: how-to
@@ -94,14 +94,13 @@ Choose the format that matches your certificate type:
 
 **Segment reference**
 
-- `eid1` – identity format version (fixed)  
-- `c/pub` – cloud code for Public/GCC/GCCFr (see specialized clouds below)  
-- `t/{encodedTenantId}` – tenant ID (encoded; see *Encoding* below)  
-- `a/qzXoWDkuqUa3l6zM5mM0Rw` – fixed production app id for external customers  
+- `eid1` – identity format version  
+- `c/pub` – cloud code for Public/GCC/GCCFr  
+- `t/{encodedTenantId}` – tenant ID    
 - `n/plugin` – plug-in component  
 - `e/{environmentId}` – environment ID  
 - `h/{hash}` – SHA‑256 of certificate (self-signed only)  
-- `i/{issuer}`, `s/{certificateSubject}` – trusted-issuer details (production)
+- `i/{issuer}`, `s/{certificateSubject}` – trusted-issuer details
 
 > [!NOTE]
 > **Encoding for `{encodedTenantId}`**  
@@ -200,6 +199,18 @@ If you need to give access to an application ID to access Azure resources, such 
 ## Validate the plug-in integration
 
 Verify that your plug-in can securely request access to Azure resources that support managed identity, eliminating the need for separate credentials.
+
+
+## FAQs
+
+1. **Getting Error – A configuration issue is preventing authentication.**  
+   **AADSTS700213: No matching federated identity record found**  
+   - Ensure the FIC is correctly configured and saved.  
+   - Verify that the issuer/subject matches the format specified above.  
+   - You can also find the expected format in the error stack.
+
+2. **Unable to reach or connect to Power Platform**  
+   - Please refer to [Power Platform Online Requirements](https://learn.microsoft.com/en-us/power-platform/admin/online-requirements) to ensure Power Platform endpoints are reachable and allowlisted.
 
 
 
