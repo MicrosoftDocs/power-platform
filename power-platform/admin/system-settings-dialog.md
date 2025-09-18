@@ -12,8 +12,6 @@ search.audienceType:
 ---
 # System Settings dialog box  
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Use the **System Settings** dialog box to specify system-level settings for your environment and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
 > [!NOTE]

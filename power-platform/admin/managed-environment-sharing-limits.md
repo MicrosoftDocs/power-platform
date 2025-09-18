@@ -21,8 +21,6 @@ ms.custom:
 ---
 # Limit sharing
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 <!-- https://go.microsoft.com/fwlink/?linkid=2194484 and 2211538 -->
 
 In Managed Environments, admins can limit how broadly users can share canvas apps, flows, and agents. 
