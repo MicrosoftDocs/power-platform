@@ -200,22 +200,13 @@ If you need to give access to an application ID to access Azure resources, such 
 
 Verify that your plug-in can securely request access to Azure resources that support managed identity, eliminating the need for separate credentials.
 
-
 ## FAQs
 
-1. **Getting Error – A configuration issue is preventing authentication.**  
+1. How do I resolve the this error? **Getting Error – A configuration issue is preventing authentication.**  
    **AADSTS700213: No matching federated identity record found**  
    - Ensure the FIC is correctly configured and saved.  
    - Verify that the issuer/subject matches the format specified above.  
    - You can also find the expected format in the error stack.
 
-2. **Unable to reach or connect to Power Platform**  
+2. How do I resolve this error? **Unable to reach or connect to Power Platform**  
    - Please refer to [Power Platform URLs and IP address ranges](https://learn.microsoft.com/en-us/power-platform/admin/online-requirements) to ensure Power Platform endpoints are reachable and allowlisted.
-
-
-
-
-
-
-
-
