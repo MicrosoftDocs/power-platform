@@ -13,7 +13,7 @@ search.audienceType:
 ---
 
 
-# Power Platform managed identity overview (preview)
+# Power Platform managed identity overview
 
 Power Platform managed identity allows enterprises to securely connect with Azure resources that support Azure managed identity from Dataverse plug-ins without the need for managing the credentials. 
 
