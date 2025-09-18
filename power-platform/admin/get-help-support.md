@@ -73,7 +73,7 @@ The Support agent is an agentic chat which takes you through a workflow to resol
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
-1. On the **Support requests** page, select **Get support**. The **Support agent** pane is displayed.
+1. On the **Support requests** page, select **Get support**. The **Support agent** pane is displayed. Using a chat-like experience, complete the following steps of this procedure.
 1. **Describe the issue.** <br>
     Describe the issue to the agent. Provide as much detail as you can to help the agent understand and categorize the issue. All information is used to both find solutions and create a support request.
 
@@ -82,7 +82,7 @@ The Support agent is an agentic chat which takes you through a workflow to resol
 1. **Answer interview questions from the agent.** <br>
     The agent uses AI to interpret the issue description and may ask clarifying questions to gather details for solutions and a support request. The agent may ask for a **Category** and **Subcategory** to help route the request to the appropriate Microsoft support representative. All information that you provide is included in the description of your support request.
 
-   If you don’t have the details requested by the interview question, simply reply with “_I don’t have them_” or “_I don’t know_” and the interview will progress or complete.
+   If you don’t have the details requested by the agent, simply reply with “_I don’t have them_” or “_I don’t know_” and the interview will progress or complete.
 
 1. **Review solutions.** <br>
     The Support agent provides solutions based on your description. The agent restates the issue, as understood by the agent, checks service health alerts, searches through known issues, and generates answers from documentation and community content or triggers troubleshoting dialogs. Review the content and follow the prompts to progress through the solutions.
@@ -97,11 +97,44 @@ If the content doesn't address or resolve your issue and you have a support plan
     Engineers review feedback every day. If you have ideas for how to improve the experience, please take the time to offer your perspective.
 
 ### Use the legacy experience to request support
+The legacy support experience is a support system based on forms and machine learning. It takes you through a workflow to resolve your issue. Through this experience you can find self-help solutions and create a support request to engage Microsoft representatives.
 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
+1. On the **Support requests** page, select **Get support**.
+1. If the **Support agent** pane is displayed, select the ellipses  icon (**...**) in the upper-right of pane. Then select **Switch to old experience.**
+1. Confirm that you want to proceed to the old experience.
+1. The 
 
+1. **Describe the problem.** <br>
+    Select the product you're using. Then provide any requested details, such as the environment, to help Microsoft troubleshoot.
 
+    > [!Note]
+    > If you're unsure about what product to select or if your issue spans products, select the product where the issue was experienced. If you do not see your environment, select **My environment is not listed**.
 
+    Describe the issue. Provide as much detail as you can to help Microsoft categorize and find solutions.
 
+    Select the arrow to submit your answers. The form may ask for a **Type** and **Subtype** to help route the request to the appropriate Support representative. Select the best fit. All information is used to both find solutions and create a support request.
+
+1. **Use Copilot.** <br>
+
+    Once the issue and details are submitted, the issue description will be passed to the **Copilot** tab which will search for service health alerts, search known issues, and generative answers from documentation and community content.
+
+    If the initial answers do not resolve the issue, you may select **No** and ask a follow-up question or **Next** to continue. All information provided is included in the description of your support request.
+
+1. **Review solutions.** <br>
+
+    If the Copilot chat doesn't provide an answer which resolves the issue, content is shown. Content shown here is often troubleshooting dialog and documentation search results. If a dialog is shown, navigate the dialog to a solution to both find and answer and help categorize this issue for any support request. You can then select **Next** to continue to create a support request.
+
+1. **Provide information for the Support team.** <br>
+
+    If self-service content does not resolve your issue, and you have a support plan, you can create a support request. 
+
+    1. Select from available support plans or add a new plan. You may be asked for a **Request reason** as only premium plans allow for advisory support requests.
+    2. Fill out the support request form, severity, and set advanced diagnostic consent. Some products show optional fields where you can provide helpful details for the Microsoft representative.
+    3. Select **Next** to continue to **Contact details**. Fill out your preferences and select **Submit** to create the case. You can track status of the request on the Support page.
+  
+   
 
 
 
