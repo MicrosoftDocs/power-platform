@@ -87,6 +87,8 @@
           href: reference-architectures/sqlserver-canvas-app.md
         - name: Use an autonomous agent in Copilot Studio for document processing
           href: reference-architectures/document-processing-agent.md
+        - name: Use complex relationships with Dataverse
+          href: reference-architectures/complex-relationships-dataverse.md
     - name: Solution ideas
       items:
         - name: Overview

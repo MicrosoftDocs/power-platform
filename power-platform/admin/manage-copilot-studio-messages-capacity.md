@@ -14,8 +14,6 @@ search.audienceType:
 
 # Manage Copilot Studio credits and capacity 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The Microsoft Copilot Studio capacity management experience in the Power Platform admin center allows administrators to manage Copilot Studio credit capacity, while monitoring overall capacity consumption. This experience provides an overview of the licensing models in use. This experience allows administrators to efficiently manage their available session capacity.
 
 ## View summary information

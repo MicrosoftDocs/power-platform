@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Enable document suggestions to recommend related documents
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 > [!IMPORTANT]
 > The document suggestions feature has been deprecated for all tables, except the case table. The case table is available with Dynamics 365 Customer Service. More information: [Create a case](/dynamics365/customer-service/customer-service-hub-user-guide-create-a-case)
 
