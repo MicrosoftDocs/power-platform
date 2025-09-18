@@ -95,7 +95,7 @@ Choose the format that matches your certificate type:
 **Segment reference**
 
 - `eid1` – identity format version  
-- `c/pub` – cloud code for Public/GCC/GCCFr  
+- `c/pub` – cloud code for public cloud, Government Community Cloud (GCC), and first release station in GCC
 - `t/{encodedTenantId}` – tenant ID    
 - `n/plugin` – plug-in component  
 - `e/{environmentId}` – environment ID  
@@ -118,7 +118,7 @@ Choose the format that matches your certificate type:
 
 ### Specialized Azure cloud environments
 
-Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deploying outside Public/GCC/GCCFr:
+Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deploying outside public cloud, GCC, and first release station in GCC:
 
 | Cloud | Audience | Issuer URL | Subject prefix |
 | --- | --- | --- | --- |
@@ -129,7 +129,7 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
 
 > [!NOTE]
 > The **Audience** value is **case-sensitive** and must match exactly.  
-> For Public, GCC, GCCFr (and other non‑listed clouds), defaults are:  
+> For public cloud, GCC, and first release station in GCC (and other non‑listed clouds), defaults are:  
 > Audience `api://AzureADTokenExchange`, Issuer `https://login.microsoftonline.com`, Subject prefix `/eid1/c/pub`.
 
 ## Create and register Dataverse plug-ins
