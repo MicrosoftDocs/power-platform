@@ -24,7 +24,7 @@ Admins can use the [Support experience](https://admin.powerplatform.microsoft.co
 ## Prerequisites
 
 ### Security roles
-You must have one of the following security roles:
+You must have one of the following security roles to access the **Support requests** page in the Power Platform admin center.
 
 - Billing Admin
 - Company Admin
@@ -66,7 +66,7 @@ You can access self-help resources in the Support experience without a support p
 ## Request support
 There are two experiences depending on your tenant and scenario. Most will see the new Support agent, but some may see the older experience.
 
-While the Support agent is in preview state, users can switch between experiences by selecting the … menu or toggle in the upper-right of the panel.
+While the Support agent is in preview state, users can switch between experiences by selecting the ellipses  icon (**...**) in the upper-right of the **Support agent** pane.
 
 ### Use the Support agent to request support (preview)
 The Support agent is an agentic chat which takes you through a workflow to resolve your issue. It is an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. You can find self-help solutions, create a support request, and engage Microsoft representatives. 
@@ -74,19 +74,21 @@ The Support agent is an agentic chat which takes you through a workflow to resol
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
 1. On the **Support requests** page, select **Get support**. The **Support agent** pane is displayed.
-1. Provide as much detail as you can to help Microsoft understand and categorize the issue. All information will be used to both find solutions and create a support request. Indicate which product you're using.
+1. **Issue** <br>
+    Describe the issue to the agent. Provide as much detail as you can to help the agent understand and categorize the issue. All information is used to both find solutions and create a support request. Indicate which product you're using.
 
-    The agent will use AI to interpret the issue description and may ask clarifying questions to gather details for solutions and a support request. The agent may ask for a **Category** and **Subcategory** to help route the request to the appropriate Microsoft support representative. All information that you provid is included in the description of your support request.
+1. **Interview** <br>
+    The agent uses AI to interpret the issue description and may ask clarifying questions to gather details for solutions and a support request. The agent may ask for a **Category** and **Subcategory** to help route the request to the appropriate Microsoft support representative. All information that you provide is included in the description of your support request.
 
    If you don’t have the details requested by the interview question, simply reply with “_I don’t have them_” or “_I don’t know_” and the interview will progress or complete.
 
-1. The Support agent provides solutions based on your description.
-
-    The agent restates the issue, as understood by the agent, checks service health alers, searches through known issues, and provides content or resolution steps. Review the content and follow the prompts to progress through the solutions.
+1. **Solutions** <br>
+    The Support agent provides solutions based on your description. The agent restates the issue, as understood by the agent, checks service health alerts, searches through known issues, and generates answers from documentation and community content or triggers troubleshoting dialogs. Review the content and follow the prompts to progress through the solutions.
 
     It's important to note that AI generated content may be incorrect.
    
-1. If the content doesn't address or resolve your issue and you have a support plan, you can continue to create a support request. If a available and eligible, live chat with a Microsoft support representative.
+1. **Escalation** <br>
+If the content doesn't address or resolve your issue and you have a support plan, you can continue to create a support request. If available and eligible, live chat with a Microsoft support representative.
 
     If you don't have an associated plan, you can select **Add a new support contract** to associate a plan using the provided Contract ID and password.
 
