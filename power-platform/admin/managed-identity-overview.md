@@ -14,9 +14,6 @@ search.audienceType:
 
 # Power Platform managed identity overview
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
-
 Power Platform managed identity allows enterprises to securely connect with Azure resources that support Azure managed identity from Dataverse plug-ins without the need for managing the credentials. 
 
 Power Platform managed identity relies on the [workload identities](/entra/workload-id/workload-identities-overview) based on [federated identity credentials](/graph/api/resources/federatedidentitycredentials-overview?view=graph-rest-1.0&preserve-view=true) (FIC). Power Platform managed identity creates [user-assigned managed identities](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp) (UAMI) or application registration for your application in the Microsoft Entra ID tenant of the enterprises. FIC is configured on UAMI or application registration to support managed identity for Dataverse plug-ins.
