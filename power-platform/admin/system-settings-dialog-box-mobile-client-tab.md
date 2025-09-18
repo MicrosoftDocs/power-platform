@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # System Settings Mobile Client tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Use the settings on this page to manage mobile settings.
 
 <!-- legacy procedure -->
