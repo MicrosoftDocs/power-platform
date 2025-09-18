@@ -68,8 +68,26 @@ There are two experiences depending on your tenant and scenario. Most will see t
 
 While the Support agent is in preview state, users can switch between experiences by selecting the … menu or toggle in the upper-right of the panel.
 
-### Use the support agent (preview)
-The Support agent is an agentic chat which takes you through a workflow to resolve your issue. It is an expanding and evolving service with improvements being made and tested all the time. However, it is not purely a virtual support experience. You can find self-help solutions, create a support request, and engage Microsoft representatives. The Support agent has several sequential phases.
+### Use the Support agent (preview)
+The Support agent is an agentic chat which takes you through a workflow to resolve your issue. It is an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. You can find self-help solutions, create a support request, and engage Microsoft representatives. 
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
+1. On the **Support requests** page, select **Get support**. The **Support agent** pane is displayed.
+1. Provide as much detail as you can to help Microsoft understand and categorize the issue. All information will be used to both find solutions and create a support request. Indicate which product you're using.
+
+    The agent will use AI to interpret the issue description and may ask clarifying questions to gather details for solutions and a support request. The agent may ask for a **Category** and **Subcategory** to help route the request to the appropriate Microsoft support representative. All information that you provid is included in the description of your support request.
+
+   If you don’t have the details requested by the interview question, simply reply with “_I don’t have them_” or “_I don’t know_” and the interview will progress or complete.
+
+1. The Support agent provides solutions based on your description.
+
+    The agent restates the issue, as understood by the agent, and provides content or resolution steps. It's important to note that AI generated content may be incorrect.
+   
+1. If the content doesn't address or resolve your issue and you have a support plan, you can continue to create a support request, and if available and eligible, live chat with a Microsoft support representative. 
+
+
+
 
 
 
