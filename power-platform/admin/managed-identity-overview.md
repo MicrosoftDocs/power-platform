@@ -1,10 +1,10 @@
 ---
-title: Power Platform managed identity overview (preview)
+title: Power Platform managed identity overview
 description: Learn about managed identity for Power Platform and Dynamics 365 apps.
 author: abhijananddv
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/17/2025
+ms.date: 09/18/2025
 ms.subservice: admin
 ms.author: abhijanand
 ms.reviewer: sericks
