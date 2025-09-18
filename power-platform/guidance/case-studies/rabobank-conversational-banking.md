@@ -5,7 +5,7 @@ description: Learn how Rabobank uses Microsoft Copilot Studio to deliver efficie
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.subservice: guidance
+ms.subservice: case-study
 ms.topic: overview
 ms.date: 08/11/2025
 ---
