@@ -13,13 +13,10 @@ search.audienceType:
 # System Settings Email tab
 
 > [!IMPORTANT]
-> This article describes how to use the legacy settings experience for managing email. For information about the current experience, go to [Email settings](settings-email.md).
+> This article describes how to use the legacy settings experience for managing email. Many of these settings can be found in the Power Platform admin center by going to **Manage** > **Environments** > [select an environment] > **Settings** > **Email** > **Email settings**. More information: [Email settings](settings-email.md).
 
 Use the settings on this page to set up email processing in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
 
-> [!NOTE]
-> Many of these settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Email settings**.
-  
 ## Open the System Settings Email tab 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
