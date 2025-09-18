@@ -24,7 +24,7 @@ Admins can use the [Support experience](https://admin.powerplatform.microsoft.co
 ## Prerequisites
 
 ### Security roles
-You must have on of the following security roles:
+You must have one of the following security roles:
 
 - Billing Admin
 - Company Admin
