@@ -134,7 +134,27 @@ The legacy support experience is a support system based on forms and machine lea
     2. Fill out the support request form, severity, and set advanced diagnostic consent. Some products show optional fields where you can provide helpful details for the Microsoft representative.
     3. Select **Next** to continue to **Contact details**. Fill out your preferences and select **Submit** to create the case. You can track status of the request on the Support page.
   
-   
+## Support plan information
+When you submit a support request, you must enter your **Contract ID/Password** information. Be sure to enter your Unified or Premier contract ID. The **Contract ID/Password** defaults to the Unified or Premier contract ID. If you have changed the password when registering online in the Unified/Premier portal, you should use the updated password instead of the contract ID.
+
+> [!Important]
+> If you don't know your access or contract ID, contact your service admin or incident manager or Customer Success Account Manager (CSAM).
+
+## Self-help content types
+Several distinct types of content may be presented during the Solutions phase of the Support Agent workflows. As you progress through each step, these resources are designed to help you pinpoint the causes and find resolutions for your issue. If a particular resource does not apply, you can choose to move forward, or, when prompted by a troubleshooting dialog, select the most appropriate answers to describe your situation.
+
+## Service health alerts
+
+
+
+
+
+
+
+
+
+
+
 
 
 
