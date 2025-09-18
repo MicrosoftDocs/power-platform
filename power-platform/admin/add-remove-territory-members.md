@@ -22,8 +22,6 @@ searchScope:
 ---
 # Add or remove sales territory members
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 <!-- legacy procedure -->
 
 To accommodate changes in sales territories or the representatives that are assigned to each territory, you can add or remove territory members.  

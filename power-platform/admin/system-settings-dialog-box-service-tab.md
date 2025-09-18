@@ -14,8 +14,6 @@ ms.contributors:
 ---
 # System Settings Service tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Use this tab to set preferences for the customer service area, such as service level agreements and entitlements in model-driven apps in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 
 <!-- legacy procedure -->
