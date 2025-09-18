@@ -1,19 +1,19 @@
 ---
-title: Set up managed identity for Power Platform (preview)
-description: Learn how to set up Power Platform managed identity.
-author: ritesp
+title: Set up managed identity for Power Platform - Dataverse plug-ins
+description: Learn how to set up Power Platform managed identity for Dataverse plug-ins.
+author: abhijananddv
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/17/2025
+ms.date: 09/18/2025
 ms.subservice: admin
-ms.author: ritesp
-ms.reviewer: ellenwehrle
+ms.author: abhijanand
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
 ---
 
-# Set up managed identity for Power Platform - Dataverse Plugins
+# Set up managed identity for Power Platform - Dataverse plug-ins
 
 Power Platform managed identity allows Dataverse plug-ins to connect with Azure resources to support managed identity without the need of credentials. This article helps you set up managed identity in your Power Platform environments.
 
@@ -94,14 +94,13 @@ Choose the format that matches your certificate type:
 
 **Segment reference**
 
-- `eid1` – identity format version (fixed)  
-- `c/pub` – cloud code for Public/GCC/GCCFr (see specialized clouds below)  
-- `t/{encodedTenantId}` – tenant ID (encoded; see *Encoding* below)  
-- `a/qzXoWDkuqUa3l6zM5mM0Rw` – fixed production app id for external customers  
+- `eid1` – identity format version  
+- `c/pub` – cloud code for public cloud, Government Community Cloud (GCC), and first release station in GCC
+- `t/{encodedTenantId}` – tenant ID    
 - `n/plugin` – plug-in component  
 - `e/{environmentId}` – environment ID  
 - `h/{hash}` – SHA‑256 of certificate (self-signed only)  
-- `i/{issuer}`, `s/{certificateSubject}` – trusted-issuer details (production)
+- `i/{issuer}`, `s/{certificateSubject}` – trusted-issuer details
 
 > [!NOTE]
 > **Encoding for `{encodedTenantId}`**  
@@ -119,7 +118,7 @@ Choose the format that matches your certificate type:
 
 ### Specialized Azure cloud environments
 
-Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deploying outside Public/GCC/GCCFr:
+Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deploying outside public cloud, GCC, and first release station in GCC:
 
 | Cloud | Audience | Issuer URL | Subject prefix |
 | --- | --- | --- | --- |
@@ -130,7 +129,7 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
 
 > [!NOTE]
 > The **Audience** value is **case-sensitive** and must match exactly.  
-> For Public, GCC, GCCFr (and other non‑listed clouds), defaults are:  
+> For public cloud, GCC, and first release station in GCC (and other non‑listed clouds), defaults are:  
 > Audience `api://AzureADTokenExchange`, Issuer `https://login.microsoftonline.com`, Subject prefix `/eid1/c/pub`.
 
 ## Create and register Dataverse plug-ins
@@ -201,10 +200,14 @@ If you need to give access to an application ID to access Azure resources, such 
 
 Verify that your plug-in can securely request access to Azure resources that support managed identity, eliminating the need for separate credentials.
 
+## Frequently asked questions (FAQs)
 
+1. **How do I resolve the this error?**
+   **Getting Error – A configuration issue is preventing authentication.**  
+   **AADSTS700213: No matching federated identity record found**  
+   - Ensure the FIC is correctly configured and saved.  
+   - Verify that the issuer/subject matches the format specified above.  
+   - You can also find the expected format in the error stack.
 
-
-
-
-
-
+3. **How do I resolve this error?** **Unable to reach or connect to Power Platform**  
+   - Please refer to [Power Platform URLs and IP address ranges](online-requirements.md) to ensure Power Platform endpoints are reachable and allowlisted.
