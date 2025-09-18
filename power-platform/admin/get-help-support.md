@@ -71,9 +71,10 @@ While the Support agent is in preview state, users can switch between experience
 ### Use the Support agent to request support (preview)
 The Support agent is an agentic chat which takes you through a workflow to resolve your issue. It is an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. You can find self-help solutions, create a support request, and engage Microsoft representatives. 
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
-1. On the **Support requests** page, select **Get support**. The **Support agent** pane is displayed. Using a chat-like experience, complete the following steps of this procedure.
+1. **Open the Support agent** <br>
+    1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+    1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
+    1. On the **Support requests** page, select **Get support**. The **Support agent** pane is displayed. Using a chat-like experience, complete the following steps of this procedure.
 1. **Describe the issue.** <br>
     Describe the issue to the agent. Provide as much detail as you can to help the agent understand and categorize the issue. All information is used to both find solutions and create a support request.
 
@@ -99,12 +100,12 @@ If the content doesn't address or resolve your issue and you have a support plan
 ### Use the legacy experience to request support
 The legacy support experience is a support system based on forms and machine learning. It takes you through a workflow to resolve your issue. Through this experience you can find self-help solutions and create a support request to engage Microsoft representatives.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
-1. On the **Support requests** page, select **Get support**.
-1. If the **Support agent** pane is displayed, select the ellipses  icon (**...**) in the upper-right of pane. Then select **Switch to old experience.**
-1. Confirm that you want to proceed to the old experience.
-1. The 
+1. **Use the legacy experience** <br>
+    1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+    1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
+    1. On the **Support requests** page, select **Get support**.
+    1. If the **Support agent** pane is displayed, select the ellipses  icon (**...**) in the upper-right of pane. Then select **Switch to old experience.**
+    1. Confirm that you want to proceed to the old experience.
 
 1. **Describe the problem.** <br>
     Select the product you're using. Then provide any requested details, such as the environment, to help Microsoft troubleshoot.
