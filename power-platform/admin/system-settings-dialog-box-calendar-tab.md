@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # System Settings Calendar tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Use the settings on this page to configure calendar settings for model-driven apps in Dynamics 365.  
   
 ## Open the Calendar System Settings dialog box 

@@ -19,8 +19,6 @@ contributors:
 
 # Connecting and authenticating to data sources
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Connecting and authenticating to a data source is done separately from authenticating to a Power Platform service.
 
 Let's look first at how Power Platform services connect with data sources. Power Platform services connect to external data sources in various ways, but the general pattern is the same. Then, we'll look at how the connections are authenticated. Authentication credentials may be the same or they may be different, depending on the app and the data sources it uses.

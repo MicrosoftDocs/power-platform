@@ -20,8 +20,6 @@ search.app:
 
 # Identify blocked Power Automate flows from data policies
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 As new capabilities become available, such as the inclusion of triggers as part of [connector action control](./connector-action-control.md), it can become critical to quickly identify flows which are in violation of existing data policies. The following scripts help you identify and provide an inventory of these flows for review. The scripts can also help you update your policies for the flows to not fail at runtime.
 
 ## Inventory flows with blocked triggers

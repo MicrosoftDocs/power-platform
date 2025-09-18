@@ -19,8 +19,6 @@ ms.custom: sfi-ga-nochange
 ---
 # Deep dive on specific licenses
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (standard connectors, premium connectors, attended RPA, etc.) are obtained via licenses and add-ons. This article provides details on each license.
 
 To get an overview of the Power Automate key licenses, visit the [types of Power Automate licenses](types.md) page. 

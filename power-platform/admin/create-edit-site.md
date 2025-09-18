@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Create or edit a site to specify location
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 <!-- legacy procedure -->
 
 You can create a new site to add an office location or other facility where service operations take place. You can also edit the details, such as the street address or phone number, for an existing site.  

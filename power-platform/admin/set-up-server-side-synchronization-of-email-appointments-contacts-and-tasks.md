@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Set up server-side synchronization of email, appointments, contacts, and tasks
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can use server-side synchronization to synchronize your email system with Microsoft Dataverse apps at the server level. Dataverse apps could be first-party model-driven apps, like Dynamics 365 (online) apps or custom apps. For example, you can synchronize Dataverse model-driven apps with Microsoft Exchange Online (hosted email server) or Microsoft Exchange Server (on-premises). If you synchronize with Exchange Online or Exchange Server, in addition to Outlook email, you can synchronize Outlook appointments, contacts, and tasks.
   
 You can also use server-side synchronization to synchronize Dataverse apps with a POP3 email server for web-hosted email like Gmail or Outlook.com. If you synchronize email with a POP3 email server, you can’t synchronize appointments, contacts, and tasks, however.
