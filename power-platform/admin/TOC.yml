@@ -182,6 +182,8 @@
                   href: trial-environments.md
                 - name: Dataverse for Teams environment
                   href: about-teams-environment.md
+                - name: Microsoft 365 environment for recurring Copilot prompts
+                  href: recurring-copilot-prompts.md
                 - name: View apps in your environments
                   href: admin-view-apps.md
                 - name: Language collations
