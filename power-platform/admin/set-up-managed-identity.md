@@ -210,4 +210,4 @@ Verify that your plug-in can securely request access to Azure resources that sup
    - You can also find the expected format in the error stack.
 
 3. **How do I resolve this error?** **Unable to reach or connect to Power Platform**  
-   - Please refer to [Power Platform URLs and IP address ranges](https://learn.microsoft.com/en-us/power-platform/admin/online-requirements) to ensure Power Platform endpoints are reachable and allowlisted.
+   - Please refer to [Power Platform URLs and IP address ranges](online-requirements.md) to ensure Power Platform endpoints are reachable and allowlisted.
