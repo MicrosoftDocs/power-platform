@@ -68,7 +68,7 @@ There are two experiences depending on your tenant and scenario. Most will see t
 
 While the Support agent is in preview state, users can switch between experiences by selecting the … menu or toggle in the upper-right of the panel.
 
-### Use the Support agent (preview)
+### Use the Support agent to request support (preview)
 The Support agent is an agentic chat which takes you through a workflow to resolve your issue. It is an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. You can find self-help solutions, create a support request, and engage Microsoft representatives. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
@@ -82,9 +82,18 @@ The Support agent is an agentic chat which takes you through a workflow to resol
 
 1. The Support agent provides solutions based on your description.
 
-    The agent restates the issue, as understood by the agent, and provides content or resolution steps. It's important to note that AI generated content may be incorrect.
+    The agent restates the issue, as understood by the agent, checks service health alers, searches through known issues, and provides content or resolution steps. Review the content and follow the prompts to progress through the solutions.
+
+    It's important to note that AI generated content may be incorrect.
    
-1. If the content doesn't address or resolve your issue and you have a support plan, you can continue to create a support request, and if available and eligible, live chat with a Microsoft support representative. 
+1. If the content doesn't address or resolve your issue and you have a support plan, you can continue to create a support request. If a available and eligible, live chat with a Microsoft support representative.
+
+    If you don't have an associated plan, you can select **Add a new support contract** to associate a plan using the provided Contract ID and password.
+
+    Engineers review feedback every day. If you have ideas for how to improve the experience, please take the time to offer your perspective.
+
+### Use the legacy experience to request support
+
 
 
 
