@@ -1,13 +1,13 @@
 ---
 title: Set up managed identity for Power Platform - Dataverse plugins
-description: Learn how to set up Power Platform managed identity for Dataverse plugins
-author: ritesp
+description: Learn how to set up Power Platform managed identity for Dataverse plugins.
+author: abhijananddv
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/17/2025
+ms.date: 09/18/2025
 ms.subservice: admin
-ms.author: ritesp
-ms.reviewer: ellenwehrle
+ms.author: abhijanand
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
