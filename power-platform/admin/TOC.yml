@@ -572,7 +572,7 @@
               items:
                 - name: Managed identity overview
                   href: managed-identity-overview.md
-                - name: Set up managed identity (preview)
+                - name: Set up managed identity
                   href: set-up-managed-identity.md
             - name: Authenticating to Power Platform services
               href: security/authenticate-services.md
