@@ -570,7 +570,7 @@
                   href: about-lockbox.md
             - name: Power Platform managed identity
               items:
-                - name: Managed identity overview (preview)
+                - name: Managed identity overview
                   href: managed-identity-overview.md
                 - name: Set up managed identity (preview)
                   href: set-up-managed-identity.md
