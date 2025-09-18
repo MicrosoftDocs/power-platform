@@ -100,7 +100,7 @@ If the content doesn't address or resolve your issue and you have a support plan
 ### Use the legacy experience to request support
 The legacy support experience is a support system based on forms and machine learning. It takes you through a workflow to resolve your issue. Through this experience you can find self-help solutions and create a support request to engage Microsoft representatives.
 
-1. **Use the legacy experience** <br>
+1. **Go to the legacy experience** <br>
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
     1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
     1. On the **Support requests** page, select **Get support**.
