@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # System Settings Customization tab 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Use the tab to set preferences for plug-in and workflow tracing and also the use of application mode.
 
 <!-- legacy procedure -->

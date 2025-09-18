@@ -14,8 +14,6 @@ search.audienceType:
 
 # Tutorial: Allocate add-ons to environments 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Add-ons provide extra capabilities that Power Apps, Power Automate flows, and other resources can use. These capabilities can be assigned at the environment level in the Power Platform admin center and are made available based on prior license purchases. To learn more about add-on management, reporting, and access control, see [Add-on capacity management](./capacity-add-on.md).
 
 In this tutorial, you'll learn to:

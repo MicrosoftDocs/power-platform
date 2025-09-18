@@ -12,8 +12,6 @@ search.audienceType:
 ---
 # System Settings Auditing tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Enable auditing to track changes to your organization's data and maintain a log of changes. 
   
 ## Open the System Settings dialog box 
