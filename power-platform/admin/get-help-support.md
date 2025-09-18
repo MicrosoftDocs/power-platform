@@ -75,7 +75,9 @@ The Support agent is an agentic chat which takes you through a workflow to resol
 1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
 1. On the **Support requests** page, select **Get support**. The **Support agent** pane is displayed.
 1. **Describe the issue** <br>
-    Describe the issue to the agent. Provide as much detail as you can to help the agent understand and categorize the issue. All information is used to both find solutions and create a support request. Indicate which product you're using.
+    Describe the issue to the agent. Provide as much detail as you can to help the agent understand and categorize the issue. All information is used to both find solutions and create a support request.
+
+    Indicate which product you're using. If the predicted product is incorrect, select **No**, and then specify the product name.
 
 1. **Answer interview questions from the agent** <br>
     The agent uses AI to interpret the issue description and may ask clarifying questions to gather details for solutions and a support request. The agent may ask for a **Category** and **Subcategory** to help route the request to the appropriate Microsoft support representative. All information that you provide is included in the description of your support request.
