@@ -206,7 +206,7 @@
                       items:
                         - name: Preview and experimental AI models rule
                           href: preview-experimental-ai-models-rule.md
-                        - name: Allow external LLMs rule
+                        - name: Allow external models rule
                           href: allow-llm-generative-responses.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
