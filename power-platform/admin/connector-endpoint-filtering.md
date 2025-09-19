@@ -3,16 +3,17 @@ title: Connector endpoint filtering (preview)
 description: Learn how to configure connector endpoint filtering in data policies to control app, flow, and chatbot connections.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/03/2025
+ms.date: 09/19/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 contributors:
   - NikosMoutzourakis 
   - mikferland-msft
   - mihaelablendea
   - nimoutzo
+  - sericks
 ms.custom:
   - admin-security
   - ai-gen-docs-bap
@@ -54,24 +55,25 @@ When a maker connects their app, flow, or chatbot to a blocked endpoint, they se
 
 The **Endpoint configurable** column on the **Prebuilt Connectors** page in **Data Policies** indicates whether the endpoint filtering capability is supported for the connector.
 
-:::image type="content" source="media/dlp-endpoint-configurable-prebuilt-connectors.png" alt-text="Endpoint configurable in the Prebuilt Connectors page.":::
+:::image type="content" source="media/connector-endpoint-filtering/data-endpoint-configurable-connectors.png" alt-text="Endpoint configurable in the Prebuilt Connectors page.":::
 
 If the value of the **Endpoint configurable** column is **Yes**, you can use this capability by right-clicking and then selecting **Configure connector** > **Connector endpoints**.
 
-:::image type="content" source="media/dlp-configure-connector-connector-endpoints.png" alt-text="Configure connector > Connector endpoints.":::
+:::image type="content" source="media/connector-endpoint-filtering/data-configure-connector-endpoints.png" alt-text="Configure connector > Connector endpoints.":::
 
 This opens a side panel where you specify an ordered list of Allow or Deny URL patterns. The last row in the list is a rule for the wildcard character (`*`) that applies to all endpoints in that connector. By default, the `*` pattern is set up as Allow for new data policies, but you can tag it as Allow or Deny.
 
-:::image type="content" source="media/dlp-specify-ordered-list-allow-deny-url-patterns.png" alt-text="Specify an ordered list of Allow and Deny URL patterns for custom connectors.":::
+:::image type="content" source="media/connector-endpoint-filtering/data-rules-list-panel.png" alt-text="Specify an ordered list of Allow and Deny URL patterns for custom connectors.":::
 
 ### Add new rules
-You can add new rules by selecting **Add endpoint**. New rules are added to the end of the pattern list as the second-to-last rule. This is because `*` is the last entry in the list. However, you can update the order of the patterns by using the **Order** drop-down list or selecting **Move up** or **Move down**. 
 
-:::image type="content" source="media/dlp-add-endpoint-new-rules.png" alt-text="Select Add endpoint to add new rules.":::
+You can add new rules by selecting **Add endpoint**. New rules are added to the end of the pattern list as the second-to-last rule. This is because `*` is the last entry in the list. However, you can update the order of the patterns by using the **Order** drop-down list or selecting **Move up** or **Move down**.
 
-After adding a pattern, you can edit or delete it by selecting a specific row and then selecting **Delete**. 
+:::image type="content" source="media/connector-endpoint-filtering/data-add-endpoint-rules.png" alt-text="Select Add endpoint to add new rules.":::
 
-:::image type="content" source="media/dlp-delete-pattern.png" alt-text="Delete a pattern.":::
+After adding a pattern, you can edit or delete it by selecting a specific row and then selecting **Delete**.
+
+:::image type="content" source="media/connector-endpoint-filtering/data-delete-endpoint-pattern.png" alt-text="Delete a pattern.":::
 
 After you save your connector endpoint filtering rules and the data policy where they're defined, they are instantly enforced on the targeted environments. The following image shows an example where a maker tries to connect their cloud flow to an HTTP endpoint that isn't allowed.
 
@@ -241,8 +243,8 @@ $ConnectorConfigurations = @{
 ``` 
 
 **Notes**
--	The last rule for each connector must always apply to URL `*` to ensure that all URLs are covered by the rules.
--	The order property of the rules for each connector must use numbers 1 to N, where N is the number of rules for that connector.
+-    The last rule for each connector must always apply to URL `*` to ensure that all URLs are covered by the rules.
+-    The order property of the rules for each connector must use numbers 1 to N, where N is the number of rules for that connector.
 
 **Retrieve existing connector configurations for a data policy**
 
@@ -267,17 +269,17 @@ Set-PowerAppDlpPolicyConnectorConfigurations
 Goal:
 
 For the SQL Server connector:
-  -	Deny database “testdatabase” of server “myservername.database.windows.net”
-  -	Allow all other databases of server “myservername.database.windows.net”
-  -	Deny all other servers
+  -    Deny database "testdatabase" of server "myservername.database.windows.net"
+  -    Allow all other databases of server "myservername.database.windows.net"
+  -    Deny all other servers
 
 For the SMTP connector:
-  -	Allow Gmail (server address: smtp.gmail.com, port: 587)
-  -	Deny all other addresses
+  -    Allow Gmail (server address: smtp.gmail.com, port: 587)
+  -    Deny all other addresses
 
 For the HTTP connector:
-  -	Allow endpoints `https://mywebsite.com/allowedPath1` and `https://mywebsite.com/allowedPath2` 
-  -	Deny all other URLs
+  -    Allow endpoints `https://mywebsite.com/allowedPath1` and `https://mywebsite.com/allowedPath2` 
+  -    Deny all other URLs
 
 > [!NOTE]
 > In the following cmdlet, *PolicyName* refers to the unique GUID. Retrieve the data policy GUID by running the **Get-DlpPolicy** cmdlet.
