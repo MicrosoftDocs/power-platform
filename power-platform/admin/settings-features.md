@@ -96,7 +96,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable the usage of external AI models in Copilot Studio and in flows and apps using AI prompts or AI Builder model types| If **Off**, the environment doesn't have access to external AI models. Learn more about the related details in External models. | On |
+| Enable the usage of external AI models in Copilot Studio and in flows and apps using AI prompts or AI Builder model types| If **Off**, the environment doesn't have access to external AI models. Learn more about the related details in [Allow external large language models for generative responses](allow-llm-generative-responses.md). | On |
 
 ## AI prompts
 
