@@ -43,4 +43,4 @@ If your environment is part of an [environment group](environment-groups.md), yo
 1. To apply your changes to the environments in the group, select **Publish rules**.
 
 > [!NOTE]
-> If the **External models** toggle is visible but unable to be switched, that means your organization's admin hasn't allowed access to Anthropic models in the Microsoft 365 admin center. Complete the steps in Connect to Anthropic LLM.
+> If the **External models** toggle is visible but unable to be switched, that means your organization's admin hasn't allowed access to Anthropic models in the Microsoft 365 admin center. Complete the steps in [Connect to Anthropic LLM](https://go.microsoft.com/fwlink/?linkid=2334803).
