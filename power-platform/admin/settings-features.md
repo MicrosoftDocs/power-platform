@@ -92,6 +92,12 @@ Make sure you have the System Administrator security role or equivalent permissi
 |---------|-------------|---------------|
 | Enable the usage of preview and experimental AI models in Copilot Studio and in flows and apps using AI prompts or AI Builder model types.  | If **Off**, the environment doesn't have access to AI models that are experimental or in preview. Learn more about the related details in [Preview and experimental AI models](preview-experimental-ai-models-rule.md).  | On |
 
+## External models
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Enable the usage of external AI models in Copilot Studio and in flows and apps using AI prompts or AI Builder model types| If **Off**, the environment doesn't have access to external AI models. Learn more about the related details in External models. | On |
+
 ## AI prompts
 
 | Setting | Description | Default value |
