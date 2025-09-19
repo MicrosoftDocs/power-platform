@@ -32,6 +32,7 @@ The following [rules](environment-groups.md#rules) can be applied to [environmen
 | 6 | [Back-up retention](backup-restore-environments.md) |
 | 7 | [Default deployment pipeline (preview)](../alm/default-deployment-pipeline-rule-for-environment-groups.md) |
 | 8 | [Generative AI settings](geographical-availability-copilot.md) |
+| 9 | External models |
 | 9 | [Maker welcome content](welcome-content.md) |
 | 10 | [Power Apps component framework for canvas apps](/power-apps/developer/component-framework/component-framework-for-canvas-apps) |
 | 11 | [Preview and experimental AI models](preview-experimental-ai-models-rule.md) |
