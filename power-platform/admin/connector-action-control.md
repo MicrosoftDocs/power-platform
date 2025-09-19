@@ -39,7 +39,7 @@ You can use connector action control to allow or block individual actions or tri
 1. In the **Prebuilt connectors** section, select a *Blockable* connector and then select **More actions** next to it.
 1. Select **Configure connectors** and then **Connector actions**.
 
-    :::image type="content" source="media/connector-action-control/new-dlp-connector-actions.png" alt-text="Select Configure connector > Connector actions." lightbox="media/connector-action-control/dlp-connector-actions.png":::
+    :::image type="content" source="media/connector-action-control/new-data-connector-actions.png" alt-text="Select Configure connector > Connector actions." lightbox="media/connector-action-control/new-data-connector-actions.png":::
 
    > [!NOTE]
    > You can configure connector actions for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
@@ -48,7 +48,7 @@ You can use connector action control to allow or block individual actions or tri
 
    You can also set the **Default connector action settings** to allow or block for any new connector actions that will be added to the connector in the future.
 
-   :::image type="content" source="media/connector-action-control/new-dlp-allow-actions.png" alt-text="Set Allow or Deny for connector actions." lightbox="media/connector-action-control/new-dlp-allow-actions.png":::
+   :::image type="content" source="media/connector-action-control/new-data-allow-actions.png" alt-text="Set Allow or Deny for connector actions." lightbox="media/connector-action-control/new-data-allow-actions.png":::
 
 ## [Classic admin center](#tab/classic)
 
