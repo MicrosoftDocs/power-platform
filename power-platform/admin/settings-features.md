@@ -335,7 +335,7 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable code apps       | Allow users to bring apps they've created outside Power Apps and run them in Power Apps. <br><br> If this setting is turend off, those apps won't run.<br><br>Learn more about [Power Apps code apps](/power-apps/developer/code-apps/). | Off |
+| Enable code apps   | Allow users to bring apps they've created outside of Power Apps and run them in Power Apps. <br><br> If this setting is turend off, those apps won't run.<br><br>Learn more about [Power Apps code apps](/power-apps/developer/code-apps/). | Off |
 
 ## Delete disabled users
 
