@@ -30,7 +30,7 @@ search.app:
 
 # Connector endpoint filtering (preview)
 
-[This article is prerelease documentation and is subject to change.]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Connector endpoint filtering lets admins control which specific endpoints makers can connect to when building apps, flows, or chatbots. It's configured within a data policy, and it's exclusively available for the following connectors:
 
@@ -48,8 +48,7 @@ When a maker connects their app, flow, or chatbot to a blocked endpoint, they se
 > [!WARNING]
 > Endpoint filtering rules don't apply to environment variables, custom inputs, or any endpoint dynamically created at runtime. Only static endpoints are evaluated in the app, flow, or chatbot designers. For more information, see [Known limitations](#known-limitations).
 
-> [!IMPORTANT]
-> [!include [preview](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Add endpoint filtering rules to your data policies
 
