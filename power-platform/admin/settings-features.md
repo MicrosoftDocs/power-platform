@@ -331,7 +331,7 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 |---------|-------------|---------------|
 |Allow publishing of canvas apps with code components| In Power Apps, when importing a solution that includes a Power Apps component framework component, it's essential that the target environment has the **Allow publishing of canvas apps with code components** setting turned on. This setting must be turned on prior to deployment, otherwise the component framework component doesn't function properly within canvas apps.<br><br>After the setting is turned on, and the solution is successfully imported and published. The component becomes part of the app's runtime. As a result, even if the setting is turned off afterwards, the Power Apps component framework continues to work as expected. However, if you need to make further updates or republish the app with changes to the component framework, you must turn on the setting again to ensure continued support for code components.<br><br>This setting is particularly critical for environments that use custom controls or UI enhancements built with the component framework inside canvas apps.  | Off |
 
-## Power Apps Code Apps
+## Power Apps code apps
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
