@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # User channel override
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 With [release channels](/power-apps/maker/model-driven-apps/channel-overview), you can control how often the users in your organization get new features by specifying the release channel.
 
 Admins can override the release channel for a user, called _user channel override_. User channel override takes precedence over the environment channel and app channel. Only the [browser session URL](/power-apps/maker/model-driven-apps/channel-change#changing-the-browser-session-channel) overrides the user channel override.

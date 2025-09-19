@@ -15,8 +15,6 @@ search.audienceType:
 ---
 # Manage sandbox environments
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 A sandbox environment is any non-production environment of Microsoft Dataverse. Isolated from production, a sandbox environment is the place to safely develop and test application changes with low risk.
 
 ## View your sandbox environments  
