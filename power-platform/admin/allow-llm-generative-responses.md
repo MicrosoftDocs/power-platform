@@ -10,6 +10,8 @@ ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.contributors:
+  - jcaugusto
 ---
 
 # Allow external large language models for generative responses
