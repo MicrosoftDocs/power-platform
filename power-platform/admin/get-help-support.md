@@ -142,6 +142,8 @@ When you submit a support request, you must enter your **Contract ID/Password** 
 > [!Important]
 > If you don't know your access or contract ID, contact your service admin or incident manager or Customer Success Account Manager (CSAM).
 
+:::image type="content" source="media/contractID.png" alt-text="Tenant capacity extension in admin center." lightbox="media/contractID.png":::
+
 ## Self-help content types
 Several distinct types of content may be presented during the Solutions phase of the Support Agent workflows. As you progress through each step, these resources are designed to help you pinpoint the causes and find resolutions for your issue. If a particular resource does not apply, you can choose to move forward, or, when prompted by a troubleshooting dialog, select the most appropriate answers to describe your situation.
 
