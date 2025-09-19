@@ -148,24 +148,36 @@ Several distinct types of content may be presented during the Solutions phase of
 ### Service health alerts
 Service health alerts notify you of disruptions affecting your product or tenant. A title and preview of the alert is shown in the card. You can see details by selecting the link. Active and recently resolved alerts can be viewed on the Support Service Health page of the Power Platform admin center, as well as in the Microsoft admin center. Learn more in [View service health](view-service-health.md).
 
+:::image type="content" source="media/service-health-incident.png" alt-text="Tenant capacity extension in admin center." lightbox="media/service-health-incident.png":::
+
 ### Known issues
 Known issues represent bugs or product issues identified by product engineering teams. Details of the issue and any workarounds are provided. If your new issue seems related to a known issue, this is displayed during the support workflow. You can review details by selecting the link. You can search active and resolved known issues on the Support Known Issues page in the Power Platform admin center. Learn more in [View known issues](view-known-issues.md).
+
+:::image type="content" source="media/known-issues.png" alt-text="Tenant capacity extension in admin center." lightbox="media/known-issues.png":::
 
 ### Generative answers
 Generative answers are created in real-time based on your issue description from Microsoft public documentation, internally authored troubleshooting content, and select [Power Platform](https://community.powerplatform.com/) and [Dynamics 365](https://community.dynamics.com/) community forums and blogs. A generative answer card consists of a restatement of the issue as understood, the solution content or resolution steps, clickable citation links, and a navigation prompt. 
 
 It's important to note that AI generated content may be incorrect. 
 
+:::image type="content" source="media/ai-generated-content.png" alt-text="Tenant capacity extension in admin center." lightbox="media/ai-generated-content.png":::
+
 ### Dialogs
 Troubleshooting dialogs are designed to guide you towards a solution should generative answers not resolve the issue. These dialogs are often triggered if there is a level of ambiguity about your issue. Navigating these dialogs to a solution is required to proceed in many cases. These dialogs are created by product teams to represent frequent issues, questions and other topics seen in previous support requests. By navigating the dialog, you can both find answers and help Microsoft categorize the issue, so any support request is routed to the correct Microsoft support representative, and the owning product engineering team is alerted.
+
+:::image type="content" source="media/dialogs.png" alt-text="Tenant capacity extension in admin center." lightbox="media/dialogs.png":::
 
 ### Documentation search results
 (Support Experience only) Displayed are the top 3 search results from Microsoft product documentation based on your selected product and issue description. Select a link to review the articles relevant to your issue.
 
+:::image type="content" source="media/documentation-search-results.png" alt-text="Tenant capacity extension in admin center." lightbox="media/documentation-search-results.png":::
+
 ## Report outage
+If you're experiencing a service outage, select the **Report outage** button to report the outage so that we can timely review and act on it.
 
+Fill out the pages and then submit to have your support request receive an expedited review. 
 
-
+We'd love to know your thoughts on the new outage reporting process. Or, if you'd like to be considered for this limited preview, fill out this form.
 
 
 
