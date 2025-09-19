@@ -38,7 +38,7 @@ If your environment is part of an [environment group](environment-groups.md), yo
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**. Then select the environment you want to manage.
 1. Select the **Rules** tab.
-1. Select the **External models** rule. In the **Preview and experimental AI models** pane, turn the feature **On** or **Off**.
+1. Select the **External models** rule. In the **External models** pane, turn the feature **On** or **Off**.
 1. Save your changes.
 1. To apply your changes to the environments in the group, select **Publish rules**.
 
