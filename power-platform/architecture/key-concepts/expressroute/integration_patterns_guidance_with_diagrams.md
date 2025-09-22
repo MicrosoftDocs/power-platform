@@ -1,9 +1,9 @@
 ---
 title: Designing Scalable Integrations with Power Automate
 description: Design scalable and cost-effective integrations with Power Automate Cloud Flows. Learn key patterns, requirements, and strategies for Microsoft architects.
-author: ifain@microsoft.com
-ms.author: ifain@microsoft.com
-ms.reviewer: ifain@microsoft.com
+author: manuelap-msft
+ms.author: manuelap-msft
+ms.reviewer: jhaskett-msft
 ms.date: 09/17/2025
 ms.topic: concept-article
 ---
@@ -113,12 +113,12 @@ Azure Functions or Service Bus only when justified by business needs.
 
 ### Learn More
 
-https://learn.microsoft.com/power-platform/guidance/white-papers/
+(power-platform/guidance/white-papers)
 
-https://learn.microsoft.com/power-automate/
+(power-automate)
 
-https://learn.microsoft.com/style-guide/welcome/
+(style-guide/welcome)
 
-https://learn.microsoft.com/security/
+(security)
 
-https://learn.microsoft.com/azure/architecture/framework/
+(azure/architecture/framework)
