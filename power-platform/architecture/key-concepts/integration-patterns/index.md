@@ -32,4 +32,4 @@ You'll learn:
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Understand integration requirements](requirements.mdmd)
+> [Understand integration requirements](requirements.md)

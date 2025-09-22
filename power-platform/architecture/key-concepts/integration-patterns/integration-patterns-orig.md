@@ -43,7 +43,7 @@ load and responsiveness differently.
 Architects must also consider seasonality (for example, tax season spikes) and
 future growth trajectories to ensure long-term scalability.
 
-:::image type="content" source="media/IntegrationPattern_VolumeFrequency_v1.png" alt-text="Diagram showing how volume and frequency varies with values":::
+:::image type="content" source="../media/integration-patterns/volume-frequency.png" alt-text="Diagram showing how volume and frequency varies with values":::
 Diagram: Volume vs. Frequency Impact on Integration Design
 
 ### 2. Directionality
@@ -56,7 +56,7 @@ Architects must assess system availability, compliance requirements, and
 security constraints. For example, legacy systems may prohibit inbound
 connections, requiring reverse integration patterns.
 
-:::image type="content" source="media/IntegrationPattern_Directionality_Mapping_v1.png" alt-text="Diagram showing how directionality of data mapping matters":::
+:::image type="content" source="../media/integration-patterns/directionality-mapping.png" alt-text="Diagram showing how directionality of data mapping matters":::
 Diagram: Directionality Mapping Across Systems
 
 ### 3. Capability
@@ -68,7 +68,7 @@ transformation logic, and error handling.
 For instance, if Dataverse cannot handle high-frequency updates,
 architects may introduce Azure Data Lake or Synapse Link as a buffer.
 
-:::image type="content" source="media/IntegrationPattern_Capability_Analysis_v1.png" alt-text="Diagram showing capability analysis":::
+:::image type="content" source="../media/integration-patterns/capability-analysis.png" alt-text="Diagram showing capability analysis":::
 Diagram: Capability Analysis and System Bottlenecks
 
 ## Integration Patterns
