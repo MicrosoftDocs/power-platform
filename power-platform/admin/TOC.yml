@@ -182,6 +182,8 @@
                   href: trial-environments.md
                 - name: Dataverse for Teams environment
                   href: about-teams-environment.md
+                - name: Microsoft 365 environment for recurring Copilot prompts
+                  href: recurring-copilot-prompts.md
                 - name: View apps in your environments
                   href: admin-view-apps.md
                 - name: Language collations
@@ -570,9 +572,9 @@
                   href: about-lockbox.md
             - name: Power Platform managed identity
               items:
-                - name: Managed identity overview (preview)
+                - name: Managed identity overview
                   href: managed-identity-overview.md
-                - name: Set up managed identity (preview)
+                - name: Set up managed identity
                   href: set-up-managed-identity.md
             - name: Authenticating to Power Platform services
               href: security/authenticate-services.md

@@ -14,7 +14,6 @@ search.audienceType:
 ---
 
 # Environment management capabilities
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The [Managed Environments](managed-environment-overview.md) concept has been reimagined in the [new and improved Power Platform admin center](new-admin-center.md). _**Environment management**_, an offering of premium capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights is now available.
 

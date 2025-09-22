@@ -13,6 +13,8 @@ search.audienceType:
 # Edit existing SharePoint site records
 
 Store documents related to your records in [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] folders and manage the folders and documents from within Power Apps apps and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Integrating [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] document management with your apps makes it easy to access and share documents associated with your records.  
+=======
+Store documents related to your records in [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] folders and manage the folders and documents from within customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Integrating [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] document management with customer engagement apps makes it easy to access and share documents associated with your records.  
   
 > [!TIP]
 >  You can take advantage of server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration between Power Apps and customer engagement apps and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)]. Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration provides an immersive document management experience consistent with the look and feel of Power Apps and customer engagement apps.  
