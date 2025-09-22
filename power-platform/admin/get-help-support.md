@@ -93,7 +93,7 @@ The Support agent is an agentic chat which takes you through a workflow to resol
 1. **Escalate the issue, if needed.** <br>
 If the content doesn't address or resolve your issue and you have a support plan, you can continue to create a support request. If available and eligible, live chat with a Microsoft support representative.
 
-    If you don't have an associated plan, you can select **Add a new support contract** to associate a plan using the provided Contract ID and password. Learn more in [Support plan information](##support-plan-information).
+    If you don't have an associated plan, you can select **Add a new support contract** to associate a plan using the provided Contract ID and password. Learn more in [Support plan information](#support-plan-information).
 
     If offered a customer statisfaction (CSAT) survey, please take the time to respond with your experience and perspective to improve the experience. Engineers review feedback every day.
    
@@ -136,8 +136,8 @@ The legacy support experience is a support system based on forms and machine lea
     2. Fill out the support request form, severity, and set advanced diagnostic consent. Some products show optional fields where you can provide helpful details for the Microsoft representative.
     3. Select **Next** to continue to **Contact details**. Fill out your preferences and select **Submit** to create the case. You can track status of the request on the Support page.
   
-## Support plan information
-When you submit a support request, you must enter your **Contract ID/Password** information. Be sure to enter your Unified or Premier contract ID. The **Contract ID/Password** defaults to the Unified or Premier contract ID. If you have changed the password when registering online in the Unified/Premier portal, you should use the updated password instead of the contract ID.
+## Add a support plan
+If you need to add a new support plan, you must enter your **Contract ID/Password** information. Be sure to enter your Unified or Premier contract ID. The **Contract ID/Password** defaults to the Unified or Premier contract ID. If you have changed the password when registering online in the Unified/Premier portal, you should use the updated password instead of the contract ID.
 
 > [!Important]
 > If you don't know your access or contract ID, contact your service admin or incident manager or Customer Success Account Manager (CSAM).
@@ -174,8 +174,10 @@ Troubleshooting dialogs are designed to guide you towards a solution should gene
 
 :::image type="content" source="media/documentation-search-results.png" alt-text="Image of a sample documentation search results." lightbox="media/documentation-search-results.png":::
 
-## Report outage
-If you're experiencing a service outage, select the **Report outage** button to report the outage so that we can timely review and act on it.
+## Report an outage
+Depending on your tenant, you may be able to access the direct Report Outage feature. If enabled, the "Report outage" button will be visible on any of the Support pages, next to the "Get support" button. If the "Report Outage" feature. is not enabled, you can navigate the Support Agent or Experience workflows to create a high priority support request as long as you have an active support plan.
+
+To use the the **Report outage** feature to raise a high-priority support request, complete the following steps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
