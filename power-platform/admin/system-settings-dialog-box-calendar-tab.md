@@ -16,9 +16,7 @@ search.audienceType:
 > This article describes how to use the legacy settings experience for configuring the service calendar. For information about the current experience, go to [Service scheduling overview](/dynamics365/customer-service/use/uci-scheduling-overview).
 
 Use the settings on this page to configure service calendar settings for model-driven apps in Dynamics 365.  
-=======
-Use the settings on this page to configure calendar settings for model-driven apps in Dynamics 365.  
-  
+
 ## Open the Calendar System Settings tab 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
