@@ -20,8 +20,6 @@ ms.custom:
 
 # Manage admin roles with Microsoft Entra Privileged Identity Management
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Manage high-privileged admin roles in the Power Platform admin center using Microsoft Entra Privileged Identity Management (PIM).
 
 ## Prerequisites
