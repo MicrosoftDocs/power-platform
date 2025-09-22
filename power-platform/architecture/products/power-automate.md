@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 07/15/2025
+ms.date: 09/22/2025
 ---
 
 # Power Automate reference architectures and solution ideas
@@ -27,8 +27,10 @@ Understanding reference architectures and exploring solution ideas can help you 
 | Title | Description |
 | --- | --- |
 | [**Distributed tracing across multiple services in Power Platform**](../key-concepts/distributed-tracing.md) | Learn how to achieve observability across services like Power Platform, Azure, and Dynamics 365. |
+| [**Cloud flow integration patterns**](../key-concepts/integration-patterns/index.md) | Learn how to design scalable and cost-effective integrations with Power Automate. Identify requirements and explore design patterns. |
 | [**Power Automate coding guidelines**](/power-automate/guidance/coding-guidelines/) | Learn about standards for naming objects, collections, and variables, and guidelines for developing consistent, well-performing, and easily maintainable flows. |
 | [**Introduction to SAP GUI–based RPA in Power Automate desktop**](/power-automate/guidance/rpa-sap-playbook/introduction) | Prototype the automation of an example SAP scenario with robotic process automation (RPA). |
+
 
 ## Reference architectures
 

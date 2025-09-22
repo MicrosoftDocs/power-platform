@@ -5,7 +5,7 @@ description: Learn foundational principles to design scalable and efficient solu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 08/19/2025
+ms.date: 09/22/2025
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
@@ -31,4 +31,5 @@ The following table describes the key concepts of Power Platform and Copilot Stu
 | **[Dataverse auditing](dataverse-auditing.md)** | Learn how to track and record changes to data, user activities, and system events with Dataverse auditing. |
 | **[CRM data migration to Dataverse: Key insights and best practices](data-migration/index.md)** | Learn how to move data from external customer relationship management (CRM) systems to Microsoft Dataverse, overcome common challenges, and ensure business continuity. |
 | **[Distributed tracing across multiple services](distributed-tracing.md)** | Learn how to achieve comprehensive observability across services like Power Platform, Azure, and Dynamics 365. |
+| **[Cloud flow integration patterns](integration-patterns/index.md)** | Learn how to design scalable and cost-effective integrations with Power Automate. Identify requirements and explore design patterns. |
 | **[Manage Power Platform solution performance](performance/index.md)** | Learn about key concepts and considerations for managing the performance of Power Platform solutions. |
