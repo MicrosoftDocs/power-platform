@@ -4,7 +4,7 @@ description: Use the Support experience to contact a Microsoft support represent
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/17/2025
+ms.date: 09/22/2025
 ms.subservice: admin
 ms.author: johhar 
 ms.reviewer: sericks
@@ -86,19 +86,19 @@ The Support agent is an agentic chat which takes you through a workflow to resol
    If you don’t have the details requested by the agent, simply reply with “_I don’t have them_” or “_I don’t know_” and the interview will progress or complete.
 
 1. **Review solutions.** <br>
-    The Support agent provides solutions based on your description. The agent restates the issue, as understood by the agent, checks service health alerts, searches through known issues, and generates answers from documentation and community content or triggers troubleshoting dialogs. Review the content and follow the prompts to progress through the solutions.
+    The Support agent provides solutions based on a summarization of your description and interview responses. The agent checks service health alerts for your selected product, searches through known issues, generates answers from documentation and community content and may trigger a troubleshooting dialog. Review the content and follow the prompts to progress through the solutions.
 
     It's important to note that AI generated content may be incorrect.
    
 1. **Escalate the issue, if needed.** <br>
 If the content doesn't address or resolve your issue and you have a support plan, you can continue to create a support request. If available and eligible, live chat with a Microsoft support representative.
 
-    If you don't have an associated plan, you can select **Add a new support contract** to associate a plan using the provided Contract ID and password.
+    If you don't have an associated plan, you can select **Add a new support contract** to associate a plan using the provided Contract ID and password. Learn more in [Support plan information](##support-plan-information).
 
-    Engineers review feedback every day. If you have ideas for how to improve the experience, please take the time to offer your perspective.
-
+    If offered a customer statisfaction (CSAT) survey, please take the time to respond with your experience and perspective to improve the experience. Engineers review feedback every day.
+   
 ### Use the legacy experience to request support
-The legacy support experience is a support system based on forms and machine learning. It takes you through a workflow to resolve your issue. Through this experience you can find self-help solutions and create a support request to engage Microsoft representatives.
+The legacy support experience is a support system based on forms and machine learning. Through this experience you can describe your issue, review any self-help solutions, and create a support request, if needed, to engage Microsoft representatives.
 
 1. **Go to the legacy experience.** <br>
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
