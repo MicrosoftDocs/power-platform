@@ -3,7 +3,7 @@ title: Set up virtual network support for Power Platform
 description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/15/2025
+ms.date: 09/22/2025
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -249,6 +249,6 @@ Ensure you choose the subnet size as per your requirement. After the subnet is d
 - Deploy enterprise policies with the [Microsoft.PowerPlatform/enterprisePolicies ARM template](/azure/templates/microsoft.powerplatform/enterprisepolicies?pivots=deployment-language-arm-template)
 - [Quickstart: Use the Azure portal to create a virtual network](/azure/virtual-network/quick-create-portal)
 - [Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins)
-- [Troubleshoot Virtual Network issues](/troubleshoot/power-platform/power-platform-administration/troubleshoot-virtual-network-power-platform)
+- [Troubleshoot Virtual Network issues](/troubleshoot/power-platform/administration/virtual-network)
 
 
