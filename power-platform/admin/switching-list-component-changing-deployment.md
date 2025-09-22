@@ -2,7 +2,6 @@
 title: "Switch from list component in SharePoint or change deployment type"
 description: "Learn how to switch from list component to server-based authentication for SharePoint and how to change the SharePoint deployment type."
 author: Mattp123
-
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 08/25/2021
@@ -13,10 +12,14 @@ search.audienceType:
 ---
 # Switch from the list component or change the SharePoint deployment
 
+<!-- This article should be removed and redirected to /power-platform/admin/enable-sharepoint-document-management-specific-entities -->
+
 This article provides an overview about how to switch from the deprecated list component to server-based authentication. This article can also help if you change the [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] deployment type, such as moving from [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises to [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)].
 
 > [!IMPORTANT]
 > In 2015, [we announced the deprecation of the list component]( https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/05/15/dynamics-crm-2015-update-1-list-component-deprecation/?source=crm). Notice that, the list component wasn’t released for Power Apps or the current versions of Dynamics 365 and previous versions of the list component aren’t supported with these versions. If you are using the list component you must move your document management with SharePoint to server-based authentication.
+>
+> For information about the current SharePoint integration capabilities, go to [Enable SharePoint document management for specific tables](enable-sharepoint-document-management-specific-entities.md).
   
 <a name="BKMK_switchlistcomp"></a> 
 ## Switch from list component to server-based authentication
