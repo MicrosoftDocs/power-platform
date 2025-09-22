@@ -3,7 +3,7 @@ title: Integration patterns
 description: Discover integration patterns tailored to specific business scenarios and technical constraints. Learn how to choose the right approach for your architecture.
 #customer intent: As an architect, I want to understand integration patterns so that I can choose the right approach for specific business scenarios and technical constraints.
 author: manuelap-msft
-ms.author: manuelap-msft
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.date: 09/22/2025
 ms.topic: concept-article
@@ -15,7 +15,7 @@ ms.custom:
 
 # Integration patterns
 
-Based on your analysis, the next step is to plan the integration and identify the best integration pattern based on your requirements. The following list of integration patterns is by no means exhaustive. At the very least, you may find that a combination of these patterns may fit for your scenario. 
+Based on your analysis, the next step is to plan the integration and identify the best integration pattern based on your requirements. The following list of integration patterns is by no means exhaustive. At the very least, you might find that a combination of these patterns best fits for your specific scenario. 
 
 Each pattern addresses specific business scenarios and technical constraints:
 

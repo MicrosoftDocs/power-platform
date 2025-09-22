@@ -2,7 +2,7 @@
 title: Designing Scalable Integrations with Power Automate
 description: Design scalable and cost-effective integrations with Power Automate Cloud Flows. Learn key patterns, requirements, and strategies for Microsoft architects.
 author: manuelap-msft
-ms.author: manuelap-msft
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.date: 09/17/2025
 ms.topic: concept-article

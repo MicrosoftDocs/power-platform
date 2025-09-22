@@ -1,15 +1,15 @@
 ---
-title: Design scalable integrations with Power Automate
+title: Design scalable integrations with Power Automate - edits
 description: Design scalable and cost-effective integrations with Power Automate. Learn key patterns, requirements, and strategies for robust enterprise solutions.
 #customer intent: As a solution architect, I want to design scalable integrations using Power Automate so that I can meet enterprise goals efficiently.
 author: manuelap-msft
-ms.author: manuelap-msft
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.date: 09/22/2025
 ms.topic: overview
 ---
 
-# Design scalable integrations with Power Automate
+# Design scalable integrations with Power Automate - edits
 
 Integration is a critical aspect of modern business processes, enabling seamless data flow and automation across different systems. This article provides a structured approach for designing robust, scalable, and cost-effective integrations using Power Automate cloud flows. It outlines key integration requirements, common patterns, real-world examples, and strategic considerations to help you make informed decisions aligned with enterprise goals.
 
@@ -32,19 +32,19 @@ Successful integration design begins with understanding three foundational dimen
 
 This dimension defines how much data is transferred and how often. It influences the choice of triggers (scheduled vs. event-driven), resource allocation, and performance tuning. For example, sending 60,000 records per hour versus 1,000 records per minute may seem equivalent in volume, but the frequency impacts system load and responsiveness differently. You must also consider seasonality (for example, tax season spikes) and future growth trajectories to ensure long-term scalability.
 
-:::image type="content" source="media/IntegrationPattern_VolumeFrequency_v1.png" alt-text="Diagram showing how volume and frequency varies with values.":::
+:::image type="content" source="../media/integration-patterns/volume-frequency.png" alt-text="Diagram showing how volume and frequency varies with values.":::
 
 ### Directionality
 
 Directionality refers to the source and destination of data flow. It determines how systems interact and whether data flows are inbound, outbound, or bidirectional. Carefully assess system availability, compliance requirements, and security constraints. For example, legacy systems might prohibit inbound connections, requiring reverse integration patterns.
 
-:::image type="content" source="media/IntegrationPattern_Directionality_Mapping_v1.png" alt-text="Diagram showing how directionality of data mapping matters.":::
+:::image type="content" source="../media/integration-patterns/directionality-mapping.png" alt-text="Diagram showing how directionality of data mapping matters.":::
 
 ### Capability
 
 Capability evaluates each system's ability to send, receive, and process data. It identifies bottlenecks and informs caching strategies, transformation logic, and error handling. For instance, if Dataverse can't handle high-frequency updates, architects might introduce Azure Data Lake or Synapse Link as a buffer.
 
-:::image type="content" source="media/IntegrationPattern_Capability_Analysis_v1.png" alt-text="Diagram showing capability analysis.":::
+:::image type="content" source="../media/integration-patterns/capability-analysis.png" alt-text="Diagram showing capability analysis.":::
 
 ## Integration patterns
 
