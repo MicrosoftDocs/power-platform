@@ -1,10 +1,10 @@
 ---
-title: "System SettingsSynchronization tab  | MicrosoftDocs"
-description: System Settings Synchronization tab 
+title: "System SettingsSynchronization tab"
+description: System Settings Synchronization tab in Power Platform.
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/15/2023
+ms.date: 09/15/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -14,9 +14,12 @@ contributors:
 ---
 # System Settings Synchronization tab 
 
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing email with Power Apps and Dynamics 365 apps. For information about the current experience, go to [Manage email settings](settings-email.md).
+
 Use the settings on this page to determine how data is synchronized between customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)]. For example, you can control synchronization between pairs of fields or enable or disable synchronization of additional mailing addresses, assigned tasks, or appointment attachments.  
   
-## Open the System Settings dialog box 
+## Open the System Settings Synchronization tab 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -26,9 +29,12 @@ Use the settings on this page to determine how data is synchronized between cust
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the Power Platform admin center, select an environment. 
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
 
-3. Select **Settings** > **Integration** > **Synchronization**.  
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
+5. Select the **Synchronization** tab.
+6. After making a change, select **OK** to save your changes.
 
 > [!TIP]
 > In addition to the settings mentioned below, there are more settings available to control synchronization behavior. For more information, see [OrgDBOrgSettings for server-side synchronization](OrgDbOrgSettings.md).
