@@ -1,11 +1,10 @@
 ---
-title: "System Settings Marketing tab  | MicrosoftDocs"
-description: System Settings Marketing tab 
+title: "System Settings Marketing tab"
+description: Legacy System Settings Marketing tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/17/2021
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,11 +12,14 @@ search.audienceType:
 ---
 # System Settings Marketing tab
 
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing Dynamics 365 Sales marketing settings. For information about the current experience, go to [Configure in-app marketing settings](/dynamics365/sales/configure-inapp-marketing).
+
 Use the settings on this page to configure marketing settings for customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 
 <!-- legacy procedure -->
 
-## Open the Marketing System Settings dialog box 
+## Open the Marketing System Settings tab 
 
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
 
@@ -27,11 +29,10 @@ Use the settings on this page to configure marketing settings for customer engag
 
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
 
-2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
-
-3. Select **Settings** > **Administration**.
-
-4. Select **System Settings** > **Marketing** tab.  
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
+5. Select the **Marketing** tab.  
 
 |                                                             Settings                                                              |                                                                                                                       Description                                                                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

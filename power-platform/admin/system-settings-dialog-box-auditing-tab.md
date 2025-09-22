@@ -1,10 +1,10 @@
 ---
-title: "System Settings Auditing tab  | MicrosoftDocs"
-description: System Settings Auditing tab 
+title: "System Settings Auditing tab"
+description: Explains the environment settings available on the legacy System Settings Auditing tab in Power Platform.
 author: Mattp123
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/05/2022
+ms.date: 09/10/2025
 ms.subservice: admin
 ms.author: matp
 search.audienceType: 
@@ -12,9 +12,12 @@ search.audienceType:
 ---
 # System Settings Auditing tab
 
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing auditing. For information about the current experience, go to [Manage Dataverse auditing](manage-dataverse-auditing.md).
+
 Enable auditing to track changes to your organization's data and maintain a log of changes. 
   
-## Open the System Settings dialog box 
+## Open the System Settings Auditing tab 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -24,12 +27,11 @@ Enable auditing to track changes to your organization's data and maintain a log 
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
+5. Select the **Auditing** tab.
 
-3. Select **Settings** > **Administration**.
- 
-4. Select **System Settings**, and then select the **Auditing** tab.  
-    
 |      Setting |     Description    |
 |--------------------|---------------------|
 | Start Auditing   | Default: Off. Start or stop auditing.    |
