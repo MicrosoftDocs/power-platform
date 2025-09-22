@@ -271,4 +271,4 @@ Virtual Network support for Power Platform is a crucial feature that allows orga
 - [Set up Virtual Network support for Power Platform](vnet-support-setup-configure.md)
 - [What is subnet delegation?](/azure/virtual-network/subnet-delegation-overview)
 - [Understanding Azure Network Pricing](https://azurenavigator.com/understanding-azure-network-pricing/)
-- [Troubleshoot Virtual Network issues](https://learn.microsoft.com/en-us/troubleshoot/power-platform/administration/virtual-network)
+- [Troubleshoot Virtual Network issues](/troubleshoot/power-platform/administration/virtual-network)
