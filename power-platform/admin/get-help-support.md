@@ -93,7 +93,7 @@ The Support agent is an agentic chat, which takes you through a workflow to reso
 1. **Escalate the issue, if needed.** <br>
 If the content doesn't address or resolve your issue and you have a support plan, you can continue to create a support request. If available and eligible, live chat with a Microsoft support representative.
 
-    If you don't have an associated plan, you can select **Add a new support contract** to associate a plan using the provided Contract ID and password. Learn more in [Support plan information](#support-plan-information).
+    If you don't have an associated plan, you can select **Add a new support contract** to associate a plan using the provided Contract ID and password. Learn more in [Add a supprt plan](#add-a-support-plan).
 
     If offered a customer satisfaction (CSAT) survey, we encourage you to take the time to respond with your experience and perspective to improve the experience. Engineers review feedback every day.
    
