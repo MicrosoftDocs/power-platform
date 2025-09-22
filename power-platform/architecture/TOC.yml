@@ -51,8 +51,12 @@
               href: key-concepts/distributed-tracing-details.md
         - name: Cloud flow integration patterns
           items:
-            - name: Use integration patterns with Power Automate
-              href: key-concepts/integration-pattern-with-power-automate.md
+            - name: Overview
+              href: key-concepts/integration-patterns/index.md
+            - name: Determine requirements
+              href: key-concepts/integration-patterns/requirements.md
+            - name: Explore patterns
+              href: key-concepts/integration-patterns/patterns.md
         - name: Manage solution performance
           items:
             - name: Overview
