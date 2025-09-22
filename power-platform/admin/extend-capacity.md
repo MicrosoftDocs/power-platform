@@ -16,8 +16,6 @@ search.audienceType:
 
 # Extend Dataverse capacity for 30 days
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You have options when you're running low on storage capacity. You can [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or extend an extra 25% capacity to your tenant for 30 days. 
 
 Learn more about storage capacity add-ons in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) and the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).

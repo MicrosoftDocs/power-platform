@@ -13,8 +13,6 @@ search.audienceType:
 
 # Download a list of apps created in your environments
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 With the retirement of the Power Apps admin center, this feature is no longer available.
 
 You can view apps in your environments. In the Microsoft Power Platform admin center, select an environment and then select an item in the **Resources** section. See [Manage Power Apps](admin-manage-apps.md#manage-power-apps). 

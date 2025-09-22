@@ -24,8 +24,6 @@ ms.contributors:
 
 # Manage collaboration settings
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Use collaboration settings to adjust how collaboration features work in Power Platform. 
 
 To adjust the settings in the Power Platform admin center for an environment, follow these steps:

@@ -14,8 +14,6 @@ contributors:
 
 # Migrate bring-your-own-key (BYOK) environments to customer-managed key
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 For customers using the previous [manage the encryption key](manage-encryption-key.md) (BYOK) feature, they can change their environment's encryption to use the new [customer-managed key](customer-managed-key.md). You can also add your existing non-BYOK environments to use the new customer-managed key.
 
 - Add non-BYOK environments – these are environments that you haven’t encrypted with your own key.

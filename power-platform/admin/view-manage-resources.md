@@ -12,8 +12,6 @@ search.audienceType:
 ---
 # Resource overview
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 <!-- This was created for fwlink 2126968. Don't delete. -->
 
 You can install, configure, and manage apps and portals created using Power Apps, flows created using Power Automate, and Dynamics 365 apps in the Power Platform admin center. Dynamics 365 apps refer to Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing, and also apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
