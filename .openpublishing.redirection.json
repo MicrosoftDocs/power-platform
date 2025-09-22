@@ -1830,8 +1830,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "power-platform/guidance/coe/release-notes/theming-1.2.md",
-      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "source_path": "power-platform/availability.md",
+      "redirect_url": "/dynamics365/get-started/availability",
       "redirect_document_id": false
     },
     {
