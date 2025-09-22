@@ -64,12 +64,12 @@ You can access self-help resources in the Support experience without a support p
 >    - If you have a non-Unified/Premier Support plan, verify the plan is active. For support information, see [Community forums](https://community.dynamics.com/forums/thread/).
 
 ## Request support
-There are two experiences depending on your tenant and scenario. Most will see the new Support agent, but some may see the older experience.
+There are two experiences depending on your tenant and scenario. Most see the new Support agent, but some may see the older experience.
 
 While the Support agent is in preview state, users can switch between experiences by selecting the ellipses  icon (**...**) in the upper-right of the **Support agent** pane.
 
 ### Use the Support agent to request support (preview)
-The Support agent is an agentic chat which takes you through a workflow to resolve your issue. It is an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. You can find self-help solutions, create a support request, and engage Microsoft representatives. 
+The Support agent is an agentic chat, which takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. You can find self-help solutions, create a support request, and engage Microsoft representatives. 
 
 1. **Open the Support agent.** <br>
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
@@ -83,7 +83,7 @@ The Support agent is an agentic chat which takes you through a workflow to resol
 1. **Answer interview questions from the agent.** <br>
     The agent uses AI to interpret the issue description and may ask clarifying questions to gather details for solutions and a support request. The agent may ask for a **Category** and **Subcategory** to help route the request to the appropriate Microsoft support representative. All information that you provide is included in the description of your support request.
 
-   If you don’t have the details requested by the agent, simply reply with “_I don’t have them_” or “_I don’t know_” and the interview will progress or complete.
+   If you don’t have the details requested by the agent, reply with “_I don’t have them_” or “_I don’t know_” and the interview will progress or complete.
 
 1. **Review solutions.** <br>
     The Support agent provides solutions based on a summarization of your description and interview responses. The agent checks service health alerts for your selected product, searches through known issues, generates answers from documentation and community content and may trigger a troubleshooting dialog. Review the content and follow the prompts to progress through the solutions.
@@ -95,7 +95,7 @@ If the content doesn't address or resolve your issue and you have a support plan
 
     If you don't have an associated plan, you can select **Add a new support contract** to associate a plan using the provided Contract ID and password. Learn more in [Support plan information](#support-plan-information).
 
-    If offered a customer statisfaction (CSAT) survey, please take the time to respond with your experience and perspective to improve the experience. Engineers review feedback every day.
+    If offered a customer satisfaction (CSAT) survey, we encourage you to take the time to respond with your experience and perspective to improve the experience. Engineers review feedback every day.
    
 ### Use the legacy experience to request support
 The legacy support experience is a support system based on forms and machine learning. Through this experience you can describe your issue, review any self-help solutions, and create a support request, if needed, to engage Microsoft representatives.
@@ -112,7 +112,7 @@ The legacy support experience is a support system based on forms and machine lea
     Select the product you're using. Then provide any requested details, such as the environment, to help Microsoft troubleshoot.
 
     > [!Note]
-    > If you're unsure about what product to select or if your issue spans products, select the product where the issue was experienced. If you do not see your environment, select **My environment is not listed**.
+    > If you're unsure about what product to select or if your issue spans products, select the product where the issue was experienced. If you don't see your environment, select **My environment is not listed**.
 
     Describe the issue. Provide as much detail as you can to help Microsoft categorize and find solutions.
 
@@ -120,17 +120,17 @@ The legacy support experience is a support system based on forms and machine lea
 
 1. **Use Copilot.** <br>
 
-    Once the issue and details are submitted, the issue description will be passed to the **Copilot** tab which will search for service health alerts, search known issues, and generative answers from documentation and community content.
+    Once the issue and details are submitted, the issue description is passed to the **Copilot** tab, which searches for service health alerts, known issues, and generative answers from documentation and community content.
 
-    If the initial answers do not resolve the issue, you may select **No** and ask a follow-up question or **Next** to continue. All information provided is included in the description of your support request.
+    If the initial answers don't resolve the issue, you may select **No** and ask a follow-up question or **Next** to continue. All information provided is included in the description of your support request.
 
 1. **Review solutions.** <br>
 
-    If the Copilot chat doesn't provide an answer which resolves the issue, content is shown. Content shown here is often troubleshooting dialog and documentation search results. If a dialog is shown, navigate the dialog to a solution to both find and answer and help categorize this issue for any support request. You can then select **Next** to continue to create a support request.
+    If the Copilot chat doesn't provide an answer that resolves the issue, content is shown. Content shown here's often troubleshooting dialog and documentation search results. If a dialog is shown, navigate the dialog to a solution to both find and answer and help categorize this issue for any support request. You can then select **Next** to continue to create a support request.
 
 1. **Provide information for the Support team.** <br>
 
-    If self-service content does not resolve your issue, and you have a support plan, you can create a support request. 
+    If self-service content doesn't resolve your issue, and you have a support plan, you can create a support request. 
 
     1. Select from available support plans or add a new plan. You may be asked for a **Request reason** as only premium plans allow for advisory support requests.
     2. Fill out the support request form, severity, and set advanced diagnostic consent. Some products show optional fields where you can provide helpful details for the Microsoft representative.
@@ -145,10 +145,10 @@ If you need to add a new support plan, you must enter your **Contract ID/Passwor
 :::image type="content" source="media/contract-id.png" alt-text="Screen where you enter your Contract ID/Password." lightbox="media/contract-id.png":::
 
 ## Self-help content types
-Several distinct types of content may be presented during the Solutions phase of the Support Agent workflows. As you progress through each step, these resources are designed to help you pinpoint the causes and find resolutions for your issue. If a particular resource does not apply, you can choose to move forward, or, when prompted by a troubleshooting dialog, select the most appropriate answers to describe your situation.
+Several distinct types of content may be presented during the Solutions phase of the Support Agent workflows. As you progress through each step, these resources are designed to help you pinpoint the causes and find resolutions for your issue. If a particular resource doesn't apply, you can choose to move forward, or, when prompted by a troubleshooting dialog, select the most appropriate answers to describe your situation.
 
 ### Service health alerts
-Service health alerts notify you of disruptions affecting your product or tenant. A title and preview of the alert is shown in the card. You can see details by selecting the link. Active and recently resolved alerts can be viewed on the Support Service Health page of the Power Platform admin center, as well as in the Microsoft admin center. Learn more in [View service health](view-service-health.md).
+Service health alerts notify you of disruptions affecting your product or tenant. A title and preview of the alert is shown in the card. You can see details by selecting the link. Active and recently resolved alerts can be viewed on the **Support Service Health** page of the Power Platform admin center, and in the Microsoft admin center. Learn more in [View service health](view-service-health.md).
 
 :::image type="content" source="media/service-health-incident.png" alt-text="Image of a sample service health incident." lightbox="media/service-health-incident.png":::
 
@@ -165,17 +165,17 @@ It's important to note that AI generated content may be incorrect.
 :::image type="content" source="media/ai-generated-content.png" alt-text="Image of a sample generative answer." lightbox="media/ai-generated-content.png":::
 
 ### Dialogs
-Troubleshooting dialogs are designed to guide you towards a solution should generative answers not resolve the issue. These dialogs are often triggered if there is a level of ambiguity about your issue. Navigating these dialogs to a solution is required to proceed in many cases. These dialogs are created by product teams to represent frequent issues, questions and other topics seen in previous support requests. By navigating the dialog, you can both find answers and help Microsoft categorize the issue, so any support request is routed to the correct Microsoft support representative, and the owning product engineering team is alerted.
+Troubleshooting dialogs are designed to guide you towards a solution should generative answers not resolve the issue. These dialogs are often triggered if there's a level of ambiguity about your issue. Navigating these dialogs to a solution is required to proceed in many cases. These dialogs are created by product teams to represent frequent issues, questions, and other topics seen in previous support requests. By navigating the dialog, you can both find answers and help Microsoft categorize the issue, so any support request is routed to the correct Microsoft support representative, and the owning product engineering team is alerted.
 
 :::image type="content" source="media/dialogs.png" alt-text="Image of a sample dialogs." lightbox="media/dialogs.png":::
 
 ### Documentation search results
-(Support Experience only) Displayed are the top 3 search results from Microsoft product documentation based on your selected product and issue description. Select a link to review the articles relevant to your issue.
+(Support Experience only) Displayed are the top three search results from Microsoft product documentation based on your selected product and issue description. Select a link to review the articles relevant to your issue.
 
 :::image type="content" source="media/documentation-search-results.png" alt-text="Image of a sample documentation search results." lightbox="media/documentation-search-results.png":::
 
 ## Report an outage
-Depending on your tenant, you may be able to access the direct Report Outage feature. If enabled, the "Report outage" button will be visible on any of the Support pages, next to the "Get support" button. If the "Report Outage" feature. is not enabled, you can navigate the Support Agent or Experience workflows to create a high priority support request as long as you have an active support plan.
+Depending on your tenant, you may be able to access the direct **Report outage** feature. If enabled, the **Report outage** button is visible on any of the Support pages, next to the **Get support** button. If the **Report outage** feature isn't enabled, you can navigate the Support agent or experience workflows to create a high-priority support request, if you have an active support plan.
 
 To use the the **Report outage** feature to raise a high-priority support request, complete the following steps.
 
@@ -184,7 +184,7 @@ To use the the **Report outage** feature to raise a high-priority support reques
 1. On the **Support requests** page, select **Report outage**. The **Report outage** pane is displayed. Submit information about the outage.
 
 ## Model-driven apps and support environments
-For some support requests, you're asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request which includes a support environment for Power Platform issues, select the **Microsoft Dataverse** product for that field.
+For some support requests, you're asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request that includes a support environment for Power Platform issues, select the **Microsoft Dataverse** product for that field.
 
 ## Related content
 - [Create an effective support request](/power-apps/maker/canvas-apps/service-request-support)
