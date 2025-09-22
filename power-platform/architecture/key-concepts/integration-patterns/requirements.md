@@ -83,5 +83,5 @@ Capability evaluates each system's ability to send, receive, and process data. I
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Review integration patterns](patterns.md)
+> [Explore integration patterns](patterns.md)
 

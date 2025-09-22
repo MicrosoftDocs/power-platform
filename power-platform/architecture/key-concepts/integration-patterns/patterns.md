@@ -15,7 +15,7 @@ ms.custom:
 
 # Integration patterns
 
-Based on your analysis, the next step is to plan the integration and identify the best integration pattern based on your requirements. The following list of integration patterns is by no means exhaustive. At the very least, you might find that a combination of these patterns best fits for your specific scenario. 
+Based on your analysis, the next step is to plan the integration and identify the best pattern based on your requirements. The following list of integration patterns is by no means exhaustive. You might find that a combination of these patterns best fits your scenario.
 
 Each pattern addresses specific business scenarios and technical constraints:
 

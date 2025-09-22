@@ -11,9 +11,9 @@ ms.topic: overview
 
 # Design scalable integrations with Power Automate
 
-Integration is a critical aspect of modern business processes, enabling seamless data flow and automation across different systems. This article provides a structured approach for designing robust, scalable, and cost-effective integrations using Power Automate cloud flows. It outlines key integration requirements, common patterns, real-world examples, and strategic considerations to help you make informed decisions aligned with enterprise goals.
+Integration is a critical aspect of modern business processes, enabling seamless data flow and automation across different systems. This section provides a structured approach for designing robust, scalable, and cost-effective integrations using Power Automate cloud flows. It outlines key integration requirements, common patterns, real-world examples, and strategic considerations to help you make informed decisions aligned with enterprise goals.
 
-This article is intended for solution architects, enterprise architects, and technical decision-makers involved in designing or optimizing integrations across Microsoft Cloud services, including Power Platform, Azure, and Dynamics 365.
+These articles are intended for solution architects, enterprise architects, and technical decision-makers involved in designing or optimizing integrations across Microsoft Cloud services, including Power Platform, Azure, and Dynamics 365.
 
 You'll learn:
 
@@ -32,4 +32,4 @@ You'll learn:
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Understand integration requirements](requirements.md)
+> [Determine integration requirements](requirements.md)
