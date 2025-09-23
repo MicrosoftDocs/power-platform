@@ -20,8 +20,6 @@ contributors:
 
 # Rules for environment groups
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The following [rules](environment-groups.md#rules) can be applied to [environment groups](environment-groups.md).
 
 | # | Rules (in alphabetical order) |
