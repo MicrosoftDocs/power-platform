@@ -107,7 +107,7 @@ The legacy support experience is a support system based on forms and machine lea
     1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
     1. On the **Support requests** page, select **Get support**.
     1. If the **Support agent** pane is displayed, select the ellipses  icon (**...**) in the upper-right of pane. Then select **Switch to old experience.**
-    1. Confirm that you want to proceed to the old experience.
+    1. Confirm that you want to proceed to the old experience. To help us improve, consider offering your feedback as part of switching.
     1. The **How can we help?** pane is displayed. Complete the following steps of this procedure.
 
 1. **Describe the problem.** <br>
@@ -118,7 +118,7 @@ The legacy support experience is a support system based on forms and machine lea
 
     Describe the issue. Provide as much detail as you can to help Microsoft categorize and find solutions.
 
-    Select the arrow to submit your answers. The form may ask for a **Type** and **Subtype** to help route the request to the appropriate Support representative. Select the best fit. All information is used to both find solutions and create a support request.
+    Select the arrow to submit your issue description. The form may ask for a **Type** and **Subtype** to help route the request to the appropriate Support representative. Select the best fit. All information is used to both find solutions and create a support request.
 
 1. **Use Copilot.** <br>
 
