@@ -236,14 +236,14 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 ### Telemetry for model-driven apps
 
 The following URLs must be added to the allow list to ensure communication through firewalls and other security mechanisms for model-driven apps telemetry information:
-- GCC: https://tb.pipe.aria.microsoft.com/Collector/3.0
-- GCC High: https://tb.pipe.aria.microsoft.com/Collector/3.0
-- DoD: https://pf.pipe.aria.microsoft.com/Collector/3.0
+- GCC: `https://tb.pipe.aria.microsoft.com/Collector/3.0`
+- GCC High: `https://tb.pipe.aria.microsoft.com/Collector/3.0`
+- DoD: `https://pf.pipe.aria.microsoft.com/Collector/3.0`
 
 ## Regional Discovery Service is deprecated
 
 ### Discovery Service (Deprecated)
-- GCC: https://disco.crm9.dynamics.com/XRMServices/2011/Discovery.svc
+- GCC: `https://disco.crm9.dynamics.com/XRMServices/2011/Discovery.svc`
 - GCC High: `https://disco.crm.microsoftdynamics.us/XRMServices/2011/Discovery.svc`
 
 Effective March 2, 2020, the regional Discovery Service will be deprecated. More information: Regional Discovery Service is deprecated.
