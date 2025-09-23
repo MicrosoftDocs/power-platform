@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Send email on behalf of another user 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Dynamics 365 users can send an outgoing email on behalf of another user by updating the **From** field to another user or queue.
 
 ## Prerequisites

@@ -1,6 +1,16 @@
 {
   "redirections": [
-    {
+   {
+      "source_path": "power-platform/admin/power-platform-api.md",
+      "redirect_url": "powerplatform-api-getting-started",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/admin/power-platform-api-overview.md",
+      "redirect_url": "powerplatform-api-getting-started",
+      "redirect_document_id": "false"
+   }, 
+   {
       "source_path": "power-platform/admin/security/overview.md",
       "redirect_url": "power-platform/admin/security/security-overview",
       "redirect_document_id": "false"
@@ -1617,6 +1627,216 @@
     {
       "source_path": "power-platform/guidance/adoption/sharing-alerts.md",
       "redirect_url": "/power-platform/guidance/adoption/reactive-governance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/non-administrator-local-install.md",
+      "redirect_url": "/power-platform/guidance/coe/cli/install",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/sample-docker-install.md",
+      "redirect_url": "/power-platform/guidance/coe/cli/install",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/cli/sample-local-install.md",
+      "redirect_url": "/power-platform/guidance/coe/cli/install",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/code-samples/css/default-value-eMail-Header-Style.md",
+      "redirect_url": "/power-platform/guidance/coe/setup-core-components",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases/latest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/auditlog-1.0.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases/latest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/auditlog-1.1.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/auditlog-1.5.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/auditlog-1.4.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/core-1.52.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/core-1.53.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/core-1.54.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/core-1.60.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/core-1.70.6.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/core-1.70.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/core-1.71.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/core-1.72.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/core-1.85.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/core-2.0.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/core-2.1.70.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/core-2.1.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/coreteams-1.5.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/coreteams-1.7.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/coreteams-1.998.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/governance-1.18.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/governance-1.21.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/governance-1.23.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/governance-1.25.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/governance-1.30.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/governance-1.50.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/governance-1.60.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/governance-1.61.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/innovation-1.2.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/nurture-1.14.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/nurture-1.17.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/nurture-1.23.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/nurture-1.40.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/nurture-1.51.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/theming-1.1.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/coe/release-notes/theming-1.2.md",
+      "redirect_url": "https://github.com/microsoft/coe-starter-kit/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/white-papers/managed-environment-activation.md",
+      "redirect_url": "/power-platform/guidance/adoption/admin-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/power-fx/formula-reference-cards.md",
+      "redirect_url": "/power-platform/power-fx/formula-reference-overview",
       "redirect_document_id": false
     }
   ]

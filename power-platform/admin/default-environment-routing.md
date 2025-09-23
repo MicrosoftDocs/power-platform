@@ -3,7 +3,7 @@ title: Environment routing
 description: Learn how to use the environment routing governance feature. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/24/2025
+ms.date: 09/17/2025
 author: akadrno
 ms.custom: NewPPAC
 ms.author: kauguillard 
@@ -15,7 +15,7 @@ search.audienceType:
 
 # Environment routing
 
-Environment routing is a premium governance feature. This feature allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com), [make.powerapps.com](https://make.powerapps.com/), or [make.powerautomate.com](https://make.powerautomate.com/). Environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
+Environment routing is a premium governance feature. This feature allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com), [make.powerapps.com](https://make.powerapps.com/), or Power Automate for desktop. Environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
 
 > [!VIDEO 4e944970-757a-4c21-9349-83bf52672583]
 
@@ -194,9 +194,9 @@ No, the developer environments don't affect your tenant Dataverse quota.
 
 If the creation of the developer environment fails, makers are automatically routed to the default environment.
 
-### What data loss prevention (DLP) policies are applied for the developer environment?
+### What data policies are applied for the developer environment?
 
-No specific DLP policies are assigned to the developer environment. The developer environment inherits existing, tenant-level DLP policies.
+No specific data policies are assigned to the developer environment. The developer environment inherits existing, tenant-level data policies.
 
 ### What are the preconfigured Managed Environments settings for the newly created developer environments?
 

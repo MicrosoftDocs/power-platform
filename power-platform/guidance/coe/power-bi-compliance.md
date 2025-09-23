@@ -29,7 +29,7 @@ The **Compliance and Governance insights** page provides you with a tenant-wide 
 - Apps and flows with duplicate names
 - Apps and flows with test, demo, template in the name
 - Apps, flows, and environments with open [compliance details requests](example-processes.md)
-- Apps currently not compliant with DLP policies or billing policies
+- Apps currently not compliant with data policies or billing policies
 - Grandfathered apps
 - Apps shared with everyone and apps shared with more than 100 users
 - Apps not launched in the last month and in the last quarter
@@ -71,7 +71,7 @@ The **Adoption insights** page provides you with a tenant-wide overview of:
 The **Default environment** page gives you an overview of adoption in the default environment, with the intent to help clean up tech debt in this environment and highlight highly adopted resources that may need to be migrated to a production environment.
 
 - Apps and flows without an owner
-- Apps currently not compliant with DLP policies or billing policies
+- Apps currently not compliant with data policies or billing policies
 - Grandfathered apps
 - Apps shared with everyone and apps shared with more than 100 users
 - Suspended flows

@@ -3,7 +3,7 @@ title: Tenant-to-tenant migrations
 description: Learn about the impact of migrating an environment from one tenant to another. 
 ms.date: 08/06/2025
 ms.topic: concept-article
-author: matapg007
+author: SatishKumarkannanMs
 contributors:
   - SatishKumarkannanMs
   - val-bc 
@@ -13,15 +13,13 @@ contributors:
   - LaurentPepin 
 ms.contributors: ralinga
 ms.subservice: admin
-ms.author: matgupta
+ms.author: satishk
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 
 # Tenant-to-tenant migrations
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 The tenant-to-tenant migration feature allows you to transfer an environment from one tenant to another. This feature supports scenarios such as merging multiple tenants into one and facilitating company acquisitions. The environment doesn't actually _move_, but rather is _linked_ to another tenant. The environment still exists but isn't part of the source tenant anymore. It's accessible and managed under the destination tenant. There are no user interface changes or version changes as part of this move.
 
 ## Before you get started
@@ -256,9 +254,9 @@ TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 
 ### Errors and how to resolve them 
 - If you receive an error that says, **The User mapping file provided for Tenant To Tenant migration is invalid**, check if the user mapping file name is correct and that the user mapping file has a comma to separate values.
-- **Line '{line numbers}' have the same '{emailID}'**: Make sure there aren't any duplicate entries.
-- **Invalid Email Format '{emailid}'**: Make sure the email format is correct for `testuser@tenantdomain.com`.
-- **Target on line '{linenumber}' is same as source emailId**: Make sure the **Destination Email** is different from the **Source Email**.
+- **Line '{line numbers}' have the same '{email ID}'**: Make sure there aren't any duplicate entries.
+- **Invalid Email Format '{email ID}'**: Make sure the email format is correct for `testuser@tenantdomain.com`.
+- **Target on line '{line number}' is same as source email ID**: Make sure the **Destination Email** is different from the **Source Email**.
 - **Each line must have exactly two columns: '{line numbers}'**: Make sure each row has only two columns: the source and destination columns. Remove any extra commas.
 
 After fixing user mapping errors, you need to reupload the user mapping file using the same SAS URI.
@@ -388,7 +386,7 @@ No. The environment remains in place, but the Dataverse organization is moved to
 
 #### Are there any components that aren't fully supported?
 
-Leaern more in [Before you get started](#before-you-get-started) to understand which components are supported and which components aren't supported.
+Learn more in [Before you get started](#before-you-get-started) to understand which components are supported and which components aren't supported.
 
 #### What happens to mailbox configurations?
 

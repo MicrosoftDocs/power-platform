@@ -4,7 +4,7 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/28/2025
+ms.date: 09/17/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -12,11 +12,10 @@ search.audienceType:
   - admin
 contributors:
   - jordanchodak
+  - JesseParsons
 ---
 
 # Track, manage, and scale Copilot adoption in the Power Platform
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The **Copilot** area in the Power Platform admin center is a centralized location for usage and cost insights, upcoming features, learning documents, and granular controls to scale Copilot and agent adoption in Power Platform. Tenant admins and environment admins can access these resources in one place by selecting **Copilot** in the navigation pane.
 
@@ -36,11 +35,14 @@ The **What’s new** page in the **Copilot** area provides admins with a central
 
 The **Settings** page displays settings grouped by product. Some settings span across Power Platform and are at the top in the **Power Platform** section. Settings can be configured at the environment level, with some settings also configurable through environment groups and rules. When you select a setting, a panel opens where you can select your environment, select **Add**, and configure the control. Some settings in the Copilot Studio product direct you to documentation with instructions on how you can configure a data loss prevention (DLP) policy.
 
+> [!Note]
+> Tenant users with environment access can view Copilot settings.
+
 ### Control who can use Copilot features in Power Apps (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-Admins can define who within an environment can use Copilot capabilities—either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is currently in preview and is only for environments with [Managed Environments activated](../../guidance/white-papers/managed-environment-activation.md), with a subset of Copilot features adhering to it. Review the table below to learn which capabilities adhere to this configuration.
+Admins can define who within an environment can use Copilot capabilities—either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is currently in preview and is only for environments activated for [Managed Environments](../managed-environment-enable.md), with a subset of Copilot features adhering to it. Review the table below to learn which capabilities adhere to this configuration.
 
 | Product | Feature |
 |---------|---------|
@@ -123,7 +125,3 @@ Selecting the Power Platform Settings, Power Apps settings or **Manage settings*
 
 > [!Note]
 > There may be a delay of up to eight hours for data refresh.
-
-## Content moderation 
-
-The **Content moderation** section shows a count of queries that are blocked as part of Microsoft’s Responsible AI initiatives. For more information on content moderation, go to [How does Copilot block harmful content?](../../faqs-copilot-data-security-privacy.md#how-does-copilot-block-harmful-content)

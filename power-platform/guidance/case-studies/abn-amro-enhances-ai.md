@@ -4,8 +4,8 @@ description: Learn how ABN AMRO enhanced customer and employee interactions usin
 #customer intent: As a Power Platform user, I want to learn how ABN AMRO enhanced customer and employee interactions using Copilot Studio so that I can apply similar strategies in my organization.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.subservice: case-study
 ms.topic: overview
 ms.date: 05/13/2025
 ---

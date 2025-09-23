@@ -83,7 +83,7 @@
               href: adoption/threat-detection.md
             - name: Establish data protection and privacy controls
               href: adoption/data-protection.md
-            - name: Implement a DLP strategy
+            - name: Implement a data policy strategy
               href: adoption/dlp-strategy.md
             - name: Configure identity and access management
               href: adoption/conditional-access.md
@@ -191,6 +191,8 @@
           href: case-studies/aecom-streamlined-onboarding.md
         - name: Cineplex automates business processes
           href: case-studies/automate-business-processes.md
+        - name: Daimler Truck transforms policy management
+          href: case-studies/daimler-truck-modernizes-policies.md
         - name: Degrees of Change automates nonprofit operations
           href: case-studies/nonprofit.md
         - name: Deutsche Bahn empowers citizen developers
@@ -203,13 +205,15 @@
           href: case-studies/holland-america-customer-experience.md
         - name: John Cockerill streamlines business processes
           href: case-studies/engineering-time-tracking.md
+        - name: Lloyds Banking Group bridges language barriers 
+          href: case-studies/lloyds-banking-group.md
         - name: Rabobank embraces conversational banking
           href: case-studies/rabobank-conversational-banking.md
         - name: SLB enhances productivity with Power Platform and AI
           href: case-studies/slb-enhances-productivity.md
         - name: Teck automates data extraction
           href: case-studies/teck-automates-data-extraction.md
-        - name: T-mobile empowers customer service representatives
+        - name: T-Mobile empowers customer service representatives
           href: case-studies/tmobile-empowers-customer-service.md
     - name: White papers
       items:
@@ -217,8 +221,6 @@
           href: white-papers/index.md
         - name: Enterprise security with Power Platform
           href: white-papers/enterprise-security.md
-        - name: Activating Managed Environments
-          href: white-papers/managed-environment-activation.md
         - name: Migrating apps and flows from the default environment
           href: white-papers/migrating-from-default-environment.md
     - name: Resources

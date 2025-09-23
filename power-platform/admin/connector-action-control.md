@@ -23,8 +23,6 @@ search.app:
 
 # Connector action control
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can use connector action control to allow or block individual actions or triggers within a given connector.
 
 > [!IMPORTANT]
@@ -63,7 +61,7 @@ The list of connector actions is retrieved using calls to Power Apps on behalf o
 
 ### Republish Power Apps
 
-Some Power Apps, published before October 1, 2020, need to be republished for connector action rules to enforce data loss prevention (DLP).
+Some Power Apps, published before October 1, 2020, need to be republished for connector action rules to enforce data policies.
 
 This script helps admins and makers identify the apps that must be republished.
 
@@ -133,17 +131,17 @@ $ConnectorConfigurations = @{
 }
 ``` 
 
-**Retrieve existing connector configurations for a DLP policy**
+**Retrieve existing connector configurations for a data policy**
 ```powershell
 Get-PowerAppDlpPolicyConnectorConfigurations 
 ``` 
 
-**Create connector configurations for a DLP policy**
+**Create connector configurations for a data policy**
 ```powershell
 New-PowerAppDlpPolicyConnectorConfigurations
 ``` 
 
-**Update connector configurations for a DLP policy**
+**Update connector configurations for a data policy**
 ```powershell
 Set-PowerAppDlpPolicyConnectorConfigurations
 ``` 
@@ -155,7 +153,7 @@ Goal:
 -	Allow action GetRepositoryById of connector GitHub; block all other actions.
 
 > [!NOTE]
-> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the DLP GUID by running the **Get-DlpPolicy** cmdlet.
+> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the data policy GUID by running the **Get-DlpPolicy** cmdlet.
 
 ```powershell
 $ConnectorConfigurations = @{ 

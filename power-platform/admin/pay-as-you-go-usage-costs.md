@@ -17,8 +17,6 @@ ms.custom: sfi-image-nochange
 ---
 # View usage and billing information
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Aggregated billing information is available in the Azure portal, and detailed usage drill-downs are available in the Power Platform admin center. Reporting is available for Power Platform (Power Apps per-app, Copilot Studio meter, and Dataverse capacity add-on meters) and Microsoft 365 (Copilot Chat via Copilot Studio meter) consumptive services. 
 
 In March 2022, we released a preview of the Power Platform requests meter. During this preview, we'll report on usage of Power Platform requests in the Power Platform admin center downloadable report. However, we won't bill for this usage until we reach general availability (GA) for this meter; usage won't appear in the Azure portal until then. 

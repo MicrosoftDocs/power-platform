@@ -19,8 +19,6 @@ search.audienceType:
 
 # Geo-to-geo migrations
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 We continue to open new datacenter regions for business services, and to add datacenters to existing regions.
 
 The Geo Migration feature allows customers to move their environments in a single tenant from one region to another. There are no user-interface changes or version changes as part of this move. If the environment resides in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment in a single tenant, moving the environment doesn't move the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment; they're separate services. Your environment still appears in your tenant alongside the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment.  
@@ -57,7 +55,7 @@ The Geo Migration feature allows customers to move their environments in a singl
 - [Managed environment](managed-environment-overview.md#managed-environments-overview) status and associated settings are lost (for example, Admin Digest, Environment Routing). Take note of the managed environment status and associated settings so you can reapply these settings after geo-to-geo migration.
 - Enterprise policy link state and associated properties are lost (for example, [customer-managed keys](./customer-managed-key.md), [Virtual Network](./vnet-support-overview.md)). Take note of any enterprise policies linked to the environment so you can relink the enterprise policies after geo-to-geo migration.
 - [Lockbox](./about-lockbox.md) requests for the environment undergoing G2G are lost or broken. If Microsoft Support needs access to your environment after geo-to-geo migration, you must create a new Lockbox request.
-- [Data Loss Prevention (DLP) policies](wp-data-loss-prevention.md) that either include or exclude the environment undergoing geo-to-geo migration no longer apply to the environment. Take note of the DLP policies that apply to the environment so that you can reapply the policies after geo-to-geo migration.
+- [Data policies](wp-data-loss-prevention.md) that either include or exclude the environment undergoing geo-to-geo migration no longer apply to the environment. Take note of the data policies that apply to the environment so that you can reapply the policies after geo-to-geo migration.
 - The environment undergoing geo-to-geo migration is removed from its [environment group](./environment-groups.md). Take note of the environment group so you can read the environment to the environment group after geo-to-geo migration.
 - [Pay-as-you-go](./pay-as-you-go-overview.md) is lost for the environment undergoing geo-to-geo migration. Take note of any Pay-as-you-go billing policies assigned to the environment that you would like to retain after geo-to-geo migration.
 - [Currency allocations](./capacity-add-on.md) is lost for the environment undergoing geo-to-geo migration. Take note of any currency allocations for the environment that you would like to retain after geo-to-geo migration.
@@ -67,7 +65,7 @@ The Geo Migration feature allows customers to move their environments in a singl
 - [Reenable managed environments](./managed-environment-enable.md) and resave managed environment settings as necessary.
 - Relink enterprise policies to the environment as necessary. For example, [virtual network](./vnet-support-setup-configure.md#configure-your-power-platform-environment), [customer-managed keys](./customer-managed-key.md#manage-environments-encryption)
 - Work with Microsoft Support to recreate Lockbox requests for the environment as necessary.
-- [Reapply DLP policies](./prevent-data-loss.md) to the environment as necessary.
+- [Reapply data policies](./prevent-data-loss.md) to the environment as necessary.
 - [Readd the environment to an environment group](./environment-groups.md#add-environments-to-your-environment-group) as necessary.
 - [Reapply pay-as-you-go plan](./pay-as-you-go-set-up.md#link-an-azure-subscription-to-an-environment) to the environment as necessary.
 - [Repeat currency allocations](./capacity-add-on.md) for the environment as necessary.
