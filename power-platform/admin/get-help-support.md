@@ -19,7 +19,7 @@ ms.custom: sfi-image-nochange
 ---
 # Get Support
 
-Admins can use the [Support experience](https://admin.powerplatform.microsoft.com/support/requests) in the [Power Platform admin center](admin-documentation.md) to get self-help solutions for an issue. If the issue can't be resolved through self-help, you can continue in the same **Support** experience to engage Microsoft support representative using your support plan. Should you need to link a plan with your account, provide your access ID and password. Learn more in [Add a support plan](#add-a-support-plan).
+Admins can use the [Support experience](https://admin.powerplatform.microsoft.com/support/requests) in the [Power Platform admin center](admin-documentation.md) to get self-help solutions for an issue. If the issue can't be resolved through self-help, you can continue in the same **Support** experience to engage Microsoft support representative using your support plan. Should you need to link a plan with your account, you can enter your access ID and password before creating a support request. Learn more in [Add a support plan](#add-a-support-plan).
 
 ## Prerequisites
 
@@ -47,7 +47,7 @@ You must have one of the following security roles to access the **Support reques
 - Teams Admin
 
 ### Support plans
-You can access self-help resources in the Support experience without a support plan. However, to create a request, you must have an active support plan. 
+You can access self-help resources in the Support experience without a support plan. However, to create a support request, you must have an active support plan. 
 
 - Subscription Support
 - Professional Direct Support
@@ -56,7 +56,7 @@ You can access self-help resources in the Support experience without a support p
 [Learn more about and purchase support plans](https://www.microsoft.com/en-us/dynamics-365/support).
 
 > [!Note]
-> In the following cases, you might not be able to create a support request, or we can't provide solutions:
+> In the following cases, you might not be able to create a support request:
 > - There's an issue with your Unified or Premier Support contract. Contact your Incident Manager or Customer Success Account Manager (CSAM).
 > - Your Support subscription has expired. Renew.
 > - We couldn't find your support plan.
@@ -69,11 +69,9 @@ There are two experiences depending on your tenant and scenario. Most see the ne
 While the Support agent is in preview, users can switch between experiences by selecting the ellipses icon (**...**) in the upper-right corner of the **Support agent** pane. You may switch back to the Support agent by closing the pane and selecting **Get support** again, or by selecting the **New experience** toggle at the top of the older experience pane.
 
 ### Use the Support agent to request support (preview)
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-The Support agent is an agentic chat, which takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. You can find self-help solutions, create a support request, and engage Microsoft representatives. 
+The Support agent is an agentic chat, which takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. You can find self-help solutions, create a support request, and engage Microsoft representatives by following these steps.
 
 1. **Open the Support agent.** <br>
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
