@@ -29,7 +29,7 @@ To control the use of external models, complete these steps.
 1. In the **Manage** pane, select **Environments**. Then select the environment you want to manage.
 1. In the command bar, select **Settings**.
 1. On the **Settings** page, select **Product** > **Features**.
-1. On the **Features** page, turn the External models setting **On** or **Off**.
+1. On the **Features** page, turn the **External models** setting **On** or **Off**.
 
 ## Control external models use for an environment group
 If your environment is part of an [environment group](environment-groups.md), you can govern external models use through the **External models** environment group rule.
