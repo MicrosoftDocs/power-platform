@@ -128,7 +128,7 @@ The legacy support experience is a support system based on forms and machine lea
 
 1. **Review solutions.** <br>
 
-    If the Copilot chat doesn't provide an answer that resolves the issue, more content may be shown on this tab. Content shown here are often troubleshooting dialogs or documentation search results. If a dialog is shown, navigate the dialog to a solution to both find and answer and help categorize this issue for any support request. You can then select **Next** to continue to create a support request.
+    If the Copilot chat doesn't provide an answer that resolves the issue, more content may be shown on this tab. Content shown here is often troubleshooting dialogs or documentation search results. If a dialog is shown, navigate the dialog to a solution to both find and answer and help categorize this issue for any support request. You can then select **Next** to continue to create a support request.
 
 1. **Create a support request.** <br>
 
