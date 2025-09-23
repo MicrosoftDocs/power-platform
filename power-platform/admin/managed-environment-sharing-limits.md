@@ -64,7 +64,6 @@ To configure these rules:
 | Let people share solution-aware cloud flows | **When selected:** Users can share solution-aware cloud flows and agent flows with any number of individuals or security groups. <br><br> **When not selected:** Users can't share their cloud flows or agent flows with any individual or security group.|
 
 ## Agent sharing rules 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 | Agent sharing rule | Description |
 | --- | --- |
