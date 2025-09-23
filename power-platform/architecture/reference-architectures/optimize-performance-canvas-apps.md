@@ -159,6 +159,15 @@ Learn more in [Use REST APIs to extend the functionality of canvas apps](custom-
 
 **Test performance**: Along with testing for functionality and failures, test and develop a baseline for performance. Evaluate this baseline during your release cycle if the Dataverse custom API/Power Fx function is sensitive to changes in work completion time.
 
+## Contributors
+
+_Microsoft maintains this article. The following contributors wrote this article._
+
+Principal authors:
+
+- **[Rui Santos](https://www.linkedin.com/in/ruisantosnor/)**, Principal Program Manager
+- **[Ravikiran Patil](https://www.linkedin.com/in/ravikiran-patil-b73b1535/)**, Senior Software Engineer
+
 ## Related resources
 
 - [Create and use custom APIs](/power-apps/developer/data-platform/custom-api)
