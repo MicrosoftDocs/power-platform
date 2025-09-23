@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/16/2025
+ms.date: 09/30/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
@@ -37,7 +37,7 @@ If you're an administrator, you can determine the region of each environment in 
 
 ## What regions are available?
 
-Select the **downloadable Infrastructure and availability PDF** link in [International availability of Microsoft Power Platform](../availability.md).
+Refer to the **Microsoft Dynamics 365 and Power Platform data residency documentation**(/dynamics365/get-started/availability).
 
 ## Who can create environments in these regions?
 
