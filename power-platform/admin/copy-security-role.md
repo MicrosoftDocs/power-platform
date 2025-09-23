@@ -14,8 +14,6 @@ search.audienceType:
 ---
 # Save time creating a security role by copying one
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 If you want to create a security role that is similar to another security role, you can copy an existing security role and save it with a new name. You can then modify the privileges and access levels to accommodate the new security role.  
   
 > [!NOTE]

@@ -21,8 +21,6 @@ ms.contributors:
 
 # Set up Application Insights with Power Automate 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Power Automate telemetry flows into two tables on Application Insights – **Requests** and **Dependencies.** All the downstream alerting and monitoring capabilities we could do on Power Automate data would be within these two tables within Application Insights.
 
 | **Table name**   | **Description**                                         |

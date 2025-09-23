@@ -15,8 +15,8 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "Create rule based policy.",
-        "description": "Create new rule based policy. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "summary": "Create a rule based policy.",
+        "description": "Create a new rule based policy. The input includes rule sets, inputs, and other metadata related to the policy.",
         "operationId": "CreateRuleBasedPolicy",
         "consumes": [
           "application/json"
@@ -214,6 +214,63 @@
         }
       }
     },
+    "/governance/ruleBasedPolicies/{policyId}/assignments": {
+      "get": {
+        "tags": [
+          "RuleBasedPolicies"
+        ],
+        "summary": "List rule based policy assignments for a specific policy.",
+        "description": "Retrieves a list of rule assignments for a specific policy. This operation provides details about the policy assignments, including rule sets and associated resource types.",
+        "operationId": "ListRuleAssignmentsByPolicyId",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "policyId",
+            "description": "The unique identifier of the policy.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "includeRuleSetCounts",
+            "description": "Flag to include rule set counts in the response.",
+            "required": true,
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of policy assignments for the specified policy.",
+            "schema": {
+              "$ref": "#/definitions/RuleAssignmentsResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified policy does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    },
     "/governance/ruleBasedPolicies/{policyId}/environmentGroups/{groupId}/assignments": {
       "post": {
         "tags": [
@@ -237,6 +294,69 @@
             "in": "path",
             "name": "groupId",
             "description": "The unique identifier of the environment group.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The details of the policy.",
+            "schema": {
+              "$ref": "#/definitions/RuleAssignment"
+            }
+          },
+          "201": {
+            "description": "Record created",
+            "schema": {
+              "$ref": "#/definitions/RuleAssignment"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified resource does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    },
+    "/governance/ruleBasedPolicies/{policyId}/environments/{environmentId}/assignments": {
+      "post": {
+        "tags": [
+          "RuleBasedPolicies"
+        ],
+        "summary": "Create environment rule based assignment.",
+        "description": "Create new rule based policy assignment for an environment. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "operationId": "CreateEnvironmentRuleBasedAssignment",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "policyId",
+            "description": "The unique identifier of the policy.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The unique identifier of the environment.",
             "required": true,
             "type": "string"
           },
@@ -320,6 +440,120 @@
           },
           "404": {
             "description": "Not Found - The specified resource does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    },
+    "/governance/ruleBasedPolicies/environmentGroups/{environmentGroupId}/assignments": {
+      "get": {
+        "tags": [
+          "RuleBasedPolicies"
+        ],
+        "summary": "List rule based policy assignments for a specific environment group.",
+        "description": "Retrieves a list of rule assignments for a specific environment group. This operation provides details about the policy assignments, including rule sets and associated resource types.",
+        "operationId": "ListRuleAssignmentsByEnvironmentGroupId",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentGroupId",
+            "description": "The unique identifier of the environment group.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "includeRuleSetCounts",
+            "description": "Flag to include rule set counts in the response.",
+            "required": true,
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of policy assignments for the specified policy.",
+            "schema": {
+              "$ref": "#/definitions/RuleAssignmentsResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified policy does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    },
+    "/governance/ruleBasedPolicies/environments/{environmentId}/assignments": {
+      "get": {
+        "tags": [
+          "RuleBasedPolicies"
+        ],
+        "summary": "List rule based policy assignments for a specific environment.",
+        "description": "Retrieves a list of rule assignments for a specific environment. This operation provides details about the policy assignments, including rule sets and associated resource types.",
+        "operationId": "ListRuleAssignmentsByEnvironmentId",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The unique identifier of the environment group.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "includeRuleSetCounts",
+            "description": "Flag to include rule set counts in the response.",
+            "required": true,
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of policy assignments for the specified policy.",
+            "schema": {
+              "$ref": "#/definitions/RuleAssignmentsResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified policy does not exist."
           },
           "500": {
             "description": "Internal Server Error - Unexpected server error."
@@ -508,7 +742,8 @@
           "description": "The type of resource assigned to the rule.",
           "enum": [
             "NotSpecified",
-            "EnvironmentGroup"
+            "EnvironmentGroup",
+            "Environment"
           ],
           "type": "string",
           "example": "EnvironmentGroup"

@@ -16,8 +16,6 @@ ms.custom:
 
 # Auto-claim policies for Power Apps licenses
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 As an administrator, you traditionally assign licenses to users _manually_. [Auto-claim for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies?view=o365-worldwide&WT.mc_id=365AdminCSH_inproduct#auto-claim-policies-for-microsoft-power-apps&preserve-view=true) enables administrators to easily establish policies within the Microsoft 365 admin center, much like they can for other Microsoft products and services. Once a policy is configured, any user in the organization who requires an individual Power Apps license is automatically granted one under the following circumstances:
 
 - If a user lacks a standalone Power Apps license and launches an app that demands a premium license, the system automatically assigns a Power Apps per user license to that user.
