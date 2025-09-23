@@ -124,11 +124,11 @@ The legacy support experience is a support system based on forms and machine lea
 
     Once the issue and details are submitted, the issue description is passed to the **Copilot** tab, which searches for service health alerts, known issues, and generative answers from documentation and community content.
 
-    If the initial answers don't resolve the issue, you may select **No** and ask a follow-up question or **Next** to continue. All information provided is included in the description of your support request.
+    If the initial answers don't resolve the issue, you may select **No** and ask a follow-up question or **Next** to continue.
 
 1. **Review solutions.** <br>
 
-    If the Copilot chat doesn't provide an answer that resolves the issue, content is shown. Content shown here's often troubleshooting dialog and documentation search results. If a dialog is shown, navigate the dialog to a solution to both find and answer and help categorize this issue for any support request. You can then select **Next** to continue to create a support request.
+    If the Copilot chat doesn't provide an answer that resolves the issue, additional content may be shown on this tab. Content shown here are often troubleshooting dialogs or documentation search results. If a dialog is shown, navigate the dialog to a solution to both find and answer and help categorize this issue for any support request. You can then select **Next** to continue to create a support request.
 
 1. **Provide information for the Support team.** <br>
 
