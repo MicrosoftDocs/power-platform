@@ -134,7 +134,7 @@ The legacy support experience is a support system based on forms and machine lea
 
     If self-service content doesn't resolve your issue, and you have a support plan, you can create a support request. 
 
-    1. Select from available support plans or add a new plan. You may be asked for a **Request reason** as only premium plans allow for advisory support requests.
+    1. Select from available support plans or [add a new plan](#add-a-support-plan). You may be asked for a **Request reason** as only premium plans allow for advisory support requests.
     2. Fill out the support request form, severity, and set advanced diagnostic consent. Some products show optional fields where you can provide helpful details for the Microsoft representative.
     3. Select **Next** to continue to **Contact details**. Fill out your preferences and select **Submit** to create the case. You can track status of the request on the Support page.
   
