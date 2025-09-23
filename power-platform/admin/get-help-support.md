@@ -66,7 +66,7 @@ You can access self-help resources in the Support experience without a support p
 ## Request support
 There are two experiences depending on your tenant and scenario. Most see the new Support agent, but some may see the older experience.
 
-While the Support agent is in preview, users can switch between experiences by selecting the ellipses icon (**...**) in the upper-right of the **Support agent** pane. You may switch back to the Support agent by closing the pane and selecting **Get support** again, or by selecting the **New experience** toggle at the top of the older experience pane.
+While the Support agent is in preview, users can switch between experiences by selecting the ellipses icon (**...**) in the upper-right corner of the **Support agent** pane. You may switch back to the Support agent by closing the pane and selecting **Get support** again, or by selecting the **New experience** toggle at the top of the older experience pane.
 
 ### Use the Support agent to request support (preview)
 The Support agent is an agentic chat, which takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. You can find self-help solutions, create a support request, and engage Microsoft representatives. 
@@ -83,7 +83,7 @@ The Support agent is an agentic chat, which takes you through a workflow to reso
 1. **Answer interview questions from the agent.** <br>
     The agent uses AI to interpret the issue description and may ask clarifying questions to gather details for solutions and a support request. The agent may ask for a **Category** and **Subcategory** to help route the request to the appropriate Microsoft support representative. All information that you provide is included in the description of your support request.
 
-   If you don’t have the details requested by the agent, reply with “_I don’t have them_” or “_I don’t know_” and the interview will progress or complete.
+   If you don’t have the details requested by the agent, reply with “_I don’t have them_” or “_I don’t know_” and the interview continues or completes.
 
 1. **Review solutions.** <br>
     The Support agent provides solutions based on a summarization of your description and interview responses. The agent checks service health alerts for your selected product, searches through known issues, generates answers from documentation and community content and may trigger a troubleshooting dialog. Review the content and follow the prompts to progress through the solutions.
@@ -153,7 +153,7 @@ Service health alerts notify you of disruptions affecting your product or tenant
 :::image type="content" source="media/service-health-incident.png" alt-text="Image of a sample service health incident." lightbox="media/service-health-incident.png":::
 
 ### Known issues
-Known issues represent bugs or product issues identified by product engineering teams. Details of the issue and any workarounds are provided. If your new issue seems related to a known issue, this is displayed during the support workflow. You can review details by selecting the link. You can search active and resolved known issues on the Support Known Issues page in the Power Platform admin center. Learn more in [View known issues](view-known-issues.md).
+Known issues represent bugs or product issues identified by product engineering teams. Details of the issue and any workarounds are provided. If your new issue seems related to a known issue, details are displayed during the support workflow. You can review details by selecting the link. You can search active and resolved known issues on the Support Known Issues page in the Power Platform admin center. Learn more in [View known issues](view-known-issues.md).
 
 :::image type="content" source="media/known-issues.png" alt-text="Image of a sample known issue." lightbox="media/known-issues.png":::
 
@@ -167,7 +167,7 @@ It's important to note that AI generated content may be incorrect.
 ### Dialogs
 Troubleshooting dialogs are designed to guide you towards a solution should generative answers not resolve the issue. These dialogs are often triggered if there's a level of ambiguity about your issue. Navigating these dialogs to a solution is required to proceed in many cases. These dialogs are created by product teams to represent frequent issues, questions, and other topics seen in previous support requests. By navigating the dialog, you can both find answers and help Microsoft categorize the issue, so any support request is routed to the correct Microsoft support representative, and the owning product engineering team is alerted.
 
-:::image type="content" source="media/dialogs.png" alt-text="Image of a sample dialogs." lightbox="media/dialogs.png":::
+:::image type="content" source="media/dialogs.png" alt-text="Image of sample dialogs." lightbox="media/dialogs.png":::
 
 ### Documentation search results
 (Support Experience only) Displayed are the top three search results from Microsoft product documentation based on your selected product and issue description. Select a link to review the articles relevant to your issue.
@@ -177,7 +177,7 @@ Troubleshooting dialogs are designed to guide you towards a solution should gene
 ## Report an outage
 Depending on your tenant, you may be able to access the direct **Report outage** feature. If enabled, the **Report outage** button is visible on any of the Support pages, next to the **Get support** button. If the **Report outage** feature isn't enabled, you can navigate the Support agent or experience workflows to create a high-priority support request, if you have an active support plan.
 
-To use the the **Report outage** feature to raise a high-priority support request, complete the following steps.
+To use the **Report outage** feature to raise a high-priority support request, complete the following steps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
