@@ -37,7 +37,7 @@ If you're an administrator, you can determine the region of each environment in 
 
 ## What regions are available?
 
-Refer to the **Microsoft Dynamics 365 and Power Platform data residency documentation**(/dynamics365/get-started/availability).
+Refer to the [Microsoft Dynamics 365 and Power Platform data residency documentation](/dynamics365/get-started/availability).
 
 ## Who can create environments in these regions?
 
