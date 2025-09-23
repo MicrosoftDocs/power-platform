@@ -19,7 +19,7 @@ ms.custom: sfi-image-nochange
 ---
 # Get Support
 
-Admins can use the [Support experience](https://admin.powerplatform.microsoft.com/support/requests) in the [Power Platform admin center](admin-documentation.md) to get self-help solutions for an issue. If the issue can't be resolved through self-help, you can continue in the same **Support** experience to engage Microsoft support representative using your support plan. Should you need to link a plan with your account, you provide your access ID and password.
+Admins can use the [Support experience](https://admin.powerplatform.microsoft.com/support/requests) in the [Power Platform admin center](admin-documentation.md) to get self-help solutions for an issue. If the issue can't be resolved through self-help, you can continue in the same **Support** experience to engage Microsoft support representative using your support plan. Should you need to link a plan with your account, provide your access ID and password. Learn more in [Add a support plan](#add-a-support-plan).
 
 ## Prerequisites
 
