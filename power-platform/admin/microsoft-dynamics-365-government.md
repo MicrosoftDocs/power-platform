@@ -4,13 +4,14 @@ description: Learn about features that are specific to Microsoft Dynamics 365 US
 author: carrema
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/03/2024
+ms.date: 09/23/2025
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contibutors:
+  - neeranelli 
   - yukonpeegs
   - Akshay-Koushik-Hothur
 ms.contributors:
