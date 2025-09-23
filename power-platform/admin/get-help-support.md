@@ -4,7 +4,7 @@ description: Use the Support experience to contact a Microsoft support represent
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/22/2025
+ms.date: 09/23/2025
 ms.subservice: admin
 ms.author: johhar 
 ms.reviewer: sericks
@@ -66,7 +66,7 @@ You can access self-help resources in the Support experience without a support p
 ## Request support
 There are two experiences depending on your tenant and scenario. Most see the new Support agent, but some may see the older experience.
 
-While the Support agent is in preview state, users can switch between experiences by selecting the ellipses  icon (**...**) in the upper-right of the **Support agent** pane.
+While the Support agent is in preview, users can switch between experiences by selecting the ellipses icon (**...**) in the upper-right of the **Support agent** pane. You may switch back to the Support agent by closing the pane and selecting **Get support** again, or by selecting the **New experience** toggle at the top of the older experience pane.
 
 ### Use the Support agent to request support (preview)
 The Support agent is an agentic chat, which takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. You can find self-help solutions, create a support request, and engage Microsoft representatives. 
