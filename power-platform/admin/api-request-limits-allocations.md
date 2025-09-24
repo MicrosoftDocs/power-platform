@@ -146,7 +146,8 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 7. Once the report is ready, select **Download** to download the report as an Excel CSV file.
 
 > [!NOTE]
-> These reports are currently in preview. There are two limitations with the Licensed User preview report.
+> These reports are in preview and currently limited to Power Automate API requests. API requests from Dataverse, Microsoft Copilot Studio, and Power Apps are not included at this time.
+There are two limitations with the Licensed User preview report.
 >
 > - The entitlements for Licensed Users are showing up in the reporting per user per day per environment. The limits should apply at the per user per day level. When looking at reporting, understand that the limits are per user per day, using the entitlement quantity only one time per day, not summing entitlements for the same user potentially multiple times.
 > - The Licensed User report will not show correct entitlements for users licensed via the Power Apps per app license or Power Apps per app pay-as-you-go meter. Entitlements for such users will be shown as 0 when in fact they should be shown as 6000 (request per 24-hour period as previously outlined).
@@ -163,10 +164,9 @@ The [Licensed User](api-request-limits-allocations.md#licensed-user-request-limi
 | Caller Type | The type of caller identity. Applicable value for licensed user report is User. |
 | Usage Datetime | The date and time of when the usage was captured (UTC). | 
 | Entitled quantity | The total of any Power Platform request limits for the user. | 
-| Total consumed quantity | The total usage across all the types of Requests (Dataverse, Power Apps, and Power Automate). |
-| Dataverse Requests | Number of Power Platform requests originating from Dataverse. | 
+| Total consumed quantity | The total Power Automate API usage . |
 | Power Automate Requests | Number of Power Platform requests originating from Power Automate. | 
-| Power Apps Requests | Number of Power Platform requests originating from Power App. | 
+
 
 Here's a sample of a detailed usage report:
 
@@ -183,10 +183,10 @@ The [Non-licensed User](api-request-limits-allocations.md#non-licensed-user-requ
 | Environment Name	| The display name of environment. |
 | Caller ID	| The unique identifier of the calling identity. This can be null or empty. |
 | Caller Type	| The type of caller identity. Applicable values are System, Non-Interactive/Application.   |
-| Resource Type	| The type of resource. Applicable values are Dataverse, Power Apps, and Power Automate. |
-| Resource ID	| The unique resource identifier. Based on the Resource Type, this could be an app ID, Dataverse Organization ID, or Power Automate Flow ID. This can be null or empty. |
+| Resource Type	| The type of resource. Applicable value currently Power Automate. |
+| Resource ID	| The unique resource identifier. Based on the Resource Type-  Power Automate Flow ID. This can be null or empty. |
 | Meter Category	| The top level meter in this case Power Platform request.    |
-| Meter Subcategory  | 	The detailed classification of what generated the request. This can be Dataverse, Power Apps, or Power Automate. |
+| Meter Subcategory  | 	The detailed classification of what generated the request which is Power Automate. |
 | Usage Datetime | 	The date and time of when the usage was captured (UTC). |
 | Consumed Quantity | 	Usage of Power Platform requests.  |
 
@@ -277,7 +277,7 @@ Here are a few things to be aware of during the transition period:
 
 ### What tools can I use to monitor and analyze Power Platform requests across the platform?
 
-Reporting for Power Platform Request usage in preview is available in the Power Platform admin center.
+Reporting for Power Platform Request usage in preview is available in the Power Platform admin center.These reports are currently limited to Power Automate API requests. API requests from Dataverse, Microsoft Copilot Studio, and Power Apps are not included at this time.
 
 ### What are the timelines for Power Platform Request limits?
 
