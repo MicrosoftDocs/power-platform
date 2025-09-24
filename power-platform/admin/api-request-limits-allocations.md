@@ -196,9 +196,9 @@ Here's a sample of a detailed usage report:
 
 :::image type="content" source="media/non-licensed-user-report.png" alt-text="Image showing an example of the Non-licensed user report." lightbox="media/non-licensed-user-report.png":::
 
-### Per flow report
+### Per flow licensed flows report
 
-The **Per flow** licensed flows downloadable report contains the following fields:
+The **Per flow licensed flows** downloadable report contains the following fields:
 
 | Field	| Description |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
