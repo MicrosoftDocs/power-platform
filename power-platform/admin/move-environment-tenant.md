@@ -28,9 +28,9 @@ Be aware of the following before starting a tenant-to-tenant migration.
 > [!Note]
 > Tenant-to-tenant migrations will be supported on Managed Environments in the future.
 
-* **Supported environment types**: Production and sandbox only.
-* **Not supported environment types**: Default, developer, trial, and Teams environment types aren't supported. Government Community Cloud (GCC) to public clouds and vice versa aren't supported.
-* Components not supported include Dynamics 365 Customer Voice, Omnichannel for Customer Service, component library, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Customer Insights - Data.
+* **Supported environment types**: Only production and sandbox environments are supported.
+* **Not supported environment types**: Default, developer, trial, and Teams environments aren't supported. Government Community Cloud (GCC) to public clouds and vice versa are also not supported.
+* The following components aren't supported: Dynamics 365 Customer Voice, Omnichannel for Customer Service, component library, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Customer Insights - Data.
 * Specific steps required for Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio are called out in the premigration and post-migration steps.
 * A Dataverse organization linked to a finance and operations organization can't be migrated to a different tenant.
 * You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Dynamics 365 for Outlook, server-side sync, SharePoint, and others.
@@ -49,7 +49,7 @@ Be sure to complete the following prerequisites before you start the migration p
 * The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more in [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 ## Preparation process
-Complete the following procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages before the migration. You also must create a user mapping file.
+Complete the following procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages before the migration. You also must create a user-mapping file.
 
 ### Prepare Power Automate
 
@@ -96,17 +96,17 @@ The following steps must be done for each website in an environment:
 2.	Open the [admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
 3.	[Delete](/power-pages/admin/delete-website) the website.
 
-### Create a user mapping file
-Create a user mapping file for the source environment to be transferred to the target environment. It's essential to note that each environment requires an individual mapping file. Be sure that users are present and authorized in both the originating and destination tenants, as this is required for a successful migration. The users' domains may vary between source and target, provided they're active.
+### Create a user-mapping file
+Create a user-mapping file for the source environment to be transferred to the target environment. It's essential to note that each environment requires an individual mapping file. Be sure that users are present and authorized in both the originating and destination tenants, as this is required for a successful migration. The users' domains may vary between source and target, provided they're active.
 
-1. Create a user mapping file named **usermapping.csv**.
+1. Create a user-mapping file named **usermapping.csv**.
 
    > [!Note]
    > The file name is case sensitive. Make sure records are separated by a comma, not a semicolon.
   
 1. Accurately record the details of users, including their source and destination email IDs. Make sure there are no extra spaces before and after the header. Your mapping file should look like the following example:
 
-    |Source|	Destination|
+    |Source|Destination|
     |------|-------------|
     |`SourceUser@sourcetenant.com`	|`DestinationUser@targettenant.com`|
 
@@ -205,8 +205,8 @@ TenantToTenant-ManageMigrationRequest -MigrationId {MigrationId from above comma
 ```
 Once a request is approved, the admin of the destination tenant can notify the admin of the source tenant to proceed with the next step of the migration.
 
-### Upload the user mapping file (source admin)
-This step involves creating the SAS URL, which is used later for uploading the user mapping file. Run the following PowerShell command, substituting **EnvironmentId** with the actual environment ID and **FileLocation** with the actual file location.
+### Upload the user-mapping file (source admin)
+This step involves creating the SAS URL, which is used later for uploading the user-mapping file. Run the following PowerShell command, replacing **EnvironmentId** with the actual environment ID and **FileLocation** with the actual file location.
 
 > [!Note]
 > While passing the **FileLocation** value, you must provide the parameter with the usermapping file name (usermapping.csv):
@@ -219,7 +219,7 @@ TenantToTenant-UploadUserMappingFile –EnvironmentName {EnvironmentId} -UserMap
 Be sure to copy the value of the **Read Only UserMapping File ContainerUri** returned by the command. This SAS URI is required as the **-ReadOnlyUserMappingFileContainerUri** parameter in the **TenantToTenant-PrepareMigration** command.
 
 ### Prepare the environment migration (source admin)
-The following step involves conducting comprehensive validations to ensure that every user listed in the user mapping file is verified and currently active within the target tenant. 
+The following step involves conducting comprehensive validations to ensure that every user listed in the user-mapping file is verified and currently active within the target tenant. 
 
 MigrationId can be viewed using the "TenantToTenant-ViewMigrationRequest" command in the source tenant.
 
@@ -239,7 +239,7 @@ TenantToTenant-PrepareMigration
 Code        : 202
 Description : Accepted
 ```
-This step's duration varies depending on the number of users in the user mapping file. You can monitor the progress of this step by using the **TenantToTenant-GetStatus** command, provided below.
+This step's duration varies depending on the number of users in the user-mapping file. You can monitor the progress of this step by using the **TenantToTenant-GetStatus** command, provided below.
 
 ### Check status (source admin)
 
@@ -253,16 +253,16 @@ TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 -	Validation Failed, Errors are updated on the blob here: SASURI
 
 ### Errors and how to resolve them 
-- If you receive an error that says, **The User mapping file provided for Tenant To Tenant migration is invalid**, check if the user mapping file name is correct and that the user mapping file has a comma to separate values.
+- If you receive an error that says, **The User mapping file provided for Tenant To Tenant migration is invalid**, check if the user-mapping file name is correct and that the user-mapping file has a comma to separate values.
 - **Line '{line numbers}' have the same '{email ID}'**: Make sure there aren't any duplicate entries.
 - **Invalid Email Format '{email ID}'**: Make sure the email format is correct for `testuser@tenantdomain.com`.
 - **Target on line '{line number}' is same as source email ID**: Make sure the **Destination Email** is different from the **Source Email**.
 - **Each line must have exactly two columns: '{line numbers}'**: Make sure each row has only two columns: the source and destination columns. Remove any extra commas.
 
-After fixing user mapping errors, you need to reupload the user mapping file using the same SAS URI.
+After fixing user-mapping errors, you need to reupload the user-mapping file using the same SAS URI.
   
 ### Download the error report (source admin)
-If any errors are in the user mapping file, there's an option to download an error report. This can be done by directly copying and pasting the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command to your internet browser or by using the following commands that use the SAS URI from the previous step to check status and the desired location to download the error report.
+If any errors are in the user-mapping file, there's an option to download an error report. This can be done by directly copying and pasting the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command to your internet browser or by using the following commands that use the SAS URI from the previous step to check status and the desired location to download the error report.
 
 Complete the following steps:
 
@@ -281,10 +281,10 @@ Complete the following steps:
     $storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -SasToken $sasToken
     Get-AzStorageBlobContent -Blob "usermapping.csv" -Container $containerName -Destination $destinationPath -Context $storageContext 
     ```
-1. Fix the issues in the user mapping file.
+1. Fix the issues in the user-mapping file.
 1. Reupload the file using the steps in [Upload the user mapping file (source admin)](#upload-the-user-mapping-file-source-admin).
 
-After successfully completing the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin), you may proceed with the [Migrate the environment (source admin)](#migrate-the-environment-source-admin) procedure to migrate the environment. Perform the migration within the next seven days. If you don't complete the migration in the next seven days, you must start the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin) procedure again.
+After successfully completing the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin), you may continue with the [Migrate the environment (source admin)](#migrate-the-environment-source-admin) procedure to migrate the environment. Perform the migration within the next seven days. If you don't complete the migration in the next seven days, you must start the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin) procedure again.
 
 ## Migrate the environment (source admin)
 The **MigrationId** can be viewed using the **TenantToTenant-ViewMigrationRequest** command in the source tenant.
@@ -368,7 +368,7 @@ After completing all of the above steps and the migration, you may validate the 
 
 Administration mode is enabled during tenant-to-tenant migration, therefore background operations don't run. Learn more in [Administration mode](admin-mode.md).
 
-#### Can we migrate all users of the Dataverse organization?
+#### Can all users of the Dataverse organization be migrated?
 
 We can migrate all users of the Dataverse organization only if users exist in the destination tenant. For example:
 
@@ -390,7 +390,7 @@ Learn more in [Before you get started](#before-you-get-started) to understand wh
 
 #### What happens to mailbox configurations?
 
-If the mapped user (mentioned in the user mapping file) has a mailbox in the destination tenant, it's automatically configured. Otherwise, manual reconfiguration is required.
+If the mapped user (mentioned in the user-mapping file) has a mailbox in the destination tenant, it's automatically configured. Otherwise, manual reconfiguration is required.
 
 #### How do I initiate a migration?
 
