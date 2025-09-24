@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Enable viewing profile cards
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 <!-- legacy procedure -->
 
 Microsoft's people experience is centered around profile cards that have been around in Microsoft Outlook and other Office apps and services on the web. When you select someone's name or picture in Outlook or other Office apps, you can find information related to them on their profile card. The profile card is also sometimes referred to as contact card or people card. Profile cards are available on contacts and users in any Unified Interface app.

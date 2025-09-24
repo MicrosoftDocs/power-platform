@@ -16,8 +16,6 @@ ms.custom:
 ---
 # Use the Microsoft 365 admin center to manage your subscription 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 [The Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview) is a portal site rich in features for the administrator. Microsoft 365, Power Platform, and Dynamics 365 admins can take advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
 
 > [!NOTE]

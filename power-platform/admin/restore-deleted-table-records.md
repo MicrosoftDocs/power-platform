@@ -21,8 +21,6 @@ ms.custom: sfi-image-nochange
 
 # Restore deleted Microsoft Dataverse table records (preview)
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 As part of the regular business processes with Microsoft Dataverse, users often delete records or transactions either manually or systematically, either planned or by accident, via system processes, single selection, multiple selections, and bulk deletion. Retrieving deleted data is hard and often records aren't always recoverable. To address this limitation, the recycle bin is available to recover table record data from most types of delete scenarios within a specified configurable time frame.

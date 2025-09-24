@@ -11,8 +11,6 @@ contributors: sericks007
 ---
 # Lock and unlock environments through key vault access
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Since separate encryption keys can be used to encrypt different Microsoft Dataverse environments, you can separately lock these environments by revoking key vault access to the respective enterprise policy. Locking key vault or key access can only be done by the Azure Key Vault admin. There's no advanced warning to the Power Platform admin or users when an Azure Key Vault admin revoked key access.
 
 Key access revocation can be triggered by completing any of the following tasks:

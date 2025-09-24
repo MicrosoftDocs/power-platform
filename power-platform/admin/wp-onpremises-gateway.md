@@ -14,8 +14,6 @@ search.audienceType:
 ---
 # About on-premises gateway
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The on-premises gateway allows Power Apps and Power Automate to reach back to on-premises resources to support hybrid integration scenarios. The gateway enables Azure Service Bus relay technology to securely allow access to on-premises resources.
 
 > [!div class="mx-imgBorder"] 
