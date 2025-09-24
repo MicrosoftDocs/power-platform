@@ -185,10 +185,10 @@ The [Non-licensed user](api-request-limits-allocations.md#non-licensed-user-requ
 | Environment Name	| The display name of environment. |
 | Caller ID	| The unique identifier of the calling identity. This can be null or empty. |
 | Caller Type	| The type of caller identity. Applicable values are System, Non-Interactive/Application.   |
-| Resource Type	| The type of resource. Applicable value currently Power Automate. |
-| Resource ID	| The unique resource identifier. Based on the Resource Type-  Power Automate Flow ID. This can be null or empty. |
+| Resource Type	| The type of resource. Applicable value currently is Power Automate. |
+| Resource ID	| The unique resource identifier. Based on the Resource Type&mdash;Power Automate Flow ID. This can be null or empty. |
 | Meter Category	| The top level meter in this case Power Platform request.    |
-| Meter Subcategory  | 	The detailed classification of what generated the request which is Power Automate. |
+| Meter Subcategory  | 	The detailed classification of what generated the request, which is Power Automate. |
 | Usage Datetime | 	The date and time of when the usage was captured (UTC). |
 | Consumed Quantity | 	Usage of Power Platform requests.  |
 
@@ -279,7 +279,7 @@ Here are a few things to be aware of during the transition period:
 
 ### What tools can I use to monitor and analyze Power Platform requests across the platform?
 
-Reporting for Power Platform Request usage in preview is available in the Power Platform admin center.These reports are currently limited to Power Automate API requests. API requests from Dataverse, Microsoft Copilot Studio, and Power Apps are not included at this time.
+Reporting for Power Platform request usage in preview is available in the Power Platform admin center. These reports are currently limited to Power Automate API requests. API requests from Dataverse, Microsoft Copilot Studio, and Power Apps aren't included at this time.
 
 ### What are the timelines for Power Platform Request limits?
 
