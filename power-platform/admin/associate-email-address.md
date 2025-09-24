@@ -1,7 +1,7 @@
 ---
 title: "Associate an email address with a row   | MicrosoftDocs"
 description: Associate an email address with a row. 
-author: DanaMartens
+author: foviedoITBA
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/05/2023
@@ -10,6 +10,8 @@ ms.author: dmartens
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+  - foviedoITBA
 ---
 
 # Associate an email address with a row
