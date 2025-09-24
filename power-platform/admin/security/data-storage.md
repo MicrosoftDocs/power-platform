@@ -21,8 +21,6 @@ ms.contributors:
 ---
 # Data storage and governance in Power Platform
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Power Platform processes both **personal data** and **customer data**. Learn more about personal data and customer data at the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
 
 ## Data residency

@@ -17,8 +17,6 @@ search.audienceType:
 
 # Overview of the msdyn_copilotinteraction table 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Agents who work with [Microsoft 365 Copilot for Service](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-for-service) to support customers interact with a large set of data sources. These data sources include responses from plug-ins that call external systems for data.
 
 As agents use Copilot, their interactions might include copying summaries, using suggested replies, providing feedback, and generating chat transcripts. In addition, when agents receive a response from Copilot, they can give a feedback signal to indicate whether that response was good or bad. These interactions with Copilot are stored in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteraction), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteractiondata), [msdyn_copilottranscript](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscript), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscriptdata) tables in Dataverse.
