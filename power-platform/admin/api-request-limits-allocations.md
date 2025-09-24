@@ -147,15 +147,16 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 7. Once the report is ready, select **Download** to download the report as an Excel CSV file.
 
 > [!NOTE]
-> These reports are in preview and currently limited to Power Automate API requests. API requests from Dataverse, Microsoft Copilot Studio, and Power Apps are not included at this time.
-There are two limitations with the Licensed User preview report.
+> These reports are in preview and currently limited to Power Automate API requests. API requests from Dataverse, Microsoft Copilot Studio, and Power Apps aren't included at this time.
+> 
+There are two limitations with the **Licensed user** preview report.
 >
-> - The entitlements for Licensed Users are showing up in the reporting per user per day per environment. The limits should apply at the per user per day level. When looking at reporting, understand that the limits are per user per day, using the entitlement quantity only one time per day, not summing entitlements for the same user potentially multiple times.
-> - The Licensed User report will not show correct entitlements for users licensed via the Power Apps per app license or Power Apps per app pay-as-you-go meter. Entitlements for such users will be shown as 0 when in fact they should be shown as 6000 (request per 24-hour period as previously outlined).
+> - The entitlements for licensed users are showing up in the reporting per user per day per environment. The limits should apply at the per user per day level. When looking at reporting, understand that the limits are per user per day, using the entitlement quantity only one time per day, not summing entitlements for the same user potentially multiple times.
+> - The **Licensed user** report will not show correct entitlements for users licensed via the Power Apps per app license or Power Apps per app pay-as-you-go meter. Entitlements for such users will be shown as 0 when in fact they should be shown as 6000 (request per 24-hour period as previously outlined).
 
-### Licensed User report
+### Licensed user report
 
-The [Licensed User](api-request-limits-allocations.md#licensed-user-request-limits) report shows the Power Platform request usage per user per day and the users entitled quantity. The downloadable report contains the following fields: 
+The [Licensed user](api-request-limits-allocations.md#licensed-user-request-limits) report shows the Power Platform request usage per user per day and the users entitled quantity. The downloadable report contains the following fields: 
 
 | Field                                                    | Description                              |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -165,7 +166,7 @@ The [Licensed User](api-request-limits-allocations.md#licensed-user-request-limi
 | Caller Type | The type of caller identity. Applicable value for licensed user report is User. |
 | Usage Datetime | The date and time of when the usage was captured (UTC). | 
 | Entitled quantity | The total of any Power Platform request limits for the user. | 
-| Total consumed quantity | The total Power Automate API usage . |
+| Total consumed quantity | The total Power Automate API usage. |
 | Power Automate Requests | Number of Power Platform requests originating from Power Automate. | 
 
 
@@ -173,9 +174,9 @@ Here's a sample of a detailed usage report:
 
 :::image type="content" source="media/ppr-licensed-user-report.png" alt-text="Image showing an example of the licensed user report." lightbox="media/ppr-licensed-user-report.png":::
 
-### Non-licensed User report
+### Non-licensed user report
 
-The [Non-licensed User](api-request-limits-allocations.md#non-licensed-user-request-limits) report shows the Power Platform request usage per day for non-licensed users and the total entitlement for non-licensed users for that tenant. The downloadable report contains the following fields:
+The [Non-licensed user](api-request-limits-allocations.md#non-licensed-user-request-limits) report shows the Power Platform request usage per day for non-licensed users and the total entitlement for non-licensed users for that tenant. The downloadable report contains the following fields:
 
 | Field	| Description | 
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
