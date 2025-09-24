@@ -1,7 +1,7 @@
 ---
 title: Requests limits and allocations
 description: Power Platform requests limits and allocations
-author: samathur
+author: sericks007
 contributors:
   - amiyapatr-zz
   - samathur
@@ -13,8 +13,8 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/24/2025
 ms.subservice: admin
-ms.author: samathur
-ms.reviewer: angieandrews
+ms.author: sericks
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
@@ -148,15 +148,15 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 
 > [!NOTE]
 > These reports are in preview and currently limited to Power Automate API requests. API requests from Dataverse, Microsoft Copilot Studio, and Power Apps aren't included at this time.
-> 
-There are two limitations with the **Licensed user** preview report.
+>
+> There are two limitations with the **Licensed user** preview report.
 >
 > - The entitlements for licensed users are showing up in the reporting per user per day per environment. The limits should apply at the per user per day level. When looking at reporting, understand that the limits are per user per day, using the entitlement quantity only one time per day, not summing entitlements for the same user potentially multiple times.
 > - The **Licensed user** report will not show correct entitlements for users licensed via the Power Apps per app license or Power Apps per app pay-as-you-go meter. Entitlements for such users will be shown as 0 when in fact they should be shown as 6000 (request per 24-hour period as previously outlined).
 
 ### Licensed user report
 
-The [Licensed user](api-request-limits-allocations.md#licensed-user-request-limits) report shows the Power Platform request usage per user per day and the users entitled quantity. The downloadable report contains the following fields: 
+The [**Licensed user**](api-request-limits-allocations.md#licensed-user-request-limits) report shows the Power Platform request usage per user per day and the users entitled quantity. The downloadable report contains the following fields: 
 
 | Field                                                    | Description                              |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -176,7 +176,7 @@ Here's a sample of a detailed usage report:
 
 ### Non-licensed user report
 
-The [Non-licensed user](api-request-limits-allocations.md#non-licensed-user-request-limits) report shows the Power Platform request usage per day for non-licensed users and the total entitlement for non-licensed users for that tenant. The downloadable report contains the following fields:
+The [**Non-licensed user**](api-request-limits-allocations.md#non-licensed-user-request-limits) report shows the Power Platform request usage per day for non-licensed users and the total entitlement for non-licensed users for that tenant. The downloadable report contains the following fields:
 
 | Field	| Description | 
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -194,11 +194,11 @@ The [Non-licensed user](api-request-limits-allocations.md#non-licensed-user-requ
 
 Here's a sample of a detailed usage report:
 
-:::image type="content" source="media/non-licensed-user-report.png" alt-text="Image showing an example of the non-licensed user report." lightbox="media/non-licensed-user-report.png":::
+:::image type="content" source="media/non-licensed-user-report.png" alt-text="Image showing an example of the Non-licensed user report." lightbox="media/non-licensed-user-report.png":::
 
-### Per Flow report
+### Per flow report
 
-The Per Flow Licensed Flows downloadable report contains the following fields:
+The **Per flow** licensed flows downloadable report contains the following fields:
 
 | Field	| Description |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
