@@ -3,13 +3,14 @@ title: Disable new connectors by default
 description: Describes how new connectors are disabled by default in GCC High and DoD.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/20/2025
+ms.date: 09/22/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
 contributors:
   - mikferland-msft
+  - ellenwehrle
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -23,7 +24,7 @@ Power Platform and third parties continuously release new connectors and adminis
 
 > [!NOTE]
 > Custom connectors can't be disabled with this new data policy control.
-> 
+>
 > When a connector is disabled, administrators can still classify and configure the connector in the data policies, but its use is blocked in Power Apps and Power Automate.
 
 ## Availability
@@ -38,7 +39,7 @@ This feature is being progressively released, and all customers operating in GCC
 
 2. Select **Enable connectors** in the toolbar.
 
-3. New connectors (those that haven’t been reviewed) have the status **Mark as reviewed**.
+3. New connectors (those that haven't been reviewed) have the status **Mark as reviewed**.
 
 4. Connectors that have already been reviewed and authorized have the status **Reviewed**.
 
@@ -77,16 +78,16 @@ This feature is being progressively released, and all customers operating in GCC
 
 ## PowerShell support
 
-The new data control has the following structure in PowerShell. The **connectorSettings** object is an array of connectors specifying whether it’s enabled or disabled ("behavior") and whether it has been reviewed or not ("isReviewed").
+The new data control has the following structure in PowerShell. The **connectorSettings** object is an array of connectors specifying whether it's enabled or disabled ("behavior") and whether it has been reviewed or not ("isReviewed").
 
 ```powershell
 $connectorBlockingDefinition = [pscustomobject] @{ 
   ConnectorSettings= @( 
     [pscustomobject] @{ 
- 			id  # connectorId -- string 
- 			behavior # connector behavior -- “Allow”/”Deny” 
- 			isReviewed # whether connector has been reviewed -- boolean 
- 		} 
+             id  # connectorId -- string 
+             behavior # connector behavior -- "Allow"/"Deny" 
+             isReviewed # whether connector has been reviewed -- boolean 
+         } 
   ) 
 } 
 ``` 
@@ -99,7 +100,7 @@ Get-PowerAppDlpConnectorBlockingPolicies
 
 Example: 
 ```powershell
-Get-PowerAppDlpConnectorBlockingPolicies -TenantId “aaaabbbb-0000-cccc-1111-dddd2222eeee”
+Get-PowerAppDlpConnectorBlockingPolicies -TenantId "aaaabbbb-0000-cccc-1111-dddd2222eeee"
 ```
 
 The above cmdlet outputs the connectors that are blocked/allowed for the evaluation and the policyId. 
@@ -107,17 +108,17 @@ The above cmdlet outputs the connectors that are blocked/allowed for the evaluat
 **Create a new connector blocking policy for the tenant**
 
 ```powershell
-New-PowerAppDlpConnectorBlockingPolicy –TenantId “aaaabbbb-0000-cccc-1111-dddd2222eeee” -ConnectorBlockingDefinition $connectorBlockingDefinition
+New-PowerAppDlpConnectorBlockingPolicy –TenantId "aaaabbbb-0000-cccc-1111-dddd2222eeee" -ConnectorBlockingDefinition $connectorBlockingDefinition
   Where $connectorBlockingDefinition = [pscustomobject] @{
     ConnectorSettings= @
       [pscustomobject] @{
-        id  = “/providers/Microsoft.PowerApps/apis/connector1”
-        behavior = “Allow”
+        id  = "/providers/Microsoft.PowerApps/apis/connector1"
+        behavior = "Allow"
         isReviewed = $true
       },
       [pscustomobject] @{
-        id = “/providers/Microsoft.PowerApps/apis/connector2”
-        behavior=”Deny”
+        id = "/providers/Microsoft.PowerApps/apis/connector2"
+        behavior="Deny"
         IsReviewed=$false
       }
     )
@@ -127,13 +128,13 @@ New-PowerAppDlpConnectorBlockingPolicy –TenantId “aaaabbbb-0000-cccc-1111-dd
 **Update the connector blocking policy for the tenant**
 
 ```powershell
-Set-PowerAppDlpConnectorBlockingPolicy -TenantId “aaaabbbb-0000-cccc-1111-dddd2222eeee” -PolicyId “1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5” -ConnectorBlockingDefinition $connectorBlockingDefinition
+Set-PowerAppDlpConnectorBlockingPolicy -TenantId "aaaabbbb-0000-cccc-1111-dddd2222eeee" -PolicyId "1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5" -ConnectorBlockingDefinition $connectorBlockingDefinition
 ```
 
 **Fetch the connector blocking policy using the policyId**
 
 ```powershell
-Get-PowerAppDlpConnectorBlockingPolicy -TenantId “aaaabbbb-0000-cccc-1111-dddd2222eeee” -PolicyId “1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5”
+Get-PowerAppDlpConnectorBlockingPolicy -TenantId "aaaabbbb-0000-cccc-1111-dddd2222eeee" -PolicyId "1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5"
 ```
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
