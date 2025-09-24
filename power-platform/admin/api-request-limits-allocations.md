@@ -3,6 +3,7 @@ title: Requests limits and allocations
 description: Power Platform requests limits and allocations
 author: samathur
 contributors:
+  - amiyapatr-zz
   - samathur
   - cvassallo
   - v-aangie
@@ -10,7 +11,7 @@ contributors:
   - PriyaKodukula 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/29/2025
+ms.date: 09/24/2025
 ms.subservice: admin
 ms.author: samathur
 ms.reviewer: angieandrews
