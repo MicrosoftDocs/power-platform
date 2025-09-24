@@ -92,6 +92,8 @@ When you interact with the Power Apps checker service, files are temporarily sto
 |Public|Production|Norway|norway.api.advisor.powerapps.com|
 |Public|Production|Singapore|singapore.api.advisor.powerapps.com|
 |Public|Production|Sweden|sweden.api.advisor.powerapps.com|
+|Public|Production|Poland|poland.api.advisor.powerapps.com|
+|Public|Production|Italy|italy.api.advisor.powerapps.com|
 |Public|Production|US Government|gov.api.advisor.powerapps.us|
 |Public|Production|US Government L4|high.api.advisor.powerapps.us|
 |Public|Production|US Government L5 (DOD)|mil.api.advisor.appsplatform.us|
