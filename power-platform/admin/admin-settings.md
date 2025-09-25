@@ -17,8 +17,6 @@ ms.custom:
 ---
 # Manage Microsoft Dataverse settings
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can view and manage the settings for your environments by signing in to the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 #### [New admin center](#tab/new)

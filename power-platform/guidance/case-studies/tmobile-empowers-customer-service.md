@@ -5,7 +5,7 @@ description: Learn how T-Mobile empowers customer service representatives to ans
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.subservice: guidance
+ms.subservice: case-study
 ms.topic: overview
 ms.date: 08/08/2025
 ---

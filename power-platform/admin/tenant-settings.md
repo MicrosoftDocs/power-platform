@@ -3,11 +3,12 @@ title: Tenant settings
 description: Review and configure tenant-level settings linked from this page.
 author: amiyapatr-zz
 ms.topic: overview
-ms.date: 08/05/2025
+ms.date: 09/08/2025
 ms.update-cycle: 180-days
 ms.author: ampatra
 ms.reviewer: sericks
 contributors:
+  - kenseongtan 
   - marcelbf
   - sericks007
   - syalandur24
@@ -73,6 +74,7 @@ The following settings apply to all environments within your tenant.
 |[Desktop flow actions in data policies](/power-automate/prevent-data-loss#data-loss-prevention-for-desktop-flows-preview)| When enabled, desktop flow action groups are visible when creating or editing data policies.|
 |[Developer environment assignments](control-environment-creation.md)   | Controls who can create and manage developer environments.  |
 |[Environment routing](default-environment-routing.md)* | Allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments. |
+|Hosted browser in computer use | Hosted browser in [computer use](/microsoft-copilot-studio/computer-use) allows users to automate web tasks and access built-in Windows apps using a Microsoft-hosted virtual machine powered by Windows 365.|
 |[Power Automate flow run resubmission](/power-automate/how-tos-bulk-resubmit#resubmit-flow-runs)| Allows users to resubmit previous flow runs initiated by other users. |
 |[Product Feedback](/power-platform/admin/list-tenantsettings)| Provides the ability to manage feedback prompts within Power Platform products. |
 |[Production environment assignments](control-environment-creation.md)   | Controls who can create and manage production and sandbox environments.|

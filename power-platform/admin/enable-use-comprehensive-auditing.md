@@ -17,8 +17,6 @@ search.audienceType:
 ---
 # Microsoft Dataverse and model-driven apps activity logging
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Activity Logging data supports Data Protection Impact Assessment (DPIA) for Power Apps, Power Automate, and customer engagement apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.
 
 This topic explains how to configure Power Apps, Power Automate, and customer engagement apps to audit a broad range of data processing activities. You can then view the logged data in activity reports using the [Microsoft Purview portal](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US).

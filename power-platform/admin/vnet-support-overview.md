@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/17/2025
+ms.date: 09/22/2025
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -18,8 +18,6 @@ contributors:
 
 # Virtual Network support overview
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 With [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. Using Azure Subnet delegation avoids the need for protected resources to be available over the internet to integrate with Power Platform. With virtual network support, Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins and connectors to make outbound calls.
 
 Power Platform typically integrates with enterprise resources over public networks. With public networks, enterprise resources must be accessible from a list of Azure IP ranges or service tags, which describe public IP addresses. However, Azure Virtual Network support for Power Platform allows you to use a private network and _still_ integrate with cloud services or services that are hosted inside your enterprise network.
@@ -30,7 +28,7 @@ Power Platform uses the Virtual Network and subnets that you delegate to make ou
 
 In a Virtual Network, you have full control over the outbound traffic from Power Platform. The traffic is subject to network policies applied by your network administrator. The following diagram shows how resources inside your network interact with a Virtual Network.
 
-:::image type="content" source="media/vnet-support/vnet-support-traffic.png" alt-text="Screenshot that shows how resources inside an enterprise network interact with a Virtual Network." lightbox="media/vnet-support/vnet-support-traffic.png":::
+:::image type="content" source="media/vnet-support/vnet-support-traffic.png" alt-text="Screenshot of how resources inside an enterprise network interact with a Virtual Network." lightbox="media/vnet-support/vnet-support-traffic.png":::
 
 ## Benefits of Virtual Network support
 
@@ -42,32 +40,32 @@ With Virtual Network support, your Power Platform and Dataverse components get a
 
 ## Estimating subnet size for Power Platform environments
 
-Over the past year, telemetry data and observations indicate that production environments typically require 25 to 30 IP addresses, with most use cases falling within this range. Based on this information, we recommend allocating 25 to 30 IPs for production environments and 6 to 10 IPs for non-production environments, such as sandbox or developer environments. IP addresses within the subnet are primarily used by containers connected to the Virtual Network. Once the environment starts being used, a minimum of four containers will be created, which dynamically scale based on call volume, though they typically remain within the 10 to 30 container range. These containers are responsible for executing all requests for their respective environments and efficiently handling parallel connection requests.
+Over the past year, telemetry data and observations indicate that production environments typically require 25 to 30 IP addresses, with most use cases falling within this range. Based on this information, we recommend allocating 25 to 30 IPs for production environments and 6 to 10 IPs for nonproduction environments, such as sandbox or developer environments. IP addresses within the subnet are primarily used by containers connected to the Virtual Network. Once the environment starts being used, a minimum of four containers will be created, which dynamically scale based on call volume, though they typically remain within the 10 to 30 container range. These containers are responsible for executing all requests for their respective environments and efficiently handling parallel connection requests.
 
 ### Planning for multiple environments
 
-If using the same delegated subnet for multiple Power Platform environments, you may need a larger block of classless inter-domain routing (CIDR) IP addresses. Consider the recommended amount of IP addresses for production and non-production environments when linking environments to a single policy. Keep in mind that each subnet reserves five IP addresses, which must be factored into your estimation.
+If using the same delegated subnet for multiple Power Platform environments, you may need a larger block of classless inter-domain routing (CIDR) IP addresses. Consider the recommended amount of IP addresses for production and nonproduction environments when linking environments to a single policy. Keep in mind that each subnet reserves five IP addresses, which must be factored into your estimation.
 
 > [!NOTE]
-> To enhance visibility into resource utilization, we are working on exposing delegated subnet IP consumption for enterprise policies and subnets.
+> To enhance visibility into resource utilization, we're working on exposing delegated subnet IP consumption for enterprise policies and subnets.
 
 ### Example IP allocation
 
-Consider a tenant with two enterprise policies. The first policy is for production environments, while the second policy is for non-production environments.
+Consider a tenant with two enterprise policies. The first policy is for production environments, while the second policy is for nonproduction environments.
 
 #### Production enterprise policy
 
 If you have four production environments associated to your enterprise policy, each requiring 30 IPs. The total IP allocation would be as follows:
 
-(4 environments x 30 IPs) + 5 reserved IPs = 125 IPs
+(Four environments x 30 IPs) + 5 reserved IPs = 125 IPs
 
 This scenario requires a CIDR block of **/25**, which has capacity for 128 IPs.
 
-#### Non-production enterprise policy
+#### Nonproduction enterprise policy
 
-For a non-production enterprise policy with 20 developer and sandbox environments&mdash;each requiring 10 IPs&mdash;the total IP allocation would be as follows:
+For a nonproduction enterprise policy with 20 developer and sandbox environments&mdash;each requiring 10 IPs&mdash;the total IP allocation would be as follows:
 
-(20 environments x 10 IPs) + 5 reserved IPs = 205 IPs
+(Twenty environments x 10 IPs) + 5 reserved IPs = 205 IPs
 
 This scenario would require a CIDR block of **/24**, which has capacity for 256 IPs and has enough space to add more environments to the enterprise policy.
 
@@ -124,6 +122,19 @@ The following table lists the services that support Azure subnet delegation for 
 | Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[Azure File Storage](/connectors/azurefile/)</li><li>[Azure Blob Storage](/connectors/azureblob/)</li><li>[HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/)</li></ul> | Generally available |
 | Connectors | <ul><li>[Snowflake](/connectors/snowflakeip/)</li><li>[Databricks](/connectors/databricks/)</li><li>[AI search](/microsoft-copilot-studio/knowledge-azure-ai-search)</li></ul> | Preview |
 
+## Supported environments
+
+Virtual Network support for Power Platform isn't available for all [Power Platform environments](/power-platform/admin/environments-overview). The following table lists which environment types support Virtual Network.
+
+| Environment type              | Supported |
+|-------------------------------|-----------|
+| Production                    | Yes       |
+| Default                       | Yes       |
+| Sandbox                       | Yes       |
+| Developer                     | Yes       |
+| Trial                         | No        |
+| Microsoft Dataverse for Teams | No        |
+
 ## Considerations to enable Virtual Network support for Power Platform Environment
 
 When you use Virtual Network support in a Power Platform environment, all supported services, like Dataverse plug-ins and connectors, execute requests at runtime in your delegated subnet and are subject to your network policies. The calls to publicly available resources would start to break.
@@ -135,9 +146,9 @@ For example, a plug-in might try to connect to a publicly available service, but
 
 ## FAQ
 
-### What's the difference between a virtual network data gateway and Azure Virtual Network support for Power Platform?
+### What's the difference between a Virtual Network data gateway and Azure Virtual Network support for Power Platform?
 
-A [virtual network data gateway](/data-integration/vnet/data-gateway-architecture#hardware) is a managed gateway that allows you to access Azure and Power Platform services from within your virtual network without having to set up an on-premises data gateway. For example, the gateway is optimized for ETL (extract, transform, load) workloads in Power BI and Power Platform dataflows.
+A [Virtual Network data gateway](/data-integration/vnet/data-gateway-architecture#hardware) is a managed gateway that allows you to access Azure and Power Platform services from within your Virtual Network without having to set up an on-premises data gateway. For example, the gateway is optimized for ETL (extract, transform, load) workloads in Power BI and Power Platform dataflows.
 
 Azure Virtual Network support for Power Platform uses an Azure subnet delegation for your Power Platform environment. Subnets are used by workloads in the Power Platform environment. Power Platform API workloads use Virtual Network support because the requests are short-lived and optimized for a large number of requests.
 
@@ -172,11 +183,11 @@ Yes. You can make internet-bound calls from plug-ins or connectors, but the dele
 
 ### Can I update the subnet IP address range after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
-No, not while the feature is used in your environment. You can't change the IP address range of the subnet after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the delegation configuration is broken and the environment stops working. To change the IP address range, you must [remove the delegation feature from your environment](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#9-remove-subnet-injection-from-an-environment), make the necessary changes, and then turn on the feature for your environment.
+No, not while the feature is used in your environment. You can't change the IP address range of the subnet after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the delegation configuration is broken and the environment stops working. To change the IP address range, you must [remove the delegation feature from your environment](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/README.md#9-remove-subnet-injection-from-an-environment), make the necessary changes, and then turn on the feature for your environment.
 
 ### Can I update the DNS address of my Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
-No, not while the feature is used in your environment. You can't change the DNS address of the Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the change isn't picked up in our configuration and your environment may stop working. To change the DNS address, you must [remove the delegation feature from your environment](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/enterprisePolicies/README.md#9-remove-subnet-injection-from-an-environment), make the necessary changes, and then turn on the feature for your environment.
+No, not while the feature is used in your environment. You can't change the DNS address of the Virtual Network after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies." If you do this, the change isn't picked up in our configuration and your environment may stop working. To change the DNS address, you must [remove the delegation feature from your environment](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/README.md#9-remove-subnet-injection-from-an-environment), make the necessary changes, and then turn on the feature for your environment.
 
 ### Can I use the same enterprise policy for multiple Power Platform environments?
 
@@ -240,3 +251,7 @@ No, [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azur
 ## Next steps
 
 [Set up Virtual Network support](vnet-support-setup-configure.md)
+
+## Related content
+
+ [Troubleshoot Virtual Network issues](/troubleshoot/power-platform/administration/virtual-network)

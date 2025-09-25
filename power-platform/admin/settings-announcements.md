@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Broadcast announcements to an entire organization 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 > [!IMPORTANT]
 > Announcements are deprecated and are removed from current releases.
 
