@@ -6,11 +6,12 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/25/2025
 ms.subservice: admin
-ms.author: osfaixat
+ms.author: pvayner
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
+  - pvayner
   - matapg007
   - wifun
   - matapg007
