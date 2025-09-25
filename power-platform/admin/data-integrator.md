@@ -75,9 +75,6 @@ Before you can create a data integration project, you must provision a connectio
 
 1. After you provide your credentials, the connection will be listed under your connections.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Connection list.](media/data-integrator/CreateConnection1780.png "Connection list")
-
 > [!NOTE]
 > Make sure that the account you specify for each connection has access to entities for the corresponding applications. Additionally, the account for each connection can be in a different tenant. 
 After you provide your credentials, the connection is listed under your connections.
