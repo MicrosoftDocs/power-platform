@@ -4,7 +4,7 @@ description: Learn more about how to create alerts to monitor your resources in 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/13/2025
+ms.date: 09/15/2025
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: sericks
@@ -66,7 +66,7 @@ If you selected to receive email notifications when any resource triggers an ale
 In the email notification, select **Go to Alert** to open a Power Platform page listing the triggered alerts, where you can see information on the triggered alert and what resources triggered it. When you select any of the resources in the triggered alert, a pane is displayed that shows time series information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
 
 ### Notes to be aware of
--	A tenant can have 25 alerts rules turned on at one time. However, you can create an unlimited number of alert rules. Consider deleting or turning off any existing alert rule if you’ve reached the maximum.
+-	A tenant can have 50 alerts rules turned on at one time. However, you can create an unlimited number of alert rules. Consider deleting or turning off any existing alert rule if you’ve reached the maximum.
 -	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the **Monitor** area is evaluated every 24 hours after the newest 24 hour aggregates are produced. The alert rule does an on-demand evaluation upon its creation.
 
 ## Frequently asked questions (FAQs)
@@ -99,7 +99,7 @@ Yes! Follow these best practices:
 - **Start small**: Create a few high-value rules first, such as performance-open times, error rates, usage spikes.
 - **Name consistently**: Use clear names like **Prod – Canvas apps – Availability < 90**.
 - **Set appropriate severity**: Use **High** for production-impacting metrics and **Medium** or **Low** for trend monitoring.
-- **Manage the 25-rule limit**: Delete obsolete rules.
+- **Manage the 50-rule limit**: Delete obsolete rules.
 - **Validate email routing**: Ensure recipients can receive emails from **PowerPlat-noreply@microsoft.com**.
 - **Monitor the 24‑hour cadence**: Expect daily evaluation; it’s not real-time.
 

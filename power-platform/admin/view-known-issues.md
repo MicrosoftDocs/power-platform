@@ -46,7 +46,7 @@ Customer trust and transparency are important to us. You can now view existing p
 
 ## View known issues when creating a support request
 
-1. When you [create a support request through Power Platform admin center](get-help-support.md#view-solutions-or-create-a-support-request-using-the-support-agent-preview), if a known issue is applicable to the search query, it displays in the **Copilot Preview** tab.
+1. When you [create a support request through Power Platform admin center](get-help-support.md), if a known issue is applicable to the search query, it displays in the **Copilot Preview** tab.
 
 1. Select the title of the known issue to view details and also see the workaround for the issue.
      
