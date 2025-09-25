@@ -1,6 +1,6 @@
 ---
 title: Integrate data into Microsoft Dataverse
-description: Integrate data from multiple sources into Microsoft Dataverse
+description: Integrate data from multiple sources into Microsoft Dataverse.
 ms.topic: how-to
 ms.component: cds
 ms.date: 09/25/2025
@@ -38,7 +38,7 @@ For more information about the Prospect to Cash integration, see the documentati
 [Field Service integration](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
 and [PSA (Project Service Automation) integration](/dynamics365/unified-operations/financials/project-management/psa-integration?toc=%2ffin-and-ops%2ftoc.json) are also supported for data integration.
 
-## Data Integrator Platform
+## Data Integrator platform
 
 The Data Integrator (for Admins) consists of the Data Integration platform, out-of-the-box templates provided by our application teams (for example, finance and operations apps and Dynamics 365 Sales) and custom templates created by our customers and partners. We have built an application-agnostic platform that can scale across various sources. At the core of it, you create connections (to integration end points), choose one of the customizable templates with predefined mappings (that you can further customize), and create and execute the data integration project.  
 
@@ -93,9 +93,9 @@ Connection sets are a collection of two connections, environments for the connec
 
 1. Select **Manage** in the navigation pane.
 
-1. In the **Manage** pane, select **Data integration**. 
+1. In the **Manage** pane, select **Data integration**. The **Data integration** page is displayed.
 
-1. Select the **Connection sets** tab and select **New connection set**.
+1. Select the **Connection sets** tab and select **New connection set**. The **New connection set** pane is displayed.
 
 1. Provide a name for your connection set.
   
@@ -110,7 +110,7 @@ Connection sets are a collection of two connections, environments for the connec
   
 1. After you complete all the fields, select **Save**.
 
-You see the new connection set you created under the Connection sets list page. Your connection set is ready to be used across various integration projects.
+You see the new connection set you created under the **Connection sets** tab. Your connection set is ready to be used across various integration projects.
 
 ### Create a data integration project
 
@@ -118,17 +118,11 @@ Projects enable the flow of data between systems. A project contains mappings fo
 
 1. Select the **Data integration** tab in the left navigation pane.
 
-1. While in the **Projects** tab, select **+ New project** in the top right corner.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Create project.](media/data-integrator/CreateNewProject780.png "Create project")
+1. While in the **Projects** tab, select **New project**.
 
 1. Provide a name for your integration project.
 
-1. Select one of the available templates (or [create your own template](#create-your-own-template)). In this case, we're moving the Products entity from finance and operations apps to Sales.
-
-    > [!div class="mx-imgBorder"] 
-    > ![Select template to create new project.](media/data-integrator/CreateNewProjectSelectTemplate780.png "Select template to create new project")
+1. Select one of the available templates (or [create your own template](#create-your-own-template)).
 
 1. Select **Next** and choose a connection set you created earlier (or [create a new connection set](#create-a-connection-set)).
 
@@ -138,17 +132,11 @@ Projects enable the flow of data between systems. A project contains mappings fo
 
 1. Select **Next** and then choose the legal entity to business unit mappings.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Create new legal entity mapping.](media/data-integrator/CreateNewProjectLegalEntityMapping780.png "Create new legal entity mapping")
-
 1. Review and accept the privacy notice and consent on the next screen.
 
 1. Proceed to create the project and then run the project, which in turn executes the project.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Run project.](media/data-integrator/RunProject780.png "Run project")
-
-    On this screen, you notice several tabs—**Scheduling** and **Execution history**—along with some buttons—**Add task**, **Refresh entities**, and **Advanced Query**—that are described later in this article.
+    You'll see several tabs—**Scheduling** and **Execution history**—along with some buttons—**Add task**, **Refresh entities**, and **Advanced Query**—that are described later in this article.
 
 ### View execution history
 
@@ -194,9 +182,12 @@ After you create an integration project, you can run it manually or configure sc
 To set up schedule-based writes follow these steps:
 
 1. Go to [Power Platform admin center](https://admin.powerapps.com).
-1. Select **Manage** > **Data integration** on the left navigation pane.
-1. On the **Projects** tab, select the project and then select **...** > **Schedule**.
-1. Select **Recur every** and once you have completed all the fields, select **Save schedule**.
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Data integration**. The **Data integration** page is displayed.
+1. Select the **Projects** tab, select the project, and then select the **Context menu** icon (...) and **Schedule**.
+1. On the **Scheduling** tab,
+1. Select the toggle so that **Recur every** is displayed and complete all the fields.
+1. Select **Save schedule**.
 
 You can set a frequency as often as one minute or have it recur some hours, days, weeks, or months. The next refresh won't start until the previous project task completes its run.
 
@@ -225,8 +216,10 @@ You can customize projects and templates in these ways:
 To create a connection set, follow these steps:
 
 1. Go to [Power Platform admin center](https://admin.powerapps.com).
-1. Select **Manage** > **Data integration** on the left navigation pane.
-1. On the **Projects** tab, select the project for which you want to customize field mappings, select **...** > **Connection set details**.
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Data integration**. The **Data integration** page is displayed.
+1. Select the **Projects** tab, select the project for which you want to customize field mappings, and then select the **Context menu** icon (...) and **Connection set details**.
+1. Select the **Go to connection set details** link.
 1. Select the **Organizations** tab, and then select **+ Add mapping**.
 1. After you customize your field mappings, select **Save** on the command bar.
 
