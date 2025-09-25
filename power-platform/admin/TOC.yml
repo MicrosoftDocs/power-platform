@@ -535,7 +535,7 @@
                     - name: Set up Virtual Network support
                       href: vnet-support-setup-configure.md
                     - name: Troubleshoot Virtual Network issues
-                      href: /troubleshoot/power-platform/administration/virtual-network?toc=/power-platform/admin/toc.json&breadcrumb=/power-platform/breadcrumb/toc.json
+                      href: /troubleshoot/power-platform/administration/virtual-network?toc=/power-platform/admin/toc.json&bc=/power-platform/breadcrumb/toc.json
             - name: Identity and access
               items:
                 - name: Identity and access management
