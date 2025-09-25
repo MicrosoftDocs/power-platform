@@ -3,6 +3,7 @@ title: Power Automate licensing FAQ
 description: Learn the answers to frequently asked Power Automate questions.
 author: PriyaKodukula
 contributors:
+  - sericks007
   - cvassallo
   - PriyaKodukula
   - thomasjeffries11
@@ -243,7 +244,7 @@ Additionally, you can see the action usage for a given flow by selecting the  **
 
 The Power Platform admin center contains [reports on Power Automate requests](../api-request-limits-allocations.md#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). These reports help you quickly view adoption and user metrics for your organization. They are currently in public preview. Two reports are available:
 - [User report](../api-request-limits-allocations.md#licensed-user-report) – This report displays the Power Platform request usage by every user in the environment, compared to their assigned limit.
-- [Per flow report](../api-request-limits-allocations.md#per-flow-report) - This report displays the Power Platform request usage by every flow in the environment that has a Per-flow license.
+- [Per flow licensed flows report](../api-request-limits-allocations.md#per-flow-licensed-flows-report) - This report displays the Power Platform request usage by every flow in the environment that has a Per-flow license.
 - [Non-licensed user report](../api-request-limits-allocations.md#non-licensed-user-report) - This report displays the Power Platform request usage for non-licensed users and the total entitlement for non-licensed users for that tenant. In future, Power Platform requests usage of flows running under service principal will be displayed in this report. 
 
 After the reports are generally available, users will have time to react and purchase higher PPR licenses before enforcement begins.
