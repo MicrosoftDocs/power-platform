@@ -202,8 +202,12 @@
                       href: environment-groups.md
                     - name: Rules for environment groups
                       href: environment-groups-rules.md
-                    - name: Preview and experimental AI models rule
-                      href: preview-experimental-ai-models-rule.md
+                    - name: Rules
+                      items:
+                        - name: Preview and experimental AI models rule
+                          href: preview-experimental-ai-models-rule.md
+                        - name: External models rule
+                          href: allow-llm-generative-responses.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
                 - name: Usage insights
@@ -384,7 +388,7 @@
                       href: set-up-business-management-options.md
                     - name: Dynamics 365 for Outlook
                       href: /dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
-                - name: System
+                - name: System Settings (legacy)
                   items:
                     - name: Overview
                       href: system-settings-dialog.md

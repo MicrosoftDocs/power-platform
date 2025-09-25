@@ -1,11 +1,10 @@
 ---
-title: "System Settings Email tab | MicrosoftDocs"
-description: System Settings Email tab 
+title: "System Settings Email tab"
+description: Legacy System Settings Email tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/17/2021
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,14 +12,12 @@ search.audienceType:
 ---
 # System Settings Email tab
 
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing email. Many of these settings can be found in the Power Platform admin center by going to **Manage** > **Environments** > [select an environment] > **Settings** > **Email** > **Email settings**. More information: [Email settings](settings-email.md).
+
 Use the settings on this page to set up email processing in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
 
-<!-- legacy procedure -->
-
-> [!NOTE]
-> Many of these settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Email settings**.
-  
-## Open the System Settings dialog box 
+## Open the System Settings Email tab 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -30,11 +27,10 @@ Use the settings on this page to set up email processing in model-driven apps in
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
-
-3. Select **Settings** > **Email Configuration**.
-  
-4. Select **Email Configuration Settings**.  
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
+5. Select the **Email** tab.  
   
 > [!div class="mx-tableFixed"]
 > |   Settings    |   Description     |
