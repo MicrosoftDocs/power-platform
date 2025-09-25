@@ -3,7 +3,7 @@ title: Integrate data into Microsoft Dataverse
 description: Integrate data from multiple sources into Microsoft Dataverse
 ms.topic: how-to
 ms.component: cds
-ms.date: 07/30/2025
+ms.date: 09/25/2025
 ms.subservice: admin
 ms.author: nhelgren
 author: NHelgren
@@ -89,8 +89,6 @@ After you provide your credentials, the connection is listed under your connecti
 
 Connection sets are a collection of two connections, environments for the connections, organization mapping information, and integration keys that can be reused among projects. You can start using a connection set for development and then switch to a different one for production. One key piece of information that is stored with a connection set is organization unit mappings—for example, mappings between the finance and operations apps legal entity (or company) and Dynamics 365 Sales organization or business units. You can store multiple organization mappings in a connection set.
 
-1. Go to [Power Platform admin center](https://admin.powerapps.com).
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 1. Select **Manage** in the navigation pane.
@@ -101,26 +99,18 @@ Connection sets are a collection of two connections, environments for the connec
 
 1. Provide a name for your connection set.
   
-    > [!div class="mx-imgBorder"] 
-    > ![Create connection set.](media/data-integrator/CreateConnectionSet1780.png "Create connection set")
-  
-1. Choose the connections you created earlier and select the appropriate environment.
+1. Choose the connection you created earlier and select the appropriate environment.
 
-1. Repeat the steps by choosing your next connection (think of the as source and destination in no specific order).
+1. Repeat the previous step by choosing your next connection and enivironment.
 
 1. Specify the organization to business unit mapping (if you're integrating between finance and operations apps and Sales systems).
   
     > [!NOTE]
     > You can specify multiple mappings for each connection set.
   
-1. After you complete all the fields, select **Create**.
+1. After you complete all the fields, select **Save**.
 
-1. You see the new connection set you created under the Connection sets list page.
-    
-    > [!div class="mx-imgBorder"] 
-    > ![Connection set list.](media/data-integrator/CreateConnectionSet2780.png "Connection set list")
-
-Your connection set is ready to be used across various integration projects.
+You see the new connection set you created under the Connection sets list page. Your connection set is ready to be used across various integration projects.
 
 ### Create a data integration project
 
