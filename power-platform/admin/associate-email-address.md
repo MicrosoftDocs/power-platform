@@ -6,7 +6,7 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 09/24/2025
 ms.subservice: admin
-ms.author: dmartens
+ms.author: ahanda
 ms.reviewer: sericks
 search.audienceType: 
   - admin
