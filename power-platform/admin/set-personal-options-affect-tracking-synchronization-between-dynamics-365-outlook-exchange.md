@@ -15,8 +15,6 @@ contriubutors:
 ---
 # Set personal options that affect tracking and synchronization between customer engagement apps and Outlook or Exchange
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can use the **Set Personal Options** dialog box in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), to set many options that affect tracking and synchronization.  
   
  To open the **Set Personal Options** dialog box:  

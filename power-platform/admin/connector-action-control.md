@@ -23,8 +23,6 @@ search.app:
 
 # Connector action control
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can use connector action control to allow or block individual actions or triggers within a given connector.
 
 > [!IMPORTANT]

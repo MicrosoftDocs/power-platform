@@ -17,8 +17,6 @@ ms.custom:
 
 # Manage Dynamics 365 apps
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can use the Microsoft Power Platform admin center to install, configure, and manage Dynamics 365 apps that run on [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro). Apps in this topic refer to Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing and apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
 
 > [!NOTE]
