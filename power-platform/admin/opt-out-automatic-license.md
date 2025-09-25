@@ -12,8 +12,6 @@ search.audienceType:
   - admin
 ---
 # Opt-out of automatic license-based user roles management 
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
  
 
 ## How to request my organization opt-outs?

@@ -14,8 +14,6 @@ search.audienceType:
 ---
 # Add a Microsoft Dataverse database
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can create a database and build apps by using Dataverse as a data store. You can either create your own custom tables or use the predefined tables. To create a database, you first need to either create an environment, or be assigned to an existing environment as an **Environment Admin**. In addition, you must be assigned the appropriate license. For information on purchasing a plan for using Dataverse, see [Pricing info](pricing-billing-skus.md).
 
 You can only add a single database to an environment. This article applies to customers who haven't yet added a Dataverse database to an environment.

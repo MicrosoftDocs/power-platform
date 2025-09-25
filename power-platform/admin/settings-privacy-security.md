@@ -15,8 +15,6 @@ ms.custom:
 
 # Manage privacy and security settings
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Use these settings to customize the privacy and security of the Dataverse environments that are associated with Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation.
 
 Make sure you have the System Administrator security role or equivalent permissions to update the settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.

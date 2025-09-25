@@ -17,8 +17,6 @@ contributors:
 
 # Identity and access management
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Ensure that authorized users are the only people who can access sensitive data in items across your tenant.
 
 ## IP firewall

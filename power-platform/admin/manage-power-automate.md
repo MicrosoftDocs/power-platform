@@ -17,8 +17,6 @@ ms.custom:
 
 # Manage Power Automate flows
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 If you're an Environment Admin, Global admin, or Power Platform admin, you can manage the flows created in your organization.
 
 Admins can do the following from the Power Platform admin center:

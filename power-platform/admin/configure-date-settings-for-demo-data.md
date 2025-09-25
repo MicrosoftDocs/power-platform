@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Configure date settings for demo data 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Use the information below to automatically keep your demo environment data current.
 
 **Before you begin** 

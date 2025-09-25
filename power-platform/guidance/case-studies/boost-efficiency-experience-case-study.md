@@ -4,7 +4,7 @@ description: Learn how A1 Inteligência em Viagens boosted team efficiency and t
 author: robstand
 ms.author: sashi
 ms.topic: overview
-ms.subservice: guidance
+ms.subservice: case-study
 ms.date: 03/04/2025
 
 ---
