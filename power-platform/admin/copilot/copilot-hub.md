@@ -4,7 +4,7 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/17/2025
+ms.date: 09/24/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -38,11 +38,11 @@ The **Settings** page displays settings grouped by product. Some settings span a
 > [!Note]
 > Tenant users with environment access can view Copilot settings.
 
-### Control who can use Copilot features in Power Apps (preview)
+### Control who can use AI features in model-driven apps (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-Admins can define who within an environment can use Copilot capabilities—either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is currently in preview and is only for environments activated for [Managed Environments](../managed-environment-enable.md), with a subset of Copilot features adhering to it. Review the table below to learn which capabilities adhere to this configuration.
+Admins can define who within an environment can use Copilot capabilities in model-driven apps&mdash;either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is currently in preview and is only for environments activated for [Managed Environments](../managed-environment-enable.md), with a subset of Copilot features adhering to it. Review the table below to learn which capabilities adhere to this configuration.
 
 | Product | Feature |
 |---------|---------|
