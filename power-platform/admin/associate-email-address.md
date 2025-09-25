@@ -29,7 +29,7 @@ When customer engagement apps track an email, it associates the email address to
 7. Business unit
 8. Email-enabled tables (such as Queues, custom, etc.)
 
-If the email address resolves to more than 100 rows, the **From** field won't be associated to a row and appears as unresolved. If the [UnresolveSenderInCaseOfMultipleMatch OrgDBOrgSetting](OrgDbOrgSettings.md) is enabled and the sender email address matches multiple records, the **From** field remains unresolved.
+If the email address resolves to more than 100 rows, the **From** field won't be associated to a row and appears as unresolved. If the [UnresolveSenderInCaseOfMultipleMatch OrgDBOrgSetting](OrgDbOrgSettings.md) is turned on and the sender email address matches multiple records, the **From** field remains unresolved.
 
 > [!NOTE]
 > - The only exception is when the owner of the mailbox or the queue tracking the email is the owner of the duplicated row. A row that's owned by you takes precedence over any rows that you don't own. For example, if the email address exists in a contact and account table and the mailbox owner also owns the account but not the contact, the **From** field will resolve to the account.
