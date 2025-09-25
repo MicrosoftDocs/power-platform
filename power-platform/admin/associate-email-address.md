@@ -1,10 +1,10 @@
 ---
-title: "Associate an email address with a row   | MicrosoftDocs"
+title: Associate an email address with a row   
 description: Associate an email address with a row. 
 author: foviedoITBA
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/24/2025
+ms.date: 09/25/2025
 ms.subservice: admin
 ms.author: ahanda
 ms.reviewer: sericks
