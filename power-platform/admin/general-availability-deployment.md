@@ -7,7 +7,7 @@ ms.author: paulda
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/25/2025
+ms.date: 09/25/2025
 search.audienceType: 
   - admin
 ms.contributors:
@@ -80,7 +80,6 @@ Environment database version may not be updated until a few days after the sched
 | China\**                     | October 27, 2025  |
 | DoD\*                        | October 27, 2025  |
 | GCC\*                        | October 27, 2025  |
-
 
 \*For more information about GCC, GCC High, and DoD, see [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
 \**For more information about environments in China, see [Power Platform and Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md).
