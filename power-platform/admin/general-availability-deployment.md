@@ -7,7 +7,7 @@ ms.author: paulda
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/25/2025
+ms.date: 09/26/2025
 search.audienceType: 
   - admin
 ms.contributors:
@@ -59,27 +59,27 @@ Environment database version may not be updated until a few days after the sched
 |---------|---------|
 | First release                | September 22, 2025  |
 | Canada                       | September 29, 2025  |
-| South America                | September 29, 2025  |
-| India                        | September 29, 2025  |
 | France                       | September 29, 2025  |
-| South Africa                 | September 29, 2025  |
 | Germany                      | September 29, 2025  |
-| Switzerland                  | September 29, 2025  |
-| Norway                       | September 29, 2025  |
+| India                        | September 29, 2025  |
 | Korea                        | September 29, 2025  |
-| Singapore                    | September 29, 2025  |
+| Norway                       | September 29, 2025  |
+| South Africa                 | September 29, 2025  |
+| South America                | September 29, 2025  |
 | Sweden                       | September 29, 2025  |
-| United Arab Emirates         | September 29, 2025  |
-| Japan                        | October 6, 2025  |
+| Switzerland                  | September 29, 2025  |
 | Asia Pacific                 | October 6, 2025  |
-| Great Britain                | October 6, 2025  |
 | Australia                    | October 6, 2025  |
 | GCC High\*                   | October 6, 2025  |
+| United Kingdom               | October 6, 2025  |
+| Japan                        | October 6, 2025  |
+| Singapore                    | October 6, 2025  |
+| United Arab Emirates         | October 6, 2025  |
 | Europe                       | October 13, 2025  |
 | North America                | October 20, 2025  |
-| GCC\*                        | October 27, 2025  |
-| DoD\*                        | October 27, 2025  |
 | China\**                     | October 27, 2025  |
+| DoD\*                        | October 27, 2025  |
+| GCC\*                        | October 27, 2025  |
 
 \*For more information about GCC, GCC High, and DoD, see [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
 \**For more information about environments in China, see [Power Platform and Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md).
