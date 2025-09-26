@@ -4,7 +4,7 @@ description: Learn how to use collaboration settings to adjust how collaboration
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/3/2025
+ms.date: 10/10/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -72,6 +72,6 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable app level security roles for canvas apps. | When a maker shares a canvas app, they can create and grant app level security roles directly from in the sharing dialog box. This allows makers with the system admin security roles to assigning specific security roles for the shared app. The assigned app-level security roles are shown in the [ppac admin center page](/power-platform/admin/security-roles-privileges), with the naming structure such as **[App name]+{Security role]**. | Off
-|  Enable plan level security roles for plan designer. |  When a maker shares a plan, they can create and grant plan-level security roles directly from in the sharing dialog box. This allows makers with the system admin security roles to assigning specific security roles for the shared plan. The assigned plan-level security roles are shown in the [ppac admin center page](/power-platform/admin/security-roles-privileges), with the naming structure such as **[plan name]+{Security role]**. | Off |
+| Enable app level security roles for canvas apps. | When a maker shares a canvas app, they can create and grant app level security roles directly in the sharing dialog box. Makers with the system admin security role assign specific security roles for the shared app. The assigned app-level security roles show in the admin center [security roles settings](/power-platform/admin/security-roles-privileges), with the naming structure like **[App name]+{Security role]**. | Off
+| Enable plan level security roles for plan designer. | When a maker shares a plan, they can create and grant plan-level security roles directly in the sharing dialog box. Makers with the system admin security role assign specific security roles for the shared plan. The assigned plan-level security roles show in the admin center [security roles settings](/power-platform/admin/security-roles-privileges), with the naming structure like **[plan name]+{Security role]**. | Off |
 
