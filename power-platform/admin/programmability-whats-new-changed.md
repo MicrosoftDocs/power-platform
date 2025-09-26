@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 08/18/2025
+ms.date: 09/26/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -15,6 +15,22 @@ search.audienceType:
 # Programmability and extensibility - what's new or changed
 
 Learn about the latest changes and new capabilities for Power Platform API and admin SDKs.
+
+## August 2025
+
+| Item | Type | Description |
+|------|------|-------------|
+| Create Role Assignment | API | New endpoint: [Create Role Assignment (Preview)](/rest/api/power-platform/authorization/role-based-access-control/create-role-assignment) |
+| Delete Role Assignment | API | New endpoint: [Delete Role Assignment (Preview)](/rest/api/power-platform/authorization/role-based-access-control/delete-role-assignment) |
+| List Role Assignments | API | New endpoint: [List Role Assignments (Preview)](/rest/api/power-platform/authorization/role-based-access-control/list-role-assignments) |
+| List Role Definitions | API | New endpoint: [List Role Definitions (Preview)](/rest/api/power-platform/authorization/role-based-access-control/list-role-definitions) |
+| Create Environment Rule Based Assignment | API | New endpoint: [Create Environment Rule Based Assignment](/rest/api/power-platform/governance/create-environment-rule-based-assignment) |
+| List Rule Assignments By Environment Group Id | API | New endpoint: [List Rule Assignments By Environment Group Id](/rest/api/power-platform/governance/list-rule-assignments-by-environment-group-id) |
+| List Rule Assignments By Environment Id | API | New endpoint: [List Rule Assignments By Environment Id](/rest/api/power-platform/governance/list-rule-assignments-by-environment-id) |
+| List Rule Assignments By Policy Id | API | New endpoint: [List Rule Assignments By Policy Id](/rest/api/power-platform/governance/list-rule-assignments-by-policy-id) |
+| Microsoft.PowerPlatform.Management | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3147.171) |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.48.2) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
 
 ## July 2025
 

@@ -88,4 +88,5 @@ PowerAutomate.Flows.Read | Read Power Automate flows | Allows reading of Power A
 PowerAutomate.Flows.Write | Write Power Automate flows | Allows writing of Power Automate flows.
 PowerPages.Websites.Read | Read Power Pages websites | Allows reading of Power Pages websites.
 PowerPages.Websites.Write | Write Power Pages websites | Allows writing of Power Pages websites.
+ResourceQuery.Resources.Read | Query Resources | Allows querying of resources.
 Security.Recommendations.Read | Read Power Platform security information | Allows reading of security recommendations in Power Platform.
