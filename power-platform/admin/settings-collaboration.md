@@ -72,6 +72,6 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable app level security roles for canvas apps. | When you share a canvas app, you can control who can view or edit the app by assigning specific security roles to each user. This ensures that only authorized users have access to the app’s features and data. | Off
-|  Enable plan level security roles for plan designer. | When you share a plan, you can control who can access or modify it by assigning specific security roles to each user. | Off |
+| Enable app level security roles for canvas apps. | When a maker shares a canvas app, they can create and grant app level security roles directly from in the sharing dialog box. This allows makers with the system admin security roles to assigning specific security roles for the shared app. The assigned app-level security roles are shown in the [ppac admin center page](/power-platform/admin/security-roles-privileges), with the naming structure such as **[App name]+{Security role]**. | Off
+|  Enable plan level security roles for plan designer. |  When a maker shares a plan, they can create and grant plan-level security roles directly from in the sharing dialog box. This allows makers with the system admin security roles to assigning specific security roles for the shared plan. The assigned plan-level security roles are shown in the [ppac admin center page](/power-platform/admin/security-roles-privileges), with the naming structure such as **[plan name]+{Security role]**. | Off |
 
