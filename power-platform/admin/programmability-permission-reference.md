@@ -41,7 +41,7 @@ Name | Display name | Description
 ---- | ------------ | -----------
 AiFlows.Ai.Execute | Execute AI related operations (like Generate) on AI flow | Allows you to execute AI-related operations (like Generate) on AI flows.
 AiFlows.Ai.Read | AI related read operations on AI flow | Allows you to do AI-related read operations on AI flows.
-AiFlows.Ai.Write | AI related write operations on AI flow | Allows you to do AI-related write operations on AI flows.
+AiFlows.Ai.Write | AI-related write operations on AI flow | Allows you to do AI-related write operations on AI flows.
 AiFlows.Connections.Read | Read AI flow connection | Allows reading AI flow connections.
 AiFlows.Runs.Execute | Perform actions on AI flow run | Allows performing actions on AI flow runs.
 AiFlows.Runs.Read | Read Copilot flow run | Allows reading AI flow runs.
