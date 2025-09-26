@@ -67,3 +67,11 @@ Make sure you have the System Administrator security role or equivalent permissi
 | Show record name and type to unauthorized users when unfurling links in Teams chats| When a link is pasted into a Teams chat, display the name and type of record in a card.| On |
 | Install the Dynamics 365 app for Teams for users in the organization. Lets people in your org see business data while working in Teams| Active users of Dynamics 365 apps and Power Apps model-driven apps get the Dynamics 365 app for Teams automatically installed in their Teams client. | On |
 | Microsoft Teams activity feed notification for sharing events in the environment | When a record is shared in a model-driven app, a Teams activity feed notification appears for the recipient, alerting them to the record that was shared. | On|
+
+## Security roles
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Enable app level security roles for canvas apps. | When you share a canvas app, you can control who can view or edit the app by assigning specific security roles to each user. This ensures that only authorized users have access to the app’s features and data. | Off
+|  Enable plan level security roles for plan designer. | When you share a plan, you can control who can access or modify it by assigning specific security roles to each user. | Off |
+
