@@ -7,7 +7,7 @@ ms.author: paulda
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/25/2025
+ms.date: 09/26/2025
 search.audienceType: 
   - admin
 ms.contributors:
@@ -71,7 +71,7 @@ Environment database version may not be updated until a few days after the sched
 | Asia Pacific                 | October 6, 2025  |
 | Australia                    | October 6, 2025  |
 | GCC High\*                   | October 6, 2025  |
-| Great Britain                | October 6, 2025  |
+| United Kingdom               | October 6, 2025  |
 | Japan                        | October 6, 2025  |
 | Singapore                    | October 6, 2025  |
 | United Arab Emirates         | October 6, 2025  |
