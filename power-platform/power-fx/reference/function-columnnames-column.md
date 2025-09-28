@@ -54,7 +54,7 @@ Given the following JSON string in a variable named `JsonString`
     ```power-fx
     Value( Column( ParseJSON( JsonString ), "population" ) )
     ```
-    - Notice that this is similar to the `.` operator for [dynamic records](../untyped-object.md#record-types), but the column name doesn't have to be known beforehand.
+    - Notice that this formula is similar to the `.` operator for [dynamic records](../untyped-object.md#record-types), but the column name doesn't have to be known beforehand.
 
 3. The following formula returns the text value `"name: Seattle, population: 737000"`:
     ```power-fx
@@ -82,7 +82,7 @@ Given the following JSON string in a variable named `JsonString`
     ```
 
 ### Nonrecords
-Calling the Column or ColumnNames functions with dynamic values that don't represent records return an error. All of those expressions below are erroneous:
+Calling the Column or ColumnNames functions with dynamic values that don't represent records return an error. All of those expressions in the following list are erroneous:
 
 | Formula                                          | Reason for error                                 |
 | ------------------------------------------------ | ------------------------------------------- |

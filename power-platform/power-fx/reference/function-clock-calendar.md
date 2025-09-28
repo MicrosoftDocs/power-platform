@@ -37,8 +37,8 @@ You can use these functions to display dates and times in the language of the cu
 | **Calendar.MonthsShort()**   | Single-column table containing the abbreviated names of each month, starting with "Jan" for January.                                         |
 | **Calendar.WeekdaysLong()**  | Single-column table containing the full names of each weekday, starting with "Sunday".                                                       |
 | **Calendar.WeekdaysShort()** | Single-column table containing the full names of each weekday, starting with "Sun" for Sunday.                                               |
-| **Clock.AmPm()**             | Single-column table containing the long uppercase "AM" and "PM" designations. If the language uses a 24-hour clock, the table will be empty. |
-| **Clock.AmPmShort()**        | Single-column table containing the short uppercase "A" and "P" designations. If the language uses a 24-hour clock, the table will be empty.  |
+| **Clock.AmPm()**             | Single-column table containing the long uppercase "AM" and "PM" designations. If the language uses a 24-hour clock, the table is empty. |
+| **Clock.AmPmShort()**        | Single-column table containing the short uppercase "A" and "P" designations. If the language uses a 24-hour clock, the table is empty.  |
 | **Clock.IsClock24()**        | Boolean indicating if a 24-hour clock is used in this locale.                                                                                |
 
 Use the **[Text](function-text.md)** function to format date and time values using this same information. The **[Language](function-language.md)** function returns the current language and region code.
