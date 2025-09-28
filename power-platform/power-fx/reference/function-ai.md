@@ -83,33 +83,33 @@ Here's an example:
 
 ## Syntax
 
-**AIClassify**(_Text_, _Categories_)
+**AIClassify**( _Text_, _Categories_ )
 - *Text* - Required. A text sentences. The text to classify.
 - _Categories_ - Required. Single column of table of text categories.
 - Canvas apps - The return value is in the _Classification_ column.
 
-**AIExtract**(_Text_, _Entity_)
+**AIExtract**( _Text_, _Entity_ )
 - _Text_ - Required. A text sentences. The text to extract the data from.
 - _Entity_ - Required. The entity to extract. The name of entity to extract.
 - Canvas apps - The return value is in the _ExtractedData_ column, a table of zero or more rows of data matching the provided entity.
 
-**AIReply**(_Text_)
+**AIReply**( _Text_ )
 - _Text_ - Required. A text sentence. The text to respond to.
 - Canvas apps - The return value is in the _PreparedResponse_ column. 
 
-**AISentiment**(_Text_)
+**AISentiment**( _Text_ )
 - _Text_ - Required. The text to analyze for sentiment.
 - Canvas apps - The return value is in the _AnalyzedSentiment_ column and is "Positive," "Neutral," or "Negative".
 
-**AISummarize**(_Text_)
+**AISummarize**( _Text_ )
 - _Text_ - Required. The text to summarize.
 - Canvas apps - The return value is in the _SummarizedText_ column.
 
-**AISummarizeRecord**(_Entity_)
+**AISummarizeRecord**( _Entity_ )
 - _Entity_ - Required. The Dataverse record to summarize.
 - Canvas apps - The return value is in the _SummarizedText_ column.
 
-**AITranslate**(_Text_, _TargetLanguage_)
+**AITranslate**( _Text_, _TargetLanguage_ )
 - _Text_ - Required. The text to translate.
 - _TargetLanguage_ - The language tag to translate into such as "fr" for French. See the [**Language** function](./function-language.md) for more details.
 - Canvas apps - The return value is in the _TranslatedText_ column.
@@ -135,11 +135,11 @@ To set up the following examples:
 
 1. In Canvas apps, set the **OnSelect** property of the **Button** control to:
    ```power-fx
-   Set( Result, Environment.AIClassify( {Text:Subject, Categories: ["Housing," "Food"]} ).Classification )
+   Set( Result, Environment.AIClassify( {Text:Subject, Categories: ["Housing", "Food"]} ).Classification )
    ```
    For all other products, use this formula:
    ```power-fx
-   Set( Result, AIClassify( Subject, ["Housing," "Food"] ) )
+   Set( Result, AIClassify( Subject, ["Housing", "Food"] ) )
    ```
 1. Press the button. The **Text** control displays the result:
    ```

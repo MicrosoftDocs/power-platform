@@ -73,15 +73,15 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 
 **Blank**()
 
-**Coalesce**(_Value1_ [, *Value2*, ... ])
+**Coalesce**( _Value1_ [, *Value2*, ... ] )
 
 - _Value(s)_ – Required. Values to test. Each value is evaluated in order until a value that isn't _blank_ and not an empty string is found. Values after this point aren't evaluated.
 
-**IsBlank**(_Value_)
+**IsBlank**( _Value_ )
 
 - _Value_ – Required. Value to test for a _blank_ value or empty string.
 
-**IsEmpty**(_Table_)
+**IsEmpty**( _Table_ )
 
 - _Table_ - Required. Table to test for records.
 
@@ -159,7 +159,7 @@ Other examples:
 | **IsBlank(&nbsp;Blank()&nbsp;)**     | Tests the return value from the **Blank** function, which always returns a _blank_ value.                                                                                                                                | **true**  |
 | **IsBlank("")**                    | A string that contains no characters.                                                                                                                                                                                    | **true**  |
 | **IsBlank("Hello")**               | A string that contains one or more characters.                                                                                                                                                                           | **false** |
-| **IsBlank(_AnyCollection_)**       | Because the [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) exists, it isn't blank, even if it doesn't contain any records. To check for an empty collection, use **IsEmpty** instead. | **false** |
+| **IsBlank( _AnyCollection_ )**       | Because the [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) exists, it isn't blank, even if it doesn't contain any records. To check for an empty collection, use **IsEmpty** instead. | **false** |
 | **IsBlank(Mid("Hello", 17, 2))** | The starting character for **[Mid](function-left-mid-right.md)** is beyond the end of the string. The result is an empty string.                                                                                         | **true**  |
 | **IsBlank(If(false, false))**    | An **[If](function-if.md)** function with no _ElseResult_. Because the condition is always **false**, this **[If](function-if.md)** always returns _blank_.                                                              | **true**  |
 
@@ -168,7 +168,7 @@ Other examples:
 1. Create an app from scratch, and add a **Button** control.
 2. Set the button's **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:
 
-   **Collect(IceCream, {Flavor: "Strawberry", Quantity: 300}, {Flavor: "Chocolate", Quantity: 100})**
+   **Collect( IceCream, {Flavor: "Strawberry", Quantity: 300}, {Flavor: "Chocolate", Quantity: 100} )**
 
 3. Preview your app, click, or tap the button that you added, and then close Preview.
 

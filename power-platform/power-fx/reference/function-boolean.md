@@ -29,17 +29,17 @@ In most cases, type coercion happens automatically, and you don't need to use th
 
 ## Syntax
 
-**Boolean**(Text*)<br>
-**Boolean**(*TextSingleColumnTable*)
+**Boolean**( *Text* )<br>
+**Boolean**( *TextSingleColumnTable* )
 
 * *Text* - Required. The string(s) to convert. Must be a case insensitive version of `"true"` or `"false"`. These text strings aren't localized. *blank* and empty text is also accepted and converted to a *blank*. All other text strings return an error.
 
-**Boolean**(*Number*)<br>
-**Boolean**(*NumberSingleColumnTable*)
+**Boolean**( *Number* )<br>
+**Boolean**( *NumberSingleColumnTable* )
 
 * *Number* - Required. The number(s) to convert. `0` is converted to *false* and all other numbers are converted to *true*. *blank* values are accepted and converted to a *blank*.
 
-**Boolean**(*DynamicValue*)
+**Boolean**( *DynamicValue* )
 
 * *DynamicValue* - Required. The dynamic value to convert. Acceptable values depend on the dynamic provider. For [**JSON**](function-parsejson.md), JSON boolean values `true`, `false`, and `null` are accepted, corresponding to *true*, *false*, and *blank* values in Power Fx. String or number values are accepted as outlined for the *String* and *Number* overloads described earlier.
 

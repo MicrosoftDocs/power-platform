@@ -68,7 +68,7 @@ If there are no errors, the table that **Errors** returns will be [empty](functi
 
 ## Syntax
 
-**Errors**(_DataSource_ [, *Record* ])
+**Errors**( _DataSource_ [, *Record* ] )
 
 - _DataSource_ – Required. The data source for which you want to return errors.
 - _Record_ – Optional. A specific record for which you want to return errors. If you don't specify this argument, the function returns errors for the entire data source.
@@ -99,7 +99,7 @@ Which returns **false**, because the **Errors** function returned the following 
 
 | Record                                 | Column  | Message                                                                                                      | Error              |
 | -------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------ | ------------------ |
-| { Flavor: "Chocolate," Quantity: 100 } | _blank_ | "Another user has modified the record that you're trying to modify. Reload the record and try again." | ErrorKind.Conflict |
+| { Flavor: "Chocolate", Quantity: 100 } | _blank_ | "Another user has modified the record that you're trying to modify. Reload the record and try again." | ErrorKind.Conflict |
 
 You can place a label on the form to show this error to the user.
 
