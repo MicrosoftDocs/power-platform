@@ -14,8 +14,6 @@ search.audienceType:
 ---
 # Enable SharePoint document management for specific entities
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Enable document management for specific entities to store related records in SharePoint. This setting allows you to quickly access, share, and manage these documents directly from customer engagement apps such as Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation.
 
 > [!TIP]

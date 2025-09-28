@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Run bulk system jobs to detect duplicate records
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 To maintain the integrity of system data, you should check for duplicates regularly to make sure that users don't inadvertently create duplicate contacts, accounts, leads, or other types of records.  
   
  The Check for Duplicates wizard helps you set up a bulk "job" that finds and cleans up duplicate records. You can schedule the job to run daily, and you can receive an email confirmation when the job finishes.  

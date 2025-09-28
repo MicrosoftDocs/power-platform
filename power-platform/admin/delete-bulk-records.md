@@ -15,8 +15,6 @@ search.audienceType:
 ---
 # Remove a large amount of specific, targeted data with bulk deletion
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The *bulk deletion* feature helps you delete data you no longer need so you can maintain data quality and manage the consumption of system storage.  
   
  For example, you can delete the following data in bulk:  
