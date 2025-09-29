@@ -79,17 +79,6 @@ landingContent:
         links:
           - text: "Power Platform and Copilot Studio Architecture Center: Reference architectures and solution ideas"
             url: architecture/products/copilot-studio.md
-
-# Card
-  - title: AI models
-    linkLists:
-    - linkListType: how-to-guide
-      links:
-      - text: Control preview and experimental AI models
-        url: admin/preview-experimental-ai-models-rule.md
-      - text: Allow external LLMs for generative responses
-        url: admin/allow-llm-generative-responses.md
-
 # Card
   - title: Responsible AI
     linkLists:
@@ -103,6 +92,16 @@ landingContent:
         url: faqs-copilot-data-sharing.md
       - text: FAQ for using Copilot to generate deployment notes in pipelines
         url: alm/faqs-ai-deployment-notes-pipelines.md
+
+# Card
+  - title: AI models
+    linkLists:
+    - linkListType: how-to-guide
+      links:
+      - text: Control preview and experimental AI models
+        url: admin/preview-experimental-ai-models-rule.md
+      - text: Allow external LLMs for generative responses
+        url: admin/allow-llm-generative-responses.md
 
 ## Card
   - title: Related copilot products and resources
