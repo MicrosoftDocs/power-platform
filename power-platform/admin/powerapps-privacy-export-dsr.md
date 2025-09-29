@@ -159,7 +159,7 @@ An administrator can export apps created by a user starting from the Power Platf
 
     :::image type="content" source="media/share-canvas-app-new.png" alt-text="Select app share.":::
 
-5. Once you have access to each of the user's apps you can export a canvas app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export an app, see [Exporting a canvas app](/powerapps/maker/data-platform/export-solutions#exporting-a-canvas-app).
+5. After you have access to each of the user's apps, you can export a canvas app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export an app, see [Exporting a canvas app](/powerapps/maker/data-platform/export-solutions#exporting-a-canvas-app).
 
 ## Step 4: Export the user's permissions to canvas apps
 
