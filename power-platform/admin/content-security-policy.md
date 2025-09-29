@@ -51,7 +51,7 @@ The Strict CSP toggle creates a CSP that mostly does not include wildcards or un
 | [connect-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/connect-src) | `'self' blob: data: wss: <platform>` | `'self' blob: <platform>` | Yes |
 | [frame-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-src) | `'self' blob: <platform>` | `'self' <platform>` | Yes |
 | [base-uri](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/base-uri) | `'none'` | N/A | No |
-| [form-action](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/form-action) | `https://excel.officeapps.live.com` | N/A | Yes |
+| [form-action](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/form-action) | `<platform>` | N/A | Yes |
 | [default-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/default-src) | `'self'` | `'self'` | No |
 
 ### Prerequisites
