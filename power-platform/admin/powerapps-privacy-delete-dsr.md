@@ -10,8 +10,14 @@ ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
-contributors:
-- royshea 
+contributors: 
+  - paulliew
+  - royshea
+  - sericks007
+ms.contributors:
+  - paulliew
+  - royshea
+  - sericks 
 ---
 
 # Responding to Data Subject Rights (DSR) requests to delete Power Apps customer data
@@ -109,26 +115,30 @@ As an administrator, you have two decisions to make when processing a DSR delete
 > Deleting an environment permanently deletes all resources within the environment, including all apps, flows, and connections. So, you need to review the contents of an environment before deletion.
 
 ### Give access to a user's environments
- 
+
 An admin can grant administrative access to an environment by following these steps:
 
-1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an environment to give admin privileges to yourself or another user in your organization.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
 
-2. If the environment was created by the user from the DSR request, under **Access**, **Environment admin**, select **See all**.
+2. In the navigation pane, select **Manage**.
 
-> [!div class="mx-imgBorder"] 
-> ![Select Environment admin, See all.](media/environment-admin-see-all.png "Select Environment admin, See all")
+3. In the **Manage** pane, select **Environments**, and then select an environment to give admin privileges to yourself or another user in your organization.
+
+4. If the environment was created by the user from the DSR request, under **Access**, **Environment admin**, select **See all**.
+
+:::image type="content" source="media/admin-environment-roles.png" alt-text="Environment roles.":::
 
 ### Delete environments created by a user
 
 An admin can review and delete environments created by a specific user by following these steps:
 
-1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an environment.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
 
-2. If the environment was created by the user from the DSR request, select **Delete** and then proceed with the steps to delete the environment.
+2. In the navigation pane, select **Manage**.
 
-> [!div class="mx-imgBorder"] 
-> ![Delete environment.](media/environment-delete.png "Delete environment")
+3. In the **Manage** pane, select **Environments**, and then select an environment.
+
+4. If the environment was created by the user from the DSR request, select **Delete** and then proceed with the steps to delete the environment.
 
 ### Give access to a user's environments using PowerShell
 
@@ -170,18 +180,19 @@ With the introduction of Dataverse, if a database is created within the environm
 
 #### Power Platform admin center
 
-An administrator can delete a user's environment permissions starting from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
+An administrator can delete a user's environment permissions starting from the Power Platform admin center by following these steps:
 
-1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an environment.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as a [Microsoft Entra Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) or a [Microsoft Entra Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator).
 
-   You must be a [Microsoft 365 global admin](/microsoft-365/admin/add-users/about-admin-roles) or a [Microsoft Entra global administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments that are created within your organization.
+2. In the navigation pane, select **Manage**.
 
-2. If your environment doesn't have a Dataverse database, you can see a section **Access**. Under **Access**, select either **Environment admin** or **Environment maker**, and then select **See all**.
+3. In the **Manage** pane, select **Environments**, and then select each environment in your organization.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Select Environment admin, See all.](media/environment-admin-see-all.png "Select Environment admin, See all")
+4. If your environment doesn't have a Dataverse database, you can see a section **Access**. Under **Access**, select either **Environment admin** or **Environment maker**, and then select **See all**.
+  
+:::image type="content" source="media/admin-environment-roles.png" alt-text="Environment roles.":::
 
-3. Select a user, select **Remove** to remove their permission, and then select **Continue**.
+5. Select a user, select **Remove** to remove their permission, and then select **Continue**.
 
 #### PowerShell
 
@@ -229,7 +240,7 @@ An admin can delete apps created by a user by following these steps:
 
    You must be a [Microsoft 365 global admin](/microsoft-365/admin/add-users/about-admin-roles) or a [Microsoft Entra global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments that are created within your organization.
 
-2. Under **Resources**, select **Power Apps**. 
+2. Under **Resources**, select **Power Apps**.
 
 3. Select an app, and then select **Delete** > **Delete from cloud**.
 
@@ -419,12 +430,12 @@ As an admin of a managed Microsoft Entra tenant, you can delete the user's accou
 If you're a member of an unmanaged tenant, then you need to follow these steps to delete your account from your Microsoft Entra tenant:
 
 > [!NOTE]
-> Read the [Unmanaged tenant section](#unmanaged-tenant) to see how to detect if you're a member of an unmanaged or managed tenant.
+> Read [Unmanaged tenant](#unmanaged-tenant) to learn how to detect if you're a member of an unmanaged or a managed tenant.
 
 1. Sign in with your Microsoft Entra account.
 
 2. Select **Close account** and follow the instructions to delete your account from your Microsoft Entra tenant.
 
-    ![Select Close account.](./media/powerapps-gdpr-delete-dsr/close-account.png)
+    :::image type="content" source="./media/powerapps-gdpr-delete-dsr/close-account.png" alt-text="Select Close account.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

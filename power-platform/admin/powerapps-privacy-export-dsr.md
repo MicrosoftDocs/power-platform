@@ -18,7 +18,6 @@ ms.contributors:
   - paulliew
   - royshea
   - sericks 
-ms.custom: sfi-image-nochange
 ---
 
 # Responding to Data Subject Rights (DSR) requests to export Power Apps customer data
@@ -159,7 +158,7 @@ An administrator can export apps created by a user starting from the Power Platf
 
     :::image type="content" source="media/share-canvas-app-new.png" alt-text="Select app share.":::
 
-5. After you have access to each of the user's apps, you can export a canvas app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export an app, see [Exporting a canvas app](/powerapps/maker/data-platform/export-solutions#exporting-a-canvas-app).
+7. After you have access to each of the user's apps, you can export a canvas app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export an app, see [Exporting a canvas app](/powerapps/maker/data-platform/export-solutions#exporting-a-canvas-app).
 
 ## Step 4: Export the user's permissions to canvas apps
 
@@ -350,7 +349,7 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 
 ## Step 12: Find personal data for the user in Microsoft Copilot Studio
 
-Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot Studio is also available as a standalone service. For guidance on how to respond to DSR requests for Microsoft Copilot Studio service data, see [Responding to Data Subject Requests for Microsoft Copilot Studio](/power-virtual-agents/personal-data-summary).
+Power Apps capabilities build upon Microsoft Copilot Studio. Microsoft Copilot Studio is also available as a standalone service. For guidance on how to respond to DSR requests for Microsoft Copilot Studio service data, see [Responding to Data Subject Requests for Microsoft Copilot Studio](/power-virtual-agents/personal-data-summary).
 
 > [!IMPORTANT]
 > We recommend that administrators complete this step for Power Apps users.
