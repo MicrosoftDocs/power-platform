@@ -97,10 +97,12 @@ landingContent:
       links:
       - text: Responsible AI FAQs for Power Platform
         url: responsible-ai-overview.md
-      - text: FAQ about Copilot data security and privacy
+      - text: FAQ for Copilot data security and privacy
         url: faqs-copilot-data-security-privacy.md
-      - text: FAQ about optional data sharing for Copilot features
+      - text: FAQ for optional data sharing for Copilot features
         url: faqs-copilot-data-sharing.md
+      - text: FAQ for using Copilot to generate deployment notes in pipelines
+        url: alm/faqs-ai-deployment-notes-pipelines.md
 
 ## Card
   - title: Related copilot products and resources
