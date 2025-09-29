@@ -8,7 +8,7 @@ metadata:
   description: Get an overview of where to find documentation and training for Copilots and generative AI in Power Platform.
   author: jhaskett-msft
   ms.author: jhaskett
-  ms.date: 08/01/2025
+  ms.date: 09/29/2025
   ms.topic: landing-page # DON'T CHANGE
   ms.custom: 
     - bap-template #Required; don't change
@@ -79,6 +79,16 @@ landingContent:
         links:
           - text: "Power Platform and Copilot Studio Architecture Center: Reference architectures and solution ideas"
             url: architecture/products/copilot-studio.md
+
+# Card
+  - title: AI models
+    linkLists:
+    - linkListType: how-to-guide
+      links:
+      - text: Control preview and experimental AI models
+        url: admin/preview-experimental-ai-models-rule.md
+      - text: Allow external LLMs for generative responses
+        url: admin/allow-llm-generative-responses.md
 
 # Card
   - title: Responsible AI
