@@ -5,7 +5,7 @@ description: Discover integration patterns tailored to specific business scenari
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/22/2025
+ms.date: 09/29/2025
 ms.topic: concept-article
 ms.custom:
   - ai-gen-docs-bap
@@ -19,10 +19,10 @@ Based on your analysis, the next step is to plan the integration and identify th
 
 Each pattern addresses specific business scenarios and technical constraints:
 
-- [nstant-trigger-pattern](#instant-trigger-pattern): This pattern reflects how users interact with systems. A user-driven action triggers a predefined series of actions.
-- [Event-driven-automatic](#event-driven-pattern-automatic-trigger): This pattern requires an automatic trigger, such as a response to events happening in a given system.
-- [Data consolidation](#data-consolidation-pattern-scheduled-trigger): This pattern is essential for organizations with multiple management systems that require a complete picture of their data across their various systems.
-- [Service-oriented architecture](#service-oriented-integration-pattern): This pattern typically involves multiple flows across systems, enabling modular, scalable integration in complex environments.
+- [nstant trigger pattern](#instant-trigger-pattern): This pattern reflects how users interact with systems. A user-driven action triggers a predefined series of actions.
+- [Event driven pattern](#event-driven-pattern): This pattern requires an automatic trigger, such as a response to events happening in a given system.
+- [Data consolidation pattern](#data-consolidation-pattern): This pattern is essential for organizations with multiple management systems that require a complete picture of their data across their various systems.
+- [Service oriented architecture](#service-oriented-integration-pattern): This pattern typically involves multiple flows across systems, enabling modular, scalable integration in complex environments.
 - [Synchronization](#data-synchronization-pattern): This pattern keeps data in sync across different databases and addresses performance and regulatory requirements.
 
 ## Instant trigger pattern
@@ -64,11 +64,11 @@ This data then appears in the Power App interface.
 
 Integrations can fail for various reasons. Ensure the app provides feedback to users during execution. Avoid scenarios where users click a button and receive no response, which leads to poor user experience.
 
-## Event-driven pattern: automatic trigger
+## Event driven pattern:automatic trigger
 
 Event-driven architectures respond to changes in systems without direct user interaction. This pattern is intuitive and scalable, making it ideal for automating business processes based on system events.
 
-### Event-driven-Example scenario
+### Event driven:Example scenario
 
 The customer service department wants to send automatic updates to customers when a case is updated. Only specific changes—such as adding a note or changing the status—should trigger notifications.
 
@@ -102,11 +102,11 @@ Understand the expected volume of triggered events. Notification services (email
 - Implement throttling or rate-limiting mechanisms.
 - Prepare a mitigation plan for unexpected spikes in event frequency.
 
-## Data consolidation pattern: scheduled trigger
+## Data consolidation pattern:scheduled trigger
 
 Data consolidation helps organizations unify information across multiple systems to support reporting and operational processes. While analytics often require full datasets, operational use cases focus on retrieving only the data needed to complete business tasks.
 
-### Example scenario for data consolidation
+### Example scenario:data consolidation
 
 A company uses three legacy systems:
 
@@ -144,7 +144,7 @@ If a scheduled flow takes longer than expected, it may disrupt business processe
 - Plan for scalability as data volume increases
 - Ensure visibility into flow health to prevent unnoticed failures
 
-## Service-oriented integration pattern
+## Service oriented integration pattern
 
 Large organizations often operate multiple systems across departments. These systems evolve to depend on each other for completing business processes. The integration layer bridges these systems, allowing each to perform its core function while enabling cross-system communication.
 
@@ -171,7 +171,7 @@ Creating one large flow to handle all integrations is impractical. It introduces
 - Optimize flows for specific use cases
 - Scale the integration landscape with manageable components
 
-### Optimize cross-system processes
+### Optimize cross:system processes
 
 Look for opportunities to consolidate logic where appropriate.  
 Example: If a document in SharePoint must be sent to both SAP and Oracle, create one flow that reads the file once and writes it to both systems.
@@ -197,13 +197,13 @@ Data synchronization is used when identical systems store data in separate datab
 - **Performance**: Local data access improves responsiveness, especially in latency-sensitive industries.
 - **Compliance**: Legal regulations may require data to be stored within national borders. Organizations often deploy local instances with synchronization processes to meet these requirements.
 
-### synchronization-Example scenario
+### synchronization:Example scenario
 
 A medical devices company operates across multiple European countries. Each country mandates that medical data be stored locally. The company deploys Power Platform apps and Dataverse instances in each country.
 
 To support sales operations, the company synchronizes non-sensitive data—such as contact details, orders, and shipping—across all instances. Medical data remains local and excluded from synchronization.
 
-### Synchronization-Integration approach
+### Synchronization:Integration approach
 
 Use an automatic cloud flow triggered by updates to the Account record. Configure filters to:
 
@@ -225,7 +225,7 @@ Set realistic expectations for synchronization speed. Power Automate is asynchro
 
 Architects must understand the business process and validate whether real-time synchronization is necessary. Many requests for real-time access lack a strong business case. Prioritize clarity, scalability, and maintainability in the integration design.
 
-## Strategic considerations: Beyond cloud flows(Choosing the right integration tool)
+## Strategic considerations:Beyond cloud flows(Choosing the right integration tool)
 
 When selecting an integration tool, start with Power Automate as the default option. It offers unmatched cost-effectiveness for both development and maintenance. Architects must justify any deviation from this choice, especially when considering custom code or other Azure services.
 
@@ -240,7 +240,7 @@ Custom code, Azure Functions, Data Factory, or Service Bus may offer more contro
 
 :::image type="content" source="../media/integration-patterns/integration.png" alt-text="Diagram showing integrations.":::
 
-### Beyond cloud flows-Example scenario
+### Beyond cloud flows:Example scenario
 
 An online banking service wants to qualify customers for loans in real time. The qualification process involves complex calculations and data retrieval from multiple systems.
 

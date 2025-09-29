@@ -5,7 +5,7 @@ description: Explore integration requirements for Power Automate to meet enterpr
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/22/2025
+ms.date: 09/29/2025
 ms.topic: concept-article
 ms.custom:
   - ai-gen-docs-bap
@@ -33,7 +33,7 @@ This dimension defines how much data is transferred and how often. Volume and fr
 
 ### Compare volume versus frequency
 
-Two integration scenarios may involve the same total volume—such as 60,000 records per hour and 1,000 records per minute—but differ in frequency. While both equal the same hourly volume, the minute-by-minute expectation changes the solution design.
+Two integration scenarios may involve the same total volume—such as 60,000 records per hour and 1,000 records per minute—but differ in frequency. While both equal the same hourly volume, the minute by minute expectation changes the solution design.
 
 - Do not assume one solution fits both.
 - Validate whether the system can handle the higher-frequency load.
@@ -43,13 +43,13 @@ Two integration scenarios may involve the same total volume—such as 60,000 rec
 
 Triggers define how and when integrations run. Choose the right trigger based on predictability and system load.
 
-1: Scheduled triggers (Batch)
+**Scheduled triggers(Batch).**
 
 - Run at fixed intervals.
 - Easier to predict and manage.
 - Suitable for stable data growth patterns.
 
-2: Event-driven triggers
+**Event-driven triggers.**
 
 - Launch based on user actions or system events.
 - Harder to predict.
@@ -170,7 +170,7 @@ Stakeholder collaboration is essential during analysis. Their input can reshape 
 
 ### Integration design example: volume, frequency, directionality, and capability
 
-1: Volume and frequency Explained
+**Volume and frequency Explained.**
 
 Volume and frequency define how much data is transferred and how often. In this scenario, case creation is driven by customer activity. The total volume of updates is calculated as:
 
@@ -183,7 +183,7 @@ Frequency analysis shows monthly peaks.
 If current demand is 3.2 million requests per month, future demand may reach 8 million per month.  
 Design the integration to meet these performance thresholds.
 
-2: Directionality explained
+**Directionality explained.**
 
 Directionality defines the flow of data between systems. This scenario includes four distinct data streams:
 
@@ -199,10 +199,7 @@ Use direct or decoupled patterns based on system capabilities and performance ne
 
 :::image type="content" source="../media/integration-patterns/decoupled.png" alt-text="Diagram showing decoupled design":::
 
-[Oauth authentication for HTTP requests](/power-automate/oauth-authentication)
-[Limits and configs of power automate](/power-automate/limits-and-config)
-
-3: Capability explained
+**Capability explained.**
 
 Capability measures each system’s ability to send, receive, and process data.  
 Built-in connectors in Power Apps simplify integration, but require careful configuration:
@@ -222,17 +219,22 @@ If Dataverse cannot support the projected load:
 
 Further decouple the integration using Azure Service Bus for write operations.  
 This improves reliability and scalability.
- [Dataverse analytics of power platform](/power-platform/admin/analytics-common-data-service)
-[Azure Synapse Link for Dataverse with azure data lake](/power-apps/maker/data-platform/azure-synapse-link-data-lake)
 
-4: Cost considerations
+**Cost considerations.**
 
 While a fully decoupled integration offers scalability and resilience, it increases development and operational costs.
 
 - Balance quality and cost by designing solutions that meet current needs without unnecessary complexity.
-[Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/)
 
 ## Next step
 
 > [!div class="nextstepaction"]
 > [Explore integration patterns](patterns.md)
+
+## For more information
+
+[Oauth authentication for HTTP requests](/power-automate/oauth-authentication)
+[Limits and configs of power automate](/power-automate/limits-and-config)
+ [Dataverse analytics of power platform](/power-platform/admin/analytics-common-data-service)
+[Azure Synapse Link for Dataverse with azure data lake](/power-apps/maker/data-platform/azure-synapse-link-data-lake)
+[Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/)
