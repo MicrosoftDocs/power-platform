@@ -65,6 +65,8 @@ All customizations are grouped into one unmanaged solution during development, w
 - A single solution containing a large number of customizations may result in longer deployment times. To reduce the solution size, [use table segmentation](./segmented-solutions-alm.md)
 - Multiple developers working on the same development environment may encounter merge conflicts or overwrite each other’s changes
 
+> [!NOTE]
+> Recently, the import times for managed solutions in Microsoft Power Platform have been significantly improved due to enhancements in the solution packaging and deployment engine. These optimizations include better handling of component dependencies, parallel processing during import, and reduced overhead for unchanged components. As a result, even large managed solutions now deploy faster and more reliably across environments
 
 ## Multiple Solutions in the Same Development Environment
 
