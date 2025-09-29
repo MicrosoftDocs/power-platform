@@ -129,7 +129,7 @@ Get-AdminPowerAppEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Ou
 ```
 
 > [!IMPORTANT]
->  This function only works for environments that do not have a Dataverse database environment.
+> This function only works for environments that do not have a Dataverse database environment.
 
 ### For environments with a Dataverse database
 
@@ -346,21 +346,21 @@ See [What is an on-premises data gateway?](/powerapps/maker/canvas-apps/gateway-
 Power Apps licenses always include Power Automate capabilities. In addition to being included in Power Apps licenses, Power Automate is also available as a standalone service. For guidance on how to respond to DSR requests for users that use the Power Automate service, see [Responding to GDPR Data Subject Requests for Power Automate](/power-automate/gdpr-dsr-summary).
 
 > [!IMPORTANT]
->  We recommend that administrators complete this step for Power Apps users.
+> We recommend that administrators complete this step for Power Apps users.
 
 ## Step 12: Find personal data for the user in Microsoft Copilot Studio
 
 Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot Studio is also available as a standalone service. For guidance on how to respond to DSR requests for Microsoft Copilot Studio service data, see [Responding to Data Subject Requests for Microsoft Copilot Studio](/power-virtual-agents/personal-data-summary).
 
 > [!IMPORTANT]
->  We recommend that administrators complete this step for Power Apps users.
+> We recommend that administrators complete this step for Power Apps users.
 
 ## Step 13: Find personal data for the user in the Microsoft 365 admin center
 
 Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 admin center. For guidance on how to export feedback data stored by the Microsoft 365 admin center, see [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) or [Microsoft Entra Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator) is able to manage this data within the Microsoft 365 admin center without the need for Microsoft 365 or Office licenses.
 
 > [!IMPORTANT]
->  We recommend that administrators complete this step for Power Apps users.
+> We recommend that administrators complete this step for Power Apps users.
 
 ## Step 14: Export the user's personal data in environments
 
@@ -369,7 +369,7 @@ Anyone with a Power Apps license, provided there is 1GB available database capac
 For guidance on how to respond to DSR requests for users that use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](dataverse-privacy-dsr-guide.md).
 
 > [!IMPORTANT]
->  We recommend that administrators complete this step for Power Apps users.
+> We recommend that administrators complete this step for Power Apps users.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
