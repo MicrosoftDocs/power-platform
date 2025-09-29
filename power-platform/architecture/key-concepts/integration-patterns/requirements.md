@@ -197,7 +197,7 @@ Directionality defines the flow of data between systems. This scenario includes 
 Understanding these flows helps configure secure and efficient integrations.  
 Use direct or decoupled patterns based on system capabilities and performance needs.
 
-:::image type="content" source="../media/integration-patterns/decoupled.png" alt-text="directionality between engineers,dataverse,customers":::
+:::image type="content" source="../media/integration-patterns/decoupled.png" alt-text="Diagram showing decoupled design":::
 
 [Oauth authentication for HTTP requests](/power-automate/oauth-authentication)
 [Limits and configs of power automate](/power-automate/limits-and-config)

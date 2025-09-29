@@ -19,11 +19,11 @@ Based on your analysis, the next step is to plan the integration and identify th
 
 Each pattern addresses specific business scenarios and technical constraints:
 
-- [Instant user action](#instant-user-action): This pattern reflects how users interact with systems. A user-driven action triggers a predefined series of actions.
-- [Event-driven (automatic)](#event-driven-automatic): This pattern requires an automatic trigger, such as a response to events happening in a given system.
-- [Data consolidation](#data-consolidation): This pattern is essential for organizations with multiple management systems that require a complete picture of their data across their various systems. 
-- [Service-oriented architecture](#service-oriented-architecture): This pattern typically involves multiple flows across systems, enabling modular, scalable integration in complex environments.
-- [Synchronization](#synchronization): This pattern keeps data in sync across different databases and addresses performance and regulatory requirements.
+- [nstant-trigger-pattern](#instant-trigger-pattern): This pattern reflects how users interact with systems. A user-driven action triggers a predefined series of actions.
+- [Event-driven-automatic](#event-driven-pattern-automatic-trigger): This pattern requires an automatic trigger, such as a response to events happening in a given system.
+- [Data consolidation](#data-consolidation-pattern-scheduled-trigger): This pattern is essential for organizations with multiple management systems that require a complete picture of their data across their various systems.
+- [Service-oriented architecture](#service-oriented-integration-pattern): This pattern typically involves multiple flows across systems, enabling modular, scalable integration in complex environments.
+- [Synchronization](#data-synchronization-pattern): This pattern keeps data in sync across different databases and addresses performance and regulatory requirements.
 
 ## Instant trigger pattern
 
