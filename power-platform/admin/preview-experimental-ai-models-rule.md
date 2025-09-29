@@ -26,7 +26,7 @@ AI innovation moves at a rapid pace, and each AI model has different strengths a
 5. On the **Settings** page, select **Product** > **Features**.
 6. On the **Features** page, turn the **Preview and experimental AI models** setting **On** or **Off**.
 
-## Control preview and experimantal AI models use for an environment group
+## Control preview and experimental AI models use for an environment group
 
 If your environment is part of an [environment group](environment-groups.md), you can govern preview and experimental AI model use through the [**Preview and experimental AI models** environment group rule](environment-groups-rules.md).
 
