@@ -50,21 +50,20 @@ All customizations are grouped into one unmanaged solution during development, w
 
 **Recommended for:**
 
-- Small-scale implementations
-- Projects with limited scope and relative few customizations
+- Small-medium scale implementations
 - Scenarios where future modularization is unlikely
 
 **Pros:**
 
-- Simplified management and deployment
-- Easier to locate and track customizations
-- Lower overhead in environment setup
+- Simplified environment setup and management
+- Simplified deployment. With only one solution to manage, exporting and importing across environments is straightforward and less error-prone.
+- Easier to locate, audit, and manage changes
 
 **Cons:**
 
-- Difficult to scale or modularize later
-- Risk of component conflicts if reused across other projects
-- Limited flexibility for parallel development or team collaboration
+- Requires more effort to scale or modularize later if required
+- A single solution containing a large number of customizations may result in longer deployment times. To reduce the solution size, [use table segmentation](./segmented-solutions-alm.md)
+- Multiple developers working on the same development environment may encounter merge conflicts or overwrite each other’s changes
 
 
 ## Multiple Solutions in the Same Development Environment
@@ -75,19 +74,19 @@ Separate unmanaged solutions are created within a single development environment
 
 **Recommended for:**
 
-- Projects with distinct functional areas that don’t share components
+- Small-medium scale implementations with distinct functional areas that don’t share components
 - Teams working on independent features
 
 **Pros:**
 
-- Simple environment strategy and maintance
-- Simple deployment and integration planning 
+- Simplified environment setup and management
+- Smaller solutions are faster to deploy
 
 **Cons:**
 
-- Shared environment may lead to dependency issues
-- Potential for overlapping changes if coordination is lacking
-- Harder to isolate bugs or regressions
+- Multiple solutions in the same development environment may lead to dependency issues
+- Requires more effort to scale or modularize later if required
+- Multiple developers working on the same development environment may encounter merge conflicts or overwrite each other’s changes
 
 > [!NOTE]
 > When you import different solutions into your target environment, you're often creating layers where the existing solution lies underneath the one being imported. When it comes to solution layering, it's important that you don't have cross-solution dependencies.
@@ -142,7 +141,7 @@ This strategy involves developing each solution in its own isolated Microsoft Da
 
 - Higher infrastructure and maintenance overhead
 - Requires robust environment strategy and governance
-- More complex deployment and integration planning 
+- More complex deployment
 
 ### See also
 
