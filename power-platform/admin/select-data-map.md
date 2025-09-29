@@ -14,8 +14,6 @@ search.audienceType:
 
 # Select a data map
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 1. Select a data map to tell the Import Data wizard how to organize your imported data into the right columns and fields in customer engagement apps.  
   
    Select the default data map to let the wizard automatically map your data, or select a data map to match the type of information you're importing.  

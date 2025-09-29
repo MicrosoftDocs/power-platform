@@ -11,8 +11,6 @@ ms.reviewer: sericks
 ---
 # Update a record Owner and Owning Business Unit
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 There are situations where you need to update a record’s owner, an Owning Business Unit, or both an owner and Owning Business Unit because the record changes ownership. If you have enabled the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure), you can update the record’s owning business unit. 
 
 To update the record owner and owning business unit, you can add the Owning Business Unit in the header of the form and in the summary of the form.
