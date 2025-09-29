@@ -142,7 +142,9 @@ When a billing plan is created, a new environment named **Microsoft 365 Copilot 
 
 When a billing plan is created, a new environment named **Microsoft 365 Copilot Chat** is automatically provisioned and linked to the newly created billing plan. Copilot consumption reporting is accessible through this environment. If a new billing plan is created for **Microsoft 365 Copilot Chat** and an environment already exists, it's automatically linked to the new billing plan.
 
----
+> [!NOTE]
+   > Once created **Microsoft 365 Copilot Chat** environment cannot be deleted by Admins .You can unlink the environment from the linked billing plan . 
+
 
 ## List of billing plans
 
