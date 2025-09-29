@@ -263,5 +263,5 @@ Every integration decision must consider total cost of ownership. Custom solutio
 - Justify higher costs with clear business value
 - Use Power Automate unless proven insufficient
 - Design integrations that are efficient, maintainable, and scalable
- 
-[Power automate coding guidelines](https://learn.microsoft.com/en-us/power-automate/guidance/coding-guidelines/)
+
+[Power automate coding guidelines](/power-automate/guidance/coding-guidelines/)

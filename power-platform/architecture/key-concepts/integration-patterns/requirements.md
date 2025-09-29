@@ -119,7 +119,7 @@ Caching is a common solution when a system cannot meet performance requirements.
 - Understand the trade-off: caching improves response time but may deliver outdated data.
 - For real-time processes, ensure data freshness to avoid inaccurate results.
 
-- [Azure Synapse Link for Dataverse](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/export-to-data-lake)
+- [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/export-to-data-lake)
 
 ### Transformation and business logic
 
@@ -159,7 +159,7 @@ Stakeholder collaboration is essential during analysis. Their input can reshape 
 - **Infrastructure architects and security officers** ensure compliance and secure connectivity.
 - **System administrators** evaluate system capabilities and constraints.
 
-- [Azure Synapse Link for Dataverse](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/export-to-data-lake)
+- [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/export-to-data-lake)
 
 ### Example scenario
 
@@ -199,8 +199,8 @@ Use direct or decoupled patterns based on system capabilities and performance ne
 
 :::image type="content" source="../media/integration-patterns/decoupled.png" alt-text="directionality between engineers,dataverse,customers":::
 
-[Oauth authentication for HTTP requests](https://learn.microsoft.com/en-us/power-automate/oauth-authentication?tabs=classic-designer)
-[Limits and configs of power automate](https://learn.microsoft.com/en-us/power-automate/limits-and-config)
+[Oauth authentication for HTTP requests](/power-automate/oauth-authentication)
+[Limits and configs of power automate](/power-automate/limits-and-config)
 
 3: Capability explained
 
@@ -218,19 +218,19 @@ For custom website integrations:
 If Dataverse cannot support the projected load:
 
 - Use Dataverse Analytics to assess current usage.
-- Add a buffer layer such as Azure Data Lake to reduce read volume and avoid throttling errors (e.g., HTTP 429).
+- Add a buffer layer such as Azure Data Lake to reduce read volume and avoid throttling errors (for example., HTTP 429).
 
 Further decouple the integration using Azure Service Bus for write operations.  
 This improves reliability and scalability.
- [Dataverse analytics of power platform](https://learn.microsoft.com/en-us/power-platform/admin/analytics-common-data-service?tabs=new)
-[Azure Synapse Link for Dataverse with azure data lake](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/azure-synapse-link-data-lake)
+ [Dataverse analytics of power platform](/power-platform/admin/analytics-common-data-service)
+[Azure Synapse Link for Dataverse with azure data lake](/power-apps/maker/data-platform/azure-synapse-link-data-lake)
 
 4: Cost considerations
 
 While a fully decoupled integration offers scalability and resilience, it increases development and operational costs.
 
 - Balance quality and cost by designing solutions that meet current needs without unnecessary complexity.
-[Power Automate coding guidelines](https://learn.microsoft.com/en-us/power-automate/guidance/coding-guidelines/)
+[Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/)
 
 ## Next step
 
