@@ -53,11 +53,11 @@ With either option, your environment has two runtime URLs:
 
 ## Transition from an environment-slot purchasing model to a capacity-based model
 
-When you purchase a license for any finance and operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is entitled to 60 GB of operations database capacity and another 10 GB of Dataverse database capacity. With each user license, you receive an incremental amount of both operations and Dataverse database capacity.
+When you purchase a license for any finance and operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is granted various entitlements.  These are in the form of Storage measured in Gigabytes (GB), as well as Power Platform Requests (PPR) which provides more computing power.  The more user licenses you purchase, the more of each type of entitlement you will receive.  You can also purchase add-ons of either entitlement directly if you simply require more storage or more compute.
 
 A license is required to create or install any finance and operations app in the Power Platform admin center. You must also have at least 1 GB available of both operations and Dataverse database capacity to provision one more environment. There are no strict limits on how many environments you can create. Lifecycle Services is different, where each sandbox and production environment slot has a predetermined purchase.
 
-As part of the capacity-based model, sandbox and production environments are given the same level of compute performance. This capacity is based on the number of user licenses purchased and dynamically scales up or down as your license quantities adjust.
+For more information on managing storage, visit [Finance and operations storage capacity](../finance-operations-storage-capacity.md).  To learn more about managing compute, visit [Manage elastic compute](./elastic-compute.md).
 
 ## Development reimagined
 
@@ -77,7 +77,7 @@ The following table is a reference for each operation type and explains any nuan
 | ----------- | ----------- |----------- |----------- |
 | Create | Deploy | Provision | Not applicable |
 | Copy | Database refresh | Copy | In Power Platform, code is always copied with data, giving a full copy of the source environment. However, Lifecycle Services only copy data. |
-|Backup | Database export | Backup (custom or system-defined)| In Power Platform, a backup is kept in the cloud and never downloaded as a SQL `.bak` or `.bacpac` file. |
+| Backup | Database export | Backup (custom or system-defined)| In Power Platform, a backup is kept in the cloud and never downloaded as a SQL `.bak` or `.bacpac` file. |
 | Restore | Point-in-time restore | Restore (custom or system-defined)| Not applicable |
 | Reset | Not applicable | Reset| This operation isn't yet implemented for environments where **Dynamics 365 Finance and Operations Provisioning App** is installed. |
 | Convert to production | Not applicable | Convert to production | This operation isn't yet implemented for environments where **Finance and Operations Provisioning App** is installed. |

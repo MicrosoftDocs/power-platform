@@ -30,7 +30,7 @@ After the product is purchased, assign the license to an admin who can sign in t
 ## Deploy the trial in Power Platform admin center
 
 1. After the trial license is assigned to your user account, sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane. The **Environments** page is displayed.
+1. Select **Manage** in the navigation pane. Then select **Environments** from the secondary menu.
 1. Select **New** to create a new environment. The **New environment** pane is displayed.
 1. Enter a name for the environment.
 1. Select your region.
