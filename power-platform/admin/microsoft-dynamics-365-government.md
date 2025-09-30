@@ -58,13 +58,13 @@ Select Dynamics 365 US Government products are available to qualified government
 |Dynamics 365 Customer Service Enterprise and Professional     | Dynamics 365 Customer Service Enterprise and Professional        | Dynamics 365 Customer Service Enterprise and Professional         |
 |Dynamics 365 Customer Voice   |     |         |
 |Dynamics 365 Field Service      | Dynamics 365 Field Service         | Dynamics 365 Field Service          |
-|Dynamics 365 Finance     | Dynamics 365 Finance     |         |
+|Dynamics 365 Finance     | Dynamics 365 Finance     | Dynamics 365 Finance        |
 |Dynamics 365 Guides |   |   |
 |Dynamics 365 Contact Center    |     |         |
 |Dynamics 365 Project Service Automation     | Dynamics 365 Project Service Automation         | Dynamics 365 Project Service Automation        |
 |Dynamics 365 Remote Assist on HoloLens or HoloLens 2 | Dynamics 365 Remote Assist on HoloLens or HoloLens 2 |   |
 |Dynamics 365 Sales Enterprise and Professional     |Dynamics 365 Sales Enterprise and Professional         |Dynamics 365 Sales Enterprise and Professional         |
-|Dynamics 365 Supply Chain Management | Dynamics 365 Supply Chain Management   |    |
+|Dynamics 365 Supply Chain Management | Dynamics 365 Supply Chain Management   | Dynamics 365 Supply Chain Management   |
 
 ### Subscription Availability
 
@@ -228,10 +228,12 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 ### Dynamics 365 Finance and Supply Chain Management
 - GCC: https://*.operations.gov.microsoftdynamics.us
 - GCC High: https://*.operations.high.microsoftdynamics.us
+- DoD: https://*.operations.dod.microsoftdynamics.us
 
 ### Dynamics 365 Lifecycle Services (LCS)
 - GCC: https://gov.lcs.microsoftdynamics.us
 - GCC High: https://high.lcs.microsoftdynamics.us
+- DoD: https://dod.lcs.microsoftdynamics.us
 
 ### Telemetry for model-driven apps
 
