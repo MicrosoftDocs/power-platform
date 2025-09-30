@@ -3,7 +3,7 @@ title: Delete completed system jobs and process log to comply with retention pol
 description: Learn how to clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/17/2025
+ms.date: 09/30/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -85,24 +85,25 @@ There are three parameters to allow different retention periods to be set.
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
-1. Select **Settings** > **Audit and logs** > **Set retention policy for system job deletions (Preview)**.
-1. Confirm that the checkbox for **Allow deletion service to delete system jobs** is checked. 
-1. Selecct or enter a period in days for each type of system jobs, **Successful jobs**, **Failed jobs**, and **Cancelled jobs**.
-1. Select **Custom** to enter a period in days.
+1. Select **Settings**.
+1. Select **Audit and logs** > **Set retention policy for system job deletions (Preview)**.
+1. Select the checkbox for **Allow deletion service to delete system jobs**. 
+1. Selecct or enter a period in days for each type of system jobs, including **Successful jobs**, **Failed jobs**, and **Cancelled jobs**.
 1. Select **Save**.
 
 #### [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
-1. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Set retention policy for system job deletions (Preview)**.
-1. Confirm that the checkbox for **Allow deletion service to delete system jobs** is checked. 
-1. Enter a period in days for each type of system jobs, **Successful jobs**, **Failed jobs**, and **Cancelled jobs**.
-1. Select **Custom** to enter a period in days.
+1. Go to **Environments**
+1. Select an environment.
+1. Select **Settings**.
+1. Select **Audit and logs** > **Set retention policy for system job deletions (Preview)**.
+1. Select the checkbox for **Allow deletion service to delete system jobs**. 
+1. Enter a period in days for each type of system jobs, including **Successful jobs**, **Failed jobs**, and **Cancelled jobs**.
 1. Select **Save**.
 
 ---
 
-   
 > [!NOTE]
 > This deletion service deletes the system jobs. Deleted system jobs no longer show up in the **All System jobs** or the **All Bulk Deletion System jobs** lists.
 > There's a recurring job called **Delete completed system jobs**. This job is suspended when the deletion service is on.
