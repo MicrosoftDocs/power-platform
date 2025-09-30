@@ -26,7 +26,7 @@ You can delete an environment to recover storage space and to remove Personally 
 > [!NOTE]
 > You can't delete the [default environment](environments-overview.md#default-environment).
 >
-> You can't delete the Microsoft 365 Copilot Chat environment, either.
+> You can't delete the Microsoft 365 Copilot Chat environment, as well.
 
 ### [New admin center](#tab/new)
 
