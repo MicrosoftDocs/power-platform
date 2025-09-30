@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Best practices for server-side synchronization
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Consider the best practices outlined in this topic when you plan and deploy server-side synchronization.
 
 > [!NOTE]

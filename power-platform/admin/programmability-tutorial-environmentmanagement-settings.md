@@ -14,8 +14,6 @@ search.audienceType:
 
 # Tutorial: Create, update, and list Environment Management Settings 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 This tutorial demonstrates how to use the Power Platform API (preview) to create, update, and list Environment Management Settings.
 
 In this tutorial, learn how to:

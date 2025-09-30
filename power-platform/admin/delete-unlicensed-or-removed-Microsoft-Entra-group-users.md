@@ -14,8 +14,6 @@ search.audienceType:
 
 # Delete unlicensed or removed Microsoft Entra group members 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 There are different scenarios where a user’s status might be set to _disabled_, including the following scenarios:
 
 -	When the app or license isn’t assigned to a Dataverse user. 

@@ -15,8 +15,6 @@ ms.custom:
 ---
 # Microsoft Power Platform settings
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Configuring the settings for Power Platform admin center, such as the view theme, language, and password, are just a click away.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).

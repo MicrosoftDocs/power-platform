@@ -15,8 +15,6 @@ contributors:
 
 # Legacy storage capacity
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 In April 2019, we introduced Microsoft Dataverse capacity storage that is optimized for relational data, attachments, and audit logs. If you purchased storage before April 2019, you're using the legacy licensing model for storage discussed in this article.
 
 For information on the new storage model, see [New Microsoft Dataverse storage capacity](capacity-storage.md).

@@ -16,8 +16,6 @@ search.audienceType:
 
 # Request a Power Automate premium license from organization admins
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can request a license from your admin directly in the product. If you're trying to create and run a premium flow that requires a license, you'll see two options: **Send a license request to your admin**, and **Buy your own license** (if eligible).  
 
 :::image type="content" source="../media/power-automate-licensing/license-request.png" alt-text="Screenshot of the licensing request options in the Flow checker.":::

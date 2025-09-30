@@ -4,7 +4,7 @@ description: System Settings Service tab
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/12/2024
+ms.date: 09/15/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -14,9 +14,10 @@ ms.contributors:
 ---
 # System Settings Service tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing service assets with Dynamics 365 Customer Service apps. For the modern experience, in the Customer Service admin center app, select **Service Teams** > **Other SLA Settings** in the sitemap to access the service configuration settings. More information: [Configure service level agreements](/dynamics365/customer-service/administer/define-service-level-agreements).
 
-Use this tab to set preferences for the customer service area, such as service level agreements and entitlements in model-driven apps in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
+Use this tab to set preferences for customer service, such as service level agreements and entitlements in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 
 <!-- legacy procedure -->
   
@@ -28,15 +29,11 @@ Use this tab to set preferences for the customer service area, such as service l
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
+5. Select the **Service** tab.  
 
-3. Select **Settings** > **Administration**.
-  
-4. Select the **System Settings** > **Service** tab.  
-  
-> [!NOTE]
-> In the Customer Service Admin Center app, select **Service Teams** > **Other SLA Settings** in the sitemap to access the Service configuration settings. 
-  
 | Settings |Description|
 |-------------------------|--------------------------|
 | **Disable SLAs**<br>Disable Service Level Agreements (SLAs) on SLA-enabled entity records. | ​SLAs are enabled by default. You can enable or disable them for SLA-enabled entity records in your organization. For example, you might want to disable SLAs during maintenance activities or when you're importing records and you don't want the SLAs to apply to the records. <br><br>- To disable, select **Yes**. <br><br>- To enable, select **No**. <br><br>**Note:** When SLAs are disabled, SLA records can still be created or modified. SLAs aren't applied to records, however. |

@@ -18,8 +18,6 @@ ms.custom:
 ---
 # Set up pay-as-you-go 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 In order to set up pay-as-you-go billing for an environment, you first need an active Azure subscription that you can link to that environment. You can do so in the Power Platform admin center or within Power Apps.
 
 ## Who can set it up?
