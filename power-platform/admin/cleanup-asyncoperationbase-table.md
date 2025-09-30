@@ -88,7 +88,7 @@ There are three parameters to allow different retention periods to be set.
 1. Select **Settings**.
 1. Select **Audit and logs** > **Set retention policy for system job deletions (Preview)**.
 1. Select the checkbox for **Allow deletion service to delete system jobs**. 
-1. Selecct or enter a period in days for each type of system jobs, including **Successful jobs**, **Failed jobs**, and **Cancelled jobs**.
+1. Select or enter a period in days for each type of system jobs, including **Successful jobs**, **Failed jobs**, and **Cancelled jobs**.
 1. Select **Save**.
 
 #### [Classic admin center](#tab/classic)
