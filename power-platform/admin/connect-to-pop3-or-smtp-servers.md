@@ -1,41 +1,41 @@
 ---
-title: "Connect Gmail accounts, POP3 email server, or SMTP email server by using credentials specified by a user or queue | MicrosoftDocs"
+title: Connect Gmail accounts, POP3 email server, or SMTP email server by using credentials specified by a user or queue
 description: Connect Gmail accounts, POP3 email server, or SMTP email server using credentials specified by a user or queue 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/20/2022
+ms.date: 09/30/2025
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
 ms.reviewer: sericks
+contributor: ellenwehrle
 search.audienceType: 
   - admin
 ---
-# Connect Gmail accounts, POP3 email server, or SMTP email server by using credentials specified by a user or queue 
+# Connect Gmail accounts, POP3 email server, or SMTP email server by using credentials specified by a user or queue
 
 > [!IMPORTANT]
-> As documented [here](https://support.google.com/accounts/answer/6010255), starting May 30th of 2022, Gmail is ending support for apps that are configured to only use your username and password. To use server-side synchronization with Gmail, follow the steps in [Connect Gmail accounts by using OAuth 2.0](connect-gmail-oauth2.md). 
+> As documented in [Google Account Help](https://support.google.com/accounts/answer/6010255), Google ended support for third-party apps or devices that have you sign in with only a username and password. To use server-side synchronization with Gmail, follow the steps in [Connect Gmail accounts by using OAuth 2.0](connect-gmail-oauth2.md).
 
 Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) from Gmail accounts, POP3 email server, or SMTP email server by using credentials specified by a user or queue as the authorization mechanism.
 
-
 ## Create an email server profile for Gmail accounts
 
-1. In the Power Platform admin center, select an environment. 
+1. In the Power Platform admin center, select an environment.
 
 2. On the command bar, select **Settings** > **Email** > **Server profiles**.  
-    
-   > [!div class="mx-imgBorder"] 
+
+   > [!div class="mx-imgBorder"]
    > ![Screenshot showing email server profile settings.](media/server-profile-settings.png "Email server profile setting")
 
 3. On the command bar, select **New server profile**.
 
-   > [!div class="mx-imgBorder"] 
+   > [!div class="mx-imgBorder"]
    > ![Screenshot showing Create a new server profile.](media/new-server-profile.png "Create a new server profile")
 
 4. For **Email Server Type**, select **Gmail**, and then specify a meaningful **Name** for the profile.
 
-   > [!div class="mx-imgBorder"] 
+   > [!div class="mx-imgBorder"]
    > ![Screenshot showing create a new server profile for Gmail.](media/gmail-profile.png "Create a new server profile for Gmail")
 
 5. If you want to use this server profile as the default profile for new mailboxes, turn on **Set as default profile for new mailboxes**.
@@ -45,7 +45,7 @@ Follow the steps in this article to set up server-side synchronization to send a
    > [!NOTE]
    > To ensure that the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.
 
-   > [!div class="mx-imgBorder"] 
+   > [!div class="mx-imgBorder"]
    > ![Screenshot showing create a new server profile for Gmail using credential specified by user or queue.](media/gmail-profile-user-queue.png "Create a new server profile for Gmail using credential specified by user or queue")
 
 7. The **Locations and ports** fields are automatically populated.
@@ -56,14 +56,13 @@ Follow the steps in this article to set up server-side synchronization to send a
 
 ## Create an email server profile  
 
-1. In the Microsoft Power Platform admin center, select an environment. 
+1. In the Microsoft Power Platform admin center, select an environment.
 
 2. Select **Settings** > **Email** > **Server profiles**.  
 
 3. Choose **New** > **POP3/SMTP Server**.  
 
 4. **For an Exchange email server profile, specify the following details:**  
-
 
    |                                Fields                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
    |-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -87,20 +86,19 @@ Follow the steps in this article to set up server-side synchronization to send a
    |                 Minimum Polling Intervals in Minutes                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Type the minimum polling interval, in minutes, for mailboxes that are associated with this email server profile. The polling interval determines how often server-side synchronization polls your mailboxes for new email messages.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
    |                    Maximum Concurrent Connections                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Type the maximum number of simultaneous connections that can be made by customer engagement apps to the corresponding email server per mailbox. Increase the value to allow more parallel calls to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] to improve performance or reduce the value if there are errors on [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] due to large number of calls from customer engagement apps. The default value of this field is 10. The maximum number is considered per mailbox or per email server profile depending on whether the credentials are specified in a mailbox or email server profile.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
-
 5. Choose **Save**.  
 
 <a name="BKMK_ConfigureDefault"></a>  
 
 
-## Configure default email processing and synchronization 
+## Configure default email processing and synchronization
 
 Set server-side synchronization to be the default configuration method.  
 
-1. Do one of the following: 
+1. Do one of the following:
 
-   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
-   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. . 
+   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. .
 
 2. Select **Settings** > **Email** > **Email settings**.  
 
@@ -112,10 +110,10 @@ Set server-side synchronization to be the default configuration method.
 
    - **Outgoing Email**: Server-Side Synchronization or Email Router  
 
-   - **Appointments, Contacts, and Tasks**: Server-Side Synchronization or Email Router 
+   - **Appointments, Contacts, and Tasks**: Server-Side Synchronization or Email Router
 
      > [!NOTE]
-     >  The **Server-Side Synchronization or Email Router** setting for Appointments, Contacts, and Tasks isn't supported for the POP3-SMTP profile.  
+     > The **Server-Side Synchronization or Email Router** setting for Appointments, Contacts, and Tasks isn't supported for the POP3-SMTP profile.  
 
      If you leave **Email processing for unapproved user and queues** at the default values (selected), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.  
 
@@ -123,7 +121,7 @@ Set server-side synchronization to be the default configuration method.
 
 4. Select **Save**.  
 
-<a name="BKMK_ConfigureMailboxes"></a>   
+<a name="BKMK_ConfigureMailboxes"></a>
 
 ## Configure mailboxes
 
@@ -135,7 +133,7 @@ Choose *one* of the following methods: set mailboxes to the default profile, or 
 
 **To set mailboxes to the default profile**
 
-1. In the Power Platform admin center, select an environment. 
+1. In the Power Platform admin center, select an environment.
 
 2. Select **Settings** > **Email** > **Mailboxes**.  
 
@@ -149,7 +147,7 @@ Choose *one* of the following methods: set mailboxes to the default profile, or 
 
 **To edit mailboxes to set the profile and delivery methods**
 
-1. In the Power Platform admin center, select an environment. 
+1. In the Power Platform admin center, select an environment.
 
 2. Select **Settings** > **Email** > **Mailboxes**.  
 
@@ -165,33 +163,33 @@ Choose *one* of the following methods: set mailboxes to the default profile, or 
 
 8. Select **Change**.  
 
-<a name="BKMK_ApproveEmail"></a> 
+<a name="BKMK_ApproveEmail"></a>
 
 ## Approve email
 
 You need to approve each user mailbox or queue before that mailbox can process email.  
 
-1. In the Power Platform admin center, select an environment. 
+1. In the Power Platform admin center, select an environment.
 
-2. Select **Settings** > **Email** > **Mailboxes**.  
+1. Select **Settings** > **Email** > **Mailboxes**.  
 
-3. Select **Active Mailboxes**.  
+1. Select **Active Mailboxes**.  
 
-4. Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
+1. Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
 
-5. Select **OK**.  
+1. Select **OK**.  
 
-<a name="BKMK_TestConfiguration"></a>   
+<a name="BKMK_TestConfiguration"></a>
 
 ## Test the configuration of mailboxes  
 
-1. In the Power Platform admin center, select an environment. 
+1. In the Power Platform admin center, select an environment.
 
-2. Select **Settings** > **Email** > **Mailboxes**.  
+1. Select **Settings** > **Email** > **Mailboxes**.  
 
-3. Select **Active Mailboxes**.  
+1. Select **Active Mailboxes**.  
 
-4. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
+1. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
 
     This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps will try to process the email again after some time or disable the mailbox for email processing.  
 
@@ -200,13 +198,13 @@ You need to approve each user mailbox or queue before that mailbox can process e
     You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://blogs.msdn.com/b/crm/archive/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015.aspx) and [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).  
 
 > [!TIP]
->  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md)  
+> If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md)  
 
-<a name="BKMK_TestEmailConfig"></a>   
+<a name="BKMK_TestEmailConfig"></a>
 
 ## Test email configuration for all mailboxes associated with an email server profile  
 
-1. In the Power Platform admin center, select an environment. 
+1. In the Power Platform admin center, select an environment.
 
 2. Select **Settings** > **Email** > **Server profiles**.  
 
@@ -215,16 +213,16 @@ You need to approve each user mailbox or queue before that mailbox can process e
     When you test the email configuration, an asynchronous job runs in the background. It might take a few minutes for the test to be completed. Customer engagement apps test the email configuration of all the mailboxes associated with the POP3-SMTP profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
 
 > [!TIP]
-> If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md) 
+> If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md)
 
-<a name="BKMK_NetworkPorts"></a>   
+<a name="BKMK_NetworkPorts"></a>
 
 ## Network ports for Power Apps US Government
 
-The following ports are open for outbound connections between Power Apps US Government and internet services: 
+The following ports are open for outbound connections between Power Apps US Government and internet services:
 
 - 80 HTTP  
-- 443 HTTPS 
+- 443 HTTPS
 - 465 Secure SMTP  
 - 995 Secure POP3  
 
@@ -233,8 +231,7 @@ Customizations or email configurations in Power Apps US Government can only use 
 ### See also
 
 [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md) <br />
-[Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx)   
+[Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx)
 [Microsoft Power Apps US Government](powerapps-us-government.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
