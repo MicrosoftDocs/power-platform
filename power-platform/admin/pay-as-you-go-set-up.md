@@ -120,6 +120,9 @@ Microsoft 365 users without a paid Copilot license can now access and use Copilo
 
 When a billing plan is created, a new environment named **Microsoft 365 Copilot Chat** is automatically provisioned and linked to the newly created billing plan. Copilot consumption reporting is accessible through this environment. If a new billing plan is created for **Microsoft 365 Copilot Chat** and an environment already exists, it's automatically linked to the new billing plan.
 
+> [!NOTE]
+> Once created, the **Microsoft 365 Copilot Chat** environment can't be deleted by administrators. You can unlink the environment from the linked billing plan. 
+
 # [Classic admin center](#tab/classic)
 
 1. In the navigation pane, select **Billing** > **Billing plans**. The **Billing plans** page is displayed.
