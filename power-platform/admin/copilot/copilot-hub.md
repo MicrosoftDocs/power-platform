@@ -64,7 +64,7 @@ The product pages contain usage and cost insights specific to each product. Curr
 The **Copilot Studio** page provides valuable insights about agents built in Copilot Studio. Admins can view message consumption data, with more licensing details available through the **Licensing** area of the Power Platform admin center. Admins can view the number of active agents, defined as agents with active sessions in the last 28 days, and the agent session success rate, which is the percentage of sessions resolved by conversational agents or runs that are successful for autonomous agents. The agent table displays the top 10 agents ranked by monthly active sessions.
 
 > [!Note]
-> - The **Copilot Studio** page doesn't include agents built with Microsoft Copilot Studio at this time.
+> - The **Copilot Studio** page doesn't include agents built with the lite version of Copilot Studio at this time.
 > - During the initial weeks of rollout, data is populated over a 28-day lookback period, resulting in an incomplete month initially.
 
 ### Power Apps
