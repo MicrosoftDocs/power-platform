@@ -42,7 +42,7 @@ The Strict CSP toggle creates a CSP that mostly does not include wildcards or un
 
 | Directive | Default value (model-driven) | Default value (canvas) | Customizable |
 | --------- | ---------------------------- | ---------------------- | ------------ |
-| [script-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) | `'self' <platform>'` | `'self' <platform>'` | Yes |
+| [script-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) | `'self' <platform> blob: data:'` | `'self' <platform>'` | Yes |
 | [worker-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/worker-src) | `'self' blob:` | `'self' blob:` | No |
 | [style-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) | `'self' 'unsafe-inline' <platform>` | `'self' 'unsafe-inline' <platform>` | Yes |
 | [font-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) | `'self' data: <platform>` | `'self' data: <platform>` | Yes |
