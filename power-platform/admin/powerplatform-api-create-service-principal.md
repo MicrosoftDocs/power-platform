@@ -14,8 +14,6 @@ search.audienceType:
 
 # Creating a service principal application using API (preview) 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Authenticating via username and password is often not ideal, especially with the rise of multifactor authentication. In such cases, service principal (or client credentials flow) authentication is preferred. You can authenticate with a service principal by registering a new service principal application in your own Microsoft Entra tenant and then registering that same application with Power Platform.

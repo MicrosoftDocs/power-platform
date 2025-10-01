@@ -14,8 +14,6 @@ search.audienceType:
 
 # Disable and delete a business unit
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can delete a business unit to completely remove it. To delete a business unit, you must first disable it.
   
 > [!IMPORTANT]

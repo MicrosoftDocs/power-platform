@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Create queue items from synchronized email messages
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 There are several OrgDbOrgSetting options available to control how queue items are automatically created for synchronized email. If you are unfamiliar with OrgDbOrgSettings, see the [KB article](https://support.microsoft.com/topic/orgdborgsettings-tool-for-microsoft-dynamics-crm-20a10f46-2a24-a156-7144-365d49b842ba). Note that the following settings are applied to the entire organization.
 
 - **CreateQueueItemForSynchronizingMailbox**

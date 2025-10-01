@@ -18,8 +18,6 @@ search.audienceType:
 ---
 # About privacy compliance
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 [!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
 ### See also
