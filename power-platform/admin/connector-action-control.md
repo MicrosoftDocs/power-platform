@@ -149,8 +149,8 @@ Set-PowerAppDlpPolicyConnectorConfigurations
 **Example**
 
 Goal:
--	Block actions TodaysForecast and CurrentWeather of connector MSN Weather; allow all other actions.
--	Allow action GetRepositoryById of connector GitHub; block all other actions.
+- Block actions TodaysForecast and CurrentWeather of connector MSN Weather; allow all other actions.
+- Allow action GetRepositoryById of connector GitHub; block all other actions.
 
 > [!NOTE]
 > In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the data policy GUID by running the **Get-DlpPolicy** cmdlet.
