@@ -1,12 +1,12 @@
 ---
 title: Restore deleted Microsoft Dataverse table records (preview)
 description: Learn how to use the Power Platform admin center to view restore deleted Microsoft Dataverse table records.
-author: shahzorkhan123
+author: rijoshi1
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 06/02/2025
 ms.subservice: admin
-ms.author: shkhan
+ms.author: rijoshi
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
@@ -16,6 +16,7 @@ contributors:
 ms.contributors:
    - erjost
    - hnatuva
+   - shahzorkhan123
 ms.custom: sfi-image-nochange
 ---
 

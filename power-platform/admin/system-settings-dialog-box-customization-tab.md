@@ -1,11 +1,10 @@
 ---
-title: "System Settings Customization tab  | MicrosoftDocs"
-description: System Settings Customization tab 
+title: "System Settings Customization tab"
+description: Legacy System Settings Customization tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/17/2021
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,11 +12,12 @@ search.audienceType:
 ---
 # System Settings Customization tab 
 
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing application mode. For information about the current experience, go to [Basic behavior](settings-behavior.md#basic-behavior).
+
 Use the tab to set preferences for plug-in and workflow tracing and also the use of application mode.
 
-<!-- legacy procedure -->
-  
-## Open the System Settings dialog box 
+## Open the System Settings Customization tab 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -27,11 +27,13 @@ Use the tab to set preferences for plug-in and workflow tracing and also the use
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
 
-3. Select **Settings** > **Customization**.
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
 
-4. Choose **System Settings** and then choose the **Customization** tab.  
+5. Select the **Customization** tab.  
+6. After making a change, select **OK** to save your changes.
   
 |                                                                       Settings                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                        Description                                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

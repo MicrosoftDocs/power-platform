@@ -1,11 +1,10 @@
 ---
-title: "On-off switch for Learning Path (guided help)  | MicrosoftDocs"
-description: On-off switch for Learning Path (guided help) 
+title: "On-off switch for Learning Path (guided help) "
+description: On-off switch for Learning Path (guided help) in Power Apps.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/18/2022
+ms.date: 09/15/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,8 +12,9 @@ search.audienceType:
 ---
 # On-off switch for Learning Path (guided help)
 
-Learning Path (guided help) is turned on by default.  
-  
+> [!IMPORTANT]
+> Learning path has been replaced by custom help panes. More information: [Create custom help panes for your app](/power-apps/maker/data-platform/create-custom-help-pages).
+
 ## Turn Learning Path on or off for an individual user  
  This setting affects only the person who makes this change.  
   

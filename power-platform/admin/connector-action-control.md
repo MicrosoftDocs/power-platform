@@ -3,7 +3,7 @@ title: Connector action control
 description: You can use connector action control in Power Platform admin center to allow or block individual actions within a given connector.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/19/2025
+ms.date: 10/01/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -169,11 +169,12 @@ Set-PowerAppDlpPolicyConnectorConfigurations
 **Example**
 
 Goal:
--    Block actions TodaysForecast and CurrentWeather of connector MSN Weather; allow all other actions.
--    Allow action GetRepositoryById of connector GitHub; block all other actions.
+
+- Block actions `TodaysForecast` and `CurrentWeather` of connector MSN Weather; allow all other actions.
+- Allow action `GetRepositoryById` of connector GitHub; block all other actions.
 
 > [!NOTE]
-> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the data policy GUID by running the **Get-DlpPolicy** cmdlet.
+> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the data policy GUID by running the `Get-DlpPolicy` cmdlet.
 
 ```powershell
 $ConnectorConfigurations = @{ 

@@ -1,11 +1,11 @@
 ---
-title: "Delete an environment in Power Platform admin center"
-description: "Learn how to delete or remove an environment to recover storage space."
+title: Delete an environment in Power Platform admin center
+description: Learn how to delete or remove an environment to recover storage space.
 author: sericks007
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 7/30/2025
+ms.date: 09/30/2025
 ms.subservice: admin
 ms.author: sericks
 ms.custom: NewPPAC
@@ -25,6 +25,8 @@ You can delete an environment to recover storage space and to remove Personally 
 
 > [!NOTE]
 > You can't delete the [default environment](environments-overview.md#default-environment).
+>
+> You can't delete the Microsoft 365 Copilot Chat environment, as well.
 
 ### [New admin center](#tab/new)
 
