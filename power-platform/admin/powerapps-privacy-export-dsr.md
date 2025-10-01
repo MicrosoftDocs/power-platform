@@ -5,7 +5,7 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 9/24/2025
+ms.date: 10/01/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -44,9 +44,9 @@ Connection | | App creator: Available <br> Admin: Available
 Connection permissions    | | App creator: Available <br> Admin: Available
 Power Apps user settings, user-app settings, and notifications | | App creator: Available <br> Admin: Available
 
-> ** With the introduction of Microsoft Dataverse, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Dataverse database environment. For guidance on how to respond to DSR requests for users that use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](dataverse-privacy-dsr-guide.md).
+\** With the introduction of Microsoft Dataverse, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Dataverse database environment. For guidance on how to respond to DSR requests for users that use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](dataverse-privacy-dsr-guide.md).
 
-> *** An administrator can access these resources from the [Power Apps portal](https://make.powerapps.com) only if the owner of the resource has explicitly granted them access. If the administrator has not been granted access, they need to leverage the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md).
+\*** An administrator can access these resources from the [Power Apps portal](https://make.powerapps.com) only if the owner of the resource has explicitly granted them access. If the administrator has not been granted access, they need to leverage the [Power Apps Admin PowerShell cdmlets](./powerapps-powershell.md).
 
 ## Prerequisites
 
