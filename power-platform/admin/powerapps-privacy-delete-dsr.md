@@ -189,8 +189,6 @@ An administrator can delete a user's environment permissions starting from the P
 3. In the **Manage** pane, select **Environments**, and then select each environment in your organization.
 
 4. If your environment doesn't have a Dataverse database, you can see a section **Access**. Under **Access**, select either **Environment admin** or **Environment maker**, and then select **See all**.
-  
-:::image type="content" source="media/admin-environment-roles.png" alt-text="Environment roles.":::
 
 5. Select a user, select **Remove** to remove their permission, and then select **Continue**.
 
@@ -236,13 +234,15 @@ A user can delete an app from the [Power Apps site](https://make.powerapps.com).
 
 An admin can delete apps created by a user by following these steps:
 
-1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an environment.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as a [Microsoft Entra Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) or a [Microsoft Entra Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator).
 
-   You must be a [Microsoft 365 global admin](/microsoft-365/admin/add-users/about-admin-roles) or a [Microsoft Entra global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments that are created within your organization.
+2. In the navigation pane, select **Manage**.
 
-2. Under **Resources**, select **Power Apps**.
+3. In the **Manage** pane, select **Environments**, and then select an environment in your organization.
 
-3. Select an app, and then select **Delete** > **Delete from cloud**.
+4. Under **Resources**, select **Power Apps**.
+
+5. Select an app, and then select **Delete** > **Delete from cloud**.
 
 ### Delete a user's canvas app using the Power Apps Admin PowerShell cmdlets
 
