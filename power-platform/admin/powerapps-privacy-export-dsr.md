@@ -5,7 +5,7 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 9/24/2025
+ms.date: 10/01/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -151,7 +151,7 @@ An administrator can export apps created by a user starting from the Power Platf
 
 3. In the **Manage** pane, select **Environments**, and then select each environment in your organization.
 
-4. Select **Resources**, and then select **Power Apps**.
+4. Under **Resources**, select **Power Apps**.
 
 5. Using the search bar, search for the user's name, which brings up any apps that user created within this environment:
 
@@ -184,7 +184,7 @@ An administrator can export apps created by a user starting from the Power Platf
 
 3. In the **Manage** pane, select **Environments**, and then select each environment in your organization.
 
-4. Select **Resources**, and then select **Power Apps**.
+4. Under **Resources**, select **Power Apps**.
 
 5. Select **Share** for each of the apps in the environment.
 
