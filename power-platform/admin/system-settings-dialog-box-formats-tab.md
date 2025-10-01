@@ -1,11 +1,10 @@
 ---
-title: "System Settings Formats tab   | MicrosoftDocs"
-description: System Settings Formats tab 
+title: "System Settings Formats tab"
+description: Legacy System Settings Formats tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/17/2021
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,11 +12,13 @@ search.audienceType:
 ---
 # System Settings Formats tab
 
+<!-- Cannot find PPAC equivalent.-->
+
 You can control how customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), display numbers, currencies, times, and dates for your organization. 
 
 <!-- legacy procedure -->
   
-## Open the Formats System Settings dialog box (it isn't already open)  
+## Open the Formats System Settings tab  
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -27,11 +28,10 @@ You can control how customer engagement apps (Dynamics 365 Sales, Dynamics 365 C
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
-
-3. Select **Settings** > **Administration**.
-  
-4. Select **System Settings** > **Formats** tab.  
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
+5. Select the **Formats** tab.  
   
 |Settings|Description|  
 |--------------|-----------------|  
