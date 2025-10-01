@@ -5,7 +5,7 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 9/29/2025
+ms.date: 10/01/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -124,9 +124,9 @@ An admin can grant administrative access to an environment by following these st
 
 3. In the **Manage** pane, select **Environments**, and then select an environment to give admin privileges to yourself or another user in your organization.
 
-4. If the environment was created by the user from the DSR request, under **Access**, **Environment admin**, select **See all**.
+4. If the environment was created by the user from the DSR request, under **Access** > **Environment admin**, select **See all**.
 
-:::image type="content" source="media/admin-environment-roles.png" alt-text="Environment roles.":::
+    :::image type="content" source="media/admin-environment-roles.png" alt-text="Environment roles.":::
 
 ### Delete environments created by a user
 
@@ -188,7 +188,7 @@ An administrator can delete a user's environment permissions starting from the P
 
 3. In the **Manage** pane, select **Environments**, and then select each environment in your organization.
 
-4. If your environment doesn't have a Dataverse database, you can see a section **Access**. Under **Access**, select either **Environment admin** or **Environment maker**, and then select **See all**.
+4. If your environment doesn't have a Dataverse database, you can see a section called **Access**. Under **Access**, select either **Environment admin** or **Environment maker**, and then select **See all**.
 
 5. Select a user, select **Remove** to remove their permission, and then select **Continue**.
 
@@ -228,7 +228,7 @@ Get-AdminPowerApp -Owner $deleteDsrUserId | Set-AdminPowerAppOwner -AppOwner $ne
 
 ### Delete a user's canvas app using the Power Apps site
 
-A user can delete an app from the [Power Apps site](https://make.powerapps.com). For the full steps on how to delete an app, see [Delete a canvas app](/power-apps/maker/canvas-apps/delete-app).
+A user can delete an app from [Power Apps](https://make.powerapps.com). For the full steps on how to delete an app, see [Delete a canvas app](/power-apps/maker/canvas-apps/delete-app).
 
 ### Delete a user's canvas app using the Power Platform admin center
 
@@ -258,7 +258,7 @@ Get-AdminPowerApp -Owner $deleteDsrUserId | Remove-AdminPowerApp
 
 ## Step 4: Delete the user's permissions to canvas apps
 
-Whenever an app is shared with a user, Power Apps stores a record called a "role assignment" that describes the user's permissions (CanEdit or CanUse) to the application. For more information, see the Share an app article.
+Whenever an app is shared with a user, Power Apps stores a record called a "role assignment" that describes the user's permissions (CanEdit or CanUse) to the application. Learn mre in [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app).
 
 > [!NOTE]
 > An app's role assignments are deleted when the app is deleted.
