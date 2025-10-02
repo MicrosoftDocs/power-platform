@@ -67,13 +67,16 @@ For more information about Dataverse search, go to [Search for tables and rows 
 
 ## Managing Dataverse search
 
-Dataverse search is an opt-out feature, set to **On** for all new production and default environments. We recommend using Dataverse search so users have a search experience in model-driven apps.
+Dataverse search is an opt-out feature, set to **On** for all new production and **Default** for all other [environment types](/power-platform/admin/environments-overview#environment-types). We recommend using Dataverse search so users have a search experience in model-driven apps.
 
 - When set to **On**: The search bar, in the header of all model-driven apps in the environment, is visible, allowing users to have a global, search experience. Generative AI experiences may be available if they're turned on.
 - When set to **Default**: The search bar, in the header of all model-driven apps in the environment, is hidden. Generative AI experiences available if they're turned on.
 - When set to **Off**: The search bar, in the header of all model-driven apps in the environment, is hidden. Generative AI experiences are limited. Learn more in [What is Dataverse search?](/power-apps/user/relevance-search-benefits).
 
 Individual users aren't able to switch to [Quick Find search, formerly known as categorized search](/powerapps/user/quick-find). Tables must be included in the application you're using with Dataverse search. Be sure that any table you want users to search on are included in your application.
+
+> [!NOTE]
+> As of September 2025, the Dataverse Search setting for all previously created environments was migrated, one-time, as required to maintain consistent user experience. Environments that did not have prior dependencies on Dataverse Search or Copilot were designated as "Default" (equivalent to the former "Off" setting), whereas those with Dataverse Search enabled retained the "On" configuration.
 
 > [!IMPORTANT]
 > If you're using your own encryption key, you can turn off Dataverse search after allowing early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
