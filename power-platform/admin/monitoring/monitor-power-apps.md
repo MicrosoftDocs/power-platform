@@ -41,6 +41,9 @@ Power Apps operational health metrics and recommendations are available in the n
 |Model-driven apps | App open success rate| A percentage that describes how often end users are able to successfully open the app. | Generally available |
 |Model-driven apps| App session count | The number of distinct user sessions in a model-driven app in one day. A session begins when a user opens the app and ends after a period of inactivity or when the app is closed. | Generally available |
 |Model-driven apps | Row summary dwell time| The time (in seconds) that end users spend on the expanded AI row summary of a main form. | Preview |
+|Code apps| Time to interactive (TTI)| The time (in seconds) that end users have to wait to interact with the first screen that's displayed after the app opens. | Preview |
+|Code apps| App session count | The number of distinct user sessions in a code app in one day. A session begins when a user opens the app and ends after a period of inactivity or when the app is closed. | Preview |
+|Code apps | App open success rate| A percentage that describes how often end users are able to successfully open the app. | Preview |
 
 ### Metric and recommendation pairings
 
