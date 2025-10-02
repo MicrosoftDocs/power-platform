@@ -3,7 +3,7 @@ title: Connect to IMAP or POP servers
 description: Connect to IMAP, POP, or SMTP servers
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 10/02/2025
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
