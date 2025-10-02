@@ -57,10 +57,12 @@ Take these steps to create an email server profile in the Power Platform admin c
 
 ### [Classic admin center](#tab/classic)
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. On the navigation pane, select **Environments**.
+1. On the **Environments** page, select an environment.
 1. On the command bar, select **Settings** > **Email** > **Server profiles**.
     :::image type="content" source="media/connect-to-imap-servers/server-profile-settings.png" alt-text="Choose server profile.":::
-1. On the command bar, select **New server profile**.
+1. On the command bar, select **New server profile** to view the *Set up server profile* pane.
 1. For **Email Server Type**, select **Other (IMAP/POP,SMTP)**, and then specify a meaningful **Name** for the profile.
    :::image type="content" source="media/connect-to-imap-servers/pop-smtp-profile.png" alt-text="Choose other profile.":::
 1. If you want to use this server profile as the default profile for new mailboxes, turn on **Set as default profile for new mailboxes**.
@@ -75,6 +77,8 @@ Take these steps to create an email server profile in the Power Platform admin c
 
 1. Expand the **Advanced** section, and use the tooltips to choose your email processing options.
 1. When you're done, select **Save**.
+
+---
 
 ## Create an email server profile by using the legacy web app
 
@@ -146,9 +150,9 @@ Choose **one** of the following methods:
 Take these steps to set mailboxes to default profiles.
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
-2. Select **Settings** > **Email** > **Mailboxes**.
-3. Select **Active Mailboxes** if not already in that section.
-4. Select all the mailboxes that you want to associate with the IMAP profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**. By default, the mailbox configuration is tested and the mailboxes are enabled when you select **OK**.  
+1. Select **Settings** > **Email** > **Mailboxes**.
+1. Select **Active Mailboxes** if not already in that section.
+1. Select all the mailboxes that you want to associate with the IMAP profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**. By default, the mailbox configuration is tested and the mailboxes are enabled when you select **OK**.  
 
 ### Edit mailboxes to set the profile and delivery methods
 
