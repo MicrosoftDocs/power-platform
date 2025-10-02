@@ -128,10 +128,7 @@ Set server-side synchronization to be the default configuration method.
        > The **Server-Side Synchronization or Email Router** setting for appointments, contacts, and tasks isn't supported for the IMAP profile.  
 
      If you leave **Email processing for unapproved user and queues** at the default values (selected), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.  
-
-     ![Screenshot showing System Settings for server-side synchronization.](../admin/media/imap-profile.png "System Settings for server-side synchronization")  
-
-4. Select **OK**.  
+1. Select **OK**.  
 
 ## Configure mailboxes
 
