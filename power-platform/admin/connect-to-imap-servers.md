@@ -151,7 +151,7 @@ Take these steps to set mailboxes to default profiles.
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.
-1. Select dropdown next to table title and choose **Active Mailboxes**.
+1. Expand the table titles's dropdown and select **Active Mailboxes**.
 1. Select all the mailboxes that you want to associate with the IMAP profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**. By default, the mailbox configuration is tested and the mailboxes are enabled when you select **OK**.  
 
 ### Edit mailboxes to set the profile and delivery methods
@@ -160,7 +160,7 @@ Take these steps to edit mailboxes to set the profile and delivery methods.
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.  
-1. Select dropdown next to table title and choose **Active Mailboxes**.  
+1. Expand the table titles's dropdown and select **Active Mailboxes**.  
 1. Select the mailboxes that you want to configure, and then select **Edit**.  
 1. In the **Change Multiple Records** form, under **Synchronization Method**, set **Server Profile** to the IMAP profile you created earlier.  
 1. Set **Incoming** and **Outgoing** **Email** to **Server-Side Synchronization or Email Router**.  
@@ -173,7 +173,7 @@ You need to approve each user mailbox or queue before that mailbox can process e
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.  
-1. Select dropdown next to table title and choose **Active Mailboxes**.  
+1. Expand the table titles's dropdown and select **Active Mailboxes**.  
 1. Select the mailboxes that you want to approve, and then select **Approve Email**.  
 1. Select **OK**.
 
@@ -183,7 +183,7 @@ Take these steps to test the configuration of mailboxes:
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.  
-1. Select dropdown next to table title and choose **Active Mailboxes**.  
+1. Expand the table titles's dropdown and select **Active Mailboxes**.  
 1. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
 
     This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, server-side synchronization will try to process the email again after some time or disable the mailbox for email processing.
