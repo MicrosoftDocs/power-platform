@@ -5,7 +5,7 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 10/03/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -317,6 +317,7 @@ Add-PowerAppsAccount
 #Retrieves all connection role assignments for the calling users and deletes them
 Get-AdminPowerAppConnectionRoleAssignment | Remove-AdminPowerAppConnectionRoleAssignment
 ```
+
 > [!NOTE]
 > Owner role assignments can't be deleted without deleting the connection resource.
 
