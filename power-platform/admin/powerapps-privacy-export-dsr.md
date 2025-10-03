@@ -18,7 +18,7 @@ ms.contributors:
   - paulliew
   - royshea
   - sericks 
-
+ms.custom: sfi-image-nochange
 ---
 
 # Responding to Data Subject Rights (DSR) requests to export Power Apps customer data
@@ -139,7 +139,7 @@ With the introduction of the Dataverse, if a database is created within the envi
 
 ### Power Apps portal
 
-A user can export an app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export a canvas app, see [Exporting a canvas app](/powerapps/maker/data-platform/export-solutions#exporting-a-canvas-app).
+A user can export an app from [Power Apps](https://make.powerapps.com). For step-by-step instructions on how to export a canvas app, see [Exporting a canvas app](/powerapps/maker/data-platform/export-solutions#exporting-a-canvas-app).
 
 ### Power Platform admin center
 
@@ -151,7 +151,7 @@ An administrator can export apps created by a user starting from the Power Platf
 
 3. In the **Manage** pane, select **Environments**, and then select each environment in your organization.
 
-4. Select **Resources**, and then select **Power Apps**.
+4. Under **Resources**, select **Power Apps**.
 
 5. Using the search bar, search for the user's name, which brings up any apps that user created within this environment:
 
@@ -159,7 +159,7 @@ An administrator can export apps created by a user starting from the Power Platf
 
     :::image type="content" source="media/share-canvas-app-new.png" alt-text="Select app share.":::
 
-7. After you have access to each of the user's apps, you can export a canvas app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export an app, see [Exporting a canvas app](/powerapps/maker/data-platform/export-solutions#exporting-a-canvas-app).
+5. After you have access to each of the user's apps, you can export a canvas app from [Power Apps](https://make.powerapps.com). For step-by-step instructions on how to export an app, see [Exporting a canvas app](/powerapps/maker/data-platform/export-solutions#exporting-a-canvas-app).
 
 ## Step 4: Export the user's permissions to canvas apps
 
@@ -184,7 +184,7 @@ An administrator can export apps created by a user starting from the Power Platf
 
 3. In the **Manage** pane, select **Environments**, and then select each environment in your organization.
 
-4. Select **Resources**, and then select **Power Apps**.
+4. Under **Resources**, select **Power Apps**.
 
 5. Select **Share** for each of the apps in the environment.
 
@@ -292,7 +292,7 @@ Get-AdminPowerAppConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-
  
 ## Step 9: Export Power Apps Notifications, User Settings, and User-App Settings
 
-Power Apps sends several types of notifications to users, including when an app is shared with them and when a Dataverse export operation has completed. A user's notification history is visible to them within the [Power Apps portal](https://make.powerapps.com).
+Power Apps sends several types of notifications to users, including when an app is shared with them and when a Dataverse export operation has completed. A user's notification history is visible to them within [Power Apps](https://make.powerapps.com).
 
 Power Apps also stores several different user preferences and settings that are used to deliver the Power Apps runtime and portal experiences, including when a user last opened an application, pinned an app, etc.
 
@@ -317,25 +317,18 @@ Get-AdminPowerAppsUserDetails -OutputFilePath "UserDetails.json" -UserPrincipalN
 
 ## Step 10: Export personal data contained for a user-stored gateway or in the user's gateway permissions
 
-### Power Apps Portal
+### Power Apps
+Users can export the personal data stored within the gateway service from [Power Apps](https://make.powerapps.com) by following these steps:
 
-Users can export the personal data stored within the gateway service from the [Power Apps portal](https://make.powerapps.com) by following these steps:
-
-1. From the [Power Apps portal](https://make.powerapps.com), within the default environment for your tenant, select **Gateways**, and then select **Details** for each gateway to which you have access.
-
-    :::image type="content" source="./media/powerapps-gdpr-export-dsr/gateway-select-details.png" alt-text="Gateway landing page.":::
-
-2. On the **Details** page, if the gateway details contain any personal data, copy the details, and then paste them into a document editor, such as Microsoft Word.
-
-    :::image type="content" source="./media/powerapps-gdpr-export-dsr/gateway-details-drillin.png" alt-text="Gateway details.":::
-
-3. Select **Share**, copy the contents of the page, and then paste it into a document editor, such as Microsoft Word.
-
-    :::image type="content" source="./media/powerapps-gdpr-export-dsr/gateway-details-share.png" alt-text="Select Share.":::
+1. From [Power Apps](https://make.powerapps.com), within the default environment for your tenant, select **Gateways**.
+1. Select a gateway.
+1. Select **Details** in the command bar.
+1. On the **Details** page, if the gateway details contain any personal data, copy the details, and then paste them into a document editor, such as Microsoft Word.
+1. Select **Share**, copy the contents of the page, and then paste it into a document editor, such as Microsoft Word.
 
 ### Gateway PowerShell cmdlets
 
-There are also PowerShell cmdlets that allow you to retrieve, manage, and delete your personal gateways. For more information, see [On-premises gateway cmdlets](/data-integration/gateway/service-gateway-high-availability-clusters).
+There are also PowerShell cmdlets that allow you to retrieve, manage, and delete your personal gateways. Learn more in [On-premises gateway cmdlets](/data-integration/gateway/service-gateway-high-availability-clusters).
 
 ### Administrators
 
@@ -350,7 +343,7 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 
 ## Step 12: Find personal data for the user in Microsoft Copilot Studio
 
-Power Apps capabilities build upon Microsoft Copilot Studio. Microsoft Copilot Studio is also available as a standalone service. For guidance on how to respond to DSR requests for Microsoft Copilot Studio service data, see [Responding to Data Subject Requests for Microsoft Copilot Studio](/power-virtual-agents/personal-data-summary).
+Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot Studio is also available as a standalone service. For guidance on how to respond to DSR requests for Microsoft Copilot Studio service data, see [Responding to Data Subject Requests for Microsoft Copilot Studio](/power-virtual-agents/personal-data-summary).
 
 > [!IMPORTANT]
 > We recommend that administrators complete this step for Power Apps users.
