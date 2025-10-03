@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: marianaraujo 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 08/19/2025
+ms.date: 10/03/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: maaraujo
@@ -12,6 +12,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
+  - seanwat-msft 
   - JasonHQX
   - wobushixinxin67
 
@@ -67,7 +68,7 @@ For more information about Dataverse search, go to [Search for tables and rows 
 
 ## Managing Dataverse search
 
-Dataverse search is an opt-out feature, set to **On** for all new production and **Default** for all other [environment types](/power-platform/admin/environments-overview#environment-types). We recommend using Dataverse search so users have a search experience in model-driven apps.
+Dataverse search is an opt-out feature, set to **On** for all new production environments and **Default** for all other [environment types](/power-platform/admin/environments-overview#environment-types). We recommend using Dataverse search so users have a search experience in model-driven apps.
 
 - When set to **On**: The search bar, in the header of all model-driven apps in the environment, is visible, allowing users to have a global, search experience. Generative AI experiences may be available if they're turned on.
 - When set to **Default**: The search bar, in the header of all model-driven apps in the environment, is hidden. Generative AI experiences available if they're turned on.
@@ -76,7 +77,7 @@ Dataverse search is an opt-out feature, set to **On** for all new production an
 Individual users aren't able to switch to [Quick Find search, formerly known as categorized search](/powerapps/user/quick-find). Tables must be included in the application you're using with Dataverse search. Be sure that any table you want users to search on are included in your application.
 
 > [!NOTE]
-> As of September 2025, the Dataverse Search setting for all previously created environments was migrated, one-time, as required to maintain consistent user experience. Environments that did not have prior dependencies on Dataverse Search or Copilot were designated as "Default" (equivalent to the former "Off" setting), whereas those with Dataverse Search enabled retained the "On" configuration.
+> As of September 2025, the **Dataverse search** setting for all previously created environments was migrated, one-time, as required to maintain a consistent user experience. Environments that didn't have prior dependencies on Dataverse search or Copilot were designated as **Default** (equivalent to the former **Off** setting), whereas those with Dataverse search enabled retained the **On** configuration.
 
 > [!IMPORTANT]
 > If you're using your own encryption key, you can turn off Dataverse search after allowing early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
