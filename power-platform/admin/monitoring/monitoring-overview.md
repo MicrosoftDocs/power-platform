@@ -79,7 +79,7 @@ For resources that are available in the Monitor experience, you can learn more a
 | Power Apps | Model-driven apps | Generally available | Generally available |
 | Power Automate | Cloud flows | Generally available | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Power Automate | Desktop flows | Generally available | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
-| Power Automate | Work queue | Not yet available| Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
+| Power Automate | Work queue | Public Preview | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Dataverse | Dataverse | Not yet available | Not yet available |
 | Copilot Studio | Copilot Studio agents | Not yet available | Not yet available |
 | Dynamics 365 | Apps | Not yet available | Not yet available |
