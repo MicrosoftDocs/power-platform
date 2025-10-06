@@ -38,6 +38,14 @@ Power Automate operational health metrics and recommendations are available in t
 | Flows| Run count| Count of flow runs. | Generally available |
 | Flows| Duration| Average (in seconds) total execution time of flow run. | Generally available |
 | Desktop flows| Time in queue| The minimum time (in seconds) that the slowest 10% of desktop flows have to wait before a machine is assigned to run them. | Generally available |
+| Work queues| Queued | Daily aggregation of every instance an item enters the Queued state, regardless of whether the same item transitions multiple times | Public Preview|
+| Work queues| Processed | Daily aggregation of every instance an item enters the Processed state, regardless of whether the same item transitions multiple times | Public Preview|
+| Work queues| SLA violation | Daily aggregation of every instance an item expired because their Service Level Agreement (SLA) was breached | Public Preview|
+| Work queues| SLA at risk |Daily aggregation of occurrences where items are identified as Service Level Agreement (SLA) at risk, according to the defined SLA strategy.| Public Preview|
+| Work queues| Business exceptions | Daily aggregation of every instance an item enters the Business exception state, regardless of whether the same item transitions multiple times | Public Preview|
+| Work queues| IT exceptions | Daily aggregation of every instance an item enters the IT exception state, regardless of whether the same item transitions multiple times | Public Preview|
+| Work queues| Generic exceptions | Daily aggregation of every instance an item enters the Generic exception state, regardless of whether the same item transitions multiple times | Public Preview|
+
 
 ### Metric and recommendation pairings
 
