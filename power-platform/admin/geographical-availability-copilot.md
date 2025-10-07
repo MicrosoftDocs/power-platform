@@ -82,9 +82,10 @@ To turn on data movement across regions, Bing search, and Microsoft 365 services
     > [!Note]
     > The **Move data across regions** checkbox isn't displayed for US and government cloud regions.
 
-     When the **Move data across regions** checkbox is selected&mdash;your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table:  
-    1. Moving data across region is only happening if the required model is not deployed locally, or if capacity is maxed out as overflow, or if there is a reliability impacting issue with the local model.  
-    1. MSFT does not log, store or retain any input or output data during this process. There is no persistence of the data.
+     When the **Move data across regions** checkbox is selected, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table.
+    
+    - Moving data across regions only happens if the required model isn't deployed locally, if capacity is maxed out as overflow, or if there is a reliability impacting issue with the local model.  
+    - MSFT doesn't log, store, or retain any input or output data during this process. There is no persistence of the data.
               
     For Core Online Services, allowing data movement across regions with this toggle doesn't impact the commitments made in the Product Terms regarding storage of Customer Data at rest. Learn more in [Regions where data is processed for Copilots and generative AI features](#regions-where-data-is-processed-for-copilots-and-generative-ai-features).
 
