@@ -48,10 +48,10 @@ Developers using source code integration also need an Azure DevOps license to ga
 Yes. Import the solution to each additional environment and then connect to the same Git location. For more information, go to [Connect multiple development environments to Git](connecting-to-git.md)
 
 ## Why am I getting the error "Source Control Integration is not enabled for this environment."?
-This error typically occurs when **File Storage is disabled** in your environment. The most common reason is that your environment is encrypted using [**Bring Your Own Key (BYOK)**](https://learn.microsoft.com/en-us/power-platform/admin/manage-encryption-key).
+This error typically occurs when **File Storage is disabled** in your environment. The most common reason is that your environment is encrypted using [**Bring Your Own Key (BYOK)**](../../admin/manage-encryption-key.md).
 - The **Source Control Integration** feature depends on **File Storage**, which is disabled by design in BYOK environments.
-- To enable Source Control Integration, **you must migrate to** [customer-managed key (CMK)](https://learn.microsoft.com/en-us/power-platform/admin/cmk-migrate-from-byok).
-- After migration and once **File Storage** is enabled, reconnect to Source Control ([Disconnect](https://learn.microsoft.com/en-us/power-platform/alm/git-integration/connecting-to-git#disconnect-from-git) followed by [Connect](https://learn.microsoft.com/en-us/power-platform/alm/git-integration/connecting-to-git#connect-to-git)) and retry your operation.
+- To enable Source Control Integration, **you must migrate to** [customer-managed key (CMK)](../../admin/cmk-migrate-from-byok.md).
+- After migration and once **File Storage** is enabled, [reconnect](connecting-to-git.md) to Source Control and retry your operation.
 - If your environment is **not encrypted with BYOK**, please contact Microsoft Support for assistance.
 
 ## Why am I getting the message "Failed to retrieve the default branch for the selected repository. Choose a default branch to allow creating new branches?"
