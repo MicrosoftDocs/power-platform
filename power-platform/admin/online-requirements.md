@@ -4,10 +4,11 @@ description: Provides information about URLs and IP addresses to be added to the
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/15/2025
+ms.date: 10/07/2025
 ms.subservice: admin
 ms.author: sericks
 contributors:
+  - maustinjones
   - v-jlandrum 
   - shazichuanshuo 
   - garrettm-msft
@@ -98,6 +99,7 @@ Add the IP address values for the following service tags.
 |  Service tag | Purpose  |
 |---|---|
 | `AzureCloud` | Needed for all Power Platform and Dynamics 365 services. |
+| `AzureSignalR` | Needed for Power Apps real-time collaboration features. |
 | `MicrosoftAzureFluidRelay` | Needed for real-time collaboration features. |
 | `OneDsCollector` | Needed for gathering telemetry. |
 | `PowerPlatformPlex` | Needed to access external web services from Dataverse sandbox plug-ins. |
