@@ -15,8 +15,6 @@ ms.contributors:
 ---
 # Capacity add-ons
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Capacity add-ons can be purchased for various business applications products.  The content below describes the process of allocating add-ons, where applicable.  Microsoft Dataverse storage capacity add-ons do not require allocation at an environment level because all storage capacity add-ons accrue to tenant-level storage entitlements.  For more information, see [legacy model storage](legacy-capacity-storage.md) or [new model storage](capacity-storage.md).
 
 There are three stages for using capacity add-ons:

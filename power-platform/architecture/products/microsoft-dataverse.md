@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 07/15/2025
+ms.date: 09/17/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -47,6 +47,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables**](../reference-architectures/app-integrate-lakehouse.md) | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | [**Use Dataverse as a data source for canvas apps**](../reference-architectures/dataverse-canvas-app.md) | Learn how creating a Power Apps canvas app that uses Dataverse as a data source helps build a more custom user experience. |
 | [**Use an autonomous agent in Copilot Studio for document processing**](../reference-architectures/document-processing-agent.md) | Learn how to build an autonomous agent in Copilot Studio for document processing. |
+| [**Use complex relationships with Microsoft Dataverse**](../reference-architectures/complex-relationships-dataverse.md) | Learn how to model complex data relationships in Microsoft Dataverse to design effective business applications. |
 
 ## Solution ideas
 

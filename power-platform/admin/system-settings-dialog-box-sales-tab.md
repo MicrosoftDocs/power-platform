@@ -1,11 +1,10 @@
 ---
-title: "System Settings Sales tab  | MicrosoftDocs"
-description: System Settings Sales tab 
+title: "System Settings Sales tab"
+description: Legacy System Settings Sales tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/11/2020
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,7 +12,8 @@ search.audienceType:
 ---
 # System Settings Sales tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing sales assets with Dynamics 365 Sales apps. For information about the current experience, go to [Configure product catalog settings](/dynamics365/sales/configure-product-catalog-settings).
 
 Use the settings on this page to configure system-level settings for the sales area of customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 

@@ -1,11 +1,10 @@
 ---
-title: "System Settings Previews tab  | MicrosoftDocs"
-description: System Settings Previews tab 
+title: "System Settings Previews tab"
+description: Legacy System Settings Previews tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/17/2021
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,13 +12,15 @@ search.audienceType:
 ---
 # System Settings Previews tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing previews. For information about the current experience, go to [What are preview features, and how do I enable them?](what-are-preview-features-how-do-i-enable-them.md).
 
 Use the settings on this page to enable preview features in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
 <!-- legacy procedure -->
   
-## Open the System Settings dialog box 
+## Open the System Settings Previews tab 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -29,11 +30,10 @@ Use the settings on this page to enable preview features in customer engagement 
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
-
-3. Select **Settings** > **Administration**.
-  
-4. Choose the **System Settings** > **Previews** tab.  
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
+5. Select the **Previews** tab.  
   
 |Settings|Description|  
 |--------------|-----------------|  

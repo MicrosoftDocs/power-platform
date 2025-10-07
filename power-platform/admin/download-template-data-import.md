@@ -15,8 +15,6 @@ contributors:
 ---
 # Download a template for data import
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Whether your data is stored in spreadsheets, databases, or other systems, you want to import it into Dynamics 365 applications—such as Dynamics 365 Sales, Dynamics 365 Customer Service, or Dynamics 365 Field Service—to centralize customer information in one place. You can use templates to import various types of records, with a complete list available in the Templates for Data Import wizard.  
 
 These settings can be accessed in the Microsoft Power Platform admin center. TO update them, ensure sure you have the System Administrator or System Customizer security role, or equivalent permissions.

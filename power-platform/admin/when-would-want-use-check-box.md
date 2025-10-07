@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # When would I want to use this check box?
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
  A user can be a member of more than one Dynamics 365 organization, but an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] mailbox (email address) can only synchronize emails, appointments, contacts, and tasks with one organization, and a user that belongs to that organization can only synchronize emails, appointments, contacts, and tasks with one Exchange mailbox. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) store the organization ID (`OrgID`) for the synchronizing organization and the last time the user synced in Exchange.  
   
  You can use the **Sync items with Exchange from this Dynamics 365 org only, even if Exchange was set to sync with a different org** check box to overwrite the setting stored in Exchange if you want to change the primary synchronizing organization. Why would you want to do this? In most cases, you won't need to. Most users are members of just one organization. When an admin starts the synchronization for the user's Exchange mailbox by testing and enabling the mailbox through server-side synchronization, the user's mailbox is automatically set to synchronize appointments, contacts, and tasks with that organization.  

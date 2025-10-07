@@ -22,8 +22,6 @@ ms.custom:
 
 # Role-based security roles
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Microsoft Dataverse uses a role-based security model to control access to a database and its resources in an environment. Use security roles to configure access to all resources in an environment or to specific apps and data in the environment. A combination of access levels and permissions in a security role determines which apps and data users can view and how they can interact with those apps and data.
 
 An environment can have no or one Dataverse database. You assign security roles differently for [environments that have no Dataverse database](database-security-configure.md#assign-security-roles-to-users-in-an-environment-that-has-no-dataverse-database) and [environments that have a Dataverse database](database-security-configure.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database).

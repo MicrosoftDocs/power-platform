@@ -8,14 +8,12 @@ ms.component: pa-admin
 ms.custom: NewPPAC
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 07/23/2025
+ms.date: 09/15/2025
 search.audienceType: 
   - admin
 ---
 
 # Control which apps are allowed in your environment
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Protect against data exfiltration by controlling which apps can run in your Dataverse environment. These safeguards prevent unauthorized removal of sensitive information, helping your business maintain continuity and comply with regulations.
 
@@ -378,7 +376,6 @@ The following apps are Microsoft first-party services. This list of apps can be 
 | fac5b0fe-9b16-4ae3-b20b-324ec3f033d3 | make.apps.appsplatform.us |
 | 5d21c8e8-6d68-4b62-a3a5-bc1900513fad | make.high.powerapps.us |
 | feb2c8aa-4f70-4881-abec-521141627b04 | make.gov.powerapps.us |
-| a522f059-bb65-47c0-8934-7db6e5286414 | Power Virtual Agents - Test |
 | a8f7a65c-f5ba-4859-b2d6-df772c264e9d | make.powerapps.com |
 | 719640cd-0337-4b0c-8e6a-431271371fab | make.test.powerapps.com |
 | 60f38cf4-a0bf-4fdf-b0b5-14d3131bc031 | make.test.powerapps.com |

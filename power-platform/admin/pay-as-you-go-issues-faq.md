@@ -17,8 +17,6 @@ search.audienceType:
 
 # Known issues and frequently asked questions 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 ## Known issues 
 - Pay-as-you-go billing and reporting aren't available in Norway and Korea (South).
 - Deleting a billing policy in the Power Platform admin center won't automatically delete corresponding Power Platform account resource in the Azure portal. This resource can be deleted manually in the Azure portal, if needed.
