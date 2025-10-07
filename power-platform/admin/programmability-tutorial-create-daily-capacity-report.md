@@ -10,11 +10,12 @@ ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
 # Tutorial: Create a daily capacity report
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The Power Platform API can be used to extract various details and metadata from your Microsoft Power Platform environments  with or without a Microsoft Dataverse database. The API is used internally by various clients available today such as PowerShell.
 

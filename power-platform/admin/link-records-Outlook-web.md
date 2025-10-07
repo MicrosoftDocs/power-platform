@@ -6,7 +6,6 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/24/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: sericks
 ms.reviewer: sericks
 contributors:
@@ -14,12 +13,13 @@ contributors:
 search.audienceType: 
   - admin
 ms.contributors:
-- mspilde
+  - mspilde
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 
 # Use /mention to link to records in Outlook web client
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 One of the most time-consuming tasks when using email is sharing information in your line-of-business applications with colleagues. You have to jump out of your Outlook web experience, open your line-of-business app, navigate to a record, and then copy and paste the link of the record into your email.  
 

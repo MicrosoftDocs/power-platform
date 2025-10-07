@@ -10,10 +10,9 @@ ms.author: dmartens
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Use of Basic authentication with Exchange Online 
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 > [!IMPORTANT]
 > Microsoft Exchange [plans](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online) to disable the use of Basic authentication (also known as Legacy authentication) when connecting to Exchange Online starting October 1, 2022. On September 1, 2022, the Exchange Online team announced a one-time extension of this deadline. For additional details including the required steps, see [Basic Authentication Deprecation in Exchange Online – September 2022 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-september/ba-p/3609437).  

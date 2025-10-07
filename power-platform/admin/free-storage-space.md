@@ -14,11 +14,10 @@ contributors:
   - meesposi 
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Free up storage space
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You can reduce the amount of storage space used by removing or deleting information from Dynamics 365 apps, such as:
 

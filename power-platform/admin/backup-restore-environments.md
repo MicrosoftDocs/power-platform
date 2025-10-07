@@ -5,23 +5,23 @@ ms.topic: how-to
 ms.date: 06/24/2025
 ms.subservice: admin
 author: matapg007
-ms.custom: NewPPAC
 ms.author: matgupta
 ms.reviewer: ellenwehrle
 contributors: 
-- tapas1447
-- ttreen
-- Funken1766
-- Daniel2327
-- elijohnson-ms
-- iscohen-microsoft
-- yingchin
-- sericks
+  - tapas1447
+  - ttreen
+  - Funken1766
+  - Daniel2327
+  - elijohnson-ms
+  - iscohen-microsoft
+  - yingchin
+  - sericks
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 
 # Back up and restore environments
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 It's important to protect your data on Microsoft Power Platform and in Dataverse and to provide continuous availability of service through system or manual backups.
 

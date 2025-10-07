@@ -10,10 +10,9 @@ ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-ga-nochange
 ---
 # Remove user personal data
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 After a user is deleted by the global admin from the Microsoft 365 admin center, the user's personal data can be removed from all tenant environments. A user is deleted from the Microsoft 365 admin center when:
 

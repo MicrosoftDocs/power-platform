@@ -53,7 +53,7 @@ You'll [update these environment variables](faq.md#update-environment-variables)
 | Name | Description |
 |------|---------------|
 | Individual Admin | This is separate from the Admin Email environment variable because you can't use a distribution list for approvals. This environment variable holds the individual or shared account who will be charged with approving the removal of unused orphaned objects. |
-| Cleanup Old Objects App URL | (Optional) A link to the Cleanup Old Objects canvas app included in this solution. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment)|
+| Cleanup Old Objects App URL | (Optional) A link to the Cleanup Old Objects canvas app included in this solution. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. More information: [Get a Power Apps URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment)|
 | Flow Approvals URL | (Optional) A link to the Power Automate approval page for your CoE environment. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. To get the URL, go to flow.microsoft.com for your CoE environment > **Action Items** > **Approvals**. The URL will end in **approvals/received**. |  
 
 ### Exempt environments from the inactivity notifications process
@@ -87,7 +87,7 @@ The governance components solution contains the [Cleanup Old Objects App](govern
 
 More information:
 
-- [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
+- [Share an app from a production environment](faq.md#share-an-app-from-a-production-environment)
 
 Consider adding this app to the **CoE Maker Command Center** for makers to easily find and access it.
 
@@ -104,14 +104,11 @@ Environment variables are used to store application and flow configuration data 
 |------|---------------|------|
 | Individual Admin | This is separate from the Admin Email environment variable because you can't use a distribution list for approvals. This environment variable holds the individual or shared account who will be charged with approving the removal of unused orphaned objects. | None |
 | Auto Delete on Archive | Determines whether apps and flows are deleted when they're approved for deletion in the following flow: Admin \|Inactivity notifications v2 (Check Approval) and Admin \|Inactivity notifications v2 (Clean Up and Delete). The value must be Yes or No.  | Yes |
-| Cleanup Old Objects App URL | (Optional) A link to the Cleanup Old Objects canvas app included in this solution. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) | None |
+| Cleanup Old Objects App URL | (Optional) A link to the Cleanup Old Objects canvas app included in this solution. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. More information: [Get a Power Apps URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) | None |
 | Flow Approvals URL | (Optional) A link to the Power Automate approval page for your CoE environment. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. To get the URL, go to make.powerautomate.com for your CoE environment > **Action Items** > **Approvals**. The URL will end in **approvals/received**.|  None |
 | ProductionEnvironment | Set to **No** if you've installed the solution for development or test purposes. This will send approvals to the admin email instead of the maker. | Yes |
 | InactivityNotifications-PastTime-Interval | The interval for the past time for how far back to go to see if an app/flow is useful. | 6 (months) |
 | InactivityNotifications-PastTime-Unit | The units for the past time for how far back to go to see if an app/flow is useful. | Month. |
 
-## It looks like I found a bug with the CoE Starter Kit; where should I go?
 
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

@@ -4,7 +4,7 @@ description: Learn more about how to create alerts to monitor your resources in 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/24/2025
+ms.date: 09/15/2025
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: sericks
@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Tenant and environment administrators in Power Platform can use _alerts_ to track the operational health of their resources. Admins can set up custom thresholds and receive notifications when metrics for their resources pass specific thresholds. Alerts can be created on any metrics in the Monitor area of the Power Platform admin center.
+Tenant and environment admins in Power Platform use _alerts_ to track the operational health of their resources. Admins set up custom thresholds and get notifications when metrics for their resources pass specific thresholds. Create alerts on any metrics in the Monitor area of the Power Platform admin center.
 
 Keep the following principles in mind:
 
@@ -26,9 +26,9 @@ Keep the following principles in mind:
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## When to use alerts
-- Teams and admins can use alerts to discover resources that are used more than expected. For example, an administrator can create an alert to let them know if apps in the default environment exceed 50 launches a day.
-- Teams can use alerts to find resources with degraded health&mdash;and engage with their makers to find resolutions.
-- For operations, admins can create alerts to let them know if apps in their production environment are slow to open for end-users. 
+- Teams and admins use alerts to find resources that are used more than expected. For example, an admin creates an alert to know if apps in the default environment exceed 50 launches a day.
+- Teams use alerts to find resources with degraded health, and work with their makers to fix issues.
+- For operations, admins create alerts to know if apps in their production environment are slow to open for users.
 
 ## Prerequisites
 -	You must be a tenant administrator or an environment administrator to access alerts. 
@@ -40,7 +40,7 @@ Keep the following principles in mind:
 1. In the navigation pane, select **Monitor**.
 1. In the **Monitor** pane, select **Alerts**. The **Alerts** page is displayed.
     > [!Note]
-    > You can manage your existing alert rules in the **Alert rules** tab. Use the **More user actions** icon to see options for editing or deleting your alert rule. You can also turn your alert rule on or off by using the toggle in the **Status** column.
+    > Manage your existing alert rules in the **Alert rules** tab. Use the **More user actions** icon to see options for editing or deleting your alert rule. Turn your alert rule on or off by using the toggle in the **Status** column.
 1. Select **+ Alert rule** to create your new alert rule. The **New alert rule** pane is displayed.
 1. In the **Alert rule name** field, enter the name of your alert.
 1. In the **Product** list, select the product you want to monitor with the alert, **Power Apps** or **Power Automate**.
@@ -56,7 +56,7 @@ Keep the following principles in mind:
     - If you select **Email**, you and up to four other recipients&mdash;that you specify in the **Recipient(s)** field&mdash;will get an email when the alert is triggered. The email comes from `PowerPlat-noreply@microsoft.com`.
 1. Select **Save**.
 
-After you’ve created your alert, the system does an on-demand evaluation and scans all the applicable resources under its scope. 
+After you’ve created your alert, the system does an on-demand evaluation and scans all the applicable resources under its scope.
 
 ## When an alert is triggered
 If you selected to receive email notifications when any resource triggers an alert, you get an email notification sent to you.
@@ -66,8 +66,43 @@ If you selected to receive email notifications when any resource triggers an ale
 In the email notification, select **Go to Alert** to open a Power Platform page listing the triggered alerts, where you can see information on the triggered alert and what resources triggered it. When you select any of the resources in the triggered alert, a pane is displayed that shows time series information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
 
 ### Notes to be aware of
--	A tenant can have 25 alerts rules turned on at one time. However, you can create an unlimited number of alert rules. Consider deleting or turning off any existing alert rule if you’ve reached the maximum.
--	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the Monitor area is evaluated every 24 hours after the newest 24 hour aggregates are produced. The alert rule does an on-demand evaluation upon its creation. 
+-	A tenant can have 50 alerts rules turned on at one time. However, you can create an unlimited number of alert rules. Consider deleting or turning off any existing alert rule if you’ve reached the maximum.
+-	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the **Monitor** area is evaluated every 24 hours after the newest 24 hour aggregates are produced. The alert rule does an on-demand evaluation upon its creation.
+
+## Frequently asked questions (FAQs)
+
+### What’s the difference between an alert rule and a triggered alert?
+An _alert rule_ is a monitoring rule you configure, including the scope, metric, threshold, severity, and notification.                                                                                                                                               
+A _triggered alert_ is an instance when one or more resources meet the rule’s condition. For example, the **Is under 90% for app open success rate** condition is met.
+
+### Who can create and manage alerts?
+You must be a **Tenant administrator** or an **Environment administrator** to create and manage alerts.
+
+### What environments are supported?
+All environment types, such as production, sandbox, trial, and developer environment types are supported, but they must be a Managed Environment. You select the environment in the **ID** field after setting the **Scope** field to **Environment**. 
+
+### Where do I manage my created alerts?
+Go to Power Platform admin center and select **Monitor > Alerts** and manage existing rules on the **Alert rules** tab.
+
+### What is the Last Run column in the Alert rules tab?
+The data in this column informs you the last time the alert rule ran. Alerts should run every 24 hours, so the values in this column should change accordingly. 
+
+### Does the severity level affect how alerts are processed?
+The **Severity**, such as **Low**, **Medium**, ir **High** is a classification label for triage and reporting. It doesn't change evaluation frequency or email notification behavior. 
+
+### Do alerts work on the default environment?
+Yes, **if** your default environment is a **Managed Environment**. Alerts are only supported in Managed Environments. 
+
+### Any tips or best practices?
+Yes! Follow these best practices:
+
+- **Start small**: Create a few high-value rules first, such as performance-open times, error rates, usage spikes.
+- **Name consistently**: Use clear names like **Prod – Canvas apps – Availability < 90**.
+- **Set appropriate severity**: Use **High** for production-impacting metrics and **Medium** or **Low** for trend monitoring.
+- **Manage the 50-rule limit**: Delete obsolete rules.
+- **Validate email routing**: Ensure recipients can receive emails from **PowerPlat-noreply@microsoft.com**.
+- **Monitor the 24‑hour cadence**: Expect daily evaluation; it’s not real-time.
+
 
 
 

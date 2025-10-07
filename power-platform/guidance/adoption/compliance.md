@@ -7,8 +7,8 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
-ms.date: 05/14/2025
+ms.reviewer: jhaskett-msft
+ms.date: 08/18/2025
 ---
 
 # Meet compliance requirements
@@ -17,7 +17,7 @@ Every organization must comply with the legal and regulatory standards of the in
 
 Regional, industry-wide, and organization-specific regulations are top of mind as the race towards AI adoption continues. With Power Platform, you can feel confident that your organization’s business applications and agents meet [all compliance requirements](/power-platform/admin/wp-compliance-data-privacy) including assured visibility, granular traceability, and comprehensive audits.
 
-Microsoft is responsible for the platform, including the services it offers. We provide a cloud service that can meet or exceed your security, privacy, and compliance needs. Microsoft complies with data protection and privacy laws for cloud services, and our compliance with world-class industry standards is verified. Detailed information about compliance for our cloud services and solutions that help you meet regulatory requirements for data security is available in our [Microsoft Trust Center](https://www.microsoft.com/trust-center).
+Microsoft is responsible for the platform, including the services it offers. We provide a cloud service that can meet or exceed your security, privacy, and compliance needs. Microsoft complies with data protection and privacy laws for cloud services, and we verify our compliance with world-class industry standards. You can find detailed information about compliance for our cloud services and solutions that help you meet regulatory requirements for data security in our [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 As with security and privacy, compliance with laws and regulations is a shared responsibility of cloud service providers and their customers. The Trust Center offers tools that help you comply with national, regional, and industry-specific requirements for data collection and use, and audit reports that help you verify technical compliance and control requirements.
 
@@ -40,21 +40,21 @@ Learn more: [Resources to manage GDPR compliance](/power-platform/admin/wp-compl
 
 ## Responsible AI
 
-Power Platform workloads that use AI must adhere to responsible AI principles to ensure fairness, accountability, transparency, and ethical behavior.
+Power Platform workloads that use AI must follow responsible AI principles to ensure fairness, accountability, transparency, and ethical behavior.
 
 Design the AI system to treat all users fairly, hold developers and users accountable for its performance, ensure transparency in AI operations, and adhere to ethical standards.
 
-At Microsoft, we're committed to the advancement of AI driven by principles that put people first. Generative models have significant potential benefits, but without careful design and thoughtful mitigations, such models can generate incorrect or even harmful content. Microsoft has made significant investments to help guard against abuse and unintended harm, which include incorporating Microsoft's [principles for responsible AI use](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1:primaryr6), adopting a [Code of Conduct](/legal/cognitive-services/openai/code-of-conduct?context=/azure/ai-services/openai/context/context), building content filters to support customers, and providing responsible AI [information and guidance](/legal/cognitive-services/openai/transparency-note?context=%2Fazure%2Fai-services%2Fopenai%2Fcontext%2Fcontext&tabs=image) that customers should consider when using generative AI.
+At Microsoft, we're committed to advancing AI guided by principles that put people first. Generative models offer significant potential benefits, but without careful design and thoughtful mitigations, they can generate incorrect or even harmful content. To help guard against abuse and unintended harm, Microsoft has made significant investments, including incorporating [principles for responsible AI use](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1:primaryr6), adopting a [Code of Conduct](/legal/cognitive-services/openai/code-of-conduct?context=/azure/ai-services/openai/context/context), building content filters to support customers, and providing responsible AI [information and guidance](/legal/cognitive-services/openai/transparency-note?context=%2Fazure%2Fai-services%2Fopenai%2Fcontext%2Fcontext&tabs=image) that customers should consider when using generative AI.
 
 Power Platform copilots and generative AI features follow a set of core security and privacy practices and the [Microsoft Responsible AI Standard](https://www.microsoft.com/ai/principles-and-approach). Power Platform data is protected by comprehensive, industry-leading compliance, security, and privacy controls.
 
 ## Dataverse auditing
 
-Dataverse audit capabilities in the Power Platform admin center provide comprehensive logging, including admin, maker, and user activity logs, which are critical for identifying potential security threats.  By monitoring unusual activity, such as a sudden surge in sign-in attempts or changes to security settings, you can detect and respond to attacks before they escalate.
+Dataverse audit capabilities in the Power Platform admin center provide comprehensive logging, including admin, maker, and user activity logs. These logs play a crucial role in identifying potential security threats. By monitoring unusual activity, such as a sudden surge in sign-in attempts or changes to security settings, you can detect and respond to attacks before they escalate.
 
 [Microsoft Purview](/purview/register-scan-dataverse?) supports detailed auditing across Power Platform, including Copilot Studio events, to meet compliance requirements. It lets you customize audit logs and provides detailed reports for AI-driven scenarios to enhance security and compliance.
 
-To meet your enterprise’s compliance requirements with greater granularity, Dataverse offers robust data logging capabilities within [managed security](/power-platform/admin/security/managed-security). This feature is essential for investigating security incidents and is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. You can customize your Dataverse audit for various entities and fields to gain visibility into your data interactions, helping to maintain a secure and compliant environment.
+To meet your enterprise’s compliance requirements with greater granularity, Dataverse offers robust data logging capabilities within [managed security](/power-platform/admin/security/managed-security). This feature is essential for investigating security incidents and is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. You can customize your Dataverse audit for various entities and fields to gain visibility into your data interactions, helping to maintain a secure and compliant environment. Learn more in [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing?tabs=new#turn-on-auditing).
 
 :::image type="content" source="media/sec-envauditing.png" alt-text="Screenshot of Environment auditing in the Power Platform admin center." lightbox="media/sec-envauditing.png":::
 
@@ -87,7 +87,7 @@ Review the detailed articles in this series to further enhance your security pos
 
 - [Detect threats to your organization](threat-detection.md)
 - [Establish data protection and privacy controls](data-protection.md)
-- [Implement a DLP strategy](dlp-strategy.md)
+- [Implement a data policy strategy](dlp-strategy.md)
 - [Configure identity and access management](conditional-access.md)
 - [Secure the default environment](secure-default-environment.md)
 

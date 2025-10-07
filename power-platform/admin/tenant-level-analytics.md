@@ -14,11 +14,12 @@ contributors:
   - jahnavisunil 
   - Zeffin
   - johnev
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ga-blocked
 ---
 
 # Tenant-level analytics
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Power Platform resources periodically emit telemetry data for various operations and user activities across environments and extensions. Tenant-level analytics allows admins to view and compare insights derived from the Platform telemetry data across environments they manage. Tenant admins can view reports containing analytics that apply to all environments within the tenant. 
 

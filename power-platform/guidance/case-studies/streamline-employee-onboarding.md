@@ -4,8 +4,9 @@ description: Learn from legal and business services firm Epiq how to streamline 
 author: shellyhaverkamp
 ms.author: sashi
 ms.topic: overview
-ms.subservice: guidance
+ms.subservice: case-study
 ms.date: 08/05/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Epiq streamlines employee onboarding with Power Automate, Microsoft Dataverse, and AI Builder
@@ -17,8 +18,6 @@ Before building its onboarding solution with Power Platform tools, [Epiq](https:
 The Launchpad initiative streamlined the onboarding process, integrating seamlessly with Epiq’s existing systems and eliminating manual tasks. The solution enabled rapid scaling for short-term projects, significantly reducing onboarding time and costs. As a result, new hires gained quicker access to necessary tools, and IT staff could focus on higher-value tasks.
 
 Power Automate and Dataverse provided a ready-to-go toolkit, capable of integrating with Epiq’s existing human capital management (HCM) and IT systems. Using Power Automate and Dataverse eliminated manual effort and provided the flexibility to adapt the process for business units that needed to mass-hire short-term employees for specific projects.
-
-Read the full story: [Epiq automates employee onboarding with Power Platform and saves over $500,000 a year](https://customers.microsoft.com/story/1698782717636037949-epiq-power-platform-united-states?ocid=lp_pg427373_gdc_comm_ba).
 
 ## Business challenges
 

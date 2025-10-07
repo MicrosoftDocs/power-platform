@@ -4,7 +4,7 @@ description: Move your environment in a single tenant from one region to another
 author: matapg007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/01/2024
+ms.date: 07/23/2025
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: sericks
@@ -19,9 +19,7 @@ search.audienceType:
 
 # Geo-to-geo migrations
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
-We continue to open new datacenter regions for business services, and to add datacenters to existing regions.  
+We continue to open new datacenter regions for business services, and to add datacenters to existing regions.
 
 The Geo Migration feature allows customers to move their environments in a single tenant from one region to another. There are no user-interface changes or version changes as part of this move. If the environment resides in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment in a single tenant, moving the environment doesn't move the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment; they're separate services. Your environment still appears in your tenant alongside the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment.  
 
@@ -45,7 +43,7 @@ The Geo Migration feature allows customers to move their environments in a singl
 - Your environment ID is changed to a new globally, unique identifier.
 
 > [!NOTE]
-> Organization URLs must be unique. If your organization, domain name has already been reserved in the destination datacenter, it isn't available. In the unlikely event this happens, we work with you to decide how to proceed.  
+> Organization URLs must be unique. If your organization, domain name has already been reserved in the destination datacenter, it isn't available. In the unlikely event this happens, we will work with you to decide how to proceed.  
 
 ## Geo-to-geo migration steps
 > [!IMPORTANT]
@@ -57,7 +55,7 @@ The Geo Migration feature allows customers to move their environments in a singl
 - [Managed environment](managed-environment-overview.md#managed-environments-overview) status and associated settings are lost (for example, Admin Digest, Environment Routing). Take note of the managed environment status and associated settings so you can reapply these settings after geo-to-geo migration.
 - Enterprise policy link state and associated properties are lost (for example, [customer-managed keys](./customer-managed-key.md), [Virtual Network](./vnet-support-overview.md)). Take note of any enterprise policies linked to the environment so you can relink the enterprise policies after geo-to-geo migration.
 - [Lockbox](./about-lockbox.md) requests for the environment undergoing G2G are lost or broken. If Microsoft Support needs access to your environment after geo-to-geo migration, you must create a new Lockbox request.
-- [Data Loss Prevention (DLP) policies](wp-data-loss-prevention.md) that either include or exclude the environment undergoing geo-to-geo migration no longer apply to the environment. Take note of the DLP policies that apply to the environment so that you can reapply the policies after geo-to-geo migration.
+- [Data policies](wp-data-loss-prevention.md) that either include or exclude the environment undergoing geo-to-geo migration no longer apply to the environment. Take note of the data policies that apply to the environment so that you can reapply the policies after geo-to-geo migration.
 - The environment undergoing geo-to-geo migration is removed from its [environment group](./environment-groups.md). Take note of the environment group so you can read the environment to the environment group after geo-to-geo migration.
 - [Pay-as-you-go](./pay-as-you-go-overview.md) is lost for the environment undergoing geo-to-geo migration. Take note of any Pay-as-you-go billing policies assigned to the environment that you would like to retain after geo-to-geo migration.
 - [Currency allocations](./capacity-add-on.md) is lost for the environment undergoing geo-to-geo migration. Take note of any currency allocations for the environment that you would like to retain after geo-to-geo migration.
@@ -67,8 +65,8 @@ The Geo Migration feature allows customers to move their environments in a singl
 - [Reenable managed environments](./managed-environment-enable.md) and resave managed environment settings as necessary.
 - Relink enterprise policies to the environment as necessary. For example, [virtual network](./vnet-support-setup-configure.md#configure-your-power-platform-environment), [customer-managed keys](./customer-managed-key.md#manage-environments-encryption)
 - Work with Microsoft Support to recreate Lockbox requests for the environment as necessary.
-- [Reapply DLP policies](./prevent-data-loss.md) to the environment as necessary.
-- [Read the environment to an environment group](./environment-groups.md#add-environments-to-your-environment-group) as necessary.
+- [Reapply data policies](./prevent-data-loss.md) to the environment as necessary.
+- [Readd the environment to an environment group](./environment-groups.md#add-environments-to-your-environment-group) as necessary.
 - [Reapply pay-as-you-go plan](./pay-as-you-go-set-up.md#link-an-azure-subscription-to-an-environment) to the environment as necessary.
 - [Repeat currency allocations](./capacity-add-on.md) for the environment as necessary.
 
@@ -176,13 +174,13 @@ If you use any of the following Power Platform desktop applications, take the fo
 ##### After geo-to-geo migration
 If you selected the environment that's being migrated as your machine environment in the Power Automate machine runtime application, reselect the environment in the app after geo-to-geo migration.
 
-## How the move works  
+## How the move works
 You should follow the above steps before and after geo-to-geo migration. The following table describes what [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] does before, during, and after the geo-to-geo migration. 
 
 |   |    Before the move   |  During the move | After the move |
 |-----|------|---|----|
-| **What Microsoft does** | Notification <br /><br /> Your support representative or Account Manager works with you to request a move and scheduling. | Cut-over <br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but might take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend. | Notification and support <br /><br /> You are alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your environment migrates, you can perform the post migration steps. |
+| **What Microsoft does** | Notification <br /><br /> Your support representative or Account Manager works with you to request a move and schedule it. | Cut-over <br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but might take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend. | Notification and support <br /><br /> You are alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your environment migrates, you can perform the post migration steps. |
 
-We adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.  
+We adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -70,9 +70,11 @@
               items:
                 - name: View license consumption for Power Apps and Power Automate (preview)
                   href: view-license-consumption-issues.md
+                - name: View license consumption for Power Pages
+                  href: /power-pages/admin/capacity-management
                 - name: View license consumption for finance and operations apps
                   href: view-license-consumption-finops-apps.md
-                - name: Manage Copilot Studio messages and capacity
+                - name: Manage Copilot Studio credits and capacity
                   href: manage-copilot-studio-messages-capacity.md
                 - name: View intelligent recommendations about licensing
                   href: get-recommendations-licensing.md
@@ -180,6 +182,8 @@
                   href: trial-environments.md
                 - name: Dataverse for Teams environment
                   href: about-teams-environment.md
+                - name: Microsoft 365 environment for recurring Copilot prompts
+                  href: recurring-copilot-prompts.md
                 - name: View apps in your environments
                   href: admin-view-apps.md
                 - name: Language collations
@@ -192,10 +196,18 @@
                   href: managed-environment-overview.md
                 - name: Enable Managed Environments
                   href: managed-environment-enable.md
-                - name: Environment groups
-                  href: environment-groups.md
-                - name: Rules for environment groups
-                  href: environment-groups-rules.md
+                - name: Environment groups and rules
+                  items:
+                    - name: Environment groups
+                      href: environment-groups.md
+                    - name: Rules for environment groups
+                      href: environment-groups-rules.md
+                    - name: Rules
+                      items:
+                        - name: Preview and experimental AI models rule
+                          href: preview-experimental-ai-models-rule.md
+                        - name: External models rule
+                          href: allow-llm-generative-responses.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
                 - name: Usage insights
@@ -376,7 +388,7 @@
                       href: set-up-business-management-options.md
                     - name: Dynamics 365 for Outlook
                       href: /dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
-                - name: System
+                - name: System Settings (legacy)
                   items:
                     - name: Overview
                       href: system-settings-dialog.md
@@ -436,17 +448,17 @@
                   href: wp-task-automation-flow.md
         - name: Monitor
           items:
-            - name: Overview (preview)
+            - name: Overview
               href: monitoring/monitoring-overview.md
-            - name: View event logs and error logs (preview)
+            - name: View event logs and error logs
               href: monitoring/logs.md
             - name: Create alerts for your resources (preview)
               href: monitoring/alerts.md
             - name: Metrics and recommendations
               items:
-                - name: For Power Apps (preview)
+                - name: For Power Apps
                   href: monitoring/monitor-power-apps.md
-                - name: For Power Automate (preview)
+                - name: For Power Automate
                   href: monitoring/monitor-power-automate.md
         - name: Copilot
           items:
@@ -476,11 +488,13 @@
                       href: cmk-migrate-from-byok.md
                     - name: Encrypt column-level data
                       href: data-encryption.md
+                - name: Advanced connector policies (preview)
+                  href: advanced-connector-policies.md
                 - name: Data policies
                   items:
                     - name: Data policies for Managed Environments
                       href: managed-environment-data-policies.md
-                    - name: Data loss prevention (DLP) policies
+                    - name: Data policies
                       href: wp-data-loss-prevention.md
                     - name: Known limitations
                       href: dlp-known-issues.md
@@ -496,8 +510,6 @@
                           href: connector-off-by-default.md
                         - name: Design-time versus runtime
                           href: dlp-impact-policies-apps-flows.md
-                        - name: Exempt apps and flows
-                          href: dlp-resource-exemption.md
                     - name: Certified connectors
                       items:
                         - name: Connector classification
@@ -526,6 +538,8 @@
                       href: virtual-network-support-whitepaper.md
                     - name: Set up Virtual Network support
                       href: vnet-support-setup-configure.md
+                    - name: Troubleshoot Virtual Network issues
+                      href: /troubleshoot/power-platform/administration/virtual-network?toc=/power-platform/admin/toc.json&bc=/power-platform/breadcrumb/toc.json
             - name: Identity and access
               items:
                 - name: Identity and access management
@@ -542,13 +556,13 @@
                   href: managed-environment-sharing-limits.md
                 - name: App access control
                   items:
-                    - name: Control which apps are allowed in your environment (preview)
+                    - name: Control which apps are allowed in your environment
                       href: control-app-access-environment.md
-                    - name: Commonly used Microsoft first-party services and portal apps (preview)
+                    - name: Commonly used Microsoft first-party services and portal apps
                       href: apps-to-allow.md
             - name: Compliance
               items:
-                - name: Comliance tools
+                - name: Compliance tools
                   href: security/compliance.md
                 - name: Auditing
                   items:
@@ -564,9 +578,9 @@
                   href: about-lockbox.md
             - name: Power Platform managed identity
               items:
-                - name: Managed identity overview (preview)
+                - name: Managed identity overview
                   href: managed-identity-overview.md
-                - name: Set up managed identity (preview)
+                - name: Set up managed identity
                   href: set-up-managed-identity.md
             - name: Authenticating to Power Platform services
               href: security/authenticate-services.md
@@ -604,8 +618,6 @@
                   items:
                     - name: Configure content security policy
                       href: content-security-policy.md
-                - name: Advanced connector policies (preview)
-                  href: advanced-connector-policies.md
                 - name: Configure column-level security
                   items:
                     - name: Column-level security
@@ -764,7 +776,7 @@
               items:
                 - name: Recover storage space
                   href: free-storage-space.md
-                - name: Clean up System Job and Process Log tables
+                - name: Delete completed system jobs and process log
                   href: cleanup-asyncoperationbase-table.md
             - name: Finance and Operations storage capacity
               href: finance-operations-storage-capacity.md
@@ -861,7 +873,7 @@
                 - name: Reference
                   items:
                     - name: Power Platform API for .NET
-                      href: /dotnet/api/?view=power-platform-latest
+                      href: /dotnet/api/?view=power-platform-latest&preserve-view=true
                     - name: "Power Platform REST API v2024-10-01"
                       href: /rest/api/power-platform
                     - name: "Power Platform REST API v2022-03-01-preview"
@@ -882,6 +894,8 @@
           items:
             - name: Integrate data into Dataverse
               href: data-integrator.md
+            - name: Migrate the dual-write app
+              href: app-migration-dual-write.md
         - name: Data sources and gateway clusters
           items:
             - name: About on-premises gateway
@@ -1119,20 +1133,22 @@
               href: unified-experience/finance-operations-apps-overview.md
             - name: Administration for partners and systems implementers
               href: unified-experience/partners-systems-implementers.md
-            - name: "Tutorial: Provision a new environment with an ERP-based template"
-              href: unified-experience/tutorial-deploy-new-environment-with-erp-template.md
-            - name: "Tutorial: Install the Finance and Operations Provisioning apps"
-              href: unified-experience/tutorial-install-finance-operations-provisioning-app.md
-            - name: "Tutorial: Update the Finance and Operations Provisioning app"
-              href: unified-experience/tutorial-update-finance-operations-provisioning-app.md
-            - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
-              href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
-            - name: "Tutorial: Perform a transaction-less copy between environments"
-              href: unified-experience/tutorial-perform-transactionless-copy.md
-            - name: "Tutorial: Back up and restore unified environment"
-              href: unified-experience/tutorial-backup-restore-unified-environment.md
             - name: Admin trials for finance and operations apps
               href: unified-experience/admin-trials.md
+            - name: Tutorials
+              items:
+                - name: "Tutorial: Provision a new environment with an ERP-based template"
+                  href: unified-experience/tutorial-deploy-new-environment-with-erp-template.md
+                - name: "Tutorial: Install the Finance and Operations Provisioning apps"
+                  href: unified-experience/tutorial-install-finance-operations-provisioning-app.md
+                - name: "Tutorial: Update the Finance and Operations Provisioning app"
+                  href: unified-experience/tutorial-update-finance-operations-provisioning-app.md
+                - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
+                  href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
+                - name: "Tutorial: Perform a transaction-less copy between environments"
+                  href: unified-experience/tutorial-perform-transactionless-copy.md
+                - name: "Tutorial: Back up and restore unified environment"
+                  href: unified-experience/tutorial-backup-restore-unified-environment.md
         - name: Performance tuning and optimization
           items:
             - name: Overview

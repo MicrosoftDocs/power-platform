@@ -3,7 +3,6 @@ title: Use Entra Privileged Identity Management in Power Platform admin center t
 description: Use Microsoft Entra Privileged Identity Management to manage high-privileged admin roles.
 author: srpoduri 
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: sripod
 contributor: yingchin
 ms.reviewer: ellenwehrle
@@ -12,12 +11,14 @@ contributors: srpoduri
 ms.topic: how-to
 ms.date: 06/13/2025
 search.audienceType: admin
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
+  - sfi-ga-nochange
 
 ---
 
 # Manage admin roles with Microsoft Entra Privileged Identity Management
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Manage high-privileged admin roles in the Power Platform admin center using Microsoft Entra Privileged Identity Management (PIM).
 

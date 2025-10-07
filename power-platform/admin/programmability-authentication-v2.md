@@ -9,6 +9,7 @@ ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
+ms.custom: sfi-ropc-nochange
 ---
 
 # Authentication
@@ -47,6 +48,7 @@ az login
 
 az ad sp create --id 8578e004-a5c6-46e7-913e-12f58912df43
 ```
+---
 
 From here, you must select the permissions you require. These are grouped by [**Namespaces** ](/rest/api/power-platform). Within a namespace, you see resource types and actions for example *AppManagement.ApplicationPackages.Read* which give read permissions for application packages. For more information, see our [Permission reference](programmability-permission-reference.md) article.
 

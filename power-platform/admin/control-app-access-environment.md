@@ -8,14 +8,12 @@ ms.component: pa-admin
 ms.custom: NewPPAC
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 02/24/2025
+ms.date: 09/15/2025
 search.audienceType: 
   - admin
 ---
 
 # Control which apps are allowed in your environment
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Protect against data exfiltration by controlling which apps can run in your Dataverse environment. These safeguards prevent unauthorized removal of sensitive information, helping your business maintain continuity and comply with regulations.
 
@@ -210,6 +208,8 @@ Here are some commonly used apps that are safe to allow.
 | c92229fa-e4e7-47fc-81a8-01386459c021 | CDSUserManagement |
 | e548fb5c-c385-41a6-a31d-6dbc2f0ca8a3 | JobsServiceProd |
 | ef32e2a3-262a-44e5-a270-4dfb7b6d0bb2 | AiBuilder PAIO-CDS Prod |
+| 99335b6b-7d9d-4216-8dee-883b26e0ccf7 | Power Platform Dataflows Common Data Service Client |
+| 0c906d81-7073-46b5-a95c-3726fca3e3a3 | Power Platform Insights and Recommendations Data Plane Prod |
 
 ##### Apps you might want to block
 
@@ -221,7 +221,7 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 | d3590ed6-52b3-4102-aeff-aad2292ab01c | Microsoft Access client |
 | 51f81489-12ee-4a9e-aaae-a2591f45987d | [XrmToolBox](https://www.xrmtoolbox.com) |
 | 2ad88395-b77d-4561-9441-d0e40824f9bc | PowerShell |
-| a672d62c-fc7b-4e81-a576-e60dc46e951d | Power BI |
+| 00000009-0000-0000-c000-000000000000 | Power BI |
 
 ## Recommended steps
 
@@ -376,7 +376,6 @@ The following apps are Microsoft first-party services. This list of apps can be 
 | fac5b0fe-9b16-4ae3-b20b-324ec3f033d3 | make.apps.appsplatform.us |
 | 5d21c8e8-6d68-4b62-a3a5-bc1900513fad | make.high.powerapps.us |
 | feb2c8aa-4f70-4881-abec-521141627b04 | make.gov.powerapps.us |
-| a522f059-bb65-47c0-8934-7db6e5286414 | Power Virtual Agents - Test |
 | a8f7a65c-f5ba-4859-b2d6-df772c264e9d | make.powerapps.com |
 | 719640cd-0337-4b0c-8e6a-431271371fab | make.test.powerapps.com |
 | 60f38cf4-a0bf-4fdf-b0b5-14d3131bc031 | make.test.powerapps.com |

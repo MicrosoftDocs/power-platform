@@ -28,6 +28,10 @@ Use the include files to add additional content to this topic.
 |[pac code add-data-source](#pac-code-add-data-source)|(Preview) Adds a new datasource to the app.|
 |[pac code delete-data-source](#pac-code-delete-data-source)|(Preview) Deletes a data source from the current app.|
 |[pac code init](#pac-code-init)|(Preview) Initializes a Code app in the current directory.|
+|[pac code list](#pac-code-list)|(Preview) Lists the code apps available in the current environment.|
+|[pac code list-datasets](#pac-code-list-datasets)|(Preview) Lists datasets accessible by the provided connector.|
+|[pac code list-sql-stored-procedures](#pac-code-list-sql-stored-procedures)|(Preview) Lists stored procedures accessible by the provided SQL connection and dataset.|
+|[pac code list-tables](#pac-code-list-tables)|(Preview) Lists tables accessible by the provided connector and dataset.|
 |[pac code push](#pac-code-push)|(Preview) Publishes a new version of a Code app.|
 |[pac code run](#pac-code-run)|(Preview) Runs a local server for connections loading locally in the app.|
 
@@ -45,16 +49,20 @@ Use the include files to add additional content to this topic.
 
 The api id of the datasource.
 
+
+### Optional Parameters for code add-data-source
+
 #### `--connectionId` `-c`
 
 The connection id of the datasource.
 
-
-### Optional Parameters for code add-data-source
-
 #### `--dataset` `-d`
 
 The dataset name of the datasource.
+
+#### `--environment` `-env`
+
+The environment URL to connect to the data source.
 
 #### `--storedProcedure` `-sp`
 
@@ -134,9 +142,95 @@ The path to the logo file for the app.
 
 [!INCLUDE [code-init-remarks](includes/code-init-remarks.md)]
 
+## pac code list
+
+(Preview) Lists the code apps available in the current environment.
+
+[!INCLUDE [code-list-remarks](includes/code-list-remarks.md)]
+
+## pac code list-datasets
+
+(Preview) Lists datasets accessible by the provided connector.
+
+[!INCLUDE [code-list-datasets-intro](includes/code-list-datasets-intro.md)]
+
+
+### Required Parameters for code list-datasets
+
+#### `--apiId` `-a`
+
+The api id of the datasource.
+
+
+### Optional Parameters for code list-datasets
+
+#### `--connectionId` `-c`
+
+The connection id of the datasource.
+
+[!INCLUDE [code-list-datasets-remarks](includes/code-list-datasets-remarks.md)]
+
+## pac code list-sql-stored-procedures
+
+(Preview) Lists stored procedures accessible by the provided SQL connection and dataset.
+
+[!INCLUDE [code-list-sql-stored-procedures-intro](includes/code-list-sql-stored-procedures-intro.md)]
+
+
+### Optional Parameters for code list-sql-stored-procedures
+
+#### `--connectionId` `-c`
+
+The connection id of the datasource.
+
+#### `--dataset` `-d`
+
+The dataset name of the datasource.
+
+[!INCLUDE [code-list-sql-stored-procedures-remarks](includes/code-list-sql-stored-procedures-remarks.md)]
+
+## pac code list-tables
+
+(Preview) Lists tables accessible by the provided connector and dataset.
+
+[!INCLUDE [code-list-tables-intro](includes/code-list-tables-intro.md)]
+
+
+### Required Parameters for code list-tables
+
+#### `--apiId` `-a`
+
+The api id of the datasource.
+
+
+### Optional Parameters for code list-tables
+
+#### `--connectionId` `-c`
+
+The connection id of the datasource.
+
+#### `--dataset` `-d`
+
+The dataset name of the datasource.
+
+[!INCLUDE [code-list-tables-remarks](includes/code-list-tables-remarks.md)]
+
 ## pac code push
 
 (Preview) Publishes a new version of a Code app.
+
+[!INCLUDE [code-push-intro](includes/code-push-intro.md)]
+
+
+### Optional Parameters for code push
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
+#### `--solutionName` `-s`
+
+The Solution Name for the code app to associate with.
 
 [!INCLUDE [code-push-remarks](includes/code-push-remarks.md)]
 

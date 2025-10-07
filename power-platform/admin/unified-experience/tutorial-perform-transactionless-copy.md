@@ -16,8 +16,6 @@ contirubutors:
 
 # Tutorial: Perform a transaction-less copy between environments 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Environment copy for finance and operations apps has traditionally been a full copy, meaning it includes the entire database worth of configuration, master data, and transactions.  While helpful for debugging specific situations, this full copy has a side effect of significantly increasing the storage consumption for both finance and operations apps and Dataverse.  
 
 :::image type="content" source="media/transactionless-copy-process.png" alt-text="Diagram of the copy process.":::

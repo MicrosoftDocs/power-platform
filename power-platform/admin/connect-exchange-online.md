@@ -6,7 +6,6 @@ ms.topic: how-to
 ms.date: 06/27/2025
 author: rahulmital 
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: rahulmital
 ms.contributors:
   - yingchin
@@ -14,10 +13,12 @@ ms.contributors:
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 # Connect to Exchange Online
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 With both [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] and customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) hosted as online services, connecting the two is a simpler, more straightforward configuration.  
   

@@ -5,18 +5,17 @@ author: srpoduri
 ms.subservice: admin
 ms.author: sripod
 ms.reviewer: sericks
-ms.custom: 
-  - "admin-security"
-  - NewPPAC
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 06/16/2025
 search.audienceType: 
   - admin
+ms.custom:
+  - "admin-security"
+  - NewPPAC
+  - sfi-image-nochange
 ---
 # Add users to an environment  
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Environments can have zero or one Microsoft Dataverse database. The process for adding users to environments that have no Dataverse database differs from the process for environments that have one Dataverse database. For an overview of environments, go to [Environments overview](environments-overview.md). 
 

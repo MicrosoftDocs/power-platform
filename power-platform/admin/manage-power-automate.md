@@ -7,15 +7,15 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/29/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: sericks
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 ---
 
 # Manage Power Automate flows
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 If you're an Environment Admin, Global admin, or Power Platform admin, you can manage the flows created in your organization.
 

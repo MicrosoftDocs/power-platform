@@ -4,19 +4,19 @@ description: Follow these steps to set up pay-as-you-go plans with an Azure subs
 author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/27/2025
+ms.date: 09/30/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: ampatra 
 ms.reviewer: sericks
 contributors:
   - ShawnNandiMSFT
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 ---
 # Set up pay-as-you-go 
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 In order to set up pay-as-you-go billing for an environment, you first need an active Azure subscription that you can link to that environment. You can do so in the Power Platform admin center or within Power Apps.
 
@@ -120,6 +120,9 @@ Microsoft 365 users without a paid Copilot license can now access and use Copilo
 
 When a billing plan is created, a new environment named **Microsoft 365 Copilot Chat** is automatically provisioned and linked to the newly created billing plan. Copilot consumption reporting is accessible through this environment. If a new billing plan is created for **Microsoft 365 Copilot Chat** and an environment already exists, it's automatically linked to the new billing plan.
 
+> [!NOTE]
+> Once created, the **Microsoft 365 Copilot Chat** environment can't be deleted by administrators. You can unlink the environment from the linked billing plan. 
+
 # [Classic admin center](#tab/classic)
 
 1. In the navigation pane, select **Billing** > **Billing plans**. The **Billing plans** page is displayed.
@@ -142,7 +145,8 @@ When a billing plan is created, a new environment named **Microsoft 365 Copilot 
 
 When a billing plan is created, a new environment named **Microsoft 365 Copilot Chat** is automatically provisioned and linked to the newly created billing plan. Copilot consumption reporting is accessible through this environment. If a new billing plan is created for **Microsoft 365 Copilot Chat** and an environment already exists, it's automatically linked to the new billing plan.
 
----
+> [!NOTE]
+> Once created, the **Microsoft 365 Copilot Chat** environment can't be deleted by administrators. You can unlink the environment from the linked billing plan. 
 
 ## List of billing plans
 

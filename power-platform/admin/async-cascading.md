@@ -12,13 +12,11 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.contributors:
-- erjost
-
+  - erjost
+ms.custom: sfi-image-nochange
 ---
 
 # Asynchronous processing of cascading transactions
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Certain transactions can be configured to cascade across all related records. This means the change on a parent record is transacted upon (cascade down through) all the child records. Cascading relationships are configured at the table level. For more information about cascading relationships, see [Configure table relationship cascading behavior](/powerapps/developer/common-data-service/configure-entity-relationship-cascading-behavior).
 

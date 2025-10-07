@@ -6,18 +6,18 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/24/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: alaug
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
   - akadrno 
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 
 # Manage Power Apps
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 If you're an environment admin or a Microsoft Power Platform admin, you can manage the apps created in your organization.
 

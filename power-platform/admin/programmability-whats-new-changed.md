@@ -1,34 +1,67 @@
 ---
 title: Programmability and extensibility - What's new or changed 
-description: Learn about the latest changes and new capabilities for Power Platform API and admin SDKs in the Power Platform.
+description: Learn about the latest changes and new capabilities for the Power Platform API and admin SDKs.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 07/01/2025
+ms.date: 09/26/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
 ---
 
-# Programmability and extensibility - What's new or changed
+# Programmability and extensibility - what's new or changed
 
-Learn about the latest changes and new capabilities for Power Platform API and administrator SDKs in the Power Platform.
+Learn about the latest changes and new capabilities for Power Platform API and admin SDKs.
+
+## August 2025
+
+| Item | Type | Description |
+|------|------|-------------|
+| Create Role Assignment | API | New endpoint: [Create Role Assignment (Preview)](/rest/api/power-platform/authorization/role-based-access-control/create-role-assignment) |
+| Delete Role Assignment | API | New endpoint: [Delete Role Assignment (Preview)](/rest/api/power-platform/authorization/role-based-access-control/delete-role-assignment) |
+| List Role Assignments | API | New endpoint: [List Role Assignments (Preview)](/rest/api/power-platform/authorization/role-based-access-control/list-role-assignments) |
+| List Role Definitions | API | New endpoint: [List Role Definitions (Preview)](/rest/api/power-platform/authorization/role-based-access-control/list-role-definitions) |
+| Create Environment Rule Based Assignment | API | New endpoint: [Create Environment Rule Based Assignment](/rest/api/power-platform/governance/rule-based-policies/create-environment-rule-based-assignment) |
+| List Rule Assignments by Environment Group ID | API | New endpoint: [List Rule Assignments By Environment Group Id](/rest/api/power-platform/governance/rule-based-policies/list-rule-assignments-by-environment-group-id) |
+| List Rule Assignments by Environment ID | API | New endpoint: [List Rule Assignments By Environment Id](/rest/api/power-platform/governance/rule-based-policies/list-rule-assignments-by-environment-id) |
+| List Rule Assignments by Policy ID | API | New endpoint: [List Rule Assignments By Policy Id](/rest/api/power-platform/governance/rule-based-policies/list-rule-assignments-by-policy-id) |
+| Microsoft.PowerPlatform.Management | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3147.171) |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.48.2) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
+
+## July 2025
+
+| Item | Type | Description |
+|------|------|-------------|
+| Enable Managed Environment | API | New endpoint: [Enable Managed Environment (Preview)](/rest/api/power-platform/environmentmanagement/environment-managed-governance/enable-managed-environment) |
+| Disable Managed Environment | API | New endpoint: [Disable Managed Environment (Preview)](/rest/api/power-platform/environmentmanagement/environment-managed-governance/disable-managed-environment) |
+| List Connectors | API | New endpoint: [List Connectors](/rest/api/power-platform/connectivity/connectors/list-connectors) |
+| Get Connector by ID | API | New endpoint: [Get Connector by ID](/rest/api/power-platform/connectivity/connectors/get-connector-by-id) |
+| Microsoft.PowerPlatform.Management | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3147.171#readme-body-tab) |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.47.1#releasenotes-body-tab) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
 
 ## June 2025
 
 | Item | Type | Description |
 |------|------|-------------|
-| Microsoft.PowerPlatform.Management | SDK | [.NET API reference](/dotnet/api/?view=power-platform-latest) published |
+| List cloud flows | API | New endpoint: [List Cloud Flows](/rest/api/power-platform/powerautomate/cloud-flows/list-cloud-flows). |
+| List flow actions | API | New endpoint: [List Flow Actions](/rest/api/power-platform/powerautomate/flow-actions/list-flow-actions). |
+| List flow runs | API | New endpoint: [List Flow Runs](/rest/api/power-platform/powerautomate/flow-runs/list-flow-runs). |
+| Microsoft.PowerPlatform.Management | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3126.165#readme-body-tab). |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.45.3#releasenotes-body-tab). |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/). |
 
 ## May 2025
 
 | Item | Type | Description |
 |------|------|-------------|
-| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.43.6#releasenotes-body-tab) |
-| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
-| Microsoft.PowerPlatform.Management | SDK | [Initial NuGet package release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3060.142) |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.43.6#releasenotes-body-tab). |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/). |
+| Microsoft.PowerPlatform.Management | SDK | [Initial NuGet package release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3060.142). |
 
 ## April 2025
 

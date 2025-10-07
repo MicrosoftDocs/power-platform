@@ -2,7 +2,7 @@
 title: Power Platform licensing FAQs
 description: Learn FAQs for licensing Power Apps, Power Automate, Copilot Studio, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
 ms.topic: faq
-ms.date: 06/27/2025
+ms.date: 09/11/2025
 author: chrisgarty
 contributors:
   - Antoine2F
@@ -13,14 +13,13 @@ ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: sericks
 ms.contributors:
-- jessechen
-- v-kgallagher
-- ellenwehrle
+  - jessechen
+  - v-kgallagher
+  - ellenwehrle
+ms.custom: sfi-image-nochange
 ---
 
 # Power Platform licensing FAQs
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 This article lists common questions and answers for licensing and plan options.
 
@@ -771,10 +770,6 @@ The period for extended use rights concludes on October 1, 2024 and users are re
 
 - To ensure you have appropriate licenses purchased, refer to the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for the Power Apps and Power Automate licenses with use rights for premium connectors, custom connectors, and on-premises data gateways.
 - To ensure users have licenses assigned, we highly recommend that you immediately enable [auto-claim policies for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  and [auto-claim policies for Power Automate licenses](/power-platform/admin/power-automate-licensing/power-automate-auto-claim) to benefit from automatic assignment of licenses to users.
-
-#### How do I identify users using apps with premium connectors under extended use rights?
-
-Use the [Power Platform actions page](licensing-and-capacity-recommendations.md#assign-licenses-to-active-users-using-premium-apps-with-standard-licenses) recommendation that lists users actively using Power Apps applications with Microsoft 365 under extended use rights. Learn more in [Use the actions page](power-platform-advisor.md#view-recommendations).
 
 #### How do I identify apps and flows that are using specific connectors that were under the extended use rights?
 

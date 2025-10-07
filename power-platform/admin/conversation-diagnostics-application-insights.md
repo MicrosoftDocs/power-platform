@@ -12,14 +12,13 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.contributors:
-- nenellim
-- avkatiyar
-- Zeffin
+  - nenellim
+  - avkatiyar
+  - Zeffin
+ms.custom: sfi-image-nochange
 ---
 
 # Conversation diagnostics in Azure Application Insights (preview)
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 

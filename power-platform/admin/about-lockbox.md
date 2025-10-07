@@ -5,6 +5,7 @@ ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/29/2025
+ms.update-cycle: 180-days
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -12,13 +13,12 @@ search.audienceType:
   - admin
 ms.collection: bap-ai-copilot
 contributors:
-- lavanyakr01 
-- iaanw 
-- kavehkazms 
+   - lavanyakr01 
+   - iaanw 
+   - kavehkazms 
+ms.custom: sfi-image-nochange
 ---
 # Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Most operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. With Power Platform Customer Lockbox, we provide an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft.
 

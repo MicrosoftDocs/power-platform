@@ -5,18 +5,19 @@ author: sericks007
 ms.topic: how-to
 ms.date: 06/02/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: sericks
 ms.reviewer: ellenwehrle
 ms.contriutors:
  - yingchin
  - mbajwa
  - olegov
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 
 # View and download Microsoft Dataverse analytics
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Viewing metrics for your organization is now an improved experience. You no longer need to install or update a solution. Instead, you can view Dataverse analytics right from the Microsoft Power Platform admin center to quickly view adoption and user metrics for your organization.
 

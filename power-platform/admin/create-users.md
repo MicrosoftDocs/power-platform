@@ -5,22 +5,22 @@ author: sericks007
 ms.reviewer: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.custom: 
-  - "admin-security"
-  - NewPPAC
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/29/2025
 search.audienceType: 
   - admin
 contributors:
-- shahzorkhan123 
-- srpoduri
-- val-bc 
+  - shahzorkhan123 
+  - srpoduri
+  - val-bc 
+ms.custom:
+  - "admin-security"
+  - NewPPAC
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 # Create users
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to create user accounts for every user who needs access to apps, flows, or chatbots. The user account registers the user with [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)].
 

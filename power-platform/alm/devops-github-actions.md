@@ -10,6 +10,9 @@ ms.reviewer: pehecke
 ms.topic: article
 search.audienceType: 
   - developer
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
 # GitHub Actions for Microsoft Power Platform

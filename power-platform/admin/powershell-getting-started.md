@@ -13,8 +13,6 @@ search.audienceType:
 ---
 
 # Get started with PowerShell for Power Platform Administrators
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 PowerShell for Power Platform Administrators cmdlets are designed for managing and administering Microsoft Power Platform environments, Power Apps, and Power Automate flows. Use PowerShell for Power Platform Administrators when you want to build automated tools that interact with these resources. 
 
 This article helps you get started with the PowerShell module and teaches the core concepts behind it.

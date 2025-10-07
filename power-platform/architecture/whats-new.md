@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 06/06/2025
+ms.date: 09/17/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -17,6 +17,37 @@ ms.custom:
 # What's new in the Power Platform and Copilot Studio Architecture Center
 
 Get the latest info about what's new and what's changed in the Power Platform  and Copilot Studio Architecture Center.
+
+## September 2025
+
+New in [Reference architectures](reference-architectures/index.md):
+
+- [Use complex relationships with Microsoft Dataverse](reference-architectures/complex-relationships-dataverse.md)
+
+## August 2025
+
+New in [Architecture key concepts](key-concepts/index.md):
+
+- [CRM data migration to Dataverse: Key insights and best practices](key-concepts/data-migration/index.md)
+
+## July 2025
+
+New key concepts:
+
+- [Manage Power Platform solution performance](key-concepts/performance/index.md)
+
+New reference architectures:
+
+- [Use SQL Server with canvas apps](reference-architectures/sqlserver-canvas-app.md)
+
+New solution ideas:
+
+- [Automate software bug reporting with the Auto Triage AI Agent](solution-ideas/auto-ai-triage.md)
+- [Intelligent cardiac triage and scheduling with Power Platform](solution-ideas/cardio-triage-agent.md)
+
+Other updates:
+
+- [Contributors guide](contribute.md) for external contributions
 
 ## June 2025
 

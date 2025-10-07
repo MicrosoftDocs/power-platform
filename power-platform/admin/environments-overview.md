@@ -3,19 +3,20 @@ title: Power Platform environments overview
 description: Learn about Power Platform environments and how to use them.
 author: sericks007
 ms.topic: how-to
-ms.date: 04/24/2025
+ms.date: 10/02/2025
 ms.reviewer: sericks
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: sericks
 contributors:
   - marcelbf
 ms.contributors:
-- iyanni
+  - shpradha
+  - iyanni
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 # Power Platform environments overview
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 A *Power Platform environment* is a space to store, manage, and share your organization's business data, apps, chatbots, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you're trying to build. For example:
 
@@ -67,10 +68,10 @@ There are multiple types of environments. The type indicates the purpose of the 
 |Type  |Description  |Security  |
 |---------|---------|---------|
 |Production  |  This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there's 1&nbsp;GB available database capacity. These environments are also created for each existing Dataverse database when it's upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.     | Full control.     |
-|Default   | These are a special type of production environment. Each tenant has a default environment that's created automatically. Its characteristics are discussed in the following section, [The default environment](#default-environment)   |  Limited control. All licensed users<sup>1</sup> have the environment maker role.     |
+|Default |  This is a predefined type of environment intended for experimentation, exploration, and lightweight, app trial development. The default environment doesn't provide any backup guarantees and shouldn't be used for production workloads.<br><br>Each tenant has a default environment that's created automatically. Its characteristics are discussed in the section, [The default environment](#default-environment).  |  Limited control. All licensed users<sup>1</sup> have the environment maker role.     |
 |Sandbox  | These are nonproduction environments, which offer features like copy and reset. Sandbox environments are used for development and testing, separate from production. Provisioning sandbox environments can be restricted to admins (because production environment creation can be blocked), but converting from a production to a sandbox environment can't be blocked.     | Full control. If used for testing, only user access is needed. Developers require environment maker access to create resources.    |
 |Trial    | Trial environments are intended to support short-term testing needs and are automatically cleaned up after a short period of time. They expire after 30 days and are limited to one per user. Provisioning trial environments can be restricted to admins.    |  Full control.    |
-| Developer | Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner. Provisioning developer environments can be restricted to admins. More information: [Control environment creation](control-environment-creation.md#developer-environments). The developer environment is available as long as you actively use the Power Apps Developer Plan. More information: [Power Apps Developer Plan](/powerapps/maker/developer-plan)     |  Limited control.  Security groups can't be assigned to developer environments. |
+| Developer | Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner. Provisioning developer environments can be restricted to admins. More information: [Control environment creation](control-environment-creation.md#developer-environments). The developer environment is available as long as you actively use the Power Apps Developer Plan. More information: [Power Apps Developer Plan](/powerapps/maker/developer-plan)     |  Limited control. Security groups can't be assigned to developer environments. |
 | Microsoft Dataverse for Teams |  Dataverse for Teams environments are automatically created for the selected team when you create an app in Teams using the app for the first time or install an app from the app catalog. More information: [About the Dataverse for Teams environment](about-teams-environment.md)</a>.     |  Limited control. Admins have limited settings available for Teams environments. No customizations of security role or assignments are available. Teams members are automatically mapped to their Teams membership type - owners, members, and guests - with a corresponding security role assigned by the system.    |
 
 <sup>1</sup>Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.

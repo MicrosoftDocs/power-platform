@@ -14,8 +14,6 @@ search.audienceType:
 ---
 # Change the environment type
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You may decide that your customization work developed and tested on a sandbox environment is now ready to go live. If you’ve placed your sandbox environment in administration mode, only users with System Administrator or System Customizer security roles are able to sign in to that environment. Once you change the environment type to production, all your users can access your organization. When you configure or edit an environment, you can change the environment from:
 
 - Production to sandbox

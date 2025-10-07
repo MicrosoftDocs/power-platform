@@ -5,7 +5,6 @@ author: srpoduri
 ms.subservice: admin
 ms.author: sericks 
 ms.reviewer: sericks
-ms.custom: "admin-security"
 ms.component: pa-admin
 contributors:
 - JesseParsons 
@@ -15,10 +14,11 @@ ms.topic: how-to
 ms.date: 08/20/2024
 search.audienceType: 
   - admin
+ms.custom:
+  - "admin-security"
+  - sfi-ga-nochange
 ---
 # Use service admin roles to manage your tenant
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 To help you administer environments and settings for the Microsoft Power Platform, you can assign users to manage the service at the tenant level without having to assign a role that provides access to other services within the tenant.
 

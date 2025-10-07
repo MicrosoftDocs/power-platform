@@ -8,17 +8,17 @@ author: sericks007
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
-ms.custom: "admin-security"
 search.audienceType: 
   - admin
 contributors:
   - alaug
   - tapanm-msft
   - sericks
+ms.custom:
+  - "admin-security"
+  - sfi-image-nochange
 ---
 # Invite users with Microsoft Entra B2B collaboration
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You can invite other users to access your environment. A user with the [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator) role can do this through the [Azure portal](https://portal.azure.com). Learn more at [Add guest users to the directory](/entra/external-id/add-users-administrator#add-guest-users-to-the-directory). Invited users can access your environment using their own login credentials once a license and a security role are assigned to them. The use of the apps created using Power Apps, customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Operations), and finance and operations apps are granted. You don’t need to create a new user account and temporary password for these invited users in your own [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant.  
   

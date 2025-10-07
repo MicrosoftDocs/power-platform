@@ -7,15 +7,15 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 06/09/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: matp
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 ---
 # Set up customer engagement apps to use SharePoint Online
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 When you use SharePoint Online with customer engagement apps—including Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation, you can:  
   

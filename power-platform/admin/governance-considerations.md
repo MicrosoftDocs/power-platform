@@ -17,8 +17,6 @@ search.audienceType:
 
 # Security and governance considerations in Power Platform
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Many customers wonder how can Power Platform be made available to their broader business and supported by IT? Governance is the answer. It aims to enable business groups to focus on solving business problems efficiently while complying with IT and business compliance standards. The following content is intended to structure themes often associated with governing software and bring awareness to capabilities available for each theme as it relates to governing Power Platform.
 
 |Theme  |Common questions related to each theme for which this content answers  |
@@ -33,7 +31,7 @@ Many customers wonder how can Power Platform be made available to their broader 
 It's best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources used by a Power Apps, Power Automate and Dataverse. [Environments Overview](environments-overview.md) is a good primer, which should be followed by [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro), [Types of Power Apps](/powerapps/maker/), [Microsoft Power Automate](/power-automate/getting-started), [Connectors](/powerapps/maker/canvas-apps/connections-list),  and [On-premises Gateways](wp-onpremises-gateway.md). 
 
 ## Security 
-This section outlines mechanisms that exist to control who can access Power Apps in an environment and access data: licenses, environments, environment roles, Microsoft Entra ID, Data Loss Prevention policies and admin connectors that can be used with Power Automate.
+This section outlines mechanisms that exist to control who can access Power Apps in an environment and access data: licenses, environments, environment roles, Microsoft Entra ID, data policies and admin connectors that can be used with Power Automate.
 
 ### Licensing 
 Access to Power Apps and Power Automate starts with having a license. The type of license a user has determines the assets and data a user can access. The following table outlines differences in resources available to a user based on their plan type, from a high level. Granular licensing details can be found in the [Licensing overview](pricing-billing-skus.md).
@@ -81,7 +79,7 @@ The following principals are supported for each role type.
 Today, Microsoft Power Platform admins can do the following: 
 
 1. Download the Power Apps & Power Automate license report
-1. Create DLP policy scoped only to 'All Environments' or scoped to include/exclude specific environments
+1. Create data policy scoped only to 'All Environments' or scoped to include/exclude specific environments
 1. Manage and assign licenses via Office admin center
 1. Access all environment, app, and flow management capabilities for all environments in the tenant available through:
     - Power Apps Admin PowerShell cmdlets
@@ -108,9 +106,9 @@ For customers with Microsoft Entra ID P1 or P2, conditional access policies can 
 6. Apply conditions (user risk, device platforms, locations).
 7. Select **Create**.
 
-### Prevent data leakage with data loss prevent policies
+### Prevent data leakage with data policies
 
-[Data loss prevention policies (DLP)](wp-data-loss-prevention.md) enforce rules for which connectors can be used together by classifying connectors as either Business Data only or No Business Data allowed. Simply, if you put a connector in the business data only group, it can only be used with other connectors from that group in the same application. Power Platform admins can define policies that apply to all environments.
+[Data policies](wp-data-loss-prevention.md) enforce rules for which connectors can be used together by classifying connectors as either Business Data only or No Business Data allowed. Simply, if you put a connector in the business data only group, it can only be used with other connectors from that group in the same application. Power Platform admins can define policies that apply to all environments.
 
 #### FAQ
 

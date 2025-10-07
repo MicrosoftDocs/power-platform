@@ -3,19 +3,24 @@ title: View analytics for Power Automate cloud flows
 description: Admins can view Microsoft Power Automate analytics in the Power Platform admin center, including reports on run data of flows, flows created, usage, and errors.
 author: Zeffin 
 ms.topic: how-to
-ms.date: 07/08/2025
+ms.date: 07/15/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
-ms.custom: NewPPAC
 search.audienceType: 
   - admin
 contributors:
  - isaacwinoto
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 ---
 # View analytics for cloud flows
 
 Environment admins can access analytics for Power Automate in the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created—such as automated, button, scheduled, approval, and business process flows. They also include details on shared flows and connectors associated with each flow type. However, these reports don't include insights for desktop flows.
+
+> [!IMPORTANT]
+> Solution-aware flows (flows created as part of a solution) are currently not included in analytics reports.
 
 To access these reports:
 

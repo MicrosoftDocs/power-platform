@@ -60,13 +60,17 @@
     },
     "fileMetadata": {
       "searchScope": {
-        "**.*": [ "Power Apps", "Power Automate", "Power Platform" ]
+        "**.*": [
+          "Power Apps",
+          "Power Automate",
+          "Power Platform"
+        ]
       },
       "ms.service": {
         "**.*": "power-platform"
       },
       "ms.date": {
-        "developer/cli/reference/**.md": "3/26/2025"
+        "developer/cli/reference/**.md": "10/06/2025"
       },
       "ms.subservice": {
         "power-fx/**/*.md": "power-fx",
@@ -78,15 +82,42 @@
         "test-engine/**/*.md": "developer"
       },
       "search.app": {
-        "power-fx/**/*.md": [ "powerapps-docs" ],
-        "guidance/**/*.md": [ "powerapps-docs", "administration-docs", "powerautomate-docs", "dataverse-docs" ],
-        "alm/**/*.md": [ "powerapps-docs", "administration-docs", "powerautomate-docs", "dataverse-docs" ],
-        "admin/**/*.md": [ "administration-docs" ],
-        "developer/**/*.md": [ "powerapps-docs", "powerautomate-docs", "dataverse-docs", "powerpages-docs", "powervirtualagents-docs" ]
+        "power-fx/**/*.md": [
+          "powerapps-docs"
+        ],
+        "guidance/**/*.md": [
+          "powerapps-docs",
+          "administration-docs",
+          "powerautomate-docs",
+          "dataverse-docs"
+        ],
+        "alm/**/*.md": [
+          "powerapps-docs",
+          "administration-docs",
+          "powerautomate-docs",
+          "dataverse-docs"
+        ],
+        "admin/**/*.md": [
+          "administration-docs"
+        ],
+        "developer/**/*.md": [
+          "powerapps-docs",
+          "powerautomate-docs",
+          "dataverse-docs",
+          "powerpages-docs",
+          "powervirtualagents-docs"
+        ]
       }
     },
     "template": [],
     "dest": "power-platform",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "rules": {
+      "filename-incomplete": {
+        "exclude": [
+          "power-fx/reference/includes/**/*.md"
+        ]
+      }
+    }
   }
 }

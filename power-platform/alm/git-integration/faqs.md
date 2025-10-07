@@ -4,7 +4,7 @@ description: "This article includes answers to commonly asked questions about Gi
 author: caburk
 ms.subservice: alm
 ms.author: caburk
-ms.date: 04/21/2025
+ms.date: 08/27/2025
 ms.custom: 
 ms.topic: faq
 ms.reviewer: tapanm
@@ -43,6 +43,9 @@ Azure DevOps Git repositories are currently the only Git provider supported. Thi
 All users within the environment must meet license requirements for [Managed Environments](../../admin/managed-environment-overview.md). Managed Environments is required regardless of environment type.
 
 Developers using source code integration also need an Azure DevOps license to gain access to the repository. For more information, go to [Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+
+## Can developers collaborate on a solution while working in different development environments?
+Yes. Import the solution to each additional environment and then connect to the same Git location. For more information, go to [Connect multiple development environments to Git](connecting-to-git.md)
 
 ## Why am I getting the message "Failed to retrieve the default branch for the selected repository. Choose a default branch to allow creating new branches?"
 
@@ -92,13 +95,17 @@ Yes. Go to the [Web API reference](/power-apps/developer/data-platform/webapi/re
 
 Support for direct modifications to solution customizations isn't changing with this feature. Our recommendation is to continue the practice of making your changes directly in the environment, then committing those changes to source control. Changes to localized labels are permitted directly in source. Code-first objects that are supported using our developer tools are also supported, and include plug-ins, PCF controls, and web resources.
 
+## Can Git integration be disabled?
+
+There is no tenant or environment level setting to prevent connecting to Git. However, access to Git can be managed within the Git repository. You can also disconnect environments within the Git connection panel.
+
 ## Can I commit large solutions?
 
 Yes. However, there's a 17 MB limit for single file commits withing Azure DevOps. The system chunks large solutions, containing multiple files into multiple commits and squash-merges them.
 
 ## Are all object types supported?
 
-Currently, a small number of low-usage legacy object types are unsupported. You receive an error when unsupported object types are detected.
+Currently, some low-usage legacy object types are unsupported. You receive an error in the solution objects view when unsupported object types are detected.
 
 ## How can I upgrade existing solutions?
 
@@ -110,7 +117,7 @@ Yes, this is common. Dataverse API's can also be used to commit changes automati
 
 ## Is Git integration available in sovereign clouds?
 
-Not currently.
+Yes.
 
 ## Can I automatically deploy changes pushed to Git?
 
@@ -119,6 +126,14 @@ Support is currently limited, but you can use pipelines in Power Platform and pa
 ## Can I connect environments located in a different geo than the ADO repo?
 
 Consent is needed when the environment is in a different geography than the ADO repo. A message and consent are shown when connecting.
+
+## Does Git integration support cross tenant (x-tenant) workloads? For example, if the Power Platform / Dataverse environment is in a different tenant than Azure DevOps. 
+
+Not currently. 
+
+## Does Git integration support security scanning?
+You can integrate your scanning tool of choice into your Azure DevOps tooling. 
+
 
 ### Related content
 
