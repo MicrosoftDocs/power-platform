@@ -1018,6 +1018,8 @@
                           href: associate-email-address.md
                         - name: How is an email record owner determined
                           href: email-record-owner.md
+                        - name: Configure email address resolution with DoNotResolve flag
+                          href: configure-email-address-resolution.md
                         - name: Create queue items from incoming email
                           href: create-queue-items-from-synchronized-email-messages.md
                     - name: Configure appointment, contact, and task synchronization
