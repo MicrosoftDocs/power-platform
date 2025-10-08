@@ -200,7 +200,8 @@ Microsoft reserves the rights to disclose the exact details of where the custome
 - In Dynamics 365, analytics and automation in Sales will observe latency impact. Relationship analytics KPIs won’t be computed and new models for scoring will not be created during an outage.  
 -  In Customer Insights, Real-time updates will be impacted. Customer insights(CI) does not support SSDR today. CI will be unavailable until key aspects of CI are manually failed-over
 -  In Customer service, Basic scenarios that are 100% dependent on DV such as Case Creation, KB etc will work. Case knowledge base access in customer service will be unavailable.
-- In field service, Resource Scheduling Optimization (RSO), may be impacted with significantly higher latencies during a regional outage. For AI workloads, training and predictive analytics may fail in the secondary region.
+- Field service is SSDR ready.
+- Data lake failover has known issues. SSDR is not supported yet.
 - Connectors may have recovery issues, when dependent on external systems like SharePoint or SQL or 3rd party.
 - Dynamics 365 Sales: Analytics, reporting, and functions dependent on automation (such as sales forecasting) will be unavailable.
 - Finance and operations products aren't currently supported for self-serve disaster recovery during regional outages.
