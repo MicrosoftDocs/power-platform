@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: rashmansur
-ms.date: 09/12/2025
+ms.date: 10/08/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -142,10 +142,10 @@ To check data replication latency at any time, select **Disaster Recovery**, and
 
 We recommend that you perform disaster recovery drills or an emergency response before a real disaster strikes, so you can document all steps required for any integration points that are external to Power Platform. Your company is then more prepared for recovery if there's a real disaster.
 
-## Frequently Asked Questions
+## Frequently asked questions (FAQs)
 
-### Why do I need SSDR if I already have a secondary copy maintained in a remote secondary region ? 
-Please note, there are no secondary copies being maintained in remote secondary region if SSDR has not been enabled.  
+### Why do I need self-service disaster recovery if I already have a secondary copy maintained in a remote secondary region? 
+Be aware that there are no secondary copies being maintained in remote secondary region if self-service disaster recovery hasn't been turned on.  
 
 ### What are the costs associated with using self-service disaster recovery?
 
@@ -155,7 +155,7 @@ Please note, there are no secondary copies being maintained in remote secondary 
 ### How does billing work for self-service disaster recovery?
 
 - If your environment is configured to draw capacity from your tenant's Dataverse capacity entitlement, then entitled capacity is consumed first and a pay-as-you-go billing plan is still required so you can avoid capacity overages.
-- PayGo generates multiple warnings at various thresholds to ensure customer is well informed and take appropriate action to avoind PayGo charges.  
+- PayGo generates multiple warnings at various thresholds to ensure that the customer is well-informed and takes appropriate action to avoind PayGo charges.  
 - Admins can allocate capacity to the environment, after which the pay-as-you-go plan will be billed.
 - Customers can't turn off the pay-as-you-go plan in the billing experience if self-service disaster recovery is turned on.
 
@@ -181,28 +181,28 @@ Disabling self-service disaster recovery deletes all replicated environment data
 
 No, self-service disaster recovery can't be disabled while the environment is in a paired region. You must switch to the primary region first.
 
-### Are Power Apps, and Power Pages supported with SSDR ?
+### Are Power Apps and Power Pages supported with self-service disaster recovery?
 
-Yes, self-service disaster recovery is supported for power Apps and Power Pages
+Yes, self-service disaster recovery is supported for Power Apps and Power Pages.
 
-### Is Power Automate supported with SSDR?
+### Is Power Automate supported with self-service disaster recovery?
+Power Automate desktop flows are fully supported for failover and failback with self-service disaster recovery.
 
-Power Automate desktop flows is fully supported for failover and failback with SSDR.
-Power Automate cloud Flows is now available in preview. Please do not use it with production workloads
+Power Automate cloud flows are now available in preview. Please do not use them with production workloads.
 
-### How can i find out where my data is being replicated to ? Can I change my secondary destination region ?
+### How can I find out where my data is being replicated to? Can I change my secondary destination region?
 
-Microsoft reserves the rights to disclose the exact details of where the customer's data is residing for security and if it may need to be moved or replicated for various high availability and resiliency scenarios, Customer can be assured that customer's data at rest will respect Geo boundaries and abide by legislated residency laws. Even if SSDR is not enabled, Microsoft reserves the right to replicate, move, relocate the data within a region for high availability and operational needs. The location of customer data within a geo (e.g., APAC) is not disclosed and may change based on Azure capacity constraints.
+Microsoft reserves the rights to disclose the exact details of where the customer's data is residing for security and if it may need to be moved or replicated for various, high availability and resiliency scenarios. Customers can be assured that their data at rest respects geographical boundaries and abides by legislated residency laws. Even if self-service disaster recovery isn't turned on, Microsoft reserves the right to replicate, move, and relocate the data within a region for high availability and operational needs. The location of customer data within a geography (for example, _APAC_) isn't disclosed and may change based on Azure capacity constraints.
 
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
 
-- Copilot Studio conversation runtime requests will fail until Microsoft restores the service in the primary region. Custom agents will successfully failover and failback since they are completely saved on dataverse.
-- In Dynamics 365, analytics and automation in Sales will observe latency impact. Relationship analytics KPIs won’t be computed and new models for scoring will not be created during an outage.  
--  In Customer Insights, Real-time updates will be impacted. Customer insights(CI) does not support SSDR today. CI will be unavailable until key aspects of CI are manually failed-over
--  In Customer service, Basic scenarios that are 100% dependent on DV such as Case Creation, KB etc will work. Case knowledge base access in customer service will be unavailable.
-- Field service is SSDR ready.
-- Data lake failover has known issues. SSDR is not supported yet.
-- Connectors may have recovery issues, when dependent on external systems like SharePoint or SQL or 3rd party.
-- Dynamics 365 Sales: Analytics, reporting, and functions dependent on automation (such as sales forecasting) will be unavailable.
+- Copilot Studio conversation runtime requests fail until Microsoft restores the service in the primary region. Custom agents successfully failover and failback since they're completely saved on Dataverse.
+- In Dynamics 365, analytics and automation in sales observe latency impact. Relationship analytics KPIs aren't computed and new models for scoring aren't created during an outage.  
+-  In Dynamics 365 Customer Insights, real-time updates are impacted. Customer Insights doesn't support self-service disaster recovery today. Customer Inisights is unavailable until key aspects of Customer Insights are manually failed-over.
+-  In Dynamics 365 Customer service, basic scenarios that are 100% dependent on Dataverse, such as case creation, KB etc will work. Case knowledge base access in customer service will be unavailable.
+- Field Service is self-service disaster recovery ready.
+- Data lake failover has known issues. Self-service disaster recovery isn't supported yet.
+- Connectors may have recovery issues when dependent on external systems, like SharePoint, SQL Server or third-party applications.
+- For Dynamics 365 Sales, analytics, reporting, and functions dependent on automation, such as sales forecasting, are unavailable.
 - Finance and operations products aren't currently supported for self-serve disaster recovery during regional outages.
 - AI Builder may see latency impact. 
