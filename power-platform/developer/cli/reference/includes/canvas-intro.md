@@ -3,5 +3,5 @@
 > [!IMPORTANT]
 >
 > - The `pack` and `unpack` commands are deprecated.
-> - To source control your canvas app, use the [Power Platform Git Integration](../../../../alm/git-integration/canvas-apps-git-integration.md)
+> - To source control your canvas app, use the [Power Platform Git Integration](../../../../alm/git-integration/canvas-apps-git-integration.md).
 > - The `create` command is generally available.
