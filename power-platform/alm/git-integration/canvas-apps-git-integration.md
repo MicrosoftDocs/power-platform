@@ -11,9 +11,7 @@ ms.collection:
 ms.contributors:
 ---
 
-# Source control canvas apps (preview)
-
-[!INCLUDE [cc-preview-features-expect-changes](../../includes/cc-preview-features-expect-changes.md)]
+# Source control canvas apps
 
 Makers and developers use Git integration in Power Platform to manage canvas apps' source code effectively using version control. This feature helps you review changes made by makers in Power Apps Studio without encountering noisy diffs. Additionally, it allows for minimal edits to be made directly in the repository, ensuring a streamlined and efficient workflow.
 
@@ -54,8 +52,7 @@ You can do minor edits directly in the repository. Any changes are restored with
 
 You can't edit the `.pa.yaml` files directly in your repository if your app contains:
 
-- **Canvas components**.
-- **Code components** (also known as PCF).
+- **Code components** (also known as PCF). 
 
 Editing files with these components prevent the app from running. If you change these files by mistake, you can load the previous version of your canvas app in the Maker portal.
 
@@ -77,4 +74,3 @@ This section contains common issues and tips to help you be more successful usin
 
 - [Overview of Dataverse Git Integration](./overview.md)
 - [View Source Code for Canvas Apps](/power-apps/maker/canvas-apps/power-apps-yaml)
-
