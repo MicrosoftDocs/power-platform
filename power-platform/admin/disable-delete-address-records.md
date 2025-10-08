@@ -8,6 +8,12 @@ ms.date: 10/1/2025
 ms.subservice: admin
 ms.author: kamanick
 ms.reviewer: sericks
+ms.contributors:
+  - sericks
+  - syalandur
+contributors:
+  - sericks007
+  - syalandur24
 search.audienceType: 
   - admin
 ---
@@ -22,17 +28,18 @@ The **Disable empty address record creation** setting helps you prevent the crea
 
 For example, suppose there's an incoming payload for the **Account** table with empty address data, the **Disable empty address record creation** setting, when turned **On**, prevents the creation of an empty record in Dataverse. However, if the same payload contains address data, then an address record is created in Dataverse.
 
-> [!Note]
+> [!NOTE]
 > Turning on the **Disable empty address record creation** setting doesn't remove existing empty address records.
 
 Complete the following steps to prevent empty address records from being created.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane.
-1. Select the checkmark next to an environment, and then select **Settings** in the command bar.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**, and then select an environment.
+1. Select **Settings** in the command bar.
 1. Select **Product** > **Features**.
 1. Find the **Disable Empty Address Record Creation** setting and turn it **On**.
-1. Select **Save** on the bottom of the page to save the changes.
+1. Select **Save** on the page to save the changes.
 
 ## Allow users to delete address data
 
@@ -47,8 +54,9 @@ Turning on the **Enable deletion of address records** setting allows address rec
 Complete the following steps to allow users to delete address data.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane.
-1. Select the checkmark next to an environment, and then select **Settings** in the command bar.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**, and then select an environment.
+1. Select **Settings** in the command bar.
 1. Select **Product** > **Features**.
 1. Find the **Enable deletion of address records** setting and turn it **On**.
-1. Select **Save** on the bottom of the page to save the changes.
+1. Select **Save** on the page to save the changes.
