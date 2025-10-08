@@ -11,6 +11,7 @@ ms.custom: NewPPAC
 search.audienceType: 
  - admin
 contributors:
+ - shpradha
  - isaacwinoto
  - himakurada
  - jasunil
@@ -143,6 +144,9 @@ We recommend that you perform disaster recovery drills or an emergency response 
 
 ## Frequently Asked Questions
 
+### Why do I need SSDR if I already have a secondary copy maintained in a remote secondary region ? 
+Please note, there are no secondary copies being maintained in remote secondary region if SSDR has not been enabled.  
+
 ### What are the costs associated with using self-service disaster recovery?
 
 - Capacity charges are based on the consumption of the environment's paired region for Database, File, and Log storage types.
@@ -151,6 +155,7 @@ We recommend that you perform disaster recovery drills or an emergency response 
 ### How does billing work for self-service disaster recovery?
 
 - If your environment is configured to draw capacity from your tenant's Dataverse capacity entitlement, then entitled capacity is consumed first and a pay-as-you-go billing plan is still required so you can avoid capacity overages.
+- PayGo generates multiple warnings at various thresholds to ensure customer is well informed and take appropriate action to avoind PayGo charges.  
 - Admins can allocate capacity to the environment, after which the pay-as-you-go plan will be billed.
 - Customers can't turn off the pay-as-you-go plan in the billing experience if self-service disaster recovery is turned on.
 
@@ -176,14 +181,27 @@ Disabling self-service disaster recovery deletes all replicated environment data
 
 No, self-service disaster recovery can't be disabled while the environment is in a paired region. You must switch to the primary region first.
 
+### Are Power Apps, and Power Pages supported with SSDR ?
+
+Yes, self-service disaster recovery is supported for power Apps and Power Pages
+
+### Is Power Automate supported with SSDR?
+
+Power Automate desktop flows is fully supported for failover and failback with SSDR.
+Power Automate cloud Flows is now available in preview. Please do not use it with production workloads
+
+### How can i find out where my data is being replicated to ? Can I change my secondary destination region ?
+
+Microsoft reserves the rights to disclose the exact details of where the customer's data is residing for security and if it may need to be moved or replicated for various high availability and resiliency scenarios, Customer can be assured that customer's data at rest will respect Geo boundaries and abide by legislated residency laws. Even if SSDR is not enabled, Microsoft reserves the right to replicate, move, relocate the data within a region for high availability and operational needs. The location of customer data within a geo (e.g., APAC) is not disclosed and may change based on Azure capacity constraints.
+
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
 
-In the rare event of a region-wide outage, the following scenarios may experience temporary degradation, depending on the severity of the outage.
-
-- Power Automate flows impacted by the regional outage may not recover through self-service disaster recovery and remain unavailable until the primary region is restored.
-- Copilot Studio conversation requests may fail until Microsoft restores the service in the primary region.
-- In Dynamics 365, analytics and automation in Sales, real-time updates in Customer Insights, and case or knowledge base access in customer service may be unavailable.
-- Under field service, Resource Scheduling Optimization (RSO), may be impacted during a regional outage. For AI workloads, training and predictive analytics may fail in the secondary region.
-- Connectors may have recovery issues, when dependent on external systems like SharePoint or SQL.
-- Dynamics 365 Sales: Analytics, reporting, and functions dependent on automation (such as sales forecasting) are unavailable.
+- Copilot Studio conversation runtime requests will fail until Microsoft restores the service in the primary region. Custom agents will successfully failover and failback since they are completely saved on dataverse.
+- In Dynamics 365, analytics and automation in Sales will observe latency impact. Relationship analytics KPIs won’t be computed and new models for scoring will not be created during an outage.  
+-  In Customer Insights, Real-time updates will be impacted. Customer insights(CI) does not support SSDR today. CI will be unavailable until key aspects of CI are manually failed-over
+-  In Customer service, Basic scenarios that are 100% dependent on DV such as Case Creation, KB etc will work. Case knowledge base access in customer service will be unavailable.
+- In field service, Resource Scheduling Optimization (RSO), may be impacted with significantly higher latencies during a regional outage. For AI workloads, training and predictive analytics may fail in the secondary region.
+- Connectors may have recovery issues, when dependent on external systems like SharePoint or SQL or 3rd party.
+- Dynamics 365 Sales: Analytics, reporting, and functions dependent on automation (such as sales forecasting) will be unavailable.
 - Finance and operations products aren't currently supported for self-serve disaster recovery during regional outages.
+- AI Builder may see latency impact. 
