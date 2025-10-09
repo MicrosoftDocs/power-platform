@@ -151,7 +151,7 @@ In the example:
 
 The effective headers would be:
 
-- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob: data:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.foo.com https://www.bar.com;`
+- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval' blob: data:; worker-src 'self' blob: data:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.foo.com https://www.bar.com;`
 - Canvas apps: CSP header wouldn't be sent.
 
 ### Example 2 - reporting turned on
@@ -169,7 +169,7 @@ In the example:
 
 The effective CSP values would be:
 
-- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob: data:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com; report-uri https://www.mysite.com/myreportingendpoint;`
+- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval' blob: data:; worker-src 'self' blob: data:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com; report-uri https://www.mysite.com/myreportingendpoint;`
 - Canvas apps: `Content-Security-Policy-Report-Only: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.baz.com; report-uri https://www.mysite.com/myreportingendpoint;`
 
 ## Modify organization settings directly
