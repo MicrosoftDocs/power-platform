@@ -4,7 +4,7 @@ description: Reduce storage space usage by deleting notes, attachments, import h
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/29/2025
+ms.date: 10/09/2025
 ms.subservice: admin
 ms.author: ceian 
 ms.reviewer: sericks
@@ -48,7 +48,7 @@ An administrator security role is required. All methods (except three and five) 
 
 ### Understand how storage works
 
-- Storage consumed doesn't directly correspond to the size reported in Microsoft Dataverse for Apps. Consumption includes extra storage for metadata and encryption. For example, removing 10 MB of storage from a file doesn't mean the file size is reduced by 10 MB.
+- Storage consumed doesn't directly correspond to the size reported in Microsoft Dataverse for apps. Consumption includes extra storage for metadata and encryption. For example, removing 10 MB of storage from a file doesn't mean the file size is reduced by 10 MB.
 - Some platform operations require you to wait 24-36 hours to confirm data size changes. These operations include upgrades to new versions and introduction of new workflows. Such operations require system adjustments that might result in a momentary size increase report.
 
 ## Freeing storage for Dataverse
@@ -89,7 +89,7 @@ Use the following methods to free up storage for each of the capacity types.
 
 ##### [New admin center](#tab/new)
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
@@ -117,7 +117,7 @@ Use the following methods to free up storage for each of the capacity types.
 
 ##### [Classic admin center](#tab/classic) 
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 1. Select **Environments**, select an environment from the list, and then select **Open**.
 
@@ -148,7 +148,7 @@ Use the following methods to free up storage for each of the capacity types.
 
 ##### [New admin center](#tab/new)
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
@@ -196,7 +196,7 @@ Use the following methods to free up storage for each of the capacity types.
 
 ##### [Classic admin center](#tab/classic) 
   
-1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 1. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
@@ -247,7 +247,7 @@ Use the following methods to free up storage for each of the capacity types.
 
 ##### [New admin center](#tab/new)
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
@@ -277,7 +277,7 @@ Use the following methods to free up storage for each of the capacity types.
 
 ##### [Classic admin center](#tab/classic)
   
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 1. Select **Environments**, select an environment from the list, and then select **Open**.
 
@@ -310,7 +310,7 @@ Use the following methods to free up storage for each of the capacity types.
 
 ##### [New admin center](#tab/new)
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
@@ -354,7 +354,7 @@ Use the following methods to free up storage for each of the capacity types.
 
 ##### [Classic admin center](#tab/classic)
   
-1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 1. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
@@ -396,11 +396,11 @@ Use the following methods to free up storage for each of the capacity types.
 
 ## Reduce log storage
 
-Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete method. You can identify an environment with completed migration with the Auditing card near the environment details.
+Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete method. You can identify an environment with completed migration with the Auditing card near the environment details in classic Power Platform admin center.
 
 :::image type="content" source="media/audit-log-new-storage-sign.png" alt-text="Screenshot that shows where an Auditing tile appears for new storage." lightbox="media/audit-log-new-storage-sign.png":::
 
-In the new Power Platform Admin Center, the Auditing card for an environment looks as shown in the following image:
+In the new Power Platform admin center, an environment's Details and Auditing cards look like this:
 
 :::image type="content" source="media/audit-log-new-storage-sign-new.png" alt-text="Screenshot that shows where an Auditing tile appears for new storage in the new admin center." lightbox="media/audit-log-new-storage-sign-new.png":::
 
@@ -413,7 +413,7 @@ In the new Power Platform Admin Center, the Auditing card for an environment loo
 
 ##### [New admin center](#tab/new)
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
@@ -466,7 +466,7 @@ When you enable auditing, customer engagement apps create audit logs to store th
 
 ##### [New admin center](#tab/new)
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
@@ -518,7 +518,7 @@ To monitor the status of audit delete jobs, see the next section.
 
 ###### [New admin center](#tab/new)
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
@@ -538,7 +538,7 @@ To monitor the status of audit delete jobs, see the next section.
 
 ###### [Classic admin center](#tab/classic)
 
-1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 1. Select **Settings** > **Data management** > **Bulk deletion**.
 
@@ -563,7 +563,7 @@ To monitor the status of audit delete jobs, see the next section.
 
 ##### [New admin center](#tab/new)
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
@@ -609,7 +609,7 @@ To monitor the status of audit delete jobs, see the next section.
 
 ##### [Classic admin center](#tab/classic)
   
-1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 1. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
@@ -660,7 +660,7 @@ To monitor the status of audit delete jobs, see the next section.
 
 ##### [New admin center](#tab/new)
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
@@ -692,7 +692,7 @@ To monitor the status of audit delete jobs, see the next section.
 
 ##### [Classic admin center](#tab/classic) 
   
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 1. Select **Environments**, select an environment from the list, and then select **Open**.
 
@@ -728,7 +728,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 ##### [New admin center](#tab/new)
 
-1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
@@ -746,7 +746,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 ##### [Classic admin center](#tab/classic)
   
-1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 1. Select **Settings** > **Data management** > **Duplicate Detection Jobs**.  
 
@@ -769,7 +769,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 ##### [New admin center](#tab/new)
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
@@ -815,7 +815,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 ##### [Classic admin center](#tab/classic)
   
-1.	In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1.	In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 1.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
@@ -866,7 +866,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 ##### [New admin center](#tab/new)
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
@@ -915,7 +915,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 ##### [Classic admin center](#tab/classic)
   
-1. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 
 1. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
