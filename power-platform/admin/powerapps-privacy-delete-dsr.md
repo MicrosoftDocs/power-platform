@@ -39,7 +39,7 @@ Requires manual review and deletion |    Automatically deleted when the user is 
 | Custom connector\** | | 
 | Custom-connector permissions |  | 
 
-\** Each of these resources contains "Created By" and "Modified By" records that include personal data. For security reasons, these records are retained until the resource is deleted.
+\** Each of these resources contains *Created By* and *Modified By* records that include personal data. For security reasons, these records are retained until the resource is deleted.
 
 \*** For environments that include a Microsoft Dataverse database, environment permissions (that is, which users are assigned to the Environment Maker and Admin roles) are stored as records in that database. For guidance on how to respond to DSRs for users of Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](dataverse-privacy-dsr-guide.md).
 
