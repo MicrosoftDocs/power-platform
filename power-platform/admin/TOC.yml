@@ -202,8 +202,12 @@
                       href: environment-groups.md
                     - name: Rules for environment groups
                       href: environment-groups-rules.md
-                    - name: Preview and experimental AI models rule
-                      href: preview-experimental-ai-models-rule.md
+                    - name: Rules
+                      items:
+                        - name: Preview and experimental AI models rule
+                          href: preview-experimental-ai-models-rule.md
+                        - name: External models rule
+                          href: allow-llm-generative-responses.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
                 - name: Usage insights
@@ -534,6 +538,8 @@
                       href: virtual-network-support-whitepaper.md
                     - name: Set up Virtual Network support
                       href: vnet-support-setup-configure.md
+                    - name: Troubleshoot Virtual Network issues
+                      href: /troubleshoot/power-platform/administration/virtual-network?toc=/power-platform/admin/toc.json&bc=/power-platform/breadcrumb/toc.json
             - name: Identity and access
               items:
                 - name: Identity and access management
