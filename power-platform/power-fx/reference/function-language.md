@@ -62,7 +62,7 @@ It's assumed that the host operating system and/or browser are using the default
 | **Language()** | Lisbon, Portugal          | "pt-PT"                                                               |
 | **Language()** | Rio de Janeiro, Brazil    | "pt-BR"                                                               |
 | **Language()** | Atlanta, USA              | "en-US"                                                               |
-| **Language()** | Manchester, United Kingdom (Great Britain)| "en-GB"                                                               |
+| **Language()** | Manchester, United Kingdom  | "en-GB"                                                               |
 | **Language()** | Paris, France             | "fr-FR"                                                               |
 | **Language()** | Roseau, Dominica          | "en"                                                                  |
 | **Language()** | Belgrade, Serbia          | "sr-cyrl-RS" or "sr-latn-RS," depending on the user's system settings |
