@@ -177,12 +177,6 @@ Some limitations of named formulas:
 
 ### User defined functions
 
-> [!IMPORTANT]
-> - User defined functions are a preview feature.
-> - Preview features aren't meant for production use and may not be complete. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
-> - The behavior that this article describes is available only when the **User-defined functions** preview feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
-> - Your feedback is valuable to us. Let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
-
 Power Fx includes a long list of built-in functions, such as **If**, **Text**, and **Set**. User defined functions enable you to write your own functions that take parameters and return a value, just as the built-in functions do. You can think of user defined functions as an extension to named formulas that adds parameters and supports behavior formulas.
 
 For example, you might define a named formula that returns fiction books from a library:

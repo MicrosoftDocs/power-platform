@@ -21,8 +21,6 @@ ms.contributors:
 
 # View Power Platform administrative logs using auditing solutions in Microsoft Purview
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to audit such actions that help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
 
 In this article, you learn about activities that are performed on Power Platform environments by those having administrative access across user experiences and programmable interfaces using Microsoft Purview compliance portal. The activities fall within the following categories:
@@ -225,9 +223,9 @@ The following data policy events are delivered to Microsoft Purview.
 
 | **Category** | **Description** |
 |-------------------------------------------------------------|-----------------------------------------|
-| Create DLP Policy | Emitted when a new data policy is created.
-| Update DLP Policy | Emitted when a data policy is updated.
-| Delete DLP Policy | Emitted when a data policy is deleted.
+| Create Data Policy | Emitted when a new data policy is created.
+| Update Data Policy | Emitted when a data policy is updated.
+| Delete Data Policy | Emitted when a data policy is deleted.
 | Create Custom Connector Patterns | Emitted when a new custom connector URL pattern is created.
 | Update Custom Connector Patterns | Emitted when a custom connector URL pattern is updated.
 | Delete Custom Connector Patterns | Emitted when a custom connector URL pattern is deleted.
@@ -334,7 +332,7 @@ For more information about the Microsoft Purview audit log, data retention polic
 - [Power Apps activity logging](logging-powerapps.md)
 - [Power Automate activity logging](logging-power-automate.md)
 - [Power Platform connector activity logging (preview)](connector-events-power-platform.md)
-- [Data loss prevention activity logging](dlp-activity-logging.md)
+- [Data policy activity logging](dlp-activity-logging.md)
 - [Manage Dataverse auditing](manage-dataverse-auditing.md)
 - [Dataverse and model-driven apps](enable-use-comprehensive-auditing.md)
 

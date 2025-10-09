@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Add resources to a site
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 <!-- legacy procedure -->
 
 After you create a site, you can add resources such as users, equipment, or facilities to it.  

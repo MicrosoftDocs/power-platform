@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/14/2025
+ms.date: 09/02/2025
 ---
 
 # Gain insights into Power Platform adoption
@@ -62,7 +62,7 @@ Learn more about [managing Power Platform at scale](govern-at-scale.md).
 Monitor and maintain the health of solutions to guarantee uninterrupted service and user satisfaction.
 
 - Check the [Service health dashboard](/power-platform/admin/check-online-service-health) to view the status of the Power Platform service, details about existing service incidents, and up to 30 days’ worth of history.
-- Monitor experiences using the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center. This feature gives admins and makers built-in metrics and recommendations to help them understand and improve production health. The Monitor page also highlights resources with degraded operational health and identifies opportunities for improvement.  
+- Monitor experiences using the [Monitor area](/power-platform/admin/monitoring/monitoring-overview) of the Power Platform admin center. This feature gives admins and makers built-in metrics and recommendations to help them understand and improve production health. The Monitor area also highlights resources with degraded operational health and identifies opportunities for improvement.
 - View event logs and error logs. All metrics that are part of the monitoring experience are aggregated from runtime event logs and error logs associated with a metric. Access them on the [Logs page](/power-platform/admin/monitoring/logs) in the Power Platform admin center. Logs are available to aid operational health analysis and can be downloaded for offline review.
 - Implement Azure Application Insights integration. This feature provides detailed logs and custom metrics for deep analysis, helping you gain a comprehensive understanding of application performance. Learn more in [Overview of integration with Application Insights](/power-platform/admin/overview-integration-application-insights).
 - Establish a robust incident management process to handle outages and disruptions efficiently. Learn more in [Recommendations for designing a reliable monitoring and alerting strategy](/power-platform/well-architected/reliability/monitoring-alerting-strategy).
@@ -72,7 +72,7 @@ Monitor and maintain the health of solutions to guarantee uninterrupted service 
 Ensuring optimal performance of apps and workflows is critical for user experience and productivity.
 
 - Follow [recommendations for Performance Efficiency](/power-platform/well-architected/performance-efficiency/checklist) in Power Platform Well-Architected to design workloads so they grow and meet your workload usage demands.
-- Monitor experiences using the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center. 
+- Monitor experiences using the [Monitor area](/power-platform/admin/monitoring/monitoring-overview) of the Power Platform admin center.
 - Implement [Application Insights integration](/power-platform/admin/overview-integration-application-insights).
 
 ## Capacity and licenses
@@ -97,7 +97,7 @@ At the tenant level, monitoring focuses on the overall health and usage of the p
 
 At the solution level, monitoring focuses on the performance and reliability of individual applications and components. Key areas to monitor include:
 
-- **Solution performance**: Track key performance indicators (KPIs) such as response times, load times, and error rates. This analysis helps identify performance bottlenecks and optimizes the user experience. Use the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center to understand production health and to detect degradations. Follow [recommendations for Performance Efficiency](/power-platform/well-architected/performance-efficiency/checklist) in Power Platform Well-Architected to design workloads so they grow and meet your workload usage demands.
+- **Solution performance**: Track key performance indicators (KPIs) such as response times, load times, and error rates. This analysis helps identify performance bottlenecks and optimizes the user experience. Use the [Monitor area](/power-platform/admin/monitoring/monitoring-overview) of the Power Platform admin center to understand production health and to detect degradations. Follow [recommendations for Performance Efficiency](/power-platform/well-architected/performance-efficiency/checklist) in Power Platform Well-Architected to design workloads so they grow and meet your workload usage demands.
 - **Error logs and diagnostics**: Monitor error logs and diagnostic data to quickly identify and resolve issues in applications. Include tracking exceptions, failed operations, and other error conditions. Use the [Logs page](/power-platform/admin/monitoring/logs) in the Power Platform admin center to aid operational health analysis.
 - **Usage patterns**: Analyze how users are interacting with specific applications, including feature usage and session durations, and collect user feedback. This data helps prioritize enhancements and identify areas for improvement. Use the [integration with Application Insights](/power-platform/admin/overview-integration-application-insights) to obtain granular logs and custom metrics for deep analysis. For agents, use [analytics in Copilot Studio](/microsoft-copilot-studio/analytics-overview) to understand agent performance and identify areas for improvement.
 - **Integration points**: Monitor the performance and reliability of integrations with other systems and services. Include tracking API calls, data transfers, and the status of connected services. Use the [integration with Application Insights](/power-platform/admin/overview-integration-application-insights) to obtain granular logs and custom metrics for deep analysis.
@@ -111,12 +111,12 @@ To achieve effective observability and insights, use the following tools:
 
 - **Power Platform admin center**: 
     - Use the Power Platform admin center to monitor tenant and environment-level [analytics](/power-platform/admin/tenant-level-analytics). 
-    - Use the [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center to understand solution health and detect degradations.
-    - Use the [Security page](/power-platform/admin/security/security-overview) to assess and monitor your security score and understand how to improve your security policies.
-    - Use the [Actions page](/power-platform/admin/power-platform-advisor) to monitor recommendations to optimize your tenant.
+    - Use the [Monitor area](/power-platform/admin/monitoring/monitoring-overview) of the Power Platform admin center to understand solution health and detect degradations.
+    - Use the [Security > Overview page](/power-platform/admin/security/security-overview) to assess and monitor your security score and understand how to improve your security policies.
+    - Use the [actions page](/power-platform/admin/power-platform-advisor) to monitor recommendations to optimize your tenant.
     - Use [Dataverse analytics](/power-platform/admin/analytics-common-data-service) to monitor activities performed on the Dataverse database. Ensure the platform's health by regularly checking system jobs, plug-ins used by app makers, and API calls against Dataverse.
 
-- **Activity logging**: [Power Apps](/power-platform/admin/logging-powerapps), [Power Automate](/power-platform/admin/logging-power-automate), [Power Pages](/power-platform/admin/logging-power-pages), [Power Platform connector](/power-platform/admin/connector-events-power-platform), [Data Loss Prevention](/power-platform/admin/dlp-activity-logging), and [Power Platform administrative](/power-platform/admin/admin-activity-logging) actions are available in the [Microsoft Purview portal](/purview/purview). Activity logging lets you track when apps or flows are created, edited, or deleted along with other key activities. These logs can be used manually for discovery and review and can also be accessed via APIs to automate more complex scenarios. If your organization uses a Security Information and Event Management (SIEM) server, learn how to [enable integration with activity logging](/microsoft-365/security/office-365-security/siem-server-integration). You might also find [Microsoft Purview Compliance Manager](https://aka.ms/compliancemanager) helpful to manage your compliance efforts across Microsoft cloud services. As an administrator, you should:  
+- **Activity logging**: [Power Apps](/power-platform/admin/logging-powerapps), [Power Automate](/power-platform/admin/logging-power-automate), [Power Pages](/power-platform/admin/logging-power-pages), [Power Platform connector](/power-platform/admin/connector-events-power-platform), [Data policy activity logging](/power-platform/admin/dlp-activity-logging), and [Power Platform administrative](/power-platform/admin/admin-activity-logging) actions are available in the [Microsoft Purview portal](/purview/purview). Activity logging lets you track when apps or flows are created, edited, or deleted along with other key activities. These logs can be used manually for discovery and review and can also be accessed via APIs to automate more complex scenarios. If your organization uses a Security Information and Event Management (SIEM) server, learn how to [enable integration with activity logging](/microsoft-365/security/office-365-security/siem-server-integration). You might also find [Microsoft Purview Compliance Manager](https://aka.ms/compliancemanager) helpful to manage your compliance efforts across Microsoft cloud services. As an administrator, you should:  
     - Consider audit data in Microsoft Purview along with other monitoring mechanisms. Create new alert policies to help ensure the overall health of your citizen app development platform.
     - Further explore Power Automate capabilities to help you automate extra steps to ensure Microsoft Power Platform service health.
 

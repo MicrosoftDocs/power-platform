@@ -3,7 +3,7 @@ title: Limit sharing
 description: Limit how broadly makers can share canvas apps and solution-aware cloud flows in your Managed Environments.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/12/2025
+ms.date: 09/23/2025
 author: mikferland-msft 
 ms.author: miferlan
 ms.reviewer: sericks
@@ -20,8 +20,6 @@ ms.custom:
   - sfi-image-nochange
 ---
 # Limit sharing
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2194484 and 2211538 -->
 
@@ -63,10 +61,9 @@ To configure these rules:
 
 | Solution-aware cloud flow sharing rules | Description |
 | --- | --- |
-| Let people share solution-aware cloud flows | **When selected:** Users can share solution-aware cloud flows with any number of individuals or security groups. <br><br> **When not selected:** Users can't share their cloud flows with any individual or security group.|
+| Let people share solution-aware cloud flows | **When selected:** Users can share solution-aware cloud flows and agent flows with any number of individuals or security groups. <br><br> **When not selected:** Users can't share their cloud flows or agent flows with any individual or security group.|
 
 ## Agent sharing rules 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 | Agent sharing rule | Description |
 | --- | --- |

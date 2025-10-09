@@ -4,7 +4,7 @@ description: "Details about the Power Apps Developer Plan"
 author: MKBajwa-PM
 ms.subservice: developer
 ms.author: mbajwa
-ms.date: 05/28/2025
+ms.date: 09/08/2025
 ms.reviewer: jdaly
 ms.topic: concept-article
 contributors:
@@ -108,7 +108,7 @@ see [Solutions](/power-apps/maker/data-platform/solutions-overview).
 
 ### Will my Power Apps Developer Plan subscription ever expire?
 
-You can continue using your Power Apps Developer Plan for free as long as there's active usage and no abuse of the plan (for example, apps aren't used for production purposes and the capacity limits aren't exceeded). Environments created using Power Apps Developer Plan that are inactive for the last 90 days will be deleted after notifying the environment owners.
+You can continue using your Power Apps Developer Plan for free as long as there's active usage and no abuse of the plan (for example, apps aren't used for production purposes and the capacity limits aren't exceeded). Environments created using Power Apps Developer Plan that are inactive for the last 30 days are automatically disabled. See [Timeline for unused developer environments](../admin/automatic-environment-cleanup.md#timeline-for-unused-developer-environments)
 
 ### Can I get or create multiple developer environments?
 

@@ -1,81 +1,72 @@
 ---
-title: "Center of Excellence (CoE) command line interface (CLI) upgrade (Deprecated)"
-description: "Upgrade instructions for the Center of Excellence command line interface"
-keywords: 
+title: Upgrade the CoE CLI (Deprecated)
+description: Learn how to update the Center of Excellence command line interface.
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.custom: ""
-ms.date: 05/23/2023
-
+ms.date: 08/27/2025
+ms.update-cycle: 3650-days
+ms.subservice: guidance-toolkit
 ms.topic: upgrade-and-migration-article
-ms.reviewer: sericks
-search.audienceType: 
+ms.reviewer: jhaskett-msft
+search.audienceType:
   - admin
 ---
 
-# Center of Excellence (CoE) command line interface (CLI) upgrade (Deprecated)
+# Upgrade the CoE CLI (Deprecated)
 
 > [!NOTE]
 > The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
 
-Upgrade will depend on how you installed the CoE CLI.
+The upgrade steps depend on how you [installed the CoE CLI](./install.md).
 
 ## Download
 
-If you downloaded the CoE CLI as a zip file or a Git clone from [coe-starter-kit](https://github.com/microsoft/coe-starter-kit).
+If you downloaded the CoE CLI as a zip file:
 
-- Download the new zip file.
-- Unzip the zip file to a new folder.
+1. Download the [CoE Starter Kit compressed file](https://aka.ms/CoEStarterKitCurrentMonthRelease).
 
-OR
+1. Extract the zip file to a new directory.
 
-- Pull changes from Git.
+If you downloaded the CoE CLI as a Git clone from [coe-starter-kit](https://github.com/microsoft/coe-starter-kit), pull the changes from Git:
 
-   ```bash
-   git pull
-   ```
+```bash
+git pull
+```
 
-Once you have a local version of the coe-cli, go to the **coe-cli** folder.
+When you have a local version of the CoE CLI, go to the **coe-cli** folder:
 
-   ```bash
-   cd coe-cli
+```bash
+cd coe-cli
+```
 
-   ```
+## Local upgrade
 
-### Local Upgrade
+If you installed the CoE CLI locally, run the following commands from the **coe-cli** folder.
 
-In the **coe-cli** folder, run the following commands:
-
-1. Install the dependencies.
+1. Install the dependencies:
 
    ```bash
    npm install
-
    ```
 
-1. Build the new version.
+1. Build the new version:
 
    ```bash
    npm run build
-
    ```
 
-1. Update coe-cli to the new version.
+1. Update the CoE CLI to the new version:
 
    ```bash
    npm link --force
-
    ```
 
-## Docker image
+## Docker upgrade
 
-In the coe-cli folder, run the following command:
+If you installed the CoE CLI as a Docker image, run the following command to build a new docker image:
 
-1. Build a new docker image.
-
-   ```bash
-   docker build -t coe-cli
-
-   ```
+```bash
+docker build -t coe-cli .
+```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

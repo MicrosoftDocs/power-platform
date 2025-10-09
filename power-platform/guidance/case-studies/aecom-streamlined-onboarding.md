@@ -4,8 +4,8 @@ description: Learn how AECOM streamlined project onboarding using Power Platform
 #customer intent: As a Power Platform user, I want to understand how AECOM streamlined project onboarding with Power Platform, Azure, and Microsoft Fabric so that I can evaluate similar solutions for my organization.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.subservice: case-study
 ms.topic: overview
 ms.date: 05/13/2025
 ---
