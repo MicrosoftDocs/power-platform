@@ -4,7 +4,7 @@ description: Learn how to override the release channel for a user.
 author: adrianorth 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 9/15/2025
+ms.date: 10/03/2025
 ms.subservice: admin
 ms.reviewer: sericks
 ms.author: aorth
