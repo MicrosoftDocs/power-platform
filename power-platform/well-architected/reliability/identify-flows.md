@@ -4,7 +4,7 @@ description: Learn how to create a catalog of user and system flows for your Pow
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -43,9 +43,9 @@ The output of identifying all user and system flows is a catalog of all the flow
 
 - **Interview stakeholders**. Stakeholders can provide valuable information to identify flows, and they can even help you map and prioritize flows. You can also interview users, business analysts, and technical teams to gather insights about user interactions and dependencies within the workload.
 
-- **Discover processes to improve on using process mining**. If your task is done fully on the desktop, you can use [process mining](/power-automate/process-advisor-overview) to discover all the steps that people in your organization take to complete the task. Process mining visualizes your process in a [process map](/power-automate/process-advisor-visualize) and reveals bottlenecks and metrics for your process in an analytical report.
+- **Discover processes to improve on using process mining**. If your task is done fully on the desktop, you can use [process mining](/power-automate/process-advisor-overview) to discover all the steps that people in your organization take to complete the task. Process mining visualizes your process in a [process map](/power-automate/process-advisor-visualize) and reveals bottlenecks and metrics for your process in an analytical report. Use [Plan designer](/power-apps/maker/plan-designer/process-diagram) to generate process diagrams as part of the plan to clarify user interactions.
 
-- **Review documentation**. In the design phase, you might not have documentation to review. However, if documentation exists, you should use it. Ask for system architecture diagrams, user manuals, and process descriptions. These documents can help you understand the intended functionality of the workload and its individual flows.
+- **Review documentation**. In the design phase, you might not have documentation to review. However, if documentation exists, you should use it. Ask for system architecture diagrams, user manuals, and process descriptions. These documents can help you understand the intended functionality of the workload and its individual flows. You can use existing documentation to [create a plan](/power-apps/maker/plan-designer/create-plan) using Plan designer. Plan designer generates a complete Power Platform solution tailored to your needs.
 
 - **Observe what activities are being performed**. If the task is performed today in a different way, monitor the task in operation. Write down the activities that the user does to complete the tasks in this step of the business process. Get into the details of the activities. When deciding on the activities, you'll want to consider cause and effect for each one, how they relate to each other, and how they move you closer to your desired objective. Identify the starting point of the process, and fill in the activities that lead to the objective. Activities can be sequential, meaning that one activity can't occur until the previous one is completed, or parallel, meaning that two or more activities can occur at the same time.
 
@@ -207,9 +207,9 @@ The following example provides a complete scenario and illustrates important poi
 
 ## Power Platform facilitation
 
-Consider using [process mining and task mining in Power Automate](/power-automate/process-advisor-overview) including a [process map](/power-automate/process-advisor-visualize), a powerful tool that can help you visualize and analyze your business processes.
+Use [Plan designer](/power-apps/maker/plan-designer/plan-designer) to describe your business case in natural language and provide information, like business process flows or screenshots of legacy systems. Plan designer will then generate a complete Power Platform solution tailored to your needs. Plan designer also generates process diagrams to help you clarify user interactions.
 
-Learn how to convert your ideas into a fully functional solution by [planning a Power Apps project](/power-apps/guidance/planning/introduction).
+Consider using [process mining and task mining in Power Automate](/power-automate/process-advisor-overview) including a [process map](/power-automate/process-advisor-visualize), a powerful tool that can help you visualize and analyze your business processes.
 
 ## Reliability checklist
 

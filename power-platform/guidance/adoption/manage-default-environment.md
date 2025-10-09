@@ -26,7 +26,7 @@ Maintain robust security and governance by making use of managed environment fea
 
 ## Track connectors
 
-Connectors are Power Platform services that integrate apps and flows with other services. Power Platform administrators can use [Data Loss Prevention (DLP) policies](../../admin/wp-data-loss-prevention.md) to control which integrations are permitted in each environment.
+Connectors are Power Platform services that integrate apps and flows with other services. Power Platform administrators can use [data policies](../../admin/wp-data-loss-prevention.md) to control which integrations are permitted in each environment.
 
 Some connectors that drive core Power Platform functionality [can't be blocked](../../admin/dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked). You need to know if these core connectors are being used so that you can provide policy guidance to your makers. For example, you might want to track the apps and flows in the default environment that use the Exchange connector and direct the makers to move to a different environment that allows outbound emails.
 

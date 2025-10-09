@@ -4,8 +4,8 @@ description: Learn how Schlumberger (SLB) uses Power Apps, AI Builder, and Power
 #customer intent: As a Power Platform user,  I want to learn how SLB increased productivity with Power Apps, AI Builder, and Power Automate so that I can apply similar solutions in my organization.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.subservice: case-study
 ms.topic: overview
 ms.date: 08/08/2025
 ---

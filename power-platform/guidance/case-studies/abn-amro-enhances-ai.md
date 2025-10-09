@@ -4,8 +4,8 @@ description: Learn how ABN AMRO enhanced customer and employee interactions usin
 #customer intent: As a Power Platform user, I want to learn how ABN AMRO enhanced customer and employee interactions using Copilot Studio so that I can apply similar strategies in my organization.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.subservice: case-study
 ms.topic: overview
 ms.date: 05/13/2025
 ---
@@ -126,7 +126,7 @@ The bank's next new agent will be set up as a full generative AI agent. The proj
 ## Related information
 
 - [Copilot Studio overview](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
-- [Build agents with Copilot Studio agent builder](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build)
+- [Build agents with Copilot Studio](/microsoft-365-copilot/extensibility/copilot-studio-lite-build)
 - [Quickstart guide for building agents with generative AI](/microsoft-copilot-studio/nlu-gpt-quickstart)
 - [AI-based agent authoring overview](/microsoft-copilot-studio/nlu-gpt-overview)
 - [Conversational language understanding integration overview](/microsoft-copilot-studio/advanced-clu-integration)

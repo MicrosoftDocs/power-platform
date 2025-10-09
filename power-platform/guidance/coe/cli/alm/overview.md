@@ -1,12 +1,12 @@
 ---
 title: "CoE CLI ALM accelerator for Microsoft Power Platform (Deprecated)"
-description: "Overview of the Center of Excellence (CoE) command-line interface (CLI) ALM accelerator commands"
-keywords: 
+description: "Overview of the Center of Excellence (CoE) command-line interface (CLI) ALM accelerator commands."
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.custom: ""
 ms.date: 05/23/2023
+ms.update-cycle: 3650-days
 ms.topic: overview
+ms.subservice: guidance-toolkit
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -147,7 +147,7 @@ The following recording shows a sample generating an installation configuration 
 >[!NOTE]
 >If this is your first build pipeline, you'll need to set pipeline variables for your environment. At a minimum, you'll need to set the **ServiceConnection** variable to the environment you've set up for validation, test, and production.
 
-### Read more
+## Read more
 
 - [Use the ALM Accelerator for Power Platform app](../../almacceleratorpowerplatform-components.md): An overview of the ALM accelerator
 - [Configuring deployment user settings and profiles](../../setup-almacceleratorpowerplatform-deployment-profiles.md): The deployment experience and profile setup

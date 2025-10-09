@@ -1,12 +1,11 @@
 ---
 title: "CoE ALM Accelerator for Power Platform key concepts (Deprecated)"
-description: "Key concepts related to ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
-keywords: 
+description: "Learn key concepts related to ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)."
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.custom: ""
 ms.date: 09/26/2024
-
+ms.update-cycle: 3650-days
+ms.subservice: guidance-toolkit
 ms.topic: concept-article
 ms.reviewer: sericks
 search.audienceType: 

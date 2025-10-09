@@ -4,8 +4,8 @@ description: Learn how Deutsche Bahn empowers 4,000 citizen developers to build 
 #customer intent: As a business owner, I want to understand how Deutsche Bahn uses Power Platform so that I can evaluate its potential for my organization.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.subservice: case-study
 ms.topic: overview
 ms.date: 04/10/2025
 ---

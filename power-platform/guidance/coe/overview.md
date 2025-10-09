@@ -106,7 +106,7 @@ A Power Platform CoE manages Power Platform administration, nurturing, and opera
 
 | Admin center | Platform extensions | Templates and customizations |
 |--------------|---------------------|------------------------------|
-| [Power Platform admin center](../../admin/index.yml) features help you complete tasks: <br>- Environment and environment security management<br>- Data loss prevention (DLP) policy management<br>- Data integration and gateway management<br>- Admin analytics: View capacity and activity on Microsoft Dataverse, Power Apps, and Power Automate<br>- Support ticket requests | Connectors provide access to the same APIs that the products and admin centers use. <br><br>These libraries are exposed through the connectors library to help users create custom solutions to execute administrative or governance-related tasks.<br>Learn more in: <br>- [Power Platform for Admins](/connectors/powerplatformforadmins/)<br>- [Power Apps for Admins](/connectors/powerappsforadmins/)<br>- [Power Automate Management](/connectors/flowmanagement/)<br>- [Power Apps for Makers](/connectors/powerappsforappmakers/) | The CoE Starter Kit falls into this category. The CoE templates use the admin connectors in combination with other connectors and formulas to achieve specific goals. <br><br>**Note:** The nature of a template is to provide a good solution for a specific task, but it might not have the exact functionality that you need. You might have to adjust it to achieve what you're looking for. |
+| [Power Platform admin center](../../admin/index.yml) features help you complete tasks: <br>- Environment and environment security management<br>- Data policy management<br>- Data integration and gateway management<br>- Admin analytics: View capacity and activity on Microsoft Dataverse, Power Apps, and Power Automate<br>- Support ticket requests | Connectors provide access to the same APIs that the products and admin centers use. <br><br>These libraries are exposed through the connectors library to help users create custom solutions to execute administrative or governance-related tasks.<br>Learn more in: <br>- [Power Platform for Admins](/connectors/powerplatformforadmins/)<br>- [Power Apps for Admins](/connectors/powerappsforadmins/)<br>- [Power Automate Management](/connectors/flowmanagement/)<br>- [Power Apps for Makers](/connectors/powerappsforappmakers/) | The CoE Starter Kit falls into this category. The CoE templates use the admin connectors in combination with other connectors and formulas to achieve specific goals. <br><br>**Note:** The nature of a template is to provide a good solution for a specific task, but it might not have the exact functionality that you need. You might have to adjust it to achieve what you're looking for. |
 
 ## How to use the CoE Starter Kit alongside Power Platform admin center
 
@@ -144,14 +144,14 @@ Consider the individual features of Managed Environments to see how they compare
 
 - **[Data policies](/power-platform/admin/managed-environment-data-policies)**
 
-  Managed Environments allows you to see what data policies apply to the environment. The [DLP Editor](core-components.md), part of the CoE Starter Kit, also shows you data policies that are applied to an environment, and the impact of data policies on existing apps and flows in that environment.
+  Managed Environments allows you to see what data policies apply to the environment. The [DLP Editor](core-components.md#dlp-impact-analysis), part of the CoE Starter Kit, also shows you data policies that are applied to an environment, and the impact of data policies on existing apps and flows in that environment.
 
 > [!NOTE]
 > The CoE Starter Kit offers capabilities that aren't yet met with Managed Environments, such as bulk updating permissions, cleaning up abandoned resources, surveying makers, and calculating the ROI of ideas.
 
 ### Tenant-level analytics
 
-[Tenant-level analytics](/power-platform/admin/tenant-level-analytics) in Power Platform admin center provide a holistic overview of usage and inventory for apps, flows, makers, and environments. These analytics help you identify metrics like the most used apps and top makers.
+[Tenant-level analytics](/power-platform/admin/tenant-level-analytics) in the Power Platform admin center provide a holistic overview of usage and inventory for apps, flows, makers, and environments. These analytics help you identify metrics like the most used apps and top makers.
 
 The [Power BI dashboard](/power-platform/guidance/coe/power-bi) in the CoE Starter Kit combines your tenant-level inventory and usage data with organizational data to provide more granular insights into which departments, cities, and countries or regions use Power Platform.
 

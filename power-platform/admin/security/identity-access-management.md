@@ -4,18 +4,18 @@ description: Learn how to manage identity and access in the Power Platform admin
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/30/2025
+ms.date: 07/29/2025
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+  - jahnavisunil
 ---
 
 # Identity and access management
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Ensure that authorized users are the only people who can access sensitive data in items across your tenant.
 
@@ -100,3 +100,44 @@ Be aware of the following known issues with the feature:
 
 - The **Membership** page for the security role shows only the security roles in the default business unit. To view all security roles across all business units, turn off the **Display only parent security roles** option.
 - After you remove a user from the System administrator role, it takes about 24 hours for the page to show the updated administrator count.
+
+## Authentication for agents (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+This feature allows administrators to configure authentication for all agent interactions in the environment. Admins can select one of the following options:
+
+- **Authenticate with Microsoft or Authenticate Manually** allows you to force authentication through Microsoft Entra ID or [authenticate manually](/microsoft-copilot-studio/configuration-end-user-authentication#authenticate-manually). This helps prevent makers from creating or using agents with no authentication.
+- **No authentication** allows anonymous access.
+
+For information about the authentication options in Copilot Studio, go to [Configure user authentication in Copilot Studio](/microsoft-copilot-studio/configuration-end-user-authentication).
+
+The **Authenitcation for agents** feature is a modernized framework of the existing [virtual connector](../wp-data-loss-prevention.md#virtual-connectors), **Chat without Microsoft Entra ID**. It helps you scale through environment-level configurations and rules. If you're using both the virtual connector and the **Authentication for agents** setting in the **Security** area of the Power Platform admin center, then access must be allowed in both places for it to be allowed at runtime. If you block anonymous access in either one of the places, then at runtime the most restrictive behavior is enforced and it will be blocked. For example, consider the information in the following table.
+
+| Access in the virtual connector | Access in the _Authentication for agents_ settings in Power Platform admin center| Runtime enforeement |
+|------|-----------------------------|----------------------|
+| Blocked | Blocked | Blocked |
+| Allowed | Blocked| Blocked|
+| Blocked| Allowed | Blocked|
+| Allowed| Allowed | Allowed|
+
+We recommend that all customers move towards using the **Authentication for agents** setting in the Power Platform admin center to leverage the capability of groups and rules.
+
+## Agent access points (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+This feature gives administrators control over where agents can be published, allowing customer engagement across multiple platforms. Admins can select multiple available channels, such as Microsoft Teams, Direct Line, Facebook, Dynamics 365 for Customer Service, SharePoint, and WhatsApp. 
+ 
+The **Agent access points** feature is a modernized framework of the existing [virtual connectors](../wp-data-loss-prevention.md#virtual-connectors). It helps you scale through environment-level configurations and rules. If you're using both virtual connectors and the **Agent access points** settings in the **Security** area of the Power Platform admin center, then access must be allowed in both places for it to be allowed at runtime. If you block channel access in either one of the places, then at runtime the most restrictive behavior is enforced and it will be blocked. For example, consider the information in the following table.
+
+| Access in the virtual connector | Access in the _Agent access points_ settings in Power Platform admin center| Runtime enforeement |
+|------|-----------------------------|----------------------|
+| Blocked | Blocked | Blocked |
+| Allowed | Blocked| Blocked|
+| Blocked| Allowed | Blocked|
+| Allowed| Allowed | Allowed|
+
+We recommend that all customers move towards using the **Agent access points** settings in the Power Platform admin center to leverage the capability of groups and rules.
