@@ -28,7 +28,7 @@ Encodes and decodes strings.
 
 ## Description
 
-The **EncodeUrl** function encodes a URL string, replacing certain non-alphanumeric characters with % and a hexadecimal number.
+The **EncodeUrl** function encodes a URL string, replacing certain nonalphanumeric characters with % and a hexadecimal number.
 
 The **EncodeHTML** function encodes a string, replacing certain characters that need to be escaped to appear properly in an HTML context. For example, the characters &lt;, &gt;, and &amp; are replaced by &amp;lt;, &amp;gt;, and &amp;amp;, respectively.
 

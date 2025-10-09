@@ -42,7 +42,7 @@ The **Index** function returns a record of a table based on its ordered position
 
 [!INCLUDE [delegation-no](../../includes/delegation-no.md)]
 
-For example, when used with a data source containing a large table with 1 million records, **Last** is subject to the non-delegation limit and won't return the last record of the entire data source. Likewise, using **Index** to request a record in the middle of 1 million records results in an error because the index is out of range based on the non-delegation limit.
+For example, when used with a data source containing a large table with 1 million records, **Last** is subject to the non-delegation limit and doesn't return the last record of the entire data source. Likewise, using **Index** to request a record in the middle of 1 million records results in an error because the index is out of range based on the non-delegation limit.
 
 ## Syntax
 
@@ -62,7 +62,7 @@ For example, when used with a data source containing a large table with 1 millio
 
 ## Examples
 
-For the following examples, we'll use the **IceCream** [data source](/power-apps/maker/canvas-apps/working-with-data-sources), which contains the data in this table:
+For the following examples, we use the **IceCream** [data source](/power-apps/maker/canvas-apps/working-with-data-sources), which contains the data in this table:
 
 :::image type="content" source="media/function-first-last/icecream.png" alt-text="IceCream example.":::
 

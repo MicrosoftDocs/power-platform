@@ -36,7 +36,7 @@ Converts date, time, or both in a _string_ to a _date/time_ value.
 **DateValue** function ignores any time information in the date string, and **TimeValue** function ignores any date information in the time string.
 
 > [!NOTE]
-> The DateValue, TimeValue, and DateTimeValue functions by default use the language from the current user's settings. You can override it to ensure that strings are interpreted properly. For example, "10/1/1920" is interpreted as _October 1<sup>st</sup>_ in "_en_" and as _January 10<sup>th</sup>_ in "_fr_".
+> The DateValue, TimeValue, and DateTimeValue functions by default use the language from the current user's settings. You can override it to ensure that strings are interpreted properly. For example, "10/1/1920" is interpreted as _October 1_ in "_en_" and as _January 10_ in "_fr_".
 
 Dates must use one of these formats:
 
@@ -69,7 +69,7 @@ For more information, see:
 **DateTimeValue**( _Dynamic_ )<br>
 **TimeValue**( _Dynamic_ )
 
-- _Dynamic_ - Required. [**Dynamic** value](../untyped-object.md) that represents a date or time. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the dynamic value is expected to be a JSON string that contains a date and time in ISO 8601 format. Dates or times in other formats will result in an error. Consider converting such values to [**Text**](function-text.md) first, then to a date or time. Keep in mind that time zones and locale-related formats are important considerations when communicating with external systems.
+- _Dynamic_ - Required. [**Dynamic** value](../untyped-object.md) that represents a date or time. Acceptable values are dependent on the untyped provider. For [**JSON**](function-parsejson.md), the dynamic value is expected to be a JSON string that contains a date and time in ISO 8601 format. Dates or times in other formats result in an error. Consider converting such values to [**Text**](function-text.md) first, then to a date or time. Keep in mind that time zones and locale-related formats are important considerations when communicating with external systems.
 
 ## Examples
 
