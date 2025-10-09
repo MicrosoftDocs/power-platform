@@ -77,9 +77,12 @@ If there are no errors, the table that **Errors** returns will be [empty](functi
 
 ### Step by Step
 
-For this example, we're working with the **IceCream** data source:
+For this example, we'll be working with the **IceCream** data source, a data source for which Power Apps will attempt to detect conflicts:
 
 ![Ice Cream.](media/function-errors/icecream.png "Ice Cream")
+
+> [!NOTE]
+> Power Apps does not attempt to detect conflicts for changes to Dataverse tables.
 
 Through the app, a user loads the Chocolate record into a data-entry form and then changes the value of **Quantity** to 90. The record to be worked with is placed in the [context variable](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable) **EditRecord**:
 
@@ -91,7 +94,7 @@ To make this change in the data source, the **[Patch](function-patch.md)** funct
 
 Where **Gallery.Updates** evaluates to **{ Quantity: 90 }**, since only the **Quantity** property has been modified.
 
-Unfortunately, just before the **[Patch](function-patch.md)** function was invoked, somebody else modifies the **Quantity** for Chocolate to 80. Power Apps will detect this and not allow the conflicting change to occur. You can check for this situation with the formula:
+Unfortunately, just before the **[Patch](function-patch.md)** function was invoked, somebody else modifies the **Quantity** for Chocolate to 80. Because this is a supported data source for conflict detection, Power Apps will detect this and not allow the conflicting change to occur. You can check for this situation with the formula:
 
 - **IsEmpty( Errors( IceCream, EditRecord ) )**
 
