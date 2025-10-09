@@ -68,9 +68,7 @@ Key fields include:
     1. Select **Export**.
     1. Choose **Unmanaged** or **Managed** depending on your deployment strategy.
     1. Save the resulting .zip file.
-1.	Import into the target environment.
-
-    In the target environment:
+1.	Import into the target environment. In the target environment:
     1. Go to **Settings** > **Customizations** > **Solutions** > **Import**.
     1. Upload the .zip file.
     1. Follow the prompts to complete the import.
