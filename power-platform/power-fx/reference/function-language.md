@@ -87,7 +87,7 @@ A simple approach to localization is to create an Excel spreadsheet mapping an a
 
 In your app, wherever you used the text **"Hello"** before, use this formula instead:
 
-- **LookUp(Table1, TextID = "Hello" && (LanguageTag = Left(Language(), 2) || IsBlank(LanguageTag))).LocalizedText**
+- **LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**
 
 This formula will lookup the appropriate **LocalizedText** value for the language of the user, and if that isn't found, will fall back on the default _blank_ version.
 
@@ -97,12 +97,12 @@ Translated strings in other languages could be longer than they're in your langu
 
 You can translate text on demand using a translation service, such as the Microsoft Translator service:
 
-1. In Power Apps, in the right-hand pane, click, or tap the **Data Sources** tab, and then click or tap **Add data source**.
+1. In Power Apps, in the right-hand pane, click or tap the **Data Sources** tab, and then click or tap **Add data source**.
 2. Click or tap **Microsoft Translator**.
 
 In your app, wherever you would have used the text **"Hello"** before, use this formula instead:
 
-- **MicrosoftTranslator.Translate("Hello", Language())**
+- **MicrosoftTranslator.Translate( "Hello", Language() )**
 
 The Microsoft Translator service uses the same language tags that the **Language** function returns.
 

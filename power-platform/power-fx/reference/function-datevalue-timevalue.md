@@ -58,16 +58,16 @@ For more information, see:
 
 ## Syntax
 
-**DateValue**(_String_ [, *Language*])<br>
-**DateTimeValue**(_String_ [, *Language* ])<br>
-**TimeValue**(_String_ [, *Language* ])
+**DateValue**( _String_ [, *Language*] )<br>
+**DateTimeValue**( _String_ [, *Language* ] )<br>
+**TimeValue**( _String_ [, *Language* ] )
 
 - _String_ - Required. A text string that contains a date, time, or combination date and time value.
 - _Language_ - Optional. A language string, such as would be returned by the first two characters from the [Language](function-language.md) function. If not provided, the language of the current user's settings is used.
 
-**DateValue**(_Dynamic_)<br>
-**DateTimeValue**(_Dynamic_)<br>
-**TimeValue**(_Dynamic_)
+**DateValue**( _Dynamic_ )<br>
+**DateTimeValue**( _Dynamic_ )<br>
+**TimeValue**( _Dynamic_ )
 
 - _Dynamic_ - Required. [**Dynamic** value](../untyped-object.md) that represents a date or time. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the dynamic value is expected to be a JSON string that contains a date and time in ISO 8601 format. Dates or times in other formats will result in an error. Consider converting such values to [**Text**](function-text.md) first, then to a date or time. Keep in mind that time zones and locale-related formats are important considerations when communicating with external systems.
 

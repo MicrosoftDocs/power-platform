@@ -39,7 +39,7 @@ Only on Windows, **Download** returns the location where the file was stored loc
 
 ## Syntax
 
-**Download**(_Address_)
+**Download**( _Address_ )
 
 - _Address_ – Required. The URL address of a web resource to download.
 

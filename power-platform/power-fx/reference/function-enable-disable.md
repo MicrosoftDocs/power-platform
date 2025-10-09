@@ -41,7 +41,7 @@ These functions have no return value. You can use them only in [behavior formula
 
 ## Syntax
 
-**Enable**(_Signal_)<br>**Disable**(_Signal_)
+**Enable**( _Signal_ )<br>**Disable**( _Signal_ )
 
 - _Signal_ - Required. The signal to turn on or off.
 

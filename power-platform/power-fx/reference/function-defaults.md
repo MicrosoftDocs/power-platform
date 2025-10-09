@@ -37,7 +37,7 @@ You can combine the **Defaults** function with the **[Patch](function-patch.md)*
 
 ## Syntax
 
-**Defaults**(_DataSource_)
+**Defaults**( _DataSource_ )
 
 - _DataSource_ – Required. The data source for which you want default values.
 

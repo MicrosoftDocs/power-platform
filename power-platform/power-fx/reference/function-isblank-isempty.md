@@ -57,7 +57,7 @@ The return value for **IsBlank** is a boolean **true** or **false**.
 
 The **Coalesce** function evaluates its arguments in order and returns the first value that isn't _blank_ or an empty string. Use this function to replace a _blank_ value or empty string with a different value but leave non-_blank_ and non-empty string values unchanged. If all the arguments are _blank_ or empty strings, then the function returns _blank_, making **Coalesce** a good way to convert empty strings to _blank_ values.
 
-`Coalesce(value1, value2)` is the more concise equivalent of `If(Not IsBlank(value1), value1, Not IsBlank(value2), value2)` and doesn't require **value1** and **value2** to be evaluated twice. The [**If** function](function-if.md) returns _blank_ if there's no "else" formula as is the case here.
+`Coalesce( value1, value2 )` is the more concise equivalent of `If( Not IsBlank( value1 ), value1, Not IsBlank( value2 ), value2 )` and doesn't require **value1** and **value2** to be evaluated twice. The [**If** function](function-if.md) returns _blank_ if there's no "else" formula as is the case here.
 
 All arguments to **Coalesce** must be of the same type; for example, you can't mix numbers with text strings. The return value from **Coalesce** is of this common type.
 
@@ -96,7 +96,7 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
    ClearCollect( Cities, { Name: "Seattle", Weather: "Rainy" } )
    ```
 
-3. Preview your app, click, or tap the button that you added, and then close Preview.
+3. Preview your app, click or tap the button that you added, and then close Preview.
 4. On the **File** menu, click or tap **Collections**.
 
    The **Cities** collection appears, showing one record with "Seattle" and "Rainy":
@@ -118,7 +118,7 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
    Patch( Cities, First( Cities ), { Weather: Blank() } )
    ```
 
-8. Preview your app, click, or tap the button that you added, and then close Preview.
+8. Preview your app, click or tap the button that you added, and then close Preview.
 
    The **Weather** field of the first record in **Cities** is replaced with a _blank_, removing the "Rainy" that was there previously.
 
@@ -131,9 +131,9 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 | Formula                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                | Result  |
 | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | **Coalesce(&nbsp;Blank(),&nbsp;1&nbsp;)**          | Tests the return value from the **Blank** function, which always returns a _blank_ value. Because the first argument is _blank_, evaluation continues with the next argument until a non-_blank_ value and non-empty string is found.                                                                                                                                                                                                                      | **1**   |
-| **Coalesce("", "2")**                            | Tests the first argument, which is an empty string. Because the first argument is an empty string, evaluation continues with the next argument until a non-_blank_ value and non-empty string is found.                                                                                                                                                                                                                                                     | **2**   |
-| **Coalesce(Blank(), "", Blank(), "", "3", "4")** | **Coalesce** starts at the beginning of the argument list and evaluates each argument in turn until a non-_blank_ value and non-empty string is found. In this case, the first four arguments all return _blank_ or an empty string, so evaluation continues to the fifth argument. The fifth argument is non-_blank_ and non-empty string, so evaluation stops here. The value of the fifth argument is returned, and the sixth argument isn't evaluated. | **3**   |
-| **Coalesce("")**                                 | Tests the first argument, which is an empty string. Because the first argument is an empty string, and there are no more arguments, the function returns _blank_.                                                                                                                                                                                                                                                                                           | _blank_ |
+| **Coalesce( "", "2" )**                            | Tests the first argument, which is an empty string. Because the first argument is an empty string, evaluation continues with the next argument until a non-_blank_ value and non-empty string is found.                                                                                                                                                                                                                                                     | **2**   |
+| **Coalesce( Blank(), "", Blank(), "", "3", "4" )** | **Coalesce** starts at the beginning of the argument list and evaluates each argument in turn until a non-_blank_ value and non-empty string is found. In this case, the first four arguments all return _blank_ or an empty string, so evaluation continues to the fifth argument. The fifth argument is non-_blank_ and non-empty string, so evaluation stops here. The value of the fifth argument is returned, and the sixth argument isn't evaluated. | **3**   |
+| **Coalesce( "" )**                                 | Tests the first argument, which is an empty string. Because the first argument is an empty string, and there are no more arguments, the function returns _blank_.                                                                                                                                                                                                                                                                                           | _blank_ |
 
 ### IsBlank
 
@@ -157,11 +157,11 @@ Other examples:
 | Formula                              | Description                                                                                                                                                                                                              | Result    |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
 | **IsBlank(&nbsp;Blank()&nbsp;)**     | Tests the return value from the **Blank** function, which always returns a _blank_ value.                                                                                                                                | **true**  |
-| **IsBlank("")**                    | A string that contains no characters.                                                                                                                                                                                    | **true**  |
-| **IsBlank("Hello")**               | A string that contains one or more characters.                                                                                                                                                                           | **false** |
+| **IsBlank( "" )**                    | A string that contains no characters.                                                                                                                                                                                    | **true**  |
+| **IsBlank( "Hello" )**               | A string that contains one or more characters.                                                                                                                                                                           | **false** |
 | **IsBlank( _AnyCollection_ )**       | Because the [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) exists, it isn't blank, even if it doesn't contain any records. To check for an empty collection, use **IsEmpty** instead. | **false** |
-| **IsBlank(Mid("Hello", 17, 2))** | The starting character for **[Mid](function-left-mid-right.md)** is beyond the end of the string. The result is an empty string.                                                                                         | **true**  |
-| **IsBlank(If(false, false))**    | An **[If](function-if.md)** function with no _ElseResult_. Because the condition is always **false**, this **[If](function-if.md)** always returns _blank_.                                                              | **true**  |
+| **IsBlank( Mid( "Hello", 17, 2 ) )** | The starting character for **[Mid](function-left-mid-right.md)** is beyond the end of the string. The result is an empty string.                                                                                         | **true**  |
+| **IsBlank( If( false, false ) )**    | An **[If](function-if.md)** function with no _ElseResult_. Because the condition is always **false**, this **[If](function-if.md)** always returns _blank_.                                                              | **true**  |
 
 ### IsEmpty
 
@@ -170,17 +170,17 @@ Other examples:
 
    **Collect( IceCream, {Flavor: "Strawberry", Quantity: 300}, {Flavor: "Chocolate", Quantity: 100} )**
 
-3. Preview your app, click, or tap the button that you added, and then close Preview.
+3. Preview your app, click or tap the button that you added, and then close Preview.
 
    A collection named **IceCream** is created and contains this data:
 
    ![A table with Strawberry and Chocolate flavours with quantity 300 and 100.](media/function-isblank-isempty/icecream-strawberry-chocolate.png)
 
-   This collection has two records and isn't empty. **IsEmpty(IceCream)** returns **false**, and **CountRows(IceCream)** returns **2**.
+   This collection has two records and isn't empty. **IsEmpty( IceCream )** returns **false**, and **CountRows( IceCream )** returns **2**.
 
 4. Add a second button, and set its **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:
 
-   **Clear(IceCream)**
+   **Clear( IceCream )**
 
 5. Preview your app, click or tap the second button, and then close Preview.
 
@@ -194,9 +194,9 @@ You can also use **IsEmpty** to test whether a calculated table is empty, as the
 
 | Formula                                                             | Description                                                                                                                              | Result    |
 | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| **IsEmpty([&nbsp;1,&nbsp;2,&nbsp;3])**                           | The single-column table contains three records and, therefore, isn't empty.                                                              | **false** |
-| **IsEmpty([&nbsp;])**                                             | The single-column table contains no records and is empty.                                                                                | **true**  |
-| **IsEmpty(Filter([&nbsp;1,&nbsp;2,&nbsp;3&nbsp;], Value > 5))** | The single-column table contains no values that are greater than 5. The result from the filter doesn't contain any records and is empty. | **true**  |
+| **IsEmpty( [&nbsp;1,&nbsp;2,&nbsp;3 ] )**                           | The single-column table contains three records and, therefore, isn't empty.                                                              | **false** |
+| **IsEmpty( [&nbsp;] )**                                             | The single-column table contains no records and is empty.                                                                                | **true**  |
+| **IsEmpty( Filter( [&nbsp;1,&nbsp;2,&nbsp;3&nbsp;], Value > 5 ) )** | The single-column table contains no values that are greater than 5. The result from the filter doesn't contain any records and is empty. | **true**  |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

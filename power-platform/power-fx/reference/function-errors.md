@@ -83,17 +83,17 @@ For this example, we're working with the **IceCream** data source:
 
 Through the app, a user loads the Chocolate record into a data-entry form and then changes the value of **Quantity** to 90. The record to be worked with is placed in the [context variable](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable) **EditRecord**:
 
-- **UpdateContext({EditRecord: LookUp(IceCream, Flavor = "Chocolate")})**
+- **UpdateContext( { EditRecord: LookUp( IceCream, Flavor = "Chocolate" ) } )**
 
 To make this change in the data source, the **[Patch](function-patch.md)** function is used:
 
-- **Patch(IceCream, EditRecord, Gallery.Updates)**
+- **Patch( IceCream, EditRecord, Gallery.Updates )**
 
-Where **Gallery.Updates** evaluates to **{Quantity: 90}**, since only the **Quantity** property has been modified.
+Where **Gallery.Updates** evaluates to **{ Quantity: 90 }**, since only the **Quantity** property has been modified.
 
 Unfortunately, just before the **[Patch](function-patch.md)** function was invoked, somebody else modifies the **Quantity** for Chocolate to 80. Power Apps will detect this and not allow the conflicting change to occur. You can check for this situation with the formula:
 
-- **IsEmpty(Errors(IceCream, EditRecord))**
+- **IsEmpty( Errors( IceCream, EditRecord ) )**
 
 Which returns **false**, because the **Errors** function returned the following table:
 
@@ -104,14 +104,14 @@ Which returns **false**, because the **Errors** function returned the following 
 You can place a label on the form to show this error to the user.
 
 - To show the error, set the label's **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:<br>
-  **Label.Text = First(Errors(IceCream, EditRecord)).Message**
+  **Label.Text = First(Errors( IceCream, EditRecord )).Message**
 
 You can also add a **Reload** button on the form, so that the user can efficiently resolve the conflict.
 
 - To show the button only when a conflict has occurred, set the button's **[Visible](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:<br>
-  **!IsEmpty(Lookup(Errors(IceCream, EditRecord), Error = ErrorKind.Conflict))**
+  **!IsEmpty( Lookup( Errors( IceCream, EditRecord ), Error = ErrorKind.Conflict ) )**
 - To revert the change, which the user selects the button, set its **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:<br>
-  **ReloadButton.OnSelect = Revert(IceCream, EditRecord)**
+  **ReloadButton.OnSelect = Revert( IceCream, EditRecord )**
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

@@ -44,7 +44,7 @@ You can use **Concurrent** only in [behavior formulas](/power-apps/maker/canvas-
 
 ## Syntax
 
-**Concurrent**(_Formula1_, _Formula2_ [, ...])
+**Concurrent**( _Formula1_, _Formula2_ [, ...] )
 
 - _Formula(s)_ – Required. Formulas to evaluate concurrently. You must supply at least two formulas.
 

@@ -39,13 +39,13 @@ If the starting position is negative or beyond the end of the string, **Mid** re
 
 ## Syntax
 
-**Left**(_String_, _NumberOfCharacters_)<br>**Mid**(_String_, _StartingPosition_ [, *NumberOfCharacters* ])<br>**Right**(_String_, _NumberOfCharacters_)
+**Left**( _String_, _NumberOfCharacters_ )<br>**Mid**( _String_, _StartingPosition_ [, *NumberOfCharacters* ] )<br>**Right**( _String_, _NumberOfCharacters_ )
 
 - _String_ - Required. The string to from which to extract the result.
 - _StartingPosition_ - Required (**Mid** only). The starting position. The first character of the string is position 1.
 - _NumberOfCharacters_ - Required (**Left** and **Right** only). The number of characters to return. If omitted for the **Mid** function, the function returns the portion from the starting position until the end of the string.
 
-**Left**(_SingleColumnTable_, _NumberOfCharacters_)<br>**Mid**(_SingleColumnTable_, _StartingPosition_ [, *NumberOfCharacters* ])<br>**Right**(_SingleColumnTable_, _NumberOfCharacters_)
+**Left**( _SingleColumnTable_, _NumberOfCharacters_ )<br>**Mid**( _SingleColumnTable_, _StartingPosition_ [, *NumberOfCharacters* ] )<br>**Right**( _SingleColumnTable_, _NumberOfCharacters_ )
 
 - _SingleColumnTable_ - Required. A single-column table of strings from which to extract the results.
 - _StartingPosition_ - Required (**Mid** only). The starting position. The first character of the string is position 1.
@@ -59,10 +59,10 @@ The examples in this section use a text-input control as their [data source](/po
 
 | Formula                      | Description                                                                           | Result     |
 | ---------------------------- | ------------------------------------------------------------------------------------- | ---------- |
-| **Left(Author.Text, 5)**   | Extracts up to five characters from the start of the string.                          | "E. E."    |
-| **Mid(Author.Text, 7, 4)** | Extracts up to four characters, starting with the seventh character, from the string. | "Cumm"     |
-| **Mid(Author.Text, 7)**    | Extracts all characters, starting with the seventh character, from the string.        | "Cummings" |
-| **Right(Author.Text, 5)**  | Extracts up to five characters from the end of the string.                            | "mings"    |
+| **Left( Author.Text, 5 )**   | Extracts up to five characters from the start of the string.                          | "E. E."    |
+| **Mid( Author.Text, 7, 4 )** | Extracts up to four characters, starting with the seventh character, from the string. | "Cumm"     |
+| **Mid( Author.Text, 7 )**    | Extracts all characters, starting with the seventh character, from the string.        | "Cummings" |
+| **Right( Author.Text, 5 )**  | Extracts up to five characters from the end of the string.                            | "mings"    |
 
 ### Single-column table
 
@@ -75,16 +75,16 @@ Each example in this section extracts strings from the **Address** [column](/pow
 
 | Formula | Description | Result |
 | --- | --- | --- |
-| **Left(ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 8)** | Extracts the first eight characters of each string. | A single-column table with a `Value` column containing the following values: "123 Main", "789 SW 3" |
-| **Mid(ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 5, 7)** | Extracts the middle seven characters of each string, starting with the fifth character. | A single-column table with a `Value` column containing the following values: "Main St", "SW 39th" |
-| **Right(ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 7)** | Extracts the last seven characters of each string. | A single-column table with a `Value` column containing the following values: "n St NE", "9th #3B" |
+| **Left( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 8 )** | Extracts the first eight characters of each string. | A single-column table with a `Value` column containing the following values: "123 Main", "789 SW 3" |
+| **Mid( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 5, 7 )** | Extracts the middle seven characters of each string, starting with the fifth character. | A single-column table with a `Value` column containing the following values: "Main St", "SW 39th" |
+| **Right( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 7 )** | Extracts the last seven characters of each string. | A single-column table with a `Value` column containing the following values: "n St NE", "9th #3B" |
 
 ### Step-by-step example
 
 1. Import or create a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) named **Inventory**, and show it in a gallery, as the first procedure in [Show images and text in a gallery](/power-apps/maker/canvas-apps/show-images-text-gallery-sort-filter) describes.
 2. Set the **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property of the lower label in the gallery to this function:
 
-   **Right(ThisItem.ProductName, 3)**
+   **Right( ThisItem.ProductName, 3 )**
 
    The label shows the last three characters of each product name.
 

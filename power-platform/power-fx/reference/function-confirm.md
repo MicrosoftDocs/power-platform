@@ -48,7 +48,7 @@ Use the [**Notify**](function-showerror.md) function to display a message banner
 
 ## Syntax
 
-**Confirm**(*Message* [, *OptionsRecord* ])
+**Confirm**( *Message* [, *OptionsRecord* ] )
 
 - *Message* - Required. Message to display to the user.
 - *OptionsRecord* - Optional. Provide option settings for the dialog box. Not all options are available on every platform and are handled on a "best effort" basis.  

@@ -39,7 +39,7 @@ While authoring the app, calling **Exit** doesn't exit or sign out the user. How
 
 ## Syntax
 
-**Exit**([*Signout*])
+**Exit**( [*Signout*] )
 
 - _Signout_ – Optional. A Boolean value that if _true_ signs the current user out of Power Apps. The default is _false_ and the user remains signed in.
 

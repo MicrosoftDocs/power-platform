@@ -35,12 +35,12 @@ If the input value is out of range or includes invalid hexadecimal characters, a
 
 ## Syntax
 
-**Dec2Hex**(*Number* [, *Places*])
+**Dec2Hex**( *Number* [, *Places*] )
 
 - *Number* - Required. Number to convert to hexadecimal.
 - *Places* - Optional. The number of characters to use if the number is positive. If *Places* is omitted, **Dec2Hex** uses the minimum number of characters necessary. If this parameter is provided, and the result doesn't fit in the space provided, an **ErrorKind.Numeric** error is returned. *Places* is ignored if the number to convert is negative.
 
-**Hex2Dec**(*HexString*)
+**Hex2Dec**( *HexString* )
 
 - *HexString* - Required. String of hexadecimal digits to convert to a number.
 
