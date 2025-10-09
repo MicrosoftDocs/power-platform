@@ -1,11 +1,11 @@
 ---
 title: Integration requirements
 description: Explore integration requirements for Power Automate to meet enterprise goals. Understand volume, directionality, and system capabilities for robust solutions.
-customer intent: enterprise architect
+customer intent: As a Power Automate enterprise architect, I want to develop effective integration patterns using Power Automate so that I can design effective, scalable solutions for my organization.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 10/08/2025
+ms.date: 10/09/2025
 ms.topic: concept-article
 ms.custom:
   - ai-gen-docs-bap
@@ -43,13 +43,13 @@ Two integration scenarios might involve the same total volume, such as 60,000 re
 
 Triggers define how and when integrations run. Choose the right trigger based on predictability and system load.
 
-**Scheduled triggers(also known as "Batch")**
+**Scheduled triggers (also known as "Batch")**
 
 - Run at fixed intervals.
 - Easier to predict and manage.
 - Suitable for stable data growth patterns.
 
-**Event-driven triggers** : An event can be a button select, a change in a record in one of the systems, or an API call.
+**Event-driven triggers**: An event can be a button select, a change in a record in one of the systems, or an API call.
 
 - Launch based on user actions or system events.
 - Harder to predict.
@@ -145,7 +145,7 @@ Stakeholder collaboration is essential during analysis. Their input can reshape 
 ### Example scenario
 
 Let's put everything together through an example scenario.
-**The business requirement is to create an integration process that keeps case information in sync between an external customer and internal service engineers who work on cases.Customers can add comments to a case through a website, while engineers can add case information through a Power App.**
+The business requirement is to create an integration process that keeps case information in sync between an external customer and internal service engineers who work on cases. Customers can add comments to a case through a website, while engineers can add case information through a Power App.
 
 ### Request volume and trigger frequency
 
@@ -153,6 +153,7 @@ Volume and frequency determine how much data the system transfers and how often 
 The total volume of updates might be calculated as:
 
 `[Customers] × [Cases per customer] × [Average updates per case]`
+
 You should visualize this number on a chart to show how it grows over time. For example, if you start with 10 million updates per year and expect a 20% increase each year, the chart shows a steady rise in updates year over year.
 
 :::image type="content" source="../media/integration-patterns/request-over-time.png" alt-text="Diagram showing the number of requests per year.":::
@@ -160,12 +161,11 @@ You should visualize this number on a chart to show how it grows over time. For 
 Use historical data and growth projections to estimate future load.
 For example: If the system handles 10 million updates per year today and grows at 20% annually, the integration must support 25 million updates per year over five years.
 
-Frequency analysis shows monthly peaks.  
-If current demand is 3.2 million requests per month, future demand might reach 8 million per month.  
-Design the integration to meet these performance thresholds.
+Frequency analysis shows monthly peaks. If current demand is 3.2 million requests per month, future demand might reach 8 million per month. Design the integration to meet these performance thresholds.
 
 To ensure the integration remains effective over a typical five-year return-on-investment (ROI) period, design it to support at least 25 million requests per year. This capacity planning accounts for projected growth and helps the solution remain scalable and reliable as business needs evolve.
-The frequency part of it's the ability of the systems involved handling information within a year. Again, we can chart historical data to understand how frequency applies here:
+
+The frequency part of volume is the ability of the systems involved handling information within a year. Again, we can chart historical data to understand how frequency applies here:
 
 :::image type="content" source="../media/integration-patterns/request-density.png" alt-text="Diagram showing the density of requests over the course of a year.":::
 
@@ -178,48 +178,22 @@ Directionality defines the flow of data between systems. This scenario includes 
 - A third data stream where engineers write updates into Dataverse from the Power App
 - A final data stream to read updates in the Power App
 
- :::image type="content" source="../media/integration-patterns/website-integration.png" alt-text="Directionality among engineers, Dataverse, and customers.":::
+ :::image type="content" source="../media/integration-patterns/website-integration.png" alt-text="Diagram showing directionality among engineers, Dataverse, and customers.":::
 
-Understanding these flows helps you configure secure and efficient integrations.  
-Use direct or decoupled patterns based on system capabilities and performance needs.
+Understanding these flows helps you configure secure and efficient integrations. Use direct or decoupled patterns based on system capabilities and performance needs.
 
 :::image type="content" source="../media/integration-patterns/decoupled.png" alt-text="Diagram illustrating a decoupled design.":::
 
 ### Capability in action
 
-In our example integration, built-in connectors simplify integration. For obtaining case information from Dataverse, ensure that filters and request limits are in place to optimize data retrieval and display only relevant information (find and display only what the app needs). For the website, publish endpoints using [Power Automate HTTP triggers](/power-automate/oauth-authentication) to read and write data. Assess the capacity of both Power Automate flows and Dataverse to ensure they can handle projected loads. Familiarize yourself with the [limits of automated, scheduled, and instant flows](/power-automate/limits-and-config).
+In this example integration, built-in connectors streamline the process. When retrieving case information from Dataverse, apply filters and set request limits to optimize data retrieval and display only the necessary data in the app. For the website, publish endpoints using [Power Automate HTTP triggers](/power-automate/oauth-authentication) to enable reading and writing of data. Evaluate the capacity of both Power Automate flows and Dataverse to ensure they support projected loads. Review the [limits of automated, scheduled, and instant flows](/power-automate/limits-and-config) to avoid exceeding platform constraints.
 
-If you discover through [Dataverse Analytics](/power-platform/admin/analytics-common-data-service) that Dataverse is already handling many requests and may struggle to support the projected request load, consider introducing:
+Use [Dataverse Analytics](/power-platform/admin/analytics-common-data-service) to monitor current usage. If Dataverse approaches its capacity limits, introduce:
 
-- [Azure Data Lake](/power-apps/maker/data-platform/azure-synapse-link-data-lake) as a protective buffer to reduce read volume from Dataverse and avoid throttling errors (for example, HTTP status codes like 429 Too Many Requests).
-- [Azure Service Bus](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) for queuing to decouple create/update requests from the website.
+- [Azure Data Lake](/power-apps/maker/data-platform/azure-synapse-link-data-lake) as a buffer to reduce read volume and prevent throttling errors (such as HTTP 429 Too Many Requests).
+- [Azure Service Bus](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) for queuing, which decouples create and update requests from the website.
 
-In summary, our scenario includes a well-built cloud flow that handles errors correctly, includes retry logic, and follows [best practices](/power-automate/guidance/coding-guidelines/).
-
-When choosing an integration pattern, prioritize solutions that meet business needs with minimal components and complexity, while balancing technical capability against cost, licensing, and maintenance. The goal is to avoid unnecessary investment by choosing the simplest approach that fulfills requirements.
-
-Capability measures each system's ability to send, receive, and process data.  
-Built-in connectors in Power Apps simplify integration but require careful configuration:
-
-- Apply filters and limits to avoid overloading the app.
-- Prevent excessive data loads that affect usability.
-
-For custom website integrations:
-
-- Publish endpoints by using Power Automate HTTP triggers.
-- Evaluate the capacity of both the cloud flow and Dataverse to handle expected request volumes.
-
-If Dataverse can't support the projected load:
-
-- Use Dataverse Analytics to assess current usage.
-- Add a buffer layer such as Azure Data Lake to reduce read volume and avoid throttling errors (for example, HTTP 429).
-- Improve reliability and scalability by adopting this architectural approach.
-
-**Cost considerations.**
-
-While a fully decoupled integration offers scalability and resilience, it increases development and operational costs.
-
-- Balance quality and cost by designing solutions that meet current needs without unnecessary complexity.
+Design cloud flows to handle errors, implement retry logic, and follow [best practices](/power-automate/guidance/coding-guidelines/) for reliability. When selecting an integration pattern, prioritize solutions that meet business needs with minimal complexity. Balance technical capability with cost, licensing, and maintenance requirements. Choose the simplest approach that fulfills requirements and avoids unnecessary investment.
 
 ## Next step
 
