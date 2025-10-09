@@ -13,7 +13,7 @@ ms.topic: overview
 
 Integration is a critical aspect of modern business processes, enabling seamless data flow and automation across different systems. This section provides a structured approach for designing robust, scalable, and cost-effective integrations using Power Automate cloud flows. It outlines key integration requirements, common patterns, real-world examples, and strategic considerations to help you make informed decisions aligned with enterprise goals.
 
-These articles are intended for solution architects, enterprise architects, and technical decision-makers involved in designing or optimizing integrations across Microsoft Cloud services, including Power Platform, Azure, and Dynamics 365.
+These articles are intended primarily for enterprise architects involved in designing new or optimizing existing system integrations using Power Automate low-code solutions.
 
 You'll learn:
 
