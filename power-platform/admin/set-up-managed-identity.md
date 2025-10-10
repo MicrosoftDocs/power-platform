@@ -206,10 +206,11 @@ Verify that your plug-in can securely request access to Azure resources that sup
 ## Frequently asked questions (FAQs)
 
 ### How do I resolve the this error?
-If you receive the following error:
-   **Getting Error – A configuration issue is preventing authentication.**  
-   **AADSTS700213: No matching federated identity record found** 
-Complete the following steps:
+If you receive the following error:<br>
+**Getting Error – A configuration issue is preventing authentication.**<br>
+**AADSTS700213: No matching federated identity record found**<br>
+
+Complete the following steps to resolve the issue:
    1. Ensure the FIC is correctly configured and saved.  
    1. Verify that the issuer/subject matches the format specified above.
 
