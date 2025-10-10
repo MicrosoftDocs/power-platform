@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Collect","Clear","ClearCollect"]
 ---
 
 # Collect, Clear, and ClearCollect functions

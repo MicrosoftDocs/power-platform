@@ -16,6 +16,7 @@ contributors:
   - mduelae
   - gregli
   - carlosff
+no-loc: ["Char","UniChar"]
 ---
 
 # Char and UniChar functions
@@ -125,7 +126,7 @@ Nested within this gallery is another vertical gallery. Its **Items** property f
 
 ![Inner gallery illustrated.](media/function-char/chart-lower-inner.png)
 
-To show the extended ASCII characters, it is a simple matter of changing the starting point for the chart, set in the Sequence function for the outer gallery:
+To show the extended ASCII characters, it's a simple matter of changing the starting point for the chart, set in the Sequence function for the outer gallery:
 
 `Sequence( 8, 128, 16 ) As HighNibble`
 

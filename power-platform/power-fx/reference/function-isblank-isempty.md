@@ -16,6 +16,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Blank","Coalesce","IsBlank","IsEmpty"]
 ---
 
 # Blank, Coalesce, IsBlank, and IsEmpty functions
@@ -30,7 +31,7 @@ Tests whether a value is blank or a [table](/power-apps/maker/canvas-apps/workin
 
 _Blank_ is a placeholder for "no value" or "unknown value." For example, a **[Combo box](/power-apps/maker/canvas-apps/controls/control-combo-box)** control's **Selected** property is _blank_ if the user hasn't made a selection. Many data sources can store and return NULL values, which are represented in Power Apps as _blank_.
 
-Any property or calculated value in Power Apps can be _blank_. For example, a Boolean value normally has one of two values: **true** or **false**. But in addition to these two, it can also be _blank_ indicating that the state is not known. This is similar to Microsoft Excel, where a worksheet cell starts out as blank with no contents but can hold the values **TRUE** or **FALSE** (among others). At any time, the contents of the cell can again be cleared, returning it to a _blank_ state.
+Any property or calculated value in Power Apps can be _blank_. For example, a Boolean value normally has one of two values: **true** or **false**. But in addition to these two, it can also be _blank_ indicating that the state isn't known. This is similar to Microsoft Excel, where a worksheet cell starts out as blank with no contents but can hold the values **TRUE** or **FALSE** (among others). At any time, the contents of the cell can again be cleared, returning it to a _blank_ state.
 
 _Empty string_ refers to a string that contains no characters. The [**Len** function](function-len.md) returns zero for such a string and it can be written in a formulas as two double quotes with nothing in between `""`. Some controls and data sources use an empty string to indicate a "no value" condition. To simplify app creation, the **IsBlank** and **Coalesce** functions test for both _blank_ values or empty strings.
 
@@ -38,17 +39,15 @@ In the context of the **IsEmpty** function, _empty_ is specific to tables that c
 
 ## Blank
 
-  
-
 The **Blank** function returns a _blank_ value. Use this to store a NULL value in a data source that supports these values, effectively removing any value from the field.
 
 ## IsBlank
 
  
 
-The **IsBlank** function tests for a _blank_ value or an empty string. The test includes empty strings to ease app creation since some data sources and controls use an empty string when there is no value present. To test specifically for a _blank_ value use `if( Value = Blank(), ...` instead of **IsBlank**. The **IsBlank** function considers empty tables as not blank, and **IsEmpty** should be used to test a table.
+The **IsBlank** function tests for a _blank_ value or an empty string. The test includes empty strings to ease app creation since some data sources and controls use an empty string when there's no value present. To test specifically for a _blank_ value use `if(Value = Blank(), ...` instead of **IsBlank**. The **IsBlank** function considers empty tables as not blank, and **IsEmpty** should be used to test a table.
 
-When enabling error handling for existing apps, consider replacing **IsBlank** with [**IsBlankOrError**](function-iferror.md#isblankorerror) to preserve existing app behavior. Prior to the addition of error handling, a _blank_ value was used to represent both null values from databases and error values. Error handling separates these two interpretations of _blank_ which could change the behavior of existing apps that continue to use **IsBlank**.
+When enabling error handling for existing apps, consider replacing **IsBlank** with [**IsBlankOrError**](function-iferror.md#isblankorerror) to preserve existing app behavior. Prior to the addition of error handling, a _blank_ value was used to represent both null values from databases and error values. Error handling separates these two interpretations of _blank_, which could change the behavior of existing apps that continue to use **IsBlank**.
 
 The return value for **IsBlank** is a boolean **true** or **false**.
 
@@ -56,9 +55,9 @@ The return value for **IsBlank** is a boolean **true** or **false**.
 
  
 
-The **Coalesce** function evaluates its arguments in order and returns the first value that isn't _blank_ or an empty string. Use this function to replace a _blank_ value or empty string with a different value but leave non-_blank_ and non-empty string values unchanged. If all the arguments are _blank_ or empty strings then the function returns _blank_, making **Coalesce** a good way to convert empty strings to _blank_ values.
+The **Coalesce** function evaluates its arguments in order and returns the first value that isn't _blank_ or an empty string. Use this function to replace a _blank_ value or empty string with a different value but leave non-_blank_ and non-empty string values unchanged. If all the arguments are _blank_ or empty strings, then the function returns _blank_, making **Coalesce** a good way to convert empty strings to _blank_ values.
 
-`Coalesce( value1, value2 )` is the more concise equivalent of `If( Not IsBlank( value1 ), value1, Not IsBlank( value2 ), value2 )` and doesn't require **value1** and **value2** to be evaluated twice. The [**If** function](function-if.md) returns _blank_ if there is no "else" formula as is the case here.
+`Coalesce( value1, value2 )` is the more concise equivalent of `If( Not IsBlank( value1 ), value1, Not IsBlank( value2 ), value2 )` and doesn't require **value1** and **value2** to be evaluated twice. The [**If** function](function-if.md) returns _blank_ if there's no "else" formula as is the case here.
 
 All arguments to **Coalesce** must be of the same type; for example, you can't mix numbers with text strings. The return value from **Coalesce** is of this common type.
 
@@ -76,7 +75,7 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 
 **Coalesce**( _Value1_ [, *Value2*, ... ] )
 
-- _Value(s)_ – Required. Values to test. Each value is evaluated in order until a value that is not _blank_ and not an empty string is found. Values after this point are not evaluated.
+- _Value(s)_ – Required. Values to test. Each value is evaluated in order until a value that isn't _blank_ and not an empty string is found. Values after this point aren't evaluated.
 
 **IsBlank**( _Value_ )
 
@@ -132,9 +131,9 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 | Formula                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                | Result  |
 | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | **Coalesce(&nbsp;Blank(),&nbsp;1&nbsp;)**          | Tests the return value from the **Blank** function, which always returns a _blank_ value. Because the first argument is _blank_, evaluation continues with the next argument until a non-_blank_ value and non-empty string is found.                                                                                                                                                                                                                      | **1**   |
-| **Coalesce( "", "2" )**                            | Tests the first argument which is an empty string. Because the first argument is an empty string, evaluation continues with the next argument until a non-_blank_ value and non-empty string is found.                                                                                                                                                                                                                                                     | **2**   |
+| **Coalesce( "", "2" )**                            | Tests the first argument, which is an empty string. Because the first argument is an empty string, evaluation continues with the next argument until a non-_blank_ value and non-empty string is found.                                                                                                                                                                                                                                                     | **2**   |
 | **Coalesce( Blank(), "", Blank(), "", "3", "4" )** | **Coalesce** starts at the beginning of the argument list and evaluates each argument in turn until a non-_blank_ value and non-empty string is found. In this case, the first four arguments all return _blank_ or an empty string, so evaluation continues to the fifth argument. The fifth argument is non-_blank_ and non-empty string, so evaluation stops here. The value of the fifth argument is returned, and the sixth argument isn't evaluated. | **3**   |
-| **Coalesce( "" )**                                 | Tests the first argument which is an empty string. Because the first argument is an empty string, and there are no more arguments, the function returns _blank_.                                                                                                                                                                                                                                                                                           | _blank_ |
+| **Coalesce( "" )**                                 | Tests the first argument, which is an empty string. Because the first argument is an empty string, and there are no more arguments, the function returns _blank_.                                                                                                                                                                                                                                                                                           | _blank_ |
 
 ### IsBlank
 
@@ -149,7 +148,7 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 
 3. Remove all the characters from the text-input control, including any spaces.
 
-   Because the **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property no longer contains any characters, it's an empty string, and **IsBlank( FirstName.Text )** will be **true**. The required field message is displayed.
+   Because the **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property no longer contains any characters, it's an empty string, and **IsBlank( FirstName.Text )** is **true**. The required field message is displayed.
 
 For information about how to perform validation by using other tools, see the **[Validate](function-validate.md)** function and [working with data sources](/power-apps/maker/canvas-apps/working-with-data-sources).
 
@@ -169,7 +168,7 @@ Other examples:
 1. Create an app from scratch, and add a **Button** control.
 2. Set the button's **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:
 
-   **Collect( IceCream, { Flavor: "Strawberry", Quantity: 300 }, { Flavor: "Chocolate", Quantity: 100 } )**
+   **Collect( IceCream, {Flavor: "Strawberry", Quantity: 300}, {Flavor: "Chocolate", Quantity: 100} )**
 
 3. Preview your app, click or tap the button that you added, and then close Preview.
 
