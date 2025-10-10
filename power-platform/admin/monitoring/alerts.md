@@ -4,7 +4,7 @@ description: Learn more about how to create alerts to monitor your resources in 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/15/2025
+ms.date: 10/10/2025
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: sericks
@@ -20,7 +20,7 @@ Tenant and environment admins in Power Platform use _alerts_ to track the operat
 
 Keep the following principles in mind:
 
--	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the **Monitor** area is evaluated every 24 hours after the newest 24 hour aggregates are produced. The alert rule does an on-demand evaluation upon its creation.
+-	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the **Monitor** area is evaluated every 24 hours after the newest 24 hour aggregates are produced. An alert rule does an on-demand evaluation upon its creation.
 - Alert rules are alerts that admins create to monitor their resources. You can edit, delete, and turn an alert rule on or off. Alert rules can be placed on an environment and a specific resource.
 - A _triggered alert_ is when one or more of the resources that are being monitored by an alert rule pass specific thresholds defined by the admin who configured the alert rule. You can select the triggered alert to learn what resources triggered the alert rule, and get recommendations for how to improve the resources if it’s in a managed environment. 
 
@@ -66,9 +66,8 @@ If you selected to receive email notifications when any resource triggers an ale
 
 In the email notification, select **Go to Alert** to open a Power Platform page listing the triggered alerts, where you can see information on the triggered alert and what resources triggered it. When you select any of the resources in the triggered alert, a pane is displayed that shows time series information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
 
-### Notes to be aware of
--	A tenant can have 50 alerts rules turned on at one time. However, you can create an unlimited number of alert rules. Consider deleting or turning off any existing alert rule if you’ve reached the maximum.
-
+### Maximum number of alert rules turned on at one time
+A tenant can have 50 alert rules turned on at one time. However, you can create an unlimited number of alert rules. Consider deleting or turning off any existing alert rule if you’ve reached the maximum.
 
 ## Frequently asked questions (FAQs)
 
