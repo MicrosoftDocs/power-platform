@@ -163,7 +163,7 @@ To provision managed identity record in Dataverse, complete the following steps.
    POST https://<<orgURL>>/api/data/v9.0/managedidentities
    ```
    Be sure to replace **orgURL** with the URL of the organization.  
-   Ensure that **credentialsource** is set to **2** in the payload and **subjectscope** is set to **1** for environment-specific scenarios.
+   Ensure that **credentialsource** is set to **2** in the payload, **subjectscope** is set to **1** for environment-specific scenarios and **version** is set to 1 in the payload.
 
    **Sample payload**
    ```json
@@ -173,6 +173,7 @@ To provision managed identity record in Dataverse, complete the following steps.
      "credentialsource": 2,
      "subjectscope": 1,
      "tenantid": "<<tenantId>>"
+     "version": 1
    }
    ```
 
