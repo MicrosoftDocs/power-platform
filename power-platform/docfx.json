@@ -61,8 +61,6 @@
     "fileMetadata": {
       "searchScope": {
         "**.*": [
-          "Power Apps",
-          "Power Automate",
           "Power Platform"
         ]
       },
