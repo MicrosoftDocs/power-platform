@@ -4,7 +4,7 @@ description: Learn how to set up Power Platform managed identity for Dataverse p
 author: abhijananddv
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/18/2025
+ms.date: 10/10/2025
 ms.subservice: admin
 ms.author: abhijanand
 ms.reviewer: sericks
@@ -158,12 +158,14 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
 
 To provision managed identity record in Dataverse, complete the following steps.
 
-1. Make a POST call using a REST client (for example, Insomnia, Postman). Use a URL with payload in the following format.  
+1. Make a POST call using a REST client (for example, Insomnia, Postman). Use a URL with payload in the following format.
+  
    ```
    POST https://<<orgURL>>/api/data/v9.0/managedidentities
    ```
-   Be sure to replace **orgURL** with the URL of the organization.  
-   Ensure that **credentialsource** is set to **2** in the payload and **subjectscope** is set to **1** for environment-specific scenarios.
+   Be sure to replace **orgURL** with the URL of the organization.
+   
+2. Ensure that **credentialsource** is set to **2** in the payload, **subjectscope** is set to **1** for environment-specific scenarios, and **version** is set to 1 in the payload.
 
    **Sample payload**
    ```json
@@ -173,10 +175,11 @@ To provision managed identity record in Dataverse, complete the following steps.
      "credentialsource": 2,
      "subjectscope": 1,
      "tenantid": "<<tenantId>>"
+     "version": 1
    }
    ```
 
-2. Make a PATCH call to bind the plug-in assembly ID with the managed identity record that's created through the POST call in step 1.
+3. Make a PATCH call to bind the plug-in assembly ID with the managed identity record that's created through the POST call in step 1.
 
    **Plug-in assembly**  
    ```
@@ -202,12 +205,15 @@ Verify that your plug-in can securely request access to Azure resources that sup
 
 ## Frequently asked questions (FAQs)
 
-1. **How do I resolve the this error?**
+### How do I resolve the this error?
+If you receive the following error:
    **Getting Error – A configuration issue is preventing authentication.**  
-   **AADSTS700213: No matching federated identity record found**  
-   - Ensure the FIC is correctly configured and saved.  
-   - Verify that the issuer/subject matches the format specified above.  
-   - You can also find the expected format in the error stack.
+   **AADSTS700213: No matching federated identity record found** 
+Complete the following steps:
+   1. Ensure the FIC is correctly configured and saved.  
+   1. Verify that the issuer/subject matches the format specified above.
 
-3. **How do I resolve this error?** **Unable to reach or connect to Power Platform**  
-   - Please refer to [Power Platform URLs and IP address ranges](online-requirements.md) to ensure Power Platform endpoints are reachable and allowlisted.
+      You can also find the expected format in the error stack.
+
+## How do I resolve the "Unable to reach or connect to Power Platform" error?
+Please refer to [Power Platform URLs and IP address ranges](online-requirements.md) to ensure Power Platform endpoints are reachable and allowlisted.
