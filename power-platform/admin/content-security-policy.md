@@ -56,7 +56,7 @@ The Strict CSP toggle creates a CSP that mostly does not include wildcards or un
 
 ### Prerequisites
 
-- For Dynamics 365 customer engagement apps and other model-driven apps, CSP is only available in online environments and in organizations with Dynamics 365 customer engagement (on-premises), version 9.1 or later version.
+For Dynamics 365 customer engagement apps and other model-driven apps, CSP is only available in online environments and in organizations with Dynamics 365 customer engagement (on-premises), version 9.1 or later version.
 
 ## Configure CSP
 
