@@ -71,7 +71,7 @@ Use the tenant’s v2.0 issuer:
 ```
 https://login.microsoftonline.com/{tenantID}/v2.0
 ```
-*Example*:
+**Example**
 ```
 https://login.microsoftonline.com/5f8a1a9f-2e1a-415f-b10c-84c3736a21b9/v2.0
 ```
