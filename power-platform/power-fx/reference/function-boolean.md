@@ -12,6 +12,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Boolean"]
 ---
 # Boolean function
 [!INCLUDE[function-boolean-applies-to](includes/function-boolean-applies-to.md)]
@@ -28,15 +29,15 @@ In most cases, type coercion happens automatically, and you don't need to use th
 
 ## Syntax
 
-**Boolean**(Text* )<br>
+**Boolean**( *Text* )<br>
 **Boolean**( *TextSingleColumnTable* )
 
-* *Text* - Required. The string(s) to convert.  Must be a case insensitive version of `"true"` or `"false"`.  These text strings aren't localized.  *blank* and empty text is also accepted and converted to a *blank*.  All other text strings return an error.
+* *Text* - Required. The string(s) to convert. Must be a case insensitive version of `"true"` or `"false"`. These text strings aren't localized. *blank* and empty text is also accepted and converted to a *blank*. All other text strings return an error.
 
 **Boolean**( *Number* )<br>
 **Boolean**( *NumberSingleColumnTable* )
 
-* *Number* - Required. The number(s) to convert.  `0` is converted to *false* and all other numbers are converted to *true*.  *blank* values are accepted and converted to a *blank*.
+* *Number* - Required. The number(s) to convert. `0` is converted to *false* and all other numbers are converted to *true*. *blank* values are accepted and converted to a *blank*.
 
 **Boolean**( *DynamicValue* )
 

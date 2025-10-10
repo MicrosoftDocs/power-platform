@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Exit"]
 ---
 
 # Exit function
@@ -40,14 +41,14 @@ While authoring the app, calling **Exit** doesn't exit or sign out the user. How
 
 **Exit**( [*Signout*] )
 
-- _Signout_ – Optional. A Boolean value that if _true_ will sign the current user out of Power Apps. The default is _false_ and the user remains signed in.
+- _Signout_ – Optional. A Boolean value that if _true_ signs the current user out of Power Apps. The default is _false_ and the user remains signed in.
 
 ## Examples
 
 | Formula                    | Description                                                                                                                        |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | **Exit()**                 | Exits the current app and leaves the user signed in. The user is returned to the list of apps.                                     |
-| **Exit(&nbsp;true&nbsp;)** | Exits the current app and the user is signed out. The user will need to sign back in with their credentials before running an app. |
+| **Exit(&nbsp;true&nbsp;)** | Exits the current app and the user is signed out. The user needs to sign back in with their credentials before running an app. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

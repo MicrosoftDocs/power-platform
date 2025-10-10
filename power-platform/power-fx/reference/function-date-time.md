@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Date","DateTime","Time"]
 ---
 
 # Date, DateTime, and Time functions

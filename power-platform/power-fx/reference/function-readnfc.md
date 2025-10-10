@@ -16,6 +16,7 @@ contributors:
   - gregli
   - mikepenaMS
   - anuitz
+no-loc: ["ReadNFC"]
 ---
 
 # ReadNFC function
