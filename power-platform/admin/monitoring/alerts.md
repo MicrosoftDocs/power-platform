@@ -66,9 +66,6 @@ If you selected to receive email notifications when any resource triggers an ale
 
 In the email notification, select **Go to Alert** to open a Power Platform page listing the triggered alerts, where you can see information on the triggered alert and what resources triggered it. When you select any of the resources in the triggered alert, a pane is displayed that shows time series information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
 
-### Maximum number of alert rules turned on at one time
-A tenant can have 50 alert rules turned on at one time. However, you can create an unlimited number of alert rules. Consider deleting or turning off any existing alert rule if you’ve reached the maximum.
-
 ## Frequently asked questions (FAQs)
 
 ### What’s the difference between an alert rule and a triggered alert?
@@ -103,6 +100,8 @@ Yes! Follow these best practices:
 - **Validate email routing**: Ensure recipients can receive emails from **PowerPlat-noreply@microsoft.com**.
 - **Monitor the 24‑hour cadence**: Expect daily evaluation; it’s not real-time.
 
+### How many alert rules can be turned on at one time?
+A tenant can have 50 alert rules turned on at one time. However, you can create an unlimited number of alert rules. Consider deleting or turning off any existing alert rule if you’ve reached the maximum.
 
 
 
