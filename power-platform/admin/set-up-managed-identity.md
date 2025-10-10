@@ -215,5 +215,5 @@ Complete the following steps:
 
       You can also find the expected format in the error stack.
 
-## How do I resolve the "Unable to reach or connect to Power Platform" error?
+### How do I resolve the "Unable to reach or connect to Power Platform" error?
 Please refer to [Power Platform URLs and IP address ranges](online-requirements.md) to ensure Power Platform endpoints are reachable and allowlisted.
