@@ -158,13 +158,14 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
 
 To provision managed identity record in Dataverse, complete the following steps.
 
-1. Make a POST call using a REST client (for example, Insomnia, Postman). Use a URL with payload in the following format.  
+1. Make a POST call using a REST client (for example, Insomnia, Postman). Use a URL with payload in the following format.
+  
    ```
    POST https://<<orgURL>>/api/data/v9.0/managedidentities
    ```
    Be sure to replace **orgURL** with the URL of the organization.
    
-   Ensure that **credentialsource** is set to **2** in the payload, **subjectscope** is set to **1** for environment-specific scenarios, and **version** is set to 1 in the payload.
+2. Ensure that **credentialsource** is set to **2** in the payload, **subjectscope** is set to **1** for environment-specific scenarios, and **version** is set to 1 in the payload.
 
    **Sample payload**
    ```json
@@ -204,12 +205,15 @@ Verify that your plug-in can securely request access to Azure resources that sup
 
 ## Frequently asked questions (FAQs)
 
-1. **How do I resolve the this error?**
+### How do I resolve the this error?
+If you receive the following error:
    **Getting Error – A configuration issue is preventing authentication.**  
-   **AADSTS700213: No matching federated identity record found**  
-   - Ensure the FIC is correctly configured and saved.  
-   - Verify that the issuer/subject matches the format specified above.  
-   - You can also find the expected format in the error stack.
+   **AADSTS700213: No matching federated identity record found** 
+Complete the following steps:
+   1. Ensure the FIC is correctly configured and saved.  
+   1. Verify that the issuer/subject matches the format specified above.
 
-3. **How do I resolve this error?** **Unable to reach or connect to Power Platform**  
-   - Please refer to [Power Platform URLs and IP address ranges](online-requirements.md) to ensure Power Platform endpoints are reachable and allowlisted.
+      You can also find the expected format in the error stack.
+
+## How do I resolve the "Unable to reach or connect to Power Platform" error?
+Please refer to [Power Platform URLs and IP address ranges](online-requirements.md) to ensure Power Platform endpoints are reachable and allowlisted.
