@@ -2,7 +2,7 @@
 title: Back up and restore environments
 description: Learn how to back up and restore Power Platform environments.
 ms.topic: how-to
-ms.date: 06/24/2025
+ms.date: 10/13/2025
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta
@@ -247,6 +247,8 @@ You can restore backups only to sandbox environments. You can't restore them to 
 1. On the **Backup retention** side panel, select the target environment to overwrite.
 1. Select whether you want to include **audit logs**. The inclusion of audit logs can significantly increase the time that is required to restore an environment. Therefore, audit logs are excluded by default. Learn more in [Restore audit logs](#restore-audit-logs).
 1. Select **Restore**, then select **Confirm** to proceed with overwriting the environment.
+
+---
 
 ### Restore audit logs
 
