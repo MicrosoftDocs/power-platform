@@ -250,7 +250,7 @@ You can restore backups only to sandbox environments. You can't restore them to 
 
 ---
 
-### Restore audit logs
+## Restore audit logs
 
 Restoration of audit logs can significantly increase the time that is required to restore an environment. Therefore, audit logs are excluded by default. Follow these steps to include audit logs when you restore a manual backup.
 
@@ -265,7 +265,7 @@ Restoration of audit logs can significantly increase the time that is required t
 
 1. Continue with step 8 of the previous procedure.
 
-### Delete a manual backup
+## Delete a manual backup
 
 You can delete manual backups. You can't delete system backups.
 
