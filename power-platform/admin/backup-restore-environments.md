@@ -152,7 +152,7 @@ You must restore an environment in the same region where it was backed up. The t
 > - Only sandbox environments can be restored to. For information about the effects of changing the environment type, go to the section: [Can I restore to a production environment?](#can-i-restore-to-a-production-environment).
 > - Under **Edit details**, you can change the environment name.
 
-## If you don't see the environment that you want to restore to
+### If you don't see the environment that you want to restore to
 
 These restrictions apply to restoration from both system backups and manual backups:
 
@@ -195,7 +195,7 @@ Although automated system backups are great, you should create your own backups 
 - You must restore an environment in the same region where it was backed up.
 - If you don't see your target environment, refer to the [If you don't see the environment that you want to restore to](#if-you-dont-see-the-environment-that-you-want-to-restore-to) section for possible reasons and troubleshooting steps.
 
-### Create a manual backup
+## Create a manual backup
 
 ### [New admin center](#tab/new)
 
