@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Day","Month","Year","Hour","Minute","Second","Weekday"]
 ---
 
 # Day, Month, Year, Hour, Minute, Second, and Weekday functions

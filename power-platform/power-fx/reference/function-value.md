@@ -12,6 +12,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Decimal","Float","Value"]
 ---
 
 # Decimal, Float, and Value functions

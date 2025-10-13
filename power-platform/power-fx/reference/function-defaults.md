@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Defaults"]
 ---
 
 # Defaults function
@@ -26,11 +27,11 @@ Returns the default values for a [data source](/power-apps/maker/canvas-apps/wor
 
 ## Description
 
-Use the **Defaults** function to pre-populate a data entry form, making it easier to fill.
+Use the **Defaults** function to prepopulate a data entry form, making it easier to fill.
 
-This function returns a [record](/power-apps/maker/canvas-apps/working-with-tables#records) that contains the default values for the data source. If a [column](/power-apps/maker/canvas-apps/working-with-tables#columns) within the data source doesn't have a default value, that property won't be present.
+This function returns a [record](/power-apps/maker/canvas-apps/working-with-tables#records) that contains the default values for the data source. If a [column](/power-apps/maker/canvas-apps/working-with-tables#columns) within the data source doesn't have a default value, that property isn't present.
 
-Data sources vary in how much default information they provide, including not providing any at all. When you work with a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) or another data source that doesn't support default values, the **Defaults** function will return an [empty](function-isblank-isempty.md) record.
+Data sources vary in how much default information they provide, including not providing any at all. When you work with a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) or another data source that doesn't support default values, the **Defaults** function returns an [empty](function-isblank-isempty.md) record.
 
 You can combine the **Defaults** function with the **[Patch](function-patch.md)** function to [create a record](/power-apps/maker/canvas-apps/working-with-data-sources).
 

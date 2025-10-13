@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["EndsWith","StartsWith"]
 ---
 
 # EndsWith and StartsWith functions

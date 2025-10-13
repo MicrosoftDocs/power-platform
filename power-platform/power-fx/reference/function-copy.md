@@ -10,6 +10,7 @@ ms.date: 3/22/2024
 ms.author: jorisde
 search.audienceType: 
   - maker
+no-loc: ["Copy"]
 ---
 # Copy function
 [!INCLUDE[function-copy-applies-to](includes/function-copy-applies-to.md)]

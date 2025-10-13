@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Count","CountA","CountIf","CountRows"]
 ---
 
 # Count, CountA, CountIf, and CountRows functions

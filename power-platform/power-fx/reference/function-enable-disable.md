@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Enable","Disable"]
 ---
 
 # Enable and Disable functions
@@ -28,7 +29,7 @@ Turns a [signal](signals.md) on or off.
 
 Some signals can change often, requiring the app to recalculate as they do. Rapid changes over a long period of time can drain a device's battery. You can use these functions to manually turn a signal on or off.
 
-When a signal isn't being used, it's automatically turned off.
+When a signal isn't in use, it's automatically turned off.
 
 ## Description
 
