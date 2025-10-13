@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: rashmansur
-ms.date: 10/08/2025
+ms.date: 10/13/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -22,7 +22,7 @@ contributors:
 > [!Note]
 > As of September 3, 2025, the self-service disaster recovery feature has been expanded to include failover support for [Dynamics 365 Contact Center](/dynamics365/contact-center/). With this enhancement, organizations can now seamlessly initiate failover for their contact center environments, ensuring smooth execution of disaster recovery drills or continued operations from an alternate region, when needed.
 
-Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to document a business continuity plan that minimizes the effects of outages. Make sure the plan lists stakeholders, processes, and specific steps to recover and resume operations.
+Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to document a business continuity plan that minimizes the effects of outages. To recover and resume operations, make sure the plan lists stakeholders, processes, and specific steps.
 
 Microsoft provides business continuity and disaster recovery capabilities to all [production type environments](environments-overview.md) in Dynamics 365 and Power Platform software as a service (SAAS) applications. This article describes how Microsoft keeps your production data resilient during outages.
 
@@ -136,7 +136,7 @@ After you fix an outage or finish your drill, switch the environment back to its
 
 Admins check the current disaster recovery state and location of an environment in the **Environment details** page. Admins also select **Disaster Recovery** in the command bar to open the **Disaster Recovery** pane.
 
-To check data replication latency at any time, select **Disaster Recovery**, and then select **Emergency response** as the disaster recovery reason. This action opens a confirmation dialog that shows the last replication time between regions for that environment. You can select **Cancel** if your only purpose is to check the potential loss of data if there is a failover operation. Remember, the last sync time always changes because data is replicated continuously.
+To check data replication latency at any time, select **Disaster Recovery**, and then select **Emergency response** as the disaster recovery reason. This action opens a confirmation dialog that shows the last replication time between regions for that environment. You can select **Cancel** if your only purpose is to check the potential loss of data if there's a failover operation. Remember, the last sync time always changes because data is replicated continuously.
 
 ## Document your business continuity plan
 
@@ -145,7 +145,7 @@ We recommend that you perform disaster recovery drills or an emergency response 
 ## Frequently asked questions (FAQs)
 
 ### Why do I need self-service disaster recovery if I already have a secondary copy maintained in a remote secondary region? 
-Be aware that there are no secondary copies being maintained in remote secondary region if self-service disaster recovery hasn't been turned on.  
+Tere are no secondary copies being maintained in remote secondary region if self-service disaster recovery hasn't been turned on.  
 
 ### What are the costs associated with using self-service disaster recovery?
 
@@ -155,13 +155,13 @@ Be aware that there are no secondary copies being maintained in remote secondary
 ### How does billing work for self-service disaster recovery?
 
 - If your environment is configured to draw capacity from your tenant's Dataverse capacity entitlement, then entitled capacity is consumed first and a pay-as-you-go billing plan is still required so you can avoid capacity overages.
-- PayGo generates multiple warnings at various thresholds to ensure that the customer is well-informed and takes appropriate action to avoind PayGo charges.  
+- PayGo generates multiple warnings at various thresholds to ensure that the customer is well-informed and takes appropriate action to avoid PayGo charges.  
 - Admins can allocate capacity to the environment, after which the pay-as-you-go plan will be billed.
 - Customers can't turn off the pay-as-you-go plan in the billing experience if self-service disaster recovery is turned on.
 
 ### Can I switch regions during a regional outage?
 
-In the case of a regional outage, the system supports failover to the designated secondary region as part of self-service disaster recovery, but it doesn't allow switching to any other arbitrary regions.
+If there's a regional outage, the system supports failover to the designated secondary region as part of self-service disaster recovery. However, it doesn't allow switching to any other arbitrary regions.
 
 ### What should I know about the capacity experience?
 
@@ -175,7 +175,7 @@ To disable self-service disaster recovery, go to the *disaster recovery pane* in
 
 ### What happens when I disable self-service disaster recovery?
 
-Disabling self-service disaster recovery deletes all replicated environment data in the paired region. You are prompted to confirm the environment's name before proceeding.
+Disabling self-service disaster recovery deletes all replicated environment data in the paired region. You're prompted to confirm the environment's name before proceeding.
 
 ### Can I disable self-service disaster recovery while in a paired region?
 
@@ -188,7 +188,7 @@ Yes, self-service disaster recovery is supported for Power Apps and Power Pages.
 ### Is Power Automate supported with self-service disaster recovery?
 Power Automate desktop flows are fully supported for failover and failback with self-service disaster recovery.
 
-Power Automate cloud flows are now available in preview. Please do not use them with production workloads.
+Power Automate cloud flows are now available in preview. Don't use them with production workloads.
 
 ### How can I find out where my data is being replicated to? Can I change my secondary destination region?
 
@@ -196,9 +196,9 @@ Microsoft reserves the rights to disclose the exact details of where the custome
 
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
 
-- Copilot Studio conversation runtime requests fail until Microsoft restores the service in the primary region. Custom agents successfully failover and failback since they're completely saved on Dataverse.
+- Copilot Studio conversation runtime requests fail until Microsoft restores the service in the primary region. Custom agents successfully failover and failback since they're saved on Dataverse.
 - In Dynamics 365, analytics and automation in sales observe latency impact. Relationship analytics KPIs aren't computed and new models for scoring aren't created during an outage.  
--  In Dynamics 365 Customer Insights, real-time updates are impacted. Customer Insights doesn't support self-service disaster recovery today. Customer Inisights is unavailable until key aspects of Customer Insights are manually failed-over.
+-  In Dynamics 365 Customer Insights, real-time updates are impacted. Customer Insights doesn't support self-service disaster recovery today. Customer Insights is unavailable until key aspects of Customer Insights are manually failed-over.
 -  In Dynamics 365 Customer service, basic scenarios that are 100% dependent on Dataverse, such as case creation, or Knowledge Base articles work. Case knowledge base access in customer service is unavailable.
 - Field Service is self-service disaster recovery ready.
 - Data lake failover has known issues. Self-service disaster recovery isn't supported yet.
