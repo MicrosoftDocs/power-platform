@@ -199,7 +199,7 @@ Microsoft reserves the rights to disclose the exact details of where the custome
 - Copilot Studio conversation runtime requests fail until Microsoft restores the service in the primary region. Custom agents successfully failover and failback since they're completely saved on Dataverse.
 - In Dynamics 365, analytics and automation in sales observe latency impact. Relationship analytics KPIs aren't computed and new models for scoring aren't created during an outage.  
 -  In Dynamics 365 Customer Insights, real-time updates are impacted. Customer Insights doesn't support self-service disaster recovery today. Customer Inisights is unavailable until key aspects of Customer Insights are manually failed-over.
--  In Dynamics 365 Customer service, basic scenarios that are 100% dependent on Dataverse, such as case creation, KB etc will work. Case knowledge base access in customer service will be unavailable.
+-  In Dynamics 365 Customer service, basic scenarios that are 100% dependent on Dataverse, such as case creation, or Knowledge Base articles work. Case knowledge base access in customer service is unavailable.
 - Field Service is self-service disaster recovery ready.
 - Data lake failover has known issues. Self-service disaster recovery isn't supported yet.
 - Connectors may have recovery issues when dependent on external systems, like SharePoint, SQL Server or third-party applications.
