@@ -286,6 +286,7 @@ You can delete manual backups. You can't delete system backups.
 1. In the command bar, select **Backup & Restore**, then select **Restore or manage**.  
 1. Navigate to the **Manual** tab. Select the backup to delete, then select **Delete** in the command bar.
 1. Select **Continue** to confirm the deletion.
+---
 
 ## App-specific backups
 
