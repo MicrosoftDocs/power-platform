@@ -51,17 +51,16 @@ Yes. Import the solution to each additional environment and then connect to the 
 
 ## Why am I getting the error "Source Control Integration is not enabled for this environment?"
 
-This error typically occurs when **File Storage** is disabled in your environment. The most common reason is that your environment is encrypted using [Bring Your Own Key (BYOK)](../../admin/manage-encryption-key.md).
+This error typically occurs when your environment is encrypted using [Bring Your Own Key (BYOK)](../../admin/manage-encryption-key.md).
 
-The source control integration feature depends on **File Storage**, which is disabled by design in BYOK environments.
+The source control integration feature depends on Dataverse file storage design changes, which are disabled in BYOK environments.
 
-To enable source control integration, follow these steps: 
+To enable source control integration, follow these steps:
 
 1. Migrate your environments encryption key to [customer-managed key (CMK)](../../admin/cmk-migrate-from-byok.md).
-1. After migration make sure **File Storage** is enabled. 
 1. [Reconnect](connecting-to-git.md) to source control and retry the operation.
 
-If your environment isn't encrypted with BYOK, contact Microsoft Support for assistance.
+If your environment isn't encrypted with BYOK and you receive this error, contact [Microsoft Support](/power-platform/admin/get-help-support) for assistance.
 
 ## Why am I getting the message "Failed to retrieve the default branch for the selected repository. Choose a default branch to allow creating new branches?"
 
