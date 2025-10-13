@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Int","Round","RoundDown","RoundUp","Trunc"]
 ---
 
 # Int, Round, RoundDown, RoundUp, and Trunc functions

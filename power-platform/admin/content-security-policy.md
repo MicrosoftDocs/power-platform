@@ -1,7 +1,7 @@
 ---
 title: Content security policy
 description: Use content security policy to prevent clickjacking attacks in Power Apps. 
-ms.date: 06/24/2025
+ms.date: 10/10/2025
 ms.topic: how-to
 author: JesseParsons
 ms.subservice: admin
@@ -11,13 +11,15 @@ ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
-- ZinanZhang
-- sericks
-- yingchin
+  - imbaky
+  - ZinanZhang
+  - sericks
+  - yingchin
 ---
+
 # Content security policy
 
-[Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) (CSP) is currently supported in model-driven and canvas Power Apps. Admins can control whether the CSP header is sent and, to an extent, what it contains. **The settings are at the environment level, which means it would be applied to all apps in the environment once turned on.**
+[Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) (CSP) is currently supported in model-driven and canvas apps. Admins can control whether the CSP header is sent and, to an extent, what it contains. **The settings are at the environment level, which means it's applied to all apps in the environment once turned on.**
 
 > [!NOTE]
 > The content security policy only applies to environments using Dataverse.
@@ -26,21 +28,39 @@ Each component of the CSP header value controls the assets that can be downloade
 
 | Directive | Default value | Customizable |
 | --------- | ------------- | ------------ |
-| [script-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) | `* 'unsafe-inline' 'unsafe-eval'` | No |
-| [worker-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/worker-src) | `'self' blob:` | No |
+| [script-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) | `* 'unsafe-inline' 'unsafe-eval' blob: data:` | No |
+| [worker-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/worker-src) | `'self' blob: data:` | No |
 | [style-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) | `* 'unsafe-inline'` | No |
 | [font-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) | `* data:` | No |
 | [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) | `'self' https://*.powerapps.com` | Yes |
 
-This configuration results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com;`. In our roadmap, we have the ability to modify currently noncustomizable headers.
+This configuration results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval' blob: data:; worker-src 'self' blob: data:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com;`.
+
+### Strict mode
+
+The Strict CSP toggle creates a CSP that mostly does not include wildcards or unsafe directives, such as `unsafe-inline`.  When Strict CSP is on, the above directives become the following.  The `<platform>` notation means that platform domains are provided as required by the product.  The domains in this section may change over time as the product grows.
+
+| Directive | Default value (model-driven) | Default value (canvas) | Customizable |
+| --------- | ---------------------------- | ---------------------- | ------------ |
+| [script-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) | `'self' blob: data: <platform>'` | `'self' <platform>'` | Yes |
+| [worker-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/worker-src) | `'self' blob: data:` | `'self' blob:` | No |
+| [style-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) | `'self' 'unsafe-inline' <platform>` | `'self' 'unsafe-inline' <platform>` | Yes |
+| [font-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) | `'self' data: <platform>` | `'self' data: <platform>` | Yes |
+| [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) | `'self' https://*.powerapps.com` | `'self' https://*.powerapps.com` | Yes |
+| [img-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/img-src) | `'self' blob: data: <platform>` | `'self' data: <platform>` | Yes |
+| [connect-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/connect-src) | `'self' blob: data: wss: <platform>` | `'self' blob: <platform>` | Yes |
+| [frame-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-src) | `'self' blob: <platform>` | `'self' <platform>` | Yes |
+| [base-uri](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/base-uri) | `'none'` | N/A | No |
+| [form-action](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/form-action) | `<platform>` | N/A | Yes |
+| [default-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/default-src) | `'self'` | `'self'` | No |
 
 ### Prerequisites
 
-- For Dynamics 365 customer engagement apps and other model-driven apps, CSP is only available in online environments and in organizations with Dynamics 365 customer engagement (on-premises), version 9.1 or later version.
+For Dynamics 365 customer engagement apps and other model-driven apps, CSP is only available in online environments and in organizations with Dynamics 365 customer engagement (on-premises), version 9.1 or later version.
 
 ## Configure CSP
 
-You can toggle and configure CSP through the Power Platform admin center. **It's important to enable a dev/test environment first** since enabling CSP could start blocking scenarios if the policy is violated. We also support a "report-only mode" to allow for easier ramp-up in production.
+You can toggle and configure CSP through the Power Platform admin center. **It's important to enable a dev/test environment first** since enabling CSP could start blocking scenarios if the policy is violated. We also support a *report-only* mode to allow for easier ramp-up in production.
 
 To configure CSP:
 
@@ -68,7 +88,7 @@ The following image shows the default state of the settings:
 
 ### Reporting
 
-The _Enable reporting_ toggle controls whether model-driven and canvas apps send violation reports. You're required to specify an endpoint to enabling it. Violation reports are sent to this endpoint regardless of whether CSP is enforced or not (using report-only mode if CSP isn't enforced). For more information, see [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only).
+The **Enable reporting** toggle controls whether model-driven and canvas apps send violation reports. You're required to specify an endpoint to enabling it. Violation reports are sent to this endpoint regardless of whether CSP is enforced or not (using report-only mode if CSP isn't enforced). For more information, see [reporting documentation](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only).
 
 :::image type="content" source="media/content-security-policy/csp-reporting.png" alt-text="Enable the reporting toggle to on.":::
 
@@ -76,7 +96,7 @@ The _Enable reporting_ toggle controls whether model-driven and canvas apps send
 
 Enforcement of CSP is controlled independently for model-driven and canvas apps to provide granular control over policies. Use the model-driven/canvas pivot to modify the intended app type.
 
-The "Enforce content security policy" toggle turns on the default policy for enforcement for the given app type. Turning on this toggle changes the behavior of apps in this environment to adhere to the policy. Therefore, the suggested enablement flow would be:
+The **Enforce content security policy** toggle turns on the default policy for enforcement for the given app type. Turning on this toggle changes the behavior of apps in this environment to adhere to the policy. Therefore, the suggested enablement flow would be:
 
 1. Enforce on a dev/test environment.
 1. Enable report-only mode in production.
@@ -84,11 +104,11 @@ The "Enforce content security policy" toggle turns on the default policy for enf
 
 ### Configure directives
 
-This section allows you to control individual directives within the policy. Currently, only `frame-ancestors` can be customized.
+The **Configure directives** section allows you to control individual directives within the policy. Currently, only `frame-ancestors` can be customized.
 
 :::image type="content" source="media/content-security-policy/csp-directives.png" alt-text="Configure CSP directives.":::
 
-Leaving the default directive toggled on uses the default value specified in the table shown earlier in this article. Turning off the toggle allows admins to specify custom values for the directive and append them to the default value. The example below sets custom values for `frame-ancestors`. The directive would be set to `frame-ancestors: 'self' https://*.powerapps.com https://www.foo.com https://www.bar.com` in this example, meaning the app could be hosted in the same origin, `https://*.powerapps.com`, `https://www.foo.com` and `https://www.bar.com`, but not in other origins. Use the **Add** button to add entries to the list and the **Delete** icon to remove them.
+Leaving the default directive toggled on uses the default value specified in the [table](#content-security-policy). Turning off the toggle allows admins to specify custom values for the directive and append them to the default value. The example below sets custom values for `frame-ancestors`. The directive would be set to `frame-ancestors: 'self' https://*.powerapps.com https://www.foo.com https://www.bar.com` in this example, meaning the app could be hosted in the same origin, `https://*.powerapps.com`, `https://www.foo.com` and `https://www.bar.com`, but not in other origins. Use the **Add** button to add entries to the list and the **Delete** icon to remove them.
 
 :::image type="content" source="media/content-security-policy/csp-default-directive.png" alt-text="Setting custom CSP directives.":::
 
@@ -132,7 +152,7 @@ In the example:
 
 The effective headers would be:
 
-- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.foo.com https://www.bar.com;`
+- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval' blob: data:; worker-src 'self' blob: data:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.foo.com https://www.bar.com;`
 - Canvas apps: CSP header wouldn't be sent.
 
 ### Example 2 - reporting turned on
@@ -150,7 +170,7 @@ In the example:
 
 The effective CSP values would be:
 
-- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com; report-uri https://www.mysite.com/myreportingendpoint;`
+- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval' blob: data:; worker-src 'self' blob: data:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com; report-uri https://www.mysite.com/myreportingendpoint;`
 - Canvas apps: `Content-Security-Policy-Report-Only: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.baz.com; report-uri https://www.mysite.com/myreportingendpoint;`
 
 ## Modify organization settings directly

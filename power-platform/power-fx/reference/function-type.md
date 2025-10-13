@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["RecordOf","Type"]
 ---
 
 # RecordOf and Type functions

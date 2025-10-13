@@ -14,6 +14,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Print"]
 ---
 
 # Print function
