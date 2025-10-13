@@ -161,7 +161,7 @@ The following diagram shows the functions of the roles in the setup process for 
     }
     ```
 
-1. Save the template and fill in the details to create the enterprise policy, which includes the following inforamtion:
+1. Save the template and fill in the details to create the enterprise policy, which includes the following information:
     - **Policy name**: Name of the enterprise policy that appears in the Power Platform admin center.
     - **Location**: Select the location of the enterprise policy, corresponding with the Dataverse environment’s region:
         - unitedstates

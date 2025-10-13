@@ -2,7 +2,7 @@
 title: Back up and restore environments
 description: Learn how to back up and restore Power Platform environments.
 ms.topic: how-to
-ms.date: 06/24/2025
+ms.date: 10/13/2025
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta
@@ -152,7 +152,7 @@ You must restore an environment in the same region where it was backed up. The t
 > - Only sandbox environments can be restored to. For information about the effects of changing the environment type, go to the section: [Can I restore to a production environment?](#can-i-restore-to-a-production-environment).
 > - Under **Edit details**, you can change the environment name.
 
-## If you don't see the environment that you want to restore to
+### If you don't see the environment that you want to restore to
 
 These restrictions apply to restoration from both system backups and manual backups:
 
@@ -195,7 +195,7 @@ Although automated system backups are great, you should create your own backups 
 - You must restore an environment in the same region where it was backed up.
 - If you don't see your target environment, refer to the [If you don't see the environment that you want to restore to](#if-you-dont-see-the-environment-that-you-want-to-restore-to) section for possible reasons and troubleshooting steps.
 
-### Create a manual backup
+## Create a manual backup
 
 ### [New admin center](#tab/new)
 
@@ -248,7 +248,9 @@ You can restore backups only to sandbox environments. You can't restore them to 
 1. Select whether you want to include **audit logs**. The inclusion of audit logs can significantly increase the time that is required to restore an environment. Therefore, audit logs are excluded by default. Learn more in [Restore audit logs](#restore-audit-logs).
 1. Select **Restore**, then select **Confirm** to proceed with overwriting the environment.
 
-### Restore audit logs
+---
+
+## Restore audit logs
 
 Restoration of audit logs can significantly increase the time that is required to restore an environment. Therefore, audit logs are excluded by default. Follow these steps to include audit logs when you restore a manual backup.
 
@@ -263,7 +265,7 @@ Restoration of audit logs can significantly increase the time that is required t
 
 1. Continue with step 8 of the previous procedure.
 
-### Delete a manual backup
+## Delete a manual backup
 
 You can delete manual backups. You can't delete system backups.
 
@@ -284,6 +286,7 @@ You can delete manual backups. You can't delete system backups.
 1. In the command bar, select **Backup & Restore**, then select **Restore or manage**.  
 1. Navigate to the **Manual** tab. Select the backup to delete, then select **Delete** in the command bar.
 1. Select **Continue** to confirm the deletion.
+---
 
 ## App-specific backups
 

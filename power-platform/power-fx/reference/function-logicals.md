@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["And","Or","Not"]
 ---
 
 # And, Or, and Not functions

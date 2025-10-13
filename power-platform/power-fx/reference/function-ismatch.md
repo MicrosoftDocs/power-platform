@@ -14,6 +14,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["IsMatch","Match","MatchAll"]
 ---
 
 # IsMatch, Match, and MatchAll functions

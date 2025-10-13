@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["AddColumns","DropColumns","RenameColumns","ShowColumns"]
 ---
 
 # AddColumns, DropColumns, RenameColumns, and ShowColumns functions
