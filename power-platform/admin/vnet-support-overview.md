@@ -121,7 +121,7 @@ The following table lists the services that support Azure subnet delegation for 
 |-----------|-------------------------|-------------------------|
 | Dataverse | [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) | Generally available |
 | Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[Azure File Storage](/connectors/azurefile/)</li><li>[Azure Blob Storage](/connectors/azureblob/)</li><li>[HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/)</li></ul> | Generally available |
-| Connectors | <ul><li>[Snowflake](/connectors/snowflakeip/)</li><li>[Databricks](/connectors/databricks/)</li><li>[AI search](/microsoft-copilot-studio/knowledge-azure-ai-search)</li></ul> | Generally available |
+| Connectors | <ul><li>[Snowflake](/connectors/snowflakev2/)</li><li>[Databricks](/connectors/databricks/)</li><li>[AI search](/microsoft-copilot-studio/knowledge-azure-ai-search)</li></ul> | Generally available |
 
 ## Supported environments
 
