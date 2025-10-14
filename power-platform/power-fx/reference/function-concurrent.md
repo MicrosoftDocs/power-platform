@@ -16,6 +16,7 @@ contributors:
   - mduelae
   - gregli
   - lezucket
+no-loc: ["Concurrent"]
 ---
 
 # Concurrent function
@@ -27,11 +28,11 @@ Evaluates multiple formulas concurrently with one another.
 
 ## Description
 
-The **Concurrent** function allows multiple formulas specified within the same property to be evaluated at the same time if they have connector or Dataverse calls. Normally, multiple formulas are evaluated by chaining them together with the [**;**](operators.md) (semi-colon) operator, which evaluates each formula sequentially. With the Concurrent function, the app will evaluate all formulas within a property concurrently even after using the ; operator. This concurrency will help users wait less for the same result.  
+The **Concurrent** function allows multiple formulas specified within the same property to be evaluated at the same time if they have connector or Dataverse calls. Normally, multiple formulas are evaluated by chaining them together with the [**;**](operators.md) (semi-colon) operator, which evaluates each formula sequentially. With the Concurrent function, the app will evaluate all formulas within a property concurrently even after using the **;** operator. This concurrency helps users wait less for the same result.  
 
 In the [**OnStart**](/power-apps/maker/canvas-apps/controls/control-screen) property of your app, use **Concurrent** to improve performance when the app loads data. When data calls don't start until the previous calls finish, the app must wait for the sum of all request times. If data calls start at the same time, the app needs to wait only for the longest request time. Web browsers often improve performance by performing network calls concurrently.
 
-You can't predict the order in which formulas within the **Concurrent** function start and end evaluation. Formulas within the **Concurrent** function shouldn't contain dependencies on other formulas within the same **Concurrent** function, and Power Apps shows an error if you try. From within, you can safely take dependencies on formulas outside the **Concurrent** function because they will complete before the **Concurrent** function starts. Formulas after the **Concurrent** function can safely take dependencies on formulas within: they'll all complete before the **Concurrent** function finishes and moves on to the next formula in a chain (if you use the **;** operator). Watch out for subtle order dependencies if you're calling functions or service methods that have side effects.
+You can't predict the order in which formulas within the **Concurrent** function start and end evaluation. Formulas within the **Concurrent** function shouldn't contain dependencies on other formulas within the same **Concurrent** function, and Power Apps shows an error if you try. From within, you can safely take dependencies on formulas outside the **Concurrent** function because they complete before the **Concurrent** function starts. Formulas after the **Concurrent** function can safely take dependencies on formulas within: they'll all complete before the **Concurrent** function finishes and moves on to the next formula in a chain (if you use the **;** operator). Watch out for subtle order dependencies if you're calling functions or service methods that have side effects.
 
 You can chain formulas together with the **;** operator within an argument to **Concurrent**. For example, **Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** evaluates **Set( a, 1 ); Set( b, a+1 )** concurrently with **Set( x, 2 ); Set( y, x+2 )**. In this case, the dependencies within the formulas are fine: **a** will be set before **b**, and **x** will be set before **y**.
 
@@ -72,7 +73,7 @@ You can use **Concurrent** only in [behavior formulas](/power-apps/maker/canvas-
 
 5. While holding down the Alt key, select the button, and then watch the network traffic.
 
-   The tools show four requests performed in series, similar to this example. Actual times have been removed as they will vary wildly. The graph shows that each call starts after the last has finished:
+   The tools show four requests performed in series, similar to this example. Actual times have been removed as they vary wildly. The graph shows that each call starts after the last has finished:
 
    ![Time graph of four network requests, each one starting after the last finishes, covering the entire span of time.](media/function-concurrent/chained-network.png)
 
@@ -99,7 +100,7 @@ You can use **Concurrent** only in [behavior formulas](/power-apps/maker/canvas-
 
 10. While holding down the Alt key, select the second button, and then watch the network traffic.
 
-    The tools show four requests performed concurrently, similar to this example. Again, actual times have been removed as they will vary wildly. The graph shows that all the calls start at about the same time and do not wait for the previous one to finish:
+    The tools show four requests performed concurrently, similar to this example. Again, actual times have been removed as they vary wildly. The graph shows that all the calls start at about the same time and don't wait for the previous one to finish:
 
     ![Time graph of four network requests, all four starting together, covering about half of the span of time.](media/function-concurrent/concurrent-network.png)
 
@@ -151,7 +152,7 @@ You can use **Concurrent** only in [behavior formulas](/power-apps/maker/canvas-
 
    ![Display of the data table containing results of translating the string "Hello World" to French and German. Sometimes the French translation is faster than the German, and sometimes it's the other way around.](media/function-concurrent/race-condition.png)
 
-   In some cases, the French translation is faster than the German translation, and vice versa. Both start at the same time, but one returns before the other for a variety of reasons, including network latency and server-side processing.
+   In some cases, the French translation is faster than the German translation, and vice versa. Both start at the same time, but one returns before the other for various reasons, including network latency and server-side processing.
 
    A [race condition](https://en.wikipedia.org/wiki/Race_condition) would occur if the app depended on one translation ending first. Fortunately, Power Apps flags most timing dependencies that it can detect.
 

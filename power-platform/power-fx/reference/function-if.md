@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["If","Switch"]
 ---
 
 # If and Switch functions

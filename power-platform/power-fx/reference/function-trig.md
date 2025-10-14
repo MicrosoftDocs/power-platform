@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Acos","Acot","Asin","Atan","Atan2","Cos","Cot","Degrees","Pi","Radians","Sin","Tan"]
 ---
 
 # Acos, Acot, Asin, Atan, Atan2, Cos, Cot, Degrees, Pi, Radians, Sin, and Tan functions
