@@ -19,30 +19,30 @@ contributors:
 
 # Business continuity and disaster recovery
 
-> [!Note]
+> [!NOTE]
 > As of September 3, 2025, the self-service disaster recovery feature has been expanded to include failover support for [Dynamics 365 Contact Center](/dynamics365/contact-center/). With this enhancement, organizations can now seamlessly initiate failover for their contact center environments, ensuring smooth execution of disaster recovery drills or continued operations from an alternate region, when needed.
 
 Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to document a business continuity plan that minimizes the effects of outages. To recover and resume operations, make sure the plan lists stakeholders, processes, and specific steps.
 
-Microsoft provides business continuity and disaster recovery capabilities to all [production type environments](environments-overview.md) in Dynamics 365 and Power Platform software as a service (SAAS) applications. This article describes how Microsoft keeps your production data resilient during outages.
+Microsoft provides business continuity and disaster recovery capabilities to all [production type environments](environments-overview.md) in Dynamics 365 and Power Platform software as a service (SaaS) applications. This article describes how Microsoft keeps your production data resilient during outages.
 
 The diagram shows a typical architecture of a geography that serves one or more countries or regions. Power Platform admins only need to know the geography location, but within each geography, Microsoft deploys more infrastructure to provide scale and extra protection for your data.
 
 :::image type="content" source="media/bcdr_architecture.png" alt-text="The diagram shows a typical architecture of a geography that serves a single or multiple countries/regions." lightbox="media/bcdr_architecture.png":::
 
-A geography has at least one Azure region, which usually includes three [availability zones](/azure/reliability/availability-zones-overview?tabs=azure-cli), but never fewer than two availability zones.
+A geography has at least one Azure region, which usually includes three [availability zones](/azure/reliability/availability-zones-overview?tabs=azure-cli) but never fewer than two availability zones.
 
 ## Built-in disaster recovery in-region with Azure availability zones
 
-Infrastructure components like network, power, or cooling can fail unexpectedly, for example, because of a lightning strike, and can affect one or more datacenters. To ensure resilience, Microsoft deploys availability zones, so your environment is replicated across at least two distinct zones.
+Infrastructure components like network, power, or cooling can fail unexpectedly, for example, because of a lightning strike, and can affect one or more data centers. To ensure resilience, Microsoft deploys availability zones, so your environment is replicated across at least two distinct zones.
 
-Microsoft automatically detects availability zone-level failures and switches to other availability zones in the region almost instantly to protect you from data loss, while keeping downtime near zero in most cases. This in-region capability is for production environments that host business-critical app processes and data. To avoid disruption, don't deploy production processes and data in nonproduction types like sandbox, developer, or trial environments.
+Microsoft automatically detects availability zone-level failures and switches to other availability zones in the region almost instantly to protect you from data loss while keeping downtime near zero in most cases. This in-region capability is for production environments that host business-critical application processes and data. To avoid disruption, don't deploy production processes and data in non-production types like sandbox, developer, or trial environments.
 
 Availability zones provide built-in resilience for seamless disaster recovery without manual intervention. Zone-redundant data services replicate data across multiple zones, so a failure in one zone doesn't affect data availability. The recovery point objective is near zero, and the recovery time objective is less than five minutes. If one zone fails, traffic is automatically rerouted to the remaining zones with minimal service disruption.
 
 ## Backup of production environments
 
-The transition to availability zones is a significant improvement over the earlier backup and failover process for Dynamics 365 and Power Platform workloads. Those workloads typically require contacting customer support for manual intervention. Your data and services stay highly available within the primary region, with built-in, real-time redundancy across multiple zones.
+The transition to availability zones significantly improves the earlier backup and failover process for Dynamics 365 and Power Platform workloads. These workloads typically require contacting customer support for manual intervention. Your data and services stay highly available within the primary region, with built-in, real-time redundancy across multiple zones.
 
 Key improvements include:
 
@@ -51,9 +51,9 @@ Key improvements include:
 - **Seamless experience**: Unlike traditional backups that require restoration, availability zones keep your environment continuously active.
 - **Reduced support dependency**: Automated failover within the primary region means you don't need to contact Microsoft support for most disaster recovery scenarios.
 
-A limited number of customers in certain regions are transitioning to the improved architecture. Whether the region has transitioned or is transitioning, the service always keeps a backup of environment data in more than one data center.
+A limited number of customers in certain regions transition to the improved architecture. Whether the region transitioned or transitions, the service always keeps a backup of environment data in more than one data center.
 
-Availability zones are far enough apart to reduce the chance of an outage affecting more than one zone, but close enough to keep low-latency connections to other availability zones. Availability zones are typically separated by several kilometers, and are usually within 100 kilometers.
+Availability zones are far enough apart to reduce the chance of an outage affecting more than one zone but close enough to keep low-latency connections to other availability zones. Availability zones are typically separated by several kilometers, and are usually within 100 kilometers.
 
 Customers who need greater distance within a geography can use self-service disaster recovery to keep a copy in a secondary region. With this feature, customers control failover operations and run disaster recovery drills as described in the following section.
 
@@ -125,7 +125,7 @@ Choose this option during an emergency, when the primary region has an outage an
 
 When you start an emergency response, you see the amount of data loss shown in time. Compare this to your recovery point objective to check if it's acceptable before you continue. The environment stays in a Running state until disaster recovery finishes and normal operation resumes from the secondary region.
 
-> [!Note]
+> [!NOTE]
 > Database backups are **not replicated to secondary regions** for scenarios supported by self-service disaster recovery, unless the customer has explicitly allowed self-service disaster recovery. Without self-service disaster recovery, backups remain in the primary region only, which means cross-region failover can't be guaranteed. To ensure business continuity and compliance with your disaster recovery strategy, configure self-service disaster recovery for your environment. 
 
 ## Switch back to primary region
@@ -205,4 +205,4 @@ Microsoft reserves the rights to disclose the exact details of where the custome
 - Connectors may have recovery issues when dependent on external systems, like SharePoint, SQL Server or third-party applications.
 - For Dynamics 365 Sales, analytics, reporting, and functions dependent on automation, such as sales forecasting, are unavailable.
 - Finance and operations products aren't currently supported for self-serve disaster recovery during regional outages.
-- AI Builder may see latency impact. 
+- AI Builder may see latency impact.
