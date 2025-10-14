@@ -17,11 +17,11 @@ search.audienceType:
 
 This article explores how appointments, contacts, and tasks are synced between Dynamics 365 and Exchange. [Email is synchronized separately](/power-platform/admin/integrate-synchronize-your-email-system/).
 
-Appointments, contacts, and tasks sync both ways by default between Dynamics 365 and Exchange. [Server-side synchronization](./server-side-synchronization.md), also known as Exchange synchronization, is the preferred method. Syncing happens differently, depending on the item being synced and the sync direction.
+By default, appointments, contacts, and tasks sync both ways between Dynamics 365 and Exchange. [Server-side synchronization](./server-side-synchronization.md), also known as Exchange synchronization, is the preferred method. Syncing happens differently depending on the item being synced and the sync direction.
 
 ## Sync configuration requirements
 
-Before appointments, contacts, and tasks can be synced, the corresponding mailbox record in Dynamics 365 must meet the following requirements. Note that queue mailboxes don't support appointment, contact, or task sync.
+Before you can sync appointments, contacts, and tasks, the corresponding mailbox record in Dynamics 365 must meet the following requirements. Note that queue mailboxes don't support appointment, contact, or task sync.
 
 - The user's email address is approved.
 - The mailbox is tested and enabled.
@@ -33,22 +33,22 @@ For more information, see [Connect to Exchange Online](./connect-exchange-online
 
 ### Sync from Dynamics 365 to Exchange
 
-After an item is synced with Exchange, a link is established. Sync is always bidirectional. Any change on one side will be reflected on the other.
+After an item is synced with Exchange, a link is established. Sync is always bidirectional. Any change on one side is reflected on the other.
 
 #### Understanding synchronization filters
 
 Synchronization filters determine the records that sync from Dynamics 365 to Exchange using server-side synchronization. Synchronization filters are sensitive to the user's security privileges for each record type.
 
-Generally, when a Dynamics 365 record meets a user's synchronization filter criteria for the first time, the record is synchronized as a **Create** action to the target user's Exchange mailbox. Subsequent updates to the record in Dynamics 365 are synchronized to the corresponding Exchange item as an **Update** action. When a Dynamics 365 record that was previously synchronized to Exchange no longer meets the user's synchronization filter criteria, the Dynamics 365 record is synchronized as a **Delete** action to Exchange. This can occur for Dynamics 365 records which have been physically deleted and those that have been logically deleted. A logically deleted record is considered any record that still exists in Dynamics 365, but is no longer being returned by the user's synchronization filter. Learn more about physical and logical deletions in [Ignore logically deleted items during sync](#ignore-logically-deleted-items-during-sync) for more information about physical and logical deletions.
+When a Dynamics 365 record meets a user's synchronization filter criteria for the first time, the record is synchronized as a **Create** action to the target user's Exchange mailbox. Subsequent updates to the record in Dynamics 365 are synchronized to the corresponding Exchange item as an **Update** action. When a Dynamics 365 record that was previously synchronized to Exchange no longer meets the user's synchronization filter criteria, the Dynamics 365 record is synchronized as a **Delete** action to Exchange. This can occur for Dynamics 365 records that are physically deleted and those that are logically deleted. A logically deleted record is any record that still exists in Dynamics 365 but is no longer returned by the user's synchronization filter. Learn more about physical and logical deletions in [Ignore logically deleted items during sync](#ignore-logically-deleted-items-during-sync) for more information about physical and logical deletions.
 
 To help illustrate these different synchronization actions, consider the following scenario:
 
-Paul Cannon and Laura Norman are configured to use the out-of-the-box **My Active Contacts** synchronization filter, which by default, synchronizes contacts owned by the user. A contact _Linda Mitchell_ is initially owned by Paul and is synchronized to Paul's mailbox in Exchange as a **Create** during Paul's first synchronization cycle. Later, Paul re-assigns the contact row in Dynamics 365 to Laura. During Paul's next synchronization cycle, the contact is synchronized as a **Delete** to Paul's mailbox, as the contact row no longer meets Paul's synchronization filter criteria. Likewise, the contact is synchronized to Laura's mailbox as a **Create** during Laura's next synchronization cycle as the record now meets Laura's synchronization filter criteria. Future updates to the contact in Dynamics 365 continue to synchronize to Laura's Exchange mailbox as an **Update** as long as the Dynamics 365 record continues to meet Laura's synchronization filter criteria. 
+Paul Cannon and Laura Norman are configured to use the out-of-the-box **My Active Contacts** synchronization filter, which by default, synchronizes contacts owned by the user. A contact _Linda Mitchell_ is initially owned by Paul and is synchronized to Paul's mailbox in Exchange as a **Create** during Paul's first synchronization cycle. Later, Paul re-assigns the contact row in Dynamics 365 to Laura. During Paul's next synchronization cycle, the contact is synchronized as a **Delete** to Paul's mailbox, as the contact row no longer meets Paul's synchronization filter criteria. Likewise, the contact is synchronized to Laura's mailbox as a **Create** during Laura's next synchronization cycle as the record now meets Laura's synchronization filter criteria. Updates to the contact in Dynamics 365 continue to synchronize to Laura's Exchange mailbox as an **Update** as long as the Dynamics 365 record continues to meet Laura's synchronization filter criteria. 
 
 For more information, go to [Choose the records to synchronize between customer engagement apps and Exchange](choose-records-synchronize-dynamics-365-outlook-exchange.md).
 
 > [!NOTE]
-> **Create**, **Update**, and **Delete** actions in Dynamics 365 and their associated synchronization behaviors to Exchange can vary by record type. Please see the below sections for each record type to understand how these actions affect synchronization between Dynamics and Exchange.
+> **Create**, **Update**, and **Delete** actions in Dynamics 365 and their associated synchronization behaviors to Exchange vary by record type. See the following sections for each record type to understand how these actions affect synchronization between Dynamics and Exchange.
 
 ### Sync from Exchange to Dynamics 365
 
@@ -61,7 +61,7 @@ Appointments, contacts, and tasks sync from Exchange to Dynamics 365 only when t
 > [!NOTE]
 > Server-side sync syncs appointments with the **Tracked to Dynamics 365** category if the appointment is in the main Calendar folder or its subfolders. Items in other calendar folders aren't synced.
 
-  :::image type="content" source="./media/synced-items.png" alt-text="A screenshot of a mailbox in Outlook, showing appointments that can be synced from the main Calendar folder.":::
+  :::image type="content" source="./media/synced-items.png" alt-text="Screenshot of a mailbox in Outlook, showing appointments that can be synced from the main Calendar folder.":::
 
 When these requirements are met, server-side sync creates the item in Dynamics 365 and establishes a link. Sync is always bidirectional. Any change on one side will be reflected on the other.
 
@@ -79,14 +79,14 @@ How appointments sync between Dynamics 365 and Exchange depends on the sync dire
 
 The appointment organizer is a key field for appointment synchronization. It drives different synchronization behaviors. For example, only the Dynamics 365 appointment organizer can synchronize and distribute appointments from Dynamics 365 to Exchange attendees. When you create appointments using customizations such as Power Automate or custom code, make sure the organizer is specified correctly. The organizer field isn't exposed on the appointment form by default. You can add it to forms, views, or advanced find queries, as needed, to confirm the value is present and correct.
 
-If an appointment organizer is changed in Dynamics 365 after it has been synchronized to Exchange, this may cause the original organizer to issue a cancellation. This can happen because the appointment no longer meets the conditions of the user’s sync filters. Additionally, the new organizer may synchronize the appointment as a new meeting in Exchange. The behavior of sending a cancellation from the previous organizer can be modified using the [OrgDBOrgSetting](https://support.microsoft.com/en-us/topic/orgdborgsettings-tool-for-microsoft-dynamics-crm-20a10f46-2a24-a156-7144-365d49b842ba) named DistinctPhysicalAndLogicalDeletesForExchangeSync.
+If an appointment organizer is changed in Dynamics 365 after it has been synchronized to Exchange, this might cause the original organizer to issue a cancellation. This can happen because the appointment no longer meets the conditions of the user's sync filters. Additionally, the new organizer might synchronize the appointment as a new meeting in Exchange. The behavior of sending a cancellation from the previous organizer can be modified using the [OrgDBOrgSetting](https://support.microsoft.com/en-us/topic/orgdborgsettings-tool-for-microsoft-dynamics-crm-20a10f46-2a24-a156-7144-365d49b842ba) named DistinctPhysicalAndLogicalDeletesForExchangeSync.
 
 > [!NOTE]
-> An appointment created in Dynamics 365 will appear as created by SYSTEM if the following conditions are true:
+> An appointment created in Dynamics 365 appears as created by SYSTEM if the following conditions are true:
 > - The user who tracked the appointment is not the organizer
 > - The [OrgDBOrgSetting](https://support.microsoft.com/en-us/topic/orgdborgsettings-tool-for-microsoft-dynamics-crm-20a10f46-2a24-a156-7144-365d49b842ba) named DisableImplicitSharingOfCommunicationActivities is set to the default value of False.
 > 
-> If the organizer of the Outlook meeting is a Dynamics 365 user, the owner will be the organizer. If the organizer is not a Dynamics 365 user, the owner will be the user who tracked it.
+> If the organizer of the Outlook meeting is a Dynamics 365 user, the owner is the organizer. If the organizer isn't a Dynamics 365 user, the owner is the user who tracked it.
 
 ### Syncing appointments from Dynamics 365 to Exchange
 
@@ -140,7 +140,7 @@ If the organizer has deleted past instances of the series, then Dynamics 365 see
 
 - **Appointment status and Free/Busy state:** If the appointment state in Exchange is **Free**, the appointment state syncs to Dynamics 365 as **Free**. If the state is **Completed** or **Canceled** in Dynamics 365, the appointment status in Dynamics 365 is set to **Completed**. If the state is **Open** in Dynamics 365, the appointment status is set to **Free**. If the Exchange appointment's **Free/Busy** status is set to **Working elsewhere**, the Dynamics 365 appointment is set to the **Open** state and the status is **Free**.
 
-- **Appointments with Completed or Canceled state in Dynamics 365:** If the appointment state in Dynamics 365 is **Completed** or **Canceled**, any changes to the meeting in Exchange will not sync to Dynamics 365.
+- **Appointments with Completed or Canceled state in Dynamics 365:** If the appointment state in Dynamics 365 is **Completed** or **Canceled**, any changes to the meeting in Exchange don't sync to Dynamics 365.
 
 - **Appointment booking and conflict management:** When an appointment is tracked to Dynamics 365, server-side sync uses the booking API to make sure that attendees are available at the specified time. For example, if the organizer's calendar in Dynamics 365 has another appointment at the same time, the booking fails, and the appointment isn't synced. The user can [address the scheduling conflict](https://go.microsoft.com/fwlink/?linkid=2187456), select to ignore it, and let the appointment sync anyway. Booking from Dynamics 365 in Outlook automatically suppresses the scheduling conflict. For more information, see [A scheduling conflict was found when saving appointment [appointment subject] from Exchange to Microsoft Dynamics 365](/troubleshoot/dynamics-365/sales/scheduling-conflict-saving-appointment).
 
@@ -232,7 +232,7 @@ When any linked item is copied in Exchange, server-side sync ignores the copy ac
 
 The following sections apply to sync that's done through Dynamics 365 for Outlook or server-side synchronization. For more information, see [Integrate your email system](/power-platform/admin/integrate-synchronize-your-email-system).
 
-:::image type="content" source="./media/crm-itpro-systemsynctab.png" alt-text="A screenshot of the System Settings Synchronization tab in Dynamics 365 for Outlook.":::
+:::image type="content" source="./media/crm-itpro-systemsynctab.png" alt-text="Screenshot of the System Settings Synchronization tab in Dynamics 365 for Outlook.":::
 
 #### Syncing appointment attachments
 
