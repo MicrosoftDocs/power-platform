@@ -53,7 +53,7 @@ Yes. Import the solution to each additional environment and then connect to the 
 
 This error occurs when your environment is encrypted using [Bring Your Own Key (BYOK)](../../admin/manage-encryption-key.md).
 
-The source control integration feature depends on Dataverse file storage design changes, which are disabled in BYOK environments.
+BYOK isn’t compatible with elastic tables that are required for source code integration. More information: [Manage the encryption key](../../admin/manage-encryption-key.md)
 
 To enable source control integration, follow these steps:
 
