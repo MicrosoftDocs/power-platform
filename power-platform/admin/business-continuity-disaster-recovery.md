@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: rashmansur
-ms.date: 10/13/2025
+ms.date: 10/14/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -198,7 +198,7 @@ Microsoft reserves the rights to disclose the exact details of where the custome
 
 - Copilot Studio conversation runtime requests fail until Microsoft restores the service in the primary region. Custom agents successfully failover and failback since they're saved on Dataverse.
 - In Dynamics 365, analytics and automation in sales observe latency impact. Relationship analytics KPIs aren't computed and new models for scoring aren't created during an outage.  
--  In Dynamics 365 Customer Insights, real-time updates are impacted. Customer Insights doesn't support self-service disaster recovery today. Customer Insights is unavailable until key aspects of Customer Insights are manually failed-over.
+-  In Dynamics 365 Customer Insights - Data, real-time updates are impacted. Customer Insights - Data doesn't support self-service disaster recovery today. Customer Insights - Data is unavailable until key aspects of Customer Insights - Data are manually failed-over.
 -  In Dynamics 365 Customer service, basic scenarios that are 100% dependent on Dataverse, such as case creation, or Knowledge Base articles work. Case knowledge base access in customer service is unavailable.
 - Field Service is self-service disaster recovery ready.
 - Data lake failover has known issues. Self-service disaster recovery isn't supported yet.
