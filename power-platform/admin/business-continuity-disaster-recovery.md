@@ -145,7 +145,7 @@ We recommend that you perform disaster recovery drills or an emergency response 
 ## Frequently asked questions (FAQs)
 
 ### Why do I need self-service disaster recovery if I already have a secondary copy maintained in a remote secondary region? 
-Tere are no secondary copies being maintained in remote secondary region if self-service disaster recovery hasn't been turned on.  
+There are no secondary copies being maintained in remote secondary region if self-service disaster recovery hasn't been turned on.  
 
 ### What are the costs associated with using self-service disaster recovery?
 
