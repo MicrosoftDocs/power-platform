@@ -145,7 +145,7 @@ When you use Virtual Network support in a Power Platform environment, all suppor
 
 For example, a plug-in might try to connect to a publicly available service, but your network policy doesn't allow public internet access within your Virtual Network. The call from the plug-in is blocked in accordance with your network policy. To avoid the blocked call, you can host the publicly available service in your Virtual Network. Alternatively, if your service is hosted in Azure, you can use a private endpoint on the service before you turn on Virtual Network support in the Power Platform environment.
 
-## FAQ
+## Frequently asked questions
 
 ### What's the difference between a Virtual Network data gateway and Azure Virtual Network support for Power Platform?
 
