@@ -43,7 +43,7 @@ Generally, when a Dynamics 365 record meets a user's synchronization filter crit
 
 To help illustrate these different synchronization actions, consider the following scenario:
 
-Paul Cannon and Laura Norman are configured to use the out-of-the-box "My Active Contacts" synchronization filter, which by default, synchronizes contacts owned by the user. A contact _Linda Mitchell_ is initially owned by Paul and is synchronized to Paul's mailbox in Exchange as a **Create** during Paul's first synchronization cycle. Later, Paul re-assigns the contact row in Dynamics 365 to Laura. During Paul's next synchronization cycle, the contact is synchronized as a **Delete** to Paul's mailbox, as the contact row no longer meets Paul's synchronization filter criteria. Likewise, the contact is synchronized to Laura's mailbox as a **Create** during Laura's next synchronization cycle as the record now meets Laura's synchronization filter criteria. Future updates to the contact in Dynamics 365 continue to synchronize to Laura's Exchange mailbox as an **Update** as long as the Dynamics 365 record continues to meet Laura's synchronization filter criteria. 
+Paul Cannon and Laura Norman are configured to use the out-of-the-box **My Active Contacts** synchronization filter, which by default, synchronizes contacts owned by the user. A contact _Linda Mitchell_ is initially owned by Paul and is synchronized to Paul's mailbox in Exchange as a **Create** during Paul's first synchronization cycle. Later, Paul re-assigns the contact row in Dynamics 365 to Laura. During Paul's next synchronization cycle, the contact is synchronized as a **Delete** to Paul's mailbox, as the contact row no longer meets Paul's synchronization filter criteria. Likewise, the contact is synchronized to Laura's mailbox as a **Create** during Laura's next synchronization cycle as the record now meets Laura's synchronization filter criteria. Future updates to the contact in Dynamics 365 continue to synchronize to Laura's Exchange mailbox as an **Update** as long as the Dynamics 365 record continues to meet Laura's synchronization filter criteria. 
 
 For more information, go to [Choose the records to synchronize between customer engagement apps and Exchange](choose-records-synchronize-dynamics-365-outlook-exchange.md).
 
@@ -283,5 +283,6 @@ By default, tasks that are created in Dynamics 365 for Outlook don't sync with D
 - [Address synchronization for contacts](/dynamics365/outlook-addin/admin-guide/configure-synchronization-appointments-contacts-tasks#address-synchronization-for-contacts)
 - [Integrate your email system](/power-platform/admin/integrate-synchronize-your-email-system)
 - [Which fields can be synchronized between Dynamics 365 apps and Outlook?](/dynamics365/outlook-addin/admin-guide/which-fields-synchronized)
+
 
 
