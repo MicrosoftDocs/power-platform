@@ -14,6 +14,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Error","IfError","IsError","IsBlankOrError"]
 ---
 
 # Error, IfError, IsError, IsBlankOrError functions

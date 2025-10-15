@@ -14,6 +14,7 @@ search.audienceType:
 contributors:
   - gregli
   - mduelae
+no-loc: ["ParseJSON"]
 ---
 # ParseJSON function
 [!INCLUDE[function-parsejson-applies-to](includes/function-parsejson-applies-to.md)]

@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Left","Mid","Right"]
 ---
 
 # Left, Mid, and Right functions
@@ -83,7 +84,7 @@ Each example in this section extracts strings from the **Address** [column](/pow
 1. Import or create a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) named **Inventory**, and show it in a gallery, as the first procedure in [Show images and text in a gallery](/power-apps/maker/canvas-apps/show-images-text-gallery-sort-filter) describes.
 2. Set the **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property of the lower label in the gallery to this function:
 
-   **Right(ThisItem.ProductName, 3)**
+   **Right( ThisItem.ProductName, 3 )**
 
    The label shows the last three characters of each product name.
 

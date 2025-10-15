@@ -8,27 +8,33 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/01/2024
+ms.date: 10/09/2025
 search.audienceType: 
   - admin
 contributors:
 - ianceicys-msft
+- sericks007
+- syalandur24
+ms.contributors:
+- ceian
+- sericks
+- syalandur
 ---
 
 # Add more Microsoft Dataverse capacity for your tenant
 
-You have options when you're running low on storage capacity. You can [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more storage capacity to be compliant with storage usage requirements. Learn more about storage capacity add-ons in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
+You have options when you're running low on storage capacity. You can [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more storage capacity to be compliant with storage usage requirements. Learn more about storage capacity add-ons in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the [*Add-ons* section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
 
 If your tenant is running low on available storage capacity, you can add storage to your subscription.  
 
 > [!NOTE]
 > The process described in this topic applies to direct purchases using a credit card or invoice.
 >
->If you bought your subscription through [Volume Licensing](/licensing/) or a Cloud Solution Provider (CSP), contact your representative or [partner](/microsoft-365/commerce/manage-partners?view=o365-worldwide) for assistance. Customers with an Enterprise Agreement can [make a license reservation](/licensing/license-faq).
+>If you bought your subscription through [Volume Licensing](/licensing/) or a Cloud Solution Provider (CSP), contact your representative or [partner](/microsoft-365/commerce/manage-partners) for assistance. Customers with an Enterprise Agreement can [make a license reservation](/licensing/license-faq).
 
 ## Prerequisites
 
-- You must be a Microsoft 365 Billing admin to complete the tasks in this article. Learn more in [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+- You must be a Microsoft 365 Billing admin to complete the tasks in this article. Learn more in [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 - You must determine your [current capacity storage usage](capacity-storage.md#verifying-your-microsoft-dataverse-capacity-based-storage-model) to make sure you know how much more storage capacity is needed. Non-admins can also [view self-service storage capacity](view-self-service-capacity.md).
 
 ## Purchase Dataverse Capacity add-on
@@ -58,4 +64,21 @@ After you determine how much storage you're using, you can add or remove storage
 
    :::image type="content" source="media/storage-file-capacity-purchase.png" alt-text="Buy Dataverse File capacity storage add-on." lightbox="media/storage-file-capacity-purchase.png"::::::
 
-After completing the purchase process, the extra storage capacity will appear in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
+After completing the purchase process, the extra storage capacity will appear in the Power Platform admin center **Capacity** page.
+
+Follow these steps to access the Capacity page:
+
+#### [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**, and then select an environment.
+1. In the navigation pane, select **Licensing**.
+1. Under **Licensing**, select **Capacity add-ons**.
+
+#### [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
+1. Select **Resources** > **Capacity** > **Summary**.
+
+---

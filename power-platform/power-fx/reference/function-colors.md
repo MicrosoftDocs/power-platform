@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Color","ColorFade","ColorValue","RGBA"]
 ---
 
 # Color enumeration and ColorFade, ColorValue, and RGBA functions
