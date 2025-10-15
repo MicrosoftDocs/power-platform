@@ -149,6 +149,9 @@ When a customer sends you an email with sensitive data and the email has this ma
 > - Text (single-line and multi-line)
 > - Number
 
+> [!IMPORTANT]
+> When a form is customized and a [**Component**](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/add-move-configure-or-delete-components-on-form#add-components-for-a-column-on-the-form), example **Rich Text Editor Control**, is added to a masked column, the **entire column** is masked. Users who have permissions to read and update this column can unmask it.
+
 ### Grant permissions to a secured column with a masking rule
 
 Permissions to read masked columns are granted using the [Column security profiles](/power-platform/admin/set-up-security-permissions-field#associate-security-profiles-and-set-permissions).
