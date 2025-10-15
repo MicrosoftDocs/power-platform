@@ -117,7 +117,7 @@ You might also want to turn on disaster recovery for other events, like:
 
 Your company might have disaster recovery drills documented as a requirement in your internal business continuity plans. Some industries and companies might be required by government regulations to perform audits on their business continuity disaster recovery capabilities. In these cases, you can run a disaster recovery drill on an environment. A disaster recovery drill lets you do self-service disaster recovery without losing any data. The duration of the failover action can be slightly longer while all remaining data is replicated to the secondary region.
 
-We recommend doing drills on a copy of a production environment, since this involves downtime that can last for minutes. For example, you might want to copy a production environment to a sandbox environment and then change the type from sandbox to production.
+We recommend doing drills on a copy of a production environment, since this involves downtime when failing over to remote region that can last for minutes. For example, you might want to copy a production environment to a sandbox environment and then change the type from sandbox to production. 
 
 ## Emergency response failover
 
@@ -145,12 +145,18 @@ We recommend that you perform disaster recovery drills or an emergency response 
 ## Frequently asked questions (FAQs)
 
 ### Why do I need self-service disaster recovery if I already have a secondary copy maintained in a remote secondary region? 
-There are no secondary copies being maintained in remote secondary region if self-service disaster recovery hasn't been turned on.  
+- There are no secondary copies being maintained in remote secondary region if self-service disaster recovery hasn't been turned on.
+- Super storms, natural calamities, unforseen political uncertainities, that have the potential of bring an entire region down are becoming more and more common. To minimie the impact of a disaster that brings entire region down, it is advisable to maintain a asyncronous copy in a remote region. Self serve disaster recovery gives you that total control to failover to the secondary region with the push of a button and failback with the push of a button when primary region is restored to ensure business continuity. You can also simulate the primary being down to run a real failover and failback to secondary region to test a real compliance drill. (please note we advise running drills with a copy of primary and not with primary to avoid absolutely any downtime)
 
 ### What are the costs associated with using self-service disaster recovery?
 
-- Capacity charges are based on the consumption of the environment's paired region for Database, File, and Log storage types.
+- PayGo must be enabled on the environment as a pre-requisite to enabling SSDR on that environment.
+- The select environment must be a managed environment[https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-licensing]. This is a premium license tier. 
+- Capacity charges are based on the storage consumption of the environment's paired secondary region for Database, File, and Log storage types.
 - Capacity consumption is reflected in the familiar licensing experience within the Power Platform Admin Center. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
+- Example: say a user has 10 GB capacity consumption in the Primary location. When SSDR is enabled, a copy of data is created in the remote secondary region and this will consume another 10 GB. This 10 GB in the secondary region can be paid via storage entitlements. Only if you exceed your available free storage or available entitlements, would PayGo plan actively start billing.
+- PayGo is designed to generate various alerts and warning at various thresholds to the admin to warn them of depleting storage. Please leverage the alert mechanism to your advantage.
+- PayGo links the select environment to the Azure subscription using a billing policy. Once an environment is linked to an Azure subscription, the usage of apps and any Dataverse or Microsoft Power Platform request usage that goes above the included /entitled/pre-acquired storage amounts are billed against the Azure subscription using Azure meters[https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-meters?tabs=image]. If more storage entitlements are acquired, payGo will stop running the meters and consuming from available free storage / entitlements will take precedence. 
 
 ### How does billing work for self-service disaster recovery?
 
@@ -177,9 +183,9 @@ To disable self-service disaster recovery, go to the *disaster recovery pane* in
 
 Disabling self-service disaster recovery deletes all replicated environment data in the paired region. You're prompted to confirm the environment's name before proceeding.
 
-### Can I disable self-service disaster recovery while in a paired region?
+### Can I disable self-service disaster recovery while in a paired region (in a failed over state)?
 
-No, self-service disaster recovery can't be disabled while the environment is in a paired region. You must switch to the primary region first.
+No, self-service disaster recovery can't be disabled while the environment is in a failed over state. You must switch to the primary region first.
 
 ### Are Power Apps and Power Pages supported with self-service disaster recovery?
 
@@ -188,7 +194,7 @@ Yes, self-service disaster recovery is supported for Power Apps and Power Pages.
 ### Is Power Automate supported with self-service disaster recovery?
 Power Automate desktop flows are fully supported for failover and failback with self-service disaster recovery.
 
-Power Automate cloud flows are now available in preview. Don't use them with production workloads.
+Power Automate cloud flows are now available in preview. Please don't use features in preview with production workloads.
 
 ### How can I find out where my data is being replicated to? Can I change my secondary destination region?
 
@@ -198,7 +204,7 @@ Microsoft reserves the rights to disclose the exact details of where the custome
 
 - Copilot Studio conversation runtime requests fail until Microsoft restores the service in the primary region. Custom agents successfully failover and failback since they're saved on Dataverse.
 - In Dynamics 365, analytics and automation in sales observe latency impact. Relationship analytics KPIs aren't computed and new models for scoring aren't created during an outage.  
--  In Dynamics 365 Customer Insights - Data, real-time updates are impacted. Customer Insights - Data doesn't support self-service disaster recovery today. Customer Insights - Data is unavailable until key aspects of Customer Insights - Data are manually failed-over.
+-  In Dynamics 365 Customer Insights - Data, real-time updates are impacted. It doesn't support self-service disaster recovery today.
 -  In Dynamics 365 Customer service, basic scenarios that are 100% dependent on Dataverse, such as case creation, or Knowledge Base articles work. Case knowledge base access in customer service is unavailable.
 - Field Service is self-service disaster recovery ready.
 - Data lake failover has known issues. Self-service disaster recovery isn't supported yet.
