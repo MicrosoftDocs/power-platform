@@ -28,40 +28,40 @@ Microsoft provides business continuity and disaster recovery capabilities to all
 
 The diagram shows a typical architecture of a geography that serves one or more countries or regions. Power Platform admins only need to know the geography location, but within each geography, Microsoft deploys more infrastructure to provide scale and extra protection for your data.
 
-:::image type="content" source="media/bcdr_architecture.png" alt-text="The diagram shows a typical architecture of a geography that serves a single or multiple countries/regions." lightbox="media/bcdr_architecture.png":::
+:::image type="content" source="media/bcdr_architecture.png" alt-text="Screenshot of a typical architecture of a geography that serves a single or multiple countries/regions." lightbox="media/bcdr_architecture.png":::
 
-A geography has at least one Azure region, which usually includes three [availability zones](/azure/reliability/availability-zones-overview?tabs=azure-cli) but never fewer than two availability zones.
+A geography has at least one Azure region, which usually includes three [availability zones](/azure/reliability/availability-zones-overview?tabs=azure-cli) but never has fewer than two availability zones.
 
 ## Built-in disaster recovery in-region with Azure availability zones
 
 Infrastructure components like network, power, or cooling can fail unexpectedly, for example, because of a lightning strike, and can affect one or more data centers. To ensure resilience, Microsoft deploys availability zones, so your environment is replicated across at least two distinct zones.
 
-Microsoft automatically detects availability zone-level failures and switches to other availability zones in the region almost instantly to protect you from data loss while keeping downtime near zero in most cases. This in-region capability is for production environments that host business-critical application processes and data. To avoid disruption, don't deploy production processes and data in non-production types like sandbox, developer, or trial environments.
+Microsoft automatically detects availability zone-level failures and switches to other availability zones in the region almost instantly to protect you from data loss while keeping downtime near zero in most cases. This in-region capability is for production environments that host business-critical application processes and data. To avoid disruption, don't deploy production processes and data in nonproduction types like sandbox, developer, or trial environments.
 
 Availability zones provide built-in resilience for seamless disaster recovery without manual intervention. Zone-redundant data services replicate data across multiple zones, so a failure in one zone doesn't affect data availability. The recovery point objective is near zero, and the recovery time objective is less than five minutes. If one zone fails, traffic is automatically rerouted to the remaining zones with minimal service disruption.
 
 ## Backup of production environments
 
-The transition to availability zones significantly improves the earlier backup and failover process for Dynamics 365 and Power Platform workloads. These workloads typically require contacting customer support for manual intervention. Your data and services stay highly available within the primary region, with built-in, real-time redundancy across multiple zones.
+The transition to availability zones significantly improves backup and failover processes for Dynamics 365 and Power Platform workloads. These workloads typically require contacting customer support for manual intervention. Your data and services stay highly available within the primary region, with built-in real-time redundancy across multiple zones.
 
 Key improvements include:
 
 - **Always-on resilience**: Your environments automatically replicate across multiple availability zones, so you don't need separate geo-secondary backups.
-- **Faster recovery**: Synchronous replication across zones lets failover within a region happen almost instantly, minimizing disruptions and data loss.
+- **Faster recovery**: Synchronous replication across zones enables failover within a region to happen almost instantly, minimizing disruptions and data loss.
 - **Seamless experience**: Unlike traditional backups that require restoration, availability zones keep your environment continuously active.
 - **Reduced support dependency**: Automated failover within the primary region means you don't need to contact Microsoft support for most disaster recovery scenarios.
 
-A limited number of customers in certain regions transition to the improved architecture. Whether the region transitioned or transitions, the service always keeps a backup of environment data in more than one data center.
+A limited number of customers in certain regions are transitioning to the improved architecture. Whether the region has transitioned or is transitioning, the service always keeps a backup of environment data in more than one data center.
 
-Availability zones are far enough apart to reduce the chance of an outage affecting more than one zone but close enough to keep low-latency connections to other availability zones. Availability zones are typically separated by several kilometers, and are usually within 100 kilometers.
+Availability zones are far enough apart to reduce the chance of an outage affecting more than one zone, but close enough to maintain low-latency connections to other availability zones. Availability zones are typically separated by several kilometers and are usually within 100 kilometers.
 
 Customers who need greater distance within a geography can use self-service disaster recovery to keep a copy in a secondary region. With this feature, customers control failover operations and run disaster recovery drills as described in the following section.
 
 ## Cross-region self-service disaster recovery
 
-Most geographies usually have region pairs separated by at least 300 miles when possible, to help protect your data in large-scale disasters.
+Most geographies have region pairs separated by at least 300 miles when possible, to help protect your data in large-scale disasters.
 
-Self-service disaster recovery is a Power Platform infrastructure capability that lets you replicate your environment across long distances and start environment failover between regions on your own.
+Self-service disaster recovery is a Power Platform infrastructure capability that lets you replicate your environment across long distances and start environment failover between regions yourself.
 
 You usually have multiple environments of different types in your tenant. This capability is available only for production environments.
 
@@ -69,13 +69,13 @@ To turn on self-service disaster recovery, make sure your environment is managed
 
 ## Allow Virtual Network pairing for self-service disaster recovery in Dynamics 365 
 
-If your Dynamics 365 environment is deployed within a Virtual Network and you plan to use self-service disaster recovery, you must configure a **Virtual Network pair**. This pairing ensures that your primary and secondary environments can communicate securely during failover and failback operations. Without a Virtual Network pair, disaster recovery operations fail because network connectivity between regions can't be established.
+If your Dynamics 365 environment is deployed within a Virtual Network and you plan to use self-service disaster recovery, you need to configure a **Virtual Network pair**. This pairing ensures that your primary and secondary environments can communicate securely during failover and failback operations. Without a Virtual Network pair, disaster recovery operations fail because network connectivity between regions cannot be established.
 
 For setup instructions, go to [Set up virtual network support for Power Platform](vnet-support-setup-configure.md).
 
 ## Turn on self-service disaster recovery
 
-This action sets up resources and starts replicating data between the primary and secondary locations. The process can take up to 48 hours to finish. Admins get a notification when the process is done.
+This action sets up resources and starts replicating data between the primary and secondary locations. The process can take up to 48 hours to finish. Admins get a notification when the process finishes.
 
 Turning on disaster recovery in an environment doesn't affect the environment or its data.
 
@@ -85,13 +85,13 @@ To turn on disaster recovery, follow these steps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 1. In the navigation pane, select **Manage**.
-1. In the Manage pane, select **Environments**. The Environments page shows.
+1. In the Manage pane, select **Environments**. The Environments page appears.
 1. Select the production environment where you want to turn on self-service disaster recovery.
 1. Select **Disaster Recovery** in the command bar at the top of the page. The **Disaster Recovery** pane appears.
 1. Select the checkbox to turn on **Disaster Recovery**.
 1. Select **Save**.
-1. The environment briefly shows the **Edit details** page.
-1. The **Environment details** page shows that the process of turning on the feature has started.
+1. The environment briefly displays the **Edit details** page.
+1. The **Environment details** page displays that the process of turning on the feature has started.
 
 
 # [Classic admin center](#tab/classic)
@@ -102,8 +102,8 @@ To turn on disaster recovery, follow these steps.
 1. Select **Disaster Recovery** in the command bar at the top of the page. The **Disaster Recovery** pane appears.
 1. Select the checkbox to turn on **Disaster Recovery**.
 1. Select **Save**.
-1. The environment briefly shows the **Edit details** page.
-1. The **Environment details** page shows that the process of turning on the feature has started.
+1. The environment briefly displays the **Edit details** page.
+1. The **Environment details** page displays that the process of turning on the feature has started.
 
 
 ---
