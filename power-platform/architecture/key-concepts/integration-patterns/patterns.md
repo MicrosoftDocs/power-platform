@@ -15,7 +15,7 @@ ms.custom:
 
 # Explore integration patterns
 
-Based on your [analysis](#determine-integration-requirements), plan the integration and identify the best pattern for your requirements. The following list of integration patterns isn't exhaustive. You might find that a combination of these patterns best fits your scenario.
+Based on your [analysis](requirements.md), plan the integration and identify the best pattern for your requirements. The following list of integration patterns isn't exhaustive. You might find that a combination of these patterns best fits your scenario.
 
 Each pattern addresses specific business scenarios and technical constraints:
 
