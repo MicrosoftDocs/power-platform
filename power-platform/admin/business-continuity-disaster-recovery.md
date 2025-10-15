@@ -69,7 +69,7 @@ To turn on self-service disaster recovery, make sure your environment is managed
 
 ## Allow Virtual Network pairing for self-service disaster recovery in Dynamics 365 
 
-If your Dynamics 365 environment is deployed within a Virtual Network and you plan to use self-service disaster recovery, you need to configure a **Virtual Network pair**. This pairing ensures that your primary and secondary environments can communicate securely during failover and failback operations. Without a Virtual Network pair, disaster recovery operations fail because network connectivity between regions cannot be established.
+If your Dynamics 365 environment is deployed within a Virtual Network and you plan to use self-service disaster recovery, you need to configure a **Virtual Network pair**. This pairing ensures that your primary and secondary environments can communicate securely during failover and failback operations. Without a Virtual Network pair, disaster recovery operations fail because network connectivity between regions can't be established.
 
 For setup instructions, go to [Set up virtual network support for Power Platform](vnet-support-setup-configure.md).
 
@@ -147,25 +147,25 @@ We recommend that you perform disaster recovery drills or an emergency response 
 ### Why do I need self-service disaster recovery if I already have a secondary copy maintained in a remote, secondary region? 
 There are no secondary copies being maintained in a remote, secondary region if self-service disaster recovery hasn't been turned on.
 
-Super storms, natural calamities, and unforseen political uncertainities that have the potential to bring an entire region down are becoming more common. To minimize the impact of a disaster that brings an entire region down, it's advisable to maintain an asyncronous copy in a remote region. Self-service disaster recovery gives you control to failover to a secondary region with the push of a button and failback with the push of a button when the primary region is restored to ensure business continuity. You can also simulate the primary region being down to run a real failover and failback to the secondary region to test a real compliance drill. We advise running drills with a copy of the production environment to avoid any downtime.
+Super storms, natural calamities, and unforeseen political uncertainties that have the potential to bring an entire region down are becoming more common. To minimize the impact of a disaster that brings an entire region down, it's advisable to maintain an asynchronous copy in a remote region. Self-service disaster recovery gives you control to fail over to a secondary region with the push of a button and failback with the push of a button when the primary region is restored to ensure business continuity. You can also simulate the primary region being down to run a real failover and failback to the secondary region to test a real compliance drill. We advise running drills with a copy of the production environment to avoid any downtime.
 
 ### What are the costs associated with using self-service disaster recovery?
 
-- [Pay-as-you-go](pay-as-you-go-overview.md)  must be turned on for the environment as a pre-requisite to turning on self-service disaster recovery on that environment.
+- [Pay-as-you-go](pay-as-you-go-overview.md)  must be turned on for the environment as a prerequisite to turning on self-service disaster recovery on that environment.
 - The select environment must be a [Managed Environment](managed-environment-licensing.md). This is a premium license tier. 
 - Capacity charges are based on the storage consumption of the environment's paired secondary region for database, file, and log storage types.
 - Capacity consumption is reflected in the familiar licensing experience within the Power Platform admin center. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
 
-  For example, suppose a user has 10 GB capacity consumption in the primary location. When self-service disaster recovery is turned on, a copy of data is created in the remote secondary region and this consumes another 10 GB. This 10 GB in the secondary region can be paid through storage entitlements. Only if you exceed your available free storage or available entitlements, would PayGo plan actively start billing.
+  For example, suppose a user has 10-GB capacity consumption in the primary location. When self-service disaster recovery is turned on, a copy of data is created in the remote secondary region and this consumes another 10 GB. This 10 GB in the secondary region can be paid through storage entitlements. Only if you exceed your available free storage or available entitlements, would a pay-as-you-go plan actively start billing.
   
 - Pay-as-you-go is designed to generate various alerts and warning at various thresholds to warn administrators of depleting storage. Use the alert mechanism to your advantage.
-- Pay-as-you-go links the selected environment to the Azure subscription using a billing policy. Once an environment is linked to an Azure subscription, the usage of apps and any Dataverse or Power Platform usage that goes above the included storage amounts are billed against the Azure subscription using Azure meters. Learn more at [Pay-as-you-go meters](pay-as-you-go-meters.md). If more storage entitlements are acquired, PayGo will stop running the meters and consuming from available free storage and entitlements will take precedence. 
+- Pay-as-you-go links the selected environment to the Azure subscription using a billing policy. Once an environment is linked to an Azure subscription, the usage of apps and any Dataverse or Power Platform usage that goes above the included storage amounts are billed against the Azure subscription using Azure meters. Learn more at [Pay-as-you-go meters](pay-as-you-go-meters.md). If more storage entitlements are acquired, the pay-as-you-go plan stops running the meters and consuming from available free storage and entitlements take precedence. 
 
 ### How does billing work for self-service disaster recovery?
 
 - If your environment is configured to draw capacity from your tenant's Dataverse capacity entitlement, then entitled capacity is consumed first and a pay-as-you-go billing plan is still required so you can avoid capacity overages.
-- PayGo generates multiple warnings at various thresholds to ensure that the customer is well-informed and takes appropriate action to avoid PayGo charges.  
-- Admins can allocate capacity to the environment, after which the pay-as-you-go plan will be billed.
+- Pay-as-you-go plan generates multiple warnings at various thresholds to ensure that the customer is well-informed and takes appropriate action to avoid pay-as-you-go charges.  
+- Admins can allocate capacity to the environment, after which the pay-as-you-go plan is billed.
 - Customers can't turn off the pay-as-you-go plan in the billing experience if self-service disaster recovery is turned on.
 
 ### Can I switch regions during a regional outage?
