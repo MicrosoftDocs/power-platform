@@ -195,7 +195,7 @@ No, self-service disaster recovery can't be disabled while the environment is in
 Yes, self-service disaster recovery is supported for Power Apps and Power Pages.
 
 ### Is Power Automate supported with self-service disaster recovery?
-As of October 2025, for all new environments:
+As of October 2025:
 - Power Automate desktop flows are fully supported for failover and failback with self-service disaster recovery.
 - Power Automate cloud flows are now available in preview. Don't use features in preview with production workloads.
 
