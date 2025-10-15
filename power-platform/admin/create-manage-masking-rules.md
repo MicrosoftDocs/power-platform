@@ -2,7 +2,7 @@
 title: Create and manage masking rules (preview)
 description: Learn how to create and manage masking rules in Microsoft Power Apps.
 ms.component: pa-admin
-ms.date: 09/09/2025
+ms.date: 10/15/2025
 ms.topic: overview
 ms.custom: "admin-security"
 author: paulliew
@@ -150,7 +150,7 @@ When a customer sends you an email with sensitive data and the email has this ma
 > - Number
 
 > [!IMPORTANT]
-> When a form is customized and a [**Component**](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/add-move-configure-or-delete-components-on-form#add-components-for-a-column-on-the-form), example **Rich Text Editor Control**, is added to a masked column, the **entire column** is masked. Users who have permissions to read and update this column can unmask it.
+> When a form is customized and a [component](/power-apps/maker/model-driven-apps/add-move-configure-or-delete-components-on-form#add-components-for-a-column-on-the-form), such as **Rich Text Editor Control**, is added to a masked column, the entire column is masked. Users who have permissions to read and update this column can unmask it.
 
 ### Grant permissions to a secured column with a masking rule
 
