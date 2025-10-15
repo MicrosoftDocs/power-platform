@@ -151,7 +151,7 @@ You can review the documentation: [SAP integration](/power-automate/sap-integrat
 
 You have a couple options:
 
-- [SAP Cloud Appliance Library](https://aka.ms/sap/cal). Create your own SAP demo instances on Azure by following the instructions here: [Deploy with SAP Cloud Appliance Library](/azure/sap/workloads/cal-s4h).
+- [SAP Cloud Appliance Library](https://aka.ms/sap/cal). Create your own SAP demo instances on Azure by following the instructions here: [Deploy with SAP Cloud Appliance Library](/azure/sap/sap-on-azure-overview).
 - [SandboxSAP](https://idesremote.com/). Be sure to select the add-on for RFCs/BAPIs to allow Power Automate to connect to their instances. Microsoft isn't affiliated with IDES Remote, these services are used at your own risk.
 
 ### Where do I turn if I get stuck with SAP integration with Power Platform?
