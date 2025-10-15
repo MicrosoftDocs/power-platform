@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: rashmansur
-ms.date: 10/14/2025
+ms.date: 10/15/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -117,7 +117,7 @@ You might also want to turn on disaster recovery for other events, like:
 
 Your company might have disaster recovery drills documented as a requirement in your internal business continuity plans. Some industries and companies might be required by government regulations to perform audits on their business continuity disaster recovery capabilities. In these cases, you can run a disaster recovery drill on an environment. A disaster recovery drill lets you do self-service disaster recovery without losing any data. The duration of the failover action can be slightly longer while all remaining data is replicated to the secondary region.
 
-We recommend doing drills on a copy of a production environment, since this involves downtime when failing over to remote region that can last for minutes. For example, you might want to copy a production environment to a sandbox environment and then change the type from sandbox to production. 
+We recommend doing drills on a copy of a production environment, since this involves downtime when failing over to remote region that can last for minutes. For example, you might want to copy a production environment to a sandbox environment and then change the type from sandbox to production.
 
 ## Emergency response failover
 
@@ -144,19 +144,22 @@ We recommend that you perform disaster recovery drills or an emergency response 
 
 ## Frequently asked questions (FAQs)
 
-### Why do I need self-service disaster recovery if I already have a secondary copy maintained in a remote secondary region? 
-- There are no secondary copies being maintained in remote secondary region if self-service disaster recovery hasn't been turned on.
-- Super storms, natural calamities, unforseen political uncertainities, that have the potential of bring an entire region down are becoming more and more common. To minimie the impact of a disaster that brings entire region down, it is advisable to maintain a asyncronous copy in a remote region. Self serve disaster recovery gives you that total control to failover to the secondary region with the push of a button and failback with the push of a button when primary region is restored to ensure business continuity. You can also simulate the primary being down to run a real failover and failback to secondary region to test a real compliance drill. (please note we advise running drills with a copy of primary and not with primary to avoid absolutely any downtime)
+### Why do I need self-service disaster recovery if I already have a secondary copy maintained in a remote, secondary region? 
+There are no secondary copies being maintained in a remote, secondary region if self-service disaster recovery hasn't been turned on.
+
+Super storms, natural calamities, and unforseen political uncertainities that have the potential to bring an entire region down are becoming more common. To minimie the impact of a disaster that brings an entire region down, it's advisable to maintain an asyncronous copy in a remote region. Self-service disaster recovery gives you control to failover to a secondary region with the push of a button and failback with the push of a button when the primary region is restored to ensure business continuity. You can also simulate the primary region being down to run a real failover and failback to the secondary region to test a real compliance drill. We advise running drills with a copy of the production environment to avoid any downtime.
 
 ### What are the costs associated with using self-service disaster recovery?
 
-- PayGo must be enabled on the environment as a pre-requisite to enabling SSDR on that environment.
-- The select environment must be a managed environment[https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-licensing]. This is a premium license tier. 
-- Capacity charges are based on the storage consumption of the environment's paired secondary region for Database, File, and Log storage types.
-- Capacity consumption is reflected in the familiar licensing experience within the Power Platform Admin Center. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
-- Example: say a user has 10 GB capacity consumption in the Primary location. When SSDR is enabled, a copy of data is created in the remote secondary region and this will consume another 10 GB. This 10 GB in the secondary region can be paid via storage entitlements. Only if you exceed your available free storage or available entitlements, would PayGo plan actively start billing.
-- PayGo is designed to generate various alerts and warning at various thresholds to the admin to warn them of depleting storage. Please leverage the alert mechanism to your advantage.
-- PayGo links the select environment to the Azure subscription using a billing policy. Once an environment is linked to an Azure subscription, the usage of apps and any Dataverse or Microsoft Power Platform request usage that goes above the included /entitled/pre-acquired storage amounts are billed against the Azure subscription using Azure meters[https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-meters?tabs=image]. If more storage entitlements are acquired, payGo will stop running the meters and consuming from available free storage / entitlements will take precedence. 
+- [Pay-as-you-go](pay-as-you-go-overview.md)  must be turned on for the environment as a pre-requisite to turning on self-service disaster recovery on that environment.
+- The select environment must be a [Managed Environment](managed-environment-licensing.md). This is a premium license tier. 
+- Capacity charges are based on the storage consumption of the environment's paired secondary region for database, file, and log storage types.
+- Capacity consumption is reflected in the familiar licensing experience within the Power Platform admin center. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
+
+  For example, suppose a user has 10 GB capacity consumption in the primary location. When self-service disaster recovery is turned on, a copy of data is created in the remote secondary region and this consumes another 10 GB. This 10 GB in the secondary region can be paid through storage entitlements. Only if you exceed your available free storage or available entitlements, would PayGo plan actively start billing.
+  
+- Pay-as-you-go is designed to generate various alerts and warning at various thresholds to warn administrators of depleting storage. Use the alert mechanism to your advantage.
+- Pay-as-you-go links the selected environment to the Azure subscription using a billing policy. Once an environment is linked to an Azure subscription, the usage of apps and any Dataverse or Power Platform usage that goes above the included storage amounts are billed against the Azure subscription using Azure meters. Learn more at [Pay-as-you-go meters](pay-as-you-go-meters.md). If more storage entitlements are acquired, PayGo will stop running the meters and consuming from available free storage and entitlements will take precedence. 
 
 ### How does billing work for self-service disaster recovery?
 
@@ -194,7 +197,7 @@ Yes, self-service disaster recovery is supported for Power Apps and Power Pages.
 ### Is Power Automate supported with self-service disaster recovery?
 Power Automate desktop flows are fully supported for failover and failback with self-service disaster recovery.
 
-Power Automate cloud flows are now available in preview. Please don't use features in preview with production workloads.
+Power Automate cloud flows are now available in preview. Don't use features in preview with production workloads.
 
 ### How can I find out where my data is being replicated to? Can I change my secondary destination region?
 
