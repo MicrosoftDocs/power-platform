@@ -1,11 +1,11 @@
 ---
-title: Integration patterns
+title: Explore integration patterns
 description: Discover integration patterns tailored to specific business scenarios and technical constraints. Learn how to choose the right approach for your architecture.
-customer intent: As a Power Automate enterprise architect, I want to develop effective integration patterns using Power Automate so that I can design effective, scalable solutions for my organization.
+#customer intent: As an enterprise architect, I want to learn about different integration patterns so that I can choose the most appropriate approach for my organization's specific business scenarios and technical constraints.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 10/09/2025
+ms.date: 10/15/2025
 ms.topic: concept-article
 ms.custom:
   - ai-gen-docs-bap
@@ -13,7 +13,9 @@ ms.custom:
   - ai-seo-date:09/22/2025
 ---
 
-Based on your analysis, plan the integration and identify the best pattern for your requirements. The following list of integration patterns isn't exhaustive. You might find that a combination of these patterns best fits your scenario.
+# Explore integration patterns
+
+Based on your [analysis](#determine-integration-requirements), plan the integration and identify the best pattern for your requirements. The following list of integration patterns isn't exhaustive. You might find that a combination of these patterns best fits your scenario.
 
 Each pattern addresses specific business scenarios and technical constraints:
 
@@ -25,13 +27,11 @@ Each pattern addresses specific business scenarios and technical constraints:
 
 ## Instant trigger pattern
 
-The Instant trigger pattern is user-driven and intuitive. It initiates an integration flow when a user performs an action, such as pressing a button in a Power App. This pattern is ideal for scenarios where data is needed on demand and not continuously.
+The instant trigger pattern is user-driven and intuitive. It initiates an integration flow when a user performs an action, such as pressing a button in a Power App. This pattern is ideal for scenarios where data is needed on demand and not continuously.
 
 ### Example scenario: Instant trigger
 
 A Power App allows product managers to review customer feedback and create action plans. Some technical specifications are stored in Oracle’s Product Lifecycle Management system. Instead of copying the entire dataset to Dataverse, the app includes a button to fetch data when needed.
-
-:::image type="content" source="../media/integration-patterns/instant-trigger.png" alt-text="Diagram illustrating a user-driven, instant trigger.":::
 
 Reasons to integrate rather than redirect users to Oracle include:
 
@@ -43,13 +43,17 @@ Given the cost-effectiveness of Power Platform integrations, any of these reason
 
 ### Flow design
 
-Use an instant cloud flow triggered by a button press. The flow typically includes these steps:
+Use an instant cloud flow triggered by a button press. 
+
+:::image type="content" source="../media/integration-patterns/instant-trigger.png" alt-text="Diagram showing a button-triggered flow with steps to retrieve Oracle data, return it to the app, and write it to Dataverse.":::
+
+The flow typically includes these steps:
 
 1. Request records from Oracle using parameters (like Product ID) provided by the app.
 1. Return records from Oracle to the app.
 1. Write records to Dataverse.
 
-This data then appears in the Power Apps interface.
+This data is then reflected in the Power Apps interface.
 
 ### Considerations
 
@@ -68,9 +72,9 @@ Event-driven (also known as automatic trigger) architectures respond to changes 
 
 ### Example scenario
 
-The customer service department wants to send automatic updates to customers when a case is updated. Only specific changes—such as adding a note or changing the status—should trigger notifications.
+A customer service department wants to send automatic updates to customers when a case is updated. Only specific changes—such as adding a note or changing the status—should trigger notifications.
 
-:::image type="content" source="../media/integration-patterns/auto-trigger.png" alt-text="Diagram showing event-driven automatic trigger.":::
+:::image type="content" source="../media/integration-patterns/auto-trigger.png" alt-text="Screenshot of Power Automate flow configuration showing trigger settings for monitoring Dataverse record changes.":::
 
 Use an automatic trigger in Power Automate to respond to these events. The flow listens for changes in Dataverse records and sends notifications when defined conditions are met.
 
@@ -108,7 +112,7 @@ Let's review an example:
 
 A company uses three legacy systems to manage core business functions: SAP for orders and accounts receivables, Oracle for product inventory, and IBM for customer-related content management. The organization commissions a new Power Platform app that uses AI to predict the next best action for each customer based on historical data. The app gathers relevant information from all three systems and generates a sales action plan, which it presents to sales managers to guide engagement.
 
-:::image type="content" source="../media/integration-patterns/scheduled-trigger.png" alt-text="Diagram showing scheduled trigger pattern.":::
+:::image type="content" source="../media/integration-patterns/scheduled-trigger.png" alt-text="Diagram of data integration using a scheduled process to unify information from three legacy systems for AI-driven sales recommendations.":::
 
 The organization builds a Power Platform app that uses AI to recommend sales actions based on customer history. The app must collect relevant data from all three systems to generate a sales action plan.
 
@@ -146,7 +150,7 @@ Large organizations often operate multiple systems across departments. These sys
 
 The organization uses multiple systems to manage business operations. SAP handles orders and accounts receivables, Oracle manages product inventory, and IBM stores internal financial documentation. Dataverse powers apps for sales, customer service, and product management. SharePoint supports internal collaboration and knowledge base management, while Maersk APIs automate logistics processes.
 
-:::image type="content" source="../media/integration-patterns/event-driven-trigger.png" alt-text="Diagram showing service oriented pattern architecture.":::
+:::image type="content" source="../media/integration-patterns/event-driven-trigger.png" alt-text="Diagram showing integration architecture with multiple systems linked through specific triggers for business processes.":::
 
 Each system interacts with others through scheduled, event-driven, or manual triggers. No single flow serves all use cases. Instead, build multiple flows tailored to specific triggers and business processes.
 
@@ -199,7 +203,7 @@ Use an automatic cloud flow triggered by updates to the Account record. Configur
 
 This approach results in a targeted, event-driven integration that supports compliance and operational efficiency.
 
-:::image type="content" source="../media/integration-patterns/event-driven-auto-trigger.png" alt-text="Diagram showing how volume and frequency vary with values.":::
+:::image type="content" source="../media/integration-patterns/event-driven-auto-trigger.png" alt-text="Diagram of an event-driven integration showing volume and frequency variations based on account updates with filters applied.":::
 
 ### Response time expectations
 
@@ -225,7 +229,7 @@ When selecting an integration tool, start with Power Automate as the default opt
 
 Custom code, Azure Functions, Data Factory, or Service Bus might give you more control or better performance, but they add complexity and cost. Use these options only when Power Automate can't meet your business or technical needs.
 
-:::image type="content" source="../media/integration-patterns/integration.png" alt-text="Diagram showing integrations.":::
+:::image type="content" source="../media/integration-patterns/integration.png" alt-text="Diagram of an integration workflow showing Power Automate connectors collecting data and Azure Functions performing calculations.":::
 
 ### Example scenario
 
@@ -250,5 +254,7 @@ Every integration decision must consider the total cost of ownership. Custom sol
 - Justify higher costs with clear business value
 - Use Power Automate unless you find it insufficient
 - Design integrations that are efficient, maintainable, and scalable
+ 
+## Related resources
 
-[Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/)
+- [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/)

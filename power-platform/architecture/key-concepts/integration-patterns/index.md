@@ -1,11 +1,11 @@
 ---
 title: Design scalable integrations with Power Automate
 description: Design scalable and cost-effective integrations with Power Automate. Learn key patterns, requirements, and strategies for robust enterprise solutions.
-#customer intent: As a solution architect, I want to design scalable integrations using Power Automate so that I can meet enterprise goals efficiently.
+#customer intent: As an enterprise architect, I want to design scalable integrations using Power Automate so that I can meet enterprise goals efficiently.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/22/2025
+ms.date: 10/15/2025
 ms.topic: overview
 ---
 

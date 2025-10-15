@@ -1,11 +1,11 @@
 ---
-title: Integration requirements
+title: Determine integration requirements
 description: Explore integration requirements for Power Automate to meet enterprise goals. Understand volume, directionality, and system capabilities for robust solutions.
-customer intent: As a Power Automate enterprise architect, I want to develop effective integration patterns using Power Automate so that I can design effective, scalable solutions for my organization.
+#customer intent: As an enterprise architect, I want to understand the key dimensions of integration requirements so that I can design effective Power Automate solutions that meet my organization's needs.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 10/09/2025
+ms.date: 10/15/2025
 ms.topic: concept-article
 ms.custom:
   - ai-gen-docs-bap
@@ -13,7 +13,7 @@ ms.custom:
   - ai-seo-date:09/22/2025
 ---
 
-# Integration requirements
+# Determine integration requirements
 
 Successful integration design starts with understanding three foundational dimensions: volume and frequency, directionality, and capability. These dimensions help you evaluate business requirements, system constraints, and scalability needs.
 
@@ -43,7 +43,7 @@ Two integration scenarios might involve the same total volume, such as 60,000 re
 
 Triggers define how and when integrations run. Choose the right trigger based on predictability and system load.
 
-**Scheduled triggers (also known as "Batch")**
+**Scheduled triggers (also known as "Batch")**:
 
 - Run at fixed intervals.
 - Easier to predict and manage.
@@ -119,7 +119,7 @@ System capability includes the ability to perform necessary transformations and 
 - Assess what each system can do before, during, and after data transfer.
 - Consider the complexity of source data, transformation needs, and target system processing.
 
-For the example, exporting a SQL view with stored procedures to Dataverse might require mid-flight adaptation and post-arrival plugin execution.
+For example, exporting a SQL view with stored procedures to Dataverse might require mid-flight adaptation and post-arrival plugin execution.
 
 ### Capability stakeholders
 
@@ -130,13 +130,15 @@ System administrators provide insight into system capabilities. Engage with cent
 
 ## Put it all together
 
-Effective integration design begins with understanding three core components: volume and frequency, directionality, and capability.
+Effective integration design begins with understanding three core components. To summarize: 
 
-Volume and frequency define how much data is transferred and how often. These metrics influence the choice of tools, performance expectations, and scalability planning. Directionality identifies the source and destination of data. It helps determine how data flows between systems and ensures compliance with security and regulatory requirements. Capability measures each system’s ability to send, receive, and process data. It highlights performance limitations and helps identify potential bottlenecks in the integration process.
+- **Volume and frequency** define how much data is transferred and how often. These metrics influence the choice of tools, performance expectations, and scalability planning. 
+- **Directionality** identifies the source and destination of data. It helps determine how data flows between systems and ensures compliance with security and regulatory requirements. 
+- **Capability** measures each system’s ability to send, receive, and process data. It highlights performance limitations and helps identify potential bottlenecks in the integration process.
 
 Each component maps directly to initial business requirements. Analyze, together with stakeholders, how volume, frequency, directionality, and capability affect the overall integration process.
 
-Stakeholder collaboration is essential during analysis. Their input can reshape the integration approach entirely.
+Stakeholder collaboration is essential during analysis. Their input can reshape the integration approach.
 
 - **Process owners** provide initial business requirements.
 - **Infrastructure architects and security officers** ensure compliance and secure connectivity.
@@ -144,30 +146,29 @@ Stakeholder collaboration is essential during analysis. Their input can reshape 
 
 ### Example scenario
 
-Let's put everything together through an example scenario.
-The business requirement is to create an integration process that keeps case information in sync between an external customer and internal service engineers who work on cases. Customers can add comments to a case through a website, while engineers can add case information through a Power App.
+Let's put everything together through an example scenario. Imagine that the business requirement is to create an integration process that keeps case information in sync between an external customer and internal service engineers who work on cases. Customers can add comments to a case through a website, while engineers can add case information through a Power App.
 
 ### Request volume and trigger frequency
 
 Volume and frequency determine how much data the system transfers and how often it does so. In this scenario, customers primarily drive case creation, so the volume depends on the number of customers the company serves and its projected growth trajectory.
+
 The total volume of updates might be calculated as:
 
 `[Customers] × [Cases per customer] × [Average updates per case]`
 
-You should visualize this number on a chart to show how it grows over time. For example, if you start with 10 million updates per year and expect a 20% increase each year, the chart shows a steady rise in updates year over year.
+Visualize this number on a chart to show how it grows over time. For example, if you start with 10 million updates per year and expect a 20% increase each year, the chart should show a steady rise in updates year over year.
 
-:::image type="content" source="../media/integration-patterns/request-over-time.png" alt-text="Diagram showing the number of requests per year.":::
+:::image type="content" source="../media/integration-patterns/request-over-time.png" alt-text="Diagram of a line chart showing the number of requests per year, with a steady upward trend based on projected 20% annual growth.":::
 
-Use historical data and growth projections to estimate future load.
-For example: If the system handles 10 million updates per year today and grows at 20% annually, the integration must support 25 million updates per year over five years.
+Use historical data and growth projections to estimate future load. For example, if the system handles 10 million updates per year today and grows at 20% annually, the integration must support 25 million updates per year over five years.
 
 Frequency analysis shows monthly peaks. If current demand is 3.2 million requests per month, future demand might reach 8 million per month. Design the integration to meet these performance thresholds.
 
-To ensure the integration remains effective over a typical five-year return-on-investment (ROI) period, design it to support at least 25 million requests per year. This capacity planning accounts for projected growth and helps the solution remain scalable and reliable as business needs evolve.
+To ensure the integration remains effective over a typical five-year return-on-investment (ROI) period, design the solution to support at least 25 million requests per year. This capacity planning accounts for projected growth and helps the solution remain scalable and reliable as business needs evolve.
 
-The frequency part of volume is the ability of the systems involved handling information within a year. Again, we can chart historical data to understand how frequency applies here:
+The frequency part of volume is the ability of the systems involved handling information within a year. Again, we can chart historical data to understand how frequency applies.
 
-:::image type="content" source="../media/integration-patterns/request-density.png" alt-text="Diagram showing the density of requests over the course of a year.":::
+:::image type="content" source="../media/integration-patterns/request-density.png" alt-text="Diagram of request density over a year, highlighting monthly peaks and projected growth trends.":::
 
 ### Direction of integration triggers
 
@@ -178,11 +179,11 @@ Directionality defines the flow of data between systems. This scenario includes 
 - A third data stream where engineers write updates into Dataverse from the Power App
 - A final data stream to read updates in the Power App
 
- :::image type="content" source="../media/integration-patterns/website-integration.png" alt-text="Diagram showing directionality among engineers, Dataverse, and customers.":::
+ :::image type="content" source="../media/integration-patterns/website-integration.png" alt-text="Diagram illustrating four data streams: website to Dataverse, Dataverse to website, engineers to Dataverse, and Dataverse to the Power App.":::
 
 Understanding these flows helps you configure secure and efficient integrations. Use direct or decoupled patterns based on system capabilities and performance needs.
 
-:::image type="content" source="../media/integration-patterns/decoupled.png" alt-text="Diagram illustrating a decoupled design.":::
+:::image type="content" source="../media/integration-patterns/decoupled-data-flow-diagram.png" alt-text="Diagram of a decoupled integration design showing data flows between Dataverse, the Power App, and a website with separate read and write streams.":::
 
 ### Capability in action
 
@@ -202,10 +203,10 @@ Design cloud flows to handle errors, implement retry logic, and follow [best pra
 
 ## Related resources
 
-- [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/export-to-data-lake)
-- [OAuth authentication for HTTP request triggers](/power-automate/oauth-authentication)
+- [What is Azure Synapse Link for Dataverse?](/power-apps/maker/data-platform/export-to-data-lake)
+- [Add OAuth authentication for HTTP request triggers](/power-automate/oauth-authentication)
 - [Limits of automated, scheduled, and instant flows](/power-automate/limits-and-config)
 - [View and download Microsoft Dataverse analytics](/power-platform/admin/analytics-common-data-service)
-- [Azure Synapse Link creation for Dataverse with Azure Data Lake](/power-apps/maker/data-platform/azure-synapse-link-data-lake)
-- [Service Bus queues, articles, and subscriptions](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)
+- [Create an Azure Synapse Link for Dataverse with Azure Data Lake](/power-apps/maker/data-platform/azure-synapse-link-data-lake)
+- [Service Bus queues, topics, and subscriptions](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)
 - [Power Automate coding guidelines for cloud flows](/power-automate/guidance/coding-guidelines/)
