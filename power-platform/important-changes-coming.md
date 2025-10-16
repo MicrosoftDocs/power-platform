@@ -29,7 +29,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Deprecation of create an app from an image or Figma file
 
-After October 16, 2025, makers will no longer be able to create new apps using  the **An image or Figma file** option om Power Apps.
+After October 16, 2025, makers will no longer be able to create new apps using  the **An image or Figma file** option in Power Apps.
 
 ### Whis is this needed?
 With Copilot, we have new features to help you create apps such as [plans](/power-apps/maker/plan-designer/plan-designer) and [generative pages](/power-apps/maker/model-driven-apps/generative-pages).
