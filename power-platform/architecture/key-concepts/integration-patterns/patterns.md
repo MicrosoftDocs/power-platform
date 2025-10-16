@@ -5,7 +5,7 @@ description: Discover integration patterns tailored to specific business scenari
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 10/15/2025
+ms.date: 10/16/2025
 ms.topic: concept-article
 ms.custom:
   - ai-gen-docs-bap
@@ -29,7 +29,7 @@ Each pattern addresses specific business scenarios and technical constraints:
 
 The instant trigger pattern is user-driven and intuitive. It initiates an integration flow when a user performs an action, such as pressing a button in a Power App. This pattern is ideal for scenarios where data is needed on demand and not continuously.
 
-### Example scenario: Instant trigger
+### Example scenario
 
 A Power App allows product managers to review customer feedback and create action plans. Some technical specifications are stored in Oracle’s Product Lifecycle Management system. Instead of copying the entire dataset to Dataverse, the app includes a button to fetch data when needed.
 
@@ -43,11 +43,11 @@ Given the cost-effectiveness of Power Platform integrations, any of these reason
 
 ### Flow design
 
-Use an instant cloud flow triggered by a button press. 
+Use an instant cloud flow triggered by a button press in the application. 
 
 :::image type="content" source="../media/integration-patterns/instant-trigger.png" alt-text="Diagram showing a button-triggered flow with steps to retrieve Oracle data, return it to the app, and write it to Dataverse.":::
 
-The flow typically includes these steps:
+The flow includes these steps:
 
 1. Request records from Oracle using parameters (like Product ID) provided by the app.
 1. Return records from Oracle to the app.
@@ -55,38 +55,35 @@ The flow typically includes these steps:
 
 This data is then reflected in the Power Apps interface.
 
-### Considerations
+Considerations:
 
 - Data models between Oracle and Dataverse might differ, requiring transformation steps.
 - Instant triggers aren't truly instant. Execution time depends on system availability and transformation complexity.
 - Add visual indicators in the app to show progress and allow cancellation if the operation takes too long.
 - In large organizations, simultaneous requests from many users can strain the system.
-
-### Error handling
-
-Integrations can fail for various reasons. Ensure the app provides feedback to users during execution. Avoid scenarios where users select a button and receive no response, which leads to poor user experience.
+- Integrations can fail for various reasons. Ensure the app provides feedback to users during execution. Avoid scenarios where users select a button and receive no response, which leads to a poor user experience.
 
 ## Event driven pattern
 
-Event-driven (also known as automatic trigger) architectures respond to changes in systems without direct user interaction. This pattern is intuitive and scalable, making it ideal for automating business processes based on system events.
+Event-driven (also known as automatic trigger) architectures respond to changes in systems without direct user interaction. For example, triggers can be configured to respond to a record created in Dataverse, incoming emails, files added to OneDrive, and any number of other events. This pattern is intuitive and scalable, making it ideal for automating business processes based on system events.
 
 ### Example scenario
 
-A customer service department wants to send automatic updates to customers when a case is updated. Only specific changes—such as adding a note or changing the status—should trigger notifications.
-
-:::image type="content" source="../media/integration-patterns/auto-trigger.png" alt-text="Screenshot of Power Automate flow configuration showing trigger settings for monitoring Dataverse record changes.":::
+A customer service department uses a Dataverse-connected app to work on cases and provide updates to customers automatically, without writing emails manually. Only specific changes—such as adding a note or changing the status—should trigger notifications.
 
 Use an automatic trigger in Power Automate to respond to these events. The flow listens for changes in Dataverse records and sends notifications when defined conditions are met.
 
+:::image type="content" source="../media/integration-patterns/auto-trigger.png" alt-text="Screenshot of Power Automate flow configuration showing trigger settings for monitoring Dataverse record changes.":::
+
 ### Trigger configuration
 
-Configure the flow to monitor:
+Configure the flow as follows:
 
-- **Change type**: Specify the type of update (for example, modify).
-- **Select columns**: Limit the trigger to relevant fields (for example, notes, status).
-- **Filter rows**: Ensure only customer-facing status changes activate the flow.
+- Indicate the **Change Type** to monitor.
+- Define the columns to respond to using the **Select Columns** parameter.
+- Use the **Filter Rows** parameter to ensure only customer-facing status changes trigger the flow, plus any other filtration requirements.
 
-Avoid placing filtering logic inside the flow. Use trigger parameters to reduce unnecessary executions and improve performance.
+Avoid implementing this logic in the flow itself using an `If` action. Use trigger parameters to reduce unnecessary executions and improve performance.
 
 ### Avoid logical conflicts
 
@@ -108,23 +105,21 @@ Understand the expected volume of triggered events. Notification services (email
 
 Data consolidation (also known as scheduled trigger) helps organizations unify information across multiple systems to support reporting and operational processes. While analytics often require full datasets, operational use cases focus on retrieving only the data needed to complete business tasks.
 
-Let's review an example:
+### Example scenario
 
-A company uses three legacy systems to manage core business functions: SAP for orders and accounts receivables, Oracle for product inventory, and IBM for customer-related content management. The organization commissions a new Power Platform app that uses AI to predict the next best action for each customer based on historical data. The app gathers relevant information from all three systems and generates a sales action plan, which it presents to sales managers to guide engagement.
-
-:::image type="content" source="../media/integration-patterns/scheduled-trigger.png" alt-text="Diagram of data integration using a scheduled process to unify information from three legacy systems for AI-driven sales recommendations.":::
-
-The organization builds a Power Platform app that uses AI to recommend sales actions based on customer history. The app must collect relevant data from all three systems to generate a sales action plan.
+A company uses three legacy systems to manage core business functions: SAP for orders and accounts receivables, Oracle for product inventory, and IBM for customer-related content management. The organization has commissioned a new Power Platform app to use AI to predict the next best action for each customer based on historical data. The app needs to gather relevant information from all three systems and generate a sales action plan for sales managers to guide engagement.
 
 ### Integration approach
 
-The integration doesn't require real-time updates or event-driven triggers. Instead, use a scheduled process to:
+The integration doesn't require real-time updates or event-driven triggers. Instead, use a scheduled process based on how frequently sales staff interact with customers.
 
-- Retrieve only the necessary data from each system
-- Transform the data into a format compatible with Dataverse
-- Feed the data into the AI model for analysis
+In this use case, a scheduled trigger consolidates data as follows:
 
-Define the schedule based on how frequently sales staffs interact with customers. Use a scheduled cloud flow in Power Automate to run the integration at regular intervals.
+- Requests only the necessary data from each system
+- Returns the data into a format compatible with Dataverse
+- Uploads the data into the AI model for analysis
+
+:::image type="content" source="../media/integration-patterns/scheduled-trigger.png" alt-text="Diagram of data integration using a scheduled process to unify information from three legacy systems for AI-driven sales recommendations.":::
 
 ### Scheduled trigger configuration
 
@@ -132,7 +127,7 @@ Scheduled triggers offer flexible recurrence options, from once per second to on
 
 - Monitor flow execution time to avoid overlaps or delays
 - Implement safeguards to prevent performance degradation
-- Use Application Insights or similar tools to ensure the flow runs consistently
+- Use [Application Insights](../../../admin/app-insights-cloud-flow.md) or similar tools to ensure that the flow runs consistently
 
 ### Risk mitigation
 
@@ -146,13 +141,13 @@ If a scheduled flow takes longer than expected, it might disrupt business proces
 
 Large organizations often operate multiple systems across departments. These systems evolve to depend on each other for completing business processes. The integration layer bridges these systems, allowing each to perform its core function while enabling cross-system communication.
 
-### Integration landscape
+### Example scenario revisited
 
-The organization uses multiple systems to manage business operations. SAP handles orders and accounts receivables, Oracle manages product inventory, and IBM stores internal financial documentation. Dataverse powers apps for sales, customer service, and product management. SharePoint supports internal collaboration and knowledge base management, while Maersk APIs automate logistics processes.
+Let's continue with our example scenario in which the organization uses multiple systems to manage different parts of the business. SAP handles orders and accounts receivables, Oracle manages product inventory, and IBM stores internal financial documentation. Dataverse runs apps for sales, customer service, and product management. SharePoint supports internal collaboration and knowledge base management, while Maersk APIs automate logistics processes.
 
 :::image type="content" source="../media/integration-patterns/event-driven-trigger.png" alt-text="Diagram showing integration architecture with multiple systems linked through specific triggers for business processes.":::
 
-Each system interacts with others through scheduled, event-driven, or manual triggers. No single flow serves all use cases. Instead, build multiple flows tailored to specific triggers and business processes.
+Each system interacts with others through scheduled events or manual user actions. No single flow serves all use cases. Instead, the solution requires multiple flows tailored to specific triggers and business processes.
 
 ### Avoid monolithic flows
 
@@ -164,14 +159,11 @@ Creating one large flow to handle all integrations isn't practical. It introduce
 
 ### Optimize cross-system processes
 
-Look for opportunities to consolidate logic where appropriate.  
-For example, if a document in SharePoint must be sent to both SAP and Oracle, create one flow that reads the file once and writes it to both systems.
+Look for opportunities to consolidate logic where appropriate. For example, if a document in SharePoint must be sent to both SAP and Oracle during the same event, you might be tempted to create one flow that reads the file once and writes it to both systems. First, however, consider whether the logic you're creating is too rigid. In a large landscape, changes to how business processes work across systems happen as often as changes to those systems. 
 
 Avoid over-consolidation. Business processes and system configurations change frequently. Rigid, centralized logic reduces flexibility and increases maintenance overhead.
 
-### Architectural mindset
-
-Architects must think systematically. Design flows that are:
+Design flows that are:
 
 - Modular and maintainable
 - Scalable across departments and systems
@@ -183,16 +175,14 @@ This pattern results in a service-oriented architecture—sometimes humorously c
 
 Use data synchronization when identical systems store data in separate databases. Although storing the same data twice might seem inefficient, this pattern supports specific business needs, such as performance and regulatory compliance.
 
-### Common use cases
-
 - **Performance**: Local data access improves responsiveness, especially in latency-sensitive industries.
 - **Compliance**: Legal regulations might require data to be stored within national borders. Organizations often deploy local instances with synchronization processes to meet these requirements.
 
 ### Example scenario
 
-A medical devices company operates across multiple European regions. Each region mandates that medical data be stored locally. The company deploys Power Platform apps and Dataverse instances in each region.
+A medical devices company operates across multiple regions in Europe, in cooperation with local medical institutions. The laws of each region are clear about medical data—it must be stored within the borders of that region. Information about orders, products, and shipping can be stored cross-border. To address the regulatory requirements, the company created an instance of their Power Platform customer management app and Dataverse in each region.
 
-To support sales operations, the company synchronizes nonsensitive data, such as contact details, orders, and shipping, across all instances. Medical data remains local and excluded from synchronization.
+To support sales operations, the company wishes to synchronize nonsensitive data, such as contact details, orders, and shipping, across all instances. Medical data is excluded from synchronization.
 
 ### Integration approach
 
@@ -212,49 +202,41 @@ Set realistic expectations for synchronization speed. Power Automate is asynchro
 - Evaluate whether Power Automate meets performance needs
 - Avoid over-engineering for real-time access unless justified by business requirements
 
-### Architect’s role
-
-Architects must understand the business process and validate whether real-time synchronization is necessary. Many requests for real-time access lack a strong business case. Prioritize clarity, scalability, and maintainability in the integration design.
+Many requests for real-time access lack a strong business case. Prioritize clarity, scalability, and maintainability in the integration design.
 
 ## Beyond cloud flows
 
-When selecting an integration tool, start with Power Automate as the default option. It offers unmatched cost-effectiveness for both development and maintenance. Architects must justify any deviation from this choice, especially when considering custom code or other Azure services.
+When selecting an integration tool, start with Power Automate as the default option. It offers unmatched cost-effectiveness for both development and maintenance.
 
-### Why Power Automate is the default
+Power Automate is the preferred integration tool for many scenarios because it:
 
 - Delivers rapid development with low-code connectors
 - Minimizes long-term maintenance costs
 - Supports a wide range of triggers and systems
 - Scales well for most business scenarios
 
-Custom code, Azure Functions, Data Factory, or Service Bus might give you more control or better performance, but they add complexity and cost. Use these options only when Power Automate can't meet your business or technical needs.
+Custom code, Azure Functions, Data Factory, or Service Bus might give you more control or better performance, but they add complexity and cost. Use these options only when Power Automate doesn't meet your business or technical needs.
 
 :::image type="content" source="../media/integration-patterns/integration.png" alt-text="Diagram of an integration workflow showing Power Automate connectors collecting data and Azure Functions performing calculations.":::
 
 ### Example scenario
 
-An online banking service wants to qualify customers for loans in real time. The qualification process involves complex calculations and data retrieval from multiple systems.
+An online banking service wants to qualify customers for loans more quickly. The qualification process involves complex calculations and data retrieval from multiple systems to arrive at a final risk score. Following an initial evaluation, the banking service considered cloud flow unsuitable given the complexity of the calculations. 
 
-- Power Automate handles data collection with built-in connectors
-- Complex calculations go to an Azure Function or custom connector
-- This hybrid approach balances performance, scalability, and cost
+However, in this case a hybrid approach is the answer:
+
+- Power Automate to handle data collection with built-in connectors
+- Complex calculations encapsulated in custom code running as an Azure Function, which can be independently scaled, or in a custom connector
+
+This hybrid approach balances performance, scalability, and cost.
 
 ### Integration strategy
 
-Don't choose tools in isolation. Instead, combine their strengths:
+Don't choose tools in isolation. Instead, combine their strengths. For example:
 
 - Use Power Automate for orchestration and connectivity
 - Use Azure Functions for compute-intensive tasks
 - Use custom connectors to extend functionality when needed
 
-### Cost and scalability
-
-Every integration decision must consider the total cost of ownership. Custom solutions might seem powerful but often require a bigger budget for development, licensing, and support.
-
-- Justify higher costs with clear business value
-- Use Power Automate unless you find it insufficient
-- Design integrations that are efficient, maintainable, and scalable
+Every integration decision must consider the total cost of ownership. Custom solutions might seem powerful but often require a bigger budget for development, licensing, and support. Justify higher costs with clear business value.
  
-## Related resources
-
-- [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/)

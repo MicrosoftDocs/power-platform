@@ -5,7 +5,7 @@ description: Explore integration requirements for Power Automate to meet enterpr
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 10/15/2025
+ms.date: 10/16/2025
 ms.topic: concept-article
 ms.custom:
   - ai-gen-docs-bap
@@ -209,4 +209,3 @@ Design cloud flows to handle errors, implement retry logic, and follow [best pra
 - [View and download Microsoft Dataverse analytics](/power-platform/admin/analytics-common-data-service)
 - [Create an Azure Synapse Link for Dataverse with Azure Data Lake](/power-apps/maker/data-platform/azure-synapse-link-data-lake)
 - [Service Bus queues, topics, and subscriptions](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)
-- [Power Automate coding guidelines for cloud flows](/power-automate/guidance/coding-guidelines/)

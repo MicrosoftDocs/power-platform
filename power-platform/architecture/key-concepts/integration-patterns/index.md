@@ -5,7 +5,7 @@ description: Design scalable and cost-effective integrations with Power Automate
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 10/15/2025
+ms.date: 10/16/2025
 ms.topic: overview
 ---
 
@@ -13,7 +13,7 @@ ms.topic: overview
 
 Integration is a critical aspect of modern business processes, enabling seamless data flow and automation across different systems. This section provides a structured approach for designing robust, scalable, and cost-effective integrations using Power Automate cloud flows. It outlines key integration requirements, common patterns, real-world examples, and strategic considerations to help you make informed decisions aligned with enterprise goals.
 
-These articles are intended primarily for enterprise architects involved in designing new or optimizing existing system integrations using Power Automate low-code solutions.
+This section is intended primarily for enterprise architects involved in designing new or optimizing existing system integrations using Power Automate low-code solutions.
 
 You'll learn:
 
