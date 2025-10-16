@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: rashmansur
-ms.date: 10/15/2025
+ms.date: 10/16/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -203,8 +203,8 @@ As of October 2025:
 
 Microsoft reserves the rights to disclose the exact details of where the customer's data is residing for security and if it may need to be moved or replicated for various, high availability and resiliency scenarios. Customers can be assured that their data at rest respects geographical boundaries and abides by legislated residency laws. Even if self-service disaster recovery isn't turned on, Microsoft reserves the right to replicate, move, and relocate the data within a region for high availability and operational needs. The location of customer data within a geography (for example, _APAC_) isn't disclosed and may change based on Azure capacity constraints.
 
-### is Field service supported for SSDR ?
-Field service now supports SSDR. You can now Manage work orders, scheduling, inventory, and customer communications in one unified platform and in case of a disaster failover your automated service workflows, orders, inventory, dispatching,etc to remote region for business continuity 
+### Is Field service supported for self-service disaster recovery?
+Field service now supports self-service disaster recovery. You can now manage work orders, scheduling, inventory, and customer communications in one unified platform and in case of a disaster, fail over your automated service workflows, orders, inventory, and dispatching to a remote region for business continuity.
 
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
 
