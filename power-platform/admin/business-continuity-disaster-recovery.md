@@ -203,13 +203,16 @@ As of October 2025:
 
 Microsoft reserves the rights to disclose the exact details of where the customer's data is residing for security and if it may need to be moved or replicated for various, high availability and resiliency scenarios. Customers can be assured that their data at rest respects geographical boundaries and abides by legislated residency laws. Even if self-service disaster recovery isn't turned on, Microsoft reserves the right to replicate, move, and relocate the data within a region for high availability and operational needs. The location of customer data within a geography (for example, _APAC_) isn't disclosed and may change based on Azure capacity constraints.
 
+### is Field service supported for SSDR ?
+Field service now supports SSDR. You can now Manage work orders, scheduling, inventory, and customer communications in one unified platform and in case of a disaster failover your automated service workflows, orders, inventory, dispatching,etc to remote region for business continuity 
+
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
 
 - Copilot Studio conversation runtime requests fail until Microsoft restores the service in the primary region. Custom agents successfully failover and failback since they're saved on Dataverse.
 - In Dynamics 365, analytics and automation in sales observe latency impact. Relationship analytics KPIs aren't computed and new models for scoring aren't created during an outage.  
 -  In Dynamics 365 Customer Insights - Data, real-time updates are impacted. It doesn't support self-service disaster recovery today.
 -  In Dynamics 365 Customer service, basic scenarios that are 100% dependent on Dataverse, such as case creation, or Knowledge Base articles work. Case knowledge base access in customer service is unavailable.
-- Field Service is self-service disaster recovery ready.
+- ProjectOps specific features are not yet supported.
 - Data lake failover has known issues. Self-service disaster recovery isn't supported yet.
 - Connectors may have recovery issues when dependent on external systems, like SharePoint, SQL Server or third-party applications.
 - For Dynamics 365 Sales, analytics, reporting, and functions dependent on automation, such as sales forecasting, are unavailable.
