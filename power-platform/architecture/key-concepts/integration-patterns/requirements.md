@@ -170,7 +170,7 @@ The frequency part of volume is the ability of the systems involved handling inf
 
 :::image type="content" source="../media/integration-patterns/request-density.png" alt-text="Diagram of request density over a year, highlighting monthly peaks and projected growth trends.":::
 
-### Direction of integration triggers
+### Directionality and data flow
 
 Directionality defines the flow of data between systems. This scenario includes four distinct data streams:
 
@@ -183,16 +183,19 @@ Directionality defines the flow of data between systems. This scenario includes 
 
 Understanding these flows helps you configure secure and efficient integrations. Use direct or decoupled patterns based on system capabilities and performance needs.
 
-:::image type="content" source="../media/integration-patterns/decoupled-data-flow-diagram.png" alt-text="Diagram of a decoupled integration design showing data flows between Dataverse, the Power App, and a website with separate read and write streams.":::
-
 ### Capability in action
 
 In this example integration, built-in connectors streamline the process. When retrieving case information from Dataverse, apply filters and set request limits to optimize data retrieval and display only the necessary data in the app. For the website, publish endpoints using [Power Automate HTTP triggers](/power-automate/oauth-authentication) to enable reading and writing of data. Evaluate the capacity of both Power Automate flows and Dataverse to ensure they support projected loads. Review the [limits of automated, scheduled, and instant flows](/power-automate/limits-and-config) to avoid exceeding platform constraints.
 
-Use [Dataverse Analytics](/power-platform/admin/analytics-common-data-service) to monitor current usage. If Dataverse approaches its capacity limits, introduce:
+Use [Dataverse Analytics](/power-platform/admin/analytics-common-data-service) to monitor current usage. If Dataverse approaches its projected request load, consider adding a protective buffer in the form of [Azure Data Lake](/power-apps/maker/data-platform/azure-synapse-link-data-lake).
 
-- [Azure Data Lake](/power-apps/maker/data-platform/azure-synapse-link-data-lake) as a buffer to reduce read volume and prevent throttling errors (such as HTTP 429 Too Many Requests).
-- [Azure Service Bus](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) for queuing, which decouples create and update requests from the website.
+:::image type="content" source="../media/integration-patterns/decoupled-data-flow-diagram.png" alt-text="Diagram of a website integration pattern showing a decoupled read pattern with the addition of Azure Data Lake.":::
+
+This strategy helps reduce read volume from Dataverse and prevent throttling errors (such as HTTP 429 Too Many Requests).
+
+To decrease the dependency even further, decouple the create and update requests from the website using a queuing service such as [Azure Service Bus](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
+
+:::image type="content" source="../media/integration-patterns/fully-decoupled.png" alt-text="Diagram of a website integration pattern showing a fully decoupled design with the addition of a queuing service.":::
 
 Design cloud flows to handle errors, implement retry logic, and follow [best practices](/power-automate/guidance/coding-guidelines/) for reliability. When selecting an integration pattern, prioritize solutions that meet business needs with minimal complexity. Balance technical capability with cost, licensing, and maintenance requirements. Choose the simplest approach that fulfills requirements and avoids unnecessary investment.
 
