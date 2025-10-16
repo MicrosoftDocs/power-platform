@@ -4,13 +4,14 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/12/2025
+ms.date: 10/14/2025
 ms.subservice: admin
-ms.author: osfaixat
+ms.author: pvayner
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
+  - pvayner
   - matapg007
   - wifun
   - matapg007
@@ -120,7 +121,7 @@ The following table lists the services that support Azure subnet delegation for 
 |-----------|-------------------------|-------------------------|
 | Dataverse | [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) | Generally available |
 | Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[Azure File Storage](/connectors/azurefile/)</li><li>[Azure Blob Storage](/connectors/azureblob/)</li><li>[HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/)</li></ul> | Generally available |
-| Connectors | <ul><li>[Snowflake](/connectors/snowflakeip/)</li><li>[Databricks](/connectors/databricks/)</li><li>[AI search](/microsoft-copilot-studio/knowledge-azure-ai-search)</li></ul> | Preview |
+| Connectors | <ul><li>[Snowflake](/connectors/snowflakev2/)</li><li>[Databricks](/connectors/databricks/)</li><li>[AI search](/microsoft-copilot-studio/knowledge-azure-ai-search)</li></ul> | Generally available |
 
 ## Supported environments
 
@@ -144,7 +145,7 @@ When you use Virtual Network support in a Power Platform environment, all suppor
 
 For example, a plug-in might try to connect to a publicly available service, but your network policy doesn't allow public internet access within your Virtual Network. The call from the plug-in is blocked in accordance with your network policy. To avoid the blocked call, you can host the publicly available service in your Virtual Network. Alternatively, if your service is hosted in Azure, you can use a private endpoint on the service before you turn on Virtual Network support in the Power Platform environment.
 
-## FAQ
+## Frequently asked questions
 
 ### What's the difference between a Virtual Network data gateway and Azure Virtual Network support for Power Platform?
 
@@ -251,3 +252,7 @@ No, [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azur
 ## Next steps
 
 [Set up Virtual Network support](vnet-support-setup-configure.md)
+
+## Related content
+
+ [Troubleshoot Virtual Network issues](/troubleshoot/power-platform/administration/virtual-network)

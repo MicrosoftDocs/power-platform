@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Update","UpdateIf"]
 ---
 
 # Update and UpdateIf functions

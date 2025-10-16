@@ -16,6 +16,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["DateAdd","DateDiff","TimeZoneOffset"]
 ---
 
 # DateAdd, DateDiff, and TimeZoneOffset functions

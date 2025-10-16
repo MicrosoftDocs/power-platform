@@ -15,8 +15,8 @@
           displayName: CoE adoption guidance best practices
         - name: Enterprise templates
           href: enterprise-templates/overview.md
-        - name: International availability
-          href: availability.md
+        - name: Data residency
+          href: /dynamics365/get-started/availability?toc=/power-platform/toc.json&bc=/power-platform/breadcrumb/toc.json
         - name: Important changes (deprecations) coming
           href: important-changes-coming.md
         - name: Power Platform and SAP

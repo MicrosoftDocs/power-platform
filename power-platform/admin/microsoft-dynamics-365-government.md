@@ -4,13 +4,14 @@ description: Learn about features that are specific to Microsoft Dynamics 365 US
 author: carrema
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/03/2024
+ms.date: 09/30/2025
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contibutors:
+  - neeranelli 
   - yukonpeegs
   - Akshay-Koushik-Hothur
 ms.contributors:
@@ -57,13 +58,13 @@ Select Dynamics 365 US Government products are available to qualified government
 |Dynamics 365 Customer Service Enterprise and Professional     | Dynamics 365 Customer Service Enterprise and Professional        | Dynamics 365 Customer Service Enterprise and Professional         |
 |Dynamics 365 Customer Voice   |     |         |
 |Dynamics 365 Field Service      | Dynamics 365 Field Service         | Dynamics 365 Field Service          |
-|Dynamics 365 Finance     | Dynamics 365 Finance     |         |
+|Dynamics 365 Finance     | Dynamics 365 Finance     | Dynamics 365 Finance        |
 |Dynamics 365 Guides |   |   |
-|Dynamics 365 Omnichannel for Customer Service     |     |         |
+|Dynamics 365 Contact Center    |     |         |
 |Dynamics 365 Project Service Automation     | Dynamics 365 Project Service Automation         | Dynamics 365 Project Service Automation        |
 |Dynamics 365 Remote Assist on HoloLens or HoloLens 2 | Dynamics 365 Remote Assist on HoloLens or HoloLens 2 |   |
 |Dynamics 365 Sales Enterprise and Professional     |Dynamics 365 Sales Enterprise and Professional         |Dynamics 365 Sales Enterprise and Professional         |
-|Dynamics 365 Supply Chain Management | Dynamics 365 Supply Chain Management   |    |
+|Dynamics 365 Supply Chain Management | Dynamics 365 Supply Chain Management   | Dynamics 365 Supply Chain Management   |
 
 ### Subscription Availability
 
@@ -227,22 +228,24 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 ### Dynamics 365 Finance and Supply Chain Management
 - GCC: https://*.operations.gov.microsoftdynamics.us
 - GCC High: https://*.operations.high.microsoftdynamics.us
+- DoD: https://*.operations.dod.microsoftdynamics.us
 
 ### Dynamics 365 Lifecycle Services (LCS)
 - GCC: https://gov.lcs.microsoftdynamics.us
 - GCC High: https://high.lcs.microsoftdynamics.us
+- DoD: https://dod.lcs.microsoftdynamics.us
 
 ### Telemetry for model-driven apps
 
 The following URLs must be added to the allow list to ensure communication through firewalls and other security mechanisms for model-driven apps telemetry information:
-- GCC: https://tb.pipe.aria.microsoft.com/Collector/3.0
-- GCC High: https://tb.pipe.aria.microsoft.com/Collector/3.0
-- DoD: https://pf.pipe.aria.microsoft.com/Collector/3.0
+- GCC: `https://tb.pipe.aria.microsoft.com/Collector/3.0`
+- GCC High: `https://tb.pipe.aria.microsoft.com/Collector/3.0`
+- DoD: `https://pf.pipe.aria.microsoft.com/Collector/3.0`
 
 ## Regional Discovery Service is deprecated
 
 ### Discovery Service (Deprecated)
-- GCC: https://disco.crm9.dynamics.com/XRMServices/2011/Discovery.svc
+- GCC: `https://disco.crm9.dynamics.com/XRMServices/2011/Discovery.svc`
 - GCC High: `https://disco.crm.microsoftdynamics.us/XRMServices/2011/Discovery.svc`
 
 Effective March 2, 2020, the regional Discovery Service will be deprecated. More information: Regional Discovery Service is deprecated.

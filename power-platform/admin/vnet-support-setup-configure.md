@@ -3,7 +3,7 @@ title: Set up virtual network support for Power Platform
 description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/12/2025
+ms.date: 09/22/2025
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -27,7 +27,7 @@ Azure virtual network support for Power Platform lets you integrate Power Platfo
 > [!Note]
 > To enable virtual network support for Power Platform, environments must be [Managed Environments](managed-environment-overview.md).
 
-- **Review your Power Platform resources**: Check your apps, flows, and plug-in code to ensure they connect over your virtual network. They shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration lets such calls. Learn more in [Considerations to enable virtual network support for Power Platform environment](vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in the [FAQ](vnet-support-overview.md#faq).
+- **Review your Power Platform resources**: Check your apps, flows, and plug-in code to ensure they connect over your virtual network. They shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration lets such calls. Learn more in [Considerations to enable virtual network support for Power Platform environment](vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in the [Frequently asked questions](vnet-support-overview.md#frequently-asked-questions).
 
 - **Prepare your tenant and set up permissions**:
     - **Azure subscription**: Make sure you have an Azure subscription where virtual network, subnet, and enterprise policy resources are created.
@@ -161,7 +161,7 @@ The following diagram shows the functions of the roles in the setup process for 
     }
     ```
 
-1. Save the template and fill in the details to create the enterprise policy, which includes the following inforamtion:
+1. Save the template and fill in the details to create the enterprise policy, which includes the following information:
     - **Policy name**: Name of the enterprise policy that appears in the Power Platform admin center.
     - **Location**: Select the location of the enterprise policy, corresponding with the Dataverse environment’s region:
         - unitedstates
@@ -239,6 +239,7 @@ In the following procedures, you assign your environment to an enterprise policy
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **History**.
 1. Verify that the **Status** shows **Succeeded**.
+---
 
 ## Best practices
 Ensure you choose the subnet size as per your requirement. After the subnet is delegated to Power Platform&mdash;and if later, there's a need to change the subnet range&mdash;it requires Microsoft Support to reflect the updated subnet changes.
@@ -248,5 +249,6 @@ Ensure you choose the subnet size as per your requirement. After the subnet is d
 - Deploy enterprise policies with the [Microsoft.PowerPlatform/enterprisePolicies ARM template](/azure/templates/microsoft.powerplatform/enterprisepolicies?pivots=deployment-language-arm-template)
 - [Quickstart: Use the Azure portal to create a virtual network](/azure/virtual-network/quick-create-portal)
 - [Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins)
+- [Troubleshoot Virtual Network issues](/troubleshoot/power-platform/administration/virtual-network)
 
 
