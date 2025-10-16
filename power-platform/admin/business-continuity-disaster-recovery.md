@@ -212,7 +212,7 @@ Field service now supports self-service disaster recovery. You can now manage wo
 - In Dynamics 365, analytics and automation in sales observe latency impact. Relationship analytics KPIs aren't computed and new models for scoring aren't created during an outage.  
 -  In Dynamics 365 Customer Insights - Data, real-time updates are impacted. It doesn't support self-service disaster recovery today.
 -  In Dynamics 365 Customer service, basic scenarios that are 100% dependent on Dataverse, such as case creation, or Knowledge Base articles work. Case knowledge base access in customer service is unavailable.
-- ProjectOps specific features are not yet supported.
+- Dynamics 365 Project Operations features are not yet supported.
 - Data lake failover has known issues. Self-service disaster recovery isn't supported yet.
 - Connectors may have recovery issues when dependent on external systems, like SharePoint, SQL Server or third-party applications.
 - For Dynamics 365 Sales, analytics, reporting, and functions dependent on automation, such as sales forecasting, are unavailable.
