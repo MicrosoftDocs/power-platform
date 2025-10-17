@@ -8,7 +8,7 @@ ms.date: 10/17/2025
 ms.topic: concept-article
 ---
 
-# Power Platform Inventory (Public Preview)
+# Power Platform Inventory (preview)
 
 ## Introduction
 
@@ -26,7 +26,7 @@ Some practical scenarios enabled by Power Platform Inventory include:
 
 - **Accelerate support**: Instantly pinpoint that "needle in a haystack" agent referenced in a support ticket, dramatically improving response times.
 
-## Supported Resource Types
+## Supported resource types
 
 Currently, Power Platform inventory includes:
 
@@ -36,23 +36,23 @@ Currently, Power Platform inventory includes:
 
 Other resource types such as flows will soon be added in future updates.
 
-## Key Features
+## Key features
 
-- **Unified Inventory**: Centralized view of all agents and apps.
+- **Unified inventory**: Centralized view of all agents and apps.
 
-- **Fast Updates**: Created, updated, or deleted resources appear within 15 minutes.
+- **Fast updates**: Created, updated, or deleted resources appear within 15 minutes.
 
-- **Flexible Filtering and Sorting**: Filter and sort resources by any attribute.
+- **Flexible filtering and sorting**: Filter and sort resources by any attribute.
 
-- **Inventory Count**: Instantly see the total number of items matching your criteria.
+- **Inventory count**: Instantly see the total number of items matching your criteria.
 
-- **Customizable Columns**: Tailor your view by selecting which columns to display.
+- **Customizable columns**: Tailor your view by selecting which columns to display.
 
-- **Resource Details**: Access detailed information for each app or agent.
+- **Resource details**: Access detailed information for each app or agent.
 
 - **Download**: Export your inventory to Excel for further analysis.
 
-## Where to Access Power Platform Inventory
+## Where to access Power Platform Inventory
 
 Power Platform Inventory is available through multiple interfaces and APIs, enabling you to integrate inventory data into your workflows and tools of choice. Below are the primary ways to access inventory data:
 
@@ -64,7 +64,7 @@ Power Platform Inventory is available through multiple interfaces and APIs, enab
 
 1.  **Manage \> Copilot Studio:** This page offers a focused view of your agents created in Copilot Studio.
 
-### Programmatic and Advanced Access
+### Programmatic and advanced access
 
 Power Platform Inventory data is also available programmatically, supporting advanced scenarios such as automation, reporting, and integration with external tools:
 
@@ -82,7 +82,7 @@ Power Platform Inventory data is also available programmatically, supporting adv
 
 More details on programmatic access and sample queries are provided below.
 
-## Apply Filters and Sorts
+## Apply filters and sorts
 
 Power Platform Inventory lets you filter and sort across all resource data, using any column or attribute. You can combine multiple filters to zero in on exactly the resources you need, whether you're tracking down a specific app or analyzing trends across environments. As you refine your criteria, the total count of matching resources is always displayed right above the resource table on the top left, making it easy to gauge the size of your filtered dataset.
 
@@ -140,7 +140,7 @@ You can programmatically query your Power Platform inventory using Azure Resourc
 
 - [Run Azure Resource Graph query using REST API](https://learn.microsoft.com/en-us/azure/governance/resource-graph/first-query-rest-api?tabs=powershell)
 
-## Sample Queries
+## Sample aueries
 
 Below are example queries you can use with any of these interfaces:
 
