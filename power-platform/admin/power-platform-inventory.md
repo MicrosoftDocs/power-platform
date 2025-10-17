@@ -132,13 +132,13 @@ If you're new to the Power Platform API, start by reviewing the official [Gettin
 
 You can programmatically query your Power Platform inventory using Azure Resource Graph (ARG). ARG queries can be run through several Azure interfaces. For step-by-step instructions, refer to the official Azure Resource Graph quickstart guides for each method:
 
-- [Run Resource Graph query using Azure portal](https://learn.microsoft.com/en-us/azure/governance/resource-graph/first-query-portal)
+- [Run Resource Graph query using Azure portal](/azure/governance/resource-graph/first-query-portal)
 
-- [Run Resource Graph query using Azure CLI](https://learn.microsoft.com/en-us/azure/governance/resource-graph/first-query-azurecli)
+- [Run Resource Graph query using Azure CLI](/azure/governance/resource-graph/first-query-azurecli)
 
-- [Run Resource Graph query using Azure PowerShell](https://learn.microsoft.com/en-us/azure/governance/resource-graph/first-query-powershell)
+- [Run Resource Graph query using Azure PowerShell](/azure/governance/resource-graph/first-query-powershell)
 
-- [Run Azure Resource Graph query using REST API](https://learn.microsoft.com/en-us/azure/governance/resource-graph/first-query-rest-api?tabs=powershell)
+- [Run Azure Resource Graph query using REST API](/azure/governance/resource-graph/first-query-rest-api?tabs=powershell)
 
 ## Sample aueries
 
