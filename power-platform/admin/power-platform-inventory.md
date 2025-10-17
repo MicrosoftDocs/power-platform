@@ -14,7 +14,7 @@ ms.topic: concept-article
 
 The Power Platform admin center now offers tenant administrators with a comprehensive, unified view of all key resources&mdash;agents and apps&mdash;across their organization. With this centralized inventory, administrators can effortlessly discover, search, filter, and sort their entire inventory by owner, creation date, region, and other key attributes, streamlining common administrative tasks.
 
-The Power Platform inventory allows you easily complete the following tasks:
+The Power Platform inventory allows you to easily complete the following tasks:
 
 - **Spot your champions**: Quickly identify who's creating the most agents and apps, so you can recognize, nurture, and empower your top innovators.
 
@@ -72,7 +72,7 @@ Power Platform inventory data is also available programmatically, supporting adv
 
 - **Azure Resource Graph:** Query inventory data using Kusto Query Language (KQL).
 
-  - Azure Portal (Resource Graph Explorer)
+  - Azure portal (Resource Graph Explorer)
 
   - Azure CLI
 
@@ -80,11 +80,11 @@ Power Platform inventory data is also available programmatically, supporting adv
 
   - REST APIs
 
-More details on programmatic access and sample queries are provided below.
+More details on programmatic access and sample queries are provided in this article.
 
 ## Apply filters and sorts
 
-Power Platform inventory lets you filter and sort across all resource data, using any column or attribute. You can combine multiple filters to zero in on exactly the resources you need, whether you're tracking down a specific app or analyzing trends across environments. As you refine your criteria, the total count of matching resources is always displayed dirtectly above the resource table on the top-left, making it easy to gauge the size of your filtered dataset.
+Power Platform inventory lets you filter and sort across all resource data, using any column or attribute. You can combine multiple filters to zero in on exactly the resources you need, whether you're tracking down a specific app or analyzing trends across environments. As you refine your criteria, the total count of matching resources is always displayed directly above the resource table on the top-left, making it easy to gauge the size of your filtered dataset.
 
 For example, you can filter by:
 
@@ -96,7 +96,7 @@ For example, you can filter by:
 
 To clear all filters and sorts, select any column and choose **Clear all filters**.
 
-## Displaying additional columns
+## Displaying more columns
 
 The inventory table provides the option to display more columns to help you better manage all your items. To customize displayed columns, complete the following steps.
 
@@ -106,13 +106,13 @@ The inventory table provides the option to display more columns to help you bett
 
 ## Search the inventory
 
-You can quickly search for keywords across all entries currently loaded in the inventory table. The **Search** box is designed to help you find specific resources fast, but keep in mind that it only searches the items visible in the UI (up to 1,000 at a time). If your inventory exceeds this limit, simply apply additional filters to narrow down the results and bring the resources you need into view.
+You can quickly search for keywords across all entries currently loaded in the inventory table. The **Search** box is designed to help you find specific resources fast, but keep in mind that it only searches the items visible in the UI (up to 1,000 at a time). If your inventory exceeds this limit, apply more filters to narrow down the results and bring the resources you need into view.
 
 ## View agent, app, or environment details
 
 - Select a resource, then select the **Details** option in the command bar.
 
-- Or select the resource's display name to be redirected to its details page in the Copilot Studio portal or Power Apps portal. Warning: You must have sufficient permission on the selected resource to access its details page. If you do not have sufficient permission, you will see a "This link is broken" error.
+- Or select the resource's display name to be redirected to its details page in the Copilot Studio portal or Power Apps portal. Warning: You must have sufficient permission on the selected resource to access its details page. If you don't have sufficient permission, you see a "This link is broken" error.
 
 - Select the environment name to view the environment details.
 
@@ -120,7 +120,7 @@ You can quickly search for keywords across all entries currently loaded in the i
 
 - **Classic chatbots:** Classic chatbots aren't included in the new Inventory page, but can still be found in **Manage > Copilot Studio > Classic chatbots** tab.
 
-- **"Modified on" and "Last modified by" columns**: These columns are currently non-functional for agents and must be populated with the **–** (dash) character.
+- **"Modified on" and "Last modified by" columns**: These columns are currently nonfunctional for agents and must be populated with the **–** (dash) character.
 
 - **Model-driven apps:** Only published, model-driven apps are captured.
 
@@ -130,7 +130,7 @@ If you're new to the Power Platform API, review [Getting Started with Power Plat
 
 ## Accessing Power Platform inventory data through Azure
 
-You can programmatically query your Power Platform inventory using Azure Resource Graph (ARG). ARG queries can be run through several Azure interfaces. For step-by-step instructions, refer to the official Azure Resource Graph quickstart guides for each method:
+You can programmatically query your Power Platform inventory using Azure Resource Graph (ARG). ARG queries can be accessed through several Azure interfaces. For step-by-step instructions, refer to the official Azure Resource Graph quickstart guides for each method:
 
 - [Run Resource Graph query using Azure portal](/azure/governance/resource-graph/first-query-portal)
 
@@ -140,17 +140,17 @@ You can programmatically query your Power Platform inventory using Azure Resourc
 
 - [Run Azure Resource Graph query using REST API](/azure/governance/resource-graph/first-query-rest-api?tabs=powershell)
 
-## Sample aueries
+## Sample queries
 
-Below are example queries you can use with any of these interfaces.
+The following are example queries you can use with any of these interfaces.
 
-### Query 1 — Total count of *all* resources
+### Query 1: Total count of *all* resources
 
 PowerPlatformResources
 
 \| count
 
-### Query 2 — Total counts by resource type
+### Query 2: Total counts by resource type
 
 PowerPlatformResources
 
@@ -158,7 +158,7 @@ PowerPlatformResources
 
 \| order by count\_ desc
 
-### Query 3 — Counts by environment (inventory distribution across envs)
+### Query 3: Counts by environment (inventory distribution across environments)
 
 PowerPlatformResources
 
@@ -170,7 +170,7 @@ PowerPlatformResources
 
 \| order by count\_ desc
 
-### Query 4 — Counts by region (inventory distribution across regions)
+### Query 4: Counts by region (inventory distribution across regions)
 
 PowerPlatformResources
 
@@ -178,7 +178,7 @@ PowerPlatformResources
 
 \| order by count\_ desc
 
-### Query 5 — Top owners by item count
+### Query 5: Top owners by item count
 
 PowerPlatformResources
 
@@ -190,7 +190,7 @@ PowerPlatformResources
 
 \| order by count\_ desc
 
-### Query 6 — Finding a single agent in the tenant
+### Query 6: Finding a single agent in the tenant
 
 PowerPlatformResources
 
@@ -198,7 +198,7 @@ PowerPlatformResources
 
 \| where name == "0f9b5e26-a682-f011-b4cc-6045bd0390df"
 
-### Query 7 — Items created in the past 24 hours
+### Query 7: Items created in the past 24 hours
 
 PowerPlatformResources
 
