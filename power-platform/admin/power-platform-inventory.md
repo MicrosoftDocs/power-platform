@@ -1,6 +1,6 @@
 ---
 title: Power Platform inventory (preview)
-description: Learn how to get a comprehensive, unified view of all key resources—agents and apps—across your organization in Power Platform.
+description: Learn how to get a comprehensive, unified view of all agents and apps across your organization in Power Platform.
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -12,29 +12,29 @@ ms.topic: concept-article
 
 ## Introduction
 
-The Power Platform admin center now offers tenant administrators with a comprehensive, unified view of all key resources—agents and apps—across their organization. With this centralized inventory, administrators can effortlessly discover, search, filter, and sort their entire inventory by owner, creation date, region, and other key attributes, streamlining common administrative tasks.
+The Power Platform admin center now offers tenant administrators with a comprehensive, unified view of all key resources&mdash;agents and apps&mdash;across their organization. With this centralized inventory, administrators can effortlessly discover, search, filter, and sort their entire inventory by owner, creation date, region, and other key attributes, streamlining common administrative tasks.
 
-Some practical scenarios enabled by Power Platform Inventory include:
+The Power Platform inventory allows you easily complete the following tasks:
 
 - **Spot your champions**: Quickly identify who's creating the most agents and apps, so you can recognize, nurture, and empower your top innovators.
 
 - **Enforce compliance standards**: Effortlessly detect resources created in nonapproved regions, helping you maintain adherence to organizational policies.
 
-- **Focus your governance**: Rank environments by resource count to concentrate your security, governance, and compliance efforts where they matter most.
+- **Focus your governance**: Rank environments by resource count to focus security, governance, and compliance efforts where they matter most.
 
-- **Prevent orphaned agents**: Proactively find resources owned by departing users, enabling seamless ownership transfers and ensuring business continuity.
+- **Prevent orphaned agents**: Proactively find resources owned by departing users, which allows seamless ownership transfers and ensures business continuity.
 
 - **Accelerate support**: Instantly pinpoint that "needle in a haystack" agent referenced in a support ticket, dramatically improving response times.
 
 ## Supported resource types
 
-Currently, Power Platform inventory includes:
+The Power Platform inventory includes:
 
 - **Agents:** All agents created in Copilot Studio.
 
 - **Apps:** All apps created in Power Apps, including canvas apps, model-driven apps, and code apps.
 
-Other resource types such as flows will soon be added in future updates.
+Other resource types, such as flows, are planned for future updates.
 
 ## Key features
 
@@ -52,21 +52,21 @@ Other resource types such as flows will soon be added in future updates.
 
 - **Download**: Export your inventory to Excel for further analysis.
 
-## Where to access Power Platform Inventory
+## Where to access Power Platform inventory
 
-Power Platform Inventory is available through multiple interfaces and APIs, enabling you to integrate inventory data into your workflows and tools of choice. Below are the primary ways to access inventory data:
+Power Platform inventory is available through multiple interfaces and APIs, allowing you to integrate inventory data into your workflows and tools of choice. The following sections list the primary ways to access inventory data.
 
-### In the Power Platform Admin Center (UI)
+### The Power Platform admin center user interface
 
-1.  **Manage \> Inventory**: The main inventory page provides a unified view of all supported resources—agents and apps—across your tenant.
+- **Manage > Inventory**: The main inventory page provides a unified view of all supported agents and apps across your tenant.
 
-1.  **Manage \> Power Apps \> Inventory tab**: This tab offers a focused view of your apps inventory, including canvas apps, model-driven apps, and code apps.
+- **Manage > Power Apps > App Inventory tab**: This tab offers a focused view of your apps inventory, including canvas apps, model-driven apps, and code apps.
 
-1.  **Manage \> Copilot Studio:** This page offers a focused view of your agents created in Copilot Studio.
+- **Manage > Copilot Studio:** This page offers a focused view of your agents created in Copilot Studio.
 
 ### Programmatic and advanced access
 
-Power Platform Inventory data is also available programmatically, supporting advanced scenarios such as automation, reporting, and integration with external tools:
+Power Platform inventory data is also available programmatically, supporting advanced scenarios such as automation, reporting, and integration with external tools.
 
 - **Power Platform API**
 
@@ -84,11 +84,11 @@ More details on programmatic access and sample queries are provided below.
 
 ## Apply filters and sorts
 
-Power Platform Inventory lets you filter and sort across all resource data, using any column or attribute. You can combine multiple filters to zero in on exactly the resources you need, whether you're tracking down a specific app or analyzing trends across environments. As you refine your criteria, the total count of matching resources is always displayed right above the resource table on the top left, making it easy to gauge the size of your filtered dataset.
+Power Platform inventory lets you filter and sort across all resource data, using any column or attribute. You can combine multiple filters to zero in on exactly the resources you need, whether you're tracking down a specific app or analyzing trends across environments. As you refine your criteria, the total count of matching resources is always displayed dirtectly above the resource table on the top-left, making it easy to gauge the size of your filtered dataset.
 
 For example, you can filter by:
 
-- **Environment Type**: Select the **Environment Type** column and select **Default**. You see all agents and apps in the default environment.
+- **Environment type**: Select the **Environment type** column and select **Default**. You see all agents and apps in the default environment.
 
 - **Owner**: Select the **Owner** column and type the name of the person. You see all agents and apps owned by this person in the default environment.
 
@@ -98,15 +98,15 @@ To clear all filters and sorts, select any column and choose **Clear all filters
 
 ## Displaying additional columns
 
- The inventory table provides the option to display additional columns to help you better manage all your items. To customize displayed columns:
+The inventory table provides the option to display more columns to help you better manage all your items. To customize displayed columns, complete the following steps.
 
-1.  Click the **column chooser** icon located next to the search box at the top of the table.
+1.  Click the **Add or remove columns** icon, located next to the **Search** box at the top of the page.
 
-1.  Select or deselect columns you wish to display or hide.
+1.  Select or clear columns you wish to display or hide.
 
 ## Search the inventory
 
-You can quickly search for keywords across all entries currently loaded in the inventory table. The search box is designed to help you find specific resources fast, but keep in mind that it only searches the items visible in the UI (up to 1,000 at a time). If your inventory exceeds this limit, simply apply additional filters to narrow down the results and bring the resources you need into view.
+You can quickly search for keywords across all entries currently loaded in the inventory table. The **Search** box is designed to help you find specific resources fast, but keep in mind that it only searches the items visible in the UI (up to 1,000 at a time). If your inventory exceeds this limit, simply apply additional filters to narrow down the results and bring the resources you need into view.
 
 ## View agent, app, or environment details
 
@@ -118,17 +118,17 @@ You can quickly search for keywords across all entries currently loaded in the i
 
 ## Known limitations
 
-1.  **Classic chatbots:** Classic chatbots are not included in the new Inventory page but can still be found in **Manage \> Copilot Studio \> Classic chatbots tab**.
+- **Classic chatbots:** Classic chatbots aren't included in the new Inventory page, but can still be found in **Manage > Copilot Studio > Classic chatbots** tab.
 
-1.  **"Modified on" and "Last modified by" columns**: These columns are currently non-functional for agents and will always have be populated with the – character.
+- **"Modified on" and "Last modified by" columns**: These columns are currently non-functional for agents and must be populated with the **–** (dash) character.
 
-1.  **Model-driven apps:** Only published model-driven apps are captured.
+- **Model-driven apps:** Only published, model-driven apps are captured.
 
 ## Accessing Power Platform inventory data via Power Platform API
 
-If you're new to the Power Platform API, start by reviewing the official [Getting Started with Power Platform API](/power-platform/admin/powerplatform-api-getting-started) guide for setup instructions and authentication details. Once you're set up, refer to the Inventory API documentation to learn how to query your inventory data.
+If you're new to the Power Platform API, review [Getting Started with Power Platform API](/power-platform/admin/powerplatform-api-getting-started) guide for setup instructions and authentication details. Once you're set up, refer to the Inventory API documentation to learn how to query your inventory data.
 
-## Accessing Power Platform inventory data via Azure
+## Accessing Power Platform inventory data through Azure
 
 You can programmatically query your Power Platform inventory using Azure Resource Graph (ARG). ARG queries can be run through several Azure interfaces. For step-by-step instructions, refer to the official Azure Resource Graph quickstart guides for each method:
 
@@ -142,7 +142,7 @@ You can programmatically query your Power Platform inventory using Azure Resourc
 
 ## Sample aueries
 
-Below are example queries you can use with any of these interfaces:
+Below are example queries you can use with any of these interfaces.
 
 ### Query 1 — Total count of *all* resources
 
