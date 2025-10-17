@@ -1,10 +1,10 @@
 ---
-title: Use the new and improved Power Platform admin center
+title: Welcome to the new Power Platform admin center
 description: Learn how to use the updated Power Platform admin center's new UI and features for effective administration and monitoring.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/13/2025
+ms.date: 10/17/2025
 ms.custom: 
   - NewPPAC
   - ignite-2024
@@ -22,9 +22,9 @@ search.audienceType:
   - admin
 ---
 
-# Use the new and improved Power Platform admin center 
+# Welcome to the new Power Platform admin center 
 
-We're happy to announce the general availability of the new and improved [Power Platform admin center](https://admin.powerplatform.microsoft.com)! We designed the new admin center to be easier to use, with task-oriented navigation that helps you achieve specific outcomes faster.
+Welcome to the new [Power Platform admin center](https://admin.powerplatform.microsoft.com)! We designed the new admin center to be easier to use, with task-oriented navigation that helps you achieve specific outcomes faster.
 
 The new Power Platform admin center is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals. The design focuses on providing an optimal user experience, catering to a wide range of stakeholders with varying needs.
 
