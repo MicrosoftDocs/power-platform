@@ -133,7 +133,7 @@ Limits the number of results returned. Translates to the KQL [`take` operator](/
 
 ### 4. Order by clause
 
-Sorts results by specified fields. Translates to the KQL [`sort` operator](/azure/data-explorer/kusto/query/sortoperator).
+Sorts results by specified fields. Translates to the KQL [`sort` operator](/kusto/query/sort-operator?view=azure-data-explorer&preserve-view=true).
 
 ```json
 
