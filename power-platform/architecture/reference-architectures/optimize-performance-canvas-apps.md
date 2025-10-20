@@ -37,9 +37,9 @@ In this diagram, Power Fx functions are used to shift complex business logic fro
 
 1. The Power Apps canvas application uses Dataverse to manage allocation of resources. The app uses a Power Fx function (a Dataverse custom API would serve the same purpose) for heavy data operations instead of directly using built-in access capabilities. The app still uses built-in Dataverse capabilities for lower-volume data operations and tasks that don't require transactional support.
 
-1. The Power Fx function (or Dataverse custom API) is configured to pass input parameters from the calling app and receive the outcome (response parameters) from the function (or API) via defined output parameters. For:
+1. The Power Fx function (with Dataverse custom API) is configured to pass input parameters from the calling app and receive the outcome (response parameters) from the function (or API) via defined output parameters. For:
 
-    - **Power Fx function (preview):** Logic is implemented in the Power Apps portal. With Power Fx functions, makers are able to construct complex logic with little or no coding expertise. Learn more in [Power Fx functions](#power-fx-functions).
+    - **Power Fx function (preview):** Logic is implemented in the Power Apps studio. With Power Fx functions, makers are able to construct complex logic with little or no coding expertise. Learn more in [Power Fx functions](#power-fx-functions).
 
     - **Dataverse custom API:** Logic is implemented by creating a Dataverse .NET plug-in. Custom .NET plug-ins require more coding knowledge but provide greater control and extensibility. Learn more in [Dataverse custom APIs](#dataverse-custom-apis).
 
@@ -87,7 +87,7 @@ Both Dataverse custom APIs and Power Fx functions extend the business logic of D
 
 #### Power Fx functions
 
-A Power Fx function is an abstraction of the Dataverse custom API capability that allows [Power Fx](../../power-fx/overview.md) to be used for the logic. Internally, a Power Fx function executes like a Dataverse custom API and is an event handler that executes in response to specific events.
+A Power Fx function creates an abstraction of the Dataverse custom API capability that allows [Power Fx](../../power-fx/overview.md) to be used for the logic.
 
 Power Fx functions extend the business logic of Dataverse and can be invoked on demand from Power Platform components like Power Apps canvas apps, Power Automate flows, and from custom agents created with Microsoft Copilot Studio. This functionality supports the implementation of more basic logic that isn't complex enough to require using the full Dataverse custom API capability.
 
