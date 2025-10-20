@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 10/16/2025
+ms.date: 10/20/2025
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -29,9 +29,9 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Deprecation of create an app from an image or Figma file
 
-After October 16, 2025, makers will no longer be able to create new apps using  the **An image or Figma file** option in Power Apps.
+Starting October 21, 2025, makers will no longer be able to create new apps using  the **An image or Figma file** option in Power Apps.
 
-### Whis is this needed?
+### Why is needed needed?
 With Copilot, we have new features to help you create apps such as [plans](/power-apps/maker/plan-designer/plan-designer) and [generative pages](/power-apps/maker/model-driven-apps/generative-pages).
 
 ### Impact
@@ -39,7 +39,7 @@ There is no impact on existing apps created using an image or Figma file and wil
 
 ### Replacement feature
 
-[Plans](/power-apps/maker/plan-designer/plan-designer) and [generative pages](/power-apps/maker/model-driven-apps/generative-pages) can be used to create apps.
+[Plans](/power-apps/maker/plan-designer/plan-designer) and [generative pages](/power-apps/maker/model-driven-apps/generative-pages) can be used to create apps. Makers can also use third-party and community tool plugins to bring external designs into Power Apps.
 
 ## Deprecation of the format data by examples feature in Power Automate
 
