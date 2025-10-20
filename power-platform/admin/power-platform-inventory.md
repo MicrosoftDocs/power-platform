@@ -148,7 +148,7 @@ The following are example queries you can use with any of these interfaces.
 
 ### Query 1: Total count of *all* resources
 
-```
+```Azure Resource Graph
 PowerPlatformResources
 
 \| count
@@ -156,7 +156,7 @@ PowerPlatformResources
 
 ### Query 2: Total counts by resource type
 
-```
+```Azure Resource Graph
 PowerPlatformResources
 
 \| summarize count() by type
@@ -166,7 +166,7 @@ PowerPlatformResources
 
 ### Query 3: Counts by environment (inventory distribution across environments)
 
-```
+```Azure Resource Graph
 PowerPlatformResources
 
 \| extend pros = parse_json(properties)
@@ -180,7 +180,7 @@ PowerPlatformResources
 
 ### Query 4: Counts by region (inventory distribution across regions)
 
-```
+```Azure Resource Graph
 PowerPlatformResources
 
 \| summarize count() by location
@@ -190,7 +190,7 @@ PowerPlatformResources
 
 ### Query 5: Top owners by item count
 
-```
+```Azure Resource Graph
 PowerPlatformResources
 
 \| extend pros = parse_json(properties)
@@ -204,7 +204,7 @@ PowerPlatformResources
 
 ### Query 6: Finding a single agent in the tenant
 
-```
+```Azure Resource Graph
 PowerPlatformResources
 
 \| where type == "microsoft.copilotstudio/agents"
@@ -214,7 +214,7 @@ PowerPlatformResources
 
 ### Query 7: Items created in the past 24 hours
 
-```
+```Azure Resource Graph
 PowerPlatformResources
 
 \| extend pros = parse_json(properties)
