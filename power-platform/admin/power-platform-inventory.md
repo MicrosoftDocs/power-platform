@@ -10,7 +10,7 @@ ms.topic: concept-article
 
 # Power Platform Inventory (preview)
 
-## Introduction
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The Power Platform admin center now offers tenant administrators with a comprehensive, unified view of all key resources&mdash;agents and apps&mdash;across their organization. With this centralized inventory, administrators can effortlessly discover, search, filter, and sort their entire inventory by owner, creation date, region, and other key attributes, streamlining common administrative tasks.
 
@@ -25,6 +25,8 @@ The Power Platform inventory allows you to easily complete the following tasks:
 - **Prevent orphaned agents**: Proactively find resources owned by departing users, which allows seamless ownership transfers and ensures business continuity.
 
 - **Accelerate support**: Instantly pinpoint that "needle in a haystack" agent referenced in a support ticket, dramatically improving response times.
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Supported resource types
 
