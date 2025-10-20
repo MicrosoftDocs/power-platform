@@ -148,20 +148,25 @@ The following are example queries you can use with any of these interfaces.
 
 ### Query 1: Total count of *all* resources
 
+```
 PowerPlatformResources
 
 \| count
+```
 
 ### Query 2: Total counts by resource type
 
+```
 PowerPlatformResources
 
 \| summarize count() by type
 
 \| order by count\_ desc
+```
 
 ### Query 3: Counts by environment (inventory distribution across environments)
 
+```
 PowerPlatformResources
 
 \| extend pros = parse_json(properties)
@@ -171,17 +176,21 @@ PowerPlatformResources
 \| summarize count() by environmentId
 
 \| order by count\_ desc
+```
 
 ### Query 4: Counts by region (inventory distribution across regions)
 
+```
 PowerPlatformResources
 
 \| summarize count() by location
 
 \| order by count\_ desc
+```
 
 ### Query 5: Top owners by item count
 
+```
 PowerPlatformResources
 
 \| extend pros = parse_json(properties)
@@ -191,17 +200,21 @@ PowerPlatformResources
 \| summarize count() by ownerId
 
 \| order by count\_ desc
+```
 
 ### Query 6: Finding a single agent in the tenant
 
+```
 PowerPlatformResources
 
 \| where type == "microsoft.copilotstudio/agents"
 
 \| where name == "0f9b5e26-a682-f011-b4cc-6045bd0390df"
+```
 
 ### Query 7: Items created in the past 24 hours
 
+```
 PowerPlatformResources
 
 \| extend pros = parse_json(properties)
@@ -209,3 +222,4 @@ PowerPlatformResources
 \| extend createdAt= todatetime(pros.createdAt)
 
 \| where createdAt \>= ago(24h)
+```
