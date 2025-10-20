@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 08/21/2025
+ms.date: 10/20/2025
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -24,6 +24,22 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+
+
+## Deprecation of create an app from an image or Figma file
+
+Starting October 21, 2025, makers will no longer be able to create new apps using  the **An image or Figma file** option in Power Apps.
+
+### Why is this needed?
+We are bringing new capabilities to help you create apps such as [plans](/power-apps/maker/plan-designer/plan-designer) and [generative pages](/power-apps/maker/model-driven-apps/generative-pages).
+
+### Impact
+There is no impact on existing apps created using an image or Figma file and will continue to be supported. 
+
+### Replacement feature
+
+[Plans](/power-apps/maker/plan-designer/plan-designer) and [generative pages](/power-apps/maker/model-driven-apps/generative-pages) can be used to create apps. Makers can also use third-party and community tool plugins to bring external designs into Power Apps.
 
 ## Deprecation of the format data by examples feature in Power Automate
 
