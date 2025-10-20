@@ -79,7 +79,6 @@
           href: reference-architectures/app-legacy-data-integration.md
         - name: Use Dataverse background operations
           href: reference-architectures/dataverse-background-operations.md
-        - name: Secure Power Platform access to Azure resources
         - name: Secure Power Platform access to resources
           href: reference-architectures/secure-access-azure-resources.md
         - name: Integrate Power Platform with SAP
