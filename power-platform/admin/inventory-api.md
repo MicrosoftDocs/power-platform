@@ -1,6 +1,6 @@
 ---
 title: Power Platform inventory API (preview)
-description: Learn how to get a comprehensive, unified view of all agents and apps across your organization in Power Platform with the Inventory API.
+description: Learn how to get a comprehensive, unified view of all agents and apps across your organization in Power Platform with the inventory API.
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -8,21 +8,27 @@ ms.date: 10/20/2025
 ms.topic: concept-article
 ---
 
-# Power Platform Inventory API (preview)
+# Power Platform inventory API (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The Inventory API allows you to execute structured queries against Azure Resource Graph using a POST request with a query specification in the request body. The API translates your query specification into [Kusto Query Language (KQL)](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/) for execution against Azure Resource Graph.
+The inventory API allows you to execute structured queries against Azure Resource Graph using a POST request with a query specification in the request body. The API translates your query specification into [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query/) for execution against Azure Resource Graph.
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-## API Endpoint
-```
+## API endpoint
+
+```json
+
 POST {PowerPlatformAPI url}/resourcequery/resources/query?api-version=2024-10-01
 ```
-### Request Body
+
+### Request body
+
 The request body must contain a query specification with the following structure:
-## Query Request Structure
+
+## Query request structure
+
 ```json
 {
   "TableName": "string",
@@ -39,18 +45,27 @@ The request body must contain a query specification with the following structure
   }
 }
 ```
+
 ### Properties
+
 | Property | Type | Required | Description |
 |----------|------|----------|-------------|
 | `TableName` | string | Yes | The target table/resource type to query (i.e., "PowerPlatformResources") |
 | `Clauses` | array | Yes | Array of query clauses that define the operations to perform |
 | `Options` | object | No | Azure Resource Graph query options for pagination and result control |
-### Query Options
-The `Options` object supports Azure Resource Graph query parameters for pagination and result control. For complete documentation of available options, see the [ResourceQueryRequestOptions documentation](https://learn.microsoft.com/en-us/dotnet/api/azure.resourcemanager.resourcegraph.models.resourcequeryrequestoptions?view=azure-dotnet).
-## Supported Query Clauses
-The API supports the following clause types through polymorphic JSON serialization. Each clause type corresponds to KQL operators as documented in the [KQL reference](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/):
-### 1. Where Clause
-Filters data based on field conditions. Translates to the KQL [`where` operator](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/whereoperator).
+
+### Query options
+
+The `Options` object supports Azure Resource Graph query parameters for pagination and result control. See [`ResourceQueryRequestOptions` documentation](/dotnet/api/azure.resourcemanager.resourcegraph.models.resourcequeryrequestoptions) to learn more.
+
+## Supported query clauses
+
+The API supports the clause types highlighted in this section through polymorphic JSON serialization. Each clause type corresponds to KQL operators as documented in the [KQL reference](/azure/data-explorer/kusto/query/):
+
+### 1. Where clause
+
+Filters data based on field conditions. Translates to the KQL [`where` operator](/azure/data-explorer/kusto/query/whereoperator).
+
 ```json
 {
   "$type": "where",
@@ -59,9 +74,12 @@ Filters data based on field conditions. Translates to the KQL [`where` operator]
   "Values": ["string1", "string2"]
 }
 ```
-**Supported Operators:**
-The API supports all standard KQL comparison and string operators. For a complete list of available operators, see the [KQL string operators](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/datatypes-string-operators) and [numerical operators](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/numoperators) documentation.
+
+**Supported operators:**
+The API supports all standard KQL comparison and string operators. For a complete list of available operators, see the [KQL string operators](/azure/data-explorer/kusto/query/datatypes-string-operators) and [numerical operators](/azure/data-explorer/kusto/query/numoperators) documentation.
+
 **Example:**
+
 ```json
 {
   "$type": "where",
@@ -70,16 +88,22 @@ The API supports all standard KQL comparison and string operators. For a complet
   "Values": ["'microsoft.powerapps/canvasapps'", "'microsoft.copilotstudio/agents'"]
 }
 ```
+
 *Translates to KQL:* `| where type in~ ('microsoft.powerapps/canvasapps', 'microsoft.copilotstudio/agents')`
-### 2. Project Clause
-Selects specific fields from the results. Translates to the KQL [`project` operator](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/projectoperator).
+
+### 2. Project clause
+
+Selects specific fields from the results. Translates to the KQL [`project` operator](/azure/data-explorer/kusto/query/projectoperator).
+
 ```json
 {
   "$type": "project",
   "FieldList": ["field1", "field2", "field3"]
 }
 ```
+
 **Example:**
+
 ```json
 {
   "$type": "project",
@@ -91,19 +115,28 @@ Selects specific fields from the results. Translates to the KQL [`project` opera
   ]
 }
 ```
+
 *Translates to KQL:* `| project name, properties.displayName, environmentId = tostring(properties.environmentId), createdDate = properties.createdAt`
-### 3. Take Clause
-Limits the number of results returned. Translates to the KQL [`take` operator](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/takeoperator).
+
+### 3. Take clause
+
+Limits the number of results returned. Translates to the KQL [`take` operator](/azure/data-explorer/kusto/query/takeoperator).
+
 ```json
 {
   "$type": "take",
   "TakeCount": 50
 }
 ```
+
 *Translates to KQL:* `| take 50`
-### 4. Order By Clause
-Sorts results by specified fields. Translates to the KQL [`sort` operator](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/sortoperator).
+
+### 4. Order by clause
+
+Sorts results by specified fields. Translates to the KQL [`sort` operator](/azure/data-explorer/kusto/query/sortoperator).
+
 ```json
+
 {
   "$type": "orderby",
   "FieldNamesAscDesc": {
@@ -112,7 +145,9 @@ Sorts results by specified fields. Translates to the KQL [`sort` operator](https
   }
 }
 ```
+
 **Example:**
+
 ```json
 {
   "$type": "orderby",
@@ -122,26 +157,39 @@ Sorts results by specified fields. Translates to the KQL [`sort` operator](https
   }
 }
 ```
+
 *Translates to KQL:* `| sort by tostring(properties.createdAt) desc, properties.displayName asc`
-### 5. Distinct Clause
-Returns unique values for specified fields. Translates to the KQL [`distinct` operator](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/distinctoperator).
+
+### 5. Distinct clause
+
+Returns unique values for specified fields. Translates to the KQL [`distinct` operator](/azure/data-explorer/kusto/query/distinctoperator).
+
 ```json
+
 {
   "$type": "distinct",
   "FieldList": ["field1", "field2"]
 }
 ```
+
 *Translates to KQL:* `| distinct field1, field2`
-### 6. Count Clause
-Returns the count of matching records. Translates to the KQL [`count` operator](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/countoperator).
+
+### 6. Count clause
+
+Returns the count of matching records. Translates to the KQL [`count` operator](/azure/data-explorer/kusto/query/countoperator).
+
 ```json
 {
   "$type": "count"
 }
 ```
+
 *Translates to KQL:* `| count`
-### 7. Summarize Clause
-Aggregates data using count or argmax operations. Translates to the KQL [`summarize` operator](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/summarizeoperator).
+
+### 7. Summarize clause
+
+Aggregates data using count or argmax operations. Translates to the KQL [`summarize` operator](/azure/data-explorer/kusto/query/summarizeoperator).
+
 ```json
 {
   "$type": "summarize",
@@ -152,10 +200,14 @@ Aggregates data using count or argmax operations. Translates to the KQL [`summar
   }
 }
 ```
-**Supported Operators:**
-- `count` → [`count()`](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/count-aggfunction) - Count records grouped by specified fields
-- `argmax` → [`arg_max()`](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/arg-max-aggfunction) - Get records with maximum value in the specified field
-**Count Example:**
+
+**Supported operators:**
+
+- `count` → [`count()`](/azure/data-explorer/kusto/query/count-aggfunction) - Count records grouped by specified fields.
+- `argmax` → [`arg_max()`](/azure/data-explorer/kusto/query/arg-max-aggfunction) - Get records with maximum value in the specified field.
+
+**Count example:**
+
 ```json
 {
   "$type": "summarize",
@@ -166,8 +218,11 @@ Aggregates data using count or argmax operations. Translates to the KQL [`summar
   }
 }
 ```
+
 *Translates to KQL:* `| summarize resourceCount = count() by resourceGroup, type`
-**ArgMax Example:**
+
+**ArgMax example:**
+
 ```json
 {
   "$type": "summarize",
@@ -178,9 +233,13 @@ Aggregates data using count or argmax operations. Translates to the KQL [`summar
   }
 }
 ```
+
 *Translates to KQL:* `| summarize arg_max(createdTime, *) by resourceGroup`
-### 8. Extend Clause
-Adds computed columns to the results. Translates to the KQL [`extend` operator](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/extendoperator).
+
+### 8. Extend clause
+
+Adds computed columns to the results. Translates to the KQL [`extend` operator](/azure/data-explorer/kusto/query/extendoperator).
+
 ```json
 {
   "$type": "extend",
@@ -188,7 +247,9 @@ Adds computed columns to the results. Translates to the KQL [`extend` operator](
   "Expression": "KQL_EXPRESSION"
 }
 ```
+
 **Example:**
+
 ```json
 {
   "$type": "extend",
@@ -196,11 +257,15 @@ Adds computed columns to the results. Translates to the KQL [`extend` operator](
   "Expression": "tostring(properties.environmentId)"
 }
 ```
-*Translates to KQL:* `| extend environmentId = tostring(properties.environmentId)`
-**Note:** The `Expression` field accepts KQL expressions. See [KQL scalar functions](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/scalarfunctions) for available functions.
-### 9. Join Clause
-Joins with another table/subquery. Translates to the KQL [`join` operator](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/joinoperator).
+
+*Translates to KQL:* `| extend environmentId = tostring(properties.environmentId)`https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/scalarfunctions) for available functions.
+
+### 9. Join clause
+
+Joins with another table/subquery. Translates to the KQL [`join` operator](/azure/data-explorer/kusto/query/joinoperator).
+
 ```json
+
 {
   "$type": "join",
   "RightTable": {
@@ -212,9 +277,12 @@ Joins with another table/subquery. Translates to the KQL [`join` operator](https
   "RightColumnName": "string"
 }
 ```
-**Supported Join Kinds:**
-The API supports all KQL join kinds. For a complete list of available join types and their behavior, see the [KQL join operator documentation](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/joinoperator).
+
+**Supported join kinds:**
+The API supports all KQL join kinds. For a complete list of available join types and their behavior, see the [KQL join operator documentation](/azure/data-explorer/kusto/query/joinoperator).
+
 **Example (joining Power Platform resources with environment information):**
+
 ```json
 {
   "$type": "join",
@@ -244,10 +312,15 @@ The API supports all KQL join kinds. For a complete list of available join types
   "RightColumnName": "environmentId"
 }
 ```
+
 *Translates to KQL:* `| join kind=leftouter (PowerPlatformResources | where type == 'microsoft.powerplatform/environments' | project environmentId = name, environmentName = properties.displayName, environmentRegion = location, environmentType = properties.environmentType, isManagedEnvironment = properties.isManaged) on $left.environmentId == $right.environmentId`
-## Complete Query Examples
-### Example 1: Basic Power Platform Resource Query (PPAC Default Pattern)
-Get all Power Platform resources with environment information - this is the default query used by Power Platform Admin Center.
+
+## Complete query examples
+
+### Example 1: Basic Power Platform resource query (PPAC default pattern)
+
+Get all Power Platform resources with environment information—this is the default query used by Power Platform Admin Center.
+
 ```json
 {
   "Options": {
@@ -311,7 +384,9 @@ Get all Power Platform resources with environment information - this is the defa
   ]
 }
 ```
+
 *Equivalent KQL:*
+
 ```kql
 PowerPlatformResources
 | extend joinKey = tolower(tostring(properties.environmentId))
@@ -323,7 +398,9 @@ PowerPlatformResources
 | where type in~ ('microsoft.powerapps/canvasapps', 'microsoft.powerapps/modeldrivenapps', 'microsoft.powerautomate/cloudflows', 'microsoft.copilotstudio/agents', 'microsoft.powerautomate/agentflows', 'microsoft.powerapps/codeapps')
 | order by tostring(properties.createdAt) desc
 ```
-### Example 2: Count Power Platform Resources by Type and Location
+
+### Example 2: Count Power Platform resources by type and location
+
 ```json
 {
   "TableName": "PowerPlatformResources",
@@ -346,13 +423,17 @@ PowerPlatformResources
 }
 ```
 *Equivalent KQL:*
+
 ```kql
 PowerPlatformResources
 | summarize resourceCount = count() by type, location
 | sort by resourceCount desc
 ```
-### Example 3: Simple Canvas Apps Query
+
+### Example 3: Simple canvas apps query
+
 Get canvas apps with basic filtering and projection:
+
 ```json
 {
   "TableName": "PowerPlatformResources",
@@ -380,14 +461,18 @@ Get canvas apps with basic filtering and projection:
   ]
 }
 ```
+
 *Equivalent KQL:*
+
 ```kql
 PowerPlatformResources
 | where type == 'microsoft.powerapps/canvasapps'
 | project name, location, properties.displayName, properties.createdAt, properties.environmentId
 | take 100
 ```
-### Example 4: Filter Resources by Environment and Date Range
+
+### Example 4: Filter resources by environment and date range
+
 ```json
 {
   "TableName": "PowerPlatformResources",
@@ -434,7 +519,9 @@ PowerPlatformResources
   ]
 }
 ```
+
 *Translates to KQL:*
+
 ```kql
 PowerPlatformResources
 | where type == 'microsoft.powerapps/canvasapps'
@@ -444,9 +531,13 @@ PowerPlatformResources
 | project name, properties.displayName, properties.createdAt, properties.createdBy, properties.ownerId
 | sort by createdDate desc
 ```
-## Response Format
-The API returns a [`ResourceQueryResult`](https://learn.microsoft.com/en-us/dotnet/api/azure.resourcemanager.resourcegraph.models.resourcequeryresult?view=azure-dotnet) object from the Azure Resource Graph SDK. This object contains the query results and metadata about the query execution.
-**Response Structure:**
+
+## Response format
+
+The API returns a [`ResourceQueryResult`](/dotnet/api/azure.resourcemanager.resourcegraph.models.resourcequeryresult) object from the Azure Resource Graph SDK. This object contains the query results and metadata about the query execution.
+
+**Response structure:**
+
 ```json
 {
   "totalRecords": 1250,
