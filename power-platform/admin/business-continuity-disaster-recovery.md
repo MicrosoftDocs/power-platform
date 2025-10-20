@@ -21,7 +21,8 @@ contributors:
 
 > [!NOTE]
 > As of September 3, 2025, the self-service disaster recovery feature has been expanded to include failover support for [Dynamics 365 Contact Center](/dynamics365/contact-center/). With this enhancement, organizations can now seamlessly initiate failover for their contact center environments, ensuring smooth execution of disaster recovery drills or continued operations from an alternate region, when needed.
-> Self-Service Disaster Recovery (SSDR) for Finance & Operations (F&O) applications is now availale in preview. Please [signup here](https://forms.office.com/r/XEXsxwBbLt) if you are interested in participating in the preview.
+
+> Self-Service Disaster Recovery (SSDR) for Finance & Operations (F&O) applications is now available in preview. Please [signup here](https://forms.office.com/r/XEXsxwBbLt) if you are interested in participating in the preview.
 
 Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to document a business continuity plan that minimizes the effects of outages. To recover and resume operations, make sure the plan lists stakeholders, processes, and specific steps.
 
@@ -145,14 +146,14 @@ We recommend that you perform disaster recovery drills or an emergency response 
 
 ## Frequently asked questions (FAQs)
 
-### Why do I need self-service disaster recovery if I already have a secondary copy maintained in a remote, secondary region? 
+### Why do I need self-service disaster recovery(SSDR) if I already have a secondary copy maintained in a remote, secondary region? 
 For Public Cloud, there are no secondary copies being maintained in a remote, secondary region if self-service disaster recovery hasn't been turned on.
 
 We maintain at least two—and in some cases, three synchronous copies of production environments within a region, at no extra cost to the customer. These are hosted in Availability zones in physically separated data centers with independent power, cooling, and networking, in compliance with legislated data residency regulations.  
 
- With the implementation of availability zones ([learn more]https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview?tabs=azure-cli), these copies were redundant. Recovering them from these copies was complex and manual process that affected recovery times.   
+ With the implementation of availability zones ([learn more]https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview?tabs=azure-cli), these cross region copies were redundant. Recovering from these copies was a complex and manual process that affected recovery times.   
  
-Super storms, natural calamities, and unforeseen political uncertainties that have the potential to bring an entire region down are becoming more common. To minimize the impact of a disaster that brings an entire region down, it's advisable to maintain an asynchronous copy in a remote region. Self-service disaster recovery gives you control to fail over to a secondary region with the push of a button and failback with the push of a button when the primary region is restored to ensure business continuity. You can also simulate the primary region being down to run a real failover and failback to the secondary region to test a real compliance drill. We advise running drills with a copy of the production environment to avoid any downtime.
+WHY SSDR: Super storms, natural calamities, and unforeseen political uncertainties that have the potential to bring an entire region down are becoming more common. To minimize the impact of a disaster that brings an entire region down, it's advisable to maintain an asynchronous copy in a remote region. Self-service disaster recovery gives you control to fail over to a secondary region with the push of a button and failback with the push of a button when the primary region is restored to ensure business continuity. You can also simulate the primary region being down to run a real failover and failback to the secondary region to test a real compliance drill. We advise running drills with a copy of the production environment to avoid any downtime.
 
 ### What are the costs associated with using self-service disaster recovery?
 
