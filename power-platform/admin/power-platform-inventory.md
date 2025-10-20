@@ -124,7 +124,9 @@ You can quickly search for keywords across all entries currently loaded in the i
 
 - **"Modified on" and "Last modified by" columns**: These columns are currently nonfunctional for agents and must be populated with the **–** (dash) character.
 
-- **Model-driven apps:** Only published, model-driven apps are captured.
+- **Un-published model-driven apps:** Only published, model-driven apps are captured.
+  
+- **Model-driven apps in the default environment:** The default environment comes with 3 pre-installed model-driven apps: Power Platform Environment Settings, Power Pages Management, and Solution Health Hub. These will not appear in the inventory initially unless they are edited and re-published.
 
 ## Accessing Power Platform inventory data via Power Platform API
 
