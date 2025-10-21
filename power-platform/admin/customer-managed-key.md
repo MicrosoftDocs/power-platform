@@ -64,7 +64,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Fraud Protection (Finance and operations)
 - [Copilot Studio](/microsoft-copilot-studio/admin-customer-managed-keys)
 
-### Sovereign cloud - GCC High (preview)
+### Sovereign cloud - GCC High 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
