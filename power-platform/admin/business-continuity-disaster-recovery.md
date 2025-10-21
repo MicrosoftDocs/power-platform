@@ -22,7 +22,7 @@ contributors:
 > [!NOTE]
 > As of September 3, 2025, the self-service disaster recovery feature has been expanded to include failover support for [Dynamics 365 Contact Center](/dynamics365/contact-center/). With this enhancement, organizations can now seamlessly initiate failover for their contact center environments, ensuring smooth execution of disaster recovery drills or continued operations from an alternate region, when needed.
 > 
-> Self-service disaster recovery for finance and operations applications is now available in preview. Sign-up [using this form](https://forms.office.com/r/XEXsxwBbLt) if you are interested in participating in the preview.
+> Self-service disaster recovery for finance and operations applications is now available in preview. Sign-up [using this form](https://forms.office.com/r/XEXsxwBbLt) if you're interested in participating in the preview.
 
 Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to document a business continuity plan that minimizes the effects of outages. To recover and resume operations, make sure the plan lists stakeholders, processes, and specific steps.
 
@@ -220,7 +220,7 @@ Field service now supports self-service disaster recovery. You can now manage wo
 - In Dynamics 365, analytics and automation in sales observe latency impact. Relationship analytics KPIs aren't computed and new models for scoring aren't created during an outage.  
 -  In Dynamics 365 Customer Insights - Data, real-time updates are impacted. It doesn't support self-service disaster recovery today.
 -  In Dynamics 365 Customer service, basic scenarios that are 100% dependent on Dataverse, such as case creation, or Knowledge Base articles work. Case knowledge base access in customer service is unavailable.
-- Dynamics 365 Project Operations features are not yet supported.
+- Dynamics 365 Project Operations features aren't yet supported.
 - Data lake failover has known issues. Self-service disaster recovery isn't supported yet.
 - Connectors may have recovery issues when dependent on external systems, like SharePoint, SQL Server or third-party applications.
 - For Dynamics 365 Sales, analytics, reporting, and functions dependent on automation, such as sales forecasting, are unavailable.
