@@ -1,8 +1,7 @@
 ---
----
 title: La Trobe University boosts academic productivity with AI and Copilot
 description: Discover how La Trobe University uses AI and Copilot Studio to streamline operations, enhance academic productivity, and improve staff support services.
-customer intent: As an academic staff member, I want to use a conversational AI agent in Microsoft Teams so that I can quickly find answers to administrative and academic queries.
+customer intent: As a Power Platform user, I want to use a conversational AI agent in Microsoft Teams so that I can quickly find answers to administrative and academic queries.
 author: manuelap-msft
 ms.author: manuelap-msft
 ms.reviewer: jhaskett-msft
