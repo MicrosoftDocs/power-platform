@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: rashmansur
-ms.date: 10/20/2025
+ms.date: 10/21/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -146,6 +146,10 @@ We recommend that you perform disaster recovery drills or an emergency response 
 
 ## Frequently asked questions (FAQs)
 
+### Why use self-service disaster recover?
+
+Super storms, natural calamities, and unforeseen political uncertainties that have the potential to bring an entire region down are becoming more common. To minimize the impact of a disaster that brings an entire region down, it's advisable to maintain an asynchronous copy in a remote region. You may want to maintain a copy in remote region for compliance audits, as well. Self-service disaster recovery gives you control to fail over to a secondary region with the push of a button and failback with the push of a button when the primary region is restored to ensure business continuity. You can also simulate the primary region being down to run a real failover and failback to the secondary region to test a real compliance drill. We advise running drills with a copy of the production environment to avoid any downtime.
+
 ### Why do I need self-service disaster recovery if I already have a secondary copy maintained in a remote, secondary region? 
 For the public cloud, there are no secondary copies being maintained in a remote, secondary region if self-service disaster recovery hasn't been turned on.
 
@@ -153,8 +157,6 @@ We maintain at least two&mdash;and in some cases, three&mdash;synchronous copies
 
 With the implementation of [availability zones](/azure/reliability/availability-zones-overview?tabs=azure-cli), these cross-region copies were redundant. Recovering from these copies was a complex and manual process that affected recovery times.   
  
-WHY SSDR (self service disaster recovery): Super storms, natural calamities, and unforeseen political uncertainties that have the potential to bring an entire region down are becoming more common. To minimize the impact of a disaster that brings an entire region down, it's advisable to maintain an asynchronous copy in a remote region. You may want to maintain a copy in remote region for compliance audits as well. Self-service disaster recovery gives you control to fail over to a secondary region with the push of a button and failback with the push of a button when the primary region is restored to ensure business continuity. You can also simulate the primary region being down to run a real failover and failback to the secondary region to test a real compliance drill. We advise running drills with a copy of the production environment to avoid any downtime.
-
 ### What are the costs associated with using self-service disaster recovery?
 
 - [Pay-as-you-go](pay-as-you-go-overview.md)  must be turned on for the environment as a prerequisite to turning on self-service disaster recovery on that environment.
