@@ -122,6 +122,8 @@ Quickly search for keywords across all entries currently loaded in the inventory
 
 - **Classic chatbots:** Classic chatbots aren't included in the new inventory page, but can still be found by selecting **Manage > Copilot Studio > Classic chatbots**.
 
+- **Environment name**: Filtering by environment requires the full environment name. Partial matches or substrings aren’t supported.
+
 - **_Modified on_ and _Last modified by_ columns**: These columns are currently nonfunctional for agents and must be populated with the **–** (dash) character.
 
 - **Un-published model-driven apps:** Only published, model-driven apps are captured.
