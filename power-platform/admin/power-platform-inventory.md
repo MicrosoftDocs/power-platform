@@ -4,7 +4,7 @@ description: Learn how to get a comprehensive, unified view of all agents and ap
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 10/20/2025
+ms.date: 10/22/2025
 ms.topic: concept-article
 ---
 
@@ -122,7 +122,7 @@ Quickly search for keywords across all entries currently loaded in the inventory
 
 - **Classic chatbots:** Classic chatbots aren't included in the new inventory page, but can still be found by selecting **Manage > Copilot Studio > Classic chatbots**.
 
-- **Environment name**: Filtering by environment requires the full environment name. Partial matches or substrings aren’t supported.
+- **Environment name**: Filtering by environment requires the full environment name. Partial matches or substrings aren't supported.
 
 - **_Modified on_ and _Last modified by_ columns**: These columns are currently nonfunctional for agents and must be populated with the **–** (dash) character.
 
@@ -155,7 +155,7 @@ The following are example queries you can use with any of these interfaces.
 ```Kusto
 PowerPlatformResources
 
-\| count
+| count
 ```
 
 ### Query 2: Total counts by resource type
@@ -163,9 +163,9 @@ PowerPlatformResources
 ```Kusto
 PowerPlatformResources
 
-\| summarize count() by type
+| summarize count() by type
 
-\| order by count\_ desc
+| order by count\_ desc
 ```
 
 ### Query 3: Counts by environment (inventory distribution across environments)
@@ -173,13 +173,13 @@ PowerPlatformResources
 ```Kusto
 PowerPlatformResources
 
-\| extend pros = parse_json(properties)
+| extend pros = parse_json(properties)
 
-\| extend environmentId = tostring(pros.environmentId)
+| extend environmentId = tostring(pros.environmentId)
 
-\| summarize count() by environmentId
+| summarize count() by environmentId
 
-\| order by count\_ desc
+| order by count\_ desc
 ```
 
 ### Query 4: Counts by region (inventory distribution across regions)
@@ -187,9 +187,9 @@ PowerPlatformResources
 ```Kusto
 PowerPlatformResources
 
-\| summarize count() by location
+| summarize count() by location
 
-\| order by count\_ desc
+| order by count\_ desc
 ```
 
 ### Query 5: Top owners by item count
@@ -197,13 +197,13 @@ PowerPlatformResources
 ```Kusto
 PowerPlatformResources
 
-\| extend pros = parse_json(properties)
+| extend pros = parse_json(properties)
 
-\| extend ownerId= tostring(pros.ownerId)
+| extend ownerId= tostring(pros.ownerId)
 
-\| summarize count() by ownerId
+| summarize count() by ownerId
 
-\| order by count\_ desc
+| order by count\_ desc
 ```
 
 ### Query 6: Finding a single agent in the tenant
@@ -211,9 +211,9 @@ PowerPlatformResources
 ```Kusto
 PowerPlatformResources
 
-\| where type == "microsoft.copilotstudio/agents"
+| where type == "microsoft.copilotstudio/agents"
 
-\| where name == "0f9b5e26-a682-f011-b4cc-6045bd0390df"
+| where name == "0f9b5e26-a682-f011-b4cc-6045bd0390df"
 ```
 
 ### Query 7: Items created in the past 24 hours
@@ -221,9 +221,9 @@ PowerPlatformResources
 ```Kusto
 PowerPlatformResources
 
-\| extend pros = parse_json(properties)
+| extend pros = parse_json(properties)
 
-\| extend createdAt= todatetime(pros.createdAt)
+| extend createdAt= todatetime(pros.createdAt)
 
-\| where createdAt \>= ago(24h)
+| where createdAt \>= ago(24h)
 ```
