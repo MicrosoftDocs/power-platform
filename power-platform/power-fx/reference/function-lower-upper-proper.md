@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Lower","Upper","Proper"]
 ---
 
 # Lower, Upper, and Proper functions

@@ -21,8 +21,6 @@ ms.custom: sfi-image-nochange
 
 # Power Platform licensing FAQs
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 This article lists common questions and answers for licensing and plan options.
 
 For more details about Microsoft Power Platform licensing, download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).

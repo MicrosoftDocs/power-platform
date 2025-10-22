@@ -18,8 +18,6 @@ search.audienceType:
 
 # Microsoft Power Platform self-service analytics schema definition (preview)
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 This topic discusses the contents of the data exported from Power Platform to Azure Data Lake Gen2 storage locations.  

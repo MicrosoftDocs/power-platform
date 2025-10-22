@@ -15,8 +15,6 @@ search.audienceType:
 ---
 # Pay-as-you-go plan
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 <!-- https://go.microsoft.com/fwlink/?linkid=2173947 -->
 
 Pay-as-you-go is a new way to pay for Power Apps and Power Automate using an Azure subscription, which allows you to get started building and sharing apps without any license commitment or upfront purchasing.

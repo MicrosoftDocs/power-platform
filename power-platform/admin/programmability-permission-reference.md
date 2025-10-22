@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/18/2025
+ms.date: 09/26/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -41,7 +41,7 @@ Name | Display name | Description
 ---- | ------------ | -----------
 AiFlows.Ai.Execute | Execute AI related operations (like Generate) on AI flow | Allows you to execute AI-related operations (like Generate) on AI flows.
 AiFlows.Ai.Read | AI related read operations on AI flow | Allows you to do AI-related read operations on AI flows.
-AiFlows.Ai.Write | AI related write operations on AI flow | Allows you to do AI-related write operations on AI flows.
+AiFlows.Ai.Write | AI-related write operations on AI flow | Allows you to do AI-related write operations on AI flows.
 AiFlows.Connections.Read | Read AI flow connection | Allows reading AI flow connections.
 AiFlows.Runs.Execute | Perform actions on AI flow run | Allows performing actions on AI flow runs.
 AiFlows.Runs.Read | Read Copilot flow run | Allows reading AI flow runs.
@@ -88,4 +88,5 @@ PowerAutomate.Flows.Read | Read Power Automate flows | Allows reading of Power A
 PowerAutomate.Flows.Write | Write Power Automate flows | Allows writing of Power Automate flows.
 PowerPages.Websites.Read | Read Power Pages websites | Allows reading of Power Pages websites.
 PowerPages.Websites.Write | Write Power Pages websites | Allows writing of Power Pages websites.
+ResourceQuery.Resources.Read | Query resources | Allows querying of resources.
 Security.Recommendations.Read | Read Power Platform security information | Allows reading of security recommendations in Power Platform.

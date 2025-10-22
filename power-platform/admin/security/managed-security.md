@@ -15,8 +15,6 @@ search.audienceType:
 
 # Managed security
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 In today's AI-driven world, it's more critical than ever that you safeguard your enterprise data and business processes. Managed security provides comprehensive solutions to protect your data from threats, control access, prevent data exfiltration, and gain visibility into your security posture. It also helps assess risks and ensure compliance with various regulations. These capabilities make it a robust tool for today's cybersecurity challenges.
 
 ## What can you do with managed security?

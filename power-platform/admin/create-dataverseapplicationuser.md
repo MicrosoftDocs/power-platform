@@ -15,8 +15,6 @@ search.audienceType:
 
 # Create a Dataverse application user (preview)
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Use this endpoint to create an application user in a target environment.  Callers of this endpoint must either be Power Platform administrators or a Power Platform Service Principal application.

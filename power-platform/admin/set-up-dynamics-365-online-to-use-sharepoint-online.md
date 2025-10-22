@@ -17,8 +17,6 @@ ms.custom:
 ---
 # Set up customer engagement apps to use SharePoint Online
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 When you use SharePoint Online with customer engagement apps—including Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation, you can:  
   
 - Create, upload, view, and delete documents stored in SharePoint from within customer engagement apps.  

@@ -12,8 +12,6 @@ search.audienceType:
 ---
 # Enable change tracking to control data synchronization
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Large organizations that synchronize their data with external data sources can enable tables (entities) for change tracking. You can export or retrieve a selected set of data, and then keep the external data warehouse in sync.  
   
  By selecting, or deselecting, change tracking for specific tables (entities) you can reduce the load on your server resources and save processing time when extracting data and synchronizing it to an external store. You can enable change tracking for both system and custom tables (entities).  

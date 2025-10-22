@@ -14,8 +14,6 @@ search.audienceType:
 
 # Set address record settings
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 This article explains how to prevent empty address records from being created and how to allow users to delete address data.
 
 ## Prevent creation of empty address records

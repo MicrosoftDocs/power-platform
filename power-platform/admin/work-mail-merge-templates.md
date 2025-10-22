@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Work with mail merge templates
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 > [!IMPORTANT]
 > The mail merge template feature has been deprecated and is not supported. In Dynamics CRM 2016 (version 8.0), we introduced server-side document generation using Word and Excel templates. You can use these templates to provide standardized documents or customized data analysis for your organization.
 

@@ -4,7 +4,7 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/26/2025
+ms.date: 10/01/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -12,6 +12,7 @@ search.audienceType:
   - admin
 contributors:
   - jordanchodak
+  - JesseParsons
 ---
 
 # Track, manage, and scale Copilot adoption in the Power Platform
@@ -37,11 +38,11 @@ The **Settings** page displays settings grouped by product. Some settings span a
 > [!Note]
 > Tenant users with environment access can view Copilot settings.
 
-### Control who can use Copilot features in Power Apps (preview)
+### Control who can use AI features in model-driven apps (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-Admins can define who within an environment can use Copilot capabilities—either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is currently in preview and is only for environments activated for [Managed Environments](../managed-environment-enable.md), with a subset of Copilot features adhering to it. Review the table below to learn which capabilities adhere to this configuration.
+Admins can define who within an environment can use Copilot capabilities in model-driven apps&mdash;either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is currently in preview and is only for environments activated for [Managed Environments](../managed-environment-enable.md), with a subset of Copilot features adhering to it. Review the table below to learn which capabilities adhere to this configuration.
 
 | Product | Feature |
 |---------|---------|
@@ -63,7 +64,7 @@ The product pages contain usage and cost insights specific to each product. Curr
 The **Copilot Studio** page provides valuable insights about agents built in Copilot Studio. Admins can view message consumption data, with more licensing details available through the **Licensing** area of the Power Platform admin center. Admins can view the number of active agents, defined as agents with active sessions in the last 28 days, and the agent session success rate, which is the percentage of sessions resolved by conversational agents or runs that are successful for autonomous agents. The agent table displays the top 10 agents ranked by monthly active sessions.
 
 > [!Note]
-> - The **Copilot Studio** page doesn't include agents built with Microsoft 365 Agent Builder at this time.
+> - The **Copilot Studio** page doesn't include agents built with the lite version of Copilot Studio at this time.
 > - During the initial weeks of rollout, data is populated over a 28-day lookback period, resulting in an incomplete month initially.
 
 ### Power Apps
@@ -124,7 +125,3 @@ Selecting the Power Platform Settings, Power Apps settings or **Manage settings*
 
 > [!Note]
 > There may be a delay of up to eight hours for data refresh.
-
-## Content moderation 
-
-The **Content moderation** section shows a count of queries that are blocked as part of Microsoft’s Responsible AI initiatives. For more information on content moderation, go to [How does Copilot block harmful content?](../../faqs-copilot-data-security-privacy.md#how-does-copilot-block-harmful-content)

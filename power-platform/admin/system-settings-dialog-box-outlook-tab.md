@@ -1,11 +1,10 @@
 ---
-title: "System Settings Outlook tab | MicrosoftDocs"
-description: System Settings Outlook tab 
+title: "System Settings Outlook tab"
+description: Legacy System Settings Outlook tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/11/2020
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,11 +12,11 @@ search.audienceType:
 ---
 # System Settings Outlook tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+<!-- Cannot find PPAC equivalent.-->
 
 Use the settings on this page to configure how [!INCLUDE[pn_MS_Outlook_Short](../includes/pn-ms-outlook-short.md)] interacts with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 
-## Open the System Settings dialog box (if it’s not already open)  
+## Open the System Settings Outlook tab  
 
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
 
@@ -27,9 +26,10 @@ Use the settings on this page to configure how [!INCLUDE[pn_MS_Outlook_Short](..
 
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
 
-2. [!INCLUDE[proc_settings_administration](../includes/proc-settings-administration.md)]  
-
-3. Choose **System Settings** > **Outlook** tab.  
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
+5. Select the **Outlook** tab.  
 
 |                                                                      Settings                                                                      |                                                                                                   Description                                                                                                   |
 |----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

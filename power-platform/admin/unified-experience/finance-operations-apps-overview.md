@@ -14,8 +14,6 @@ contributors:
 
 # Overview of unified admin experience for finance and operations apps
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Users of finance and operations apps can now administer their environments, policies, licensing, and capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 As part of the unification of admin experiences of finance and operations apps within Power Platform, the environment for finance and operations apps is now an application within Power Platform. In this new experience, multiple Dynamics 365 applications, such as Sales, Marketing, and finance and operations apps, and also low-code apps, flows, and websites can be installed and hosted in the same Power Platform environment [with a Dataverse database](/power-platform/admin/create-environment#create-an-environment-with-a-database). This unification provides a consistent and single set of lifecycle operations that an admin can perform across all artifacts in a particular environment.

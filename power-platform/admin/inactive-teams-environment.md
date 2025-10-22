@@ -20,8 +20,6 @@ ms.custom:
 
 # Automatic deletion of inactive Dataverse for Teams environments
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Power Platform provides a cleanup mechanism that automatically removes [Microsoft Dataverse for Teams environments](about-teams-environment.md) from your tenant that are left inactive. An environment is first disabled after 90 days of inactivity. And then, deleted if administrators don't take any action and the environment is left disabled for 30 days. Administrators have seven days to recover deleted environments.
 
 > [!NOTE]

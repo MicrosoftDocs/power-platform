@@ -15,8 +15,6 @@ ms.custom: sfi-image-nochange
 
 # Tutorial: Install an application to a target environment
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 This tutorial is aimed at enabling Power Platform admins so they can take advantage of the Power Platform API to install Applications of which their tenant already has entitlement. These applications should be visible in the Power Platform admin center under **Environments** > ***[environment-name]*** > **Resources** > **Dynamics 365 apps**. 
 
 In this tutorial, you learn how to:

@@ -14,8 +14,6 @@ search.audienceType:
 
 # Configure the SameSite attribute for session cookies in Dataverse and Dynamics 365
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Learn how to configure the SameSite attribute for session cookies (CrmOwinAuth) in Microsoft Dataverse and Dynamics 365. This setting enhances security by controlling how your session cookie is shared in cross-site scenarios. 
 
 The SameSite cookie setting controls how browsers share your session cookie (CrmOwinAuth) used in Dataverse and Dynamics 365. This cookie stores session management-related information. 

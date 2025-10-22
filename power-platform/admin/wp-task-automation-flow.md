@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Automation of tasks with Microsoft Power Automate 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 One of the unique things about Power Automate is you can use it to manage itself along with other parts of Microsoft Power Platform. The following connectors can be helpful to automate administrator tasks with Power Automate.
 
 |Connector  |Possible uses  |
