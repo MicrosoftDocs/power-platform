@@ -91,7 +91,7 @@ Most of these users are hidden from user views but they can be found by using th
 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins.
 - The primary usage of this user account is to meet special business requirements that require elevation of privileges; for example, running background processes to integrate with other applications.
-- It can also be used to handle rollup scenarios where individual users don't have the required privilege. For example, the priority of a Case is automatically set to the highest priority of an individual user’s tasks and individual users can only update their own task priority but not the Case priority.
+- It can also be used to handle rollup scenarios where individual users don't have the required privilege. For example, the priority of a Case is automatically set to the highest priority of an individual user's tasks and individual users can only update their own task priority but not the Case priority.
 
 ## Technical details on permissions?
 
