@@ -722,7 +722,7 @@
                   href: powerapps-analytics-reports.md
                 - name: Power Automate analytics
                   href: power-automate-analytics-reports.md
-            - name: Inventory
+            - name: Inventory (preview)
               items:
                 - name: Power Platform inventory
                   href: power-platform-inventory.md
