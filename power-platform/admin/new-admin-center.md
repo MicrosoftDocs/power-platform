@@ -28,7 +28,7 @@ Welcome to the new [Power Platform admin center](https://admin.powerplatform.mic
 
 The new Power Platform admin center is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals. The design focuses on providing an optimal user experience, catering to a wide range of stakeholders with varying needs.
 
-All customers can access the new Power Platform admin center. It's turned on by default when you access the admin center. To revert to the classic admin center, turn off the **Try the new admin center** toggle in the upper-right corner of the admin center.
+All customers can access the new Power Platform admin center. It's turned on by default when you access the admin center.
 
 Learn more about the new admin center using the following sections in this article:
 
