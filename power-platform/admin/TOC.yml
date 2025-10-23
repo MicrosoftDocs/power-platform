@@ -460,6 +460,8 @@
                   href: monitoring/monitor-power-apps.md
                 - name: For Power Automate
                   href: monitoring/monitor-power-automate.md
+                - name: For Copilot Studio
+                  href: monitoring/monitor-copilot-studio.md
         - name: Copilot
           items:
             - name: Track, manage, and scale Copilot adoption
