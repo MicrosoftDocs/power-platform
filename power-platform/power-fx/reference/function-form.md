@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["EditForm","NewForm","SubmitForm","ResetForm","ViewForm"]
 ---
 
 # EditForm, NewForm, SubmitForm, ResetForm, and ViewForm functions

@@ -19,7 +19,7 @@ ms.contributors:
 AI innovation moves at a a rapid pace, and each AI model has different strengths and specialties. With the **External models** rule and setting, you can allow the use of external AI models for an environment or an environment group. These models offer an alternative approach to generative AI in Microsoft Copilot Studio. These models support advanced summarization and conversational capabilities and are now available in preview for evaluation purposes. The models available under the **External models** setting are Anthropic models that are hosted outside of Microsoft and subject to Anthropic terms and data handling.
 
 > [!NOTE]
-> Your admin must first allow acess in the [Microsoft 365 admin center](/copilot/microsoft-365/connect-to-ai-models). Once allowed there, you can access these settings in the Power Platform admin center.
+> Your admin must first allow access in the [Microsoft 365 admin center](/copilot/microsoft-365/connect-to-ai-models). Once allowed there, you can access these settings in the Power Platform admin center.
 
 ## Control external AI models use for an environment
 To control the use of external models, complete these steps.

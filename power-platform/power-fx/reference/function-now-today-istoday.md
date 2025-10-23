@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Now","Today","IsToday","UTCNow","UTCToday","IsUTCToday"]
 ---
 
 # Now, Today, IsToday, UTCNow, UTCToday, IsUTCToday functions

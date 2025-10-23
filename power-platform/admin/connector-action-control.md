@@ -1,13 +1,13 @@
 ---
 title: Connector action control
-description: You can use connector action control to allow or block individual actions within a given connector.
+description: You can use connector action control in Power Platform admin center to allow or block individual actions within a given connector.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/05/2025
+ms.date: 10/01/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 contributors:
   - mikferland-msft
   - mihaelablendea
@@ -26,19 +26,39 @@ search.app:
 You can use connector action control to allow or block individual actions or triggers within a given connector.
 
 > [!IMPORTANT]
-> In February 2025, support for triggers is added to the connector action control. This can be administered through PowerShell. Support for triggers is planned for the Power Platform admin center in the future, as well.
+> The connector action control now supports triggers. This can be administered through PowerShell.
 >
 > Making changes to policies through the Power Platform admin center doesn't remove triggers that were added via PowerShell.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
+## [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
+1. On the navigation pane, select **Security**, and then on the **Security** pane, select **Data and privacy**.
+1. On the **Data protection and privacy** page, select **Data policy**.
+1. Select an existing policy on the command bar and then select **Edit policy**, or select **New Policy** to create a new policy to configure.
+1. In the **Prebuilt connectors** section, select a *Blockable* connector and then select **More actions** next to it.
+1. Select **Configure connectors** and then **Connector actions**.
+
+    :::image type="content" source="media/connector-action-control/new-data-connector-actions.png" alt-text="Select Configure connector > Connector actions." lightbox="media/connector-action-control/new-data-connector-actions.png":::
+
+   > [!NOTE]
+   > You can configure connector actions for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
+
+1. Use the side panel to allow or deny specific actions.
+
+   You can also set the **Default connector action settings** to allow or block for any new connector actions that will be added to the connector in the future.
+
+   :::image type="content" source="media/connector-action-control/new-data-allow-actions.png" alt-text="Set Allow or Deny for connector actions." lightbox="media/connector-action-control/new-data-allow-actions.png":::
+
+## [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
 1. On the left navigation pane, select **Policies** > **Data policies**.
 1. Select a policy and on the command bar, select **Edit Policy**.
 1. On the left, select **Prebuilt connectors**.
 1. Select **More actions** next to your connector and then select **Configure connector** > **Connector actions**.
 
    :::image type="content" source="media/connector-action-control/dlp-connector-actions.png" alt-text="Select Configure connector > Connector actions." lightbox="media/connector-action-control/dlp-connector-actions.png":::
-
-   
 
    > [!NOTE]
    > You can configure connector actions for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
@@ -49,10 +69,10 @@ You can use connector action control to allow or block individual actions or tri
 
    :::image type="content" source="media/connector-action-control/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
 
-
 ## Known limitations
 
 ### Triggers are only supported in PowerShell
+
 Support for allowing and blocking individual triggers is currently available only via PowerShell. Support is planned for the Power Platform admin center in the future. For an example of how to allow triggers that're already in use by Power Automate flows, see [Identify blocked Power Automate flows](identify-blocked-flows-data-policies.md).
 
 ### Admins need to have maker access to Power Apps
@@ -149,11 +169,12 @@ Set-PowerAppDlpPolicyConnectorConfigurations
 **Example**
 
 Goal:
--	Block actions TodaysForecast and CurrentWeather of connector MSN Weather; allow all other actions.
--	Allow action GetRepositoryById of connector GitHub; block all other actions.
+
+- Block actions `TodaysForecast` and `CurrentWeather` of connector MSN Weather; allow all other actions.
+- Allow action `GetRepositoryById` of connector GitHub; block all other actions.
 
 > [!NOTE]
-> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the data policy GUID by running the **Get-DlpPolicy** cmdlet.
+> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the data policy GUID by running the `Get-DlpPolicy` cmdlet.
 
 ```powershell
 $ConnectorConfigurations = @{ 

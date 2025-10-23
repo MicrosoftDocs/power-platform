@@ -3,7 +3,7 @@ title: Special system users and application users
 description: Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/24/2025
+ms.date: 09/03/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -69,7 +69,7 @@ Most of these users are hidden from user views but they can be found by using th
 | PowerPlatformAuthorization | PowerPlatformAuthorization<br />@onmicrosoft.com | To aggregate environment role assignments for tenant-wide discovery. | Global Discovery Service  |
 | BAP | BAP@onmicrosoft.com | To perform administrative operations on Dataverse linked environments: fetch user roles, provision users, assign roles in Power Platform portals.| N/A |
 | Microsoft Forms Pro | enterprisesurveyappuser<br />@contoso.com | To perform data integration between Dynamics 365 Customer Voice and Dataverse | System Administrator  |
-| PowerVIrtualAgents  | PowerVirtualAgents<br />@onmicrosoft.com | To manage the PVA capabilities within environments | CCI Admin, System Customizer, and Environment Maker    |
+| PowerVirtualAgents  | PowerVirtualAgents<br />@onmicrosoft.com | To manage the Microsoft Copilot Studio capabilities within environments | CCI Admin, System Customizer, and Environment Maker    |
 | BizQA | BizQA@onmicrosoft.com | To access search telemetry to improve search experience | BizQAApp   |
 | ProductInsights | ProductInsights@onmicrosoft.com | To export data from Customer Insights to Engagement Insights | DataLakeWorkspaceAppAccess    |
 | Dynamics365 SalesForecasting | Dynamics365SalesForecasting<br />@onmicrosoft.com | To fetch table data and metadata for forecasting feature | ForecastAppUser    |

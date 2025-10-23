@@ -14,6 +14,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["WeekNum","ISOWeekNum"]
 ---
 # WeekNum and ISOWeekNum functions
 [!INCLUDE[function-weeknum-applies-to](includes/function-weeknum-applies-to.md)]
