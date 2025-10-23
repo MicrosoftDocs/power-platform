@@ -1,23 +1,20 @@
 ---
 title: Integrating SAP with Power Platform FAQs
 description: Get answers to the most frequently asked questions about SAP integration with Microsoft Power Platform.
-author: jongilman88
-ms.author: jongilman
+author: EllenWehrle
+ms.author: daviburg
 contributors:
-- microsoft-george
 - EllenWehrle
 - thoverh
 - galitskyd
 - microsoft-dustin
 - ryanb58
-- scottwoodallmsft
 - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: faq
-ms.date: 03/21/2024
+ms.date: 10/23/2025
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: solution-templates
 ---
 
 # Frequently asked questions about SAP procurement integration with Power Platform
@@ -59,7 +56,7 @@ The SAP ERP connector utilizes the message server to invoke APIs that create, re
 
 ### Can Power Platform consume OData services in SAP?
 
-The Open Data Protocol (OData) connector is currently only in private preview. However, you can create a custom connector in Power Automate to consume [OData services](/odata/).
+Yes. Go to [Get started with the SAP OData connector](/sap-odata-connector.md) to learn more. You can also create a custom connector in Power Automate to consume OData services.
 
 ### Can Power Platform access views in S4/HANA?
 
@@ -106,11 +103,13 @@ Power Automate can attach files to objects in SAP using [Generic Object Services
 
 ### How does authentication happen against SAP?
 
-The Power Platform currently supports two of the three authentication methods for SAP:
+The Power Platform supports multiple authentication methods for SAP:
 
 1. Username/Password - a user is prompted for their SAP username and password on the canvas app screen in Power Apps, which is sent to SAP.
-1. SSO (Kerberos) - the On-premises Data Gateway requests a Kerberos ticket on behalf of the Power Apps user and this ticket is sent to SAP.
-1. SSO (SAML/X.509) - **NOT CURRENTLY SUPPORTED**. We plan to support SAML in the future. However, SAP can support both X.509 and Kerberos authentication on the same SAP instance.
+1. [Set up Microsoft Entra ID with Kerberos for SSO](/entra-id-kerberos.md).
+1. [Set up Microsoft Entra ID with certificates for SSO](/entra-id-certs.md).
+1. [Set up Microsoft Entra ID, azure API Management, and SAP for SSO from SAP OData connector](/entra-id-apim-oauth.md).
+1. [Set up Microsoft Entra ID using SuccessFactors](/entra-id-using-successfactors.md)
 
 ### How do we make sure Power Apps users can't do things they can't do in SAP?
 
@@ -156,7 +155,7 @@ You have a couple options:
 
 ### Where do I turn if I get stuck with SAP integration with Power Platform?
 
-Nearly 100% of the issues encountered are due to a step or prerequisite being overlooked in the [SAP integration](/power-automate/sap-integration/overview) documentation. If you're still having issues, you have a couple of options:
+Nearly 100% of the issues encountered are due to a step or prerequisite being overlooked in the [Power Platform and SAP](/sap/) documentation. If you're still having issues, you have a couple of options:
 
 - Submit a question on our forum at: [Power Platform Community](https://powerusers.microsoft.com/)
 - Send an email to: <sap_ecc_powerapps@service.microsoft.com>.
