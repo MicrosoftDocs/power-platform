@@ -140,8 +140,7 @@ When consumption exceeds the preallocated capacity, you can choose to draw capac
 
 :::image type="content" source="media/overage-management.png" alt-text="Select how you want to manage when capacity reaches zero in this environment.":::
 
-### Manage monthly consumption limits for Copilot Studio agents (preview)
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+### Manage monthly consumption limits for Copilot Studio agents
 
 Admins can define monthly consumption limits for each Copilot Studio agent, regardless of whether the environment uses prepaid capacity or pay-as-you-go billing.
 
@@ -167,8 +166,6 @@ Admins can define monthly consumption limits for each Copilot Studio agent, rega
    - **Hard stop**: The agent is automatically turned off once it hits the defined limit.
   
    :::image type="content" source="media/agents-capacity-limits.png" alt-text="Tenant capacity extension in admin center." lightbox="media/agents-capacity-limits.png":::
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
    
 ## Frequently asked questions
 
