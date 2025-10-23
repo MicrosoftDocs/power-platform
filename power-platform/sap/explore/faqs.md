@@ -56,7 +56,7 @@ The SAP ERP connector utilizes the message server to invoke APIs that create, re
 
 ### Can Power Platform consume OData services in SAP?
 
-Yes. Go to [Get started with the SAP OData connector](/sap-odata-connector.md) to learn more. You can also create a custom connector in Power Automate to consume OData services.
+Yes. Go to [Get started with the SAP OData connector](../connect/sap-odata-connector.md) to learn more. You can also create a custom connector in Power Automate to consume OData services.
 
 ### Can Power Platform access views in S4/HANA?
 
@@ -106,10 +106,10 @@ Power Automate can attach files to objects in SAP using [Generic Object Services
 The Power Platform supports multiple authentication methods for SAP:
 
 1. Username/Password - a user is prompted for their SAP username and password on the canvas app screen in Power Apps, which is sent to SAP.
-1. [Set up Microsoft Entra ID with Kerberos for SSO](/entra-id-kerberos.md).
-1. [Set up Microsoft Entra ID with certificates for SSO](/entra-id-certs.md).
-1. [Set up Microsoft Entra ID, azure API Management, and SAP for SSO from SAP OData connector](/entra-id-apim-oauth.md).
-1. [Set up Microsoft Entra ID using SuccessFactors](/entra-id-using-successfactors.md)
+1. [Set up Microsoft Entra ID with Kerberos for SSO](../connect/entra-id-kerberos.md).
+1. [Set up Microsoft Entra ID with certificates for SSO](../connect/entra-id-certs.md).
+1. [Set up Microsoft Entra ID, azure API Management, and SAP for SSO from SAP OData connector](../connect/entra-id-apim-oauth.md).
+1. [Set up Microsoft Entra ID using SuccessFactors](../connect/entra-id-using-successfactors.md)
 
 ### How do we make sure Power Apps users can't do things they can't do in SAP?
 
@@ -144,7 +144,7 @@ Your custom database tables can be read using _Read SAP Table with Parsing_ acti
 
 ### Where can I get started?
 
-You can review the documentation: [Power Platform and SAP](/sap/).
+You can review the documentation: [Power Platform and SAP](../index.yml).
 
 ### Where can I get a demo SAP environment to test the SAP integration solutions?
 
@@ -155,7 +155,7 @@ You have a couple options:
 
 ### Where do I turn if I get stuck with SAP integration with Power Platform?
 
-Nearly 100% of the issues encountered are due to a step or prerequisite being overlooked in the [Power Platform and SAP](/sap/) documentation. If you're still having issues, you have a couple of options:
+Nearly 100% of the issues encountered are due to a step or prerequisite being overlooked in the [Power Platform and SAP](../index.yml) documentation. If you're still having issues, you have a couple of options:
 
 - Submit a question on our forum at: [Power Platform Community](https://powerusers.microsoft.com/)
 - Send an email to: <sap_ecc_powerapps@service.microsoft.com>.
