@@ -14,7 +14,7 @@ ms.topic: overview
 
 La Trobe University in Melbourne, Australia, ranks among the top one percent of universities globally and serves over 35,000 students each year. Known for its academic excellence and research achievements, La Trobe is dedicated to streamlining operations, driving innovation, and enhancing services for its students, staff, and partners.
 
-With an ambitious plan to transform operations through an ‘AI-first’ approach, La Trobe introduced the Troby agent, first making it available to academic staff. In this case study, you learn:
+With an ambitious plan to transform operations through an "AI-first" approach, La Trobe introduced the Troby agent, first making it available to academic staff. In this case study, you learn:
 
 - How the Troby agent enhances support services for staff at La Trobe University.
 - That intent recognition can be optimized by saving sample user queries in KB topics, implementing a classification process, and leveraging AI prompts.
@@ -23,13 +23,13 @@ With an ambitious plan to transform operations through an ‘AI-first’ approac
 
 ## Challenges
 
-La Trobe’s digital transformation vision is anchored in an AI-first approach — a belief that artificial intelligence can and should be applied across university operations to improve productivity, unlock insights, and elevate the experience for staff and students.
+La Trobe’s digital transformation vision is anchored in an AI-first approach—a belief that artificial intelligence can and should be applied across university operations to improve productivity, unlock insights, and elevate the experience for staff and students.
 
 But like every ambitious strategy, the journey began by addressing one of La Trobe’s biggest pain points: knowledge fragmentation.
 
 Academic and professional staff needed to access information from multiple knowledge sources across departments such as HR, Finance, and IT. This information sits across multiple systems. Of these systems, ServiceNow contained the largest and most critical repository, with more than 10,000 knowledge base topics.
 
-However, accessing this information was cumbersome and time-consuming. Staff often spent valuable minutes navigating topics and piecing together the right answers — time that could be better spent supporting students and advancing academic work. By solving this challenge first, La Trobe laid the foundation for scaling AI into every corner of the university.
+However, accessing this information was cumbersome and time-consuming. Staff often spent valuable minutes navigating topics and piecing together the right answers—time that could be better spent supporting students and advancing academic work. By solving this challenge first, La Trobe laid the foundation for scaling AI into every corner of the university.
 
 La Trobe also acknowledged students' expectations for modern digital solutions. As a next step, the university plans to extend access to this solution for students' knowledgebase topics as well.
 
@@ -48,17 +48,17 @@ To enhance access to the university knowledgebase, La Trobe University developed
 
 Troby integrates with ServiceNow via a custom developed middleware API to retrieve over 10,000 topics and sends it through a “low code RAG solution pipeline” that La Trobe University came up with when they reached the limits of the built-in ServiceNow connector.
 
-The solution was built using Copilot Studio, Power Automate and AI Builder with a set of custom no-code trained models and AI prompts to facilitate intent recognition, data retrieval and summarization, ensuring efficient interaction. There is also a user feedback process in place, which continuously improves the KB topics.
+The solution was built using Copilot Studio, Power Automate, and AI Builder with a set of custom no-code trained models and AI prompts to facilitate intent recognition, data retrieval and summarization, ensuring efficient interaction. There is also a user feedback process in place, which continuously improves the KB topics.
 
 ## Implementation approach
 
-The process of building the agent began by validating Microsoft Copilot Studio’s built-in ServiceNow connector. However, limitations quickly emerged:
+The process of building the agent began by validating Copilot Studio’s built-in ServiceNow connector. However, limitations quickly emerged:
 
 - It could only retrieve brief snippets of knowledgebase topics.
 - Structured, step-by-step instructions within knowledge topics were not accessible.
 - The connector could not perform intent-based routing or semantic retrieval.
 
-To overcome these limitations, design a low-code RAG(Red, Amber, Green) architecture that consists of:
+To overcome these limitations, design a low-code RAG(retrieval-augmented generation) architecture that consists of:
 
 - Middleware API-based data extraction from ServiceNow.
 - AI Builder-powered intent classification.
@@ -71,11 +71,11 @@ Each of these components works seamlessly with Copilot Studio to deliver context
 
 The La Trobe agent uses a hybrid approach to intent recognition, starting with a customized version of the system topic *Conversational Boosting*.
 
-1. Capture the user query when they interact with the agent through Teams and trigger the Copilot Studio topic "Conversational Boosting".
-1. Trigger a flow to classify the intent of the query by using a custom-trained AI Builder classification model.
-1. Return the predicted knowledge category (for example, "Information Services", "HR", "Finance") and a confidence score from the AI model.
-1. Route the conversation to a corresponding topic if the confidence score exceeds 0.80.
-1. Trigger a second flow from that topic to retrieve the relevant knowledge topic.
+- Users interact with the agent through Microsoft Teams. When a user sends a query to Troby via Microsoft Teams, the Copilot Studio topic "Conversational Boosting" is triggered, and the user query is captured.
+- A flow is triggered to classify the intent of the query using a custom-trained AI Builder classification model.
+- The AI model returns the predicted knowledge category (for example, "Information Services", "HR", "Finance") and a confidence score.
+- If the confidence score exceeds 0.80, the conversation is routed to a corresponding topic based on the predicted category.
+- That topic then triggers a second flow to retrieve the relevant knowledge article.
 
 This hybrid orchestration model ensures intent recognition, retrieval logic, and conversational generation are cleanly separated but tightly integrated.
 
@@ -101,29 +101,31 @@ The team builds a low-code knowledge topic retrieval pipeline, which works like 
 
 1. **Data ingestion from ServiceNow**
 Per category, two nightly flows are executed:
-    a. Intent Model Trainer Flow
-    - Fetches 10–30 sample questions per KB topic from ServiceNow.
-    - Populates a Dataverse intent table with
-        1. Sample question
-        1. KB topic number
-        1. Knowledge category (for example, “IS”, “HR”)
-        1. This Dataverse table is used to train a "Custom Category Classification Model" available from AI Builder. See "Intent Recognition Process" in the following section.
 
-    b. Knowledge Content Flow
-    - Fetches topic metadata, heading, full HTML content, and links.
-        1. Cleans and strips HTML, then stores the result in a dedicated Dataverse table per category.
-        1. Fields include: Cleaned Content, Heading, Sample Questions, KB URL, KB Number, Group, Author, and more.
+    1. Intent Model Trainer Flow
+        - Fetches 10–30 sample questions per KB topic from ServiceNow.
+        - Populates a Dataverse intent table with
+            - Sample question
+            - KB article number
+            - Knowledge category (for example, “IS”, “HR”)
+            - This Dataverse table is used to train a "Custom Category Classification Model" available from AI Builder.
+            - Learn More [Intent Recognition Process](#intent-recognition-process) in the following section. [Instant trigger pattern](#instant-trigger-pattern)
 
-Each KB topic is stored as one record, preserving structure and metadata for accurate retrieval and citation.
+    1. Knowledge content Flow
+        - Fetches topic metadata, heading, full HTML content, and links.
+            - Cleans and strips HTML, then stores the result in a dedicated Dataverse table per category.
+            - Fields include: Cleaned Content, Heading, Sample Questions, KB URL, KB Number, Group, Author, and more.
+
+    Each KB article is stored as one record, preserving structure and metadata for accurate retrieval and citation.
 
 1. **Runtime Knowledge Retrieval Flow**
 Once routed to a knowledge category topic, another flow runs:
 
-    1. Formats the user query into markdown and strips special characters.
-    1. Uses AI Builder prompts to convert the user’s query into a keyword search query.
-    1. Searches the corresponding Dataverse table (based on category) for the best-matching topic.
-    1. Match is done against content, heading, and stored sample questions.
-    1. The matched topic is formatted into a structured JSON table compatible with Copilot Studio’s "Generative Answers" action.
+    - Formats the user query into markdown and strips special characters.
+    - Uses AI Builder prompts to convert the user’s query into a keyword search query.
+    - Searches the corresponding Dataverse table (based on category) for the best-matching topic.
+    - Match is done against content, heading, and stored sample questions.
+    - The matched topic is formatted into a structured JSON table compatible with Copilot Studio’s "Generative Answers" action.
 
 This custom retrieval logic effectively simulates the role of a semantic search engine by using only Power Platform tools.
 
@@ -141,7 +143,7 @@ Using the knowledge topic contents returned from the search, AI Builder prompts 
 
 The formatted generative response is then returned back to Copilot Studio for the next steps.
 
-## Generative Answer Construction
+## Generative answer construction
 
 Once the matching KB topic is retrieved and formatted, Copilot Studio uses a dedicated topic called "Conversation Flow" to:
 
@@ -177,20 +179,20 @@ The following image shows the model trained as the ‘Intent Classification” u
 
 This solution uses the following technologies:
 
-1. Copilot Studio
+- Copilot Studio
     - Chatbot development
     - topic orchestration
     - Generative answers
-1. Dataverse
+    - Dataverse
     - Structured storage for KB topics, classifications, and metadata
-1. AI Builder
+- AI Builder
     - Custom classification model
     - Prompt-based query to keyword conversion
-1. Power Automate
+- Power Automate
     - Data ingestion
     - Runtime classification
     - Search and orchestration
-1. Microsoft Teams
+- Microsoft Teams
     - Primary channel for the Troby staff assistant
 
 ## Architecture
@@ -202,17 +204,17 @@ The architecture is organized in three layers: data, conversation, and user inte
 :::image type="content" source="media/la-trobe-university/troby-architecture.png" alt-text="Screenshot of the high-level architecture of the Troby agent." lightbox="media/la-trobe-university/troby-architecture.png":::
 
 1. Data Layer
-    a. Scheduled Power Automate flows extract data via ServiceNow API.
-    b. Raw HTML is cleaned and organized into structured Dataverse tables per category.
-    c. A separate intent table is populated with sample questions for training.
+    - Scheduled Power Automate flows extract data via ServiceNow API.
+    - Raw HTML is cleaned and organized into structured Dataverse tables per category.
+    - A separate intent table is populated with sample questions for training.
 1. Conversation Layer
-    a. User queries trigger intent classification and get routed to appropriate topics.
-    b. Category topic triggers retrieval flow, which searches and fetches relevant topic.
-    c. JSON-formatted results are passed to the “Conversation Flow” topic.
-    d. Generative response is created and returned using Adaptive Cards.
+    - User queries trigger intent classification and get routed to appropriate topics.
+    - Category topic triggers retrieval flow, which searches and fetches relevant topic.
+    - JSON-formatted results are passed to the “Conversation Flow” topic.
+    - Generative response is created and returned using Adaptive Cards.
 1. User Interface Layer
-    a. Deployed within Teams (for staff)
-    b. The roadmap includes deploying to the University website and Facebook for students.
+    - Deployed within Teams (for staff)
+    - The roadmap includes deploying to the University website and Facebook for students.
 
 ## Takeaways
 
