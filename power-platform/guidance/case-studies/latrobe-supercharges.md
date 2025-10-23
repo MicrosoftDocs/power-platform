@@ -85,7 +85,7 @@ The following image illustrates academic staff asking the agent a question and g
 
 The default conversational boosting passes the user query to a flow to check the classification and redirects the flow to different topics if the identified intent in the output of an AI prompt has a confidence score that's 0.80 or higher.
 
-:::image type="content" source="media/la-trobe-university/user-questions.png" alt-text="Screenshot of a conversational boosting flow illustrating user intent classification and confidence score." lightbox="media/la-trobe-university/user-questions.png":::
+:::image type="content" source="media/la-trobe-university/user-questions.png" alt-text="Screenshot of a conversational boosting flow illustrating user intent classification and confidence score.":::
 
 The following image illustrates how a flow is called from the agent. The flow includes an AI prompt, and the output is the response from the AI model, along with other related information.
 
@@ -136,7 +136,7 @@ The following image shows the AI Builder prompts used for extracting keywords fr
 
 The following image shows how the extracted keywords are then used to search Dataverse for articles.
 
-:::image type="content" source="media/la-trobe-university/extracted-keywords.png" alt-text="Screenshot showing how extracted keywords are used to search Dataverse for relevant articles." lightbox="media/la-trobe-university/extracted-keywords.png":::
+:::image type="content" source="media/la-trobe-university/extracted-keywords.png" alt-text="Screenshot showing how extracted keywords are used to search Dataverse for relevant articles.":::
 
 Using the knowledge article contents returned from the search, AI Builder prompts are further used for formatting and constructing a generative response.
 
@@ -157,7 +157,7 @@ This conversational experience feels fully natural to users, while being grounde
 
 The following image shows the generative answers node used in the conversation flow and display of the generative response based on a condition if citations exist or not.
 
-:::image type="content" source="media/la-trobe-university/generative-answers.png" alt-text="Screenshot of the generative answers node displaying a generative response based on conditions." lightbox="media/la-trobe-university/generative-answers.png":::
+:::image type="content" source="media/la-trobe-university/generative-answers.png" alt-text="Screenshot of the generative answers node displaying a generative response based on conditions.":::
 
 ### Intent recognition process
 
@@ -174,7 +174,7 @@ The model uses the Dataverse intent table, which might be enhanced in the future
 
 The following image shows the model trained as the "Intent Classification" using the "Custom Category Classification" model available in AI Builder.
 
-:::image type="content" source="media/la-trobe-university/intent-classification.png" alt-text="Screenshot showing the User Intent Classification model." lightbox="media/la-trobe-university/intent-classification.png":::
+:::image type="content" source="media/la-trobe-university/intent-classification.png" alt-text="Screenshot showing the User Intent Classification model.":::
 
 ## Technologies used
 
