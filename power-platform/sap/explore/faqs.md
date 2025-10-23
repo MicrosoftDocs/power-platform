@@ -117,7 +117,7 @@ SAP's published APIs perform the same security checks that are performed in the 
 
 ### How do we ensure traffic between Power Platform and SAP is encrypted?
 
-We recommend using SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true), which is available via a connection setting when [configuring authentication](/power-automate/sap-integration/set-up-prepare#configure-authentication).
+We recommend using SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true), which is available via a connection setting when configuring authentication.
 
 ## Customization
 
@@ -144,7 +144,7 @@ Your custom database tables can be read using _Read SAP Table with Parsing_ acti
 
 ### Where can I get started?
 
-You can review the documentation: [SAP integration](/power-automate/sap-integration/overview).
+You can review the documentation: [Power Platform and SAP](/sap/).
 
 ### Where can I get a demo SAP environment to test the SAP integration solutions?
 
