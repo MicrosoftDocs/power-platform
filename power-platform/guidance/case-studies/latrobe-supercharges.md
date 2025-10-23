@@ -183,7 +183,7 @@ This solution uses the following technologies:
     - Chatbot development
     - topic orchestration
     - Generative answers
-    - Dataverse
+- Dataverse
     - Structured storage for KB topics, classifications, and metadata
 - AI Builder
     - Custom classification model
