@@ -4,7 +4,7 @@ description: Learn how to use collaboration settings to adjust how collaboration
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/24/2025
+ms.date: 10/10/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -67,3 +67,11 @@ Make sure you have the System Administrator security role or equivalent permissi
 | Show record name and type to unauthorized users when unfurling links in Teams chats| When a link is pasted into a Teams chat, display the name and type of record in a card.| On |
 | Install the Dynamics 365 app for Teams for users in the organization. Lets people in your org see business data while working in Teams| Active users of Dynamics 365 apps and Power Apps model-driven apps get the Dynamics 365 app for Teams automatically installed in their Teams client. | On |
 | Microsoft Teams activity feed notification for sharing events in the environment | When a record is shared in a model-driven app, a Teams activity feed notification appears for the recipient, alerting them to the record that was shared. | On|
+
+## Security roles
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Enable app level security roles for canvas apps. | When a maker shares a canvas app, they can create and grant app level security roles directly in the sharing dialog box. Makers with the system admin security role assign specific security roles for the shared app. The assigned app-level security roles show in the admin center [security roles settings](/power-platform/admin/security-roles-privileges), with the following naming structure: Canvas app + app name + role name + app ID | Off
+| Enable plan level security roles for plan designer. | When a maker shares a plan, they can create and grant plan-level security roles directly in the sharing dialog box. Makers with the system admin security role assign specific security roles for the shared plan. The assigned plan-level security roles show in the admin center [security roles settings](/power-platform/admin/security-roles-privileges), with the following naming structure:  Plan + plan name + role name + plan ID | Off |
+
