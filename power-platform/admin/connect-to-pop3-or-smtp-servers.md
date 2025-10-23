@@ -3,7 +3,7 @@ title: Connect Gmail accounts, POP3 email server, or SMTP email server by using 
 description: Connect Gmail accounts, POP3 email server, or SMTP email server using credentials specified by a user or queue 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/02/2025
+ms.date: 10/23/2025
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
