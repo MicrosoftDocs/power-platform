@@ -109,7 +109,7 @@ Per category, two nightly flows are executed:
             - KB article number
             - Knowledge category (for example, “IS”, “HR”)
             - This Dataverse table is used to train a "Custom Category Classification Model" available from AI Builder.
-            - Learn More [Intent Recognition Process](#intent-recognition-process) in the following section. [Instant trigger pattern](#instant-trigger-pattern)
+            - Learn More [Intent Recognition Process](#intent-recognition-process) in the following section.
 
     1. Knowledge content Flow
         - Fetches topic metadata, heading, full HTML content, and links.
