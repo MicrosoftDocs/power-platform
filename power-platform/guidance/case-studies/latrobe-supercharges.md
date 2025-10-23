@@ -240,7 +240,7 @@ La Trobe University plans to continue expanding its AI capabilities, including e
 
 > "The idea is to expand Troby to our future and current students by 2026 whereby the entire university community will be served via Troby for their needs for university services and support"
 >
-> — *Chatham Vidanagamage, Associate Director AI and Innovation, La Trobe University.*
+> — *Chatham Vidanagamage, Associate Director AI and Innovation, La Trobe University*
 
 Additionally, the university is exploring the integration of ServiceNow data into Azure AI Search as an alternative to the existing low-code RAG approach. Another initiative involves assessing the feasibility of a multi-agent architecture.
 
