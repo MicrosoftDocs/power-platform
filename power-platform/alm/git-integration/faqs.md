@@ -4,13 +4,14 @@ description: "This article includes answers to commonly asked questions about Gi
 author: caburk
 ms.subservice: alm
 ms.author: caburk
-ms.date: 08/27/2025
+ms.date: 10/13/2025
 ms.custom: 
 ms.topic: faq
 ms.reviewer: tapanm
 ms.collection: 
 ms.contributors:
 - mikefactorial
+- suskumar-MSFT
 ---
 
 # FAQs about source code integration
@@ -45,7 +46,21 @@ All users within the environment must meet license requirements for [Managed Env
 Developers using source code integration also need an Azure DevOps license to gain access to the repository. For more information, go to [Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 
 ## Can developers collaborate on a solution while working in different development environments?
+
 Yes. Import the solution to each additional environment and then connect to the same Git location. For more information, go to [Connect multiple development environments to Git](connecting-to-git.md)
+
+## Why am I getting the error "Source Control Integration is not enabled for this environment?"
+
+This error occurs when your environment is encrypted using [Bring Your Own Key (BYOK)](../../admin/manage-encryption-key.md).
+
+BYOK isn’t compatible with elastic tables that are required for source code integration. More information: [Manage the encryption key](../../admin/manage-encryption-key.md)
+
+To enable source control integration, follow these steps:
+
+1. Migrate your environments encryption key to [customer-managed key (CMK)](../../admin/cmk-migrate-from-byok.md).
+1. [Reconnect](connecting-to-git.md) to source control and retry the operation.
+
+If your environment isn't encrypted with BYOK and you receive this error, contact [Microsoft Support](/power-platform/admin/get-help-support) for assistance.
 
 ## Why am I getting the message "Failed to retrieve the default branch for the selected repository. Choose a default branch to allow creating new branches?"
 

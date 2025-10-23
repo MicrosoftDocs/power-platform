@@ -2,6 +2,6 @@
 
 > [!IMPORTANT]
 >
-> - The `pack` and `unpack` commands are in public preview.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - The `pack` and `unpack` commands are deprecated.
+> - To source control your canvas app, use the [Power Platform Git Integration](../../../../alm/git-integration/canvas-apps-git-integration.md).
 > - The `create` command is generally available.

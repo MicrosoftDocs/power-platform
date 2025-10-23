@@ -12,6 +12,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Text"]
 ---
 
 # Text function
