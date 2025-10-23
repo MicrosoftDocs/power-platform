@@ -4,7 +4,7 @@ description: Learn more about the metrics and recommendations for Copilot Studio
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/09/2025
+ms.date: 10/23/2025
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: sericks
@@ -17,7 +17,7 @@ contributors:
 
 # Metrics and recommendations for Copilot Studio
 
-Copilot Studio operational health metrics are available in the new Power Platform admin center.
+Copilot Studio operational health metrics are available in the Power Platform admin center.
 
 ## View Copilot Studio metrics
 
