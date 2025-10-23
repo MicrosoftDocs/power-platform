@@ -3,7 +3,7 @@ title: Tenant-level Analytics for Power Apps
 description: View tenant-level analytics for Power Apps.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/16/2022
+ms.date: 10/23/2025
 author: Zeffin
 ms.subservice: admin
 ms.author: sericks
@@ -15,19 +15,19 @@ ms.custom: sfi-image-nochange
 
 # Tenant-level analytics for Power Apps
 
-Tenant-level analytics allow Power Platform admins to extract key service metrics based on user adoption across the environments they manage. Tailor made analytics are contained within reports embedded in Power Platform admin center. 
+Tenant-level analytics allow Power Platform admins to extract key service metrics based on user adoption across the environments they manage. Tailor made analytics are contained within reports embedded in Power Platform admin center.
 
-The following tenant-level reports are available for Power Apps. 
+The following tenant-level reports are available for Power Apps.
 
 ## Power Apps - Usage reports
 
 Power Apps reports provide insights into tenant and environment usage and inventory of all apps and connectors. The report answers questions such as:
 
-- What is the count of unique canvas/model-driven apps users across the tenant or environments? 
+- What is the count of unique canvas/model-driven apps users across the tenant or environments?
 - What is the count of first-time users across canvas and model-driven apps?
 - How many apps exist in my tenant or environment?
-- Which of my environments had the most unique users? 
-- What were the top apps by unique users/app sessions? 
+- Which of my environments had the most unique users?
+- What were the top apps by unique users/app sessions?
 
 > [!NOTE]
 > The service only starts collecting the data visualized in the Usage report when the feature is enabled. It can take 24 to 36 hours to reflect service activities from the previous day.
@@ -50,7 +50,6 @@ Power Apps reports provide insights into tenant and environment usage and invent
 |     | Type        | Type of environments to include in the current view        |
 |     | Region        | Global regions hosting environments        |
 |App     | App type        | Toggle between usage statistics for canvas and model-driven apps        |
-
 
 ## Power Apps - Maker Activity report
 
@@ -85,15 +84,19 @@ The Power Apps Maker Activity report provides insights into tenant and environme
 |     | Region        | Global regions hosting environments        |
 |App     | App type        | Toggle between usage statistics for canvas and model-driven apps        |
 
-
 ## Power Apps - Inventory report
+
+> [!IMPORTANT]
+> The Power BI-based **Power Apps Inventory report** is retired and is replaced with an enhanced **inventory experience** in the new Power Platform admin center. This new experience delivers near real-time visibility, capturing app updates within minutes instead of the previous 24-hour delay.
+> To learn more, go to: [Power Platform inventory](https://aka.ms/powerplatforminventory.)
+> Other Power BI-based reports, including **Power Apps Usage** and **Maker Activity**, remain unchanged.
 
 The Power Apps Inventory report offers a complete catalog of apps distributed across the tenant. This view includes the **Last opened** filter that allows admins to identify stale and orphaned apps. The report answers questions such as:
 
-- What is the total number of model-driven and canvas apps across the tenant or environments? 
+- What is the total number of model-driven and canvas apps across the tenant or environments?
 - Which apps depend on specific connectors?
-- Who are the owners of the apps hosted in one or more environments? 
-- What is the distribution of canvas versus model-driven apps across the organization? 
+- Who are the owners of the apps hosted in one or more environments?
+- What is the distribution of canvas versus model-driven apps across the organization?
 
 :::image type="content" source="media/power-apps-inventory-report.png" alt-text="Power Apps Inventory report.":::
 
@@ -114,27 +117,25 @@ The Power Apps Inventory report offers a complete catalog of apps distributed ac
 
 |Level  |Filter  |Description  |
 |---------|---------|---------|
-|App     | Last opened        | Used to filter results based on ‘Last Opened’ date         |
+|App     | Last opened        | Used to filter results based on 'Last Opened' date         |
 |     | Type        | Toggle between usage statistics for canvas and model-driven apps       |
 | Environment    | Name        | Friendly name used to identify a given environment        |
 |     | App type        | Type of environments to include in the current view        |
 |     | App type        | Global regions hosting environments        |
 
-
 ## Download inventory
 
-Power Platform admin center reports can be downloaded directly from the report visuals.  Users have the option of choosing between Summarized and Underlying data. 
+Power Platform admin center reports can be downloaded directly from the report visuals.  Users have the option of choosing between Summarized and Underlying data.
 
 - Summarized data: select this option to download the data underlying the current report visual  
-- Underlying data: select this option to download the full result set backing the report 
+- Underlying data: select this option to download the full result set backing the report
 
 :::image type="content" source="media/download-inventory-report.png" alt-text="Download Inventory report.":::
 
 For more information on downloading data from the tenant level reports, see [Exporting data from Power BI visuals](/power-bi/consumer/end-user-export).
 
 ### See also
-[Tenant-level analytics](tenant-level-analytics.md) <br />
 
- 
+[Tenant-level analytics](tenant-level-analytics.md) <br />
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
