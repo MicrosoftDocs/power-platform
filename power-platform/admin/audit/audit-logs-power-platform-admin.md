@@ -3,7 +3,7 @@ title: View Power Platform administrative logs using auditing solutions in Micro
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/21/2025
+ms.date: 10/24/2025
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -329,11 +329,9 @@ For more information about the Microsoft Purview audit log, data retention polic
 - [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 - [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)
 - [Detailed properties in the audit log](/purview/audit-log-detailed-properties)
-- [Power Apps activity logging](logging-powerapps.md)
-- [Power Automate activity logging](logging-power-automate.md)
-- [Power Platform connector activity logging (preview)](connector-events-power-platform.md)
-- [Data policy activity logging](dlp-activity-logging.md)
-- [Manage Dataverse auditing](manage-dataverse-auditing.md)
-- [Dataverse and model-driven apps](enable-use-comprehensive-auditing.md)
+- [Audit Power Apps logs](audit-logs-power-apps.md)
+- [Audit Power Automate logs](audit-logs-power-automate.md)
+- [Audit connector logs](audit-logs-connectors.md)
+- [Audit Dataverse and model-driven apps logs](audit-logs-dataverse-and-model-driven-apps.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

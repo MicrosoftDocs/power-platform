@@ -811,21 +811,21 @@
         - name: Audit logs in Microsoft Purview
           items:
             - name: Overview
-              href: audit-logs-overview.md
+              href: audit/audit-logs-overview.md
             - name: Audit Copilot Studio logs
               href: /microsoft-copilot-studio/admin-logging-copilot-studio
             - name: Audit Power Apps logs
-              href: audit-logs-powerapps.md
+              href: audit/audit-logs-power-apps.md
             - name: Audit Power Automate logs
-              href: audit-logs-power-automate.md
+              href: audit/audit-logs-power-automate.md
             - name: Audit Power Pages logs
-              href: audit-logs-power-pages.md
+              href: audit/audit-logs-power-pages.md
             - name: Audit connector logs
-              href: audit-logs-connector.md
+              href: audit/audit-logs-connectors.md
             - name: Audit Dataverse and model-driven apps logs
-              href: audit-logs-dataverse-model-driven-apps.md
+              href: audit/audit-logs-dataverse-and-model-driven-apps.md
             - name: Audit Power Platform admin logs
-              href: audit-logs-power-platform-admin.md
+              href: audit/audit-logs-power-platform-admin.md
         - name: Programmability and extensibility
           items:
             - name: Overview
