@@ -293,7 +293,6 @@ The **MigrationId** can be viewed using the **TenantToTenant-ViewMigrationReques
 TenantToTenant-MigratePowerAppEnvironment
 -MigrationId {MigrationId}
 -TargetTenantId {TargetTenantId}
--SecurityGroupId {SecurityGroupId}
 ```
 ### Get status (source admin)
 
