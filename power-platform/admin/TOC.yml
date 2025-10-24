@@ -722,6 +722,12 @@
                   href: powerapps-analytics-reports.md
                 - name: Power Automate analytics
                   href: power-automate-analytics-reports.md
+            - name: Inventory (preview)
+              items:
+                - name: Power Platform inventory
+                  href: power-platform-inventory.md
+                - name: Power Platform inventory API
+                  href: inventory-api.md
             - name: Data export (preview)
               items:
                 - name: Export Power Apps inventory and usage data
