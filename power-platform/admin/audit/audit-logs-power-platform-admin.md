@@ -1,5 +1,5 @@
 ---
-title: View Power Platform administrative logs using auditing solutions in Microsoft Purview
+title: Audit Power Platform administrative logs in Microsoft Purview
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: how-to
@@ -19,9 +19,9 @@ ms.contributors:
 
 ---
 
-# View Power Platform administrative logs using auditing solutions in Microsoft Purview
+# Audit Power Platform administrative logs in Microsoft Purview
 
-Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to audit such actions that help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
+Administration of Microsoft Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to audit such actions that help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
 
 In this article, you learn about activities that are performed on Power Platform environments by those having administrative access across user experiences and programmable interfaces using Microsoft Purview compliance portal. The activities fall within the following categories:
 
