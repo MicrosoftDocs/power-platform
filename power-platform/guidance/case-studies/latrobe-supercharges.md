@@ -12,7 +12,7 @@ ms.topic: overview
 
 # La Trobe University supercharges academic productivity with AI and Copilot Studio
 
-[La Trobe University](https://www.latrobe.edu.au/) in Melbourne, Australia, ranks among the top one percent of universities globally and serves over 35,000 students each year. Known for its academic excellence and research achievements, La Trobe is dedicated to streamlining operations, driving innovation, and enhancing services for its students, staff, and partners.
+[La Trobe University](https://www.latrobe.edu.au/) in Melbourne, Australia, ranks among the top 1 percent of universities globally and serves over 35,000 students each year. Known for its academic excellence and research achievements, La Trobe is dedicated to streamlining operations, driving innovation, and enhancing services for its students, staff, and partners.
 
 With an ambitious plan to transform operations through an "AI-first" approach, La Trobe introduced the Troby agent, first making it available to academic staff. In this case study, you learn:
 
