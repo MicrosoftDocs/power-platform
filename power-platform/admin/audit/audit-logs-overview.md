@@ -1,6 +1,6 @@
 ---
 title: Audit Power Platform logs in Microsoft Purview
-description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
+description: Learn how you can use Microsoft Purview to audit admin, maker, and user activities in Microsoft Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 10/24/2025
@@ -14,17 +14,15 @@ search.audienceType:
 
 # Audit Power Platform logs in Microsoft Purview
 
-Use Microsoft Purview to monitor activity, maintain compliance, and troubleshoot issues across data, agents, apps, flows, and pages. This article introduces the key concepts and features that enable visibility and governance.
-
-Regularly auditing logs enables you to maintain:
-
-- **Compliance and security**: Track user actions and system events to meet regulatory requirements.
-- **Operational insights**: Understand usage patterns and diagnose problems quickly.
-- **Governance**: Maintain control over data access and connector usage.
+Use Microsoft Purview to monitor activities and troubleshoot issues across data, agents, apps, flows, and pages. This article introduces the key concepts and steps to enable visibility and governance of Power Platform in Purview.
 
 ## Power Platform activities to audit
 
-Logging takes place at the SDK layer which means a single action can trigger multiple events that are logged. You can audit various activities to gain helpful insights, maintain security, and mitigate failures.
+Logging takes place at the SDK layer which means a single action can trigger multiple events that are logged. You can audit various activities to maintain:
+
+- **Compliance and security**: Track actions and system events to meet regulatory requirements.
+- **Operational insights**: Understand usage patterns and diagnose problems quickly.
+- **Governance**: Maintain control over data access and connector usage.
 
 ### Power Apps activities
 
@@ -50,6 +48,12 @@ Learn more in [Audit Power Pages logs](audit-logs-power-pages.md).
 - Gain better visibility into integrations and data movement.
 Learn more in [Audit connector logs](audit-logs-connectors.md).
 
+### Copilot Studio activities
+
+- Monitor agent activities.
+- Adhere to compliance requirements, mitigate failures, and maintain security.
+Learn more in [Audit Copilot Studio activities in Microsoft Purview](/microsoft-copilot-studio/admin-logging-copilot-studio).
+
 ### Dataverse and model-driven apps
 
 - Monitor create, read, update, and delete (CRUD), multiple records, and multimedia assets.
@@ -59,20 +63,25 @@ Learn more in [Audit Dataverse and model-driven apps logs](audit-logs-dataverse-
 ### Power Platform admin activities
 
 - Monitor environment lifecycle operations, property and setting changes, groups and rules settings, licensing, lockbox operations, data policies, and other admin actions.
-- Admin activities are on by default in Microsoft Purview to support transparency, constrain security, and mitigate failures.
+- View admin activities to support transparency, compliance, and security and mitigate failures. Admin activity collection is enabled by default on all tenants.
 Learn more in [Audit Power Platform administrative logs](audit-logs-power-platform-admin.md).
 
 ## Requirements
 
+Before you can audit Power Platform logs in Purview, ensure you understand your organization's current auditing status and determine what next steps you should take.
+
 - [Verify the auditing status for your organization](/purview/audit-log-enable-disable#verify-the-auditing-status-for-your-organization). If you need to enable auditing for your organization, see [Turn on auditing](/purview/audit-log-enable-disable#turn-on-auditing).
-- Microsoft Purview admin sets up designated Power Platform admins as Microsoft Purview members and assigns *Audit Logs* or *View-Only Audit Logs* roles. For more information, see [Permissions in the Microsoft Purview portal](/purview/purview-permissions).
-- [Power Platform system admin turns on auditing for each Power Platform production environment to be audited](#turn-on-auditing-for-power-platform-production-environments).
+- Set up designated Power Platform admins as Microsoft Purview members and assigns *Audit Logs* or *View-Only Audit Logs* roles. To learn more, see [Permissions in the Microsoft Purview portal](/purview/purview-permissions).
+- [Turn on auditing for each Power Platform production environment to be audited](#turn-on-auditing-for-power-platform-production-environments).
  Power Platform admin auditing is always on by default.
-- [Power Platform system admin turns on auditing for Dataverse](#turn-on-auditing-for-dataverse).
+- [Turn on auditing for Dataverse](#turn-on-auditing-for-dataverse).
 
 ## Turn on auditing in Power Platform
 
-Getting started requires some coordination with and between administrative teams to ensure Purview auditing is on and Power Platform is set up to share data with Purview.
+Power Platform admins need to take steps to turn on auditing for each Power Platform production environment to be audited and to turn on auditing for Dataverse to ensure Power Platform is set up to share data with Purview.
+
+> [!NOTE]
+> Power Platform admin activity collection is already enabled by default, so logs can be accessed without additional configuration. However, you need to make sure at least one Purview admin has a Microsoft 365 E5 or greater license to manage the logs.
 
 ### Turn on auditing for Power Platform production environments
 
@@ -101,3 +110,5 @@ Learn more about [Advanced security features](/admin/security/data-storage#advan
 1. On the Environments page, select an environment.
 1. In the command bar, select Settings.
 1. Expand **Audit and logs**, then select Audit settings.
+
+## 
