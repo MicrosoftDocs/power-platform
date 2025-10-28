@@ -1,9 +1,9 @@
 ---
 title: Audit Power Apps activities in Microsoft Purview
-description: Activity logging for Power Apps 
+description: Learn how to access Power Apps logs in Microsoft Purview and explore what activities in canvas apps you can audit. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/30/2024
+ms.date: 10/27/2025
 author: amchern
 ms.subservice: admin
 ms.author: amchern 
@@ -14,8 +14,7 @@ search.audienceType:
 
 # Audit Power Apps activities in Microsoft Purview
 
-Microsoft Power Apps activities are tracked from the [Microsoft Purview compliance portal](/purview/purview). 
-
+Microsoft Power Apps activities are tracked from the [Microsoft Purview compliance portal](/purview/purview).
 Follow these steps.
 
 1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) as a tenant admin.

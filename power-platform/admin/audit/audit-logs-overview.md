@@ -95,8 +95,8 @@ Before you can audit logs in Microsoft Purview, review the [Requirements section
 
   1. As a Power Platform system admin, log in to [Power Platform admin center](https://admin.preview.powerplatform.microsoft.com/home)
   1. On the navigation pane, select **Manage**.
-  1. On the *Manage* pane,select **Environments**.
-  1. On the *Environments* page, Select a specific environment in the *Environments* list.
+  1. In the Manage panel,select **Environments**.
+  1. On the Environments page, select the **production environment** you want to audit in the *Environments* list.
   1. On the environment's detail page, select **Settings**.
   1. On the *Settings* page, expand the **Product** list and select **Privacy and Security**.
   1. On the *Privacy and Security* settings page, go to the **Storage Shared Access Signature (SA) Security Settings** section and toggle the **Enable SAS Logging in Purview** setting to **On**.
@@ -106,16 +106,20 @@ Before you can audit logs in Microsoft Purview, review the [Requirements section
   > [!NOTE]
   > Prior to activating Shared Access Signature (SAS) features, you need to allowlist `https://*.api.powerplatformusercontent.com` domain or most SAS functionalities will NOT work.
 
-Learn more about [Advanced security features](/admin/security/data-storage#advanced-security-features)
+Learn more about:
+
+- [Advanced security features](/admin/security/data-storage#advanced-security-features)
+- [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 
 ### Turn on auditing for Dataverse
 
 1. Sign in to the [Power Platform admin center](https://admin.preview.powerplatform.microsoft.com/home).
-1. On the navigation pane, select Manage.
-1. On the Manage pane, select **Environments**.
+1. On the navigation pane, select **Manage**.
+1. In the Manage panel, select **Environments**.
 1. On the Environments page, select an environment.
 1. In the command bar, select Settings.
 1. Expand **Audit and logs**, then select Audit settings.
+1. Select auditing features and how long to retain records.
 
 ## Verify auditing status and get started in Microsoft Purview
 
@@ -127,3 +131,4 @@ For an introduction to how Microsoft Purview helps you create unified auditing s
 
 - [Microsoft Purview](/purview/)
 - [Microsoft Power Platform admin center](/power-platform/admin/)
+
