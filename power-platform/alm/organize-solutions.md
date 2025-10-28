@@ -42,7 +42,7 @@ If you decide to have only one development environment and later realize that yo
 The following sections describe different strategies for managing solutions listed in order from simple to more complex, along with their advantages and disadvantages.
 
 
-## Single Solution Strategy
+## Single Solution Strategy 
 
 **Overview:**
 
@@ -62,11 +62,11 @@ All customizations are grouped into one unmanaged solution during development, w
 **Cons:**
 
 - Requires more effort to scale or modularize later if required
-- A single solution containing a large number of customizations may result in longer deployment times. To reduce the solution size, [use table segmentation](./segmented-solutions-alm.md)
-- Multiple developers working on the same development environment may encounter merge conflicts or overwrite each other’s changes
+- A single solution containing a large number of customizations may result in longer deployment times. To reduce the solution size, [use table segmentation](./segmented-solutions-alm.md) and ...
+- Multiple developers working on the same development environment may overwrite each other’s changes. This can be adressed with Source Code Versioning. Implementing source code versioning helps prevent this by tracking changes, enabling collaboration, and providing mechanisms for conflict resolution
 
 > [!NOTE]
-> Recently, the import times for managed solutions in Microsoft Power Platform have been significantly improved due to enhancements in the solution packaging and deployment engine. These optimizations include better handling of component dependencies, parallel processing during import, and reduced overhead for unchanged components. As a result, even large managed solutions now deploy faster and more reliably across environments
+> Recently, the import times for managed solutions in Microsoft Power Platform have been significantly improved due to enhancements in the solution packaging and deployment engine. These optimizations include better handling of component dependencies, parallel processing during import, and reduced overhead for unchanged components. As a result, even large managed solutions now deploy faster and more reliably across environments. To take advantaged of this improvedment, follow what described in ...
 
 ## Multiple Solutions in the Same Development Environment
 
@@ -76,26 +76,24 @@ Separate unmanaged solutions are created within a single development environment
 
 **Recommended for:**
 
-- Small-medium scale implementations with distinct functional areas that don’t share components
-- Teams working on independent features
+- Small-medium scale implementations with distinct and independent functional areas that don’t share components
 
 **Pros:**
 
 - Simplified environment setup and management
-- Smaller solutions are faster to deploy
+- Functional areas can be deployed independently from each other
 
 **Cons:**
 
-- Multiple solutions in the same development environment may lead to dependency issues
-- Requires more effort to scale or modularize later if required
-- Multiple developers working on the same development environment may encounter merge conflicts or overwrite each other’s changes
+- Having multiple solutions in the same development environment increases the risk of having dependencies issues. You might find yourself in a situation where you cannot import solution A because it depends on solution B and you cannot import solution B because it depends on solution A.  
+- Multiple developers working on the same development environment may overwrite each other’s changes. Working within a solution in a development environment does not mean to work in isolation. Each time a component is changed, it is change directly in the environment, no matter in which solution you are working.
 
 > [!NOTE]
-> When you import different solutions into your target environment, you're often creating layers where the existing solution lies underneath the one being imported. When it comes to solution layering, it's important that you don't have cross-solution dependencies.
+> When you import different solutions into your target environment, you're often creating layers where the existing solution lies underneath the one being imported. When it comes to solution layering, it's important that you:
+> 1. avoid having multiple solutions containing the same unmanaged component. This is especially true with tables. It is recommended to avoid having multiple solutions in the same development environment containing tables. This is because there are frequently risks of a single relationship between tables, which creates a solution dependency and causes solution upgrade or delete issues in the target environment at a later point in time
+> 2. use only 1 publisher. Because the publisher owns the components of a managed solution, its association cannot be changed later. For example, if a custom column is imported through Solution A with Publisher X, you cannot later move that component to Solution B with Publisher Y. The only option is to delete the column, upgrade Solution A to remove the column from the target system, then recreate the column in Solution B under Publisher Y and import Solution B. This process results in loss of all data stored in the custom column unless it is migrated beforehand.
+> 3. avoid having solution dependencies.
 >
-> Having multiple solutions in the same development environment containing the same unmanaged component should be avoided. This cross-solution dependency issue is especially true with tables.
->
-> Don't have two different solutions in an environment where both contain tables. This is because there are frequently risks of a single relationship between tables, which creates a cross-solution dependency and causes solution upgrade or delete issues in the target environment at a later point in time
 > 
 > Examples of dependecies:
 >
@@ -105,7 +103,6 @@ Separate unmanaged solutions are created within a single development environment
 >
 > **3. Security Roles** If you have custom tables, security roles have most probably dependencies on the custom tables.
 >    
-> See the following section to see how to work with shared components.
 
 ## Multiple Solutions with Dedicated Development Environments
 
@@ -121,7 +118,7 @@ This strategy involves developing each solution in its own isolated Microsoft Da
 > 1. You import the managed base layer into the app layer environment and create an unmanaged solution for the app layer.
 :::image type="content" source="media/proper-solution-layering.png" alt-text="Proper solution layering using multiple solutions with > multiple environments.":::
 > You can now extend the data model by adding additional tables, columns, table relationships, and so on, into the specific "app" solution. Then, export the app solution as managed. Notice that the app solution will have dependencies on the base layer solution.
-> In your production environment, you import the managed base layer and then import the managed app layer. This creates two managed layers in the environment with clear dependencies between the two managed solutions. Managing multiple solutions this way doesn't create cross-solution dependencies, which can cause solution maintenance issues, such as removing the top layer if needed.  
+> In your production environment, you import the managed base layer and then import the managed app layer. This creates two managed layers in the environment with clear dependencies between the two managed solutions. Managing multiple solutions this way doesn't create solution dependencies, which can cause solution maintenance issues, such as removing the top layer if needed.  
 > Repeat this pattern to have as many different solutions as you need to maintain. Although we recommend that you keep the number of solutions as small as possible to keep your solution layering manageable.
 
 
