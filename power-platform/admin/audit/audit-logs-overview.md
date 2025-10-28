@@ -81,14 +81,20 @@ Learn more in [Audit Power Platform administrative logs](audit-logs-power-platfo
 
 Before you can audit Power Platform logs in Microsoft Purview, be sure you:
 
-- Have at least one Microsoft Purview admin has a Microsoft 365 E5 or greater license to turn on audit log search in Microsoft Purview to manage the logs. More information: [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
-- [Verify the auditing status for your organization](/purview/audit-log-enable-disable#verify-the-auditing-status-for-your-organization). If you need to enable auditing for your organization, see [Turn on auditing](/purview/audit-log-enable-disable#turn-on-auditing).
+- Have at least one Power Platform system administrator to turn on and configure auditing for each Power Platform environment.
+- Have at least one Microsoft Purview admin has a Microsoft 365 E5 or greater license to turn on audit log search in Microsoft Purview to manage the logs.
 
-## Turn on auditing in Power Platform admin center
+## Set up auditing in Power Platform admin center
 
-To ensure Microsoft Purview can access Power Platform data, Power Platform admins need to take steps in the Power Platform admin center to turn on auditing for each Power Platform production environment to be audited and turn on auditing for Dataverse.
+For each Power Platform production environment that's to be audited, a Power Platform system admins needs to :
 
-### Turn on auditing for Power Platform production environments
+- Turn on the **Enable SAS Logging in Purview** setting.
+- Turn on the **Start auditing**, **Log access**, and **Read logs** settings.
+- Configure auditing settings
+- Set organization-level auditing on tables.
+- Set table-level auditing.
+
+### Turn on the Enable SAS Logging in Purview setting
 
 You need to turn on the **Enable SAS Logging in Purview** setting in the Power Platform admin center for each Power Platform production environment you want to audit in Microsoft Purview.
 
@@ -107,7 +113,7 @@ You need to turn on the **Enable SAS Logging in Purview** setting in the Power P
 
 Learn more about [Advanced security features](/admin/security/data-storage#advanced-security-features).
 
-### Turn on auditing for Dataverse
+### Turn on auditing options
 
 1. Sign in to the [Power Platform admin center](https://admin.preview.powerplatform.microsoft.com/home).
 1. On the navigation pane, select **Manage**.
@@ -116,21 +122,20 @@ Learn more about [Advanced security features](/admin/security/data-storage#advan
 1. In the command bar, select **Settings**.
 1. Expand **Audit and logs**.
 1. Select **Audit settings**.
-    
-    1. Under **Auditing**, enable the following options:
-   - **Start Auditing** - Activates auditing for the environment.
+1. Under **Auditing**, turn on the following options:
+   - **Start auditing** - Activates auditing for the environment.
    - **Log access** - Tracks user sign-ins.
-   - **Read logs** - captures most user activities and events.
-2. Set the **retention policy** for auditing logs based on your requirements.
-3. Select **Save** to apply the changes.
+   - **Read logs** - Captures most user activities and events.
+1. Set the **retention policy** for auditing logs based on your requirements.
+1. Select **Save** to apply the changes.
 
-**Set organization-level auditing on tables**
+### Set organization-level auditing on tables
 
-1. On the **Audit settings** page, select **Global Audit Settings**.
-1. Under **Enable Auditing in the following areas**, select the check boxes for the areas you want to audit.
+1. On the **Audit settings** page in the Power Platform center, select **Global Audit Settings**.
+1. On the Microsoft Dynamics 365 System Settings page, under **Enable Auditing in the following areas**, select the check boxes for the areas you want to audit.
 1. Select **OK** to apply the changes.
 
-**Set table-level auditing**
+### Set table-level auditing
 
 1. Sign in to [Power Apps Home Page](https://make.powerapps.com/). Be sure to turn on the modern experience.
 2. In the command bar, select **Settings**, then choose **Advanced settings** to go to Microsoft Dynamics 365.
@@ -147,15 +152,21 @@ Learn more about [Advanced security features](/admin/security/data-storage#advan
 Learn more about how to [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing).
 
 > [!NOTE]
-> **Power Platform admin activity collection is already enabled by default** on all tenants, so logs can be accessed without additional configuration in Power Platform admin center.
+> **Power Platform admin activity collection is already enabled by default** on all tenants, so logs can be accessed in Microsoft Purview without additional configuration in Power Platform admin center.
 
 ## Get started in Microsoft Purview
 
-After you have taken the steps to allow Power Platform activities to be viewed from Microsoft Purview, you can [Get started with auditing solutions](/purview/audit-get-started). It's important to read and take steps to:
+After you have taken the steps to allow Microsoft Purview access and to configure auditing for each Power Platform production environment, you're ready to get set up in Microsoft Purview. Be sure to review:
 
+- [Verify the auditing status for your organization](/purview/audit-log-enable-disable#verify-the-auditing-status-for-your-organization).
+- [Turn on auditing](/purview/audit-log-enable-disable#turn-on-auditing) if it's not already turned on.
+- [Get started with auditing solutions](/purview/audit-get-started) in Microsoft Purview.
 - [Assign permissions](/purview/purview-permissions).
-- Set up [retention policies](/audit-log-retention-policies).
+- [Manage audit log retention policies](/audit-log-retention-policies).
+- [Get started with search](/purview/audit-search).
 - [Search audit logs to investigate common support issues](/purview/audit-troubleshooting-scenarios).
+
+More information: [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
 ## See also
 
