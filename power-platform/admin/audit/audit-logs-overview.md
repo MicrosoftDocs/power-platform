@@ -116,9 +116,8 @@ Learn more about [Advanced security features](/admin/security/data-storage#advan
 1. In the command bar, select **Settings**.
 1. Expand **Audit and logs**.
 1. Select **Audit settings**.
-
-
-1. Under **Auditing**, enable the following options:
+    
+    1. Under **Auditing**, enable the following options:
    - **Start Auditing** - Activates auditing for the environment.
    - **Log access** - Tracks user sign-ins.
    - **Read logs** - captures most user activities and events.

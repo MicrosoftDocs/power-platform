@@ -808,7 +808,7 @@
               href: administer-catalog.md
             - name: Portal administration
               href: /powerapps/maker/portals/admin/power-platform-admin-center
-        - name: Audit logs in Microsoft Purview
+        - name: Audit
           items:
             - name: Overview
               href: audit/audit-logs-overview.md
