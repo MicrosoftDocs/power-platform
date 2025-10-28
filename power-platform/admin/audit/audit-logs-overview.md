@@ -152,7 +152,7 @@ Learn more about [Advanced security features](/admin/security/data-storage#advan
 Learn more about how to [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing).
 
 > [!NOTE]
-> **Power Platform admin activity collection is already enabled by default** on all tenants, so logs can be accessed in Microsoft Purview without additional configuration in Power Platform admin center.
+> **Power Platform admin activity collection is already enabled by default** on all tenants, so logs can be accessed by those with appropriate permissions in Microsoft Purview without additional configuration in Power Platform admin center.
 
 ## Get started in Microsoft Purview
 
