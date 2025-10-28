@@ -47,7 +47,7 @@ Together with Shainal Kavar, the following people make up the team behind Troby:
 
 ## Solution
 
-To enhance access to the university knowledgebase, La Trobe University developed an AI-powered conversational agent named Troby by using Microsoft Copilot Studio and deployed it to Microsoft Teams. The academic staff at the university can now use natural language to gain access to university specific information.
+To enhance access to the university knowledge base, La Trobe University developed an AI-powered conversational agent named Troby by using Microsoft Copilot Studio and deployed it to Microsoft Teams. The academic staff at the university can now use natural language to gain access to university-specific information.
 
 Troby integrates with ServiceNow via a custom-developed middleware API to retrieve over 10,000 articles and sends them through a "low code RAG solution pipeline." La Trobe University adopted this approach when it reached the limits of the built-in ServiceNow connector.
 
@@ -57,16 +57,16 @@ The solution was built using Copilot Studio, Power Automate, and AI Builder with
 
 The process of building the agent began by validating Copilot Studio's built-in ServiceNow connector. However, limitations quickly emerged:
 
-- It could only retrieve brief snippets of knowledgebase articles.
+- It could only retrieve brief snippets of knowledge base articles.
 - Structured, step-by-step instructions within knowledge articles weren't accessible.
 - The connector couldn't perform intent-based routing or semantic retrieval.
 
-To overcome these limitations, design a low-code RAG (retrieval-augmented generation) architecture that consists of:
+To overcome these limitations, the team designed a low-code RAG (retrieval-augmented generation) architecture that consists of:
 
 - Middleware API-based data extraction from ServiceNow.
 - AI Builder-powered intent classification.
 - Power Automate flows for knowledge retrieval and generative answering.
-- Dataverse as the storage and search engine backend.
+- Dataverse as the storage and search engine back end.
 
 Each of these components works seamlessly with Copilot Studio to deliver contextual, permission-aware, and maintainable knowledge experiences.
 
@@ -151,16 +151,21 @@ The formatted generative response is then returned back to Copilot Studio for th
 
 Once the matching KB article is retrieved and formatted, Copilot Studio uses a dedicated topic called "Conversation Flow" to:
 
-- Maintain previous interactions and follow-up context
-- Feed the article content, user query, and context into the Generative Answers node
-- Generate a natural-language response
-- Render the response in an Adaptive Card with links and context
+- Maintain previous interactions and follow-up context.
+- Feed the article content, user query, and context into the Generative Answers node.
+- Generate a natural-language response.
+- Render the response in an Adaptive Card with links and context.
 
 This conversational experience feels fully natural to users, while being grounded in enterprise knowledge and security.
 
 The following image shows the generative answers node used in the conversation flow and display of the generative response based on a condition if citations exist or not.
 
 :::image type="content" source="media/la-trobe-university/generative-answers.png" alt-text="Screenshot of the generative answers node displaying a generative response based on conditions.":::
+
+
+
+
+
 
 ### Intent recognition process
 
