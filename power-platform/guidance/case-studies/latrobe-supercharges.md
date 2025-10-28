@@ -10,6 +10,9 @@ ms.date: 10/23/2025
 ms.topic: overview
 ---
 
+<!-- ask about Chatham Vidanagamage title -->
+
+
 # La Trobe University supercharges academic productivity with AI and Copilot Studio
 
 [La Trobe University](https://www.latrobe.edu.au/) in Melbourne, Australia, ranks among the top 1 percent of universities globally and serves over 35,000 students each year. Known for its academic excellence and research achievements, La Trobe is dedicated to streamlining operations, driving innovation, and enhancing services for its students, staff, and partners.
@@ -31,7 +34,7 @@ Academic and professional staff needed to access information from multiple knowl
 
 However, accessing this information was cumbersome and time-consuming. Staff often spent valuable minutes navigating articles and piecing together the right answers—time that could be better spent supporting students and advancing academic work. By solving this challenge first, La Trobe laid the foundation for scaling AI into every corner of the university.
 
-La Trobe also acknowledged students' expectations for modern digital solutions. As a next step, the university plans to extend access to this solution for students' knowledgebase articles as well.
+La Trobe also acknowledged students' expectations for modern digital solutions. As a next step, the university plans to extend access to this solution for students' knowledge base articles as well.
 
 > Students expect a consumer-grade experience with seamless, mobile-friendly applications for admissions and student management, and they want to be able to perform tasks from anywhere at any time. This expectation reflects the shift toward hybrid learning post-COVID.
 >
@@ -40,7 +43,7 @@ La Trobe also acknowledged students' expectations for modern digital solutions. 
 Together with Shainal Kavar, the following people make up the team behind Troby:
 
 - Chatham Vidanagamage, Associate Director AI, and Innovation, La Trobe University. Serves as the product owner.
-- Varanga De Silva, AI Engineering Lead at La Trobe University. Serves as solution lead and developer.
+- Varanga De Silva, AI Engineering Lead, La Trobe University. Serves as solution lead and developer.
 
 ## Solution
 
