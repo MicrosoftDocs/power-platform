@@ -87,9 +87,10 @@ The Power Apps Maker Activity report provides insights into tenant and environme
 ## Power Apps - Inventory report
 
 > [!IMPORTANT]
-> The Power BI-based **Power Apps Inventory report** is retired and is replaced with an enhanced **inventory experience** in the new Power Platform admin center. This new experience delivers near real-time visibility, capturing app updates within minutes instead of the previous 24-hour delay.
-> To learn more, go to: [Power Platform inventory](https://aka.ms/powerplatforminventory.)
+> The Power BI-based **Power Apps Inventory report** is retired and an enhanced **inventory experience** in the Power Platform admin center now replaces it. The new inventory experience delivers near real-time visibility, capturing app updates within minutes instead of the previous 24-hour delay.
 > Other Power BI-based reports, including **Power Apps Usage** and **Maker Activity**, remain unchanged.
+>
+> To learn more, go to: [Power Platform inventory](https://aka.ms/powerplatforminventory.)
 
 The Power Apps Inventory report offers a complete catalog of apps distributed across the tenant. This view includes the **Last opened** filter that allows admins to identify stale and orphaned apps. The report answers questions such as:
 
@@ -97,8 +98,6 @@ The Power Apps Inventory report offers a complete catalog of apps distributed ac
 - Which apps depend on specific connectors?
 - Who are the owners of the apps hosted in one or more environments?
 - What is the distribution of canvas versus model-driven apps across the organization?
-
-:::image type="content" source="media/power-apps-inventory-report.png" alt-text="Power Apps Inventory report.":::
 
 > [!NOTE]
 > Depending on the size of the organization, it can take up to 24 hours to initially populate the data sets backing the Inventory report.
