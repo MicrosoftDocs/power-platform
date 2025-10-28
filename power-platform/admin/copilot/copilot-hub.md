@@ -4,7 +4,7 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 10/01/2025
+ms.date: 10/28/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -79,6 +79,10 @@ Admins can view usage analytics for the data entry agent and data exploration ag
 Power Pages now has a dedicated experience within the **Copilot** area of the Power Platform admin center, allowing tenant administrators to monitor and manage AI-powered features specific to website creation and usage. This integration provides visibility into how makers use AI to build sites and how end users interact with AI components on live sites.
 
 Admins can access detailed usage analytics and apply governance controls tailored to Power Pages, ensuring responsible and effective use of Copilot features across environments and individual sites.
+
+### Dynamics 365 Sales
+
+Admins can view usage analytics for Copilot in Dynamics 365 Sales on the **Dynamics 365 Sales** page to understand the value that end users are getting from AI in Dynamics 365 Sales. The page includes monthly active user count information for Copilot in Dynamics 365 Sales, and the number of actions taken. Furthermore, admins can deep dive into Copilot by selecting it from the bottom table view. This opens a panel where you can see top environments and drill into those to see apps where users are interacting with Copilot the most.
 
 # [Classic admin center](#tab/classic)
 
