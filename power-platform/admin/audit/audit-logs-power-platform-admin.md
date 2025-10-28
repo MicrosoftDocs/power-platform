@@ -1,5 +1,5 @@
 ---
-title: Audit Power Platform administrative logs in Microsoft Purview
+title: Audit Power Platform administrative  in Microsoft Purview
 description: Learn how to access Power Platform administrative logs in Microsoft Purview and explore what admin activities you can audit.
 ms.component: pa-admin
 ms.topic: how-to

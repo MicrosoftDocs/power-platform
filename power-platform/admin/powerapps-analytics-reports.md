@@ -114,7 +114,7 @@ The Power Apps Inventory report offers a complete catalog of apps distributed ac
 
 |Level  |Filter  |Description  |
 |---------|---------|---------|
-|App     | Last opened        | Used to filter results based on ‘Last Opened’ date         |
+|App     | Last opened        | Used to filter results based on 'Last Opened' date         |
 |     | Type        | Toggle between usage statistics for canvas and model-driven apps       |
 | Environment    | Name        | Friendly name used to identify a given environment        |
 |     | App type        | Type of environments to include in the current view        |

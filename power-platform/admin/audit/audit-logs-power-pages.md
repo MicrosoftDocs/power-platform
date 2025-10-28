@@ -1,6 +1,6 @@
 ---
 title: Audit Power Pages logs in Microsoft Purview
-description: Learn how to access Power Pages logs in Microsoft Purview and explore what activities in Power Pages you can audit.
+description: Learn how to access Power Pages logs in Microsoft Purview and explore what Power Pages activities you can audit.
 ms.topic: how-to
 ms.date: 10/28/2025
 author: PramithaU

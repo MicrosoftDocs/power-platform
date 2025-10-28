@@ -1,9 +1,9 @@
 ---
-title: "Microsoft Dataverse and model-driven apps activity logging  | MicrosoftDocs"
-description: Learn how to enable auditing to be used for reports in the Microsoft Purview portal.
+title: Audit Dataverse and model-driven app logs in Microsoft Purview
+description: Learn how to access Dataverse and model-driven app logs in Microsoft Purview and explore what activities you can audit.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/27/2025
+ms.date: 10/27/2025
 author: Zeffin
 contributors:
   - yingchin
@@ -11,7 +11,7 @@ contributors:
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: yingchin
-ms.reviewer: sericks 
+ms.reviewer: ellenwehrle 
 search.audienceType: 
   - admin
 ---

@@ -1,26 +1,20 @@
 ---
-title: View the Power Platform connector activity logs
-description: View Power Platform audit logs for events related to connections and custom connectors.
-services: ''
-suite: flow
-documentationcenter: na
+title: Audit Power Platform connector logs in Microsoft Purview
+description: Learn how to access Power Platform connector logs in Microsoft Purview and explore what connector activities you can audit.
 author: schabungbam
-editor: ''
-tags: ''
 ms.topic: how-to
-ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/27/2025
 ms.subservice: admin
 ms.author: sameerch
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 search.audienceType: 
-  - flowmaker
-  - enduser
+  - admin
 contributors:
   - DanaMartens
   - sericks007
   - angieandrews
+  - EllenWehrle
 ms.custom: sfi-image-nochange
 ---
 

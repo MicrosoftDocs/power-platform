@@ -1,6 +1,6 @@
 ---
-title: View Power Automate audit logs
-description: Learn how to view Power Automate logs in the Microsoft Purview compliance portal.
+title: Audit Power Automate logs in Microsoft Purview
+description: Learn how to access Power Automate logs in Microsoft Purview and explore what Power Automate activities you can audit.
 author: msftman
 ms.topic: how-to
 ms.date: 10/27/2025
