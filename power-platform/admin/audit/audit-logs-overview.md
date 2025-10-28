@@ -138,17 +138,17 @@ Learn more about [Advanced security features](/admin/security/data-storage#advan
 ### Set table-level auditing
 
 1. Sign in to [Power Apps Home Page](https://make.powerapps.com/). Be sure to turn on the modern experience.
-2. In the command bar, select **Settings**, then choose **Advanced settings** to go to Microsoft Dynamics 365.
-3. In settings, select **Customizations**, then select **Customize the System**.
-4. In the navigation pane, under **Components**, expand **Entities** and select the entity to audit (for example, **Account**).
-5. Scroll down to **Data Services**, then enable the check box for **Auditing**.
-6. Under **Auditing**, enable the following options:
+1. In the command bar, select **Settings**, then choose **Advanced settings** to go to Microsoft Dynamics 365.
+1. In settings, select **Customizations**, then select **Customize the System**.
+1. In the navigation pane, under **Components**, expand **Entities** and select the entity to audit (for example, **Account**).
+1. Scroll down to **Data Services**, then enable the check box for **Auditing**.
+1. Under **Auditing**, enable the following options:
    - **Single record auditing. Log a record when opened.**
    - **Multiple record auditing. Log all records displayed on an opened page.**
-7. In the command bar, select **Save** to apply the changes.
-8. Select **Publish** to finalize the customization.
-9. Repeat steps **4-8** for other tables you want to audit.
-10. Turn on audit logging in **Microsoft Purview**. See [Turn audit log search on or off](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014).
+1. In the command bar, select **Save** to apply the changes.
+1. Select **Publish** to finalize the customization.
+1. Repeat steps **4-8** for other tables you want to audit.
+
 Learn more about how to [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing).
 
 > [!NOTE]
