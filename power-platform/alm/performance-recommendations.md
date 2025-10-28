@@ -1,6 +1,6 @@
 ---
 title: "Performance Recommendations"
-description: "This document outlines best practices for achieving the fastest possible import times when importing managed solutions in Power Platform"
+description: "This article outlines best practices for achieving the fastest possible import times when importing managed solutions in Power Platform"
 author: Sabrina Di Bartolomeo
 ms.author: sabrinadi 
 ms.date: 30/10/2025
@@ -10,6 +10,9 @@ ms.subservice: alm
 search.audienceType: 
   - developer
 ---
+# Performance Recommendations
+
+This article outlines best practices for achieving the fastest possible import times when importing managed solutions in Power Platform.
 
 **Use Single-Stage Upgrade**
 
