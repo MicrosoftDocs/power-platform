@@ -42,7 +42,7 @@ The **Settings** page displays settings grouped by product. Some settings span a
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-Admins can define who within an environment can use Copilot capabilities in model-driven apps&mdash;either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is currently in preview and is only for environments activated for [Managed Environments](../managed-environment-enable.md), with a subset of Copilot features adhering to it. Review the table below to learn which capabilities adhere to this configuration.
+Admins can define who within an environment can use Copilot capabilities in model-driven apps&mdash;either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is currently in preview and is only for environments activated for [Managed Environments](../managed-environment-enable.md), with a subset of Copilot features adhering to it. Review the following table to learn which capabilities adhere to this configuration.
 
 | Product | Feature |
 |---------|---------|
@@ -69,7 +69,7 @@ The **Copilot Studio** page provides valuable insights about agents built in Cop
 
 ### Power Apps
 
-Admins can view usage analytics for the data entry agent and data exploration agent on the **Power Apps** page to understand the value that end users are getting from AI in Power Apps. The page includes monthly active user count information for each agent, and the number of actions taken. For the data entry agent, this action count is the number of forms where Copilot helped fill in information. For data exploration agent, this action count is for the number of natural language queries that users have entered to search and filter their grid view using natural language. Furthermore, admins can deep dive into each agent by selecting them from the bottom table view. This opens a panel where you can see top environments and drill into those to see apps where users are interacting with each agent the most.
+Admins can view usage analytics for the data entry agent and data exploration agent on the **Power Apps** page to understand the value that end users are getting from AI in Power Apps. The page includes monthly active user count information for each agent, and the number of actions taken. For the data entry agent, this action count is the number of forms where Copilot helped provide information. For data exploration agent, this action count is for the number of natural language queries that users have entered to search and filter their grid view using natural language. Furthermore, admins can look into each agent by selecting them from the bottom table view. This opens a panel where you can see top environments and investigate those to see apps where users are interacting with each agent the most.
 
 > [!Note]
 > During the initial weeks of rollout, data is populated over a 28-day lookback period, resulting in an incomplete month initially.
