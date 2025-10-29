@@ -83,7 +83,14 @@ Dataverse is a cloud scale data store that builds on Microsoft's data technologi
 > - Extend the Dataverse API with your own [custom API](/power-apps/developer/data-platform/custom-api) that implements your business logic
 > - Use [virtual tables](/power-apps/developer/data-platform/virtual-entities/get-started-ve) to integrate data stored in external systems into Dataverse without replicating the data
 
+## Copilot Studio
 
+Copilot Studio is a graphical, low-code tool for building agents and agent flows. One of the standout features of Copilot Studio is the ability to connect to other data sources, using either prebuilt or custom connectors. This flexibility lets users create and orchestrate sophisticated logic, ensuring that their agent experiences are both powerful and intuitive. The platform's low-code experience puts the power of AI at the user's fingertips, making it accessible even to people without extensive technical backgrounds.
+
+> #### Key developer extensibility points
+> - Create [custom connectors](/connectors/custom-connectors/) to communicate with your external data sources and services. A custom connector is a wrapper around a REST API.
+> - Use [Azure Foundry](/azure/ai-services/cognitive-services-azure-openai-service-overview) to build custom AI models that can be integrated into your agents.
+> - Use Microsoft 365 Agents SDK to integrate your Copilot Studio agents into agentic applications.
 
 ### See also
 
