@@ -25,11 +25,11 @@ The --convert-to-managed option is considered risky and deprecated.
 **Avoid Overwrite unmanaged customizations**
 
 The Overwrite unmanaged customizations option (--force-overwrite) forces the import process to overwrite any active customizations in the target environment. 
-This can slow down the import significantly and is generally not recommended.
+This can slow down the import significantly and is generally not recommended. The recommended approach is to prevent unmanaged customizations in the target environment from the outset, as this minimizes risks and improves performance. Consider using the feature [Block unmanaged customizations in Dataverse](/power-platform/alm/block-unmanaged-customizations)
 
 **Don't use Publish customizations for managed solutions**
 
-Publish customizations is only needed for unmanaged solutions and should not be used for managed solutions as it would slow down the deployment.
+Publish customizations is only needed after importing unmanaged solutions and should not be used for managed solutions as it would slow down the deployment. *Note*: The **Publish All Customizations** option does not apply only to the selected solution. It publishes all pending changes across the entire environment.
 
 The table below lists the option names used across the available tools:
 
