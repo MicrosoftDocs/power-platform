@@ -25,11 +25,11 @@ Before you create solutions, take some time to plan ahead your Environment Strat
 
 **Production Support:**
 
-- How will you handle urgent fixes in production without introducing new features prematurely?
+- How do you handle urgent fixes in production without introducing new features prematurely?
 
 **Solution Architecture:** 
 
-- How many solutions will you be managing? Will these solutions share components or dependencies?
+- How many solutions do you manage? Do these solutions share components or do the have dependencies?
 
 **Environment Planning:** 
 
@@ -97,7 +97,7 @@ Separate unmanaged solutions are created within a single development environment
 > 
 > Examples of dependecies:
 >
-> **1. Application ribbons** It's very common in solutions to modify the application ribbons or the site map. If both of your solutions modify these solution components, they're shared components. 
+> **1. Application ribbons** It's common in solutions to modify the application ribbons or the site map. If both of your solutions modify these solution components, they're shared components. 
 >
 > **2. Plugins or Cloud flows that triggers on a custom column or updates a custom table** In this case the plugins or the cloud flows have dependencies on the custom tables.
 >
@@ -108,7 +108,7 @@ Separate unmanaged solutions are created within a single development environment
 
 **Overview:**
 
-This strategy involves developing each solution in its own isolated Microsoft Dataverse development environment. It is commonly used in modular architectures where, for example, different applications—such as Sales, Customer Service, or Field Service—are built and maintained independently. A base solution containing common components (e.g., account and contact tables) is created and deployed as a managed solution into each app-specific development environment. Each app then has its own unmanaged solution, layered on top of the base managed solution, allowing teams to extend functionality without altering the base foundation.
+This strategy involves developing each solution in its own isolated Microsoft Dataverse development environment. It is commonly used in modular architectures where, for example, different applications—such as Sales, Customer Service, or Field Service—are built and maintained independently. A base solution containing common components (for example, account and contact tables) is created and deployed as a managed solution into each app-specific development environment. Each app then has its own unmanaged solution, layered on top of the base managed solution, allowing teams to extend functionality without altering the base foundation.
 
 > [!NOTE]
 > Build your solution layering using these steps.
