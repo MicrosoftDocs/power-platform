@@ -27,7 +27,7 @@ search.audienceType:
 
 Welcome to the new [Power Platform admin center](https://admin.powerplatform.microsoft.com)! The new admin center is designed to be easier to use, with task-oriented navigation that helps you achieve specific outcomes faster.
 
-The Power Platform admin center design focuses on an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. And it's more than just task-oriented—it also provides optimal user experiences to a wide range of stakeholders with varying needs by offering the visibilty and versatility needed to achieve specific outcomes and goals.
+The Power Platform admin center design focuses on an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The new admin center isn't just task-oriented—it also helps you achieve specific outcomes and goals. The design focuses on providing optimal user experiences through improved visibility and versatility to a wide range of stakeholders with varying needs.
 
 All customers can access the new Power Platform admin center. It's turned on by default when you access the admin center.
 
