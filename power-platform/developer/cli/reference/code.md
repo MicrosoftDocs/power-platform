@@ -29,6 +29,7 @@ Use the include files to add additional content to this topic.
 |[pac code delete-data-source](#pac-code-delete-data-source)|(Preview) Deletes a data source from the current app.|
 |[pac code init](#pac-code-init)|(Preview) Initializes a Code app in the current directory.|
 |[pac code list](#pac-code-list)|(Preview) Lists the code apps available in the current environment.|
+|[pac code list-connection-references](#pac-code-list-connection-references)|(Preview) Lists connection references in the specified environment and solution.|
 |[pac code list-datasets](#pac-code-list-datasets)|(Preview) Lists datasets accessible by the provided connector.|
 |[pac code list-sql-stored-procedures](#pac-code-list-sql-stored-procedures)|(Preview) Lists stored procedures accessible by the provided SQL connection and dataset.|
 |[pac code list-tables](#pac-code-list-tables)|(Preview) Lists tables accessible by the provided connector and dataset.|
@@ -56,6 +57,10 @@ The api id of the datasource.
 
 The connection id of the datasource.
 
+#### `--connectionRef` `-cr`
+
+The connection reference ID.
+
 #### `--dataset` `-d`
 
 The dataset name of the datasource.
@@ -63,6 +68,14 @@ The dataset name of the datasource.
 #### `--environment` `-env`
 
 The environment URL to connect to the data source.
+
+#### `--logLevel` `-l`
+
+The logging level for the command.
+
+#### `--solutionId` `-s`
+
+The solution ID of the connection reference. Used only when connection reference parameter is present.
 
 #### `--storedProcedure` `-sp`
 
@@ -147,6 +160,28 @@ The path to the logo file for the app.
 (Preview) Lists the code apps available in the current environment.
 
 [!INCLUDE [code-list-remarks](includes/code-list-remarks.md)]
+
+## pac code list-connection-references
+
+(Preview) Lists connection references in the specified environment and solution.
+
+[!INCLUDE [code-list-connection-references-intro](includes/code-list-connection-references-intro.md)]
+
+
+### Required Parameters for code list-connection-references
+
+#### `--solutionId` `-s`
+
+The ID of the solution to list connection references from.
+
+
+### Optional Parameters for code list-connection-references
+
+#### `--environment` `-env`
+
+The environment URL to list connection references from. If not provided, uses the current environment.
+
+[!INCLUDE [code-list-connection-references-remarks](includes/code-list-connection-references-remarks.md)]
 
 ## pac code list-datasets
 
