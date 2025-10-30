@@ -1,8 +1,8 @@
 ---
-title: Create and manage masking rules (preview)
+title: Create and manage masking rules
 description: Learn how to create and manage masking rules in Microsoft Power Apps.
 ms.component: pa-admin
-ms.date: 09/09/2025
+ms.date: 10/30/2025
 ms.topic: overview
 ms.custom: "admin-security"
 author: paulliew
@@ -16,16 +16,9 @@ contributors:
   - Mattp123
 ---
  
-# Create and manage masking rules (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Create and manage masking rules
 
 Data masking helps protect sensitive information during customer interactions and prevents data leaks. Data masking, also known as de-identification or obfuscation, replaces sensitive data with masked strings. The masked strings ensure that the original, unmasked values remain hidden. Only authorized users can read the unmasked values—one record at a time. In the context of customer interactions, frontline support users are prevented from exposing sensitive information like credit card numbers, social security numbers, or any personal data.
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## How does masking work?
 
@@ -149,6 +142,9 @@ When a customer sends you an email with sensitive data and the email has this ma
 > - Text (single-line and multi-line)
 > - Number
 
+> [!IMPORTANT]
+> When a form is customized and a [component](/power-apps/maker/model-driven-apps/add-move-configure-or-delete-components-on-form#add-components-for-a-column-on-the-form), such as **Rich Text Editor Control**, is added to a masked column, the entire column is masked. Users who have permissions to read and update this column can unmask it.
+
 ### Grant permissions to a secured column with a masking rule
 
 Permissions to read masked columns are granted using the [Column security profiles](/power-platform/admin/set-up-security-permissions-field#associate-security-profiles-and-set-permissions).
@@ -212,11 +208,11 @@ If you have permission to **Read** unmasked columns, you see masked values by de
 
 ### Options for viewing masked columns
 
-When a column security is configured to allow reading unmasked data, a developer can write code that is able to show unmasked data using the [UnMaskedData optional parameter](/power-apps/developer/data-platform/optional-parameters?tabs=webapi#return-unmasked-data). [Learn how to retrieve unmasked data](/power-apps/developer/data-platform/column-level-security#retrieve-unmasked-data)
+When a column security is configured to allow reading unmasked data, a developer can write code that's able to show unmasked data using the [UnMaskedData optional parameter](/power-apps/developer/data-platform/optional-parameters?tabs=webapi#return-unmasked-data). [Learn how to retrieve unmasked data](/power-apps/developer/data-platform/column-level-security#retrieve-unmasked-data)
 
 #### Reading unmasked values on the form
 
-Users who were granted permission to [read unmasked fields](#grant-permissions-to-a-secured-column-with-a-masking-rule) will see a button to read the unmasked values on the form.
+Users who were granted permission to [read unmasked fields](#grant-permissions-to-a-secured-column-with-a-masking-rule) see a button to read the unmasked values on the form.
 
 :::image type="content" source="media/eye-icon.png" alt-text="Select the eye icon to read the unmasked values on the form." lightbox="media/eye-icon.png":::
 
@@ -231,7 +227,7 @@ All read unmasked value requests are audited.
 
 When you create a new record, you enter the sensitive field as unmasked values. After you save, the form automatically refreshes, and the sensitive field is immediately masked.
 
-To update the field, you'll need the [**allowed read unmasked** and **allowed update** permissions](#grant-permissions-to-a-secured-column-with-a-masking-rule).
+To update the field, you need the [**allowed read unmasked** and **allowed update** permissions](#grant-permissions-to-a-secured-column-with-a-masking-rule).
 
 Select the read unmasked field button to get the unmasked value, then update the field and save.
 
@@ -247,12 +243,6 @@ Read unmasked value is also logged.
 
 ## Known limitations/Not supported
 
-### Reading unmasked values on a form
-
-Masked values are displayed on the detail area of a main form.  
-
-Currently, only system administrators can view the **Read** icon on the form. We're working to make it visible to nonadministrators in the next update.
-
 ### Creating and updating unmasked values on the form
 
 When you create a new record, you enter the sensitive column as unmasked values. After you save, the form automatically refreshes, and the sensitive column is immediately masked. You can update the column but make sure that you enter the unmasked values.
@@ -260,6 +250,11 @@ When you create a new record, you enter the sensitive column as unmasked values.
 ### Embedded images in rich text data
 
 If you're using rich text format in a large text area, like an email body and you accept embedded images, the masking rules continue to be applied to the image making it unreadable.
+
+### Form with added components
+
+When a form is customized and a [component](/power-apps/maker/model-driven-apps/add-move-configure-or-delete-components-on-form#add-components-for-a-column-on-the-form), such as **Rich Text Editor Control**, is added to a masked column, the entire column is masked. Users who have permissions to read and update this column can unmask it.
+
 
 ## Related articles
 
