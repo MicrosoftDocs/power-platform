@@ -109,8 +109,6 @@ This page provides similar information as the **Summary** tab, but with an envir
 
 Follow these steps to view the page:
 
-##### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 2. In the navigation pane, select **Licensing**.
@@ -262,12 +260,12 @@ All Dataverse indexes are reported at the Dataverse database capacity rate. Turn
 
 ### Allocate capacity for an environment 
 
-In the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
+When you select the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Licensing**.
-1. In the Licensing pane, select **Dataverse** under **Products**.
-1. On the **Summary** page, select **Manage Capacity**. The **Manage capacity** pane is displayed on the right side of the page.
+1. In the Licensing pane, select **Dataverse** located in the **Products** section.
+1. On the **Summary** page, select **Manage capacity** to see the **Manage capacity** pane.
 1. Select the environment for which you want to allocate capacity.
 1. In the **Manage capacity** pane, view the currently allocated and consumed capacity for the environment.
 1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
