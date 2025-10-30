@@ -174,10 +174,8 @@ This page provides a view of the capacity storage used by your Microsoft Teams e
 Follow these steps to view the page:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-2. In the navigation pane, select **Licensing**.
-
-3. In the Licensing pane, select **Capacity add-ons** and then select **Microsoft Teams**.
+1. On the navigation pane, select **Licensing**.
+1. On the Licensing pane, select **Capacity add-ons** and then select **Microsoft Teams**.
 
 |Feature  |Description  |
 |---------|---------|
@@ -186,22 +184,20 @@ Follow these steps to view the page:
 
 ### Add-ons tab
 
-Use this page to view your organization's add-on usage details and to assign add-ons to environments. Learn more at [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center).
+This page gives you a view of your organization's add-on usage details and to assign add-ons to environments. Learn more at [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center).
 
 > [!NOTE]
 > This tab only appears if you have add-ons included in your tenant.
 
 ### Trial tab
 
-This page provides a view of the capacity storage used by your trial environments. Trial environment capacity usage doesn't count towards your organization's Dataverse usage.
+This page gives you a view of the capacity storage used by your trial environments. Trial environment capacity usage doesn't count towards your organization's Dataverse usage.
 
 Follow these steps to view the page:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-2. In the navigation pane, select **Licensing**.
-
-3. In the Licensing pane, select **Capacity add-ons** and then select **Trial**.
+1. On the navigation pane, select **Licensing**.
+1. On the Licensing pane, select **Capacity add-ons** and then select **Trial**.
 
 |Feature  |Description  |
 |---------|---------|
@@ -221,10 +217,8 @@ Follow these steps to view the page:
 You can track and manage Dataverse capacity in the **Licenses** section of Power Platform admin center.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-2. In the navigation pane, select **Licensing**.
-
-3. In the Licensing pane, select **Dataverse** under **Products**.
+1. On the navigation pane, select **Licensing**.
+1. On the Licensing pane, select **Dataverse** under **Products**.
 
 #### Usage per storage type
 
@@ -277,11 +271,11 @@ All Dataverse indexes are reported at the Dataverse database capacity rate. Turn
 When you select the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Licensing**.
-1. In the Licensing pane, select **Dataverse** located in the **Products** section.
-1. On the **Summary** page, select **Manage capacity** to see the **Manage capacity** pane.
+1. On the navigation pane, select **Licensing**.
+1. On the Licensing pane, select **Dataverse** located in the **Products** section.
+1. On the **Summary** page, select **Manage capacity**.
 1. Select the environment for which you want to allocate capacity.
-1. In the **Manage capacity** pane, view the currently allocated and consumed capacity for the environment.
+1. In the **Manage capacity** panel, view the currently allocated and consumed capacity for the environment.
 1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
 1. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (database, log, or file) reaches a set percentage of the allocated capacity.
 1. Select **Save** to apply the changes.
