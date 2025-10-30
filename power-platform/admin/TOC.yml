@@ -622,7 +622,7 @@
                   items:
                     - name: Column-level security
                       href: field-level-security.md
-                    - name: Create and manage masking rules (preview)
+                    - name: Create and manage masking rules
                       href: create-manage-masking-rules.md
                     - name: Column-level security example
                       href: column-level-security-example.md
