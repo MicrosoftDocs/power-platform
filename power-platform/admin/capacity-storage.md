@@ -51,7 +51,7 @@ To check whether you have any of these licenses, sign in to the Microsoft 365 ad
 >
 > If you have none of the [legacy model licenses](legacy-capacity-storage.md#licenses-for-the-legacy-storage-model) nor the new model licenses, a new model report is displayed.
 
-## Verify your Microsoft Dataverse capacity-based storage model
+## Verifying your Microsoft Dataverse capacity-based storage model
 
 To view the Capacity add-ons summary page, you need to have one of the following roles:
 
@@ -119,7 +119,7 @@ In the *top storage usage, by environment* section, you can see the environments
 
 #### Add-ons
 
-In the *add-ons* section, you can see the details of add-ons that your organization has purchased. Learn more at [View capacity add-ons in Power Platform admin center](add-ons-in-power-platform-admin-center.md).
+In the *add-ons* section, you can see the details of add-ons that your organization has purchased. Learn more at [View capacity add-ons in Power Platform admin center](capacity-add-on#view-capacity-add-ons-in-power-platform-admin-center.md).
 In the *add-ons* section, you also have the option to select **Manage** to assign add-ons to environments or **Download reports** to view a downloaded report. Add-on reports expire after 30 days.
 
 ### Dataverse tab
