@@ -30,8 +30,6 @@ If you purchased storage in or after April 2019, or you have a mix of storage pu
 
 Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data together across their organization. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
 
-We're rolling out this feature now so check back if your user experience varies from the following content.
-
 > [!NOTE]
 > For licensing information, go to the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 >
@@ -54,68 +52,83 @@ To check whether you have any of these licenses, sign in to the Microsoft 365 ad
 
 ## Verify your Microsoft Dataverse capacity-based storage model
 
-Take these steps to verify you Microsoft Dataverse capacity-based storage model:
+To view the Capacity add-ons summary page, you need to have one of the following roles:
+    
+- Tenant administrator
+- Power Platform administrator
+- Dynamics 365 administrator 
+
+Alternatively, a user with any of the above-mentioned roles can grant permissions to the environment administrator to view the **Capacity summary** tab within the **Tenant setting** page.
+
+Take these steps to verify you have the Microsoft Dataverse capacity-based storage model:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Licensing**.
+1. In the Licensing pane, select **Capacity add-ons** to go to the Capacity add-ons summary page where you can see your tenant's storage, add-ons, and Microsoft Power Platform requests.
 
-2. In the navigation pane, select **Licensing**.
-
-3. In the Licensing pane, select **Capacity add-ons** and then select **Summary**.
-
-4. View the data on the **Summary** page.
-
-   For the **Summary** page to display, the user needs to have one of the following roles: 
-    - Tenant administrator
-    - Power Platform administrator
-    - Dynamics 365 administrator 
-
-    Alternatively, a user with any of the above-mentioned roles can grant permissions to the environment administrator to view the **Capacity summary** tab within the **Tenant setting** page.
-
-    The new licensing storage model looks like the following image.
+Learn more in [Dataverse capacity-based storage overview](whats-new-storage.md).
 
 ## Capacity page details
 
-You can access more details on the Capacity page by selecting Summary, Dataverse, Microsoft Teams, Add-ons, or Trial. 
-
+The tabs, **Summary**, **Dataverse**, **Microsoft Teams**, **Add-ons**, and **Trial** are available on the Capacity add-on page.
 ### Summary tab
 
-This page provides a tenant-level view of where your organization is using storage capacity.
+On the Capacity page, **Summary** is the default view where see a tenant-level view of where your organization is using storage capacity. You can view:
 
-Follow these steps to view the **Summary** page:
+- Storage capacity usage
+- Storage capacity, by source
+- Top storage usage, by environment
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+All Dataverse tables, including system tables, are included in the storage capacity reports. Files such as .pdf (or any other file attachment type) are stored in file storage. However, certain attributes needed to access the files are stored in the database as well.
 
-2. In the navigation pane, select **Licensing**.
+#### Storage capacity usage
 
-3. In the Licensing pane, select **Capacity add-ons**, and then select **Summary**.
+In the *storage capacity usage* section, you can see:
 
-All tables of Dataverse, including system tables, are included in the storage capacity reports.
+- **File and database**: The following tables stor data in file and database storage:
 
-|Number  |Description |
-|---------|---------|
-|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following tables store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box table that has columns of datatype file or image (full size)</li><li>Any table that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-tables-ending-in---analytics-in-my-capacity-report) </li> </ul></li><ul><li>WebResourceBase</li></ul><ul><li>RibbonClientMetadataBase</li></ul><li>**Log**: The following tables are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li><li>Elastic tables</li></ul><li>**Database only**: All other tables are counted for your database</li></ul>  |
-|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign up </li><li>**User licenses**: More capacity added for every user license purchased</li><li>**Additional storage**: Any extra storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: Learn more at [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
-|(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
-|(4)  |  **Add-ons**:  Your organization's add-on usage details. Learn more at [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center). |
+  - Attachment
+  - AnnotationBase
+  - Any custom or out-of-the-box table that has columns of datatype file or image (full size)
+  - Any table that is used by one or more installe Insights applications and ends in - *Analytics*
+  - WebResourceBase
+  - RibbonClientMetadataBase
 
-The actual files such as .pdf (or any other file attachment type) are stored in file storage. However, certain attributes needed to access the files are stored in the database as well. 
+- **Log**: The following tables are used:
 
+  - AuditBase
+  - PlugInTraceLogBase
+  - Elastic tables
+ 
+- **Database only**: All other tables are counted for your database
+
+#### Storage capacity, by source
+
+In the *storage capacity, by source* section, you can see:
+
+- **Org (tenant) default**: The default capacity given at the time of sign up
+- **User licenses**: More capacity added for every user license purchased
+- **Additional storage**: Any extra storage you bought
+- **Total**: Total storage available
+- **View self-service sources**: Learn more at [View self-service license amounts and storage capacity](view-self-service-capacity.md)
+
+#### Top storage usage, by environment
+
+In the *top storage usage, by environment* section, you can see the environments that consume the most capacity.
+
+#### Add-ons
+
+In the *add-ons* section, you can see the details of add-ons that your organization has purchased. Learn more at [View capacity add-ons in Power Platform admin center](add-ons-in-power-platform-admin-center.md).
+In the *add-ons* section, you also have the option to select **Manage** to assign add-ons to environments or **Download reports** to view a downloaded report. Add-on reports expire after 30 days.
+ 
 ### Dataverse tab
 
-This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
+On the Capacity page, select **Dataverse**. This page provides similar information as the summary tab, but with an environment-level view of where your organization is using capacity.
 
 > [!NOTE]
 > There's no technical limit on the size of a Dataverse environment. Limits mentioned on this page are entitlement limits based on product licenses purchased.
 
-Follow these steps to view the page:
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-2. In the navigation pane, select **Licensing**.
-
-3. In the Licensing pane, select **Capacity add-ons** and then select **Dataverse**.
-
-Note the following features:
+This table highlights some of the features you can see on the Datatverse view.
 
 |Feature  |Description  |
 |---------|---------|
@@ -139,7 +152,8 @@ Note the following features:
 
 #### Environment storage capacity details
 
-Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) on the **Summary** tab view to see  an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption. 
+Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) associated with the environment you wish to see more information about.
+
 
 The following details are provided:
 
