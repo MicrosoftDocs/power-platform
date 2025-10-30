@@ -15,6 +15,7 @@ contributors:
 - amiyapatr-zz
 - pnghub
 - marianaraujo
+- EllenWehrle
 ms.contributors:
 - ceian
 - ampatra
@@ -26,7 +27,7 @@ ms.custom:
 
 # Dataverse capacity-based storage details
 
-If you purchased storage in or after April 2019, or you have a mix of storage purchases made before and after April 2019, you see your storage capacity entitlement and usage by database, file, and log as it appears in the Microsoft Power Platform admin center today. 
+If you purchased storage in or after April 2019, or you have a mix of storage purchases made before and after April 2019, you see your storage capacity entitlement and usage by database, file, and log as it appears in the Microsoft Power Platform admin center today.
 
 Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data together across their organization. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
 
@@ -37,7 +38,7 @@ Data volume continues to grow exponentially, as businesses advance their digital
 
 ## Licenses for Microsoft Dataverse capacity-based storage model
 
-The following licenses provide capacity by using the new storage model. If you have any of these licenses, you see the new model report: 
+The following licenses provide capacity by using the new storage model. If you have any of these licenses, you see the new model report:
 
 - Dataverse for Apps Database Capacity
 - Dataverse for Apps File Capacity
@@ -56,8 +57,7 @@ To view the Capacity add-ons summary page, you need to have one of the following
 
 - Tenant administrator
 - Power Platform administrator
-- Dynamics 365 administrator 
-
+- Dynamics 365 administrator
 Alternatively, a user with any of the above-mentioned roles can grant permissions to the environment administrator to view the **Capacity summary** tab within the **Tenant setting** page.
 
 Take these steps to verify you have the Microsoft Dataverse capacity-based storage model:
@@ -71,6 +71,7 @@ Learn more in [Dataverse capacity-based storage overview](whats-new-storage.md).
 ## Capacity page details
 
 The tabs, **Summary**, **Dataverse**, **Microsoft Teams**, **Add-ons**, and **Trial** are available on the Capacity add-on page.
+
 ### Summary tab
 
 On the Capacity page, **Summary** is the default view where see a tenant-level view of where your organization is using storage capacity. You can view:
@@ -90,7 +91,7 @@ In the *storage capacity usage* section, you can see:
   - Attachment
   - AnnotationBase
   - Any custom or out-of-the-box table that has columns of datatype file or image (full size)
-  - Any table that is used by one or more installe Insights applications and ends in - *Analytics*
+  - Any table that is used by one or more install Insights applications and ends in - *Analytics*
   - WebResourceBase
   - RibbonClientMetadataBase
 
@@ -99,7 +100,7 @@ In the *storage capacity usage* section, you can see:
   - AuditBase
   - PlugInTraceLogBase
   - Elastic tables
- 
+
 - **Database only**: All other tables are counted for your database
 
 #### Storage capacity, by source
@@ -120,7 +121,7 @@ In the *top storage usage, by environment* section, you can see the environments
 
 In the *add-ons* section, you can see the details of add-ons that your organization has purchased. Learn more at [View capacity add-ons in Power Platform admin center](add-ons-in-power-platform-admin-center.md).
 In the *add-ons* section, you also have the option to select **Manage** to assign add-ons to environments or **Download reports** to view a downloaded report. Add-on reports expire after 30 days.
- 
+
 ### Dataverse tab
 
 On the Capacity page, select **Dataverse**. This page provides similar information as the summary tab, but with an environment-level view of where your organization is using capacity.
@@ -128,7 +129,7 @@ On the Capacity page, select **Dataverse**. This page provides similar informati
 > [!NOTE]
 > There's no technical limit on the size of a Dataverse environment. Limits mentioned on this page are entitlement limits based on product licenses purchased.
 
-This table highlights some of the features you can see on the Datatverse view.
+This table highlights some of the features you can see on the Dataverse page.
 
 |Feature  |Description  |
 |---------|---------|
@@ -154,7 +155,6 @@ This table highlights some of the features you can see on the Datatverse view.
 
 Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) associated with the environment you wish to see more information about.
 
-
 :::image type="content" source="media/environment-capacity-details.png" alt-text="Shows the capacity storage data details view for an environment that includes database usage, file usage, and log usage.":::
 The following details are provided:
 
@@ -170,13 +170,7 @@ The following details are provided:
 
 ### Microsoft Teams tab
 
-This page gives you a view of the capacity storage used by your Microsoft Teams environments. Teams environment capacity usage doesn't count towards your organization's Dataverse usage.
-
-Follow these steps to view the page:
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, select **Licensing**.
-1. On the Licensing pane, select **Capacity add-ons** and then select **Microsoft Teams**.
+On the Capacity page, select **Microsoft Teams**. This page gives you a view of the capacity storage used by your Microsoft Teams environments. Teams environment capacity usage doesn't count towards your organization's Dataverse usage.
 
 |Feature  |Description  |
 |---------|---------|
@@ -185,20 +179,14 @@ Follow these steps to view the page:
 
 ### Add-ons tab
 
-This page gives you a view of your organization's add-on usage details and to assign add-ons to environments. Learn more at [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center).
+On the Capacity page, select **Add-ons**. This page gives you a view of your organization's add-on usage details and to assign add-ons to environments. Learn more at [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center).
 
 > [!NOTE]
 > This tab only appears if you have add-ons included in your tenant.
 
 ### Trial tab
 
-This page gives you a view of the capacity storage used by your trial environments. Trial environment capacity usage doesn't count towards your organization's Dataverse usage.
-
-Follow these steps to view the page:
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, select **Licensing**.
-1. On the Licensing pane, select **Capacity add-ons** and then select **Trial**.
+On the Capacity page, select **Trial**. This page gives you a view of the capacity storage used by your trial environments. Trial environment capacity usage doesn't count towards your organization's Dataverse usage.
 
 |Feature  |Description  |
 |---------|---------|
@@ -239,12 +227,12 @@ In the **Top environments consuming storage** tile, select **See all environment
 - Environment type
 - Managed Environment status
 - Pay-as-you-go plan linkage status
-- Ability to draw capacity from available tenant pool 
+- Ability to draw capacity from available tenant pool
 - Database, file, and log consumption
 
 ### Track environment usage
 
-1. In the **Dataverse** page, select **Environment** and choose an environment from the list. 
+1. On the **Dataverse** page, select **Environment** and choose an environment from the list.
 1. Alternatively in the **Top environment consuming storage** tile, select **See all environments** and select an environment name.
 
 #### Usage per storage type tile
@@ -261,9 +249,9 @@ In addition to database and file storage, Dataverse search includes the indexes 
 
 Storage consumed by Dataverse search is reported at the environment-level as a table called **DataverseSearch**. It was previously named **RelevanceSearch**.
 
-#### Dataverse search can also be monitored at the Dataverse Environment report in the Power Platform admin center:
+#### Dataverse search can also be monitored at the Dataverse Environment report in the Power Platform admin center
 
-- New admin center: Licensing > Dataverse > Environments tab (consumption per table reporting) 
+- New admin center: Licensing > Dataverse > Environments tab (consumption per table reporting)
 - Classic admin center: Billing > Licenses > Dataverse > Environments tab (consumption per table reporting)
 
 #### How much does the indexed Dataverse search data cost?
@@ -279,7 +267,7 @@ When you select the **Dataverse** tab, you can allocate capacity to a specific e
 1. On the Licensing pane, select **Dataverse** located in the **Products** section.
 1. On the **Summary** page, select **Manage capacity**.
 1. Select the environment for which you want to allocate capacity.
-1. In the **Manage capacity** panell, view the currently allocated and consumed capacity for the environment.
+1. In the **Manage capacity** panel, view the currently allocated and consumed capacity for the environment.
 1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
 1. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (database, log, or file) reaches a set percentage of the allocated capacity.
 1. Select **Save** to apply the changes.
@@ -309,11 +297,11 @@ Notifications for capacity approaching storage limits are triggered when any of 
 
 These notifications are sent out to tenant admins, Power Platform admins, and Dynamics 365 admins on a weekly basis. At this time, there's no option for a customer to opt out of these notifications or delegate these notifications to someone else. All admin types listed earlier automatically receive these notifications.
 
-Additionally, there's a notification banner in the Power Platform admin center when a tenant exceeds storage capacity. 
+Additionally, there's a notification banner in the Power Platform admin center when a tenant exceeds storage capacity.
 
 The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization's use of the online service, including consumption that exceeds the online service's documented entitlements or usage limits.
 
-Your organization must have the right licenses for the storage you use: 
+Your organization must have the right licenses for the storage you use:
 
 - If you use more than your documented entitlements or usage limits, you must buy more licenses.
 - If your storage consumption exceeds the documented entitlements or usage limits, we might suspend use of the online service. Microsoft provides reasonable notice before suspending your online service.
@@ -402,9 +390,9 @@ Because custom Quick Find lookups are created by an admin in the org, these can 
 > [!NOTE]
 > The Dataverse search indexed data is the data that allows generative AI experiences to interpret the content using natural language. This index accrues to the overall Dataverse search consumption.
 
-### What is the "DataverseSearch" table and how can I reduce it?
+### What is the DataverseSearch table and how can I reduce it?
 
-The **DataverseSearch** table (previously known as **RelevanceSearch**) is the cumulative storage used by the global search and generative AI experiences that are used by it. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment and Copilot semantic indexes. 
+The **DataverseSearch** table (previously known as **RelevanceSearch**) is the cumulative storage used by the global search and generative AI experiences that are used by it. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment and Copilot semantic indexes.
 
 ### Can Dataverse search be managed?
 
@@ -413,7 +401,7 @@ An admin can manage Dataverse search through the three states associated with th
 **On:**
 
 - When Dataverse search is turned on, the search bar becomes visible.
-- Generative AI experiences using Dataverse data are available. 
+- Generative AI experiences using Dataverse data are available.
 
 **Default:**
 
@@ -468,7 +456,7 @@ All experiences that are used by Dataverse search are limited. Learn more in [Fr
     When Dataverse search is set back to **On** after being set to **Off**, all indexes are immediately re-triggered across all enabled experiences for them to work accordingly, and Dataverse search costs resume.
 
 - **Selecting Default**:
-    When Dataverse search is set to **Default** after being set to **Off**, the indexes are only re-generated when triggered. Examples inlcude when a Copilot Studio agent uses a file&mdash; such as a local file, OneDrive file, or SharePoint file or Dataverse table&mdash;or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
+    When Dataverse search is set to **Default** after being set to **Off**, the indexes are only re-generated when triggered. Examples include when a Copilot Studio agent uses a file&mdash; such as a local file, OneDrive file, or SharePoint file or Dataverse table&mdash;or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
 
 > [!NOTE]
 > Dataverse search can't be turned **On** or **Off** for different applications in the same environment. The status of the setting applies to all applications in the environment.
@@ -513,15 +501,15 @@ Default, production, and sandbox environments are counted for consumption. Trial
 
 Tables ending in "– Analytics" are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights or analytics dashboards. The data is synched from Dataverse tables. Go to the section **More information** for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
 
-### Why can I no longer see the Summary tab in my capacity report? 
+### Why can I no longer see the Summary tab in my capacity report?
 
-This is due to a change that occurred in April 2023, after which only users with the tenant admin, Power Platform admin, or Dynamics 365 admin roles can see the **Summary** tab in the capacity report. Users, such as environment admins, no longer see this tab and are redirected to the **Dataverse** tab when accessing the report. If you have a user that requires access to the **Summary** tab, assign one of the required roles. 
+This is due to a change that occurred in April 2023, after which only users with the tenant admin, Power Platform admin, or Dynamics 365 admin roles can see the **Summary** tab in the capacity report. Users, such as environment admins, no longer see this tab and are redirected to the **Dataverse** tab when accessing the report. If you have a user that requires access to the **Summary** tab, assign one of the required roles.
 
 **More information:**
 
-- [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
+- [Sales Insights](/dynamics365/ai/sales/help-hub#get-started)
 - [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)
-- [Customer Service Insights](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
+- [Customer Service Insights](/dynamics365/customer-service/customer-service-analytics-insights-csh)
 - [Field Service](/dynamics365/field-service/reports)
 
 ### Who can allocate capacity?
@@ -534,7 +522,7 @@ There's no impact on the overall capacity available at the tenant level. Admins 
 
 ### What happens if capacity consumption goes beyond the allocated capacity?
 
-Currently, only _soft enforcement_ through email notification is turned on. Admins (Power Platform admins and environment admins) start receiving notifications when capacity usage exceeds 85% of the allocated capacity.
+Currently, only *soft enforcement* through email notification is turned on. Admins (Power Platform admins and environment admins) start receiving notifications when capacity usage exceeds 85% of the allocated capacity.
 
 ### What types of Dataverse capacity can be allocated?
 
