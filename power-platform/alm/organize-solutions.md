@@ -3,7 +3,7 @@ title: "Organize your solutions in Power Platform"
 description: "This document lists down some strategies to organize your solutions in Power Platform."
 author: marcelbf
 ms.author: sabrinadi
-ms.date: 02/04/2025
+ms.date: 10/30/2025
 ms.reviewer: pehecke
 ms.topic: how-to
 ms.subservice: alm
@@ -38,9 +38,9 @@ Before you create solutions, take some time to plan ahead your Environment Strat
 - Do developers work collaboratively in a shared environment, or do they require isolated environments to work independently? 
   
 
-# Solution Strategies
 
-This section describe different strategies listed in order from simple to more complex, along with their advantages and disadvantages.
+
+The following section outlines three strategies, arranged from the simplest to the most complex, and highlights their respective advantages and disadvantages.
 
 ## Single Solution Strategy 
 
@@ -62,21 +62,21 @@ All customizations are grouped into one unmanaged solution during development, w
 **Cons:**
 
 - Requires more effort to scale or modularize later if required
-- A single solution containing a large number of customizations may result in longer deployment times. To reduce the solution size, [use table segmentation](./segmented-solutions-alm.md). To reduce import times follow [performance recommendations](./performance-recommendations.md)
-- Multiple developers working in the same development environment may overwrite each other’s changes. This risk is mitigated through the use of source code versioning and a branching strategy, which provides change tracking, collaboration support, and conflict resolution mechanisms. See [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
+- A single solution containing a large number of customizations may result in longer deployment times. To reduce the solution size, [use table segmentation](./segmented-solutions-alm.md). To reduce import times see [performance recommendations](./performance-recommendations.md).
+- When multiple developers work in the same development environment, they risk overwriting each other’s changes. This risk can be reduced by implementing source code versioning, adopting a branching strategy, and using a dedicated development environment for each branch. Source code versioning and branching strategy provide change tracking, collaboration support, and conflict resolution mechanisms. See [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance?view=azure-devops).
 
 > [!NOTE]
-> Recent improvements in Microsoft Power Platform have significantly reduced import times for managed solutions, including those using the Upgrade option. These optimizations include better handling of component dependencies and reduced overhead for unchanged components. As a result, even large managed solutions deploy faster and more reliably across environments. To learn how to take full advantage of these improvements, see [performance recommendations](./performance-recommendations.md)
+> Recent improvements in Microsoft Power Platform have significantly reduced import times for managed solutions, including those using the Upgrade option. These optimizations include better handling of component dependencies and reduced overhead for unchanged components. As a result, even large managed solutions deploy faster and more reliably across environments. To learn how to take full advantage of these improvements, see [performance recommendations](./performance-recommendations.md).
 
 ## Multiple Solutions in the Same Development Environment
 
 **Overview:**
 
-Separate unmanaged solutions are created within a single development environment, typically for unrelated features or modules.
+Multiple unmanaged solutions are maintained within a single development environment, each typically dedicated to unrelated features or modules.
 
 **Recommended for:**
 
-- Small-medium scale implementations with distinct and independent functional areas that don’t share components
+- Small-medium scale implementations with distinct and independent functional areas that don’t share components.
 
 **Pros:**
 
@@ -85,41 +85,44 @@ Separate unmanaged solutions are created within a single development environment
 
 **Cons:**
 
-- Having multiple solutions in the same development environment increases the risk of having dependencies issues. You might find yourself in a situation where you cannot import solution A because it depends on solution B and you cannot import solution B because it depends on solution A.  
-- Multiple developers working on the same development environment may overwrite each other’s changes. Working within a solution in a development environment does not mean to work in isolation. Each time a component is changed, it is change directly in the environment, no matter in which solution you are working.
+- Maintaining multiple unmanaged solutions within the same development environment increases the likelihood of dependency conflicts. For example, you may encounter a situation where Solution A cannot be imported because it depends on Solution B, while Solution B cannot be imported because it depends on Solution A.
+- Multiple developers working on the same development environment may overwrite each other’s changes. Working in an unmanaged solution does not provide isolation. Every modification is applied directly to the environment, regardless of which solution is being edited.
 
 > [!NOTE]
-> When you import different solutions into your target environment, you're often creating layers where the existing solution lies underneath the one being imported. When it comes to solution layering, it's important that you:
+> When you have multiple solutions in the same development environment, after importing the managed solutions into your target environment, you're often creating layers. More information: [Solution layers and merge behavior](./solution-layers-alm.md)
+>
+> It's important that you:
 > 1. don’t include the same unmanaged component in more than one solution.
-> 2. have only one solution that includes all your tables. Don't have two different solutions in an environment where both contain tables. This is because there are frequently risks of a single relationship between tables, which creates a cross-solution dependency and causes solution upgrade or delete issues in the target environment at a later point in time.
-> 3. use only 1 publisher. Because the publisher owns the components of a managed solution, its association cannot be changed later. For example, if a custom column is imported through Solution A with Publisher X, you cannot later move that component to Solution B with Publisher Y. The only option is to delete the column, upgrade Solution A to remove the column from the target system, then recreate the column in Solution B under Publisher Y and import Solution B. This process results in loss of all data stored in the custom column unless it is migrated beforehand.
-> 4. avoid having one solution depending on another solution.
+> 2. have only one solution that includes all your tables. Don't have two different solutions where both contain tables. This is because there are frequently risks of a single relationship between tables, which creates a cross-solution dependency and causes solution upgrade or delete issues in the target environment at a later point in time.
+> 3. use only 1 publisher. The publisher owns the components of a managed solution and its association cannot be changed later. For example, if a custom table is imported managed through Solution A with Publisher X, you cannot later move that table to Solution B with Publisher Y. The only option is to delete the table, upgrade Solution A to remove the table from the target system, then recreate the table in Solution B with Publisher Y and import Solution B. This process results in loss of all data stored in the custom table unless it is migrated beforehand.
+> 4. avoid creating dependencies between solutions. Dependencies enforce an import order and can cause issues. For example, if you have one solution for tables and another for cloud flows, and a flow relies on a custom column, it works in development because the column exists. However, if only the cloud flow solution is imported into the target environment, the process may not recognize the dependency on the custom column. As a result, the flow solution installs successfully, but the flow itself does not work.
 >
-> 
-> Examples of dependecies:
+>     Examples of dependecies:
 >
-> **1. Application ribbons** It's common in solutions to modify the application ribbons or the site map. If both of your solutions modify these solution components, they're shared components. 
->
-> **2. Plugins or Cloud flows that triggers on a custom column or updates a custom table** In this case the plugins or the cloud flows have dependencies on the custom tables.
->
-> **3. Security Roles** If you have custom tables, security roles have most probably dependencies on the custom tables.
+>     **1. Application ribbons** – When multiple solutions modify the application ribbon or the site map of the same app.
 >    
+>     **2. Plugins or Cloud flows** – If they trigger on a custom column or update a custom table, they depend on those custom tables.
+>    
+>     **3. Security Roles** – When custom tables exist, security roles typically depend on those tables.
+>    
+
+
 
 ## Multiple Solutions with Dedicated Development Environments
 
 **Overview:**
 
-This strategy involves developing each solution in its own isolated Microsoft Dataverse development environment. It is commonly used in modular architectures where, for example, different applications—such as Sales, Customer Service, or Field Service—are built and maintained independently. A base solution containing common components (for example, account and contact tables) is created and deployed as a managed solution into each app-specific development environment. Each app then has its own unmanaged solution, layered on top of the base managed solution, allowing teams to extend functionality without altering the base foundation.
+This strategy involves developing each unmanaged solution in its own isolated Microsoft Dataverse development environment. It is commonly used in modular architectures where, for example, different applications—such as Sales, Customer Service, or Field Service—are built and maintained independently. A base solution containing common components (for example, account and contact tables) is created and deployed as a managed solution into each app-specific development environment. Each app then has its own unmanaged solution, layered on top of the base managed solution, allowing teams to extend functionality without altering the base foundation.
 
 > [!NOTE]
 > Build your solution layering using these steps.
-> 1. Before you create the solutions in the following steps, use a single publisher for all your solutions across your environments. More > information: [Solution publisher](solution-concepts-alm.md#solution-publisher)
-> 1. In the "base" environment, you have your base solution with the unmanaged tables from that environment and no other tables. You then > export this solution as managed.
-> 1. You set up a second environment for the extension or "app" layer that will later reside on top of the base layer.  
-> 1. You import the managed base layer into the app layer environment and create an unmanaged solution for the app layer.
+> 1. Before you create the solutions in the following steps, use the same publisher for all your solutions across your environments. More > information: [Solution publisher](solution-concepts-alm.md#solution-publisher)
+> 1. In the "base" development environment, you have your base solution with the common unmanaged tables and no other tables. You then > export this solution as managed.
+> 1. You set up a second development environment for the extension or "app" layer that will later reside on top of the base layer.  
+> 1. You import the managed base layer into the app layer development environment and create an unmanaged solution for the app layer.
 :::image type="content" source="media/proper-solution-layering.png" alt-text="Proper solution layering using multiple solutions with > multiple environments.":::
-> You can now extend the data model by adding additional tables, columns, table relationships, and so on, into the specific "app" solution. Then, export the app solution as managed. Notice that the app solution will have dependencies on the base layer solution.
-> In your production environment, you import the managed base layer and then import the managed app layer. This creates two managed layers in the environment with clear dependencies between the two managed solutions. Managing multiple solutions this way doesn't create solution dependencies, which can cause solution maintenance issues, such as removing the top layer if needed.  
+> You can now extend the data model by adding additional tables, columns, table relationships, plugins, flows and so on, to the specific "app" solution. Then, export the app solution as managed. Notice that the app solution still depends on the base layer solution, but managing multiple solutions this way is a better approach. Consider the example mentioned before of the flow that relies on a custom column. In most cases, both the custom column and the flow reside in the same app solution. But even if the custom column is part of the base solution, you must complete and deploy that base solution as managed first, otherwise, the flow inside the app solution cannot even be created. 
+> In your production environment, you import the managed base layer and then import the managed app layer. This creates two managed layers in the environment with clear dependencies between the managed solutions. 
 > Repeat this pattern to have as many different solutions as you need to maintain. Although we recommend that you keep the number of solutions as small as possible to keep your solution layering manageable.
 
 
