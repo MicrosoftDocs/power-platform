@@ -38,8 +38,9 @@ Before you create solutions, take some time to plan ahead your Environment Strat
 - Do developers work collaboratively in a shared environment, or do they require isolated environments to work independently? 
   
 
-The following sections describe different strategies listed in order from simple to more complex, along with their advantages and disadvantages.
+# Solution Strategies
 
+This section describe different strategies listed in order from simple to more complex, along with their advantages and disadvantages.
 
 ## Single Solution Strategy 
 
@@ -61,11 +62,11 @@ All customizations are grouped into one unmanaged solution during development, w
 **Cons:**
 
 - Requires more effort to scale or modularize later if required
-- A single solution containing a large number of customizations may result in longer deployment times. To reduce the solution size, [use table segmentation](./segmented-solutions-alm.md) To reduce import times follow [performance recommendations](./performance-recommendations.md)
-- Multiple developers working on the same development environment may overwrite each other’s changes. This risk is mitigated through source code versioning, which provides change tracking, collaboration support, and conflict resolution mechanisms. See [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
+- A single solution containing a large number of customizations may result in longer deployment times. To reduce the solution size, [use table segmentation](./segmented-solutions-alm.md). To reduce import times follow [performance recommendations](./performance-recommendations.md)
+- Multiple developers working in the same development environment may overwrite each other’s changes. This risk is mitigated through the use of source code versioning and a branching strategy, which provides change tracking, collaboration support, and conflict resolution mechanisms. See [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
 
 > [!NOTE]
-> Recently, the import times for managed solutions in Microsoft Power Platform have been significantly improved due to enhancements in the solution packaging and deployment engine. These optimizations include better handling of component dependencies and reduced overhead for unchanged components. As a result, even large managed solutions now deploy faster and more reliably across environments. To take advantaged of this improvedment, follow [performance recommendations](./performance-recommendations.md)
+> Recent improvements in Microsoft Power Platform have significantly reduced import times for managed solutions, including those using the Upgrade option. These optimizations include better handling of component dependencies and reduced overhead for unchanged components. As a result, even large managed solutions deploy faster and more reliably across environments. To learn how to take full advantage of these improvements, see [performance recommendations](./performance-recommendations.md)
 
 ## Multiple Solutions in the Same Development Environment
 
