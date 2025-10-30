@@ -2,7 +2,7 @@
 title: "Organize your solutions in Power Platform"
 description: "This document lists down some strategies to organize your solutions in Power Platform."
 author: marcelbf
-ms.author: marcelbf, sabrinadi
+ms.author: sabrinadi
 ms.date: 02/04/2025
 ms.reviewer: pehecke
 ms.topic: how-to
@@ -16,8 +16,8 @@ Before you create solutions, take some time to plan ahead your Environment Strat
 
 **Application Scope:**
 
-- Will your implementation span multiple applications such as Sales, Customer Service, Field Service, Finance, etc.?
-
+- Does your implementation span multiple applications such as Sales, Customer Service, Field Service, Finance, etc.?
+  
 **Release Cadence:** 
 
 - How frequently do you plan to deploy updates to production?
@@ -29,17 +29,16 @@ Before you create solutions, take some time to plan ahead your Environment Strat
 
 **Solution Architecture:** 
 
-- How many solutions do you manage? Do these solutions share components or do the have dependencies?
+- How many solutions do you manage? Do these solutions share components or depend on each other?
 
 **Environment Planning:** 
 
-- How many Microsoft Dataverse environments will be required to support your development lifecycle?
-- Will you need separate environments for development, testing, and production?
-- Will developers work collaboratively in a shared environment, or will they require isolated environments to work independently?
-
-If you decide to have only one development environment and later realize that you need more, it can be challenging to change the solutions if people have already installed them. When you have multiple environments, although introducing more complexity, can provide better flexibility.  
+- How many Microsoft Dataverse environments do you require to support your development lifecycle?
+- Do you need separate environments for development, testing, and production?
+- Do developers work collaboratively in a shared environment, or do they require isolated environments to work independently? 
   
-The following sections describe different strategies for managing solutions listed in order from simple to more complex, along with their advantages and disadvantages.
+
+The following sections describe different strategies listed in order from simple to more complex, along with their advantages and disadvantages.
 
 
 ## Single Solution Strategy 
@@ -62,11 +61,11 @@ All customizations are grouped into one unmanaged solution during development, w
 **Cons:**
 
 - Requires more effort to scale or modularize later if required
-- A single solution containing a large number of customizations may result in longer deployment times. To reduce the solution size, [use table segmentation](./segmented-solutions-alm.md) and ...
-- Multiple developers working on the same development environment may overwrite each other’s changes. This can be adressed with Source Code Versioning. Implementing source code versioning helps prevent this by tracking changes, enabling collaboration, and providing mechanisms for conflict resolution
+- A single solution containing a large number of customizations may result in longer deployment times. To reduce the solution size, [use table segmentation](./segmented-solutions-alm.md) To reduce import times follow [performance recommendations](./performance-recommendations.md)
+- Multiple developers working on the same development environment may overwrite each other’s changes. This risk is mitigated through source code versioning, which provides change tracking, collaboration support, and conflict resolution mechanisms. See [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
 
 > [!NOTE]
-> Recently, the import times for managed solutions in Microsoft Power Platform have been significantly improved due to enhancements in the solution packaging and deployment engine. These optimizations include better handling of component dependencies, parallel processing during import, and reduced overhead for unchanged components. As a result, even large managed solutions now deploy faster and more reliably across environments. To take advantaged of this improvedment, follow what described in ...
+> Recently, the import times for managed solutions in Microsoft Power Platform have been significantly improved due to enhancements in the solution packaging and deployment engine. These optimizations include better handling of component dependencies and reduced overhead for unchanged components. As a result, even large managed solutions now deploy faster and more reliably across environments. To take advantaged of this improvedment, follow [performance recommendations](./performance-recommendations.md)
 
 ## Multiple Solutions in the Same Development Environment
 
@@ -90,9 +89,10 @@ Separate unmanaged solutions are created within a single development environment
 
 > [!NOTE]
 > When you import different solutions into your target environment, you're often creating layers where the existing solution lies underneath the one being imported. When it comes to solution layering, it's important that you:
-> 1. avoid having multiple solutions containing the same unmanaged component. This is especially true with tables. It is recommended to avoid having multiple solutions in the same development environment containing tables. This is because there are frequently risks of a single relationship between tables, which creates a solution dependency and causes solution upgrade or delete issues in the target environment at a later point in time
-> 2. use only 1 publisher. Because the publisher owns the components of a managed solution, its association cannot be changed later. For example, if a custom column is imported through Solution A with Publisher X, you cannot later move that component to Solution B with Publisher Y. The only option is to delete the column, upgrade Solution A to remove the column from the target system, then recreate the column in Solution B under Publisher Y and import Solution B. This process results in loss of all data stored in the custom column unless it is migrated beforehand.
-> 3. avoid having solution dependencies.
+> 1. don’t include the same unmanaged component in more than one solution.
+> 2. have only one solution that includes all your tables. Don't have two different solutions in an environment where both contain tables. This is because there are frequently risks of a single relationship between tables, which creates a cross-solution dependency and causes solution upgrade or delete issues in the target environment at a later point in time.
+> 3. use only 1 publisher. Because the publisher owns the components of a managed solution, its association cannot be changed later. For example, if a custom column is imported through Solution A with Publisher X, you cannot later move that component to Solution B with Publisher Y. The only option is to delete the column, upgrade Solution A to remove the column from the target system, then recreate the column in Solution B under Publisher Y and import Solution B. This process results in loss of all data stored in the custom column unless it is migrated beforehand.
+> 4. avoid having one solution depending on another solution.
 >
 > 
 > Examples of dependecies:
