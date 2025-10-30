@@ -9,10 +9,6 @@ ms.subservice: case-study
 ms.date: 10/23/2025
 ms.topic: overview
 ---
-
-<!-- ask about Chatham Vidanagamage title -->
-
-
 # La Trobe University supercharges academic productivity with AI and Copilot Studio
 
 [La Trobe University](https://www.latrobe.edu.au/) in Melbourne, Australia, ranks among the top 1 percent of universities globally and serves over 35,000 students each year. Known for its academic excellence and research achievements, La Trobe is dedicated to streamlining operations, driving innovation, and enhancing services for its students, staff, and partners.
@@ -42,7 +38,7 @@ La Trobe also acknowledged students' expectations for modern digital solutions. 
 
 Together with Shainal Kavar, the following people make up the team behind Troby:
 
-- Chatham Vidanagamage, Associate Director AI, and Innovation, La Trobe University. Serves as the product owner.
+- Chatham Vidanagamage, Associate Director AI and Innovation, La Trobe University. Serves as the product owner.
 - Varanga De Silva, AI Engineering Lead, La Trobe University. Serves as solution lead and developer.
 
 ## Solution
@@ -162,16 +158,11 @@ The following image shows the generative answers node used in the conversation f
 
 :::image type="content" source="media/la-trobe-university/generative-answers.png" alt-text="Screenshot of the generative answers node displaying a generative response based on conditions.":::
 
-
-
-
-
-
 ### Intent recognition process
 
 To support effective classification and routing:
 
-- Every ServiceNow KB article includes sample questions, populated manually by domain SMEs (subject matter experts).
+- Every ServiceNow KB article includes sample questions, populated manually by domain subject matter experts (SMEs).
 - These samples are used to train a custom AI Builder classification model, which powers intent detection.
 - The AI model is triggered at runtime via a flow and returns the predicted category and confidence score.
 
@@ -229,7 +220,7 @@ The architecture is organized in three layers: data, conversation, and user inte
 
 The case study of La Trobe University's Copilot Studio agent, Troby, demonstrates the potential of using Copilot Studio to create an agent that provides KB article information to users through natural language queries. 
 
-Here are some key takeaways for IT professionals who want to implement a similar solution in their own organizations:
+Here are some key takeaways for IT pros who want to implement a similar solution in their own organizations:
 
 - Consider using an approach that includes AI prompts, flows, and Dataverse to overcome the limitations of a built-in connector.
 - Use AI prompts for intent recognition in combination with classic orchestration and custom topics, an approach referred to as "hybrid orchestration."
@@ -238,7 +229,7 @@ Since La Trobe University launched Troby, the university has realized the follow
 
 - Efficient access to academic resources and administrative information for faculty and staff, significantly reducing manual workloads and optimizing daily operations.
 - Compared to their former platform that used chatbot functionality, they found Copilot Studio a powerful and cost-effective alternative for accelerating their AI journey.
-- Overall metrics indicate that the Troby agent solves 71% of inquiries and five KB articles are updated per user feedback.
+- Overall metrics indicate that the Troby agent solves 71 percent of inquiries and five KB articles are updated per user feedback.
 
 Other key learnings shared by La Trobe University include that AI-generated responses are as good as the quality of your data. The built-in connectors get you started connecting to enterprise data sources but might present limitations.
 
@@ -246,7 +237,7 @@ Other key learnings shared by La Trobe University include that AI-generated resp
 
 La Trobe University plans to continue expanding its AI capabilities, including extending agent functionalities for student use.
 
-> "The idea is to expand Troby to our future and current students by 2026 whereby the entire university community will be served via Troby for their needs for university services and support"
+> "The idea is to expand Troby to our future and current students by 2026 whereby the entire university community will be served via Troby for their needs for university services and support."
 >
 > — *Chatham Vidanagamage, Associate Director AI and Innovation, La Trobe University*
 
