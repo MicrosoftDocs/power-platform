@@ -13,8 +13,6 @@ search.audienceType:
 ---
 
 # Versioning and support
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 This article provides an overview of the versioning and breaking change policies for the various programmability tools.
 
 ## Support and deprecation information

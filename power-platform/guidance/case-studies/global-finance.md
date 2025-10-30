@@ -4,7 +4,7 @@ description: Learn how Ernst & Young (EY) uses Power Platform tools like Power A
 author: robstand
 ms.author: sashi
 ms.topic: overview
-ms.subservice: guidance
+ms.subservice: case-study
 ms.date: 02/03/2025
 
 ---

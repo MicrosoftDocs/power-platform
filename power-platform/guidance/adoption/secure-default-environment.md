@@ -59,7 +59,7 @@ Add links to any other internal resources your makers might find helpful.
 
 ## Enable managed environments
 
-Maintain robust security and governance by making use of managed environment features in the default environment. Managed environment features provide advanced capabilities, such as monitoring, compliance, and security controls that are important for protecting your data. By enabling this feature, you can configure [sharing limits](/power-platform/admin/managed-environment-sharing-limits), gain more [usage insights](/power-platform/admin/managed-environment-usage-insights), [limit user access to Microsoft Dataverse](/power-platform/admin/ip-firewall) from only allowed IP locations, and use the [Actions page](/power-platform/admin/power-platform-advisor) to get personalized recommendations to optimize the environment. Evaluate the current managed environments features and stay up to date with the product roadmap to maintain a secure, compliant, and well-governed default environment.
+Maintain robust security and governance by making use of managed environment features in the default environment. Managed environment features provide advanced capabilities, such as monitoring, compliance, and security controls that are important for protecting your data. By enabling this feature, you can configure [sharing limits](/power-platform/admin/managed-environment-sharing-limits), gain more [usage insights](/power-platform/admin/managed-environment-usage-insights), [limit user access to Microsoft Dataverse](/power-platform/admin/ip-firewall) from only allowed IP locations, and use the [actions page](/power-platform/admin/power-platform-advisor) to get personalized recommendations to optimize the environment. Evaluate the current managed environments features and stay up to date with the product roadmap to maintain a secure, compliant, and well-governed default environment.
 
 ## Prevent oversharing
 
@@ -111,15 +111,15 @@ When **Share with Everyone** is turned off, only Dynamics 365 administrators, Po
 
    To disable sharing with **Everyone**, follow the same steps but set `$settings.powerPlatform.powerApps.disableShareWithEveryone = $true`.
 
-## Establish a data loss prevention policy
+## Establish a data policy
 
-Another way to secure the default environment is to [create a data loss prevention (DLP) policy](/power-platform/admin/create-dlp-policy) for it. Having a DLP policy in place is especially critical for the default environment because all employees in your organization have access to it. Here are some recommendations to help you enforce the policy.
+Another way to secure the default environment is to [create a data policy](/power-platform/admin/prevent-data-loss) for it. Having a data policy in place is especially critical for the default environment because all employees in your organization have access to it. Here are some recommendations to help you enforce the policy.
 
-### Customize the DLP governance message
+### Customize the data policy governance message
 
-Customize the error message that's displayed if a maker creates an app that violates your organization's DLP policy. Direct the maker to your organization's Power Platform Hub and provide your CoE team's email address.
+Customize the error message that's displayed if a maker creates an app that violates your organization's data policy. Direct the maker to your organization's Power Platform Hub and provide your CoE team's email address.
 
-As the CoE team refines the DLP policy over time, you might inadvertently break some apps. Make sure the DLP policy violation message contains contact details or a link to more information to provide a way forward for makers.
+As the CoE team refines the data policy over time, you might inadvertently break some apps. Make sure the data policy violation message contains contact details or a link to more information to provide a way forward for makers.
 
 Use the following PowerShell cmdlets to customize the [governance policy message](/power-platform/admin/powerapps-powershell#governance-error-message-content-commands):
 
@@ -130,7 +130,7 @@ Use the following PowerShell cmdlets to customize the [governance policy message
 
 ### Block new connectors in the default environment
 
-By default, all new connectors are placed in the non-business group of your DLP policy. You can always [change the default group](/power-platform/admin/prevent-data-loss#change-the-default-data-group) to either Business or Blocked. For a DLP policy that is applied to the default environment, we recommend that you configure the Blocked group as the default to make sure that new connectors remain unusable until they have been reviewed by one of your administrators.
+By default, all new connectors are placed in the non-business group of your data policy. You can always [change the default group](/power-platform/admin/prevent-data-loss#change-the-default-data-group) to either Business or Blocked. For a data policy that is applied to the default environment, we recommend that you configure the Blocked group as the default to make sure that new connectors remain unusable until they have been reviewed by one of your administrators.
 
 ### Limit makers to prebuilt connectors
 
@@ -143,7 +143,7 @@ Restrict makers to basic, nonblockable connectors to block access to other conne
 
 Custom connectors integrate an app or flow with a home-grown service. These services are intended for technical users like developers. It's a good idea to reduce the footprint of APIs built by your organization that can be invoked from apps or flows in the default environment. To prevent makers from creating and using custom connectors for APIs in the default environment, create a rule to block all URL patterns.
 
-To allow makers to access some APIs (for example, a service that returns a list of company holidays), configure multiple rules that classify different URL patterns into the business and nonbusiness data groups. Make sure that connections always use the HTTPS protocol. Learn more about [DLP for custom connectors](/power-platform/admin/dlp-custom-connector-parity).
+To allow makers to access some APIs (for example, a service that returns a list of company holidays), configure multiple rules that classify different URL patterns into the business and nonbusiness data groups. Make sure that connections always use the HTTPS protocol. Learn more about [data policies for custom connectors](/power-platform/admin/dlp-custom-connector-parity).
 
 ## Secure integration with Exchange
 
@@ -228,7 +228,7 @@ Review the detailed articles in this series to further enhance your security pos
 
 - [Detect threats to your organization](threat-detection.md)
 - [Establish data protection and privacy controls](data-protection.md)
-- [Implement a DLP strategy](dlp-strategy.md)
+- [Implement a data policy strategy](dlp-strategy.md)
 - [Configure identity and access management](conditional-access.md)
 - [Meet compliance requirements](compliance.md)
 

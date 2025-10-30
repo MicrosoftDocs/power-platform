@@ -5,10 +5,10 @@ description: Learn how to configure identity and access management for Microsoft
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/14/2025
+ms.date: 08/18/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 contributors:
@@ -20,7 +20,7 @@ ms.custom: sfi-ga-nochange
 
 Managing access to sensitive information and resources is critical for IT admins and Chief Information Security Officers (CISOs) across industries. Ensuring least privilege access is essential for maintaining strong security. 
 
-Power Platform integrates with [Microsoft Entra ID](/entra/identity/) for identity and access management, empowering admins to securely manage users and their interactions with Power Platform resources. Microsoft Entra ID is central to Microsoft authentication and helps by protecting against identity compromise. Microsoft Entra ID gives IT admins visibility and control and offers security capabilities like multifactor authentication and conditional access. [Managed security](/power-platform/admin/security/managed-security) provides capabilities built on Microsoft Entra ID, giving admins granular control to ensure only authorized users access data and resources.
+Power Platform integrates with [Microsoft Entra ID](/entra/identity/) for identity and access management, empowering admins to securely manage users and their interactions with Power Platform resources. Microsoft Entra ID is central to Microsoft authentication and helps protect against identity compromise. Microsoft Entra ID gives IT admins visibility and control and offers security capabilities like multifactor authentication and conditional access. [Managed security](/power-platform/admin/security/managed-security) provides capabilities built on Microsoft Entra ID, giving admins granular control to ensure only authorized users access data and resources.
 
 This article explains identity and access management controls at every layer.
 
@@ -30,12 +30,12 @@ Tenant-level access is the first layer of security and uses Microsoft Entra ID. 
 
 ### Service admin roles
 
-There are two Power Platform related service admin roles you can assign to provide a high level of admin management:
+You can assign two Power Platform related service admin roles to provide a high level of admin management:
 
 - **Power Platform administrator**: This role can perform all admin functions in Power Platform, regardless of security group membership at the environment level.
 - **Dynamics 365 administrator**: This role can perform most admin functions in Power Platform, but only for environments where it belongs to the security group.
 
-These roles can't manage user accounts, subscriptions, and access settings for other Microsoft 365 apps. You need to collaborate with other admins in your organization to perform those tasks. Review the [service administrator permission matrix](/power-platform/admin/use-service-admin-role-manage-tenant) for more information on each role's privileges.
+These roles can't manage user accounts, subscriptions, and access settings for other Microsoft 365 apps. You need to collaborate with other admins in your organization to perform those tasks. For more information on each role's privileges, review the [service administrator permission matrix](/power-platform/admin/use-service-admin-role-manage-tenant).
 
 Administrative identities pose significant security risks because their tasks require privileged access to many systems and applications. Compromise or misuse can harm your business and its information systems. Security of administration is one of the most critical security areas.
 
@@ -59,17 +59,17 @@ Don't give all identities the same level of access. Base your decisions on two m
 
 These factors aren't mutually exclusive. A compromised identity with more privileges and unlimited access duration can gain more control over the system and data, or use that access to continue to change the environment. Constrain these access factors both as a preventive measure and to control the blast radius.
 
-*Just in Time (JIT)* approaches provide the required privileges only when they're needed.
+*Just in Time (JIT)* approaches provide the required privileges only when you need them.
 
 *Just Enough Access (JEA)* provides only the required privileges.
 
-Although time and privilege are the primary factors, there are other conditions that apply. For example, you can also use the device, network, and location from which the access originated to set policies.
+Although time and privilege are the primary factors, other conditions apply. For example, you can also use the device, network, and location from which the access originated to set policies.
 
 Use strong controls that filter, detect, and block unauthorized access, including parameters like user identity and location, device health, workload context, data classification, and anomalies.
 
 For example, your workload might need to be accessed by third-party identities like vendors, partners, and customers. They need the appropriate level of access rather than the default permissions that you provide to full-time employees. Clear differentiation of external accounts makes it easier to prevent and detect attacks that come from these vectors.
 
-You should plan how to use policies to enforce your security guidelines for Power Platform. You can use a policy to limit Power Platform access to specific users or conditions, such as where they're located, the device they're using and the apps that are installed on it, and if they use multifactor authentication. Conditional access is flexible, but that flexibility can allow you to create policies that have undesirable results, including locking out your own admins. The [planning guide](/azure/active-directory/conditional-access/plan-conditional-access) can help you think through how to plan for using conditional access.
+Plan how to use policies to enforce your security guidelines for Power Platform. You can use a policy to limit Power Platform access to specific users or conditions, such as where they're located, the device they're using and the apps that are installed on it, and if they use multifactor authentication. Conditional access is flexible, but that flexibility can allow you to create policies that have undesirable results, including locking out your own admins. The [planning guide](/azure/active-directory/conditional-access/plan-conditional-access) can help you think through how to plan for using conditional access.
 
 Learn more:
 
@@ -78,7 +78,7 @@ Learn more:
 
 ### Continuous access evaluation
 
-[Continuous access evaluation](/power-platform/admin/continuous-access-evaluation) is a feature of Microsoft Entra ID that monitors certain events and changes to determine if a user should keep or lose access to a resource. OAuth 2.0 authentication traditionally relies on access token expiration to revoke a user's access to modern cloud services. Users whose access rights have been terminated have access to resources until the access token expires—for Power Platform, as long as an hour, by default. With continuous access evaluation, however, Power Platform services such as Dataverse continuously evaluate a user's [critical events](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#critical-event-evaluation) and network location changes. They proactively terminate active user sessions, or require reauthentication, and enforce tenant policy changes in near real time instead of waiting for an access token to expire.
+[Continuous access evaluation](/power-platform/admin/continuous-access-evaluation) is a feature of Microsoft Entra ID that monitors certain events and changes to determine if a user should keep or lose access to a resource. OAuth 2.0 authentication traditionally relies on access token expiration to revoke a user's access to modern cloud services. Users whose access rights are terminated keep access to resources until the access token expires—for Power Platform, as long as an hour, by default. With continuous access evaluation, however, Power Platform services such as Dataverse continuously evaluate a user's [critical events](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#critical-event-evaluation) and network location changes. They proactively terminate active user sessions, or require reauthentication, and enforce tenant policy changes in near real time instead of waiting for an access token to expire.
 
 As organizations continue to adopt hybrid work models and cloud applications, Microsoft Entra ID is a key primary security perimeter that protects users and resources. Conditional access extends that perimeter beyond a network boundary to include user and device identity. Continuous access ensures that access is reevaluated as events or user locations change. By using Microsoft Entra ID with Power Platform products, you can apply consistent security governance across your application portfolio.
 
@@ -108,18 +108,18 @@ To further enhance security and reduce the risk of incidental over-sharing, you 
 
 ## Resource access
 
-Security roles control the ability to create and run specific applications and flows in environments. For example, you can share canvas apps directly with a user or a Microsoft Entra ID group, but they're still subject to Dataverse security roles. However, you share model-driven apps only through Dataverse security roles.  
+Security roles control the ability to create and run specific applications and flows in environments. For example, you can share canvas apps directly with a user or a Microsoft Entra ID group, but Dataverse security roles still apply. However, you share model-driven apps only through Dataverse security roles.  
 
 ### Assign roles to identities based on their requirements
 
 Authorize actions based on each identity's responsibility. Ensure an identity doesn't do more than it needs to do. Before you set authorization rules, make sure you understand who or what is making requests, what that role is permitted to do, and the extent of its permissions. These factors guide decisions that combine identity, role, and scope.
 
-Consider the following:
+Consider the following questions:
 
 - Does the identity need read or write access to the data? What level of write access is required?
 - If the identity is compromised by a bad actor, what would the impact to the system be in terms of confidentiality, integrity, and availability?
 - Does the identity need permanent access or can conditional access be considered?
-- Does the identity perform actions that require administrative/elevated permissions?
+- Does the identity perform actions that require administrative or elevated permissions?
 - How will the workload interact with third-party services?
 
 A role is a *set of permissions* assigned to an identity. Assign roles that only allow the identity to complete the task, and no more. When user's permissions are restricted to their job requirements, it's easier to identify suspicious or unauthorized behavior in the system.
@@ -135,23 +135,23 @@ Ask questions like these:
 
 **Limiting the level of access that users have reduces the potential attack surface**. If you grant only the minimum permissions that are required to perform specific tasks, the risk of a successful attack or unauthorized access is reduced. For example, developers only need maker access to the development environment but not the production environment. They need access to create resources but not change environment properties. They might need access to read/write data from Dataverse but not to change the data model or attributes of the Dataverse table.
 
-**Avoid permissions that target individual users**. Granular and custom permissions create complexity and confusion and can become difficult to maintain as users change roles and move across the business, or as new users with similar authentication requirements join the team. This situation can create a complex legacy configuration that's difficult to maintain and negatively impacts both security and reliability.
+**Avoid permissions that target individual users**. Granular and custom permissions create complexity and confusion. They can become difficult to maintain as users change roles and move across the business, or as new users with similar authentication requirements join the team. This situation can create a complex legacy configuration that's difficult to maintain and negatively impacts both security and reliability.
 
 **Grant roles that start with least privilege** and add more based on your operational or data access needs. Your technical teams must have clear guidance to implement permissions.
 
 ### Establish processes to manage the identity lifecycle
 
-Access to identities must not last longer than the resources that the identities access. Ensure that you have a process for disabling or deleting identities when there are changes in team structure or software components.
+Access to identities must not last longer than the resources that the identities access. Ensure that you have a process for disabling or deleting identities when changes occur in team structure or software components.
 
-Establish an identity governance process to manage the lifecycle of digital identities, high-privileged users, external/guest users, and workload users. Implement access reviews to ensure that when identities leave the organization or the team, their workload permissions are removed.
+Establish an identity governance process to manage the lifecycle of digital identities, high-privileged users, external or guest users, and workload users. Implement access reviews to ensure that when identities leave the organization or the team, their workload permissions are removed.
 
 ### Configure sharing limits
 
 As the race to adopt AI is prioritized across industries, admins are looking to address the risk of over-sharing resources. [Managed security](/power-platform/admin/security/managed-security) supports [granular sharing limits](/power-platform/admin/managed-environment-sharing-limits) for canvas apps and solution-aware cloud flows, preventing makers from sharing flows across security groups and with individuals.
 
-For Copilot Studio agent scenarios, admins are equipped with fine-grained controls over editor versus viewer permissions on a per environment or environment group basis. They can also restrict viewers to specific security groups, individuals, or a set number of viewers.
+For Copilot Studio agent scenarios, admins have fine-grained controls over editor versus viewer permissions on a per environment or environment group basis. They can also restrict viewers to specific security groups, individuals, or a set number of viewers.
 
-:::image type="content" source="media/limit-sharing.png" alt-text="Screenshot of managing sharing limits in the Power Platform admin center." lightbox="media/limit-sharing.png":::
+:::image type="content" source="media/limit-sharing.png" alt-text="Screenshot of managing sharing limits in the Power Platform admin center.":::
 
 In addition to these granular sharing limits, also limit the makers' ability to use the [*Everyone* shorthand to share apps](/power-platform/admin/powerapps-powershell?branch=ppadoption-refresh-mapichle#display-tenant-setting-for-ability-to-share-apps-with-everyone) with everyone in the organization. 
 
@@ -164,11 +164,11 @@ Learn more:
 
 ### Connect to Azure resources that support managed identity
 
-To minimize the risk associated with accessing external resources, [managed identity support for Dataverse plug-ins](/power-platform/admin/managed-identity-overview) allows for secure and seamless authentication, eliminating the need for hard-coded credentials and simplifying the management of access to resources.
+To minimize the risk associated with accessing external resources, [managed identity support for Dataverse plug-ins](/power-platform/admin/managed-identity-overview) provides secure and seamless authentication. This support eliminates the need for hard-coded credentials and simplifies the management of access to resources.
 
 ## Dataverse access
 
-Dataverse has a rich [security model](/power-platform/admin/wp-security) to protect the data integrity and privacy of users while promoting efficient data access and collaboration. You can combine business units, role-based security, row-based security, and column-based security to define overall access to the information that users have in a Power Platform environment. Role-based access control (RBAC) lets you define access permissions and govern data access in a scalable way. Using various built-in or customized security roles, you can grant permissions at the database, table, or specific record level.  
+Dataverse uses a rich [security model](/power-platform/admin/wp-security) to protect data integrity and user privacy while promoting efficient data access and collaboration. You can combine business units, role-based security, row-based security, and column-based security to define the overall access to information that users have in a Power Platform environment. Role-based access control (RBAC) lets you define access permissions and govern data access in a scalable way. By using various built-in or customized security roles, you can grant permissions at the database, table, or specific record level.  
 
 Dataverse enables fine-grained access controls to manage authorization and data level security roles. These roles define row, field, hierarchical, and group protection, which provide the granularity and flexibility required to secure highly sensitive business data in applications.
 
@@ -201,17 +201,17 @@ Effectively governing makers, users, and guests is essential to maintain securit
 
 1. **Don't allow maker permissions in test and production environments**: Restrict maker permissions in test and production environments to prevent unauthorized changes and ensure that only approved and thoroughly tested applications are deployed. This separation of duties helps maintain the integrity and stability of production systems, minimizing the risk of errors and security vulnerabilities.
 
-1. **Control access using security roles with least privileges**: Implement role-based access control (RBAC) to assign permissions based on the principle of least privilege. This means granting users only the access they need to perform their specific tasks. By limiting permissions, you reduce the attack surface and minimize the potential impact of security breaches.
+1. **Control access using security roles with least privileges**: Implement role-based access control (RBAC) to assign permissions based on the principle of least privilege. Grant users only the access they need to perform their specific tasks. By limiting permissions, you reduce the attack surface and minimize the potential impact of security breaches.
 
 1. **Diagnose user access issues by invoking 'Run Diagnostics'**: Use the [**Run diagnostics**](/power-platform/admin/troubleshooting-user-needs-read-write-access-organization) command to troubleshoot and diagnose user access issues. This tool helps identify and resolve permission-related problems, ensuring that users have the appropriate access to perform their tasks. Regular diagnostics can also help detect and address potential security gaps.
 
 1. **Limit [sharing with Everyone](/power-platform/admin/powerapps-powershell?branch=ppadoption-refresh-mapichle#display-tenant-setting-for-ability-to-share-apps-with-everyone), and evaluate configuring specific limits**: Avoid broad sharing permissions that allow everyone to access a resource. Configure specific sharing limits to control how many users makers can share their applications and data with. 
 
-1. **Apply data loss prevention (DLP) policies to the default and developer environments**: Apply DLP policies to the default and developer environments to restrict access to only the connectors that makers need. This helps prevent unauthorized data transfers and ensures that sensitive information is protected. Regularly review and update DLP policies to align with changing security requirements.
+1. **Apply data policies to the default and developer environments**: Apply data policies to the default and developer environments to restrict access to only the connectors that makers need. This approach helps prevent unauthorized data transfers and ensures that sensitive information is protected. Regularly review and update data policies to align with changing security requirements.
 
 1. **Use Microsoft Entra ID Groups to secure environment access**: Use Microsoft Entra ID groups to manage and secure access to Power Platform environments. By grouping users based on their roles and responsibilities, you can efficiently assign and manage permissions. Microsoft Entra ID groups also simplify the process of updating access controls as organizational needs evolve.
 
-1. **Use Dataverse to have built-in flexible RBAC security model**: Using Dataverse provides a built-in, flexible role-based access control security model that allows you to manage user permissions and access to data effectively. This model enables you to define custom roles and assign specific permissions based on job functions and responsibilities, ensuring that users have only the necessary access to perform their tasks. With features like granular permissions, hierarchical security, and team-based access, Dataverse's RBAC model enhances data protection, supports compliance with regulatory requirements, and simplifies the management of user access within Power Platform environments.
+1. **Use Dataverse to have built-in flexible RBAC security model**: Dataverse provides a built-in, flexible role-based access control security model that allows you to manage user permissions and access to data effectively. This model enables you to define custom roles and assign specific permissions based on job functions and responsibilities. Ensure that users have only the necessary access to perform their tasks. With features like granular permissions, hierarchical security, and team-based access, Dataverse's RBAC model enhances data protection, supports compliance with regulatory requirements, and simplifies the management of user access within Power Platform environments.
 
 ## Next steps
 
@@ -219,7 +219,7 @@ Review the detailed articles in this series to further enhance your security pos
 
 - [Detect threats to your organization](threat-detection.md)
 - [Establish data protection and privacy controls](data-protection.md)
-- [Implement a DLP strategy](dlp-strategy.md)
+- [Implement a data policy strategy](dlp-strategy.md)
 - [Meet compliance requirements](compliance.md)
 - [Secure the default environment](secure-default-environment.md)
 

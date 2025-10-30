@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # About Unified Interface for model-driven apps in Power Apps 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Unified Interface uses responsive web design principles to provide an optimal viewing and interaction experience for any screen size, device, or orientation. It brings all the rich experiences to any client that you are using. Whether you are using a browser, tablet, or phone, you will be able to consume similar experiences.
 
 More information: 

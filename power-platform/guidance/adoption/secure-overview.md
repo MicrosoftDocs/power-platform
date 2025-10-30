@@ -7,7 +7,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 ms.date: 05/14/2025
 ---
 
@@ -21,7 +21,7 @@ This series of articles provides guidance on achieving this balance, offering re
 1. [Enhance your security posture](security-posture-management.md). Get guidance for scalable, efficient, enterprise-grade security.
 1. [Detect threats](threat-detection.md). Use AI-powered detection and monitoring to address and prevent security risks.
 1. [Protect your data and privacy](data-protection.md). Use robust controls to ensure confidentiality and encryption, protecting sensitive information.
-1. [Establish Data Loss Prevention policies](dlp-strategy.md). Implement strategies to prevent data breaches and unauthorized data transfers, safeguarding sensitive information.
+1. [Establish data policies](dlp-strategy.md). Implement strategies to prevent data breaches and unauthorized data transfers, safeguarding sensitive information.
 1. [Manage maker, user, and guest access](conditional-access.md). Adopt seamless and adaptive tools to ensure only authorized users access resources and data.
 1. [Meet compliance requirements](compliance.md). Ensure visibility and adherence to industry and regional regulatory requirements.
 1. [Secure the default environment](secure-default-environment.md). Implement security measures to protect the default environment from unauthorized access and potential threats.

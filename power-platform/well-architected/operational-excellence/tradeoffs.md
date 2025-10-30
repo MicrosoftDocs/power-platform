@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: concept-article
-ms.date: 05/16/2024
+ms.date: 08/15/2025
 ---
 
 # Operational Excellence tradeoffs for Power Platform workloads

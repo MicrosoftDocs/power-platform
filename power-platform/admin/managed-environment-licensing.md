@@ -20,8 +20,6 @@ contributors:
 ---
 # Licensing
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Managed Environments are included as an entitlement in Power Apps Premium, Power Automate Premium, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses. When Managed Environments are activated in an environment, all active users require at least one premium license per user or capacity add-ons for accessing respective resources. For example: 
 
 - Every user running an app in a Managed Environment must have a Power Apps Premium or a Dynamics 365 Enterprise license that gives premium Power Apps usage rights \*. If you use capacity-based licenses, a Managed Environment must have Power Apps per app plans such as app passes allocated to it. Use of Power Apps capabilities included with Dynamics 365 Pro licenses must be only within the context of the licensed Dynamics 365 application. 

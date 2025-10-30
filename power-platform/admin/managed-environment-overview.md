@@ -41,7 +41,7 @@ A Managed Environment encompasses, but isn't limited to, the following features:
 - [Customer Managed Key (CMK)](customer-managed-key.md)
 - [Lockbox](about-lockbox.md)
 - [Extended backup](backup-restore-environments.md)
-- [DLP for desktop flow](/power-automate/prevent-data-loss)
+- [Data policies for desktop flow](/power-automate/prevent-data-loss)
 - [Export data to Azure Application Insights](overview-integration-application-insights.md)
 - [Administer the catalog](administer-catalog.md)
 - [Default environment routing](default-environment-routing.md)
@@ -57,7 +57,8 @@ A Managed Environment encompasses, but isn't limited to, the following features:
 >
 > Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
 
-### Related content
+## Related content
+
 - [Enable Managed Environments](managed-environment-enable.md)   
 - [Usage insights](managed-environment-usage-insights.md)  
 - [Limit sharing](managed-environment-sharing-limits.md)  
@@ -66,8 +67,6 @@ A Managed Environment encompasses, but isn't limited to, the following features:
 - [View license consumption (preview)](view-license-consumption-issues.md) 
 - [Tenant settings](tenant-settings.md)
 - [Default environment routing](default-environment-routing.md)
-- [Activating Managed Environments](../guidance/white-papers/managed-environment-activation.md)
-
-
+- [Considerations for using Managed Environments](../guidance/adoption/reactive-governance.md#considerations-for-using-managed-environments)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

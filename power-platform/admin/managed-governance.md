@@ -14,7 +14,6 @@ search.audienceType:
 ---
 
 # Managed governance
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 In the age of AI, governing the Power Platform is crucial to ensure that the powerful capabilities it offers are harnessed responsibly and effectively. As organizations increasingly rely on AI-driven solutions to enhance productivity and drive innovation, the need for robust governance becomes paramount. Effective governance ensures that data is managed securely, compliance with regulatory standards is maintained, and resources are utilized efficiently. It also helps in mitigating risks associated with data privacy and security, providing a structured approach to managing environments at scale. By implementing comprehensive governance strategies, organizations can maximize the benefits of the Power Platform while safeguarding their operations and maintaining trust with stakeholders. 
 

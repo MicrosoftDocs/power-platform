@@ -3,7 +3,7 @@ title: Connector classification
 description: About ways to categorize connectors within a data policy.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/12/2025
+ms.date: 08/20/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -98,7 +98,7 @@ In general, the list of Power Platform connectors can differ depending on where 
 
 Environment admins can now find all the custom connectors in their environments alongside prebuilt connectors on the **Connectors** page in **Data Policies**. Similar to prebuilt connectors, you can classify custom connectors into **Blocked**, **Business**, or **Non-Business** categories. Custom connectors that aren't explicitly classified will be put under the default group (or **Non-Business**, if no default group setting is explicitly chosen by admins). 
 
-You can also use data policy PowerShell commands to set custom connectors into **Business**, **Non-Business**, and **Blocked** groups. More information: [Data policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)
+You can also use data policy PowerShell commands to set custom connectors into **Business**, **Non-Business**, and **Blocked** groups. More information: [Data policy commands](powerapps-powershell.md#data-policy-commands)
 
 ### Tenant-level data policies 
 

@@ -4,7 +4,7 @@ description: Learn how to establish a reliability testing strategy that tests re
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -142,13 +142,17 @@ Integrate the following recommendations and considerations to optimize your chao
 
 You can use [static results in Power Automate](/azure/logic-apps/test-logic-apps-mock-data-static-results?tabs=consumption#set-up-mock-outputs-on-an-action) to return a fixed result to test your workload.
 
-[Power Apps Test Engine (preview)](/power-apps/developer/test-engine/overview) is a Power Platform CLI component that you can use to test standalone canvas apps in Power Apps.
+[Power Apps Test Engine](/power-platform/test-engine/) is a Power Platform CLI component that you can use to test standalone canvas apps in Power Apps.
 
 [Azure Test Plans](/azure/devops/test/overview) is an easy-to-use, browser-based test management solution that provides all the capabilities required for planned manual testing, user acceptance testing, exploratory testing, and gathering feedback from stakeholders.
 
 If your workload includes Azure resources, you can use [Azure Chaos Studio](https://azure.microsoft.com/services/chaos-studio), a managed service that uses chaos engineering to help you measure, understand, and improve your cloud application and service resilience.
 
 If your workload includes a Microsoft Copilot Studio agent, you can use the [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) to configure agents and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the agent responses are evaluated against expected results.
+
+## Related information
+
+- [Power Apps coding guidelines - Monitoring and testing](/power-apps/guidance/coding-guidelines/monitoring-testing)
 
 ## Reliability checklist
 

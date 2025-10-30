@@ -4,7 +4,7 @@ description: Learn how to test performance and establish best practices for perf
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -239,6 +239,7 @@ If your workload includes a Microsoft Copilot Studio agent, you can use the [Pow
 
 ## Related information
 
+- [Manage solution performance](/power-platform/architecture/key-concepts/performance/)
 - [Recommendations for security testing](../security/testing.md)
 - [Recommendations for designing a reliability testing strategy](../reliability/testing-strategy.md)
 

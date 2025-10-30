@@ -6,12 +6,16 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: whats-new
-ms.date: 10/30/2024
+ms.date: 08/18/2025
 ---
 
 # What's new in Power Platform Well-Architected
 
 Get the latest info about what's new and what's changed in Power Platform Well-Architected.
+
+## August 2025
+
+Recommendations across all five pillars have been updated to incorporate information on new product features.
 
 ## October 2024
 

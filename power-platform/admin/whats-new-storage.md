@@ -20,6 +20,7 @@ ms.contributors:
 
 # Dataverse capacity-based storage overview
 
+
 Key enhancements to the admin experience for the Microsoft Power Platform admin center include:
 
 - Reporting is based on customer licenses and capacity add-ons.

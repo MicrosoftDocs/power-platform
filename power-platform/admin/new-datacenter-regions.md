@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Datacenter regions
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Microsoft Dynamics 365 and Microsoft Power Platform online services are being hosted in datacenters in more and more regions. After these services become available in a new region, the following apply:  
   
 - For new organizations, the datacenter will be aligned with the country/region you selected during sign-up.  

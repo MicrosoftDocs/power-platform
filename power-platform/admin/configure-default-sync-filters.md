@@ -14,8 +14,6 @@ search.audienceType:
 
 # Set up default sync filters for multiple users for appointments, contacts, or tasks
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Server-side synchronization uses the sync filter criteria that has been set by a user to determine which app rows will be synchronized with Exchange for that user. Sync filters are initialized when a user first configures server-side synchronization for rows such as appointments, contacts, and tasks. More information: [Create or modify online synchronization filters](choose-records-synchronize-dynamics-365-outlook-exchange.md#create-or-modify-online-synchronization-filters)
 
 When a user's mailbox is set up with server-side synchronization, the sync filters that are listed in **User Filters** in a user's [personal options](/powerapps/user/set-personal-options#email-tab-options) are the default sync filters that will be applied for server-side synchronization. When the next sync cycle takes place, server-side sync uses the sync filters set by the user to synchronize existing rows that meet the FetchXML logic.

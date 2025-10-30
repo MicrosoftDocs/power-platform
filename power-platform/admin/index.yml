@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: sericks007
   ms.author: sericks
-  ms.date: 11/13/2024 
+  ms.date: 07/29/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -28,11 +28,11 @@ landingContent:
             url: admin-documentation.md
           - text: Power Platform licensing
             url: pricing-billing-skus.md
-          - text: New storage model
+          - text: Dataverse capacity-based storage details
             url: capacity-storage.md
-          - text: Sign in to your apps
+          - text: Sign in to Dynamics 365 and Office apps
             url: sign-in-office-365-apps.md
-          - text: Use the new Power Platform admin center
+          - text: Use the new and improved Power Platform admin center
             url: new-admin-center.md
        
 
@@ -41,40 +41,69 @@ landingContent:
     linkLists:
        - linkListType: concept
          links:
-          - text: Understand environments
+          - text: Environment management capabilities
+            url: environment-management-overview.md
+          - text: Power Platform environments overview
             url: environments-overview.md
+          - text: Automatic deletion of Power Platform environments
+            url: automatic-environment-cleanup.md
+          - text: General availability deployment
+            url: general-availability-deployment.md
        - linkListType: how-to-guide
          links:  
-          - text: Create an environment
+          - text: Create and manage environments
             url: create-environment.md
-          - text: Manage environment settings
-            url: power-platform-settings.md
-          - text: Manage environment updates
+          - text: Change the environment type
+            url: switch-environment.md
+          - text: Opt in to early access updates
             url: opt-in-early-access-updates.md
           
   # Card
   - title: Manage security and users
     linkLists:
-       - linkListType: overview
+       - linkListType: concept
          links:
           - text: Security overview
-            url: wp-security.md
+            url: security/security-overview.md
           - text: Security roles and privileges
             url: security-roles-privileges.md
+          - text: Data protection and privacy
+            url: security/data-protection-privacy.md
+          - text: Identity and access management
+            url: security/identity-access-management.md
+          - text: Compliance
+            url: security/compliance.md
        - linkListType: how-to-guide
          links:
           - text: Create and manage users
             url: create-users.md
-          - text: Create and manage security roles
+          - text: Create or edit a security role to manage access
             url: create-edit-security-role.md
-  
+
+    # Card
+  - title: Copilot
+    linkLists:
+       - linkListType: concept
+         links:
+          - text: Copilots and generative AI in Power Platform
+            url: ../copilot.yml
+          - text: Responsible AI FAQs for Microsoft Power Platform
+            url: ../responsible-ai-overview.md
+       - linkListType: how-to-guide
+         links:
+          - text: Move data across regions for Copilots and generative AI features
+            url: geographical-availability-copilot.md
+          - text: Track, manage, and scale Copilot adoption
+            url: copilot/copilot-hub.md
+          - text: View agent inventory (preview)
+            url: tenant-wide-agent-inventory.md
 
   # Card
   - title: Troubleshoot
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Get help & support
+          - text: Get support
             url: get-help-support.md
           - text: Check online service health
             url: check-online-service-health.md

@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Assign a business unit to a different parent business
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can assign a different parent business to a business unit to accommodate changes in your business requirements. When you reassign a business unit, any child business units are also reassigned with it.  
   
 1. In the Microsoft Power Platform admin center, select an environment. 

@@ -7,7 +7,7 @@ ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.date: 04/17/2025
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 contributors:
   - manuelap-msft
 ms.contributors:
@@ -98,7 +98,7 @@ In this scenario, the specific steps include:
 
 - **Data source security integration**: Secure access to semi-structured, relational, and nonrelational data by using Microsoft Entra ID for authentication and role-based access controls.
 
-- **Governance of data in Fabric and Dataverse**: Enforce data classification, encryption at rest, and data loss prevention policies. Implement row-level security in Power BI for role-specific insights while maintaining secure data access.
+- **Governance of data in Fabric and Dataverse**: Enforce data classification, encryption at rest, and data policies. Implement row-level security in Power BI for role-specific insights while maintaining secure data access.
 
 ### Operational Excellence
 

@@ -15,8 +15,6 @@ search.audienceType:
 ---
 # Manage user account synchronization 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Because user identities are provisioned through [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)], you have multiple options for managing user synchronization between your online and on-premises environments.  
   
 ## Decide on a user management approach  

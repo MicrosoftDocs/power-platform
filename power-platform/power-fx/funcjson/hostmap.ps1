@@ -8,7 +8,6 @@
 
 $productToHost = @{ 
     "Canvas apps"               = "canvas-apps"
-    "Cards"                     = "cards"
     "Power Platform CLI"        = "pac-cli"
     "Model-driven apps"         = "model-driven-apps"
     "Power Pages"               = "power-pages"

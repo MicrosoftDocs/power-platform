@@ -9,7 +9,7 @@ metadata:
   author: robstand
   ms.author: rstand
   ms.reviewer: jhaskett-msft
-  ms.date: 08/05/2025
+  ms.date: 08/22/2025
 sections:
   # Intro
   - componentType: text 
@@ -54,7 +54,7 @@ sections:
 
     image:
       componentType: image
-      src: ./_images/well-architected-hub.png   
+      src: ./_images/well-architected-hub.svg   
 
   # bifold with image and text blocks
   #- componentType: bifold

@@ -17,8 +17,6 @@ search.audienceType:
 
 # Types of Power Automate add-ons
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (standard connectors, premium connectors, attended RPA, etc.) are obtained via licenses and add-ons. This article focuses on add-ons (for details on licenses, visit the [types of Power Automate licenses](types.md) page). 
 
 The Power Automate add-ons are categorized as follows:

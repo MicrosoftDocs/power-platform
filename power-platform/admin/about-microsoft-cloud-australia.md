@@ -12,8 +12,6 @@ search.audienceType:
 ---
 # About the Microsoft Cloud Australia datacenter
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
  If you’re an existing Power Apps customer with a billing address mapping to a new data center region, review the information in this topic to understand the move process.  
   
 <a name="BKMK_Expansion"></a>   

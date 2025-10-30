@@ -1,12 +1,11 @@
 ---
 title: "CoE ALM Accelerator for Power Platform branching and merging (Deprecated)"
-description: "Discussion of branching and merging for ALM Accelerator using the Center of Excellence (CoE) command line interface (CLI)"
-keywords: 
+description: "Learn branching and merging strategies for ALM Accelerator using the Center of Excellence (CoE) command line interface (CLI)."
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.custom: ""
 ms.date: 05/22/2023
-
+ms.update-cycle: 3650-days
+ms.subservice: guidance-toolkit
 ms.topic: concept-article
 ms.reviewer: sericks
 search.audienceType: 

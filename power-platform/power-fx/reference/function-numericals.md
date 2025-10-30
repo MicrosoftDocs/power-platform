@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Abs","Exp","Ln","Power","Log","Sqrt"]
 ---
 
 # Abs, Exp, Ln, Power, Log, and Sqrt functions
