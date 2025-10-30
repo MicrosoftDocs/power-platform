@@ -4,7 +4,7 @@ description: Learn how to optimize data read and write actions, storage, and pro
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -188,6 +188,8 @@ Azure Cosmos DB has a [default indexing policy](/azure/cosmos-db/index-policy) t
 - [Select an Azure data store for your application](/azure/architecture/guide/technology-choices/data-store-decision-tree)
 - [Customize a Power Automate flow trigger by adding conditions](/power-automate/triggers-introduction?tabs=classic-designer#customize-a-trigger-by-adding-conditions)
 - [Dataverse elastic tables](/power-apps/developer/data-platform/elastic-tables)
+- [Use SQL Server with canvas apps](/power-platform/architecture/reference-architectures/sqlserver-canvas-app)
+- [Use Dataverse as a datasource for canvas apps](/power-platform/architecture/reference-architectures/dataverse-canvas-app)
 
 ## Performance Efficiency checklist
 

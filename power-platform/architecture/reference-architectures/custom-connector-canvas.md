@@ -6,7 +6,7 @@ ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.date: 04/17/2025
 ms.author: mehdis
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 contributors: 
   - manuelap-msft
 search.audienceType: 

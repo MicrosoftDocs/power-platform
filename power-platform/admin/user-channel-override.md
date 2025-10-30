@@ -4,16 +4,22 @@ description: Learn how to override the release channel for a user.
 author: adrianorth 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/06/2023
+ms.date: 10/03/2025
 ms.subservice: admin
 ms.reviewer: sericks
 ms.author: aorth
+ms.contributors:
+  - aorth
+  - sericks
+  - syalandur
+contributors:
+  - adrianorth
+  - sericks007
+  - syalandur24
 search.audienceType: 
   - admin 
 ---
 # User channel override
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 With [release channels](/power-apps/maker/model-driven-apps/channel-overview), you can control how often the users in your organization get new features by specifying the release channel.
 
@@ -25,7 +31,9 @@ To view the release channel for a user, complete the following steps.
 
 The release channel for a user is based on the environment channel and the user channel override. The release channel for a user isn't based on the app channel because the app channel is only available when the app is running and needs to be checked from the **Settings** > **About** pane.
 
-1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and select an environment.
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**, and then choose the environment whose details you want to view.
 1. Select **Users** > **See all**.
 1. Search for a user.
 1. Select the user's name.

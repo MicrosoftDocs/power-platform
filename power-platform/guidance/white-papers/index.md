@@ -21,7 +21,6 @@ White papers provide in-depth information, solutions, and recommendations to hel
 | Whitepaper | Description | Date |
 | --- | --- | --- |
 | [Enterprise security with Power Platform](enterprise-security.md) |This white paper shows you how to align Power Platform with your security practices. | March 2024 |
-| [Activating Managed Environments](managed-environment-activation.md) |This white paper explores the features of Managed Environments in Power Platform. | September 2023 |
 | [Migrating apps and flows from the default environment](migrating-from-default-environment.md) |This technical white paper outlines considerations and best practices for migrating apps and flows from the default environment. | August 2023 |
 
 ## Related information

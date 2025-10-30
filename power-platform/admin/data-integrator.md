@@ -1,26 +1,31 @@
 ---
 title: Integrate data into Microsoft Dataverse
-description: Integrate data from multiple sources into Microsoft Dataverse
+description: Integrate data from multiple sources into Microsoft Dataverse.
 ms.topic: how-to
 ms.component: cds
-ms.date: 07/30/2025
+ms.date: 09/25/2025
 ms.subservice: admin
 ms.author: nhelgren
 author: NHelgren
 ms.reviewer: sericks
-ms.custom: NewPPAC
-contributors: Mattp123
+ms.contributors:
+  - lsuresh
+contributors:
+  - lavanyapg
 search.audienceType: 
   - admin
 ---
 # Integrate data into Microsoft Dataverse
 
-The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. It supports integrating data between finance and operations apps and Dataverse. It also supports integrating data into finance and operations apps and Dynamics 365 Sales. This service is generally available since July 2017.
+The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. It supports integrating data between finance and operations apps and Dataverse. It also supports integrating data into finance and operations apps and Dynamics 365 Sales. This service is generally available since July 2017.   
 
 > [!NOTE]
-> We highly recommend customers start using dual-write, which provides tightly coupled, bidirectional integration between finance and operations apps and Dataverse. Any data change in finance and operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to finance and operations apps. This automated data flow provides an integrated user experience across the apps. More information: [Dual-write](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page)
+> We highly recommend customers start using [dual-write](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page), which provides tightly coupled, bidirectional integration between finance and operations apps and Dataverse. Any data change in finance and operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to finance and operations apps. This automated data flow provides an integrated user experience across the apps. 
 
-## How can you use the Data Integrator for your business?
+> [!TIP]
+> Check out the blog: [Data Integrator Updates – New features with an intuitive user interface providing a fluent experience](https://powerapps.microsoft.com/blog/data-integrator-updates-new-features-with-an-intuitive-user-interface-providing-a-fluent-experience/).
+
+## Use the Data Integrator for your business
 
 The Data Integrator (for Admins) also supports process-based integration scenarios like Prospect to Cash that provide direct synchronization between finance and operations apps and Dynamics 365 Sales. The Prospect to Cash templates that are available with the data integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between finance and operations apps and Sales. While data is flowing between finance and operations apps and Sales, you can perform sales and marketing activities in Sales, and you can handle order fulfillment by using inventory management in finance and operations apps. 
 
@@ -33,15 +38,15 @@ For more information about the Prospect to Cash integration, see the documentati
 [Field Service integration](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
 and [PSA (Project Service Automation) integration](/dynamics365/unified-operations/financials/project-management/psa-integration?toc=%2ffin-and-ops%2ftoc.json) are also supported for data integration.
 
-## Data Integrator Platform
+## Data Integrator platform
 
 The Data Integrator (for Admins) consists of the Data Integration platform, out-of-the-box templates provided by our application teams (for example, finance and operations apps and Dynamics 365 Sales) and custom templates created by our customers and partners. We have built an application-agnostic platform that can scale across various sources. At the core of it, you create connections (to integration end points), choose one of the customizable templates with predefined mappings (that you can further customize), and create and execute the data integration project.  
 
-Integration templates serve as a blueprint with predefined entities and field mappings to enable flow of data from source to destination. It also provides the ability to transform the data before importing it. Many times, the schema between the source and destinations apps can be different and a template with predefined entities and field mappings serves as a great starting point for an integration project.  
+Integration templates serve as a blueprint with predefined entities and field mappings to enable flow of data from source to destination. It also allows you to transform the data before importing it. Many times, the schema between the source and destinations apps can be different and a template with predefined entities and field mappings serves as a great starting point for an integration project.  
 
 :::image type="content" source="media/data-integrator/DIPlatform.PNG" alt-text="Data Integration platform":::
 
-## How to set up a data integration project
+## Set up a data integration project
 
 There are three primary steps:
 
@@ -51,12 +56,12 @@ There are three primary steps:
 
 3. Create a data integration project using a template (create or use predefined mappings for one or more entities).
 
-Once you create an integration project, you get the option to run the project manually and also set up a schedule-based refresh for the future. The rest of this article expands on these three steps.
+After you create an integration project, you get the option to run the project manually and also set up a schedule-based refresh for the future. The rest of this article expands on these three steps.
 
 > [!NOTE]
 > The user interface for Data Integrator project management is hosted at https://dataintegrator.trafficmanager.net. Your organization policies might require adding this site to your allowlist to access the interface.
 
-### How to create a connection
+### Create a connection
 
 Before you can create a data integration project, you must provision a connection for each system that you intend to work with in the Microsoft Power Apps portal. Think of these connections as your points of integration.
 
@@ -64,67 +69,73 @@ Before you can create a data integration project, you must provision a connectio
 
 2. On the left navigation pane, select **Connections**, and then select **New connection**. If the item isn't in the left navigation pane, select **More** to find it.
 
-3. You can either select a connection from the list of connections or search for your connection.
+1. You can either select a connection from the list of connections or search for your connection.
 
-4. Once you select your connection, select **Create**. Then you're' prompted for credentials.
+1. After you select your connection, select **Create**. Then you're prompted for credentials.
 
+1. After you provide your credentials, the connection will be listed under your connections.
+
+> [!NOTE]
+> Make sure that the account you specify for each connection has access to entities for the corresponding applications. Additionally, the account for each connection can be in a different tenant. 
 After you provide your credentials, the connection is listed under your connections.
 
 > [!NOTE]
 > Make sure that the account you specify for each connection has access to entities for the corresponding applications. Additionally, the account for each connection can be in a different tenant.
 
-### How to create a connection set
+### Create a connection set
 
 Connection sets are a collection of two connections, environments for the connections, organization mapping information, and integration keys that can be reused among projects. You can start using a connection set for development and then switch to a different one for production. One key piece of information that is stored with a connection set is organization unit mappings—for example, mappings between the finance and operations apps legal entity (or company) and Dynamics 365 Sales organization or business units. You can store multiple organization mappings in a connection set.
 
-1. Go to [Power Platform admin center](https://admin.powerapps.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-2. Select **Manage** > **Data integration** on the left navigation pane.
+1. Select **Manage** in the navigation pane.
 
-3. Select **New connection set** on the command bar.
+1. In the **Manage** pane, select **Data integration**. The **Data integration** page is displayed.
 
-4. Provide a name for your connection set.
+1. Select the **Connection sets** tab and select **New connection set**. The **New connection set** pane is displayed.
+
+1. Provide a name for your connection set.
   
-5. Choose the connections you created earlier and select the appropriate environment.
+1. Choose the connection you created earlier and select the appropriate environment.
 
-6. Repeat the steps by choosing your next connection (think of these as source and destination in no specific order).
+1. Repeat the previous step by choosing your next connection and enivironment.
 
-7. Specify the organization to business unit mapping (if you're integrating between finance and operations apps and Sales systems).
+1. Specify the organization to business unit mapping (if you're integrating between finance and operations apps and Sales systems).
   
-   > [!NOTE]
-   > You can specify multiple mappings for each connection set.
+    > [!NOTE]
+    > You can specify multiple mappings for each connection set.
+  
+1. After you complete all the fields, select **Save**.
 
-8. Once you have completed all the fields, select **Save**.
+You see the new connection set you created under the **Connection sets** tab. Your connection set is ready to be used across various integration projects.
 
-The new connection set you just created appears under the **Connection sets**  tab.
+### Create a data integration project
 
-Your connection set is ready to be used across various integration projects.
+Projects enable the flow of data between systems. A project contains mappings for one or more entities. Mappings indicate which fields map to which other fields. To create a data integration project, perform the following steps: 
 
-### How to create a data integration project
+1. Select the **Data integration** tab in the left navigation pane.
 
-Projects enable the flow of data between systems. A project contains mappings for one or more entities. Mappings indicate which fields map to which other fields.
+1. While in the **Projects** tab, select **New project**.
 
-1. Go to [Power Platform admin center](https://admin.powerapps.com).
+1. Provide a name for your integration project.
 
-2. Select **Manage** > **Data integration** on the left navigation pane.
+1. Select one of the available templates (or [create your own template](#create-your-own-template)).
 
-3. While on the **Projects** tab, select **New Project** on the command bar.
+1. Select **Next** and choose a connection set you created earlier (or [create a new connection set](#create-a-connection-set)).
 
-4. Provide a name for your integration project.
-
-5. Select one of the available templates (or [create your own template](#how-to-create-your-own-template)). In this case, we're moving the Products entity from finance and operations apps to Sales.
-
-6. Select **Next** and choose a connection set you created earlier (or [create a new connection set](#how-to-create-a-connection-set)).
-
-7. Make sure you have chosen the right one by confirming the connection and environment names. Select **Next** and then choose the legal entity to business unit mappings.
+1. Make sure you chose the right one by confirming the connection and environment names.
 
 8. Review and accept the privacy notice and consent on the next screen.
 
-9. Proceed to create the project and then run the project, which in turn starts the project.
+1. Select **Next** and then choose the legal entity to business unit mappings.
 
-On the screen, notice several tabs—**Scheduling** and **Execution history**—along with some buttons—**Add task**, **Refresh entities**, and **Advanced Query**—that are described later in this article.
+1. Review and accept the privacy notice and consent on the next screen.
 
-### Execution history
+1. Proceed to create the project and then run the project, which in turn executes the project.
+
+    You'll see several tabs—**Scheduling** and **Execution history**—along with some buttons—**Add task**, **Refresh entities**, and **Advanced Query**—that are described later in this article.
+
+### View execution history
 
 Anytime you execute a project, manually or schedule based, it generates a detailed log, which shows project name, last updated timestamp along with status. You can view this under the execution history for each project. Project execution history is maintained for 45 days after which it's automatically purged.
 
@@ -134,59 +145,85 @@ Execution history also shows the status of execution along with the number of up
 - If the project execution is in 'ERROR' state, then it retries execution at the next scheduled run.
 - If the project execution is in 'WARNING' state, then you must fix the issues on the source. The project retries execution at the next scheduled run.
 
-For projects with warnings or errors, you can choose to manually 'rerun execution.'
+-   Example of successful execution, showing status as completed with \# of upserts. (Update Insert is a logic to either update the record, if it already exists, or to insert new record.)
 
-### How to set up a schedule-based refresh
+    > [!div class="mx-imgBorder"] 
+    > ![Execution success.](media/data-integrator/ExecutionHistorySuccess2780.png "Execution success")
+
+-   For execution failures, you can drill down to see the root cause.
+
+    Here's an example of a failure with project validation errors. In this case, the project validation error is due to missing source fields in the entity mappings.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Execution history failure.](media/data-integrator/ExecutionHistoryFailures3780.png "Execution history failure")
+
+-   If the project execution is in 'ERROR' state, then it retries execution at the next scheduled run.
+
+-   If the project execution is in 'WARNING' state, then you need to fix the issues on the source. It retries execution at the next scheduled run.
+
+    In either case, you could also choose to manually 'rerun execution.'
+
+> [!NOTE]
+> Anytime you execute a project, manually or schedule based, it generates a detailed log, which shows project name, last updated timestamp along with status. You can view this under the execution history for each project. Project execution history is maintained for 45 days after which it's automatically purged.
+
+### Set up a schedule-based refresh
 
 Two types of executions/writes are available:
 
 - Manual writes (execute and refresh project manually)
+
 - Schedule-based writes (autorefresh)
 
-After you create an integration project, you have the option to run it manually or configure schedule-based writes, which lets you set up automatic refresh for your projects.
+After you create an integration project, you can run it manually or configure schedule-based writes, which lets you set up automatic refresh for your projects.
 
 To set up schedule-based writes follow these steps:
 
 1. Go to [Power Platform admin center](https://admin.powerapps.com).
-1. Select **Manage** > **Data integration** on the left navigation pane.
-1. On the **Projects** tab, select the project and then select **...** > **Schedule**.
-1. Select **Recur every** and once you have completed all the fields, select **Save schedule**.
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Data integration**. The **Data integration** page is displayed.
+1. Select the **Projects** tab, select the project, and then select the **Context menu** icon (...) and **Schedule**.
+1. On the **Scheduling** tab,
+1. Select the toggle so that **Recur every** is displayed and complete all the fields.
+1. Select **Save schedule**.
 
-You can set a frequency as often as one minute or have it recur a certain number of hours, days, weeks, or months. Note that the next refresh won't start until the previous project task completes its run.
+You can set a frequency as often as one minute or have it recur some hours, days, weeks, or months. The next refresh won't start until the previous project task completes its run.
 
 Also note that under **Notifications**, you can opt in for email-based alert notifications, which alerts you on job executions that either completed with warnings or failed due to errors. You can provide multiple recipients, including groups separated by commas.
 
 > [!NOTE]
 >
 > - You can schedule 50 integration projects at any given time per paid tenant. However you can create more projects and run them interactively. For trial tenants, there's an additional limitation that a scheduled project can only run for the first 50 executions.
-> - While you can schedule projects to run every minute, this might put a lot of stress on your apps and impact overall performance. We highly encourage users to test project executions under true load conditions and optimize for performance with less frequent refreshes. In production environments, we don't recommend running more than five projects per minute per tenant.
-> - To optimize performance and not overload the apps, project executions are limited to 500 K rows per execution per project.
-> - Anytime you execute a project, manually or schedule based, it generates a detailed log, which shows project name, last updated timestamp along with status. You can view this under the execution history for each project. Project execution history is maintained for 45 days after which it's automatically purged.
+> - While you can schedule projects to run every minute, this tactic might put much stress on your apps and impact overall performance. We highly encourage users to test project executions under true load conditions and optimize for performance with less frequent refreshes. In production environments, we don't recommend running more than five projects per minute per tenant.
+> - To optimize performance and not overload the apps, project executions are limited to 500-K rows per execution per project.
+> - Anytime you execute a project, manually or schedule based, it generates a detailed log, which shows project name, last updated timestamp along with status. You can view the logs under the execution history for each project. Project execution history is maintained for 45 days after which it's automatically purged.
 
-## Customizing projects, templates, and mappings 
+## Customize projects, templates, and mappings 
 
 You use a template to create a data integration project. A template commoditizes the movement of data that in turn helps a business user or administrator expedite integrating data from sources to destination and reduces overall burden and cost. A business user or administrator can start with an out-of-the-box template published by Microsoft or its partner and then further customize it before creating a project. You can then save the project as a template and share with your organization and/or create a new project. 
 
-A template provides you with source, destination, and direction of data flow. You need to keep this in mind while customizing or creating your own template.  
+A template provides you with source, destination, and direction of data flow. You need to keep this fact in mind while customizing or creating your own template.  
 
 You can customize projects and templates in these ways:
 
 - Customize field mappings.
 - Customize a template by adding an entity of your choice.
 
-### How to customize field mappings
+### Customize field mappings
 
 To create a connection set, follow these steps:
 
 1. Go to [Power Platform admin center](https://admin.powerapps.com).
-1. Select **Manage** > **Data integration** on the left navigation pane.
-1. On the **Projects** tab, select the project for which you want to customize field mappings, select **...** > **Connection set details**.
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Data integration**. The **Data integration** page is displayed.
+1. Select the **Projects** tab, select the project for which you want to customize field mappings, and then select the **Context menu** icon (...) and **Connection set details**.
+1. Select the **Go to connection set details** link.
 1. Select the **Organizations** tab, and then select **+ Add mapping**.
-1. Once you have customized your field mappings, select **Save** on the command bar.
+1. After you customize your field mappings, select **Save** on the command bar.
 
-### How to create your own template 
+### Create your own template 
 
 #### Create your own template by modifying existing templates
+
 <!-- Templates don't exist and weren't possible to create in my tenant where I'm a global admin-->
 1. Sign in to [Power Platform admin center](https://admin.powerapps.com).
 
@@ -200,7 +237,7 @@ To create a connection set, follow these steps:
 
     The **Add task** dialog opens.
 
-6. Provide a meaningful task name and add source and destination entities of your choice.
+1. Provide a meaningful task name and add source and destination entities of your choice.
 
 7. A dropdown list shows you all your source and destination entities.
 
@@ -212,9 +249,9 @@ To create a connection set, follow these steps:
     > [!div class="mx-imgBorder"] 
     > ![Customize template add task3.](media/data-integrator/CustomizeTemplateAddtask275.png "Customize template add task3")
 
-8. Once you create the task, you can view your new task listed and you can delete the original task.
+8. After you create the task, you can view your new task listed and you can delete the original task.
 
-9. You just created a new template—in this case, a template to pull User entity data from SalesForce to Dataverse. Select **Save** to save your customization.
+1. You just created a new template—in this case, a template to pull User entity data from SalesForce to Dataverse. Select **Save** to save your customization.
 
 10. Follow the steps to customize field mappings for this new template. You could run this project and save the project as a template from the **Project** tab. When saving as a template, provide a name and description. You can also share the template with everyone in your organization.
 
@@ -222,18 +259,20 @@ To create a connection set, follow these steps:
     > ![Name and description.](media/data-integrator/CustomizeTemplateSaveAsTemplate175.png "Name and description")
 
 #### Create your own template from a blank template
+
 <!-- Templates don't exist and weren't possible to create in my tenant where I'm a global admin-->
+
 1. Sign in to [Power Platform admin center](https://admin.powerapps.com).
 2. Go to **Manage** > **Data integration** on the left navigation pane.
 3. Select **New project** and provide a name for your project. For example, *Demo_CreateYourOwnTemplate project*.
 4. In the **Select a template** list page, pick a generic blank template. 
 For this example, choose the **Sales to Fin and Ops** template since we want to move data from finance and operations apps to Dynamics 365 Sales.
-5. Follow steps 6 through 9 in [How to create another data integration project](#how-to-create-a-data-integration-project) to create the data integration project you want. Then, select **Save**.
+5. Follow steps 6 through 9 in [How to create another data integration project](#create-a-data-integration-project) to create the data integration project you want. Then, select **Save**.
 6. The **Tasks** page appears, which is empty since it's a blank template, without any tasks. Select **Add task** to pick an entity from the drop-down list and add a new task.
 
    In this case, for demo purposes, we create an **Activities Sales to Fin and Ops** task by picking the **Activities** entity for finance and operations apps and Dynamics 365 Sales. Select **Create**.
 
-7. Notice a new task has been added **Activities Sales to Fin and Ops**. Select **Save** to save your changes.
+7. Notice a new task is added **Activities Sales to Fin and Ops**. Select **Save** to save your changes.
 
 8. The project is created. On the **Projects** tab, select the project, and then select ... > **Save as template**.
 9. Provide a name and description, then select **Save**. Additionally, select **Share with everyone in my organization** to share this template.
@@ -252,7 +291,7 @@ With Power Query support, advanced filtering and data transformation of source d
 
 2. Select **Manage** > **Data integration** on the left navigation pane. 
 
-3. On the **Projects** tab, select the project where you want to enable advanced query, select **...** > **Project Details,**. Then select **Advanced query** on the command bar.
+3. On the **Projects** tab, select the project where you want to enable advanced query, select **...** > **Project Details**. Then select **Advanced query** on the command bar.
 
 4. You receive a warning that enabling advanced query is a one-way operation and can't be undone. Select **OK** to proceed and then select the source and destination mapping arrow.
 
@@ -308,19 +347,19 @@ For more information about Power Query, go to [Power Query documentation](/power
 > - Doing joins across multiple data sources (either via the **Get data** button or M query) isn't supported with Advanced Query and Filtering.
 > - If you encounter Power Query evaluation limits with the error: 
 > 
->   <i>The powerquery job failed with error: Exception ExceptionType:MashupEvaluationException, ExceptionMessage:EvaluationQuotaReached, EvaluationResponse:{"ResultType":"ErrorCode","Code":"EvaluationQuotaReached"</i> 
+>   <i>The power query job failed with error: Exception ExceptionType:MashupEvaluationException, ExceptionMessage:EvaluationQuotaReached, EvaluationResponse:{"ResultType":"ErrorCode,""Code":"EvaluationQuotaReached"</i> 
 >
 >   Review the guidance on [Power Query Online Limits](/power-query/power-query-online-limits).
 > - Modifying the _url_ directly in the mashup editor isn't supported. Only the filter applied using the mashup editor UI or specified in source filter edit field on mapping page is used.
 
-## Performance tuning
+## Factors that impact performance tuning
 
 There are several factors that impact the performance of an integration scenario. Performance is highly dependent on: 
 
 - Which applications you're integrating: finance and operations apps and Dataverse.
 - Which entities are used: the entities' shape, validation, and business logic (standard and customizations).
 
-The Data Integrator takes the data from the source application and pushes it into the target application. The main performance considerations are on how source and target applications scale with the concerned entities. It leverages the best available technologies to pull/push data in a performant manner.
+The Data Integrator takes the data from the source application and pushes it into the target application. The main performance considerations are on how source and target applications scale with the concerned entities. It uses the best available technologies to pull/push data in a performant manner.
 
 Finance and operations apps use the data management framework, which provides a way to pull and push data in the most performant fashion. The data management framework is used to manage data entities and data entity packages in finance and operations apps.
 
@@ -339,7 +378,7 @@ You can use the following settings to tune the performance of finance and operat
 - If the number of rows to be imported are high and the entity doesn't support set operations: Data management can be configured to import the entity with parallel tasks. This can be configured in data management (parameters), by configuring the entity execution parameters. This uses batch framework to create parallel tasks, which is based on resource availability to run in parallel.  
 - Turning off validations (optional): While the Data Integrator doesn't bypass any business logic and validations, you might optionally turn off the ones that aren't required to improve performance.
 
-### Importing/Exporting data to/from customer engagement apps
+### Import/Export data to/from customer engagement apps
 
 Ensure indexes are defined for integration keys.
 
@@ -347,4 +386,3 @@ Ensure indexes are defined for integration keys.
 
 [Data Integrator Updates – New features with an intuitive user interface providing a fluent experience](https://powerapps.microsoft.com/blog/data-integrator-updates-new-features-with-an-intuitive-user-interface-providing-a-fluent-experience/).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

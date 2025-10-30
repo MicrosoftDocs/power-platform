@@ -1,7 +1,7 @@
 ---
 title: PowerShell support for Power Apps and Power Automate
 description: Learn about the PowerShell cmdlets and get a tutorial of how to install and run them.
-author: samathur
+author: sericks007
 contributors:
   - samathur
   - taiki-yoshida 
@@ -10,17 +10,15 @@ contributors:
 ms.reviewer: angieandrews
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/11/2025
+ms.date: 08/20/2025
 ms.subservice: admin
-ms.author: samathur
+ms.author: sericks
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
 ---
 
 # PowerShell support for Power Apps and Power Automate
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 With [PowerShell](/powershell/scripting/overview) cmdlets for Power Platform creators and administrators, you can automate many monitoring and management tasks. Tasks that are only possible _manually_ today in [Power Apps](https://make.powerapps.com/), [Power Automate](https://make.powerautomate.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
@@ -183,8 +181,8 @@ Following are some common scenarios that show how to use new and existing Power 
 - [Power Apps Commands](#power-apps-commands)
 - [Power Automate commands](#power-automate-commands)
 - [API connection commands](#api-connection-commands)
-- [Data Loss Prevention (DLP) policy commands](#data-loss-prevention-dlp-policy-commands)
-- [DLP resource exemption cmdlets](#dlp-resource-exemption-cmdlets)
+- [Data policy commands](#data-policy-commands)
+- [Data resource exemption cmdlets](#data-resource-exemption-cmdlets)
 - [Block trial licenses commands](#block-trial-licenses-commands)
 
 ## Environments commands
@@ -530,19 +528,19 @@ Returns a list of all custom connector details in the tenant.
 > [!Note]
 > `Get-AdminPowerAppConnector` doesn't list custom connectors that are in a solution. This is a known limitation.
 
-## Data loss prevention (DLP) policy commands
+## Data policy commands
 
-These cmdlets control the DLP policies on your tenant.
+These cmdlets control the data policies on your tenant.
 
-### Create a DLP policy
+### Create a data policy
 
 ```powershell
 New-DlpPolicy
 ```
 
-Creates a new DLP policy for the signed-in admin's tenant.
+Creates a new data policy for the signed-in admin's tenant.
 
-### Retrieve a list of DLP objects
+### Retrieve a list of data policy objects
 
 ```powershell
 Get-DlpPolicy
@@ -552,12 +550,12 @@ Gets policy objects for the signed-in admin's tenant.
 
 > [!NOTE]
 >
-> - When you view a DLP policy using PowerShell, the display name of connectors are from when the DLP policy was created or when the connectors were last moved within the policy. New changes to the display names of connectors aren't reflected.
-> - When you view a DLP policy using PowerShell, new connectors in the default group that weren't moved aren't returned.
+> - When you view a data policy using PowerShell, the display name of connectors are from when the data policy was created or when the connectors were last moved within the policy. New changes to the display names of connectors aren't reflected.
+> - When you view a data policy using PowerShell, new connectors in the default group that weren't moved aren't returned.
 >
 > For both of these known issues, a workaround is to move the affected connector to another group within the policy and then move it back to the correct group. After doing this, each of the connectors is visible with their correct name.
 
-### Update a DLP policy
+### Update a data policy
 
 ```powershell
 Set-DlpPolicy
@@ -571,40 +569,40 @@ Updates details of the policy, such as the policy display name.
 Remove-DlpPolicy
 ```
 
-Deletes a DLP policy.
+Deletes a data policy.
 
-## DLP resource exemption cmdlets
+## Data resource exemption cmdlets
 
-These cmdlets allow you to exempt or unexempt a specific resource from a DLP policy.
+These cmdlets allow you to exempt or unexempt a specific resource from a  policy.
 
-### Retrieve existing exempt resource list for a DLP policy
+### Retrieve existing exempt resource list for a data policy
 
 ```powershell
 Get-PowerAppDlpPolicyExemptResources -TenantId -PolicyName 
 ```
 
-### Create a new exempt resource list for a DLP policy
+### Create a new exempt resource list for a data policy
 
 ```powershell
 New-PowerAppDlpPolicyExemptResources -TenantId -PolicyName -NewDlpPolicyExemptResources 
 ```
 
-### Update the exempt resource list for a DLP policy
+### Update the exempt resource list for a data policy
 
 ```powershell
 Set-PowerAppDlpPolicyExemptResources -TenantId -PolicyName -UpdatedExemptResources 
 ```
 
-### Remove the exempt resource list for a DLP policy
+### Remove the exempt resource list for a data policy
 
 ```powershell
 Remove-PowerAppDlpPolicyExemptResources -TenantId -PolicyName 
 ```
 
-To exempt a resource from a DLP policy, you need the following information:
+To exempt a resource from a data policy, you need the following information:
 
 - Tenant ID (GUID)
-- DLP policy ID (GUID)
+- Data policy ID (GUID)
 - Resource ID (ends with a GUID)
 - Resource type
 
@@ -635,17 +633,17 @@ To exempt flow with ID `f239652e-dd38-4826-a1de-90a2aea584d9` and app with ID `0
 18. {@{id=/providers/Microsoft.ProcessSimple/environments/Default-aaaabbbb-0000-cccc-1111-dddd2222eeee/flows/f239652e-dd38-4826-a1de-90a2aea584d9; type=Microsoft.ProcessSimple/environments/flows}, @{id=/providers/Microsoft.PowerApps/apps/06002625-7154-4417-996e-21d7a60ad.. 
 ```
 
-### DLP exemption experience in the following scenarios
+### Data policy exemption experience in the following scenarios
 
 | # | Scenario | Experience |
 |---|----------|------------|
-| 1 | User launches an app that’s not DLP compliant but DLP exempt. | App launch proceeds with or without DLP enforcement. |
-| 2 | Maker saves an app that’s not DLP compliant but DLP exempt  | With or without DLP exemption, DLP compliance doesn't block the app save operation. The DLP noncompliance warning is shown regardless of DLP exemption. |
-| 3 | Maker saves a flow that’s not DLP compliant but DLP exempt  | With or without DLP exemption, DLP compliance doesn't block the flow save operation. The DLP noncompliance warning doesn't appear. |
+| 1 | User launches an app that’s not data policy compliant but data policy exempt. | App launch proceeds with or without data policy enforcement. |
+| 2 | Maker saves an app that’s not data policy compliant but data policy exempt  | With or without data policy exemption, data policy compliance doesn't block the app save operation. The data policy noncompliance warning is shown regardless of data policy exemption. |
+| 3 | Maker saves a flow that’s not data policy compliant but data policy exempt  | With or without data policy exemption, data policy compliance doesn't block the flow save operation. The data policy noncompliance warning doesn't appear. |
 
 ### Governance error message content commands
 
-The following cmdlets can lead your end users to your organization’s governance reference material. The command includes a link to governance documentation and a governance contact for when they're prompted by governance controls. For instance, when governance error message content is set, it appears in Power Apps Data Loss Prevention policy runtime enforcement messages.
+The following cmdlets can lead your end users to your organization’s governance reference material. The command includes a link to governance documentation and a governance contact for when they're prompted by governance controls. For instance, when governance error message content is set, it appears in Power Apps data policy runtime enforcement messages.
 
 ### Set governance error message content
 
@@ -668,11 +666,11 @@ The governance error message URL and email can be shown independently or togethe
 
 | # | Scenario | Availability |
 |---|------------|--------------|
-| 1 | User launches an app created using Power Apps that’s not DLP compliant |     Generally available |
+| 1 | User launches an app created using Power Apps that’s not data policy compliant |     Generally available |
 | 2 | Maker shares a Power Apps canvas app but doesn’t have share privilege |     Generally available |
 | 3 | Maker shares a Power Apps canvas app with _Everyone_ but doesn’t have privilege to share with _Everyone_ | Generally available |
-| 4 | Maker saves an app created using Power Apps that’s not DLP compliant |     Generally available |
-| 5 | Maker saves a Power Automate flow that’s not DLP compliant | Generally available |
+| 4 | Maker saves an app created using Power Apps that’s not data policy compliant |     Generally available |
+| 5 | Maker saves a Power Automate flow that’s not data policy compliant | Generally available |
 | 6 | User launches an app without security group membership to the security group associated to Dataverse environment | Generally available |
 
 #### Display governance error message content
@@ -696,13 +694,13 @@ Set-PowerAppDlpErrorSettings -TenantId 'TenantId' -ErrorSettings @{
 } 
 ```
 
-### Enforce DLP policy for violating connections - environment
+### Enforce data policy for violating connections - environment
 
-These cmdlets allow you to enforce DLP policy for violating connections at environment or tenant level.
+These cmdlets allow you to enforce data policy for violating connections at environment or tenant level.
 
-#### Enforce DLP policies for violating connections
+#### Enforce data policies for violating connections
 
-You can enforce DLP policies on connections in an environment. Enforcing disables existing connections that violate DLP policies and enables any previously disabled connections that no longer violate DLP policies.
+You can enforce data policies on connections in an environment. Enforcing disables existing connections that violate data policies and enables any previously disabled connections that no longer violate data policies.
 
 ```powershell
 Start-DLPEnforcementOnConnectionsInEnvironment -EnvironmentName [Environment ID]
@@ -714,9 +712,9 @@ Start-DLPEnforcementOnConnectionsInEnvironment -EnvironmentName [Environment ID]
 Start-DLPEnforcementOnConnectionsInEnvironment -EnvironmentName c4a07cd6-cb14-e987-b5a2-a1dd61346963 
 ```
 
-#### Enforce DLP policies for violating connections - tenant
+#### Enforce data policies for violating connections - tenant
 
-You can enforce DLP policies on connections in the tenant. Enforcing disables existing connections that violate DLP policies and enables any previously disabled connections that no longer violate DLP policies.
+You can enforce data policies on connections in the tenant. Enforcing disables existing connections that violate data policies and enables any previously disabled connections that no longer violate data policies.
 
 ```powershell
 Start-DLPEnforcementOnConnectionsInTenant

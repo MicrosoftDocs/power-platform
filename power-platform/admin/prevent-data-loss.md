@@ -3,7 +3,7 @@ title: Manage data policies
 description: Learn how to create, edit, and delete data policies, including the default data group for new connectors.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/30/2025
+ms.date: 08/20/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -542,7 +542,7 @@ Because no data policy is applied to test environments, apps and flows can use a
 
 ---
 
-(Optional) If necessary, consider enforcing data policies on connections. Learn more: [Enforce data policy for violating connections](powerapps-powershell.md#enforce-dlp-policy-for-violating-connections---environment)
+(Optional) If necessary, consider enforcing data policies on connections. Learn more: [Enforce data policy for violating connections](powerapps-powershell.md#enforce-data-policy-for-violating-connections---environment)
 
    > [!NOTE]
    >  Enforcing data policies disable existing connections that violate any data policies and enable any previously disabled connections that no longer violate any data policies.
@@ -629,12 +629,12 @@ The data group you chose will be the default group to automatically classify any
 
 ## Use PowerShell commands
 
-See [data policies policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands).
+See [data policies policy commands](powerapps-powershell.md#data-policy-commands).
 
 ### See also
 
-[Data loss prevention policies](wp-data-loss-prevention.md) <br />
-[data policies policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands) <br />
+[Data policies](wp-data-loss-prevention.md) <br />
+[data policies policy commands](powerapps-powershell.md#data-policy-commands) <br />
 [Power Platform data policies SDK](data-loss-prevention-sdk.md)
 
 

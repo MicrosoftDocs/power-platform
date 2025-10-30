@@ -11,8 +11,6 @@ ms.reviewer: sericks
 ---
 # Create and manage duplicate detection rules using solutions
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Users can create duplicate detection rules in a solution in a Power Platform environment, export the solution, and import the solution into another environment to create the same rules in the target environment instead of manually creating it in the target environment.
 
 More information about solutions: [Solution concepts](/power-platform/alm/solution-concepts-alm)

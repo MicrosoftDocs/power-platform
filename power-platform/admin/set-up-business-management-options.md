@@ -15,8 +15,6 @@ ms.custom:
   - ai-seo-date:09/14/2023
 ---
 # Set up Business Management options
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 <!-- This is a topic linked from Help and is not in the TOC. -->
 
 Select one of the following links for information about settings on the Business Management Options page:  

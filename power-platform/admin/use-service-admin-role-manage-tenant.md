@@ -20,8 +20,6 @@ ms.custom:
 ---
 # Use service admin roles to manage your tenant
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 To help you administer environments and settings for the Microsoft Power Platform, you can assign users to manage the service at the tenant level without having to assign a role that provides access to other services within the tenant.
 
 There are two Power Platform related service admin roles you can assign to provide a high level of admin management.

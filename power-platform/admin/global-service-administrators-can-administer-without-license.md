@@ -16,8 +16,6 @@ ms.custom: sfi-ga-nochange
 ---
 # Global admins and Power Platform admins can administer without a license
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 By default, all Global admin and Microsoft Power Platform admins who do not have a license are granted administrative access mode. Administrative access mode limits access to those areas of Dynamics 365 apps used to configure or customize the system.  
   
 To give these administrators access to additional areas, such as the Sales, Marketing, and Service areas, a license must be added to the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user account, by using the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. Note that Administrative access mode cannot be changed on the user form.  

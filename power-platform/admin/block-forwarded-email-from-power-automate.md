@@ -14,8 +14,6 @@ search.audienceType:
 ---
 # Email exfiltration controls for connectors
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
  Microsoft Exchange enables admins to disable email autoforwards and autoreplies to remote domains for external recipients. Exchange does this by using message-type headers, such as Auto Forward received from Outlook and Outlook on web clients.  
 
 Microsoft Power Platform has the capability to insert specific SMTP headers in email messages sent through Power Automate and Power Apps. It does this using Microsoft 365 Exchange/Outlook connectors. You can use these SMTP headers to set up appropriate exfiltration rules. These rules are for the unauthorized transfer of data from one device to another in Exchange for outbound emails.  

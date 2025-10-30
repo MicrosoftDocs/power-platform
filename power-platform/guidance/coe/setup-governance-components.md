@@ -46,11 +46,11 @@ This app guides you through the configuration steps.
 This step gets completed after you import the solution. Environment variables store application and flow configuration data. Using environment variables means that you only have to set the value once per environment and used in all necessary flows and apps in that environment.
 
 > [!TIP]
-> Learn how to update environment variables: [Update Environment Variables](faq.md#update-environment-variables).
+> Learn how to [update environment variables](faq.md#update-environment-variables).
 
 The `Developer Compliance Center URL` should be set to the URL for the **Developer Compliance Center** app.
 
-For more information, see [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment).
+Learn more: [Get a Power Apps URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment).
 
 ### Exempt environments from the compliance process
 
@@ -112,8 +112,4 @@ Environment variables are used to store application and flow configuration data 
 | Compliance – Apps - Number Users Shared | If the app is shared with this many or more users, makers are asked for a business justification. | 20 |
 | Compliance – Chatbots – Number Launches | If the chatbot is launched this many or more times, makers are asked for a business justification. | 50 |
 
-## I found a bug with the CoE Starter Kit. Where should I go?
-
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

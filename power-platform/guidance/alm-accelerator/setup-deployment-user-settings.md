@@ -2,7 +2,7 @@
 title: Configure deployment user settings
 description: Learn how to use deployment user settings to create a tailored experience for your makers in the ALM Accelerator for Power Platform app.
 ms.topic: how-to
-ms.date: 04/07/2023
+ms.date: 09/02/2025
 ms.subservice: guidance-toolkit
 author: jenschristianschroder
 ms.author: jeschro
@@ -68,7 +68,9 @@ If you already have a Microsoft Entra group team in Microsoft Dataverse to share
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com), and then select the environment in which you installed the ALM Accelerator app.
 
-1. Under **Access -Teams**, select **See all**, and then select **Create Team**.
+1. In the **Access** section under **Teams**, select **See all**.
+
+1. Select **Create team**.
 
 1. Enter the required fields, and then select **Microsoft Entra Group Team** as the **Team Type**.
 

@@ -13,8 +13,6 @@ search.audienceType:
 
 # Enable the improved duplicate detection and merge experience 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 > [!IMPORTANT]
 > The improved duplicate detection experience is enabled by default.
 

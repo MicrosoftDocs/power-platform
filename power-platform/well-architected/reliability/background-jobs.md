@@ -4,7 +4,7 @@ description: Learn how to develop background jobs that run automatically without
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -120,6 +120,10 @@ Background tasks must offer sufficient performance to ensure that they don't blo
 - To prevent the loss of performance under load, you might implement logic so that a single point of the processing chain doesn't cause a bottleneck. Consider other limitations, such as the maximum throughput of workflow actions, storage, and other services that the application and the background tasks rely on.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Background jobs introduce more components and dependencies to the system, which can increase the complexity and maintenance costs of the solution. For example, background jobs might require a separate monitoring service and retry mechanism.
+
+## Example
+
+[Use Dataverse background operations](/power-platform/architecture/reference-architectures/dataverse-background-operations) provides example scenarios and a generalized example architecture to illustrate how to use background operations in Dataverse.
 
 ## Power Platform facilitation
 

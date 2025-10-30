@@ -21,8 +21,6 @@ ms.custom:
 
 # Cross-tenant inbound and outbound restrictions
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Microsoft Power Platform has a rich ecosystem of connectors based on Microsoft Entra that allow authorized Microsoft Entra users to build compelling apps and flows establishing connections to the business data available through these data stores. Tenant isolation makes it easy for administrators to ensure that these connectors can be harnessed in a safe and secure way within the tenant while minimizing the risk of data exfiltration outside the tenant. Tenant isolation allows Power Platform administrators to effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant. 
 
 Power Platform tenant isolation is different from Microsoft Entra ID-wide tenant restriction. It *doesn't* impact Microsoft Entra ID-based access outside of Power Platform. Power Platform tenant isolation only works for connectors using Microsoft Entra ID-based authentication such as Office 365 Outlook or SharePoint. 

@@ -11,7 +11,9 @@ metadata:
   ms.subservice: well-architected
   author: robstand
   ms.author: rstand
-  ms.date: 05/10/2024
+  ms.date: 08/15/2025
+  ms.contributor:
+  - mapichle
 
 landingContent:
   - title: Learn key points

@@ -14,8 +14,6 @@ search.audienceType:
 
 # Power Apps activity logging
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Power Apps activities are tracked from the [Microsoft Purview compliance portal](/purview/purview). 
 
 Follow these steps.
@@ -54,7 +52,7 @@ Logging takes place at the SDK layer, which means a single action can trigger mu
 |Imported new canvas app |Every time new canvas app is imported |
 |Imported existing canvas app   |Every time existing canvas app is imported |
 |Published solution canvas app version |When canvas app version from solution is published |
-|Added DataLossPreventionEvaluationResult | When DLP evaluation occurs for the App |
+|Added DataLossPreventionEvaluationResult | When data policy evaluation occurs for the App |
 |Admin restored deleted app    |When the deleted app is restored by the admin|
 |Admin set desired logical name  |When the desired logical name of the app is set by the admin|
 |Admin modified app owner |When the app owner is modified by the admin  |
@@ -67,7 +65,7 @@ Logging takes place at the SDK layer, which means a single action can trigger mu
 |Admin allowed third party apps | When third party apps were allowed by the admin |
 
 ## Schema
-Schemas define which Power Apps fields are sent to the Microsoft Purview compliance portal.  Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to Power Apps activities. The value in the **PropertyCollection** field is specific to each Power Apps activity type. To identify Power Apps activities, look for nested schema property **powerplatform.analytics.resource.type** with value **PowerApp** within the **PropertyCollection** property. Below is an example of the activity-specific schema.
+Schemas define which Power Apps fields are sent to the Microsoft Purview compliance portal. Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to Power Apps activities. The value in the **PropertyCollection** field is specific to each Power Apps activity type. To identify Power Apps activities, look for nested schema property **powerplatform.analytics.resource.type** with value **PowerApp** within the **PropertyCollection** property. The following is an example of the activity-specific schema.
 
 ```
 [

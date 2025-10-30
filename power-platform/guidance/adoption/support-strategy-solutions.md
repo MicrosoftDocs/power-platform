@@ -93,7 +93,7 @@ This team should consist of Power Platform technical experts who can support com
 
 This team will support mission-critical Power Platform solutions that are rolled out to dedicated centrally supported environments.
 
-If your organizational structure is decentralized, consider formalizing team-assisted support to align with local regions or business units, with the central Power Platform support team assisting only with complex queries or central configurations such as data loss prevention policies. Some customers choose to outsource this level of support to a partner.
+If your organizational structure is decentralized, consider formalizing team-assisted support to align with local regions or business units, with the central Power Platform support team assisting only with complex queries or central configurations such as data policies. Some customers choose to outsource this level of support to a partner.
 
 Managing requests as purely an escalation path from the help desk is difficult to enforce because these Power Platform technical experts are often well known to business users. To encourage the habit of going through the proper channels, this team should redirect users to submit a help desk ticket. It will also improve the data quality for analyzing help desk requests.
 

@@ -17,8 +17,6 @@ search.audienceType:
 
 # AsyncOperationBase table
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The **AsyncOperationBase** table is used to store system jobs. System jobs represent asynchronous extensions, such as:
 
 - Asynchronous, registered workflows and plug-ins.

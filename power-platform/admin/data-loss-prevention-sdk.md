@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Power Platform data loss prevention (DLP) SDK"
-description: "Learn about the capabilities of the Microsoft Power Platform data loss prevention (DLP) software development kit (SDK) and run a sample in PowerShell."
+title: Microsoft Power Platform data policy SDK
+description: Learn about the capabilities of the Microsoft Power Platform data policy software development kit (SDK) and run a sample in PowerShell.
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 03/08/2021
@@ -12,11 +12,9 @@ ms.custom: "admin-security"
 search.audienceType: 
   - admin
 ---
-# Power Platform data loss prevention (DLP) SDK 
+# Power Platform data policy SDK 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
-This topic introduces the capabilities of the DLP SDK and shows you how DLP can help you manage your tenant and environment policy with experiences ranging from creating, reading, updating, to removing DLP policies. More information : [Data loss prevention policies](wp-data-loss-prevention.md)
+This topic introduces the capabilities of the data policy SDK and shows you how data policies can help you manage your tenant and environment with experiences ranging from creating, reading, updating, to removing data policies. More information : [Data loss prevention policies](wp-data-loss-prevention.md)
 
 ## How to run this sample
 
@@ -42,20 +40,18 @@ This topic introduces the capabilities of the DLP SDK and shows you how DLP can 
 
 ## What this sample does
 
-This sample calls DLP APIs in Microsoft.PowerApps.Administration.PowerShell to create, read, update and remove DLP policies. Below are the scenarios supported by the SDK.
+This sample calls data policy APIs in Microsoft.PowerApps.Administration.PowerShell to create, read, update and remove data policies. Below are the scenarios supported by the SDK.
 
-1. Create a tenant-level policy that classifies connectors into **Business**, **Non-business**, and **Blocked** groups. 
-2. Create policy for all environments except certain environments that classifies connectors into **Business**, **Non-business**, and **Blocked** groups. 
-3. Create policy for single environment that classifies connectors into **Business**, **Non-business**, and **Blocked** groups. 
-4. Get list of tenant-level policies (all environments). 
-5. Update policy to move connector across groups (**Business**, **Non-business**, and **Blocked**). 
-6. Test compatibility of existing policies that previously used legacy PowerShell APIs and now use new PowerShell APIs. 
+1. Create a tenant-level policy that classifies connectors into **Business**, **Non-business**, and **Blocked** groups.
+2. Create policy for all environments except certain environments that classifies connectors into **Business**, **Non-business**, and **Blocked** groups.
+3. Create policy for single environment that classifies connectors into **Business**, **Non-business**, and **Blocked** groups.
+4. Get list of tenant-level policies (all environments).
+5. Update policy to move connector across groups (**Business**, **Non-business**, and **Blocked**).
+6. Test compatibility of existing policies that previously used legacy PowerShell APIs and now use new PowerShell APIs.
 7. Apply a data policy to all Teams environments within a tenant. More information: [Applying a data policy to all Dataverse for Teams environments](about-teams-environment.md#applying-a-data-policy-to-all-dataverse-for-teams-environments)
 
 ## How this sample works
 
-This sample provides some DLP scenarios about how to call DLP APIs for your reference. You can run the sample and see the result.
-
-
+This sample provides some data policy scenarios about how to call data policy APIs for your reference. You can run the sample and see the result.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

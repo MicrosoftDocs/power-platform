@@ -15,8 +15,6 @@ search.audienceType:
 ---
 # Create templates for email
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Save time when creating multiple email messages by making email templates. Email templates contain predefined content, eliminating the need to repeatedly enter the same information.
 
 An email template is attached to an email activity after the activity is created. Typically, each type of email activity has its own email template type. For example, if you create an email activity from a case record it uses a case email template.

@@ -3,7 +3,7 @@ title: Enable maker welcome content
 description: Enable welcome content for makers for Managed Environments.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/07/2025
+ms.date: 9/18/2025
 author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
@@ -12,29 +12,37 @@ ms.custom: "admin-security"
 search.audienceType: 
   - admin
 ms.contributors:
-- hasharaf
+  - sericks
+  - hasharaf  
+  - syalandur
+contributors:
+  - akadrno 
+  - sericks007
+  - hasharaf
+  - syalandur24
 ---
+
 # Enable maker welcome content
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
-In Managed Environments, admins can provide customized welcome content to help their makers get started with [Power Apps](https://make.powerapps.com) and [Copilot Studio](https://copilotstudio.microsoft.com). When you add your own help content, it replaces the default Power Apps first-time help experience for makers. 
+In Managed Environments, admins can provide customized welcome content to help their makers get started with [Power Apps](https://make.powerapps.com), [Power Automate](https://make.powerautomate.com), and [Copilot Studio](https://copilotstudio.microsoft.com). When you add your own help content, it replaces the default Power Apps first-time help experience for makers. 
 
 > [!VIDEO d378c495-3d91-4ba1-8646-aa335620d868]
 
 When the welcome content is used, upon signing in to Power Apps or Copilot Studio, makers are greeted with customized getting started information. More information: [Use the learn hub](/power-apps/maker/common/learn-hub#from-your-org-preview)
 
-:::image type="content" source="media/welcome/maker-welcome-1.png" alt-text="Welcome content for makers.":::
-
 ## Add welcome content
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. Select **Environments** in the left navigation pane, select a managed environment, and then select **Edit Managed Environment** on the top menu bar.
+2. In the navigation pane, select **Manage**.
 
-3. Enter the help content in the text box under **Maker Welcome content**. 
+3. In the **Manage** pane, select **Environments**, and then select a managed environment.
+
+4. On the top menu bar, select **Edit Managed Environment**.
+
+5. Enter the help content in the text box under **Maker Welcome content**.
  
-    :::image type="content" source="media/welcome/maker-welcome-2.png" alt-text="Enter your welcome content.":::
+    :::image type="content" source="media/welcome/maker-welcome-new.png" alt-text="Enter your welcome content.":::
       
     You can enter plain text or use Markdown, as demonstrated in this example.
    
@@ -55,37 +63,4 @@ When the welcome content is used, upon signing in to Power Apps or Copilot Studi
 
 5. Select **Preview in a new tab** to see how the text you entered, or Markdown renders.
 
-   :::image type="content" source="media/welcome/maker-welcome-3.png" alt-text="Preview content.":::
-
-## Use PowerShell to add and update welcome content
-
-You can use PowerShell to add and update welcome content for makers. 
-
-#### Import module
-
-Run the following command to import a module.
-
-```powershell
-import-Module -Name Microsoft.PowerApps.Administration.PowerShell 
-```
-
-#### Use Markdown content for maker onboarding for a specified Managed Environment
-
-The following script is an example PowerShell script that uses Markdown content for maker onboarding for a specified Managed Environment. After you run the script, you see the Markdown content in the **Maker welcome content** section of the Managed Environment's settings. 
-
-The Markdown parameter can span over multiple lines if it is in double quotes.
-
-```powershell
-SetManagedEnvironmentMakerOnboardingMarkdownContent -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Markdown "## Welcome to Power Apps 
-### Let's get started" 
-```
-
-#### Use a "Learn more" URL for maker onboarding for a specified Managed environment
-
-The following script is an example PowerShell script that uses a "Learn more" URL for maker onboarding for a specified Managed Environment. After you run the script, you see a "Learn more" URL populated in the **Maker welcome content** section of the Managed Environment's settings. 
-
-```powershell
-SetManagedEnvironmentMakerOnboardingLearnMoreUrl -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -LearnMoreUrl "www.microsoft.com" 
-```
- 
-
+   :::image type="content" source="media/welcome/maker-welcome-new-2.png" alt-text="Preview content.":::

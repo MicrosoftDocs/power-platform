@@ -12,8 +12,6 @@ search.audienceType:
 ---
 # Access your storage
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Storage has important data from your environment. As a Power Platform administrator, there are a couple ways you can access your storage:
 
 - [Microsoft Fabric](#fabric)

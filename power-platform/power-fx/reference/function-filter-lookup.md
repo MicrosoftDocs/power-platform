@@ -14,6 +14,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Filter","Search","LookUp"]
 ---
 
 # Filter, Search, and LookUp functions
@@ -23,7 +24,7 @@ contributors:
 
 Finds one or more [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
-Watch this video to learn how to use **Filter**, **Search, and **LookUp** functions:
+Watch this video to learn how to use **Filter**, **Search**, and **LookUp** functions:
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=55b2c144-b5ac-4d66-b398-fea03eb21f17]
 
@@ -159,139 +160,3 @@ You can expand your search to include the **Company** column and the **Name** co
 | **Search(Customers, SearchInput.Text, Name, Company)**                                                    | Similar to using the **in** operator, the **Search** function searches the **Customers** data source for records in which either the **Name** column or the **Company** column contains the search string (for example, **co**) anywhere within it. The **Search** function is easier to read and write than **Filter** if you want to specify multiple columns and multiple **in** operators. | ![ Search customers with search input.](media/function-filter-lookup/customers-all-co-contains.png "Search customers with search input") |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -97,7 +97,7 @@ We can only gather custom connectors that exist outside of solutions and connect
 
 ## Inventory and telemetry differences between PowerShell, Power Platform admin center, and CoE Starter Kit
 
-If you're using [PowerShell for Power Platform Administrators](/power-platform/admin/powershell-getting-started) and the [Power Platform Admin Center](/power-platform/admin/wp-work-with-admin-portals) together with the CoE Starter Kit, you might notice a discrepancy in inventory. For example, the number of apps returned by PowerShell looks different than the number of apps returned by the CoE Starter Kit.
+If you're using [PowerShell for Power Platform Administrators](/power-platform/admin/powershell-getting-started) and the [Power Platform admin center](/power-platform/admin/wp-work-with-admin-portals) together with the CoE Starter Kit, you might notice a discrepancy in inventory. For example, the number of apps returned by PowerShell looks different than the number of apps returned by the CoE Starter Kit.
 
 There are expected differences, and the rest of this article can help you understand what to expect.
 

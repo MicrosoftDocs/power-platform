@@ -1,14 +1,14 @@
 - name: Power Platform toolkits
   href: index.yml
   items:
-    - name: Power Platform Center of Excellence (CoE) Kit
+    - name: Power Platform Center of Excellence (CoE) Starter Kit
       href: ../coe/starter-kit.md
       items:
         - name: Overview
           href: ../coe/overview.md
-        - name: Establishing tenant hygiene
+        - name: Establish tenant hygiene
           href: ../coe/after-setup-tenant-hygiene.md
-        - name: Set up the CoE starter kit
+        - name: Set up the CoE Starter Kit
           items:
             - name: Get started with setup
               href: ../coe/setup.md
@@ -52,13 +52,13 @@
               href: ../coe/setup-theming.md
             - name: Set up the Business value toolkit
               href: ../coe/setup-business-value-toolkit.md              
-            - name: What's next - updating the CoE Starter Kit
+            - name: Update the CoE Starter Kit
               href: ../coe/after-setup.md
-            - name: What's next - extending the CoE Starter Kit
+            - name: Extend and customize components
               href: ../coe/modify-components.md
-        - name: What's in the CoE starter kit
+        - name: What's in the CoE Starter Kit
           items:
-            - name: CoE starter kit modules
+            - name: CoE Starter Kit modules
               href: ../coe/starter-kit-explained.md
             - name: Components overview
               items:
@@ -96,57 +96,54 @@
               href: ../coe/use-innovationbacklog.md
             - name: Use the Administration planning components
               href: ../coe/admin-tasks-component.md
-            - name: Environment management
+            - name: Environment and data policy management
               href: ../coe/env-mgmt.md
             - name: Capacity alerting and reporting
               href: ../coe/capacity-alerting.md
         - name: CoE command line interface
-          href: ../coe/cli/overview.md
           items:
+            - name: Overview              
+              href: ../coe/cli/overview.md
             - name: Install CoE CLI
               href: ../coe/cli/install.md
-            - name: Install CoE CLI using Docker
-              href: ../coe/cli/sample-docker-install.md
-            - name: Install CoE CLI using local machine
-              href: ../coe/cli/sample-local-install.md
             - name: Upgrade CoE CLI
               href: ../coe/cli/upgrade.md
-            - name: ALM Accelerator for Power Platform
-              href: ../coe/cli/alm/overview.md
+            - name: CoE CLI ALM accelerator
               items:
-                - name: Set up ALM Accelerator for Power Platform
-                  href: ../coe/cli/alm/admin-install.md
+                - name: Overview
+                  href: ../coe/cli/alm/overview.md
                 - name: Before you start
                   href: ../coe/cli/alm/before-you-start.md
-                - name: Branching and merging
-                  href: ../coe/cli/alm/branching-and-merging.md
+                - name: Set up ALM Accelerator
+                  href: ../coe/cli/alm/admin-install.md
                 - name: Development environments
                   href: ../coe/cli/alm/development-environments.md
+                - name: Branching and merging
+                  href: ../coe/cli/alm/branching-and-merging.md
                 - name: Key concepts
                   href: ../coe/cli/alm/key-concepts.md
                 - name: Maker set-up
                   href: ../coe/cli/alm/maker-setup.md
-                - name: Maturity
-                  href: ../coe/cli/alm/personas.md
                 - name: Personas
                   href: ../coe/cli/alm/personas.md
             - name: CLI development
-              href: ../coe/cli/cli-development/overview.md
               items:
-                - name: Adding a new command
+                - name: CoE CLI development
+                  href: ../coe/cli/cli-development/overview.md
+                - name: Add a new command
                   href: ../coe/cli/cli-development/adding-new-command.md
-                - name: Documentation
+                - name: Documentation best practices
                   href: ../coe/cli/cli-development/documentation.md
-        - name: FAQ and Tips
+        - name: Tips and FAQs
           items:
-            - name: CoE Starter Kit - FAQ
+            - name: CoE Starter Kit tips and FAQs 
               href: ../coe/faq.md
-            - name: Questions related to the Data Export integration
+            - name: Data Export integration FAQs
               href: ../coe/faq-dataexport.md
         - name: Limitations
           href: ../coe/limitations.md
         - name: Release notes
-          href: ../coe/release-notes.md
+          href: https://github.com/microsoft/coe-starter-kit/releases/latest
         - name: Feedback and support
           href: ../coe/feedback-support.md
     - name: Power Platform ALM Accelerator
@@ -309,9 +306,11 @@
               href: ../creator-kit/theme.md
             - name: Set focus
               href: ../creator-kit/setfocus.md
-    - href: /power-apps/maker/data-platform/dataverse-accelerator/dataverse-accelerator
-      name: Dataverse Accelerator overview
-    - href: /power-automate/guidance/automation-kit/overview/introduction
-      name: Automation Kit overview
-    - href: /power-automate/guidance/business-approvals-templates/introduction
-      name: Business Approvals templates overview
+    - name: Related documentation
+      items:    
+      - href: /power-apps/maker/data-platform/dataverse-accelerator/dataverse-accelerator
+        name: Dataverse Accelerator (preview)
+      - href: /power-automate/guidance/automation-kit/overview/introduction
+        name: Power Automate Automation Kit
+      - href: /power-automate/guidance/business-approvals-templates/introduction
+        name: Business Approvals templates (preview)

@@ -1,5 +1,5 @@
 ---
-title: "View policies and scope  | MicrosoftDocs"
+title: View policies and scope
 description: View policies and policy scope.
 ms.component: pa-admin
 ms.topic: concept-article
@@ -18,15 +18,13 @@ search.audienceType:
 
 # View data policies
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Using the view policy feature (select **Policies** > **Data policies** on the left pane), environment admins can view tenant-level policies&mdash;and policies within environments that the admin has access to&mdash;at an individual policy level. Non-admins can also view tenant-level policies by using this feature.
 
 :::image type="content" source="media/dlp-view-policies2.png" alt-text="View data policies list.":::
 
 ## Policy scope
 
-Data loss prevention (DLP) policies can be created at both the tenant and environment level. Tenant admins have the permissions to create tenant-level policies; environment admins have the permissions to create environment-level policies.
+Data policies can be created at both the tenant and environment level. Tenant admins have the permissions to create tenant-level policies; environment admins have the permissions to create environment-level policies.
 
 ### Tenant-level policies
 

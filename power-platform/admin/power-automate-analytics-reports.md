@@ -14,8 +14,6 @@ search.audienceType:
 
 # Tenant-level analytics for Power Automate
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Tenant-level analytics allow Power Platform admins to extract key service metrics based on user adoption across the environments they manage. Tailor made analytics are contained within reports embedded in the Power Platform admin center. 
 
 The following tenant-level reports are available for Power Automate Cloud flows. 

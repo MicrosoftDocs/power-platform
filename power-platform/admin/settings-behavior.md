@@ -15,8 +15,6 @@ contributors:
 ---
 # Manage behavior settings 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Use behavior settings to adjust how model-driven apps appear and function. These settings don't apply to canvas apps, except where noted.
 
 To adjust the settings in the Power Platform admin center for an environment, follow these steps:

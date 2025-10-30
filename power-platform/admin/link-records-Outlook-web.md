@@ -21,8 +21,6 @@ ms.custom:
 
 # Use /mention to link to records in Outlook web client
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 One of the most time-consuming tasks when using email is sharing information in your line-of-business applications with colleagues. You have to jump out of your Outlook web experience, open your line-of-business app, navigate to a record, and then copy and paste the link of the record into your email.  
 
 Wouldn't it be great if you could just quickly access Dynamics 365 or Dataverse data directly from Outlook?

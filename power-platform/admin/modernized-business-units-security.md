@@ -13,7 +13,6 @@ search.audienceType:
 ---
 
 # Modernized business units security
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 In today's dynamic business environment, the ability to seamlessly manage and interact with multiple business units is crucial for operational efficiency and strategic growth. The [modernized business units](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) feature in Dataverse offers a robust solution to this need, enabling users to navigate and collaborate across various business units securely and with ease.  
 

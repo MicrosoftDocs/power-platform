@@ -1,9 +1,9 @@
 ---
-title: View license consumption for finance and operations apps (Preview)
-description: Learn how to view your organization's User license consumption for finance and operations apps. 
+title: View license consumption for finance and operations apps
+description: Learn how to view your organization's user license consumption for finance and operations apps. 
 author: ceian
-ms.date: 07/31/2025
-ms.reviewer: ellenwehrle
+ms.date: 08/18/2025
+ms.reviewer: sericks
 ms.topic: how-to
 ms.subservice:
 ms.author: ceian
@@ -15,8 +15,6 @@ ms.custom:
 ---
 
 # View license consumption for Dynamics 365 finance and operations apps
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The User License Consumption experience in Power Platform admin center lets admins monitor and manage licensing for Microsoft Dynamics 365 finance and operations apps. It shows which users need licenses, which ones are properly assigned, and where gaps exist so you can take action before per-user license validation deadlines.
 
@@ -31,35 +29,37 @@ Key capabilities include:
 
 ## Access user license consumption reporting
 
+Follow these steps to access finance and operations consumption metrics:
+
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Licensing** in the left menu.
 1. Select the **Finance and Operations** tab under **User License Consumption**.
 
 > [!NOTE]
-> The report is refreshed every 24 hours. Last updated timestamp appears at the top of the report.
+> The report is refreshed every 24 hours. The last updated timestamp appears at the top of the report.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-overview.png" alt-text="User License Consumption summary" lightbox="media/fno-user-licensing/user-license-consumption-overview.png":::
 
-## Top-level metrics
+## View top-level metrics
+
+Top-level metrics appear at the top of the page. You can see:
 
 - **Total users**: All users across connected finance and operations environments.
-- **Users with unassigned licenses**: Users who are assigned roles that require a license but do not have a a license assigned in in [Microsoft 365 admin center](https://admin.microsoft.com).
+- **Users with unassigned licenses**: Users who are assigned roles that require a license but don't have a license assigned in [Microsoft 365 admin center](https://admin.microsoft.com).
 
-Select metrics to view details for each user.
+Select **view details** in the *Total users* card or *Users with unassigned licenses* card to see details for each user.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-metrics.png" alt-text="User License Consumption metrics" lightbox="media/fno-user-licensing/user-license-consumption-metrics.png":::
 
-## Product-level license summaries
+## View product-level license summaries
 
-Each Dynamics 365 finance and operations product shows a card with:
+The product-level license summary view helps you check whether the licenses you own match the licenses your users need. By comparing required licenses to those that are purchased, assigned, and available, you can quickly spot gaps and decide whether to reallocate existing licenses or buy more. Each Dynamics 365 finance and operations product shows a card with:
 
 - Total users requiring a license  
-- By product, *base licenses* purchased and assigned  
-- By product, *attach licenses* purchased and assigned  
-- By product, *base licenses* purchased but unassigned (available to assign)  
-- By product, *attach licenses* purchased but unassigned (available to assign)  
+- By product, *base licenses* assigned, *base licenses* available to assign
+- By product, *attach licenses* assigned, *attach licenses* available to assign
 
-Supported products for User License Consumption reporting include:
+User License Consumption reporting supports these products:
 
 - Commerce  
 - Finance  
@@ -74,7 +74,7 @@ Select **View all** to drill into the license assignments for users of each prod
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-card-view-all.png" alt-text="User Licensing Consumption Summary" lightbox="media/fno-user-licensing/user-license-consumption-card-view-all.png":::
 
-## Users with unassigned licenses
+## Identify users with unassigned licenses
 
 Identify users with missing license assignments in [Microsoft 365 admin center](https://admin.microsoft.com) using the **Users with unassigned licenses** view.
 
@@ -82,17 +82,27 @@ Identify users with missing license assignments in [Microsoft 365 admin center](
 |--------|-------------|
 | **Email/User ID** | Entra ID identity |
 | **Required license** | Based on security role corresponding duties and privileges |
-| **Assigned license in M365** | Finance and Operations app license(s) assigned to the user in  [Microsoft 365 admin center](https://admin.microsoft.com) |
-| **Missing licenses** | Required Finance and Operations app license(s) not assigned to the user in [Microsoft 365 admin center](https://admin.microsoft.com) |
+| **Assigned license in M365** | Finance and Operations app licenses assigned to the user in  [Microsoft 365 admin center](https://admin.microsoft.com) |
+| **Missing licenses** | Required Finance and Operations app licenses not assigned to the user in [Microsoft 365 admin center](https://admin.microsoft.com) |
 
 > [!IMPORTANT]
 > Users in the **Users with unassigned licenses** view can't sign in to the system once license validation starts.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png" alt-text="Users with unassigned licenses" lightbox="media/fno-user-licensing/user-license-consumption-unassigned-license-users.png":::
 
+## Per user license validation
+
+Once license validation begins, any user without the required license is blocked from signing in to a Dynamics 365 finance and operations app. When this happens, they see the following screen.
+
+ :::image type="content" source="media/fno-user-licensing/user-license-validation-screen.png" alt-text="You need a license to access this app." lightbox="media/fno-user-licensing/user-license-validation-screen.png":::
+
+The screen tells the user they need a license to access the app and to request one from their administrator. End users should contact their system administrator to obtain the required license before trying to sign in again.
+
+For more details on licensing requirements, go to the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+
 ## Filter and sort capabilities
 
-Filter and sort by assigned licenses or by missing licenses.
+Filter and sort by **assigned licenses** or by **missing licenses**.
 
 ### Filter and sort by assigned license
 
@@ -105,11 +115,11 @@ Use the **Assigned Licenses in M365** column dropdown to find missing or incorre
 
 ### Filter by missing license
 
-Use the filter in the **Missing license** column to show users missing a specific license, like Supply Chain Management. Assign the right base licenses based on product.
+Use the filter in the **Missing license** column to show users missing a specific license, like Supply Chain Management. Assign the right base license based on product.
 
 ## Drill into user license details
 
-On a user, select a **Required license** link to open the **Required license details per environment** screen so you can check why a license is needed and in which environment.
+For any user, select the **Required license** link to open the **Required license details per environment** screen, where you can see why the license is needed and which environment requires it.
 
 | Field | Description |
 |-------|-------------|
@@ -119,6 +129,12 @@ On a user, select a **Required license** link to open the **Required license det
 | **Required license** | License required triggered by role |
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-environment-details.png" alt-text="User Licensing Consumption Environment details" lightbox="media/fno-user-licensing/user-license-consumption-environment-details.png":::
+
+## Assign licenses in the Microsoft 365 admin center
+
+For any user, select the missing license link to bring up the license options screen and select the **Manage in Microsoft 365 admin center** button to open the [Microsoft 365 admin center](https://admin.microsoft.com) to that user and assign the required license.
+
+ :::image type="content" source="media/fno-user-licensing/user-license-options-assignment.png" alt-text="User license options with link to assign license in the Microsoft 365 admin center." lightbox="media/fno-user-licensing/user-license-options-assignment.png"::: 
 
 ## Analyze role license entitlements
 
@@ -146,20 +162,26 @@ View **menu items and access levels** (Read/Write) that contribute to license re
 
 ## Export to CSV
 
-Select **Export to CSV** in the top-right corner to export user data.
+You can export user data to a CSV by selecting the **Export to CSV** button located on the page.
 
 > 🧾 The exported file contains only the following columns:
 >
 > - `TenantId`  
-> - `UserEmail`  
-> - `UserId`  
-> - `AssignedLicense(s)`  
-> - `MissingLicense(s)`  
+> - `UserEmail`
+> - `UserId`
+> - `AssignedLicense(s)`
+> - `MissingLicense(s)`
 > - `RefreshedOn`  
 
 For full entitlement or role mapping details, use the views in Power Platform admin center.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-export-csv.png" alt-text="User Licensing Consumption Export CSV" lightbox="media/fno-user-licensing/user-license-consumption-export-csv.png":::
+
+ ## Summarize (Copy to Clipboard)
+
+You can copy the license summary to your clipboard by selecting the **Summarize** button at the top of the page.
+
+ :::image type="content" source="media/fno-user-licensing/user-license-summarize-copy-to-clipboard.png" alt-text="Copy the license summary to your clipboard by selecting the Summarize button." lightbox="media/fno-user-licensing/user-license-summarize-copy-to-clipboard.png":::
 
 ## Best practices
 
@@ -174,7 +196,7 @@ For full entitlement or role mapping details, use the views in Power Platform ad
 - For finance and operations apps in Dynamics 365, a GUID uniquely ties a user record to an identity in Microsoft Entra ID. A GUID can appear instead of an email address if identity metadata is incomplete or if someone deletes users in Entra but doesn't remove user records from finance and operations security role assignments.
 - Custom security roles might need reanalysis to align with licensing.
 
-## Related resources
+## Related content
 
 - [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544)
 - [User security governance overview](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview)

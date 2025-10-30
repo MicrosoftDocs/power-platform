@@ -17,8 +17,6 @@ search.audienceType:
 
 # Licensing overview for Microsoft Power Platform
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 This article provides detailed information about Microsoft Power Platform licensing. You can also learn more on the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
 ## Power Apps, Power Automate, Microsoft Copilot Studio, and Power Pages offers 

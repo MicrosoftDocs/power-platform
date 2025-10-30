@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: checklist
-ms.date: 05/10/2024
+ms.date: 08/15/2025
 ---
 
 # Recommendation checklist for Reliability

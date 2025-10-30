@@ -4,7 +4,7 @@ description: Learn how to design a standardized strategy for handling deployment
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -117,6 +117,8 @@ Use platform-provided capabilities during rollbacks. For example, backups and po
 Test your entire deployment failure mitigation strategy frequently. Like emergency response plans and disaster recovery plans, your deployment failure plan is only successful if your team is trained on it and practices it regularly. [Chaos engineering and fault injection testing](../reliability/testing-strategy.md#fault-injection-and-chaos-engineering-guidance) can be effective techniques for testing your deployment mitigation strategy.
 
 ## Power Platform facilitation
+
+The [Deployment page](/power-platform/alm/admin-deployment-hub) in the Power Platform admin center provides a streamlined experience to help administrators navigate the complexities of managing Power Platform application lifecycle management (ALM) workloads, including managing pipelines deployments at enterprise scale. Admins have visibility to all the deployments in their tenant and can approve deployment requests and troubleshoot issues.
 
 [Pipelines in Power Platform](/power-platform/alm/pipelines) aim to democratize application lifecycle management (ALM) for Power Platform and Dynamics 365 customers by bringing ALM automation and continuous integration and continuous delivery (CI/CD) capabilities into the service.
 

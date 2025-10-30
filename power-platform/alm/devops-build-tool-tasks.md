@@ -40,6 +40,14 @@ to the versions of the tools that are required for the pipeline to run properly.
 ```
 
 ```yml
+# Installs default Power Platform Build Tools and adds the pac cli to the `PATH` environment variable
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@2
+  displayName: 'Power Platform Tool Installer'
+  inputs:
+    AddToolsToPath: true
+```
+
+```yml
 # Installs specific versions of the Power Platform Build Tools
 - task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@2
   displayName: 'Power Platform Tool Installer'
@@ -53,6 +61,7 @@ to the versions of the tools that are required for the pipeline to run properly.
 | Parameters    | Description   |
 |---------------|---------------|
 | `DefaultVersion`<br/>Use default tool versions | Set to **true** to use the default version of all tools, otherwise **false**. Required (and **false**) when any tool versions are specified. |
+| `AddToolsToPath`<br/>Add Tools To Path | Adds the pac cli to the `PATH` environment variable. Enables you to use pac cli from script tasks without needing to set up the path manually. |
 | `PowerAppsAdminVersion`<br/>`XrmToolingPackageDeploymentVersion`<br/>`MicrosoftPowerAppsCheckerVersion`<br/>`CrmSdkCoreToolsVersion`<br/>Tool version | The specific version of the tool to use. |
 
 ### Power Platform WhoAmI
@@ -66,7 +75,7 @@ Verifies a Power Platform environment service connection by connecting and makin
 - task: microsoft-IsvExpTools.PowerPlatform-BuildTools.whoami.PowerPlatformWhoAmi@2
   displayName: 'Power Platform WhoAmI'
 
-  inputs: 
+  inputs:
 #   Service Principal/client secret (supports MFA)
     authenticationType: PowerPlatformSPN
     PowerPlatformSPN: 'My service connection'
@@ -466,7 +475,13 @@ Alternatively a powershell inline task script $(Get-Date -Format yyyy.MM.dd.HHmm
 
 ### Power Platform Set Connection Variables
 
-Sets BuildTools.* variables to provide custom script tasks access to use the service connection as a single source of truth.
+Sets `PowerPlatformSetConnectionVariables.BuildTools.*` variables to provide custom script tasks access to use the service connection as a single source of truth.
+
+The following variables are set:
+- `PowerPlatformSetConnectionVariables.BuildTools.TenantId`
+- `PowerPlatformSetConnectionVariables.BuildTools.ApplicationId`
+- `PowerPlatformSetConnectionVariables.BuildTools.ClientSecret`
+- `PowerPlatformSetConnectionVariables.BuildTools.DataverseConnectionString`
 
 #### YAML snippet (SetConnectionVariables)
 
