@@ -91,7 +91,7 @@ In the *storage capacity usage* section, you can see:
   - Attachment
   - AnnotationBase
   - Any custom or out-of-the-box table that has columns of datatype file or image (full size)
-  - Any table that is used by one or more install Insights applications and ends in - *Analytics*
+  - Any table that is used by one or more install Insights applications and [ends in - *Analytics*](capacity-storage#what-are-tables-ending-in---analytics-in-my-capacity-report.md)
   - WebResourceBase
   - RibbonClientMetadataBase
 
