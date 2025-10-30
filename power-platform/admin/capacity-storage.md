@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 08/20/2025
+ms.date: 10/30/2025
 ms.topic: concept-article
 author: marianaraujo 
 ms.subservice: admin
@@ -52,9 +52,9 @@ To check whether you have any of these licenses, sign in to the Microsoft 365 ad
 > 
 > If you have none of the [legacy model licenses](legacy-capacity-storage.md#licenses-for-the-legacy-storage-model) nor the new model licenses, a new model report is displayed.
 
-## Verifying your Microsoft Dataverse capacity-based storage model
+## Verify your Microsoft Dataverse capacity-based storage model
 
-#### [New admin center](#tab/new)
+Take these steps to verify you Microsoft Dataverse capacity-based storage model:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
@@ -73,30 +73,9 @@ To check whether you have any of these licenses, sign in to the Microsoft 365 ad
 
     The new licensing storage model looks like the following image.
 
-    **Request**: Require the licensing storage model image in green PPAC
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-2. Select **Resources** > **Capacity** > **Summary**.
-
-3. View the data on the **Summary** page.
-
-   For the **Summary** page to display, the user needs to have one of the following roles: 
-    - Tenant administrator
-    - Power Platform administrator
-    - Dynamics 365 administrator 
-
-    Alternatively, a user with any of the above-mentioned roles can grant permissions to the environment administrator to view the **Capacity summary** tab within the **Tenant setting** page.
-
-    The new licensing storage model looks like the following image.
-
-    :::image type="content" source="media/capacity-new-license-model.png" alt-text="Screenshot of the new licensing storage model.":::
-
----
-
 ## Capacity page details
+
+You can access more details on the Capacity page by selecting Summary, Dataverse, Microsoft Teams, Add-ons, or Trial. 
 
 ### Summary tab
 
@@ -104,25 +83,11 @@ This page provides a tenant-level view of where your organization is using stora
 
 Follow these steps to view the **Summary** page:
 
-##### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 2. In the navigation pane, select **Licensing**.
 
 3. In the Licensing pane, select **Capacity add-ons**, and then select **Summary**.
-
-**Request**: Require an image of the Summary page in the green PPAC
-
-##### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-2. Select **Resources** > **Capacity** > **Summary**.
-
-:::image type="content" source="media/storage-data-capacity-page-review.png" alt-text="Screenshot of the Capacity page Summary tab.":::
-
----
 
 All tables of Dataverse, including system tables, are included in the storage capacity reports.
 
@@ -152,18 +117,6 @@ Follow these steps to view the page:
 
 3. In the Licensing pane, select **Capacity add-ons** and then select **Dataverse**.
 
-**Request**: Require an image of the **Dataverse** tab in the green PPAC
-
-##### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-2. Select **Resources** > **Capacity** > **Dataverse**.
-
-:::image type="content" source="media/storage-data-capacity-page-review.png" alt-text="Screenshot of the Capacity page Summary tab.":::
-
----
-
 Note the following features:
 
 |Feature  |Description  |
@@ -172,10 +125,6 @@ Note the following features:
 |Search     | Use **Search** to search by the environment name and the environment type.         |
 |Details  | Go to the next section for using the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to view environment capacity analytics.   |
 | Default environment tip | The calculated storage usage in this view only displays what is **above** the default environment’s included capacity. Tool tips indicate how to view actual usage in the **Details** section. |
-
-:::image type="content" source="media/storage-data-per-environment2.png" alt-text="Screenshot of storage data per environment details button.":::
-
-**Request**: Require an equivalent version of the above image in the green PPAC
 
 > [!NOTE]
 >
@@ -193,10 +142,6 @@ Note the following features:
 #### Environment storage capacity details
 
 Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) on the **Summary** tab view to see  an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption. 
-
-:::image type="content" source="media/storage-data-capacity-details.png" alt-text="Screenshot of an environment's capacity analytics":::
-
-**Request**: Require an equivalent version of the above image in the green PPAC
 
 The following details are provided:
 
@@ -216,21 +161,11 @@ This page provides a view of the capacity storage used by your Microsoft Teams e
 
 Follow these steps to view the page:
 
-##### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 2. In the navigation pane, select **Licensing**.
 
 3. In the Licensing pane, select **Capacity add-ons** and then select **Microsoft Teams**.
-
-##### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-2. Select **Resources** > **Capacity** > **Microsoft Teams**.
-
----
 
 |Feature  |Description  |
 |---------|---------|
@@ -250,21 +185,11 @@ This page provides a view of the capacity storage used by your trial environment
 
 Follow these steps to view the page:
 
-##### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 2. In the navigation pane, select **Licensing**.
 
 3. In the Licensing pane, select **Capacity add-ons** and then select **Trial**.
-
-##### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-2. Select **Resources** > **Capacity** > **Trial**.
-
----
 
 |Feature  |Description  |
 |---------|---------|
@@ -283,21 +208,11 @@ Follow these steps to view the page:
 
 You can track and manage Dataverse capacity in the **Licenses** section of Power Platform admin center.
 
-##### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 2. In the navigation pane, select **Licensing**.
 
 3. In the Licensing pane, select **Dataverse** under **Products**.
-
-##### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-
-2. In the navigation pane, select **Billing** > **Licenses** > **Dataverse**.
-
----
 
 #### Usage per storage type
 
@@ -349,8 +264,6 @@ All Dataverse indexes are reported at the Dataverse database capacity rate. Turn
 
 In the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
 
-##### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Licensing**.
 1. In the Licensing pane, select **Dataverse** under **Products**.
@@ -360,19 +273,6 @@ In the **Dataverse** tab, you can allocate capacity to a specific environment. O
 1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
 1. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (database, log, or file) reaches a set percentage of the allocated capacity.
 1. Select **Save** to apply the changes.
-
-##### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. On the navigation pane, select **Billing** > **Licenses**.
-1. On the **Summary** page, select the **Dataverse** tab and then select **Manage Capacity**. The **Manage capacity** pane is displayed on the right side of the page.
-1. Select the environment for which you want to allocate capacity.
-1. In the **Manage capacity** pane, view the currently allocated and consumed capacity for the environment.
-1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
-1. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (database, log, or file) reaches a set percentage of the allocated capacity.
-1. Select **Save** to apply the changes.
-
----
 
 ### Managing capacity overage
 
