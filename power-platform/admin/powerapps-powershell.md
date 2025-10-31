@@ -10,7 +10,7 @@ contributors:
 ms.reviewer: angieandrews
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/20/2025
+ms.date: 10/30/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -320,7 +320,7 @@ Changes the owner role of a Power App to the current user, and replaces the orig
 Get-AdminDeletedPowerAppsList -EnvironmentName 'EnvironmentName'
 ```
 
-This command displays all canvas apps recently deleted, as they might still be recovered.
+This command displays all canvas apps recently deleted, as they might still be recovered. The restorable duration is possibly 28 days. 
 
 ### Recover a deleted canvas app
 
