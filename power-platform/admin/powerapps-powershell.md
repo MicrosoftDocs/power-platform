@@ -262,7 +262,7 @@ A Hero app appears at the top of the list in the Power Apps mobile player. There
 The pipe `|` character between two cmdlets takes the output of the first cmdlet and passes it as the input value of the second, if the function is written to accommodate the pipe.
 
 > [!NOTE]
-> An app must already be a featured app before it is changed to a Hero.
+> An app must already be a featured app before it's changed to a Hero.
 
 ### Display the number of apps each user owns
 
