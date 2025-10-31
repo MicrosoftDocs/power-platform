@@ -46,9 +46,9 @@ Admins can define who within an environment can use Copilot capabilities in mode
 
 | Product | Feature |
 |---------|---------|
-| Dynamics 365 Sales | [Lead summary](/dynamics365/sales/copilot-configure-summary-fields) |
-| Dynamics 365 Sales | [Opportunity summary](/dynamics365/sales/copilot-configure-summary-fields) |
 | Dynamics 365 Sales | [Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot) |
+| Dynamics 365 Sales | [Lead summary](/dynamics365/sales/copilot-summarize-records#lead-summary) |
+| Dynamics 365 Sales | [Opportunity summary](/dynamics365/sales/copilot-summarize-records#opportunity-summary) |
 | Power Apps | [Copilot chat](/power-apps/user/use-copilot-model-driven-apps)|
 | Power Apps | [Form fill assistance](/power-apps/user/form-filling-assistance#use-form-fill-assistance) |
 | Power Apps | [Smart paste](/power-apps/user/form-filling-assistance#use-smart-paste-preview) |
