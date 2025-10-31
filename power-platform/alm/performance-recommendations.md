@@ -33,15 +33,16 @@ Publish customizations is only needed after importing unmanaged solutions and sh
 
 The table below lists the option names used across the available tools:
 
-|PP Build Tools|PP CLI   |UI|Pipelines in Power Platform
+|PP Build Tools|PAC CLI   |UI|Pipelines in Power Platform
 |----------|-----------|------------|------------|
 |Import as a holding solution     |--import-as-holding       |Stage for upgrade        |-            |
 |Stage and Upgrade|--stage-and-upgrade   |Upgrade|*Default behavior*|
 |Overwrite unmanaged customizations|--force-overwrite   |-|-|
 |Activate Plugins|--activate-plugins   |Enable plugin steps and flows included in the solution|-|
 |Skip product update dependencies|--skip-dependency-check   |-|-|
+|Skip lower version|--skip-lower-version   |-|Allow redeployments of older versions|
 |Import as a Managed solution|--convert-to-managed   |-|-|
-|Publish customizations changes|-|-|-|
+|Publish customizations changes|--publish-changes |-|-|
 |*No option selected*|*No option selected*|Update|-|
 
 
