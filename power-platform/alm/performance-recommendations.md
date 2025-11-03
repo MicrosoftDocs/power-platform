@@ -1,9 +1,9 @@
 ---
 title: "Performance Recommendations"
 description: "This article outlines best practices for achieving the fastest possible import times when importing managed solutions in Power Platform"
-author: Sabrina Di Bartolomeo
+author: sabrinadi
 ms.author: sabrinadi 
-ms.date: 30/10/2025
+ms.date: 10/30/2025
 ms.reviewer: 
 ms.topic: how-to
 ms.subservice: alm
@@ -25,7 +25,7 @@ The --convert-to-managed option is considered risky and deprecated.
 **Avoid Overwrite unmanaged customizations**
 
 The Overwrite unmanaged customizations option (--force-overwrite) forces the import process to overwrite any active customizations in the target environment. 
-This option significantly slows down the import process and is generally discouraged. The recommended approach is to prevent unmanaged customizations in the target environment from the outset. Consider using the feature [Block unmanaged customizations in Dataverse](power-platform/alm/block-unmanaged-customizations)
+This option significantly slows down the import process and is generally discouraged. The recommended approach is to prevent unmanaged customizations in the target environment from the outset. Consider using the feature [Block unmanaged customizations in Dataverse](block-unmanaged-customizations.md)
 
 **Don't use Publish customizations for managed solutions**
 
