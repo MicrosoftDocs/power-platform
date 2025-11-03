@@ -113,7 +113,7 @@ After deprecation ends, Microsoft service account users will experience the foll
 
 To continue using Power Automate, we recommend that you transition to the Power Apps Developer Plan. This transition provides access to modern features and allows for seamless management of your workflows. The Power Apps Developer Plan includes flow creation and integration with Microsoft Dataverse, making it an excellent option for automation enthusiasts and professionals.
 
-1. If you don't have a [trial Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account), create one.
+1. If you don't have a [trial Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn), create one.
 1. Using the Azure account you created, [set up a new Microsoft Entra tenant](/entra/identity-platform/quickstart-create-new-tenant).
 1. Using the Azure account and Entra tenant you set up in this procedure, create a [Power Apps developer environment](developer/create-developer-environment.md).
 
