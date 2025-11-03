@@ -92,23 +92,23 @@ To enable Copilot capabilities in Dynamics 365 Sales, follow these instructions:
 1. Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
 1. In the left navigation pane, select **Copilot** and then, select **Settings**.
 1. In the **Settings** page, under **Dynamics 365 Sales**, select **AI Agents** to use AI Agents in Dynamics 365 Sales.
-  1. Go to the **Environment groups** tab. 
-    1. Select an environment group where you want to enable AI agents and then, select **Add**.
-    1. Select **On** to enable AI agents in all environments in the group.
-    1. Select **Save**.
-  1. Go to the **Environment** tab. 
-    1. Select an environment where you want to enable AI agents and then, select **Add**.
-    1. Select **On** to enable AI agents in the selected environment.
-    1. Select **Save**.
+    1. Go to the **Environment groups** tab. 
+        1. Select an environment group where you want to enable AI agents and then, select **Add**.
+        1. Select **On** to enable AI agents in all environments in the group.
+        1. Select **Save**.
+    1. Go to the **Environment** tab. 
+        1. Select an environment where you want to enable AI agents and then, select **Add**.
+        1. Select **On** to enable AI agents in the selected environment.
+        1. Select **Save**.
 1. In the **Settings** page, under **Dynamics 365 Sales**, select **Copilot** to enable Copilot-powered features in Dynamics 365 Sales.
-  1. Go to the **Environment groups** tab. 
-     1. Select an environment group where you want to enable Copilot and then, select **Add**.
-     1. Select **On** to enable Copilot in all environments in the group.
-     1. Select **Save**.
-   1. Go to the **Environment** tab. 
-     1. Select an environment where you want to enable Copilot and then, select **Add**.
-     1. Select **On** to enable Copilot in the selected environment.
-     1. Select **Save**.
+    1. Go to the **Environment groups** tab. 
+        1. Select an environment group where you want to enable Copilot and then, select **Add**.
+        1. Select **On** to enable Copilot in all environments in the group.
+        1. Select **Save**.
+    1. Go to the **Environment** tab. 
+        1. Select an environment where you want to enable Copilot and then, select **Add**.
+        1. Select **On** to enable Copilot in the selected environment.
+        1. Select **Save**.
     
 > [!NOTE]
 > For some AI agents, you might need to enable the Copilot setting also depending on the agent's capabilities.
