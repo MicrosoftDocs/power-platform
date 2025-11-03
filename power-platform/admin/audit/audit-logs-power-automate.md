@@ -6,14 +6,26 @@ ms.topic: how-to
 ms.date: 10/27/2025
 ms.subservice: admin
 ms.author: kenseongtan
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
+Contributor: EllenWehrle
 search.audienceType: 
   - flowmaker
   - enduser
 ---
-# View Power Automate audit logs
+# Audit Power Automate activities in Microsoft Purview
 
-You can find logs of Power Automate activities in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
+Auditing Power Platform activities regularly in Microsoft Purview enables you and your team to:
+
+- maintain governance, compliance, and security
+- gain operational insights
+- identify and troubleshoot issues
+- mitigate failures.
+
+In Microsoft Purview, you can monitor many specific Power Automate activities, such as flow creations by specific users or connector calls and flow runs or failures by a specific user or agent. You can also audit within specific date ranges to gain insights.
+
+This article covers prerequisites, how to access the logs in Microsoft Purview, and details about Power Automate events and schemas.
+
+You can access and view Power Automate activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
 
 ## Access the logs
 

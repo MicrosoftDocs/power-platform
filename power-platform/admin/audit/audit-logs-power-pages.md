@@ -11,25 +11,18 @@ search.audienceType:
   - admin
 ---
 
-# Power Pages activity logging
+# Audit Power Pages activities in Microsoft Purview
 
-Power Pages activities are tracked from the [Microsoft Purview compliance portal](/purview/purview).
+Auditing Power Platform activities regularly in Microsoft Purview enables you and your team to:
 
-To view Power Pages activities in Microsoft Purview:
+- maintain governance, compliance, and security
+- gain operational insights
+- identify and troubleshoot issues
+- mitigate failures.
 
-1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) as a tenant admin.
+This article covers prerequisites, how to access the logs in Microsoft Purview, details about Power Pages events that can be audited.
 
-1. Under **Solutions**, select **Audit**.
-
-    :::image type="content" source="media/admin-activity-logging/logging-power-pages/audit-new-search.png" alt-text="A screenshot of the New Search options for Audit.":::
-
-From the Audit screen, an administrator can filter for specific activities by selecting the **Activities – friendly names** dropdown and choosing from the available options.
-
-To filter or search for Power Pages admin activities, select **PowerPlatformAdministratorActivity** as the value for **Record types**. 
-
-:::image type="content" source="media/admin-activity-logging/logging-power-pages/new-search-record-types.png" alt-text="A screenshot of the New Search page with Record types emphasized. The value PowerPlatformAdministratorActivity is emphasized.":::
-
-For more information about how to search audit logs in Microsoft Purview, see [Search the audit log in Microsoft Purview](/purview/audit-new-search#get-started-with-audit-new-search). 
+You can access and view Power Pages activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
 
 > [!NOTE]
 > You can search Power Pages activities for a specific period by entering the operation names listed in the documentation under **Activities – operation names** or by using the **Keyword Search** option in the search panel.

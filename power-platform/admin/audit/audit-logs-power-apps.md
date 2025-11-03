@@ -15,16 +15,18 @@ search.audienceType:
 
 # Audit Power Apps activities in Microsoft Purview
 
-Microsoft Power Apps activities are tracked from the [Microsoft Purview compliance portal](/purview/purview).
-Follow these steps.
+Auditing Power Platform activities regularly in Microsoft Purview enables you and your team to:
 
-1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) as a tenant admin.
+- maintain governance, compliance, and security
+- gain operational insights
+- identify and troubleshoot issues
+- mitigate failures.
 
-2. Select **Search** > **Audit log search**.
+In Microsoft Purview, you can monitor many specific Power Apps activities, such as canvas app creation, usage, patching and deletion by a specific user or within a specific date range.
 
-Within the **Audit log search** screen, Power Platform admins can search audit logs across many popular services including eDiscovery, Exchange, Power BI, Microsoft Entra ID, Microsoft Teams, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and Microsoft Power Apps.
+This article covers prerequisites, how to access the logs in Microsoft Purview, details about events and schema, and how to view your data in Microsoft Purview's compliance portal.
 
-Once the **Audit log search** screen is accessed, an administrator can filter for specific activities by pulling down the **Activities** dropdown and searching for **PowerApps app activities V2**.
+You can access and view Power App activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
 
 ## What events are audited
 

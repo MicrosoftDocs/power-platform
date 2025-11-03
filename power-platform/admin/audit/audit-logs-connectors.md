@@ -20,7 +20,18 @@ ms.custom: sfi-image-nochange
 
 # View the Power Platform connector activity logs
 
+Auditing Power Platform activities regularly in Microsoft Purview enables you and your team to:
+
+- maintain governance, compliance, and security
+- gain operational insights
+- identify and troubleshoot issues
+- mitigate failures.
+
 Audit logs are logs for important system level events. In the audit log feature, audit logs are available for events related to connections and custom connectors.
+This article covers prerequisites, how to access the logs in Microsoft Purview, details about connector events that can be audited.
+
+You can access and view Power Pages activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
+
 
 ## Access the logs
 
