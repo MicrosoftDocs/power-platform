@@ -4,13 +4,14 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 10/31/2025
+ms.date: 11/03/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
 search.audienceType:
   - admin
 contributors:
+  - udaykirang 
   - jordanchodak
   - JesseParsons
 ---
