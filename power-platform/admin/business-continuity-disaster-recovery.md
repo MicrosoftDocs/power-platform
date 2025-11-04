@@ -20,9 +20,9 @@ contributors:
 # Business continuity and disaster recovery
 
 > [!NOTE]
-> As of September 3, 2025, the self-service disaster recovery feature has been expanded to include failover support for [Dynamics 365 Contact Center](/dynamics365/contact-center/). With this enhancement, organizations can now seamlessly initiate failover for their contact center environments, ensuring smooth execution of disaster recovery drills or continued operations from an alternate region, when needed.
-> 
-> Self-service disaster recovery for finance and operations applications is now available in preview. Sign-up [using this form](https://forms.office.com/r/XEXsxwBbLt) if you're interested in participating in the preview.
+> As of September 3, 2025, the self-service disaster recovery feature supports failover for [Dynamics 365 Contact Center](/dynamics365/contact-center/). With this enhancement, organizations can seamlessly initiate failover for their contact center environments, ensuring smooth execution of disaster recovery drills or continued operations from an alternate region when needed.
+>
+> Self-service disaster recovery for finance and operations applications is now available in preview. Sign up [using this form](https://forms.office.com/r/XEXsxwBbLt) if you're interested in participating in the preview.
 
 Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to document a business continuity plan that minimizes the effects of outages. To recover and resume operations, make sure the plan lists stakeholders, processes, and specific steps.
 
@@ -53,7 +53,7 @@ Key improvements include:
 - **Seamless experience**: Unlike traditional backups that require restoration, availability zones keep your environment continuously active.
 - **Reduced support dependency**: Automated failover within the primary region means you don't need to contact Microsoft support for most disaster recovery scenarios.
 
-A limited number of customers in certain regions are transitioning to the improved architecture. Whether the region has transitioned or is transitioning, the service always keeps a backup of environment data in more than one data center.
+A limited number of customers in certain regions are transitioning to the improved architecture. Whether the region transitioned or is transitioning, the service always keeps a backup of environment data in more than one data center.
 
 Availability zones are far enough apart to reduce the chance of an outage affecting more than one zone, but close enough to maintain low-latency connections to other availability zones. Availability zones are typically separated by several kilometers and are usually within 100 kilometers.
 
@@ -69,9 +69,9 @@ You usually have multiple environments of different types in your tenant. This c
 
 To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md). For more information about managed environments, go to [Managed Environments](managed-environment-overview.md).
 
-## Allow Virtual Network pairing for self-service disaster recovery in Dynamics 365 
+## Allow Virtual Network pairing for self-service disaster recovery in Dynamics 365
 
-If your Dynamics 365 environment is deployed within a Virtual Network and you plan to use self-service disaster recovery, you need to configure a **Virtual Network pair**. This pairing ensures that your primary and secondary environments can communicate securely during failover and failback operations. Without a Virtual Network pair, disaster recovery operations fail because network connectivity between regions can't be established.
+If you deploy your Dynamics 365 environment within a Virtual Network and plan to use self-service disaster recovery, you need to configure a **Virtual Network pair**. This pairing ensures that your primary and secondary environments can communicate securely during failover and failback operations. Without a Virtual Network pair, disaster recovery operations fail because network connectivity between regions can't be established.
 
 For setup instructions, go to [Set up virtual network support for Power Platform](vnet-support-setup-configure.md).
 
@@ -87,7 +87,7 @@ To turn on disaster recovery, follow these steps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 1. In the navigation pane, select **Manage**.
-1. In the Manage pane, select **Environments**. The Environments page appears.
+1. In the **Manage** pane, select **Environments**. The **Environments** page appears.
 1. Select the production environment where you want to turn on self-service disaster recovery.
 1. Select **Disaster Recovery** in the command bar at the top of the page. The **Disaster Recovery** pane appears.
 1. Select the checkbox to turn on **Disaster Recovery**.
@@ -119,16 +119,16 @@ You might also want to turn on disaster recovery for other events, like:
 
 Your company might have disaster recovery drills documented as a requirement in your internal business continuity plans. Some industries and companies might be required by government regulations to perform audits on their business continuity disaster recovery capabilities. In these cases, you can run a disaster recovery drill on an environment. A disaster recovery drill lets you do self-service disaster recovery without losing any data. The duration of the failover action can be slightly longer while all remaining data is replicated to the secondary region.
 
-We recommend doing drills on a copy of a production environment, since this involves downtime when failing over to remote region that can last for minutes. For example, you might want to copy a production environment to a sandbox environment and then change the type from sandbox to production.
+We recommend doing drills on a copy of a production environment, since this process involves downtime when failing over to remote region that can last for minutes. For example, you might want to copy a production environment to a sandbox environment and then change the type from sandbox to production.
 
 ## Emergency response failover
 
-Choose this option during an emergency, when the primary region has an outage and you can't use environments or data. If you select this option, the environment fails and doesn't copy any more data except what's already replicated before the outage.
+Choose this option during an emergency, when the primary region has an outage and you can't use environments or data. If you select this option, the environment fails and doesn't copy any more data except for data that's already replicated before the outage.
 
-When you start an emergency response, you see the amount of data loss shown in time. Compare this to your recovery point objective to check if it's acceptable before you continue. The environment stays in a Running state until disaster recovery finishes and normal operation resumes from the secondary region.
+When you start an emergency response, you see the amount of data loss shown in time. Compare this data loss to your recovery point objective to check if it's acceptable before you continue. The environment stays in a Running state until disaster recovery finishes and normal operation resumes from the secondary region.
 
 > [!NOTE]
-> Database backups are **not replicated to secondary regions** for scenarios supported by self-service disaster recovery, unless the customer has explicitly allowed self-service disaster recovery. Without self-service disaster recovery, backups remain in the primary region only, which means cross-region failover can't be guaranteed. To ensure business continuity and compliance with your disaster recovery strategy, configure self-service disaster recovery for your environment. 
+> Database backups are **not replicated to secondary regions** for scenarios supported by self-service disaster recovery, unless you explicitly allow self-service disaster recovery. Without self-service disaster recovery, backups remain in the primary region only, which means cross-region failover can't be guaranteed. To ensure business continuity and compliance with your disaster recovery strategy, configure self-service disaster recovery for your environment. 
 
 ## Switch back to primary region
 
@@ -148,42 +148,42 @@ We recommend that you perform disaster recovery drills or an emergency response 
 
 ### Why use self-service disaster recovery?
 
-Super storms, natural calamities, and unforeseen political uncertainties that have the potential to bring an entire region down are becoming more common. To minimize the impact of a disaster that brings an entire region down, it's advisable to maintain an asynchronous copy in a remote region. You may want to maintain a copy in remote region for compliance audits, as well. 
+Super storms, natural calamities, and unforeseen political uncertainties that have the potential to bring an entire region down are becoming more common. To minimize the impact of a disaster that brings an entire region down, maintain an asynchronous copy in a remote region. You might also want to maintain a copy in a remote region for compliance audits. 
 
-Self-service disaster recovery gives you control to fail over to a secondary region with the push of a button and failback with the push of a button when the primary region is restored to ensure business continuity. You can also simulate the primary region being down to run a real failover and failback to the secondary region to test a real compliance drill. We advise running drills with a copy of the production environment to avoid any downtime.
+Self-service disaster recovery gives you control to fail over to a secondary region with the push of a button and failback with the push of a button when the primary region is restored to ensure business continuity. You can also simulate the primary region being down to run a real failover and failback to the secondary region to test a real compliance drill. Run drills with a copy of the production environment to avoid any downtime.
 
 ### Why do I need self-service disaster recovery if I already have a secondary copy maintained in a remote, secondary region? 
-For the public cloud, there are no secondary copies being maintained in a remote, secondary region if self-service disaster recovery hasn't been turned on.
+For the public cloud, the system doesn't maintain secondary copies in a remote, secondary region unless you turn on self-service disaster recovery.
 
-We maintain at least two&mdash;and in some cases, three&mdash;synchronous copies of production environments within a region, at no extra cost to the customer. These are hosted in availability zones in physically separated data centers with independent power, cooling, and networking, in compliance with legislated data residency regulations.  
+The system maintains at least two&mdash;and in some cases, three&mdash;synchronous copies of production environments within a region, at no extra cost to you. These copies are hosted in availability zones in physically separated data centers with independent power, cooling, and networking, in compliance with legislated data residency regulations.  
 
-With the implementation of [availability zones](/azure/reliability/availability-zones-overview?tabs=azure-cli), these cross-region copies were redundant. Recovering from these copies was a complex and manual process that affected recovery times.   
+With the implementation of [availability zones](/azure/reliability/availability-zones-overview?tabs=azure-cli), these cross-region copies became redundant. Recovering from these copies was a complex and manual process that affected recovery times.   
  
 ### What are the costs associated with using self-service disaster recovery?
 
-- [Pay-as-you-go](pay-as-you-go-overview.md)  must be turned on for the environment as a prerequisite to turning on self-service disaster recovery on that environment.
-- The select environment must be a [Managed Environment](managed-environment-licensing.md). This is a premium license tier. 
+- You must turn on [pay-as-you-go](pay-as-you-go-overview.md) for the environment as a prerequisite to turning on self-service disaster recovery on that environment.
+- The selected environment must be a [Managed Environment](managed-environment-licensing.md). This environment is a premium license tier. 
 - Capacity charges are based on the storage consumption of the environment's paired secondary region for database, file, and log storage types.
 - Capacity consumption is reflected in the familiar licensing experience within the Power Platform admin center. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
 
-  For example, suppose a user has 10-GB capacity consumption in the primary location. When self-service disaster recovery is turned on, a copy of data is created in the remote secondary region and this consumes another 10 GB. This 10 GB in the secondary region can be paid through storage entitlements. Only if you exceed your available free storage or available entitlements, would a pay-as-you-go plan actively start billing.
+  For example, suppose a user has 10-GB capacity consumption in the primary location. When self-service disaster recovery is turned on, a copy of data is created in the remote secondary region and this copy consumes another 10 GB. You can pay for this 10 GB in the secondary region through storage entitlements. Only if you exceed your available free storage or available entitlements does a pay-as-you-go plan actively start billing.
   
-- Pay-as-you-go is designed to generate various alerts and warning at various thresholds to warn administrators of depleting storage. Use the alert mechanism to your advantage.
-- Pay-as-you-go links the selected environment to the Azure subscription using a billing policy. Once an environment is linked to an Azure subscription, the usage of apps and any Dataverse or Power Platform usage that goes above the included storage amounts are billed against the Azure subscription using Azure meters. Learn more at [Pay-as-you-go meters](pay-as-you-go-meters.md). If more storage entitlements are acquired, the pay-as-you-go plan stops running the meters and consuming from available free storage and entitlements take precedence. 
+- Pay-as-you-go is designed to generate various alerts and warnings at various thresholds to warn administrators of depleting storage. Use the alert mechanism to your advantage.
+- Pay-as-you-go links the selected environment to the Azure subscription by using a billing policy. Once you link an environment to an Azure subscription, the usage of apps and any Dataverse or Power Platform usage that goes above the included storage amounts are billed against the Azure subscription by using Azure meters. For more information, see [Pay-as-you-go meters](pay-as-you-go-meters.md). If you acquire more storage entitlements, the pay-as-you-go plan stops running the meters and consuming from available free storage and entitlements take precedence. 
 
 ### How does billing work for self-service disaster recovery?
 
-- If your environment is configured to draw capacity from your tenant's Dataverse capacity entitlement, then entitled capacity is consumed first and a pay-as-you-go billing plan is still required so you can avoid capacity overages.
-- Pay-as-you-go plan generates multiple warnings at various thresholds to ensure that the customer is well-informed and takes appropriate action to avoid pay-as-you-go charges.  
+- If you configure your environment to draw capacity from your tenant's Dataverse capacity entitlement, the system consumes the entitled capacity first. You still need a pay-as-you-go billing plan to avoid capacity overages.
+- The pay-as-you-go plan generates multiple warnings at various thresholds to ensure that you're well-informed and can take appropriate action to avoid pay-as-you-go charges.  
 - Admins can allocate capacity to the environment, after which the pay-as-you-go plan is billed.
-- Customers can't turn off the pay-as-you-go plan in the billing experience if self-service disaster recovery is turned on.
+- You can't turn off the pay-as-you-go plan in the billing experience if you turn on self-service disaster recovery.
 
 ### Can I switch regions during a regional outage?
 
 If there's a regional outage, the system supports failover only to the designated secondary region as part of self-service disaster recovery. It doesn't support switching to any other arbitrary region.
 
 ### Is my region supported for self-service disaster recovery?
-Self-service disaster recovery takes a dependency on Azure region pairs. Regions that don't have a regional Azure pair aren't supported. Learn more at [Azure supported regions](/azure/reliability/regions-list). 
+Self-service disaster recovery depends on Azure region pairs. Regions that don't have a regional Azure pair aren't supported. For more information, see [Azure supported regions](/azure/reliability/regions-list). 
 
 As of November 2025,  austriaeast, belgiumcentral, chilecentral, indonesiacentral, israelcentral, italynorth, malaysiawest, mexicocentral, newzealandnorth, and polandcentral are single regions and aren't supported. Once a region gets a regional pair, it's on our roadmap for Power Platform geo build-out and for supporting self-service disaster. 
 
@@ -192,9 +192,9 @@ As of November 2025,  austriaeast, belgiumcentral, chilecentral, indonesiacentra
 
 ### What should I know about the capacity experience?
 
-- When you allow self-service disaster recovery, you notice that more storage consumption is displayed in the Dataverse capacity graph, clearly indicating the extra capacity used by the cross-region backup.
+- When you allow self-service disaster recovery, you see more storage consumption displayed in the Dataverse capacity graph, clearly indicating the extra capacity used by the cross-region backup.
 - When you don't allow self-service disaster recovery, the capacity graph shows standard usage without the extra storage for replication.
-- When the self-service disaster recovery is active, the capacity graph displays the extra consumption from cross-region replication, with a *Disaster recovery active* tag in the Dataverse capacity summary.
+- When self-service disaster recovery is active, the capacity graph displays the extra consumption from cross-region replication, with a *Disaster recovery active* tag in the Dataverse capacity summary.
 
 ### How do I disable self-service disaster recovery?
 
@@ -206,7 +206,7 @@ Disabling self-service disaster recovery deletes all replicated environment data
 
 ### Can I disable self-service disaster recovery while in a paired region (in a failed over state)?
 
-No, self-service disaster recovery can't be disabled while the environment is in a failed over state. You must switch to the primary region first.
+No, you can't disable self-service disaster recovery while the environment is in a failed over state. You must switch to the primary region first.
 
 ### Are Power Apps and Power Pages supported with self-service disaster recovery?
 
