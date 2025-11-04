@@ -16,8 +16,6 @@ contributors:
 
 # Tutorial: Create cross-tenant isolation reports
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 This tutorial demonstrates how to use the programmability tools to create cross-tenant isolation reports.
 
 In this tutorial, learn how to:

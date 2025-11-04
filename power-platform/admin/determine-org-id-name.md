@@ -15,8 +15,6 @@ search.audienceType:
 ---
 
 # Find your Environment and organization ID and name
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 Use the following steps to find your environment ID, organization ID, and organization name.
 
 ## Find your environment and organization ID

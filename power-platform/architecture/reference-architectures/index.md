@@ -5,9 +5,9 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 07/15/2025
+ms.date: 09/17/2025
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 contributors: 
   - manuelap-msft
 search.audienceType: 
@@ -33,3 +33,4 @@ Reference architectures are essential frameworks that guide the design and imple
 | **[Reduce infrastructure challenges with hosted RPA in Power Automate​](rpa-scale-operations.md)** | Learn how to use the Hosted RPA feature to decrease the time and effort required for procuring, provisioning, operationalizing, and maintaining infrastructure to support robotic process automations. |
 | **[Use SQL Server with canvas apps​](sqlserver-canvas-app.md)** | Learn how to build and publish an enterprise-grade canvas app using SQL Server as a data source. |
 | **[Use an autonomous agent in Copilot Studio for document processing](document-processing-agent.md)** | Learn how to build an autonomous agent in Copilot Studio for document processing. |
+| **[Use complex relationships with Microsoft Dataverse](complex-relationships-dataverse.md)** | Learn how to model complex data relationships in Microsoft Dataverse to design effective business applications. |

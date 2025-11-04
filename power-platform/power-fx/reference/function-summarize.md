@@ -14,6 +14,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Summarize"]
 ---
 # Summarize function
 [!INCLUDE[function-summarize-applies-to](includes/function-summarize-applies-to.md)]

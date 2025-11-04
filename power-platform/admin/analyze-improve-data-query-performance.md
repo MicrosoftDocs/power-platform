@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Use performance insights
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Performance insights are a self-service tool for enterprise app makers that analyzes runtime user data and provides a prioritized list of recommendations to help improve the performance of model-driven apps. This feature provides a daily set of analytic insights related to the performance of a Power Apps model-driven or customer engagement app, such as Dynamics 365 Sales or Dynamics 365 Service, with recommendations and actionable items. Enterprise app makers can view detailed performance insights at an app-level in the Power Apps portal. More information: [What are performance insights](/powerapps/maker/common/performance-insights-overview)
  
 ### See also  

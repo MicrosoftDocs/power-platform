@@ -15,8 +15,6 @@ contributors:
 
 # IP firewall in Power Platform environments
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The IP firewall protects your organizational data by ensuring users can only access Microsoft Dataverse from allowed IP locations. The IP firewall analyzes the IP address of each request in real time. For example, you can turn on the IP firewall in your production Dataverse environment and set allowed IP addresses in the ranges associated with your office locations and not any external IP location, like a coffee shop. If a user tries to access organizational resources from a coffee shop, Dataverse denies access in real time.
 
 :::image type="content" source="media/ip-firewall-dataverse-diagram.png" alt-text="Diagram illustrating the IP firewall feature in Dataverse.":::

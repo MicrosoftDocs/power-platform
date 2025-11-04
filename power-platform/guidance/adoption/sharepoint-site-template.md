@@ -92,7 +92,7 @@ The PowerShell scripts to deploy the Power Platform communication site template 
 
 1. Update the following variables:
 
-    - `$newSiteURL` is the URL of the Data Loss Prevention policies page on the SharePoint site.
+    - `$newSiteURL` is the URL of the Data policies page on the SharePoint site.
     - `$supportEmail` is the email address of the support department.
     - `$tenantId` is the GUID of your tenant. Learn how to [find your tenant ID](/sharepoint/find-your-office-365-tenant-id).
 
@@ -147,7 +147,7 @@ From **Settings** (Gear icon), navigate to **Site contents** > **Site Pages**, a
 
 - **Consultation-and-Development.aspx**: If your organization has an internal Power Platform development team, include their contact details and ways to engage. If your organization doesn't have one, delete this page.
 
-- **Data-Loss-Prevention-(DLP)-Policies.aspx**: Share the connectors available in each environment and how to request more connectors or a new environment for a specific project. The template page contains a typical data loss prevention policy strategy to help you get started. Scan the document for the placeholder  *COMPANY SPECIFIC INSTRUCTIONS* and update with your own processes and guidelines.
+- **Data-Loss-Prevention-(DLP)-Policies.aspx**: Share the connectors available in each environment and how to request more connectors or a new environment for a specific project. The template page contains a typical data policy strategy to help you get started. Scan the document for the placeholder  *COMPANY SPECIFIC INSTRUCTIONS* and update with your own processes and guidelines.
 
     :::image type="content" source="media/wiki-change.png" alt-text="Screenshot showing placeholder content you need to update with your own content." lightbox="media/wiki-change.png":::
 

@@ -14,8 +14,6 @@ search.audienceType:
 
 # Power Apps activity logging
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Power Apps activities are tracked from the [Microsoft Purview compliance portal](/purview/purview). 
 
 Follow these steps.

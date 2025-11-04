@@ -1,0 +1,305 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API - authorization",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
+    "version": "2022-03-01-preview"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/authorization/roleAssignments": {
+      "get": {
+        "tags": [
+          "RoleBasedAccessControl"
+        ],
+        "summary": "List role assignments.",
+        "description": "Retrieves a list of role assignments. PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
+        "operationId": "ListRoleAssignments",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of role assignments.",
+            "schema": {
+              "$ref": "#/definitions/RoleAssignmentResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified resource does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RoleBasedAccessControl"
+        ],
+        "summary": "Create role assignment.",
+        "description": "Creates a new role assignment. PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
+        "operationId": "CreateRoleAssignment",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/RoleAssignmentRequest"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Role assignment created.",
+            "schema": {
+              "$ref": "#/definitions/RoleAssignmentResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The body is invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified resource does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    },
+    "/authorization/roleAssignments/{roleAssignmentId}": {
+      "delete": {
+        "tags": [
+          "RoleBasedAccessControl"
+        ],
+        "summary": "Delete role assignment.",
+        "description": "Deletes a role assignment by ID. PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
+        "operationId": "DeleteRoleAssignment",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "roleAssignmentId",
+            "description": "The unique identifier of the role assignment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Role assignment deleted successfully."
+          },
+          "400": {
+            "description": "Bad Request - The parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The role assignment does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    },
+    "/authorization/roleDefinitions": {
+      "get": {
+        "tags": [
+          "RoleBasedAccessControl"
+        ],
+        "summary": "List role definitions.",
+        "description": "Retrieves a list of role definitions.  PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
+        "operationId": "ListRoleDefinitions",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of role definitions.",
+            "schema": {
+              "$ref": "#/definitions/RoleDefinitionResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified resource does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "RoleDefinitionResponse": {
+      "description": "The available role definitions for assignment.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "description": "Role definition ID",
+                "type": "string",
+                "example": "roleDef1"
+              },
+              "name": {
+                "description": "Role definition name",
+                "type": "string",
+                "example": "Power Platform Admin"
+              },
+              "permissions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "example": [
+                  "Read",
+                  "Write"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "RoleAssignmentResponse": {
+      "description": "The role assignments.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "description": "Role assignment ID",
+                "type": "string",
+                "example": "assignment1"
+              },
+              "principalId": {
+                "description": "The ID of the assigned principal",
+                "type": "string",
+                "example": "user123"
+              },
+              "roleDefinitionId": {
+                "description": "The ID of the role definition",
+                "type": "string",
+                "example": "roleDef1"
+              },
+              "scope": {
+                "description": "The assignment scope",
+                "type": "string",
+                "example": "environment/abc"
+              }
+            }
+          }
+        }
+      }
+    },
+    "RoleAssignmentRequest": {
+      "description": "Request to assign a role to a principal.",
+      "type": "object",
+      "properties": {
+        "principalId": {
+          "description": "The ID of the principal to assign",
+          "type": "string",
+          "example": "user123"
+        },
+        "roleDefinitionId": {
+          "description": "The ID of the role definition",
+          "type": "string",
+          "example": "roleDef1"
+        },
+        "scope": {
+          "description": "The assignment scope",
+          "type": "string",
+          "example": "environment/abc"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "scopes": {
+        ".default": ".default"
+      },
+      "description": "Microsoft Entra ID OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [
+        ".default"
+      ]
+    }
+  ]
+}

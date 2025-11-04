@@ -12,8 +12,6 @@ search.audienceType:
 ---
 # Enable accessible email flow
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 <!-- legacy procedure -->
 
 To improve accessibility when reading and editing email in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), we're introducing an app that provides an accessible email flow. This topic explains how admins can enable this flow and how end users can access it.

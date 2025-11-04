@@ -6,9 +6,9 @@ ms.service: power-platform
 ms.topic: how-to
 ms.custom: "admin-security"
 ms.collection: get-started
-author: sericks007
+author: rashmansur
 ms.subservice: admin
-ms.author: sericks
+ms.author: rashmim 
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -18,8 +18,6 @@ contributors:
 ---
 
 # Connecting and authenticating to data sources
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Connecting and authenticating to a data source is done separately from authenticating to a Power Platform service.
 

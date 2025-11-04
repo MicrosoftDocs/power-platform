@@ -62,7 +62,7 @@ While a centralized approach to Power Platform adoption has its benefits, it als
 
 In a decentralized delivery model, multiple teams are established across the organization, each closely aligned with the day-to-day operations of various departments. These teams are equipped with the resources needed to consistently deliver apps within organizational guidelines. Operating autonomously, they can adapt and expand in a cellular fashion, allowing for flexibility and rapid response to specific needs.
 
-Despite the autonomy of these teams, centralized governance remains essential to ensure corporate compliance and maintain high-level digital guardrails. For example, implementing data loss prevention (DLP) policies, managing connectors, and overseeing license management. These measures enable users and developers to build and release solutions safely and efficiently, with minimal intervention from IT, while safeguarding company data.
+Despite the autonomy of these teams, centralized governance remains essential to ensure corporate compliance and maintain high-level digital guardrails. For example, implementing data policies, managing connectors, and overseeing license management. These measures enable users and developers to build and release solutions safely and efficiently, with minimal intervention from IT, while safeguarding company data.
 
 The decentralized model is an excellent self-service option because it lets teams innovate and solve their unique challenges while following organizational standards and compliance. This approach fosters a culture of agility and responsiveness, driving successful Power Platform adoption across the enterprise.
 

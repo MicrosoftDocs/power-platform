@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Download"]
 ---
 
 # Download function
@@ -45,22 +46,22 @@ Only on Windows, **Download** returns the location where the file was stored loc
 > [!NOTE]
 > Power Apps cannot authenticate download requests to the address provided in the Download() function.
 >
-> For example, when using this function to download a file stored on a SharePoint site that requires authentication, the request might work when using a web browser since the browser session might authenticate against the SharePoint site using cached credentials. However, in Power Apps mobile app, the request will not work since authenticating the download request is not handled by the mobile device.
+> For example, when using this function to download a file stored on a SharePoint site that requires authentication, the request might work when using a web browser since the browser session might authenticate against the SharePoint site using cached credentials. However, in Power Apps mobile app, the request won't work since authenticating the download request is not handled by the mobile device.
 
 
 ## Examples
 
 ### Simple Download
 
-The following formula will download the user's guide for the Surface Book, a PDF file:
+The following formula downloads the user's guide for the Surface Book, a PDF file:
 
 ```power-fx
 Download( "https://go.microsoft.com/fwlink/?linkid=827480" )
 ```
 
-When run in a mobile device, the user will be prompted for a location to save the file.
+When run in a mobile device, the user is prompted for a location to save the file.
 
-When run in most web browsers, a new tab will be opened to display the PDF file as most browsers natively support this file type.
+When run in most web browsers, a new tab is opened to display the PDF file as most browsers natively support this file type.
 
 ### Step by Step
 

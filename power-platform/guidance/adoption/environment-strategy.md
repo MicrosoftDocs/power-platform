@@ -5,7 +5,7 @@ description: Learn how to best use the features of the platform to implement an 
 author: robstand
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/18/2025
+ms.date: 08/29/2025
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.custom: bap-template
@@ -169,7 +169,7 @@ Here are some suggestions for how your organization might use the welcome messag
 
 #### Default environment
 
-The default environment is often the most restricted, with data loss prevention (DLP) policies and sharing controls. Create a welcome message that warns your makers about restrictions and possible limitations, and include a link to your organization's policy website or document.
+The default environment is often the most restricted, with data policies and sharing controls. Create a welcome message that warns your makers about restrictions and possible limitations, and include a link to your organization's policy website or document.
 
 For example, you might want to inform makers to use the default environment only for solutions that are related to Microsoft 365 applications, avoid using production applications in the default environment, and to share their canvas apps only with a limited number of individuals. The following example shows how to create such a message in Managed Environments settings:
 
@@ -226,7 +226,7 @@ Here is sample output:
 
 #### Developer environments
 
-Developer environments are most often where developers build their solutions. Since the developers are working on the applications, they aren't in production, and scalability is limited. Normally, dev environments have more relaxed DLPs due to the nature of the makers. To avoid developers using production assets in their dev environments, limit sharing capabilities and use a specific DLP for this type of environment. Here's an example of a welcome message for a development environment:
+Developer environments are most often where developers build their solutions. Since the developers are working on the applications, they aren't in production, and scalability is limited. Normally, dev environments have more relaxed data policies due to the nature of the makers. To avoid developers using production assets in their dev environments, limit sharing capabilities and use a specific data policy for this type of environment. Here's an example of a welcome message for a development environment:
 
 ```markdown
 ![Contoso](https://i.ibb.co/SNSTCx3/something.png)
@@ -372,7 +372,7 @@ To support these requirements, the Contoso admin and governance team developed t
 
 Let's explore this environment topology diagram in detail.
 
-The default environment is used to build Microsoft 365 productivity customizations. Data loss prevention policies and restrictions on sharing limit other types of maker activity and place guardrails around what makers can build in this environment.
+The default environment is used to build Microsoft 365 productivity customizations. Data policies and restrictions on sharing limit other types of maker activity and place guardrails around what makers can build in this environment.
 
 Only admins are able to create trial, sandbox, and production environments. Makers use a custom Microsoft Form or another process to request a new environment. The [Microsoft Power Platform Center of Excellence (CoE) Starter Kit](../coe/starter-kit.md) includes [an environment request](../coe/setup-environment-components.md) that could be used.
 
@@ -489,7 +489,7 @@ First, use environment routing to direct makers to their own workspace to build 
 
 - Consider renaming the default environment to something more descriptive, like "Personal Productivity."
 
-    - Establish a data loss prevention (DLP) policy for the default environment that blocks new connectors and restricts makers to using only basic, unblockable connectors. Move all the connectors that can't be blocked to the business data group. Move all the blockable connectors to the blocked data group.
+    - Establish a data policy for the default environment that blocks new connectors and restricts makers to using only basic, unblockable connectors. Move all the connectors that can't be blocked to the business data group. Move all the blockable connectors to the blocked data group.
 
     - [Create a rule](../../admin/dlp-custom-connector-parity.md) to block all URL patterns used by custom connectors.
 
@@ -509,15 +509,15 @@ As part of establishing your environment strategy, identify common levels of sec
 
 Incorporate the security levels you identify into your group strategy, and where possible, use rules to enable the security features in your environments. In this example, a rule limits sharing in all the environments that are designated as normal or medium security.
 
-### Align environments to your data loss prevention strategy
+### Align environments to your data policy strategy
 
-Data policies are another important part of an overall governance effort to control the services used by low-code resources in an environment. Environment groups don't have a rule to apply a DLP policy to an environment. However, you can align your DLP strategy with your environment groups. For example, you could create a DLP policy with the same or a similar name as an environment group and apply it to environments in that group.
+Data policies are another important part of an overall governance effort to control the services used by low-code resources in an environment. Environment groups don't have a rule to apply a data policy to an environment. However, you can align your data policy strategy with your environment groups. For example, you could create a data policy with the same or a similar name as an environment group and apply it to environments in that group.
 
-[Learn more about how to implement a DLP strategy](dlp-strategy.md).
+[Learn more about how to implement a data policy strategy](dlp-strategy.md).
 
 :::image type="content" source="media/environment-strategy/image15.png" alt-text="Diagram illustrating the relationship between environment groups and similarly named data loss prevention policies that apply to them.":::
 
-*Figure: In this example, environments in the Personal Dev group follow a DLP policy that blocks all non-Microsoft connectors.*
+*Figure: In this example, environments in the Personal Dev group follow a data loss prevention (DLP) policy that blocks all non-Microsoft connectors.*
 
 ## Tailor an environment strategy for your organization
 
@@ -540,7 +540,7 @@ You need to make some key decisions:
 - How will you decide whether an app, automation, or Copilot will use an existing environment or a new one?
 - Are there any gaps between the baseline features of the platform and your requirements that require a custom governance process?
 - How will you handle any existing assets in the default environment?
-- Do you have a tenant and environment DLP policy strategy, and if so, how does it align with the environment strategy you're creating?
+- Do you have a tenant and environment data policy strategy, and if so, how does it align with the environment strategy you're creating?
 
 You might find inspiration in the [cloud operating models](/azure/cloud-adoption-framework/operating-model/compare) that are part of the Cloud Adoption Framework for Azure.
 
@@ -563,9 +563,9 @@ For example, the Environments Power BI dashboard offers an overview that helps y
 
 *Figure: The Environments dashboard in Power BI.*
 
-The kit includes starting points or inspiration, such as a process that makers can use to [request new environments](../coe/env-mgmt.md) and changes to DLP policies for their environments.
+The kit includes starting points or inspiration, such as a process that makers can use to [request new environments](../coe/env-mgmt.md) and changes to data policies for their environments.
 
-:::image type="content" source="media/environment-strategy/image17.png" alt-text="Flow diagram illustrating admin and maker roles and actions in a process for requesting a new environment or modifying a DLP policy applied to an environment." lightbox="media/environment-strategy/image17.png":::
+:::image type="content" source="media/environment-strategy/image17.png" alt-text="Flow diagram illustrating admin and maker roles and actions in a process for requesting a new environment or modifying a data protection policy applied to an environment." lightbox="media/environment-strategy/image17.png":::
 
 *Figure: Flow diagram illustrating an environment management process in the CoE Starter Kit.*
 
@@ -601,7 +601,7 @@ Testing multiple apps in the same environment makes sense if they run together i
 
 When you evaluate the production environment for an app, keep the following considerations in mind:
 
-- **Is the app compatible with existing apps in the environment?** For example, two apps that both use the Dataverse Contact table for different purposes might not be compatible. Are the apps compatible from a DLP policy perspective?
+- **Is the app compatible with existing apps in the environment?** For example, two apps that both use the Dataverse Contact table for different purposes might not be compatible. Are the apps compatible from a data policy perspective?
 
 - **Are there special compliance or regulatory requirements for separation of data?** For example, does the sensitivity of the data require it to be isolated? Is there a requirement that data can't be included with other data?
 

@@ -16,8 +16,6 @@ ms.custom: sfi-image-nochange
 
 # What data is available for model-driven apps?
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Performance data related to page loads and Unified Interface (UCI) outbound network requests is available for model-driven apps.  
 
 ## What kind of page loads are available?

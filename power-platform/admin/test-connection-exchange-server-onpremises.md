@@ -14,8 +14,6 @@ ms.custom: sfi-image-nochange
 ---
 # Test connection to Exchange Server (on-premises)
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The following guidance is for those having issues with connecting customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) to a mailbox hosted on their Microsoft Exchange on-premise deployment using server-side synchronization.
 
 Dynamics 365 is hosted on Microsoft Azure. During configuration, server-side sync will try to initiate an HTTP connection to the Exchange Web Services (EWS) endpoint configured by the customer on the email server profile associated to the mailbox. The EWS endpoint is an internet-facing HTTP accessible resource which can be accessed from outside the customer network.

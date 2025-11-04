@@ -7,7 +7,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 ms.date: 05/14/2025
 ---
 
@@ -51,16 +51,16 @@ Learn more:
 - [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
 - [Lock environments by revoking key vault and/or key permission access](/power-platform/admin/cmk-lock-unlock)
 
-## Data loss prevention (DLP) policies
+## Data policies
 
-Power Platform data loss prevention (DLP) policies are rules and guidelines designed to protect sensitive data within the Power Platform environment. These policies help prevent unauthorized sharing and transfer of data by controlling how data can flow between different connectors and environments.
+Power Platform data policies are rules and guidelines designed to protect sensitive data within the Power Platform environment. These policies help prevent unauthorized sharing and transfer of data by controlling how data can flow between different connectors and environments.
 
-Establishing a Power Platform data loss prevention (DLP) policy strategy is crucial to protect sensitive information, ensure regulatory compliance, and mitigate the risks of data breaches and unauthorized data sharing:
+Establishing a Power Platform data policy strategy is crucial to protect sensitive information, ensure regulatory compliance, and mitigate the risks of data breaches and unauthorized data sharing:
 
 Learn more:
 
-- [Data Loss Prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention)
-- [Implement a DLP strategy](dlp-strategy.md)
+- [Data policies](/power-platform/admin/wp-data-loss-prevention)
+- [Implement a data policy strategy](dlp-strategy.md)
 
 ## Cross-tenant inbound and outbound restrictions
 
@@ -180,7 +180,7 @@ In conclusion, ensuring robust data protection within Power Platform is a shared
 Review the detailed articles in this series to further enhance your security posture:
 
 - [Detect threats to your organization](threat-detection.md)
-- [Implement a DLP strategy](dlp-strategy.md)
+- [Implement a data policy strategy](dlp-strategy.md)
 - [Configure identity and access management](conditional-access.md)
 - [Meet compliance requirements](compliance.md)
 - [Secure the default environment](secure-default-environment.md)

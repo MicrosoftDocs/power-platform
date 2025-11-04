@@ -1,11 +1,11 @@
 ---
 title: "Set up ALM Accelerator for Power Platform (Deprecated)"
-description: "Steps to do administrator install of the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
+description: "Learn how to perform an administrator install of the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)."
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.custom: ""
 ms.date: 09/26/2024
+ms.update-cycle: 3650-days
 ms.subservice: guidance-toolkit
 ms.topic: install-set-up-deploy
 ms.reviewer: sericks

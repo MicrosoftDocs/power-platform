@@ -14,8 +14,6 @@ search.audienceType:
 
 # How is an email record owner determined
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 When server-side sync or App for Outlook synchronizes an email message to Dynamics 365, the system determines the email owner based on the following factors: 
 1. The system evaluates the **To**, **Cc**, and **Bcc** recipient list in order until an appropriate owner is found. The owner is selected from the first recipient list  it’s found in. The system checks each recipient and verifies that the owner of the associated mailbox is authorized to be the owner of the email. Eligibility is based on whether the owner of the mailbox associated with the recipient can also modify email records.
 
