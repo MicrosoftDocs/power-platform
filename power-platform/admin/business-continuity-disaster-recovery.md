@@ -146,7 +146,7 @@ We recommend that you perform disaster recovery drills or an emergency response 
 
 ## Frequently asked questions (FAQs)
 
-### Why use self-service disaster recover?
+### Why use self-service disaster recovery?
 
 Super storms, natural calamities, and unforeseen political uncertainties that have the potential to bring an entire region down are becoming more common. To minimize the impact of a disaster that brings an entire region down, it's advisable to maintain an asynchronous copy in a remote region. You may want to maintain a copy in remote region for compliance audits, as well. 
 
@@ -155,7 +155,7 @@ Self-service disaster recovery gives you control to fail over to a secondary reg
 ### Why do I need self-service disaster recovery if I already have a secondary copy maintained in a remote, secondary region? 
 For the public cloud, there are no secondary copies being maintained in a remote, secondary region if self-service disaster recovery hasn't been turned on.
 
-We maintain at least two&mdash;and in some cases, three&mdash;synchronous copies of production environments within a region, at no extra cost to the customer. These are hosted in availability zones in physically-separated data centers with independent power, cooling, and networking, in compliance with legislated data residency regulations.  
+We maintain at least two&mdash;and in some cases, three&mdash;synchronous copies of production environments within a region, at no extra cost to the customer. These are hosted in availability zones in physically separated data centers with independent power, cooling, and networking, in compliance with legislated data residency regulations.  
 
 With the implementation of [availability zones](/azure/reliability/availability-zones-overview?tabs=azure-cli), these cross-region copies were redundant. Recovering from these copies was a complex and manual process that affected recovery times.   
  
@@ -183,12 +183,12 @@ With the implementation of [availability zones](/azure/reliability/availability-
 If there's a regional outage, the system supports failover only to the designated secondary region as part of self-service disaster recovery. It doesn't support switching to any other arbitrary region.
 
 ### Is my region supported for self-service disaster recovery?
-Selt-service disaster recovery takes a dependency on Azure region pairs. Regions that dont have a regional Azure pair aren't supported. Learn more at [Azure supported regions](/azure/reliability/regions-list). 
+Self-service disaster recovery takes a dependency on Azure region pairs. Regions that don't have a regional Azure pair aren't supported. Learn more at [Azure supported regions](/azure/reliability/regions-list). 
 
 As of November 2025,  austriaeast, belgiumcentral, chilecentral, indonesiacentral, israelcentral, italynorth, malaysiawest, mexicocentral, newzealandnorth, and polandcentral are single regions and aren't supported. Once a region gets a regional pair, it's on our roadmap for Power Platform geo build-out and for supporting self-service disaster. 
 
 > [!NOTE]
-> UAE, Brazil, and South Africa have regional pairs in constrained regions and are on the roadmap for Power Platform geo buildout followed by self-service disaster recovery support. Geo build-out prioritization are influenced by impact, opportunity, and resource constraints. 
+> UAE, Brazil, and South Africa have regional pairs in constrained regions and are on the roadmap for Power Platform geo buildout followed by self-service disaster recovery support. Geo build-out prioritization is influenced by impact, opportunity, and resource constraints. 
 
 ### What should I know about the capacity experience?
 
@@ -222,7 +222,7 @@ As of October 2025:
 Microsoft reserves the rights to disclose the exact details of where the customer's data is residing for security and if it may need to be moved or replicated for various, high availability and resiliency scenarios. Customers can be assured that their data at rest respects geographical boundaries and abides by legislated residency laws. Even if self-service disaster recovery isn't turned on, Microsoft reserves the right to replicate, move, and relocate the data within a region for high availability and operational needs. The location of customer data within a geography (for example, _APAC_) isn't disclosed and may change based on Azure capacity constraints.
 
 ### Is Field service supported for self-service disaster recovery?
-Field service now supports self-service disaster recovery. You can now manage work orders, scheduling, inventory, and customer communications in one unified platform and in case of a disaster, fail over your automated service workflows, orders, inventory, and dispatching to a remote region for business continuity.
+Field service now supports self-service disaster recovery. You can now manage work orders, scheduling, inventory, and customer communications in one unified platform and in a disaster, fail over your automated service workflows, orders, inventory, and dispatching to a remote region for business continuity.
 
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
 
