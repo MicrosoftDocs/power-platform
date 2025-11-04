@@ -1,17 +1,17 @@
 ---
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
-author: rashmansur
+author: Shivani Pradhan
 ms.date: 10/21/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
-ms.author: rashmim 
+ms.author:  shpradha
 ms.custom: NewPPAC
 search.audienceType: 
  - admin
 contributors:
- - shpradha
+ - rashmim
  - isaacwinoto
  - himakurada
  - jasunil
@@ -180,7 +180,10 @@ With the implementation of [availability zones](/azure/reliability/availability-
 
 ### Can I switch regions during a regional outage?
 
-If there's a regional outage, the system supports failover to the designated secondary region as part of self-service disaster recovery. However, it doesn't allow switching to any other arbitrary regions.
+If there's a regional outage, the system supports failover only to the designated secondary region as part of self-service disaster recovery. It doesn't support switching to any other arbitrary region.
+
+### Is my region supported for SSDR?
+SSDR takes a dependency on Azure region pairs. Regions that dont have a regional Azure pair are not supported. learn more at [Azure supported regions](https://learn.microsoft.com/en-us/azure/reliability/regions-list) As of Nov 2025,  austriaeast, belgiumcentral, chilecentral, indonesiacentral, israelcentral, italynorth, malaysiawest, mexicocentral, newzealandnorth, and polandcentral are single regions and are not supported. Once a region gets a regional pair, it is on our roadmap for Power platform geo buildout and for supporting SSDR. Please note, UAE, Brazil, South Africa have regional pairs in constrained regions and are on the roadmap for Power platform geo buildout followed by SSDR support. Geo buildout prioritization are influenced by impact, opportunity, and resource constraints. 
 
 ### What should I know about the capacity experience?
 
