@@ -90,7 +90,7 @@ To run PowerShell cmdlets for app creators:
     Add-PowerAppsAccount -Username user@contoso.com -Password $pass
     ```
 
-1. Optionally, a specific endpoint can be targeted. The default endpoint is `prod`. If a user wants to run a PowerShell script targeting an environment in a non-production region, such as GCC, the `-Endpoint` parameter can be changed to `usgov` for GCC Moderate, or `usgovhigh` for GCC High, or `dod` for GCC DOD. The full list of endpoints supported is: "prod,preview,tip1,tip2,usgov,usgovhigh,dod,china".
+1. Optionally, a specific endpoint can be targeted. The default endpoint is `prod`. If a user wants to run a PowerShell script targeting an environment in a nonproduction region, such as GCC, the `-Endpoint` parameter can be changed to `usgov` for GCC Moderate, or `usgovhigh` for GCC High, or `dod` for GCC DOD. The full list of endpoints supported is: "prod,preview,tip1,tip2,usgov,usgovhigh,dod,china".
 
     ```powershell
     # An environment in another region, such as GCC, can be targeted using the -Endpoint parameter.
@@ -497,7 +497,7 @@ For technical details, see [Add-AdminFlowsToSolution](/powershell/module/microso
 Get-AdminFlowWithHttpAction -EnvironmentName <String>
 ```
 
-Lists flows with HTTP action(s).
+Lists flows with HTTP actions.
 
 |DisplayName  |FlowName  |EnvironmentName  |
 |---------|---------|---------|
