@@ -31,6 +31,11 @@ This option significantly slows down the import process and is generally discour
 
 Publish customizations is only needed after importing unmanaged solutions and shouldn't be used for managed solutions as it would slow down the deployment. *Note*: The **Publish All Customizations** option doesn't apply only to the selected solution. It publishes all pending changes across the entire environment.
 
+
+> [!NOTE]
+> When you enable a language, the first import of every solution will be slower.
+
+
 The table below lists the option names used across the available tools:
 
 |PP Build Tools|PAC CLI   |UI|Pipelines in Power Platform
