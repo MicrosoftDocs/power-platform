@@ -182,8 +182,13 @@ With the implementation of [availability zones](/azure/reliability/availability-
 
 If there's a regional outage, the system supports failover only to the designated secondary region as part of self-service disaster recovery. It doesn't support switching to any other arbitrary region.
 
-### Is my region supported for SSDR?
-SSDR takes a dependency on Azure region pairs. Regions that dont have a regional Azure pair are not supported. learn more at [Azure supported regions](https://learn.microsoft.com/en-us/azure/reliability/regions-list) As of Nov 2025,  austriaeast, belgiumcentral, chilecentral, indonesiacentral, israelcentral, italynorth, malaysiawest, mexicocentral, newzealandnorth, and polandcentral are single regions and are not supported. Once a region gets a regional pair, it is on our roadmap for Power platform geo buildout and for supporting SSDR. Please note, UAE, Brazil, South Africa have regional pairs in constrained regions and are on the roadmap for Power platform geo buildout followed by SSDR support. Geo buildout prioritization are influenced by impact, opportunity, and resource constraints. 
+### Is my region supported for self-service disaster recovery?
+Selt-service disaster recovery takes a dependency on Azure region pairs. Regions that dont have a regional Azure pair aren't supported. Learn more at [Azure supported regions](/azure/reliability/regions-list). 
+
+As of November 2025,  austriaeast, belgiumcentral, chilecentral, indonesiacentral, israelcentral, italynorth, malaysiawest, mexicocentral, newzealandnorth, and polandcentral are single regions and aren't supported. Once a region gets a regional pair, it's on our roadmap for Power Platform geo build-out and for supporting self-service disaster. 
+
+> [!NOTE]
+> UAE, Brazil, and South Africa have regional pairs in constrained regions and are on the roadmap for Power Platform geo buildout followed by self-service disaster recovery support. Geo build-out prioritization are influenced by impact, opportunity, and resource constraints. 
 
 ### What should I know about the capacity experience?
 
