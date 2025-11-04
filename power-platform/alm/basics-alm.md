@@ -6,11 +6,12 @@ author: Mattp123
 ms.subservice: alm
 ms.author: swatim
 ms.custom: ""
-ms.date: 01/30/2025
+ms.date: 01/04/2025
 ms.reviewer: "matp"
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+contributors: SabrinaDiBartolomeo
 applies_to: 
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"
@@ -94,20 +95,16 @@ Nearly every source control system has some form of branching and merging suppor
 
 ### Source control process using a solution
 
-In the [Organize Solutions](/power-platform/alm/organize-solutions) section, you’ll learn about using either a single-solution or multiple-solution approach. After choosing your strategy, it’s recommended to store each solution’s source code in a source control system. This section explains how to work with the source code of a solution.
+In the [Organize your solutions](/power-platform/alm/organize-solutions) article, you learn about using either a single-solution or multiple-solution approach. After choosing your strategy, we recommend that you store each solution’s source code in a source control system.
 
 There are several way how you can export the source code of the solution to the source control system:
 
-- use the [Power Platform Git Integration](/power-platform/alm/git-integration/overview)
-- create your own Pipeline:
-   - usign the [Build tool tasks](devops-build-tool-tasks.md#build-and-release-pipelines).
-   - usign a yaml Pipeline.
+- Use the [Power Platform Git Integration](/power-platform/alm/git-integration/overview)
+- Create your own pipeline:
+   - Using the [Build tool tasks](devops-build-tool-tasks.md#build-and-release-pipelines).
+   - [Using a YAML pipeline](devops-build-tool-tasks.md#solution-tasks).
 
-...
-
-![Source control by using a solution.](media/build-pipeline-alm.png "Source control by using a solution")
-
-More information: [Build tool tasks](devops-build-tool-tasks.md#build-and-release-pipelines)
+:::image type="content" source="media/build-pipeline-alm.png" alt-text="Source control by using a solution" lightbox="media/build-pipeline-alm.png":::
 
 ## Automation
 
