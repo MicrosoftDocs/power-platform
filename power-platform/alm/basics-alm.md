@@ -97,7 +97,7 @@ Nearly every source control system has some form of branching and merging suppor
 
 In the [Organize your solutions](/power-platform/alm/organize-solutions) article, you learn about using either a single-solution or multiple-solution approach. After choosing your strategy, we recommend that you store each solution’s source code in a source control system.
 
-There are several way how you can export the source code of the solution to the source control system:
+There are a few ways you can export the source code of the solution to the source control system:
 
 - Use the [Power Platform Git Integration](/power-platform/alm/git-integration/overview)
 - Create your own pipeline:

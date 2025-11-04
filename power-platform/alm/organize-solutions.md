@@ -75,19 +75,6 @@ Recommended for:
 
 This strategy involves developing each unmanaged solution in its own isolated Dataverse development environment. This strategy is commonly used in modular architectures where, for example, different applications—such as Sales, Customer Service, or Field Service—are built and maintained independently. A base solution containing common components (for example, account and contact tables) is created and deployed as a managed solution into each app-specific development environment. Each app then has its own unmanaged solution, layered on top of the base managed solution, allowing teams to extend functionality without altering the base foundation.
 
-## How to build your solution layering
-
-> [!NOTE]
-> Before you create the solutions in the following steps, use the same publisher for all your solutions across your environments. More information: [Solution publisher](solution-concepts-alm.md#solution-publisher)
-
-1. In the "base" development environment, you have your base solution with the common unmanaged tables and no other tables. Then export this solution as managed.
-1. You set up a second development environment for the extension or "app" layer that will later reside on top of the base layer.  
-1. You import the managed base layer into the app layer development environment and create an unmanaged solution for the app layer.
-   :::image type="content" source="media/proper-solution-layering.png" alt-text="Proper solution layering using multiple solutions with multiple environments.":::
-1. You can now extend the data model by adding additional tables, columns, table relationships, plugins, flows, and so on, to the specific "app" solution. Then, export the app solution as managed. Notice that the app solution still depends on the base layer solution, but managing multiple solutions this way is a better approach. Consider the example mentioned before of the flow that relies on a custom column. In most cases, both the custom column and the flow reside in the same app solution. But even if the custom column is part of the base solution, you must complete and deploy that base solution as managed first, otherwise, the flow inside the app solution can't even be created.
-1. In your production environment, you import the managed base layer and then import the managed app layer. This creates two managed layers in the environment with clear dependencies between the managed solutions.
-1. Repeat this pattern to have as many different solutions as you need to maintain. Although we recommend that you keep the number of solutions as small as possible to keep your solution layering manageable.
-
 Recommended for:
 
 - Large-scale enterprise projects.
@@ -101,6 +88,19 @@ Recommended for:
 |Easier to implement automated testing and DevOps practices.     |  More complex deployment.      |
 |Smaller solutions are faster to deploy, especially in CI/CD pipelines if you have to deploy only a specific app.     |        |
 |Bugs or regressions are easier to trace when changes are isolated to specific modules.     |        |
+
+### How to build your solution layering
+
+> [!NOTE]
+> Before you create the solutions in the following steps, use the same publisher for all your solutions across your environments. More information: [Solution publisher](solution-concepts-alm.md#solution-publisher)
+
+1. In the "base" development environment, you have your base solution with the common unmanaged tables and no other tables. Then export this solution as managed.
+1. You set up a second development environment for the extension or "app" layer that will later reside on top of the base layer.  
+1. You import the managed base layer into the app layer development environment and create an unmanaged solution for the app layer.
+   :::image type="content" source="media/proper-solution-layering.png" alt-text="Proper solution layering using multiple solutions with multiple environments.":::
+1. You can now extend the data model by adding additional tables, columns, table relationships, plugins, flows, and so on, to the specific "app" solution. Then, export the app solution as managed. Notice that the app solution still depends on the base layer solution, but managing multiple solutions this way is a better approach. Consider the example mentioned before of the flow that relies on a custom column. In most cases, both the custom column and the flow reside in the same app solution. But even if the custom column is part of the base solution, you must complete and deploy that base solution as managed first, otherwise, the flow inside the app solution can't even be created.
+1. In your production environment, you import the managed base layer and then import the managed app layer. This creates two managed layers in the environment with clear dependencies between the managed solutions.
+1. Repeat this pattern to have as many different solutions as you need to maintain. Although we recommend that you keep the number of solutions as small as possible to keep your solution layering manageable.
 
 ## Related articles
 
