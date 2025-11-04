@@ -169,7 +169,7 @@ With the implementation of [availability zones](/azure/reliability/availability-
   For example, suppose a user has 10-GB capacity consumption in the primary location. When self-service disaster recovery is turned on, a copy of data is created in the remote secondary region and this copy consumes another 10 GB. You can pay for this 10 GB in the secondary region through storage entitlements. Only if you exceed your available free storage or available entitlements does a pay-as-you-go plan actively start billing.
   
 - Pay-as-you-go is designed to generate various alerts and warnings at various thresholds to warn administrators of depleting storage. Use the alert mechanism to your advantage.
-- Pay-as-you-go links the selected environment to the Azure subscription by using a billing policy. Once you link an environment to an Azure subscription, the usage of apps and any Dataverse or Power Platform usage that goes above the included storage amounts are billed against the Azure subscription by using Azure meters. For more information, see [Pay-as-you-go meters](pay-as-you-go-meters.md). If you acquire more storage entitlements, the pay-as-you-go plan stops running the meters and consuming from available free storage and entitlements take precedence. 
+- Pay-as-you-go links the selected environment to the Azure subscription by using a billing policy. Once you link an environment to an Azure subscription, the usage of apps and any Dataverse or Power Platform usage that goes above the included storage amounts are billed against the Azure subscription by using Azure meters. For more information, go to [Pay-as-you-go meters](pay-as-you-go-meters.md). If you acquire more storage entitlements, the pay-as-you-go plan stops running the meters and consuming from available free storage and entitlements take precedence. 
 
 ### How does billing work for self-service disaster recovery?
 
@@ -183,7 +183,7 @@ With the implementation of [availability zones](/azure/reliability/availability-
 If there's a regional outage, the system supports failover only to the designated secondary region as part of self-service disaster recovery. It doesn't support switching to any other arbitrary region.
 
 ### Is my region supported for self-service disaster recovery?
-Self-service disaster recovery depends on Azure region pairs. Regions that don't have a regional Azure pair aren't supported. For more information, see [Azure supported regions](/azure/reliability/regions-list). 
+Self-service disaster recovery depends on Azure region pairs. Regions that don't have a regional Azure pair aren't supported. For more information, go to [Azure supported regions](/azure/reliability/regions-list). 
 
 As of November 2025,  Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported. Once a region gets a regional pair, it's on our roadmap for Power Platform geo build-out and for supporting self-service disaster. 
 
