@@ -14,6 +14,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Filter","Search","LookUp"]
 ---
 
 # Filter, Search, and LookUp functions

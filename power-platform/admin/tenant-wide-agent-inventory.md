@@ -4,7 +4,7 @@ description: Learn how to get visibility into all Microsoft Copilot Studio agent
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/28/2025
+ms.date: 10/01/2025
 ms.custom: NewPPAC
 author: mikferland-msft
 ms.author: miferlan
@@ -88,7 +88,7 @@ To clear all filters and sorts, select any column and select **Clear all filters
 
 ## Known limitations
 
-- **Limited scope**: This experience supports only agents built directly in Copilot Studio. Agents that are created in Copilot Studio agent builder, in the Microsoft 365 Copilot app, aren't supported in this release.
+- **Limited scope**: This experience supports only agents built directly in Copilot Studio. Agents that were created in the Microsoft 365 Copilot app, aren't supported in this release.
 - **Data refresh frequency**: Inventory data updates once every 24 hours. Newly created agents might take up to 24 hours to appear, and deleted agents might remain visible for up to 48 hours after removal.
 - **Item display limit**: The inventory page displays a maximum of 500 agents at one time. If more than 500 agents match your search or filter criteria, only the first 500 are displayed. Use more filters to narrow down your results. The primary search box, at the top of the page, only searches across those 500 agents.
 

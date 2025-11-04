@@ -4,7 +4,7 @@ description: Learn how to use the Monitor > Overview page to monitor and improve
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/06/2025
+ms.date: 10/10/2025
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
@@ -20,7 +20,7 @@ contributors:
 
 Your organization can use the **Monitor** area of the Power Platform admin center to measure and improve operational health metrics of resources that are built or deployed. Those resources include apps and flows. 
 
-The **Monitor** experience is available to both makers (in experiences such as [Power Apps](https://make.powerapps.com/)) and admins (in experiences such as the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)). Makers use the data to improve their resources. Admins use it to understand aggregate operational health in the tenant or in specific environments. Metrics are calculated by aggregating daily event logs from runtime activity. Recommendations are calculated from the following sources:
+The **Monitor** experience is available to both makers (in experiences such as [Power Apps](https://make.powerapps.com/)) and admins (in experiences such as the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)). Makers use the data to improve their resources. Admins use it to understand aggregate operational health in the tenant or in specific environments. Metrics are calculated by aggregating daily event logs from runtime activity; they're not real-time. Recommendations are calculated from the following sources:
 
 - Aggregation of runtime event logs to highlight a measurable opportunity for improving a health metric
 - Static analysis of resource properties that can be changed to improve a health metric
@@ -79,7 +79,7 @@ For resources that are available in the Monitor experience, you can learn more a
 | Power Apps | Model-driven apps | Generally available | Generally available |
 | Power Automate | Cloud flows | Generally available | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Power Automate | Desktop flows | Generally available | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
-| Power Automate | Work queue | Not yet available| Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
+| Power Automate | Work queue | Public preview | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Dataverse | Dataverse | Not yet available | Not yet available |
 | Copilot Studio | Copilot Studio agents | Not yet available | Not yet available |
 | Dynamics 365 | Apps | Not yet available | Not yet available |

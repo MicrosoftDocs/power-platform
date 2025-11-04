@@ -58,11 +58,11 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 
 - **Power Platform Solution** is a solution.
 
-- **PVA** is a bot in Copilot Studio.
+- **Microsoft Copilot Studio** is a bot in Copilot Studio.
 
-- **PVA Component** is a Copilot Studio component, such as a _topic_.
+- **Microsoft Copilot Studio Component** is a Copilot Studio component, such as a _topic_.
 
-- **PVA Component Flow Lookup** is a flow triggered as part of Copilot Studio.
+- **Microsoft Copilot Studio Component Flow Lookup** is a flow triggered as part of Copilot Studio.
 
 #### Users
 
