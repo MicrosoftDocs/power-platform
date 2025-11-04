@@ -66,7 +66,7 @@ All customizations are grouped into one unmanaged solution during development, w
 - When multiple developers work in the same development environment, they risk overwriting each other’s changes. This risk can be reduced by implementing source code versioning, adopting a branching strategy, and using a dedicated development environment for each branch. Source code versioning and branching strategy provide change tracking, collaboration support, and conflict resolution mechanisms. See [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance?view=azure-devops).
 
 > [!NOTE]
-> Recent improvements in Microsoft Power Platform have significantly reduced import times for managed solutions, including those using the Upgrade option. These optimizations include better handling of component dependencies and reduced overhead for unchanged components. As a result, even large managed solutions deploy faster and more reliably across environments. To learn how to take full advantage of these improvements, see [performance recommendations](./performance-recommendations.md).
+> Recent improvements in Microsoft Power Platform have significantly reduced import times for managed solutions, including those using the Upgrade option. These optimizations include better handling of component dependencies and reduced overhead for unchanged components. To learn how to take full advantage of these improvements, see [performance recommendations](./performance-recommendations.md).
 
 ## Multiple Solutions in the Same Development Environment
 
