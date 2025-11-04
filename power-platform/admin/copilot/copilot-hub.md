@@ -4,13 +4,14 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 10/31/2025
+ms.date: 11/03/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
 search.audienceType:
   - admin
 contributors:
+  - udaykirang 
   - jordanchodak
   - JesseParsons
 ---
@@ -82,7 +83,7 @@ Admins can access detailed usage analytics and apply governance controls tailore
 
 ### Dynamics 365 Sales
 
-Admins can view usage analytics for Copilot in Dynamics 365 Sales on the **Dynamics 365 Sales** page to understand the value that end users get from AI in Dynamics 365 Sales. The page includes monthly active user count information for Copilot in Dynamics 365 Sales, and the number of actions taken. Furthermore, admins can look into each agent by selecting them from the bottom table view. This opens a panel where you can see top environments and investigate those to see apps where users are interacting with each agent the most.
+Admins can view usage analytics for Copilot in Dynamics 365 Sales on the **Dynamics 365 Sales** page to understand the value that end users get from AI in Dynamics 365 Sales. The page includes monthly active user count information for Copilot in Dynamics 365 Sales. Furthermore, admins can look into Copilot by selecting it from the bottom table view. This opens a panel where you can see top environments and investigate those to see apps where users are interacting with Copilot the most.
 
 # [Classic admin center](#tab/classic)
 
