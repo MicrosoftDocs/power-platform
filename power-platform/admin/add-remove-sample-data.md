@@ -2,29 +2,31 @@
 title: "Add or remove sample data  | MicrosoftDocs"
 description: Add or remove sample data
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/07/2021
+ms.date: 9/1/2025
 ms.subservice: admin
 ms.author: sericks
+ms.reviewer: sericks
+ms.contributors:
+  - sericks
+  - syalandur
+contributors:
+  - sericks007
+  - syalandur24
 search.audienceType: 
   - admin
 ---
-# Add or remove sample data 
+# Add or remove sample data
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
-Sample data gives you something to experiment with as you learn customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and helps you see how data is organized in the system. At some point, you'll probably want to remove the sample data.  
-  
- Or, if sample data isn't installed on your system, you may want to add it for training purposes. Later, when you're ready, you can remove it.  
+You can use sample data in your Power Platform deployment to help you learn customer engagement apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation. Sample data helps you understand how data is organized in the system. You can install sample data on your system for training purposes or remove it based on your requirements.
   
 > [!IMPORTANT]
-> Use sample data to learn and play around with system features. However, to avoid unwanted results, don't associate it with any data you actually need.  
+> You can use sample data to learn and understand various features of the customer engagement apps. However, to avoid unwanted results, don't associate it with any production data.  
 
 ## In the Power Platform admin center
 
-1. Make sure you have the System Administrator security role or equivalent permissions.
+1. Ensure that you have the System Administrator security role or equivalent permissions.
   
     Check your security role  
   
@@ -32,15 +34,17 @@ Sample data gives you something to experiment with as you learn customer engagem
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
+2. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-3. Select **Environments** in the left navigation pane, select your environment, and then select **Settings** on the top menu bar.
+3. In the navigation pane, select **Manage**.
 
-4. Select **Data management** to expand the category, then select **Sample data**.
+4. In the **Manage** pane, select **Environments**, and then choose an environment for which you want to install sample data.
+
+5. Select **Settings** on the top menu bar.
+
+6. In the search box under **Settings**, enter **Sample data**. The Sample data screens loads in a separate tab and provides information on whether your environment has sample data installed.
   
-5. A message appears that tells you whether the sample data is installed.  
-  
-6. Select an action at the bottom of the screen:  
+7. Select an action at the bottom of the screen:  
   
    - **Remove Sample Data**, and then select **Close**.  
    - **Install Sample Data**, and then select **Close**.  

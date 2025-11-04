@@ -4,8 +4,8 @@ description: Discover how Daimler Truck modernized policy management using Power
 #customer intent: As a business decision maker, I want to evaluate the benefits of using Power Apps, Dataverse, and Managed Environments for policy management so that I can improve operational efficiency and reduce costs.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.subservice: case-study
 ms.topic: overview
 ms.date: 08/20/2025
 ms.custom:

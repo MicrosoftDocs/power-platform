@@ -4,7 +4,7 @@ description: Learn how Azure Virtual Network support enhances the security, conn
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/02/2025
+ms.date: 09/22/2025
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -17,8 +17,6 @@ ms.custom:
 ---
 
 # Virtual Network support white paper
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Your organization can use Azure Virtual Network to ensure that its Power Platform services operate in a secure and controlled network environment, reducing the risk of data breaches and unauthorized access. This white paper provides an in-depth analysis of Azure Virtual Network support in Power Platform. It highlights key benefits, outlines the implementation process and technical architecture, discusses real-world use cases, and offers practical insights from a successful case study, making it a valuable resource for IT professionals and decision-makers looking to enhance their network security and operational efficiency benefit.
 
@@ -273,3 +271,4 @@ Virtual Network support for Power Platform is a crucial feature that allows orga
 - [Set up Virtual Network support for Power Platform](vnet-support-setup-configure.md)
 - [What is subnet delegation?](/azure/virtual-network/subnet-delegation-overview)
 - [Understanding Azure Network Pricing](https://azurenavigator.com/understanding-azure-network-pricing/)
+- [Troubleshoot Virtual Network issues](/troubleshoot/power-platform/administration/virtual-network)

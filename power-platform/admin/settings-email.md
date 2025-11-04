@@ -15,8 +15,6 @@ search.audienceType:
 ---
 # Manage email settings
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can use email settings to adjust how features appear and function in Dynamics 365 model-driven apps, such as Dynamics 365 Sales and Customer Service.
 
 The email settings can be found in the Power Platform admin center.

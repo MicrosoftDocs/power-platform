@@ -15,8 +15,6 @@ search.audienceType:
 ---
 # Block access by location with Microsoft Entra Conditional Access
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can limit access to users with block access by location to reduce unauthorized access. By using Conditional Access policies, you can apply the right access controls when needed to help keep your organization secure and stay out of your user's way when not needed. Conditional Access analyses signals such as user, device, and location to automate decisions and enforce organizational access policies for resources. For example, when location restrictions are set in a user’s profile and the user tries to sign in from a blocked location, access to customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, Dynamics 365 Project Service Automation), and finance and operations apps are denied. For more information about Conditional Access, see the [Conditional Access](/azure/active-directory/conditional-access/) documentation.
 
 **Requirements**  

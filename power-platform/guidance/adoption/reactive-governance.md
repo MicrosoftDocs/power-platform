@@ -7,7 +7,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 ms.date: 08/18/2025
 ---
 
@@ -22,21 +22,21 @@ Reactive governance focuses on responding to recommendations and optimizing perf
 - **Business continuity risks:**
     - **Ownerless resources**: Resources owned by individuals who leave the organization create business continuity risks.
     - **High-value resources in the default environment**: Resources in the default environment might not follow application lifecycle management (ALM) best practices, posing a business continuity risk. 
-    - **Use the [Actions page](../../admin/power-platform-advisor.md)** to identify and take action on resources that pose business continuity risks.
+    - **Use the [actions page](../../admin/power-platform-advisor.md)** to identify and take action on resources that pose business continuity risks.
 
 - **Tenant hygiene:**
     - **Overshared resources**: Overshared resources can lead to security vulnerabilities and inefficiencies. 
     - **Inactive resources**: Resources not used with a specified time frame require review and potential deletion to free resources and maintain a clean environment. 
-    - **Use the [Actions page](../../admin/power-platform-advisor.md)** to identify and take action on resources that pose business continuity risks.
+    - **Use the [actions page](../../admin/power-platform-advisor.md)** to identify and take action on resources that pose business continuity risks.
 
 - **Licenses:**
-    - **Pending license requests**: Manage pending license requests promptly to ensure users have the necessary access to perform their tasks efficiently. Use the [Actions page](../../admin/power-platform-advisor.md) to identify and take action on resources that pose business continuity risks. 
+    - **Pending license requests**: Manage pending license requests promptly to ensure users have the necessary access to perform their tasks efficiently. Use the [actions page](../../admin/power-platform-advisor.md) to identify and take action on resources that pose business continuity risks. 
     - **Intelligent licensing recommendations**: Review [recommendations](../../admin/get-recommendations-licensing.md) about who in your organization would benefit from having a Power Apps premium license.
 
 - **Change requests and approvals:**
     - **Requests for new environments**: Implement an approval workflow for new environment requests to ensure they align with organizational needs and governance policies. 
-    - **Changes to DLP policies**: Data loss prevention (DLP) policies protect sensitive data. Any changes to these policies should go through a formal approval process to maintain security and compliance.
-    - **Review [environment and DLP request components](../coe/env-mgmt.md) in the CoE Starter Kit** to automate these processes. 
+    - **Changes to data policies**: Data policies protect sensitive data. Any changes to these policies should go through a formal approval process to maintain security and compliance.
+    - **Review [environment and data policy request components](../coe/env-mgmt.md) in the CoE Starter Kit** to automate these processes. 
 
 - **Changes to user management**: Managing user roles and permissions is vital for security. Implement workflows to approve changes in user management, ensuring they comply with governance standards.
 
@@ -44,7 +44,7 @@ Reactive governance focuses on responding to recommendations and optimizing perf
 
 ## Tools for reactive governance 
 
-The **[Actions page](../../admin/power-platform-advisor.md)** provides insights and recommendations to optimize Power Platform usage and performance. By regularly reviewing Power Advisor's suggestions, organizations can identify best practices, performance improvements, and security enhancements. These recommendations help in addressing issues proactively and refining governance practices to ensure the platform operates efficiently and securely.
+The **[actions page](../../admin/power-platform-advisor.md)** provides insights and recommendations to optimize Power Platform usage and performance. By regularly reviewing Power Advisor's suggestions, organizations can identify best practices, performance improvements, and security enhancements. These recommendations help in addressing issues proactively and refining governance practices to ensure the platform operates efficiently and securely.
 
 The **[CoE Starter Kit](../coe/starter-kit.md)** is a comprehensive set of tools and templates designed to help organizations establish and maintain a Center of Excellence for Power Platform. It includes components for monitoring, reporting, and managing environments, apps, and flows. The CoE Starter Kit implements sample reactive governance processes that you can learn from and amend to your own requirements.
 
@@ -79,7 +79,7 @@ It's important to understand what happens if your organization stops using Manag
 | Maker welcome | Indirect: They stop seeing the welcome message when they enter the environment. | Indirect: They can't define customized welcome messages in environments. |
 | Limit sharing | Direct: They can share their apps with any security groups and users. | Indirect: They can't control how apps in the environment are being shared. |
 | Usage insights| None | Direct: They, and any other recipients, stop receiving the weekly email digest. |
-| Data policies | None | Indirect: DLPs are enforced, but admins can't apply multiple DLPs to the environment. |
+| Data policies | None | Indirect: Data policies are enforced, but admins can't apply multiple data policies to the environment. |
 | Pipelines in Power Platform | Direct: They can't use the pipelines to deploy their solutions. | None |
 | Solution checker enforcement | Indirect: They can import any solution without a check for errors, security, and noncompliant assets. | None |
 | Customer-managed key | None | Indirect: The feature is limited. |
@@ -173,7 +173,7 @@ Admins can set sharing limits in the Starter Kit, but they can't be proactively 
 **Managed Environments feature:** Data policies
 **Available in CoE Starter Kit:** Yes
 
-The CoE Starter Kit includes a DLP impact tool that's useful in understanding the effect on an environment of activating or deactivating specific DLPs.
+The CoE Starter Kit includes a Data Policy Impact Analysis tool that's useful in understanding the effect on an environment of activating or deactivating specific data policies.
 
 **Managed Environments feature:** Weekly digest
 **Available in CoE Starter Kit:** Partially

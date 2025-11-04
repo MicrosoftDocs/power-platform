@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 ms.contributors: 
 - vabhavir
 ---
@@ -29,7 +29,7 @@ A CoE serves as a centralized team or function that oversees the administration,
 
 Typical objectives for establishing a Center of Excellence with governance patterns and practices are:
 
-- **Standardize governance patterns and practices**: Establish consistent governance frameworks and best practices to ensure uniformity across the organization. Consider setting up an [environment strategy](../environment-strategy.md), [configuring data loss prevention policies](../dlp-strategy.md), and [automating policies using management connectors](../reactive-governance.md).
+- **Standardize governance patterns and practices**: Establish consistent governance frameworks and best practices to ensure uniformity across the organization. Consider setting up an [environment strategy](../environment-strategy.md), [configuring data policies](../dlp-strategy.md), and [automating policies using management connectors](../reactive-governance.md).
 - **Document and share governance policies**: Develop comprehensive documentation that outlines governance policies, procedures, and guidelines. Ensure that all stakeholders have access to and understand these documents to maintain consistency and compliance. [Create a SharePoint communication site](../wiki-community.md#sharepoint-communication-site) to share rules of engagement and guidelines with your community.
 - **Define and communicate roles and responsibilities**: Assign specific [roles and responsibilities](../roles.md) to team members involved with the CoE. Clearly communicate these roles to ensure accountability and effective collaboration. 
 - **Foster innovation and trust**: Implement governance practices that encourage innovation while maintaining control and compliance. Provide a secure and scalable environment for users to experiment and innovate.
@@ -89,11 +89,11 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for est
 - **Standardize governance patterns and practices**:
     - [Define and implement application lifecycle management (ALM)](../alm.md) processes to streamline and manage app deployments, ensuring consistency and efficiency across all stages of the application lifecycle.
     - Develop and publish a catalog of [reusable app templates and components](../reusable.md) to help makers build with a reliable, reusable toolkit. Templates reduce development time and promote best practices.
-    - [Document your Data Loss Prevention (DLP) policy strategy](../dlp-strategy.md), [environment strategy](../environment-strategy.md), and [use case prioritization process](../solution-envisioning.md). [Publish this documentation](../wiki-community.md#sharepoint-communication-site) internally to ensure all stakeholders and makers have access to important information and guidelines.
+    - [Document your data policy strategy](../dlp-strategy.md), [environment strategy](../environment-strategy.md), and [use case prioritization process](../solution-envisioning.md). [Publish this documentation](../wiki-community.md#sharepoint-communication-site) internally to ensure all stakeholders and makers have access to important information and guidelines.
     - Publish a comprehensive strategy and version-controlled governance documentation to maintain transparency and accountability in platform management.
     - Create a Maker Portal, for example [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site), that includes onboarding collateral, development guidelines, self-guided learning resources, and success stories to support and inspire makers throughout their development journey.
     - Establish a detailed environment strategy that outlines the structure and management of different environments, ensuring optimal performance and security.
-    - Define app classifications and the corresponding Environment Strategy/DLP safeguards to support them, providing clear guidelines for app development and deployment.
+    - Define app classifications and the corresponding Environment Strategy/data protection safeguards to support them, providing clear guidelines for app development and deployment.
 - **Define and communicate roles and responsibilities**:
     - Establish foundational platform operating roles to provide clarity on "who does what" in managing the platform, ensuring efficient and effective operations.
     - Define and communicate app classifications and support tiers with clear Service Level Agreements (SLAs). Document each classification and support tier. Share the documentation with all users, providing clarity on the level of support and response times they can expect.
@@ -125,9 +125,9 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for est
     - Create and sustain a [Community of Practice for Power Platform](../community-goals.md) practitioners. This community should facilitate ideation, provide support, and offer mentorship opportunities. Encourage active participation through regular discussions, webinars, and collaborative projects.
     - Establish themes and trends to guide the development of reusable components and toolkits. Identify common use cases and best practices to create a library of reusable assets that can accelerate development and ensure consistency across projects.
 - **Safeguard data and facilitate informed decision making**:
-    - [Establish Data Loss Prevention (DLP) policies](../dlp-strategy.md) to protect sensitive information and ensure compliance with data protection regulations. Clearly document and share these policies, and ensure makers understand how to request new connectors or exceptions to policies based on their use cases.
-    - Align on a common DLP baseline with tracked divergence where necessary. Ensure that all stakeholders agree on the baseline policies, and document any deviations along with the rationale and impact of these divergences.
-    - Develop automation and alerting for key assurance controls. Implement automated processes to monitor compliance with DLP policies and generate alerts for any violations or potential risks. 
+    - [Establish data policies](../dlp-strategy.md) to protect sensitive information and ensure compliance with data protection regulations. Clearly document and share these policies, and ensure makers understand how to request new connectors or exceptions to policies based on their use cases.
+    - Align on a common data policy protection baseline with tracked divergence where necessary. Ensure that all stakeholders agree on the baseline policies, and document any deviations along with the rationale and impact of these divergences.
+    - Develop automation and alerting for key assurance controls. Implement automated processes to monitor compliance with data policies and generate alerts for any violations or potential risks. 
 - **Strive for continuous improvement**:
     - Develop a project pre/postmortem process to ensure lessons learned are actively applied. This process should include structured reviews before and after project completion to identify successes, challenges, and areas for improvement. Document these insights and integrate them into future projects to enhance overall performance.
     - Establish routine Center of Excellence (CoE) monitoring to ensure full visibility of how the platform is being used. Implement regular audits and reporting mechanisms to track usage patterns, compliance, and performance metrics. Regular monitoring helps maintain oversight and drive continuous improvement. 

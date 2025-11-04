@@ -14,8 +14,6 @@ ms.custom: sfi-ga-nochange
 ---
 # Plan for deployment and administration
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Your deployment will go more smoothly with some preliminary planning.  The following table lists some of the items to consider before you start the actual deployment process.  
 
 

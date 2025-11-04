@@ -4,7 +4,7 @@ description: Learn how the actions page helps admins manage licenses and capacit
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/28/2025
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -42,19 +42,6 @@ This recommendation lists the number of pending license requests in your tenant.
 > You must have adequate permissions on the Microsoft 365 admin center to assign licenses. If you don't have the right privileges, you may share the recommendation with someone in your organization who can assign the licenses to the requested users.
 
 - **Severity**: High  
-- **Refresh Frequency**: Weekly  
-- **Managed environments only**: Yes  
-
-### Assign licenses to active users using premium apps with standard licenses
-
-This recommendation lists users that are actively using Power Apps applications with Microsoft 365 under extended use rights and will be restricted starting April 1, 2025.
-
-Learn more about [Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications](/power-platform/admin/powerapps-flow-licensing-faq#what-are-microsoft-power-apps-and-power-automate-use-rights-for-microsoft-365-applications) with additional information about the April 1,2025 enforcement in the [Power Platform licensing FAQs](/power-platform/admin/powerapps-flow-licensing-faq).
-
-> [!NOTE]
-> This recommendation only checks for Power Apps premium plans and may show users from apps that use [Power Apps per app](about-powerapps-perapp.md) or [Pay-as-you-go](pay-as-you-go-overview.md) plans. Review if your apps use [per app plans](about-powerapps-perapp.md#step-3-set-up-apps-to-use-per-app-plans) or [pay-as-you-go plans](pay-as-you-go-set-up.md#set-up-pay-as-you-go-for-your-environment-from-your-apps-setting).
-
-- **Severity**: Medium  
 - **Refresh Frequency**: Weekly  
 - **Managed environments only**: Yes  
 

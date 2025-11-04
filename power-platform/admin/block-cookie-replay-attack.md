@@ -12,8 +12,6 @@ search.audienceType:
 ---
 # Safeguarding Dataverse sessions with IP cookie binding
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Prevent session hijacking exploits in Dataverse with IP address-based cookie binding. Let's say that a malicious user copies a valid session cookie from an authorized computer that has cookie IP binding enabled. The user then tries to use the cookie on a different computer to gain unauthorized access to Dataverse. In real time, Dataverse compares the IP address of the cookie's origin against the IP address of the computer making the request. If the two are different, the attempt is blocked, and an error message is shown.
 
 IP-based cookie binding is available only for [Managed Environments](managed-environment-licensing.md) across all tenants, including government clouds. You can enable this feature in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).

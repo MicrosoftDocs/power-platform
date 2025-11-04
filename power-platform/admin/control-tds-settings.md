@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Control access of the TDS endpoint
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The Tabular Data Stream (TDS) protocol is an application-level protocol used for the transfer of requests and responses between clients and database server systems. When enabled in a Power Platform environment, you can use this protocol to access Microsoft Dataverse using Power BI, Excel, and dataflows.
 
 The Dataverse TDS endpoint has two settings, which control the level of access to the TDS endpoint.

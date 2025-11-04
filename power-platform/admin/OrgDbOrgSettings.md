@@ -14,8 +14,6 @@ search.audienceType:
 
 # OrgDBOrgSettings for server-side synchronization
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 This topic covers the default values of OrgDBOrgSettings that are specific to server-side synchronization. For information about how to edit these settings, go to [Environment database settings](environment-database-settings.md).
 
 | Name | Default value | Description |

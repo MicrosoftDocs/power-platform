@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Permissions required for document management tasks
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The following table shows the default security roles or other permissions that are needed to perform each document management with [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] task.  
   
 > [!IMPORTANT]

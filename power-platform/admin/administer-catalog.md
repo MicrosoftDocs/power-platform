@@ -14,8 +14,6 @@ contributors:
 ---
 # Administer the catalog
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The catalog in Power Platform enables developers and makers to:
 
 - Crowd-source and find templates and components within their environment easily.

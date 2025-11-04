@@ -1,11 +1,10 @@
 ---
 title: "CoE CLI ALM accelerator for Microsoft Power Platform (Deprecated)"
-description: "Overview of the Center of Excellence (CoE) command-line interface (CLI) ALM accelerator commands"
-keywords: 
+description: "Overview of the Center of Excellence (CoE) command-line interface (CLI) ALM accelerator commands."
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.custom: ""
 ms.date: 05/23/2023
+ms.update-cycle: 3650-days
 ms.topic: overview
 ms.subservice: guidance-toolkit
 ms.reviewer: sericks

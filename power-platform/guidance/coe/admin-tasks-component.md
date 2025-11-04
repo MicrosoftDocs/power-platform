@@ -45,7 +45,7 @@ You can start either by adding your own tasks or importing a set of example task
 - Power Automate
 - Power Pages
 - Microsoft Copilot Studio
-- Environments, data loss prevention (DLP) policies, and connectors
+- Environments, data policies, and connectors
 
 To set up the component, go to [Set up the Microsoft Power Platform administration planning component](setup-admin-tasks-component.md).
 

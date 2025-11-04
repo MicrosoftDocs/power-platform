@@ -41,7 +41,7 @@ Administrators reactively discover that many apps and flows are created in the d
 - An app is shared with many users in production-like behavior.
 - An app uses Excel workbooks with sensitive data.
 - An app, based on SharePoint lists, is getting many data interactions such as inserts or updates.
-- An app or flow is using connectors that aren't allowed in new data loss prevention (DLP) policies.
+- An app or flow is using connectors that aren't allowed in new data policies.
 - Custom connectors are enabled and used in the default environment, instead of being secured in a dedicated environment.
 
 The above scenarios are worth consideration and provide an indication that you should start moving these apps and flows from the default environment into their own, developer environment or another shared environment. Other factors that come into play are the limitations associated with the default environment.
@@ -60,7 +60,7 @@ The goal is to have all Power Platform components added to a single solution, wh
 
 ### Identification of the Power Platform objects
 
-The first step is to identify apps and flows and assets that need to be moved over or cleaned-up. The [CoE Starter Kit](/power-platform/guidance/coe/overview) provides an inventory of all the apps and flows, and the Power BI reports help determine usage. This step helps you evaluate the app usage and should help to label them. As you go through the exercise, be sure to tag apps and flows that should be migrated to another environment. A tag could be based on the connectors used, user location, user department, and so on. This article also outlines a method for recognizing items that should be cleaned or relocated based on data loss prevention (DLP) practices.
+The first step is to identify apps and flows and assets that need to be moved over or cleaned-up. The [CoE Starter Kit](/power-platform/guidance/coe/overview) provides an inventory of all the apps and flows, and the Power BI reports help determine usage. This step helps you evaluate the app usage and should help to label them. As you go through the exercise, be sure to tag apps and flows that should be migrated to another environment. A tag could be based on the connectors used, user location, user department, and so on. This article also outlines a method for recognizing items that should be cleaned or relocated based on data policies such as data loss prevention (DLP) practices.
 
 ### Move the Power Platform objects
 
@@ -88,17 +88,17 @@ Some of these solutions for relocating objects are ready-made and may require a 
 
 The entire process of identifying and moving apps and flows from the default environment is more likely to be successful when it's based on a strategy. There are multiple strategies that you should consider.
 
-### DLP strategy
+### Data policy strategy
 
-Data loss prevention (DLP) policies function as guardrails to help prevent users from unintentionally exposing organizational data and to protect information security in the tenant. DLP policies enforce rules for which connectors are enabled for each environment, and which connectors can be used together. Connectors are classified as either **business data only**, **no business data allowed**, or **blocked**. A connector in the business data only group can only be used with other connectors from that group in the same app or flow. We recommended that you have, at least, one policy.
+Data policies function as guardrails to help prevent users from unintentionally exposing organizational data and to protect information security in the tenant. Data policies enforce rules for which connectors are enabled for each environment, and which connectors can be used together. Connectors are classified as either **business data only**, **no business data allowed**, or **blocked**. A connector in the business data only group can only be used with other connectors from that group in the same app or flow. We recommended that you have, at least, one policy.
 
-### Identification of objects using DLP
+### Identification of objects using data policies
 
-DLP policy-based identification is helpful to define target environments for your apps and flows. There might be apps or flows that are using a connector that is blocked by the DLP or a mix of business and non-business connectors, which, upon DLP activation, stop working.
+Data policy based identification is helpful to define target environments for your apps and flows. There might be apps or flows that are using a connector that is blocked by the data policy or a mix of business and non-business connectors, which, upon data policy activation, stop working.
 
-To prevent downtime of potential critical objects, due to DLP, part of CoE Starter Kit, you can find **DLP editor (impact analysis) tool**. The goal of the DLP editor is to allow admins to see the impact of existing policies or the potential impact of policy changes. It provides admins with a view of impacted apps and flows, and resources that would be disabled if new or updated policies were to be enforced. The app can be used to review existing policies, change existing policies, and mitigate risk by contacting makers and informing them about the best course of action for their app or flow.
+To prevent downtime of potential critical objects, due to data policies, part of CoE Starter Kit, you can find **DLP editor (Data Policy Impact Analysis) tool**. The goal of the DLP editor is to allow admins to see the impact of existing policies or the potential impact of policy changes. It provides admins with a view of impacted apps and flows, and resources that would be disabled if new or updated policies were to be enforced. The app can be used to review existing policies, change existing policies, and mitigate risk by contacting makers and informing them about the best course of action for their app or flow.
 
-Update existing DLP policies to review impact. Follow the [Establishing tenant hygiene with the CoE Starter Kit](/power-platform/guidance/coe/after-setup-tenant-hygiene) article to find more information about the DLP editor.
+Update existing data policies to review impact. Follow the [Establishing tenant hygiene with the CoE Starter Kit](/power-platform/guidance/coe/after-setup-tenant-hygiene) article to find more information about the DLP editor.
 
 Before turning on the DLP feature, you can identify which apps and flows are affected and alert the makers. The DLP editor can send a list of all the apps and flows that are affected to an email address, which generates a .csv file for each type of object.
 
@@ -115,7 +115,7 @@ Each generated csv file (flow.csv and apps.csv) has information regarding:
 1. ID of the apps and flows to identify the object.
 1. Environment ID where the apps and flows are located.
 
-Notice that the **Connections** give you the list of all connections used by the app or flow. If you need to identify exactly which connector is impacted by the DLP in question, an automation is needed at this time. We're evaluating changing this situation in the tool.
+Notice that the **Connections** give you the list of all connections used by the app or flow. If you need to identify exactly which connector is impacted by the DLP in question, an automation is needed at this time.
 
 Example of implementation to identify the connection:
 
@@ -137,12 +137,12 @@ Example of implementation to identify the connection:
 
 1. From this list, you have access to the name of the connector that matches with the name list of the csv app or flow **Connection** column.
 1. By converting the csv to Excel format and placing it in your OneDrive, you can read all the impacted apps and flows from Power Automate. Check which connection is affected based on logic that compares connections with connector names.
-1. After you have a match on which connection is causing the impact, generate a new list with the app or flow ID and the connector affected by the DLP.
+1. After you have a match on which connection is causing the impact, generate a new list with the app or flow ID and the connector affected by the data policy.
 1. Use the earlier information to notify the maker about the future impact. You can use Power Cards to collect the feedback from the maker if the app or flow can be deleted or needs to be migrated to another environment.
 
-Based on your analysis, if you determine that the affected flows aren't being used, you can put them in quarantine and send an email to the maker with instructions on how to move them to a different environment. This encourages a do-it-yourself (DIY) culture and removes the shadow IT. In some situations, you might want to exempt some objects from the DLP. For instance, you may want to apply a specific DLP only for new resources that have been created and exempt the current resources. For more information about DLP resource exemption, see [DLP resource exemption](/power-platform/admin/dlp-resource-exemption).
+Based on your analysis, if you determine that the affected flows aren't being used, you can put them in quarantine and send an email to the maker with instructions on how to move them to a different environment. This practice encourages a do-it-yourself (DIY) culture and removes the shadow IT. In some situations, you might want to exempt some objects from the data policy. For instance, you may want to apply a specific data policy only for new resources that have been created and exempt the current resources.
 
-Effectively, your environment strategy is defined through DLP and that provides a destination for the apps and flows developed in the default environment.
+Effectively, your environment strategy is defined through your data policy, which sets the destination for the apps and flows developed in the default environment.
 
 ### Environment strategy
 
@@ -437,6 +437,6 @@ In many cases, these are test flows and apps created by makers as part of their 
 
 ## Conclusion
 
-Power Platform is a tool for citizen developers and professional developers alike. The default environment usage should primarily focus on personal productivity using Microsoft 365 products. All other apps and flow development should be happening in designated shared, individual, or developer environments. A strong recommendation is to develop an independent environment strategy based on DLP, which can help makers to develop their apps and flows in the right environment. There's also a great benefit to establishing a communication strategy and providing users with self-service models of learning about the strategy, implementation of solutions, and best practices to develop apps and flows. A good addition is to capture some success stories on the communication site. Success stories published internally help makers to connect with ideas and makes them open to possibilities that could be achieved using Power Platform.
+Power Platform is a tool for citizen developers and professional developers alike. The default environment usage should primarily focus on personal productivity using Microsoft 365 products. All other apps and flow development should be happening in designated shared, individual, or developer environments. A strong recommendation is to develop an independent environment strategy based on the data policy, which can help makers to develop their apps and flows in the right environment. There's also a great benefit to establishing a communication strategy and providing users with self-service models of learning about the strategy, implementation of solutions, and best practices to develop apps and flows. A good addition is to capture some success stories on the communication site. Success stories published internally help makers to connect with ideas and makes them open to possibilities that could be achieved using Power Platform.
 
 A strong governance strategy is essential when migrating or moving specific objects. There are various strategies available for migrating objects, including individual and mass migration. The best fit option depends on our organization policies. Solutions are the most recommended way to organize the components of your application and make migrations more straightforward.

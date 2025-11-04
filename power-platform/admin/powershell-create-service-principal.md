@@ -13,8 +13,6 @@ search.audienceType:
 ---
 
 # Creating a service principal application using PowerShell
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 Authenticating via username and password is often not ideal, especially with the rise of multifactor authentication.  In such cases, service principal (or client credentials flow) authentication is preferred.  This can be done by both registering a new service principal application in your own Microsoft Entra tenant and then registering that same application with Power Platform.
 
 ## Registering an admin management application

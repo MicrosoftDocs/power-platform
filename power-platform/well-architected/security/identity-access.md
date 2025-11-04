@@ -221,7 +221,7 @@ Access to Power Apps and Power Automate starts with having a license. The assets
 
 **Conditional access describes your policy** for an access decision. To use conditional access, you need to understand the restrictions that are required for the use case. Configure Microsoft Entra Conditional Access by setting up an access policy that's based on your operational needs.
 
-For more information, see:
+Learn more:
 
 - [Set up Microsoft Entra Conditional Access](/power-platform/guidance/adoption/conditional-access)
 - [Conditional access and multifactor authentication in Power Automate](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow)
@@ -248,7 +248,7 @@ Threat detection can take the form of reacting to an alert of suspicious activit
 
 ### Identity logging
 
-Power Apps, Power Automate, Copilot Studio, Connectors, and Data Loss Prevention activity logging are tracked and viewed from the Microsoft Purview compliance portal. For more information, see [Learn about Microsoft Purview](/purview/purview).
+Power Apps, Power Automate, Copilot Studio, Connectors, and Data Loss Prevention activity logging are tracked and viewed from the Microsoft Purview compliance portal. Learn about [Microsoft Purview](/purview/purview).
 
 Logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. This auditing is enabled at the environment level, and additional configuration is required for individual tables and columns.
 

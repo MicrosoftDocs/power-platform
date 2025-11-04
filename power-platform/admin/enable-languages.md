@@ -15,8 +15,6 @@ contributors:
 ---
 # Regional and language options for your environment 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Add languages in your organization to display the user interface and Help in a language that’s different from the base language. 
 
 The following table shows tasks that are associated with changing regional and language options for your organization.  

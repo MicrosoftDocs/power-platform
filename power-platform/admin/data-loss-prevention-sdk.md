@@ -14,8 +14,6 @@ search.audienceType:
 ---
 # Power Platform data policy SDK 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 This topic introduces the capabilities of the data policy SDK and shows you how data policies can help you manage your tenant and environment with experiences ranging from creating, reading, updating, to removing data policies. More information : [Data loss prevention policies](wp-data-loss-prevention.md)
 
 ## How to run this sample

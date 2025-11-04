@@ -12,8 +12,6 @@ search.audienceType:
 ---
 # Management and monitoring
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 This article discusses the tools that you can use to manage and monitor what is going on in your environments. It's important for you to understand that each organization has its own operational model and requirements for creating an app development platform.
 
 Tooling services that provide features specific to monitoring, alert, and actions fall into the following categories:

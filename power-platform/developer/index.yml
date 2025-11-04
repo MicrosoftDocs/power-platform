@@ -85,12 +85,12 @@ landingContent:
           - text: Power Platform Tools for Visual Studio
             url: devtools-vs.md
           - text: ALM developer tools
-            url: tools-alm.md 
+            url: tools-alm.md
           - text: Dataverse developer tools
             url: tools-dataverse.md
           - text: Visual Studio connected service
-            url: visual-studio-connected-service.md                          
-      
+            url: visual-studio-connected-service.md
+
   # Card
   - title: Dataverse
     linkLists:
@@ -122,6 +122,8 @@ landingContent:
             url: /connectors/custom-connectors/
           - text: JavaScript and the Client API
             url: /power-apps/developer/model-driven-apps/client-scripting
+          - text: Code apps (preview)
+            url: /power-apps/developer/code-apps/
       - linkListType: quickstart
         links:
           - text: Create a Canvas App front end for your ASP.NET web API (Preview)

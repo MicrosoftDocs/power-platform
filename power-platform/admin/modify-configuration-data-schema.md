@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Modify a configuration data schema 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can modify an existing schema file to include information about new configuration data or to update the existing configuration data definition to enhance the configuration data export process.  
   
 <a name="Prereq"></a>   

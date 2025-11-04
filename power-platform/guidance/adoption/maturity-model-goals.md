@@ -58,7 +58,7 @@ In the *Repeatable* stage, organizations start to establish a common vision betw
 
 A *Repeatable* organization uses what it learned in the Initial stage to structure the deployment of Power Platform and low-code AI. A central IT team or other team focused on Power Platform and low-code AI implements these controls. Early efforts are focused on establishing foundational governance policies and on drafting compliance processes tailored to the specific challenges of low-code AI systems. Senior leadership begins to recognize the value of responsible AI and promotes it through occasional incentives or support for passionate individuals or teams. Some training resources might exist, but they aren't accessible or widely adopted.
 
-Environments are used as needed. For example, various production environments and different data loss prevention (DLP) policies might be created without a consistent strategy. These organizations sometimes believe Power Platform is running "out of control" until they implement administrative and governance controls for Power Platform and transition to the [Defined](#level-300--defined) stage.
+Environments are used as needed. For example, various production environments and different data policies might be created without a consistent strategy. These organizations sometimes believe Power Platform is running "out of control" until they implement administrative and governance controls for Power Platform and transition to the [Defined](#level-300--defined) stage.
 
 ### Characteristics - Repeatable
 
@@ -71,7 +71,7 @@ Environments are used as needed. For example, various production environments an
 
 - Establish a [Center of Excellence](coe.md) team.
 - Gain tenant-wide [oversight of resources](resource-usage.md) being created in your tenant.
-- [Establish DLP policies](dlp-strategy.md) in the default environment. Reduce the risk of apps and flows breaking by performing a [DLP Impact Analysis](../coe/core-components.md#dlp-impact-analysis) first.
+- [Establish data policies](dlp-strategy.md) in the default environment. Reduce the risk of apps and flows breaking by performing a [Data Policy Impact Analysis](../coe/core-components.md#dlp-impact-analysis) first.
 - [Manage the default environment](manage-default-environment.md).
 - Embrace new makers with an [onboarding process](onboard-makers.md), informing them of internal training resources and policies.
 - Develop responsible AI training programs.
@@ -83,7 +83,7 @@ Environments are used as needed. For example, various production environments an
 
 The *Defined* stage is characterized by a more structured approach to Power Platform and low-code AI adoption. Organizations have a dedicated Power Platform and low-code AI product owner and a clear understanding of the platform's role within the IT portfolio. Innovation is driven both bottom-up and top-down, and key performance indicators (KPIs) are operationalized and reviewed against goals. Responsible AI (RAI) practices are increasingly prioritized, with dedicated budgets and AI champions promoting responsible AI practices. Comprehensive responsible AI policies are in place, covering most aspects of RAI (for example, fairness, transparency). Responsible AI training programs are developed but not yet mandatory.
 
-A *Defined* organization standardizes the repeatable practices that evolved in the Repeatable phase. You can define practices like environment and DLP automation, solutions that move apps and flows between environments, and commonly shared components among makers.
+A *Defined* organization standardizes the repeatable practices that evolved in the Repeatable phase. You can define practices like environment and data policy automation, solutions that move apps and flows between environments, and commonly shared components among makers.
 
 The organization is achieving measurable success with Power Platform to digitally transform and has a defined Power Platform and low-code AI Center of Excellence team.
 
