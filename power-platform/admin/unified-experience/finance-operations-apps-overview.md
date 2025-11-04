@@ -3,7 +3,7 @@ title: Overview of unified admin experience for finance and operations apps
 description: Overview of unified admin experiences for finance and operations apps customers in the Power Platform admin center.
 author: laneswenka
 ms.topic: overview
-ms.date: 09/08/2025
+ms.date: 09/30/2025
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
@@ -83,6 +83,23 @@ The following table is a reference for each operation type and explains any nuan
 | Convert to production | Not applicable | Convert to production | This operation isn't yet implemented for environments where **Finance and Operations Provisioning App** is installed. |
 | Delete | Deallocate/delete | Delete | Restoring a deleted environment where **Dynamics 365 Finance and Operations Provisioning App** is installed isn't yet implemented. |
 
+## Features that are not being implemented from Lifecycle Services
+
+The following table is a reference of features from Lifecycle Services that will not be implemented in Power Platform admin center.
+
+| LCS feature | Implemented in PPAC | Comments |
+|-------------|---------------------|----------|
+| Methodology | No | Phases and timelines can be tracked in Dynamics Implementation portal or in Azure DevOps |
+| Project Settings and users | No | Dynamics Implementation Portal | 
+| Organization users | No | Microsoft 365 admin center | 
+| Translation service | No | [Dynamics translation connector](/connectors/dynamicstranslations/) |
+| Asset Library | No | Software packages are stored in Azure DevOps and directly imported to Dataverse.  Database backups are not provided for offline use. |
+| Solution management | No | Microsoft AppSource | 
+| Build environments | No | Microsoft Hosted Agents in Azure DevOps |
+| Alert service | No | Create a support ticket | 
+| Business process modeler | No | Business process catalog |
+| Task Recorder | No | Save files locally |
+
 ## Tutorials and helpful articles
 
 These continually updated scenario tutorials give a walkthrough for administrators in new experiences.
@@ -111,14 +128,11 @@ View the templates that allow you to deploy: [Tutorial: Provision a new environm
 
 - Finance and operations apps experiences require both Dataverse and Operations database capacities to be available to deploy. You can review the [storage capacity deficit](../finance-operations-storage-capacity.md#address-a-storage-capacity-deficit).
 
-- To reduce capacity, review your sandboxes for clean-up or removal.
-
-> [!NOTE]
-> We're building a new type of copy operation in the Power Platform admin center that truncates all transactional tables during the copy. The resulting environment is as small as possible without sacrificing critical module configurations or master data. You can then use Data Import/Export Framework (DIXF) to copy over a limited set of transactions for testing purposes. When this new copy operation is available, we'll update this FAQ with details on how to use it.
+- To reduce capacity, review your sandboxes for clean-up or removal.  You can also use [Transaction-less copy](tutorial-perform-transactionless-copy.md) to drastically reduce sandbox storage consumption.
 
 #### How do I access SQL for these environments?
 
-Direct SQL access isn't available at this time. However, we're working on a just-in-time access approach similar to what's available earlier using Lifecycle Services. When this approach becomes available, we'll update this FAQ with details on how to use it.
+You can access the database in developer environments.  Learn more in [Request access to product database](/developer/unified-experience/finance-operations-product-db-access.md).
 
 ### Related articles
 

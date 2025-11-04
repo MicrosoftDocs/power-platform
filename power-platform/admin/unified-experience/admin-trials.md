@@ -3,7 +3,7 @@ title: "Unified admin trials"
 description: "Subscription-based trial environments for administrators of finance and operations apps."
 author: laneswenka
 ms.topic: concept-article
-ms.date: 06/06/2024
+ms.date: 09/30/2025
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
