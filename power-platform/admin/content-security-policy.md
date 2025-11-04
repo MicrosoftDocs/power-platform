@@ -40,19 +40,22 @@ This configuration results in a default CSP of `script-src * 'unsafe-inline' 'un
 
 The Strict CSP toggle creates a CSP that mostly does not include wildcards or unsafe directives, such as `unsafe-inline`.  When Strict CSP is on, the above directives become the following.  The `<platform>` notation means that platform domains are provided as required by the product.  The domains in this section may change over time as the product grows.
 
-| Directive | Default value (model-driven) | Default value (canvas) | Customizable |
-| --------- | ---------------------------- | ---------------------- | ------------ |
-| [script-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) | `'self' blob: data: <platform>'` | `'self' <platform>'` | Yes |
-| [worker-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/worker-src) | `'self' blob: data:` | `'self' blob:` | No |
-| [style-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) | `'self' 'unsafe-inline' <platform>` | `'self' 'unsafe-inline' <platform>` | Yes |
-| [font-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) | `'self' data: <platform>` | `'self' data: <platform>` | Yes |
-| [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) | `'self' https://*.powerapps.com` | `'self' https://*.powerapps.com` | Yes |
-| [img-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/img-src) | `'self' blob: data: <platform>` | `'self' data: <platform>` | Yes |
-| [connect-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/connect-src) | `'self' blob: data: wss: <platform>` | `'self' blob: <platform>` | Yes |
-| [frame-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-src) | `'self' blob: <platform>` | `'self' <platform>` | Yes |
-| [base-uri](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/base-uri) | `'none'` | N/A | No |
-| [form-action](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/form-action) | `<platform>` | N/A | Yes |
-| [default-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/default-src) | `'self'` | `'self'` | No |
+> [!NOTE]
+> Strict CSP is currently only available for model-driven apps.
+
+| Directive | Default value (model-driven) | Customizable |
+| --------- | ---------------------------- | ------------ |
+| [script-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) | `'self' blob: data: <platform>'` | Yes |
+| [worker-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/worker-src) | `'self' blob: data:` | No |
+| [style-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) | `'self' 'unsafe-inline' <platform>` | Yes |
+| [font-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) | `'self' data: <platform>` | Yes |
+| [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) | `'self' https://*.powerapps.com` | Yes |
+| [img-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/img-src) | `'self' blob: data: <platform>` | Yes |
+| [connect-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/connect-src) | `'self' blob: data: wss: <platform>` | Yes |
+| [frame-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-src) | `'self' blob: <platform>` | Yes |
+| [base-uri](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/base-uri) | `'none'` | No |
+| [form-action](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/form-action) | `<platform>` | Yes |
+| [default-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/default-src) | `'self'` | No |
 
 ### Prerequisites
 
