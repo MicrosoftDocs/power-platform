@@ -1,12 +1,12 @@
 ---
 title: Associate an email address with a row   
 description: Associate an email address with a row. 
-author: foviedoITBA
+author: DerekBraunMSFT
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/14/2025
+ms.date: 11/04/2025
 ms.subservice: admin
-ms.author: ahanda
+ms.author: debrau
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -37,7 +37,7 @@ If the email address resolves to more than 100 rows, the **From** field isn't as
 
 ## Email recipient resolution
 
-In the email **To**, **Cc**, and **Bcc** fields, all of the rows of email-enabled tables with the email address are listed. Please note that the Bcc field appears empty for received emails. 
+In the email **To**, **Cc**, and **Bcc** fields, all of the rows of email-enabled tables with the email address are listed. The **Bcc** field appears empty for received emails. 
 
 If **Set To,cc,bcc fields as unresolved values if multiple matches are found in Incoming Emails** is set to **No**, a tracked email in Dynamics 365 that contains an email address that resolves to multiple rows, display each resolved row in the Email.
 
