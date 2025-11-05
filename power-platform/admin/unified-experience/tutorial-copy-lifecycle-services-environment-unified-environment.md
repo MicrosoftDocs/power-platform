@@ -65,3 +65,21 @@ Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -C
 Copy-PowerAppEnvironment -EnvironmentName $TargetEnvironmentID -CopyToRequestDefinition $copyToRequest
 ```
 ---
+
+## Different copy or restore scenarios
+
+| Source Environment | Target Environment                                              | Copy/Restore Supported |
+|:------------------|:----------------------------------------------------------------|:------------------------|
+| LCS Sandbox                            | PPAC Unified developer environment                              | Yes                     |
+| LCS Production                         | PPAC Unified developer environment                              | Yes                     |
+| LCS Sandbox                            | PPAC Unified sandbox environment                                | Yes                     |
+| LCS CHE                                | PPAC UDE/Sandbox/Production                                     | No                      |
+| PPAC Unified developer environment     | PPAC Unified sandbox environment                                | No                      |
+| PPAC Unified developer environment     | PPAC Unified production environment                             | No                      |
+| PPAC Unified sandbox environment       | PPAC Unified developer environment                              | Yes                     |
+| PPAC Unified production environment    | PPAC Unified developer environment                              | Yes                     |
+| PPAC Unified sandbox environment       | PPAC Unified production environment                             | No                      |
+| PPAC Unified production environment    | PPAC Unified sandbox environment                                | Yes                     |
+
+#### In case target environment is not PPAC managed
+If the target environment is not PPAC managed, then the copy operation is going to copy only Dataverse, not FnO.
