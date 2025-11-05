@@ -71,18 +71,18 @@ Copy-PowerAppEnvironment -EnvironmentName $TargetEnvironmentID -CopyToRequestDef
 
 ## Different copy or restore scenarios
 
-| Source environment | Target environment                                              | Copy/restore supported |
+| Source environment | Target environment                                              | Copy or restore supported |
 |:------------------|:----------------------------------------------------------------|:------------------------|
 | LCS sandbox                            | Power Platform admin center: Unified developer environment                              | Yes                     |
 | LCS production                         | Power Platform admin center: Unified developer environment                              | Yes                     |
 | LCS sandbox                            | Power Platform admin center: Unified sandbox environment                                | Yes                     |
 | LCS CHE                                | Power Platform admin center: UDE/sandbox/production                                     | No                      |
-| Power Platform admin center: Unified developer environment     | PPAC Unified sandbox environment                                | No                      |
-| Power Platform admin center: Unified developer environment     | PPAC Unified production environment                             | No                      |
-| Power Platform admin center: Unified sandbox environment       | PPAC Unified developer environment                              | Yes                     |
-| Power Platform admin center: Unified production environment    | PPAC Unified developer environment                              | Yes                     |
-| Power Platform admin center: Unified sandbox environment       | PPAC Unified production environment                             | No                      |
-| Power Platform admin center: Unified production environment    | PPAC Unified sandbox environment                                | Yes                     |
+| Power Platform admin center: Unified developer environment     | Power Platform admin center:  Unified sandbox environment                                | No                      |
+| Power Platform admin center: Unified developer environment     | Power Platform admin center:  Unified production environment                             | No                      |
+| Power Platform admin center: Unified sandbox environment       | Power Platform admin center:  Unified developer environment                              | Yes                     |
+| Power Platform admin center: Unified production environment    | Power Platform admin center:  Unified developer environment                              | Yes                     |
+| Power Platform admin center: Unified sandbox environment       | Power Platform admin center:  Unified production environment                             | No                      |
+| Power Platform admin center: Unified production environment    | Power Platform admin center:  Unified sandbox environment                                | Yes                     |
 
 #### In case target environment is not PPAC managed
 If the target environment is not PPAC managed, then the copy operation is going to copy only Dataverse, not FnO.
