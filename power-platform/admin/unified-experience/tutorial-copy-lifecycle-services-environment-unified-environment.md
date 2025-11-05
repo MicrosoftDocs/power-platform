@@ -84,5 +84,5 @@ Copy-PowerAppEnvironment -EnvironmentName $TargetEnvironmentID -CopyToRequestDef
 | Power Platform admin center: Unified sandbox environment       | Power Platform admin center:  Unified production environment                             | No                      |
 | Power Platform admin center: Unified production environment    | Power Platform admin center:  Unified sandbox environment                                | Yes                     |
 
-#### In case target environment is not PPAC managed
-If the target environment is not PPAC managed, then the copy operation is going to copy only Dataverse, not FnO.
+### If the target environment isn't managed in the Power Platform admin center
+If the target environment isn't managed in the Power Platform admin center, the copy operation is going to copy only Dataverse data, not finance and operations data.
