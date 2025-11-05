@@ -6,11 +6,12 @@ author: Mattp123
 ms.subservice: alm
 ms.author: swatim
 ms.custom: ""
-ms.date: 01/30/2025
+ms.date: 01/04/2025
 ms.reviewer: "matp"
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+contributors: SabrinaDiBartolomeo
 applies_to: 
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"
@@ -94,14 +95,16 @@ Nearly every source control system has some form of branching and merging suppor
 
 ### Source control process using a solution
 
-There are two main paths you can use when working with solutions in a source control system:
+In the [Organize your solutions](/power-platform/alm/organize-solutions) article, you learn about using either a single-solution or multiple-solution approach. After choosing your strategy, we recommend that you store each solution’s source code in a source control system.
 
-- Export the unmanaged solution and place it as unpacked in the source control system. The build process imports the packed solution as unmanaged into a temporary build environment (sandbox environment). Then, export the solution as managed and store it as a build artifact in your source control system.
-- Export the solution as unmanaged and also export the solution as managed, and place both in the source control system. Although this method doesn't require a build environment, it does require maintaining two copies of all components (one copy of all unmanaged components from the unmanaged solution and one copy of all managed components from the managed solution).
+There are a few ways you can export the source code of the solution to the source control system:
 
-![Source control by using a solution.](media/build-pipeline-alm.png "Source control by using a solution")
+- Use the [Power Platform Git Integration](/power-platform/alm/git-integration/overview)
+- Create your own pipeline:
+   - Using the [Build tool tasks](devops-build-tool-tasks.md#build-and-release-pipelines).
+   - [Using a YAML pipeline](devops-build-tool-tasks.md#solution-tasks).
 
-More information: [Build tool tasks](devops-build-tool-tasks.md#build-and-release-pipelines)
+:::image type="content" source="media/build-pipeline-alm.png" alt-text="Source control by using a solution" lightbox="media/build-pipeline-alm.png":::
 
 ## Automation
 
