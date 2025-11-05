@@ -85,32 +85,22 @@ Admins can access detailed usage analytics and apply governance controls tailore
 
 Admins can view usage analytics for Copilot in Dynamics 365 Sales on the **Dynamics 365 Sales** page to understand the value that end users get from AI in Dynamics 365 Sales. The page includes monthly active user count information for Copilot in Dynamics 365 Sales. Furthermore, admins can look into Copilot by selecting it from the bottom table view. This opens a panel where you can see top environments and investigate those to see apps where users are interacting with Copilot the most.
 
-#### Turn on Copilot capabilities in Dynamics 365 Sales
+#### Turn on AI capabilities in Dynamics 365 Sales
 
-To turn on Copilot capabilities in Dynamics 365 Sales, follow these instructions.
+To turn on AI capabilities in Dynamics 365 Sales, follow these instructions.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the left navigation pane, select **Copilot**.
 1. In the Copilot pane, select **Settings**.
-1. In the **Settings** page, under **Dynamics 365 Sales**, select **AI Agents** to use AI agents in Dynamics 365 Sales.
+1. In the **Settings** page, under **Dynamics 365 Sales**, select **AI Agents** to use AI agents or **Copilot** to turn on Copilot-powered features in Dynamics 365 Sales.
     1. Go to the **Environment groups** tab. 
-        1. Select an environment group where you want to turn on AI agents, and then select **Add**.
-        1. Select the **On** check box to turn on AI agents in all environments in the group.
+        1. Select an environment group where you want to turn on AI agents or Copilot, and then select **Add**.
+        1. Select the **On** check box to turn on AI agents or Copilot in all environments in the group.
         1. Select **Save**.
         1. Select **Cancel** to close the panel.
     1. Go to the **Environment** tab. 
-        1. Select an environment where you want to turn on AI agents, and then select **Add**.
-        1. Select the **On** check box to turn on AI agents in the selected environment.
-        1. Select **Save**.
-1. In the **Settings** page, under **Dynamics 365 Sales**, select **Copilot** to turn on Copilot-powered features in Dynamics 365 Sales.
-    1. Go to the **Environment groups** tab. 
-        1. Select an environment group where you want to turn on Copilot, and then select **Add**.
-        1. Select the **On** check box to turn on Copilot in all environments in the group.
-        1. Select **Save**.
-        1. Select **Cancel** to close the panel.
-    1. Go to the **Environment** tab. 
-        1. Select an environment where you want to turn on Copilot, and then select **Add**.
-        1. Select the **On** check box to turn on Copilot in the selected environment.
+        1. Select an environment where you want to turn on AI agents or Copilot, and then select **Add**.
+        1. Select the **On** check box to turn on AI agents or Copilot in the selected environment.
         1. Select **Save**.
         1. Select **Cancel** to close the panel.
     
