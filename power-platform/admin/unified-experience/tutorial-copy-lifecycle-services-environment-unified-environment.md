@@ -76,7 +76,7 @@ Copy-PowerAppEnvironment -EnvironmentName $TargetEnvironmentID -CopyToRequestDef
 | LCS sandbox                            | Power Platform admin center: Unified developer environment                              | Yes                     |
 | LCS production                         | Power Platform admin center: Unified developer environment                              | Yes                     |
 | LCS sandbox                            | Power Platform admin center: Unified sandbox environment                                | Yes                     |
-| LCS CHE (cloud-hosted environment)                             | Power Platform admin center: Any unified environment                                     | No                      |
+| LCS cloud-hosted environment                             | Power Platform admin center: Any unified environment                                     | No                      |
 | Power Platform admin center: Unified developer environment     | Power Platform admin center:  Unified sandbox environment                                | No                      |
 | Power Platform admin center: Unified developer environment     | Power Platform admin center:  Unified production environment                             | No                      |
 | Power Platform admin center: Unified sandbox environment       | Power Platform admin center:  Unified developer environment                              | Yes                     |
