@@ -5,18 +5,21 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/11/2024
+ms.date: 11/05/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
+contributors:
+  - tapas1447
+
 ---
 
 # Tutorial: Copy a Lifecycle Services environment to a unified environment 
 
 Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to copy environments. Historically, this has been done in Microsoft Dynamics Lifecycle Services, but now everything can be managed in the Power Platform admin center.
 
-In this tutorial, learn how to copy a Lifecycle Services environment to a unified environment.
+In this tutorial, learn how to copy a Lifecycle Services (LCS) environment to a unified environment.
 
 As an example of this scenario, a customer who operates their finance and operations apps environments through the Lifecycle Services site today would like to copy their production environment data into their new, unified, developer environment in the Power Platform admin center.
 
@@ -68,18 +71,18 @@ Copy-PowerAppEnvironment -EnvironmentName $TargetEnvironmentID -CopyToRequestDef
 
 ## Different copy or restore scenarios
 
-| Source Environment | Target Environment                                              | Copy/Restore Supported |
+| Source environment | Target environment                                              | Copy/restore supported |
 |:------------------|:----------------------------------------------------------------|:------------------------|
-| LCS Sandbox                            | PPAC Unified developer environment                              | Yes                     |
-| LCS Production                         | PPAC Unified developer environment                              | Yes                     |
-| LCS Sandbox                            | PPAC Unified sandbox environment                                | Yes                     |
-| LCS CHE                                | PPAC UDE/Sandbox/Production                                     | No                      |
-| PPAC Unified developer environment     | PPAC Unified sandbox environment                                | No                      |
-| PPAC Unified developer environment     | PPAC Unified production environment                             | No                      |
-| PPAC Unified sandbox environment       | PPAC Unified developer environment                              | Yes                     |
-| PPAC Unified production environment    | PPAC Unified developer environment                              | Yes                     |
-| PPAC Unified sandbox environment       | PPAC Unified production environment                             | No                      |
-| PPAC Unified production environment    | PPAC Unified sandbox environment                                | Yes                     |
+| LCS sandbox                            | Power Platform admin center: Unified developer environment                              | Yes                     |
+| LCS production                         | Power Platform admin center: Unified developer environment                              | Yes                     |
+| LCS sandbox                            | Power Platform admin center: Unified sandbox environment                                | Yes                     |
+| LCS CHE                                | Power Platform admin center: UDE/sandbox/production                                     | No                      |
+| Power Platform admin center: Unified developer environment     | PPAC Unified sandbox environment                                | No                      |
+| Power Platform admin center: Unified developer environment     | PPAC Unified production environment                             | No                      |
+| Power Platform admin center: Unified sandbox environment       | PPAC Unified developer environment                              | Yes                     |
+| Power Platform admin center: Unified production environment    | PPAC Unified developer environment                              | Yes                     |
+| Power Platform admin center: Unified sandbox environment       | PPAC Unified production environment                             | No                      |
+| Power Platform admin center: Unified production environment    | PPAC Unified sandbox environment                                | Yes                     |
 
 #### In case target environment is not PPAC managed
 If the target environment is not PPAC managed, then the copy operation is going to copy only Dataverse, not FnO.
