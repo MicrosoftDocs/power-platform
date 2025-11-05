@@ -1,12 +1,12 @@
 ---
 title: Associate an email address with a row   
 description: Associate an email address with a row. 
-author: foviedoITBA
+author: DerekBraunMSFT
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/14/2025
+ms.date: 11/04/2025
 ms.subservice: admin
-ms.author: ahanda
+ms.author: debrau
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -18,7 +18,7 @@ contributors:
 
 ## Email sender resolution
 
-When customer engagement apps track an email, it associates the email address to a row within customer engagement apps. The contents of the email **From** field can only be associated with one row. If there are less than 100 duplicate rows within customer engagement apps with the same email address, the contents of the email **From** field resolve to the first active row in the following order:
+When customer engagement apps track an email, it associates the email address to a row within customer engagement apps. The contents of the email **From** field can only be associated with one row. If there are multiple matches for an email address and there are less than 100 matching rows within customer engagement apps, the contents of the email **From** field resolve to the first active row in the following order:
 
 1. SystemUser
 2. Contact
@@ -29,7 +29,7 @@ When customer engagement apps track an email, it associates the email address to
 7. Business unit
 8. Email-enabled tables (such as Queues, custom, etc.)
 
-If the email address resolves to more than 100 rows, the **From** field isn't associated to a row and appears as unresolved. If the [UnresolveSenderInCaseOfMultipleMatch OrgDBOrgSetting](OrgDbOrgSettings.md) is turned on and the sender email address matches multiple records, the **From** field remains unresolved.
+If the email address matches more than 100 rows, the **From** field isn't associated to a row and appears as unresolved. If the [UnresolveSenderInCaseOfMultipleMatch OrgDBOrgSetting](OrgDbOrgSettings.md) is turned on and the sender email address matches multiple records, the **From** field remains unresolved. Otherwise, if there is a single matching row for the sender email address, the **From** field resolves to that row regardless of it's state.
 
 > [!NOTE]
 > - The only exception is when the owner of the mailbox or the queue tracking the email is the owner of the duplicated row. A row that's owned by you takes precedence over any rows that you don't own. For example, if the email address exists in a contact and account table and the mailbox owner also owns the account but not the contact, the **From** field resolves to the account.
@@ -37,7 +37,7 @@ If the email address resolves to more than 100 rows, the **From** field isn't as
 
 ## Email recipient resolution
 
-In the email **To** field,  all of the rows of email-enabled tables with the email address are listed.
+In the email **To**, **Cc**, and **Bcc** fields, all of the rows of email-enabled tables with the email address are listed. The **Bcc** field appears empty for received emails. 
 
 If **Set To,cc,bcc fields as unresolved values if multiple matches are found in Incoming Emails** is set to **No**, a tracked email in Dynamics 365 that contains an email address that resolves to multiple rows, display each resolved row in the Email.
 
