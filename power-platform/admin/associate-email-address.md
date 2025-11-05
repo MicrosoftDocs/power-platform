@@ -4,7 +4,7 @@ description: Associate an email address with a row.
 author: DerekBraunMSFT
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/04/2025
+ms.date: 11/05/2025
 ms.subservice: admin
 ms.author: debrau
 ms.reviewer: sericks
