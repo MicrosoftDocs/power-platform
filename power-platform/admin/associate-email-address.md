@@ -37,12 +37,14 @@ If the email address matches more than 100 rows, the **From** field isn't associ
 
 ## Email recipient resolution
 
-In the email **To**, **Cc**, and **Bcc** fields, all of the rows of email-enabled tables with the email address are listed. The **Bcc** field appears empty for received emails. 
+In the email **To**, **Cc**, and **Bcc** fields, all of the rows of email-enabled tables with a matching email address are resolved and listed by default. The **Bcc** field appears empty for received emails. 
 
-If **Set To,cc,bcc fields as unresolved values if multiple matches are found in Incoming Emails** is set to **No**, a tracked email in Dynamics 365 that contains an email address that resolves to multiple rows, display each resolved row in the Email.
+If **Set To,cc,bcc fields as unresolved values if multiple matches are found in Incoming Emails** is set to **Yes**, a tracked email in Dynamics 365 that contains an email address that matches multiple rows will appear as a single, unresolved email address.
 
    > [!div class="mx-imgBorder"] 
    > ![Set email form options.](media/email-filter-image6.png)
+
+An unresolved email address can be manually resolved to a specified row. If **When someone manually resolves an unresolved email address, apply it to all similar unresolved addresses** is enabled, the system updates existing email rows that contain the same unresolved email address and replaces those references with the specified row. 
 
 ## Appointment attendee resolution
 
