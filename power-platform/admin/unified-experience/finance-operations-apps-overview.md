@@ -57,7 +57,7 @@ When you purchase a license for any finance and operations app, such as Dynamics
 
 A license is required to create or install any finance and operations app in the Power Platform admin center. You must also have at least 1 GB available of both operations and Dataverse database capacity to provision one more environment. There are no strict limits on how many environments you can create. Lifecycle Services is different, where each sandbox and production environment slot has a predetermined purchase.
 
-For more information on managing storage, visit [Finance and operations storage capacity](../finance-operations-storage-capacity.md).  To learn more about managing compute, visit [Manage elastic compute](./elastic-compute.md).
+For more information on managing storage, visit [Finance and operations storage capacity](../finance-operations-storage-capacity.md).
 
 ## Development reimagined
 
@@ -132,7 +132,7 @@ View the templates that allow you to deploy: [Tutorial: Provision a new environm
 
 #### How do I access SQL for these environments?
 
-You can access the database in developer environments.  Learn more in [Request access to product database](/developer/unified-experience/finance-operations-product-db-access.md).
+You can access the database in developer environments.  Learn more in [Request credentials to product database](../../developer/unified-experience/finance-operations-product-db-access.md).
 
 ### Related articles
 
