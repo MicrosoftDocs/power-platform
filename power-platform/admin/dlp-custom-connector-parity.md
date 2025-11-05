@@ -2,7 +2,7 @@
 title: Custom connector parity
 description: About allowing makers to create and share custom connectors.
 ms.topic: concept-article
-ms.date: 1105/2025
+ms.date: 11/05/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
