@@ -86,12 +86,13 @@ Most of these users are hidden from user views but they can be found by using th
 | Dataverse Information Protection | dvinfoprotection@microsoft.com | Allows Microsoft Purview to integrate with Dataverse. | Service Reader Role, PurviewLabelRole |
 | PowerAutomate-DesktopFlowAI | PowerAutomate-DesktopFlowAI@onmicrosoft.com | Service application to perform data integration between Dataverse and the Power Automate AI features | Desktop Flows AI Application User |
 | PowerAutomate-MachineProvisioning | PowerAutomate-MachineProvisioning@onmicrosoft.com | The user performs database operations during Hosted Machine and Hosted Machine Groups provisioning. | System Administrator |
+| Connector Management Service Backend | ConnectorManagementServiceBackend@onmicrosoft.com |To manage Microsoft Power Platform connectors within environments. | System admin |
 
 ## The purpose of the system account?
 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins.
 - The primary usage of this user account is to meet special business requirements that require elevation of privileges; for example, running background processes to integrate with other applications.
-- It can also be used to handle rollup scenarios where individual users don't have the required privilege. For example, the priority of a Case is automatically set to the highest priority of an individual user’s tasks and individual users can only update their own task priority but not the Case priority.
+- It can also be used to handle rollup scenarios where individual users don't have the required privilege. For example, the priority of a Case is automatically set to the highest priority of an individual user's tasks and individual users can only update their own task priority but not the Case priority.
 
 ## Technical details on permissions?
 
