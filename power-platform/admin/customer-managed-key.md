@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 07/23/2025
+ms.date: 10/31/2025
 ms.contributors:
   - samathur
   - kakazemi
@@ -64,10 +64,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Fraud Protection (Finance and operations)
 - [Copilot Studio](/microsoft-copilot-studio/admin-customer-managed-keys)
 
-### Sovereign cloud - GCC High (preview)
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+### Sovereign cloud - GCC High 
 
 - Dataverse (Custom solutions and Microsoft services)
 - Dataverse [Copilot for model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)  
