@@ -87,7 +87,7 @@ The following table is a reference for each operation type and explains any nuan
 
 The following table is a reference of features from Lifecycle Services that aren't implemented in Power Platform admin center.
 
-| Lifecycle Services feature | Implemented in PPAC | Comments |
+| Lifecycle Services feature | Implemented in Power Platform admin center | Comments |
 |-------------|---------------------|----------|
 | Methodology | No | Phases and timelines can be tracked in Dynamics Implementation portal or in Azure DevOps |
 | Project settings and users | No | Dynamics Implementation portal | 
