@@ -86,6 +86,7 @@ Most of these users are hidden from user views but they can be found by using th
 | Dataverse Information Protection | dvinfoprotection@microsoft.com | Allows Microsoft Purview to integrate with Dataverse. | Service Reader Role, PurviewLabelRole |
 | PowerAutomate-DesktopFlowAI | PowerAutomate-DesktopFlowAI@onmicrosoft.com | Service application to perform data integration between Dataverse and the Power Automate AI features | Desktop Flows AI Application User |
 | PowerAutomate-MachineProvisioning | PowerAutomate-MachineProvisioning@onmicrosoft.com | The user performs database operations during Hosted Machine and Hosted Machine Groups provisioning. | System Administrator |
+| Connector Management Service Backend | ConnectorManagementServiceBackend@onmicrosoft.com |To manage Microsoft Power Platform connectors within environments. | System admin |
 
 ## The purpose of the system account?
 
