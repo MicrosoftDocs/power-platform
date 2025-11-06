@@ -1,9 +1,9 @@
 ---
-title: Audit Power Apps logs in Microsoft Purview
-description: Learn how to access Power Apps logs in Microsoft Purview and explore what activities in canvas apps you can audit. 
+title: Access and monitor Power Apps activity logs in Microsoft Purview
+description: Learn how to access Power Apps activity logs in Microsoft Purview and explore what canvas apps activities you can monitor. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/27/2025
+ms.date: 11/05/2025
 author: amchern
 ms.subservice: admin
 ms.author: amchern
@@ -13,22 +13,37 @@ search.audienceType:
   - admin
 ---
 
-# Audit Power Apps activities in Microsoft Purview
+# Access and monitor Power Apps audit logs in Microsoft Purview
 
-Auditing Power Platform activities regularly in Microsoft Purview enables you and your team to:
+In Microsoft Purview, you can monitor many specific Power Apps activities, such as canvas app creation, usage, patching and deletion by a specific user. You also have the ability to view activity logs within specific date ranges to gain insights.
+
+Regularly monitor Microsoft Power Apps activities in Microsoft Purview to:
 
 - maintain governance, compliance, and security
 - gain operational insights
 - identify and troubleshoot issues
 - mitigate failures.
 
-In Microsoft Purview, you can monitor many specific Power Apps activities, such as canvas app creation, usage, patching and deletion by a specific user or within a specific date range.
+This article covers prerequisites, how to access your data in Microsoft Purview's compliance portal, and details about Power Apps events and schema.
 
-This article covers prerequisites, how to access the logs in Microsoft Purview, details about events and schema, and how to view your data in Microsoft Purview's compliance portal.
+## Prerequisites
 
-You can access and view Power App activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
+To view connector activity logs in Microsoft Purview, make sure you've:
 
-## What events are audited
+- Reviewed and completed all the [prerequisites](activity-logs-overview.md#prerequisites) listed in the overview article.
+- Confirmed you're an admin who's assigned a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
+- Confirmed you have either the *Audit Logs* or *View-Only Audit Logs* role assigned to you in Microsoft Purview.
+
+Learn more:
+
+- [Learn more about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
+- [Permissions in the Microsoft Purview portal](/purview/purview-permissions)
+
+## Access the logs
+
+[!INCLUDE[admin-audit](../../includes/admin-audit-activity-search.md)]
+
+## Explore Power Apps activities
 
 Logging takes place at the SDK layer, which means a single action can trigger multiple events that are logged. The following are a sample of user events you can audit.
 
@@ -68,7 +83,7 @@ Logging takes place at the SDK layer, which means a single action can trigger mu
 
 Schemas define which Power Apps fields are sent to the Microsoft Purview compliance portal. Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to Power Apps activities. The value in the **PropertyCollection** field is specific to each Power Apps activity type. To identify Power Apps activities, look for nested schema property **powerplatform.analytics.resource.type** with value **PowerApp** within the **PropertyCollection** property. The following is an example of the activity-specific schema.
 
-```
+```json
 [
     {
         "Name": "powerplatform.analytics.resource.power_app.display_name",
@@ -142,16 +157,10 @@ Schemas define which Power Apps fields are sent to the Microsoft Purview complia
 
 ```
 
-## Review your audit data using reports in Microsoft Purview compliance portal
+### Related content
 
-You can review your audit data in the Microsoft Purview compliance portal. See [Search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide&preserve-view=true).
-
-To use the preconfigured Power Apps reports, go to https://protection.office.com > **Search & investigation** > **Audit log search** and select the **Power Apps app activities** tab.
-
-### Related information
-
- [Search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide&preserve-view=true)<br/>
- [Office 365 Management APIs overview](/office/office-365-management-api/office-365-management-apis-overview)<br/>
- [Permissions in the Security & Compliance Center](/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
+- [Microsoft Purview](/purview/)
+- [Microsoft Purview portal](https://purview.microsoft.com/home)
+- [Get started with search in Microsoft Purview portal](/purview/audit-search#get-started-with-search)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

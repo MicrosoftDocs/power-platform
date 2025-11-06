@@ -1,55 +1,52 @@
 ---
-title: Audit Power Automate logs in Microsoft Purview
-description: Learn how to access Power Automate logs in Microsoft Purview and explore what Power Automate activities you can audit.
-author: msftman
+title: Access and monitor Power Automate activity logs in Microsoft Purview
+description: Learn how to access Power Automate activity logs in Microsoft Purview and explore what Power Automate activities you can monitor.
+author: EllenWehrle
 ms.topic: how-to
-ms.date: 10/27/2025
+ms.date: 11/05/2025
 ms.subservice: admin
 ms.author: kenseongtan
 ms.reviewer: ellenwehrle
-Contributor: EllenWehrle
 search.audienceType: 
-  - flowmaker
-  - enduser
+  - admin
 ---
 # Audit Power Automate activities in Microsoft Purview
 
-Auditing Power Platform activities regularly in Microsoft Purview enables you and your team to:
+In Microsoft Purview, you can monitor many specific Power Automate activities, such as flow creations by specific users or connector calls and flow runs or failures by a specific user or agent. You also have the ability to view activity logs within specific date ranges to gain insights.
+
+Regularly audit Microsoft Power Automate activities in Microsoft Purview to:
 
 - maintain governance, compliance, and security
 - gain operational insights
 - identify and troubleshoot issues
 - mitigate failures.
 
-In Microsoft Purview, you can monitor many specific Power Automate activities, such as flow creations by specific users or connector calls and flow runs or failures by a specific user or agent. You can also audit within specific date ranges to gain insights.
+You can access and view Power Automate activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). The activity logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview). Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
-This article covers prerequisites, how to access the logs in Microsoft Purview, and details about Power Automate events and schemas.
+This article covers prerequisites, how to access the logs in Microsoft Purview, and provides details about Power Automate events and schemas.
 
-You can access and view Power Automate activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
+## Prerequisites
+
+To view connector activity logs in Microsoft Purview, make sure you've:
+
+- Reviewed and completed all the [prerequisites](activity-logs-overview.md#prerequisites) listed in the overview article.
+- Confirmed you're an admin who's assigned a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
+- Confirmed you have either the *Audit Logs* or *View-Only Audit Logs* role assigned to you in Microsoft Purview.
+
+Learn more:
+
+- [Learn more about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
+- [Permissions in the Microsoft Purview portal](/purview/purview-permissions)
 
 ## Access the logs
 
-1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) as a tenant admin.
-1. In the left hamburger menu, select **Show all**.
-1. Select **Audit** from the **Solutions** category.
-
-    ![Select audit from the menu.](./media/audit-logs/show-all.png)
-
-Power Platform admins can search the **Audit** screen for details from the following popular services.
-
-- Power BI
-- Microsoft Entra ID
-- Microsoft Teams
-- Dynamics 365
-- Power Apps
-- Power Automate
-- Dataverse
+[!INCLUDE[admin-audit](../../includes/admin-audit-activity-search.md)]
 
 Admins can filter for specific activities via the **Activities** list. You'll find the Power Automate activities in this list.
 
-## See audited events
+## Explore Power Automate activities
 
-All logging is done at the SDK layer, so a single action can trigger multiple logged events. Here's a list of events that you can audit.
+Logging takes place at the SDK layer, which means a single action can trigger multiple activities to be logged. The following are a sample of user activities you can audit.
 
 | Category | Event | Description |
 |-|-|-|
@@ -63,7 +60,7 @@ All logging is done at the SDK layer, so a single action can trigger multiple lo
 |Hosted RPA | Microsoft Entra ID joined | When a hosted RPA bot is joined to the customer's tenant Microsoft Entra ID.|
 
 > [!NOTE]
-> For events under the Hosted RPA category, the events appear under the record type of *HostedRPA* and *PowerPlatformAdministratorActivity*. Starting on September 30th of 2024, the record type *HostedRPA* will be discontinued. Please use the RecordTypes *PowerPlatformAdministratorActivity* to view Hosted RPA events.
+> For activities under the Hosted RPA category, the activities appear under the record type of *HostedRPA* and *PowerPlatformAdministratorActivity*. Starting on September 30th of 2024, the record type *HostedRPA* will be discontinued. Please use the RecordTypes *PowerPlatformAdministratorActivity* to view Hosted RPA events.
 
 ## Get details on base schema for logging
 
@@ -87,16 +84,15 @@ Schemas define the Power Automate fields that are sent to the Microsoft Purview 
 |LicenseDisplayName | LicenseDisplayName | Edm.String | No | Display name of the license.|
 |UserTypeInititated | UserTypeInititated | Edm.Int32 | No | Which type of user initiated the operation. Applicable for delete flow, edit permissions (1 = user, 2 = admin).|
 |UserUPN | UserUPN | Edm.String | No | Unique ID of the user. Always equivalent to UserKey.|
-|Additional info | More information, for example, the environment name).|
-
-## Retention
-
-Microsoft retains the audit data for 90 days. You can export the audit data in .csv format and then further explore the data with Microsoft Excel or Power BI.
-
-## Timing
-
-Events become available in the logs within 90 minutes of their occurrence.
 
 ## Limitations
 
-Only activity from cloud flows is available in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/). Activity for desktop flows is in the Microsoft Dataverse audit logs.
+Only activities from cloud flows are available in the [Microsoft Purview portal](https://compliance.microsoft.com/). Desktop flow activities are in the Microsoft Dataverse audit logs.
+
+### Related content
+
+- [Microsoft Purview](/purview/)
+- [Microsoft Purview portal](https://purview.microsoft.com/home)
+- [Get started with search in Microsoft Purview portal](/purview/audit-search#get-started-with-search)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

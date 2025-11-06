@@ -1,10 +1,10 @@
 ---
-title: Audit Power Platform connector logs in Microsoft Purview
-description: Learn how to access Power Platform connector logs in Microsoft Purview and explore what connector activities you can audit.
+title: Access and monitor Power Platform connector activity logs in Microsoft Purview
+description: Learn how to access Power Platform connector activity logs in Microsoft Purview and explore what connector activities you can monitor.
 author: schabungbam
 ms.topic: how-to
 ms.workload: na
-ms.date: 10/27/2025
+ms.date: 11/05/2025
 ms.subservice: admin
 ms.author: sameerch
 ms.reviewer: ellenwehrle
@@ -18,44 +18,31 @@ contributors:
 ms.custom: sfi-image-nochange
 ---
 
-# View the Power Platform connector activity logs
+# View Power Platform connector activity logs in Microsoft Purview
 
-Auditing Power Platform activities regularly in Microsoft Purview enables you and your team to:
+Activity logs show events related to connections and custom connectors.
+This article covers prerequisites, how to access the logs in Microsoft Purview, and details about connector activity event types and categories.
 
-- maintain governance, compliance, and security
-- gain operational insights
-- identify and troubleshoot issues
-- mitigate failures.
+You can access and view connector activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
 
-Audit logs are logs for important system level events. In the audit log feature, audit logs are available for events related to connections and custom connectors.
-This article covers prerequisites, how to access the logs in Microsoft Purview, details about connector events that can be audited.
+## Prerequisites
 
-You can access and view Power Pages activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
+To view connector activity logs in Microsoft Purview, make sure you've:
 
+- Reviewed and completed all the [prerequisites](activity-logs-overview.md#prerequisites) listed in the overview article.
+- Confirmed you're an admin who's assigned a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
+- Confirmed you have either the *Audit Logs* or *View-Only Audit Logs* role assigned to you in Microsoft Purview.
+
+Learn more:
+
+- [Learn more about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
+- [Permissions in the Microsoft Purview portal](/purview/purview-permissions)
 
 ## Access the logs
 
-1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) as a tenant admin.
+[!INCLUDE[admin-audit](../../includes/admin-audit-activity-search.md)]
 
-1. On the menu to the left under **Solutions**, select **Audit**.
-
-   :::image type="content" source="./media/audit-logs/solutions-audit.png" alt-text="Screenshot of the Audit selection on the Microsoft Purview menu under Solutions.":::
-
-   In the **New Search** tab, you can search for connector events.
-
-   :::image type="content" source="./media/audit-logs/purview-audit.png" alt-text="Screenshot of the Audit screen in the Microsoft Purview compliance portal.":::
-
-## Search for connector events
-
-As an admin, you can search for connector events related to connections and custom connectors.
-
-1. In the **Activities** field, start typing **PowerPlatform connector events**.
-
-1. When you see the **PowerPlatform connector events** heading, select the connector events to display.
-
-   :::image type="content" source="./media/audit-logs/connector-events.png" alt-text="Screenshot of the Power Platform connector events.":::
-
-### Available connector events
+### Explore connector events
 
 The following table lists the connector events available for searching in the audit logs.
 
@@ -77,11 +64,11 @@ The following table lists the connector events available for searching in the au
 |Gateway permission removed   | When sharing permissions of a gateway are removed        |
 |Added ConnectionDlpEvaluationResult |    When connection is turned off due to data policies |
 
-## Get details on activities for logging
+## View logged activity details
 
-In the **Audit search** screen, you can select the log to view the details of the event in a list to the right.
+In the **Audit search** screen, select the log to view the details of the event in a list to the right.
 
-### Available logging details
+### Available activity details
 
 The following table lists logging details available in the audit logs.
 
@@ -93,7 +80,7 @@ The following table lists logging details available in the audit logs.
 |Activity     | Event being audit logged        |
 |Item     |  Unique ID of the resource       |
 |CreationTime     |  Creation time       |
-Id     | Request Correlation ID        |
+| Id     | Request Correlation ID        |
 |Operation     | Name of the operation being audit logged        |
 |OrganizationId     | The unique ID of the tenant        |
 |UserType     | A digit representing the type of user. Examples: 0 = normal user, and 2 = admin user       |
@@ -103,7 +90,11 @@ Id     | Request Correlation ID        |
 |AdditionalInfo     | Additional information about the event:<br/></li><li>EnvironmentName: The unique ID of the environment<br/></li><li>ActionName: The API action that led to the event     |
 |ResourceId     | The unique ID of the resource. Examples: custom api, and connection or gateway     |
 
-### See also
+### Related content
 
-- [Microsoft Purview compliance portal](https://compliance.microsoft.com/)
-- [Microsoft Purview: Search the audit logs](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#search-the-audit-log)
+- [Microsoft Purview](/purview/)
+- [Microsoft Purview portal](https://purview.microsoft.com/home)
+- [Get started with search in Microsoft Purview portal](/purview/audit-search#get-started-with-search)
+- [Audit log activities](/purview/audit-log-activities)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

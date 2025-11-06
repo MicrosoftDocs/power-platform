@@ -1,8 +1,8 @@
 ---
-title: Audit Power Pages logs in Microsoft Purview
-description: Learn how to access Power Pages logs in Microsoft Purview and explore what Power Pages activities you can audit.
+title: Access and monitor Power Pages activity logs in Microsoft Purview
+description: Learn how to access Power Pages activity logs in Microsoft Purview and explore what Power Pages activities you can monitor.
 ms.topic: how-to
-ms.date: 10/28/2025
+ms.date: 11/05/2025
 author: PramithaU
 ms.subservice: admin
 ms.author: pudupa
@@ -11,25 +11,43 @@ search.audienceType:
   - admin
 ---
 
-# Audit Power Pages activities in Microsoft Purview
+# Monitor Power Pages activities in Microsoft Purview
 
-Auditing Power Platform activities regularly in Microsoft Purview enables you and your team to:
+In Microsoft Purview, you can monitor many specific Power Pages activities, such as environment lifecycle operations, property and setting changes, groups and rules settings, licensing, lockbox operations, data policies, and admin actions. You also have the ability to view activity logs within specific date ranges to gain insights.
+
+Regularly monitor Power Pages activities in Microsoft Purview to:
 
 - maintain governance, compliance, and security
 - gain operational insights
 - identify and troubleshoot issues
 - mitigate failures.
 
-This article covers prerequisites, how to access the logs in Microsoft Purview, details about Power Pages events that can be audited.
+You can access and view Power Pages activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview). Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
-You can access and view Power Pages activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
+This article covers prerequisites, how to access the logs in the Microsoft Purview portal, and details about Power Pages activities you can monitor.
 
-> [!NOTE]
-> You can search Power Pages activities for a specific period by entering the operation names listed in the documentation under **Activities – operation names** or by using the **Keyword Search** option in the search panel.
+## Prerequisites
 
-## What events are audited?
+To view connector activity logs in Microsoft Purview, make sure you've:
 
-The following are some of the user events you can audit.
+- Reviewed and completed all the [prerequisites](activity-logs-overview.md#prerequisites) listed in the overview article.
+- Confirmed you're an admin who's assigned a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
+- Confirmed you have either the *Audit Logs* or *View-Only Audit Logs* role assigned to you in Microsoft Purview.
+
+Learn more:
+
+- [Learn more about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
+- [Permissions in the Microsoft Purview portal](/purview/purview-permissions)
+
+## Access the logs
+
+[!INCLUDE[admin-audit](../../includes/admin-audit-activity-search.md)]
+
+## Explore Power Pages activities
+
+You can search Power Pages activities for a specific period by selecting the dates and entering the operation names listed in the **Activities – operation names** column in this section's table or by using the **Keyword Search** option in the search panel.
+
+The following are some of the activities you can monitor in Power Pages audit logs.
 
 | **Activity Name**                              | **Operation Name**                     | **Description**                                                               |
 |------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------------|
@@ -72,7 +90,7 @@ The following are some of the user events you can audit.
 | Install project service automation extension        | ProjectServiceAutomationExtensionInstalled | When the project service automation extension is installed                   |
 | Archive site                                   | SiteArchived                           | When the site is archived                                                     |
 | Suspend site                                  | SiteSuspended                          | When the site is suspended                                                    |
-| Unarchive site                                 | SiteUnarchived                         | When the site is unarchived                                                   |
+| Unarchive site                                 | SiteUnarchived                         | When the site is not archived                                                   |
 | Update website authentication key             | WebsiteAuthenticationKeyUpdated        | When the website authentication key is updated                                |
 | Create site                                    | SiteCreated                            | When the site is created                                                      |
 | Enable CDN                                     | CDNEnabled                             | When CDN is enabled                            |
@@ -81,5 +99,8 @@ The following are some of the user events you can audit.
 ### See also
 
 - [Power Pages activity logging (video)](https://youtu.be/pBKkkkPpX0I?feature=shared)
-- [Search the audit log in Microsoft Purview](/purview/audit-new-search#get-started-with-audit-new-search)
-- [View Power Platform administrative logs in Microsoft Purview (preview)](admin-activity-logging.md)
+- [Microsoft Purview](/purview/)
+- [Microsoft Purview portal](https://purview.microsoft.com/home)
+- [Get started with search in Microsoft Purview portal](/purview/audit-search#get-started-with-search)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,9 +1,9 @@
 ---
-title: Audit Power Platform administrative  in Microsoft Purview
-description: Learn how to access Power Platform administrative logs in Microsoft Purview and explore what admin activities you can audit.
+title: Access and monitor Power Platform admin activity logs in Microsoft Purview
+description: Learn how to access Power Platform admin activity logs in Microsoft Purview and explore what admin activities you can monitor.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/24/2025
+ms.date: 11/05/2025
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -19,27 +19,43 @@ ms.contributors:
 
 ---
 
-# Audit Power Platform administrative logs in Microsoft Purview
+# Monitor Power Platform admin logs in Microsoft Purview
 
-Administration of Microsoft Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to audit such actions that help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
+Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to audit such actions to help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
 
-In this article, you learn about activities that are performed on Power Platform environments by those having administrative access across user experiences and programmable interfaces using Microsoft Purview compliance portal. The activities fall within the following categories:
+In this article, you learn how you can monitor activities that are performed on Power Platform environments by those having administrative access across user experiences and programmable interfaces in the Microsoft Purview portal. The activities fall within the following categories:
 
 - [Environment lifecycle operations](#activity-category-environment-lifecycle-operations)
 - [Environment property and setting change activities](#activity-category-environment-property-and-setting-change-activities)
 
-> [!IMPORTANT]
->
-> - Administrative activities for Power Platform environments are enabled by default on all tenants. You can't disable activity collection.
-> - At least one user with an assigned Microsoft 365 E5 or greater license, as required by Microsoft Purview. More information: [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
-
-The audit activities include actions made by Power Platform administrators, Dynamics 365 administrators, members of the System Administrator role (for Power Platform environments with Dataverse), the environment creator or owner (for Power Platform environments without Dataverse), and impersonated users that map to any of these roles.
+The activities include actions made by Power Platform administrators, Dynamics 365 administrators, members of the System Administrator role (for Power Platform environments with Dataverse), the environment creator or owner (for Power Platform environments without Dataverse), and impersonated users that map to any of these roles.
 
 Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). The schema defines the payload of metadata that is unique for each activity.
 
+## Prerequisites
+
+To view connector activity logs in Microsoft Purview, make sure you've:
+
+- Reviewed and completed all the [prerequisites](activity-logs-overview.md#prerequisites) listed in the overview article.
+- Confirmed you're an admin who's assigned a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
+- Confirmed you have either the *Audit Logs* or *View-Only Audit Logs* role assigned to you in Microsoft Purview.
+Learn more:
+
+- [Learn about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
+- [Permissions in the Microsoft Purview portal](/purview/purview-permissions)
+
+> [!NOTE]
+> Administrative activities for Power Platform environments are enabled by default on all tenants and you can't disable the activity collection.
+
+## Access the logs
+
+[!INCLUDE[admin-audit](../../includes/admin-audit-activity-search.md)]
+
+As you search, individual activities are shown. A common schema is enforced to enable search constructs across activities. The value in the **PropertyCollection** field is specific to each activity type.
+
 ## Activity category: Environment lifecycle operations
 
-Each activity event contains a payload of metadata that is specific to the individual event. The following _environment lifecycle operation_ activities are delivered to Microsoft Purview.
+Each activity event contains a payload of metadata that is specific to the individual event. The following *environment lifecycle operation* activities are delivered to Microsoft Purview.
 
 | **Event**                  | **Description**                                                                                                                        |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -149,7 +165,7 @@ The following events are delivered to Microsoft Purview.
 
 Here's an example of the payload of metadata that can be expected from one of the events listed in the table.
 
-```
+```json
 [
     {
         "Name": "powerplatform.analytics.resource.tenant.lockbox.data_access.duration",
@@ -244,7 +260,7 @@ The following data policy events are delivered to Microsoft Purview.
 
 Here's an example payload of metadata that can be expected from one of the events in the table.
 
-```
+```json
 [
     {
         "Name": "powerplatform.analytics.resource.tenant.governance.api_policy.additional_resources",
@@ -306,32 +322,12 @@ Here's an example payload of metadata that can be expected from one of the event
 
 ```
 
-## View activities in Microsoft Purview
-
-When audit log search is turned on in the Microsoft Purview compliance portal, admin activity from your organization is recorded in the Microsoft Purview audit log.
-
-You can use several methods to search events in Microsoft Purview.
-
-:::image type="content" source="media/admin-activity-logging/audit-search.png" alt-text="Microsoft Purview search audit page":::
-
-Use wild card search for contextual information in the Microsoft Purview user experience.
-
-Narrow down search constructs that are specific to individual events.
-
-:::image type="content" source="media/admin-activity-logging/filter-record-types.png" alt-text="Filter record types in Microsoft Purview audit search":::
-
-As you search, individual activities are shown. A common schema is enforced to enable search constructs across activities. The value in the **PropertyCollection** field is specific to each activity type.
-
-For more information about the Microsoft Purview audit log, data retention policies, and capabilities, see [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
-
 ### See also
 
-- [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
+- [Microsoft Purview](/purview/)
+- [Microsoft Purview portal](https://purview.microsoft.com/home)
+- [Get started with search in Microsoft Purview portal](/purview/audit-search#get-started-with-search)
 - [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)
 - [Detailed properties in the audit log](/purview/audit-log-detailed-properties)
-- [Audit Power Apps logs](audit-logs-power-apps.md)
-- [Audit Power Automate logs](audit-logs-power-automate.md)
-- [Audit connector logs](audit-logs-connectors.md)
-- [Audit Dataverse and model-driven apps logs](audit-logs-dataverse-and-model-driven-apps.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
