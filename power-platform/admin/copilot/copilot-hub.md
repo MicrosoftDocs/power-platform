@@ -57,6 +57,18 @@ Admins can define who within an environment can use Copilot capabilities in mode
 | Power Apps | [Visualize with Copilot](/power-apps/user/visualize-data-in-copilot)|
 | Power Apps | [Natural language search and filtering](/power-apps/user/find-data-with-ai) |
 
+### Turn on or off AI capabilities in Dynamics 365 Sales
+
+As a tenant administrator, you can turn on or off AI capabilities such as Copilot and AI agents in Dynamics 365 Sales, across environments and environment groups. This setting helps you centrally manage AI usage across your organization. By default, the AI capabilities are turned on in all environments. If you turn off the capability, the features are turned off automatically in Dynamics 365 Sales.  
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the left navigation pane, select **Copilot** > **Settings**.
+1. In the **Settings** page, under **Dynamics 365 Sales**, select one of the following AI capabilities that you want to turn on:
+   - **AI Agents**: Lets you turn on out-of-the-box Sales AI agents such as Sales Qualification Agent and Sales Close Agent. Learn more about Sales AI agents in [Sales AI Agents Overview](/dynamics365/sales/sales-ai-agents-overview) 
+   - **Copilot**: Lets you turn on Copilot chat and other Copilot skills such as opportunity summary and lead summary in Dynamics 365 Sales. Learn more about Copilot in Dynamics 365 Sales in [Copilot in Dynamics 365 Sales overview](/dynamics365/sales/copilot-overview)
+1. Select an environment or environment group in the corresponding tab and select **Add**.
+2. Select **On** to turn on the AI capability.
+
 ## Product pages
 The product pages contain usage and cost insights specific to each product. Currently, there are product pages for **Copilot Studio**, **Power Apps**, and **Power Pages**.
 
@@ -84,18 +96,6 @@ Admins can access detailed usage analytics and apply governance controls tailore
 ### Dynamics 365 Sales
 
 Admins can view usage analytics for Copilot in Dynamics 365 Sales on the **Dynamics 365 Sales** page to understand the value that end users get from AI in Dynamics 365 Sales. The page includes monthly active user count information for Copilot in Dynamics 365 Sales. Furthermore, admins can look into Copilot by selecting it from the bottom table view. This opens a panel where you can see top environments and investigate those to see apps where users are interacting with Copilot the most.
-
-#### Turn on AI capabilities in Dynamics 365 Sales
-
-To turn on AI capabilities in Dynamics 365 Sales, follow these instructions.
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the left navigation pane, select **Copilot** > **Settings**.
-1. In the **Settings** page, under **Dynamics 365 Sales**, select one of the following AI capabilities that you want to turn on:
-   - **AI Agents**: Lets you turn on out-of-the-box Sales AI agents such as Sales Qualification Agent and Sales Close Agent. Learn more about Sales AI agents in [Sales AI Agents Overview](/dynamics365/sales/sales-ai-agents-overview) 
-   - **Copilot**: Lets you turn on Copilot chat and other Copilot skills such as opportunity summary and lead summary in Dynamics 365 Sales. Learn more about Copilot in Dynamics 365 Sales in [Copilot in Dynamics 365 Sales overview](/dynamics365/sales/copilot-overview)
-1. Select the environment or environment group in the corresponding tab and select **Add**.
-2. Select **On** to turn on the AI capability.
 
 # [Classic admin center](#tab/classic)
 
