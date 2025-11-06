@@ -17,7 +17,7 @@ contributors:
 
 As organizations integrate autonomous and interactive AI agents to perform tasks previously handled by humans, administrators may notice a reduction in visibility and control compared to the traditional user network security policy and management experience.
 
-With Global Secure Access (GSA) for Agents, you can now regulate how these agents use knowledge, tools, and actions to access other resources in a way that's quite like how you regulate users.
+With Global Secure Access (GSA) for agents, you can now regulate how agents use knowledge, tools, and actions to access other resources in a way that's quite like how you regulate users.
 
 <!--# TODO :::image type="content" source="media/secure-web-ai-gateway-agents-diagram.png" alt-text="Diagram illustrating the Secure Web and AI Gateway feature for agents.":::-->
 
@@ -66,7 +66,7 @@ The first step is to enable traffic forwarding from Copilot Studio Agents in the
 
 ### Enable network controls at an environment group-level
 
-To configure Global Secure Access settings at the environment group-level, complete these steps:
+To configure Global Secure Access settings at the environment group-level, complete the following steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Security**.
