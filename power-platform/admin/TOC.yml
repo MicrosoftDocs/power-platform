@@ -560,8 +560,8 @@
                       href: control-app-access-environment.md
                     - name: Commonly used Microsoft first-party services and portal apps
                       href: apps-to-allow.md
-                    - name: Global Secure Access for Copilot Studio agents (preview)
-                      href: security/global-secure-access-agents.md
+                    - name: Secure Web and AI Gateway for agents (preview)
+                      href: security/secure-web-ai-gateway-agents.md
             - name: Compliance
               items:
                 - name: Compliance tools
