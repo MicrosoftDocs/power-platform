@@ -73,7 +73,7 @@ Before viewing Power Platform activity logs in Microsoft Purview, you need:
 
 - A Power Platform system administrator to:
   - [Configure and turn on auditing for each Power Platform production environment](#configure-and-turn-on-auditing-for-each-power-platform-environment).
-  - [Assign appropriate licenses](/assign-licenses) to all users, makers, admins, and agents so activities and interactions are logged accurately.
+  - [Assign appropriate licenses](../assign-licenses.md) to all users, makers, admins, and agents so activities and interactions are logged accurately.
 
 - A Microsoft Purview admin with a Microsoft 365 E5 or greater license to:
   - [Turn on audit log search](/purview/audit-log-enable-disable#turn-on-auditing) in Microsoft Purview, if it's not already turned on.
@@ -121,7 +121,7 @@ After you have taken the steps to allow Microsoft Purview access and to configur
 - [Turn on auditing](/purview/audit-log-enable-disable#turn-on-auditing) if it's not already turned on.
 - [Get started with auditing solutions](/purview/audit-get-started) in Microsoft Purview.
 - [Assign permissions](/purview/purview-permissions).
-- [Manage audit log retention policies](/audit-log-retention-policies).
+- [Manage audit log retention policies](/purview/audit-log-retention-policies).
 - [Get started with search](/purview/audit-search).
 - [Search audit logs to investigate common support issues](/purview/audit-troubleshooting-scenarios).
 

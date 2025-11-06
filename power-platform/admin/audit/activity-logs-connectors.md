@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.workload: na
 ms.date: 11/05/2025
 ms.subservice: admin
-ms.author: sameerch
+ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
