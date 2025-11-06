@@ -80,7 +80,7 @@ This hybrid orchestration model ensures that intent recognition, retrieval logic
 
 The following image illustrates academic staff asking the agent a question and getting a response back.
 
-:::image type="content" source="media/la-trobe-university/promogenius-app-interface.png" alt-text="Screenshot of the chat interface where an academic staff member asks a question, and Troby responds with a relevant answer." lightbox="media/la-trobe-university/promogenius-app-interface.png":::
+:::image type="content" source="media/la-trobe-university/app-interface-query.png" alt-text="Screenshot of the chat interface where an academic staff member asks a question, and Troby responds with a relevant answer." lightbox="media/la-trobe-university/app-interface-query.png":::
 
 The default conversational boosting passes the user query to a flow to check the classification and redirects the flow to different topics if the identified intent in the output of an AI prompt has a confidence score that's 0.80 or higher.
 
@@ -201,7 +201,7 @@ The Copilot Studio agent is currently deployed in Teams and used by academic sta
 
 The architecture is organized in three layers: data, conversation, and user interface. The following image shows a high-level view of the architecture of the Troby agent across the multiple features used in the solution.
 
-:::image type="content" source="media/la-trobe-university/troby-architecture.png" alt-text="Diagram showing the high-level architecture of the Troby agent." lightbox="media/la-trobe-university/troby-architecture.png":::
+:::image type="content" source="media/la-trobe-university/architecture.png" alt-text="Diagram showing the high-level architecture of the Troby agent." lightbox="media/la-trobe-university/architecture.png":::
 
 1. Data Layer
     1. Scheduled Power Automate flows extract data via ServiceNow API.
