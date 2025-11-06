@@ -3,7 +3,7 @@ title: Overview of unified admin experience for finance and operations apps
 description: Overview of unified admin experiences for finance and operations apps customers in the Power Platform admin center.
 author: laneswenka
 ms.topic: overview
-ms.date: 09/30/2025
+ms.date: 11/06/2025
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
@@ -53,11 +53,11 @@ With either option, your environment has two runtime URLs:
 
 ## Transition from an environment-slot purchasing model to a capacity-based model
 
-When you purchase a license for any finance and operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is granted various entitlements.  These are in the form of Storage measured in Gigabytes (GB), as well as Power Platform Requests (PPR) which provides more computing power.  The more user licenses you purchase, the more of each type of entitlement you will receive.  You can also purchase add-ons of either entitlement directly if you simply require more storage or more compute.
+When you purchase a license for any finance and operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is granted various entitlements. These are in the form of storage measured in gigabytes (GB), as well as Power Platform Requests (PPR) which provide more computing power. The more user licenses you purchase, the more of each type of entitlement you receive. You can also purchase add-ons of either entitlement directly if you simply require more storage or more compute.
 
 A license is required to create or install any finance and operations app in the Power Platform admin center. You must also have at least 1 GB available of both operations and Dataverse database capacity to provision one more environment. There are no strict limits on how many environments you can create. Lifecycle Services is different, where each sandbox and production environment slot has a predetermined purchase.
 
-For more information on managing storage, visit [Finance and operations storage capacity](../finance-operations-storage-capacity.md).
+For more information on managing storage, go to [Finance and operations storage capacity](../finance-operations-storage-capacity.md).
 
 ## Development reimagined
 
@@ -83,22 +83,22 @@ The following table is a reference for each operation type and explains any nuan
 | Convert to production | Not applicable | Convert to production | This operation isn't yet implemented for environments where **Finance and Operations Provisioning App** is installed. |
 | Delete | Deallocate/delete | Delete | Restoring a deleted environment where **Dynamics 365 Finance and Operations Provisioning App** is installed isn't yet implemented. |
 
-## Features that are not being implemented from Lifecycle Services
+## Lifecycle Services features not implemented in the Power Platform admin center
 
-The following table is a reference of features from Lifecycle Services that will not be implemented in Power Platform admin center.
+The following table is a reference of features from Lifecycle Services that aren't implemented in Power Platform admin center.
 
-| LCS feature | Implemented in PPAC | Comments |
+| Lifecycle Services feature | Implemented in PPAC | Comments |
 |-------------|---------------------|----------|
 | Methodology | No | Phases and timelines can be tracked in Dynamics Implementation portal or in Azure DevOps |
-| Project Settings and users | No | Dynamics Implementation Portal | 
+| Project settings and users | No | Dynamics Implementation portal | 
 | Organization users | No | Microsoft 365 admin center | 
 | Translation service | No | [Dynamics translation connector](/connectors/dynamicstranslations/) |
-| Asset Library | No | Software packages are stored in Azure DevOps and directly imported to Dataverse.  Database backups are not provided for offline use. |
+| Asset library | No | Software packages are stored in Azure DevOps and directly imported to Dataverse. Database backups are not provided for offline use. |
 | Solution management | No | Microsoft AppSource | 
 | Build environments | No | Microsoft Hosted Agents in Azure DevOps |
-| Alert service | No | Create a support ticket | 
+| Alert service | No | Create a support ticket. | 
 | Business process modeler | No | Business process catalog |
-| Task Recorder | No | Save files locally |
+| Task recorder | No | Save files locally. |
 
 ## Tutorials and helpful articles
 
@@ -132,7 +132,7 @@ View the templates that allow you to deploy: [Tutorial: Provision a new environm
 
 #### How do I access SQL for these environments?
 
-You can access the database in developer environments.  Learn more in [Request credentials to product database](../../developer/unified-experience/finance-operations-product-db-access.md).
+You can access the database in developer environments. Learn more in [Request credentials to product database](../../developer/unified-experience/finance-operations-product-db-access.md).
 
 ### Related articles
 
