@@ -38,7 +38,7 @@ This configuration results in a default CSP of `script-src * 'unsafe-inline' 'un
 
 ### Strict mode
 
-The Strict CSP toggle creates a CSP that mostly does not include wildcards or unsafe directives, such as `unsafe-inline`.  When Strict CSP is on, the above directives become the following.  The `<platform>` notation means that platform domains are provided as required by the product.  The domains in this section may change over time as the product grows.
+The Strict CSP toggle creates a content security policy that mostly doesn't include wildcards or unsafe directives, such as `unsafe-inline`. When Strict CSP is on, the directives detailed in the previous table turn into the directives detailed in the following table. The `<platform>` notation means that platform domains are provided as required by the product. The domains in this section may change over time as the product grows.
 
 > [!NOTE]
 > Strict CSP is currently only available for model-driven apps.
@@ -67,23 +67,11 @@ You can toggle and configure CSP through the Power Platform admin center. **It's
 
 To configure CSP:
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Product**, then select **Privacy + Security**.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Product**, then select **Privacy + Security**.
-
----
 
 The following image shows the default state of the settings:
 
