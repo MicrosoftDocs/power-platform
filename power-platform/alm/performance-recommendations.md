@@ -29,7 +29,7 @@ The table below lists the option names used across the available tools.
 |Import as a holding solution     |--import-as-holding       |Stage for upgrade        |-            |
 |Stage and Upgrade|--stage-and-upgrade   |Upgrade|*Default behavior*|
 |Overwrite unmanaged customizations|--force-overwrite   |-|-|
-|Activate Plugins|--activate-plugins   |Enable plugin steps and flows included in the solution|-|
+|Activate Plugins|--activate-plugins   |Enable plugin steps and flows included in the solution|*Default behavior*|
 |Skip product update dependencies|--skip-dependency-check   |-|-|
 |Skip lower version|--skip-lower-version   |-|Allow redeployments of older versions|
 |Import as a Managed solution|--convert-to-managed   |-|-|
