@@ -90,22 +90,12 @@ Admins can view usage analytics for Copilot in Dynamics 365 Sales on the **Dynam
 To turn on AI capabilities in Dynamics 365 Sales, follow these instructions.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the left navigation pane, select **Copilot**.
-1. In the Copilot pane, select **Settings**.
-1. In the **Settings** page, under **Dynamics 365 Sales**, select **AI Agents** to use AI agents or **Copilot** to turn on Copilot-powered features in Dynamics 365 Sales.
-    1. Go to the **Environment groups** tab. 
-        1. Select an environment group where you want to turn on AI agents or Copilot, and then select **Add**.
-        1. Select the **On** check box to turn on AI agents or Copilot in all environments in the group.
-        1. Select **Save**.
-        1. Select **Cancel** to close the panel.
-    1. Go to the **Environment** tab. 
-        1. Select an environment where you want to turn on AI agents or Copilot, and then select **Add**.
-        1. Select the **On** check box to turn on AI agents or Copilot in the selected environment.
-        1. Select **Save**.
-        1. Select **Cancel** to close the panel.
-    
-> [!NOTE]
-> For some AI agents, you might need to turn on the Copilot setting also depending on the agent's capabilities.
+1. In the left navigation pane, select **Copilot** > **Settings**.
+1. In the **Settings** page, under **Dynamics 365 Sales**, select one of the following AI capabilities that you want to turn on:
+   - **AI Agents**: Lets you turn on out-of-the-box Sales AI agents such as Sales Qualification Agent and Sales Close Agent. Learn more about Sales AI agents in [Sales AI Agents Overview](/dynamics365/sales/sales-ai-agents-overview) 
+   - **Copilot**: Lets you turn on Copilot chat and other Copilot skills such as opportunity summary and lead summary in Dynamics 365 Sales. Learn more about Copilot in Dynamics 365 Sales in [Copilot in Dynamics 365 Sales overview](/dynamics365/sales/copilot-overview)
+1. Select the environment or environment group in the corresponding tab and select **Add**.
+2. Select **On** to turn on the AI capability.
 
 # [Classic admin center](#tab/classic)
 
