@@ -16,7 +16,7 @@ This tutorial provides step-by-step guidance for administrators on how to conver
 
 ## Purpose and scenario
 
-Converting a sandbox environment to production is primarily used when an organization is ready to transition from pre-production testing to live operations. Customers often utilize sandbox environments to validate configurations, code, and integrations before performing this conversion as part of their formal go-live process.
+Use the conversion process when your organization is ready to transition from pre-production testing to live operations. Use sandbox environments to validate configurations, code, and integrations before performing this conversion as part of your formal go-live process.
 
 - **Why convert?**
   - To upgrade the environment's disaster recovery capabilities and reliability for business usage.
@@ -33,7 +33,7 @@ Converting a sandbox environment to production is primarily used when an organiz
 ### 2. Convert through the Power Platform admin center
 
 1. **Sign in:** Access the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. **Locate environment:** In the left navigation, select **Manage**, and then in the **Manage** pane, select **Environments**. In the **Environmets** page, select the sandbox environment to convert to production.
+1. **Locate environment:** In the left navigation, select **Manage**, then in the **Manage** pane, select **Environments**. In the **Environments** page, select the sandbox environment to convert to production.
 1. **Initiate conversion:** In the action bar across the top of the page, select the **Convert to Production** button.
 1. **Acknowledge downtime:** Carefully read downtime warnings and confirm acceptance. Once acknowledged, the operation begins.
 1. **Monitor progress:** Use the admin center to track conversion status. The environment is inaccessible during the conversion window (up to two hours).
