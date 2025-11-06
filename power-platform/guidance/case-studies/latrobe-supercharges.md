@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
-ms.date: 10/23/2025
+ms.date: 11/06/2025
 ms.topic: overview
 ---
 # La Trobe University supercharges academic productivity with AI and Copilot Studio
