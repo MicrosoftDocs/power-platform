@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Power Platform toolkits documentation # < 60 chars
-summary: Power Platform toolkits are made available by the Power Platform engineering team as reference implementation to provide a starting point in solving a problem. # < 160 chars
+summary: Power Platform toolkits are made available by the Power Platform engineering team or the Power Customer Advisory Team (Power CAT) to extend product capabilities. # < 160 chars
 
 metadata:
   title: Power Platform toolkits documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page # Required
   author: manuelap-msft #Required; your GitHub user alias, with correct capitalization.
   ms.author: mapichle #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/08/2025
+  ms.date: 10/27/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -55,4 +55,16 @@ landingContent:
              text: Install the ALM Accelerator
            - url: /power-platform/guidance/alm-accelerator/new-maker-experience
              text: Use the ALM Accelerator
+  - title: Copilot Studio Kit
+    linkLists:
+      - linkListType: overview
+        links:
+           - url: /microsoft-copilot-studio/guidance/kit-overview
+             text: What is the Copilot Studio Kit
+           - url: /microsoft-copilot-studio/guidance/kit-test-capabilities
+             text: What's in the Copilot Studio Kit
+           - url: /microsoft-copilot-studio/guidance/kit-prerequisites
+             text: Set up and configure Copilot Studio Kit
+           - url: /microsoft-copilot-studio/guidance/kit-run-tests
+             text: Use Copilot Studio Kit to run tests
   
