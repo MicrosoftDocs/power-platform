@@ -10,18 +10,24 @@ ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
-# Audit Power Automate activities in Microsoft Purview
+# Monitor Power Automate activities in Microsoft Purview
 
-You can monitor many Power Automate activities in Microsoft Purview, such as flow creations by specific users or connector calls and flow runs or failures by specific users or agents. You also have the ability to view activity logs within specific date ranges to gain insights.
+You can monitor many Microsoft Power Automate activities in Microsoft Purview, such as:
 
-You can regularly audit Microsoft Power Automate activities in Microsoft Purview to:
+- flow creations by specific users
+- connector calls by specific users and agents
+- flow runs or failures by specific users or agents
+
+You also have the ability to view activity logs within specific date ranges to gain insights.
+
+Regularly audit Microsoft Power Automate activities in Microsoft Purview to:
 
 - maintain governance, compliance, and security
 - gain operational insights
 - identify and troubleshoot issues
 - mitigate failures.
 
-You can access and view Power Automate activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). The activity logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview). Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
+You can access and monitor Power Automate activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). The activity logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview). Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
 This article covers prerequisites, how to access the logs in Microsoft Purview, and provides details about Power Automate events and schemas.
 
@@ -42,11 +48,11 @@ Learn more:
 
 [!INCLUDE[admin-audit](../../includes/admin-audit-activity-search.md)]
 
-Admins can filter for specific activities via the **Activities** list. You'll find the Power Automate activities in this list.
+Admins can filter for specific Power Automate activities via the **Activities** list.
 
 ## Explore Power Automate activities
 
-Logging takes place at the SDK layer, which means a single action can trigger multiple activities to be logged. The following are a sample of user activities you can audit.
+Logging takes place at the SDK layer, which means a single action can trigger multiple activities to be logged. This table lists a sample of user events you can monitor.
 
 | Category | Event | Description |
 |-|-|-|
@@ -64,7 +70,7 @@ Logging takes place at the SDK layer, which means a single action can trigger mu
 
 ## Get details on base schema for logging
 
-Schemas define the Power Automate fields that are sent to the Microsoft Purview compliance portal. Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to Power Automate. The base schema contains these common fields.
+Schemas define the Power Automate fields that are sent to the Microsoft Purview compliance portal. Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to Power Automate. This table lists the common fields the base schema contains.
 
 |Field display name | Logical name | Type | Mandatory | Description|
 |-|-|-|-|-|

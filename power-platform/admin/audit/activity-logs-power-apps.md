@@ -13,18 +13,18 @@ search.audienceType:
   - admin
 ---
 
-# Access and monitor Power Apps audit logs in Microsoft Purview
+# Monitor Power Apps audit logs in Microsoft Purview
 
-You can monitor many Power Apps activities in Microsoft Purview, such as canvas app creation, usage, patching, and deletion by specific users. You can also view activity logs within specific date ranges to gain insights.
+You can monitor many Microsoft Power Apps activities in Microsoft Purview, such as canvas app creation, usage, patching, and deletion by specific users. You can also view activity logs within specific date ranges to gain insights.
 
-You can regularly monitor Microsoft Power Apps activities in Microsoft Purview to:
+Regularly monitor Microsoft Power Apps activities in Microsoft Purview to:
 
 - maintain governance, compliance, and security
 - gain operational insights
 - identify and troubleshoot issues
 - mitigate failures.
 
-You can access and view Power Automate activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). The activity logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview). Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
+You can access and monitor Power Automate activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). The activity logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview). Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
 This article covers prerequisites, how to access your data in Microsoft Purview's compliance portal, and details about Power Apps events and schema.
 
@@ -47,7 +47,7 @@ Learn more:
 
 ## Explore Power Apps activities
 
-Logging takes place at the SDK layer, which means a single action can trigger multiple events that are logged. The following are a sample of user events you can audit.
+Logging takes place at the SDK layer, which means a single action can trigger multiple events that are logged. This table lists a sample of user events you can audit.
 
 |Event  |Description  |
 |---------|---------|
@@ -83,7 +83,7 @@ Logging takes place at the SDK layer, which means a single action can trigger mu
 
 ## Schema
 
-Schemas define which Power Apps fields are sent to the Microsoft Purview compliance portal. Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to Power Apps activities. The value in the **PropertyCollection** field is specific to each Power Apps activity type. To identify Power Apps activities, look for nested schema property **powerplatform.analytics.resource.type** with value **PowerApp** within the **PropertyCollection** property. The following is an example of the activity-specific schema.
+Schemas define which Power Apps fields are sent to the Microsoft Purview compliance portal. Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to Power Apps activities. The value in the **PropertyCollection** field is specific to each Power Apps activity type. To identify Power Apps activities, look for nested schema property **powerplatform.analytics.resource.type** with value **PowerApp** within the **PropertyCollection** property. Here's an example of the activity-specific schema.
 
 ```json
 [

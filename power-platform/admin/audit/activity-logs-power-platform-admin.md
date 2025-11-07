@@ -21,7 +21,7 @@ ms.contributors:
 
 # Monitor Power Platform admin logs in Microsoft Purview
 
-Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to audit such actions to:
+Administration of Microsoft Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to monitor such actions to:
 
 - help mitigate failures
 - help contain systems of security constraints
