@@ -38,7 +38,7 @@ You should answer questions such as:
 -   How can I automatically provision environments from source code?
     - More information: [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md)
 -   What are the dependencies on my environments? 
-    - More information: [Multiple solution layering and dependencies](organize-solutions.md#multiple-solution-layering-and-dependencies)
+    - More information: [Multiple solution layering and dependencies](organize-solutions.md)
 
 ## Other environments 
 
