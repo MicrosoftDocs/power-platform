@@ -36,8 +36,6 @@ For example, a customer reads that a new service update is available and wants t
 
 1. A message box informs you that you're about to go to a new page where you can manage the Finance and Operations Provisioning app. Select **OK**.
 
-    :::image type="content" source="media/tutorial-install-app1.png" alt-text="Message box that gives you the option to proceed with management of the application or cancel the action.":::
-
 1. The **Dynamics 365 Finance and Operations Provisioning App** update experience page is opened on a new browser tab or in a new browser window. In the dropdown list, select a new application version.
 
     > [!NOTE]
