@@ -40,9 +40,10 @@ All updates to a lockbox request are recorded and made available to your organiz
 Power Platform and Dynamics 365 applications and services store customer data in several Azure storage technologies. When you turn on Customer Lockbox for an environment, customer data associated with the respective environment is protected by the lockbox policy, irrespective of the storage type.  
 
 > [!NOTE]
+>
 > - Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (excluding Cards for Power Apps), AI Builder, Power Pages, Power Automate, Microsoft Copilot Studio, Dataverse, Customer Insights, Customer Service, Sales (except conversation intelligence), Communities, Guides, Connected Spaces, Finance (except Lifecycle Services), Project Operations (except Lifecycle Services), Supply Chain Management (except Lifecycle Services), and the real-time marketing feature area of the Marketing app.
 > - Features powered by Azure OpenAI Service are excluded from Lockbox policy enforcement unless product documentation for a given feature states that Lockbox applies.
-> - Nuance Conversational IVR is excluded from Lockbox policy enforcement unless product documentation for a given feature states that Lockbox applies. 
+> - Nuance Conversational IVR is excluded from Lockbox policy enforcement unless product documentation for a given feature states that Lockbox applies.
 > - [Maker Welcome Content](welcome-content.md) is excluded from Lockbox policy enforcement.
 > - You must disable Lucene.NET search from your website and move to Dataverse Search to be able to use Customer Lockbox. More information: [Portals search using Lucene.NET search is deprecated](/power-apps/maker/portals/important-changes-deprecations#portals-search-using-lucenenet-search).
 
@@ -55,7 +56,7 @@ Power Platform and Dynamics 365 applications and services store customer data in
 3. In addition, a lockbox request is generated if the respective data store is associated with an environment protected according to the lockbox policy enablement. An email notification is sent to the designated approvers (Power Platform administrators) about the pending data access request from Microsoft.  
 
    > [!IMPORTANT]
-   > The Microsoft engineer won’t be able to proceed with their investigation until the lockbox request is approved by the customer. This could cause delays in addressing the support ticket or prolonged outages. Make sure you monitor email notifications and/or lockbox requests in the Power Platform admin center and respond in a timely manner to avoid service interruptions.
+   > The Microsoft engineer won't be able to proceed with their investigation until the lockbox request is approved by the customer. This could cause delays in addressing the support ticket or prolonged outages. Make sure you monitor email notifications and/or lockbox requests in the Power Platform admin center and respond in a timely manner to avoid service interruptions.
 
    :::image type="content" source="media/lockbox-request.png" alt-text="A sample lockbox request.":::
 
@@ -84,10 +85,10 @@ Power Platform administrators can create or update the lockbox policy in the Pow
 
    |Field  |Description  |
    |---------|---------|
-   |Support request ID     | The ID of the support ticket associated with the lockbox request. If the request is a result of Microsoft-initiated internal alert, the value is “Microsoft initiated”.|
+   |Support request ID     | The ID of the support ticket associated with the lockbox request. If the request is a result of Microsoft-initiated internal alert, the value is "Microsoft initiated".|
    |Environment     | The display name of the environment in which data access is being requested.         |
    |Status     | The status of the lockbox request. <br /> <ul><li>**Action needed**: Pending approval from the customer</li><li>**Expired**: No approval received from the customer </li><li>**Approved**: Approved by the customer </li><li>**Denied**: Denied by the customer</li></ul>        |
-   |Requested     | The time at which the Microsoft engineer requested access to customer data in customer’s environment.      |
+   |Requested     | The time at which the Microsoft engineer requested access to customer data in customer's environment.      |
    |Request expiration     | The time by which the customer needs to approve the lockbox request. The status of the request change to **Expired** if no approval is given by this time.         |
    |Access period     | The length of time the requestor wants to access customer data. This value is by default 8 hours and can't be changed.         |
    |Access expiration     | If access is granted, this is the time until which the Microsoft engineer has access to customer data.   |
@@ -104,8 +105,8 @@ Power Platform administrators can create or update the lockbox policy in the Pow
 
 ## Audit lockbox requests
 
-> [!Warning]
-> The schema documented in this section for the lockbox audit events is deprecated and won't be available starting in July 2024. You can audit Customer Lockbox events using the new schema available at [Activity category: Lockbox operations](admin-activity-logging.md#activity-category-lockbox-operations).
+> [!WARNING]
+> The schema documented in this section for the lockbox audit events is deprecated and won't be available starting in July 2024. You can audit Customer Lockbox events using the new schema available at [Activity category: Lockbox operations](./audit/activity-logs-power-platform-admin.md#activity-category-lockbox-operations).
 
 Actions related to accepting, denying, or expiration of a lockbox request are recorded automatically in [Microsoft 365 Defender](https://security.microsoft.com/homepage).  
 
@@ -131,8 +132,9 @@ The Microsoft 365 **Audit** tab allows admins to search for events associated wi
 Admins can directly export the result set based on the filter criteria.
 
 Customer Lockbox produces two types of audit logs:
-1.	Logs that are initiated by Microsoft and correspond to lockbox request being created, expired, or when access sessions end. This set of audit logs don't correspond to a specific user ID since the actions are initiated by Microsoft.
-2.	Logs that are initiated by end user actions, such as when a user approves or denies a lockbox request. If the user that performs these operations doesn't have an E5 license assigned, the logs are filtered out and won't show up in the audit logs.
+
+1. Logs that are initiated by Microsoft and correspond to lockbox request being created, expired, or when access sessions end. This set of audit logs don't correspond to a specific user ID since the actions are initiated by Microsoft.
+1. Logs that are initiated by end user actions, such as when a user approves or denies a lockbox request. If the user that performs these operations doesn't have an E5 license assigned, the logs are filtered out and won't show up in the audit logs.
 
 By default, the audit logs are preserved for a duration of one year. You need a 10-Year Audit Log Retention add-on license to retain audit records for 10 years. See [Audit (Premium)](/microsoft-365/compliance/audit-solutions-overview?view=o365-worldwide#audit-premium-1&preserve-view=true) for more details on audit log retention.
 
@@ -153,13 +155,13 @@ In addition, access to Customer Lockbox for Microsoft Power Platform and Dynamic
 
 - Lockbox requests aren't triggered in the following engineering support scenarios:
 
-    - Emergency scenarios that fall outside of standard operating procedures, such as a major service outage that requires immediate attention to recover or restore services in unexpected or unpredictable cases. These “break glass” events are rare and, in most instances, don't require any access to customer data to resolve.
+  - Emergency scenarios that fall outside of standard operating procedures, such as a major service outage that requires immediate attention to recover or restore services in unexpected or unpredictable cases. These "break glass" events are rare and, in most instances, don't require any access to customer data to resolve.
 
-    - A Microsoft engineer accesses the underlying platform as part of troubleshooting and is inadvertently exposed to customer data. It's rare that such scenarios would result in access to meaningful quantities of customer data.  
+  - A Microsoft engineer accesses the underlying platform as part of troubleshooting and is inadvertently exposed to customer data. It's rare that such scenarios would result in access to meaningful quantities of customer data.  
 
 - Customer Lockbox requests are also not triggered by external legal demands for data. For details, refer to the discussion of government requests for data in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/).
 
-- Customer Lockbox won't apply to the access and manual review of customer data shared for Copilot AI features. Customer Lockbox remains enabled for all in-scope data. 
+- Customer Lockbox won't apply to the access and manual review of customer data shared for Copilot AI features. Customer Lockbox remains enabled for all in-scope data.
 
 ## Known issues
 

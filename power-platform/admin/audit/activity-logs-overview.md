@@ -124,7 +124,6 @@ After you have taken the steps to allow Microsoft Purview access and to configur
 - [Manage audit log retention policies](/purview/audit-log-retention-policies).
 - [Get started with search](/purview/audit-search).
 - [Search audit logs to investigate common support issues](/purview/audit-troubleshooting-scenarios).
-
 More information: [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
 ## Related content

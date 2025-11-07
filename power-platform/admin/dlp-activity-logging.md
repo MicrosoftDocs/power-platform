@@ -15,8 +15,8 @@ ms.custom: sfi-image-nochange
 
 # Data policy activity logging
 
-> [!Warning]
-> The schema documented in this article is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin-activity-logging.md#activity-category-data-policy-events).
+> [!WARNING]
+> The schema documented in this article is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](./audit/activity-logs-power-platform-admin.md#activity-category-policy-events).
 
 > [!NOTE]
 > Activity logging for data policies isn't currently available in sovereign clouds.
@@ -27,7 +27,7 @@ To log data policy activities, follow these steps:
 
 1. Sign in to the [Security & Compliance center](https://protection.office.com) as a tenant admin.
 
-2. Select **Search** > **Audit log search**. 
+2. Select **Search** > **Audit log search**.
 
 3. Under **Search** > **Activities**, enter **dlp**. A list of activities appears.
 
