@@ -2,7 +2,7 @@
 title: Access and monitor Power Pages activity logs in Microsoft Purview
 description: Learn how to access Power Pages activity logs in Microsoft Purview and explore what Power Pages activities you can monitor.
 ms.topic: how-to
-ms.date: 11/05/2025
+ms.date: 11/06/2025
 author: PramithaU
 ms.subservice: admin
 ms.author: pudupa
@@ -30,9 +30,9 @@ This article covers prerequisites, how to access the logs in the Microsoft Purvi
 
 To view connector activity logs in Microsoft Purview, make sure you've:
 
-- Reviewed and completed all the [prerequisites](activity-logs-overview.md#prerequisites) listed in the overview article.
-- Confirmed you're an admin who's assigned a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Confirmed you have either the *Audit Logs* or *View-Only Audit Logs* role assigned to you in Microsoft Purview.
+- Review and complete all the overview article [prerequisites](activity-logs-overview.md#prerequisites).
+- Confirm you're an admin who has a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
+- Confirm either the *Audit Logs* or *View-Only Audit Logs* role is assigned to you in Microsoft Purview.
 
 Learn more:
 

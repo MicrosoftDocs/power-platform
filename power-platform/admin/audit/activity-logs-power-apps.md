@@ -15,7 +15,7 @@ search.audienceType:
 
 # Access and monitor Power Apps audit logs in Microsoft Purview
 
-In Microsoft Purview, you can monitor many specific Power Apps activities, such as canvas app creation, usage, patching and deletion by a specific user. You also have the ability to view activity logs within specific date ranges to gain insights.
+You can monitor many Power Apps activities in Microsoft Purview, such as canvas app creation, usage, patching, and deletion by a specific user. You can also view activity logs within specific date ranges to gain insights.
 
 Regularly monitor Microsoft Power Apps activities in Microsoft Purview to:
 
@@ -28,11 +28,11 @@ This article covers prerequisites, how to access your data in Microsoft Purview'
 
 ## Prerequisites
 
-To view connector activity logs in Microsoft Purview, make sure you've:
+To view connector activity logs in Microsoft Purview, make sure you:
 
-- Reviewed and completed all the [prerequisites](activity-logs-overview.md#prerequisites) listed in the overview article.
-- Confirmed you're an admin who's assigned a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Confirmed you have either the *Audit Logs* or *View-Only Audit Logs* role assigned to you in Microsoft Purview.
+- Review and complete all the overview article [prerequisites](activity-logs-overview.md#prerequisites).
+- Confirm you're an admin who has a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
+- Confirm either the *Audit Logs* or *View-Only Audit Logs* role is assigned to you in Microsoft Purview.
 
 Learn more:
 

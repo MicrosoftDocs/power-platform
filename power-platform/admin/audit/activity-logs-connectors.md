@@ -29,7 +29,7 @@ You can access and view connector activity logs in the [Microsoft Purview compl
 
 To view connector activity logs in Microsoft Purview, make sure you:
 
-- Review and complete all the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
+- Review and complete all the overview article [prerequisites](activity-logs-overview.md#prerequisites).
 - Confirm you're an admin who has a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
 - Confirm either the *Audit Logs* or *View-Only Audit Logs* role is assigned to you in Microsoft Purview.
 

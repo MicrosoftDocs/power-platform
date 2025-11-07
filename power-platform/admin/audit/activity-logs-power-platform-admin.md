@@ -3,7 +3,7 @@ title: Access and monitor Power Platform admin activity logs in Microsoft Purvie
 description: Learn how to access Power Platform admin activity logs in Microsoft Purview and explore what admin activities you can monitor.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/05/2025
+ms.date: 11/06/2025
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -36,26 +36,27 @@ Each activity event consists of a common schema defined at [Office 365 Managemen
 
 To view connector activity logs in Microsoft Purview, make sure you've:
 
-- Reviewed and completed all the [prerequisites](activity-logs-overview.md#prerequisites) listed in the overview article.
-- Confirmed you're an admin who's assigned a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Confirmed you have either the *Audit Logs* or *View-Only Audit Logs* role assigned to you in Microsoft Purview.
+- Review and complete all the overview article [prerequisites](activity-logs-overview.md#prerequisites).
+- Confirm you're an admin who has a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
+- Confirm either the *Audit Logs* or *View-Only Audit Logs* role is assigned to you in Microsoft Purview.
+
 Learn more:
 
 - [Learn about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 - [Permissions in the Microsoft Purview portal](/purview/purview-permissions)
 
 > [!NOTE]
-> Administrative activities for Power Platform environments are enabled by default on all tenants and you can't disable the activity collection.
+> Admin activities for Power Platform environments are enabled by default on all tenants and you can't disable the activity collection.
 
 ## Access the logs
 
 [!INCLUDE[admin-audit](../../includes/admin-audit-activity-search.md)]
 
-As you search, individual activities are shown. A common schema is enforced to enable search constructs across activities. The value in the **PropertyCollection** field is specific to each activity type.
+As you search, individual activities are shown. A common schema makes it easier for you to search across activities. The value in the **PropertyCollection** field is specific to each activity type.
 
 ## Activity category: Environment lifecycle operations
 
-Each activity event contains a payload of metadata that is specific to the individual event. The following *environment lifecycle operation* activities are delivered to Microsoft Purview.
+Each activity event contains a payload of metadata that is specific to the individual event. The *environment lifecycle operation* activities listed in this table are sent to Microsoft Purview.
 
 | **Event**                  | **Description**                                                                                                                        |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -75,7 +76,7 @@ Each activity event contains a payload of metadata that is specific to the indiv
 
 ## Activity category: Environment property and setting change activities
 
-Each activity event contains a payload of metadata that is specific to the individual event. The following _environment property and setting_ activities are delivered to Microsoft Purview.
+Each activity event contains a payload of metadata that is specific to the individual event. The *environment property and setting* activities listed in this table are sent to Microsoft Purview.
 
 | **Event** | **Description** |
 |-------------------------|-------------------------|
@@ -83,9 +84,9 @@ Each activity event contains a payload of metadata that is specific to the indiv
 
 ## Activity category: Environment groups & rules
 
-All activities for environment groups and rules are recorded under the _PowerPlatformAdministratorActivity_ record type.
+All activities for environment groups and rules are recorded under the *PowerPlatformAdministratorActivity* record type.
 
-Each activity event contains a payload of metadata that is specific to the individual event. The following environment group activities are delivered to Microsoft Purview.
+Each activity event contains a payload of metadata that is specific to the individual event. The environment group activities listed in this table are sent to Microsoft Purview.
 
 | **Event** | **Description** |
 |-------------------------|-------------------------|
@@ -95,7 +96,7 @@ Each activity event contains a payload of metadata that is specific to the indiv
 | EnvironmentAddedToEnvironmentGroup | Emitted when an environment is added to an environment group. |
 | EnvironmentRemovedFromEnvironmentGroup | Emitted when an environment is removed from an environment group. |
 
-The following rules activities are delivered to Microsoft Purview for these 9 rules:
+These nine (9) rules activities are sent to Microsoft Purview:
 
 - AI-generated descriptions (preview)
 - Backup retention
@@ -113,7 +114,7 @@ The following rules activities are delivered to Microsoft Purview for these 9 ru
 | UpdateRuleSetOperation | Emitted whenever a rule is edited in an environment group. |
 | DeleteRuleSetOperation | Emitted when an environment group is deleted. |
 
-The following rules activities are delivered to Microsoft Purview for the remaining rules.
+The remaining rules activities listed in this table are sent to Microsoft Purview.
 
 | **Event** | **Description** |
 |-------------------------|-------------------------|
@@ -125,7 +126,7 @@ The following rules activities are delivered to Microsoft Purview for the remain
 
 ## Activity category: Business model and licensing
 
-Each activity event contains a payload of metadata that is specific to the individual event. The following business model and licensing activities are delivered to Microsoft Purview.
+Each activity event contains a payload of metadata that is specific to the individual event. The business model and licensing activities listed in this table are sent to Microsoft Purview.
 
 | **Category** | **Event** | **Description** |
 |-------------------------|-------------------------|-------------------------|
@@ -146,7 +147,7 @@ Each activity event contains a payload of metadata that is specific to the indiv
 
 ## Activity category: Admin actions
 
-Each activity event contains a payload of metadata that is specific to the individual event. The following admin activities are delivered to Microsoft Purview.
+Each activity event contains a payload of metadata that is specific to the individual event. The admin activities listed in this table are sent to Microsoft Purview.
 
 | **Event** | **Description** |
 |-------------------------|-------------------------|
@@ -154,16 +155,25 @@ Each activity event contains a payload of metadata that is specific to the indiv
 
 ## Activity category: Lockbox operations
 
-All the lockbox activities are under the activity **LockboxRequestOperation**. Each activity event contains a payload of metadata with the following properties when the lockbox request is created or updated: <ul><li>Lockbox request ID</li><li>Lockbox request state</li><li>Lockbox support ticket ID</li><li>Lockbox request expiration time.</li><li>Lockbox data access duration</li><li>Environment ID</li><li>User who performed the operation(when the lockbox request is created)</li></ul>
-The following events are delivered to Microsoft Purview.
+All the lockbox activities are under the activity **LockboxRequestOperation**. Each activity event contains a payload of metadata with these properties when you create or update the lockbox request:
+
+- Lockbox request ID
+- Lockbox request state
+- Lockbox support ticket ID
+- Lockbox request expiration time.
+- Lockbox data access duration
+- Environment ID
+- User who performed the operation(when the lockbox request is created)
+
+The events listed in this table are sent to Microsoft Purview.
 
 | **Category** | **Event** | **Description** |
 |-------------------------------------------------------------|--------------|-----------------------------------------|
-| Create lockbox request | LockboxRequestOperation | Emitted when a new lockbox request is created.
-| Update Lockbox request | LockboxRequestOperation | Emitted when a lockbox request is approved or denied.
-| Lockbox request access ended | LockboxRequestOperation | Emitted when a lockbox request expired or access ended.
+| Create lockbox request | LockboxRequestOperation | Emitted when a new lockbox request is created.|
+| Update Lockbox request | LockboxRequestOperation | Emitted when a lockbox request is approved or denied.|
+| Lockbox request access ended | LockboxRequestOperation | Emitted when a lockbox request expired or access ended.|
 
-Here's an example of the payload of metadata that can be expected from one of the events listed in the table.
+Here's an example of the payload of metadata you can expect from one of the events listed in the table.
 
 ```json
 [
@@ -230,33 +240,38 @@ Here's an example of the payload of metadata that can be expected from one of th
 
 > [!NOTE]
 > Activity logging for data policies is not currently available in sovereign clouds.
+>
+> Currently only users with an E5 license can view these audit log events.
 
-> [!NOTE]
-> Currently users with an E5 license can view these audit events.
+All the data policy events show up under the **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection, which emits the following properties:
 
-All the data policy events show up under **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection, which emits the following properties: <ul><li>Operation Name</li><li>Policy ID</li><li>Policy display name</li><li>Additional Resources(if applicable)</li></ul>
-The following data policy events are delivered to Microsoft Purview.
+- Operation Name
+- Policy ID
+- Policy display name
+- Additional Resources(if applicable)
+
+The data policy events listed in this table are sent to Microsoft Purview.
 
 | **Category** | **Description** |
 |-------------------------------------------------------------|-----------------------------------------|
-| Create Data Policy | Emitted when a new data policy is created.
-| Update Data Policy | Emitted when a data policy is updated.
-| Delete Data Policy | Emitted when a data policy is deleted.
-| Create Custom Connector Patterns | Emitted when a new custom connector URL pattern is created.
-| Update Custom Connector Patterns | Emitted when a custom connector URL pattern is updated.
-| Delete Custom Connector Patterns | Emitted when a custom connector URL pattern is deleted.
-| Create Connector Configurations | Emitted when a connector configuration is created for the data policy.
-| Update Connector Configurations | Emitted when a connector configuration is updated for the data policy.
-| Delete Connector Configurations | Emitted when a connector configuration is deleted for the data policy.
-| Create Policy Scope | Emitted when a new policy scope is created.
-| Update Policy Scope | Emitted when a policy scope is updated.
-| Delete Policy Scope | Emitted when a policy scope is deleted.
-| Create Exempt Resources | Emitted when an exempt resources list is created for the data policy.
-| Update Exempt Resources | Emitted when an exempt resources list is updated for the data policy.
-| Delete Exempt Resources | Emitted when an exempt resources list is deleted for the data policy.
-| Create connector blocking policy | Emitted when a new connector blocking policy is created.
-| Update connector blocking policy | Emitted when connector blocking policy is updated.
-| Delete connector blocking policy | Emitted when connector blocking policy is deleted.
+| Create Data Policy | Emitted when a new data policy is created.|
+| Update Data Policy | Emitted when a data policy is updated.|
+| Delete Data Policy | Emitted when a data policy is deleted.|
+| Create Custom Connector Patterns | Emitted when a new custom connector URL pattern is created.|
+| Update Custom Connector Patterns | Emitted when a custom connector URL pattern is updated.|
+| Delete Custom Connector Patterns | Emitted when a custom connector URL pattern is deleted.|
+| Create Connector Configurations | Emitted when a connector configuration is created for the data policy.|
+| Update Connector Configurations | Emitted when a connector configuration is updated for the data policy.|
+| Delete Connector Configurations | Emitted when a connector configuration is deleted for the data policy.|
+| Create Policy Scope | Emitted when a new policy scope is created.|
+| Update Policy Scope | Emitted when a policy scope is updated.|
+| Delete Policy Scope | Emitted when a policy scope is deleted.|
+| Create Exempt Resources | Emitted when an exempt resources list is created for the data policy.|
+| Update Exempt Resources | Emitted when an exempt resources list is updated for the data policy.|
+| Delete Exempt Resources | Emitted when an exempt resources list is deleted for the data policy.|
+| Create connector blocking policy | Emitted when a new connector blocking policy is created.|
+| Update connector blocking policy | Emitted when connector blocking policy is updated.|
+| Delete connector blocking policy | Emitted when connector blocking policy is deleted.|
 
 Here's an example payload of metadata that can be expected from one of the events in the table.
 
