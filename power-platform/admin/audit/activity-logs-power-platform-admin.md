@@ -37,10 +37,6 @@ The activities include actions made by Power Platform administrators, Dynamics 3
 
 Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). The schema defines the payload of metadata that's unique for each activity.
 
-You can access and view Power Platform admin activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
-
-Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
-
 ## Prerequisites
 
 To view connector activity logs in Microsoft Purview, make sure you've:

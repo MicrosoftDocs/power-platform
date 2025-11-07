@@ -24,6 +24,8 @@ Integrating Microsoft Power Platform activity logs into Microsoft Purview auditi
 - Generate audit reports for internal or external reviews.
 - Analyze usage patterns and adoption metrics.
 
+The activity logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
+
 This overview article covers what Power Platform component activity logs can be viewed in Microsoft Purview, common schema elements, best practices, and prerequisites to review before you try to access and monitor Power Platform activity logs in the Microsoft Purview portal.
 
 ## Monitor activity log data

@@ -27,10 +27,6 @@ Regularly audit Microsoft Power Automate activities in Microsoft Purview to:
 - identify and troubleshoot issues
 - mitigate failures.
 
-You can access and monitor Power Automate activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). The activity logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
-
-Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
-
 This article covers prerequisites, how to access the logs in Microsoft Purview, and provides details about Power Automate events and schemas.
 
 ## Prerequisites
