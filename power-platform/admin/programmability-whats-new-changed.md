@@ -20,7 +20,7 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 | Item | Type | Description |
 |------|------|-------------|
 | Query Resources | API | New endpoint: [Query Resources](/rest/api/power-platform/resourcequery/resources/query-resources) |
-| Add Allowed IP Addresses | API | New endpoint: [Add Allowed Ip Addresses](/rest/api/power-platform/powerpages/websites/add-allowed-ip-addresses) |
+| Add Allowed IP Addresses | API | New endpoint: [Add Allowed IP Addresses](/rest/api/power-platform/powerpages/websites/add-allowed-ip-addresses) |
 | Create Environment Rule Based Assignment | Bug fixes | Various bug fixes for [Create Environment Rule Based Assignment](/rest/api/power-platform/governance/rule-based-policies/create-environment-rule-based-assignment) |
 | Create Environment Group Rule Based Assignment | Bug fixes | Various bug fixes for [Create Environment Group Rule Based Assignment](/rest/api/power-platform/governance/rule-based-policies/create-environment-group-rule-based-assignment) |
 | Create Rule Based Policy | Bug fixes | Various bug fixes for [Create Rule Based Policy](/rest/api/power-platform/governance/rule-based-policies/create-rule-based-policy) |
