@@ -22,7 +22,9 @@ Regularly monitor Power Pages activities in Microsoft Purview to:
 - identify and troubleshoot issues
 - mitigate failures.
 
-You can access and view Power Pages activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview). Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
+You can access and view Power Pages activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
+
+Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
 This article covers prerequisites, how to access the logs in the Microsoft Purview portal, and details about Power Pages activities you can monitor.
 
@@ -47,7 +49,7 @@ Learn more:
 
 You can search Power Pages activities for a specific period by selecting the dates and entering the operation names listed in the **Activities – operation names** column in this section's table or by using the **Keyword Search** option in the search panel.
 
-The following are some of the activities you can monitor in Power Pages audit logs.
+This table lists some of the activities you can monitor in Power Pages audit logs.
 
 | **Activity Name**                              | **Operation Name**                     | **Description**                                                               |
 |------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------------|

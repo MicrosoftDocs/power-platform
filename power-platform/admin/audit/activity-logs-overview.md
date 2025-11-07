@@ -45,27 +45,18 @@ Microsoft Purview can capture activity logging for the these Power Platform comp
 While each Power Platform component has its specific audit schema, most contain common elements such as:
 
 - Date and time of the activity
-
 - User who performed the action
-
 - IP address
-
 - Activity type
-
 - Resource affected
-
 - Environment details
-
 - Result status
 
 ## Best practices for using activity logs
 
 - **Regular monitoring**: Check logs periodically for unusual activities
-
 - **Establish baselines**: Understand normal usage patterns to better detect anomalies
-
 - **Document procedures**: Create standard procedures for log review and incident response
-
 - **Combine with other data**: Correlate activity logs with other monitoring data for comprehensive visibility
 
 ## Prerequisites
@@ -92,7 +83,7 @@ For each Power Platform production environment, a Power Platform system admin or
 
 ### Configure auditing for each environment
 
-Go to [Configure auditing for an environment](/power-platform/admin/manage-dataverse-auditing#configure-auditing-for-an-environment) to learn how to configure auditing for each Power Platform production environment and its table and column data. There are three levels where auditing can be configured: an environment, table, and column. Be sure to turn on activity logging (Read logs) at the environment level first, then turn on auditing for the environment's tables and columns.
+Read [Configure auditing for an environment](/power-platform/admin/manage-dataverse-auditing#configure-auditing-for-an-environment) to learn how to configure auditing for each Power Platform production environment and its table and column data. Be sure to turn on activity logging (Read logs) at the environment level first, then turn on auditing for the environment's tables and columns.
 
 Learn more in [Configure auditing](/power-apps/developer/data-platform/auditing/overview).
 

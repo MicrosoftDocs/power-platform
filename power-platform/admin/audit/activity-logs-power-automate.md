@@ -27,13 +27,15 @@ Regularly audit Microsoft Power Automate activities in Microsoft Purview to:
 - identify and troubleshoot issues
 - mitigate failures.
 
-You can access and monitor Power Automate activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). The activity logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview). Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
+You can access and monitor Power Automate activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). The activity logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
+
+Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
 This article covers prerequisites, how to access the logs in Microsoft Purview, and provides details about Power Automate events and schemas.
 
 ## Prerequisites
 
-To view connector activity logs in Microsoft Purview, make sure you've:
+To view connector activity logs in Microsoft Purview, make sure you:
 
 - Review and complete all the overview article [prerequisites](activity-logs-overview.md#prerequisites).
 - Confirm you're an admin who has a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
@@ -48,29 +50,27 @@ Learn more:
 
 [!INCLUDE[admin-audit](../../includes/admin-audit-activity-search.md)]
 
-Admins can filter for specific Power Automate activities via the **Activities** list.
-
 ## Explore Power Automate activities
 
-Logging takes place at the SDK layer, which means a single action can trigger multiple activities to be logged. This table lists a sample of user events you can monitor.
+Logging takes place at the SDK layer, which means a single action can trigger multiple logged activities. This table lists a sample of user events you can monitor.
 
 | Category | Event | Description |
 |-|-|-|
-|Flows | Created flow | The time when a flow is created.|
-|Flows | Edited flow | Any updates made to the flow.|
-|Flows | Deleted flow | When the flow is deleted.|
-|Flow permissions | Edited permissions | Every time a user's permissions to a flow changes, for example, when a user is added as co-owner.|
-|Flow permissions | Deleted permissions | Every time a user's permissions to the flow is removed.|
+|Flows | Created flow | The time a flow is created.|
+|Flows | Edited flow | The time an update is made to a flow.|
+|Flows | Deleted flow | The time a flow is deleted.|
+|Flow permissions | Edited permissions | Each time a user's permissions to a flow changes. For example, when a user is added as co-owner.|
+|Flow permissions | Deleted permissions | Each time a user's permissions to a flow is removed.|
 |Trials | Started a paid trial | When a user starts a paid trial.|
 |Trials | Renewed a paid trial | When a user renews a paid trial.|
-|Hosted RPA | Microsoft Entra ID joined | When a hosted RPA bot is joined to the customer's tenant Microsoft Entra ID.|
+|Hosted RPA | Microsoft Entra ID joined | When a hosted RPA bot is joined to a customer's tenant Microsoft Entra ID.|
 
-> [!NOTE]
-> For activities under the Hosted RPA category, the activities appear under the record type of *HostedRPA* and *PowerPlatformAdministratorActivity*. Starting on September 30th of 2024, the record type *HostedRPA* will be discontinued. Please use the RecordTypes *PowerPlatformAdministratorActivity* to view Hosted RPA events.
+> [!TIP]
+> Use RecordType *PowerPlatformAdministratorActivity* to view Hosted RPA events.
 
 ## Get details on base schema for logging
 
-Schemas define the Power Automate fields that are sent to the Microsoft Purview compliance portal. Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to Power Automate. This table lists the common fields the base schema contains.
+Schemas define which Power Automate fields are sent to the Microsoft Purview compliance portal. Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to Power Automate activities. This table lists the common fields the base schema contains.
 
 |Field display name | Logical name | Type | Mandatory | Description|
 |-|-|-|-|-|

@@ -28,7 +28,7 @@ Administration of Microsoft Power Platform products and services can affect vari
 - adhere to compliance requirements
 - act on security threats.
 
-This article covers how you can monitor activities that are performed on Power Platform environments by those having administrative access across user experiences and programmable interfaces in the Microsoft Purview portal. The activities fall within the following categories:
+This article covers how you can monitor activities in Microsoft Purview that are performed on Power Platform environments by those who have admin access across user experiences and programmable interfaces. The activities fall within these categories:
 
 - [Environment lifecycle operations](#activity-category-environment-lifecycle-operations)
 - [Environment property and setting change activities](#activity-category-environment-property-and-setting-change-activities)
@@ -36,6 +36,10 @@ This article covers how you can monitor activities that are performed on Power P
 The activities include actions made by Power Platform administrators, Dynamics 365 administrators, members of the System Administrator role (for Power Platform environments with Dataverse), the environment creator or owner (for Power Platform environments without Dataverse), and impersonated users that map to any of these roles.
 
 Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). The schema defines the payload of metadata that's unique for each activity.
+
+You can access and view Power Platform admin activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
+
+Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
 ## Prerequisites
 
@@ -244,9 +248,10 @@ Here's an example of the payload of metadata you can expect from one of the even
 ## Activity category: Data policy events
 
 > [!NOTE]
-> Activity logging for data policies is not currently available in sovereign clouds.
 >
-> Currently only users with an E5 license can view these audit log events.
+> - Activity logging for data policies is not currently available in sovereign clouds.
+>
+> - Currently only users with an E5 license can view these audit log events.
 
 All the data policy events show up under the **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection, which emits the following properties:
 
