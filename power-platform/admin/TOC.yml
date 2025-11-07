@@ -817,7 +817,7 @@
             - name: View Copilot Studio activity logs
               href: /microsoft-copilot-studio/admin-logging-copilot-studio
             - name: View Dataverse and model-driven apps activity logs
-              href: audit/activity-logs-dataverse-and-model-driven-apps.md
+              href: audit/activity-logs-dataverse-model-driven-apps.md
             - name: View Power Apps activity logs
               href: audit/activity-logs-power-apps.md
             - name: View Power Automate activity logs
