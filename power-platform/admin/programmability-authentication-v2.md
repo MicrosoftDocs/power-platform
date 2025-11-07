@@ -50,12 +50,12 @@ az ad sp create --id 8578e004-a5c6-46e7-913e-12f58912df43
 ```
 ---
 
-From here, you must select the permissions you require. These are grouped by [**Namespaces** ](/rest/api/power-platform). Within a namespace, you see resource types and actions for example *AppManagement.ApplicationPackages.Read* which give read permissions for application packages. For more information, see our [Permission reference](programmability-permission-reference.md) article.
+From here, you must select the permissions you require. These are grouped by [**Namespaces**](/rest/api/power-platform). Within a namespace, you see resource types and actions for example *AppManagement.ApplicationPackages.Read* which give read permissions for application packages. For more information, see our [Permission reference](programmability-permission-reference.md) article.
 
 > [!NOTE]
 > Power Platform API makes use of delegated permissions only at this time. For applications that run with a user context, you request delegated permissions using the **scope** parameter. These permissions delegate the privileges of the signed-in user to your application, allowing it to act as the user when calling Power Platform API endpoints.
 >
->For service principal identities, application permissions are not used. Instead service principals are treated as Power Platform Administrators today and must be registered by following [PowerShell - Create service principal](powershell-create-service-principal.md).  
+>For service principal identities, application permissions aren't used. Instead service principals are treated as Power Platform Administrators today and must be registered by following [PowerShell - Create service principal](powershell-create-service-principal.md).  
 
 After the required permissions are added to the application, select **Grant admin consent** to complete the setup. This is necessary for instances where you want to allow users to access your app right away, instead of requiring an interactive consent experience. If you can support interactive consent, we recommend following the [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
