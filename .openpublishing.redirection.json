@@ -1843,6 +1843,36 @@
       "source_path": "power-platform/power-fx/formula-reference-cards.md",
       "redirect_url": "/power-platform/power-fx/formula-reference-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/logging-power-automate.md",
+      "redirect_url": "/power-platform/admin/audit/activity-logs-power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/logging-powerapps.md",
+      "redirect_url": "/power-platform/admin/audit/activity-logs-power-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/logging-power-pages.md",
+      "redirect_url": "/power-platform/admin/audit/activity-logs-power-pages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/admin-activity-logging.md",
+      "redirect_url": "/power-platform/admin/audit/activity-logs-power-platform-admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/activity-logs-dataverse-and-model-driven-apps.md",
+      "redirect_url": "/power-platform/admin/audit/activity-logs-dataverse-and-model-driven-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/connector-events-power-platform.md",
+      "redirect_url": "/power-platform/admin/audit/activity-logs-connectors",
+      "redirect_document_id": false
     }
   ]
 }
