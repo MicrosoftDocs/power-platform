@@ -1873,6 +1873,11 @@
       "source_path": "power-platform/admin/connector-events-power-platform.md",
       "redirect_url": "/power-platform/admin/audit/activity-logs-connectors",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/dlp-activity-logging.md",
+      "redirect_url": "/power-platform/admin/audit/activity-logs-power-platform-admin",
+      "redirect_document_id": false
     }
   ]
 }
