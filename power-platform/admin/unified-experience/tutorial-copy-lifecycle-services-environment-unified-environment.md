@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 11/05/2025
+ms.date: 11/06/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -35,7 +35,7 @@ Ensure that both the source and target environments are provisioned in the same 
 
 ## Begin the copy operation
 
-In the Power Platform admin center, go to the source environment you want to copy. From there, select the **Copy** button in the top action pane.  In the slider window that appears, choose to copy **Everything**, which incorporates both the Dataverse and X++ source code, and the data from the source. Select the **Target** environment to be the unified, developer environment.
+In the Power Platform admin center, go to the source environment you want to copy. From there, select the **Copy** button in the top action pane.  In the slider window that appears, choose to copy **Everything**, which incorporates both the Dataverse and X++ source code, and the data from the source. Select the **Target** environment to be the unified sandbox environment.
 
 # [PowerShell](#tab/PowerShell)
 
@@ -49,14 +49,12 @@ Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
 
 # Set variables for your session
 $TenantId = "YOUR_TENANT_GUID_FROM_Microsoft Entra ID"
-$SPNId = "YOUR_AZURE_APPLICATION_REGISTRATION_CLIENT_ID"
-$ClientSecret = "YOUR_AZURE_APPLICATION_CLIENT_SECRET"
 $SourceEnvironmentID = "YOUR_SOURCE_ENVIRONMENT_ID_HERE"
 $TargetEnvironmentID = "YOUR_TARGET_ENVIRONMENT_ID_HERE"
 
 Write-Host "Creating a session against the Power Platform API"
 
-Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -ClientSecret $ClientSecret
+Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId
 
     $copyToRequest = \[pscustomobject\]@{
         SourceEnvironmentId = $SourceEnvironmentID
