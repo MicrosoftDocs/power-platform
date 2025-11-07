@@ -4,7 +4,7 @@ description: Learn how to access Power Platform connector activity logs in Micro
 author: schabungbam
 ms.topic: how-to
 ms.workload: na
-ms.date: 11/05/2025
+ms.date: 11/06/2025
 ms.subservice: admin
 ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
@@ -27,11 +27,11 @@ You can access and view connector activity logs in the [Microsoft Purview compl
 
 ## Prerequisites
 
-To view connector activity logs in Microsoft Purview, make sure you've:
+To view connector activity logs in Microsoft Purview, make sure you:
 
-- Reviewed and completed all the [prerequisites](activity-logs-overview.md#prerequisites) listed in the overview article.
-- Confirmed you're an admin who's assigned a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Confirmed you have either the *Audit Logs* or *View-Only Audit Logs* role assigned to you in Microsoft Purview.
+- Review and complete all the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
+- Confirm you're an admin who has a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
+- Confirm either the *Audit Logs* or *View-Only Audit Logs* role is assigned to you in Microsoft Purview.
 
 Learn more:
 
@@ -44,7 +44,7 @@ Learn more:
 
 ### Explore connector events
 
-The following table lists the connector events available for searching in the audit logs.
+This table lists the connector events available for searching in the audit logs.
 
 |Connector event  |Description  |
 |---------|---------|
@@ -66,7 +66,7 @@ The following table lists the connector events available for searching in the au
 
 ## View logged activity details
 
-In the **Audit search** screen, select the log to view the details of the event in a list to the right.
+On the **Audit search** page,  you can select a log and view its activity details. This table lists the available activity details.
 
 ### Available activity details
 

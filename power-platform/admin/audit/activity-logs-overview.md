@@ -3,11 +3,12 @@ title: Overview of Power Platform activity logs in Microsoft Purview
 description: Learn what Microsoft Power Platform admin, maker, and user activities you can audit in Microsoft Purview and how to turn on and configure activity logging for each Power Platform environment.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/05/2025
+ms.date: 11/06/2025
 author: EllenWehrle
 ms.subservice: admin
 ms.author: ellenwehrle
-ms.reviewer: ellenwehrle 
+ms.reviewer: ellenwehrle
+contributors: dmartens
 search.audienceType: 
   - admin
 ---
@@ -33,7 +34,7 @@ Microsoft Purview can capture activity logging for the these Power Platform comp
 |---------|---------|---------|
 |Connectors    |  Monitor API calls and connector events to gain better visibility into integrations and data movement.  |  [Audit connector logs](activity-logs-connectors.md)      |
 |Copilot Studio   |  Monitor agent activities to follow to compliance requirements, mitigate failures, and maintain security. |   [Audit Copilot Studio activities in Microsoft Purview](/microsoft-copilot-studio/admin-logging-copilot-studio)  |
-|Dataverse and model-driven apps | Monitor create, read, update, and delete (CRUD), multiple records, and multimedia assets to support Data Protection Impact Assessment (DPIA).   | [Audit Dataverse and model-driven apps logs](activity-logs-dataverse-and-model-driven-apps.md) |
+|Dataverse and model-driven apps | Monitor create, read, update, and delete (CRUD), multiple records, and multimedia assets to support Data Protection Impact Assessment (DPIA).   | [Audit Dataverse and model-driven apps logs](activity-logs-dataverse-model-driven-apps.md) |
 |Power Apps | Monitor app creation, usage, patching, and deletion to identify errors and optimize user experience. |  [Audit Power Apps logs](activity-logs-power-apps.md)  |
 |Power Automate| Monitor flow creations, permissions, runs, and failures, and connector calls to troubleshoot issues and fine-tune performance for users. | [Audit Power Automate logs](activity-logs-power-automate.md) |
 |Power Pages| Monitor site interactions and page-level events to diagnose issues in external-facing portals. | [Audit Power Pages logs](activity-logs-power-pages.md) |
