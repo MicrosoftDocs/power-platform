@@ -1151,8 +1151,8 @@
                   href: unified-experience/tutorial-install-finance-operations-provisioning-app.md
                 - name: "Tutorial: Update the Finance and Operations Provisioning app"
                   href: unified-experience/tutorial-update-finance-operations-provisioning-app.md
-                - name: Tutorial: Convert a sandbox environment to production for finance and operations apps
-                  href: unified-experience/tutorial-convert-sandbox-to-production.m
+                - name: "Tutorial: Convert a sandbox environment to production for finance and operations apps"
+                  href: unified-experience/tutorial-convert-sandbox-to-production.md
                 - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
                   href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
                 - name: "Tutorial: Perform a transaction-less copy between environments"
