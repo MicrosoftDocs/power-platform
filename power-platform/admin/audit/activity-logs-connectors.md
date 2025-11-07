@@ -20,10 +20,18 @@ ms.custom: sfi-image-nochange
 
 # View Power Platform connector activity logs in Microsoft Purview
 
-Activity logs show events related to connections and custom connectors.
-This article covers prerequisites, how to access the logs in Microsoft Purview, and details about connector activity event types and categories.
+You can monitor many connector activities in Microsoft Purview, such as when connectors are created, updated, and deleted or API calls. You can also view activity logs within specific date ranges to gain insights.
 
-You can access and view connector activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
+You can regularly monitor Power Platform connectors activities in Microsoft Purview to:
+
+- maintain governance, compliance, and security
+- gain operational insights
+- identify and troubleshoot issues
+- mitigate failures.
+
+You can access and view Power Automate activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). The activity logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview). Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
+
+This article covers prerequisites, how to access the logs in Microsoft Purview, and details about connector activity event types and categories.
 
 ## Prerequisites
 

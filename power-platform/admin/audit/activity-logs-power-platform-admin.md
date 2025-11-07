@@ -21,16 +21,21 @@ ms.contributors:
 
 # Monitor Power Platform admin logs in Microsoft Purview
 
-Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to audit such actions to help mitigate failures, help contain systems of security constraints, adhere to compliance requirements, and act on security threats.
+Administration of Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to audit such actions to:
 
-In this article, you learn how you can monitor activities that are performed on Power Platform environments by those having administrative access across user experiences and programmable interfaces in the Microsoft Purview portal. The activities fall within the following categories:
+- help mitigate failures
+- help contain systems of security constraints
+- adhere to compliance requirements
+- act on security threats.
+
+This article covers how you can monitor activities that are performed on Power Platform environments by those having administrative access across user experiences and programmable interfaces in the Microsoft Purview portal. The activities fall within the following categories:
 
 - [Environment lifecycle operations](#activity-category-environment-lifecycle-operations)
 - [Environment property and setting change activities](#activity-category-environment-property-and-setting-change-activities)
 
 The activities include actions made by Power Platform administrators, Dynamics 365 administrators, members of the System Administrator role (for Power Platform environments with Dataverse), the environment creator or owner (for Power Platform environments without Dataverse), and impersonated users that map to any of these roles.
 
-Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). The schema defines the payload of metadata that is unique for each activity.
+Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). The schema defines the payload of metadata that's unique for each activity.
 
 ## Prerequisites
 

@@ -19,6 +19,15 @@ search.audienceType:
 
 Activity Logging data supports Data Protection Impact Assessment (DPIA) for Power Platform and customer engagement apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.
 
+You can regularly monitor Microsoft Dataverse activities in Microsoft Purview to:
+
+- maintain governance, compliance, and security
+- gain operational insights
+- identify and troubleshoot issues
+- mitigate failures.
+
+You can access and view Power Automate activity logs in the [Microsoft Purview compliance portal](https://purview.microsoft.com/). The activity logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview). Learn more in [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
+
 This article covers prerequisites, how to access your data in Microsoft Purview's compliance portal, and details about Dataverse and model-driven apps events and schema.
 
 ## Prerequisites

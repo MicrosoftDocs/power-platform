@@ -12,9 +12,9 @@ search.audienceType:
 ---
 # Audit Power Automate activities in Microsoft Purview
 
-In Microsoft Purview, you can monitor many specific Power Automate activities, such as flow creations by specific users or connector calls and flow runs or failures by a specific user or agent. You also have the ability to view activity logs within specific date ranges to gain insights.
+You can monitor many Power Automate activities in Microsoft Purview, such as flow creations by specific users or connector calls and flow runs or failures by specific users or agents. You also have the ability to view activity logs within specific date ranges to gain insights.
 
-Regularly audit Microsoft Power Automate activities in Microsoft Purview to:
+You can regularly audit Microsoft Power Automate activities in Microsoft Purview to:
 
 - maintain governance, compliance, and security
 - gain operational insights
