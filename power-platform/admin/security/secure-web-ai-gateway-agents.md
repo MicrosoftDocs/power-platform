@@ -72,16 +72,22 @@ To configure Global Secure Access settings at the environment group-level, compl
 2. In the navigation pane, select **Security**.
 3. In the **Security** pane, select **Identity and access**.
 4. Select **Global Secure Access for Agents**.
-5. In the pane that is displayed, select the **Environment groups** tab to which you want the security setting applied, then select **Set up Global Secure Access**.
+5. In the pane that is displayed, select the **Environment groups** tab or the **Environments** tab to which you want the security setting applied, then select **Set up Global Secure Access**.
 6. In the **Set up Global Secure Access** pane, select **Global Secure Access for Agents** to **On**.
 7. Select **Save**.
 
- > [!NOTE]
- > Selected settings are applied to all the environments in that environment group.
+> [!NOTE]
+> After enabling GSA for Agents for a given environment or environment group, you need to create or update any existing custom connectors for them to route traffic through Global Secure Access.
+
+ ## Next steps
+
+[Configure security controls in the Global Secure Access portal](/entra/global-secure-access/how-to-secure-web-ai-gateway-agents)
 
 ## Known limitations
 
-- Only support baseline profile for enforcement, so network security policies are per-tenant.
+- Currently the Agent Name returned in the Global Secure Access traffic logs is the agent's unique `schema name`.
+- Currently the block experience for Copilot Studio agents blocked by GSA shows a `502 Bad Gateway` for HTTP Actions or a `403 Forbidden` for connectors. This is a known issue, and improvements are coming soon.
+- Currently only the baseline profile is supported for enforcement, so network security policies are per-tenant.
 - Third-party DLP and ATP integrations with Global Secure Access, for example, Netskope, aren't supported.
 - Copilot Studio Bing search network transactions not supported.
 - Limited connector support (see [supported connectors](#supported-connectors) for details).
@@ -225,7 +231,3 @@ The following connectors are currently supported with secure web and AI gateway 
 - amazons3bucket
 - cognitiveservicesspe
 - teamforms
-
-## Next steps
-
-[Configure security controls in the Global Secure Access portal](/entra/global-secure-access/how-to-secure-web-ai-gateway-agents)
