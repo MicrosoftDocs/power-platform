@@ -39,8 +39,8 @@ When you configure the auto-claim policy, the following scenarios automatically 
 
 In the Power Automate portal:
 
-- User triggers, saves, or turns on a premium cloud flow (or standard flow for managed environments)
-- User requests the Power Automate per user license
+- User triggers, saves, or turns on a premium cloud flow (or standard flow for managed environments).
+- User requests the Power Automate per user license.
 
 ### Power Automate premium
 
@@ -48,8 +48,8 @@ In addition to the scenarios listed for the [Power Automate per user plan](#powe
 
 In the Power Automate portal:
 
-- User triggers, saves, or turns on a premium cloud flow with attended RPA (Robotic Process Automation)
-- User requests the Power Automate premium license
+- User triggers, saves, or turns on a premium cloud flow with attended RPA (Robotic Process Automation).
+- User requests the Power Automate premium license.
 
 In the Power Automate for desktop application (installer version 2.43 or later version):
 
