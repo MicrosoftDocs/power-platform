@@ -122,6 +122,8 @@ More information: [Auditing solutions in Microsoft Purview](/purview/audit-solut
 
 ## Related content
 
+- [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
+- [Auditing overview](/power-apps/developer/data-platform/auditing/overview)
 - [Microsoft Purview](/purview/)
 - [Microsoft Purview portal](https://purview.microsoft.com/home)
 - [Microsoft Power Platform admin center](/power-platform/admin/)

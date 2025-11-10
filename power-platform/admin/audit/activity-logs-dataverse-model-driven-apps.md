@@ -3,7 +3,7 @@ title: Access and monitor Microsoft Dataverse and model-driven app activity logs
 description: Learn how to access Dataverse and model-driven app activity logs in Microsoft Purview and explore what activities you can monitor.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/06/2025
+ms.date: 11/10/2025
 author: Zeffin
 contributors:
   - yingchin
@@ -32,12 +32,14 @@ This article covers prerequisites, how to access your data in Microsoft Purview'
 
 To view connector activity logs in Microsoft Purview, make sure you've:
 
-- Reviewed and completed all the [prerequisites](activity-logs-overview.md#prerequisites) listed in the overview article.
-- Confirmed you're an admin who's assigned a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Confirmed you have either the *Audit Logs* or *View-Only Audit Logs* role assigned to you in Microsoft Purview.
+- Review and complete the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
+- Confirm you're an admin who has a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
+- Confirm either the *Audit Logs* or *View-Only Audit Logs* role is assigned to you in Microsoft Purview.
 
 Learn more:
 
+- [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
+- [Auditing overview](/power-apps/developer/data-platform/auditing/overview)
 - [Learn more about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 - [Permissions in the Microsoft Purview portal](/purview/purview-permissions)
 

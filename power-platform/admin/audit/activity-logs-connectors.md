@@ -4,7 +4,7 @@ description: Learn how to access Power Platform connector activity logs in Micro
 author: schabungbam
 ms.topic: how-to
 ms.workload: na
-ms.date: 11/06/2025
+ms.date: 11/10/2025
 ms.subservice: admin
 ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
@@ -35,12 +35,14 @@ This article covers prerequisites, how to access the logs in Microsoft Purview, 
 
 To view connector activity logs in Microsoft Purview, make sure you:
 
-- Review and complete all the overview article [prerequisites](activity-logs-overview.md#prerequisites).
+- Review and complete the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
 - Confirm you're an admin who has a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
 - Confirm either the *Audit Logs* or *View-Only Audit Logs* role is assigned to you in Microsoft Purview.
 
 Learn more:
 
+- [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
+- [Auditing overview](/power-apps/developer/data-platform/auditing/overview)
 - [Learn more about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 - [Permissions in the Microsoft Purview portal](/purview/purview-permissions)
 
