@@ -6,9 +6,9 @@ ms.topic: concept-article
 ms.subservice: admin
 ms.author: kenseongtan
 contributors:
+  - yiannismavridis
   - kenseongtan
   - v-aangie
-  - yiannismavridis
 ms.date: 11/10/2025
 search.audienceType:
   - admin
@@ -53,10 +53,10 @@ In the Power Automate portal:
 
 In the Power Automate for desktop application (installer version 2.43 or later version):
 
-- User selects **Go Premium**
-- User has a self-assisted premium or trial and is actively using RPA capabilities
+- User selects **Go Premium**.
+- User has a self-assisted premium or trial and is actively using RPA capabilities.
 
-In other words, after selecting **Go Premium**, if an auto-claim policy is already in place, you will be automatically assigned the respective license.
+In other words, after selecting **Go Premium**, if an auto-claim policy is already in place, you're automatically assigned the respective license.
   
 ## Create an auto-claim policy for Power Automate licenses
 
