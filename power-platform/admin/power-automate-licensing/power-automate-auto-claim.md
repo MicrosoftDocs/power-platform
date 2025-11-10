@@ -6,9 +6,10 @@ ms.topic: concept-article
 ms.subservice: admin
 ms.author: kenseongtan
 contributors:
+  - yiannismavridis
   - kenseongtan
   - v-aangie
-ms.date: 10/14/2024
+ms.date: 11/10/2025
 search.audienceType:
   - admin
 ms.custom:
@@ -21,7 +22,7 @@ ms.custom:
 
 # Auto-claim policies for Power Automate licenses
 
-As an administrator, you traditionally assign licenses to users _manually_. [Auto-claim for Power Automate licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies) allows administrators to easily set up policies in the Microsoft 365 admin center, similar to other Microsoft products and services. Once a policy is configured, any user in the organization who requires an individual Power Automate user license is automatically assigned a license.
+As an administrator, you traditionally assign licenses to users _manually_. [Auto-claim for Power Automate licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies) allows administrators to easily set up policies in the Microsoft 365 admin center, similar to other Microsoft products and services. Once you configure a policy, the system automatically assigns a license to any user in the organization who needs an individual Power Automate user license.
 
 You can create and manage these auto-claim policies in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2259913).
 
@@ -32,14 +33,14 @@ The current scope of Power Automate license auto-claim policy applies to the fol
 - Power Automate premium plan
 - Power Automate per user plan (legacy)
 
-When the auto-claim policy is configured, the following scenarios automatically assign a license to a user when the user lacks the required entitlement.
+When you configure the auto-claim policy, the following scenarios automatically assign a license to a user when the user lacks the required entitlement.
 
 ### Power Automate per user plan
 
 In the Power Automate portal:
 
-- User triggers / saves / turns on a premium cloud flow (or standard flow for managed environments)
-- User requests the Power Automate per user license
+- User triggers, saves, or turns on a premium cloud flow (or standard flow for managed environments).
+- User requests the Power Automate per user license.
 
 ### Power Automate premium
 
@@ -47,13 +48,15 @@ In addition to the scenarios listed for the [Power Automate per user plan](#powe
 
 In the Power Automate portal:
 
-- User triggers / saves / turns on a premium cloud flow with attended RPA (Robotic Process Automation)
-- User requests the Power Automate premium license
+- User triggers, saves, or turns on a premium cloud flow with attended RPA (Robotic Process Automation).
+- User requests the Power Automate premium license.
 
 In the Power Automate for desktop application (installer version 2.43 or later version):
 
-- User selects **Go Premium**
-- User has a self-assisted premium trial and is actively using RPA capabilities
+- User selects **Go Premium**.
+- User has a self-assisted premium or trial and is actively using RPA capabilities.
+
+In other words, after selecting **Go Premium**, if an auto-claim policy is already in place, you're automatically assigned the respective license.
   
 ## Create an auto-claim policy for Power Automate licenses
 
@@ -67,7 +70,7 @@ You must have Microsoft 365 global admin privileges to create and manage auto-cl
 
 ### Turn on the auto-claim policy feature
 
-You must first enable the auto-claim policy feature in the Microsoft 365 admin center before creating an auto-claim policy.
+Before you create an auto-claim policy, you must turn on the auto-claim policy feature in the Microsoft 365 admin center.
 
 1. Sign in to [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2259913).
 1. On the **Navigation menu**, select **Billing** > **Licenses**.
@@ -83,21 +86,21 @@ The [auto-claim policy](https://admin.microsoft.com/adminportal/home?#/licenses/
 To create a new policy, complete the following steps:
 
 1. In the Microsoft 365 admin center, select **Billing** > **Licenses**.
-1. Select the [**Auto-claim policy**](https://admin.microsoft.com/adminportal/home?#/licenses/auto-claimpolicies) tab, and then select **Add a policy**.
-1. On the **Name this auto-claim policy** page, enter a name for the policy, and then select **Next**.
-1. On the **Set an auto-claim app and product** page, select from the following plans displayed in the dropdown list based on your license type:
+1. Select the [**Auto-claim policy**](https://admin.microsoft.com/adminportal/home?#/licenses/auto-claimpolicies) tab, then select **Add a policy**.
+1. On **Name this auto-claim policy**, enter a name for the policy, then select **Next**.
+1. On **Set an auto-claim app and product**, select from the following plans displayed in the dropdown list based on your license type:
 
    | License Type | Auto-claim app | Product assigned |
    |--------------|----------------|------------------|
    | Power Automate per user plan | Power Automate per User Plan | Power Automate per user plan |
    | Power Automate premium | Power Automate RPA Attended | Power Automate Premium |
 
-1. On the **Select apps** page, select or clear the checkboxes for the apps to include or exclude with the license and then select **Next**.
-1. On the **Review and finish** page, verify the new policy information, make any necessary changes, and then select **Create policy**.
+1. On **Select apps**, select or clear the checkboxes for the apps to include or exclude with the license, then select **Next**.
+1. On **Review and finish**, verify the new policy information, make any necessary changes, then select **Create policy**.
 
     The policy details display.
 
-    :::image type="content" source="../media/power-automate-licensing/auto-claim-policy.png" alt-text="Screenshot of Auto-claim policy configuration for Power Automate.":::
+    :::image type="content" source="../media/power-automate-licensing/auto-claim-policy.png" alt-text="Screenshot of Auto-claim policy configuration page for Power Automate showing policy details and settings.":::
 
 ## View license assignment in auto-claim policy report
 
@@ -105,7 +108,7 @@ The auto-claim policy report displays all license assignments from the auto-clai
 
 To view the auto-claim policy report:
 
-1. In the Microsoft 365 admin center, select **Billing** > **Licenses**, and then select the **Auto-claim policy** tab.
+1. In the Microsoft 365 admin center, select **Billing** > **Licenses**, then select the **Auto-claim policy** tab.
 1. Select **View report**. The Auto-claim policy report page lists all licenses assigned from each policy in the last number of days. By default, the page shows the past 90 days.
 
 To change the time period shown, select the **Past 30 days** dropdown list. You can view reports for the past 1, 7, 30, and 90 days.
@@ -132,7 +135,7 @@ In the Power Platform admin center, administrators can decide whether the policy
 
 Auto-claim policies support individual license assignment, which means that licenses are assigned to individual users. If your organization already has an existing process for license assignment, administrators can still make use of the auto-claim policy while maintaining their current workflow.
 
-Administrators can review the list of users to whom licenses were assigned through the auto-claim policy in the Microsoft 365 admin center. Then, they can make changes, as needed, such as unassigning auto-claim-assigned licenses and moving users to designated groups to use Microsoft Entra group-based licensing. For more information about group based licensing, go to [Group-based licensing scenarios](/entra/identity/users/licensing-group-advanced).
+Administrators can review the list of users to whom they assigned licenses through the auto-claim policy in the Microsoft 365 admin center. Then, they can make changes, such as unassigning auto-claim-assigned licenses and moving users to designated groups to use Microsoft Entra group-based licensing. For more information about group-based licensing, go to [Group-based licensing scenarios](/entra/identity/users/licensing-group-advanced).
 
 Here are some commands that can help in unassigning licenses and adding users to the required Microsoft Entra group.
 
@@ -191,7 +194,7 @@ This section presents all the limitations of the auto-claim policy for Power Aut
 
 ### Auto-claim policy might take up to two hours to activate after creation
 
-After creating the Power Automate license auto-claim policy, it might take up to two hours for the configured policy to be activated and propagated across the relevant Microsoft services.
+After creating the Power Automate license auto-claim policy, it might take up to two hours for the configured policy to activate and propagate across the relevant Microsoft services.
 
 ### Successful license auto-claim isn't immediately reflected in Power Automate portal
 

@@ -1,30 +1,30 @@
 ---
-title: Power Platform real-world case studies
-description: Explore real-world Power Platform case studies to understand how customers create innovative solutions, improve processes, and achieve goals.
-#customer intent: As a business leader, I want to learn how organizations use Power Platform so that I can identify solutions for my own challenges.
+title: Power Platform and Copilot Studio real-world case studies
+description: Explore real-world Power Platform and Copilot Studio case studies to understand how customers create innovative solutions, improve processes, and achieve goals.
+#customer intent: As a business leader, I want to learn how organizations use Power Platform and Copilot Studio so that I can identify solutions for my own challenges.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.topic: overview
-ms.date: 11/06/2025
+ms.date: 11/07/2025
 ---
 
 # Real-world case studies
 
-The case studies in this section show how real customers have harnessed Power Platform technologies to create innovative solutions.
+The case studies in this section show how real customers have harnessed Power Platform and Copilot Studio to create innovative solutions.
 
-Case studies are detailed accounts of real-world applications and implementations of Power Platform technology solutions. They provide valuable insights into how organizations successfully used tools and platforms to address specific challenges, improve processes, and achieve their goals. For citizen makers and solution architects, case studies serve as a source of inspiration and practical guidance, showcasing the potential of Power Platform in various scenarios.
+Case studies are detailed accounts of real-world solutions built with Power Platform and Copilot Studio. These include applications, automated workflows, and agents that enable conversational experiences and intelligent assistance. They provide valuable insights into how organizations successfully used tools and platforms to address specific challenges, improve processes, and achieve their goals. For citizen makers and solution architects, case studies serve as a source of inspiration and practical guidance, showcasing the potential of Power Platform and Copilot Studio in various scenarios.
 
 ## Benefits of reading case studies
 
-- **Learn from real-world examples**: Case studies offer a glimpse into how other organizations tackled similar challenges. By reading about their experiences, you can gain a better understanding of the practical applications of Power Platform and how it can be used to solve complex problems.
+- **Learn from real-world examples**: Case studies offer a glimpse into how other organizations tackled similar challenges. By reading about their experiences, you can gain a better understanding of practical implementations of applications and agents and how Power Platform and Copilot Studio can be used to solve complex problems.
 
 - **Discover best practices**: Each case study highlights the strategies and best practices that led to successful outcomes. These insights can help you adopt proven methods and avoid common pitfalls in your own projects.
 
-- **Understand the impact**: Case studies often include quantifiable results, such as efficiency gains, cost savings, and improved customer satisfaction. These metrics provide concrete evidence of the benefits of using Power Platform, helping you build a strong business case for your initiatives.
+- **Understand the impact**: Case studies often include quantifiable results, such as efficiency gains, cost savings, and improved customer satisfaction. These metrics provide concrete evidence of the benefits of using Power Platform and Copilot Studio, helping you build a strong business case for your initiatives.
 
-- **Get inspired**: Reading about the innovative solutions developed by others can spark new ideas and inspire you to think creatively about how to use Power Platform in your own work. Whether you're looking to automate processes, enhance customer experiences, or drive digital transformation, case studies can provide the motivation and direction you need.
+- **Get inspired**: Reading about the innovative solutions developed by others can spark new ideas and inspire you to think creatively about how to use Power Platform and Copilot Studio in your own work. Whether you're looking to automate processes, enhance customer experiences, or drive digital transformation, case studies can provide the motivation and direction you need.
  
 ## Current case studies
 
