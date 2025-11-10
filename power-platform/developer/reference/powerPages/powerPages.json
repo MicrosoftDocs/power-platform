@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - Power Pages",
+    "title": "Microsoft Power Platform REST API - powerpages",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -268,87 +268,13 @@
         }
       }
     },
-    "/powerpages/environments/{environmentId}/websites/{id}/addAllowedIpAddresses": {
-      "put": {
-        "tags": [
-          "Websites"
-        ],
-        "summary": "Add allowed IP addresses on a Power Pages website.",
-        "description": "Add allowed IP addressed on the given website.",
-        "operationId": "AddAllowedIpAddresses",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "environmentId",
-            "description": "The environment ID.",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "path",
-            "name": "id",
-            "description": "Website unique identifier (ID).",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2022-03-01-preview"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/IpAddressConfiguration"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/AllowedIpAddressesConfiguration"
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ErrorMessage"
-            }
-          }
-        }
-      }
-    },
     "/powerpages/environments/{environmentId}/websites/{id}/createWafRules": {
       "put": {
         "tags": [
           "Websites"
         ],
-        "summary": "Create web application firewall rules on a Power Pages website.",
-        "description": "Create web application firewall rules on the given website.",
+        "summary": "Create web application Firewall rules on a Power Pages website.",
+        "description": "Create web application Firewall rules on the given website.",
         "operationId": "CreateWafRules",
         "consumes": [
           "application/json"
@@ -413,13 +339,84 @@
         }
       }
     },
+    "/powerpages/environments/{environmentId}/websites/{id}/deleteWafCustomRules": {
+      "put": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Deletes web application firewall custom rules on a Power Pages website.",
+        "description": "Deletes web application firewall custom rules on the given website.",
+        "operationId": "DeleteWafCustomRules",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/customRules"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
     "/powerpages/environments/{environmentId}/websites/{id}/disableWaf": {
       "post": {
         "tags": [
           "Websites"
         ],
-        "summary": "Disable web application firewall on a Power Pages website.",
-        "description": "Disable web application firewall on the given website.",
+        "summary": "Disable web application Firewall on a Power Pages website.",
+        "description": "Disable web application Firewall on the given website.",
         "operationId": "DisableWaf",
         "produces": [
           "application/json"
@@ -661,6 +658,80 @@
             "description": "Success",
             "schema": {
               "$ref": "#/definitions/WebApplicationFirewallStatus"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/ipaddressrules": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Add allowed IP addresses on a Power Pages website.",
+        "description": "These IP addresses will be able to access the website.",
+        "operationId": "AddAllowedIpAddresses",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/IpAddressConfiguration"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AllowedIpAddressesConfiguration"
             }
           },
           "400": {
@@ -1666,6 +1737,7 @@
       "type": "string"
     },
     "WafRuleType": {
+      "description": "WAF rule type",
       "enum": [
         "MatchRule",
         "RateLimitRule"
@@ -1767,6 +1839,13 @@
           ],
           "type": "string"
         }
+      }
+    },
+    "customRules": {
+      "description": "List of custom rule names",
+      "type": "array",
+      "items": {
+        "type": "string"
       }
     },
     "WebApplicationFirewallRules": {

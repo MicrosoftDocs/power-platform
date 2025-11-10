@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - environment management",
+    "title": "Microsoft Power Platform REST API - environmentmanagement",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -282,14 +282,19 @@
         }
       }
     },
-    "/environmentmanagement/environments/{environmentId}/governancesetting/disablemanaged": {
+    "/environmentmanagement/environments/{environmentId}/backups": {
       "post": {
         "tags": [
-          "EnvironmentManagedGovernance"
+          "EnvironmentBackup"
         ],
-        "summary": "Disables managed governance for the specified environment (Preview).",
-        "description": "Disables managed governance for an environment.  PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
-        "operationId": "DisableManagedEnvironment",
+        "summary": "Creates a backup of the specified environment (Preview).",
+        "description": "Creates a backup of the specified environment.",
+        "operationId": "CreateEnvironmentBackup",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
         "produces": [
           "text/plain",
           "application/json",
@@ -299,7 +304,229 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of the environment.",
+            "description": "The ID of Environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request detail to create backup.",
+            "schema": {
+              "$ref": "#/definitions/CreateBackupRequest"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/EnvironmentBackup"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Backup.Write"
+      },
+      "get": {
+        "tags": [
+          "EnvironmentBackup"
+        ],
+        "summary": "Gets the backups for the specified environment (Preview).",
+        "description": "Gets the backups for the specified environment.",
+        "operationId": "GetEnvironmentBackups",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of Environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/EnvironmentBackupPagedCollection"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Backup.Read"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/backups/{backupId}": {
+      "delete": {
+        "tags": [
+          "EnvironmentBackup"
+        ],
+        "summary": "Deletes the specified backup (Preview).",
+        "description": "Deletes the specified backup.",
+        "operationId": "DeleteEnvironmentBackup",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of Environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "backupId",
+            "description": "The ID of the backup.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Backup.Delete"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/businessContinuityStateFullSnapshot": {
+      "get": {
+        "tags": [
+          "Failover"
+        ],
+        "summary": "Gets business continuity state full snapshot for specified environment including properties such as LastSyncTime (Preview).",
+        "description": "Gets business continuity state full snapshot for specified environment including properties such as LastSyncTime.",
+        "operationId": "GetBusinessContinuityStateFullSnapshot",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of Environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/BusinessContinuityStateFullSnapshot"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Failover.Read"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/Disable": {
+      "post": {
+        "tags": [
+          "EnvironmentState"
+        ],
+        "summary": "Disables the specified environment (Preview).",
+        "description": "Disables the specified environment.",
+        "operationId": "DisableEnvironment",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of Environment.",
             "required": true,
             "type": "string"
           },
@@ -312,7 +539,72 @@
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The request body.",
+            "schema": {
+              "$ref": "#/definitions/StateChangeRequest"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.State.Write"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/disableDisasterRecovery": {
+      "post": {
+        "tags": [
+          "Failover"
+        ],
+        "summary": "Disables disaster recovery on the specified environment (Preview).",
+        "description": "Disables disaster recovery on the specified environment.",
+        "operationId": "DisableDisasterRecovery",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of Environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
             "type": "string"
           },
           {
@@ -333,6 +625,332 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Failover.Write"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/disasterRecoveryDrill": {
+      "post": {
+        "tags": [
+          "Failover"
+        ],
+        "summary": "Performs DR Drill for the specified environment (Preview).",
+        "description": "Performs DR Drill for the specified environment.",
+        "operationId": "PerformDRDrill",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of Environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Failover.Write"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/Enable": {
+      "post": {
+        "tags": [
+          "EnvironmentState"
+        ],
+        "summary": "Enables the specified environment (Preview).",
+        "description": "Enables the specified environment.",
+        "operationId": "EnableEnvironment",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of Environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The request body.",
+            "schema": {
+              "$ref": "#/definitions/StateChangeRequest"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.State.Write"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/enableDisasterRecovery": {
+      "post": {
+        "tags": [
+          "Failover"
+        ],
+        "summary": "Enables disaster recovery on the specified environment (Preview).",
+        "description": "Enables disaster recovery on the specified environment.",
+        "operationId": "EnableDisasterRecovery",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of Environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Failover.Write"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/forceFailover": {
+      "post": {
+        "tags": [
+          "Failover"
+        ],
+        "summary": "Performs force failover for the specified environment.\r\nEnvironment will be switched from it's current region to it's paired region as of LastSyncTime. Data changed or updated after this time will not be restored.\r\nBy providing this value, the customer acknowledges that the data might be lost after this time during the failover operation (Preview).",
+        "description": "Performs force failover for the specified environment.\r\nEnvironment will be switched from it's current region to it's paired region as of LastSyncTime. Data changed or updated after this time will not be restored.\r\nBy providing this value, the customer acknowledges that the data might be lost after this time during the failover operation.",
+        "operationId": "PerformForceFailover",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of Environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The force failover request.",
+            "schema": {
+              "$ref": "#/definitions/ForceFailoverRequest"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Failover.Write"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/governancesetting/disablemanaged": {
+      "post": {
+        "tags": [
+          "EnvironmentManagedGovernance"
+        ],
+        "summary": "Disables managed governance for the specified environment (Preview).",
+        "description": "Disables managed governance for the specified environment.",
+        "operationId": "DisableManagedEnvironment",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of Environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
@@ -345,7 +963,7 @@
           "EnvironmentManagedGovernance"
         ],
         "summary": "Enables managed governance for the specified environment (Preview).",
-        "description": "Enables managed environments on an environment.  PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
+        "description": "Enables managed governance for the specified environment.",
         "operationId": "EnableManagedEnvironment",
         "produces": [
           "text/plain",
@@ -356,7 +974,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of the environment.",
+            "description": "The ID of Environment.",
             "required": true,
             "type": "string"
           },
@@ -369,7 +987,7 @@
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
             "type": "string"
           },
           {
@@ -389,21 +1007,29 @@
             }
           },
           "400": {
-            "description": "Bad Request"
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
         "x-AccessControl.Permission": "EnvironmentManagement.ManageGovernance.Write"
       }
     },
-    "/environmentmanagement/environments/{environmentId}/operations": {
-      "get": {
+    "/environmentmanagement/environments/{environmentId}/modifySku": {
+      "post": {
         "tags": [
-          "Operations"
+          "ModifyEnvironmentSku"
         ],
-        "summary": "List the available operations for an environment (Preview).",
-        "description": "Returns a list of the available operations for an environment.",
-        "operationId": "ListOperationsForEnvironment",
+        "summary": "Modifies sku for the specified environment (Preview).",
+        "description": "Modifies sku for the specified environment.",
+        "operationId": "ModifyEnvironmentSku",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
         "produces": [
           "text/plain",
           "application/json",
@@ -413,20 +1039,88 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment ID.",
+            "description": "The ID of Environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The request body.",
+            "schema": {
+              "$ref": "#/definitions/ModifyEnvironmentSkuRequest"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Sku.Write"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/operations": {
+      "get": {
+        "tags": [
+          "Operation"
+        ],
+        "summary": "Lists the environment lifecycle operations for a specific environment (Preview).",
+        "description": "Lists the environment lifecycle operations for a specific environment.",
+        "operationId": "GetOperationsForEnvironment",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of Environment.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "limit",
-            "description": "String indicating to limit the results.",
+            "description": "The limit.",
             "type": "string"
           },
           {
             "in": "query",
             "name": "continuationToken",
-            "description": "The continuation token provided from a previous response.",
+            "description": "The continuation token.",
             "type": "string"
           },
           {
@@ -444,17 +1138,360 @@
             "schema": {
               "$ref": "#/definitions/OperationExecutionResultPagedCollection"
             }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
           }
-        }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Operation.Read"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/recover": {
+      "post": {
+        "tags": [
+          "EnvironmentRecover"
+        ],
+        "summary": "Recover the deleted environment (Preview).",
+        "description": "Recover the deleted environment.",
+        "operationId": "RecoverEnvironment",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment that will be recovered.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Recover.Write"
+      }
+    },
+    "/environmentmanagement/environments/{sourceEnvironmentId}/copyCandidates": {
+      "get": {
+        "tags": [
+          "EnvironmentCopy"
+        ],
+        "summary": "Gets the list of environments that can be copied as the target environment (Preview).",
+        "description": "Gets the list of environments that can be copied as the target environment.",
+        "operationId": "GetEnvironmentCopyCandidates",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "sourceEnvironmentId",
+            "description": "The source environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/EnvironmentPagedCollection"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Copy.Read"
+      }
+    },
+    "/environmentmanagement/environments/{sourceEnvironmentId}/restoreCandidates": {
+      "get": {
+        "tags": [
+          "EnvironmentRestore"
+        ],
+        "summary": "Gets the list of restore candidates when restore from the specified environment (Preview).",
+        "description": "Gets the list of restore candidates when restore from the specified environment.",
+        "operationId": "GetRestoreCandidates",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "sourceEnvironmentId",
+            "description": "The environment ID of restore from.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/EnvironmentPagedCollection"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Restore.Read"
+      }
+    },
+    "/environmentmanagement/environments/{targetEnvironmentId}/copy": {
+      "post": {
+        "tags": [
+          "EnvironmentCopy"
+        ],
+        "summary": "Copy the environment from the specified source to the target (Preview).",
+        "description": "Copy the environment from the specified source to the target.",
+        "operationId": "CopyEnvironment",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "targetEnvironmentId",
+            "description": "The target environment will be overwritten.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The request body.",
+            "schema": {
+              "$ref": "#/definitions/CopyRequest"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Copy.Write"
+      }
+    },
+    "/environmentmanagement/environments/{targetEnvironmentId}/Restore": {
+      "post": {
+        "tags": [
+          "EnvironmentRestore"
+        ],
+        "summary": "Restores the specified environment to a previous backup (Preview).",
+        "description": "Restores the specified environment to a previous backup.",
+        "operationId": "RestoreEnvironment",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "targetEnvironmentId",
+            "description": "The target environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The request body.",
+            "schema": {
+              "$ref": "#/definitions/EnvironmentRestoreRequest"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Restore.Write"
       }
     },
     "/environmentmanagement/operations/{operationId}": {
       "get": {
         "tags": [
-          "Operations"
+          "Operation"
         ],
-        "summary": "Retrieve the operation by ID (Preview).",
-        "description": "Retrieve the operation specified by ID.",
+        "summary": "Gets the status of an environment lifecycle operation (Preview).",
+        "description": "Gets the status of an environment lifecycle operation.",
         "operationId": "GetOperationByID",
         "produces": [
           "text/plain",
@@ -484,8 +1521,22 @@
             "schema": {
               "$ref": "#/definitions/OperationExecutionResult"
             }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
           }
-        }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Operation.Read"
       }
     },
     "/environmentmanagement/environmentGroupOperations/{operationId}": {
@@ -935,10 +1986,10 @@
       },
       "delete": {
         "tags": [
-          "Environments"
+          "EnvironmentDelete"
         ],
-        "summary": "Delete the environment by ID (Preview).",
-        "description": "Delete the environment specified by ID.",
+        "summary": "Deletes the specified environment by ID (Preview).",
+        "description": "Deletes the specified environment by ID.",
         "operationId": "DeleteEnvironmentByID",
         "produces": [
           "text/plain",
@@ -949,15 +2000,21 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment ID.",
+            "description": "The ID of Environment.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "Boolean flag indicating to validate instead of executing the delete operation.",
+            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
             "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "type": "string"
           },
           {
             "in": "query",
@@ -969,10 +2026,21 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found"
           }
-        }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Environment.Delete"
       }
     }
   },
@@ -1403,34 +2471,84 @@
       },
       "additionalProperties": false
     },
+    "ValidationResponse": {
+      "description": "Represents the response for validation of an operation.",
+      "type": "object",
+      "properties": {
+        "errorDetail": {
+          "$ref": "#/definitions/ErrorInfo"
+        }
+      },
+      "additionalProperties": false
+    },
     "UserIdentity": {
+      "description": "Represents the identity of a user.",
       "type": "object",
       "properties": {
         "userId": {
-          "description": "The user ID.",
+          "description": "The ID of the user.",
           "type": "string"
         },
         "displayName": {
-          "description": "The display name.",
+          "description": "The display name of the user.",
           "type": "string"
         },
         "tenantId": {
-          "description": "The tenant ID.",
+          "description": "The tenant ID of the user.",
           "type": "string"
         }
       },
       "additionalProperties": false
     },
+    "StateChangeRequest": {
+      "description": "Represents a request to change the state of an environment.",
+      "type": "object",
+      "properties": {
+        "reason": {
+          "description": "The reason of this state change.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "StageStatus": {
+      "description": "The stage status of an operation.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of stage.",
+          "type": "string"
+        },
+        "status": {
+          "description": "The status of stage.",
+          "type": "string"
+        },
+        "startTime": {
+          "format": "date-time",
+          "description": "The start time of stage.",
+          "type": "string"
+        },
+        "endTime": {
+          "format": "date-time",
+          "description": "The end time of stage.",
+          "type": "string"
+        },
+        "errorDetail": {
+          "$ref": "#/definitions/ErrorInfo"
+        }
+      },
+      "additionalProperties": false
+    },
     "OperationStatus": {
-      "description": "The operation status.",
+      "description": "The status of operation.",
       "enum": [
         "Queued",
         "InProgress",
         "Succeeded",
-        "ValidationError",
+        "ValidationFailed",
         "Failed",
         "NoOperation",
-        "Validated"
+        "ValidationPassed"
       ],
       "type": "string"
     },
@@ -1444,34 +2562,34 @@
           }
         },
         "continuationToken": {
-          "description": "The continuation token from a previous response.",
           "type": "string"
         }
       },
       "additionalProperties": false
     },
     "OperationExecutionResult": {
+      "description": "Represents the result of an operation execution.",
       "type": "object",
       "properties": {
         "name": {
-          "description": "The result name.",
+          "description": "The name of the operation.",
           "type": "string"
         },
         "status": {
           "$ref": "#/definitions/OperationStatus"
         },
         "operationId": {
-          "description": "The operation ID.",
+          "description": "The ID of the operation.",
           "type": "string"
         },
         "startTime": {
           "format": "date-time",
-          "description": "The start time.",
+          "description": "The start time of the operation.",
           "type": "string"
         },
         "endTime": {
           "format": "date-time",
-          "description": "The end time.",
+          "description": "The end time of the operation.",
           "type": "string"
         },
         "updatedEnvironment": {
@@ -1483,52 +2601,73 @@
         "errorDetail": {
           "$ref": "#/definitions/ErrorInfo"
         },
-        "jobStatuses": {
+        "stageStatuses": {
+          "description": "The list of State statuses associated with the operation.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/JobStatus"
+            "$ref": "#/definitions/StageStatus"
           }
         }
       },
       "additionalProperties": false
     },
-    "JobStatus": {
+    "ModifyEnvironmentSkuRequest": {
+      "description": "Represents request to change the sku of an environment.",
+      "required": [
+        "environmentSku"
+      ],
       "type": "object",
       "properties": {
-        "name": {
-          "description": "The job name.",
+        "environmentSku": {
+          "$ref": "#/definitions/EnvironmentSku"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Identity": {
+      "type": "object",
+      "properties": {
+        "id": {
           "type": "string"
         },
-        "status": {
-          "description": "The job status.",
+        "displayName": {
           "type": "string"
         },
-        "startTime": {
+        "tenantId": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ForceFailoverRequest": {
+      "description": "Request model for force failover operation on an environment.",
+      "required": [
+        "lastSyncTime"
+      ],
+      "type": "object",
+      "properties": {
+        "lastSyncTime": {
           "format": "date-time",
-          "description": "The job start time.",
-          "type": "string"
-        },
-        "endTime": {
-          "format": "date-time",
-          "description": "The job end time.",
+          "description": "Gets or sets the last sync time that will be used to perform the force failover operation.",
           "type": "string"
         }
       },
       "additionalProperties": false
     },
     "ErrorInfo": {
+      "description": "Represents error information for an operation.",
       "type": "object",
       "properties": {
         "code": {
-          "description": "The error code.",
+          "description": "The error Code.",
           "type": "string"
         },
         "fieldErrors": {
+          "description": "The detailed error.",
           "type": "object",
           "additionalProperties": {
             "type": "array",
             "items": {
-              "description": "The individual errors.",
               "type": "string"
             }
           }
@@ -1536,11 +2675,196 @@
       },
       "additionalProperties": false
     },
+    "EnvironmentSku": {
+      "description": "The environment SKU.",
+      "enum": [
+        "NotSpecified",
+        "Standard",
+        "Premium",
+        "Developer",
+        "Basic",
+        "Production",
+        "Sandbox",
+        "Trial",
+        "Default",
+        "Support",
+        "SubscriptionBasedTrial",
+        "Teams",
+        "Platform"
+      ],
+      "type": "string"
+    },
+    "EnvironmentRestoreRequest": {
+      "description": "Request model for restoring an environment to a previous backup.",
+      "required": [
+        "restorePointDateTime",
+        "sourceEnvironmentId"
+      ],
+      "type": "object",
+      "properties": {
+        "restorePointDateTime": {
+          "format": "date-time",
+          "description": "Date and time of when the restore point is. Date and Time should with timezone offset per RFC 3339 (e.g., 2025-04-30T12:34:56+02:00).",
+          "type": "string"
+        },
+        "skipAuditData": {
+          "description": "A value indicating whether to skip audit data during the restore process.",
+          "type": "boolean"
+        },
+        "sourceEnvironmentId": {
+          "description": "The ID of the source environment from which the backup will be restored from.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentPagedCollection": {
+      "type": "object",
+      "properties": {
+        "collection": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Environment"
+          }
+        },
+        "continuationToken": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentBackupPagedCollection": {
+      "type": "object",
+      "properties": {
+        "collection": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnvironmentBackup"
+          }
+        },
+        "continuationToken": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentBackup": {
+      "type": "object",
+      "properties": {
+        "backupPointDateTime": {
+          "format": "date-time",
+          "description": "The backup point date time. \r\nSet when the backup is created.",
+          "type": "string"
+        },
+        "label": {
+          "description": "The label for the manually created backup.",
+          "type": "string"
+        },
+        "backupExpiryDateTime": {
+          "format": "date-time",
+          "description": "The backup expiry date time. \r\nSet when the backup is created based on environment's backup retention in days.",
+          "type": "string"
+        },
+        "id": {
+          "description": "The identifier of the environment backup.\r\nIf null, a new Guid will be generated when the backup is created.",
+          "type": "string"
+        },
+        "createdBy": {
+          "$ref": "#/definitions/Identity"
+        }
+      },
+      "additionalProperties": false
+    },
     "Environment": {
+      "description": "Power platform Environment",
       "type": "object",
       "properties": {
         "environmentId": {
           "description": "The environment ID.",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "Display name of the environment.",
+          "type": "string"
+        },
+        "dataverseOrganizationUrl": {
+          "description": "Dataverse organization Url of the environment.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CreateBackupRequest": {
+      "description": "Request model for creating a backup.",
+      "required": [
+        "label"
+      ],
+      "type": "object",
+      "properties": {
+        "label": {
+          "description": "The label for the manually created backup.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CopyType": {
+      "description": "Represents the type of copy operation.",
+      "enum": [
+        "Minimal",
+        "Full"
+      ],
+      "type": "string"
+    },
+    "CopyRequestOptions": {
+      "description": "Optional inputs for copy request.",
+      "type": "object",
+      "properties": {
+        "environmentNameToOverride": {
+          "description": "Environment name to override on target environment.",
+          "type": "string"
+        },
+        "securityGroupIdToOverride": {
+          "description": "Security group ID to override on target environment.",
+          "type": "string"
+        },
+        "skipAuditData": {
+          "description": "Boolean flag to skip audit data for copy.",
+          "type": "boolean"
+        },
+        "executeAdvancedCopyForFinanceAndOperations": {
+          "description": "Boolean flag to execute advanced copy for Finance and Operation data.",
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CopyRequest": {
+      "description": "Represents request to copy to a target environment from source environment.",
+      "required": [
+        "copyType",
+        "sourceEnvironmentId"
+      ],
+      "type": "object",
+      "properties": {
+        "sourceEnvironmentId": {
+          "description": "Source environment ID to copy from.",
+          "type": "string"
+        },
+        "copyType": {
+          "$ref": "#/definitions/CopyType"
+        },
+        "copyOptions": {
+          "$ref": "#/definitions/CopyRequestOptions"
+        }
+      },
+      "additionalProperties": false
+    },
+    "BusinessContinuityStateFullSnapshot": {
+      "type": "object",
+      "properties": {
+        "lastSyncTime": {
+          "format": "date-time",
           "type": "string"
         }
       },
