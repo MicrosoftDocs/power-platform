@@ -203,12 +203,12 @@
           "items": {
             "type": "object",
             "properties": {
-              "roleDefinitionId": {
-                "description": "Role definition Id",
+              "id": {
+                "description": "Role definition ID",
                 "type": "string",
                 "example": "roleDef1"
               },
-              "roleDefinitionName": {
+              "name": {
                 "description": "Role definition name",
                 "type": "string",
                 "example": "Power Platform Admin"
@@ -237,18 +237,18 @@
           "items": {
             "type": "object",
             "properties": {
-              "roleAssignmentId": {
-                "description": "Role assignment Id",
+              "id": {
+                "description": "Role assignment ID",
                 "type": "string",
                 "example": "assignment1"
               },
-              "principalObjectId": {
-                "description": "The Id of the assigned principal",
+              "principalId": {
+                "description": "The ID of the assigned principal",
                 "type": "string",
                 "example": "user123"
               },
               "roleDefinitionId": {
-                "description": "The Id of the role definition",
+                "description": "The ID of the role definition",
                 "type": "string",
                 "example": "roleDef1"
               },
@@ -256,27 +256,6 @@
                 "description": "The assignment scope",
                 "type": "string",
                 "example": "environment/abc"
-              },
-              "principalType": {
-                "description": "The type of the principal",
-                "type": "string",
-                "example": "ApplicationUser"
-              },
-              "createdByPrincipalType": {
-                "description": "The type of the creator principal",
-                "type": "string",
-                "example": "User"
-              },
-              "createdByPrincipalObjectId": {
-                "description": "The Id of the creator principal",
-                "type": "string",
-                "example": "user123"
-              },
-              "createdOn": {
-                "format": "date-time",
-                "description": "The datetime of when the assignment was created",
-                "type": "string",
-                "example": "2025-11-04T15:30:00.0000000+00:00"
               }
             }
           }
@@ -287,13 +266,13 @@
       "description": "Request to assign a role to a principal.",
       "type": "object",
       "properties": {
-        "principalObjectId": {
-          "description": "The Id of the principal to assign",
+        "principalId": {
+          "description": "The ID of the principal to assign",
           "type": "string",
           "example": "user123"
         },
         "roleDefinitionId": {
-          "description": "The Id of the role definition",
+          "description": "The ID of the role definition",
           "type": "string",
           "example": "roleDef1"
         },
@@ -301,11 +280,6 @@
           "description": "The assignment scope",
           "type": "string",
           "example": "environment/abc"
-        },
-        "principalType": {
-          "description": "The type of the principal",
-          "type": "string",
-          "example": "ApplicationUser"
         }
       }
     }
