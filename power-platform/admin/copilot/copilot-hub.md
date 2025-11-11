@@ -65,7 +65,7 @@ As a tenant administrator, you can turn on or off AI capabilities such as Copilo
 1. In the left navigation pane, select **Copilot**
 1. In the **Copilot** pane, select **Settings**.
 1. On the **Settings** page, under **Dynamics 365 Sales**, select one of the following AI capabilities that you want to turn on:
-   - **AI Agents**: Lets you turn on out-of-the-box Sales AI agents such as Sales Qualification Agent and Sales Close Agent. Learn more about Sales AI agents in [Sales AI Agents Overview](/dynamics365/sales/sales-ai-agents-overview).
+   - **AI Agents**: Lets you turn on out-of-the-box Sales AI agents such as Sales Qualification Agent and Sales Close Agent. Learn more about Sales AI agents in [Sales AI Agents Overview](/dynamics365/sales/ai-agent-overview).
    - **Copilot**: Lets you turn on Copilot chat and other Copilot skills such as opportunity summary and lead summary in Dynamics 365 Sales. Learn more about Copilot in Dynamics 365 Sales in [Copilot in Dynamics 365 Sales overview](/dynamics365/sales/copilot-overview).
 1. Select an environment or environment group in the corresponding tab and select **Add**.
 1. Select **On** to turn on the AI capability.
