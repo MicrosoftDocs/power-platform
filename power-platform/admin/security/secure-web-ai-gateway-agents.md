@@ -19,7 +19,7 @@ As organizations integrate autonomous and interactive AI agents to perform tasks
 
 With Global Secure Access (GSA) for Agents, you can now regulate how these agents use knowledge, tools, and actions to access other resources in a way that's quite like how you regulate users.
 
-:::image type="content" source="media/secure-web-ai-gateway-agents/agent-traffic-flow.png" alt-text="Diagram showing agent traffic flowing through Global Secure Access to protected resources.":::
+:::image type="content" source="media/agent-traffic-flow.png" alt-text="Diagram showing agent traffic flowing through Global Secure Access to protected resources.":::
 
 ## Key benefits
 
@@ -81,7 +81,7 @@ To configure Global Secure Access settings at the environment group-level, compl
 
  ## Next steps
 
-[Configure security controls in the Global Secure Access portal](/entra/global-secure-access/how-to-secure-web-ai-gateway-agents)
+[Configure security controls in the Global Secure Access portal](https://learn.microsoft.com/entra/global-secure-access/how-to-secure-web-ai-gateway-agents)
 
 ## Known limitations
 
