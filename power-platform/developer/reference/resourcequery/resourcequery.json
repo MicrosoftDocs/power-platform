@@ -174,7 +174,7 @@
       "type": "object",
       "properties": {
         "TableName": {
-          "description": "Target table/resource set (e.g., \"PowerPlatformResources\")",
+          "description": "Target table/resource set (for example, \"PowerPlatformResources\")",
           "type": "string"
         },
         "Clauses": {
@@ -198,7 +198,7 @@
           "type": "integer"
         },
         "Skip": {
-          "description": "Offset; typically 0 when using SkipToken",
+          "description": "Offset; typically zero (0) when using SkipToken",
           "minimum": 0,
           "type": "integer"
         },
@@ -482,7 +482,7 @@
       ],
       "properties": {
         "JoinKind": {
-          "description": "KQL join kind (e.g., innerunique, leftouter)",
+          "description": "KQL join kind (for example, innerunique, leftouter)",
           "type": "string"
         },
         "LeftColumnName": {
