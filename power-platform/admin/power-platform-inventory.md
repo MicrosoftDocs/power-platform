@@ -130,13 +130,13 @@ Quickly search for keywords across all entries currently loaded in the inventory
 
 - **Un-published model-driven apps:** Only published, model-driven apps are captured.
   
-- **Model-driven apps in the default environment:** The default environment comes with three pre-installed model-driven apps: Power Platform Environment Settings, Power Pages Management, and Solution Health Hub. These don't appear in the inventory initially unless they are edited and re-published.
+- **Model-driven apps in the default environment:** The default environment comes with three preinstalled model-driven apps: Power Platform Environment Settings, Power Pages Management, and Solution Health Hub. These don't appear in the inventory initially unless they're edited and republished.
 
-- The **Owner** column for cloud flows, agent flows, and workflows (Microsoft 365 Copilot) is currently populated with the user that created the flow, and is not yet updated when the owner changes.
+- The **Owner** column for cloud flows, agent flows, and workflows (Microsoft 365 Copilot) is currently populated with the user that created the flow, and isn't yet updated when the owner changes.
 
-- **Desktop flows** from Power Automate are not yet included in the inventory.
+- **Desktop flows** from Power Automate aren't yet included in the inventory.
 
-- Additional resources with names ending in "azshadow" may temporarily be shown when querying Azure Resource Graph directly. These resources can safely be ignored, and are planned to be automatically removed by the end of November 2025.
+- More resources with names ending in "azshadow" may temporarily be shown when querying Azure Resource Graph directly. These resources can safely be ignored, and are planned to be automatically removed by the end of November 2025.
 
 ## Accessing Power Platform inventory data via Power Platform API
 
