@@ -62,7 +62,7 @@ After you’ve created your alert, the system does an on-demand evaluation and s
 ## When an alert is triggered
 If you selected to receive email notifications when any resource triggers an alert, you get an email notification sent to you.
 
-:::image type="content" source="media/alert-email.png" alt-text="If you selected to receive email notifications when any resource triggers an alert, you get an email notification sent to you.." lightbox="media/alert-email.png":::
+:::image type="content" source="media/alert-email.png" alt-text="If you selected to receive email notifications when any resource triggers an alert, you get an email notification sent to you." lightbox="media/alert-email.png":::
 
 In the email notification, select **Go to Alert** to open a Power Platform page listing the triggered alerts, where you can see information on the triggered alert and what resources triggered it. When you select any of the resources in the triggered alert, a pane is displayed that shows time series information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
 
@@ -74,7 +74,7 @@ Predefined alerts exist in Power Platform Monitor to help IT, Operations, and Ce
 ### What are Predefined Alerts?
 Predefined alerts are created and defined by Microsoft to highlight resources with sub-optimal health. They have a tenant wide scope, so they monitor all resources of a specific type in your tenant. They are enabled by default, require no set up to start using them, and cannot be edited. Predefined alerts encourage customization; not only do they help users identify high-use resources with suboptimal operational health, they also help introduce and familiarize users with the concept of custom alerts. Consider creating a custom alert on some of these resources to proactively monitor them against custom thresholds that you’ve defined. 
 
-The table below details what predefined alerts are supported today
+The table below details what predefined alerts are supported today:
 | Product | Predefined Alert |
 | ------- | ------- | 
 | Canvas apps | Availability of high-use canvas apps is under 90% |
@@ -96,19 +96,22 @@ Predefined alerts are intended to highlight high-use resources in your tenant th
 
 ### How It Works
 Go to admin.powerplatform.microsoft.com and navigate to the Monitor Overview page. Once on the page, you’ll see two cards:
+:::image type="content" source="media/monitor-overview-page.jpg" alt-text="Monitor overview page that displays two cards. One summarizes the state of your triggered custom alerts, the other summarizes the state of your triggered predefined alerts." lightbox="media/monitor-overview-page.jpg":::
 
 The “Triggered custom alerts” card on the left shows you the state of your triggered custom alerts in your tenant. These are alerts that you have defined. The visual in this card breaks down your triggered custom alerts by severity level, and the “Top priorities” section below calls out which of your alerts have triggered most recently. Clicking on those alerts will bring you to the triggered alert experience for that custom alert. 
 
 The “Triggered alerts for high-use items” card on the right shows you which of the predefined alerts have triggered. Similarly, the visual at the top of the card shows a breakdown of the predefined alerts by product type. Clicking into one of the alerts in the “Top alerts from Microsoft section” will bring you this experience:
+:::image type="content" source="media/triggered-predefined-alert.jpg" alt-text="Image that shows the triggered predefined alert experience." lightbox="media/triggered-predefined-alert.jpg":::
 
 As an example, here you can see all the high-use cloud flows in your tenant that have triggered this alert, regardless of whether the flow is a managed environment or not. Like the custom triggered alert experience, clicking on a specific flow in this list will bring out a panel that shows you how each metric for that flow has trended over time. 
-
+:::image type="content" source="media/monitor-resource-panel.jpg" alt-text="Monitor resource panel that shows metrics and how they've trended over time for a given resource." lightbox="media/monitor-resource-panel.jpg":::
 
 You can also see a list of your predefined alerts and view their details in the Alerts section of Monitor. Click on Alerts and scroll to the bottom of the page to view the predefined alerts. 
+:::image type="content" source="media/predefined-alert-list.jpg" alt-text="This image shows predefined alerts listed alongside your custom alerts under Alert Rules in the Alerts section of Monitor" lightbox="media/predefined-alert-list.jpg":::
 
 
-Clicking on the three dots next to the alert and then on “Details” will bring out a panel that shows how the predefined alert has been configured. As a reminder, these alerts cannot be edited or deleted, but they can be turned on or off. 
-
+Clicking on the three dots next to the alert and then on “Details” will bring out a panel that shows how the predefined alert has been configured. As a reminder, these alerts cannot be edited or deleted. 
+:::image type="content" source="media/predefined-alert-details.jpg" alt-text="This image shows how if you click on details on a predefined alert in the Alert rules page, it'll bring out a panel that shows you details on how this alert is defined." lightbox="media/predefined-alert-list.jpg":::
 
 ## Frequently asked questions (FAQs)
 
@@ -143,7 +146,7 @@ Triggered predefined alerts are visible on the Monitor Overview page under the �
 ### What should I do if a predefined alert is triggered?
 Review the affected resources and consider creating custom alerts for those items to proactively monitor them against thresholds that matter to your organization and be notified via email when it triggers. 
 
-### Do predefined alerts send email notifications
+### Do predefined alerts send email notifications?
 No, predefined alerts do not send any notification. You need to come into Monitor to view if any of them triggered.
 
 ### Can I customize predefined alerts?
