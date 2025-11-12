@@ -4,7 +4,7 @@ description: Learn how to get a comprehensive, unified view of all agents and ap
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 10/22/2025
+ms.date: 11/14/2025
 ms.topic: concept-article
 ---
 
@@ -36,7 +36,7 @@ The Power Platform inventory includes:
 
 - **Apps:** All apps created in Power Apps, including canvas apps, model-driven apps, and code apps, and created in Microsoft 365 Copilot's App Builder agent.
   
-- **Flows:** All Power Automate cloud flows, Copilot Studio agent flows, and M365 Copilot Workflows.
+- **Flows:** All Power Automate cloud flows, Copilot Studio agent flows, and Microsoft 365 Copilot workflows.
 
 ## Key features
 
@@ -62,7 +62,7 @@ Power Platform inventory is available through multiple interfaces and APIs, allo
 
 - **Manage > Inventory**: The main inventory page provides a unified view of all resources across your tenant.
 
-- **Manage > Copilot Studio**: This page offers a focused view of agents, agent flows, and Workflows (M365 Copilot).
+- **Manage > Copilot Studio**: This page offers a focused view of agents, agent flows, and workflows (Microsoft 365 Copilot).
 
 - **Manage > Power Apps > Inventory tab**: This tab offers a focused view of your Power Apps, including canvas apps, model-driven apps, code apps, and apps from M365 Copilot's App Builder agent.
 
@@ -112,7 +112,7 @@ The inventory table provides the option to display more columns to help you bett
 
 Quickly search for keywords across all entries currently loaded in the inventory table. The **Search** box is designed to help you find specific resources fast, but keep in mind that it only searches the items visible in the UI (up to 1,000 at a time). If your inventory exceeds this limit, apply more filters to narrow down the results and bring the resources you need into view.
 
-## View resource, or environment details
+## View resource or environment details
 
 - Select a resource, then select the **Details** option in the command bar.
 
@@ -132,11 +132,11 @@ Quickly search for keywords across all entries currently loaded in the inventory
   
 - **Model-driven apps in the default environment:** The default environment comes with three pre-installed model-driven apps: Power Platform Environment Settings, Power Pages Management, and Solution Health Hub. These don't appear in the inventory initially unless they are edited and re-published.
 
-- The **Owner** column for cloud flows, agent flows, and Workflows (M365 Copilot) is currently populated with the user that created the flow, and is not yet updated when the owner changes.
+- The **Owner** column for cloud flows, agent flows, and workflows (Microsoft 365 Copilot) is currently populated with the user that created the flow, and is not yet updated when the owner changes.
 
 - **Desktop flows** from Power Automate are not yet included in the inventory.
 
-- Additional resources with names ending in "azshadow" may temporarily be shown when querying Azure Resource Graph directly. These resources are can safely be ignored, and will be automatically removed by the end of November 2025.
+- Additional resources with names ending in "azshadow" may temporarily be shown when querying Azure Resource Graph directly. These resources can safely be ignored, and are planned to be automatically removed by the end of November 2025.
 
 ## Accessing Power Platform inventory data via Power Platform API
 
