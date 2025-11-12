@@ -1,16 +1,16 @@
 ---
-title: Enhance Citizen Engagement with Copilot Studio in Montréal
+title: City of Montréal enhances citizen engagement with Copilot Studio 
 description: Discover how the City of Montréal uses Microsoft Copilot Studio to enhance citizen engagement with AI-powered virtual assistants and improve access to services.
 #customer intent: As a Power Platform user, I want to learn how Montréal city uses Copilot Studio to build a citizen‑facing virtual assistant so that residents can quickly find accurate, up‑to‑date information and reduce basic inquiries to call centers.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
-ms.date: 11/11/2025
+ms.date: 11/12/2025
 ms.topic: overview
 ---
 
-# Enhance citizen engagement with Copilot Studio in Montréal
+# City of Montréal enhances citizen engagement with Copilot Studio
 
 The [Montréal City](https://montreal.ca/) is the second-largest city in Canada and the largest city in the province of Québec. With over 1.7 million citizens, Montréal is also the largest French-speaking city in North America. Montréal is distinguished by its cultural vitality and world-renowned creative forces while also being known as an exceptionally inclusive and dynamic city. To better serve its citizens, the City of Montréal is embracing technology to improve access to information and strengthen how the city connects with citizens.
 
@@ -32,40 +32,40 @@ The City of Montréal implemented a Microsoft Copilot Studio conversational agen
 
 ## Solution
 
-The Microsoft Copilot Studio conversational agent lets citizens use natural language to ask questions about a wide range of topics. These topics include public services, administrative procedures, tax payments, municipal regulations, local events, and the maintenance of public spaces.
+The Microsoft Copilot Studio conversational agent allows citizens to use natural language to ask questions across a wide range of topics, including public services, administrative procedures, tax payments, municipal regulations, local events, and the maintenance of public spaces.
 
-For example, the agent can answer questions about new regulations for tourist accommodations, required documents for permit applications, or provide information about upcoming cultural events in the city. The responses come from content on the City of Montréal’s website and are powered by generative artificial intelligence (AI). The following image shows how the agent appears online.
+For example, the agent can answer questions about new regulations for tourist accommodation, required documents for permit applications, or provide information about upcoming cultural events in the city. The responses are based on content from the City of Montréal’s website and powered by generative AI. The following image shows how the agent appears online.
 
 :::image type="content" source="media/city-montreal-citizen-engagement/montreal-homepage-virtual-assistant.png" alt-text="Screenshot showing Montréal homepage with virtual assistant chat for citizen engagement using Copilot Studio." lightbox="media/city-montreal-citizen-engagement/montreal-homepage-virtual-assistant.png":::
 
-Direct connectivity to backend systems provides additional services. For example, the agent can instantly provide a customized schedule for waste collection or give location-specific information from the relevant city hall.
+Direct connectivity to backend systems provides additional services, such as instantly receiving a customized schedule for waste collection or getting location-specific information from the relevant city hall.
 
-Over 85% of conversations are handled with generative answers connected to the public website. Regular topics and application programming interface (API) calls to backend systems manage the rest. The top questions are about trash collection schedules, tax payments, public space maintenance, and snow removal.
+Over 85 % of conversations are handled with generative answers connected to their public website, the rest being managed by regular topics and API calls to back-end systems. The top questions have been about trash collection schedule, tax payment, public space maintenance and snow removal.
 
-## Implementation approach
+### Implementation approach
 
-The City of Montréal set out to develop a virtual assistant to better serve its citizens. The first goal was to connect the assistant to the city’s public website to make information more accessible. The second goal was to surface additional insights by connecting the assistant to two internal systems: waste management and facilities.
+The City of Montréal set out to develop a virtual assistant to better serve its citizens. The first goal was to connect the assistant to the city’s public website, making information more accessible. The second goal was to surface additional insights by connecting the assistant to two internal systems; waste management and facilities.
 
-After the team was introduced to Microsoft Copilot Studio, they began exploring its capabilities. Initially, connecting website pages as knowledge sources didn't deliver the expected results. In response, the City of Montréal focused on:
+After being introduced to Microsoft Copilot Studio, the team began exploring its capabilities. Initially, connecting website pages as knowledge sources did not deliver the expected results. In response, the City of Montréal focused on:
 
 - Improving Bing indexation to increase page coverage
 - Optimizing content structure for better indexing
-- Making content not just search engine optimization (SEO)-friendly, but AI friendly
+- Making content not just SEO-friendly, but AI friendly
 - Coordinating across web teams for consistent information
 
-To enhance the performance of the agent, the team introduced two custom entities: postal code and borough. The team used entity synonyms and helped update synonyms along with adding trigger phrases. To get the analytics needed, the team explored tools beyond Copilot Studio.
+In addition, to enhance the performance of the agent, the team introduced two custom entities: Postal code and Borough. Entity synonyms are used and the business helped updating synonyms along with adding trigger phrases. To get the analytics needed, tools beyond Copilot Studio were explored.
 
-## Improve Bing indexation
+#### Improve Bing indexation
 
-When you use a public website as a knowledge source in an agent, queries go to Bing, which returns results only from the websites you provide. Copilot Studio relies on Bing’s index to generate answers from publicly available content, so better indexation means better agent performance.
+When using a public website as a knowledge source in an agent, queries are searched on Bing and return results only from the provided websites. Copilot Studio relies on Bing’s index to generate answers from publicly available content, so better indexation means better agent performance.  
 
 The City of Montréal found that while another search engine had indexed hundreds of thousands of their documents, Bing had fewer than 15,000. The team began improving Bing indexation, and within three months, tripled the number of indexed documents, immediately seeing better agent results.
 
-Proper Bing indexation directly affects response accuracy, and the robots.txt file plays a key role. It tells search engines which parts of a site they can crawl. If you block key pages, Bing can't index them, leading to incomplete answers.
+Proper Bing indexation directly affects response accuracy and the robots.txt file plays a key role. It tells search engines which parts of a site can be crawled. If key pages are blocked, Bing will not index them, leading to incomplete answers.
 
-The City of Montréal optimized their robots.txt to ensure relevant content was accessible to Bing’s crawlers. This change allowed Copilot Studio to deliver high-quality, context-aware answers based on the latest website information.
+The City of Montréal optimized their robots.txt to ensure relevant content was accessible to Bing’s crawlers. This allowed Copilot Studio to deliver high-quality, context-aware answers based on the latest website information.
 
-## Optimizing content structure
+#### Optimizing content structure
 
 The City of Montréal continuously refined their website to help Bing index more pages and ensure content is accessible within Copilot Studio. They focused on these areas:
 
@@ -75,7 +75,7 @@ The City of Montréal continuously refined their website to help Bing index more
 
 The team invested heavily in content best practices to make everything AI friendly.
 
-## Making content AI friendly
+#### Making content AI friendly
 
 Another challenge was that parts of the website weren't SEO friendly. The City of Montréal also realized that content should be both SEO and AI friendly, structured so it can be indexed and queried effectively. For example, this format works well for opening hours:
 
@@ -89,17 +89,17 @@ Another challenge was that parts of the website weren't SEO friendly. The City o
 
 By contrast, this version isn't AI friendly: *Monday to Friday 8:00 to 6:00 and Saturday to Sunday 9:00 to 5:00*. It lacks AM/PM or 24-hour format, groups days together, and isn't structured clearly, making it harder for AI to interpret.
 
-## Coordinating web teams
+#### Coordinating web teams
 
 The City of Montréal’s website has around 700 contributors across city services, central departments, and all 19 boroughs. Synchronizing this many people take effort and requires shared routines and patterns.
 
-The city uses a content management server (CMS) with well-defined fields for things like opening hours and addresses. However, contributors often overuse additional text fields. Before Copilot Studio, this practice wasn't a problem because the content displayed fine on the site. Once the team started querying with Copilot Studio, the agent couldn't reliably find key details like opening hours or mixed up data between facilities.
+A CMS with well-defined fields for things like opening hours and addresses is used. However, additional text fields are often overused. Before Copilot Studio, this was not a problem, content displayed fine on the site. Once querying with Copilot Studio, the agent could not reliably find key details like opening hours or mixed up data between facilities.  
 
-To fix this issue, the team began standardizing contributions. Consistency across boroughs became a priority, especially for things like opening hours and addresses. The standardized approach ensured consistent results across all districts. Previously, queries for the same type of facility could return nothing or wildly different formats, depending on the borough.
+To fix this, the team began standardizing contributions. Consistency across boroughs became a priority, especially for things like opening hours and addresses. The standardized approach ensured consistent results across all districts. Previously, queries for the same type of facility could return nothing, or wildly different formats, depending on the borough.
 
-## Connecting with backend systems
+#### Connecting with backend systems
 
-When you update website content, there's a delay before it gets indexed. For frequently changing information, it's often better to retrieve data through APIs rather than relying solely on website knowledge sources in Copilot Studio. Even if the website shows the correct information, indexing delays prevent Copilot Studio from retrieving the information in real time.
+When website content is updated, there is a delay before it gets indexed. For frequently changing information, it is often better to retrieve data through APIs rather than relying solely on website knowledge sources in Copilot Studio. Even if the website shows the correct information, indexing delays will prevent Copilot Studio from retrieving the information in real time.  
 
 The City of Montréal connects two APIs to their agent and uses the Bing Search API to trigger reindexing whenever new content is published.
 
@@ -108,13 +108,13 @@ The City of Montréal connects two APIs to their agent and uses the Bing Search 
 
 Since the waste collection schedule data is unstructured, a [generative answers node](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-boost-node#add-a-generative-answers-node) is used to summarize API responses instead of relying on static content. For waste collection queries, citizens enter their postal code and street number, and the agent retrieves the correct schedule via API. The LLM enriches the response. A planned upgrade includes a location API that autofills postal codes to improve the user experience.
 
-## Making use of custom entities
+### Making use of custom entities
 
 The City of Montréal introduced two custom entities, Postal Code and Borough. There are 19 boroughs and citizens often spell them in the wrong way. The Copilot Studio smart match and synonyms features are used and there's also a failsafe.
 
 For certain queries, the agent asks for a borough. If the citizen doesn't enter one after two attempts, a selectable list is shown instead. This implementation is a component to be reused between topics to identify common information.
 
-## Collaborative approach for natural language tuning
+#### Collaborative approach for natural language tuning
 
 The City of Montréal learned that creating effective custom topics in Copilot Studio requires more than technical setup, it needs input from people who understand how citizens actually speak. Business analysts and human agents got involved to refine language. The business side added real-world synonyms and phrasing, like recognizing that some citizens say “Saint-Laurent”, while others simply say “Saint Lo”.
 
@@ -122,19 +122,19 @@ Traditionally, the development team worked separately from the business. But wit
 
 This collaborative model improved both accuracy and maintainability. Business teams could quickly adapt to language changes and analyzed transcripts, while IT focused on website tuning and API integration. Copilot Studio provided a shared workspace where technical structure met everyday language, making the agent smarter, faster, and better aligned with how people actually communicate.
 
-## Agent analytics beyond Copilot Studio
+#### Agent analytics beyond Copilot Studio
 
 The City of Montréal wanted a clearer view of traffic, quality, customer satisfaction, and cost, but the out-of-the-box analytics in Copilot Studio didn't provide the level of detail needed. At the time, consumption data wasn't available.
 
-The city built a custom dashboard by using an [open-source Power BI template](https://github.com/microsoft/CopilotStudioSamples/tree/legacy/CustomAnalytics) connected directly to Dataverse, providing the needed visibility. The dashboard tracks topic usage, identifies abandoned topics, and analyzes performance and cost.
+A custom dashboard was built using an [open-source Power BI template](https://github.com/microsoft/CopilotStudioSamples/tree/legacy/CustomAnalytics) connected directly to Dataverse, providing the needed visibility. Topic usage was tracked, abandoned topics identified, and performance and cost analyzed.
 
 The following image shows the customized dashboard.
 
 :::image type="content" source="media/city-montreal-citizen-engagement/usage-performance-report.png" alt-text="Screenshot showing Montréal virtual assistant dashboard with usage and performance metrics." lightbox="media/city-montreal-citizen-engagement/usage-performance-report.png":::
 
-The team explored the Copilot Studio Kit and now uses it to analyze transcripts. It offers deeper insights into user behavior and helps refine the agent experience. As built-in analytics in Copilot Studio continues to evolve, the team plans to use more of its native capabilities.
+The Copilot Studio Kit was explored and is now used to analyze transcripts, offering deeper insights into user behavior and helping refine the agent experience. As built-in analytics in Copilot Studio continues to evolve, the team will look into using more of its native capabilities.  
 
-## Technologies used
+### Technologies used
 
 The following technologies are used.
 
@@ -142,7 +142,7 @@ The following technologies are used.
 - Power Business Intelligence (BI)
 - Power Platform Pipelines
 
-## Architecture
+### Architecture
 
 The conversational agent is embedded on the website https://montreal.ca. The following image shows the overall architecture.
 
