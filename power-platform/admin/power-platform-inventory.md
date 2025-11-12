@@ -34,7 +34,7 @@ The Power Platform inventory includes:
 
 - **Agents:** All agents created in Copilot Studio.
 
-- **Apps:** All apps created in Power Apps and Microsoft 365 Copilot's App Builder agent including canvas apps, model-driven apps, and code apps.
+- **Apps:** All apps created in Power Apps and Microsoft 365 Copilot's App Builder agent, including canvas apps, model-driven apps, and code apps.
   
 - **Flows:** All Power Automate cloud flows, Copilot Studio agent flows, and Microsoft 365 Copilot workflows.
 
