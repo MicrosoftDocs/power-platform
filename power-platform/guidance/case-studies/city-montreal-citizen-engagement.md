@@ -106,7 +106,7 @@ The City of Montréal connects two APIs to their agent and uses the Bing Search 
 - One API provides real-time opening hours for city halls, which change often.
 - The second API manages waste collection schedules, including seasonal services like Christmas tree pickup.
 
-Since the waste collection schedule data is unstructured, a [generative answers node](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-boost-node#add-a-generative-answers-node) is used to summarize API responses instead of relying on static content. For waste collection queries, citizens enter their postal code and street number, and the agent retrieves the correct schedule via API. The LLM enriches the response. A planned upgrade includes a location API that autofills postal codes to improve the user experience.
+Since the waste collection schedule data is unstructured, a [generative answers node](https://learn.microsoft.com/microsoft-copilot-studio/nlu-boost-node#add-a-generative-answers-node) is used to summarize API responses instead of relying on static content. For waste collection queries, citizens enter their postal code and street number, and the agent retrieves the correct schedule via API. The LLM enriches the response. A planned upgrade includes a location API that autofills postal codes to improve the user experience.
 
 ### Making use of custom entities
 
@@ -218,13 +218,13 @@ This vision guides ongoing enhancements, ensuring the agent evolves alongside ci
 
 ## Related information
 
-- [Quickstart: Create and deploy an agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started)
-- [Microsoft Copilot Studio guidance documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/)
-- [Use entities and slot filling in agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-entities-slot-filling)
-- [Natural language understanding (NLU) overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-overview)
-- [Intent recognition and entity extraction options for your intelligent application workloads](https://learn.microsoft.com/en-us/power-platform/well-architected/intelligent-application/language)
-- [Managed Environments overview](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview)
-- [Create and manage solutions in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview)
-- [Key concepts – Analytics in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-overview)
-- [Add a public website as a knowledge source](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-public-website)
+- [Quickstart: Create and deploy an agent](https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-get-started)
+- [Microsoft Copilot Studio guidance documentation](https://learn.microsoft.com/microsoft-copilot-studio/guidance/)
+- [Use entities and slot filling in agents](https://learn.microsoft.com/microsoft-copilot-studio/advanced-entities-slot-filling)
+- [Natural language understanding (NLU) overview](https://learn.microsoft.com/microsoft-copilot-studio/nlu-overview)
+- [Intent recognition and entity extraction options for your intelligent application workloads](https://learn.microsoft.com/power-platform/well-architected/intelligent-application/language)
+- [Managed Environments overview](https://learn.microsoft.com/power-platform/admin/managed-environment-overview)
+- [Create and manage solutions in Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/authoring-solutions-overview)
+- [Key concepts – Analytics in Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/analytics-overview)
+- [Add a public website as a knowledge source](https://learn.microsoft.com/microsoft-copilot-studio/knowledge-add-public-website)
 - [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit/blob/main/README.md)
