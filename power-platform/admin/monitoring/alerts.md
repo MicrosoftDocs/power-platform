@@ -66,6 +66,50 @@ If you selected to receive email notifications when any resource triggers an ale
 
 In the email notification, select **Go to Alert** to open a Power Platform page listing the triggered alerts, where you can see information on the triggered alert and what resources triggered it. When you select any of the resources in the triggered alert, a pane is displayed that shows time series information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
 
+## Predefined Alerts from Microsoft 
+
+### Overview
+Predefined alerts exist in Power Platform Monitor to help IT, Operations, and Center of Excellence teams find high-use apps, flows, and agents with degraded health. These provide the most value to customers that haven’t adopted custom alerts to monitor health for their organizations’ health metric thresholds. 
+
+### What are Predefined Alerts?
+Predefined alerts are created and defined by Microsoft to highlight resources with sub-optimal health. They have a tenant wide scope, so they monitor all resources of a specific type in your tenant. They are enabled by default, require no set up to start using them, and cannot be edited. Predefined alerts encourage customization; not only do they help users identify high-use resources with suboptimal operational health, they also help introduce and familiarize users with the concept of custom alerts. Consider creating a custom alert on some of these resources to proactively monitor them against custom thresholds that you’ve defined. 
+
+The table below details what predefined alerts are supported today
+| Product | Predefined Alert |
+| ------- | ------- | 
+| Canvas apps | Availability of high-use canvas apps is under 90% |
+| Model-driven apps | Availability of high-use model-driven apps is under 90% |
+| Cloud flows | High-use cloud flows have a success rate under 90% |
+| Desktop flows | High-use desktop flows have a success rate under 90% |
+| Agents | High-use agents have a success rate under 90% |
+
+### High-use Thresholds
+Predefined alerts are intended to highlight high-use resources in your tenant that are performing sub-optimally. Consequently, these alerts filter out resources that have a low session or run count so that you only see relevant resources under your purview. The thresholds for each supported product type are in the table below and cannot be changed. 
+
+| Product | Usage Threshold |
+| ------- | ------- | 
+| Canvas apps | Recent app launches >= 100 |
+| Model-driven apps | Recent app launches >= 100 |
+| Cloud flows | Daily run count >= 150 |
+| Desktop flows | Daily run count >= 100 |
+| Agents | Recent agent sessions >= 200 |
+
+### How It Works
+Go to admin.powerplatform.microsoft.com and navigate to the Monitor Overview page. Once on the page, you’ll see two cards:
+
+The “Triggered custom alerts” card on the left shows you the state of your triggered custom alerts in your tenant. These are alerts that you have defined. The visual in this card breaks down your triggered custom alerts by severity level, and the “Top priorities” section below calls out which of your alerts have triggered most recently. Clicking on those alerts will bring you to the triggered alert experience for that custom alert. 
+
+The “Triggered alerts for high-use items” card on the right shows you which of the predefined alerts have triggered. Similarly, the visual at the top of the card shows a breakdown of the predefined alerts by product type. Clicking into one of the alerts in the “Top alerts from Microsoft section” will bring you this experience:
+
+As an example, here you can see all the high-use cloud flows in your tenant that have triggered this alert, regardless of whether the flow is a managed environment or not. Like the custom triggered alert experience, clicking on a specific flow in this list will bring out a panel that shows you how each metric for that flow has trended over time. 
+
+
+You can also see a list of your predefined alerts and view their details in the Alerts section of Monitor. Click on Alerts and scroll to the bottom of the page to view the predefined alerts. 
+
+
+Clicking on the three dots next to the alert and then on “Details” will bring out a panel that shows how the predefined alert has been configured. As a reminder, these alerts cannot be edited or deleted, but they can be turned on or off. 
+
+
 ## Frequently asked questions (FAQs)
 
 ### What’s the difference between an alert rule and a triggered alert?
@@ -89,6 +133,21 @@ The **Severity**, such as **Low**, **Medium**, ir **High** is a classification l
 
 ### Do alerts work on the default environment?
 Yes, **if** your default environment is a **Managed Environment**. Alerts are only supported in Managed Environments. 
+
+### Can I disable predefined alerts?
+At the moment, predefined alerts cannot be disabled. We expect to support this capability soon.
+
+### Where can I view triggered predefined alerts?
+Triggered predefined alerts are visible on the Monitor Overview page under the “Triggered alerts for high-use items” card and in the Alerts section at the bottom of the Alert rules page. You can also find triggered predefined alert notifications in the triggered alerts section of the Monitor Alerts page. 
+
+### What should I do if a predefined alert is triggered?
+Review the affected resources and consider creating custom alerts for those items to proactively monitor them against thresholds that matter to your organization and be notified via email when it triggers. 
+
+### Do predefined alerts send email notifications
+No, predefined alerts do not send any notification. You need to come into Monitor to view if any of them triggered.
+
+### Can I customize predefined alerts?
+No, these alerts are preconfigured by Microsoft. For customization, create custom alerts. 
 
 ### Any tips or best practices?
 Yes! Follow these best practices:
