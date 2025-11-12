@@ -4,11 +4,12 @@ description: If you're using a pay-as-you-go plan, 3 meters determine how much y
 author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/07/2025
+ms.date: 11/12/2025
 ms.subservice: admin
 ms.author: ampatra
 ms.reviewer: sericks 
 contributors:
+  - kenseongtan
   - ShawnNandiMSFT
   - sericks007
   - kenseongtan
@@ -29,10 +30,10 @@ When you choose to use pay-as-you-go, usage of Power Platform services is billed
 | [Power Platform requests (coming soon)](/power-platform/admin/power-automate-licensing/types#pay-as-you-go)| Each user in a pay-as-you-go enabled environment gets a daily entitlement of Power Platform requests based on their license. See [License limits](/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits). This is sufficient for most customers. For those with high-scale scenarios, any Power Platform requests above that entitlement is counted. | 0.00004$ per request/day above the daily entitled limits |
 | [Power Pages (preview)](#power-pages-meters-preview) | Unique monthly active users of Power Pages websites.</br>An active authenticated user is someone who logs in to the website at least once in the given month.<br>Users who authenticate to a website (by logging in using any auth provider) are counted as authenticated active users. Repeat access by a user within the calendar month isn't counted. Users with Power Apps per-user license or Dynamics 365 enterprise licenses that provides access to website won't be counted.</br>Users who don't authenticate to a website are counted as anonymous active users. Repeat access of the website by a user within the calendar month isn't counted as long as the anonymous user ID stored in the cookie isn't deleted or changed. | $4 per active authenticated user/website/month</br>$0.30 per active anonymous user/website/month |
 | Copilot Studio | A billable Copilot Studio message is a request or message sent to the Copilot triggering an action or response. Any agent or custom Copilot usage is billed through Copilot Studio message meter.| $0.01 per message  |
-| Windows 365 for Agents | Billable computer use execution (node) using Windows 365 for Agents Cloud PCs. Refer to [use Cloud PC Pool for computer use runs](https://go.microsoft.com/fwlink/?linkid=2336065) for more information.| See [Windows 365 for Agents billing](https://aka.ms/W365MCS) |
+| Windows 365 for Agents | Billable computer use execution (node) using Windows 365 for Agents Cloud PCs. Refer to [Automate web and desktop apps with computer use (preview)](https://go.microsoft.com/fwlink/?linkid=2336065) for more information.| See [Automate web and desktop apps with computer use (preview)](https://aka.ms/W365MCS) |
 
 
-For detailed pricing information, see [Power Apps and Power Automate pricing.](https://powerapps.microsoft.com/pricing/)
+For detailed pricing information, go to [Power Apps pricing](https://powerapps.microsoft.com/pricing/).
 
 > [!NOTE]
 > In June 2022, we released a preview of the Power Platform requests meter. During this preview we report on usage of Power Platform requests, however, we'll not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
