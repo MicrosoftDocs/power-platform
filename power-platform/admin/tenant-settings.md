@@ -76,7 +76,7 @@ The following settings apply to all environments within your tenant.
 |[Environment routing](default-environment-routing.md)* | Allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments. |
 |Hosted browser in computer use | Hosted browser in [computer use](/microsoft-copilot-studio/computer-use) allows users to automate web tasks and access built-in Windows apps using a Microsoft-hosted virtual machine powered by Windows 365.|
 |[Power Automate flow run resubmission](/power-automate/how-tos-bulk-resubmit#resubmit-flow-runs)| Allows users to resubmit previous flow runs initiated by other users. |
-|[Product Feedback](/power-platform/admin/list-tenantsettings)| Provides the ability to manage feedback prompts within Power Platform products. |
+|[Product Feedback](/power-platform/admin/list-tenantsettings)| Provides the ability to manage feedback prompts within Power Platform and Dynamics 365 products. |
 |[Production environment assignments](control-environment-creation.md)   | Controls who can create and manage production and sandbox environments.|
 |[Publish Copilots with AI features](/microsoft-copilot-studio/security-and-governance)| Allows Copilot authors to publish from Copilot Studio when AI features are enabled.|
 |Sales Research Agent (Preview)| Selects who can access Sales Research Agents.|
