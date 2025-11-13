@@ -48,4 +48,4 @@ This table features usage by user activity and includes canvas apps and model-dr
 This table features usage by run volume and includes cloud flows and desktop flows.
 
 ### Copilot Studio
-This table features usage by sessions and includes agents built in Copilot Studio (full).
+This table features usage by sessions and includes agents built in Copilot Studio (full experience).
