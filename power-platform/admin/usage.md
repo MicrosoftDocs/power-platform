@@ -16,12 +16,12 @@ contributors:
 # Discover what's driving engagement in the Power Platform with Usage (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-**Usage** in the Power Platform admin center is a centralized location for tracking engagement and adoption across Power Apps, Power Automate, and Copilot Studio agents. This experience is designed to spotlight high-impact resources to help organizations identify what's driving value and where to focus investment.
+**Usage** in the Power Platform admin center is a centralized location for tracking engagement and adoption across Power Apps, Power Automate, and Copilot Studio agents. This experience spotlights high-impact resources to help organizations identify what's driving value and where to focus investment.
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Prerequisites
-To access the **Usage** page, you must be assigned the [Power Platform administrator role](../guidance/adoption/pp-admin.md). 
+To access the **Usage** page, you must be assigned the [Power Platform administrator role](/guidance/adoption/pp-admin).
 
 ## Access the Usage page
 
@@ -34,18 +34,18 @@ Use the following steps to view the page.
 ## Usage insights
 The **Usage** page in the Power Platform admin center helps you identify the top resources in your organization that are driving success and spot adoption trends, such as usage spikes for apps, flows, and agents. 
 
-At the top of the page, is a summary view showcasing the adoption trends over time, as well as the resources that are driving the most value. The summary view shows the following:
+At the top of the page, a summary view showcases the adoption trends over time, as well as the resources that drive the most value. The summary view shows the following information:
 - **Top Apps** by user activity
 - **Top Flows** by run volume
 - **Top Agents** by session count
 
-Below the summary view, detailed tables provide sortable views of all apps, flows, and agents that're in use in your organization. Sort by users for apps, runs for flows, and sessions for agents to quickly identify trends and top performers.
+Below the summary view, detailed tables provide sortable views of all apps, flows, and agents that are in use in your organization. Sort by users for apps, runs for flows, and sessions for agents to quickly identify trends and top performers.
 
 ### Power Apps
-This table features usage by user activity and includes canvas apps and model-driven apps. 
+This table shows usage by user activity and includes canvas apps and model-driven apps. 
 
 ### Power Automate
-This table features usage by run volume and includes cloud flows and desktop flows.
+This table shows usage by run volume and includes cloud flows and desktop flows.
 
 ### Copilot Studio
-This table features usage by sessions and includes agents built in Copilot Studio (full experience).
+This table shows usage by sessions and includes agents built in Copilot Studio (full experience).
