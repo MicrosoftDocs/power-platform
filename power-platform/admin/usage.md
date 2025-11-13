@@ -21,7 +21,7 @@ contributors:
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Prerequisites
-To access the **Usage** page, you must be assigned the [Power Platform administrator role](../guidance/adoption/pp-admin).
+To access the **Usage** page, you must be assigned the [Power Platform administrator role](../guidance/adoption/pp-admin.md).
 
 ## Access the Usage page
 
