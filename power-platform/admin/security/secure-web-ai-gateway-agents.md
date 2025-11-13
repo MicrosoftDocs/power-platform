@@ -96,111 +96,111 @@ To configure Global Secure Access settings at the environment group-level, compl
 
 The following connectors are currently supported with secure web and AI gateway Copilot Studio agents:
 
-- office365groups
-- teams
-- onedriveforbusiness
-- commondataserviceforapps
-- powerappsforappmakers
-- cognitiveservicestextanalytics
-- azuread
-- microsoftforms
-- powerbi
-- planner
-- approvals
-- flowpush
-- flowmanagement
-- translatorv2
-- service-now
-- todo
-- powerappsnotification
-- powerplatformforadmins
-- projectroadmap
-- uiflow
-- powerappsforadmins
-- outlook
-- powerappsnotificationv2
-- microsoftflowforadmins
-- shifts
-- sendgrid
-- projectonline
-- outlooktasks
-- slack
-- powerplatformadminv2
-- jira
-- azuretables
-- microsoftcopilotstudio
-- smartsheet
-- microsoftformspro
-- googledrive
-- onedrive
-- m365messagecenter
-- twilio
-- azuredatafactory
-- microsoftlearndocsmcpserver
-- trello
-- microsoftbookings
-- databricks
-- youtube
-- cloudmersiveconvert
-- freshdesk
-- azurevm
-- wdatp
-- docusigndemo
-- safetyculture
-- survey123
-- muhimbi
-- azureloganalyticsdatacollector
-- formrecognizer
-- hashgeneratorip
-- arcgis
-- jotform
-- encodianconvert
-- microsoftloop
-- eventhubs
-- encodianpdf
-- freshservice
-- blackbaudconstituent
-- egnyte
-- googletasks
-- converterbypower2apps
-- clicksendsms
-- microsoftschooldatas
+- Office 365 Groups
+- Microsoft Teams
+- OneDrive for Business
+- Microsoft Dataverse
+- Power Apps for Makers
+- Azure Cognitive Service for Language
+- Microsoft Entra ID
+- Microsoft Forms
+- Power BI
+- Planner
+- Approvals
+- Notifications
+- Power Automate Management
+- Microsoft Translator V2
+- ServiceNow
+- Microsoft To-Do (Business)
+- Power Apps Notification
+- Power Platform for Admins
+- Portfolio and Roadmap
+- Desktop flows
+- Power Apps for Admins
+- Office 365 Outlook
+- Power Apps Notification V2
+- Power Automate for Admins
+- Shifts for Microsoft Teams
+- SendGrid
+- Project Online
+- Outlook Tasks
+- Slack
+- Power Platform for Admins V2
+- Jira
+- Azure Table Storage
+- Microsoft Copilot Studio
+- Smartsheet
+- Microsoft Forms
+- Google Drive
+- OneDrive
+- Microsoft 365 message center
+- Twilio
+- Azure Data Factory
+- Microsoft Learn Docs MCP
+- Trello
+- Microsoft Bookings
+- Databricks
+- YouTube
+- Cloudmersive Document Conversion
+- Freshdesk
+- Azure VM
+- Microsoft Defender ATP
+- Docusign Demo
+- iAuditor
+- Survey123
+- Muhimbi PDF
+- Azure Log Analytics Data Collector
+- Azure AI Document Intelligence (form recognizer)
+- Hash Generator (Independent Publisher)
+- ArcGIS
+- JotForm
+- Encodian - Convert
+- Microsoft Loop
+- Event Hubs
+- Encodian - PDF
+- Freshservice
+- Blackbaud Altru Constituent
+- Egnyte
+- Google Tasks
+- Converter by Power2Apps
+- ClickSend SMS
+- Microsoft School Data Sync V2
 - kintone
-- microsofttranslatorv
-- azurecommunicationservicessms
-- m365updatesapp
-- uipathorchestrator
-- cloudappsecurity
-- experlogixsmartflows
-- partnercenterref
-- assistantstudiov2
-- azureaifoundryinference
-- pagerduty
-- stripe
-- copilotflow
-- redmine
-- cognitiveservicescomputervision
-- encodianword
-- cardsforpowerapps
-- blackbaudgifts
-- monday
-- formstackforms
-- googlecontacts
-- todoist
-- blackbaudskyaddins
-- plumsailsp
-- acsemail
-- netdocuments
-- vena
-- jotformenterprise
-- hashifyip
-- luwarenimbus
-- azureadapplications
-- boxmcpserver
-- bitly
-- impower
-- wordpress
-- databricksinc
-- amazons3bucket
-- cognitiveservicesspe
-- teamforms
+- Microsoft Translator V3
+- Azure Communication Services SMS
+- Updates App (Microsoft 365)
+- UiPath Orchestrator
+- Defender for Cloud Apps
+- Experlogix Smart Flows
+- Partner Center Referrals
+- Azure AI Foundry Agent Service
+- Azure AI Foundry Inference
+- PagerDuty
+- Stripe
+- Copilot for Finance
+- Redmine
+- Computer Vision API
+- Encodian - Word
+- Cards for Power Apps
+- Blackbaud RENXT Gifts
+- monday.com
+- Formstack Forms
+- Google Contacts
+- Todoist
+- Blackbaud SKY Add-ins
+- Plumsail Actions
+- Azure Communication Services SMS Events
+- NetDocuments
+- Vena Solutions
+- Jotform Enterprise
+- Hashify (Independent Publisher)
+- Luware Nimbus
+- Azure AD App Registrations
+- Box MCP Server
+- Bitly
+- Impower ERP
+- WordPress
+- Databricks
+- Amazon S3
+- Azure Cognitive Service for Language
+- Team Forms
