@@ -33,11 +33,11 @@ Security policies for agents are configured using the baseline profile in Global
 
 ## How Secure Web and AI Gateway for Copilot Studio agents works
 
-To enforce consistent network security controls on Copilot Studio Agents, you should forward traffic from the agents to Global Secure Access's globally distributed proxy service. You can enable forwarding of agent traffic in the Power Platform Admin Center on a per-Environment or per-Environment Group basis, and it applies to all kinds of agent traffic, including traffic from HTTP Node and Tools generated connectors, including custom connectors, the custom Model Context Protocol (MCP) server connector, and a full list of [supported connectors](#supported-connectors)
+To enforce consistent network security controls on Copilot Studio Agents, you should forward traffic from the agents to Global Secure Access's globally distributed proxy service. You can enable forwarding of agent traffic in the Power Platform Admin Center on a per-Environment or per-Environment Group basis. Forwarding applies to all kinds of agent traffic, including traffic from HTTP Node and Tools generated connectors, including custom connectors, the custom Model Context Protocol (MCP) server connector, and a full list of [supported connectors](#supported-connectors)
 
 Once traffic from the agent is forwarded to GSA, you can enforce the same security controls you use on users to agents, including web content filtering, threat intelligence filtering, network file filtering, and more.
 
-When an agent makes a request to external resources, the request is evaluated in real time against the security policies configured for the Global Secure Access service. If the request complies with the configured policies, it is allowed. If the request violates any security policy, the Global Secure Access service denies the request with appropriate logging for audit and monitoring purposes.
+When an agent makes a request to external resources, the request is evaluated in real time against the security policies configured for the Global Secure Access service. If the request complies with the configured policies, it's allowed. If the request violates any security policy, the Global Secure Access service denies the request with appropriate logging for audit and monitoring purposes.
 
 ## Prerequisites
 
@@ -86,9 +86,9 @@ To configure Global Secure Access settings at the environment group-level, compl
 ## Known limitations
 
 - Currently the Agent Name returned in the Global Secure Access traffic logs is the agent's unique `schema name`.
-- Currently the block experience for Copilot Studio agents blocked by GSA shows a `502 Bad Gateway` for HTTP Actions or a `403 Forbidden` for connectors. This is a known issue, and improvements are coming soon.
+- Currently the block experience for Copilot Studio agents blocked by GSA shows a `502 Bad Gateway` for HTTP Actions or a `403 Forbidden` for connectors. This experience is a known issue, and improvements are coming soon.
 - Currently only the baseline profile is supported for enforcement, so network security policies are per-tenant.
-- Third-party DLP and ATP integrations with Global Secure Access, for example, Netskope, aren't supported.
+- GSA partner ecosystem integrations, for example, third-party Data Loss Prevention (DLP), aren't supported.
 - Copilot Studio Bing search network transactions not supported.
 - Limited connector support (see [supported connectors](#supported-connectors) for details).
 
@@ -111,7 +111,7 @@ The following connectors are currently supported with secure web and AI gateway 
 - Power Automate Management
 - Microsoft Translator V2
 - ServiceNow
-- Microsoft To-Do (Business)
+- Microsoft To-do (Business)
 - Power Apps Notification
 - Power Platform for Admins
 - Portfolio and Roadmap
