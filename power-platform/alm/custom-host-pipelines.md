@@ -22,7 +22,7 @@ Power Platform administrators can create one or more pipelines, associate any nu
 - All target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md).
 
 > [!TIP]
-> Tenant admins can enable automatic conversion of pipelines environments to [Managed Environments](../admin/managed-environment-overview.md).This ensures pipelines environments meet Microsoft Enterprise (ME) compliance standards automatically. To manage this setting, select Deployments, then Settings and turn the setting on. It's managed separately for each pipelines host.  
+> Tenant admins can enable automatic conversion of pipelines environments to [Managed Environments](../admin/managed-environment-overview.md).This ensures pipelines environments meet Microsoft compliance standards automatically. To manage this setting, select Deployments, then Settings and turn the setting on. It's managed separately for each pipelines host.  
 
 ### Create or choose environments for pipelines
 
@@ -49,7 +49,7 @@ Power Platform and Dynamics 365 administrators can quickly create a custom host.
 2. Go to **Deployments** > **New custom host**, and create a new host environment. It's recommended to create a Production environment in the same region that your development, QA, and production environments.
 
 > [!IMPORTANT]
-> Target environments managed by this host will auto-convert to [Managed Environments](../admin/managed-environment-overview.md). This ensures environments used in pipelines meet Microsoft Enterprise (ME) compliance standards. To manage this setting, select Deployments, then Settings and select a host. 
+> Target environments managed by this host will auto-convert to [Managed Environments](../admin/managed-environment-overview.md). This ensures environments used in pipelines meet Microsoft compliance standards. To manage this setting, select Deployments, then Settings and select a host. 
 
 ### Install the pipelines application in your host environment
 
