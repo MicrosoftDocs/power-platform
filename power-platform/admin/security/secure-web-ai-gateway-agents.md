@@ -81,7 +81,7 @@ To configure Global Secure Access settings at the environment group-level, compl
 
  ## Next steps
 
-[Configure security controls in the Global Secure Access portal](https://learn.microsoft.com/entra/global-secure-access/how-to-secure-web-ai-gateway-agents)
+[Configure security controls in the Global Secure Access portal](/entra/global-secure-access/how-to-secure-web-ai-gateway-agents)
 
 ## Known limitations
 
