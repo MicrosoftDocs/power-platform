@@ -6,7 +6,7 @@ author: caburk
 ms.author: caburk
 ms.reviewer: matp
 ms.topic: how-to
-ms.date: 07/14/2025
+ms.date: 11/13/2025
 ms.custom: template-how-to
 ---
 # Associate a pipeline with development environments in a group
@@ -22,7 +22,7 @@ The default deployment pipeline rule for environment groups is designed to mitig
 - All target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md).
 
 > [!IMPORTANT]
-  > Source and target environments used in the default pipelines will be automatically enabled as Managed Environments. 
+  > Source and target environments used in the default pipelines are automatically enabled as Managed Environments. 
 
 For more information about environment group rules, go to [environment group rules](../admin/environment-groups.md#rules).
 
@@ -42,7 +42,7 @@ The default deployment pipeline rule is now configured for development and sandb
 
   > [!IMPORTANT]
   > - Ensure that all users of the pipeline have access to the selected pipelines host. The easiest way to do this is to create a Microsoft Entra team on the pipelines host that maps to a Microsoft Entra security group containing the makers. This ensures users can obtain just-in-time (JIT) access to the pipelines host and be part of the 'default team,' thus gaining the 'Deployment Pipeline User' role.
-  > - For the purposes of the default deployment pipeline rule, "development" environments are defined as **developer** or **sandbox** environments. The chosen pipeline will only be associated with environments of these types. This requirement prevents production environments from being unintentionally specified as development environments in the pipelines host. Environments can only be specified as development or target environments in a pipelines host, they can't be both.
+  > - For the purposes of the default deployment pipeline rule, "development" environments are defined as **developer** or **sandbox** environments. The chosen pipeline is only associated with environments of these types. This requirement prevents production environments from being unintentionally specified as development environments in the pipelines host. Environments can only be specified as development or target environments in a pipelines host, they can't be both.
 
 ## Related content
 
