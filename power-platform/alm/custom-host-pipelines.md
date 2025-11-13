@@ -21,6 +21,9 @@ Power Platform administrators can create one or more pipelines, associate any nu
 - You must have a Power Platform administrator or Dataverse system administrator role to install the pipelines application.
 - All target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md).
 
+> [!TIP]
+> Tenant admins can enable automatic conversion of pipelines environments to [Managed Environments](../admin/managed-environment-overview.md).This ensures pipelines environments meet Microsoft Enterprise (ME) compliance standards automatically. To manage this setting, select Deployments, then Settings and turn the setting on. It's managed separately for each pipelines host.  
+
 ### Create or choose environments for pipelines
 
 Before you begin, you need to identify which environments participate in pipelines. Be sure to enable all target environments as [Managed Environments](../admin/managed-environment-overview.md). Managed Environments isn't required for the pipelines host or developer environments.
@@ -39,11 +42,20 @@ Before you begin, you need to identify which environments participate in pipelin
 > [!TIP]
 > Use environment names that indicate their purpose. For example, *Contoso Host*, *Contoso Development*, *Contoso QA*, and so forth.
 
-## Install the pipelines application in your host environment
+## Create a new custom host
+Power Platform and Dynamics 365 administrators can quickly create a custom host. 
 
-This step is only required for the initial host setup. You might skip to the next section if you already have access to a host environment where you'll create pipelines.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
+2. Go to **Deployments** > **New custom host**, and create a new host environment. It's recommended to create a Production environment in the same region that your development, QA, and production environments.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to **Environments** > **New**, and create a new environment with a Dataverse database. Be sure to choose the same region that your development, QA, and production environments are created in.
+> [!IMPORTANT]
+> Target environments managed by this host will auto-convert to [Managed Environments](../admin/managed-environment-overview.md). This ensures environments used in pipelines meet Microsoft Enterprise (ME) compliance standards. To manage this setting, select Deployments, then Settings and select a host. 
+
+### Install the pipelines application in your host environment
+
+Use this option if you want to use an existing environment as your pipelines host or if you are not a Power Platform or Dynamics 365 adminstrator. You must be a system admininstrator for this environment.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to **Environments** select an existing environment with a Dataverse database. 
 2. Install the **Power Platform Pipelines** application in your host environment by selecting the host environment, then select **Resources** > **Dynamics 365 apps**.
 3. Select **Install app** and scroll down within the right-side panel until you find **Power Platform Pipelines**.
 4. Select **Next**, if you agree, accept the terms, and then select **Install**.
