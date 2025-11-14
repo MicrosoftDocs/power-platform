@@ -13,13 +13,17 @@ contributors:
   - fgomulka
 ---
 
-# Configure the Secure Web and AI Gateway for agents (Preview)
+# Configure the Secure Web and AI Gateway for agents (preview)
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 As organizations integrate autonomous and interactive AI agents to perform tasks previously handled by humans, administrators may notice a reduction in visibility and control compared to the traditional user network security policy and management experience.
 
 With Global Secure Access (GSA) for Agents, you can now regulate how these agents use knowledge, tools, and actions to access other resources in a way that's similar to how you regulate users.
 
 :::image type="content" source="media/agent-traffic-flow.png" alt-text="Diagram showing agent traffic flowing through Global Secure Access to protected resources.":::
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Key benefits
 
