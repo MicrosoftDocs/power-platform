@@ -63,7 +63,6 @@ Power Platform inventory is available through multiple interfaces and APIs, allo
 - **Manage > Inventory**: The main inventory page provides a unified view of all resources across your tenant.
 
 - **Manage > Copilot Studio**: This page offers a focused view of agents and agent flows.
-- (Microsoft 365 Copilot).
 
 - **Manage > Power Apps > Inventory tab**: This tab offers a focused view of your apps, including those made in Power Apps (canvas apps, model-driven apps, and code apps) and in Microsoft 365 Copilot's App Builder agent.
   
