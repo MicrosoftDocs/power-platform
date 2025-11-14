@@ -4,7 +4,7 @@ description: Learn about Usage in the Power Platform admin center.
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/13/2025
+ms.date: 11/14/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -29,7 +29,7 @@ Use the following steps to view the page.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Usage**.
+1. In the **Manage** pane, select **Usage**. The **Usage** page is displayed.
 
 ## Usage insights
 The **Usage** page in the Power Platform admin center helps you identify the top resources in your organization that are driving success and spot adoption trends, such as usage spikes for apps, flows, and agents. 
