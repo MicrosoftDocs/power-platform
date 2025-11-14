@@ -4,7 +4,7 @@ description: Learn more about how to create alerts to monitor your resources in 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/10/2025
+ms.date: 11/14/2025
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: sericks
@@ -66,52 +66,57 @@ If you selected to receive email notifications when any resource triggers an ale
 
 In the email notification, select **Go to Alert** to open a Power Platform page listing the triggered alerts, where you can see information on the triggered alert and what resources triggered it. When you select any of the resources in the triggered alert, a pane is displayed that shows time series information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
 
-## Predefined Alerts from Microsoft 
+## Predefined alerts from Microsoft 
 
 ### Overview
-Predefined alerts exist in Power Platform Monitor to help IT, Operations, and Center of Excellence teams find high-use apps, flows, and agents with degraded health. These provide the most value to customers that haven’t adopted custom alerts to monitor health for their organizations’ health metric thresholds. 
+Predefined alerts exist in Power Platform to help IT, operations, and center of excellence teams find high-use apps, flows, and agents with degraded health. Predefined alerts provide the most value to customers, who haven’t adopted custom alerts, to monitor their organization's health.
 
-### What are Predefined Alerts?
-Predefined alerts are created and defined by Microsoft to highlight resources with sub-optimal health. They have a tenant wide scope, so they monitor all resources of a specific type in your tenant. They are enabled by default, require no set up to start using them, and cannot be edited. Predefined alerts encourage customization; not only do they help users identify high-use resources with suboptimal operational health, they also help introduce and familiarize users with the concept of custom alerts. Consider creating a custom alert on some of these resources to proactively monitor them against custom thresholds that you’ve defined. 
+### What are predefined alerts?
+Predefined alerts are created and defined by Microsoft to highlight resources with sub-optimal health. They have a tenant-wide scope, so they monitor all resources of a specific type in your tenant. They are turned on by default, require no set up to start using them, and can't be edited. Predefined alerts encourage customization; not only do they help users identify high-use resources with suboptimal operational health, they also help introduce and familiarize users with the concept of custom alerts. Consider creating a custom alert on some of these resources to proactively monitor them against custom thresholds that you’ve defined. 
 
-The table below details what predefined alerts are supported today:
-| Product | Predefined Alert |
+The table below details what predefined alerts are supported today.
+
+| Product | Predefined alert |
 | ------- | ------- | 
-| Canvas apps | Availability of high-use canvas apps is under 90% |
-| Model-driven apps | Availability of high-use model-driven apps is under 90% |
-| Cloud flows | High-use cloud flows have a success rate under 90% |
-| Desktop flows | High-use desktop flows have a success rate under 90% |
-| Agents | High-use agents have a success rate under 90% |
+| Canvas apps | Availability of high-use canvas apps is under 90%. |
+| Model-driven apps | Availability of high-use model-driven apps is under 90%. |
+| Cloud flows | High-use cloud flows have a success rate under 90%. |
+| Desktop flows | High-use desktop flows have a success rate under 90%. |
+| Agents | High-use agents have a success rate under 90%. |
 
-### High-use Thresholds
-Predefined alerts are intended to highlight high-use resources in your tenant that are performing sub-optimally. Consequently, these alerts filter out resources that have a low session or run count so that you only see relevant resources under your purview. The thresholds for each supported product type are in the table below and cannot be changed. 
+### High-use thresholds
+Predefined alerts are intended to highlight high-use resources in your tenant that are performing sub-optimally. These alerts filter out resources that have a low session or run count so that you only see relevant resources. The thresholds for each supported product type are in the following below and can't be changed. 
 
-| Product | Usage Threshold |
+| Product | Usage threshold |
 | ------- | ------- | 
-| Canvas apps | Recent app launches >= 100 |
-| Model-driven apps | Recent app launches >= 100 |
-| Cloud flows | Daily run count >= 150 |
-| Desktop flows | Daily run count >= 100 |
-| Agents | Recent agent sessions >= 200 |
+| Canvas apps | Recent app launches are greater than or equal to 100. |
+| Model-driven apps | Recent app launches are greater than or equal to 100. |
+| Cloud flows | Daily run count is greater than or equal to 150. |
+| Desktop flows | Daily run count is greater than or equal to 100. |
+| Agents | Recent agent sessions are greater than or equal to 200. |
 
-### How It Works
-Go to admin.powerplatform.microsoft.com and navigate to the Monitor Overview page. Once on the page, you’ll see two cards:
+### How it works
+Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and navigate to the **Monitor** > **Overview** page. Once on the page, you see two cards.
+
 :::image type="content" source="media/monitor-overview-page.jpg" alt-text="Monitor overview page that displays two cards. One summarizes the state of your triggered custom alerts, the other summarizes the state of your triggered predefined alerts." lightbox="media/monitor-overview-page.jpg":::
 
-The “Triggered custom alerts” card on the left shows you the state of your triggered custom alerts in your tenant. These are alerts that you have defined. The visual in this card breaks down your triggered custom alerts by severity level, and the “Top priorities” section below calls out which of your alerts have triggered most recently. Clicking on those alerts will bring you to the triggered alert experience for that custom alert. 
+The **Triggered custom alerts** card on the left shows you the state of your triggered custom alerts in your tenant. These are alerts that you have defined. The visual in this card breaks down your triggered custom alerts by severity level, and the **Top priorities** section below calls out which of your alerts have triggered most recently. Select those alerts to see the triggered alert experience for that custom alert. 
 
-The “Triggered alerts for high-use items” card on the right shows you which of the predefined alerts have triggered. Similarly, the visual at the top of the card shows a breakdown of the predefined alerts by product type. Clicking into one of the alerts in the “Top alerts from Microsoft section” will bring you this experience:
+The **Triggered alerts for high-use items** card on the right shows you which of the predefined alerts have triggered. Similarly, the visual at the top of the card shows a breakdown of the predefined alerts by product type. Select one of the alerts in the **Top alerts from Microsoft** section to view this experience:
+
 :::image type="content" source="media/triggered-predefined-alert.jpg" alt-text="Image that shows the triggered predefined alert experience." lightbox="media/triggered-predefined-alert.jpg":::
 
-As an example, here you can see all the high-use cloud flows in your tenant that have triggered this alert, regardless of whether the flow is a managed environment or not. Like the custom triggered alert experience, clicking on a specific flow in this list will bring out a panel that shows you how each metric for that flow has trended over time. 
-:::image type="content" source="media/monitor-resource-panel.jpg" alt-text="Monitor resource panel that shows metrics and how they've trended over time for a given resource." lightbox="media/monitor-resource-panel.jpg":::
+As an example, here you can see all the high-use cloud flows in your tenant that have triggered this alert, regardless of whether the flow is a Managed Environment or not. Like the custom triggered alert experience, selecting a specific flow in this list displays a pane that shows you how each metric for that flow has trended over time. 
 
-You can also see a list of your predefined alerts and view their details in the Alerts section of Monitor. Click on Alerts and scroll to the bottom of the page to view the predefined alerts. 
+:::image type="content" source="media/monitor-resource-panel.jpg" alt-text="Monitor resource pane that shows metrics and how they've trended over time for a given resource." lightbox="media/monitor-resource-panel.jpg":::
+
+You can also see a list of your predefined alerts and view their details in the **Alerts** section of the **Monitor** area. Select **Alerts** and scroll to the bottom of the page to view the predefined alerts. 
+
 :::image type="content" source="media/predefined-alert-list.jpg" alt-text="This image shows predefined alerts listed alongside your custom alerts under Alert Rules in the Alerts section of Monitor" lightbox="media/predefined-alert-list.jpg":::
 
+Selecting the three dots next to the alert and then **Details** displays a pane that shows how the predefined alert has been configured. These alerts can't be edited or deleted. 
 
-Clicking on the three dots next to the alert and then on “Details” will bring out a panel that shows how the predefined alert has been configured. As a reminder, these alerts cannot be edited or deleted. 
-:::image type="content" source="media/predefined-alert-details.jpg" alt-text="This image shows how if you click on details on a predefined alert in the Alert rules page, it'll bring out a panel that shows you details on how this alert is defined." lightbox="media/predefined-alert-list.jpg":::
+:::image type="content" source="media/predefined-alert-details.jpg" alt-text="This image shows how if you select Details on a predefined alert in the Alert rules page, it displays a pane that shows you details on how this alert is defined." lightbox="media/predefined-alert-list.jpg":::
 
 ## Frequently asked questions (FAQs)
 
