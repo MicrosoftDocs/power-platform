@@ -35,9 +35,9 @@ Use the following steps to view the page.
 The **Usage** page in the Power Platform admin center helps you identify the top resources in your organization that are driving success and spot adoption trends, such as usage spikes for apps, flows, and agents. 
 
 At the top of the page, a summary view showcases the adoption trends over time, as well as the resources that drive the most value. The summary view shows the following information:
-- **Top Apps** by user activity
-- **Top Flows** by run volume
-- **Top Agents** by session count
+- **Top apps by user** shows user activity
+- **Top flows by runs** shows run volume
+- **Top agents by sessions** shows session count
 
 Below the summary view, detailed tables provide sortable views of all apps, flows, and agents that are in use in your organization. Sort by users for apps, runs for flows, and sessions for agents to quickly identify trends and top performers.
 
