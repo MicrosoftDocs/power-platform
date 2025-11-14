@@ -462,12 +462,20 @@
                   href: monitoring/monitor-power-automate.md
                 - name: For Copilot Studio
                   href: monitoring/monitor-copilot-studio.md
+        - name: Usage and inventory
+          items:
+            - name: Discover what's driving engagement with the Usage page (preview)
+              href: usage.md
+            - name: Inventory
+              items:
+                - name: Power Platform inventory (preview)
+                  href: power-platform-inventory.md
+                - name: Power Platform inventory API (preview)
+                  href: inventory-api.md
         - name: Copilot
           items:
             - name: Track, manage, and scale Copilot adoption
               href: copilot/copilot-hub.md
-            - name: View agent inventory (preview)
-              href: tenant-wide-agent-inventory.md
         - name: Security
           items:
             - name: Security overview
@@ -726,12 +734,6 @@
                   href: powerapps-analytics-reports.md
                 - name: Power Automate analytics
                   href: power-automate-analytics-reports.md
-            - name: Inventory (preview)
-              items:
-                - name: Power Platform inventory
-                  href: power-platform-inventory.md
-                - name: Power Platform inventory API
-                  href: inventory-api.md
             - name: Data export (preview)
               items:
                 - name: Export Power Apps inventory and usage data
