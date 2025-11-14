@@ -21,7 +21,7 @@ Learn more about the Power Platform admin center in the following sections:
 - [Understand the user interface of the new admin center](#understand-the-user-interface-of-the-new-admin-center)
 - [Understand the user interface of the classic admin center](#understand-the-user-interface-of-the-classic-admin-center)
 
-## Watch a video about the new admin center
+## Watch a video about the admin center
 
  > [!VIDEO 1d442a39-f7ce-438f-a53e-b7c23ce33e25]
 
