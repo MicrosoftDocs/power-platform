@@ -135,8 +135,6 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - Encodian - Convert
     - Encodian - PDF
     - Encodian - Word
-    :::column-end:::
-    :::column:::
     - Event Hubs
     - Experlogix Smart Flows
     - Formstack Forms
@@ -152,6 +150,8 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - JotForm
     - Jotform Enterprise
     - kintone
+    :::column-end:::
+    :::column:::
     - Luware Nimbus
     - Microsoft 365 message center
     - Microsoft Bookings
@@ -168,8 +168,6 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - Muhimbi PDF
     - NetDocuments
     - Notifications
-    :::column-end:::
-    :::column:::
     - Office 365 Groups
     - Office 365 Outlook
     - OneDrive
