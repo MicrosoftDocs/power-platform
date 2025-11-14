@@ -150,10 +150,10 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - JotForm
     - Jotform Enterprise
     - kintone
-    :::column-end:::
-    :::column:::
     - Luware Nimbus
     - Microsoft 365 message center
+    :::column-end:::
+    :::column:::
     - Microsoft Bookings
     - Microsoft Copilot Studio
     - Microsoft Dataverse
