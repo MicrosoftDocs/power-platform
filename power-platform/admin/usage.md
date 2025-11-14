@@ -1,5 +1,5 @@
 ---
-title: Discover what's driving engagement in the Power Platform with Usage
+title: Discover what's driving engagement in the Power Platform with the Usage page
 description: Learn about Usage in the Power Platform admin center.
 author: amchern
 ms.component: pa-admin
@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
 ---
 
-# Discover what's driving engagement in the Power Platform with Usage (preview)
+# Discover what's driving engagement in the Power Platform with the Usage page (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 **Usage** in the Power Platform admin center is a centralized location for tracking engagement and adoption across Power Apps, Power Automate, and Copilot Studio agents. This experience spotlights high-impact resources to help organizations identify what's driving value and where to focus investment.
