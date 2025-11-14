@@ -152,9 +152,9 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - kintone
     - Luware Nimbus
     - Microsoft 365 message center
+    - Microsoft Bookings
     :::column-end:::
     :::column:::
-    - Microsoft Bookings
     - Microsoft Copilot Studio
     - Microsoft Dataverse
     - Microsoft Defender ATP
@@ -209,3 +209,5 @@ The following connectors currently support secure web and AI gateway Copilot Stu
 :::row-end:::
 
 You can find more information about individual connectors at [Connector reference overview](/connectors/connector-reference/).
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
