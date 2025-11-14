@@ -18,6 +18,9 @@ contributors:
 
 **Usage** in the Power Platform admin center is a centralized location for tracking engagement and adoption across Power Apps, Power Automate, and Copilot Studio agents. This experience spotlights high-impact resources to help organizations identify what's driving value and where to focus investment.
 
+> [!NOTE]
+> This feature is in the process of rolling out and might not be available in your region yet.
+
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Prerequisites
