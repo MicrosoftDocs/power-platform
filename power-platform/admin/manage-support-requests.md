@@ -1,6 +1,6 @@
 ---
 title: Manage support requests
-description: Use the Support experience to contact a Microsoft support representative to get resolution for your issue.
+description: Enter a description.
 author: johnehart
 ms.component: pa-admin
 ms.topic: how-to
