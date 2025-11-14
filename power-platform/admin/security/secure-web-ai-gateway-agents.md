@@ -51,7 +51,7 @@ When an agent makes a request to external resources, the Global Secure Access se
 Configuring network controls for Copilot Studio agents involves several steps:
 
 1. [Enable Network Controls for Copilot Studio Agents in Power Platform environment settings](#enable-network-controls-for-copilot-studio-agents)
-1. [Create security policies for Copilot Studio traffic](#next-steps)
+1. [Create security policies for Copilot Studio traffic](#next-step)
 
 ## Enable network controls for Copilot Studio Agents
 
