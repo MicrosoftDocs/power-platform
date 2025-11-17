@@ -4,16 +4,20 @@ description: Learn how to migrate the dual-write app to strengthen communication
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/28/2025
+ms.date: 11/17/2025
 author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.contributors:
+  - kolhemugdha
   - ritesp
   - ashishjh
   - laswenka
+contributors:
+  - mugdhakolhe29
+
 ---
 
 # Migrate the dual-write app to strengthen communication from finance and operations to Dataverse  
