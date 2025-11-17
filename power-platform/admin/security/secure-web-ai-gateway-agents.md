@@ -120,8 +120,6 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - Blackbaud Altru Constituent
     - Blackbaud RENXT Gifts
     - Blackbaud SKY Add-ins
-    - Box MCP Server
-    - Cards for Power Apps
     - ClickSend SMS
     - Cloudmersive Document Conversion
     - Computer Vision API
@@ -157,7 +155,6 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     :::column:::
     - Microsoft Copilot Studio
     - Microsoft Dataverse
-    - Microsoft Defender ATP
     - Microsoft Entra ID
     - Microsoft Forms
     - Microsoft Learn Docs MCP
