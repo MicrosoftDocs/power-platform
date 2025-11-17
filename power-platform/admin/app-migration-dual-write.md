@@ -55,6 +55,10 @@ Dual-write now uses this abstraction. All recent quality updates contain this en
 
     External solutions and processes that rely on the legacy AppID of **00000015-0000-0000-c000-000000000000**&mdash;especially those modifying system fields like **CreatedBy** or **ModifiedBy** in Dataverse&mdash;may experience unexpected behavior. These fields aren't recommended for logical operations. If such dependencies exist, remap them to the new AppID or a designated user to ensure continuity.
 
+1. **Customizations on the application not supported**
+
+Customizations on the Microsoft-provided application, such as adding or modifying security roles or changing core app behavior, are not supported. Customers should avoid extending or altering the shipped app components and instead implement required changes through supported extensibility patterns outside the managed application.
+
 ## Call for action 
 Customers are advised to upgrade their dual-write environments to the latest available versions of the Dataverse App Core solutions if their current solution version is at or below the specified thresholds. This ensures compatibility with upcoming platform changes and continued support.
 
@@ -66,6 +70,13 @@ Customers are advised to upgrade their dual-write environments to the latest ava
 If your current solution version is above the specified threshold, there's no immediate need to upgrade. However, upgrading to the latest version is still recommended to ensure optimal compatibility and support.
 
 Customers with custom solutions that depend on the legacy AppID **00000015-0000-0000-c000-000000000000**, or the associated user reflected in the **ModifiedBy** field in Dataverse should reconfigure their solutions to use the new AppID or user.
+
+If you see any error saying 'Unable to write' follow below steps to install the Finance and Operations Virtual Entity solution
+1. Go to https://make.powerapps.com and select the target environment, then click Solutions.
+2. Click Open AppSource.
+3. In the search box, type “Virtual”.
+4. Locate Finance and Operations Virtual Entity and click Get it now.
+5. Follow the on-screen prompts to install this solution into your environment.
 
 For backward compatibility, filters can be applied to support both legacy and new AppIDs and users. This approach helps ensure a smoother transition and minimizes disruption to business processes.
 
