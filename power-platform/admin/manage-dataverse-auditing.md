@@ -350,6 +350,10 @@ System administrators or customizers can change the default audit settings for t
 
 Learn more in [Dataverse developer guide: Configure auditing > Configure tables and columns](/power-apps/developer/data-platform/auditing/configure#configure-tables-and-columns).
 
+> [!NOTE]
+> When auditing is turned off for a column, the before-and-after values will be sent as an "*" to [Purview activity logging](https://learn.microsoft.com/power-platform/admin/enable-use-comprehensive-auditing).
+
+
 ### Turn on or off auditing for Choice data type's original label 
 By default, the current label description of the **Choice** data type is shown in the audit logs. For example, suppose you have a choice column for **color** and the label description can be _red_, _white_, and _blue_. When a user selects _red_ and updates the record, the audit record shows that _red_ was selected. If the label description is later changed to _pink_ in the choice data type, the audit record displays _pink_.
 
