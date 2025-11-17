@@ -26,7 +26,7 @@ For deprecation information of other products, see [Other deprecation articles](
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
 ## Deprecation of the Classic look for model-driven apps
-Starting April 1, 2026, makers will no longer be able to switch to the Classic look in model-driven apps. All apps will use the modern refreshed look by default.
+Starting in April 2026, makers will no longer be able to switch to the Classic look in model-driven apps. All apps will use the modern refreshed look by default.
 
 ### Why is this needed?
 We are standardizing the experience across model-driven apps to deliver a consistent, accessible, and modern interface, ensuring all customers benefit from ongoing UX improvements. The modern refreshed look is also required to access AI features. 
