@@ -51,15 +51,15 @@ Dual-write now uses this abstraction. All recent quality updates contain this en
 
 ## Impact for dual-write customers
 
-1. **Dependency with Microsoft-provided solutions**
+- **Dependency with Microsoft-provided solutions**
    
     Customers using older versions of Microsoft-provided dual-write solutions should validate upgrade paths before the September 10, 2025, deadline. While these solutions are designed to be backward compatible, customizations or applications built on older versions may require evaluation.
 
-1. **Custom solution dependency on application ID 00000015-0000-0000-c000-000000000000**
+- **Custom solution dependency on application ID 00000015-0000-0000-c000-000000000000**
 
     External solutions and processes that rely on the legacy AppID of **00000015-0000-0000-c000-000000000000**&mdash;especially those modifying system fields like **CreatedBy** or **ModifiedBy** in Dataverse&mdash;may experience unexpected behavior. These fields aren't recommended for logical operations. If such dependencies exist, remap them to the new AppID or a designated user to ensure continuity.
 
-1. **Customizations on the application aren't supported**
+- **Customizations on the application aren't supported**
 
     Customizations on the Microsoft-provided application, such as adding or modifying security roles or changing core app behavior, aren't supported. Customers should avoid extending or altering the shipped app components. Instead, customers should implement required changes through supported extensibility patterns outside the managed application.
 
