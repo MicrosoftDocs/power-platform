@@ -44,6 +44,9 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Report Viewer Export  |Exporting a report to different formats moves the data outside of the secure environment and is vulnerable to threats.  |
 |Report Viewer Render Image  |Logging multimedia assets that are shown when a report is displayed. They might contain critical customer information.  |
 
+> [!NOTE]
+> [Column-level secured fields](https://learn.microsoft.com/power-platform/admin/field-level-security) will be sent to Purview activity logging with an "*".
+
 ## Base schema
 
 Schemas define which fields are sent to the Microsoft Purview portal. Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to customer engagement apps. The Base schema contains the common fields.
