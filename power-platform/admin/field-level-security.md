@@ -151,6 +151,9 @@ _Composite columns_ include data from multiple columns. For example, the [`conta
 > [!NOTE]
 > Changes to column security require a browser refresh from the end user on the client (like a model-driven app) for the changes to take effect. This should be considered when dynamically adjusting access rules.
 
+## Activity logging data
+The column values in the before-and-after audit change events will show as "*" in the **Create** and **Update** [Purview activity logs](https://learn.microsoft.com/power-platform/admin/enable-use-comprehensive-auditing?tabs=new). 
+
 ### Related information
 
 [Enable or disable security for a column to control access](enable-disable-security-field.md)  
