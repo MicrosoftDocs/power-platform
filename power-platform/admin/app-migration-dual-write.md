@@ -75,13 +75,13 @@ If your current solution version is above the specified threshold, there's no im
 
 Customers with custom solutions that depend on the legacy AppID **00000015-0000-0000-c000-000000000000**, or the associated user reflected in the **ModifiedBy** field in Dataverse should reconfigure their solutions to use the new AppID or user.
 
-If you see any error saying, "Unable to write," use the following steps to install the finance and operations virtual entity solution.
+If you see any error saying, "Unable to write," use the following steps to install the **Finance and Operations Virtual Entity** solution.
 
 1. Go to [Power Apps](https://make.powerapps.com) and select the target environment.
 1. Select **Solutions**.
 1. Select **Open AppSource**.
 1. In the search box, enter **Virtual**.
-1. Locate finance and operations virtual entity, and then select **Get it now**.
+1. Locate the **Finance and Operations Virtual Entity** solution, and then select **Get it now**.
 1. Follow the on-screen prompts to install this solution into your environment.
 
 For backward compatibility, filters can be applied to support both legacy and new AppIDs and users. This approach helps ensure a smoother transition and minimizes disruption to business processes.
