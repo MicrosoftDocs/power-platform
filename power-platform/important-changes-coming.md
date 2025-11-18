@@ -35,7 +35,7 @@ We are standardizing the experience across model-driven apps to deliver a consis
 There is no impact on app logic, data, or permissions. Existing apps will automatically display the modern look. The admin settings related to this feature will be removed.
 
 ### Replacement feature
-The modern, refreshed look is now the default experience for all model-driven apps. No action is required from makers or admins. For more information on this, see [Modern, refreshed look for model-driven apps](power-apps/user/modern-fluent-design).
+The modern, refreshed look is now the default experience for all model-driven apps. No action is required from makers or admins. For more information on this, see [Modern, refreshed look for model-driven apps](/power-apps/user/modern-fluent-design).
 
 ## Deprecation of create an app from an image or Figma file
 
