@@ -29,13 +29,13 @@ For deprecation information of other products, see [Other deprecation articles](
 Starting in April 2026, makers will no longer be able to switch to the classic look in model-driven apps. All apps will use the modern, refreshed look by default.
 
 ### Why is this needed?
-We are standardizing the experience across model-driven apps to deliver a consistent, accessible, and modern interface, ensuring all customers benefit from ongoing, user expereince improvements. The modern, refreshed look is also required to access AI features. 
+We are standardizing the experience across model-driven apps to deliver a consistent, accessible, and modern interface that ensures customers benefit from ongoing user experience improvements while unlocking AI-powered capabilities available only in the modern look.
 
 ### Impact
 There is no impact on app logic, data, or permissions. Existing apps will automatically display the modern look. The admin settings related to this feature will be removed.
 
 ### Replacement feature
-The modern, refreshed look is now the default experience for all model-driven apps. No action is required from makers or admins. For guidance on the modern look and best practices, see [Article name](/power-apps/maker/model-driven-apps/modern-look).
+The modern, refreshed look is now the default experience for all model-driven apps. No action is required from makers or admins. For more information on this, see [Modern, refreshed look for model-driven apps](power-apps/user/modern-fluent-design).
 
 ## Deprecation of create an app from an image or Figma file
 
