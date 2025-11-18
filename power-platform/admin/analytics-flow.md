@@ -3,14 +3,15 @@ title: View analytics for Power Automate cloud flows
 description: Admins can view Microsoft Power Automate analytics in the Power Platform admin center, including reports on run data of flows, flows created, usage, and errors.
 author: Zeffin 
 ms.topic: how-to
-ms.date: 07/15/2025
+ms.date: 11/18/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
- - isaacwinoto
+  - nordine-marie
+  - isaacwinoto
 ms.custom:
   - NewPPAC
   - sfi-ga-nochange
@@ -118,9 +119,9 @@ To view reports in another environment:
 
 ## Known limitations
 
-- Solution-aware flows: Flows created as part of a solution are not included in analytics reports.
-- Data refresh cycle: Reports refresh approximately every 24 hours; real-time data is not available.
-- Exported reports: Some fields, such as creator’s email address and flow display name, may appear blank in exported reports because these values are resolved at runtime.
-- Visualization expansion: When expanding visualizations, certain details—such as flow display name, environment display name, or user information—may appear as raw identifiers instead of friendly names.
+- **Solution-aware flows**: Flows created as part of a solution aren't included in analytics reports.
+- **Data refresh cycle**: Reports refresh approximately every 24 hours; real-time data isn't available.
+- **Exported reports**: Some fields, such as creator’s email address and flow display name, may appear blank in exported reports because these values are resolved at runtime.
+- **Visualization expansion**: When expanding visualizations, certain details—such as flow display name, environment display name, or user information may appear as raw identifiers instead of friendly names.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
