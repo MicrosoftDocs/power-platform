@@ -162,15 +162,29 @@ View **menu items and access levels** (Read/Write) that contribute to license re
 
 ## Export to CSV
 
-You can export user data to a CSV by selecting the **Export to CSV** button located on the page.
+You can export user data to a CSV by selecting the **Export to CSV** button located on the page, then selecting either a **standard report** or a **detailed report**.
 
-> 🧾 The exported file contains only the following columns:
+### The standard report contains the following columns:
 >
 > - `TenantId`  
 > - `UserEmail`
 > - `UserId`
+> - `RequiredLicense(s)`
 > - `AssignedLicense(s)`
 > - `MissingLicense(s)`
+> - `RefreshedOn`  
+
+### The detailed report contains the following columns:
+>
+> - `TenantId`  
+> - `EnvironmentId`  
+> - `EnvironmentName`  
+> - `EnvironmentType`  
+> - `UserEmail`
+> - `UserId`
+> - `SecurityRole`  
+> - `RequiredLicense(s)`
+> - `AssignedLicense(s)`
 > - `RefreshedOn`  
 
 For full entitlement or role mapping details, use the views in Power Platform admin center.
