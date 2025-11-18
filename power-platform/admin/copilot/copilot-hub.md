@@ -102,7 +102,7 @@ Admins can view usage analytics for Copilot in Dynamics 365 Sales on the **Dynam
 # [Classic admin center](#tab/classic)
 
 > [!NOTE]
-> The **Copilot** area in classic admin center is only available for customers in sovereign clouds. For customers in the public cloud, an option is presented to switch to the [new admin center](new-admin-center.md) or go to the homepage.
+> The **Copilot** area in classic admin center is only available for customers in sovereign clouds. For customers in the public cloud, an option is presented to switch to the [new admin center](new-admin-center.md) or go to the **Home** page.
 
 ## Get ready to manage Copilot and agents
 
