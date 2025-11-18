@@ -4,7 +4,7 @@ description: Learn how to use the Monitor > Overview page to monitor and improve
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/10/2025
+ms.date: 11/18/2025
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
@@ -54,7 +54,7 @@ Admin experiences are available to Power Platform service and Dynamics 365 admin
 
 The purpose of the **Monitor** area of the Power Platform admin center is to bring attention to resources that have degraded operational health and highlight resources that have opportunities for improvement.  
 
-The cards on the Overview page highlight the state of your triggered custom and predefined [Alerts](/power-platform/admin/monitoring/alerts), highlighting what resource(s) are suffering from sub-optimal operational health and need your attention most.
+The cards on the **Overview** page highlight the state of your triggered custom and predefined [alerts](/power-platform/admin/monitoring/alerts), highlighting what resources are suffering from sub-optimal operational health and need your attention most.
 
 ## Products
 
@@ -77,7 +77,7 @@ For resources that are available in the Monitor experience, you can learn more a
 | Power Automate | Desktop flows | Generally available | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Power Automate | Work queue | Public preview | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Dataverse | Dataverse | Not yet available | Not yet available |
-| Copilot Studio | Copilot Studio agents | Public Preview | Use the [Analytics tab](/microsoft-copilot-studio/analytics-overview) for a similar experience. |
+| Copilot Studio | Copilot Studio agents | Public preview | Use the [Analytics tab](/microsoft-copilot-studio/analytics-overview) for a similar experience. |
 | Dynamics 365 | Apps | Not yet available | Not yet available |
 
 ## Frequently asked questions
