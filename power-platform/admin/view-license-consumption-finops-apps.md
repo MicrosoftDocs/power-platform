@@ -2,7 +2,7 @@
 title: View license consumption for finance and operations apps
 description: Learn how to view your organization's user license consumption for finance and operations apps. 
 author: ceian
-ms.date: 08/18/2025
+ms.date: 11/18/2025
 ms.reviewer: sericks
 ms.topic: how-to
 ms.subservice:
