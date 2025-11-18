@@ -13,7 +13,7 @@ contributors:
   - fgomulka
 ---
 
-# Configure the Secure Web and AI Gateway for agents (preview)
+# Configure Global Secure Access, the Secure Web and AI Gateway for agents (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
