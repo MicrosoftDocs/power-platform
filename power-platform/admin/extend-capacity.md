@@ -47,11 +47,7 @@ After you determine how much storage you're using, use the following steps to ex
    > - Be sure to select the correct tenant to extend the storage capacity for 45 days. 
    > - You can extend capacity on your account a maximum of three times.
 
-1. In the navigation pane, select **Resources > Capacity**.
-
-1. If you're running low on storage capacity, you see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
-   
-   :::image type="content" source="media/storage-extend-capacity-banner.png" alt-text="Screenshot showing the extend capacity in Power Platform admin center." lightbox="media/storage-extend-capacity-banner.png":::
+1. In the **Licensing** page (**Licensing** > **Dataverse** > **Summary**), click the **Enable capacity extension** button.
 
 1. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
 
@@ -61,7 +57,7 @@ After you determine how much storage you're using, use the following steps to ex
 
 1. A banner displays that the temporary capacity extension is now active. 
 
-  After turning on the extension, for the next 45 days the extra capacity appears in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
+  After turning on the extension, for the next 45 days the extra capacity appears in the Power Platform admin center **Licensing** page (**Licensing** > **Dataverse** > **Summary**).
 
 ## What happens after a capacity extension expires in 45 days?
 
