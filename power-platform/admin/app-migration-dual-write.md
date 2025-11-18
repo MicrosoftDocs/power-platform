@@ -4,16 +4,20 @@ description: Learn how to migrate the dual-write app to strengthen communication
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/28/2025
+ms.date: 11/17/2025
 author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.contributors:
+  - kolhemugdha
   - ritesp
   - ashishjh
   - laswenka
+contributors:
+  - mugdhakolhe29
+
 ---
 
 # Migrate the dual-write app to strengthen communication from finance and operations to Dataverse  
@@ -47,13 +51,17 @@ Dual-write now uses this abstraction. All recent quality updates contain this en
 
 ## Impact for dual-write customers
 
-1. **Dependency with Microsoft-provided solutions**
+- **Dependency with Microsoft-provided solutions**
    
     Customers using older versions of Microsoft-provided dual-write solutions should validate upgrade paths before the September 10, 2025, deadline. While these solutions are designed to be backward compatible, customizations or applications built on older versions may require evaluation.
 
-1. **Custom solution dependency on application ID 00000015-0000-0000-c000-000000000000**
+- **Custom solution dependency on application ID 00000015-0000-0000-c000-000000000000**
 
     External solutions and processes that rely on the legacy AppID of **00000015-0000-0000-c000-000000000000**&mdash;especially those modifying system fields like **CreatedBy** or **ModifiedBy** in Dataverse&mdash;may experience unexpected behavior. These fields aren't recommended for logical operations. If such dependencies exist, remap them to the new AppID or a designated user to ensure continuity.
+
+- **Customizations on the application aren't supported**
+
+    Customizations on the Microsoft-provided application, such as adding or modifying security roles or changing core app behavior, aren't supported. Customers should avoid extending or altering the shipped app components. Instead, customers should implement required changes through supported extensibility patterns outside the managed application.
 
 ## Call for action 
 Customers are advised to upgrade their dual-write environments to the latest available versions of the Dataverse App Core solutions if their current solution version is at or below the specified thresholds. This ensures compatibility with upcoming platform changes and continued support.
@@ -66,6 +74,15 @@ Customers are advised to upgrade their dual-write environments to the latest ava
 If your current solution version is above the specified threshold, there's no immediate need to upgrade. However, upgrading to the latest version is still recommended to ensure optimal compatibility and support.
 
 Customers with custom solutions that depend on the legacy AppID **00000015-0000-0000-c000-000000000000**, or the associated user reflected in the **ModifiedBy** field in Dataverse should reconfigure their solutions to use the new AppID or user.
+
+If you see any error saying, "Unable to write," use the following steps to install the **Finance and Operations Virtual Entity** solution.
+
+1. Go to [Power Apps](https://make.powerapps.com) and select the target environment.
+1. Select **Solutions**.
+1. Select **Open AppSource**.
+1. In the search box, enter **Virtual**.
+1. Locate the **Finance and Operations Virtual Entity** solution, and then select **Get it now**.
+1. Follow the on-screen prompts to install this solution into your environment.
 
 For backward compatibility, filters can be applied to support both legacy and new AppIDs and users. This approach helps ensure a smoother transition and minimizes disruption to business processes.
 
