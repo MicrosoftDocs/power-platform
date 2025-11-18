@@ -102,106 +102,53 @@ The following connectors currently support secure web and AI gateway Copilot Stu
 
 :::row:::
     :::column:::
-    - Amazon S3
-    - Approvals
-    - ArcGIS
-    - Azure AD App Registrations
-    - Azure AI Document Intelligence (form recognizer)
-    - Azure AI Foundry Agent Service
-    - Azure AI Foundry Inference
-    - Azure Cognitive Service for Language
-    - Azure Communication Services SMS
-    - Azure Communication Services SMS Events
-    - Azure Data Factory
-    - Azure Log Analytics Data Collector
-    - Azure Table Storage
-    - Azure VM
-    - Bitly
-    - Blackbaud Altru Constituent
-    - Blackbaud RENXT Gifts
-    - Blackbaud SKY Add-ins
-    - ClickSend SMS
-    - Cloudmersive Document Conversion
-    - Computer Vision API
-    - Converter by Power2Apps
-    - Copilot for Finance
-    - Databricks
-    - Defender for Cloud Apps
+    - Office 365 Groups
+    - Microsoft Teams
+    - OneDrive for Business
+    - Microsoft Dataverse
+    - Power Apps for Makers
+    - Microsoft Forms
+    - Power BI
+    - Planner
+    - Power Automate Management
+    - Microsoft Translator V2
+    - Microsoft To-Do (Business)
+    - Power Apps Notification
+    - Power Platform for Admins
     - Desktop flows
-    - Docusign Demo
-    - Egnyte
-    - Encodian - Convert
-    - Encodian - PDF
-    - Encodian - Word
-    - Event Hubs
-    - Experlogix Smart Flows
-    - Formstack Forms
-    - Freshdesk
-    - Freshservice
-    - Google Contacts
-    - Google Drive
-    - Google Tasks
-    - Hash Generator (Independent Publisher)
-    - Hashify (Independent Publisher)
-    - iAuditor
+    - Power Apps for Admins
+    - Office 365 Outlook
+    - Power Automate for Admins
+    - Shifts for Microsoft Teams
+    - Project Online
+    - Slack
     - Jira
-    - JotForm
-    - Jotform Enterprise
-    - kintone
-    - Luware Nimbus
-    - Microsoft 365 message center
-    - Microsoft Bookings
+    - Azure Table Storage
+    - Microsoft Copilot Studio
     :::column-end:::
     :::column:::
-    - Microsoft Copilot Studio
-    - Microsoft Dataverse
-    - Microsoft Entra ID
-    - Microsoft Forms
-    - Microsoft Learn Docs MCP
-    - Microsoft Loop
-    - Microsoft School Data Sync V2
-    - Microsoft Teams
-    - Microsoft To-do (Business)
-    - Muhimbi PDF
-    - NetDocuments
-    - Notifications
-    - Office 365 Groups
-    - Office 365 Outlook
-    - OneDrive
-    - OneDrive for Business
-    - Outlook Tasks
-    - PagerDuty
-    - Partner Center Referrals
-    - Plumsail Actions
-    - Planner
-    - Portfolio and Roadmap
-    - Power Apps for Admins
-    - Power Apps for Makers
-    - Power Apps Notification
-    - Power Apps Notification V2
-    - Power Automate for Admins
-    - Power Automate Management
-    - Power BI
-    - Power Platform for Admins
-    - Power Platform for Admins V2
-    - Project Online
-    - Redmine
-    - SendGrid
-    - ServiceNow
-    - Shifts for Microsoft Teams
-    - Slack
     - Smartsheet
-    - Stripe
-    - Survey123
-    - Team Forms
-    - Todoist
-    - Trello
-    - Twilio
-    - UiPath Orchestrator
-    - Updates App (Microsoft 365)
-    - Vena Solutions
-    - WordPress
-    - YouTube
+    - Google Drive
+    - OneDrive
+    - Azure Data Factory
+    - Microsoft Learn Docs MCP
+    - Databricks
+    - Microsoft Defender ATP
+    - iAuditor
+    - Azure Log Analytics Data Collector
+    - Blackbaud Altru Constituent
+    - Partner Center Referrals
+    - Azure AI Foundry Agent Service
+    - Azure AI Foundry Inference
+    - Copilot for Finance
+    - Blackbaud RENXT Gifts
+    - Blackbaud SKY Add-ins
+    - Luware Nimbus
+    - Box MCP Server
+    - Impower ERP
+    - Databricks
+    - Amazon S3
+    - Azure Cognitive Service for Language
     :::column-end:::
 :::row-end:::
 
