@@ -204,7 +204,7 @@ You can copy the license summary to your clipboard by selecting the **Summarize*
 
 - Assign licenses to users with PowerShell automation for [bulk user provisioning](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 - Align license assignment with actual usage telemetry, not job titles.  
-- Use version 10.0.44 or later to validate roles using the [User security governance](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) feature.
+- Use version 10.0.45 or later to validate roles using the [User security governance](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview) feature.
 - Review monthly and remove [dormant user security accounts in finance and operations](https://community.dynamics.com/blogs/post/?postid=164a42b4-fbf7-43ea-b4db-a07733b8bafb).
 - Coordinate with procurement to align purchases with required licenses needed for users.
 
@@ -217,5 +217,7 @@ You can copy the license summary to your clipboard by selecting the **Summarize*
 
 - [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544)
 - [User security governance overview](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-overview)
+- [Prepare for finance and operations apps user license validation](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/prepare-for-user-validation)
 - [Security governance FAQ](https://go.microsoft.com/fwlink/?linkid=2319108)  
 - [Assign Microsoft 365 licenses to user accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell)
+
