@@ -122,6 +122,6 @@ To view reports in another environment:
 - **Solution-aware flows**: Flows created as part of a solution aren't included in analytics reports.
 - **Data refresh cycle**: Reports refresh approximately every 24 hours; real-time data isn't available.
 - **Exported reports**: Some fields, such as creator’s email address and flow display name, may appear blank in exported reports because these values are resolved at runtime.
-- **Visualization expansion**: When expanding visualizations, certain details—such as flow display name, environment display name, or user information may appear as raw identifiers instead of friendly names.
+- **Visualization expansion**: When expanding visualizations, certain details&mdash;such as flow display name, environment display name, or user information&mdash;may appear as raw identifiers instead of friendly names.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
