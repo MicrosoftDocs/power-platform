@@ -61,11 +61,7 @@ After you determine how much storage you're using, use the following steps to ex
 
 1. A banner displays that the temporary capacity extension is now active. 
 
-   :::image type="content" source="media/storage-extend-capacity-success.png" alt-text="Screenshot showing a successful tenant capacity extension." lightbox="media/storage-extend-capacity-success.png":::
-
   After turning on the extension, for the next 45 days the extra capacity appears in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
-
-   :::image type="content" source="media/storage-extend-capacity-banner-30-days.png" alt-text="Screenshot showing tenant capacity extension in admin center." lightbox="media/storage-extend-capacity-banner-30-days.png":::
 
 ## What happens after a capacity extension expires in 45 days?
 
