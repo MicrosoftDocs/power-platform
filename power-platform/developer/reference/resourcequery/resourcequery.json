@@ -215,7 +215,7 @@
     "Clause": {
       "description": "Base class for all Kusto clauses.",
       "required": [
-        "$type"
+        "type"
       ],
       "type": "object",
       "allOf": [
@@ -224,8 +224,8 @@
         }
       ],
       "properties": {
-        "$type": {
-          "description": "Discriminator for the clause type.",
+        "type": {
+          "description": "NOTE the name of the property is '$type' but the $ is dropped by docs automation.",
           "enum": [
             "where",
             "project",
@@ -244,12 +244,12 @@
     },
     "ClauseBaseClass": {
       "required": [
-        "$type"
+        "type"
       ],
       "type": "object",
       "properties": {
-        "$type": {
-          "description": "Discriminator for the clause type.",
+        "type": {
+          "description": "NOTE the name of the property is '$type' but the $ is dropped by docs automation.",
           "enum": [
             "where",
             "project",
