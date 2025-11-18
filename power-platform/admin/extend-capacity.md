@@ -57,7 +57,7 @@ After you determine how much storage you're using, use the following steps to ex
 
 1. A banner displays that the temporary capacity extension is now active. 
 
-  After turning on the extension, for the next 45 days the extra capacity appears in the Power Platform admin center **Licensing** page (**Licensing** > **Dataverse** > **Summary**).
+    After turning on the extension, for the next 45 days the extra capacity appears in the Power Platform admin center **Licensing** page (**Licensing** > **Dataverse** > **Summary**).
 
 ## What happens after a capacity extension expires in 45 days?
 

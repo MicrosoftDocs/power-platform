@@ -32,11 +32,11 @@ Key capabilities include:
 Follow these steps to access finance and operations consumption metrics:
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Licensing** in the left menu.
-1. Select the **Finance and Operations** tab under **User License Consumption**.
+1. Select **Licensing** on the left menu.
+1. Select **Finance and Operations** in the Products section on the Licensing pane to view **User License Consumption**.
 
 > [!NOTE]
-> The report is refreshed every 4-12 hours. The last updated timestamp appears at the top of the report.
+> The report is refreshed every 4-12 hours. The most recent timestamp appears at the top of the report.
 
  :::image type="content" source="media/fno-user-licensing/user-license-consumption-overview.png" alt-text="User License Consumption summary" lightbox="media/fno-user-licensing/user-license-consumption-overview.png":::
 
@@ -135,7 +135,7 @@ For any user, select the **Required license** link to open the **Required licens
 
 ## Assign licenses in the Microsoft 365 admin center
 
-For any user, select the missing license link to bring up the license options screen and select the **Manage in Microsoft 365 admin center** button to open the [Microsoft 365 admin center](https://admin.microsoft.com) to that user and assign the required license.
+For any user, select the missing license link to bring up the license options screen. Select **Manage in Microsoft 365 admin center** to open the [Microsoft 365 admin center](https://admin.microsoft.com) for that user and assign the required license.
 
  :::image type="content" source="media/fno-user-licensing/user-license-options-assignment.png" alt-text="User license options with link to assign license in the Microsoft 365 admin center." lightbox="media/fno-user-licensing/user-license-options-assignment.png"::: 
 
@@ -167,7 +167,7 @@ View **menu items and access levels** (Read/Write) that contribute to license re
 
 You can export user data to a CSV by selecting the **Export to CSV** button located on the page, then selecting either a **standard report** or a **detailed report**.
 
-### The standard report contains the following columns:
+### Standard report columns
 >
 > - `TenantId`  
 > - `UserEmail`
@@ -177,7 +177,7 @@ You can export user data to a CSV by selecting the **Export to CSV** button loca
 > - `MissingLicense(s)`
 > - `RefreshedOn`  
 
-### The detailed report contains the following columns:
+### Detailed report columns
 >
 > - `TenantId`  
 > - `EnvironmentId`  
