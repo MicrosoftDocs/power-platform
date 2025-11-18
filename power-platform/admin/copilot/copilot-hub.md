@@ -4,7 +4,7 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/10/2025
+ms.date: 11/18/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -102,7 +102,7 @@ Admins can view usage analytics for Copilot in Dynamics 365 Sales on the **Dynam
 # [Classic admin center](#tab/classic)
 
 > [!NOTE]
-> Copilot hub in classic admin center is only available for customers in sovereign clouds. For customers in the public cloud, an option is presented to switch to the new admin center or go to the homepage.
+> The **Copilot** area in classic admin center is only available for customers in sovereign clouds. For customers in the public cloud, an option is presented to switch to the [new admin center](new-admin-center.md) or go to the homepage.
 
 ## Get ready to manage Copilot and agents
 
