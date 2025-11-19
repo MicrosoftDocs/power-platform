@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: concept-article
-ms.date: 08/27/2024
+ms.date: 11/19/2025
 search.audienceType: 
   - admin
 ---
@@ -21,9 +21,10 @@ Stub user records are created as placeholder records in the user table. They're 
 
 Complete the following steps to turn on the **Delete disabled users** feature.
 
-1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1.	In the navigation pane, select **Environments**.
-1.	Select a specific environment.
+1.  Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1.  In the navigation pane, select **Manage**.
+1.  In the **Manage** pane, select **Environments**.
+1.  On the **Environments** page, select an environment.
 1.	Select **Settings** > **Product** > **Features**.
 1.	Scroll through the list and to find the **Delete disabled users** area.
 1.	Set the **Enable delete disabled users** setting to **On**.
@@ -35,9 +36,10 @@ _Soft deleted users_ remain in the system with a disabled status. Learn more: [W
 
 You can manually [soft delete a stub user](delete-users.md#option-a-soft-delete-users-from-the-disabled-users-view).
 
-1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1.	In the navigation pane, select **Environments**.
-1.	Select a specific environment.
+1.  Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1.  In the navigation pane, select **Manage**.
+1.  In the **Manage** pane, select **Environments**.
+1.  On the **Environments** page, select an environment.
 1.	Select **Settings** > **Users + Permissions** > **Users**.
 1.	Select **Disabled Users** from the **Filter** list.
 1.	Enter the stub user in the **Search** box.
@@ -50,9 +52,10 @@ To permanently delete stub users, the stub users must first be soft deleted. The
 
 To manually permanently delete a stub user, complete the following steps.
 
-1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1.	In the navigation pane, select **Environments**.
-1.	Select a specific environment.
+1.  Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1.  In the navigation pane, select **Manage**.
+1.  In the **Manage** pane, select **Environments**.
+1.  On the **Environments** page, select an environment.
 1.	Select **Settings** > **Users + Permissions** > **Users**.
 1.	Select **Disabled Users** from the **Filter** list.
 1.	Enter the stub user in the **Search** box.
@@ -63,9 +66,10 @@ To manually permanently delete a stub user, complete the following steps.
 You can delete multiple stub users using _bulk delete_.  Soft-deleted users remain in the system with a disabled status. Learn more: [What happens when a user is soft deleted?](delete-users.md#what-happens-when-a-user-is-soft-deleted)
 
 To soft delete stub users in bulk, complete the following steps.
-1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1.	In the navigation pane, select **Environments**.
-1.	Select a specific environment.
+1.  Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1.  In the navigation pane, select **Manage**.
+1.  In the **Manage** pane, select **Environments**.
+1.  On the **Environments** page, select an environment.
 1.	Select **Settings** > **Users + Permissions** > **Users**.
 1.	Select **Bulk delete** from the command bar. 
 1.	Select the **Stub users** option from the **Use saved view** dropdown list.
@@ -80,9 +84,10 @@ To soft delete stub users in bulk, complete the following steps.
 1.	Verify the query and the number of records to be deleted, and then select **Run bulk delete**.
 
 ## Review the status of bulk delete job
-1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1.	In the navigation pane, select **Environments**.
-1.	Select a specific environment.
+1.  Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1.  In the navigation pane, select **Manage**.
+1.  In the **Manage** pane, select **Environments**.
+1.  On the **Environments** page, select an environment.
 1.	Select **Settings** > **Audit and logs** > **System jobs**.
 1.	Select the bulk delete job and review the results. The results show records in the **Successes** row that should match the number of records from your previous soft deletion system job.
 Review a deleted user in the audit log.
@@ -92,9 +97,10 @@ Review a deleted user in the audit log.
 ## Permanently delete stub users in bulk
 To permanently delete stub users, the stub users must first be soft deleted. These [Prerequisites](delete-users.md#prerequisites) must be met before stub users can be permanently deleted.
 
-1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1.	In the navigation pane, select **Environments**.
-1.	Select a specific environment.
+1.  Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1.  In the navigation pane, select **Manage**.
+1.  In the **Manage** pane, select **Environments**.
+1.  On the **Environments** page, select an environment.
 1.	Select **Settings** > **Users + Permissions** > **Users**.
 1.	Select **Bulk delete** from the command bar. 
 1.	Select the **Soft Deleted Users** view in the **Use saved view** dropdown list.
