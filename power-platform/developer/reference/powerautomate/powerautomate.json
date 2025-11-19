@@ -128,6 +128,12 @@
           "403": {
             "description": "Forbidden."
           },
+          "404": {
+            "description": "Not found. Environment does not have a Microsoft Dataverse database.",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
           "500": {
             "description": "Internal server error."
           }
@@ -241,6 +247,12 @@
           "403": {
             "description": "Forbidden."
           },
+          "404": {
+            "description": "Not found. Environment does not have a Microsoft Dataverse database.",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
           "500": {
             "description": "Internal server error."
           }
@@ -316,6 +328,12 @@
           },
           "403": {
             "description": "Forbidden."
+          },
+          "404": {
+            "description": "Not found. Environment does not have a Microsoft Dataverse database.",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
           },
           "500": {
             "description": "Internal server error."
