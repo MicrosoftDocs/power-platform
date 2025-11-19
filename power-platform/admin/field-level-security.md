@@ -3,7 +3,7 @@ title: Column-level security
 description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 08/06/2025
+ms.date: 11/19/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -140,19 +140,17 @@ Whether the **Enable column security** checkbox is enabled depends on the value 
 > [!TIP]
 > [Learn how a developer can query Dataverse to get a list of all the columns that can be secured](/power-apps/developer/data-platform/field-security-entities#discover-which-columns-can-be-secured)
 
-
 ## Best practices
 
 When a [calculated column](/power-apps/maker/data-platform/define-calculated-fields) includes a column that is secured, data might be displayed in the calculated column to users that don't have permission to the secured column. Both the original column and the calculated column should be secured.
 
 _Composite columns_ include data from multiple columns. For example, the [`contact` table](/power-apps/developer/data-platform/reference/entities/contact) [`fullname`](/power-apps/developer/data-platform/reference/entities/contact#BKMK_FullName) and [`address1_composite`](/power-apps/developer/data-platform/reference/entities/contact#BKMK_Address1_Composite) columns are composite columns. To completely secure data included in composite columns, you must secure and configure the appropriate column security profiles on multiple columns for the table. For example, to completely secure the `address1_composite` column, you need to secure all of these the columns that begin with `address1_` in both the [contact](/power-apps/developer/data-platform/reference/entities/contact) and [address (`customeraddress`)](/power-apps/developer/data-platform/reference/entities/customeraddress) tables.
 
-
 > [!NOTE]
 > Changes to column security require a browser refresh from the end user on the client (like a model-driven app) for the changes to take effect. This should be considered when dynamically adjusting access rules.
 
 ## Activity logging data
-The column values in the before-and-after audit change events will show as "*" in the **Create** and **Update** [Purview activity logs](https://learn.microsoft.com/power-platform/admin/enable-use-comprehensive-auditing?tabs=new). 
+The column values in the before-and-after audit change events show as "*" in the **Create** and **Update** [Purview activity logs](henable-use-comprehensive-auditing.md). 
 
 ### Related information
 
