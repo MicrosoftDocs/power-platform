@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: install-set-up-deploy
-ms.date: 08/26/2021
+ms.date: 11/19/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -14,9 +14,9 @@ search.audienceType:
 # Deploy Microsoft 365 groups 
 
 > [!NOTE]
-> Effective February 2022, support for Microsoft 365 Groups (previously known as Office Groups) and Yammer in Dynamics 365 will be deprecated. This will impact customers who use Microsoft 365 Groups and/or Yammer for collaboration in Dynamics 365. We recommend that customers transition to Microsoft Teams for more advanced collaboration functionalities. For information about integrating Dynamics 365 with Teams, see [Integrate customer engagement apps in Dynamics 365 with Microsoft Teams](/dynamics365/teams-integration/teams-integration).
+> Effective February 2022, support for Microsoft 365 Groups (previously known as Office Groups) and Yammer in Dynamics 365 is deprecated. This will impact customers who use Microsoft 365 Groups and/or Yammer for collaboration in Dynamics 365. We recommend that customers transition to Microsoft Teams for more advanced collaboration functionalities. For information about integrating Dynamics 365 with Teams, see [Integrate customer engagement apps in Dynamics 365 with Microsoft Teams](/dynamics365/teams-integration/teams-integration).
 > 
-> If you've questions about the deprecation, contact your Microsoft Customer Service representative or Microsoft Partner.
+> If you have questions about the deprecation, contact your Microsoft Customer Service representative or Microsoft Partner.
 
 Microsoft 365 Groups, available with Dynamics 365 apps, provides a new environment for collaboration with Microsoft 365 users who don't use customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), such as Dynamics 365 Sales and Customer Service. For example, use Microsoft 365 Groups when a sales team has a major opportunity requiring input from several people who don't have access to customer engagement apps. Microsoft 365 Groups provides a single location to share documents, conversations, meetings, and notes. You can enable Microsoft 365 Groups for any entity.  
   
@@ -50,9 +50,11 @@ Microsoft 365 Groups, available with Dynamics 365 apps, provides a new environme
   
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. Select **Resources** > **Dynamics 365 apps**.
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Dynamics 365 apps**.
   
-3. Select **Office365Groups** and then select **Install**.  
+1. Select **Office365Groups** and then select **Install**.  
   
 Once installation of the solution has completed, you can configure Microsoft 365 Groups.  
   
@@ -64,15 +66,19 @@ Once installation of the solution has completed, you can configure Microsoft 365
   
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Service admin or Delegated admin).
 
-2. From the left-side menu, select **Environments**, and then select an environment.
+1. In the navigation pane, select **Manage**.
+   
+1. In the **Manage** pane, select **Environments**.
+
+1. On the **Environments** page, select an environment.
   
-3. Select **Settings** > **Users + permissions** > **Security roles**.
+1. Select **Settings** > **Users + permissions** > **Security roles**.
   
-4. Choose the security role to check and then select the **Customization** tab.  
+1. Choose the security role to check and then select the **Customization** tab.  
   
-5. In the **Miscellaneous Privileges** section, review the **ISV Extensions** privilege setting. If the security role doesn't have the **ISV Extensions** privilege, select it to set it to Organization.  
+1. In the **Miscellaneous Privileges** section, review the **ISV Extensions** privilege setting. If the security role doesn't have the **ISV Extensions** privilege, select it to set it to Organization.  
   
-6. Select **Save and Close**.  
+1. Select **Save and Close**.  
   
 ## Configure Microsoft 365 groups  
  Once you provision Microsoft 365 Groups, you can enable them for any entity. Security group membership is associated with the entity. You configure Microsoft 365 Groups in customer engagement apps.  
