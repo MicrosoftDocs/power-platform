@@ -570,6 +570,8 @@
                       href: control-app-access-environment.md
                     - name: Commonly used Microsoft first-party services and portal apps
                       href: apps-to-allow.md
+                - name: Secure Web and AI Gateway for agents (preview)
+                  href: security/secure-web-ai-gateway-agents.md
             - name: Compliance
               items:
                 - name: Compliance tools
@@ -780,7 +782,7 @@
                   href: manage-principalobjectaccess-storage.md
                 - name: Subscription Tracking Deleted Object table
                   href: subscription-tracking-deleted-object-retention.md
-            - name: Extend Dataverse capacity for 30 days
+            - name: Extend Dataverse capacity for 45 days
               href: extend-capacity.md
             - name: Free up storage
               items:
