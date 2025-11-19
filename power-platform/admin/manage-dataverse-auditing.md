@@ -353,7 +353,6 @@ Learn more in [Dataverse developer guide: Configure auditing > Configure tables 
 > [!NOTE]
 > When auditing is turned off for a column, the before-and-after values are sent as an "*" to [Purview activity logging](enable-use-comprehensive-auditing.md).
 
-
 ### Turn on or off auditing for Choice data type's original label 
 By default, the current label description of the **Choice** data type is shown in the audit logs. For example, suppose you have a choice column for **color** and the label description can be _red_, _white_, and _blue_. When a user selects _red_ and updates the record, the audit record shows that _red_ was selected. If the label description is later changed to _pink_ in the choice data type, the audit record displays _pink_.
 
@@ -361,7 +360,6 @@ If you want to show the original label that the user selected in the audit logs,
 
 > [!NOTE]
 > When the **StoreLabelNameforPicklistAudits** is set to true, the new audit user experience on viewing the audit records can be found in the [Audit Summary view](#use-the-audit-summary-view). The [audit history in model-driven app](#use-the-audit-history-in-a-model-driven-app) continues to show the _by default_ behavior.
-
 
 ## Use the Audit History in a model-driven app
 
