@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/29/2025
+ms.date: 11/19/2025
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
@@ -351,7 +351,7 @@ System administrators or customizers can change the default audit settings for t
 Learn more in [Dataverse developer guide: Configure auditing > Configure tables and columns](/power-apps/developer/data-platform/auditing/configure#configure-tables-and-columns).
 
 > [!NOTE]
-> When auditing is turned off for a column, the before-and-after values will be sent as an "*" to [Purview activity logging](https://learn.microsoft.com/power-platform/admin/enable-use-comprehensive-auditing).
+> When auditing is turned off for a column, the before-and-after values are sent as an "*" to [Purview activity logging](enable-use-comprehensive-auditing.md).
 
 
 ### Turn on or off auditing for Choice data type's original label 
