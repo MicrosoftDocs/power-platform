@@ -396,22 +396,7 @@ The **DataverseSearch** table (previously known as **RelevanceSearch**) is the c
 
 ### Can Dataverse search be managed?
 
-An admin can manage Dataverse search through the three states associated with this setting:
-
-**On:**
-
-- When Dataverse search is turned on, the search bar becomes visible.
-- Generative AI experiences using Dataverse data are available.
-
-**Default:**
-
-- When Dataverse search is set to **Default**, the search bar is hidden.  
-- Generative AI experiences using Dataverse data remain available.
-
-**Off:**
-
-- When Dataverse search is turned off, the search bar is hidden.
-- Generative AI experiences using Dataverse data are limited.
+An admin can manage Dataverse search through the three states associated with this setting: On, Default, and Off. To learn more about how Dataverse search can be managed please refer to [Configure Dataverse search](/configure-relevance-search-organization.md#managing-dataverse-search)
 
 > [!NOTE]
 >
@@ -419,14 +404,10 @@ An admin can manage Dataverse search through the three states associated with th
 > - No other setting is turned on if Dataverse search is turned **On** or **Default**.
 
 ### What actions can admins take?
-
-To ensure optimal operations for the organization, admins with the proper permissions can either increase capacity storage or reduce Dataverse search by performing all the following actions:
-
-- Removing knowledge in Copilot Studio.
-- Go to the Power Platform admin center and turn off Dataverse search.
+Depending on the experience that leverages Dataverse Search and its usage, consumption size may increase more drastically. As such, to learn more about managing Dataverse search, go to [What is Dataverse search](/relevance-search-benefits.md#what-actions-can-makers-or-admins-take-to-manage-dataverse-search-efficiently).
   
     > [!IMPORTANT]
-    > We don't recommended that you perform this action as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
+    > We don't recommend that you turn off Dataverse search as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
 
 ### Turning Dataverse search off
 
@@ -445,6 +426,7 @@ Environment admins have 12 hours to turn the feature back on without indexed dat
 
 > [!IMPORTANT]
 > Turning off Dataverse search deprovisions and removes the index within a period of 12 hours. If you turn on Dataverse search after its been off for 12 hours, it provisions a fresh index that needs to go through a full sync. Syncing may take up to an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
+> Index removal (or provisioning) can take multiple days to be completed, depending on the amount of Dataverse Search consumption. Example: an organization with 10GB of indexed data may take 1 day to clean up all indexes, while an organization with 500GB may take multiple days to see it reflected in Dataverse search reporting. Please give a few days or a week before sumitting a support ticket, to ensure a complete removal of Dataverse Search indexed data.
 
 ### What happens if Dataverse search is turned off?
 
