@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 11/07/2025
+ms.date: 11/19/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -32,7 +32,7 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 | Perform Force Failover | API | New endpoint: [Perform Force Failover](/rest/api/power-platform/environmentmanagement/failover/perform-force-failover) |
 | Enable Disaster Recovery | API | New endpoint: [Enable Disaster Recovery](/rest/api/power-platform/environmentmanagement/failover/enable-disaster-recovery) |
 | Enable Environment | API | New endpoint: [Enable Environment](/rest/api/power-platform/environmentmanagement/environment-state/enable-environment) |
-| Perform DR Drill | API | New endpoint: [Perform DR Drill](/rest/api/power-paltform/environmentmanagement/failover/perform-dr-drill) |
+| Perform DR Drill | API | New endpoint: [Perform DR Drill](/rest/api/power-platform/environmentmanagement/failover/perform-dr-drill) |
 | Disable Disaster Recovery | API | New endpoint: [Disable Disaster Recovery](/rest/api/power-platform/environmentmanagement/failover/disable-disaster-recovery) |
 | Disable Environment | API | New endpoint: [Disable Environment](/rest/api/power-platform/environmentmanagement/environment-state/disable-environment) |
 | Get Business Continuity State Full Snapshot | API  | New endpoint: [Get Business Continuity State Full Snapshot](/rest/api/power-platform/environmentmanagement/failover/get-business-continuity-state-full-snapshot) |
