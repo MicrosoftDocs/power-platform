@@ -4,7 +4,7 @@ description: Overview of Microsoft Entra setup for calling Power Platform API an
 author: laneswenka
 ms.reviewer: sericks
 ms.topic: reference
-ms.date: 11/07/2025
+ms.date: 11/19/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
