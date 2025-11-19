@@ -22,18 +22,17 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 | Query Resources | API | New endpoint: [Query Resources](/rest/api/power-platform/resourcequery/resources/query-resources) |
 | Add Allowed IP Addresses | API | New endpoint: [Add Allowed IP Addresses](/rest/api/power-platform/powerpages/websites/add-allowed-ip-addresses) |
 | Create Environment Rule Based Assignment | Bug fixes | Various bug fixes for [Create Environment Rule Based Assignment](/rest/api/power-platform/governance/rule-based-policies/create-environment-rule-based-assignment) |
-| Create Environment Group Rule Based Assignment | Bug fixes | Various bug fixes for [Create Environment Group Rule Based Assignment](/rest/api/power-platform/governance/rule-based-policies/create-environment-group-rule-based-assignment) |
+| Create Environment Group Rule Based Assignment | Bug fixes | Various bug fixes for [Create Environment Group Rule Based Assignment](/rest/api/power-platform/governance/rule-based-policies/create-enviornment-group-rule-based-assignment) |
 | Create Rule Based Policy | Bug fixes | Various bug fixes for [Create Rule Based Policy](/rest/api/power-platform/governance/rule-based-policies/create-rule-based-policy) |
 | Restore Environment | API | New endpoint: [Restore Environment](/rest/api/power-platform/environmentmanagement/environment-restore/restore-environment) |
 | Copy Environment | API | New endpoint: [Copy Environment](/rest/api/power-platform/environmentmanagement/environment-copy/copy-environment) | 
-| Get Restore Candidates | API | New endpoint: [Get Restore Candidates](/rest/api/power-platform/environmentmanagement/enviornment-restore/get-restore-candidates) |
+| Get Restore Candidates | API | New endpoint: [Get Restore Candidates](/rest/api/power-platform/environmentmanagement/environment-restore/get-restore-candidates) |
 | Get Environment Copy Candidates | API | New endpoint: [Get Environment Copy Candidates](/rest/api/power-platform/environmentmanagement/environment-copy/get-environment-copy-candidates) |
 | Recover Environment | API | New endpoint: [Recover Environment](/rest/api/power-platform/environmentmanagement/environment-recover/recover-environment) |
-| Modify Environment Sku | API | New endpoint: [Modify Environment Sku](/rest/api/power-platform/environmentmanagement/modify-environment-sku/modify-environment-sku) |
-| Perform Force Failover | API | New endpoint: [Perform Force Failover](/rest/api/power-platform/environmentmanagement/failover/peform-force-failover) |
-| Enable Disaster Recovery | API | New endpoint: [Enable Disaster Recovery](/rest/api/power-platform/enviornmentmanagement/failover/enable-disaster-recovery) |
+| Perform Force Failover | API | New endpoint: [Perform Force Failover](/rest/api/power-platform/environmentmanagement/failover/perform-force-failover) |
+| Enable Disaster Recovery | API | New endpoint: [Enable Disaster Recovery](/rest/api/power-platform/environmentmanagement/failover/enable-disaster-recovery) |
 | Enable Environment | API | New endpoint: [Enable Environment](/rest/api/power-platform/environmentmanagement/environment-state/enable-environment) |
-| Perform D R Drill | API | New endpoint: [Perform D R Drill](/rest/api/power-paltform/environmentmanagement/failover/perform-d-r-drill) |
+| Perform DR Drill | API | New endpoint: [Perform DR Drill](/rest/api/power-paltform/environmentmanagement/failover/perform-dr-drill) |
 | Disable Disaster Recovery | API | New endpoint: [Disable Disaster Recovery](/rest/api/power-platform/environmentmanagement/failover/disable-disaster-recovery) |
 | Disable Environment | API | New endpoint: [Disable Environment](/rest/api/power-platform/environmentmanagement/environment-state/disable-environment) |
 | Get Business Continuity State Full Snapshot | API  | New endpoint: [Get Business Continuity State Full Snapshot](/rest/api/power-platform/environmentmanagement/failover/get-business-continuity-state-full-snapshot) |
