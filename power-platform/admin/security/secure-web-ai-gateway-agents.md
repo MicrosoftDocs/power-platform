@@ -37,7 +37,7 @@ You configure security policies for agents by using the baseline profile in Glob
 
 ## How Secure Web and AI Gateway for Copilot Studio agents works
 
-To enforce consistent network security controls on Copilot Studio Agents, forward traffic from the agents to Global Secure Access's globally distributed proxy service. You can enable forwarding of agent traffic in the Power Platform Admin Center on a per-Environment or per-Environment Group basis. Forwarding applies to all kinds of agent traffic, including traffic from HTTP Node and Tools generated connectors, including custom connectors, the custom Model Context Protocol (MCP) server connector, and a full list of [supported connectors](#supported-connectors).
+To enforce consistent network security controls on Copilot Studio agents, forward traffic from the agents to Global Secure Access's globally distributed proxy service. You can enable forwarding of agent traffic in the Power Platform admin center on a per-Environment or per-Environment Group basis. Forwarding applies to all kinds of agent traffic, including traffic from HTTP Node and Tools generated connectors, including custom connectors, the custom Model Context Protocol (MCP) server connector, and a full list of [supported connectors](#supported-connectors).
 
 Once you forward traffic from the agent to GSA, you can enforce the same security controls you use on users to agents, including web content filtering, threat intelligence filtering, network file filtering, and more.
 
@@ -46,9 +46,9 @@ When an agent makes a request to external resources, the Global Secure Access se
 ## Prerequisites
 
 - Administrators who interact with **Global Secure Access** features must have one or more of the following role assignments depending on the tasks they're performing:
-  - The [Global Secure Access Administrator role](/azure/active-directory/roles/permissions-reference) role to manage the Global Secure Access features.
+  - The [Global Secure Access Administrator](/azure/active-directory/roles/permissions-reference) role to manage the Global Secure Access features.
   - The [Power Platform Administrator](../use-service-admin-role-manage-tenant.md) role to manage Copilot Studio environments.
-- Create a Power Platform environment with Dataverse added to it.
+- A Power Platform environment with Dataverse added to it.
 
 ## High-level steps
 
@@ -61,23 +61,28 @@ Configuring network controls for Copilot Studio agents involves several steps:
 
 The first step is to enable traffic forwarding from Copilot Studio Agents in the Power Platform Admin Center.
 
-### Enable using Power Platform admin center
+### Enable network controls at the environment level
 
-1. Browse to the **Power Platform Admin Center**.
-1. Navigate to **Security** > **Identity & access** > **Global Secure Access for Agents**.
-1. Select the appropriate Environment or Environment Group and select **Set up**.
-1. **Enable** Global Secure Access for Agents for the selection.
+To configure Global Secure Access settings at the environment level, complete the following steps:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, select **Security**
+1. On the **Security** pane, select **Identity & access**.
+1. Select **Global Secure Access for Agents**.
+1. Select the appropriate Environment and select **Set up**. 
+1. Toggle **Enable Global Secure Access for Agents** to *on* for your selected environment.
+1. Select **Save**.
 
 ### Enable network controls at the environment group level
 
 To configure Global Secure Access settings at the environment group-level, complete the following steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Security**.
-1. In the **Security** pane, select **Identity and access**.
+1. On the navigation pane, select **Security**.
+1. On the **Security** pane, select **Identity and access**.
 1. Select **Global Secure Access for Agents**.
-1. In the pane that is displayed, select the **Environment groups** tab or the **Environments** tab to which you want the security setting applied, then select **Set up Global Secure Access**.
-1. In the **Set up Global Secure Access** pane, select **Global Secure Access for Agents** to **On**.
+1. Select the **Environment groups** tab to which you want the security setting applied, then select **Set up**.
+1. Toggle **Enable Global Secure Access for Agents** to *on* for the selected environment group.
 1. Select **Save**.
 
 > [!NOTE]
