@@ -30,7 +30,7 @@ When you create a custom security role, the role must have a set of minimum priv
 
 You can easily create, edit, or copy a security role and customize it to meet your needs.
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 1. In the navigation pane, select **Manage**.
 
