@@ -393,6 +393,7 @@ Because custom Quick Find lookups are created by an admin in the org, these can 
 ### What is the DataverseSearch table and how can I reduce it?
 
 The **DataverseSearch** table (previously known as **RelevanceSearch**) is the cumulative storage used by the global search and generative AI experiences that are used by it. It includes the data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment and Copilot semantic indexes.
+Please refer to [actions that makers or admins can take to optimize Dataverse search](/relevance-search-benefits.md#what-actions-can-makers-or-admins-take-to-manage-dataverse-search-efficiently).
 
 ### Can Dataverse search be managed?
 
