@@ -92,7 +92,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Allow MCP clients to interact with Dataverse MCP server | When selected, allows MCP clients such as Copilot Studio, Visual Studio Code, and other non-Microsoft clients that have been enabled through Advanced Settings to connect to Dataverse. | On |
-| Advanced Settings | Open the Advanced Settings page to enable MCP clients not in Copilot Studio, such as Claude. Learn more: [Configure and manage the Dataverse MCP server for an environment](/power-apps/maker/data-platform/data-platform-mcp-disable#configure-and-manage-the-dataverse-mcp-server-for-an-environment) | Clients not in Copilot Studio aren't allowed. |
+| Advanced Settings | Open the Advanced Settings page to enable MCP clients not in Copilot Studio, such as Claude. Learn more: [Configure and manage the Dataverse MCP server for an environment](/power-apps/maker/data-platform/data-platform-mcp-disable#configure-and-manage-the-dataverse-mcp-server-for-an-environment) | Clients not in Copilot Studio are restricted. |
 
 ## Preview and experimental AI models (formerly AI Builder)
 
