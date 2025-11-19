@@ -16,10 +16,10 @@ The [Power Platform admin center](https://admin.powerplatform.microsoft.com) pro
 
 Learn more about the Power Platform admin center in the following sections:
 
-- [Watch a video about the admin center](watch-a-video-about-the-admin-center)
+- [Watch a video about the admin center](#watch-a-video-about-the-admin-center)
 - [Find admin center feature areas](#find-admin-center-feature-areas)
 - [Understand the admin center user interface](#understand-the-admin-center-user-interface)
-- [Manage your features and settings](manage-your-features-and-settings)
+- [Manage your features and settings](#manage-your-features-and-settings)
 
 ## Watch a video about the admin center
 
