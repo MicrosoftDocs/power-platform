@@ -30,7 +30,7 @@ If you want to create a security role that is similar to another security role, 
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-1. Sign in to the Power Platform admin center.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
   
 1. In the navigation pane, select **Manage**.
 
