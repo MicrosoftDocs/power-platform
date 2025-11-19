@@ -16,10 +16,10 @@ The [Power Platform admin center](https://admin.powerplatform.microsoft.com) pro
 
 Learn more about the Power Platform admin center in the following sections:
 
-- [Find feature areas of the new admin center](#find-feature-areas-of-the-new-admin-center)
-- [Find feature areas of the classic admin center](#find-feature-areas-of-the-classic-admin-center)
-- [Understand the user interface of the new admin center](#understand-the-user-interface-of-the-new-admin-center)
-- [Understand the user interface of the classic admin center](#understand-the-user-interface-of-the-classic-admin-center)
+- [Watch a video about the admin center](watch-a-video-about-the-admin-center)
+- [Find admin center feature areas](#find-admin-center-feature-areas)
+- [Understand the admin center user interface](#understand-the-admin-center-user-interface)
+- [Manage your features and settings](manage-your-features-and-settings)
 
 ## Watch a video about the admin center
 
@@ -40,7 +40,7 @@ The Power Platform admin center feature areas are located on the left navigation
 |Licensing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. |[View license consumption](view-license-consumption-issues.md) |
 |Support     | <p>Get a list of self-help solutions or create a support ticket for technical support.</p><p>**Note**: Although you administer Power BI using the Power BI admin portal, you request support for Power BI through support in the Power Platform admin center.</p> | [Get Help + Support](./get-help-support.md)  |
 
-## Admin center user interface
+## Understand the admin center user interface
 
 The Power Platform admin center is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The admin center isn't just task-oriented, it also helps you achieve specific outcomes and goals.
 
@@ -51,10 +51,10 @@ Legend:
 1. [Navigation pane](#1-navigation-pane)
 2. [Settings icon](#2-settings-icon)
 3. [Admin center links](#3-admin-center-links)
-4. [Power Platform page](#4-power-platform-page)
+4. [Power Platform pages](#4-power-platform-pages)
 
 ### 1. Navigation pane
-Find Power Platform admin center pages on the left navigation pane to deploy, manage, secure, and monitor your Power Platform implementation.
+Find the Power Platform admin center pages on the left navigation pane to deploy, manage, secure, and monitor your Power Platform implementation.
 
 ### 2. Settings icon
 Select the gear icon to manage tenant settings, view session details, and change the user interface theme.
@@ -62,8 +62,8 @@ Select the gear icon to manage tenant settings, view session details, and change
 ### 3. Admin center links
 Navigate to related admin centers, such as the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage), [Microsoft Entra admin center](https://entra.microsoft.com/#home), and [Power BI admin portal](https://dxt.powerbi.com/admin-portal/capacities?experience=power-bi). 
 
-### 4. Power Platform page
-Complete administrative functions on each Power Platform page.
+### 4. Power Platform pages
+Complete administrative functions on each of the Power Platform pages.
 
 
 ## Manage your environments and settings
