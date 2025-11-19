@@ -150,7 +150,7 @@ _Composite columns_ include data from multiple columns. For example, the [`conta
 > Changes to column security require a browser refresh from the end user on the client (like a model-driven app) for the changes to take effect. This should be considered when dynamically adjusting access rules.
 
 ## Activity logging data
-The column values in the before-and-after audit change events show as "*" in the **Create** and **Update** [Purview activity logs](henable-use-comprehensive-auditing.md). 
+The column values in the before-and-after audit change events show as "*" in the **Create** and **Update** [Purview activity logs](enable-use-comprehensive-auditing.md). 
 
 ### Related information
 
