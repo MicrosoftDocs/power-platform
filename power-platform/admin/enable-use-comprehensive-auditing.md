@@ -1,16 +1,16 @@
 ---
-title: "Microsoft Dataverse and model-driven apps activity logging  | MicrosoftDocs"
+title: Microsoft Dataverse and model-driven apps activity logging 
 description: Learn how to enable auditing to be used for reports in the Microsoft Purview portal.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/27/2025
-author: Zeffin
+ms.date: 11/19/2025
+author: paulliew
 contributors:
   - yingchin
   - EllenWehrle
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: yingchin
+ms.author: paulliew
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
@@ -45,7 +45,7 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Report Viewer Render Image  |Logging multimedia assets that are shown when a report is displayed. They might contain critical customer information.  |
 
 > [!NOTE]
-> [Column-level secured fields](https://learn.microsoft.com/power-platform/admin/field-level-security) will be sent to Purview activity logging with an "*".
+> [Column-level secured fields](field-level-security.md) are sent to Purview activity logging with an "*".
 
 ## Base schema
 
