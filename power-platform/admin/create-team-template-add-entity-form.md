@@ -44,7 +44,9 @@ Check your security role:
    
 1. In the **Manage** pane, select **Environments**.
   
-1. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
+1. On the **Environments** page, select an environment.
+
+ 1. Go to **Settings** > **Templates** > **Access team templates**.
 
 1. On the command bar, select **More Commands** (...).
 
