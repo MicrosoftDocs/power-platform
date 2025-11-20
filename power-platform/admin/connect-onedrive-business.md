@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/04/2020
+ms.date: 11/20/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -30,11 +30,17 @@ Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_bus
 ## Enable OneDrive for Business  
  You enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] as follows:  
   
-1. In the Microsoft Power Platform admin center, select an environment. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. Select **Settings** > **Integration** > **Document management settings**.   
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Environments**.
+
+1. On the **Environments** page, select an environment.  
+
+1. Select **Settings** > **Integration** > **Document management settings**.   
   
-3. Select **Enable OneDrive for Business** to enable it, and then select **OK**.  
+1. Select **Enable OneDrive for Business** to enable it, and then select **OK**.  
   
    **If you're running [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] on-premises**, on the Windows Server where [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] is running, open the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Management Shell and run the following commands to set up permissions between [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] and [!INCLUDE[pn_microsoft_dynamics_crm_2016_server](../includes/pn-microsoft-dynamics-crm-2016-server.md)].  
   
