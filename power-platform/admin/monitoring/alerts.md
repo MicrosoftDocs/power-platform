@@ -112,8 +112,6 @@ As an example, here you can see all the high-use cloud flows in your tenant that
 
 You can also see a list of your predefined alerts and view their details in the **Alerts** section of the **Monitor** area. Select **Alerts** and scroll to the bottom of the page to view the predefined alerts. 
 
-:::image type="content" source="media/predefined-alert-list.jpg" alt-text="Screenshot of predefined alerts listed alongside custom alerts in the Alert Rules section." lightbox="media/predefined-alert-list.jpg":::
-
 Selecting the three dots next to the alert and then **Details** displays a pane that shows how the predefined alert has been configured. These alerts can't be edited or deleted. 
 
 :::image type="content" source="media/predefined-alert-details.jpg" alt-text="Screenshot of the predefined alert details pane showing the alert configuration." lightbox="media/predefined-alert-details.jpg":::
