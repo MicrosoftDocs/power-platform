@@ -62,7 +62,7 @@ After you’ve created your alert, the system does an on-demand evaluation and s
 ## When an alert is triggered
 If you selected to receive email notifications when any resource triggers an alert, you get an email notification sent to you.
 
-:::image type="content" source="media/alert-email.png" alt-text="If you selected to receive email notifications when any resource triggers an alert, you get an email notification sent to you." lightbox="media/alert-email.png":::
+:::image type="content" source="media/alert-email.png" alt-text="Screenshot of an email notification showing a triggered alert with a Go to Alert button." lightbox="media/alert-email.png":::
 
 In the email notification, select **Go to Alert** to open a Power Platform page listing the triggered alerts, where you can see information on the triggered alert and what resources triggered it. When you select any of the resources in the triggered alert, a pane is displayed that shows time series information for all applicable metrics for that resource, and recommendations for how to improve the metric if it’s suboptimal.
 
@@ -98,25 +98,25 @@ Predefined alerts are intended to highlight high-use resources in your tenant th
 ### How it works
 Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and navigate to the **Monitor** > **Overview** page. Once on the page, you see two cards.
 
-:::image type="content" source="media/monitor-overview-page.jpg" alt-text="Monitor overview page that displays two cards. One summarizes the state of your triggered custom alerts, the other summarizes the state of your triggered predefined alerts." lightbox="media/monitor-overview-page.jpg":::
+:::image type="content" source="media/monitor-overview-page.jpg" alt-text="Screenshot of the Monitor overview page displaying two cards summarizing custom and predefined alerts." lightbox="media/monitor-overview-page.jpg":::
 
 The **Triggered custom alerts** card on the left shows you the state of your triggered custom alerts in your tenant. These are alerts that you have defined. The visual in this card breaks down your triggered custom alerts by severity level, and the **Top priorities** section below calls out which of your alerts have triggered most recently. Select those alerts to see the triggered alert experience for that custom alert. 
 
 The **Triggered alerts for high-use items** card on the right shows you which of the predefined alerts have triggered. Similarly, the visual at the top of the card shows a breakdown of the predefined alerts by product type. Select one of the alerts in the **Top alerts from Microsoft** section to view this experience:
 
-:::image type="content" source="media/triggered-predefined-alert.jpg" alt-text="Image that shows the triggered predefined alert experience." lightbox="media/triggered-predefined-alert.jpg":::
+:::image type="content" source="media/triggered-predefined-alert.jpg" alt-text="Screenshot of the triggered predefined alert experience showing high-use cloud flows." lightbox="media/triggered-predefined-alert.jpg":::
 
 As an example, here you can see all the high-use cloud flows in your tenant that have triggered this alert, regardless of whether the flow is a Managed Environment or not. Like the custom triggered alert experience, selecting a specific flow in this list displays a pane that shows you how each metric for that flow has trended over time. 
 
-:::image type="content" source="media/monitor-resource-panel.jpg" alt-text="Monitor resource pane that shows metrics and how they've trended over time for a given resource." lightbox="media/monitor-resource-panel.jpg":::
+:::image type="content" source="media/monitor-resource-panel.jpg" alt-text="Screenshot of the Monitor resource pane displaying metrics and their trends over time." lightbox="media/monitor-resource-panel.jpg":::
 
 You can also see a list of your predefined alerts and view their details in the **Alerts** section of the **Monitor** area. Select **Alerts** and scroll to the bottom of the page to view the predefined alerts. 
 
-:::image type="content" source="media/predefined-alert-list.jpg" alt-text="This image shows predefined alerts listed alongside your custom alerts under Alert Rules in the Alerts section of Monitor" lightbox="media/predefined-alert-list.jpg":::
+:::image type="content" source="media/predefined-alert-list.jpg" alt-text="Screenshot of predefined alerts listed alongside custom alerts in the Alert Rules section." lightbox="media/predefined-alert-list.jpg":::
 
 Selecting the three dots next to the alert and then **Details** displays a pane that shows how the predefined alert has been configured. These alerts can't be edited or deleted. 
 
-:::image type="content" source="media/predefined-alert-details.jpg" alt-text="This image shows how if you select Details on a predefined alert in the Alert rules page, it displays a pane that shows you details on how this alert is defined." lightbox="media/predefined-alert-list.jpg":::
+:::image type="content" source="media/predefined-alert-details.jpg" alt-text="Screenshot of the predefined alert details pane showing the alert configuration." lightbox="media/predefined-alert-list.jpg":::
 
 ## Frequently asked questions (FAQs)
 
