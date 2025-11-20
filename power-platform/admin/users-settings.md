@@ -21,7 +21,7 @@ Manage user settings in the Power Platform admin center.
 
 2. Select **Settings** from the navigation pane to see the **Tenant settings** page.  
 
-3. Expand the **Users + permissions** category and select **Users** to see **User management** page.
+3. Expand the **Users + permissions** category and select **Users** to see the **User management** page.
 
 4. Find a user name from the **Name** list and select the check mark near the name.
 
