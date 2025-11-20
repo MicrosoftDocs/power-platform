@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - Power Virtual Agents",
+    "title": "Microsoft Power Platform REST API - Copilot Studio",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -10,7 +10,7 @@
     "https"
   ],
   "paths": {
-    "/powervirtualagents/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine": {
+    "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine": {
       "get": {
         "tags": [
           "Bots"
@@ -55,7 +55,7 @@
         }
       }
     },
-    "/powervirtualagents/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine/SetAsQuarantined": {
+    "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine/SetAsQuarantined": {
       "post": {
         "tags": [
           "Bots"
@@ -100,7 +100,7 @@
         }
       }
     },
-    "/powervirtualagents/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine/SetAsUnquarantined": {
+    "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine/SetAsUnquarantined": {
       "post": {
         "tags": [
           "Bots"
