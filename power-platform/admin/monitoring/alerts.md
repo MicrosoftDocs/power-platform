@@ -4,7 +4,7 @@ description: Learn more about how to create alerts to track and monitor the oper
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/14/2025
+ms.date: 11/20/2025
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: sericks
@@ -105,8 +105,6 @@ Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.co
 The **Triggered custom alerts** card on the left shows you the state of your triggered custom alerts in your tenant. These alerts are ones that you define. The visual in this card breaks down your triggered custom alerts by severity level, and the **Top priorities** section below calls out which of your alerts triggered most recently. Select those alerts to see the triggered alert experience for that custom alert. 
 
 The **Triggered alerts for high-use items** card on the right shows you which of the predefined alerts triggered. Similarly, the visual at the top of the card shows a breakdown of the predefined alerts by product type. Select one of the alerts in the **Top alerts from Microsoft** section to view this experience:
-
-:::image type="content" source="media/triggered-predefined-alert.jpg" alt-text="Screenshot of the triggered predefined alert experience showing high-use cloud flows." lightbox="media/triggered-predefined-alert.jpg":::
 
 As an example, here you can see all the high-use cloud flows in your tenant that have triggered this alert, regardless of whether the flow is a Managed Environment or not. Like the custom triggered alert experience, selecting a specific flow in this list displays a pane that shows you how each metric for that flow has trended over time. 
 
