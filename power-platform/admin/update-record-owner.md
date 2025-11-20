@@ -45,4 +45,11 @@ You can also set a user with the **Disabled** status as the owner of a record (r
 If there are related tables and the relationship behavior is set to parental, updating the record’s owner and/or owning business unit can have a cascading effect. See [About the assign action](/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior).
 
 
+## Reassign all records belonging to a user
+
+To reassign all records from one user to yourself or another user, use the **Reassign Records** tool in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). See [User Settings](user-settings.md) for more information on how to navigate to the **Reassign Records** tool.
+
+> [!NOTE]
+> This process will move all records owned by the selected user or team regardless of state. This will also unpublish any workflows that you assign to another user. Before the assigned workflows can be used, the new owner must publish them again.
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
