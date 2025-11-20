@@ -28,9 +28,9 @@ Complete the following steps to assign Power Apps premium licenses to users.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
    
-1. In the navigation pane, select **Licenses**.
+1. In the navigation pane, select **Licensing**.
 
-1. In the pane, select **Power Apps**.
+1. In the **Licensing** pane, select **Power Apps**.
 
 1. Select the **Intelligent recommendations** tab.
 
