@@ -38,7 +38,7 @@ Manage user settings in the Power Platform admin center.
    | Change business unit | Assign a different business unit to the user. | [Change the business unit for a user](create-edit-business-units.md#change-the-business-unit-for-a-user) |
    | Manage teams | Add or remove a user from a team. | [Microsoft Dataverse teams management](manage-teams.md) |
    | Change channel | Change the release channel for a user, overriding the environment or app release channel. | [User channel override](user-channel-override.md) |
-   
+
 ## See also
 
 [Create users](create-users.md)
