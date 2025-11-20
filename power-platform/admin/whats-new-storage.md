@@ -81,105 +81,31 @@ Your organization must have the right licenses for the storage you use:
 
 If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing extra operations storage capacity.
 
-### Request a temporary extension
+## Manage overages
 
-If your database storage is over capacity, admins can't copy or restore any of their environments.
+You can manage capacity overages by opting for pay-as-you-go, reallocating from within your tenant, or increasing entitled capacity. You can also request a capacity extension after 80% overall consumption, up to three (3) times in the last 365 days and after the expiry of an existing extension to manage overages. By enabling a tenant capacity extension, you have 45 days to reduce capacity usage and/or purchase more capacity.
 
-:::image type="content" source="media/capacity-overage.png" alt-text="Storage exceeding capacity.":::
+### Manage capacity
 
-**Request:** Require a similar image in green PPAC
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as a system admin.
+1. On the navigation pane, select **Licensing**.
+1. Select **Dataverse**.
+1. Select **Manage capacity**.
+1. On the *Manage capacity* pane, select an environment to see capacity management options for that environment. You have the option to draw from available capacity within the tenant or bill to your pay-as-you-go billing plan. You can also select the option to receive an overage notification when the environment nears reaching any amount between 50—100%.
+1. Select **Save**.
 
-You can request a temporary (30-day) extension that allows copy and restore operations during the extension. To do so, follow these steps.
+### Enable capacity extension
 
-#### Extension request for copy
-
-###### [New admin center](#tab/new)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as a tenant admin.
-2. In the navigation pane, select **Manage**.
-3. In the **Manage** pane, select **Environments**.
-4. Select an environment from the list.
-5. Select **Copy** from the command bar.
-6. Select and enter the various copy options, and then select **Copy**.
-7. Select **Confirm**.
-8. The **Copy environment** page appears where you can select **Request an extension**.
-
-**Request:** Require a proper image to request an extension in green PPAC
-
-###### [Classic admin center](#tab/old)
-
-1. Sign in as a tenant admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select an environment.
-2. Select **Copy** from the command bar.
-3. Select and enter the various copy options, and then select **Copy**.
-4. Select **Confirm**.
-5. The **Copy environment** page appears where you can select **Request an extension**.
-
-:::image type="content" source="media/capacity-request-extension.png" alt-text="Request extension.":::
-
----
-
-#### Extension request for Restore
-
-###### [New admin center](#tab/new)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity).
-
-   > [!Note]
-   > - Be sure to select the correct tenant to extend the storage capacity for 30 days. 
-   > - You can extend capacity on your account a maximum of three times.
-
-2. If you're running low on storage capacity, you see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
-
-**Request:** Require a proper image for this step in green PPAC
-
-3. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
-
-**Request:** Require a proper image for this step in green PPAC
-
-4. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
-
-**Request:** Require a proper image for this step in green PPAC
-
-5. Select **Confirm**.
-
-6. A banner displays the temporary capacity extension is now active.
-
-   **Request:** Require a proper image for this step in green PPAC
-
-   After turning on the extension, for the next 30 days the extra capacity appears in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
-
-   **Request:** Require a proper image for this step in green PPAC  
-
-
-###### [Classic admin center](#tab/old)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity).
-
-   > [!Note]
-   > - Be sure to select the correct tenant to extend the storage capacity for 30 days. 
-   > - You can extend capacity on your account a maximum of three times.
-
-2. In the navigation pane, select **Resources** > **Capacity**.
-
-3. If you're running low on storage capacity, you see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
+1. Go to the Dataverse *Licenses* page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/dataverse/overview).
+1. If you're running low on storage capacity, the **Enable capacity extension** button is highlighted.
 
    :::image type="content" source="media/storage-extend-capacity-banner.png" alt-text="Extend capacity in Power Platform admin center." lightbox="media/storage-extend-capacity-banner.png":::
 
-4. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
+1. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
 
    :::image type="content" source="media/storage-extend-capacity-details.png" alt-text="Extend capacity details." lightbox="media/storage-extend-capacity-details.png":::
 
-5. Select **Confirm**.
-
-6. A banner displays the temporary capacity extension is now active.
-
-   :::image type="content" source="media/storage-extend-capacity-success.png" alt-text="Successfully tenant capacity extension." lightbox="media/storage-extend-capacity-success.png"::::::
-
-    After turning on the extension, for the next 30 days the extra capacity appears in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
-
-   :::image type="content" source="media/storage-extend-capacity-banner-30-days.png" alt-text="Tenant capacity extension in admin center." lightbox="media/storage-extend-capacity-banner-30-days.png":::
-
----
+1. Select **Confirm**.
 
 #### About extensions
 
@@ -194,13 +120,14 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 
 | Date | Description |
 |------|-------------|
+| April 2025 | We are making internal adjustments to how Web Resources are stored in a Dataverse organization. Web Resources continue to be reported as file store, however, customers may see the size of *WebResourceBase* fluctuate as storage is transitioned internally. Dataverse doesn't expect storage to significantly increase for *WebResourceBase*, but may temporarily drop as files are transitioned. |
 | June 2022 | The new finance and operations storage capacity report gives you a way to visualize your organization's storage usage versus your entitlement. |
 | September 2021 | We're providing included initial storage capacity for the default environment: 3-GB Dataverse database capacity, 3-GB Dataverse file capacity, and 1-GB Dataverse log capacity. Go to [The default environment](environments-overview.md#default-environment). |
 | June 2021 | Storage capacity notification emails are introduced and rolled out in phases. Tenant admins now receive emails when their tenant's entitled storage capacity is running out of, or exceeding, available capacity. For details for new model storage, go to [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For legacy model details, go to [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). |
 | January 2021 | We added database, log, and file storage capacity that is included with the Project for the Web licenses. Go to [Project for the web and Microsoft Dataverse](/office365/servicedescriptions/project-online-service-description/project-online-service-description#project-roadmap-and-power-automate). |
 | January 2021 | The amount of default Dataverse database capacity entitled per tenant for both the per-app and per-flow licenses increased from **1 GB** to **5 GB**. The corresponding update to the ["Subscription Capacity" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) is in progress and should be published soon. |
 | December 2020 | As part of our storage optimization efforts, we continue to make improvements. In December 2020, we included most of the *WebResourceBase* table and *RibbonClientMetadataBase* table as part of file storage. Customers see file storage consumption increase and database consumption decrease based on the amount of data in these tables. This effort will continue for other tables in the future. Check back here to see when more tables go through a similar transition. |
-| April 2025 | We are making internal adjustments to how Web Resources are stored in a Dataverse organization. Web Resources continue to be reported as file store, however, customers may see the size of *WebResourceBase* fluctuate as storage is transitioned internally. Dataverse doesn't expect storage to significantly increase for *WebResourceBase*, but may temporarily drop as files are transitioned. |
+
 
 ### Related information
 
