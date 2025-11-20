@@ -1,14 +1,18 @@
 ---
-title: "Update a record Owner and Owning Business Unit"
-description: "Learn to update a record’s owner, an Owning Business Unit, or both an Owner and Owning Business Unit because the record changes ownership."
+title: Update a record Owner and Owning Business Unit
+description: Learn to update a record’s owner, an Owning Business Unit, or both an Owner and Owning Business Unit because the record changes ownership.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/28/2023
+ms.date: 11/20/2025
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
+contributors:
+   - MichaelPDuda-Microsoft
+
 ---
+
 # Update a record Owner and Owning Business Unit
 
 There are situations where you need to update a record’s owner, an Owning Business Unit, or both an owner and Owning Business Unit because the record changes ownership. If you have enabled the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure), you can update the record’s owning business unit. 
@@ -39,15 +43,13 @@ You can also set a user with the **Disabled** status as the owner of a record (r
 > [!NOTE]
 > If there is no security role assigned to the user with **Disabled** status and you want to change record ownership to this user, you can enable the `allowRoleAssignmentOnDisabledUsers` setting using the [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm) tool to assign role to this user.
 
-
 ## Table relationship and cascading behavior 
 
 If there are related tables and the relationship behavior is set to parental, updating the record’s owner and/or owning business unit can have a cascading effect. See [About the assign action](/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior).
 
-
 ## Reassign all records belonging to a user
 
-To reassign all records from one user to yourself, a team, or another user, use the **Reassign Records** tool in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). See [Users Settings](users-settings.md) for more information on how to navigate to the **Reassign Records** tool.
+To reassign all records from one user to yourself, a team, or another user, use the **Reassign Records** tool in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). Go to the [Users settings](users-settings.md) article for more information on how to navigate to the **Reassign Records** tool.
 
 > [!NOTE]
 > This process will move all records owned by the selected user or team regardless of state. This will also unpublish any workflows that you assign to another user. Before the assigned workflows can be used, the new owner must publish them again.
