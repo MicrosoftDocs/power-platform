@@ -21,9 +21,11 @@ Manage user settings in the Power Platform admin center.
 
 2. Select **Settings** from the navigation pane to see the **Tenant settings** page.  
 
-3. Find a user name from the **Name** list and select the check mark near the name.
+3. Expand the **Users + permissions** category and select **Users** to see **User management** page.
 
-4. Select a user setting:
+4. Find a user name from the **Name** list and select the check mark near the name.
+
+1. Select a user setting:
 
    | Setting | Description | For more information |
    | ------- | ----------- | -------------------- |
@@ -32,11 +34,11 @@ Manage user settings in the Power Platform admin center.
    | Refresh user | Resync the **User** page from Microsoft Entra ID. | |
    | Change position | Assign a position to a user. | [Hierarchy security to control access](hierarchy-security.md) |
    | Change manager  | Assign a manager to a user. | [Hierarchy security to control access](hierarchy-security.md) |
-   | Reassign records | Assign all records owned by the current user or team to another user or team. | |
+   | Reassign records | Assign all records owned by the current user or team to another user or team. |[Reassign all records belonging to a user](update-record-owner.md#reassign-all-records-belonging-to-a-user) |
    | Change business unit | Assign a different business unit to the user. | [Change the business unit for a user](create-edit-business-units.md#change-the-business-unit-for-a-user) |
    | Manage teams | Add or remove a user from a team. | [Microsoft Dataverse teams management](manage-teams.md) |
    | Change channel | Change the release channel for a user, overriding the environment or app release channel. | [User channel override](user-channel-override.md) |
-
+   
 ## See also
 
 [Create users](create-users.md)
