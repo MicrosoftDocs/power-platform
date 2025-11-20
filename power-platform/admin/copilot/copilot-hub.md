@@ -4,7 +4,7 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/03/2025
+ms.date: 11/10/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -57,6 +57,20 @@ Admins can define who within an environment can use Copilot capabilities in mode
 | Power Apps | [Visualize with Copilot](/power-apps/user/visualize-data-in-copilot)|
 | Power Apps | [Natural language search and filtering](/power-apps/user/find-data-with-ai) |
 
+### Turn on or off AI capabilities in Dynamics 365 Sales
+
+As a tenant administrator, you can turn on or off AI capabilities such as Copilot and AI agents in Dynamics 365 Sales, across environments, and environment groups. This setting helps you centrally manage AI usage across your organization. By default, the AI capabilities are turned on in all environments. If you turn off the capability, the features are turned off automatically in Dynamics 365 Sales.  
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the left navigation pane, select **Copilot**
+1. In the **Copilot** pane, select **Settings**.
+1. On the **Settings** page, under **Dynamics 365 Sales**, select one of the following AI capabilities that you want to turn on:
+   - **AI Agents**: Lets you turn on out-of-the-box Sales AI agents such as Sales Qualification Agent and Sales Close Agent. Learn more about Sales AI agents in [Sales AI Agents Overview](/dynamics365/sales/ai-agent-overview).
+   - **Copilot**: Lets you turn on Copilot chat and other Copilot skills such as opportunity summary and lead summary in Dynamics 365 Sales. Learn more about Copilot in Dynamics 365 Sales in [Copilot in Dynamics 365 Sales overview](/dynamics365/sales/copilot-overview).
+1. Select an environment or environment group in the corresponding tab and select **Add**.
+1. Select **On** to turn on the AI capability.
+1. Select **Save**.
+
 ## Product pages
 The product pages contain usage and cost insights specific to each product. Currently, there are product pages for **Copilot Studio**, **Power Apps**, and **Power Pages**.
 
@@ -65,7 +79,7 @@ The product pages contain usage and cost insights specific to each product. Curr
 The **Copilot Studio** page provides valuable insights about agents built in Copilot Studio. Admins can view message consumption data, with more licensing details available through the **Licensing** area of the Power Platform admin center. Admins can view the number of active agents, defined as agents with active sessions in the last 28 days, and the agent session success rate, which is the percentage of sessions resolved by conversational agents or runs that are successful for autonomous agents. The agent table displays the top 10 agents ranked by monthly active sessions.
 
 > [!NOTE]
-> - The **Copilot Studio** page doesn't include agents built with the lite version of Copilot Studio at this time.
+> - The **Copilot Studio** page doesn't include agents built with Agent Builder in Microsoft 365 Copilot at this time.
 > - During the initial weeks of rollout, data is populated over a 28-day lookback period, resulting in an incomplete month initially.
 
 ### Power Apps
