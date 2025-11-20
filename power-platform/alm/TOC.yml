@@ -36,6 +36,8 @@
           items:
             - name: Organize solutions
               href: organize-solutions.md
+            - name: Solution performance recommendations
+              href: performance-recommendations.md
             - name: Use table segmentation in solutions
               href: segmented-solutions-alm.md
     - name: Tools and apps used
