@@ -60,7 +60,7 @@ In addition to enabling the environment settings, when using individual user lev
 
 ## Known issues when users aren't properly assigned privileges
 
-If the user level access control is enabled, users without the **Allow user to access TDS endpoint** miscellaneous privilege get the error message "Attempted to perform an unauthorized operation. User misses prvAllowTDSAccess privilege" when trying to retrieve data using the TDS endpoint. The error message can occur at different points depending on the application being used.
+If the user level access control is enabled, users without the **Allow user to access TDS endpoint** miscellaneous privilege get the error message "Attempted to perform an unauthorized operation. User misses prvAllowTDSAccess privilege" or "Attempted to perform an unauthorized operation. User <guid> is missing prvAllowTDSAccess privilege" when trying to retrieve data using the TDS endpoint. The error message can occur at different points depending on the application being used.
 
 Another issue occurs in Power BI desktop with the Dataverse connector in the **Get Data** dialog when displaying the environment list in the navigator and trying to expand the table list. This action fails with an authentication error or the missing privilege error.
 
