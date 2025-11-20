@@ -3,7 +3,7 @@ title: View intelligent recommendations about licensing
 description: View intelligent recommendations about who in your organization would benefit from having a Power Apps license.
 author: sericks007
 ms.topic: overview
-ms.date: 10/24/2024
+ms.date: 11/20/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -26,11 +26,13 @@ Complete the following steps to assign Power Apps premium licenses to users.
 > [!Note]
 >  Power Platform admins can assign users to the security groups that the admins own.   
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
    
-2. In the navigation pane, select **Billing** > **Licenses**.
+1. In the navigation pane, select **Licenses**.
 
-3. Select the **Intelligent recommendations** tab.
+1. In the pane, select **Power Apps**.
+
+1. Select the **Intelligent recommendations** tab.
 
 4. In the **Power Apps** web part, select **View + assign**. 
 
