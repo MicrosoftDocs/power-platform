@@ -37,22 +37,22 @@ You can delete a business unit to completely remove it. To delete a business uni
   
 1. Select the business unit that you want to disable.  
   
-1. On the Actions toolbar, choose **More Actions** > **Disable**.  
+1. On the toolbar, select **Disable**.
   
 > [!IMPORTANT]
 > When you disable a business unit which has child business units, all child business units (all depths) are disabled.
 > 
 > All users and teams associated with the business unit or child business units won't be able to sign in. You must reparent users and teams to another business unit and reassign security roles.
 
-1. In the **Confirm Deactivation** dialog box, choose **Deactivate**.  
+1. In the **Confirm Deactivation** dialog box, select **Deactivate**.  
 
 ## Delete a business unit
 
 1. Change the view to **Inactive Business Units**.
 
-1. Select the business unit to delete, and then choose the **Delete** icon ![Delete button.](../admin/media/delete.png "Delete button").  
+1. Choose the business unit to delete, and then select **Delete**. ![Delete button.](../admin/media/delete.png "Delete button").  
   
-1. In the **Confirm Deletion** dialog box, choose **Delete**.  
+1. In the **Confirm Deletion** dialog box, select **Delete**.  
   
 > [!IMPORTANT]
 > When you need to delete a business unit which has child business units, all child business units (all depths) must be deleted first.
