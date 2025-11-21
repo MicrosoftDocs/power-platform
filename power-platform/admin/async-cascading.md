@@ -1,5 +1,5 @@
 ---
-title: Asynchronous processing of cascading transactions | Microsoft Docs
+title: Asynchronous processing of cascading transactions
 description: Learn how to configure cascading operations to process asynchronously.
 services: powerapps
 author: NHelgren
