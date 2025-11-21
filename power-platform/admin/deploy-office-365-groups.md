@@ -76,7 +76,7 @@ Once installation of the solution has completed, you can configure Microsoft 365
   
 1. Choose the security role to check and then select the **Customization** tab.  
   
-1. In the **Miscellaneous Privileges** section, review the **ISV Extensions** privilege setting. If the security role doesn't have the **ISV Extensions** privilege, select it to set it to Organization.  
+1. In the **Miscellaneous Privileges** section, review the *ISV Extensions* privilege setting. If the security role doesn't have the *ISV Extensions* privilege, select **Organization** from the dropdown in the *Privilege Level* column.  
   
 1. Select **Save and Close**.  
   
