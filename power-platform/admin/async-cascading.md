@@ -4,7 +4,7 @@ description: Learn how to configure cascading operations to process asynchronous
 services: powerapps
 author: NHelgren
 ms.component: pa-admin
-ms.topic: concept-article
+ms.topic: concept
 ms.date:11/20/2025
 ms.subservice: admin
 ms.author: nhelgren
