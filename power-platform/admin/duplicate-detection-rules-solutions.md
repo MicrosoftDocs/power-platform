@@ -73,7 +73,7 @@ To create a duplicate detection rule, you must create a separate solution for th
 
 1. Create a solution and add the rule to the solution.
 
-    1. Sign in to [Power Apps](https://make.powerapps.com/).and select the environment from the environment picker in the top-right where you created your duplicate detection rule.
+    1. Sign in to [Power Apps](https://make.powerapps.com/) and select the environment from the environment picker in the top-right where you created your duplicate detection rule.
     
     1. In the left navigation pane, select **Solutions**, and then select **New solution**. For details about creating a solution, go to [Create a solution](/power-apps/maker/data-platform/create-solution).
 
