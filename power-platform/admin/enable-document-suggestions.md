@@ -35,13 +35,13 @@ When you enable document suggestions, your Dynamics 365 apps web browser and mob
 
 - Confirm the following is set up:
 
-  - **Dataverse search is enabled and configured**. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Configure Dataverse search for the organization](../admin/configure-relevance-search-organization.md)  
+  - **Dataverse search is enabled and configured**. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Configure Dataverse search for the organization](../admin/configure-relevance-search-organization.md).  
   - **Document management is set up in Dynamics 365 apps**. See [Set up SharePoint integration](set-up-sharepoint-integration.md).
 
 - Complete the following tasks:
 
-  - Enables the Azure Text Analytics connection in Dynamics 365 apps.
-  - Defines a similarity rule for each entity type that's included in Document Suggestions. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Use advanced similarity rules to view similar case suggestions](/dynamics365/customer-service/suggest-similar-cases-for-a-case).
+  - Enable the Azure Text Analytics connection in Dynamics 365 apps.
+  - Define a similarity rule for each entity type that's included in Document Suggestions. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Use advanced similarity rules to view similar case suggestions](/dynamics365/customer-service/suggest-similar-cases-for-a-case).
 
 ## How it works
 
@@ -80,11 +80,11 @@ You can include external sites, such as an on-premises SharePoint document libra
   
  The values found in the text fields of the similarity-rules mappings are the keywords used to build the query that's passed to the external site. In the following URL, *keyword* is the text value found in the similarity-rules mappings and *&* represents a whitespace that Document Suggestions uses to separate each keyword.
   
- *https://contoso.com/search?keywordA&keywordB&keywordC*  
+ `https://contoso.com/search?keywordA&keywordB&keywordC`  
   
  For an on-premises SharePoint server, you can add an external URL that points to a subsite similar to the following URL, where *mysharepoint* is the website name, *sites* is the site name, and *subsitename* is the subsite name.
   
-   <em>https://mysharepoint/sites/subsitename/_layouts/15/osssearchresults.aspx?&k={0}</em>  
+ `https://mysharepoint/sites/subsitename/_layouts/15/osssearchresults.aspx?&k={0}`  
   
 ## Set up the Azure text analytics connection
 
