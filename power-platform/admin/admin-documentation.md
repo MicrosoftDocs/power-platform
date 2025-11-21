@@ -19,7 +19,6 @@ Learn more about the Power Platform admin center in the following sections:
 - [Watch a video about the admin center](#watch-a-video-about-the-admin-center)
 - [Find admin center feature areas](#find-admin-center-feature-areas)
 - [Understand the admin center user interface](#understand-the-admin-center-user-interface)
-- [Manage your features and settings](#manage-your-features-and-settings)
 
 ## Watch a video about the admin center
 
@@ -40,6 +39,9 @@ The Power Platform admin center feature areas are located on the left navigation
 |Licensing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. |[View license consumption](view-license-consumption-issues.md) |
 |Support     | <p>Get a list of self-help solutions or create a support ticket for technical support.</p><p>**Note**: Although you administer Power BI using the Power BI admin portal, you request support for Power BI through support in the Power Platform admin center.</p> | [Get Help + Support](./get-help-support.md)  |
 
+> [!NOTE]
+> Power BI administrators use the [Power BI admin portal](https://app.powerbi.com) to manage a Power BI tenant including the configuration of governance policies, usage monitoring, and provisioning of licenses, capacities, and organizational resources. Learn more about Power BI admin portal in [What is Power BI administration?](/power-bi/service-admin-administering-power-bi-in-your-organization).
+
 ## Understand the admin center user interface
 
 The Power Platform admin center is designed with an outcome-driven approach, where all functionality is intuitively organized in pages based on administrative tasks. The admin center is task-oriented to help you easily achieve specific outcomes and goals.
@@ -54,37 +56,23 @@ Legend:
 4. [Power Platform pages](#4-power-platform-pages)
 
 ### 1. Navigation pane
+
 Find Power Platform admin center pages on the left navigation pane to complete tasks. Select different pages to deploy, manage, secure, and monitor your Power Platform implementation.
 
 ### 2. Settings icon
+
 Select the gear icon to manage tenant settings, view session details, change the user interface theme, change your password, or update contact preferences.
 
 ### 3. Admin center links
-Access related admin centers, such as the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage), [Microsoft Entra admin center](https://entra.microsoft.com/#home), and [Power BI admin portal](https://dxt.powerbi.com/admin-portal/capacities?experience=power-bi). 
+
+Access related admin centers, such as the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/homepage), [Microsoft Entra admin center](https://entra.microsoft.com/#home), and [Power BI admin portal](https://dxt.powerbi.com/admin-portal/capacities?experience=power-bi).
 
 ### 4. Power Platform pages
+
 Complete administrative functions on each of the Power Platform admin center pages.
 
-
-## Manage your environments and settings
-
-The Power Platform admin center provides the following capabilities.
-
-|Feature area  |Description  | Learn more |
-|---------|---------|----------------|
-|Actions | View recommendations about your Power Platform implementation. The recommendations enhance security, reliability, and overall health of your implementation.  |[Use the actions page](power-platform-advisor.md)|
-| Manage |  Manage your environments, environment groups, and tenant settings.| <ul><li>[Power Platform environments overview](environments-overview.md)</li><li>[Environment groups](environment-groups.md)</li><li>[Tenant settings](tenant-settings.md)</li></ul> |
-|Security | Run your organizational workloads in the safest way possible with a wide set of security features available. | [Security page overview](security/security-overview.md) |
-| Copilot | Access educational resources, track usage, and access governance controls about Copilot features. | [Manage Copilot](copilot/copilot-hub.md) |
-| Monitor | Measure and improve operational health metrics of resources built or deployed in Power Platform, such as apps. | [Monitor page (preview)](monitoring/monitoring-overview.md) |
-|Deployment     | The Deployment page in the Power Platform admin center provides a streamlined experience to help administrators navigate the complexities of managing Power Platform application lifecycle management (ALM) workloads, including managing pipelines deployments at enterprise scale. Admins have visibility to all the deployments in their tenant and can approve deployment requests and troubleshoot issues.| [Admin deployment page (preview)](../alm/admin-deployment-hub.md) |
-|Licensing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. |[View license consumption](view-license-consumption-issues.md) |
-|Support     | <p>Get a list of self-help solutions or create a support ticket for technical support.</p><p>**Note**: Although you administer Power BI using the Power BI admin portal, you request support for Power BI through support in the Power Platform admin center.</p> | [Get Support](./get-help-support.md)  |
-
-> [!Note]
-> Power BI administrators use the [Power BI admin portal](https://app.powerbi.com) to manage a Power BI tenant including the configuration of governance policies, usage monitoring, and provisioning of licenses, capacities, and organizational resources. Learn more about Power BI admin portal in [What is Power BI administration?](/power-bi/service-admin-administering-power-bi-in-your-organization).
-
 ### Related content
+
 [Training: Microsoft Power Platform Fundamentals](/training/paths/power-plat-fundamentals)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
