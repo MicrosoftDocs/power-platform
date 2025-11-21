@@ -93,11 +93,12 @@ search.audienceType:
 ## What triggers automatic posts to the Yammer newsfeed?  
 
 > [!IMPORTANT]
-> As of June 26, 2018, Yammer deprecated the Activity stream and its related APIs so auto-posts can no longer be enabled. For more information, see [Open Graph Actions & Activity stories](https://developer.yammer.com/blog/open-graph-actions-activity-stories).
+> As of June 26, 2018, Yammer deprecated the Activity stream and its related APIs so auto-posts can no longer be enabled.
 
 ## Additional considerations  
   
-### When connecting with a federated Yammer  
+### When connecting with a federated Yammer
+
  If you have configured [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] to use single sign-on, you'll need to generate and use a temporary password to connect to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)].  
   
 1. Sign in to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] with the single sign-on credentials.  
