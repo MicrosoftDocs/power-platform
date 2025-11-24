@@ -32,10 +32,10 @@ With Dataverse search set to **On**, a search box is available at the top of eve
     Users can have a “conversation” with their data and identify themes, patterns, and insights using natural language. Apply AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to deliver quality results.
   	
 - **Unified search**
-    Dataverse search lets you quickly find content in model-driven apps and other products that use Dataverse through a single, unified search experience. Provide a better user experience compared to [quick find](quick-find.md) search, where all words in the search term must be found in one column. 
+    Dataverse search lets you quickly find content in model-driven apps and other products that use Dataverse through a single, unified search experience. Provide a better user experience compared to [quick find](/power-apps/quick-find) search, where all words in the search term must be found in one column. 
   	
 - **Efficient relevance-based results**
-    Intelligent, ranking algorithms return the most-relevant records first, with a performance that's superior to [categorized search](quick-find.md#multiple-table-quick-find-categorized-search), which reduces the time spent searching and increasing its accuracy.
+    Intelligent, ranking algorithms return the most-relevant records first, with a performance that's superior to [categorized search](/power-apps/user/quick-find#multiple-table-quick-find-categorized-search), which reduces the time spent searching and increasing its accuracy.
   	
 - **Smart fuzzy search**
     Handles variations in spelling and terminology so that it doesn't depend on exact keyword matches.
@@ -68,10 +68,11 @@ With Dataverse search set to **On**, a search box is available at the top of eve
 
 Dataverse search is an opt-out feature, set to **On** for all new production environments and **Default** for all other [environment types](/power-platform/admin/environments-overview#environment-types). We recommend using Dataverse search so users have a search experience in model-driven apps and harness the power of Copilot experiences.
 
-This setting can be found in the Power Platform admin center. Learn more in [Search](settings-features#search).
+This setting can be found in the Power Platform admin center. Learn more in [Search](settings-features.md#search).
+
 <img width="1125" height="582" alt="image" src="https://github.com/user-attachments/assets/ee6047e9-fe9a-4796-89e5-c6f59b518b46" />
 
-In the Power Platform admin center, admins can [use the Dataverse Search setting](configure-relevance-search-organization#managing-dataverse-search) to manage it. The state selected for Dataverse search impacts the ability to leverage Dataverse data across the enabled experiences for all the organization.
+In the Power Platform admin center, admins can [use the Dataverse Search setting](configure-relevance-search-organization.md#managing-dataverse-search) to manage it. The state selected for Dataverse search impacts the ability to leverage Dataverse data across the enabled experiences for all the organization.
 
 The following tables show how each Dataverse search setting impact global search experiences including SearchQuery API and generative AI experiences, and how admins can use this setting to manage it.
 
