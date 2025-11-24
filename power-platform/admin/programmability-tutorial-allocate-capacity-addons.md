@@ -41,7 +41,7 @@ Not all add-ons are available in the Power Platform admin center UI. As new add-
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Licensing**.
-1. In the **Licensing88 pane, select **Capacity add-ons**.
+1. In the **Licensing** pane, select **Capacity add-ons**.
 1. Select the **Add-ons** tab.
 1. Select the **Manage** link.
 
