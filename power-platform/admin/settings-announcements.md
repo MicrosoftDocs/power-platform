@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/09/2021
+ms.date: 11/24/2025
 ms.subservice: admin
 ms.author: sericks 
 search.audienceType: 
@@ -18,7 +18,15 @@ search.audienceType:
 
 Circulate information quickly to a wide set of users at one go by using Announcements in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Announcements can also serve as message boards, where you can post topics of your interest that you wish to share, or get answers to.
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Announcements**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Environments**.
+
+1. Select an environment.
+
+1. Go to **Settings** > **Data management** > **Announcements**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
