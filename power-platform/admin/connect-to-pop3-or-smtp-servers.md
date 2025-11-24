@@ -21,6 +21,8 @@ Follow the steps in this article to set up server-side synchronization to send a
 
 ## Create an email server profile for Gmail accounts
 
+To create an email server profile for Gmail accounts, take the following steps:
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Manage**.
 1. On the **Manage** pane, select **Environments**.
@@ -39,6 +41,8 @@ Follow the steps in this article to set up server-side synchronization to send a
 
 ## Create an email server profile by using the legacy web app
 
+To create an email server profile using the legacy web app, take the following steps:
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Manage**.
 1. On the **Manage** pane, select **Environments** and then select an environment
@@ -47,7 +51,7 @@ Follow the steps in this article to set up server-side synchronization to send a
 1. On the command bar, select **Go to legacy**.
 1. On the command bar in Microsoft Dynamics 365, select **New** > **POP3/SMTP Server**.
 
-1. **For an Exchange email server profile, specify the following details:**  
+1. For an Exchange email server profile, specify the following details:  
 
    |                                Fields                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
    |-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -75,7 +79,7 @@ Follow the steps in this article to set up server-side synchronization to send a
 
 ## Configure default email processing and synchronization
 
-Set server-side synchronization to be the default configuration method.  
+To set server-side synchronization to be the default configuration method, take the following steps:  
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments), select an environment.
 1. Select **Settings** > **Email** > **Email settings**.  
@@ -89,7 +93,7 @@ Set server-side synchronization to be the default configuration method.
    > [!NOTE]
    > The **Server-Side Synchronization or Email Router** setting for Appointments, Contacts, and Tasks isn't supported for the POP3-SMTP profile.  
 
-     If you leave **Email processing for unapproved user and queues** at the default values (selected), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.
+  If you leave **Email processing for unapproved user and queues** at the default values (selected), you need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.
 
 1. Select **Save**.  
 
@@ -136,18 +140,18 @@ To approve each user mailbox or queue before that mailbox can process email, tak
 1. Select the mailboxes that you want to approve, and then select **Approve Email**.  
 1. Select **OK**.  
 
-## Test configuration and enable mailboxes 
+## Test the configuration of mailboxes 
 
-To test the email configurations of and enable the selected mailboxes, take the following steps:
+To test the configuration of selected mailboxes, take the following steps:
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments), select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.  
 1. Expand the table title dropdown and select **Active Mailboxes**.  
 1. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
 
-This tests the incoming and outgoing email configurations of selected mailboxes and enables them for email processing. If an error occurs in a mailbox, you see an alert on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps will try to process the email again after some time or disable the mailbox for email processing.  
+This tests the incoming and outgoing configurations of selected mailboxes and enables them for email processing. If an error occurs in a mailbox, you see an alert on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps will try to process the email again after some time or disable the mailbox for email processing.  
 
-To see email configuration test results, look at the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** fields of a mailbox record. Each successful email configuration for a mailbox also generates an alert for you and the mailbox owner.
+To see email configuration test results, look at the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** fields of a mailbox record. Each successful configuration for a mailbox also generates an alert for you and the mailbox owner.
 
 You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://blogs.msdn.com/b/crm/archive/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015.aspx) and [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).  
 
@@ -162,10 +166,11 @@ To test the email configurations for all mailboxes associated with an email serv
 1. Select **Settings** > **Email** > **Server profiles**.  
 1. Select the profile you created, and then select **Test & Enable Mailboxes**.  
 
-When you test the email configuration, an asynchronous job runs in the background and it might take a few minutes for the test to complete. Customer engagement apps test the email configuration of all the mailboxes associated with the POP3-SMTP profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
+When you test the email configuration, an asynchronous job runs in the background and it might take a few minutes for the test to complete. Customer engagement apps test the email configuration of all the mailboxes associated with the POP3-SMTP profile. It also checks to make sure the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts are configured properly.
 
 > [!TIP]
-> If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md)
+> If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox.
+> More information: [When would I want to use this check box?](when-would-want-use-check-box.md)
 
 ## Network ports for Power Apps US Government
 
