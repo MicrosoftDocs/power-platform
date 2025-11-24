@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/03/2025
+ms.date: 11/25/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -39,18 +39,21 @@ Not all add-ons are available in the Power Platform admin center UI. As new add-
 
 ### Manually allocate an add-on from the Power Platform admin center
 
-1. In the Power Platform admin center, select **Resources** > **Capacity**.  
-2. Scroll down to the **Add-ons** section and select the **Manage** link.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing88 pane, select **Capacity add-ons**.
+1. Select the **Add-ons** tab.
+1. Select the **Manage** link.
 
     :::image type="content" source="media/tutorial-allocate-addons1.png" alt-text="Select the Manage link.":::
 
-3. Select an environment and review all of the various add-ons you could assign. Keep in mind that you can only adjust add-ons for those that you have previously purchased.  
+1. Select an environment and review all of the various add-ons you could assign. Keep in mind that you can only adjust add-ons for those that you have previously purchased.  
 
     In this example, we add 500 AI Builder credits to the environment.
 
     :::image type="content" source="media/tutorial-allocate-addons2.png" alt-text="Select an environment and review all of the various add-ons you could assign.":::
 
-4. Select **Save**.
+1. Select **Save**.
 
 # [Power Automate / Logic Apps](#tab/Automate)
 
