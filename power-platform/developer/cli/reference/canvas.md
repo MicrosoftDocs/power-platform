@@ -28,8 +28,8 @@ Operating with Power Apps .msapp files
 |[pac canvas create](#pac-canvas-create)|Generate a canvas app from a custom connector|
 |[pac canvas download](#pac-canvas-download)|Download canvas app as .msapp file|
 |[pac canvas list](#pac-canvas-list)|List canvas apps|
-|[pac canvas pack](#pac-canvas-pack)|(Preview) Pack sources into an msapp file|
-|[pac canvas unpack](#pac-canvas-unpack)|(Preview) Extract an msapp file into sources|
+|[pac canvas pack](#pac-canvas-pack)|(Deprecated) Pack sources into an msapp file|
+|[pac canvas unpack](#pac-canvas-unpack)|(Deprecated) Extract an msapp file into sources|
 |[pac canvas validate](#pac-canvas-validate)|(Preview) Validate the .pa.yaml source for an unzipped msapp file|
 
 
@@ -116,7 +116,11 @@ Specifies the target Dataverse. The value may be a Guid or absolute https URL. W
 
 ## pac canvas pack
 
-(Preview) Pack sources into an msapp file
+(Deprecated) Pack sources into an msapp file
+
+> [!IMPORTANT]
+>
+> This command has been deprecated. Please read [the source code files documentation](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/power-apps-yaml) for instructions on how to pack/unpack `.msapp` files.
 
 [!INCLUDE [canvas-pack-intro](includes/canvas-pack-intro.md)]
 
@@ -135,7 +139,11 @@ Directory to sources to be packed
 
 ## pac canvas unpack
 
-(Preview) Extract an msapp file into sources
+(Deprecated) Extract an msapp file into sources
+
+> [!IMPORTANT]
+>
+> This command has been deprecated. Please read [the source code files documentation](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/power-apps-yaml) for instructions on how to pack/unpack `.msapp` files.
 
 [!INCLUDE [canvas-unpack-intro](includes/canvas-unpack-intro.md)]
 
