@@ -47,7 +47,9 @@ After you determine how much storage you're using, use the following steps to ex
    > - Be sure to select the correct tenant to extend the storage capacity for 45 days. 
    > - You can extend capacity on your account a maximum of three times.
 
-1. In the **Licensing** page (**Licensing** > **Dataverse** > **Summary**), click the **Enable capacity extension** button.
+1. In the navigation pane, select **Licensing**.
+
+1. On the **Licensing** page, select **Dataverse** > **Summary**, and select **Enable capacity extension**.
 
 1. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
 
