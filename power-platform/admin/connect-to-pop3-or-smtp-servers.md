@@ -3,7 +3,7 @@ title: Connect Gmail accounts, POP3 email server, or SMTP email server by using 
 description: Connect Gmail accounts, POP3 email server, or SMTP email server using credentials specified by a user or queue 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/23/2025
+ms.date: 11/24/2025
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
@@ -21,11 +21,9 @@ Follow the steps in this article to set up server-side synchronization to send a
 
 ## Create an email server profile for Gmail accounts
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**.
+1. On the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. On the command bar, select **Settings**.
 1. Expand **Email**, then select **Server profiles**.
@@ -35,39 +33,19 @@ Follow the steps in this article to set up server-side synchronization to send a
 1. If you want to use this server profile as the default profile for new mailboxes, turn on **Set as default profile for new mailboxes**.
 1. For **Authentication Type**, select **Credential specified by user or queue (Using less secure apps)**. The credentials specified in the mailbox row of a user or queue are used for sending or receiving email for the respective user or queue.
    > [!NOTE]
-   > To ensure that the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.
-1. The **Locations and ports** fields are automatically populated.
-1. Expand **Advanced**, and then use the tooltips to choose your email processing options.
+   > To ensure secure credentials, SQL encryption is used to encrypt the credentials stored in the mailbox.
+1. After you see the **Locations and ports** fields automatically populate, expand **Advanced** and use the tooltips to choose your email processing options.
 1. When you're done, select **Save**.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. On the command bar, select **Settings**.
-1. Expand **Email**, then select **Server profiles**.
-1. On the command bar, select **New server profile** to view the *Set up server profile* pane.
-1. For **Email Server Type**, select **Gmail**, and then specify a meaningful **Name** for the profile.
-    :::image type="content" source="media/connect-to-pop3-or-smtp-servers/gmail-profile.png" alt-text="Set up Gmail server details in the Set up server profile panel.":::
-1. If you want to use this server profile as the default profile for new mailboxes, turn on **Set as default profile for new mailboxes**.
-1. For **Authentication Type**, select **Credential specified by user or queue (Using less secure apps)**. The credentials specified in the mailbox row of a user or queue are used for sending or receiving email for the respective user or queue.
-   > [!NOTE]
-   > To ensure that the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.
-1. The **Locations and ports** fields are automatically populated.
-1. Expand **Advanced**, and then use the tooltips to choose your email processing options.
-1. When you're done, select **Save**.
-
----
 
 ## Create an email server profile by using the legacy web app
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Manage**.
 1. On the **Manage** pane, select **Environments** and then select an environment
-1. On the command bar, select **Settings**, then on the page select **Email** > **Server profiles**.
+1. On the command bar, select **Settings**.
+1. Select **Email** > **Server profiles**.
 1. On the command bar, select **Go to legacy**.
-1. On the command bar, select **New** > **POP3/SMTP Server**.
+1. On the command bar in Microsoft Dynamics 365, select **New** > **POP3/SMTP Server**.
 
 1. **For an Exchange email server profile, specify the following details:**  
 
@@ -99,14 +77,14 @@ Follow the steps in this article to set up server-side synchronization to send a
 
 Set server-side synchronization to be the default configuration method.  
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments), select an environment.
 1. Select **Settings** > **Email** > **Email settings**.  
 1. Under **Synchronization methods**, set the processing and synchronization fields as follows:  
 
    - **Server Profile**: The profile you created in the preceding section.  
-   - **Incoming Email**: Server-Side Synchronization or Email Router  
-   - **Outgoing Email**: Server-Side Synchronization or Email Router  
-   - **Appointments, Contacts, and Tasks**: Server-Side Synchronization or Email Router
+   - **Incoming Email**: Server-Side Synchronization or Email Router.  
+   - **Outgoing Email**: Server-Side Synchronization or Email Router.  
+   - **Appointments, Contacts, and Tasks**: Server-Side Synchronization or Email Router.
 
    > [!NOTE]
    > The **Server-Side Synchronization or Email Router** setting for Appointments, Contacts, and Tasks isn't supported for the POP3-SMTP profile.  
@@ -119,27 +97,27 @@ Set server-side synchronization to be the default configuration method.
 
 To set mailboxes to use the default profile, you must first set the server profile and the delivery method for email, appointments, contacts, and tasks.  
 
-In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
+In addition to administrator permissions, you need *Read* and *Write* privileges on the Mailbox table to set the delivery method for the mailbox.  
 
 Choose **one** of the following methods:
 
-- Set mailboxes to the default profile
+- Set mailboxes to the default profile.
 - Edit mailboxes to set profile and delivery methods.
 
 ### Set mailboxes to the default profile
 
-Take these steps to set mailboxes to default profiles.
+To set mailboxes to default profiles, take the following steps:
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com)(https://admin.powerplatform.microsoft.com/manage/environments), select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.
 1. Expand the table title dropdown and select **Active Mailboxes**.
 1. Select all the mailboxes that you want to associate with the POP3-SMTP profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**. By default, the mailbox configuration is tested and the mailboxes are enabled when you select **OK**.  
 
 ### Edit mailboxes to set the profile and delivery methods
 
-Take these steps to edit mailboxes to set the profile and delivery methods.
+To edit mailboxes to set the profile and delivery methods, take the following steps:
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments), select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.  
 1. Expand the table title dropdown and select **Active Mailboxes**.  
 1. Select the mailboxes that you want to configure, and then select **Edit**.  
@@ -150,37 +128,41 @@ Take these steps to edit mailboxes to set the profile and delivery methods.
 
 ## Approve email
 
-You need to approve each user mailbox or queue before that mailbox can process email.  
+To approve each user mailbox or queue before that mailbox can process email, take the following steps:  
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments), select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.  
 1. Expand the table title dropdown and select **Active Mailboxes**.  
 1. Select the mailboxes that you want to approve, and then select **Approve Email**.  
 1. Select **OK**.  
 
-## Test the configuration of mailboxes  
+## Test configuration and enable mailboxes 
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+To test the email configurations of and enable the selected mailboxes, take the following steps:
+
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments), select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.  
 1. Expand the table title dropdown and select **Active Mailboxes**.  
 1. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
 
-    This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps will try to process the email again after some time or disable the mailbox for email processing.  
+This tests the incoming and outgoing email configurations of selected mailboxes and enables them for email processing. If an error occurs in a mailbox, you see an alert on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps will try to process the email again after some time or disable the mailbox for email processing.  
 
-    The result of the email configuration test is displayed in the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** fields of a mailbox record. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.  
+To see email configuration test results, look at the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** fields of a mailbox record. Each successful email configuration for a mailbox also generates an alert for you and the mailbox owner.
 
-    You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://blogs.msdn.com/b/crm/archive/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015.aspx) and [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).  
+You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://blogs.msdn.com/b/crm/archive/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015.aspx) and [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).  
 
 > [!TIP]
 > If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md)
 
-## Test email configuration for all mailboxes associated with an email server profile  
+## Test email configurations
 
-1. In the Power Platform admin center, select an environment.
+To test the email configurations for all mailboxes associated with an email server profile, take the following steps:
+
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments), select an environment.
 1. Select **Settings** > **Email** > **Server profiles**.  
 1. Select the profile you created, and then select **Test & Enable Mailboxes**.  
 
-    When you test the email configuration, an asynchronous job runs in the background. It might take a few minutes for the test to be completed. Customer engagement apps test the email configuration of all the mailboxes associated with the POP3-SMTP profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
+When you test the email configuration, an asynchronous job runs in the background and it might take a few minutes for the test to complete. Customer engagement apps test the email configuration of all the mailboxes associated with the POP3-SMTP profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
 
 > [!TIP]
 > If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md)
@@ -199,7 +181,7 @@ Customizations or email configurations in Power Apps US Government can only use 
 ### See also
 
 [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md) <br />
-[Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx)
+[Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx) <br />
 [Microsoft Power Apps US Government](powerapps-us-government.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
