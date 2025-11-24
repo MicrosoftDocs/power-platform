@@ -83,7 +83,7 @@ For more information, go to [Search for records by using Dataverse search](/powe
 
 | Dataverse search set to On	|  Dataverse search set to Default	|   Dataverse search set to Off  |
 |-----------------------------|-----------------------------------|--------------------------------|
-| Search bar is visible. (Quick Find is not visible or accessible.)  |	Search bar isn't visible. (Quick Find can be used alternatively.)  |	Search bar is not visible.  |  Quick Find can be used alternatively.  |
+| Search bar is visible. (Quick Find is not visible or accessible.)  |	Search bar isn't visible. (Quick Find can be used alternatively.)  |  Quick Find can be used alternatively.  |
 |  Dataverse search is used for all production environments.  |  Dataverse search isn't available for global search in any environment.	|  Dataverse search isn't available for global search in any environment.  |
 |  Dataverse data is automatically indexed and is searchable.  |  Dataverse data isn't indexed and data is not searchable.	|  Dataverse data isn't indexed and data isn't searchable. |
 
