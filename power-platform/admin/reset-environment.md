@@ -4,7 +4,7 @@ description: "This page explains how to reset a Power Platform environment if yo
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/09/2023
+ms.date: 11/24/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -32,21 +32,25 @@ Reset a sandbox environment to delete and reprovision it. Consider a reset when 
  
 ### To reset an environment  
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using Environment Admin or System Administrator role credentials.
   
-2. From the left-side menu, select **Environments**, and then select an environment to reset.
+1. In the navigation pane, select **Manage**.
+   
+1. In the **Manage** pane, select **Environments**.
+   
+1. Select an environment to reset.
 
-3. Select **Reset** from the top menu bar.
+1. Select **Reset** from the top menu bar.
   
    > [!div class="mx-imgBorder"] 
    > ![Reset menu.](media/reset-menu.png "Reset menu")
 
-4. On the **Reset environment** page, adjust the environment settings as needed and then select **Reset**.  
+1. On the **Reset environment** page, adjust the environment settings as needed and then select **Reset**.  
   
    > [!WARNING]
    >  The sandbox environment will be deleted and reset to factory settings. You will not be able to recover any deleted data.  
   
-5. Select **Confirm** to reset the selected environment.
+1. Select **Confirm** to reset the selected environment.
 
 The reset process starts.
 
