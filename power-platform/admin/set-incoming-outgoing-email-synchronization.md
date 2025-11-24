@@ -4,7 +4,7 @@ description: You can set a synchronization method for user mailboxes and specify
 author: DanaMartens
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/12/2021
+ms.date: 11/24/2025
 ms.subservice: admin
 ms.author: dmartens
 ms.reviewer: sericks
@@ -19,21 +19,33 @@ You have several options for synchronizing email messages with Microsoft Dataver
 
 **To set the default synchronization method for all newly created user mailboxes** 
   
-1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-2. On the command bar, select **Settings** > **Email** > **Email settings**.  
+1. In the navigation pane, select **Manage**.
+   
+1. In the **Manage** pane, select **Environments**.
+   
+1. Select an environment.
+
+1. On the command bar, select **Settings** > **Email** > **Email settings**.  
   
    > [!NOTE]
    > In the legacy web app, in the upper-right corner, select **Settings** ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. Then go to   **Settings** > **Email Configuration** > **Email Configuration Settings.**.  
   
 **To set the synchronization method for individual mailboxes** 
 
-1.  In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. In the navigation pane, select **Manage**.
+   
+1. In the **Manage** pane, select **Environments**.
+   
+1. Select an environment.
 
     > [!NOTE]
     > In the legacy web app, in the upper-right corner, select **Settings** ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
 
-2. Select **Settings** > **Mailboxes**, and then select a mailbox.
+1. Select **Settings** > **Mailboxes**, and then select a mailbox.
   
 For information about picking a synchronization method, go to [Integrate your email system](integrate-synchronize-your-email-system.md).  
   
