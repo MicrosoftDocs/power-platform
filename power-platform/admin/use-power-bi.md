@@ -23,7 +23,7 @@ Power BI works with model-driven apps in Microsoft Dataverse to provide a self-s
   
 ### Enable Power BI visualizations in an environment  
   
-1. 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. Select an environment.
