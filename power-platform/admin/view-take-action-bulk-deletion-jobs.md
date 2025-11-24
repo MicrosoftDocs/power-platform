@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/15/2020
+ms.date: 11/25/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -15,11 +15,12 @@ search.audienceType:
 
 You can view the status of, pause, postpone, and resume a system job that you created using **Bulk Record Deletion**.  
   
-1. In the Power Platform admin center, select an environment. 
-
-2. Select **Settings** > **Data management** > **Bulk deletion**.  
-  
-3. In the **Bulk Record Deletion** window, you can perform the actions described in the following table.  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select an environment.
+1. Go to **Settings** > **Data management** > **Bulk deletion**.  
+1. In the **Bulk Record Deletion** window, you can perform the actions described in the following table.  
   
    |To|Do this|  
    |--------|-------------|  
