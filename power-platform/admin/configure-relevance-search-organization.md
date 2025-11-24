@@ -61,7 +61,7 @@ You can find this setting in the Power Platform admin center. For more informati
 
 :::image type="content" source="https://github.com/user-attachments/assets/ee6047e9-fe9a-4796-89e5-c6f59b518b46" alt-text="Screenshot of the Dataverse search settings in the Power Platform admin center.":::
 
-In the Power Platform admin center, admins can [use the Dataverse Search setting](configure-relevance-search-organization.md#managing-dataverse-search) to manage it. The state selected for Dataverse search impacts the ability to leverage Dataverse data across the enabled experiences for all the organization.
+In the Power Platform admin center, admins can [use the Dataverse Search setting](configure-relevance-search-organization.md#managing-dataverse-search) to manage it. The state selected for Dataverse search impacts the ability to use Dataverse data across the enabled experiences for all the organization.
 
 The following tables show how each Dataverse search setting impacts global search experiences including SearchQuery API and generative AI experiences, and how admins can use this setting to manage it.
 
