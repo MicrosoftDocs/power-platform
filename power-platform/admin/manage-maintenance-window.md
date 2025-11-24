@@ -6,7 +6,7 @@ ms.author: samathur
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/28/2021
+ms.date: 11/24/2025
 search.audienceType: 
   - admin
 ---
@@ -24,16 +24,14 @@ Microsoft regularly performs updates and maintenance on customer engagement apps
 To view or update the Maintenance Window for a specific environment based on your business preferences, follow these steps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-
-2. Select **Environments**, and then select a production environment from the list.
-
-3. Select **Settings** > **Updates** > **Maintenance window settings**.
-
-4. On the **Maintenance window settings** page, choose the hours to receive updates from Microsoft.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select a production environment.
+1. Select **Settings** > **Updates** > **Maintenance window settings**.
+1. On the **Maintenance window settings** page, choose the hours to receive updates from Microsoft.
 
    :::image type="content" source="media/maintenance-window.png" alt-text="Select a time for the maintenance window":::
-
-5. Select **Save**. It might take up to 48 hours for the maintenance window settings to take effect.
+1.. Select **Save**. It might take up to 48 hours for the maintenance window settings to take effect.
 
 ### See also
 [Policies and Communications for Power Platform and Dynamics 365 Services](policies-communications.md) <br />
