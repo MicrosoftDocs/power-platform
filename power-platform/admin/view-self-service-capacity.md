@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/29/2020
+ms.date: 11/25/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -16,13 +16,14 @@ search.audienceType:
 With the introduction of [self-service purchases](/microsoft-365/commerce/subscriptions/self-service-purchase-faq) for Microsoft Power Platform products, license purchases are no longer restricted to Power Platform admins. With this change comes the need to be able to view self-service capacity data. Use the steps below to view the storage capacity provided with purchased licenses. 
 
 1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) with admin or end-user credentials.
-
-2. Select **Resources** > **Capacity** > **Summary** tab.
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Capacity add-ons**.
+1. Select the **Summary** tab.
 
    > [!NOTE]
    > Admins and end users will see the same tenant capacity on this page.
 
-3. In the **Storage capacity, by source** tile, select **View self-service sources**.
+1. In the **Storage capacity, by source** tile, select **View self-service sources**.
 
    > [!div class="mx-imgBorder"] 
    > ![View self-service sources.](media/view-individual-sources.png "View self-service sources")
