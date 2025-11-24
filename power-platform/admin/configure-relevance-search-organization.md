@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: marianaraujo 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 10/03/2025
+ms.date: 11/24/2025
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: maaraujo
@@ -26,41 +26,39 @@ With Dataverse search set to **On**, a search box is available at the top of eve
 
 [Dataverse search can be extended to other Microsoft Search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. With a connector enabled, you can search for and find information from the selected canvas as if you're searching in the app. For example, you can quickly look up a contact's phone number or email address without opening the app.
 
-## Learn about the benefits of Dataverse search
+## Benefits of Dataverse search
 
-# Benefits of Dataverse Search:
-
-1.	**Integration with AI / Copilot experiences**
-    Users can have a “conversation” with their data and identify themes, patterns and insights using natural language. Applies AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to deliver quality results.
+- **Integration with AI/Copilot experiences**
+    Users can have a “conversation” with their data and identify themes, patterns, and insights using natural language. Apply AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to deliver quality results.
   	
-2.	**Unified Search**
-    Dataverse search lets you quickly find content in model-driven apps and other products that use Dataverse as a data through a single unified search experience. Provides a better user experience compared to [quick find](quick-find.md) search, where all words in the search term must be found in one column. 
+- **Unified search**
+    Dataverse search lets you quickly find content in model-driven apps and other products that use Dataverse through a single, unified search experience. Provide a better user experience compared to [quick find](quick-find.md) search, where all words in the search term must be found in one column. 
   	
-3.	**Efficient Relevance-Based Results**
-    Intelligent ranking algorithms to return the most relevant records first, with a performance that's superior to [categorized search](quick-find.md#multiple-table-quick-find-categorized-search), reducing time spent searching and increasing its accuracy.
+- **Efficient relevance-based results**
+    Intelligent, ranking algorithms return the most-relevant records first, with a performance that's superior to [categorized search](quick-find.md#multiple-table-quick-find-categorized-search), which reduces the time spent searching and increasing its accuracy.
   	
-4.  **Smart fuzzy search**
-    Handles variations in spelling and terminology, so it does not depend on exact keyword matches.
+- **Smart fuzzy search**
+    Handles variations in spelling and terminology so that it doesn't depend on exact keyword matches.
     
-5.	**Security and Compliance**
-    Respects Dataverse security roles and permissions: users can only see search results for records that they have access to.
+- **Security and compliance**
+    Respects Dataverse security roles and permissions. Users can only see search results for records that they have access to.
   	
-6.	**Scalability and Performance**
-    Optimized for large datasets and supports multiple data types (such as Choice and Lookups).
+- **Scalability and performance**
+    Optimized for large datasets and supports multiple data types, such as choice and lookups.
 
-7.   **Search across documents in Microsoft Dataverse**
-      Includes search results for text in documents that are stored in Dataverse such as PDF, Microsoft Office documents, HTML, XML, ZIP, EML, plain text, and JSON file formats. It also searches text in notes and attachments.
+- **Search across documents in Dataverse**
+      Includes search results for text in documents that are stored in Dataverse such as PDF, Office documents, HTML, XML, ZIP, EML, plain text, and JSON file formats. It also searches text in notes and attachments.
 
-> Note: Global Search supports up to 2MB of file search.
-
+> [!NOTE]
+> Global search supports up to 2 MB of file search.
 
 ### Availability and language support
 
 - Dataverse search is available in customer engagement apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.
 
-- Dataverse search isn't available for Customer Engagement (on-premises) organizations. Quick Find is the only search option for (on-premises) customer engagement apps organizations and Customer Engagement (on-premises) organizations.
+- Dataverse search isn't available for customer engagement, on-premises organizations. Quick Find is the only search option for on-premises, customer engagement apps organizations.
 
-- Full-text Quick Find is available for Customer Engagement (on-premises) organizations, starting with Dynamics CRM 2015 Update Rollup 1.
+- Full-text Quick Find is available for customer engagement, on-premises organizations starting with Dynamics CRM 2015 Update Rollup 1.
 
 - For a more detailed comparison of the searches available in Microsoft Dataverse, go to [Compare search options in Microsoft Dataverse](/powerapps/user/search).
 
@@ -70,37 +68,39 @@ With Dataverse search set to **On**, a search box is available at the top of eve
 
 Dataverse search is an opt-out feature, set to **On** for all new production environments and **Default** for all other [environment types](/power-platform/admin/environments-overview#environment-types). We recommend using Dataverse search so users have a search experience in model-driven apps and harness the power of Copilot experiences.
 
-This setting can be found in PPAC > Manage > Environment > Setting > Product > Features > Dataverse Search:
+This setting can be found in the Power Platform admin center. Learn more in [Search](settings-features#search).
 <img width="1125" height="582" alt="image" src="https://github.com/user-attachments/assets/ee6047e9-fe9a-4796-89e5-c6f59b518b46" />
 
-In Power Platform Admin Center, Admins can [leverage the Dataverse Search setting](power-platform/admin/configure-relevance-search-organization?tabs=new#managing-dataverse-search) to manage it. The state selected for Dataverse Search impacts the ability to leverage Dataverse data across the enabled experiences for all the organization.
-The following tables show how each Dataverse Search setting impact Global Search experiences (including SearchQuery API) and Generative AI experiences, and how can Admins leverage this setting to manage it:
+In the Power Platform admin center, admins can [use the Dataverse Search setting](configure-relevance-search-organization#managing-dataverse-search) to manage it. The state selected for Dataverse search impacts the ability to leverage Dataverse data across the enabled experiences for all the organization.
 
-## What Dataverse Search setting means for Global Search
+The following tables show how each Dataverse search setting impact global search experiences including SearchQuery API and generative AI experiences, and how admins can use this setting to manage it.
 
-When Dataverse search is set to "On", the Global Search search box appears at the top of every page in your model-driven app and is the default global search experience for all model-driven apps.
-For more information please refer to: [Search for records by using Dataverse search - Power Apps | Microsoft Learn.](https://learn.microsoft.com/en-us/power-apps/user/relevance-search)
+## What the Dataverse search setting means for global search
 
-| Dataverse Search set to On	|  Dataverse Search set to Default	|   Dataverse Search set to Off  |
+When Dataverse search is set to **On**, the global search box appears at the top of every page in your model-driven apps and is the default, global search experience for all model-driven apps.
+For more information, go to [Search for records by using Dataverse search](/power-apps/user/relevance-search).
+
+| Dataverse search set to On	|  Dataverse search set to Default	|   Dataverse search set to Off  |
 |-----------------------------|-----------------------------------|--------------------------------|
-| Search bar is visible. (Quick Find is not visible/accessible)  |	Search bar is not visible (Quick Find can be used alternatively).  |	Search bar is not visible  |  Quick Find can be used alternatively.)  |
-|  Dataverse Search is used for all production environments  |  Dataverse Search is not available for Global Search in any environment	|  Dataverse Search is not available for Global Search in any environment  |
-|  Dataverse data is automatically indexed = data is searchable  |  Dataverse data is not indexed = data is not searchable	|  Dataverse data is not indexed = data is not searchable  |
+| Search bar is visible. (Quick Find is not visible or accessible.)  |	Search bar isn't visible. (Quick Find can be used alternatively.)  |	Search bar is not visible.  |  Quick Find can be used alternatively.  |
+|  Dataverse search is used for all production environments.  |  Dataverse search isn't available for global search in any environment.	|  Dataverse search isn't available for global search in any environment.  |
+|  Dataverse data is automatically indexed and is searchable.  |  Dataverse data isn't indexed and data is not searchable.	|  Dataverse data isn't indexed and data isn't searchable. |
 
 
-## What Dataverse Search means for Generative AI enabled experiences
+## What Dataverse search means for generative AI-enabled experiences
 
-Some Generative AI experiences are enabled by Dataverse Search data. When enabled, Copilot chat can be accessed through the Copilot icon in the right navigation bar in a model-driven app. The Copilot chat pane can be opened or minimized as desired.
--	**Power Apps**: [Copilot chat for model-driven apps in Power Apps]([url](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/add-ai-copilot)) is a next-generation AI assistant that helps app users get insights about the data in their apps through conversation in natural language.
-- **Copilot Studio**: [Integrating Dataverse tables as your knowledge source]([url](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-dataverse)) allows you to ground your agent in the data contained in your tables. This can also happen using [unstructured data as knowledge]([url](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-unstructured-data)) or [Dataverse tools]([url](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-plugin-actions)).
+Some generative AI experiences are enabled by Dataverse search data. When enabled, Copilot chat can be accessed through the Copilot icon in the right navigation bar in a model-driven apps. The Copilot chat pane can be opened or minimized, as desired.
 
-| Dataverse Search set to On	|  Dataverse Search set to Default	|   Dataverse Search set to Off  |
+-	**Power Apps**: [Copilot chat for model-driven apps in Power Apps](/power-apps/maker/model-driven-apps/add-ai-copilot)) is a next-generation AI assistant that helps app users get insights about the data in their apps through conversation in natural language.
+- **Copilot Studio**: [Integrating Dataverse tables as your knowledge source](/microsoft-copilot-studio/knowledge-add-dataverse) allows you to ground your agent in the data contained in your tables. This can also happen using [unstructured data as knowledge](/microsoft-copilot-studio/knowledge-unstructured-data) or [Dataverse tools](/microsoft-copilot-studio/advanced-plugin-actions).
+
+| Dataverse search set to On	|  Dataverse search set to Default	|   Dataverse search set to Off  |
 |-----------------------------|-----------------------------------|--------------------------------|
-|  An enabled Generative AI  feature’s availability is not managed by Dataverse Search itself = may be enabled via its own feature setting  |
-|  Dataverse Search is used in all production environments	|  Dataverse Search is used for Gen. AI experiences in Sandbox, Trial, Developer, Dataverse for Teams environments	|  Dataverse Search is not used in any environment  |
-|  Dataverse prompts and knowledge (Tables / Files) is automatically indexed = data is searchable  |  Dataverse prompts and knowledge (Tables / Files) is indexed when triggered = data is searchable (i.e. Copilot is prompted)	|  Dataverse data is not indexed = data is not searchable  |
+|  An enabled, generative AI feature’s availability isn't managed by Dataverse search itself. It may be enabled through its own feature setting.  |
+|  Dataverse search is used in all production environments.	|  Dataverse search is used for generative AI experiences in Sandbox, Trial, Developer, and Dataverse for Teams environments.	|  Dataverse search isn't used in any environment.  |
+|  Dataverse prompts and knowledge (tables/files) is automatically indexed and data is searchable.  |  Dataverse prompts and knowledge (tables/files) is indexed when triggered and data is searchable. Copilot is prompted.	|  Dataverse data isn't indexed and data isn't searchable.  |
 
-Individual users aren't able to switch to [Quick Find search, formerly known as categorized search](/powerapps/user/quick-find). Tables must be included in the application you're using with Dataverse search. Be sure that any table you want users to search on are included in your application.
+Individual users aren't able to switch to [Quick Find search](/powerapps/user/quick-find), formerly known as categorized search. Tables must be included in the application you're using with Dataverse search. Be sure that any table you want users to search on are included in your application.
 
 > [!NOTE]
 > As of September 2025, the **Dataverse search** setting for all previously created environments was migrated, one-time, as required to maintain a consistent user experience. Environments that didn't have prior dependencies on Dataverse search or Copilot were designated as **Default** (equivalent to the former **Off** setting), whereas those with Dataverse search enabled retained the **On** configuration.
