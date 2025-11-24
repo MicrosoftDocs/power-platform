@@ -9,7 +9,7 @@ ms.custom:
   - "admin-security"
   - bap-template
 ms.topic: how-to
-ms.date: 09/21/2023
+ms.date: 11/24/2025
 ---
 
 # View information about plug-in steps
@@ -33,8 +33,9 @@ Follow these steps to view plug-in information such as the plug-in name, status,
 > [!Note]
 > At this time, only plug-ins of the System User entity type are supported.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
 1. Select an environment.
 1. Select **Settings** > **Users + permissions** > **Plug-ins**.
 1. View information about all plug-ins (System User entity type only) installed in the environment.
