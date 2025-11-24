@@ -16,8 +16,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) with IMAP or POP email servers, such as those used for Gmail and Yahoo! Mail.  
-
+Follow the steps in this article to connect customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) with IMAP or POP email servers, such as those used for Gmail and Yahoo! Mail.
 > [!NOTE]
 >
 > - Only synchronizes emails in the Inbox folder.
@@ -27,12 +26,7 @@ Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sa
 
 ## Create an email server profile
 
-Take these steps to create an email server profile in the Power Platform admin center.
-
-> [!NOTE]
-> If you want to use the legacy view, go to [Create an email server profile using the legacy web app](#create-an-email-server-profile-by-using-the-legacy-web-app).
-
-### [New admin center](#tab/new)
+To create an email server profile in the Power Platform admin center, take the following steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Manage**.
@@ -55,32 +49,9 @@ Take these steps to create an email server profile in the Power Platform admin c
 1. Expand the **Advanced** section, and use the tooltips to choose your email processing options.
 1. When you're done, select **Save**.
 
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. On the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. On the command bar, select **Settings** > **Email** > **Server profiles**.
-    :::image type="content" source="media/connect-to-imap-servers/server-profile-settings.png" alt-text="Choose server profile.":::
-1. On the command bar, select **New server profile** to view the *Set up server profile* pane.
-1. For **Email Server Type**, select **Other (IMAP/POP,SMTP)**, and then specify a meaningful **Name** for the profile.
-   :::image type="content" source="media/connect-to-imap-servers/pop-smtp-profile.png" alt-text="Choose other profile.":::
-1. If you want to use this server profile as the default profile for new mailboxes, turn on **Set as default profile for new mailboxes**.
-1. For **Authentication Type**, select **Credential Specified by user or queue**. When you select this option, the credentials specified in the mailbox record of a user or queue are used for sending or receiving email for the respective user or queue.
-   > [!NOTE]
-   > To ensure that the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.
-1. Expand **Locations and ports**, and enter the following:
-
-   - **Incoming communication protocol**: Enter the protocol that will be used for authentication for incoming email.
-   - **Incoming and Outgoing location**: Enter the incoming and outgoing email location.
-   - **Incoming and Outgoing port**: Enter the incoming and outgoing port for the email server.
-
-1. Expand the **Advanced** section, and use the tooltips to choose your email processing options.
-1. When you're done, select **Save**.
-
----
-
 ## Create an email server profile by using the legacy web app
+
+To create an email server profile using the legacy web app, take the following steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Manage**.
@@ -117,9 +88,9 @@ Take these steps to create an email server profile in the Power Platform admin c
 
 ## Configure default email processing and synchronization
 
-Set server-side synchronization to be the default configuration method.
+To set server-side synchronization to be the default configuration method, take the following steps:
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments), select an environment.
 1. Select **Settings** > **Email** > **Email settings**.  
 1. Set the processing and synchronization fields as follows:  
 
@@ -128,26 +99,26 @@ Set server-side synchronization to be the default configuration method.
    - **Outgoing Email**: Server-Side Synchronization or Email Router  
    - **Appointments, Contacts, and Tasks**: Server-Side Synchronization or Email Router
 
-       > [!NOTE]
-       > The **Server-Side Synchronization or Email Router** setting for appointments, contacts, and tasks isn't supported for the IMAP profile.  
+   > [!NOTE]
+   > The **Server-Side Synchronization or Email Router** setting for appointments, contacts, and tasks isn't supported for the IMAP profile.  
 
-     If you leave **Email processing for unapproved user and queues** at the default values (selected), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.  
+If you leave **Email processing for unapproved user and queues** at the default values (selected), you need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.  
 1. Select **Save**.  
 
 ## Configure mailboxes
 
-To set mailboxes to use the default profile, you must first set the server profile and the delivery method for email, appointments, contacts, and tasks.  
+To set mailboxes to use the default profile, you need to first set the server profile and the delivery method for email, appointments, contacts, and tasks.  
 
-In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
+In addition to administrator permissions, you need to have *Read* and *Write* privileges on the Mailbox table to set the delivery method for the mailbox.  
 
 Choose **one** of the following methods:
 
-- Set mailboxes to the default profile
+- Set mailboxes to the default profile.
 - Edit mailboxes to set profile and delivery methods.
 
 ### Set mailboxes to the default profile
 
-Take these steps to set mailboxes to default profiles.
+To set mailboxes to default profiles, take the following steps:
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.
@@ -156,7 +127,7 @@ Take these steps to set mailboxes to default profiles.
 
 ### Edit mailboxes to set the profile and delivery methods
 
-Take these steps to edit mailboxes to set the profile and delivery methods.
+To set the profile and delivery methods, take the following steps:
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.  
@@ -169,42 +140,47 @@ Take these steps to edit mailboxes to set the profile and delivery methods.
 
 ## Approve email
 
-You need to approve each user mailbox or queue before that mailbox can process email. More information: [Approve email](connect-exchange-online.md#approve-email)
+Before a mailbox can process email, you need take the following steps to approve each user mailbox or queue: 
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments), select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.  
 1. Expand the table title dropdown and select **Active Mailboxes**.  
 1. Select the mailboxes that you want to approve, and then select **Approve Email**.  
 1. Select **OK**.
 
+More information: [Approve email](connect-exchange-online.md#approve-email).
+
 ## Test the configuration of mailboxes
 
-Take these steps to test the configuration of mailboxes:
+To test the configuration of selected mailboxes, take the following steps:
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments), select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.  
 1. Expand the table title dropdown and select **Active Mailboxes**.  
 1. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
 
-    This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, server-side synchronization will try to process the email again after some time or disable the mailbox for email processing.
+This tests the incoming and outgoing configurations of selected mailboxes and enables them for email processing. If an error occurs in a mailbox, you see an alert on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps will try to process the email again after some time or disable the mailbox for email processing.  
 
-    The result of the email configuration test is displayed in the **Incoming Email Status** and **Outgoing Email Status** of a mailbox row. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.
+To see configuration test results, look at the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** fields of a mailbox record. Each successful configuration for a mailbox also generates an alert for you and the mailbox owner.
 
 You can find information about recurring issues and other troubleshooting information in the following topics:
 
-- [Test configuration of mailboxes](connect-exchange-online.md#test-the-configuration-of-mailboxes)
+- [Test configuration of mailboxes](connect-exchange-online.md#test-the-configuration-of-mailboxes).
 - [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).
 
-## Test email configuration for all mailboxes associated with an email server profile  
+## Test email configurations  
+
+To test the email configurations for all mailboxes associated with an email server profile, take the following steps:
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
 1. Select **Settings** > **Email** > **Server profiles**.  
 1. Select the profile you created, and then select **Test & Enable Mailboxes**.  
 
-   When you test the email configuration, an asynchronous job runs in the background. It might take a few minutes for the test to complete. Customer engagement apps test the email configuration of all the mailboxes associated with the IMAP profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
+When you test the email configuration, an asynchronous job runs in the background. It might take a few minutes for the test to complete. Customer engagement apps test the email configuration of all the mailboxes associated with the IMAP profile. It also checks to make sure the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts are configured properly.  
 
 > [!TIP]
-> If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md).
+> If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox.
+> More information: [When would I want to use this check box?](when-would-want-use-check-box.md)
 
 ## Network ports for Power Apps
 
@@ -221,7 +197,7 @@ Customizations or email configurations in Power Apps can only use these ports.
 ### See also
 
 [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md) <br />
-[Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx)   
+[Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx) <br />
 [Set up server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
