@@ -32,7 +32,7 @@ When you set Dataverse search to **On**, a search box appears at the top of ever
     Users can have a "conversation" with their data and identify themes, patterns, and insights by using natural language. Apply AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to deliver quality results.
   	
 - **Unified search**
-    Dataverse search lets you quickly find content in model-driven apps and other products that use Dataverse through a single, unified search experience. Provide a better user experience compared to [quick find](/power-apps/quick-find) search, where all words in the search term must be found in one column. 
+    Dataverse search lets you quickly find content in model-driven apps and other products that use Dataverse through a single, unified search experience. Provide a better user experience compared to [quick find](/power-apps/user/quick-find) search, where all words in the search term must be found in one column. 
   	
 - **Efficient relevance-based results**
     Intelligent, ranking algorithms return the most relevant records first, with a performance that's superior to [categorized search](/power-apps/user/quick-find#multiple-table-quick-find-categorized-search), which reduces the time spent searching and increases its accuracy.
