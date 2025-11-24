@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 10/20/2025
+ms.date: 11/18/2025
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -25,7 +25,17 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Deprecation of the classic look for model-driven apps
+Starting in April 2026, makers will no longer be able to switch to the classic look in model-driven apps. All apps will use the modern, refreshed look by default.
 
+### Why is this needed?
+We are standardizing the experience across model-driven apps to deliver a consistent, accessible, and modern interface that ensures customers benefit from ongoing user experience improvements while unlocking AI-powered capabilities available only in the modern look.
+
+### Impact
+There is no impact on app logic, data, or permissions. Existing apps will automatically display the modern look. The admin settings related to this feature will be removed.
+
+### Replacement feature
+The modern, refreshed look is now the default experience for all model-driven apps. No action is required from makers or admins. For more information on this, see [Modern, refreshed look for model-driven apps](/power-apps/user/modern-fluent-design).
 
 ## Deprecation of create an app from an image or Figma file
 
