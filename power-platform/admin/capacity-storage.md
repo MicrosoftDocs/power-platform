@@ -27,14 +27,14 @@ ms.custom:
 
 # Dataverse capacity-based storage details
 
-If you purchase storage in or after April 2019, or if you have a mix of storage purchases made before and after April 2019, you see your storage capacity entitlement and usage by database, file, and log as it appears in the Microsoft Power Platform admin center today.
+If you purchased storage after April 2019, or if you have a mix of storage purchases made before and after April 2019, you see your storage capacity entitlement and usage by database, file, and log as it appears in the Microsoft Power Platform admin center today.
 
 Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organization. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
 
 > [!NOTE]
 > For licensing information, go to the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 >
-> If you purchase your Dynamics 365 subscription through a Microsoft partner, contact them to manage storage capacity. The following steps don't apply to partner-based subscriptions.
+> If you purchased your Dynamics 365 subscription through a Microsoft partner, contact them to manage storage capacity. The following steps don't apply to partner-based subscriptions.
 
 ## Licenses for Microsoft Dataverse capacity-based storage model
 
@@ -66,7 +66,7 @@ Follow these steps to verify you have the Microsoft Dataverse capacity-based sto
 1. In the navigation pane, select **Licensing**.
 1. In the Licensing pane, select **Capacity add-ons** to go to the Capacity add-ons summary page where you can see your tenant's storage, add-ons, and Microsoft Power Platform requests.
 
-For more information, see [Dataverse capacity-based storage overview](whats-new-storage.md).
+Learn more in [Dataverse capacity-based storage overview](whats-new-storage.md).
 
 ## Capacity page details
 
@@ -179,7 +179,7 @@ On the Capacity page, select **Microsoft Teams**. This page shows the capacity s
 
 ### Add-ons tab
 
-On the Capacity page, select **Add-ons**. This page shows your organization's add-on usage details and lets you assign add-ons to environments. For more information, see [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center).
+On the Capacity page, select **Add-ons**. This page shows your organization's add-on usage details and lets you assign add-ons to environments. Learn more at [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center).
 
 > [!NOTE]
 > This tab only appears if your tenant includes add-ons.
@@ -393,11 +393,12 @@ Because custom Quick Find lookups are created by an admin in the org, these inde
 ### What is the DataverseSearch table and how can I reduce it?
 
 The **DataverseSearch** table (previously known as **RelevanceSearch**) stores data for the global search and generative AI experiences. It includes data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment and Copilot semantic indexes.
+
 For more information, see [actions that makers or admins can take to optimize Dataverse search](/relevance-search-benefits.md#what-actions-can-makers-or-admins-take-to-manage-dataverse-search-efficiently).
 
 ### Can Dataverse search be managed?
 
-An admin can manage Dataverse search through the three states associated with this setting: On, Default, and Off. For more information, see [Configure Dataverse search](/configure-relevance-search-organization.md#managing-dataverse-search).
+An admin can manage Dataverse search through the three states associated with this setting: On, Default, and Off. Learn more in [Configure Dataverse search](/configure-relevance-search-organization.md#managing-dataverse-search).
 
 > [!NOTE]
 >
@@ -405,7 +406,7 @@ An admin can manage Dataverse search through the three states associated with th
 > - No other setting is turned on if Dataverse search is turned **On** or **Default**.
 
 ### What actions can admins take?
-Depending on the experience that leverages Dataverse Search and its usage, consumption size might increase more drastically. For more information, see [What is Dataverse search](/relevance-search-benefits.md#what-actions-can-makers-or-admins-take-to-manage-dataverse-search-efficiently).
+Depending on the experience that leverages Dataverse Search and its usage, consumption size might increase more drastically. Learn more in [What is Dataverse search](/relevance-search-benefits.md#what-actions-can-makers-or-admins-take-to-manage-dataverse-search-efficiently).
   
     > [!IMPORTANT]
     > We don't recommend that you turn off Dataverse search as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
@@ -431,7 +432,7 @@ Environment admins have 12 hours to turn the feature back on without losing inde
 
 ### What happens if I turn off Dataverse search?
 
-All experiences that use Dataverse search become limited. For more information, see [Frequently asked questions about Dataverse search](/power-apps/user/relevance-faq).
+All experiences that use Dataverse search become limited. Learn more in [Frequently asked questions about Dataverse search](/power-apps/user/relevance-faq).
 
 ### Turning on Dataverse search again
 
