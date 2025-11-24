@@ -22,32 +22,21 @@ contributors:
 
 Dataverse search delivers fast and comprehensive search results across multiple tables in a single list, sorted by [relevance](/azure/search/index-similarity-and-scoring), to give you an easy and well-informed search experience in model-driven apps. As an administrator with environment-level permissions, you can go to the [Power Platform admin center](/power-platform/admin/new-admin-center) to configure Dataverse search for all the model-driven apps within a specific environment. Use Quick Find views to manage global, quick find, and lookup search behavior.
 
-When you set Dataverse search to **On**, a search box appears at the top of every page in model-driven apps in the environment. The search box lets you start a new search and quickly find the information you're looking for from the searchable tables included in the app. When you turn on Dataverse search, it becomes the default and only global search experience in all model-driven apps in the environment. You can't turn off Dataverse search for individual apps, and users can't switch to [quick find search](/powerapps/user/quick-find), formerly known as categorized search.  
-
-[Dataverse search can be extended to other Microsoft Search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. With a connector enabled, you can search for and find information from the selected canvas as if you're searching in the app. For example, you can quickly look up a contact's phone number or email address without opening the app.
-
 ## Benefits of Dataverse search
 
-- **Integration with AI/Copilot experiences**
-    Users can have a "conversation" with their data and identify themes, patterns, and insights by using natural language. Apply AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to deliver quality results.
+- **Integration with AI/Copilot experiences**: Users can have a "conversation" with their data and identify themes, patterns, and insights by using natural language. Apply AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to deliver quality results.
   	
-- **Unified search**
-    Dataverse search lets you quickly find content in model-driven apps and other products that use Dataverse through a single, unified search experience. Provide a better user experience compared to [quick find](/power-apps/user/quick-find) search, where all words in the search term must be found in one column. 
+- **Unified search**: Dataverse search lets you quickly find content in model-driven apps and other products that use Dataverse through a single, unified search experience. Provide a better user experience compared to [quick find](/power-apps/user/quick-find) search, where all words in the search term must be found in one column. 
   	
-- **Efficient relevance-based results**
-    Intelligent, ranking algorithms return the most relevant records first, with a performance that's superior to [categorized search](/power-apps/user/quick-find#multiple-table-quick-find-categorized-search), which reduces the time spent searching and increases its accuracy.
+- **Efficient relevance-based results**: Intelligent, ranking algorithms return the most relevant records first, with a performance that's superior to [categorized search](/power-apps/user/quick-find#multiple-table-quick-find-categorized-search), which reduces the time spent searching and increases its accuracy.
   	
-- **Smart fuzzy search**
-    Handles variations in spelling and terminology so that it doesn't depend on exact keyword matches.
+- **Smart fuzzy search**: Handles variations in spelling and terminology so that it doesn't depend on exact keyword matches.
     
-- **Security and compliance**
-    Respects Dataverse security roles and permissions. Users can only see search results for records that they have access to.
+- **Security and compliance**: Respects Dataverse security roles and permissions. Users can only see search results for records that they have access to.
   	
-- **Scalability and performance**
-    Optimized for large datasets and supports multiple data types, such as choice and lookups.
+- **Scalability and performance**: Optimized for large datasets and supports multiple data types, such as choice and lookups.
 
-- **Search across documents in Dataverse**
-      Includes search results for text in documents that are stored in Dataverse such as PDF, Office documents, HTML, XML, ZIP, EML, plain text, and JSON file formats. It also searches text in notes and attachments.
+- **Search across documents in Dataverse**: Includes search results for text in documents that are stored in Dataverse such as PDF, Office documents, HTML, XML, ZIP, EML, plain text, and JSON file formats. It also searches text in notes and attachments.
 
 > [!NOTE]
 > Global search supports up to 2 MB of file search.
@@ -78,7 +67,9 @@ The following tables show how each Dataverse search setting impacts global searc
 
 ## What the Dataverse search setting means for global search
 
-When you set Dataverse search to **On**, the global search box appears at the top of every page in your model-driven apps. It's the default global search experience for all model-driven apps.
+When you set Dataverse search to **On**, a search box appears at the top of every page in model-driven apps in the environment. The search box lets you start a new search and quickly find the information you're looking for from the searchable tables included in the app. When you turn on Dataverse search, it becomes the default and only global search experience in all model-driven apps in the environment. You can't turn off Dataverse search for individual apps, and users can't switch to [quick find search](/powerapps/user/quick-find), formerly known as categorized search.  
+
+[Dataverse search can be extended to other Microsoft Search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. With a connector enabled, you can search for and find information from the selected canvas as if you're searching in the app. For example, you can quickly look up a contact's phone number or email address without opening the app.
 For more information, see [Search for records by using Dataverse search](/power-apps/user/relevance-search).
 
 | Dataverse search set to On	|  Dataverse search set to Default	|   Dataverse search set to Off  |
