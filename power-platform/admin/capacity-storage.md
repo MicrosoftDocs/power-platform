@@ -394,11 +394,11 @@ Because custom Quick Find lookups are created by an admin in the org, these inde
 
 The **DataverseSearch** table (previously known as **RelevanceSearch**) stores data for the global search and generative AI experiences. It includes data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment and Copilot semantic indexes.
 
-For more information, see [actions that makers or admins can take to optimize Dataverse search](/relevance-search-benefits.md#what-actions-can-makers-or-admins-take-to-manage-dataverse-search-efficiently).
+For more information, see [Managing Dataverse search](configure-relevance-search-organization.md#managing-dataverse-search).
 
 ### Can Dataverse search be managed?
 
-An admin can manage Dataverse search through the three states associated with this setting: On, Default, and Off. Learn more in [Configure Dataverse search](/configure-relevance-search-organization.md#managing-dataverse-search).
+An admin can manage Dataverse search through the three states associated with this setting: On, Default, and Off. Learn more in [Configure Dataverse search](configure-relevance-search-organization.md).
 
 > [!NOTE]
 >
@@ -406,7 +406,7 @@ An admin can manage Dataverse search through the three states associated with th
 > - No other setting is turned on if Dataverse search is turned **On** or **Default**.
 
 ### What actions can admins take?
-Depending on the experience that leverages Dataverse Search and its usage, consumption size might increase more drastically. Learn more in [What is Dataverse search](/relevance-search-benefits.md#what-actions-can-makers-or-admins-take-to-manage-dataverse-search-efficiently).
+Depending on the experience that leverages Dataverse search and its usage, consumption size might increase more drastically. Learn more in [Configure Dataverse search for your environment](configure-relevance-search-organization.md).
   
 > [!IMPORTANT]
 > We don't recommend that you turn off Dataverse search as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
