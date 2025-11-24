@@ -29,7 +29,7 @@ Currencies determine the prices for products in the product catalog and the cost
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. Select an environment.
-1.. Select **Settings** > **Business**.
+1. Select **Settings** > **Business**.
 1. Select **Currencies**.  
 1. Select **New**.  
 1. Fill in the information, as required.  
