@@ -4,7 +4,7 @@ description: Why does the email message I sent have a Pending Send status?
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/11/2020
+ms.date: 11/25/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -16,15 +16,14 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
   
  If you are the administrator, verify that the user who sent the email is enabled for sending email. To do this:  
   
-1. In the Power Platform admin center, select an environment. 
-
-2. Select **Settings** > **Email** > **Mailboxes**.  
-  
-3. Change the view to **Active Mailboxes.**  
-  
-4. Select the mailbox record for the user who sent the email, and then click the **Edit** button.  
-  
-5. Verify the user is correctly configured and enabled for sending email:  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select an environment.
+1. Select **Settings** > **Email** > **Mailboxes**.  
+1. Change the view to **Active Mailboxes.**  
+1. Select the mailbox record for the user who sent the email, and then click the **Edit** button.  
+1. Verify the user is correctly configured and enabled for sending email:  
   
    - If the user's mailbox record is configured to use server-side synchronization for outgoing email, verify the user's email address is approved and is also tested and enabled.  For more information about configuring server-side synchronization, see [set up server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md).  
   
