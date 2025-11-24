@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/10/2020
+ms.date: 11/25/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -39,37 +39,49 @@ Gather your thoughts, ideas, plans and research in one single place with [!INCLU
 
  When server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration is turned on, **[!INCLUDE[pn_onenote](../includes/pn-onenote.md)] integration** is listed in **Document Management**.  
   
-1. In the Power Platform admin center, select an environment. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-2. Select **Settings** > **Integration** > **Document management settings**.  
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Environments**.
+
+1. Select an environment.
+
+1. Go to **Settings** > **Integration** > **Document management settings**.  
   
-3. Select **OneNote Integration**.  
+1. Select **OneNote Integration**.  
   
    ![Choose OneNote Integration.](../admin/media/onenote-integration.png "Select OneNote Integration")  
   
-4. Follow the instructions in the wizard to turn on [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] integration for selected entities. Choose entities that need a full notebook per record. Only entities that are already enabled for document management are listed. Select **Finish**.  
+1. Follow the instructions in the wizard to turn on [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] integration for selected entities. Choose entities that need a full notebook per record. Only entities that are already enabled for document management are listed. Select **Finish**.  
   
    ![Follow instructions in wizard.](../admin/media/onenote-integration-wizard.png "Follow instructions in the wizard")  
   
-5. You can also enable [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] integration for an entity from the customization form, as long as document management has been enabled for that entity.  
+1. You can also enable [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] integration for an entity from the customization form, as long as document management has been enabled for that entity.  
   
    ![Select OneNote integration for an entity.](../admin/media/onenote-select-entity.png "Select OneNote integration for an entity")  
   
-6. A [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is automatically created for a record the first time you select the **OneNote** tab in the activities area in model-driven and customer engagement apps. After the dedicated [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is created for that record, you can view and navigate to that notebook from any Dynamics 365 apps client.  
+1. A [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is automatically created for a record the first time you select the **OneNote** tab in the activities area in model-driven and customer engagement apps. After the dedicated [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is created for that record, you can view and navigate to that notebook from any Dynamics 365 apps client.  
   
 [!INCLUDE[proc-more-information](../includes/proc-more-information.md)] [Take notes by using OneNote](/powerapps/user/onenote)
   
 ## To turn off OneNote integration  
   
-1. In the Power Platform admin center, select an environment. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-2. Select **Settings** > **Integration** > **Document management settings**.  
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Environments**.
+
+1. Select an environment.
+
+1. Go to **Settings** > **Integration** > **Document management settings**.  
   
-3. Select **OneNote Integration**.  
+1. Select **OneNote Integration**.  
   
    ![Choose OneNote Integration.](../admin/media/onenote-integration.png "Select OneNote Integration")  
   
-4. In the **OneNote Integration Setting** dialog box, clear the check boxes for all entities, and then select **Finish**.  
+1. In the **OneNote Integration Setting** dialog box, clear the check boxes for all entities, and then select **Finish**.  
 
 ## Troubleshooting OneNote integration
 
@@ -85,8 +97,16 @@ You receive this error message:
 We can't find the notebook. The OneNote notebook might have been removed or moved to another location. Check the notebook location or contact your administrator to update the location record stored in Dynamics 365 Customer Engagement. (Error: 0x80060729)  
 
 To resolve the issue, follow these steps:   
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and open the environment you want. 
-1. Select **Settings** > **Integration**, and then select **Document management settings**.  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Environments**.
+
+1. Select the environment you want.
+   
+1. Go to **Settings** > **Integration**, and then select **Document management settings**.
+    
 1. Select **SharePoint Document Locations**, open that document location record, and then change the corresponding URL to match your notebook location.  
   
 ### Can I edit a OneNote file from within a model-driven or Dynamics 365 customer engagement app?  
