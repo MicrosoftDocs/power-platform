@@ -2,7 +2,7 @@
 title: "Migrate default and Dataverse for Teams environments  | MicrosoftDocs"
 description: The article provides information about how to migrate the default environment within a tenant.
 ms.topic: upgrade-and-migration-article
-ms.date: 11/28/2022
+ms.date: 11/24/2025
 ms.subservice: admin
 author: sericks007
 ms.author: iyanni
@@ -17,7 +17,12 @@ In some cases, the geographical region selected by the system isn't the ideal ch
 
 ## Environment region
 
-You can find the geographical region of your environments by selecting **Environments** in the left pane of the Power Platform admin center, and then view the information under the **Region** column.
+You can find the geographical region of your environments by doing the following.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select your environment.
+1. View the information under the **Region** column.
 
 :::image type="content" source="media/view-env-region.png" alt-text="View your environment's region":::
 
