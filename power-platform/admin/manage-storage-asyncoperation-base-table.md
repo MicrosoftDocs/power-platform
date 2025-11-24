@@ -110,7 +110,7 @@ To access the **System Jobs** page, use the following steps.
 1. In the **Manage** pane, select **Environments**.
 1. Select your environment.
 1. Select **Settings** on the command bar.
-6. Select **Audit and logs** > **System jobs**.
+1. Select **Audit and logs** > **System jobs**.
 
 System jobs have the following status:
 
@@ -164,7 +164,7 @@ To set up [bulk delete jobs](/power-platform/admin/cleanup-asyncoperationbase-ta
           | AND    | Completed On | Older Than X Days  | 7<br><br>Always start with a narrow condition that limits deleted records (**older than 3 years**), then move to progressively wider delete criteria (**older than 3 months**) and then to wider delete criteria (**older than 7 days**). |
           | AND    | System Job Type | Does Not Equal   | Bulk Email <br>Import File Parse<br>Workflow |
 
-1 Select **Preview Records** to view the records that will be deleted from the specified search criteria to make sure that no data gets unintendedly deleted in the process. Then select **Next**.
+1. Select **Preview Records** to view the records that will be deleted from the specified search criteria to make sure that no data gets unintendedly deleted in the process. Then select **Next**.
 1. On the **Select Options** page, select the **Run this job after every** option, and then select **7** days. Then select **Next**.
 1. On the **Review and Submit Bulk Deletion Details** page, select **Submit**. 
  
