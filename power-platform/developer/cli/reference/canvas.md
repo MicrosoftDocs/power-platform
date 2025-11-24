@@ -120,7 +120,7 @@ Specifies the target Dataverse. The value may be a Guid or absolute https URL. W
 
 > [!IMPORTANT]
 >
-> This command has been deprecated. Please read [the source code files documentation](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/power-apps-yaml) for instructions on how to pack/unpack `.msapp` files.
+> This command has been deprecated. Please read [the source code files documentation](/power-apps/maker/canvas-apps/power-apps-yaml) for instructions on how to pack/unpack `.msapp` files.
 
 [!INCLUDE [canvas-pack-intro](includes/canvas-pack-intro.md)]
 
@@ -143,7 +143,7 @@ Directory to sources to be packed
 
 > [!IMPORTANT]
 >
-> This command has been deprecated. Please read [the source code files documentation](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/power-apps-yaml) for instructions on how to pack/unpack `.msapp` files.
+> This command has been deprecated. Please read [the source code files documentation](/power-apps/maker/canvas-apps/power-apps-yaml) for instructions on how to pack/unpack `.msapp` files.
 
 [!INCLUDE [canvas-unpack-intro](includes/canvas-unpack-intro.md)]
 
