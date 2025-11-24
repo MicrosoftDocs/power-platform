@@ -408,8 +408,8 @@ An admin can manage Dataverse search through the three states associated with th
 ### What actions can admins take?
 Depending on the experience that leverages Dataverse Search and its usage, consumption size might increase more drastically. Learn more in [What is Dataverse search](/relevance-search-benefits.md#what-actions-can-makers-or-admins-take-to-manage-dataverse-search-efficiently).
   
-    > [!IMPORTANT]
-    > We don't recommend that you turn off Dataverse search as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
+> [!IMPORTANT]
+> We don't recommend that you turn off Dataverse search as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
 
 ### Turning off Dataverse search
 
