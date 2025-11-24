@@ -4,7 +4,7 @@ description: Recover database space by deleting audit logs
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/29/2024
+ms.date: 11/25/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -70,11 +70,13 @@ OData-Version: 4.0
 > [!CAUTION]
 > When you delete an audit log, you can no longer view the audit history for the period covered by that audit log. **Deleted logs are not recoverable**.
 
-1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 
-1. In the navigation pane, select **Environments**.
-  
-1. Select an environment. 
+1. In the navigation pane, select **Manage**.
+   
+1. In the **Manage** pane, select **Environments**.
+   
+1. Select an environment.
 
 1. In the **Auditing** section, under **Free up capacity**, select **Delete audit logs**.  
   
@@ -83,7 +85,7 @@ OData-Version: 4.0
     - **Access logs, by people and systems**
     - **All logs up to and including the selected date**.
   
-6. Select **Delete**.
+1. Select **Delete**.
   
    > [!NOTE]
    >  You can only delete the oldest audit log in the system. To delete more than one audit log, continue to delete the oldest audit log until you have deleted enough logs.  
