@@ -43,6 +43,23 @@ A user can have multiple security roles. Security role privileges are cumulative
 1. Select **Settings** > **Users + permissions** > **Security roles**.
 
 ---
+### Role name and description of a security role
+
+Give the Dataverse security role a descriptive name, include a brief statement of its purpose, define the ‘Applies To’ scope (such as the service or application where the role is enforced), and summarize the key business tables for which the role grants permissions.
+
+### View and update the security role description 
+> [!Note]
+> The description, applies to and summary are protected and cannot be updated for system security roles.
+
+# [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. Select **Settings** in the command bar. The **Settings** page for that environment is displayed.
+1. Select **Users + Permissions** > **Security roles**.
+1. Select a security role and select **Settings** on the action bar, or
+1. Select a security role and then select the More actions (...) icon, and select **Settings**.
 
 ### Define the privileges and properties of a security role
 
