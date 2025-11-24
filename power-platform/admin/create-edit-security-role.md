@@ -39,6 +39,9 @@ This article also also helps you make sure that your users have a security role 
 1. In the command bar, select **+ New role**. The **Create New Role** pane is displayed.
 1. Enter a role name.
 1. Select a business unit.
+1. Enter a description, eg a brief statement of its purpose.
+1. Enter an applies to, eg which service or application where this role is used.
+1. Enter a summary of core table privileges, eg key business tables for which the role grants permissions.
 1. To allow team members to inherit the privileges of this role when it's assigned to a team, accept the default **Member's privilege inheritance** setting, which is **Direct User (Basic) access level and Team privileges**. Learn more about the **Member's privilege inheritance** setting in [Security roles and privileges](security-roles-privileges.md).
 1. To use the new role to run model-driven apps, accept the default **Include App Opener privileges for running Model-Driven apps** setting, which is set to **On**.
 1. Select **Save**. The properties of the new role are displayed.
@@ -63,6 +66,9 @@ This article also also helps you make sure that your users have a security role 
 1. Select **+ New role**.
 1. Enter a role name.
 1. Select a business unit.
+1. Enter a description, eg a brief statement of its purpose.
+1. Enter an applies to, eg which service or application where this role is used.
+1. Enter a summary of core table privileges, eg key business tables for which the role grants permissions.
 1. To allow team members to inherit the privileges of this role when it's assigned to a team, accept the default **Member's privilege inheritance** setting, which is **Direct User (Basic) access level and Team privileges**. Learn more about the **Member's privilege inheritance** setting in [Security roles and privileges](security-roles-privileges.md).
 1. To use the new role to run model-driven apps, accept the default **Include App Opener privileges for running Model-Driven apps** setting, which is set to **On**.
 1. Select **Save**. The properties of the new role are displayed.
@@ -90,6 +96,9 @@ This article also also helps you make sure that your users have a security role 
 1. Select the security role you want to copy.
 1. Select **Copy security role** in the command bar. The **Copy role** dialog box is displayed.
 1. Enter a name for the new role. Select **Copy**.
+1. Enter a description, eg a brief statement of its purpose.
+1. Enter an applies to, eg which service or application where this role is used.
+1. Enter a summary of core table privileges, eg key business tables for which the role grants permissions.
 1. Go back to the **Security roles** page and select the new role you created by copying an existing role.
 1. Specify privileges for the security role. Learn more in [Security roles and privileges](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
 1. Select **Save + close**.
@@ -105,12 +114,52 @@ This article also also helps you make sure that your users have a security role 
 1. Select the security role you want to copy.
 1. Select **Copy security role** in the command bar. The **Copy role** dialog box is displayed.
 1. Enter a name for the new role. Select **Copy**.
+1. Enter a description, eg a brief statement of its purpose.
+1. Enter an applies to, eg which service or application where this role is used.
+1. Enter a summary of core table privileges, eg key business tables for which the role grants permissions.
 1. Go back to the **Security roles** page and select the new role you created by copying an existing role.
 1. Specify privileges for the security role. Learn more in [Security roles and privileges](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
 1. Select **Save + close**.
 ---
 
-## Edit a security role
+## Edit settings (name, description, applies to and summary) of a security role
+
+> [!NOTE]
+> You can't edit the settings of system security roles.
+
+## [New admin center](#tab/new)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. Then select an environment.
+1. In the command bar, select **Settings**.
+1. Expand the **Users + permissions** node.
+1. Select **Security roles**. The **Security roles** page is displayed.
+1. Select the security role you want to edit and select the **Settings** option from the action bar.
+1. Update the name.
+1. Update the description, eg a brief statement of its purpose.
+1. Update the applies to, eg which service or application where this role is used.
+1. Update the summary of core table privileges, eg key business tables for which the role grants permissions.
+1. Select **Save + close**.
+
+## [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Environments** in the navigation pane. The Environments page is displayed.
+1. Select an environment.
+1. In the command bar, select **Settings**.
+1. Expand the **Users + permissions** node.
+1. Select **Security roles**. The **Security roles** page is displayed.
+1. Select the security role you want to edit and select the **Settings** option from the action bar.
+1. Update the name.
+1. Update the description, eg a brief statement of its purpose.
+1. Update the applies to, eg which service or application where this role is used.
+1. Update the summary of core table privileges, eg key business tables for which the role grants permissions.
+1. [Specify privileges for the security role.](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
+1. Select **Save + close**.
+---
+
+
+## Edit privileges of a security role
 
 Before you edit a security role, make sure you understand the principles of [controlling data access](../admin/security-roles-privileges.md).
 
