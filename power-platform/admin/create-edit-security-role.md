@@ -89,7 +89,7 @@ To edit settings, like name, description, applies to, and summary, of a security
 1. On the command bar, select **Settings**.
 1. Expand **Users + permissions** and select **Security roles**.
 1. Choose the security role you want to edit.
-2. On the command bar, select **Settings**.
+1. On the command bar, select **Settings**.
 1. Update the *name*.
 1. Update the *description*. For example, a brief statement of its purpose.
 1. Update the *applies to*. For example, identify the service or application where this role is used.
