@@ -1,6 +1,7 @@
 ---
 title: Manage your maintenance window
 description: Learn how to manage when you'll receive service updates.
+author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
 ms.component: pa-admin

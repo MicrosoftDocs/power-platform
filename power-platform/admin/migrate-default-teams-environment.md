@@ -5,7 +5,7 @@ ms.topic: upgrade-and-migration-article
 ms.date: 11/24/2025
 ms.subservice: admin
 author: sericks007
-ms.author: iyanni
+ms.author: sericks
 ms.reviewer: sericks007
 ---
 
@@ -17,7 +17,8 @@ In some cases, the geographical region selected by the system isn't the ideal ch
 
 ## Environment region
 
-You can find the geographical region of your environments by doing the following.
+You can find the geographical region of your environments by doing the following:
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
