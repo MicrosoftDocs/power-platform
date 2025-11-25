@@ -1,8 +1,7 @@
 ---
-title: "View self-service storage capacity  | MicrosoftDocs"
+title: View self-service storage capacity
 description: View self-service storage capacity
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/25/2025
@@ -13,7 +12,7 @@ search.audienceType:
 ---
 # View self-service storage capacity
 
-With the introduction of [self-service purchases](/microsoft-365/commerce/subscriptions/self-service-purchase-faq) for Microsoft Power Platform products, license purchases are no longer restricted to Power Platform admins. With this change comes the need to be able to view self-service capacity data. Use the steps below to view the storage capacity provided with purchased licenses. 
+With the introduction of [self-service purchases](/microsoft-365/commerce/subscriptions/self-service-purchase-faq) for Microsoft Power Platform products, license purchases aren't restricted to Power Platform admins. With this change, you need the ability to view self-service capacity data. Take the following steps to view the storage capacity provided with purchased licenses.
 
 1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) with admin or end-user credentials.
 1. In the navigation pane, select **Licensing**.
@@ -21,27 +20,24 @@ With the introduction of [self-service purchases](/microsoft-365/commerce/subscr
 1. Select the **Summary** tab.
 
    > [!NOTE]
-   > Admins and end users will see the same tenant capacity on this page.
+   >
+   > Admins and end users see the same tenant capacity on the summary page.
+   > If tenant users don't purchase licenses, then the **Capacity from self-service user licenses** page is blank.
 
 1. In the **Storage capacity, by source** tile, select **View self-service sources**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![View self-service sources.](media/view-individual-sources.png "View self-service sources")
+   :::image type="content" source="media/view-individual-sources.png" alt-text="View self-service sources.":::
 
-### If you are signed in as a Power Platform admin 
-You will see all licenses purchased by users in the tenant. You can filter or search for licenses to shorten the list.
+## View storage capacity as a Power Platform admin
 
-  > [!div class="mx-imgBorder"] 
-  > ![Power Platform admin view.](media/capacity-from-licenses-admin.png "Power Platform admin view")
+You see all licenses purchased by users in the tenant. You can filter or search for licenses to shorten the list.
 
-### If you are signed in as an end user 
-You will see the license and capacity information for the licenses you have purchased.
+  :::image type="content" source="media/capacity-from-licenses-admin.png" alt-text="Power Platform admin view.":::
 
-  > [!div class="mx-imgBorder"] 
-  > ![User view.](media/capacity-from-licenses-user.png "User view")
+## View storage capacity as an end user
 
-### If there are no licenses purchased by tenant users 
-The **Capacity from self-service user licenses** page will be blank.
+You see the license and capacity information for the licenses you purchased.
 
+  :::image type="content" source="media/capacity-from-licenses-user.png" alt-text="User view.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

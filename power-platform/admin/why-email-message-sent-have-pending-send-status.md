@@ -1,6 +1,6 @@
 ---
-title: "Why does the email message I sent have a Pending Send status? | MicrosoftDocs"
-description: Why does the email message I sent have a Pending Send status? 
+title: Why does the email message I sent have a Pending Send status?
+description: Learn why an email message I sent has a *Pending Send* status and how to resolve. 
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
@@ -10,25 +10,25 @@ ms.author: sericks
 search.audienceType: 
   - admin
 ---
-# Why does the email message I sent have a "Pending Send" status?
+# Why does the email message I sent have a Pending Send status?
 
-If you create an email message in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and click the **Send** button, the message will not be sent unless email integration has been correctly configured and enabled for sending email from customer engagement apps.  If the status of the email appears as "Pending Send" and is not sent, contact your administrator. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find your administrator or support person](/powerapps/user/find-admin)  
+If you create an email message in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and select **Send**, the message isn't sent unless email integration is correctly configured and enabled for sending email from customer engagement apps.  If the status of the email appears as *Pending Send* and isn't sent, contact your administrator. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find your administrator or support person](/powerapps/user/find-admin)  
   
- If you are the administrator, verify that the user who sent the email is enabled for sending email. To do this:  
+ If you're the administrator, verify that the user who sent the email is enabled for sending email. To do this:  
   
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. Select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.  
-1. Change the view to **Active Mailboxes.**  
-1. Select the mailbox record for the user who sent the email, and then click the **Edit** button.  
-1. Verify the user is correctly configured and enabled for sending email:  
+1. Change the view to **Active Mailboxes**.
+1. Select the mailbox record for the user who sent the email, and then select **Edit**.  
+1. Verify the user is correctly configured and enabled for sending email.  
   
-   - If the user's mailbox record is configured to use server-side synchronization for outgoing email, verify the user's email address is approved and is also tested and enabled.  For more information about configuring server-side synchronization, see [set up server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md).  
+   If the user's mailbox record is configured to use server-side synchronization for outgoing email, verify the user's email address is approved, tested, and enabled.  For more information about configuring server-side synchronization, see [set up server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md).  
   
-### See also  
- [Integrate your email system](../admin/integrate-synchronize-your-email-system.md)
+## See also
 
+ [Integrate your email system](../admin/integrate-synchronize-your-email-system.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
