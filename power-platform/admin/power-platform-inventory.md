@@ -154,7 +154,6 @@ The following are example queries you can use with any of these interfaces.
 
 ```Kusto
 PowerPlatformResources
-
 | count
 ```
 
@@ -162,68 +161,51 @@ PowerPlatformResources
 
 ```Kusto
 PowerPlatformResources
-
-| summarize count() by type
-
-| order by count\_ desc
+| summarize resourceCount = count() by type
+| order by resourceCount
 ```
 
 ### Query 3: Counts by environment (inventory distribution across environments)
 
 ```Kusto
 PowerPlatformResources
-
-| extend pros = parse_json(properties)
-
-| extend environmentId = tostring(pros.environmentId)
-
-| summarize count() by environmentId
-
-| order by count\_ desc
+| extend properties = parse_json(properties)
+| extend environmentId = tostring(properties.environmentId)
+| summarize resourceCount = count() by environmentId
+| order by resourceCount desc
 ```
 
 ### Query 4: Counts by region (inventory distribution across regions)
 
 ```Kusto
 PowerPlatformResources
-
-| summarize count() by location
-
-| order by count\_ desc
+| summarize resourceCount = count() by location
+| order by resourceCount desc
 ```
 
 ### Query 5: Top owners by item count
 
 ```Kusto
 PowerPlatformResources
-
-| extend pros = parse_json(properties)
-
-| extend ownerId= tostring(pros.ownerId)
-
-| summarize count() by ownerId
-
-| order by count\_ desc
+| extend properties = parse_json(properties)
+| extend ownerId = tostring(properties.ownerId)
+| summarize resourceCount = count() by ownerId
+| order by resourceCount desc
 ```
 
 ### Query 6: Finding a single agent in the tenant
 
 ```Kusto
 PowerPlatformResources
-
 | where type == "microsoft.copilotstudio/agents"
-
-| where name == "0f9b5e26-a682-f011-b4cc-6045bd0390df"
+| where name == "[Enter the agent's ID]"
 ```
 
 ### Query 7: Items created in the past 24 hours
 
 ```Kusto
 PowerPlatformResources
-
-| extend pros = parse_json(properties)
-
-| extend createdAt= todatetime(pros.createdAt)
-
-| where createdAt \>= ago(24h)
+| extend properties = parse_json(properties)
+| extend createdAt = todatetime(properties.createdAt)
+| where createdAt >= ago(24h)
 ```
