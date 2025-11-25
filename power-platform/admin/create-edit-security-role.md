@@ -21,7 +21,7 @@ search.audienceType:
 
 Create security roles or edit the privileges associated with an existing security role to accommodate changes in your business requirements. You can [export your changes as a solution](/powerapps/maker/common-data-service/use-solutions-for-your-customizations) to make a backup or for use in a different implementation.
 
-This article also also helps you make sure that your users have a security role with the minimum privileges that are needed for common tasks like opening model-driven apps. Be sure to watch the video in [Minimum privileges for common tasks](#minimum-privileges-for-common-tasks).
+This article also helps you make sure that your users have a security role with the minimum privileges that are needed for common tasks like opening model-driven apps. Be sure to watch the video in [Minimum privileges for common tasks](#minimum-privileges-for-common-tasks).
 
 ## Prerequisites
 
@@ -42,15 +42,15 @@ To create a security role, take these steps:
 1. Enter a *description*. For example, a brief statement of its purpose.
 1. Enter an *applies to*. For example, identify the service or application where this role is used.
 1. Enter a *summary of core table privileges*. For example,the key business tables for which the role grants permissions.
-1. To allow team members to inherit the privileges of this role when it's assigned to a team, accept the default **Member's privilege inheritance** setting, which is **Direct User (Basic) access level and Team privileges**. Learn more about the **Member's privilege inheritance** setting in [Security roles and privileges](security-roles-privileges.md).
+1. To allow team members to inherit the privileges of this role when you assign it to a team, accept the default **Member's privilege inheritance** setting, which is **Direct User (Basic) access level and Team privileges**. Learn more about the **Member's privilege inheritance** setting in [Security roles and privileges](security-roles-privileges.md).
 1. To use the new role to run model-driven apps, accept the default **Include App Opener privileges for running Model-Driven apps** setting, which is set to **On**.
 1. Select **Save**. The new role's properties are displayed.
 
 ## Grant table privileges
 
-To grant table privileges, take these steps:
+To grant table privileges, follow these steps:
 
-You need to grant your app's table privileges to this newly created security role. It's also important that you review and update the default privileges copied from the [App Opener security role's minimum privileges for common tasks](#minimum-privileges-for-common-tasks). Some privileges were granted with an organization-level read access, such as process (flows), that allow the user to run system-supplied flows. If your app or user doesn't need to run system-supplied flows, you can change this privilege to **User** (basic) level.
+You need to grant your app's table privileges to this newly created security role. Review and update the default privileges copied from the [App Opener security role's minimum privileges for common tasks](#minimum-privileges-for-common-tasks). Some privileges grant organization-level read access, such as process (flows), that allow the user to run system-supplied flows. If your app or user doesn't need to run system-supplied flows, you can change this privilege to **User** (basic) level.
 
 1. Enter your table name in the **Search** input field to find your app's table.
 1. Select your table and set the permission settings.
@@ -59,7 +59,7 @@ You need to grant your app's table privileges to this newly created security rol
 
 ## Create a security role by copying an existing role
 
-To create a security role by copying an existing role, take these steps:
+To create a security role by copying an existing role, follow these steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Manage** on the navigation pane.
@@ -73,7 +73,7 @@ To create a security role by copying an existing role, take these steps:
 1. Enter an *applies to*. For example, identify the service or application where this role is used.
 1. Enter a *summary of core table privileges*. For example,the key business tables for which the role grants permissions.
 1. Go back to the **Security roles** page and select the new role you created.
-1. Specify privileges for the security role. Learn more in [Security roles and privileges](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
+1. Specify privileges for the security role. For more information, see [Security roles and privileges](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
 1. Select **Save + close**.
 
 ## Edit settings of a security role
@@ -108,15 +108,15 @@ Before you edit a security role, make sure you understand the principles of [con
 1. On the **Manage** pane, select **Environments** and then select an environment.
 1. On the command bar, select **Settings**.
 1. Expand **Users + permissions** and select **Security roles**.
-1. Choose the security role you want to edit
+1. Choose the security role you want to edit.
 1. [Specify privileges for the security role.](security-roles-privileges.md#define-the-privileges-and-properties-of-a-security-role).
 1. Select **Save + close**.
 
 ## Minimum privileges for common tasks
 
-Make sure that your users have a security role with the minimum privileges that are needed for common tasks like opening model-driven apps.
+Make sure that your users have a security role with the minimum privileges that they need for common tasks like opening model-driven apps.
 
-Don't use the [**min prv apps use** role](https://go.microsoft.com/fwlink/?linkid=2221577) that's available in the Microsoft Download Center. It's being retired soon. Instead, use or [copy the predefined security role App Opener](#create-a-security-role-by-copying-an-existing-role), and then set the appropriate privileges.
+Don't use the [**min prv apps use** role](https://go.microsoft.com/fwlink/?linkid=2221577) that's available in the Microsoft Download Center. It's retiring soon. Instead, use or [copy the predefined security role App Opener](#create-a-security-role-by-copying-an-existing-role), and then set the appropriate privileges.
 
 - To allow users to open a model-driven app or any Dynamics 365 customer engagement app, assign the **App Opener** role.
 
@@ -125,7 +125,7 @@ Don't use the [**min prv apps use** role](https://go.microsoft.com/fwlink/?linki
   - **Core Records:** Read privilege on the table, Read Saved View, Create/Read/Write User Entity UI Settings
 and assign the following privilege on the Business Management tab: Read User.
 
-- When logging in to [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]:
+- When signing in to [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]:
 
 - To render navigation for customer engagement apps and all buttons: assign the min prv apps use security role or a copy of this security role to your user
 
