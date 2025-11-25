@@ -4,7 +4,7 @@ description: Learn how to manage user settings and security roles when administe
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/06/2023
+ms.date: 11/25/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -17,13 +17,13 @@ contributors:
 
 Manage user settings in the Power Platform admin center.
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
-
-2. Select **Settings** from the navigation pane to see the **Tenant settings** page.  
-
-3. Find a user name from the **Name** list and select the check mark near the name.
-
-4. Select a user setting:
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select an environment.
+1. In the **Manage** pane, select **Tenant settings**.  
+1. Find a user name from the **Name** list and select the check mark near the name.
+1. Select a user setting:
 
    | Setting | Description | For more information |
    | ------- | ----------- | -------------------- |
