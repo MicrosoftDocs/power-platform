@@ -20,7 +20,7 @@ Manage user settings in the Power Platform admin center.
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Manage** in the navigation pane.
-1. In the **Manage** pane, select **Environments**. The **Environments** page is dispalyed.
+1. In the **Manage** pane, select **Environments**. The **Environments** page is displayed.
 1. Select an environment.
 1. Select **Settings** from the command bar to view the **Settings** page.  
 1. Expand the **Users + permissions** category and select **Users** to view the **Users** page.
