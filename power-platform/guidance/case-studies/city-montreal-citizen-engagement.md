@@ -108,7 +108,7 @@ The City of Montréal connects two APIs to their agent and uses the Bing Search 
 
 Since the waste collection schedule data is unstructured, a [generative answers node](/microsoft-copilot-studio/nlu-boost-node#add-a-generative-answers-node) is used to summarize API responses instead of relying on static content. For waste collection queries, citizens enter their postal code and street number, and the agent retrieves the correct schedule via the API. The language model enriches the response. A planned upgrade includes a location API that auto-fills postal codes to improve the user experience.
 
-### Using custom entities
+#### Using custom entities
 
 The City of Montréal introduced two custom entities, Postal Code and Borough. There are 19 boroughs, and citizens often spell them incorrectly. The Copilot Studio smart match and synonyms features are used, and there's also a failsafe.
 
