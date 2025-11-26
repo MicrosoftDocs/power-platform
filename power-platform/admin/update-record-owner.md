@@ -3,7 +3,7 @@ title: Update a record Owner and Owning Business Unit
 description: Learn to update a record’s owner, an Owning Business Unit, or both an Owner and Owning Business Unit because the record changes ownership.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/20/2025
+ms.date: 11/26/2025
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
@@ -52,6 +52,6 @@ If there are related tables and the relationship behavior is set to parental, up
 To reassign all records from one user to yourself, a team, or another user, use the **Reassign Records** tool in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). Go to the [Users settings](users-settings.md) article for more information on how to navigate to the **Reassign Records** tool.
 
 > [!NOTE]
-> This process will move all records owned by the selected user or team regardless of state. This will also unpublish any workflows that you assign to another user. Before the assigned workflows can be used, the new owner must publish them again.
+> This process moves all records owned by the selected user or team regardless of state. This also unpublishes any workflows that you assign to another user. Before the assigned workflows can be used, the new owner must publish them again.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
