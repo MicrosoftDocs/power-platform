@@ -67,7 +67,12 @@ The following tables show how each Dataverse search setting impacts global searc
 
 ## What the Dataverse search setting means for global search
 
-When you set Dataverse search to **On**, a search box appears at the top of every page in model-driven apps in the environment. The search box lets you start a new search and quickly find the information you're looking for from the searchable tables included in the app. When you turn on Dataverse search, it becomes the default and only global search experience in all model-driven apps in the environment. You can't turn off Dataverse search for individual apps, and users can't switch to [quick find search](/powerapps/user/quick-find), formerly known as categorized search.  
+When you set Dataverse search to **On**, a search box appears at the top of every page in model-driven apps in the environment. The search box lets you start a new search and quickly find the information you're looking for from the searchable tables included in the app. When you turn on Dataverse search, it becomes the default and only global search experience in all model-driven apps in the environment. 
+
+> [!NOTE]
+> Global Search cannot be turned off for individual apps.
+> Once Dataverse Search is set to "On", [quick find search](/powerapps/user/quick-find) (formerly known as categorized search) becomes unavailable.
+
 
 [Dataverse search can be extended to other Microsoft Search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. With a connector enabled, you can search for and find information from the selected canvas as if you're searching in the app. For example, you can quickly look up a contact's phone number or email address without opening the app.
 For more information, see [Search for records by using Dataverse search](/power-apps/user/relevance-search).
