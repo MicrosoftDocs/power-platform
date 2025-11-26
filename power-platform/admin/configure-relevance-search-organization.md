@@ -136,7 +136,7 @@ When you provision a Dataverse search index, you see an indication that provisio
 > [!IMPORTANT]
 > Turning off Dataverse search deprovisions and removes the index within 12 hours. If you turn on Dataverse search after it's been off for 12 hours, it provisions a fresh index that needs to go through a full sync. Syncing can take an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
 
-## Set up Dataverse search
+## Set up Dataverse search for Global Search
 
 After you turn on Dataverse search in the Power Platform admin center, set up Dataverse search by completing four steps:
 
@@ -148,7 +148,7 @@ After you turn on Dataverse search in the Power Platform admin center, set up Da
 
 1. Make sure your table is customizable and that the settings to **Track changes** and **Appear in search results** in the **Advanced options** area are both set to **On**. For more information, see [Create and edit tables using Power Apps](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel).
 
-### Select tables for Dataverse search
+### Select tables for Dataverse search's Global Search
 
 To set up search, review the tables that are allowed for Dataverse search in the context of a solution. With the new solution explorer, you can see a snapshot of the Dataverse search index on the **Overview** page.
 
@@ -189,7 +189,7 @@ By default, the following system tables are indexed for Dataverse search. Howeve
 > [!NOTE]
 > Changes made to the Dataverse search configuration or to the searchable data might take up to 15 minutes to appear in the search service. It might take up to an hour or more to complete a full sync for average-size organizations, and a couple of days for large-size organizations.
 
-### Select searchable fields and filters for each table
+### Select searchable fields and filters for each table for Global Search
 
 The table's Quick Find view drives the searchable table fields and filters used for Dataverse search. When you enable Dataverse search, the complete set of **Find columns**, **View columns**, and **Filter columns** in a table's Quick Find view become part of the Dataverse search index. You can add unlimited searchable fields for each table. However, as previously noted, the total number of indexed fields has a limit.
 
