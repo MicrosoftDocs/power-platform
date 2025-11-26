@@ -4,30 +4,30 @@ description: Learn how to manage user settings and security roles when administe
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/06/2023
+ms.date: 11/26/2023
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
 contributors:
-- adrianorth 
+  - MichaelPDuda-Microsoft
+  - adrianorth 
 ---
 
 # User settings
 
 Manage user settings in the Power Platform admin center.
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**. The **Environments** page is dispalyed.
+1. Select an environment.
+1. Select **Settings** from the command bar to view the **Settings** page.  
+1. Expand the **Users + permissions** category and select **Users** to view the **Users** page.
+1. Find a user name from the **Name** list and select the check mark near the name.
+1. Select an option from the command bar:
 
-2. Select **Settings** from the navigation pane to see the **Tenant settings** page.  
-
-3. Expand the **Users + permissions** category and select **Users** to see the **User management** page.
-
-4. Find a user name from the **Name** list and select the check mark near the name.
-
-1. Select a user setting:
-
-   | Setting | Description | For more information |
+   | Option | Description | For more information |
    | ------- | ----------- | -------------------- |
    | Run diagnostics | Access diagnostics on a user in an environment. | [User diagnostics](troubleshooting-user-needs-read-write-access-organization.md#user-diagnostics) |
    | Manage security roles | Assign security roles to users to control access to data, using access levels and permissions.| [Assign a security role to a user](assign-security-roles.md) |
@@ -39,7 +39,7 @@ Manage user settings in the Power Platform admin center.
    | Manage teams | Add or remove a user from a team. | [Microsoft Dataverse teams management](manage-teams.md) |
    | Change channel | Change the release channel for a user, overriding the environment or app release channel. | [User channel override](user-channel-override.md) |
 
-## See also
+## Related content
 
 [Create users](create-users.md)
 
