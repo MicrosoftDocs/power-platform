@@ -1,5 +1,5 @@
 ---
-title: "Select a data map | MicrosoftDocs"
+title: "Select a data map"
 description: Select a data map
 author: sericks007
 ms.subservice: admin
@@ -7,7 +7,7 @@ ms.author: sericks
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/19/2020
+ms.date: 11/24/2025
 search.audienceType: 
   - admin
 ---
@@ -18,9 +18,14 @@ search.audienceType:
   
    Select the default data map to let the wizard automatically map your data, or select a data map to match the type of information you're importing.  
 
-   These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Data import wizard**.
+   These settings can be found in the Power Platform admin center.
+    1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+    1. In the navigation pane, select **Manage**.
+    1. In the **Manage** pane, select **Environments**.
+    1. Select an environment.
+    1. Go to **Settings** > **Data management** > **Data import wizard**.
   
-2. Select **Next**.  
+1. Select **Next**.  
    
 The following tables help you decide which data map to use.  
 

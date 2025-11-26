@@ -4,7 +4,7 @@ description: Learn about how to proactively monitor the system and allow develop
 services: powerapps
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/03/2025
+ms.date: 11/19/2025
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -46,11 +46,15 @@ Azure Application Insights is an extension of Azure Monitor and charges for data
 
 Before you perform a data export, create a connection between your Dynamics 365 Customer Service tenant and Azure Application Insights in Power Platform admin center. You can create only one data export configuration from Dynamics 365 Customer Service to Application Insights per environment. To enable the data export, complete the following steps.
 
-1.  In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Data Export** in the navigation pane.
+1.  Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+1.  In the navigation pane, select **Manage**.
+
+1.  In the **Manage** pane, select **Data export**.
 
 1.  On the **Data export** page, select the **App Insights** tab. Then select **New data export**.
 
-1.  On the **New data exports to Azure Application Insights** page, complete the following actions, and then select **Next**.
+1.  **New data exports to Azure Application Insights** page, complete the following actions, and then select **Next**.
 
     - Enter a name in the **Name of the export package** field.
     - Select **Dynamics Customer Service**.
