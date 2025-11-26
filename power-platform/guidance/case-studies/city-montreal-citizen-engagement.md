@@ -132,7 +132,7 @@ The following image shows the customized dashboard.
 
 :::image type="content" source="media/city-montreal-citizen-engagement/usage-performance-report.png" alt-text="Screenshot showing the City of Montréal's customized dashboard with usage and performance metrics." lightbox="media/city-montreal-citizen-engagement/usage-performance-report.png":::
 
-The [Copilot Studio Kit](/microsoft-copilot-studio/guidance/kit-overview) was explored and is now used to analyze transcripts, offering deeper insights into user behavior and helping to refine the agent experience. As [built-in analytics in Copilot Studio](/microsoft-copilot-studio/analytics-overview) continue to evolve, the team will consider using more of the product's native capabilities.  
+The [Copilot Studio Kit](/microsoft-copilot-studio/guidance/kit-overview) is used to analyze transcripts, offering deeper insights into user behavior and helping refine the agent experience. 
 
 ### Technologies used
 
@@ -231,4 +231,4 @@ This vision guides ongoing enhancements, ensuring the agent evolves alongside ci
 - [Create and manage solutions in Copilot Studio](/microsoft-copilot-studio/authoring-solutions-overview)
 - [Key concepts for analytics in Copilot Studio](/microsoft-copilot-studio/analytics-overview)
 - [Add a public website as a knowledge source](/microsoft-copilot-studio/knowledge-add-public-website)
-- [Power CAT Copilot Studio Kit](/microsoft-copilot-studio/guidance/kit-overview)
+- [Power CAT Copilot Studio ](/microsoft-copilot-studio/guidance/kit-overview)
