@@ -112,7 +112,7 @@ If higher privileges are desired, pipelines can be extended. We recommend you en
 
 Not currently. We recommend managing individual user access via security groups after the first deployment of the object.
 
-### I'm getting an error _The deployment stage isn't an owner of the service principal (&lt;AppId&gt;). Only owners of the service principal may use it for delegated deployments._
+### I'm getting an error _The deployment stage owner is not an owner of the service principal (&lt;AppId&gt;). Only owners of the service principal may use it for delegated deployments._
 
 Ensure you’re the owner of the Enterprise Application (Service Principal) in Microsoft Entra ID (formerly Azure AD). You might only be the owner of the App Registration, and not the Enterprise Application.
 
