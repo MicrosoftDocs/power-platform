@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/11/2020
+ms.date: 11/25/2025
 ms.subservice: admin
 ms.author: sericks 
 search.audienceType: 
@@ -15,7 +15,12 @@ search.audienceType:
 
 To maintain the integrity of your data, it’s a good idea to set up duplicate detection rules to reduce duplicate records in the system. Remember that after you create duplicate detection rules, you need to turn them on.  
   
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Duplicate detection**.
+These settings can be found in the Power Platform admin center.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select your environment.
+1. Go to **Settings** > **Data management** > **Duplicate detection**.
 
 Make sure you have the System Administrator, System Customizer, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions to update the setting.
 
@@ -23,14 +28,12 @@ Make sure you have the System Administrator, System Customizer, Sales Manager, V
 - Don’t have the correct permissions? Contact your system administrator.
 
   
-1. Select an environment and go to **Settings** > **Data management** > **Duplicate detection**.
-  
-2. Select or clear the **Enable duplicate detection** check box.  
+1. Select or clear the **Enable duplicate detection** check box.  
   
    > [!NOTE]
    > If your system contains a large number of records, checking for duplicates can impact performance.  
   
-3. If you’re turning duplicate detection on, select or clear the check boxes to set when duplicates are detected:  
+1. If you’re turning duplicate detection on, select or clear the check boxes to set when duplicates are detected:  
   
    - **When a record is created or updated**  
   
@@ -47,7 +50,7 @@ Make sure you have the System Administrator, System Customizer, Sales Manager, V
   
        When you use the Import Data wizard to bring in contacts, leads, accounts, or other types of data, the wizard detects any duplicate records as long as you enable duplicate detection in the wizard. For more information, see [Import data from multiple sources](import-data-all-record-types.md).  
   
-4. Select **OK**.  
+1. Select **OK**.  
   
 ### See also  
 [Set up duplicate detection rules to keep your data clean](set-up-duplicate-detection-rules-keep-data-clean.md) <br />

@@ -1,11 +1,11 @@
 ---
-title: Asynchronous processing of cascading transactions | Microsoft Docs
+title: Asynchronous processing of cascading transactions
 description: Learn how to configure cascading operations to process asynchronously.
 services: powerapps
 author: NHelgren
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/26/2024
+ms.date: 11/20/2025
 ms.subservice: admin
 ms.author: nhelgren
 ms.reviewer: sericks
@@ -46,11 +46,15 @@ When a cascading transaction meets the threshold for included records, the recor
 ## Tracking asynchronous operation progress
 Administrators can monitor the processing of asynchronous operations in the **Settings** area. 
 
-1. Sign in to the **[Power Platform admin center](https://admin.powerplatform.microsoft.com/environments/)**. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-1. Select **Environments** in the navigation area. Then select the environment you want. 
+1. In the navigation pane, select **Manage**.
 
-1. Select **Settings**, expand **Audit and logs**, and then select **System jobs**.
+1. In the **Manage** pane, select **Environments**.
+
+1. On the **Environments** page, select an environment. 
+
+1. Select **Settings** > **Audit and logs** > **System jobs**.
  
 1. The cascading operations are displayed in the **System Jobs** view. 
 

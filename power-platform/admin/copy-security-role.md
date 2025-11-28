@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/21/2025
+ms.date: 11/19/2025
 contributors: matp
 search.audienceType: 
   - admin
@@ -30,17 +30,23 @@ If you want to create a security role that is similar to another security role, 
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the Microsoft Power Platform admin center, select an environment. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+  
+1. In the navigation pane, select **Manage**.
 
-3. Select **Settings** > **Users + permissions** > **Security roles**.  
+1. In the **Manage** pane, select **Environments**.
   
-4. In the list of security roles, under **Name**, select the security role you want to copy, and then on the Actions toolbar, select **More Actions** > **Copy Role**.  
+1. On the **Environments** page, select an environment. 
+
+1. Select **Settings** > **Users + permissions** > **Security roles**.  
   
-5. In the **Copy Security Role** dialog box, in the **New Role Name** text box, type in the name for the new security role.  
+1. In the list of security roles, under **Name**, select the security role you want to copy, and then on the Actions toolbar, select **More Actions** > **Copy Role**.  
   
-6. To modify the new security role after creating a copy, verify that the **Open the new security role when copying is complete** check box is selected; otherwise, clear the check box.  
+1. In the **Copy Security Role** dialog box, in the **New Role Name** text box, type in the name for the new security role.  
   
-7. Select **OK**.  
+1. To modify the new security role after creating a copy, verify that the **Open the new security role when copying is complete** check box is selected; otherwise, clear the check box.  
+  
+1. Select **OK**.  
 
 ## A copied system customizer security role might not provide the same access
 

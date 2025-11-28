@@ -5,7 +5,7 @@ author: sericks007
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/30/2025
+ms.date: 11/19/2025
 ms.subservice: admin
 ms.author: sericks
 ms.custom: NewPPAC
@@ -30,13 +30,15 @@ You can delete an environment to recover storage space and to remove Personally 
 
 ### [New admin center](#tab/new)
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. In the navigation pane, select **Manage**.
+1. In the navigation pane, select **Manage**.
 
-3. In the **Manage** pane, select **Environments**, and then select the source environment to delete.
+1. In the **Manage** pane, select **Environments**
+  
+1. On the environments page, select the source environment to delete.
 
-4. Select the ellipsis next to the environment to delete, and select **Delete**.
+6. Select the ellipsis next to the environment to delete, and select **Delete**.
 
   :::image type="content" source="media/delete-environment-updated-new.png" alt-text="Delete a selected environment in the new admin center.":::
 

@@ -97,6 +97,6 @@ With relationships, the only managed property is **Allow customizations**. This 
 
 ### See also
 
-[Use segmented solutions](segmented-solutions-alm.md)
+[Use table segmentation](segmented-solutions-alm.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
