@@ -22,7 +22,7 @@ The platform's low-code approach enables everyone in an organization&mdash;from 
 
 As a developer interacting with the platform, it's important to understand the basics of what the platform offers. In the following, you'll find a high-level overview of each of the core product areas and their key extensibility points.
 
-## Power Apps 
+## Power Apps
 
 Apps created with Power Apps can be shared with internal users and can be run in a browser or on a mobile device. You can create following types of apps: canvas and model-driven.
 
@@ -88,9 +88,12 @@ Dataverse is a cloud scale data store that builds on Microsoft's data technologi
 Copilot Studio is a graphical, low-code tool for building agents and agent flows. One of the standout features of Copilot Studio is the ability to connect to other data sources, using either prebuilt or custom connectors. This flexibility lets users create and orchestrate sophisticated logic, ensuring that their agent experiences are both powerful and intuitive. The platform's low-code experience puts the power of AI at the user's fingertips, making it accessible even to people without extensive technical backgrounds.
 
 > #### Key developer extensibility points
-> - Create [custom connectors](/connectors/custom-connectors/) to communicate with your external data sources and services. A custom connector is a wrapper around a REST API.
-> - Use [Azure Foundry](/azure/ai-services/cognitive-services-azure-openai-service-overview) to build custom AI models that can be integrated into your agents.
-> - Use Microsoft 365 Agents SDK to integrate your Copilot Studio agents into agentic applications.
+> - Create [custom connectors](/connectors/custom-connectors/) and [REST API connectors](/microsoft-copilot-studio/agent-extend-action-rest-api) to connect to external services and use them as tools to extend the capabilities of your agents.
+> - [Add MCP servers as tools](/microsoft-copilot-studio/agent-extend-action-mcp) in your agents.
+> - Use [Microsoft Foundry](/azure/ai-services/cognitive-services-azure-openai-service-overview) to build custom AI models and integrate these models into your agents.
+> - Use [Microsoft 365 Agents SDK](/microsoft-365/agents-sdk/agents-sdk-overview) to integrate your Copilot Studio agents into agentic applications.
+<!-- > - Integrate agents built in [Microsoft Foundry](/azure/ai-foundry/what-is-azure-ai-foundry) or [Microsoft 365 Agents SDK](/microsoft-365/agents-sdk/agents-sdk-overview) into your Copilot Studio agent to implement multi-agent scenarios. -->
+> - Use the [Power Platform REST API](/rest/api/power-platform/copilotstudio/bots) to help administer Copilot Studio agents.
 
 ### See also
 
