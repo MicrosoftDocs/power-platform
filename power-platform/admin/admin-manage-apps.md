@@ -33,8 +33,6 @@ Admins can do the following from the Power Platform admin center:
 
 ## Manage Power Apps
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -42,17 +40,6 @@ Admins can do the following from the Power Platform admin center:
 1. In the **Resources** pane, select **Power Apps**.
 1. Select the app you want to manage.
 1. In the command bar, choose your desired action: **Share** or **Delete**.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the **Resources** pane, select **Power Apps**.
-1. Select the app you want to manage.
-1. In the command bar, choose your desired action: **Share** or **Delete**.
-
----
 
 ## Manage who can share canvas apps
 
@@ -74,7 +61,7 @@ In addition to the ability to save SharePoint custom form resources to a nondefa
 > [!NOTE]
 > The ability to distinguish SharePoint custom form makers from general Environment Makers requires Dataverse in the environment where the privilege is to be changed.
 >
-> A user with only the SharePoint custom-form maker role in an environment won't see the environment in the environment list in [Power Apps](https://make.powerapps.com) or [Power Automate](https://flow.microsoft.com).
+> A user with only the SharePoint custom form maker role in an environment won't see the environment in the environment list in [Power Apps](https://make.powerapps.com) or [Power Automate](https://flow.microsoft.com).
 
 Do the following to limit maker privileges to only be able to create and edit SharePoint custom forms in a nondefault environment.
 
