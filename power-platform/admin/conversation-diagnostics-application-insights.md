@@ -1,10 +1,10 @@
 ---
-title: Conversation diagnostics in Azure Application Insights (preview)
+title: Conversation diagnostics in Azure Application Insights
 description: Learn about how to proactively monitor the system and allow developers to easily identify, diagnose, and fix problematic conversations, or seek swift support.
 services: powerapps
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/19/2025
+ms.date: 11/28/2025
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -18,20 +18,16 @@ ms.contributors:
 ms.custom: sfi-image-nochange
 ---
 
-# Conversation diagnostics in Azure Application Insights (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Conversation diagnostics in Azure Application Insights
 
 Conversation diagnostics logs each of the conversation lifecycle events, giving you a greater visibility into conversations-based operational telemetry of your organization.  This helps your support team to proactively monitor the system and allows developers to easily identify, diagnose, and fix problematic conversations, or seek swift support.
 
 Connect your Dynamics 365 Customer Service environment to an Azure Application Insights instance to collect and store conversation logs. For more information about Application Insights features and how they can be used to monitor your telemetry and diagnose failures, go to [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard) and [Diagnose failures using the Azure portal](/azure/azure-monitor/app/asp-net-exceptions#diagnose-failures-using-the-azure-portal).
 
-You can then use the conversation lifecycle events data from Dynamics 365 Customer Service in Application Insights to monitor system health, export, and combine it with additional data sets to build custom dashboards per your business needs.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+You can then use the conversation lifecycle events data from Customer Service in Application Insights to monitor system health, export, and combine it with additional data sets to build custom dashboards per your business needs.
 
 > [!NOTE]
-> Export of Power Automate and Dynamics 365 Customer Service data is not available in sovereign clouds, such as Government Community Cloud (GCC), Government Community Cloud - High (GCC High), and Department of Defense (DoD), at this time.
+> Export of Power Automate and Customer Service data is not available in sovereign clouds, such as Government Community Cloud (GCC), Government Community Cloud - High (GCC High), and Department of Defense (DoD), at this time.
 
 ## Prerequisites
 
@@ -44,7 +40,7 @@ Azure Application Insights is an extension of Azure Monitor and charges for data
 
 ## Set up a connection with Azure Application Insights
 
-Before you perform a data export, create a connection between your Dynamics 365 Customer Service tenant and Azure Application Insights in Power Platform admin center. You can create only one data export configuration from Dynamics 365 Customer Service to Application Insights per environment. To enable the data export, complete the following steps.
+Before you perform a data export, create a connection between your Dynamics 365 Customer Service tenant and Azure Application Insights in Power Platform admin center. You can create only one data export configuration from Customer Service to Application Insights per environment. To enable the data export, complete the following steps.
 
 1.  Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
