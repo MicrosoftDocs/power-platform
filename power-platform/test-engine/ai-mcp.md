@@ -6,7 +6,7 @@ ms.author: pvillads
 ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly
-ms.topic: conceptual
+ms.topic: concept-article
 contributors:
  - JimDaly
  - jt000
