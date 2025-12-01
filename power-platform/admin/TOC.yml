@@ -758,7 +758,7 @@
                   href: set-up-export-application-insights.md
                 - name: Set up Application Insights with Power Automate
                   href: app-insights-cloud-flow.md
-                - name: Conversation diagnostics in Azure Application Insights (preview)
+                - name: Conversation diagnostics in Azure Application Insights
                   href: conversation-diagnostics-application-insights.md
         - name: Storage
           items:
