@@ -3,7 +3,7 @@ title: Metrics and recommendations for Copilot Studio
 description: Learn more about the metrics and recommendations for Copilot Studio.
 ms.subservice: admin
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/23/2025
 author: arjunmayur
 ms.author: arjunmayur
@@ -14,6 +14,7 @@ contributors:
   - arjunmayur
   - trdehove
 ---
+
 
 # Metrics and recommendations for Copilot Studio
 
@@ -33,5 +34,5 @@ Copilot Studio operational health metrics are available in the Power Platform ad
 
 | Type | Metric | Definition | Support |
 |---|---|---|---|
-| Agents | Agent session success rate| A percentage that describes how often an autonomous agent is successfully able to execute its task, or how often a conversational agent's session was successfully resolved. | Preview |
+| Agents | Agent session success rate| A percentage that describes how often an autonomous agent is able to successfully execute its task, or how often a conversational agent's session was successfully resolved. | Preview |
 | Agents | Agent session success rate | The number of distinct user sessions in an agent in one day. A session begins when a user opens the agent and ends after a period of inactivity or when the agent is closed. | Preview |
