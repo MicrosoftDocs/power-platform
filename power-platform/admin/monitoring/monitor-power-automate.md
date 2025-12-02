@@ -3,7 +3,7 @@ title: Metrics and recommendations for Power Automate
 description: Learn more about the metrics and recommendations for Power Automate.
 ms.subservice: admin
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/07/2025
 ms.custom: NewPPAC
 author: alaug

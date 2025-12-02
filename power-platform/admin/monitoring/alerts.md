@@ -3,7 +3,7 @@ title: Create alerts for your resources (preview)
 description: Learn more about how to create alerts to track and monitor the operational health of your resources in Power Platform.
 ms.subservice: admin
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/20/2025
 author: arjunmayur
 ms.author: arjunmayur
