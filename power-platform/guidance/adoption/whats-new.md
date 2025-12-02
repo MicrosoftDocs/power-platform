@@ -3,7 +3,7 @@ title: What's new
 description: What's new in the Microsoft Power Platform adoption guidance
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
