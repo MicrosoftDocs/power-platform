@@ -3,7 +3,7 @@ title: Metrics and recommendations for Copilot Studio
 description: Learn more about the metrics and recommendations for Copilot Studio.
 ms.subservice: admin
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/23/2025
 author: arjunmayur
 ms.author: arjunmayur
