@@ -388,7 +388,7 @@ Because custom Quick Find lookups are created by an admin in the org, these inde
 - Eliminating multiline text columns from inclusion.
 
 > [!NOTE]
-> The Dataverse search indexed data is the data that allows generative AI experiences to interpret the content by using natural language. This index accrues to the overall Dataverse search consumption.
+> The Dataverse search indexed data is the data that improves the search quality for Global Search and generative AI experiences, as well as interpreting the content using natural language. This index data accrues to the overall Dataverse search consumption.
 
 ### What is the DataverseSearch table and how can I reduce it?
 
@@ -406,7 +406,7 @@ An admin can manage Dataverse search through the three states associated with th
 > - No other setting is turned on if Dataverse search is turned **On** or **Default**.
 
 ### What actions can admins take?
-Depending on the experience that leverages Dataverse search and its usage, consumption size might increase more drastically. Learn more in [Configure Dataverse search for your environment](configure-relevance-search-organization.md).
+Depending on the experience that leverages Dataverse search and its usage, consumption size might increase. Learn more in [What is Dataverse search?]([configure-relevance-search-organization.md](https://review.learn.microsoft.com/en-us/power-apps/user/relevance-search-benefits?branch=pr-en-us-11552#what-actions-can-makers-or-admins-take-to-manage-dataverse-search-efficiently)).
   
 > [!IMPORTANT]
 > We don't recommend that you turn off Dataverse search as this would directly impact all dependent generative AI experiences in your different applications, and all users using them.
