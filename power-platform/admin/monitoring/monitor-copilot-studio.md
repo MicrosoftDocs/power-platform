@@ -15,8 +15,6 @@ contributors:
   - trdehove
 ---
 
-<!-- In the table near the end, is it correct that the two metrics are the same but with two different definitions? -->
-
 
 # Metrics and recommendations for Copilot Studio
 
