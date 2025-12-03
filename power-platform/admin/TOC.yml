@@ -6,8 +6,6 @@
           href: index.yml
         - name: Overview of the Power Platform admin center
           href: admin-documentation.md
-        - name: Use the new Power Platform admin center
-          href: new-admin-center.md
         - name: Environment management
           items:
             - name: Environment management capabilities

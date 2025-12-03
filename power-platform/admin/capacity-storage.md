@@ -5,8 +5,8 @@ ms.date: 10/30/2025
 ms.topic: concept-article
 author: marianaraujo 
 ms.subservice: admin
-ms.author: maaraujo
-ms.reviewer: sericks
+ms.author: ashi
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -20,6 +20,7 @@ ms.contributors:
 - ceian
 - ampatra
 - maraujo
+- swatim
 ms.custom:
 - NewPPAC
 - sfi-ga-nochange
@@ -86,7 +87,7 @@ All Dataverse tables, including system tables, are included in the storage capac
 
 In the *storage capacity usage* section, you can see:
 
-- **File and database**: The following tables stor data in file and database storage:
+- **File and database**: The following tables store data in file and database storage:
 
   - Attachment
   - AnnotationBase
