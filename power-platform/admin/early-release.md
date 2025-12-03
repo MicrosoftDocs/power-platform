@@ -1,13 +1,13 @@
 ---
 title: Early release cycle environments
 description: Learn about how you can create and manage early release cycle environments.
-author: ImadYanni
-contributor: sericks
+author: sericks007
+contributor: puneet-singh1
 ms.topic: overview
-ms.date: 12/02/2025
+ms.date: 12/03/2025
 ms.reviewer: ellenwehrle
 ms.subservice: admin
-ms.author: iyanni
+ms.author: sericks
 
 ---
 # Early release cycle environments
@@ -26,7 +26,7 @@ The only difference is the infrastructure where you create the environment, so i
 
 When you create an environment and select a region, you see the option to create the environment as an early release cycle environment. This option is named **Get new features early**. Only some regions support this option, so make sure to select a supported region.
 
-:::image type="content" source="media/get-new-features-early-new-ppac.png" alt-text="Screenshot of the New Environment dialog with the **Get new features early** option highlighted.":::
+:::image type="content" source="media/get-new-features-early.png" alt-text="Screenshot of the New Environment dialog with the **Get new features early** option highlighted.":::
 
 ## Manage early release cycle environments
 
