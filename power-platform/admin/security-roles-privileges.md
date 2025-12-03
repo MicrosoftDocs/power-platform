@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: bap-template, NEWPPAC
 ms.topic: concept-article
-ms.date: 07/15/2025
+ms.date: 11/25/2025
 ms.contributors:
   - lsuresh
 contributors:
@@ -28,25 +28,15 @@ A user can have multiple security roles. Security role privileges are cumulative
 
 ### View a list of security roles in an environment
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Select **Settings** in the command bar. The **Settings** page for that environment is displayed.
 1. Select **Users + Permissions** > **Security roles**.
 
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane, and then select an environment.
-1. Select **Settings** > **Users + permissions** > **Security roles**.
-
----
-
 ### Define the privileges and properties of a security role
 
-After you [created a security role](create-edit-security-role.md#create-a-security-role) or while you're [editing one](create-edit-security-role.md#edit-a-security-role), set the **Member's privilege inheritance** option:
+After you [created a security role](create-edit-security-role.md#create-a-security-role) or while you're [editing one](create-edit-security-role.md#edit-settings-of-a-security-role), set the **Member's privilege inheritance** option:
 
 - **Team privileges only**: A user is granted these privileges as a member of a team. Team members who don't have user privileges of their own can create records with the team as the owner. They can access records that the team owns if they're given the **User** access level for Create and Read privileges.
 
@@ -126,8 +116,9 @@ For each table, select the appropriate type for each privilege. Select **Save** 
 
 Setting the privileges for each table in your app can be time-consuming and tedious. To make it easier, you can copy the permissions from one table to one or more others.
 
-> [!TIP] 
+> [!TIP]
 > Create your new security roles by copying the [predefined template security roles](database-security.md) in an environment.
+>
 > - Use **App Opener** role, which has the minimum privileges to run an app.
 > - Use **Basic User** role for the minimum privileges and including privileges to the core business tables.
 
@@ -180,8 +171,6 @@ The following table describes the permission setting groups that you can assign.
 
 Follow these steps to add users to a security role.
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
@@ -193,25 +182,9 @@ Follow these steps to add users to a security role.
 1. In the **Add people** pane, enter a name, email address, or team name to search for the users you want to add to the security role.
 1. Select **Add** to add those users to the security role.
 
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane, and then select an environment.
-1. Select **Settings** in the command bar. The **Settings** page for that environment is displayed.
-1. Select **Users + permissions** > **Security roles**.
-1. Select a security role and then select the **More actions** (**...**) icon.
-1. Select **Members** in the menu that appears.
-1. In the **Members** page, select **+ Add people**.
-1. In the **Add people** pane, enter a name, email address, or team name to search for the users you want to add to the security role.
-1. Select **Add** to add those users to the security role.
-
----
-
 ### Remove users from a security role
 
 You can remove users from a security role through the modern UI. Follow these steps to remove users from a security role.
-
-# [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Manage** in the navigation pane.
@@ -223,20 +196,6 @@ You can remove users from a security role through the modern UI. Follow these st
 1. In the **Members** page, select the users you want to remove from the security role.
 1. Select **Remove** at the top of the page.
 1. The **Remove from role?** window appears, asking you to confirm that you want privileges associated with that role removed for the selected user. Select **Remove**.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane, and then select an environment.
-1. Select **Settings** in the command bar. The **Settings** page for that environment is displayed.
-1. Select **Users + permissions** > **Security roles**.
-1. Select a security role and then select the **More actions** (**...**) icon.
-1. Select **Members** in the menu that appears.
-1. In the **Members** page, select the users you want to remove from the security role.
-1. Select **Remove** at the top of the page.
-1. The **Remove from role?** window appears, asking you to confirm that you want privileges associated with that role removed for the selected user. Select **Remove**.
-
----
 
 ### Related information
 
