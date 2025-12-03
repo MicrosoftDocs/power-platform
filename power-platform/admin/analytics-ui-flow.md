@@ -64,6 +64,12 @@ Reports for **Runs**, **Usage**, **Created**, and **Errors** can be viewed speci
 |Shared | This report provides details on shared flows trends in the environment. |
 |Connectors | This report provides details on connectors and their associated flows. Metrics like the number of calls from each flow per connector, flow runs, and the flow creator's email address are available for both standard and custom connectors.|
 
+**Runs reports**
+:::image type="content" source="media/analytics-ui-flow/runs-desktop-flows.png" alt-text="View desktop flows runs reports in Power Platform admin center.":::
+
+**Usage reports**
+:::image type="content" source="media/analytics-ui-flow/usage-desktop-flows.png" alt-text="View of desktop flows usage reports in Power Platform admin center.":::
+
 ## Limitations of downloaded reports
 
 Some fields, such as the creator's email address and the app or flow display name, may appear blank in the exported reports. This is expected behavior, as these values are resolved at runtime and aren't part of the underlying stored dataset.
