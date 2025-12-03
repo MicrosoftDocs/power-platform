@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/26/2021
+ms.date: 11/20/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -16,7 +16,7 @@ search.audienceType:
 <!-- legacy procedure -->
 
 > [!NOTE]
-> Effective February 2022, support for Microsoft 365 Groups (previously known as Office Groups) and Yammer in Dynamics 365 will be deprecated. This will impact customers who use Microsoft 365 Groups and/or Yammer for collaboration in Dynamics 365. We recommend that customers transition to Microsoft Teams for more advanced collaboration functionalities. For information about integrating Dynamics 365 with Teams, see [Integrate customer engagement apps in Dynamics 365 with Microsoft Teams](/dynamics365/teams-integration/teams-integration).
+> Effective February 2022, support for Microsoft 365 Groups (previously known as Office Groups) and Yammer in Dynamics 365 was deprecated. This impacts customers who use Microsoft 365 Groups and/or Yammer for collaboration in Dynamics 365. We recommend that customers transition to Microsoft Teams for more advanced collaboration functionalities. For information about integrating Dynamics 365 with Teams, see [Integrate customer engagement apps in Dynamics 365 with Microsoft Teams](/dynamics365/teams-integration/teams-integration).
 > 
 > If you've questions about the deprecation, contact your Microsoft Customer Service representative or Microsoft Partner.
 
@@ -44,9 +44,15 @@ search.audienceType:
   
 1. Sign up for a [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] Enterprise account, and note the name of the network you receive. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Visit the Yammer website](https://go.microsoft.com/fwlink/p/?LinkID=272440)  
   
-2. [!INCLUDE[proc_settings_system](../includes/proc-settings-system.md)]  
+1. [!INCLUDE[proc_settings_system](../includes/proc-settings-system.md)]  
   
-3. In the Microsoft Power Platform admin center, select an environment. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Environments**.
+
+1. On the **Environments** page, select an environment.
 
 4. Select **Settings** > **Integration** > **Yammer**.  
   
@@ -87,11 +93,12 @@ search.audienceType:
 ## What triggers automatic posts to the Yammer newsfeed?  
 
 > [!IMPORTANT]
-> As of June 26, 2018, Yammer deprecated the Activity stream and its related APIs so auto-posts can no longer be enabled. For more information, see [Open Graph Actions & Activity stories](https://developer.yammer.com/blog/open-graph-actions-activity-stories).
+> As of June 26, 2018, Yammer deprecated the Activity stream and its related APIs so auto-posts can no longer be enabled.
 
 ## Additional considerations  
   
-### When connecting with a federated Yammer  
+### When connecting with a federated Yammer
+
  If you have configured [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] to use single sign-on, you'll need to generate and use a temporary password to connect to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)].  
   
 1. Sign in to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] with the single sign-on credentials.  
