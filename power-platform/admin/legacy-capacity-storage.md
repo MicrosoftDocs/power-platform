@@ -1,7 +1,7 @@
 ---
 title: Legacy storage capacity
 description: Learn more about the legacy storage model details.
-ms.date: 10/30/2025
+ms.date: 12/03/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 author: sericks007
@@ -15,6 +15,8 @@ contributors:
 ms.contributors:
 - ceian
 - sericks
+- ashi
+- swatim
 ---
 
 # Legacy storage capacity
@@ -43,10 +45,8 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 Follow these steps to view the legacy licensing storage model:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
-
-2. In the **Licensing** pane, select **Capacity add-ons**.
-
-3. View the data on the **Summary** page.
+1. In the **Licensing** pane, select **Capacity add-ons**.
+1. View the data on the **Summary** page.
 
 
 The report displays available storage capacity by source in addition to overall storage capacity usage. To help you transition to the new licensing model, current usage is also shown by database, file, and log capacity.
@@ -63,10 +63,8 @@ This page provides a tenant-level view of where your organization is using stora
 Follow these steps to view the **Summary** tab:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
-
-2. In the navigation pane, select **Licensing**.
-
-3. In the **Licensing** pane, select **Capacity add-ons**, and then select **Summary**.
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Capacity add-ons**, and then select **Summary**.
 
 
 All tables of Dataverse, including system tables, are included in the storage capacity reports.
@@ -85,10 +83,8 @@ This page provides similar information as the **Summary** tab, but with an envir
 Follow these steps to view the page:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
-
-2. In the navigation pane, select **Licensing**.
-
-3. In the **Licensing** pane, select **Capacity add-ons**, and then select **Dataverse**.
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Capacity add-ons**, and then select **Dataverse**.
 
 
 Note the following features:
@@ -130,21 +126,10 @@ The following details are provided:
 
 This page provides a view of the capacity storage used by your Microsoft Teams environments. Teams environment capacity usage doesn't count towards your organization's Dataverse usage.
 
-##### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Capacity add-ons**, and then select **Microsoft Teams**.
 
-2. In the navigation pane, select **Licensing**.
-
-3. In the **Licensing** pane, select **Capacity add-ons**, and then select **Microsoft Teams**.
-
-##### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
-
-2. Select **Resources** > **Capacity** > **Microsoft Teams** tab.
-
----
 
 |Feature  |Description  |
 |---------|---------|
@@ -163,10 +148,8 @@ Use this page to view your organization's add-on usage details and to assign add
 This page provides a view of the capacity storage used by your trial environments. Trial environment capacity usage doesn't count towards your organization's Dataverse usage.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
-
-2. In the navigation pane, select **Licensing**.
-
-3. In the **Licensing** pane, select **Capacity add-ons**, and then select **Trial**.
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Capacity add-ons**, and then select **Trial**.
 
 
 |Feature  |Description  |
