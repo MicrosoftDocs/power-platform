@@ -215,6 +215,8 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
   
 After the copy process is complete, the target environment is placed in [Administration mode](sandbox-environments.md#administration-mode) and background operations are disabled. The next section describes recommended Administrator actions for the newly created copy (target) environment.  
 
+The copy process, especially for environments with large amounts of data, is a complex backend operation. If the copy operation fails, wait 30 minutes and retry the operation again. The other actions you can take are reset, delete or restore. To retry copy, the failed environment must be the target environment for the operation.
+
 ### How to copy audit logs
 
 Copying audit logs can significantly add to the time it takes to copy an environment and by default isn't done. To include audit logs in the environment copy, perform these steps.
