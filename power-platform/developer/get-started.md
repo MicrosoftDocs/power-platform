@@ -92,7 +92,7 @@ Copilot Studio is a graphical, low-code tool for building agents and agent flows
 > - [Add MCP servers as tools](/microsoft-copilot-studio/agent-extend-action-mcp) in your agents.
 > - Use [Microsoft Foundry](/azure/ai-services/cognitive-services-azure-openai-service-overview) to build custom AI models and integrate these models into your agents.
 > - Use [Microsoft 365 Agents SDK](/microsoft-365/agents-sdk/agents-sdk-overview) to integrate your Copilot Studio agents into agentic applications.
-<!-- > - Integrate agents built in [Microsoft Foundry](/azure/ai-foundry/what-is-azure-ai-foundry) or [Microsoft 365 Agents SDK](/microsoft-365/agents-sdk/agents-sdk-overview) into your Copilot Studio agent to implement multi-agent scenarios. -->
+> - Integrate agents built in [Microsoft Foundry](/azure/ai-foundry/what-is-azure-ai-foundry) or [Microsoft 365 Agents SDK](/microsoft-365/agents-sdk/agents-sdk-overview), [Microsoft Fabric data agents](/fabric/data-science/concept-data-agent), or agents using the [Agent2Agent (A2A) protocol](https://a2a-protocol.org/) into your Copilot Studio agent to implement multi-agent scenarios.
 > - Use the [Power Platform REST API](/rest/api/power-platform/copilotstudio/bots) to help administer Copilot Studio agents.
 
 ### See also
