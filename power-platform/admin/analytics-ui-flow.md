@@ -22,85 +22,56 @@ As an admin, you need to view the overall status of automation that runs in your
 
 This article discusses the viewing desktop flows analytics reports in the Power Platform admin center.
 
-
-The easiest option for an admin to view analytics for the desktop flows in their organization is to visit Power Platform admin center. There are three reports:
+The easiest option for an admin to view analytics for the desktop flows in their organization is to visit [Power Platform admin center](https://admin.powerplatform.microsoft.com/). There are three reports:
 
 |Report | Description|
 |--- | ---|
-|Runs | This report gives you an overview of the daily, weekly, and monthly desktop flows run statistics. This report also provides trend lines and run results (success/failure/cancel). This report gives insights on how actively desktop flows are used in each environment.
+|Runs | This report gives you an overview of the daily, weekly, and monthly desktop flows run statistics. This report also provides trend lines and run results (success/failure/cancel). This report gives insights on how actively desktop flows are used in each environment.|
 |Usage | This report shows you the desktop flows that are being used most, giving you insights into your automation inventory.|
 |Created | This report shows you analytics against recently created desktop flows, giving you insights into your most active desktop flows makers.|
 
 ## Data storage
+
 When a user creates an environment in a region, the environment is hosted in that region. All data for that environment resides within that region for a maximum period of 28 days.
 
 The data refresh cycle is about 24 hours and you can find the last refresh time at the top-right corner of the page.
 
 ## Prerequisites
 
-You must have the **environment admin** privilege to access the Power Platform admin center reports.
+You need to be a **environment admin** to access the Power Platform admin center reports.
 
 To access the reports:
 
-1. Sign into [Power Automate](https://make.powerautomate.com).
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
    > [!NOTE]
    > You may have to select your country/region if it's your first time signing in.
 
-1. Select the **Settings** icon > **Admin Center**.
+1. On the Manage pane, in the Products section, select **Power Automate**.
+1. On the Power Automate analytics page, you see two views, *Overview* and  *Environment View*. Both views offer options to apply filters to the report data.
 
-   ![A screenshot that displays the settings icon and the admin center link.](./media/analytics-ui-flow/settings-admin-center.png)
+## Power Automate analytics overview <!-- update-add one image for this section -->
 
-1. Expand **Analytics**, and then select **Power Automate**.
+The Overview view allows you to view Power Automate *Usage*, *Maker activity*, and *Inventory*. For each tab, you have the option to apply *Environment filters*. You can view which environments to include in the report.
 
-   ![A screenshot of the steps to view the Power Automate analytics.](./media/analytics-ui-flow/analytics-pa.png)
+### View the usage report
 
-1. Select **Desktop flows**.
+For Power Automate usage, you can see the counts for:
 
-   ![A screenshot that shows the desktop flows tab selected.](./media/analytics-ui-flow/select-ui-flows.png)
+- Total flows
+- Total runs
+- Successful runs
+- Failed runs
+- Environments
 
-1. View the reports.
+The report displays individual tables for:
 
-   ![A screenshot of the analytics reports.](./media/analytics-ui-flow/runs.png)
+- Runs
+- Top flows: max runs
+- Top environments: max runs
+- Flow details (Flow name, Runs, Name, Flow id, and Environment id)
 
-
-## Filter your view
-
-You can filter your view to display reports from a specific **environment** or for a specific **Time period**
-
-1. Select the filter icon.
-
-   ![A screenshot of the filter icon.](./media/analytics-ui-flow/select-filter.png)
-
-1. Expand the **Environment** list, and then select the environment for which you'd like to view reports.
-
-1. Expand the **Time period** list, and then select the number of days for which you'd like to view reports.
-
-   ![A screenshot that shows the filters that you can use to manage the reports that you view.](./media/analytics-ui-flow/filter.png)
-
-1. Select **Apply**.
-
-## View the runs report
-
-1. Select **Runs**.
-
-   ![A screenshot of the desktop flow runs reports tab.](./media/analytics-ui-flow/select-runs.png)
-
-1. [Filter](#filter-your-view) the view to display the **Runs** reports from a specific environment and for a specific time period. 
-
-
-   ![A screenshot of the desktop flow runs reports.](./media/analytics-ui-flow/runs.png)
-
-## View the usage report
-
-1. Select **Usage**.
-
-   ![A screenshot of the desktop flow usage reports tab.](./media/analytics-ui-flow/select-usage.png)
-
-
-1. [Filter](#filter-your-view) the view to display the **Usage** reports from a specific environment and for a specific time period. 
-
-   ![A screenshot of the desktop flow usage reports.](./media/analytics-ui-flow/usage-ppac.png)
+Go to the upper-right corner of each table to access filtering and display options. You can also access additional options that allow you to change the view, gain insights, and export the data.
 
 ## View the created report
 
@@ -116,7 +87,7 @@ You can filter your view to display reports from a specific **environment** or f
    ![A screenshot of the desktop flow created reports.](./media/analytics-ui-flow/created-ppac.png)
 
 ## Limitations of downloaded reports
-Some fields, such as the creator’s email address and the app or flow display name, may appear blank in the exported reports. This is expected behavior, as these values are resolved at runtime and aren't part of the underlying stored dataset.
+Some fields, such as the creator's email address and the app or flow display name, may appear blank in the exported reports. This is expected behavior, as these values are resolved at runtime and aren't part of the underlying stored dataset.
 
 ## Related content
 
