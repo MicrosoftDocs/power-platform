@@ -235,12 +235,14 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 - GCC High: https://high.lcs.microsoftdynamics.us
 - DoD: https://dod.lcs.microsoftdynamics.us
 
-### Telemetry for model-driven apps
+### Telemetry for Power Apps
 
-The following URLs must be added to the allow list to ensure communication through firewalls and other security mechanisms for model-driven apps telemetry information:
-- GCC: `https://tb.pipe.aria.microsoft.com/Collector/3.0`
-- GCC High: `https://tb.pipe.aria.microsoft.com/Collector/3.0`
-- DoD: `https://pf.pipe.aria.microsoft.com/Collector/3.0`
+The following URLs must be added to the allow list to ensure communication through firewalls and other security mechanisms for Power Apps telemetry information:
+- GCC: `https://tb.pipe.aria.microsoft.com/Collector/3.0` and `https://tb.events.data.microsoft.com/OneCollector/1.0/`
+- GCC High: `https://tb.pipe.aria.microsoft.com/Collector/3.0` and `https://tb.events.data.microsoft.com/OneCollector/1.0/`
+- DoD: `https://pf.pipe.aria.microsoft.com/Collector/3.0` and `https://pf.events.data.microsoft.com/OneCollector/1.0/`
+
+If you are filtering by IP ranges, ensure that you have unblocked the OneDsCollector service tag
 
 ## Regional Discovery Service is deprecated
 
