@@ -67,53 +67,37 @@ The web part contains the following columns:
 
 The web part allows you to use **Manage capacity** link to adjust allocations. 
 
-Pay-As-You-Go Plans 
+### Pay-as-you-go plans 
 
-Provides visibility into PAYG billing plans linked to Power Apps. 
+The **Pay-as-you-go plans** web part provides visibility into pay-as-you-go billing plans linked to Power Apps. 
 
-Details: 
+The web part contains the following columns:
 
-License Name: PAYG plans configured for environments. 
+- **License name**: Pay-as-you-go plans configured for environments. 
 
-Billing Plans: Number of active billing plans. 
+- **Manage billing plans**: Number of active billing plans. 
 
-Actions: 
+The web part allows you to use **Manage capacity** link to review or update Azure subscription settings. 
 
-Click Manage billing plans to review or update Azure subscription settings. 
+### Monthly user license consumption 
 
+The **Monthly user license consumption** web part shows month-over-month trends for per-user license consumption. 
+
+The web part contains a bar chart showing active users per license type over recent months. The image shows a line chart depicting the monthly consumption of Microsoft Office 365 and related services over a period from May to December.
+
+### Monthly per app license consumption 
+
+The **Monthly per app license consumption** web part displays consumption trends for per-app licenses. The graph shows how many per-app licenses are consumed and how many app usages are billed to pay-as-you-go each month. The app passes consumption resets during end of the month.  
+
+## Additional admin options 
  
+The **Download Reports** button, near the top of the page, allows you to export detailed license consumption data. The following reports can be downloaded:
 
- 
+- **Active users**: Identify which app was launched by a user, last app launch details, and whether an app pass, pay-as-you-go, or subscribed license was used. 
 
-Monthly User License Consumption 
+- **All licensed users**: List of all users who have been assigned a license. 
 
-Visualizes month-over-month trends for per-user license consumption. 
-
-Details: 
-
-Bar chart showing active users per license type over recent months. 
-
-The image shows a line chart depicting the monthly consumption of Microsoft Office 365 and related services over a period from May to December.
-
-AI-generated content may be incorrect.
-
-Monthly Per App License Consumption 
-
-Displays consumption trends for per-app licenses. 
-
-Details: 
-
-Graph shows how many per-app licenses are consumed and how many app usages are billed to Pay-Go each month. The app passes consumption resets during end of the month.  
-
-## Additional Admin Options 
- 
- Download Reports: Export detailed license consumption data. Following reports can be downloaded. 
-
-Active Users: Identify which app was launched by a user, last app launch details, and whether an app pass, PAYG, or subscribed license was used. 
-
-All Licensed Users: List of all users who have been assigned a license. 
-
-With these exports, you can identify users who have been assigned licenses but have not been using them to launch apps. 
+With these exports, you can identify users who have been assigned licenses, but haven't been using them to launch apps. 
 
 Sample report output below  
 
