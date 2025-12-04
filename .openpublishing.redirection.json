@@ -1877,6 +1877,8 @@
     {
       "source_path": "power-platform/admin/dlp-activity-logging.md",
       "redirect_url": "/power-platform/admin/audit/activity-logs-power-platform-admin",
+      "source_path": "power-platform/admin/new-admin-center.md",
+      "redirect_url": "/power-platform/admin/admin-documentation",
       "redirect_document_id": false
     }
   ]

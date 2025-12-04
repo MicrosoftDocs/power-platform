@@ -69,19 +69,19 @@ Power Platform and Dynamics 365 applications and services store customer data in
 Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. Enabling the tenant level policy applies only to environments that are activated for [Managed Environments](managed-environment-enable.md). It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. Use the Tenant settings page to review and manage tenant-level settings. To view tenant-level settings, select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site and select **Power Platform settings** > **Settings** > **Tenant settings** in the left-side navigation pane.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage pane**, select **Tenant settings**.
+1. Select **Customer Lockbox**, and then select **Enable**.
 
-3. Set **Customer Lockbox** to **Enable**.
 
-   :::image type="content" source="media/lockbox-turn-on.png" alt-text="Turn on the lockbox policy.":::
 
 ## Review a lockbox request
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-
-2. Select **Policies** > **Customer Lockbox**.
-
-3. Review the request details.
+1. In the navigation pane, select **Security**.
+1. In the **Security** pane, select **Compliance**.
+1. On the **Compliance** page, select **Customer Lockbox**.
+1. Review the request details.
 
    |Field  |Description  |
    |---------|---------|
@@ -93,7 +93,7 @@ Power Platform administrators can create or update the lockbox policy in the Pow
    |Access period     | The length of time the requestor wants to access customer data. This value is by default 8 hours and can't be changed.         |
    |Access expiration     | If access is granted, this is the time until which the Microsoft engineer has access to customer data.   |
 
-4. Select a lockbox request, and then select **Approve** or **Deny**.
+1. Select a lockbox request, and then select **Approve** or **Deny**.
 
    > [!div class="mx-imgBorder"]
    > ![Approve or deny lockbox requests](media/lockbox-requests.png "Approve or deny lockbox requests")

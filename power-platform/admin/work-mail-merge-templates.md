@@ -28,31 +28,22 @@ You can use mail merge templates with Office Word to create customer-ready lette
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the Power Platform admin center, select an environment. 
-
-3. Select **Settings** > **Templates** > **Mail merge templates**.  
-  
-4. To create a new mail merge template, select **New**.  
-  
-5. In the **Mail Merge Templates** form, enter a **Name** and an **Associated Entity** (record type).  
-  
-6. You can enter a description of the template. This is not displayed to the recipient.  
-
-7. Select **Save**. 
-
-8. Select **Data Fields**, select the columns to add as fields in your email, and then select **OK**.
-
-9. Select **Save**, and then select **Create Template in Word**.
-
-10. Select **Add-ins**, and then select **CRM**.
-
-11. Proceed through the Mail Merge process and save the template.
-
-12. Return to the **Mail Merge Template** page, and then select **Choose File**. 
-
-13. Select the newly created mail merge document, select **Open**, and then select **Attach**.
-
-14. Select **Save and Close**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select an environment.
+1. Select **Settings** > **Templates** > **Mail merge templates**.  
+1. To create a new mail merge template, select **New**.  
+1. In the **Mail Merge Templates** form, enter a **Name** and an **Associated Entity** (record type).  
+1. You can enter a description of the template. This is not displayed to the recipient.  
+1. Select **Save**. 
+1. Select **Data Fields**, select the columns to add as fields in your email, and then select **OK**.
+1. Select **Save**, and then select **Create Template in Word**.
+1. Select **Add-ins**, and then select **CRM**.
+1. Proceed through the Mail Merge process and save the template.
+1. Return to the **Mail Merge Template** page, and then select **Choose File**. 
+1. Select the newly created mail merge document, select **Open**, and then select **Attach**.
+1. Select **Save and Close**.
 
 > [!NOTE]
 > To change a personal template to a shared one, after you save the record on the template form, on the **More Actions** menu, select **Make Available to Organization**. To revert the template to a personal one, select **Make Personal**.  
@@ -61,13 +52,13 @@ You can use mail merge templates with Office Word to create customer-ready lette
 
 After creating a mail merge template, follow these steps to use it.
 
-1. In the Power Platform admin center, select an environment and open it.
-
-2. Select **Advanced Find** and select the customers to send an email.
-
-3. Select **Mail Merge**, choose the **Personal mail merge template**, and then select **Download**.
-
-4. Open the downloaded file in Microsoft Word and go through the steps.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select an environment.
+1. Select **Advanced Find** and select the customers to send an email.
+1. Select **Mail Merge**, choose the **Personal mail merge template**, and then select **Download**.
+1. Open the downloaded file in Microsoft Word and go through the steps.
 
 
 

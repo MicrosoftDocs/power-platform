@@ -4,7 +4,7 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/03/2025
+ms.date: 11/21/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -57,6 +57,20 @@ Admins can define who within an environment can use Copilot capabilities in mode
 | Power Apps | [Visualize with Copilot](/power-apps/user/visualize-data-in-copilot)|
 | Power Apps | [Natural language search and filtering](/power-apps/user/find-data-with-ai) |
 
+### Turn on or off AI capabilities in Dynamics 365 Sales
+
+As a tenant administrator, you can turn on or off AI capabilities such as Copilot and AI agents in Dynamics 365 Sales, across environments, and environment groups. This setting helps you centrally manage AI usage across your organization. By default, the AI capabilities are turned on in all environments. If you turn off the capability, the features are turned off automatically in Dynamics 365 Sales.  
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the left navigation pane, select **Copilot**
+1. In the **Copilot** pane, select **Settings**.
+1. On the **Settings** page, under **Dynamics 365 Sales**, select one of the following AI capabilities that you want to turn on:
+   - **AI Agents**: Lets you turn on out-of-the-box Sales AI agents such as Sales Qualification Agent and Sales Close Agent. Learn more about Sales AI agents in [Sales AI Agents Overview](/dynamics365/sales/ai-agent-overview).
+   - **Copilot**: Lets you turn on Copilot chat and other Copilot skills such as opportunity summary and lead summary in Dynamics 365 Sales. Learn more about Copilot in Dynamics 365 Sales in [Copilot in Dynamics 365 Sales overview](/dynamics365/sales/copilot-overview).
+1. Select an environment or environment group in the corresponding tab and select **Add**.
+1. Select **On** to turn on the AI capability.
+1. Select **Save**.
+
 ## Product pages
 The product pages contain usage and cost insights specific to each product. Currently, there are product pages for **Copilot Studio**, **Power Apps**, and **Power Pages**.
 
@@ -65,7 +79,7 @@ The product pages contain usage and cost insights specific to each product. Curr
 The **Copilot Studio** page provides valuable insights about agents built in Copilot Studio. Admins can view message consumption data, with more licensing details available through the **Licensing** area of the Power Platform admin center. Admins can view the number of active agents, defined as agents with active sessions in the last 28 days, and the agent session success rate, which is the percentage of sessions resolved by conversational agents or runs that are successful for autonomous agents. The agent table displays the top 10 agents ranked by monthly active sessions.
 
 > [!NOTE]
-> - The **Copilot Studio** page doesn't include agents built with the lite version of Copilot Studio at this time.
+> - The **Copilot Studio** page doesn't include agents built with Agent Builder in Microsoft 365 Copilot at this time.
 > - During the initial weeks of rollout, data is populated over a 28-day lookback period, resulting in an incomplete month initially.
 
 ### Power Apps
@@ -87,6 +101,9 @@ Admins can view usage analytics for Copilot in Dynamics 365 Sales on the **Dynam
 
 # [Classic admin center](#tab/classic)
 
+> [!NOTE]
+> The **Copilot** area in classic admin center is only available for customers in sovereign clouds.
+
 ## Get ready to manage Copilot and agents
 
 Resources and documents to help admins better understand how Copilot works, data and security fundamentals for Copilot features, and Microsoft's Responsible AI principles are available in the **Get ready to manage Copilot and agents** section. These documents are updated over time as new Copilot capabilities are released.
@@ -96,37 +113,8 @@ The **What’s new** web part lists new Copilot features as they're introduced o
 > [!NOTE]
 > There might be a one or two week delay to updates made in the **What’s new** web part. The [Release plans](/dynamics365/release-plans/) and [Power Platform blogs](https://www.microsoft.com/power-platform/blog) are the best source to stay on top of new Copilot features.
 
-## Usage
-
-The usage metrics in the **Usage** section show monthly active users for each Copilot feature across Power Platform. _Active_ usage is defined as a session or interaction with Copilot.
-
-To learn more about each feature, use the following links.
-
-### Copilot Studio 
-
-- Copilot: [AI-based copilot authoring overview](/microsoft-copilot-studio/nlu-gpt-overview)
-- Generative answers: [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations)
-  
-### Power Apps 
-
-- Copilot for makers: [Build apps through conversation](/power-apps/maker/canvas-apps/ai-conversations-create-app)
-- Copilot for apps: [Add Copilot for app users in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) and [Add a Copilot Control to a canvas app](/power-apps/maker/canvas-apps/add-ai-copilot)
-- App descriptions: [FAQ for generate app descriptions with Copilot](/power-apps/maker/common/ai-app-descriptions-faq)
-
-### Power Automate  
-
-- Cloud flow Copilot: [FAQ for Copilot in cloud flows](/power-automate/faqs-copilot)
-- Process flow Copilot: [FAQ for Copilot in Power Automate Process Mining](/power-automate/faqs-copilot-in-process-mining)
-
-### Power Pages 
-
-- Maker Copilot: [Create an AI-generated webpage using Copilot](/power-pages/getting-started/create-page-copilot)
-
 ## Governance
 
 The **Governance** section shows the percentage of environments in your tenant that have specific Copilot features turned on or off. When you select the Power Automate or Copilot Studio features, you see documentation with detailed information on that Copilot's capabilities, prerequisites, and how to turn it on or off.  
 
 When you select the Power Platform Settings, Power Apps settings, or **Manage settings** next to the governance header, you open the settings panel where you can modify [tenant](../tenant-settings.md) and [environment-level Copilot settings](../settings-features.md#copilot-preview). Select your environment, your Power Platform product, and set your controls before selecting **Save**.
-
-> [!NOTE]
-> Data refresh can take up to eight hours.
