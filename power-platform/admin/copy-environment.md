@@ -2,7 +2,7 @@
 title: Copy an environment
 description: Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment.
 ms.topic: how-to
-ms.date: 2/7/2025
+ms.date: 12/04/2025
 author: ChrisGarty
 ms.author: cgarty
 contributors:
@@ -215,7 +215,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
   
 After the copy process is complete, the target environment is placed in [Administration mode](sandbox-environments.md#administration-mode) and background operations are disabled. The next section describes recommended Administrator actions for the newly created copy (target) environment.  
 
-The copy process, especially for environments with large amounts of data, is a complex backend operation. If the copy operation fails, the target environment will be left in a disabled state. To retry copy, the failed environment must be the target environment for the operation. Please wait 30 minutes and retry the operation again. The other actions you can take for the disabled target environment are reset, delete or restore. 
+The copy process, especially for environments with large amounts of data, is a complex backend operation. If the copy operation fails, the target environment is left in a disabled state. To retry the copy operation, the failed environment must be the target environment for the operation. Wait 30 minutes and retry the operation again. The other actions you can take for the disabled, target environment are reset, delete, or restore. 
 
 ### How to copy audit logs
 
