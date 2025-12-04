@@ -1,5 +1,5 @@
 ---
-title: View license consumption for Power Apps and Power Automate (preview)
+title: View license consumption for Power Apps (preview)
 description: Learn how to view your organization's Power Apps license consumption and find potential license issues. 
 author: amiyapatr-zz
 ms.date: 12/04/2025
