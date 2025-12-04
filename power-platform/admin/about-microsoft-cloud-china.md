@@ -40,11 +40,12 @@ Microsoft strives to maintain functional parity across our localized datacenter 
 
 To connect Dynamics 365 with your Exchange Online tenant in China and use server-side synchronization functionality, go to [Enable server-side synchronization functionality for Exchange Online in China](connect-exchange-online.md#enable-server-side-synchronization-functionality-for-exchange-online-in-china).
 
-## Telemetry for model-driven apps
+## Telemetry for Power Apps
 
-The following URL must be added to the allow list to ensure communication through firewalls and other security mechanisms for model-driven apps telemetry information:
+The following URLs must be added to the allow list to ensure communication through firewalls and other security mechanisms for Power App telemetry information:
 
-https://browser.pipe.aria.microsoft.com
+https://browser.pipe.aria.microsoft.com and https://collector.azure.cn/OneCollector/1.0/
+
 
 ## Expansion and transition to "China 3" datacenters
 
