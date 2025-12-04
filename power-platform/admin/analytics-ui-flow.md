@@ -3,7 +3,7 @@ title: View analytics for Power Automate desktop flows | Microsoft Docs
 description: Learn about trends, usage patterns, and more analytics for desktop flows in the Power Platform admin center.
 author: Zeffin
 ms.topic: how-to
-ms.date: 12/03/2025
+ms.date: 12/04/2025
 ms.subservice: admin
 ms.author: cvassallo
 ms.reviewer: sericks
@@ -36,7 +36,7 @@ Admins with these roles and a [license](pricing-billing-skus.md) can view the re
 
 For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
-## Access Desktop flows analytics
+## Access desktop flows analytics
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
@@ -48,9 +48,11 @@ For more information on the different roles for managing your tenant across the 
 
 :::image type="content" source="media/analytics-ui-flow/environment-desktop-flows.png" alt-text="Access environment-level reports for Power Automate Desktop flows." lightbox="media/analytics-ui-flow/environment-desktop-flows.png":::
 
-## Power Automate desktop flows reports
+## View desktop flows analytics
 
-Reports for **Runs**, **Usage**, **Created**, and **Errors** can be viewed specifically for *Cloud flows* or *Desktop flows*. Reports for **Shared** and **Connectors** are for all flows. To view Desktop flows reports, be sure to select the report type and then select **Desktop flows**. By default, you see reports for the last viewed environment. Select **Change filters** to choose a different environment and time period.
+Different types of reports can be viewed specifically for cloud flows *or* desktop flows. These reports are **Runs**, **Usage**, **Created**, and **Errors**. Reports for **Shared** and **Connectors** are for all flows.
+
+To view desktop flows reports in the *Environment View*, select a report type and then select **Desktop flows**. By default, you see reports for the last viewed environment. Select **Change filters** to choose a different environment and/or time period.
 
 > [!IMPORTANT]
 > In order to generate accurate report data, ensure the Power Automate Desktop app is version 2.1.43.20312 or later.
@@ -61,8 +63,8 @@ Reports for **Runs**, **Usage**, **Created**, and **Errors** can be viewed speci
 |Usage | This report shows you the desktop flows that are being used most, giving you insights into your automation inventory.|
 |Created | This report shows you analytics against recently created desktop flows, giving you insights into your most active desktop flows makers.|
 |Errors | This report provides insights into recurring error types and details like the error count, creator's email address, last occurred time, and the creator's email address for each flow.|
-|Shared | This report provides details on shared flows trends in the environment. |
-|Connectors | This report provides details on connectors and their associated flows. Metrics like the number of calls from each flow per connector, flow runs, and the flow creator's email address are available for both standard and custom connectors.|
+|Shared | This report provides details on shared flows trends in the environment for both cloud flows and desktop flows. |
+|Connectors | This report provides details on connectors and their associated cloud and/or desktop flows. Metrics like the number of calls from each flow per connector, flow runs, and the flow creator's email address are available for both standard and custom connectors.|
 
 **Runs reports**
 :::image type="content" source="media/analytics-ui-flow/runs-desktop-flows.png" alt-text="View desktop flows runs reports in Power Platform admin center.":::
