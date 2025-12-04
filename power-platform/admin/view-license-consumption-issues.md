@@ -99,27 +99,25 @@ The **Download Reports** button, near the top of the page, allows you to export 
 
 With these exports, you can identify users who have been assigned licenses, but haven't been using them to launch apps. 
 
-Sample report output below  
+## View license consumption for environment  
 
-View License consumption for Environment  
+The Environments tab within the **Licensing** area for Power Apps allows admins to track license consumption for the selected environment. 
 
-The Environment view within Licensing hub for Power Apps lets admins track license consumption for the selected environment. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-Sign in to the Power Platform admin center. 
+1. In the navigation pane, select **Licensing**. 
 
-On the navigation pane, select Licensing. 
+1. In the **Licensing** pane, under **Products**, select **Power Apps**. 
 
-In the Licensing pane, under Products, select Power Apps. 
+1. Select the **Environments** tab. 
 
-Select the Environment tab. 
+1. Select the appropriate environment.
 
-Click on appropriate environment  
+## Who can access set it up 
 
-Who can access set it up 
+Power Platform admins and Dynamics 365 admins can access summary view, environment view, and can allocate app passes.
 
-Power Platform admin, Global admin and Dynamics 365 admin can access summary view, environment view and also can allocate app passes 
-
-Environment admin: can access the environment view .In addition – tenant admins can allow environment admins to access summary view by updating the “Tenant licensing summary view” setting in Power Platform settings 
+The environment admin can access the environment view. Tenant admins can also allow environment admins to access summary view by updating the **Tenant licensing summary view** setting in Power Platform settings. 
 
 
 
