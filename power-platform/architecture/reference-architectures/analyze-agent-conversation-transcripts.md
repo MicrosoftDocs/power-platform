@@ -21,7 +21,7 @@ This architecture shows how you can use AI services to extract and analyze infor
 
 ## Architecture diagram
 
-:::image type="content" source="media/analyze-agent-conversation-transcripts/agent-conversation-transcript.png" alt-text="Diagram of the Copilot Studio workflow showing an agent interaction and transcript logging process. lightbox="media/analyze-agent-conversation-transcripts/agent-conversation-transcript.png":::
+:::image type="content" source="media/analyze-agent-conversation-transcripts/agent-conversation-transcript.png" alt-text="Diagram of the Copilot Studio workflow showing an agent interaction and transcript logging process." lightbox="media/analyze-agent-conversation-transcripts/agent-conversation-transcript.png":::
 
 ## Workflow
 
