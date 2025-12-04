@@ -1,6 +1,6 @@
 ---
 title: Extract and analyze agent conversation transcripts
-description: Learn how to xtract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. Learn how to get started.
+description: Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making.
 #customer intent: As a Copilot Studio maker, I want to analyze agent conversation transcripts to identify key insights and improve accuracy.
 author: manuelap-msft
 ms.subservice: architecture-center
