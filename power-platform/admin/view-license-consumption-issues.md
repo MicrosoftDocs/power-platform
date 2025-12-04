@@ -35,6 +35,8 @@ The Power Apps license consumption experience in the Power Platform admin center
 - Who are the users actively consuming Power Apps? 
 - Are there users who need standalone Power Apps or Power Automate licenses?
 
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
 ## View summary information 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
