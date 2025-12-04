@@ -397,7 +397,7 @@ For more information about the recovery environment, go to [Recover environment]
 
 ### The restore operation failed. What action can I take?
 
-The restore process, especially for environments with large amounts of data, is a complex backend operation. If the restore operation fails, the target environment will be left in a disabled state. To retry restore, the failed environment must be the target environment for the operation. Please wait 30 minutes and retry the operation again. The other actions you can take for the disabled target environment are reset, delete, copy, or restore. 
+The restore process, especially for environments with large amounts of data, is a complex backend operation. If the restore operation fails, the target environment will be left in a disabled state. To retry restore, the failed environment must be the target environment for the operation. Please wait 30 minutes and retry the operation again. The other actions you can take for the disabled target environment are reset, delete or copy.
 
 ### You don't see the environment that you want to restore to
 
