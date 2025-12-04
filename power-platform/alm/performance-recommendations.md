@@ -3,7 +3,7 @@ title: "Performance recommendations"
 description: "This article outlines best practices for achieving the fastest possible import times when importing managed solutions in Power Platform."
 author: sabrinadi
 ms.author: sabrinadi 
-ms.date: 11/04/2025
+ms.date: 12/04/2025
 ms.reviewer: matp
 ms.topic: how-to
 ms.subservice: alm
