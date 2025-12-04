@@ -2,7 +2,7 @@
 title: View license consumption for Power Apps and Power Automate (preview)
 description: Learn how to view your organization's Power Apps license consumption and find potential license issues. 
 author: amiyapatr-zz
-ms.date: 12/03/2025
+ms.date: 12/04/2025
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -20,27 +20,66 @@ search.audienceType:
  - admin
 ---
 
-# View license consumption for Power Apps and Power Automate (preview)
+# View license consumption for Power Apps (preview)
 
 <!-- fwlink: https://go.microsoft.com/fwlink/?linkid=2206011 -->
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use the following options in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to monitor the consumption of your organization's Power Apps licenses and easily spot environments that might have licensing issues.
+The Power Apps license consumption experience in the Power Platform admin center lets admins track and manage licensing for Power Apps. It helps answer key questions such as: 
 
-- New admin center: **Licensing** on the navigation pane.
-- Classic admin center: **Billing** > **Licenses** page.
+- How many Power Apps licenses are purchased? 
+- How many of those licenses are assigned to users? 
+- What types of licenses are being used to launch apps? 
+- How many users are actively consuming Power Apps? 
+- Who are the users actively consuming Power Apps? 
+- Are there users who need standalone Power Apps or Power Automate licenses?
 
-Get answers to questions like these:
+## View summary information 
 
-- How many Power Apps licenses are purchased?
-- How many of those Power Apps licenses are assigned to users? 
-- What types of licenses are being used to launch apps?
-- What licenses are being used to execute flows?
-- How many users are actively consuming Power Apps or Power Automate licenses in a specific environment?
-- Who are the users actively consuming Power Apps or Power Automate licenses?
-- Are there users in my environment who need standalone Power Apps or Power Automate licenses?
-- Which flows are out of compliance?
+1. Sign in to the [Power Platform admin center]((https://admin.powerplatform.microsoft.com). 
+1. On the navigation pane, select **Licensing**. 
+1. In the **Licensing** pane, under **Products**, select **Power Apps**. 
+1. Select the **Summary** tab. 
+
+### Per user licenses 
+
+The **Per user licenses** web part displays a summary count of all per-user licenses purchased that provide Power Apps entitlement, along with assignment and usage. 
+
+The web part contains the following columns:
+
+- **License name**: Name of the license providing Power Apps entitlement (e.g., Power Apps Premium, Dynamics 365 licenses). 
+
+- **Purchased licenses**: Total number of licenses available. 
+
+- **Assigned licenses**: How many licenses have been assigned to users. 
+
+- **Licenses used**: unique count of licensed users who launched a Power App at least once in the last 90 days. 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In addition, Admins can also allocate App Passes and manage their Pay-As-You-Go (PAYG) plan related to Power Apps. 
 
 > [!IMPORTANT]
 >
