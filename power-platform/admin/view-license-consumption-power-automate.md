@@ -24,6 +24,8 @@ The Power Automate license consumption experience in the Power Platform admin ce
 - Who are the users actively consuming Power Automate? 
 - Are there users who need standalone Power Automate licenses?
 
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
 ## View summary information 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
