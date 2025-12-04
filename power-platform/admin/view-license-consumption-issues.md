@@ -37,7 +37,7 @@ The Power Apps license consumption experience in the Power Platform admin center
 
 ## View summary information 
 
-1. Sign in to the [Power Platform admin center]((https://admin.powerplatform.microsoft.com). 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 1. On the navigation pane, select **Licensing**. 
 1. In the **Licensing** pane, under **Products**, select **Power Apps**. 
 1. Select the **Summary** tab. 
@@ -48,13 +48,26 @@ The **Per user licenses** web part displays a summary count of all per-user lice
 
 The web part contains the following columns:
 
-- **License name**: Name of the license providing Power Apps entitlement (e.g., Power Apps Premium, Dynamics 365 licenses). 
-
-- **Purchased licenses**: Total number of licenses available. 
-
+- **License name**: Name of the license providing Power Apps entitlement, such as Power Apps Premium or Dynamics 365 licenses.
+- **Licenses used**: unique count of licensed users who launched a Power App at least once in the last 90 days.
 - **Assigned licenses**: How many licenses have been assigned to users. 
+- **Purchased licenses**: Total number of licenses available.
 
-- **Licenses used**: unique count of licensed users who launched a Power App at least once in the last 90 days. 
+### Per app licenses 
+
+The **Per app lienses** web part shows allocation and purchased license count of per-app licenses. 
+
+The web part contains the following columns:
+
+- **License name**: Name of the license providing Power Apps entitlement, such as Power Apps Premium or Dynamics 365 licenses.
+
+- **Allocated licenses**: Number of per-app licenses assigned to different environments. 
+
+- **Purchased licenses**: Total per-app licenses available. 
+
+The web part allows you to use **Manage capacity** link to adjust allocations. 
+
+
 
  
  
