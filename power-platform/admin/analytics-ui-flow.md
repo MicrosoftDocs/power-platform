@@ -67,10 +67,13 @@ To view desktop flows reports in the *Environment View*, select a report type an
 |Connectors | This report provides details on connectors and their associated cloud and/or desktop flows. Metrics like the number of calls from each flow per connector, flow runs, and the flow creator's email address are available for both standard and custom connectors.|
 
 **Runs reports**
-:::image type="content" source="media/analytics-ui-flow/runs-desktop-flows.png" alt-text="View desktop flows runs reports in Power Platform admin center.":::
+:::image type="content" source="media/analytics-ui-flow/runs-desktop-flows.png" alt-text="View desktop flows runs reports in Power Platform admin center." lightbox="media/analytics-ui-flow/usage-desktop-flows.png":::
 
 **Usage reports**
-:::image type="content" source="media/analytics-ui-flow/usage-desktop-flows.png" alt-text="View of desktop flows usage reports in Power Platform admin center.":::
+:::image type="content" source="media/analytics-ui-flow/usage-desktop-flows.png" alt-text="View of desktop flows usage reports in Power Platform admin center." lightbox="media/analytics-ui-flow/usage-desktop-flows.png":::
+
+**Created reports**
+:::image type="content" source="media/analytics-ui-flow/created-desktop-flows.png" alt-text="View of desktop flows created reports in Power Platform admin center." lightbox="media/analytics-ui-flow/created-desktop-flows.png":::
 
 ## Limitations of downloaded reports
 
