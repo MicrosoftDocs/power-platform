@@ -5,26 +5,26 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 11/25/2025
+ms.date: 12/04/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
 ---
 
-# Tutorial: Allocate add-ons to environments 
+# Tutorial: Allocate add-ons to environments
 
 Add-ons provide extra capabilities that Power Apps, Power Automate flows, and other resources can use. These capabilities can be assigned at the environment level in the Power Platform admin center and are made available based on prior license purchases. To learn more about add-on management, reporting, and access control, see [Add-on capacity management](./capacity-add-on.md).
 
 In this tutorial, you'll learn to:
 
 > [!div class="checklist"]
+>
 > + Manually allocate an add-on to an environment in the Power Platform admin center.
 > + Allocate add-ons, at scale, using PowerShell.
 > + Unassign an add-on.
   
 As an example of this scenario, a customer who has purchased AI Builder credits and Power Automate per Process flows can assign those add-ons to an environment to account for usage in that environment.
-
 
 ## Allocate an add-on to an environment
 
@@ -45,7 +45,7 @@ Not all add-ons are available in the Power Platform admin center UI. As new add-
 1. Select the **Add-ons** tab.
 1. Select the **Manage** link.
 
-    :::image type="content" source="media/tutorial-allocate-addons1.png" alt-text="Select the Manage link.":::
+   :::image type="content" source="media/tutorial-allocate-addons-manage.png" alt-text="Select the Manage link.":::
 
 1. Select an environment and review all of the various add-ons you could assign. Keep in mind that you can only adjust add-ons for those that you have previously purchased.  
 
@@ -108,10 +108,12 @@ You can unassign an add-on. This is also commonly done by admins who wish to rec
 
 ### Unassign an add-on from the Power Platform admin center
 
-1. Sign in to the Power Platform admin center and select **Resources** > **Capacity**.
-3. Select **Manage** in the **Add-ons** section.
-4. Find your environment and remove the AI Builder credits allocation that was assigned earlier in this article.
-5. Select **Save**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Capacity add-ons**.
+1. Select **Manage** in the **Add-ons** section.
+1. Find your environment and remove the AI Builder credits allocation that was assigned earlier in this article.
+1. Select **Save**.
 
 # [Power Automate / Logic Apps](#tab/Automate)
 
