@@ -237,8 +237,8 @@ Previously, US Government customers needed to contact support before configuring
 
 The following URL must be added to the allow list to ensure communication through firewalls and other security mechanisms for Power Apps telemetry information:
 
-- **GCC and GCC High**: `https://tb.events.data.microsoft.com/OneCollector/1.0/`
-- **DoD**: `https://pf.events.data.microsoft.com/OneCollector/1.0/`
+- **GCC and GCC High**: `https://tb.pipe.aria.microsoft.com/Collector/3.0` and `https://tb.events.data.microsoft.com/OneCollector/1.0/`
+- **DoD**: `https://pf.pipe.aria.microsoft.com/Collector/3.0` and `https://pf.events.data.microsoft.com/OneCollector/1.0/`
 
 If you are filtering endpoints by IP ranges, ensure that you unblock the OneDsCollector service tag. 
 
