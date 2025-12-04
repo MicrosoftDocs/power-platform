@@ -45,7 +45,7 @@ Not all add-ons are available in the Power Platform admin center UI. As new add-
 1. Select the **Add-ons** tab.
 1. Select the **Manage** link.
 
-   :::image type="content" source="media/tutorial-allocate-addons-manage.png" alt-text="Select the Manage link.":::
+   :::image type="content" source="media/tutorial-allocate-add-ons-manage.png" alt-text="Select the Manage link.":::
 
 1. Select an environment and review all of the various add-ons you could assign. Keep in mind that you can only adjust add-ons for those that you have previously purchased.  
 
