@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/03/2025
+ms.date: 11/19/2025
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.custom: NewPPAC
@@ -18,6 +18,7 @@ contributors:
     - v-aangie
     - steph-kent-ms
     - EllenWehrle
+    - Mattp123
 ms.Contributors:
     - v-linhvovan
 search.audienceType: 
@@ -62,7 +63,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 > [!NOTE]
-> Turning off Copilot in Power Apps for your tenant turns off [Copilot for makers](/power-apps/maker/canvas-apps/ai-conversations-create-app). It doesn't turn off [Copilot control for canvas apps](/power-apps/maker/canvas-apps/add-ai-copilot), [Copilot for model-driven apps](/power-apps/maker/canvas-apps/add-ai-copilot), or [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot).
+> Turning off Copilot in Power Apps for your tenant turns off [Copilot for makers](/power-apps/maker/canvas-apps/ai-conversations-create-app). It doesn't turn off [Copilot control for canvas apps](/power-apps/maker/canvas-apps/add-ai-copilot), [Copilot for model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot), or [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot).
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
@@ -85,6 +86,13 @@ Make sure you have the System Administrator security role or equivalent permissi
 |---------|-------------|---------------|
 | Allow Copilot Studio to share data with Viva Insights | When **On**, enables Copilot Studio data to flow to Microsoft Viva Insights for [analytical reports](/microsoft-copilot-studio/analytics-viva-insights). Also requires [Microsoft 365 services](geographical-availability-copilot.md#copilots-and-generative-ai-features-that-depend-on-data-movement-across-regions) to be turned on. For information on what data is shared with Viva Insights, see [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). | On |
 | Allow cross-geo boundary sharing of aggregated analytics data of your tenant preferred data location for Viva Insights is different than the location of your Copilot Studio environment | For tenants with Power Platform environments across [multiple geos](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features). When **On**, Microsoft Copilot Studio is sent and stored in the base location of the tenant in Viva Insights, even when crossing geo boundaries. Requires turning on **Allow Copilot Studio to share data with Viva Insights**.  | Off |
+
+## Dataverse Model Context Protocol
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Allow MCP clients to interact with Dataverse MCP server | When selected, allows MCP clients such as Copilot Studio, Visual Studio Code, and other non-Microsoft clients that have been enabled through Advanced Settings to connect to Dataverse. | On |
+| Advanced Settings | Open the Advanced Settings page to enable MCP clients not in Copilot Studio, such as Claude. Learn more: [Configure and manage the Dataverse MCP server for an environment](/power-apps/maker/data-platform/data-platform-mcp-disable#configure-and-manage-the-dataverse-mcp-server-for-an-environment) | Clients not in Copilot Studio are restricted. |
 
 ## Preview and experimental AI models (formerly AI Builder)
 

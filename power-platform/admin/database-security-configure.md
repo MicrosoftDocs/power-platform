@@ -30,8 +30,13 @@ When you create a custom security role, the role must have a set of minimum priv
 
 You can easily create, edit, or copy a security role and customize it to meet your needs.
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane, and then select an environment.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Environments**.
+  
+1. On the **Environments** page, select an environment.
 
 1. Select **Settings**.
 
@@ -92,7 +97,9 @@ Every security role must include a [minimum set of privileges](create-edit-secur
 ### Create a custom security role with minimum privileges to run an app
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane, and then select an environment.
+1. In the navigation pane, select **Manage**..
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
 1. Select **Settings** > **Users + permissions** > **Security roles**.
 1. Select the **App Opener** role, and then select **Copy**.
 1. Enter the name of the custom role, and then select **Copy**.
@@ -104,7 +111,9 @@ Every security role must include a [minimum set of privileges](create-edit-secur
 ### Create a custom security role from scratch
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane, and then select an environment.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
 1. Select **Settings** > **Users + permissions** > **Security roles**.
 1. Select **New role**.
 1. Enter the name of the new role on the **Details** tab.
@@ -118,7 +127,9 @@ Every security role must include a [minimum set of privileges](create-edit-secur
 For environments with no Dataverse database, a user who has the Environment Admin role in the environment can assign security roles to individual users or groups from Microsoft Entra ID.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments**, then choose an environment.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
 1. In the **Access** tile, select **See all** for **Environment admin** or **Environment maker** to add or remove people for either role.
 
     :::image type="content" source="media/assign-security-role-nodb.png" alt-text="Screenshot of selecting a security role in the Power Platform admin center.":::
@@ -132,7 +143,9 @@ Security roles can be assigned to individual users, [owner teams](manage-teams.m
 In general, a security role can only be assigned to users whose accounts are enabled in the environment. To assign a security role to a user account disabled in the environment, turn on **allowRoleAssignmentOnDisabledUsers** in OrgDBOrgSettings.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments**, then choose an environment.
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
 1. In the **Access** tile, select **See all** under **Security roles**.
 
     :::image type="content" source="media/see-all-security-roles.png" alt-text="Screenshot of the option to view all security roles in the Power Platform admin center.":::

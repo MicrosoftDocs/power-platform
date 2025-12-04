@@ -4,7 +4,7 @@ description: Learn how to use the Monitor > Overview page to monitor and improve
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/10/2025
+ms.date: 11/20/2025
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
@@ -18,7 +18,7 @@ contributors:
 
 # Monitor the health of your resources
 
-Your organization can use the **Monitor** area of the Power Platform admin center to measure and improve operational health metrics of resources that are built or deployed. Those resources include apps and flows. 
+Your organization can use the **Monitor** area of the Power Platform admin center to measure and improve operational health metrics of resources that are built or deployed. Those resources include apps, flows, and agents. 
 
 The **Monitor** experience is available to both makers (in experiences such as [Power Apps](https://make.powerapps.com/)) and admins (in experiences such as the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)). Makers use the data to improve their resources. Admins use it to understand aggregate operational health in the tenant or in specific environments. Metrics are calculated by aggregating daily event logs from runtime activity; they're not real-time. Recommendations are calculated from the following sources:
 
@@ -46,7 +46,7 @@ The availability of Monitor health metrics, logs, and recommendations in the Pow
 
 To produce health metrics and generate recommendations, Power Platform Monitor experiences require runtime activity. Unused resources don't appear in Monitor experiences.
 
-Admin experiences are available to Power Platform service and Dynamics 365 admins, who can view Monitor data across the tenant. Makers can view data only for resources that they have edit privileges for in the runtime environment. Power Automate doesn't have a monitoring page in the maker portal. However, users can use the [Automation center](/power-automate/automation-center-overview) for a similar experience.
+Admin experiences are available to Power Platform service and Dynamics 365 admins, who can view Monitor data across the tenant. Makers can view data only for resources that they have edit privileges for in the runtime environment. Power Automate and Copilot Studio don't have a monitoring page in their respective maker portals. However, users can use the Power Automate [Automation center](/power-automate/automation-center-overview) and Copilot Studio [Analytics tab](/microsoft-copilot-studio/analytics-overview) for similar experiences.
 
 :::image type="content" source="../media/monitoring-architecture.svg" alt-text="Diagram that shows the flow of Monitor data to both a maker and an admin, starting from users in the runtime environment." lightbox="../media/monitoring-architecture.svg":::
 
@@ -54,11 +54,7 @@ Admin experiences are available to Power Platform service and Dynamics 365 admin
 
 The purpose of the **Monitor** area of the Power Platform admin center is to bring attention to resources that have degraded operational health and highlight resources that have opportunities for improvement.  
 
-The first resources that appear in the Monitor experience are resources that were created by using Power Platform products like Power Apps or Power Automate. Therefore, the cards initially highlight resources where users experience the following issues:
-
-- They face obstacles when they try to access a resource.
-- They have higher wait times to use the resource.
-
+The cards on the **Overview** page highlight the state of your triggered custom and predefined [alerts](/power-platform/admin/monitoring/alerts), highlighting what resources are suffering from sub-optimal operational health and need your attention most.
 
 ## Products
 
@@ -81,7 +77,7 @@ For resources that are available in the Monitor experience, you can learn more a
 | Power Automate | Desktop flows | Generally available | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Power Automate | Work queue | Public preview | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Dataverse | Dataverse | Not yet available | Not yet available |
-| Copilot Studio | Copilot Studio agents | Not yet available | Not yet available |
+| Copilot Studio | Copilot Studio agents | Public preview | Use the [Analytics tab](/microsoft-copilot-studio/analytics-overview) for a similar experience. |
 | Dynamics 365 | Apps | Not yet available | Not yet available |
 
 ## Frequently asked questions

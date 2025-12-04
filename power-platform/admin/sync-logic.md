@@ -4,7 +4,7 @@ description: Learn how appointments, contacts, and tasks are synchronized betwee
 author: danamartens
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/14/2025
 ms.subservice: admin
 ms.author: dmartens
