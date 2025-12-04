@@ -21,7 +21,7 @@ As an admin, you need to view the overall status of automation that runs in your
 - The Power Platform admin center.
 - The Center of Excellence (CoE) Starter Kit.
 
-The easiest option for an admin to view analytics for the desktop flows in their organization is to visit [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+The easiest option to view your organization's desktop flows analytics is to visit [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 This article discusses who can view the reports, how to access the reports, and what kind of desktop flow data you can view in the Power Platform admin center.
 
