@@ -4,16 +4,17 @@ description: This article provides information about Microsoft Power Platform an
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/12/2025
+ms.date: 12/05/2025
 ms.subservice: admin
 ms.author: sericks
 ms.contributors:
-- macarrer
-- pvayner
-- shailesn
-- ahothur
+  - arjunmayur
+  - macarrer
+  - pvayner
+  - shailesn
+  - ahothur
 contributors:
-- Akshay-Koushik-Hothur 
+  - Akshay-Koushik-Hothur 
 ---
 # Power Platform and Dynamics 365 apps operated by 21Vianet in China
 
@@ -44,8 +45,8 @@ To connect Dynamics 365 with your Exchange Online tenant in China and use server
 
 The following URLs must be added to the allow list to ensure communication through firewalls and other security mechanisms for Power App telemetry information:
 
-https://browser.pipe.aria.microsoft.com and https://collector.azure.cn/OneCollector/1.0/
-
+- https://browser.pipe.aria.microsoft.com
+- https://collector.azure.cn/OneCollector/1.0/
 
 ## Expansion and transition to "China 3" datacenters
 
