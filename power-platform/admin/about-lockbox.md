@@ -106,7 +106,7 @@ Power Platform administrators can create or update the lockbox policy in the Pow
 ## Audit lockbox requests
 
 > [!WARNING]
-> The schema documented in this section for the lockbox audit events is deprecated and won't be available starting in July 2024. You can audit Customer Lockbox events using the new schema available at [Activity category: Lockbox operations](./audit/activity-logs-power-platform-admin.md#activity-category-lockbox-operations).
+> The schema documented in this section for the lockbox audit events is deprecated and won't be available starting in July 2024. You can audit Customer Lockbox events using the new schema available at [Activity category: Lockbox operations](./activity-logging-auditing/activity-logs-power-platform-admin.md#activity-category-lockbox-operations).
 
 Actions related to accepting, denying, or expiration of a lockbox request are recorded automatically in [Microsoft 365 Defender](https://security.microsoft.com/homepage).  
 
