@@ -34,3 +34,4 @@ Reference architectures are essential frameworks that guide the design and imple
 | **[Use SQL Server with canvas apps​](sqlserver-canvas-app.md)** | Learn how to build and publish an enterprise-grade canvas app using SQL Server as a data source. |
 | **[Use an autonomous agent in Copilot Studio for document processing](document-processing-agent.md)** | Learn how to build an autonomous agent in Copilot Studio for document processing. |
 | **[Use complex relationships with Microsoft Dataverse](complex-relationships-dataverse.md)** | Learn how to model complex data relationships in Microsoft Dataverse to design effective business applications. |
+| **[Extract and analyze agent conversation transcripts](analyze-agent-conversation-transcripts.md)** | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
