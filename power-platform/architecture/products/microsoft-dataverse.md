@@ -48,6 +48,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Use Dataverse as a data source for canvas apps**](../reference-architectures/dataverse-canvas-app.md) | Learn how creating a Power Apps canvas app that uses Dataverse as a data source helps build a more custom user experience. |
 | [**Use an autonomous agent in Copilot Studio for document processing**](../reference-architectures/document-processing-agent.md) | Learn how to build an autonomous agent in Copilot Studio for document processing. |
 | [**Use complex relationships with Microsoft Dataverse**](../reference-architectures/complex-relationships-dataverse.md) | Learn how to model complex data relationships in Microsoft Dataverse to design effective business applications. |
+| **[Extract and analyze agent conversation transcripts](../reference-architectures/analyze-agent-conversation-transcripts.md)** | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
 
 ## Solution ideas
 
