@@ -33,7 +33,7 @@ The Power Apps license consumption experience in the Power Platform admin center
 - What types of licenses are being used to launch apps? 
 - How many users are actively consuming Power Apps? 
 - Who are the users actively consuming Power Apps? 
-- Are there users who need standalone Power Apps or Power Automate licenses?
+- Are there users who need standalone Power Apps ?
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
@@ -61,11 +61,11 @@ The **Per app lienses** web part shows allocation and purchased license count of
 
 The web part contains the following columns:
 
-- **License name**: Name of the license providing Power Apps entitlement, such as Power Apps Premium or Dynamics 365 licenses.
+- **License name**: Name of the license providing Power Apps entitlement in this case Per App .
 
 - **Allocated licenses**: Number of per-app licenses assigned to different environments. 
 
-- **Purchased licenses**: Total per-app licenses available. 
+- **Purchased licenses**: Total number of per-app licenses available. 
 
 The web part allows you to use **Manage capacity** link to adjust allocations. 
 
@@ -85,7 +85,7 @@ The web part allows you to use **Manage capacity** link to review or update Azur
 
 The **Monthly user license consumption** web part shows month-over-month trends for per-user license consumption. 
 
-The web part contains a bar chart showing active users per license type over recent months. The image shows a line chart depicting the monthly consumption of Microsoft Office 365 and related services over a period from May to December.
+The web part contains a bar chart showing active users per license type over recent months. 
 
 ### Monthly per app license consumption 
 
