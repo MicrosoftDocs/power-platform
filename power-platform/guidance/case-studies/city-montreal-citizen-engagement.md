@@ -108,10 +108,6 @@ The City of Montréal connects two APIs to their agent and uses the Bing Search 
 
 Since the waste collection schedule data is unstructured, a [generative answers node](/microsoft-copilot-studio/nlu-boost-node#add-a-generative-answers-node) is used to summarize API responses instead of relying on static content. For waste collection queries, citizens enter their postal code and street number, and the agent retrieves the correct schedule via the API. The language model enriches the response. A planned upgrade includes a location API that auto-fills postal codes to improve the user experience.
 
-
-
-
-
 #### Using custom entities
 
 The City of Montréal introduced two custom entities, Postal Code and Borough. There are 19 boroughs, and citizens often spell them incorrectly. The Copilot Studio smart match and synonyms features are used, and there's also a failsafe.
@@ -130,7 +126,7 @@ This collaborative model improved both accuracy and maintainability. Business te
 
 The City of Montréal wanted a clearer view of traffic, quality, customer satisfaction, and cost, but the out-of-the-box analytics in Copilot Studio didn't provide the level of detail needed. At the time, consumption data wasn't available.
 
-A custom dashboard was built using an [open-source Power BI template](https://github.com/microsoft/CopilotStudioSamples/tree/legacy/CustomAnalytics) connected directly to Dataverse, providing the needed visibility. Topic usage was tracked, abandoned topics identified, and performance and cost analyzed.
+A custom dashboard was built using an [open-source Power BI template](https://github.com/microsoft/CopilotStudioSamples/tree/legacy/CustomAnalytics) connected directly to Dataverse, providing the needed visibility. It tracked topic usage, identified abandoned topics, and analyzed performance and cost.
 
 The following image shows the customized dashboard.
 
@@ -144,7 +140,7 @@ The City of Montréal used the following technologies:
 
 - Microsoft Copilot Studio
 - Power BI
-- Power Platform Pipelines
+- Power Platform pipelines
 
 ### Architecture
 
@@ -175,6 +171,11 @@ The workflow is as follows:
 > — *Mohamed Arhab, Solution Architect, IT Department of the City of Montréal*
 
 ## Takeaways
+
+
+
+
+
 
 The case study of the City of Montréal’s conversational agent built with Microsoft Copilot Studio demonstrates the potential of using Copilot Studio as an agent platform for public-facing agents. Here are some key takeaways for IT professionals who want to implement a similar solution in their own organizations:
 
