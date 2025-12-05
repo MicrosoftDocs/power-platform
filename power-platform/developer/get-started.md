@@ -5,7 +5,7 @@ author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
 ms.custom: "ai-learning-hub"
-ms.date: 12/04/2024
+ms.date: 12/04/2025
 ms.reviewer: jdaly
 ms.topic: concept-article
 search.audienceType: 
