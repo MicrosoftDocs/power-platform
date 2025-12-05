@@ -12,7 +12,7 @@ ms.reviewer: jhaskett-msft
 
 # Extract and analyze agent conversation transcripts
 
-This architecture shows how you can use AI services to extract and analyze information from agent conversation transcripts. By leveraging advanced AI algorithms, the system efficiently processes conversation data, identifies key insights, and enhances decision-making. This automated approach improves accuracy and reduces manual effort. It provides a comprehensive overview of the extracted data for better strategic planning.
+This architecture shows how you can use AI services to extract and analyze information from agent conversation transcripts. By using advanced AI algorithms supported by structured prompts, the system efficiently processes conversational data, extracts critical insights, and enhances decision-making. It provides a comprehensive overview of the extracted data for better strategic planning.
 
 > [!TIP]
 > You can find a sample implementation of this feature in the [Copilot Studio Kit](/microsoft-copilot-studio/guidance/kit-overview). The Conversation analyzer feature in the Copilot Studio Kit analyzes conversation transcripts and finds the desired actionable insights.
@@ -49,7 +49,7 @@ This architecture shows how you can use AI services to extract and analyze infor
 
 1. **[Power Automate cloud flow](/power-automate/overview-cloud):** Retrieves conversation transcript records from Dataverse, processes them through [AI Builder](/ai-builder/), and stores the generated analysis results in Dataverse.
 
-1. **[AI Builder](/ai-builder/):** Applies AI models to analyze sentiment (positive, neutral, negative), PII data, extract key phrases and issues, detect escalation indicators, and generate conversation summaries.
+1. **[AI Builder](/ai-builder/):** Applies AI models to analyze sentiment (positive, neutral, negative), personal data data, extract key phrases and issues, detect escalation indicators, and generate conversation summaries.
 
 1. [**Microsoft Dataverse**](/power-apps/maker/data-platform/): Securely stores structured data including raw transcripts, processed AI metadata, and sentiment scores and categories.
 
@@ -57,7 +57,7 @@ This architecture shows how you can use AI services to extract and analyze infor
 
 ## Scenario details
 
-Organizations that use Copilot Studio agents for customer or employee support often struggle to extract valuable insights from conversation history. By leveraging Power Platform capabilities like AI Builder, Power Automate, and Dataverse, this architecture provides:
+Organizations that use Copilot Studio agents for customer or employee support often struggle to extract valuable insights from conversation history. By using Power Platform capabilities like AI Builder, Power Automate, and Dataverse, this architecture provides:
 
 - Automated capture of conversation transcripts.
 - AI-powered analysis of sentiment, key topics, and agent effectiveness.
