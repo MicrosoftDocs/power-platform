@@ -51,7 +51,7 @@ This architecture demonstrates how to automatically capture, analyze, and visual
 
 1. **[Power Automate cloud flow](/power-automate/overview-cloud):** Retrieves conversation transcript records from Dataverse, processes them through [AI Builder](/ai-builder/), and stores the generated analysis results in Dataverse.
 
-1. **[AI Builder](/ai-builder/):** Applies AI models to analyze sentiment (positive, neutral, negative) and personal data, extract key phrases and issues, detect escalation indicators, and generate conversation summaries.
+1. **[AI Builder](/ai-builder/):** Applies AI models to analyze sentiment (positive, neutral, negative), identify and flag personal data, extract key phrases and issues, detect escalation indicators, and generate conversation summaries.
 
 1. [**Microsoft Dataverse**](/power-apps/maker/data-platform/): Securely stores structured data including raw transcripts, processed AI metadata, and sentiment scores and categories.
 
