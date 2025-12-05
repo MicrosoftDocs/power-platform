@@ -622,25 +622,27 @@ No. A limited set of Dataverse capabilities were recently added to Microsoft 365
 
 Geo migration isn't supported for Dataverse for Teams environments.
 
-## AI Builder / AI Tools
+## AI Builder/AI Tools
 
 To find other frequently asked questions about credit management, go to [AI Builder licensing FAQ](https://go.microsoft.com/fwlink/?linkid=2246312).
 
 ### How is AI Builder licensed?
 
-AI Builder is consuming AI Builder credits, or Copilot Credits, depending on the context. You need such capacity available in your environment to run AI Builder features.  
-In Power Apps or Power Automate cloud flows, AI Builder features consume AI Builder credits first, then, when absent or exhausted, try to consume Copilot Credits.  
-In the context of Copilot Studio Agents, or Agent Flows, AI Builder features always consume Copilot Credits.
+AI Builder is consuming AI Builder credits, or Copilot credits, depending on the context. You need such capacity available in your environment to run AI Builder features.  
+
+In Power Apps or Power Automate cloud flows, AI Builder features consume AI Builder credits first, then, when absent or exhausted, try to consume Copilot credits.  
+
+In the context of Copilot Studio agents, or agent flows, AI Builder features always consume Copilot credits.
+
+For more information, go to the following resources:
 
 - To learn more about AI Builder licensing and credit management, go to [AI Builder licensing documentation](/ai-builder/administer-licensing).
-
 - You can also download the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) (pdf).
-
 - For general information about how to allocate capacity in the Power Platform admin center, go to [Capacity add-ons](capacity-add-on.md).
 
 ### How is AI Builder capacity enforced?
 
-Whether using AI Builder credits, or Copilot Credits, capacity is enforced on a monthly basis. Purchase capacity for the peak utilization monthly period.
+Whether using AI Builder credits, or Copilot credits, capacity is enforced on a monthly basis. Purchase capacity for the peak utilization monthly period.
 
 - To learn more about AI Builder credit management and enforcement, go to [AI Builder licensing](https://go.microsoft.com/fwlink/?linkid=2239022).
 - For general information about how to allocate capacity to your environment, go to [Capacity add-ons](capacity-add-on.md).
@@ -649,19 +651,24 @@ Whether using AI Builder credits, or Copilot Credits, capacity is enforced on a 
 
 Yes. AI Builder capacity can be added to the P1 and P2 plans for Power Apps and Power Automate for customers who haven't yet transitioned to the new Power Apps and Power Automate plans.
 
-### What are AI Builder credits, and Copilot Credits, and how does it work?
+### What are AI Builder credits and Copilot credits? How do they work?
 
 AI Builder includes several model types, including custom and prebuilt. For a full list, go to [Model types](/ai-builder/model-types#model-types).
 
-AI models consume AI Builder credits, or Copilot Credits credits when they're used in an app or flow or an agent, or scheduled to periodically run. The amount of capacity consumed varies based on the AI model, and the size and complexity of the data set.  
+AI models consume AI Builder credits, or Copilot credits when they're used in an app, flow, or agent, or they're scheduled to periodically run. The amount of capacity consumed varies based on the AI model and the size and complexity of the data set.  
+
 The currency depends on the context.
+
 Training a model doesn't consume any kind of credits.
 
-### What can I do with the 5,000 AI Builder credits included in the per user plan with attended RPA? (these 5,000 AI Builder credits will be removed on November 1st 2026)
+### What can I do with the 5,000 AI Builder credits included in the per user plan with attended RPA?
+
+> [!Note]
+> The 5,000 AI Builder credits will be removed on November 1, 2026.
 
 Each user license grants you 5,000 AI Builder credits, which allows you to assess the capabilities in AI Builder. For instance, you could use these credits to extract data from a few documents with *form processing* or perform hundreds of basic OCR extractions with *text recognition*.
 
-### Which AI models are available for free in public preview and which are in paid general availability (GA) status?
+### Which AI models are available for free in public preview, and which are in paid general availability (GA) status?
 
 The release status (preview or GA) for AI Builder features is available in [Model types](/ai-builder/model-types#model-types).
 
