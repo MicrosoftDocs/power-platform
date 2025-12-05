@@ -55,6 +55,8 @@ The web part contains the following columns:
 - **Assigned licenses**: How many licenses have been assigned to users. 
 - **Purchased licenses**: Total number of licenses available.
 
+:::image type="content" source="media/per-user-licenses.png" alt-text="The web part displays a summary count of all per-user licenses purchased that provide Power Apps entitlement, along with assignment and usage." lightbox="media/per-user-licenses.png":::
+
 ### Per app licenses 
 
 The **Per app lienses** web part shows allocation and purchased license count of per-app licenses. 
