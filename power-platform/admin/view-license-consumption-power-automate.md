@@ -65,7 +65,7 @@ The **Environments** tab on the **Licenses** page displays licensing information
 | Setting | Description |
 | ------- | ----------- |
 | Select environment | Select the environment for which you want to view license consumption. |
-| Product | Select Power Automate from the list of product to view license consumption for Power Automate. |
+| Product | Select Power Automate from the list of products to view license consumption for Power Automate. |
 
 ### Power Automate
 
