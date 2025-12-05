@@ -18,6 +18,12 @@ ms.custom:
 
 Get the latest info about what's new and what's changed in the Power Platform  and Copilot Studio Architecture Center.
 
+## December 2025
+
+New in [Reference architectures](reference-architectures/index.md):
+
+- [Extract and analyze agent conversation transcripts](reference-architectures/analyze-agent-conversation-transcripts.md)
+
 ## September 2025
 
 New in [Reference architectures](reference-architectures/index.md):
