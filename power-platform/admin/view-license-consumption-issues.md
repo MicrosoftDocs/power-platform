@@ -33,7 +33,7 @@ The Power Apps license consumption experience in the Power Platform admin center
 - What types of licenses are being used to launch apps? 
 - How many users are actively consuming Power Apps? 
 - Who are the users actively consuming Power Apps? 
-- Are there users who need standalone Power Apps ?
+- Are there users who need standalone Power Apps?
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
@@ -61,7 +61,7 @@ The **Per app lienses** web part shows allocation and purchased license count of
 
 The web part contains the following columns:
 
-- **License name**: Name of the license providing Power Apps entitlement in this case Per App .
+- **License name**: Name of the license providing Power Apps entitlement, in this case per app.
 
 - **Allocated licenses**: Number of per-app licenses assigned to different environments. 
 
