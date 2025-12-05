@@ -666,7 +666,7 @@ Training a model doesn't consume any kind of credits.
 > [!Note]
 > The 5,000 AI Builder credits will be removed on November 1, 2026.
 
-Each user license grants you 5,000 AI Builder credits, which allows you to assess the capabilities in AI Builder. For instance, you could use these credits to extract data from a few documents with *form processing* or perform hundreds of basic OCR extractions with *text recognition*.
+Each user license grants you 5,000 AI Builder credits, which allows you to assess the capabilities in AI Builder. For instance, you could use these credits to extract data from a few documents with *form processing* or perform hundreds of basic Optical Character Recognition (OCR) extractions with *text recognition*.
 
 ### Which AI models are available for free in public preview, and which are in paid general availability (GA) status?
 
