@@ -1,12 +1,12 @@
 ---
-title: Access and monitor Power Platform admin activity logs in Microsoft Purview
+title: View Power Platform admin activity logs in Microsoft Purview
 description: Learn how to access Power Platform admin activity logs in Microsoft Purview and explore what admin activities you can monitor.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/06/2025
+ms.date: 12/05/2025
 author: sericks007
 ms.subservice: admin
-ms.author: sericks
+ms.author: grbarker
 ms.reviewer: ellenwehrle 
 search.audienceType: 
   - admin
@@ -19,7 +19,7 @@ ms.contributors:
 
 ---
 
-# Monitor Power Platform admin logs in Microsoft Purview
+# View Power Platform admin logs in Microsoft Purview
 
 Administration of Microsoft Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to monitor such actions to:
 

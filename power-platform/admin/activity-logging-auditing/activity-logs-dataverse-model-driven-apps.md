@@ -1,10 +1,10 @@
 ---
-title: Access and monitor Microsoft Dataverse and model-driven app activity logs in Microsoft Purview
-description: Learn how to access Dataverse and model-driven app activity logs in Microsoft Purview and explore what activities you can monitor.
+title: View Microsoft Dataverse and model-driven app activity logs in Microsoft Purview
+description: Learn how to access Dataverse and model-driven app activity logs in Microsoft Purview and explore what activities you can view.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/10/2025
-author: Zeffin
+ms.date: 12/05/2025
+author: grbarker
 contributors:
   - yingchin
   - EllenWehrle
@@ -15,11 +15,12 @@ ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
-# Monitor Microsoft Dataverse and model-driven app audit logs in Microsoft Purview
 
-Activity Logging data supports Data Protection Impact Assessment (DPIA) for Power Platform and customer engagement apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.
+# View Microsoft Dataverse and model-driven app activity logs in Microsoft Purview
 
-Regularly monitor Microsoft Dataverse activities in Microsoft Purview to:
+Activity logging data supports Data Protection Impact Assessment (DPIA) for Power Platform and customer engagement apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.
+
+Regularly view Microsoft Dataverse activities in Microsoft Purview to:
 
 - maintain governance, compliance, and security
 - gain operational insights

@@ -1,12 +1,12 @@
 ---
-title: Access and monitor Power Platform connector activity logs in Microsoft Purview
+title: View Power Platform connector activity logs in Microsoft Purview
 description: Learn how to access Power Platform connector activity logs in Microsoft Purview and explore what connector activities you can monitor.
 author: schabungbam
 ms.topic: how-to
 ms.workload: na
-ms.date: 11/10/2025
+ms.date: 12/05/2025
 ms.subservice: admin
-ms.author: ellenwehrle
+ms.author: grbarker
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
@@ -18,11 +18,11 @@ contributors:
 ms.custom: sfi-image-nochange
 ---
 
-# Monitor Power Platform connector activity logs in Microsoft Purview
+# View Power Platform connector activity logs in Microsoft Purview
 
-You can monitor many Microsoft Power Platform connector activities in Microsoft Purview, such as when connectors are created, updated, and deleted or API calls. You can also view activity logs within specific date ranges to gain insights.
+You can view many Microsoft Power Platform connector activities in Microsoft Purview, such as when connectors are created, updated, and deleted or API calls. You can also view activity logs within specific date ranges to gain insights.
 
-Regularly monitor Power Platform connectors activities in Microsoft Purview to:
+Regularly view Power Platform connectors activities in Microsoft Purview to:
 
 - maintain governance, compliance, and security
 - gain operational insights

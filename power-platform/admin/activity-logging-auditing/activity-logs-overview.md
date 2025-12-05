@@ -1,19 +1,19 @@
 ---
-title: Overview of Power Platform activity logs in Microsoft Purview
-description: Learn what Microsoft Power Platform admin, maker, and user activities you can audit in Microsoft Purview and how to turn on and configure activity logging for each Power Platform environment.
+title: Overview of Power Platform activity logging and auditing in Microsoft Purview
+description: Learn what Microsoft Power Platform admin, maker, and user activities you can view in Microsoft Purview and how to turn on and configure activity logging auditing for each Power Platform environment.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/06/2025
+ms.date: 12/05/2025
 author: EllenWehrle
 ms.subservice: admin
-ms.author: ellenwehrle
+ms.author: grbarker
 ms.reviewer: ellenwehrle
 contributors: dmartens
 search.audienceType: 
   - admin
 ---
 
-# Overview of Power Platform activity logs in Microsoft Purview
+# Overview of Power Platform activity logs and auditing in Microsoft Purview
 
 Integrating Microsoft Power Platform activity logs into Microsoft Purview auditing solutions boosts your visibility into data and ability to respond to security events and meet compliance obligations. You can view various activities to:
 

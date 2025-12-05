@@ -1,21 +1,31 @@
 ---
-title: Access and monitor Power Pages activity logs in Microsoft Purview
+title: View Power Pages activity logs in Microsoft Purview
 description: Learn how to access Power Pages activity logs in Microsoft Purview and explore what Power Pages activities you can monitor.
 ms.topic: how-to
 ms.date: 11/06/2025
 author: PramithaU
 ms.subservice: admin
-ms.author: pudupa
+ms.author:grbarker
 ms.reviewer: ellenwehrle 
 search.audienceType: 
   - admin
 ---
 
-# Monitor Power Pages activities in Microsoft Purview
+# View Power Pages activity logs in Microsoft Purview
 
-You can monitor many specific Microsoft Power Pages activities in Microsoft Purview, such as environment lifecycle operations, property and setting changes, groups and rules settings, licensing, lockbox operations, data policies, and admin actions. You also have the ability to view activity logs within specific date ranges to gain insights.
+You can view many Microsoft Power Pages activities in Microsoft Purview, such as:
 
-Regularly monitor Power Pages activities in Microsoft Purview to:
+- environment lifecycle operations
+- property and setting changes
+- groups and rules settings
+- licensing
+- lockbox operations
+- data policies
+- admin actions
+
+You also have the ability to view activity logs within specific date ranges to gain insights.
+
+Regularly view Power Pages activities in Microsoft Purview to:
 
 - maintain governance, compliance, and security
 - gain operational insights
