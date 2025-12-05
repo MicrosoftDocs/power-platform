@@ -87,9 +87,13 @@ The **Monthly user license consumption** web part shows month-over-month trends 
 
 The web part contains a bar chart showing active users per license type over recent months. 
 
+:::image type="content" source="media/monthly-user-license-consumption.png" alt-text="The web part contains a bar chart showing active users per license type over recent months." lightbox="media/monthly-user-license-consumption.png":::
+
 ### Monthly per app license consumption 
 
 The **Monthly per app license consumption** web part displays consumption trends for per-app licenses. The graph shows how many per-app licenses are consumed and how many app usages are billed to pay-as-you-go each month. The app passes consumption resets during end of the month.  
+
+:::image type="content" source="media/monthly-per-app-license-consumption.png" alt-text="The graph shows how many per-app licenses are consumed and how many app usages are billed to pay-as-you-go each month. The app passes consumption resets during end of the month." lightbox="media/monthly-per-app-license-consumption.png":::
 
 ## Additional admin options 
  
