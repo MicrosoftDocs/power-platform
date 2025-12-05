@@ -19,7 +19,6 @@ The Power Automate license consumption experience in the Power Platform admin ce
 
 - How many Power Automate licenses are purchased? 
 - How many of those licenses are assigned to users? 
-- What types of licenses are being used to launch apps? 
 - How many users are actively consuming Power Automate? 
 - Who are the users actively consuming Power Automate? 
 - Are there users who need standalone Power Automate licenses?
@@ -66,7 +65,7 @@ The **Environments** tab on the **Licenses** page displays licensing information
 | Setting | Description |
 | ------- | ----------- |
 | Select environment | Select the environment for which you want to view license consumption. |
-| Product | Select the product (Power Apps or Power Automate) for which you want to view license consumption. |
+| Product | Select Power Automate from the list of product to view license consumption for Power Automate. |
 
 ### Power Automate
 
