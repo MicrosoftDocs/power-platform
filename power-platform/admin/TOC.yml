@@ -812,24 +812,24 @@
               href: administer-catalog.md
             - name: Portal administration
               href: /powerapps/maker/portals/admin/power-platform-admin-center
-        - name: Audit
+        - name: Activity logging and auditing
           items:
             - name: Overview
-              href: audit/activity-logs-overview.md
-            - name: Monitor connector activity logs
-              href: audit/activity-logs-connectors.md
-            - name: Monitor Copilot Studio activity logs
+              href: activity-logging-auditing/activity-logs-overview.md
+            - name: Connectors
+              href: activity-logging-auditing/activity-logs-connectors.md
+            - name: Copilot Studio
               href: /microsoft-copilot-studio/admin-logging-copilot-studio
-            - name: Monitor Dataverse and model-driven apps activity logs
-              href: audit/activity-logs-dataverse-model-driven-apps.md
-            - name: Monitor Power Apps activity logs
-              href: audit/activity-logs-power-apps.md
-            - name: Monitor Power Automate activity logs
-              href: audit/activity-logs-power-automate.md
-            - name: Monitor Power Pages activity logs
-              href: audit/activity-logs-power-pages.md
-            - name: Monitor Power Platform admin activity logs
-              href: audit/activity-logs-power-platform-admin.md
+            - name: Dataverse and model-driven apps
+              href: activity-logging-auditing/activity-logs-dataverse-model-driven-apps.md
+            - name: Power Apps
+              href: activity-logging-auditing/activity-logs-power-apps.md
+            - name: Power Automate
+              href: activity-logging-auditing/activity-logs-power-automate.md
+            - name: Power Pages
+              href: activity-logging-auditing/activity-logs-power-pages.md
+            - name: Power Platform admin
+              href: activity-logging-auditing/activity-logs-power-platform-admin.md
         - name: Programmability and extensibility
           items:
             - name: Overview
