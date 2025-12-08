@@ -24,6 +24,7 @@ contributors:
   - steph-kent-ms
   - alfergus
   - Antoine2F
+  - shivanichander
 ms.custom:
   - NewPPAC
   - ai-gen-docs-bap
@@ -186,7 +187,7 @@ Learn more about the languages that are supported in the [Copilot international 
 Yes, you can use the **Generative AI settings** environment rule to control this at scale. Learn more in [Rules](/power-platform/admin/environment-groups#rules).
 
 ### What features are turned off when you clear the “Move data across regions” checkbox?
-The **Move data across regions** checkbox isn't intended to turn off Copilots and generative AI features. When you clear the **Move data across regions** checkbox, it may turn off some features that require data movement. As we add new capacities to new regions, these features may work with in region capacity at some point. Use feature-dedicated controls to turn off unwanted features.
+The **Move data across regions** checkbox isn't intended to turn off Copilots and generative AI features. Not all Copilot and generative AI features are governed by this setting. Some features use alternate backend services and are not subject to the **Move data across regions** setting. When you clear the **Move data across regions** checkbox, it may turn off some features that require data movement. As we add new capacities to new regions, these features may work with in region capacity at some point. Use feature-dedicated controls to turn off unwanted features.
 
 ### Why do I need to select the “Move data across regions” checkbox if my environment has in region capacity? 
 Some regions may have limited capacity, or no capacity at all. To ensure availability of Copilots and generative AI features, we may need to move the data outside of the region for processing.
