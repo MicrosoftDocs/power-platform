@@ -197,7 +197,7 @@ The team continues to monitor performance and is committed to further enhancing 
 
 Using Microsoft Copilot Studio, the team was able to build the conversational agent entirely on their own, without support from outside developers or consultants. They were also able to use existing APIs to connect to back-end systems.
 
-“With Copilot Studio, we didn’t have to develop any new custom APIs," reports Mohamed Arhab, Solution Architect, IT Department of the City of Montréal. "This approach saved significant development time and resources.”
+“With Copilot Studio, we didn’t have to develop any new custom APIs," reports Mohamed Arhab, Solution Architect. "This approach saved significant development time and resources.”
 
 By involving business teams directly in Copilot Studio, IT was able to hand over ownership of language elements like entities and trigger phrases. This approach freed up technical resources and resulted in an agent that better matched how citizens actually communicate.
 
