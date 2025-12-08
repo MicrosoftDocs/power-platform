@@ -4,7 +4,7 @@ description: Provides information about URLs and IP addresses to be added to the
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/04/2025
+ms.date: 12/08/2025
 ms.subservice: admin
 ms.author: sericks
 contributors:
@@ -76,7 +76,6 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
 | https://dynamics.microsoft.com |    |
 | https://*.api.powerplatform.com, https://\*.powerplatform.com, https://\*.api.powerplatformusercontent.com, and https://\*.powerplatformusercontent.com  | Required for Power Platform API connectivity and used internally by Microsoft products and admin automation scenarios as described in [Programmability and extensibility overview](programmability-extensibility-overview.md). |
-| https://www.d365ccafpi.com |  d365ccafpi service exposes a controller endpoint for token change to achieve client side first party integration with external service from PCF control  |
 | https://api.admin.powerplatform.microsoft.com | Required to call Power Platform admin center service in public cloud.|
 
 > [!IMPORTANT]
