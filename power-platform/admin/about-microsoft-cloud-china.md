@@ -45,8 +45,8 @@ To connect Dynamics 365 with your Exchange Online tenant in China and use server
 
 The following URLs must be added to the allow list to ensure communication through firewalls and other security mechanisms for Power App telemetry information:
 
-- https://browser.pipe.aria.microsoft.com
-- https://collector.azure.cn/OneCollector/1.0/
+- `https://browser.pipe.aria.microsoft.com`
+- `https://collector.azure.cn/OneCollector/1.0/`
 
 ## Expansion and transition to "China 3" datacenters
 
