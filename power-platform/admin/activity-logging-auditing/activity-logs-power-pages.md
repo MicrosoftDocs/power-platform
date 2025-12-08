@@ -2,7 +2,7 @@
 title: View Power Pages activity logs in Microsoft Purview
 description: Learn how to access Power Pages activity logs in Microsoft Purview and explore what Power Pages activities you can monitor.
 ms.topic: how-to
-ms.date: 11/06/2025
+ms.date: 12/08/2025
 author: EllenWehrle
 ms.subservice: admin
 ms.author: grbarker
@@ -106,7 +106,7 @@ This table lists some of the activities you can monitor in Power Pages audit log
 | Enable CDN                                     | CDNEnabled                             | When CDN is enabled                            |
 | Disable CDN                                    | CDNDisabled                            | When CDN is disabled                           |
 
-### See also
+### Related content
 
 - [Power Pages activity logging (video)](https://youtu.be/pBKkkkPpX0I?feature=shared)
 - [Microsoft Purview](/purview/)

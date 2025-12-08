@@ -3,7 +3,7 @@ title: Overview of Power Platform activity logging and auditing in Microsoft Pur
 description: Learn what Microsoft Power Platform admin, maker, and user activities you can view in Microsoft Purview and how to turn on and configure activity logging auditing for each Power Platform environment.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/05/2025
+ms.date: 12/08/2025
 author: EllenWehrle
 ms.subservice: admin
 ms.author: grbarker
@@ -75,7 +75,7 @@ Before viewing Power Platform activity logs in Microsoft Purview, you need:
 
 ## Configure and turn on auditing for each Power Platform environment
 
-For each Power Platform production environment, a Power Platform system admin or customizer needs to configure auditing in the Power Platform admin center and then turn on the *Enable SAS Logging in Purview* setting so Microsoft Purview auditing solutions can access the environment's audit logs.
+A Power Platform system admin or customizer needs to configure auditing in the Power Platform admin center and then turn on the *Enable SAS Logging in Purview* setting for each Power Platform production environment so Microsoft Purview auditing solutions can access the environment's audit logs.
 
 > [!NOTE]
 >
@@ -91,10 +91,10 @@ Learn more in [Configure auditing](/power-apps/developer/data-platform/auditing/
 
 ### Turn on the Enable SAS Logging in Purview setting for each environment
 
-> [!TIP]
+> [!IMPORTANT]
 > Prior to activating the Shared Access Signature (SAS) feature, you need to allowlist the `https://*.api.powerplatformusercontent.com` domain or most SAS functionalities will NOT work.
 
-So Microsoft Purview can access the environment data, you need to turn on the **Enable SAS Logging in Purview** setting in the Power Platform admin center for each Power Platform production environment you want to view audit logs for in Microsoft Purview.
+To allow Microsoft Purview access to Power Platform environment data, you need to turn on the **Enable SAS Logging in Purview** setting in the Power Platform admin center for each Power Platform production environment you want to view audit logs for in Microsoft Purview.
 
   1. Log in to [Power Platform admin center](https://admin.preview.powerplatform.microsoft.com/home).
   1. On the navigation pane, select **Manage**.
@@ -102,14 +102,14 @@ So Microsoft Purview can access the environment data, you need to turn on the **
   1. On the Environments page, select the **production environment** you're setting up for Microsoft Purview audit logging.
   1. On the selected environment's detail page, select **Settings**.
   1. On the Settings page, expand the **Product** list and select **Privacy and Security**.
-  1. On the Privacy and Security settings page, go to the **Storage Shared Access Signature (SA) Security Settings** section and toggle the **Enable SAS Logging in Purview** setting to **On**.
+  1. On the Privacy and Security settings page, go to the **Storage Shared Access Signature (SAS) Security Settings** section and toggle the **Enable SAS Logging in Purview** setting to **On**.
   1. Select **Save**.
 
 Learn more about [Advanced security features](/admin/security/data-storage#advanced-security-features).
 
 ## Get started in Microsoft Purview
 
-After you have taken the steps to allow Microsoft Purview access and to configure auditing for each Power Platform production environment, you're ready to get set up in Microsoft Purview. Be sure to review:
+After you've taken the steps to allow Microsoft Purview access and configured auditing for each Power Platform production environment, you're ready to get set up in Microsoft Purview. Be sure to review:
 
 - [Verify the auditing status for your organization](/purview/audit-log-enable-disable#verify-the-auditing-status-for-your-organization).
 - [Turn on auditing](/purview/audit-log-enable-disable#turn-on-auditing) if it's not already turned on.
@@ -118,7 +118,8 @@ After you have taken the steps to allow Microsoft Purview access and to configur
 - [Manage audit log retention policies](/purview/audit-log-retention-policies).
 - [Get started with search](/purview/audit-search).
 - [Search audit logs to investigate common support issues](/purview/audit-troubleshooting-scenarios).
-More information: [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
+
+Learn more about [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
 ## Related content
 

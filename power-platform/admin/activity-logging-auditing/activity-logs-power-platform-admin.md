@@ -3,7 +3,7 @@ title: View Power Platform admin activity logs in Microsoft Purview
 description: Learn how to access Power Platform admin activity logs in Microsoft Purview and explore what admin activities you can monitor.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/05/2025
+ms.date: 12/08/2025
 author: sericks007
 ms.subservice: admin
 ms.author: grbarker
@@ -345,7 +345,7 @@ Here's an example payload of metadata that can be expected from one of the event
 
 ```
 
-### See also
+### Related content
 
 - [Microsoft Purview](/purview/)
 - [Microsoft Purview portal](https://purview.microsoft.com/home)
