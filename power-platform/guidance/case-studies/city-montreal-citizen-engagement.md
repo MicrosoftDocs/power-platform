@@ -172,11 +172,6 @@ The workflow is as follows:
 
 ## Takeaways
 
-
-
-
-
-
 The case study of the City of Montréal’s conversational agent built with Microsoft Copilot Studio demonstrates the potential of using Copilot Studio as an agent platform for public-facing agents. Here are some key takeaways for IT professionals who want to implement a similar solution in their own organizations:
 
 - The existing web page's structure might not be optimal for agents.
@@ -191,14 +186,14 @@ The case study of the City of Montréal’s conversational agent built with Micr
 Since the conversational agent was launched, the City of Montréal has received the following key benefits:
 
 - Strong citizen engagement with the virtual assistant.
-- Most citizen requests are handled efficiently by generative answers, which provide relevant information with an efficiency rate of 90%.
+- Most citizen requests are handled efficiently by generative answers, which provide relevant information with an efficiency rate of 90 percent.
 - The chatbot earns high marks from users, with satisfaction levels surpassing 4 out of 5.
 
 The team continues to monitor performance and is committed to further enhancing the agent’s efficiency and resolution rate.
 
 Using Microsoft Copilot Studio, the team was able to build the conversational agent entirely on their own, without support from outside developers or consultants. They were also able to use existing APIs to connect to back-end systems.
 
-“With Copilot Studio, we didn’t have to develop any new custom APIs," reports Mohamed Arhab, Solution Architect. "This approach saved significant development time and resources.”
+“With Copilot Studio, we didn’t have to develop any new custom APIs," reports Mohamed Arhab, Solution Architect, IT Department of the City of Montréal. "This approach saved significant development time and resources.”
 
 By involving business teams directly in Copilot Studio, IT was able to hand over ownership of language elements like entities and trigger phrases. This approach freed up technical resources and resulted in an agent that better matched how citizens actually communicate.
 
@@ -221,7 +216,7 @@ In addition, the following initiatives are on the roadmap:
 
 The City of Montréal continuously refines its citizen-facing virtual assistant, aiming to make it even more comprehensive and helpful for citizens.
 
-“Our goal is to offer the virtual assistant as an additional, highly efficient channel that provides a friendly and accessible way for citizens to find information and access services through natural language interaction,” says Mohamed Arhab, Solution Architect.
+“Our goal is to offer the virtual assistant as an additional, highly efficient channel that provides a friendly and accessible way for citizens to find information and access services through natural language interaction,” says Arhab.
 
 This vision guides ongoing enhancements, ensuring the agent evolves alongside citizen needs and digital service priorities.
 
