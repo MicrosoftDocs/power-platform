@@ -10,6 +10,10 @@ ms.date: 11/14/2025
 ms.topic: overview
 ---
 
+<!-- Note from the editor: This case study reads very well. My only concern is the structure. There's a list in line 55 of four things the city focused on, and then there are Level 4 sections for each of those four things. But four more Level 4 sections come after that. Should those perhaps go up to a Level 3? Or insert a Level 3 introduction to those next four sections? This isn't a showstopper issue, but something to consider. -->
+
+
+
 # The City of Montréal enhances citizen engagement with Copilot Studio
 
 The City of Montréal is the second-largest city in Canada and the largest city in the province of Québec. With over 1.7 million citizens, Montréal is also the largest French-speaking city in North America. Montréal is distinguished by its cultural vitality and world-renowned creative forces while also being known as an exceptionally inclusive and dynamic city. To better serve its citizens, the City of Montréal is embracing technology to improve access to information and strengthen how the city connects with citizens.
