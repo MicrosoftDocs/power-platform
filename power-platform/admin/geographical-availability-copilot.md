@@ -4,7 +4,7 @@ description: Learn how to turn on data movement across regions for Copilots and 
 author: amchern
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/07/2025
+ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: amchern
@@ -54,17 +54,19 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 | Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
 | United States | In region* | United States| 
-| Europe\**  | Norway, Spain, Sweden, or Switzerland| United States |
-| France<br>Germany<br>Norway<br>Sweden<br>Switzerland\** | Norway, Spain, Sweden, or Switzerland | United States|
+| Europe\**  | In EU Data Boundary | United States |
+| France<br>Germany<br>Norway<br>Sweden<br>Switzerland\** | In EU Data Boundary | United States|
 | Brazil<br>Canada<br>Japan<br>Korea<br>South Africa<br>United Arab Emirates | United States | United States| 
 | Asia<br>Singapore | In region* or United States | United States |
 | Australia<br>India | In region* or United States | United States |
-| United Kingdom | In region*, Norway, Spain, Sweden, or Switzerland | United States |
+| United Kingdom | In region* or in EU Data Boundary | United States |
 | Government cloud (GCC, GCC High) | In region* | United States |
 
 \*In region means within the geographical region of your Power Platform or Dynamics 365 environment.
 
 \**If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
+
+Learn more about EU Data Boundary in [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations).
 
 ## Turn on data movement, Bing search, and Microsoft 365 services for Copilots and generative AI features
 
