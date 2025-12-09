@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 10/14/2025
+ms.date: 12/09/2025
 ms.subservice: admin
 ms.author: pvayner
 ms.reviewer: sericks
@@ -89,7 +89,7 @@ Power Platform enables Virtual Network support for both Dataverse plug-ins and [
 
 ## Supported regions
 
-Confirm that your Power Platform environment and enterprise policy are in supported Power Platform and Azure regions. For example, if your Power Platform environment is in the United Kingdom, then your Virtual Network and subnets must be in the **uksouth** and **ukwest** Azure regions. In the case, that a Power Platform region has more than 2 regions, you must ensure you choose one of the available region pairs. For example, if your environment is in the United States, then your Virtual NEtwork and subnets must be in **eastus and westus** or in **centralus and eastus2**.
+Confirm that your Power Platform environment and enterprise policy are in supported Power Platform and Azure regions. For example, if your Power Platform environment is in the United Kingdom, then your Virtual Network and subnets must be in the **uksouth** and **ukwest** Azure regions. In the case that a Power Platform region has more than two regions, you must ensure you choose one of the available region pairs. For example, if your environment is in the United States, then your Virtual Network and subnets must be in **eastus and westus** or in **centralus and eastus2**.
 
 | Power Platform region | Azure region |
 |-----------------------|--------------|
@@ -115,7 +115,7 @@ Confirm that your Power Platform environment and enterprise policy are in suppor
 | US Government | usgovtexas, usgovvirginia |
 
 > [!NOTE]
-> Support in the US Government cloud is currently only available for environments deployed in GCC High, support for DoD and GCC environments is not available.
+> Support in the US Government Community Cloud (GCC) is currently only available for environments deployed in GCC High. Support for Department of Defense (DoD) and GCC environments isn't available.
 
 ## Supported services
 
