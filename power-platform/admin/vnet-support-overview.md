@@ -93,7 +93,7 @@ Confirm that your Power Platform environment and enterprise policy are in suppor
 
 | Power Platform region | Azure region |
 |-----------------------|--------------|
-| United States |  <ul><li>eastus, westus</li><li>centralus, eastus2</li><li>C</li></ul>|
+| United States |  <ul><li>eastus, westus</li><li>centralus, eastus2</li></ul>|
 | South Africa  | southafricanorth, southafricawest |
 | UK | uksouth, ukwest |
 | Japan | japaneast, japanwest |
