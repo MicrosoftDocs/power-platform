@@ -49,6 +49,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Use an autonomous agent in Copilot Studio for document processing**](../reference-architectures/document-processing-agent.md) | Learn how to build an autonomous agent in Copilot Studio for document processing. |
 | [**Use complex relationships with Microsoft Dataverse**](../reference-architectures/complex-relationships-dataverse.md) | Learn how to model complex data relationships in Microsoft Dataverse to design effective business applications. |
 | **[Extract and analyze agent conversation transcripts](../reference-architectures/analyze-agent-conversation-transcripts.md)** | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
+| **[Scalable notification system with Power Platform](../reference-architectures/scalable-notification-system.md)** | Learn how to implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
 
 ## Solution ideas
 

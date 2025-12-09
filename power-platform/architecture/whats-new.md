@@ -23,6 +23,7 @@ Get the latest info about what's new and what's changed in the Power Platform  a
 New in [Reference architectures](reference-architectures/index.md):
 
 - [Extract and analyze agent conversation transcripts](reference-architectures/analyze-agent-conversation-transcripts.md)
+- [Scalable notification system with Power Platform](reference-architectures/scalable-notification-system.md)
 
 ## September 2025
 
