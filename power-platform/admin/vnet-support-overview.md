@@ -89,11 +89,11 @@ Power Platform enables Virtual Network support for both Dataverse plug-ins and [
 
 ## Supported regions
 
-Confirm that your Power Platform environment and enterprise policy are in supported Power Platform and Azure regions. For example, if your Power Platform environment is in the United States, then your Virtual Network and subnets must be in the **eastus** and **westus** Azure regions.
+Confirm that your Power Platform environment and enterprise policy are in supported Power Platform and Azure regions. For example, if your Power Platform environment is in the United Kingdom, then your Virtual Network and subnets must be in the **uksouth** and **ukwest** Azure regions. In the case, that a Power Platform region has more than 2 regions, you must ensure you choose one of the available region pairs. For example, if your environment is in the United States, then your Virtual NEtwork and subnets must be in **eastus and westus** or in **centralus and eastus2**.
 
 | Power Platform region | Azure region |
 |-----------------------|--------------|
-| United States | eastus, westus |
+| United States | - eastus, westus <br/> - centralus, eastus2 |
 | South Africa  | southafricanorth, southafricawest |
 | UK | uksouth, ukwest |
 | Japan | japaneast, japanwest |
@@ -112,6 +112,10 @@ Confirm that your Power Platform environment and enterprise policy are in suppor
 | Singapore | southeastasia |
 | Sweden | swedencentral |
 | Italy | italynorth |
+| US Government | usgovtexas, usgovvirginia |
+
+> [!NOTE]
+> Support in the US Government cloud is currently only available for environments deployed in GCC High, support for DoD and GCC environments is not available.
 
 ## Supported services
 

@@ -182,6 +182,7 @@ The following diagram shows the functions of the roles in the setup process for 
         - norway
         - singapore
         - sweden
+        - usgov
     - **VnetOneSubnetName**: Enter the name of the subnet from the first virtual network.
     - **VnetOneResourceId**: Enter the resource ID from the first virtual network.
     - **VnetTwoSubnetName**: Enter the name of the subnet from the second virtual network.
