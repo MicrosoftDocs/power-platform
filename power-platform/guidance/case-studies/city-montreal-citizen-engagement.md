@@ -1,18 +1,14 @@
 ---
 title: The City of Montréal enhances citizen engagement with Copilot Studio 
-description: Discover how the City of Montréal uses Microsoft Copilot Studio to enhance citizen engagement and improve access to services with an AI-powered virtual assistant.
+description: Discover how the City of Montréal uses Microsoft Copilot Studio to enhance citizen engagement and improve access to services.
 #customer intent: As a Power Platform user, I want to learn how the City of Montréal used Copilot Studio to create a citizen-facing virtual assistant so that I can build a similar agent for my organization.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
-ms.date: 11/14/2025
+ms.date: 12/09/2025
 ms.topic: overview
 ---
-
-<!-- Note from the editor: This case study reads very well. My only concern is the structure. There's a list in line 55 of four things the city focused on, and then there are Level 4 sections for each of those four things. But four more Level 4 sections come after that. Should those perhaps go up to a Level 3? Or insert a Level 3 introduction to those next four sections? This isn't a showstopper issue, but something to consider. -->
-
-
 
 # The City of Montréal enhances citizen engagement with Copilot Studio
 
@@ -46,7 +42,7 @@ Direct connectivity to back-end systems provides other services. For example, th
 
 Over 85 percent of conversations are handled with generative answers connected to the public website. Regular topics and API calls to back-end systems manage the rest. The top questions are about trash collection schedules, tax payments, public space maintenance, and snow removal.
 
-### Implementation approach
+## Implementation approach
 
 The City of Montréal set out to develop a virtual assistant to better serve its citizens. The first goal was to connect the assistant to the city’s public website, making information more accessible. The second goal was to surface additional insights by connecting the assistant to two internal systems: waste management and facilities.
 
@@ -56,10 +52,13 @@ After being introduced to Microsoft Copilot Studio, the team began exploring its
 - Optimizing content structure for better indexing
 - Making content not just optimized for search (SEO) but also AI friendly
 - Coordinating across web teams for consistent information
+- Connecting with backend systems to trigger reindexing for content updates
+- Using custom entities to improve intent recognition
+- Extending analytics beyond Copilot Studio for deeper insights
 
 To enhance the performance of the agent, the team introduced two custom entities: Postal code and Borough. They used entity synonyms and the business helped update synonyms along with adding trigger phrases. To get the needed analytics, the team explored tools beyond Copilot Studio.
 
-#### Improve Bing indexation
+### Improve Bing indexation
 
 When you use a public website as a knowledge source in an agent, queries are searched on Bing and return results only from the provided websites. Copilot Studio relies on Bing’s index to generate answers from publicly available content, so better indexation means better agent performance.  
 
@@ -69,7 +68,7 @@ Proper Bing indexation directly affects response accuracy and the robots.txt fil
 
 The City of Montréal optimized their robots.txt to ensure relevant content was accessible to Bing’s crawlers. This change allowed Copilot Studio to deliver high-quality, context-aware answers based on the latest website information.
 
-#### Optimizing content structure
+### Optimize content structure
 
 The City of Montréal continuously refined their website to help Bing index more pages and ensure content is accessible within Copilot Studio. They focused on these areas:
 
@@ -79,7 +78,7 @@ The City of Montréal continuously refined their website to help Bing index more
 
 The team invested heavily in content best practices to make everything AI friendly.
 
-#### Making content AI friendly
+### Make content AI friendly
 
 Another challenge was that parts of the website weren't SEO friendly. The City of Montréal realized that content should be both SEO and AI friendly, structured so that it can be indexed and queried effectively. For example, this format works well for opening hours:
 
@@ -93,7 +92,7 @@ Another challenge was that parts of the website weren't SEO friendly. The City o
 
 By contrast, this version isn't AI friendly: *Monday to Friday 8:00 to 6:00 and Saturday to Sunday 9:00 to 5:00*. It lacks AM/PM or 24-hour format, groups days together, and isn't structured clearly, making it harder for AI to interpret.
 
-#### Coordinating web teams
+### Coordinate web teams
 
 The City of Montréal’s website has around 700 contributors across city services, central departments, and all 19 boroughs. Synchronizing this many people takes effort and requires shared routines and patterns.
 
@@ -101,7 +100,7 @@ A content management system is used, with well-defined fields for data like open
 
 To address this issue, the team began standardizing contributions. Consistency across boroughs became a priority, especially for things like opening hours and addresses. This standardized approach ensured consistent results across all districts. Previously, queries for the same type of facility often returned nothing, or wildly different formats, depending on the borough.
 
-#### Connecting with back-end systems
+### Connect with back-end systems
 
 When website content is updated, there's a delay before it's indexed. For frequently changing information, it's often better to retrieve data through APIs rather than rely solely on website knowledge sources in Copilot Studio. Even if the website shows the correct information, indexing delays prevent Copilot Studio from retrieving the information in real time.  
 
@@ -112,7 +111,7 @@ The City of Montréal connects two APIs to their agent and uses the Bing Search 
 
 Since the waste collection schedule data is unstructured, a [generative answers node](/microsoft-copilot-studio/nlu-boost-node#add-a-generative-answers-node) is used to summarize API responses instead of relying on static content. For waste collection queries, citizens enter their postal code and street number, and the agent retrieves the correct schedule via the API. The language model enriches the response. A planned upgrade includes a location API that auto-fills postal codes to improve the user experience.
 
-#### Using custom entities
+### Use custom entities
 
 The City of Montréal introduced two custom entities, Postal Code and Borough. There are 19 boroughs, and citizens often spell them incorrectly. The Copilot Studio smart match and synonyms features are used, and there's also a failsafe.
 
@@ -126,7 +125,7 @@ Traditionally, the development team worked separately from the business. But wit
 
 This collaborative model improved both accuracy and maintainability. Business teams could quickly adapt to language changes and analyzed transcripts, while IT focused on website tuning and API integration. Copilot Studio provided a shared workspace where technical structure met everyday language, making the agent smarter, faster, and better aligned with how people actually communicate.
 
-#### Agent analytics beyond Copilot Studio
+### Extend analytics beyond Copilot Studio
 
 The City of Montréal wanted a clearer view of traffic, quality, customer satisfaction, and cost, but the out-of-the-box analytics in Copilot Studio didn't provide the level of detail needed. At the time, consumption data wasn't available.
 
@@ -138,7 +137,7 @@ The following image shows the customized dashboard.
 
 The [Copilot Studio Kit](/microsoft-copilot-studio/guidance/kit-overview) is used to analyze transcripts, offering deeper insights into user behavior and helping refine the agent experience. 
 
-### Technologies used
+## Technologies used
 
 The City of Montréal used the following technologies:
 
@@ -146,7 +145,7 @@ The City of Montréal used the following technologies:
 - Power BI
 - Power Platform pipelines
 
-### Architecture
+## Architecture
 
 The conversational agent is embedded on the website [https://montreal.ca](https://montreal.ca). The following image shows the overall architecture.
 
