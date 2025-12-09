@@ -1,5 +1,5 @@
 ---
-title: "Copy a security role  | MicrosoftDocs"
+title: Copy a security role
 description: Copy a security role
 author: paulliew
 ms.subservice: admin
@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/25/2025
+ms.date: 12/09/2025
 contributors: matp
 search.audienceType: 
   - admin
