@@ -4,7 +4,7 @@ description: Learn about features that are specific to Microsoft Dynamics 365 US
 author: carrema
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/05/2025
+ms.date: 12/09/2025
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: sericks
@@ -201,7 +201,7 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 ### Discovery (OData V4) RESTful API
 -	GCC:
     - (Deprecated) Discovery URL: `https://disco.crm9.dynamics.com/api/discovery/v9.1/`
-    - Global discovery URL: https://globaldisco.crm9.dynamics.com/api/discovery/v2.0/
+    - Global discovery URL: `https://globaldisco.crm9.dynamics.com/api/discovery/v2.0/`
 
 -	GCC High:
     - (Deprecated) Discovery URL: `https://disco.crm.microsoftdynamics.us/api/discovery/v9.1/`
