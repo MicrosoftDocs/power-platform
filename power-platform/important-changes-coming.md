@@ -39,7 +39,7 @@ During the transition period, makers can enable either one or both chat experien
 - **App Skills** button opens [Copilot chat in model-driven apps](/power-apps/user/use-copilot-model-driven-apps).
 
 ### Replacement feature
-[Microsoft 365 Copilot chat](../../user/use-microsoft-365-copilot-model-driven-apps) is now the recommended solution for natural language interactions in model-driven apps. To ensure a smooth transition and prevent any disruption when Copilot chat is retired, we recommend that you migrate to Microsoft 365 Copilot chat as soon as it becomes available in your environment. 
+[Microsoft 365 Copilot chat]((/power-apps/user/use-microsoft-365-copilot-model-driven-apps) is now the recommended solution for natural language interactions in model-driven apps. To ensure a smooth transition and prevent any disruption when Copilot chat is retired, we recommend that you migrate to Microsoft 365 Copilot chat as soon as it becomes available in your environment. 
 
 ## Deprecation of the classic look for model-driven apps
 Starting in April 2026, makers will no longer be able to switch to the classic look in model-driven apps. All apps will use the modern, refreshed look by default.
