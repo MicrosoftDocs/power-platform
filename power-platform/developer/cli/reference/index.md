@@ -33,6 +33,7 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac data](data.md)|Import and export data from Dataverse.|
 |[pac env](env.md)|Work with your Dataverse organization.|
 |[pac help](help.md)|Show help for the Microsoft Power Platform CLI.|
+|[pac managed-identity](managed-identity.md)|Commands for managing Managed Identity records for Dataverse components|
 |[pac modelbuilder](modelbuilder.md)|Code Generator for Dataverse APIs and Tables|
 |[pac package](package.md)|Commands for working with Dataverse package projects|
 |[pac pages](pages.md)|Commands for working with Power Pages website.|

@@ -29,13 +29,13 @@ search.audienceType:
   
 ## Set the synchronization method to "None" for the non-primary organization  
   
-1. In the Power Platform admin center, select an environment. 
-
-2. Select **Settings** > **Email** > **Mailboxes**.  
-  
-3. Choose the mailbox record to open it.  
-  
-4. In the **Mailbox** dialog box, under **Synchronization Method**, select **None** in the **Appointments, Contacts, and Tasks** list.  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select an environment.
+1. Go to **Settings** > **Email** > **Mailboxes**.  
+1. Choose the mailbox record to open it.  
+1. In the **Mailbox** dialog box, under **Synchronization Method**, select **None** in the **Appointments, Contacts, and Tasks** list.  
   
 ### See also  
  [Set up server-side synchronization of email, appointments, contacts, and tasks](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)

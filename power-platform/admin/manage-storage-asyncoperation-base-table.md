@@ -4,7 +4,7 @@ description: Learn about managing AsyncOperationBase table storage.
 author: ceian
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/14/2024
+ms.date: 11/24/2025
 ms.subservice: admin
 ms.author: ceian
 ms.reviewer: sericks
@@ -106,8 +106,11 @@ Use the following queries to diagnose problems related to **AsyncOperationBase**
 To access the **System Jobs** page, use the following steps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
-3. Select **Audit and logs** > **System jobs**.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select your environment.
+1. Select **Settings** on the command bar.
+1. Select **Audit and logs** > **System jobs**.
 
 System jobs have the following status:
 
@@ -145,14 +148,13 @@ To set up [bulk delete jobs](/power-platform/admin/cleanup-asyncoperationbase-ta
 ### Delete completed, system jobs that are older than seven days
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
-
-3. Select **Data management** > **Bulk deletion** > **New**.
-
-4. The **Bulk Deletion Wizard** is displayed. Select **Next**.
-
-5. The **Define Search Criteria** page is displayed. To bulk delete **AsyncOperationBase** records, complete the following steps:
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select your environment.
+1. Select **Settings** on the command bar.
+1. Select **Data management** > **Bulk deletion** > **New**.
+1. The **Bulk Deletion Wizard** is displayed. Select **Next**.
+1. The **Define Search Criteria** page is displayed. To bulk delete **AsyncOperationBase** records, complete the following steps:
       1. In the **Look for** field, select **System Jobs**.
       2. Enter the following criteria:
 
@@ -162,25 +164,22 @@ To set up [bulk delete jobs](/power-platform/admin/cleanup-asyncoperationbase-ta
           | AND    | Completed On | Older Than X Days  | 7<br><br>Always start with a narrow condition that limits deleted records (**older than 3 years**), then move to progressively wider delete criteria (**older than 3 months**) and then to wider delete criteria (**older than 7 days**). |
           | AND    | System Job Type | Does Not Equal   | Bulk Email <br>Import File Parse<br>Workflow |
 
-6. Select **Preview Records** to view the records that will be deleted from the specified search criteria to make sure that no data gets unintendedly deleted in the process. Then select **Next**.
-
-7. On the **Select Options** page, select the **Run this job after every** option, and then select **7** days. Then select **Next**.
-
-8. On the **Review and Submit Bulk Deletion Details** page, select **Submit**. 
+1. Select **Preview Records** to view the records that will be deleted from the specified search criteria to make sure that no data gets unintendedly deleted in the process. Then select **Next**.
+1. On the **Select Options** page, select the **Run this job after every** option, and then select **7** days. Then select **Next**.
+1. On the **Review and Submit Bulk Deletion Details** page, select **Submit**. 
  
 For more information on how to configure bulk delete jobs for **AsyncOperationBase** table, see [Cleaning up records from the AsyncOperationBase / WorkflowLogBase table](https://cloudblogs.microsoft.com/dynamics365/it/2018/06/21/cleaning-up-records-from-the-asyncoperationbase-workflowlogbase-table).
 
 ### Delete completed, system jobs that are for workflows
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
-
-3. Select **Data management** > **Bulk deletion** > **New**.
-
-4. The **Bulk Deletion Wizard** is displayed. Select **Next**.
-
-5. The **Define Search Criteria** page is displayed. To bulk delete **AsyncOperationBase** records, complete the following steps:
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select your environment.
+1. Select **Settings** on the command bar.
+1. Select **Data management** > **Bulk deletion** > **New**.
+1. The **Bulk Deletion Wizard** is displayed. Select **Next**.
+1. The **Define Search Criteria** page is displayed. To bulk delete **AsyncOperationBase** records, complete the following steps:
      1. In the **Look for field**, select **System Jobs**.
      2. Enter the following criteria:
 
@@ -190,11 +189,9 @@ For more information on how to configure bulk delete jobs for **AsyncOperationBa
          |AND   | Status | Equals  | Completed
          |AND    | System Job Type |Equals   | Workflow |
 
-6. Select **Preview Records** to view the records that will be deleted from the specified search criteria to make sure that no data gets unintendedly deleted in the process. Then select **Next**.
-
-7. On the **Select Options** page, select the **Run this job after every** option, and then select **7** days. Then select **Next**.
-
-8. On the **Review and Submit Bulk Deletion Details** page, select **Submit**.
+1. Select **Preview Records** to view the records that will be deleted from the specified search criteria to make sure that no data gets unintendedly deleted in the process. Then select **Next**.
+1. On the **Select Options** page, select the **Run this job after every** option, and then select **7** days. Then select **Next**.
+1. On the **Review and Submit Bulk Deletion Details** page, select **Submit**.
 
 ## Appendix
 
