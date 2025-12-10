@@ -1,10 +1,10 @@
 ---
-title: Set up managed identity for Power Platform - Dataverse plug-ins (or plug-in packages)
-description: Learn how to set up Power Platform managed identity for Dataverse plug-ins (or plug-in packages).
+title: Set up Power Platform managed identity for Dataverse plug-ins or plug-in packages
+description: Learn how to set up Power Platform managed identity for Dataverse plug-ins or plug-in packages.
 author: apurvghai
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/05/2025
+ms.date: 12/10/2025
 ms.subservice: admin
 ms.author: apurvgh
 ms.reviewer: sericks
@@ -16,10 +16,9 @@ contributors:
   - sericks
 ---
 
-# Set up managed identity for Power Platform - Dataverse plug-ins (or plug-in packages)
+# Set up Power Platform managed identity for Dataverse plug-ins or plug-in packages
 
 Power Platform managed identity allows Dataverse plug-ins (or plug-in packages) to connect with Azure resources to support managed identity without the need of credentials. This article helps you set up managed identity in your Power Platform environments.
-
 
 ## Prerequisites
 
@@ -30,7 +29,6 @@ Power Platform managed identity allows Dataverse plug-ins (or plug-in packages) 
   - [SignTool.exe (Sign Tool)](/dotnet/framework/tools/signtool-exe) to sign the plug-in assembly
   - [Power Platform CLI](../developer/cli/introduction.md)
 - A valid certificate to sign the plug-in **assembly**.
-
 
 ## Set up managed identity
 
@@ -106,8 +104,7 @@ Choose the format that matches your certificate type:
 - `h/{hash}` – SHA‑256 of certificate (self-signed only)  
 - `i/{issuer}`, `s/{certificateSubject}` – trusted-issuer details
 
-
-### Generate Self-Signed Certificate
+### Generate self-signed certificate
 
 Every plug‑in must have a verifiable identity, and the signing certificate acts as the plug‑in’s unique fingerprint. Below is a sample PowerShell snippet you can use to generate a self‑signed certificate for development or testing scenarios. For reference, you can follow from [this example](https://learn.microsoft.com/en-us/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2025-ps#example-3).
 
@@ -125,7 +122,6 @@ Every plug‑in must have a verifiable identity, and the signing certificate act
   }
   New-SelfSignedCertificate @params
  ```
-
 
 > [!NOTE]
 > **Encoding for `{encodedTenantId}`**  
@@ -157,9 +153,9 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
 > For public cloud, GCC, and first release station in GCC (and other non‑listed clouds), defaults are:  
 > Audience `api://AzureADTokenExchange`, Issuer `https://login.microsoftonline.com`, Subject prefix `/eid1/c/pub`.
 
-## Create and register Dataverse plug-ins (or plug-in packages)
+## Create and register Dataverse plug-ins or plug-in packages
 
-### Dataverse plug-ins (or plug-in packages)
+### Dataverse plug-ins or plug-in packages
 
 #### Build plug-in assembly
 
@@ -173,9 +169,9 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
   string AcquireToken(IEnumerable<string> scopes);
   ```
 
-## Packaging and Signing
+## Packaging and signing
 
- ### Signing a Plug‑in Package
+ ### Signing a plug‑in package
 
  If you're building a plug‑in package, you can use the [NuGet Sign CLI](https://learn.microsoft.com/en-us/nuget/reference/cli-reference/cli-ref-sign) to generate a package from either a .nuspec or a .csproj file. After generating the package, sign it using your certificate:
 
@@ -187,7 +183,7 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
  ```
 
 
- ### Signing a Plug‑in Assembly
+ ### Signing a plug‑in assembly
  If you are registering a plug‑in (assembly), you can sign the DLL using a certificate with [SignTool.exe](/dotnet/framework/tools/signtool-exe) (Sign Tool).
 
  ```ps
