@@ -106,7 +106,7 @@ Choose the format that matches your certificate type:
 
 ### Generate self-signed certificate
 
-Every plug‑in must have a verifiable identity, and the signing certificate acts as the plug‑in’s unique fingerprint. The following code is a sample PowerShell snippet you can use to generate a self‑signed certificate for development or testing scenarios. For reference, you can follow from [example 3](/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2025-ps#example-3).
+Every plug‑in must have a verifiable identity, and the signing certificate acts as the plug‑in’s unique fingerprint. The following code is a sample PowerShell snippet you can use to generate a self‑signed certificate for development or testing scenarios. For reference, you can follow from [example 3](/powershell/module/pki/new-selfsignedcertificate#example-3).
 
  ```PowerShell
   $params = @{
