@@ -86,6 +86,10 @@ Power Platform inventory data is also available programmatically, supporting adv
 
 More details on programmatic access and sample queries are provided in this article.
 
+## Access requirements
+
+To view the Power Platform inventory, you must hold one of the following tenant-wide administrative roles: Global Administrator, [Power Platform Administrator](https://learn.microsoft.com/en-us/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator), or [Dynamics 365 Administrator](https://learn.microsoft.com/en-us/power-platform/admin/use-service-admin-role-manage-tenant#dynamics-365-administrator). If you do not have one of these roles, you will not be able to access the inventory.
+
 ## Apply filters and sorts
 
 Power Platform inventory lets you filter and sort across all resource data, using any column or attribute. You can combine multiple filters to zero in on exactly the resources you need, whether you're tracking down a specific app or analyzing trends across environments. As you refine your criteria, the total count of matching resources is always displayed directly above the resource table on the top-left, making it easy to gauge the size of your filtered dataset.
