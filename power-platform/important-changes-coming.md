@@ -26,20 +26,20 @@ For deprecation information of other products, see [Other deprecation articles](
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
 ## Deprecation of Copilot chat in model-driven apps
-Starting January 2026, [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot.md) created in environments not [enabled for Dynamics 365 apps](/power-platform/admin/create-environment#create-an-environment-with-a-database) will be deprecated. This feature was available as a preview feature in Power Apps.
+Starting January 2026, [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot.md) created in environments not [enabled for Dynamics 365 apps](admin/create-environment#create-an-environment-with-a-database) will be deprecated. This feature was available as a preview feature in Power Apps.
 
 ### Why is this needed?
-We are standardizing the chat experience in apps with the [Microsoft 365 Copilot chat](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot.md). Microsoft 365 Copilot chat is the desired chat experience in Power Apps and is gradually replacing [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot.md). During the transition period, makers can use either one or both chat experiences.
+We are standardizing the chat experience in apps with the [Microsoft 365 Copilot chat](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot). Microsoft 365 Copilot chat is the desired chat experience in Power Apps and is gradually replacing [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot). During the transition period, makers can use either one or both chat experiences.
 
 ### Impact
-Microsoft 365 Copilot chat is gradually replacing [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot.md).
+Microsoft 365 Copilot chat is gradually replacing [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot).
 
 During the transition period, makers can enable either one or both chat experiences. When both options are available, the **Copilot** dropdown menu shows the following options:
-- **Chat** button opens [Microsoft 365 Copilot chat](/power-apps/user/use-microsoft-365-copilot-model-driven-apps.md).
-- **App Skills** button opens [Copilot chat in model-driven apps](/power-apps/user/use-copilot-model-driven-apps.md).
+- **Chat** button opens [Microsoft 365 Copilot chat](/power-apps/user/use-microsoft-365-copilot-model-driven-apps).
+- **App Skills** button opens [Copilot chat in model-driven apps](/power-apps/user/use-copilot-model-driven-apps).
 
 ### Replacement feature
-[Microsoft 365 Copilot chat](../../user/use-microsoft-365-copilot-model-driven-apps.md) is the supported replacement for natural language experiences in model-driven apps. To avoid disruption when the Copilot chat feature is retired, we strongly recommend planning and executing your transition as the Microsoft 365 Copilot chat is made available in your environments. 
+[Microsoft 365 Copilot chat](../../user/use-microsoft-365-copilot-model-driven-apps) is the supported replacement for natural language experiences in model-driven apps. To avoid disruption when the Copilot chat feature is retired, we strongly recommend planning and executing your transition as the Microsoft 365 Copilot chat is made available in your environments. 
 
 ## Deprecation of the classic look for model-driven apps
 Starting in April 2026, makers will no longer be able to switch to the classic look in model-driven apps. All apps will use the modern, refreshed look by default.
