@@ -21,7 +21,6 @@ The **Deployment** page in the Power Platform admin center provides a streamline
 ## Use the deployment page
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Enable **New admin center** in the upper right corner.
 1. In the navigation pane, select **Deployment**.
 
 ### Learn about the ALM process in Power Platform
