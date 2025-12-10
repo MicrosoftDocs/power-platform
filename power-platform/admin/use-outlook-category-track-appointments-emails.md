@@ -34,14 +34,14 @@ If an email is tracked and is categorized as **Tracked to Dynamics**, removing t
 > [!TIP]
 > You can set up a rule in Outlook to assign or remove a category. See [Manage email messages by using rules](https://support.office.com/article/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59?ui=en-US&rs=en-US&ad=US).
 
-> [!NOTE]
-> Server-side synchronization will automatically categorize emails in Dynamics 365 recipient mailboxes if the email being processed has already been tracked into Dynamics by another user or queue recipient of the same email.
->
-> Only emails that match the Dynamics 365 direction code will be automatically categorized when the system setting **[Track emails sent between Dynamics 365 users as two activities](settings-email-tracking.md)** is enabled. 
->
-> For example, emails which are tracked and sent from Outlook to other Dynamics 365 users will not appear as categorized in the Outlook recipient mailboxes because
-> they represent the "received" copy of the email. This is to allow the Dynamics 365 recipient to track an incoming copy of the email as per the system setting noted
-> above.
+### Automatic Email Categorization
+
+Server-side synchronization applies the **Tracked to Dynamics 365** category to emails when they are automatically synchronized by a Dynamics 365 recipient mailbox.
+
+When a synchronized email is received by multiple Dynamics 365 recipients, server-side synchronization can automatically apply the category to the additional Dynamics 365 recipient mailboxes as long as each Dynamics 365 recipient is enabled for incoming email synchronization and appears as a resolved activity party on the received email row. For example, emails received in Exchange by a Dynamics 365 recipient through a Distribution Group, a different email alias, or as a BCC recipient may not be reliably categorized as the associated Dynamics 365 party may be unresolved or otherwise not appear as a recipient in the received Dynamics 365 email row.
+
+Additionally, only emails that match the Dynamics 365 direction code will be automatically categorized when the system setting **[Track emails sent between Dynamics 365 users as two activities](settings-email-tracking.md)** is enabled. 
+For example, emails which are tracked and sent from Outlook to other Dynamics 365 users will not appear as categorized in the Outlook recipient mailboxes because they represent the "received" copy of the email. This is to allow the Dynamics 365 recipient to track an incoming copy of the email as per the system setting noted above.
 
 ## Appointment
 You can track an appointment by assigning it the **Tracked to Dynamics 365** category. The appointment will be tracked and synced to customer engagement apps based on server-side synchronization rules.
