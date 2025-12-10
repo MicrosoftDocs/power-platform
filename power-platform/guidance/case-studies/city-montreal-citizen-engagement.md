@@ -234,4 +234,4 @@ This vision guides ongoing enhancements, ensuring the agent evolves alongside ci
 - [Create and manage solutions in Copilot Studio](/microsoft-copilot-studio/authoring-solutions-overview)
 - [Key concepts for analytics in Copilot Studio](/microsoft-copilot-studio/analytics-overview)
 - [Add a public website as a knowledge source](/microsoft-copilot-studio/knowledge-add-public-website)
-- [Copilot Studio Kit overview](/microsoft-copilot-studio/guidance/kit-overview)
+- [Copilot Studio kit overview](/microsoft-copilot-studio/guidance/kit-overview)
