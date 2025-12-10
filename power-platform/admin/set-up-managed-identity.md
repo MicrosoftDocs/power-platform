@@ -18,12 +18,12 @@ contributors:
 
 # Set up Power Platform managed identity for Dataverse plug-ins or plug-in packages
 
-Power Platform managed identity allows Dataverse plug-ins (or plug-in packages) to connect with Azure resources to support managed identity without the need of credentials. This article helps you set up managed identity in your Power Platform environments.
+Power Platform managed identity allows Dataverse plug-ins or plug-in packages to connect with Azure resources to support managed identity without the need of credentials. This article helps you set up managed identity in your Power Platform environments.
 
 ## Prerequisites
 
 - An Azure subscription with access to provision user-assigned managed identity (UAMI) or application registration.
-- Plug-ins (or plug-in packages) tools:
+- Tools for plug-ins or plug-in packages:
   - Integrated Development Environment (IDE), like Visual Studio, to build plug-in
   - [Plug-in registration tool](/power-apps/developer/data-platform/download-tools-nuget)
   - [SignTool.exe (Sign Tool)](/dotnet/framework/tools/signtool-exe) to sign the plug-in assembly
@@ -32,12 +32,12 @@ Power Platform managed identity allows Dataverse plug-ins (or plug-in packages) 
 
 ## Set up managed identity
 
-To configure Power Platform managed identity for Dataverse plug-ins (or plug-in packages), complete the following steps.
+To configure Power Platform managed identity for Dataverse plug-ins or plug-in packages, complete the following steps.
 
 1. Create a new app registration or user-assigned managed identity.
 2. Configure federated identity credentials.
-3. Create and register Dataverse plug-ins (or plug-in packages).  
-   Be sure to build the plug-in assembly and register the plug-in (or plug-in package).
+3. Create and register Dataverse plug-ins or plug-in packages.  
+   Be sure to build the plug-in assembly and register the plug-in or plug-in package.
 4. Create a managed identity record in Dataverse.
 5. Grant access to the Azure resources to the application or user-assigned managed identity (UAMI).
 6. Validate the plug-in integration.
@@ -106,9 +106,9 @@ Choose the format that matches your certificate type:
 
 ### Generate self-signed certificate
 
-Every plug‑in must have a verifiable identity, and the signing certificate acts as the plug‑in’s unique fingerprint. Below is a sample PowerShell snippet you can use to generate a self‑signed certificate for development or testing scenarios. For reference, you can follow from [this example](https://learn.microsoft.com/en-us/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2025-ps#example-3).
+Every plug‑in must have a verifiable identity, and the signing certificate acts as the plug‑in’s unique fingerprint. The following code is a sample PowerShell snippet you can use to generate a self‑signed certificate for development or testing scenarios. For reference, you can follow from [example 3](https://learn.microsoft.com/en-us/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2025-ps#example-3).
 
- ```ps
+ ```PowerShell
   $params = @{
       Type = 'Custom'
       Subject = 'E=admin@contoso.com,CN=Contoso'
@@ -173,27 +173,26 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
 
  ### Signing a plug‑in package
 
- If you're building a plug‑in package, you can use the [NuGet Sign CLI](https://learn.microsoft.com/en-us/nuget/reference/cli-reference/cli-ref-sign) to generate a package from either a .nuspec or a .csproj file. After generating the package, sign it using your certificate:
+ If you're building a plug‑in package, you can use the [NuGet Sign CLI](https://learn.microsoft.com/en-us/nuget/reference/cli-reference/cli-ref-sign) to generate a package from either a .nuspec or a .csproj file. After generating the package, sign it using your certificate.
 
- ```ps
+ ```PowerShell
   nuget sign YourPlugin.nupkg `
     -CertificatePath MyCert.pfx `
     -CertificatePassword "MyPassword" `
     -Timestamper http://timestamp.digicert.com
  ```
 
-
  ### Signing a plug‑in assembly
  If you are registering a plug‑in (assembly), you can sign the DLL using a certificate with [SignTool.exe](/dotnet/framework/tools/signtool-exe) (Sign Tool).
 
- ```ps
+ ```PowerShell
  signtool sign /f MyCert.pfx /p MyPassword /t http://timestamp.digicert.com /fd SHA256 MyAssembly.dll
  ```
 
  You can optionally add timestamping by providing the URL of an RFC 3161‑compliant timestamp server.
 
 > [!NOTE]
-> A self‑signed certificate should be used only for development or testing purposes. It is not recommended to use self‑signed certificates in production environments.
+> A self‑signed certificate should be used only for development or testing purposes. It's not recommended to use self‑signed certificates in production environments.
 
 #### Register the plug-in
 
