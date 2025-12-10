@@ -1,27 +1,30 @@
 ---
-title: Set up managed identity for Power Platform - Dataverse plug-ins
-description: Learn how to set up Power Platform managed identity for Dataverse plug-ins.
-author: abhijananddv
+title: Set up managed identity for Power Platform - Dataverse plug-ins (or plug-in packages)
+description: Learn how to set up Power Platform managed identity for Dataverse plug-ins (or plug-in packages).
+author: apurvghai
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/10/2025
+ms.date: 12/05/2025
 ms.subservice: admin
-ms.author: abhijanand
+ms.author: apurvgh
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
+contributors:
+  - abhijanand
+  - sericks
 ---
 
-# Set up managed identity for Power Platform - Dataverse plug-ins
+# Set up managed identity for Power Platform - Dataverse plug-ins (or plug-in packages)
 
-Power Platform managed identity allows Dataverse plug-ins to connect with Azure resources to support managed identity without the need of credentials. This article helps you set up managed identity in your Power Platform environments.
+Power Platform managed identity allows Dataverse plug-ins (or plug-in packages) to connect with Azure resources to support managed identity without the need of credentials. This article helps you set up managed identity in your Power Platform environments.
 
 
 ## Prerequisites
 
 - An Azure subscription with access to provision user-assigned managed identity (UAMI) or application registration.
-- Plug-ins tools:
+- Plug-ins (or plug-in packages) tools:
   - Integrated Development Environment (IDE), like Visual Studio, to build plug-in
   - [Plug-in registration tool](/power-apps/developer/data-platform/download-tools-nuget)
   - [SignTool.exe (Sign Tool)](/dotnet/framework/tools/signtool-exe) to sign the plug-in assembly
@@ -31,12 +34,12 @@ Power Platform managed identity allows Dataverse plug-ins to connect with Azure 
 
 ## Set up managed identity
 
-To configure Power Platform managed identity for Dataverse plug-ins, complete the following steps.
+To configure Power Platform managed identity for Dataverse plug-ins (or plug-in packages), complete the following steps.
 
 1. Create a new app registration or user-assigned managed identity.
 2. Configure federated identity credentials.
-3. Create and register Dataverse plug-ins.  
-   Be sure to build the plug-in assembly and register the plug-in.
+3. Create and register Dataverse plug-ins (or plug-in packages).  
+   Be sure to build the plug-in assembly and register the plug-in (or plug-in package).
 4. Create a managed identity record in Dataverse.
 5. Grant access to the Azure resources to the application or user-assigned managed identity (UAMI).
 6. Validate the plug-in integration.
@@ -67,7 +70,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
 8. Enter the following information:
 
 **Issuer**  
-Use the tenant’s v2.0 issuer:
+Use the tenant's v2.0 issuer:
 ```
 https://login.microsoftonline.com/{tenantID}/v2.0
 ```
@@ -97,10 +100,32 @@ Choose the format that matches your certificate type:
 - `eid1` – identity format version  
 - `c/pub` – cloud code for public cloud, Government Community Cloud (GCC), and first release station in GCC
 - `t/{encodedTenantId}` – tenant ID    
+- `a/qzXoWDkuqUa3l6zM5mM0Rw/` - Internal Use Only — Do Not Modify.
 - `n/plugin` – plug-in component  
 - `e/{environmentId}` – environment ID  
 - `h/{hash}` – SHA‑256 of certificate (self-signed only)  
 - `i/{issuer}`, `s/{certificateSubject}` – trusted-issuer details
+
+
+### Generate Self-Signed Certificate
+
+Every plug‑in must have a verifiable identity, and the signing certificate acts as the plug‑in’s unique fingerprint. Below is a sample PowerShell snippet you can use to generate a self‑signed certificate for development or testing scenarios. For reference, you can follow from [this example](https://learn.microsoft.com/en-us/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2025-ps#example-3).
+
+ ```ps
+  $params = @{
+      Type = 'Custom'
+      Subject = 'E=admin@contoso.com,CN=Contoso'
+      TextExtension = @(
+          '2.5.29.37={text}1.3.6.1.5.5.7.3.4',
+          '2.5.29.17={text}email=admin@contoso.com' )
+      KeyAlgorithm = 'RSA'
+      KeyLength = 2048
+      SmimeCapabilities = $true
+      CertStoreLocation = 'Cert:\CurrentUser\My'
+  }
+  New-SelfSignedCertificate @params
+ ```
+
 
 > [!NOTE]
 > **Encoding for `{encodedTenantId}`**  
@@ -132,35 +157,61 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
 > For public cloud, GCC, and first release station in GCC (and other non‑listed clouds), defaults are:  
 > Audience `api://AzureADTokenExchange`, Issuer `https://login.microsoftonline.com`, Subject prefix `/eid1/c/pub`.
 
-## Create and register Dataverse plug-ins
+## Create and register Dataverse plug-ins (or plug-in packages)
 
-### Dataverse plug-ins
+### Dataverse plug-ins (or plug-in packages)
 
 #### Build plug-in assembly
 
 - [Create a plug-in](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) using Visual Studio. While building the plug-in, use the tenant ID from [Create a new app registration or user-assigned managed identity](#create-a-new-app-registration-or-user-assigned-managed-identity) and scopes as organization URL like `https://{OrgName}.crm*.dynamics.com/.default` or even more granular scopes.
+
 - Use [IManagedIdentityService](/dotnet/api/microsoft.xrm.sdk.imanagedidentityservice?view=dataverse-sdk-latest&preserve-view=true) and acquire a token method to request a token with given scope.  
+
   Method signature:
+
   ```csharp
   string AcquireToken(IEnumerable<string> scopes);
   ```
-- Sign the assembly with a certificate. For more information, see [SignTool.exe (Sign Tool)](/dotnet/framework/tools/signtool-exe).
+
+## Packaging and Signing
+
+ ### Signing a Plug‑in Package
+
+ If you're building a plug‑in package, you can use the [NuGet Sign CLI](https://learn.microsoft.com/en-us/nuget/reference/cli-reference/cli-ref-sign) to generate a package from either a .nuspec or a .csproj file. After generating the package, sign it using your certificate:
+
+ ```ps
+  nuget sign YourPlugin.nupkg `
+    -CertificatePath MyCert.pfx `
+    -CertificatePassword "MyPassword" `
+    -Timestamper http://timestamp.digicert.com
+ ```
+
+
+ ### Signing a Plug‑in Assembly
+ If you are registering a plug‑in (assembly), you can sign the DLL using a certificate with [SignTool.exe](/dotnet/framework/tools/signtool-exe) (Sign Tool).
+
+ ```ps
+ signtool sign /f MyCert.pfx /p MyPassword /t http://timestamp.digicert.com /fd SHA256 MyAssembly.dll
+ ```
+
+ You can optionally add timestamping by providing the URL of an RFC 3161‑compliant timestamp server.
 
 > [!NOTE]
-> A self-signed certificate should be used only for testing. It's not a supported option for use in production scenarios.
+> A self‑signed certificate should be used only for development or testing purposes. It is not recommended to use self‑signed certificates in production environments.
 
 #### Register the plug-in
 
 - Install the plug-in registration tool if you don’t have it on your machine already. For more information, see [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget).
+
 - Register the plug-in. For more information, see [Register plug-in](/power-apps/developer/data-platform/tutorial-write-plug-in#register-plug-in).
 
 ## Create managed identity record in Dataverse
 
 To provision managed identity record in Dataverse, complete the following steps.
 
-1. Make a POST call using a REST client (for example, Insomnia, Postman). Use a URL with payload in the following format.
+1. Create a managed identity by sending an HTTP POST request using a REST client (such as Insomnia). Use a URL and request body in the following format.
   
-   ```
+   ```js
    POST https://<<orgURL>>/api/data/v9.0/managedidentities
    ```
    Be sure to replace **orgURL** with the URL of the organization.
@@ -170,20 +221,25 @@ To provision managed identity record in Dataverse, complete the following steps.
    **Sample payload**
    ```json
    {
-     "applicationid": "<<appId>>",
+     "applicationid": "<<appId>>", //Application Id, or ClientId, or User Managed Identity
      "managedidentityid": "<<anyGuid>>",
-     "credentialsource": 2,
-     "subjectscope": 1,
-     "tenantid": "<<tenantId>>"
+     "credentialsource": 2, // Managed client
+     "subjectscope": 1, //Environment Scope
+     "tenantid": "<<tenantId>>", //Entra Tenant Id
      "version": 1
    }
    ```
 
-3. Make a PATCH call to bind the plug-in assembly ID with the managed identity record that's created through the POST call in step 1.
+3. Update your plug‑in package or plug‑in assembly record by issuing an HTTP PATCH request to associate it with the managed identity created in step 1.
 
    **Plug-in assembly**  
-   ```
+   ```js
    PATCH https://<<orgURL>>/api/data/v9.0/pluginassemblies(<<PluginAssemblyId>>)
+   ```
+
+   **Plug-in package**  
+   ```js
+   PATCH https://<<orgURL>>/api/data/v9.0/pluginpackages(<<PluginPackageId>>)
    ```
 
    **Sample payload**
@@ -193,7 +249,7 @@ To provision managed identity record in Dataverse, complete the following steps.
    }
    ```
 
-   Be sure to replace **orgURL**, **PluginAssemblyId**, and **ManagedIdentityGuid** with your values.
+   Be sure to replace **orgURL**, **PluginAssemblyId** (OR **PluginPackageId**), and **ManagedIdentityGuid** with your values.
 
 ## Grant access to the Azure resources to application or user-assigned managed identity
 
@@ -206,6 +262,7 @@ Verify that your plug-in can securely request access to Azure resources that sup
 ## Frequently asked questions (FAQs)
 
 ### How do I resolve the this error?
+
 If you receive the following error:<br>
 **Getting Error – A configuration issue is preventing authentication.**<br>
 **AADSTS700213: No matching federated identity record found**<br>
@@ -217,4 +274,5 @@ Complete the following steps to resolve the issue:
       You can also find the expected format in the error stack.
 
 ### How do I resolve the "Unable to reach or connect to Power Platform" error?
+
 Please refer to [Power Platform URLs and IP address ranges](online-requirements.md) to ensure Power Platform endpoints are reachable and allowlisted.
