@@ -67,20 +67,20 @@ To configure managed identity, open the user-assigned managed identity or Micros
 1. Select issuer as **Other issuer**.
 1. Enter the following information:
 
-**Issuer**  
+### Issuer  
 Use the tenant's v2.0 issuer:
 ```
 https://login.microsoftonline.com/{tenantID}/v2.0
 ```
-**Example**
+### Example
 ```
 https://login.microsoftonline.com/5f8a1a9f-2e1a-415f-b10c-84c3736a21b9/v2.0
 ```
 
-**Type**  
+### Type  
 Choose **Explicit subject identifier**.
 
-**Subject identifier**  
+### Subject identifier  
 Choose the format that matches your certificate type:
 
 - **Self-signed certificate (development only):**
@@ -93,18 +93,20 @@ Choose the format that matches your certificate type:
   /eid1/c/pub/t/{encodedTenantId}/a/qzXoWDkuqUa3l6zM5mM0Rw/n/plugin/e/{environmentId}/i/{issuer}/s/{certificateSubject}
   ```
 
-**Segment reference**
+### Segment reference
 
-- `eid1` – identity format version  
-- `c/pub` – cloud code for public cloud, Government Community Cloud (GCC), and first release station in GCC
-- `t/{encodedTenantId}` – tenant ID    
-- `a/qzXoWDkuqUa3l6zM5mM0Rw/` - Internal Use Only — Do Not Modify.
-- `n/plugin` – plug-in component  
-- `e/{environmentId}` – environment ID  
-- `h/{hash}` – SHA‑256 of certificate (self-signed only)  
-- `i/{issuer}`, `s/{certificateSubject}` – trusted-issuer details
+| Segment | Description | 
+|---------|---------------|
+| eid1 | Identity format version |
+| c/pub | Cloud code for public cloud, Government Community Cloud (GCC), and first release station in GCC. |
+| t/{encodedTenantId} | Tenant ID   |
+| a/qzXoWDkuqUa3l6zM5mM0Rw/ | Internal use only. Don't modify. |
+| n/plugin | Plug-in component |
+| e/{environmentId} | Environment ID |
+| h/{hash} | SHA‑256 of certificate (self-signed only)  |
+| i/{issuer}<br>s/{certificateSubject} | Trusted-issuer details |
 
-### Generate self-signed certificate
+## Generate self-signed certificate
 
 Every plug-in must have a verifiable identity, and the signing certificate acts as the plug-in’s unique fingerprint. The following code is a sample PowerShell snippet you can use to generate a self-signed certificate for development or testing scenarios. For reference, you can follow from [example 3](/powershell/module/pki/new-selfsignedcertificate#example-3).
 
@@ -137,7 +139,7 @@ Every plug-in must have a verifiable identity, and the signing certificate acts 
 >   $cert.RawData | Set-Content -Encoding Byte -Path "extracted.cer"
 >   ```
 
-### Specialized Azure cloud environments
+## Specialized Azure cloud environments
 
 Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deploying outside public cloud, GCC, and first release station in GCC:
 
@@ -256,7 +258,7 @@ Verify that your plug-in can securely request access to Azure resources that sup
 
 ## Frequently asked questions (FAQs)
 
-### How do I resolve the this error?
+### How do I resolve this error?
 
 If you receive the following error:<br>
 **Getting Error – A configuration issue is preventing authentication.**<br>
@@ -270,4 +272,4 @@ Complete the following steps to resolve the issue:
 
 ### How do I resolve the "Unable to reach or connect to Power Platform" error?
 
-Please refer to [Power Platform URLs and IP address ranges](online-requirements.md) to ensure Power Platform endpoints are reachable and allowlisted.
+Refer to [Power Platform URLs and IP address ranges](online-requirements.md) to ensure Power Platform endpoints are reachable and allowlisted.
