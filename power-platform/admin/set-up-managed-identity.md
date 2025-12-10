@@ -157,9 +157,7 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
 
 ## Create and register Dataverse plug-ins or plug-in packages
 
-### Dataverse plug-ins or plug-in packages
-
-#### Build plug-in assembly
+### Build plug-in assembly
 
 - [Create a plug-in](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) using Visual Studio. While building the plug-in, use the tenant ID from [Create a new app registration or user-assigned managed identity](#create-a-new-app-registration-or-user-assigned-managed-identity) and scopes as organization URL like `https://{OrgName}.crm*.dynamics.com/.default` or even more granular scopes.
 
