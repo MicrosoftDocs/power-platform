@@ -18,7 +18,7 @@ contributors:
 
 # Set up Power Platform managed identity for Dataverse plug-ins or plug-in packages
 
-Power Platform managed identity allows Dataverse plug-ins or plug-in packages to connect with Azure resources to support managed identity without the need of credentials. This article helps you set up managed identity in your Power Platform environments.
+Power Platform managed identity allows Dataverse plug-ins or plug-in packages to connect with Azure resources to support managed identity without the need for credentials. This article helps you set up managed identity in your Power Platform environments.
 
 ## Prerequisites
 
@@ -35,22 +35,22 @@ Power Platform managed identity allows Dataverse plug-ins or plug-in packages to
 To configure Power Platform managed identity for Dataverse plug-ins or plug-in packages, complete the following steps.
 
 1. Create a new app registration or user-assigned managed identity.
-2. Configure federated identity credentials.
-3. Create and register Dataverse plug-ins or plug-in packages.  
+1. Configure federated identity credentials.
+1. Create and register Dataverse plug-ins or plug-in packages.  
    Be sure to build the plug-in assembly and register the plug-in or plug-in package.
-4. Create a managed identity record in Dataverse.
-5. Grant access to the Azure resources to the application or user-assigned managed identity (UAMI).
-6. Validate the plug-in integration.
+1. Create a managed identity record in Dataverse.
+1. Grant access to the Azure resources to the application or user-assigned managed identity (UAMI).
+1. Validate the plug-in integration.
 
 ## Create a new app registration or user-assigned managed identity
 
 You can create either user-assigned managed identity or an application in Microsoft Entra ID based on the following scenarios.
 
-- If you want to have app identity associated with the plug-in that connects to the Azure resources, such as Azure Key Vault, use [application registration](/entra/identity-platform/howto-create-service-principal-portal). With app identity, you can apply Azure policies on the plug-in accessing Azure resources.
-- If you want to have a service principal to access the Azure resources, such as Azure Key Vault, you can provision [user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity).
+- If you want an app identity associated with the plug-in that connects to Azure resources, such as Azure Key Vault, use [application registration](/entra/identity-platform/howto-create-service-principal-portal). With app identity, you can apply Azure policies on the plug-in accessing Azure resources.
+- If you want a service principal to access Azure resources, such as Azure Key Vault, you can provision [user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity).
 
 > [!NOTE]
-> Be sure to capture the following IDs, as you'll use them in later steps.  
+> Be sure to capture the following IDs, as you use them in later steps.  
 > - Application (client) ID  
 > - Tenant ID
 
@@ -59,13 +59,13 @@ You can create either user-assigned managed identity or an application in Micros
 To configure managed identity, open the user-assigned managed identity or Microsoft Entra ID application in the Azure portal that you created in the previous section.
 
 1. Go to the [Azure portal](https://portal.azure.com/).
-2. Navigate to **Microsoft Entra ID**.
-3. Select **App registrations**.
-4. Open the app you created in [Set up managed identity](#set-up-managed-identity).
-5. Navigate to **Certificates & secrets**.
-6. Select the **Federated credentials** tab and select **Add credential**.
-7. Select issuer as **Other issuer**.
-8. Enter the following information:
+1. Navigate to **Microsoft Entra ID**.
+1. Select **App registrations**.
+1. Open the app you created in [Set up managed identity](#set-up-managed-identity).
+1. Navigate to **Certificates & secrets**.
+1. Select the **Federated credentials** tab and select **Add credential**.
+1. Select issuer as **Other issuer**.
+1. Enter the following information:
 
 **Issuer**  
 Use the tenant's v2.0 issuer:
@@ -106,7 +106,7 @@ Choose the format that matches your certificate type:
 
 ### Generate self-signed certificate
 
-Every plug‑in must have a verifiable identity, and the signing certificate acts as the plug‑in’s unique fingerprint. The following code is a sample PowerShell snippet you can use to generate a self‑signed certificate for development or testing scenarios. For reference, you can follow from [example 3](/powershell/module/pki/new-selfsignedcertificate#example-3).
+Every plug-in must have a verifiable identity, and the signing certificate acts as the plug-in’s unique fingerprint. The following code is a sample PowerShell snippet you can use to generate a self-signed certificate for development or testing scenarios. For reference, you can follow from [example 3](/powershell/module/pki/new-selfsignedcertificate#example-3).
 
  ```PowerShell
   $params = @{
@@ -129,7 +129,7 @@ Every plug‑in must have a verifiable identity, and the signing certificate act
 > 2. Convert **Hex → Base64URL** (not standard Base64).  
 >
 > **Self-signed hash**  
-> - Compute **SHA‑256** over the **.cer**. If you have a **.pfx**, export a **.cer** first:
+> - Compute **SHA-256** over the **.cer**. If you have a **.pfx**, export a **.cer** first:
 >   ```powershell
 >   CertUtil -hashfile <CertificateFilePath> SHA256
 >
@@ -171,9 +171,9 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
 
 ## Packaging and signing
 
- ### Signing a plug‑in package
+ ### Signing a plug-in package
 
- If you're building a plug‑in package, you can use the [NuGet Sign CLI](/nuget/reference/cli-reference/cli-ref-sign) to generate a package from either a .nuspec or a .csproj file. After generating the package, sign it using your certificate.
+ If you're building a plug-in package, use the [NuGet Sign CLI](/nuget/reference/cli-reference/cli-ref-sign) to generate a package from either a .nuspec or a .csproj file. After generating the package, sign it with your certificate.
 
  ```PowerShell
   nuget sign YourPlugin.nupkg `
@@ -182,8 +182,8 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
     -Timestamper http://timestamp.digicert.com
  ```
 
- ### Signing a plug‑in assembly
- If you are registering a plug‑in (assembly), you can sign the DLL using a certificate with [SignTool.exe](/dotnet/framework/tools/signtool-exe) (Sign Tool).
+ ### Signing a plug-in assembly
+ If you're registering a plug-in (assembly), sign the DLL with a certificate by using [SignTool.exe](/dotnet/framework/tools/signtool-exe) (Sign Tool).
 
  ```PowerShell
  signtool sign /f MyCert.pfx /p MyPassword /t http://timestamp.digicert.com /fd SHA256 MyAssembly.dll
@@ -192,26 +192,26 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
  You can optionally add timestamping by providing the URL of an RFC 3161‑compliant timestamp server.
 
 > [!NOTE]
-> A self‑signed certificate should be used only for development or testing purposes. It's not recommended to use self‑signed certificates in production environments.
+> Use a self‑signed certificate only for development or testing purposes. Don't use self‑signed certificates in production environments.
 
 #### Register the plug-in
 
-- Install the plug-in registration tool if you don’t have it on your machine already. For more information, see [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget).
+- Install the plug-in registration tool if you don't already have it on your machine. For more information, see [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget).
 
 - Register the plug-in. For more information, see [Register plug-in](/power-apps/developer/data-platform/tutorial-write-plug-in#register-plug-in).
 
 ## Create managed identity record in Dataverse
 
-To provision managed identity record in Dataverse, complete the following steps.
+To provision a managed identity record in Dataverse, complete the following steps.
 
-1. Create a managed identity by sending an HTTP POST request using a REST client (such as Insomnia). Use a URL and request body in the following format.
+1. Create a managed identity by sending an HTTP POST request with a REST client (such as Insomnia). Use a URL and request body in the following format.
   
    ```js
    POST https://<<orgURL>>/api/data/v9.0/managedidentities
    ```
    Be sure to replace **orgURL** with the URL of the organization.
    
-2. Ensure that **credentialsource** is set to **2** in the payload, **subjectscope** is set to **1** for environment-specific scenarios, and **version** is set to 1 in the payload.
+1. Ensure that **credentialsource** is set to **2** in the payload, **subjectscope** is set to **1** for environment-specific scenarios, and **version** is set to 1 in the payload.
 
    **Sample payload**
    ```json
@@ -225,7 +225,7 @@ To provision managed identity record in Dataverse, complete the following steps.
    }
    ```
 
-3. Update your plug‑in package or plug‑in assembly record by issuing an HTTP PATCH request to associate it with the managed identity created in step 1.
+1. Update your plug‑in package or plug‑in assembly record by issuing an HTTP PATCH request to associate it with the managed identity created in step 1.
 
    **Plug-in assembly**  
    ```js
@@ -244,7 +244,7 @@ To provision managed identity record in Dataverse, complete the following steps.
    }
    ```
 
-   Be sure to replace **orgURL**, **PluginAssemblyId** (OR **PluginPackageId**), and **ManagedIdentityGuid** with your values.
+   Be sure to replace **orgURL**, **PluginAssemblyId** (or **PluginPackageId**), and **ManagedIdentityGuid** with your values.
 
 ## Grant access to the Azure resources to application or user-assigned managed identity
 
@@ -264,7 +264,7 @@ If you receive the following error:<br>
 
 Complete the following steps to resolve the issue:
    1. Ensure the FIC is correctly configured and saved.  
-   1. Verify that the issuer/subject matches the format specified above.
+   1. Verify that the issuer/subject matches the format specified earlier.
 
       You can also find the expected format in the error stack.
 
