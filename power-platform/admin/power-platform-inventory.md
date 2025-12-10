@@ -4,7 +4,7 @@ description: Learn how to get a comprehensive, unified view of all agents and ap
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 10/22/2025
+ms.date: 12/10/2025
 ms.topic: concept-article
 ---
 
@@ -88,7 +88,7 @@ More details on programmatic access and sample queries are provided in this arti
 
 ## Access requirements
 
-To view the Power Platform inventory, you must hold one of the following tenant-wide administrative roles: Global Administrator, [Power Platform Administrator](https://learn.microsoft.com/en-us/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator), or [Dynamics 365 Administrator](https://learn.microsoft.com/en-us/power-platform/admin/use-service-admin-role-manage-tenant#dynamics-365-administrator). If you do not have one of these roles, you will not be able to access the inventory.
+To view the Power Platform inventory, you must hold one of the following tenant-wide administrative roles: Global Administrator, [Power Platform Administrator](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator), or [Dynamics 365 Administrator](/power-platform/admin/use-service-admin-role-manage-tenant#dynamics-365-administrator). If you do not have one of these roles, you will not be able to access the inventory.
 
 ## Apply filters and sorts
 
