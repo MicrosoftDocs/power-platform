@@ -116,7 +116,7 @@ To restore deleted records from the Power Platform Environment Settings app:
 
 > [!IMPORTANT]
 >
-> - During **Preview**, recycle bin can be turned off per table; To ensure consistent retention and simplify management, starting **GA**, recycle bin can only be turned on or off at the organization level for all tables.
+> - During **preview**, recycle bin can be turned off per table; To ensure consistent retention and simplify management, starting **GA**, recycle bin can only be turned on or off at the organization level for all tables.
 
 To turn off the recycle bin for a table:
 
