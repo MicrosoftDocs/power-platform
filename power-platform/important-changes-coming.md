@@ -25,6 +25,21 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Deprecation of Copilot chat in model-driven apps (preview)
+Starting January 2026, [Copilot chat in model-driven apps](add-ai-copilot.md) created in environments not [enabled for Dynamics 365 apps](/power-platform/admin/create-environment#create-an-environment-with-a-database) will be deprecated.
+
+### Why is this needed?
+We are standardizing the chat experience in apps with the Microsoft 365 Copilot chat. Microsoft 365 Copilot chat is the desired chat experience in Power Apps and is gradually replacing [Copilot chat in model-driven apps](add-ai-copilot.md). During the transition period, makers can use either one or both chat experiences.
+
+### Impact
+Microsoft 365 Copilot chat is gradually replacing [Copilot chat in model-driven apps](add-ai-copilot.md).
+During the transition period, makers can enable either one or both chat experiences. When both options are available, the **Copilot** dropdown menu shows the following options:
+- **Chat** button opens [Microsoft 365 Copilot chat](../../user/use-microsoft-365-copilot-model-driven-apps.md)
+- **App Skills** button opens [Copilot chat in model-driven apps](../../user/use-copilot-model-driven-apps.md).
+
+### Replacement feature
+[Microsoft 365 Copilot chat](../../user/use-microsoft-365-copilot-model-driven-apps.md) is the supported replacement for natural language experiences in model-driven apps. To avoid disruption when the Copilot chat feature is retired, we strongly recommend planning and executing your transition as the Microsoft 365 Copilot chat is made available in your environments. 
+
 ## Deprecation of the classic look for model-driven apps
 Starting in April 2026, makers will no longer be able to switch to the classic look in model-driven apps. All apps will use the modern, refreshed look by default.
 
