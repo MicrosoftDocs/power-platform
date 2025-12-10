@@ -33,7 +33,7 @@ Developers should read [Restore deleted records with code (preview)](/power-apps
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - This feature is currently being deployed and might not yet be available in your region.
-> - Any storage used by the recycle bin doesn't count against your organization's storage capacity.
+> - During **preview**, storage from deleted records is not counted toward your organization’s capacity. Starting **GA**, this storage will be counted toward your organization’s database capacity.
 > - The recycle bin feature **isn't available** for [Dataverse for Teams](about-teams-environment.md), trial environments, or default environments.
 
 ## Prerequisites
@@ -113,6 +113,10 @@ To restore deleted records from the Power Platform Environment Settings app:
 1. Select **OK** to confirm the restoration.
 
 ## Turn off recycle bin for a table
+
+> [!IMPORTANT]
+>
+> - During **Preview**, recycle bin can be turned off per table; To ensure consistent retention and simplify management, starting **GA**, recycle bin can only be turned on or off at the organization level for all tables.
 
 To turn off the recycle bin for a table:
 
