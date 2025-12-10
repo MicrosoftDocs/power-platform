@@ -106,7 +106,7 @@ Choose the format that matches your certificate type:
 
 ### Generate self-signed certificate
 
-Every plug‑in must have a verifiable identity, and the signing certificate acts as the plug‑in’s unique fingerprint. The following code is a sample PowerShell snippet you can use to generate a self‑signed certificate for development or testing scenarios. For reference, you can follow from [example 3](https://learn.microsoft.com/en-us/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2025-ps#example-3).
+Every plug‑in must have a verifiable identity, and the signing certificate acts as the plug‑in’s unique fingerprint. The following code is a sample PowerShell snippet you can use to generate a self‑signed certificate for development or testing scenarios. For reference, you can follow from [example 3](/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2025-ps#example-3).
 
  ```PowerShell
   $params = @{
@@ -173,7 +173,7 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
 
  ### Signing a plug‑in package
 
- If you're building a plug‑in package, you can use the [NuGet Sign CLI](https://learn.microsoft.com/en-us/nuget/reference/cli-reference/cli-ref-sign) to generate a package from either a .nuspec or a .csproj file. After generating the package, sign it using your certificate.
+ If you're building a plug‑in package, you can use the [NuGet Sign CLI](/nuget/reference/cli-reference/cli-ref-sign) to generate a package from either a .nuspec or a .csproj file. After generating the package, sign it using your certificate.
 
  ```PowerShell
   nuget sign YourPlugin.nupkg `
