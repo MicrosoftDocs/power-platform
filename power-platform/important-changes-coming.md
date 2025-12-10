@@ -26,7 +26,7 @@ For deprecation information of other products, see [Other deprecation articles](
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
 ## Deprecation of Copilot chat in model-driven apps
-Starting January 2026, [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) in environments not [enabled for Dynamics 365 apps](admin/create-environment#create-an-environment-with-a-database) will be deprecated. This feature was available as a preview feature in Power Apps.
+Starting January 2026, [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) in environments not [enabled for Dynamics 365 apps](admin/create-environment.md#create-an-environment-with-a-database) will be deprecated. This feature was available as a preview feature in Power Apps.
 
 ### Why is this needed?
 We are unifying the chat experience across apps with [Microsoft 365 Copilot chat](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot), which is becoming the new standard in Power Apps. As Microsoft 365 Copilot chat gradually replaces [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot), makers will have the flexibility to use one or both chat experiences during the transition period.
