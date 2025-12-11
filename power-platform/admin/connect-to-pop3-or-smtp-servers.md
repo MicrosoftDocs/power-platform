@@ -3,7 +3,7 @@ title: Connect Gmail accounts, POP3 email server, or SMTP email server by using 
 description: Connect Gmail accounts, POP3 email server, or SMTP email server using credentials specified by a user or queue 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/24/2025
+ms.date: 12/11/2025
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
@@ -167,10 +167,6 @@ To test the email configurations for all mailboxes associated with an email serv
 1. Select the profile you created, and then select **Test & Enable Mailboxes**.  
 
 When you test the email configuration, an asynchronous job runs in the background and it might take a few minutes for the test to complete. Customer engagement apps test the email configuration of all the mailboxes associated with the POP3-SMTP profile. It also checks to make sure the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts are configured properly.
-
-> [!TIP]
-> If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox.
-> More information: [When would I want to use this check box?](when-would-want-use-check-box.md)
 
 ## Network ports for Power Apps US Government
 
