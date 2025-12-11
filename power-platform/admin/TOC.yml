@@ -6,8 +6,6 @@
           href: index.yml
         - name: Overview of the Power Platform admin center
           href: admin-documentation.md
-        - name: Use the new Power Platform admin center
-          href: new-admin-center.md
         - name: Environment management
           items:
             - name: Environment management capabilities
@@ -68,8 +66,10 @@
               href: pricing-billing-skus.md
             - name: License consumption and management
               items:
-                - name: View license consumption for Power Apps and Power Automate (preview)
+                - name: View license consumption for Power Apps (preview)
                   href: view-license-consumption-issues.md
+                - name: View license consumption for Power Automate (preview)
+                  href: view-license-consumption-power-automate.md
                 - name: View license consumption for Power Pages
                   href: /power-pages/admin/capacity-management
                 - name: View license consumption for finance and operations apps
@@ -460,12 +460,22 @@
                   href: monitoring/monitor-power-apps.md
                 - name: For Power Automate
                   href: monitoring/monitor-power-automate.md
+                - name: For Copilot Studio
+                  href: monitoring/monitor-copilot-studio.md
+        - name: Usage and inventory
+          items:
+            - name: Discover what's driving engagement with the Usage page (preview)
+              href: usage.md
+            - name: Inventory
+              items:
+                - name: Power Platform inventory (preview)
+                  href: power-platform-inventory.md
+                - name: Power Platform inventory API (preview)
+                  href: inventory-api.md
         - name: Copilot
           items:
             - name: Track, manage, and scale Copilot adoption
               href: copilot/copilot-hub.md
-            - name: View agent inventory (preview)
-              href: tenant-wide-agent-inventory.md
         - name: Security
           items:
             - name: Security overview
@@ -560,6 +570,8 @@
                       href: control-app-access-environment.md
                     - name: Commonly used Microsoft first-party services and portal apps
                       href: apps-to-allow.md
+                - name: Global Secure Access for agents (preview)
+                  href: security/secure-web-ai-gateway-agents.md
             - name: Compliance
               items:
                 - name: Compliance tools
@@ -722,12 +734,6 @@
                   href: powerapps-analytics-reports.md
                 - name: Power Automate analytics
                   href: power-automate-analytics-reports.md
-            - name: Inventory (preview)
-              items:
-                - name: Power Platform inventory
-                  href: power-platform-inventory.md
-                - name: Power Platform inventory API
-                  href: inventory-api.md
             - name: Data export (preview)
               items:
                 - name: Export Power Apps inventory and usage data
@@ -752,7 +758,7 @@
                   href: set-up-export-application-insights.md
                 - name: Set up Application Insights with Power Automate
                   href: app-insights-cloud-flow.md
-                - name: Conversation diagnostics in Azure Application Insights (preview)
+                - name: Conversation diagnostics in Azure Application Insights
                   href: conversation-diagnostics-application-insights.md
         - name: Storage
           items:
@@ -776,7 +782,7 @@
                   href: manage-principalobjectaccess-storage.md
                 - name: Subscription Tracking Deleted Object table
                   href: subscription-tracking-deleted-object-retention.md
-            - name: Extend Dataverse capacity for 30 days
+            - name: Extend Dataverse capacity for 45 days
               href: extend-capacity.md
             - name: Free up storage
               items:
@@ -1151,6 +1157,8 @@
                   href: unified-experience/tutorial-install-finance-operations-provisioning-app.md
                 - name: "Tutorial: Update the Finance and Operations Provisioning app"
                   href: unified-experience/tutorial-update-finance-operations-provisioning-app.md
+                - name: "Tutorial: Convert a sandbox environment to production for finance and operations apps"
+                  href: unified-experience/tutorial-convert-sandbox-to-production.md
                 - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
                   href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
                 - name: "Tutorial: Perform a transaction-less copy between environments"
