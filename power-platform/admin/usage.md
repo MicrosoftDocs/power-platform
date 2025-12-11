@@ -37,10 +37,13 @@ Use the following steps to view the page.
 ## Usage insights
 The **Usage** page in the Power Platform admin center helps you identify the top resources in your organization that are driving success and spot adoption trends, such as usage spikes for apps, flows, and agents. 
 
-At the top of the page, a summary view showcases the adoption trends over time, as well as the resources that drive the most value. The summary view shows the following information:
-- **Top apps by user** shows user activity
-- **Top flows by runs** shows run volume
-- **Top agents by sessions** shows session count
+At the top of the page, a summary view showcases the adoption and usage trends. It highlights:
+- **Adoption over time** - Track how daily usage is growing over the last 28 days.
+- **Usage in the last 28 days** – See the aggregated usage in the last 28 days by product:
+  - **Power Apps**: Active users  
+  - **Power Automate**: Flow runs  
+  - **Copilot Studio**: Agent sessions  
+- **High-value resources** – Identify the top 3 apps, flows, and agents driving the most impact.
 
 Below the summary view, detailed tables provide sortable views of all apps, flows, and agents that are in use in your organization. Sort by users for apps, runs for flows, and sessions for agents to quickly identify trends and top performers.
 
@@ -48,7 +51,7 @@ Below the summary view, detailed tables provide sortable views of all apps, flow
 This table shows usage by user activity and includes canvas apps and model-driven apps. 
 
 ### Power Automate
-This table shows usage by run volume and includes cloud flows and desktop flows.
+This table shows usage by run volume and includes cloud flows.
 
 ### Copilot Studio
-This table shows usage by sessions and includes agents built in Copilot Studio.
+This table shows usage by sessions and includes agents built in Copilot Studio (full).
