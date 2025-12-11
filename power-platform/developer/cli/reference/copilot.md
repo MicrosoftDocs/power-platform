@@ -174,6 +174,17 @@ Specifies the target Dataverse. The value may be a Guid or absolute https URL. W
 
 Information about local MCP (Model Context Protocol) server.
 
+[!INCLUDE [copilot-mcp-intro](includes/copilot-mcp-intro.md)]
+
+
+### Optional Parameters for copilot mcp
+
+#### `--run` `-r`
+
+Run the local MCP (Model Context Protocol) server.
+
+This parameter requires no value. It's a switch.
+
 [!INCLUDE [copilot-mcp-remarks](includes/copilot-mcp-remarks.md)]
 
 ## pac copilot merge-translation

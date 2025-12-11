@@ -38,7 +38,6 @@ You must [turn on tenant-level analytics](tenant-level-analytics.md) to acce
 To view your inventory of custom agents:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a tenant administrator.
-1. Be sure that **New admin center** is selected in the title bar.
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Copilot Studio**. The **Copilot Studio** page appears, listing custom agents that were created by makers within your tenant.
 

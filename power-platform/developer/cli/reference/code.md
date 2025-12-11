@@ -153,6 +153,10 @@ The entry point for the app to load from.
 
 The path to the logo file for the app.
 
+#### `--region` `-c`
+
+The region to host the Code app in.
+
 [!INCLUDE [code-init-remarks](includes/code-init-remarks.md)]
 
 ## pac code list

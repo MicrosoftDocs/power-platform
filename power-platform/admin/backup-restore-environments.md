@@ -2,7 +2,7 @@
 title: Back up and restore environments
 description: Learn how to back up and restore Power Platform environments.
 ms.topic: how-to
-ms.date: 10/13/2025
+ms.date: 12/04/2025
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta
@@ -397,7 +397,7 @@ For more information about the recovery environment, go to [Recover environment]
 
 ### The restore operation failed. What action can I take?
 
-The restore process, especially for environments with large amounts of data, is a complex backend operation. If the restore operation fails, wait 30 minutes and retry the operation again. The other actions you can take are reset, delete, copy, or restore. To retry copy or restore, the failed environment must be the target environment for the operation. 
+The restore process, especially for environments with large amounts of data, is a complex backend operation. If the restore operation fails, the target environment is left in a disabled state. To retry the restore process, the failed environment must be the target environment for the operation. Wait 30 minutes and retry the operation again. The other actions you can take for the disabled, target environment are reset, delete, or copy to as a target environment.
 
 ### You don't see the environment that you want to restore to
 

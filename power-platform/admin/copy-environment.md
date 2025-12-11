@@ -2,7 +2,7 @@
 title: Copy an environment
 description: Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment.
 ms.topic: how-to
-ms.date: 2/7/2025
+ms.date: 12/04/2025
 author: ChrisGarty
 ms.author: cgarty
 contributors:
@@ -152,7 +152,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 
 5. Select the desired copy over level.
 
-    :::image type="content" source="media/copy-environment/copy-environment-new-admin-center.png" alt-text="Select the desired copy over level in the new admin center.":::
+    :::image type="content" source="media/copy-environment/copy-environment-new-admin-center.png" alt-text="Select the desired copy over level in the admin center.":::
 
 6. If you selected **Everything** to copy, select whether to copy over audit logs. See the [How to copy audit logs](#how-to-copy-audit-logs) section.
 
@@ -167,7 +167,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 
 9. Edit the details for the copied environment, and then select **Copy**.
 
-    :::image type="content" source="media/copy-environment/copy-environment-admin-center-new.png" alt-text="Select Copy in the new admin center.":::
+    :::image type="content" source="media/copy-environment/copy-environment-admin-center-new.png" alt-text="Select Copy in the admin center.":::
 
 10. Select **Confirm** to overwrite the target environment.
 
@@ -215,13 +215,15 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
   
 After the copy process is complete, the target environment is placed in [Administration mode](sandbox-environments.md#administration-mode) and background operations are disabled. The next section describes recommended Administrator actions for the newly created copy (target) environment.  
 
+The copy process, especially for environments with large amounts of data, is a complex backend operation. If the copy operation fails, the target environment is left in a disabled state. To retry the copy operation, the failed environment must be the target environment for the operation. Wait 30 minutes and retry the operation again. The other actions you can take for the disabled, target environment are reset, delete, or restore. 
+
 ### How to copy audit logs
 
 Copying audit logs can significantly add to the time it takes to copy an environment and by default isn't done. To include audit logs in the environment copy, perform these steps.
 
 ##### [New admin center](#tab/new)
 
-1. Complete the New Admin Center steps 1-6 in [How to copy an environment](#how-to-copy-an-environment).
+1. Complete the steps 1-6 in [How to copy an environment](#how-to-copy-an-environment).
 
 2. Under **Audit logs**, select **Change this**.
 
@@ -229,9 +231,9 @@ Copying audit logs can significantly add to the time it takes to copy an environ
 
 3. Enable copying audit logs.
 
-   :::image type="content" source="media/copy-environment/copy-environment-audit-logs-enable-new.png" alt-text="Enable copying audit logs in the new admin center.":::
+   :::image type="content" source="media/copy-environment/copy-environment-audit-logs-enable-new.png" alt-text="Enable copying audit logs in the admin center.":::
 
-4. Continue with the New Admin Center steps 7-10 in [How to copy an environment](#how-to-copy-an-environment).
+4. Continue with the steps 7-10 in [How to copy an environment](#how-to-copy-an-environment).
 
 ##### [Classic admin center](#tab/classic)
 

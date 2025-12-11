@@ -37,6 +37,7 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 | Title | Description |
 | --- | --- |
 | **[Use an autonomous agent in Copilot Studio for document processing](../reference-architectures/document-processing-agent.md)** | Learn how to build an autonomous agent in Copilot Studio for document processing. |
+| **[Extract and analyze agent conversation transcripts](../reference-architectures/analyze-agent-conversation-transcripts.md)** | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
 
 ## Solution ideas
 

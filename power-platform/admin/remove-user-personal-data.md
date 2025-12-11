@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/30/2020
+ms.date: 11/24/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -30,10 +30,13 @@ When the user record is deleted from Active Directory, you will receive a messag
 
 To remove personal data:
 
-1. In the Power Platform admin center, select an environment. 
-2. Select **Settings** > **Users + permissions** > **Users**.  
-3. Select a user.
-4. Remove personal data, and then select **Save**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select an environment.
+1. Select **Settings** > **Users + permissions** > **Users**.  
+4. Select a user.
+5. Remove personal data, and then select **Save**.
 
 ## Remove user personal data via Excel Import/Export
 

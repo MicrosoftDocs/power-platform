@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 09/26/2025
+ms.date: 11/19/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -15,6 +15,49 @@ search.audienceType:
 # Programmability and extensibility - what's new or changed
 
 Learn about the latest changes and new capabilities for Power Platform API and admin SDKs.
+
+## October 2025
+| Item | Type | Description |
+|------|------|-------------|
+| Query Resources | API | New endpoint: [Query Resources](/rest/api/power-platform/resourcequery/resources/query-resources) |
+| Add Allowed IP Addresses | API | New endpoint: [Add Allowed IP Addresses](/rest/api/power-platform/powerpages/websites/add-allowed-ip-addresses) |
+| Create Environment Rule Based Assignment | Bug fixes | Various bug fixes for [Create Environment Rule Based Assignment](/rest/api/power-platform/governance/rule-based-policies/create-environment-rule-based-assignment) |
+| Create Environment Group Rule Based Assignment | Bug fixes | Various bug fixes for [Create Environment Group Rule Based Assignment](/rest/api/power-platform/governance/rule-based-policies/create-enviornment-group-rule-based-assignment) |
+| Create Rule Based Policy | Bug fixes | Various bug fixes for [Create Rule Based Policy](/rest/api/power-platform/governance/rule-based-policies/create-rule-based-policy) |
+| Restore Environment | API | New endpoint: [Restore Environment](/rest/api/power-platform/environmentmanagement/environment-restore/restore-environment) |
+| Copy Environment | API | New endpoint: [Copy Environment](/rest/api/power-platform/environmentmanagement/environment-copy/copy-environment) | 
+| Get Restore Candidates | API | New endpoint: [Get Restore Candidates](/rest/api/power-platform/environmentmanagement/environment-restore/get-restore-candidates) |
+| Get Environment Copy Candidates | API | New endpoint: [Get Environment Copy Candidates](/rest/api/power-platform/environmentmanagement/environment-copy/get-environment-copy-candidates) |
+| Recover Environment | API | New endpoint: [Recover Environment](/rest/api/power-platform/environmentmanagement/environment-recover/recover-environment) |
+| Perform Force Failover | API | New endpoint: [Perform Force Failover](/rest/api/power-platform/environmentmanagement/failover/perform-force-failover) |
+| Enable Disaster Recovery | API | New endpoint: [Enable Disaster Recovery](/rest/api/power-platform/environmentmanagement/failover/enable-disaster-recovery) |
+| Enable Environment | API | New endpoint: [Enable Environment](/rest/api/power-platform/environmentmanagement/environment-state/enable-environment) |
+| Perform DR Drill | API | New endpoint: [Perform DR Drill](/rest/api/power-platform/environmentmanagement/failover/perform-dr-drill) |
+| Disable Disaster Recovery | API | New endpoint: [Disable Disaster Recovery](/rest/api/power-platform/environmentmanagement/failover/disable-disaster-recovery) |
+| Disable Environment | API | New endpoint: [Disable Environment](/rest/api/power-platform/environmentmanagement/environment-state/disable-environment) |
+| Get Business Continuity State Full Snapshot | API  | New endpoint: [Get Business Continuity State Full Snapshot](/rest/api/power-platform/environmentmanagement/failover/get-business-continuity-state-full-snapshot) |
+| Delete Environment Backup | API | New endpoint: [Delete Environment Backup](/rest/api/power-platform/environmentmanagement/environment-backup/delete-environment-backup) |
+| Get Environment Backups | API | New endpoint: [Get Environment Backups](/rest/api/power-platform/environmentmanagement/environment-backup/get-environment-backups) |
+| Create Environment Backup | API | New endpoint: [Create Environment Backup](/rest/api/power-platform/environmentmanagement/environment-backup/create-environment-backup) |
+| Get Bot Quarantine Status | API | New endpoint: [Get Bot Quarantine Status](/rest/api/power-platform/copilotstudio/bots/get-bot-quarantine-status) |
+| Set Bot As Quarantined | API | New endpoint: [Set Bot As Quarantined](/rest/api/power-platform/copilotstudio/bots/set-bot-as-quarantined) |
+| Set Bot As Unquarantined | API | New endpoint: [Set Bot As Unquarantined](/rest/api/power-platform/copilotstudio/bots/set-bot-as-unquarantined) |
+| List role definitions | Bug fixes | Various bug fixes for [List role definitions](/rest/api/power-platform/authorization/role-based-access-control/list-role-definitions) |
+| List role assignments | Bug fixes | Various bug fixes for [List role assignments](/rest/api/power-platform/authorization/role-based-access-control/list-role-assignments) |
+| Powerplatform-Management (Python) | SDK | [Monthly Release](https://pypi.org/project/powerplatform-management/2.0.3203.1269/)
+| Microsoft.PowerPlatform.Management (C#) | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3147.171) |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.48.2) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
+
+## September 2025
+
+| Item | Type | Description |
+|------|------|-------------|
+| Environment Management MCP Server | Connector | New MCP Server: [Environment Management MCP Server](/connectors/powerplatformadminv2/#environment-management-mcp-server) |
+| Powerplatform-Management (Python) | SDK | [Initial Release](https://pypi.org/project/powerplatform-management/2.0.3203.1269/)
+| Microsoft.PowerPlatform.Management (C#) | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3147.171) |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.48.2) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
 
 ## August 2025
 

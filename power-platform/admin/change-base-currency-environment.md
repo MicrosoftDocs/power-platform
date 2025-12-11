@@ -60,8 +60,12 @@ You can import data into the **CurrencyExchangeRate** table by using a comma-sep
 
 In the CSV file, the `fromcurrencyid` and `tocurrencyid` values must be currency codes. To find these values, follow these steps.
 
-1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and open the environment that you want.
-1. Select **Settings** > **Resources** > **All legacy settings** > **Settings** > **Business Management** > **Currencies**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. Select **Settings** > **Resources** > **All legacy settings**.
+1. On the **Business Management** page, select **Currencies**.
 
 ### Examples: Importing exchange rate data for a non-base currency through a CSV file
 

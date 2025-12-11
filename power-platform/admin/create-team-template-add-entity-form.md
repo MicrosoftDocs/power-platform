@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/25/2024
+ms.date: 11/19/2025
 search.audienceType: 
   - admin
 ---
@@ -40,22 +40,30 @@ Check your security role:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 
-2. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
+1. In the navigation pane, select **Manage**.
+   
+1. In the **Manage** pane, select **Environments**.
+  
+1. On the **Environments** page, select an environment.
 
-3. On the command bar, select **More Commands** (...).
+ 1. Go to **Settings** > **Templates** > **Access team templates**.
 
-4. Select **Customize Entity**. 
+1. On the command bar, select **More Commands** (...).
 
-5. In the navigation pane, expand **Entities**, and then choose the entity you want to use in the team template.  
+1. Select **Customize Entity**. 
 
-6. On the **Entity Definition** form, in the **Communication & Collaboration** section, select the **Access Teams** checkbox.  
+1. In the navigation pane, expand **Entities**, and then choose the entity you want to use in the team template.  
 
-7. On the **Actions** toolbar, select **Save**.  
+1. On the **Entity Definition** form, in the **Communication & Collaboration** section, select the **Access Teams** checkbox.  
+
+1. On the **Actions** toolbar, select **Save**.  
   
 
 ## Create a team template  
   
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
 1. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
 1. On the control bar, select **+New**,
 1. Enter a **Name** for your template.
@@ -71,35 +79,39 @@ Check your security role:
   
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 
-2. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
+1. In the navigation pane, select **Manage**.
+   
+1. In the **Manage** pane, select **Environments**.
+  
+1.   Select an environment and go to **Settings** > **Templates** > **Access team templates**.
 
-3. On the command bar, select **More Commands** (...).
+1. On the command bar, select **More Commands** (...).
 
-4. Select **Customize Entity**.  
+1. Select **Customize Entity**.  
 
-5. In the navigation pane, expand **Entities**, expand the entity you want to use in the team template, and then select **Forms**.  
+1. In the navigation pane, expand **Entities**, expand the entity you want to use in the team template, and then select **Forms**.  
 
-6. In **System Forms**, select **Active Forms** > **Main** form. 
+1. In **System Forms**, select **Active Forms** > **Main** form. 
 
-7. On the **Main** form, open the **Insert** tab.  
+1. On the **Main** form, open the **Insert** tab.  
 
-8. On the ribbon, choose **Sub-Grid**.  
+1. On the ribbon, choose **Sub-Grid**.  
   
     The **Set Properties** dialog box appears.  
   
-9. In **Set Properties**, complete the required fields, and then select the **Display label on the Form** checkbox. 
+1. In **Set Properties**, complete the required fields, and then select the **Display label on the Form** checkbox. 
 
-10. In the **Records** dropdown list, select **All Record Types**.  
+1. In the **Records** dropdown list, select **All Record Types**.  
 
-11. In the **Entity** dropdown list, select **Users**.  
+1. In the **Entity** dropdown list, select **Users**.  
 
-12. In the **Default View** dropdown list, select **Associated Record Team Members**.  
+1. In the **Default View** dropdown list, select **Associated Record Team Members**.  
 
-13. In the **Team Template** dropdown list, select the desired template and choose **Set**.  
+1. In the **Team Template** dropdown list, select the desired template and choose **Set**.  
   
      The team template you selected now appears on the **Main** form.  
   
-14. On the **Actions** toolbar, select **Save**, and then select **Publish**.  
+1. On the **Actions** toolbar, select **Save**, and then select **Publish**.  
 
 ## Add a team template to a solution   
 

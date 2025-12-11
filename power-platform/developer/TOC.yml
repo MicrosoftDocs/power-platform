@@ -117,6 +117,8 @@
                 href: cli\reference\env.md
               - name: pac help
                 href: cli\reference\help.md
+              - name: pac managed-identity
+                href: cli\reference\managed-identity.md
               - name: pac modelbuilder
                 href: cli\reference\modelbuilder.md
               - name: pac package

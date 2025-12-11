@@ -4,23 +4,27 @@ description: Learn how to migrate the dual-write app to strengthen communication
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/28/2025
+ms.date: 11/17/2025
 author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ms.contributors:
+  - kolhemugdha
   - ritesp
   - ashishjh
   - laswenka
+contributors:
+  - mugdhakolhe29
+
 ---
 
 # Migrate the dual-write app to strengthen communication from finance and operations to Dataverse  
 
-As part of ongoing efforts to enhance communication security between finance and operations apps and Dataverse, the platform team will be updating the AppID used by [dual-write](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page) functionality.
+As part of ongoing efforts to enhance communication security between finance and operations apps and Dataverse, the platform team will update the AppID used by [dual-write](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page) functionality.
 
-- **Current configuration**: Dual-write currently uses the AppID, **00000015-0000-0000-c000-000000000000**, for communication from finance and operations to Dataverse.
+- **Current configuration**: Dual-write currently uses the AppID **00000015-0000-0000-c000-000000000000** for communication from finance and operations to Dataverse.
 - **New configuration**: On September 10, 2025, a new AppID, **f1752846-f0df-4766-96f5-c109adf67d7f**, will be used.
 - **Provisioning status**: The new AppID is already included in most provisioned Dataverse environments.
 - **Release timeline**: The change is scheduled to go live on September 10, 2025.
@@ -32,13 +36,13 @@ The new application ID, **f1752846-f0df-4766-96f5-c109adf67d7f**, was introduced
 Dual-write now uses this abstraction. All recent quality updates contain this enhancement.
 
 ## Expected changes
-1. Changes in AppID change the **ModifiedBy** and **CreatedBy** dates for records edited or created as part of the dual-write runtime. The changes can be viewed from audit logs or updates on records. Typical default users assigned are `FinanceAndOperationsServiceUser@dynamics.com` for the AppID of **00000015-0000-0000-c000-000000000000** change to `FinanceandOperationsRuntimeIntegrationUser@onmicrosoft.com` for the AppID of **f1752846-f0df-4766-96f5-c109adf67d7f**.
+- Changes in AppID change the **ModifiedBy** and **CreatedBy** dates for records edited or created as part of the dual-write runtime. The changes can be viewed from audit logs or updates on records. Typical default users assigned are `FinanceAndOperationsServiceUser@dynamics.com` for the AppID of **00000015-0000-0000-c000-000000000000** change to `FinanceandOperationsRuntimeIntegrationUser@onmicrosoft.com` for the AppID of **f1752846-f0df-4766-96f5-c109adf67d7f**.
 
     An observed difference can be seen on audit logs for Dataverse records.
 
     :::image type="content" source="media/audit-history.png" alt-text="Tenant capacity extension in admin center." lightbox="media/audit-history.png":::
 
-1. As part of the dual-write functionality, Microsoft-provided, standard solution dependencies get migrated to the new app. The packages are available on app source for proactive uptake until September 10, 2025. Microsoft will be making updates on these packages so that there are no breaking changes on the dual-write live sync. The following packages will be updated to the latest available version.
+- As part of the dual-write functionality, Microsoft-provided, standard solution dependencies get migrated to the new app. The packages are available on app source for proactive uptake until September 10, 2025. Microsoft will make updates on these packages so that there are no breaking changes on the dual-write live sync. The following packages will be updated to the latest available version:
   
     - Dual-write application core solutions
     - Dual-write core solution
@@ -47,16 +51,20 @@ Dual-write now uses this abstraction. All recent quality updates contain this en
 
 ## Impact for dual-write customers
 
-1. **Dependency with Microsoft-provided solutions**
+- **Dependency with Microsoft-provided solutions**
    
     Customers using older versions of Microsoft-provided dual-write solutions should validate upgrade paths before the September 10, 2025, deadline. While these solutions are designed to be backward compatible, customizations or applications built on older versions may require evaluation.
 
-1. **Custom solution dependency on application ID 00000015-0000-0000-c000-000000000000**
+- **Custom solution dependency on application ID 00000015-0000-0000-c000-000000000000**
 
     External solutions and processes that rely on the legacy AppID of **00000015-0000-0000-c000-000000000000**&mdash;especially those modifying system fields like **CreatedBy** or **ModifiedBy** in Dataverse&mdash;may experience unexpected behavior. These fields aren't recommended for logical operations. If such dependencies exist, remap them to the new AppID or a designated user to ensure continuity.
 
+- **Customizations on the application aren't supported**
+
+    Customizations on the Microsoft-provided application, such as adding or modifying security roles or changing core app behavior, aren't supported. Customers should avoid extending or altering the shipped app components. Instead, customers should implement required changes through supported extensibility patterns outside the managed application.
+
 ## Call for action 
-Customers are advised to upgrade their dual-write environments to the latest available versions of the Dataverse App Core solutions if their current solution version is at or below the specified thresholds. This ensures compatibility with upcoming platform changes and continued support.
+We advise customers to upgrade their dual-write environments to the latest available versions of the Dataverse App Core solutions if their current solution version is at or below the specified thresholds. This ensures compatibility with upcoming platform changes and continued support.
 
 | Solution name | Minimum required version|
 |----------|------------------------|
@@ -65,11 +73,20 @@ Customers are advised to upgrade their dual-write environments to the latest ava
 
 If your current solution version is above the specified threshold, there's no immediate need to upgrade. However, upgrading to the latest version is still recommended to ensure optimal compatibility and support.
 
-Customers with custom solutions that depend on the legacy AppID **00000015-0000-0000-c000-000000000000**, or the associated user reflected in the **ModifiedBy** field in Dataverse should reconfigure their solutions to use the new AppID or user.
+Customers with custom solutions that depend on the legacy AppID **00000015-0000-0000-c000-000000000000** or the associated user reflected in the **ModifiedBy** field in Dataverse should reconfigure their solutions to use the new AppID or user.
 
-For backward compatibility, filters can be applied to support both legacy and new AppIDs and users. This approach helps ensure a smoother transition and minimizes disruption to business processes.
+If you see any error saying, "Unable to write," use the following steps to install the **Finance and Operations Virtual Entity** solution.
 
-To validate which users would get updated to the new AppID, use following FetchXML to evaluate. 
+1. Go to [Power Apps](https://make.powerapps.com) and select the target environment.
+1. Select **Solutions**.
+1. Select **Open AppSource**.
+1. In the search box, enter **Virtual**.
+1. Locate the **Finance and Operations Virtual Entity** solution, and then select **Get it now**.
+1. Follow the on-screen prompts to install this solution into your environment.
+
+For backward compatibility, you can apply filters to support both legacy and new AppIDs and users. This approach helps ensure a smoother transition and minimizes disruption to business processes.
+
+To validate which users would get updated to the new AppID, use the following FetchXML to evaluate. 
 
 ```FetchXML
 <fetch>
@@ -91,7 +108,7 @@ To validate which users would get updated to the new AppID, use following FetchX
 
 If the application ID isn't available, contact Microsoft support.
 
-If there are compliance requirements related to the **ModifiedBy** and **CreatedBy** fields in Dataverse audit logs, note that changes associated with the new AppID applies to all records created or modified on or after September 10, 2025.
+If there are compliance requirements related to the **ModifiedBy** and **CreatedBy** fields in Dataverse audit logs, note that changes associated with the new AppID apply to all records created or modified on or after September 10, 2025.
 
 
 

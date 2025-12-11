@@ -1,7 +1,7 @@
 ---
 title: Safeguarding Dataverse sessions with IP cookie binding
 description: Discover methods for using IP-based cookie binding to stop cookie replay, ensuring secure sessions in Dataverse against unauthorized access by internet service providers.
-ms.date: 10/30/2024
+ms.date: 11/20/2025
 ms.topic: how-to
 author: ritesp
 ms.reviewer: sericks
@@ -19,9 +19,11 @@ IP-based cookie binding is available only for [Managed Environments](managed-env
 ## Enable IP address-based cookie binding
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an administrator.
-1. Select **Environments**, and then select an environment.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
 1. Select **Settings** > **Product** > **Privacy + Security**.
-1. Under **IP address settings**, select the **Enable IP address-based cookie binding** option.
+1. Under **IP address settings**, select the **Enable IP address based cookie binding** option.
 1. **(Optional)**: If your organization has reverse proxies configured, enter the IP addresses separated by commas in the **Reverse proxy IP addresses** field. The reverse proxy setting applies to both IP-based cookie binding and the [IP firewall](ip-firewall.md). Reach out to your network administrator to get the reverse proxy IP addresses.
 
      > [!NOTE]

@@ -1,0 +1,162 @@
+---
+title: Global Secure Access for Copilot Studio agents (preview)
+description: Learn how to configure the Secure Web and AI Gateway for Microsoft Copilot Studio agents to enforce network security controls.
+ms.date: 11/05/2025
+ms.topic: how-to
+author: fgomulka
+ms.author: frankgomulka
+ms.reviewer: ellenwehrle
+ms.custom:
+  - template-overview
+  - bap-template
+contributors:
+  - fgomulka
+---
+
+# Configure Global Secure Access, the Secure Web and AI Gateway for agents (preview)
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+As organizations integrate autonomous and interactive AI agents to perform tasks previously handled by humans, administrators may notice a reduction in visibility and control compared to the traditional user network security policy and management experience.
+
+With Global Secure Access (GSA) for Agents, you can now regulate how these agents use knowledge, tools, and actions to access other resources in a way that's similar to how you regulate users.
+
+:::image type="content" source="media/agent-traffic-flow.png" alt-text="Diagram showing agent traffic flowing through Global Secure Access to protected resources.":::
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+## Key benefits
+
+After you forward agent traffic to Global Secure Access, you can apply the following security controls:
+
+- **Web content filtering**: Control access to web content based on categories and URLs.
+- **Threat intelligence filtering**: Block access to known malicious sites and services.
+- **Network file filtering**: Control file uploads and downloads.
+
+You configure security policies for agents by using the baseline profile in Global Secure Access. The baseline profile applies security policies at the tenant level, ensuring consistent security controls across all agent traffic.
+
+## How Secure Web and AI Gateway for Copilot Studio agents works
+
+To enforce consistent network security controls on Copilot Studio agents, forward traffic from the agents to Global Secure Access's globally distributed proxy service. You can enable forwarding of agent traffic in the Power Platform admin center on a per-Environment or per-Environment Group basis. Forwarding applies to all kinds of agent traffic, including traffic from HTTP Node and Tools generated connectors, including custom connectors, the custom Model Context Protocol (MCP) server connector, and a full list of [supported connectors](#supported-connectors).
+
+Once you forward traffic from the agent to GSA, you can enforce the same security controls you use on users to agents, including web content filtering, threat intelligence filtering, network file filtering, and more.
+
+When an agent makes a request to external resources, the Global Secure Access service evaluates the request in real time against the security policies you configured. If the request complies with the configured policies, the service allows it. If the request violates any security policy, the Global Secure Access service denies the request with appropriate logging for audit and monitoring purposes.
+
+## Prerequisites
+
+- Administrators who interact with **Global Secure Access** features must have one or more of the following role assignments depending on the tasks they're performing:
+  - The [Global Secure Access Administrator](/azure/active-directory/roles/permissions-reference) role to manage the Global Secure Access features.
+  - The [Power Platform Administrator](../use-service-admin-role-manage-tenant.md) role to manage Copilot Studio environments.
+- A Power Platform environment with Dataverse added to it.
+
+## High-level steps
+
+Configuring network controls for Copilot Studio agents involves several steps:
+
+1. [Enable Network Controls for Copilot Studio Agents in Power Platform environment settings](#enable-network-controls-for-copilot-studio-agents)
+1. [Create security policies for Copilot Studio traffic](#next-step)
+
+## Enable network controls for Copilot Studio Agents
+
+The first step is to enable traffic forwarding from Copilot Studio Agents in the Power Platform Admin Center.
+
+### Enable network controls at the environment level
+
+To configure Global Secure Access settings at the environment level, complete the following steps:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, select **Security**
+1. On the **Security** pane, select **Identity & access**.
+1. Select **Global Secure Access for Agents**.
+1. Select the appropriate Environment and select **Set up**. 
+1. Toggle **Enable Global Secure Access for Agents** to *on* for your selected environment.
+1. Select **Save**.
+
+### Enable network controls at the environment group level
+
+To configure Global Secure Access settings at the environment group-level, complete the following steps:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, select **Security**.
+1. On the **Security** pane, select **Identity and access**.
+1. Select **Global Secure Access for Agents**.
+1. Select the **Environment groups** tab to which you want the security setting applied, then select **Set up**.
+1. Toggle **Enable Global Secure Access for Agents** to *on* for the selected environment group.
+1. Select **Save**.
+
+> [!NOTE]
+> After enabling GSA for Agents for a given environment or environment group, you need to create or update any existing custom connectors for them to route traffic through Global Secure Access.
+
+ ## Next step
+
+[Configure security controls in the Global Secure Access portal](/entra/global-secure-access/how-to-secure-web-ai-gateway-agents)
+
+## Known limitations
+
+- Currently the agent name returned in the Global Secure Access traffic logs is the agent's unique `schema name`.
+- Currently the block experience for Copilot Studio agents blocked by GSA shows a `502 Bad Gateway` for HTTP Actions or a `403 Forbidden` for connectors. This experience is a known issue, and improvements are coming soon.
+- Currently only the baseline profile is supported for enforcement, so network security policies are per-tenant.
+- GSA partner ecosystem integrations, for example, third-party Data Loss Prevention (DLP), aren't supported.
+- Copilot Studio Bing search network transactions not supported.
+- Limited connector support (see [supported connectors](#supported-connectors) for details).
+
+## Supported connectors
+
+The following connectors currently support secure web and AI gateway Copilot Studio agents:
+
+:::row:::
+    :::column:::
+    - Office 365 Groups
+    - Microsoft Teams
+    - OneDrive for Business
+    - Microsoft Dataverse
+    - Power Apps for Makers
+    - Microsoft Forms
+    - Power BI
+    - Planner
+    - Power Automate Management
+    - Microsoft Translator V2
+    - Microsoft To-Do (Business)
+    - Power Apps Notification
+    - Power Platform for Admins
+    - Desktop flows
+    - Power Apps for Admins
+    - Office 365 Outlook
+    - Power Automate for Admins
+    - Shifts for Microsoft Teams
+    - Project Online
+    - Slack
+    - Jira
+    - Azure Table Storage
+    - Microsoft Copilot Studio
+    :::column-end:::
+    :::column:::
+    - Smartsheet
+    - Google Drive
+    - OneDrive
+    - Azure Data Factory
+    - Microsoft Learn Docs MCP
+    - Databricks
+    - Microsoft Defender ATP
+    - iAuditor
+    - Azure Log Analytics Data Collector
+    - Blackbaud Altru Constituent
+    - Partner Center Referrals
+    - Azure AI Foundry Agent Service
+    - Azure AI Foundry Inference
+    - Copilot for Finance
+    - Blackbaud RENXT Gifts
+    - Blackbaud SKY Add-ins
+    - Luware Nimbus
+    - Box MCP Server
+    - Impower ERP
+    - Databricks
+    - Amazon S3
+    - Azure Cognitive Service for Language
+    :::column-end:::
+:::row-end:::
+
+You can find more information about individual connectors at [Connector reference overview](/connectors/connector-reference/).
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

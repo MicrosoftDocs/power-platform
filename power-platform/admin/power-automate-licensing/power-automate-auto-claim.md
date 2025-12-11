@@ -9,7 +9,7 @@ contributors:
   - yiannismavridis
   - kenseongtan
   - v-aangie
-ms.date: 11/10/2025
+ms.date: 11/24/2025
 search.audienceType:
   - admin
 ms.custom:
@@ -128,8 +128,10 @@ Yes, administrators can manage the policy in the Microsoft 365 admin center just
 In the Power Platform admin center, administrators can decide whether the policy should apply to Managed Environments only or all environments.
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select **Settings** > **Auto-claim policies**.
-1. On the **Auto-claim policies** pane, select whether the policy should be applicable to **All Environments** or **Only Managed Environments**.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Tenant settings**.
+1. Select **Auto-claim policies for Power Automate**.
+1. In the **Auto-claim policies for Power Automate** pane, select whether the policy should be applicable to **All Environments** or **Only Managed Environments**.
 
 ### Support for group-based license assignment
 

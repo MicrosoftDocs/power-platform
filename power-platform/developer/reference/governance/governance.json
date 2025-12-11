@@ -46,7 +46,7 @@
           "200": {
             "description": "The details of the policy.",
             "schema": {
-              "$ref": "#/definitions/RuleAssignment"
+              "$ref": "#/definitions/Policy"
             }
           },
           "400": {
@@ -279,6 +279,9 @@
         "summary": "Create environment group rule based assignment.",
         "description": "Create new rule based policy assignment for an environment group. The input includes rule sets, inputs, and other metadata related to the policy.",
         "operationId": "CreateEnviornmentGroupRuleBasedAssignment",
+        "consumes": [
+          "application/json"
+        ],
         "produces": [
           "application/json"
         ],
@@ -304,6 +307,14 @@
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PolicyAssignmentRequest"
+            }
           }
         ],
         "responses": {
@@ -342,6 +353,9 @@
         "summary": "Create environment rule based assignment.",
         "description": "Create new rule based policy assignment for an environment. The input includes rule sets, inputs, and other metadata related to the policy.",
         "operationId": "CreateEnvironmentRuleBasedAssignment",
+        "consumes": [
+          "application/json"
+        ],
         "produces": [
           "application/json"
         ],
@@ -367,6 +381,14 @@
             "required": true,
             "type": "string",
             "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PolicyAssignmentRequest"
+            }
           }
         ],
         "responses": {
@@ -822,6 +844,51 @@
           "example": {
             "AllowedConnectorList": [ ],
             "tsg": ""
+          }
+        }
+      }
+    },
+    "PolicyAssignmentOverride": {
+      "required": [
+        "resourceId",
+        "resourceType",
+        "behaviorType"
+      ],
+      "type": "object",
+      "properties": {
+        "resourceId": {
+          "description": "Resource ID. FOr example, the environment group ID.",
+          "type": "string"
+        },
+        "resourceType": {
+          "description": "The resource type.",
+          "enum": [
+            "NotSpecified",
+            "EnvironmentGroup",
+            "Environment",
+            "Tenant"
+          ],
+          "type": "string"
+        },
+        "behaviorType": {
+          "description": "The behavior type.",
+          "enum": [
+            "NotSpecified",
+            "Include",
+            "Exclude"
+          ],
+          "type": "string"
+        }
+      }
+    },
+    "PolicyAssignmentRequest": {
+      "type": "object",
+      "properties": {
+        "assignmentOverrides": {
+          "description": "List of policy assignment overrides.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PolicyAssignmentOverride"
           }
         }
       }
