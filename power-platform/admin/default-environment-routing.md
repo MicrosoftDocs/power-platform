@@ -64,8 +64,6 @@ Environment routing is a tenant-level admin setting. Understand that:
 
 The **Environment routing** setting is turned off by default and must be turned on using the Power Platform admin center&mdash;both the new admin center or the classic admin center&mdash.
 
-#### [New admin center](#tab/new)
-
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).    
 1. In the navigation pane, select **Manage**.   
 1. In the **Manage** pane, select **Tenant settings**.   
@@ -87,30 +85,6 @@ The **Environment routing** setting is turned off by default and must be turned 
     - If no rule matches, or if environment routing isn't turned on, the maker is routed to the default environment. 
 
 1. Click **Save**.
-
-#### [Classic admin center](#tab/classic)
-
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Settings**.
-1. In the **Tenant settings** page, select **Environment routing**. The **Create and manage environment routing rules** pane is displayed.   
-1. In the **Turn on environment routing for** section, select the product portals for which you want to allow routing.      
-1. Click **New rule** to define a new rule. The **Create a new routing rule** pane appears. Do the following:
-    1. In the **Name** field, enter a name for the rule.
-    1. Apply the routing rule to **Everyone** or specific security groups.
-
-        Selecting **Everyone** routes all makers into existing or new personal developer environments. Selecting a security group to limit routing only to the member makers of the configured security group.
-
-    1. Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined, environment group rules. Learn more in [Environment groups](environment-groups.md).
-    1. Click **Save**. The **Create and manage environment routing rules** pane is displayed again.
-1. Use the arrow icons to change the priority of the rules. 
-
-    When a maker accesses a portal, the system evaluates the rules in order and applies the first matching rule.
-
-    - If a matching rule is found, the maker is routed to an existing or newly provisioned developer environment. 
-    - If no rule matches, or if environment routing isn't turned on, the maker is routed to the default environment. 
-
-1. Click **Save**.
----
 
 ## Turn on environment routing using PowerShell
 

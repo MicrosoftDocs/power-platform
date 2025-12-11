@@ -30,17 +30,10 @@ There are three stages for using capacity add-ons:
 
 If your organization has purchased capacity add-ons, an **Add-ons** tab appears on the **Capacity** page in the Power Platform admin center.
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Capacity add-ons**.
 1. In the **Capacity** page, select the **Add-ons** tab.
-
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, expand **Resources**, then select **Capacity**.
-1. In the **Capacity** page, select the **Add-ons** tab.
----
 
 The **Add-ons** tab shows summary information about the capacity add-ons that your organization has.
 
@@ -52,17 +45,10 @@ Each capacity has a usage gauge that shows how many units have been assigned com
 
 To allocate capacity to an environment:
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Capacity add-ons**.
 1. In the **Capacity** page, select the **Summary** tab.
-
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, expand **Resources**, then select **Capacity**.
-1. In the **Capacity** page, select the **Summary** tab.
----
 
 On the **Summary** tab view, do **one** of the following to open the **Manage add-ons** screen:
 

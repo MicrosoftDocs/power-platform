@@ -59,8 +59,6 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 Take these steps to create a new business unit.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -68,17 +66,6 @@ Take these steps to create a new business unit.
 1. In the command bar, select **Settings**.  
 1. Expand **Users + permissions**, then select **Business units**.
 1. On the **Business Units** page, select **New business unit** in the command bar.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Users + permissions**, then select **Business units**.
-1. On the **Business Units** page, select **New business unit** in the command bar.
-
----
 
 Continue to take these steps in the **Create new business unit** panel:
 
@@ -91,8 +78,6 @@ Continue to take these steps in the **Create new business unit** panel:
 
 Take these steps to change the setting for a business unit.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -102,19 +87,6 @@ Take these steps to change the setting for a business unit.
 1. On the **Business units** page, select the desired business unit.
 1. On the **Details** pane, select **Edit**.
 1. In the **Edit business unit** panel, make the necessary changes, then select **Save** to apply them.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Users + permissions**, then select **Business units**.
-1. On the **Business units** page, select the desired business unit.
-1. On the **Details** pane, select **Edit**.
-1. In the **Edit business unit** panel, make the necessary changes, then select **Save** to apply them.
-
----
 
 ### Change the business unit for a user
 
@@ -123,8 +95,6 @@ Take these steps to change the business unit for a user.
 > [!IMPORTANT]
 > By changing the business unit for a user, you can remove all security role assignments for the user. At least one security role must be assigned to the user in the new business unit.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -135,20 +105,6 @@ Take these steps to change the business unit for a user.
 1. In the command bar, select **Change business unit**.
 1. In the **Change business unit** panel, select a business unit and check the **Move records to new business unit** option.
 1. Click **OK** to apply the changes.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Users + permissions**, then select **Users**.
-1. On the **Users** page, select the desired user.
-1. In the command bar, select **Change business unit**.
-1. In the **Change business unit** panel, select a business unit and check the **Move records to new business unit** option.
-1. Click **OK** to apply the changes.
-
----
 
   > [!NOTE]
   > If you have enabled [record ownership across business units](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), you can use [environment database settings](environment-database-settings.md) to manage your user security roles and how you want to move the user's records when you are changing the user's business unit.
@@ -161,8 +117,6 @@ Take these steps to change the business unit for a user.
 
 Take these steps to change the business unit for a team.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -173,20 +127,6 @@ Take these steps to change the business unit for a team.
 1. In the command bar, select **Change business unit**.
 1. In the **Change business unit** panel, select a business unit and check the **Move records to new business unit** option.
 1. Select **OK** to apply the changes.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [TeamsPower Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Users + permissions**, then select **Teams**.
-1. On the **Teams** page, select the row of the desired team.
-1. In the command bar, select **Change business unit**.
-1. In the **Change business unit** panel, select a business unit and check the **Move records to new business unit** option.
-1. Select **OK** to apply the changes.
-
----
 
   > [!NOTE]
   > If you enable [record ownership across business units](wp-security-cds.md#matrix-data-access-structure-modernized-business-units), you can use [environment database settings](environment-database-settings.md) to manage your user security roles and how you want to move the user's records when you are changing the user's business unit.
@@ -199,24 +139,12 @@ Take these steps to change the business unit for a team.
 
 Take these steps to reassign business unit records from one business unit to another.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.  
 1. Expand **Users + permissions**, then select **Business units**.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select the row of the desired environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Users + permissions**, then select **Business units**.
-
----
 
 On the **Business Units** page:
 

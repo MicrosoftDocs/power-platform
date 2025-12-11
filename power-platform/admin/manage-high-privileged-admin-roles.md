@@ -89,21 +89,12 @@ In this PowerShell script, you:
 
 ##### Locate and add your environment ID
 
-##### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, choose the environment you want to modify.
 1. Locate the **Environment ID** in the **Details** pane.
 1. Add your unique `<environment id>` to the script.
-
-##### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose the environment you want to modify.
-1. Locate the **Environment ID** in the **Details** pane.
-1. Add your unique `<environment id>` to the script.
----
 
 ##### Run the script
 
@@ -202,7 +193,6 @@ Remove-RoleAssignmentFromUsers
 
 ### Self-elevate through Power Platform admin center
 
-##### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -210,10 +200,3 @@ Remove-RoleAssignmentFromUsers
 1. In the command bar, select **Membership** to request self-elevation.
 1. In the **System Administrators** pane, select **Add me** to add yourself to the system administrator role.
 
-##### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose the environment you want to modify.
-1. In the command bar, select **Membership** to request self-elevation.
-1. In the **System Administrators** pane, select **Add me** to add yourself to the system administrator role.
----

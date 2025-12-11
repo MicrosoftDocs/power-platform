@@ -42,21 +42,12 @@ When you create an environment with a Dataverse database or add a Dataverse data
 
 **To add users to an environment that has a Dataverse database**
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select the environment where you want to add users.
 1. In the command bar, select **Settings**. 
 1. Expand **Users + permissions**, then select **Users**.
-   
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select the environment where you want to add users.
-1. In the command bar, select **Settings**.  
-1. Expand **Users + permissions**, then select **Users**. 
----
 
 On the **Users** page:
 - View the list of users already added to the environment, including those users with enabled and disabled status. Learn more in [Enable or disable users](create-users.md#enable-or-disable-user-accounts).

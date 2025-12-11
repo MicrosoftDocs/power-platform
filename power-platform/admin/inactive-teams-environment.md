@@ -88,27 +88,14 @@ By default, administrators have 30 days to re-enable an environment. An environm
 
 ## Trigger activity for an inactive Dataverse for Teams environment
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** list page, choose an inactive environment.
 1. On the **Environment** page, in the **Environment inactive** pane, select **Trigger environment activity**.
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** list page, choose an inactive environment.
-1. On the **Environment** page, in the **Environment inactive** pane, select **Trigger environment activity**.
-
----
 
 ## Re-enable a disabled Dataverse for Teams environment
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -116,22 +103,9 @@ By default, administrators have 30 days to re-enable an environment. An environm
 1. In the **Details** pane, select **Edit**.
 1. In the **Edit details** pane, under **Administration mode**, toggle the setting to **Enabled**.
 1. Select **Save** to apply the changes.
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** list page, choose a disabled environment.
-1. In the **Details** pane, select **Edit**.
-1. In the **Edit details** pane, under **Administration mode**, toggle the setting to **Enabled**.
-1. Select **Save** to apply the changes.
-
----
 
 ## Recover a deleted Dataverse for Teams environment
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -139,17 +113,6 @@ By default, administrators have 30 days to re-enable an environment. An environm
 1. On the **Deleted** page, select the environment you want to recover.
 1. Select **Continue** to confirm the recovery.
 1. Select **Ok** to proceed with the recovery.
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** list page,  select **Recover deleted environments** in the command bar.
-1. On the **Deleted** page, select the environment you want to recover.
-1. Select **Continue** to confirm the recovery.
-1. Select **Ok** to proceed with the recovery.
-
----
 
 For more information about recovering environments, see [recover environment](recover-environment.md).
 

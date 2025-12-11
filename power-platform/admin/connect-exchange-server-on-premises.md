@@ -51,7 +51,6 @@ For more information about authentication, go to:
 
 ## Create an email server profile  
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -59,15 +58,6 @@ For more information about authentication, go to:
 1. In the command bar, select **Settings**. 
 1. Expand **Email**, then select **Server profiles**.
 1. In the command bar, select **New server profile**.
-
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Email**, then select **Server profiles**.
-1. In the command bar, select **New server profile**.
----
 
 #### In the **Set up server profile** panel:
 1. For **Email Server Type**, select **Exchange Server (on premises)**, then enter a meaningful **Name** for the profile.
@@ -94,21 +84,12 @@ For more information about authentication, go to:
 
 Set server-side synchronization to be the default configuration method.  
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
 1. In the command bar, click **Settings**. 
 1. Expand **Email**, then select **Email settings**.
-
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Settings**.  
-1. Expand **Email**, then select **Email settings**.
----
 
 On the **Email settings** page, set up the **Synchronization methods** as follows:
 1. Configure the following processing and synchronization options:  
@@ -135,7 +116,6 @@ Choose **one** of the following methods: **set mailboxes to the default profile*
  
 **To set mailboxes to the default profile**  
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -144,24 +124,12 @@ Choose **one** of the following methods: **set mailboxes to the default profile*
 1. Expand **Email**, then select **Mailboxes**.
 1. In the grid view selector, select to **Active Mailboxes**.
 1. Select all the mailboxes to associate with the server profile you created.
-1. In the command bar, click **Apply Default Email Settings**, verify the settings, then click **OK**. 
-
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Settings**.  
-1. Expand **Email**, then select **Mailboxes**.
-1. In the grid view selector, select **Active Mailboxes**.
-1. Select all the mailboxes to associate with the server profile you created.
-1. In the command bar, click **Apply Default Email Settings**, verify the settings, then click **OK**.  
----
+1. In the command bar, click **Apply Default Email Settings**, verify the settings, then click **OK**.
 
 By default, the mailbox configuration is tested, and the mailboxes are enabled upon selecting **OK**.  
 
 **To edit mailboxes to set the profile and delivery methods**  
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -170,16 +138,6 @@ By default, the mailbox configuration is tested, and the mailboxes are enabled u
 1. Expand **Email**, then select **Mailboxes**.
 1. In the grid view selector, choose **Active Mailboxes**.
 1. Select the mailboxes you want to configure, then click **Edit** in the command bar.
-
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose the environment you want to modify.
-1. In the command bar, click **Settings**.  
-1. Expand **Email**, then select **Mailboxes**.
-1. In the grid view selector, choose **Active Mailboxes**.
-1. Select the mailboxes you want to configure, then click **Edit** in the command bar.
----
 
 On the **Mailbox** page, go to the **General** tab and set up **Synchronization methods** as follows:
 1. Config the following processing and synchronization options:
@@ -194,7 +152,6 @@ On the **Mailbox** page, go to the **General** tab and set up **Synchronization 
 
 You need to approve each user mailbox or queue before that mailbox can process email.  
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -205,20 +162,8 @@ You need to approve each user mailbox or queue before that mailbox can process e
 1. Select the mailboxes you want to approve, then click **Approve Email** in the command bar.  
 1. Click **OK** to apply the changes.
 
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Settings**.  
-1. Expand **Email**, then select **Mailboxes**.
-1. In the grid view selector, choose **Active Mailboxes**.
-1. Select the mailboxes you want to approve, then click **Approve Email** in the command bar.  
-1. Click **OK** to apply the changes.
----
-
 ## Test the configuration of mailboxes  
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -227,16 +172,6 @@ You need to approve each user mailbox or queue before that mailbox can process e
 1. Expand **Email**, then select **Mailboxes**.
 1. In the grid view selector, choose **Active Mailboxes**.
 1. Select the mailboxes you want to test, then select **Test & Enable Mailboxes** in the command bar.
-
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Email**, then select **Mailboxes**.
-1. In the grid view selector, choose **Active Mailboxes**.
-1. Select the mailboxes you want to test, then select **Test & Enable Mailboxes** in the command bar.
----
 
 This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disable the mailbox for email processing.  
 
@@ -244,7 +179,6 @@ The result of the email configuration test is displayed in the **Incoming Email 
 
 ## Test email configuration for all mailboxes associated with an email server profile  
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -252,15 +186,6 @@ The result of the email configuration test is displayed in the **Incoming Email 
 1. In the command bar, select **Settings**. 
 1. Expand **Email**, then select **Server profiles**.
 1. Select the profile you created, then select **Test & Enable Mailboxes** in the command bar.
-
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Email**, then select **Server profiles**.
-1. Select the profile you created, then select **Test & Enable Mailboxes** in the command bar.
----
 
 When you test the email configuration, an asynchronous job runs in the background. It might take a few minutes for the test to be completed. Customer engagement apps test the email configuration of all the mailboxes associated with the server profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
 

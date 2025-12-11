@@ -110,17 +110,10 @@ Here are some examples of the types of actions that are considered as activity:
 ### View last user activity of environment
 Environment admins can see when an environment was last used by checking the **Last activity** column in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). The activity for each environment is updated once a day.
 
-### [New admin center](#tab/new)
 1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. See **Last activity** column for environment in question.
-
-### [Classic admin center](#tab/classic)
-1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. See **Last activity** column for environment in question.
----
 
 ## Trigger activity, re-enable, and recover an environment
 

@@ -43,23 +43,11 @@ With both [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-excha
 
 Make sure you have the System Administrator security role or equivalent permissions in Microsoft Dynamics 365. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don't have the correct permissions, contact your system administrator.
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Server profiles**.
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Email**, then select **Server profiles**.
-
----
 
 6. On the command bar, select **New server profile**.
 7. For **Email Server Type**, select **Exchange Online**, and then enter a meaningful **Name** for the profile.
@@ -84,24 +72,12 @@ If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]
 
 To verify you have this profile:  
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Server profiles**.
 
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Email**, then select **Server profiles**.
-
----
-  
 6. Verify that the **Microsoft Exchange Online** profile is in the list. If the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile is missing, verify that you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription and that it exists in the same tenant as your subscription.  
   
 7. If there are multiple profiles, select the **Microsoft Exchange Online** profile and set it as default.  
@@ -110,23 +86,11 @@ To verify you have this profile:
 
 Set server-side synchronization to be the default configuration method for newly created users.  
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Email settings**.
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Email**, then select **Email settings**.
-
----
 
 6. Set the **Synchronization methods** columns as follows:  
   
@@ -145,23 +109,11 @@ New users have their mailboxes configured automatically with the settings you ma
   
 In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
   
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Mailboxes**.
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Email**, then select **Mailboxes**.
-
----
 
 6. Select **Active Mailboxes** from the grid view selection list.
 7. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile.
@@ -171,23 +123,11 @@ By default, the mailbox configuration is tested and the mailboxes enabled when y
   
 **To edit mailboxes to set the profile and delivery methods:**
   
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Mailboxes**.
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Email**, then select **Mailboxes**.
-
----
 
 6. Select **Active Mailboxes** from the grid view selection list.  
 7. Select the mailboxes that you want to configure, then select **Edit** in the top command bar.  
@@ -335,23 +275,11 @@ To approve emails, a Dynamics 365 user requires the **Approve Email Addresses fo
 
 **To manually assign the Approve Email Addresses for Users or Queues privilege to a security role:**
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Users + permissions**, then select **Security roles**.
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Users + permissions**, then select **Security roles**.
-
----
 
 6. Select a security role, then go to the **Miscellaneous Privileges** tab.
 7. Select the **Show only unassigned privileges** view.
@@ -365,23 +293,11 @@ You can use a manual or programmatic processes to approve a mailbox.
 
 ##### Approve a mailbox manually
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Mailboxes**.
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Email**, then select **Mailboxes**.
-
----
 
 6. Select the **Active Mailboxes** grid view to show the list of mailboxes.  
 7. Select the mailboxes that you want to approve, then select **Approve Email** from the command bar.  
@@ -395,23 +311,11 @@ Email addresses can't be approved using plug-ins or workflows. External applicat
 
 Admins, as described in the preceding permissions model table, can change the settings so that mailbox approval isn't required.
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Email settings**.
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Email**, then select **Email settings**.
-
----
 
 6. Under **Security and permissions**, turn off **Process emails only for approved users** and **Process emails only for approved queues**. (These settings are enabled by default.)
 
@@ -419,23 +323,11 @@ Admins, as described in the preceding permissions model table, can change the se
 
 ## Test the configuration of mailboxes  
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Mailboxes**.
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Email**, then select **Mailboxes**.
-
----
 
 6. Select the **Active Mailboxes** grid view to show the list of mailboxes.  
 7. Select the mailboxes you want to test, then select **Test & Enable Mailbox** from the command bar. You also have the option to select a _mailbox link_, then select **Test & Enable Mailbox** from the command bar.

@@ -28,8 +28,6 @@ You can delete an environment to recover storage space and to remove Personally 
 >
 > You can't delete the Microsoft 365 Copilot Chat environment, as well.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 1. In the navigation pane, select **Manage**.
@@ -43,18 +41,6 @@ You can delete an environment to recover storage space and to remove Personally 
   :::image type="content" source="media/delete-environment-updated-new.png" alt-text="Delete a selected environment in the admin center.":::
 
 4. Provide the confirmation data and then select **Confirm**.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).  
-
-2. Select an environment and then select **Delete**.
-
-  :::image type="content" source="media/delete-environment-updated.png" alt-text="Delete a selected environment.":::
-
-3. Provide the confirmation data and then select **Confirm**.
-
----
 
 > [!NOTE]
 > The URL of a deleted environment can't be used again for another environment until at least 24 hours have passed since the environment deletion.

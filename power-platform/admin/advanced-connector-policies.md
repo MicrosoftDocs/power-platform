@@ -38,7 +38,6 @@ While advanced connector policies (ACP) offer robust capabilities, there are a f
 
 To configure an advanced connector policy, complete the following steps.
 
-## [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environment groups**.
@@ -51,20 +50,6 @@ To configure an advanced connector policy, complete the following steps.
    - To remove connectors, select them and then select **Remove connector**. You can remove any connector to block it.
 1. When all connectors are set as you require, select **Save**.
 1. The environment group's page is redisplayed. After all rules are updated to your requirements, select **Publish rules** in the command bar.
-
-## [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environment groups**.
-1. In the **Environment groups** page, select the environment group where you want the policy applied.
-1. The environment group's page is displayed. Select the **Rules** tab.
-1. Select **Advanced connector policies (preview)**. The **Advanced connector policies (preview)** pane is displayed.
-1. Define the policy. Keep the following points in mind:
-   - By default, the nonblockable connectors are preloaded as _allowed_.
-   - To add new connectors, select **Add connectors** to choose from all certified connectors.
-   - To remove connectors, select them and then select **Remove connector**. You can remove any connector to block it.
-1. When all connectors are set as you require, select **Save**.
-1. The environment group's page is redisplayed. After all rules are updated to your requirements, select **Publish rules** in the command bar.
----
 
 During publishing, an environment lifecycle operation is performed on every environment that's part of the group, or the individual environment depending on where you're configuring the policy. This operation is available in environment history as *Update Managed Environment Settings* and cascades the new connector policy to the design time and runtime infrastructure.
 

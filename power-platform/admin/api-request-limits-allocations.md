@@ -127,8 +127,6 @@ Review the following resources for information about *current* service protect
 
 To view the consumption of Power Platform requests for licensed users, non-licensed users, and per flow licensed flow runs, take these steps:
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
 1. On the **Licensing** pane, select **Capacity add-ons** to view the *Capacity* page.
@@ -146,28 +144,6 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 
 1. Select **Submit**.
 1. Once the report is ready, select **Download** to download the report as an Excel CSV file.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, expand *Resources*.
-1. Select **Capacity** to view the *Capacity* page.
-1. On the **Summary** tab, scroll down to the *Add-ons* section and select **Download reports**.
-
-   :::image type="content" source="media/api-request-limits-allocations/capacity-download-reports.png" alt-text="Screenshot that shows the Capacity page in the Power Platform admin center and highlights the link to download reports." lightbox="media/api-request-limits-allocations/capacity-download-reports.png":::
-
-1. On the *Downloadable Reports* page, select **New** from the command bar.
-1. Expand the **Choose a report** box and select **Microsoft Power Platform requests**.
-1. Select the required scope of the report:
-
-    - Licensed User
-    - Non-licensed User
-    - Per Flow Licensed Flows
-
-1. Select **Submit**.
-1. Once the report is ready, select **Download** to download the report as an Excel CSV file.
-
----
 
 > [!NOTE]
 > These reports are in preview and currently limited to Power Automate API requests. API requests from Dataverse, Microsoft Copilot Studio, and Power Apps aren't included at this time.

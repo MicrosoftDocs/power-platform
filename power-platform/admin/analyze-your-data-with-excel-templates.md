@@ -49,8 +49,6 @@ There are two places where you can create an [!INCLUDE[pn_Excel_short](../includ
 
 Access requires sufficient permissions, such as System Administrator or System Customizer role. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -59,18 +57,6 @@ Access requires sufficient permissions, such as System Administrator or System C
 1. Expand **Templates**, then select **Document templates**.
 1. In the command bar, select **New**, then select **Excel Template**.
 1. In the dialog window, select the **Entity** to filter and the **View** to use, then select **Download** to download the template.
-   
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, select **Settings**. 
-1. Expand **Templates**, then select **Document templates**.
-1. In the command bar, select **New**, then select **Excel Template**.
-1. In the dialog window, select the **Entity** to filter and the **View** to use, then select **Download** to create the template file.
-
----
 
 - **From a list of records**. 
 For example:
@@ -135,8 +121,6 @@ Let's walk through a simple example of customizing an [!INCLUDE[pn_Excel_short](
  
 #### For admins: Upload the Excel template
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -145,19 +129,7 @@ Let's walk through a simple example of customizing an [!INCLUDE[pn_Excel_short](
 1. Expand **Templates**, then select **Document templates**.
 1. In the command bar, select **Upload Template**, then select **Excel Template**.
 1. In the dialog window, choose a file to upload, then select **Upload** to upload the template file.
-   
-#### [Classic admin center](#tab/classic)
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, select **Settings**. 
-1. Expand **Templates**, then select **Document templates**.
-1. In the command bar, select **Upload Template**, then select **Excel Template**.
-1. In the dialog window, choose a file to upload, then select **Upload** to upload the template file.
-
----
-   
 #### For non-admins or admins wanting to create a personal template: Upload the Excel template
 
 Non-admin users can upload a template for their own use from a list of records.  
