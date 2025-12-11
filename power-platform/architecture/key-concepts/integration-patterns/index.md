@@ -24,12 +24,14 @@ You'll learn:
 - How to use the strengths of cloud flows and address their shortcomings
 - Techniques for robust integrations
 
+## Next step
+
+Before exploring individual integration patterns, it’s important to understand the foundational considerations that shape every integration design decision.
+
+> [!div class="nextstepaction"]
+> [Determine integration requirements](requirements.md)
+
 ## Related resources
 
 - [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/)
 - [Power Automate on Microsoft Learn](/training/powerplatform/power-automate) (training)
-
-## Next step
-
-> [!div class="nextstepaction"]
-> [Determine integration requirements](requirements.md)

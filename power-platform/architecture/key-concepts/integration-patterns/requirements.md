@@ -179,6 +179,8 @@ Directionality defines the flow of data between systems. This scenario includes 
 - A third data stream where engineers write updates into Dataverse from the Power App
 - A final data stream to read updates in the Power App
 
+This diagram illustrates the direct integration pattern, showing how data moves between the website, Dataverse, and the Power App through four distinct data streams:
+
  :::image type="content" source="../media/integration-patterns/website-integration.png" alt-text="Diagram illustrating four data streams: website to Dataverse, Dataverse to website, engineers to Dataverse, and Dataverse to the Power App.":::
 
 Understanding these flows helps you configure secure and efficient integrations. Use direct or decoupled patterns based on system capabilities and performance needs.
@@ -189,17 +191,23 @@ In this example integration, built-in connectors streamline the process. When re
 
 Use [Dataverse Analytics](/power-platform/admin/analytics-common-data-service) to monitor current usage. If Dataverse approaches its projected request load, consider adding a protective buffer in the form of [Azure Data Lake](/power-apps/maker/data-platform/azure-synapse-link-data-lake).
 
+This diagram shows the decoupled read pattern, where a Data Lake is introduced between Dataverse and the website to offload read traffic and improve scalability:
+
 :::image type="content" source="../media/integration-patterns/decoupled-data-flow-diagram.png" alt-text="Diagram of a website integration pattern showing a decoupled read pattern with the addition of Azure Data Lake.":::
 
 This strategy helps reduce read volume from Dataverse and prevent throttling errors (such as HTTP 429 Too Many Requests).
 
 To decrease the dependency even further, decouple the create and update requests from the website using a queuing service such as [Azure Service Bus](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 
+This diagram shows the fully decoupled integration pattern, where both reads and writes are offloaded through a Data Lake and a queue to maximize reliability and protect Dataverse from spikes in demand: 
+
 :::image type="content" source="../media/integration-patterns/fully-decoupled.png" alt-text="Diagram of a website integration pattern showing a fully decoupled design with the addition of a queuing service.":::
 
 Design cloud flows to handle errors, implement retry logic, and follow [best practices](/power-automate/guidance/coding-guidelines/) for reliability. When selecting an integration pattern, prioritize solutions that meet business needs with minimal complexity. Balance technical capability with cost, licensing, and maintenance requirements. Choose the simplest approach that fulfills requirements and avoids unnecessary investment.
 
 ## Next step
+
+Explore common patterns to translate your requirements analysis into practical, scalable integration architectures.
 
 > [!div class="nextstepaction"]
 > [Explore integration patterns](patterns.md)
