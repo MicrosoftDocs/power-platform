@@ -141,7 +141,7 @@ The following images show the model-driven app designed for billing operators, c
 
 Two Copilot Studio agents enhance key billing and claim workflow. Together, they reduce manual work, identify errors faster, and support both staff and patients through natural language interactions. The following diagram gives an overview of the two agents.
 
-:::image type="content" source="media/signetic/signetic-agents.png" alt-text="Diagram of the agent architecture":::
+:::image type="content" source="media/signetic/signetic-agent-architecture.svg" alt-text="Diagram of the agent architecture":::
 
 #### Billing Ops Agent
 
