@@ -223,7 +223,7 @@ Here are some key takeaways:
 - Integrate automated reporting meeting regulatory requirements and reduce manual effort.
 - Continuously evolve AI capabilities by testing new prompts, models, and automation scenarios.
 
-> "Our billing operators can now process claims at a much faster rate, handle errors more efficiently, and manage documents seamlessly. AI from Copilot Studio and the Power Platform brings real intelligence into Signetic’s workflows, letting our teams focus on delivering value instead of repetitive tasks."
+> "Our billing operators are now able to process claims at a much faster rate, handle errors more efficiently, and manage documents seamlessly. AI from Copilot Studio and the Power Platform is bringing real intelligence into Signetic’s workflows, letting our teams focus on delivering value instead of repetitive tasks." Chandika Bhandari, Founder and CEO, Signetic.
 >
 > — *Chandika Bhandari, Founder and CEO, Signetic.*
 
