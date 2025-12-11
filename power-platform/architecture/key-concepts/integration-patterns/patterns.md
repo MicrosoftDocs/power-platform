@@ -45,6 +45,8 @@ Given the cost-effectiveness of Power Platform integrations, any of these reason
 
 Use an instant cloud flow triggered by a button press in the application. 
 
+This diagram illustrates the Instant trigger pattern, where a user‑initiated action retrieves data from an external system and writes it into Dataverse:
+
 :::image type="content" source="../media/integration-patterns/instant-trigger.png" alt-text="Diagram showing a button-triggered flow with steps to retrieve Oracle data, return it to the app, and write it to Dataverse.":::
 
 The flow includes these steps:
@@ -72,6 +74,8 @@ Event-driven (also known as automatic trigger) architectures respond to changes 
 A customer service department uses a Dataverse-connected app to work on cases and provide updates to customers automatically, without writing emails manually. Only specific changes—such as adding a note or changing the status—should trigger notifications.
 
 Use an automatic trigger in Power Automate to respond to these events. The flow listens for changes in Dataverse records and sends notifications when defined conditions are met.
+
+This diagram shows the automatic trigger pattern, where changes in Dataverse automatically initiate downstream actions that update customers with the relevant case information:
 
 :::image type="content" source="../media/integration-patterns/auto-trigger.png" alt-text="Screenshot of Power Automate flow configuration showing trigger settings for monitoring Dataverse record changes.":::
 
@@ -119,6 +123,8 @@ In this use case, a scheduled trigger consolidates data as follows:
 - Returns the data into a format compatible with Dataverse
 - Uploads the data into the AI model for analysis
 
+This diagram illustrates the scheduled data‑consolidation pattern, where a recurring process gathers information from multiple systems and uploads the combined dataset into Dataverse:
+
 :::image type="content" source="../media/integration-patterns/scheduled-trigger.png" alt-text="Diagram of data integration using a scheduled process to unify information from three legacy systems for AI-driven sales recommendations.":::
 
 ### Scheduled trigger configuration
@@ -144,6 +150,8 @@ Large organizations often operate multiple systems across departments. These sys
 ### Example scenario revisited
 
 Let's continue with our example scenario in which the organization uses multiple systems to manage different parts of the business. SAP handles orders and accounts receivables, Oracle manages product inventory, and IBM stores internal financial documentation. Dataverse runs apps for sales, customer service, and product management. SharePoint supports internal collaboration and knowledge base management, while Maersk APIs automate logistics processes.
+
+This diagram illustrates the event‑driven pattern in a multi‑system landscape, where updates across various enterprise systems trigger automated flows that coordinate data and actions between them:
 
 :::image type="content" source="../media/integration-patterns/event-driven-trigger.png" alt-text="Diagram showing integration architecture with multiple systems linked through specific triggers for business processes.":::
 
@@ -192,6 +200,8 @@ Use an automatic cloud flow triggered by updates to the Account record. Configur
 - Prevent synchronization of restricted data
 
 This approach results in a targeted, event-driven integration that supports compliance and operational efficiency.
+
+This diagram illustrates the event‑driven synchronization pattern, where updates in one Dataverse environment automatically trigger corresponding updates in another:
 
 :::image type="content" source="../media/integration-patterns/event-driven-auto-trigger.png" alt-text="Diagram of an event-driven integration showing volume and frequency variations based on account updates with filters applied.":::
 
