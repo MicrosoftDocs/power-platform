@@ -123,7 +123,7 @@ The following image shows an appointment overview.
 
 The following image shows a service fulfillment.
 
-:::image type="content" source="media/signetic/service-fulfillment.jpeg" alt-text="Screenshot of the canvas app screen showing a service fulfillment":::
+:::image type="content" source="media/signetic/service-fulfillment.jpg" alt-text="Screenshot of the canvas app screen showing a service fulfillment":::
 
 #### Model-driven apps for billing operators
 
@@ -133,9 +133,9 @@ Billing operators oversee the work and monitor pending claims and claims placed 
 
 The following images show the model-driven app designed for billing operators, claims processing overview, and claim details.
 
-:::image type="content" source="media/signetic/billingops-app.jpeg" alt-text="Screenshot of the overview screen in the model-driven app for billing operators":::
+:::image type="content" source="media/signetic/billingops-app.jpg" alt-text="Screenshot of the overview screen in the model-driven app for billing operators":::
 
-:::image type="content" source="media/signetic/billingops-app2.jpeg" alt-text="Screenshot of the detail screen in the model-driven app for billing operators":::
+:::image type="content" source="media/signetic/billingops-app2.jpg" alt-text="Screenshot of the detail screen in the model-driven app for billing operators":::
 
 ### Agents that enhance claims processing
 
@@ -161,7 +161,7 @@ The agent opens when the chat icon in the bottom right corner of the app is sele
 
 Example usage: If a claim is marked unprocessed, the billing operator can open it and ask: "Why is this claim unprocessed?". If a claim is rejected, the billing operator can ask "Why was this claim rejected". The following image shows the agent being tested in Copilot Studio.
 
-:::image type="content" source="media/signetic/billingops-agent2.jpeg" alt-text="Screenshot of an example usage of the agent":::
+:::image type="content" source="media/signetic/billingops-agent2.jpg" alt-text="Screenshot of an example usage of the agent":::
 
 The agent combines Dataverse claim records (real-time status with details) and uploaded guidance documents with reasons for unprocessed claims. It then creates a clear explanation and recommends next steps. The agent also functions as a support assistant. For example, the operator can ask: "How do I create a task?" The agent returns procedural guidance aligned with internal policies.
 
