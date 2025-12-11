@@ -229,13 +229,13 @@ Here are some key takeaways:
 
 ## Related information
 
-- [What is Power Apps?](https://learn.microsoft.com/en-us/power-apps/powerapps-overview)
-  - [Training for Power Apps](https://learn.microsoft.com/en-us/training/powerplatform/power-apps)
-  - [What are canvas apps?](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/getting-started)
-  - [What are model-driven apps in Power Apps?](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-driven-app-overview)
-  - [Add agents to your model-driven app](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/add-agents-to-app)
-- [What is Microsoft Copilot Studio?](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
-  - [Quickstart: Create and deploy an agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started)
-  - [Add a Dataverse knowledge source](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-dataverse)
-  - [Agent flows overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-overview)
-- [Power Platform Well-Architected](https://learn.microsoft.com/en-us/power-platform/well-architected/)
+- [What is Power Apps?](/power-apps/powerapps-overview)
+  - [Training for Power Apps](/training/powerplatform/power-apps)
+  - [What are canvas apps?](/power-apps/maker/canvas-apps/getting-started)
+  - [What are model-driven apps in Power Apps?](/power-apps/maker/model-driven-apps/model-driven-app-overview)
+  - [Add agents to your model-driven app](/power-apps/maker/model-driven-apps/add-agents-to-app)
+- [What is Microsoft Copilot Studio?](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
+  - [Quickstart: Create and deploy an agent](/microsoft-copilot-studio/fundamentals-get-started)
+  - [Add a Dataverse knowledge source](/microsoft-copilot-studio/knowledge-add-dataverse)
+  - [Agent flows overview](/microsoft-copilot-studio/flows-overview)
+- [Power Platform Well-Architected](/power-platform/well-architected/)
