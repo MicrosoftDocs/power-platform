@@ -99,8 +99,6 @@ The early access updates are available for all types of environments, including 
 
 ## How to get early access updates 
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 1. Select **Manage** in the navigation pane.
@@ -109,19 +107,7 @@ The early access updates are available for all types of environments, including 
 
 1. Under **Updates**, the new release wave is available. Select **Manage**. 
 
-1. Select **Update now**, and then proceed through the confirmation dialog boxes to get the new features and capabilities of the release wave. 
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
-
-1. Select the environment to update. 
-
-1. Under **Updates**, the new release wave is available. Select **Manage**. 
-
-1. Select **Update now**, and then proceed through the confirmation dialog boxes to get the new features and capabilities of the release wave. 
-
----
+1. Select **Update now**, and then proceed through the confirmation dialog boxes to get the new features and capabilities of the release wave.
 
 After the update is complete, all early access features will be turned on for your model-driven apps in your environment. 
 

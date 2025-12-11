@@ -154,8 +154,6 @@ You can audit other tables, where applicable, but note that there are some core 
 
 The following steps describe how to turn on auditing for an environment. This task requires the System Administrator or System Customizer role or equivalent permissions.
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. From the left-side menu, select **Security > Compliance**.
 1. Select the **Auditing** tile.
@@ -164,19 +162,6 @@ The following steps describe how to turn on auditing for an environment. This ta
 1. Review the list of Dataverse data and Dynamics 365 apps entities.
 1. Review and update the **Event log retention** by selecting the dropdown.
 1. Select the period that meets your data retention policy.
-
-# [Classic admin center](#tab/classic)
- 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. From the left-side menu, select **Security > Compliance**.
-1. Select the **Auditing** tile.
-1. Select the environment that you want to turn on auditing.
-1. Select **Set up auditing**. In the **Auditing** dialog box, select **Turn on auditing**.
-1. Review the list of Dataverse data and Dynamics 365 apps entities.
-1. Review and update the **Event log retention** by selecting the dropdown.
-1. Select the period that meets your data retention policy.
-
----
 
 > [!NOTE]
 > When the audit retention period is set to **Forever**, logs aren't deleted. When the audit retention period is set to any other value, logs are deleted continuously starting at the time an audit record exceeds the time defined in the retention policy.
@@ -206,23 +191,12 @@ This task requires the System Administrator or System Customizer role or equival
    | Read logs  | Logs are sent to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/auditlogsearch).|
 
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Select **Settings** > **Audit and logs** > **Audit settings**.
 1. You can set a retention period for how long audit logs are kept in an environment. Under **Retain these logs for**, choose the period of time you wish to retain the logs. 
 1. Select **Save**.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
-1. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Audit settings**.
-1. You can set a retention period for how long audit logs are kept in an environment. Under **Retain these logs for**, choose the period of time you wish to retain the logs.
-1. Select **Save**.
-
----
 
 > [!NOTE]
 > We recommend that you use the Security page auditing option to set the retention policy. This provides the flexibility to apply the retention policy to existing logs. 
@@ -480,23 +454,12 @@ The following table describes the options available to delete audit logs.
 
 For Unified Interface, in the upper-right corner, select **Settings** > **Advanced Settings** > **Settings**.
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select an environment.
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Under Auditing, select **Delete audit logs**.
 1. Choose how to select logs to delete. 
 1. Select **Delete**, and then confirm.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select an environment.
-1. Under Auditing, select **Delete audit logs**.
-1. Choose how to select logs to delete.
-1. Select **Delete**, and then confirm.
-
----
 
    > [!NOTE]
    > Audit logs are deleted in an asynchronous background system job. The duration of the deletion depends on the number of audit records to be deleted. The current rate is approximately 100 million records per day, or approximately 4 million records per hour.
@@ -511,19 +474,10 @@ Several features use system jobs to perform tasks automatically, including workf
 
 For Unified Interface, in the upper-right corner, select **Settings** > **Advanced Settings** > **Settings**.
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Select **Settings** > **Audit and logs** > **System jobs** to see a grid view of system jobs.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and select an environment.
-1. Select **Settings** > **Audit and logs** > **System jobs** to see a grid view of system jobs.
-
----
 
 If there's a problem with a system job, you can cancel, postpone, pause, or resume it. Select a job and then select the **Actions** menu.
   
@@ -555,21 +509,11 @@ If there's a problem with a system job, you can cancel, postpone, pause, or resu
 
 To monitor the status of audit delete jobs, you can use the **Bulk deletion** view in the Power Platform admin center. 
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Select **Settings** > **Data management** > **Bulk deletion**.
 1. Select the system job name to open details about your delete job.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and select an environment.
-1. Select **Settings** > **Data management** > **Bulk deletion**.
-1. Select the system job name to open details about your delete job.
-
----
 
 ## Access audit data using Azure Synapse Link for Dataverse
 
