@@ -56,7 +56,7 @@ This architecture brings together Power Platform, Copilot Studio, and Azure serv
 
 The following diagram shows how these components work together across user experiences, agentic automation, data flows, and integration points.
 
-:::image type="content" source="media/signetic/signetic-architecture.png" alt-text="Diagram showing the high-level architecture of the Signetic solution":::
+:::image type="content" source="media/signetic/signetic-architecture.svg" alt-text="Diagram showing the high-level architecture of the Signetic solution":::
 
 ### Technologies used
 
