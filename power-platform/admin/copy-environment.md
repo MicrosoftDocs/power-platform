@@ -152,7 +152,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 
 5. Select the desired copy over level.
 
-    :::image type="content" source="media/copy-environment/copy-environment-new-admin-center.png" alt-text="Select the desired copy over level in the new admin center.":::
+    :::image type="content" source="media/copy-environment/copy-environment-new-admin-center.png" alt-text="Select the desired copy over level in the admin center.":::
 
 6. If you selected **Everything** to copy, select whether to copy over audit logs. See the [How to copy audit logs](#how-to-copy-audit-logs) section.
 
@@ -167,7 +167,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 
 9. Edit the details for the copied environment, and then select **Copy**.
 
-    :::image type="content" source="media/copy-environment/copy-environment-admin-center-new.png" alt-text="Select Copy in the new admin center.":::
+    :::image type="content" source="media/copy-environment/copy-environment-admin-center-new.png" alt-text="Select Copy in the admin center.":::
 
 10. Select **Confirm** to overwrite the target environment.
 
@@ -223,7 +223,7 @@ Copying audit logs can significantly add to the time it takes to copy an environ
 
 ##### [New admin center](#tab/new)
 
-1. Complete the New Admin Center steps 1-6 in [How to copy an environment](#how-to-copy-an-environment).
+1. Complete the steps 1-6 in [How to copy an environment](#how-to-copy-an-environment).
 
 2. Under **Audit logs**, select **Change this**.
 
@@ -231,9 +231,9 @@ Copying audit logs can significantly add to the time it takes to copy an environ
 
 3. Enable copying audit logs.
 
-   :::image type="content" source="media/copy-environment/copy-environment-audit-logs-enable-new.png" alt-text="Enable copying audit logs in the new admin center.":::
+   :::image type="content" source="media/copy-environment/copy-environment-audit-logs-enable-new.png" alt-text="Enable copying audit logs in the admin center.":::
 
-4. Continue with the New Admin Center steps 7-10 in [How to copy an environment](#how-to-copy-an-environment).
+4. Continue with the steps 7-10 in [How to copy an environment](#how-to-copy-an-environment).
 
 ##### [Classic admin center](#tab/classic)
 
