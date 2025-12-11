@@ -171,7 +171,7 @@ The agent has the following instructions to ensure consistent and easy-to-follow
 
 #### Send Prior Auth Agent
 
-Many insurance providers require prior authorization before certain procedures or medications can be provided. Traditionally, this process involves manual form completion, lengthy back-and-forth communication, and risk of errors. The Send Prior Auth agent – an autonomous agent built with Copilot Studio – automates this workflow end to end. When a patient's e-mail arrives, the **Send Prior Auth Agent** is triggered. It retrieves data from the Dataverse contact and appointment tables via the Dataverse MCP server, and applies agent flows, including AI prompts, to compose and send the prior authorization to the insurance provider. The agent is designed to:
+Many insurance providers require prior authorization before certain procedures or medications can be provided. Traditionally, this process involves manual form completion, lengthy back-and-forth communication, and risk of errors. The Send Prior Auth agent – an autonomous agent built with Copilot Studio – automates this workflow end to end. When a patient's e-mail arrives, the Send Prior Auth Agent is triggered. It retrieves data from the Dataverse contact and appointment tables via the Dataverse MCP server, and applies agent flows, including AI prompts, to compose and send the prior authorization to the insurance provider. The agent is designed to:
 
 - Verify information and request missing details (full name and date of birth).
 
