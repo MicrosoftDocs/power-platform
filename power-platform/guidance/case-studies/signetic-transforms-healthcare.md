@@ -119,7 +119,7 @@ When a patient arrives for their appointment, clinic staff use a Power Apps canv
 
 The following image shows an appointment overview.
 
-:::image type="content" source="media/signetic/appointment-overview.jpeg" alt-text="Screenshot of the canvas app screen for appoinments":::
+:::image type="content" source="media/signetic/appointment-overview.jpg" alt-text="Screenshot of the canvas app screen for appoinments":::
 
 The following image shows a service fulfillment.
 
