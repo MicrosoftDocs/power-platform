@@ -1,121 +1,121 @@
 {
-  "build": {
-    "content": [
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
-      }
-    ],
-    "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.svg",
-          "**/*.jpg",
-          "**/*.gif",
-          "**/*.js",
-          "**/*.json"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**"
-        ]
-      }
-    ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {
-      "contributors_to_exclude": [
-        "buck1ey",
-        "bishalgoswami",
-        "kathleenmcgrath",
-        "marycc",
-        "tinaburden",
-        "almostdunh",
-        "AshleyWoodruff",
-        "cpdSeattle",
-        "kimberleybrown",
-        "nathlaroche"
+   "build": {
+      "content": [
+         {
+            "files": [
+               "**/*.md",
+               "**/*.yml"
+            ],
+            "exclude": [
+               "**/obj/**",
+               "**/includes/**",
+               "_themes/**",
+               "_themes.pdf/**",
+               "README.md",
+               "LICENSE",
+               "LICENSE-CODE",
+               "ThirdPartyNotices"
+            ]
+         }
       ],
-      "breadcrumb_path": "/power-platform/breadcrumb/toc.json",
-      "titleSuffix": "Power Platform",
-      "feedback_system": "Standard",
-      "feedback_product_url": "https://powerusers.microsoft.com/",
-      "recommendations": true,
-      "uhfHeaderId": "MSDocsHeader-PowerPlatform"
-    },
-    "fileMetadata": {
-      "searchScope": {
-        "**.*": [
-          "Power Platform"
-        ]
+      "resource": [
+         {
+            "files": [
+               "**/*.png",
+               "**/*.svg",
+               "**/*.jpg",
+               "**/*.gif",
+               "**/*.js",
+               "**/*.json"
+            ],
+            "exclude": [
+               "**/obj/**",
+               "**/includes/**",
+               "_themes/**",
+               "_themes.pdf/**"
+            ]
+         }
+      ],
+      "overwrite": [],
+      "externalReference": [],
+      "globalMetadata": {
+         "contributors_to_exclude": [
+            "buck1ey",
+            "bishalgoswami",
+            "kathleenmcgrath",
+            "marycc",
+            "tinaburden",
+            "almostdunh",
+            "AshleyWoodruff",
+            "cpdSeattle",
+            "kimberleybrown",
+            "nathlaroche"
+         ],
+         "breadcrumb_path": "/power-platform/breadcrumb/toc.json",
+         "titleSuffix": "Power Platform",
+         "feedback_system": "Standard",
+         "feedback_product_url": "https://powerusers.microsoft.com/",
+         "recommendations": true,
+         "uhfHeaderId": "MSDocsHeader-PowerPlatform"
       },
-      "ms.service": {
-        "**.*": "power-platform"
+      "fileMetadata": {
+         "searchScope": {
+            "**.*": [
+               "Power Platform"
+            ]
+         },
+         "ms.service": {
+            "**.*": "power-platform"
+         },
+         "ms.date": {
+            "developer/cli/reference/**.md": "12/02/2025"
+         },
+         "ms.subservice": {
+            "power-fx/**/*.md": "power-fx",
+            "guidance/**/*.md": "guidance",
+            "alm/**/*.md": "alm",
+            "admin/**/*.md": "admin",
+            "developer/**/*.md": "developer",
+            "well-architected/**/*.md": "well-architected",
+            "test-engine/**/*.md": "developer"
+         },
+         "search.app": {
+            "power-fx/**/*.md": [
+               "powerapps-docs"
+            ],
+            "guidance/**/*.md": [
+               "powerapps-docs",
+               "administration-docs",
+               "powerautomate-docs",
+               "dataverse-docs"
+            ],
+            "alm/**/*.md": [
+               "powerapps-docs",
+               "administration-docs",
+               "powerautomate-docs",
+               "dataverse-docs"
+            ],
+            "admin/**/*.md": [
+               "administration-docs"
+            ],
+            "developer/**/*.md": [
+               "powerapps-docs",
+               "powerautomate-docs",
+               "dataverse-docs",
+               "powerpages-docs",
+               "powervirtualagents-docs"
+            ]
+         }
       },
-      "ms.date": {
-        "developer/cli/reference/**.md": "10/06/2025"
-      },
-      "ms.subservice": {
-        "power-fx/**/*.md": "power-fx",
-        "guidance/**/*.md": "guidance",
-        "alm/**/*.md": "alm",
-        "admin/**/*.md": "admin",
-        "developer/**/*.md": "developer",
-        "well-architected/**/*.md": "well-architected",
-        "test-engine/**/*.md": "developer"
-      },
-      "search.app": {
-        "power-fx/**/*.md": [
-          "powerapps-docs"
-        ],
-        "guidance/**/*.md": [
-          "powerapps-docs",
-          "administration-docs",
-          "powerautomate-docs",
-          "dataverse-docs"
-        ],
-        "alm/**/*.md": [
-          "powerapps-docs",
-          "administration-docs",
-          "powerautomate-docs",
-          "dataverse-docs"
-        ],
-        "admin/**/*.md": [
-          "administration-docs"
-        ],
-        "developer/**/*.md": [
-          "powerapps-docs",
-          "powerautomate-docs",
-          "dataverse-docs",
-          "powerpages-docs",
-          "powervirtualagents-docs"
-        ]
+      "template": [],
+      "dest": "power-platform",
+      "markdownEngineName": "markdig",
+      "rules": {
+         "filename-incomplete": {
+            "exclude": [
+               "power-fx/reference/includes/**/*.md"
+            ]
+         }
       }
-    },
-    "template": [],
-    "dest": "power-platform",
-    "markdownEngineName": "markdig",
-    "rules": {
-      "filename-incomplete": {
-        "exclude": [
-          "power-fx/reference/includes/**/*.md"
-        ]
-      }
-    }
-  }
+   }
 }

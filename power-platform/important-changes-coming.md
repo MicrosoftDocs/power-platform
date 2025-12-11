@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 08/21/2025
+ms.date: 11/18/2025
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -24,6 +24,32 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Deprecation of the classic look for model-driven apps
+Starting in April 2026, makers will no longer be able to switch to the classic look in model-driven apps. All apps will use the modern, refreshed look by default.
+
+### Why is this needed?
+We are standardizing the experience across model-driven apps to deliver a consistent, accessible, and modern interface that ensures customers benefit from ongoing user experience improvements while unlocking AI-powered capabilities available only in the modern look.
+
+### Impact
+There is no impact on app logic, data, or permissions. Existing apps will automatically display the modern look. The admin settings related to this feature will be removed.
+
+### Replacement feature
+The modern, refreshed look is now the default experience for all model-driven apps. No action is required from makers or admins. For more information on this, see [Modern, refreshed look for model-driven apps](/power-apps/user/modern-fluent-design).
+
+## Deprecation of create an app from an image or Figma file
+
+Starting October 21, 2025, makers will no longer be able to create new apps using  the **An image or Figma file** option in Power Apps.
+
+### Why is this needed?
+We are bringing new capabilities to help you create apps such as [plans](/power-apps/maker/plan-designer/plan-designer) and [generative pages](/power-apps/maker/model-driven-apps/generative-pages).
+
+### Impact
+There is no impact on existing apps created using an image or Figma file and will continue to be supported. 
+
+### Replacement feature
+
+[Plans](/power-apps/maker/plan-designer/plan-designer) and [generative pages](/power-apps/maker/model-driven-apps/generative-pages) can be used to create apps. Makers can also use third-party and community tool plugins to bring external designs into Power Apps.
 
 ## Deprecation of the format data by examples feature in Power Automate
 
@@ -97,7 +123,7 @@ After deprecation ends, Microsoft service account users will experience the foll
 
 To continue using Power Automate, we recommend that you transition to the Power Apps Developer Plan. This transition provides access to modern features and allows for seamless management of your workflows. The Power Apps Developer Plan includes flow creation and integration with Microsoft Dataverse, making it an excellent option for automation enthusiasts and professionals.
 
-1. If you don't have a [trial Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account), create one.
+1. If you don't have a [trial Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn), create one.
 1. Using the Azure account you created, [set up a new Microsoft Entra tenant](/entra/identity-platform/quickstart-create-new-tenant).
 1. Using the Azure account and Entra tenant you set up in this procedure, create a [Power Apps developer environment](developer/create-developer-environment.md).
 

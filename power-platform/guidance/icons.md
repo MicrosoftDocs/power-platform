@@ -3,7 +3,7 @@ title: "Microsoft Power Platform icons | MicrosoftDocs"
 description: "Official icons for use in building architecture diagrams and illustrations for Microsoft Power Platform (Power Platform, Power Apps, Power Automate, Power BI, Power Pages, Microsoft Copilot Studio, Dataverse, AI Builder, and Power Fx)."
 author: sericks007
 ms.topic: concept-article
-ms.date: 05/29/2025
+ms.date: 10/28/2025
 ms.subservice: guidance
 ms.author: sericks
 ms.reviewer: sericks
@@ -32,6 +32,7 @@ This article provides information about the official collection of icons for Mic
 
 |Month|Change description|
 |---|---|
+|October 2025|Updated icon for Microsoft Copilot Studio.|
 |September 2024|Added icon for Microsoft Copilot Studio.|
 |June 2022|Added icon for Power Fx.|
 |May 2022|Added icons for Power Platform, Power Pages, and AI Builder.|
