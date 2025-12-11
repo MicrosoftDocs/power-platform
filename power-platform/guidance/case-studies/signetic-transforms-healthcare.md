@@ -1,7 +1,7 @@
 ---
 title: Signetic transforms healthcare operations with intelligent apps and agents powered by Power Platform and Copilot Studio
-description: Discover how La Trobe University uses AI and Copilot Studio to streamline operations, enhance academic productivity, and improve staff support services.
-#customer intent: As a Power Platform user, I want to learn how to use Copilot Studio and AI Builder to build a knowledge retrieval agent so that I can streamline support services at my organization.
+description: Learn how Signetic revolutionizes healthcare operations with Power Platform and Copilot Studio, streamlining workflows, enhancing efficiency, and improving patient care.
+#customer intent: As a healthcare technology professional, I want to understand how Signetic uses Power Platform and Copilot Studio to modernize clinic operations so that I can apply similar solutions in my organization.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -11,29 +11,29 @@ ms.topic: overview
 ---
 # Signetic transforms healthcare operations with intelligent apps and agents powered by Power Platform and Copilot Studio
 
-Signetic is a Seattle-based healthcare technology company using Microsoft Power Platform, Copilot Studio and Azure services to modernize pharmacy and clinic operations. Their integrated suite of applications streamlines patient scheduling, site configuration, visit management and claims processing – replacing manual, paper-heavy workflows with a scalable intelligent system.
+Signetic is a Seattle-based healthcare technology company that uses Microsoft Power Platform, Copilot Studio, and Azure services to modernize pharmacy and clinic operations. Their integrated suite of applications streamlines patient scheduling, site configuration, visit management, and claims processing – replacing manual, paper-heavy workflows with a scalable intelligent system.
 
-By infusing AI agents built with Copilot Studio, Signetic is transforming its applications into an intelligent, proactive system that further enhances efficiency and user experience, enabling pharmacies and clinics to operate as modern community health hubs and scale to serve more patients.
+By infusing AI agents built with Copilot Studio, Signetic transforms its applications into an intelligent, proactive system that further enhances efficiency and user experience, enabling pharmacies and clinics operate as modern community health hubs and scale to serve more patients.
 
 This case study highlights how Signetic combines Power Platform, Azure, and AI-powered Copilot Studio agents to build enterprise-grade healthcare solutions that improve operational reliability and support smarter decision-making.
 
-## Business Challenges 
+## Business challenges 
 
-Pharmacies and clinics often rely on outdated systems that slow down daily operations. Patients and staff frequently fill out multiple paper forms manually, leading to scheduling issues, incomplete patient records, and time-consuming documentation processes.
+Pharmacies and clinics often rely on outdated systems that slow down daily operations. Patients and staff frequently fill out multiple paper forms manually, leading to scheduling problems, incomplete patient records, and time-consuming documentation processes.
 
-These inefficiencies delay service, increase error risks, and make it difficult for pharmacies and clinics to stay compliant or scale their services. To address these challenges, Signetic developed Signetic for Pharmacies, a suite of intelligent applications designed to streamline operations end to end - helping pharmacies and clinics work faster, more efficiently, and with greater reliability, so staff can focus on patient care rather than paperwork.
+These inefficiencies delay service, increase error risks, and make it difficult for pharmacies and clinics to stay compliant or scale their services. To address these challenges, Signetic developed Signetic for Pharmacies, a suite of intelligent applications designed to streamline operations end to end. The suite helps pharmacies and clinics work faster, more efficiently, and with greater reliability, so staff can focus on patient care rather than paperwork.
 
 ## Solution
 
 ### Overview
 
-Signetic’s journey began with a mission to eliminate paperwork at pharmacies and clinics. During COVID‑19 pandemic, they rapidly expanded the platform to support mass-vaccination sites like Seattle’s Lumen Field, serving over 800,000 patients. Since then, the solution has evolved into an enterprise-grade platform that improves workflows across pharmacies, clinics, and community health providers. This system simplifies scheduling and documentation, reporting and claims processing, with AI agents augmenting labor-intensive tasks for billing operators.
+Signetic's journey began with a mission to eliminate paperwork at pharmacies and clinics. During the COVID‑19 pandemic, they rapidly expanded the platform to support mass-vaccination sites like Seattle's Lumen Field, serving over 800,000 patients. Since then, the solution evolved into an enterprise-grade platform that improves workflows across pharmacies, clinics, and community health providers. This system simplifies scheduling and documentation, reporting, and claims processing, with AI agents augmenting labor-intensive tasks for billing operators.
 
-The system is designed to provide tailored experiences through role-based apps and portals for patients, managers, staff, and billing operators. Behind the scenes, it integrates Power Platform, Copilot Studio and various Azure Services to provide a scalable, secure and extensible architecture. Signetic has also established a dedicated AI team responsible for model evaluation, prompt engineering, and identifying new opportunities to enhance and expand intelligent automation.
+The system provides tailored experiences through role-based apps and portals for patients, managers, staff, and billing operators. Behind the scenes, it integrates Power Platform, Copilot Studio, and various Azure services to provide a scalable, secure, and extensible architecture. Signetic also established a dedicated AI team responsible for model evaluation, prompt engineering, and identifying new opportunities to enhance and expand intelligent automation.
 
 ### Architecture
 
-The architecture brings together Power Platform, Copilot Studio and Azure Services to deliver a unified, scalable, secure and extensible system. Core components include:
+This architecture brings together Power Platform, Copilot Studio, and Azure services to deliver a unified, scalable, secure, and extensible system. Core components include:
 
 - Role-based portals and apps
   - React-based portal for patients to select services and schedule appointments
@@ -44,47 +44,47 @@ The architecture brings together Power Platform, Copilot Studio and Azure Servic
   - Copilot Studio agents embedded in apps to streamline billing and claims processes
   - Autonomous agents triggered by email to complete prior authorization workflows
 - Integration layer
-  - Azure App Services / APIs for communication between portals and Dataverse
-  - Dataverse plugins + Azure Service Bus for integration with third-party systems
-- Data, analytics and monitoring
+  - Azure App Services and APIs for communication between portals and Dataverse
+  - Dataverse plugins and Azure Service Bus for integration with third-party systems
+- Data, analytics, and monitoring
   - Dataverse as the primary OLTP data storage
-  - ETL Pipelines → Azure SQL Server for data warehouse and analytic
-  - Azure Log Analytics + Azure Application Insights for monitoring logs and app health
+  - ETL pipelines to Azure SQL Server for data warehouse and analytics
+  - Azure Log Analytics and Azure Application Insights for monitoring logs and app health
   - Azure Logic Apps for system alerts
   - Power BI for analytics and reporting
-  - Power Automate + Azure Functions for automated reporting
+  - Power Automate and Azure Functions for automated reporting
 
-The following diagram shows how these components work together across user experiences, agentic automation, data flows and integration points.
+The following diagram shows how these components work together across user experiences, agentic automation, data flows, and integration points.
 
 :::image type="content" source="media/signetic/signetic-architecture.png" alt-text="":::
 
 ### Technologies used
 
-The following sections summarize the technologies supporting the system.
+The following sections summarize the technologies that support the system.
 
 - User-facing experiences:
   - **Power Apps:**
     - Canvas apps: Staff view appointments and documents visit details.
     - Model-driven apps: Managers configure locations, services, and schedules. Billing operators manage billing and claims procedures.
-  - **Custom** **React-based portals:**
+  - **Custom React-based portals:**
     - Patients view, select services, and schedule appointments.
     - Managers and staff use a start page showing available apps.
-  - **Copilot Studio agent:** Conversational agent embedded in a model‑driven app, enabling staff to query claims data using natural language.
+  - **Copilot Studio agent:** Conversational agent embedded in a model‑driven app, enabling staff to query claims data by using natural language.
   - **Power BI dashboards:** Provide analytics and reporting to support informed decision‑making.
 
 - Internal communication:
-  - **Custom APIs built on Azure Services**: Manage communication between system components, ensuring secure and reliable data exchange.
+  - **Custom APIs built on Azure Services:** Manage communication between system components, ensuring secure and reliable data exchange.
   - *Example*: The Patient Portal API connects the patient portal with Dataverse.
 - External communication:
   - **Dataverse plugins:** Integrate with third‑party services such as healthcare clearinghouses and SMS providers.
   - **Azure Service Bus:** Manages message queuing to ensure consistent processing.
-  - **Power Automate + Azure Functions**: Triggered flows generate and deliver reports to the Centers for Disease Control and Prevention (CDC).
-  - **Azure Logic Apps**: For monitoring-related alerts.
+  - **Power Automate + Azure Functions:** Triggered flows generate and deliver reports to the Centers for Disease Control and Prevention (CDC).
+  - **Azure Logic Apps:** For monitoring-related alerts.
 
-- Data Storage:
-  - **Dataverse**: Serves as the primary data store.
-  - **ETL pipelines**: Transfer data into a centralized warehouse.
-  - **Azure SQL server**: Data warehouse, making data available for analytics.
+- Data storage:
+  - **Dataverse:** Serves as the primary data store.
+  - **ETL pipelines:** Transfer data into a centralized warehouse.
+  - **Azure SQL server:** Data warehouse, making data available for analytics.
 
 - Monitoring:
   - **Azure Log Analytics + Azure Application Insights:** For maintaining logs.
@@ -103,7 +103,7 @@ The system includes portals and apps designed for different roles:
 
 The overview portal serves as the central entry point for staff, managers, and billing operators. It provides quick access to the applications tailored to each role. Users can navigate to the patient portal, staff canvas app, or role-specific model-driven apps directly from this page.
 
-The following image shows the overview page for the fictive Owl Pharmacy and Clinic company. App links take the user to the applications/portals dedicated to each role.
+The following image shows the overview page for the fictive Owl Pharmacy and Clinic company. App links take the user to the applications and portals dedicated to each role.
 
 :::image type="content" source="media/signetic/overview-portal.png" alt-text="":::
 
@@ -129,15 +129,15 @@ The following image shows a service fulfillment.
 
 Some pharmacies and clinics have their own billing team, while others work with external billing companies or Signetic’s billing operations team. Most of the work is automated, such as checking claim eligibility and validating information.
 
-Billing operators oversee the work, monitor pending claims and claims placed on hold. They review claims, identify and fix errors, such as missing or incomplete information.
+Billing operators oversee the work and monitor pending claims and claims placed on hold. They review claims and identify and fix errors, such as missing or incomplete information.
 
-The following images show the model-driven app designed for billing operators, claims processing overview and claim details.
+The following images show the model-driven app designed for billing operators, claims processing overview, and claim details.
 
 :::image type="content" source="media/signetic/billingops-app.jpeg" alt-text="":::
 
 :::image type="content" source="media/signetic/billingops-app2.jpeg" alt-text="":::
 
-### Agents enhancing claims processing
+### Agents that enhance claims processing
 
 Two Copilot Studio agents enhance key billing and claim workflow. Together, they reduce manual work, identify errors faster, and support both staff and patients through natural language interactions. The following diagram gives an overview of the two agents.
 
@@ -145,33 +145,33 @@ Two Copilot Studio agents enhance key billing and claim workflow. Together, they
 
 #### Billing Ops Agent
 
-The Billing Ops Agent is a conversational agent built with Copilot Studio, embedded directly inside the Billing Operations portal (model-driven app) and supports billing operators as they review and resolve claims. Key capabilities include:
+The Billing Ops Agent is a conversational agent built with Copilot Studio. The agent is embedded directly inside the Billing Operations portal (model-driven app) to support billing operators as they review and resolve claims. Key capabilities include:
 
-- Answers claims related questions from billing operators
+- Answers claims related questions from billing operators.
 
-- Retrieves live (claims) data from Dataverse
+- Retrieves live claims data from Dataverse.
 
-- Uses uploaded files as knowledge source to provide explanations
+- Uses uploaded files as knowledge source to provide explanations.
 
-- Provides step-by-step guidance for common tasks
+- Provides step-by-step guidance for common tasks.
 
 The agent opens when the chat icon in the bottom right corner of the app is selected. The following image shows the Billing Ops Agent with predefined prompts.
 
 :::image type="content" source="media/signetic/billingops-agent.png" alt-text="":::
 
-Example usage: If a claim is marked unprocessed, the billing operator can open it and ask: “Why is this claim unprocessed?”. If a claim is rejected, the billing operator can ask “Why was this claim rejected”. The following image shows the agent being tested in Copilot Studio.
+Example usage: If a claim is marked unprocessed, the billing operator can open it and ask: "Why is this claim unprocessed?". If a claim is rejected, the billing operator can ask "Why was this claim rejected". The following image shows the agent being tested in Copilot Studio.
 
 :::image type="content" source="media/signetic/billingops-agent2.jpeg" alt-text="":::
 
-The agent combines: Dataverse claim records (real-time status with details) and uploaded guidance documents with reasons for unprocessed claims. It then creates a clear explanation and recommends next steps. The agent also functions as a support assistant. For example, the operator can ask: “How do I create a task?” The agent returns procedural guidance aligned with internal policies.
+The agent combines Dataverse claim records (real-time status with details) and uploaded guidance documents with reasons for unprocessed claims. It then creates a clear explanation and recommends next steps. The agent also functions as a support assistant. For example, the operator can ask: "How do I create a task?" The agent returns procedural guidance aligned with internal policies.
 
-The agent has been given the following instructions to ensure consistent and easy-to-follow responses.
+The agent has the following instructions to ensure consistent and easy-to-follow responses.
 
 :::image type="content" source="media/signetic/billingops-agent-instructions.jpeg" alt-text="":::
 
 #### Send Prior Auth Agent
 
-Prior authorization is required by many insurance providers before certain procedures or medications can be provided. Traditionally, this process involves manual form completion, lengthy back-and-forth communication, and risk of errors. The Send Prior Auth agent – an autonomous agent built with Copilot Studio automates this workflow end to end. When a patient’s e‑mail arrives, the **Send Prior Auth Agent** is triggered. It retrieves data from the Dataverse contact and appointment tables via the Dataverse MCP server, and applies agent flows, including AI prompts, to compose and send the prior authorization to the insurance provider. The agent is designed to:
+Many insurance providers require prior authorization before certain procedures or medications can be provided. Traditionally, this process involves manual form completion, lengthy back-and-forth communication, and risk of errors. The Send Prior Auth agent – an autonomous agent built with Copilot Studio – automates this workflow end to end. When a patient's e-mail arrives, the **Send Prior Auth Agent** is triggered. It retrieves data from the Dataverse contact and appointment tables via the Dataverse MCP server, and applies agent flows, including AI prompts, to compose and send the prior authorization to the insurance provider. The agent is designed to:
 
 - Verify information and request missing details (full name and date of birth).
 
@@ -181,37 +181,37 @@ Prior authorization is required by many insurance providers before certain proce
 
 - Confirm the destination for sending the prior authorization.
 
-- Generate a composed e‑mail with the retrieved information in a pre-filled form, ready to be sent to the insurance provider.
+- Generate a composed e-mail with the retrieved information in a prefilled form, ready to be sent to the insurance provider.
 
 The following image shows an example of the composed e-mail:
 
 :::image type="content" source="media/signetic/authagent-email.jpeg" alt-text="":::
 
-The following image shows the agent tested in Copilot Studio using the Dataverse MCP server to retrieve knowledge from Dataverse, an approach that improved retrieval accuracy. improved retrieval accuracy.
+The following image shows the agent tested in Copilot Studio using the Dataverse MCP server to retrieve knowledge from Dataverse, an approach that improved retrieval accuracy.
 
 :::image type="content" source="media/signetic/auth-agent.jpeg" alt-text="":::
 
-The agent’s general instructions:
+The agent's general instructions:
 
 :::image type="content" source="media/signetic/authagent-instructions.png" alt-text="":::
 
-The Send Prior Auth Agent also supports Signetic’s Durable Medical Equipment service by generating prior authorization forms using data from the Dataverse product order tables.
+The Send Prior Auth Agent also supports Signetic's Durable Medical Equipment service by generating prior authorization forms using data from the Dataverse product order tables.
 
 Signetic’s solution delivers measurable operational improvements across clinics, pharmacies, and billing operations by modernizing core workflows and enabling Agentic experiences.
 
 - Streamlined operations: Unified workflows reduce manual effort for clinic staff and billing teams.
-- Faster claims resolution: Agents help identify issues and resolve claims efficiently.
+- Faster claims resolution: Agents help identify problems and resolve claims efficiently.
 - Improved patient experience: Self-service scheduling provides a simple and convenient access point for patients.
 - Consistent and reliable data: Centralized data in Dataverse ensures accuracy across applications and processes.
 - Built for scale: The enterprise-ready architecture supports expansion and future AI-driven enhancements.
 
 ## Looking ahead
 
-Signetic is expanding the use of AI-powered data extraction and patient record creation. While these capabilities are currently used internally by developers, the next phase is to integrate them into the core application suite so clinics and operational teams can benefit directly.
+Signetic is expanding the use of AI-powered data extraction and patient record creation. While developers currently use these capabilities internally, the next phase is to integrate them into the core application suite so clinics and operational teams can benefit directly.
 
-Signetic also plans to further modernize the authorization process for the billing operations team. Because each insurance provider uses different portals and templates, the company is extending its solution to automatically retrieve, populate and submit the appropriate forms - supporting a wider variety of formats and enabling direct uploads to portals.
+Signetic also plans to further modernize the authorization process for the billing operations team. Because each insurance provider uses different portals and templates, the company is extending its solution to automatically retrieve, populate, and submit the appropriate forms - supporting a wider variety of formats and enabling direct uploads to portals.
 
-Together, these initiatives reinforce Signetic’s commitment to infusing AI throughout its platform – evolving its applications into intelligent, adaptive tools that help pharmacies and clinics scale, operate more efficiently and function as modern community health hubs.
+Together, these initiatives reinforce Signetic’s commitment to infusing AI throughout its platform – evolving its applications into intelligent, adaptive tools that help pharmacies and clinics scale, operate more efficiently, and function as modern community health hubs.
 
 ## Takeaways
 
@@ -219,11 +219,11 @@ Here are some key takeaways:
 
 - Design role-based portals and applications to simplify workflows and give each user the right tools.
 - Embed Copilot Studio agents to deliver natural-language support and task guidance.
-- Automate routine tasks, such as gathering details for prior authorizations, eligibility checks and claims submission to reduce errors and increase efficiency.
-- Integrate automated reporting to meet regulatory requirements and reduce manual effort.
+- Automate routine tasks, such as gathering details for prior authorizations, eligibility checks, and claims submission to reduce errors and increase efficiency.
+- Integrate automated reporting meeting regulatory requirements and reduce manual effort.
 - Continuously evolve AI capabilities by testing new prompts, models, and automation scenarios.
 
-*“Our billing operators are now able to process claims at a much faster rate, handle errors more efficiently, and manage documents seamlessly. AI from Copilot Studio and the Power Platform is bringing real intelligence into Signetic’s workflows, letting our teams focus on delivering value instead of repetitive tasks.”* Chandika Bhandari, Founder and CEO, Signetic.
+*"Our billing operators can now process claims at a much faster rate, handle errors more efficiently, and manage documents seamlessly. AI from Copilot Studio and the Power Platform brings real intelligence into Signetic’s workflows, letting our teams focus on delivering value instead of repetitive tasks."* Chandika Bhandari, Founder and CEO, Signetic.
 
 *"With Copilot Studio and the Power Platform, we’ve been able to create smarter, grounded solutions quickly. Dataverse and MCP take care of the heavy lifting, empowering us to focus on delivering real value and infusing true intelligence into Signetic’s workflows without getting bogged down in API calls or data checks."* Summit Bajracharya, Solutions Architect, Signetic.
 
