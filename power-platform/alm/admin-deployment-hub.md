@@ -3,7 +3,7 @@ title: Admin deployment page
 description: Manage ALM in the admin center.
 author: matp123
 ms.subservice: alm
-ms.author: asheehi
+ms.author: matp
 ms.custom: NewPPAC
 ms.reviewer: matp
 ms.topic: overview
