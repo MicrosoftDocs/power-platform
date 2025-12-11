@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 09/23/2025
+ms.date: 12/09/2025
 ms.topic: concept-article
 author: SatishKumarkannanMs
 contributors:
@@ -13,7 +13,7 @@ contributors:
   - LaurentPepin 
 ms.contributors: ralinga
 ms.subservice: admin
-ms.author: satishk
+ms.author: fatihk
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -381,7 +381,7 @@ Only production and sandbox environments are supported. Default, developer, tria
 
 #### Will the environment physically move to the new tenant?
 
-No. The environment remains in place, but the Dataverse organization is moved to the destination tenant. It's no longer part of the source tenant and is managed under the new environment in the destination tenant.
+No. The environment remains in place, but the Dataverse organization is moved to the destination tenant. It's no longer part of the source tenant and is managed under the new environment in the destination tenant. Data that is stored in Dataverse is still stored in the environment in your tenant. The orphan environment should therefore be deleted when the tenant-to-tenant move is completed and it's confirmed that the data is no longer needed in the source tenant. 
 
 #### Are there any components that aren't fully supported?
 
@@ -396,5 +396,4 @@ If the mapped user (mentioned in the user-mapping file) has a mailbox in the des
 The source tenant’s Dynamics 365 or Power Platform admin must submit a request using PowerShell commands with the environment name, ID, and tenant ID. Refer to the commands above.
 
 #### Is there a self-serve UI option?
-
-No, currently we don't support the Power Platform admin center UI for tenant-to-tenant migration. It can only be done by PowerShell.
+Yes. After the TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID} is approved in the target tenant, a UI option to move the environment is available in the environment page. 

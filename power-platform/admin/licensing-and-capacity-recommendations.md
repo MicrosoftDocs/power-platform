@@ -3,7 +3,7 @@ title: View licensing and capacity recommendations
 description: Learn how the actions page helps admins manage licenses and capacity with weekly recommendations for better efficiency.
 author: sidhartg
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sidhartg

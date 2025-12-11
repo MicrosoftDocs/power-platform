@@ -1,5 +1,5 @@
 ---
-title: "Copy a security role  | MicrosoftDocs"
+title: Copy a security role
 description: Copy a security role
 author: paulliew
 ms.subservice: admin
@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/19/2025
+ms.date: 12/09/2025
 contributors: matp
 search.audienceType: 
   - admin
@@ -36,7 +36,7 @@ If you want to create a security role that is similar to another security role, 
 
 1. In the **Manage** pane, select **Environments**.
   
-1. On the **Environments** page, select an environment. 
+1. On the **Environments** page, select an environment.
 
 1. Select **Settings** > **Users + permissions** > **Security roles**.  
   
@@ -50,16 +50,15 @@ If you want to create a security role that is similar to another security role, 
 
 ## A copied system customizer security role might not provide the same access
 
-Users with a copied system customizer security role can view, create, or edit metadata or data for a table *when granted by a user with system administrator privileges for that specific table*. More information: [Edit a security role](create-edit-security-role.md#edit-a-security-role)
+Users with a copied system customizer security role can view, create, or edit metadata or data for a table *when granted by a user with system administrator privileges for that specific table*. Read [Edit settings of a security role](create-edit-security-role.md#edit-settings-of-a-security-role)to learn more.
 
 Some features in Power Apps (make.powerapps.com), like [data workspace](/power-pages/getting-started/use-data-workspace) and [start with Copilot](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel#start-with-copilot), require a specific out-of-box role due to their dependency on data access.
 
 ### See also
 
-[Security concepts](../admin/wp-security-cds.md)   
-[Security roles](../admin/security-roles-privileges.md)   
+[Security concepts](../admin/wp-security-cds.md)
+[Security roles](../admin/security-roles-privileges.md)
 [Field-level security](../admin/field-level-security.md)
 [Prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
