@@ -181,8 +181,6 @@ The copy process, especially for environments with large amounts of data, is a c
 
 Copying audit logs can significantly add to the time it takes to copy an environment and by default isn't done. To include audit logs in the environment copy, perform these steps.
 
-##### [New admin center](#tab/new)
-
 1. Complete the steps 1-6 in [How to copy an environment](#how-to-copy-an-environment).
 
 2. Under **Audit logs**, select **Change this**.
@@ -194,20 +192,6 @@ Copying audit logs can significantly add to the time it takes to copy an environ
    :::image type="content" source="media/copy-environment/copy-environment-audit-logs-enable-new.png" alt-text="Enable copying audit logs in the admin center.":::
 
 4. Continue with the steps 7-10 in [How to copy an environment](#how-to-copy-an-environment).
-
-##### [Classic admin center](#tab/classic)
-
-1. Complete the Classic Admin Center steps 1-5 in [How to copy an environment](#how-to-copy-an-environment).
-
-2. Under **Audit logs**, select **Click here**.
-
-   :::image type="content" source="media/copy-environment/copy-environment-audit-logs.png" alt-text="Select click here to include audit logs.":::
-
-3. Enable copying audit logs.
-
-   :::image type="content" source="media/copy-environment/copy-environment-audit-logs-enable.png" alt-text="Enable copying audit logs.":::
-
-4. Continue with the Classic Admin Center steps 6-9 in [How to copy an environment](#how-to-copy-an-environment).
 
 ### Next steps after copying an environment
 

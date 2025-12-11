@@ -193,7 +193,6 @@ You can indicate how often you prefer an environment to receive updates and feat
 
 ### Set refresh cadence
 
-### [Modern admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
@@ -201,16 +200,6 @@ You can indicate how often you prefer an environment to receive updates and feat
 1. Select **Edit**.
 1. Under **Refresh cadence**, select the desired cadence type.
 1. Select **Save** to apply the changes.
-   
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. Select **Edit**.
-1. Under **Refresh cadence**, select the desired cadence type.
-1. Select **Save** to apply the changes.
----
 
 The refresh cadence doesn't change when you receive updates for:
 
