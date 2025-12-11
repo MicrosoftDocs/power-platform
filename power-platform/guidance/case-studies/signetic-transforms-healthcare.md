@@ -167,7 +167,7 @@ The agent combines Dataverse claim records (real-time status with details) and u
 
 The agent has the following instructions to ensure consistent and easy-to-follow responses.
 
-:::image type="content" source="media/signetic/billingops-agent-instructions.jpeg" alt-text="Screenshot of the agent instructions":::
+:::image type="content" source="media/signetic/billingops-agent-instructions.jpg" alt-text="Screenshot of the agent instructions":::
 
 #### Send Prior Auth Agent
 
@@ -185,11 +185,11 @@ Many insurance providers require prior authorization before certain procedures o
 
 The following image shows an example of the composed e-mail:
 
-:::image type="content" source="media/signetic/authagent-email.jpeg" alt-text="Screenshot of an example email composed by the agent":::
+:::image type="content" source="media/signetic/authagent-email.jpg" alt-text="Screenshot of an example email composed by the agent":::
 
 The following image shows the agent tested in Copilot Studio using the Dataverse MCP server to retrieve knowledge from Dataverse, an approach that improved retrieval accuracy.
 
-:::image type="content" source="media/signetic/auth-agent.jpeg" alt-text="Screenshot of the agent in Copilot Studio":::
+:::image type="content" source="media/signetic/auth-agent.jpg" alt-text="Screenshot of the agent in Copilot Studio":::
 
 The agent's general instructions:
 
