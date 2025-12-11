@@ -44,7 +44,6 @@ If you must use one of the below apps or features in an environment where block 
 
 | App or feature  | Limitation  |
 |---------|---------|
-| Power Automate desktop flows     |  Hosted machine groups don't work.       |
 | Dynamics 365 Resource Scheduling Optimization    |   Install or upgrade don't work.       |
 |Automatic record creation     |  Activation, deactivation, and editing of automatic record creation doesn't work.        |
 | Legacy workflows     |  Enable and disable of legacy workflows doesn't work.       |
