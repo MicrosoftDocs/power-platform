@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 09/22/2025
+ms.date: 12/11/2025
 ---
 
 # Power Automate reference architectures and solution ideas

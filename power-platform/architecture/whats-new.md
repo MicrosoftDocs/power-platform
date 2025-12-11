@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 12/09/2025
+ms.date: 12/11/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -18,13 +18,11 @@ ms.custom:
 
 Get the latest info about what's new and what's changed in the Power Platform and Copilot Studio Architecture Center.
 
-## October 2025
+## December 2025
 
 New in [Architecture key concepts](key-concepts/index.md):
 
 - [Cloud flow integration patterns: Design scalable integrations with Power Automate](key-concepts/integration-patterns/index.md)
-
-## December 2025
 
 New in [Reference architectures](reference-architectures/index.md):
 
