@@ -40,7 +40,7 @@ You can delete an environment to recover storage space and to remove Personally 
 
 6. Select the ellipsis next to the environment to delete, and select **Delete**.
 
-  :::image type="content" source="media/delete-environment-updated-new.png" alt-text="Delete a selected environment in the new admin center.":::
+  :::image type="content" source="media/delete-environment-updated-new.png" alt-text="Delete a selected environment in the admin center.":::
 
 4. Provide the confirmation data and then select **Confirm**.
 
