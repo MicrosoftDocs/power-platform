@@ -1,8 +1,8 @@
 ---
 title: Create pipelines using the platform host
 description: Learn how to create personal pipelines from your development environments to other target environments that you have import access to.
-author: asheehi1
-ms.author: asheehi
+author: caburk
+ms.author: caburk
 ms.reviewer: matp
 ms.topic: how-to
 ms.date: 12/12/2025
