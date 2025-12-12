@@ -17,11 +17,11 @@ search.audienceType:
 The finance and operations storage capacity report shows how much finance and operations storage your organization is using compared with how much its license entitles it to.
 
 > [!IMPORTANT]
-> This report helps you manage your storage more effectively. If you use more storage than your plan includes, please remove data you don’t need or buy more storage.
+> This report helps you manage your storage more effectively. If you use more storage than your plan includes, please remove data you don't need or buy more storage.
 >
 > Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
 >
-> The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
+> The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization's use of the online service, including consumption that exceeds the online service's documented entitlements or usage limits.
 >
 > Your organization must have the right licenses for the storage you use: 
 > - If you use more than your documented entitlements or usage limits, you must buy additional licenses. 
@@ -89,7 +89,7 @@ Legacy storage model:
 
 :::image type="content" source="media/finance-operations-overage-legacy-model.png" alt-text="Screenshot of the Summary page in the legacy storage model, with a capacity deficit shown.":::
 
-If your organization has a storage capacity deficit, you can delete unneeded environments and data or buy more capacity. Learn more about finance and operations capacity add-ons in the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365). Work through your organization’s standard procurement process to purchase finance and operations capacity add-ons.
+If your organization has a storage capacity deficit, you can delete unneeded environments and data or buy more capacity. Learn more about finance and operations capacity add-ons in the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365). Work through your organization's standard procurement process to purchase finance and operations capacity add-ons.
 
 Learn how to clean up your finance and operations data:
 
@@ -110,7 +110,7 @@ Finance and operations entitlement includes default capacity entitlement plus ac
 
 This is due to a change in December 2023, where the Operations Database Capacity (Accrued/USL) was increased from 1.5 GB to 4 GB. For more details on how base entitlement calculation works, go to the Capacity Licenses section of the [Dynamics 365 License Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365).
 
-### Why don’t I see which tables are causing the overage?  
+### Why don't I see which tables are causing the overage?  
 
 Details at the table level aren't available in the initial launch of reporting. Table analytics are planned for a future release.
 
