@@ -4,7 +4,7 @@ description: Learn about Usage in the Power Platform admin center.
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/14/2025
+ms.date: 12/12/2025
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -43,7 +43,7 @@ At the top of the page, a summary view showcases the adoption and usage trends. 
   - **Power Apps**: Active users  
   - **Power Automate**: Flow runs  
   - **Copilot Studio**: Agent sessions  
-- **High-value resources** – Identify the top 3 apps, flows, and agents driving the most impact.
+- **High-value resources** – Identify the top three apps, flows, and agents driving the most impact.
 
 Below the summary view, detailed tables provide sortable views of all apps, flows, and agents that are in use in your organization. Sort by users for apps, runs for flows, and sessions for agents to quickly identify trends and top performers.
 
