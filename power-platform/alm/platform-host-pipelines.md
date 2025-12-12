@@ -5,7 +5,7 @@ author: asheehi1
 ms.author: asheehi
 ms.reviewer: matp
 ms.topic: how-to
-ms.date: 01/06/2025
+ms.date: 12/12/2025
 ms.custom: template-how-to
 contributors:
 - asheehi1
@@ -101,7 +101,7 @@ There are three teams:
 - **Deployment Pipeline Users**. These users can trigger a pipeline that is shared with them. Deployment Pipeline Users also have read access to all deployment stage runs within the same business unit.
 
 > [!IMPORTANT] 
-> - In the platform host, when makers use personal pipelines they're atomatically added to the **Deployment Pipeline Makers** team with the **Deployment Pipeline Default** role. Administrators can set a [default custom host](set-a-default-pipelines-host.md) to ovverride maker access to personal pipelines in the platform host. 
+> - In the platform host, when makers use personal pipelines they're atomatically added to the **Deployment Pipeline Makers** team with the **Deployment Pipeline Default** role. Administrators can set a [default custom host](set-a-default-pipelines-host.md) to override maker access to personal pipelines in the platform host. 
 
 ## Frequently asked questions
 
