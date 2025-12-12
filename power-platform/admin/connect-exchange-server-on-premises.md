@@ -57,7 +57,9 @@ With version 9.0, you can connect your customer engagement apps (such as [Dynami
 1. Expand **Email**, then select **Server profiles**.
 1. In the command bar, select **New server profile**.
 
-### In the Set up server profile panel
+### Set up server profile panel
+
+In the **Set up server profile** panel, take the following steps:
 
 1. For **Email Server Type**, select **Exchange Server (on premises)**, then enter a meaningful **Name** for the profile.
 2. To set this server profile as the default for new mailboxes, enable **Set as default profile for new mailboxes**.
