@@ -20,6 +20,7 @@ search.audienceType:
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Overview
+
 Advanced connector policies (ACP) represent the next generation of securing connector usage within the Power Platform. This feature provides a modern and flexible approach to managing all [certified connectors](/power-platform/admin/dlp-connector-classification), aligning with the broader governance strategy of per-environment security controls paired with [environment group support](../admin/environment-groups.md).
 
 By adopting advanced connector policies, administrators gain greater control and granularity in securing and managing connector usage while enhancing the overall governance of their Power Platform environments.
@@ -55,35 +56,35 @@ During publishing, an environment lifecycle operation is performed on every envi
 
 ### More visibility and control
 
-In [data policies](managed-environment-data-policies.md) customers couldn't see triggers, internal actions, or if an action is deprecated.  We have added these tags across all certified connectors so that administrators can quickly decide to block specific triggers from use or turn off actions that are deprecated and no longer supported by the connector publisher.
+In [data policies](managed-environment-data-policies.md), customers couldn't see triggers, internal actions, or if an action is deprecated.  By adding these tags across all certified connectors, administrators can quickly decide to block specific triggers from use or turn off actions that are deprecated and no longer supported by the connector publisher.
 
 :::image type="content" source="media/advanced-connector-policies-2.png" alt-text="Admins can quickly decide to block specific triggers from use or turn off actions that are deprecated and no longer supported." lightbox="media/advanced-connector-policies-2.png":::
 
 ### Easier management experience
 
-Based on customer feedback, we drastically simplified the management experience by making the policy a strict allowlist. When configured, all new connectors are blocked. If you configure the allowed actions on a given connector, then no new actions, triggers, or internal actions are allowed. The concept of the business and nonbusiness categories in data policies haven't been brought forward, as it wasn't deemed effective in policy management.  
+Based on customer feedback, the management experience is drastically simplified by making the policy a strict *allowlist*. When configured, all new connectors are blocked. If you configure the allowed actions on a given connector, then no new actions, triggers, or internal actions are allowed. The concept of the business and nonbusiness categories in data policies isn't brought forward, as it wasn't deemed effective in policy management.  
 
 ### Proactive policy management
 
-Advanced connector policies have shipped as part of environment groups and rules. These have publicly documented APIs available on [Power Platform API](/rest/api/power-platform/environmentmanagement/environment-groups) so that you can build automated scenarios such as creating new policies, updating policies, and moving environments in to groups for management at scale. 
+Advanced connector policies are available as part of environment groups and rules. The [Power Platform API](/rest/api/power-platform/environmentmanagement/environment-groups) provides publicly documented APIs so you can build automated scenarios such as creating new policies, updating policies, and moving environments into groups for management at scale.
 
 ### Model Context Protocol (MCP) server management
 
 Advanced connector policies now support visibility and management of Model Context Protocol (MCP) servers. MCP servers are special connector endpoints that expose MCP-enabled APIs and tooling capabilities within Power Platform.
 
-Within advanced connector policies, administrators can now see MCP servers listed alongside other connector types and may choose to block an entire MCP server. As of now, granular control over individual MCP tools (endpoints and actions) within an MCP server isn't available. Blocking the entire MCP server is supported.
+Within advanced connector policies, administrators can now see MCP servers listed alongside other connector types and can choose to block an entire MCP server. As of now, granular control over individual MCP tools (endpoints and actions) within an MCP server isn't available. Blocking the entire MCP server is supported.
 
 :::image type="content" source="media/block-mcp.png" alt-text="Block MCP server in advanced connector policies.":::
 
 ## Data policy mixed mode
 
-Advanced connector policies (ACP) can be used in mixed mode with classic data policies. This allows for complimenting configurations to be made such that data policies can achieve action control and endpoint filtering until such time as those features are native to ACP.  In addition, you can use ACP to block any connector that isn't possible in classic data policies.  
+Use advanced connector policies (ACP) in mixed mode with classic data policies. This approach allows you to complement configurations so that data policies can achieve action control and endpoint filtering until such time as those features are native to ACP. In addition, you can use ACP to block any connector that isn't possible in classic data policies.  
 
-At runtime, when a connector operation is invoked, it queries the effective policy for the current hosting environment. This includes a combined policy that merges the most restrictive settings from both classic data policies and ACP to provide full enforcement.
+At runtime, when a connector operation is invoked, it queries the effective policy for the current hosting environment. This query includes a combined policy that merges the most restrictive settings from both classic data policies and ACP to provide full enforcement.
 
 In the future, a separate rule will become available to allow you to skip data policy evaluation in favor of only relying upon connector policy.  
 
 ## Provide feedback
 
-Trying out the new advanced connector policies? We would love your feedback! Join our Viva Engage network for keeping the conversation going under non-disclosure agreement:
+Trying out the new advanced connector policies? The product team would love your feedback! Join the Viva Engage network for keeping the conversation going under non-disclosure agreement:
 [Public Preview - Advanced Connector Policies](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=215134347264&view=all).
