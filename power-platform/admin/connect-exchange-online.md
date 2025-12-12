@@ -4,9 +4,9 @@ description: Learn what you need to do to get Exchange ready and connect to Exch
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 06/27/2025
-author: rahulmital 
+author: sericks007 
 ms.subservice: admin
-ms.author: rahulmital
+ms.author: sericks
 ms.contributors:
   - yingchin
   - sericks
@@ -48,23 +48,22 @@ Make sure you have the System Administrator security role or equivalent permissi
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Server profiles**.
+1. On the command bar, select **New server profile**.
+1. For **Email Server Type**, select **Exchange Online**, and then enter a meaningful **Name** for the profile.
 
-6. On the command bar, select **New server profile**.
-7. For **Email Server Type**, select **Exchange Online**, and then enter a meaningful **Name** for the profile.
+    :::image type="content" source="media/connect-exchange-online/set-up-server-profile.png" alt-text="Set up the server profile.":::
 
-:::image type="content" source="media/connect-exchange-online/set-up-server-profile.png" alt-text="Set up the server profile.":::
+1. If you want to use this server profile as the default profile for new mailboxes, turn on **Set as default profile for new mailboxes**.
 
-8. If you want to use this server profile as the default profile for new mailboxes, turn on **Set as default profile for new mailboxes**.
-
-9. For **Authentication Type**, choose one of the following:
+1. For **Authentication Type**, choose one of the following:
 
     - **Server-to-Server Authentication (Same Tenant)**: Use this option when Exchange resides in the same tenant as Dynamics 365. More information: [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication)
 
     - **Oauth (Cross Tenant)**: Use this option when Exchange resides in a different tenant than Dynamics 365. To get the information for this option, follow the steps in [Exchange Online cross-tenant authentication](connect-exchange-online-server-profile-oauth.md). The **Locations and ports** fields are automatically populated.
 
-10. Expand the **Advanced** section, and then use the tooltips to choose your email processing options.
+1. Expand the **Advanced** section, and then use the tooltips to choose your email processing options.
 
-11. When you're done, select **Save** to apply the changes.
+1. When you're done, select **Save** to apply the changes.
 
 ## Verify that you have the profile Microsoft Exchange Online
 
@@ -77,10 +76,8 @@ To verify you have this profile:
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Server profiles**.
-
-6. Verify that the **Microsoft Exchange Online** profile is in the list. If the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile is missing, verify that you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription and that it exists in the same tenant as your subscription.  
-  
-7. If there are multiple profiles, select the **Microsoft Exchange Online** profile and set it as default.  
+1. Verify that the **Microsoft Exchange Online** profile is in the list. If the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile is missing, verify that you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription and that it exists in the same tenant as your subscription.
+1. If there are multiple profiles, select the **Microsoft Exchange Online** profile and set it as default.  
 
 ## Configure default email processing and synchronization
 
@@ -91,15 +88,14 @@ Set server-side synchronization to be the default configuration method for newly
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Email settings**.
-
-6. Set the **Synchronization methods** columns as follows:  
+1. Set the **Synchronization methods** columns as follows:  
   
    - **Server Profile**: [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)]  
    - **Incoming Email**: Server-Side Synchronization or Email Router  
    - **Outgoing Email**: Server-Side Synchronization or Email Router  
    - **Appointments, Contacts, and Tasks**: Server-Side Synchronization
   
-7. Select **Save** to apply the changes.  
+1. Select **Save** to apply the changes.  
   
 All new users have these settings applied to their mailbox.  
 
@@ -114,10 +110,9 @@ In addition to administrator permissions, you must have Read and Write privilege
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Mailboxes**.
-
-6. Select **Active Mailboxes** from the grid view selection list.
-7. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile.
-8. Select **Apply Default Email Settings** in the top command bar, verify the settings, then select **OK**.  
+1. Select **Active Mailboxes** from the grid view selection list.
+1. Select all the mailboxes that you want to associate with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile.
+1. Select **Apply Default Email Settings** in the top command bar, verify the settings, then select **OK**.  
   
 By default, the mailbox configuration is tested and the mailboxes enabled when you select **OK**.  
   
@@ -128,15 +123,14 @@ By default, the mailbox configuration is tested and the mailboxes enabled when y
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Mailboxes**.
-
-6. Select **Active Mailboxes** from the grid view selection list.  
-7. Select the mailboxes that you want to configure, then select **Edit** in the top command bar.  
-8. Under the **General** tab, set the **Synchronization methods** columns as follows:  
+1. Select **Active Mailboxes** from the grid view selection list.  
+1. Select the mailboxes that you want to configure, then select **Edit** in the top command bar.  
+1. Under the **General** tab, set the **Synchronization methods** columns as follows:  
    - **Server Profile**: [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)]  
    - **Incoming Email**: Server-Side Synchronization or Email Router  
    - **Outgoing Email**: Server-Side Synchronization or Email Router
    - **Appointments, Contacts, and Tasks**: Server-Side Synchronization
-9. Select **Save** in the command bar to apply your changes.
+1. Select **Save** in the command bar to apply your changes.
   
 ## Approve email  
 
@@ -280,10 +274,9 @@ To approve emails, a Dynamics 365 user requires the **Approve Email Addresses fo
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Users + permissions**, then select **Security roles**.
-
-6. Select a security role, then go to the **Miscellaneous Privileges** tab.
-7. Select the **Show only unassigned privileges** view.
-8. Select **Approve Email Addresses for Users or Queues** and set the **privilege** level.
+1. Select a security role, then go to the **Miscellaneous Privileges** tab.
+1. Select the **Show only unassigned privileges** view.
+1. Select **Approve Email Addresses for Users or Queues** and set the **privilege** level.
 
 :::image type="content" source="media/connect-exchange-online/approve-email-address-for-user-queues.png" alt-text="Approve email address for user or queues.":::
 
@@ -298,14 +291,13 @@ You can use a manual or programmatic processes to approve a mailbox.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Mailboxes**.
-
-6. Select the **Active Mailboxes** grid view to show the list of mailboxes.  
-7. Select the mailboxes that you want to approve, then select **Approve Email** from the command bar.  
-8. Select **OK** to apply the changes.
+1. Select the **Active Mailboxes** grid view to show the list of mailboxes.  
+1. Select the mailboxes that you want to approve, then select **Approve Email** from the command bar.  
+1. Select **OK** to apply the changes.
 
 ##### Approve a mailbox programmatically
   
-Email addresses can't be approved using plug-ins or workflows. External applications can programmatically invoke email address approval by including the _emailrouteraccessapproval_ attribute in the SDK request, provided the record isn't already approved and the caller meets the required authorization criteria.
+Email addresses can't be approved using plug-ins or workflows. External applications can programmatically invoke email address approval by including the `emailrouteraccessapproval` attribute in the SDK request, provided the record isn't already approved and the caller meets the required authorization criteria.
 
 ### Remove the requirement to approve mailboxes
 
@@ -316,10 +308,8 @@ Admins, as described in the preceding permissions model table, can change the se
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Email settings**.
-
-6. Under **Security and permissions**, turn off **Process emails only for approved users** and **Process emails only for approved queues**. (These settings are enabled by default.)
-
-7. Select **Save** to apply the changes
+1. Under **Security and permissions**, turn off **Process emails only for approved users** and **Process emails only for approved queues**. (These settings are enabled by default.)
+1. Select **Save** to apply the changes
 
 ## Test the configuration of mailboxes  
 
@@ -328,9 +318,8 @@ Admins, as described in the preceding permissions model table, can change the se
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Mailboxes**.
-
-6. Select the **Active Mailboxes** grid view to show the list of mailboxes.  
-7. Select the mailboxes you want to test, then select **Test & Enable Mailbox** from the command bar. You also have the option to select a _mailbox link_, then select **Test & Enable Mailbox** from the command bar.
+1. Select the **Active Mailboxes** grid view to show the list of mailboxes.  
+1. Select the mailboxes you want to test, then select **Test & Enable Mailbox** from the command bar. You also have the option to select a _mailbox link_, then select **Test & Enable Mailbox** from the command bar.
 
 :::image type="content" source="media/connect-exchange-online/test-email-configuration.png" alt-text="Test email configuration, select start date, and view configuration details." lightbox="media/connect-exchange-online/test-email-configuration.png":::
 
@@ -352,8 +341,8 @@ Make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../inclu
 To connect Dynamics 365 with your Exchange Online tenant in China and use server-side synchronization functionality, follow these steps:
 
 1. If your org was provisioned before October 17, 2020, contact 21Vianet support to allow your org to connect to Exchange Online. If your org was provisioned after October 17, 2020, this step isn't required.
-2. Run the following PowerShell script to point your Exchange Online email server profile to the required Exchange Web Services (EWS) endpoint.
-3. Configure the mailbox, and then test and enable the mailbox.
+1. Run the following PowerShell script to point your Exchange Online email server profile to the required Exchange Web Services (EWS) endpoint.
+1. Configure the mailbox, and then test and enable the mailbox.
 
 Use the following PowerShell script to change the EWS endpoint:
 

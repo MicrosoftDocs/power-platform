@@ -1,15 +1,15 @@
 ---
 title: Use Entra Privileged Identity Management in Power Platform admin center to manage high-privileged admin roles 
 description: Use Microsoft Entra Privileged Identity Management to manage high-privileged admin roles.
-author: srpoduri 
+author: sericks007
 ms.subservice: admin
-ms.author: sripod
+ms.author: sericks
 contributor: yingchin
 ms.reviewer: ellenwehrle
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: how-to
-ms.date: 06/13/2025
+ms.date: 12/12/2025
 search.audienceType: admin
 ms.custom:
   - NewPPAC
@@ -43,7 +43,7 @@ These admins can't perform activities that require direct access to Dataverse da
 
 > [!IMPORTANT]
 > Global admins, Power Platform admins, and Dynamics 365 service administrators must complete another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the **System Administrator** role in the environment where they need access. All elevation actions are logged to Microsoft Purview.
-> 
+>
 > If you use Privileged Identity Management to get just-in-time access to admin roles in Microsoft Entra ID and then self-elevate, Microsoft removes your **System Administrator** role when role assignment expires in Privileged Identity Management, usually after a short duration.
 
 ## Known limitations
@@ -68,18 +68,16 @@ We support elevation using either PowerShell or through an intuitive experience 
 > Users who attempt to self-elevate must be a Global admin, Power Platform admin, or Dynamics 365 admin. The user interface in Power Platform admin center isn't available for users with other Entra ID admin roles and attempting to self-elevate through the PowerShell API returns an error.
 
 ### Self-elevate through PowerShell
-#### Set up PowerShell
 
-Install the [MSAL](https://www.powershellgallery.com/packages/MSAL.PS) PowerShell module. You only need to install the module once.
+To self-elevate through PowerShell, install the [MSAL](https://www.powershellgallery.com/packages/MSAL.PS) PowerShell module and follow the steps in this section.
 
 ```powershell
 Install-Module -Name MSAL.PS
 ```
 
-For more information about setting up PowerShell, see [Quick Start Web API with PowerShell and Visual Studio Code](/power-apps/developer/data-platform/webapi/quick-start-ps).
+You only need to install the module once. For more information about setting up PowerShell, see [Quick Start Web API with PowerShell and Visual Studio Code](/power-apps/developer/data-platform/webapi/quick-start-ps).
 
-
-#### Step 1: Run the script to elevate
+### Step 1: Run the script to elevate
 
 In this PowerShell script, you:
 
@@ -87,7 +85,7 @@ In this PowerShell script, you:
 - Build an `http` query with your environment ID.
 - Request elevation, using the Power Platform API.
 
-##### Locate and add your environment ID
+#### Locate and add your environment ID
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
@@ -96,7 +94,7 @@ In this PowerShell script, you:
 1. Locate the **Environment ID** in the **Details** pane.
 1. Add your unique `<environment id>` to the script.
 
-##### Run the script
+#### Run the script
 
 Copy and paste the script into a PowerShell console.
 
@@ -153,7 +151,7 @@ $output = $postRequestResponse | ConvertTo-Json -Depth 2
 Write-Host $output
 ```
 
-#### Step 2: Confirm the result
+### Step 2: Confirm the result
 
 Upon success, you see an output similar to the following output. Look for `"Code": "UserExists"` as evidence that you successfully elevated your role.
 
@@ -170,7 +168,7 @@ Upon success, you see an output similar to the following output. Look for `"Code
 }
 ```
 
-##### Errors
+#### Errors
 
 You might see an error message if you don't have the right permissions.
 
@@ -178,7 +176,7 @@ You might see an error message if you don't have the right permissions.
 "Unable to assign System Administrator security role as the user is not either a Global admin, Power Platform admin, or Dynamics 365 admin. Please review your role assignments in Entra ID and try again later. For help, please reach out to your administrator."
 ```
 
-##### Example script
+#### Example script
 
 ```powershell
 Remove-RoleAssignmentFromUsers
@@ -193,10 +191,11 @@ Remove-RoleAssignmentFromUsers
 
 ### Self-elevate through Power Platform admin center
 
+To self-elevate through Power Platform center, take the following steps:
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, choose the environment you want to modify.
 1. In the command bar, select **Membership** to request self-elevation.
 1. In the **System Administrators** pane, select **Add me** to add yourself to the system administrator role.
-

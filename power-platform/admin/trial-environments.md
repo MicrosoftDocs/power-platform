@@ -4,7 +4,7 @@ description: There are two types of Power Platform trial environments. Decide wh
 author: meeramahabala
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: meeram
+ms.author: sericks
 ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: concept-article
@@ -84,7 +84,7 @@ The type of trial environment you create depends on where you start and your ten
    |Type     | Choose **Trial (subscription-based)**.      |
    |Region     | Choose a region for the environment.        |
    |Purpose     | A description of the environment.         |
-   |Create a database for this environment | This setting is preset to **Yes** and can't be changed, because a Dataverse database must be created for a trial (subscription-based) environment.
+   |Create a database for this environment | This setting is preset to **Yes** and can't be changed, because a Dataverse database must be created for a trial (subscription-based) environment.|
 
 1. Select **Next**.
 
@@ -124,13 +124,12 @@ A trial (subscription-based) environment lasts as long as the subscription is ac
 
 ## Extend a trial (standard) environment
 
-
-
 > [!NOTE]
+>
 > - Within the last seven days before the standard trial environment is set to expire, the trial environment admin can do a self-service extension of the expiring environment. This extension adds an extra 30 days from the original expiration date.
 > - There's only one self-service extension allowed per standard trial environment. To further retain the environment, it must be [converted to production](#convert-either-type-of-trial-environment-to-a-production-environment).
 
-**To extend a standard trial:**
+**To extend a standard trial**, take the following steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using admin credentials.
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
@@ -142,7 +141,7 @@ A trial (subscription-based) environment lasts as long as the subscription is ac
 
 The expiration of subscription-based trial (also known as an admin trial) environments is tied to the subscription's expiration. Therefore, subscription-based trial environments can't be independently extended. Limited options for extending admin trial subscriptions affect the ability to extend the expiration of associated trial environments.
 
-**To extend a subscription-based (admin) trial:**
+**To extend a subscription-based (admin) trial**, take the following steps:
 
 Admins can request a single extension in the Microsoft 365 admin center. See [Try or buy a Microsoft 365 for business subscription](/microsoft-365/commerce/extend-your-trial).
 
@@ -181,7 +180,7 @@ Yes. Tenant admins can copy trial (subscription-based) environments to a target 
 ### What administrative operations are supported for trial environments?
 A 30-day trial can only be created and deleted; it can't be reset, backed up, restored, or copied.
 
-### Why can’t I back up my trial environment?
+### Why can't I back up my trial environment?
 
 Administrative operations (copy, backup, restore, and reset) aren't supported for trials, except delete.
 
