@@ -100,6 +100,9 @@ There are three teams:
 - **Deployment Pipeline Makers**. These users can create and consume personal pipelines that are managed in the custom host. If a maker needs to use a shared pipeline, we recommend that the user is assigned the **Deployment Pipeline Users** role to gain access to shared artifacts and shared stage runs.
 - **Deployment Pipeline Users**. These users can trigger a pipeline that is shared with them. Deployment Pipeline Users also have read access to all deployment stage runs within the same business unit.
 
+> [!IMPORTANT] 
+> - In the platform host, when makers use personal pipelines they're atomatically added to the **Deployment Pipeline Makers** team with the **Deployment Pipeline Default** role. Administrators can set a [default custom host](set-a-default-pipelines-host.md) to ovverride maker access to personal pipelines in the platform host. 
+
 ## Frequently asked questions
 
 ### When I navigate to "Manage pipelines", why am I receiving a privilege error when I'm a system administrator or why is it loading the app indefinitely?
