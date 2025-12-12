@@ -16,26 +16,26 @@ search.audienceType:
 
 # Find environment and organization IDs and organization name
 
-This article helps you find your environment and organization IDs, and your organization name.
+This article shows you how to find your environment and organization IDs, and your organization name.
 
 ## Find your environment and organization IDs
 
-To find your environment ID and you organization ID, take these steps:
+To find your environment ID and your organization ID, follow these steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the **Details** section, locate the **Organization ID** and **Environment ID**.
+1. On the **Environments** page, select an environment.
+1. In the **Details** section, find the **Organization ID** and **Environment ID**.
 
 ## Find your organization name
 
-To find you organization name, take these steps:
+To find your organization name, take these steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
+1. On the **Environments** page, select an environment.
 1. In the **Resources** section, select **Power Apps**.
 1. On the **Power Apps** page, open any app.
 1. In the command bar of the opened app, select **Settings**, and then select **Advanced Settings**.
