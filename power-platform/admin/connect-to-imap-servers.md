@@ -14,8 +14,6 @@ search.audienceType:
 ---
 # Connect to IMAP, POP, or SMTP servers
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 Follow the steps in this article to connect customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) with IMAP or POP email servers, such as those used for Gmail and Yahoo! Mail.
 > [!NOTE]
 >
@@ -102,7 +100,7 @@ To set server-side synchronization to be the default configuration method, take 
    > [!NOTE]
    > The **Server-Side Synchronization or Email Router** setting for appointments, contacts, and tasks isn't supported for the IMAP profile.  
 
-If you leave **Email processing for unapproved user and queues** at the default values (selected), you need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.  
+    If you leave **Email processing for unapproved user and queues** at the default values (selected), you need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.
 1. Select **Save**.  
 
 ## Configure mailboxes
