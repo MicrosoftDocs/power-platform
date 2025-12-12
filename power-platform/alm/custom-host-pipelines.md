@@ -137,7 +137,8 @@ There are three teams:
 
 - Deployment Pipeline Administrators. These users have full access to all pipelines and can play the Deployment Pipeline Configuration app.
 - Deployment Pipeline Makers. These users can create and consume personal pipelines that are managed in the custom host. If a maker needs to use a shared pipeline, we recommend that the user is assigned the Deployment Pipeline Users role to gain access to shared artifacts and shared stage runs.
-- Deployment Pipeline Users. These users can trigger a pipeline that is shared with them. Deployment Pipeline Users also have read access to all deployment stage runs within the same business unit.
+- Deployment Pipeline Users. These users can trigger a pipeline that is shared with them. By default, Deployment Pipeline Users have read access to all deployment stage runs (run history) and artifacts. Access can be restricted further by configuring [business units](../admin/wp-security-cds?tabs=new#business-units) and [create or edit business units](../admin/create-edit-business-units?tabs=new)
+  
 
 ## Using a pipeline with other development environments that aren't already associated
 
