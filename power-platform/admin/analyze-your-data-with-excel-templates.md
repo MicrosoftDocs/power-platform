@@ -47,34 +47,36 @@ There are two places where you can create an [!INCLUDE[pn_Excel_short](../includ
   
 - **From [Power Platform admin center](https://admin.powerplatform.microsoft.com/)**.
 
-Access requires sufficient permissions, such as System Administrator or System Customizer role. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+Access requires sufficient permissions, such as a System Administrator or System Customizer role. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don't have the correct permissions, contact your system administrator.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
-1. In the command bar, select **Settings**. 
+1. In the command bar, select **Settings**.
 1. Expand **Templates**, then select **Document templates**.
 1. In the command bar, select **New**, then select **Excel Template**.
 1. In the dialog window, select the **Entity** to filter and the **View** to use, then select **Download** to download the template.
 
-- **From a list of records**. 
+- **From a list of records**.
 For example:
+
 1. Sign in to the **Sales Hub** app.
 1. In the navigation pane, select **Opportunities**.
 1. From the grid view selector in the command bar, choose **My Open Opportunities** to display a list of records.
 1. In the command bar, select **Excel Templates**, then select **Create Excel Template - Download Template**.
 1. In the dialog window, select the **Entity** to filter and the **View** to use, then select **Download** to create the template file.
-    
+
 #### Select the data to include in the template  
   
 Follow steps described above:
+
 1. In the dialog window, select the **Entity** to filter and the **View** to use.
 1. Select **Edit Columns** to customize the columns—add, remove, and adjust properties as needed.  
 1. Select **Download** to create the template file.  
   
 > [!WARNING]
->  You can also download a template containing no data except for the columns associated with the record type (entity). You can learn more in the article, [Download a template for data import](../admin/download-template-data-import.md).  
+> You can also download a template containing no data except for the columns associated with the record type (entity). You can learn more in the article, [Download a template for data import](../admin/download-template-data-import.md).  
 
 > [!IMPORTANT]
 > Document template downloaded from one environment can only be used within that environment. Environment to environment migration for Word or Excel templates isn't currently supported.
@@ -114,18 +116,19 @@ Let's walk through a simple example of customizing an [!INCLUDE[pn_Excel_short](
   
    You're now ready to upload the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template.  
   
-### Step 3: Upload the template and share with others  
+### Step 3: Upload the template and share with others
+
  When you have your [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template customized the way you want, you can upload it. Where you upload the template determines its availability.  
 
  Administrators can go to **[Power Platform admin center](https://admin.powerplatform.microsoft.com/)** to upload the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template. A template uploaded is available to all users.  
- 
+
 #### For admins: Upload the Excel template
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
-1. In the command bar, select **Settings**. 
+1. In the command bar, select **Settings**.
 1. Expand **Templates**, then select **Document templates**.
 1. In the command bar, select **Upload Template**, then select **Excel Template**.
 1. In the dialog window, choose a file to upload, then select **Upload** to upload the template file.
@@ -135,6 +138,7 @@ Let's walk through a simple example of customizing an [!INCLUDE[pn_Excel_short](
 Non-admin users can upload a template for their own use from a list of records.  
 
 For example:
+
 1. Sign in to the **Sales Hub** app.
 1. In the navigation pane, select **Opportunities**.
 1. From the grid view selector in the command bar, choose **My Open Opportunities** to display a list of records.
@@ -288,13 +292,13 @@ Administrators can control access to [!INCLUDE[pn_Excel_short](../includes/pn-ex
 
 Follow these steps to delete personal document templates:  
   
-1.  Select **Advanced Find** (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button.PNG "Screen shot of Advanced Find button")).  
+1. Select **Advanced Find** (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button.PNG "Screen shot of Advanced Find button")).  
   
-2.  For **Look for**, select **Personal Document Templates**.  
+2. For **Look for**, select **Personal Document Templates**.  
   
-3.  Select **Results** **(!)**.  
+3. Select **Results** **(!)**.  
   
-4.  Select the personal document template to delete, and then select **Delete** (![Delete button.](../admin/media/nb-ua-r1-trashbin.png "Delete button")).  
+4. Select the personal document template to delete, and then select **Delete** (![Delete button.](../admin/media/nb-ua-r1-trashbin.png "Delete button")).  
   
 ### Excel template does not upload in Microsoft Edge
 
@@ -306,8 +310,7 @@ If your [!INCLUDE[pn_microsoft_excel](../includes/pn-microsoft-excel.md)] templa
   
 ### See also
 
-[Download a template for data import](../admin/download-template-data-import.md)   
- [Using Word templates](../admin/using-word-templates-dynamics-365.md)
-
+- [Download a template for data import](../admin/download-template-data-import.md)
+- [Using Word templates](../admin/using-word-templates-dynamics-365.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
