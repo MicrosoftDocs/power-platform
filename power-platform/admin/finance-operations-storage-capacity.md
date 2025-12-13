@@ -6,7 +6,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 06/17/2024
 ms.subservice: admin
-ms.author: ceian 
+ms.author: swatim 
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
