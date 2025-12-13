@@ -177,7 +177,7 @@ The following table describes the retention policy settings available when you t
    | Set the retention policy for these logs   | Default: Forever   |
    | Set a custom retention policy | Maximum: 24,855 days. Visible if you select "Custom" in the previous setting.   |  
 
-> [!Important]
+> [!IMPORTANT]
 > The audit retention period isn't available for Dynamics 365 Customer Engagement (on-premises) or for environments encrypted with a customer's own encryption key.
 
 ## Start/stop auditing for an environment and set retention policy 
@@ -189,7 +189,6 @@ This task requires the System Administrator or System Customizer role or equival
    | Start Auditing   | Start or stop auditing.    |
    | Log access | Log whenever the system is accessed, generally by signing in.  |
    | Read logs  | Logs are sent to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/auditlogsearch).|
-
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
@@ -222,7 +221,7 @@ This feature allows you to quickly turn on auditing for multiple tables (entitie
    - **Marketing Entities**. Tracks Campaign table activity.
    - **Customer Service Entities**. Tracks Case, Contract, Queue, and Service table activity. 
   
-1. Select **OK**. 
+1. Select **OK**.
 
 ## Configure auditing for one or more tables and columns in Power Apps
 
@@ -277,7 +276,7 @@ This task requires the System Administrator or System Customizer role or equival
 
 System administrators or customizers can change the default audit settings for tables and for specific columns of a table. 
 
-### Turn on or off auditing for a table 
+### Turn on or off auditing for a table
 
 1. Sign in to [Power Apps](https://make.powerapps.com) using your System Administrator or System Customizer credentials.
 
@@ -318,7 +317,7 @@ System administrators or customizers can change the default audit settings for t
 
 1. To turn on or off auditing for a single column, open the column and expand the **Advanced options** in the **General** section, and then select or clear the **Enable auditing** option. 
 
-1. Select **Save**. 
+1. Select **Save**.
 
 1. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the toolbar. 
 
@@ -327,7 +326,8 @@ Learn more in [Dataverse developer guide: Configure auditing > Configure tables 
 > [!NOTE]
 > When auditing is turned off for a column, the before-and-after values are sent as an "*" to [Purview activity logging](enable-use-comprehensive-auditing.md).
 
-### Turn on or off auditing for Choice data type's original label 
+### Turn on or off auditing for Choice data type's original label
+
 By default, the current label description of the **Choice** data type is shown in the audit logs. For example, suppose you have a choice column for **color** and the label description can be _red_, _white_, and _blue_. When a user selects _red_ and updates the record, the audit record shows that _red_ was selected. If the label description is later changed to _pink_ in the choice data type, the audit record displays _pink_.
 
 If you want to show the original label that the user selected in the audit logs, you can set this auditsetting **{\"StoreLabelNameforPicklistAudits\":true}** to true. Learn how to [enable auditsettings](/power-apps/developer/data-platform/auditing/configure?tabs=webapi#change-auditsettings).
@@ -363,9 +363,9 @@ There are two ways to get to the **Audit Summary** page:
 - From the app, select the **Settings** icon on the banner, select **Advanced Settings**, and select **System > Auditing > Audit Summary view**.
 
   > [!NOTE]
-  > The **Record** column filter doesn't work and will be removed in the future. The filter options **Equals** and **Does not equal** of the **Entity** column filter don't show any table values. To filter by entity, you can use the **Contains** option and enter the table name. 
+  > The **Record** column filter doesn't work and will be removed in the future. The filter options **Equals** and **Does not equal** of the **Entity** column filter don't show any table values. To filter by entity, you can use the **Contains** option and enter the table name.
 
-## Delete audit logs 
+## Delete audit logs
 
 1. In the Auditing card, select **Delete Logs**.
 
@@ -481,21 +481,21 @@ For Unified Interface, in the upper-right corner, select **Settings** > **Advanc
 
 If there's a problem with a system job, you can cancel, postpone, pause, or resume it. Select a job and then select the **Actions** menu.
   
-- **Canceling system jobs** 
+- **Canceling system jobs**
   
-     You can't resume a canceled system job. 
+     You can't resume a canceled system job.
   
-- **Postponing completion of system jobs** 
+- **Postponing completion of system jobs**
   
-     Postponing an active system job stops any current and subsequent actions. You can specify a later time when you want the system job to restart. 
+     Postponing an active system job stops any current and subsequent actions. You can specify a later time when you want the system job to restart.
   
-- **Pausing system jobs** 
+- **Pausing system jobs**
   
-     You can resume a paused system job. 
+     You can resume a paused system job.
   
-- **Resuming paused system jobs** 
+- **Resuming paused system jobs**
   
-     Resuming restarts a system job that was paused. 
+     Resuming restarts a system job that was paused.
   
 > [!TIP]
 >

@@ -69,14 +69,9 @@ If you find yourself in a situation where you need to reset an environment, take
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select the environment you want to reset.
-1. Select **Reset** from the top command bar.
-
-In the **Reset environment** panel:
-
-1. Adjust the environment settings as needed.
+1. Select **Reset** from the top command bar and adjust the environment settings as needed.
 1. Review and understand the consequences of resetting the environment.  
-1. Select **Reset**, then select **Confirm** to begin the process.
-1. The environment reset will then start.
+1. Select **Reset**, then select **Confirm**.
 
 > [!WARNING]
 >

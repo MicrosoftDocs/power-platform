@@ -23,10 +23,10 @@ The finance and operations storage capacity report shows how much finance and op
 >
 > The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization's use of the online service, including consumption that exceeds the online service's documented entitlements or usage limits.
 >
-> Your organization must have the right licenses for the storage you use: 
-> - If you use more than your documented entitlements or usage limits, you must buy additional licenses. 
+> Your organization must have the right licenses for the storage you use:
+>
+> - If you use more than your documented entitlements or usage limits, you must buy additional licenses.
 > - If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft will provide reasonable notice before suspending your online service.
-
 
 ## Licenses for finance and operations storage
 
@@ -41,7 +41,9 @@ The following product and capacity licenses include storage for finance and oper
 To determine whether you have any of these licenses, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/), and then select **Billing** > **Licenses**.  
 
 > [!NOTE]
+>
 > The following licenses are eligible for entitlements but aren't represented in the current reporting:
+>
 > - Dynamics AX (Online) licenses
 > - China-specific licenses for finance and operations apps
 > - Operations Sandbox Tier 4 and Tier 5 per-user subscription license incremental capacity  
@@ -52,21 +54,17 @@ To determine whether you have any of these licenses, sign in to the [Microsoft 3
 
 The **Summary** page of the report provides a tenant-level view of where your organization is using finance and operations storage capacity.
 
-To view the **Summary** page, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select the **Resources** > **Capacity** > **Summary** tab.
+To view the **Summary** page, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select the **Licensing** > **Capacity add-ons** > **Summary** tab.
 
 :::image type="content" source="media/finance-operations-storage-summary-tab.png" alt-text="Screenshot of the Capacity Summary page including finance and operations data.":::
-
-If you're using the [legacy Dataverse storage capacity model](legacy-capacity-storage.md), your **Summary** page looks like this:  
-
-:::image type="content" source="media/finance-operations-storage-summary-tab-legacy.png" alt-text="Screenshot of the legacy Summary page including finance and operations data.":::
 
 ## Finance and Operations page
 
 The **Finance and Operations** page provides an environment-level view of where your organization is using finance and operations storage capacity.
 
-To view the **Finance and Operations** page, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select the **Resources** > **Capacity** > **Finance and Operations** tab.
+To view the **Finance and Operations** page, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select **Licensing** > **Capacity add-ons** > **Finance and Operations**.
 
-:::image type="content" source="media/finance-operations-storage-finops-tab.png" alt-text="Screenshot of the Finance and Operations page with capacity data by environment.":::
+:::image type="content" source="media/finance-operations-storage-capacity/finance-operations-storage-finops-tab.png" alt-text="Screenshot of the Finance and Operations page with capacity data by environment.":::
 
 ### Table-level, drill-down view into storage consumption details for finance and operations environments
 
@@ -76,20 +74,17 @@ Select the finance and operations database usage entry on the **Finance and oper
 
 :::image type="content" source="media/finance-operations-storage-capacity/fno-table-level-usage.png " alt-text="Screenshot of the table-level storage consumption for each finance and operations table.":::
 
+## View license consumption for Dynamics 365 finance and operations app
 
-## Address a storage capacity deficit
+To view user license consumption across all finance and operations applications, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select **Licensing** > **Finance and Operations**. See [View license consumption for Dynamics 365 finance and operations apps](/power-platform/admin/view-license-consumption-finops-apps)
+
+## Address a storage capacity overage
 
 The **Summary** tab shows whether your organization is using more finance and operations storage than it's entitled to.
 
-New storage model:
-
 :::image type="content" source="media/finance-operations-overage-new-model.png" alt-text="Screenshot of the Summary page in the new storage model, with a capacity deficit shown.":::
 
-Legacy storage model:
-
-:::image type="content" source="media/finance-operations-overage-legacy-model.png" alt-text="Screenshot of the Summary page in the legacy storage model, with a capacity deficit shown.":::
-
-If your organization has a storage capacity deficit, you can delete unneeded environments and data or buy more capacity. Learn more about finance and operations capacity add-ons in the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365). Work through your organization's standard procurement process to purchase finance and operations capacity add-ons.
+If your organization has a storage capacity overage, you can delete unneeded environments and data or buy more capacity. Learn more about finance and operations capacity add-ons in the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365). Work through your organization's standard procurement process to purchase finance and operations capacity add-ons.
 
 Learn how to clean up your finance and operations data:
 
@@ -109,18 +104,6 @@ Finance and operations entitlement includes default capacity entitlement plus ac
 ### Why did the Finance Operations Database Base User Subscription License (USL) Entitlement calculation change?
 
 This is due to a change in December 2023, where the Operations Database Capacity (Accrued/USL) was increased from 1.5 GB to 4 GB. For more details on how base entitlement calculation works, go to the Capacity Licenses section of the [Dynamics 365 License Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365).
-
-### Why don't I see which tables are causing the overage?  
-
-Details at the table level aren't available in the initial launch of reporting. Table analytics are planned for a future release.
-
-### Is there any reporting for file capacity?
-
-File capacity reporting allows the review of your file storage consumption.
-
-:::image type="content" source="media/finance-operations-storage-capacity/finance-operations-database.png" alt-text="Screenshot of the Finance and operations File.":::
-
-A more detailed report that provides log and file consumption analytics for finance and operations apps is expected to be available during the calendar year 2024.
 
 ### What happens if my consumption is over the entitled limit?
 
