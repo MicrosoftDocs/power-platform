@@ -244,16 +244,6 @@ Use the following methods to free up storage for each of the capacity types.
   
 14. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.
 
-## Reduce log storage
-
-Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete method. You can identify an environment with completed migration with the Auditing card near the environment details in classic Power Platform admin center.
-
-:::image type="content" source="media/audit-log-new-storage-sign.png" alt-text="Screenshot that shows where an Auditing tile appears for new storage." lightbox="media/audit-log-new-storage-sign.png":::
-
-In the new Power Platform admin center, an environment's Details and Auditing cards look like this:
-
-:::image type="content" source="media/audit-log-new-storage-sign-new.png" alt-text="Screenshot that shows where an Auditing tile appears for new storage in the new admin center." lightbox="media/audit-log-new-storage-sign-new.png":::
-
 ### Method 10: Delete audit logs - legacy process
 
  When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete audit logs to free space when they're no longer needed.  
@@ -463,7 +453,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 3. In the **Manage** pane, select **Environments**, and then select an environment from the list.
 
-4.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
+4.    Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
    :::image type="content" source="media/free-new-storage-method.png" alt-text="Screenshot that shows where the Bulk deletion option is located in the Settings of an environment." lightbox="media/free-new-storage-method.png":::
   
