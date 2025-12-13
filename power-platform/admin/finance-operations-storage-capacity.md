@@ -78,7 +78,7 @@ Select the finance and operations database usage entry on the **Finance and oper
 
 To view user license consumption across all finance and operations applications, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select **Licensing** > **Finance and Operations**. See [View license consumption for Dynamics 365 finance and operations apps](/power-platform/admin/view-license-consumption-finops-apps)
 
-## Address a storage capacity overage
+## Address a storage capacity deficit
 
 The **Summary** tab shows whether your organization is using more finance and operations storage than it's entitled to.
 
