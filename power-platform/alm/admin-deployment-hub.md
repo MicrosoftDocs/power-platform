@@ -1,9 +1,9 @@
 ---
 title: Admin deployment page
 description: Manage ALM in the admin center.
-author: asheehi1
+author: matp123
 ms.subservice: alm
-ms.author: asheehi
+ms.author: matp
 ms.custom: NewPPAC
 ms.reviewer: matp
 ms.topic: overview
@@ -21,7 +21,6 @@ The **Deployment** page in the Power Platform admin center provides a streamline
 ## Use the deployment page
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Enable **New admin center** in the upper right corner.
 1. In the navigation pane, select **Deployment**.
 
 ### Learn about the ALM process in Power Platform
