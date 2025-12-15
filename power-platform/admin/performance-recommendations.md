@@ -3,7 +3,7 @@ title: View performance recommendations
 description: Enhance your Power Platform tenant's performance with actionable recommendations from the actions page.
 author: sidhartg
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/28/2025
 ms.subservice: admin
 ms.author: sidhartg
