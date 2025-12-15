@@ -66,8 +66,10 @@
               href: pricing-billing-skus.md
             - name: License consumption and management
               items:
-                - name: View license consumption for Power Apps and Power Automate (preview)
+                - name: View license consumption for Power Apps (preview)
                   href: view-license-consumption-issues.md
+                - name: View license consumption for Power Automate (preview)
+                  href: view-license-consumption-power-automate.md
                 - name: View license consumption for Power Pages
                   href: /power-pages/admin/capacity-management
                 - name: View license consumption for finance and operations apps
