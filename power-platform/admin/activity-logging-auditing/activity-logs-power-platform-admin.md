@@ -61,6 +61,8 @@ Learn more:
 
 As you search, individual activities are shown. A common schema makes it easier for you to search across activities. The value in the **PropertyCollection** field is specific to each activity type.
 
+Learn more about [auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
+
 ## Activity category: Environment lifecycle operations
 
 Each activity event contains a payload of metadata that is specific to the individual event. The *environment lifecycle operation* activities listed in this table are sent to Microsoft Purview.
