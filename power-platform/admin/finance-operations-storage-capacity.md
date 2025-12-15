@@ -108,10 +108,7 @@ Learn how to clean up your finance and operations data:
 - [Archive credit card transaction data - Commerce](/dynamics365/commerce/dev-itpro/archive-cc-data)
 
 > [!IMPORTANT]
-> Modern storage entitlements are rolling out. As the new model takes effect, you'll  experience:
->
-> - An increase to default storage capacity.
-> - The ability to view both Dynamics 365 Finance and Operations and Dataverse reports on a shared entitlement summary page that can be accessed in [**Power Platform admin center**](https://admin.powerplatform.microsoft.com) by selecting **Licensing** and then **Dataverse**.
+> Modern storage entitlements are rolling out.
 >
 > Read [Flexible Dataverse capacity for apps and agents](https://www.microsoft.com/power-platform/blog/2025/12/04/dataverse-capacity/) to learn more about modern storage entitlements.
 
