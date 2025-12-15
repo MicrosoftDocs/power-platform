@@ -212,7 +212,7 @@ All developer environments have the following Managed Environments settings prec
 
 ### Is the environment routing also available for Power Pages?
 
-Environment routing is currently available for Microsoft Copilot Studio, Power Apps, and Power Automate cloud flows and desktop flows.
+Environment routing is currently available for Microsoft Copilot Studio, Power Apps, and Power Automate cloud and desktop flows.
 
 ### Do I need to be a Power Platform tenant admin to enable this feature?
 
