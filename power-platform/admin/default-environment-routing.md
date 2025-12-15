@@ -3,11 +3,11 @@ title: Environment routing
 description: Learn how to use the environment routing governance feature. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/17/2025
+ms.date: 12/15/2025
 author: akadrno
 ms.custom: NewPPAC
-ms.author: kauguillard 
-ms.reviewer: sericks
+ms.author: matow
+ms.reviewer: angieandrews
 ms.subservice: admin
 search.audienceType: 
   - admin
@@ -15,15 +15,15 @@ search.audienceType:
 
 # Environment routing
 
-Environment routing is a premium governance feature. This feature allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com), [make.powerapps.com](https://make.powerapps.com/), [make.powerautomate.com](https://make.powerautomate.com), or Power Automate for desktop. Environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
-
+Environment routing is a premium governance feature. This feature allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit [Copilot Studio](https://copilotstudio.microsoft.com), [Power Apps](https://make.powerapps.com/), [Power Automate](https://make.powerautomate.com), or Power Automate for desktop. Environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.<br/><br/>
+In this video, check out what's new with environment routing in the Power Platform admin center.<br/><br/>
 > [!VIDEO 4e944970-757a-4c21-9349-83bf52672583]
 
 When the **Environment routing** setting is enabled in [Power Platform admin center](https://admin.powerplatform.microsoft.com), the maker lands in their own personal developer environment instead of the default environment. Personal developer environments are the makers' own spaces, like OneDrive, for personal productivity where they can start building apps and solutions in their own workspace. Makers don't need to know which environment to work in, since the personal developer environment appears automatically.
 
 :::image type="content" source="media/default-environment-routing/diagram-environment-routing.png" alt-text="Diagram showing how new and existing makers fit into the environment routing and environment group." lightbox="media/default-environment-routing/diagram-environment-routing.png":::
   
-When the feature is turned on, the selected maker type (that is, new or existing makers), are directed into their own, personal developer environment. If the maker has access to one or more existing developer environments that aren't owned by them, they're routed to a new developer environment. 
+When the feature is turned on, the selected maker type (that is, new or existing makers), are directed into their own, personal developer environment. If the maker has access to one or more existing developer environments that aren't owned by them, they're routed to a new developer environment.
 
 Dataverse is available in developer environments, and these environments are [Managed Environments](managed-environment-overview.md) with the admin settings preconfigured according to the assigned environment group rules. Admins no longer need to worry that their makers are working in the default environment, where their work can conflict with others.
 
@@ -34,19 +34,20 @@ Dataverse is available in developer environments, and these environments are [Ma
 > - **Non-managed** developer environments are **unaffected** by this feature. Learn more about the developer environment and developer plan in [About the Power Apps Developer Plan](../developer/plan.md).
 
 ## Multi-rule environment routing
-Multi-rule environment routing is an advanced governance feature in Power Platform that allows tenant administrators to define multiple routing rules to control how makers are directed to development environments across various portals, such as Power Apps, Power Automate, and Copilot Studio. 
 
-This capability builds on the original environment routing feature, which routed makers to a single environment group. The multi-rule enhancement introduces flexibility by allowing routing to multiple environment groups based on rule logic. This feature is especially useful for organizations where governance, security, and scalability are critical. It allows: 
+Multi-rule environment routing is an advanced governance feature in Power Platform that allows tenant administrators to define multiple routing rules to control how makers are directed to development environments across various portals, such as Power Apps, Power Automate, and Copilot Studio.
 
-- Fine-grained control over where makers build. 
-- Consistent policy enforcement across environments. 
+This capability builds on the original environment routing feature, which routed makers to a single environment group. The multi-rule enhancement introduces flexibility by allowing routing to multiple environment groups based on rule logic. This feature is especially useful for organizations where governance, security, and scalability are critical. It allows:
+
+- Fine-grained control over where makers build.
+- Consistent policy enforcement across environments.
 - Reduced risk of conflicts in shared or default environments.
 
 All routed environments are Managed Environments, meaning they inherit standardized policies like data retention, AI features, and application lifecycle management (ALM) settings defined by the admin through environment groups.
 
 ## Prerequisites
 
-Environment routing is a tenant-level admin setting. Understand that: 
+Environment routing is a tenant-level admin setting. Understand that:
 
 - Only Power Platform admins can enable environment routing.
 
@@ -67,49 +68,49 @@ The **Environment routing** setting is turned off by default and must be turned 
 #### [New admin center](#tab/new)
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).    
-1. In the navigation pane, select **Manage**.   
-1. In the **Manage** pane, select **Tenant settings**.   
-1. In the **Tenant settings** page, select **Environment routing**. The **Create and manage environment routing rules** pane is displayed.   
-1. In the **Turn on environment routing for** section, select the product portals for which you want to allow routing.      
-1. Click **New rule** to define a new rule. The **Create a new routing rule** pane appears. Take the following action:
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Tenant settings**.  
+1. In the **Tenant settings** page, select **Environment routing**. The **Create and manage environment routing rules** pane is displayed.  
+1. In the **Turn on environment routing for** section, select the product portals for which you want to allow routing.
+1. Select **New rule** to define a new rule. The **Create a new routing rule** pane appears. Take the following action:
     1. In the **Name** field, enter a name for the rule.
     1. Apply the routing rule to **Everyone** or specific security groups.
 
         Selecting **Everyone** routes all makers into existing or new personal developer environments. Selecting a security group to limit routing only to the member makers of the configured security group.
 
     1. Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined, environment group rules. Learn more in [Environment groups](environment-groups.md).
-    1. Click **Save**. The **Create and manage environment routing rules** pane is displayed again.
+    1. Select **Save**. The **Create and manage environment routing rules** pane is displayed again.
 1. Use the arrow icons to change the priority of the rules. 
 
     When a maker accesses a portal, the system evaluates the rules in order and applies the first matching rule.
 
-    - If a matching rule is found, the maker is routed to an existing or newly provisioned developer environment. 
-    - If no rule matches, or if environment routing isn't turned on, the maker is routed to the default environment. 
+    - If a matching rule is found, the maker is routed to an existing or newly provisioned developer environment.
+    - If no rule matches, or if environment routing isn't turned on, the maker is routed to the default environment.
 
-1. Click **Save**.
+1. Select **Save**.
 
 #### [Classic admin center](#tab/classic)
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Settings**.
-1. In the **Tenant settings** page, select **Environment routing**. The **Create and manage environment routing rules** pane is displayed.   
-1. In the **Turn on environment routing for** section, select the product portals for which you want to allow routing.      
-1. Click **New rule** to define a new rule. The **Create a new routing rule** pane appears. Do the following:
+1. In the **Tenant settings** page, select **Environment routing**. The **Create and manage environment routing rules** pane is displayed.  
+1. In the **Turn on environment routing for** section, select the product portals for which you want to allow routing.
+1. Select **New rule** to define a new rule. The **Create a new routing rule** pane appears. Do the following:
     1. In the **Name** field, enter a name for the rule.
     1. Apply the routing rule to **Everyone** or specific security groups.
 
         Selecting **Everyone** routes all makers into existing or new personal developer environments. Selecting a security group to limit routing only to the member makers of the configured security group.
 
     1. Select an environment group to which the newly created developer environments are automatically assigned. This environment group inherits all the defined, environment group rules. Learn more in [Environment groups](environment-groups.md).
-    1. Click **Save**. The **Create and manage environment routing rules** pane is displayed again.
-1. Use the arrow icons to change the priority of the rules. 
+    1. Select **Save**. The **Create and manage environment routing rules** pane displays again.
+1. Use the arrow icons to change the priority of the rules.
 
     When a maker accesses a portal, the system evaluates the rules in order and applies the first matching rule.
 
-    - If a matching rule is found, the maker is routed to an existing or newly provisioned developer environment. 
-    - If no rule matches, or if environment routing isn't turned on, the maker is routed to the default environment. 
+    - If a matching rule is found, the maker is routed to an existing or newly provisioned developer environment.
+    - If no rule matches, or if environment routing isn't turned on, the maker is routed to the default environment.
 
-1. Click **Save**.
+1. Select **Save**.
 ---
 
 ## Turn on environment routing using PowerShell
@@ -212,7 +213,7 @@ All developer environments have the following Managed Environments settings prec
 
 ### Is the environment routing also available for Power Pages?
 
-Environment routing is currently available for Microsoft Copilot Studio, Power Apps, and Power Automate cloud and desktop flows.
+Environment routing is currently available for Microsoft Copilot Studio, Power Apps, and Power Automate cloud and desktop workflows.
 
 ### Do I need to be a Power Platform tenant admin to enable this feature?
 
@@ -230,7 +231,7 @@ No, the default environment doesn't need to be managed to enable environment rou
 
 The maker is always routed to their own existing personal developer environment, such as the developer environment created by them or on their behalf. If they created multiple developer environments, they're routed to the first one in alphabetical order.
 
-### What happens if the Power Platform admin changes the developer environment assignments setting from "Everyone" to "Only specific admins" while environment routing is on? 
+### What happens if the Power Platform admin changes the developer environment assignments setting from "Everyone" to "Only specific admins" while environment routing is on?
 
 Changing the developer environment assignments setting has no impact on environment routing.
 
