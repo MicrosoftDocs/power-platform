@@ -15,7 +15,7 @@ search.audienceType:
 
 # Environment routing
 
-Environment routing is a premium governance feature. This feature allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com), [make.powerapps.com](https://make.powerapps.com/), or Power Automate for desktop. Environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
+Environment routing is a premium governance feature. This feature allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com), [make.powerapps.com](https://make.powerapps.com/), [make.powerautomate.com](https://make.powerautomate.com), or Power Automate for desktop. Environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
 
 > [!VIDEO 4e944970-757a-4c21-9349-83bf52672583]
 
@@ -210,9 +210,9 @@ All developer environments have the following Managed Environments settings prec
 
 - **Maker welcome message**: Not established.
 
-### Is the environment routing also available for Power Automate, Microsoft Copilot Studio, and Power Pages?
+### Is the environment routing also available for Power Pages?
 
-Environment routing is currently available for Power Apps and Microsoft Copilot Studio.
+Environment routing is currently available for Microsoft Copilot Studio, Power Apps, and Power Automate cloud flows and desktop flows.
 
 ### Do I need to be a Power Platform tenant admin to enable this feature?
 
