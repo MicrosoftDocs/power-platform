@@ -31,7 +31,7 @@ This article covers prerequisites, how to access your data in Microsoft Purview'
 
 ## Prerequisites
 
-To view connector activity logs in Microsoft Purview, make sure you've:
+To view connector activity logs in Microsoft Purview, make sure you:
 
 - Review and complete the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
 - Confirm you're an admin who has a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.

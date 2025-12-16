@@ -63,19 +63,20 @@ While each Power Platform component has its specific audit schema, most contain 
 
 ## Prerequisites
 
-Before viewing Power Platform activity logs in Microsoft Purview, you need:
+The following prerequisites make sure the designated admins have the necessary role-based permissions to configure and turn on auditing in the Power Platform admin center and get started viewing the activity logs in Microsoft Purview:
 
-- A Power Platform system administrator to:
+- A [Power Platform system administrator](/microsoft-365/admin/add-users/about-admin-roles) to:
   - [Configure and turn on auditing for each Power Platform production environment](#configure-and-turn-on-auditing-for-each-power-platform-environment).
   - [Assign appropriate licenses](../assign-licenses.md) to all users, makers, admins, and agents so activities and interactions are logged accurately.
 
-- A Microsoft Purview admin with a Microsoft 365 E5 or greater license to:
-  - [Turn on audit log search](/purview/audit-log-enable-disable#turn-on-auditing) in Microsoft Purview, if it's not already turned on.
-  - Assign necessary [permissions](/purview/purview-permissions) to admins who are responsible for regularly monitoring Power Platform activity logs in Microsoft Purview.
+- A Microsoft Entra global admin or an Exchange admin to set up a Purview admin with the *Audit Logs* role in Exchange admin center so they can [Turn on audit log search](/purview/audit-log-enable-disable#turn-on-auditing) in Microsoft Purview, if it's not already turned on. It's also necessary to have the *Audit Logs* role set up in the Exchange admin center to access audit cmdlets.
+- If Microsoft Purview is already turned on, a Microsoft Purview *Role Manager* can assign the *Audit Manager* or *Audit Reader* [permissions](/purview/purview-permissions) to admins who are responsible for regularly monitoring Power Platform activity logs in Microsoft Purview.
+
+Read [Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview](/defender-office-365/scc-permissions) to learn more.
 
 ## Configure and turn on auditing for each Power Platform environment
 
-A Power Platform system admin or customizer needs to configure auditing in the Power Platform admin center and then turn on the *Enable SAS Logging in Purview* setting for each Power Platform production environment so Microsoft Purview auditing solutions can access the environment's audit logs.
+A Power Platform system admin or customizer needs to configure auditing in the Power Platform admin center and then turn on the **Enable SAS Logging in Purview** setting for each Power Platform production environment so Microsoft Purview auditing solutions can access the environment's audit logs.
 
 > [!NOTE]
 >
