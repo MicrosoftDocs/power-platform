@@ -68,7 +68,7 @@ While each Power Platform component has its specific audit schema, most contain 
 In order to view Power Platform activity logs in Microsoft Purview, high-level admins need to review current subscriptions, licensing, configurations, and roles and make necessary updates. To learn more about these roles, refer to the following guidance:
 
 - [Manage high privileged admin roles for Power Platform](/power-platform/admin/manage-high-privileged-admin-roles).
-- [Permissions in the Microsoft Purview portal](/purview/purview-permissions) to learn how to set up other related roles directly in Microsoft Purview.
+- [Manage permissions for Microsoft Purview](/purview/purview-permissions).
 
 ## Configure and turn on auditing for each Power Platform environment
 
