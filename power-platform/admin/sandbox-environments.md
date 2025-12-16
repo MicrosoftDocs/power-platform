@@ -21,20 +21,10 @@ A sandbox environment is any non-production environment of Microsoft Dataverse. 
 
 You can view and manage your sandbox environments from the Power Platform admin center. To get started, take steps to view, sort, and filter your environments.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Environment Admin or System Administrator credentials.
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select the **Type** column to sort and filter by environment type.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Environment Admin or System Administrator credentials.
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select the **Type** column to sort and filter by environment type.
-
----
 
 ## Create a sandbox environment
 
@@ -44,8 +34,6 @@ You can create new sandbox environments in the Power Platform admin center. To g
 
 You can change a production environment to a sandbox environment. To get started, take steps to edit the production environments details.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Service admin or Delegated admin credentials.
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -53,17 +41,6 @@ You can change a production environment to a sandbox environment. To get started
 1. In the environment's **Details** section, select **Edit**.
 1. In the **Edit details** panel, under **Type**, select **Sandbox**.
 1. Select **Save** to apply the changes.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Service admin or Delegated admin credentials.
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select a production environment link.
-1. In the environment's **Details** section, select **Edit**.
-1. In the **Edit details** panel, under **Type**, select **Sandbox**.
-1. Select **Save** to apply the changes.
-
----
 
 ## Reset a sandbox environment  
 
@@ -88,29 +65,13 @@ After contacting Elisa, Thomas resets the sales department's complete sandbox en
 
 If you find yourself in a situation where you need to reset an environment, take these steps to get started.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Environment Admin or System Administrator credentials.
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select the environment you want to reset.
-1. Select **Reset** from the top command bar.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Environment Admin or System Administrator credentials.
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select the environment you want to reset.
-1. Select **Reset** from the top command bar.
-
----
-
-In the **Reset environment** panel:
-
-1. Adjust the environment settings as needed.
+1. Select **Reset** from the top command bar and adjust the environment settings as needed.
 1. Review and understand the consequences of resetting the environment.  
-1. Select **Reset**, then select **Confirm** to begin the process.
-1. The environment reset will then start.
+1. Select **Reset**, then select **Confirm**.
 
 > [!WARNING]
 >
