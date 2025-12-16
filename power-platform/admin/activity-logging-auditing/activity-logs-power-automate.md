@@ -3,7 +3,7 @@ title: View Power Automate activity logs in Microsoft Purview
 description: Learn how to access Power Automate activity logs in Microsoft Purview and explore what Power Automate activities you can monitor.
 author: EllenWehrle
 ms.topic: how-to
-ms.date: 11/06/2025
+ms.date: 11/16/2025
 ms.subservice: admin
 ms.author: grbarker
 ms.reviewer: ellenwehrle

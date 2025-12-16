@@ -3,7 +3,7 @@ title: View Power Platform admin activity logs in Microsoft Purview
 description: Learn how to access Power Platform admin activity logs in Microsoft Purview and explore what admin activities you can monitor.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/08/2025
+ms.date: 12/16/2025
 author: sericks007
 ms.subservice: admin
 ms.author: grbarker
@@ -39,10 +39,9 @@ Each activity event consists of a common schema defined at [Office 365 Managemen
 
 ## Prerequisites
 
-To view connector activity logs in Microsoft Purview, make sure you've:
+To view connector activity logs in Microsoft Purview, make sure you:
 
 - Review and complete the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
-- Confirm you're an admin who has a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
 - Confirm either the *Audit Logs* or *View-Only Audit Logs* role is assigned to you in Microsoft Purview.
 
 Learn more:

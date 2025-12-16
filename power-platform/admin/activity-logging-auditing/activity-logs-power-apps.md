@@ -3,11 +3,13 @@ title: View Power Apps activity logs in Microsoft Purview
 description: Learn how to access Power Apps activity logs in Microsoft Purview and explore what canvas apps activities you can view. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/05/2025
+ms.date: 12/16/2025
 author: amchern
 ms.subservice: admin
 ms.author: grbarker
-contributor: EllenWehrle 
+contributors:
+  - amchern 
+  - EllenWehrle 
 ms.reviewer: ellenwehrle 
 search.audienceType: 
   - admin

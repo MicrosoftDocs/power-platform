@@ -2,7 +2,7 @@
 title: View Power Pages activity logs in Microsoft Purview
 description: Learn how to access Power Pages activity logs in Microsoft Purview and explore what Power Pages activities you can monitor.
 ms.topic: how-to
-ms.date: 12/08/2025
+ms.date: 12/16/2025
 author: EllenWehrle
 ms.subservice: admin
 ms.author: grbarker

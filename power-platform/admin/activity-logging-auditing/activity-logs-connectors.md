@@ -4,7 +4,7 @@ description: Learn how to access Power Platform connector activity logs in Micro
 author: schabungbam
 ms.topic: how-to
 ms.workload: na
-ms.date: 12/05/2025
+ms.date: 12/16/2025
 ms.subservice: admin
 ms.author: grbarker
 ms.reviewer: ellenwehrle

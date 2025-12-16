@@ -3,7 +3,7 @@ title: View Microsoft Dataverse and model-driven app activity logs in Microsoft 
 description: Learn how to access Dataverse and model-driven app activity logs in Microsoft Purview and explore what activities you can view.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/05/2025
+ms.date: 12/16/2025
 author: grbarker
 contributors:
   - yingchin
