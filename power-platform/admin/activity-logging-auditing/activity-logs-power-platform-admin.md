@@ -28,7 +28,7 @@ Administration of Microsoft Power Platform products and services can affect vari
 - adhere to compliance requirements
 - act on security threats.
 
-This article covers how you can monitor activities in Microsoft Purview that are performed on Power Platform environments by those who have admin access across user experiences and programmable interfaces. The activities fall within these categories:
+This article explains how you can monitor activities in Microsoft Purview that are performed on Power Platform environments by those who have admin access across user experiences and programmable interfaces. The activities fall within these categories:
 
 - [Environment lifecycle operations](#activity-category-environment-lifecycle-operations)
 - [Environment property and setting change activities](#activity-category-environment-property-and-setting-change-activities)
@@ -58,53 +58,53 @@ Learn more:
 
 [!INCLUDE[admin-audit](../../includes/admin-audit-activity-search.md)]
 
-As you search, individual activities are shown. A common schema makes it easier for you to search across activities. The value in the **PropertyCollection** field is specific to each activity type.
+As you search, you see individual activities. A common schema makes it easier for you to search across activities. The value in the **PropertyCollection** field is specific to each activity type.
 
-Learn more about [auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
+For more information, see [auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
 ## Activity category: Environment lifecycle operations
 
-Each activity event contains a payload of metadata that is specific to the individual event. The *environment lifecycle operation* activities listed in this table are sent to Microsoft Purview.
+Each activity event contains a payload of metadata that's specific to the individual event. Microsoft Purview receives the *environment lifecycle operation* activities listed in this table.
 
 | **Event**                  | **Description**                                                                                                                        |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Provisioned environment    | The environment was created.                                                                                                                   |
 | Deleted environment        | The environment was deleted.                                                                                                                   |
-| Recovered environment      | An environment that was deleted within seven days has been recovered.                                                                     |
+| Recovered environment      | An environment that was deleted within seven days was recovered.                                                                     |
 | Hard-deleted environment   | The environment was hard deleted.                                                                                                    |
 | Moved environment          | The environment was moved to a different tenant.                                                                                               |
 | Copied environment         | The environment, including specific attributes such as application data, users, customizations, and schemas, were copied. |
-| Backed up environment      | The environment that has been backed up.                                                                                                   |
-| Restored environment       | The environment has been restored from a back up.                                                                                        |
+| Backed up environment      | The environment that was backed up.                                                                                                   |
+| Restored environment       | The environment was restored from a back up.                                                                                        |
 | Converted environment type | The environment was converted to a different environment type, such as production or sandbox.                                          |
-| Reset environment          | A sandbox environment has been reset.                                                                                                  |
-| Upgraded environment       | A component of an environment has been upgraded to a new version.                                                                      |
-| CMK-Renewed environment    | The customer-managed key (CMK) has been renewed on the environment.                                                                         |
-| CMK-Reverted environment   | Environment was removed from enterprise policy and encryption was returned to Microsoft-managed key.                                              |
+| Reset environment          | A sandbox environment was reset.                                                                                                  |
+| Upgraded environment       | A component of an environment was upgraded to a new version.                                                                      |
+| CMK-Renewed environment    | The customer-managed key (CMK) was renewed on the environment.                                                                         |
+| CMK-Reverted environment   | The environment was removed from enterprise policy and encryption was returned to Microsoft-managed key.                                              |
 
 ## Activity category: Environment property and setting change activities
 
-Each activity event contains a payload of metadata that is specific to the individual event. The *environment property and setting* activities listed in this table are sent to Microsoft Purview.
+Each activity event contains a payload of metadata that's specific to the individual event. Microsoft Purview receives the *environment property and setting* activities listed in this table.
 
 | **Event** | **Description** |
 |-------------------------|-------------------------|
-| Changed property on environment | Communicates when a property on an environment has changed. In general, properties are metadata (names) that is associated with an environment. Includes changes to:<ul><li>Display name</li><li>Domain name</li><li>Security group ID</li><li>Admin mode</li><li>Background operations state</li></ul> |
+| Changed property on environment | Communicates when a property on an environment changes. In general, properties are metadata (names) that are associated with an environment. This event includes changes to:<ul><li>Display name</li><li>Domain name</li><li>Security group ID</li><li>Admin mode</li><li>Background operations state</li></ul> |
 
-## Activity category: Environment groups & rules
+## Activity category: Environment groups and rules
 
 All activities for environment groups and rules are recorded under the *PowerPlatformAdministratorActivity* record type.
 
-Each activity event contains a payload of metadata that is specific to the individual event. The environment group activities listed in this table are sent to Microsoft Purview.
+Each activity event contains a payload of metadata that's specific to the individual event. The environment group activities listed in this table are sent to Microsoft Purview.
 
 | **Event** | **Description** |
 |-------------------------|-------------------------|
 | NewEnvironmentGroup | Emitted when a new environment group is created. |
 | DeleteEnvironmentGroup | Emitted when an environment group is deleted. |
-| UpdateEnvironmentGroup | Emitted when an environment group's name and/or description are updated. |
+| UpdateEnvironmentGroup | Emitted when an environment group's name or description is updated. |
 | EnvironmentAddedToEnvironmentGroup | Emitted when an environment is added to an environment group. |
 | EnvironmentRemovedFromEnvironmentGroup | Emitted when an environment is removed from an environment group. |
 
-These nine (9) rules activities are sent to Microsoft Purview:
+These nine rules activities are sent to Microsoft Purview:
 
 - AI-generated descriptions (preview)
 - Backup retention
@@ -119,7 +119,7 @@ These nine (9) rules activities are sent to Microsoft Purview:
 | **Event** | **Description** |
 |-------------------------|-------------------------|
 | CreateRuleSetOperation | Emitted when a rule is added to an environment group for the first time. |
-| UpdateRuleSetOperation | Emitted whenever a rule is edited in an environment group. |
+| UpdateRuleSetOperation | Emitted when a rule is edited in an environment group. |
 | DeleteRuleSetOperation | Emitted when an environment group is deleted. |
 
 The remaining rules activities listed in this table are sent to Microsoft Purview.
@@ -128,13 +128,13 @@ The remaining rules activities listed in this table are sent to Microsoft Purvie
 |-------------------------|-------------------------|
 | CreateRuleBasedPolicyOperation   | Emitted when any rule is added to an environment group for the first time. |
 | CreateRuleBasedPolicyAssignmentOperation | Emitted when any rule is added to an environment group for the first time. |
-| UpdateRuleBasedPolicyOperation  | Emitted whenever any rule is added, edited, or removed from an environment group. |
+| UpdateRuleBasedPolicyOperation  | Emitted when any rule is added, edited, or removed from an environment group. |
 | DeleteRuleBasedPolicyOperation  | Emitted when an environment group is deleted. |
 | DeleteRuleBasedPolicyAssignmentOperation  | Emitted when an environment group is deleted. |
 
 ## Activity category: Business model and licensing
 
-Each activity event contains a payload of metadata that is specific to the individual event. The business model and licensing activities listed in this table are sent to Microsoft Purview.
+Each activity event contains a payload of metadata that's specific to the individual event. The business model and licensing activities listed in this table are sent to Microsoft Purview.
 
 | **Category** | **Event** | **Description** |
 |-------------------------|-------------------------|-------------------------|
@@ -155,25 +155,25 @@ Each activity event contains a payload of metadata that is specific to the indiv
 
 ## Activity category: Admin actions
 
-Each activity event contains a payload of metadata that is specific to the individual event. The admin activities listed in this table are sent to Microsoft Purview.
+Each activity event contains a payload of metadata that's specific to the individual event. The admin activities listed in this table are sent to Microsoft Purview.
 
 | **Event** | **Description** |
 |-------------------------|-------------------------|
-| Apply Admin Role | Emitted when a tenant admin requested the System administrator role in Dataverse in the environment. |
+| Apply Admin Role | Emitted when a tenant admin requests the System administrator role in Dataverse in the environment. |
 
 ## Activity category: Lockbox operations
 
-All the lockbox activities are under the activity **LockboxRequestOperation**. Each activity event contains a payload of metadata with these properties when you create or update the lockbox request:
+All the lockbox activities fall under the **LockboxRequestOperation** activity. Each activity event contains a payload of metadata with these properties when you create or update the lockbox request:
 
 - Lockbox request ID
 - Lockbox request state
 - Lockbox support ticket ID
-- Lockbox request expiration time.
+- Lockbox request expiration time
 - Lockbox data access duration
 - Environment ID
 - User who performed the operation(when the lockbox request is created)
 
-The events listed in this table are sent to Microsoft Purview.
+You send the events listed in this table to Microsoft Purview.
 
 | **Category** | **Event** | **Description** |
 |-------------------------------------------------------------|--------------|-----------------------------------------|
@@ -248,11 +248,11 @@ Here's an example of the payload of metadata you can expect from one of the even
 
 > [!NOTE]
 >
-> - Activity logging for data policies is not currently available in sovereign clouds.
+> - Activity logging for data policies isn't currently available in sovereign clouds.
 >
-> - Currently only users with an E5 license can view these audit log events.
+> - Currently, only users with an E5 license can view these audit log events.
 
-All the data policy events show up under the **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection, which emits the following properties:
+All the data policy events appear under the **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection that includes the following properties:
 
 - Operation Name
 - Policy ID
@@ -282,7 +282,7 @@ The data policy events listed in this table are sent to Microsoft Purview.
 | Update connector blocking policy | Emitted when connector blocking policy is updated.|
 | Delete connector blocking policy | Emitted when connector blocking policy is deleted.|
 
-Here's an example payload of metadata that can be expected from one of the events in the table.
+Here's an example payload of metadata that you can expect from one of the events in the table.
 
 ```json
 [
