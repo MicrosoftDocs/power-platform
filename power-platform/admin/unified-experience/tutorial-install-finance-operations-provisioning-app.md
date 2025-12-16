@@ -66,8 +66,6 @@ Installation of the provisioning app has the following known limitations:
 
 ### Install on an environment
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. 
@@ -93,37 +91,7 @@ Installation of the provisioning app has the following known limitations:
 
     :::image type="content" source="media/tutorial-install-app2.png" alt-text="Screenshot of the installation configuration page for the provisioning app.":::
 
-1. Agree to the terms and conditions, and then select **Install** to start the installation. 
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. On the navigation pane, select **Environments**. The **Environments** list page is shown.
-1. Select an environment that meets the prerequisite criteria.
-1. On the environment details page, on the **Resources** card, select **Dynamics 365 apps**.
-1. Select **Install app**.
-1. Select **Dynamics 365 Finance and Operations Platform Tools**. This app provides platform support for installing ERP-based applications. It must be installed before you move on to the next step. If you have more than one license that provides access to this app, there might be multiple entries for the same app. In this case, select any entry that has a status of **Enabled**. Then select **Next**.
-
-    :::image type="content" source="media/tutorial-install-app-platformTools.png" alt-text="Screenshot where an entry for Dynamics 365 Finance and Operations Platform Tools that has a status of Enabled is selected for installation.":::
-
-1. Agree to the terms and conditions, and then select **Install** to start the installation. Wait for the installation to be completed before you move on to the next step. When the installation is completed, the value in the **Status** column changes from **Installing** to **Installed**.
-1. Select **Install app**.
-1. Select **Dynamics 365 Finance and Operations Provisioning App**. This app provides the finance and operations apps capabilities for Dynamics 365 Finance, Supply Chain Management, Project Operations, Human Resources, and Commerce workloads. If you have more than one license that provides access to this app, there might be multiple entries for the same app. In this case, select any entry that has a status of **Configured**. Then select **Next**.
-
-    :::image type="content" source="media/tutorial-install-app1.png" alt-text="Screenshot where an entry for Dynamics 365 Finance and Operations Provisioning App that has a status of Configured is selected for installation.":::
-
-1. Select **OK** to open the installation configuration page for the provisioning app.
-1. On the **Dynamics 365 Finance and Operations Provisioning App** page, set the following fields to configure the app:
-
-    - **Enable Developer Tools for Finance and Operations**: Select this checkbox to get a developer-enabled sandbox environment where you can connect Visual Studio and make X++ changes. If you leave this checkbox cleared, you get a standard sandbox or production environment.
-    - **Enable Demo Data for Finance and Operations**: Select this checkbox to deploy the standard Contoso demo data with your app.
-    - **Select the version of the product to be installed**: You can select any of the available supported versions for installation.
-
-    :::image type="content" source="media/tutorial-install-app2.png" alt-text="Screenshot of the installation configuration page for the provisioning app.":::
-
-1. Agree to the terms and conditions, and then select **Install** to start the installation. 
-
----
+1. Agree to the terms and conditions, and then select **Install** to start the installation.
 
 The installation takes about an hour to be completed. While the installation is still in progress, the status of the Finance and Operations Provisioning app is shown as **Installing**.
 

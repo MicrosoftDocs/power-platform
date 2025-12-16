@@ -47,18 +47,9 @@ Once you made your purchase, there are no further actions needed in the Microsof
 
 After purchase, you allocate per app plans to environments. If you have multiple environments like test and production, you need to allocate per app plans capacity to all these environments appropriately.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Capacity add-ons**.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Resources**, then select **Capacity**.
-
----
 
 If your organization purchases add-ons that include per app plans, an **Add-ons** tile appears on the **Capacity** screen displaying summary information about the capacity add-ons that your organization has.
 
@@ -101,20 +92,11 @@ Follow these steps to turn on assigning per app plans for users when an app is s
 
 Check the **App passes** capacity for the environment with the app you're sharing. Make sure you have sufficient app passes assigned for the number of users using the app.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Capacity add-ons**.
 1. Select the **Add-ons** tab.
 
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Resources**, then select **Capacity**.
-1. Select the **Add-ons** tab.
-
----
 :::image type="content" source="media/powerapps-per-app-plans/add-on-assignment.png" alt-text="Display of add-on capacity assignment in Power Platform admin center" lightbox="media/powerapps-per-app-plans/add-on-assignment.png":::
 
 ## Step 4: Share the app
