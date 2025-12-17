@@ -23,7 +23,7 @@ AI innovation moves at a rapid pace, and each AI model has different strengths a
 
 ## Allow access
 
-Before you can access the *Enable External Models* environment setting and the group environment rule in the Power Platform admin center, a [system admin](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) needs to allow access to Anthropic's AI models in the [Microsoft 365 admin center](https://admin.cloud.microsoft/#/copilot/settings/DataAccess).
+Before you can access the *Enable External Models* environment setting and the environment group rule in the Power Platform admin center, a [system admin](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) needs to allow access to Anthropic's AI models in the [Microsoft 365 admin center](https://admin.cloud.microsoft/#/copilot/settings/DataAccess).
 
 - To enable Anthropic models before January 7, 2026, complete the steps in [Connect to Anthropic's AI models](https://go.microsoft.com/fwlink/?linkid=2334803).
 - To enable Anthropic models on January 7, 2026, or later, complete the steps in [Anthropic as a subprocessor for Microsoft Online Services](/copilot/microsoft-365/connect-to-ai-subprocessor).
