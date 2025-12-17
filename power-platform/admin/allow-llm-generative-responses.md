@@ -28,7 +28,7 @@ Before you can access the *Enable External Models* environment setting and the g
 - To enable Anthropic models before January 7, 2026, complete the steps in [Connect to Anthropic's AI models](https://go.microsoft.com/fwlink/?linkid=2334803).
 - To enable Anthropic models on January 7, 2026, or later, complete the steps in [Anthropic as a subprocessor for Microsoft Online Services](/copilot/microsoft-365/connect-to-ai-subprocessor).
 
-If the **Enable External Models** setting or rule is visible in the Power Platform admin center but you can't switch it, it might be because:
+If you see the **Enable External Models** setting or rule in the Power Platform admin center but you can't switch it, it might be because:
 
 - Your admin didn't allow access to Anthropic's AI models.
 - Your admin allowed access, but it takes more time before the setting is available to you.
@@ -62,9 +62,9 @@ If your environment is part of an [environment group](environment-groups.md), yo
 
 ## Exclusions
 
-The following exclusions apply when using Anthropic models:
+The following exclusions apply when you use Anthropic models:
 
-- Anthropic models within Copilot Studio are currently excluded from EU Data Boundary commitments.
-- FedRAMP is not achieved for Anthropic models within Copilot Studio. If your organization requires FedRAMP prior to use, you should consult with your Authorization Official to determine if use of Anthropic models is allowed.
+- Anthropic models in Copilot Studio are currently excluded from EU Data Boundary commitments.
+- FedRAMP is not achieved for Anthropic models in Copilot Studio. If your organization requires FedRAMP before use, consult with your Authorization Official to determine if use of Anthropic models is allowed.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
