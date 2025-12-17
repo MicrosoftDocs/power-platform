@@ -17,6 +17,7 @@ contributors:
 - mihaelablendea
 - mikferland-msft
 - sericks007
+- Greggbarker-MS
 ---
 
 # Licensing
