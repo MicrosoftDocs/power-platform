@@ -67,3 +67,4 @@ The following exclusions apply when you use Anthropic models:
 - Anthropic models in Copilot Studio are currently excluded from EU Data Boundary commitments.
 - FedRAMP isn't achieved for Anthropic models in Copilot Studio. If your organization requires FedRAMP before use, consult with your Authorization Official to determine if use of Anthropic models is allowed.
 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
