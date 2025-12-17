@@ -110,7 +110,6 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - Office 365 Groups
     - Microsoft Teams
     - OneDrive for Business
-    - Microsoft Dataverse
     - Power Apps for Makers
     - Microsoft Forms
     - Power BI
