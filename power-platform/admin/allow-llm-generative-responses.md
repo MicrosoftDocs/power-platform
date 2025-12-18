@@ -4,7 +4,7 @@ description: Learn how to allow external large language models for generative re
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/16/2025
+ms.date: 12/17/2025
 author: sericks007
 ms.author: sericks
 ms.reviewer: ellenwehrle
@@ -19,11 +19,11 @@ ms.contributors:
 AI innovation moves at a rapid pace, and each AI model has different strengths and specialties. By turning on the **Enable External Models** setting or rule, you allow the use of external AI models for an environment or an environment group. These models offer an alternative approach to generative AI in Microsoft Copilot Studio. These models support advanced summarization and conversational capabilities. Some model families are available in preview, for evaluation purposes, and also in production, as Microsoft subprocessors. The models available under the **Enable External Models** setting are hosted outside of Microsoft and, in some cases, are subject to their own terms and data handling. Currently, the only models available under the **Enable External Models** setting are Anthropic models.
 
 > [!IMPORTANT]
-> Starting January 7,2026, Anthropic operates as a Microsoft subprocessor and the Microsoft Product Terms and Microsoft Data Protection Addendum (DPA) apply to use of Anthropic models through Copilot Studio.
+> Starting January 7,2026, Anthropic operates as a Microsoft subprocessor and the Microsoft [Product Terms](https://www.microsoft.com/licensing/terms?msockid=344e0e6ad66c6b3e19441848d7416abd) and [Microsoft Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?lang=18&msockid=344e0e6ad66c6b3e19441848d7416abd) apply to use of Anthropic models through Copilot Studio.
 
 ## Allow access
 
-Before you can access the *Enable External Models* environment setting and the environment group rule in the Power Platform admin center, a [system admin](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) needs to allow access to Anthropic's AI models in the [Microsoft 365 admin center](https://admin.cloud.microsoft/#/copilot/settings/DataAccess).
+A Power Platform [system admin](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) needs to allow access to Anthropic's AI models in the [Microsoft 365 admin center](https://admin.cloud.microsoft/#/copilot/settings/DataAccess). If enabled there, you can access the *Enable External Models* environment setting and environment group rule in the Power Platform admin center.
 
 - To enable Anthropic models before January 7, 2026, complete the steps in [Connect to Anthropic's AI models](https://go.microsoft.com/fwlink/?linkid=2334803).
 - To enable Anthropic models on January 7, 2026, or later, complete the steps in [Anthropic as a subprocessor for Microsoft Online Services](/copilot/microsoft-365/connect-to-ai-subprocessor).
@@ -66,5 +66,6 @@ The following exclusions apply when you use Anthropic models:
 
 - Anthropic models in Copilot Studio are currently excluded from EU Data Boundary commitments.
 - FedRAMP isn't achieved for Anthropic models in Copilot Studio. If your organization requires FedRAMP before use, consult with your Authorization Official to determine if use of Anthropic models is allowed.
+- Payment Card Industry (PCI) Datay (PCI) Datay () Data Security Standard (DSS) is not applicable to Anthropic models within Copilot Studio. You should not use Anthropic models within Copilot Studio to store, process, or transmit payment and cardholder data.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
