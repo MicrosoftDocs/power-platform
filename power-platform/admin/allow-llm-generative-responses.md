@@ -4,7 +4,7 @@ description: Learn how to allow external large language models for generative re
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/17/2025
+ms.date: 12/18/2025
 author: sericks007
 ms.author: sericks
 ms.reviewer: ellenwehrle
@@ -66,6 +66,6 @@ The following exclusions apply when you use Anthropic models:
 
 - Anthropic models in Copilot Studio are currently excluded from EU Data Boundary commitments.
 - FedRAMP isn't achieved for Anthropic models in Copilot Studio. If your organization requires FedRAMP before use, consult with your Authorization Official to determine if use of Anthropic models is allowed.
-- Payment Card Industry (PCI) Datay (PCI) Datay () Data Security Standard (DSS) is not applicable to Anthropic models within Copilot Studio. You should not use Anthropic models within Copilot Studio to store, process, or transmit payment and cardholder data.
+- Payment Card Industry (PCI) Data Security Standard (DSS) is not applicable to Anthropic models within Copilot Studio. You should not use Anthropic models within Copilot Studio to store, process, or transmit payment and cardholder data.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
