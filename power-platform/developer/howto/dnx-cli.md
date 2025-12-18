@@ -37,7 +37,7 @@ You must have .NET 10.0 or higher installed.
 
 ## Use `dnx` Command
 
-With .NET 10 installed, you can use the [`dotnet tool exec` or `dnx` command](/dotnet/core/tools/dotnet-tool-exec) to execute PAC CLI without installing it globally or locally. This capability is especially valuable for Continuous Integration and Continuous Delivery (CI/CD) or other scenarios where you might not be able to or want to install PAC CLI. This capability provides one-shot invocation mode for PAC CLI commands. `dnx` automatically downloads the[PAC CLI package](https://www.nuget.org/packages/Microsoft.PowerApps.CLI.Tool) from [Nuget.Org](https://www.nuget.org/) to the local NuGet cache and invokes it without modifying your system PATH or requiring permanent installation.
+With .NET 10 or higher installed, you can use the [`dotnet tool exec` or `dnx` command](/dotnet/core/tools/dotnet-tool-exec) to execute PAC CLI commands without installing it globally or locally. This capability is especially valuable for Continuous Integration and Continuous Delivery (CI/CD) or other scenarios where you might not be able to or want to install PAC CLI. This capability provides one-shot invocation mode for PAC CLI commands. `dnx` automatically downloads the[PAC CLI package](https://www.nuget.org/packages/Microsoft.PowerApps.CLI.Tool) from [Nuget.Org](https://www.nuget.org/) to the local NuGet cache and invokes it without modifying your system PATH or requiring permanent installation.
 
 Use the following syntax:
 
