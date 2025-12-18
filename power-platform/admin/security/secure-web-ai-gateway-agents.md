@@ -100,7 +100,7 @@ To configure Global Secure Access settings at the environment group-level, compl
 - GSA partner ecosystem integrations, for example, third-party Data Loss Prevention (DLP), aren't supported.
 - Copilot Studio Bing search network transactions not supported.
 - Limited connector support (see [supported connectors](#supported-connectors) for details).
-- Connectors other than those listed in [supported connectors](#supported-connectors) are not supported and may not function reliably (e.g., Dataverse, Common Data Service)
+- Connectors other than those listed in [supported connectors](#supported-connectors) are not supported and may not function reliably.
 
 ## Supported connectors
 
