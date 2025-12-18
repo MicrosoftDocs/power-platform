@@ -38,15 +38,13 @@ You must have .NET 10.0 or higher installed.
 
 ## Use built-in MCP server
 
-The Power Platform CLI features an integrated Model Context Protocol (MCP) server designed for local development and testing purposes. This server enables interaction with Power Platform through natural language, utilizing MCP-compatible tools such as [Microsoft Visual Studio](https://visualstudio.microsoft.com/), [VS Code](https://code.visualstudio.com/), Claude Code, and others.
+The Power Platform CLI (PAC CLI) features an integrated Model Context Protocol (MCP) server designed for local development and testing purposes. This server enables interaction with Power Platform through natural language, utilizing MCP-compatible tools such as [Microsoft Visual Studio](https://visualstudio.microsoft.com/), [VS Code](https://code.visualstudio.com/), Claude Code, and others.
 
-## Why would you use the Power Platform CLI built-in MCP server?
+## Invoke PAC CLI commands with natural language
 
-The Power Platform CLI has many commands available to work with the Power Platform. But, working with these commands can be a bit of a hassle. You need to remember the commands and the parameters or you need to run the help command a lot.
+It isn't necessary to memorize all the PAC CLI commands and parameters or constantly refer to the [help command](../cli/reference/help.md) when you use natural language to invoke PAC CLI commands. It is much easier to use the PAC CLI integrated MCP server invoke the commands using natural language.
 
-The Power Platform CLI integrated MCP server helps with making it easier. You can now use the MCP server to talk to the commands in natural language. This way you don't have to learn all the commands and the parameters.
-
-Before we go into a couple of examples, let's first show you how to add the Power Platform CLI MCP server.
+Before you begin, you need to start the built-in MCP server.
 
 ## Starting the MCP Server
 
@@ -56,17 +54,25 @@ To start the built-in MCP server, use the [copilot mcp](../cli/reference/copilot
 pac copilot mcp --run
 ```
 
-Starting the MCP server with .Net `dnx` command:
+Or you can start the MCP server with .Net `dnx` command without installing PAC CLI.
 
 ```dotnetcli
 dnx Microsoft.PowerApps.CLI.Tool --yes copilot mcp --run
 ```
 
-## Registering the MCP Server with Visual Studio
+[Learn more about how to use the Power Platform CLI without installing it](dnx-cli.md)
 
-To register the MCP server with Visual Studio, follow steps outlined in the [Use MCP servers for Visual Studio](/visualstudio/ide/mcp-servers?view=visualstudio).
 
-If you are editing mcp.json file manually, MCP server registration should look like this:
+## Register the MCP Server
+
+After the server is running, register it with your MCP-compatible tool so it can discover and communicate with PAC CLI. Registration simply points your IDE or editor to the running server; choose your tool below for guided steps, or use the manual configuration example if you prefer.
+
+
+### Visual Studio
+
+To register the MCP server with Visual Studio, follow steps outlined in the [Use MCP servers for Visual Studio](/visualstudio/ide/mcp-servers).
+
+If you are editing `mcp.json` file manually, MCP server registration should look like this:
 
 ```json
 {
@@ -80,11 +86,11 @@ If you are editing mcp.json file manually, MCP server registration should look l
 }
 ```
 
-## Registering the MCP Server with VS Code
+### Visual Studio Code
 
-To register the MCP server with VSCode, follow steps outlined in the [Use MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers).
+To register the MCP server with VS Code, follow steps outlined in the [Use MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers).
 
-## Registering the MCP Server with Claude Code
+### Claude Code
 
 To register the MCP server with Claude Code, follow steps outlined in the [Connect Claude Code to tools via MCP](https://code.claude.com/docs/en/mcp).
 
@@ -98,11 +104,11 @@ claude mcp add-json pac-cli '{"type":"stdio","command":"dnx","args":["Microsoft.
 
 Once the MCP server is registered with your MCP-compatible tool, you can start interacting with it using natural language. Here are a couple of examples:
 
-```plaintext
+```
 show me AI related tenant settings
 ```
 
-```plaintext
+```
 Create MD file with table listing all Dataverse environments
 ```
 
