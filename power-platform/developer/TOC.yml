@@ -90,6 +90,8 @@
               href: howto\install-cli-net-tool.md
             - name: Install using Windows MSI
               href: howto\install-cli-msi.md
+            - name: Use built-in MCP server
+              href: howto\use-mcp.md
             - name: Create and register a plug-in package
               href: howto\cli-create-package.md
             - name: Power Platform CLI reference
