@@ -33,6 +33,8 @@ You must have .NET 10.0 or higher installed.
 
 [Install .NET on macOS](/dotnet/core/install/macos)
 
+---
+
 ## Use `dnx` Command
 
 You can now use the [`dotnet tool exec` or `dnx` command](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-tool-exec) to execute PAC CLI without installing it globally or locally. This is especially valuable for CI/CD or ephemeral usage. This provides one-shot invocation mode for PAC CLI commands. `Dnx` automatically downloads [PAC CLI package](https://www.nuget.org/packages/Microsoft.PowerApps.CLI.Tool) from [Nuget.Org](https://www.nuget.org/) to the local NuGet cache and invokes it without modifying your system PATH or requiring permanent installation.
