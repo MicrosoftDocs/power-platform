@@ -82,7 +82,7 @@
         - name: Power Platform CLI
           href: cli\introduction.md
           items:
-            - name: Run with `dnx` command
+            - name: Run without installation (dnx)
               href: howto\dnx-cli.md
             - name: Install Visual Studio Code extension
               href: howto\install-vs-code-extension.md

@@ -1,10 +1,10 @@
 ---
 title: Run Power Platform CLI using `dnx` Command
-description: Instructions to run Power Platform CLI using the `dnx` command
+description: Learn how to to use the Power Platform CLI with the `dnx` command
 ms.author: anpetroc
 author: anpetroc
 ms.reviewer: jdaly
-ms.date: 12/17/2025
+ms.date: 12/18/2025
 ms.subservice: developer
 ms.topic: how-to
 search.audienceType: 
@@ -37,7 +37,7 @@ You must have .NET 10.0 or higher installed.
 
 ## Use `dnx` Command
 
-You can now use the [`dotnet tool exec` or `dnx` command](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-tool-exec) to execute PAC CLI without installing it globally or locally. This is especially valuable for CI/CD or ephemeral usage. This provides one-shot invocation mode for PAC CLI commands. `Dnx` automatically downloads [PAC CLI package](https://www.nuget.org/packages/Microsoft.PowerApps.CLI.Tool) from [Nuget.Org](https://www.nuget.org/) to the local NuGet cache and invokes it without modifying your system PATH or requiring permanent installation.
+When .NET  10 is installed, you can use the [`dotnet tool exec` or `dnx` command](/dotnet/core/tools/dotnet-tool-exec) to execute PAC CLI without installing it globally or locally. This is especially valuable for Continuous Integration and Continuous Delivery (CI/CD) or other scenarios where you may not be able to or want to install PAC CLI. This provides one-shot invocation mode for PAC CLI commands. `dnx` automatically downloads the[PAC CLI package](https://www.nuget.org/packages/Microsoft.PowerApps.CLI.Tool) from [Nuget.Org](https://www.nuget.org/) to the local NuGet cache and invokes it without modifying your system PATH or requiring permanent installation.
 
 Use the following syntax:
 
@@ -57,10 +57,7 @@ See full list of available commands in the [Power Platform CLI reference](../../
 
 If you still need to install Power Platform CLI, see:
 
-[Install Power Platform CLI with .NET Tool](install-cli-net-tool.md)
-
-[Install the Power Platform Tools Visual Studio Code extension](install-vs-code-extension.md)
-
-[Install Power Platform Tools for Windows](install-cli-msi.md)
-
-[How to manage .NET tools](/dotnet/core/tools/global-tools)
+- [Install Power Platform CLI with .NET Tool](install-cli-net-tool.md)
+- [Install the Power Platform Tools Visual Studio Code extension](install-vs-code-extension.md)
+- [Install Power Platform Tools for Windows](install-cli-msi.md)
+- [How to manage .NET tools](/dotnet/core/tools/global-tools)
