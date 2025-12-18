@@ -51,7 +51,7 @@ For example, see a list of all Dataverse environments:
 dnx Microsoft.PowerApps.CLI.Tool --yes env list
 ```
 
-See full list of available commands in the [Power Platform CLI reference](../../developer/cli/reference/).
+See full list of available commands in the [Power Platform CLI reference](../../developer/cli/reference/index.md).
 
 ### See also
 
@@ -60,4 +60,6 @@ If you still need to install Power Platform CLI, see:
 - [Install Power Platform CLI with .NET Tool](install-cli-net-tool.md)
 - [Install the Power Platform Tools Visual Studio Code extension](install-vs-code-extension.md)
 - [Install Power Platform Tools for Windows](install-cli-msi.md)
-- [How to manage .NET tools](/dotnet/core/tools/global-tools)
+
+
+[How to manage .NET tools](/dotnet/core/tools/global-tools)
