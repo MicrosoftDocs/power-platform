@@ -28,7 +28,7 @@ The following list includes examples of Copilot features that support recurrence
 - **[Scheduled prompts](/copilot/microsoft-365/scheduled-prompts)** from Microsoft 365 Copilot
 - **[AI workflow templates](https://support.microsoft.com/topic/b7023604-c62a-44d3-a097-fddb68e41ff3?preview=true)** from the Workflows app in Microsoft Teams
 
-You don't need to take any manual steps to create the environment. Only one environment is created per tenant, and it's name appears as **Microsoft 365** in the Power Platform admin center.
+You don't need to take any manual steps to create the environment. Only one environment is created per tenant, and its name appears as **Microsoft 365** in the Power Platform admin center.
 
 If the environment is deleted and the feature is used again, it's automatically recreated.
 
