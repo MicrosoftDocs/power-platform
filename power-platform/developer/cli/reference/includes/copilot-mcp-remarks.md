@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
-
 ### Remarks
 
-Add remarks here...
-
--->
+[Learn how to use the Power Platform CLI with built-in MCP server](../../../howto/use-mcp.md)

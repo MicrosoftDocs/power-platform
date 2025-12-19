@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac copilot mcp
-``` 
--->
+pac copilot mcp --run
+```
