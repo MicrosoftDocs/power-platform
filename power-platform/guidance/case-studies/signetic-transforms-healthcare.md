@@ -26,7 +26,7 @@ These inefficiencies delay service, increase error risks, and make it difficult 
 
 ## Solution
 
-Signetic's journey began with a mission to eliminate paperwork at pharmacies and clinics. During the COVID‑19 pandemic, they rapidly expanded the platform to support mass-vaccination sites like Seattle's Lumen Field, which served over 800,000 patients. Since then, the solution evolved into an enterprise-grade platform that improves workflows across pharmacies, clinics, and community health providers. The platform simplifies scheduling and documentation, reporting, and claims processing, with AI agents augmenting labor-intensive tasks for billing operators.
+Signetic's journey began with a mission to eliminate paperwork at pharmacies and clinics. During the COVID‑19 pandemic, they rapidly expanded the platform to support mass-vaccination sites like Seattle's Lumen Field, which served over 800,000 patients. Since then, the solution evolved into an enterprise-grade platform that improves workflows across pharmacies, clinics, and community health providers. The platform simplifies scheduling, documentation, reporting, and claims processing with AI agents augmenting labor-intensive tasks for billing operators.
 
 The solution provides tailored experiences through role-based apps and portals for patients, managers, staff, and billing operators. Behind the scenes, it integrates Power Platform, Copilot Studio, and various Azure services to provide a scalable, secure, and extensible architecture. Signetic also established a dedicated AI team responsible for model evaluation, prompt engineering, and identifying new opportunities to enhance and expand intelligent automation.
 
@@ -85,7 +85,7 @@ The following sections summarize the technologies that support the system.
 - Data storage:
   - **Dataverse**: Serves as the primary data store.
   - **ETL pipelines**: Transfer data into a centralized warehouse.
-  - **Azure SQL server**: Data warehouse, for making data available for analytics.
+  - **Azure SQL Server**: Data warehouse, for making data available for analytics.
 
 - Monitoring:
   - **Azure Log Analytics + Azure Application Insights**: For maintaining logs.
@@ -111,13 +111,13 @@ The following image shows the overview page for the fictive Owl Pharmacy and Cli
 
 ### Patient portal
 
-The patient portal is a custom React application designed to provide convenient, self-service access for patients. It lets them search for clinics, select services, schedule appointments, and receive confirmations and reminders. The Patient Portal reduces manual intake for clinic staff and offers a streamlined and mobile-friendly experience, .
+The patient portal is a custom React application designed to provide convenient, self-service access for patients. It lets them search for clinics, select services, schedule appointments, and receive confirmations and reminders. The Patient Portal reduces manual intake for clinic staff and offers a streamlined and mobile-friendly experience.
 
 :::image type="content" source="media/signetic/patient-portal.png" alt-text="Screenshot of Owl Pharmacy and Clinic patient portal with service selection options and a Continue button.":::
 
 ### Canvas app for staff
 
-When a patient arrives for their appointment, clinic staff use a Power Apps canvas app to manage the visit. Through this app, staff can view appointments, complete required documentation, record services provided (such as vaccinations or test services), and document notes and outcomes.
+When a patient arrives for their appointment, clinic staff use a Power Apps canvas app to manage the visit. Through this app, staff can view appointments, complete required documentation, record services provided (such as vaccinations or test services), and document visit notes and outcomes.
 
 The following image shows an appointment overview.
 
@@ -157,7 +157,7 @@ The Billing Ops Agent is designed to:
 
 - Answer claims-related questions from billing operators.
 - Retrieve real-time claims data from Dataverse.
-- Use uploaded files as knowledge source to provide explanations.
+- Use uploaded files as knowledge sources to provide explanations.
 - Provide step-by-step guidance for common tasks.
 
 The agent launches when a user selects the chat icon in the bottom right corner of the app. The following image shows the Billing Ops Agent with predefined prompts.
@@ -188,7 +188,7 @@ Many insurance providers require prior authorization before certain procedures o
 When a patient's email arrives, the agent:
 
 - Verifies information and requests missing details (full name and date of birth).
-- Retrieves contact and appointment data from Datavers via the MCP (model context protocol)
+- Retrieves contact and appointment data from Dataverse via the MCP (model context protocol)
 - Confirms the destination for the authorization.
 - Generate a composed email and form for the insurance provider.
 
