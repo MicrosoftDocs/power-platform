@@ -111,13 +111,13 @@ The following image shows the overview page for the fictive Owl Pharmacy and Cli
 
 ### Patient portal
 
-The patient portal is a custom React application designed to provide convenient, self-service access for patients. It allows them to search for nearby clinics, select services, schedule appointments, and receive appointment confirmations and reminders. The Patient Portal ensures a streamlined and mobile-friendly scheduling experience, reducing manual intake for clinic staff.
+The patient portal is a custom React application designed to provide convenient, self-service access for patients. It lets them search for clinics, select services, schedule appointments, and receive confirmations and reminders. The Patient Portal reduces manual intake for clinic staff and offers a streamlined and mobile-friendly experience, .
 
 :::image type="content" source="media/signetic/patient-portal.png" alt-text="Screenshot of Owl Pharmacy and Clinic patient portal with service selection options and a Continue button.":::
 
 ### Canvas app for staff
 
-When a patient arrives for their appointment, clinic staff use a Power Apps canvas to manage the visit. Through this app, staff can view scheduled appointments, complete required documentation, record services provided (such as vaccinations or test services), and document visit notes and outcomes.
+When a patient arrives for their appointment, clinic staff use a Power Apps canvas app to manage the visit. Through this app, staff can view appointments, complete required documentation, record services provided (such as vaccinations or test services), and document notes and outcomes.
 
 The following image shows an appointment overview.
 
@@ -143,7 +143,7 @@ This image shows claim details:
 
 ### Agents that enhance claims processing
 
-Two Copilot Studio agents enhance key billing and claims workflows. Together, they reduce manual work, identify errors faster, and support both staff and patients through natural language interactions. 
+Signetic uses two Copilot Studio agents to reduce manual work, identify errors faster, and support both staff and patients through natural language interactions. 
 
 The following diagram provides an overview of architecture of the two agents.
 
@@ -156,7 +156,7 @@ The Billing Ops Agent is a conversational agent built with Copilot Studio. The a
 The Billing Ops Agent is designed to:
 
 - Answer claims-related questions from billing operators.
-- Retrieve live claims data from Dataverse.
+- Retrieve real-time claims data from Dataverse.
 - Use uploaded files as knowledge source to provide explanations.
 - Provide step-by-step guidance for common tasks.
 
@@ -164,7 +164,8 @@ The agent launches when a user selects the chat icon in the bottom right corner 
 
 :::image type="content" source="media/signetic/billings-agent-launch.png" alt-text="Screenshot of Billing Ops Agent chat window showing sample prompts for claims errors and eligibility troubleshooting." lightbox="media/signetic/billings-agent-launch.png":::
 
-**Example usage**:
+## Examples
+
 - If a claim is marked unprocessed, the billing operator can open it and ask: "Why is this claim unprocessed?"
 - If a claim is rejected, the billing operator can ask: "Why was this claim rejected?" 
 
@@ -172,7 +173,7 @@ The following image shows the agent being tested in Copilot Studio.
 
 :::image type="content" source="media/signetic/billings-agent-test.jpg" alt-text="Screenshot of Billing Ops Agent in Copilot Studio showing a test session with claim rejection analysis and recommended steps." lightbox="media/signetic/billings-agent-test.jpg":::
 
-The agent combines Dataverse claim records (real-time status with details) and uploaded guidance documents with reasons for unprocessed claims. It then creates a clear explanation and recommends next steps. The agent also functions as a support assistant. For example, the operator can ask: "How do I create a task?" The agent then returns procedural guidance aligned with internal policies.
+The agent combines Dataverse claim records and uploaded guidance documents to create clear explanations and recommended next steps. It also serves as a support assistant. For example, the operator can ask: "How do I create a task?" The agent then returns procedural guidance aligned with internal policies.
 
 The agent has clear instructions to ensure consistent and easy-to-follow responses.
 
@@ -182,15 +183,14 @@ The agent has clear instructions to ensure consistent and easy-to-follow respons
 
 #### Send Prior Auth Agent
 
-Many insurance providers require prior authorization before certain procedures or medications can be provided. Traditionally, this process involves manual form completion, lengthy back-and-forth communication, and risk of errors. The Send Prior Auth Agent&mdash;an autonomous agent built with Copilot Studio&mdash;automates this workflow end to end. When a patient's email arrives, the Send Prior Auth Agent is triggered. It retrieves data from the Dataverse contact and appointment tables via the Dataverse MCP (model context protocol) server, and applies agent flows, including AI prompts, to compose and send the prior authorization to the insurance provider. 
+Many insurance providers require prior authorization before certain procedures or medications. Traditionally, this involves manual form completion, back-and-forth communication, and a high risk of errors. The Send Prior Auth Agent&mdash;an autonomous agent built with Copilot Studio&mdash;automates this workflow end to end. 
 
-The agent is designed to:
+When a patient's email arrives, the agent:
 
-- Verify information and request missing details (full name and date of birth).
-- Retrieve the contact ID (GUID) from Dataverse to lookup appointments.
-- Access appointment details from the appointment table.
-- Confirm the destination for sending the prior authorization.
-- Generate a composed email with the retrieved information in a prefilled form, ready to be sent to the insurance provider.
+- Verifies information and requests missing details (full name and date of birth).
+- Retrieves contact and appointment data from Datavers via the MCP (model context protocol)
+- Confirms the destination for the authorization.
+- Generate a composed email and form for the insurance provider.
 
 The following image shows an example of the composed email:
 
@@ -208,6 +208,8 @@ The Send Prior Auth Agent also supports Signetic's Durable Medical Equipment ser
 
 Signetic's solution delivers measurable operational improvements across clinics, pharmacies, and billing operations by modernizing core workflows and enabling agentic experiences.
 
+## Impact
+
 - **Streamlined operations**: Unified workflows reduce manual effort for clinic staff and billing teams.
 - **Faster claims resolution**: Agents help identify problems and resolve claims efficiently.
 - **Improved patient experience**: Self-service scheduling provides a simple and convenient access point for patients.
@@ -216,11 +218,9 @@ Signetic's solution delivers measurable operational improvements across clinics,
 
 ## Looking ahead
 
-Signetic is expanding the use of AI-powered data extraction and patient record creation. While developers currently use these capabilities internally, the next phase is to integrate them into the core application suite so that clinics and operational teams can benefit directly.
+Signetic is expanding its AI-powered data extraction and patient record creation capabilities, integrating them into their core applications. They're also modernizing the authorization to support more templates and direct portal submissions.
 
-Signetic also plans to further modernize the authorization process for the billing operations team. Because each insurance provider uses different portals and templates, the company is extending its solution to automatically retrieve, populate, and submit the appropriate forms&mdash;supporting a wider variety of formats and enabling direct uploads to portals.
-
-Together, these initiatives reinforce Signetic's commitment to infusing AI throughout its platform, evolving its applications into intelligent, adaptive tools that help pharmacies and clinics scale, operate more efficiently, and function as modern community health hubs.
+These advancements help Signetic continue infusing AI throughout its platform and enable pharmacies and clinics to operate as modern community health hubs.
 
 ## Takeaways
 
