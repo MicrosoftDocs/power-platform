@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 environment for recurring Copilot prompts 
-description: Learn more about the Microsoft 365 environment that supports runtime operations required by features like Scheduled Prompts, Teams AI Workflows, and more.
+description: Learn more about the Microsoft 365 environment that supports runtime operations required by features like scheduled prompts, Teams AI workflows, and more.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
@@ -16,7 +16,7 @@ ms.contributors:
 
 # Microsoft 365 environment for recurring Copilot prompts 
 
-A Microsoft 365 environment, that's a Power Platform production environment, is automatically created when users in your tenant first use a recurring Copilot feature. This environment supports runtime operations required by features like scheduled prompts, Teams AI workflows, and more. It's provisioned and governed differently than typical environments.
+A Microsoft 365 environment that is a Power Platform production environment is automatically created when users in your tenant first use a recurring Copilot feature. This environment supports runtime operations required by features like scheduled prompts, Teams AI workflows, and more. It's provisioned and governed differently than typical environments.
 
 This article provides details about the environment’s characteristics, behavior, permissions, and limitations to help Power Platform and Microsoft 365 administrators understand and manage the environment appropriately.
 
