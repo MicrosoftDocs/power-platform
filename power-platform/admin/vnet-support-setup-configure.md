@@ -52,9 +52,6 @@ The following diagram shows the functions of the roles in the setup process for 
 
 ### Set up the virtual network and subnets
 
-> [!NOTE]
-> Power Platform isn't supported in the Central US region. [Review the list of supported regions](./vnet-support-overview.md#supported-regions).
-
 1. Create [virtual networks](/azure/virtual-network/virtual-networks-overview) in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is United States, your virtual networks should be created in the **eastus** and **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
 
     > [!IMPORTANT]

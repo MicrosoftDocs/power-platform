@@ -6,7 +6,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 12/09/2025
 ms.subservice: admin
-ms.author: pvayner
+ms.author: osfaixat
 ms.reviewer: sericks
 search.audienceType: 
   - admin
