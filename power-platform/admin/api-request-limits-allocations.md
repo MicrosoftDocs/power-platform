@@ -127,8 +127,6 @@ Review the following resources for information about *current* service protect
 
 To view the consumption of Power Platform requests for licensed users, non-licensed users, and per flow licensed flow runs, take these steps:
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
 1. On the **Licensing** pane, select **Capacity add-ons** to view the *Capacity* page.
@@ -146,28 +144,6 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 
 1. Select **Submit**.
 1. Once the report is ready, select **Download** to download the report as an Excel CSV file.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, expand *Resources*.
-1. Select **Capacity** to view the *Capacity* page.
-1. On the **Summary** tab, scroll down to the *Add-ons* section and select **Download reports**.
-
-   :::image type="content" source="media/api-request-limits-allocations/capacity-download-reports.png" alt-text="Screenshot that shows the Capacity page in the Power Platform admin center and highlights the link to download reports." lightbox="media/api-request-limits-allocations/capacity-download-reports.png":::
-
-1. On the *Downloadable Reports* page, select **New** from the command bar.
-1. Expand the **Choose a report** box and select **Microsoft Power Platform requests**.
-1. Select the required scope of the report:
-
-    - Licensed User
-    - Non-licensed User
-    - Per Flow Licensed Flows
-
-1. Select **Submit**.
-1. Once the report is ready, select **Download** to download the report as an Excel CSV file.
-
----
 
 > [!NOTE]
 > These reports are in preview and currently limited to Power Automate API requests. API requests from Dataverse, Microsoft Copilot Studio, and Power Apps aren't included at this time.
@@ -282,17 +258,17 @@ All organizations are in a transition period. That means that enforcement isn't 
 
 Here are a few things to be aware of during the transition period:
 
-1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the official limits to prevent potential unintended impact on your apps or flows.
+- The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the official limits to prevent potential unintended impact on your apps or flows.
 
-1. These transition period limits are applied at the cloud flow level during the transition period. Additionally, a separate per user level limit of 1,000,000 cloud flow actions is applied during the transition period to ensure users don't exceed 1M actions across all their flow runs in a day. After the transition period ends, the actual limits are applied at user level for Premium licenses and cloud flow level for Process / Per flow-plan licenses.
+- These transition period limits are applied at the cloud flow level during the transition period. Additionally, a separate per user level limit of 1,000,000 cloud flow actions is applied during the transition period to ensure users don't exceed 1M actions across all their flow runs in a day. After the transition period ends, the actual limits are applied at user level for Premium licenses and cloud flow level for Process / Per flow-plan licenses.
 
-1. During the transition period, manual cloud flows don't use the flow owners/flow invokers limits. Every manual cloud flow has a performance profile of Medium (100,000 requests/flow/24 hours). After the transition period, manual cloud flows will use the request limits of invoking user.
+- During the transition period, manual cloud flows don't use the flow owners/flow invokers limits. Every manual cloud flow has a performance profile of Medium (100,000 requests/flow/24 hours). After the transition period, manual cloud flows will use the request limits of invoking user.
 
-1. Since the limits are more generous during the transition period, stacking of user licenses isn't supported. If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow uses the higher plan (Dynamics 365 plan).
+- Since the limits are more generous during the transition period, stacking of user licenses isn't supported. If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow uses the higher plan (Dynamics 365 plan).
 
-1. Power Platform requests capacity add-on packs aren't assignable to users or cloud flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your cloud flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
+- Power Platform requests capacity add-on packs aren't assignable to users or cloud flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your cloud flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
-1. Seeded license users can only use cloud flows within the context of the app. Learn more in the [seeded licenses](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license) section. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
+- Seeded license users can only use cloud flows within the context of the app. Learn more in the [seeded licenses](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license) section. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
 
 ## Frequently asked questions
 

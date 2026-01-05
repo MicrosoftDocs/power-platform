@@ -20,8 +20,6 @@ contributors:
 
 The **Copilot** area in the Power Platform admin center is a centralized location for usage and cost insights, upcoming features, learning documents, and granular controls to scale Copilot and agent adoption in Power Platform. Tenant admins and environment admins can access these resources in one place by selecting **Copilot** in the navigation pane.
 
-# [New admin center](#tab/new)
-
 When you select **Copilot** in the navigation pane, you can select the following pages in the **Copilot** pane of the Power Platform admin center.
 
 ## Get started
@@ -98,23 +96,3 @@ Admins can access detailed usage analytics and apply governance controls tailore
 ### Dynamics 365 Sales
 
 Admins can view usage analytics for Copilot in Dynamics 365 Sales on the **Dynamics 365 Sales** page to understand the value that end users get from AI in Dynamics 365 Sales. The page includes monthly active user count information for Copilot in Dynamics 365 Sales. Furthermore, admins can look into Copilot by selecting it from the bottom table view. This opens a panel where you can see top environments and investigate those to see apps where users are interacting with Copilot the most.
-
-# [Classic admin center](#tab/classic)
-
-> [!NOTE]
-> The **Copilot** area in classic admin center is only available for customers in sovereign clouds.
-
-## Get ready to manage Copilot and agents
-
-Resources and documents to help admins better understand how Copilot works, data and security fundamentals for Copilot features, and Microsoft's Responsible AI principles are available in the **Get ready to manage Copilot and agents** section. These documents are updated over time as new Copilot capabilities are released.
-
-The **What’s new** web part lists new Copilot features as they're introduced or promoted to general availability.
-
-> [!NOTE]
-> There might be a one or two week delay to updates made in the **What’s new** web part. The [Release plans](/dynamics365/release-plans/) and [Power Platform blogs](https://www.microsoft.com/power-platform/blog) are the best source to stay on top of new Copilot features.
-
-## Governance
-
-The **Governance** section shows the percentage of environments in your tenant that have specific Copilot features turned on or off. When you select the Power Automate or Copilot Studio features, you see documentation with detailed information on that Copilot's capabilities, prerequisites, and how to turn it on or off.  
-
-When you select the Power Platform Settings, Power Apps settings, or **Manage settings** next to the governance header, you open the settings panel where you can modify [tenant](../tenant-settings.md) and [environment-level Copilot settings](../settings-features.md#copilot-preview). Select your environment, your Power Platform product, and set your controls before selecting **Save**.

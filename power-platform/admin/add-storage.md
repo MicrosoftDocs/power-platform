@@ -68,17 +68,9 @@ After completing the purchase process, the extra storage capacity will appear in
 
 Follow these steps to access the Capacity page:
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**, and then select an environment.
 1. In the navigation pane, select **Licensing**.
 1. Under **Licensing**, select **Capacity add-ons**.
 
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
-1. Select **Resources** > **Capacity** > **Summary**.
-
----

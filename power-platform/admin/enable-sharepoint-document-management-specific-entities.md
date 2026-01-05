@@ -24,7 +24,6 @@ Enable document management for specific entities to store related records in Sha
   
 [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)] To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
-### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -34,20 +33,8 @@ Enable document management for specific entities to store related records in Sha
 1. On the **Document Management** page, select **Document management settings**.
 1. Choose the entities to use for managing SharePoint documents.
    - If a SharePoint site URL isn't already specified, enter the URL for storing documents. 
-1. Select **Next** to finalize and apply the changes. 
- 
-### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Integration**, then select **Document management settings**.
-1. On the **Document Management** page, select **Document management settings**.
-1. Choose the entities to use for managing SharePoint documents.
-   - If a SharePoint site URL isn't already specified, enter the URL for storing documents. 
-1. Select **Next** to finalize and apply the changes. 
----
- 
+1. Select **Next** to finalize and apply the changes.
+
 > [!IMPORTANT]
 > - Except for the opportunity and contract entities, a hierarchical folder structure isn't automatically created in SharePoint for entities that have more than one many-to-one (N:1) relationship with the parent entity.
 > - For document management to function correctly for an entity, the entity relationship must be one-to-many (1:N) between the entity and the SharePoint document entity. The documents that exist in the SharePoint document library don't appear in the app for entities with many-to-one (N:1) or many-to-many (N:N) relationships between the entity and a SharePoint document entity.

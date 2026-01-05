@@ -18,6 +18,12 @@ ms.custom:
 
 Get the latest info about what's new and what's changed in the Power Platform and Copilot Studio Architecture Center.
 
+## January 2026
+
+New in [Reference architectures](reference-architectures/index.md):
+
+- [Optimize the performance of canvas apps requiring complex business logic](reference-architectures/optimize-performance-canvas-apps.md)
+
 ## December 2025
 
 New in [Architecture key concepts](key-concepts/index.md):

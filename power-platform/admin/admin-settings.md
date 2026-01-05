@@ -19,17 +19,10 @@ ms.custom:
 
 You can view and manage the settings for your environments by signing in to the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-#### [New admin center](#tab/new)
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
-1. In the command bar, select **Settings**. 
-
-#### [Classic admin center](#tab/classic)
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, select **Settings**.  
----
+1. In the command bar, select **Settings**.
 
 Ensure you have the **System Administrator** security role or equivalent permissions to review and update the settings. To check your security role, refer to [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the necessary permissions, contact your system administrator.
 

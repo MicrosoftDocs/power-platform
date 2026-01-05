@@ -1,11 +1,11 @@
 ---
 title: Create pipelines using the platform host
 description: Learn how to create personal pipelines from your development environments to other target environments that you have import access to.
-author: asheehi1
-ms.author: asheehi
+author: caburk
+ms.author: caburk
 ms.reviewer: matp
 ms.topic: how-to
-ms.date: 01/06/2025
+ms.date: 12/12/2025
 ms.custom: template-how-to
 contributors:
 - asheehi1
@@ -99,6 +99,9 @@ There are three teams:
 - **Deployment Pipeline Administrators**. These users have full access to all pipelines and can play the Deployment Pipeline Configuration app.
 - **Deployment Pipeline Makers**. These users can create and consume personal pipelines that are managed in the custom host. If a maker needs to use a shared pipeline, we recommend that the user is assigned the **Deployment Pipeline Users** role to gain access to shared artifacts and shared stage runs.
 - **Deployment Pipeline Users**. These users can trigger a pipeline that is shared with them. Deployment Pipeline Users also have read access to all deployment stage runs within the same business unit.
+
+> [!IMPORTANT] 
+> - In the platform host, when makers use personal pipelines they're atomatically added to the **Deployment Pipeline Makers** team with the **Deployment Pipeline Default** role. Administrators can set a [default custom host](set-a-default-pipelines-host.md) to override maker access to personal pipelines in the platform host. 
 
 ## Frequently asked questions
 

@@ -83,8 +83,6 @@ Turning on disaster recovery in an environment doesn't affect the environment or
 
 To turn on disaster recovery, follow these steps.
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**. The **Environments** page appears.
@@ -94,21 +92,6 @@ To turn on disaster recovery, follow these steps.
 1. Select **Save**.
 1. The environment briefly displays the **Edit details** page.
 1. The **Environment details** page displays that the process of turning on the feature has started.
-
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
-1. In the navigation pane, select **Environments**.
-1. Select the production environment where you want to turn on self-service disaster recovery.
-1. Select **Disaster Recovery** in the command bar at the top of the page. The **Disaster Recovery** pane appears.
-1. Select the checkbox to turn on **Disaster Recovery**.
-1. Select **Save**.
-1. The environment briefly displays the **Edit details** page.
-1. The **Environment details** page displays that the process of turning on the feature has started.
-
-
----
 
 You might also want to turn on disaster recovery for other events, like:
 

@@ -30,8 +30,6 @@ You can use connector action control to allow or block individual actions or tri
 >
 > Making changes to policies through the Power Platform admin center doesn't remove triggers that were added via PowerShell.
 
-## [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
 1. On the navigation pane, select **Security**, and then on the **Security** pane, select **Data and privacy**.
 1. On the **Data protection and privacy** page, select **Data policy**.
@@ -50,24 +48,6 @@ You can use connector action control to allow or block individual actions or tri
 
    :::image type="content" source="media/connector-action-control/new-data-allow-actions.png" alt-text="Set Allow or Deny for connector actions." lightbox="media/connector-action-control/new-data-allow-actions.png":::
 
-## [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
-1. On the left navigation pane, select **Policies** > **Data policies**.
-1. Select a policy and on the command bar, select **Edit Policy**.
-1. On the left, select **Prebuilt connectors**.
-1. Select **More actions** next to your connector and then select **Configure connector** > **Connector actions**.
-
-   :::image type="content" source="media/connector-action-control/dlp-connector-actions.png" alt-text="Select Configure connector > Connector actions." lightbox="media/connector-action-control/dlp-connector-actions.png":::
-
-   > [!NOTE]
-   > You can configure connector actions for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
-
-1. Use the side panel to allow or deny specific actions.
-
-   You can also set the **Default connector action settings** to allow or block for any new connector actions that will be added to the connector in the future.
-
-   :::image type="content" source="media/connector-action-control/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
 
 ## Known limitations
 

@@ -34,8 +34,6 @@ You need to have one of the following user roles to access the **Tenant settings
 
 For more information on the user roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 1. In the navigation pane, select **Manage**.
@@ -44,14 +42,6 @@ For more information on the user roles, see [Microsoft Entra built-in roles](/en
 
 > [!NOTE]
 > You can also select the **Settings** gear icon on the top menu of the Power Platform admin center and then select **Power Platform settings** to access the **Tenant settings** page.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-2. Select **Settings** > **Tenant settings** in the left-side navigation pane.
-
----
 
 The following settings apply to all environments within your tenant.
 

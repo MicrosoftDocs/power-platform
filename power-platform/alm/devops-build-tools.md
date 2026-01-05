@@ -167,7 +167,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 **Do the Microsoft Power Platform Build Tools only work for Power Apps?**  
 
-*The build tools work for both canvas and model-driven apps, Microsoft CoPilot Studio virtual agents, UI Flows and traditional flows, AI Builder, custom connectors and dataflows, all of which can now be added to a solution. This list also includes customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation). Separate build tasks are available for Finance and Operations applications.*
+*The build tools work for both canvas and model-driven apps, Microsoft Copilot Studio virtual agents, UI Flows and traditional flows, AI Builder, custom connectors and dataflows, all of which can now be added to a solution. This list also includes customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation). Separate build tasks are available for Finance and Operations applications.*
 
 **I had previously installed the preview of the Build Tools - can I upgrade from the preview of Power Apps Build Tools to Power Platform Build Tools?**
 

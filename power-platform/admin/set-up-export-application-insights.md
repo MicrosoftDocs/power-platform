@@ -44,7 +44,6 @@ Learn how to set up data export from the Power Platform admin center to Applicat
 
 ## Create an export package
 
-### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Data export**.
@@ -68,30 +67,6 @@ Learn how to set up data export from the Power Platform admin center to Applicat
 
    The data export connection should now be set up. Within the next 24 hours, data starts being exported to your Application Insights environment.
 
-### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, expand **Analytics**. Then select **Data export**.
-1. On the **Data export** page, select the **App Insights** tab. Then select **New data export**.
-
-1. Provide a friendly name of the export package to identify the Azure Application Insights instance. Then select the specific data type you would like to export, such as **Dataverse diagnostics and performance** or **Power Automate**.
-   
-   If you select **Power Automate**, select whether to export cloud flow runs, triggers, or actions.
-
-1. Select one or more filters that allow you to view specific, filtered data.
-
-1. Select the environment that you're exporting data _from_. You can choose to filter based on the environment type. Select **Next**.
-
-1. Select the Azure subscription, resource group, and Application Insights environment that you're exporting data _to_. Select **Next**.
-
-    > [!NOTE]
-    > Confirm that you have **Contributor** or **Owner** access to the Azure Application Insights resource you intend to use. If you don’t, ask an Azure administrator to grant you access, or create a new Application Insights instance that you own. Typically, one production environment or tenant maps to one Application Insights environment.
-
-1. Review the details that you entered for the new export package, and then select **Create** to set up the data export connection. 
-
-   The data export connection should now be set up. Within the next 24 hours, data starts being exported to your Application Insights environment.
----
-
-
 ### Troubleshooting for missing telemetry 
 If no data appears in Application Insights within 24 hours of setup, verify the following:
 
@@ -102,7 +77,6 @@ A common cause of missing telemetry is insufficient permissions during setup.
 
 ## Delete an export package
 
-### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Data export**.
@@ -112,15 +86,5 @@ A common cause of missing telemetry is insufficient permissions during setup.
 1. Select the export package you want to delete and select **Delete export**.
 
    You can set up a new connection whenever you decide to restart the data export.
-
-### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, expand **Analytics**. Then select **Data export**.
-1. On the **Data export** page, select the **App Insights** tab. 
-1. Select the export package you want to delete and select **Delete export**.
-
-   You can set up a new connection whenever you decide to restart the data export.
-
----
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
