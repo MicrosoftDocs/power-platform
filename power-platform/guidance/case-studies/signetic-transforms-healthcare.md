@@ -57,8 +57,6 @@ The following diagram shows how these components work together across user exper
 
 :::image type="content" source="media/signetic/signetic-architecture.svg" alt-text="Diagram showing the high-level architecture of the Signetic solution." lightbox="media/signetic/signetic-architecture.svg":::
 
-<!-- Image to be updated to include a white background. -->
-
 ## Technologies used
 
 The following sections summarize the technologies that support the system.
@@ -179,7 +177,26 @@ The agent has clear instructions to ensure consistent and easy-to-follow respons
 
 :::image type="content" source="media/signetic/billings-agent-instructions.jpg" alt-text="Screenshot of agent instructions panel in Copilot Studio, displaying objective, guidelines, and capabilities for the Billings Op Agent." lightbox="media/signetic/billings-agent-instructions.jpg":::
 
-<!-- Any chance we can present these prompts as text in addition to the image for accessibility? Same for below. -->
+```copilot-prompt
+OBJECTIVE
+Provide accurate and actionable responses to queries related to the Signetic Billing Portal, including claims and NCPDP claim errors, ensuring users receive clear guidance without requiring direct database access.
+
+GENERAL GUIDELINES
+Be empathetic, clear, and concise in all responses.
+For claims or portal-related questions, refer to the Signetic Billing Portal Navigation document.
+Treat general or non-specific queries as related to the Billing Portal.
+For NCPDP‑related questions:
+Recognize claim IDs in the format ncpdp-XXXXXXXXXX (10-digit numeric suffix).
+Always query the smvs_ncpdp_claimses table in Dataverse for claim details.
+Never instruct users to manually check database tables or system columns.
+Focus on error diagnosis, reason, and actionable resolution.
+
+CAPABILITIES
+Billing Portal Guidance: Provide navigation and usage instructions for the Signetic Billing Portal.
+Claim Status Analysis: Determine the current state of claims (processed, pending, or errored).
+NCPDP Error Resolution: Extract error details from Dataverse and translate them into step-by-step recommended solutions.
+Knowledge Integration: Reference official Signetic documentation and NCPDP Knowledge Base for accurate guidance.
+```
 
 #### Send Prior Auth Agent
 
@@ -203,6 +220,22 @@ The following image shows the agent tested in Copilot Studio using the Dataverse
 Again, the agent has clear instructions to ensure consistent and easy-to-follow responses.
 
 :::image type="content" source="media/signetic/authorization-agent-instructions.png" alt-text="Screenshot of the Send Prior Auth Agent overview tab with instructions panel, agent details, and enabled orchestration toggle.":::
+
+```copilot-prompt
+When a user requests to send a Prior Authorization via email or message, first verify that the message includes the patient’s Full Name and Date of Birth.
+If either Full Name or Date of Birth is missing, prompt the user to provide these details before proceeding, and Send an email (V2) to request the missing information.
+Using the provided Full Name and Date of Birth, automatically query the Contact table in Dataverse
+to find the matching patient record and internally retrieve the associated contactid.
+Do NOT prompt the user for the contactid.
+Ask the user for the Email Address where the Prior Authorization should be sent.
+Query the msemr_appointments entity using the following OData filter:
+/api/data/v9.1/msemr_appointments?f‌​ilter=_msemr_actorpatient_value eq '{contactid}'
+
+Replace {contactid} with the retrieved GUID value.
+Use only the _msemr_actorpatient_value lookup field to filter appointments by patient contactid.
+Do NOT use any other fields to find patient appointments.
+Include all appointments returned by this query regardless of date, status, or field completeness.
+```
 
 The Send Prior Auth Agent also supports Signetic's Durable Medical Equipment service by generating prior authorization forms using data from the Dataverse product order tables.
 
