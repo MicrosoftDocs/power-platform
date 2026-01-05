@@ -72,11 +72,11 @@ This scenario requires a CIDR block of **/24**, which has capacity for 256 IPs a
 
 ## Supported scenarios
 
-Power Platform supports Virtual Network for both Dataverse plug-ins and [connectors](vnet-support-overview.md#supported-services). By using this support, you can create secured, private, outbound connectivity from Power Platform to resources within your Virtual Network. Dataverse plug-ins and connectors improve data integration security by connecting to external data sources from Power Apps, Power Automate, and Dynamics 365 apps. For example, you can:
+Power Platform supports Virtual Network for both Dataverse plug-ins and [connectors](#supported-services). By using this support, you can create secured, private, outbound connectivity from Power Platform to resources within your Virtual Network. Dataverse plug-ins and connectors improve data integration security by connecting to external data sources from Power Apps, Power Automate, and Dynamics 365 apps. For example, you can:
 
 - Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to connect to your cloud data sources, such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You can protect your data from data exfiltration and other incidents.
 - Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to securely connect to private, endpoint-protected resources in Azure, such as Web API, or any resources within your private network, such as SQL and Web API. You can protect your data from data breaches and other external threats.
-- Use [Virtual Network–supported connectors](vnet-support-overview.md#supported-services) such as [SQL Server](/connectors/sql/) to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) connector to establish secure connections to private, endpoint-enabled Azure Queues.
+- Use [Virtual Network–supported connectors](#supported-services) such as [SQL Server](/connectors/sql/) to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) connector to establish secure connections to private, endpoint-enabled Azure Queues.
 - Use [Azure Key Vault](/connectors/keyvault/) connector to securely connect to private, endpoint-protected Azure Key Vault.
 - Use [custom connectors](/connectors/custom-connectors/) to securely connect to your services that are protected by private endpoints in Azure or services that are hosted within your private network.
 - Use [Azure File Storage](/connectors/azurefile/) to securely connect to private, endpoint-enabled Azure file storage.
@@ -198,7 +198,7 @@ No, not while the feature is used in your environment. You can't change the DNS 
 
 ### Can I use the same enterprise policy for multiple Power Platform environments?
 
-Yes. You can use the same enterprise policy for multiple Power Platform environments. However, there's a limitation that [early release cycle environments](early-release.md) can't be used with the same enterprise policy as other environments.
+Yes. You can use the same enterprise policy for multiple Power Platform environments. However, there's a limitation that [early release cycle environments](/power-platform/admin/early-release) can't be used with the same enterprise policy as other environments.
 
 ### My Virtual Network has a custom DNS configured. Does Power Platform use my custom DNS?
 
@@ -250,14 +250,14 @@ As the number of concurrent plug-in executions increases, the infrastructure aut
 
 ### Who controls the Virtual Network and network policies associated with it?
 
-As a customer, you have ownership and control over the Virtual Network and its associated network policies. On the other hand, Power Platform uses the allocated IP addresses from the delegated subnet within that Virtual Network.
+You have ownership and control over the Virtual Network and its associated network policies. On the other hand, Power Platform uses the allocated IP addresses from the delegated subnet within that Virtual Network.
 
 ### Do [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin) support Virtual Network?
 No, [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin) don't support Virtual Network.
 
 ## Next steps
 
-[Set up Virtual Network support](vnet-support-setup-configure.md)
+[Set up Virtual Network support](/power-platform/admin/vnet-support-setup-configure)
 
 ## Related content
 
