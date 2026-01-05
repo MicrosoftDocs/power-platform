@@ -3,7 +3,7 @@ title: Set up virtual network support for Power Platform
 description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/22/2025
+ms.date: 12/09/2025
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -182,6 +182,7 @@ The following diagram shows the functions of the roles in the setup process for 
         - norway
         - singapore
         - sweden
+        - usgov
     - **VnetOneSubnetName**: Enter the name of the subnet from the first virtual network.
     - **VnetOneResourceId**: Enter the resource ID from the first virtual network.
     - **VnetTwoSubnetName**: Enter the name of the subnet from the second virtual network.
@@ -223,23 +224,12 @@ In the following procedures, you assign your environment to an enterprise policy
 1.	If you want to remove the enterprise policy from the environment, you can run the [RevertSubnetInjection.ps1](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/README.md#9-remove-subnet-injection-from-an-environment) script.
 
 ### Validate the connection
-## [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **History**.
-1. Verify that the **Status** shows **Succeeded**. 
-
-## [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **History**.
 1. Verify that the **Status** shows **Succeeded**.
----
 
 ## Best practices
 Ensure you choose the subnet size as per your requirement. After the subnet is delegated to Power Platform&mdash;and if later, there's a need to change the subnet range&mdash;it requires Microsoft Support to reflect the updated subnet changes.

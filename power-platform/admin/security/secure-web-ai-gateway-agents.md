@@ -100,6 +100,7 @@ To configure Global Secure Access settings at the environment group-level, compl
 - GSA partner ecosystem integrations, for example, third-party Data Loss Prevention (DLP), aren't supported.
 - Copilot Studio Bing search network transactions not supported.
 - Limited connector support (see [supported connectors](#supported-connectors) for details).
+- Connectors other than those listed in [supported connectors](#supported-connectors) are not supported and may not function reliably.
 
 ## Supported connectors
 
@@ -110,7 +111,6 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - Office 365 Groups
     - Microsoft Teams
     - OneDrive for Business
-    - Microsoft Dataverse
     - Power Apps for Makers
     - Microsoft Forms
     - Power BI
