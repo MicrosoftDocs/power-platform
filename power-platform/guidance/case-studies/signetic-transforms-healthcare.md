@@ -188,9 +188,9 @@ Many insurance providers require prior authorization before certain procedures o
 When a patient's email arrives, the agent:
 
 - Verifies information and requests missing details (full name and date of birth).
-- Retrieves contact and appointment data from Dataverse via the MCP (model context protocol)
+- Retrieves contact and appointment data from Dataverse via the MCP (model context protocol).
 - Confirms the destination for the authorization.
-- Generate a composed email and form for the insurance provider.
+- Generates a composed email and form for the insurance provider.
 
 The following image shows an example of the composed email:
 
