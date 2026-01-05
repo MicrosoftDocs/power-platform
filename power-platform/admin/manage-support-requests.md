@@ -25,8 +25,6 @@ To obtain support and resolve issues, you can submit, view and manage your suppo
 
 1.  Select **Support** in the navigation pane.
 
-:::image type="content" source="media/manage-support-requests/image1.png" alt-text="Screenshot of the Power Platform admin center with Support selected in the navigation pane.":::
-
 1.  Search, sort and filter the list of support requests by Status, Created by, among other metadata.
 
     - **Status:** Show either open, closed or all service requests.
@@ -54,7 +52,7 @@ To obtain support and resolve issues, you can submit, view and manage your suppo
 
 The support request details page contains information about the support request such as tile and description, current state and consent status, severity, categorization, contact details, attachments, and communication history. The actions ribbon at the top of the details page list available actions such as Edit, Close support request, and Open chat (see "[Live chat with persistence](/power-platform/admin/live-chat-support)" for details).
 
-:::image type="content" source="media/manage-support-requests/image2.png" alt-text="Screenshot of the support request details page showing metadata, communications history, and available actions.":::
+:::image type="content" source="media/manage-support-requests/support-request-details.png" alt-text="Screenshot of the support request details page showing metadata, communications history, and available actions.":::
 
 ### Support Request Metadata
 
@@ -99,5 +97,5 @@ Some details about a support request can be edited in the power platform admin c
 
 When you have made your changes, select “Save” button at the bottom of the panel. To cancel any changes or close the panel, either select the “X” at the top right of the panel, or click the “Cancel” button at the bottom of the panel.
 
-:::image type="content" source="media/manage-support-requests/image3.png" alt-text="Screenshot of the Edit support request panel showing editable fields and Save and Cancel buttons.":::
+:::image type="content" source="media/manage-support-requests/edit-support-request.png" alt-text="Screenshot of the Edit support request panel showing editable fields and Save and Cancel buttons.":::
 
