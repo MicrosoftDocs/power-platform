@@ -105,6 +105,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |disableSurveyFeedback | Boolean | Ability to disable all NPS survey feedback prompts in Power Platform. Default value is false.|
 |disableTrialEnvironmentCreationByNonAdminusers | Boolean | Restrict all trial environments to be created by tenant admins, Power Platform admins, or Dynamics 365 service admins. Default value is false.|
 |disableCapacityAllocationByEnvironmentAdmins | Boolean | Ability to disable capacity allocation by environment administrators. Default value is false.|
+|disableM365Consent | Boolean | Ability to disable tenant's M365 consent. Default value is false.|
 |disableSupportTicketsVisibleByAllUsers | Boolean | Allows users, who already have access to the **Support** page in Power Platform admin center, to see support requests created by other users in the tenant. Default value is True, which means this feature is turned off by default.|
 |powerPlatform.search.disableDocsSearch | Boolean | When this setting is true, users in the environment can see a message that indicates Microsoft Learn and documentation search categories have been turned off by the administrator. Default value is false.|
 |powerPlatform.search.disableCommunitySearch | Boolean | When this setting is true, users in the environment can see a message that indicates community and blog search categories have been turned off by the administrator. Default value is false.|
@@ -145,6 +146,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.modelExperimentation.disableDataLogging | Boolean | Ability to disable data logging and remove all data logged for Power Automate Copilot AI feature customer data (inputs and outputs). Default value is false.|
 |powerPlatform.catalogSettings.powerCatalogAudienceSetting | Enum |This setting is reserved for future use. No enforcement is driven by this setting at the current time.|
 |powerPlatform.gccCommercialSettings.disableGccCommercialAccess | Boolean |Turning on this setting allows connections to resources in Azure commercial that operate and send data outside the Power Platform US Government compliance boundary. This is specifically used to allow access to commercial resources from GCC cloud versions of Power Platform Connectors.|
+|powerPlatform.catalogSettings.powerCatalogAudienceSetting | Enum |This setting is reserved for future use. No enforcement is driven by this setting at the current time.|
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
