@@ -3,7 +3,7 @@ title: Set up virtual network support for Power Platform
 description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/09/2025
+ms.date: 01/05/2026
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
