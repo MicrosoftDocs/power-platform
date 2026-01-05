@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
-ms.date: 12/12/2025
+ms.date: 01/05/2026
 ms.topic: overview
 ---
 
@@ -222,7 +222,7 @@ Again, the agent has clear instructions to ensure consistent and easy-to-follow 
 :::image type="content" source="media/signetic/authorization-agent-instructions.png" alt-text="Screenshot of the Send Prior Auth Agent overview tab with instructions panel, agent details, and enabled orchestration toggle.":::
 
 ```copilot-prompt
-When a user requests to send a Prior Authorization via email or message, first verify that the message includes the patient’s Full Name and Date of Birth.
+When a user requests to send a Prior Authorization via email or message, first verify that the message includes the patient's Full Name and Date of Birth.
 If either Full Name or Date of Birth is missing, prompt the user to provide these details before proceeding, and Send an email (V2) to request the missing information.
 Using the provided Full Name and Date of Birth, automatically query the Contact table in Dataverse
 to find the matching patient record and internally retrieve the associated contactid.

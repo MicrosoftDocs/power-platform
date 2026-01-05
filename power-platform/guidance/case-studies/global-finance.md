@@ -115,3 +115,4 @@ Ajith explains why EY is so keen on using the Power Platform:
 - [Automation adoption best practices](/power-automate/guidance/automation-coe/overview/)
 - [Power Automate guidance documentation](/power-automate/guidance/)
 - [AI Builder documentation](/ai-builder/)
+- [Explore Power Platform and SAP integration](../../sap/explore/power-platform-and-SAP-integration.md)
