@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.author: mapichle
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 07/18/2025
+ms.date: 01/05/2026
 ms.reviewer: jhaskett-msft
 ms.contributors:
   - mapichle
@@ -18,7 +18,7 @@ As organizations increasingly rely on Power Platform to build scalable, data-dri
 
 ## Scenario
 
-By default, when an application queries data or performs multiple modifications, it sends individual HTTP network requests to Dataverse. Dataverse returns data to the application, and the application logic processes it. 
+By default, when an application queries data or performs multiple modifications, it sends individual HTTP network requests to Dataverse. Dataverse returns data to the application, and the application logic processes it.
 
 This implementation pattern causes waiting times, especially when the app sends multiple requests, such as in a [ForAll function](../../power-fx/reference/function-forall.md). Waiting time negatively impacts performance and user experience. For example, if the app retrieves and transforms data multiple times in a ForAll loop, the overall waiting time can become substantial, leading to a slow and inefficient user experience.
 
@@ -29,7 +29,7 @@ To optimize data interaction, shift logic and data retrieval operations from the
 
 ## Architecture diagram
 
-In this diagram, Power Fx functions are used to shift complex business logic from the canvas app to Dataverse. You can also use a Dataverse custom API to achieve the same result. For help deciding which option to use, see [Recommendations](#recommendations).
+In this diagram, Power Fx functions are used to shift complex business logic from the canvas app to Dataverse. You can also use a Dataverse custom API to achieve the same result. Refer to [Recommendations](#recommendations) to help decide which option to use.
 
 :::image type="content" source="media/optimize-canvas-apps/arch.png" alt-text="Architecture diagram that shows the difference between using canvas app built-in capabilities for data operations and using Power Fx functions.":::
 
@@ -39,9 +39,9 @@ In this diagram, Power Fx functions are used to shift complex business logic fro
 
 1. The Power Fx function (with Dataverse custom API) is configured to pass input parameters from the calling app and receive the outcome (response parameters) from the function (or API) via defined output parameters. For:
 
-    - **Power Fx function (preview):** Implement logic in the Power Apps studio. By using Power Fx functions, makers can construct complex logic with little or no coding expertise. For more information, see [Power Fx functions](#power-fx-functions).
+    - **Power Fx function (preview):** Implement logic in the Power Apps studio. By using Power Fx functions, makers can construct complex logic with little or no coding expertise. Learn more in [Power Fx functions](#power-fx-functions).
 
-    - **Dataverse custom API:** Implement logic by creating a Dataverse .NET plug-in. Custom .NET plug-ins require more coding knowledge but provide greater control and extensibility. For more information, see [Dataverse custom APIs](#dataverse-custom-apis).
+    - **Dataverse custom API:** Implement logic by creating a Dataverse .NET plug-in. Custom .NET plug-ins require more coding knowledge but provide greater control and extensibility. Learn more in [Dataverse custom APIs](#dataverse-custom-apis).
 
 ## Use case details
 
@@ -79,7 +79,7 @@ ForAll(Resources,
 
 This logic generates multiple HTTP calls to Dataverse when the application runs. While the best practice is to consolidate data into Dataverse views or use concurrent functions or other Power Fx techniques, this approach isn't always possible or it fails to meet performance objectives.
 
-To address this problem, eliminate multiple HTTP calls from the canvas app by shifting the data transformation - processing of data and required results - into a single response. This approach reduces the waiting time for data retrieval, enhances the overall performance of the canvas app, and provides a smoother and more responsive user experience. By centralizing the data transformation logic, you ensure consistent and efficient processing on the server side, which makes the solution scalable for large volumes of data and complex transformations.
+To address this problem, eliminate multiple HTTP calls from the canvas app by shifting the data transformation&mdash;processing of data and required results&mdash;into a single response. This approach reduces the waiting time for data retrieval, enhances the overall performance of the canvas app, and provides a smoother and more responsive user experience. By centralizing the data transformation logic, you ensure consistent and efficient processing on the server side, which makes the solution scalable for large volumes of data and complex transformations.
 
 ### Options
 
@@ -127,11 +127,11 @@ If your goal is to streamline canvas app performance while keeping the solution 
 
 ## Alternatives
 
-Another approach to this pattern is to shift the data operations and logic to a REST API and then implement a custom connector to allow the operations to be used from Power Apps. The difference with this approach lies in where the logic and data operations execute. In this case, they run in the compute resource that implements the REST API, such as an Azure function. 
+Another approach to this pattern is to shift the data operations and logic to a REST API and then implement a custom connector to allow the operations to be used from Power Apps. The difference with this approach lies in where the logic and data operations execute. In this case, they run in the compute resource that implements the REST API, such as an Azure function.
 
-Because they don't run within the Dataverse runtime sandbox, data operations are faster than those from the client but slower than those performed within Dataverse. Similarly, the logic doesn't run within the context of the Dataverse transaction. Unless special steps are taken, each data operation is independent and doesn't complete as a transactional unit. 
+Because they don't run within the Dataverse runtime sandbox, data operations are faster than those from the client but slower than those performed within Dataverse. Similarly, the logic doesn't run within the context of the Dataverse transaction. Unless special steps are taken, each data operation is independent and doesn't complete as a transactional unit.
 
-For more information, see [Use REST APIs to extend the functionality of canvas apps](custom-connector-canvas.md).
+Learn more in [Use REST APIs to extend the functionality of canvas apps](custom-connector-canvas.md).
 
 ## Considerations
 
