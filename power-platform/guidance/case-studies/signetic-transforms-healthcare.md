@@ -12,7 +12,7 @@ ms.topic: overview
 
 # Signetic transforms healthcare operations with intelligent apps and agents
 
-[Signetic](https://www.signetic.com/about-us) is a Seattle-based healthcare technology company that modernizes its pharmacy and clinic operations using Microsoft Power Platform, Copilot Studio, and Azure services. Their integrated suite of applications streamlines patient scheduling, site configuration, visit management, and claims processing&mdash;replacing manual, paper-heavy workflows with a scalable intelligent system.
+[Signetic](https://www.signetic.com/about-us) is a Seattle-based healthcare technology company that modernizes pharmacy and clinic operations using Microsoft Power Platform, Copilot Studio, and Azure services. Their integrated suite of applications streamlines patient scheduling, site configuration, visit management, and claims processing&mdash;replacing manual, paper-heavy workflows with a scalable intelligent system.
 
 By infusing AI agents built with Copilot Studio, Signetic transformed its applications into an intelligent, proactive system. The enhanced system improves efficiency and user experience and enables pharmacies and clinics to both operate as modern community health hubs and scale to serve more patients.
 
