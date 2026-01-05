@@ -15,6 +15,7 @@ contributors:
   - gregli-msft
   - mduelae
   - gregli
+no-loc: ["Download"]
 ---
 
 # Download function
@@ -30,7 +31,7 @@ The **Download** function downloads a file from the web to the local device.
 
 In native players (Windows, Android, and iOS), the user is prompted for a location to save the file.
 
-When used on the web, **Download** is dependent on the browser's settings to determine what happens with the file. For images, videos, PDFs, and other file types that the browser natively supports, a new browser tab is opened to display the file. Many browsers support saving the contents to the local file system.
+When used on the web, **Download** is dependent on the browser's settings and pop-up blocker configuration to determine what happens with the file. For images, videos, PDFs, and other file types that the browser natively supports, a new browser tab is opened to display the file. Many browsers support saving the contents to the local file system.
 
 Only on Windows, **Download** returns the location where the file was stored locally as a text string.
 
@@ -45,22 +46,22 @@ Only on Windows, **Download** returns the location where the file was stored loc
 > [!NOTE]
 > Power Apps cannot authenticate download requests to the address provided in the Download() function.
 >
-> For example, when using this function to download a file stored on a SharePoint site that requires authentication, the request might work when using a web browser since the browser session might authenticate against the SharePoint site using cached credentials. However, in Power Apps mobile app, the request will not work since authenticating the download request is not handled by the mobile device.
+> For example, when using this function to download a file stored on a SharePoint site that requires authentication, the request might work when using a web browser since the browser session might authenticate against the SharePoint site using cached credentials. However, in Power Apps mobile app, the request won't work since authenticating the download request is not handled by the mobile device.
 
 
 ## Examples
 
 ### Simple Download
 
-The following formula will download the user's guide for the Surface Book, a PDF file:
+The following formula downloads the user's guide for the Surface Book, a PDF file:
 
 ```power-fx
 Download( "https://go.microsoft.com/fwlink/?linkid=827480" )
 ```
 
-When run in a mobile device, the user will be prompted for a location to save the file.
+When run in a mobile device, the user is prompted for a location to save the file.
 
-When run in most web browsers, a new tab will be opened to display the PDF file as most browsers natively support this file type.
+When run in most web browsers, a new tab is opened to display the PDF file as most browsers natively support this file type.
 
 ### Step by Step
 
@@ -83,7 +84,8 @@ The **Product Showcase** tablet layout template was used for the following examp
 1. Select the **Download User Guide** button to download the guide.
 
 > [!NOTE]
-> Your browser settings determine whether to download the file or open the file directly in a new tab. For more details, go to [Download function description](#description).
+> - Your browser settings determine whether to download the file or open the file directly in a new tab. For more details, go to [Download function description](#description).
+> - If the Download formula is used to retrieve a file and the file isn’t downloaded successfully, it’s recommended to check whether the download is blocked by a browser pop-up blocker or if the browser is waiting for the user’s response to a dialog box asking for permission to download the file.
 
 ### See also
 

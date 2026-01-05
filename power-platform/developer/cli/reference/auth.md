@@ -125,7 +125,7 @@ Tenant ID if using application ID/client secret or application ID/client certifi
 **Deprecated**: Use `--environment` instead.
 #### `--username` `-un`
 
-Optional: The username to authenticate with; shows Microsoft Entra ID dialog if not specified.
+Optional: The username to authenticate with; shows a Microsoft Entra ID dialog if not specified.
 
 [!INCLUDE [auth-create-remarks](includes/auth-create-remarks.md)]
 

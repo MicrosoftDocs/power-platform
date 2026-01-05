@@ -4,7 +4,7 @@ description: Learn how to manage security in the Power Platform admin center by 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/24/2025
+ms.date: 07/31/2025
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
@@ -104,7 +104,7 @@ The system generates various recommendations, based on common best practices tha
 - Administrators are guided through an intuitive experience where they take relevant actions on environments, based on specific recommendations.
 - Each recommendation shows the potential increase to the overall security score.
 
-Although the recommendations span all environments, you can act on them only in Managed Environments. In the case of non-Managed Environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
+Although the recommendations span all environments, you can act on them only in Managed Environments. If non-Managed Environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
 
 ## Conditions that trigger feature recommendations
 
@@ -169,7 +169,7 @@ To make a recommendation active again, complete the following steps.
 ## Manage security settings at an environment group-level
 Managing Power Platform at scale presents challenges for IT teams overseeing numerous environments. To streamline security governance, administrators can configure security settings at the *environment group* level, ensuring uniform enforcement of policies across all environments within a group.
 
-Currently, security management at the environment group-level is available for **Sharing** features, with plans to extend support to other security capabilities soon. This structured approach simplifies administration, enhances security, and optimizes large-scale environment management for both startups and enterprises.
+Currently, security management at the environment group-level is available for **Sharing**, **IP Firewall**, and **IP address-based cookie binding** features, with plans to extend support to other security capabilities soon. This structured approach simplifies administration, enhances security, and optimizes large-scale environment management for both startups and enterprises.
 
 To configure security settings at the environment group-level, complete the following steps.
 
@@ -198,7 +198,7 @@ The security score is calculated based on the security features that are turned 
 
 ### Why don't all environments appear in the recommended action?
 
-Although the recommendations span all environments, you can act on them only in Managed Environments. In the case of non-Managed Environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
+Although the recommendations span all environments, you can act on them only in Managed Environments. If non-Managed Environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
 
 ### Can customers modify the recommendations based on their needs?
 

@@ -7,14 +7,12 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: concept-article
-ms.date: 08/27/2024
+ms.date: 11/19/1015
 search.audienceType: 
   - admin
 ---
 
 # Delete unlicensed or removed Microsoft Entra group members 
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 There are different scenarios where a user’s status might be set to _disabled_, including the following scenarios:
 
@@ -34,9 +32,10 @@ There’s an organization setting which allows you to override the validation of
 
 ### Use the Delete disabled users feature
 
-1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1.	In the navigation pane, select **Environments**.
-1.	Select a specific environment.
+1.	Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1.  In the navigation pane, select **Manage**.
+1.  In the **Manage** pane, select **Environments**.
+1.  On the **Environments** page, select an environment.
 1.	Select **Settings** > **Product** > **Features**.
 1.	Scroll through the list and find the **Delete disabled users** area.
 1.	Set the **Enable delete disabled users** setting to **On**.
@@ -48,9 +47,10 @@ You can delete multiple, unlicensed or removed Microsoft Entra group users using
 ## Soft-delete unlicensed or removed Microsoft Entra group users in bulk
 _Soft-deleted_ users remain in the system with a disabled status. Learn more: [What happens when a user is soft deleted?](delete-users.md#what-happens-when-a-user-is-soft-deleted).
 
-1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1.	In the navigation pane, select **Environments**.
-1.	Select a specific environment.
+1.	Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1.  In the navigation pane, select **Manage**..
+1.  In the **Manage** pane, select **Environments**.
+1.  On the **Environments** page, select an environment.
 1.	Select **Settings** > **Users + Permissions** > **Users**.
 1.	Select **Bulk delete** from the action bar. 
 1.	Select the **Disabled users** option in the **Use saved view** dropdown list.
@@ -71,9 +71,10 @@ _Soft-deleted_ users remain in the system with a disabled status. Learn more: [W
 
 ## Review the status of a bulk delete job
 
-1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1.	In the navigation pane, select **Environments**.
-1.	Select a specific environment.
+1.	Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1.  In the navigation pane, select **Manage**..
+1.  In the **Manage** pane, select **Environments**.
+1.  On the **Environments** page, select an environment.
 1.	Select **Settings** > **Audit and logs** > **System jobs**.
 1.	Select a bulk delete job and review the results. The results show records in the **Successes** row that should match the number of records from your previous soft-deletion, system job.
 
@@ -84,9 +85,10 @@ If you turned on [Dataverse auditing](manage-dataverse-auditing.md) in the envir
 ## Permanently delete unlicensed or removed Microsoft Entra group users in bulk
 To permanently delete unlicensed or removed Microsoft Entra group users, the users must first be soft-deleted. See the [Prerequisites](delete-users.md#prerequisites) that must be met before these users can be permanently deleted.
 
-1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1.	In the navigation pane, select **Environments**.
-1.	Select a specific environment.
+1.	Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1.  In the navigation pane, select **Manage**..
+1.  In the **Manage** pane, select **Environments**.
+1.  On the **Environments** page, select an environment.
 1.	Select **Settings** > **Users + Permissions** > **Users**.
 1.	Select **Bulk delete** from the action bar. 
 1.	Select the **Soft Deleted Users** view in the **Use saved view** dropdown list.

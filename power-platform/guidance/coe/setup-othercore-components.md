@@ -42,7 +42,7 @@ This app provides a guided step by step experience through the configuration ste
 
 [Update environment variables](faq.md#update-environment-variables) used by these components:
 
-The **Community URL** lets you link to your internal Microsoft Power Platform community, for example Yammer or Teams. You need the URL for the flow: Admin: Welcome Email v3. For more information, see [How to communicate with your admins, makers, and end users](setup.md#how-to-communicate-with-your-admins-makers-and-users).
+The **Community URL** lets you link to your internal Microsoft Power Platform community, for example Yammer or Teams. You need the URL for the flow: Admin: Welcome Email v3. For more information, see [How to communicate with your admins, makers, and end users](setup.md#whats-the-best-way-to-communicate-with-admins-makers-and-users).
 
 ### Turn on flows
 
@@ -54,16 +54,16 @@ There are several flows which need to be turned on for these components:
 - [App Catalog > Request Access](core-components.md)
 
 > [!IMPORTANT]
-> The [Admin | Welcome Email v3](core-components.md) flow automatically adds new makers to the [Power Platform Maker Microsoft 365 Group](setup-core-components.md#all-environment-variables) environment variable. For more information, see: [How to communicate with your admins, makers, and end users](setup.md#how-to-communicate-with-your-admins-makers-and-users).
+> The [Admin | Welcome Email v3](core-components.md) flow automatically adds new makers to the [Power Platform Maker Microsoft 365 Group](setup-core-components.md#all-environment-variables) environment variable. For more information, see: [How to communicate with your admins, makers, and end users](setup.md#whats-the-best-way-to-communicate-with-admins-makers-and-users).
 
 ### Share apps with admins and makers
 
 You can share these apps with makers or end users, then assign them the **Power Platform Maker SR** security role.
 
 - The **CoE Maker Command Center** for makers.
-- The [**App Catalog**](core-components.md#app-catalog) for end users.
+- The [**App Catalog**](core-components.md#other-apps) for end users.
 
-For more information, see [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment).
+Learn more: [Share an app from a production environment](faq.md#share-an-app-from-a-production-environment).
 
 ## All environment variables
 
@@ -73,8 +73,4 @@ This environment variable affects other components:
 
 You might need to [update environment variables](faq.md#update-environment-variables) after import.
 
-## I found a bug with the CoE Starter Kit. Where should I go?
-
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

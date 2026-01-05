@@ -29,12 +29,34 @@
               href: key-concepts/expressroute/checklist.md
         - name: Dataverse auditing
           href: key-concepts/dataverse-auditing.md
+        - name: CRM data migration to Dataverse
+          items:
+            - name: Overview
+              href: key-concepts/data-migration/index.md
+            - name: Data migration approaches
+              href: key-concepts/data-migration/data-migration-approaches.md
+            - name: Use a staging database for data migration
+              href: key-concepts/data-migration/staging-database-approach.md
+            - name: Workflow for complex data migration
+              href: key-concepts/data-migration/workflow-complex-data-migration.md
+            - name: Power Platform Well-Architected and data migration
+              href: key-concepts/data-migration/benefits-power-well-architected.md
+            - name: Planning for go-live
+              href: key-concepts/data-migration/cut-over-planning.md
         - name: Distributed tracing across multiple services
           items:
             - name: Overview
               href: key-concepts/distributed-tracing.md
             - name: Implement distributed tracing
               href: key-concepts/distributed-tracing-details.md
+        - name: Cloud flow integration patterns
+          items:
+            - name: Overview
+              href: key-concepts/integration-patterns/index.md
+            - name: Determine requirements
+              href: key-concepts/integration-patterns/requirements.md
+            - name: Explore patterns
+              href: key-concepts/integration-patterns/patterns.md
         - name: Manage solution performance
           items:
             - name: Overview
@@ -75,6 +97,12 @@
           href: reference-architectures/sqlserver-canvas-app.md
         - name: Use an autonomous agent in Copilot Studio for document processing
           href: reference-architectures/document-processing-agent.md
+        - name: Use complex relationships with Dataverse
+          href: reference-architectures/complex-relationships-dataverse.md
+        - name: Extract and analyze agent conversation transcripts
+          href: reference-architectures/analyze-agent-conversation-transcripts.md
+        - name: Implement a scalable notification system with Power Platform
+          href: reference-architectures/scalable-notification-system.md
     - name: Solution ideas
       items:
         - name: Overview

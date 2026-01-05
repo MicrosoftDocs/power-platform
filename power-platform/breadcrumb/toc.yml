@@ -1,3 +1,4 @@
+items:
 - name: Learn
   href: /
   topicHref: /
@@ -9,6 +10,9 @@
     - name: Power Fx
       tocHref: /power-platform/power-fx/
       topicHref: /power-platform/power-fx/overview/
+    - name: Test Engine
+      tocHref: /power-platform/test-engine/
+      topicHref: /power-platform/test-engine/overview/
     - name: Guidance
       tocHref: /power-platform/guidance/
       topicHref: /power-platform/guidance/index

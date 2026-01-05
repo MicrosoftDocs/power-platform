@@ -2,7 +2,7 @@
 title: Solution checker enforcement in Managed Environments
 description: Learn about using solution checker enforcement to automatically prevent security and reliability validations during solution import.
 ms.topic: concept-article
-ms.date: 11/20/2024
+ms.date: 11/24/2025
 author: sidhartg
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -17,8 +17,6 @@ contributors:
 ---
 
 # Solution checker enforcement in Managed Environments
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The solution checker is a powerful tool that performs a comprehensive static analysis of your solution objects against a set of best practice rules. By using solution checker, you can quickly identify problematic patterns in solution components and receive detailed reports that highlight issues, affected components, and provide links to documentation on how to resolve each issue.
 
@@ -43,7 +41,9 @@ For more information about solution checker and the list of rules used, go to [S
 To turn on solution checker enforcement for your Managed Environment:
 
 1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
-1. In the navigation pane, select **Environments**, and then select a managed environment.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select a managed environment.
 1. On the command bar, select **Edit Managed Environments**, and then select the appropriate [enforcement setting](#solution-checker-settings) under **Solution checker enforcement**.
 
     :::image type="content" source="media/managed-environment-solution-checker.png" alt-text="Screenshot of the solution checker settings screen.":::

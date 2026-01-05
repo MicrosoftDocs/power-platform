@@ -4,7 +4,7 @@ description: Provides information about Power Apps US Government service descrip
 author: carrema
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/22/2025
+ms.date: 12/05/2025
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: sericks
@@ -16,8 +16,6 @@ ms.contributors:
 ---
 
 # Power Apps US Government
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Apps US Government, which consists of several plans for US government organizations. This section provides an overview of features that are specific to Power Apps US Government. It is recommended that you read this supplementary section alongside the Power Apps [documentation](/powerapps/powerapps-overview), which covers information about the general Power Apps service description. For brevity, this service is commonly referred to as Power Apps Government Community Cloud (GCC), or Power Apps Government Community Cloud – High (GCC High), or Power Apps Department of Defense (DoD).
 
@@ -235,12 +233,14 @@ If your organization (tenant) has already configured and successfully connected 
 
 Previously, US Government customers needed to contact support before configuring their first on-premises data gateway, as support would need to "allowlist" the tenant for gateway use. This is no longer necessary. If you encounter any issues configuring or using the on-premises data gateway, contact support for assistance.
 
-## Telemetry for model-driven apps
+## Telemetry for Power Apps
 
-The following URL must be added to the allow list to ensure communication through firewalls and other security mechanisms for model-driven apps telemetry information:
+The following URLs must be added to the allow list to ensure communication through firewalls and other security mechanisms for Power Apps telemetry information:
 
-- **GCC and GCC High**: `https://tb.pipe.aria.microsoft.com/Collector/3.0`
-- **DoD**: `https://pf.pipe.aria.microsoft.com/Collector/3.0`
+- **GCC and GCC High**: `https://tb.pipe.aria.microsoft.com/Collector/3.0` and `https://tb.events.data.microsoft.com/OneCollector/1.0/`
+- **DoD**: `https://pf.pipe.aria.microsoft.com/Collector/3.0` and `https://pf.events.data.microsoft.com/OneCollector/1.0/`
+
+If you are filtering endpoints by IP ranges, ensure that you unblock the OneDsCollector service tag. 
 
 ## Power Apps US Government feature limitations
 

@@ -4,7 +4,7 @@ description: Learn from nonprofit Degrees of Change how to automate nonprofit op
 author: shellyhaverkamp
 ms.author: sashi
 ms.topic: overview
-ms.subservice: guidance
+ms.subservice: case-study
 ms.date: 08/28/2024
 ---
 

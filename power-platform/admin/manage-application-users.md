@@ -15,6 +15,7 @@ contributors:
   - lavanyapg
 ms.contributors:
   - lsuresh
+ms.custom: sfi-image-nochange
   
 ---
 # Manage application users in the Power Platform admin center
@@ -30,22 +31,11 @@ We're in the process of moving application user management from the legacy web c
 
 On the **Application users** page, you can view and manage application users. The **Custom** app type is your local app registration, as created in Microsoft Entra ID.
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Select **Settings**. 
 1. Select **Users + permissions**, and then select **Application users**.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
-1. Select **Environments**, and then select an environment from the list.
-1. Select **Settings**.
-1. Select **Users + permissions**, and then select **Application users**.
-
----
 
 ## Create an application user
 
@@ -53,8 +43,6 @@ You can create an unlicensed application user in your environment. This applicat
 
 In an environment, you can only have one application user for each Microsoft Entra&ndash;registered application. 
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
@@ -80,59 +68,17 @@ In an environment, you can only have one application user for each Microsoft Ent
    :::image type="content" source="media/create-new-app-user-security-roles.png" alt-text="Screenshot of Add security roles to the new application user.":::
 
 1. Select **Create**.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
-1. Select **Environments**, and then select an environment from the list.
-1. Select **Settings**.
-1. Select **Users + permissions**, and then select **Application users**.
-1. Select **+ New app user** to open the **Create a new app user** page.
-
-   :::image type="content" source="media/create-new-app-user.png" alt-text="Screenshot of Create a new application user.":::
-
-1. Select **+ Add an app** to choose the registered Microsoft Entra application that was created for the selected user, and then select **Add**.
-
-   > [!NOTE]
-   > In addition to entering the Application Name or Application ID, you can also enter an Azure Managed Identity Application ID. For Managed Identity, do not enter the Managed Identity Application Name, use the Managed Identity Application ID instead.
-   >
-   > Enterprise applications don't show in the list of applications, only Microsoft Entra app registrations show in the list. Search for the multitenant application by name or ID to assign it to the application user.  
-
-1. The selected Microsoft Entra app is displayed under **App**. You can select **Edit** (![Edit.](media/edit-button.png)) to choose another Microsoft Entra application. Under **Business Unit**, select a business unit from the dropdown list.  
-
-   :::image type="content" source="media/create-new-app-user-business-unit.png" alt-text="Screenshot of select a business unit.":::
-
-1. After choosing a business unit, you can select ![Edit.](media/edit-button.png) for **Security roles** to choose security roles for the chosen business unit to add to the new application user. After adding security roles, select **Save**.
-
-   :::image type="content" source="media/create-new-app-user-security-roles.png" alt-text="Screenshot of Add security roles to the new application user.":::
-
-1. Select **Create**.
-
----
 
 ## View or edit the details of an application user
 
 To view or edit the details of an application user, complete the following steps:
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Select **Settings**. 
 1. Select **Users + permissions**, and then select **Application users**.
 1. Select an application user, and then select **Details**.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a System Administrator.
-1. Select **Environments**, and then select an environment from the list.
-1. Select **Settings**.
-1. Select **Users + permissions**, and then select **Application users**.
-1. Select an application user, and then select **Details**.
-
-
----
 
 The **Details** page shows the following properties for the application user:
 
@@ -188,8 +134,6 @@ To delete an inactive application user, complete the following steps:
 
 In each of your environments, there's a set of [system-provided application users](system-application-users.md#application-users). You can now view these application users from the Power Platform admin center.
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
@@ -200,19 +144,5 @@ In each of your environments, there's a set of [system-provided application user
 1. Select an application user.
 1. Select **Details** from the command bar to view details of the platform, application user.
 1. Select **Close** to return to the application user list.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
-1. Select **Environments**, and then select an environment from the list.
-1. Select **Settings**.
-1. Select **Users + permissions** > **Application users**.
-1. Select the **Filter** option from the command bar.
-1. Select the **Platform** option. A list of the platform, application users in the environment is displayed.
-1. Select an application user.
-1. Select **Details** from the command bar to view details of the platform, application user.
-1. Select **Close** to return to the application user list.
-
----
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -10,10 +10,9 @@ ms.author: paulliew
 ms.reviewer: matp 
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Access audit data using Azure Synapse Link for Dataverse and Power BI
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Customers who use Azure Synapse Link for Dataverse can export audit logs easily to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises.
 

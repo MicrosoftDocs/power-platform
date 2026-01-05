@@ -3,7 +3,7 @@ title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/17/2025
+ms.date: 07/31/2025
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -78,7 +78,7 @@ A cleanup mechanism in Power Platform automatically removes Default environments
 - Default environments with Microsoft 365 agents or Microsoft Planner are excluded from deletion.
 - Admins receive two warning notifications before the Default environment is deleted due to inactivity. Default environments are deleted 30 days after the first notification.
 
-As part of this cleanup process, a new replacement Default environment without Dataverse is created, with an option to add Dataverse later. The original Default environment is deleted, but can be recovered as a production environment within seven days. [Any activity triggered](#trigger-activity-in-an-inactive-environment) on the environment resets the inactivity period.
+As part of this cleanup process, a new replacement Default environment without Dataverse is created, with an option to add Dataverse later. The original Default environment is deleted, but can be recovered as a sandbox environment within seven days. [Any activity triggered](#trigger-activity-in-an-inactive-environment) on the environment resets the inactivity period.
 
 ### Timeline for unused Default environments
 
@@ -110,17 +110,10 @@ Here are some examples of the types of actions that are considered as activity:
 ### View last user activity of environment
 Environment admins can see when an environment was last used by checking the **Last activity** column in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). The activity for each environment is updated once a day.
 
-### [New admin center](#tab/new)
 1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. See **Last activity** column for environment in question.
-
-### [Classic admin center](#tab/classic)
-1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. See **Last activity** column for environment in question.
----
 
 ## Trigger activity, re-enable, and recover an environment
 
@@ -130,48 +123,27 @@ By default, administrators have 15 days to re-enable an environment. If the envi
 
 Once environment administrators receive notification that an environment will be cleaned up, environment admins can trigger activity on the environment to indicate that the environment is active and prevent the cleanup action. If an environment has already been disabled, the **Trigger environment activity** button won't be displayed. In this situation, the only option for the customer is to re-enable the environment before deletion. 
 
-# [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1.Select the inactive environment.
 1. On the **Environment** page, select **Trigger environment activity**.
 
-# [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments**, and then select the inactive environment.
-1. On the **Environment** page, select **Trigger environment activity**.
----
-
 ### Re-enable a disabled environment
 
-# [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. Select the disabled environment.
 1. On the **Environment** page, select **Re-enable environment**.
 
-# [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments**, and then select the disabled environment.
-1. On the **Environment** page, select **Re-enable environment**.
----
-
 ### Recover a deleted environment
 
-# [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. Select **Recover deleted environments**.
 1. Select an environment to recover, and then select **Recover**.
-
-# [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments**, and then select **Recover deleted environments**.
-1. Select an environment to recover, and then select **Recover**.
----
 
 [Learn more about recovering an environment](recover-environment.md).
 

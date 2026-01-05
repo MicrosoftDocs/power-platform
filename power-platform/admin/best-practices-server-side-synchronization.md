@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Best practices for server-side synchronization
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Consider the best practices outlined in this topic when you plan and deploy server-side synchronization.
 
 > [!NOTE]
@@ -91,7 +89,9 @@ To ensure an admin doesn’t inadvertently Test and Enable a mailbox row in a no
 
 To set the synchronization method to none for nonproduction environments:
 
-1. In the Power Platform admin center, select an environment.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
 1. Select **Settings** > **Email** > **Mailboxes**.
 1. Select a mailbox record.
 1. Under **Synchronization Method**, select **None** in the **Incoming Email**, **Outgoing Email**, and **Appointments, Contacts, and Tasks** lists.

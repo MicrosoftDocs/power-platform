@@ -15,8 +15,6 @@ contributors:
 ---
 # Enable Unified Interface Only
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 In 2018, we introduced [Unified Interface](/powerapps/user/unified-interface), the latest generation of web app design for the Power Apps model-driven apps and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). It brings the best in usability, accessibility, functionality, and speed to every user. Improve how your business applications run by using only Unified Interface. To learn how to enable it, see [How to enable Unified Interface Only](#how-to-enable-unified-interface-only-mode). For more information, see [What experiences are available in Unified Interface Only](#what-experiences-are-available-in-unified-interface-only-mode) and [FAQs](#faqs).
 
 ## When does the Unified Interface Only experience become available, and which environments are affected?
@@ -78,14 +76,32 @@ The legacy web client app, also known as *Dynamics 365 - custom*, is hidden from
 
 When Unified Interface Only mode is enabled, *Dynamics 365 - custom* opens in Unified Interface and not in the legacy web client. If users only have access to the Dynamics 365 – custom app and no other model-driven apps, they won't be redirected automatically when signing in using the environment URL (for example, https://contoso.crm.dynamics.com/). Access to this app can be enabled in one of two ways:
 
-- In the Microsoft Power Platform admin center, go to **Environments** and select an environment. Go to **Settings** > **Product** > **Behavior** and then turn on **Show legacy app to everyone, not just admins**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Environments**.
+
+1. On the **Environments** page, select an environment. 
+
+1. Go to **Settings** > **Product** > **Behavior** and then turn on **Show legacy app to everyone, not just admins**.
 
 > [!div class="mx-imgBorder"] 
 > ![Show legacy app to everyone.](media/show-legacy-app-to-everyone.png "Show legacy app to everyone")
 
 ### Dynamics 365 - custom (hidden for admins)
 
-As part of removing the legacy web client app, a new environment property has been added to allow gradual hiding of the app for those with System Administrator and System Customizer roles, and to other custom roles with similar privileges. In the Microsoft Power Platform admin center, go to **Environments** and select an environment. Go to **Settings** > **Product** > **Behavior** and then set the **Show legacy app for admins** option.
+As part of removing the legacy web client app, a new environment property has been added to allow gradual hiding of the app for those with System Administrator and System Customizer roles, and to other custom roles with similar privileges. 
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Environments**.
+
+1. On the **Environments** page, select an environment.
+
+1. Go to **Settings** > **Product** > **Behavior** and then set the **Show legacy app for admins** option.
 
 :::image type="content" source="media/ppac-show-legacy-app-for-admins.png" alt-text="Show legacy app for admins":::
 
@@ -112,11 +128,19 @@ When Unified Interface Only mode is enabled, environment settings can be accesse
    > ![Advanced Settings.](media/uci-advanced-settings.png "Advanced Settings")
 
 > [!NOTE]
-> You need to select Advanced Settings from a customer engagement apps page that's displayed in Unified Interface such as Sales Hub or Customer Service Hub pages.
+> You need to select **Advanced Settings** from a customer engagement apps page that's displayed in Unified Interface such as Sales Hub or Customer Service Hub pages.
 
 ## How to enable Unified Interface Only mode
 
-In the Power Platform admin center, go to **Environments** and select an environment. Go to **Settings** > **Product** > **Behavior** > **Interface settings** and then turn on **Use Unified Interface only**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Environments**.
+
+1. On the **Environments** page, select an environment.
+
+1. Go to **Settings** > **Product** > **Behavior** > **Interface settings** and then turn on **Use Unified Interface only**.
 
 ## FAQs
 

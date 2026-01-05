@@ -1,12 +1,12 @@
 ---
 title: Restore deleted Microsoft Dataverse table records (preview)
 description: Learn how to use the Power Platform admin center to view restore deleted Microsoft Dataverse table records.
-author: shahzorkhan123
+author: rijoshi1
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 06/02/2025
 ms.subservice: admin
-ms.author: shkhan
+ms.author: rijoshi
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
@@ -14,13 +14,13 @@ contributors:
 - Mattp123
 - JimDaly
 ms.contributors:
-- erjost
-- hnatuva
+   - erjost
+   - hnatuva
+   - shahzorkhan123
+ms.custom: sfi-image-nochange
 ---
 
 # Restore deleted Microsoft Dataverse table records (preview)
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -33,7 +33,7 @@ Developers should read [Restore deleted records with code (preview)](/power-apps
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - This feature is currently being deployed and might not yet be available in your region.
-> - Any storage used by the recycle bin doesn't count against your organization's storage capacity.
+> - During **preview**, storage from deleted records is not counted toward your organization’s capacity. Starting **GA**, this storage will be counted toward your organization’s database capacity.
 > - The recycle bin feature **isn't available** for [Dataverse for Teams](about-teams-environment.md), trial environments, or default environments.
 
 ## Prerequisites
@@ -43,8 +43,6 @@ To restore deleted Dataverse records, turn on the recycle bin in your environmen
 ### Turn on the recycle bin
 
 Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin) and complete the steps depending on whether you're using the new admin center or the classic admin center.
-
-### [New admin center](#tab/new)
 
 1. Select **Manage**.
 1. Select **Environments** and open the environment you want.
@@ -56,20 +54,6 @@ Sign in to the [Power Platform admin center](https://admin.powerplatform.microso
   
 1. Select **Save**.
 1. Allow 30 minutes for the system to configure the recycle bin.
-  
-### [Classic admin center](#tab/classic)
-
-1. Select **Environments** and open the environment you want.
-1. Select **Settings** > **Product** > **Features**.
-1. Scroll down to view the **Recycle Bin** settings.
-
-   - Turn **On** the **Recycle Bin** setting.
-   - Specify the time interval, to be able to restore table records. You can restore table records up to *30* days after the record was deleted.
-  
-1. Select **Save**.
-1. Allow 30 minutes for the system to configure the recycle bin.
-  
----
 
 > [!NOTE]
 > Only records deleted after the recycle bin feature has been turned on can be restored.
@@ -82,24 +66,12 @@ Viewing and acting on the deleted records in the Power Apps user experience is o
 
 To restore deleted records from the admin center, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a user with the system administrator security role and complete the following steps depending on whether you're using the new admin center or the classic admin center.
 
-### [New admin center](#tab/new)
-
 1. Select **Manage**.
 1. Select **Environments** and open the environment you want to view and restore deleted records.
 1. Go to **Settings** > **Data management** > **View Deleted Records**.
 1. You can view all the deleted records from all tables.
 1. Select one or more records you wish to restore, and then select **Restore** on the command bar.
 1. Select **OK** to confirm the action to restore.
-
-### [Classic admin center](#tab/classic)
-
-1. Select **Environments** and open the environment you want to view and restore deleted records.
-1. Go to **Settings** > **Data management** > **View Deleted Records**.
-1. You can view all the deleted records from all tables.
-1. Select one or more records you wish to restore, and then select **Restore** on the command bar.
-1. Select **OK** to confirm the action to restore.
-
----
 
 ### Power Platform Environment Settings app
 
@@ -113,6 +85,10 @@ To restore deleted records from the Power Platform Environment Settings app:
 1. Select **OK** to confirm the restoration.
 
 ## Turn off recycle bin for a table
+
+> [!IMPORTANT]
+>
+> - Starting February, 2026, recycle bin settings will be managed at the organization level for all tables. This change ensures consistent retention and simplifies administration. The option to turn off recycle bin at the individual table level will no longer be available. 
 
 To turn off the recycle bin for a table:
 

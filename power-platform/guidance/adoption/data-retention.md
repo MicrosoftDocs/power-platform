@@ -7,7 +7,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 ms.date: 05/14/2025
 ---
 
@@ -26,9 +26,9 @@ Environments that have a database are [automatically backed up and can be restor
 
 In addition to automatic backups, administrators can also create manual backups at any time. Manual backups are useful before making significant changes or updates to the environment. You can extend backup retention from seven to 28 days by making an environment a [Managed Environment](../../admin/managed-environment-overview.md).
 
-## Implement data loss prevention (DLP) policies
+## Implement data policies
 
-Define and enforce data loss prevention policies to prevent unauthorized data access and ensure compliance with organizational standards. Learn more in [Implement a DLP strategy](dlp-strategy.md).
+Define and enforce data policies to prevent unauthorized data access and ensure compliance with organizational standards. Learn more in [Implement a data policy strategy](dlp-strategy.md).
 
 ## Use role-based access control
 

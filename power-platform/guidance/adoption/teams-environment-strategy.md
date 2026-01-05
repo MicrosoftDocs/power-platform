@@ -5,7 +5,7 @@ description: Discover best practices for managing Dataverse for Teams environmen
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/14/2025
+ms.date: 08/20/2025
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -21,25 +21,25 @@ ms.custom:
 
 Microsoft Dataverse for Teams empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Microsoft Copilot Studio, and Power Automate. When a Teams owner adds this capability to their team, a Microsoft Power Platform environment with a Dataverse for Teams database is created and linked to the team. Learn more in [About Microsoft Dataverse for Teams environments](../../admin/about-teams-environment.md).
 
-Dataverse for Teams honors the existing data governance paradigms of Power Platform and enables access control in the Microsoft Teams admin center. In addition, the Power Platform admin center provides monitoring of dedicated capacity usage and [data loss prevention (DLP) policies](../../admin/wp-data-loss-prevention.md).
+Dataverse for Teams honors the existing data governance paradigms of Power Platform and enables access control in the Microsoft Teams admin center. In addition, the Power Platform admin center provides monitoring of dedicated capacity usage and [data policies](../../admin/wp-data-loss-prevention.md).
 
 Dataverse for Teams simplifies environment lifecycle management and user security role management by aligning to Microsoft Teams constructs. Learn more in [User access to Dataverse for Teams environments](../../admin/about-teams-environment.md#user-access-to-dataverse-for-teams-environments).
 
 Dataverse for Teams is a fully embedded experience. Governance controls specific to Power Platform are also provided directly in the context of the Microsoft Teams admin center. Learn more in [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps).
 
-Use Power Platform to manage Power Platform. Using Power Automate, send welcome emails to owners of new Dataverse for Teams environments and request a business justification for their environments. Central IT engages with new makers and ensures that Dataverse for Teams capacity is used effectively in the tenant and distributed to the most important business use cases. Use similar workflows to apply specific DLP policies to Dataverse for Teams environments as needed and to invoke cleanup of unused assets, which can be repurposed for more compelling scenarios in the tenant.
+Use Power Platform to manage Power Platform. Using Power Automate, send welcome emails to owners of new Dataverse for Teams environments and request a business justification for their environments. Central IT engages with new makers and ensures that Dataverse for Teams capacity is used effectively in the tenant and distributed to the most important business use cases. Use similar workflows to apply specific data policies to Dataverse for Teams environments as needed and to invoke cleanup of unused assets, which can be repurposed for more compelling scenarios in the tenant.
 
 ## Govern environment creation
 
-We recommend setting up reactive governance workflows and monitoring abilities. This gives team owners the ability to provide a business justification, and admins the ability to review the business justification:
+Set up reactive governance workflows and monitoring capabilities. This approach gives team owners the ability to provide a business justification, and gives admins the ability to review the business justification:
 
 1. The team owner provides a business justification for their new environment within *n* days of creating the environment.
 
-    :::image type="content" source="media/teams-1.png" alt-text="Screenshot from Microsoft Teams prompting a Teams owner to provide a business justification.":::
+    :::image type="content" source="media/teams-1.png" alt-text="Screenshot from Microsoft Teams prompting a Teams owner to provide a business justification." lightbox="media/teams-1.png":::
 
 1. An admin approves or rejects the submitted business justification, and optionally marks it for later review.
 
-    :::image type="content" source="media/teams-2.png" alt-text="Screenshot from Power Apps Environment requesting admin approval or rejection of the submitted business justification.":::
+    :::image type="content" source="media/teams-2.png" alt-text="Screenshot from Power Apps Environment requesting admin approval or rejection of the submitted business justification." lightbox="media/teams-2.png":::
 
 1. An automated cleanup runs periodically to delete rejected or unclaimed environments (environments for which justification wasn't provided). If needed, deleted environments can be restored within seven days by using the [recover environment feature in the Power Platform admin center](../../admin/recover-environment.md#power-platform-admin-center).
 
@@ -53,23 +53,23 @@ Dedicated Dataverse for Teams environments are used for appropriate business use
 
 Admins can use Power Apps and Power Automate analytics reports in the Power Platform admin center to view usage, performance, and errors related to Dataverse for Teams environments.
 
-Admins can monitor capacity usage for Microsoft Teams environments by using dedicated [capacity views in the Power Platform admin center](../../admin/about-teams-environment.md#capacity-limits). Notifications are sent to the makers in Microsoft Teams when the environment is nearing 80 percent of its capacity. Notifications are also sent to tenant admins when the tenant is reaching 80 percent capacity. These capacity limits can't be extended. Admins can monitor inactive Microsoft Teams environments in the tenant and invoke cleanup when necessary, in addition to performing automated cleanup of unused environments to help free up capacity.
+Admins can monitor capacity usage for Microsoft Teams environments by using dedicated [capacity views in the Power Platform admin center](../../admin/about-teams-environment.md#capacity-limits). The makers in Microsoft Teams receive notifications when the environment is nearing 80 percent of its capacity. Tenant admins receive notifications when the tenant is reaching 80 percent capacity. These capacity limits can't be extended. Admins can monitor inactive Microsoft Teams environments in the tenant and invoke cleanup when necessary, in addition to performing automated cleanup of unused environments to help free up capacity.
 
-:::image type="content" source="media/teams-4.png" alt-text="Screenshot of dedicated view for monitoring Microsoft Teams environments capacity in Power Platform admin center.":::
+:::image type="content" source="media/teams-4.png" alt-text="Screenshot of dedicated view for monitoring Microsoft Teams environments capacity in Power Platform admin center." lightbox="media/teams-4.png":::
 
 A dashboard in the CoE Starter Kit further identifies the usage of Dataverse for Teams environments, in addition to inactive environments without apps or flows.
 
-:::image type="content" source="media/teams-3.png" alt-text="Screenshot of CoE Starter Kit dashboard displaying usage of Dataverse for Teams environments.":::
+:::image type="content" source="media/teams-3.png" alt-text="Screenshot of CoE Starter Kit dashboard displaying usage of Dataverse for Teams environments." lightbox="media/teams-3.png":::
 
-## Set up data loss prevention policies
+## Set up data policies
 
 Manage the data governance policies for newly created Dataverse for Teams environments by selecting one of these approaches:
 
-- Create a policy spanning all environments except selected ones. Limit the available connectors in this policy to those you want to expose to makers in Dataverse for Teams environments. By setting the scope of the DLP policy to *exclude certain environments,* this policy applies to any new environments that are created in your tenant, including Dataverse for Teams or trial environments. You can explicitly remove any other type of new environment, like a production or sandbox environment, from this tenant-wide DLP policy and add it to appropriate, dedicated DLP policies suited for its use case.
+- Create a policy spanning all environments except selected ones. Limit the available connectors in this policy to those you want to expose to makers in Dataverse for Teams environments. By setting the scope of the data policy to *exclude certain environments,* this policy applies to any new environments that are created in your tenant, including Dataverse for Teams or trial environments. You can explicitly remove any other type of new environment, like a production or sandbox environment, from this tenant-wide data policy and add it to appropriate, dedicated data policies suited for its use case.
 
-- Create a policy specifically for Dataverse for Teams environments. Keep the available connectors in this policy limited to those you want team members to have access to. Create a script using [PowerShell cmdlets](../../admin/powerapps-powershell.md#data-loss-prevention-dlp-policy-commands), or a flow that uses admin connectors, to periodically add newly created Dataverse for Teams environments to this policy and remove them from the default tenant-level policy.
+- Create a policy specifically for Dataverse for Teams environments. Keep the available connectors in this policy limited to those you want team members to have access to. Create a script using [PowerShell cmdlets](../../admin/powerapps-powershell.md#data-policy-commands), or a flow that uses admin connectors, to periodically add newly created Dataverse for Teams environments to this policy and remove them from the default tenant-level policy.
 
-Learn more: [Implement a DLP strategy](./dlp-strategy.md)
+Learn more: [Implement a data policy strategy](./dlp-strategy.md)
 
 ## Use Microsoft Teams admin center controls
 
@@ -83,6 +83,6 @@ Global or Microsoft Teams admins can use Microsoft Teams app controls through th
 | **Shared Microsoft Copilot Studio** | Ability to use Dataverse or Dataverse for Teams Microsoft Copilot Studio agents within Microsoft Teams by using the *Built by your colleagues* catalog.|
 | **Various sample apps** | Ability to create new apps, flows, and bots by using sample apps within Microsoft Teams, tied to the implicit ability to create new Dataverse for Teams environments. |
 
-Given that these controls block environment creator, maker, and user access, we recommend that admins instead use reactive constructs&mdash;either by building their own or by using the templates in the CoE Starter Kit&mdash;to govern Dataverse for Teams environment creation workflows.
+Because these controls block environment creator, maker, and user access, we recommend that admins use reactive constructs instead. To govern Dataverse for Teams environment creation workflows, consider building your own reactive constructs or using the templates in the CoE Starter Kit.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

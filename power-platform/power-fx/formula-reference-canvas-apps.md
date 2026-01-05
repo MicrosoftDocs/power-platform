@@ -3,7 +3,6 @@ title: Formula reference - canvas apps
 description: Reference information for all functions in canvas apps.
 author: gregli-msft
 ms.topic: reference
-ms.custom: canvas
 ms.reviewer: mkaur-msft
 ms.date: 06/18/2025
 ms.subservice: power-fx
@@ -14,6 +13,9 @@ contributors:
   - mduelae
   - gregli-msft
   - gregli
+ms.custom:
+  - canvas
+  - sfi-ropc-nochange
 ---
 
 # Formula reference - canvas apps

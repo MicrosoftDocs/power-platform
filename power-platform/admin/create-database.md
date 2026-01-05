@@ -14,8 +14,6 @@ search.audienceType:
 ---
 # Add a Microsoft Dataverse database
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 You can create a database and build apps by using Dataverse as a data store. You can either create your own custom tables or use the predefined tables. To create a database, you first need to either create an environment, or be assigned to an existing environment as an **Environment Admin**. In addition, you must be assigned the appropriate license. For information on purchasing a plan for using Dataverse, see [Pricing info](pricing-billing-skus.md).
 
 You can only add a single database to an environment. This article applies to customers who haven't yet added a Dataverse database to an environment.
@@ -30,19 +28,11 @@ There are various ways to add or create a database:
 
 ## Add a database in the Power Platform admin center
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select the environment to which you want to add a database.
 1. In the **Add Dataverse** web part, click **+ Add Dataverse**.
- 
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select the environment to which you want to add a database.
-1. In the **Add Dataverse** web part, click **+ Add Dataverse**.
----
 
 In the **Add Dataverse** side pane, enter the following information, then select **Add** to apply the changes.
 

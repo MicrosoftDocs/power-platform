@@ -5,7 +5,7 @@ author: sericks007
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/26/2024
+ms.date: 11/20/2025
 ms.subservice: admin
 ms.author: paulliew
 search.audienceType: 
@@ -13,8 +13,6 @@ search.audienceType:
 ---
 
 # Responding to Data Subject Rights (DSR) requests for Microsoft Dataverse customer data
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 [!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
@@ -82,17 +80,22 @@ You can find personal data from Dataverse users within the following resources:
 #### User
 User personal data is stored in the Microsoft Entra and is automatically synced to all environments with a Dataverse database. System administrators can't update this personal data directly in Dataverse while the user is active&mdash;they must update the data from within the Microsoft 365 admin center. System administrators can add personal data (for example, custom attributes) directly to Dataverse, but they must manually manage this data.
 
-To find a user and their personal data, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and do the following:
+To find a user and their personal data, do the following:
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-1. Select **Environments**, and then select an environment from the list.
+1. In the navigation pane, select **Manage**.
 
-2. Go to **Settings** > **Users + permissions** > **Users**.
+1. In the **Manage** pane, select **Environments**.
 
-3. Enter the name of the user in the **Search** box, and select **Enter**.
+1. On the **Environments** page, select an environment.
 
-4. To view the user's personal data, select the user's name by clicking or double-tapping.
+1 Go to **Settings** > **Users + permissions** > **Users**.
 
-5. To make changes to the Contact Information, expand on the ellipse and click **Manage user in Dynamics 365**
+1. Enter the name of the user in the **Search** box, and select **Enter**.
+
+1. To view the user's personal data, select the user's name by clicking or double-tapping.
+
+1. To make changes to the Contact Information, expand on the ellipse and click **Manage user in Dynamics 365**
 
     ![Power Apps User Form.](./media/common-data-service-gdpr-dsr-guide/powerapps-user-form.png)
 
@@ -111,9 +114,10 @@ Once a user row is deleted from Microsoft Entra ID, System Administrators can th
 #### System user
 You can export a user's personal data stored in the system User table to Excel from the user list within the administration center.
 
-From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
-
-1. Select **Environments**, and then select an environment from the list.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
 1. Go to **Settings** > **Users + permissions** > **Users**.
 1. Select **Manage users in Dynamics 365** from the command bar.
 1. Select **Enabled users** view from the view dropdown if the user you want to export is **Enabled**, otherwise select the **Disabaled users** view.
@@ -124,9 +128,10 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 #### Audit history
 You can take screenshots of the audit history from within the administration center.
 
-From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
-
-1. Select **Environments**, and then select an environment from the list.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
 1. Go to **Settings** > **Audit and logs** > and select **Audit Summary View**.
 1. Locate the user audit record, and then press **Alt+PrtScn** to take the screenshot.
 1. Save the screenshot to a file, which you can then send to the DSR requestor.
@@ -141,9 +146,10 @@ When a user record is deleted from the Microsoft Entra, the following message is
 
 *This user's information is no longer managed by Office 365. You can update this record to respond to DSR requests by removing or replacing all personal data associated with this user.*
 
-From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
-
-1. Select **Environments**, and then select an environment from the list.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
 1. Go to **Settings** > **Users + permissions** > **Users**.
 1. Select **Filter** and select **Disabled Users** view from the dropdown menu.
 1. Enter the name of the user in the **Search** box, and press **Enter**.
@@ -153,9 +159,10 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 
 #### Remove a user's personal data by using Excel
 
-From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
-
-1. Select **Environments**, and then select an environment from the list.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
 1. Go to **Settings** > **Users + permissions** > **Users**.
 1. Select **Manage users in Dynamics 365** from the command bar.
 1. Select the **Disabled users** view.
@@ -177,9 +184,10 @@ When the user record is permanently deleted, the user's name in all records wher
 
 #### Remove audit history from the Audit Summary View page
 
-From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
-
-1. Select **Environments**, and then select an environment from the list.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
 1. Go to **Settings** > **Audit and logs** > and select **Audit summary view**.
 1. Locate the user's change history, select the check box next to the row(s), and then select **Delete Change History**.
 
@@ -197,9 +205,10 @@ When Dataverse System Administrators receive a DSR request from an individual, t
 
 Using an inventory, Dataverse System Administrators can configure the search tables and fields and then access the environment to discover personal data. For more information, see [Configure Relevance Search](/previous-versions/dynamicscrm-2016/administering-dynamics-365/mt723654(v=crm.8)).
 
-From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
-
-1. Select **Environments**, and then select an environment from the list.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
 1. Select **Open** from the command bar.
 1. Select an app.
 1. Enter the user in the **Search** box.
@@ -218,9 +227,10 @@ From the Dataverse search results (above), do the following:
 
 You can take a screenshot of the data and share it with your DSR requestor.
 
-From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
-
-1. Select **Environments**, and then select an environment from the list.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
 1. Select **Open** from the command bar.
 1. Select an app.
 1. Enter the user in the **Search** box.

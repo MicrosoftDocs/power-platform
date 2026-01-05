@@ -15,29 +15,18 @@ ms.custom:
 
 # Manage privacy and security settings
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Use these settings to customize the privacy and security of the Dataverse environments that are associated with Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation.
 
 Make sure you have the System Administrator security role or equivalent permissions to update the settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
 To adjust the settings in the Power Platform admin center for an environment, follow these steps:
 
-## [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
-1. Expand **Product**, and then select **Privacy + Security**. 
-
-## [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.
-1. Expand **Product**, and then select **Privacy + Security**. 
----
+1. Expand **Product**, and then select **Privacy + Security**.
 
 ## Settings
 
@@ -71,7 +60,6 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 
  By default, the Microsoft privacy statement is always shown to users who have an administrator role but not to other business users. As an administrator, you can specify a link to your organization's privacy statement, which is then shown to other users in your organization. However, any user who has the System Administrator security role always see the Microsoft privacy statement, not the organization's.
 
-## [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -81,17 +69,6 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 1. Under **Privacy preferences**, turn on the **Show privacy statement link for this organization** option.
 1. In the **Privacy statement URL** field, enter the URL of the page you want to display.
 1. Select **Save** to apply the changes.
-
-## [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.
-1. Expand **Product**, and then select **Privacy + Security**.
-1. Under **Privacy preferences**, turn on the **Show privacy statement link for this organization** option.
-1. In the **Privacy statement URL** field, enter the URL of the page you want to display.
-1. Select **Save** to apply the changes.
----
 
 ## Set error reporting preferences for the organization
 
@@ -99,7 +76,6 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 
  By default, individual users have a measure of control over whether to send error reports to Microsoft. As an administrator, you can override their preferences and set error reporting preferences for the entire organization. You can prevent users from making changes in how errors are reported and change the default behavior for error reporting,
 
-## [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -108,15 +84,5 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 1. Expand **Product**, and then select **Privacy + Security**.
 1. Under **Privacy preferences**, select a **Default action to take when an error occurs**.
 1. Select **Save** to apply the change.
-
-## [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.
-1. Expand **Product**, and then select **Privacy + Security**.
-1. Under **Privacy preferences**, select a **Default action to take when an error occurs**.
-1. Select **Save** to apply the change.
----
 
 [!INCLUDE [footer-include](../includes/footer-banner.md)]

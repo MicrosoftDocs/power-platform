@@ -8,19 +8,19 @@ ms.reviewer: sericks
 contributors:
   - hamenon-ms
   - shahzorkhan123
-ms.custom:
-  - "admin-security"
-  - bap-template
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 02/11/2025
 search.audienceType: 
   - admin
+ms.custom:
+  - "admin-security"
+  - bap-template
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 
 # Role-based security roles
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Microsoft Dataverse uses a role-based security model to control access to a database and its resources in an environment. Use security roles to configure access to all resources in an environment or to specific apps and data in the environment. A combination of access levels and permissions in a security role determines which apps and data users can view and how they can interact with those apps and data.
 
@@ -45,7 +45,7 @@ Environment Maker and Environment Admin are the only predefined roles for enviro
 
 If the environment has a Dataverse database, a user must be assigned the System Administrator role instead of the Environment Admin role to have full admin privileges.
 
-Users who make apps that connect to the database and need to create or update entities and security roles must have the System Customizer role in addition to the Environment Maker role. The Environment Maker role doesn't have privileges on the environment's data.
+Users who make apps that connect to the database and need to create or update entities must have the System Customizer role in addition to the Environment Maker role. The Environment Maker role doesn't have privileges on the environment's data. These security roles do not have the privileges to create or update security roles. 
 
 The following table describes the predefined security roles in an environment that has a Dataverse database. You can't edit these roles.
 

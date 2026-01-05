@@ -8,12 +8,14 @@ ms.date: 07/08/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
-ms.custom: NewPPAC
 search.audienceType: 
   - admin
 contributors:
   - yingchin
   - isaacwinoto 
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 ---
 # Admin Analytics for Power Apps
 
@@ -21,20 +23,10 @@ Analytics for the environment admin is available at the Microsoft Power Platform
 
 To access these reports:
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, under **Products**, select **Power Apps**.
 1. View the reports on the Power Apps analytics page.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, expand **Analytics**, then select **Power Apps**.
-1. View the reports on the Power Apps analytics page.
-
----
 
 :::image type="content" source="media/powerapps-analytics-menu.png" alt-text="Shows the menu on the Power Apps analytics page." lightbox="media/powerapps-analytics-menu.png":::
 

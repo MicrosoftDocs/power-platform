@@ -11,6 +11,7 @@ ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
+ms.custom: sfi-ropc-nochange
 ---
 
 # Authentication (legacy)

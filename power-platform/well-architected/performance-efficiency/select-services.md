@@ -4,7 +4,7 @@ description: Learn how to select the appropriate services and features that meet
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 06/13/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -75,7 +75,7 @@ Key considerations in this decision-making include:
 
 - _Understand available features._ Different regions may offer different features. Understand the features that are available in a region before you select it. Ensure that a region meets your workload performance needs.
 
-- _Consider latency._ Latency, the time data takes to travel from source to destination, increases the further services are from each other. Services communicating across regions can face increased latency. Identifying services that frequently communicate and positioning them within the same region is recommended. Additionally, selecting a region proximate to your primary user base can minimize latency, offering a better user experience. If you have users in different parts of the world, you might need to compromise on latency for some of them. You should analyze your user personas and workloads to find the optimal balance. Choosing a datacenter location is part of your [environment strategy](/power-platform/guidance/white-papers/environment-strategy).
+- _Consider latency._ Latency, the time data takes to travel from source to destination, increases the further services are from each other. Services communicating across regions can face increased latency. Identifying services that frequently communicate and positioning them within the same region is recommended. Additionally, selecting a region proximate to your primary user base can minimize latency, offering a better user experience. If you have users in different parts of the world, you might need to compromise on latency for some of them. You should analyze your user personas and workloads to find the optimal balance. Choosing a datacenter location is part of your [environment strategy](/power-platform/guidance/adoption/environment-strategy).
 
 ### Evaluate networking requirements
 
@@ -175,6 +175,7 @@ To evaluate responsiveness:
 - [Work with formula columns in Dataverse](/power-apps/maker/data-platform/formula-columns)
 - [Apply business logic in Microsoft Dataverse](/power-apps/maker/data-platform/processes)
 - [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events)
+- [Manage solution performance](/power-platform/architecture/key-concepts/performance/)
 
 ## Performance Efficiency checklist
 

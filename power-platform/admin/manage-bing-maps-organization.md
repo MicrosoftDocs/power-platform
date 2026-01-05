@@ -5,15 +5,13 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date:  05/17/2021
+ms.date:  11/20/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
 ---
 # Manage Bing Maps for your organization
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Learn how you can manage [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)] for your entire organization. When [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)] is turned on, people see a map of a customer's location when they view contacts, leads, or accounts.  
   
@@ -22,13 +20,19 @@ Learn how you can manage [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)] f
 
 ## Turn Bing Maps on or off for your organization  
   
-1. Browse to the Microsoft Power Platform admin center and sign in using administrator credentials.
-  
-2. Go to **Environments** > [select an environment] > **Settings** > **Product** > **Features**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
 
-3. Under **Embedded content**,  turn on **Bing Maps**.
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Environments**.
+
+1. On the **Environments** page, select an environment. 
   
-4. Select **Save**.  
+1. Go to **Settings** > **Product** > **Features**.
+
+1. Under **Embedded content**,  turn on **Bing Maps**.
+  
+1. Select **Save**.  
 
 ## Languages and regions supported for viewing Bing Maps  
 

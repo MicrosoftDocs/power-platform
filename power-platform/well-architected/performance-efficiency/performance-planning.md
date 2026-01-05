@@ -4,7 +4,7 @@ description: Learn how to conduct performance and capacity planning in your Powe
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -167,7 +167,7 @@ Azure Monitor allows you to analyze historical data and apply forecasting techni
 
 **Understanding resource limitations**: Power Platform provides documentation and resources to help you understand the performance limitations of each of the different services. Taking into consideration these limitations can help you make informed design decisions and optimize your workload architecture for performance and cost-effectiveness.
 
-There are scaling limits within your configuration and services that you should be aware of. You can read the documentation or run tests. For more information, see:
+There are scaling limits within your configuration and services that you should be aware of. You can read the documentation or run tests. Learn more:
 
 - [Power Platform request limits and allocations](/power-platform/admin/api-request-limits-allocations)
 - [Service protection API limits](/power-apps/developer/data-platform/api-limits?tabs=sdk)
@@ -180,6 +180,7 @@ Understanding how OData and API requests travel in canvas apps can help you to o
 
 ## Related information
 
+- [Manage solution performance](/power-platform/architecture/key-concepts/performance/)
 - [Azure Monitor](/azure/azure-monitor/overview)
 - [Application Insights](/azure/azure-monitor/app/app-insights-overview)
 - [Log Analytics](/azure/azure-monitor/logs/log-analytics-overview)

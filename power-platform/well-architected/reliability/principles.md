@@ -6,7 +6,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: concept-article
-ms.date: 05/16/2024
+ms.date: 08/18/2025
 ---
 
 # Reliability design principles
@@ -15,7 +15,7 @@ A reliable workload must be resilient so that it can detect and recover from out
 
 Use the following design principles from the [Microsoft Azure Well-Architected Framework](/azure/well-architected) to help ensure reliability throughout the entire lifecycle. Start with the recommended best practices and justify the benefits of each reliability principle. Once you set your strategy, use the [Reliability checklist](./checklist.md) as your next step.
 
-If you don't apply these principles to your design, the workload most likely won't be prepared to anticipate or handle problems in production. The outcome might be service disruptions that lead to financial loss. In the case of critical workloads, failing to apply these principles could jeopardize safety.
+If you don't apply these principles to your design, the workload likely won't be prepared to anticipate or handle problems in production. The outcome might be service disruptions that lead to financial loss. For critical workloads, failing to apply these principles could jeopardize safety.
 
 ## Design for business requirements  
 
@@ -49,7 +49,7 @@ Learn more about [design for recovery](/azure/well-architected/reliability/princ
 | ![Goal icon](../_images/goal.svg) The workload must be observable, and development teams must be able to learn from failures. |
 | -- |
 
-Build monitoring into your workload so that development and support teams have enough data to analyze when, why, and what component is failing. Build meaningful alerts to notify support teams in the event of a failure. Use analytics and insights to drive improvements.
+Build monitoring into your workload so that development and support teams have enough data to analyze when, why, and what component is failing. Build meaningful alerts to notify support teams when a failure occurs. Use analytics and insights to drive improvements.
 
 Learn more about [designing for operations](/azure/well-architected/reliability/principles#design-for-operations) in the Azure Well-Architected Framework.
 

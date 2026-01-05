@@ -12,8 +12,6 @@ search.audienceType:
 ---
 # About the Microsoft Cloud Germany datacenter
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Microsoft Cloud Deutschland is now closed. For more information, see [Microsoft Cloud Deutschland transition](https://www.microsoft.com/cloud-platform/germany-cloud-regions).
 
 

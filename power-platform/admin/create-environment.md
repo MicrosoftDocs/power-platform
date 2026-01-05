@@ -22,8 +22,6 @@ contributors:
 
 # Create and manage environments in the Power Platform admin center
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 An environment is a space to store, manage, and share your organization's business data, apps, and flows. An environment is a container to separate apps that might have different roles, security requirements, or target audiences. Power Apps creates a single default environment for each tenant, and all users in that tenant share it.
 
 ## Who can create environments?
@@ -125,18 +123,9 @@ For Dynamics 365 finance and operations apps, you need at least:
 
 ### Steps
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select **New** in the command bar.
-   
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select **New** in the command bar.
----
 
 4. Enter the following settings:
 
@@ -175,18 +164,9 @@ You need 1 GB of available database capacity.
 
 ### Steps
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select **New** in the command bar.
-   
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select **New** in the command bar.
----
 
 4. Enter the following settings:
 
@@ -213,7 +193,6 @@ You can indicate how often you prefer an environment to receive updates and feat
 
 ### Set refresh cadence
 
-### [Modern admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
@@ -221,16 +200,6 @@ You can indicate how often you prefer an environment to receive updates and feat
 1. Select **Edit**.
 1. Under **Refresh cadence**, select the desired cadence type.
 1. Select **Save** to apply the changes.
-   
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. Select **Edit**.
-1. Under **Refresh cadence**, select the desired cadence type.
-1. Select **Save** to apply the changes.
----
 
 The refresh cadence doesn't change when you receive updates for:
 

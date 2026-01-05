@@ -2,11 +2,11 @@
 title: "Create packages for the Package Deployer tool"
 description: "Learn about migrating configuration data, solutions, and more from one environment to another."
 keywords: 
-author: marcelbf
-ms.author: marcelbf
+author: "marcelbf"
+ms.author: "marcelbf"
 ms.subservice: alm
-ms.date: 06/10/2024
-ms.reviewer: pehecke
+ms.date: 07/31/2025
+ms.reviewer: "pehecke"
 ms.topic: how-to
 search.audienceType: 
   - developer
@@ -34,12 +34,12 @@ Package Deployer lets administrators deploy packages on Microsoft Dataverse inst
 To create a Package Deployer package, perform the following steps.
 > [!div class="checklist"]
 >
-> * Create a Visual Studio or MSBuild project
-> * Add solutions and other files to the project  
-> * Update provided HTML files (optional)
-> * Specify configuration values for the package
-> * Define custom code for the package
-> * Build and deploy the package
+> - Create a Visual Studio or MSBuild project
+> - Add solutions and other files to the project  
+> - Update provided HTML files (optional)
+> - Specify configuration values for the package
+> - Define custom code for the package
+> - Build and deploy the package
 
 These steps are described in detail in this article.
 
@@ -136,7 +136,7 @@ Next, update the HTML language specific files.
 
     1. Create a copy of the **en-us** folder under **PkgFolder** > **Content**.  
     2. Rename the copied folder to the appropriate language. For example, for the Spanish language, rename it to **es-ES**.  
-    3. Modify the content of the HTML files to add Spanish content. 
+    3. Modify the content of the HTML files to add Spanish content.
 
 ---
 
@@ -160,29 +160,31 @@ You can add custom code that executes before, during, and after the package is i
 
       ```csharp  
       public override void InitializeCustomExtension()  
-      {  
-      // Do nothing.  
+      {
+        // Validate the state of the runtime settings object.  
+        if (RuntimeSettings != null)  
+        {  
+            PackageLog.Log(string.Format("Runtime Settings populated.  Count = {0}",
+                RuntimeSettings.Count));  
+            foreach (var setting in RuntimeSettings)  
+            {  
+                PackageLog.Log(string.Format("Key={0} | Value={1}", setting.Key, 
+                    setting.Value.ToString()));  
+            }  
 
-      // Validate the state of the runtime settings object.  
-      if (RuntimeSettings != null)  
-      {  
-      PackageLog.Log(string.Format("Runtime Settings populated.  Count = {0}", RuntimeSettings.Count));  
-      foreach (var setting in RuntimeSettings)  
-      {  
-      PackageLog.Log(string.Format("Key={0} | Value={1}", setting.Key, setting.Value.ToString()));  
-      }  
-
-      // Check to see if skip checks is present.  
-      if ( RuntimeSettings.ContainsKey("SkipChecks") )  
-      {  
-      bool bSkipChecks = false;  
-      if (bool.TryParse((string)RuntimeSettings["SkipChecks"], out bSkipChecks))  
-      OverrideDataImportSafetyChecks = bSkipChecks;  
-      }  
-      }  
-      else  
-      PackageLog.Log("Runtime Settings not populated");  
-      }  
+            // Check to see if skip checks is present.  
+            if ( RuntimeSettings.ContainsKey("SkipChecks") )  
+            {  
+                bool bSkipChecks = false;  
+                if (bool.TryParse((string)RuntimeSettings["SkipChecks"], out bSkipChecks))  
+                    OverrideDataImportSafetyChecks = bSkipChecks;  
+            }  
+        }  
+        else
+        {
+            PackageLog.Log("Runtime Settings not populated");
+        }  
+      } 
       ```  
 
        This code enables the administrator use the command line or the [Import-CrmPackage](/powershell/module/microsoft.xrm.tooling.packagedeployment/import-crmpackage) cmdlet to specify whether to skip the safety checks while running the Package Deployer tool to import the package. More information: [Deploy packages using Package Deployer and Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md)  
@@ -201,77 +203,89 @@ You can add custom code that executes before, during, and after the package is i
         | `oldSolutionId` |     GUID of the old solution.      |
         | `newSolutionId` |     GUID of the new solution.      |
 
+   4. Override the method `OverrideSolutionImportDecision` to return a [UserRequestedImportAction](/dotnet/api/microsoft.xrm.tooling.packagedeployment.crmpackageextentionbase.userrequestedimportaction) enum controlling whether the import of a solution will be skipped, updated or upgraded (the default).
 
-   4. Enter custom code to execute before the solution import completes in the override definition of the `BeforeImportStage` method. The sample data and some flat files for solutions specified in the `ImportConfig.xml` file are imported before the solution import completes.  
+      ```csharp
+      public override UserRequestedImportAction OverrideSolutionImportDecision(
+        string solutionUniqueName, Version organizationVersion,
+        Version packageSolutionVersion, Version inboundSolutionVersion,
+        Version deployedSolutionVersion, ImportAction systemSelectedImportAction )
+      {
+        return systemSelectedImportAction == 
+            ImportAction.Import ? UserRequestedImportAction.ForceUpdate
+            : base.OverrideSolutionImportDecision(solutionUniqueName, organizationVersion,
+            packageSolutionVersion, inboundSolutionVersion, deployedSolutionVersion,
+            systemSelectedImportAction);
+      }
+      ```
 
-   5. Override the currently selected language for configuration data import using the override method definition of `OverrideConfigurationDataFileLanguage`. If the specified locale ID (LCID) of the specified language isn't found in the list of available languages in the package, the default data file is imported.  
+   5. Enter custom code to execute before the solution import completes in the override definition of the `BeforeImportStage` method. The sample data and some flat files for solutions specified in the `ImportConfig.xml` file are imported before the solution import completes.  
+
+   6. Override the currently selected language for configuration data import using the override method definition of `OverrideConfigurationDataFileLanguage`. If the specified locale ID (LCID) of the specified language isn't found in the list of available languages in the package, the default data file is imported.  
 
        You specify the available languages for the configuration data in the `<cmtdatafiles>` node in the `ImportConfig.xml` file. The default configuration data import file is specified in the `crmmigdataimportfile` attribute in the `ImportConfig.xml` file.  
 
        Skipping data checks (<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> = true) can be effective here if you're sure that the target Dataverse instance doesn't contain any data.  
 
-   6. Enter custom code to execute after the import completes in the override definition of `AfterPrimaryImport`>method. The remaining flat files that weren't imported earlier, before the solution import started, are imported now.  
+   7. Enter custom code to execute after the import completes in the override definition of `AfterPrimaryImport`>method. The remaining flat files that weren't imported earlier, before the solution import started, are imported now.  
 
-   7. Change the default name of your package folder to the package name that you want. To do so, rename the `PkgFolder` (or **PkgAssets**) folder in the **Solution Explorer** pane, and then edit the return value under the `GetImportPackageDataFolderName` property.  
+   8. Change the default name of your package folder to the package name that you want. To do so, rename the `PkgFolder` (or **PkgAssets**) folder in the **Solution Explorer** pane, and then edit the return value under the `GetImportPackageDataFolderName` property.  
 
       ```csharp  
       public override string GetImportPackageDataFolderName  
       {  
-      get  
-      {  
-      // WARNING this value directly correlates to the folder name in the Solution Explorer where the ImportConfig.xml and sub content is located.  
-      // Changing this name requires that you also change the correlating name in the Solution Explorer  
-      return "PkgFolder";  
-      }  
+          get  
+          {  
+              // WARNING this value directly correlates to the folder name in Solution 
+              // Explorer where the ImportConfig.xml and sub content is located.  
+              // Changing this name requires that you also change the correlating name
+              // in Solution Explorer.
+              return "PkgFolder";  
+          }  
       }  
       ```  
 
-   8. Change the package name by editing the return value under the `GetNameOfImport` property.  
+   9. Change the package name by editing the return value under the `GetNameOfImport` property.  
 
       ```csharp  
       public override string GetNameOfImport(bool plural)  
       {  
-      return "Package Short Name";  
+          return "Package Short Name";  
       }  
       ```  
 
        This returned value is the name of your package that appears on the package selection page in the Dynamics 365 Package Deployer wizard.  
 
-   9. Change the package description by editing the return value under the `GetImportPackageDescriptionText` property.  
+   10. Change the package description by editing the return value under the `GetImportPackageDescriptionText` property.  
 
        ```csharp  
-
        public override string GetImportPackageDescriptionText  
        {  
-       get { return "Package Description"; }  
+           get { return "Package Description"; }  
        }  
-
        ```  
 
         This returned value is the package description that appears alongside the package name on the package selection page in the Package Deployer wizard.  
 
-   10. Change the package long name by editing the return value under the `GetLongNameOfImport` property.  
+   11. Change the package long name by editing the return value under the `GetLongNameOfImport` property.  
 
        ```csharp  
-
        public override string GetLongNameOfImport  
        {  
-       get { return "Package Long Name"; }  
+           get { return "Package Long Name"; }  
        }  
-
        ```  
 
         The package long name appears on the next page after you have selected the package to install.  
 
 3. Additionally, the following function and variables are available to the package:  
 
-
    |Name|Type|Description|
    |--|--|--|
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.CreateProgressItem(System.String)> |Function|Used to create a new progress item in the user interface (UI). |
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.RaiseUpdateEvent(System.String,Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ProgressPanelItemStatus)> |Function| Used to update the progress created by the call to <xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.CreateProgressItem(System.String)>.<br /><br /> <xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ProgressPanelItemStatus> is an enum with the following values:<br /><br /> Working = 0<br />Complete = 1<br />Failed = 2<br />Warning = 3<br />Unknown = 4 |
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.RaiseFailEvent(System.String,System.Exception)>|Function|Used to fail the current status import with an exception message.|
-   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.IsRoleAssoicatedWithTeam(System.Guid,System.Guid)>|Function|Used to determine if a role is associated with a specified team.|
+   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.IsRoleAssociatedWithTeam(System.Guid,System.Guid)>|Function|Used to determine if a role is associated with a specified team.|
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.IsWorkflowActive(System.Guid)>|Function|Used to determine if a specified workflow is active. |
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.PackageLog>| Class Pointer|A pointer to the initialized logging interface for the package. This interface is used by a package to log messages and exceptions to the package log file.|
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.RootControlDispatcher>|Property|A dispatcher interface used to allow your control to render its own UI during package deployment. Use this interface to wrap any UI elements or commands. It's important to check this variable for null values before using it as it might not be set to a value.  |
@@ -279,7 +293,7 @@ You can add custom code that executes before, during, and after the package is i
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.DataImportBypass> |Property|Specify whether Dynamics 365 Package Deployer skips all data import operations such as importing Dataverse sample data, flat file data, and data exported from the Configuration Migration tool. Specify true or false. Default is `false`.|
    | <xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> |Property|Specify whether Dynamics 365 Package Deployer bypasses some of its safety checks, which helps in improving the import performance. Specify `true` or `false`. Default is `false`.<br /><br /> You should set this property to `true` only if the target Dataverse instance doesn't contain any data.|
 
-4. Save your project. The next step is to build the package.   
+4. Save your project. The next step is to build the package.
   
 ## Build and deploy  
 
@@ -313,12 +327,12 @@ To build the package, press F5 in Visual Studio or select **Build** > **Build so
 
 Your package is made of the following files under the *\<Project>*\Bin\Debug folder.  
 
-   - **\<PackageName> folder**: The folder name is the same as the one you changed for your package folder name in step 2.g of this section [Add custom code](#add-custom-code). This folder contains all solutions, configuration data, flat files, and the contents for your package.
+- **\<PackageName> folder**: The folder name is the same as the one you changed for your package folder name in step 2.g of this section [Add custom code](#add-custom-code). This folder contains all solutions, configuration data, flat files, and the contents for your package.
 
 > [!NOTE]
 > You may see a .NET folder (e.g, net472) containing a pdpublish folder. Your DLL and other project files are in that pdpublish folder.
 
-   - **\<PackageName>.dll**: The assembly contains the custom code for your package. By default, the name of the assembly is the same as your project name.
+- **\<PackageName>.dll**: The assembly contains the custom code for your package. By default, the name of the assembly is the same as your project name.
 
 ### Deploy
 

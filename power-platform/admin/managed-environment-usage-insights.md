@@ -3,7 +3,7 @@ title: Usage insights
 description: Stay informed about your managed environments with weekly digests.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/01/2025
+ms.date: 11/24/2025
 author: mihaelablendea 
 ms.author: amchern
 ms.reviewer: sericks
@@ -13,13 +13,16 @@ ms.custom:
 
 # Usage insights
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 <!-- https://go.microsoft.com/fwlink/?linkid=2194598 and 2211177 -->
 
 Stay informed about what’s happening in your managed environments with Power Platform’s weekly admin digest. Analytics about your top apps, your most impactful makers, and inactive resources you can safely clean up are distilled and delivered to your mailbox once a week.
 
-To enable a weekly email digest, select **Environments** in the navigation pane and then select a managed environment. On the command bar, select **Edit Managed Environments**, select the settings under **Usage insights**, and then select **Include insights for this environment in the weekly email digest**. 
+To enable a weekly email digest, do the following.
+1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select a managed environment.
+1. On the command bar, select **Edit Managed Environments**, select the settings under **Usage insights**, and then select **Include insights for this environment in the weekly email digest**. 
 
 :::image type="content" source="media/managed-environment-weekly-digest-include-environmenta.png" alt-text="Screenshot of the Managed Environments settings, with the Include this environment option highlighted.":::
 

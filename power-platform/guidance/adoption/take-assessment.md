@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

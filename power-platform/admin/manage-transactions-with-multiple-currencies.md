@@ -5,15 +5,13 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/16/2021
+ms.date: 11/25/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
 ---
 # Manage transactions with multiple currencies
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Currencies determine the prices for products in the product catalog and the cost of transactions, such as sales orders. If your customers are spread across geographies, add their currencies to manage your transactions. Add the currencies that are most appropriate for your current and future business needs.  
 
@@ -27,15 +25,14 @@ Currencies determine the prices for products in the product catalog and the cost
 
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
 
-2. In the Power Platform admin center, select an environment. 
-
-3. Select **Settings** > **Business**.
-
-4. Select **Currencies**.  
-
-5. Select **New**.  
-
-6. Fill in the information, as required.  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select an environment.
+1. Select **Settings** > **Business**.
+1. Select **Currencies**.  
+1. Select **New**.  
+1. Fill in the information, as required.  
 
 
    |          Field          |                                                                                                                                                                                                                                                                                                                                                                            Description                                                                                                                                                                                                                                                                                                                                                                            |
@@ -48,24 +45,22 @@ Currencies determine the prices for products in the product catalog and the cost
    | **Currency Conversion** |                                                                                                                                                                                                                                     Type the value of the selected currency in terms of one US dollar. This is the amount at which the selected currency converts to the base currency. **Important:**  Make sure you update this value as frequently as required to avoid any inaccurate calculations in your transactions.                                                                                                                                                                                                                                      |
 
 
-7. When you're done, on the command bar, select **Save** or **Save and Close**.  
+1. When you're done, on the command bar, select **Save** or **Save and Close**.  
 
    > [!TIP]
    >  To edit a currency, select the currency, and then enter or select the new values.  
 
 ## Delete a currency  
 
-1. In the Power Platform admin center, select an environment. 
-
-2. Select **Settings** > **Business**.
-
-3. Select **Currencies**.  
-
-4. From the list of currencies displayed, select the currency to delete.  
-
-5. Select **Delete**  ![Delete button.](media/crm-ua-delete.png "Delete button").  
-
-6. Confirm the deletion.  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select an environment.
+1. Select **Settings** > **Business**.
+1. Select **Currencies**.  
+1. From the list of currencies displayed, select the currency to delete.  
+1. Select **Delete**  ![Delete button.](media/crm-ua-delete.png "Delete button").  
+1. Confirm the deletion.  
 
 > [!IMPORTANT]
 >  You can't delete currencies that are in use by other records; you can only deactivate them. Deactivating currency records doesn't remove the currency information stored in existing records, such as opportunities or orders. However, you won't be able to select the deactivated currency for new transactions.  

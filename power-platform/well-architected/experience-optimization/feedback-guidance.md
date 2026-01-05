@@ -4,7 +4,7 @@ description: Learn effective strategies for providing meaningful feedback and gu
 author: RobStand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 08/05/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---

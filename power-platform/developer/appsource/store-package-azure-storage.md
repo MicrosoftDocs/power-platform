@@ -9,6 +9,7 @@ ms.author: shmcarth
 ms.subservice: developer
 search.audienceType: 
   - developer
+ms.custom: sfi-image-nochange
 ---
 # Step 4: Store your AppSource Package on Azure Storage and generate a URL with SAS key
 

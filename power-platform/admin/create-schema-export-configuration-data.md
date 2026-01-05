@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Create a schema to export configuration data
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The Configuration Migration tool lets you build a schema to describe your export data. It also enables you to check for any missing dependencies and relationships in the entities or fields to be exported to avoid an inconsistent data set.  
   
 <a name="Prereq"></a>   

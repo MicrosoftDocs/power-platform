@@ -4,7 +4,7 @@ description: Learn how to establish a testing strategy that supports and tests t
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -178,7 +178,7 @@ Microsoft Sentinel solution for Microsoft Power Platform allows customers to det
 - Phishing attacks made through Power Apps
 - Power Automate flows activity by departing employees
 - Microsoft Power Platform connectors added to an environment
-- Update or removal of Microsoft Power Platform data loss prevention policies
+- Update or removal of Microsoft Power Platform data policies
 
 For more information, see [Microsoft Sentinel solution for Microsoft Power Platform overview](/azure/sentinel/business-applications/power-platform-solution-overview).
 
@@ -196,7 +196,7 @@ The latest penetration tests and security assessments can be found on the [Micro
 
 Microsoft performs extensive testing of the Microsoft Cloud services. This testing includes penetration testing, with results published on the Service Trust Portal for your organization. Your organization may perform your own penetration test on Microsoft Power Platform and Microsoft Dynamics 365 services. All penetration testing must follow the [Microsoft Cloud Penetration Testing Rules of Engagement](https://www.microsoft.com/msrc/pentest-rules-of-engagement). It is important to remember that in many cases, the Microsoft Cloud uses shared infrastructure to host your assets and assets belonging to other customers. You must limit all penetration tests to your assets and avoid unintended consequences for other customers around you.
 
-Follow the rules of engagement to make sure that access isn't misused. For guidance on planning and executing simulated attacks, see:
+Follow the rules of engagement to make sure that access isn't misused. Learn more about planning and executing simulated attacks:
 
 - [Penetration Testing Rules of Engagement](https://www.microsoft.com/msrc/pentest-rules-of-engagement)
 - [Penetration testing](/azure/security/fundamentals/pen-testing)

@@ -1,8 +1,7 @@
 ---
 title: Support environments and consent to access customer data
 description: Understand why Microsoft Support may need your consent to access your customer data and create a support environment in your tenant to resolve an issue.
-ms.custom: ""
-ms.date: 08/24/2022
+ms.date: 12/22/2025
 ms.reviewer: "yinkafatona"
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,17 +11,21 @@ applies_to:
 author: sericks007
 contributors:
   - davidme-ms
+  - saukuma
 ms.assetid: 
 caps.latest.revision: 63
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+ms.custom:
+  - ""
+  - sfi-image-nochange
 ---
 
 # Support environments and consent to access customer data
 
-Microsoft may need to access customer data in your tenant or environment to investigate and troubleshoot issues for which you've requested support.  We may also need to replicate the environment in your tenant, with or without data, for testing purposes. We can reproduce an issue or evaluate a solution in a replicated [support environment](#what-are-support-environments) without affecting your production environment. 
+Microsoft may need to access customer data in your tenant or environment to investigate and troubleshoot issues for which you've requested support.  We may also need to replicate the environment in your tenant, with or without data, for testing purposes. We can reproduce an issue or evaluate a solution in a replicated [support environment](#what-are-support-environments) without affecting your production environment.
 
 Microsoft respects your privacy and puts you in control of the level of consent you grant as part of receiving support. We'll never access your customer data or replicate your environment without your consent. You can give your consent at the time you request support directly onto the support ticket, which helps eliminate delays in the issue resolution time and/or help expedite the issue resolution.  Your consent is temporary, and you can revoke it at any time. This consent doesn't grant [lockbox](about-lockbox.md) request approval and/or revoke it.  
 
@@ -58,7 +61,7 @@ The support environment expires seven days after you revoke consent or when the 
 
 Consent lasts as long as the support request is open or until you revoke it.
 
-### How do I grant or revoke consent after I create a support request? 
+### How do I grant or revoke consent after I create a support request?
 
 A change in consent takes effect immediately.
 
@@ -72,7 +75,7 @@ A change in consent takes effect immediately.
 
 ### What permissions are needed to grant, revoke, or change consent?  
 
-The permissions you need to manage consent depend on the environment you specify at the time you create your request. Consent can be granted at ticket creation time on the support form and it can be updated in the ticket settings page once the ticket is created. 
+The permissions you need to manage consent depend on the environment you specify at the time you create your request. Consent can be granted at ticket creation time on the support form and it can be updated in the ticket settings page once the ticket is created.
 
 ## What are support environments?
 

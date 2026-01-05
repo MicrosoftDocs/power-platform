@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Change the base currency of a Dataverse environment in Power Platform
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 When you create an environment that includes a database in Microsoft Power Platform, you must specify the currency that is used as the base currency in Dataverse. The base currency is the default currency. It's used in currency conversion and reporting.
 
 In some situations, you might have to change the base currency of an environment. This article explains how to change it.
@@ -62,8 +60,12 @@ You can import data into the **CurrencyExchangeRate** table by using a comma-sep
 
 In the CSV file, the `fromcurrencyid` and `tocurrencyid` values must be currency codes. To find these values, follow these steps.
 
-1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and open the environment that you want.
-1. Select **Settings** > **Resources** > **All legacy settings** > **Settings** > **Business Management** > **Currencies**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. Select **Settings** > **Resources** > **All legacy settings**.
+1. On the **Business Management** page, select **Currencies**.
 
 ### Examples: Importing exchange rate data for a non-base currency through a CSV file
 

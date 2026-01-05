@@ -7,7 +7,7 @@ ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.date: 06/05/2025
 ms.author: jaganp
-ms.reviewer: pankajsharma2087  
+ms.reviewer: jhaskett-msft  
 ms.contributors:  
   - cerenkiroglu
   - durgay

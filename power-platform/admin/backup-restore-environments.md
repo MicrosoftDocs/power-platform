@@ -2,26 +2,26 @@
 title: Back up and restore environments
 description: Learn how to back up and restore Power Platform environments.
 ms.topic: how-to
-ms.date: 06/24/2025
+ms.date: 12/04/2025
 ms.subservice: admin
 author: matapg007
-ms.custom: NewPPAC
 ms.author: matgupta
 ms.reviewer: ellenwehrle
 contributors: 
-- tapas1447
-- ttreen
-- Funken1766
-- Daniel2327
-- elijohnson-ms
-- iscohen-microsoft
-- yingchin
-- sericks
+  - tapas1447
+  - ttreen
+  - Funken1766
+  - Daniel2327
+  - elijohnson-ms
+  - iscohen-microsoft
+  - yingchin
+  - sericks
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 
 # Back up and restore environments
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 It's important to protect your data on Microsoft Power Platform and in Dataverse and to provide continuous availability of service through system or manual backups.
 
@@ -52,8 +52,6 @@ System backup and restore operations aren't supported for trial-type environment
 
 Environments that have a database are automatically backed up and can be restored. All your environments, except trial environments (both standard and subscription-based), have system backups. System backups are created continuously using the Azure SQL Database automated backup feature. Learn more in [Automated backups](/azure/sql-database/sql-database-automated-backups).
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
@@ -61,18 +59,6 @@ Environments that have a database are automatically backed up and can be restore
 1. On the **System** tab, select an available system backup by choosing a date and time.
 1. Click **Continue**.
 1. The **Backup retention** side panel displays the backup details.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Backup & Restore**, then select **Restore or manage**.  
-1. On the **System** tab, select an available system backup by choosing a date and time.
-1. Click **Continue**.
-1. The **Backup retention** side panel displays the backup details.
-
----
 
 ### About system backups
 
@@ -123,8 +109,6 @@ You can't directly restore backups to production environments. To restore a back
 
 You must restore an environment in the same region where it was backed up. The target and source environments should be in the same region. When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time (t1), full audit data for the environment is available. This data includes any audit logs that were generated after t1.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
@@ -134,25 +118,12 @@ You must restore an environment in the same region where it was backed up. The t
 1. On the **Backup retention** side panel, select the target environment to overwrite.
 1. Select **Restore**, then select **Confirm** to proceed with overwriting the environment.
 
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Backup & Restore**, then select **Restore or manage**.  
-1. Under the **System** tab, select an available system backup by choosing a date and time.
-1. Select **Continue**.
-1. On the **Backup retention** side panel, select the target environment to overwrite.
-1. Select **Restore**, then select **Confirm** to proceed with overwriting the environment.
-
----
-
 > [!NOTE]
 >
 > - Only sandbox environments can be restored to. For information about the effects of changing the environment type, go to the section: [Can I restore to a production environment?](#can-i-restore-to-a-production-environment).
 > - Under **Edit details**, you can change the environment name.
 
-## If you don't see the environment that you want to restore to
+### If you don't see the environment that you want to restore to
 
 These restrictions apply to restoration from both system backups and manual backups:
 
@@ -195,9 +166,7 @@ Although automated system backups are great, you should create your own backups 
 - You must restore an environment in the same region where it was backed up.
 - If you don't see your target environment, refer to the [If you don't see the environment that you want to restore to](#if-you-dont-see-the-environment-that-you-want-to-restore-to) section for possible reasons and troubleshooting steps.
 
-### Create a manual backup
-
-### [New admin center](#tab/new)
+## Create a manual backup
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
@@ -205,17 +174,6 @@ Although automated system backups are great, you should create your own backups 
 1. In the command bar, click **Backup & Restore**, then select **Restore or manage**.  
 1. Select the **Manual** tab, then click **Create a manual backup**.
 1. Fill in the information, then select **Create** to proceed.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Backup & Restore**, then select **Restore or manage**.  
-1. Select the **Manual** tab, then click **Create a manual backup**.
-1. Fill in the information, then select **Create** to proceed.
-
----
 
 There's no real-time status indicator while the backup is being processed. However, you receive a confirmation message once the backup is successfully created. When the backup is completed, you receive the following message: "The &lt;*backup name*&gt; backup was successfully created."
 
@@ -226,8 +184,6 @@ You can restore backups only to sandbox environments. You can't restore them to 
 > [!IMPORTANT]
 > Changing the environment type to sandbox affects database retention. For more information about the effects of changing the environment type, go to the section: [Can I restore to a production environment?](#can-i-restore-to-a-production-environment).
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
@@ -237,18 +193,7 @@ You can restore backups only to sandbox environments. You can't restore them to 
 1. Select whether you want to include audit logs. The inclusion of audit logs can significantly increase the time that's required to restore an environment. Therefore, audit logs are excluded by default. Learn more in [Restore audit logs](#restore-audit-logs).
 1. Select **Restore**, then select **Confirm** to proceed with overwriting the environment.
 
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, select **Backup & Restore**, then select **Restore or manage**.  
-1. On the **Manual** tab, select a manual backup to restore, then select **Restore** in the command bar.
-1. On the **Backup retention** side panel, select the target environment to overwrite.
-1. Select whether you want to include **audit logs**. The inclusion of audit logs can significantly increase the time that is required to restore an environment. Therefore, audit logs are excluded by default. Learn more in [Restore audit logs](#restore-audit-logs).
-1. Select **Restore**, then select **Confirm** to proceed with overwriting the environment.
-
-### Restore audit logs
+## Restore audit logs
 
 Restoration of audit logs can significantly increase the time that is required to restore an environment. Therefore, audit logs are excluded by default. Follow these steps to include audit logs when you restore a manual backup.
 
@@ -263,23 +208,12 @@ Restoration of audit logs can significantly increase the time that is required t
 
 1. Continue with step 8 of the previous procedure.
 
-### Delete a manual backup
+## Delete a manual backup
 
 You can delete manual backups. You can't delete system backups.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, select **Backup & Restore**, then select **Restore or manage**.  
-1. Navigate to the **Manual** tab. Select the backup to delete, then select **Delete** in the command bar.
-1. Select **Continue** to confirm the deletion.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
 1. In the command bar, select **Backup & Restore**, then select **Restore or manage**.  
 1. Navigate to the **Manual** tab. Select the backup to delete, then select **Delete** in the command bar.
@@ -394,7 +328,7 @@ For more information about the recovery environment, go to [Recover environment]
 
 ### The restore operation failed. What action can I take?
 
-The restore process, especially for environments with large amounts of data, is a complex backend operation. If the restore operation fails, wait 30 minutes and retry the operation again. The other actions you can take are reset, delete, copy, or restore. To retry copy or restore, the failed environment must be the target environment for the operation. 
+The restore process, especially for environments with large amounts of data, is a complex backend operation. If the restore operation fails, the target environment is left in a disabled state. To retry the restore process, the failed environment must be the target environment for the operation. Wait 30 minutes and retry the operation again. The other actions you can take for the disabled, target environment are reset, delete, or copy to as a target environment.
 
 ### You don't see the environment that you want to restore to
 

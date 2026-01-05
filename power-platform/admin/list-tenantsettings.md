@@ -6,6 +6,7 @@ ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 01/10/2025
+ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -21,8 +22,6 @@ ms.collection: bap-ai-copilot
 ---
 
 # List tenant settings (preview)
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -128,7 +127,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.governance.disableAdminDigest | Boolean | Disables the weekly admin digest email for Managed Environments. Default value is false. |
 |powerPlatform.governance.disableDeveloperEnvironmentCreationByNonAdminusers | Boolean | Restrict all developer environments to be created by tenant admins, Power Platform admins, or Dynamics 365 service admins. Default is false.|
 |powerPlatform.governance.enableDefaultEnvironmentRouting | Boolean | Enables the Default Environment routing feature that creates personal, developer environments for new makers. Default value is false. |
-|powerPlatform.governance.policy.enableDesktopFlowDataPolicyManagement | Boolean | When this setting is true, admins can view and manage desktop flow action groups in DLP policies in the Power Platform admin center. Default value is false.|
+|powerPlatform.governance.policy.enableDesktopFlowDataPolicyManagement | Boolean | When this setting is true, admins can view and manage desktop flow action groups in data policies in the Power Platform admin center. Default value is false.|
 |powerPlatform.governance.policy.enableAzureCommercialConnectionsFromUsGov | Boolean | This setting isn't currently used by the platform but might be used in the future.|
 |powerPlatform.licensing.disableUseOfUnassignedAIBuilderCredits| Boolean | Ability to use unallocated AI Builder credits in environments without allocated credits. Default value is true. |
 |powerPlatform.licensing.disableBillingPolicyCreationByNonAdminUsers | Boolean | This is a legacy setting that is no longer used by the platform. Default value is false.|

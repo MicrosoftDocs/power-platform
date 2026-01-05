@@ -16,9 +16,11 @@ contributors:
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 06/17/2025
-ms.custom: ignite-2024
 ms.service: power-platform
 ms.subservice: sap
+ms.custom:
+  - ignite-2024
+  - sfi-image-nochange
 # Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID with certificates so users can access SAP data through Power Platform with single sign.
 ---
 

@@ -4,7 +4,7 @@ description: Learn how to design a monitoring and alerting strategy that support
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -100,7 +100,13 @@ There are many metrics to monitor for databases. In the context of reliability, 
 - Memory pressure
 - Locks
 
+## Example
+
+[Distributed tracing across multiple services in Power Platform](/power-platform/architecture/key-concepts/distributed-tracing) provides an example scenario and visual representation of how to trace events across multiple services. This guidance provides practical applications and use cases for distributed tracing and explains how to implement it across multiple services in Power Platform.
+
 ## Power Platform facilitation
+
+Use the [Monitor](/power-platform/admin/monitoring/monitoring-overview) area of the Power Platform admin center to measure and improve operational health metrics of apps and flows. The Monitor experience is available to both makers and admins. Makers use the data to improve their resources. Admins use it to understand aggregate operational health in the tenant or in specific environments. The purpose of the Monitor area of the Power Platform admin center is to bring attention to resources that have degraded operational health and highlight resources that have opportunities for improvement.
 
 Power Platform integrates with [Application Insights](/azure/azure-monitor/app/app-insights-overview), which is part of the [Azure Monitor](/azure/azure-monitor/overview) ecosystem. You can use this integration to:
 
@@ -112,15 +118,15 @@ Power Platform integrates with [Application Insights](/azure/azure-monitor/app/a
 
 - Capture telemetry data from your [Microsoft Copilot Studio agent](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights. You can use this telemetry to monitor logged messages and events sent to and from your agent, topics to be triggered during user conversations, and custom telemetry events that can be sent from your topics.
 
-Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. For more information about logging activities in Power Platform, see:
+Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. Learn more:
 
 - [Power Apps](/power-platform/admin/logging-powerapps)
 - [Power Automate](/power-platform/admin/logging-power-automate)
 - [Copilot Studio](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Power Pages](/power-platform/admin/logging-power-pages)
 - [Power Platform connectors](/power-platform/admin/connector-events-power-platform)
-- [Data loss prevention](/power-platform/admin/dlp-activity-logging)
-- [Power Platform administrative logs](/power-platform/admin/admin-activity-logging)
+- [Data policy activity logging](/power-platform/admin/dlp-activity-logging)
+- [View Power Platform administrative logs using auditing solutions in Microsoft Purview](/power-platform/admin/admin-activity-logging)
 - [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 
 Your Power Platform workload may include Azure resources. To learn more about monitoring recommendations for Azure resources, see [Recommendations for designing and creating a monitoring system](/azure/well-architected/operational-excellence/observability).

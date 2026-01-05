@@ -15,8 +15,6 @@ contributors:
 ---
 # Regional and language options for your environment 
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Add languages in your organization to display the user interface and Help in a language that’s different from the base language. 
 
 The following table shows tasks that are associated with changing regional and language options for your organization.  
@@ -32,21 +30,12 @@ The following table shows tasks that are associated with changing regional and l
 
 These settings can be found in the Microsoft Power Platform admin center for an environment.
 
-## [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
-1. Expand **Product**, and then select **Languages**. 
-
-## [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.
-1. Expand **Product**, and then select **Languages**. 
----
+1. Expand **Product**, and then select **Languages**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting. To check your security role, go to [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 

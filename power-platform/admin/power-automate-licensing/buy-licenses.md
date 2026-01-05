@@ -1,11 +1,11 @@
 ---
-title: "Buy Power Automate licenses"
-description: "Buy Power Automate licenses."
-author: PriyaKodukula
+title: Buy Power Automate licenses
+description: Buy Power Automate licenses.
+author: sericks007
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 06/18/2025
-ms.author: prkoduku
+ms.author: sericks
 ms.contributors:
   - lsuresh
 contributors:
@@ -45,8 +45,6 @@ It's easy and scalable to assign the Hosted Process licenses you purchased to th
 
 Follow these steps to assign Hosted Process capacity to an environment:
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Licensing** in the navigation pane.
 1. In the **Licensing** pane, select **Capacity add-ons**. 
@@ -58,21 +56,6 @@ Follow these steps to assign Hosted Process capacity to an environment:
    > The Hosted Process is environment specific. So, if you have multiple environments that need hosted RPA capabilities, you need to assign the Hosted Process license in each environment.
 
 1. Select **Save**.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select **Resources** > **Capacity** on the left side of the screen.
-1. Select **Add-ons**.
-1. Select the edit button on an environment.
-1. Enter the amount of each add-on you would like to allocate to each environment.
-
-   > [!NOTE]
-   > The Hosted Process is environment specific. So, if you have multiple environments that need hosted RPA capabilities, you need to assign the Hosted Process license in each environment.
-
-1. Select **Save**.
-
----
 
 After you assign the Hosted Process licenses to an environment, you can create hosted machines and/or hosted machine group in that environment.
 
@@ -93,8 +76,6 @@ It's easy and scalable to assign the Process licenses you purchased to the envir
 
 Follow these steps to assign Process capacity to an environment.
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Licensing** in the navigation pane.
 1. In the **Licensing** pane, select **Capacity add-ons**. 
@@ -111,26 +92,6 @@ Follow these steps to assign Process capacity to an environment.
 1. Select **Save**.
 
    :::image type="content" source="../media/power-automate-licensing/assign-process-license-environment-new.png" alt-text="Screenshot that shows the steps needed to assign a Process license to an environment in the new admin center." lightbox="../media/power-automate-licensing/assign-process-license-environment-new.png":::
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select **Resources** > **Capacity** on the left side of the screen.
-1. Select **Add-ons**.
-1. Select the edit button on an environment.
-1. Enter the amount of each add-on you would like to allocate to each environment.
-
-   > [!TIP]
-   > Power Automate Process is the same as Process license.
-   
-   > [!NOTE]
-   > The Process license is environment specific. So, if you have multiple environments that need to run a flow and/or unattended desktop flow, you need to assign the Process license in each environment.
-
-1. Select **Save**.
-
-   :::image type="content" source="../media/power-automate-licensing/assign-process-license-environment.png" alt-text="Screenshot that shows the steps needed to assign a Process license to an environment in the classic admin center." lightbox="../media/power-automate-licensing/assign-process-license-environment.png":::
-
----
 
 #### Assign a Process license to a flow
 
@@ -177,8 +138,6 @@ It's easy and scalable to allocate the per flow add-ons you purchased to the env
 
 Follow these steps to allocate add-ons to an environment.
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Licensing** in the navigation pane.
 1. In the **Licensing** pane, select **Capacity add-ons**. 
@@ -194,24 +153,6 @@ Follow these steps to allocate add-ons to an environment.
 
    :::image type="content" source="../media/power-automate-licensing/assign-license-environment-new.png" alt-text="Screenshot that shows the steps needed to assign a per flow license to an environment and manage add-ons in the new admin center." lightbox="../media/power-automate-licensing/assign-license-environment-new.png":::
 
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select **Resources** > **Capacity** on the left side of the screen.
-1. Select **Add-ons** > **Manage** in the add-on section.
-1. Select an environment.
-1. Enter the amount of each add-on you would like to allocate to each environment.
-
-   > [!TIP]
-   > Flow per business process is same as per flow license.
-   > [!NOTE]
-   > The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in each environment.
-1. Select **Save**.
-
-   :::image type="content" source="../media/power-automate-licensing/assign-license-environment.png" alt-text="Screenshot that shows the steps needed to assign a per flow license to an environment and manage add-ons in the classic admin center." lightbox="../media/power-automate-licensing/assign-license-environment.png":::
-
-
----
 #### Assign a per flow license to a flow
 
 After you assign a per flow plan add-on to an environment, you can choose which flows can use that add-on.
@@ -230,24 +171,12 @@ After you update your flow, anyone will be able to use that flow, even if it use
 
 ### Assign unattended RPA add-on to an environment
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Licensing** in the navigation pane.
 1. In the **Licensing** pane, select **Capacity add-ons**. 
 1. Select **Add-ons** > **Manage** in the add-on section.
 
 :::image type="content" source="../media/power-automate-licensing/assign-unattended-add-on-new.png" alt-text="Screenshot that shows how to assign unattended RPA add-ons in the new admin center." lightbox="../media/power-automate-licensing/assign-unattended-add-on-new.png":::
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select **Resources** > **Capacity** on the left side of the screen.
-1. Select **Add-ons** > **Manage** in the add-on section.
-
-:::image type="content" source="../media/power-automate-licensing/assign-unattended-add-on.png" alt-text="Screenshot that shows how to assign unattended RPA add-ons in the classic admin center." lightbox="../media/power-automate-licensing/assign-unattended-add-on.png":::
-
----
 
 Users can now run unattended desktop flows within the environment that has the unattended capacity.
 
@@ -315,9 +244,9 @@ Users can use Power Automate either as individuals or as a part of their organiz
 
 #### How can I restrict my users' ability to access my organization's business data?
 
-Power Automate allows you to create data groups for business and non-business data. After you implement these data loss prevention policies, users can't design nor run flows that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
+Power Automate allows you to create data groups for business and non-business data. After you implement these data policies, users can't design nor run flows that combine business and non-business data. For more details, See [Data policies](/power-automate/prevent-data-loss).
 
-:::image type="content" source="../media/power-automate-licensing/data-loss-prevention-policy.png" alt-text="Screenshot that shows a sample data loss prevention policy configuration." lightbox="../media/power-automate-licensing/data-loss-prevention-policy.png":::
+:::image type="content" source="../media/power-automate-licensing/data-loss-prevention-policy.png" alt-text="Screenshot that shows a sample data policy configuration." lightbox="../media/power-automate-licensing/data-loss-prevention-policy.png":::
 
 
 ## I'm a maker

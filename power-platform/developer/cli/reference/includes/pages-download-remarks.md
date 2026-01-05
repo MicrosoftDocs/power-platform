@@ -1,3 +1,3 @@
 ### Remarks
 
-More information: [Download portals content](/power-apps/maker/portals/power-apps-cli-tutorial#step-3-download-portals-content)
+More information: [Download website content](/power-pages/configure/power-platform-cli-tutorial#step-3-download-website-content)

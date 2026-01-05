@@ -11,6 +11,7 @@ ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Set up app quarantine components
@@ -35,10 +36,10 @@ This article will help you to set up the app quarantine components of the govern
 
 ### Configure mandatory environment variables
 
-You'll [update these environment variables](faq.md#update-environment-variables) after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment, and it will be used in all necessary flows and apps in that environment.
+[Update environment variables](faq.md#update-environment-variables) after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment, and it will be used in all necessary flows and apps in that environment.
 
 >[!TIP]
->Learn how to update environment variables: [Update environment variables](faq.md#update-environment-variables).
+>Learn how to [update environment variables](faq.md#update-environment-variables).
 
 | Name | Description | Default value |
 |------|---------------|------|
@@ -81,8 +82,4 @@ Environment variables are used to store application and flow configuration data 
 |------|---------------|------|
 | Quarantine Apps after x days of non-compliance | If using the Compliance flow for apps to gather compliance details from makers, specify whether you want to quarantine apps if they're not compliant and for how many days.  | 7 days |
 
-## It looks like I found a bug with the CoE Starter Kit; where should I go?
-
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

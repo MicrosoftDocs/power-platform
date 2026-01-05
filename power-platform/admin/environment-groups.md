@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/17/2025
+ms.date: 07/28/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -19,16 +19,9 @@ contributors:
 
 # Environment groups
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 Managing the Power Platform on a large scale across numerous environments, ranging from hundreds to tens of thousands, poses a significant challenge for both startup and enterprise IT teams. To address these complexities, environment groups offer a premium governance solution designed to streamline management tasks by organizing environments into logical collections and enforcing uniform policies and configurations.
 
 Think of an environment group as a "folder" for your environments. Administrators can cluster a flat list of environments into structured groups based on criteria such as business unit, project, geographic region, or purpose. By creating these logical collections, IT teams gain the ability to manage multiple environments simultaneously and efficiently implement security, governance, and compliance policies on a large scale through centrally managed rules. This centralized approach eliminates the need to configure each environment one-by-one, ensures consistency, significantly reduces administrative overhead, and prevents issues such as configuration drift and chaotic management practices common in extensive deployments.
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
-Managing Power Platform on a large scale across numerous environments, ranging from hundreds to tens of thousands, poses a significant challenge for both startup and enterprise IT teams. To address these complexities, environment groups offer a premium governance solution designed to streamline management tasks by organizing environments into logical collections and enforcing uniform policies and configurations.
-
-Think of an environment group as a *folder* for your environments. Administrators can cluster a flat list of environments into structured groups based on criteria such as business unit, project, geographic region, or purpose. By creating these logical collections, IT teams gain the ability to manage multiple environments simultaneously and efficiently implement security, governance, and compliance policies on a large scale through centrally managed rules. This centralized approach eliminates the need to configure each environment one-by-one, ensures consistency, significantly reduces administrative overhead, and prevents issues such as configuration drift and chaotic management practices common in extensive deployments.
 
 > [!NOTE]
 >
@@ -76,8 +69,6 @@ In an ALM strategy, you might separate environments by lifecycle such as develop
 
 Complete the following steps to create a new environment group in the Power Platform admin center.
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environment groups**.
@@ -86,18 +77,6 @@ Complete the following steps to create a new environment group in the Power Plat
    1. Add a name for your group in the **Name** field such as **Personal Productivity**.
    1. Add a brief description of the group in the **Description** field.
    1. Select **Create**.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
-1. Select **Environment groups** in the navigation pane.
-1. On the **Environment groups** page, select **New group**.
-1. In the **Create group** pane that appears:
-   1. Add a name for your group in the **Name** field such as **Personal Productivity**.
-   1. Add a brief description of the group in the **Description** field.
-   1. Select **Create**.
-
----
 
 After a few moments, the new group appears in your Environment groups list. At this point, the group is empty (contains no environments) and none of its rules are configured. You can now add environments and configure rules, as needed.
 
@@ -108,8 +87,6 @@ After a few moments, the new group appears in your Environment groups list. At t
 
 After you create the environment group, Power Platform tenant administrators can immediately add Managed Environments or configure the group's rules. Both approaches work, but keep in mind that only published rules are enforced across environments. 
 
-# [New admin center](#tab/new)
-
 1. Sign in to [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environment groups**.
@@ -118,17 +95,6 @@ After you create the environment group, Power Platform tenant administrators can
 1. Select a rule to open its configuration panel. Adjust it as needed, then **Save** the rule.
     Repeat this step for all the rules you want to configure in this group.
 1. Select the **Publish rules** button in the command bar.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
-1. Select **Environment groups** in the navigation pane.
-1. On the **Environment groups** page, select the group you created.
-1. Select the **Rules** tab for that group. You see a list of available rules.
-1. Select a rule to open its configuration panel. Adjust it as needed, then **Save** the rule.
-    Repeat this step for all the rules you want to configure in this group.
-1. Select **Publish rules** button in the command bar.
----
 
 The following screenshot shows an environment-level setting that is locked by an environment group rule.
 
@@ -143,21 +109,11 @@ The following screenshot shows an environment-level setting that is locked by an
 
 One powerful way to use environment groups is in combination with default environment routing. Instead of having new makers build in the shared Default environment, environment routing provisions a dedicated developer environment for each maker and optionally assigns it to an environment group of your choice. If you want all new developer environments to be automatically placed under a specific group&mdash;and thus immediately governed by its rules&mdash;set up environment routing to point to that group.
 
-# [New admin center](#tab/new)
-
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environment groups**.
 1. Select the **Environment Routing** button in the command bar.
 1. Under the **Environment group** section, choose the group you want your new developer environments to be created in.
 1. Select **Save**.
-
-# [Classic admin center](#tab/classic)
-
-1. Select **Environment groups** in the navigation pane.
-1. Select the **Environment Routing** button in the command bar.
-1. Under the **Environment group** section, choose the group you want your new developer environments to be created in.
-1. Select **Save**.
----
 
 Going forward, whenever a new maker triggers the creation of a personal developer environment, the platform automatically creates their environment inside the specified group. The environment comes preconfigured as a Managed Environment with all the group’s rules already applied from the start. The maker doesn't need to choose an environment or set anything up. The maker is routed directly into a governed space that IT has predefined. Admins gain peace of mind knowing that even automatically created environments follow organizational policies, and makers get a ready-to-use environment without needing to worry about configuration.
 
@@ -168,24 +124,12 @@ Going forward, whenever a new maker triggers the creation of a personal develope
 
 In addition to using routing for new environments, you can manually add existing environments to a group at any time.
 
-# [New admin center](#tab/new)
-
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environment groups**.
 1. Select the target group (the group you want to add environments into).
 1. Select the **Add environments** button in the command bar.
 1. Select one or more environments from the list.
 1. Select **Add**.
-
-# [Classic admin center](#tab/classic)
-
-1. Select **Environment groups** in the navigation pane.
-1. Select the target group (the group you want to add environments into).
-1. Select the **Add environments** button in the command bar.
-1. Select one or more environments from the list.
-1. Select **Add**.
-
----
 
 > [!NOTE]
 > - Environments without Dataverse can't be selected in the picker.
@@ -195,24 +139,12 @@ In addition to using routing for new environments, you can manually add existing
 
 When manually creating a new environment, you can choose to place it into a group at creation time.
 
-# [New admin center](#tab/new)
-
 1. Select **Manage** in the navigation pane.
 1. Go to the **Environments** page.
 1. Select **New** in the command bar.
 1. Select a **group** for your created environment.
 1. Enter the other details.
 1. Select **Save**.
-
-# [Classic admin center](#tab/classic)
-
-1. Go to the **Environments** page.
-1. Select **New** in the command bar.
-1. Select a **group** for your created environment.
-1. Enter the other details.
-1. Select **Save**.
-
----
 
 By selecting a group here, the environment is created as a Managed Environment within that group, automatically inheriting the group's rules upon creation. If no group is selected, the environment is created outside of any group. You can always add it to a group later.
 
@@ -220,22 +152,11 @@ By selecting a group here, the environment is created as a Managed Environment w
 
 You can remove an environment from a group if it needs unique governance or if you created it by accident.
 
-# [New admin center](#tab/new)
-
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environment groups**.
 1. Select the group.
 1. Select the environment you wish to remove.
 1. Select **Remove from group** in the command bar.
-
-# [Classic admin center](#tab/classic)
-
-1. Select **Environment groups** in the navigation pane.
-1. Select the group.
-1. Select the environment you wish to remove.
-1. Select **Remove from group** in the command bar.
-
----
 
 After removal, the environment retains the configuration previously applied by the group. However, its settings and policies are now unlocked, allowing the local environment admin to manage them directly. The environment remembers the last known state from the group, but is now free to evolve independently.
 
@@ -243,19 +164,10 @@ After removal, the environment retains the configuration previously applied by t
 
 If an environment group is no longer needed, administrators can delete it to avoid clutter.
 
-# [New admin center](#tab/new)
-
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environment groups**.
 2. Select the environment group that you wish to delete.
 3. Select **Delete group** in the command bar.
-
-# [Classic admin center](#tab/classic)
-
-1. Select **Environment groups** in the navigation pane.
-2. Select the environment group that you wish to delete.
-3. Select **Delete group** in the command bar.
----
 
 > [!IMPORTANT]
 > When you delete a group, first remove all of its environments and ensure no developer environments are routed to it. If a group still has environments, you see a warning that prevents you from deleting the group.

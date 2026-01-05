@@ -10,11 +10,10 @@ ms.author: laswenka
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Automation of tasks with PowerShell 
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 The PowerShell cmdlets enable admins to complete admin portal task using script commands. With PowerShell you can sequentially execute multiple commands at once or pipe output commands to automate common tasks. 
 

@@ -13,6 +13,7 @@ contributors:
   - JimDaly
   - gregli-msft
   - gregli
+ms.custom: sfi-ropc-nochange
 ---
 
 # Formula reference - Power Platform CLI

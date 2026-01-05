@@ -15,8 +15,6 @@ search.audienceType:
 ---
 # Remove a large amount of specific, targeted data with bulk deletion
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The *bulk deletion* feature helps you delete data you no longer need so you can maintain data quality and manage the consumption of system storage.  
   
  For example, you can delete the following data in bulk:  
@@ -41,25 +39,12 @@ You can access bulk delete settings in the Microsoft Power Platform admin center
 
 To delete bulk data, take these steps:
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Data management**, then select **Bulk deletion**.
 1. Select **New** to run the **Bulk Deletion Wizard** to create a bulk deletion job with the records you want to delete.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Data management**, then select **Bulk deletion**.
-1. Select **New** to run the **Bulk Deletion Wizard** to create a bulk deletion job with the records you want to delete.
-
----
 
 To learn how to implement bulk delete in code, go to [Delete data in bulk](/powerapps/developer/common-data-service/delete-data-bulk).
 
@@ -75,23 +60,11 @@ If the recycle bin isn't available, you can learn to [Back up and restore enviro
 
 To restore deleted records, take these steps:
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Data management**, then select **Bulk deletion**.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Data management**, then select **Bulk deletion**.
-
----
 
 6. You can view all the bulk record deletion jobs.
 7. Select one or more bulk delete jobs you want to restore, then select **Restore** on the command bar.
@@ -101,23 +74,11 @@ To restore deleted records, take these steps:
 
 To restore deleted records, take these steps:
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Data management**, then select **Bulk deletion**.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Data management**, then select **Bulk deletion**.
-
----
 
 6. You can view all the bulk record deletion jobs.
 7. Select the bulk deletion job you want to restore the record from.

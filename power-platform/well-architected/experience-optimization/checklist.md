@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: checklist
-ms.date: 05/16/2024
+ms.date: 08/05/2025
 ---
 
 # Design review checklist for Experience Optimization

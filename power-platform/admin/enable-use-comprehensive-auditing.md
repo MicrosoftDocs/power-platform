@@ -1,23 +1,21 @@
 ---
-title: "Microsoft Dataverse and model-driven apps activity logging  | MicrosoftDocs"
+title: Microsoft Dataverse and model-driven apps activity logging 
 description: Learn how to enable auditing to be used for reports in the Microsoft Purview portal.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/27/2025
-author: Zeffin
+ms.date: 11/19/2025
+author: paulliew
 contributors:
   - yingchin
   - EllenWehrle
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: yingchin
+ms.author: paulliew
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
 ---
 # Microsoft Dataverse and model-driven apps activity logging
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Activity Logging data supports Data Protection Impact Assessment (DPIA) for Power Apps, Power Automate, and customer engagement apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.
 
@@ -45,6 +43,9 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Report Viewed  |Logging when a report is viewed. Critical customer content information might be displayed on the report.  |
 |Report Viewer Export  |Exporting a report to different formats moves the data outside of the secure environment and is vulnerable to threats.  |
 |Report Viewer Render Image  |Logging multimedia assets that are shown when a report is displayed. They might contain critical customer information.  |
+
+> [!NOTE]
+> [Column-level secured fields](field-level-security.md) are sent to Purview activity logging with an "*".
 
 ## Base schema
 
@@ -96,24 +97,12 @@ The customer engagement apps schema contains fields specific to customer engagem
 
 Access requires sufficient permissions, such as System Administrator or System Customizer role. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don't have the correct permissions, contact your system administrator.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Audit and logs**, then select **Audit settings**.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Audit and logs**, then select **Audit settings**.
-
----
 
 **Configure audit settings**
 On the **Audit settings** page:

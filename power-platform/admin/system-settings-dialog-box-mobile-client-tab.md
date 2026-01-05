@@ -1,11 +1,10 @@
 ---
-title: "System Settings Mobile Client tab  | MicrosoftDocs"
-description: System Settings Mobile Client tab 
+title: "System Settings Mobile Client tab"
+description: Legacy System Settings Mobile Client tab in Power Platform.
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/17/2021
+ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,13 +12,14 @@ search.audienceType:
 ---
 # System Settings Mobile Client tab
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
+> [!IMPORTANT]
+> This article describes how to use the legacy settings experience for managing mobile clients. For information about the current experience, go to [Advanced mobile offline settings for model-driven apps](settings-features.md#advanced-mobile-offline-settings-for-model-driven-apps).
 
 Use the settings on this page to manage mobile settings.
 
 <!-- legacy procedure -->
 
-## Open the System Settings dialog box 
+## Open the System Settings tab
 
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
 
@@ -29,11 +29,10 @@ Use the settings on this page to manage mobile settings.
 
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
 
-2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
-
-3. Select **Settings** > **Administration**.
-
-4. Select the **System Settings** > **Mobile Client** tab.  
+2. In the Power Platform admin center, go to **Manage** > **Environments**, and then open the environment you want.
+3. On the command bar select **Settings**, and then under **Resources** select **All legacy settings**.
+4. Select **Settings** (dropdown arrow) > **Administration** > **System Settings**.
+5. Select the **Mobile Client** tab.  
 
 
 |                           Settings                            |                                                                                                                                                                                                                                         Description                                                                                                                                                                                                                                          |

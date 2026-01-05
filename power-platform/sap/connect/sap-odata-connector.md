@@ -11,7 +11,9 @@ ms.topic: how-to
 ms.date: 11/22/2024
 ms.service: power-platform
 ms.subservice: sap
-ms.custom: ignite-2024
+ms.custom:
+  - ignite-2024
+  - sfi-image-nochange
 # Customer intent: As an administrator, I want to learn about the SAP OData connector, so I can connect Power Platform to SAP.
 ---
 

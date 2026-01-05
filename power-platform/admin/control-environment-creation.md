@@ -6,17 +6,17 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/17/2024
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: matp
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
   - marcelbf
+ms.custom:
+  - NewPPAC
+  - sfi-ga-nochange
 ---
 # Control who can create and manage environments in Power Platform
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 With the new provisioning model, users with the correct licenses can create an environment as long as 1 GB of capacity is available. When you complete the steps in this article to restrict who can create environments, only users who have the following admin security roles can create new environments in the Power Platform admin center:
 
@@ -28,15 +28,9 @@ With the new provisioning model, users with the correct licenses can create an e
 
 To restrict environment creation and management to admins from the Power Platform admin center, follow these steps:
 
-### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Tenant settings** to open the Tenant settings page.
-
-### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Settings** to open the Tenant settings page.
----
 
 In the **Tenant settings** page, select one of these environment-type creation settings:
 

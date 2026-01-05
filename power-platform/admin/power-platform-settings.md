@@ -9,10 +9,11 @@ ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ga-blocked
 ---
 # Microsoft Power Platform settings
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Configuring the settings for Power Platform admin center, such as the view theme, language, and password, are just a click away.
 

@@ -4,10 +4,11 @@ description: Provides information about URLs and IP addresses to be added to the
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/12/2025
+ms.date: 12/08/2025
 ms.subservice: admin
 ms.author: sericks
 contributors:
+  - maustinjones
   - v-jlandrum 
   - shazichuanshuo 
   - garrettm-msft
@@ -19,14 +20,26 @@ ms.contributors:
   - psherlekar
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 # Power Platform URLs and IP address ranges
 
 Microsoft Power Platform requires connectivity to the internet. The endpoints listed in this article should be reachable for customers using the Power Platform services.
 
 ## Internet URLs to allow
+Add the required URLs to the allow list to ensure communication through firewalls and other security mechanisms. If you can't access a service or specific URLs fail to load, a proxy or firewall might be configured to prevent you from accessing server resources. Review your proxy settings and ensure that you add all the relevant URLs to the allowed list, as per your service.
 
-Ensure that you have added the required URLs to the allow list to ensure communication through firewalls and other security mechanisms. If you can't access a service or specific URLs fail to load, a proxy or firewall might be configured to prevent you from accessing server resources. Review your proxy settings and ensure that you add all the relevant URLs to the allowed list as per your service.
+## Microsoft's consolidated domain initiative
+> [!Note]
+> In response to customer feedback and to streamline endpoint management, Microsoft has initiated the process of consolidating Microsoft apps and services into a select group of dedicated, secured, and purpose-managed domains within the .microsoft top-level domain.
+>
+> To avoid connectivity issues for users, ensure that the following essential domains are included in your allowlist and that connectivity to these domains isn't blocked.
+
+|ID| Category| Domain name | Purpose | Ports |
+|--|--|--|--|--|
+|184|Required| *.cloud.microsoft|Dedicated to authenticated user facing Microsoft software-as-a-service product experiences.|TCP: 443<br>UDP: 443|
+|184|Required|*.static.microsoft|	Dedicated to static (not customer-generated) content hosted on content delivery networks (CDNs).| TCP: 443<br>UDP: 443|
+|184|Required|*.usercontent.microsoft|Content used in Microsoft experiences that requires domain isolation from applications.| TCP: 443<br>UDP: 443|
 
 ### URLs for Power Platform services
 
@@ -63,7 +76,6 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
 | https://dynamics.microsoft.com |    |
 | https://*.api.powerplatform.com, https://\*.powerplatform.com, https://\*.api.powerplatformusercontent.com, and https://\*.powerplatformusercontent.com  | Required for Power Platform API connectivity and used internally by Microsoft products and admin automation scenarios as described in [Programmability and extensibility overview](programmability-extensibility-overview.md). |
-| https://www.d365ccafpi.com |  d365ccafpi service exposes a controller endpoint for token change to achieve client side first party integration with external service from PCF control  |
 | https://api.admin.powerplatform.microsoft.com | Required to call Power Platform admin center service in public cloud.|
 
 > [!IMPORTANT]
@@ -86,6 +98,7 @@ Add the IP address values for the following service tags.
 |  Service tag | Purpose  |
 |---|---|
 | `AzureCloud` | Needed for all Power Platform and Dynamics 365 services. |
+| `AzureSignalR` | Needed for Power Apps real-time collaboration features. |
 | `MicrosoftAzureFluidRelay` | Needed for real-time collaboration features. |
 | `OneDsCollector` | Needed for gathering telemetry. |
 | `PowerPlatformPlex` | Needed to access external web services from Dataverse sandbox plug-ins. |

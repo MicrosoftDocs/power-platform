@@ -13,8 +13,6 @@ search.audienceType:
 ---
 # Import configuration data
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 After exporting your configuration data from the source environment, you are now ready to import it to the target environment.  
   
 ## Before you begin 

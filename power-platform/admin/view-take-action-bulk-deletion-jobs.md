@@ -2,10 +2,9 @@
 title: "Bulk deletion jobs: view, pause, postpone, resume, or cancel"
 description: "Learn how to use the Power Platform admin center to view and take your choice of actions on a Dynamics 365 bulk deletion job."
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/15/2020
+ms.date: 11/25/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,30 +12,29 @@ search.audienceType:
 ---
 # View and take action on bulk deletion jobs
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
-You can view the status of, pause, postpone, and resume a system job that you created using **Bulk Record Deletion**.  
+You can view the status of, pause, postpone, and resume a system job that you created by using **Bulk Record Deletion**.  
   
-1. In the Power Platform admin center, select an environment. 
-
-2. Select **Settings** > **Data management** > **Bulk deletion**.  
-  
-3. In the **Bulk Record Deletion** window, you can perform the actions described in the following table.  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select an environment.
+1. Go to **Settings** > **Data management** > **Bulk deletion**.  
+1. On the **Bulk Record Deletion** page, you can view and take action on bulk deletion jobs. The following table describes actions you can take:  
   
    |To|Do this|  
    |--------|-------------|  
    |View status|Look in the **Status Reason** column.|  
    |View detailed status, including success and failure information|Select the bulk-deletion job.|  
-   |View queries submitted for deletion|Select the bulk-deletion job, and then under **Information**, choose **Properties**.|  
-   |Review the errors|Select the bulk-deletion job, and then under **Related**, choose **Failures**.|  
-   |Pause a bulk-deletion job|1.  Select the bulk-deletion job, and then on the Actions menu, choose **Pause**.<br />2.  When the confirmation message appears, choose **OK**. **Note:**  Bulk deletion jobs of fewer than 1,000 records cannot be paused.|  
-   |Postpone a bulk-deletion job|1.  Select the bulk-deletion job, and then on the Actions menu, choose **Postpone**.<br />2.  When the confirmation message appears, choose **OK**.|  
-   |Resume a bulk-deletion job|1.  Select the bulk-deletion job, and then on the Actions menu, choose **Resume**.<br />2.  When the confirmation message appears, choose **OK**.|  
-   |Cancel a bulk-deletion job|1.  Select the bulk-deletion job, and then on the Actions menu, choose **Cancel**.<br />2.  When the confirmation message appears, choose **OK**.|  
-   |Modify recurrence of a bulk-delete job|1.  Select the bulk-deletion job, and then on the Actions menu, choose **Modify Recurrence**.<br />2.  If you select the **Run this job after every** check box, specify the interval after which you want the bulk-deletion job to run, and then choose **OK**.<br /><br /> If you select the **Run this job after every** check box when you create a bulk-deletion job, the job becomes recurring and is moved to the **Recurring Bulk Deletion System Jobs** view. You can only change the recurrence for these recurring bulk-deletion jobs.|  
+   |View queries submitted for deletion|Select the bulk-deletion job, then under **Information**, choose **Properties**.|  
+   |Review the errors|Select the bulk-deletion job, then under **Related**, choose **Failures**.|  
+   |Pause a bulk-deletion job|1.  Select the bulk-deletion job, then on the Actions menu, choose **Pause**.<br />2.  When the confirmation message appears, choose **OK**. **Note:**  Bulk deletion jobs of fewer than 1,000 records can't be paused.|  
+   |Postpone a bulk-deletion job|1.  Select the bulk-deletion job, then on the Actions menu, choose **Postpone**.<br />2.  When the confirmation message appears, choose **OK**.|  
+   |Resume a bulk-deletion job|1.  Select the bulk-deletion job, then on the Actions menu, choose **Resume**.<br />2.  When the confirmation message appears, choose **OK**.|  
+   |Cancel a bulk-deletion job|1.  Select the bulk-deletion job, then on the Actions menu, choose **Cancel**.<br />2.  When the confirmation message appears, choose **OK**.|  
+   |Modify recurrence of a bulk-delete job|1.  Select the bulk-deletion job, then on the Actions menu, choose **Modify Recurrence**.<br />2.  If you select the **Run this job after every** check box, specify the interval after which you want the bulk-deletion job to run, then choose **OK**.<br /><br /> If you select the **Run this job after every** check box when you create a bulk-deletion job, the job becomes recurring and moves to the **Recurring Bulk Deletion System Jobs** view. You can only change the recurrence for these recurring bulk-deletion jobs.|  
   
-### See also  
- [Delete bulk records](delete-bulk-records.md)
+## See also
 
+ [Delete bulk records](delete-bulk-records.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

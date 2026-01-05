@@ -4,7 +4,7 @@ description: Learn how to identify critical flows and prioritize the performance
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -91,6 +91,8 @@ Here are recommendations for isolating critical flows:
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Resource segmentation affects costs. When you dedicate resources to a flow, you often increase the cost and leave some resources underutilized. To justify the performance enhancements to critical flows, the increase in business impact must outweigh the increase in cost.
 
 ## Power Platform facilitation
+
+**Generate process diagrams**: [Plan designer](/power-apps/maker/plan-designer/process-diagram) helps teams create and refine diagrams as part of the plan to clarify user interactions and build effective solutions. Process diagrams make workflows clearer, improve communication, and help teams work more efficiently, especially on complex projects.
 
 **Identifying and monitoring flows**: Consider using [process mining and task mining in Power Automate](/power-automate/process-advisor-overview), including a [process map](/power-automate/process-advisor-visualize), a powerful tool that can help you visualize and analyze your business processes. 
 

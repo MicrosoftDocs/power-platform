@@ -6,17 +6,15 @@ ms.service: power-platform
 ms.topic: faq
 ms.custom: 
   - "admin-security"
-author: lancedMicrosoft
+author: sericks007
 ms.subservice: admin
-ms.author: lanced
+ms.author: sericks
 ms.reviewer: sericks
 ms.contributors: JesseParsons
 search.audienceType: 
   - admin
 ---
 # Power Platform security FAQs
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Commonly asked questions about Power Platform security fall into two categories:
 
@@ -30,7 +28,7 @@ To make it easier for you to find the latest information, new questions are adde
 
 The Open Web Application Security Project® ([OWASP](https://owasp.org/about/)) is a nonprofit foundation that works to improve software security. Through community-led open-source software projects, hundreds of chapters worldwide, tens of thousands of members, and leading educational and training conferences, the OWASP Foundation is the source for developers and technologists to secure the web.
 
-The [OWASP top 10](https://owasp.org/www-project-top-ten/) is a standard awareness document for developers and others who are interested in web application security. It represents a broad consensus about the most critical security risks to web applications. In this section, we'll discuss how Power Platform helps to mitigate these risks.
+The [OWASP top 10](https://owasp.org/www-project-top-ten/) is a standard awareness document for developers and others who are interested in web application security. It represents a broad consensus about the most critical security risks to web applications. In this section, we discuss how Power Platform helps to mitigate these risks.
 
 [A01:2021 Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/)
 
@@ -50,7 +48,7 @@ Data in transit:
 
 Data at rest:
 
-- All customer data is encrypted before being written to non-volatile storage media.
+- All customer data is encrypted before being written to nonvolatile storage media.
 
 [A03:2021 Injection](https://owasp.org/Top10/A03_2021-Injection/)
 
@@ -83,7 +81,7 @@ Power Platform uses industry-standard best practices to prevent injection attack
 [A07:2021 Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
 
 - Power Platform is built on and depends on Microsoft Entra ID identification and authentication.
-- Microsoft Entra helps Power Platform to enable [secure features](https://azure.microsoft.com/services/active-directory/#features). These features include single sign-on, multi-factor authentication, and a single platform to engage with internal and external users more securely.
+- Microsoft Entra helps Power Platform to enable [secure features](https://azure.microsoft.com/services/active-directory/#features). These features include single sign-on, multifactor authentication, and a single platform to engage with internal and external users more securely.
 - With Power Platform's upcoming implementation of Microsoft Entra ID [Continuous Access Evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation) (CAE), user identification and authentication will be even more secure and reliable.
 
 [A08:2021 Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/)
@@ -110,7 +108,7 @@ In addition, organizations can use [Content Security Policy](../content-security
 
 ### Does Power Platform support Content Security Policy?
 
-Power Platform supports [Content security policy](../content-security-policy.md) (CSP) for model-driven apps. We do not support the following headers which are replaced by CSP:
+Power Platform supports [Content security policy](../content-security-policy.md) (CSP) for model-driven apps. We don't support the following headers that are replaced by CSP:
 - `X-XSS-Protection`
 - `X-Frame-Options`
 
@@ -189,7 +187,7 @@ The latest penetration tests and security assessments can be found on the [Micro
 
 ### Related articles
 
-[Security in Microsoft Power Platform](overview.md)  
+[Security overview](security-overview.md)  
 [Authenticating to Power Platform services](authenticate-services.md)  
 [Connecting and authenticating to data sources](connect-data-sources.md)  
 [Data storage in Power Platform](data-storage.md)  

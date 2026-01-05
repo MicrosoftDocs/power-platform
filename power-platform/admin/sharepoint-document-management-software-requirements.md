@@ -9,10 +9,9 @@ ms.date: 09/10/2020
 ms.author: matp
 search.audienceType: 
   - admin
+ms.custom: sfi-ga-nochange
 ---
 # SharePoint document management software requirements
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] document management functionality with Power Apps model-driven apps or customer engagement apps, such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation, you must meet the requirements listed in this article.  
 

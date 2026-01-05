@@ -5,8 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 06/11/2025
-ms.custom: template-how-to
+ms.date: 10/31/2025
 ms.contributors:
   - samathur
   - kakazemi
@@ -19,6 +18,10 @@ contributors:
   - lauravasiliums
   - sericks007
   - syalandur24
+ms.custom:
+  - template-how-to
+  - sfi-image-nochange
+  - template-how-to
 ---
 
 # Manage your customer-managed encryption key
@@ -44,7 +47,7 @@ These encryption key operations are available with customer-managed key (CMK):
 - Migrate [bring-your-own-key (BYOK)](cmk-migrate-from-byok.md) environments to CMK by applying CMK key.
 
 Currently, all your customer data stored *only* in the following apps and services can be encrypted with customer-managed key:
-
+### Commercial cloud
 - Dataverse (Custom solutions and Microsoft services)
 - Dataverse [Copilot for model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)  
 - [Power Automate](/power-automate/customer-managed-keys)
@@ -59,6 +62,16 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Project Operations (Finance and operations)
 - Dynamics 365 Supply Chain Management (Finance and operations)
 - Dynamics 365 Fraud Protection (Finance and operations)
+- [Copilot Studio](/microsoft-copilot-studio/admin-customer-managed-keys)
+
+### Sovereign cloud - GCC High 
+
+- Dataverse (Custom solutions and Microsoft services)
+- Dataverse [Copilot for model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)  
+- Chat for Dynamics 365
+- [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
+- Dynamics 365 Customer Service
+- [Dynamics 365 Customer Insights - Data](/dynamics365/customer-insights/data/overview)
 - [Copilot Studio](/microsoft-copilot-studio/admin-customer-managed-keys)
 
 > [!NOTE]
@@ -407,23 +420,11 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 
 ### Enable Managed environment to be added to the enterprise policy
 
-##### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
 1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**, and then seleect an environment from the available list of environments.
+1. In the **Manage** pane, select **Environments**, and then select an environment from the available list of environments.
 1. Select **Enable Managed Environments**.
 1. Select **Enable**.
-
-##### [Classic admin center](#tab/classic)
-
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Environments** .
-1. Select an environment from the available list of environments.
-1. Select **Enable Managed Environments**.
-1. Select **Enable**.
-
----
 
 ### Add an environment to the enterprise policy to encrypt data
 
@@ -431,8 +432,6 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 > The environment is disabled when it's added to the enterprise policy for data encryption. The duration of the system downtime is dependent on the size of the database. We recommended that you do a test run by making a copy of the target environment into a test environment to determine the estimated system downtime.
 > The system downtime can be determined by checking the [environment's encryption status](#review-the-encryption-status-from-enterprise-policies). The system downtime is between the **Encrypting** and **Encrypting - online** statuses.
 > To reduce the system downtime, we change the encryption status to **Encrypting - online** when all the core encryption steps that required the system to be down are complete. The system can be used by your users while the remaining storage services, such as search and Copilot index, continue to encrypt the data with your customer-managed key.   
-
-##### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
 1. In the navigation pane, select **Security**.
@@ -442,16 +441,6 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 1. Select **Add environments**, select the environment you want, and then select **Continue**.
    :::image type="content" source="media/customer-managed-key/add-environment.png" alt-text="Add an environment to an enterprise policy":::
 1. Select **Save**, and then select **Confirm**.
-
-##### [Classic admin center](#tab/classic)
-
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
-1. Select a policy, and then, on the command bar, select **Edit**.
-1. Select **Add environments**, select the environment you want, and then select **Continue**.
-   :::image type="content" source="media/customer-managed-key/add-environments-enterprise-policy.png" alt-text="Add an environment to an enterprise policy on the Power Platform admin center":::
-1. Select **Save**, and then select **Confirm**.
-
----
 
 > [!IMPORTANT]
 >
@@ -469,8 +458,6 @@ Follow these steps if you want to return to a Microsoft-managed encryption key.
 > [!IMPORTANT]
 > The environment is disabled when it's removed from the enterprise policy to return data encryption using the Microsoft-managed key.
 
-##### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
 1. In the navigation pane, select **Security**.
 1. In the **Security** pane, select **Data and Privacy** under **Settings**.
@@ -481,17 +468,6 @@ Follow these steps if you want to return to a Microsoft-managed encryption key.
 1. Select **Remove environment** on the command bar, select the environment you want to remove, and then select **Continue**.
 1. Select **Save**.
 
-##### [Classic admin center](#tab/classic)
-
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
-1. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
-1. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
-   :::image type="content" source="media/customer-managed-key/remove-environment-policy.png" alt-text="Remove an environment from customer-managed key":::
-1. Select **Remove environment** on the command bar, select the environment you want to remove, and then select **Continue**.
-1. Select **Save**.
-
----
-
   > [!IMPORTANT]
   > The environment is disabled when it's removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault.** The key and key vault's access is necessary to support database restoration. You can delete and remove the enterprise policy's permissions after 30 days.
 
@@ -499,23 +475,12 @@ Follow these steps if you want to return to a Microsoft-managed encryption key.
 
 #### Review the encryption status from Enterprise policies
 
-###### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
 1. In the navigation pane, select **Security**.
 1. In the **Security** pane, select **Data and Privacy** under **Settings**.
 1. Select **Customer-managed encryption key** to go to the Enterprise Policies page.
 1. Select a policy, and then on the command bar, select **Edit policy**.
 1. Review the environment's **Encryption status** in the **Environments with this policy** section.
-
-###### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Policies** > **Enterprise policies**.
-1. Select a policy, and then on the command bar, select **Edit**.
-1. Review the environment's **Encryption status** in the **Environments with this policy** section.
-
----
 
    > [!NOTE]
    > The environment's encryption status can be:
@@ -528,7 +493,7 @@ Follow these steps if you want to return to a Microsoft-managed encryption key.
    > - **Microsoft Managed key** - The Microsoft-managed key encryption is active.  
    > - **Failed** - The enterprise policy encryption key isn't used by **all** Dataverse storage services. They require more time to process and you can rerun the **Add environment** operation. Contact Support if the rerun operation fails.
    >
-   >     A **Failed** encryption status doesn't impact your environment data and its operations. This means that some of the Dataverse storage services are encrypting your data with your key and some continue to use the Microsoft-managed key. A revert isn't recommended as when you re-run the **Add environment** operation, the service resumes from where it left off.
+   >     A **Failed** encryption status doesn't impact your environment data and its operations. This means that some of the Dataverse storage services are encrypting your data with your key and some continue to use the Microsoft-managed key. A revert isn't recommended as when you rerun the **Add environment** operation, the service resumes from where it left off.
    >
    > - **Warning** - The enterprise policy encryption key is active and one of the service's data continues to be encrypted with the Microsoft-managed key. Learn more in [Power Automate CMK application warning messages](/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages).
 
@@ -536,28 +501,17 @@ Follow these steps if you want to return to a Microsoft-managed encryption key.
 
 You can see the [environment history](environments-overview.md#environment-history).
 
-###### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
 1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**, and then seleect an environment from the available list of environments.
+1. In the **Manage** pane, select **Environments**, and then select an environment from the available list of environments.
 1. On the command bar, select **History.**
 1. Locate the history for **Update Customer Managed Key**.
-
-###### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane, and then select an environment from the list.
-1. On the command bar, select **History.**
-1. Locate the history for **Update Customer Managed Key**.
-
----
 
    > [!NOTE]
    >
    > The **Status** shows **Running** when the encryption is in progress. It shows **Succeeded** when the encryption is complete. The status shows **Failed** when there's some problem with one of the services not able to apply the encryption key.
    >
-   > A **Failed** state can be a **warning** and you don't need to re-run the **Add environment** option. You can confirm if it's a [warning](customer-managed-key.md#review-the-encryption-status-from-enterprise-policies).
+   > A **Failed** state can be a **warning** and you don't need to rerun the **Add environment** option. You can confirm if it's a [warning](customer-managed-key.md#review-the-encryption-status-from-enterprise-policies).
 
 ### Change the environment's encryption key with a new enterprise policy and key
 
@@ -565,8 +519,6 @@ To change your encryption key, create a new key and a new enterprise policy. You
 
 > [!Tip]
 > To rotate the encryption key, we recommend using the Key vaults' [**New version** or setting a **Rotation policy**](customer-managed-key.md#rotate-the-environments-encryption-key-with-a-new-key-version).
-
-##### [New admin center](#tab/new)
 
 1. In the [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create encryption key and grant access](#create-encryption-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
 2. Grant the new enterprise policy [access to the old key](customer-managed-key.md#grant-enterprise-policy-permissions-to-access-key-vault).
@@ -587,27 +539,6 @@ To change your encryption key, create a new key and a new enterprise policy. You
 12. After all the environments are removed, from the Power Platform admin center go to **Enterprise policies**.
 13. Select the new enterprise policy, and then select **Edit policy**.
 14. Select **Add environment**, select the environments that you want to add, and then select **Continue**.
-
-##### [Classic admin center](#tab/classic)
-
-1. In the [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create encryption key and grant access](#create-encryption-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
-2. Grant the new enterprise policy [access to the old key](customer-managed-key.md#grant-enterprise-policy-permissions-to-access-key-vault).
-3. After the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
-4. Select the **Environment with policies** tab, and then find the environment you want to remove from customer-managed key.
-5. Select the **All policies** tab, select the environment you verified in step 2, and then select **Edit policy** on the command bar.
-   :::image type="content" source="media/customer-managed-key/remove-environment-policy.png" alt-text="Remove an environment from customer-managed key":::
-6. Select **Remove environment** on the command bar, select the environment you want to remove, and then select **Continue**.
-7. Select **Save**.
-8. Repeat steps 2-7 until all environments in the enterprise policy have been removed.
-
-  > [!IMPORTANT]
-  > The environment is disabled when it's removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault**. **Grant the new enterprise policy to the old key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
-
-9. Once all the environments are removed, from the Power Platform admin center go to **Enterprise policies**.
-10. Select the new enterprise policy, and then select **Edit policy**.
-11. Select **Add environment**, select the environments that you want to add, and then select **Continue**.
-
----
 
 > [!IMPORTANT]
 > The environment is disabled when it's added to the new enterprise policy.
@@ -635,20 +566,11 @@ To rotate the encryption key by creating a new key version, use the following st
 
 ### View the list of encrypted environments
 
-##### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
 1. In the **Security** pane, select **Data and Privacy** under **Settings**.
 1. Select **Customer-managed encryption key** to go to the Enterprise Policies page.
 1. On the **Enterprise policies** page, select the **Environments with policies** tab. The list of environments that were added to enterprise policies are displayed.
-
-##### [Classic admin center](#tab/classic)
-
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
-1. On the **Enterprise policies** page, select the **Environments with policies** tab. The list of environments that were added to enterprise policies are displayed.
-
----
 
 > [!NOTE]
 > There might be situations where the **Environment status** or the **Encryption status** show a **Failed** status. When this occurs, you can try rerunning the **Add environment** operation or submit a Microsoft Support request for help.

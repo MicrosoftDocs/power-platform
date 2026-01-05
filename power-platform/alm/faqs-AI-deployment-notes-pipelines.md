@@ -2,6 +2,7 @@
 title: FAQ for use Copilot to generate deployment notes in pipelines
 description: Frequently asked question (FAQ) that discusses using Copilot to generate deployment notes in pipelines and the key considerations for making use of this technology responsibly.
 ms.date: 5/30/2025
+ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: faq

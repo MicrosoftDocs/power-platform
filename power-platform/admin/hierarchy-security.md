@@ -92,8 +92,6 @@ To set up hierarchy security, make sure you have the System Administrator permis
   
 The hierarchy security is disabled by default. To enable hierarchy security, complete the following steps.
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 
 2. In the navigation pane, select **Manage**.
@@ -119,34 +117,6 @@ The hierarchy security is disabled by default. To enable hierarchy security, com
 
     > [!NOTE]
     > While, the hierarchy security grants the VP of Sales access to the records in the red rectangle, additional access can be available based on the security role that the VP of Sales has.
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
-
-2. Select Environments, and then select an environment from the list.
-
-3. Go to **Settings** > **Users + Permissions** > **Hierarchy security**.
-  
-4. Under **Hierarchy Model**, select either **Enable Manager Hierarchy Model** or **Enable Position Hierarchy Model** depending on your requirements.  
-  
-    > [!IMPORTANT]
-    > To make any changes in **Hierarchy security**, you must have the **Change Hierarchy Security Settings** privilege.
-
-    In the **Hierarchy Table Management** area, all system tables are enabled for hierarchy security by default, but you can exclude selective tables from the hierarchy. To exclude specific tables from the hierarchy model, clear the checkboxes for the tables that you want to exclude and save your changes.
-
-    :::image type="content" source="media/hierarchy-security/hierarchy-security.png" alt-text="Screenshot of the Hierarchy Security page in Settings for Environments." lightbox="media/hierarchy-security/hierarchy-security.png":::
-
-5. Set the **Depth** to a desired value to limit how many levels deep a manager has a read-only access to the data of their reports.
-  
-    For example, if the depth equals to 2, a manager can only access their own accounts and the accounts of the reports two levels deep. In our example, if you sign in to customer engagement apps as a nonadministrator VP of Sales, you only see the active accounts of the users as shown:  
-
-    :::image type="content" source="media/sales-vp-access.png" alt-text="Screenshot that shows Read access for VP of Sales and other positions.":::
-
-    > [!NOTE]
-    > While, the hierarchy security grants the VP of Sales access to the records in the red rectangle, additional access can be available based on the security role that the VP of Sales has.  
-  
----
 
 ## Set up manager and position hierarchies
 

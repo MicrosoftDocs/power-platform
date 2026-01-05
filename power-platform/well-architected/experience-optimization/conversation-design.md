@@ -4,10 +4,9 @@ description: Learn strategies for effective conversation design for AI in your w
 author: Robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
-ms.date: 10/30/2024
+ms.date: 08/05/2025
 ms.subservice: well-architected
 ms.topic: concept-article
-ai.usage: ai-assisted
 ---
 # Recommendations for designing conversational user experiences
 

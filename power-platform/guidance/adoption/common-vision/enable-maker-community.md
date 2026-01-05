@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 ms.contributors: 
 - vabhavir
 ---
@@ -95,7 +95,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for nur
     - Develop an onboarding newsletter and provide regular updates and guidance on Power Platform governance and training resources.
 - **Empower developer and maker community with process and resource clarity**:
     - Establish application lifecycle management processes to streamline solution deployments.
-    - Create guidelines for solution classifications, environment strategy, and data loss prevention measures.
+    - Create guidelines for solution classifications, environment strategy, and data protection measures.
     - Clarify [roles and responsibilities](../roles.md) for managing the platform.
 - **Provide specialized training and resources**:
     -  Develop a Community of Practice for Power Platform practitioners to share knowledge and best practices.
@@ -107,7 +107,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for nur
     - Document and distribute detailed use cases and success stories.
     - Recognize and celebrate achievements within the community.
 - **Develop a centralized communication platform**:
-    - Create comprehensive documentation for data loss prevention policies, environment strategy, and intake processes.
+    - Create comprehensive documentation for data policies, environment strategy, and intake processes.
     - Develop a repository for security guidelines and parameters.
     - Maintain up-to-date governance documentation with version control.
 - **Drive initiatives to kickstart and maintain adoption**:

@@ -4,7 +4,7 @@ description: "Learn how to disable and delete a business unit from an environmen
 author: paulliew
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/18/2023
+ms.date: 11/19/2025
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
@@ -13,8 +13,6 @@ search.audienceType:
 ---
 
 # Disable and delete a business unit
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You can delete a business unit to completely remove it. To delete a business unit, you must first disable it.
   
@@ -27,28 +25,34 @@ You can delete a business unit to completely remove it. To delete a business uni
 
 ## Disable a business unit
 
-1. In the Microsoft Power Platform admin center, select an environment. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. Select **Settings** > **Users + permissions** > **Business units**.  
+1. In the navigation pane, select **Manage**.
+
+1. In the **Manage** pane, select **Environments**.
+
+1. On the **Environments** page, select an environment.
+
+1. Select **Settings** > **Users + permissions** > **Business units**.  
   
-3. Click to select the business unit that you want to disable.  
+1. Select the business unit that you want to disable.  
   
-4. On the Actions toolbar, choose **More Actions** > **Disable**.  
+1. On the toolbar, select **Disable**.
   
 > [!IMPORTANT]
 > When you disable a business unit which has child business units, all child business units (all depths) are disabled.
 > 
 > All users and teams associated with the business unit or child business units won't be able to sign in. You must reparent users and teams to another business unit and reassign security roles.
 
-5. In the **Confirm Deactivation** dialog box, choose **Deactivate**.  
+1. In the **Confirm Deactivation** dialog box, select **Deactivate**.  
 
 ## Delete a business unit
 
-6. Change the view to **Inactive Business Units**.
+1. Change the view to **Inactive Business Units**.
 
-7. Select the business unit to delete, and then choose the **Delete** icon ![Delete button.](../admin/media/delete.png "Delete button").  
+1. Choose the business unit to delete, and then select **Delete**. ![Delete button.](../admin/media/delete.png "Delete button").  
   
-8. In the **Confirm Deletion** dialog box, choose **Delete**.  
+1. In the **Confirm Deletion** dialog box, select **Delete**.  
   
 > [!IMPORTANT]
 > When you need to delete a business unit which has child business units, all child business units (all depths) must be deleted first.

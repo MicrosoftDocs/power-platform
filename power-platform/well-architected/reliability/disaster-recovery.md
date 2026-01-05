@@ -4,7 +4,7 @@ description: Learn how to design a disaster recovery strategy for a Power Platfo
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -100,6 +100,17 @@ As your DR drill practices mature, you learn which procedures you can run in par
 ## Failover capabilities
 
 Microsoft Business Applications provide business continuity and disaster recovery (BCDR) capabilities to all [production](/power-platform/admin/environments-overview) environments in Dynamics 365 and Power Platform software as a service (SAAS) applications. [Learn how Microsoft ensures your production data is resilient during regional outages](/power-platform/admin/business-continuity-disaster-recovery).
+
+## Power Platform facilitation
+
+[Self-service disaster recovery](/power-platform/admin/business-continuity-disaster-recovery) enables you to define, test, and execute a cross-region failover approach for your Power Platform environments. This approach helps you meet compliance requirements and ensures that your workloads continue to run during an unexpected region-wide issue.
+
+With self-service disaster recovery, you control when to execute failover drills to meet compliance requirements and when to perform emergency failovers and failbacks. Perform drills on a copy of the production environment because this process involves downtime that can last several minutes. For example, copy the production environment to a sandbox environment, and then change its type to production.
+
+## Related information
+
+- [Plan mission critical workloads](/power-platform/guidance/adoption/plan-mission-critical)
+- [Build a disaster recovery plan](/power-platform/guidance/adoption/plan-disaster-recovery)
 
 ## Reliability checklist
 

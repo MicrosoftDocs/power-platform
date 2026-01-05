@@ -4,7 +4,7 @@ description: Learn how to optimize your code and logic to support the performanc
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/11/2024
+ms.date: 08/15/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -83,7 +83,7 @@ To optimize logic, consider the following strategies:
 
 Review the performance recommendations specific to the Power Platform product you're working with. Evaluate your logic against these recommendations to identify areas for improvement.
 
-Learn more about [Power Automate coding guidelines](/power-automate/guidance/coding-guidelines/) and [Power Apps coding guidelines](/power-apps/guidance/coding-guidelines/overview) that can help you optimize logic.
+Learn more about [Power Automate cloud flow coding guidelines](/power-automate/guidance/coding-guidelines/), [Power Apps coding guidelines](/power-apps/guidance/coding-guidelines/overview), and [Power Automate desktop flow coding guidelines](/power-automate/guidance/desktop-flow-coding-guidelines/) to optimize logic.
 
 [!INCLUDE [pp-tip-powercat-toolkit](~/../shared-content/shared/guidance-includes/pp-tip-powercat-toolkit.md)]
 
@@ -124,6 +124,7 @@ Many applications require background tasks that run independently of the user in
 
 ## Related information
 
+- [Manage solution performance](/power-platform/architecture/key-concepts/performance/)
 - [Concurrency, looping, and debatching limits in Power Automate](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
 - [Product-specific guidance for optimizing Dynamics 365 performance](/dynamics365/guidance/implementation-guide/performing-solution-product-specific-guidance)
 - [Performance tuning and optimization for customer engagement apps](/power-platform/admin/performance-tuning-and-optimization)

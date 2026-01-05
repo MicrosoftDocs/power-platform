@@ -3,10 +3,8 @@ title: Power Platform Well-Architected workloads
 description: Learn about workloads in the context of Power Platform Well-Architected.
 author: robstand
 ms.author: rstand
-ms.date: 05/10/2024
+ms.date: 08/05/2025
 ms.topic: concept-article
-contributors:
-    chkittel
 ---
 
 # Power Platform Well-Architected workloads

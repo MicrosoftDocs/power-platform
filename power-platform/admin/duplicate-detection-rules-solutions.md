@@ -4,14 +4,12 @@ description: "Learn about how you can create and manage duplicate detection rule
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/28/2023
+ms.date: 11/19/2025
 ms.subservice: admin
 ms.author: gned
 ms.reviewer: sericks
 ---
 # Create and manage duplicate detection rules using solutions
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Users can create duplicate detection rules in a solution in a Power Platform environment, export the solution, and import the solution into another environment to create the same rules in the target environment instead of manually creating it in the target environment.
 
@@ -61,7 +59,13 @@ To create a duplicate detection rule, you must create a separate solution for th
 
     1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
 
-    1. Select your environment where you want to create the rule, and select **Settings** > **Data management** > **Duplicate detection rules**.
+    1. In the navigation pane, select **Manage**..
+
+    1. In the **Manage** pane, select **Environments**.
+
+    1. On the **Environments** page, select an environment where you want to create the rule.    
+    
+    1. Select **Settings** > **Data management** > **Duplicate detection rules**.
 
         :::image type="content" source="media/dup-detection-rule.png" alt-text="Create or manage duplicate detection rule":::
 
@@ -70,7 +74,7 @@ To create a duplicate detection rule, you must create a separate solution for th
 1. Create a solution and add the rule to the solution.
 
     1. Sign in to [Power Apps](https://make.powerapps.com/) and select the environment from the environment picker in the top-right where you created your duplicate detection rule.
-
+    
     1. In the left navigation pane, select **Solutions**, and then select **New solution**. For details about creating a solution, go to [Create a solution](/power-apps/maker/data-platform/create-solution).
 
     1. After you’ve created your solution, add the duplicate detection rule you created earlier to the solution. With the solution open, select **Add existing** > **More** > **Other** > **Duplicate Detection Rule**.
@@ -103,7 +107,13 @@ To add new rule conditions or delete existing rule conditions by importing a sol
 
 1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
 
-1. Select your source environment where you originally created the rule, and select **Settings** > **Data management** > **Duplicate detection rules**.
+1. In the navigation pane, select **Manage**.
+   
+1. In the **Manage** pane, select **Environments**.
+   
+1. On the **Environments** page, select your source environment where you originally created the rule.
+
+1. Select **Settings** > **Data management** > **Duplicate detection rules**.
 
 1. Open the duplicate detection rule, and add new rule conditions or delete existing rule conditions as required. Save the rule.
 
@@ -124,8 +134,14 @@ To add new rule conditions or delete existing rule conditions by importing a sol
 1. Verify that the rule is updated in the target environment.
 
     1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
-
-    1. Select your environment where you imported the solution, and select **Settings** > **Data management** > **Duplicate detection rules**.
+    
+    1. In the navigation pane, select **Manage**.
+       
+    1. In the **Manage** pane, select **Environments**.
+       
+    1. On the **Environments** page, select your environment where you imported the solution.
+   
+    1. Select **Settings** > **Data management** > **Duplicate detection rules**.
 
     1. You'll see your rule in unpublished state. Open the rule definition to verify if it contains all the rule condition changes you made earlier. Publish the rule to use it.
 

@@ -14,6 +14,7 @@ contributors:
   - tapanm-msft
   - slaouist
   - DanaMartens
+ms.custom: sfi-image-nochange
 ---
 
 # Use the Creator Kit

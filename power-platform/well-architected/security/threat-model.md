@@ -4,7 +4,7 @@ description: Learn how to use threat modeling to identify threats, attacks, vuln
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 08/18/2025
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -105,8 +105,6 @@ For more information, see [OWASP top 10 risks: Mitigations in Power Platform](/p
 ## Example
 
 This example builds on the Information Technology (IT) environment established in the [Recommendations for establishing a security baseline](establish-baseline.md). This approach provides a broad understanding of the threat landscape across different IT scenarios.
-
-<!-- Are we including an image? -->
 
 **Development Lifecycle personas**. There are many personas involved in a development life cycle, including developers, testers, final users, and administrators. All of them may be compromised and put your environment at risk through vulnerabilities or threats created intentionally.
 

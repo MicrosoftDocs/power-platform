@@ -18,12 +18,14 @@ contributors:
   - paulliew
   - sericks007
   - syalandur24
-ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 06/18/2025
 search.audienceType: 
   - admin
+ms.custom:
+  - "admin-security"
+  - sfi-image-nochange
 ---
 
 # Control user access to environments with security groups and licenses
@@ -106,8 +108,6 @@ Or, purchase and assign per-app passes: [About Power Apps per app plans](about-p
   
 ## Associate a security group with an environment
   
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 
 1. In the navigation pane, select **Manage**.
@@ -125,28 +125,6 @@ Or, purchase and assign per-app passes: [About Power Apps per app plans](about-p
 1. Select a security group, select **Done**, and then select **Save**.
 
     The security group is associated with the environment.
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
-
-1. In the navigation pane, select **Environments**.
-
-1. Select the name of the environment and select **Edit**.
-
-    :::image type="content" source="media/environment-properties.svg" alt-text="Select Edit.":::
-
-1. In the **Edit details** pane, select the **Edit** icon in the **Security group** area.
-  
-    :::image type="content" source="media/edit-security-groups.png" alt-text="Select the Edit icon to select a security group.":::
-
-   Only the first 200 security groups are returned. Use **Search** to look for a specific security group.
-
-1. Select a security group, select **Done**, and then select **Save**.
-
-    The security group is associated with the environment.
-
----
 
 > [!NOTE]
 > Users running canvas apps when a security group is associated with the environment of the app must be members of the security group to be able to run the canvas app, regardless of whether the app has been shared with them. Otherwise, users see this error message: "You can't open apps in this environment. You aren't a member of the environment's security group." If your Power Platform admin has [set governance details](powerapps-powershell.md) for your organization, you see a governance contact that you may reach out to for security group membership.

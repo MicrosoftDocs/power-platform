@@ -7,15 +7,15 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/29/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: sericks
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
 ---
 
 # Manage Dynamics 365 apps
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 You can use the Microsoft Power Platform admin center to install, configure, and manage Dynamics 365 apps that run on [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro). Apps in this topic refer to Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing and apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
 
@@ -28,15 +28,9 @@ You can manage apps from either the [tenant level](#tenant-level-view-of-apps) o
 
 App management is done from the tenant-level view of apps in the Power Platform admin center. Follow these steps to see a list of all licensed Dynamics 365 apps for your tenant.
 
-### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Dynamics 365 Apps**.
-   
-### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, expand **Resources**, and then select **Dynamics 365 Apps**.
----
 
 You see a list of installed&mdash;or available to install or configure&mdash;Dynamics 365 apps for the signed-in user. The system administrator can view all installed or available to install apps. 
    
@@ -60,19 +54,11 @@ If your tenant is multigeo, you can change the locale with the region selector i
 
 App management can also be done from the environment-level view of apps in the Power Platform admin center. Follow these steps to see a list of all the licensed Dynamics 365 apps you installed for your environment.
 
-### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, expand **Resources**, and then select **Dynamics 365 apps**.
-   
-### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, expand **Resources**, and then select **Dynamics 365 apps**.
----
 
 You see a list of Dynamics 365 apps installed **by you** in the selected environment. System administrator see all installed apps in the selected environment.
 
@@ -90,15 +76,9 @@ The process to install an app depends on your view.
 
 ### Install an app in the tenant view
 
-### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Dynamics 365 Apps**.
-   
-### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, expand **Resources**, and then select **Dynamics 365 apps**.
----
 
 You see a list of apps that are available to install and configure in the tenant. 
 
@@ -109,19 +89,11 @@ You see a list of apps that are available to install and configure in the tenant
 
 ### Install an app in the environment view
 
-### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, expand **Resources**, and then select **Dynamics 365 apps**.
-
-### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, expand **Resources**, and then select **Dynamics 365 apps**. 
----
 
 You see the list of apps that are available to install and manage in the environment.
   

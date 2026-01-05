@@ -5,15 +5,13 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/14/2020
+ms.date: 11/24/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
 ---
 # Skype for Business and Skype integration
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 > [!Note]
 > This feature was retired on July 31, 2021. More information: [Skype integration with customer engagement apps is deprecated](../important-changes-coming.md#skype-integration-with-customer-engagement-apps-is-deprecated)
@@ -58,7 +56,18 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
   
 - Each user must have the [!INCLUDE[pn_skype_for_windows](../includes/pn-skype-for-windows.md)] desktop client or the [!INCLUDE[pn_skype_for_windows_8](../includes/pn-skype-for-windows-8.md)] app installed and running on their PC or [!INCLUDE[pn_windows8](../includes/pn-windows8.md)] device.  
   
-- **Skype** must be selected as the telephony provider. Select an environment in the Power Platform admin center, and then select **Settings** > **Product** > **Features**. Under **Communications** set **Set the telephony provider** to **Use Skype for Business**. 
+- **Skype** must be selected as the telephony provider.
+  1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+  1. In the navigation pane, select **Manage**.
+
+  1. In the **Manage** pane, select **Environments**.
+
+  1. Select an environment.
+    
+  1. Go to **Settings** > **Product** > **Features**.
+  
+  1. Under **Communications** set **Set the telephony provider** to **Use Skype for Business**. 
   
 ### Supported devices and web browsers when you use Skype with model-driven apps in Dynamics 365
   

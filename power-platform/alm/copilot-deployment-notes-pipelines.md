@@ -5,6 +5,7 @@ author: ASheehi1
 ms.author: matp
 ms.topic: how-to
 ms.date: 01/06/2025
+ms.update-cycle: 180-days
 ms.collection: bap-ai-copilot
 contributors:
    - ASheehi1

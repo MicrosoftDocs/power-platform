@@ -14,8 +14,6 @@ search.audienceType:
 ---
 
 # Get started with Power Platform for Admins management connectors
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 A connector is a proxy or a wrapper around an API that allows the underlying service to talk to the Power Platform API. It provides a way for users to connect their accounts and leverage a set of prebuilt actions and triggers to build their apps and workflows.
 
 These connectors are ready-made for environment management and other common activities for Microsoft Power Platform administrators.  

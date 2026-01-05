@@ -4,17 +4,18 @@ description: Administer and manage a Microsoft Dataverse for Teams environment
 author: paulliew
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/30/2025
+ms.date: 08/20/2025
 ms.subservice: admin
-ms.custom: NewPPAC
 ms.author: matp
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
+ms.custom:
+  - NewPPAC
+  - sfi-image-nochange
+  - sfi-ga-nochange
 ---
 # About the Microsoft Dataverse for Teams environment 
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 <!-- fwlink 2143567 -->
 
@@ -140,21 +141,12 @@ Access requires sufficient permissions, such as System Administrator or System C
 
 To change settings for a Dataverse for Teams environment, follow these steps:
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the Environments page, select an environment where the Type is marked as **Microsoft Teams**.
 1. In the command bar, select **Settings**. 
 1. Expand **Integration**, then select **Teams integration settings**.
-   
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the Environments page, select an environment where the Type is marked as **Microsoft Teams**.
-1. In the command bar, select **Settings**.  
-1. Expand **Integration**, then select **Teams integration settings**.
----
 
 In the **Microsoft Teams collaboration and chat** settings, choose one of the following options:
 
@@ -168,7 +160,6 @@ Select **Save** to apply the changes.
 
 You can specify users in an environment to provide access to Dataverse for Teams environment apps, bots, and data.
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -178,17 +169,6 @@ You can specify users in an environment to provide access to Dataverse for Teams
 1. In the command bar, select **Add user**.
 1. Enter a name or email address of a user who meets the necessary user-access requirements to be added to the Dataverse for Teams environment.
 1. Select **Add** to save the changes.
-   
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment where the **Type** is marked as **Microsoft Teams**.
-1. In the command bar, select **Settings**.  
-1. Expand **Users + permissions**, then select **Users**.
-1. In the command bar, select **Add user**.
-1. Enter a name or email address of a user who meets the necessary user-access requirements to be added to the Dataverse for Teams environment.
-1. Select **Add** to save the changes.
----
 
 In the top command bar, select **Refresh** to update the list and view the newly added user.
 
@@ -198,21 +178,12 @@ The list displays users with enabled and disabled statuses who are members of th
 
 To delete a Dataverse for Teams environment, follow these steps:
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment where the **Type** is marked as **Microsoft Teams**.
 1. In the command bar, select **Delete**. 
 1. Enter the environment name and select **Confirm** to delete the environement.
-   
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment where the **Type** is marked as **Microsoft Teams**.
-1. In the command bar, select **Delete**. 
-1. Enter the environment name and select **Confirm** to delete the environement.
----
 
 ### Upgrade a Dataverse for Teams environment to production
 
@@ -226,17 +197,10 @@ The consumption of capacity by Dataverse for Teams environments won't count towa
 
 To see the consumption of each Dataverse for Teams environment in a tenant, take these steps:
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Capacity add-ons**.
 1. On the **Capacity** page, select the **Microsoft Teams** tab to view consumption details.
-   
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, click **Resources**, then select **Capacity**.
-1. On the **Capacity** page, select the **Microsoft Teams** tab to view consumption details.
----
 
 **Tenant-wide limits on Dataverse for Teams environments**: Each tenant also has limits related to Dataverse for Teams environments defined in this table. 
 
@@ -313,16 +277,16 @@ The **Built by your colleagues** catalog intentionally filters out **Shared with
 > [!NOTE]
 > Disabling Power Apps and Microsoft Copilot Studio in Teams prevents users from creating new apps and agents but does not prevent the creation of Dataverse for Teams environments. There are other apps (Inspection, Employee Ideas, and Issue reporting) that can create a Dataverse for Teams environment if you add one of those apps to a team. To prevent Dataverse for Teams environments from being created with these apps, these apps need to be blocked.
 >
-> Microsoft Power Platform data governance policies like data loss prevention (DLP) and tenant isolation apply to Microsoft Teams and Dataverse for Teams environments, similar to other environment types.
+> Microsoft Power Platform data governance policies like data policies and tenant isolation apply to Microsoft Teams and Dataverse for Teams environments, similar to other environment types.
 
 ## Applying a data policy to all Dataverse for Teams environments 
 
 Microsoft offers a solution that applies a data policy to all Teams environments within a tenant, allowing you to better control your organization's data without hindering your ability to create low-code and no-code solutions within Teams. 
 
-Follow these steps to apply a DLP policy:
+Follow these steps to apply a data policy:
 
 1. Choose or create the policy that you want applied to your Teams environments. This policy must be marked to apply to specific environments, which can be done as follows: 
-   - In [PowerShell](powerapps-powershell.md#create-a-dlp-policy), make sure its `environmenType` is `OnlyEnvironments`. 
+   - In [PowerShell](powerapps-powershell.md#create-a-data-policy), make sure its `environmenType` is `OnlyEnvironments`. 
    - In the [web app](prevent-data-loss.md), make sure the scope is set to multiple environments. 
 
 You need to add at least one environment to save your policy. Any environments you add now get overridden by the PowerShell function, which automatically adds the Teams environments to the policy. 
@@ -333,7 +297,7 @@ You need to add at least one environment to save your policy. Any environments y
    Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Force 
    ```
 
-3. Run the [UpdatePolicyEnvironmentsForTeams](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/admin-center/Microsoft.PowerApps.Administration.PowerShell.Samples.psm1#L1270-L1401) function (available in the [DLP SDK](data-loss-prevention-sdk.md)). This identifies the Teams environments in the tenant and adds them to the given policy. 
+3. Run the [UpdatePolicyEnvironmentsForTeams](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/admin-center/Microsoft.PowerApps.Administration.PowerShell.Samples.psm1#L1270-L1401) function (available in the [Data policy SDK](data-loss-prevention-sdk.md)). This identifies the Teams environments in the tenant and adds them to the given policy. 
 
    > [!div class="mx-imgBorder"] 
    > ![UpdatePolicyEnvironmentsForTeams function.](media/update-policy-environments-teams.png "UpdatePolicyEnvironmentsForTeams function")
@@ -348,7 +312,7 @@ You need to add at least one environment to save your policy. Any environments y
  
    You can either use none of these parameters or b.i. and b.iii. together or b.i., b.ii., and b.iii. together. 
 
-For example, you can specify a default policy for all environments except Teams environments using parameters b.i. and b.ii. This replaces all the environments in the exclusion list of the default policy with all the Teams environments. In addition to the Teams environments, if you want to exclude other environments from this default policy, you can use the b.iii. parameter. If an environment is added to the exclusion list of this default policy (through the DLP UI or another PowerShell script), but is not included in the `environmentIds` text file, it gets removed the next time the script runs. 
+For example, you can specify a default policy for all environments except Teams environments using parameters b.i. and b.ii. This replaces all the environments in the exclusion list of the default policy with all the Teams environments. In addition to the Teams environments, if you want to exclude other environments from this default policy, you can use the b.iii. parameter. If an environment is added to the exclusion list of this default policy (through the data policy UI or another PowerShell script), but is not included in the `environmentIds` text file, it gets removed the next time the script runs. 
 
    > [!div class="mx-imgBorder"] 
    > ![Replace environments in exclusion list.](media/get-content-teams-environments.png "Replace environments in exclusion list")
@@ -359,7 +323,7 @@ For example, you can specify a default policy for all environments except Teams 
 > [!div class="mx-imgBorder"] 
 > ![Display name mismatch.](media/display-name-mismatch.png "Display name mismatch")
 >
-> We recommend that this script is run on a schedule to ensure that the DLP policy always applies to the most recent list of Teams environments. If a Teams environment is created after this script is run, it's not governed by the policy until the policy's environments are updated, either by rerunning the script or manually adding the new environment to the policy. If a non-Teams environment is added to the *OnlyEnvironments* policy, it's removed next time the script runs. 
+> We recommend that this script is run on a schedule to ensure that the data policy always applies to the most recent list of Teams environments. If a Teams environment is created after this script is run, it's not governed by the policy until the policy's environments are updated, either by rerunning the script or manually adding the new environment to the policy. If a non-Teams environment is added to the *OnlyEnvironments* policy, it's removed next time the script runs. 
 
 ## Known issues
 

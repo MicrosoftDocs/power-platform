@@ -7,19 +7,24 @@ ms.reviewer: matp
 ms.component: pa-admin
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 12/09/2024
+ms.date: 11/20/2025 
 search.audienceType: 
   - admin
 ---
 # Control access of the TDS endpoint
 
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
-
 The Tabular Data Stream (TDS) protocol is an application-level protocol used for the transfer of requests and responses between clients and database server systems. When enabled in a Power Platform environment, you can use this protocol to access Microsoft Dataverse using Power BI, Excel, and dataflows.
 
 The Dataverse TDS endpoint has two settings, which control the level of access to the TDS endpoint.
 
-- Environment-level. The feature environment setting **Enable TDS endpoint**. This setting controls whether the environment listens to TDS traffic. To enable, go to **Settings** > **Product** > **Features**. Under **TDS endpoint**, select **Enable TDS endpoint.**
+- Environment-level. The feature environment setting **Enable TDS endpoint**. This setting controls whether the environment listens to TDS traffic. To enable, do the following:
+  
+  1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+  1. In the navigation pane, select **Manage**.
+  1. In the **Manage** pane, select **Environments**.
+  1. On the **Environments** page, select an environment.
+  1. Go to **Settings** > **Product** > **Features**.
+  1. Under **TDS endpoint**, select **Enable TDS endpoint.**
 - User-level. This setting is located in the same location as the environment-level setting. The **Enable user level access control for TDS endpoint** setting determines whether all environment users have access to the TDS endpoint or if access is controlled at the individual user level.
   - When disabled (default) all environment users have access to use the TDS endpoint to access the data they have permission to access. 
   - When enabled, users don't have access to use the TDS endpoint unless the **Allow user to access TDS endpoint** miscellaneous privilege is assigned to the user in a security role.
@@ -42,9 +47,13 @@ In addition to enabling the environment settings, when using individual user lev
 
 ### Enable user level control
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com) open the environment you want, and then go to **Settings** > **Product** > **Features**.
-1. In the **TDS endpoint** section, make sure **Enable TDS endpoint** is turned on. 
-1. Under **Enable TDS endpoint**, turn on **Enable user level access control for TDS endpoint**.  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. Go to **Settings** > **Product** > **Features**.
+1. Under **TDS endpoint**, make sure **Enable TDS endpoint** is turned on. 
+1. Turn on **Enable user level access control for TDS endpoint**.  
    :::image type="content" source="media/enable-user-level-tds.png" alt-text="Enable user level access control for TDS endpoint setting":::
    > [!IMPORTANT]
    > The **Enable TDS endpoint** setting must be turned on for this setting to work.

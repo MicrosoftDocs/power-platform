@@ -27,8 +27,7 @@
             "name": "environmentId",
             "description": "The environment ID.",
             "required": true,
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
           },
           {
             "in": "query",
@@ -129,6 +128,12 @@
           "403": {
             "description": "Forbidden."
           },
+          "404": {
+            "description": "Not found. Environment does not have a Microsoft Dataverse database.",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
           "500": {
             "description": "Internal server error."
           }
@@ -152,8 +157,7 @@
             "name": "environmentId",
             "description": "The environment ID.",
             "required": true,
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
           },
           {
             "in": "query",
@@ -243,6 +247,12 @@
           "403": {
             "description": "Forbidden."
           },
+          "404": {
+            "description": "Not found. Environment does not have a Microsoft Dataverse database.",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
           "500": {
             "description": "Internal server error."
           }
@@ -266,8 +276,7 @@
             "name": "environmentId",
             "description": "The environment ID.",
             "required": true,
-            "type": "string",
-            "format": "uuid"
+            "type": "string"
           },
           {
             "in": "query",
@@ -319,6 +328,12 @@
           },
           "403": {
             "description": "Forbidden."
+          },
+          "404": {
+            "description": "Not found. Environment does not have a Microsoft Dataverse database.",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
           },
           "500": {
             "description": "Internal server error."
@@ -608,7 +623,7 @@
       "type": "string"
     },
     "ModernFlowType": {
-      "description": "Indicates the modern flow type.",
+      "description": "Indicates the modernflow type.",
       "enum": [
         "PowerAutomateFlow",
         "AgentFlow"

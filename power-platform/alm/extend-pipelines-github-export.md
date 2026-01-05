@@ -6,7 +6,8 @@ ms.author: caburk
 ms.reviewer: matp
 ms.topic: overview
 ms.date: 04/16/2025
-ms.custom: 
+ms.custom:
+  - sfi-image-nochange
 ---
 
 # Extend pipelines using GitHub Actions

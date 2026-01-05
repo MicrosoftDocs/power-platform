@@ -7,6 +7,7 @@ ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pvillads
 ms.subservice: developer
+ms.custom: sfi-image-nochange
 ---
 
 # Continuous integration and deployment

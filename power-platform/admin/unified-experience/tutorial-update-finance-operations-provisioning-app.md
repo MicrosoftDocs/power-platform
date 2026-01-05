@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 09/20/2024
+ms.date: 11/25/2025
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -13,8 +13,6 @@ search.audienceType:
 ---
 
 # Tutorial: Update the Finance and Operations Provisioning app
-
-[!INCLUDE[new-PPAC-banner](~/includes/new-PPAC-banner.md)]
 
 Finance and operations apps are reimagined as an application that is hosted by Microsoft Dataverse. Customers no longer have to provision their enterprise resource planning (ERP) system separately from their low-code applications and other Dynamics 365 applications. Most administrative actions in Power Platform are available through the admin center and an API-based experience.
 
@@ -37,8 +35,6 @@ For example, a customer reads that a new service update is available and wants t
     > If the **Manage** command isn't available, you're running the latest version, and no update is available.
 
 1. A message box informs you that you're about to go to a new page where you can manage the Finance and Operations Provisioning app. Select **OK**.
-
-    :::image type="content" source="media/tutorial-install-app1.png" alt-text="Message box that gives you the option to proceed with management of the application or cancel the action.":::
 
 1. The **Dynamics 365 Finance and Operations Provisioning App** update experience page is opened on a new browser tab or in a new browser window. In the dropdown list, select a new application version.
 
