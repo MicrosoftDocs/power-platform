@@ -17,7 +17,7 @@ In this case study, you learn how the Global Finance team at Ernst & Young (EY),
 
 EY receives approximately 1.5 million payments from its 200,000 global clients every year. Of those payments, only 30% are automatically matched with an invoice and cleared by SAP. The rest require significant manual work and time&mdash;from 7 to 30 minutes to research a payment to find the accompanying invoice, and from 4 to 25 minutes to manually process and clear the payment in SAP. That's up to nearly an hour each to match and clear close to a million payments a year.
 
-Ajith Haripaul, EY Global Controlling Transformation Leader, challenged members of the EY Global Finance team to develop a way to automate the cash application process. Stef Pieterse, EY Business Process Lead for Finance and Accounting, and Marie Sanders, Global Process Owner of Accounts Receivable, were assigned to drive the project and manage change. They had developed a similar tool in 2022, PowerPost, which used Power Platform to improve the general ledger posting process.
+Ajith Haripaul, EY Global Controlling Transformation Leader, challenged members of the EY Global Finance team to develop a way to automate the cash application process. Stef Pieterse, EY Business Process Lead for Finance and Accounting, and Marie Sanders, Global Process Owner of Accounts Receivable, were assigned to drive the project and manage change. They developed a similar tool in 2022, PowerPost, which used Power Platform to improve the general ledger posting process.
 
 Given their previous experience, they felt that increasing the percentage of automatically matched and cleared payments from 30% to 80% globally was an achievable goal.
 
@@ -98,11 +98,11 @@ Additionally, a new member of the finance team can become proficient in payment 
 
 &mdash;Marie Sanders, Global Process Owner of Accounts Receivable
 
-PowerMatch is successfully deployed in Canada, Italy, and the United Kingdom, and EY expects to deploy PowerMatch globally in phases through 2025.
+EY successfully deployed PowerMatch in Canada, Italy, and the United Kingdom. EY expects to deploy PowerMatch globally in phases through 2025.
 
 ## Next steps
 
-EY has several projects in progress that are building on logic used in PowerMatch. At the core of each project is the deep integration of Power Platform with EY's SAP system.
+EY has several projects in progress that build on the logic used in PowerMatch. At the core of each project is the deep integration of Power Platform with EY's SAP system.
 
 Ajith explains why EY is so keen on using the Power Platform:
 
@@ -115,3 +115,4 @@ Ajith explains why EY is so keen on using the Power Platform:
 - [Automation adoption best practices](/power-automate/guidance/automation-coe/overview/)
 - [Power Automate guidance documentation](/power-automate/guidance/)
 - [AI Builder documentation](/ai-builder/)
+- [Explore Power Platform and SAP integration](../../sap/explore/power-platform-and-SAP-integration.md)
