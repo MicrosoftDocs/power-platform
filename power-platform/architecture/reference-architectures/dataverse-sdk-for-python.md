@@ -20,7 +20,7 @@ The Dataverse SDK for Python is a comprehensive toolkit that empowers both profe
 
 The following conceptual architecture diagram illustrates how Dataverse SDK for Python integrates with key components:
 
-:::image type="content" source="media/dataverse-sdk-for-python/image1.png" alt-text="":::
+:::image type="content" source="media/dataverse-sdk-for-python/dataverse-sdk-python-architecture.png" alt-text="Diagram of Dataverse SDK workflow showing data extraction to Pandas, LLM tasks, Jupyter Notebook, and output visualization." lightbox="media/dataverse-sdk-for-python/dataverse-sdk-python-architecture.png":::
 
 ## Workflow
 
