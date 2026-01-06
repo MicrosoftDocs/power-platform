@@ -83,7 +83,7 @@ Use Python analytics and LLMs to summarize customer trends or classify segments,
 - **[Jeff Anderson](https://www.linkedin.com/in/jeff-and/)**, Partner Software Engineer
 - **[Peter Hecke](https://www.linkedin.com/in/peter-hecke/)**, Senior Developer Writer
 
-## Related Resources
+## Related resources
 
 - [Dataverse SDK for Python documentation](/power-apps/developer/data-platform/sdk-python/)
 - [Dataverse SDK Python reference](/python/api/dataverse-sdk-docs-python/dataverse-overview?view=dataverse-sdk-python-latest)
