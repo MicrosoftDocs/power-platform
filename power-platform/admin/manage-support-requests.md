@@ -25,13 +25,13 @@ To obtain support and resolve issues, you can submit, view, and manage your supp
 
 1. Select **Support** in the navigation pane.
 
-1. Search, sort, and filter the list of support requests by **Status**, **Created by**, among other data.
+1. Search, sort, and filter the list of support requests by:
 
     - **Status:** Show either open, closed, or all service requests.
 
     - **Created by:** Show tickets created by you or others for your tenant.
 
-    - **Limit:** Govern how many service requests are shown in the list.
+    - **Limit to:** Govern how many service requests are shown in the list.
 
     - **Search:** Filter by keyword to find the support request you are looking for.
 
