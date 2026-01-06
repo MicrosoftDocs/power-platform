@@ -23,7 +23,7 @@ Get the latest info about what's new and what's changed in the Power Platform an
 New in [Reference architectures](reference-architectures/index.md):
 
 - [Optimize the performance of canvas apps requiring complex business logic](reference-architectures/optimize-performance-canvas-apps.md)
-- [Work with business data by using the Dataverse SDK for Python](reference-architectures/dataverse-sdk-for-python.md)
+- [Analyze and automate business data with Dataverse SDK for Python](reference-architectures/dataverse-sdk-for-python.md)
 
 ## December 2025
 

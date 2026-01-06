@@ -1,5 +1,5 @@
 ---
-title: "Work with business data by using the Dataverse SDK for Python"
+title: "Analyze and automate business data with Dataverse SDK for Python"
 description: Learn how the Dataverse SDK for Python empowers developers and data scientists to analyze, automate, and innovate with enterprise-grade data.
 #customer intent: As a data scientist, I want to extract and analyze Dataverse data using Python tools like Pandas and Jupyter so that I can create predictive models and generate actionable insights.
 author: manuelap-msft
@@ -10,7 +10,7 @@ ms.topic: example-scenario
 ms.reviewer: jhaskett-msft
 ---
 
-# Work with business data by using the Dataverse SDK for Python
+# Analyze and automate business data with Dataverse SDK for Python
 
 ## Introduction
 

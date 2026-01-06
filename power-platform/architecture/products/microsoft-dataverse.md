@@ -51,7 +51,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Extract and analyze agent conversation transcripts**](../reference-architectures/analyze-agent-conversation-transcripts.md) | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
 | [**Implement a scalable notification system with Power Platform**](../reference-architectures/scalable-notification-system.md) | Learn how to implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
 | **[Optimize the performance of canvas apps that require complex business logic](../reference-architectures/optimize-performance-canvas-apps.md)** | Learn how to optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
-| **[Work with business data by using the Dataverse SDK for Python](../reference-architectures/dataverse-sdk-for-python.md)** | earn how the Dataverse SDK for Python empowers developers and data scientists to analyze, automate, and innovate with enterprise-grade data. |
+| **[Analyze and automate business data with Dataverse SDK for Python](../reference-architectures/dataverse-sdk-for-python.md)** | earn how the Dataverse SDK for Python empowers developers and data scientists to analyze, automate, and innovate with enterprise-grade data. |
 
 ## Solution ideas
 
