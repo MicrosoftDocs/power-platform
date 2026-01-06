@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/05/2026
+ms.date: 01/06/2026
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -91,10 +91,10 @@ Power Platform supports Virtual Network for both Dataverse plug-ins and [connect
 
 Before creating your Virtual Network and enterprise policy, validate your Power Platform environment's region to ensure it's in a supported region. You can use the `Get-EnvironmentRegion` cmdlet from the [subnet diagnostics PowerShell module](/troubleshoot/power-platform/administration/virtual-network#use-the-diagnostics-powershell-module) to retrieve your environment's region information.
 
-After confirming your environment's region, ensure your enterprise policy and Azure resources are configured in the corresponding supported Azure regions. For example, if your Power Platform environment is in the United Kingdom, then your Virtual Network and subnets must be in the **uksouth** and **ukwest** Azure regions. In the case that a Power Platform region has more than two available region pairs, you must use the specific region pair that matches your environment's region. For example, if `Get-EnvironmentRegion` returns **westus** for your environment, then your Virtual Network and subnets must be in **eastus and westus**. If it returns **eastus2**, then your Virtual Network and subnets must be in **centralus and eastus2**.
+After confirming your environment's region, ensure your enterprise policy and Azure resources are configured in the corresponding supported Azure regions. For example, if your Power Platform environment is in the United Kingdom, then your Virtual Network and subnets must be in the **uksouth** and **ukwest** Azure regions. In the case that a Power Platform region has more than two available region pairs, you must use the specific region pair that matches your environment's region. For example, if `Get-EnvironmentRegion` returns **westus** for your environment, then your Virtual Network and subnets must be in **eastus** and **westus**. If it returns **eastus2**, then your Virtual Network and subnets must be in **centralus** and **eastus2**.
 
 > [!NOTE]
-> Availability of environments in EastUS2 and CentralUS is coming soon. If you have azure resources in these regions you can also consider [Virtual Network peering](./vnet-support-overview.md#how-can-a-power-platform-environment-in-one-region-connect-to-resources-hosted-in-another-region).
+> Availability of environments in **eastUS2** and **centralUS** is coming soon. If you have Azure resources in these regions you can also consider [Virtual Network peering](vnet-support-overview.md#how-can-a-power-platform-environment-in-one-region-connect-to-resources-hosted-in-another-region).
 
 | Power Platform region | Azure region |
 |-----------------------|--------------|
