@@ -28,7 +28,7 @@ Learn how to set up data export from the Power Platform admin center to Applicat
   
    - For the Application Insights environment, you must have contributor, writer, or admin rights.
    - The Application Insights environment must be unique for an environment or tenant. Application Insights out-of-the-box reports won't function correctly if a single Application Insights environment contains data from multiple environments.
-   - The Application Insights integration requires local authentication to be used for proper operation.
+   - The Application Insights integration requires local authentication to be enabled for proper operation.
 
    > [!NOTE]
    > This feature is turned on and supported for Managed Environments only.
