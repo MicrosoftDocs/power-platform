@@ -4,7 +4,7 @@ description: To obtain support and resolve issues, you can submit, view, and man
 author: johnehart
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/05/2026
+ms.date: 01/06/2026
 ms.subservice: admin
 ms.author: johhar 
 ms.reviewer: sericks
@@ -79,7 +79,7 @@ A subset of details about the support request is made available in the support r
 
   - **Problem type and subtype:** Categorization which helps Microsoft route and triage the request and provides visibility to responsible engineering teams.
 
-  - **Severity:** This value governs and sets SLA and expectations for both Microsoft and the submitting customer. See "[Severity and responsiveness](support-overvie.mdw#severity-and-responsiveness)" for details.
+  - **Severity:** This value governs and sets SLA and expectations for both Microsoft and the submitting customer. See "[Severity and responsiveness](support-overview.md#severity-and-responsiveness)" for details.
 
   - **Attachments:** Any file submitted as part of the case. It's not possible to update attachments from the admin center. To manage attachments, contact Microsoft support as part of the support request engagement.
 
