@@ -3,7 +3,7 @@ title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/05/2026
+ms.date: 01/06/2026
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -128,7 +128,7 @@ Once environment administrators receive notification that an environment will be
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1.Select the inactive environment.
+1. Select the inactive environment.
 1. On the **Environment** page, select **Trigger environment activity**.
 
 ### Re-enable a disabled environment
