@@ -59,7 +59,7 @@ Use Python analytics and LLMs to summarize customer trends or classify segments,
 
 [!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
-## Reliability
+### Reliability
 
 - **Robust Data Access:** The SDK supports reliable *Create, Read, Update, and Delete* (CRUD) operations and schema management.
 
@@ -67,13 +67,13 @@ Use Python analytics and LLMs to summarize customer trends or classify segments,
 
 - **Operational Efficiency:** Reduces manual effort and accelerates analytics modernization.
 
-## Security
+### Security
 
 - **Role-Based Access Control:** Enforce Dataverse security roles and policies for all data operations.
 
 - **Data Governance:** Ensure compliance with enterprise standards for data privacy, audit logging, and encryption.
 
-### Contributors
+## Contributors
 
 *Microsoft maintains this article. The following contributors wrote this article.*
 
@@ -83,16 +83,14 @@ Use Python analytics and LLMs to summarize customer trends or classify segments,
 - **[Jeff Anderson](https://www.linkedin.com/in/jeff-and/)**, Partner Software Engineer
 - **[Peter Hecke](https://www.linkedin.com/in/peter-hecke/)**, Senior Developer Writer
 
-### Related Resources
+## Related Resources
 
 - [Dataverse SDK for Python documentation](/power-apps/developer/data-platform/sdk-python/)
 - [Dataverse SDK Python reference](/python/api/dataverse-sdk-docs-python/dataverse-overview?view=dataverse-sdk-python-latest)
 - [PowerPlatform-Dataverse-Client](https://pypi.org/project/PowerPlatform-Dataverse-Client/) download on PyPI.org
 
-### Next steps
+## Next steps
 
 - Download and install the SDK from PyPI. Explore the GitHub [source repository](https://github.com/microsoft/PowerPlatform-DataverseClient-Python) for documentation, sample projects, and community contributions.
-
 - Start building Python-powered analytics and AI workflows with Dataverse data.
-
 - Share feedback and join the community to help shape the future of Dataverse for Python.
