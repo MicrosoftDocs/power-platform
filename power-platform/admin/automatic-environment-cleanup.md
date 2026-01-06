@@ -3,7 +3,7 @@ title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/31/2025
+ms.date: 01/06/2026
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -44,7 +44,9 @@ If an environment has already been deleted, you have a limited window of time to
 A cleanup mechanism in Power Platform automatically removes environments that aren't being used. Only Default, Developer, and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
 
 > [!IMPORTANT]
-> You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center. 
+> You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center.
+>
+> Inactivity-based cleanup doesn't apply to [early release cycle environments](early-release.md) or [Managed Environments](managed-environment-overview.md).
 
 ## Developer environments
 A cleanup mechanism in Power Platform automatically removes developer environments that aren't being used based on the following schedule. After 30 days of inactivity, environments are automatically disabled. If, after 15 days, the [environment isn't re-enabled](#re-enable-a-disabled-environment), the environment is deleted. You have seven days to [recover the environment](recover-environment.md) once it has been deleted.
@@ -126,7 +128,7 @@ Once environment administrators receive notification that an environment will be
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1.Select the inactive environment.
+1. Select the inactive environment.
 1. On the **Environment** page, select **Trigger environment activity**.
 
 ### Re-enable a disabled environment

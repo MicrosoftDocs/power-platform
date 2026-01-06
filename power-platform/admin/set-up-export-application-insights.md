@@ -4,7 +4,7 @@ description: Learn how to export data to Application Insights from the Power Pla
 services: powerapps
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/11/2025
+ms.date: 01/05/2026
 author: isaacwinoto 
 ms.subservice: admin
 ms.custom: NewPPAC
@@ -13,8 +13,9 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
-- Zeffin
-- srpoduri 
+  - itorrescamac
+  - Zeffin
+  - srpoduri 
 ---
 
 # Export data to Application Insights 
@@ -27,6 +28,7 @@ Learn how to set up data export from the Power Platform admin center to Applicat
   
    - For the Application Insights environment, you must have contributor, writer, or admin rights.
    - The Application Insights environment must be unique for an environment or tenant. Application Insights out-of-the-box reports won't function correctly if a single Application Insights environment contains data from multiple environments.
+   - The Application Insights integration requires local authentication to be used for proper operation.
 
    > [!NOTE]
    > This feature is turned on and supported for Managed Environments only.

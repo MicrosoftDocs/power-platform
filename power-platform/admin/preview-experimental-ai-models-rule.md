@@ -30,7 +30,7 @@ AI innovation moves at a rapid pace, and each AI model has different strengths a
 
 If your environment is part of an [environment group](environment-groups.md), you can govern preview and experimental AI model use through the [**Preview and experimental AI models** environment group rule](environment-groups-rules.md).
 
-1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. In the navigation pane, select **Manage**.
 3. In the **Manage** pane, select **Environment groups**. Then select the environment group you want to manage.
 4. Select the **Rules** tab.
@@ -38,13 +38,13 @@ If your environment is part of an [environment group](environment-groups.md), yo
 6. Save your changes.
 7. To apply your changes to the environments in the group, select **Publish rules**.
 
-If an environment group rule governing preview and experimental AI models and features is published, it locks the **Preview and experimental AI models** setting at the environment-level, preventing any system administrator of those individual environments from editing the setting. To change the setting, admins must modify the corresponding rule in the environment group that includes the environment. 
+If an environment group rule governing preview and experimental AI models and features is published, it locks the **Preview and experimental AI models** setting at the environment level, preventing any system administrator of those individual environments from editing the setting. To change the setting, admins must modify the corresponding rule in the environment group that includes the environment. 
 
 ## Effects of the setting on Copilot Studio agents
 
 Learn more about the effects that the **Preview and experimental AI models** setting has on Copilot Studio agents in [Select a primary AI model for your agent](/microsoft-copilot-studio/authoring-select-agent-model).
 
-## Effects of the setting on the Power Platform
+## Effects of the setting on Power Platform
 
-Learn more about the effects that the **Preview and experimental AI models** setting has has on Power Automate and Power Apps in [Enable or disable preview features or models](/ai-builder/administer#enable-or-disable-preview-features-or-models).
+Learn more about the effects that the **Preview and experimental AI models** setting has on Power Automate and Power Apps in [Enable or disable preview features or models](/ai-builder/administer#enable-or-disable-preview-features-or-models).
 
