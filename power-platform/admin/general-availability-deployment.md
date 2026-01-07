@@ -34,7 +34,7 @@ Each notification from the Message Center includes dates, the maintenance window
 
 The generally available platform version is based on your environment's database version.  These are the versions associated for each release:
 
-| Release | Database Version |
+| Release | Database version |
 |---------|---------|
 | April Wave 1  | 9.2.26033.0 |
 | October Wave 2 | 9.2.26093.0 |
@@ -45,6 +45,7 @@ The generally available platform version is based on your environment's database
 > A release wave is a mandatory update and can't be postponed. These updates are essential for maintaining system integrity and security.
 
 For each region listed, deployment begins as early as the Friday dark hours before the listed date.
+
 Environment database version may not be updated until a few days after the schedule below.
 
 |Region  | 2026 wave 1 general availability | 2026 wave 2 general availability |
@@ -75,8 +76,8 @@ Environment database version may not be updated until a few days after the sched
 | DoD\*                        | April 27, 2026 | October 26, 2026  |
 | GCC\*                        | April 27, 2026 | October 26, 2026  |
 
-\*For more information about GCC, GCC High, and DoD, see [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
-\**For more information about environments in China, see [Power Platform and Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md).
+\*For more information about GCC, GCC High, and DoD, go to [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
+\**For more information about environments in China, go to [Power Platform and Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md).
 
 ## Early access updates FAQ
 
