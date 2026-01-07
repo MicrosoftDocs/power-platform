@@ -38,9 +38,9 @@ To obtain support and resolve issues, you can submit, view, and manage your supp
       > [!NOTE]
       > This doesn't search the contents of support requests.
 
-    - **Export to Excel:** Download the list of service requests for offline use.
+    - **Export to Excel:** Select the arrow icon to download the list of service requests for offline use.
     
-    - **Actions menu:** If needed, select the "**…**" after the **Issue title** column to open the menu and choose an available action:
+    - **Actions menu:** If needed, select the ellipses icon ("**…**") after the **Issue title** column to open the menu and choose an available action:
 
       - **Edit:** Launches the edit panel to quickly manage support request attributes. See [Edit support requests](#editing-support-requests) for details.
           
