@@ -50,7 +50,7 @@ To get support and resolve problems, submit, view, and manage your support reque
 
 ## Support request details
 
-The details page for a support request contains information about the support request, such as the description, current state and consent status, severity, categorization, contact details, attachments, and communication history. The actions ribbon at the top of the details page lists available actions such as **Edit**, **Close support request**, and **Open chat**. For more information, see [Live chat with persistence](/live-chat-support.md).
+The details page for a support request contains information about the support request, such as the description, current state and consent status, severity, categorization, contact details, attachments, and communication history. The actions ribbon at the top of the details page lists available actions such as **Edit**, **Close support request**, and **Open chat**. For more information about the chat experience, learn more in [Use live chat with persistence for support requests](live-chat-support.md).
 
 :::image type="content" source="media/support-request-details.png" alt-text="Screenshot of the support request details page showing metadata, communications history, and available actions.":::
 
@@ -60,7 +60,7 @@ The support request details page shows a subset of details about the support req
 
 - **State:** Current state of the support request. As Microsoft support triages and acts on your request, this state updates.
 
-- **Consent:** Sets consent state for advanced diagnostics. This setting governs whether Microsoft support can access your data to troubleshoot your issue. You can update this state by editing the support request. A Microsoft representative might ask you to update this state as part of troubleshooting the support request. For more information, see [Support environments and consent to access customer data](/power-platform/admin/support-environment).
+- **Consent:** Sets consent state for advanced diagnostics. This setting governs whether Microsoft support can access your data to troubleshoot your issue. You can update this state by editing the support request. A Microsoft representative might ask you to update this state as part of troubleshooting the support request. For more information, see [Support environments and consent to access customer data](support-environment.md).
 
 - **Created on:** When you created the case.
 
@@ -79,7 +79,7 @@ The support request details page shows a subset of details about the support req
 
   - **Problem type and subtype:** Categorization which helps Microsoft route and triage the request and provides visibility to responsible engineering teams.
 
-  - **Severity:** This value governs and sets SLA and expectations for both Microsoft and the submitting customer. For more information, see "[Severity and responsiveness](support-overview.md#severity-and-responsiveness)."
+  - **Severity:** This value governs and sets SLA and expectations for both Microsoft and the submitting customer. For more information, see [Severity and responsiveness](support-overview.md#severity-and-responsiveness).
 
   - **Attachments:** Any file submitted as part of the case. You can't update attachments from the admin center. To manage attachments, contact Microsoft support as part of the support request engagement.
 
@@ -89,7 +89,7 @@ The support request details page shows a subset of details about the support req
 
 ## Editing support requests
 
-You can edit some details about a support request in the Power Platform admin center, such as [advanced diagnostic consent](support-environment.md) and contact details. To edit a support request:
+You can edit some details about a support request in the Power Platform admin center, such as diagnostic consent and contact details. To edit a support request:
 
 - **Support request list:** Select the **…** after the **Issue title** column to open the menu and choose **Edit**. The **Edit support request** pane is displayed on the right side of the page.
 
