@@ -4,7 +4,7 @@ description: To obtain support and resolve issues, you can submit, view, and man
 author: johnehart
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/06/2026
+ms.date: 01/07/2026
 ms.subservice: admin
 ms.author: johhar 
 ms.reviewer: sericks
@@ -50,7 +50,7 @@ To obtain support and resolve issues, you can submit, view, and manage your supp
 
 ## Support request details
 
-A support request's details page contains information about the support request, such as tile and description, current state and consent status, severity, categorization, contact details, attachments, and communication history. The actions ribbon at the top of the details page list available actions such as **Edit**, **Close support request**, and **Open chat** (see [Live chat with persistence](/power-platform/admin/live-chat-support) for details).
+The details page for a support request contains information about the support request, such as the description, current state and consent status, severity, categorization, contact details, attachments, and communication history. The actions ribbon at the top of the details page list available actions such as **Edit**, **Close support request**, and **Open chat**. For more information, see [Live chat with persistence](/live-chat-support.md) for details.
 
 :::image type="content" source="media/support-request-details.png" alt-text="Screenshot of the support request details page showing metadata, communications history, and available actions.":::
 
