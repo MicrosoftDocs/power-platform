@@ -40,13 +40,13 @@ To get support and resolve problems, submit, view, and manage your support reque
 
     - **Export to Excel:** Select the arrow icon to download the list of service requests for offline use.
     
-    - **Actions menu:** If needed, select the ellipses icon ("**…**") after the **Issue title** column to open the menu and choose an available action:
+    - **Actions menu:** If needed, select the ellipses icon ("**…**") after the *issue title* column to open the menu and choose an available action:
 
       - **Edit:** Opens the edit panel to quickly manage support request attributes. See [Edit support requests](#editing-support-requests) for details.
           
       - **Close support request:** Select to close the support request. Select a reason for closure and confirm the request. Once closed, requests can't be reopened. If a request is closed but the issue remains, create a new support request.
 
-1.  Select the **Issue title** link to view the details page for the selected support request.
+1.  Select the *issue title* link to view the details page for the selected support request.
 
 ## Support request details
 
@@ -91,7 +91,7 @@ The support request details page shows a subset of details about the support req
 
 You can edit some details about a support request in the Power Platform admin center, such as diagnostic consent and contact details. To edit a support request:
 
-- **Support request list:** Select the **…** after the **Issue title** column to open the menu and choose **Edit**. The **Edit support request** pane is displayed on the right side of the page.
+- **Support request list:** Select the **…** after the *issue title* column to open the menu and choose **Edit**. The **Edit support request** pane is displayed on the right side of the page.
 
 - **Support request details page:** Choose **Edit** from the actions ribbon at the top of the support request details page.
 
