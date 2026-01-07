@@ -7,7 +7,7 @@ ms.author: paulda
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/26/2026
+ms.date: 01/07/2026
 search.audienceType: 
   - admin
 ms.contributors:
@@ -33,10 +33,11 @@ Throughout a release cycle, your environments update over the scheduled weekend.
 Each notification from the Message Center includes dates, the maintenance window, and the Release Plan reference. In addition, included is a list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time. For more information, see [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance).  
 
 The generally available platform version is based on your environment's database version.  These are the versions associated for each release:
+
 | Release | Database Version |
 |---------|---------|
-| April Wave 1  | **9.2.26033.0** |
-| October Wave 2 | **9.2.26093.0** |
+| April Wave 1  | 9.2.26033.0 |
+| October Wave 2 | 9.2.26093.0 |
 
 ## Deployment schedule  
 
