@@ -7,7 +7,7 @@ ms.author: paulda
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/26/2025
+ms.date: 09/26/2026
 search.audienceType: 
   - admin
 ms.contributors:
@@ -32,54 +32,47 @@ Throughout a release cycle, your environments update over the scheduled weekend.
 
 Each notification from the Message Center includes dates, the maintenance window, and the Release Plan reference. In addition, included is a list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time. For more information, see [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance).  
 
-> [!NOTE]
-> If you have enabled the early access updates in your environments, you'll continue getting updates throughout the release wave.
->
-> If you didn't opt in for the early access updates in your environments, your environment automatically updates to receive the new release based on the general availability deployment schedule for your region.  
-
-## Deployment cadence
-
-A release wave is a mandatory update. Release wave updates can't be postponed. These updates are essential for maintaining system integrity and security.
-
-You receive the release wave as part of your weekly Dataverse update during your scheduled dark hours. This ensures minimal disruption to your operations.
-
-The exact duration and timing of each release wave can't be predetermined. The duration of updates may vary based on the Dataverse update and may occur at any point during your weekend dark hours.
+The generally available platform version is based on your environment's database version.  These are the versions associated for each release:
+| Release | Database Version |
+|---------|---------|
+| April Wave 1  | **9.2.26033.0** |
+| October Wave 2 | **9.2.26093.0** |
 
 ## Deployment schedule  
 
-You receive release wave updates as part of your Dataverse weekly updates. This depends on the region where your environment has been created.
-
-The generally available platform version will be **9.2.25093.0** or higher.
+> [!Important]
+> A release wave is a mandatory update and can't be postponed. These updates are essential for maintaining system integrity and security.
 
 For each region listed, deployment begins as early as the Friday dark hours before the listed date.
+Environment database version may not be updated until a few days after the schedule below.
 
-Environment database version may not be updated until a few days after the schedule below. 
-
-|Region  | Deployment schedule for 2025 wave 2 general availability |
-|---------|---------|
-| First release                | September 22, 2025  |
-| Canada                       | September 29, 2025  |
-| France                       | September 29, 2025  |
-| Germany                      | September 29, 2025  |
-| India                        | September 29, 2025  |
-| Korea                        | September 29, 2025  |
-| Norway                       | September 29, 2025  |
-| South Africa                 | September 29, 2025  |
-| South America                | September 29, 2025  |
-| Sweden                       | September 29, 2025  |
-| Switzerland                  | September 29, 2025  |
-| Asia Pacific                 | October 6, 2025  |
-| Australia                    | October 6, 2025  |
-| GCC High\*                   | October 6, 2025  |
-| United Kingdom               | October 6, 2025  |
-| Japan                        | October 6, 2025  |
-| Singapore                    | October 6, 2025  |
-| United Arab Emirates         | October 6, 2025  |
-| Europe                       | October 13, 2025  |
-| North America                | October 20, 2025  |
-| China\**                     | October 27, 2025  |
-| DoD\*                        | October 27, 2025  |
-| GCC\*                        | October 27, 2025  |
+|Region  | 2026 wave 1 general availability | 2026 wave 2 general availability |
+|---------|---------|---------|
+| First release                | March 23, 2026 | September 21, 2026  |
+| Canada                       | March 30, 2026 | September 28, 2026  |
+| France                       | March 30, 2026 | September 28, 2026  |
+| Germany                      | March 30, 2026 | September 28, 2026  |
+| India                        | March 30, 2026 | September 28, 2026  |
+| Italy                        | March 30, 2026 | September 28, 2026  |
+| Korea                        | March 30, 2026 | September 28, 2026  |
+| Norway                       | March 30, 2026 | September 28, 2026  |
+| Poland                       | March 30, 2026 | September 28, 2026  |
+| South Africa                 | March 30, 2026 | September 28, 2026  |
+| South America                | March 30, 2026 | September 28, 2026  |
+| Sweden                       | March 30, 2026 | September 28, 2026  |
+| Switzerland                  | March 30, 2026 | September 28, 2026  |
+| United Arab Emirates         | March 30, 2026 | September 28, 2026  |
+| Asia Pacific                 | April 6, 2026 | October 5, 2026  |
+| Australia                    | April 6, 2026 | October 5, 2026  |
+| GCC High\*                   | April 6, 2026 | October 5, 2026  |
+| United Kingdom               | April 6, 2026 | October 5, 2026  |
+| Japan                        | April 6, 2026 | October 5, 2026  |
+| Singapore                    | April 6, 2026 | October 5, 2026  |
+| Europe                       | April 13, 2026 | October 12, 2026  |
+| North America                | April 20, 2026 | October 19, 2026  |
+| China\**                     | April 27, 2026 | October 26, 2026  |
+| DoD\*                        | April 27, 2026 | October 26, 2026  |
+| GCC\*                        | April 27, 2026 | October 26, 2026  |
 
 \*For more information about GCC, GCC High, and DoD, see [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
 \**For more information about environments in China, see [Power Platform and Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md).
