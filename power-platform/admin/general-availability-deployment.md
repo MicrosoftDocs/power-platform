@@ -36,8 +36,8 @@ The generally available platform version is based on your environment's database
 
 | Release | Database version |
 |---------|---------|
-| April Wave 1  | 9.2.26033.0 |
-| October Wave 2 | 9.2.26093.0 |
+| April wave 1  | 9.2.26033.0 |
+| October wave 2 | 9.2.26093.0 |
 
 ## Deployment schedule  
 
