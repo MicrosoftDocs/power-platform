@@ -94,10 +94,6 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    <td width="80%"> Indicates if the connectors can be blocked or not. For list of connectors that can't be blocked, see <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked"></a>  </td> 
    </tr>
    <tr> 
-   <td width="20%"> Endpoint configuration</td>
-   <td width="80%"> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    </td>
-   </tr>
-   <tr> 
    <td width="20%"> Class</td>
    <td width="80%"> Indicates whether connector usage requires a Premium license or is it included in the Built-in/Standard license for Power Platform.    </td>
    </tr>
@@ -165,7 +161,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
 1. After you complete all the connector assignments across the **Business**/**Non-Business**/**Blocked** groups and set the default group for new connectors, select **Next**.
 
-1. In the Custom connectors page, xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx . Select **Next** to continue.
+1. In the Custom connectors page, select the custom connectors to include in the policy. Select **Next** to continue.
 
 1. In the Scope page, choose the scope of the data policy. This step isn't available for environment-level policies, because they're always meant for a single environment.
 
