@@ -57,7 +57,7 @@ Although this strategy is the easiest to manage, it violates the principle of le
 |------------------|-------------------------|-------------|
 | Single app registration for all purposes | Azure DevOps - user_impersonation - Delegated | The ALM Accelerator canvas app needs Azure DevOps API permissions to communicate with Azure DevOps. |
 | Single app registration for all purposes | Dynamics CRM - user_impersonation - Delegated | The pipeline to export solutions from maker development environments and deploy solutions to the validation, test, and production environments needs permissions to use the Power Platform (Dynamics CRM) API to perform solution operations. |
-| Single app registration for all purposes | Power Apps Advisor - user_impersonation - Delegated | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Apps Advisor service to run the solution checker task. |
+| Single app registration for all purposes | Power Apps Advisor - Analysis.All - Delegated - Admin consent not required | The pipeline to deploy solutions to the validation environment needs permissions to use the Power Apps Advisor Analysis service to run the solution checker task. |
 
 ### One app registration for Azure DevOps and one for Power Platform
 
