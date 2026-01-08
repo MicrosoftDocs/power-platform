@@ -205,4 +205,12 @@
       href: implementing-recommendations.md
     - name: Feedback and support
       href: feedback-support.md
+    - name: Related documentation
+      items: 
+      - name: Power Platform and Copilot Studio Architecture Center
+        href: ../architecture/index.yml
+      - name: "Architecting agent solutions: Principles and patterns"
+        href: /microsoft-copilot-studio/guidance/architecture/
+      - name: Copilot Studio guidance
+        href: /microsoft-copilot-studio/guidance/
 
