@@ -26,22 +26,13 @@ Additionally, you can create:
 
 Make sure you have the System Administrator security role or equivalent permissions in Microsoft Dynamics 365. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
-### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Templates**, then select **Email templates**.
-  
-### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Templates**, then select **Email templates**.
----
-  
+
 On the **Email Templates** page:
 1. In the top command bar, select **New**.
 1. In the **Email Template Type** dialog box, choose a **Template Type**, then select **OK**.  

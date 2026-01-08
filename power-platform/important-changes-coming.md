@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 10/20/2025
+ms.date: 12/16/2025
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -25,7 +25,33 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Deprecation of Copilot chat in model-driven apps
+Starting January 2026, [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) in environments not [enabled for Dynamics 365 apps](admin/create-environment.md#create-an-environment-with-a-database) will be deprecated. This feature was available as a preview feature in Power Apps.
 
+### Why is this needed?
+We are unifying the chat experience across apps with [Microsoft 365 Copilot chat](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot), which is becoming the new standard in Power Apps. As Microsoft 365 Copilot chat gradually replaces [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot), makers will have the flexibility to use one or both chat experiences during the transition period.
+
+### Impact
+[Microsoft 365 Copilot chat](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot) is gradually replacing [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot).
+
+During the transition period, makers can enable either one or both chat experiences. When both options are available, the **Copilot** dropdown menu shows the following options:
+- **Chat** button opens [Microsoft 365 Copilot chat](/power-apps/user/use-microsoft-365-copilot-model-driven-apps).
+- **App Skills** button opens [Copilot chat in model-driven apps](/power-apps/user/use-copilot-model-driven-apps).
+
+### Replacement feature
+[Microsoft 365 Copilot chat](/power-apps/user/use-microsoft-365-copilot-model-driven-apps) is now the recommended solution for natural language interactions in model-driven apps. To ensure a smooth transition and prevent any disruption when Copilot chat is retired, we recommend that you migrate to Microsoft 365 Copilot chat as soon as it becomes available in your environment. 
+
+## Deprecation of the classic look for model-driven apps
+Starting in April 2026, makers will no longer be able to switch to the classic look in model-driven apps. All apps will use the modern, refreshed look by default.
+
+### Why is this needed?
+We are standardizing the experience across model-driven apps to deliver a consistent, accessible, and modern interface that ensures customers benefit from ongoing user experience improvements while unlocking AI-powered capabilities available only in the modern look.
+
+### Impact
+There is no impact on app logic, data, or permissions. Existing apps will automatically display the modern look. The admin settings related to this feature will be removed.
+
+### Replacement feature
+The modern, refreshed look is now the default experience for all model-driven apps. No action is required from makers or admins. For more information on this, see [Modern, refreshed look for model-driven apps](/power-apps/user/modern-fluent-design).
 
 ## Deprecation of create an app from an image or Figma file
 
@@ -397,19 +423,19 @@ Cloud flows that use the [Microsoft Dataverse (legacy)](/connectors/commondatase
 
 Review the cloud flows you own that use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector and identify which are ready to update. As of January 2024, most flows using the legacy connector are recommended for migration except for flows triggering based on changes in other environments.
 
-A migration assistant is available on the detail page of cloud flows that are able to be automatically updated. The assistant creates a copy of the flow with the legacy connector's triggers, actions, and dynamic content references replaced.
+A migration assistant is available on the detail page of cloud flows that are able to be automatically updated. The assistant creates a copy of the flow with the legacy connector's triggers, actions, and dynamic content references replaced. This migration assistant does not currently support legacy triggers, or actions connecting to other environments.
 
 ## Microsoft Dataverse (legacy) connector for Azure Logic Apps will be deprecated and replaced with another connector
 
-Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (also referred to as the CDS 2.0 connector) was deprecated. This connector was used to connect to Dataverse for use in multiple clients and components. The [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector was made available for use in Azure Logic Apps starting August 2022. The Dataverse connector provides both legacy triggers and actions and new preview triggers and actions for the newest connector. Dates for when previews will be generally available will be provided by November 2023.
+Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (also referred to as the CDS 2.0 connector) was deprecated. This connector was used to connect to Dataverse for use in multiple clients and components. The [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector was made available for use in Azure Logic Apps starting August 2022. The Dataverse connector in Logic Apps now provides both legacy triggers and actions and new preview triggers and actions for the newest connector.
 
 There will be a phased-in approach before deprecation takes place. Here's the timeline:
 
 - **August 30, 2022:** The actions and triggers in Dataverse legacy connector became available in the Dataverse connector.
-  - Existing Dataverse Legacy connector triggers and actions can continue to be used in existing logic apps for backward compatibility for time with more timelines available in August 2023.
+  - Existing Dataverse Legacy connector triggers and actions can continue to be used in existing logic apps for backward compatibility.
   - All new logic apps are created using the new actions.
 - **August 2022 through preview period:** Both new and legacy actions and triggers are available during new flow creation. By January 2024, a date for the move to general availability will be provided.
-- **Date TBD:** No new logic apps can be created using the legacy actions and triggers, but existing logic apps with those actions and triggers will continue to work. Updates will be provided in January 2024.
+- **Date TBD:** No new logic apps can be created using the legacy actions and triggers, but existing logic apps with those actions and triggers will continue to work.
 
 In August 2023, we provided a timeline when all existing logic apps using the deprecated legacy actions and triggers will stop working. Users need to review their existing logic apps to update them to the new Azure Logic Apps triggers by the specified timeline (typically one year from the announcement date).
 

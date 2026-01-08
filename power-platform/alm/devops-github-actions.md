@@ -21,7 +21,7 @@ ms.custom:
 
 GitHub Actions for Microsoft Power Platform include the following capabilities:
 
-- Importing and exporting application metadata (also known as solutions) that contain various platform components such as canvas apps, model-driven apps, desktop flows, Microsoft CoPilot Studio virtual agent chatbots, AI Builder models, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and connectors between development environments and source control.
+- Importing and exporting application metadata (also known as solutions) that contain various platform components such as canvas apps, model-driven apps, desktop flows, Microsoft Copilot Studio virtual agent chatbots, AI Builder models, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and connectors between development environments and source control.
 
 - Deploying to downstream environments.
 
@@ -90,7 +90,7 @@ GitHub Actions for Microsoft Power Platform can run on both Microsoft Windows ag
 
 ***Do GitHub Actions only work for Power Apps?***
 
-*GitHub Actions work for both canvas and model-driven apps, Microsoft CoPilot Studio virtual agents, UI flows and traditional flows, AI Builder, custom connectors, and dataflows, all of which can now be added to a solution. Also included are customer engagement apps.*
+*GitHub Actions work for both canvas and model-driven apps, Microsoft Copilot Studio virtual agents, UI flows and traditional flows, AI Builder, custom connectors, and dataflows, all of which can now be added to a solution. Also included are customer engagement apps.*
 
 ***Can I include flow and canvas apps?***
 

@@ -3,7 +3,7 @@ title: Column-level security
 description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 08/06/2025
+ms.date: 11/19/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -88,8 +88,6 @@ Configure a combination of these four permissions to determine the user privileg
 
 To add a column and set permissions for a column security profile, use the following steps:
 
-#### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
@@ -98,19 +96,6 @@ To add a column and set permissions for a column security profile, use the follo
 1. Select the **Teams** or **Users** tab, select **+ Add Teams** or **+ Add Users**, select the teams or users that you want to control access, and then select **Add**.
 1. Select the **Column Permission** tab, in the **Name** column select one or more columns, and then select **Edit**. Configure the four properties for the desired access. These permissions control whether people in this security profile can read or set column values.
 1. Select **Save**.
-
-#### [Classic admin center](#tab/classic)
-
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using an account that is assigned the System Administrator security role.
-1. Select the environment to configure security profiles for. 
-1. Select **Settings** > **Users + permissions** > **Column security profiles**. 
-1. Select an existing profile, or select **New Profile**, enter a name, enter a description, and then select **Save**. 
-1. Select the **Teams** or **Users** tab, select **+ Add Teams** or **+ Add Users**, select the teams or users that you want to control access, and then select **Add**.
-1. Select the **Column Permission** tab, in the **Name** column select one or more columns, and then select **Edit**. Configure the four properties for the desired access. These permissions control whether people in this security profile can read or set column values.
-1. Select **Save**.
-
----
 
 > [!TIP]
 > [Learn how a developer can provide access to secured columns using code](/power-apps/developer/data-platform/column-level-security#provide-access-to-secured-columns)
@@ -140,16 +125,17 @@ Whether the **Enable column security** checkbox is enabled depends on the value 
 > [!TIP]
 > [Learn how a developer can query Dataverse to get a list of all the columns that can be secured](/power-apps/developer/data-platform/field-security-entities#discover-which-columns-can-be-secured)
 
-
 ## Best practices
 
 When a [calculated column](/power-apps/maker/data-platform/define-calculated-fields) includes a column that is secured, data might be displayed in the calculated column to users that don't have permission to the secured column. Both the original column and the calculated column should be secured.
 
 _Composite columns_ include data from multiple columns. For example, the [`contact` table](/power-apps/developer/data-platform/reference/entities/contact) [`fullname`](/power-apps/developer/data-platform/reference/entities/contact#BKMK_FullName) and [`address1_composite`](/power-apps/developer/data-platform/reference/entities/contact#BKMK_Address1_Composite) columns are composite columns. To completely secure data included in composite columns, you must secure and configure the appropriate column security profiles on multiple columns for the table. For example, to completely secure the `address1_composite` column, you need to secure all of these the columns that begin with `address1_` in both the [contact](/power-apps/developer/data-platform/reference/entities/contact) and [address (`customeraddress`)](/power-apps/developer/data-platform/reference/entities/customeraddress) tables.
 
-
 > [!NOTE]
 > Changes to column security require a browser refresh from the end user on the client (like a model-driven app) for the changes to take effect. This should be considered when dynamically adjusting access rules.
+
+## Activity logging data
+The column values in the before-and-after audit change events show as "*" in the **Create** and **Update** [Purview activity logs](enable-use-comprehensive-auditing.md). 
 
 ### Related information
 

@@ -115,22 +115,11 @@ You can create environments for different purposes. A trial environment is for t
 
 You can view and manage your environments in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. Use the **Sort** or **Filter** options to organize the list of environments. These options are helpful when managing a large number of environments.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. Use the **Sort** or **Filter** options to organize the list of environments. These options are helpful when managing a large number of environments.
-
----
 
 ### Environment details
 
@@ -189,19 +178,11 @@ Environment history gives admins a timeline of the full environment lifecycle fr
 
 To see the environment history:
 
-### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. In the **Environments** page, select an environment.
 1. Select **History** in the command bar.
-   
-### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, **Environments**.
-1. In the **Environments** page, select an environment.
-1. Select **History** in the command bar.
----
 
 > [!NOTE]
 >

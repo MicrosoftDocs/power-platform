@@ -82,12 +82,16 @@
         - name: Power Platform CLI
           href: cli\introduction.md
           items:
+            - name: Use without installation (dnx)
+              href: howto\dnx-cli.md
             - name: Install Visual Studio Code extension
               href: howto\install-vs-code-extension.md
             - name: Install with .NET Tool
               href: howto\install-cli-net-tool.md
             - name: Install using Windows MSI
               href: howto\install-cli-msi.md
+            - name: Use built-in MCP server
+              href: howto\use-mcp.md
             - name: Create and register a plug-in package
               href: howto\cli-create-package.md
             - name: Power Platform CLI reference
@@ -117,6 +121,8 @@
                 href: cli\reference\env.md
               - name: pac help
                 href: cli\reference\help.md
+              - name: pac managed-identity
+                href: cli\reference\managed-identity.md
               - name: pac modelbuilder
                 href: cli\reference\modelbuilder.md
               - name: pac package

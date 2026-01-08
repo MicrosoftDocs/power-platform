@@ -49,8 +49,6 @@ When users are deleted or disabled in Microsoft Entra ID or removed from the Mic
 
 To remove the user from a Dataverse group team, perform the following steps:
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. 
@@ -60,20 +58,6 @@ To remove the user from a Dataverse group team, perform the following steps:
 1. Select the **Manage user in Dynamics 365** option.
 1. On the **User** page, select the Dataverse group team you want to remove the user from.
 1. Select the **Delete** button.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
-1. Go to **Environments**.
-1. Select an environment, and then select **Settings** > **Users + permissions** > **Users**.
-1. Search and select the user.
-1. On the User form, select on the **...** menu.
-1. Select the **Manage user in Dynamics 365** option.
-1. On the **User** page, select the Dataverse group team you want to remove the user from.
-1. Select the **Delete** button.
-
-
----
 
 If you accidentally deleted an active group user, the group user will be added back to the Dataverse group team the next time the user accesses the environment.
    
@@ -121,23 +105,11 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 
 To create a group team in the Power Platform admin center, perform the following steps:
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. 
 1. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 1. Select **+ Create team**.
-
-# [Classic admin center](#tab/classic)
-
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
-1. Select an environment.
-1. Select **Settings** > **Users + permissions** > **Teams**.
-1. Select **+ Create team**.
-
----
 
 You need to specify the following fields:   
 
@@ -185,21 +157,10 @@ Review the following table for how members in Microsoft Entra groups match to Da
 
 To edit a group team in the Power Platform admin center, perform the following steps:
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. 
 1. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
-
-
-# [Classic admin center](#tab/classic)
-   
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
-1. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
-
-
----
 
 Select the checkbox for a team name. Select **Edit team**. Only the **Team name**, **Description**, and **Administrator** are available for editing. Update the fields as required, and then select **Update**.
 

@@ -18,21 +18,10 @@ The Microsoft Copilot Studio capacity management experience in the Power Platfor
 
 ## View summary information
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
 1. Select the **Summary** tab.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, select **Billing** > **Licenses**. The **Licenses** page is displayed.
-1. Select the **Summary** tab.
-2. In the **Summaries** section, select **Copilot Studio**.
-
----
 
 The licensing summary view shows usage of both prepaid and session-based capacity units.
 
@@ -67,8 +56,6 @@ The following cards are displayed in the **Copilot credit capacity** tab:
 ## View credit capacity consumed per environment
 The **Environments** tab provides details on the Copilot Studio credit capacity consumed per environment, including the number of Copilot credits deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
@@ -76,18 +63,6 @@ The **Environments** tab provides details on the Copilot Studio credit capacity 
 1. Select the **Select environment** button.
 1. The **Select an environment** pane is displayed.
 1. Select the environment you want to use and select the **Select** button.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, select **Billing** > **Licenses**. The **Licenses** page is displayed.
-1. Select the **Environments** tab.
-1. Select the **Select environment** button.
-1. The **Select an environment** pane is displayed.
-1. Select the environment you want to use and select the **Select** button.
-1. In the **Summaries** section, select **Copilot Studio**.
-
----
 
 To view Copilot Studio capacity consumed for Microsoft 365 Copilot Chat, select the **Microsoft 365 Copilot Chat** environment on the environment selection page. 
  
@@ -102,8 +77,6 @@ Capacity allocation can be managed in the Power Platform admin center.
 
 To allocate, complete the following steps depending on whether you're using the new admin center or the classic admin center.
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
@@ -115,23 +88,6 @@ To allocate, complete the following steps depending on whether you're using the 
    -or-
 
    - Under the **Copilot Studio** heading, select **Manage Copilot credits** or **Manage sessions**.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, select **Billing** > **Licenses**. The **Licenses** page is displayed.
-1. Select the **Summary** tab.
-1. In the **Summaries** section, select **Copilot Studio**.
-1. Complete one of the following actions:
-
-   - Select **Manage Capacity** from the **Prepaid capacity** card.
-
-   -or-
-
-   - Under the **Copilot Studio** heading, select **Manage Copilot credits** or **Manage sessions**.
-   
-
----
 
 In the allocation panel, select an environment and specify the number of Copilot credits to allocate in the **Copilot credits** textbox.
 

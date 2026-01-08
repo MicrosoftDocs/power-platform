@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 09/17/2025
+ms.date: 12/09/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -48,6 +48,9 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Use Dataverse as a data source for canvas apps**](../reference-architectures/dataverse-canvas-app.md) | Learn how creating a Power Apps canvas app that uses Dataverse as a data source helps build a more custom user experience. |
 | [**Use an autonomous agent in Copilot Studio for document processing**](../reference-architectures/document-processing-agent.md) | Learn how to build an autonomous agent in Copilot Studio for document processing. |
 | [**Use complex relationships with Microsoft Dataverse**](../reference-architectures/complex-relationships-dataverse.md) | Learn how to model complex data relationships in Microsoft Dataverse to design effective business applications. |
+| [**Extract and analyze agent conversation transcripts**](../reference-architectures/analyze-agent-conversation-transcripts.md) | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
+| [**Implement a scalable notification system with Power Platform**](../reference-architectures/scalable-notification-system.md) | Learn how to implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
+| **[Optimize the performance of canvas apps that require complex business logic](../reference-architectures/optimize-performance-canvas-apps.md)** | Learn how to optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
 
 ## Solution ideas
 

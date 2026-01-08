@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/29/2025
+ms.date: 11/19/2025
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
@@ -154,8 +154,6 @@ You can audit other tables, where applicable, but note that there are some core 
 
 The following steps describe how to turn on auditing for an environment. This task requires the System Administrator or System Customizer role or equivalent permissions.
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. From the left-side menu, select **Security > Compliance**.
 1. Select the **Auditing** tile.
@@ -164,19 +162,6 @@ The following steps describe how to turn on auditing for an environment. This ta
 1. Review the list of Dataverse data and Dynamics 365 apps entities.
 1. Review and update the **Event log retention** by selecting the dropdown.
 1. Select the period that meets your data retention policy.
-
-# [Classic admin center](#tab/classic)
- 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. From the left-side menu, select **Security > Compliance**.
-1. Select the **Auditing** tile.
-1. Select the environment that you want to turn on auditing.
-1. Select **Set up auditing**. In the **Auditing** dialog box, select **Turn on auditing**.
-1. Review the list of Dataverse data and Dynamics 365 apps entities.
-1. Review and update the **Event log retention** by selecting the dropdown.
-1. Select the period that meets your data retention policy.
-
----
 
 > [!NOTE]
 > When the audit retention period is set to **Forever**, logs aren't deleted. When the audit retention period is set to any other value, logs are deleted continuously starting at the time an audit record exceeds the time defined in the retention policy.
@@ -192,7 +177,7 @@ The following table describes the retention policy settings available when you t
    | Set the retention policy for these logs   | Default: Forever   |
    | Set a custom retention policy | Maximum: 24,855 days. Visible if you select "Custom" in the previous setting.   |  
 
-> [!Important]
+> [!IMPORTANT]
 > The audit retention period isn't available for Dynamics 365 Customer Engagement (on-premises) or for environments encrypted with a customer's own encryption key.
 
 ## Start/stop auditing for an environment and set retention policy 
@@ -205,24 +190,12 @@ This task requires the System Administrator or System Customizer role or equival
    | Log access | Log whenever the system is accessed, generally by signing in.  |
    | Read logs  | Logs are sent to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/auditlogsearch).|
 
-
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Select **Settings** > **Audit and logs** > **Audit settings**.
 1. You can set a retention period for how long audit logs are kept in an environment. Under **Retain these logs for**, choose the period of time you wish to retain the logs. 
 1. Select **Save**.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
-1. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Audit settings**.
-1. You can set a retention period for how long audit logs are kept in an environment. Under **Retain these logs for**, choose the period of time you wish to retain the logs.
-1. Select **Save**.
-
----
 
 > [!NOTE]
 > We recommend that you use the Security page auditing option to set the retention policy. This provides the flexibility to apply the retention policy to existing logs. 
@@ -248,7 +221,7 @@ This feature allows you to quickly turn on auditing for multiple tables (entitie
    - **Marketing Entities**. Tracks Campaign table activity.
    - **Customer Service Entities**. Tracks Case, Contract, Queue, and Service table activity. 
   
-1. Select **OK**. 
+1. Select **OK**.
 
 ## Configure auditing for one or more tables and columns in Power Apps
 
@@ -303,7 +276,7 @@ This task requires the System Administrator or System Customizer role or equival
 
 System administrators or customizers can change the default audit settings for tables and for specific columns of a table. 
 
-### Turn on or off auditing for a table 
+### Turn on or off auditing for a table
 
 1. Sign in to [Power Apps](https://make.powerapps.com) using your System Administrator or System Customizer credentials.
 
@@ -344,20 +317,23 @@ System administrators or customizers can change the default audit settings for t
 
 1. To turn on or off auditing for a single column, open the column and expand the **Advanced options** in the **General** section, and then select or clear the **Enable auditing** option. 
 
-1. Select **Save**. 
+1. Select **Save**.
 
 1. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the toolbar. 
 
 Learn more in [Dataverse developer guide: Configure auditing > Configure tables and columns](/power-apps/developer/data-platform/auditing/configure#configure-tables-and-columns).
 
-### Turn on or off auditing for Choice data type's original label 
+> [!NOTE]
+> When auditing is turned off for a column, the before-and-after values are sent as an "*" to [Purview activity logging](enable-use-comprehensive-auditing.md).
+
+### Turn on or off auditing for Choice data type's original label
+
 By default, the current label description of the **Choice** data type is shown in the audit logs. For example, suppose you have a choice column for **color** and the label description can be _red_, _white_, and _blue_. When a user selects _red_ and updates the record, the audit record shows that _red_ was selected. If the label description is later changed to _pink_ in the choice data type, the audit record displays _pink_.
 
 If you want to show the original label that the user selected in the audit logs, you can set this auditsetting **{\"StoreLabelNameforPicklistAudits\":true}** to true. Learn how to [enable auditsettings](/power-apps/developer/data-platform/auditing/configure?tabs=webapi#change-auditsettings).
 
 > [!NOTE]
 > When the **StoreLabelNameforPicklistAudits** is set to true, the new audit user experience on viewing the audit records can be found in the [Audit Summary view](#use-the-audit-summary-view). The [audit history in model-driven app](#use-the-audit-history-in-a-model-driven-app) continues to show the _by default_ behavior.
-
 
 ## Use the Audit History in a model-driven app
 
@@ -387,9 +363,9 @@ There are two ways to get to the **Audit Summary** page:
 - From the app, select the **Settings** icon on the banner, select **Advanced Settings**, and select **System > Auditing > Audit Summary view**.
 
   > [!NOTE]
-  > The **Record** column filter doesn't work and will be removed in the future. The filter options **Equals** and **Does not equal** of the **Entity** column filter don't show any table values. To filter by entity, you can use the **Contains** option and enter the table name. 
+  > The **Record** column filter doesn't work and will be removed in the future. The filter options **Equals** and **Does not equal** of the **Entity** column filter don't show any table values. To filter by entity, you can use the **Contains** option and enter the table name.
 
-## Delete audit logs 
+## Delete audit logs
 
 1. In the Auditing card, select **Delete Logs**.
 
@@ -478,23 +454,12 @@ The following table describes the options available to delete audit logs.
 
 For Unified Interface, in the upper-right corner, select **Settings** > **Advanced Settings** > **Settings**.
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select an environment.
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Under Auditing, select **Delete audit logs**.
 1. Choose how to select logs to delete. 
 1. Select **Delete**, and then confirm.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select an environment.
-1. Under Auditing, select **Delete audit logs**.
-1. Choose how to select logs to delete.
-1. Select **Delete**, and then confirm.
-
----
 
    > [!NOTE]
    > Audit logs are deleted in an asynchronous background system job. The duration of the deletion depends on the number of audit records to be deleted. The current rate is approximately 100 million records per day, or approximately 4 million records per hour.
@@ -509,37 +474,28 @@ Several features use system jobs to perform tasks automatically, including workf
 
 For Unified Interface, in the upper-right corner, select **Settings** > **Advanced Settings** > **Settings**.
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Select **Settings** > **Audit and logs** > **System jobs** to see a grid view of system jobs.
 
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and select an environment.
-1. Select **Settings** > **Audit and logs** > **System jobs** to see a grid view of system jobs.
-
----
-
 If there's a problem with a system job, you can cancel, postpone, pause, or resume it. Select a job and then select the **Actions** menu.
   
-- **Canceling system jobs** 
+- **Canceling system jobs**
   
-     You can't resume a canceled system job. 
+     You can't resume a canceled system job.
   
-- **Postponing completion of system jobs** 
+- **Postponing completion of system jobs**
   
-     Postponing an active system job stops any current and subsequent actions. You can specify a later time when you want the system job to restart. 
+     Postponing an active system job stops any current and subsequent actions. You can specify a later time when you want the system job to restart.
   
-- **Pausing system jobs** 
+- **Pausing system jobs**
   
-     You can resume a paused system job. 
+     You can resume a paused system job.
   
-- **Resuming paused system jobs** 
+- **Resuming paused system jobs**
   
-     Resuming restarts a system job that was paused. 
+     Resuming restarts a system job that was paused.
   
 > [!TIP]
 >
@@ -553,21 +509,11 @@ If there's a problem with a system job, you can cancel, postpone, pause, or resu
 
 To monitor the status of audit delete jobs, you can use the **Bulk deletion** view in the Power Platform admin center. 
 
-# [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Select **Settings** > **Data management** > **Bulk deletion**.
 1. Select the system job name to open details about your delete job.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and select an environment.
-1. Select **Settings** > **Data management** > **Bulk deletion**.
-1. Select the system job name to open details about your delete job.
-
----
 
 ## Access audit data using Azure Synapse Link for Dataverse
 

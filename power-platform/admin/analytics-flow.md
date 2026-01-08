@@ -3,14 +3,15 @@ title: View analytics for Power Automate cloud flows
 description: Admins can view Microsoft Power Automate analytics in the Power Platform admin center, including reports on run data of flows, flows created, usage, and errors.
 author: Zeffin 
 ms.topic: how-to
-ms.date: 07/15/2025
+ms.date: 11/18/2025
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
- - isaacwinoto
+  - nordine-marie
+  - isaacwinoto
 ms.custom:
   - NewPPAC
   - sfi-ga-nochange
@@ -24,20 +25,10 @@ Environment admins can access analytics for Power Automate in the Microsoft [Pow
 
 To access these reports:
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, under **Products**, select **Power Automate**.
 1. View the reports on the Power Automate analytics page.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, expand **Analytics**, then select **Power Automate**.
-1. View the reports on the Power Automate analytics page.
-
----
 
 ## Who can view these reports?
 
@@ -115,5 +106,13 @@ To view reports in another environment:
 1. Select **Apply**.
 
 :::image type="content" source="media/analytics-flow/new-environment.png" alt-text="Shows how to view reports from another environment in Power Automate analytics." lightbox="media/analytics-flow/new-environment.png":::
+
+## Known limitations
+
+- **Solution-aware flows**: Flows created as part of a solution aren't included in analytics reports.
+- **Data refresh cycle**: Reports refresh approximately every 24 hours; real-time data isn't available.
+- **Exported reports**: Some fields, such as creator’s email address and flow display name, may appear blank in exported reports because these values are resolved at runtime.
+- **Visualization expansion**: When expanding visualizations, certain details&mdash;such as flow display name, environment display name, or user information&mdash;may appear as raw identifiers instead of friendly names.
+- This feature is not available in government and sovereign clouds at the moment.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
