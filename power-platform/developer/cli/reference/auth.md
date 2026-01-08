@@ -102,7 +102,7 @@ This parameter requires no value. It's a switch.
 
 #### `--managedIdentity` `-mi`
 
-Use Azure Managed Identity.
+Use default Azure identity.
 
 This parameter requires no value. It's a switch.
 
