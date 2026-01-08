@@ -155,7 +155,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
 1. Review and change the default group setting for new connectors, if needed. We recommend keeping the default setting as **Non-business** to map any new connectors added to Power Platform by default. **Non-business** connectors can be manually assigned to **Business** or **Blocked** later by editing the data policy, after you had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable are mapped to **Blocked**, as expected. However, any new connectors that are unblockable are mapped to **Non-business** because by design they can't be blocked. 
 
-   In the upper-right corner, select **Set default group**.
+1. In the upper-right corner, select **Set default group**.
 
    :::image type="content" source="media/dlp-edit-default-group-new.png" alt-text="Set default group":::
 
