@@ -106,7 +106,8 @@ Individual users can't switch to [Quick Find search](/powerapps/user/quick-find)
 > If you're using your own encryption key, you can turn off Dataverse search after allowing early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 > [!NOTE]
-> Dataverse search doesn't support lifecycle operations such as create, delete, backup, recover, copy, and reset. If you perform such an operation, be sure to turn on Dataverse search again.
+> Dataverse search must be turned on to support lifecycle operations such as create, delete, backup, recover, copy, and reset.
+> Dataverse search must be manually enabled in environments that do not have Dataverse search turned on, to support copy lifecycle operations between environments.
 
 Take these steps to turn on Dataverse search:
 
@@ -136,7 +137,7 @@ When you turn on Dataverse search, you enable global search in all model-driven 
 > - You can't turn off Dataverse search in specific apps.
 > - Dataverse search doesn't turn on any other feature automatically.
 
-When you provision a Dataverse search index, you see an indication that provisioning is in progress. Once index provisioning is complete, it can take anywhere from an hour or more to complete a full sync for average size organizations, to a couple of days for large organizations.
+When you provision a Dataverse search index, you see an indication that provisioning is in progress.
 
 > [!IMPORTANT]
 > Turning off Dataverse search deprovisions and removes the index within 12 hours. If you turn on Dataverse search after it's been off for 12 hours, it provisions a fresh index that needs to go through a full sync. Syncing can take an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
