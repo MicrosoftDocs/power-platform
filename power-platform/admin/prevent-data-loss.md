@@ -23,7 +23,9 @@ ms.contributors:
 
 # Manage data policies
 
-An organization's data is critical to its success. Its data needs to be readily available for decision making, but the data needs to be protected so that it isn't shared with audiences who shouldn't have access to it. To protect this data, you can use Power Apps to create and enforce data policies that define the consumer connectors that specific business data can be shared with. For example, an organization that uses Power Apps might not want the business data stored in SharePoint to be automatically published to its Twitter feed.
+An organization's data is critical to its success. It needs to be readily available for decision making but also protected to prevent it from being shared with any audiences who aren't authorized. 
+
+To protect this data, you can use Power Apps to create and enforce data policies that define the consumer connectors that specific business data can be shared with. For example, an organization that uses Power Apps might not want the business data stored in SharePoint to be automatically published to its Twitter feed.
 
 To create, edit, or delete data policies, you must have either Environment Admin or Power Platform admin permissions. 
 
@@ -99,7 +101,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    <tr>
    <td width="20%"> Publisher</td>
-   <td width="80%">  Displays the company that publishes the connector. This value can be different from the service owner. For example, Microsoft can be the publisher of the Salesforce connector, but the underlying service is owned by Salesforce, not Microsoft.  </td>
+   <td width="80%">  Displays the company that publishes the connector. This value can be different from the service owner. For example, Microsoft can be the publisher of the Salesforce connector, but Salesforce owns the underlying service, not Microsoft.  </td>
    </tr>
    <tr>
    <td width="20%"> About</td>
@@ -120,11 +122,11 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    <tr>
    <td width="20%"> Non-business/<br />Default </td>
-   <td width="80%"> Connectors for non-sensitive data. Connectors in this group can't share data with connectors in other groups. Unassigned connectors will show up here by default. </td>
+   <td width="80%"> Connectors for non-sensitive data. Connectors in this group can't share data with connectors in other groups. Unassigned connectors show up here by default. </td>
    </tr>
    <tr>
    <td width="20%"> Blocked     </td>
-   <td width="80%"> Blocked connectors can't be used where this policy is applied. Unblockable connectors will be in Non-business by default.  </td>
+   <td width="80%"> Blocked connectors can't be used where this policy is applied. Unblockable connectors are in Non-business by default.  </td>
    </tr>
    </table>
 
@@ -252,7 +254,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    > [!div class="mx-imgBorder"] 
    > ![Review new policy.](media/dlp-new-policy-review-new.png "Review new policy")
 
-The policy is created and appears in the list of data policies. As a result of this policy, SharePoint and Salesforce apps can share data in non-test environments&mdash;such as production environments&mdash;because they're both part of the same **Business** data group. However, any connector that resides in the **Non-Business** data group&mdash;such as Outlook.com&mdash;won't share data with apps and flows by using SharePoint or Salesforce connectors. Facebook and Twitter connectors are altogether blocked from being used in any app or flow in non-test environments such as production or default environments. 
+The policy is created and appears in the list of data policies. As a result of this policy, SharePoint and Salesforce apps can share data in non-test environments&mdash;such as production environments&mdash;because they're both part of the same **Business** data group. However, any connector that resides in the **Non-Business** data group&mdash;such as Outlook.com&mdash;doesn't share data with apps and flows by using SharePoint or Salesforce connectors. Facebook and Twitter connectors are altogether blocked from being used in any app or flow in non-test environments such as production or default environments. 
 
 It's good practice for admins to share the list of data policies with their organization so that users are aware of the policies before they create apps.
 
@@ -283,7 +285,7 @@ Because no data policy is applied to test environments, apps and flows can use a
    | --------- | ----------- |
    | Name | The name of the policy. |
    | Scope | The type of policy, such as environment-level or tenant-level. |
-   | Applied to | The environment scope associated with the policy.<br>For an environment-level policy, this is single environment name associated with the policy. <br> For a tenant-level policy, this can be one of the following values:<br>- All environments<br>- All environments, except (_n_)<br>- (_n_) environments<br>- A single environment name |
+   | Applied to | The environment scope associated with the policy.<br>For an environment-level policy, this attribute is the single environment name associated with the policy. <br> For a tenant-level policy, it can be one of the following values:<br>- All environments<br>- All environments, except (_n_)<br>- (_n_) environments<br>- A single environment name |
    | Created by | The user who created the policy. |
    | Created (On) | The date on which the policy was created. |
    | Modified by | The user who modified the policy. |
@@ -299,7 +301,7 @@ Because no data policy is applied to test environments, apps and flows can use a
    > ![Edit a data policy.](media/dlp-edit-policy-new.png "Edit a data policy")
 
    > [!NOTE]
-   > Environment admins can't edit policies that were created by the tenant admin.
+   > Environment admins can't edit policies created by the tenant admin.
 
 1. Proceed through the steps described in [Walkthrough: Create a data policy](#walkthrough-create-a-data-policy), and then select **Update Policy**.
 
