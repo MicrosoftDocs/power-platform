@@ -20,7 +20,7 @@ ms.custom: sfi-image-nochange
 ---
 # Opt in to early access updates
 
-Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.  Each major release includes features that may affect the user experience.  The schedule is application-specific.  Check the [Release Plans](https://learn.microsoft.com/dynamics365/release-plans/) to view the feature release schedule for the applications you use.
+Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality. Each major release includes features that may affect the user experience. The schedule is application-specific. Check the [Release Plans](https://learn.microsoft.com/dynamics365/release-plans/) to view the feature release schedule for the applications you use.
 
 | Wave release | Early access typical range |
 |---|---|
@@ -29,7 +29,7 @@ Microsoft Power Platform and customer engagement apps teams deliver two [major r
 
 ## Changes to early access for 2026
 
-Early access opt-in has moved to [Release Channels]((/power-apps/maker/model-driven-apps/channel-overview).
+Early access opt-in has moved to [Release channels for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview).
 
 You have the choice to receive features on a monthly basis, or a semi-annual basis.
 - **Monthly** is the equivalent of opt-in.
@@ -37,7 +37,7 @@ You have the choice to receive features on a monthly basis, or a semi-annual bas
 
 These settings are persisted for your environment and no longer have to be updated every release wave. The legacy opt-in (**Manage** and **Update Now**) has been removed.
  
-For more information, see [Release Channel overview](/power-apps/maker/model-driven-apps/channel-overview) and [How to set channel](/power-apps/maker/model-driven-apps/channel-change)
+For more information, see [Release Channel overview](/power-apps/maker/model-driven-apps/channel-overview) and [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 
 ## How to get early access updates
 
