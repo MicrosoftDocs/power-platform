@@ -27,17 +27,17 @@ Microsoft Power Platform and customer engagement apps teams deliver two [major r
 | Wave 1 | February through May |
 | Wave 2 | July through September |
 
-## New! Changes to early access for 2026
+## Changes to early access for 2026
 
-> [!Important]
-> - Early access opt-in has moved to Release Channels.
-> - You have the choice to receive features on a monthly basis, or a semi-annual basis.
->   - "Monthly" is the equivalent of opt-in.
->   - "Semi-Annual" is the equivalent of recieving app changes in April and October.
->   - These settings are persisted for your environment and no longer have to be updated every release wave.
-> - The legacy opt-in ("Manage" and "Update Now") has been removed.
->   
-> For more information, see [Release Channel Overview](/power-apps/maker/model-driven-apps/channel-overview) and [How to set channel](/power-apps/maker/model-driven-apps/channel-change)
+Early access opt-in has moved to [Release Channels]((/power-apps/maker/model-driven-apps/channel-overview).
+
+You have the choice to receive features on a monthly basis, or a semi-annual basis.
+- **Monthly** is the equivalent of opt-in.
+- **Semi-Annual** is the equivalent of recieving app changes in April and October.
+
+These settings are persisted for your environment and no longer have to be updated every release wave. The legacy opt-in (**Manage** and **Update Now**) has been removed.
+ 
+For more information, see [Release Channel overview](/power-apps/maker/model-driven-apps/channel-overview) and [How to set channel](/power-apps/maker/model-driven-apps/channel-change)
 
 ## How to get early access updates
 
