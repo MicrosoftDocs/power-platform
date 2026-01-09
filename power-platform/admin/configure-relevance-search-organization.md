@@ -111,7 +111,6 @@ Individual users can't switch to [Quick Find search](/powerapps/user/quick-find)
 
 Take these steps to turn on Dataverse search:
 
-## [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a system administrator.
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -121,17 +120,8 @@ Take these steps to turn on Dataverse search:
 1. Under **Dataverse search**, select **On**.
 1. Select **Save** to apply the change.
 
-## [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a system administrator.
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings** .
-1. Expand **Product**, then select **Features**.
-1. Under **Dataverse search**, select **On**.
-1. Select **Save** to apply the change.
----
 
-When you turn on Dataverse search, you enable global search in all model-driven apps in that environment and allow generative AI experiences to work. 
+When you turn on Dataverse search, you allow global search in all model-driven apps in that environment and allow generative AI experiences to work. 
 
 > [!NOTE]
 > - You can't turn off Dataverse search in specific apps.
@@ -349,21 +339,12 @@ This section provides answers to frequently asked questions about Dataverse sear
 
 The **DataverseSearch** table (previously known as **RelevanceSearch**) reports on the storage consumed by Dataverse search at the environment level. Dataverse search is part of database storage consumption in the **Summary** and **Dataverse** tabs. You can also view Dataverse search in the **Environment** report in Power Platform admin center or **Capacity** report.
 
-## [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Capacity add-ons**.
 1. On the **Capacity** page, go to the **Dataverse** tab, select an environment, then select the **Chart** icon for details.
 1. In the **Licensing** pane, select **Dataverse**.
 1. On the **Licenses** page, go to the **Environments** tab, then select an environment to view.
-   
-## [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, expand **Resources**, then select **Capacity**.
-1. On the **Capacity** page, go to the **Dataverse** tab, select an environment, then select the **Chart** icon for details.
-1. In the navigation pane, expand **Billing**, then select **Licenses**.
-1. On the **Licenses** page, go to the **Environments** tab, then select an environment to view.
----
 
 We recommend turning on Dataverse search so users can enjoy a better search experience in model-driven apps with optimized, generative AI experiences. As an environment admin, you can opt out of this feature by turning if off. If Dataverse search is turned **Off**, generative AI experiences are limited for makers and end users.
 

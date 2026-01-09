@@ -26,7 +26,7 @@ With the introduction of [self-service purchases](/microsoft-365/commerce/subscr
 
 1. In the **Storage capacity, by source** tile, select **View self-service sources**.
 
-   :::image type="content" source="media/view-individual-sources.png" alt-text="View self-service sources.":::
+      :::image type="content" source="media/view-self-service-sources.png" alt-text="View self-service sources.":::
 
 ## View storage capacity as a Power Platform admin
 
