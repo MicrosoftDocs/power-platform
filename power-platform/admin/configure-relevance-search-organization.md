@@ -107,7 +107,7 @@ Individual users can't switch to [quick find search](/powerapps/user/quick-find)
 
 > [!NOTE]
 > - Dataverse search must be turned on to support lifecycle operations such as create, delete, backup, recover, copy, and reset.
-> - Dataverse search must be manually turned on in environments that don't have Dataverse search turned on, to support copy lifecycle operations between environments.
+> - Dataverse search must be manually turned on in environments to support copying lifecycle operations between environments.
 
 Take these steps to turn on Dataverse search:
 
@@ -119,7 +119,6 @@ Take these steps to turn on Dataverse search:
 1. Expand **Product**, then select **Features**.
 1. Under **Dataverse search**, select **On**.
 1. Select **Save** to apply the change.
-
 
 When you turn on Dataverse search, you allow global search in all model-driven apps in that environment and allow generative AI experiences to work. 
 
