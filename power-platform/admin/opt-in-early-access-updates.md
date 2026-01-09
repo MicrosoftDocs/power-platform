@@ -1,6 +1,6 @@
 ---
 title: Opt in to early access updates 
-description: Opt in to early access updates in Microsoft Poweropt-in-early-access-updates#early-access-availability Platform and Dynamics 365. 
+description: Leaern how to opt in to early access updates for Power Platform.
 author: paulda64
 ms.subservice: admin
 ms.author: paulda
@@ -33,7 +33,7 @@ Early access opt-in moved to [Release channels for your model-driven app](/power
 
 You have the choice to receive features on a monthly basis, or a semi-annual basis.
 - **Monthly** is the equivalent of opt-in.
-- **Semi-Annual** is the equivalent of recieving app changes in April and October.
+- **Semi-Annual** is the equivalent of receiving app changes in April and October.
 
 These settings are persisted for your environment and no longer have to be updated every release wave. The legacy opt-in (**Manage** and **Update Now**) options are removed.
  
@@ -41,7 +41,7 @@ For more information, see [Release Channel overview](/power-apps/maker/model-dri
 
 ## How to get early access updates
 
-1. Set your environment's channel to "Monthly".  [How to set channel](/power-apps/maker/model-driven-apps/channel-change)
+1. Set your environment's channel to **Monthly**.  see the [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change) article.
 2. Check the [Release Plans](/dynamics365/release-plans/) to see when features for your applications are scheduled for release. 
 
 ## Schedule  
@@ -82,7 +82,7 @@ The following checklist provides the general guidelines to help you prepare for 
 
 ### Does the environment database version number get updated if I choose "Monthly" vs. "Semi-Annual"?
 
-  No, the version number is not going to change. The setting only determines application feature visibilty. The platform and application versions are the same between across channels.
+  No, the version number isn't going to change. The setting only determines application feature visibility. The platform and application versions are the same between across channels.
 
 ### Does Microsoft provide a free sandbox environment at no charge for testing updates?
 
@@ -98,13 +98,13 @@ Create a [support ticket](https://dynamics.microsoft.com/support/). Include the 
 
 ### Can I skip or postpone an update?
 
-No. Deploymnets happen every week. The release channel is not a deployment, but a feature flag that turns on/off depending on your channel setting. To ensure you get the best quality of the new features and capabilities, all customers are required to update to the latest release as scheduled.
+No. Deployments happen every week. The release channel isn't a deployment, but a feature flag that turns on/off depending on your channel setting. To ensure you get the best quality of the new features and capabilities, all customers are required to update to the latest release as scheduled.
 
 ### What happens to the environments after a release wave becomes generally available?
 
 **Monthly** channel environments continue to receive updates and have monthly features enabled.
   
-**Semi-Annual** channel environments automatically are enabled to view the new features. It's based on regional location of your environment, see [General availability deployment](./general-availability-deployment.md)
+**Semi-Annual** channel environments automatically are enabled to view the new features. It's based on regional location of your environment. See [General availability deployment](./general-availability-deployment.md) for more information.
   
 Throughout a release wave, *ALL* environments are updated during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true).
   
