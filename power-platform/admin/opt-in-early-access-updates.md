@@ -54,7 +54,6 @@ For more information, see [Release Channel overview](/power-apps/maker/model-dri
 > [!NOTE]
 > To learn more about release schedule, see [release schedule and early access](/dynamics365/get-started/release-schedule).
 
-
 ## Prepare for a release wave
 
 The following checklist provides the general guidelines to help you prepare for a release wave.  These steps are not required, only optional.
@@ -91,30 +90,30 @@ The following checklist provides the general guidelines to help you prepare for 
 
 ### When will the updates be available for testing in the sandbox environment?
 
-  See [Early access availability](#early-access-availability).
+See [Early access availability](#early-access-availability).
 
 ### How do I report issues with updates?
 
-  Create a [support ticket](https://dynamics.microsoft.com/support/).  Include the name of the application to help route your issue.
+Create a [support ticket](https://dynamics.microsoft.com/support/).  Include the name of the application to help route your issue.
 
 ### Can I skip or postpone an update?
 
-  No. *Deploymnets happen every week.  The release channel is not a deployment, but a feature flag that turns on/off depending on your channel setting.  To ensure you get the best quality of the new features and capabilities, all customers are required to update to the latest release as scheduled.
+No. *Deploymnets happen every week.  The release channel is not a deployment, but a feature flag that turns on/off depending on your channel setting.  To ensure you get the best quality of the new features and capabilities, all customers are required to update to the latest release as scheduled.
 
 ### What happens to the environments after a release wave becomes generally available?
 
-  "Monthly" channel environments will continue to receive updates and have monthly features enabled.
+"Monthly" channel environments will continue to receive updates and have monthly features enabled.
   
-  "Semi-Annual" will automatically be enabled to view the new features.  It is based on regional location of your environment, see [General availability deployment](./general-availability-deployment.md)
+"Semi-Annual" will automatically be enabled to view the new features.  It is based on regional location of your environment, see [General availability deployment](./general-availability-deployment.md)
   
-  Throughout a release wave, *ALL* environments are updated during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true).
+Throughout a release wave, *ALL* environments are updated during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true).
   
-  See [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance).
+See [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance).
 
 ### Related content
 
-  [Dynamics 365 release schedule and early access ](/dynamics365/get-started/release-schedule)<br />
-  [Dynamics 365 and Microsoft Power Platform Release Plans ](/dynamics365/release-plans/)<br />
-  [Policies and communications](./policies-communications.md)
+[Dynamics 365 release schedule and early access ](/dynamics365/get-started/release-schedule)<br />
+[Dynamics 365 and Microsoft Power Platform Release Plans ](/dynamics365/release-plans/)<br />
+[Policies and communications](./policies-communications.md)
   
-  [!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
