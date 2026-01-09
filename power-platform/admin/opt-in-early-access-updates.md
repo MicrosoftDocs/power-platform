@@ -20,7 +20,7 @@ ms.custom: sfi-image-nochange
 ---
 # Opt in to early access updates
 
-Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality. Each major release includes features that may affect the user experience. The schedule is application-specific. Check the [Release Plans](https://learn.microsoft.com/dynamics365/release-plans/) to view the feature release schedule for the applications you use.
+Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality. Each major release includes features that may affect the user experience. The schedule is application-specific. Check the [Release Plans](/dynamics365/release-plans/) to view the feature release schedule for the applications you use.
 
 | Wave release | Early access typical range |
 |---|---|
@@ -41,8 +41,8 @@ For more information, see [Release Channel overview](/power-apps/maker/model-dri
 
 ## How to get early access updates
 
-1. Set your environment's channel to "Monthly".  [How to set channel](https://learn.microsoft.com/power-apps/maker/model-driven-apps/channel-change)
-2. Check the [Release Plans](https://learn.microsoft.com/dynamics365/release-plans/) to see when features for your applications are scheduled for release. 
+1. Set your environment's channel to "Monthly".  [How to set channel](/power-apps/maker/model-driven-apps/channel-change)
+2. Check the [Release Plans](/dynamics365/release-plans/) to see when features for your applications are scheduled for release. 
 
 ## Schedule  
 
@@ -64,10 +64,10 @@ The following checklist provides the general guidelines to help you prepare for 
 
 > [!NOTE]
 > If you don't have a sandbox copy of your production environment, you can [create a copy](copy-environment.md) in the Power Platform admin center.
-> You may be able to create the copy as an [Early Release environment](https://learn.microsoft.com/power-platform/admin/early-release), putting it first in line for new rollouts.
+> You may be able to create the copy as an [Early Release environment](early-release.md), putting it first in line for new rollouts.
 > This is also known as "First Release", "Station 1" or "Station FRE".
 
-3. Set the Release Channel to "Monthly".  [How to set channel](https://learn.microsoft.com/power-apps/maker/model-driven-apps/channel-change)
+3. Set the Release Channel to "Monthly".  [How to set channel](/power-apps/maker/model-driven-apps/channel-change)
 
 4. Validate that key scenarios work as expected in the sandbox environment after the update is completed.
    - Update the customizations in your applications, if any, to respond to the new capabilities as needed.
@@ -90,7 +90,7 @@ The following checklist provides the general guidelines to help you prepare for 
 
 ### When will the updates be available for testing in the sandbox environment?
 
-See [Early access availability](#early-access-availability).
+See [Early access availability](opt-in-early-access-updates.md#early-access-availability).
 
 ### How do I report issues with updates?
 
