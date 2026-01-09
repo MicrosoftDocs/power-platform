@@ -3,6 +3,7 @@ title: PowerShell support for Power Apps and Power Automate
 description: Learn about the PowerShell cmdlets and get a tutorial of how to install and run them.
 author: sericks007
 contributors:
+  - brsova
   - samathur
   - taiki-yoshida 
   - ChrisGarty
@@ -16,6 +17,7 @@ ms.author: sericks
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
+
 ---
 
 # PowerShell support for Power Apps and Power Automate
