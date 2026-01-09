@@ -114,6 +114,6 @@ See [Policies and communications](policies-communications.md#scheduled-system-up
 
 [Dynamics 365 release schedule and early access ](/dynamics365/get-started/release-schedule)<br />
 [Dynamics 365 and Microsoft Power Platform Release Plans ](/dynamics365/release-plans/)<br />
-[Policies and communications](./policies-communications.md)
+[Policies and communications](policies-communications.md)
   
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
