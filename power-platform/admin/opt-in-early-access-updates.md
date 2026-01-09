@@ -44,7 +44,7 @@ For more information, see [Release Channel overview](/power-apps/maker/model-dri
 1. Set your environment's channel to **Monthly**. For more information, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 1. Check the [Release Plans](/dynamics365/release-plans/) to see when features for your applications are scheduled for release. 
 
-# Schedule  
+## Schedule  
 
 - **Deployments** happen every week to update all environments, platforms, and applications.
 - **Feature visibility** happens on a monthly or semi-annual basis.
