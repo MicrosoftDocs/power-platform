@@ -6,7 +6,7 @@ ms.subservice: admin
 ms.author: paulda
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 1/8/2026
+ms.date: 01/09/2026
 search.audienceType: 
   - admin
 contributors:
@@ -22,12 +22,12 @@ ms.custom: sfi-image-nochange
 
 Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.  Each major release includes features that may affect the user experience.  The schedule is application-specific.  Check the [Release Plans](https://learn.microsoft.com/dynamics365/release-plans/) to view the feature release schedule for the applications you use.
 
-| Wave Release | Early Access Typical Range |
+| Wave release | Early access typical range |
 |---|---|
 | Wave 1 | February through May |
 | Wave 2 | July through September |
 
-## New!  Changes to early access for 2026...
+## New! Changes to early access for 2026
 
 > [!Important]
 > - Early access opt-in has moved to Release Channels.
