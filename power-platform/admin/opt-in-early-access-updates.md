@@ -44,7 +44,7 @@ For more information, see [Release Channel overview](/power-apps/maker/model-dri
 1. Set your environment's channel to **Monthly**. For more information, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 1. Check the [Release Plans](/dynamics365/release-plans/) to see when features for your applications are scheduled for release. 
 
-## Schedule  
+# Schedule  
 
 - **Deployments** happen every week to update all environments, platforms, and applications.
 - **Feature visibility** happens on a monthly or semi-annual basis.
@@ -90,7 +90,7 @@ No. You're responsible for creating a sandbox environment from a copy of the pro
 
 ### When are the updates available for testing in the sandbox environment?
 
-See [Early access availability](#early-access-availability).
+See [Opt in to early access updates](#opt-in-to-early-access-updates).
 
 ### How do I report issues with updates?
 
