@@ -3,7 +3,7 @@ title: View Power Automate activity logs in Microsoft Purview
 description: Learn how to access Power Automate activity logs in Microsoft Purview and explore what Power Automate activities you can monitor.
 author: EllenWehrle
 ms.topic: how-to
-ms.date: 11/16/2025
+ms.date: 01/09/2026
 ms.subservice: admin
 ms.author: grbarker
 ms.reviewer: ellenwehrle
@@ -18,14 +18,12 @@ You can view many Microsoft Power Automate activities in Microsoft Purview, such
 - connector calls by specific users and agents
 - flow runs or failures by specific users or agents
 
-You also have the ability to view activity logs within specific date ranges to gain insights.
-
-Regularly audit Microsoft Power Automate activities in Microsoft Purview to:
+You can also view activity logs within specific date ranges to gain insights. It's important to regularly audit Microsoft Power Automate activities in Microsoft Purview to:
 
 - maintain governance, compliance, and security
 - gain operational insights
-- identify and troubleshoot issues
-- mitigate failures.
+- identify and troubleshoot problems
+- mitigate failures
 
 This article covers prerequisites, how to access the logs in Microsoft Purview, and provides details about Power Automate events and schemas.
 
@@ -35,7 +33,7 @@ To view connector activity logs in Microsoft Purview, make sure you:
 
 - Review and complete the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
 - Confirm you're an admin who has a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Confirm either the *Audit Logs* or *View-Only Audit Logs* role is assigned to you in Microsoft Purview.
+- Are assigned either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview.
 
 Learn more:
 
@@ -50,7 +48,7 @@ Learn more:
 
 ## Explore Power Automate activities
 
-Logging takes place at the SDK layer, which means a single action can trigger multiple logged activities. This table lists a sample of user events you can monitor.
+The SDK layer handles logging, so a single action can trigger multiple logged activities. This table lists a sample of user events you can monitor.
 
 | Category | Event | Description |
 |-|-|-|
@@ -72,12 +70,12 @@ Schemas define which Power Automate fields are sent to the Microsoft Purview com
 
 |Field display name | Logical name | Type | Mandatory | Description|
 |-|-|-|-|-|
-|Date | CreationTime | Edm.Date | No | Date and time when the log was generated in UTC.|
+|Date | CreationTime | Edm.Date | No | Date and time when the log is generated in UTC.|
 |Flow details | FlowDetailsUrl | Edm. String | No | Link to the flow's details page.|
 |IP address | ClientIP | Edm.String | No | IP address of the user's device.|
 |ID | ID | Edm.Guid | No | A unique GUID for every row logged.|
 |Result status | ResultStatus | Edm.String | No | Status of the row logged.|
-|Organization ID | OrganizationId | Edm.Guid | Yes | A unique identifier of the organization from which the log was generated.|
+|Organization ID | OrganizationId | Edm.Guid | Yes | A unique identifier of the organization from which the log is generated.|
 |Operation | Operation | Edm.String | No | Name of an operation.|
 |Workload | Workload | Edm.String | No | Workload of an operation.|
 |User | UserKey | Edm.String | No | A unique identifier of the user in Microsoft Entra ID.|
