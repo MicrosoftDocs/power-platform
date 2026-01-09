@@ -78,15 +78,15 @@ The following checklist provides the general guidelines to help you prepare for 
 
 ### Does an environment, that previously opted in for the early access updates, automatically get the early access update of the new releases?
 
-  Yes.  "Monthly" release channel setting is persisted for your environment until you change it.
+Yes.  "Monthly" release channel setting is persisted for your environment until you change it.
 
 ### Does the environment database version number get updated if I choose "Monthly" vs. "Semi-Annual"?
 
-  No, the version number isn't going to change. The setting only determines application feature visibility. The platform and application versions are the same between across channels.
+No, the version number isn't going to change. The setting only determines application feature visibility. The platform and application versions are the same between across channels.
 
 ### Does Microsoft provide a free sandbox environment at no charge for testing updates?
 
-  No. You're responsible for creating a sandbox environment from a copy of the production environment for testing and validation, at your own cost.
+No. You're responsible for creating a sandbox environment from a copy of the production environment for testing and validation, at your own cost.
 
 ### When are the updates available for testing in the sandbox environment?
 
