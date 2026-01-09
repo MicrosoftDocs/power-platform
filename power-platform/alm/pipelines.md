@@ -103,6 +103,18 @@ A common setup example:
 | QA |  Developer | No |
 | Production |  Production | Yes |
 
+
+### Can I ensure pipeline targets are Managed Environments?
+
+**Yes.** Tenant admins can automatically convert pipeline target environments to Managed Environments, ensuring compliance with Microsoft standards.
+To enable, go to **Deployments** > **Settings** in the Power Platform admin center. Turn on the automatic Managed Environment setting for each pipeline host.
+ 
+ > [!IMPORTANT]
+ > Starting **February 2026**, Microsoft will start  enabling Managed Environments for any pipeline target environments that aren’t already enabled. Customers will be notified via Microsoft 365 Message center.
+ > It’s recommended to review and enable Managed Environments for all pipeline targets now. You can do this:
+ > - **Manually:** Enable [Managed Environments](https://learn.microsoft.com/power-platform/admin/managed-environment-enable)
+ > - **Automatically:** Configure the setting for new pipelines as described above.
+
 ### Can I configure approvals for deployments?
 
 Yes. See [delegated deployments](delegated-deployments-setup.md).
