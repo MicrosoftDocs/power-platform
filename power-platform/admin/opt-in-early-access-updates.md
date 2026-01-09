@@ -90,7 +90,7 @@ The following checklist provides the general guidelines to help you prepare for 
 
 ### When are the updates available for testing in the sandbox environment?
 
-See [Early access availability](opt-in-early-access-updates.md#early-access-availability).
+See [Early access availability](#early-access-availability).
 
 ### How do I report issues with updates?
 
