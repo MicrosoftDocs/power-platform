@@ -572,6 +572,8 @@
                       href: apps-to-allow.md
                 - name: Global Secure Access for agents (preview)
                   href: security/secure-web-ai-gateway-agents.md
+                - name: Role-based access control (RBAC) (preview)
+                  href: security/ppac-rbac.md
             - name: Compliance
               items:
                 - name: Compliance tools
