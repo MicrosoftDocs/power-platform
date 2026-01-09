@@ -1,6 +1,6 @@
 ---
 title: Opt in to early access updates 
-description: Leaern how to opt in to early access updates for Power Platform.
+description: Learn how to opt in to early access updates for Power Platform.
 author: paulda64
 ms.subservice: admin
 ms.author: paulda
