@@ -36,10 +36,8 @@ Microsoft Power Platform and customer engagement apps teams deliver two [major r
 >   - "Semi-Annual" is the equivalent of recieving app changes in April and October.
 >   - These settings are persisted for your environment and no longer have to be updated every release wave.
 > - The legacy opt-in ("Manage" and "Update Now") has been removed.
-  
-  > [!Note]
-  > For more information, see [Release Channel Overview](https://learn.microsoft.com/power-apps/maker/model-driven-apps/channel-overview) and [How to set channel](https://learn.microsoft.com/power-apps/maker/model-driven-apps/channel-change)
-
+>   
+> For more information, see [Release Channel Overview](/power-apps/maker/model-driven-apps/channel-overview) and [How to set channel](/power-apps/maker/model-driven-apps/channel-change)
 
 ## How to get early access updates
 
