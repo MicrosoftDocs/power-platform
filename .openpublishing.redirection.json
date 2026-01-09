@@ -1883,6 +1883,16 @@
       "source_path": "power-platform/admin/new-admin-center.md",
       "redirect_url": "/power-platform/admin/admin-documentation",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/add-remove-territory-members.md",
+      "redirect_url": "/power-platform/admin/create-edit-business-units",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/add-resources-site.md",
+      "redirect_url": "/power-platform/admin/view-manage-resources",
+      "redirect_document_id": false
     }
   ]
 }
