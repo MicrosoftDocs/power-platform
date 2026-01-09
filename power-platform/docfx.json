@@ -68,7 +68,7 @@
             "**.*": "power-platform"
          },
          "ms.date": {
-            "developer/cli/reference/**.md": "10/27/2025"
+            "developer/cli/reference/**.md": "01/07/2026"
          },
          "ms.subservice": {
             "power-fx/**/*.md": "power-fx",

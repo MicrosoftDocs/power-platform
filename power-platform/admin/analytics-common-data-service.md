@@ -23,20 +23,10 @@ Viewing metrics for your organization is now an improved experience. You no long
 
 To access these reports:
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, under **Products**, select **Dataverse**.
-1. View the Dataverse analytics options on the page. 
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, expand **Analytics**, then select **Dataverse**.
 1. View the Dataverse analytics options on the page.
-
----
 
 ## Required roles to view the reports
 

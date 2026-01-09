@@ -3,6 +3,7 @@ title: PowerShell support for Power Apps and Power Automate
 description: Learn about the PowerShell cmdlets and get a tutorial of how to install and run them.
 author: sericks007
 contributors:
+  - brsova
   - samathur
   - taiki-yoshida 
   - ChrisGarty
@@ -10,12 +11,13 @@ contributors:
 ms.reviewer: angieandrews
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/20/2025
+ms.date: 01/09/2026
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
+
 ---
 
 # PowerShell support for Power Apps and Power Automate
@@ -90,7 +92,7 @@ To run PowerShell cmdlets for app creators:
     Add-PowerAppsAccount -Username user@contoso.com -Password $pass
     ```
 
-1. Optionally, a specific endpoint can be targeted. The default endpoint is `prod`. If a user wants to run a PowerShell script targeting an environment in a non-production region, such as GCC, the `-Endpoint` parameter can be changed to `usgov` for GCC Moderate, or `usgovhigh` for GCC High, or `dod` for GCC DOD. The full list of endpoints supported is: "prod,preview,tip1,tip2,usgov,usgovhigh,dod,china".
+1. Optionally, a specific endpoint can be targeted. The default endpoint is `prod`. If a user wants to run a PowerShell script targeting an environment in a nonproduction region, such as GCC, the `-Endpoint` parameter can be changed to `usgov` for GCC Moderate, or `usgovhigh` for GCC High, or `dod` for GCC DOD. The full list of endpoints supported is: "prod,preview,tip1,tip2,usgov,usgovhigh,dod,china".
 
     ```powershell
     # An environment in another region, such as GCC, can be targeted using the -Endpoint parameter.
@@ -262,7 +264,7 @@ A Hero app appears at the top of the list in the Power Apps mobile player. There
 The pipe `|` character between two cmdlets takes the output of the first cmdlet and passes it as the input value of the second, if the function is written to accommodate the pipe.
 
 > [!NOTE]
-> An app must already be a featured app before it is changed to a Hero.
+> An app must already be a featured app before it's changed to a Hero.
 
 ### Display the number of apps each user owns
 
@@ -320,7 +322,7 @@ Changes the owner role of a Power App to the current user, and replaces the orig
 Get-AdminDeletedPowerAppsList -EnvironmentName 'EnvironmentName'
 ```
 
-This command displays all canvas apps recently deleted, as they might still be recovered.
+This command displays all canvas apps recently deleted, as they might still be recovered. The restorable duration is 28 days. Any app deleted after 28 days isn't returned in this list and can't be recovered.
 
 ### Recover a deleted canvas app
 
@@ -497,7 +499,7 @@ For technical details, see [Add-AdminFlowsToSolution](/powershell/module/microso
 Get-AdminFlowWithHttpAction -EnvironmentName <String>
 ```
 
-Lists flows with HTTP action(s).
+Lists flows with HTTP actions.
 
 |DisplayName  |FlowName  |EnvironmentName  |
 |---------|---------|---------|

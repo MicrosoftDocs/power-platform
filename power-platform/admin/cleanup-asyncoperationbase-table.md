@@ -80,8 +80,6 @@ There are three parameters to allow different retention periods to be set.
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-#### [New admin center](#tab/new)
- 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**. Then select an environment.
@@ -90,19 +88,6 @@ There are three parameters to allow different retention periods to be set.
 1. Select the checkbox for **Allow deletion service to delete system jobs**. 
 1. Select or enter a period in days for each type of system jobs, including **Successful jobs**, **Failed jobs**, and **Cancelled jobs**.
 1. Select **Save**.
-
-#### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
-1. Go to **Environments**
-1. Select an environment.
-1. Select **Settings**.
-1. Select **Audit and logs** > **Set retention policy for system job deletions (Preview)**.
-1. Select the checkbox for **Allow deletion service to delete system jobs**. 
-1. Enter a period in days for each type of system jobs, including **Successful jobs**, **Failed jobs**, and **Cancelled jobs**.
-1. Select **Save**.
-
----
 
 > [!NOTE]
 > This deletion service deletes the system jobs. Deleted system jobs no longer show up in the **All System jobs** or the **All Bulk Deletion System jobs** lists.
@@ -126,26 +111,12 @@ The bulk record deletion jobs show the history of system jobs that were run and 
 > [!NOTE]
 > This deletion service deletes the system jobs and deleted bulk deletion system jobs no longer show up in the **All System jobs** or the **All Bulk Deletion System jobs** lists.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Data management**, then select **Bulk deletion**.
-   
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Data management**, then select **Bulk deletion**.
-
-You can also access the **Bulk record deletion** from the Power Platform Environment Settings app. From the left navigation, select **Data Management** > **Bulk record deletion**.
-
----
 
 From the **Bulk Deletion** grid, use the view selector to show the completed, in-progress, pending, and recurring bulk deletion system jobs. 
 

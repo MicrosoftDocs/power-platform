@@ -4,7 +4,7 @@ description: Learn how to get a comprehensive, unified view of all agents and ap
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 10/22/2025
+ms.date: 12/10/2025
 ms.topic: concept-article
 ---
 
@@ -12,11 +12,11 @@ ms.topic: concept-article
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The Power Platform admin center now offers tenant administrators a comprehensive, unified view of all key resources&mdash;agents and apps&mdash;across their organization with Power Platform inventory. With this centralized inventory, administrators can effortlessly discover, search, filter, and sort by owner, creation date, region, and other key attributes, streamlining common administrative tasks.
+The Power Platform admin center now offers tenant administrators a comprehensive, unified view of all key resources&mdash;agents, apps, and flows&mdash;across their organization with Power Platform inventory. With this centralized inventory, administrators can effortlessly discover, search, filter, and sort their resources to streamline common administrative tasks.
 
 Power Platform inventory allows you to easily complete the following tasks:
 
-- **Spot your champions**: Quickly identify who's creating the most agents and apps so you can recognize, nurture, and empower your top innovators.
+- **Spot your champions**: Quickly identify who's creating the most resources so you can recognize, nurture, and empower your top innovators.
 
 - **Enforce compliance standards**: Effortlessly detect resources created in nonapproved regions to maintain adherence to organizational policies.
 
@@ -24,7 +24,7 @@ Power Platform inventory allows you to easily complete the following tasks:
 
 - **Prevent orphaned agents**: Proactively find resources owned by departing users to allow seamless ownership transfers and ensure business continuity.
 
-- **Accelerate support**: Instantly pinpoint that _needle in a haystack_ agent referenced in a support ticket to dramatically improve response times.
+- **Accelerate support**: Instantly pinpoint that _needle in a haystack_ resource referenced in a support ticket to dramatically improve response times.
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
@@ -32,15 +32,15 @@ Power Platform inventory allows you to easily complete the following tasks:
 
 The Power Platform inventory includes:
 
-- **Agents:** All agents created in Copilot Studio.
+- **Agents:** All agents created in Copilot Studio full, and all agents created in Agent Builder (Copilot Studio lite).
 
-- **Apps:** All apps created in Power Apps, including canvas apps, model-driven apps, and code apps.
+- **Apps:** All apps created in Power Apps (canvas, model-driven, code, and vibe) and in Microsoft 365 Copilot's App Builder agent.
 
-Other resource types, such as flows, are planned for future updates.
+- **Flows:** All agent flows created in Copilot Studio, all cloud flows created in Power Automate, and all workflows created in Microsoft 365 Copilot's Workflows agent.
 
 ## Key features
 
-- **Unified inventory**: Centralized view of all agents and apps.
+- **Unified inventory**: Centralized view of all resources.
 
 - **Fast updates**: Created, updated, or deleted resources appear within 15 minutes.
 
@@ -50,7 +50,7 @@ Other resource types, such as flows, are planned for future updates.
 
 - **Customizable columns**: Tailor your view by selecting which columns to display.
 
-- **Resource details**: Access detailed information for each app or agent.
+- **Resource details**: Access detailed information for each resource.
 
 - **Download**: Export your inventory to Excel for further analysis.
 
@@ -60,11 +60,13 @@ Power Platform inventory is available through multiple interfaces and APIs, allo
 
 ### The Power Platform admin center user interface
 
-- **Manage > Inventory**: The main inventory page provides a unified view of all supported agents and apps across your tenant.
+- **Manage > Inventory**: The main inventory page provides a unified view of all resources across your tenant.
 
-- **Manage > Power Apps > App Inventory tab**: This tab offers a focused view of your apps inventory, including canvas apps, model-driven apps, and code apps.
+- **Manage > Copilot Studio:** Agents (Agent Builder + Copilot Studio), agent flows, and workflows
 
-- **Manage > Copilot Studio:** This page offers a focused view of your agents created in Copilot Studio.
+- **Manage > Power Apps > App Inventory tab**: Canvas, model-driven, code, vibe, and App Builder apps
+
+- **Manage > Power Automate > Flow Inventory tab**: Cloud flows
 
 ### Programmatic and advanced access
 
@@ -84,23 +86,27 @@ Power Platform inventory data is also available programmatically, supporting adv
 
 More details on programmatic access and sample queries are provided in this article.
 
+## Access requirements
+
+To view the Power Platform inventory, you must hold one of the following tenant-wide administrative roles: Global Administrator, [Power Platform Administrator](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator), or [Dynamics 365 Administrator](/power-platform/admin/use-service-admin-role-manage-tenant#dynamics-365-administrator). If you do not have one of these roles, you will not be able to access the inventory.
+
 ## Apply filters and sorts
 
 Power Platform inventory lets you filter and sort across all resource data, using any column or attribute. You can combine multiple filters to zero in on exactly the resources you need, whether you're tracking down a specific app or analyzing trends across environments. As you refine your criteria, the total count of matching resources is always displayed directly above the resource table on the top-left, making it easy to gauge the size of your filtered dataset.
 
 For example, you can filter by:
 
-- **Environment type**: Select the **Environment type** column and select **Default**. You see all agents and apps in the default environment.
+- **Environment type**: Select the **Environment type** column and select **Default**. You see all resources in the default environment.
 
-- **Owner**: Select the **Owner** column and type the name of the person. You see all agents and apps owned by this person in the default environment.
+- **Owner**: Select the **Owner** column and type the name of the person. You see all resources owned by this person in the default environment.
 
-- **Creation date**: Select the **Created on** column and apply the date filters from January 2025 to today's date. You see all agents and apps owned by this person, in the default environment, that they created in the year 2025.
+- **Creation date**: Select the **Created on** column and apply the date filters from January 2025 to today's date. You see all resources owned by this person, in the default environment, that they created in the year 2025.
 
 To clear all filters and sorts, select any column and choose **Clear all filters**.
 
 ## Displaying more columns
 
-The inventory table provides the option to display more columns to help you better manage all your items. To customize displayed columns, complete the following steps.
+The inventory table provides the option to display more columns to help you better manage all your resources. To customize displayed columns, complete the following steps.
 
 1. Select the **Add or remove columns** icon next to the **Search** box.
 
@@ -108,13 +114,13 @@ The inventory table provides the option to display more columns to help you bett
 
 ## Search the inventory
 
-Quickly search for keywords across all entries currently loaded in the inventory table. The **Search** box is designed to help you find specific resources fast, but keep in mind that it only searches the items visible in the UI (up to 1,000 at a time). If your inventory exceeds this limit, apply more filters to narrow down the results and bring the resources you need into view.
+Quickly search for keywords across all entries currently loaded in the inventory table. The **Search** box is designed to help you find specific resources fast, but keep in mind that it only searches the resources visible in the UI (up to 1,000 at a time). If your inventory exceeds this limit, apply more filters to narrow down the results and bring the resources you need into view.
 
-## View agent, app, or environment details
+## View resource details
 
 - Select a resource, then select the **Details** option in the command bar.
 
-- Or select the resource's display name to be redirected to its details page in the Copilot Studio or Power Apps portal. **Note**: You need sufficient permission to access the resource details page. Without permission, you'll only see a **This link is broken** error.
+- Or select the resource's display name to be redirected to its details page in the Copilot Studio, Power Apps, or Power Automate portal. **Note**: You need sufficient permission to access the resource details page. Without permission, you'll only see a **This link is broken** error.
 
 - Select the environment name to view the environment details.
 
@@ -124,7 +130,9 @@ Quickly search for keywords across all entries currently loaded in the inventory
 
 - **Environment name**: Filtering by environment requires the full environment name. Partial matches or substrings aren't supported.
 
-- **_Modified on_ and _Last modified by_ columns**: These columns are currently nonfunctional for agents and must be populated with the **–** (dash) character.
+- **_Modified on_ and _Last modified by_ columns**: These columns are currently nonfunctional for agents and are populated with the **–** (dash) character.
+
+- **_Owner_ column**: This column for cloud flows and agent flows is currently populated with the user that created the flow, and isn't yet updated when the owner changes.
 
 - **Un-published model-driven apps:** Only published, model-driven apps are captured.
   
@@ -154,7 +162,6 @@ The following are example queries you can use with any of these interfaces.
 
 ```Kusto
 PowerPlatformResources
-
 | count
 ```
 
@@ -162,68 +169,51 @@ PowerPlatformResources
 
 ```Kusto
 PowerPlatformResources
-
-| summarize count() by type
-
-| order by count\_ desc
+| summarize resourceCount = count() by type
+| order by resourceCount
 ```
 
 ### Query 3: Counts by environment (inventory distribution across environments)
 
 ```Kusto
 PowerPlatformResources
-
-| extend pros = parse_json(properties)
-
-| extend environmentId = tostring(pros.environmentId)
-
-| summarize count() by environmentId
-
-| order by count\_ desc
+| extend properties = parse_json(properties)
+| extend environmentId = tostring(properties.environmentId)
+| summarize resourceCount = count() by environmentId
+| order by resourceCount desc
 ```
 
 ### Query 4: Counts by region (inventory distribution across regions)
 
 ```Kusto
 PowerPlatformResources
-
-| summarize count() by location
-
-| order by count\_ desc
+| summarize resourceCount = count() by location
+| order by resourceCount desc
 ```
 
 ### Query 5: Top owners by item count
 
 ```Kusto
 PowerPlatformResources
-
-| extend pros = parse_json(properties)
-
-| extend ownerId= tostring(pros.ownerId)
-
-| summarize count() by ownerId
-
-| order by count\_ desc
+| extend properties = parse_json(properties)
+| extend ownerId = tostring(properties.ownerId)
+| summarize resourceCount = count() by ownerId
+| order by resourceCount desc
 ```
 
 ### Query 6: Finding a single agent in the tenant
 
 ```Kusto
 PowerPlatformResources
-
 | where type == "microsoft.copilotstudio/agents"
-
-| where name == "0f9b5e26-a682-f011-b4cc-6045bd0390df"
+| where name == "[Enter the agent's ID]"
 ```
 
 ### Query 7: Items created in the past 24 hours
 
 ```Kusto
 PowerPlatformResources
-
-| extend pros = parse_json(properties)
-
-| extend createdAt= todatetime(pros.createdAt)
-
-| where createdAt \>= ago(24h)
+| extend properties = parse_json(properties)
+| extend createdAt = todatetime(properties.createdAt)
+| where createdAt >= ago(24h)
 ```

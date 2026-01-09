@@ -31,7 +31,7 @@ Although Bonsangue encourages his developers to use Power Platform wherever poss
 
 ## A streamlined time tracking solution
 
-One of the company’s most successful Power Platform projects is a time tracking solution for employees. Previously, frontline workers at John Cockerill submitted their hours on paper forms that required manual input into SAP. To streamline the process, the development team created two apps: a mobile app for employees to enter their time, and another one for supervisors to review their entries. They also set up read-only integration into SAP to give managers insight into data for reporting purposes without requiring them to sign in to SAP.
+One of the company's most successful Power Platform projects is a time tracking solution for employees. Previously, frontline workers at John Cockerill submitted their hours on paper forms that required manual input into SAP. To streamline the process, the development team created two apps: a mobile app for employees to enter their time, and another one for supervisors to review their entries. They also set up read-only integration into SAP to give managers insight into data for reporting purposes without requiring them to sign in to SAP.
 
 After a successful six-month trial period to build confidence in the new solution, the team moved to read/write access to SAP using a custom connector. SAP access removed the need to input data manually and resulted in fewer errors and missed deadlines. A related time tracking app for engineers followed, and both solutions are now being rolled out across other divisions in the company.
 
@@ -52,5 +52,6 @@ Successful apps are showcased in community meetings every two to three weeks. "M
 ## Related information
 
 - [Power Platform guidance documentation](/power-platform/guidance/)
-- [Power Automate guidance documentation](/power-automate/guidance/)
+- [Explore Power Platform and SAP integration](../../sap/explore/power-platform-and-SAP-integration.md)
 - [Best practices and guidance when using Dataverse](/power-apps/developer/data-platform/best-practices/)
+- [Power Automate guidance documentation](/power-automate/guidance/)

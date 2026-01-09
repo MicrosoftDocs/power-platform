@@ -5,8 +5,8 @@ ms.date: 11/24/2025
 ms.topic: concept-article
 author: marianaraujo 
 ms.subservice: admin
-ms.author: maaraujo
-ms.reviewer: sericks
+ms.author: ashi
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -20,6 +20,7 @@ ms.contributors:
 - ceian
 - ampatra
 - maraujo
+- swatim
 ms.custom:
 - NewPPAC
 - sfi-ga-nochange
@@ -251,8 +252,7 @@ Storage consumed by Dataverse search is reported at the environment-level as a t
 
 #### Dataverse search can also be monitored at the Dataverse Environment report in the Power Platform admin center
 
-- New admin center: Licensing > Dataverse > Environments tab (consumption per table reporting)
-- Classic admin center: Billing > Licenses > Dataverse > Environments tab (consumption per table reporting)
+The Dataverse Environment report is located at **Licensing** > **Dataverse** > **Environments** tab (consumption per table reporting).
 
 #### How much does the indexed Dataverse search data cost?
 

@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 07/15/2025
+ms.date: 12/09/2025
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -56,6 +56,8 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Use REST APIs to extend the functionality of canvas apps**](../reference-architectures/custom-connector-canvas.md) | When working with complex algorithms or multiple data sources, shift the logic from the canvas app to a RESTful API to keep formulas in your Power Apps canvas apps simple and move more complex functionality to the server. |
 | [**Use Dataverse as a data source for canvas apps​**](../reference-architectures/dataverse-canvas-app.md) | Learn how creating a Power Apps application that uses Dataverse as a data source helps build a more custom user experience. |
 | [**Use SQL Server with canvas apps​**](../reference-architectures/sqlserver-canvas-app.md) | Learn how to build and publish an enterprise-grade canvas app using SQL Server as a data source. |
+| [**Implement a scalable notification system with Power Platform**](../reference-architectures/scalable-notification-system.md) | Learn how to implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
+| **[Optimize the performance of canvas apps that require complex business logic](../reference-architectures/optimize-performance-canvas-apps.md)** | Learn how to optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
 
 ## Solution ideas
 
