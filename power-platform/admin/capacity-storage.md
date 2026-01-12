@@ -392,7 +392,7 @@ Because an admin creates custom Quick Find lookups in the org, these indexes can
 
 ### What is the DataverseSearch table and how can I reduce it?
 
-The **DataverseSearch** table (previously known as **RelevanceSearch**) stores data for the global search and generative AI experiences. It includes data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment and Copilot semantic indexes.
+The **DataverseSearch** table (previously known as **RelevanceSearch**) stores indexed data for the global search and generative AI experiences. It includes data from all searchable, retrievable, and filterable fields of the tables you indexed for your environment and Copilot semantic indexes.
 
 For more information, see [Managing Dataverse search](configure-relevance-search-organization.md#managing-dataverse-search).
 
@@ -440,10 +440,10 @@ All experiences that use Dataverse search become limited. For more information, 
     When you set Dataverse search to **On** after setting it to **Off**, the system immediately re-triggers all indexes across all enabled experiences for them to work accordingly, and Dataverse search costs resume.
 
 - **Selecting Default**:
-    When you set Dataverse search to **Default** after setting it to **Off**, the system only regenerates the indexes when triggered. Examples include when a Copilot Studio agent uses a file&mdash;such as a local file, OneDrive file, or SharePoint file or Dataverse table&mdash;or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
+    When you set Dataverse search to **Default** after setting it to **Off**, the system only regenerates the indexes when triggered. Examples include when a Copilot Studio agent uses a file&mdash;such as a local file, OneDrive file, or SharePoint file upload or Dataverse table&mdash;or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
 
 > [!NOTE]
-> You can't turn Dataverse search **On** or **Off** for different applications in the same environment. The status of the setting applies to all applications in the environment.
+> You can't turn Dataverse search **On** or **Off** for different applications in the same environment. The status of the setting applies to all applications in the environment that use Dataverse Search.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
 
