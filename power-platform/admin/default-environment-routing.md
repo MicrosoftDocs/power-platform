@@ -63,7 +63,7 @@ Environment routing is a tenant-level admin setting. Understand that:
 
 ## Turn on environment routing in the admin center
 
-The **Environment routing** setting is turned off by default and must be turned on using the Power Platform admin center&mdash;both the new admin center or the classic admin center&mdash.
+The **Environment routing** setting is turned off by default and must be turned on using the Power Platform admin center.
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).    
 1. In the navigation pane, select **Manage**.
