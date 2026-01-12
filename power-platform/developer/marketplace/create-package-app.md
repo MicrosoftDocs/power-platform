@@ -129,8 +129,6 @@ The final step is to add all the components that you created earlier into a sing
 
 1. Navigate to the folder that contains the package file, [Content_Types].xml, icon, license terms file (HTML), select them all, right-click and then select **Send to** > **Compressed (zipped) folder**.
 
-    :::image type="content" source="media/appsource-package.png" alt-text="Marketplace package":::
-
     > [!IMPORTANT]
     > You must follow the content structure precisely for your package as described here. Otherwise, your package will fail during certification. Some common issues that lead to certification failure are incorrect file names or a nested file structure.
 
