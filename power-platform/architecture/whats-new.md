@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 12/11/2025
+ms.date: 01/12/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
