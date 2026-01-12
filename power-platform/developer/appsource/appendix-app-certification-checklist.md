@@ -1,6 +1,6 @@
 ---
 title: "Appendix: App certification checklist (PowerApps) | Microsoft Docs"
-description: "The app certification checklist provides you information about the checks that your model-driven, canvas apps and flows have to go through before it can be published on AppSource."
+description: "The app certification checklist provides you information about the checks that your model-driven, canvas apps and flows have to go through before it can be published on Marketplace."
 ms.date: 04/03/2023
 ms.reviewer: pehecke
 ms.topic: checklist
@@ -27,7 +27,7 @@ The following checklist provides the list of validations performed by Microsoft 
 <td>Sanity Check</td>
 <td><ul>
 <li>Check for app registration type: Free, Trial or Contact me.</li>
-<li>Verify the submitted <a href="/powerapps/developer/data-platform/create-package-app-appsource">package</a> contains all the artifacts required to publish on AppSource.</li>
+<li>Verify the submitted <a href="/powerapps/developer/data-platform/create-package-app-appsource">package</a> contains all the artifacts required to publish on Marketplace.</li>
 <li>Download the end-to-end (E2E) functional document from <a href="https://partner.microsoft.com/dashboard">Partner Center</a> and validate if document is updated with functional scenarios and user/admin journey.</li>
 </ul>
 </td>
@@ -38,13 +38,13 @@ The following checklist provides the list of validations performed by Microsoft 
 <ul>
 <li>Code validation for canvas apps will be done through <a href="/powerapps/maker/canvas-apps/accessibility-checker">Accessibility Checker tool</a> in Power Apps to check for the following:
 <ul>
-<li>Static formula errors and warnings: If any issues found then certification team will share the feedback to resolve and resubmit to AppSource.</li>
+<li>Static formula errors and warnings: If any issues found then certification team will share the feedback to resolve and resubmit to Marketplace.</li>
 <li>Runtime errors: May occur once the app is opened in Run mode to view. Any issues found will be reported through email.</li>
 <li>Accessibility errors and warnings: All Accessibility errors should be resolved as per Solution Checker guidelines.</li>
 </ul></li>
 <li>Code Validation for Dataverse solution will be done utilizing <a href="/power-platform/alm/checker-api/overview">Power Apps Checker</a>.</li>
 <li>Issues reported from Power Apps Checker will be manually validated for correctness and false positive issues will be reduced to low severity.</li>
-<li>The quality of the solution and packages are validated against the AppSource certification <a href="/power-platform/alm/checker-api/retrieve-rulesets">ruleset</a>. 
+<li>The quality of the solution and packages are validated against the Marketplace certification <a href="/power-platform/alm/checker-api/retrieve-rulesets">ruleset</a>. 
 <li>Generated report is shared with the publisher through email.</li>
 </ul>
 </td>
@@ -75,7 +75,7 @@ The following checklist provides the list of validations performed by Microsoft 
 <ul>
 <li>Check whether canvas app connects to any external data source or connections that require access, and proper connection details to be shared in E2E document.</li>
 <li>Check canvas app connects to any external connections out of Power Apps connectors.</li>
-<li>Check any custom code provided inside Package Deployer. Validate the code before approving the app to AppSource.</li>
+<li>Check any custom code provided inside Package Deployer. Validate the code before approving the app to Marketplace.</li>
 <li>Manually validate the code to see if the custom code is retrieving any customer data from target environment.</li>
 <li>Publisher can run code in their package as part of deployment.</li>
 <li>Publisher can access anything that the deploying customer can access inside the Dataverse instance whwre the deployment is happening.</li>

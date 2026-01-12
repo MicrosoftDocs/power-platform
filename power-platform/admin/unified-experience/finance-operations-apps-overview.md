@@ -94,7 +94,7 @@ The following table lists features from Lifecycle Services that aren't implement
 | Organization users | No | Microsoft 365 admin center | 
 | Translation service | No | [Dynamics translation connector](/connectors/dynamicstranslations/) |
 | Asset library | No | Store software packages in Azure DevOps and directly import to Dataverse. Database backups aren't provided for offline use. |
-| Solution management | No | Microsoft AppSource | 
+| Solution management | No | Microsoft Marketplace | 
 | Build environments | No | Microsoft Hosted Agents in Azure DevOps |
 | Alert service | No | Create a support ticket. | 
 | Business process modeler | No | Business process catalog |

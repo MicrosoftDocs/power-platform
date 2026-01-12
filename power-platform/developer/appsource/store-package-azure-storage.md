@@ -1,6 +1,6 @@
 ---
-title: "Step 4: Store your AppSource Package on Azure Storage and generate a URL with SAS key | Microsoft Docs" 
-description: "To maintain security of your files, all app developers must store their AppSource package file in a Microsoft Azure Blob storage account, and use a Shared Access Signature (SAS) key to share the package file. Your package file is retrieved from your Azure Storage location for certification, and then for AppSource trials."
+title: "Step 4: Store your Marketplace Package on Azure Storage and generate a URL with SAS key | Microsoft Docs" 
+description: "To maintain security of your files, all app developers must store their Marketplace package file in a Microsoft Azure Blob storage account, and use a Shared Access Signature (SAS) key to share the package file. Your package file is retrieved from your Azure Storage location for certification, and then for Marketplace trials."
 ms.date: 04/03/2023
 ms.reviewer: pehecke
 ms.topic: how-to
@@ -11,11 +11,11 @@ search.audienceType:
   - developer
 ms.custom: sfi-image-nochange
 ---
-# Step 4: Store your AppSource Package on Azure Storage and generate a URL with SAS key
+# Step 4: Store your Marketplace Package on Azure Storage and generate a URL with SAS key
 
 Microsoft Azure Storage is a Microsoft-managed cloud service that provides storage that is highly available, secure, durable, scalable, and redundant. More information: [Introduction to Microsoft Azure Storage](/azure/storage/common/storage-introduction).
 
-To maintain security of your files, all app developers must store their AppSource package file in a Microsoft Azure Blob storage account, and use a Shared Access Signature (SAS) key to share the package file. Your package file is retrieved from your Azure Storage location for certification, and then for AppSource trials.
+To maintain security of your files, all app developers must store their Marketplace package file in a Microsoft Azure Blob storage account, and use a Shared Access Signature (SAS) key to share the package file. Your package file is retrieved from your Azure Storage location for certification, and then for Marketplace trials.
 
 ## Before you upload your package
 
@@ -47,13 +47,13 @@ To upload your package to Azure Blob storage:
 
 1. Start Azure Storage Explorer on your computer, and connect to your Azure Storage account by signing in using the same account with which you created your Azure Storage account.
 
-1. In Azure Storage Explorer, select the newly created container, and then select **Upload** > **Upload Files** to upload the app source package that you created in [Step 3: Create an AppSource package for your app](create-package-app.md). 
+1. In Azure Storage Explorer, select the newly created container, and then select **Upload** > **Upload Files** to upload the app source package that you created in [Step 3: Create an Marketplace package for your app](create-package-app.md). 
 
    :::image type="content" source="media/appsource-storageaccount-pic5.png" alt-text="Upload the app source package.":::
 
-1. Browse to the AppSource package file on your computer, and select to upload it.
+1. Browse to the Marketplace package file on your computer, and select to upload it.
 
-1. Right-click on the uploaded AppSource package file, and select **Get Shared Access Signature**.
+1. Right-click on the uploaded Marketplace package file, and select **Get Shared Access Signature**.
 
    :::image type="content" source="media/appsource-storageaccount-pic6.png" alt-text="Selecting Shared Access Signature":::
 

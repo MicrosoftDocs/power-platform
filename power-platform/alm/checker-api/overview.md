@@ -20,7 +20,7 @@ search.audienceType:
 ---
 # Use the Power Apps checker web API
 
-The Power Apps checker web API provides a mechanism to run static analysis checks against customizations and extensions to the Microsoft Dataverse platform. It's available for makers and developers to perform rich static analysis checks on their solutions against a set of best practice rules to quickly identify problematic patterns. The service provides the logic for the [solution checker feature](/powerapps/maker/common-data-service/use-powerapps-checker) in the Power Apps maker [portal](https://make.powerapps.com) and is included as part of the automation for [applications submitted to AppSource](/powerapps/developer/common-data-service/publish-app-appsource). Interacting with the service directly in this manner allows for analysis of solutions that are included as part of on-premises (all supported versions) and online environments.
+The Power Apps checker web API provides a mechanism to run static analysis checks against customizations and extensions to the Microsoft Dataverse platform. It's available for makers and developers to perform rich static analysis checks on their solutions against a set of best practice rules to quickly identify problematic patterns. The service provides the logic for the [solution checker feature](/powerapps/maker/common-data-service/use-powerapps-checker) in the Power Apps maker [portal](https://make.powerapps.com) and is included as part of the automation for [applications submitted to Marketplace](/powerapps/developer/common-data-service/publish-app-appsource). Interacting with the service directly in this manner allows for analysis of solutions that are included as part of on-premises (all supported versions) and online environments.
 
 For information about using the checker service from PowerShell code, refer to [Work with solutions using PowerShell](../powershell-api.md).
 
@@ -123,9 +123,9 @@ Rulesets can have one or more rules with no limit. A rule can be in no or multip
 
 The solution checker ruleset contains a set of impactful rules that have limited chances for false positives. If running analysis against an existing solution, it's recommended that you start with this ruleset. This ruleset is used by the [solution checker feature](/powerapps/maker/common-data-service/use-powerapps-checker).
 
-### AppSource certification ruleset
+### Marketplace certification ruleset
 
-When publishing applications on AppSource, you must get your application certified. [Applications published on AppSource](/powerapps/developer/common-data-service/publish-app-appsource) are required to meet a high quality standard. The AppSource certification ruleset contains the rules that are part of the solution checker ruleset, plus other rules to ensure only high quality applications are published on the store. Some of AppSource certification rules are more prone to false positives and may require more attention to resolve.
+When publishing applications on Marketplace, you must get your application certified. [Applications published on Marketplace](/powerapps/developer/common-data-service/publish-app-appsource) are required to meet a high quality standard. The Marketplace certification ruleset contains the rules that are part of the solution checker ruleset, plus other rules to ensure only high quality applications are published on the store. Some of Marketplace certification rules are more prone to false positives and may require more attention to resolve.
 
 <a name="bkmk_tenant"></a>
 

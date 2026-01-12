@@ -79,7 +79,7 @@ If you see any error saying, "Unable to write," use the following steps to insta
 
 1. Go to [Power Apps](https://make.powerapps.com) and select the target environment.
 1. Select **Solutions**.
-1. Select **Open AppSource**.
+1. Select **Open Marketplace**.
 1. In the search box, enter **Virtual**.
 1. Locate the **Finance and Operations Virtual Entity** solution, and then select **Get it now**.
 1. Follow the on-screen prompts to install this solution into your environment.

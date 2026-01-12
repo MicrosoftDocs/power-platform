@@ -18,13 +18,13 @@ contributors:
 
 This article is related to the license management capability that Microsoft provides for ISVs to manage and enforce licenses for their products. More information: [ISV app license management](/azure/marketplace/isv-app-license) 
 
-This article outlines how to add licensing information to a Microsoft Dataverse solution, package it, and upload the solution zip file to Microsoft AppSource.  More information: [Step 3: Create an AppSource package for your app](create-package-app.md).
+This article outlines how to add licensing information to a Microsoft Dataverse solution, package it, and upload the solution zip file to Microsoft Marketplace.  More information: [Step 3: Create an Marketplace package for your app](create-package-app.md).
 
 The following steps are required to add license information to your solution:
 
 - Clone existing solution.
 - Use Microsoft Power Platform CLI to add license information to the solution.  
-- Build the solution, package it, and upload the zip file to AppSource.
+- Build the solution, package it, and upload the zip file to Marketplace.
 
 ## Download the latest version of Microsoft Power Platform CLI  
 
@@ -116,7 +116,7 @@ To add the license information from the CSV files (created above) to the solutio
    - The **ServicePlans.xml** file contains the plan definition information from the plan definition file.
    - The **ServicePlansAppModules.xml** file contains the plan mapping information from the plan mapping file.
  
-## Build the solution and create an AppSource package
+## Build the solution and create an Marketplace package
 
 1. To create the solution zip file, execute the MSBuild command shown below from the project folder. MSBuild is included in Visual Studio installations.
 
@@ -132,7 +132,7 @@ To add the license information from the CSV files (created above) to the solutio
 
     You may delete the imported solution from the environment afterwards since it is no longer needed. More information: [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions), [Export solutions](/power-apps/maker/data-platform/export-solutions)
 
-1. To create the AppSource package, see [Step 3: Create an AppSource package for your app](create-package-app.md).
+1. To create the Marketplace package, see [Step 3: Create an Marketplace package for your app](create-package-app.md).
 
 ## See also
 
