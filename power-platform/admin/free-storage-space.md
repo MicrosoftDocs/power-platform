@@ -549,8 +549,8 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 Tables and table fields enabled for Dataverse search affect the database storage capacity.
 
-- To revise the list of tables selected for Dataverse search results, see [Select entities for Dataverse search](configure-relevance-search-organization.md#select-tables-for-dataverse-search).
-- To revise the list of fields selected for each table for Dataverse search results, see [Select searchable fields and filters for each table](configure-relevance-search-organization.md#select-searchable-fields-and-filters-for-each-table).
+- To revise the list of tables selected for Dataverse search results, see [Select tables for Dataverse search's global search](configure-relevance-search-organization.md#select-tables-for-dataverse-searchs-global-search).
+- To revise the list of fields selected for each table for Dataverse search results, see [Select searchable fields and filters for each table for global search](configure-relevance-search-organization.md#select-searchable-fields-and-filters-for-each-table-for-global-search).
 
 ### Method 12: Remove unrequired data from activity tables
 
