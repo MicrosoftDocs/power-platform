@@ -518,10 +518,10 @@ No, admins can select specific environments to allocate capacity.
 
 ### Related information
 
-[Add Microsoft Dataverse storage capacity](add-storage.md)
-[Capacity add-ons](capacity-add-on.md)
-[Automatic tuning in Azure SQL Database](/azure/sql-database/sql-database-automatic-tuning)
-[What's new in storage](whats-new-storage.md)
-[Free up storage space](free-storage-space.md) <br />
+- [Add Microsoft Dataverse storage capacity](add-storage.md)
+- [Capacity add-ons](capacity-add-on.md)
+- [Automatic tuning in Azure SQL Database](/azure/sql-database/sql-database-automatic-tuning)
+- [What's new in storage](whats-new-storage.md)
+- [Free up storage space](free-storage-space.md) <br />
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
