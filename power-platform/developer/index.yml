@@ -73,7 +73,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Publish your app on Marketplace
-            url: appsource/publish-app.md
+            url: marketplace/publish-app.md
 
   # Card
   - title: Tools for Developers

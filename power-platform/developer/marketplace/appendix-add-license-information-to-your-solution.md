@@ -18,7 +18,7 @@ contributors:
 
 This article is related to the license management capability that Microsoft provides for ISVs to manage and enforce licenses for their products. More information: [ISV app license management](/azure/marketplace/isv-app-license) 
 
-This article outlines how to add licensing information to a Microsoft Dataverse solution, package it, and upload the solution zip file to Microsoft Marketplace.  More information: [Step 3: Create an Marketplace package for your app](create-package-app.md).
+This article outlines how to add licensing information to a Microsoft Dataverse solution, package it, and upload the solution zip file to Microsoft Marketplace.  More information: [Step 3: Create a Marketplace package for your app](../marketplace/create-package-app.md).
 
 The following steps are required to add license information to your solution:
 
@@ -116,7 +116,7 @@ To add the license information from the CSV files (created above) to the solutio
    - The **ServicePlans.xml** file contains the plan definition information from the plan definition file.
    - The **ServicePlansAppModules.xml** file contains the plan mapping information from the plan mapping file.
  
-## Build the solution and create an Marketplace package
+## Build the solution and create a Marketplace package
 
 1. To create the solution zip file, execute the MSBuild command shown below from the project folder. MSBuild is included in Visual Studio installations.
 
@@ -132,9 +132,9 @@ To add the license information from the CSV files (created above) to the solutio
 
     You may delete the imported solution from the environment afterwards since it is no longer needed. More information: [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions), [Export solutions](/power-apps/maker/data-platform/export-solutions)
 
-1. To create the Marketplace package, see [Step 3: Create an Marketplace package for your app](create-package-app.md).
+1. To create the Marketplace package, see [Step 3: Create a Marketplace package for your app](../marketplace/create-package-app.md).
 
 ## See also
 
-[Step 2: Create a managed solution for your app](create-solution-app.md)<br />
-[Appendix: App certification checklist](appendix-app-certification-checklist.md)
+[Step 2: Create a managed solution for your app](../marketplace/create-solution-app.md)<br />
+[Appendix: App certification checklist](../marketplace/appendix-app-certification-checklist.md)

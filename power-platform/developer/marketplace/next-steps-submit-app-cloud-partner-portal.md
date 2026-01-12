@@ -16,10 +16,10 @@ Your app is ready for submission after completing steps 1-4.
 
 Sign in to [Partner Center](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/azureisv) to [create an offer](/azure/marketplace/dynamics-365-customer-engage-offer-setup) and submit your app.
 
-All apps that are submitted to be listed on Marketplace go through a certification process. For information about the checks done in the certification process, see [Appendix: App certification checklist](appendix-app-certification-checklist.md)
+All apps that are submitted to be listed on Marketplace go through a certification process. For information about the checks done in the certification process, see [Appendix: App certification checklist](../marketplace/appendix-app-certification-checklist.md)
 
 ## See also
 
 [Overview of the Commercial Marketplace portal in Partner Center](/azure/marketplace/partner-center-portal/commercial-marketplace-overview)<br />
-[Publish your app on Marketplace](publish-app.md)<br />
+[Publish your app on Marketplace](../marketplace/publish-app.md)<br />
 [Microsoft Marketplace](https://marketplace.microsoft.com)

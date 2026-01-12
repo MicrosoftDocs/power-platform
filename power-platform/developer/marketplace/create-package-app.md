@@ -1,6 +1,6 @@
 ---
-title: "Step 3: Create an Marketplace package for your app | Microsoft Docs"
-description: "Learn about how to create an Marketplace package (.zip file) to include your solution and demo data files along with other required files."
+title: "Step 3: Create a Marketplace package for your app | Microsoft Docs"
+description: "Learn about how to create a Marketplace package (.zip file) to include your solution and demo data files along with other required files."
 ms.date: 05/22/2023
 ms.reviewer: pehecke
 ms.topic: how-to
@@ -10,9 +10,9 @@ ms.subservice: developer
 search.audienceType: 
   - developer
 ---
-# Step 3: Create an Marketplace package for your app
+# Step 3: Create a Marketplace package for your app
 
-You must create an Marketplace package (.zip file) to include your solution and demo data files along with other required files. An Marketplace package consists of the following files:
+You must create a Marketplace package (.zip file) to include your solution and demo data files along with other required files. a Marketplace package consists of the following files:
 
 |File|Description|
 |--|--|
@@ -27,7 +27,7 @@ You must create an Marketplace package (.zip file) to include your solution and 
 
 A package lets you bundle and deploy multiple files related to your app at once. 
 
-1. Create a Dynamics 365 package to include the solution and configuration data files that you created in [Step 2: Create a managed solution for your app](create-solution-app.md). A package can also contain custom code that can run before, while, or after the package is deployed to the Microsoft Dataverse instance. For more information about creating a package file, see [Create packages for the Package Deployer](/power-platform/alm/package-deployer-tool).
+1. Create a Dynamics 365 package to include the solution and configuration data files that you created in [Step 2: Create a managed solution for your app](../marketplace/create-solution-app.md). A package can also contain custom code that can run before, while, or after the package is deployed to the Microsoft Dataverse instance. For more information about creating a package file, see [Create packages for the Package Deployer](/power-platform/alm/package-deployer-tool).
 
     After you have created a package, your package will consist of the following things:
 
@@ -123,7 +123,7 @@ Here is a description of the elements in the **Input.xml** file.
 > [!IMPORTANT]
 > For the `SupportedCountries` element, ensure not to have any spaces and new line keywords between the country codes.
 
-## Add the items to an Marketplace package
+## Add the items to a Marketplace package
 
 The final step is to add all the components that you created earlier into a single compressed (zip) file, which will be your app source package.
 
@@ -138,4 +138,4 @@ The final step is to add all the components that you created earlier into a sing
  
 
 > [!div class="nextstepaction"]
-> [Step 4: Store your Marketplace Package on Azure Storage and generate a URL with SAS key](store-package-azure-storage.md)
+> [Step 4: Store your Marketplace Package on Azure Storage and generate a URL with SAS key](../marketplace/store-package-azure-storage.md)

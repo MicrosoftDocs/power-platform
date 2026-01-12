@@ -1858,6 +1858,51 @@
       "source_path": "power-platform/admin/add-resources-site.md",
       "redirect_url": "/power-platform/admin/view-manage-resources",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/developer/marketplace/appendix-add-license-information-to-your-solution.md",
+      "redirect_url": "../marketplace/appendix-add-license-information-to-your-solution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/developer/marketplace/appendix-app-certification-checklist.md",
+      "redirect_url": "../marketplace/appendix-app-certification-checklist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/developer/marketplace/appendix-app-design-best-practices-checklist.md",
+      "redirect_url": "../marketplace/appendix-app-design-best-practices-checklist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/developer/marketplace/create-package-app.md",
+      "redirect_url": "../marketplace/create-package-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/developer/marketplace/create-solution-app.md",
+      "redirect_url": "../marketplace/create-solution-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/developer/marketplace/next-steps-submit-app-cloud-partner-portal.md",
+      "redirect_url": "../marketplace/next-steps-submit-app-cloud-partner-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/developer/marketplace/publish-app.md",
+      "redirect_url": "../marketplace/publish-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/developer/marketplace/register-microsoft-partner-network.md",
+      "redirect_url": "../marketplace/register-microsoft-partner-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/developer/marketplace/store-package-azure-storage.md",
+      "redirect_url": "../marketplace/store-package-azure-storage",
+      "redirect_document_id": false
     }
   ]
 }

@@ -47,7 +47,7 @@ For detailed information about using the Configuration Migration tool to create 
 
 You will now have a managed solution file (example: *SampleSolution.zip*) and optionally a demo data file (example: *SampleData.zip*) for your app.
 
-**Optional licensing information:** If you wish to add licensing information to your solution, see [Appendix: Add licensing information to your solution](appendix-add-license-information-to-your-solution.md)
+**Optional licensing information:** If you wish to add licensing information to your solution, see [Appendix: Add licensing information to your solution](../marketplace/appendix-add-license-information-to-your-solution.md)
 
 > [!div class="nextstepaction"]
-> [Step 3: Create an Marketplace package for your app](create-package-app.md)
+> [Step 3: Create a Marketplace package for your app](../marketplace/create-package-app.md)

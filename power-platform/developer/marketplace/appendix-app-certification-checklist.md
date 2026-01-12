@@ -13,7 +13,7 @@ search.audienceType:
 # Appendix: App certification checklist
 
 
-The following checklist provides the list of validations performed by Microsoft during the certification process after you [submit](next-steps-submit-app-cloud-partner-portal.md) your app.
+The following checklist provides the list of validations performed by Microsoft during the certification process after you [submit](../marketplace/next-steps-submit-app-cloud-partner-portal.md) your app.
 
 <table>
 <tbody>

@@ -18,13 +18,13 @@ Publish your app on [Microsoft Marketplace](https://marketplace.microsoft.com) s
 
 Use the following steps to prepare for submitting your app to be listed on Microsoft Marketplace:
 
-> [Step 1: Create a Microsoft Partner Center account](register-microsoft-partner-network.md)
+> [Step 1: Create a Microsoft Partner Center account](../marketplace/register-microsoft-partner-network.md)
 > 
-> [Step 2: Create a managed solution for your app](create-solution-app.md)
+> [Step 2: Create a managed solution for your app](../marketplace/create-solution-app.md)
 > 
-> [Step 3: Create an Marketplace package for your app](create-package-app.md)
+> [Step 3: Create a Marketplace package for your app](../marketplace/create-package-app.md)
 > 
-> [Step 4: Store your package on Azure Storage](store-package-azure-storage.md)
+> [Step 4: Store your package on Azure Storage](../marketplace/store-package-azure-storage.md)
 
 ## Submit your app on Partner Center
 
@@ -32,8 +32,8 @@ Once your app is ready for submission, you use the [Partner Center](https://part
   
 ## Checklists
 
-- [App design best practices](appendix-app-design-best-practices-checklist.md): Use this checklist to evaluate your app design to provide the best and consistent user experience.
-- [App certification](appendix-app-certification-checklist.md): Provides information about the checks done during the app certification process after you submit your app for publishing on Marketplace.
+- [App design best practices](../marketplace/appendix-app-design-best-practices-checklist.md): Use this checklist to evaluate your app design to provide the best and consistent user experience.
+- [App certification](../marketplace/appendix-app-certification-checklist.md): Provides information about the checks done during the app certification process after you submit your app for publishing on Marketplace.
   
 ### See also
 

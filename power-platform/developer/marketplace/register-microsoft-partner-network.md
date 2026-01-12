@@ -17,7 +17,7 @@ If you are not already a member of the Microsoft Partner Center, you must become
 You must be a member of Partner Center to publish apps on Marketplace.
 
 > [!div class="nextstepaction"]
-> [Step 2: Create a managed solution for your app](create-solution-app.md)
+> [Step 2: Create a managed solution for your app](../marketplace/create-solution-app.md)
 
 ### See also 
 
