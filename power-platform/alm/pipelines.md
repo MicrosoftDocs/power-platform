@@ -112,7 +112,7 @@ To enable, go to **Deployments** > **Settings** in the Power Platform admin cent
  > [!IMPORTANT]
  > Starting **February 2026**, Microsoft will start  enabling Managed Environments for any pipeline target environments that aren’t already enabled. Customers will be notified via Microsoft 365 Message center.
  > It’s recommended to review and enable Managed Environments for all pipeline targets now. You can do this:
- > - **Manually:** Enable [Managed Environments](https://learn.microsoft.com/power-platform/admin/managed-environment-enable)
+ > - **Manually:** See enable [Managed Environments](../admin/managed-environment-enable.md).
  > - **Automatically:** Configure the setting for new pipelines as described above.
 
 ### Can I configure approvals for deployments?
