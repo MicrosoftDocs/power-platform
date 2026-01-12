@@ -58,6 +58,7 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Use SQL Server with canvas apps​**](../reference-architectures/sqlserver-canvas-app.md) | Learn how to build and publish an enterprise-grade canvas app using SQL Server as a data source. |
 | [**Implement a scalable notification system with Power Platform**](../reference-architectures/scalable-notification-system.md) | Learn how to implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
 | **[Optimize the performance of canvas apps that require complex business logic](../reference-architectures/optimize-performance-canvas-apps.md)** | Learn how to optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
+| **[Use Copilot Studio agents in model-driven apps](../reference-architectures/contextual-ai-model-driven-app.md)** | Learn how to integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
 
 ## Solution ideas
 

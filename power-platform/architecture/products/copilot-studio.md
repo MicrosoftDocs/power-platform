@@ -18,6 +18,8 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 
 - **Key concepts**: Learn about key architecture concepts that help you build robust, efficient, and maintainable solutions with Copilot Studio.
 
+- **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Power Apps.
+
 - **Solution ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Copilot Studio.
 
 ## Key concepts
@@ -38,6 +40,7 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 | --- | --- |
 | **[Use an autonomous agent in Copilot Studio for document processing](../reference-architectures/document-processing-agent.md)** | Learn how to build an autonomous agent in Copilot Studio for document processing. |
 | **[Extract and analyze agent conversation transcripts](../reference-architectures/analyze-agent-conversation-transcripts.md)** | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
+| **[Use Copilot Studio agents in model-driven apps](../reference-architectures/contextual-ai-model-driven-app.md)** | Learn how to integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
 
 ## Solution ideas
 
