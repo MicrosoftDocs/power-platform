@@ -81,7 +81,7 @@ When you set Dataverse search to **On**, a search box appears at the top of ever
 |-----------------------------|-----------------------------------|--------------------------------|
 | Search bar is visible. (Quick Find isn't visible or accessible.)  |	Search bar isn't visible. (Quick Find can be used alternatively.)  |  Quick Find can be used alternatively.  |
 |  Dataverse search is used for all production environments.  |  Dataverse search isn't available for global search in any environment.	|  Dataverse search isn't available for global search in any environment.  |
-|  Dataverse data is automatically indexed and is searchable.  |  Dataverse data isn't indexed and data isn't searchable.	|  Dataverse data isn't indexed and data isn't searchable. |
+|  Dataverse data is automatically indexed and is searchable to be used for global search.  |  Dataverse data isn't indexed and data isn't searchable for global search.	|  Dataverse data isn't indexed and data isn't searchable for global search. |
 
 
 ## What Dataverse search means for generative AI-enabled experiences
@@ -95,7 +95,7 @@ Some generative AI experiences use Dataverse search data. When you enable Datave
 |-----------------------------|-----------------------------------|--------------------------------|
 |  An enabled, generative AI feature's availability isn't managed by Dataverse search itself. It might be enabled through its own feature setting.  |
 |  Dataverse search is used in all production environments.	|  Dataverse search is used for generative AI experiences in Sandbox, Trial, Developer, and Dataverse for Teams environments.	|  Dataverse search isn't used in any environment.  |
-|  Dataverse prompts and knowledge (tables and files) are automatically indexed and data is searchable.  |  Dataverse prompts and knowledge (tables and files) are indexed when triggered and data is searchable. Copilot is prompted.	|  Dataverse data isn't indexed and data isn't searchable.  |
+|  Selected Dataverse data (tables and files) is automatically indexed and data is searchable.  |  Selected Dataverse data (tables and files) is indexed when triggered and data is searchable. 	|  Dataverse data isn't indexed and isn't searchable.  |
 
 Individual users can't switch to [quick find search](/powerapps/user/quick-find), formerly known as _categorized search_. You must include tables in the application you're using with Dataverse search. Be sure that your application includes any table you want users to search.
 
@@ -106,8 +106,8 @@ Individual users can't switch to [quick find search](/powerapps/user/quick-find)
 > If you're using your own encryption key, you can turn off Dataverse search after allowing early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 > [!NOTE]
-> - Turn on Dataverse search to support lifecycle operations such as create, delete, backup, recover, copy, and reset.
-> - Manually turn on Dataverse search in environments to support copying lifecycle operations between environments.
+> - Dataverse search must be turned on to support lifecycle operations such as create, delete, backup, recover, copy, and reset.
+> - Dataverse search must be maually set to "On" in required environments to support copying lifecycle operations between environments.
 
 Take these steps to turn on Dataverse search:
 
