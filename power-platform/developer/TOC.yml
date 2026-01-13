@@ -16,25 +16,25 @@
       href: ../test-engine/index.yml
     - name: ALM for developers
       href: /power-platform/alm/alm-for-developers
-    - name: Publish your app on AppSource
-      href: appsource\publish-app.md
+    - name: Publish your app on Marketplace
+      href: marketplace\publish-app.md
       items:
         - name: "Step 1: Create a Microsoft Partner Center account"
-          href: appsource\register-microsoft-partner-network.md
+          href: marketplace\register-microsoft-partner-network.md
         - name: "Step 2: Create a managed solution for your app"
-          href: appsource\create-solution-app.md
-        - name: "Step 3: Create an AppSource package for your app"
-          href: appsource\create-package-app.md
-        - name: "Step 4: Store your AppSource Package on Azure Storage and generate a URL with SAS key"
-          href: appsource\store-package-azure-storage.md
+          href: marketplace\create-solution-app.md
+        - name: "Step 3: Create a Marketplace package for your app"
+          href: marketplace\create-package-app.md
+        - name: "Step 4: Store your Marketplace Package on Azure Storage and generate a URL with SAS key"
+          href: marketplace\store-package-azure-storage.md
         - name: "Next steps: Submit your app on Partner Center"
-          href: appsource\next-steps-submit-app-cloud-partner-portal.md
+          href: marketplace\next-steps-submit-app-cloud-partner-portal.md
         - name: "Appendix: App design best practices checklist"
-          href: appsource\appendix-app-design-best-practices-checklist.md
+          href: marketplace\appendix-app-design-best-practices-checklist.md
         - name: "Appendix: App certification checklist"
-          href: appsource\appendix-app-certification-checklist.md
+          href: marketplace\appendix-app-certification-checklist.md
         - name: "Appendix: Add licensing information to your solution"
-          href: appsource\appendix-add-license-information-to-your-solution.md
+          href: marketplace\appendix-add-license-information-to-your-solution.md
     - name: Use the catalog in Power Platform
       items: 
         - name: Overview

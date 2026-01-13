@@ -31,7 +31,7 @@ To ensure the best chance of a successful installation and deployment of the SAP
 
 ## Access SAP Setup Assistant
 
-The SAP Setup Assistant template is available in [Microsoft AppSource](<https://aka.ms/AccessSAPSetupAssistantTemplate>).
+The SAP Setup Assistant template is available in [Microsoft Marketplace](<https://aka.ms/AccessSAPSetupAssistantTemplate>).
 
 To avoid having to transfer downloaded files across the machines, we recommend you **run the SAP Setup Assistant on the Windows Virtual Machine** where the data gateway is set up.
 
