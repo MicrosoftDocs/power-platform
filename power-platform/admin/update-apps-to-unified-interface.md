@@ -38,7 +38,7 @@ The following are recommended ways to update to Unified Interface based on how t
 - Modify the app properties by following the steps detailed in [Manage app properties](/powerapps/maker/model-driven-apps/manage-app-properties), and set the **Client** type to **Unified Interface**
 - Import the changes to your target environment via a managed solution update.
 
-## Apps installed from AppSource
+## Apps installed from Marketplace
 
 - Contact the app publisher and get a new version that updates the apps to Unified Interface.
 
