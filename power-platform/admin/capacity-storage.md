@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 01/12/2026
+ms.date: 01/13/2026
 ms.topic: concept-article
 author: marianaraujo 
 ms.subservice: admin
@@ -440,10 +440,10 @@ All experiences that use Dataverse search become limited. For more information, 
     When you set Dataverse search to **On** after setting it to **Off**, the system immediately re-triggers all indexes across all enabled experiences for them to work accordingly, and Dataverse search costs resume.
 
 - **Selecting Default**:
-    When you set Dataverse search to **Default** after setting it to **Off**, the system only regenerates the indexes when triggered. Examples include when a Copilot Studio agent uses a file&mdash;such as a local file, OneDrive file, or SharePoint file upload or Dataverse table&mdash;or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
+    When you set Dataverse search to **Default** after setting it to **Off**, the system only regenerates the indexes when triggered. Examples include when a Copilot Studio agent uses a file&mdash;such as a local file, OneDrive file, SharePoint file upload, or Dataverse table&mdash;or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
 
 > [!NOTE]
-> You can't turn Dataverse search **On** or **Off** for different applications in the same environment. The status of the setting applies to all applications in the environment that use Dataverse Search.
+> You can't turn Dataverse search **On** or **Off** for different applications in the same environment. The status of the setting applies to all applications in the environment that use Dataverse search.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
 
