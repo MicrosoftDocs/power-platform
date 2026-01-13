@@ -93,7 +93,7 @@ Power Pages now has a dedicated experience within the **Copilot** area of the Po
 
 Admins can access detailed usage analytics and apply governance controls tailored to Power Pages, ensuring responsible and effective use of Copilot features across environments and individual sites.
 
-Visit [Copilot hub for Power Pages](https://learn.microsoft.com/en-us/power-pages/admin/copilot-hub) to learn more.
+Visit [Copilot hub for Power Pages](https://learn.microsoft.com/power-pages/admin/copilot-hub) to learn more.
 
 ### Dynamics 365 Sales
 
