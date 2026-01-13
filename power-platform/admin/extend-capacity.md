@@ -87,6 +87,6 @@ The following admin operations aren't available when a tenant exceeds storage ca
 - [Is there a database size restriction for backing-up or restoring an organization through the user interface or API?](backup-restore-environments.md#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-the-user-interface-or-api)
 - [Actions to take for a storage capacity deficit](capacity-storage.md#actions-to-take-for-a-storage-capacity-deficit)
 - Legacy capacity storage model: [Example storage capacity scenario](legacy-capacity-storage.md#example-storage-capacity-scenario)
-- New capacity storage model: [Example storage capacity scenarios, overage enforcement](capacity-storage.md#example-storage-capacity-scenarios-overage-enforcement)
+- New capacity storage model: [Example storage capacity scenarios, overage enforcement](capacity-storage.md#example-storage-capacity-scenarios-and-overage-enforcement)
 
 

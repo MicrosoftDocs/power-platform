@@ -273,11 +273,11 @@ The schema for Lockbox audit events is deprecated and won't be available startin
 
 ## ISV Studio removed
 
-ISV Studio was a preview analytics portal that showed limited install data for ISV solutions built on Dynamics CE or Power Platform and deployed from AppSource. It also provided another access point to the connector certification wizard.  
+ISV Studio was a preview analytics portal that showed limited install data for ISV solutions built on Dynamics CE or Power Platform and deployed from Marketplace. It also provided another access point to the connector certification wizard.  
 
 Thanks to our ISV partners for trying out ISV Studio during the preview. After careful consideration and extensive review of partner feedback, we recognized the limitations of the service over time and acknowledged that it didn't provide the expected value. ISV Studio was deprecated on April 1, 2024 and removed on May 31, 2024.
 
-To continue accessing analytics related to your AppSource solutions, use the reporting features in Partner Center. Although this alternative might not offer the same data from ISV Studio, Partner Center serves as a valuable resource for insights and tools to empower your business growth and success.
+To continue accessing analytics related to your Marketplace solutions, use the reporting features in Partner Center. Although this alternative might not offer the same data from ISV Studio, Partner Center serves as a valuable resource for insights and tools to empower your business growth and success.
 
 ## Connector Certification Portal Deprecation
 
@@ -489,7 +489,7 @@ On June 20, 2022 [Power Apps for Windows](https://apps.microsoft.com/store/detai
 
 ## Data Export Service deprecation
 
-Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft AppSource. The Data Export Service add-on won't be available for download for all customers. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
+Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft Marketplace. The Data Export Service add-on won't be available for download for all customers. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
 
 ## Dataverse OData v2.0 Service removal
 
@@ -986,7 +986,7 @@ will be removed in a future major release.
 
 Ready-to-use business processes available through the Add Ready-to-Use Business
 Processes setting (<strong>Settings \> Data Management \> Add Ready-to-Use Business
-Processes</strong>) are deprecated and will be removed in a future major release. You can find ready-to-use business processes on Microsoft AppSource.
+Processes</strong>) are deprecated and will be removed in a future major release. You can find ready-to-use business processes on Microsoft Marketplace.
 
 ## Silverlight (XAP) web resource is deprecated <a name="BKMK_Silverlight"></a>
 
