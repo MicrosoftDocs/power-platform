@@ -1,7 +1,7 @@
 ---
 title: Global Secure Access for Copilot Studio agents (preview)
 description: Learn how to configure the Secure Web and AI Gateway for Microsoft Copilot Studio agents to enforce network security controls.
-ms.date: 11/05/2025
+ms.date: 01/13/2026
 ms.topic: how-to
 author: fgomulka
 ms.author: frankgomulka
