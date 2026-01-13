@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: marianaraujo 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 01/12/2026
+ms.date: 01/13/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: maaraujo
@@ -107,7 +107,7 @@ Individual users can't switch to [quick find search](/powerapps/user/quick-find)
 
 > [!NOTE]
 > - Dataverse search must be turned on to support lifecycle operations such as create, delete, backup, recover, copy, and reset.
-> - Dataverse search must be maually set to "On" in required environments to support copying lifecycle operations between environments.
+> - Dataverse search must be maually set to **On** in required environments to support copying lifecycle operations between environments.
 
 Take these steps to turn on Dataverse search:
 
