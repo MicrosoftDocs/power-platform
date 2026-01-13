@@ -192,7 +192,7 @@ Path to a file containing a JSON array rules and levels to override. Accepted va
 
 #### `--ruleSet` `-rs`
 
-Select a rule set that is executed as part of this build. Values: A valid Guid, "AppSource Certification", "Solution Checker" (default).
+Select a rule set that is executed as part of this build. Values: A valid Guid, "Marketplace Certification", "Solution Checker" (default).
 
 #### `--saveResults` `-sav`
 
