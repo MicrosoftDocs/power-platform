@@ -4,7 +4,7 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/21/2025
+ms.date: 01/14/2026
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -32,7 +32,7 @@ The **What’s new** page in the **Copilot** area provides admins with a central
 
 ## Settings
 
-The **Settings** page displays settings grouped by product. Some settings span across Power Platform and appear at the top in the **Power Platform** section. You can configure settings at the environment level, with most settings also configurable through environment groups and rules. When you select a setting, a panel opens where you can select your environment or group, select **Edit setting**, and configure the control. Some settings in the Copilot Studio product direct you to documentation with instructions on how you can configure a data loss prevention (DLP) policy or to the Security Hub for in-product configuration.
+The **Settings** page displays settings grouped by product. Some settings span across Power Platform and appear at the top in the **Power Platform** section. You can configure settings at the environment level, with most settings also configurable through environment groups and rules. When you select a setting, a panel opens where you can select your environment or group, select **Edit setting**, and configure the control. Some settings in the Copilot Studio product direct you to documentation with instructions on how you can configure a data loss prevention (DLP) policy or to the **Security** area for in-product configuration.
 
 > [!NOTE]
 > Tenant users with environment access can view Copilot settings.
