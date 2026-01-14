@@ -98,3 +98,9 @@ Visit [Copilot hub for Power Pages](/power-pages/admin/copilot-hub) to learn mor
 ### Dynamics 365 Sales
 
 Admins can view usage analytics for Copilot in Dynamics 365 Sales on the **Dynamics 365 Sales** page to understand the value that end users get from AI in Dynamics 365 Sales. The page includes monthly active user count information for Copilot in Dynamics 365 Sales. Furthermore, admins can look into Copilot by selecting it from the bottom table view. This opens a panel where you can see top environments and investigate those to see apps where users are interacting with Copilot the most.
+
+### Dynamics 365
+
+Admins can deploy agents for Dynamics 365 ERP applications—such as Finance and Operations apps and Project Operations—directly from the **Dynamics 365** page using the [unified agent deployment wizard for Dynamics 365 ERP agents](/dynamics365/fin-ops-core/dev-itpro/copilot/agent-deployment).
+
+This tool provides a unified and streamlined deployment experience for Microsoft’s AI-powered Dynamics 365 ERP agents. It offers a guided, end-to-end setup process that simplifies configuration and reduces the time and effort required to enable agents consistently across environments.
