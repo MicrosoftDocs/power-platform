@@ -35,6 +35,9 @@ Pipelines in Power Platform allow you to manage the end-to-end deployment proces
 Admins can view all [pipelines host](custom-host-pipelines.md) environments in the tenant, including the platform host, and **select a host** to view all the pipelines and deployment history managed by that host.
 
 Select **Pipelines** on the left navigation to see all active pipelines within the pipelines host. 
+
+:::image type="content" source="media/AdminDH_PipelinesList.png" alt-text="Pipelines page" lightbox="media/AdminDH_PipelinesList.png":::
+
 > [!NOTE]
 > You can view up to the last 365 days by changing the filter.
 > Additional information and advanced pipeline configuration can be accessed by navigating to the pipelines host environment and opening the [Deployment Pipelines Configuration app](custom-host-pipelines.md).
@@ -46,6 +49,8 @@ The **Run history** view shows all deployment activity managed by the selected p
 - **Target** is the destination environment where the pipeline deployed to. For example, for integration testing, user acceptance testing (UAT), production, and so on.
 - **Status** indicates whether the deployment is in-progress, succeeded, failed, or was cancelled.
 - **Solution** is the name of the artifact and the **Version** deployed to the target environment.
+
+  :::image type="content" source="media/AdminDH_RunHistory.png" alt-text="Run history page" lightbox="media/AdminDH_RunHistory.png":::
 
 > [!IMPORTANT]
 > All target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md).
