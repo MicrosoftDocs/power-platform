@@ -103,4 +103,4 @@ Admins can view usage analytics for Copilot in Dynamics 365 Sales on the **Dynam
 
 Admins can deploy agents for Dynamics 365 applications, such as finance and operations apps and Project Operations, directly from the **Dynamics 365** page using the [agent deployment wizard for Dynamics 365 agents](/dynamics365/fin-ops-core/dev-itpro/copilot/agent-deployment).
 
-This tool provides a unified and streamlined deployment experience for Microsoft’s AI-powered Dynamics 365 ERP agents. It offers a guided, end-to-end setup process that simplifies configuration and reduces the time and effort required to enable agents consistently across environments.
+This tool provides a unified and streamlined deployment experience for Microsoft’s AI-powered Dynamics 365 agents. It offers a guided, end-to-end setup process that simplifies configuration and reduces the time and effort required to enable agents consistently across environments.
