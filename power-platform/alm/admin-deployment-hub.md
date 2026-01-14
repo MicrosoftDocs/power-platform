@@ -62,7 +62,10 @@ Admins can manage the following **Settings** within the selected Pipelines host 
 - **[Solution deployments across regions](enable-cross-geo-solution-deployments.md)**: admins can opt-in to allow deployments between environmets in different geographic locations. For example, If the host and production environments are in North America but the development environment is in India.
 > [!IMPORTANT]
 > This setting enables data to be shared across geographical regions within in your tenant.
-- **[Allow makers to import shared solution deployments](import-from-pipelines-host.md)**: Deployed solution backups are stored in the pipelines host. This setting allows non-admins to import solutions that were shared with them, in addition to being able to import solutions that they themselves have deployed. 
+- **[Allow makers to import shared solution deployments](import-from-pipelines-host.md)**: Deployed solution backups are stored in the pipelines host. This setting allows non-admins to import solutions that were shared with them, in addition to being able to import solutions that they themselves have deployed.
+- **Use a custom pipelines host** allows you to set one default host for the entire tenant. This replaces [personal pipelines](platform-host-pipelines.md) - meaning admins control who can access pipelines and makers can no longer create personal pipelines in the platform host. It's also useful when a central team manages deployments for the entire tenant. This setting is only visible when the **Platform host** is selected in the host picker.
+
+:::image type="content" source="media/AdminDH_DefaultHost.png" alt-text="Run history page" lightbox="media/AdminDH_DefaultHost.png":::
 
 ### Review and approve deployment requests
 
