@@ -32,7 +32,7 @@ The core components solution contains tables, security roles, flows, and apps.
 ### Tables
 
 > [!NOTE]
-> To easily explore and manage data stored in Dataverse, we recommend installing the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). Learn more at [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/).
+> To easily explore and manage data stored in Dataverse, we recommend installing the [Microsoft Power Apps Office Add-in](https://marketplace.microsoft.com/product/office/WA104380330?tab=Overview). Learn more at [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/).
 
 #### Tenant objects
 

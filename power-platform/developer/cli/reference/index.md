@@ -23,7 +23,7 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |Command Group|Description|
 |---------|---------|
 |[pac admin](admin.md)|Work with your Power Platform Admin Account|
-|[pac application](application.md)|Commands for listing and installing available Dataverse applications from AppSource|
+|[pac application](application.md)|Commands for listing and installing available Dataverse applications from Marketplace|
 |[pac auth](auth.md)|Manage how you authenticate to various services|
 |[pac canvas](canvas.md)|Operating with Power Apps .msapp files|
 |[pac catalog](catalog.md)|Commands for working with Catalog in Power Platform|

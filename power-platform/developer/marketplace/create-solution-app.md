@@ -1,6 +1,6 @@
 ---
 title: "Step 2: Create a managed solution for your app (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
-description: "Learn about how to create a managed solution for your app to include all the components. This is required for publishing an app to Appsource." # 115-145 characters including spaces. This abstract displays in the search result.
+description: "Learn about how to create a managed solution for your app to include all the components. This is required for publishing an app to Marketplace." # 115-145 characters including spaces. This abstract displays in the search result.
 ms.date: 04/03/2023
 ms.reviewer: pehecke
 ms.topic: how-to
@@ -47,7 +47,7 @@ For detailed information about using the Configuration Migration tool to create 
 
 You will now have a managed solution file (example: *SampleSolution.zip*) and optionally a demo data file (example: *SampleData.zip*) for your app.
 
-**Optional licensing information:** If you wish to add licensing information to your solution, see [Appendix: Add licensing information to your solution](appendix-add-license-information-to-your-solution.md)
+**Optional licensing information:** If you wish to add licensing information to your solution, see [Appendix: Add licensing information to your solution](../marketplace/appendix-add-license-information-to-your-solution.md)
 
 > [!div class="nextstepaction"]
-> [Step 3: Create an AppSource package for your app](create-package-app.md)
+> [Step 3: Create a Marketplace package for your app](../marketplace/create-package-app.md)

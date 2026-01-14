@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 12/11/2025
+ms.date: 01/12/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -23,6 +23,7 @@ Get the latest info about what's new and what's changed in the Power Platform an
 New in [Reference architectures](reference-architectures/index.md):
 
 - [Optimize the performance of canvas apps requiring complex business logic](reference-architectures/optimize-performance-canvas-apps.md)
+- [Use Copilot Studio agents in model-driven apps](reference-architectures/contextual-ai-model-driven-app.md)
 
 ## December 2025
 
