@@ -79,17 +79,43 @@ A dedicated **Failed deployments** view helps admins quickly identify and troubl
 
 ## FAQ
 
-### Can I ensure pipeline targets are Managed Environments?
+### Are Managed Environments required for Deployment Pipelines, and what does this mean for my organization? 
 
-Yes. Tenant admins can automatically convert pipeline target environments to Managed Environments, ensuring compliance with Microsoft standards.
-To enable an environment as a Managed Environment, go to the Power Platform admin center **Deployments** > **Settings**. Turn on the automatic managed environment setting for each pipeline host.
+Yes. All target environments used in Power Platform Deployment Pipelines have always been required to be Managed Environments for compliant usage. This requirement helps your organization benefit from enhanced governance, improved security and streamlined license management 
+
+### How can I ensure pipelines targets are Managed Environments automatically?
+
+Tenant admins (Power Platform and Dynamics 365 admins) can enable a setting that automatically converts pipelines target environments to Managed Environments, ensuring compliance with Microsoft standards. Managed Environments will be enabled on the target during the next deployment.  
+To enable, go to the Power Platform admin center **Deployments** > **Settings**. Turn on the automatic managed environment setting for each pipeline host.
+
+### Why did I receive a Message Center notification with ID 1197436?
+You will receive a notification if you have environments that are not managed and are target of a pipeline and used for deployment in the last 6 months.  
+The M365 Message Center notification with ID 1197436 is titled “Power Platform – Automatic enablement of Managed Environments for Deployment Pipelines” and lists specific environments that need action.
+ 
+ > [!IMPORTANT]
+ > Starting February 2026, Microsoft will start enabling Managed Environments for any pipeline target environments that aren’t already enabled. 
+ > It's recommended you review and enable Managed Environments for all pipeline targets now or set it to occur automatically.
+
+### How do I verify pipelines target environments requiring Managed Environments?
+Go to the Power Platform admin center **Deployments** > **Pipelines** > **Run History**. Then select a host and change the filter to **Last 180 days**. If multiple hosts exist, review deployments in each. Environments listed under **Target** require Managed Environments.
+
+ > [!NOTE]
+ > Additional Run history information and the ability to export data and generate reports is available within the [Deployment Pipelines Configuration app](custom-host-pipelines.md).
+
+### Will this automatic enablement affect end users or licensing, and how can I prepare?
+There is no expected disruption for end users or their applications because of this automatic enablement. The changes focus on environment governance and compliance, so your users and apps will continue to function as usual. 
 
  > [!IMPORTANT]
- > Starting February 2026, Microsoft will start enabling Managed Environments for any pipeline target environments that aren’t already enabled. Customers will be notified via Microsoft 365 Message center.
- > We recommend you review and enable Managed Environments for all pipeline targets now. You can do this manually now or set it to occur automatically:
->
-> - **Manually:** Go to enable [Managed Environments](../admin/managed-environment-enable.md).
-> - **Automatically:** Configure the setting for new pipelines as described above.
+ > Managed Environments come with an [auto-claim policy](..admin/auto-claim-licensing.md), which will be applied automatically. The auto-claim policy ensures users who access apps in Managed Environments automatically receive the necessary licenses. Please ensure you have appropriate license capacity in the tenant to utilize auto-claim.
+
+### Is Message Center ID 1197436 related to the automatic enablement setting? 
+
+In February 2026, Microsoft will enable any unmanaged Pipelines target environments as Managed Environments regardless of whether the setting is disabled. However, it's recommended to enable the setting to ensure future compliance. 
+
+### Can I restrict access to personal pipelines?
+Yes. Go to the admin center > **Deployments** > **Settings** > **Use a custom pipelines host** then select a custom pipelines host. If there's not an existing custom host, create one. Save the setting.
+
+This overrides the platform host behavior, and non-admins won't be able to use pipelines unless you [grant access](custom-host-pipelines#grant-access-to-edit-or-run-pipelines.md) in the custom host environment. 
 
 ## Related articles
 
