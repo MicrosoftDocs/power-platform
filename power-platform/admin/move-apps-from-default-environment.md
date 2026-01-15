@@ -14,81 +14,76 @@ search.audienceType:
 
 # Move apps from the default environment
 
-The Default Environment in Power Platform often becomes a shared space for makers to create apps, agents, and flows, often without adequate governance controls to manage efficiently. Over time, this can lead to clutter, unmanaged resources, and security risks. The new recommendation in the Power Platform Admin Center enables administrators to easily move apps from the Default Environment to designated Managed Environments, ensuring compliance, security, and better organization.
+Makers often use the default environment in Power Platform as a shared space to create apps, agents, and flows. However, they might not use adequate governance controls to manage these resources efficiently. Over time, this approach can lead to clutter, unmanaged resources, and security risks. The new recommendation in the Power Platform Admin Center helps administrators move apps from the default environment to designated managed environments. This process ensures compliance, security, and better organization.
 
-Note:
-
-1.  This feature is currently in public preview
-
-2.  During the preview:
-
-    1.  You can only move Canvas apps and SharePoint Forms that do not use any shared connectors or resources. The recommendation will only show the apps and forms that can be moved.
-
-    2.  You need to provision the users in the target environment and reshare the app with them.
-
-    3.  If the app is the default environment is not quarantined or deleted, users can continue to access that app. However, they’ll see a banner message indicating that the app has been moved.
+> [!NOTE]
+> 1. This feature is currently in public preview.
+> 1. During the preview:
+>    1. You can only move canvas apps and SharePoint Forms that don't use any shared connectors or resources. The recommendation only shows the apps and forms that you can move.
+>    1. You need to add the users in the target environment and reshare the app with them.
+>    1. If the app in the default environment isn't quarantined or deleted, users can continue to access that app. However, they see a banner message indicating that the app has been moved.
 
 ## Prerequisites
 
-- System or Tenant-level administrator permissions.
+- System or tenant-level administrator permissions.
 
 - Access to Power Platform Admin Center.
 
-- Managed Environments configured for destination.
+- Managed environments configured for destination.
 
-## Approaches to Move Apps
+## Approaches to move apps
 
-You can move apps using one of two methods:
+You can move apps by using one of two methods:
 
-**1. Manual Cleanup (PPAC)**
+**1. Manual cleanup (PPAC)**
 
-Ideal for smaller-scale migrations or when reviewing apps individually.
+Use this method for smaller-scale migrations or when you want to review apps individually.
 
 **Steps**
 
 1.  Sign in to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
 
-2.  Navigate to **Actions \> Recommendations**.
+1.  Go to **Actions \> Recommendations**.
 
-3.  Open the recommendation “Improve environment hygiene by moving the production apps out of the default environment”
+1.  Open the recommendation "Improve environment hygiene by moving the production apps out of the default environment."
 
-4.  Review flagged apps for cleanup.
+1.  Review flagged apps for cleanup.
 
-5.  Select an app and click **View Details**.
+1.  Select an app and select **View Details**.
 
-6.  Click **Move** to start the migration wizard.
+1.  Select **Move** to start the migration wizard.
 
-7.  Choose the destination environment from the list.
+1.  Choose the destination environment from the list.
 
-8.  Decide what to do with the original app:
+1.  Decide what to do with the original app:
 
-    - **None:** Keep as is (recommended: rename with “(Moved)” and add redirect screen).
+    - **None:** Keep as is (recommended: rename with "(Moved)" and add redirect screen).
 
     - **Quarantine:** Restrict access to owner only.
 
     - **Delete:** Permanently remove.
 
-9.  Click **Move** to complete migration.
+1.  Select **Move** to complete migration.
 
-**Tip:** Permissions and sharing settings are preserved during migration.
+**Tip:** The migration preserves permissions and sharing settings.
 
-**2. Automated Cleanup (Power Automate)**
+**2. Automated cleanup (Power Automate)**
 
-Best for bulk migrations using pre-approved recommendations.
+Use this method for bulk migrations by using pre-approved recommendations.
 
 **Steps**
 
 1.  Create a flow with a **Manual Trigger**.
 
-2.  Use **Power Platform for Admins V2** connector:
+1.  Use **Power Platform for Admins V2** connector:
 
     - **Get Recommendations**.
 
     - **Get Recommendation Resources**.
 
-3.  Filter for apps in the Default Environment.
+1.  Filter for apps in the default environment.
 
-4.  Loop through apps and execute **Migrate to Managed Environment** action:
+1.  Loop through apps and run **Migrate to Managed Environment** action:
 
     - **Recommendation Name:** Secure high-value apps with premium governance.
 
@@ -101,13 +96,13 @@ Best for bulk migrations using pre-approved recommendations.
 > \[  
 > {  
 > "resourceId": @{items('Apply_to_each')?\['resourceId'\]},  
-> "environment": @{items('Apply_to_each')?\['environmentId'\]}, "destinationEnvironmentName": “\<destination environment guid\>”  
+> "environment": @{items('Apply_to_each')?\['environmentId'\]}, "destinationEnvironmentName": "\<destination environment guid\>"  
 > }  
 > \]
 
-5.  Confirm migration in PPAC.
+1.  Confirm migration in PPAC.
 
-## Post-Migration
+## Post-migration
 
 - Validate apps in the new environment.
 
@@ -125,9 +120,9 @@ Best for bulk migrations using pre-approved recommendations.
 
 - Scalable for large organizations.
 
-**Next Steps**
+**Next steps**
 
-- Learn more about <https://learn.microsoft.com/power-platform/admin/managed-environments>.
+- Learn more about [Managed Environments](/power-platform/admin/managed-environment-overview).
 
-- Explore <https://learn.microsoft.com/power-platform/admin/environment-routing>.
+- Explore [Environment routing](/power-platform/admin/default-environment-routing).
 
