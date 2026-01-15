@@ -52,7 +52,7 @@ The **Run history** view shows all deployment activity managed by the selected p
 - **Status** indicates whether the deployment is in-progress, succeeded, failed, or canceled.
 - **Solution** is the name of the artifact and the **Version** deployed to the target environment.
 
-  :::image type="content" source="media/admin-deployment-hub/admin-deploy-hub-run-history.png" alt-text="Run history page" lightbox="media/admin-deployment-hub/admin-deploy-hub-run-history.png":::
+  :::image type="content" source="media/admin-deployment-hub/admin-deploy-hub-run-history.png" alt-text="Run history page in deployment hub" lightbox="media/admin-deployment-hub/admin-deploy-hub-run-history.png":::
 
 > [!IMPORTANT]
 >
@@ -72,7 +72,7 @@ Admins can manage these **Settings** within the selected pipelines host (setting
 - **[Allow makers to import shared solution deployments](import-from-pipelines-host.md)**: Deployed solution backups are stored in the pipelines host. This setting allows nonadmins to import solutions that were shared with them, in addition to being able to import solutions that they themselves deployed.
 - **Use a custom pipelines host**: Allows you to set one default host for the entire tenant. This replaces [personal pipelines](platform-host-pipelines.md) - meaning admins control who can access pipelines and makers can no longer create personal pipelines in the platform host. It's also useful when a central team manages deployments for the entire tenant. This setting is only visible when the **Platform host** is selected in the host picker.
 
-:::image type="content" source="media/admin-deployment-hub/admin-deploy-hub-default-host.png" alt-text="Run history page" lightbox="media/admin-deployment-hub/admin-deploy-hub-default-host.png":::
+:::image type="content" source="media/admin-deployment-hub/admin-deploy-hub-default-host.png" alt-text="Use a custom pipelines host option" lightbox="media/admin-deployment-hub/admin-deploy-hub-default-host.png":::
 
 ### Review and approve deployment requests
 
@@ -119,7 +119,7 @@ Go to the Power Platform admin center **Deployments** > **Pipelines** > **Run Hi
 There's no expected disruption for end users or their applications because of this automatic enablement. The changes focus on environment governance and compliance, so your users and apps continue to function as usual.
 
  > [!IMPORTANT]
- > Managed Environments come with an [autoclaim policy](..admin/auto-claim-licensing.md), which is applied automatically. The autoclaim policy ensures users who access apps in Managed Environments automatically receive the necessary licenses. Ensure you have appropriate license capacity in the tenant to utilize autoclaim.
+ > Managed Environments come with an [autoclaim policy](../admin/auto-claim-licensing.md), which is applied automatically. The autoclaim policy ensures users who access apps in Managed Environments automatically receive the necessary licenses. Ensure you have appropriate license capacity in the tenant to utilize autoclaim.
 
 ### Is Message Center ID 1197436 related to the automatic enablement setting? 
 
@@ -129,7 +129,7 @@ In February 2026, Microsoft enables any unmanaged pipelines target environments 
 
 Yes. Go to the Power Platform admin center > **Deployments** > **Settings** > **Use a custom pipelines host**, and then select a custom pipelines host. If there's no existing custom host, create one. Save the setting.
 
-This overrides the platform host behavior, and nonadmins can't use pipelines unless you [grant access](custom-host-pipelines#grant-access-to-edit-or-run-pipelines.md) in the custom host environment. 
+This overrides the platform host behavior, and nonadmins can't use pipelines unless you [grant access](custom-host-pipelines.md#grant-access-to-edit-or-run-pipelines) in the custom host environment. 
 
 ## Related articles
 
