@@ -23,6 +23,13 @@ Makers often use the default environment in Power Platform as a shared space to 
 >   - You need to add the users in the target environment and reshare the app with them.
 >   - If the app in the default environment isn't quarantined or deleted, users can continue to access that app. However, they see a banner message indicating that the app has been moved.
 
+## Benefits
+
+- Streamlined governance.
+- Reduced manual effort.
+- Improved security posture.
+- Scalable for large organizations.
+
 ## Prerequisites
 
 - You must have system or tenant-level administrator permissions.
@@ -101,13 +108,6 @@ You can move apps by using one of two methods:
 - Validate apps in the new environment.
 - Update documentation and notify stakeholders.
 - Optionally, add redirect screens to original apps.
-
-## Benefits
-
-- Streamlined governance.
-- Reduced manual effort.
-- Improved security posture.
-- Scalable for large organizations.
 
 ## Next steps
 
