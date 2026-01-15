@@ -20,7 +20,10 @@ contributors:
 
 # Content security policy
 
-[Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) (CSP) is currently supported in model-driven and canvas apps. Admins can control whether the CSP header is sent and, to an extent, what it contains. **The settings are at the environment level, which means they're applied to all apps in the environment once turned on.**
+[Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) (CSP) is currently supported in model-driven, canvas, and code apps.
+This article explains how to configure CSP for model-driven and canvas apps.
+For code apps CSP, see the [code apps documentation](/power-apps/developer/code-apps/how-to/content-security-policy).
+Admins can control whether the CSP header is sent and, to an extent, what it contains. **The settings are at the environment level, which means they're applied to all apps in the environment once turned on.**
 
 > [!NOTE]
 > The content security policy only applies to environments using Dataverse.
