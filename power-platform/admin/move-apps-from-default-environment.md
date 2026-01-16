@@ -41,7 +41,7 @@ Makers often use the default environment in Power Platform as a shared space to 
 You can move apps by using one of two methods:
 
 - **Manual cleanup**: Use this method for smaller-scale migrations or when you want to review apps individually.
-- **Automated cleanup (using Power Automate)**: Use this method for bulk migrations by using preapproved recommendations.
+- **Automated cleanup using Power Automate**: Use this method for bulk migrations by using preapproved recommendations.
 
 ### Move apps by using manual cleanup
 
@@ -72,7 +72,7 @@ You can move apps by using one of two methods:
     > [!Tip]
     > The migration preserves permissions and sharing settings.
 
-### Move apps by using automated cleanup (with Power Automate)
+### Move apps by using automated cleanup with Power Automate
 
 1.  Create a flow with a **Manual Trigger**.
 
