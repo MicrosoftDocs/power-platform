@@ -140,7 +140,7 @@
                   href: security-recommendations.md
                 - name: Operational efficiency
                   items:
-                    - name: Operational efficiency recommendations
+                    - name: View operational efficiency recommendations
                       href: operational-efficiency-recommendations.md
                     - name: Move apps from the default environment
                       href: move-apps-from-default-environment.md
