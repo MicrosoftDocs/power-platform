@@ -36,7 +36,7 @@ Makers often use the default environment in Power Platform as a shared space to 
 - You must have access to Power Platform admin center.
 - Managed Environments must be configured as the destination.
 
-## Approaches to move apps
+## Move apps
 
 You can move apps by using one of two methods:
 
@@ -76,7 +76,7 @@ You can move apps by using one of two methods:
 
 1.  Create a flow with a **Manual Trigger**.
 
-1.  Use **Power Platform for Admins V2** connector:
+1.  Use the **Power Platform for Admins V2** connector:
 
     - **Get Recommendations**.
 
@@ -89,14 +89,14 @@ You can move apps by using one of two methods:
     - **Recommendation name:** Secure high-value apps with premium governance.
     - **Action name:** Migrates an application to a Managed Environment.
     - **API version:** 2022-03-01-preview.
-    - **Parameters** (example to use in a for-each action)**:**
+    - **Parameters:** Example to use in a for-each action:
 
-    > \[  
-    > {  
-    > "resourceId": @{items('Apply_to_each')?\['resourceId'\]},  
-    > "environment": @{items('Apply_to_each')?\['environmentId'\]}, "destinationEnvironmentName": "\<destination environment guid\>"  
-    > }  
-    > \]
+      > \[  
+      > {  
+      > "resourceId": @{items('Apply_to_each')?\['resourceId'\]},  
+      > "environment": @{items('Apply_to_each')?\['environmentId'\]}, "destinationEnvironmentName": "\<destination environment guid\>"  
+      > }  
+      > \]
 
 1.  Confirm migration in the Power Platform admin center.
 
