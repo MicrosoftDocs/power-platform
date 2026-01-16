@@ -43,36 +43,36 @@ You can move apps by using one of two methods:
 - **Manual cleanup**: Use this method for smaller-scale migrations or when you want to review apps individually.
 - **Automated cleanup (using Power Automate)**: Use this method for bulk migrations by using pre-approved recommendations.
 
-### Manual cleanup
+### Move apps by using manual cleanup
 
-1.  Sign in to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-1.  Go to **Actions \> Recommendations**.
+1. Go to **Actions \> Recommendations**.
 
-1.  Open the recommendation "Improve environment hygiene by moving the production apps out of the default environment."
+1. Select the  **Improve environment hygiene by moving the production apps out of the default environment** recommendation.
 
-1.  Review flagged apps for cleanup.
+1. Review the apps that have been listed for cleanup.
 
-1.  Select an app and select **View Details**.
+1. Select an app and select the **View Details** option, above the list of app names.
 
-1.  Select **Move** to start the migration wizard.
+1. Select the **Move** option, above te list of app names, to start the migration wizard.
 
-1.  Choose the destination environment from the list.
+1. Choose the destination environment from the list. Select **Next**.
 
-1.  Decide what to do with the original app:
+1. Indicate who should receive messages about the move. You can remove users who are listed, or add a new user by entering a name in the **Send to** box. Select **Next**.
 
-    - **None:** Keep as is (recommended: rename with "(Moved)" and add redirect screen).
+1. Review the information displayed and decide what to do with the original app by selecting one of the following options:
 
-    - **Quarantine:** Restrict access to owner only.
+    - **None**: Keep as is. We recommend that you rename the original app with **(Moved)** and add a redirect screen.
+    - **Quarantine**: Restrict access to owner only.
+    - **Delete**: Permanently remove the original app.
 
-    - **Delete:** Permanently remove.
+1. Select **Move** to complete migration.
 
-1.  Select **Move** to complete migration.
+    > [!Tip]
+    > The migration preserves permissions and sharing settings.
 
-    **Tip:** The migration preserves permissions and sharing settings.
-
-
-### Automated cleanup (using Power Automate)
+### Move apps by using automated cleanup (with Power Automate)
 
 1.  Create a flow with a **Manual Trigger**.
 
@@ -84,24 +84,21 @@ You can move apps by using one of two methods:
 
 1.  Filter for apps in the default environment.
 
-1.  Loop through apps and run **Migrate to Managed Environment** action:
+1.  Loop through apps and run the **Migrate to Managed Environment** action:
 
-    - **Recommendation Name:** Secure high-value apps with premium governance.
-
-    - **Action Name:** Migrates an application to a Managed Environment.
-
-    - **API Version:** 2022-03-01-preview.
-
+    - **Recommendation name:** Secure high-value apps with premium governance.
+    - **Action name:** Migrates an application to a Managed Environment.
+    - **API version:** 2022-03-01-preview.
     - **Parameters** (example to use in a for-each action)**:**
 
-> \[  
-> {  
-> "resourceId": @{items('Apply_to_each')?\['resourceId'\]},  
-> "environment": @{items('Apply_to_each')?\['environmentId'\]}, "destinationEnvironmentName": "\<destination environment guid\>"  
-> }  
-> \]
+    > \[  
+    > {  
+    > "resourceId": @{items('Apply_to_each')?\['resourceId'\]},  
+    > "environment": @{items('Apply_to_each')?\['environmentId'\]}, "destinationEnvironmentName": "\<destination environment guid\>"  
+    > }  
+    > \]
 
-1.  Confirm migration in PPAC.
+1.  Confirm migration in the Power Platform admin center.
 
 ## Post-migration
 
