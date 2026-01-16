@@ -20,7 +20,10 @@ contributors:
 
 # Content security policy
 
-[Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) (CSP) is currently supported in model-driven and canvas apps. Admins can control whether the CSP header is sent and, to an extent, what it contains. **The settings are at the environment level, which means they're applied to all apps in the environment once turned on.**
+[Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) (CSP) is currently supported in model-driven, canvas, and code apps.
+This article explains how to configure CSP for model-driven and canvas apps.
+For code apps CSP, see the [code apps documentation](/power-apps/developer/code-apps/how-to/content-security-policy).
+Admins can control whether the CSP header is sent and, to an extent, what it contains. **The settings are at the environment level, which means they're applied to all apps in the environment once turned on.**
 
 > [!NOTE]
 > The content security policy only applies to environments using Dataverse.
@@ -132,37 +135,41 @@ Here are a couple examples of CSP configurations.
 
 ### Example 1 - reporting turned off
 
-:::image type="content" source="media/content-security-policy/csp-example-1.png" alt-text="CSP example 1.":::
+:::image type="content" source="media/content-security-policy/csp-example-1-model.png" alt-text="CSP example 1, model-driven":::
+
+:::image type="content" source="media/content-security-policy/csp-example-1-canvas.png" alt-text="CSP example 1, canvas":::
 
 In the example:
 
 - Reporting is turned off.
 - Model-driven enforcement is enabled.
-  - `frame-ancestors` is customized to `https://www.foo.com` and `https://www.bar.com`.
+  - `frame-ancestors` is customized to `https://www.contoso.com` and `https://www.fabrikam.com`.
 - Canvas enforcement is disabled.
 
 The effective headers are:
 
-- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval' blob: data:; worker-src 'self' blob: data:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.foo.com https://www.bar.com;`
+- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval' blob: data:; worker-src 'self' blob: data:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.contoso.com https://www.fabrikam.com;`
 - Canvas apps: CSP header isn't sent.
 
 ### Example 2 - reporting turned on
 
-:::image type="content" source="media/content-security-policy/csp-example-2.png" alt-text="CSP example 2.":::
+:::image type="content" source="media/content-security-policy/csp-example-2-model.png" alt-text="CSP example 2, model-driven":::
+
+:::image type="content" source="media/content-security-policy/csp-example-2-canvas.png" alt-text="CSP example 2, canvas":::
 
 In the example:
 
 - Reporting is turned on.
-  - Reporting endpoint is set to `https://www.mysite.com/myreportingendpoint`
+  - Reporting endpoint is set to `https://contoso.com/reporting-endpoint`
 - Model-driven enforcement is enabled.
   - `frame-ancestors` is kept as default
 - Canvas enforcement is disabled.
-  - `frame-ancestors` is customized to `https://www.baz.com`
+  - `frame-ancestors` is customized to `https://www.contoso.com`
 
 The effective CSP values are:
 
-- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval' blob: data:; worker-src 'self' blob: data:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com; report-uri https://www.mysite.com/myreportingendpoint;`
-- Canvas apps: `Content-Security-Policy-Report-Only: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.baz.com; report-uri https://www.mysite.com/myreportingendpoint;`
+- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval' blob: data:; worker-src 'self' blob: data:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com; report-uri https://contoso.com/reporting-endpoint;`
+- Canvas apps: `Content-Security-Policy-Report-Only: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.contoso.com; report-uri https://contoso.com/reporting-endpoint;`
 
 ## Modify organization settings directly
 
