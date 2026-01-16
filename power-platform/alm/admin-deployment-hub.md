@@ -96,11 +96,10 @@ Tenant admins (Power Platform and Dynamics 365 admins) can enable a setting that
 
 To enable the setting, go to the Power Platform admin center **Deployments** > **Settings**. Turn on the automatic managed environment setting for each pipeline host.
 
-### Why did I receive a Message Center notification with ID 1197436?
+### Why did I receive Message Center notification “Power Platform – Automatic enablement of Managed Environments for Deployment Pipelines”?
 
 You receive a notification when you have environments that aren't managed and are target of a pipeline and used for deployment in the last six months. 
-
-The Microsoft 365 Message Center notification with ID 1197436 is titled “Power Platform – Automatic enablement of Managed Environments for Deployment Pipelines” and lists specific environments that need action.
+The notification lists specific environments that need action.
 
 > [!IMPORTANT]
 >
@@ -121,9 +120,9 @@ There's no expected disruption for end users or their applications because of th
  > [!IMPORTANT]
  > Managed Environments come with an [autoclaim policy](../admin/auto-claim-licensing.md), which is applied automatically. The autoclaim policy ensures users who access apps in Managed Environments automatically receive the necessary licenses. Ensure you have appropriate license capacity in the tenant to utilize autoclaim.
 
-### Is Message Center ID 1197436 related to the automatic enablement setting? 
+### Will Microsoft enable unmanaged pipelines target environments in February 2026 if the automatic enablement setting is turned off? 
 
-In February 2026, Microsoft enables any unmanaged pipelines target environments as Managed Environments regardless of whether the setting is disabled. However, we recommend you enable the setting to ensure future compliance.
+Yes. We also recommend you enable the setting to ensure future compliance.
 
 ### Can I restrict access to personal pipelines?
 
