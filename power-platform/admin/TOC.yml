@@ -140,10 +140,8 @@
                   href: security-recommendations.md
                 - name: Operational efficiency
                   href: operational-efficiency-recommendations.md
-                    - name: Operational efficiency recommendations
-                      items:
-                        - name: Move apps from the default environment
-                          href: move-apps-from-default-environment.md
+                - name: Move apps from the default environment
+                  href: move-apps-from-default-environment.md
                 - name: Licensing and capacity
                   href: licensing-and-capacity-recommendations.md
                 - name: Performance
