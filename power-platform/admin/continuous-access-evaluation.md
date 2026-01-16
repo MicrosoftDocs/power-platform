@@ -21,8 +21,9 @@ contributors:
 
 OAuth 2.0 authentication traditionally relies on access token expiration to revoke a user's access to modern cloud services. Users whose access rights have been terminated still have access to resources until the access token expires&mdash;for Power Platform, as long as an hour, by default. With continuous access evaluation, however, Power Platform services such as Dataverse continuously evaluate a user's [critical events](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#critical-event-evaluation) and network location changes. They proactively terminate active user sessions, or require reauthentication, and enforce tenant policy changes in near real time instead of waiting for an access token to expire.
 
-> [!IMPORTANT]
-> [!INCLUDE [preview](../includes/cc-preview-features-definition.md)]
+> [!NOTE]
+> **Rollout status (January 2026).** Deployment started in **early January 2026** and is expected to reach **all customers by the end of January 2026**. There are **no additional steps to enable this capability**; it becomes active when the rollout reaches your tenant
+
 
 ## Key benefits
 
