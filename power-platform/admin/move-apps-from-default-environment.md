@@ -4,7 +4,7 @@ description: The new recommendation in the Power Platform admin center allows ad
 author: sidhartg
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/15/2026
+ms.date: 01/16/2026
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -21,7 +21,7 @@ Makers often use the default environment in Power Platform as a shared space to 
 > - During the preview:
 >   - You can only move canvas apps and SharePoint forms that don't use any shared connectors or resources. The recommendation only shows the apps and forms that you can move.
 >   - You need to add the users in the target environment and reshare the app with them.
->   - If the app in the default environment isn't quarantined or deleted, users can continue to access that app. However, they see a banner message indicating that the app has been moved.
+>   - If the app in the default environment isn't quarantined or deleted, users can continue to access that app. However, they see a banner message indicating that the app has moved.
 
 ## Benefits
 
@@ -41,7 +41,7 @@ Makers often use the default environment in Power Platform as a shared space to 
 You can move apps by using one of two methods:
 
 - **Manual cleanup**: Use this method for smaller-scale migrations or when you want to review apps individually.
-- **Automated cleanup (using Power Automate)**: Use this method for bulk migrations by using pre-approved recommendations.
+- **Automated cleanup (using Power Automate)**: Use this method for bulk migrations by using preapproved recommendations.
 
 ### Move apps by using manual cleanup
 
@@ -51,11 +51,11 @@ You can move apps by using one of two methods:
 
 1. Select the  **Improve environment hygiene by moving the production apps out of the default environment** recommendation.
 
-1. Review the apps that have been listed for cleanup.
+1. Review the apps that are listed for cleanup.
 
 1. Select an app and select the **View Details** option, above the list of app names.
 
-1. Select the **Move** option, above te list of app names, to start the migration wizard.
+1. Select the **Move** option, above the list of app names, to start the migration wizard.
 
 1. Choose the destination environment from the list. Select **Next**.
 
