@@ -144,6 +144,8 @@
                   href: licensing-and-capacity-recommendations.md
                 - name: Performance
                   href: performance-recommendations.md
+                - name: Move apps from the default environment
+                  href: move-apps-from-default-environment.md
         - name: Deploy (preview)
           href: ../alm/admin-deployment-hub.md
         - name: Environments
