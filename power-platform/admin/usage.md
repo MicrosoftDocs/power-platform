@@ -45,7 +45,7 @@ At the top of the page, a summary view showcases the adoption and usage trends. 
   - **Copilot Studio**: Agent sessions  
 - **High-value resources** – Identify the top three apps, flows, and agents driving the most impact.
 
-Below the summary view, detailed tables provide sortable views of all apps, flows, and agents that are in use in your organization. Sort by users for apps, runs for flows, and sessions for agents to quickly identify trends and top performers.
+Below the summary view, detailed tables provide sortable views of all apps, flows, and agents that are in use in your organization. Only items that have not been deleted are included. Sort by users for apps, runs for flows, and sessions for agents to quickly identify trends and top performers.
 
 ### Power Apps
 This table shows usage by user activity and includes canvas apps and model-driven apps. 
@@ -55,3 +55,21 @@ This table shows usage by run volume and includes cloud flows.
 
 ### Copilot Studio
 This table shows usage by sessions and includes agents built in Copilot Studio (full).
+
+## Known Limitations
+- For Power Automate, approximately 20% of usage data is currently missing due to a data issue. Our team is actively working on a fix, and we will provide an update as soon as it is resolved.
+- For Power Automate and Copilot Studio, usage data was gradually populating until **January 3, 2026**. As a result, data prior to this date may not fully reflect your organization’s activity. For the **28-day aggregate metric** shown at the top of the page and for each item in the table, a complete and accurate view will be available by **January 31, 2026**.
+
+## FAQs
+
+### Will additional item types be supported in the future?
+Yes. We plan to expand support for additional item types like Desktop Flows, Agent Flows, etc. This page will be updated as new item types are included.
+
+### Will you support additional aggregations?
+Yes. We will offer quarterly, semi-annual, and annual aggregations, along with a two-year lookback option. This page will be updated as new new aggregation are included.
+
+### Will this data be available through data export?
+Yes. Data export will be supported, and we'll provide timeline details as soon as they are finalized.
+
+### Why don't agent session numbers match those in Copilot hub?
+Agent session counts use a 28-day lookback window, which can cause slight differences due to timing and snapshot alignment. We plan to standardize these metrics in the future.
