@@ -69,7 +69,7 @@ Admins can manage these **Settings** within the selected pipelines host (setting
    > [!IMPORTANT]
    > This setting enables data to be shared across geographical regions within your tenant.
 
-- **[Allow makers to import shared solution deployments](import-from-pipelines-host.md)**: Deployed solution backups are stored in the pipelines host. This setting allows nonadmins to import solutions that were shared with them, in addition to being able to import solutions that they themselves deployed.
+- **[Allow makers to import shared solution deployments](import-from-pipelines-host.md)**: Deployed solution backups are stored in the pipelines host. This setting allows nonadmins to import solutions that were shared with them, in addition to the ability to import solutions that they deployed.
 - **Use a custom pipelines host**: Allows you to set one default host for the entire tenant. This replaces [personal pipelines](platform-host-pipelines.md) - meaning admins control who can access pipelines and makers can no longer create personal pipelines in the platform host. It's also useful when a central team manages deployments for the entire tenant. This setting is only visible when the **Platform host** is selected in the host picker.
 
 :::image type="content" source="media/admin-deployment-hub/admin-deploy-hub-default-host.png" alt-text="Use a custom pipelines host option" lightbox="media/admin-deployment-hub/admin-deploy-hub-default-host.png":::
