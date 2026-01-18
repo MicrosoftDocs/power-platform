@@ -63,7 +63,7 @@ Content-Type: application/json; charset=utf-8
 [
     {
         "id": "083a2ef5-7e0e-4754-9d88-9455142dc08b",
-        "name": "AppSource Certification"
+        "name": "Marketplace Certification"
     },
     {
         "id": "0ad12346-e108-40b8-a956-9a8f95ea18c9",

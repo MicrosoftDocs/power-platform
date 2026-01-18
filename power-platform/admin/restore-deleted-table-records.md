@@ -42,7 +42,7 @@ To restore deleted Dataverse records, turn on the recycle bin in your environmen
 
 ### Turn on the recycle bin
 
-Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin) and complete the steps depending on whether you're using the new admin center or the classic admin center.
+Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin) and complete the steps.
 
 1. Select **Manage**.
 1. Select **Environments** and open the environment you want.
@@ -64,7 +64,7 @@ Viewing and acting on the deleted records in the Power Apps user experience is o
 
 ### Power Platform admin center
 
-To restore deleted records from the admin center, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a user with the system administrator security role and complete the following steps depending on whether you're using the new admin center or the classic admin center.
+To restore deleted records from the admin center, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a user with the system administrator security role and complete the following steps.
 
 1. Select **Manage**.
 1. Select **Environments** and open the environment you want to view and restore deleted records.
