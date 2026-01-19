@@ -36,7 +36,7 @@ Nexi's conversational agent is deployed on their website, https://www.nexi.it/. 
 
 The following image shows how the agent appears on Nexi's website.
 
-:::image type="content" source="media/nexi/nexi-homepage-agent.png" alt-text="Screenshot of Nexi's conversational agent supporting a user through a chat experience on the Nexi website." lightbox="media/nexi/nexi-homepage-agent.png":::
+:::image type="content" source="media/nexi/homepage-agent.png" alt-text="Screenshot of Nexi's conversational agent supporting a user through a chat experience on the Nexi website." lightbox="media/nexi/homepage-agent.png":::
 
 Key benefits include:
 
@@ -58,7 +58,7 @@ The agent supports user authentication and adapts its responses based on the cus
 
 The following image shows how the agent prompts the user to authenticate and directs the user to the correct page.
 
-:::image type="content" source="media/nexi/nexi-agent-login.png" alt-text="Screenshot of Nexi's conversational agent prompting the user to authenticate on the Nexi website." lightbox="media/nexi/nexi-agent-login.png":::
+:::image type="content" source="media/nexi/agent-login.png" alt-text="Screenshot of Nexi's conversational agent prompting the user to authenticate on the Nexi website." lightbox="media/nexi/agent-login.png":::
 
 After authentication, the agent retrieves only the documents and knowledge relevant to that customer's card type and entitlements. For example, if a customer has a gold card, the agent surfaces only gold-specific information, avoiding irrelevant details about other cards that don't apply.
 
@@ -70,7 +70,7 @@ Behind these capabilities is a robust architecture that powers intelligent docum
 
 The architecture integrates the Copilot Studio agent with three core capability areas, each built on Azure services.
 
-:::image type="content" source="media/nexi/nexi-agent-architecture.png" alt-text="Diagram showing the technologies used including Copilot Studio, Azure AI services, and Power BI." lightbox="media/nexi/nexi-agent-architecture.png":::
+:::image type="content" source="media/nexi/agent-architecture.png" alt-text="Diagram showing the technologies used including Copilot Studio, Azure AI services, and Power BI." lightbox="media/nexi/agent-architecture.png":::
 
 1. **Intelligent document retrieval**: To overcome limitations of basic document uploads, Nexi implemented a Retrieval-Augmented Generation (RAG) architecture using Azure OpenAI and Azure AI Search. Documents are stored in Azure Storage and indexed with custom metadata—such as card tier and eligibility rules—using tailored chunking strategies. Azure OpenAI processes customer queries and generates grounded responses based on the most relevant retrieved content, delivering accurate, context-aware answers even when documents overlap.
 1. **Secure internal systems integration**: For transactional requests, the agent routes conversations to Azure Functions, which connect securely to Nexi's internal web services. Azure Key Vault manages secrets, while Cosmos DB stores logs and audit records for traceability. This integration layer enables the agent to automate sensitive operations, such as blocking or reissuing cards, while maintaining strict security controls.
@@ -80,7 +80,7 @@ When AI-generated responses don't fully meet customer needs, Copilot Studio seam
 
 The following image shows one of the dashboards.
 
-:::image type="content" source="media/nexi/nexi-dashboard.png" alt-text="Screenshot of a Power BI dashboard showing an overview of agent analytics captured through Azure Monitor, Application Insights, and Log Analytics." lightbox="media/nexi/nexi-dashboard.png":::
+:::image type="content" source="media/nexi/dashboard.png" alt-text="Screenshot of a Power BI dashboard showing an overview of agent analytics captured through Azure Monitor, Application Insights, and Log Analytics." lightbox="media/nexi/dashboard.png":::
 
 The workflow is as follows:
 
