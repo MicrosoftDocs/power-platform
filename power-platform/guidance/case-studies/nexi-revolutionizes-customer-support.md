@@ -93,7 +93,8 @@ The workflow is as follows:
 
 ## Takeaways
 
-Key takeaways:
+Here are some key takeaways for organizations looking to modernize customer support with conversational agents:
+
 - Improve document-based information retrieval using Azure AI Search and related Azure services to deliver more accurate, context-aware responses.
 - Establish a secure integration layer with Azure services such as Azure Functions, Azure Key Vault, and Cosmos DB to connect with internal applications safely.
 - Extend analytics capabilities beyond Copilot Studio’s built-in tools by integrating Azure services with Power BI for deeper insights and reporting.
@@ -115,5 +116,5 @@ Nexi also aims to implement a full multi agent model, with specialized customer 
   - [Add user authentication to topics](/microsoft-copilot-studio/advanced-end-user-authentication)
 - Azure
   - [What is Azure Functions?](/azure/azure-functions/functions-overview)
-  - [What is Azure AI Search?](/search/search-what-is-azure-search)
+  - [What is Azure AI Search?](https://learn.microsoft.com/azure/search/search-what-is-azure-search)
   - [Azure App Service Overview](/azure/app-service/overview)
