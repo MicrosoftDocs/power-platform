@@ -12,9 +12,9 @@ ms.date: 01/19/2026
 
 # Nexi Group revolutionizes customer support with Copilot Studio
 
-Nexi Group, Europe’s leading PayTech company, supports cardholders and partner banks across 25 countries, representing about 65% of European card-based consumption. Operating at this scale requires managing thousands of card products, service variations, and regulatory requirements, often across multiple backend systems. For customers and contact center teams, even routine card operations can become complex, time-consuming, and error-prone.
+[Nexi Group](https://www.nexigroup.com/), Europe's leading PayTech company, supports cardholders and partner banks across 25 countries/regions, representing about 65% of European card-based consumption. Operating at this scale requires managing thousands of card products, service variations, and regulatory requirements, often across multiple backend systems. For customers and contact center teams, even routine card operations can become complex, time-consuming, and error-prone.
 
-To modernize its service experience, Nexi built a secure, AI-powered conversational agent by using Microsoft Copilot Studio and Azure AI services. The solution streamlines customer interactions, reduces contact center workload, and strengthens Nexi’s digital service reputation. Nexi was among the first to adopt generative AI, complementing its human‑assisted chat with an advanced agent powered by algorithmic and generative intelligence.
+To modernize its service experience, Nexi built a secure, AI-powered conversational agent by using Microsoft Copilot Studio and Azure AI services. The solution streamlines customer interactions, reduces contact center workload, and strengthens Nexi's digital service reputation. Nexi was among the first to adopt generative AI, complementing its human‑assisted chat with an advanced agent powered by algorithmic and generative intelligence.
 
 Today, the agent handles more than 3,000 customer interactions daily with a 70% satisfaction rate, significantly reducing escalations to live agents. By combining intelligent document retrieval, secure system integration, and advanced analytics, Nexi has redefined how card services are delivered. This approach improves customer experience, lowers operational costs, and establishes a scalable foundation for autonomous, multi-agent innovation.
 
@@ -26,17 +26,17 @@ In this case study, you learn how Nexi:
 
 ## Business challenges
 
-Nexi’s customer support teams relied on extensive documentation covering different card types, contractual conditions, and operational procedures. Because this information was spread across multiple sources, human agents had to manually search for information when assisting customers. This process increased handling time and made it difficult to consistently deliver fast, accurate responses.
+Nexi's customer support teams relied on extensive documentation covering different card types, contractual conditions, and operational procedures. Because this information was spread across multiple sources, human agents had to manually search for information when assisting customers. This process increased handling time and made it difficult to consistently deliver fast, accurate responses.
 
 Recognizing the need for better self-service capabilities without compromising security or compliance, Nexi set out to transform its existing documentation and backend processes into a conversational experience that could scale with demand.
 
 ## Solution
 
-Nexi’s conversational agent is deployed on their website, https://www.nexi.it/. Cardholders can interact with the agent using natural language and access self-service capabilities. It securely integrates with internal systems to support end-to-end processes such as blocking or reissuing cards and listing transactions, providing structured access to card services.  
+Nexi's conversational agent is deployed on their website, https://www.nexi.it/. Cardholders can interact with the agent using natural language and access self-service capabilities. It securely integrates with internal systems to support end-to-end processes such as blocking or reissuing cards and listing transactions, providing structured access to card services.  
 
-The following image shows how the agent appears on Nexi’s website.
+The following image shows how the agent appears on Nexi's website.
 
-:::image type="content" source="media/nexi/nexi-homepage-agent.png" alt-text="Screenshot of Nexi’s conversational agent supporting a user through a chat experience on the Nexi website." lightbox="media/nexi/nexi-homepage-agent.png":::
+:::image type="content" source="media/nexi/nexi-homepage-agent.png" alt-text="Screenshot of Nexi's conversational agent supporting a user through a chat experience on the Nexi website." lightbox="media/nexi/nexi-homepage-agent.png":::
 
 Key benefits include:
 
@@ -52,17 +52,17 @@ The agent handles more than 3,000 end-user interactions daily, with a satisfacti
 >
 > — *Clemente Pescatore, Global Head of Contact Center & RPA Factory*
 
-### Personalized and authenticated experiences 
+### Personalized and authenticated experiences
 
 The agent supports user authentication and adapts its responses based on the customer's authentication status and profile. Sessions start unauthenticated, so users can access general information. When customers request services that require personalization, such as card-specific actions, the agent prompts them to sign in.
 
 The following image shows how the agent prompts the user to authenticate and directs the user to the correct page.
 
-:::image type="content" source="media/nexi/nexi-agent-login.png" alt-text="Screenshot of Nexi’s conversational agent prompting the user to authenticate on the Nexi website." lightbox="media/nexi/nexi-agent-login.png":::
+:::image type="content" source="media/nexi/nexi-agent-login.png" alt-text="Screenshot of Nexi's conversational agent prompting the user to authenticate on the Nexi website." lightbox="media/nexi/nexi-agent-login.png":::
 
-After authentication, the agent retrieves only the documents and knowledge relevant to that customer’s card type and entitlements. For example, if a customer has a gold card, the agent surfaces only gold-specific information, avoiding irrelevant details about other cards that don’t apply.
+After authentication, the agent retrieves only the documents and knowledge relevant to that customer's card type and entitlements. For example, if a customer has a gold card, the agent surfaces only gold-specific information, avoiding irrelevant details about other cards that don't apply.
 
-This segmentation also enables proactive guidance by anticipating profile-specific questions and addressing them before they arise. Additionally, any customer inquiry that involves accessing Nexi’s internal systems requires prior authentication to ensure secure and personalized service.
+This segmentation also enables proactive guidance by anticipating profile-specific questions and addressing them before they arise. Additionally, any customer inquiry that involves accessing Nexi's internal systems requires prior authentication to ensure secure and personalized service.
 
 Behind these capabilities is a robust architecture that powers intelligent document retrieval, secure backend integration, and advanced analytics.
 
@@ -70,10 +70,10 @@ Behind these capabilities is a robust architecture that powers intelligent docum
 
 The architecture integrates the Copilot Studio agent with three core capability areas, each built on Azure services.
 
-:::image type="content" source="media/nexi/nexi-agent-architecture.png" alt-text="Diagram showing the technologies used including Copilot Studio, Azure AI services, and Power BI" lightbox="media/nexi/nexi-agent-architecture.png":::
+:::image type="content" source="media/nexi/nexi-agent-architecture.png" alt-text="Diagram showing the technologies used including Copilot Studio, Azure AI services, and Power BI." lightbox="media/nexi/nexi-agent-architecture.png":::
 
-1. **Intelligent document retrieval**: To overcome limitations of basic document uploads, Nexi implemented a Retrieval-Augmented Generation (RAG) architecture using Azure OpenAI and Azure AI Search. Documents are stored in Azure Storage and indexed with custom metadata - such as card tier and eligibility rules - using tailored chunking strategies. Azure OpenAI processes customer queries and generates grounded responses based on the most relevant retrieved content, delivering accurate, context-aware answers even when documents overlap.
-1. **Secure internal systems integration**: For transactional requests, the agent routes conversations to Azure Functions, which connect securely to Nexi’s internal web services. Azure Key Vault manages secrets, while Cosmos DB stores logs and audit records for traceability. This integration layer enables the agent to automate sensitive operations, such as blocking or reissuing cards, while maintaining strict security controls.
+1. **Intelligent document retrieval**: To overcome limitations of basic document uploads, Nexi implemented a Retrieval-Augmented Generation (RAG) architecture using Azure OpenAI and Azure AI Search. Documents are stored in Azure Storage and indexed with custom metadata—such as card tier and eligibility rules—using tailored chunking strategies. Azure OpenAI processes customer queries and generates grounded responses based on the most relevant retrieved content, delivering accurate, context-aware answers even when documents overlap.
+1. **Secure internal systems integration**: For transactional requests, the agent routes conversations to Azure Functions, which connect securely to Nexi's internal web services. Azure Key Vault manages secrets, while Cosmos DB stores logs and audit records for traceability. This integration layer enables the agent to automate sensitive operations, such as blocking or reissuing cards, while maintaining strict security controls.
 1. **Extended analytics and monitoring**: Copilot Studio telemetry is captured through Azure Monitor, Application Insights, and Log Analytics. These signals are consolidated and visualized in Power BI dashboards, providing real-time visibility into performance, customer satisfaction, and operational trends. The analytics layer supports both governance and continuous improvement.
 
 When AI-generated responses don't fully meet customer needs, Copilot Studio seamlessly escalates the interaction to a live agent in Genesys Cloud, preserving conversation context.
@@ -88,7 +88,7 @@ The workflow is as follows:
 - Copilot Studio manages intent recognition, based on Copilot Studio topics and trigger phrases, and routes the conversation accordingly. If no topic matches, it uses generative answers.
 - If the intent relates to document-based guidance, the query is routed to an App Service that retrieves relevant information from the indexed document collection.
 - If the intent involves backend actions, such as blocking or reissuing cards, the query is routed to an Azure Function that securely connects to internal systems.
-- Internal applications are accessed through a secure integration layer. 
+- Internal applications are accessed through a secure integration layer.
 - Analytics from the interactions are captured and visualized in a Power BI dashboard.
 - In cases where the generative response doesn't meet the customer's needs, the interaction can be escalated to a live agent in Genesys Cloud.
 
@@ -98,7 +98,7 @@ Here are some key takeaways for organizations looking to modernize customer supp
 
 - Improve document-based information retrieval by using Azure AI Search and related Azure services to deliver more accurate, context-aware responses.
 - Establish a secure integration layer with Azure services such as Azure Functions, Azure Key Vault, and Cosmos DB to connect safely with internal applications.
-- Extend analytics capabilities beyond Copilot Studio’s built-in tools by integrating Azure services with Power BI for deeper insights and reporting.
+- Extend analytics capabilities beyond Copilot Studio's built-in tools by integrating Azure services with Power BI for deeper insights and reporting.
 
 ## Looking ahead
 
@@ -118,4 +118,4 @@ Nexi also aims to implement a full multi-agent model, with specialized customer 
 - Azure
   - [What is Azure Functions?](/azure/azure-functions/functions-overview)
   - [What is Azure AI Search?](/azure/search/search-what-is-azure-search)
-  - [Azure App Service Overview](/azure/app-service/overview)
+  - [Azure App Service overview](/azure/app-service/overview)
