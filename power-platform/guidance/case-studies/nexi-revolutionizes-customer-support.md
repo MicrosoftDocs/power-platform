@@ -32,7 +32,7 @@ Recognizing the need for better self-service capabilities without compromising s
 
 ## Solution
 
-Nexi deploys its conversational agent on their website, https://www.nexi.it/. Cardholders can interact with the agent using natural language and access self-service capabilities. It securely integrates with internal systems to support end-to-end processes such as blocking or reissuing cards and listing transactions, providing structured access to card services.  
+Nexi’s conversational agent is deployed on their website, https://www.nexi.it/. Cardholders can interact with the agent using natural language and access self-service capabilities. It securely integrates with internal systems to support end-to-end processes such as blocking or reissuing cards and listing transactions, providing structured access to card services.  
 
 The following image shows how the agent appears on Nexi’s website.
 
