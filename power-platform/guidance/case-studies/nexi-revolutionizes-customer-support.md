@@ -12,7 +12,7 @@ ms.date: 01/19/2026
 
 # Nexi Group revolutionizes customer support with Copilot Studio
 
-Nexi Group, Europe’s leading PayTech company, support cardholders and partner banks across 25 countries, representing about 65% of European card-based consumption. Operating at this scale requires managing thousands of card products, service variations, and regulatory requirements, often across multiple backend systems. For customers and contact center teams, even routine card operations could become complex, time-consuming, and error-prone.
+Nexi Group, Europe’s leading PayTech company, supports cardholders and partner banks across 25 countries, representing about 65% of European card-based consumption. Operating at this scale requires managing thousands of card products, service variations, and regulatory requirements, often across multiple backend systems. For customers and contact center teams, even routine card operations could become complex, time-consuming, and error-prone.
 
 To modernize its service experience, Nexi built a secure, AI-powered conversational agent using Microsoft Copilot Studio and Azure AI services. The solution streamlines customer interactions, reduces contact center workload, and strengthens Nexi’s digital service reputation. Nexi was among the first to adopt generative AI, complementing its human‑assisted chat with an advanced agent powered by algorithmic and generative intelligence.
 
@@ -43,7 +43,7 @@ Key benefits include:
 
 - **Customer retention**: Tailored guidance eliminates frustration caused by navigating lengthy manuals with subtle but important differences.
 
-- **Greter business agility**: Business teams can update agent messages independently, while IT maintains oversight through custom security roles, streamlining changes without requiring IT intervention.
+- **Greater business agility**: Business teams can update agent messages independently, while IT maintains oversight through custom security roles, streamlining changes without requiring IT intervention.
 
 The agent handles over 3,000 end-user interactions daily, with a satisfaction rate of 70%.
 
@@ -51,7 +51,7 @@ The agent handles over 3,000 end-user interactions daily, with a satisfaction ra
 >
 > — *Clemente Pescatore, Global Head of Contact Center & RPA Factory*
 
-**Personalized and authenticated experiences** 
+### Personalized and authenticated experiences 
 
 The agent supports user authentication and adapts its responses based on the customer's login status and profile. Sessions start unauthenticated, allowing access to general information. When customers request services that require personalization, such as card-specific actions, the agent prompts them to sign in.
 
@@ -118,5 +118,5 @@ Nexi also aims to implement a full multi agent model, with specialized customer 
   - [Add user authentication to topics](/microsoft-copilot-studio/advanced-end-user-authentication)
 - Azure
   - [What is Azure Functions?](/azure/azure-functions/functions-overview)
-  - [What is Azure AI Search?] (/search/search-what-is-azure-search)
+  - [What is Azure AI Search?](/search/search-what-is-azure-search)
   - [Azure App Service Overview](/azure/app-service/overview)
