@@ -113,7 +113,7 @@ Nexi also aims to implement a full multi agent model, with specialized customer 
   - [Quickstart: Create and deploy an agent](/microsoft-copilot-studio/fundamentals-get-started)
   - [Copilot Studio Implementation Guide](https://aka.ms/CopilotStudioImplementationGuide)
   - [Microsoft Copilot Studio guidance documentation](/microsoft-copilot-studio/guidance/)
-  - [Capture telemetry with Application Insights](/advanced-bot-framework-composer-capture-telemetry)
+  - [Capture telemetry with Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry)
   - [Configure user authentication in Copilot Studio](/microsoft-copilot-studio/configuration-end-user-authentication)
   - [Add user authentication to topics](/microsoft-copilot-studio/advanced-end-user-authentication)
 - Azure
