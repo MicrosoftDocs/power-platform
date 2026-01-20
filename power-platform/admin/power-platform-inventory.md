@@ -57,7 +57,7 @@ The Power Platform inventory includes:
 
 ## Access requirements
 
-To view the Power Platform inventory, you must hold one of the following tenant-wide administrative roles: [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) or [Dynamics 365 administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator). If you do not have one of these roles, you can't access the inventory.
+To view the Power Platform inventory, you must hold one of the following tenant-wide administrative roles: [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) or [Dynamics 365 administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator). If you don't have one of these roles, you can't access the inventory.
 
 ## Where to access Power Platform inventory
 
@@ -111,7 +111,7 @@ Quickly search for keywords across all entries currently loaded in the inventory
 - Or select the resource's display name to be redirected to its details page in the Copilot Studio, Power Apps, or Power Automate portal.
 
     > [!NOTE]
-    > You need sufficient permission to access the resource details page. Without permission, you'll only see a **This link is broken** error.
+    > You need sufficient permission to access the resource details page. Without permission, you see a **This link is broken** error.
 
 - Select the environment name to view the environment details.
 
@@ -127,7 +127,7 @@ Quickly search for keywords across all entries currently loaded in the inventory
 
 - **Un-published model-driven apps:** Only published, model-driven apps are captured.
   
-- **Model-driven apps in the default environment:** The default environment comes with three pre-installed model-driven apps: Power Platform Environment Settings, Power Pages Management, and Solution Health Hub. These don't appear in the inventory initially unless they are edited and re-published.
+- **Model-driven apps in the default environment:** The default environment comes with three preinstalled model-driven apps: Power Platform Environment Settings, Power Pages Management, and Solution Health Hub. These don't appear in the inventory initially unless they're edited and republished.
 
 ## Programmatic access
 
