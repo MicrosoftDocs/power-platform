@@ -40,17 +40,17 @@ To be able to properly respond to the new employee’s questions the agent will 
 
 ## Components
 
-​**​Power Platform environment** – Contains the Power Platform resources such as the agent built in Copilot Studio, any supporting Power Apps that implement the human in the loop user experience. These resources are moved from one environment to another (e.g. dev to test) using Dataverse solutions. 
+​**[​Power Platform environment](/power-platform/admin/environments-overview)**: Contains the Power Platform resources such as the agent built in Copilot Studio, any supporting Power Apps that implement the human in the loop user experience. These resources are moved from one environment to another (e.g. dev to test) using Dataverse solutions. 
 
-**​Copilot Studio agents** - Copilot Studio is used to implement the agents in the solution. The primary agent, the Onboarding Agent, interacts with users directly or it can be triggered autonomously. While multiple agents are not required for this scenario, they can be used to break up the agent into more manageable components. For example, an Onboarding Learning agent could handle all the learning plan related tasks. 
+**​[Copilot Studio agents](/microsoft-copilot-studio)**: Copilot Studio is used to implement the agents in the solution. The primary agent, the Onboarding Agent, interacts with users directly or it can be triggered autonomously. While multiple agents are not required for this scenario, they can be used to break up the agent into more manageable components. For example, an Onboarding Learning agent could handle all the learning plan related tasks. 
 
-​**Power Apps** – Power Apps is used to implement the user experience of the manager of the candidate that is going through the onboarding. Using the application, they could monitor the progress of their candidate and address any blockers to keep things moving.   
+​**[Power Apps](/power-apps)**: Power Apps is used to implement the user experience of the manager of the candidate that is going through the onboarding. Using the application, they could monitor the progress of their candidate and address any blockers to keep things moving.   
 
-​**Power Platform custom connectors** – Custom connectors would be implemented to interact with any HR candidate systems or learning management systems that didn’t have certified connectors available. 
+​**[Power Platform custom connectors](/connectors/custom-connectors)**: Custom connectors would be implemented to interact with any HR candidate systems or learning management systems that didn’t have certified connectors available. 
 
-​**Dataverse** - Dataverse can be used to track the onboarding process. From the time the candidate starts onboarding to when they complete the process, Dataverse will be used to centralize the progress of the onboarding. This detailed data can also be synchronized with Microsoft Fabric using the built-in capabilities to allow insights on the overall onboarding process to be analyzed. 
+​**[Dataverse](/power-apps/maker/data-platform)**: Dataverse can be used to track the onboarding process. From the time the candidate starts onboarding to when they complete the process, Dataverse will be used to centralize the progress of the onboarding. This detailed data can also be synchronized with Microsoft Fabric using the built-in capabilities to allow insights on the overall onboarding process to be analyzed. 
 
-​**Microsoft 365 Document Library** – Storing the FAQs, training guidance and other onboarding process knowledge information in a document library allows these assets to be easily used as a knowledge source by the different agents.​ 
+​**Microsoft 365 Document Library**: Storing the FAQs, training guidance and other onboarding process knowledge information in a document library allows these assets to be easily used as a knowledge source by the different agents.​ 
 
 ## Considerations
 
