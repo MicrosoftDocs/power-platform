@@ -4,8 +4,9 @@ description: Learn how to get a comprehensive, unified view of all agents, apps,
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 01/19/2026
+ms.date: 01/20/2026
 ms.topic: concept-article
+
 ---
 
 # Power Platform inventory (preview)
@@ -56,7 +57,7 @@ The Power Platform inventory includes:
 
 ## Access requirements
 
-To view the Power Platform inventory, you must hold one of the following tenant-wide administrative roles: Global Administrator, [Power Platform Administrator](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator), or [Dynamics 365 Administrator](/power-platform/admin/use-service-admin-role-manage-tenant#dynamics-365-administrator). If you do not have one of these roles, you will not be able to access the inventory.
+To view the Power Platform inventory, you must hold one of the following tenant-wide administrative roles: [Power Platform administrator](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator) or [Dynamics 365 administrator](/power-platform/admin/use-service-admin-role-manage-tenant#dynamics-365-administrator). If you do not have one of these roles, you can't access the inventory.
 
 ## Where to access Power Platform inventory
 
@@ -82,9 +83,9 @@ For example, you can combine multiple filters to narrow down your results. Each 
 
 1. **Environment type**: Select the **Environment type** column and select **Default**. You see all resources in the default environment.
 
-2. **Owner**: Select the **Owner** column and type the name of the person. You now see all resources owned by this person in the default environment.
+2. **Owner**: Select the **Owner** column and type the name of the person. You see all resources owned by this person in the default environment.
 
-3. **Creation date**: Select the **Created on** column and apply the date filters from January 2025 to today's date. You now see all resources owned by this person, in the default environment, that they created in the year 2025.
+3. **Creation date**: Select the **Created on** column and apply the date filters from January 2025 to today's date. You see all resources owned by this person, in the default environment, that they created in the year 2025.
 
 To clear all filters and sorts, select any column and choose **Clear all filters**.
 
@@ -101,7 +102,7 @@ The inventory table provides the option to display more columns to help you bett
 Quickly search for keywords across all entries currently loaded in the inventory table. The **Search** box is designed to help you find specific resources fast.
 
 > [!NOTE]
-> The search only applies to resources visible in the UI (up to 1,000 at a time). If your inventory exceeds this limit, apply filters to narrow down the results and bring the resources you need into view.
+> The search only applies to resources visible in the user interface (up to 1,000 at a time). If your inventory exceeds this limit, apply filters to narrow down the results and bring the resources you need into view.
 
 ## View resource details
 
@@ -131,7 +132,7 @@ Power Platform inventory data is available programmatically, supporting advanced
 
 ### Power Platform API
 
-If you're new to the Power Platform API, review [Getting Started with Power Platform API](/power-platform/admin/powerplatform-api-getting-started) guide for setup instructions and authentication details. Once you're set up, refer to the [Inventory API documentation](/power-platform/admin/inventory-api) to learn how to query your inventory data.
+If you're new to the Power Platform API, review [Getting Started with Power Platform API](/power-platform/admin/powerplatform-api-getting-started) for setup instructions and authentication details. Once you're set up, refer to the [Inventory API documentation](/power-platform/admin/inventory-api) to learn how to query your inventory data.
 
 ### Azure Resource Graph
 
@@ -147,7 +148,7 @@ You can programmatically query your Power Platform inventory using Azure Resourc
 
 ### Sample queries
 
-The following are example queries you can use with any of the Azure Resource Graph interfaces. All queries use the `PowerPlatformResources` table, which contains your organization's inventory data.
+The following are example queries you can use with any of the Azure Resource Graph interfaces. All queries use the **PowerPlatformResources** table, which contains your organization's inventory data.
 
 #### Query 1: Total count of _all_ resources
 
