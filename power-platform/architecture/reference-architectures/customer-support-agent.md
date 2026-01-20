@@ -46,9 +46,9 @@ To be able to assist with customer problem resolution the solution will require 
 
 1. **​Handling the transfer**: When the Transfer conversation occurs the agent uses the configured Customer Engagement Hub to hand off the user to the configured hub for further processing. The following are the Customer Engagement Hub options on the channel configuration panel for the agent.
 
-:::image type="content" source="media/customer-support-agent/customer-engagement-hub.png" alt-text="Screenshot that shows the customer engagement hub with chat handoff options to live agents through integrated platforms like Dynamics 365." lightbox="media/customer-support-agent/customer-engagement-hub.png":::
+   :::image type="content" source="media/customer-support-agent/customer-engagement-hub.png" alt-text="Screenshot that shows the customer engagement hub with chat handoff options to live agents through integrated platforms like Dynamics 365." lightbox="media/customer-support-agent/customer-engagement-hub.png":::
 
-Using Dynamics 365 as an example, when the transfer happens the context information passed is used to route the session to the appropriate workstream that the agent is associated with. The workstream configuration includes routing and queues that result in the transferred session being handed to the appropriate agent. The agent is then able to directly interact with the customer using the Copilot service workspace where they receive a summary of the customers’ prior interactions and can interact with them using the tools provided Dynamics 365. Similar experiences can be accomplished with other providers or using integration using the custom engagement hub capabilities available for other solutions not specifically listed.
+   Using Dynamics 365 as an example, when the transfer happens the context information passed is used to route the session to the appropriate workstream that the agent is associated with. The workstream configuration includes routing and queues that result in the transferred session being handed to the appropriate agent. The agent is then able to directly interact with the customer using the Copilot service workspace where they receive a summary of the customers’ prior interactions and can interact with them using the tools provided Dynamics 365. Similar experiences can be accomplished with other providers or using integration using the custom engagement hub capabilities available for other solutions not specifically listed.
 
 1. **Escalation Insights**: Using escalation analysis can help you understand how your agent handles interactions and when they are not handling them and they are escalated. When an agent is able to answer the user query without having to escalate to a human representative, that's a deflection. The ideal goal is to increase the deflection rate of an agent by reducing the number of escalations. Using built-in analytics all the agent sessions that led to an escalation or transfer to a representative are captured from beginning to end. The analytics dashboard has a section for "Escalation Rate Drivers", which gives details on which agent topics were escalated to human representatives most of the time and why. Using this information, you can customize your agent to increase your deflections.​
 
@@ -112,32 +112,5 @@ These considerations implement the pillars of Power Platform Well-Architected, w
 - [Copilot Studio guidance](/microsoft-copilot-studio/guidance)
 - [Copilot Studio implementation guide (PDF)](https://aka.ms/CopilotStudioImplementationGuide)
 - [Knowledge sources summary](/microsoft-copilot-studio/knowledge-copilot-studio)
-- [Agents for customer engagement and handoff](microsoft-copilot-studio/customer-copilot-overview)
+- [Agents for customer engagement and handoff](/microsoft-copilot-studio/customer-copilot-overview)
 - [Hand off to a live agent](/microsoft-copilot-studio/advanced-hand-off)
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
