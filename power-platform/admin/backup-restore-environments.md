@@ -261,11 +261,11 @@ Production environments that have been created with a database give you the opti
 
 ### Can I move my data from an online environment to an on-premises version?
 
-It isn't possible to obtain a copy of your database backup. If you want to move your online data to Dynamics 365 Customer Engagement (on-premises), data migration is required. For smaller data sets, consider [exporting data to Excel](/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft AppSource](https://appsource.microsoft.com/).
+It isn't possible to obtain a copy of your database backup. If you want to move your online data to Dynamics 365 Customer Engagement (on-premises), data migration is required. For smaller data sets, consider [exporting data to Excel](/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft Marketplace](https://marketplace.microsoft.com/).
 
 ### How can I download a copy of my backup?
 
-It isn't possible to obtain a copy of your database backup. Moving your online data requires data migration. For smaller data sets, consider [exporting data to Excel](/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft AppSource](https://appsource.microsoft.com/).
+It isn't possible to obtain a copy of your database backup. Moving your online data requires data migration. For smaller data sets, consider [exporting data to Excel](/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft Marketplace](https://marketplace.microsoft.com/).
 
 ### Is there a database size restriction for backing up or restoring an organization through the user interface or API?
 

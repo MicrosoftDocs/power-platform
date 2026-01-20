@@ -1,6 +1,6 @@
 ---
-title: "Step 3: Create an AppSource package for your app | Microsoft Docs"
-description: "Learn about how to create an AppSource package (.zip file) to include your solution and demo data files along with other required files."
+title: "Step 3: Create a Marketplace package for your app | Microsoft Docs"
+description: "Learn about how to create a Marketplace package (.zip file) to include your solution and demo data files along with other required files."
 ms.date: 05/22/2023
 ms.reviewer: pehecke
 ms.topic: how-to
@@ -10,24 +10,24 @@ ms.subservice: developer
 search.audienceType: 
   - developer
 ---
-# Step 3: Create an AppSource package for your app
+# Step 3: Create a Marketplace package for your app
 
-You must create an AppSource package (.zip file) to include your solution and demo data files along with other required files. An AppSource package consists of the following files:
+You must create a Marketplace package (.zip file) to include your solution and demo data files along with other required files. a Marketplace package consists of the following files:
 
 |File|Description|
 |--|--|
 |Package file|A package file used by Package Deployer tool to deploy your solutions and demo configuration data into multiple languages.|
-|[Content_Types].xml|File that provides MIME type information of the file type extensions included in the AppSource package. Typically, these are .config, .dll, .exe, .xml, and .zip file types, but you can add almost any file type that is supported by Windows.|
-|Icon file|An image file for the appsource package icon; size should be 32x32 pixels. Valid image formats are PNG and JPG.|
+|[Content_Types].xml|File that provides MIME type information of the file type extensions included in the Marketplace package. Typically, these are .config, .dll, .exe, .xml, and .zip file types, but you can add almost any file type that is supported by Windows.|
+|Icon file|An image file for the Marketplace package icon; size should be 32x32 pixels. Valid image formats are PNG and JPG.|
 |HTML file|File containing your License terms.|
-|Input.xml|Files that describes the assets in your AppSource package.|
+|Input.xml|Files that describes the assets in your Marketplace package.|
 
 
 ## Create a Package file
 
 A package lets you bundle and deploy multiple files related to your app at once. 
 
-1. Create a Dynamics 365 package to include the solution and configuration data files that you created in [Step 2: Create a managed solution for your app](create-solution-app.md). A package can also contain custom code that can run before, while, or after the package is deployed to the Microsoft Dataverse instance. For more information about creating a package file, see [Create packages for the Package Deployer](/power-platform/alm/package-deployer-tool).
+1. Create a Dynamics 365 package to include the solution and configuration data files that you created in [Step 2: Create a managed solution for your app](../marketplace/create-solution-app.md). A package can also contain custom code that can run before, while, or after the package is deployed to the Microsoft Dataverse instance. For more information about creating a package file, see [Create packages for the Package Deployer](/power-platform/alm/package-deployer-tool).
 
     After you have created a package, your package will consist of the following things:
 
@@ -35,7 +35,7 @@ A package lets you bundle and deploy multiple files related to your app at once.
   
     - **\<PackageName>.dll**: The assembly contains the custom code for your package. For example: **SamplePackage.dll**.
 
-2. Next, create a **[Content_Types].xml** file that provides MIME type information of the file type extensions that are included in your package. This is separate from the one that will be included again in the AppSource package. Here is the sample contents of a [Content_Types].xml file with file types listed:
+2. Next, create a **[Content_Types].xml** file that provides MIME type information of the file type extensions that are included in your package. This is separate from the one that will be included again in the Marketplace package. Here is the sample contents of a [Content_Types].xml file with file types listed:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -72,7 +72,7 @@ A package lets you bundle and deploy multiple files related to your app at once.
 
 You can reuse the **[Content_Types].xml** that you created in the previous section under step 2.
 
-## Create an icon for your AppSource package
+## Create an icon for your Marketplace package
 
 Create an icon file of size 32x32 to display along with the preferred solution name and description in the Dynamics 365 Administration Center portal. Valid file formats are PNG and JPG.
 
@@ -114,8 +114,8 @@ Here is a description of the elements in the **Input.xml** file.
 |ProviderName|Name of the solution provider. If created by a Microsoft internal team, specify **Microsoft**.|
 |PackageFile|Name of package (.zip file) for the Package Deployer tool. This zip file should contain the package assembly, the package folder with your app assets, and the Content_Types.xml file. For example, the package.zip file created under the [Create a Package file](#create-a-package-file) section.|
 |SolutionAnchorName|Name of the solution zip file in the package that is used for the display name and description of solution assets.|
-|StartDate|Date on which the app becomes available on AppSource. The format is MM/DD/YYYY.|
-|EndDate|Date on which the app stops being available on AppSource. The format is MM/DD/YYYY.|
+|StartDate|Date on which the app becomes available on Marketplace. The format is MM/DD/YYYY.|
+|EndDate|Date on which the app stops being available on Marketplace. The format is MM/DD/YYYY.|
 |SupportedCountries|This is a comma-separated list of countries or regions where the app should be available. At the time of writing this article, the supported countries list is the following: <br/>AD,AE,AF,AG,AI,AL,AM,AO,AQ,AR,AS,AT,AU,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BR,BS,BT,BV,BW,BY,<br/>BZ,CA,CC,CD,CF,CG,CH,CI,CK,CL,CM,CN,CO,CR,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,ER,ES,ET,FI,FJ,FK,FM,<br/>FO,FR,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HK,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IS,<br/>IT,JE,JM,JO,JP,KE,KG,KH,KI,KM,KN,KR,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,<br/>MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,NZ,OM,PA,PE,PF,PG,PH,PK,PL,PM,<br/>PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,ST,SV,SZ,TC,TD,TF,TG,TH,TJ,<br/>TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,US,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,YE,YT,ZA,ZM,ZW |
 |LearnMoreLink|URL to the detailed information page for this package.|
 |Locales|An instance of this node for each language you want to support in the Preferred solution UI. This node contains the following children elements:<br/>- **PackageLocale.Code**: LCID of the language for this node. Example: US English is 1033<br/>&nbsp;&nbsp;**Note**: Please make sure to have same locale codes in both solution.xml and input.xml files.<br/>- **PackageLocale.IsDefault**: Indicates the default language. This is used as the fallback language if the language chosen by the customer is not available.<br/>- **Logo**: Logo for your app package. Size of the image must be 32x32. Valid image formats are PNG and JPG.<br/>- **Terms**: Name of the HTML file that contains your license terms for each language.|
@@ -123,13 +123,11 @@ Here is a description of the elements in the **Input.xml** file.
 > [!IMPORTANT]
 > For the `SupportedCountries` element, ensure not to have any spaces and new line keywords between the country codes.
 
-## Add the items to an AppSource package
+## Add the items to a Marketplace package
 
 The final step is to add all the components that you created earlier into a single compressed (zip) file, which will be your app source package.
 
 1. Navigate to the folder that contains the package file, [Content_Types].xml, icon, license terms file (HTML), select them all, right-click and then select **Send to** > **Compressed (zipped) folder**.
-
-    :::image type="content" source="media/appsource-package.png" alt-text="AppSource package":::
 
     > [!IMPORTANT]
     > You must follow the content structure precisely for your package as described here. Otherwise, your package will fail during certification. Some common issues that lead to certification failure are incorrect file names or a nested file structure.
@@ -138,4 +136,4 @@ The final step is to add all the components that you created earlier into a sing
  
 
 > [!div class="nextstepaction"]
-> [Step 4: Store your AppSource Package on Azure Storage and generate a URL with SAS key](store-package-azure-storage.md)
+> [Step 4: Store your Marketplace Package on Azure Storage and generate a URL with SAS key](../marketplace/store-package-azure-storage.md)

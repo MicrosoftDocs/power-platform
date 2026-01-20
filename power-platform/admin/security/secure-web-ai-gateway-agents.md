@@ -1,7 +1,7 @@
 ---
 title: Global Secure Access for Copilot Studio agents (preview)
 description: Learn how to configure the Secure Web and AI Gateway for Microsoft Copilot Studio agents to enforce network security controls.
-ms.date: 11/05/2025
+ms.date: 01/13/2026
 ms.topic: how-to
 author: fgomulka
 ms.author: frankgomulka
@@ -98,7 +98,10 @@ To configure Global Secure Access settings at the environment group-level, compl
 - Currently the block experience for Copilot Studio agents blocked by GSA shows a `502 Bad Gateway` for HTTP Actions or a `403 Forbidden` for connectors. This experience is a known issue, and improvements are coming soon.
 - Currently only the baseline profile is supported for enforcement, so network security policies are per-tenant.
 - GSA partner ecosystem integrations, for example, third-party Data Loss Prevention (DLP), aren't supported.
-- Copilot Studio Bing search network transactions not supported.
+- Copilot Studio Bing search network transactions (including knowledge from _public websites_ and _Wikipedia_) aren't supported.
+- Network requests to Dataverse and Azure SQL knowledge sources aren't supported. 
+- Network requests to the following custom tools aren't supported: prompt, agent flow, Computer Use, and child agents.
+- Network requests to Large Language Model (LLM), either for orchestration or results enhancement, aren't supported.
 - Limited connector support (see [supported connectors](#supported-connectors) for details).
 - Connectors other than those listed in [supported connectors](#supported-connectors) are not supported and may not function reliably.
 
