@@ -21,7 +21,6 @@ Customer service teams often struggle with high ticket volumes, repetitive queri
 
 :::image type="content" source="media/customer-support-agent/architecture.png" alt-text="Diagram that shows integration points and knowledge sources for creating a conversational customer support agent in Copilot Studio." lightbox="media/customer-support-agent/architecture.png":::
 
-
 ### Knowledge sources
 
 To be able to assist with customer problem resolution the solution will require several knowledge sources to be available.
