@@ -46,9 +46,9 @@ To be able to properly respond to the new employee’s questions the agent will 
 
 [​**Power Apps​**](/power-apps): Power Apps is used to implement the user experience of the manager of the candidate that is going through the onboarding. Using the application, they could monitor the progress of their candidate and address any blockers to keep things moving.   
 
-[​**Power Platform custom connectors​**](/connectors/custom-connectors)**: Custom connectors would be implemented to interact with any HR candidate systems or learning management systems that didn’t have certified connectors available. 
+[​**Power Platform custom connectors​**](/connectors/custom-connectors): Custom connectors would be implemented to interact with any HR candidate systems or learning management systems that didn’t have certified connectors available. 
 
-[​**Microsoft Dataverse**](/power-apps/maker/data-platform)**: Dataverse can be used to track the onboarding process. From the time the candidate starts onboarding to when they complete the process, Dataverse will be used to centralize the progress of the onboarding. This detailed data can also be synchronized with Microsoft Fabric using the built-in capabilities to allow insights on the overall onboarding process to be analyzed. 
+[​**Microsoft Dataverse**](/power-apps/maker/data-platform): Dataverse can be used to track the onboarding process. From the time the candidate starts onboarding to when they complete the process, Dataverse will be used to centralize the progress of the onboarding. This detailed data can also be synchronized with Microsoft Fabric using the built-in capabilities to allow insights on the overall onboarding process to be analyzed. 
 
 ​**Microsoft 365 Document Library**: Storing the FAQs, training guidance and other onboarding process knowledge information in a document library allows these assets to be easily used as a knowledge source by the different agents.​ 
 
