@@ -57,7 +57,7 @@ The Power Platform inventory includes:
 
 ## Access requirements
 
-To view the Power Platform inventory, you must hold one of the following tenant-wide administrative roles: [Power Platform administrator](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator) or [Dynamics 365 administrator](/power-platform/admin/use-service-admin-role-manage-tenant#dynamics-365-administrator). If you do not have one of these roles, you can't access the inventory.
+To view the Power Platform inventory, you must hold one of the following tenant-wide administrative roles: [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) or [Dynamics 365 administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator). If you do not have one of these roles, you can't access the inventory.
 
 ## Where to access Power Platform inventory
 
@@ -108,7 +108,10 @@ Quickly search for keywords across all entries currently loaded in the inventory
 
 - Select a resource, then select the **Details** option in the command bar.
 
-- Or select the resource's display name to be redirected to its details page in the Copilot Studio, Power Apps, or Power Automate portal. **Note**: You need sufficient permission to access the resource details page. Without permission, you'll only see a **This link is broken** error.
+- Or select the resource's display name to be redirected to its details page in the Copilot Studio, Power Apps, or Power Automate portal.
+
+    > [!NOTE]
+    > You need sufficient permission to access the resource details page. Without permission, you'll only see a **This link is broken** error.
 
 - Select the environment name to view the environment details.
 
@@ -132,7 +135,7 @@ Power Platform inventory data is available programmatically, supporting advanced
 
 ### Power Platform API
 
-If you're new to the Power Platform API, review [Getting Started with Power Platform API](/power-platform/admin/powerplatform-api-getting-started) for setup instructions and authentication details. Once you're set up, refer to the [Inventory API documentation](/power-platform/admin/inventory-api) to learn how to query your inventory data.
+If you're new to the Power Platform API, review [Getting Started with Power Platform API](powerplatform-api-getting-started.md) for setup instructions and authentication details. Once you're set up, refer to the [Inventory API documentation](inventory-api.md) to learn how to query your inventory data.
 
 ### Azure Resource Graph
 
