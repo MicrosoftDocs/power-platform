@@ -18,7 +18,7 @@ You can view many Microsoft Power Automate activities in Microsoft Purview, such
 - connector calls by specific users and agents
 - flow runs or failures by specific users or agents
 
-You can also view activity logs within specific date ranges to gain insights. It's important to regularly audit Microsoft Power Automate activities in Microsoft Purview to:
+You can also view activity logs within specific date ranges to gain insights. Regularly auditing Microsoft Power Automate activities in Microsoft Purview helps you:
 
 - maintain governance, compliance, and security
 - gain operational insights
@@ -62,7 +62,7 @@ The SDK layer handles logging, so a single action can trigger multiple logged ac
 |Hosted RPA | Microsoft Entra ID joined | When a hosted RPA bot is joined to a customer's tenant Microsoft Entra ID.|
 
 > [!TIP]
-> Use RecordType *PowerPlatformAdministratorActivity* to view Hosted RPA events.
+> Use RecordType `PowerPlatformAdministratorActivity*` to view hosted robotic process automation (RPA) events.
 
 ## Get details on base schema for logging
 
@@ -89,7 +89,7 @@ Schemas define which Power Automate fields are sent to the Microsoft Purview com
 
 ## Limitations
 
-Only activities from cloud flows are available in the [Microsoft Purview portal](https://compliance.microsoft.com/). Desktop flow activities are in the Microsoft Dataverse audit logs.
+You can only view cloud flow activities in the [Microsoft Purview portal](https://compliance.microsoft.com/). If you want to see desktop flow activities, they're available in the Microsoft Dataverse audit logs. You also have the option to [monitor desktop flow runs in Power Automate](/power-automate/desktop-flows/monitor-desktop-flow-runs).
 
 ### Related content
 

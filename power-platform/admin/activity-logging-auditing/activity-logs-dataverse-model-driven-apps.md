@@ -24,7 +24,7 @@ Regularly view Microsoft Dataverse activities in Microsoft Purview to:
 
 - maintain governance, compliance, and security
 - gain operational insights
-- identify and troubleshoot issues
+- identify and troubleshoot problems
 - mitigate failures.
 
 This article covers prerequisites, how to access your data in Microsoft Purview's compliance portal, and details about Dataverse and model-driven apps events and schema.
@@ -50,18 +50,18 @@ Learn more:
 
 ## User and support-related events audited
 
-Logging takes place at the SDK layer which means a single action can trigger multiple events that are logged. The table covers common examples of user and support-related events.
+Logging takes place at the SDK layer, which means a single action can trigger multiple logged events. The following table covers common examples of user and support-related events.
 
 |Event  |Description  |
 |---------|---------|
-|Create, read, update, delete (CRUD)     |Logging all CRUD activities essential for understanding the impact of a problem and being compliant with data protection impact assessments (DPIA). |
-|Multiple record view     |Users of Dynamics view information in bulk, like grid views, Advanced Find search, etc. Critical customer content information is part of these views.|
-|Export to Excel     |Exporting data to Excel moves the data outside of the secure environment and is vulnerable to threats.|
-|SDK calls via surround or custom apps    |Actions taken via the core platform or surround apps calling into the SDK to perform an action needs to be logged.|
+|Create, read, update, delete (CRUD)     |Logging all CRUD activities is essential for understanding the impact of a problem and being compliant with data protection impact assessments (DPIA). |
+|Multiple record view     |Users of Dynamics view information in bulk, like grid views, Advanced Find search, and more. Critical customer content information is part of these views.|
+|Export to Excel     |Exporting data to Excel moves the data outside of the secure environment and makes it vulnerable to threats.|
+|SDK calls via surround or custom apps    |Actions taken via the core platform or surround apps that call into the SDK to perform an action need to be logged.|
 |All support CRUD activities     |Microsoft support engineer activities on customer environment.|
 |Backend commands     |Microsoft support engineer activities on customer tenant and environment.|
 |Report Viewed  |Logging when a report is viewed. Critical customer content information might be displayed on the report.  |
-|Report Viewer Export  |Exporting a report to different formats moves the data outside of the secure environment and is vulnerable to threats.  |
+|Report Viewer Export  |Exporting a report to different formats moves the data outside of the secure environment and makes it vulnerable to threats.  |
 |Report Viewer Render Image  |Logging multimedia assets that are shown when a report is displayed. They might contain critical customer information.  |
 
 ## Base schema
@@ -75,11 +75,11 @@ Schemas define which fields are sent to the Microsoft Purview portal. Some field
 |Id     |Edm.Guid         |No         |Unique GUID for every row logged          |
 |Result Status     |Edm.String         |No         |Status of the row logged. Success in most cases          |
 |Organization Id     |Edm.Guid         |Yes        |Unique identifier of the organization from which the log was generated. You can find this ID under Dynamics Developer Resources.          |
-|ClientIP     |Edm.String         |No         |IP Address of the user or corporate gateway          |
+|ClientIP     |Edm.String         |No         |IP address of the user or corporate gateway          |
 |CorrelationId     |Edm.Guid         |No         |A unique value used to associate related rows (for example, when a large row is split)          |
 |CreationTime     |Edm.Date         |No         |Date and time of when the log was generated in UTC          |
 |Operation     |Edm.Date         |No         |Name of the message called in the SDK          |
-|UserKey     |Edm.String         |No         |Unique Identifier of the User in Microsoft Entra ID. AKA User PUID          |
+|UserKey     |Edm.String         |No         |Unique identifier of the user in Microsoft Entra ID. Also known as User PUID          |
 |UserType     |Self.UserType         |No         |The Microsoft 365 audit type (Regular, System)          |
 |User     |Edm.String        |No         |Primary email of the user          |
 
@@ -112,9 +112,9 @@ The customer engagement apps schema contains fields specific to customer engagem
 
 ## See what's logged
 
-For a list of what's logged with Activity Logging, see [Microsoft.Crm.Sdk.Messages Namespace](/dotnet/api/microsoft.crm.sdk.messages).
+For a list of what's logged by Activity Logging, see [Microsoft.Crm.Sdk.Messages Namespace](/dotnet/api/microsoft.crm.sdk.messages).
 
-We log all SDK messages except the following:
+The system logs all SDK messages except the following messages:
 
 - WhoAmI
 - RetrieveFilteredForms
@@ -144,9 +144,9 @@ We log all SDK messages except the following:
 
 ## How we categorize Read and ReadMultiple
 
-We use the prefix to categorize.
+We use the prefix to categorize each request.
 
-|If the request starts with:  |We characterize as:  |
+|If the request starts with:  |The category is:  |
 |---------|---------|
 |RetrieveMultiple     |ReadMultiple  |
 |ExportToExcel     |ReadMultiple |
@@ -162,7 +162,7 @@ We use the prefix to categorize.
 
 ## Example generated logs
 
-The following are some examples of activity logs.
+The following entries are examples of activity logs.
 
 ### Example 1 – Logs generated when user reads an Account record
 
@@ -179,7 +179,7 @@ The following are some examples of activity logs.
 |  QueryResults   |                                                         N/A                                                         |
 |     ItemURL     | `https://orgname.onmicrosoft.com/main.aspx?etn=account&pagetype=entityrecord&id=00aa00aa-bb11-cc22-dd33-44ee44ee44ee` |
 
-### Example 2 – Logs generated when user sees Account records in a Grid (Export to Microsoft Excel logs are like this)
+### Example 2 – Logs generated when user sees Account records in a grid (Export to Microsoft Excel logs are like this)
 
 |**Schema Name**  |**Value**  |
 |---------|---------|
@@ -204,12 +204,12 @@ The following are some examples of activity logs.
 |a0469f30-078b-419d-be61-b04c9a34121f      |1cad069e-4d22-e811-a953-000d3a732d76          |Lead         |Update         |
 |0975bceb-07c7-4dc2-b621-5a7b245c36a4      |1cad069e-4d22-e811-a953-000d3a732d76          |Lead         |Update         |
 
-## Known Issues
+## Known issues
 
-- Office has a 3-KB limit for each audit record. Therefore, in some cases a single record from customer engagement apps needs to be split into multiple records in Office. The CorrelationId field can be used to retrieve the set of split records for a given source record. Operations that are likely to require splitting include RetrieveMultiple and ExportToExcel.
-- Some operations need more processing to retrieve all relevant data. For example, RetrieveMultiple and ExportToExcel are processed to extract the list of records that are retrieved or exported. However, not all relevant operations are yet processed. For example, ExportToWord is currently logged as single operation with no other details about what was exported.
-- In future releases, logging is disabled for operations deemed unnecessary based on a review of the logs. For example, some operations originate from automated system activity rather than user actions.
-- In some record instances, the EntityName value may be marked with Unknown. These records aren't related to any specific entity related operation and came in blank from CRM. They all have entity ID of 0000000-0000-0000-0000-000000000000.
+- Office has a 3-KB limit for each audit record. Therefore, in some cases, a single record from customer engagement apps needs to split into multiple records in Office. You can use the CorrelationId field to retrieve the set of split records for a given source record. Operations that are likely to require splitting include RetrieveMultiple and ExportToExcel.
+- Some operations need more processing to retrieve all relevant data. For example, the system processes RetrieveMultiple and ExportToExcel to extract the list of records that are retrieved or exported. However, not all relevant operations are yet processed. For example, ExportToWord is currently logged as single operation with no other details about what was exported.
+- In future releases, the system disables logging for operations deemed unnecessary based on a review of the logs. For example, some operations originate from automated system activity rather than user actions.
+- In some record instances, the EntityName value appears as **Unknown**. These records aren't related to any specific entity related operation and came in blank from CRM. They all have entity ID of `0000000-0000-0000-0000-000000000000`.
 
 ### Related content
 
