@@ -12,6 +12,8 @@ contributors:
   - aarsh-msft
 ---
 
+<!-- please check the wording change in line 86 -->
+
 # Overview of unified admin experience for finance and operations apps
 
 Users of finance and operations apps can now administer their environments, policies, licensing, and capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
@@ -20,7 +22,7 @@ As part of the unification of admin experiences of finance and operations apps w
 
 :::image type="content" source="media/one-admin-journey.png" alt-text="Screenshot of the unified admin experience for finance and operations apps.":::
 
-This article gives an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Microsoft Dynamics Lifecycle Services and the new experience. You can also browse more resources and articles that provide detailed information for common tasks.
+This article gives an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Microsoft Dynamics 365 Lifecycle Services and the new experience. You can also browse more resources and articles that provide detailed information for common tasks.
 
 To learn more about the admin unification journey, see the [Power Platform admin center integration with Lifecycle Services (LCS) TechTalk](https://www.youtube.com/watch?v=HmJIuHhx3Hg).
 
@@ -81,7 +83,7 @@ The following table is a reference for each operation type and explains any nuan
 | Restore | Point-in-time restore | Restore (custom or system-defined)| Not applicable |
 | Reset | Not applicable | Reset| This operation isn't yet implemented for environments where **Dynamics 365 Finance and Operations Provisioning App** is installed. |
 | Convert to production | Not applicable | Convert to production | This operation isn't yet implemented for environments where **Finance and Operations Provisioning App** is installed. |
-| Delete | Deallocate/delete | Delete | Restoring a deleted environment where **Dynamics 365 Finance and Operations Provisioning App** is installed isn't yet implemented. |
+| Delete | Deallocate/delete | Delete | Restoring a deleted environment where **Dynamics 365 Finance and Operations Provisioning App** is installed but isn't yet implemented. |
 
 ## Lifecycle Services features not implemented in the Power Platform admin center
 
