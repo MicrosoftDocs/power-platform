@@ -132,6 +132,12 @@ The following table lists the services that support Azure subnet delegation for 
 | Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[Azure File Storage](/connectors/azurefile/)</li><li>[Azure Blob Storage](/connectors/azureblob/)</li><li>[HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/)</li></ul> | Generally available |
 | Connectors | <ul><li>[Snowflake](/connectors/snowflakev2/)</li><li>[Databricks](/connectors/databricks/)</li><li>[AI search](/microsoft-copilot-studio/knowledge-azure-ai-search)</li></ul> | Generally available |
 
+## Unsupported Services
+some of the connectivity scenarios unsupported through virtual network support are:
+- On premise data gateway
+- other plugin connectors
+
+
 ## Supported environments
 
 Virtual Network support for Power Platform isn't available for all [Power Platform environments](/power-platform/admin/environments-overview). The following table lists which environment types support Virtual Network.
@@ -230,6 +236,10 @@ When a Power Platform environment has a delegated Azure subnet assigned, it uses
 ### Can I use an existing Virtual Network for Power Platform?
 
 Yes, you can use an existing Virtual Network for Power Platform, if a single, new subnet within the Virtual Network is delegated specifically to Power Platform. You must dedicate the delegated subnet for subnet delegation and can't use it for other purposes.
+
+### Can I use Virtual network to connect to the on prem data gateway over Express route?
+
+No, On prem data gateway uses Service bus integration through outbound connectivity and this cannot be connected over Azure virtual network. However On Prem data gateway can be connected via Express route rather than connecting over internet as detailed here [Express route Set up](/power-platform/architecture/key-concepts/expressroute/setup)
 
 ### Can I reuse the same delegated subnet in multiple enterprise policies?
 
