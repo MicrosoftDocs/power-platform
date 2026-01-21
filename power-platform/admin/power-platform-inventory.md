@@ -1,5 +1,5 @@
 ---
-title: Power Platform inventory (preview)
+title: Power Platform inventory
 description: Learn how to get a comprehensive, unified view of all agents, apps, and flows across your organization in Power Platform.
 author: mikferland-msft
 ms.author: miferlan
@@ -8,9 +8,7 @@ ms.date: 01/19/2026
 ms.topic: concept-article
 ---
 
-# Power Platform inventory (preview)
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Power Platform inventory
 
 The Power Platform admin center now offers tenant administrators a comprehensive, unified view of all key resources&mdash;agents, apps, and flows&mdash;across their organization with Power Platform inventory. With this centralized inventory, administrators can effortlessly discover, search, filter, and sort their resources to streamline common administrative tasks.
 
@@ -25,8 +23,6 @@ Power Platform inventory allows you to easily complete the following tasks:
 - **Prevent orphaned agents**: Proactively find resources owned by departing users to allow seamless ownership transfers and ensure business continuity.
 
 - **Accelerate support**: Instantly pinpoint that _needle in a haystack_ resource referenced in a support ticket to dramatically improve response times.
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Supported resource types
 

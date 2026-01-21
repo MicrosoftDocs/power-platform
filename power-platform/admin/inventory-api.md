@@ -1,5 +1,5 @@
 ---
-title: Power Platform inventory API (preview)
+title: Power Platform inventory API
 description: Learn how to get a comprehensive, unified view of all agents and apps across your organization in Power Platform with the inventory API.
 author: mikferland-msft
 ms.author: miferlan
@@ -8,13 +8,9 @@ ms.date: 10/20/2025
 ms.topic: concept-article
 ---
 
-# Power Platform inventory API (preview)
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Power Platform inventory API
 
 The inventory API allows you to execute structured queries against Azure Resource Graph using a POST request with a query specification in the request body. The API translates your query specification into [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query/) for execution against Azure Resource Graph. The inventory API for [Resources]([url](/rest/api/power-platform/resourcequery/resources)) is part of the [Power Platform API reference documentation]([url](/rest/api/power-platform/)).
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## API endpoint
 
