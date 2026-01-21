@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/06/2026
+ms.date: 01/21/2026
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -132,11 +132,11 @@ The following table lists the services that support Azure subnet delegation for 
 | Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[Azure File Storage](/connectors/azurefile/)</li><li>[Azure Blob Storage](/connectors/azureblob/)</li><li>[HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/)</li></ul> | Generally available |
 | Connectors | <ul><li>[Snowflake](/connectors/snowflakev2/)</li><li>[Databricks](/connectors/databricks/)</li><li>[AI search](/microsoft-copilot-studio/knowledge-azure-ai-search)</li></ul> | Generally available |
 
-## Unsupported Services
-some of the connectivity scenarios unsupported through virtual network support are:
-- On premise data gateway
-- other plugin connectors
+## Unsupported services
 
+Some of the connectivity scenarios that aren't supported through Virtual Network support are:
+- On-premises data gateways
+- Other plugin connectors
 
 ## Supported environments
 
