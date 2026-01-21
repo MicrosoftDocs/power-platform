@@ -34,13 +34,17 @@ The Power Platform inventory includes:
 
 - **Flows:** All agent flows created in Copilot Studio, all cloud flows created in Power Automate, and all workflows created in Microsoft 365 Copilot's Workflows agent.
 
+- **Environments:** All environments in your tenant.
+
+- **Environment groups:** All environment groups in your tenant.
+
 ## Key features
 
 - **Unified inventory**: Centralized view of all resources.
 
 - **Fast updates**: Created, updated, or deleted resources appear within 15 minutes.
 
-- **Flexible filtering and sorting**: Filter and sort resources by any attribute.
+- **Flexible filtering and sorting**: Filter and sort resources by any attribute, including environment groups.
 
 - **Inventory count**: Instantly see the total number of items matching your criteria.
 
@@ -124,6 +128,10 @@ Quickly search for keywords across all entries currently loaded in the inventory
 ## Programmatic access
 
 Power Platform inventory data is available programmatically, supporting advanced scenarios such as automation, reporting, and integration with external tools.
+
+### Power Platform for Admins V2 connector
+
+You can query Power Platform inventory data directly from Power Automate using the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/). Use the [Query Power Platform resources](/connectors/powerplatformadminv2/#query-power-platform-resources) action to execute queries against your inventory and integrate results into your automation workflows.
 
 ### Power Platform API
 
