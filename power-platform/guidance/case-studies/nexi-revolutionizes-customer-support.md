@@ -10,25 +10,28 @@ ms.topic: overview
 ms.date: 01/19/2026
 ---
 
+<!-- note from editor: I looked up Azure AI services in the style guide, and it says this has been renamed to "Foundry Tools". Here's the link the entry: https://learn.microsoft.com/en-us/product-style-guide-msft-internal/a_z_names_terms/a/azure-ai-services. Do you want to change Azure AI services or leave as is? You could say "Foundry Tools (formerly known as Azure AI services)" -->
+
+
 # Nexi Group revolutionizes customer support with Copilot Studio
 
-[Nexi Group](https://www.nexigroup.com/), Europe's leading PayTech company, supports cardholders and partner banks across 25 countries/regions, representing about 65% of European card-based consumption. Operating at this scale requires managing thousands of card products, service variations, and regulatory requirements, often across multiple backend systems. For customers and contact center teams, even routine card operations can become complex, time-consuming, and error-prone.
+[Nexi Group](https://www.nexigroup.com/), Europe's leading PayTech company, supports cardholders and partner banks across 25 countries or regions, representing about 65 percent of European card-based consumption. Operating at this scale requires managing thousands of card products, service variations, and regulatory requirements, often across multiple back-end systems. For customers and contact center teams, even routine card operations can become complex, time-consuming, and error-prone.
 
 To modernize its service experience, Nexi built a secure, AI-powered conversational agent by using Microsoft Copilot Studio and Azure AI services. The solution streamlines customer interactions, reduces contact center workload, and strengthens Nexi's digital service reputation. Nexi was among the first to adopt generative AI, complementing its human‑assisted chat with an advanced agent powered by algorithmic and generative intelligence.
 
-Today, the agent handles more than 3,000 customer interactions daily with a 70% satisfaction rate, significantly reducing escalations to live agents. By combining intelligent document retrieval, secure system integration, and advanced analytics, Nexi has redefined how card services are delivered. This approach improves customer experience, lowers operational costs, and establishes a scalable foundation for autonomous, multi-agent innovation.
+Today, the agent handles more than 3,000 customer interactions daily with a 70 percent satisfaction rate, significantly reducing escalations to live agents. By combining intelligent document retrieval, secure system integration, and advanced analytics, Nexi has redefined how card services are delivered. This approach improves customer experience, lowers operational costs, and establishes a scalable foundation for autonomous, multi-agent innovation.
 
 In this case study, you learn how Nexi:
 
-- Enhances document-based information retrieval for more accurate, context-aware answers
-- Securely connects internal apps to Copilot Studio to enable end-to-end self-service actions
-- Extends analytics beyond the out-of-box options for deeper visibility and reporting
+- Enhances document-based information retrieval for more accurate, context-aware answers.
+- Securely connects internal apps to Copilot Studio to enable end-to-end self-service actions.
+- Extends analytics beyond the out-of-the-box options for deeper visibility and reporting.
 
 ## Business challenges
 
 Nexi's customer support teams relied on extensive documentation covering different card types, contractual conditions, and operational procedures. Because this information was spread across multiple sources, human agents had to manually search for information when assisting customers. This process increased handling time and made it difficult to consistently deliver fast, accurate responses.
 
-Recognizing the need for better self-service capabilities without compromising security or compliance, Nexi set out to transform its existing documentation and backend processes into a conversational experience that could scale with demand.
+Recognizing the need for better self-service capabilities without compromising security or compliance, Nexi set out to transform its existing documentation and back-end processes into a conversational experience that could scale with demand.
 
 ## Solution
 
@@ -37,6 +40,9 @@ Nexi's conversational agent is deployed on their website, https://www.nexi.it/. 
 The following image shows how the agent appears on Nexi's website.
 
 :::image type="content" source="media/nexi/homepage-agent.png" alt-text="Screenshot of Nexi's conversational agent supporting a user through a chat experience on the Nexi website." lightbox="media/nexi/homepage-agent.png":::
+
+
+
 
 Key benefits include:
 
