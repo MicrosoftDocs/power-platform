@@ -198,13 +198,13 @@ PowerPlatformResources
 | order by Source asc, FieldName asc
 ```
 
-To discover fields for other resource types, replace the `type` filter value:
+To discover fields for other resource types, replace the `type` filter value. For example:
 
 | Resource type | Type filter value |
 |---------------|-------------------|
 | Copilot Studio agents | `microsoft.copilotstudio/agents` |
-| Power Apps | `microsoft.powerplatform/appassets` |
-| Power Automate flows | `microsoft.powerplatform/flowassets` |
+| Power Apps canvas apps | `microsoft.powerapps/canvasapps` |
+| Power Automate cloud flows | `microsoft.powerautomate/cloudflows` |
 
 > [!NOTE]
 > This query requires at least one resource of the specified type to exist in your tenant.
