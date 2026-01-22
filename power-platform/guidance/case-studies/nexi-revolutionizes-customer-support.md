@@ -97,19 +97,17 @@ The workflow is as follows:
 - Analytics from the interactions are captured and visualized in a Power BI dashboard.
 - In cases where the generative response doesn't meet the customer's needs, the interaction can be escalated to a live agent in Genesys Cloud.
 
-
-
 ## Takeaways
 
 Here are some key takeaways for organizations looking to modernize customer support with conversational agents:
 
 - Improve document-based information retrieval by using Azure AI Search and related Azure services to deliver more accurate, context-aware responses.
-- Establish a secure integration layer with Azure services such as Azure Functions, Azure Key Vault, and Cosmos DB to connect safely with internal applications.
+- Establish a secure integration layer with Azure services such as Azure Functions, Azure Key Vault, and Azure Cosmos DB to connect safely with internal applications.
 - Extend analytics capabilities beyond Copilot Studio's built-in tools by integrating Azure services with Power BI for deeper insights and reporting.
 
 ## Looking ahead
 
-Nexi plans to refine the deployed agent based on user feedback, with a focus on more advanced natural language processing and strengthened security. The next major step is the development of an autonomous agent that analyzes conversation history daily, evaluates end user satisfaction, and flags low satisfaction interactions. It identifies the triggering question, reviews the knowledge base for gaps or outdated content, and delivers a consolidated report to IT, driving continuous improvement.
+Nexi plans to refine the deployed agent based on user feedback, with a focus on more advanced natural language processing and strengthened security. The next major step is the development of an autonomous agent that analyzes conversation history daily, evaluates user satisfaction, and flags low satisfaction interactions. It identifies the triggering question, reviews the knowledge base for gaps or outdated content, and delivers a consolidated report to IT, driving continuous improvement.
 
 Nexi also aims to implement a full multi-agent model, with specialized customer care agents dedicated to distinct areas of expertise. With a commitment to ongoing innovation, Nexi is focused on meeting evolving digital demands and maintaining a strong competitive edge.
 
