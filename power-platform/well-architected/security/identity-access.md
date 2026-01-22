@@ -103,7 +103,7 @@ Consider the following:
 - Does the workload need permanent access or can conditional access be considered?
 - Does the workload perform actions that require administrative/elevated permissions?
 - How will the workload interact with third-party services?
-- For intelligent application workloads such as agents, do you have single sign-on (SSO) requirements?
+- For agents, do you have single sign-on (SSO) requirements?
 - Is the agent operating in unauthenticated mode, authenticated mode, or both?
 
 #### Role assignment

@@ -4,8 +4,9 @@ description: Learn how to get a comprehensive, unified view of all agents, apps,
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 01/19/2026
+ms.date: 01/21/2026
 ms.topic: concept-article
+
 ---
 
 # Power Platform inventory
@@ -56,7 +57,7 @@ The Power Platform inventory includes:
 
 ## Access requirements
 
-To view the Power Platform inventory, you must hold one of the following tenant-wide administrative roles: Global Administrator, [Power Platform Administrator](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator), or [Dynamics 365 Administrator](/power-platform/admin/use-service-admin-role-manage-tenant#dynamics-365-administrator). If you do not have one of these roles, you will not be able to access the inventory.
+To view the Power Platform inventory, you must hold one of the following tenant-wide administrative roles: [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) or [Dynamics 365 administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator). If you don't have one of these roles, you can't access the inventory.
 
 ## Where to access Power Platform inventory
 
@@ -82,9 +83,9 @@ For example, you can combine multiple filters to narrow down your results. Each 
 
 1. **Environment type**: Select the **Environment type** column and select **Default**. You see all resources in the default environment.
 
-2. **Owner**: Select the **Owner** column and type the name of the person. You now see all resources owned by this person in the default environment.
+2. **Owner**: Select the **Owner** column and type the name of the person. You see all resources owned by this person in the default environment.
 
-3. **Creation date**: Select the **Created on** column and apply the date filters from January 2025 to today's date. You now see all resources owned by this person, in the default environment, that they created in the year 2025.
+3. **Creation date**: Select the **Created on** column and apply the date filters from January 2025 to today's date. You see all resources owned by this person, in the default environment, that they created in the year 2025.
 
 To clear all filters and sorts, select any column and choose **Clear all filters**.
 
@@ -101,13 +102,16 @@ The inventory table provides the option to display more columns to help you bett
 Quickly search for keywords across all entries currently loaded in the inventory table. The **Search** box is designed to help you find specific resources fast.
 
 > [!NOTE]
-> The search only applies to resources visible in the UI (up to 1,000 at a time). If your inventory exceeds this limit, apply filters to narrow down the results and bring the resources you need into view.
+> The search only applies to resources visible in the user interface (up to 1,000 at a time). If your inventory exceeds this limit, apply filters to narrow down the results and bring the resources you need into view.
 
 ## View resource details
 
 - Select a resource, then select the **Details** option in the command bar.
 
-- Or select the resource's display name to be redirected to its details page in the Copilot Studio, Power Apps, or Power Automate portal. **Note**: You need sufficient permission to access the resource details page. Without permission, you'll only see a **This link is broken** error.
+- Or select the resource's display name to be redirected to its details page in the Copilot Studio, Power Apps, or Power Automate portal.
+
+    > [!NOTE]
+    > You need sufficient permission to access the resource details page. Without permission, you see a **This link is broken** error.
 
 - Select the environment name to view the environment details.
 
@@ -123,7 +127,7 @@ Quickly search for keywords across all entries currently loaded in the inventory
 
 - **Un-published model-driven apps:** Only published, model-driven apps are captured.
   
-- **Model-driven apps in the default environment:** The default environment comes with three pre-installed model-driven apps: Power Platform Environment Settings, Power Pages Management, and Solution Health Hub. These don't appear in the inventory initially unless they are edited and re-published.
+- **Model-driven apps in the default environment:** The default environment comes with three preinstalled model-driven apps: Power Platform Environment Settings, Power Pages Management, and Solution Health Hub. These don't appear in the inventory initially unless they're edited and republished.
 
 ## Programmatic access
 
@@ -135,7 +139,7 @@ You can query Power Platform inventory data directly from Power Automate using t
 
 ### Power Platform API
 
-If you're new to the Power Platform API, review [Getting Started with Power Platform API](/power-platform/admin/powerplatform-api-getting-started) guide for setup instructions and authentication details. Once you're set up, refer to the [Inventory API documentation](/power-platform/admin/inventory-api) to learn how to query your inventory data.
+If you're new to the Power Platform API, review [Getting Started with Power Platform API](powerplatform-api-getting-started.md) for setup instructions and authentication details. Once you're set up, refer to the [Inventory API documentation](inventory-api.md) to learn how to query your inventory data.
 
 ### Azure Resource Graph
 
@@ -151,7 +155,7 @@ You can programmatically query your Power Platform inventory using Azure Resourc
 
 ### Sample queries
 
-The following are example queries you can use with any of the Azure Resource Graph interfaces. All queries use the `PowerPlatformResources` table, which contains your organization's inventory data.
+The following are example queries you can use with any of the Azure Resource Graph interfaces. All queries use the **PowerPlatformResources** table, which contains your organization's inventory data.
 
 #### Query 1: Total count of _all_ resources
 
@@ -198,13 +202,13 @@ PowerPlatformResources
 | order by Source asc, FieldName asc
 ```
 
-To discover fields for other resource types, replace the `type` filter value:
+To discover fields for other resource types, replace the `type` filter value. For example:
 
 | Resource type | Type filter value |
 |---------------|-------------------|
 | Copilot Studio agents | `microsoft.copilotstudio/agents` |
-| Power Apps | `microsoft.powerplatform/appassets` |
-| Power Automate flows | `microsoft.powerplatform/flowassets` |
+| Power Apps canvas apps | `microsoft.powerapps/canvasapps` |
+| Power Automate cloud flows | `microsoft.powerautomate/cloudflows` |
 
 > [!NOTE]
 > This query requires at least one resource of the specified type to exist in your tenant.

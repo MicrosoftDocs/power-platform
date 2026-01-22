@@ -81,7 +81,6 @@ You can use [templates](/microsoft-copilot-studio/template-fundamentals) as a st
 
 ## Additional information
 
-- [Intelligent application workloads](../intelligent-application/overview.md)
 - [Introduction to conversational experiences](/microsoft-copilot-studio/guidance/cux-overview)
 - [Conversational AI best practices](/microsoft-copilot-studio/guidance/project-best-practices)
 
