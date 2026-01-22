@@ -10,7 +10,7 @@ ms.topic: overview
 ms.date: 01/19/2026
 ---
 
-<!-- note from editor: I looked up Azure AI services in the style guide, and it says this has been renamed to "Foundry Tools". Here's the link the entry: https://learn.microsoft.com/en-us/product-style-guide-msft-internal/a_z_names_terms/a/azure-ai-services. Do you want to change Azure AI services or leave as is? You could say "Foundry Tools (formerly known as Azure AI services)" -->
+<!-- note from editor: I looked up Azure AI services in the style guide, and it says this has been renamed to "Foundry Tools". Here's the link to the entry: https://learn.microsoft.com/en-us/product-style-guide-msft-internal/a_z_names_terms/a/azure-ai-services. Do you want to change Azure AI services or leave as is? You could say "Foundry Tools (formerly known as Azure AI services)" -->
 
 
 # Nexi Group revolutionizes customer support with Copilot Studio
@@ -41,18 +41,15 @@ The following image shows how the agent appears on Nexi's website.
 
 :::image type="content" source="media/nexi/homepage-agent.png" alt-text="Screenshot of Nexi's conversational agent supporting a user through a chat experience on the Nexi website." lightbox="media/nexi/homepage-agent.png":::
 
-
-
-
 Key benefits include:
 
-- **Reduced costs**: Customers resolve common problems through selfservice, lowering the number of escalations to human agents.
+- **Reduced costs**: Customers resolve common problems through self-service, lowering the number of escalations to human agents.
 
 - **Customer retention**: Tailored guidance eliminates frustration caused by navigating lengthy manuals with subtle but important differences.
 
 - **Greater business agility**: Business teams can update agent messages independently, while IT maintains oversight through custom security roles, streamlining changes without requiring IT intervention.
 
-The agent handles more than 3,000 end-user interactions daily, with a satisfaction rate of 70%.
+The agent handles more than 3,000 end-user interactions daily, with a satisfaction rate of 70 percent.
 
 > By using generative AI responses and enabling self-service, this solution significantly reduced the escalation rates. It didn't just enhance our brand reputation for digital services, it also improved the overall user experience while reducing operating costs.
 >
@@ -70,7 +67,7 @@ After authentication, the agent retrieves only the documents and knowledge relev
 
 This segmentation also enables proactive guidance by anticipating profile-specific questions and addressing them before they arise. Additionally, any customer inquiry that involves accessing Nexi's internal systems requires prior authentication to ensure secure and personalized service.
 
-Behind these capabilities is a robust architecture that powers intelligent document retrieval, secure backend integration, and advanced analytics.
+Behind these capabilities is a robust architecture that powers intelligent document retrieval, secure back-end integration, and advanced analytics.
 
 ## Architecture
 
@@ -78,9 +75,11 @@ The architecture integrates the Copilot Studio agent with three core capability 
 
 :::image type="content" source="media/nexi/agent-architecture.png" alt-text="Diagram showing the technologies used including Copilot Studio, Azure AI services, and Power BI." lightbox="media/nexi/agent-architecture.png":::
 
-1. **Intelligent document retrieval**: To overcome limitations of basic document uploads, Nexi implemented a Retrieval-Augmented Generation (RAG) architecture using Azure OpenAI and Azure AI Search. Documents are stored in Azure Storage and indexed with custom metadata—such as card tier and eligibility rules—using tailored chunking strategies. Azure OpenAI processes customer queries and generates grounded responses based on the most relevant retrieved content, delivering accurate, context-aware answers even when documents overlap.
-1. **Secure internal systems integration**: For transactional requests, the agent routes conversations to Azure Functions, which connect securely to Nexi's internal web services. Azure Key Vault manages secrets, while Cosmos DB stores logs and audit records for traceability. This integration layer enables the agent to automate sensitive operations, such as blocking or reissuing cards, while maintaining strict security controls.
-1. **Extended analytics and monitoring**: Copilot Studio telemetry is captured through Azure Monitor, Application Insights, and Log Analytics. These signals are consolidated and visualized in Power BI dashboards, providing real-time visibility into performance, customer satisfaction, and operational trends. The analytics layer supports both governance and continuous improvement.
+- **Intelligent document retrieval**: To overcome limitations of basic document uploads, Nexi implemented a retrieval-augmented generation (RAG) architecture using Azure OpenAI and Azure AI Search. Documents are stored in Azure Storage and indexed with custom metadata—such as card tier and eligibility rules—using tailored chunking strategies. Azure OpenAI processes customer queries and generates grounded responses based on the most relevant retrieved content, delivering accurate, context-aware answers even when documents overlap.
+ 
+- **Secure internal systems integration**: For transactional requests, the agent routes conversations to Azure Functions, which connect securely to Nexi's internal web services. Azure Key Vault manages secrets, while Azure Cosmos DB stores logs and audit records for traceability. This integration layer enables the agent to automate sensitive operations, such as blocking or reissuing cards, while maintaining strict security controls.
+
+- **Extended analytics and monitoring**: Copilot Studio telemetry is captured through Azure Monitor, Application Insights, and Log Analytics. These signals are consolidated and visualized in Power BI dashboards, providing real-time visibility into performance, customer satisfaction, and operational trends. The analytics layer supports both governance and continuous improvement.
 
 When AI-generated responses don't fully meet customer needs, Copilot Studio seamlessly escalates the interaction to a live agent in Genesys Cloud, preserving conversation context.
 
@@ -93,10 +92,12 @@ The workflow is as follows:
 - A customer initiates a chat with the conversational agent.
 - Copilot Studio manages intent recognition, based on Copilot Studio topics and trigger phrases, and routes the conversation accordingly. If no topic matches, it uses generative answers.
 - If the intent relates to document-based guidance, the query is routed to an App Service that retrieves relevant information from the indexed document collection.
-- If the intent involves backend actions, such as blocking or reissuing cards, the query is routed to an Azure Function that securely connects to internal systems.
+- If the intent involves back-end actions, such as blocking or reissuing cards, the query is routed to a function app that securely connects to internal systems.
 - Internal applications are accessed through a secure integration layer.
 - Analytics from the interactions are captured and visualized in a Power BI dashboard.
 - In cases where the generative response doesn't meet the customer's needs, the interaction can be escalated to a live agent in Genesys Cloud.
+
+
 
 ## Takeaways
 
