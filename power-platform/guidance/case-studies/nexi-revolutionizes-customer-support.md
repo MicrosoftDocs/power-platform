@@ -11,7 +11,7 @@ ms.date: 01/19/2026
 ---
 
 <!-- note from editor: I looked up Azure AI services in the style guide, and it says this has been renamed to "Foundry Tools". Here's the link to the entry: https://learn.microsoft.com/en-us/product-style-guide-msft-internal/a_z_names_terms/a/azure-ai-services. Do you want to change Azure AI services or leave as is? You could say "Foundry Tools (formerly known as Azure AI services)" -->
-<!-- The numbers in line 52 repeat what was already reported in line 22. OK to remove it? -->
+<!-- The numbers in line 52 repeat what was already reported in line 22. I suggest removing it. -->
 
 # Nexi Group revolutionizes customer support with Copilot Studio
 
