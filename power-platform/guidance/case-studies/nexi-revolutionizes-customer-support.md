@@ -11,7 +11,7 @@ ms.date: 01/19/2026
 ---
 
 <!-- note from editor: I looked up Azure AI services in the style guide, and it says this has been renamed to "Foundry Tools". Here's the link to the entry: https://learn.microsoft.com/en-us/product-style-guide-msft-internal/a_z_names_terms/a/azure-ai-services. Do you want to change Azure AI services or leave as is? You could say "Foundry Tools (formerly known as Azure AI services)" -->
-
+<!-- The numbers in line 52 repeat what was already reported in line 22. OK to remove it? -->
 
 # Nexi Group revolutionizes customer support with Copilot Studio
 
@@ -75,11 +75,11 @@ The architecture integrates the Copilot Studio agent with three core capability 
 
 :::image type="content" source="media/nexi/agent-architecture.png" alt-text="Diagram showing the technologies used including Copilot Studio, Azure AI services, and Power BI." lightbox="media/nexi/agent-architecture.png":::
 
-- **Intelligent document retrieval**: To overcome limitations of basic document uploads, Nexi implemented a retrieval-augmented generation (RAG) architecture using Azure OpenAI and Azure AI Search. Documents are stored in Azure Storage and indexed with custom metadata—such as card tier and eligibility rules—using tailored chunking strategies. Azure OpenAI processes customer queries and generates grounded responses based on the most relevant retrieved content, delivering accurate, context-aware answers even when documents overlap.
+1. **Intelligent document retrieval**: To overcome limitations of basic document uploads, Nexi implemented a retrieval-augmented generation (RAG) architecture using Azure OpenAI and Azure AI Search. Documents are stored in Azure Storage and indexed with custom metadata—such as card tier and eligibility rules—using tailored chunking strategies. Azure OpenAI processes customer queries and generates grounded responses based on the most relevant retrieved content, delivering accurate, context-aware answers even when documents overlap.
  
-- **Secure internal systems integration**: For transactional requests, the agent routes conversations to Azure Functions, which connect securely to Nexi's internal web services. Azure Key Vault manages secrets, while Azure Cosmos DB stores logs and audit records for traceability. This integration layer enables the agent to automate sensitive operations, such as blocking or reissuing cards, while maintaining strict security controls.
+1. **Secure internal systems integration**: For transactional requests, the agent routes conversations to Azure Functions, which connect securely to Nexi's internal web services. Azure Key Vault manages secrets, while Azure Cosmos DB stores logs and audit records for traceability. This integration layer enables the agent to automate sensitive operations, such as blocking or reissuing cards, while maintaining strict security controls.
 
-- **Extended analytics and monitoring**: Copilot Studio telemetry is captured through Azure Monitor, Application Insights, and Log Analytics. These signals are consolidated and visualized in Power BI dashboards, providing real-time visibility into performance, customer satisfaction, and operational trends. The analytics layer supports both governance and continuous improvement.
+1. **Extended analytics and monitoring**: Copilot Studio telemetry is captured through Azure Monitor, Application Insights, and Log Analytics. These signals are consolidated and visualized in Power BI dashboards, providing real-time visibility into performance, customer satisfaction, and operational trends. The analytics layer supports both governance and continuous improvement.
 
 When AI-generated responses don't fully meet customer needs, Copilot Studio seamlessly escalates the interaction to a live agent in Genesys Cloud, preserving conversation context.
 
