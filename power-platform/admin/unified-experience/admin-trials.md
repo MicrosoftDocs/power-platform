@@ -12,7 +12,7 @@ ms.reviewer: sericks
 
 # Unified admin trials
 
-Administrators, partners, and ISVs historically had to use cloud-hosted environments in Lifecycle Services to create demo or trial environments for finance and operations apps. This approach helped them demonstrate the software capabilities and try out new features of the product at a low cost.
+Administrators, partners, and ISVs historically had to use cloud-hosted environments in Dynamics 365 Lifecycle Services to create demo or trial environments for finance and operations apps. This approach helped them demonstrate the software capabilities and try out new features of the product at a low cost.
 
 To improve this experience, Microsoft provides free subscription-based trial environments for finance and operations apps, including Dynamics 365 Finance, Supply Chain Management, Project Operations, and Commerce apps.
 
@@ -21,7 +21,7 @@ To improve this experience, Microsoft provides free subscription-based trial env
 
 ## Acquire a free subscription-based trial license
 
-To deploy a trial environment, first acquire a trial license. A tenant administrator can get a trial license in the [Microsoft 365 Admin Center](https://admin.microsoft.com/) by visiting the **Marketplace** option.  
+To deploy a trial environment, first acquire a trial license. A tenant administrator can get a trial license in the [Microsoft 365 admin center](https://admin.microsoft.com/) by visiting the **Marketplace** option.  
 
 From the marketplace, you can search for many different products offered by Microsoft. To find a Dynamics 365 license for finance and operations apps, search for the terms **Finance**, **Supply Chain Management**, **Project Operations**, or **Commerce**. Locate the free trial offer and purchase this product.
 
@@ -29,7 +29,7 @@ After you purchase the product, assign the license to an admin who can sign in t
 
 ## Deploy the trial in Power Platform admin center
 
-1. After assigning the trial license to your user account, sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. After assigning the trial license to your user account, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments** to display the **Environments** page.
 1. Select **New** to create a new environment. The **New environment** pane is displayed.
