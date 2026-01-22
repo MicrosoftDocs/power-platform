@@ -12,8 +12,6 @@ contributors:
   - aarsh-msft
 ---
 
-<!-- please check the wording change in line 86 -->
-
 # Overview of unified admin experience for finance and operations apps
 
 Users of finance and operations apps can now administer their environments, policies, licensing, and capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
