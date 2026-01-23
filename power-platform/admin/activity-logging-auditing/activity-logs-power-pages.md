@@ -2,7 +2,7 @@
 title: View Power Pages activity logs in Microsoft Purview
 description: Learn how to access Power Pages activity logs in Microsoft Purview and explore what Power Pages activities you can monitor.
 ms.topic: how-to
-ms.date: 12/16/2025
+ms.date: 01/22/2026
 author: EllenWehrle
 ms.subservice: admin
 ms.author: grbarker
@@ -36,11 +36,11 @@ This article covers prerequisites, how to access the logs in the Microsoft Purvi
 
 ## Prerequisites
 
-To view connector activity logs in Microsoft Purview, make sure you've:
+To view Power Pages activity logs in Microsoft Purview, make sure you:
 
-- Review and complete the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
-- Confirm you're an admin who has a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Confirm either the *Audit Logs* or *View-Only Audit Logs* role is assigned to you in Microsoft Purview.
+- Review and complete all the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
+- Are an admin with a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
+- Are assigned either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview.
 
 Learn more:
 
@@ -55,56 +55,56 @@ Learn more:
 
 ## Explore Power Pages activities
 
-You can search Power Pages activities for a specific period by selecting the dates and entering the operation names listed in the **Activities – operation names** column in this section's table or by using the **Keyword Search** option in the search panel.
+You can search Power Pages activities for a specific period by selecting the dates and entering the operation names listed in this section's table or by using the **Keyword Search** option in the search panel.
 
 This table lists some of the activities you can monitor in Power Pages audit logs.
 
 | **Activity Name**                              | **Operation Name**                     | **Description**                                                               |
 |------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------------|
-| Enable Power BI visualization                  | PowerBIVisualizationEnabled            | When Power BI visualization is enabled for the site                           |
-| Disable Power BI visualization                 | PowerBIVisualizationDisabled           | When Power BI visualization is disabled for the site                          |
-| Enable Power BI embedded service               | PowerBIEmbeddedServiceEnabled          | When Power BI embedded service is enabled for the site                        |
-| Disable Power BI embedded service              | PowerBIEmbeddedServiceDisabled         | When Power BI embedded service is disabled for the site                       |
-| Enable SharePoint integration                  | SharePointIntegrationEnabled           | When SharePoint integration is enabled for the site                           |
-| Disable SharePoint integration                 | SharePointIntegrationDisabled          | When SharePoint integration is enabled for the site                           |
-| Edit site URL                                  | SiteURLUpdated                         | When site URL is changed                                                      |
-| Edit site details - Name Update                | SiteNameUpdated                        | When site name is changed                                                     |
-| Edit site details - Website Record Update      | WebsiteRecordUpdated                   | When website record is updated                                                |
-| Shut down site                                 | SiteShutDown                           | When site is shut down                                                        |
-| Delete site                                    | SiteDeleted                            | Site is deleted                                                               |
-| Add custom domain name                         | CustomDomainConnected                  | When site is connected to a custom domain                                     |
-| Remove custom domain name                      | CustomDomainDeleted                    | When custom domain is removed from the site                             |
-| Change site visibility                         | SiteVisibilityUpdated                  | When site visibility is changed (private to public, or public to private)     |
-| Update site visibility permissions             | SiteVisibilityPermissionsUpdated       | When site visibility permissions (who can change site visibility) are updated |
-| convert trial to production                    | ConvertedToProduction                  | When site is converted from trial to production                               |
-| Set up IP Restrictions - Adding IP range       | IPRestrictionsAdded                    | When a new range of IP addresses are added which can access the site          |
-| Set up IP Restrictions - Deleting IP range     | IPRestrictionsDeleted                  | When a new range of IP addresses are deleted which can access the site        |
-| Enable WAF                                     | WAFEnabled                             | When AFD (Azure Front Door) Web Application Firewall for security is enabled  |
-| Disable WAF                                    | WAFDisabled                            | When AFD (Azure Front Door) Web Application Firewall for security is disabled |
-| Restart site                                   | SiteRestarted                          | When site is restarted                                                        |
-| Update custom certificates                     | CustomCertificateUpdated               | When a custom certificate associated with the site is updated                 |
-| Enable maintenance mode                        | MaintenanceModeEnabled                 | When site is put in maintenance mode                                          |
-| Disable maintenance mode                       | MaintenanceModeDisabled                | When site if taken off of maintenance mode                                    |
-| disableAnonymousAccess exception list changed | AnonymousSettingExceptionListChanged | When anonymous access governance control is changed<br /><br />These operations take time to complete from the point they're initiated. The audit logs are captured when the action is initiated. It isn't necessary that the action is successfully completed.                           |
-| Update bootstrap version                       | BootstrapVersionUpdated            | When bootstrap version is updated                            |
-| Disable custom errors                          | CustomErrorsDisabled            | When custom errors are disabled                            |
-| Enable custom errors                           | CustomErrorsEnabled            | When custom errors are enabled                            |
-| Update D365 URL                                 | D365URLUpdated                 | When URL for Dynamic365 is updated                           |
-| Update data model version                       | DataModelVersionUpdated            | When data model version is updated                           |
-| Disable diagnostic logs                       | DiagnosticLogsDisabled            | When diagnostic logs is disabled                           |
-| Enable diagnostic logs                         | DiagnosticLogsEnabled                  | When diagnostic logs are enabled                                              |
-| Disable early upgrade                          | EarlyUpgradeDisabled                   | When early upgrade is disabled                                                |
-| Enable early upgrade                           | EarlyUpgradeEnabled                    | When early upgrade is enabled                                                 |
-| Install field service extension               | FieldServiceExtensionInstalled         | When the field service extension is installed                                 |
-| Modify maintenance mode URL                   | MaintenanceModeURLModified             | When the maintenance mode URL is modified                                     |
-| Install project service automation extension        | ProjectServiceAutomationExtensionInstalled | When the project service automation extension is installed                   |
-| Archive site                                   | SiteArchived                           | When the site is archived                                                     |
-| Suspend site                                  | SiteSuspended                          | When the site is suspended                                                    |
-| Unarchive site                                 | SiteUnarchived                         | When the site is not archived                                                   |
-| Update website authentication key             | WebsiteAuthenticationKeyUpdated        | When the website authentication key is updated                                |
-| Create site                                    | SiteCreated                            | When the site is created                                                      |
-| Enable CDN                                     | CDNEnabled                             | When CDN is enabled                            |
-| Disable CDN                                    | CDNDisabled                            | When CDN is disabled                           |
+| Enable Power BI visualization                  | `PowerBIVisualizationEnabled`            | Power BI visualization is enabled for the site.                           |
+| Disable Power BI visualization                 | `PowerBIVisualizationDisabled`           | Power BI visualization is disabled for the site.                          |
+| Enable Power BI embedded service               | `PowerBIEmbeddedServiceEnabled`          | Power BI embedded service is enabled for the site.                        |
+| Disable Power BI embedded service              | `PowerBIEmbeddedServiceDisabled`         | Power BI embedded service is disabled for the site.                       |
+| Enable SharePoint integration                  | `SharePointIntegrationEnabled`           | SharePoint integration is enabled for the site.                           |
+| Disable SharePoint integration                 | `SharePointIntegrationDisabled`          | SharePoint integration is disabled for the site.                           |
+| Edit site URL                                  | `SiteURLUpdated`                         | A site URL is changed.                                                      |
+| Edit site details - Name Update                | `SiteNameUpdated`                        | A site name is changed.                                                     |
+| Edit site details - Website Record Update      | `WebsiteRecordUpdated`                   | A website record is updated.                                                |
+| Shut down site                                 | `SiteShutDown`                           | A site is shut down.                                                        |
+| Delete site                                    | `SiteDeleted`                            | A site is deleted.                                                               |
+| Add custom domain name                         | `CustomDomainConnected`                  | A site is connected to a custom domain.                                     |
+| Remove custom domain name                      | `CustomDomainDeleted`                    | A custom domain is removed from the site.                             |
+| Change site visibility                         | `SiteVisibilityUpdated`                  | Site visibility is changed (private to public, or public to private).     |
+| Update site visibility permissions             | `SiteVisibilityPermissionsUpdated`       | Site visibility permissions (who can change site visibility) are updated. |
+| Convert trial to production                    | `ConvertedToProduction`                  | A site is converted from trial to production.                               |
+| Set up IP Restrictions - Adding IP range       | `IPRestrictionsAdded`                    | A new range of IP addresses is added which can access the site.          |
+| Set up IP Restrictions - Deleting IP range     | `IPRestrictionsDeleted`                  | A range of IP addresses is deleted which can access the site.            |
+| Enable WAF                                     | `WAFEnabled`                             | AFD (Azure Front Door) Web Application Firewall for security is enabled.  |
+| Disable WAF                                    | `WAFDisabled`                            | AFD (Azure Front Door) Web Application Firewall for security is disabled. |
+| Restart site                                   | `SiteRestarted`                          | A site is restarted.                                                        |
+| Update custom certificates                     | `CustomCertificateUpdated`               | A custom certificate associated with the site is updated.                 |
+| Enable maintenance mode                        | `MaintenanceModeEnabled`                 | A site is put in maintenance mode.                                          |
+| Disable maintenance mode                       | `MaintenanceModeDisabled`                | A site is taken off of maintenance mode.                                    |
+| Disable Anonymous Access exception list changed | `AnonymousSettingExceptionListChanged` | Anonymous access governance control is changed.<br /><br /> The audit logs are captured when this action is initiated and the operations take time to complete. It isn't necessary that the action is successfully completed.                           |
+| Update bootstrap version                       | `BootstrapVersionUpdated`            | The bootstrap version is updated.                            |
+| Disable custom errors                          | `CustomErrorsDisabled`            | Custom errors are disabled.                            |
+| Enable custom errors                           | `CustomErrorsEnabled`            | Custom errors are enabled.                            |
+| Update D365 URL                                 | `D365URLUpdated`                 | The URL for Dynamic365 is updated.                           |
+| Update data model version                       | `DataModelVersionUpdated`            | The data model version is updated.                           |
+| Disable diagnostic logs                       | `DiagnosticLogsDisabled`            | Diagnostic logs are disabled.                           |
+| Enable diagnostic logs                         | `DiagnosticLogsEnabled`                  | Diagnostic logs are enabled.                                              |
+| Disable early upgrade                          | `EarlyUpgradeDisabled`                   | Early upgrade is disabled.                                               |
+| Enable early upgrade                           | `EarlyUpgradeEnabled`                    | Early upgrade is enabled.                                                 |
+| Install field service extension               | `FieldServiceExtensionInstalled`         | The field service extension is installed.                                 |
+| Modify maintenance mode URL                   | `MaintenanceModeURLModified`             | The maintenance mode URL is modified.                                     |
+| Install project service automation extension        | `ProjectServiceAutomationExtensionInstalled` | The project service automation extension is installed.                   |
+| Archive site                                   | `SiteArchived`                           | The site is archived.                                                     |
+| Suspend site                                  | `SiteSuspended`                          | The site is suspended.                                                    |
+| Unarchive site                                 | `SiteUnarchived`                         | The site is unarchived.                                                 |
+| Update website authentication key             | `WebsiteAuthenticationKeyUpdated`        | The website authentication key is updated.                                |
+| Create site                                    | `SiteCreated`                            | The site is created.                                                      |
+| Enable CDN                                     | `CDNEnabled`                             | The CDN is enabled.                            |
+| Disable CDN                                    | `CDNDisabled`                            | The CDN is disabled.                           |
 
 ### Related content
 

@@ -39,7 +39,7 @@ Each activity event consists of a common schema defined at [Office 365 Managemen
 
 ## Prerequisites
 
-To view connector activity logs in Microsoft Purview, make sure you:
+To view Power Platform admin activity logs in Microsoft Purview, make sure you:
 
 - Review and complete the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
 - Confirm either the *Audit Logs* or *View-Only Audit Logs* role is assigned to you in Microsoft Purview.
@@ -92,17 +92,16 @@ Each activity event contains a payload of metadata that's specific to the indivi
 
 ## Activity category: Environment groups and rules
 
-All activities for environment groups and rules are recorded under the *PowerPlatformAdministratorActivity* record type.
-
+All activities for environment groups and rules are recorded under the `PowerPlatformAdministratorActivity` record type.
 Each activity event contains a payload of metadata that's specific to the individual event. The environment group activities listed in this table are sent to Microsoft Purview.
 
 | **Event** | **Description** |
 |-------------------------|-------------------------|
-| NewEnvironmentGroup | Emitted when a new environment group is created. |
-| DeleteEnvironmentGroup | Emitted when an environment group is deleted. |
-| UpdateEnvironmentGroup | Emitted when an environment group's name or description is updated. |
-| EnvironmentAddedToEnvironmentGroup | Emitted when an environment is added to an environment group. |
-| EnvironmentRemovedFromEnvironmentGroup | Emitted when an environment is removed from an environment group. |
+| `NewEnvironmentGroup` | Emitted when a new environment group is created. |
+| `DeleteEnvironmentGroup` | Emitted when an environment group is deleted. |
+| `UpdateEnvironmentGroup` | Emitted when an environment group's name or description is updated. |
+| `EnvironmentAddedToEnvironmentGroup` | Emitted when an environment is added to an environment group. |
+| `EnvironmentRemovedFromEnvironmentGroup` | Emitted when an environment is removed from an environment group. |
 
 These nine rules activities are sent to Microsoft Purview:
 
@@ -118,19 +117,19 @@ These nine rules activities are sent to Microsoft Purview:
 
 | **Event** | **Description** |
 |-------------------------|-------------------------|
-| CreateRuleSetOperation | Emitted when a rule is added to an environment group for the first time. |
-| UpdateRuleSetOperation | Emitted when a rule is edited in an environment group. |
-| DeleteRuleSetOperation | Emitted when an environment group is deleted. |
+| `CreateRuleSetOperation` | A rule is added to an environment group for the first time. |
+| `UpdateRuleSetOperation` | A rule is edited in an environment group. |
+| `DeleteRuleSetOperation` | An environment group is deleted. |
 
 The remaining rules activities listed in this table are sent to Microsoft Purview.
 
 | **Event** | **Description** |
 |-------------------------|-------------------------|
-| CreateRuleBasedPolicyOperation   | Emitted when any rule is added to an environment group for the first time. |
-| CreateRuleBasedPolicyAssignmentOperation | Emitted when any rule is added to an environment group for the first time. |
-| UpdateRuleBasedPolicyOperation  | Emitted when any rule is added, edited, or removed from an environment group. |
-| DeleteRuleBasedPolicyOperation  | Emitted when an environment group is deleted. |
-| DeleteRuleBasedPolicyAssignmentOperation  | Emitted when an environment group is deleted. |
+| `CreateRuleBasedPolicyOperation`   | A rule is added to an environment group for the first time. |
+| `CreateRuleBasedPolicyAssignmentOperation` | A rule is added to an environment group for the first time. |
+| `UpdateRuleBasedPolicyOperation`  | A rule is added, edited, or removed from an environment group. |
+| `DeleteRuleBasedPolicyOperation`  | An environment group is deleted. |
+| `DeleteRuleBasedPolicyAssignmentOperation`  | An environment group is deleted. |
 
 ## Activity category: Business model and licensing
 
@@ -138,20 +137,20 @@ Each activity event contains a payload of metadata that's specific to the indivi
 
 | **Category** | **Event** | **Description** |
 |-------------------------|-------------------------|-------------------------|
-| Billing Policy | BillingPolicyCreate | Emitted when a new billing policy is created. |
-| Billing Policy | BillingPolicyDelete | Emitted when a billing policy is deleted. |
-| Billing Policy | BillingPolicyUpdate | Emitted when the environments linked to a billing policy change (added, removed). |
-| ISV | IsvContractConsent | Emitted when a tenant admin consents to an ISV contract. |
-| License Auto-claim | AssignLicenseAutoClaim | Emitted when a license is assigned to a user automatically via an auto-claim policy. |
-| License Auto-claim | AssignLicenseAutoClaimPolicyCreate | Emitted when a new auto-claim policy is created. |
-| Currency | CurrencyEnvironmentAllocate | Emitted when currency (add-on) is allocated or deallocated to an environment. |
-| Trials | TrialConvertToProduction | Emitted when a trial plan is converted to a production plan. |
-| Trials | TrialEnforce | Emitted when a customer attempts to provision environments beyond the trial limit. |
-| Trials | TrialProvision | Emitted when a new trial plan is provisioned. |
-| Trials | TrialSignUpEligibilityCheck | Emitted prior to trial provisioning when a check occurs to determine trial eligibility. |
-| Trials | TrialViralConsent | Emitted when a tenant changes their consented plan types, and reflects the new state. |
-| Trials | AssignLicenseToUser | Emitted when a trial license is assigned to a user. |
-| Environment Lifecycle | EnvironmentDisabledByMiser | Emitted when an environment is automatically disabled due to insufficient database capacity. |
+| Billing Policy | `BillingPolicyCreate` | A new billing policy is created. |
+| Billing Policy | `BillingPolicyDelete` | A billing policy is deleted. |
+| Billing Policy | `BillingPolicyUpdate` | The environments linked to a billing policy change (added, removed). |
+| ISV | `IsvContractConsent` | A tenant admin consents to an ISV contract. |
+| License Auto-claim | `AssignLicenseAutoClaim` | A license is assigned to a user automatically via an auto-claim policy. |
+| License Auto-claim | `AssignLicenseAutoClaimPolicyCreate` | A new auto-claim policy is created. |
+| Currency | `CurrencyEnvironmentAllocate` | Currency (add-on) is allocated or deallocated to an environment. |
+| Trials | `TrialConvertToProduction` | A trial plan is converted to a production plan. |
+| Trials | `TrialEnforce` | A customer attempts to provision environments beyond the trial limit. |
+| Trials | `TrialProvision` | A new trial plan is provisioned. |
+| Trials | `TrialSignUpEligibilityCheck` | Prior to trial provisioning, a check occurs to determine trial eligibility. |
+| Trials | `TrialViralConsent` | A tenant changes their consented plan types, and reflects the new state. |
+| Trials | `AssignLicenseToUser` | A trial license is assigned to a user. |
+| Environment Lifecycle | `EnvironmentDisabledByMiser` | An environment is automatically disabled due to insufficient database capacity. |
 
 ## Activity category: Admin actions
 
@@ -159,11 +158,11 @@ Each activity event contains a payload of metadata that's specific to the indivi
 
 | **Event** | **Description** |
 |-------------------------|-------------------------|
-| Apply Admin Role | Emitted when a tenant admin requests the System administrator role in Dataverse in the environment. |
+| `ApplyAdminRole` | A tenant admin requests the System administrator role in Dataverse in the environment. |
 
 ## Activity category: Lockbox operations
 
-All the lockbox activities fall under the **LockboxRequestOperation** activity. Each activity event contains a payload of metadata with these properties when you create or update the lockbox request:
+All the lockbox activities fall under the `LockboxRequestOperation` activity. Each activity event contains a payload of metadata with these properties when you create or update the lockbox request:
 
 - Lockbox request ID
 - Lockbox request state
@@ -177,9 +176,9 @@ You send the events listed in this table to Microsoft Purview.
 
 | **Category** | **Event** | **Description** |
 |-------------------------------------------------------------|--------------|-----------------------------------------|
-| Create lockbox request | LockboxRequestOperation | Emitted when a new lockbox request is created.|
-| Update Lockbox request | LockboxRequestOperation | Emitted when a lockbox request is approved or denied.|
-| Lockbox request access ended | LockboxRequestOperation | Emitted when a lockbox request expired or access ended.|
+| Create lockbox request | `LockboxRequestOperation` | A new lockbox request is created.|
+| Update Lockbox request | `LockboxRequestOperation` | A lockbox request is approved or denied.|
+| Lockbox request access ended | `LockboxRequestOperation` | A lockbox request expired or access ended.|
 
 Here's an example of the payload of metadata you can expect from one of the events listed in the table.
 
@@ -249,38 +248,37 @@ Here's an example of the payload of metadata you can expect from one of the even
 > [!NOTE]
 >
 > - Activity logging for data policies isn't currently available in sovereign clouds.
->
-> - Currently, only users with an E5 license can view these audit log events.
+> - To access data policy logs, you need the appropriate Microsoft licenses. Go to [Microsoft Purview service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-purview-service-description) and [Microsoft Purview licensing guidance](https://www.microsoft.com/licensing/guidance/Microsoft-Purview) to learn more.
 
-All the data policy events appear under the **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection that includes the following properties:
+All the data policy events appear under the `GovernanceApiPolicyOperation` activity. Each activity event contains a property collection with the following properties:
 
-- Operation Name
+- Operation name
 - Policy ID
 - Policy display name
-- Additional Resources(if applicable)
+- Additional resources (if applicable)
 
 The data policy events listed in this table are sent to Microsoft Purview.
 
 | **Category** | **Description** |
 |-------------------------------------------------------------|-----------------------------------------|
-| Create Data Policy | Emitted when a new data policy is created.|
-| Update Data Policy | Emitted when a data policy is updated.|
-| Delete Data Policy | Emitted when a data policy is deleted.|
-| Create Custom Connector Patterns | Emitted when a new custom connector URL pattern is created.|
-| Update Custom Connector Patterns | Emitted when a custom connector URL pattern is updated.|
-| Delete Custom Connector Patterns | Emitted when a custom connector URL pattern is deleted.|
-| Create Connector Configurations | Emitted when a connector configuration is created for the data policy.|
-| Update Connector Configurations | Emitted when a connector configuration is updated for the data policy.|
-| Delete Connector Configurations | Emitted when a connector configuration is deleted for the data policy.|
-| Create Policy Scope | Emitted when a new policy scope is created.|
-| Update Policy Scope | Emitted when a policy scope is updated.|
-| Delete Policy Scope | Emitted when a policy scope is deleted.|
-| Create Exempt Resources | Emitted when an exempt resources list is created for the data policy.|
-| Update Exempt Resources | Emitted when an exempt resources list is updated for the data policy.|
-| Delete Exempt Resources | Emitted when an exempt resources list is deleted for the data policy.|
-| Create connector blocking policy | Emitted when a new connector blocking policy is created.|
-| Update connector blocking policy | Emitted when connector blocking policy is updated.|
-| Delete connector blocking policy | Emitted when connector blocking policy is deleted.|
+| Create Data Policy | A new data policy is created.|
+| Update Data Policy | A data policy is updated.|
+| Delete Data Policy | A data policy is deleted.|
+| Create Custom Connector Patterns | A new custom connector URL pattern is created.|
+| Update Custom Connector Patterns | A custom connector URL pattern is updated.|
+| Delete Custom Connector Patterns | A custom connector URL pattern is deleted.|
+| Create Connector Configurations | A connector configuration is created for the data policy.|
+| Update Connector Configurations | A connector configuration is updated for the data policy.|
+| Delete Connector Configurations | A connector configuration is deleted for the data policy.|
+| Create Policy Scope | A new policy scope is created.|
+| Update Policy Scope | A policy scope is updated.|
+| Delete Policy Scope | A policy scope is deleted.|
+| Create Exempt Resources | An exempt resources list is created for the data policy.|
+| Update Exempt Resources | An exempt resources list is updated for the data policy.|
+| Delete Exempt Resources | An exempt resources list is deleted for the data policy.|
+| Create connector blocking policy | A new connector blocking policy is created.|
+| Update connector blocking policy | A connector blocking policy is updated.|
+| Delete connector blocking policy | A connector blocking policy is deleted.|
 
 Here's an example payload of metadata that you can expect from one of the events in the table.
 

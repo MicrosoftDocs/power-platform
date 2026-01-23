@@ -1,9 +1,9 @@
 ---
 title: View Power Automate activity logs in Microsoft Purview
 description: Learn how to access Power Automate activity logs in Microsoft Purview and explore what Power Automate activities you can monitor.
-author: EllenWehrle
+author: grbarker
 ms.topic: how-to
-ms.date: 01/09/2026
+ms.date: 01/22/2026
 ms.subservice: admin
 ms.author: grbarker
 ms.reviewer: ellenwehrle
@@ -29,10 +29,10 @@ This article covers prerequisites, how to access the logs in Microsoft Purview, 
 
 ## Prerequisites
 
-To view connector activity logs in Microsoft Purview, make sure you:
+To view Power Automate activity logs in Microsoft Purview, make sure you:
 
-- Review and complete the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
-- Confirm you're an admin who has a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
+- Review and complete all the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
+- Are an admin with a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
 - Are assigned either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview.
 
 Learn more:
@@ -50,16 +50,16 @@ Learn more:
 
 The SDK layer handles logging, so a single action can trigger multiple logged activities. This table lists a sample of user events you can monitor.
 
-| Category | Event | Description |
+| **Category** | **Event** | **Description** |
 |-|-|-|
-|Flows | Created flow | The time a flow is created.|
-|Flows | Edited flow | The time an update is made to a flow.|
-|Flows | Deleted flow | The time a flow is deleted.|
+|Flows | Created flow | A flow is created.|
+|Flows | Edited flow | An update is made to a flow.|
+|Flows | Deleted flow | A flow is deleted.|
 |Flow permissions | Edited permissions | Each time a user's permissions to a flow changes. For example, when a user is added as co-owner.|
 |Flow permissions | Deleted permissions | Each time a user's permissions to a flow is removed.|
-|Trials | Started a paid trial | When a user starts a paid trial.|
-|Trials | Renewed a paid trial | When a user renews a paid trial.|
-|Hosted RPA | Microsoft Entra ID joined | When a hosted RPA bot is joined to a customer's tenant Microsoft Entra ID.|
+|Trials | Started a paid trial | A user starts a paid trial.|
+|Trials | Renewed a paid trial | A user renews a paid trial.|
+|Hosted RPA | Microsoft Entra ID joined | A hosted RPA bot is joined to a customer's tenant Microsoft Entra ID.|
 
 > [!TIP]
 > Use RecordType `PowerPlatformAdministratorActivity*` to view hosted robotic process automation (RPA) events.
@@ -68,28 +68,28 @@ The SDK layer handles logging, so a single action can trigger multiple logged ac
 
 Schemas define which Power Automate fields are sent to the Microsoft Purview compliance portal. Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to Power Automate activities. This table lists the common fields the base schema contains.
 
-|Field display name | Logical name | Type | Mandatory | Description|
+|**Field name** | **Logical name** | **Type** | **Mandatory** | **Description**|
 |-|-|-|-|-|
-|Date | CreationTime | Edm.Date | No | Date and time when the log is generated in UTC.|
-|Flow details | FlowDetailsUrl | Edm. String | No | Link to the flow's details page.|
-|IP address | ClientIP | Edm.String | No | IP address of the user's device.|
-|ID | ID | Edm.Guid | No | A unique GUID for every row logged.|
-|Result status | ResultStatus | Edm.String | No | Status of the row logged.|
-|Organization ID | OrganizationId | Edm.Guid | Yes | A unique identifier of the organization from which the log is generated.|
-|Operation | Operation | Edm.String | No | Name of an operation.|
-|Workload | Workload | Edm.String | No | Workload of an operation.|
-|User | UserKey | Edm.String | No | A unique identifier of the user in Microsoft Entra ID.|
-|User type | UserType | Edm.String | No | The audit type (admin, regular, or system)|
-|Flow connector names | FlowConnectorNames | Edm.String | No | Connector names listed in the flow.|
-|SharingPermission | SharingPermission | Edm.String | No | Type of permission shared with another user (3 = "Owner"/ReadWrite, 2 = "Run-only user"/Read).|
-|Recipient UPN | RecipientUPN | Edm.String | No | If permission was updated, shows the UPN of the permission recipient.|
-|LicenseDisplayName | LicenseDisplayName | Edm.String | No | Display name of the license.|
-|UserTypeInititated | UserTypeInititated | Edm.Int32 | No | Which type of user initiated the operation. Applicable for delete flow, edit permissions (1 = user, 2 = admin).|
-|UserUPN | UserUPN | Edm.String | No | Unique ID of the user. Always equivalent to UserKey.|
+|Date | `CreationTime` | `Edm.Date` | No | Date and time when the log is generated in UTC.|
+|Flow details | `FlowDetailsUrl` | `Edm.String` | No | Link to the flow's details page.|
+|IP address | `ClientIP` | `Edm.String` | No | IP address of the user's device.|
+|ID | `ID` | `Edm.Guid` | No | A unique GUID for every row logged.|
+|Result status | `ResultStatus` | `Edm.String` | No | Status of the row logged.|
+|Organization ID | `OrganizationId` | `Edm.Guid` | Yes | A unique identifier of the organization from which the log is generated.|
+|Operation | `Operation` | `Edm.String` | No | Name of an operation.|
+|Workload | `Workload` | `Edm.String` | No | Workload of an operation.|
+|User | `UserKey` | `Edm.String` | No | A unique identifier of the user in Microsoft Entra ID.|
+|User type | `UserType` | `Edm.String` | No | The audit type (admin, regular, or system)|
+|Flow connector names | `FlowConnectorNames` | `Edm.String` | No | Connector names listed in the flow.|
+|Sharing Permission | `SharingPermission` | `Edm.String` | No | Type of permission shared with another user (3 = "Owner"/ReadWrite, 2 = "Run-only user"/Read).|
+|Recipient UPN | `RecipientUPN` | `Edm.String` | No | If permission was updated, shows the UPN of the permission recipient.|
+|License Display Name | `LicenseDisplayName` | `Edm.String` | No | Display name of the license.|
+|User Type Initiated | `UserTypeInitiated` | `Edm.Int32` | No | Which type of user initiated the operation. Applicable for *delete flow* and *edit permissions* (1 = user, 2 = admin).|
+|User UPN | `UserUPN` | `Edm.String` | No | Unique ID of the user. Always equivalent to `UserKey`.|
 
 ## Limitations
 
-You can only view cloud flow activities in the [Microsoft Purview portal](https://compliance.microsoft.com/). If you want to see desktop flow activities, they're available in the Microsoft Dataverse audit logs. You also have the option to [monitor desktop flow runs in Power Automate](/power-automate/desktop-flows/monitor-desktop-flow-runs).
+You can only view cloud flow activities in the [Microsoft Purview portal](https://compliance.microsoft.com/). If you want to see desktop flow activities, they're available in the Microsoft Dataverse audit logs. You also have the option [monitor desktop flow runs in Power Automate](/power-automate/desktop-flows/monitor-desktop-flow-runs).
 
 ### Related content
 
