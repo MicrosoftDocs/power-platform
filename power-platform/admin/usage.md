@@ -57,7 +57,7 @@ This table shows usage by run volume and includes cloud flows.
 This table shows usage by sessions and includes agents built in Copilot Studio (full).
 
 ## Known issues
-- For Power Automate and Copilot Studio, usage data may not fully reflect your organization’s activity. Microsoft is actively working to resolve the issue.
+- For Power Automate and Copilot Studio, usage data from December 25, 2025, through January 3, 2026, may be inaccurate. This issue has been resolved for dates after January 3, 2026.
 
 ## Frequently asked questions (FAQs)
 
