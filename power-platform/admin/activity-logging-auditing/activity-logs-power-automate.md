@@ -62,7 +62,7 @@ The SDK layer handles logging, so a single action can trigger multiple logged ac
 |Hosted RPA | Microsoft Entra ID joined | A hosted RPA bot is joined to a customer's tenant Microsoft Entra ID.|
 
 > [!TIP]
-> Use RecordType `PowerPlatformAdministratorActivity*` to view hosted robotic process automation (RPA) events.
+> Use RecordType `PowerPlatformAdministratorActivity` to view hosted robotic process automation (RPA) events.
 
 ## Get details on base schema for logging
 
@@ -70,23 +70,22 @@ Schemas define which Power Automate fields are sent to the Microsoft Purview com
 
 |Field name | Logical name | Type | Mandatory | Description|
 |-|-|-|-|-|
-|Date | `CreationTime` | `Edm.Date` | No | Date and time when the log is generated in UTC.|
-|Flow details | `FlowDetailsUrl` | `Edm.String` | No | Link to the flow's details page.|
-|IP address | `ClientIP` | `Edm.String` | No | IP address of the user's device.|
-|ID | `ID` | `Edm.Guid` | No | A unique GUID for every row logged.|
-|Result status | `ResultStatus` | `Edm.String` | No | Status of the row logged.|
-|Organization ID | `OrganizationId` | `Edm.Guid` | Yes | A unique identifier of the organization from which the log is generated.|
-|Operation | `Operation` | `Edm.String` | No | Name of an operation.|
-|Workload | `Workload` | `Edm.String` | No | Workload of an operation.|
-|User | `UserKey` | `Edm.String` | No | A unique identifier of the user in Microsoft Entra ID.|
-|User type | `UserType` | `Edm.String` | No | The audit type (admin, regular, or system)|
-|Flow connector names | `FlowConnectorNames` | `Edm.String` | No | Connector names listed in the flow.|
-|Sharing Permission | `SharingPermission` | `Edm.String` | No | Type of permission shared with another user (3 = "Owner"/ReadWrite, 2 = "Run-only user"/Read).|
-|Recipient UPN | `RecipientUPN` | `Edm.String` | No | If permission was updated, shows the UPN of the permission recipient.|
-|License Display Name | `LicenseDisplayName` | `Edm.String` | No | Display name of the license.|
-|User Type Initiated | `UserTypeInitiated` | `Edm.Int32` | No | Which type of user initiated the operation. Applicable for *delete flow* and *edit permissions* (1 = user, 2 = admin).|
-|User UPN | `UserUPN` | `Edm.String` | No | Unique ID of the user. Always equivalent to `UserKey`.|
-
+|Date | `CreationTime` |:::no-loc text="Edm.Date"::: | No | Date and time when the log is generated in UTC.|
+|Flow details | `FlowDetailsUrl` |:::no-loc text="Edm.String"::: | No | Link to the flow's details page.|
+|IP address | `ClientIP` |:::no-loc text="Edm.String"::: | No | IP address of the user's device.|
+|ID | `ID` |:::no-loc text="Edm.Guid"::: | No | A unique GUID for every row logged.|
+|Result status | `ResultStatus` |:::no-loc text="Edm.String"::: | No | Status of the row logged.|
+|Organization ID | `OrganizationId` |:::no-loc text="Edm.Guid"::: | Yes | A unique identifier of the organization from which the log is generated.|
+|Operation | `Operation` | :::no-loc text="Edm.String":::| No | Name of an operation.|
+|Workload | `Workload` | :::no-loc text="Edm.String":::| No | Workload of an operation.|
+|User | `UserKey` | :::no-loc text="Edm.String":::| No | A unique identifier of the user in Microsoft Entra ID.|
+|User type | `UserType` | :::no-loc text="Edm.String":::| No | The audit type (admin, regular, or system)|
+|Flow connector names | `FlowConnectorNames` | :::no-loc text="Edm.String":::| No | Connector names listed in the flow.|
+|Sharing Permission | `SharingPermission` | :::no-loc text="Edm.String":::| No | Type of permission shared with another user (3 = "Owner"/ReadWrite, 2 = "Run-only user"/Read).|
+|Recipient UPN | `RecipientUPN` | :::no-loc text="Edm.String":::| No | If permission was updated, shows the UPN of the permission recipient.|
+|License Display Name | `LicenseDisplayName` | :::no-loc text="Edm.String":::| No | Display name of the license.|
+|User Type Initiated | `UserTypeInitiated` | :::no-loc text="Edm.Int32":::| No | Which type of user initiated the operation. Applicable for *delete flow* and *edit permissions* (1 = user, 2 = admin).|
+|User UPN | `UserUPN` | :::no-loc text="Edm.String":::| No | Unique ID of the user. Always equivalent to `UserKey`.|
 ## Limitations
 
 You can only view cloud flow activities in the [Microsoft Purview portal](https://compliance.microsoft.com/). If you want to see desktop flow activities, they're available in the Microsoft Dataverse audit logs. You also have the option [monitor desktop flow runs in Power Automate](/power-automate/desktop-flows/monitor-desktop-flow-runs).

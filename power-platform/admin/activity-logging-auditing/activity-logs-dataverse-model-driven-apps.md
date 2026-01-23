@@ -71,7 +71,7 @@ Schemas define which fields are sent to the Microsoft Purview portal. Some field
 |Field name  |Type  |Mandatory  |Description  |
 |---------|---------|---------|---------|
 |`Date`     |:::no-loc text="Edm.Date":::|No         |Date and time the log was generated in Coordinated Universal Time (UTC)         |
-|`IP address`     |:::no-loc text="Edm.String":::         |No         |IP address of the user or corporate gateway          |
+|`IP Address`     |:::no-loc text="Edm.String":::         |No         |IP address of the user or corporate gateway          |
 |`Id`     |:::no-loc text="Edm.Guid":::         |No         |Unique GUID for every row logged          |
 |`Result Status`     |:::no-loc text="Edm.String":::         |No         |Status of the row logged. Success in most cases          |
 |`Organization Id`     |:::no-loc text="Edm.Guid":::         |Yes        |Unique identifier of the organization from which the log was generated and can be found under Dynamics Developer Resources          |
