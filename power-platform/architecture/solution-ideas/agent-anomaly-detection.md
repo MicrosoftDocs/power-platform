@@ -33,7 +33,7 @@ To be able to properly identify potential problems the solution will require sev
 
 - **Anomaly guidance**: To increase consistency in handling anomalies the finance team has created a guidance document documenting their investigation steps and procedures for when anomalies are identified.
 
-# ​Workflow
+## ​Workflow
 
 1. **​Extract financial transactions**: Using a connection to the ERP or financial system (Dynamics 365, SAP, Oracle, etc.), transaction data flows into Microsoft Fabric. Multiple methods can be used to ingest data. For batch processing, Fabric Data Factory pipelines can extract invoices and vendor data on a scheduled basis. For real-time detection, Microsoft Fabric Eventstream can capture transactions as they occur, enabling immediate analysis. Data is stored in the Fabric Lakehouse.
 
@@ -45,7 +45,7 @@ To be able to properly identify potential problems the solution will require sev
 
 1. **​Action and resolution**: Once an anomaly is investigated, the Spend Anomaly agent supports resolution workflows. Users can mark items as reviewed, escalate to management, create investigation tasks, or flag as false positives directly through the conversation. The agent can connect to other systems via Agent Flows and connectors to hold payments, request additional documentation, or update vendor risk ratings.
 
-# ​Components
+## ​Components
 
 ​**​ERP**: The organization’s system that tracks their financial data. For example, Dynamics 365, SAP, Oracle, etc. The ERP system will be the source for financial data for analysis but will not be directly accessed by the agents to perform the investigations.
 
@@ -61,7 +61,7 @@ To be able to properly identify potential problems the solution will require sev
 
 **​Microsoft 365 Document Library**: Storing the finance team’s anomaly guidance and other knowledge information in a document library allows these assets to be easily used as a knowledge source by the agents.​
 
-# Considerations
+## Considerations
 
 [!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
