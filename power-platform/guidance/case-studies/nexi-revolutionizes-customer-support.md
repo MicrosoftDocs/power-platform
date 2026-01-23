@@ -1,7 +1,7 @@
 ---
 title: Nexi Group revolutionizes customer support with Copilot Studio 
-description: Learn how Nexi Group uses Microsoft Copilot Studio and Azure AI services to streamline customer interactions, reduce contact center workload, and modernize card-service support.
-#customer intent: As a Power Platform user, I want to learn how Nexi built a conversational agent with Copilot Studio and Azure AI services so that I can implement similar solutions in my organization.
+description: Learn how Nexi Group uses Microsoft Copilot Studio and Foundry Tools to streamline customer interactions, reduce contact center workload, and modernize card-service support.
+#customer intent: As a Power Platform user, I want to learn how Nexi built a conversational agent with Copilot Studio and Foundry Tools so that I can implement similar solutions in my organization.
 author: carcla
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
@@ -10,14 +10,11 @@ ms.topic: overview
 ms.date: 01/19/2026
 ---
 
-<!-- note from editor: I looked up Azure AI services in the style guide, and it says this has been renamed to "Foundry Tools". Here's the link to the entry: https://learn.microsoft.com/en-us/product-style-guide-msft-internal/a_z_names_terms/a/azure-ai-services. Do you want to change Azure AI services or leave as is? You could say "Foundry Tools (formerly known as Azure AI services)" -->
-<!-- The numbers in line 52 repeat what was already reported in line 22. I suggest removing it. -->
-
 # Nexi Group revolutionizes customer support with Copilot Studio
 
 [Nexi Group](https://www.nexigroup.com/), Europe's leading PayTech company, supports cardholders and partner banks across 25 countries or regions, representing about 65 percent of European card-based consumption. Operating at this scale requires managing thousands of card products, service variations, and regulatory requirements, often across multiple back-end systems. For customers and contact center teams, even routine card operations can become complex, time-consuming, and error-prone.
 
-To modernize its service experience, Nexi built a secure, AI-powered conversational agent by using Microsoft Copilot Studio and Azure AI services. The solution streamlines customer interactions, reduces contact center workload, and strengthens Nexi's digital service reputation. Nexi was among the first to adopt generative AI, complementing its human‑assisted chat with an advanced agent powered by algorithmic and generative intelligence.
+To modernize its service experience, Nexi built a secure, AI-powered conversational agent by using Microsoft Copilot Studio and Foundry Tools (formerly known as Azure AI services). The solution streamlines customer interactions, reduces contact center workload, and strengthens Nexi's digital service reputation. Nexi was among the first to adopt generative AI, complementing its human‑assisted chat with an advanced agent powered by algorithmic and generative intelligence.
 
 Today, the agent handles more than 3,000 customer interactions daily with a 70 percent satisfaction rate, significantly reducing escalations to live agents. By combining intelligent document retrieval, secure system integration, and advanced analytics, Nexi has redefined how card services are delivered. This approach improves customer experience, lowers operational costs, and establishes a scalable foundation for autonomous, multi-agent innovation.
 
@@ -49,8 +46,6 @@ Key benefits include:
 
 - **Greater business agility**: Business teams can update agent messages independently, while IT maintains oversight through custom security roles, streamlining changes without requiring IT intervention.
 
-The agent handles more than 3,000 end-user interactions daily, with a satisfaction rate of 70 percent.
-
 > By using generative AI responses and enabling self-service, this solution significantly reduced the escalation rates. It didn't just enhance our brand reputation for digital services, it also improved the overall user experience while reducing operating costs.
 >
 > — *Clemente Pescatore, Global Head of Contact Center & RPA Factory*
@@ -73,7 +68,7 @@ Behind these capabilities is a robust architecture that powers intelligent docum
 
 The architecture integrates the Copilot Studio agent with three core capability areas, each built on Azure services.
 
-:::image type="content" source="media/nexi/agent-architecture.png" alt-text="Diagram showing the technologies used including Copilot Studio, Azure AI services, and Power BI." lightbox="media/nexi/agent-architecture.png":::
+:::image type="content" source="media/nexi/agent-architecture.png" alt-text="Diagram showing the technologies used including Copilot Studio, Foundry Tools, and Power BI." lightbox="media/nexi/agent-architecture.png":::
 
 1. **Intelligent document retrieval**: To overcome limitations of basic document uploads, Nexi implemented a retrieval-augmented generation (RAG) architecture using Azure OpenAI and Azure AI Search. Documents are stored in Azure Storage and indexed with custom metadata—such as card tier and eligibility rules—using tailored chunking strategies. Azure OpenAI processes customer queries and generates grounded responses based on the most relevant retrieved content, delivering accurate, context-aware answers even when documents overlap.
  
