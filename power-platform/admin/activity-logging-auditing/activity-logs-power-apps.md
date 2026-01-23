@@ -3,7 +3,7 @@ title: View Power Apps activity logs in Microsoft Purview
 description: Learn how to access Power Apps activity logs in Microsoft Purview and explore what canvas apps activities you can view. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/22/2026
+ms.date: 01/23/2026
 author: grbarker
 ms.subservice: admin
 ms.author: grbarker
@@ -58,7 +58,7 @@ Learn more:
 
 The SDK layer handles logging. A single action can trigger multiple events that the system logs. The following table lists a sample of user events you can audit.
 
-|**Event**  |**Description**  |
+|Event  |Description  |
 |---------|---------|
 |Created app   |A maker creates the app for the first time. |
 |Launched app    |The app is launched. |

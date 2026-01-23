@@ -3,7 +3,7 @@ title: View Power Platform connector activity logs in Microsoft Purview
 description: Learn how to access Power Platform connector activity logs in Microsoft Purview and explore what connector activities you can monitor.
 author: grbarker
 ms.topic: how-to
-ms.date: 01/22/2026
+ms.date: 01/23/2026
 ms.subservice: admin
 ms.author: grbarker
 ms.reviewer: ellenwehrle
@@ -53,7 +53,7 @@ Learn more:
 
 This table lists the connector events you can search for in the audit logs.
 
-|**Connector event**  |**Description**  |
+|Connector event  |Description  |
 |---------|---------|
 |API created  |  A custom API is created.      |
 |API edited    | A custom API is updated.        |
@@ -79,7 +79,7 @@ On **Audit search**, you can select a log and view its activity details. This ta
 
 The following table lists logging details available in the audit logs.
 
-|**Detail**  |**Description**  |
+|Detail  |Description  |
 |---------|---------|
 |`Date`     | Date and time in this format: `YYYY-MM-DD HH:MM:SS`       |
 |`IP Address`   | Client's IP address        |

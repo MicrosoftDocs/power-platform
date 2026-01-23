@@ -10,10 +10,11 @@ Take these steps to sign in to the Microsoft Purview portal:
 
 1. Sign in to the [Microsoft Purview portal](https://purview.microsoft.com/home)
 1. In the Microsoft Purview portal, you can access the Audit page two ways:
-    -  On the Home page, select the **Audit** solution card. If the Audit solution card isn't displayed, select **View all solutions** and then select **Audit** from the **Core** section.
-    Or
-    -  On the Home page, select **Solutions** on the left menu and then select **Audit**.
-1. The audit solution lets you search activities or create audit retention policies. On the Search page, you can filter for different Power Platform activities in the **Activities** list. Activities are mapped to event types and categories which are listed in the tables in this article for you to reference.
+
+    -  On the left navigation pane, select **Solutions** and then select **Audit**.
+    -  Or, on the *Home* page, select the **Audit** solution card. If the Audit solution card isn't displayed, select **View all solutions** and then select **Audit** from the **Core** section.
+
+1. The audit solution lets you search activities or create audit retention policies. On the *Search* page, you can filter for different Power Platform activities in the **Activities** list. Activities are mapped to event types and categories, which are listed in the tables in this article for you to reference.
 
 :::image type="content" source="../media/admin-audit-activity-search/audit-search-activities.png" alt-text="Shows Microsoft Purview audit search page." lightbox="../media/admin-audit-activity-search/audit-search-activities.png":::
 

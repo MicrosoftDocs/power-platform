@@ -2,7 +2,7 @@
 title: View Power Pages activity logs in Microsoft Purview
 description: Learn how to access Power Pages activity logs in Microsoft Purview and explore what Power Pages activities you can monitor.
 ms.topic: how-to
-ms.date: 01/22/2026
+ms.date: 01/23/2026
 author: EllenWehrle
 ms.subservice: admin
 ms.author: grbarker
@@ -59,7 +59,7 @@ You can search Power Pages activities for a specific period by selecting the dat
 
 This table lists some of the activities you can monitor in Power Pages audit logs.
 
-| **Activity Name**                              | **Operation Name**                     | **Description**                                                               |
+| Activity Name                              | Operation Name                     | Description                                                               |
 |------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------------|
 | Enable Power BI visualization                  | `PowerBIVisualizationEnabled`            | Power BI visualization is enabled for the site.                           |
 | Disable Power BI visualization                 | `PowerBIVisualizationDisabled`           | Power BI visualization is disabled for the site.                          |
@@ -71,7 +71,7 @@ This table lists some of the activities you can monitor in Power Pages audit log
 | Edit site details - Name Update                | `SiteNameUpdated`                        | A site name is changed.                                                     |
 | Edit site details - Website Record Update      | `WebsiteRecordUpdated`                   | A website record is updated.                                                |
 | Shut down site                                 | `SiteShutDown`                           | A site is shut down.                                                        |
-| Delete site                                    | `SiteDeleted`                            | A site is deleted.                                                               |
+| Delete site                                    | `SiteDeleted`                            | A site is deleted.                                                          |
 | Add custom domain name                         | `CustomDomainConnected`                  | A site is connected to a custom domain.                                     |
 | Remove custom domain name                      | `CustomDomainDeleted`                    | A custom domain is removed from the site.                             |
 | Change site visibility                         | `SiteVisibilityUpdated`                  | Site visibility is changed (private to public, or public to private).     |
@@ -97,7 +97,7 @@ This table lists some of the activities you can monitor in Power Pages audit log
 | Enable early upgrade                           | `EarlyUpgradeEnabled`                    | Early upgrade is enabled.                                                 |
 | Install field service extension               | `FieldServiceExtensionInstalled`         | The field service extension is installed.                                 |
 | Modify maintenance mode URL                   | `MaintenanceModeURLModified`             | The maintenance mode URL is modified.                                     |
-| Install project service automation extension        | `ProjectServiceAutomationExtensionInstalled` | The project service automation extension is installed.                   |
+| Install project service automation extension        | `ProjectServiceAutomationExtensionInstalled` | The project service automation extension is installed.          |
 | Archive site                                   | `SiteArchived`                           | The site is archived.                                                     |
 | Suspend site                                  | `SiteSuspended`                          | The site is suspended.                                                    |
 | Unarchive site                                 | `SiteUnarchived`                         | The site is unarchived.                                                 |

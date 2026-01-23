@@ -3,7 +3,7 @@ title: View Power Automate activity logs in Microsoft Purview
 description: Learn how to access Power Automate activity logs in Microsoft Purview and explore what Power Automate activities you can monitor.
 author: grbarker
 ms.topic: how-to
-ms.date: 01/22/2026
+ms.date: 01/23/2026
 ms.subservice: admin
 ms.author: grbarker
 ms.reviewer: ellenwehrle
@@ -50,7 +50,7 @@ Learn more:
 
 The SDK layer handles logging, so a single action can trigger multiple logged activities. This table lists a sample of user events you can monitor.
 
-| **Category** | **Event** | **Description** |
+| Category | Event | Description |
 |-|-|-|
 |Flows | Created flow | A flow is created.|
 |Flows | Edited flow | An update is made to a flow.|
@@ -68,7 +68,7 @@ The SDK layer handles logging, so a single action can trigger multiple logged ac
 
 Schemas define which Power Automate fields are sent to the Microsoft Purview compliance portal. Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to Power Automate activities. This table lists the common fields the base schema contains.
 
-|**Field name** | **Logical name** | **Type** | **Mandatory** | **Description**|
+|Field name | Logical name | Type | Mandatory | Description|
 |-|-|-|-|-|
 |Date | `CreationTime` | `Edm.Date` | No | Date and time when the log is generated in UTC.|
 |Flow details | `FlowDetailsUrl` | `Edm.String` | No | Link to the flow's details page.|

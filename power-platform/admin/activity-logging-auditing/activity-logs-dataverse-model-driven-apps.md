@@ -3,7 +3,7 @@ title: View Microsoft Dataverse and model-driven app activity logs in Microsoft 
 description: Learn how to access Dataverse and model-driven app activity logs in Microsoft Purview and explore what activities you can view.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/22/2026
+ms.date: 01/23/2026
 author: grbarker
 contributors:
   - yingchin
@@ -52,7 +52,7 @@ Learn more:
 
 Logging takes place at the SDK layer, which means a single action can trigger multiple logged events. The following table covers common examples of user and support-related events.
 
-|**Event**  |**Description**  |
+|Event  |Description  |
 |---------|---------|
 |Create, read, update, delete (CRUD)     |Logging all CRUD activities is essential for understanding the impact of a problem and being compliant with data protection impact assessments (DPIA). |
 |Multiple record view     |Users of Dynamics view information in bulk, like grid views, Advanced Find search, and more. Critical customer content information is part of these views.|
@@ -68,47 +68,47 @@ Logging takes place at the SDK layer, which means a single action can trigger mu
 
 Schemas define which fields are sent to the Microsoft Purview portal. Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to customer engagement apps. The Base schema contains these common fields.
 
-|**Field name**  |**Type**  |**Mandatory**  |**Description**  |
+|Field name  |Type  |Mandatory  |Description  |
 |---------|---------|---------|---------|
-|`Date`     |`Edm.Date`|No         |Date and time the log was generated in Coordinated Universal Time (UTC)         |
-|`IP address`     |`Edm.String`         |No         |IP address of the user or corporate gateway          |
-|`Id`     |`Edm.Guid`         |No         |Unique GUID for every row logged          |
-|`Result Status`     |`Edm.String`         |No         |Status of the row logged. Success in most cases          |
-|`Organization Id`     |`Edm.Guid`         |Yes        |Unique identifier of the organization from which the log was generated and can be found under Dynamics Developer Resources          |
-|`ClientIP`     |`Edm.String`         |No         |IP address of the user or corporate gateway          |
-|`CorrelationId`     |`Edm.Guid`         |No         |Unique value used to associate related rows (for example, when a large row is split)          |
-|`CreationTime`     |`Edm.Date`         |No         |Date and time the log was generated in Coordinated Universal Time (UTC)          |
-|`Operation`     |`Edm.Date`         |No         |Name of the message called in the SDK          |
-|`UserKey`     |`Edm.String`         |No         |Unique identifier of the user in Microsoft Entra ID–also known as User PUID          |
-|`UserType`     |`Self.UserType`         |No         |The Microsoft 365 audit type (Regular, System)          |
-|`User`     |`Edm.String`        |No         |Primary email of the user          |
+|`Date`     |:::no-loc text="Edm.Date":::|No         |Date and time the log was generated in Coordinated Universal Time (UTC)         |
+|`IP address`     |:::no-loc text="Edm.String":::         |No         |IP address of the user or corporate gateway          |
+|`Id`     |:::no-loc text="Edm.Guid":::         |No         |Unique GUID for every row logged          |
+|`Result Status`     |:::no-loc text="Edm.String":::         |No         |Status of the row logged. Success in most cases          |
+|`Organization Id`     |:::no-loc text="Edm.Guid":::         |Yes        |Unique identifier of the organization from which the log was generated and can be found under Dynamics Developer Resources          |
+|`ClientIP`     |:::no-loc text="Edm.String":::         |No         |IP address of the user or corporate gateway          |
+|`CorrelationId`     |:::no-loc text="Edm.Guid":::         |No         |Unique value used to associate related rows (for example, when a large row is split)          |
+|`CreationTime`     |:::no-loc text="Edm.Date":::         |No         |Date and time the log was generated in Coordinated Universal Time (UTC)          |
+|`Operation`     |:::no-loc text="Edm.Date":::         |No         |Name of the message called in the SDK          |
+|`UserKey`     |:::no-loc text="Edm.String":::         |No         |Unique identifier of the user in Microsoft Entra ID–also known as :::no-loc text="User PUID":::        |
+|`UserType`     |:::no-loc text="Self.UserType":::         |No         |The Microsoft 365 audit type (Regular, System)          |
+|`User`     |:::no-loc text="Edm.String":::        |No         |Primary email of the user          |
 
 ## Customer engagement apps schema
 
 The customer engagement apps schema contains fields specific to customer engagement apps and partner teams.
 
-|**Field name**  |**Type**  |**Mandatory**  |**Description**  |
+|Field name  |Type  |Mandatory  |Description  |
 |---------|---------|---------|---------|
-|`User Id`     |`Edm.String`         |No         |Unique identifier of the user GUID in the organization          |
-|`Crm Organization Unique Name`     |`Edm.String`         |No         |Unique name of the organization          |
-|`Instance Url`     |`Edm.String`         |No         |URL to the instance          |
-|`Item Url`     |`Edm.String`         |No         |URL to the record emitting the log          |
-|`Item Type`     |`Edm.String`         |No         |Name of the entity          |
-|`Message`     |`Edm.String`         |No         |Name of the message called in the SDK          |
-|`User Agent`     |`Edm.String`         |No         |Unique identifier of the user GUID in the organization          |
-|`EntityId`     |`Edm.Guid`       |No         |Unique identifier of the entity          |
-|`EntityName`     |`Edm.String`         |No         |Name of the entity in the organization          |
-|`Fields`     |`Edm.String`          |No         |JSON of Key Value pair reflecting the values that were created or updated         |
-|`Id`     |`Edm.String`          |No         |Entity name in customer engagement apps        |
-|`Query`     |`Edm.String`         |No         |The Filter query parameters used while executing the FetchXML          |
-|`QueryResults`     |`Edm.String`         |No         |One or multiple unique records returned by the Retrieve and Retrieve Multiple SDK message call          |
-|`ServiceContextId`     |`Edm.Guid`         |No         |The unique ID associated with service context          |
-|`ServiceContextIdType`     |`Edm.String`         |No         |Application defined token to define context use          |
-|`ServiceName`     |`Edm.String`         |No         |Name of the Service generating the log          |
-|`SystemUserId`     |`Edm.Guid`         |No         |Unique identifier of the user GUID in the organization          |
-|`UserAgent`     |`Edm.Guid`          |No        |Browser used to execute the request          |
-|`UserId`     |`Edm.Guid `         |No         |The unique ID of the Dynamics system user associated with this activity          |
-|`UserUpn`     |`Edm.String`         |No         |User principal name of the user associated with this activity          |
+|`User Id`     |:::no-loc text="Edm.String":::         |No         |Unique identifier of the user GUID in the organization          |
+|`Crm Organization Unique Name`     |:::no-loc text="Edm.String":::         |No         |Unique name of the organization          |
+|`Instance Url`     |:::no-loc text="Edm.String":::         |No         |URL to the instance          |
+|`Item Url`     |:::no-loc text="Edm.String":::         |No         |URL to the record emitting the log          |
+|`Item Type`     |:::no-loc text="Edm.String":::         |No         |Name of the entity          |
+|`Message`     |:::no-loc text="Edm.String":::         |No         |Name of the message called in the SDK          |
+|`User Agent`     |:::no-loc text="Edm.String":::         |No         |Unique identifier of the user GUID in the organization          |
+|`EntityId`     |:::no-loc text="Edm.Guid":::       |No         |Unique identifier of the entity          |
+|`EntityName`     |:::no-loc text="Edm.String":::         |No         |Name of the entity in the organization          |
+|`Fields`     |:::no-loc text="Edm.String":::          |No         |JSON of Key Value pair reflecting the values that were created or updated         |
+|`Id`     |:::no-loc text="Edm.String":::          |No         |Entity name in customer engagement apps        |
+|`Query`     |:::no-loc text="Edm.String":::         |No         |The Filter query parameters used while executing the FetchXML          |
+|`QueryResults`     |:::no-loc text="Edm.String":::         |No         |One or multiple unique records returned by the Retrieve and Retrieve Multiple SDK message call     |
+|`ServiceContextId`     |:::no-loc text="Edm.Guid":::         |No         |The unique ID associated with service context          |
+|`ServiceContextIdType`     |:::no-loc text="Edm.String":::         |No         |Application defined token to define context use          |
+|`ServiceName`     |:::no-loc text="Edm.String":::         |No         |Name of the Service generating the log          |
+|`SystemUserId`     |:::no-loc text="Edm.Guid":::         |No         |Unique identifier of the user GUID in the organization          |
+|`UserAgent`     |:::no-loc text="Edm.Guid":::          |No        |Browser used to execute the request          |
+|`UserId`     |:::no-loc text="Edm.Guid":::         |No         |The unique ID of the Dynamics system user associated with this activity          |
+|`UserUpn`     |:::no-loc text="Edm.String":::         |No         |User principal name of the user associated with this activity          |
 
 ## See what's logged
 
@@ -142,11 +142,11 @@ The system logs all SDK messages except the following messages:
 - `CheckClientCompatibility`
 - `RetrieveAttribute`
 
-## How we categorize Read and ReadMultiple
+## How to categorize Read and ReadMultiple
 
-We use the prefix to categorize each request.
+Use the prefix to categorize each request.
 
-|**If the request starts with:**  |**The category is:**  |
+|If the request starts with:  |The category is:  |
 |---------|---------|
 |`RetrieveMultiple`     |`ReadMultiple`  |
 |`ExportToExcel`     |`ReadMultiple` |
@@ -166,7 +166,7 @@ The following entries are examples of activity logs.
 
 ### Example 1 – Logs generated when user reads an Account record
 
-| **Schema Name** |                                                      **Value**                                                      |
+| Schema Name |                                                      Value                                                      |
 |-----------------|---------------------------------------------------------------------------------------------------------------------|
 |       `ID`        |                                        `50e01c88-2e43-4005-8be8-9ceb172e2e90`                                         |
 |     `UserKey`     |                                                  `10033XXXA49AXXXX`                                                   |
@@ -181,7 +181,7 @@ The following entries are examples of activity logs.
 
 ### Example 2 – Logs generated when user sees Account records in a grid (Export to Microsoft Excel logs are like this)
 
-|**Schema Name**  |**Value**  |
+|Schema Name  |Value  |
 |---------|---------|
 |`ID`     |`ef83f463-b92f-455e-97a6-2060a47efe33`          |
 |`UserKey`     |`10033XXXA49AXXXX`           |
@@ -196,20 +196,20 @@ The following entries are examples of activity logs.
 
 ### Example 3 – List of messages logged when user converts a lead to opportunity
 
-|**ID**  |**EntityID**  |**EntityName**  |**Operation**  |
+|ID  |EntityID  |EntityName  |Operation |
 |---------|---------|---------|---------|
-|53c98033-cca4-4420-97e4-4c1b4f81e062      |23ad069e-4d22-e811-a953-000d3a732d76          |Contact         |Create         |
-|5aca837c-a1f5-4801-b770-5c66183a58aa      |25ad069e-4d22-e811-a953-000d3a732d76          |Opportunity         |Create         |
-|c9585748-fdbf-4ff7-970c-bb37f6aa2c36      |25ad069e-4d22-e811-a953-000d3a732d76          |Opportunity         |Update         |
-|a0469f30-078b-419d-be61-b04c9a34121f      |1cad069e-4d22-e811-a953-000d3a732d76          |Lead         |Update         |
-|0975bceb-07c7-4dc2-b621-5a7b245c36a4      |1cad069e-4d22-e811-a953-000d3a732d76          |Lead         |Update         |
+|`53c98033-cca4-4420-97e4-4c1b4f81e062`      |`23ad069e-4d22-e811-a953-000d3a732d76`          |`Contact`         |`Create`         |
+|`5aca837c-a1f5-4801-b770-5c66183a58aa`      |`25ad069e-4d22-e811-a953-000d3a732d76`          |`Opportunity`         |`Create`         |
+|`c9585748-fdbf-4ff7-970c-bb37f6aa2c36`      |`25ad069e-4d22-e811-a953-000d3a732d76`          |`Opportunity`         |`Update`         |
+|`a0469f30-078b-419d-be61-b04c9a34121f`      |`1cad069e-4d22-e811-a953-000d3a732d76`          |`Lead`         |`Update`         |
+|`0975bceb-07c7-4dc2-b621-5a7b245c36a4`      |`1cad069e-4d22-e811-a953-000d3a732d76`          |`Lead`         |`Update`         |
 
 ## Known issues
 
 - Office has a 3-KB limit for each audit record. Therefore, in some cases, a single record from customer engagement apps needs to split into multiple records in Office. You can use the `CorrelationId` field to retrieve the set of split records for a given source record. Operations that are likely to require splitting include `RetrieveMultiple` and `ExportToExcel`.
 - Some operations need more processing to retrieve all relevant data. For example, the system processes `RetrieveMultiple` and `ExportToExcel` to extract the list of records that are retrieved or exported. However, not all relevant operations are yet processed. For example, `ExportToWord` is currently logged as single operation with no other details about what was exported.
 - In future releases, the system disables logging for operations deemed unnecessary based on a review of the logs. For example, some operations originate from automated system activity rather than user actions.
-- In some record instances, the `EntityName` value appears as `Unknown`. These records aren't related to any specific entity related operation and came in blank from CRM. They all have entity ID of `0000000-0000-0000-0000-000000000000`.
+- In some record instances, the `EntityName` value appears as `Unknown`. These records aren't related to any specific entity related operation and came in blank from CRM. They all have the entity ID, `0000000-0000-0000-0000-000000000000`.
 
 ### Related content
 
