@@ -1,6 +1,6 @@
 ---
-title: Allow external large language models (LLMs) for generative responses
-description: Learn how to allow external large language models for generative responses in Power Platform.
+title: Allow external language models for generative responses
+description: Learn how to allow external language models for generative responses in Power Platform.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
@@ -14,10 +14,7 @@ ms.contributors:
   - jcaugusto
 ---
 
-<!-- editor notes: I removed the line about enabling Anthropic models before Jan. 7 since that date has now passed. -->
-<!-- "large language models" is used only in the title and description. The Microsoft style guides says to use "language model" instead and avoid the LLM acronym. Here is that entry for reference: https://learn.microsoft.com/en-us/product-style-guide-msft-internal/a_z_names_terms/l/language-model-large-language-model-llm  -->
-
-# Allow external large language models (LLMs) for generative responses
+# Allow external language models for generative responses
 
 AI innovation moves at a rapid pace, and each AI model has different strengths and specialties. By turning on the **Enable External Models** setting or rule, you allow the use of external AI models for an environment or an environment group. These models offer an alternative approach to generative AI in Microsoft Copilot Studio. These models support advanced summarization and conversational capabilities. 
 
