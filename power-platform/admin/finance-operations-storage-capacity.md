@@ -18,7 +18,7 @@ search.audienceType:
 The finance and operations storage capacity report shows how much finance and operations storage your organization is using compared with how much its license entitles it to.
 
 > [!IMPORTANT]
-> This report helps you manage your storage more effectively. If you use more storage than your plan includes, please remove data you don't need or buy more storage.
+> This report helps you manage your storage more effectively. If you use more storage than your plan includes, remove data you don't need or buy more storage.
 >
 > Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
 >
@@ -26,8 +26,8 @@ The finance and operations storage capacity report shows how much finance and op
 >
 > Your organization must have the right licenses for the storage you use:
 >
-> - If you use more than your documented entitlements or usage limits, you must buy additional licenses.
-> - If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft will provide reasonable notice before suspending your online service.
+> - If you use more than your documented entitlements or usage limits, you must buy more licenses.
+> - If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft provides reasonable notice before suspending your online service.
 
 ## Licenses for finance and operations storage
 
@@ -84,7 +84,7 @@ To view the **Finance and Operations** capacity page, take the following steps:
 
 Select the value in the **Finance and operations database usage** column on the **Finance and operations** tab to see a table-level, drill-down view of how each table in your finance and operations environment is using capacity. 
 
-The **Finance and operations database uasage**, pane appears, where you have the ability to obtain a near real-time snapshot of the table-level storage consumption. Select the links, at the top of the pane, to view detailed information.
+The **Finance and operations database usage**, pane appears, where you have the ability to obtain a near real-time snapshot of the table-level storage consumption. Select the links, at the top of the pane, to view detailed information.
 
 - By selecting the **View as chart** link, you can track the time series trend, gaining insights into the evolution of storage across finance and operation tables. 
 - By selecting the **Export to CSV** link, you can download the details in CSV format for streamlined data analysis and reporting.
