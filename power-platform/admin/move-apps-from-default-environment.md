@@ -1,5 +1,5 @@
 ---
-title: Move apps from the default environment
+title: Move apps from the default environment (preview)
 description: The new recommendation in the Power Platform admin center allows administrators to easily move apps from the default environment to designated Managed Environments, ensuring compliance, security, and better organization. 
 author: sidhartg
 ms.component: pa-admin
@@ -12,12 +12,15 @@ search.audienceType:
   - admin
 ---
 
-# Move apps from the default environment
+# Move apps from the default environment (preview)
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Makers often use the default environment in Power Platform as a shared space to create apps, agents, and flows. However, they might not use adequate governance controls to manage these resources efficiently. Over time, this approach can lead to clutter, unmanaged resources, and security risks. The new recommendation in the Power Platform admin center helps administrators move apps from the default environment to designated Managed Environments. This process ensures compliance, security, and better organization.
 
 > [!NOTE]
-> - This feature is currently in public preview.
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to supplemental terms of use, and are available before an official release so that customers can get early access and provide feedback.
 > - During the preview:
 >   - You can only move canvas apps and SharePoint forms that don't use any shared connectors or resources. The recommendation only shows the apps and forms that you can move.
 >   - You need to add the users in the target environment and reshare the app with them.
