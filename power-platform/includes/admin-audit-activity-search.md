@@ -19,3 +19,5 @@ Take these steps to sign in to the Microsoft Purview portal:
 :::image type="content" source="../media/admin-audit-activity-search/audit-search-activities.png" alt-text="Shows Microsoft Purview audit search page." lightbox="../media/admin-audit-activity-search/audit-search-activities.png":::
 
 The logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
+
+See [Get started with search](/purview/audit-search#get-started-with-search) to learn more about searching the audit logs in Microsoft Purview.

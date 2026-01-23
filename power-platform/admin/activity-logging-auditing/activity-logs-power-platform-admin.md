@@ -35,7 +35,7 @@ This article explains how you can monitor activities in Microsoft Purview that a
 
 The activities include actions made by Power Platform administrators, Dynamics 365 administrators, members of the System Administrator role (for Power Platform environments with Dataverse), the environment creator or owner (for Power Platform environments without Dataverse), and impersonated users that map to any of these roles.
 
-Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). The schema defines the payload of metadata that's unique for each activity.
+Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). The schema defines the payload of metadata that's unique for each activity.
 
 ## Prerequisites
 
@@ -58,9 +58,6 @@ Learn more:
 
 [!INCLUDE[admin-audit](../../includes/admin-audit-activity-search.md)]
 
-As you search, you see individual activities. A common schema makes it easier for you to search across activities. The value in the **PropertyCollection** field is specific to each activity type.
-
-For more information, see [auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
 ## Activity category: Environment lifecycle operations
 
@@ -348,7 +345,7 @@ Here's an example payload of metadata that you can expect from one of the events
 
 - [Microsoft Purview](/purview/)
 - [Microsoft Purview portal](https://purview.microsoft.com/home)
-- [Get started with search in Microsoft Purview portal](/purview/audit-search#get-started-with-search)
+- [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 - [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)
 - [Detailed properties in the audit log](/purview/audit-log-detailed-properties)
 

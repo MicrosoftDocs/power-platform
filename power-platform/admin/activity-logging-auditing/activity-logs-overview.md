@@ -136,5 +136,6 @@ Learn more about [Auditing solutions in Microsoft Purview](/purview/audit-soluti
 - [Microsoft Power Platform admin center](/power-platform/admin/)
 - [Search the audit logs for user activity using Office 365 Management APIs overview](/office/office-365-management-api/office-365-management-apis-overview)
 - [Detailed properties in the audit log](/purview/audit-log-detailed-properties)
+- [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

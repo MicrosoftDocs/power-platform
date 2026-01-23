@@ -215,9 +215,8 @@ The following entries are examples of activity logs.
 
 - [Microsoft Purview](/purview/)
 - [Microsoft Purview portal](https://purview.microsoft.com/home)
-- [Get started with search in Microsoft Purview portal](/purview/audit-search#get-started-with-search)
+- [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 - [Manage Dataverse auditing](/admin/manage-dataverse-auditing.md)
 - [Auditing overview](/power-apps/developer/data-platform/auditing/overview)
-- [Search the audit logs for user activity using Office 365 Management APIs overview](/office/office-365-management-api/office-365-management-apis-overview)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

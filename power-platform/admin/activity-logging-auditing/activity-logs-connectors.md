@@ -101,7 +101,7 @@ The following table lists logging details available in the audit logs.
 
 - [Microsoft Purview](/purview/)
 - [Microsoft Purview portal](https://purview.microsoft.com/home)
-- [Get started with search in Microsoft Purview portal](/purview/audit-search#get-started-with-search)
+- [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 - [Audit log activities](/purview/audit-log-activities)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

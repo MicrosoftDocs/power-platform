@@ -111,6 +111,6 @@ This table lists some of the activities you can monitor in Power Pages audit log
 - [Power Pages activity logging (video)](https://youtu.be/pBKkkkPpX0I?feature=shared)
 - [Microsoft Purview](/purview/)
 - [Microsoft Purview portal](https://purview.microsoft.com/home)
-- [Get started with search in Microsoft Purview portal](/purview/audit-search#get-started-with-search)
+- [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

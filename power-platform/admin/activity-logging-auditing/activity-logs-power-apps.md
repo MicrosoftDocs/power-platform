@@ -172,6 +172,6 @@ Schemas define which Power Apps fields are sent to the Microsoft Purview complia
 
 - [Microsoft Purview](/purview/)
 - [Microsoft Purview portal](https://purview.microsoft.com/home)
-- [Get started with search in Microsoft Purview portal](/purview/audit-search#get-started-with-search)
+- [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
