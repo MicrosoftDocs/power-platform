@@ -17,6 +17,10 @@ contributors:
   - lavanyapg
 ms.custom: sfi-image-nochange
 ---
+
+<!-- question from editor: this mentions three types of support plans (line 54). But the note that follows also mentions a Premier support plan, which isn't in that list, or on the page of support plans. Why is that? -->
+<!-- There is an old and new experience (line 71). How would users know which one they're seeing? -->
+
 # Get Support
 
 Admins can use the [Support experience](https://admin.powerplatform.microsoft.com/support/requests) in the [Power Platform admin center](admin-documentation.md) to get self-help solutions for an issue. If the issue can't be resolved through self-help, you can continue in the same **Support** experience to engage Microsoft support representatives using your support plan. Should you need to link a plan with your account, you can enter your access ID and password before creating a support request. Learn more in [Add a support plan](#add-a-support-plan).
@@ -73,9 +77,13 @@ While the Support agent is in preview, users can switch between experiences by s
 
 The Support agent is an agentic chat, which takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. You can find self-help solutions, create a support request, and engage Microsoft representatives by following these steps:
 
+
+
+
+
 1. **Open the Support agent.** <br>
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-    1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
+    1. In the navigation pane, select **Support**, and then in the **Support** pane, select **Support requests**.
     1. On the **Support requests** page, select **Get support**. The **Support agent** pane is displayed. Using a chat-like experience, complete the following steps of this procedure.
 1. **Describe the issue.** <br>
     Describe the issue to the agent. Provide as much detail as you can to help the agent understand and categorize the issue. All information is used to both find solutions and create a support request.
