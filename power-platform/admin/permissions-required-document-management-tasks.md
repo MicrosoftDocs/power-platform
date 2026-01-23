@@ -1,18 +1,19 @@
 ---
 title: Permissions and roles for SharePoint document management tasks
 description: Learn about the security roles and permissions required for document management tasks when using SharePoint.
-author: Mattp123
+author: devkeydet
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 01/23/2026
 ms.subservice: admin
-ms.author: matp
+ms.author: marcsc
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 # Permissions required for document management tasks
 
-The following table shows the default security roles or other permissions that are needed to perform each document management with [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] task.  
+The following table shows the default security roles or other permissions that are needed to perform each document management task with [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)].  
   
 > [!IMPORTANT]
 >  If you’re using [!INCLUDE[pn_crm_for_outlook_full](../includes/pn-crm-for-outlook-full.md)], you can’t do any of these tasks while you’re offline.  
