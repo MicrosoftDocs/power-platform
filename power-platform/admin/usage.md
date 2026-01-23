@@ -59,7 +59,7 @@ This table shows usage by sessions and includes agents built in Copilot Studio (
 ## Known issues
 - For Power Automate and Copilot Studio, usage data may not fully reflect your organization’s activity. Microsoft is actively working to resolve this issue.
 
-## FAQs
+## Frequently asked questions (FAQs)
 
 ### Why don't agent session numbers match those in the Copilot area of the Power Platform admin center?
 Agent session counts use a 28-day lookback window, which can cause slight differences due to timing and snapshot alignment. We plan to standardize these metrics in the future.
