@@ -818,22 +818,24 @@
               href: administer-catalog.md
             - name: Portal administration
               href: /powerapps/maker/portals/admin/power-platform-admin-center
-        - name: Activity logging
+        - name: Activity logging and auditing
           items:
-            - name: Power Apps activity logging
-              href: logging-powerapps.md
-            - name: Power Automate activity logging
-              href: logging-power-automate.md
-            - name: Power Pages activity logging
-              href: logging-power-pages.md
-            - name: Power Platform connector activity logging
-              href: connector-events-power-platform.md
-            - name: Data loss prevention activity logging
-              href: dlp-activity-logging.md
+            - name: Overview
+              href: activity-logging-auditing/activity-logs-overview.md
+            - name: Connectors
+              href: activity-logging-auditing/activity-logs-connectors.md
+            - name: Copilot Studio
+              href: /microsoft-copilot-studio/admin-logging-copilot-studio
             - name: Dataverse and model-driven apps
-              href: enable-use-comprehensive-auditing.md
-            - name: View Power Platform administrative logs in Microsoft Purview
-              href: admin-activity-logging.md
+              href: activity-logging-auditing/activity-logs-dataverse-model-driven-apps.md
+            - name: Power Apps
+              href: activity-logging-auditing/activity-logs-power-apps.md
+            - name: Power Automate
+              href: activity-logging-auditing/activity-logs-power-automate.md
+            - name: Power Pages
+              href: activity-logging-auditing/activity-logs-power-pages.md
+            - name: Power Platform admin
+              href: activity-logging-auditing/activity-logs-power-platform-admin.md
         - name: Programmability and extensibility
           items:
             - name: Overview
