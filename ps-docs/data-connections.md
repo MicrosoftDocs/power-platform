@@ -117,7 +117,7 @@ Based on the question you ask, Project "Sophia" looks through the data source fo
 
 If the user doesn't enter any question, then by default Project "Sophia" answers the question based on core tables in Dynamics 365 Customer Service like accounts, incidents, incident-resolutions, and more. You can establish one connection in a workspace. Project "Sophia" supports both custom fields and custom tables in Dynamics 365 Customer Service instances. It's advisable to have proper descriptions for these custom items.
 
-## Connect to your data from Microsoft Fabric Lakehouses
+### Use data from Microsoft Fabric Lakehouses
 
 You can connect to Microsoft Fabric Lakehouses to enable rich analysis over your enterprise data stored in OneLake. When selecting the Fabric Lakehouse option, the Sales Research Agent automatically discovers Lakehouse shortcuts that you have permission to access and makes them available as data sources for AI-powered reasoning.
 
@@ -171,7 +171,7 @@ For a Fabric Lakehouse connection:
 
   In this case, contact your Fabric administrator to grant the necessary permissions.
 
-### How administrators manage Lakehouse access
+#### How administrators manage Lakehouse access
 
 Fabric administrators manage Lakehouse access using standard Fabric and OneLake security controls:
 
@@ -204,7 +204,7 @@ Fabric administrators manage Lakehouse access using standard Fabric and OneLake 
 
     Sales Research Agent always operates under the user’s security context and never elevates permissions.
 
-### What Sales Research Agent does when you ask a question
+#### What Sales Research Agent does when you ask a question
 
 When you query your Lakehouse:
 
