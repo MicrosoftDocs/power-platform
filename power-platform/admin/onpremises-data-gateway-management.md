@@ -156,7 +156,7 @@ As either a Microsoft Entra Global administrator (which includes global admins) 
 > [!NOTE]
 > This feature doesn't apply to on-premises data gateways (personal mode).
 > 
-> Although the **Manage gateway installers** option appears only under the **On‑premises data gateway** tab, the same restriction applies to both the on‑premises data gateway and the virtual network data gateway.
+> Although the **Manage gateway installers** option appears only under the **On‑premises data gateways** tab, the same restriction applies to both the on‑premises data gateway and the virtual network data gateway.
 
 1. Select **Manage gateway installers**.
 
