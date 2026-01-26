@@ -1,9 +1,9 @@
 ---
-title: "View and manage on-premises data gateways | MicrosoftDocs"
+title: View and manage on-premises data gateways 
 description: View and manage on-premises gateways. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/26/2025
+ms.date: 01/26/2026
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
@@ -11,6 +11,7 @@ ms.reviewer: sericks
 ms.contributors:
   - lsuresh
 contributors:
+  - charls-msft
   - lavanyapg
 search.audienceType: 
   - admin
