@@ -9,6 +9,7 @@ ms.date: 01/09/2026
 ms.author: laswenka
 ---
 
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 # What is Power Platform Role-Based Access Control (RBAC)?
 
 Role-Based Access Control (RBAC) in Microsoft Power Platform is a security model designed to help organizations manage "who can do what" across their Power Platform resources with confidence and flexibility. RBAC provides a modern approach to access management, making it easier to assign and enforce permissions for users, groups, and automation.
