@@ -106,14 +106,11 @@ The Support agent is an agentic chat, which takes you through a workflow to reso
 ### Use the legacy experience to request support
 The legacy support experience is a support system based on forms and machine learning. Through this experience you can describe your issue, review any self-help solutions, and create a support request, if needed, to engage Microsoft representatives.
 
-
-
-
 1. **Go to the legacy experience.** <br>
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-    1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
+    1. In the navigation pane, select **Support**, and then in the **Support** pane, select **Support requests**.
     1. On the **Support requests** page, select **Get support**.
-    1. If the **Support agent** pane is displayed, select the ellipses  icon (**...**) in the upper-right of pane. Then select **Switch to old experience.**
+    1. If the **Support agent** pane is displayed, select the ellipsis icon (**...**) in the upper-right corner of the pane. Then select **Switch to old experience.**
     1. Confirm that you want to proceed to the old experience. To help us improve, consider offering your feedback as part of switching.
     1. The **How can we help?** pane is displayed. Complete the following steps of this procedure.
 
@@ -121,7 +118,7 @@ The legacy support experience is a support system based on forms and machine lea
     Select the product you're using. Then provide any requested details, such as the environment, to help Microsoft troubleshoot.
 
     > [!Note]
-    > If you're unsure about what product to select or if your issue spans products, select the product where the issue was experienced. If you don't see your environment, select **My environment is not listed**.
+    > If you're unsure about what product to select or if your issue spans products, select the product where you experienced the issue. If you don't see your environment, select **My environment is not listed**.
 
     Describe the issue. Provide as much detail as you can to help Microsoft categorize and find solutions.
 
@@ -135,7 +132,7 @@ The legacy support experience is a support system based on forms and machine lea
 
 1. **Review solutions.** <br>
 
-    If the Copilot chat doesn't provide an answer that resolves the issue, more content may be shown on this tab. Content shown here is often troubleshooting dialogs or documentation search results. If a dialog is shown, navigate the dialog to a solution to both find and answer and help categorize this issue for any support request. You can then select **Next** to continue to create a support request.
+    If the Copilot chat doesn't provide an answer that resolves the issue, more content may be shown on this tab. Content shown here is often troubleshooting dialogs or documentation search results. If a dialog is shown, navigate the dialog to a solution to both find an answer and help categorize this issue for any support request. You can then select **Next** to continue to create a support request.
 
 1. **Create a support request.** <br>
 
@@ -143,10 +140,10 @@ The legacy support experience is a support system based on forms and machine lea
 
     1. Select from available support plans or [add a new plan](#add-a-support-plan). You may be asked for a **Request reason** as only premium plans allow for advisory support requests.
     2. Fill out the support request form, severity, and set advanced diagnostic consent. Support requests for some products show optional fields where you can provide helpful details for the Microsoft representative.
-    3. Select **Next** to continue to **Contact details**. Fill out your preferences and select **Submit** to create the case. You can track status of the request on the Support page.
+    3. Select **Next** to continue to **Contact details**. Fill out your preferences and select **Submit** to create the case. You can track the status of the request on the Support page.
   
 ## Add a support plan
-If you need to add a new support plan, you must enter your **Contract ID/Password** information. Be sure to enter your Unified or Premier contract ID. The **Contract ID/Password** defaults to the Unified or Premier contract ID. If you have changed the password when registering online in the Unified/Premier portal, you should use the updated password instead of the contract ID.
+If you need to add a new support plan, you must enter your **Contract ID/Password** information. Be sure to enter your Unified or Premier contract ID. The **Contract ID/Password** defaults to the Unified or Premier contract ID. If you changed the password when registering online in the Unified/Premier portal, you should use the updated password instead of the contract ID.
 
 > [!Important]
 > If you don't know your access or contract ID, contact your service admin or incident manager or Customer Success Account Manager (CSAM).
@@ -169,9 +166,13 @@ Known issues represent bugs or product issues identified by product engineering 
 ### Generative answers
 Generative answers are created in real-time based on your issue description from Microsoft public documentation, internally authored troubleshooting content, and select [Power Platform](https://community.powerplatform.com/) and [Dynamics 365](https://community.dynamics.com/) community forums and blogs. A generative answer card consists of a restatement of the issue as understood, the solution content or resolution steps, clickable citation links, and a navigation prompt. 
 
-It's important to note that AI generated content may be incorrect. 
+It's important to note that AI-generated content may be incorrect. 
 
 :::image type="content" source="media/ai-generated-content.png" alt-text="Image of a sample generative answer." lightbox="media/ai-generated-content.png":::
+
+
+
+
 
 ### Dialogs
 Troubleshooting dialogs are designed to guide you towards a solution should generative answers not resolve the issue. These dialogs are often triggered if there's a level of ambiguity about your issue. Navigating these dialogs to a solution is required to proceed in many cases. These dialogs are created by product teams to represent frequent issues, questions, and other topics seen in previous support requests. By navigating the dialog, you can both find answers and help Microsoft categorize the issue, so any support request is routed to the correct Microsoft support representative, and the owning product engineering team is alerted.
