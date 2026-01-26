@@ -216,4 +216,3 @@ When you query your Lakehouse:
 3.  It generates safe, read-only queries against Lakehouse Tables or Files folders.
 
 4.  It applies all Fabric and OneLake permissions before returning data.
-
