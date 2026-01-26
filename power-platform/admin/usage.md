@@ -4,7 +4,7 @@ description: Learn about Usage in the Power Platform admin center.
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/23/2026
+ms.date: 01/26/2026
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
