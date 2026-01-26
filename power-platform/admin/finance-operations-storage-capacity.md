@@ -84,6 +84,10 @@ To view the **Finance and Operations** capacity page, take the following steps:
 
 Select the value in the **Finance and operations database usage** column on the **Finance and operations** tab to see a table-level, drill-down view of how each table in your finance and operations environment is using capacity. 
 
+:::image type="content" source="media/finance-operations-storage-capacity/database-usage.png " alt-text="Screenshot of the tab showing storage consumption for each finance and operations environment.":::
+
+:::image type="content" source="media/finance-operations-storage-capacity/table-level-usage.png " alt-text="Screenshot of the table-level storage consumption for each finance and operations table.":::
+
 The **Finance and operations database usage**, pane appears, where you have the ability to obtain a near real-time snapshot of the table-level storage consumption. Select the links, at the top of the pane, to view detailed information.
 
 - By selecting the **View as chart** link, you can track the time series trend, gaining insights into the evolution of storage across finance and operation tables. 
