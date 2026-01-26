@@ -48,7 +48,7 @@ At the top of the page, a summary view showcases the adoption and usage trends. 
 Below the summary view, detailed tables provide sortable views of all apps, flows, and agents that are in use in your organization. Only items that have not been deleted are included. Sort by users for apps, runs for flows, and sessions for agents to quickly identify trends and top performers.
 
 ### Power Apps
-This table shows usage by user activity and includes canvas apps and model-driven apps. 
+This table shows usage of end users launching apps, such as canvas apps and model-driven apps. 
 
 ### Power Automate
 This table shows usage by run volume and includes cloud flows.
