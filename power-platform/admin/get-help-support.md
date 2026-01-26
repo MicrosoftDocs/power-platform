@@ -77,10 +77,6 @@ While the Support agent is in preview, users can switch between experiences by s
 
 The Support agent is an agentic chat, which takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. You can find self-help solutions, create a support request, and engage Microsoft representatives by following these steps:
 
-
-
-
-
 1. **Open the Support agent.** <br>
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
     1. In the navigation pane, select **Support**, and then in the **Support** pane, select **Support requests**.
@@ -98,10 +94,10 @@ The Support agent is an agentic chat, which takes you through a workflow to reso
 1. **Review solutions.** <br>
     The Support agent provides solutions based on a summarization of your description and interview responses. The agent checks service health alerts for your selected product, searches through known issues, generates answers from documentation and community content and may trigger a troubleshooting dialog. Review the content and follow the prompts to progress through the solutions.
 
-    It's important to note that AI generated content may be incorrect.
+    It's important to note that AI-generated content may be incorrect.
    
 1. **Escalate the issue, if needed.** <br>
-If the content doesn't address or resolve your issue and you have a support plan, you can continue to create a support request. If available and eligible, live chat with a Microsoft support representative.
+   If the content doesn't address or resolve your issue and you have a support plan, you can continue to create a support request. If available and eligible, you can have a live chat with a Microsoft support representative.
 
     If you don't have an associated plan, you can select **Add a new support contract** to associate a plan using the provided Contract ID and password. Learn more in [Add a support plan](#add-a-support-plan).
 
@@ -109,6 +105,9 @@ If the content doesn't address or resolve your issue and you have a support plan
    
 ### Use the legacy experience to request support
 The legacy support experience is a support system based on forms and machine learning. Through this experience you can describe your issue, review any self-help solutions, and create a support request, if needed, to engage Microsoft representatives.
+
+
+
 
 1. **Go to the legacy experience.** <br>
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
