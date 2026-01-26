@@ -122,7 +122,7 @@ The [Deployment page](/power-platform/alm/admin-deployment-hub) in the Power Pla
 
 [Automate tests with Azure Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor).
 
-[Power CAT Code Review Tool](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftpowercatarch.powercattools?tab=Overview) allows you to perform code reviews.
+[Power CAT Code Review Tool](https://marketplace.microsoft.com/en-us/product/dynamics-365/microsoftpowercatarch.powercattools?tab=Overview) allows you to perform code reviews.
 
 [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) allows you to configure agents and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the agent responses are evaluated against expected results.
 
