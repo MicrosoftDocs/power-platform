@@ -183,7 +183,7 @@ If a person who doesn't have access to install gateways tries to install one, th
 > [!div class="mx-imgBorder"] 
 > ![Error message.](media/manage-gateway-error-message.png "Error message")
 
-### See also
+### Related content
 
 [On-premises data gateway](/data-integration/gateway/service-gateway-onprem)<br/>
 [Connecting to on-premises data sources with On-premises Data Gateway](/azure/analysis-services/analysis-services-gateway)<br/>
