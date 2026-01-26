@@ -1,6 +1,6 @@
 ---
 title: Get Support in Power Platform
-description: Use the Support experience to contact a Microsoft support representative to get resolution for your issue.
+description: Use the Support experience to contact a Microsoft support representative to get a resolution for your issue.
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
@@ -170,12 +170,8 @@ It's important to note that AI-generated content may be incorrect.
 
 :::image type="content" source="media/ai-generated-content.png" alt-text="Image of a sample generative answer." lightbox="media/ai-generated-content.png":::
 
-
-
-
-
 ### Dialogs
-Troubleshooting dialogs are designed to guide you towards a solution should generative answers not resolve the issue. These dialogs are often triggered if there's a level of ambiguity about your issue. Navigating these dialogs to a solution is required to proceed in many cases. These dialogs are created by product teams to represent frequent issues, questions, and other topics seen in previous support requests. By navigating the dialog, you can both find answers and help Microsoft categorize the issue, so any support request is routed to the correct Microsoft support representative, and the owning product engineering team is alerted.
+Troubleshooting dialogs are designed to guide you toward a solution if generative answers don't resolve the issue. These dialogs are often triggered if there's a level of ambiguity about your issue. Navigating these dialogs to a solution is required to proceed in many cases. These dialogs are created by product teams to represent frequent issues, questions, and other topics seen in previous support requests. By navigating the dialog, you can both find answers and help Microsoft categorize the issue, so any support request is routed to the correct Microsoft support representative, and the owning product engineering team is alerted.
 
 :::image type="content" source="media/dialogs.png" alt-text="Image of sample dialogs." lightbox="media/dialogs.png":::
 
@@ -187,14 +183,14 @@ Troubleshooting dialogs are designed to guide you towards a solution should gene
 ## Report an outage
 Depending on your tenant, you may be able to access the direct **Report outage** feature. If enabled, the **Report outage** button is visible on any of the Support pages, next to the **Get support** button. If the **Report outage** feature isn't enabled, you can navigate the Support agent or experience workflows to create a high-priority support request, if you have an active support plan.
 
-To use the **Report outage** feature to raise a high-priority support request, complete the following steps.
+To use the **Report outage** feature to raise a high-priority support request, complete the following steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Support**, then in the **Support** pane, select **Support requests**.
+1. In the navigation pane, select **Support**, and then in the **Support** pane, select **Support requests**.
 1. On the **Support requests** page, select **Report outage**. The **Report outage** pane is displayed. Submit information about the outage.
 
 ## Model-driven apps and support environments
-For some support requests, you're asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product where you using when the issue occurred?** field. To create a support request that includes a support environment for Power Platform issues, select the **Microsoft Dataverse** product for that field.
+For some support requests, you're asked to request a support environment. Currently, support environments can’t be created for the Power Apps or Power Automate product options in the **What product were you using when the issue occurred?** field. To create a support request that includes a support environment for Power Platform issues, select the **Microsoft Dataverse** product for that field.
 
 ## Related content
 - [Create an effective support request](/power-apps/maker/canvas-apps/service-request-support)
