@@ -23,7 +23,7 @@ ms.custom: sfi-image-nochange
 
 # Get Support
 
-Admins can use the [Support experience](https://admin.powerplatform.microsoft.com/support/requests) in the [Power Platform admin center](admin-documentation.md) to get self-help solutions for an issue. If the issue can't be resolved through self-help, you can continue in the same **Support** experience to engage Microsoft support representatives using your support plan. Should you need to link a plan with your account, you can enter your access ID and password before creating a support request. Learn more in [Add a support plan](#add-a-support-plan).
+Admins can use the [Support experience](https://admin.powerplatform.microsoft.com/support/requests) in the [Power Platform admin center](admin-documentation.md) to get self-help solutions for an issue. If the issue can't be resolved through self-help, you can continue in the same **Support** experience to engage Microsoft support representatives using your support plan. If you need to link a plan with your account, you can enter your access ID and password before creating a support request. Learn more in [Add a support plan](#add-a-support-plan).
 
 ## Prerequisites
 
@@ -136,7 +136,7 @@ The legacy support experience is a support system based on forms and machine lea
 
 1. **Create a support request.** <br>
 
-    If self-service content doesn't resolve your issue, and you have a support plan, you can create a support request. 
+    If self-service content doesn't resolve your issue, and you have a support plan, you can create a support request. <br>
 
     1. Select from available support plans or [add a new plan](#add-a-support-plan). You may be asked for a **Request reason** as only premium plans allow for advisory support requests.
     2. Fill out the support request form, severity, and set advanced diagnostic consent. Support requests for some products show optional fields where you can provide helpful details for the Microsoft representative.
@@ -164,7 +164,7 @@ Known issues represent bugs or product issues identified by product engineering 
 :::image type="content" source="media/known-issues.png" alt-text="Image of a sample known issue." lightbox="media/known-issues.png":::
 
 ### Generative answers
-Generative answers are created in real-time based on your issue description from Microsoft public documentation, internally authored troubleshooting content, and select [Power Platform](https://community.powerplatform.com/) and [Dynamics 365](https://community.dynamics.com/) community forums and blogs. A generative answer card consists of a restatement of the issue as understood, the solution content or resolution steps, clickable citation links, and a navigation prompt. 
+Generative answers are created in real time based on your issue description from Microsoft public documentation, internally authored troubleshooting content, and select [Power Platform](https://community.powerplatform.com/) and [Dynamics 365](https://community.dynamics.com/) community forums and blogs. A generative answer card consists of a restatement of the issue as understood, the solution content or resolution steps, clickable citation links, and a navigation prompt. 
 
 It's important to note that AI-generated content may be incorrect. 
 
@@ -176,7 +176,7 @@ Troubleshooting dialogs are designed to guide you toward a solution if generativ
 :::image type="content" source="media/dialogs.png" alt-text="Image of sample dialogs." lightbox="media/dialogs.png":::
 
 ### Documentation search results
-(Support Experience only) Displayed are the top three search results from Microsoft product documentation based on your selected product and issue description. Select a link to review the articles relevant to your issue.
+(Support Experience only.) You'll see the top three search results from Microsoft product documentation based on your selected product and issue description. Select a link to review the articles relevant to your issue.
 
 :::image type="content" source="media/documentation-search-results.png" alt-text="Image of a sample documentation search results." lightbox="media/documentation-search-results.png":::
 
