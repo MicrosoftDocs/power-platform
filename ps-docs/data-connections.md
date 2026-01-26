@@ -204,7 +204,7 @@ Fabric administrators manage Lakehouse access using standard Fabric and OneLake 
 
     Sales Research Agent always operates under the user’s security context and never elevates permissions.
 
-#### What Sales Research Agent does when you ask a question
+#### What the Sales Research Agent does when you ask a question
 
 When you query your Lakehouse:
 
