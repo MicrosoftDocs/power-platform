@@ -151,11 +151,12 @@ Select a gateway cluster, then select **Details** > **Check status** to check th
 
 ## Manage gateway installers
 
-As either a Microsoft Entra Global administrator (which includes Global admins) or a Power BI service administrator, use Manage gateway installers to manage who can install the on-premises data gateway or virtual network data gateway in your enterprise. This operation isn't available for gateway admins.
+As either a Microsoft Entra Global administrator (which includes global admins) or a Power BI service administrator, use **Manage gateway installers** to manage who can install the on-premises data gateway or virtual network data gateway in your enterprise. This operation isn't available for gateway admins.
 
 > [!NOTE]
 > This feature doesn't apply to on-premises data gateways (personal mode).
-> Although the Manage gateway installers option appears only under the On‑premises data gateway tab, the same restriction applies to both the on‑premises data gateway and the virtual network data gateway.
+> 
+> Although the **Manage gateway installers** option appears only under the **On‑premises data gateway** tab, the same restriction applies to both the on‑premises data gateway and the virtual network data gateway.
 
 1. Select **Manage gateway installers**.
 
