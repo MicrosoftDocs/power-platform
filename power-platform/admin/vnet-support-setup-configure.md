@@ -3,7 +3,7 @@ title: Set up virtual network support for Power Platform
 description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/05/2026
+ms.date: 01/27/2026
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -45,7 +45,7 @@ The following diagram shows the functions of the roles in the setup process for 
 :::image type="content" source="media/vnet-support/vnet-support-configurations.png" alt-text="Screenshot of the configurations for virtual network support in a Power Platform environment." lightbox="media/vnet-support/vnet-support-configurations.png":::
 
 > [!IMPORTANT]
-> Power Platform performs active health checks when set up within the delegated network. As a result, expect periodic requests to verify your connection to the configured DNS server via TCP on port 53. To ensure health-reporting is accurate, *allowlist* this request from the subnet that makes requests. You can validate the functionality of this setting by using the diagnostic tooling with the `Test-NetworkConnectivity` command. Learn more about this topic in [Troubleshoot virtual network issues](/troubleshoot/power-platform/administration/virtual-network).
+> Power Platform performs active health checks when set up within the delegated network. As a result, expect periodic requests to verify your connection to the configured DNS server via TCP on port 53. To ensure health reporting is accurate, *allowlist* this request from the subnet that makes requests. You can validate the functionality of this setting by using the diagnostic tooling with the `Test-NetworkConnectivity` command. Learn more about this topic in [Troubleshoot virtual network issues](/troubleshoot/power-platform/administration/virtual-network).
 
 ## Set up Virtual Network support
 
@@ -57,17 +57,17 @@ The following diagram shows the functions of the roles in the setup process for 
 
 1. Create [virtual networks](/azure/virtual-network/virtual-networks-overview) in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is United States, create your virtual networks in the **eastus** and **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
 
-    > [!IMPORTANT]
-    > - If there are two or more supported regions for the geo, such as the United States with **eastus** and  **westus**, you need two virtual networks in ***different*** regions to create the enterprise policy for business continuity and disaster recovery or failover scenarios.
-    > - Make sure that you appropriately size the subnet you create according to [Estimating subnet size for Power Platform environments](./vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
+   > [!IMPORTANT]
+   > - If there are two or more supported regions for the geo, such as the United States with **eastus** and  **westus**, you need two virtual networks in ***different*** regions to create the enterprise policy for business continuity and disaster recovery or failover scenarios.
+   > - Make sure that you appropriately size the subnet you create according to [Estimating subnet size for Power Platform environments](./vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
     
     You can [reuse existing virtual networks](./vnet-support-overview.md#can-i-use-an-existing-virtual-network-for-power-platform), if desired. Subnets [can't be reused in multiple enterprise policies](./vnet-support-overview.md#can-i-reuse-the-same-delegated-subnet-in-multiple-enterprise-policies).
 
 1. Create a subnet in each of your virtual networks. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment. Both subnets must have the same number of available IP addresses.
 
-    > [!IMPORTANT]
-    > - If you plan to use the same delegated subnet for multiple Power Platform environments, you might need a larger IP address block than /24. Review subnet sizing guidance in [Estimating subnet size for Power Platform environments](vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
-    > - To allow public internet access for Power Platform components, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the subnets.
+   > [!IMPORTANT]
+   > - If you plan to use the same delegated subnet for multiple Power Platform environments, you might need a larger IP address block than /24. Review subnet sizing guidance in [Estimating subnet size for Power Platform environments](vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
+   > - To allow public internet access for Power Platform components, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the subnets.
 
 1. Ensure your Azure subscription is registered for the Microsoft.PowerPlatform resource provider by running the [SetupSubscriptionForPowerPlatform.ps1 script](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/README.md#how-to-run-setup-scripts).
 
@@ -186,7 +186,7 @@ The following diagram shows the functions of the roles in the setup process for 
     - **VnetOneSubnetName**: Enter the name of the subnet from the first virtual network.
     - **VnetOneResourceId**: Enter the resource ID from the first virtual network.
     - **VnetTwoSubnetName**: Enter the name of the subnet from the second virtual network.
-    - **VnetTwoResourceId**: Enter the resource ID from the second virtual network. It should match the strings from Json script, for example: vNetOneResourceId, vNetOneSubnetName
+    - **VnetTwoResourceId**: Enter the resource ID from the second virtual network. It should match the strings from JSON script, for example: vNetOneResourceId, vNetOneSubnetName
 
 1. Select **Review + create** to finalize the enterprise policy.
 
@@ -232,7 +232,7 @@ In the following procedures, you assign your environment to an enterprise policy
 1. Verify that the **Status** shows **Succeeded**.
 
 ## Best practices
-Choose the subnet size that fits your requirements. After you delegate the subnet to Power Platform, changing the subnet range requires Microsoft Support to update the subnet changes.
+Choose the subnet size that fits your requirements. After you delegate the subnet to Power Platform, you need to contact Microsoft Support to change the subnet range.
 
 ### Related content
 
