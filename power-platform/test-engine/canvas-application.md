@@ -1,8 +1,8 @@
 ---
 title: "Test canvas applications with Test Engine (preview)"
 description: "Learn how to test Power Apps Canvas applications using Test Engine"
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly
