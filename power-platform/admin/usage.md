@@ -4,7 +4,7 @@ description: Learn about Usage in the Power Platform admin center.
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/12/2025
+ms.date: 01/26/2026
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -45,13 +45,21 @@ At the top of the page, a summary view showcases the adoption and usage trends. 
   - **Copilot Studio**: Agent sessions  
 - **High-value resources** – Identify the top three apps, flows, and agents driving the most impact.
 
-Below the summary view, detailed tables provide sortable views of all apps, flows, and agents that are in use in your organization. Sort by users for apps, runs for flows, and sessions for agents to quickly identify trends and top performers.
+Below the summary view, detailed tables provide sortable views of all apps, flows, and agents that are in use in your organization. Only items that have not been deleted are included. Sort by users for apps, runs for flows, and sessions for agents to quickly identify trends and top performers.
 
 ### Power Apps
-This table shows usage by user activity and includes canvas apps and model-driven apps. 
+This table shows usage of end users launching apps, such as canvas apps and model-driven apps. 
 
 ### Power Automate
 This table shows usage by run volume and includes cloud flows.
 
 ### Copilot Studio
 This table shows usage by sessions and includes agents built in Copilot Studio (full).
+
+## Known issues
+- For Power Automate and Copilot Studio, usage data from December 25, 2025, through January 3, 2026, may be inaccurate. This issue has been resolved for dates after January 3, 2026.
+
+## Frequently asked questions (FAQs)
+
+### Why don't agent session numbers match those in the Copilot area of the Power Platform admin center?
+Agent session counts use a 28-day lookback window, which can cause slight differences due to timing and snapshot alignment. We plan to standardize these metrics in the future.

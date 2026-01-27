@@ -1850,6 +1850,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "power-platform/admin/logging-power-automate.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/logging-powerapps.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/logging-power-pages.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-pages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/admin-activity-logging.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-platform-admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/activity-logs-dataverse-and-model-driven-apps.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-dataverse-model-driven-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/connector-events-power-platform.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-connectors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/dlp-activity-logging.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-platform-admin",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "power-platform/admin/new-admin-center.md",
       "redirect_url": "/power-platform/admin/admin-documentation",
       "redirect_document_id": false

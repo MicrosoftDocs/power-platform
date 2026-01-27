@@ -1,8 +1,8 @@
 ---
 title: Model Context Protocol in Test Engine (preview)
 description: Learn how to use the Model Context Protocol (MCP) server implementation in Power Apps Test Engine
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly

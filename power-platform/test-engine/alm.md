@@ -1,8 +1,8 @@
 ---
 title: ALM in Power Platform with Test Engine (preview)
 description: Learn how to integrate automated testing into your Application Lifecycle Management (ALM) with Test Engine
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
 ms.date: 05/15/2025
 ms.reviewer: jdaly
