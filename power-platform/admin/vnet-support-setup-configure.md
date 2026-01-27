@@ -24,13 +24,13 @@ Azure virtual network support for Power Platform lets you integrate Power Platfo
 
 ## Prerequisites
 
-> [!Note]
+> [!NOTE]
 > To enable virtual network support for Power Platform, environments must be [Managed Environments](managed-environment-overview.md).
 
 - **Review your Power Platform resources**: Check your apps, flows, and plug-in code to ensure they connect over your virtual network. They shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration lets such calls. Learn more in [Considerations to enable virtual network support for Power Platform environment](vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in the [Frequently asked questions](vnet-support-overview.md#frequently-asked-questions).
 
 - **Prepare your tenant and set up permissions**:
-    - **Azure subscription**: Make sure you have an Azure subscription where virtual network, subnet, and enterprise policy resources are created.
+    - **Azure subscription**: Make sure you have an Azure subscription where you create virtual network, subnet, and enterprise policy resources.
     - **Assign roles**: Make sure you have the required roles to create resources and enterprise policy.
       - In the Azure portal, assign the Azure network administrator role, such as the [network contributor role](/azure/role-based-access-control/built-in-roles#network-contributor) or an equivalent custom role.
       - In the Microsoft Entra admin center, assign the Power Platform administrator role.
@@ -44,6 +44,9 @@ The following diagram shows the functions of the roles in the setup process for 
 
 :::image type="content" source="media/vnet-support/vnet-support-configurations.png" alt-text="Screenshot of the configurations for virtual network support in a Power Platform environment." lightbox="media/vnet-support/vnet-support-configurations.png":::
 
+> [!IMPORTANT]
+> Power Platform performs active health checks when it's set up within the delegated network. As a result, expect periodic requests to verify your connection to the configured DNS server via TCP on port 53. To ensure health-reporting is accurate, *allowlist* this request from the subnet that makes requests. You can validate the functionality of this setting by using the diagnostic tooling with the `Test-NetworkConnectivity` command. Learn more about this topic in [Troubleshoot virtual network issues](/troubleshoot/power-platform/administration/virtual-network).
+
 ## Set up Virtual Network support
 
 1. [Set up the virtual network and subnets](#set-up-the-virtual-network-and-subnets).
@@ -52,18 +55,18 @@ The following diagram shows the functions of the roles in the setup process for 
 
 ### Set up the virtual network and subnets
 
-1. Create [virtual networks](/azure/virtual-network/virtual-networks-overview) in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is United States, your virtual networks should be created in the **eastus** and **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
+1. Create [virtual networks](/azure/virtual-network/virtual-networks-overview) in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is United States, create your virtual networks in the **eastus** and **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
 
     > [!IMPORTANT]
-    > - If there are two or more supported regions for the geo, such as the United States with **eastus** and  **westus**, two virtual networks in ***different*** regions are required to create the enterprise policy for business continuity and disaster recovery or failover scenarios.
-    > - Be sure that the subnet you create has been appropriately sized according to [Estimating subnet size for Power Platform environments](./vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
+    > - If there are two or more supported regions for the geo, such as the United States with **eastus** and  **westus**, you need two virtual networks in ***different*** regions to create the enterprise policy for business continuity and disaster recovery or failover scenarios.
+    > - Make sure that you appropriately size the subnet you create according to [Estimating subnet size for Power Platform environments](./vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
     
     You can [reuse existing virtual networks](./vnet-support-overview.md#can-i-use-an-existing-virtual-network-for-power-platform), if desired. Subnets [can't be reused in multiple enterprise policies](./vnet-support-overview.md#can-i-reuse-the-same-delegated-subnet-in-multiple-enterprise-policies).
 
 1. Create a subnet in each of your virtual networks. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment. Both subnets must have the same number of available IP addresses.
 
     > [!IMPORTANT]
-    > - If you plan to use the same, delegated subnet for multiple Power Platform environments, you may need a larger IP address block than /24. Review subnet sizing guidance in [Estimating subnet size for Power Platform environments](vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
+    > - If you plan to use the same delegated subnet for multiple Power Platform environments, you might need a larger IP address block than /24. Review subnet sizing guidance in [Estimating subnet size for Power Platform environments](vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
     > - To allow public internet access for Power Platform components, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the subnets.
 
 1. Ensure your Azure subscription is registered for the Microsoft.PowerPlatform resource provider by running the [SetupSubscriptionForPowerPlatform.ps1 script](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/README.md#how-to-run-setup-scripts).
@@ -72,14 +75,14 @@ The following diagram shows the functions of the roles in the setup process for 
 
     Learn more at [Add or remove a subnet delegation](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal).
 
-1. After you have created paired virtual networks, you can view them in your Azure resource group, as shown in the following image.
+1. After you create paired virtual networks, you can view them in your Azure resource group, as shown in the following image.
 
     :::image type="content" source="media/virtual-networks.png" alt-text="Screenshot of virtual networks in your Azure resource group." lightbox="media/virtual-networks.png":::
 
 ## Create the enterprise policy
 
 ### Option 1: Use the Azure ARM template
-1. Ensure you have captured the necessary details, such as the following information, from the virtual networks you have created.
+1. Make sure you capture the necessary details from the virtual networks you created, such as the following information:
    
     - VnetOneSubnetName
     - VnetOneResourceId 
@@ -110,7 +113,7 @@ The following diagram shows the functions of the roles in the setup process for 
             },
             "vNetOneResourceId": {
                 "type": "string",
-          			"metadata": {
+                      "metadata": {
                     "description": "Fully qualified name, such as /subscription/{subscriptionid}/..."
                 }
             },
@@ -121,7 +124,7 @@ The following diagram shows the functions of the roles in the setup process for 
             "vNetTwoResourceId": {
                 "defaultValue": "",
                 "type": "string",
-          			"metadata": {
+                      "metadata": {
                     "description": "Fully qualified name, such as /subscription/{subscriptionid}/..."
                 }
             }
@@ -160,7 +163,7 @@ The following diagram shows the functions of the roles in the setup process for 
 
 1. Save the template and fill in the details to create the enterprise policy, which includes the following information:
     - **Policy name**: Name of the enterprise policy that appears in the Power Platform admin center.
-    - **Location**: Select the location of the enterprise policy, corresponding with the Dataverse environment’s region:
+    - **Location**: Select the location of the enterprise policy, corresponding with the Dataverse environment's region:
         - unitedstates
         - southafrica
         - uk
@@ -193,7 +196,7 @@ The following diagram shows the functions of the roles in the setup process for 
 1. Run the [CreateSubnetInjectionEnterprisePolicy.ps1 script](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/README.md#2-create-subnet-injection-enterprise-policy), using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions.
 
     > [!IMPORTANT]
-    > If you wish to delete the virtual network or subnet, or are getting errors like `InUseSubnetCannotBeDeleted` and `SubnetMissingRequiredDelegation`, you **must delete the enterprise policy** if it exists. You can delete the enterprise policy with the following command.
+    > If you want to delete the virtual network or subnet, or if you're getting errors like `InUseSubnetCannotBeDeleted` and `SubnetMissingRequiredDelegation`, you **must delete the enterprise policy** if it exists. You can delete the enterprise policy by using the following command.
     >
     > ```powershell
     > Remove-AzResource -ResourceId $policyArmId -Force
@@ -207,18 +210,18 @@ The following diagram shows the functions of the roles in the setup process for 
 
 ### Prerequisites
 
-In the following procedures, you assign your environment to an enterprise policy. You're environment must be a [managed environment](managed-environment-overview.md) to assign an enterprise policy to it.
+In the following procedures, you assign your environment to an enterprise policy. Your environment must be a [managed environment](managed-environment-overview.md) to assign an enterprise policy to it.
 
 ### Option 1: Use the Power Platform admin center
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1.	In the navigation pane, select **Security**.
-1.	In the **Security** pane, select **Data and privacy**.
-1.	In the **Data protection and privacy** page, select **Azure Virtual Network policies**. The **Virtual Network policies** pane is displayed.
-1.	Select the environment you want to assign to the enterprise policy, select the policy, and select **Save**. Now the enterprise policy is linked to the environment.
+1.    In the navigation pane, select **Security**.
+1.    In the **Security** pane, select **Data and privacy**.
+1.    In the **Data protection and privacy** page, select **Azure Virtual Network policies**. The **Virtual Network policies** pane is displayed.
+1.    Select the environment you want to assign to the enterprise policy, select the policy, and select **Save**. Now the enterprise policy is linked to the environment.
 
 ### Option 2: Use PowerShell
-1.	Run the [NewSubnetInjection.ps1](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/README.md#7-set-subnet-injection-for-an-environment) script to apply the enterprise policy to your environment.
-1.	If you want to remove the enterprise policy from the environment, you can run the [RevertSubnetInjection.ps1](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/README.md#9-remove-subnet-injection-from-an-environment) script.
+1.    Run the [NewSubnetInjection.ps1](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/README.md#7-set-subnet-injection-for-an-environment) script to apply the enterprise policy to your environment.
+1.    To remove the enterprise policy from the environment, run the [RevertSubnetInjection.ps1](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/README.md#9-remove-subnet-injection-from-an-environment) script.
 
 ### Validate the connection
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -229,7 +232,7 @@ In the following procedures, you assign your environment to an enterprise policy
 1. Verify that the **Status** shows **Succeeded**.
 
 ## Best practices
-Ensure you choose the subnet size as per your requirement. After the subnet is delegated to Power Platform&mdash;and if later, there's a need to change the subnet range&mdash;it requires Microsoft Support to reflect the updated subnet changes.
+Choose the subnet size that fits your requirements. After you delegate the subnet to Power Platform, changing the subnet range requires Microsoft Support to update the subnet changes.
 
 ### Related content
 
