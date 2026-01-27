@@ -45,7 +45,7 @@ The following diagram shows the functions of the roles in the setup process for 
 :::image type="content" source="media/vnet-support/vnet-support-configurations.png" alt-text="Screenshot of the configurations for virtual network support in a Power Platform environment." lightbox="media/vnet-support/vnet-support-configurations.png":::
 
 > [!IMPORTANT]
-> Power Platform performs active health checks when it's set up within the delegated network. As a result, expect periodic requests to verify your connection to the configured DNS server via TCP on port 53. To ensure health-reporting is accurate, *allowlist* this request from the subnet that makes requests. You can validate the functionality of this setting by using the diagnostic tooling with the `Test-NetworkConnectivity` command. Learn more about this topic in [Troubleshoot virtual network issues](/troubleshoot/power-platform/administration/virtual-network).
+> Power Platform performs active health checks when set up within the delegated network. As a result, expect periodic requests to verify your connection to the configured DNS server via TCP on port 53. To ensure health-reporting is accurate, *allowlist* this request from the subnet that makes requests. You can validate the functionality of this setting by using the diagnostic tooling with the `Test-NetworkConnectivity` command. Learn more about this topic in [Troubleshoot virtual network issues](/troubleshoot/power-platform/administration/virtual-network).
 
 ## Set up Virtual Network support
 
