@@ -83,6 +83,10 @@ List Microsoft Entra ID applications registered under your tenant.
 
 Register Microsoft Entra ID application with your tenant.
 
+Do note that registering the application is the equivalent of assigning the Power Platform Administrator role to the service principal. 
+Granular roles and permissions can't be assigned to limit their capabilities. 
+See also [limitations of service principals](../../../admin/powerplatform-api-create-service-principal.md#limitations-of-service-principals).
+
 [!INCLUDE [admin-application-register-intro](includes/admin-application-register-intro.md)]
 
 
@@ -353,6 +357,10 @@ Object ID or user principal name (UPN) of Microsoft Entra ID user to be assigned
 ## pac admin create-service-principal
 
 Add Microsoft Entra ID application and associated application user to the Dataverse environment.
+
+Do note that associating the application is the equivalent of assigning the Power Platform Administrator role to the service principal. 
+Granular roles and permissions can't be assigned to limit their capabilities. 
+See also [limitations of service principals](../../../admin/powerplatform-api-create-service-principal.md#limitations-of-service-principals).
 
 [!INCLUDE [admin-create-service-principal-intro](includes/admin-create-service-principal-intro.md)]
 
