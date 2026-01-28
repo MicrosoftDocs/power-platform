@@ -48,7 +48,7 @@ At the top of the page, a summary view shows the adoption and usage trends, incl
   - **Copilot Studio**: Agent sessions  
 - **High-value resources**: Identify the top three apps, flows, and agents that generate the most impact.
 
-Below the summary view, detailed tables provide sortable views of all apps, flows, and agents that are in use in your organization. Only items that haven't been deleted are included. Sort by users for apps, runs for flows, and sessions for agents to identify trends and top performers.
+Below the summary view, detailed tables provide sortable views of all apps, flows, and agents that are in use in your organization. Only items that aren't deleted are included. Sort by users for apps, runs for flows, and sessions for agents to identify trends and top performers.
 
 ### Power Apps
 
@@ -68,6 +68,6 @@ For Power Automate and Copilot Studio, usage data from December 25, 2025, throug
 
 ## Frequently asked questions (FAQs)
 
-### Why don't agent session numbers match those in the Copilot area of the Power Platform admin center?
+### Why don't agent session numbers match those numbers in the Copilot area of the Power Platform admin center?
 
 Agent session counts use a 28-day lookback window. Differences can occur because of timing and snapshot alignment. We plan to standardize these metrics in the future.
