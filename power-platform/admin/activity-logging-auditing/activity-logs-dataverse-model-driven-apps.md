@@ -116,33 +116,33 @@ For a list of activities that are logged, see [Microsoft.Crm.Sdk.Messages Namesp
 
 The system logs all SDK messages except the following messages:
 
-- `WhoAmI`
-- `RetrieveFilteredForms`
-- `TriggerServiceEndpointCheck`
-- `QueryExpressionToFetchXml`
-- `FetchXmlToQueryExpression`
-- `FireNotificationEvent`
-- `RetrieveMetadataChanges`
-- `RetrieveEntityChanges`
-- `RetrieveProvisionedLanguagePackVersion`
-- `RetrieveInstalledLanguagePackVersion`
-- `RetrieveProvisionedLanguages`
-- `RetrieveAvailableLanguages`
-- `RetrieveDeprovisionedLanguages`
-- `RetrieveInstalledLanguagePacks`
-- `GetAllTimeZonesWithDisplayName`
-- `GetTimeZoneCodeByLocalizedName`
-- `IsReportingDataConnectorInstalled`
-- `LocalTimeFromUtcTime`
-- `IsBackOfficeInstalled`
-- `FormatAddress`
-- `IsSupportUserRole`
-- `IsComponentCustomizable`
-- `ConfigureReportingDataConnector`
-- `CheckClientCompatibility`
-- `RetrieveAttribute`
+- :::no-loc text="WhoAmI":::
+- :::no-loc text="RetrieveFilteredForms":::
+- :::no-loc text="TriggerServiceEndpointCheck":::
+- :::no-loc text="QueryExpressionToFetchXml":::
+- :::no-loc text="FetchXmlToQueryExpression":::
+- :::no-loc text="FireNotificationEvent":::
+- :::no-loc text="RetrieveMetadataChanges":::
+- :::no-loc text="RetrieveEntityChanges":::
+- :::no-loc text="RetrieveProvisionedLanguagePackVersion":::
+- :::no-loc text="RetrieveInstalledLanguagePackVersion":::
+- :::no-loc text="RetrieveProvisionedLanguages":::
+- :::no-loc text="RetrieveAvailableLanguages":::
+- :::no-loc text="RetrieveDeprovisionedLanguages":::
+- :::no-loc text="RetrieveInstalledLanguagePacks":::
+- :::no-loc text="GetAllTimeZonesWithDisplayName":::
+- :::no-loc text="GetTimeZoneCodeByLocalizedName":::
+- :::no-loc text="IsReportingDataConnectorInstalled":::
+- :::no-loc text="LocalTimeFromUtcTime":::
+- :::no-loc text="IsBackOfficeInstalled":::
+- :::no-loc text="FormatAddress":::
+- :::no-loc text="IsSupportUserRole":::
+- :::no-loc text="IsComponentCustomizable":::
+- :::no-loc text="ConfigureReportingDataConnector":::
+- :::no-loc text="CheckClientCompatibility":::
+- :::no-loc text="RetrieveAttribute":::
 
-## How to categorize Read and ReadMultiple
+## Categorize requests
 
 Use the prefix to categorize each request.
 
