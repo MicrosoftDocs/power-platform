@@ -472,9 +472,9 @@
               href: usage.md
             - name: Inventory
               items:
-                - name: Power Platform inventory (preview)
+                - name: Power Platform inventory
                   href: power-platform-inventory.md
-                - name: Power Platform inventory API (preview)
+                - name: Power Platform inventory API
                   href: inventory-api.md
         - name: Copilot
           items:

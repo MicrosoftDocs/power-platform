@@ -142,7 +142,7 @@ The system logs all SDK messages except the following messages:
 - `CheckClientCompatibility`
 - `RetrieveAttribute`
 
-## How to categorize Read and ReadMultiple
+## Categorize requests
 
 Use the prefix to categorize each request.
 

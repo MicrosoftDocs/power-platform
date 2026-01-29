@@ -3,7 +3,7 @@ title: Overview of Power Platform activity logging and auditing in Microsoft Pur
 description: Learn what Microsoft Power Platform admin, maker, and user activities you can view in Microsoft Purview and how to turn on and configure activity logging auditing for each Power Platform environment.
 ms.component: pa-admin
 ms.topic: article
-ms.date: 01/23/2026
+ms.date: 01/27/2026
 author: grbarker
 ms.subservice: admin
 ms.author: grbarker
@@ -36,13 +36,13 @@ Microsoft Purview can capture activity logging for these Power Platform componen
 
 |Component |Description  |Article link  |
 |---------|---------|---------|
-|Connectors    |  Monitor API calls and connector events to gain better visibility into integrations and data movement.  |  [Audit connector logs](activity-logs-connectors.md)      |
-|Copilot Studio   |  Monitor agent activities to follow to compliance requirements, mitigate failures, and maintain security. |   [Audit Copilot Studio activities in Microsoft Purview](/microsoft-copilot-studio/admin-logging-copilot-studio)  |
-|Dataverse and model-driven apps | Monitor create, read, update, and delete (CRUD), multiple records, and multimedia assets to support Data Protection Impact Assessment (DPIA).   | [Audit Dataverse and model-driven apps logs](activity-logs-dataverse-model-driven-apps.md) |
-|Power Apps | Monitor app creation, usage, patching, and deletion to identify errors and optimize user experience. |  [Audit Power Apps logs](activity-logs-power-apps.md)  |
-|Power Automate| Monitor flow creations, permissions, runs, and failures, and connector calls to troubleshoot issues and fine-tune performance for users. | [Audit Power Automate logs](activity-logs-power-automate.md) |
-|Power Pages| Monitor site interactions and page-level events to diagnose issues in external-facing portals. | [Audit Power Pages logs](activity-logs-power-pages.md) |
-|Power Platform admin| Monitor environment lifecycle operations, property and setting changes, groups and rules settings, licensing, lockbox operations, data policies, and other admin actions to support transparency, compliance, and security and mitigate failures. Admin activity collection is enabled by default on all tenants.| [Audit Power Platform admin logs](activity-logs-power-platform-admin.md)|
+|Connectors    |  Monitor API calls and connector events to gain better visibility into integrations and data movement.  |  [View connector logs](activity-logs-connectors.md)      |
+|Copilot Studio   |  Monitor agent activities to follow to compliance requirements, mitigate failures, and maintain security. |   [View Copilot Studio activities in Microsoft Purview](/microsoft-copilot-studio/admin-logging-copilot-studio)  |
+|Dataverse and model-driven apps | Monitor create, read, update, and delete (CRUD), multiple records, and multimedia assets to support Data Protection Impact Assessment (DPIA).   | [View Dataverse and model-driven apps logs](activity-logs-dataverse-model-driven-apps.md) |
+|Power Apps | Monitor app creation, usage, patching, and deletion to identify errors and optimize user experience. |  [View Power Apps logs](activity-logs-power-apps.md)  |
+|Power Automate| Monitor flow creations, permissions, runs, and failures, and connector calls to troubleshoot issues and fine-tune performance for users. | [View Power Automate logs](activity-logs-power-automate.md) |
+|Power Pages| Monitor site interactions and page-level events to diagnose issues in external-facing portals. | [View Power Pages logs](activity-logs-power-pages.md) |
+|Power Platform admin| Monitor environment lifecycle operations, property and setting changes, groups and rules settings, licensing, lockbox operations, data policies, and other admin actions to support transparency, compliance, and security and mitigate failures. Admin activity collection is enabled by default on all tenants.| [View Power Platform admin logs](activity-logs-power-platform-admin.md)|
 
 ## Common elements in schema structure
 
