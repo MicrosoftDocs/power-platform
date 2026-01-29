@@ -1,5 +1,5 @@
 ---
-title: Configure email resolution with the DoNotResolve Flag
+title: Configure email resolution with the DoNotResolve flag
 description: Learn how the DoNotResolve flag on the email-formatted field ensures that only relevant fields contribute to resolution logic during server-side synchronization.
 author: deeptibhalerao15
 ms.component: pa-admin
@@ -14,13 +14,13 @@ search.audienceType:
 
 # Configure email address resolution behavior with the DoNotResolve flag
 
-When an entity contains multiple email-formatted fields, including a custom entity, you need to control which fields participate in email resolution. Without this control, incoming emails can resolve to unitended records. 
+When an entity contains multiple email-formatted fields, including a custom email fields, you need to control which fields participate in email resolution. Without this control, incoming emails can resolve to unintended records. 
 
 The newly introduced **DoNotResolve** option gives administrators precise control by allowing them to explicitly exclude specific email fields from the resolution process.
  
 When you set the **DoNotResolve** flag on an email-formatted field, only the relevant fields contribute to email resolution logic during server-side synchronization. This reduces ambiguity and helps you design data models that store email addresses that aren't intended to resolve incoming messages.
 
-Here are some of the usage examples for the **DoNotResolve** option:
+Here are some usage examples for the **DoNotResolve** option:
 
 - **Standard entity example**: Consider a **Contact** entity that includes the built-in, primary email address field and the secondary email address field, which participates in email resolution by default. If you add another custom email field (such as for a spouse’s email address) that shouldn't be used for resolution, you can add the **DoNotResolve** flag on that field to prevent unintended associations.
 - **Custom entity example**: In entities such as **Sales Order**, customers may store email addresses for operational or reference purposes. These addresses aren't meant to resolve incoming emails. By applying the **DoNotResolve** flag, you ensure that such fields remain excluded from the resolution logic.
@@ -30,7 +30,7 @@ Here are some of the usage examples for the **DoNotResolve** option:
 Dynamics 365 stores **DoNotResolve** metadata in the **emailaddressconfiguration** entity. Each record represents a unique combination of:
 
 - An entity ID that identifies the entity that contains the email-formatted field.
-- Attribute ID that identifies the specific email-formatted field.
+- An Attribute ID that identifies the specific email-formatted field.
 
 The configuration includes: 
 
