@@ -16,7 +16,7 @@
           "RoleBasedAccessControl"
         ],
         "summary": "List role assignments.",
-        "description": "Retrieves a list of role assignments. PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
+        "description": "Retrieves a list of role assignments. Preview.",
         "operationId": "ListRoleAssignments",
         "produces": [
           "application/json"
@@ -57,7 +57,7 @@
           "RoleBasedAccessControl"
         ],
         "summary": "Create role assignment.",
-        "description": "Creates a new role assignment. PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
+        "description": "Creates a new role assignment. Preview.",
         "operationId": "CreateRoleAssignment",
         "consumes": [
           "application/json"
@@ -111,7 +111,7 @@
           "RoleBasedAccessControl"
         ],
         "summary": "Delete role assignment.",
-        "description": "Deletes a role assignment by ID. PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
+        "description": "Deletes a role assignment by ID. Preview.",
         "operationId": "DeleteRoleAssignment",
         "parameters": [
           {
@@ -155,7 +155,7 @@
           "RoleBasedAccessControl"
         ],
         "summary": "List role definitions.",
-        "description": "Retrieves a list of role definitions.  PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
+        "description": "Retrieves a list of role definitions. Preview.",
         "operationId": "ListRoleDefinitions",
         "produces": [
           "application/json"
@@ -204,7 +204,7 @@
             "type": "object",
             "properties": {
               "roleDefinitionId": {
-                "description": "Role definition ID",
+                "description": "Role definition Id",
                 "type": "string",
                 "example": "roleDef1"
               },
@@ -238,17 +238,17 @@
             "type": "object",
             "properties": {
               "roleAssignmentId": {
-                "description": "Role assignment ID",
+                "description": "Role assignment Id",
                 "type": "string",
                 "example": "assignment1"
               },
               "principalObjectId": {
-                "description": "The ID of the assigned principal",
+                "description": "The Id of the assigned principal",
                 "type": "string",
                 "example": "user123"
               },
               "roleDefinitionId": {
-                "description": "The ID of the role definition",
+                "description": "The Id of the role definition",
                 "type": "string",
                 "example": "roleDef1"
               },
@@ -268,7 +268,7 @@
                 "example": "User"
               },
               "createdByPrincipalObjectId": {
-                "description": "The ID of the creator principal",
+                "description": "The Id of the creator principal",
                 "type": "string",
                 "example": "user123"
               },
@@ -288,12 +288,12 @@
       "type": "object",
       "properties": {
         "principalObjectId": {
-          "description": "The ID of the principal to assign",
+          "description": "The Id of the principal to assign",
           "type": "string",
           "example": "user123"
         },
         "roleDefinitionId": {
-          "description": "The ID of the role definition",
+          "description": "The Id of the role definition",
           "type": "string",
           "example": "roleDef1"
         },

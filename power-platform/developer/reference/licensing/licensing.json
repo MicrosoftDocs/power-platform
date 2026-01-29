@@ -1068,24 +1068,24 @@
             "required": true,
             "type": "string",
             "enum": [
-              "AI",
               "AppPass",
-              "AppPassForTeams",
-              "Invoice",
-              "MCSSessions",
-              "MCSMessages",
-              "PAHostedRPA",
-              "PAUnattendedRPA",
-              "PerFlowPlan",
-              "PortalAddOns",
+              "AI",
               "PortalLogins",
               "PortalViews",
+              "PerFlowPlan",
+              "VAConversations",
+              "AppPassForTeams",
+              "PAUnattendedRPA",
               "PowerPagesAuthenticated",
               "PowerPagesAnonymous",
+              "PAHostedRPA",
+              "Invoice",
+              "PortalAddOns",
               "PowerAutomatePerProcess",
-              "ProcessMiningDataStorage",
+              "MCSSessions",
+              "MCSMessages",
               "SCMessages",
-              "VAConversations"
+              "ProcessMiningDataStorage"
             ]
           },
           {
@@ -1107,7 +1107,10 @@
           "400": {
             "description": "Bad Request",
             "schema": {
-              "$ref": "#/definitions/ProblemDetails"
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/NeptuneValidationError"
+              }
             }
           },
           "500": {
@@ -1192,6 +1195,549 @@
                 "$ref": "#/definitions/CurrencyReportV2"
               }
             }
+          }
+        }
+      }
+    },
+    "/licensing/UserPerFlowCapacitySource": {
+      "get": {
+        "tags": [
+          "UserPerFlowCapacitySource"
+        ],
+        "summary": "Get user per flow capacity source data with pagination and filtering options.",
+        "operationId": "GetUserPerFlowCapacitySource",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "The start date for the query range.",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "The end date for the query range. Defaults to current UTC time if not provided.",
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "query",
+            "name": "pageNumber",
+            "description": "The page number for pagination.",
+            "type": "integer",
+            "format": "int32",
+            "default": 1
+          },
+          {
+            "in": "query",
+            "name": "pageSize",
+            "description": "The page size for pagination.",
+            "type": "integer",
+            "format": "int32",
+            "default": 100
+          },
+          {
+            "in": "query",
+            "name": "userId",
+            "description": "Filter by user identifier.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "flowContext",
+            "description": "Filter by flow context.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "flowLicenseCategorization",
+            "description": "Filter by flow license categorization.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "resourceId",
+            "description": "Filter by resource identifier.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "environmentId",
+            "description": "Filter by environment identifier.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/PowerPlatformRequestSnapshotResultWithoutPagesUserPerFlowCapacitySourceRecord"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/licensing/UserPerFlowCapacitySource/FlowContextSummary": {
+      "get": {
+        "tags": [
+          "UserPerFlowCapacitySource"
+        ],
+        "summary": "Get flow context summary for user per flow capacity source.",
+        "operationId": "GetUserPerFlowCapacitySourceFlowContextSummary",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "The start date for the query range.",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "The end date for the query range. Defaults to current UTC time if not provided.",
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "query",
+            "name": "pageNumber",
+            "description": "The page number for pagination.",
+            "type": "integer",
+            "format": "int32",
+            "default": 1
+          },
+          {
+            "in": "query",
+            "name": "pageSize",
+            "description": "The page size for pagination.",
+            "type": "integer",
+            "format": "int32",
+            "default": 100
+          },
+          {
+            "in": "query",
+            "name": "environmentId",
+            "description": "Filter by environment identifier.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/PowerPlatformRequestSnapshotResultWithoutPagesUserPerFlowCapacitySourceFlowContextRecord"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/licensing/UserPerFlowCapacitySource/FlowContextSummary/{userId}": {
+      "get": {
+        "tags": [
+          "UserPerFlowCapacitySource"
+        ],
+        "summary": "Get flow context summary for a specific user's per flow capacity source.",
+        "operationId": "GetUserPerFlowCapacitySourceFlowContextSummaryForUserId",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "userId",
+            "description": "The user identifier.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "The start date for the query range.",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "The end date for the query range. Defaults to current UTC time if not provided.",
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "query",
+            "name": "pageNumber",
+            "description": "The page number for pagination.",
+            "type": "integer",
+            "format": "int32",
+            "default": 1
+          },
+          {
+            "in": "query",
+            "name": "pageSize",
+            "description": "The page size for pagination.",
+            "type": "integer",
+            "format": "int32",
+            "default": 100
+          },
+          {
+            "in": "query",
+            "name": "environmentId",
+            "description": "Filter by environment identifier.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/PowerPlatformRequestSnapshotResultWithoutPagesUserPerFlowCapacitySourceFlowContextRecord"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/licensing/UserPerFlowCapacitySource/TenantContextSummary": {
+      "get": {
+        "tags": [
+          "UserPerFlowCapacitySource"
+        ],
+        "summary": "Get tenant context summary for user per flow capacity source.",
+        "operationId": "GetUserPerFlowCapacitySourceTenantContextSummary",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "The start date for the query range.",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "The end date for the query range. Defaults to current UTC time if not provided.",
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "query",
+            "name": "environmentId",
+            "description": "Filter by environment identifier.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/UserPerFlowCapacitySourceTenantContextSummaryRecord"
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/licensing/UserPerFlowCapacitySource/UserContextSummary": {
+      "get": {
+        "tags": [
+          "UserPerFlowCapacitySource"
+        ],
+        "summary": "Get the user per flow capacity source user context summary.",
+        "operationId": "GetUserPerFlowCapacitySourceUserContextSummary",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "The start date for the query range.",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "The end date for the query range. Defaults to current UTC time if not provided.",
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "query",
+            "name": "pageNumber",
+            "description": "The page number for pagination.",
+            "type": "integer",
+            "format": "int32",
+            "default": 1
+          },
+          {
+            "in": "query",
+            "name": "pageSize",
+            "description": "The page size for pagination.",
+            "type": "integer",
+            "format": "int32",
+            "default": 100
+          },
+          {
+            "in": "query",
+            "name": "environmentId",
+            "description": "Filter by environment identifier.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/PowerPlatformRequestSnapshotResultWithoutPagesUserPerFlowCapacitySourceUserContextRecord"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/licensing/UserPerFlowCapacitySource/UserContextSummary/{userId}": {
+      "get": {
+        "tags": [
+          "UserPerFlowCapacitySource"
+        ],
+        "summary": "Get user context summary for a specific user's per flow capacity source.",
+        "operationId": "GetUserPerFlowCapacitySourceUserContextSummaryForUserId",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "userId",
+            "description": "The user identifier.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "The start date for the query range.",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "The end date for the query range. Defaults to current UTC time if not provided.",
+            "type": "string",
+            "format": "date-time"
+          },
+          {
+            "in": "query",
+            "name": "pageNumber",
+            "description": "The page number for pagination.",
+            "type": "integer",
+            "format": "int32",
+            "default": 1
+          },
+          {
+            "in": "query",
+            "name": "pageSize",
+            "description": "The page size for pagination.",
+            "type": "integer",
+            "format": "int32",
+            "default": 100
+          },
+          {
+            "in": "query",
+            "name": "environmentId",
+            "description": "Filter by environment identifier.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/PowerPlatformRequestSnapshotResultWithoutPagesUserPerFlowCapacitySourceUserContextRecord"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -1297,24 +1843,24 @@
     "ExternalCurrencyType": {
       "description": "Available currency type which can be allocated to environment.",
       "enum": [
-        "AI",
         "AppPass",
-        "AppPassForTeams",
-        "Invoice",
-        "MCSSessions",
-        "MCSMessages",
-        "PAHostedRPA",
-        "PAUnattendedRPA",
-        "PerFlowPlan",
-        "PortalAddOns",
+        "AI",
         "PortalLogins",
         "PortalViews",
+        "PerFlowPlan",
+        "VAConversations",
+        "AppPassForTeams",
+        "PAUnattendedRPA",
         "PowerPagesAuthenticated",
         "PowerPagesAnonymous",
+        "PAHostedRPA",
+        "Invoice",
+        "PortalAddOns",
         "PowerAutomatePerProcess",
-        "ProcessMiningDataStorage",
+        "MCSSessions",
+        "MCSMessages",
         "SCMessages",
-        "VAConversations"
+        "ProcessMiningDataStorage"
       ],
       "type": "string",
       "example": "PowerAutomatePerProcess"
@@ -2192,6 +2738,300 @@
           "items": {
             "$ref": "#/definitions/LicenseDetailsModel"
           }
+        }
+      },
+      "additionalProperties": false
+    },
+    "PowerPlatformRequestSnapshotResultWithoutPagesUserPerFlowCapacitySourceRecord": {
+      "description": "Paginated result container for user per flow capacity source records.",
+      "type": "object",
+      "properties": {
+        "currentPage": {
+          "format": "int32",
+          "description": "The current page number.",
+          "type": "integer"
+        },
+        "records": {
+          "description": "Collection of user per flow capacity source records.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/UserPerFlowCapacitySourceRecord"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "PowerPlatformRequestSnapshotResultWithoutPagesUserPerFlowCapacitySourceUserContextRecord": {
+      "description": "Paginated result container for user context summary records.",
+      "type": "object",
+      "properties": {
+        "currentPage": {
+          "format": "int32",
+          "description": "The current page number.",
+          "type": "integer"
+        },
+        "records": {
+          "description": "Collection of user context summary records.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/UserPerFlowCapacitySourceUserContextRecord"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "PowerPlatformRequestSnapshotResultWithoutPagesUserPerFlowCapacitySourceFlowContextRecord": {
+      "description": "Paginated result container for flow context summary records.",
+      "type": "object",
+      "properties": {
+        "currentPage": {
+          "format": "int32",
+          "description": "The current page number.",
+          "type": "integer"
+        },
+        "records": {
+          "description": "Collection of flow context summary records.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/UserPerFlowCapacitySourceFlowContextRecord"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "UserPerFlowCapacitySourceRecord": {
+      "description": "Detailed capacity source record for a specific flow execution.",
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "format": "uuid",
+          "description": "The tenant identifier.",
+          "type": "string"
+        },
+        "environmentId": {
+          "format": "uuid",
+          "description": "The environment identifier.",
+          "type": "string"
+        },
+        "userId": {
+          "description": "The user identifier.",
+          "type": "string"
+        },
+        "flowContext": {
+          "description": "The context in which the flow was executed.",
+          "type": "string"
+        },
+        "flowLicenseCategorization": {
+          "description": "The license categorization of the flow.",
+          "type": "string"
+        },
+        "resourceId": {
+          "description": "The resource identifier.",
+          "type": "string"
+        },
+        "consumptionUnits": {
+          "format": "int64",
+          "description": "The number of consumption units used.",
+          "type": "integer"
+        },
+        "consumptionDate": {
+          "format": "date-time",
+          "description": "The date when the consumption occurred.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UserPerFlowCapacitySourceUserContextRecord": {
+      "description": "User context summary for per flow capacity source.",
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "format": "uuid",
+          "description": "The tenant identifier.",
+          "type": "string"
+        },
+        "userId": {
+          "description": "The user identifier.",
+          "type": "string"
+        },
+        "flowContext": {
+          "description": "The context in which flows were executed.",
+          "type": "string"
+        },
+        "flowLicenseCategorization": {
+          "description": "The license categorization of the flows.",
+          "type": "string"
+        },
+        "consumptionDate": {
+          "format": "date-time",
+          "description": "The date of consumption.",
+          "type": "string"
+        },
+        "totalConsumption": {
+          "format": "int64",
+          "description": "The total consumption units for the user.",
+          "type": "integer"
+        },
+        "totalCapacity": {
+          "format": "int64",
+          "description": "The total capacity available for the user.",
+          "type": "integer"
+        },
+        "totalFlows": {
+          "format": "int64",
+          "description": "The total number of flows executed by the user.",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UserPerFlowCapacitySourceFlowContextRecord": {
+      "description": "Flow context summary for per flow capacity source.",
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "format": "uuid",
+          "description": "The tenant identifier.",
+          "type": "string"
+        },
+        "environmentId": {
+          "format": "uuid",
+          "description": "The environment identifier.",
+          "type": "string"
+        },
+        "userId": {
+          "description": "The user identifier.",
+          "type": "string"
+        },
+        "flowContext": {
+          "description": "The context in which the flow was executed.",
+          "type": "string"
+        },
+        "flowLicenseCategorization": {
+          "description": "The license categorization of the flow.",
+          "type": "string"
+        },
+        "consumptionDate": {
+          "format": "date-time",
+          "description": "The date of consumption.",
+          "type": "string"
+        },
+        "totalConsumption": {
+          "format": "int64",
+          "description": "The total consumption units for the flow.",
+          "type": "integer"
+        },
+        "flowId": {
+          "description": "The flow identifier.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UserPerFlowCapacitySourceTenantContextSummaryRecord": {
+      "description": "Tenant-level context summary for per flow capacity source.",
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "format": "uuid",
+          "description": "The tenant identifier.",
+          "type": "string"
+        },
+        "flowContext": {
+          "description": "The context in which flows were executed.",
+          "type": "string"
+        },
+        "countOfUsersInCompliance": {
+          "format": "int64",
+          "description": "Number of users who are within their capacity limits.",
+          "type": "integer"
+        },
+        "countOfUsersExceedingCapacity": {
+          "format": "int64",
+          "description": "Number of users who have exceeded their capacity limits.",
+          "type": "integer"
+        },
+        "countOfUsersWithoutALicense": {
+          "format": "int64",
+          "description": "Number of users without any license.",
+          "type": "integer"
+        },
+        "countOfUsersWithoutPremiumLicenseUsingPremiumFeatures": {
+          "format": "int64",
+          "description": "Number of users using premium features without a premium license.",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "NeptuneReservationErrorInfo": {
+      "type": "object",
+      "properties": {
+        "capacityType": {
+          "type": "string"
+        },
+        "environmentType": {
+          "type": "string"
+        },
+        "trialScenarioType": {
+          "type": "string"
+        },
+        "tenantCapacityLicenseModel": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "NeptuneValidationError": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "errorMessage": {
+          "$ref": "#/definitions/NeptuneValidationErrorMessage"
+        },
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "target": {
+          "type": "string"
+        },
+        "details": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false
+    },
+    "NeptuneValidationErrorMessage": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "readOnly": true
+        },
+        "code": {
+          "type": "string",
+          "readOnly": true
+        },
+        "operationCode": {
+          "type": "string",
+          "readOnly": true
+        },
+        "helpLink": {
+          "type": "string",
+          "readOnly": true
+        },
+        "target": {
+          "type": "string",
+          "readOnly": true
+        },
+        "reservationErrorInfo": {
+          "$ref": "#/definitions/NeptuneReservationErrorInfo"
         }
       },
       "additionalProperties": false
