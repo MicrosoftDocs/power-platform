@@ -23,7 +23,7 @@ When you set the **DoNotResolve** flag on an email-formatted field, only the rel
 Here are some usage examples for the **DoNotResolve** option:
 
 - **Standard entity example**: Consider a **Contact** entity that includes the built-in, primary email address field, and the secondary email address field, which participates in email resolution by default. If you add another custom email field (such as for a spouse’s email address) that shouldn't be used for resolution, you can add the **DoNotResolve** flag on that field to prevent unintended associations.
-- **Custom entity example**: In entities such as **Sales Order**, customers may store email addresses for operational or reference purposes. These addresses aren't meant to resolve incoming emails. By applying the **DoNotResolve** flag, you ensure that such fields remain excluded from the resolution logic.
+- **Custom entity example**: In entities such as **Sales Order**, customers might store email addresses for operational or reference purposes. These addresses aren't meant to resolve incoming emails. By applying the **DoNotResolve** flag, you ensure that such fields remain excluded from the resolution logic.
 
 ## Metadata storage for the DoNotResolve configuration
 
