@@ -1,5 +1,5 @@
 ---
-title: Power Platform inventory (preview)
+title: Power Platform inventory
 description: Learn how to get a comprehensive, unified view of all agents, apps, and flows across your organization in Power Platform.
 author: mikferland-msft
 ms.author: miferlan
@@ -9,9 +9,7 @@ ms.topic: concept-article
 
 ---
 
-# Power Platform inventory (preview)
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Power Platform inventory
 
 The Power Platform admin center now offers tenant administrators a comprehensive, unified view of all key resources&mdash;agents, apps, and flows&mdash;across their organization with Power Platform inventory. With this centralized inventory, administrators can effortlessly discover, search, filter, and sort their resources to streamline common administrative tasks.
 
@@ -27,8 +25,6 @@ Power Platform inventory allows you to easily complete the following tasks:
 
 - **Accelerate support**: Instantly pinpoint that _needle in a haystack_ resource referenced in a support ticket to dramatically improve response times.
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
-
 ## Supported resource types
 
 The Power Platform inventory includes:
@@ -39,13 +35,17 @@ The Power Platform inventory includes:
 
 - **Flows:** All agent flows created in Copilot Studio, all cloud flows created in Power Automate, and all workflows created in Microsoft 365 Copilot's Workflows agent.
 
+- **Environments:** All environments in your tenant.
+
+- **Environment groups:** All environment groups in your tenant.
+
 ## Key features
 
 - **Unified inventory**: Centralized view of all resources.
 
 - **Fast updates**: Created, updated, or deleted resources appear within 15 minutes.
 
-- **Flexible filtering and sorting**: Filter and sort resources by any attribute.
+- **Flexible filtering and sorting**: Filter and sort resources by any attribute, including environment groups.
 
 - **Inventory count**: Instantly see the total number of items matching your criteria.
 
@@ -132,6 +132,10 @@ Quickly search for keywords across all entries currently loaded in the inventory
 ## Programmatic access
 
 Power Platform inventory data is available programmatically, supporting advanced scenarios such as automation, reporting, and integration with external tools.
+
+### Power Platform for Admins V2 connector
+
+You can query Power Platform inventory data directly from Power Automate using the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/). Use the [Query Power Platform resources](/connectors/powerplatformadminv2/#query-power-platform-resources) action to execute queries against your inventory and integrate results into your automation workflows.
 
 ### Power Platform API
 
