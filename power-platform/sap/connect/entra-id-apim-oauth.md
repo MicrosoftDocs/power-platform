@@ -43,6 +43,23 @@ You can also gain additional insights and context into the setup process in the 
 This article uses a few named values to make the examples easier to follow. These values are reused throughout the article and referenced in later sections.
 Replace the named values with your own values when following the examples.
 
+| Name | Value | Description |
+|------|-------------|-------------|
+| AADSAPResource | https://SAP_SAML_Client100 | SAP local provider name, must be URI-compliant |
+| AADTenantId| A GUID | Azure Tenant Id |
+| APIMAADRegisteredAppClientId | A GUID  | Description of value 1 |
+| APIMAADRegisteredAppClientSecret | ********* | Description of value 1 |
+| APIMUserAssignedManagedIdentityId | A GUID | Description of value 1 |
+| SAPOAuthClientID | OAUTH-JAMES  | SAP user |
+| SAPOAuthClientSecret | ********* | SAP user password |
+| SAPOAuthRefreshExpiry | 3600 | SAP  |
+| SAPOAuthScope| ZAPI_BUSINESS_PARTNER_0001 | SAP service scope |
+| SAPOAuthServerAddressForTokenEndpoint | 10.0.0.79:44301 | SAP internal IP address : port number |
+| UserEmail | james@contoso.com | The account used for SSO in PowerPlatfrom sing on, the same Email address linked to the SAP User |
+| Odata Base URI | https://apim-sap-rn.azure-api.net/hao/sap/opu/odata/sap | Find it in the APIM, used in the connection |
+| Microsoft Entra ID Resource URI (Application ID URI) | api://b0133ffc-4d2a-4251-bf5e-c159d41486ed | Find it in app registration, used in the connection| 
+| SAP NetWeaver Enterprise Application Client ID | A GUID | Application ID of SAP NetWeaver Enterprise Applicatio in Azure| 
+
 
 ## Download local provider SAML metadata from SAP
 
@@ -50,11 +67,11 @@ To set up a trust relationship between SAP and Microsoft Entra ID using SAML 2.0
 
 Perform these steps as an SAP Basis admin in SAP GUI.
 
-1. In SAP GUI, run the transaction **SAML2** to open the relevant SAP-client dependent wizard and choose the **Local Provider** tab.
+1. In SAP GUI, run the transaction **SAML2** to open the relevant SAP-client dependent wizard.
+   - You may need to Enable **SAML2** af the first tiem, refer here regarding how to enable it.
+   - Choose the **Local Provider** tab, save the provider name as AADSAPResource in the named values table.
 
 1. Select **Metadata**, and then select **Download Metadata**. You'll upload the SAP SAML metadata to Microsoft Entra ID in a later step.
-
-1. Take note of the URI-compliant **Provider Name**.
 
 > [!NOTE]
 > Microsoft Entra ID requires the value of **Provider Name** to be URI-compliant. If **Provider Name** is already set and isn't URI-compliant, don't change it without first consulting your SAP Basis team. Changing the **Provider Name** can break existing SAML configurations. The steps for changing it are beyond the scope of this article. Check with your SAML Basis team for guidance.
@@ -66,100 +83,37 @@ Consult [SAP's official documentation](https://help.sap.com/docs/SAP_NETWEAVER_7
 Perform these steps as a Microsoft Entra ID admin in the [Azure portal](https://portal.azure.com).
 
 1. Select **Microsoft Entra ID** > **Enterprise applications**.
-
-1. Select **New application**.
-
-1. Search for **SAP Netweaver**.
-
-1. Give the enterprise application a name, and then select **Create**.
+   - Select **New application**.
+   - Search for **SAP Netweaver**.
+   - Give the enterprise application a name, and then select **Create**, save the applcation ID as SAP NetWeaver Enterprise Application Client ID in the namved values table. 
 
 1. Go to **Single sign-on** and select **SAML**.
-
-1. Select **Upload metadata file** and select the metadata file that you downloaded from SAP.
-
-1. Select **Add**.
-
-1. Change the **Reply URL (Assertion Consumer Service URL)** to the SAP OAuth token endpoint. The URL is in the format `https://<SAP server>:<port>/sap/bc/sec/oauth2/token?sap-client=100` (100 is the SAP client id).
-
-1. Change the **Sign-on URL** to a URI-compliant value. This parameter isn't used and can be set to any value that's URI-compliant.
-
-1. Select **Save**.
+   - Select **Upload metadata file** and select the metadata file that you downloaded from SAP.
+   - Select **Add**.
+   -  Make sure the Identifier (Entity ID) is the save value of AADSAPResource, this is case sensitive.
+   -  Change the **Reply URL (Assertion Consumer Service URL)** to the SAP OAuth token endpoint. The URL is in the format `https://<SAP server>:<port>/sap/bc/sec/oauth2/token?sap-client=100` (100 is the SAP client id)
+   -  Change the **Sign-on URL** to a URI-compliant value. This parameter isn't used and can be set to any value that's URI-compliant.
+   -  Select **Save**.
 
 1. Under **Attributes & Claims**, select **Edit**.
-
-1. Confirm that **Claim name Unique User Identifier (Name ID)** is set to **user.userprincipalname [nameid=format:emailAddress]**.
+   - Confirm that **Claim name Unique User Identifier (Name ID)** is set to **user.userprincipalname [nameid=format:emailAddress]**.
 
 1. Under **SAML Certificates**, select **Download** for **Certificate (Base64)** and **Federation Metadata XML**.
+   
+1. Under **Users and groups**, select **Add users/group**, click **Users and groups**, search and select for **ALL Company**, then assgin. 
 
 ## Configure Microsoft Entra ID as a trusted Identity Provider for OAuth 2.0 in SAP
 
-1. In SAP GUI, run the transaction **SAML2** to open the relevant SAP-client dependent wizard and choose the **Trusted Provider** tab, then select **Oauth2.0 Identify provider**, upload the XML and the certification you have downloaded from Azure. Save and edit, add supported name id formats, choose Email, then save and enable. 
-1. In SAP GUI,  run the transaction **SU01** to create a new user and select 
-1. Come back to this article once the OAuth2 client is created in SAP.
+1. In SAP GUI, run the transaction **SAML2**.
+   
+   - Choose the **Trusted Provider** tab, then select **Oauth2.0 Identify provider**, click **ADD** and choose **Upload Metadata File**, upload the XML and the certification you have downloaded from Azure.
+   - Save and edit, then click **Add**, slect **Email** as the supported name id formats, save and enable.
 
-See [SAP's official documentation about SAP NETWEAVER](https://help.sap.com/docs/SAP_NETWEAVER_750/3c4e8fc004cb4401a4fdd737f02ac2b9/7e80a762e8b4441fb53b1f6d9bde4f4d.html) for additional details. Note, you must be an SAP administrator to access the information.
-
-## Create a Microsoft Entra ID application that represents the Azure API Management resource
-
-Set up a Microsoft Entra ID application that grants access to the Microsoft Power Platform SAP OData connector. This application allows an Azure API Management resource to convert OAuth tokens to SAML ones.
-
-Take these steps as a Microsoft Entra ID admin in the [Azure portal](https://portal.azure.com).
-
-1. Select **Microsoft Entra ID** > **App registrations** > **New Registration**.
-
-1. Enter a **Name**, and then select **Register**.
-
-1. Select **Certificates & secrets** > **New client secret**.
-
-1. Enter a **Description**, and then select **Add**.
-
-1. Copy and save this *secret* somewhere secure.
-
-1. Select **API Permissions** > **Add a permission**.
-
-1. Select **Microsoft Graph** > **Delegated permissions**.
-
-1. Search for and select **openid**.
-
-1. Select **Add permissions**.
-
-1. Select **Authentication** > **Add a platform** > **Web**.
-
-1. Set **Redirect URIs** to `https://localhost:44326/signin-oidc`.
-
-1. Select **Access tokens** and **ID tokens**, and then select **Configure**.
-
-1. Select **Expose an API**.
-
-1. Next to *Application ID URI*, select **Add**.
-
-1. Accept the **default value** and select **Save**.
-
-1. Select **Add a scope**.
-
-1. Set **Scope name** to *user_impersonation*.
-
-1. Set *Who can consent?* to **Admins and users**.
-
-1. Select **Add a scope**.
-
-1. Copy the **Application (client) ID**.
-
-## Authorize the Azure API Management resource to access SAP Netweaver using the Microsoft Entra ID enterprise application
-
-1. When a Microsoft Entra ID enterprise application is created, it creates a matching app registration. Find the **App registration** that matches the Microsoft Entra ID enterprise application that you created for SAP NetWeaver.
-
-1. Select **Expose an API** > **Add a client application**.
-
-1. Paste the **Application (client) ID** of the Microsoft Entra ID app registration of your Azure API Management instance into **Client ID**.
-
-1. Select the **user_impersonation** scope, and then select **Add application**.
-
-## Authorize the Microsoft Power Platform SAP OData connector to access APIs exposed by Azure API Management
-
-1. In the Microsoft Entra ID app registration of Azure API Management, select **Expose an API** > Add the client id of the Power Platform SAP OData connector `6bee4d13-fd19-43de-b82c-4b6401d174c3` under authorized client applications.
-
-1. Select the **user_impersonation** scope, and then select **Save**.
+We need to create a user inside SAP to map the user(james@contoso.com) who will be SSO on power platform. 
+1. In SAP GUI,  run the transaction **SU01** to create a new user.
+   
+   - Give a Last Name, for example "OAUTH-JAMES", this is the value of SAPOAuthClientID in the names value table. Put "james@contoso.com" as the Email address.
+   -  Select **Logon Data** tab, select **System** as **User Type**, create a password for this user, save the password as SAPOAuthClientSecret in the named values table.
 
 ## Configure SAP OAuth
 
@@ -188,6 +142,63 @@ Perform these steps as an SAP Basis admin in SAP GUI.
 1. On the **Scope Assignment** page, select **Add**, select the OData services that Azure API Management uses (e.g. ZAPI_BUSINESS_PARTNER_0001), and then select **Next**.
 
 1. Select **Finish**.
+
+See [SAP's official documentation about SAP NETWEAVER](https://help.sap.com/docs/SAP_NETWEAVER_750/3c4e8fc004cb4401a4fdd737f02ac2b9/7e80a762e8b4441fb53b1f6d9bde4f4d.html) for additional details. Note, you must be an SAP administrator to access the information.
+
+## Create a Microsoft Entra ID application that represents the Azure API Management resource
+
+Set up a Microsoft Entra ID application that grants access to the Microsoft Power Platform SAP OData connector. This application allows an Azure API Management resource to convert OAuth tokens to SAML ones.
+
+Take these steps as a Microsoft Entra ID admin in the [Azure portal](https://portal.azure.com).
+
+1. Select **Microsoft Entra ID** > **App registrations** > **New Registration**.
+
+1. Enter a **Name**, and then select **Register**, save the client id as APIMAADRegisteredAppClientId in the named values table.
+
+1. Select **Certificates & secrets** > **New client secret**.
+
+1. Enter a **Description**, and then select **Add**, , save the secret value as APIMAADRegisteredAppClientSecret in the named values table
+
+1. Select **API Permissions** > **Add a permission**.
+
+1. Select **Microsoft Graph** > **Microsoft Graph** > **Delegated permissions**.
+
+1. Search for and select **openid**.
+
+1. Select **Add permissions**.
+
+1. Select **APIs my organization uses** > search for the SAP NetWeaver application we created eariler, select **user_impersonation** as the permission
+
+1. Go back to the API permission page, **Grant admin consent** for both permerssion.
+
+1. Select **Expose an API**.
+
+1. Next to *Application ID URI*, select **Add**. 
+
+1. Accept the **default value** and select **Save**. Save applicato ID URI as Microsoft Entra ID Resource URI (Application ID URI) in the named values table.
+
+1. Select **Add a scope**.
+
+1. Set **Scope name** to *user_impersonation*.
+
+1. Set *Who can consent?* to **Admins and users**, save. 
+
+## Authorize the Azure API Management resource to access SAP Netweaver using the Microsoft Entra ID enterprise application
+
+1. When a Microsoft Entra ID enterprise application is created, it creates a matching app registration. Find the **App registration** that matches the Microsoft Entra ID enterprise application that you created for SAP NetWeaver.
+
+1. Select **Expose an API** > **Add a client application**.
+
+1. Paste the **Application (client) ID** of the Microsoft Entra ID app registration of your Azure API Management instance into **Client ID**.
+
+1. Select the **user_impersonation** scope, and then select **Add application**.
+
+## Authorize the Microsoft Power Platform SAP OData connector to access APIs exposed by Azure API Management
+
+1. In the Microsoft Entra ID app registration of Azure API Management, select **Expose an API** > Add the client id of the Power Platform SAP OData connector `6bee4d13-fd19-43de-b82c-4b6401d174c3` under authorized client applications, check **Authorized** scopes
+
+1. Add another client application, this time it is the SAP NetWeaver Enterprise Application, copy SAP NetWeaver Enterprise Application Client ID from the named values table, check **Authorized** scopes.
+
 
 ## Configure Azure API Management
 
