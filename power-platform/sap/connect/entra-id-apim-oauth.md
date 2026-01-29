@@ -152,52 +152,32 @@ Set up a Microsoft Entra ID application that grants access to the Microsoft Powe
 Take these steps as a Microsoft Entra ID admin in the [Azure portal](https://portal.azure.com).
 
 1. Select **Microsoft Entra ID** > **App registrations** > **New Registration**.
-
-1. Enter a **Name**, and then select **Register**, save the client id as APIMAADRegisteredAppClientId in the named values table.
-
-1. Select **Certificates & secrets** > **New client secret**.
-
-1. Enter a **Description**, and then select **Add**, , save the secret value as APIMAADRegisteredAppClientSecret in the named values table
+   - Enter a **Name**, and then select **Register**, save the client id as APIMAADRegisteredAppClientId in the named values table.
+   - Select **Certificates & secrets** > **New client secret**.
+   -  Enter a **Description**, and then select **Add**, , save the secret value as APIMAADRegisteredAppClientSecret in the named values table
 
 1. Select **API Permissions** > **Add a permission**.
+   - Select **Microsoft Graph** > **Microsoft Graph** > **Delegated permissions**.
+   - Search for and select **openid**.
+   - Select **Add permissions**.
+   -  Select **APIs my organization uses** > search for the SAP NetWeaver application we created eariler, select **user_impersonation** as the permission
+   -  Go back to the API permission page, **Grant admin consent** for both permerssion.
 
-1. Select **Microsoft Graph** > **Microsoft Graph** > **Delegated permissions**.
-
-1. Search for and select **openid**.
-
-1. Select **Add permissions**.
-
-1. Select **APIs my organization uses** > search for the SAP NetWeaver application we created eariler, select **user_impersonation** as the permission
-
-1. Go back to the API permission page, **Grant admin consent** for both permerssion.
-
+Authorize the Azure API Management resource to access SAP Netweaver using the Microsoft Entra ID enterprise application
 1. Select **Expose an API**.
-
-1. Next to *Application ID URI*, select **Add**. 
-
-1. Accept the **default value** and select **Save**. Save applicato ID URI as Microsoft Entra ID Resource URI (Application ID URI) in the named values table.
-
-1. Select **Add a scope**.
-
-1. Set **Scope name** to *user_impersonation*.
-
-1. Set *Who can consent?* to **Admins and users**, save. 
-
-## Authorize the Azure API Management resource to access SAP Netweaver using the Microsoft Entra ID enterprise application
-
-1. When a Microsoft Entra ID enterprise application is created, it creates a matching app registration. Find the **App registration** that matches the Microsoft Entra ID enterprise application that you created for SAP NetWeaver.
-
-1. Select **Expose an API** > **Add a client application**.
-
-1. Paste the **Application (client) ID** of the Microsoft Entra ID app registration of your Azure API Management instance into **Client ID**.
-
-1. Select the **user_impersonation** scope, and then select **Add application**.
-
-## Authorize the Microsoft Power Platform SAP OData connector to access APIs exposed by Azure API Management
-
-1. In the Microsoft Entra ID app registration of Azure API Management, select **Expose an API** > Add the client id of the Power Platform SAP OData connector `6bee4d13-fd19-43de-b82c-4b6401d174c3` under authorized client applications, check **Authorized** scopes
-
-1. Add another client application, this time it is the SAP NetWeaver Enterprise Application, copy SAP NetWeaver Enterprise Application Client ID from the named values table, check **Authorized** scopes.
+   - Next to *Application ID URI*, select **Add**.
+   - Accept the **default value** and select **Save**. Save this value as Microsoft Entra ID Resource URI (Application ID URI) in the named values table.
+   - Select **Add a scope**.
+       - Set **Scope name** to *user_impersonation*.
+       - Set *Who can consent?* to **Admins and users**, **Add scope**.
+         
+Authorize the Microsoft Power Platform SAP OData connector to access APIs exposed by Azure API Management        
+1. Select **Expose an API**.
+   - **Add a client application**
+   - Paste the "SAP NetWeaver Enterprise Application Client ID" from named values table into **Client ID**, check **Authorized sopes**, **Add application**.
+   - **Add a client application**
+   - Paste "6bee4d13-fd19-43de-b82c-4b6401d174c3" into **Client ID**, check **Authorized sopes**, **Add application**.
+      - This is the client id of the Power Platform SAP OData connector.
 
 
 ## Configure Azure API Management
