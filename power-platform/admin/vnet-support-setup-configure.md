@@ -18,6 +18,8 @@ contributors:
   - wifun
 ---
  
+The [Power Platform Virtual Network](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyNDY2NTkxNzAzMDQifQ) community on Microsoft Vive Engage is available. There, you can post any questions or feedback that you have about this functionality. You can join by filling out a request through the following form: [Request access to Finance and Operations Viva Engage Community](https://forms.office.com/r/qe94aGXWgp)
+
 # Set up virtual network support for Power Platform
 
 Azure virtual network support for Power Platform lets you integrate Power Platform and Dataverse components with cloud services or services hosted inside your private enterprise network without exposing them to the public internet. This article explains how to set up virtual network support in your Power Platform environments.
