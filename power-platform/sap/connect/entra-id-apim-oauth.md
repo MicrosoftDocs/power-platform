@@ -38,6 +38,12 @@ You can also gain additional insights and context into the setup process in the 
 - SAP instance
 - Azure API Management resource
 
+## Named values
+
+This article uses a few named values to make the examples easier to follow. These values are reused throughout the article and referenced in later sections.
+Replace the named values with your own values when following the examples.
+
+
 ## Download local provider SAML metadata from SAP
 
 To set up a trust relationship between SAP and Microsoft Entra ID using SAML 2.0, first download the metadata xml file from SAP.
@@ -51,7 +57,7 @@ Perform these steps as an SAP Basis admin in SAP GUI.
 1. Take note of the URI-compliant **Provider Name**.
 
 > [!NOTE]
-> Microsoft Entra ID requires this value to be URI-compliant. If **Provider Name** is already set and isn't URI-compliant, don't change it without first consulting your SAP Basis team. Changing the **Provider Name** can break existing SAML configurations. The steps for changing it are beyond the scope of this article. Check with your SAML Basis team for guidance.
+> Microsoft Entra ID requires the value of **Provider Name** to be URI-compliant. If **Provider Name** is already set and isn't URI-compliant, don't change it without first consulting your SAP Basis team. Changing the **Provider Name** can break existing SAML configurations. The steps for changing it are beyond the scope of this article. Check with your SAML Basis team for guidance.
 
 Consult [SAP's official documentation](https://help.sap.com/docs/SAP_NETWEAVER_750/f118a8960caf41808bd374e28a834f58/4ab4c93185376d61e10000000a42189c.html) for additional info.
 
@@ -73,7 +79,7 @@ Perform these steps as a Microsoft Entra ID admin in the [Azure portal](https://
 
 1. Select **Add**.
 
-1. Change the **Reply URL (Assertion Consumer Service URL)** to the SAP OAuth token endpoint. The URL is in the format `https://<SAP server>:<port>/sap/bc/sec/oauth2/token`.
+1. Change the **Reply URL (Assertion Consumer Service URL)** to the SAP OAuth token endpoint. The URL is in the format `https://<SAP server>:<port>/sap/bc/sec/oauth2/token?sap-client=100` (100 is the SAP client id).
 
 1. Change the **Sign-on URL** to a URI-compliant value. This parameter isn't used and can be set to any value that's URI-compliant.
 
@@ -87,8 +93,8 @@ Perform these steps as a Microsoft Entra ID admin in the [Azure portal](https://
 
 ## Configure Microsoft Entra ID as a trusted Identity Provider for OAuth 2.0 in SAP
 
-1. Follow the steps outlined in the [Microsoft Entra ID documentation for SAP NetWeaver and OAuth2 section](/entra/identity/saas-apps/sap-netweaver-tutorial#configure-sap-netweaver-for-oauth).
-
+1. In SAP GUI, run the transaction **SAML2** to open the relevant SAP-client dependent wizard and choose the **Trusted Provider** tab, then select **Oauth2.0 Identify provider**, upload the XML and the certification you have downloaded from Azure. Save and edit, add supported name id formats, choose Email, then save and enable. 
+1. In SAP GUI,  run the transaction **SU01** to create a new user and select 
 1. Come back to this article once the OAuth2 client is created in SAP.
 
 See [SAP's official documentation about SAP NETWEAVER](https://help.sap.com/docs/SAP_NETWEAVER_750/3c4e8fc004cb4401a4fdd737f02ac2b9/7e80a762e8b4441fb53b1f6d9bde4f4d.html) for additional details. Note, you must be an SAP administrator to access the information.
