@@ -179,12 +179,15 @@ Perform the following steps as a Microsoft Entra ID administrator in the [Azure 
 ## Configure Azure API Management
 
 Import the SAP OData XML metadata into your Azure API Management instance. Then, apply an Azure API Management policy to convert the tokens.
+1. Call your SAP service https://SAPendpoint:port/sap/opu/odata/sap/API_BUSINESS_PARTNER/$metadata and save it as SAP Odata metadata XML,
+   
+1. Open your Azure API Management instance, APIs > Add API > select OData,
+   - Select the file and upload SAP Odata metadata XML, enter a name and Web service RUL http://vhcals4hci.dummy.nodomain:50000/sap/opu/odata/sap/API_BUSINESS_PARTNER and a API URL suffix
+   - Save the Base URL as the value for Odata Base URI in the named value tables.
+   - Check ALL APIs, find your API: API_BUSINESS_PARTNER_Entities, check Entity sets and functions are there
 
-1. Open your Azure API Management instance and follow [the steps](/azure/api-management/sap-api?tabs=odata) to create an SAP OData API.
+1. Under *APIs*, select **Named values**, add AADSAPResource, AADTenantId, APIMAADRegisteredAppClientId, APIMAADRegisteredAppClientSecret, APIMUserAssignedManagedIdentityId, SAPOAuthClientID, SAPOAuthClientSecret, SAPOAuthRefreshExpiry, SAPOAuthScope, SAPOAuthServerAddressForTokenEndpoint
 
-1. Under *APIs*, select **Named values**.
-
-1. Add the following key/value pairs:
 
 
 > [!NOTE]
