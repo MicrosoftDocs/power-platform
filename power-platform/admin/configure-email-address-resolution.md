@@ -14,7 +14,7 @@ search.audienceType:
 
 # Configure email address resolution behavior with the DoNotResolve flag
 
-When an entity contains multiple email-formatted fields, including a custom email fields, you need to control which fields participate in email resolution. Without this control, incoming emails can resolve to unintended records. 
+When an entity contains multiple email-formatted fields, including a custom email field, you need to control which fields participate in email resolution. Without this control, incoming emails can resolve to unintended records. 
 
 The newly introduced **DoNotResolve** option gives administrators precise control by allowing them to explicitly exclude specific email fields from the resolution process.
  
