@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/06/2026
+ms.date: 01/30/2026
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -17,7 +17,7 @@ contributors:
   - matapg007
 ---
 
-The [Power Platform Virtual Network](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyNDY2NTkxNzAzMDQifQ) community on Microsoft Vive Engage is available. There, you can post any questions or feedback that you have about this functionality. You can join by filling out a request through the following form: [Request access to Finance and Operations Viva Engage Community](https://forms.office.com/r/qe94aGXWgp)
+The [Power Platform Virtual Network](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyNDY2NTkxNzAzMDQifQ) community on Microsoft Viva Engage is available. You can post any questions or feedback that you have about this functionality. You can join by filling out a request through the following form: [Request access to Finance and Operations Viva Engage Community](https://forms.office.com/r/qe94aGXWgp)
 
 # Virtual Network support overview
 
