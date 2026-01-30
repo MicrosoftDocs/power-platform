@@ -44,27 +44,27 @@ You can also gain additional insights and context into the setup process in the 
 This article uses a few named values to make the examples easier to follow. These values are reused throughout the article and referenced in later sections.
 Replace the named values with your own values when following the examples.
 
-| Name | Value | Description |
+| Name | Sample Value | Description |
 |------|-------------|-------------|
 | AADSAPResource | https://SAP_SAML_Client100 | SAP local provider name, must be URI-compliant |
 | AADTenantId| A GUID | Azure Tenant Id |
 | APIMAADRegisteredAppClientId | A GUID  | Microsoft Entra ID application(client) ID |
 | APIMAADRegisteredAppClientSecret | ********* | Microsoft Entra ID client secret |
-| APIMUserAssignedManagedIdentityId | A GUID | APIM user assgined managed identiy |
+| APIMUserAssignedManagedIdentityId | A GUID | APIM user assgined managed identiy client ID |
 | SAPOAuthClientID | OAUTH-JAMES  | SAP user |
 | SAPOAuthClientSecret | ********* | SAP user password |
 | SAPOAuthRefreshExpiry | 3600 | SAP token life time in seconds  |
 | SAPOAuthScope| ZAPI_BUSINESS_PARTNER_0001 | SAP OAuth service scope |
 | SAPOAuthServerAddressForTokenEndpoint | 10.0.0.79:44301 | SAP internal IP address : port number |
 | User Email | james@contoso.com | The account used for SSO in PowerPlatfrom, the same Email linked to the SAP User |
-| Odata Base URI | https://apim-sap-rn.azure-api.net/hao/sap/opu/odata/sap | Find it in the APIM, used in the connection |
-| Microsoft Entra ID Resource URI (Application ID URI) | api://b0133ffc-4d2a-4251-bf5e-c159d41486ed | Find it in app registration, used in the connection| 
+| Odata Base URI | https://apim-sap-rn.azure-api.net/hao/sap/opu/odata/sap | APIM base URL, used in the connections|
+| Microsoft Entra ID Resource URI (Application ID URI) | api://b0133ffc-4d2a-4251-bf5e-c159d41486ed | Microsoft Entra ID application ID URI, used in the connection| 
 | SAP NetWeaver Enterprise Application Client ID | A GUID | Application ID of SAP NetWeaver Enterprise Applicatio in Azure| 
 
 
 ## Download local provider SAML metadata from SAP
 
-To set up a trust relationship between SAP and Microsoft Entra ID using SAML 2.0, perform the followiung steps in SAP GUI as an SAP Basis administrator.
+To set up a trust relationship between SAP and Microsoft Entra ID using SAML 2.0, perform the following steps in SAP GUI as an SAP Basis administrator.
 
 1. In SAP GUI, run transaction **SAML2** to open the SAP-client dependent SAML 2.0 configuration wizard.
    - If SAML 2.0 is not enabled, enable it first by following the guidance provided [here](https://help.sap.com/docs/SAP_COMMERCE_CRM/ceb87e45786c470494b445728cd1d8b8/3f4e8a6ca5024080a08a72640b13e75a.html).
@@ -90,7 +90,7 @@ Perform the following steps as a Microsoft Entra ID admin in the [Azure portal](
    - Select **Upload metadata file** and upload the SAP SAML metadata XML file.
    - Select **Add**.
    - Verify the **Identifier (Entity ID)** matches the value of "AADSAPResource". This value is case-sensitive.
-   - Update the **Reply URL (Assertion Consumer Service URL)** to the SAP OAuth token endpoint in the following format: https://<SAP server>:<port>/sap/bc/sec/oauth2/token?sap-client=100. Replace 100 with your SAP client ID.
+   - Update the **Reply URL (Assertion Consumer Service URL)** to the SAP OAuth token endpoint in the following format: https://<SAP server>:<port>/sap/bc/sec/oauth2/token?sap-client=<client ID>.
    - Update the **Sign-on URL** to any URI-compliant value. This value is not used by SAP.
    - Select **Save**.
 
@@ -175,41 +175,64 @@ Perform the following steps as a Microsoft Entra ID administrator in the [Azure 
    - Select **Add a client application** again.
    - Enter "6bee4d13-fd19-43de-b82c-4b6401d174c3" as the **Client ID**, check **Authorized sopes**, and then select **Add application**.
       - This is the client id of the Power Platform SAP OData connector.
+        
+## Create a user-assigned managed identity for your Azure API Management instance (supported starting May 2025)
+
+By using a user-assigned managed identity with Azure API Management, the platform handles authentication automatically, eliminating the need to manage or rotate APIMAADRegisteredAppClientSecret.
+
+Perform the following steps in the [Azure portal](https://portal.azure.com).
+
+1. Create a user-assigned managed identity.
+   - Select **Create a resource** > search for and select **User Assigned Managed Identity** by Microsoft
+   - Enter the name and recource group, then select **Review + create**
+   - Save the **Client ID** as APIMUserAssignedManagedIdentityId in the named values table
+
+1.  Assign the managed identity to Azure API Management.
+    - Open your Azure API Management instance.
+    - Go to **Security** > **Managed identities**
+    - Select **User assigned** tab, select **Add**, choose the managed identity you created, and then select **Add**.
 
 ## Configure Azure API Management
 
-Import the SAP OData XML metadata into your Azure API Management instance. Then, apply an Azure API Management policy to convert the tokens.
-1. Call your SAP service https://SAPendpoint:port/sap/opu/odata/sap/API_BUSINESS_PARTNER/$metadata and save it as SAP Odata metadata XML,
+Import the SAP OData metadata into Azure API Management, and then apply an API Management policy to handle token conversion.
+
+1. Retrieve the SAP OData metadata.
+   - Call the SAP service metadata endpoint (for example): https://<SAPendpoint>:<port>/sap/opu/odata/sap/API_BUSINESS_PARTNER/$metadata (this is depending your service setting). The exact URL depends on your SAP service configuration.
+   - Save the response as an **SAP OData metadata XML** file.
    
-1. Open your Azure API Management instance, APIs > Add API > select OData,
-   - Select the file and upload SAP Odata metadata XML, enter a name and Web service RUL http://vhcals4hci.dummy.nodomain:50000/sap/opu/odata/sap/API_BUSINESS_PARTNER and a API URL suffix
-   - Save the Base URL as the value for Odata Base URI in the named value tables.
-   - Check ALL APIs, find your API: API_BUSINESS_PARTNER_Entities, check Entity sets and functions are there
+1. Import the OData API into Azure API Management.
+   - Open your Azure API Management instance
+   - Select **APIs** > **Add API** > **OData**.
+   - Upload the **SAP OData metadata XML** file.
+   - Enter a Name, the API URL suffix (for example,jms/sap/opu/odata/sap),
+   - Save the **Base URL** as "Odata Base URI" in the named values table.
+   - Under **All APIs**, verify that your API (for example, API_BUSINESS_PARTNER_Entities) appears and that the entity sets and functions are listed.
 
-1. Under *APIs*, select **Named values**, add AADSAPResource, AADTenantId, APIMAADRegisteredAppClientId, APIMAADRegisteredAppClientSecret, APIMUserAssignedManagedIdentityId, SAPOAuthClientID, SAPOAuthClientSecret, SAPOAuthRefreshExpiry, SAPOAuthScope, SAPOAuthServerAddressForTokenEndpoint
-
-
+1. Configure named values.
+   - In **APIs**, select **Named values**.
+   - Add the following key/value pairs from the named values table:
+     AADSAPResource, AADTenantId, APIMAADRegisteredAppClientId, APIMAADRegisteredAppClientSecret, APIMUserAssignedManagedIdentityId, SAPOAuthClientID, SAPOAuthClientSecret, SAPOAuthRefreshExpiry, SAPOAuthScope, SAPOAuthServerAddressForTokenEndpoint.
 
 > [!NOTE]
 > Be aware that the settings differ slightly for SAP SuccessFactors. For more information, see the [Azure API Management policy for SAP SuccessFactors](https://github.com/Azure/api-management-policy-snippets/blob/master/examples/Request%20OAuth2%20access%20token%20from%20SuccessFactors%20using%20AAD%20JWT%20token.xml).
 
 ## Apply the Azure API Management token policy
 
-Use Azure API Management policies to convert a Microsoft Entra ID issued token to one that SAP NetWeaver accepts. This is done using the OAuth2SAMLBearer flow. See SAP's [official documentation](https://help.sap.com/docs/SAP_NETWEAVER_750/3c4e8fc004cb4401a4fdd737f02ac2b9/cdb122d5b0784c77bf1bcce17f730e74.html) for more information.
+Use Azure API Management policies to convert a Microsoft Entra ID–issued token into a token accepted by SAP NetWeaver. For more information, see the [official documentation](https://help.sap.com/docs/SAP_NETWEAVER_750/3c4e8fc004cb4401a4fdd737f02ac2b9/cdb122d5b0784c77bf1bcce17f730e74.html).
 
-1. Copy the [Azure API Management policy](https://github.com/Azure/api-management-policy-snippets/blob/master/examples/Request%20OAuth2%20access%20token%20from%20SAP%20using%20AAD%20JWT%20token.xml) from Microsoft's official GitHub page.
+1. Copy the Azure API Management policy from the Microsoft GitHub repository: [Azure API Management policy](https://github.com/Azure/api-management-policy-snippets/blob/master/examples/Request%20OAuth2%20access%20token%20from%20SAP%20using%20AAD%20JWT%20token.xml).
 
-1. Open the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. Go to your Azure API Management resource.
+1. Open your Azure API Management resource.
 
-1. Select **APIs**, and then select the OData API that you created.
+1. Select **APIs**, and then select the OData API you created earlier.
 
 1. Select **All operations**.
 
 1. Under *Inbound processing*, select **Policies </>**.
 
-1. Delete the **existing policy** and paste the **policy that you copied**.
+1. Replace the **existing policy** with the **policy that you copied**.
 
 1. Select **Save**.
 
