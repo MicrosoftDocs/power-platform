@@ -42,10 +42,8 @@ To restore deleted Dataverse records, turn on the **Keep deleted Dataverse recor
 
 ### Turn on the recover deleted records feature
 
-Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin) and complete the steps.
-
-1. Select **Manage**.
-1. Select **Environments** and open the environment you want.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+1. Select **Manage** > **Environments** and then open the environment you want.
 1. Select **Settings** > **Product** > **Features**.
 1. Scroll down to view the **Deleted records** area, and then enable the **Keep deleted Dataverse records** option.
 1. Once **Keep deleted Dataverse records** is enabled, enter the number of days, between 1 and 30, to keep deleted records.
