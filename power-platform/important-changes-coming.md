@@ -25,6 +25,35 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Removal of Before-and-After Field Changes from Purview Audit Events
+Starting May 2026, Dataverse will no longer include before-and-after field change values in the audit events that are sent to Microsoft Purview. Audit events will continue to flow to Purview; however, the detailed field-level value changes will be excluded.
+
+### Why is this needed?
+To strengthen data protection and prevent potential data leaks.
+Removing detailed field-level values from Purview-bound audit events reduces the risk of exposing sensitive business or personal information through downstream monitoring or analytics systems.
+
+### Impact
+If you have existing monitoring, alerting, or reporting solutions that depend on before-and-after field change values within Purview audit events, those solutions will stop working once this deprecation takes effect.
+Examples include:
+
+•	Rules that compare old/new values for anomaly detection
+
+•	Data pipelines that analyze field-level deltas
+
+•	Custom compliance checks running in Purview
+
+These scenarios must be updated to avoid disruption.
+
+### Action required
+Update your monitoring or downstream workflows to retrieve detailed field-level audit information directly from Dataverse, not from Purview.
+Dataverse continues to store and expose before-and-after field changes through its native audit APIs and tables.
+
+### Additional Notes
+•	No changes are required if your solution uses Dataverse audit logs as the source of truth.
+
+•	Purview will continue receiving audit event metadata (who changed what, when, and in which table), but value-level diffs will no longer be included.
+
+
 ## Deprecation of Copilot chat in model-driven apps
 Starting January 2026, [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) in environments not [enabled for Dynamics 365 apps](admin/create-environment.md#create-an-environment-with-a-database) will be deprecated. This feature was available as a preview feature in Power Apps.
 
