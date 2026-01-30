@@ -857,7 +857,7 @@
       "type": "object",
       "properties": {
         "resourceId": {
-          "description": "Resource Id ex. the environment group id.",
+          "description": "Resource ID, for example - the environment group ID.",
           "type": "string"
         },
         "resourceType": {
