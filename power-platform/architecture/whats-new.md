@@ -18,6 +18,12 @@ ms.custom:
 
 Get the latest info about what's new and what's changed in the Power Platform and Copilot Studio Architecture Center.
 
+## February 2026
+
+New in [Solution ideas](solution-ideas/index.md)
+
+- [​Build anomaly detection with Copilot Studio and Fabric](solution-ideas/agent-anomaly-detection.md)
+
 ## January 2026
 
 New in [Reference architectures](reference-architectures/index.md):

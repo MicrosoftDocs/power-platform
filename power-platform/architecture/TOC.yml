@@ -125,6 +125,8 @@
           href: solution-ideas/auto-ai-triage.md
         - name: Intelligent cardiac triage and scheduling
           href: solution-ideas/cardio-triage-agent.md
+        - name: Build anomaly detection with Copilot Studio and Fabric
+          href: solution-ideas/agent-anomaly-detection.md
     - name: Power Platform products
       items:
         - name: Power Apps
