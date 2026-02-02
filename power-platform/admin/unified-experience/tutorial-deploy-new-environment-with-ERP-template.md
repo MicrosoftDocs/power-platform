@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/11/2025
+ms.date: 02/02/2026
 ms.subservice: admin
 ms.author: laswenka
 ms.contributors:
@@ -60,7 +60,7 @@ Be sure to check out the latest known limitations available in the overview arti
 
 You can provision a new environment with finance and operations apps preinstalled using the Power Platform admin center or PowerShell.
 
-### [New admin center](#tab/new)
+### [Admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
@@ -118,7 +118,7 @@ You can provision a new environment with finance and operations apps preinstalle
 
 In this procedure, delete the environment you previously created. Deleting an environment is an action commonly done by admins who want to free up the Dataverse and Operations storage consumed by this environment for other needs. An environment can be deleted using the Power Platform admin center or PowerShell.
 
-### [New admin center](#tab/new)
+### [Admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
