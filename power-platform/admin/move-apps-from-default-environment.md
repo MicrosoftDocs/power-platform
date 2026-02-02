@@ -72,9 +72,6 @@ You can move apps by using one of two methods:
 
 1. Select **Move** to complete migration.
 
-    > [!Tip]
-    > The migration preserves permissions and sharing settings.
-
 ### Move apps by using automated cleanup with Power Automate
 
 1.  Create a flow with a **Manual Trigger**.
