@@ -38,7 +38,7 @@ If you have existing monitoring, alerting, or reporting solutions that depend on
 
 -	Rules that compare old/new values for anomaly detection.
 
--	Data pipelines that analyze field-level deltas
+-	Data pipelines that analyze field-level deltas.
 
 -	Custom compliance checks running in Purview.
 
@@ -49,7 +49,7 @@ Update your monitoring or downstream workflows to retrieve detailed field-level 
 
 ### More information
 -	No changes are required if your solution uses Dataverse audit logs as the source of truth.
--	Purview will continue receiving audit event metadata (such as who changed what, when, and in which table), but value-level diffs will no longer be included.
+-	Purview will continue receiving audit event metadata (such as who made changes, the date of the changes, and the tables affected), but field-level value changes will no longer be included.
 
 ## Deprecation of Copilot chat in model-driven apps
 Starting January 2026, [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) in environments not [enabled for Dynamics 365 apps](admin/create-environment.md#create-an-environment-with-a-database) will be deprecated. This feature was available as a preview feature in Power Apps.
