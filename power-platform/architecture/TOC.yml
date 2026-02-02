@@ -125,7 +125,7 @@
           href: solution-ideas/auto-ai-triage.md
         - name: Intelligent cardiac triage and scheduling
           href: solution-ideas/cardio-triage-agent.md
-        - name: Build anomaly detection with Copilot Studio and Fabric
+        - name: ​​Build anomaly detection with Copilot Studio and Fabric​
           href: solution-ideas/agent-anomaly-detection.md
     - name: Power Platform products
       items:
@@ -142,18 +142,16 @@
     - name: Contribute
       href: contribute.md
     - name: Related documentation
-      items: 
-      - name: Power Platform icons
-        href: /power-platform/guidance/icons?toc=/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
-      - name: Power Platform Well-Architected
-        href: /power-platform/well-architected
-      - name: Power Platform for developers
-        href: /power-platform/developer/get-started
-      - name: Application lifecycle management with Microsoft Power Platform
-        href: /power-platform/alm/
-      - name: Copilot Studio guidance
-        href: /microsoft-copilot-studio/guidance/
-      - name: "Architecting agent solutions: Principles and patterns"
-        href: /microsoft-copilot-studio/guidance/architecture/
- 
-
+      items:
+        - name: Power Platform icons
+          href: /power-platform/guidance/icons?toc=/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
+        - name: Power Platform Well-Architected
+          href: /power-platform/well-architected
+        - name: Power Platform for developers
+          href: /power-platform/developer/get-started
+        - name: Application lifecycle management with Microsoft Power Platform
+          href: /power-platform/alm/
+        - name: Copilot Studio guidance
+          href: /microsoft-copilot-studio/guidance/
+        - name: "Architecting agent solutions: Principles and patterns"
+          href: /microsoft-copilot-studio/guidance/architecture/
