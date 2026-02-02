@@ -64,7 +64,7 @@ To properly identify potential problems, the solution requires several knowledge
 ## Scenario details
 
 > [!NOTE]
-> This solution idea shows how the [Using AI Agents to build a spend anomaly identification agent](https://adoption.microsoft.com/en-gb/scenario-library/finance/spend-anomaly-identification-agent/) scenario from the [Microsoft Scenario Library](https://adoption.microsoft.com/en-gb/scenario-library/) could be architected. Refer to the details in the scenario library to learn more about the business impact and key performance indicators (KPIs).
+> This solution idea shows how the [Using AI Agents to build a spend anomaly identification agent](https://adoption.microsoft.com/scenario-library/finance/spend-anomaly-identification-agent/) scenario from the [Microsoft Scenario Library](https://adoption.microsoft.com/scenario-library/) could be architected. Refer to the details in the scenario library to learn more about the business impact and key performance indicators (KPIs).
 
 This agent automates the detection of suspicious or abnormal spend activity across financial transactions. It continuously pulls data from ERP systems, standardizes it for analysis, and applies rule‑based and pattern‑based anomaly detection to identify unusual vendor behavior, duplicate invoices, or abnormal payments. The agent then evaluates risk, checks for compliance with policies and regulations, and provides clear next‑step guidance to resolve issues and prevent recurrence.
 
