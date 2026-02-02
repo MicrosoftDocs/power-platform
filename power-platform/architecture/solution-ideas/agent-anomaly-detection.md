@@ -5,7 +5,7 @@ description: Learn how to automate fraud detection by identifying duplicate invo
 author: carcla
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 01/23/2026
+ms.date: 02/02/2026
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 search.audienceType:

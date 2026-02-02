@@ -23,6 +23,8 @@ Get the latest info about what's new and what's changed in the Power Platform an
 New in [Solution ideas](solution-ideas/index.md)
 
 - [​Build anomaly detection with Copilot Studio and Fabric](solution-ideas/agent-anomaly-detection.md)
+- [​​Streamline customer support service operations with a customer support assistance agent​](solution-ideas/customer-support-agent.md)
+- [​Improve new hire onboarding with a smart onboarding agent](solution-ideas/onboarding-agent.md)
 
 ## January 2026
 

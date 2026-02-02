@@ -54,6 +54,8 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 | [**Automate software bug reporting with Auto Triage AI Agent**](../solution-ideas/auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle issue creation and follow-up, reducing the burden on customer support teams and enhancing the customer experience. |
 | [**Intelligent cardiac triage and scheduling with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
 | [**​Build anomaly detection with Copilot Studio and Fabric​**](../solution-ideas/agent-anomaly-detection.md) | Learn how to automate fraud detection by identifying duplicate invoices, suspicious vendor activity, and policy violations, using Microsoft Copilot Studio and Fabric. |
+| [**​​Streamline customer support service operations with a customer support assistance agent**​](../solution-ideas/customer-support-agent.md) | Learn how to streamline customer support by building a Microsoft Copilot Studio conversational agent that integrates to Dynamics 365, Dataverse, and SharePoint. | 
+| [**​Improve new hire onboarding with a smart onboarding agent**](../solution-ideas/onboarding-agent.md) | Learn how to create a conversational onboarding agent in Copilot Studio that automates the onboarding process. | 
 
 ## Related resources
 

@@ -5,7 +5,7 @@ description: Learn how to create a conversational onboarding agent in Copilot St
 author: carcla
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 01/20/2025
+ms.date: 02/02/2026
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 ---  
@@ -14,8 +14,7 @@ ms.reviewer: jhaskett-msft
 
 Use Copilot Studio and Power Platform to create an AI-driven onboarding agent that automates the onboarding process by integrating multiple systems, creating custom learning recommendations, and answering candidate questions. Manual and fragmented onboarding processes lead to inefficiencies, delays, and inconsistent new-hire experiences. By using the custom agent approach, you can integrate multiple sources to provide a seamless experience for new hires and HR teams.
 
-> [!TIP]
-> This article provides example scenarios and a generalized example architecture to illustrate how to create a conversational agent for onboarding processes. You can modify the architecture example for many different scenarios and industries.
+[!INCLUDE [pp-arch-solution-idea-tip](../../includes/pp-arch-solution-idea-tip.md)]
 
 ## Architecture diagram
 
@@ -26,7 +25,7 @@ Use Copilot Studio and Power Platform to create an AI-driven onboarding agent th
 To properly respond to the new employee’s questions, the agent requires several knowledge sources. 
 
 - **Candidate information**: Information from the HR system about the candidate. The agent likely gets this information by using a connection to Human Resources Information System (HRIS) systems like Workday, SAP SuccessFactors, and other similar HR systems.
-- **New hire FAQ**: Common new hire questions and answers.
+- **New hire Frequently Asked Questions (FAQ)**: Common new hire questions and answers.
 - **Training guidance**: The training documents outline what is required for training the new employee. It's likely a combination of both common training on company policies and role-specific training depending on their specific position. The agent uses this knowledge to create custom learning plans based on their role, team, and required skills.
 - **New hire process**: This information outlines the steps the new employee takes, for example, completing required forms, training, selecting employee devices, and more. The agent uses this knowledge to prepare a step-by-step plan for the employee onboarding.
 
@@ -40,7 +39,7 @@ To properly respond to the new employee’s questions, the agent requires severa
 
 ## Components
 
-[​​**Power Platform environment**](/power-platform/admin/environments-overview): Contains the Power Platform resources such as the agent built in Copilot Studio, and any supporting Power Apps that implement the human in the loop user experience. Move these resources from one environment to another (for example, from dev to test) by using Dataverse solutions. 
+[​​**Power Platform environment**](/power-platform/admin/environments-overview): Contains the Power Platform resources such as the agent built in Copilot Studio, and any supporting Power Apps that implement the human in the loop user experience. Use [solutions](/microsoft-copilot-studio/authoring-solutions-overview) to move these resources from one environment to another, for example, development to test.
 
 ​[**Copilot Studio agents**](/microsoft-copilot-studio): Use Copilot Studio to implement the agents in the solution. The primary agent, the Onboarding Agent, interacts with users directly or it can trigger autonomously. While multiple agents aren't required for this scenario, you can use them to break up the agent into more manageable components. For example, an Onboarding Learning agent could handle all the learning plan related tasks. 
 
@@ -73,7 +72,7 @@ The agent delivers value by:
 
 ### Reliability
 
-**Design your workload to avoid unnecessary complexity**: By allocating the responsibilities between the agents and the custom connectors, the solution can ensure that it avoids unnecessary complexity. For example, creating this solution as a single solution with all the instructions for onboarding in a single agent could make the primary agent complex. Evaluate your onboarding process and if there's enough complexity in any single area, consider if multiple agents would result in reduced complexity. However, breaking down the process into too many agents likely results in more complexity. Evaluate your process and adjust your agent composition accordingly. 
+**Design your workload to avoid unnecessary complexity**: By allocating the responsibilities between the agents and the custom connectors, you can avoid unnecessary complexity. For example, creating this solution as a single solution with all the instructions for onboarding in a single agent could make the primary agent complex. Evaluate your onboarding process and if there's enough complexity in any single area, consider if multiple agents would result in reduced complexity. However, breaking down the process into too many agents likely results in more complexity. Evaluate your process and adjust your agent composition accordingly. 
 
 **​Test for resiliency and availability**: With multiple integrated systems, it's important to implement error handling and transient fault handling for any interactions with those systems that might affect the onboarding process. For example, in situations where the user might be affected by the transient error and the agent isn't able to complete the interaction with the user, if it's an important interaction, you could handle the error by using an implement automation to follow up with the user later once the problem is resolved. 
 
@@ -81,11 +80,11 @@ The agent delivers value by:
 
 ### Operational Excellence
 
-**Adopt safe deployment practices**: Standardize deployment of any changes to the apps and agents by using automated deployment processes, such as pipelines. Promote the application to production only after testing changes. Power Platform custom connectors are also solution components and deploy alongside the apps and agents. However, keep them in their own Dataverse solution. Agents can also live in their own solution separate from the applications and custom connectors. However, this separation can increase the complexity of the deployment. Keep them separate to support the need to deliver the agents on a separate timeline from the application.  
+**Adopt safe deployment practices**: Standardize deployment of any changes to the apps and agents by using automated deployment processes, such as pipelines. Promote the application to production only after testing changes. Power Platform custom connectors are also solution components and deploy alongside the apps and agents. However, keep them in their own Dataverse solution. Agents can also live in their own solution separate from the applications and custom connectors. However, this separation can increase the complexity of the deployment. Keep them separate to support the need to deliver the agents on a separate timeline from the application. Learn more: [Establish an application lifecycle management strategy](/microsoft-copilot-studio/guidance/alm)
 
-**​Automate all tasks that don't benefit from the insight and adaptability of human intervention**: Measuring the accuracy, relevancy, and quality of answers to questions is an important ongoing activity. Copilot Studio allows creating test sets that simulate real-world scenarios for the agent. By using the evaluation capability, you can automate and repeat this process as you deploy changes, as models retire and are replaced, or during other situations where you want to make sure your agent is answering user queries successfully. 
+**Automate all tasks that don't benefit from the insight and adaptability of human intervention**: Measuring the accuracy, relevancy, and quality of answers to questions is an important ongoing activity. Copilot Studio allows creating test sets that simulate real-world scenarios for the agent. By using the [evaluation capability](/microsoft-copilot-studio/analytics-agent-evaluation-intro), you can automate and repeat this process as you deploy changes, as models retire and are replaced, or during other situations where you want to make sure your agent is answering user queries successfully.
 
-**​Design and implement automation up front**: Test sets should be created early in the agent development to allow automated evaluation of the agents in your solution. Early on, you might not know all the tests you need for the agent. Copilot Studio can generate test sets from your configured knowledge sources.​ 
+**Design and implement automation up front**: [Create test sets](/microsoft-copilot-studio/analytics-agent-evaluation-create) early in the agent development to allow automated evaluation of the agents in your solution. Early on you might not know all the tests you need for the agent, so Copilot Studio can generate test sets from your configured knowledge sources.
 
 ### Performance Efficiency
 
@@ -110,6 +109,5 @@ The agent delivers value by:
 - [Power Platform Well-Architected](/power-platform/well-architected)
 - [Copilot Studio documentation](/microsoft-copilot-studio)
 - [Copilot Studio guidance](/microsoft-copilot-studio/guidance)
-- [Copilot Studio implementation guide (PDF)](https://aka.ms/CopilotStudioImplementationGuide)
 - [Knowledge sources summary](/microsoft-copilot-studio/knowledge-copilot-studio)
-- [Multi-agent orchestration and more | Microsoft Copilot Blog](https://www.microsoft.com/microsoft-copilot/blog/copilot-studio/multi-agent-orchestration-maker-controls-and-more-microsoft-copilot-studio-announcements-at-microsoft-build-2025)
+- [Explore multi-agent orchestration patterns](/microsoft-copilot-studio/guidance/multi-agent-patterns)
