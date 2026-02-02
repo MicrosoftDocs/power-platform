@@ -26,6 +26,11 @@ New in [Solution ideas](solution-ideas/index.md)
 - [​​Streamline customer support service operations with a customer support assistance agent​](solution-ideas/customer-support-agent.md)
 - [​Improve new hire onboarding with a smart onboarding agent](solution-ideas/onboarding-agent.md)
 
+Updated in [Solution ideas](solution-ideas/index.md)
+
+- [Ticket management system with Copilot Studio agents](solution-ideas/agent-ticket-and-refund.md) has been updated to incloude instructions that can be used as a starting point for creating this agent.
+- [Travel concierge using generative AI with Copilot Studio](solution-ideas/agent-travel-customer.md) has been updated to incloude instructions that can be used as a starting point for creating this agent.
+
 ## January 2026
 
 New in [Reference architectures](reference-architectures/index.md):
