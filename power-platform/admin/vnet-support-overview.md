@@ -111,7 +111,6 @@ After confirming your environment's region, ensure your enterprise policy and Az
 | UAE | uaenorth |
 | Korea | koreasouth, koreacentral |
 | Norway | norwaywest, norwayeast |
-| Singapore | southeastasia |
 | Sweden | swedencentral |
 | Italy | italynorth |
 | US Government | usgovtexas, usgovvirginia |
