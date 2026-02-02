@@ -26,7 +26,7 @@ For deprecation information of other products, see [Other deprecation articles](
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
 ## Removal of before-and-after field change values in audit events sent to Microsoft Purview
-Starting May 2026, Dataverse will no longer include before-and-after field change values in the audit events that are sent to Microsoft Purview. Audit events will continue to flow to Purview; however, the detailed field-level value changes will be excluded.
+Starting in May 2026, Dataverse will no longer include before-and-after field change values in the audit events that are sent to Microsoft Purview. Audit events will continue to flow to Purview; however, the detailed field-level value changes will be excluded.
 
 ### Why is this needed?
 To strengthen data protection and prevent potential data leaks.
@@ -49,7 +49,7 @@ Update your monitoring or downstream workflows to retrieve detailed field-level 
 
 ### More information
 -	No changes are required if your solution uses Dataverse audit logs as the source of truth.
--	Purview will continue receiving audit event metadata (such as who made changes, the date of the changes, and the tables affected), but field-level value changes will no longer be included.
+-	Purview continues receiving audit event metadata (such as who made changes, the date of the changes, and the tables affected), but field-level value changes will no longer be included.
 
 ## Deprecation of Copilot chat in model-driven apps
 Starting January 2026, [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) in environments not [enabled for Dynamics 365 apps](admin/create-environment.md#create-an-environment-with-a-database) will be deprecated. This feature was available as a preview feature in Power Apps.
