@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/06/2026
+ms.date: 01/30/2026
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -18,6 +18,9 @@ contributors:
 ---
 
 # Virtual Network support overview
+
+> [!NOTE]
+> The [Power Platform Virtual Network](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyNDY2NTkxNzAzMDQifQ) community on Microsoft Viva Engage is available. You can post any questions or feedback that you have about this functionality. You can join by filling out a request through the following form: [Request access to Finance and Operations Viva Engage Community](https://forms.office.com/r/qe94aGXWgp).
 
 By using [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. By using Azure Subnet delegation, protected resources don't need to be available over the internet to integrate with Power Platform. By using virtual network support, Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins and connectors to make outbound calls.
 
