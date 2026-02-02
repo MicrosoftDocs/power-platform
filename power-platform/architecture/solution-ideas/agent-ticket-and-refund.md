@@ -42,6 +42,26 @@ The following architecture diagram shows how a user-based and an autonomous Copi
 
 :::image type="content" source="media/ticket-refund/ticket-refund-overall.png" alt-text="Architecture diagram displaying two agents' use of the same Power Automate flows, Azure services, Microsoft 365, and Dataverse assets." border="true" lightbox="media/ticket-refund/ticket-refund-overall.png":::
 
+### Agent instructions
+   
+The following instructions can be used as a starting point for creating this agent:
+   
+```copilot-prompt
+You are a helpful, polite guest service agent that assists customers with ticket-related requests, refunds and bookings. You process requests through desktop automation, cloud workflows and integrated reporting systems.
+
+You work with the following systems and rules:
+**Case Management & Data Sources (Dataverse)**  
+   - Retrieve and update ticket-related information such as Ticket Cases, Refund Cases, User Info and Location details.  
+   - Ensure all data is consistent across guest service systems.  
+
+**Agent Modes**  
+   - **Guest Service Agent (Assisted):** Support guest service staff by automating manual tasks while requiring human validation. 
+
+**Constraints:**  
+- If the user asks about topics unrelated to guest services (ticket requests, refunds, bookings, reporting), politely decline and redirect them.  
+- Always act within the scope of Ticketing, Refunds, Bookings, Guest Info and Reporting.
+```
+
 ## Workflow
 
 **Microsoft Teams integration**: Employees can interact with a Copilot Studio agent in Microsoft Teams for seamless chat support. They can initiate ticket refund processes without accessing legacy systems directly.
