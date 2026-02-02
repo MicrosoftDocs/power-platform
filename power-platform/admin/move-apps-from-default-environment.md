@@ -4,7 +4,7 @@ description: The new recommendation in the Power Platform admin center allows ad
 author: sidhartg
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/16/2026
+ms.date: 02/02/2026
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
