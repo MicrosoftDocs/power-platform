@@ -4,14 +4,13 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/02/2026
+ms.date: 01/06/2026
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
-  - charlychien
   - pvayner
   - matapg007
   - wifun
@@ -112,6 +111,7 @@ After confirming your environment's region, ensure your enterprise policy and Az
 | UAE | uaenorth |
 | Korea | koreasouth, koreacentral |
 | Norway | norwaywest, norwayeast |
+| Singapore | southeastasia |
 | Sweden | swedencentral |
 | Italy | italynorth |
 | US Government | usgovtexas, usgovvirginia |
