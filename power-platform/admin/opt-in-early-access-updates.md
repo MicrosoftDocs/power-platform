@@ -27,17 +27,15 @@ The Microsoft Power Platform and customer engagement apps teams deliver two [maj
 | Wave 1 | February through April |
 | Wave 2 | August through October |
 
-## Changes to early access for 2026
-
-### Legacy opt-in options removed
-The legacy opt-in options (**Manage** and **Update Now**) are removed. To opt-in to early access features, you now have to use the monthly release channel.
+> [!NOTE]
+> The legacy opt-in options (**Manage** and **Update Now**) are removed. To opt-in to early access features, you now have to use the monthly release channel.
 
 ## How to get early access updates
 
-### Prerequisites
+### Before you begin
 - Have admin access to the Power Platform admin center.
 - Check the [Release Plans](/dynamics365/release-plans/) to see when features for your applications are scheduled for release. 
-- (**Recommended**:) Create a sandbox environment from production for testing.
+- **Recommended**: Create a sandbox environment from production for testing.
 
 > [!NOTE]
 > If you don't have a sandbox copy of your production environment, you can [create a copy](copy-environment.md) in the Power Platform admin center.
@@ -61,13 +59,13 @@ We recommend that you check:
 - Update internal readiness materials, such as training and communications, for your organization based on new features or user experiences.
 - If you find any problems during validation, such as regressions or functional or performance problems, contact [Support](get-help-support.md) or get help from [Dynamics 365 forum](https://community.dynamics.com/f).
 
-### Benefits of using release channels vs. legacy opt-in options
+## Benefits of using release channels vs. legacy opt-in options
 Once the **Release channel** setting is saved (as you did in #use-the-monthy-release-channel), your environment immediately behaves according to the setting chosen. Application deployment is no longer required to get the features. You can switch between the **Monthly channel** and **Semi-annual channel**. These settings persist for your environment and you no longer need to update them every release wave.
  
 > [!NOTE]
 > We recommend only adjusting your environment's release channel for preview features. However, you may change release channels for applications, solutions, or users. For more information about advanced options, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 
-### Release channels comparison
+## Release channels comparison
 You can choose to receive features on a **Monthly** basis or a **Semi-annual** basis.
 - **Monthly** features become visible every month. Learn more in [How to set channel](/power-apps/maker/model-driven-apps/channel-change).
 - **Semi-Annual** features become visible at [general availability deployment](general-availability-deployment.md#deployment-schedule) in April and October.
