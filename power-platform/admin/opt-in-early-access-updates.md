@@ -101,10 +101,6 @@ In October 2024, before cutting over to **Monthly channel**, Microsoft set **Aut
 
 Lower-level values can override the organization setting. For documentation on the ordering and hierarchy, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 
-#### Is there a plan to simplify the granular channel controls?
-
-There are no current plans to simplify the controls. While granular controls are helpful, they can introduce inconsistencies. 
-
 ### Deployment timing and schedules
 
 #### When are updates available for testing in the sandbox environment?
@@ -113,8 +109,8 @@ Monthly channel releases occur every month. New features can start previewing as
 
 |Release wave |Typical early access starts|Full range | Build range |
 |---|--|--|---|
-|April wave|Mid February| November - April| 9.2.25093 - 9.2.26033|
-|October wave|Mid August| May - October| 9.2.26033 - 9.2.26093|
+|April wave|Mid February| November - April| 9.2.25094 - 9.2.26033|
+|October wave|Mid August| May - October| 9.2.26034 - 9.2.26093|
 
 #### How can customers know when monthly releases are deployed?
 
