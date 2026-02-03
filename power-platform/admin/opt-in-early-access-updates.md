@@ -74,7 +74,6 @@ You can choose to receive features on a monthly basis or a semi-annual basis.
 |-|-|-|
 |New feature delivery | Monthly | General availability in April or October |
 |Preview feature update frequency | Weekly | No preview features |
-|Risk level | Higher  | Lower |
 |Best for| Dev/Test enviroments|Production environments|
 
 Learn more about release channels in [Release channels for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview).
