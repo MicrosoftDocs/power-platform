@@ -202,7 +202,7 @@ Returns a list of each environment across your tenant, with details of each (for
 ### Display details of your default environment
 
 ```powershell
-Get-AdminPowerAppEnvironment –Default
+Get-AdminPowerAppEnvironment -Default
 ```
 
 Returns the details for only the default environment of the tenant.
@@ -210,7 +210,7 @@ Returns the details for only the default environment of the tenant.
 ### Display details of a specific environment
 
 ```powershell
-Get-AdminPowerAppEnvironment –EnvironmentName 'EnvironmentName'
+Get-AdminPowerAppEnvironment -EnvironmentName 'EnvironmentName'
 ```
 
 > [!NOTE]
@@ -245,7 +245,7 @@ This command lists all Power Apps in your tenant that match the display name.
 ### Feature an application
 
 ```powershell
-Set-AdminPowerAppAsFeatured –AppName 'AppName'
+Set-AdminPowerAppAsFeatured -AppName 'AppName'
 ```
 
 Featured applications are grouped and pushed to the top of the list in the Power Apps mobile player.
@@ -269,7 +269,7 @@ The pipe `|` character between two cmdlets takes the output of the first cmdlet 
 ### Display the number of apps each user owns
 
 ```powershell
-Get-AdminPowerApp | Select –ExpandProperty Owner | Select –ExpandProperty displayname | Group
+Get-AdminPowerApp | Select -ExpandProperty Owner | Select -ExpandProperty displayname | Group
 ```
 
 You can combine native PowerShell functions with the Power Apps cmdlets to manipulate data even further. Here we use the Select function to isolate the Owner attribute (an object) from the Get-AdminApp object. We then isolate the name of the owner object by pipelining that output into another Select function. Finally, passing the second Select function output into the Group function returns a nice table that includes a count of each owner's number of apps.
@@ -287,7 +287,7 @@ Get-AdminPowerApp | Select -ExpandProperty EnvironmentName | Group | %{ New-Obje
 ### Download Power Apps user details
 
 ```powershell
-Get-AdminPowerAppsUserDetails -OutputFilePath '.\adminUserDetails.txt' –UserPrincipalName 'admin@bappartners.onmicrosoft.com'
+Get-AdminPowerAppsUserDetails -OutputFilePath '.\adminUserDetails.txt' -UserPrincipalName 'admin@bappartners.onmicrosoft.com'
 ```
 
 The previous command stores the Power Apps user details (basic usage information about the input user via their user principal name) in the specified text file. It creates a new file if there's no existing file with that name, and overwrites the text file if it already exists.
@@ -308,7 +308,7 @@ The export can take a while for tenants with a large number of Microsoft Power P
 ### Set logged in user as the owner of a canvas app
 
 ```powershell
-Set-AdminPowerAppOwner –AppName 'AppName' -AppOwner $Global:currentSession.userId –EnvironmentName 'EnvironmentName'
+Set-AdminPowerAppOwner -AppName 'AppName' -AppOwner $Global:currentSession.userId -EnvironmentName 'EnvironmentName'
 ```
 
 Changes the owner role of a Power App to the current user, and replaces the original owner as a "can view" role type.
@@ -345,7 +345,7 @@ Get-AdminPowerAppSharepointFormEnvironment 
 This command returns the `EnvironmentName` for the environment currently designated for newly created SharePoint custom forms. If an environment has never been designated, the default environment is returned.
 
 ```powershell
-Set-AdminPowerAppSharepointFormEnvironment –EnvironmentName 'EnvironmentName' 
+Set-AdminPowerAppSharepointFormEnvironment -EnvironmentName 'EnvironmentName' 
 ```
 
 This command designates the environment newly created SharePoint custom forms save to, instead of the default environment. Existing custom forms don't automatically migrate to the newly designated environment. Only production environment can be designated for SharePoint custom forms.  
@@ -446,7 +446,7 @@ Returns a list of all flows in the tenant.
 ### Display flow owner role details
 
 ```powershell
-Get-AdminFlowOwnerRole –EnvironmentName 'EnvironmentName' –FlowName 'FlowName'
+Get-AdminFlowOwnerRole -EnvironmentName 'EnvironmentName' -FlowName 'FlowName'
 ```
 
 Returns the owner details of the specified flow.
@@ -457,7 +457,7 @@ Returns the owner details of the specified flow.
 ### Display flow user details
 
 ```powershell
-Get-AdminFlowUserDetails –UserId $Global:currentSession.userId
+Get-AdminFlowUserDetails -UserId $Global:currentSession.userId
 ```
 
 Returns the user details regarding flow usage. In this example, we're using the user ID of the current logged in user of the PowerShell session as input.
@@ -465,7 +465,7 @@ Returns the user details regarding flow usage. In this example, we're using the 
 ### Remove flow user details
 
 ```powershell
-Remove-AdminFlowUserDetails –UserId 'UserId'
+Remove-AdminFlowUserDetails -UserId 'UserId'
 ```
 
 Deletes the details on a flow user completely from the Microsoft database. All flows the input user owns must be deleted before the flow user details can be purged.
