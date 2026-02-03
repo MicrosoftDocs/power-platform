@@ -2,7 +2,7 @@
 title: "Unified developer experience for finance and operations apps"
 description: Learn about developing code for finance and operations apps using the new Power Platform unified developer experience.
 author: pvillads
-ms.date: 06/21/2024
+ms.date: 02/02/2026
 ms.topic: overview
 ms.reviewer: pehecke
 ms.author: pvillads
