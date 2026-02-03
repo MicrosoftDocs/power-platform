@@ -5,7 +5,7 @@ description: Explore a cinema company's use of Copilot Studio agents to automate
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 04/17/2025
+ms.date: 02/03/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
@@ -43,15 +43,16 @@ The following architecture diagram shows how a user-based and an autonomous Copi
 :::image type="content" source="media/ticket-refund/ticket-refund-overall.png" alt-text="Architecture diagram displaying two agents' use of the same Power Automate flows, Azure services, Microsoft 365, and Dataverse assets." border="true" lightbox="media/ticket-refund/ticket-refund-overall.png":::
 
 ### Agent instructions
-   
+
 The following instructions can be used as a starting point for creating this agent:
-   
+
 ```copilot-prompt
-You are a helpful, polite guest service agent that assists customers with ticket-related requests, refunds and bookings. You process requests through desktop automation, cloud workflows and integrated reporting systems.
+You are a helpful, polite guest service agent that assists customers with ticket-related requests, refunds, and bookings. 
+You process requests through desktop automation, cloud workflows, and integrated reporting systems.
 
 You work with the following systems and rules:
 **Case Management & Data Sources (Dataverse)**  
-   - Retrieve and update ticket-related information such as Ticket Cases, Refund Cases, User Info and Location details.  
+   - Retrieve and update ticket-related information such as Ticket Cases, Refund Cases, User Info, and Location details.  
    - Ensure all data is consistent across guest service systems.  
 
 **Agent Modes**  
@@ -59,7 +60,7 @@ You work with the following systems and rules:
 
 **Constraints:**  
 - If the user asks about topics unrelated to guest services (ticket requests, refunds, bookings, reporting), politely decline and redirect them.  
-- Always act within the scope of Ticketing, Refunds, Bookings, Guest Info and Reporting.
+- Always act within the scope of Ticketing, Refunds, Bookings, Guest Info, and Reporting.
 ```
 
 ## Workflow
@@ -74,7 +75,7 @@ You work with the following systems and rules:
 
 ## Components
 
-The following steps describe the workflow that's shown in the example architecture diagrams.
+The following steps describe the workflow shown in the example architecture diagrams.
 
 1. **User interface**: Microsoft Teams provides easy access for employees to interact with a Copilot Studio agent, integrating with Power Platform for seamless chat support. This integration allows employees to start the ticket refund process directly in Teams through the agent, without accessing the legacy systems themselves. Learn more in [Connect and configure an agent for Teams and Microsoft 365](/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams).
 
@@ -145,7 +146,7 @@ Consider using the Microsoft 365 Agents SDK to utilize multiple agents. Learn mo
 
 Consolidate data on one centralized platform, such as Dataverse, to streamline access and management. Consider using virtual tables to integrate external data. Learn more in [Get started with virtual tables](/power-apps/developer/data-platform/virtual-entities/get-started-ve).
 
-### Responsible AI
+## Responsible AI
 
 AI systems should be fair, reliable, and secure, ensuring they treat all users equitably while maintaining consistent performance. Privacy and security are critical, with safeguards in place to protect sensitive information and prevent unauthorized access. Transparency matters, so users should understand how AI-driven decisions are made, and automation should include human oversight where necessary. This oversight is key, especially when working with autonomous agents. Accountability is essential, with clear ownership of AI operations to ensure ethical standards are met and continuously improved. Learn more in [Responsible AI considerations for intelligent application workloads](/power-platform/well-architected/intelligent-application/responsible-ai).
 

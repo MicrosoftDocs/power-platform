@@ -5,7 +5,7 @@ author: manuelap-msft
 #customer intent: As a business decision maker, I want to explore solution ideas for Power Platform and Copilot Studio so that I can address various business needs and gain inspiration.
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 07/15/2025
+ms.date: 02/03/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
@@ -34,5 +34,5 @@ Solution ideas are practical examples that showcase the versatility and power of
 | [**Automate software bug reporting process with Auto Triage AI Agent**](auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle issue creation and follow-up, reducing the burden on customer support teams and enhancing the customer experience. |
 | [**Intelligent cardiac triage and scheduling with Power Platform**](cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
 | [**​Build anomaly detection with Copilot Studio and Fabric​**](agent-anomaly-detection.md) | Learn how to automate fraud detection by identifying duplicate invoices, suspicious vendor activity, and policy violations, using Microsoft Copilot Studio and Fabric. |
-| [**​​Streamline customer support service operations with a customer support assistance agent**​](customer-support-agent.md) | Learn how to streamline customer support by building a Microsoft Copilot Studio conversational agent that integrates to Dynamics 365, Dataverse, and SharePoint. | 
-| [**​Improve new hire onboarding with a smart onboarding agent**](onboarding-agent.md) | Learn how to create a conversational onboarding agent in Copilot Studio that automates the onboarding process. | 
+| [**​​Streamline customer service with a customer support assistance agent**​](customer-support-agent.md) | Learn how to streamline customer support by building a Microsoft Copilot Studio conversational agent that integrates Dynamics 365, Dataverse, and SharePoint. |
+| [**​Improve the new hire experience with a smart onboarding agent**](onboarding-agent.md) | Learn how to create a conversational onboarding agent in Copilot Studio that automates the new hire onboarding process. |

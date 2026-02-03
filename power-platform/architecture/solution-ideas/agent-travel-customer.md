@@ -5,7 +5,7 @@ description: Explore a travel concierge solution that uses Copilot Studio to red
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 04/17/2025
+ms.date: 02/03/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
@@ -32,9 +32,9 @@ In this article, you learn about a travel agency that uses AI-driven solutions t
 :::image type="content" source="media/travel-agent/travel-agent-arch.png" alt-text="Architecture diagram of a call center solution that integrates Microsoft and other sources of data and knowledge with AI models and automated workflows." border="true" lightbox="media/travel-agent/travel-agent-arch.png":::
 
 ### Agent instructions
-   
+
 The following instructions can be used as a starting point for creating this agent:
-   
+
 ```copilot-prompt
 You are a helpful, polite customer service agent that assists customers with travel-related requests.
 You handle booking inquiries, documentation, route information, clothing or travel requirements, and balance checks.
@@ -99,7 +99,7 @@ The solution described in this article includes the following components.
 
 ### Other services
 
-[**Bing custom search**](/microsoft-copilot-studio/nlu-generative-answers-bing): A list of filtered locations from the public website to limit the information that's referred to when using generative AI.
+[**Bing custom search**](/microsoft-copilot-studio/nlu-generative-answers-bing): List of filtered locations from the public website to limit the information referred to when using generative AI.
 
 ### Processing
 
@@ -174,7 +174,7 @@ Request the customer's name at the start of the agent experience to build a pers
 
 Learn more in [Introduction to conversational experiences](/microsoft-copilot-studio/guidance/cux-overview) and [Recommendations for designing conversational user experiences](/power-platform/well-architected/experience-optimization/conversation-design).
 
-### Responsible AI
+## Responsible AI
 
 Ensure fair treatment across all customer segments by actively addressing bias and maintaining equity in every interaction. Transparently disclose data sources with appropriate links, enforce strict data privacy and security protocols, and incorporate human oversight to monitor these processes continuously. Learn more in [Responsible AI considerations for intelligent application workloads](/power-platform/well-architected/intelligent-application/responsible-ai).
 
