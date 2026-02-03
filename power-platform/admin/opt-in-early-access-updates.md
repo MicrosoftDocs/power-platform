@@ -207,7 +207,7 @@ The release channel (Monthly/Semi-Annual) primarily applies to model-driven apps
 
 #### When will release channels be available in GCC/GCC High/DoD?
 
-The rollout follows the [general availability deployment](https://learn.microsoft.com/power-platform/admin/general-availability-deployment) schedule for these stations.
+The rollout follows the [general availability deployment](general-availability-deployment.md) schedule for these stations.
 
 ### Support and issues
 
