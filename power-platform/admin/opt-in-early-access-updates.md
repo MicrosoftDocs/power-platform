@@ -114,28 +114,29 @@ Monthly channel releases occur every month. New features can start preview as so
 Example table:
 |Release wave |Typical early access starts|Full range | Build range |
 |-|-|-|-|
-|April Wave|Mid February| November -> April| 9.2.25093 -> 9.2.26033|
-|October Wave|Mid August| May -> October| 9.2.26033 -> 9.2.26093|
+|April Wave|Mid February| November - April| 9.2.25093 - 9.2.26033|
+|October Wave|Mid August| May - October| 9.2.26033 - 9.2.26093|
 
 #### How can customers know when monthly releases are deployed?
 
-Release plans show approximate deployment schedules. Deployments happen every weekend. The monthly 'release' is a feature flag being switched on for a region (station), not an actual deployment. Customers should continue using the version history resources they've been using to track updates and timings.
+Release plans show approximate deployment schedules. Deployments happen every weekend. The monthly release is a feature flag being switched on for a region (station), not an actual deployment. Customers should continue using the version history resources they've been using to track updates and timings.
 
 #### When are features available for testing before general availability?
 
 Applications are shipped approximately 6 weeks ahead of the Monthly/Semi-Annual enablement date. Around mid-February and mid-August, all apps should have features available in all stations. This timing allows for thorough testing:
-- Customers in NAM station have about 8 weeks of testing duration
-- Environments in Station 1 (Early Release Cycle) can test monthly features for 5 weeks before reaching Station 2, and 8 weeks before reaching Station 5
-- Testing within the same station provides a 4-week preview between feature availability to feature enablement
-For more information, check [monthly-release-schedule](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/channel-overview#monthly-release-schedule)
+- Customers in NAM station have about 8 weeks of testing duration.
+- Environments in Station 1 (early release cycle) can test monthly features for 5 weeks before reaching Station 2, and 8 weeks before reaching Station 5.
+- Testing within the same station provides a 4-week preview between feature availability to feature enablement.
+
+For more information, check [monthly-release-schedule](/power-apps/maker/model-driven-apps/channel-overview#monthly-release-schedule).
 
 #### What happens to environments after a release wave becomes generally available?
 
-**Monthly** channel environments continue to receive updates and have monthly features enabled.
+**Monthly channel** environments continue to receive updates and have monthly features enabled.
 
-**Semi-Annual** channel environments are automatically enabled to view new features based on the regional location of your environment. See [General availability deployment](https://learn.microsoft.com/power-platform/admin/general-availability-deployment) for more information.
+**Semi-annual channel** environments are automatically enabled to view new features based on the regional location of your environment. See [General availability deployment](general-availability-deployment.md) for more information.
 
-Throughout a release wave, all environments are updated during one of the [maintenance windows](https://learn.microsoft.com/power-platform/admin/policies-communications#maintenance-timeline) over a weekend based on your environment's region. 
+Throughout a release wave, all environments are updated during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environment's region. 
 
 ### Controlling production environment updates
 
