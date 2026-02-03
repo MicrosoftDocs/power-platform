@@ -42,14 +42,14 @@ The Microsoft Power Platform and customer engagement apps teams deliver two [maj
 >
 > You might be able to create the copy as an [early release cycle environment](early-release.md), putting it first in line for new rollouts. This option is also known as _First Release_, _Station 1_, or _Station FRE_.
 
-### Use the monthy release channel
+### Use a release channel
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. In the navigation pane, select **Manage**.
 3. In the **Manage** pane, select **Environments**.
 4. On the **Environments** page, select the environment you want to update.
 5. Select **Settings**.
 6. On the **Settings** page, select **Product** > **Behavior**.
-7. Set the **Release channel** option to **Monthly channel**.
+7. Set the **Release channel** option to **Monthly channel** or **Semi-annual channel**.
 8. Select **Save**. Changes are applied immediately.
 
 ### Validation steps
@@ -60,14 +60,15 @@ We recommend that you check:
 - If you find any problems during validation, such as regressions or functional or performance problems, contact [Support](get-help-support.md) or get help from [Dynamics 365 forum](https://community.dynamics.com/f).
 
 ## Benefits of using release channels vs. legacy opt-in options
-Once the **Release channel** setting is saved (as you did in #use-the-monthy-release-channel), your environment immediately behaves according to the setting chosen. Application deployment is no longer required to get the features. You can switch between the **Monthly channel** and **Semi-annual channel**. These settings persist for your environment and you no longer need to update them every release wave.
+Once the **Release channel** setting is saved (as you did in #use-a-release-channel), your environment immediately behaves according to the setting chosen. Application deployment is no longer required to get the features. You can switch between the **Monthly channel** and **Semi-annual channel**. These settings persist for your environment and you no longer need to update them every release wave.
  
 > [!NOTE]
 > We recommend only adjusting your environment's release channel for preview features. However, you may change release channels for applications, solutions, or users. For more information about advanced options, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 
 ## Release channels comparison
 You can choose to receive features on a monthly basis or a semi-annual basis.
-- **Monthly channel** features become visible every month. Learn more in [How to set channel](/power-apps/maker/model-driven-apps/channel-change).
+
+- **Monthly channel** features become visible every month. Learn more in [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 - **Semi-annual channel** features become visible at [general availability deployment](general-availability-deployment.md#deployment-schedule) in April and October.
 
 | Capability |  Monthly channel | Semi-annual channel|
@@ -108,7 +109,7 @@ There are no current plans to simplify the controls. While granular controls are
 
 #### When are updates available for testing in the sandbox environment?
 
-Monthly channel releases occur every month. New features can start preview as soon as the following month after April/October wave releases.
+Monthly channel releases occur every month. New features can start preview as soon as the following month after April or October wave releases.
 
 |Release wave |Typical early access starts|Full range | Build range |
 |---|--|--|---|
@@ -121,11 +122,11 @@ Release plans show approximate deployment schedules. Deployments happen every we
 
 #### When are features available for testing before general availability?
 
-Applications are shipped approximately 6 weeks ahead of the **Monthly channel** or **Semi-annual channel** enablement date. Around mid-February and mid-August, all apps should have features available in all stations. This timing allows for thorough testing:
+Applications are shipped approximately six weeks ahead of the **Monthly channel** or **Semi-annual channel** enablement date. Around mid-February and mid-August, all apps should have features available in all stations. This timing allows for thorough testing:
 
-- Customers in the North America station have about 8 weeks of testing duration.
-- Environments in Station 1 (early release cycle) can test monthly features for 5 weeks before reaching Station 2, and 8 weeks before reaching Station 5.
-- Testing within the same station provides a 4-week preview between feature availability to feature enablement.
+- Customers in the North America station have about eight weeks of testing duration.
+- Environments in Station 1 (early release cycle) can test monthly features for five weeks before reaching Station 2, and eight weeks before reaching Station 5.
+- Testing within the same station provides a four week preview between feature availability to feature enablement.
 
 For more information, check [monthly-release-schedule](/power-apps/maker/model-driven-apps/channel-overview#monthly-release-schedule).
 
@@ -158,7 +159,7 @@ No. Customers can control feature visibility by switching between the **Monthly 
 
 No, the version number doesn't change. The setting only determines application feature visibility. The platform and application versions are the same across channels. 
 
-#### Will different channel settings cause issues with solution imports?
+#### Do different channel settings cause issues with solution imports?
 
 No. Environments in the same station should have very similar build numbers for the organization and installed applications. **Monthly channel** vs. **Semi-annual channel** doesn't change versions.  It only controls feature visibility. This shouldn't cause issues when importing solutions between environments with different channel settings.
 
@@ -166,7 +167,7 @@ No. Environments in the same station should have very similar build numbers for 
 
 #### Does the release channel impact ALM processes?
 
-The choice is left to the customer depending on their requirements&mdash;whether they want small changes throughout the year or two larger changes. Some organizations use the **Monthly channel** in dev/test environments and the **Semi-annual channel** in production environemnts. Review [Release channel for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview) for guidance on choosing the appropriate strategy.
+The choice is left to the customer depending on their requirements&mdash;whether they want small changes throughout the year or two larger changes. Some organizations use **Monthly channel** in dev/test environments and **Semi-annual channel** in production environemnts. Review [Release channel for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview) for guidance on choosing the appropriate strategy.
 
 #### Does Microsoft provide a free sandbox environment for testing updates?
 
@@ -176,25 +177,25 @@ No. You're responsible for creating a sandbox environment from a copy of the pro
 
 #### Does the Semi-annual channel mean no preview features?
 
-Yes, that's correct. Enviroments using the **Semi-annual channel** don't see preview features until they become generally available in April or October.
+Yes, that's correct. Enviroments using **Semi-annual channel** don't see preview features until they become generally available in April or October.
 
-#### If I switch from the Monthly channel to the Semi-annual channel, will features roll back?
+#### If I switch from Monthly channel to Semi-annual channel, will features roll back?
 
-Yes. Switching to from the **Semi-annual channel** reverts visibility of features that have general availability tied to the release wave. Many smaller features that are part of monthly releases go to genearl availability independently of release wave GA and remain visible.
+Yes. Switching from **Semi-annual channel** reverts visibility of features that have general availability tied to the release wave. Many smaller features that are part of monthly releases go to genearl availability independently of release wave and remain visible.
 
 #### How does the rollback feature work?
 
-Rollback is controlled through Feature Control Bits (FCBs) in the Unified Client Interface (UCI) in combination with org, app, solution, user, and browser settings. See [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change) for more information.  Application deployments are no longer needed to switch between Preview or General Availability features.
+Rollback is controlled through Feature Control Bits (FCBs) in the Unified Client Interface (UCI) in combination with org, app, solution, user, and browser settings. See [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change) for more information.  Application deployments are no longer needed to switch between preview or general availability features.
 
 ### Documentation and communication
 
-#### Will there be monthly documentation listing new and updated features?
+#### Is there monthly documentation listing new and updated features?
 
 Yes. Release plans are updated weekly as feature information becomes available: [Release plans for Dynamics 365, Power Platform, Cloud for Industry, and Copilot](/dynamics365/release-plans/).
 
-#### Will release documentation specify when features are available in Monthly vs. Semi-Annual channels?
+#### Does release documentation specify when features are available in Monthly vs. Semi-Annual channels?
 
-Yes. Each release plan under Sales, Service, ERP, Cloud for Industry, and Customer Engagement has a "What's new and planned" section with preview and GA dates. These dates are entered by each release manager. 
+Yes. Each release plan has a "What's new and planned" section with preview and general availability dates. These dates are entered by each release manager. 
 
 #### Are release notes still published as a single block twice a year?
 
@@ -214,7 +215,7 @@ The rollout follows the [general availability deployment](general-availability-d
 
 #### Can I skip or postpone an update?
 
-No. Deployments happen every week. The release channel isn't a deployment but a feature flag that turns on or off depending on your channel setting. To ensure you get the best quality of new features and capabilities, all customers are required to update to the latest release as scheduled.
+No. Deployments happen every week. The release channel isn't for deployment, but a feature flag that turns on or off depending on your channel setting. To ensure you get the best quality of new features and capabilities, all customers are required to update to the latest release, as scheduled.
 
 #### How do I report issues with updates?
 
@@ -223,7 +224,7 @@ Create a [support ticket](https://dynamics.microsoft.com/support/). Include the 
 ## Related content
 
 [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule)<br />
-[Dynamics 365 and Microsoft Power Platform Release Plans ](/dynamics365/release-plans/)<br />
+[Dynamics 365 and Microsoft Power Platform Release Plans](/dynamics365/release-plans/)<br />
 [Policies and communications](policies-communications.md)
   
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
