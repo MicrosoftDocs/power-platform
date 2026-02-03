@@ -99,7 +99,7 @@ The agent delivers value by:
 
 **​Optimize logic**: An agent's instructions are a form of logic. They provide the instructions for how the agent should guide the user through the onboarding process. As your instructions in a single agent become more complex, the agent might not be as precise in following the instructions or might become confused by overlapping instructions. Move some of the responsibility to another agent, a tool such as a prompt, a custom connector, or Model Context Protocol (MCP). Use agent flows when you need a more deterministic path of execution for the onboarding process. Agents see agent flows as tools and can include instructions for using specific tools. For example, you can implement Create Learning Plan as an agent flow that takes as input the role and uses connectors to the learning management system to identify and enroll the candidate in the appropriate courses.​
 
-**Test performance**: Along with testing for functionality and failures, it's important to test and develop a baseline for performance and evaluate it as part of your release cycle. Learn more in [Design a testing strategy](/microsoft-copilot-studio/guidance/sec-gov-phase4).
+**Test performance**: Along with testing for functionality and failures, it's important to test and develop a baseline for performance and evaluate it as part of your release cycle. Learn more in [Design a testing strategy for your agents](/microsoft-copilot-studio/guidance/sec-gov-phase4).
 
 ## Responsible AI
 

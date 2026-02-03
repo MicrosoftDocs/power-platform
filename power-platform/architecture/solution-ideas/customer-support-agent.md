@@ -95,7 +95,7 @@ This agent reduces handling time, improves resolution accuracy, and lowers the n
 
 ​**​Optimize logic**: An agent's instructions are a form of logic. They provide the instructions for how the agent should guide the user through the onboarding process. As your instructions in a single agent become more complex, the agent might not be as precise in following the instructions or might become confused by overlapping instructions. Move some of the responsibility to another agent, a tool such as a prompt, a custom connector, or Model Context Protocol (MCP). Use agent flows when you need a more deterministic path of execution for the onboarding process. Agents see agent flows as tools and can include instructions for using specific tools. For example, you can implement Create Product as an agent flow that collects customer product information and prepares a return material authorization (RMA) using connectors to integrate with the organization's other systems to complete the RMA process.​
 
-**Test performance**: Along with testing for functionality and failures, test and develop a baseline for performance. Evaluate it as part of your release cycle. Learn more in [Design a testing strategy](/microsoft-copilot-studio/guidance/sec-gov-phase4).
+**Test performance**: Along with testing for functionality and failures, test and develop a baseline for performance. Evaluate it as part of your release cycle. Learn more in [Design a testing strategy for your agents](/microsoft-copilot-studio/guidance/sec-gov-phase4).
 
 ### Experience Optimization
 
