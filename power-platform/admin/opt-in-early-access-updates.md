@@ -111,9 +111,8 @@ There are no current plans to simplify the controls. While granular controls are
 
 Monthly channel releases occur every month. New features can start preview as soon as the following month after April/October wave releases.
 
-Example table:
 |Release wave |Typical early access starts|Full range | Build range |
-|-|-|-|-|
+|---|--|--|---|
 |April Wave|Mid February| November - April| 9.2.25093 - 9.2.26033|
 |October Wave|Mid August| May - October| 9.2.26033 - 9.2.26093|
 
@@ -166,7 +165,7 @@ No. Environments in the same station should have very similar build numbers for 
 
 #### Does the release channel impact ALM processes?
 
-The choice is left to the customer depending on their requirements—whether they want small changes throughout the year or two larger changes. Some organizations use Monthly channel in dev/test and Semi-Annual in production. Review [Release channel for your model-driven app](https://learn.microsoft.com/power-apps/maker/model-driven-apps/channel-overview) for guidance on choosing the appropriate strategy.
+The choice is left to the customer depending on their requirements—whether they want small changes throughout the year or two larger changes. Some organizations use Monthly channel in dev/test and Semi-Annual in production. Review [Release channel for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview) for guidance on choosing the appropriate strategy.
 
 #### Does Microsoft provide a free sandbox environment for testing updates?
 
@@ -184,13 +183,13 @@ Yes. Switching to Semi-Annual will revert visibility of features that have a GA 
 
 #### How does the rollback feature work?
 
-Rollback is controlled through Feature Control Bits (FCBs) in the Unified Client Interface (UCI) in combination with org, app, solution, user, and browser settings. See [Changing release channels for model-driven apps](https://learn.microsoft.com/power-apps/maker/model-driven-apps/channel-change) for more information.  Application deployments are no longer needed to switch between Preview or General Availability features.
+Rollback is controlled through Feature Control Bits (FCBs) in the Unified Client Interface (UCI) in combination with org, app, solution, user, and browser settings. See [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change) for more information.  Application deployments are no longer needed to switch between Preview or General Availability features.
 
 ### Documentation and communication
 
 #### Will there be monthly documentation listing new and updated features?
 
-Yes. Release plans are updated weekly as feature information becomes available: [Release plans for Dynamics 365, Power Platform, Cloud for Industry, and Copilot](https://learn.microsoft.com/dynamics365/release-plans/).
+Yes. Release plans are updated weekly as feature information becomes available: [Release plans for Dynamics 365, Power Platform, Cloud for Industry, and Copilot](/dynamics365/release-plans/).
 
 #### Will release documentation specify when features are available in Monthly vs. Semi-Annual channels?
 
