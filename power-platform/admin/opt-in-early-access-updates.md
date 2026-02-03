@@ -99,7 +99,7 @@ Yes. The **Monthly channel** release channel setting persists for your environme
 
 #### How does the org-level setting interact with app-level settings?
 
-The organization setting can be overridden by lower-level values. For official documentation on the ordering and hierarchy, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
+The organization setting can be overridden by lower-level values. For documentation on the ordering and hierarchy, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 
 #### Is there a plan to simplify the granular channel controls?
 
@@ -113,8 +113,8 @@ Monthly channel releases occur every month. New features can start preview as so
 
 |Release wave |Typical early access starts|Full range | Build range |
 |---|--|--|---|
-|April Wave|Mid February| November - April| 9.2.25093 - 9.2.26033|
-|October Wave|Mid August| May - October| 9.2.26033 - 9.2.26093|
+|April wave|Mid February| November - April| 9.2.25093 - 9.2.26033|
+|October wave|Mid August| May - October| 9.2.26033 - 9.2.26093|
 
 #### How can customers know when monthly releases are deployed?
 
@@ -122,8 +122,9 @@ Release plans show approximate deployment schedules. Deployments happen every we
 
 #### When are features available for testing before general availability?
 
-Applications are shipped approximately 6 weeks ahead of the Monthly/Semi-Annual enablement date. Around mid-February and mid-August, all apps should have features available in all stations. This timing allows for thorough testing:
-- Customers in NAM station have about 8 weeks of testing duration.
+Applications are shipped approximately 6 weeks ahead of the **Monthly channel** or **Semi-annual channel** enablement date. Around mid-February and mid-August, all apps should have features available in all stations. This timing allows for thorough testing:
+
+- Customers in the North America station have about 8 weeks of testing duration.
 - Environments in Station 1 (early release cycle) can test monthly features for 5 weeks before reaching Station 2, and 8 weeks before reaching Station 5.
 - Testing within the same station provides a 4-week preview between feature availability to feature enablement.
 
@@ -141,31 +142,32 @@ Throughout a release wave, all environments are updated during one of the [maint
 
 #### How can customers minimize changes in production while still controlling when features are deployed?
 
-Features are no longer 'deployed' for April and October GA. To control when features appear in production:
-1. Switch from "Semi-Annual" to "Monthly" at the environment level (equivalent to the early opt-in approach)
-2. After confirming the build number is YY033 (April) or YY093 (October), switch back to "Semi-Annual"
+Features are no longer _deployed_ for April and October gernal availability. To control when features appear in production:
 
-Previously, we recommended opting in production environments at least 1 week before the GA date. Release channels provide the same control through channel switching.
+1. Switch from the **Semi-annual channel** to the **Monthly channel** at the environment level, which is equivalent to the early opt-in approach.
+2. After confirming the build number is YY033 (April) or YY093 (October), switch back to the **Semi-annual channel**.
+
+Previously, we recommended opting in production environments at least one week before the general availability date. Release channels provide the same control through channel switching.
 
 #### Are customers locked into regional deployment dates?
 
-No. Customers can control feature visibility by switching between Monthly and Semi-Annual channels. However, platform deployments occur on the standard schedule. General availability dates follow the schedule: Wave 1 (April) uses build 9.2.26033.* and Wave 2 (October) uses build 9.2.26093.*.
+No. Customers can control feature visibility by switching between the **Monthly channel** and the **Semi-annual channel**. However, platform deployments occur on the standard schedule. General availability dates follow the schedule: Wave 1 (April) uses build 9.2.26033.* and Wave 2 (October) uses build 9.2.26093.*.
 
 ### Version numbers and compatibility
 
-#### Does the environment database version number change between Monthly and Semi-Annual channels?
+#### Does the environment database version number change between the Monthly and Semi-Annual channels?
 
 No, the version number doesn't change. The setting only determines application feature visibility. The platform and application versions are the same across channels. 
 
 #### Will different channel settings cause issues with solution imports?
 
-No. Environments in the same station should have very similar build numbers for the organization and installed applications. Monthly vs. Semi-Annual doesn't change versions.  It only controls feature visibility. This shouldn't cause issues when importing solutions between environments with different channel settings.
+No. Environments in the same station should have very similar build numbers for the organization and installed applications. **Monthly channel** vs. **Semi-annual channel** doesn't change versions.  It only controls feature visibility. This shouldn't cause issues when importing solutions between environments with different channel settings.
 
-### ALM and environment strategies
+### Application lifecycle management (ALM) and environment strategies
 
 #### Does the release channel impact ALM processes?
 
-The choice is left to the customer depending on their requirements—whether they want small changes throughout the year or two larger changes. Some organizations use Monthly channel in dev/test and Semi-Annual in production. Review [Release channel for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview) for guidance on choosing the appropriate strategy.
+The choice is left to the customer depending on their requirements&mdash;whether they want small changes throughout the year or two larger changes. Some organizations use the **Monthly channel** in dev/test environments and the **Semi-annual channel** in production environemnts. Review [Release channel for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview) for guidance on choosing the appropriate strategy.
 
 #### Does Microsoft provide a free sandbox environment for testing updates?
 
@@ -173,13 +175,13 @@ No. You're responsible for creating a sandbox environment from a copy of the pro
 
 ### Channel behavior and feature visibility
 
-#### Does Semi-Annual channel mean no preview features?
+#### Does the Semi-annual channel mean no preview features?
 
-Yes, that's correct. Semi-Annual channel environments don't see preview features until they become generally available in April or October.
+Yes, that's correct. Enviroments using the **Semi-annual channel** don't see preview features until they become generally available in April or October.
 
-#### If I switch from Monthly to Semi-Annual, will features roll back?
+#### If I switch from the Monthly channel to the Semi-annual channel, will features roll back?
 
-Yes. Switching to Semi-Annual will revert visibility of features that have a GA tied to the release wave. Many smaller features that are part of monthly releases go GA independently of release wave GA and remain visible.
+Yes. Switching to from the **Semi-annual channel** reverts visibility of features that have general availability tied to the release wave. Many smaller features that are part of monthly releases go to genearl availability independently of release wave GA and remain visible.
 
 #### How does the rollback feature work?
 
