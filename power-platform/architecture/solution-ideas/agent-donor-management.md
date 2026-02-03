@@ -30,73 +30,73 @@ The solution orchestrates donor engagement across Microsoft 365 and Power Platfo
 
 End-to-end flow:
 
-1.  Inbound inquiry or donor document captured
+1. Inbound inquiry or donor document captured
 
-    1.  Users submit inquiries via email (Outlook) or upload donor-related documents to SharePoint or OneDrive.
+    1. Users submit inquiries via email (Outlook) or upload donor-related documents to SharePoint or OneDrive.
 
-    1.  The system captures files and messages in the Data Sources tier for downstream processing.
+    1. The system captures files and messages in the Data Sources tier for downstream processing.
 
-1.  Data ingestion into the Transactional Data Layer
+1. Data ingestion into the Transactional Data Layer
 
-    1.  The system imports selected content and metadata into Dataverse where it becomes part of the state-of-machine and source of truth (for example, inquiries, donor forms, donor records).
+    1. The system imports selected content and metadata into Dataverse where it becomes part of the state-of-machine and source of truth (for example, inquiries, donor forms, donor records).
 
-    1.  Extracted content and validation status are stored alongside core donor entities.
+    1. Extracted content and validation status are stored alongside core donor entities.
 
-1.  AI processing of content
+1. AI processing of content
 
-    1.  The system invokes AI Builder to:
+    1. The system invokes AI Builder to:
 
-        1.  Perform sentiment analysis on inquiries.
+        1. Perform sentiment analysis on inquiries.
 
-        1.  Run custom form processing for donation forms (for example, paper or digital), extracting structured fields (donor details, amounts, consent flags).
+        1. Run custom form processing for donation forms (for example, paper or digital), extracting structured fields (donor details, amounts, consent flags).
 
-    1.  The AI outputs (entities, sentiments, confidence) are persisted back to Dataverse and attached to the originating records for traceability.
+    1. The AI outputs (entities, sentiments, confidence) are persisted back to Dataverse and attached to the originating records for traceability.
 
-1.  Agent orchestration for triage and actions
+1. Agent orchestration for triage and actions
 
-    1.  Copilot Studio hosts the Donor Engagement Agent that:
+    1. Copilot Studio hosts the Donor Engagement Agent that:
 
-        1.  Reads the enriched records and applied AI outputs.
+        1. Reads the enriched records and applied AI outputs.
 
-        1.  Determines next-best actions (for example, classify inquiry, create donor task, schedule follow-up, initiate approval).
+        1. Determines next-best actions (for example, classify inquiry, create donor task, schedule follow-up, initiate approval).
 
-        1.  Interacts with users for clarifications (if necessary), and posts updates back to the Donor Management app.
+        1. Interacts with users for clarifications (if necessary), and posts updates back to the Donor Management app.
 
-    1.  You can publish the agent to Microsoft 365 Copilot for conversational access via Teams or Outlook.
+    1. You can publish the agent to Microsoft 365 Copilot for conversational access via Teams or Outlook.
 
-1.  Operational processing via Power Automate
+1. Operational processing via Power Automate
 
-    1.  The system invokes Power Automate cloud flows to:
+    1. The system invokes Power Automate cloud flows to:
 
-        1.  Create Approvals (Microsoft 365 Approvals) for donation processing or data changes.
+        1. Create Approvals (Microsoft 365 Approvals) for donation processing or data changes.
 
-        1.  Notify staff in Microsoft Teams with context and deep links to records.
+        1. Notify staff in Microsoft Teams with context and deep links to records.
 
-        1.  Call connected systems (for example, SAP Finance) for donor payment processing or reconciliation.
+        1. Call connected systems (for example, SAP Finance) for donor payment processing or reconciliation.
 
-    1.  Flow outcomes (approved or declined, errors) are written back to Dataverse.
+    1. Flow outcomes (approved or declined, errors) are written back to Dataverse.
 
-1.  Donor Management app experiences
+1. Donor Management app experiences
 
-    1.  Users manage donors via a Power Apps model-driven app:
+    1. Users manage donors via a Power Apps model-driven app:
 
-        1.  Entities: Donor, Donation, Inquiry, Tasks, Approvals, Communication Logs.
+        1. Entities: Donor, Donation, Inquiry, Tasks, Approvals, Communication Logs.
 
-        1.  Views and dashboards show status (AI sentiment, processing stage, approvals pending).
+        1. Views and dashboards show status (AI sentiment, processing stage, approvals pending).
 
-    1.  Responses from the agent and flows appear within the app and in Teams posts.
+    1. Responses from the agent and flows appear within the app and in Teams posts.
 
-1.  User notifications and collaboration
+1. User notifications and collaboration
 
-    1.  Users receive Teams notifications, Approvals requests, and Copilot-powered summaries.
+    1. Users receive Teams notifications, Approvals requests, and Copilot-powered summaries.
 
-    1.  Staff can approve, comment, or escalate directly in Microsoft 365, with changes syncing to Dataverse.
+    1. Staff can approve, comment, or escalate directly in Microsoft 365, with changes syncing to Dataverse.
 
-1.  Governance, security, and compliance
+1. Governance, security, and compliance
 
-    1.  Information Security and Governance policies are enforced across data sources, Dataverse, AI Builder, Copilot Studio, and connected systems (DLP, environment roles, audit, retention).
+    1. Information Security and Governance policies are enforced across data sources, Dataverse, AI Builder, Copilot Studio, and connected systems (DLP, environment roles, audit, retention).
 
-    1.  All actions are logged against the core records for traceability and compliance.
+    1. All actions are logged against the core records for traceability and compliance.
 
 ## Scenario details
 
@@ -136,7 +136,7 @@ This architecture delivers an AI-powered donor management solution built on Micr
 
 - [**SharePoint**](/sharepoint/) & [**OneDrive**](/onedrive/): Store donor documents. Chosen for collaboration and Power Automate triggers over Azure Blob Storage.
 
-- [**Teams**](/microsoft-teams/group-chat-software/) & [**Approvals**](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3): Enable collaboration and decision-making. Selected for native integration over custom adaptive cards.
+- [**Teams**](/microsoftteams/) & [**Approvals**](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3): Enable collaboration and decision-making. Selected for native integration over custom adaptive cards.
 
 - [**SAP Connector**](/power-platform/sap/connect/connect-power-platform-and-sap/): Integrates payment processing. Chosen for supported RFC/BAPI integration over robotic process automation (RPA) or OData alternatives.
 
