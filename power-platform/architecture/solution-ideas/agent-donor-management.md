@@ -122,23 +122,23 @@ This architecture delivers an AI-powered donor management solution built on Micr
 
 ## Components
 
-- [**Power Automate**](power-platform/products/power-automate): Automates donor workflows across apps and services. Chosen for native integration with Microsoft 365, preferred over Logic Apps for low-code simplicity.
+- [**Power Automate**](/power-platform/products/power-automate): Automates donor workflows across apps and services. Chosen for native integration with Microsoft 365, preferred over Logic Apps for low-code simplicity.
 
-- [**Dataverse**](power-platform/dataverse): Serves as the secure system of record for donor data. Selected for governance and relational capabilities over SQL or SharePoint lists.
+- [**Dataverse**](/power-platform/dataverse): Serves as the secure system of record for donor data. Selected for governance and relational capabilities over SQL or SharePoint lists.
 
-- [**AI Builder**](ai-builder/overview): Provides sentiment analysis and form processing. Chosen for low-code AI integration, with Azure AI considered for complex Optical Character Recognition (OCR).
+- [**AI Builder**](/ai-builder/overview): Provides sentiment analysis and form processing. Chosen for low-code AI integration, with Azure AI considered for complex Optical Character Recognition (OCR).
 
-- [**Copilot Studio**](microsoft-365-copilot/microsoft-copilot-studio): Orchestrates donor engagement agents published to Teams and Microsoft 365 Copilot. Preferred over custom bots for governance and ease.
+- [**Copilot Studio**](/microsoft-365-copilot/microsoft-copilot-studio): Orchestrates donor engagement agents published to Teams and Microsoft 365 Copilot. Preferred over custom bots for governance and ease.
 
-- [**Power Apps**](power-platform/products/power-apps) (Model-Driven):  Delivers donor management UI. Selected for process-heavy, relational data scenarios over canvas apps.
+- [**Power Apps**](/power-platform/products/power-apps) (Model-Driven):  Delivers donor management UI. Selected for process-heavy, relational data scenarios over canvas apps.
 
-- [**Power Pages**](power-platform/products/power-pages): B2C platform enabling Online Donation transactions, and inquiries support.
+- [**Power Pages**](/power-platform/products/power-pages): B2C platform enabling Online Donation transactions, and inquiries support.
 
-- [**SharePoint**](microsoft-365/sharepoint/collaboration) & [**OneDrive**](https://www.microsoft.com/en-au/microsoft-365/onedrive/online-cloud-storage): Store donor documents. Chosen for collaboration and Power Automate triggers over Azure Blob Storage.
+- [**SharePoint**](/microsoft-365/sharepoint/collaboration) & [**OneDrive**](https://www.microsoft.com/en-au/microsoft-365/onedrive/online-cloud-storage): Store donor documents. Chosen for collaboration and Power Automate triggers over Azure Blob Storage.
 
-- [**Teams**](microsoft-teams/group-chat-software) & [**Approvals**](https://support.microsoft.com/en-au/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3): Enable collaboration and decision-making. Selected for native integration over custom adaptive cards.
+- [**Teams**](/microsoft-teams/group-chat-software) & [**Approvals**](https://support.microsoft.com/en-au/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3): Enable collaboration and decision-making. Selected for native integration over custom adaptive cards.
 
-- [**SAP Connector**](power-platform/sap/connect/connect-power-platform-and-sap): Integrates payment processing. Chosen for supported RFC/BAPI integration over robotic process automation (RPA) or OData alternatives.
+- [**SAP Connector**](/power-platform/sap/connect/connect-power-platform-and-sap): Integrates payment processing. Chosen for supported RFC/BAPI integration over robotic process automation (RPA) or OData alternatives.
 
 ## Considerations
 
