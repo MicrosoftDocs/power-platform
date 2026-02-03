@@ -28,7 +28,7 @@ The Microsoft Power Platform and customer engagement apps teams deliver two [maj
 | Wave 2 | August through October |
 
 > [!NOTE]
-> The legacy opt-in options (**Manage** and **Update Now**) are removed. To opt-in to early access features, you now have to use the monthly release channel.
+> The legacy opt-in options (**Manage** and **Update Now**) are removed. To opt-in to early access features, you now have to use the monthly or semi-annual release channel.
 
 ## How to get early access updates
 
@@ -66,9 +66,9 @@ Once the **Release channel** setting is saved (as you did in #use-the-monthy-rel
 > We recommend only adjusting your environment's release channel for preview features. However, you may change release channels for applications, solutions, or users. For more information about advanced options, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 
 ## Release channels comparison
-You can choose to receive features on a **Monthly** basis or a **Semi-annual** basis.
-- **Monthly** features become visible every month. Learn more in [How to set channel](/power-apps/maker/model-driven-apps/channel-change).
-- **Semi-Annual** features become visible at [general availability deployment](general-availability-deployment.md#deployment-schedule) in April and October.
+You can choose to receive features on a monthly basis or a semi-annual basis.
+- **Monthly channel** features become visible every month. Learn more in [How to set channel](/power-apps/maker/model-driven-apps/channel-change).
+- **Semi-annual channel** features become visible at [general availability deployment](general-availability-deployment.md#deployment-schedule) in April and October.
 
 | Capability |  Monthly channel | Semi-annual channel|
 |-|-|-|
@@ -87,19 +87,19 @@ This section provides answers to frequently asked questions about early access u
 
 #### Can I switch between release channels?
 
-Yes. You can switch between Monthly and Semi-Annual channels at any time. Changes are applied when you save, with no deployments needed.
+Yes. You can switch between the **Monthly channel** and **Semi-annual channel** at any time. Changes are applied when you save, with no deployments needed.
 
 #### Does an environment that previously opted in for early access updates automatically get the early access update of new releases?
 
-Yes. The "Monthly" release channel setting persists for your environment until you change it.
+Yes. The **Monthly channel** release channel setting persists for your environment until you change it.
 
 #### What is the "Auto" channel option and why does it exist?
 
-"Auto" was set to "Semi-Annual" in October 2024, before cutting over to "Monthly". Auto may be used differently in the future as a placeholder. Check the comments on "Auto" for each channel in [Changing release channels for model-driven apps](https://learn.microsoft.com/power-apps/maker/model-driven-apps/channel-change).
+**Auto** was set to **Semi-annual channel** in October 2024, before cutting over to **Monthly channel**. Auto may be used differently in the future as a placeholder. Check the comments on **Auto** for each channel in [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 
 #### How does the org-level setting interact with app-level settings?
 
-The organization setting can be overridden by lower-level values. For official documentation on the ordering and hierarchy, see [Changing release channels for model-driven apps](https://learn.microsoft.com/power-apps/maker/model-driven-apps/channel-change).
+The organization setting can be overridden by lower-level values. For official documentation on the ordering and hierarchy, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 
 #### Is there a plan to simplify the granular channel controls?
 
@@ -109,9 +109,10 @@ There are no current plans to simplify the controls. While granular controls are
 
 #### When are updates available for testing in the sandbox environment?
 
-Monthly channel releases occur every month.  New features can start preview as soon as the following month after April/October wave releases.
+Monthly channel releases occur every month. New features can start preview as soon as the following month after April/October wave releases.
+
 Example table:
-||Typical Early Access Starts|Full range | Build range |
+|Release wave |Typical early access starts|Full range | Build range |
 |-|-|-|-|
 |April Wave|Mid February| November -> April| 9.2.25093 -> 9.2.26033|
 |October Wave|Mid August| May -> October| 9.2.26033 -> 9.2.26093|
