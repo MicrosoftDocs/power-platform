@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 01/12/2026
+ms.date: 02/04/2026
 ---
 
 # Copilot Studio reference architectures and solution ideas
@@ -53,6 +53,9 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 | [**Ticket management system with Copilot Studio agents**](../solution-ideas/agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
 | [**Automate software bug reporting with Auto Triage AI Agent**](../solution-ideas/auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle issue creation and follow-up, reducing the burden on customer support teams and enhancing the customer experience. |
 | [**Intelligent cardiac triage and scheduling with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
+| [**​Build anomaly detection with Copilot Studio and Fabric​**](../solution-ideas/agent-anomaly-detection.md) | Learn how to automate fraud detection by identifying duplicate invoices, suspicious vendor activity, and policy violations, using Microsoft Copilot Studio and Fabric. |
+| [**​​Streamline customer service with a customer support assistance agent**​](../solution-ideas/customer-support-agent.md) | Learn how to streamline customer support by building a Microsoft Copilot Studio conversational agent that integrates Dynamics 365, Dataverse, and SharePoint. |
+| [**​Improve the new hire experience with a smart onboarding agent**](../solution-ideas/onboarding-agent.md) | Learn how to create a conversational onboarding agent in Copilot Studio that automates the new hire onboarding process. |
 
 ## Related resources
 
@@ -60,5 +63,5 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 - [Copilot Studio guidance](/microsoft-copilot-studio/guidance/)
 - [Copilot Studio implementation guide](https://aka.ms/CopilotStudioImplementationGuide) (PDF)
 - [Copilot Studio resources](https://aka.ms/CopilotStudio/resources)
-- [Introduction to Microsoft Power Platform for developers](/power-platform/developer/get-started)
-- [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/)
+- [Introduction to Microsoft Power Platform for developers](../../developer/get-started.md)
+- [Application lifecycle management (ALM) with Microsoft Power Platform](../../alm/index.yml)

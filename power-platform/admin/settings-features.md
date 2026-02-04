@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/19/2025
+ms.date: 01/30/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.custom: NewPPAC
@@ -391,12 +391,12 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 |---------|-------------|---------------|
 | Server and client conflict resolution.| When **On**, any conflicts detected between server and a client that's been offline must be resolved manually. Learn more in [Set up mobile offline for model-driven apps](/power-apps/mobile/setup-mobile-offline). | Off |
 
-## Recycle Bin (preview)
+## Deleted records (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-| Enable recycle bin for Dataverse tables  | When **On**, you can use recycle bin for Dataverse tables to restore deleted records. |    **Off**     |
-|Configure recovery time interval     | Recover table record data for up to *30* days after the record was deleted. Learn more in [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md).     |   **30**      |
+| Keep deleted Dataverse records.  | When **On**, you can use this feature for Dataverse tables to restore deleted records. |    **Off**     |
+|Keep deleted records (days).     | Recover table record data from 1 to up to *30* days after the record was deleted. Learn more: [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md)     |   **30**      |
