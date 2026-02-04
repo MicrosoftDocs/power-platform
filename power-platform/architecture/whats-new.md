@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 01/12/2026
+ms.date: 02/04/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -17,6 +17,19 @@ ms.custom:
 # What's new in the Power Platform and Copilot Studio Architecture Center
 
 Get the latest info about what's new and what's changed in the Power Platform and Copilot Studio Architecture Center.
+
+## February 2026
+
+New in [Solution ideas](solution-ideas/index.md):
+
+- [​Build anomaly detection with Copilot Studio and Fabric](solution-ideas/agent-anomaly-detection.md)
+- [​​Streamline customer service with a customer support assistance agent​](solution-ideas/customer-support-agent.md)
+- [​Improve the new hire experience with a smart onboarding agent](solution-ideas/onboarding-agent.md)
+
+Updated in [Solution ideas](solution-ideas/index.md):
+
+- [Ticket management system with Copilot Studio agents](solution-ideas/agent-ticket-and-refund.md) to include instructions that can be used as a starting point for creating the agent
+- [Travel concierge using generative AI with Copilot Studio](solution-ideas/agent-travel-customer.md) to include instructions that can be used as a starting point for creating the agent
 
 ## January 2026
 
