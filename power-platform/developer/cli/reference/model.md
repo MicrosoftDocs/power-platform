@@ -137,7 +137,7 @@ Specifies the target Dataverse. The value may be a Guid or absolute https URL. W
 
 #### `--output-file`
 
-Path to save the transpiled JavaScript output (defaults to <input>.compiled.js)
+Path to save the transpiled JavaScript output (defaults to `<input>.compiled.js`)
 
 [!INCLUDE [model-genpage-transpile-remarks](includes/model-genpage-transpile-remarks.md)]
 
