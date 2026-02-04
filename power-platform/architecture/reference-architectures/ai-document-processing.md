@@ -90,7 +90,7 @@ This architecture streamlines and automates document-intensive business processe
 
 **Efficient handling of document review**: The app that's built with Power Apps should be a single-purpose application that lets users select documents that need review and quickly identify what review is needed. Actions available to the user should be easy to understand and complete without the potential for introducing human error by accidentally selecting the wrong outcome.
 
-### Responsible AI
+## Responsible AI
 
 - **Fairness**: Document extraction models are trained with diverse data to minimize bias.
 

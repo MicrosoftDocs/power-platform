@@ -4,7 +4,7 @@ description: Learn how to use the Power Platform admin center to view restore de
 author: rijoshi1
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/02/2025
+ms.date: 02/04/2026
 ms.subservice: admin
 ms.author: rijoshi
 ms.reviewer: ellenwehrle
@@ -17,6 +17,7 @@ ms.contributors:
    - erjost
    - hnatuva
    - shahzorkhan123
+   - matp
 ms.custom: sfi-image-nochange
 ---
 
@@ -24,7 +25,7 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-As part of the regular business processes with Microsoft Dataverse, users often delete records or transactions either manually or systematically, either planned or by accident, via system processes, single selection, multiple selections, and bulk deletion. Retrieving deleted data is hard and often records aren't always recoverable. To address this limitation, the recycle bin is available to recover table record data from most types of delete scenarios within a specified configurable time frame.
+As part of the regular business processes with Microsoft Dataverse, users often delete records or transactions either manually or systematically, either planned or by accident, via system processes, single selection, multiple selections, and bulk deletion. Retrieving deleted data is hard and often records aren't always recoverable. To address this limitation, manage deleted records from this environment is available to recover table record data from most types of delete scenarios within a specified configurable time frame.
 
 Developers should read [Restore deleted records with code (preview)](/power-apps/developer/data-platform/restore-deleted-records) to learn how to interact with this feature using code.
 
@@ -34,33 +35,30 @@ Developers should read [Restore deleted records with code (preview)](/power-apps
 > - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - This feature is currently being deployed and might not yet be available in your region.
 > - During **preview**, storage from deleted records is not counted toward your organization’s capacity. Starting **GA**, this storage will be counted toward your organization’s database capacity.
-> - The recycle bin feature **isn't available** for [Dataverse for Teams](about-teams-environment.md), trial environments, or default environments.
+> - The deleted records feature **isn't available** for [Dataverse for Teams](about-teams-environment.md), trial environments, or default environments.
 
 ## Prerequisites
 
-To restore deleted Dataverse records, turn on the recycle bin in your environment.
+To restore deleted Dataverse records, turn on the **Keep deleted Dataverse records** setting in your environment.
 
-### Turn on the recycle bin
+### Turn on the deleted records feature
 
-Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin) and complete the steps.
-
-1. Select **Manage**.
-1. Select **Environments** and open the environment you want.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+1. Select **Manage** > **Environments** and then open the environment you want.
 1. Select **Settings** > **Product** > **Features**.
-1. Scroll down to view the **Recycle Bin** settings.
-
-   - Turn **On** the **Recycle Bin** setting.
-   - Specify the recovery time interval that allows admins to restore table records. You can restore table records up to *30* days after the record was deleted.
-  
+1. Scroll down to view the **Deleted records** area, and then enable the **Keep deleted Dataverse records** option.
+1. Once **Keep deleted Dataverse records** is enabled, enter the number of days, between 1 and 30, to keep deleted records.
 1. Select **Save**.
-1. Allow 30 minutes for the system to configure the recycle bin.
+1. Allow 30 minutes for the system to configure the deleted records feature.
 
 > [!NOTE]
-> Only records deleted after the recycle bin feature has been turned on can be restored.
+> Only records deleted after the feature has been turned on can be restored.
 
 ## View and restore the deleted records in Power Apps
 
-Viewing and acting on the deleted records in the Power Apps user experience is only available for System Administrators in the preview phase.
+You can proactively manage the storage used by deleted records. At any time, you can free up this storage by selecting the **Delete all records** option, which permanently removes all deleted items currently consuming storage.
+
+Viewing and acting on the deleted records is only available for System Administrators during the preview.
 
 ### Power Platform admin center
 
@@ -68,7 +66,7 @@ To restore deleted records from the admin center, sign in to the [Power Platform
 
 1. Select **Manage**.
 1. Select **Environments** and open the environment you want to view and restore deleted records.
-1. Go to **Settings** > **Data management** > **View Deleted Records**.
+1. Go to **Settings** > **Data management** > **Deleted Records**.
 1. You can view all the deleted records from all tables.
 1. Select one or more records you wish to restore, and then select **Restore** on the command bar.
 1. Select **OK** to confirm the action to restore.
@@ -79,31 +77,16 @@ To restore deleted records from the Power Platform Environment Settings app:
 
 1. Sign in to the Power Platform environment as a user with the system administrator security role.
 1. Select the **Power Platform Environment Settings** app, or select **Settings** > **Advanced Settings**.
-1. Go to **System** > **Data management** > **View Deleted Records**.
+1. Go to **System** > **Data management** > **Deleted Records**.
 1. You can view all the deleted records from all tables.
 1. Select one or more records to restore, and then select **Restore** on the command bar.
 1. Select **OK** to confirm the restoration.
 
-## Turn off recycle bin for a table
-
-> [!IMPORTANT]
->
-> - Starting February, 2026, recycle bin settings will be managed at the organization level for all tables. This change ensures consistent retention and simplifies administration. The option to turn off recycle bin at the individual table level will no longer be available. 
-
-To turn off the recycle bin for a table:
-
-1. Sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) as a user with the system administrator security role and verify the correct environment is selected.
-1. Select **Tables** and open the table you want. If Tables isn't in the side panel, select […More](/power-apps/maker/canvas-apps/intro-maker-portal#1--left-navigation-pane) and then select it.
-1. Select **Properties**, expand **Advanced options**, and clear **Enable recycle bin**. If the check box appears disabled, it means you don't have the permissions to enable the table for recycle bin, or the feature isn't turned on for the environment.
-1. **Config Interval** represents the number of days data is persisted in the Recycle Bin for the table. Setting this value to **-1** uses the environment-default value for this table.
-
-:::image type="content" source="media/disable-recyclebin-for-table.png" alt-text="Screenshot of the Disable Recycle Bin option for a table.":::
-
 ## Limitations
 
-### Recycle bin is only supported for delete operations
+### Deleted records is only supported for delete operations
 
-The recycle bin only supports delete operations, not updates.
+The deleted records feature only supports delete operations, not updates.
 
 ### Restore operation is for records
 
@@ -115,13 +98,13 @@ Some organizations add custom business logic that deletes records related to a r
 
 Records deleted via the table relationship cascade behavior process can be restored. For more information about cascade behavior, go to [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
 
-### Deleted records aren't shown after turning on the recycle bin
+### Deleted records aren't shown after turning on the deleted records feature
 
-Deleted records might not appear when the recycle bin feature is turned on. Verify that the **Enable RecycleBin for Organization** system job is turned on. Go to the Power Platform admin center, select the environment where this issue is happening, and select **Settings** > **Audit and logs** > **System jobs**. On the **System Jobs** page, search for **Enable RecycleBin**. Confirm that the **Status Reason** is **Succeeded**.
+Deleted records might not appear when the  feature is turned on. Verify that the **Enable RecycleBin for Organization** system job is turned on. Go to the Power Platform admin center, select the environment where this issue is happening, and select **Settings** > **Audit and logs** > **System jobs**. On the **System Jobs** page, search for **Enable RecycleBin**. Confirm that the **Status Reason** is **Succeeded**.
 
 If the **Status Reason** isn't **Succeeded** and it has been at least 30 minutes since enabling the feature, or despite the success state appearing correct, and you're not seeing the **Restore** option for deleted records, contact a [Microsoft support representative and create a support request](get-help-support.md).
 
-Deleted records only appear after recycle bin is turned on and for records deleted after enabling the feature. You cannot restore records deleted before recycle bin feature was enabled.
+Deleted records only appear after deleted records feature is turned on and for records deleted after enabling the feature. You cannot restore records deleted before deleted records feature was enabled.
 
 ### Records deleted through cascading behaviors aren't present in Deleted Records view
 
@@ -131,9 +114,9 @@ For more information about cascading behavior, go to [Configure table relationsh
 
 ## Tables not supported
 
-When the recycle bin is generally available, it will be enabled for most tables.
+When the deleted records feature is generally available, it will be enabled for most tables.
 
-Some tables won't support recycle bin. These tables include:
+Some tables won't support restoring deleted records. These tables include:
 
 - [Virtual tables](/power-apps/maker/data-platform/create-edit-virtual-entities)
 - Tables that store [solution components](../alm/solution-concepts-alm.md#solution-components)
@@ -141,11 +124,11 @@ Some tables won't support recycle bin. These tables include:
 
 During the preview, some tables with large numbers of columns aren't currently supported. Currently, the maximum number of columns is 400. This value might go higher or lower as we determine the correct threshold.
 
-Developers can run a [query that returns which tables are enabled for recycle bin](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-are-enabled-for-recycle-bin) in your environment.
+Developers can run a [query that returns which tables are enabled for deleted records feature](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-are-enabled-for-recycle-bin) in your environment.
 
-### Tables not currently supported for Recycle Bin
+### Tables not currently supported for the deleted records feature
 
-These tables are returned from the query to [detect which tables don't have recycle bin enabled](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-dont-have-recycle-bin-enabled) an uncustomized Dataverse environment as of August 2024.
+These tables are returned from the query to [detect which tables don't have deleted records feature enabled](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-dont-have-recycle-bin-enabled) an uncustomized Dataverse environment as of August 2024.
 
 Your environment might have different results. Tables customized by adding large numbers of columns might not be supported.
 
