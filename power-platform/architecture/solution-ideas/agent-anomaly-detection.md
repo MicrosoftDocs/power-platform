@@ -5,7 +5,7 @@ description: Learn how to automate fraud detection by identifying duplicate invo
 author: carcla
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 02/03/2026
+ms.date: 02/04/2026
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 search.audienceType:
@@ -21,7 +21,7 @@ Use Copilot Studio and Microsoft Fabric to automate fraud detection by identifyi
 
 ## Architecture diagram
 
-:::image type="content" source="media/agent-anomaly-detection/anomaly-detection-arch.png" alt-text="Architecture diagram of a solution that automates anomaly detection using Microsoft Copilot Studio and Fabric." border="true" lightbox="media/agent-anomaly-detection/anomaly-detection-arch.png":::
+:::image type="content" source="media/agent-anomaly-detection/anomaly-detection-arch.png" alt-text="Architecture diagram of finance anomaly detection workflow showing Dynamics 365, Fabric data flow, Copilot Studio agent, and alerting via Outlook and Teams." lightbox="media/agent-anomaly-detection/anomaly-detection-arch.png" border="true":::
 
 ## Knowledge sources
 
@@ -53,7 +53,7 @@ To properly identify potential problems, the solution requires several knowledge
 
 [**Power Platform environment**](/power-platform/admin/environments-overview): Contains the Power Platform resources such as the agent built in Copilot Studio. Use [solutions](/microsoft-copilot-studio/authoring-solutions-overview) to move resources from one environment to another, like development to test.
 
-[**Copilot Studio agents**](/microsoft-copilot-studio/): Use Copilot Studio to implement the agents in the solution. The primary agent, the Spend Anomaly agent, interacts with users directly or it can be triggered autonomously. Configure the Spend Anomaly agent with knowledge sources so it has organizational knowledge of the finance team's procedures for investigating and resolving anomalies. Use Copilot Studio's connect to external agent capability to connect the Spend Anomaly Data agent to the Spend Anomaly agent. Before establishing this connection, configure the Spend Anomaly Data agent in the Fabric Workspace.
+[**Copilot Studio agents**](/microsoft-copilot-studio/): Use Copilot Studio to implement the agents in the solution. The primary agent, the Spend Anomaly agent, interacts with users directly or it can be triggered autonomously. Configure the Spend Anomaly agent with knowledge sources so it has organizational knowledge of the finance team's procedures for investigating and resolving anomalies. Use Copilot Studio's [connect to external agent](/microsoft-copilot-studio/add-agent-copilot-studio-agent) capability to connect the Spend Anomaly Data agent to the Spend Anomaly agent. Before establishing this connection, configure the Spend Anomaly Data agent in the Fabric Workspace.
 
 [**Microsoft Fabric data agents**](/fabric/data-science/concept-data-agent): A data agent in Microsoft Fabric enables you to build your own conversational Q&A systems by using generative AI. A Fabric data agent makes data insights more accessible and actionable for everyone in your organization. Once configured, other Copilot Studio agents can use Fabric data agents to add specialized data capabilities to that agent. With a Fabric data agent, your team can have conversations in plain English about the data in Fabric OneLake and receive relevant answers. For this scenario, the Spend Anomaly Lakehouse and Eventhouse were configured for access by the data agent. The agent instructions were customized to tailor the agent for spend anomaly investigation interactions with users. Example prompts were also configured for common user queries.
 
@@ -82,7 +82,7 @@ The agent delivers operational and financial value by:
 
 ### Reliability
 
-​**Design your workload to avoid unnecessary complexity**: By allocating the responsibilities between the Copilot Studio agents and Microsoft Fabric, you avoid unnecessary complexity and use each platform's strengths. While you could implement the anomaly detection as part of the agent instructions and tools, Fabric provides a more natural fit for this type of processing. Having the agent query raw transaction data, apply detection logic, and calculate severity scores in real-time would likely result in complex prompts, slower response times, and potentially inconsistent results.
+​**Design your workload to avoid unnecessary complexity**: By allocating the responsibilities between the Copilot Studio agents and Microsoft Fabric, you avoid unnecessary complexity and use each platform's strengths. While you could implement the anomaly detection as part of the agent instructions and tools, Fabric provides a more natural fit for this type of processing. Having the agent query raw transaction data, apply detection logic, and calculate severity scores in real time would likely result in complex prompts, slower response times, and potentially inconsistent results.
 
 **Test for resiliency and availability**: With multiple integrated systems, it's important to implement error handling and transient fault handling for any interactions with those systems that might affect the process.
 
@@ -100,7 +100,7 @@ The agent delivers operational and financial value by:
 
 ​**Design to meet performance requirements**: Evaluate your solution performance and data volume requirements. The solution architecture includes both user interactive and autonomous agent processing. These processing types require different levels of performance scrutiny. User interactive logic is more sensitive to response time, while you're likely more concerned with the consumption of the autonomous agents than processing time. Performance testing should address the testing needs of both processing types. If any of the logic is implemented by using agent flows, evaluate whether they're eligible for express mode to speed up processing and reduce agent response wait time. Where necessary, do extra data processing in the Fabric workspace to optimize data operations and improve interactive query performance. Learn more in [Design a testing strategy for your agents](/microsoft-copilot-studio/guidance/sec-gov-phase4).
 
-**Optimize logic**: Agent instructions are a form of logic. They provide the instructions for how the agent should guide the user through the onboarding process. As your instructions in a single agent become more complex, the agent might not to be as precise in following the instructions or might become confused by overlapping instructions. Move some of the responsibility to another agent, a tool such as a prompt, a custom connector, or Model Context Protocol (MCP). Use agent flows when you need a more deterministic path of execution for the onboarding process. Agents see agent flows as tools and can include instructions for using specific tools. For example, you can implement Suspend Vendor as an agent flow that takes vendor information as input and uses connectors to the organization's other systems to suspend the vendor until investigation is complete.​ Learn more in [Use agent tools to extend, automate, and enhance your agents](/microsoft-copilot-studio/guidance/agent-tools).
+**Optimize logic**: Agent instructions are a form of logic. They provide the instructions for how the agent should guide the user. As your instructions in a single agent become more complex, the agent might not to be as precise in following the instructions or might become confused by overlapping instructions. Move some of the responsibility to another agent, a tool such as a prompt, a custom connector, or Model Context Protocol (MCP). Use agent flows when you need a more deterministic path of execution. Agents see agent flows as tools and can include instructions for using specific tools. For example, you can implement Suspend Vendor as an agent flow that takes vendor information as input and uses connectors to the organization's other systems to suspend the vendor until investigation is complete.​ Learn more in [Use agent tools to extend, automate, and enhance your agents](/microsoft-copilot-studio/guidance/agent-tools).
 
 **Test performance**: Along with testing for functionality and failures, it's important to test and develop a baseline for performance and evaluate it as part of your release cycle.
 

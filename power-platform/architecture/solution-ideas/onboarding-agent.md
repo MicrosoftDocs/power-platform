@@ -5,7 +5,7 @@ description: Learn how to create a conversational onboarding agent in Copilot St
 author: carcla
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 02/03/2026
+ms.date: 02/04/2026
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 ---  

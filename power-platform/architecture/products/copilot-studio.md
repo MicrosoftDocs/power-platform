@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 02/03/2026
+ms.date: 02/04/2026
 ---
 
 # Copilot Studio reference architectures and solution ideas

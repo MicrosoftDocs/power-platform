@@ -5,7 +5,7 @@ author: manuelap-msft
 #customer intent: As a business decision maker, I want to explore solution ideas for Power Platform and Copilot Studio so that I can address various business needs and gain inspiration.
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 02/03/2026
+ms.date: 02/04/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
