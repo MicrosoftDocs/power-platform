@@ -1,8 +1,8 @@
 ---
 title: "Power Apps Test Engine Power Fx Functions (preview)"
 description: "Describes Power Fx functions you can use with Power Apps Test Engine."
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
 ms.date: 05/27/2025
 ms.reviewer: jdaly

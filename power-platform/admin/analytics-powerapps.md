@@ -4,7 +4,7 @@ description: Admins can view Microsoft Power Apps analytics in the Power Platfor
 author: Zeffin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/08/2025
+ms.date: 01/27/2026
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -12,7 +12,8 @@ search.audienceType:
   - admin
 contributors:
   - yingchin
-  - isaacwinoto 
+  - isaacwinoto
+  - nsalazargonz
 ms.custom:
   - NewPPAC
   - sfi-ga-nochange
@@ -80,12 +81,6 @@ The current iteration of this specific report doesn't have a download report fea
 
 :::image type="content" source="media/powerapps-analytics-connector.png" alt-text="Shows the Power Apps analytics connector report." lightbox="media/powerapps-analytics-connector.png":::
 
-## How can I download the reports?
-
-The reports are built on Power BI. To download a report, select the ellipsis (…) of the specific KPI and select **Export data**.
-
-:::image type="content" source="media/powerapps-analytics-export-data.png" alt-text="Shows the Power Apps analytics export data page." lightbox="media/powerapps-analytics-export-data.png":::
-
 ## How do I change environments?
 
 You can change environments by selecting **Change Filter** on the page.
@@ -105,6 +100,7 @@ Some fields, such as the creator’s email address and the app or flow display n
 ### Related content
 
 [Tenant-level analytics (default)](tenant-level-analytics.md) <br />
-[Tenant-level Analytics for Power Apps (preview)](powerapps-analytics-reports.md)
+[Tenant-level Analytics for Power Apps (preview)](powerapps-analytics-reports.md) <br />
+[Set up Microsoft Power Platform self-service analytics to export inventory and usage data](self-service-analytics.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,6 +1,11 @@
 {
   "redirections": [
    {
+      "source_path": "power-platform/admin/tenant-wide-agent-inventory.md",
+      "redirect_url": "power-platform/admin/power-platform-inventory",
+      "redirect_document_id": "false"
+   },
+   {
       "source_path": "power-platform/admin/power-platform-api.md",
       "redirect_url": "powerplatform-api-getting-started",
       "redirect_document_id": "false"
@@ -1842,6 +1847,41 @@
     {
       "source_path": "power-platform/power-fx/formula-reference-cards.md",
       "redirect_url": "/power-platform/power-fx/formula-reference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/logging-power-automate.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/logging-powerapps.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/logging-power-pages.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-pages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/admin-activity-logging.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-platform-admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/activity-logs-dataverse-and-model-driven-apps.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-dataverse-model-driven-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/connector-events-power-platform.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-connectors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/dlp-activity-logging.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-platform-admin",
       "redirect_document_id": false
     },
     {
