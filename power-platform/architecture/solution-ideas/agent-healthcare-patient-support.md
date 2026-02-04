@@ -107,7 +107,7 @@ The patient access portal is designed with a responsive UI for easy use across d
 
 The Patient interactions agent integrates natural language processing and knowledge source retrieval to improve the accuracy of responses to patients' inquiries. Personalized patient interactions use AI Builder models to enhance satisfaction. Learn more in [Introduction to conversational experiences](/microsoft-copilot-studio/guidance/cux-overview) and [Recommendations for designing conversational user experiences](/power-platform/well-architected/experience-optimization/conversation-design).
 
-### Responsible AI
+## Responsible AI
 
 Privacy and security: Patient data is protected by encryption and complies with [Health Insurance Portability and Accountability Act (HIPAA)](/compliance/regulatory/offering-hipaa-hitech) requirements.
 
