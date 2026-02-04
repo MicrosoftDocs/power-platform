@@ -52,7 +52,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Ticket management system with Copilot Studio agents**](../solution-ideas/agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
 | [**Automate software bug reporting with Auto Triage AI Agent**](../solution-ideas/auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle issue creation and follow-up, reducing the burden on customer support teams and enhancing the customer experience. |
 | [**Intelligent cardiac triage and scheduling with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
-| [**AI-enabled donor management solution**](agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
+| [**AI-enabled donor management solution**](../solution-ideas/agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
 
 ## Related resources
 

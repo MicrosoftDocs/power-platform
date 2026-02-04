@@ -56,7 +56,7 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 | [**​Build anomaly detection with Copilot Studio and Fabric​**](../solution-ideas/agent-anomaly-detection.md) | Automate fraud detection by identifying duplicate invoices, suspicious vendor activity, and policy violations, using Microsoft Copilot Studio and Fabric. |
 | [**​​Streamline customer service with a customer support assistance agent**​](../solution-ideas/customer-support-agent.md) | Streamline customer support by building a Microsoft Copilot Studio conversational agent that integrates Dynamics 365, Dataverse, and SharePoint. |
 | [**​Improve the new hire experience with a smart onboarding agent**](../solution-ideas/onboarding-agent.md) | Create a conversational onboarding agent in Copilot Studio that automates the new hire onboarding process. |
-| [**AI-enabled donor management solution**](agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
+| [**AI-enabled donor management solution**](../solution-ideas/agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
 
 ## Related resources
 
