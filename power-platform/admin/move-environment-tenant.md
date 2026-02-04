@@ -84,7 +84,7 @@ Any Power Apps must be manually exported. We don't support the migration of cust
 An admin can also view or delete canvas apps from the list in the admin portal by completing the following steps:
 
 1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select the environment from **Manage**.
-2.	Under the **Resources** action, select **Power Apps** to view and delete them.
+1.	Under the **Resources** action, select **Power Apps** to view and delete them.
 
 ### Prepare Copilot Studio
 Any Copilot Studio chatbots must be manually exported. Some dependent components of chatbots must be manually reconfigured during or after the migration. For example, connections, environment variables, and custom connectors must be manually reconfigured during or after the migration.
@@ -147,22 +147,15 @@ Create a user-mapping file for the source environment to be transferred to the t
     
     1. Save the CSV file that has both full access users and administrative access users mapped.
 
-
 ## Migration using Power Platform admin center
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select the environment that needs to be moved. Tenant-to-tenant moves are supported for sandbox and production environments with Dataverse.
-1. The **Move environment** button appears in the action header. Select this button to open the environment move panel.
-
-:::image type="content" source="media/move-environment-tenant/moveenvironmentbutton.jpg" alt-text="The Move environment button is visible in the environment actions header.":::
-
-1. Enter the destination tenant ID and select **Submit Request**. The migration request is submitted for approval in the destination tenant.
-
-:::image type="content" source="media/move-environment-tenant/submitmoverequestpanel.jpg" alt-text="The Submit Move Request panel includes a field to enter the destination tenant ID, along with Submit Request and Cancel buttons.":::
-
+1. Select the **Move environment** button in the action bar. The **Request tenant to tenant move pane** appears.
+1. Enter the destination tenant ID  in the Target tenant ID field. Select **Submit request**.
+  
+    The migration request is submitted for approval in the destination tenant. A banner appears on the environment's details page, indicating that a request has been submitted to move the environment.
 1. A pending request banner appears on the environment hub.
-
-:::image type="content" source="media/move-environment-tenant/pendingmovebanner.jpg" alt-text="Screenshot of environment details page with a pending request to move environment banner at the top.":::
 
 ### Migration requests list
 Two notification banners appear on the environment list page: one(on top) if you have a request to approve as a destination tenant, and another(below) if you submitted a request as a source tenant.
