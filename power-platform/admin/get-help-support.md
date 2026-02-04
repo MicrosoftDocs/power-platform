@@ -18,9 +18,6 @@ contributors:
 ms.custom: sfi-image-nochange
 ---
 
-<!-- question from editor: this mentions three types of support plans (line 54). But the note that follows also mentions a Premier support plan, which isn't in that list, or on the page of support plans. Why is that? -->
-<!-- There is an old and new experience (line 71). How would users know which one they're seeing? -->
-
 # Get Support
 
 Admins can use the [Support experience](https://admin.powerplatform.microsoft.com/support/requests) in the [Power Platform admin center](admin-documentation.md) to get self-help solutions for an issue. If the issue can't be resolved through self-help, you can continue in the same **Support** experience to engage Microsoft support representatives using your support plan. If you need to link a plan with your account, you can enter your access ID and password before creating a support request. Learn more in [Add a support plan](#add-a-support-plan).
@@ -68,7 +65,7 @@ You can access self-help resources in the Support experience without a support p
 >    - If you have a non-Unified/Premier Support plan, verify the plan is active. For support information, see [Community forums](https://community.dynamics.com/forums/thread/).
 
 ## Request support
-There are two experiences depending on your tenant and scenario. Most users see the new Support agent, but some may see the older experience.
+There are two experiences depending on your tenant and scenario. Most users see the new Support agent, which says **Support agent** at the top of the pane, but some may see the older experience.
 
 While the Support agent is in preview, users can switch between experiences by selecting the ellipsis icon (**...**) in the upper-right corner of the **Support agent** pane. You may switch back to the Support agent by closing the pane and selecting **Get support** again, or by selecting the **New experience** toggle at the top of the older experience pane.
 
