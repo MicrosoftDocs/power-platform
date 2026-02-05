@@ -154,16 +154,12 @@ Create an OAuth 2.0 client in SAP to allow Azure API Management to obtain tokens
 
     1. Go to **OAuth 2.0 Client ID** and select the SAP system user: `OAUTH-JAMES`.
     1. Enter a description, and then select **Next**.
-
 1. On the **Client Authentication** page, select **Next**.
-
 1. On the **Grant Type Settings** page:
 
     - Go to **Trusted OAuth 2.0 IdP** and select the *Microsoft Entra ID* entry.
     - Select **Refresh Allowed**, and then select **Next**.
-
-1. On the **Scope Assignment** page, select **Add** and choose the OData services that Azure API Management uses (for example, `ZAPI_BUSINESS_PARTNER_0001`), and then select **Next**, save `ZAPI_BUSINESS_PARTNER_0001` as `SAPOAuthScope` as seen in the [named values table](#named-values-table).
-    
+1. On the **Scope Assignment** page, select **Add** and choose the OData services that Azure API Management uses (for example, `ZAPI_BUSINESS_PARTNER_0001`), and then select **Next**, save `ZAPI_BUSINESS_PARTNER_0001` as `SAPOAuthScope` as seen in the [named values table](#named-values-table).   
 1. Select **Finish**.
 
 For more information, see the [SAP documentation](https://help.sap.com/docs/SAP_NETWEAVER_750/3c4e8fc004cb4401a4fdd737f02ac2b9/ded106c66334432f963715cb0dc3165f.html) and [SAP's official documentation about SAP NETWEAVER](https://help.sap.com/docs/SAP_NETWEAVER_750/3c4e8fc004cb4401a4fdd737f02ac2b9/7e80a762e8b4441fb53b1f6d9bde4f4d.html) for additional details.
@@ -177,7 +173,7 @@ As a Microsoft Entra ID administrator, take these steps in the [Azure portal](ht
 1. Name and register the application:
     1. Select **Microsoft Entra ID** > **App registrations** > **New Registration**.
     1. Enter a **Name**, and then select **Register**. Save the client ID as `APIMAADRegisteredAppClientId` as seen in the named values table.
-    1. Go to **Certificates & secrets**, select **New client secret**, enter a description, and select **Add**. 1. Save the secret value as `APIMAADRegisteredAppClientSecret` as seen in the named values table.
+    1. Go to **Certificates & secrets**, select **New client secret**, enter a description, and select **Add**. Save the secret value as `APIMAADRegisteredAppClientSecret` as seen in the named values table.
 
 1. Configure API permissions:
    1. Select **API Permissions** > **Add a permission**.
@@ -187,7 +183,7 @@ As a Microsoft Entra ID administrator, take these steps in the [Azure portal](ht
    1. Return to the **API permissions** page and select **Grant admin consent** for both permissions.
 
 1. Expose the API for Azure API Management:
-   1.Select **Expose an API**.
+   1. Select **Expose an API**.
    1. Next to **Application ID URI**, select **Add**, accept the default value, and select **Save**. Save this value as "Microsoft Entra ID Resource URI (Application ID URI)" in the named values table.
    1. Select **Add a scope** and take these steps:
 
@@ -235,7 +231,7 @@ Import the SAP OData metadata into Azure API Management, and then apply an API M
    1. Upload the **SAP OData metadata XML** file.
    1. Enter a name and the API URL suffix. For example, `jms/sap/opu/odata/sap`.
    1. Save the **Base URL** as "Odata Base URI" in the named values table.
-   - Under **All APIs**, verify that your API (for example, API_BUSINESS_PARTNER_Entities) appears and that the entity sets and functions are listed.
+   1. Under **All APIs**, verify that your API (for example, API_BUSINESS_PARTNER_Entities) appears and that the entity sets and functions are listed.
 
 1. Configure named values:
 
