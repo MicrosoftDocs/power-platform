@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac application
 
-Commands for listing and installing available Dataverse applications from Marketplace
+Commands for listing and installing available Dataverse applications from Microsoft Marketplace
 
 [!INCLUDE [application-intro](includes/application-intro.md)]
 
@@ -26,7 +26,7 @@ Commands for listing and installing available Dataverse applications from Market
 |Command|Description|
 |---------|---------|
 |[pac application install](#pac-application-install)|Installs or updates Dataverse application to target environment|
-|[pac application list](#pac-application-list)|List available Dataverse applications from Marketplace|
+|[pac application list](#pac-application-list)|List available Dataverse applications from Microsoft Marketplace|
 
 
 ## pac application install
@@ -40,7 +40,7 @@ Installs or updates Dataverse application to target environment
 
 #### `--application-list` `-al`
 
-Location of the JSON file with list of the Dataverse applications from Marketplace to be installed
+Location of the JSON file with list of the Dataverse applications from Microsoft Marketplace to be installed
 
 #### `--application-name` `-an`
 
@@ -54,7 +54,7 @@ List available Dataverse applications for given environment (by ID or url); if n
 
 ## pac application list
 
-List available Dataverse applications from Marketplace
+List available Dataverse applications from Microsoft Marketplace
 
 [!INCLUDE [application-list-intro](includes/application-list-intro.md)]
 
@@ -77,7 +77,7 @@ Use one of these values:
 
 #### `--output` `-o`
 
-Location of the JSON file to be created with list of the Dataverse applications from Marketplace
+Location of the JSON file to be created with list of the Dataverse applications from Microsoft Marketplace
 
 [!INCLUDE [application-list-remarks](includes/application-list-remarks.md)]
 
