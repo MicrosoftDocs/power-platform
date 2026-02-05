@@ -154,7 +154,7 @@ Create a user-mapping file for the source environment to be transferred to the t
 1. In the **Manage** pane, select **Environments**.
 1. Select the environment that needs to be moved. Tenant-to-tenant moves are supported for sandbox and production environments with Dataverse.
 1. Select the **Move environment** button in the command bar. The **Request tenant to tenant move** pane appears.
-1. Enter the destination tenant ID in the Target tenant ID**** field. Select **Submit request**.
+1. Enter the destination tenant ID in the **Target tenant ID** field. Select **Submit request**.
   
     The migration request is submitted for approval in the destination tenant. A banner appears on the environment's details page, indicating that a request has been submitted to move the environment.
 
@@ -168,17 +168,18 @@ Notification banners appear at the top of an environment's details page when:
 
 1. Select **Review Requests** on the banner.
 1. A panel opens with a list of migration requests to review for approval.
-1. You can search for a migration request using the environment ID or request status.
 
-:::image type="content" source="media/move-environment-tenant/moverequestlistdt.jpg" alt-text="Screenshot of migration requests list with search bar, environment ID, target tenant ID, migration ID, request date, and pending status.":::
+    You can search for a migration request using the environment ID or request status.
 
-1. Select the environment ID to open the Approval/Rejection panel.
+    :::image type="content" source="media/move-environment-tenant/moverequestlistdt.jpg" alt-text="Screenshot of migration requests list with search bar, environment ID, target tenant ID, migration ID, request date, and pending status.":::
+
+1. Select the environment ID to approval or rejection the request.
 1. Review the request and approve or reject it.
 
-:::image type="content" source="media/move-environment-tenant/approverejectpanel.jpg" alt-text="Screenshot of tenant move request details panel with environment, tenant, and migration IDs, Approve and Deny buttons.":::
+    :::image type="content" source="media/move-environment-tenant/approverejectpanel.jpg" alt-text="Screenshot of tenant move request details panel with Approve and Deny buttons.":::
 
-> [!Note]
-> Requests expire after 7 days.
+    > [!Note]
+    > Requests expire after 7 days.
 
 #### Request to review as source tenant
 
