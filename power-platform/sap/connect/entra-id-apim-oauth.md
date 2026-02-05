@@ -67,7 +67,7 @@ This section lists named values to make the examples easier to follow. These val
 
 ## Step 1: Download local provider SAML metadata from SAP
 
-You need to set up a trust relationship between between SAP and Microsoft Entra ID using :::no-loc text="SAML 2.0":::. To get started, you first need to download the **SAP :::no-loc text="SAML 2.0"::: metadata XML file**. As an SAP Basis admin, take these steps in SAP GUI:
+Set up a trust relationship between SAP and Microsoft Entra ID using :::no-loc text="SAML 2.0":::. To get started, download the **SAP :::no-loc text="SAML 2.0"::: metadata XML file**. As an SAP Basis admin, take these steps in SAP GUI:
 
 1. Run the transaction code `SAML2` to open the SAP client-dependent :::no-loc text="SAML 2.0"::: configuration wizard. If you need to enable :::no-loc text="SAML 2.0":::, go to the [SAP Help Portal](https://help.sap.com/docs/SAP_COMMERCE_CRM/ceb87e45786c470494b445728cd1d8b8/3f4e8a6ca5024080a08a72640b13e75a.html).
 1. Select the **Local Provider** tab, and save the *SAP local provider name*, `AADSAPResource`, by following the sample value guidance in the [named values table](#named-values). It must be URI-compliant.
@@ -127,7 +127,7 @@ Configure SAP to allow Microsoft Entra ID to issue tokens for SAP OAuth 2.0 auth
 
 1. Run transaction `SAML2`.
 1. Select the **Trusted Provider** tab, and then choose **Oauth2.0 Identify provider**.
-1. Select **Add**, choose **Upload Metadata File**, and upload the **Federation Metadata XML** file and **Certificate (Base64)** that you downloaded from Microsoft Entra ID.
+1. Select **Add**, choose **Upload Metadata File**, and upload the **Federation Metadata XML** file and the **Certificate (Base64)** file that you downloaded from Microsoft Entra ID.
 1. Save the configuration, select **Edit**, and then select **Add**.
 1. Select **Email** as the **supported NameID format**, then **save** and **enable** the provider.
 
@@ -143,7 +143,7 @@ Create and map an SAP user that maps to the Microsoft Entra ID user :::no-loc te
 
 ## Step 5: Create an OAuth 2.0 client in SAP
 
-Create an OAuth 2.0 client in SAP to allow Azure API Management to obtain tokens on behalf of users. As an SAP Basis admin, take the following steps in SAP GUI:
+Create an OAuth 2.0 client in SAP so Azure API Management can get tokens on behalf of users. As an SAP Basis admin, follow these steps in SAP GUI:
 
 1. Run transaction `SOAUTH2`.
 1. Select **Create**.
@@ -157,7 +157,7 @@ Create an OAuth 2.0 client in SAP to allow Azure API Management to obtain tokens
     - Go to **Trusted OAuth 2.0 IdP** and select the *Microsoft Entra ID* entry.
     - Select **Refresh Allowed**, and then select **Next**.
 
-1. On the **Scope Assignment** page, select **Add** and choose the OData services that Azure API Management uses (for example, `ZAPI_BUSINESS_PARTNER_0001`), and then select **Next**, save `ZAPI_BUSINESS_PARTNER_0001` as `SAPOAuthScope` as seen in the [named values table](#named-values).
+1. On the **Scope Assignment** page, select **Add** and choose the OData services that Azure API Management uses (for example, `ZAPI_BUSINESS_PARTNER_0001`), and then select **Next**. Save `ZAPI_BUSINESS_PARTNER_0001` as `SAPOAuthScope` as seen in the [named values table](#named-values).
     
 1. Select **Finish**.
 
