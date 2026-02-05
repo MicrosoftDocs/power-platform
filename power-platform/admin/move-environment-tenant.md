@@ -159,7 +159,7 @@ Create a user-mapping file for the source environment to be transferred to the t
     The migration request is submitted for approval in the destination tenant. A banner appears on the environment's details page, indicating that a request has been submitted to move the environment.
 
 ### Migration requests list
-Notification banners appear at the top of an environment's details page when:
+Notification banners appear at the top of an **Environments** page when:
 
 - If you have a [request to approve as a destination tenant](#request-to-approve-as-destination-tenant).
 - If you submitted a [request as a source tenant](#request-to-review-as-source-tenant).
@@ -245,7 +245,7 @@ You can cancel the move at any time between submitting the request and completin
 
 :::image type="content" source="media/move-environment-tenant/cancelmovedialog.jpg" alt-text="Screenshot of the Cancel Move dialog in Power Platform admin center, prompting to confirm canceling the environment move request.":::
 
-## Migration using PowerShell
+## Migrate using PowerShell
 Before proceeding with the migration, make sure you review and complete the preparation process. After you've completed the preparation process, complete the following sections to migrate.
 
 ### Install PowerShell for Power Platform Administrators (both source and target admins) 
