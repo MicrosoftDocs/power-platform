@@ -109,7 +109,7 @@ The Patient interactions agent integrates natural language processing and knowle
 
 ## Responsible AI
 
-Privacy and security: Patient data is protected by encryption and complies with [Health Insurance Portability and Accountability Act (HIPAA)](/compliance/regulatory/offering-hipaa-hitech) requirements.
+**Privacy and security**: Patient data is protected by encryption and complies with [Health Insurance Portability and Accountability Act (HIPAA)](/compliance/regulatory/offering-hipaa-hitech) requirements.
 
 ## Contributors
 
