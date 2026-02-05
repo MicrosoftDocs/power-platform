@@ -3,6 +3,7 @@ title: Set up Microsoft Entra ID for SSO to SAP in OData connector
 description: Learn how to set up SAP and Azure API Management so that users can access SAP and make OData calls in Microsoft Power Platform using their Microsoft Entra ID.
 author: scottwoodallmsft
 ms.author: haowusky
+ms.author: hao.wu1
 contributors:
   - robinsonshields
   - microsoft-george
