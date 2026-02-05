@@ -185,15 +185,14 @@ Notification banners appear at the top of an **Environments** page when:
 
 1. Select **Review Request** on the banner.
 1. A panel opens with a list of migration requests you submitted.
-1. You can search for a migration request using the environment ID or request status.
 
-:::image type="content" source="media/move-environment-tenant/migrationrequestlist.jpg" alt-text="Screenshot of tenant move requests list with environment, tenant, and migration IDs, search bar, and status column.":::
+    You can search for a migration request using the environment ID or request status.
 
 ### Migration preparation after approval
 
-After the migration request is approved, a banner with the **Begin Move** button appears on the environment hub.
+After the migration request is approved, a banner with the **Begin Move** button appears on the environment's details page.
 
-:::image type="content" source="media/move-environment-tenant/beginmovebanner.jpg" alt-text="Screenshot of environment hub with green approval banner, Begin move and Cancel move buttons, and environment details panel.":::
+:::image type="content" source="media/move-environment-tenant/beginmovebanner.jpg" alt-text="Screenshot of the environment's details page with green approval banner, Begin move and Cancel move buttons.":::
 
 1. Select **Begin Move** to open the move environment panel, which displays the pre-move steps. The **Move environment** button in the action header also opens this panel.
 
