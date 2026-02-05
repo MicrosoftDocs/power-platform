@@ -201,8 +201,6 @@ After the migration request is approved, a banner with the **Begin Move** button
 1. Upload the user-mapping file for validation. The file must be named **usermapping.csv**.
 1. After the file is uploaded, select **Validate**. This triggers a validation lifecycle operation. Wait until the operation is complete.
 
-    :::image type="content" source="media/move-environment-tenant/validationelo.jpg" alt-text="Screenshot of PrepareTenantToTenant - validation lifecycle operation":::
-
 #### When validation fails
 
 If the validation operation fails, a banner with **Download Errors** appears. Download the error file, fix the issues in the user-mapping file, and re-validate using the steps mentioned above.
