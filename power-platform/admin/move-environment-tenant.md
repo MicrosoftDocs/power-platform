@@ -385,7 +385,7 @@ Complete the following steps:
 
 After successfully completing the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin), you may continue with the [Migrate the environment (source admin)](#migrate-the-environment-source-admin) procedure to migrate the environment. Perform the migration within the next seven days. If you don't complete the migration in the next seven days, you must start the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin) procedure again.
 
-## Migrate the environment (source admin)
+### Migrate the environment (source admin)
 The **MigrationId** can be viewed using the **TenantToTenant-ViewMigrationRequest** command in the source tenant.
 
 ```PowerShell
@@ -460,13 +460,13 @@ The following steps must be completed for each website in the environment.
 
 After completing all of the above steps and the migration, you may validate the environment in the target tenant. Later, you can delete the source environment in the Power Platform admin center.
 
-### Frequently asked questions
+## Frequently asked questions
 
-#### Are background operations enabled during tenant-to-tenant migration?
+### Are background operations enabled during tenant-to-tenant migration?
 
 Administration mode is enabled during tenant-to-tenant migration, therefore background operations don't run. Learn more in [Administration mode](admin-mode.md).
 
-#### Can all users of the Dataverse organization be migrated?
+### Can all users of the Dataverse organization be migrated?
 
 We can migrate all users of the Dataverse organization only if users exist in the destination tenant. For example:
 
@@ -474,25 +474,25 @@ We can migrate all users of the Dataverse organization only if users exist in th
 
 `user002@source.com`, `user002@destination.com`
 
-#### What environments are supported for migration?
+### What environments are supported for migration?
 
 Only production and sandbox environments are supported. Default, developer, trial, and Teams environments aren't supported.
 
-#### Will the environment physically move to the new tenant?
+### Will the environment physically move to the new tenant?
 
 No. The environment remains in place, but the Dataverse organization is moved to the destination tenant. It's no longer part of the source tenant and is managed under the new environment in the destination tenant. Data that is stored in Dataverse is still stored in the environment in your tenant. The orphan environment should therefore be deleted when the tenant-to-tenant move is completed and it's confirmed that the data is no longer needed in the source tenant. 
 
-#### Are there any components that aren't fully supported?
+### Are there any components that aren't fully supported?
 
 Learn more in [Before you get started](#before-you-get-started) to understand which components are supported and which components aren't supported.
 
-#### What happens to mailbox configurations?
+### What happens to mailbox configurations?
 
 If the mapped user (mentioned in the user-mapping file) has a mailbox in the destination tenant, it's automatically configured. Otherwise, manual reconfiguration is required.
 
-#### How do I initiate a migration?
+### How do I initiate a migration?
 
 The source tenant’s Dynamics 365 or Power Platform admin must submit a request using PowerShell commands with the environment name, ID, and tenant ID. Refer to the commands above.
 
-#### Is there a self-serve UI option?
+### Is there a self-serve UI option?
 Yes. After the TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID} is approved in the target tenant, a UI option to move the environment is available in the environment page. 
