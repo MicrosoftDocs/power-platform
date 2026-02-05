@@ -159,9 +159,10 @@ Create a user-mapping file for the source environment to be transferred to the t
     The migration request is submitted for approval in the destination tenant. A banner appears on the environment's details page, indicating that a request has been submitted to move the environment.
 
 ### Migration requests list
-Two notification banners appear on the environment list page: one(on top) if you have a request to approve as a destination tenant, and another(below) if you submitted a request as a source tenant.
+Notification banners appear at the top of an environment's details page when:
 
-:::image type="content" source="media/move-environment-tenant/listbanners.jpg" alt-text="Two notification banners appear on the environment list page: one(on top) if you have a request to approve as a destination tenant, and another(below) if you submitted a request as a source tenant.":::
+- If you have a [request to approve as a destination tenant](#request-to-approve-as-destination-tenant).
+- If you submitted a [request as a source tenant](#request-to-review-as-source-tenant).
 
 #### Request to approve as destination tenant
 
