@@ -3,7 +3,7 @@ title: Tenant-to-tenant migrations
 description: Learn about the impact of migrating an environment from one tenant to another. 
 ms.date: 02/05/2026
 ms.topic: concept-article
-author: gakulka
+author: SatishKumarkannanMs
 contributors:
   - SatishKumarkannanMs
   - val-bc 
@@ -15,7 +15,7 @@ ms.contributors:
   - ralinga
   - gakulka
 ms.subservice: admin
-ms.author: gakulka
+ms.author: fatihk
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -84,7 +84,7 @@ Any Power Apps must be manually exported. We don't support the migration of cust
 An admin can also view or delete canvas apps from the list in the admin portal by completing the following steps:
 
 1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select the environment from **Manage**.
-1.	Under the **Resources** action, select **Power Apps** to view and delete them.
+2.	Under the **Resources** action, select **Power Apps** to view and delete them.
 
 ### Prepare Copilot Studio
 Any Copilot Studio chatbots must be manually exported. Some dependent components of chatbots must be manually reconfigured during or after the migration. For example, connections, environment variables, and custom connectors must be manually reconfigured during or after the migration.
@@ -147,56 +147,51 @@ Create a user-mapping file for the source environment to be transferred to the t
     
     1. Save the CSV file that has both full access users and administrative access users mapped.
 
-## Migrate using the Power Platform admin center
+
+## Migration using Power Platform admin center
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Manage** in the navigation pane.
-1. In the **Manage** pane, select **Environments**.
 1. Select the environment that needs to be moved. Tenant-to-tenant moves are supported for sandbox and production environments with Dataverse.
-1. Select the **Move environment** button in the command bar. The **Request tenant to tenant move** pane appears.
-1. Enter the destination tenant ID in the **Target tenant ID** field. Select **Submit request**.
-  
-    The migration request is submitted for approval in the destination tenant. A banner appears on the environment's details page, indicating that a request has been submitted to move the environment.
+1. The **Move environment** button appears in the action header. Select this button to open the environment move panel.
+
+:::image type="content" source="media/move-environment-tenant/moveenvironmentdtlist.jpg" alt-text="Screenshot of Power Platform admin center with Environments list and Move environment option selected in the menu and move request for review banners.":::
+
+1. Enter the destination tenant ID and select **Submit Request**. The migration request is submitted for approval in the destination tenant.
+
+1. A pending request banner appears on the environment hub.
+
+:::image type="content" source="media/move-environment-tenant/pendingmovebanner.jpg" alt-text="Screenshot of environment details page with a pending request to move environment banner at the top.":::
 
 ### Migration requests list
-Notification banners appear at the top of an **Environments** page when:
-
-- If you have a [request to approve as a destination tenant](#request-to-approve-as-destination-tenant).
-- If you submitted a [request as a source tenant](#request-to-review-as-source-tenant).
+Two notification banners appear on the environment list page: one(on top) if you have a request to approve as a destination tenant, and another(below) if you submitted a request as a source tenant.
 
 #### Request to approve as destination tenant
 
 1. Select **Review Requests** on the banner.
 1. A panel opens with a list of migration requests to review for approval.
+1. You can search for a migration request using the environment ID or request status.
 
-    You can search for a migration request using the environment ID or request status.
-
-    :::image type="content" source="media/move-environment-tenant/moverequestlistdt.jpg" alt-text="Screenshot of migration requests list with search bar, environment ID, target tenant ID, migration ID, request date, and pending status.":::
-
-1. Select the environment ID to approval or rejection the request.
+1. Select the environment ID to open the Approval/Rejection panel.
 1. Review the request and approve or reject it.
 
-    :::image type="content" source="media/move-environment-tenant/approverejectpanel.jpg" alt-text="Screenshot of tenant move request details panel with Approve and Deny buttons.":::
-
-    > [!Note]
-    > Requests expire after 7 days.
+> [!Note]
+> Requests expire after 7 days.
 
 #### Request to review as source tenant
 
 1. Select **Review Request** on the banner.
 1. A panel opens with a list of migration requests you submitted.
-
-    You can search for a migration request using the environment ID or request status.
+1. You can search for a migration request using the environment ID or request status.
 
 ### Migration preparation after approval
 
-After the migration request is approved, a banner with the **Begin Move** button appears on the environment's details page.
+After the migration request is approved, a banner with the **Begin Move** button appears on the environment hub.
 
-:::image type="content" source="media/move-environment-tenant/beginmovebanner.jpg" alt-text="Screenshot of the environment's details page with green approval banner, Begin move and Cancel move buttons.":::
+:::image type="content" source="media/move-environment-tenant/beginmovebanner.jpg" alt-text="Screenshot of environment hub with green approval banner, Begin move and Cancel move buttons, and environment details panel.":::
 
-1. Select **Begin Move** to open the **Get ready for this tenant-to-tenant move** panel, which displays the pre-move steps. The **Move environment** button in the command bar also opens this panel.
+1. Select **Begin Move** to open the move environment panel, which displays the pre-move steps. The **Move environment** button in the action header also opens this panel.
 
-    :::image type="content" source="media/move-environment-tenant/prevaldationmovepanel.jpg" alt-text="Screenshot of 'Get ready for this tenant-to-tenant move' pane.":::
+:::image type="content" source="media/move-environment-tenant/prevaldationmovepanel.jpg" alt-text="Screenshot of Move panel with pre-move stepsshowing target tenant ID field, user mapping upload, usermapping.csv file, and Validate button.":::
 
 1. Upload the user-mapping file for validation. The file must be named **usermapping.csv**.
 1. After the file is uploaded, select **Validate**. This triggers a validation lifecycle operation. Wait until the operation is complete.
@@ -222,8 +217,6 @@ After validation succeeds, a banner with the **Move Environment** button appears
 
 1. Select **Move environment** to move the environment. This triggers the move environment lifecycle operation. Wait until the operation is complete.
 
-:::image type="content" source="media/move-environment-tenant/moveelo.jpg" alt-text="Screenshot of MigrateTenantToTenant - move lifecycle operation.":::
-
 ### Move completion
 
 After the move operation is complete:
@@ -235,14 +228,12 @@ After the move operation is complete:
 
 - A new environment is created in the destination tenant with the same name as the source environment and the moved Dataverse organization.
 
-:::image type="content" source="media/move-environment-tenant/movecompletedtlist1.jpg" alt-text="Screenshot of Power Platform admin center showing new environment testT2t1 in a Sandbox state with Dataverse enabled.":::
+:::image type="content" source="media/move-environment-tenant/movecompleteddt.jpg" alt-text="Screenshot of Power Platform admin center showing new environment testT2t1 in a Sandbox state with Dataverse enabled.":::
 
 ### Cancel move
 You can cancel the move at any time between submitting the request and completing the environment move. Select the Cancel Move button on the banner to open the Cancel Move dialog and cancel the move.
 
-:::image type="content" source="media/move-environment-tenant/cancelmovedialog.jpg" alt-text="Screenshot of the Cancel Move dialog in Power Platform admin center, prompting to confirm canceling the environment move request.":::
-
-## Migrate using PowerShell
+## Migration using PowerShell
 Before proceeding with the migration, make sure you review and complete the preparation process. After you've completed the preparation process, complete the following sections to migrate.
 
 ### Install PowerShell for Power Platform Administrators (both source and target admins) 
@@ -383,7 +374,7 @@ Complete the following steps:
 
 After successfully completing the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin), you may continue with the [Migrate the environment (source admin)](#migrate-the-environment-source-admin) procedure to migrate the environment. Perform the migration within the next seven days. If you don't complete the migration in the next seven days, you must start the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin) procedure again.
 
-### Migrate the environment (source admin)
+## Migrate the environment (source admin)
 The **MigrationId** can be viewed using the **TenantToTenant-ViewMigrationRequest** command in the source tenant.
 
 ```PowerShell
@@ -458,13 +449,13 @@ The following steps must be completed for each website in the environment.
 
 After completing all of the above steps and the migration, you may validate the environment in the target tenant. Later, you can delete the source environment in the Power Platform admin center.
 
-## Frequently asked questions
+### Frequently asked questions
 
-### Are background operations enabled during tenant-to-tenant migration?
+#### Are background operations enabled during tenant-to-tenant migration?
 
 Administration mode is enabled during tenant-to-tenant migration, therefore background operations don't run. Learn more in [Administration mode](admin-mode.md).
 
-### Can all users of the Dataverse organization be migrated?
+#### Can all users of the Dataverse organization be migrated?
 
 We can migrate all users of the Dataverse organization only if users exist in the destination tenant. For example:
 
@@ -472,25 +463,25 @@ We can migrate all users of the Dataverse organization only if users exist in th
 
 `user002@source.com`, `user002@destination.com`
 
-### What environments are supported for migration?
+#### What environments are supported for migration?
 
 Only production and sandbox environments are supported. Default, developer, trial, and Teams environments aren't supported.
 
-### Will the environment physically move to the new tenant?
+#### Will the environment physically move to the new tenant?
 
 No. The environment remains in place, but the Dataverse organization is moved to the destination tenant. It's no longer part of the source tenant and is managed under the new environment in the destination tenant. Data that is stored in Dataverse is still stored in the environment in your tenant. The orphan environment should therefore be deleted when the tenant-to-tenant move is completed and it's confirmed that the data is no longer needed in the source tenant. 
 
-### Are there any components that aren't fully supported?
+#### Are there any components that aren't fully supported?
 
 Learn more in [Before you get started](#before-you-get-started) to understand which components are supported and which components aren't supported.
 
-### What happens to mailbox configurations?
+#### What happens to mailbox configurations?
 
 If the mapped user (mentioned in the user-mapping file) has a mailbox in the destination tenant, it's automatically configured. Otherwise, manual reconfiguration is required.
 
-### How do I initiate a migration?
+#### How do I initiate a migration?
 
 The source tenant’s Dynamics 365 or Power Platform admin must submit a request using PowerShell commands with the environment name, ID, and tenant ID. Refer to the commands above.
 
-### Is there a self-serve UI option?
+#### Is there a self-serve UI option?
 Yes. After the TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID} is approved in the target tenant, a UI option to move the environment is available in the environment page. 
