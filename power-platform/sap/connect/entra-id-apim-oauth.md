@@ -1,17 +1,13 @@
 ---
 title: Set up Microsoft Entra ID for SSO to SAP in OData connector
 description: Learn how to set up SAP and Azure API Management so that users can access SAP and make OData calls in Microsoft Power Platform using their Microsoft Entra ID.
-author: scottwoodallmsft
-ms.author: haowusky
+author: haowusky
 ms.author: hao.wu1
 contributors:
-  - robinsonshields
-  - microsoft-george
   - tverhasselt
   - galitskyd
   - microsoft-dustin
   - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
   - EllenWehrle
   - MartinPankraz
@@ -20,7 +16,7 @@ ms.reviewer: ellenwehrle
 ms.service: power-platform
 ms.subservice: sap
 ms.topic: how-to
-ms.date: 02/04/2026
+ms.date: 02/05/2026
 search.audienceType:
   - admin
 # Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID, Azure API Management, and SAP for SSO from SAP OData connector so my users can access SAP data in Power Platform solutions without having to sign in multiple times to multiple services.
@@ -45,8 +41,8 @@ Before you begin the setup process, make sure you have the following resources i
 - Azure API Management (APIM) resource
 - Admin privileges:
   - SAP Basis admin
-  - Microsoft Entra ID – cloud or app admin
-  - Azure admin
+  - [Microsoft Entra ID – cloud or app admin](/entra/identity/role-based-access-control/permissions-reference)
+
 
 ## Named values
 
@@ -108,7 +104,7 @@ For more information, see [SAP's official documentation](https://help.sap.com/do
 
     1. Go to the **Attributes & Claims** section.
     1. Select **Edit**. 
-    1. Confirm that **Claim name Unique User Identifier (Name ID)** is set to `user.userprincipalname` :::no-loc text="(nameid=format:emailAddress)":::.
+    1. Confirm that **Claim name Unique User Identifier (Name ID)** is set to `user.userprincipalname` [`nameid`="{email address}"].
 
 1. Download the certificates:
 
@@ -160,7 +156,9 @@ Create an OAuth 2.0 client in SAP to allow Azure API Management to obtain tokens
 
     - Go to **Trusted OAuth 2.0 IdP** and select the *Microsoft Entra ID* entry.
     - Select **Refresh Allowed**, and then select **Next**.
-1. On the **Scope Assignment** page, select **Add** and choose the OData services that Azure API Management uses (for example, `ZAPI_BUSINESS_PARTNER_0001`), and then select **Next**, save `ZAPI_BUSINESS_PARTNER_0001` as `SAPOAuthScope` as seen in the [named values table](#named-values-table).   
+
+1. On the **Scope Assignment** page, select **Add** and choose the OData services that Azure API Management uses (for example, `ZAPI_BUSINESS_PARTNER_0001`), and then select **Next**, save `ZAPI_BUSINESS_PARTNER_0001` as `SAPOAuthScope` as seen in the [named values table](#named-values).
+    
 1. Select **Finish**.
 
 For more information, see the [SAP documentation](https://help.sap.com/docs/SAP_NETWEAVER_750/3c4e8fc004cb4401a4fdd737f02ac2b9/ded106c66334432f963715cb0dc3165f.html) and [SAP's official documentation about SAP NETWEAVER](https://help.sap.com/docs/SAP_NETWEAVER_750/3c4e8fc004cb4401a4fdd737f02ac2b9/7e80a762e8b4441fb53b1f6d9bde4f4d.html) for additional details.
@@ -237,7 +235,7 @@ Import the SAP OData metadata into Azure API Management, and then apply an API M
 1. Configure named values:
 
    1. In **APIs**, select **Named values**.
-   1. Add the following key/value pairs that are in the [named values table](#named-values-table):
+   1. Add the following key/value pairs that are in the [named values table](#named-values):
      `AADSAPResource`, `AADTenantId`, `APIMAADRegisteredAppClientId`, `APIMAADRegisteredAppClientSecret`, `APIMUserAssignedManagedIdentityId`, `SAPOAuthClientID`, `SAPOAuthClientSecret`, `SAPOAuthRefreshExpiry`, `SAPOAuthScope`, `SAPOAuthServerAddressForTokenEndpoint`.
 
 > [!NOTE]
