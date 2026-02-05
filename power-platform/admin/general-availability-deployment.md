@@ -7,7 +7,7 @@ ms.author: paulda
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/07/2026
+ms.date: 02/03/2026
 search.audienceType: 
   - admin
 ms.contributors:
@@ -79,9 +79,9 @@ Environment database version may not be updated until a few days after the sched
 \*For more information about GCC, GCC High, and DoD, go to [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
 \**For more information about environments in China, go to [Power Platform and Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md).
 
-## Early access updates FAQ
+## Early access updates
 
-For frequency asked questions about early access, see [Early access updates FAQ](opt-in-early-access-updates.md#early-access-updates-faq) 
+Learn more about early access updates in [Opt in to early access updates](opt-in-early-access-updates.md).
 
 ### Related content
 [Dynamics 365 release schedule](/dynamics365/get-started/release-schedule) <br />

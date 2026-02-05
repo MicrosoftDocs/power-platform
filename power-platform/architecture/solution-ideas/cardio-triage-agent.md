@@ -170,7 +170,7 @@ CardioTriage-AI delivers measurable improvements in clinical outcomes and operat
 - Microsoft Bookings integration offers seamless appointment scheduling, reducing friction for both staff and patients.
 - Agents enhance interactivity by enabling natural language-based interactions, improving ease of use for non-technical users.
 
-### Responsible AI
+## Responsible AI
 
 - Transparent and documented reasoning: The agent's decision making is based on clinically approved guideline documents, ensuring consistent, explainable, and evidence-based outputs. All AI actions are logged for traceability and auditability.
 - Purpose-specific AI design: AI Builder is used for extracting patient lab report values (for example, biomarkers, ECG readings) from structured and unstructured data, reducing manual errors while preserving clinical accuracy.
