@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 02/04/2026
+ms.date: 02/05/2026
 ms.topic: concept-article
 author: gakulka
 contributors:
@@ -147,15 +147,16 @@ Create a user-mapping file for the source environment to be transferred to the t
     
     1. Save the CSV file that has both full access users and administrative access users mapped.
 
-## Migration using Power Platform admin center
+## Migrate using the Power Platform admin center
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Environments**.
 1. Select the environment that needs to be moved. Tenant-to-tenant moves are supported for sandbox and production environments with Dataverse.
-1. Select the **Move environment** button in the action bar. The **Request tenant to tenant move pane** appears.
-1. Enter the destination tenant ID  in the Target tenant ID field. Select **Submit request**.
+1. Select the **Move environment** button in the command bar. The **Request tenant to tenant move** pane appears.
+1. Enter the destination tenant ID in the Target tenant ID**** field. Select **Submit request**.
   
     The migration request is submitted for approval in the destination tenant. A banner appears on the environment's details page, indicating that a request has been submitted to move the environment.
-1. A pending request banner appears on the environment hub.
 
 ### Migration requests list
 Two notification banners appear on the environment list page: one(on top) if you have a request to approve as a destination tenant, and another(below) if you submitted a request as a source tenant.
