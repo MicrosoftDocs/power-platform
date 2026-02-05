@@ -105,7 +105,7 @@ EVVIE's inspection app is a canvas app that can be easily modified through a sim
 
 The interface presented to administrative staff for reviewing these inspections is a model-driven app with a custom page, which is equally easy to modify according to specific requirements.
 
-### Responsible AI
+## Responsible AI
 
 **Nonsensitive use case:** The EVVIE application operates within a nonsensitive domain, significantly reducing the risk of bias negatively affecting vehicle inspections. Given the nature of vehicle damage assessment, there's minimal room for bias to influence outcomes.
 
