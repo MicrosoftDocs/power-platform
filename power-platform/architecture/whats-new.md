@@ -25,6 +25,7 @@ New in [Solution ideas](solution-ideas/index.md):
 - [​Build anomaly detection with Copilot Studio and Fabric](solution-ideas/agent-anomaly-detection.md)
 - [​​Streamline customer service with a customer support assistance agent​](solution-ideas/customer-support-agent.md)
 - [​Improve the new hire experience with a smart onboarding agent](solution-ideas/onboarding-agent.md)
+- [AI-enabled donor management solution](solution-ideas/agent-donor-management.md)
 
 Updated in [Solution ideas](solution-ideas/index.md):
 

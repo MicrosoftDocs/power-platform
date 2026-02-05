@@ -131,6 +131,8 @@
           href: solution-ideas/customer-support-agent.md
         - name: ​Improve the new hire experience with an onboarding agent
           href: solution-ideas/onboarding-agent.md
+        - name: AI-enabled donor management solution
+          href: solution-ideas/agent-donor-management.md
     - name: Power Platform products
       items:
         - name: Power Apps
