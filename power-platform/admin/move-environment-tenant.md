@@ -194,14 +194,14 @@ After the migration request is approved, a banner with the **Begin Move** button
 
 :::image type="content" source="media/move-environment-tenant/beginmovebanner.jpg" alt-text="Screenshot of the environment's details page with green approval banner, Begin move and Cancel move buttons.":::
 
-1. Select **Begin Move** to open the move environment panel, which displays the pre-move steps. The **Move environment** button in the action header also opens this panel.
+1. Select **Begin Move** to open the **Get ready for this tenant-to-tenant move** panel, which displays the pre-move steps. The **Move environment** button in the command bar also opens this panel.
 
-:::image type="content" source="media/move-environment-tenant/prevaldationmovepanel.jpg" alt-text="Screenshot of Move panel with pre-move stepsshowing target tenant ID field, user mapping upload, usermapping.csv file, and Validate button.":::
+    :::image type="content" source="media/move-environment-tenant/prevaldationmovepanel.jpg" alt-text="Screenshot of 'Get ready for this tenant-to-tenant move' pane.":::
 
 1. Upload the user-mapping file for validation. The file must be named **usermapping.csv**.
 1. After the file is uploaded, select **Validate**. This triggers a validation lifecycle operation. Wait until the operation is complete.
 
-:::image type="content" source="media/move-environment-tenant/validationelo.jpg" alt-text="Screenshot of PrepareTenantToTenant - validation lifecycle operation":::
+    :::image type="content" source="media/move-environment-tenant/validationelo.jpg" alt-text="Screenshot of PrepareTenantToTenant - validation lifecycle operation":::
 
 #### When validation fails
 
