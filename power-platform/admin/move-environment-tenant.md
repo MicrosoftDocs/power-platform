@@ -160,8 +160,6 @@ Create a user-mapping file for the source environment to be transferred to the t
 
 1. A pending request banner appears on the environment hub.
 
-:::image type="content" source="media/move-environment-tenant/pendingmovebanner.jpg" alt-text="Screenshot of environment details page with a pending request to move environment banner at the top.":::
-
 ### Migration requests list
 Two notification banners appear on the environment list page: one(on top) if you have a request to approve as a destination tenant, and another(below) if you submitted a request as a source tenant.
 
@@ -187,8 +185,6 @@ Two notification banners appear on the environment list page: one(on top) if you
 
 After the migration request is approved, a banner with the **Begin Move** button appears on the environment hub.
 
-:::image type="content" source="media/move-environment-tenant/beginmovebanner.jpg" alt-text="Screenshot of environment hub with green approval banner, Begin move and Cancel move buttons, and environment details panel.":::
-
 1. Select **Begin Move** to open the move environment panel, which displays the pre-move steps. The **Move environment** button in the action header also opens this panel.
 
 :::image type="content" source="media/move-environment-tenant/prevaldationmovepanel.jpg" alt-text="Screenshot of Move panel with pre-move stepsshowing target tenant ID field, user mapping upload, usermapping.csv file, and Validate button.":::
@@ -207,8 +203,6 @@ If the validation operation fails, a banner with **Download Errors** appears. Do
 #### When validation succeeds
 
 After validation succeeds, a banner with the **Move Environment** button appears on the environment hub.
-
-:::image type="content" source="media/move-environment-tenant/approvedbanner.jpg" alt-text="Screenshot of environment hub showing green approval banner, Move environment and Cancel move buttons, and environment details panel.":::
 
 1. Select **Move Environment** to open the move environment panel. You have the option to re-validate with a new user-mapping file.
 1. Review the pre-move steps and select the checkbox to confirm that the pre-move steps are completed.
