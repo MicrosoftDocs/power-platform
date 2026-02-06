@@ -200,11 +200,9 @@ After the migration request is approved, a banner with the **Begin move** button
 
 #### When validation fails
 
-If the validation operation fails, a banner with **Download Errors** appears. Download the error file, fix the issues in the user-mapping file, and re-validate using the steps mentioned above.
+If the validation operation fails, a banner with a **Download errors** button appears. Download the error file, fix the issues in the user-mapping file, and re-validate using the steps mentioned above.
 
-:::image type="content" source="media/move-environment-tenant/downloadusermappingerrfile.jpg" alt-text="Screenshot of environment hub showing error banner for user mapping file, Begin move and Cancel move buttons, and environment details panel.":::
-
-:::image type="content" source="media/move-environment-tenant/usermappingerrorfile.jpg" alt-text="User mapping error file.":::
+:::image type="content" source="media/move-environment-tenant/downloadusermappingerrfile.jpg" alt-text="Screenshot of Environments page showing error banner with 'Download errors' button.":::
 
 #### When validation succeeds
 
@@ -485,6 +483,7 @@ The source tenant’s Dynamics 365 or Power Platform admin must submit a request
 
 #### Is there a self-serve UI option?
 Yes. After the TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID} is approved in the target tenant, a UI option to move the environment is available in the environment page. 
+
 
 
 
