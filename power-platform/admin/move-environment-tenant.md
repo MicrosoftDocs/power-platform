@@ -206,12 +206,12 @@ If the validation operation fails, a banner with a **Download errors** button ap
 
 #### When validation succeeds
 
-After validation succeeds, a banner with the **Move Environment** button appears on the environment hub.
+After validation succeeds, a banner with the **Move environment** button appears on the environment's details page.
 
-1. Select **Move Environment** to open the move environment panel. You have the option to re-validate with a new user-mapping file.
+1. Select **Move environment** to open the **Move this environment to another tenant** panel. You have the option to revalidate with a new user mapping file.
 1. Review the pre-move steps and select the checkbox to confirm that the pre-move steps are completed.
 
-:::image type="content" source="media/move-environment-tenant/postvalidationmovepanel.jpg" alt-text="Screenshot of move environment panel showing target tenant ID, user mapping upload, pre-move steps checkbox, and Move environment button.":::
+    :::image type="content" source="media/move-environment-tenant/postvalidationmovepanel.jpg" alt-text="Screenshot of move environment panel showing target tenant ID, user mapping upload, pre-move steps checkbox, and Move environment button.":::
 
 1. Select **Move environment** to move the environment. This triggers the move environment lifecycle operation. Wait until the operation is complete.
 
@@ -221,17 +221,12 @@ After the move operation is complete:
 
 - The Dataverse organization from the source tenant is moved to the destination tenant.
 - The source tenant retains the environment without the Dataverse organization.
-
-:::image type="content" source="media/move-environment-tenant/movecompletedst.jpg" alt-text="Screenshot of Power Platform admin center showing environment testT2t1 details after move completion.":::
-
 - A new environment is created in the destination tenant with the same name as the source environment and the moved Dataverse organization.
 
-:::image type="content" source="media/move-environment-tenant/movecompleteddt.jpg" alt-text="Screenshot of Power Platform admin center showing new environment testT2t1 in a Sandbox state with Dataverse enabled.":::
-
 ### Cancel move
-You can cancel the move at any time between submitting the request and completing the environment move. Select the Cancel Move button on the banner to open the Cancel Move dialog and cancel the move.
+You can cancel the move at any time between submitting the request and completing the environment move. Select the **Cancel move** button on the banner to open the **Cancel move** dialog and cancel the move.
 
-## Migration using PowerShell
+## Migrate using PowerShell
 Before proceeding with the migration, make sure you review and complete the preparation process. After you've completed the preparation process, complete the following sections to migrate.
 
 ### Install PowerShell for Power Platform Administrators (both source and target admins) 
@@ -483,6 +478,7 @@ The source tenant’s Dynamics 365 or Power Platform admin must submit a request
 
 #### Is there a self-serve UI option?
 Yes. After the TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID} is approved in the target tenant, a UI option to move the environment is available in the environment page. 
+
 
 
 
