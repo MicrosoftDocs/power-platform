@@ -200,7 +200,7 @@ After the migration request is approved, a banner with the **Begin move** button
 
 #### When validation fails
 
-If the validation operation fails, a banner with a **Download errors** button appears. Download the error file, fix the issues in the user-mapping file, and re-validate using the steps mentioned above.
+If the validation operation fails, a banner with a **Download errors** button appears. Download the error file, fix the issues in the user-mapping file, and revalidate using the steps mentioned above.
 
 :::image type="content" source="media/move-environment-tenant/downloadusermappingerrfile.jpg" alt-text="Screenshot of Environments page showing error banner with 'Download errors' button.":::
 
@@ -404,7 +404,7 @@ After the migration is complete, review the imported components and perform the 
 
 1. Create or map connections for all connection references.
     - Open the solution in the target environment.
-    - Navigate to the connection references and re-authenticate or link each one to an existing connection.
+    - Navigate to the connection references and reauthenticate or link each one to an existing connection.
 1. Enable all flows.
     - Imported flows are turned off by default.
     - Start any child flows before enabling parent flows that call them to avoid errors.
@@ -478,6 +478,7 @@ The source tenant’s Dynamics 365 or Power Platform admin must submit a request
 
 #### Is there a self-serve UI option?
 Yes. After the TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID} is approved in the target tenant, a UI option to move the environment is available in the environment page. 
+
 
 
 
