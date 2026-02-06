@@ -155,23 +155,24 @@ Create a user-mapping file for the source environment to be transferred to the t
 1. In the **Manage** pane, select **Environments**. 
 1. In the **Environments** page, select the environment that needs to be moved. Tenant-to-tenant moves are supported for sandbox and production environments with Dataverse.
 1. In the command bar, select **Move environment**. The **Request tenant to tenant move** pane appears.
-1. Enter the destination tenant ID in the **Target tenant ID** field and select **Submit request**.
+1. Enter the destination tenant ID in the **Target tenant ID** box and select **Submit request**.
 
     The migration request is submitted for approval in the destination tenant. A pending request banner appears on the **Environments** page.
 
 ### Migration requests list
-Two notification banners appear on the **Environments** page. The notifications indicate:
+Notification banners appear at the top of the **Environments** page when:
 
-- If you have a [request to approve as a destination tenant](#request-to-approve-as-destination-tenant).
-- If you submitted a [request to review as a source tenant](#request-to-review-as-source-tenant).
+- You have a [request to approve as a destination tenant](#request-to-approve-as-destination-tenant).
+- You submitted a [request to review as a source tenant](#request-to-review-as-source-tenant).
 
 #### Request to approve as destination tenant
 
 1. Select **Review Requests** on the banner.
 1. A panel opens with a list of migration requests to review for approval.
-1. You can search for a migration request using the environment ID or request status.
 
-1. Select the environment ID to open the Approval/Rejection panel.
+    You can search for a migration request using the environment ID or request status.
+
+1. Select the environment ID approve or reject the request.
 1. Review the request and approve or reject it.
 
 > [!Note]
@@ -181,15 +182,18 @@ Two notification banners appear on the **Environments** page. The notifications 
 
 1. Select **Review Request** on the banner.
 1. A panel opens with a list of migration requests you submitted.
-1. You can search for a migration request using the environment ID or request status.
+
+    You can search for a migration request using the environment ID or request status.
 
 ### Migration preparation after approval
 
-After the migration request is approved, a banner with the **Begin Move** button appears on the environment hub.
+After the migration request is approved, a banner with the **Begin Move** button appears on the environmen's details page.
 
-1. Select **Begin Move** to open the move environment panel, which displays the pre-move steps. The **Move environment** button in the action header also opens this panel.
+:::image type="content" source="media/move-environment-tenant/beginmovebanner.jpg" alt-text="Screenshot of the environment's details page with green approval banner, Begin move and Cancel move buttons.":::
 
-:::image type="content" source="media/move-environment-tenant/prevaldationmovepanel.jpg" alt-text="Screenshot of Move panel with pre-move stepsshowing target tenant ID field, user mapping upload, usermapping.csv file, and Validate button.":::
+1. Select Begin Move to open the Get ready for this tenant-to-tenant move panel, which displays the pre-move steps. The Move environment button in the command bar also opens this panel.
+
+    :::image type="content" source="media/move-environment-tenant/prevaldationmovepanel.jpg" alt-text="Screenshot of 'Get ready for this tenant-to-tenant move' pane.":::
 
 1. Upload the user-mapping file for validation. The file must be named **usermapping.csv**.
 1. After the file is uploaded, select **Validate**. This triggers a validation lifecycle operation. Wait until the operation is complete.
@@ -481,4 +485,5 @@ The source tenant’s Dynamics 365 or Power Platform admin must submit a request
 
 #### Is there a self-serve UI option?
 Yes. After the TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID} is approved in the target tenant, a UI option to move the environment is available in the environment page. 
+
 
