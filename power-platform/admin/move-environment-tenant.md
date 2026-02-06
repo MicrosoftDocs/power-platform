@@ -187,7 +187,7 @@ Notification banners appear at the top of the **Environments** page when:
 
 ### Migration preparation after approval
 
-After the migration request is approved, a banner with the **Begin move** button appears on the environmen's details page.
+After the migration request is approved, a banner with the **Begin move** button appears on the environment's details page.
 
 :::image type="content" source="media/move-environment-tenant/beginmovebanner.jpg" alt-text="Screenshot of the environment's details page with green approval banner, Begin move and Cancel move buttons.":::
 
@@ -478,6 +478,7 @@ The source tenant’s Dynamics 365 or Power Platform admin must submit a request
 
 #### Is there a self-serve UI option?
 Yes. After the TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID} is approved in the target tenant, a UI option to move the environment is available in the environment page. 
+
 
 
 
