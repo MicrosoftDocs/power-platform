@@ -28,6 +28,10 @@ The **Confirm** function displays a dialog box on top of the current screen with
 
 The user must choose one of the buttons before the dialog is dismissed. Besides selecting the Cancel button, the dialog can be dismissed through platform-specific gestures (such as the Esc key or clicking outside the dialog). In canvas apps, this dismissal path is treated as no action (i.e. returns `blank`).
 
+
+> [!NOTE]
+> **Confirm** function leverages Fluent dialog. Ensure that [modern controls are enabled](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/controls/modern-controls/overview-modern-controls#enable-modern-controls-and-themes-for-your-app); otherwise, the native browser dialog is shown.
+
 ## Syntax
 
 ```
