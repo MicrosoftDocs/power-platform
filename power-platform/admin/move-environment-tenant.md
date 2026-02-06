@@ -167,7 +167,7 @@ Notification banners appear at the top of the **Environments** page when:
 
 #### Request to approve as destination tenant
 
-1. Select **Review Requests** on the banner.
+1. Select **Review moves** on the banner.
 1. A panel opens with a list of migration requests to review for approval.
 
     You can search for a migration request using the environment ID or request status.
@@ -180,18 +180,18 @@ Notification banners appear at the top of the **Environments** page when:
 
 #### Request to review as source tenant
 
-1. Select **Review Request** on the banner.
+1. Select **Review moves** on the banner.
 1. A panel opens with a list of migration requests you submitted.
 
     You can search for a migration request using the environment ID or request status.
 
 ### Migration preparation after approval
 
-After the migration request is approved, a banner with the **Begin Move** button appears on the environmen's details page.
+After the migration request is approved, a banner with the **Begin move** button appears on the environmen's details page.
 
 :::image type="content" source="media/move-environment-tenant/beginmovebanner.jpg" alt-text="Screenshot of the environment's details page with green approval banner, Begin move and Cancel move buttons.":::
 
-1. Select Begin Move to open the Get ready for this tenant-to-tenant move panel, which displays the pre-move steps. The Move environment button in the command bar also opens this panel.
+1. Select **Begin move** to open the **Get ready for this tenant-to-tenant move** panel, which displays the pre-move steps. The **Move environment** button in the command bar also opens this panel.
 
     :::image type="content" source="media/move-environment-tenant/prevaldationmovepanel.jpg" alt-text="Screenshot of 'Get ready for this tenant-to-tenant move' pane.":::
 
@@ -485,5 +485,6 @@ The source tenant’s Dynamics 365 or Power Platform admin must submit a request
 
 #### Is there a self-serve UI option?
 Yes. After the TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID} is approved in the target tenant, a UI option to move the environment is available in the environment page. 
+
 
 
