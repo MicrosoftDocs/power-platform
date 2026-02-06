@@ -46,5 +46,16 @@ There are several ways to import data:
 ### See also  
  [Detect duplicate data](detect-duplicate-data.md)
 
+### Troubleshooting import issues
+
+#### ISV code aborted the operation error while data import
+
+This error occurs when a plug-in registered as a pre-validation step blocks the creation of the record during the import process. The plug-in runs before the main operation and rejects the incoming data, which causes the import to fail for the affected records. In most cases, a more detailed error message is presented to the user that identifies the specific plug-in or validation rule that caused the failure. However, if no additional details are provided, enable plug-in tracing to capture diagnostic information:
+
+1. In the Power Platform admin center, go to **Environments** > [select an environment] > **Settings** > **Customization** > **System Settings**.
+2. Under the **Customization** tab, set **Enable logging to plug-in trace log** to **All** or **Exception**.
+3. Reproduce the import operation to capture the trace logs.
+4. Review the plug-in trace logs by navigating to **Settings** > **Customization** > **Plug-in Trace Log** to identify the plug-in that is blocking the record creation.
+5. Work with the plug-in developer or ISV to adjust the validation logic so that it allows the import to proceed, correct the source data to meet the plug-in's validation requirements, or disable the plug-in if it is not required for your business processes.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
