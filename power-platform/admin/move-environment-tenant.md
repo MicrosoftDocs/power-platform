@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 02/05/2026
+ms.date: 02/06/2026
 ms.topic: concept-article
 author: gakulka 
 contributors:
@@ -477,6 +477,7 @@ The source tenant’s Dynamics 365 or Power Platform admin must submit a request
 
 #### Is there a self-serve UI option?
 Yes. After the `TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}` is approved in the target tenant, a UI option to move the environment is available in the environment page.
+
 
 
 
