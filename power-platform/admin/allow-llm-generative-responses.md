@@ -16,7 +16,7 @@ ms.contributors:
 
 # Allow external language models for generative responses
 
-AI innovation moves at a rapid pace, and each AI model has different strengths and specialties. By turning on the **Enable External Models** setting or rule, you allow the use of external AI models for an environment or an environment group. These models offer an alternative approach to generative AI in Microsoft Copilot Studio. These models support advanced summarization and conversational capabilities. 
+AI innovation moves at a rapid pace, and each AI model has different strengths and specialties. With the **External models** rule and setting, you can allow the choice of external AI models in model-picking scenarios for an environment or an environment group. These models offer an alternative approach to generative AI in Microsoft Copilot Studio. These models support advanced summarization and conversational capabilities. 
 
 Some model families are available in preview for evaluation purposes, and also in production as Microsoft subprocessors. The models available under the **Enable External Models** setting are hosted outside of Microsoft and, in some cases, are subject to their own usage and data handling terms. Currently, the only models available under the **Enable External Models** setting are through third-parties Anthropic and xAI.
 
