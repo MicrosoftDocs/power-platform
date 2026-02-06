@@ -30,7 +30,7 @@ The user must choose one of the buttons before the dialog is dismissed. Besides 
 
 
 > [!NOTE]
-> **Confirm** function leverages Fluent dialog. Ensure that [modern controls are enabled](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/controls/modern-controls/overview-modern-controls#enable-modern-controls-and-themes-for-your-app); otherwise, the native browser dialog is shown.
+> **Confirm** function leverages Fluent dialog in canvas apps. Ensure that [modern controls are enabled](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/controls/modern-controls/overview-modern-controls#enable-modern-controls-and-themes-for-your-app); otherwise, the native browser dialog is shown.
 
 ## Syntax
 
