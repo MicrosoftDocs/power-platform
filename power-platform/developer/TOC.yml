@@ -136,6 +136,9 @@
               - name: pac managed-identity
                 href: cli\reference\managed-identity.md
                 no-loc: true
+              - name: pac model
+                href: cli\reference\model.md
+                no-loc: true
               - name: pac modelbuilder
                 href: cli\reference\modelbuilder.md
                 no-loc: true
