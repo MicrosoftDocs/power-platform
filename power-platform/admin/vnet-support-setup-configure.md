@@ -16,6 +16,7 @@ search.audienceType:
 contributors:
   - matapg007
   - wifun
+zone_pivot_groups: subnet-setup
 ---
 
 # Set up virtual network support for Power Platform
@@ -65,6 +66,8 @@ Virtual Network support can be configured and enabled using PowerShell scripts o
 1. Set up the virtual network and subnets.
 1. Create the enterprise policy.
 1. Configure your Power Platform environment.
+
+::: zone pivot="powershell"
 
 ### Setup with Powershell
 
@@ -119,6 +122,10 @@ Enable-SubnetInjection -EnvironmentId "00000000-0000-0000-0000-000000000000" -Po
 
 > [!TIP]
 > If you need a different account to link the policy, you can use the -ForceAuth switch to ensure you get prompted to sign in to a new account.
+
+::: zone-end
+
+::: zone pivot="manual"
 
 ### Manual Setup
 
@@ -279,6 +286,8 @@ Create a virtual network](/azure/virtual-network/tutorial-connect-virtual-networ
     1. On the **Environments** page, select an environment.
     1. In the command bar, select **History**.
     1. Verify that the **Status** shows **Succeeded**.
+
+::: zone-end
 
 ### Related content
 
