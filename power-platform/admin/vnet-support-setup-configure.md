@@ -16,6 +16,7 @@ search.audienceType:
 contributors:
   - matapg007
   - wifun
+zone_pivot_group_filename: admin/zone-pivot-groups.json
 zone_pivot_groups: subnet-setup
 ---
 
