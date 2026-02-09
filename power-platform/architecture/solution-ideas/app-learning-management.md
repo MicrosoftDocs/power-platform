@@ -35,7 +35,7 @@ This solution uses a wide range of Power Platform resources to ensure up-to-date
     1. Power Automate triggers when a training is assigned to create progress records to track completion percentage.
 
 1. **Model-driven app (Trainers)**
-    1. Trainers access a Model-driven app to create custom training plans based on the ingested Microsoft Learn Content.
+    1. Trainers access a Model-driven app to create custom training plans based on the ingested Microsoft Learn content.
 
     1. Dashboards provide visibility to Trainers for submitted trainings from Learners for review and finalization.
 
