@@ -54,7 +54,7 @@ The following diagram shows the functions of the roles in the setup process for 
 
 - Your [virtual networks](/azure/virtual-network/virtual-networks-overview) must be created in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is United States, create your virtual networks in the **eastus** and **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
 
-- If there are two or more supported regions for the geo, such as the United States with **eastus** and  **westus**, you need two virtual networks in ***different*** regions to create the enterprise policy. This requirement applies to both production and nonproduction environments. 
+- If there are two or more supported regions for the geography, such as the United States with **eastus** and  **westus**, you need two virtual networks in ***different*** regions to create the enterprise policy. This requirement applies to both production and nonproduction environments. 
 
 - Make sure that you appropriately size the subnet you create according to [Estimating subnet size for Power Platform environments](./vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments). If more than one subnet is required, both subnets must have the same number of available IP addresses. After you delegate the subnet to Power Platform, you need to contact Microsoft Support to change the subnet range.
 
@@ -81,13 +81,13 @@ Import-Module Microsoft.PowerPlatform.EnterprisePolicies
 
 1. Configure your virtual network and subnet for delegation to Power Platform. This must be run for each virtual network that has a subnet delegated. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment.
 
-# [Existing Virtual Network](#tab/existing)
+# [Existing virtual network](#tab/existing)
 
 ```PowerShell
 New-VnetForSubnetDelegation -SubscriptionId "00000000-0000-0000-0000-000000000000" -VirtualNetworkName "myVnet" -SubnetName "mySubnet"
 ```
 
-# [Create Virtual Network](#tab/new)
+# [Create virtual network](#tab/new)
 
 ```PowerShell
 New-VnetForSubnetDelegation -SubscriptionId "00000000-0000-0000-0000-000000000000" -VirtualNetworkName "myVnet" -SubnetName "mySubnet" -ResourceGroupName "myResourceGroup" -CreateVirtualNetwork -AddressPrefix "10.0.0.0/16" -SubnetPrefix "10.0.1.0/24" -Region "westus"
@@ -98,15 +98,15 @@ New-VnetForSubnetDelegation -SubscriptionId "00000000-0000-0000-0000-00000000000
 > - If you plan to use the same delegated subnet for multiple Power Platform environments, you might need a larger IP address block than /24. Review subnet sizing guidance in [Estimating subnet size for Power Platform environments](vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
 > - To allow public internet access for Power Platform components, create an [Azure NAT gateway](/azure/nat-gateway/nat-overview) for the subnets.
 
-1. Create your enterprise policy using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geos that support two or more regions.
+1. Create your enterprise policy using the virtual networks and subnets you delegated. Remember two virtual networks in different regions are required for geographies that support two or more regions.
 
-# [Single Region Geography](#tab/single)
+# [Single region geography](#tab/single)
 
 ```PowerShell
 New-SubnetInjectionEnterprisePolicy -SubscriptionId "00000000-0000-0000-0000-000000000000" -ResourceGroupName "myResourceGroup" -PolicyName "myPolicy" -PolicyLocation "unitedstates" -VirtualNetworkId "/subscriptions/12345678-1234-1234-1234-123456789012/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVnet" -SubnetName "default"
 ```
 
-# [Two Region Geography](#tab/double)
+# [Two region geography](#tab/double)
 
 ```PowerShell
 New-SubnetInjectionEnterprisePolicy -SubscriptionId "00000000-0000-0000-0000-000000000000" -ResourceGroupName "myResourceGroup" -PolicyName "myPolicy" -PolicyLocation "unitedstates" -VirtualNetworkId "/subscriptions/12345678-1234-1234-1234-123456789012/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVnet" -SubnetName "default" -VirtualNetworkId2 "/subscriptions/12345678-1234-1234-1234-123456789012/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVnet" -SubnetName2 "default"
@@ -178,7 +178,7 @@ New-SubnetInjectionEnterprisePolicy -SubscriptionId "00000000-0000-0000-0000-000
             "powerplatformEnvironmentRegion": {
                 "type": "string",
                 "metadata": {
-                    "description": "Geo of the PowerPlatform environment."
+                    "description": "Geography of the PowerPlatform environment."
                 }
             },
             "vNetOneSubnetName": {
