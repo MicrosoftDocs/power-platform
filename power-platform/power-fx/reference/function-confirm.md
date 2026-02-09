@@ -1,12 +1,12 @@
 ﻿---
-title: Confirm function
-description: Reference information for the Confirm function.
+title: Confirm function reference for Power Fx
+description: Learn how to use the Confirm function to display customizable confirmation dialogs in Power Fx apps, including options for titles, subtitles, and button labels.
 author: gregli-msft
 ms.subservice: power-fx
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: nabuthuk
-ms.date: 3/22/2024
+ms.date: 03/22/2024
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -20,17 +20,17 @@ no-loc: ["Confirm"]
 # Confirm function
 [!INCLUDE[function-confirm-applies-to](includes/function-confirm-applies-to.md)]
 
-Display a confirmation dialog box to the user.
+Use this function to display a confirmation dialog box to the user.
 
 ## Description
 
-The **Confirm** function displays a dialog box on top of the current screen with two buttons: a _confirm_ button and a _cancel_ button. In model apps, these default to localized versions of "OK" and "Cancel" respectively. Confirm is also available in canvas apps for showing a simple confirmation dialog and returning a Boolean result.
+The **Confirm** function displays a dialog box on top of the current screen with two buttons: a _confirm_ button and a _cancel_ button. In model-driven apps, these buttons default to localized versions of "OK" and "Cancel" respectively. Confirm is also available in canvas apps for showing a simple confirmation dialog and returning a Boolean result.
 
-The user must choose one of the buttons before the dialog is dismissed. Besides selecting the Cancel button, the dialog can be dismissed through platform-specific gestures (such as the Esc key or clicking outside the dialog). In canvas apps, this dismissal path is treated as no action (i.e. returns `blank`).
+The user must choose one of the buttons before the dialog is dismissed. Besides selecting the Cancel button, the dialog can be dismissed through platform-specific gestures (such as the Esc key or clicking outside the dialog). In canvas apps, this dismissal path is treated as no action (that is, it returns `blank`).
 
 
 > [!NOTE]
-> **Confirm** function leverages Fluent dialog in canvas apps. Ensure that [modern controls are enabled](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/controls/modern-controls/overview-modern-controls#enable-modern-controls-and-themes-for-your-app); otherwise, the native browser dialog is shown.
+> In canvas apps, the **Confirm** function uses the Fluent dialog. Make sure [modern controls are enabled](/power-apps/maker/canvas-apps/controls/modern-controls/overview-modern-controls#enable-modern-controls-and-themes-for-your-app); otherwise, the native browser dialog appears.
 
 ## Syntax
 
@@ -49,16 +49,16 @@ Use the _OptionsRecord_ parameter to customize the confirmation dialog:
 |--------|-------------|
 | **ConfirmButton** | The text to display on the confirm button, replacing the default localized "OK" or "Confirm" text. |
 | **CancelButton** | The text to display on the cancel button, replacing the default localized "Cancel" text. |
-| **Title** | The text to display as the dialog title. Displayed in a larger, bolder font than the message. May be truncated if very long. |
-| **Subtitle** | The text to display as the dialog subtitle. Displayed between the title and message. May be truncated if very long. |
+| **Title** | The text to display as the dialog title. Displayed in a larger, bolder font than the message. It might be truncated if very long. |
+| **Subtitle** | The text to display as the dialog subtitle. Displayed between the title and message. It might be truncated if very long. |
 
 ## Default behavior
 
 **Button labels:** If you don't provide custom button labels, Confirm uses localized default button text:
-- In canvas apps (preview), the defaults are **"Confirm"** and **"Cancel"** (localized)
-- In model-driven apps, the defaults are **"OK"** and **"Cancel"** (localized)
+- In canvas apps (preview), the defaults are **"Confirm"** and **"Cancel"** (localized).
+- In model-driven apps, the defaults are **"OK"** and **"Cancel"** (localized).
 
-**Return value:** Confirm returns `true` if the confirm button was selected, `false` otherwise.
+**Return value:** Confirm returns `true` if the user selects the confirm button, and `false` otherwise.
 
 ## Examples
 
@@ -101,7 +101,7 @@ Uses custom button labels to capture a simple preference. The result is stored i
 Confirm( "There was a problem, please review your order." )
 ```
 
-Displays a modal message that the user must acknowledge before continuing. The return value is not checked.
+Displays a modal message that the user must acknowledge before continuing. The return value isn't checked.
 
 ---
 
@@ -109,7 +109,7 @@ Displays a modal message that the user must acknowledge before continuing. The r
 
 #### Confirm before delete 
 
-Use Confirm to prevent accidental deletion of records:
+Use **Confirm** to prevent accidental deletion of records:
 
 ```powerfx
 // Button.OnSelect
@@ -128,11 +128,11 @@ If(
 )
 ```
 
-Displays a confirmation dialog with title, subtitle, and custom button labels. The record is only deleted if the user selects "Delete."
+Displays a confirmation dialog with title, subtitle, and custom button labels. The record is only deleted if the user selects **Delete**.
 
 #### Confirm before saving a form
 
-Use Confirm to validate user intent before submitting data:
+Use **Confirm** to validate user intent before submitting data:
 
 ```powerfx
 // Save button.OnSelect
@@ -202,11 +202,11 @@ No. The current design always shows both the Confirm and Cancel buttons. Users m
 No. Confirm supports exactly two options: a confirm action and a cancel action. For scenarios requiring multiple choices, consider using a different UI pattern such as a custom screen or dropdown control.
 
 ### Does Confirm block other operations?
-Yes. Confirm displays as a modal dialog that must be dismissed before the user can interact with other parts of the app.
+Yes. Confirm displays as a modal dialog that the user must dismiss before they can interact with other parts of the app.
 
 ## See also
 
-[**Notify**](function-showerror.md) - Display a non-modal banner message at the top of the screen that doesn't require user dismissal.
+[**Notify**](function-showerror.md) - Displays a non-modal banner message at the top of the screen that doesn't require user dismissal.
 
 
 
