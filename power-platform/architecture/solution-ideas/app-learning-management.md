@@ -35,7 +35,7 @@ This solution uses a wide range of Power Platform resources to ensure up-to-date
     1. Content is then upserted based on the last-modified date to ensure only deltas are uploaded to Dataverse.
 
 1. **Model-driven app (Trainers)**
-    1. Trainers access a Model-driven app to create custom training plans based on the ingested Microsoft Learn content.
+    1. Trainers access a model-driven app to create custom training plans based on the ingested Microsoft Learn content.
 
     1. Dashboards provide visibility to Trainers for submitted trainings from Learners for review and finalization.
 
