@@ -68,13 +68,13 @@ Virtual Network support can be configured and enabled using PowerShell scripts o
 1. Create the enterprise policy.
 1. Configure your Power Platform environment.
 
-::: zone pivot="powershell"
+::: zone pivot="PowerShell"
 
-### Setup with Powershell
+### Setup with PowerShell
 
 1. Install and load the Microsoft.PowerPlatform.EnterprisePolicies module.
 
-```powershell
+```PowerShell
 Install-Module Microsoft.PowerPlatform.EnterprisePolicies
 Import-Module Microsoft.PowerPlatform.EnterprisePolicies
 ```
@@ -83,13 +83,13 @@ Import-Module Microsoft.PowerPlatform.EnterprisePolicies
 
 # [Existing Virtual Network](#tab/existing)
 
-```powershell
+```PowerShell
 New-VnetForSubnetDelegation -SubscriptionId "00000000-0000-0000-0000-000000000000" -VirtualNetworkName "myVnet" -SubnetName "mySubnet"
 ```
 
 # [Create Virtual Network](#tab/new)
 
-```powershell
+```PowerShell
 New-VnetForSubnetDelegation -SubscriptionId "00000000-0000-0000-0000-000000000000" -VirtualNetworkName "myVnet" -SubnetName "mySubnet" -ResourceGroupName "myResourceGroup" -CreateVirtualNetwork -AddressPrefix "10.0.0.0/16" -SubnetPrefix "10.0.1.0/24" -Region "westus"
 ```
 ---
@@ -102,13 +102,13 @@ New-VnetForSubnetDelegation -SubscriptionId "00000000-0000-0000-0000-00000000000
 
 # [Single Region Geography](#tab/single)
 
-```powershell
+```PowerShell
 New-SubnetInjectionEnterprisePolicy -SubscriptionId "00000000-0000-0000-0000-000000000000" -ResourceGroupName "myResourceGroup" -PolicyName "myPolicy" -PolicyLocation "unitedstates" -VirtualNetworkId "/subscriptions/12345678-1234-1234-1234-123456789012/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVnet" -SubnetName "default"
 ```
 
 # [Two Region Geography](#tab/double)
 
-```powershell
+```PowerShell
 New-SubnetInjectionEnterprisePolicy -SubscriptionId "00000000-0000-0000-0000-000000000000" -ResourceGroupName "myResourceGroup" -PolicyName "myPolicy" -PolicyLocation "unitedstates" -VirtualNetworkId "/subscriptions/12345678-1234-1234-1234-123456789012/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVnet" -SubnetName "default" -VirtualNetworkId2 "/subscriptions/12345678-1234-1234-1234-123456789012/resourceGroups/myResourceGroup/providers/Microsoft.Network/virtualNetworks/myVnet" -SubnetName2 "default"
 ```
 ---
@@ -117,7 +117,7 @@ New-SubnetInjectionEnterprisePolicy -SubscriptionId "00000000-0000-0000-0000-000
 
 1. To link your newly created policy, run the following command.
 
-    ```powershell
+    ```PowerShell
     Enable-SubnetInjection -EnvironmentId "00000000-0000-0000-0000-000000000000" -PolicyArmId "/subscriptions/12345678-1234-1234-1234-123456789012/resourceGroups/myResourceGroup/providers/Microsoft.PowerPlatform/enterprisePolicies/myPolicy"
     ```
 
@@ -135,7 +135,7 @@ New-SubnetInjectionEnterprisePolicy -SubscriptionId "00000000-0000-0000-0000-000
     - Microsoft.Network
     - Microsoft.PowerPlatform
 
-1. The following feature needs to be registred in your subscription. For information on how to register a feature, see [Register preview feature
+1. The following feature needs to be registered in your subscription. For information on how to register a feature, see [Register preview feature
 ](/azure/azure-resource-manager/management/preview-features?tabs=azure-portal#register-preview-feature).
 
     - enterprisePoliciesPreview
@@ -143,13 +143,13 @@ New-SubnetInjectionEnterprisePolicy -SubscriptionId "00000000-0000-0000-0000-000
 1. Create your virtual network and subnets by following the guidance at [Create a virtual network](/azure/virtual-network/tutorial-connect-virtual-networks?tabs=portal#create-a-virtual-network-and-an-azure-bastion-host).
 
 > [!NOTE]
-> You can skip creating the bastion host. It is not necessary for the Power Platform Virtual Network functionality.
+> You can skip creating the bastion host. It isn't necessary for the Power Platform Virtual Network functionality.
 
 1. Use an existing subnet or create a new subnet and delegate it **Microsoft.PowerPlatform/enterprisePolicies**. Learn more at [Add or remove a subnet delegation](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal).
 
-1. To verify if a subnet has been successfully delegated, you can navigate to your subnet and verify the **Delagated to** column, as shown below.
+1. To verify if a subnet has been successfully delegated, you can navigate to your subnet and verify the **Delegated to** column, as shown below.
 
-    :::image type="content" source="media/vnet-support/delegated-subnet.png" alt-text="Screenshot of a delegated subnet in the Azure Portal." lightbox="media/vnet-support/delegated-subnet.png":::
+    :::image type="content" source="media/vnet-support/delegated-subnet.png" alt-text="Screenshot of a delegated subnet in the Azure portal." lightbox="media/vnet-support/delegated-subnet.png":::
 
 1. After you create paired virtual networks, you can view them in your Azure resource group, as shown in the following image.
 
@@ -276,7 +276,7 @@ New-SubnetInjectionEnterprisePolicy -SubscriptionId "00000000-0000-0000-0000-000
   > [!IMPORTANT]
   > Removing an enterprise policy from an environment can only be done through PowerShell by using [Disable-SubnetInjection](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/docs/en-US/Microsoft.PowerPlatform.EnterprisePolicies/Disable-SubnetInjection.md).
   > 
-  > ```powershell
+  > ```PowerShell
   > Disable-SubnetInjection -EnvironmentId "00000000-0000-0000-0000-000000000000"
   > ```
 
