@@ -63,7 +63,7 @@ The Geo Migration feature allows customers to move their environments in a singl
 #### After geo-to-geo migration
 - Reconfigure environment settings as necessary.
 - [Reenable managed environments](./managed-environment-enable.md) and resave managed environment settings as necessary.
-- Relink enterprise policies to the environment as necessary. For example, [virtual network](./vnet-support-setup-configure.md#configure-your-power-platform-environment), [customer-managed keys](./customer-managed-key.md#manage-environments-encryption)
+- Relink enterprise policies to the environment as necessary. For example, see [Set up virtual network support for Power Platform](./vnet-support-setup-configure.md) and [Manage environment's encryption](./customer-managed-key.md#manage-environments-encryption).
 - Work with Microsoft Support to recreate Lockbox requests for the environment as necessary.
 - [Reapply data policies](./prevent-data-loss.md) to the environment as necessary.
 - [Readd the environment to an environment group](./environment-groups.md#add-environments-to-your-environment-group) as necessary.
