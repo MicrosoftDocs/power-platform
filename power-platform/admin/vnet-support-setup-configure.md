@@ -3,7 +3,7 @@ title: Set up virtual network support for Power Platform
 description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/06/2026
+ms.date: 02/09/2026
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -41,7 +41,7 @@ Azure virtual network support for Power Platform lets you integrate Power Platfo
       - In the Microsoft Entra admin center, assign the Power Platform administrator role.
 
 - **Prepare to use PowerShell**:
-  - Use Windows PowerShell or [Install PowerShell Core](/powershell/scripting/install/installing-powershell). Our module is compatible with both flavours.
+  - Use Windows PowerShell or [Install PowerShell Core](/powershell/scripting/install/installing-powershell). Our module is compatible with both versions.
 
 The following diagram shows the functions of the roles in the setup process for virtual network support in a Power Platform environment.
 
@@ -79,7 +79,7 @@ Install-Module Microsoft.PowerPlatform.EnterprisePolicies
 Import-Module Microsoft.PowerPlatform.EnterprisePolicies
 ```
 
-1. Configure your virtual network and subnet for delegation to Power Platform. This must be run for each vnet that will have a subnet delegated. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment.
+1. Configure your virtual network and subnet for delegation to Power Platform. This must be run for each virtual network that has a subnet delegated. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment.
 
 # [Existing Virtual Network](#tab/existing)
 
@@ -113,36 +113,34 @@ New-SubnetInjectionEnterprisePolicy -SubscriptionId "00000000-0000-0000-0000-000
 ```
 ---
 
-1. (Optional) [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role.
+1. **(Optional)** [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role.
 
 1. To link your newly created policy, run the following command.
 
-```powershell
-Enable-SubnetInjection -EnvironmentId "00000000-0000-0000-0000-000000000000" -PolicyArmId "/subscriptions/12345678-1234-1234-1234-123456789012/resourceGroups/myResourceGroup/providers/Microsoft.PowerPlatform/enterprisePolicies/myPolicy"
-```
+    ```powershell
+    Enable-SubnetInjection -EnvironmentId "00000000-0000-0000-0000-000000000000" -PolicyArmId "/subscriptions/12345678-1234-1234-1234-123456789012/resourceGroups/myResourceGroup/providers/Microsoft.PowerPlatform/enterprisePolicies/myPolicy"
+    ```
 
-> [!TIP]
-> If you need a different account to link the policy, you can use the -ForceAuth switch to ensure you get prompted to sign in to a new account.
+    > [!TIP]
+    > If you need a different account to link the policy, you can use the -ForceAuth switch to ensure you get prompted to sign in to a new account.
 
 ::: zone-end
 
 ::: zone pivot="manual"
 
-### Manual Setup
+### Manual setup
 
-1. The following resource providers need to be registered in your subscription. For information on how to register a resource provider see [Register resource provider
-](/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider-1).
+1. The following resource providers need to be registered in your subscription. For information on how to register a resource provider, see [Register resource provider](/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider-1).
 
     - Microsoft.Network
     - Microsoft.PowerPlatform
 
-1. The following feature needs to be registred in your subscription. For information on how to register a feature see [Register preview feature
-](/azure/azure-resource-manager/management/preview-features?tabs=azure-portal#register-preview-feature)
+1. The following feature needs to be registred in your subscription. For information on how to register a feature, see [Register preview feature
+](/azure/azure-resource-manager/management/preview-features?tabs=azure-portal#register-preview-feature).
 
     - enterprisePoliciesPreview
 
-1. Create your virtual network and subnets by following the guidance at [
-Create a virtual network](/azure/virtual-network/tutorial-connect-virtual-networks?tabs=portal#create-a-virtual-network-and-an-azure-bastion-host)
+1. Create your virtual network and subnets by following the guidance at [Create a virtual network](/azure/virtual-network/tutorial-connect-virtual-networks?tabs=portal#create-a-virtual-network-and-an-azure-bastion-host).
 
 > [!NOTE]
 > You can skip creating the bastion host. It is not necessary for the Power Platform Virtual Network functionality.
@@ -151,7 +149,7 @@ Create a virtual network](/azure/virtual-network/tutorial-connect-virtual-networ
 
 1. To verify if a subnet has been successfully delegated, you can navigate to your subnet and verify the **Delagated to** column, as shown below.
 
-:::image type="content" source="media/vnet-support/delegated-subnet.png" alt-text="Screenshot of a delegated subnet in the Azure Portal." lightbox="media/vnet-support/delegated-subnet.png":::
+    :::image type="content" source="media/vnet-support/delegated-subnet.png" alt-text="Screenshot of a delegated subnet in the Azure Portal." lightbox="media/vnet-support/delegated-subnet.png":::
 
 1. After you create paired virtual networks, you can view them in your Azure resource group, as shown in the following image.
 
@@ -267,7 +265,7 @@ Create a virtual network](/azure/virtual-network/tutorial-connect-virtual-networ
 
     :::image type="content" source="media/virtual-networks-json-script.png" alt-text="Screenshot of selecting Review and create to finalize the enterprise policy." lightbox="media/virtual-networks-json-script.png":::
 
-1. (Optional) [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role.
+1. **(Optional)** [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role.
 
 1. To assign your policy to your environment, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
     1. In the navigation pane, select **Security**.
