@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 12/16/2025
+ms.date: 02/02/2026
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -24,6 +24,32 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Removal of before-and-after field change values in audit events sent to Microsoft Purview
+Starting in May 2026, Dataverse will no longer include before-and-after field change values in the audit events that are sent to Microsoft Purview. Audit events will continue to flow to Purview; however, the detailed field-level value changes will be excluded.
+
+### Why is this needed?
+To strengthen data protection and prevent potential data leaks.
+
+Removing detailed field-level values from Purview-bound audit events reduces the risk of exposing sensitive business or personal information through downstream monitoring or analytics systems.
+
+### Impact
+If you have existing monitoring, alerting, or reporting solutions that depend on before-and-after field change values within Purview audit events, those solutions will stop working once this deprecation takes effect. Examples include:
+
+-	Rules that compare old/new values for anomaly detection.
+
+-	Data pipelines that analyze field-level deltas.
+
+-	Custom compliance checks running in Purview.
+
+These scenarios must be updated to avoid disruption.
+
+### Action required
+Update your monitoring or downstream workflows to retrieve detailed field-level audit information directly from Dataverse, not from Purview. Dataverse continues to store and expose before-and-after field changes through its native audit APIs and tables.
+
+### More information
+-	No changes are required if your solution uses Dataverse audit logs as the source of truth.
+-	Purview continues receiving audit event metadata (such as who made changes, the date of the changes, and the tables affected), but field-level value changes will no longer be included.
 
 ## Deprecation of Copilot chat in model-driven apps
 Starting January 2026, [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) in environments not [enabled for Dynamics 365 apps](admin/create-environment.md#create-an-environment-with-a-database) will be deprecated. This feature was available as a preview feature in Power Apps.
@@ -434,7 +460,7 @@ There will be a phased-in approach before deprecation takes place. Here's the ti
 - **August 30, 2022:** The actions and triggers in Dataverse legacy connector became available in the Dataverse connector.
   - Existing Dataverse Legacy connector triggers and actions can continue to be used in existing logic apps for backward compatibility.
   - All new logic apps are created using the new actions.
-- **August 2022 through preview period:** Both new and legacy actions and triggers are available during new flow creation. By January 2024, a date for the move to general availability will be provided.
+- **August 2022 through preview period:** Both new and legacy actions and triggers are available during new flow creation. A date for the move to general availability is yet to be finalized.
 - **Date TBD:** No new logic apps can be created using the legacy actions and triggers, but existing logic apps with those actions and triggers will continue to work.
 
 In August 2023, we provided a timeline when all existing logic apps using the deprecated legacy actions and triggers will stop working. Users need to review their existing logic apps to update them to the new Azure Logic Apps triggers by the specified timeline (typically one year from the announcement date).
