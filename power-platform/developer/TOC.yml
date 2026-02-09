@@ -16,25 +16,25 @@
       href: ../test-engine/index.yml
     - name: ALM for developers
       href: /power-platform/alm/alm-for-developers
-    - name: Publish your app on AppSource
-      href: appsource\publish-app.md
+    - name: Publish your app on Marketplace
+      href: marketplace\publish-app.md
       items:
         - name: "Step 1: Create a Microsoft Partner Center account"
-          href: appsource\register-microsoft-partner-network.md
+          href: marketplace\register-microsoft-partner-network.md
         - name: "Step 2: Create a managed solution for your app"
-          href: appsource\create-solution-app.md
-        - name: "Step 3: Create an AppSource package for your app"
-          href: appsource\create-package-app.md
-        - name: "Step 4: Store your AppSource Package on Azure Storage and generate a URL with SAS key"
-          href: appsource\store-package-azure-storage.md
+          href: marketplace\create-solution-app.md
+        - name: "Step 3: Create a Marketplace package for your app"
+          href: marketplace\create-package-app.md
+        - name: "Step 4: Store your Marketplace Package on Azure Storage and generate a URL with SAS key"
+          href: marketplace\store-package-azure-storage.md
         - name: "Next steps: Submit your app on Partner Center"
-          href: appsource\next-steps-submit-app-cloud-partner-portal.md
+          href: marketplace\next-steps-submit-app-cloud-partner-portal.md
         - name: "Appendix: App design best practices checklist"
-          href: appsource\appendix-app-design-best-practices-checklist.md
+          href: marketplace\appendix-app-design-best-practices-checklist.md
         - name: "Appendix: App certification checklist"
-          href: appsource\appendix-app-certification-checklist.md
+          href: marketplace\appendix-app-certification-checklist.md
         - name: "Appendix: Add licensing information to your solution"
-          href: appsource\appendix-add-license-information-to-your-solution.md
+          href: marketplace\appendix-add-license-information-to-your-solution.md
     - name: Use the catalog in Power Platform
       items: 
         - name: Overview
@@ -99,52 +99,79 @@
               items:
               - name: pac admin
                 href: cli\reference\admin.md
+                no-loc: true
               - name: pac application
                 href: cli\reference\application.md
+                no-loc: true
               - name: pac auth
                 href: cli\reference\auth.md
+                no-loc: true
               - name: pac canvas
                 href: cli\reference\canvas.md
+                no-loc: true
               - name: pac catalog
                 href: cli\reference\catalog.md
+                no-loc: true
               - name: pac code
                 href: cli\reference\code.md
+                no-loc: true
               - name: pac connection
                 href: cli\reference\connection.md
+                no-loc: true
               - name: pac connector
                 href: cli\reference\connector.md
+                no-loc: true
               - name: pac copilot
                 href: cli\reference\copilot.md
+                no-loc: true
               - name: pac data
                 href: cli\reference\data.md
+                no-loc: true
               - name: pac env
                 href: cli\reference\env.md
+                no-loc: true
               - name: pac help
                 href: cli\reference\help.md
+                no-loc: true
               - name: pac managed-identity
                 href: cli\reference\managed-identity.md
+                no-loc: true
+              - name: pac model
+                href: cli\reference\model.md
+                no-loc: true
               - name: pac modelbuilder
                 href: cli\reference\modelbuilder.md
+                no-loc: true
               - name: pac package
                 href: cli\reference\package.md
+                no-loc: true
               - name: pac pages
                 href: cli\reference\pages.md
+                no-loc: true
               - name: pac pcf
                 href: cli\reference\pcf.md
+                no-loc: true
               - name: pac pipeline
                 href: cli\reference\pipeline.md
+                no-loc: true
               - name: pac plugin
                 href: cli\reference\plugin.md
+                no-loc: true
               - name: pac power-fx
                 href: cli\reference\power-fx.md
+                no-loc: true
               - name: pac solution
                 href: cli\reference\solution.md
+                no-loc: true
               - name: pac telemetry
                 href: cli\reference\telemetry.md
+                no-loc: true
               - name: pac test
                 href: cli\reference\test.md
+                no-loc: true
               - name: pac tool
                 href: cli\reference\tool.md
+                no-loc: true
         - name: Power Platform Tools for Visual Studio
           items:
             - name: What is Power Platform Tools for Visual Studio

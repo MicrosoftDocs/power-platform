@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - Copilot Studio",
+    "title": "Microsoft Power Platform REST API - copilotstudio",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -10,6 +10,45 @@
     "https"
   ],
   "paths": {
+    "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/botAdminOperations": {
+      "delete": {
+        "tags": [
+          "Bots"
+        ],
+        "summary": "Delete a bot in Copilot Studio.",
+        "description": "Delete a bot.",
+        "operationId": "DeleteCopilotAgent",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "EnvironmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          }
+        }
+      }
+    },
     "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine": {
       "get": {
         "tags": [

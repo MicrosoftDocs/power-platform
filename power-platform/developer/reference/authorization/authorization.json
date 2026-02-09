@@ -16,7 +16,7 @@
           "RoleBasedAccessControl"
         ],
         "summary": "List role assignments.",
-        "description": "Retrieves a list of role assignments. PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
+        "description": "Retrieves a list of role assignments. Preview.",
         "operationId": "ListRoleAssignments",
         "produces": [
           "application/json"
@@ -57,7 +57,7 @@
           "RoleBasedAccessControl"
         ],
         "summary": "Create role assignment.",
-        "description": "Creates a new role assignment. PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
+        "description": "Creates a new role assignment. Preview.",
         "operationId": "CreateRoleAssignment",
         "consumes": [
           "application/json"
@@ -111,7 +111,7 @@
           "RoleBasedAccessControl"
         ],
         "summary": "Delete role assignment.",
-        "description": "Deletes a role assignment by ID. PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
+        "description": "Deletes a role assignment by ID. Preview.",
         "operationId": "DeleteRoleAssignment",
         "parameters": [
           {
@@ -155,7 +155,7 @@
           "RoleBasedAccessControl"
         ],
         "summary": "List role definitions.",
-        "description": "Retrieves a list of role definitions.  PRIVATE PREVIEW https://aka.ms/PowerPlatform/RBAC .",
+        "description": "Retrieves a list of role definitions. Preview.",
         "operationId": "ListRoleDefinitions",
         "produces": [
           "application/json"

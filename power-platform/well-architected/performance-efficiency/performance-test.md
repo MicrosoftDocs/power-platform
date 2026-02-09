@@ -144,7 +144,7 @@ To set up your testing environment in a way that boosts performance efficiency, 
 
 - _Replicate network conditions_. Configure the network settings in the test environment to replicate the expected network conditions during the actual workload deployment. You need to include bandwidth, latency, and network protocols.
 
-- _Install and configure dependencies_. Install any apps from AppSource, and other dependencies that are required for the workload to run correctly. This includes configuring third-party services with the expected production configurations.
+- _Install and configure dependencies_. Install any apps from Marketplace, and other dependencies that are required for the workload to run correctly. This includes configuring third-party services with the expected production configurations.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: There are costs associated with maintaining separate test environments, storing data, using tooling, and running tests. Know the cost of performance testing, and find a way to optimize spending.
 

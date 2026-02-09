@@ -1,8 +1,8 @@
 ---
 title: "Create a C# Power Fx test function (preview)"
 description: "Describes the creating Power Fx functions using C# in Test Engine"
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly

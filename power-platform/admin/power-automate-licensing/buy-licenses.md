@@ -91,7 +91,7 @@ Follow these steps to assign Process capacity to an environment.
 
 1. Select **Save**.
 
-   :::image type="content" source="../media/power-automate-licensing/assign-process-license-environment-new.png" alt-text="Screenshot that shows the steps needed to assign a Process license to an environment in the new admin center." lightbox="../media/power-automate-licensing/assign-process-license-environment-new.png":::
+   :::image type="content" source="../media/power-automate-licensing/assign-process-license-environment-new.png" alt-text="Screenshot that shows the steps needed to assign a Process license to an environment." lightbox="../media/power-automate-licensing/assign-process-license-environment-new.png":::
 
 #### Assign a Process license to a flow
 
@@ -151,7 +151,7 @@ Follow these steps to allocate add-ons to an environment.
    > The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in each environment.
 1. Select **Save**.
 
-   :::image type="content" source="../media/power-automate-licensing/assign-license-environment-new.png" alt-text="Screenshot that shows the steps needed to assign a per flow license to an environment and manage add-ons in the new admin center." lightbox="../media/power-automate-licensing/assign-license-environment-new.png":::
+   :::image type="content" source="../media/power-automate-licensing/assign-license-environment-new.png" alt-text="Screenshot that shows the steps needed to assign a per flow license to an environment and manage add-ons." lightbox="../media/power-automate-licensing/assign-license-environment-new.png":::
 
 #### Assign a per flow license to a flow
 
@@ -176,7 +176,7 @@ After you update your flow, anyone will be able to use that flow, even if it use
 1. In the **Licensing** pane, select **Capacity add-ons**. 
 1. Select **Add-ons** > **Manage** in the add-on section.
 
-:::image type="content" source="../media/power-automate-licensing/assign-unattended-add-on-new.png" alt-text="Screenshot that shows how to assign unattended RPA add-ons in the new admin center." lightbox="../media/power-automate-licensing/assign-unattended-add-on-new.png":::
+:::image type="content" source="../media/power-automate-licensing/assign-unattended-add-on-new.png" alt-text="Screenshot that shows how to assign unattended RPA add-ons." lightbox="../media/power-automate-licensing/assign-unattended-add-on-new.png":::
 
 Users can now run unattended desktop flows within the environment that has the unattended capacity.
 

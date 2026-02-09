@@ -4,7 +4,7 @@ description: Instructions to install, update, and uninstall the Power Platform C
 ms.author: marcsc
 author: devkeydet
 ms.reviewer: jdaly
-ms.date: 02/27/2024
+ms.date: 01/20/2026
 ms.subservice: developer
 ms.topic: how-to
 search.audienceType: 
@@ -13,7 +13,7 @@ contributors:
 - JimDaly
 ms.custom: bap-template
 ---
-# Install Power Platform CLI using Windows MSI
+# Install Power Platform CLI by using Windows MSI
 
 **Applies to:** :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Windows only
 
@@ -29,8 +29,8 @@ The [pac data](../cli/reference/data.md) and certain [pac package](../cli/refere
 
    :::image type="content" source="media/powerapps-cli-1.0-install.png" alt-text="Accept the terms of the license agreement and install the Power Apps CLI":::
 
-1. Select **Install**
-1. When the Power Apps CLI Setup wizard is completed, select **Finish**.
+1. Select **Install**.
+1. When the Power Apps CLI Setup wizard finishes, select **Finish**.
 
 
 ## Update
@@ -43,19 +43,19 @@ pac install latest
 
 ## Uninstall
 
-1. Download the [powerapps-cli-1.0.msi](https://aka.ms/PowerAppsCLI) file
-1. Open the `powerapps-cli-1.0.msi` file
-1. Select **Next**
-1. In the **Change, repair, or remove installation** screen, select **Remove**
-1. In the **Ready to remove PowerApps CLI** screen, select **Remove** to confirm
-1. When the Power Apps CLI Setup wizard is completed, select **Finish**
+1. Download the [powerapps-cli-1.0.msi](https://aka.ms/PowerAppsCLI) file.
+1. Open the `powerapps-cli-1.0.msi` file.
+1. Select **Next**.
+1. In the **Change, repair, or remove installation** screen, select **Remove**.
+1. In the **Ready to remove PowerApps CLI** screen, select **Remove** to confirm.
+1. When the Power Apps CLI Setup wizard is completed, select **Finish**.
 
 ## Manage versions
 
-Each time you install Power Platform CLI using Windows MSI, the old installations aren't removed. You can revert back to an earlier installed version if there's an issue with a newer version.
+Each time you install Power Platform CLI by using Windows MSI, the old installations aren't removed. You can revert to an earlier installed version if there's an issue with a newer version.
 
-You can type `pac use` and press <kbd>Enter</kbd> to list installed versions.
-If you have multiple versions installed on your system, then you can type `pac use <CLI version number>` and press <kbd>Enter</kbd> to use a specific version.
+Type `pac use` and press <kbd>Enter</kbd> to list installed versions.
+If you have multiple versions installed on your system, type `pac use <CLI version number>` and press <kbd>Enter</kbd> to use a specific version.
 
 ```
 C:\> pac use
@@ -74,7 +74,7 @@ C:\>
 
 ## Known issue with `pac power-fx repl`
 
-When you install using the Windows MSI, the shell can stop responding when you try to use [pac power-fx repl](../cli/reference/power-fx.md#pac-power-fx-repl). To work around this issue, install and use the [Visual Studio Code extension](install-vs-code-extension.md) or [install Power Platform CLI with .NET Tool](install-cli-net-tool.md).
+When you install Power Platform CLI by using the Windows MSI, the shell can stop responding when you try to use [pac power-fx repl](../cli/reference/power-fx.md#pac-power-fx-repl). To work around this problem, install and use the [Visual Studio Code extension](install-vs-code-extension.md) or [install Power Platform CLI with .NET Tool](install-cli-net-tool.md).
 
 ### See also
 

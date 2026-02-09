@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/11/2025
+ms.date: 02/02/2026
 ms.subservice: admin
 ms.author: laswenka
 ms.contributors:
@@ -60,6 +60,8 @@ Be sure to check out the latest known limitations available in the overview arti
 
 You can provision a new environment with finance and operations apps preinstalled using the Power Platform admin center or PowerShell.
 
+### [Admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**.
@@ -73,12 +75,62 @@ You can provision a new environment with finance and operations apps preinstalle
     - Choose an available template such as Finance (preview), Supply Chain Management (preview), and so on.
 1. Select **Save**.
 
+### [PowerShell](#tab/PowerShell)
+
+1. Open your PowerShell console application.
+1. Install the required module.
+   
+    ```powershell
+    Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
+    ```
+1. Add your Power Platform account.
+   
+    ```powershell
+    Add-PowerAppsAccount -Endpoint prod
+    ```
+1. Construct the JSON object for template parameters.
+
+    ```powershell
+    $jsonObject= @"
+    {
+      "PostProvisioningPackages":
+      [
+        {
+          "applicationUniqueName": "msdyn_FinanceAndOperationsProvisioningAppAnchor",
+          "parameters": "DevToolsEnabled=true|DemoDataEnabled=true"
+        }
+      ]
+    }
+    "@ | ConvertFrom-Json
+    ```
+1. Provision the new environment (replace values as needed, and ensure your chosen environment name is globally unique and under 20 characters).
+
+    ```powershell
+    New-AdminPowerAppEnvironment -DisplayName "MyUniqueNameHere" -EnvironmentSku Sandbox -Templates "D365_FinOps_Finance" -TemplateMetadata $jsonObject -LocationName "Canada" -ProvisionDatabase
+    ```
+
+> [!IMPORTANT]
+> If you require the user interface (UI), follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md). You can't currently use the UI to create new developer-focused sandbox and production environments that have finance and operations apps.
+
+---
+
 ## Delete the environment
 
 In this procedure, delete the environment you previously created. Deleting an environment is an action commonly done by admins who want to free up the Dataverse and Operations storage consumed by this environment for other needs. An environment can be deleted using the Power Platform admin center or PowerShell.
+
+### [Admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**.
 1. Select an appropriate environment, and then select the **Delete** button in the command bar at the top of the page. Confirm that you want to delete the environment and proceed.
 
+### [PowerShell](#tab/PowerShell)
+
+Use the following script to delete the previously created environment. Set the **environmentID** appropriately.
+
+```powershell
+#Remove the previously created environment by ID
+Remove-AdminPowerAppEnvironment -EnvironmentName [Guid]
+```
+---

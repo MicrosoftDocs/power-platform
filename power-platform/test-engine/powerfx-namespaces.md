@@ -1,8 +1,8 @@
 ---
 title: "Use Power Fx namespaces in testing (preview)"
 description: "Describes the Power Fx namespaces used in Test Engine"
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly

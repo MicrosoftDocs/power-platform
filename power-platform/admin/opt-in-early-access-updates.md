@@ -1,12 +1,12 @@
 ---
 title: Opt in to early access updates 
-description: Opt in to early access updates in Microsoft Power Platform and Dynamics 365. 
+description: Learn how to opt in to early access updates for Power Platform.
 author: paulda64
 ms.subservice: admin
 ms.author: paulda
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 12/12/2025
+ms.date: 02/03/2026
 search.audienceType: 
   - admin
 contributors:
@@ -20,213 +20,207 @@ ms.custom: sfi-image-nochange
 ---
 # Opt in to early access updates
 
-Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
+The Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality. Each major release includes features that might affect the user experience. The schedule is application-specific. Check the [Release Plans](/dynamics365/release-plans/) to view the feature release schedule for the applications you use.
 
-Each major release includes features that may affect the user experience. You may opt in for early access to update to the new release. Use the early enrollment period to validate the new functionality.
-
-> [!TIP]
-> Check out the early access features for Microsoft [Power Platform](/power-platform-release-plan/2021wave1/features-ready-early-access) and [Dynamics 365](/dynamics365-release-plan/2021wave1/features-ready-early-access) to know the features that roll out to the users automatically when you opt in for an update.
-
-## Early access availability
-
-Early access begins approximately two months before general availability of each release wave in your region.
-
-**Release wave 1**
-
-- Early access: First Monday of February
-- Sovereign early access: Second Monday of February
-
-**Release wave 2**
-
-- Early access: First Monday of August
-- Sovereign early access: Second Monday of August
-
-## Deployment schedule  
-
-|Region  | Deployment schedule for 2025 wave 2 early access |
-|---------|---------|
-| Canada                       | July 23, 2025  |
-| South America                | July 23, 2025  |
-| India                        | July 23, 2025  |
-| France                       | July 23, 2025  |
-| South Africa                 | July 23, 2025  |
-| Germany                      | July 23, 2025  |
-| Switzerland                  | July 23, 2025  |
-| Norway                       | July 23, 2025  |
-| Korea                        | July 23, 2025  |
-| Sweden                       | July 23, 2025  |
-| Singapore                    | July 28, 2025  |
-| United Arab Emirates         | July 28, 2025  |
-| Japan                        | July 28, 2025  |
-| Asia Pacific                 | July 28, 2025  |
-| England                      | July 28, 2025  |
-| Australia                    | July 28, 2025  |
-| Europe                       | July 30, 2025  |
-| North America                | August 4, 2025 |
+| Wave release | Early access typical range |
+|---|---|
+| Wave 1 | February through April |
+| Wave 2 | August through October |
 
 > [!NOTE]
-> Sovereign regions begin early access one week after production regions.
-
-General availability dates are listed in [General availability deployment](general-availability-deployment.md#deployment-schedule). These dates are updated with each release wave.
-
-> [!IMPORTANT]
-> You must explicitly opt in for early access.
->
-> - For each _release wave_, you must opt in for early access updates.
-> - For each _environment that you want updated_, you must opt in for early access updates.
-
-The following image is an example of an early update availability timeline.
-
-:::image type="content" source="media/opt-in-2020-timeline.png" alt-text="Opt in timeline example for 2020.":::
-
-> [!NOTE]
-> After a release wave is generally available, the updates status in your environments become **On** to automatically receive all planned features and updates throughout the release.
->
-> To learn more, see [release schedule and early access](/dynamics365/get-started/release-schedule).
-
-## Environments available for early access updates
-
-The early access updates are available for all types of environments, including trial, sandbox, and production. However, the best practice is to enable the updates in **trial** or **sandbox** environments before production environments.
-
-[Tenant to tenant migration](move-environment-tenant.md) isn't supported for early access updates.  
-
-> [!IMPORTANT]
-> Although you can get early access updates in a production environment, we highly recommend that you create a copy of your production environment as a sandbox environment to try out the new features first. The updates can't be reverted after they've been deployed; therefore, if you test and validate the updates in a sandbox environment before enabling them in a production environment, you can determine the impact they'll have on users in your organization.
->
-> Be sure to:
->
-> - Learn about [Release plans for Dynamics 365, Power Platform, Cloud for Industry, and Copilot](/dynamics365/release-plans/)
-> - Review [Prepare for a release wave](#prepare-for-a-release-wave).
-> - Validate and test the updates in a sandbox environment before rolling out to production.
+> The legacy opt-in options (**Manage** and **Update Now**) are removed. To opt in to early access features, use the monthly or semi-annual release channel.
 
 ## How to get early access updates
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select **Manage** in the navigation pane.
-1. In the **Manage** pane, select **Environments**. Then select an environment.
-1. Under **Updates**, the new release wave is available. Select **Manage**.
-1. Select **Update now**, and then proceed through the confirmation dialog boxes to get the new features and capabilities of the release wave.
-
-After the update is complete, all early access features will be turned on for your model-driven apps in your environment.
+### Before you begin
+- Have admin access to the Power Platform admin center.
+- Check the [Release Plans](/dynamics365/release-plans/) to see when features for your applications are scheduled for release. 
+- **Recommended**: Create a sandbox environment from production for testing.
 
 > [!NOTE]
+> If you don't have a sandbox copy of your production environment, you can [create a copy](copy-environment.md) in the Power Platform admin center.
 >
-> - All available updates to your environment initiate at once.
-> - After they're deployed, the updates can't be reverted. Be sure to update your sandbox or trial environment before updating the production environment.
-> - Only the apps that you currently have licenses for update. Applications that haven't been installed before don't update.
-> - It might take a few hours to complete the updates. All applications in the environment are still available during the update, though you might experience slightly reduced performance.
+> You might be able to create the copy as an [early release cycle environment](early-release.md), putting it first in line for new rollouts. This option is also known as _First Release_, _Station 1_, or _Station FRE_.
 
-## Other requirements to get early access updates
+### Use a release channel
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select the environment you want to update.
+1. Select **Settings**.
+1. On the **Settings** page, select **Product** > **Behavior**.
+1. Set the **Release channel** option to **Monthly channel** or **Semi-annual channel**.
+1. Select **Save**. Changes are applied immediately.
 
-Some apps require more steps to turn on early access features. If you have any of the following apps, after enabling the early access updates in the Power Platform admin center, you must complete the following manual steps.
+### Validation steps
+Check the following items:
+- Key scenarios work as expected in the environment.
+- Customizations in your applications, if any, are updated to respond to the new capabilities.
+- Internal readiness materials, such as training and communications, for your organization are updated based on new features or user experiences.
+- If you find any problems during validation, such as regressions or functional or performance problems, contact [Support](get-help-support.md) or get help from [Dynamics 365 forum](https://community.dynamics.com/f).
 
-|Early access apps  |Description of manual steps  |
-|---------|---------|
-|Microsoft Cloud for Healthcare | If you have Microsoft Cloud for Healthcare solutions powered by Dynamics 365, you must update or deploy from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). For detailed instructions, see [Deploy Microsoft Cloud for Healthcare](/dynamics365/industry/healthcare/deploy). |
-| Dynamics 365 Service Scheduling | After you opt in to early access: <br /> 1. Sign in to the Power Platform admin center as a tenant admin. <br />2. Select **Dynamics 365 Service Scheduling**. <br /> 3. Select **Install** and follow the steps. |
-
-> [!IMPORTANT]
-> Be sure to turn on the early access updates in the Power Platform admin center first. If you run the Dynamics 365 Marketing setup wizard to update your Marketing app to a new release wave before activating the early access updates in the Power Platform admin center, you must [run the Dynamics 365 Marketing setup wizard again](/dynamics365/customer-engagement/marketing/re-run-setup) after opting in to install and deploy the early access features.
-
-## Update status and Retry
-
-To check the update status, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and select the environment. From **Updates**, you see the update process of each of the applications.
-
-### Retry
-
-If an application update failed during the opt-in update, you can use the **Retry** button to restart the update for the failed application.
-
-The retry restarts the update for the failed application. If multiple applications failed during the update, you need to retry for each of the failed updates individually.
-The updates might take a few hours. If multiple retry attempts fail after 24 hours, contact [Support](https://dynamics.microsoft.com/support/) for assistance.
-
+## Benefits of using release channels vs. legacy opt-in options
+When you save the **Release channel** setting (as described in [Use a release channel](#use-a-release-channel)), your environment immediately starts to behave according to the setting you chose. You don't need to deploy the application to get the features. You can switch between the **Monthly channel** and **Semi-annual channel**. These settings persist for your environment and you don't need to update them every release wave.
+ 
 > [!NOTE]
-> The retry experience is only available for early access updates. The retry experience doesn't apply to general availability updates.
+> Adjust your environment's release channel only for preview features. However, you can change release channels for applications, solutions, or users. For more information about advanced options, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 
-### Confirm update complete
+## Release channels comparison
+You can choose to receive features on a monthly basis or a semi-annual basis.
 
-To verify that a release wave is deployed, open the environment, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **About** to see the release wave that's deployed as shown in the example screenshot.        |.
+- **Monthly channel** features become visible every month. For more information, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
+- **Semi-annual channel** features become visible at [general availability deployment](general-availability-deployment.md#deployment-schedule) in April and October.
 
-![Opt in status webclient](media/update-status-webclient.png "Opt in status webclient") <br /> 
+| Capability |  Monthly channel | Semi-annual channel|
+|-|-|-|
+|New feature delivery | Monthly | General availability in April or October |
+|Preview feature update frequency | Weekly | No preview features |
+|Best for| Dev/Test enviroments|Production environments|
 
-> [!NOTE]
-> You need to select **About** from a Dynamics 365 apps page that's displayed in [Unified Interface](about-unified-interface.md), such as Sales Hub or Customer Service Hub pages.
->
-> The server version won't be updated to the next version after a release wave is deployed.
+For more information about release channels, see [Release channels for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview).
 
-## Features available in the early access updates
+## Frequently asked questions (FAQ)
 
-Each release wave includes features and functionality that are available for different types of users. They're categorized as the following three types of features:
+This section provides answers to frequently asked questions about early access updates and release channels.
 
-- **Users, automatically**: These features include changes to the user experience for users and are available automatically.
-- **Admins, makers, or analysts, automatically**: These features are meant to be used by administrators, makers, or business analysts and are available automatically.
-- **Users by admins, makers, or analysts**: These features must be turned on or configured by the administrators, makers, or business analysts to be available for their users.
+### Release channel settings and configuration
 
-By opting in for early access updates, you get features that are mandatory changes that are automatically available for users. For more details, check the **Enabled for** column in [Dynamics 365](/dynamics365-release-plan/2021wave1/) and Microsoft [Power Platform](/power-platform-release-plan/2021wave1/) release plans.
+#### Can I switch between release channels?
 
-## Prepare for a release wave
+Yes. You can switch between the **Monthly channel** and **Semi-annual channel** at any time. The change takes effect when you save, and no deployments are needed.
 
-The following checklist provides the general guidelines to help you prepare for a release wave.
+#### Does an environment that previously opted in for early access updates automatically get the early access update of new releases?
 
-1. Review the [release plans](/dynamics365/release-plans/) as soon as the early access updates are available to learn about upcoming features.
+Yes. The **Monthly channel** release channel setting persists for your environment until you change it.
 
-2. Create a sandbox environment from the production environment. After a new release wave is deployed for an environment, it can't be reverted. Thus, we strongly recommend using a new release wave in a sandbox environment that's a replica or copy of the existing production environment. Use this environment to test and validate the new features in the sandbox environment without affecting the current production environment.
+#### What is the "Auto" channel option and why does it exist?
 
-   > [!NOTE]
-   > If you don't have a sandbox copy of your production environment, you can [create a copy](copy-environment.md) in the Power Platform admin center.
+In October 2024, before cutting over to **Monthly channel**, Microsoft set **Auto** to **Semi-annual channel**. Auto might be used differently in the future as a placeholder. Check the comments on **Auto** for each channel in [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 
-3. Opt in to the early access updates from the Power Platform admin center to use the new release wave in the sandbox environment.
+#### How does the org-level setting interact with app-level settings?
 
-4. Validate that key scenarios work as expected in the sandbox environment after the update is completed.
-   - Update the customizations in your applications, if any, to respond to the new capabilities as needed.
-   - You might also need to update internal readiness materials (training and communications) for your organization based on new features or user experiences.
-   - If you find any issues during the validation&mdash;such as regressions, or functional or performance issues&mdash;contact [Support](https://dynamics.microsoft.com/support/) or get help from [Dynamics 365 forum](https://community.dynamics.com/f).
+Lower-level values can override the organization setting. For documentation on the ordering and hierarchy, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 
-5. Allow the early access updates in your production environment. We recommend allowing the updates in your production environment during business downtime.
+### Deployment timing and schedules
 
-## Early access updates FAQ
+#### When are updates available for testing in the sandbox environment?
 
-### Will an environment that previously opted in for the early access updates automatically get the early access update of the new releases?
+Monthly channel releases occur every month. New features can start previewing as soon as the following month after April or October wave releases.
 
-An environment opted in for the previous early access isn't automatically opted in for the next early access release. Each early access release needs to be opted in explicitly. When a release becomes generally available, all environments are automatically updated to the latest release throughout the release wave. 
+|Release wave |Typical early access starts|Full range | Build range |
+|---|--|--|---|
+|April wave|Mid February| November - April| 9.2.25094 - 9.2.26033|
+|October wave|Mid August| May - October| 9.2.26034 - 9.2.26093|
 
-### After I update to a new release wave, can I export solutions?
+#### How can customers know when monthly releases are deployed?
 
-Yes, you can export solutions to other environments that have also been updated to the same release wave.
+Release plans show approximate deployment schedules. Deployments happen every weekend. The monthly release is a feature flag that's switched on for a region (station), not an actual deployment. Customers should continue using the version history resources they've been using to track updates and timings.
 
-### Will the version number be updated with each release wave?
+#### When are features available for testing before general availability?
 
-No, the version number isn't necessarily going to change with a release wave.
+Applications ship approximately six weeks ahead of the **Monthly channel** or **Semi-annual channel** enablement date. Around mid-February and mid-August, all apps have features available in all stations. This timing allows for thorough testing:
 
-### Will Microsoft provide a free sandbox environment at no charge for testing updates?
+- Customers in the North America station have about eight weeks of testing duration.
+- Environments in Station 1 (early release cycle) can test monthly features for five weeks before reaching Station 2, and eight weeks before reaching Station 5.
+- Testing within the same station provides a four week preview between feature availability to feature enablement.
+
+For more information, see [monthly-release-schedule](/power-apps/maker/model-driven-apps/channel-overview#monthly-release-schedule).
+
+#### What happens to environments after a release wave becomes generally available?
+
+**Monthly channel** environments continue to receive updates and have monthly features enabled.
+
+**Semi-annual channel** environments automatically enable new features based on the regional location of your environment. For more information, see [General availability deployment](general-availability-deployment.md).
+
+Throughout a release wave, all environments are updated during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environment's region. 
+
+### Controlling production environment updates
+
+#### How can customers minimize changes in production while still controlling when features are deployed?
+
+April and October general availability features are no longer _deployed_. To control when features appear in production:
+
+1. Switch from the **Semi-annual channel** to the **Monthly channel** at the environment level, which is equivalent to the early opt-in approach.
+1. After confirming the build number is YY033 (April) or YY093 (October), switch back to the **Semi-annual channel**.
+
+Previously, we recommended opting in production environments at least one week before the general availability date. Release channels provide the same control through channel switching.
+
+#### Are customers locked into regional deployment dates?
+
+No. Customers can control feature visibility by switching between the **Monthly channel** and the **Semi-annual channel**. However, platform deployments occur on the standard schedule. General availability dates follow the schedule: Wave 1 (April) uses build 9.2.26033.* and Wave 2 (October) uses build 9.2.26093.*.
+
+### Version numbers and compatibility
+
+#### Does the environment database version number change between the Monthly and Semi-Annual channels?
+
+No, the version number doesn't change. The setting only determines application feature visibility. The platform and application versions are the same across channels. 
+
+#### Do different channel settings cause issues with solution imports?
+
+No. Environments in the same station should have very similar build numbers for the organization and installed applications. **Monthly channel** vs. **Semi-annual channel** doesn't change versions. It only controls feature visibility. This difference shouldn't cause problems when importing solutions between environments with different channel settings.
+
+### Application lifecycle management (ALM) and environment strategies
+
+#### Does the release channel impact ALM processes?
+
+Choose the release channel that fits your requirements. Decide if you want small changes throughout the year or two larger changes. Some organizations use **Monthly channel** in dev/test environments and **Semi-annual channel** in production environments. For guidance on choosing the appropriate strategy, see [Release channel for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview).
+
+#### Does Microsoft provide a free sandbox environment for testing updates?
 
 No. You're responsible for creating a sandbox environment from a copy of the production environment for testing and validation, at your own cost.
 
-### When will the updates be available for testing in the sandbox environment?
+### Channel behavior and feature visibility
 
-See [Early access availability](#early-access-availability).
+#### Does the Semi-annual channel mean no preview features?
 
-### How do I report issues with updates?
+Yes, that's correct. Environments using **Semi-annual channel** don't see preview features until they become generally available in April or October.
 
-Create a [support ticket](https://dynamics.microsoft.com/support/).
+#### If I switch from Monthly channel to Semi-annual channel, do features roll back?
 
-### Can I skip or postpone an update?
+Yes. Switching from **Semi-annual channel** reverts visibility of features that have general availability tied to the release wave. Many smaller features that are part of monthly releases go to general availability independently of release wave and remain visible.
 
-No. To ensure you get the best quality of the new features and capabilities, all customers are required to update to the latest release as scheduled.
+#### How does the rollback feature work?
 
-### What happens to the environments after a release wave becomes generally available?
+Rollback is controlled through Feature Control Bits (FCBs) in the Unified Client Interface (UCI) in combination with org, app, solution, user, and browser settings. For more information, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).  Application deployments are no longer needed to switch between preview or general availability features.
 
-If you turned on the early access updates in your environments, you continue to get updates throughout the release wave.
+### Documentation and communication
 
-If you didn't opt in for the early access updates in your environments, after a release wave is generally available, all environments will be automatically turned on to receive mandatory updates of the release wave. For regional deployment, see [General availability deployment](./general-availability-deployment.md)
+#### Is there monthly documentation listing new and updated features?
 
-Throughout a release wave, your environments are updated during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center?view=o365-worldwide&preserve-view=true). Each notification includes the dates, the maintenance window, and the Release Plan reference for the list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time.
+Yes. Release plans are updated weekly as feature information becomes available: [Release plans for Dynamics 365, Power Platform, Cloud for Industry, and Copilot](/dynamics365/release-plans/).
 
-See [Policies and communications](policies-communications.md#scheduled-system-updates-and-maintenance).
+#### Does release documentation specify when features are available in Monthly vs. Semi-Annual channels?
 
-### Related content
+Yes. Each release plan has a "What's new and planned" section with preview and general availability dates. Each release manager enters these dates. 
 
-[Dynamics 365 release schedule and early access ](/dynamics365/get-started/release-schedule)<br />
-[Dynamics 365 and Microsoft Power Platform Release Plans ](/dynamics365/release-plans/)<br />
-[Policies and communications](./policies-communications.md)
+#### Are release notes still published as a single block twice a year?
 
+No. Release notes now use a new system with a weekly publish cadence. The initial Wave 1 2026 plan was published on March 18, 2026, with weekly updates after that.
+
+### Product coverage and availability
+
+#### Does the release channel apply to Contact Center and Copilot Studio?
+
+The release channel (Monthly/Semi-Annual) primarily applies to model-driven apps.  There's no change for Contact Center or Copilot Studio.
+
+#### When will release channels be available in GCC, GCC High, and DoD?
+
+The rollout follows the [general availability deployment](general-availability-deployment.md) schedule for these stations.
+
+### Support and problems
+
+#### Can I skip or postpone an update?
+
+No. Deployments happen every week. The release channel isn't for deployment, but a feature flag that turns on or off depending on your channel setting. To ensure you get the best quality of new features and capabilities, all customers must update to the latest release as scheduled.
+
+#### How do I report problems with updates?
+
+Create a [support ticket](https://dynamics.microsoft.com/support/). Include the name of the application to help route your problem.
+
+## Related content
+
+[Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule)<br />
+[Dynamics 365 and Microsoft Power Platform Release Plans](/dynamics365/release-plans/)<br />
+[Policies and communications](policies-communications.md)
+  
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

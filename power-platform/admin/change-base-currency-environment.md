@@ -18,7 +18,7 @@ When you create an environment that includes a database in Microsoft Power Platf
 In some situations, you might have to change the base currency of an environment. This article explains how to change it.
 
 1. Before you begin base currency conversion, make a backup of the environment's database. Learn more: [Back up and restore environments](backup-restore-environments.md)
-1. Open [AppSource](https://appsource.microsoft.com/), enter *base currency* in the search field, and then select **Get it now** next to **Base Currency Conversion**. Follow the on-screen instructions to install the app in the Power Platform environment that you want.
+1. Open [Marketplace](https://marketplace.microsoft.com/), enter *base currency* in the search field, and then select **Get it now** next to **Base Currency Conversion**. Follow the on-screen instructions to install the app in the Power Platform environment that you want.
 1. After the Base Currency Conversion solution is installed, open [Power Apps](https://make.powerapps.com/), select **Apps** on the left navigation pane, and then select **Play** for the **Base Currency Conversion** app.
 
     > [!NOTE]

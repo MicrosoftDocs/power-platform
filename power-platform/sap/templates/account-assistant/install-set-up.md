@@ -72,7 +72,7 @@ To create the connections in advance, take these steps:
 
 ## Step 3: Install solution files
 
-You can download either managed or unmanaged solution files from [GitHub](https://aka.ms/agents/account-assistant-for-sap/github) to manually install into your prepared environment according to your organization's requirements. Skip this step if you previously installed from Microsoft AppSource:
+You can download either managed or unmanaged solution files from [GitHub](https://aka.ms/agents/account-assistant-for-sap/github) to manually install into your prepared environment according to your organization's requirements. Skip this step if you previously installed from Microsoft Marketplace:
 
 1. Download the managed or unmanaged solution files:
     - [Managed](https://aka.ms/agents/account-assistant-for-sap/managed)

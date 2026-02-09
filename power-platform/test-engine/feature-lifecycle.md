@@ -1,8 +1,8 @@
 ---
 title: "Test Engine feature lifecycle (preview)"
 description: "Describes how Test Engine features progress from open source to preview to general availability"
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly

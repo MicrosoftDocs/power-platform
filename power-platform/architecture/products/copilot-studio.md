@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 08/01/2025
+ms.date: 02/04/2026
 ---
 
 # Copilot Studio reference architectures and solution ideas
@@ -17,6 +17,8 @@ Microsoft Copilot Studio is a graphical, low-code platform that allows organizat
 Understanding Copilot Studio architecture concepts and exploring solution ideas can help you unlock new opportunities for automation, optimization, and innovation in your organization. In this article, we look at:
 
 - **Key concepts**: Learn about key architecture concepts that help you build robust, efficient, and maintainable solutions with Copilot Studio.
+
+- **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Power Apps.
 
 - **Solution ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Copilot Studio.
 
@@ -36,8 +38,9 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 
 | Title | Description |
 | --- | --- |
-| **[Use an autonomous agent in Copilot Studio for document processing](../reference-architectures/document-processing-agent.md)** | Learn how to build an autonomous agent in Copilot Studio for document processing. |
-| **[Extract and analyze agent conversation transcripts](../reference-architectures/analyze-agent-conversation-transcripts.md)** | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
+| [**Use an autonomous agent in Copilot Studio for document processing**](../reference-architectures/document-processing-agent.md) | Learn how to build an autonomous agent in Copilot Studio for document processing. |
+| [**Extract and analyze agent conversation transcripts**](../reference-architectures/analyze-agent-conversation-transcripts.md) | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
+| [**Use Copilot Studio agents in model-driven apps**](../reference-architectures/contextual-ai-model-driven-app.md) | Learn how to integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
 
 ## Solution ideas
 
@@ -50,6 +53,10 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 | [**Ticket management system with Copilot Studio agents**](../solution-ideas/agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
 | [**Automate software bug reporting with Auto Triage AI Agent**](../solution-ideas/auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle issue creation and follow-up, reducing the burden on customer support teams and enhancing the customer experience. |
 | [**Intelligent cardiac triage and scheduling with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
+| [**​Build anomaly detection with Copilot Studio and Fabric​**](../solution-ideas/agent-anomaly-detection.md) | Automate fraud detection by identifying duplicate invoices, suspicious vendor activity, and policy violations, using Microsoft Copilot Studio and Fabric. |
+| [**​​Streamline customer service with a customer support assistance agent**​](../solution-ideas/customer-support-agent.md) | Streamline customer support by building a Microsoft Copilot Studio conversational agent that integrates Dynamics 365, Dataverse, and SharePoint. |
+| [**​Improve the new hire experience with a smart onboarding agent**](../solution-ideas/onboarding-agent.md) | Create a conversational onboarding agent in Copilot Studio that automates the new hire onboarding process. |
+| [**AI-enabled donor management solution**](../solution-ideas/agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
 
 ## Related resources
 
@@ -57,5 +64,5 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 - [Copilot Studio guidance](/microsoft-copilot-studio/guidance/)
 - [Copilot Studio implementation guide](https://aka.ms/CopilotStudioImplementationGuide) (PDF)
 - [Copilot Studio resources](https://aka.ms/CopilotStudio/resources)
-- [Introduction to Microsoft Power Platform for developers](/power-platform/developer/get-started)
-- [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/)
+- [Introduction to Microsoft Power Platform for developers](../../developer/get-started.md)
+- [Application lifecycle management (ALM) with Microsoft Power Platform](../../alm/index.yml)

@@ -15,8 +15,8 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "Create a rule based policy.",
-        "description": "Create a new rule based policy. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "summary": "Create rule based policy.",
+        "description": "Create new rule based policy. The input includes rule sets, inputs, and other metadata related to the policy.",
         "operationId": "CreateRuleBasedPolicy",
         "consumes": [
           "application/json"
@@ -857,11 +857,11 @@
       "type": "object",
       "properties": {
         "resourceId": {
-          "description": "Resource ID. FOr example, the environment group ID.",
+          "description": "Resource ID, for example - the environment group ID.",
           "type": "string"
         },
         "resourceType": {
-          "description": "The resource type.",
+          "description": "The Resource type.",
           "enum": [
             "NotSpecified",
             "EnvironmentGroup",
@@ -871,7 +871,7 @@
           "type": "string"
         },
         "behaviorType": {
-          "description": "The behavior type.",
+          "description": "The Behavior type.",
           "enum": [
             "NotSpecified",
             "Include",

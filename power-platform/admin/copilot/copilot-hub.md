@@ -4,7 +4,7 @@ description: Learn about the Copilot page in the Power Platform admin center for
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/21/2025
+ms.date: 01/14/2026
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -32,7 +32,7 @@ The **What’s new** page in the **Copilot** area provides admins with a central
 
 ## Settings
 
-The **Settings** page displays settings grouped by product. Some settings span across Power Platform and appear at the top in the **Power Platform** section. You can configure settings at the environment level, with some settings also configurable through environment groups and rules. When you select a setting, a panel opens where you can select your environment, select **Add**, and configure the control. Some settings in the Copilot Studio product direct you to documentation with instructions on how you can configure a data loss prevention (DLP) policy.
+The **Settings** page displays settings grouped by product. Some settings span across Power Platform and appear at the top in the **Power Platform** section. You can configure settings at the environment level, with most settings also configurable through environment groups and rules. When you select a setting, a panel opens where you can select your environment or group, select **Edit setting**, and configure the control. Some settings in the Copilot Studio product direct you to documentation with instructions on how you can configure a data loss prevention (DLP) policy or to the **Security** area for in-product configuration.
 
 > [!NOTE]
 > Tenant users with environment access can view Copilot settings.
@@ -65,12 +65,12 @@ As a tenant administrator, you can turn on or off AI capabilities such as Copilo
 1. On the **Settings** page, under **Dynamics 365 Sales**, select one of the following AI capabilities that you want to turn on:
    - **AI Agents**: Lets you turn on out-of-the-box Sales AI agents such as Sales Qualification Agent and Sales Close Agent. Learn more about Sales AI agents in [Sales AI Agents Overview](/dynamics365/sales/ai-agent-overview).
    - **Copilot**: Lets you turn on Copilot chat and other Copilot skills such as opportunity summary and lead summary in Dynamics 365 Sales. Learn more about Copilot in Dynamics 365 Sales in [Copilot in Dynamics 365 Sales overview](/dynamics365/sales/copilot-overview).
-1. Select an environment or environment group in the corresponding tab and select **Add**.
+1. Select an environment or environment group in the corresponding tab and select **Edit setting**.
 1. Select **On** to turn on the AI capability.
 1. Select **Save**.
 
 ## Product pages
-The product pages contain usage and cost insights specific to each product. Currently, there are product pages for **Copilot Studio**, **Power Apps**, and **Power Pages**.
+The product pages contain usage and cost insights specific to each product.
 
 ### Copilot Studio
 
@@ -93,6 +93,14 @@ Power Pages now has a dedicated experience within the **Copilot** area of the Po
 
 Admins can access detailed usage analytics and apply governance controls tailored to Power Pages, ensuring responsible and effective use of Copilot features across environments and individual sites.
 
+Visit [Copilot hub for Power Pages](/power-pages/admin/copilot-hub) to learn more.
+
 ### Dynamics 365 Sales
 
 Admins can view usage analytics for Copilot in Dynamics 365 Sales on the **Dynamics 365 Sales** page to understand the value that end users get from AI in Dynamics 365 Sales. The page includes monthly active user count information for Copilot in Dynamics 365 Sales. Furthermore, admins can look into Copilot by selecting it from the bottom table view. This opens a panel where you can see top environments and investigate those to see apps where users are interacting with Copilot the most.
+
+### Dynamics 365
+
+Admins can deploy agents for Dynamics 365 applications, such as finance and operations apps and Project Operations, directly from the **Dynamics 365** page using the [agent deployment wizard for Dynamics 365 agents](/dynamics365/fin-ops-core/dev-itpro/copilot/agent-deployment).
+
+This tool provides a unified and streamlined deployment experience for Microsoft’s AI-powered Dynamics 365 agents. It offers a guided, end-to-end setup process that simplifies configuration and reduces the time and effort required to enable agents consistently across environments.

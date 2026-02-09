@@ -48,13 +48,13 @@ There are two important workflows related to the agent:
 
 ### Document processing flow
 
-The document processing flow works like a state machine. The agent acts as an orchestrator, and the current state is stored in the Data Processing Events table in Dataverse. Here’s how the process works:
+The document processing flow works like a state machine. The agent acts as an orchestrator, and the current state is stored in the Data Processing Events table in Dataverse. Here's how the process works:
 
 1. A trigger identifies when a new document is ready for processing. This shows in the **Data sources** area in the architecture diagram. [Agent flows](/microsoft-copilot-studio/flows-overview) scan directories like Outlook mailboxes or SharePoint folders. When a document is added to any directory, the agent flow stores the document in the Data Processing Events table with status New and sends a message to the agent: `Process the document: {ID}.`
     - All attempts to add documents or update statuses in the Data Processing Events table follow the `Default` configuration in Power Automate. The flow retries up to four times with an exponential interval on requests that return statuses 408, 429, or 5xx, and on any connectivity exceptions.
     - If all retry attempts fail, debug and check the run history in Power Automate for the action that didn't run.
 
-1. The agent instructions tell it to call the `Document Extraction` action when it’s asked to process a document. The action runs, and the message ID is passed through.
+1. The agent instructions tell it to call the `Document Extraction` action when it's asked to process a document. The action runs, and the message ID is passed through.
 1. The `Document Extraction` action is an agent flow that receives a Data Processing Event ID as input and:
     - Gets the document stored in Dataverse.
     - Sends it to an AI prompt in AI Builder to process. This prompt uses GPT 4.o to:
@@ -152,7 +152,7 @@ The Document Processing agent is designed to achieve performance through optimiz
 
 The Document Processing agent is designed for document processing users by achieving simplicity and efficiency by using Power Platform components. The agent provides configurable experience to add document sources, allow extensibility to add additional document sources.
 
-### Responsible AI
+## Responsible AI
 
 The Document Processing agent is designed to achieve responsible AI standards by using Power Platform components including Copilot Studio which is designed for generative AI features. Learn more: [Responsible AI FAQ for Copilot Studio](/microsoft-copilot-studio/responsible-ai-overview).
 

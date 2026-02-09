@@ -1,8 +1,8 @@
 ---
 title: "Understanding Test Engine providers (preview)"
 description: "Comprehensive explanation of providers in Power Apps Test Engine"
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly

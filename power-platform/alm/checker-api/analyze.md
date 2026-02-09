@@ -72,7 +72,7 @@ Initiating an analysis job is done by submitting a `POST` request to the `analyz
 
 ## Example: initiate an analysis
 
-This is an example of initiating an analysis job with the _AppSource Certification_ ruleset, a single file, and excluding files that contain the text _jquery_ and _json_ in the name.
+This is an example of initiating an analysis job with the _Marketplace Certification_ ruleset, a single file, and excluding files that contain the text _jquery_ and _json_ in the name.
 
 **Request**
 

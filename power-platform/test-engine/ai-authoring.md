@@ -1,8 +1,8 @@
 ---
 title: AI-assisted test authoring with GitHub Copilot (preview)
 description: Learn how to use GitHub Copilot and AI tools to author tests for Power Platform applications
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly

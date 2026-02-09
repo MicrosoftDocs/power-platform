@@ -20,7 +20,7 @@ The Power Apps Developer Plan gives you a free development environment to build 
 - Create apps and flows without writing code, with full-featured Power Apps and Power Automate development tools. Easily share and collaborate on these solutions with others.
 - Connect to any data source by using [Power Platform connectors](/connectors/connector-reference/) or by creating your own custom connectors.
 - Use a fully managed, scalable data platform with Dataverse, including support for common business application actions. Use out-of-the-box common tables or build your own data schema.
-- Export the solutions you create in your developer environment, and publish them on Microsoft AppSource so your customers can test-drive them.
+- Export the solutions you create in your developer environment, and publish them on Microsoft Marketplace so your customers can test-drive them.
 
 ## Who can sign up for the Power Apps Developer Plan?
 
@@ -79,10 +79,10 @@ You can't increase capacity by applying add-ons to the quantities we include. If
 > [!NOTE]
 > The capacity entitlements of the developer environment, whether used or not, doesn't contribute to your company's overall quota.
 
-## Publishing to Microsoft AppSource
+## Publishing to Microsoft Marketplace
 
-Do you have an app that you'd like to share with customers? We now support Power Apps solutions on [Microsoft AppSource](https://appsource.microsoft.com/) as a way for you to share apps and flows with customers, and generate leads for your
-business. For more information, see [Publish your app on AppSource](/power-apps/developer/data-platform/publish-app-appsource).
+Do you have an app that you'd like to share with customers? We now support Power Apps solutions on [Microsoft Marketplace](https://marketplace.microsoft.com/) as a way for you to share apps and flows with customers, and generate leads for your
+business. For more information, see [Publish your app on Marketplace](/power-apps/developer/data-platform/publish-app-appsource).
 
 ## FAQ
 

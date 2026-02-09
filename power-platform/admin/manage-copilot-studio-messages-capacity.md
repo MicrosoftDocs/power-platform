@@ -75,8 +75,6 @@ View the Copilot Studio capacity consumed within that environment. The following
 ## Manage capacity
 Capacity allocation can be managed in the Power Platform admin center. 
 
-To allocate, complete the following steps depending on whether you're using the new admin center or the classic admin center.
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.

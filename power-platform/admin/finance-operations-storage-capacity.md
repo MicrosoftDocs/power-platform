@@ -4,7 +4,7 @@ description: Learn to use the finance and operations storage capacity report to 
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/15/2025
+ms.date: 01/23/2026
 ms.subservice: admin
 ms.author: swatim
 contributor: ellenwehrle 
@@ -18,7 +18,7 @@ search.audienceType:
 The finance and operations storage capacity report shows how much finance and operations storage your organization is using compared with how much its license entitles it to.
 
 > [!IMPORTANT]
-> This report helps you manage your storage more effectively. If you use more storage than your plan includes, please remove data you don't need or buy more storage.
+> This report helps you manage your storage more effectively. If you use more storage than your plan includes, remove data you don't need or buy more storage.
 >
 > Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
 >
@@ -26,8 +26,8 @@ The finance and operations storage capacity report shows how much finance and op
 >
 > Your organization must have the right licenses for the storage you use:
 >
-> - If you use more than your documented entitlements or usage limits, you must buy additional licenses.
-> - If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft will provide reasonable notice before suspending your online service.
+> - If you use more than your documented entitlements or usage limits, you must buy more licenses.
+> - If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft provides reasonable notice before suspending your online service.
 
 ## Licenses for finance and operations storage
 
@@ -82,11 +82,16 @@ To view the **Finance and Operations** capacity page, take the following steps:
 
 ### Table-level, drill-down view into storage consumption details for finance and operations environments
 
-Select the finance and operations database usage entry on the **Finance and operations** tab to see a table-level, drill-down view of how each table in your finance and operations environment is using capacity. You have the ability to obtain a near real-time snapshot of the table-level storage consumption. Additionally, you can track the time series trend, gaining insights into the evolution of storage across finance and operation tables. You also have the option to download the details in CSV format for streamlined data analysis and reporting.
+Select the value in the **Finance and operations database usage** column on the **Finance and operations** tab to see a table-level, drill-down view of how each table in your finance and operations environment is using capacity. 
 
-:::image type="content" source="media/finance-operations-storage-capacity/fno-database-usage.png " alt-text="Screenshot of the tab showing storage consumption for each finance and operations environment.":::
+:::image type="content" source="media/finance-operations-storage-capacity/database-usage.png " alt-text="Screenshot of the tab showing storage consumption for each finance and operations environment.":::
 
-:::image type="content" source="media/finance-operations-storage-capacity/fno-table-level-usage.png " alt-text="Screenshot of the table-level storage consumption for each finance and operations table.":::
+:::image type="content" source="media/finance-operations-storage-capacity/table-level-usage.png " alt-text="Screenshot of the table-level storage consumption for each finance and operations table.":::
+
+The **Finance and operations database usage**, pane appears, where you have the ability to obtain a near real-time snapshot of the table-level storage consumption. Select the links, at the top of the pane, to view detailed information.
+
+- By selecting the **View as chart** link, you can track the time series trend, gaining insights into the evolution of storage across finance and operation tables. 
+- By selecting the **Export to CSV** link, you can download the details in CSV format for streamlined data analysis and reporting.
 
 ## Address a storage capacity deficit
 

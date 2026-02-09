@@ -38,11 +38,11 @@ It's best to create the connections before you import the solution. If you creat
 
   [Learn how to manage connections in canvas apps.](/power-apps/maker/canvas-apps/add-manage-connections)
 
-## Step 2: Install SAP Setup Assistant from AppSource
+## Step 2: Install SAP Setup Assistant from Marketplace
 
-AppSource is a Microsoft digital storefront. Take these steps to go through the AppSource install process:
+Marketplace is a Microsoft digital storefront. Take these steps to go through the Marketplace install process:
 
-1. Go to the [SAP Setup Assistant on AppSource](<https://aka.ms/AccessSAPSetupAssistantTemplate>) and select **Get it now**.
+1. Go to the [SAP Setup Assistant on Marketplace](<https://aka.ms/AccessSAPSetupAssistantTemplate>) and select **Get it now**.
 1. In the **Install SAP Setup Assistant** window in the [Power Platform admin center,](https://admin.powerplatform.microsoft.com/) select the developer environment that you prepared.
 1. Agree to the *Terms and Privacy* statements when prompted.
 1. Select **Install** to install one [solution](/power-platform/alm/solution-concepts-alm) in your environment:
