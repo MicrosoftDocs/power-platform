@@ -27,7 +27,7 @@ In this article, you learn about a training system that uses integrations with M
 
 This solution uses a wide range of Power Platform resources to ensure up-to-date content is presented and proper assignment takes place.
 
-1. **Content Integrations**
+1. **Content integrations**
     1. Power Automate flows listen to any modified learning paths or modules to ensure the relationship between them stays consistent.
 
     1. From training assignment to learner submission, Power Automate creates notifications for both personas to ensure the lifecycle of training is communicated.
@@ -39,14 +39,14 @@ This solution uses a wide range of Power Platform resources to ensure up-to-date
 
     1. Dashboards provide visibility to Trainers for submitted trainings from Learners for review and finalization.
 
-1. **Process Automation**
+1. **Process automation**
     1. Power Automate flows listen to any modified learning paths or modules to ensure the relationship between them stays consistent.
 
     1. From training assignment to learner submission, Power Automate creates notifications for both personas to ensure the lifecycle of training is communicated.
 
     1. Power Automate triggers when a training is assigned to create progress records to track completion percentage.
 
-1. **Learner Portal (Learners)**
+1. **Learner portal (Learners)**
     1. Employees access the Learner Power Page and authenticate by using Microsoft Entra ID single sign-on (SSO) authentication.
 
     1. Learners can view their training assignment, where they can view content and length of training to help plan their self-paced training. They're redirected to Microsoft Learn to complete trainings. Once learning path or module is complete, they update their assigned training of completion.
@@ -65,7 +65,7 @@ This company simply wants to view content that is integrated to remove the manua
 
 ## Components
 
-[**Power Platform Dataflow**](/dataflows/overview-dataflows-across-power-platform-dynamics-365/): Dataflows enable customers to ingest, transform, and load data into Microsoft Dataverse environments.
+[**Power Platform dataflows**](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365/): Dataflows enable customers to ingest, transform, and load data into Microsoft Dataverse environments.
 
 [**Microsoft Dataverse**](/power-apps/maker/data-platform/): Dataverse lets you securely store and manage data that's used by business applications.
 
