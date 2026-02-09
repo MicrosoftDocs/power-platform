@@ -68,7 +68,7 @@ Virtual Network support can be configured and enabled using PowerShell scripts o
 1. Create the enterprise policy.
 1. Configure your Power Platform environment.
 
-::: zone pivot="PowerShell"
+::: zone pivot="powershell"
 
 ### Setup with PowerShell
 
