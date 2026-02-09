@@ -92,7 +92,7 @@ Virtual Network support can be configured and enabled using PowerShell scripts o
     ```PowerShell
     New-VnetForSubnetDelegation -SubscriptionId "00000000-0000-0000-0000-000000000000" -VirtualNetworkName "myVnet" -SubnetName "mySubnet" -ResourceGroupName "myResourceGroup" -CreateVirtualNetwork -AddressPrefix "10.0.0.0/16" -SubnetPrefix "10.0.1.0/24" -Region "westus"
     ```
-  ---
+    ---
 
     > [!IMPORTANT]
     > - If you plan to use the same delegated subnet for multiple Power Platform environments, you might need a larger IP address block than /24. Review subnet sizing guidance in [Estimating subnet size for Power Platform environments](vnet-support-overview.md#estimating-subnet-size-for-power-platform-environments).
