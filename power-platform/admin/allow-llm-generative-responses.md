@@ -20,7 +20,7 @@ AI innovation moves at a rapid pace, and each AI model has different strengths a
 
 Some model families are available in preview for evaluation purposes, and also in production as Microsoft subprocessors. The models available under the **Enable External Models** setting are hosted outside of Microsoft and, in some cases, are subject to their own usage and data handling terms. Currently, the only models available under the **Enable External Models** setting are through third-parties Anthropic and xAI.
 
-Starting January 7, 2026, Anthropic operates as a Microsoft subprocessor and the Microsoft [Product Terms](https://www.microsoft.com/licensing/terms?msockid=344e0e6ad66c6b3e19441848d7416abd) and [Microsoft Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?lang=18&msockid=344e0e6ad66c6b3e19441848d7416abd) apply to use of Anthropic models through Copilot Studio.
+On January 7, 2026, Anthropic operates as a Microsoft subprocessor and the Microsoft [Product Terms](https://www.microsoft.com/licensing/terms?msockid=344e0e6ad66c6b3e19441848d7416abd) and [Microsoft Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?lang=18&msockid=344e0e6ad66c6b3e19441848d7416abd) apply to use of Anthropic models through Copilot Studio.
 
 > [!NOTE]
 > Your must [allow Anthropic access in the Microsoft 365 admin center and allow xAI access in Microsoft 365 admin center.](/copilot/microsoft-365/connect-to-ai-subprocessor) If enabled there, you can access these settings in the Power Platform admin center.  
