@@ -28,11 +28,11 @@ In this article, you learn about a training system that uses integrations with M
 This solution uses a wide range of Power Platform resources to ensure up-to-date content is presented and proper assignment takes place.
 
 1. **Content integrations**
-    1. Power Automate flows listen to any modified learning paths or modules to ensure the relationship between them stays consistent.
+    1. A Power Platform dataflow connects to the Microsoft Learn Catalog API and parses the request for Learning Paths and Modules.
 
-    1. From training assignment to learner submission, Power Automate creates notifications for both personas to ensure the lifecycle of training is communicated.
+    1. Microsoft Power Query is used to transform the data to prepare the data for ingestion into Microsoft Dataverse.
 
-    1. Power Automate triggers when a training is assigned to create progress records to track completion percentage.
+    1. Content is then upserted based on the last-modified date to ensure only deltas are uploaded to Dataverse.
 
 1. **Model-driven app (Trainers)**
     1. Trainers access a Model-driven app to create custom training plans based on the ingested Microsoft Learn content.
