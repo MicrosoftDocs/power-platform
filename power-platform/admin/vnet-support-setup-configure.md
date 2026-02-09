@@ -274,7 +274,8 @@ New-SubnetInjectionEnterprisePolicy -SubscriptionId "00000000-0000-0000-0000-000
     1. Select the environment you want to assign to the enterprise policy, select the policy, and select **Save**. Now the enterprise policy is linked to the environment.
 
   > [!IMPORTANT]
-  > Removing an enterprise policy from an environment can only be done through PowerShell by using [Disable-SubnetInjection](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/docs/en-US/Microsoft.PowerPlatform.EnterprisePolicies/Disable-SubnetInjection.md)
+  > Removing an enterprise policy from an environment can only be done through PowerShell by using [Disable-SubnetInjection](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/docs/en-US/Microsoft.PowerPlatform.EnterprisePolicies/Disable-SubnetInjection.md).
+  > 
   > ```powershell
   > Disable-SubnetInjection -EnvironmentId "00000000-0000-0000-0000-000000000000"
   > ```
