@@ -122,7 +122,7 @@ There's no expected disruption for end users or their applications because of th
 
 ### Will Microsoft enable unmanaged pipelines target environments in February 2026 if the automatic enablement setting is turned off? 
 
-Yes. We also recommend you enable the setting to ensure future compliance.
+Yes. These are different and one does not impact the other. The notification you recieved does not require opt-in and is specific to environments you've already deployed to. The automatic enablement setting is opt-in and will help you stay compliant going forward.
 
 ### Can I restrict access to personal pipelines?
 
