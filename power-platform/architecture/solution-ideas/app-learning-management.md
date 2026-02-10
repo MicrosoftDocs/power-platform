@@ -117,7 +117,7 @@ Principal authors:
 
 - [**Chris Mahanes**](https://www.linkedin.com/in/christophermahanes/), Solution Architect
 
-### Related resources
+## Related resources
 
 - [Microsoft Learn Catalog API Developer Reference Document](/training/support/catalog-api-developer-reference)
 - [Create and use dataflows in Microsoft Power Platform](/power-query/dataflows/create-use)
