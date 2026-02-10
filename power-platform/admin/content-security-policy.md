@@ -1,7 +1,7 @@
 ---
 title: Content security policy
 description: Use content security policy to prevent clickjacking attacks in Power Apps. 
-ms.date: 02/05/2026
+ms.date: 02/10/2026
 ms.topic: how-to
 author: JesseParsons
 ms.subservice: admin
