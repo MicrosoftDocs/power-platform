@@ -1,7 +1,7 @@
 ---
 title: Content security policy
 description: Use content security policy to prevent clickjacking attacks in Power Apps. 
-ms.date: 01/12/2026
+ms.date: 02/10/2026
 ms.topic: how-to
 author: JesseParsons
 ms.subservice: admin
@@ -34,11 +34,11 @@ Each component of the CSP header value controls the assets that can be downloade
 | --------- | ------------- | ------------ |
 | [script-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) | `* 'unsafe-inline' 'unsafe-eval' blob:` | No |
 | [worker-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/worker-src) | `'self' blob:` | No |
-| [style-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) | `* 'unsafe-inline'` | No |
+| [style-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) | `* 'unsafe-inline' blob:` | No |
 | [font-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) | `* data:` | No |
 | [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) | `'self' https://*.powerapps.com` | Yes |
 
-This configuration results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval' blob: ; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com;`.
+This configuration results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval' blob: ; worker-src 'self' blob:; style-src * 'unsafe-inline' blob:; font-src * data:; frame-ancestors 'self' https://*.powerapps.com;`.
 
 ### Strict mode
 
@@ -48,7 +48,7 @@ The Strict CSP toggle creates a CSP that mostly doesn't include wildcards or uns
 | --------- | ---------------------------- | ---------------------- | ------------ |
 | [script-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) | `'self' blob: <platform>'` | `'self' <platform>'` | Yes |
 | [worker-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/worker-src) | `'self' blob: ` | `'self' blob:` | No |
-| [style-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) | `'self' 'unsafe-inline' <platform>` | `'self' 'unsafe-inline' <platform>` | Yes |
+| [style-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) | `'self' 'unsafe-inline' blob: <platform>` | `'self' 'unsafe-inline' <platform>` | Yes |
 | [font-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) | `'self' data: <platform>` | `'self' data: <platform>` | Yes |
 | [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) | `'self' https://*.powerapps.com` | `'self' https://*.powerapps.com` | Yes |
 | [img-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/img-src) | `'self' blob: data: <platform>` | `'self' data: <platform>` | Yes |
@@ -148,7 +148,7 @@ In the example:
 
 The effective headers are:
 
-- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval' blob: data:; worker-src 'self' blob: data:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.contoso.com https://www.fabrikam.com;`
+- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval' blob: data:; worker-src 'self' blob: data:; style-src * 'unsafe-inline' :blob; font-src * data:; frame-ancestors https://www.contoso.com https://www.fabrikam.com;`
 - Canvas apps: CSP header isn't sent.
 
 ### Example 2 - reporting turned on
@@ -168,7 +168,7 @@ In the example:
 
 The effective CSP values are:
 
-- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval' blob:; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com; report-uri https://contoso.com/reporting-endpoint;`
+- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval' blob:; worker-src 'self' blob:; style-src * 'unsafe-inline' blob:; font-src * data:; frame-ancestors 'self' https://*.powerapps.com; report-uri https://contoso.com/reporting-endpoint;`
 - Canvas apps: `Content-Security-Policy-Report-Only: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.contoso.com; report-uri https://contoso.com/reporting-endpoint;`
 
 ## Modify organization settings directly
@@ -177,7 +177,7 @@ You can configure CSP without using the UI by modifying these organization setti
 
 - [IsContentSecurityPolicyEnabled](/powerapps/developer/data-platform/reference/entities/organization#BKMK_IsContentSecurityPolicyEnabled) controls whether the Content-Security-Policy header is sent in model-driven apps.
 
-- [ContentSecurityPolicyConfiguration](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfiguration) controls the value of the frame-ancestors portion (as seen earlier, it sets to `'self'` if `ContentSecurityPolicyConfiguration` isn't set). Define this setting by using a JSON object with the following structure – `{ "Frame-Ancestor": { "sources": [ { "source": "foo" }, { "source": "bar" } ] } }`. This configuration translates into `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'foo' 'bar';`
+- [ContentSecurityPolicyConfiguration](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfiguration) controls the value of the frame-ancestors portion (as seen earlier, it sets to `'self'` if `ContentSecurityPolicyConfiguration` isn't set). Define this setting by using a JSON object with the following structure – `{ "Frame-Ancestor": { "sources": [ { "source": "foo" }, { "source": "bar" } ] } }`. This configuration translates into `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline' blob:; font-src * data:; frame-ancestors 'foo' 'bar';`
   - (From MDN) The HTTP Content-Security-Policy (CSP) frame-ancestors directive specifies valid parents that may embed a page using `<frame>`, `<iframe>`, `<object>`, `<embed>`, or `<applet>`.
 
 - [IsContentSecurityPolicyEnabledForCanvas](/powerapps/developer/data-platform/reference/entities/organization#BKMK_IsContentSecurityPolicyEnabledForCanvas) controls whether the Content-Security-Policy header is sent in canvas apps.
