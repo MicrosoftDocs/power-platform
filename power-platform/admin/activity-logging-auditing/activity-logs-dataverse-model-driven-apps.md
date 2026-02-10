@@ -3,7 +3,7 @@ title: View Microsoft Dataverse and model-driven app activity logs in Microsoft 
 description: Learn how to access Dataverse and model-driven app activity logs in Microsoft Purview and explore what activities you can view.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/23/2026
+ms.date: 02/09/2026
 author: grbarker
 contributors:
   - yingchin
@@ -31,11 +31,10 @@ This article covers prerequisites, how to access your data in Microsoft Purview'
 
 ## Prerequisites
 
-To view Dataverse and model-driven app activity logs in Microsoft Purview, make sure you:
+To view Dataverse and model-driven app activity logs in Microsoft Purview, you need to have a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license. A Power Platform system admin or customizer also needs to:
 
-- Review and complete all the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
-- Are an admin with a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Are assigned either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview.
+- Enable auditing for the Power Platform production environments you want to monitor in Microsoft Purview. See the overview article's [Prerequisites](activity-logs-overview.md#prerequisites) for more information.
+- Assign either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview to you. See [Permissions in the Microsoft Purview portal](/purview/purview-permissions) for more information.
 
 Learn more:
 
@@ -63,6 +62,9 @@ Logging takes place at the SDK layer, which means a single action can trigger mu
 |Report Viewed  |Logging when a report is viewed. Critical customer content information might be displayed on the report.  |
 |Report Viewer Export  |Exporting a report to different formats moves the data outside of the secure environment and makes it vulnerable to threats.  |
 |Report Viewer Render Image  |Logging multimedia assets that are shown when a report is displayed. They might contain critical customer information.  |
+
+> [!NOTE]
+> [Column-level secured fields](field-level-security.md) are sent to Purview activity logging with an asterisk (*).
 
 ## Base schema
 

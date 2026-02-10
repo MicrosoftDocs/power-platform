@@ -3,7 +3,7 @@ title: View Power Apps activity logs in Microsoft Purview
 description: Learn how to access Power Apps activity logs in Microsoft Purview and explore what canvas apps activities you can view. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/23/2026
+ms.date: 02/09/2026
 author: grbarker
 ms.subservice: admin
 ms.author: grbarker
@@ -37,11 +37,10 @@ This article covers prerequisites, how to access your data in Microsoft Purview'
 
 ## Prerequisites
 
-To view Power Apps activity logs in Microsoft Purview, make sure you:
+To view Power Apps activity logs in Microsoft Purview, you need to have a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license. A Power Platform system admin or customizer also needs to:
 
-- Review and complete all the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
-- Are an admin with a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Are assigned either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview.
+- Enable auditing for the Power Platform production environments you want to monitor in Microsoft Purview. See the overview article's [Prerequisites](activity-logs-overview.md#prerequisites) for more information.
+- Assign either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview to you. See [Permissions in the Microsoft Purview portal](/purview/purview-permissions) for more information.
 
 Learn more:
 

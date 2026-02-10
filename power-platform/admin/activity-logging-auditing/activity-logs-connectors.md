@@ -3,7 +3,7 @@ title: View Power Platform connector activity logs in Microsoft Purview
 description: Learn how to access Power Platform connector activity logs in Microsoft Purview and explore what connector activities you can monitor.
 author: grbarker
 ms.topic: how-to
-ms.date: 01/23/2026
+ms.date: 02/09/2026
 ms.subservice: admin
 ms.author: grbarker
 ms.reviewer: ellenwehrle
@@ -32,18 +32,16 @@ This article covers prerequisites, how to access the logs in Microsoft Purview, 
 
 ## Prerequisites
 
-To view connector activity logs in Microsoft Purview, make sure you:
+To view Power Platform connector activity logs in Microsoft Purview, you need to have a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license. A Power Platform system admin or customizer also needs to:
 
-- Review and complete all the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
-- Are an admin with a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Are assigned either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview.
+- Enable auditing for the Power Platform production environments you want to monitor in Microsoft Purview. See the overview article's [Prerequisites](activity-logs-overview.md#prerequisites) for more information.
+- Assign either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview to you. See [Permissions in the Microsoft Purview portal](/purview/purview-permissions) for more information.
 
 Learn more:
 
 - [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 - [Auditing overview](/power-apps/developer/data-platform/auditing/overview)
 - [Learn more about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
-- [Permissions in the Microsoft Purview portal](/purview/purview-permissions)
 
 ## Access the logs
 

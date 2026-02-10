@@ -3,7 +3,7 @@ title: View Power Platform admin activity logs in Microsoft Purview
 description: Learn how to access Power Platform admin activity logs in Microsoft Purview and explore what admin activities you can monitor.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/23/2026
+ms.date: 02/09/2026
 author: grbarker
 ms.subservice: admin
 ms.author: grbarker
@@ -39,20 +39,21 @@ Each activity event consists of a common schema defined at [Office 365 Managemen
 
 ## Prerequisites
 
-To view Power Platform admin activity logs in Microsoft Purview, make sure you:
+To view Power Platform admin activity logs in Microsoft Purview, ensure you're assigned:
 
-- Review and complete the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
-- Confirm either the *Audit Logs* or *View-Only Audit Logs* role is assigned to you in Microsoft Purview.
+- A [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license. 
+- Either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview. See [Permissions in the Microsoft Purview portal](/purview/purview-permissions) for more information.
+
+> [!NOTE]
+> Admin activities for Power Platform production environments are enabled by default on all tenants and you can't disable the activity collection.
 
 Learn more:
 
+- [Prerequisites](activity-logs-overview.md#prerequisites)
 - [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 - [Auditing overview](/power-apps/developer/data-platform/auditing/overview)
 - [Learn about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 - [Permissions in the Microsoft Purview portal](/purview/purview-permissions)
-
-> [!NOTE]
-> Admin activities for Power Platform environments are enabled by default on all tenants and you can't disable the activity collection.
 
 ## Access the logs
 

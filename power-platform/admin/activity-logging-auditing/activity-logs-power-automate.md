@@ -3,7 +3,7 @@ title: View Power Automate activity logs in Microsoft Purview
 description: Learn how to access Power Automate activity logs in Microsoft Purview and explore what Power Automate activities you can monitor.
 author: grbarker
 ms.topic: how-to
-ms.date: 01/23/2026
+ms.date: 02/09/2026
 ms.subservice: admin
 ms.author: grbarker
 ms.reviewer: ellenwehrle
@@ -12,11 +12,7 @@ search.audienceType:
 ---
 # View Power Automate activity logs in Microsoft Purview
 
-You can view many Microsoft Power Automate activities in Microsoft Purview, such as:
-
-- flow creations by specific users
-- connector calls by specific users and agents
-- flow runs or failures by specific users or agents
+You can view many Microsoft Power Automate activities in Microsoft Purview, such as flow creations, connector calls, and flow runs or failures by specific users or agents.
 
 You can also view activity logs within specific date ranges to gain insights. Regularly auditing Microsoft Power Automate activities in Microsoft Purview helps you:
 
@@ -29,11 +25,10 @@ This article covers prerequisites, how to access the logs in Microsoft Purview, 
 
 ## Prerequisites
 
-To view Power Automate activity logs in Microsoft Purview, make sure you:
+To view Power Automate activity logs in Microsoft Purview, you need to have a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license. A Power Platform system admin or customizer also needs to:
 
-- Review and complete all the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
-- Are an admin with a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Are assigned either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview.
+- Enable auditing for the Power Platform production environments you want to monitor in Microsoft Purview. See the overview article's [Prerequisites](activity-logs-overview.md#prerequisites) for more information.
+- Assign either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview to you. See [Permissions in the Microsoft Purview portal](/purview/purview-permissions) for more information.
 
 Learn more:
 
