@@ -13,7 +13,7 @@
     "/resourcequery/resources/query": {
       "post": {
         "tags": [
-          "Resources"
+          "ResourceQuery"
         ],
         "summary": "Query Power Platform resources.",
         "description": "Translates the request body into KQL and executes it against Azure Resource Graph. Pagination follows ARG semantics (`Options.Top`, `Options.SkipToken`).",
@@ -174,7 +174,7 @@
       "type": "object",
       "properties": {
         "TableName": {
-          "description": "Target table/resource set (for example, \"PowerPlatformResources\")",
+          "description": "Target table/resource set (e.g., \"PowerPlatformResources\")",
           "type": "string"
         },
         "Clauses": {
@@ -198,7 +198,7 @@
           "type": "integer"
         },
         "Skip": {
-          "description": "Offset; typically zero (0) when using SkipToken",
+          "description": "Offset; typically 0 when using SkipToken",
           "minimum": 0,
           "type": "integer"
         },
@@ -215,7 +215,7 @@
     "Clause": {
       "description": "Base class for all Kusto clauses.",
       "required": [
-        "type"
+        "$type"
       ],
       "type": "object",
       "allOf": [
@@ -224,8 +224,8 @@
         }
       ],
       "properties": {
-        "type": {
-          "description": "NOTE the name of the property is '$type' but the $ is dropped by docs automation.",
+        "$type": {
+          "description": "Discriminator for the clause type.",
           "enum": [
             "where",
             "project",
@@ -244,12 +244,12 @@
     },
     "ClauseBaseClass": {
       "required": [
-        "type"
+        "$type"
       ],
       "type": "object",
       "properties": {
-        "type": {
-          "description": "NOTE the name of the property is '$type' but the $ is dropped by docs automation.",
+        "$type": {
+          "description": "Discriminator for the clause type.",
           "enum": [
             "where",
             "project",
@@ -482,7 +482,7 @@
       ],
       "properties": {
         "JoinKind": {
-          "description": "KQL join kind (for example, innerunique, leftouter)",
+          "description": "KQL join kind (e.g., innerunique, leftouter)",
           "type": "string"
         },
         "LeftColumnName": {
