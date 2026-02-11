@@ -17,13 +17,13 @@ ms.reviewer: jhaskett-msft
 The Dataverse SDK for Python is a comprehensive toolkit that empowers both professional developers (pro-devs) and data scientists to unlock advanced analytics, automation, and innovation within Microsoft Dataverse. Pro-devs can use the SDK to build scalable, secure business applications, and orchestrate agentic workflows. Data scientists and analysts can use familiar Python tools—such as Pandas, Jupyter notebooks, and machine learning libraries—to create analysis models, simulation models, and operationalize AI-driven insights. This SDK bridges the gap between enterprise-grade data management and the flexibility of Python, accelerating time-to-value and fostering a vibrant developer ecosystem.
 
 > [!TIP]
-> Start by watching the introduction video on [using the Dataverse SDK for Pythin with business data](https://www.youtube.com/watch?v=3wb2i1iDtso).
+> Start by watching the introduction video on [using the Dataverse SDK for Python with business data](https://www.youtube.com/watch?v=3wb2i1iDtso).
 
 ## Architecture diagram
 
 The following conceptual architecture diagram illustrates how Dataverse SDK for Python integrates with key components:
 
-:::image type="content" source="media/dataverse-sdk-for-python/dataverse-sdk-python-architecture.png" alt-text="Diagram of Dataverse SDK workflow showing data extraction to Pandas, LLM tasks, Jupyter Notebook, and output visualization." lightbox="media/dataverse-sdk-for-python/dataverse-sdk-python-architecture.png":::
+:::image type="content" source="media/dataverse-sdk-for-python/dataverse-sdk-python-architecture.png" alt-text="Diagram of Dataverse SDK workflow showing data extraction to Pandas, language model tasks, Jupyter Notebook, and output visualization." lightbox="media/dataverse-sdk-for-python/dataverse-sdk-python-architecture.png":::
 
 ## Workflow
 
@@ -41,17 +41,17 @@ The typical workflow for harnessing Dataverse business data by using Python incl
 
 A Python developer builds an employee onboarding system for Fabrikam Enterprises by creating tables for Employee Details, Department Reference, and Onboarding Request Status. By using the SDK, they define schemas, add columns and relationships, and use create, read, and update APIs to seed and modify records - all while upholding enterprise-level security and governance.
 
-### Data Scientist Scenario
+### Data scientist scenario
 
 A data scientist uses Python tools such as Jupyter notebooks and Visual Studio Code to extract business data from Dataverse and shape it into Pandas DataFrames. The data scientist can then use the extracted business data with advanced analytics and machine learning models for risk assessment, SLA monitoring, or compliance reporting. The data scientist visualizes and shares outputs for fast decision-making.
 
-### Generative AI Use Case
+### Generative AI use case
 
 Use Python analytics and LLMs to summarize customer trends or classify segments, such as high-value or churn risk. Write the results back to Dataverse, enabling operational dashboards and compliance workflows. This approach ensures AI outputs are securely stored and governed within the enterprise data platform.
 
 ## Considerations
 
-- **Prerequisites:** Access to a Dataverse environment, appropriate security roles (system customizer or admin), Python 3.13 or later, and network access to PyPI for SDK installation.
+- **Prerequisites:** Access to a Dataverse environment, appropriate security roles, Python 3.13 or later, and network access to PyPI for SDK installation.
 
 - **Integration:** Ensure compatibility with existing *Extract, Transform, Load* (ETL) pipelines, automation tools, and enterprise governance policies.
 
@@ -61,17 +61,17 @@ Use Python analytics and LLMs to summarize customer trends or classify segments,
 
 ### Reliability
 
-- **Robust Data Access:** The SDK supports reliable *Create, Read, Update, and Delete* (CRUD) operations and schema management.
+- **Robust data access:** The SDK supports reliable *Create, Read, Update, and Delete* (CRUD) operations and schema management.
 
 - **Automation:** Enables repeatable, automated workflows for data extraction, transformation, and analysis.
 
-- **Operational Efficiency:** Reduces manual effort and accelerates analytics modernization.
+- **Operational efficiency:** Reduces manual effort and accelerates analytics modernization.
 
 ### Security
 
-- **Role-Based Access Control:** Enforce Dataverse security roles and policies for all data operations.
+- **Role-based access control:** Enforce Dataverse security roles and policies for all data operations.
 
-- **Data Governance:** Ensure compliance with enterprise standards for data privacy, audit logging, and encryption.
+- **Data governance:** Ensure compliance with enterprise standards for data privacy, audit logging, and encryption.
 
 ## Contributors
 
