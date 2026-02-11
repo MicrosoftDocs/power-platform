@@ -12,8 +12,6 @@ ms.reviewer: jhaskett-msft
 
 # Analyze and automate business data with Dataverse SDK for Python
 
-## Introduction
-
 The Dataverse SDK for Python is a comprehensive toolkit that empowers both professional developers (pro-devs) and data scientists to unlock advanced analytics, automation, and innovation within Microsoft Dataverse. Pro-devs can use the SDK to build scalable, secure business applications, and orchestrate agentic workflows. Data scientists and analysts can use familiar Python tools—such as Pandas, Jupyter notebooks, and machine learning libraries—to create analysis models, simulation models, and operationalize AI-driven insights. This SDK bridges the gap between enterprise-grade data management and the flexibility of Python, accelerating time-to-value and fostering a vibrant developer ecosystem.
 
 > [!TIP]
