@@ -4,11 +4,12 @@ description: Move your environment in a single tenant from one region to another
 author: matapg007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/23/2025
+ms.date: 02/11/2025
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: sericks
 contributors: 
+    - faix
     - amiyapatr-zz
     - brsova
     - LaurentPepin
@@ -62,8 +63,8 @@ The Geo Migration feature allows customers to move their environments in a singl
 
 #### After geo-to-geo migration
 - Reconfigure environment settings as necessary.
-- [Reenable managed environments](./managed-environment-enable.md) and resave managed environment settings as necessary.
-- Relink enterprise policies to the environment as necessary. For example, see [Set up virtual network support for Power Platform](./vnet-support-setup-configure.md) and [Manage environment's encryption](./customer-managed-key.md#manage-environments-encryption).
+- [Reenable managed environments](./managed-environment-enable.md) and resave Managed Environment settings, as necessary.
+- Relink enterprise policies to the environment, as necessary. For example, see [Set up virtual network support for Power Platform](./vnet-support-setup-configure.md) and [Manage Environment's encryption](./customer-managed-key.md#manage-environments-encryption).
 - Work with Microsoft Support to recreate Lockbox requests for the environment as necessary.
 - [Reapply data policies](./prevent-data-loss.md) to the environment as necessary.
 - [Readd the environment to an environment group](./environment-groups.md#add-environments-to-your-environment-group) as necessary.
