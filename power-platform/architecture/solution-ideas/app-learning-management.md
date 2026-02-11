@@ -5,7 +5,7 @@ description: Learn how to design a learning management solution using Microsoft 
 author: carcla
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 09/02/2025
+ms.date: 02/11/2026
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 search.audienceType:
@@ -37,7 +37,7 @@ This solution uses a wide range of Power Platform resources to ensure up-to-date
 1. **Model-driven app (Trainers)**
     1. Trainers access a model-driven app to create custom training plans based on the ingested Microsoft Learn content.
 
-    1. Dashboards provide visibility to Trainers for submitted trainings from Learners for review and finalization.
+    1. Dashboards provide visibility to trainers for submitted trainings from learners for review and finalization.
 
 1. **Process automation**
     1. Power Automate flows listen to any modified learning paths or modules to ensure the relationship between them stays consistent.
@@ -49,9 +49,9 @@ This solution uses a wide range of Power Platform resources to ensure up-to-date
 1. **Learner portal (Learners)**
     1. Employees access the Learner Power Page and authenticate by using Microsoft Entra ID single sign-on (SSO) authentication.
 
-    1. Learners can view their training assignment, where they can view content and length of training to help plan their self-paced training. They're redirected to Microsoft Learn to complete trainings. Once learning path or module is complete, they update their assigned training of completion.
+    1. Learners can view their training assignment, where they can check the content and length of training to help plan their self-paced training. They're redirected to Microsoft Learn to complete trainings. Once the learning path or module is complete, they update their assigned training as complete.
 
-    1. Optionally, Learners can browse, filter based on Role and self-assign trainings they're interested in through the Learning Catalog.
+    1. Optionally, learners can browse, filter based on role, and self-assign trainings they're interested in through the Learning catalog.
 
 ## Scenario details
 
@@ -59,15 +59,15 @@ This use case is based on a company that wants to improve its visibility into em
 
 ### Business problem
 
-Training is spread across multiple systems and external tools, causing low visibility, high maintenance overhead, and learner confusion.
+Training spans multiple systems and external tools. This causes low visibility, increases maintenance overhead, and confuses learners.
 
-This company simply wants to view content that is integrated to remove the manual task of updating content and provide learners with the tools to accelerate their career.
+The company simply wants to view integrated content to remove the manual task of updating content and provide learners with the tools to accelerate their career.
 
 ## Components
 
 [**Power Platform dataflows**](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365/): Dataflows enable customers to ingest, transform, and load data into Microsoft Dataverse environments.
 
-[**Microsoft Dataverse**](/power-apps/maker/data-platform/): Dataverse lets you securely store and manage data that's used by business applications.
+[**Microsoft Dataverse**](/power-apps/maker/data-platform/): Dataverse lets you securely store and manage data used by business applications.
 
 [**Microsoft Power Apps**](/power-apps/): Model-driven app design is an approach that focuses on adding components such as forms, views, charts, and dashboards to tables using an app designer tool.
 
@@ -81,32 +81,32 @@ This company simply wants to view content that is integrated to remove the manua
 
 ### Reliability
 
-- This design reduces content management overhead by applying a ready-made API provided by Microsoft. It ensures resilient and consistent ingestion of Microsoft Learn catalog updates.
+- This design reduces content management overhead by using a ready-made API provided by Microsoft. It ensures resilient and consistent ingestion of Microsoft Learn catalog updates.
 - Dataverse provides high availability and consistent data storage for trainers and learners.
 - Power Automate ensures timely notification and alignment between content updates and training assignments.
 
 ### Security
 
-- Architecture outlines Microsoft Entra ID authentication enforces secure, governed access for employees.
+- Microsoft Entra ID authentication enforces secure, governed access for employees.
 - Uses secure connections and access controls to protect sensitive data.
 - Dataverse enforces access control and governance.
 
 ### Performance Efficiency
 
-- Dataflows scale horizontally and handle transformation of Catalog API efficiently.
-- Power Automate runs under load and scales to handle many learners or updates to content.
+- Dataflows scale horizontally and handle transformation of the Catalog API efficiently.
+- Power Automate runs under load and scales to handle many learners or content updates.
 - Server-side rendering and metadata-driven UI optimize performance.
 
 ### Experience Optimization
 
-- Learners have a self-service portal to present a learner-friendly interface for assignments and progress.
-- Trainers have intuitive dashboards, views, and review workflows in model-driven app experience.
-- Content management integration creates confidence and reliability in solution.
+- Learners use a self-service portal that provides a learner-friendly interface for assignments and progress.
+- Trainers use intuitive dashboards, views, and review workflows in a model-driven app experience.
+- Content management integration builds confidence and reliability in the solution.
 
 ### Operational Excellence
 
 - Dataflows provide predictable refresh cycles and observability.
-- Trainers using model-driven application support standardization and predictable process execution.
+- Trainers using model-driven applications support standardization and predictable processes.
 - Automated flows enforce consistent lifecycle events and reduce manual work.
 
 ## Contributors
@@ -119,6 +119,6 @@ Principal authors:
 
 ## Related resources
 
-- [Microsoft Learn Catalog API Developer Reference Document](/training/support/catalog-api-developer-reference)
+- [Microsoft Learn Catalog API developer reference documentation](/training/support/catalog-api-developer-reference)
 - [Create and use dataflows in Microsoft Power Platform](/power-query/dataflows/create-use)
 - [Power Platform Well-Architected](/power-platform/well-architected/)
