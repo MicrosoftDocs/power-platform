@@ -133,6 +133,8 @@
           href: solution-ideas/onboarding-agent.md
         - name: AI-enabled donor management solution
           href: solution-ideas/agent-donor-management.md
+        - name: Learning management app using Microsoft Learn content
+          href: solution-ideas/app-learning-management.md
     - name: Power Platform products
       items:
         - name: Power Apps
