@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 02/04/2026
+ms.date: 02/11/2026
 ---
 
 # Power Automate reference architectures and solution ideas
@@ -53,6 +53,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Automate software bug reporting with Auto Triage AI Agent**](../solution-ideas/auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle issue creation and follow-up, reducing the burden on customer support teams and enhancing the customer experience. |
 | [**Intelligent cardiac triage and scheduling with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
 | [**AI-enabled donor management solution**](../solution-ideas/agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
+| [**Learning management app using Microsoft Learn content**](../solution-ideas/app-learning-management.md) | Design a learning management solution using Microsoft Power Platform and Microsoft Learn content to enhance trainer and learner experiences. |
 
 ## Related resources
 

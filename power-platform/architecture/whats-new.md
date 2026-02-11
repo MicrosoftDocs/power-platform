@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 02/04/2026
+ms.date: 02/11/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -26,6 +26,7 @@ New in [Solution ideas](solution-ideas/index.md):
 - [​​Streamline customer service with a customer support assistance agent​](solution-ideas/customer-support-agent.md)
 - [​Improve the new hire experience with a smart onboarding agent](solution-ideas/onboarding-agent.md)
 - [AI-enabled donor management solution](solution-ideas/agent-donor-management.md)
+- [Learning management app using Microsoft Learn content](solution-ideas/app-learning-management.md)
 
 Updated in [Solution ideas](solution-ideas/index.md):
 
