@@ -13,7 +13,7 @@
     "/dynamics/environments/{environmentId}/finopsadminsettings": {
       "get": {
         "tags": [
-          "Finance and Operations Maintenance Settings"
+          "FinanceAndOperationsMaintenanceSettings"
         ],
         "summary": "Get Finance and Operations Maintenance Settings.",
         "description": "Retrieves the F&O maintenance settings for an environment managed by Power Platform admin center.",
@@ -41,37 +41,37 @@
         ],
         "responses": {
           "200": {
-            "description": "Successfully retrieved Finance and Operations Maintenance",
+            "description": "Successfully retrieved Finance and Operations Maintenance.",
             "schema": {
               "$ref": "#/definitions/FinOpsAdminSettingsResponse"
             }
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Bad Request.",
             "schema": {
               "$ref": "#/definitions/FinOpsErrorResponse"
             }
           },
           "401": {
-            "description": "Unauthorized",
+            "description": "Unauthorized.",
             "schema": {
               "$ref": "#/definitions/FinOpsErrorResponse"
             }
           },
           "403": {
-            "description": "Forbidden",
+            "description": "Forbidden.",
             "schema": {
               "$ref": "#/definitions/FinOpsErrorResponse"
             }
           },
           "404": {
-            "description": "Not Found",
+            "description": "Not Found.",
             "schema": {
               "$ref": "#/definitions/FinOpsErrorResponse"
             }
           },
           "500": {
-            "description": "Internal Server Error",
+            "description": "Internal Server Error.",
             "schema": {
               "$ref": "#/definitions/FinOpsErrorResponse"
             }
@@ -80,7 +80,7 @@
       },
       "put": {
         "tags": [
-          "Finance and Operations Maintenance Settings"
+          "FinanceAndOperationsMaintenanceSettings"
         ],
         "summary": "Update Finance and Operations Maintenance Settings.",
         "description": "Updates the F&O maintenance settings for an environment managed by Power Platform admin center.",
@@ -119,37 +119,37 @@
         ],
         "responses": {
           "200": {
-            "description": "Successfully updated Finance and Operations Maintenance",
+            "description": "Successfully updated Finance and Operations Maintenance.",
             "schema": {
               "$ref": "#/definitions/FinOpsAdminSettingsResponse"
             }
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Bad Request.",
             "schema": {
               "$ref": "#/definitions/FinOpsErrorResponse"
             }
           },
           "401": {
-            "description": "Unauthorized",
+            "description": "Unauthorized.",
             "schema": {
               "$ref": "#/definitions/FinOpsErrorResponse"
             }
           },
           "403": {
-            "description": "Forbidden",
+            "description": "Forbidden.",
             "schema": {
               "$ref": "#/definitions/FinOpsErrorResponse"
             }
           },
           "404": {
-            "description": "Not Found",
+            "description": "Not Found.",
             "schema": {
               "$ref": "#/definitions/FinOpsErrorResponse"
             }
           },
           "500": {
-            "description": "Internal Server Error",
+            "description": "Internal Server Error.",
             "schema": {
               "$ref": "#/definitions/FinOpsErrorResponse"
             }
@@ -204,7 +204,7 @@
       "type": "object",
       "properties": {
         "maintenanceWindowDaysOfWeek": {
-          "description": "The preferred days of week for Updates.",
+          "description": "The preferred days of week for RunOne Updates.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/FinOpsDayOfWeek"
@@ -216,7 +216,7 @@
           ]
         },
         "maintenanceWindowCadence": {
-          "description": "The cadence for Updates (Every, Every Other, Regulated).",
+          "description": "The cadence for RunOne Updates (Every, Every Other, Regulated).",
           "allOf": [
             {
               "$ref": "#/definitions/FinOpsUpdateCadence"

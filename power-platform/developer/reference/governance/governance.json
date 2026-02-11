@@ -16,7 +16,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "Create rule based policy.",
-        "description": "Create new rule based policy. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "description": "Creates a rule-based policy with rule sets and metadata.",
         "operationId": "CreateRuleBasedPolicy",
         "consumes": [
           "application/json"
@@ -111,7 +111,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "Get rule based policy by ID.",
-        "description": "Retrieves details about a specific policy based on the policy ID. The response includes rule sets, inputs, and other metadata related to the policy.",
+        "description": "Gets policy details by ID including rule sets and metadata.",
         "operationId": "GetRuleBasedPolicyByID",
         "produces": [
           "application/json"
@@ -159,7 +159,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "Update rule based policy by ID.",
-        "description": "Updates details about a specific policy based on the policy ID. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "description": "Updates a policy by ID including rule sets and metadata.",
         "operationId": "UpdateRuleBasedPolicyByID",
         "consumes": [
           "application/json"
@@ -220,7 +220,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "List rule based policy assignments for a specific policy.",
-        "description": "Retrieves a list of rule assignments for a specific policy. This operation provides details about the policy assignments, including rule sets and associated resource types.",
+        "description": "Lists rule assignments for a policy with rule set details.",
         "operationId": "ListRuleAssignmentsByPolicyId",
         "produces": [
           "application/json"
@@ -277,7 +277,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "Create environment group rule based assignment.",
-        "description": "Create new rule based policy assignment for an environment group. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "description": "Creates a rule-based policy assignment for an environment group.",
         "operationId": "CreateEnviornmentGroupRuleBasedAssignment",
         "consumes": [
           "application/json"
@@ -325,7 +325,7 @@
             }
           },
           "201": {
-            "description": "Record created",
+            "description": "Record created.",
             "schema": {
               "$ref": "#/definitions/RuleAssignment"
             }
@@ -351,7 +351,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "Create environment rule based assignment.",
-        "description": "Create new rule based policy assignment for an environment. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "description": "Creates a rule-based policy assignment for an environment.",
         "operationId": "CreateEnvironmentRuleBasedAssignment",
         "consumes": [
           "application/json"
@@ -399,7 +399,7 @@
             }
           },
           "201": {
-            "description": "Record created",
+            "description": "Record created.",
             "schema": {
               "$ref": "#/definitions/RuleAssignment"
             }
@@ -425,7 +425,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "List rule based policy assignments.",
-        "description": "Retrieves a list of rule assignments for a tenant. This operation provides details about the policy assignments, including rule sets and associated resource types.",
+        "description": "Lists rule assignments for a tenant with rule set details.",
         "operationId": "ListRuleAssignments",
         "produces": [
           "application/json"
@@ -475,7 +475,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "List rule based policy assignments for a specific environment group.",
-        "description": "Retrieves a list of rule assignments for a specific environment group. This operation provides details about the policy assignments, including rule sets and associated resource types.",
+        "description": "Lists rule assignments for an environment group.",
         "operationId": "ListRuleAssignmentsByEnvironmentGroupId",
         "produces": [
           "application/json"
@@ -532,7 +532,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "List rule based policy assignments for a specific environment.",
-        "description": "Retrieves a list of rule assignments for a specific environment. This operation provides details about the policy assignments, including rule sets and associated resource types.",
+        "description": "Lists rule assignments for a specific environment.",
         "operationId": "ListRuleAssignmentsByEnvironmentId",
         "produces": [
           "application/json"
@@ -595,6 +595,14 @@
           "application/json"
         ],
         "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The unique identifier of the environment.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
           {
             "in": "path",
             "name": "groupId",
@@ -662,6 +670,14 @@
           "application/json"
         ],
         "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The unique identifier of the environment.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
           {
             "in": "path",
             "name": "groupId",
@@ -887,7 +903,7 @@
           "RuleSets"
         ],
         "summary": "Delete Rule Set.",
-        "description": "Deletes the Rule Set. Only tenant admins can delete Rule Sets; environment group admins are not allowed.",
+        "description": "Deletes the Rule Set. Only tenant admins can delete.",
         "operationId": "DeleteRuleSet",
         "produces": [
           "application/json"
@@ -963,19 +979,19 @@
         ],
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "Success.",
             "schema": {
               "$ref": "#/definitions/CrossTenantConnectionReportsResponseWithOdataContinuation"
             }
           },
           "400": {
-            "description": "Bad Request"
+            "description": "Bad Request."
           },
           "401": {
-            "description": "Unauthorized"
+            "description": "Unauthorized."
           },
           "403": {
-            "description": "Forbidden"
+            "description": "Forbidden."
           }
         }
       },
@@ -1000,25 +1016,25 @@
         ],
         "responses": {
           "400": {
-            "description": "Bad Request"
+            "description": "Bad Request."
           },
           "401": {
-            "description": "Unauthorized"
+            "description": "Unauthorized."
           },
           "403": {
-            "description": "Forbidden"
+            "description": "Forbidden."
           },
           "404": {
-            "description": "Not Found"
+            "description": "Not Found."
           },
           "200": {
-            "description": "Success",
+            "description": "Success.",
             "schema": {
               "$ref": "#/definitions/CrossTenantConnectionReport"
             }
           },
           "202": {
-            "description": "Accepted",
+            "description": "Accepted.",
             "schema": {
               "$ref": "#/definitions/CrossTenantConnectionReport"
             }
@@ -1055,22 +1071,22 @@
         ],
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "Success.",
             "schema": {
               "$ref": "#/definitions/CrossTenantConnectionReport"
             }
           },
           "400": {
-            "description": "Bad Request"
+            "description": "Bad Request."
           },
           "401": {
-            "description": "Unauthorized"
+            "description": "Unauthorized."
           },
           "403": {
-            "description": "Forbidden"
+            "description": "Forbidden."
           },
           "404": {
-            "description": "Not Found"
+            "description": "Not Found."
           }
         }
       }
@@ -1508,7 +1524,7 @@
           }
         },
         "@odata.nextLink": {
-          "description": "The URI of the next page of the report containing additional cross-tenant connections.",
+          "description": "Next page URI for additional cross-tenant connections.",
           "type": "string"
         }
       },

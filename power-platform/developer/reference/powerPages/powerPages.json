@@ -1563,7 +1563,7 @@
         },
         "selectedBaseLanguage": {
           "format": "int32",
-          "description": "Language unique identifier (ID) of the website - https://go.microsoft.com/fwlink/?linkid=2208135",
+          "description": "Language ID - https://go.microsoft.com/fwlink/?linkid=2208135",
           "type": "integer"
         },
         "subdomain": {
@@ -1705,7 +1705,7 @@
         },
         "selectedBaseLanguage": {
           "format": "int32",
-          "description": "Language unique identifier (ID) of the website - https://go.microsoft.com/fwlink/?linkid=2208135",
+          "description": "Language ID - https://go.microsoft.com/fwlink/?linkid=2208135",
           "type": "integer"
         },
         "customHostNames": {

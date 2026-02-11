@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - inventory",
+    "title": "Microsoft Power Platform REST API - resourceQuery",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -16,7 +16,7 @@
           "ResourceQuery"
         ],
         "summary": "Query Power Platform resources.",
-        "description": "Translates the request body into KQL and executes it against Azure Resource Graph. Pagination follows ARG semantics (`Options.Top`, `Options.SkipToken`).",
+        "description": "Executes a KQL query against Azure Resource Graph with ARG paging.",
         "externalDocs": {
           "description": "ARG Query Best Practices (throttling, paging, limits)",
           "url": "https://learn.microsoft.com/azure/governance/resource-graph/concepts/guidance-for-throttled-requests"
@@ -556,7 +556,7 @@
       }
     },
     "ResourceItem": {
-      "description": "Standard Azure Resource Graph row with Power Platform–specific fields.\nArbitrary properties may exist under `properties`.\n",
+      "description": "ARG row with Power Platform-specific fields.\nArbitrary properties may exist under `properties`.\n",
       "type": "object",
       "properties": {
         "id": {

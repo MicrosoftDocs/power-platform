@@ -1893,11 +1893,11 @@
       "type": "object",
       "properties": {
         "allowOtherPremiumConnectors": {
-          "description": "A flag indicating whether metered usage that involves premium connectors may be attributed.",
+          "description": "Whether metered usage with premium connectors may be attributed.",
           "type": "boolean"
         },
         "requiredApis": {
-          "description": "A list of connectors, at least one of which must be involved in the metered usage to be attributed.",
+          "description": "Connectors where at least one must be in the metered usage.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/BillingPolicyConditionsApiModel"
@@ -2285,7 +2285,7 @@
           "$ref": "#/definitions/BillingPolicyStatus"
         },
         "geo": {
-          "description": "Specify the desired resource location for creation of an Azure Power Platform account for billing. Once set, this property cannot be updated. Power Platform environments using this ISV Contract for pay-as-you-go billing must be in the same location.",
+          "description": "Resource location for billing account creation. Immutable.",
           "type": "string",
           "items": {
             "example": [
