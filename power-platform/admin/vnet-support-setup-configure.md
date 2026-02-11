@@ -143,9 +143,9 @@ Virtual network support can be configured and enabled using PowerShell scripts o
 1. Create your virtual network and subnets by following the guidance at [Create a virtual network](/azure/virtual-network/tutorial-connect-virtual-networks?tabs=portal#create-a-virtual-network-and-an-azure-bastion-host).
 
     > [!NOTE]
-    > You can skip creating the bastion host. It isn't necessary for the Power Platform Virtual Network functionality.
+    > You can skip creating the bastion host. It isn't necessary for the Power Platform virtual network functionality.
 
-1. Use an existing subnet or create a new subnet and delegate it **Microsoft.PowerPlatform/enterprisePolicies**. Learn more at [Add or remove a subnet delegation](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal).
+1. Use an existing subnet or create a new subnet and delegate it **Microsoft.PowerPlatform/enterprisePolicies**. For more information, see [Add or remove a subnet delegation](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal).
 
 1. To verify if a subnet has been successfully delegated, you can navigate to your subnet and verify the **Delegated to** column, as shown below.
 
