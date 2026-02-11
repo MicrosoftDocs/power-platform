@@ -25,7 +25,7 @@ zone_pivot_groups: subnet-setup
 > [!NOTE]
 > The [Power Platform Virtual Network](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyNDY2NTkxNzAzMDQifQ) community on Microsoft Viva Engage is available. You can post any questions or feedback that you have about this functionality. You can join by filling out a request through the following form: [Request access to Finance and Operations Viva Engage Community](https://forms.office.com/r/qe94aGXWgp).
 
-Azure virtual network support for Power Platform lets you integrate Power Platform and Dataverse components with cloud services or services hosted inside your private enterprise network without exposing them to the public internet. This article explains how to set up virtual network support in your Power Platform environments.
+By using Azure virtual network support for Power Platform, you can integrate Power Platform and Dataverse components with cloud services or services hosted inside your private enterprise network without exposing them to the public internet. This article explains how to set up virtual network support in your Power Platform environments.
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ The following diagram shows the functions of the roles in the setup process for 
 
 ## Clarifications
 
-- Your [virtual networks](/azure/virtual-network/virtual-networks-overview) must be created in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is United States, create your virtual networks in the **eastus** and **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
+- You must create your [virtual networks](/azure/virtual-network/virtual-networks-overview) in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is United States, create your virtual networks in the **eastus** and **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
 
 - If there are two or more supported regions for the geography, such as the United States with **eastus** and  **westus**, you need two virtual networks in ***different*** regions to create the enterprise policy. This requirement applies to both production and nonproduction environments. 
 
@@ -62,7 +62,7 @@ The following diagram shows the functions of the roles in the setup process for 
 
 ## Set up virtual network support
 
-Virtual network support can be configured and enabled using PowerShell scripts or through manual steps. In both methods, the steps to follow can be categorized as follows.
+You can configure and enable virtual network support by using PowerShell scripts or through manual steps. In both methods, the steps to follow can be categorized as follows.
 
 1. Set up the virtual network and subnets.
 1. Create the enterprise policy.
@@ -79,7 +79,7 @@ Virtual network support can be configured and enabled using PowerShell scripts o
     Import-Module Microsoft.PowerPlatform.EnterprisePolicies
     ```
 
-1. Configure your virtual network and subnet for delegation to Power Platform. This must be run for each virtual network that has a subnet delegated. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment.
+1. Configure your virtual network and subnet for delegation to Power Platform. Run this command for each virtual network that has a delegated subnet. Review the number of IP addresses that are allocated to each subnet and consider the load of the environment.
 
     # [Existing virtual network](#tab/existing)
 
@@ -122,7 +122,7 @@ Virtual network support can be configured and enabled using PowerShell scripts o
     ```
 
     > [!TIP]
-    > If you need a different account to link the policy, you can use the -ForceAuth switch to ensure you get prompted to sign in to a new account.
+    > If you need a different account to link the policy, use the -ForceAuth switch to ensure you're prompted to sign in to a new account.
 
 ::: zone-end
 
@@ -130,12 +130,12 @@ Virtual network support can be configured and enabled using PowerShell scripts o
 
 ### Manual setup
 
-1. The following resource providers need to be registered in your subscription. For information on how to register a resource provider, see [Register resource provider](/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider-1).
+1. Register the following resource providers in your subscription. For information on how to register a resource provider, see [Register resource provider](/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider-1).
 
     - Microsoft.Network
     - Microsoft.PowerPlatform
 
-1. The following feature needs to be registered in your subscription. For information on how to register a feature, see [Register preview feature
+1. Register the following feature in your subscription. For information on how to register a feature, see [Register preview feature
 ](/azure/azure-resource-manager/management/preview-features?tabs=azure-portal#register-preview-feature).
 
     - enterprisePoliciesPreview
@@ -147,7 +147,7 @@ Virtual network support can be configured and enabled using PowerShell scripts o
 
 1. Use an existing subnet or create a new subnet and delegate it **Microsoft.PowerPlatform/enterprisePolicies**. For more information, see [Add or remove a subnet delegation](/azure/virtual-network/manage-subnet-delegation?tabs=manage-subnet-delegation-portal).
 
-1. To verify if a subnet has been successfully delegated, you can navigate to your subnet and verify the **Delegated to** column, as shown below.
+1. To verify if a subnet is successfully delegated, go to your subnet and check the **Delegated to** column, as shown in the following image.
 
     :::image type="content" source="media/vnet-support/delegated-subnet.png" alt-text="Screenshot of a delegated subnet in the Azure portal." lightbox="media/vnet-support/delegated-subnet.png":::
 
@@ -274,7 +274,7 @@ Virtual network support can be configured and enabled using PowerShell scripts o
     1. Select the environment you want to assign to the enterprise policy, select the policy, and select **Save**. Now the enterprise policy is linked to the environment.
 
     > [!IMPORTANT]
-    > Removing an enterprise policy from an environment can only be done through PowerShell by using [Disable-SubnetInjection](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/docs/en-US/Microsoft.PowerPlatform.EnterprisePolicies/Disable-SubnetInjection.md).
+    > You can remove an enterprise policy from an environment only through PowerShell by using [Disable-SubnetInjection](https://github.com/microsoft/PowerPlatform-EnterprisePolicies/blob/main/docs/en-US/Microsoft.PowerPlatform.EnterprisePolicies/Disable-SubnetInjection.md).
     > 
     > ```PowerShell
     > Disable-SubnetInjection -EnvironmentId "00000000-0000-0000-0000-000000000000"
@@ -291,7 +291,7 @@ Virtual network support can be configured and enabled using PowerShell scripts o
 
 ### Related content
 
-- Deploy enterprise policies with the [Microsoft.PowerPlatform/enterprisePolicies ARM template](/azure/templates/microsoft.powerplatform/enterprisepolicies?pivots=deployment-language-arm-template)
+- Deploy enterprise policies by using the [Microsoft.PowerPlatform/enterprisePolicies ARM template](/azure/templates/microsoft.powerplatform/enterprisepolicies?pivots=deployment-language-arm-template)
 - [Quickstart: Use the Azure portal to create a virtual network](/azure/virtual-network/quick-create-portal)
 - [Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins)
 - [Troubleshoot Virtual Network issues](/troubleshoot/power-platform/administration/virtual-network)
