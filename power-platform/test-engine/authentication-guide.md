@@ -1,8 +1,8 @@
 ---
 title: "Authentication Guide for Power Apps Test Engine (preview)"
 description: "Step-by-step guide for setting up authentication in Test Engine"
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly

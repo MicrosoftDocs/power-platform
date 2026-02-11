@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 12/09/2025
+ms.date: 02/11/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -50,8 +50,8 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Use complex relationships with Microsoft Dataverse**](../reference-architectures/complex-relationships-dataverse.md) | Learn how to model complex data relationships in Microsoft Dataverse to design effective business applications. |
 | [**Extract and analyze agent conversation transcripts**](../reference-architectures/analyze-agent-conversation-transcripts.md) | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
 | [**Implement a scalable notification system with Power Platform**](../reference-architectures/scalable-notification-system.md) | Learn how to implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
-| **[Optimize the performance of canvas apps that require complex business logic](../reference-architectures/optimize-performance-canvas-apps.md)** | Learn how to optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
-| **[Analyze and automate business data with Dataverse SDK for Python](../reference-architectures/dataverse-sdk-for-python.md)** | earn how the Dataverse SDK for Python empowers developers and data scientists to analyze, automate, and innovate with enterprise-grade data. |
+| [**Optimize the performance of canvas apps that require complex business logic**](../reference-architectures/optimize-performance-canvas-apps.md) | Learn how to optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
+| [**Analyze and automate business data with Dataverse SDK for Python**](../reference-architectures/dataverse-sdk-for-python.md) | earn how the Dataverse SDK for Python empowers developers and data scientists to analyze, automate, and innovate with enterprise-grade data. |
 
 ## Solution ideas
 
@@ -64,8 +64,10 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Travel concierge using generative AI with Copilot Studio**](../solution-ideas/agent-travel-customer.md) | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
 | [**Ticket management system with Copilot Studio agents**](../solution-ideas/agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
 | [**Intelligent cardiac triage and scheduling with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
+| [**AI-enabled donor management solution**](../solution-ideas/agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
+| [**Learning management app using Microsoft Learn content**](../solution-ideas/app-learning-management.md) | Design a learning management solution using Microsoft Power Platform and Microsoft Learn content to enhance trainer and learner experiences. |
 
 ## Related resources
 
 - [Microsoft Dataverse documentation](/power-apps/maker/data-platform/)
-- [Microsoft Dataverse developer documentation](/power-apps/developer/data-platform/) 
+- [Microsoft Dataverse developer documentation](/power-apps/developer/data-platform/)

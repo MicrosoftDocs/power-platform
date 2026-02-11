@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/05/2026
+ms.date: 01/30/2026
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -18,6 +18,9 @@ contributors:
 ---
 
 # Virtual Network support overview
+
+> [!NOTE]
+> The [Power Platform Virtual Network](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyNDY2NTkxNzAzMDQifQ) community on Microsoft Viva Engage is available. You can post any questions or feedback that you have about this functionality. You can join by filling out a request through the following form: [Request access to Finance and Operations Viva Engage Community](https://forms.office.com/r/qe94aGXWgp).
 
 By using [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. By using Azure Subnet delegation, protected resources don't need to be available over the internet to integrate with Power Platform. By using virtual network support, Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins and connectors to make outbound calls.
 
@@ -91,11 +94,11 @@ Power Platform supports Virtual Network for both Dataverse plug-ins and [connect
 
 Before creating your Virtual Network and enterprise policy, validate your Power Platform environment's region to ensure it's in a supported region. You can use the `Get-EnvironmentRegion` cmdlet from the [subnet diagnostics PowerShell module](/troubleshoot/power-platform/administration/virtual-network#use-the-diagnostics-powershell-module) to retrieve your environment's region information.
 
-After confirming your environment's region, ensure your enterprise policy and Azure resources are configured in the corresponding supported Azure regions. For example, if your Power Platform environment is in the United Kingdom, then your Virtual Network and subnets must be in the **uksouth** and **ukwest** Azure regions. In the case that a Power Platform region has more than two available region pairs, you must use the specific region pair that matches your environment's region. For example, if `Get-EnvironmentRegion` returns **westus** for your environment, then your Virtual Network and subnets must be in **eastus and westus**. If it returns **eastus2**, then your Virtual Network and subnets must be in **centralus and eastus2**.
+After confirming your environment's region, ensure your enterprise policy and Azure resources are configured in the corresponding supported Azure regions. For example, if your Power Platform environment is in the United Kingdom, then your Virtual Network and subnets must be in the **uksouth** and **ukwest** Azure regions. In the case that a Power Platform region has more than two available region pairs, you must use the specific region pair that matches your environment's region. For example, if `Get-EnvironmentRegion` returns **westus** for your environment, then your Virtual Network and subnets must be in **eastus** and **westus**.
 
 | Power Platform region | Azure region |
 |-----------------------|--------------|
-| United States |  <ul><li>eastus, westus</li><li>centralus, eastus2</li></ul>|
+| United States | eastus, westus |
 | South Africa  | southafricanorth, southafricawest |
 | UK | uksouth, ukwest |
 | Japan | japaneast, japanwest |

@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 12/09/2025
+ms.date: 02/11/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -57,7 +57,8 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Use Dataverse as a data source for canvas apps​**](../reference-architectures/dataverse-canvas-app.md) | Learn how creating a Power Apps application that uses Dataverse as a data source helps build a more custom user experience. |
 | [**Use SQL Server with canvas apps​**](../reference-architectures/sqlserver-canvas-app.md) | Learn how to build and publish an enterprise-grade canvas app using SQL Server as a data source. |
 | [**Implement a scalable notification system with Power Platform**](../reference-architectures/scalable-notification-system.md) | Learn how to implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
-| **[Optimize the performance of canvas apps that require complex business logic](../reference-architectures/optimize-performance-canvas-apps.md)** | Learn how to optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
+| [**Optimize the performance of canvas apps that require complex business logic**](../reference-architectures/optimize-performance-canvas-apps.md) | Learn how to optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
+| [**Use Copilot Studio agents in model-driven apps**](../reference-architectures/contextual-ai-model-driven-app.md) | Learn how to integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
 
 ## Solution ideas
 
@@ -67,6 +68,8 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Property rental portal with AI-driven search and payment processing**](../solution-ideas/agent-rental-portal.md) | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 | [**Revolutionize vehicle inspections with EVVIE**](../solution-ideas/app-evvie.md) | Inspect vehicles and assess damage using generative AI and Power Platform. |
 | [**Intelligent cardiac triage and scheduling with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
+| [**AI-enabled donor management solution**](../solution-ideas/agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
+| [**Learning management app using Microsoft Learn content**](../solution-ideas/app-learning-management.md) | Design a learning management solution using Microsoft Power Platform and Microsoft Learn content to enhance trainer and learner experiences. |
 
 ## Related resources
 

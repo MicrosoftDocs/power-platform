@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 12/09/2025
+ms.date: 01/12/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -37,4 +37,5 @@ Reference architectures are essential frameworks that guide the design and imple
 | **[Extract and analyze agent conversation transcripts](analyze-agent-conversation-transcripts.md)** | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
 | **[Implement a scalable notification system with Power Platform](scalable-notification-system.md)** | Learn how to implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
 | **[Optimize the performance of canvas apps that require complex business logic](optimize-performance-canvas-apps.md)** | Learn how to optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
-| **[Analyze and automate business data with Dataverse SDK for Python](dataverse-sdk-for-python.md)** | earn how the Dataverse SDK for Python empowers developers and data scientists to analyze, automate, and innovate with enterprise-grade data. |
+| **[Analyze and automate business data with Dataverse SDK for Python](dataverse-sdk-for-python.md)** | Learn how the Dataverse SDK for Python empowers developers and data scientists to analyze, automate, and innovate with enterprise-grade data. |
+| **[Use Copilot Studio agents in model-driven apps](contextual-ai-model-driven-app.md)** | Learn how to integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |

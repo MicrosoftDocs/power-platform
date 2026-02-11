@@ -103,6 +103,8 @@
           href: reference-architectures/analyze-agent-conversation-transcripts.md
         - name: Implement a scalable notification system with Power Platform
           href: reference-architectures/scalable-notification-system.md
+        - name: Use Copilot Studio agents in model-driven apps
+          href: reference-architectures/contextual-ai-model-driven-app.md
         - name: Analyze and automate business data with Dataverse SDK for Python
           href: reference-architectures/dataverse-sdk-for-python.md
     - name: Solution ideas
@@ -125,6 +127,16 @@
           href: solution-ideas/auto-ai-triage.md
         - name: Intelligent cardiac triage and scheduling
           href: solution-ideas/cardio-triage-agent.md
+        - name: ​​Build anomaly detection with Copilot Studio and Fabric​
+          href: solution-ideas/agent-anomaly-detection.md
+        - name: ​​Streamline customer service with a customer support assistance agent​
+          href: solution-ideas/customer-support-agent.md
+        - name: ​Improve the new hire experience with an onboarding agent
+          href: solution-ideas/onboarding-agent.md
+        - name: AI-enabled donor management solution
+          href: solution-ideas/agent-donor-management.md
+        - name: Learning management app using Microsoft Learn content
+          href: solution-ideas/app-learning-management.md
     - name: Power Platform products
       items:
         - name: Power Apps
@@ -139,11 +151,17 @@
           href: products/copilot-studio.md
     - name: Contribute
       href: contribute.md
-    - name: Power Platform icons
-      href: /power-platform/guidance/icons?toc=/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
-    - name: Power Platform Well-Architected
-      href: /power-platform/well-architected
-    - name: Power Platform for developers
-      href: /power-platform/developer/get-started
-    - name: Application lifecycle management with Microsoft Power Platform
-      href: /power-platform/alm/
+    - name: Related documentation
+      items:
+        - name: Power Platform icons
+          href: /power-platform/guidance/icons?toc=/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
+        - name: Power Platform Well-Architected
+          href: /power-platform/well-architected
+        - name: Power Platform for developers
+          href: /power-platform/developer/get-started
+        - name: Application lifecycle management with Microsoft Power Platform
+          href: /power-platform/alm/
+        - name: Copilot Studio guidance
+          href: /microsoft-copilot-studio/guidance/
+        - name: "Architecting agent solutions: Principles and patterns"
+          href: /microsoft-copilot-studio/guidance/architecture/
