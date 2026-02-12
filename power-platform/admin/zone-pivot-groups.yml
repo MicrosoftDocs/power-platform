@@ -1,0 +1,11 @@
+# YamlMime:ZonePivotGroups
+groups:
+  # Owner: osfaixat
+  - id: subnet-setup
+    title: Choose how you want to set up your Virtual Network Integration
+    prompt: Choose how you want to set up your Virtual Network Integration
+    pivots:
+      - id: powershell
+        title: PowerShell
+      - id: manual
+        title: Manual
