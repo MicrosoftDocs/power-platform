@@ -105,6 +105,8 @@
           href: reference-architectures/scalable-notification-system.md
         - name: Use Copilot Studio agents in model-driven apps
           href: reference-architectures/contextual-ai-model-driven-app.md
+        - name: Analyze and automate business data with Dataverse SDK for Python
+          href: reference-architectures/dataverse-sdk-for-python.md
     - name: Solution ideas
       items:
         - name: Overview
