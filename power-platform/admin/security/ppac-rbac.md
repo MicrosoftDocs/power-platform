@@ -3,14 +3,13 @@ title: What is Power Platform role-based access control (RBAC)?
 description: Learn more about role-based access control in the Power Platform admin center. Learn how to use role assignments to control access to Power Platform resources.
 author: laneswenka
 manager: zoraz
-ms.service: powerplatform-admin
+ms.subervice: admin
 ms.topic: overview
 ms.date: 02/10/2026
 ms.author: laswenka
 ms.reviewer: sericks
 
 ---
-
 
 # What is Power Platform role-based access control (RBAC)?
 
