@@ -4,7 +4,7 @@ description: Learn how the Dataverse SDK for Python empowers developers and data
 #customer intent: As a data scientist, I want to extract and analyze Dataverse data using Python tools like Pandas and Jupyter so that I can create predictive models and generate actionable insights.
 author: manuelap-msft
 ms.author: paulliew
-ms.date: 01/06/2026
+ms.date: 02/12/2026
 ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.reviewer: jhaskett-msft
@@ -12,7 +12,7 @@ ms.reviewer: jhaskett-msft
 
 # Analyze and automate business data with Dataverse SDK for Python
 
-The Dataverse SDK for Python is a comprehensive toolkit that empowers both professional developers (pro-devs) and data scientists to unlock advanced analytics, automation, and innovation within Microsoft Dataverse. Pro-devs can use the SDK to build scalable, secure business applications, and orchestrate agentic workflows. Data scientists and analysts can use familiar Python tools—such as Pandas, Jupyter notebooks, and machine learning libraries—to create analysis models, simulation models, and operationalize AI-driven insights. This SDK bridges the gap between enterprise-grade data management and the flexibility of Python, accelerating time-to-value and fostering a vibrant developer ecosystem.
+The [Dataverse SDK for Python](/power-apps/developer/data-platform/sdk-python/overview) is a comprehensive toolkit that empowers both professional developers (pro-devs) and data scientists to unlock advanced analytics, automation, and innovation within [Microsoft Dataverse](/power-apps/maker/data-platform/). Pro-devs can use the SDK to build scalable, secure business applications, and orchestrate agentic workflows. Data scientists and analysts can use familiar Python tools—such as Pandas, Jupyter notebooks, and machine learning libraries—to create analysis models, simulation models, and operationalize AI-driven insights. This SDK bridges the gap between enterprise-grade data management and the flexibility of Python, accelerating time-to-value and fostering a vibrant developer ecosystem.
 
 > [!TIP]
 > Start by watching the introduction video on [using the Dataverse SDK for Python with business data](https://www.youtube.com/watch?v=3wb2i1iDtso).
@@ -37,19 +37,19 @@ The typical workflow for harnessing Dataverse business data by using Python incl
 
 ### Pro-dev scenario
 
-A Python developer builds an employee onboarding system for Fabrikam Enterprises by creating tables for Employee Details, Department Reference, and Onboarding Request Status. By using the SDK, they define schemas, add columns and relationships, and use create, read, and update APIs to seed and modify records - all while upholding enterprise-level security and governance.
+A Python developer builds an employee onboarding system for Fabrikam Enterprises by creating tables for employee details, department reference, and onboarding request status. By using the SDK, they define schemas, add columns and relationships, and use create, read, and update APIs to seed and modify records - all while upholding enterprise-level security and governance.
 
 ### Data scientist scenario
 
-A data scientist uses Python tools such as Jupyter notebooks and Visual Studio Code to extract business data from Dataverse and shape it into Pandas DataFrames. The data scientist can then use the extracted business data with advanced analytics and machine learning models for risk assessment, SLA monitoring, or compliance reporting. The data scientist visualizes and shares outputs for fast decision-making.
+A data scientist uses Python tools such as Jupyter notebooks and Visual Studio Code to extract business data from Dataverse and shape it into Pandas DataFrames. The data scientist can then use the extracted business data with advanced analytics and machine learning models for risk assessment, service level agreement (SLA) monitoring, or compliance reporting. The data scientist visualizes and shares outputs for fast decision-making.
 
 ### Generative AI use case
 
-Use Python analytics and LLMs to summarize customer trends or classify segments, such as high-value or churn risk. Write the results back to Dataverse, enabling operational dashboards and compliance workflows. This approach ensures AI outputs are securely stored and governed within the enterprise data platform.
+Use Python analytics and language models to summarize customer trends or classify segments, such as high-value or churn risk. Write the results back to Dataverse, enabling operational dashboards and compliance workflows. This approach ensures AI outputs are securely stored and governed within the enterprise data platform.
 
 ## Considerations
 
-- **Prerequisites:** Access to a Dataverse environment, appropriate security roles, Python 3.13 or later, and network access to PyPI for SDK installation.
+- **Prerequisites:** Access to a [Power Platform environment](/power-platform/admin/environments-overview) with Dataverse, appropriate [security roles](/power-platform/admin/database-security), Python 3.13 or later, and network access to PyPI for SDK installation.
 
 - **Integration:** Ensure compatibility with existing *Extract, Transform, Load* (ETL) pipelines, automation tools, and enterprise governance policies.
 
@@ -67,7 +67,7 @@ Use Python analytics and LLMs to summarize customer trends or classify segments,
 
 ### Security
 
-- **Role-based access control:** Enforce Dataverse security roles and policies for all data operations.
+- **Role-based access control:** Enforce [Dataverse security roles](/power-platform/admin/database-security) and policies for all data operations.
 
 - **Data governance:** Ensure compliance with enterprise standards for data privacy, audit logging, and encryption.
 
