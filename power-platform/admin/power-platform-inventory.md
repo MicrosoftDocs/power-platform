@@ -129,6 +129,8 @@ Quickly search for keywords across all entries currently loaded in the inventory
   
 - **Model-driven apps in the default environment:** The default environment comes with three preinstalled model-driven apps: Power Platform Environment Settings, Power Pages Management, and Solution Health Hub. These don't appear in the inventory initially unless they're edited and republished.
 
+- **Power Platform Inventory is not available in Government Cloud (GCC Moderate, GCC-H, DOD)**
+
 ## Programmatic access
 
 Power Platform inventory data is available programmatically, supporting advanced scenarios such as automation, reporting, and integration with external tools.
