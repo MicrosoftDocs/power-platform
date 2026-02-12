@@ -28,8 +28,8 @@ The following conceptual architecture diagram illustrates how Dataverse SDK for 
 The typical workflow for harnessing Dataverse business data by using Python includes:
 
 1. **Connect to Dataverse:** Securely access enterprise data by using the SDK.
-1. **Extract & Transform:** Load tables into Pandas DataFrames for cleaning, feature engineering, and exploratory analysis.
-1. **Assessment Modeling:** Apply ML algorithms (for example, classification, regression) to evaluate business scenarios, predict outcomes, and identify trends.
+1. **Extract and transform:** Load tables into Pandas DataFrames for cleaning, feature engineering, and exploratory analysis.
+1. **Assessment modeling:** Apply ML algorithms (for example, classification, regression) to evaluate business scenarios, predict outcomes, and identify trends.
 1. **Write-back to Dataverse:** Post AI-generated assessments to Dataverse tables for dashboards and reporting.
 1. **Governance:** Ensure all workflows comply with enterprise security and governance standards.
 
