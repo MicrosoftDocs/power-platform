@@ -468,7 +468,7 @@
                   href: monitoring/monitor-copilot-studio.md
         - name: Usage and inventory
           items:
-            - name: Discover what's driving engagement with the Usage page (preview)
+            - name: Discover what drives engagement in Power Platform
               href: usage.md
             - name: Inventory
               items:
