@@ -4,7 +4,7 @@ description: Learn how Azure Virtual Network support enhances the security, conn
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/22/2025
+ms.date: 02/13/2026
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -18,7 +18,7 @@ ms.custom:
 
 # Virtual Network support white paper
 
-Your organization can use Azure Virtual Network to ensure that its Power Platform services operate in a secure and controlled network environment, reducing the risk of data breaches and unauthorized access. This white paper provides an in-depth analysis of Azure Virtual Network support in Power Platform. It highlights key benefits, outlines the implementation process and technical architecture, discusses real-world use cases, and offers practical insights from a successful case study, making it a valuable resource for IT professionals and decision-makers looking to enhance their network security and operational efficiency benefit.
+Your organization can use Azure Virtual Network to ensure that its Power Platform services operate in a secure and controlled network environment, reducing the risk of data breaches and unauthorized access. This white paper provides an in-depth analysis of Azure Virtual Network support in Power Platform. It highlights key benefits, outlines the implementation process and technical architecture, discusses real-world use cases, and offers practical insights from a successful case study. It's a valuable resource for IT professionals and decision-makers looking to enhance their network security and operational efficiency.
 
 ## Key benefits
 
@@ -47,7 +47,7 @@ The integration of these components with Azure resources using virtual networks 
 
 ### Network security and Virtual Network integration
 
-Network security is a critical aspect of any digital infrastructure. Protecting outbound traffic from Power Platform services is essential to prevent unauthorized access, data breaches, and other security threats. Virtual Network integration plays a vital role. By providing a secure pathway for data transmission, ensuring that all traffic from Power Platform services is routed through a controlled and monitored network environment, it reduces the risk of exposure to potential threats.
+Network security is a critical aspect of any digital infrastructure. Protecting outbound traffic from Power Platform services is essential to prevent unauthorized access, data breaches, and other security threats. Virtual Network integration plays a vital role. By providing a secure pathway for data transmission and ensuring that all traffic from Power Platform services routes through a controlled and monitored network environment, it reduces the risk of exposure to potential threats.
 
 By implementing Virtual Network support, your organization can enforce strict security policies, monitor network traffic, and detect any anomalies in real time. This level of control is crucial for maintaining the integrity and confidentiality of sensitive data. At the same time, Virtual Network integration simplifies your overall network architecture and improves reliability by allowing Power Platform services to connect seamlessly with other Azure resources.
 
@@ -59,7 +59,7 @@ By routing all outbound traffic from Power Platform services through a virtual n
 
 ### Behind the scenes
 
-Power Platform infrastructure consists of a serverless container orchestration layer that executes workloads with a strict security boundary and guarantees individual, workload-level availability and scalability. The container orchestration layer is used for all workloads that need isolation, including internal Microsoft workload-like connectors and customer workloads like plug-ins.
+Power Platform infrastructure consists of a serverless container orchestration layer that executes workloads with a strict security boundary and guarantees individual, workload-level availability, and scalability. The container orchestration layer handles all workloads that need isolation, including internal Microsoft workloads like connectors and customer workloads like plug-ins.
 
 The containerized workload allows Power Platform to support network-level isolation using a combination of Azure subnet delegation and Virtual Network injection features. With Virtual Network injection, a container can be injected into a virtual network by attaching a network interface card. Any workload running on that container is executed in the customer's network and can use private IP addresses within the network. Plug-in workloads can access user services, resources, or Azure resources with a private link exposed to the same virtual network. Similarly, a connector workload can access the target resource or endpoint inside the same virtual network.
 
@@ -71,7 +71,7 @@ Because the container operates within the boundaries of the delegated subnet and
 
 Power Platform doesn't manage the configuration of the delegated subnet. The only requirement is that the delegated subnet can't be used for any other resources or delegated to other services. After a subnet is delegated, the IP addresses within that subnet are reserved for Power Platform.
 
-Internet access from the containers is not restricted by default. The container can still route to public endpoints. For information on restricting internet access, see [Best practices for securing outbound connections](#best-practices-for-securing-outbound-connections-from-power-platform-services).
+Internet access from the containers isn't restricted by default. The container can still route to public endpoints. For information on restricting internet access, see [Best practices for securing outbound connections](#best-practices-for-securing-outbound-connections-from-power-platform-services).
 
 The following table summarizes the ownership of the delegated subnet and the controls that are available to customers and Microsoft.
 
@@ -179,7 +179,7 @@ Network security groups (NSGs) allow you to define security rules that control t
 
 ### Best practices for securing outbound connections from Power Platform services
 
-The following best practices help you secure outbound connections from Power Platform services, which is crucial to mitigate data exfiltration risks and ensure compliance with security policies.
+The following best practices help you secure outbound connections from Power Platform services, which are crucial to mitigate data exfiltration risks and ensure compliance with security policies.
 
 - **Restrict internet access**: By default, containers have unrestricted outbound internet access. Attach a [NAT gateway](#azure-nat-gateway) to the delegated subnet to force all internet-bound traffic through a controlled path, ensuring that containers remain private while maintaining secure outbound connectivity.
 
@@ -217,7 +217,7 @@ The following minimum configuration is needed to set up Virtual Network support 
 In this scenario, we make the following assumptions:
 
 - Your Power Platform environment is located in the United States.
-- The azure regions for the virtual networks are set to West US and East US.
+- The Azure regions for the virtual networks are set to West US and East US.
 - Your enterprise resources are in a virtual network, VNet1, in the Central US region.
 
 The following minimum configuration is needed to set up Virtual Network support in this scenario:
