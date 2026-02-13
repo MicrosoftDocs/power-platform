@@ -55,14 +55,14 @@ When an agent makes a request to external resources, the Global Secure Access se
 Configuring network controls for Copilot Studio agents involves several steps:
 
 1. [Enable Network Controls for Copilot Studio Agents in Power Platform environment settings](#enable-network-controls-for-copilot-studio-agents)
-1. [Create security policies for Copilot Studio traffic](#next-step)
+1. [Create security policies for Copilot Studio traffic](#more-details-on-security-controls-in-global-secure-access)
 
 ## Enable network controls for Copilot Studio Agents
 
 The first step is to enable traffic forwarding from Copilot Studio Agents in the Power Platform Admin Center.
 
 > [!NOTE]
-> Before you enable this feature in the Power Platform Admin Center, ensure your tenant is onboarded to Global Secure Access in the [Microsoft Entra Admin Center](aka.ms/entragsaportal)
+> Before you enable this feature in the Power Platform Admin Center, ensure your tenant is onboarded to Global Secure Access in the [Microsoft Entra Admin Center](https://aka.ms/entragsaportal)
 
 ### Enable network controls at the environment level
 
@@ -95,7 +95,7 @@ To configure Global Secure Access settings at the environment group-level, compl
 
 After enabling network controls, you can enforce Global Secure Access security policies on agent traffic. You can apply web content filtering, threat intelligence filtering, and other security policies. The following example shows how to configure a web content filtering policy:
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a [Global Secure Access Administrator](../identity/role-based-access-control/permissions-reference.md#global-secure-access-administrator).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a [Global Secure Access Administrator](/identity/role-based-access-control/permissions-reference.md#global-secure-access-administrator).
 1. Browse to **Global Secure Access** > **Secure** > **Web content filtering policies**.
 1. Select **Create policy**.
 1. Enter a descriptive name and a description for the policy, then select **Next**.
@@ -104,7 +104,7 @@ After enabling network controls, you can enforce Global Secure Access security p
 1. Select **Next** to review the policy.
 1. Select **Create policy**.
 
-Next, you can create policies like [threat intelligence](how-to-configure-threat-intelligence.md) to protect agents against malicious destinations or [file policy](how-to-network-content-filtering.md) to safeguard against unintended data exposure and prevent inline data leaks.
+Next, you can create policies like [threat intelligence](/entra/global-secure-access/how-to-configure-threat-intelligence) to protect agents against malicious destinations or [file policy](/entra/global-secure-access/how-to-network-content-filtering) to safeguard against unintended data exposure and prevent inline data leaks.
 
 ## Link policies to the baseline profile
 
@@ -122,7 +122,7 @@ Group your security policies by linking them to the baseline profile to apply th
 
 Regular monitoring and maintenance ensure your security configuration remains effective:
 
-1. **Review traffic logs** regularly for unusual patterns or blocked legitimate traffic. For more information, see [Global Secure Access network traffic logs](how-to-view-traffic-logs.md).
+1. **Review traffic logs** regularly for unusual patterns or blocked legitimate traffic. For more information, see [Global Secure Access network traffic logs](/entra/global-secure-access/how-to-view-traffic-logs).
 1. **Update filtering policies** as new services or requirements emerge.
 1. **Test policy changes** in a development environment before applying to production.
 
