@@ -15,8 +15,8 @@
         "tags": [
           "FinanceAndOperationsMaintenanceSettings"
         ],
-        "summary": "Get Finance and Operations Maintenance Settings.",
-        "description": "Retrieves the F&O maintenance settings for an environment managed by Power Platform admin center.",
+        "summary": "Get Microsoft Dynamics Finance and Operations maintenance settings.",
+        "description": "Retrieves the Microsoft Dynamics Finance & Operations maintenance settings for an environment managed by Power Platform admin center.",
         "operationId": "GetFinOpsMaintenanceSettings",
         "produces": [
           "application/json"
@@ -41,7 +41,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successfully retrieved Finance and Operations Maintenance.",
+            "description": "Successfully retrieved Finance & Operations maintenance.",
             "schema": {
               "$ref": "#/definitions/FinOpsAdminSettingsResponse"
             }
@@ -82,8 +82,8 @@
         "tags": [
           "FinanceAndOperationsMaintenanceSettings"
         ],
-        "summary": "Update Finance and Operations Maintenance Settings.",
-        "description": "Updates the F&O maintenance settings for an environment managed by Power Platform admin center.",
+        "summary": "Update Finance & Operations maintenance settings.",
+        "description": "Updates the Finance & Operation maintenance settings for an environment managed by Power Platform admin center.",
         "operationId": "UpdateFinOpsMaintenanceSettings",
         "consumes": [
           "application/json"
@@ -119,7 +119,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successfully updated Finance and Operations Maintenance.",
+            "description": "Successfully updated Finance & Operations maintenance.",
             "schema": {
               "$ref": "#/definitions/FinOpsAdminSettingsResponse"
             }
@@ -174,7 +174,7 @@
       "example": "Monday"
     },
     "UpdateFinOpsAdminSettingsRequestBody": {
-      "description": "Request body for updating Finance and Operations Maintenance.",
+      "description": "Request body for updating Finance & Operations maintenance.",
       "type": "object",
       "properties": {
         "updatedMaintenanceWindowDaysOfWeek": {
@@ -200,7 +200,7 @@
       }
     },
     "FinOpsAdminSettingsResponse": {
-      "description": "Finance and Operations Maintenance response.",
+      "description": "Finance & Operations Maintenance response.",
       "type": "object",
       "properties": {
         "maintenanceWindowDaysOfWeek": {
