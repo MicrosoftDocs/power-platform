@@ -189,7 +189,7 @@ Yes. You can use Network Security Group and firewalls to monitor outbound traffi
 
 ### Can I make internet-bound calls from plug-ins or connectors after my environment is subnet-delegated?
 
-Yes. You can make internet-bound calls from plug-ins or connectors, but the delegated subnet must be configured with an [Azure NAT gateway](/azure/nat-gateway/nat-overview).
+Yes. Internet-bound access is available by default from plug-ins and connectors in a subnet-delegated environment. We recommend attaching an [Azure NAT gateway](/azure/nat-gateway/nat-overview) to the delegated subnet so your organization can control and secure outbound access. For more information, see [Best practices for securing outbound connections from Power Platform services](virtual-network-support-whitepaper.md#best-practices-for-securing-outbound-connections-from-power-platform-services).
 
 ### Can I update the subnet IP address range after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
