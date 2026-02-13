@@ -15,8 +15,8 @@
         "tags": [
           "FinanceAndOperationsMaintenanceSettings"
         ],
-        "summary": "Get Microsoft Dynamics Finance and Operations maintenance settings.",
-        "description": "Retrieves the Microsoft Dynamics Finance & Operations maintenance settings for an environment managed by Power Platform admin center.",
+        "summary": "Get Microsoft Dynamics 365 Finance & Operations maintenance settings.",
+        "description": "Retrieves the Microsoft Dynamics 365 Finance & Operations maintenance settings for an environment managed by Power Platform admin center.",
         "operationId": "GetFinOpsMaintenanceSettings",
         "produces": [
           "application/json"
