@@ -219,6 +219,8 @@ After validation succeeds, a banner with the **Move environment** button appears
 
 After the move operation completes:
 
+TEST
+
 - The process moves the Dataverse organization from the source tenant to the destination tenant.
 - The source tenant keeps the environment but without the Dataverse organization.
 - The process creates a new environment in the destination tenant with the same name as the source environment and includes the moved Dataverse organization.
