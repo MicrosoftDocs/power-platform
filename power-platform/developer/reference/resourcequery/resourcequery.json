@@ -56,12 +56,12 @@
                   "TableName": "PowerPlatformResources",
                   "Clauses": [
                     {
-                      "$type": "extend",
+                      "$­type": "extend",
                       "FieldName": "joinKey",
                       "Expression": "tolower(tostring(properties.environmentId))"
                     },
                     {
-                      "$type": "join",
+                      "$­type": "join",
                       "JoinKind": "leftouter",
                       "LeftColumnName": "joinKey",
                       "RightColumnName": "joinKey",
@@ -69,7 +69,7 @@
                         "TableName": "PowerPlatformResources",
                         "Clauses": [
                           {
-                            "$type": "where",
+                            "$­type": "where",
                             "FieldName": "type",
                             "Operator": "==",
                             "Values": [
@@ -77,7 +77,7 @@
                             ]
                           },
                           {
-                            "$type": "project",
+                            "$­type": "project",
                             "FieldList": [
                               "joinKey = tolower(name)",
                               "environmentName = properties.displayName",
@@ -90,7 +90,7 @@
                       }
                     },
                     {
-                      "$type": "where",
+                      "$­type": "where",
                       "FieldName": "type",
                       "Operator": "in~",
                       "Values": [
@@ -103,7 +103,7 @@
                       ]
                     },
                     {
-                      "$type": "orderby",
+                      "$­type": "orderby",
                       "FieldNamesAscDesc": {
                         "tostring(properties.createdAt)": "desc"
                       }
@@ -215,7 +215,7 @@
     "Clause": {
       "description": "Base class for all Kusto clauses.",
       "required": [
-        "$type"
+        "$­type"
       ],
       "type": "object",
       "allOf": [
@@ -224,7 +224,7 @@
         }
       ],
       "properties": {
-        "$type": {
+        "$­type": {
           "description": "Discriminator for the clause type.",
           "enum": [
             "where",
@@ -240,15 +240,15 @@
           "type": "string"
         }
       },
-      "discriminator": "$type"
+      "discriminator": "$­type"
     },
     "ClauseBaseClass": {
       "required": [
-        "$type"
+        "$­type"
       ],
       "type": "object",
       "properties": {
-        "$type": {
+        "$­type": {
           "description": "Discriminator for the clause type.",
           "enum": [
             "where",
