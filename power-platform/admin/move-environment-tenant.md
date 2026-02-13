@@ -22,7 +22,7 @@ search.audienceType:
 ---
 
 # Tenant-to-tenant migrations
-The tenant-to-tenant migration feature allows you to transfer an environment from one tenant to another. This feature supports scenarios such as merging multiple tenants into one and facilitating company acquisitions. The environment doesn't actually _move_, but rather is _linked_ to another tenant. The environment still exists but isn't part of the source tenant anymore. It's accessible and managed under the destination tenant. There are no user interface changes or version changes as part of this move.
+The tenant-to-tenant migration feature allows you to transfer an environment from one tenant to another. This feature supports scenarios such as merging multiple tenants into one and facilitating company acquisitions. The environment doesn't actually _move_, but rather is _linked_ to another tenant. The environment still exists but isn't part of the source tenant anymore. It's accessible and managed under the destination tenant. There are no user interface changes or version changes as part of this move. 
 
 ## Before you get started
 Be aware of the following considerations before starting a tenant-to-tenant migration.
@@ -218,8 +218,6 @@ After validation succeeds, a banner with the **Move environment** button appears
 ### Move completion
 
 After the move operation completes:
-
-TEST
 
 - The process moves the Dataverse organization from the source tenant to the destination tenant.
 - The source tenant keeps the environment but without the Dataverse organization.
