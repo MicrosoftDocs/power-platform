@@ -95,7 +95,7 @@ To configure Global Secure Access settings at the environment group-level, compl
 
 After enabling network controls, you can enforce Global Secure Access security policies on agent traffic. You can apply web content filtering, threat intelligence filtering, and other security policies. The following example shows how to configure a web content filtering policy:
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a [Global Secure Access Administrator](/identity/role-based-access-control/permissions-reference.md#global-secure-access-administrator).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a [Global Secure Access Administrator](/identity/role-based-access-control/permissions-reference#global-secure-access-administrator).
 1. Browse to **Global Secure Access** > **Secure** > **Web content filtering policies**.
 1. Select **Create policy**.
 1. Enter a descriptive name and a description for the policy, then select **Next**.
@@ -110,7 +110,7 @@ Next, you can create policies like [threat intelligence](/entra/global-secure-ac
 
 Group your security policies by linking them to the baseline profile to apply them to Copilot Studio agent traffic. Security profiles linked to Conditional Access policies aren't currently supported for Copilot Studio agents.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a [Global Secure Access Administrator](../identity/role-based-access-control/permissions-reference.md#global-secure-access-administrator).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a [Global Secure Access Administrator](/identity/role-based-access-control/permissions-reference#global-secure-access-administrator).
 1. Browse to **Global Secure Access** > **Secure** > **Security profiles**.
 1. Select the **Baseline profile** tab.
 1. Select **Edit** to edit the baseline profile rules.
