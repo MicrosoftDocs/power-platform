@@ -27,9 +27,6 @@ The tenant-to-tenant migration feature allows you to transfer an environment fro
 ## Before you get started
 Be aware of the following considerations before starting a tenant-to-tenant migration.
 
-> [!NOTE]
-> Tenant-to-tenant migrations will support Managed Environments in the future.
-
 * **Supported environment types**: Only production and sandbox environments are supported.
 * **Unsupported environment types**: Default, developer, trial, and Teams environments aren't supported. Government Community Cloud (GCC) to public clouds and vice versa are also not supported.
 * The following components aren't supported: Dynamics 365 Customer Voice, Omnichannel for Customer Service, component library, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Customer Insights - Data.
@@ -147,8 +144,12 @@ Create a user-mapping file for the source environment to transfer to the target 
     
     1. Save the CSV file that has both full access users and administrative access users mapped.
 
+> [!NOTE]
+> **Before proceeding with the migration, make sure you review and complete the preparation process. After you complete the preparation process, follow the steps in the following sections to migrate.**
+> **Update security group after migration in destination tenant. Security groups migration is not supported.**
 
 ## Migrate using Power Platform admin center
+Before proceeding with the migration, make sure you review and complete the preparation process. After you complete the preparation process, follow the steps in the following sections to migrate using Power Platform admin center.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
@@ -204,6 +205,23 @@ If the validation operation fails, a banner with a **Download errors** button ap
 
 :::image type="content" source="media/move-environment-tenant/downloadusermappingerrfile.jpg" alt-text="Screenshot of the Environments page showing error banner with Download errors button.":::
 
+Refer table below for understanding and troubleshooting user mapping results.
+|Error code|Description|Action|
+|-----------|-------------|--------------|
+|SourceUserIdMissingInUserMap|SourceUserId is empty in the mapping.|Check and fix Source User in mapping file.|
+|TargetUserIdMissingInUserMap|TargetUserId is empty in the mapping.|Check and fix Target User in mapping file.|
+|SourceUserIdIsNotValidGuid|SourceUserId is not a valid Guid.|Fix Source User to be a valid GUID in mapping file.|
+|SourceUserDoesNotExistInOrgDB|SourceUserId did not match to any SystemUserId in the organization's SystemUsers table.|Remove the entry from mapping file.|
+|TargetUPNDoesNotExistInAAD|TargetUserId upn is not found in azure active directory for the tenant.|Check and fix Target User to an existing and valid user in the tenant Active Directory or remove the entry from mapping file.|
+|RetryableError|A retriable error has occurred during mapping of the user. Might be successful on next retry.|Rerun User mapping command with the list of user with this error in the mapping file.|
+|ApplicationUserCannotBeMapped|Source user in the map is an application user, not supported by mapping operation.|Application user mapping is not supported. No Action. Suggest customer to create the application users in the destination tenant. Source Tenant App Users cannot be migrated to the destination tenant. This is by design.|
+|DuplicateTargetApplicationUserExist|A duplicate target user which is an Applicationuser found in organization's system users table. Cannot be mapped.|Not supported. Anonymize the application user manually using the Action mentioned for DuplicateTargetUserExistInOrgDB.|
+|DuplicateTargetUserExistInOrgDB|A duplicate target user is found organization's system users table that failed to anonymize. Cannot be mapped (this should be taken care by the Map Job itself, incase Map job does not take care of this then follow below steps).|Anonymize the user using following steps
+Go to unify, CDS --> System users.
+Use the interactive search to search each user, and get the system user id.
+Run the anonymize system user command for this user.|
+|SkippedMapping|Source User does not exist in the org and target user already exists.|No action required. It means source user was already mapped to the target user in previous run or manually.|
+
 #### When validation succeeds
 
 After validation succeeds, a banner with the **Move environment** button appears on the environment's details page.
@@ -222,12 +240,13 @@ After the move operation completes:
 - The process moves the Dataverse organization from the source tenant to the destination tenant.
 - The source tenant keeps the environment but without the Dataverse organization.
 - The process creates a new environment in the destination tenant with the same name as the source environment and includes the moved Dataverse organization.
+- **Update security group after migration in destination tenant. Security groups migration is not supported.**
 
 ### Cancel move
 You can cancel the move at any time between submitting the request and completing the environment move. Select the **Cancel move** button on the banner to open the **Cancel move** dialog and cancel the move.
 
 ## Migrate using PowerShell
-Before proceeding with the migration, make sure you review and complete the preparation process. After you complete the preparation process, follow the steps in the following sections to migrate.
+Before proceeding with the migration, make sure you review and complete the preparation process. After you complete the preparation process, follow the steps in the following sections to migrate using PowerShell.
 
 ### Install PowerShell for Power Platform Administrators (both source and target admins) 
 The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that helps you get started with the PowerShell for Power Platform Administrators module, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md) and [Installing PowerShell for Power Platform Administrators](powershell-installation.md).
