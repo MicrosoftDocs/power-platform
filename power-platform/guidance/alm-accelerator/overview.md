@@ -1,5 +1,5 @@
 ---
-title: ALM Accelerator for Power Platform
+title: ALM Accelerator for Power Platform (Deprecated)
 description: Learn how the ALM Accelerator for Power Platform helps you to follow ALM practices and enables you to establish source control for your solutions and move them from your development environment to test and production environments using Azure DevOps.
 ms.topic: concept-article
 ms.date: 04/09/2024
@@ -12,7 +12,16 @@ contributors:
 - mikefactorial
 ---
 
-# ALM Accelerator for Power Platform
+# ALM Accelerator for Power Platform (Deprecated)
+
+> [!NOTE]
+> **The ALM Accelerator is deprecated** and will be removed in a future release. The ALM Accelerator is one of many options for ALM in Power Platform. Others include:
+>
+> - [Pipelines for Power Platform](/power-platform/alm/pipelines) aim to democratize ALM by bringing ALM automation capabilities to Power Platform and Dynamics 365 services in a way that's more approachable for all makers, admins, and developers.
+>
+> - [Power Platform Build Tools](/power-platform/alm/devops-build-tools) tasks can be used with other Azure DevOps tasks to compose your build and release pipelines. Pipelines that teams commonly put in place include Initiate, Export from Dev, Build, and Release.
+>
+> - [GitHub Actions for Power Platform](/power-platform/alm/devops-github-actions) enable developers to build automated software development lifecycle workflows to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Power Platform.
 
 The ALM Accelerator for Power Platform is a canvas app that provides a simplified interface to Azure Pipelines and Git source control for application lifecycle management (ALM). It's a reference implementation of ALM patterns and practices that uses built-in platform capabilities to help you get started with ALM in Power Platform. It's built using a combination of low-code maker- and administrator-focused canvas apps and Azure Pipelines YAML and PowerShell templates.
 
@@ -55,16 +64,6 @@ The following diagram illustrates how the ALM Accelerator facilitates interactio
 :::image type="content" source="media/TheMakerTeam2.png" alt-text="Diagram that illustrates how the ALM Accelerator facilitates interactions between a maker team and development, validation, test, and production environments." lightbox="media/TheMakerTeam2.png":::
 
 Makers work in isolation in their personal development environments. They use the ALM Accelerator canvas app to import solutions from source control, export changes to source control, and create pull requests to merge changes. Customizable templates for Azure Pipelines automate ALM tasks and support a staged deployment from development to production.
-
-## What are my options for ALM in Power Platform?
-
-The ALM Accelerator is one of many options for ALM in Power Platform. Others include:
-
-- [Pipelines for Power Platform](/power-platform/alm/pipelines) aim to democratize ALM by bringing ALM automation capabilities to Power Platform and Dynamics 365 services in a way that's more approachable for all makers, admins, and developers.
-
-- [Power Platform Build Tools](/power-platform/alm/devops-build-tools) tasks can be used with other Azure DevOps tasks to compose your build and release pipelines. Pipelines that teams commonly put in place include Initiate, Export from Dev, Build, and Release.
-
-- [GitHub Actions for Power Platform](/power-platform/alm/devops-github-actions) enable developers to build automated software development lifecycle workflows to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Power Platform.
 
 ## What's the right choice for my organization?
 
