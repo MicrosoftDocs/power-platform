@@ -1,8 +1,8 @@
 ---
 title: "Authentication security architecture in Test Engine (preview)"
 description: "Technical overview of authentication security implementation in Test Engine"
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly

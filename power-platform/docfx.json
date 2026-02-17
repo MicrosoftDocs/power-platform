@@ -51,13 +51,13 @@
             "kimberleybrown",
             "nathlaroche"
          ],
-         "no-loc": ["pac admin", "pac application", "pac auth", "pac canvas", "pac catalog", "pac code", "pac connection", "pac connector", "pac copilot", "pac data", "pac env", "pac help", "pac managed-identity", "pac modelbuilder", "pac package", "pac pages", "pac pcf", "pac pipeline", "pac plugin", "pac power-fx", "pac solution", "pac telemetry", "pac test", "pac tool"],
          "breadcrumb_path": "/power-platform/breadcrumb/toc.json",
          "titleSuffix": "Power Platform",
          "feedback_system": "Standard",
          "feedback_product_url": "https://powerusers.microsoft.com/",
          "recommendations": true,
-         "uhfHeaderId": "MSDocsHeader-PowerPlatform"
+         "uhfHeaderId": "MSDocsHeader-PowerPlatform",
+         "zone_pivot_group_filename": "zone-pivot-groups.json"
       },
       "fileMetadata": {
          "searchScope": {

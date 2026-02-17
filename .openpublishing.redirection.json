@@ -1,6 +1,11 @@
 {
   "redirections": [
    {
+      "source_path": "power-platform/admin/tenant-wide-agent-inventory.md",
+      "redirect_url": "power-platform/admin/power-platform-inventory",
+      "redirect_document_id": "false"
+   },
+   {
       "source_path": "power-platform/admin/power-platform-api.md",
       "redirect_url": "powerplatform-api-getting-started",
       "redirect_document_id": "false"
@@ -1845,6 +1850,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "power-platform/admin/logging-power-automate.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/logging-powerapps.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/logging-power-pages.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-pages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/admin-activity-logging.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-platform-admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/activity-logs-dataverse-and-model-driven-apps.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-dataverse-model-driven-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/connector-events-power-platform.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-connectors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/dlp-activity-logging.md",
+      "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-power-platform-admin",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "power-platform/admin/new-admin-center.md",
       "redirect_url": "/power-platform/admin/admin-documentation",
       "redirect_document_id": false
@@ -1902,6 +1942,51 @@
     {
       "source_path": "power-platform/developer/appsource/store-package-azure-storage.md",
       "redirect_url": "../marketplace/store-package-azure-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/well-architected/intelligent-application/responsible-ai.md",
+      "redirect_url": "/microsoft-copilot-studio/guidance/responsible-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/well-architected/intelligent-application/security.md",
+      "redirect_url": "/microsoft-copilot-studio/guidance/sec-gov-phase3",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/well-architected/intelligent-application/publishing.md",
+      "redirect_url": "/microsoft-copilot-studio/guidance/channels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/well-architected/intelligent-application/monitoring.md",
+      "redirect_url": "/microsoft-copilot-studio/guidance/sec-gov-phase5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/well-architected/intelligent-application/language.md",
+      "redirect_url": "/microsoft-copilot-studio/guidance/language-understanding",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/well-architected/intelligent-application/integrations.md",
+      "redirect_url": "/microsoft-copilot-studio/guidance/integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/well-architected/intelligent-application/overview.md",
+      "redirect_url": "/microsoft-copilot-studio/guidance/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/well-architected/intelligent-application/design-principles.md",
+      "redirect_url": "/microsoft-copilot-studio/guidance/architecture-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/well-architected/intelligent-application/index.yml",
+      "redirect_url": "/microsoft-copilot-studio/guidance/",
       "redirect_document_id": false
     }
   ]

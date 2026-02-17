@@ -1,8 +1,8 @@
 ---
 title: Test Engine module functions reference (preview)
 description: Find available test engine module functions you can use.
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
 ms.date: 05/19/2025
 ms.reviewer: jdaly
