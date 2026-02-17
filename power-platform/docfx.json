@@ -56,7 +56,8 @@
          "feedback_system": "Standard",
          "feedback_product_url": "https://powerusers.microsoft.com/",
          "recommendations": true,
-         "uhfHeaderId": "MSDocsHeader-PowerPlatform"
+         "uhfHeaderId": "MSDocsHeader-PowerPlatform",
+         "zone_pivot_group_filename": "zone-pivot-groups.json"
       },
       "fileMetadata": {
          "searchScope": {
