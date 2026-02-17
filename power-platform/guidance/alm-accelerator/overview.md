@@ -1,5 +1,5 @@
 ---
-title: ALM Accelerator for Power Platform (Deprecated)
+title: ALM Accelerator for Power Platform
 description: Learn how the ALM Accelerator for Power Platform helps you to follow ALM practices and enables you to establish source control for your solutions and move them from your development environment to test and production environments using Azure DevOps.
 ms.topic: concept-article
 ms.date: 04/09/2024
@@ -12,16 +12,7 @@ contributors:
 - mikefactorial
 ---
 
-# ALM Accelerator for Power Platform (Deprecated)
-
-> [!NOTE]
-> **The ALM Accelerator is deprecated** and will be removed in a future release. The ALM Accelerator is one of many options for ALM in Power Platform. Others include:
->
-> - [Pipelines for Power Platform](/power-platform/alm/pipelines) aim to democratize ALM by bringing ALM automation capabilities to Power Platform and Dynamics 365 services in a way that's more approachable for all makers, admins, and developers.
->
-> - [Power Platform Build Tools](/power-platform/alm/devops-build-tools) tasks can be used with other Azure DevOps tasks to compose your build and release pipelines. Pipelines that teams commonly put in place include Initiate, Export from Dev, Build, and Release.
->
-> - [GitHub Actions for Power Platform](/power-platform/alm/devops-github-actions) enable developers to build automated software development lifecycle workflows to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Power Platform.
+# ALM Accelerator for Power Platform
 
 The ALM Accelerator for Power Platform is a canvas app that provides a simplified interface to Azure Pipelines and Git source control for application lifecycle management (ALM). It's a reference implementation of ALM patterns and practices that uses built-in platform capabilities to help you get started with ALM in Power Platform. It's built using a combination of low-code maker- and administrator-focused canvas apps and Azure Pipelines YAML and PowerShell templates.
 
@@ -65,6 +56,16 @@ The following diagram illustrates how the ALM Accelerator facilitates interactio
 
 Makers work in isolation in their personal development environments. They use the ALM Accelerator canvas app to import solutions from source control, export changes to source control, and create pull requests to merge changes. Customizable templates for Azure Pipelines automate ALM tasks and support a staged deployment from development to production.
 
+## What are my options for ALM in Power Platform?
+
+The ALM Accelerator is one of many options for ALM in Power Platform. Others include:
+
+- [Pipelines for Power Platform](/power-platform/alm/pipelines) aim to democratize ALM by bringing ALM automation capabilities to Power Platform and Dynamics 365 services in a way that's more approachable for all makers, admins, and developers.
+
+- [Power Platform Build Tools](/power-platform/alm/devops-build-tools) tasks can be used with other Azure DevOps tasks to compose your build and release pipelines. Pipelines that teams commonly put in place include Initiate, Export from Dev, Build, and Release.
+
+- [GitHub Actions for Power Platform](/power-platform/alm/devops-github-actions) enable developers to build automated software development lifecycle workflows to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Power Platform.
+
 ## What's the right choice for my organization?
 
 There's no one right answer for every organization. The following table and the descriptions that follow can help you decide which option is right based on your organization's current capabilities and future plans. This table isn't exhaustive. It's meant to help you make an informed decision. It will evolve over time as we add more capabilities to the ALM Accelerator and the ALM capabilities in Power Platform.
@@ -83,7 +84,7 @@ There's no one right answer for every organization. The following table and the 
 
 ### Pipelines for Power Platform (Pipelines)
 
-[Pipelines](/power-platform/alm/pipelines) are intended to simplify ALM for makers. They're the strategic, in-product experience for maker-initiated ALM in Power Platform. Pipelines provide similar capabilities to the manual export and import functionality available in Power Platform for moving solutions from one environment to another.
+Pipelines are intended to simplify ALM for makers. They're the strategic, in-product experience for maker-initiated ALM in Power Platform. Pipelines provide similar capabilities to the manual export and import functionality available in Power Platform for moving solutions from one environment to another.
 
 With service principal support, users don't require elevated permissions to deploy to other environments. Also, pre- and post-deployment customizations allow organizations to layer their business processes on top of Pipelines. This gives organizations control over the approval processes as well as providing the ability to insert custom steps into the deployment pipeline.
 
@@ -91,7 +92,7 @@ Generally, you would choose Pipelines if your organization doesn't need to contr
 
 ### Power Platform Build Tools/GitHub Actions and Power Platform CLI (Build Tools)
 
-[Build Tools](/power-platform/alm/devops-build-tools) are intended to give IT administrators and developers the tools to expedite the automation of highly customized ALM. You can address the limitations in Pipelines with Build Tools&mdash;control solution code, enable code-first scenarios, remove the need for makers to have elevated permissions in downstream environments, and include specific organizational and business processes in your ALM process.
+Build Tools are intended to give IT administrators and developers the tools to expedite the automation of highly customized ALM. You can address the limitations in Pipelines with Build Tools&mdash;control solution code, enable code-first scenarios, remove the need for makers to have elevated permissions in downstream environments, and include specific organizational and business processes in your ALM process.
 
 Generally, you would choose Build Tools if your organization has DevOps or GitHub and developer resources available and requires granular control over your ALM processes.
 
