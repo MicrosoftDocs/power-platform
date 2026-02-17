@@ -173,6 +173,16 @@
       "type": "string",
       "example": "Monday"
     },
+    "FinOpsUpdateCadence": {
+      "description": "Cadence for major version application updates.",
+      "enum": [
+        "EveryUpdate",
+        "EveryOtherUpdate",
+        "Regulated"
+      ],
+      "type": "string",
+      "example": "EveryUpdate"
+    },
     "UpdateFinOpsAdminSettingsRequestBody": {
       "description": "Request body for updating Finance and Operations Maintenance.",
       "type": "object",
