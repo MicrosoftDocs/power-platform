@@ -4,8 +4,10 @@ description: Learn how to get a comprehensive, unified view of all agents, apps,
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 02/12/2026
+ms.date: 02/17/2026
 ms.topic: concept-article
+contributors:
+    - Grayson-Bishop
 
 ---
 
@@ -129,7 +131,7 @@ Quickly search for keywords across all entries currently loaded in the inventory
   
 - **Model-driven apps in the default environment:** The default environment comes with three preinstalled model-driven apps: Power Platform Environment Settings, Power Pages Management, and Solution Health Hub. These don't appear in the inventory initially unless they're edited and republished.
 
-- **Power Platform inventory**: [Power Platform inventory](power-platform-inventory.md) isn't available in Government Community Cloud (GCC Moderate, GCC-High, DoD).
+- **Sovereign cloud**: [Power Platform inventory](power-platform-inventory.md) isn't available yet in Government Community Cloud (GCC Moderate, GCC-High, DoD).
 
 ## Programmatic access
 
