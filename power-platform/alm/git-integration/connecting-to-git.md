@@ -4,7 +4,7 @@ description: "This article discusses the integration of Dataverse with Git, focu
 author: caburk
 ms.subservice: alm
 ms.author: matp
-ms.date: 04/21/2025
+ms.date: 02/09/2026
 ms.custom: 
 ms.topic: install-set-up-deploy
 ms.reviewer: matp
@@ -65,7 +65,7 @@ Environment binding is a single process for binding your entire Dataverse enviro
 
 #### Solution binding
 
-Solution binding can be used to source control multiple solutions within the same environment to separate repositories or folders. Solution binding provides additional flexibility in your source files organization but requires more management on the part of the makers to onboard new solutions to source control. The system requires that there only be one location in source control for each and every solution object, which means that if you're going to choose to bind solutions to different source locations, the system doesn't allow you to have the same object in multiple solutions. Solution binding doesn't require a repository or solution to be selected during the initial setup. Instead, you select the repository and folder to bind each solution to when you're ready to bind the solution to source control.
+Solution binding can be used to source control multiple solutions within the same environment to separate branches or folders. Solution binding provides additional flexibility in your source files organization but requires more management on the part of the makers to onboard new solutions to source control. The system requires that there only be one location in source control for each and every solution object, which means that if you're going to choose to bind solutions to different source locations, the system doesn't allow you to have the same object in multiple solutions. For this reason, different solutions in an environment can not be bound to different repositories. 
 
 #### Other considerations
 
