@@ -24,7 +24,7 @@ Some model families are available in preview for evaluation purposes, and also i
 On January 7, 2026, Anthropic operates as a Microsoft subprocessor and the Microsoft [Product Terms](https://www.microsoft.com/licensing/terms?msockid=344e0e6ad66c6b3e19441848d7416abd) and [Microsoft Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?lang=18&msockid=344e0e6ad66c6b3e19441848d7416abd) apply to use of Anthropic models through Copilot Studio and Power Platform.
 
 > [!NOTE]
-> Your must [allow Anthropic access in the Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2341952) and [allow xAI access in Microsoft 365 admin center.](https://go.microsoft.com/fwlink/?linkid=2348423) If enabled there, you can access these settings in the Power Platform admin center.  
+> You must [allow Anthropic access in the Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2341952) and [allow xAI access in Microsoft 365 admin center.](https://go.microsoft.com/fwlink/?linkid=2348423) If enabled there, you can access these settings in the Power Platform admin center.  
 
 ## Control external AI models use for an environment
 
@@ -40,19 +40,19 @@ To enable external models, complete these steps:
 
 ## Control external models use for an environment group
 
-If your environment is part of an [environment group](environment-groups.md), you can govern use of external models use through the [External models environment group rule](environment-groups-rules.md).
+If your environment is part of an [environment group](environment-groups.md), you can govern use of external models through the [External models environment group rule](environment-groups-rules.md).
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environment groups**. Then select the environment group you want to manage.
 1. Select the **Rules** tab.
 1. Select the **External Models** rule.
-1. In the **External Models** pane, check/uncheck the available model family features to turn it On/Off.
+1. In the **External Models** pane, check or uncheck the available model family features to turn them on or off.
 1. Select **Save**.
 1. To apply your changes to the environments in the group, select **Publish rules**.
 
 > [!NOTE]
-> If the external model toggle is visible but unable to be checked, that means your organization’s admin has not enabled access to that model family in the Microsoft 365 admin center. For Anthropic models, to enable before January 7, 2026, complete the steps in [Connect to Anthropic's AI models](/copilot/microsoft-365/connect-to-ai-subprocessor).  To enable Anthropic models on January 7, 2026 or later, complete the steps in [Anthropic as a subprocessor for Microsoft Online Services](/copilot/microsoft-365/connect-to-ai-subprocessor).
+> If the external model toggle is visible but you can't check it, your organization's admin didn't enable access to that model family in the Microsoft 365 admin center. For Anthropic models, to enable access before January 7, 2026, complete the steps in [Connect to Anthropic's AI models](/copilot/microsoft-365/connect-to-ai-subprocessor).  To enable Anthropic models on January 7, 2026 or later, complete the steps in [Anthropic as a subprocessor for Microsoft Online Services](/copilot/microsoft-365/connect-to-ai-subprocessor).
 
 ## Exclusions
 
