@@ -468,8 +468,7 @@ For Unified Interface, in the upper-right corner, select **Settings** > **Advanc
 
 ## Monitoring system jobs 
 
-<!-- this content is copied from monitor-manage-system-jobs topic -->
-
+For information about how to monitor system jobs, go to [Monitor system jobs](monitor-system-jobs.md).
 
 ## Monitor the status of audit delete jobs
 
