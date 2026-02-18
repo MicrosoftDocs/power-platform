@@ -218,10 +218,7 @@ Use the table below to understand and troubleshoot user mapping results.
 |RetryableError|A retriable error has occurred during mapping of the user. It might be successful on next retry.|Rerun the user mapping command with the list of users with this error in the mapping file.|
 |ApplicationUserCannotBeMapped|Source user in the map is an application user, which isn't supported by the mapping operation.|Application user mapping isn't supported. No action required. We suggest that you create the application users in the destination tenant. Source tenant app users can't be migrated to the destination tenant. This is by design.|
 |DuplicateTargetApplicationUserExist|A duplicate target user, which is an application user, is found in the organization's system users table. It can't be mapped.|This isn't supported. Anonymize the application user manually using the action mentioned for DuplicateTargetUserExistInOrgDB.|
-|DuplicateTargetUserExistInOrgDB|A duplicate target user is found in the organization's system users table that failed to anonymize. It can't be mapped (this should be taken care by the Map job to itself, incase map job doesn't take care of this. Then follow the below steps).|Anonymize the user using following steps.
-Go to unify, CDS --> System users.
-Use the interactive search to search each user, and get the system user id.
-Run the anonymize system user command for this user.|
+|DuplicateTargetUserExistInOrgDB|A duplicate target user is found in the organization's system users table that failed to anonymize. It can't be mapped (this should be taken care by the Map job to itself, incase map job doesn't take care of this. Then follow the below steps).|Anonymize the user using following steps. <br><br>Go to Unify, CDS > System users.<br>Use the interactive search to search each user, and get the system user ID.<br>Run the anonymize system user command for this user.|
 |SkippedMapping|Source user doesn't exist in the organization, and the target user already exists.|No action required. It means the source user was already mapped to the target user in previous run or manually.|
 
 #### When validation succeeds
@@ -498,6 +495,7 @@ The source tenant’s Dynamics 365 or Power Platform admin must submit a request
 
 #### Is there a self-serve UI option?
 Yes. After the `TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}` is approved in the target tenant, a UI option to move the environment is available in the environment page.
+
 
 
 
