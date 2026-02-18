@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 02/13/2026
+ms.date: 02/18/2026
 ms.topic: concept-article
 author: gakulka 
 contributors:
@@ -145,11 +145,12 @@ Create a user-mapping file for the source environment to transfer to the target 
     1. Save the CSV file that has both full access users and administrative access users mapped.
 
 > [!NOTE]
-> **Before proceeding with the migration, make sure you review and complete the preparation process. After you complete the preparation process, follow the steps in the following sections to migrate.**
-> **Update security group after migration in destination tenant. Security groups migration is not supported.**
+> Before proceeding with the migration, make sure you review and complete the [preparation process](#preparation-process). After you complete the preparation process, follow the steps in the following sections to migrate.
+> 
+> Update security groups after migration in the destination tenant. Security group migration isn't supported.
 
 ## Migrate using Power Platform admin center
-Before proceeding with the migration, make sure you review and complete the preparation process. After you complete the preparation process, follow the steps in the following sections to migrate using Power Platform admin center.
+Before proceeding with the migration, make sure you review and complete the [preparation process](#preparation-process). After you complete the preparation process, follow the steps in the following sections to migrate using Power Platform admin center.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
@@ -205,22 +206,23 @@ If the validation operation fails, a banner with a **Download errors** button ap
 
 :::image type="content" source="media/move-environment-tenant/downloadusermappingerrfile.jpg" alt-text="Screenshot of the Environments page showing error banner with Download errors button.":::
 
-Refer table below for understanding and troubleshooting user mapping results.
+Refer to the table below for understanding and troubleshooting user mapping results.
+
 |Error code|Description|Action|
 |-----------|-------------|--------------|
-|SourceUserIdMissingInUserMap|SourceUserId is empty in the mapping.|Check and fix Source User in mapping file.|
-|TargetUserIdMissingInUserMap|TargetUserId is empty in the mapping.|Check and fix Target User in mapping file.|
-|SourceUserIdIsNotValidGuid|SourceUserId is not a valid Guid.|Fix Source User to be a valid GUID in mapping file.|
-|SourceUserDoesNotExistInOrgDB|SourceUserId did not match to any SystemUserId in the organization's SystemUsers table.|Remove the entry from mapping file.|
-|TargetUPNDoesNotExistInAAD|TargetUserId upn is not found in azure active directory for the tenant.|Check and fix Target User to an existing and valid user in the tenant Active Directory or remove the entry from mapping file.|
-|RetryableError|A retriable error has occurred during mapping of the user. Might be successful on next retry.|Rerun User mapping command with the list of user with this error in the mapping file.|
-|ApplicationUserCannotBeMapped|Source user in the map is an application user, not supported by mapping operation.|Application user mapping is not supported. No Action. Suggest customer to create the application users in the destination tenant. Source Tenant App Users cannot be migrated to the destination tenant. This is by design.|
-|DuplicateTargetApplicationUserExist|A duplicate target user which is an Applicationuser found in organization's system users table. Cannot be mapped.|Not supported. Anonymize the application user manually using the Action mentioned for DuplicateTargetUserExistInOrgDB.|
-|DuplicateTargetUserExistInOrgDB|A duplicate target user is found organization's system users table that failed to anonymize. Cannot be mapped (this should be taken care by the Map Job itself, incase Map job does not take care of this then follow below steps).|Anonymize the user using following steps
+|SourceUserIdMissingInUserMap|SourceUserId is empty in the mapping.|Check and fix Source User in the mapping file.|
+|TargetUserIdMissingInUserMap|TargetUserId is empty in the mapping.|Check and fix Target User in the mapping file.|
+|SourceUserIdIsNotValidGuid|SourceUserId isn't a valid GUID.|Fix Source User in mapping file to be a valid GUID.|
+|SourceUserDoesNotExistInOrgDB|SourceUserId didn't match any SystemUserId in the organization's SystemUsers table.|Remove the entry from the mapping file.|
+|TargetUPNDoesNotExistInAAD|TargetUserId UPN isn't found in Microsoft Entra ID for the tenant.|Check and fix the Target User to an existing and valid user in the tenant Entra ID or remove the entry from the mapping file.|
+|RetryableError|A retriable error has occurred during mapping of the user. Might be successful on next retry.|Rerun the user mapping command with the list of users with this error in the mapping file.|
+|ApplicationUserCannotBeMapped|Source user in the map is an application user, not supported by the mapping operation.|Application user mapping isn't supported. No action requited. We suggest that you create the application users in the destination tenant. Source tenant app users can't be migrated to the destination tenant. This is by design.|
+|DuplicateTargetApplicationUserExist|A duplicate target user which is an application user found in the organization's system users table. It can't be mapped.|Not supported. Anonymize the application user manually using the Action mentioned for DuplicateTargetUserExistInOrgDB.|
+|DuplicateTargetUserExistInOrgDB|A duplicate target user is found organization's system users table that failed to anonymize. Cannot be mapped (this should be taken care by the Map job to itself, incase map job doesn't take care of this. Then follow the below steps).|Anonymize the user using following steps.
 Go to unify, CDS --> System users.
 Use the interactive search to search each user, and get the system user id.
 Run the anonymize system user command for this user.|
-|SkippedMapping|Source User does not exist in the org and target user already exists.|No action required. It means source user was already mapped to the target user in previous run or manually.|
+|SkippedMapping|Source user doesn't exist in the organization, and the target user already exists.|No action required. It means the source user was already mapped to the target user in previous run or manually.|
 
 #### When validation succeeds
 
@@ -496,6 +498,7 @@ The source tenant’s Dynamics 365 or Power Platform admin must submit a request
 
 #### Is there a self-serve UI option?
 Yes. After the `TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}` is approved in the target tenant, a UI option to move the environment is available in the environment page.
+
 
 
 
