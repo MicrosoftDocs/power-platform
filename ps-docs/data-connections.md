@@ -115,4 +115,6 @@ Based on the question you ask, Project "Sophia" looks through the data source fo
 > [!TIP]
 > Make sure that custom tables added to Dynamics 365 Customer Service have proper descriptions. The blueprint generated depends on the data found. If no data that fits the scenario is found, then Project "Sophia" shows an error and might ask if you can rephrase the question. If you use the AI cursor to ask more questions, Project "Sophia" will consider the data source again to provide answers.
 
+
+
 If the user doesn't enter any question, then by default Project "Sophia" answers the question based on core tables in Dynamics 365 Customer Service like accounts, incidents, incident-resolutions, and more. You can establish one connection in a workspace. Project "Sophia" supports both custom fields and custom tables in Dynamics 365 Customer Service instances. It's advisable to have proper descriptions for these custom items.
