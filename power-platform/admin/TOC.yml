@@ -576,7 +576,7 @@
                       href: apps-to-allow.md
                 - name: Global Secure Access for agents (preview)
                   href: security/secure-web-ai-gateway-agents.md
-                - name: Role-based access control (RBAC) (preview)
+                - name: Role-based access control for Power Platform admin center (preview)
                   href: security/role-based-access-control.md
             - name: Compliance
               items:
