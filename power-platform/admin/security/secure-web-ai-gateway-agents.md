@@ -1,7 +1,7 @@
 ---
 title: Global Secure Access for Copilot Studio agents (preview)
 description: Learn how to configure the Secure Web and AI Gateway for Microsoft Copilot Studio agents to enforce network security controls.
-ms.date: 01/13/2026
+ms.date: 02/17/2026
 ms.topic: how-to
 author: fgomulka
 ms.author: frankgomulka
@@ -55,11 +55,14 @@ When an agent makes a request to external resources, the Global Secure Access se
 Configuring network controls for Copilot Studio agents involves several steps:
 
 1. [Enable Network Controls for Copilot Studio Agents in Power Platform environment settings](#enable-network-controls-for-copilot-studio-agents)
-1. [Create security policies for Copilot Studio traffic](#next-step)
+1. [Create security policies for Copilot Studio traffic](#more-details-on-security-controls-in-global-secure-access)
 
 ## Enable network controls for Copilot Studio Agents
 
 The first step is to enable traffic forwarding from Copilot Studio Agents in the Power Platform Admin Center.
+
+> [!NOTE]
+> Before you enable this feature in the Power Platform Admin Center, ensure your tenant is onboarded to Global Secure Access in the [Microsoft Entra Admin Center](https://aka.ms/entragsaportal)
 
 ### Enable network controls at the environment level
 
@@ -88,7 +91,45 @@ To configure Global Secure Access settings at the environment group-level, compl
 > [!NOTE]
 > After enabling GSA for Agents for a given environment or environment group, you need to create or update any existing custom connectors for them to route traffic through Global Secure Access.
 
- ## Next step
+## Create security policies for Copilot Studio agents
+
+After enabling network controls, you can enforce Global Secure Access security policies on agent traffic. You can apply web content filtering, threat intelligence filtering, and other security policies. The following example shows how to configure a web content filtering policy:
+
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a [Global Secure Access Administrator](/azure/active-directory/roles/permissions-reference).
+1. Browse to **Global Secure Access** > **Secure** > **Web content filtering policies**.
+1. Select **Create policy**.
+1. Enter a descriptive name and a description for the policy, then select **Next**.
+1. Select **Add rule**.
+1. Configure rules based on your security to Copilot Studio agent requirements. For example, block access to `Web respositories`, `Illegal software`, not safe for work (NSFW) sites, and more.
+1. Select **Next** to review the policy.
+1. Select **Create policy**.
+
+Next, you can create policies like [threat intelligence](/entra/global-secure-access/how-to-configure-threat-intelligence) to protect agents against malicious destinations or [file policy](/entra/global-secure-access/how-to-network-content-filtering) to safeguard against unintended data exposure and prevent inline data leaks.
+
+## Link policies to the baseline profile
+
+Group your security policies by linking them to the baseline profile to apply them to Copilot Studio agent traffic. Security profiles linked to Conditional Access policies aren't currently supported for Copilot Studio agents.
+
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a [Global Secure Access Administrator](/azure/active-directory/roles/permissions-reference).
+1. Browse to **Global Secure Access** > **Secure** > **Security profiles**.
+1. Select the **Baseline profile** tab.
+1. Select **Edit** to edit the baseline profile rules.
+1. Select **Link a policy** and then select **Existing policy**.
+1. Select the Copilot Studio agent web repositories policy created earlier and select **Add**.
+1. Select **Save** to save the profile changes.
+
+## Monitor and maintain
+
+Regular monitoring and maintenance ensure your security configuration remains effective:
+
+1. **Review traffic logs** regularly for unusual patterns or blocked legitimate traffic. For more information, see [Global Secure Access network traffic logs](/entra/global-secure-access/how-to-view-traffic-logs).
+1. **Update filtering policies** as new services or requirements emerge.
+1. **Test policy changes** in a development environment before applying to production.
+
+> [!NOTE]
+> Configuration changes in the Global Secure Access experience related to web content filtering typically take effect in less than five minutes.
+
+## More details on security controls in Global Secure Access
 
 [Configure security controls in the Global Secure Access portal](/entra/global-secure-access/how-to-secure-web-ai-gateway-agents)
 
