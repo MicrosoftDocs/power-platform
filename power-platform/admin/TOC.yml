@@ -296,7 +296,7 @@
                       href: /dynamics365/mobile-app/setup-mobile-offline-for-admin
                     - name: Positions
                       href: hierarchy-security.md#position-hierarchy
-                    - name: Security roles and privileges
+                    - name: Security roles and privileges for Dataverse
                       href: security-roles-privileges.md
                     - name: Create a team template to control access rights
                       href: create-team-template-add-entity-form.md
@@ -576,6 +576,8 @@
                       href: apps-to-allow.md
                 - name: Global Secure Access for agents (preview)
                   href: security/secure-web-ai-gateway-agents.md
+                - name: Role-based access control for Power Platform admin center (preview)
+                  href: security/role-based-access-control.md
             - name: Compliance
               items:
                 - name: Compliance tools
@@ -614,7 +616,7 @@
                   href: wp-security-cds.md
                 - name: System and application users
                   href: system-application-users.md
-                - name: Role-based security roles
+                - name: Role-based security roles for Dataverse
                   href: database-security.md
                 - name: Modernized business units security
                   href: modernized-business-units-security.md
