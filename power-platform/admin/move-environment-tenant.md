@@ -206,7 +206,7 @@ If the validation operation fails, a banner with a **Download errors** button ap
 
 :::image type="content" source="media/move-environment-tenant/downloadusermappingerrfile.jpg" alt-text="Screenshot of the Environments page showing error banner with Download errors button.":::
 
-Use the table below to understand and troubleshoot user mapping results.
+Use the following table to understand and troubleshoot user mapping results.
 
 |Error code|Description|Action|
 |-----------|-------------|--------------|
@@ -495,6 +495,7 @@ The source tenant’s Dynamics 365 or Power Platform admin must submit a request
 
 #### Is there a self-serve UI option?
 Yes. After the `TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}` is approved in the target tenant, a UI option to move the environment is available in the environment page.
+
 
 
 
