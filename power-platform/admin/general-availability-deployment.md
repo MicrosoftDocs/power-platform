@@ -36,45 +36,45 @@ The generally available platform version is based on your environment's database
 
 | Release | Database version |
 |---------|---------|
-| April wave 1  | 9.2.26033.0 |
-| October wave 2 | 9.2.26093.0 |
+| April wave 1  | 9.2.26033.* |
+| October wave 2 | 9.2.26093.* |
 
 ## Deployment schedule  
 
 > [!Important]
 > A release wave is a mandatory update and can't be postponed. These updates are essential for maintaining system integrity and security.
+> The exact deployment day and time for your environment cannot be calculated.
 
-For each region listed, deployment begins as early as the Friday dark hours before the listed date.
-
-Environment database version may not be updated until a few days after the schedule below.
+For each region listed, deployment begins on Friday evening dark hours and expected to complete before Monday start of business. 
+Information about dark hours for your region: [Maintenance Windows](policies-communications#maintenance-timeline)
 
 |Region  | 2026 wave 1 general availability | 2026 wave 2 general availability |
 |---------|---------|---------|
-| First release                | March 23, 2026 | September 21, 2026  |
-| Canada                       | March 30, 2026 | September 28, 2026  |
-| France                       | March 30, 2026 | September 28, 2026  |
-| Germany                      | March 30, 2026 | September 28, 2026  |
-| India                        | March 30, 2026 | September 28, 2026  |
-| Italy                        | March 30, 2026 | September 28, 2026  |
-| Korea                        | March 30, 2026 | September 28, 2026  |
-| Norway                       | March 30, 2026 | September 28, 2026  |
-| Poland                       | March 30, 2026 | September 28, 2026  |
-| South Africa                 | March 30, 2026 | September 28, 2026  |
-| South America                | March 30, 2026 | September 28, 2026  |
-| Sweden                       | March 30, 2026 | September 28, 2026  |
-| Switzerland                  | March 30, 2026 | September 28, 2026  |
-| United Arab Emirates         | March 30, 2026 | September 28, 2026  |
-| Asia Pacific                 | April 6, 2026 | October 5, 2026  |
-| Australia                    | April 6, 2026 | October 5, 2026  |
-| GCC High\*                   | April 6, 2026 | October 5, 2026  |
-| United Kingdom               | April 6, 2026 | October 5, 2026  |
-| Japan                        | April 6, 2026 | October 5, 2026  |
-| Singapore                    | April 6, 2026 | October 5, 2026  |
-| Europe                       | April 13, 2026 | October 12, 2026  |
-| North America                | April 20, 2026 | October 19, 2026  |
-| China\**                     | April 27, 2026 | October 26, 2026  |
-| DoD\*                        | April 27, 2026 | October 26, 2026  |
-| GCC\*                        | April 27, 2026 | October 26, 2026  |
+| First release                | March 20-23, 2026 | September 18-21, 2026  |
+| Canada                       | March 27-30, 2026 | September 25-28, 2026  |
+| France                       | March 27-30, 2026 | September 25-28, 2026  |
+| Germany                      | March 27-30, 2026 | September 25-28, 2026  |
+| India                        | March 27-30, 2026 | September 25-28, 2026  |
+| Italy                        | March 27-30, 2026 | September 25-28, 2026  |
+| Korea                        | March 27-30, 2026 | September 25-28, 2026  |
+| Norway                       | March 27-30, 2026 | September 25-28, 2026  |
+| Poland                       | March 27-30, 2026 | September 25-28, 2026  |
+| South Africa                 | March 27-30, 2026 | September 25-28, 2026  |
+| South America                | March 27-30, 2026 | September 25-28, 2026  |
+| Switzerland                  | March 27-30, 2026 | September 25-28, 2026  |
+| United Arab Emirates         | March 27-30, 2026 | September 25-28, 2026  |
+| Asia Pacific                 | April 3-6, 2026 | October 2-5, 2026  |
+| GCC High\*                   | April 3-6, 2026 | October 2-5, 2026  |
+| Japan                        | April 3-6, 2026 | October 2-5, 2026  |
+| Singapore                    | April 3-6, 2026 | October 2-5, 2026  |
+| Sweden                       | April 3-6, 2026 | October 2-5, 2026  |
+| United Kingdom               | April 3-6, 2026 | October 2-5, 2026  |
+| Europe                       | April 10-13, 2026 | October 9-12, 2026  |
+| Australia                    | April 17-20, 2026 | October 16-19, 2026  |
+| North America                | April 17-20, 2026 | October 16-19, 2026  |
+| China\**                     | April 24-27, 2026 | October 16-26, 2026  |
+| DoD\*                        | April 24-27, 2026 | October 16-26, 2026  |
+| GCC\*                        | April 24-27, 2026 | October 16-26, 2026  |
 
 \*For more information about GCC, GCC High, and DoD, go to [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
 \**For more information about environments in China, go to [Power Platform and Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md).
