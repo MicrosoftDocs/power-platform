@@ -206,19 +206,19 @@ If the validation operation fails, a banner with a **Download errors** button ap
 
 :::image type="content" source="media/move-environment-tenant/downloadusermappingerrfile.jpg" alt-text="Screenshot of the Environments page showing error banner with Download errors button.":::
 
-Refer to the table below for understanding and troubleshooting user mapping results.
+Use the table below to understand and troubleshoot user mapping results.
 
 |Error code|Description|Action|
 |-----------|-------------|--------------|
-|SourceUserIdMissingInUserMap|SourceUserId is empty in the mapping.|Check and fix Source User in the mapping file.|
-|TargetUserIdMissingInUserMap|TargetUserId is empty in the mapping.|Check and fix Target User in the mapping file.|
-|SourceUserIdIsNotValidGuid|SourceUserId isn't a valid GUID.|Fix Source User in mapping file to be a valid GUID.|
+|SourceUserIdMissingInUserMap|SourceUserId is empty in the mapping.|Check and fix the Source User in the mapping file.|
+|TargetUserIdMissingInUserMap|TargetUserId is empty in the mapping.|Check and fix the Target User in the mapping file.|
+|SourceUserIdIsNotValidGuid|SourceUserId isn't a valid GUID.|Fix the Source User to be a valid GUID in the mapping file.|
 |SourceUserDoesNotExistInOrgDB|SourceUserId didn't match any SystemUserId in the organization's SystemUsers table.|Remove the entry from the mapping file.|
 |TargetUPNDoesNotExistInAAD|TargetUserId UPN isn't found in Microsoft Entra ID for the tenant.|Check and fix the Target User to an existing and valid user in the tenant Entra ID or remove the entry from the mapping file.|
-|RetryableError|A retriable error has occurred during mapping of the user. Might be successful on next retry.|Rerun the user mapping command with the list of users with this error in the mapping file.|
-|ApplicationUserCannotBeMapped|Source user in the map is an application user, not supported by the mapping operation.|Application user mapping isn't supported. No action requited. We suggest that you create the application users in the destination tenant. Source tenant app users can't be migrated to the destination tenant. This is by design.|
-|DuplicateTargetApplicationUserExist|A duplicate target user which is an application user found in the organization's system users table. It can't be mapped.|Not supported. Anonymize the application user manually using the Action mentioned for DuplicateTargetUserExistInOrgDB.|
-|DuplicateTargetUserExistInOrgDB|A duplicate target user is found organization's system users table that failed to anonymize. Cannot be mapped (this should be taken care by the Map job to itself, incase map job doesn't take care of this. Then follow the below steps).|Anonymize the user using following steps.
+|RetryableError|A retriable error has occurred during mapping of the user. It might be successful on next retry.|Rerun the user mapping command with the list of users with this error in the mapping file.|
+|ApplicationUserCannotBeMapped|Source user in the map is an application user, which isn't supported by the mapping operation.|Application user mapping isn't supported. No action required. We suggest that you create the application users in the destination tenant. Source tenant app users can't be migrated to the destination tenant. This is by design.|
+|DuplicateTargetApplicationUserExist|A duplicate target user, which is an application user, is found in the organization's system users table. It can't be mapped.|This isn't supported. Anonymize the application user manually using the action mentioned for DuplicateTargetUserExistInOrgDB.|
+|DuplicateTargetUserExistInOrgDB|A duplicate target user is found in the organization's system users table that failed to anonymize. It can't be mapped (this should be taken care by the Map job to itself, incase map job doesn't take care of this. Then follow the below steps).|Anonymize the user using following steps.
 Go to unify, CDS --> System users.
 Use the interactive search to search each user, and get the system user id.
 Run the anonymize system user command for this user.|
@@ -498,6 +498,7 @@ The source tenant’s Dynamics 365 or Power Platform admin must submit a request
 
 #### Is there a self-serve UI option?
 Yes. After the `TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}` is approved in the target tenant, a UI option to move the environment is available in the environment page.
+
 
 
 
