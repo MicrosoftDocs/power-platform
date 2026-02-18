@@ -78,11 +78,11 @@ Role definitions are collections of permissions that describe what actions are a
 ## Built-in Power Platform roles
 The following built-in roles are available to assign to users, groups, and service principals in Power Platform RBAC:
 
-| Role name                                         | Role ID                                   | Assignable scope                             | Permissions (exact syntax)                                            |
+| Role name                                         | Role ID                                   | Assignable scope                             | Permissions                                            |
 |---------------------------------------------------|-------------------------------------------|----------------------------------------------|-----------------------------------------------------------------------|
-| Power Platform role-based access control administrator | 95e94555-018c-447b-8691-bdac8e12211e      | /tenants/{0}                                 | *.Read, Authorization.RoleAssignments.Write, Authorization.RoleAssignments.Delete |
-| Power Platform reader                             | c886ad2e-27f7-4874-8381-5849b8d8a090      | /tenants/{0}                                 | *.Read                                                        |
-| Power Platform contributor                        | ff954d61-a89a-4fbe-ace9-01c367b89f87      | /tenants/{0}                                 | *, Cannot change role assignments                                                           |
-| Power Platform owner                              | 0cb07c69-1631-4725-ab35-e59e001c51ea      | /tenants/{0}                                 | *                                                           |
+| Power Platform role-based access control administrator | 95e94555-018c-447b-8691-bdac8e12211e      | /tenants/{0}                                 | All permissions that end with .Read, Authorization.RoleAssignments.Write, Authorization.RoleAssignments.Delete |
+| Power Platform reader                             | c886ad2e-27f7-4874-8381-5849b8d8a090      | /tenants/{0}                                 | All permissions that end with .Read                                                        |
+| Power Platform contributor                        | ff954d61-a89a-4fbe-ace9-01c367b89f87      | /tenants/{0}                                 | Can manage and read all resources, but can't make or change role assignments                                                           |
+| Power Platform owner                              | 0cb07c69-1631-4725-ab35-e59e001c51ea      | /tenants/{0}                                 | All permissions                                                          |
 
 For detailed reference on permissions, roles, and integration, see [Power Platform API reference](/rest/api/power-platform/).
