@@ -242,7 +242,7 @@ After the move operation completes:
 - The process moves the Dataverse organization from the source tenant to the destination tenant.
 - The source tenant keeps the environment but without the Dataverse organization.
 - The process creates a new environment in the destination tenant with the same name as the source environment and includes the moved Dataverse organization.
-- **Update security group after migration in destination tenant. Security groups migration is not supported.**
+- Update the security groups after migration is completed in the destination tenant. Security group migration isn't supported.
 
 ### Cancel move
 You can cancel the move at any time between submitting the request and completing the environment move. Select the **Cancel move** button on the banner to open the **Cancel move** dialog and cancel the move.
@@ -498,6 +498,7 @@ The source tenant’s Dynamics 365 or Power Platform admin must submit a request
 
 #### Is there a self-serve UI option?
 Yes. After the `TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}` is approved in the target tenant, a UI option to move the environment is available in the environment page.
+
 
 
 
