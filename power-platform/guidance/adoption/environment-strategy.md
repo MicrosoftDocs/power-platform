@@ -477,7 +477,7 @@ Most security settings that affect environments are configured for each environm
 - Consider [turning off the Share with Everyone feature](../adoption/secure-default-environment.md#limit-sharing-with-everyone) in Power Platform. Only admins would be able to share an asset with everyone.
 - Consider [securing integration with Exchange](../adoption/secure-default-environment.md#secure-integration-with-exchange).
 - [Apply cross-tenant isolation](../../admin/cross-tenant-restrictions.md) to help minimize the risk of data exfiltration between tenants.
-- Restrict the creation of net-new production environments to admins. [Limiting environment creation](../../admin/control-environment-creation.md) is beneficial to maintain control in general, both to prevent unaccounted capacity consumption and to reduce the number of environments to manage. If users have to request environments from central IT, it’s easier to see what people are working on if admins are the gatekeepers.
+- Restrict the creation of net-new production environments to admins. [Limiting environment creation](../../admin/control-environment-creation.md) is beneficial to maintain control in general, both to prevent unaccounted capacity consumption and to reduce the number of environments to manage. If users have to request environments from central IT, it's easier to see what people are working on if admins are the gatekeepers.
 
 ### Secure the default environment
 
@@ -790,6 +790,6 @@ Every organization's journey to adopting Power Platform is unique. We presented 
 
 - [Environment groups](../../admin/environment-groups.md)
 - [Environment routing](../../admin/default-environment-routing.md)
-- [Enterprise security with Power Platform (white paper)](../white-papers/enterprise-security.md)
+- [Security overview and strategy](secure-overview.md)
 - [Low-code security and governance](https://powerplatform.microsoft.com/trusted-cloud/)
 - [Solution concepts in ALM](../../alm/solution-concepts-alm.md)
