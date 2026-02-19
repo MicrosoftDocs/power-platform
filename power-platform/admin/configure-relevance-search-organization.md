@@ -218,7 +218,7 @@ The table's Quick Find view drives the searchable table fields and filters used 
     | AboveOrEqual      |
     | NotNull           |
     | Null              |
-    | DoesNotConatinData|  
+    | DoesNotContainData|  
 
 To edit the searchable fields of a table:
 
