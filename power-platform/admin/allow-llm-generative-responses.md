@@ -4,7 +4,7 @@ description: Learn how to allow external language models for generative response
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/17/2026
+ms.date: 02/19/2026
 author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
@@ -61,6 +61,6 @@ The following exclusions apply:
 - Anthropic models in Copilot Studio are currently excluded from EU Data Boundary commitments.
 - xAI models within Copilot Studio are currently available for US tenants only. 
 - FedRAMP isn't achieved for Anthropic or xAI models in Copilot Studio. If your organization requires FedRAMP before use, consult with your authorization official to determine if use of Anthropic models is allowed.
-- Payment Card Industry (PCI) Data Security Standard (DSS) is not applicable to Anthropic or xAI models within Copilot Studio to store, process, or transmit payment and cardholder data.
+- Payment Card Industry (PCI) Data Security Standard (DSS) isn't applicable to Anthropic or xAI models within Copilot Studio to store, process, or transmit payment and cardholder data.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
