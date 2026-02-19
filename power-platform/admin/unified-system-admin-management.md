@@ -1,6 +1,6 @@
 ---
-title: Manage unified system admin role for finance and operations in Power Platform admin center
-description: Learn how to manage the unified system admin role for finance and operations in Power Platform admin center.
+title: Manage unified admin roles for finance and operations in Power Platform admin center
+description: Learn how to manage unified admin roles for finance and operations in Power Platform admin center.
 author: aayuagrawal
 ms.component: pa-admin
 ms.topic: how-to
@@ -11,16 +11,16 @@ ms.reviewer: ellenwehrle
 search.audienceType: admin
 ---
 
-# Manage unified admin user role in Power Platform admin center
+# Manage unified admin roles in Power Platform admin center
 
-This article provides an overview of the elements of unified admin user management in Finance and Operations in the Power Platform Admin Center. One of the major use cases for unified admin user management addresses scenarios where the environment admin user needs to be changed due to various reasons, such as the user leaving the company or losing their rights.
+This article provides an overview of the elements of unified admin role management in Finance and Operations in the Power Platform Admin Center. One of the major use cases for unified admin role management addresses scenarios where the environment admin role needs to be changed due to various reasons, such as the user leaving the company or losing their rights.
 
 This feature is only available for environments with Finance and Operations Platform versions:
 
 - PU70; Build version: 7.0.7778.44.
 - PU71; Build version: 7.0.7858.12.
 
-## Prerequisites for unified admin user management
+## Prerequisites for unified admin role management
 
 Check if the flight is enabled for unified admin user updates in Finance and Operations. To check, go to the **users** page. Select **Admin**. You should see the button **Make Environment Admin** (either enabled or disabled). This button appears only if the flight is enabled. **Make Environment Admin** is disabled when the current user is environment admin and one can't make themselves the environment admin again. To see the **Make Environment Admin** button, enable the feature from the **Feature Management** page. If the flights are disabled, you can't enable the feature from the **Feature Management** page.
 
