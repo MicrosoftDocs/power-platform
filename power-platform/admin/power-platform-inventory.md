@@ -115,6 +115,31 @@ Quickly search for keywords across all entries currently loaded in the inventory
 
 - Select the environment name to view the environment details.
 
+## How Power Platform inventory relates to other Microsoft admin surfaces
+
+Microsoft offers multiple admin surfaces that display agents, and you might notice that the agent counts differ across them. Each surface serves a different audience, shows different types of agents, and answers a different question. Understanding these differences helps you interpret the agent counts you see across your organization.
+
+### Power Platform inventory vs. Microsoft 365 Admin Center
+
+The [Microsoft 365 Admin Center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide) shows agents that are **available to users in your tenant**. This includes Microsoft 1st-party agents, third-party ISV agents, and org-created agents that have been published or shared. It functions as a catalog of everything accessible to your employees.
+
+Power Platform inventory, by contrast, shows agents that were **built by people in your organization** on Power Platform. This includes both published and draft agents created in Copilot Studio or Microsoft 365 Copilot Agent Builder. It does not include 1st-party Microsoft agents or ISV agents.
+
+As a result, the agent counts between the two surfaces will differ. The Microsoft 365 Admin Center includes agents your organization didn't build, while Power Platform inventory may include agents that don't appear in the Microsoft 365 Admin Center if those agents haven't been published yet (drafts).
+
+### Summary of differences
+
+| | Power Platform inventory | Microsoft 365 Admin Center |
+|---|---|---|
+| **Designed for** | IT admins (Power Platform) | IT admins (M365) |
+| **Shows** | Org-created agents on Power Platform | All agents available in your tenant |
+| **Includes drafts** | Yes | Published and shared only |
+| **Includes 1st-party / ISV** | No | Yes |
+| **Scoped to** | Environments (rolled up to tenant) | Tenant |
+
+> [!TIP]
+> If you're asked to report on your organization's agent count, clarify what type of count is needed: **total available agents** (Microsoft 365 Admin Center) or **org-created agents on Power Platform** (Power Platform inventory). Each number is correct within its own context.
+
 ## Known limitations
 
 - **Classic chatbots:** Classic chatbots aren't included in the new inventory page, but can still be found by selecting **Manage > Copilot Studio > Classic chatbots**.
