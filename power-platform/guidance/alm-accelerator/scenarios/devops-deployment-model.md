@@ -13,6 +13,7 @@ ms.custom:
   - ai-seo-date:09/02/2025
 ms.date: 09/02/2025
 ms.topic: concept-article
+ms.subservice: guidance-toolkit
 search.audienceType:
   - admin
 search.app:

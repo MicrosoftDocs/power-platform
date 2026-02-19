@@ -9,6 +9,7 @@ manager: pladhani
 ms.custom: bap-template
 ms.date: 04/10/2023
 ms.topic: concept-article
+ms.subservice: guidance-toolkit
 search.audienceType: 
   - admin
 search.app: 
