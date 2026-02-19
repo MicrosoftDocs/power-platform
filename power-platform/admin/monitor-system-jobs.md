@@ -4,7 +4,7 @@ description: Learn how to monitor system jobs in the Power Platform admin center
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/18/2026
+ms.date: 02/19/2026
 author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
@@ -48,3 +48,8 @@ If there's a problem with a system job, you can cancel, postpone, pause, or resu
 
 > [!NOTE]
 > You can't make changes to the status of a system job that is completed or canceled.
+
+## Related content
+[Asynchronous service](/power-apps/developer/data-platform/asynchronous-service?tabs=webapi) <br>
+[Delete completed system jobs and process log to comply with retention policy](cleanup-asyncoperationbase-table.md) <br>
+[Review the status of bulk delete job](delete-stub-users.md#review-the-status-of-bulk-delete-job)
