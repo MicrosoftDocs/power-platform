@@ -13,6 +13,8 @@ ms.contributors:
 - vabhavir
 ---
 
+<!-- Should line 55 end with a % sign? -->
+
 # Enhance operational efficiency
 
 This article describes a common goal for Power Platform—enhancing operational efficiency. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
@@ -29,7 +31,7 @@ Typical objectives for enhancing operational efficiency include:
 
 - **Optimize business processes and align effective resourcing**: Streamline business processes and ensure resources are allocated effectively to maximize efficiency and productivity.
 - **Digitize manual processes and shift to value creation tasks**: Automate manual processes to free up time for employees to focus on higher-value tasks.
-- **Reduce time to market for Power Platform solutions**: Accelerate the development and deployment of Power Platform applications and automations.
+- **Reduce time to market for solutions**: Accelerate the development and deployment of Power Platform applications and automations.
 - **Reduce cost and effort to license, build, and deploy**: Minimize the costs and efforts associated with licensing, building, and deploying Power Platform solutions.
 - **Increase productivity for business and IT**: Enhance the productivity of both business and IT teams through effective use of Power Platform.
 - **Develop innovative solutions that increase productivity**: Create innovative solutions that enhance productivity and contribute to the organization’s financial performance.
@@ -63,13 +65,13 @@ Typical key results, aligned with some of the [objectives](#objectives), for enh
 Typical initiatives, aligned with some of the [objectives](#objectives), for enhancing operational efficiency are:
 
 - **Optimize business processes and align effective resourcing**:
-    - [Develop return of investment (ROI) metrics](../business-value.md) and value monitoring capability. 
+    - [Develop return on investment (ROI) metrics](../business-value.md) and value monitoring capability. 
     - Define and [implement application lifecycle management (ALM)](../alm.md) processes to streamline and manage app deployments. 
     - [Establish foundational operating roles](../roles.md) to provide clarity on "who does what" to manage the platform. 
 - **Digitize manual processes and shift to value creation tasks**:
     - Identify and understand manual processes per team. 
     - Automate routine support activities and request processes (for example, environment request form). 
-    - Create a Maker Portal, for example [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site), with onboarding collateral, development guidelines, self-guided learning, and success stories. 
+    - Create a Maker Portal (for example [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site)), with onboarding collateral, development guidelines, self-guided learning, and success stories. 
 - **Reduce time to market for Power Platform solutions**: 
     - Develop automation and alerting for key assurance controls. 
     - Implement a peer-review mechanism for popular citizen-developed apps. 
