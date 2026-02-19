@@ -182,7 +182,7 @@
                   items:
                     - name: Preview and experimental AI models
                       href: preview-experimental-ai-models-rule.md
-                    - name: Allow external language models for generative responses
+                    - name: Allow external models
                       href: allow-llm-generative-responses.md
                 - name: Administration mode
                   href: admin-mode.md
