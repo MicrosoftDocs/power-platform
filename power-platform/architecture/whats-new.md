@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 02/11/2026
+ms.date: 02/12/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -19,6 +19,10 @@ ms.custom:
 Get the latest info about what's new and what's changed in the Power Platform and Copilot Studio Architecture Center.
 
 ## February 2026
+
+New in [Reference architectures](reference-architectures/index.md):
+
+- [Analyze and automate business data with Dataverse SDK for Python](reference-architectures/dataverse-sdk-for-python.md)
 
 New in [Solution ideas](solution-ideas/index.md):
 
