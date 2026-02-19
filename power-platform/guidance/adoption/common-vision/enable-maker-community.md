@@ -19,7 +19,7 @@ This article describes a common goal for Power Platform—nurturing a maker and 
 
 ## Vision
 
-[Nurturing a maker and champion community](../community-goals.md) is a common vision for Power Platform adoption because it fosters a culture of innovation, collaboration, and continuous improvement. With a network of enthusiastic and knowledgeable users, organizations can drive widespread adoption and maximize the platform's potential. Champions and makers serve as advocates, mentors, and problem-solvers, helping to spread best practices and support their peers.
+[Nurturing a maker and champion community](../community-goals.md) is a common vision for Microsoft Power Platform adoption because it fosters a culture of innovation, collaboration, and continuous improvement. With a network of enthusiastic and knowledgeable users, organizations can drive widespread adoption and maximize the platform's potential. Champions and makers serve as advocates, mentors, and problem-solvers, helping to spread best practices and support their peers.
 
 This community-driven approach empowers employees to take ownership of their projects, reduces reliance on IT, and accelerates the development of solutions. It also encourages cross-team collaboration, leading to more innovative and impactful outcomes. By recognizing and rewarding contributions, organizations can motivate and retain talent, ensuring sustained engagement and growth.
 
@@ -32,8 +32,8 @@ A thriving maker and champion community helps create a supportive environment wh
 Typical objectives for nurturing a maker and champion community include:
 
 - **Build a thriving low-code community**: [Foster a vibrant and engaged low-code community](../community-goals.md) that encourages incremental innovation and widespread participation.
-- **Identify and recruit [potential champions](../champions.md)**: Build a network of enthusiastic and knowledgeable users who can advocate for the Power Platform and support their peers.
-- **Increase awareness**:  Increase awareness and understanding of the Power Platform through targeted evangelism and comprehensive training programs.
+- **Identify and recruit [potential champions](../champions.md)**: Build a network of enthusiastic and knowledgeable users who can advocate for Power Platform and support their peers.
+- **Increase awareness**: Increase awareness and understanding of Power Platform through targeted evangelism and comprehensive training programs.
 - **Create a maker onboarding program**: Streamline the [onboarding process for new makers](../onboard-makers.md), ensuring they have the tools and knowledge to succeed.
 - **Empower developer and maker community with process and resource clarity**: Provide clear guidance and resources to enable developers and makers to create effective solutions.
 - **Provide specialized training and resources**: Implement comprehensive [upskilling programs](../training-strategy.md) to ensure users are proficient in using Power Platform.
@@ -66,7 +66,7 @@ Typical key results, aligned with some of the [objectives](#objectives), for nur
     - Ensure employees are innovating faster and across team lines, with ___% of projects involving cross-team collaboration. 
 - **Empower employees to solve their own problems**: 
     - Empower employees to solve their own problems, with ___% of issues resolved without IT intervention. 
-    - Enable employees to build faster on the Power Platform by reducing enterprise-wide access barriers, achieving a ___% reduction in development time. 
+    - Enable employees to build faster on Power Platform by reducing enterprise-wide access barriers, achieving a ___% reduction in development time. 
     - Move faster from new ideas to deployed valuable products, with a target of a ___ month turnaround for new projects. 
 - **Showcase success stories and best practices**:
     - Publish success stories and case studies with a goal of publishing __ stories per quarter. 
@@ -98,7 +98,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for nur
     - Create guidelines for solution classifications, environment strategy, and data protection measures.
     - Clarify [roles and responsibilities](../roles.md) for managing the platform.
 - **Provide specialized training and resources**:
-    -  Develop a Community of Practice for Power Platform practitioners to share knowledge and best practices.
+    - Develop a Community of Practice for Power Platform practitioners to share knowledge and best practices.
     - Introduce gamified elements to make learning engaging and competitive.
     - Implement structured training plans and certification programs.
     - Establish a process for capturing and developing innovative ideas.
