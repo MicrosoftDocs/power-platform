@@ -11,34 +11,40 @@ ms.reviewer: ellenwehrle
 search.audienceType: admin
 ---
 
-# Manage unified system admin role in Power Platform admin center
+# Manage unified admin user role in Power Platform admin center
 
-This article provides an overview of the elements of admin user management unification in Finance and Operations from the Power Platform Admin Center. One of the major use cases for admin user unification is addressing scenarios where the environment admin user needs to be changed due to various reasons, such as the user leaving the company or losing their rights. This feature is available only for environments with **Finance and Operations Platform version** for PU70 , build version: 7.0.7778.44; for PU71, Build version: 7.0.7858.12.
+This article provides an overview of the elements of unified admin user management in Finance and Operations in the Power Platform Admin Center. One of the major use cases for unified admin user management addresses scenarios where the environment admin user needs to be changed due to various reasons, such as the user leaving the company or losing their rights.
 
-## Prerequisites for unified system admin management
+This feature is only available for environments with Finance and Operations Platform versions:
+
+- PU70; Build version: 7.0.7778.44.
+- PU71; Build version: 7.0.7858.12.
+
+## Prerequisites for unified admin user management
 
 Check if the flight is enabled for unified admin user updates in Finance and Operations. To check, go to the **users** page. Select **Admin**. You should see the button **Make Environment Admin** (either enabled or disabled). This button appears only if the flight is enabled. **Make Environment Admin** is disabled when the current user is environment admin and one can't make themselves the environment admin again. To see the **Make Environment Admin** button, enable the feature from the **Feature Management** page. If the flights are disabled, you can't enable the feature from the **Feature Management** page.
 
--\> Go to **System Administration** -\> **Workspace** -\> **Feature Management** page, select the **all** tab and enable "(Preview) Unified admin user management".  
-:::image type="content" source="media/unified-admin-user-management/image1.png" alt-text="":::
+-\> Go to **System Administration** -\> **Workspace** -\> **Feature Management** page, select the **all** tab and enable **(Preview) Unified admin user management**.
+
+:::image type="content" source="media/unified-admin-user-management/feature-management-page.png" alt-text="Shows the Feature Management page with the Unified admin user management feature state in preview":::
 
 When you enable this feature, it syncs admins from Power Platform Admin Center (with direct role assignment) to Finance and Operations. It removes the admin role from users who are admin in Finance and Operations but not Power Platform admin center. So, it's recommended to enable this feature when you're ready to manage all your admins from Power Platform Admin Center and avoid making changes to admin users directly from Finance and Operations.
 
 > [!TIP]
 > Make changes to the environment admin only during downtime to avoid any active batch jobs or processes running with the context of the older admin, which could fail if the admin is changed in the middle.
 
-## Create a Finance and Operations environment system admin
+## Manage the Finance and Operations environment admin user
 
 Currently, one configuration file contains the email of the environment admin. When you create the environment for the first time, you mark that user as the admin. Any user with the user ID Admin is the environment admin. If there are no other system administrators in finance and operations in a particular environment, you can't remove the system administrator role from the environment admin. If another system administrator user exists in finance and operations and you delete the current environment admin user from Power Platform admin center, the system deletes the current environment admin user from finance and operations and assigns the environment admin role to another random system administrator user present at that time.
 
-## Change the environment system admin
+## Update the environment admin user
 
-Use one of the following methods to change the environment system admin:
+Use one of the following methods to update an environment admin:
 
-- **Make Environment Admin**: Select the **Make environment admin** action. Assign the system administrator role to a user and set that user as the environment admin. Take the following steps:
+- **Make Environment Admin**: Select the **Make environment admin** action. Assign the system admin role to a user and set that user as the environment admin. Take the following steps:
 
-        1.  Select any user in Finance and Operations with the system administrator role assigned. This user must be part of Entra ID in Power Platform admin center.
-        1.  Select **Make environment admin**.
+1.  Select any user in Finance and Operations with the system administrator role assigned. This user must be part of Entra ID in Power Platform admin center.
+1.  Select **Make environment admin**.
 
 - **Remove system administrator role in Power Platform admin center**: Go to Power Platform admin center and remove the system administrator role from the user who is the environment admin in Finance and Operations. When Power Platform admin center syncs this information to Finance and Operations, the system removes the system administrator role from the current environment admin and promotes any other system administrator to environment admin.
 
@@ -51,7 +57,7 @@ Use one of the following methods to change the environment system admin:
 
 Users in Power Platform admin center must be part of the Entra ID of the Finance and Operations tenant. According to security guidelines, you can't import any user who isn't part of Entra ID. If a user isn't part of Entra ID in Power Platform admin center and you assign the admin role to this user, they don't appear in Finance and Operations as part of admin unification.
 
-To create a unified systemadmin user for finance and operations in Power Platform admin center, take the following steps:
+To create a unified system admin user for finance and operations in Power Platform admin center, take the following steps:
 
 1.  Create a user in Power Platform admin center.
 1.  Assign the system administrator role to that user from manage roles.
