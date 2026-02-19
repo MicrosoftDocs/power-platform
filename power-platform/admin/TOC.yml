@@ -670,6 +670,8 @@
                       href: security-roles-privileges.md
                     - name: Assign security roles
                       href: assign-security-roles.md
+                    - name: Manage unified system admin role
+                      href: unified-system-admin-management.md
                     - name: Opt-out of automatic license-based user roles management
                       href: opt-out-automatic-license.md
                     - name: Use service admin roles to manage your tenant
