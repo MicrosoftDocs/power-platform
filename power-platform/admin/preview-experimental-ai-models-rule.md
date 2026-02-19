@@ -3,7 +3,7 @@ title: Preview and experimental AI models
 description: Learn how to use a new environment group rule about AI models.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/25/2025
+ms.date: 02/19/2026
 author: jekom1
 ms.author: jelenak
 ms.reviewer: sericks
@@ -29,6 +29,9 @@ AI innovation moves at a rapid pace, and each AI model has different strengths a
 ## Control preview and experimental AI models use for an environment group
 
 If your environment is part of an [environment group](environment-groups.md), you can govern preview and experimental AI model use through the [**Preview and experimental AI models** environment group rule](environment-groups-rules.md).
+
+> [!Note]
+> If your environment is part of an [environment group](environment-groups.md), it must be a Managed Environment.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. In the navigation pane, select **Manage**.
