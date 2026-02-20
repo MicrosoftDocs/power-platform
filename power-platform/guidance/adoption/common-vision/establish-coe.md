@@ -1,7 +1,7 @@
 ---
 title: Establish a Center of Excellence with governance patterns and practices
 description: Learn how to establish a Center of Excellence with governance patterns and practices to manage and scale Power Platform adoption effectively.
-#customer intent: As a business leader, I want to establish a Center of Excellence with governance patterns and practices so that I can manage and scale the Power Platform effectively.
+#customer intent: As a business leader, I want to establish a Center of Excellence with governance patterns and practices so that I can manage and scale Power Platform effectively.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
@@ -22,6 +22,9 @@ This article describes a common goal for Power Platform&mdash;establishing a Cen
 [Establishing a Center of Excellence (CoE)](../coe.md) with governance patterns and practices is a common vision for Power Platform adoption because it provides a structured approach to manage and scale the platform effectively. 
 
 A CoE serves as a centralized team or function that oversees the administration, governance, and nurturing of Power Platform adoption within an organization. The CoE implements governance patterns and practices to ensure that the platform is used securely and efficiently, and to mitigate risks such as compliance and security issues. The CoE fosters best practices, educates new makers, and provides a hub for sharing success stories and guidelines. A CoE with robust governance practices helps organizations maximize the value of their Power Platform investment, driving innovation while maintaining control and compliance.
+
+
+
 
 ## Objectives
 
