@@ -7,7 +7,7 @@ ms.author: paulda
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/03/2026
+ms.date: 02/20/2026
 search.audienceType: 
   - admin
 ms.contributors:
@@ -43,10 +43,10 @@ The generally available platform version is based on your environment's database
 
 > [!Important]
 > A release wave is a mandatory update and can't be postponed. These updates are essential for maintaining system integrity and security.
-> The exact deployment day and time for your environment cannot be calculated.
+>
+>  The exact deployment day and time for your environment can't be calculated.
 
-For each region listed, deployment begins on Friday evening dark hours and expected to complete before Monday start of business. 
-Information about dark hours for your region: [Maintenance Windows](policies-communications#maintenance-timeline)
+For each region listed, deployment begins on Friday evening dark hours and expected to complete before Monday start of business. For more information about dark hours for your region, see [Maintenance timeline](policies-communications#maintenance-timeline).
 
 |Region  | 2026 wave 1 general availability | 2026 wave 2 general availability |
 |---------|---------|---------|
