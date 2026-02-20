@@ -4,11 +4,7 @@ description: Learn how to get a comprehensive, unified view of all agents, apps,
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-<<<<<<< inventory-differences-section
 ms.date: 02/20/2026
-=======
-ms.date: 02/19/2026
->>>>>>> main
 ms.topic: concept-article
 contributors:
     - Grayson-Bishop
