@@ -72,9 +72,9 @@ For each region listed, deployment begins on Friday evening dark hours and expec
 | Europe                       | April 10-13, 2026 | October 9-12, 2026  |
 | Australia                    | April 17-20, 2026 | October 16-19, 2026  |
 | North America                | April 17-20, 2026 | October 16-19, 2026  |
-| China\**                     | April 24-27, 2026 | October 16-26, 2026  |
-| DoD\*                        | April 24-27, 2026 | October 16-26, 2026  |
-| GCC\*                        | April 24-27, 2026 | October 16-26, 2026  |
+| China\**                     | April 24-27, 2026 | October 23-26, 2026  |
+| DoD\*                        | April 24-27, 2026 | October 23-26, 2026  |
+| GCC\*                        | April 24-27, 2026 | October 23-26, 2026  |
 
 \*For more information about GCC, GCC High, and DoD, go to [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
 \**For more information about environments in China, go to [Power Platform and Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md).
