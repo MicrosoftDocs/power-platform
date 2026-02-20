@@ -57,7 +57,8 @@ If you must use one of the below apps or features in an environment where block 
 | Omnichannel  | Install or upgrade don't work.      |
 |Service Level Agreement (SLA)  | Activation, deactivation, and editing of service level agreement doesn't work.|
 |Attachments | File attachments to appointments or emails using the `activitymimeattachment` table fail.|
-|Work Queues | Adding work queue items fails.
+|Work Queues | Adding work queue items fails. |
+|Copilot Studio | Publishing an existing agent doesn't work. |
 
 ## FAQ for block unmanaged customizations
 
