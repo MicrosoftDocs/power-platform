@@ -4,7 +4,7 @@ description: Learn how to monitor system jobs in the Power Platform admin center
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/19/2026
+ms.date: 02/20/2026
 author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
