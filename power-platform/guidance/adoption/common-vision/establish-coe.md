@@ -23,9 +23,6 @@ This article describes a common goal for Power Platform&mdash;establishing a Cen
 
 A CoE serves as a centralized team or function that oversees the administration, governance, and nurturing of Power Platform adoption within an organization. The CoE implements governance patterns and practices to ensure that the platform is used securely and efficiently, and to mitigate risks such as compliance and security issues. The CoE fosters best practices, educates new makers, and provides a hub for sharing success stories and guidelines. A CoE with robust governance practices helps organizations maximize the value of their Power Platform investment, driving innovation while maintaining control and compliance.
 
-
-
-
 ## Objectives
 
 [!INCLUDE [guidance-adoption-common-goals-objectives](../../../includes/guidance-adoption-common-goals-objectives.md)]
@@ -48,6 +45,10 @@ Typical objectives for establishing a Center of Excellence with governance patte
 - **Drive reusability and standardization**: Increase visibility into applications and best practices to [promote reusability](../reusable.md) and standardization. These efforts help boost compliance and ensure consistent quality across the organization.
 - **Develop a decision matrix for platform and license selection**: Develop a decision matrix to guide the selection of appropriate platforms and licenses based on specific use cases and requirements. A decision matrix can help with optimal resource allocation and cost management.
 - **Strive for continuous improvement**: Establish a clear pathway for decision-making that aligns policy and continuous process improvement to maximize technology capabilities. Regularly review and update governance policies based on feedback and evolving business needs.
+
+
+
+
 
 ## Measurable key results
 
