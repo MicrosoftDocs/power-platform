@@ -1,8 +1,9 @@
 ---
 title: Troubleshoot Microsoft Power Platform CLI
 description: Troubleshoot Microsoft Power Platform CLI issues such as diagnostic logging and missing DotnetToolSettings.xml errors in local and CI environments.
-ms.author: laswenka
-author: laneswenka
+#customer intent: As someone who uses PAC CLI, I might need to troubleshoot problems when PAC CLI isn't working correctly.
+ms.author: anpetroc
+author: petrochuk
 ms.reviewer: jdaly
 ms.date: 02/19/2026
 ms.topic: how-to
@@ -10,14 +11,13 @@ ms.topic: how-to
 
 # Troubleshoot Microsoft Power Platform CLI
 
-Use this article to troubleshoot advanced PAC CLI scenarios.
+Learn about some steps you can take to troubleshoot problems if the Power Platform CLI isn't working properly. This article contains information about:
 
-## Troubleshooting topics
+- [When and how to use the `--log-to-console` parameter](#use-the-global---log-to-console-parameter)
+- [How to resolve an error that says that the `DotnetToolSettings.xml` file is missing](#resolve-dotnettoolsettingsxml-missing)
 
-- [Log diagnostics to console](#use-global---log-to-console)
-- [.NET prerequisite issues (`DotnetToolSettings.xml` missing)](#resolve-dotnettoolsettingsxml-missing)
 
-## Use global `--log-to-console`
+## Use the global `--log-to-console` parameter
 
 The global `--log-to-console` parameter sends PAC CLI diagnostic logs to console output so pipeline logs capture them immediately.
 
@@ -33,14 +33,18 @@ Use `--log-to-console` when:
 - A pipeline fails before a separate log upload step can publish local PAC CLI logs.
 - You need immediate diagnostics in Azure DevOps or GitHub Actions job logs to triage failed deployments.
 
-### GitHub Actions example
+`--log-to-console` is a global PAC CLI parameter. This means you can use it with any PAC CLI command.
+
+### Examples
+
+#### [GitHub Actions](#tab/githubactions)
 
 ```yaml
 - name: Import solution with PAC CLI diagnostics
   run: pac --log-to-console solution import --path ContosoSolution.zip --environment ${{ secrets.ENVIRONMENT_URL }}
 ```
 
-### Azure DevOps example
+#### [Azure DevOps](#tab/azuredevops)
 
 ```yaml
 - task: PowerShell@2
@@ -51,26 +55,28 @@ Use `--log-to-console` when:
       pac --log-to-console solution import --path "$(Build.SourcesDirectory)\ContosoSolution.zip" --environment "$(EnvironmentUrl)"
 ```
 
-### Notes
+---
 
-- `--log-to-console` is a global PAC CLI parameter.
-- `pac package deploy` also has command-specific logging parameters (`--logConsole` and `--logFile`) for package deployment output.
+> [!NOTE]
+> The [`pac package deploy` command](reference/package.md#pac-package-deploy) also has command-specific logging parameters (`--logConsole` and `--logFile`) for package deployment output.
 
 ## Resolve `DotnetToolSettings.xml` missing
 
-If PAC CLI fails with a `DotnetToolSettings.xml` missing message, the installed .NET version usually doesn't match the PAC CLI major version.
+If a PAC CLI command fails with a `DotnetToolSettings.xml` missing message, the installed .NET version usually doesn't match the PAC CLI major version.
 
 This known .NET tool behavior is tracked in [dotnet/sdk issue #38172](https://github.com/dotnet/sdk/issues/38172).
 
-### Why this happens
+### Cause
 
-- PAC CLI 2.x and later is built with .NET 10 and requires .NET 10 to be installed as a prerequisite.
-- PAC CLI 1.x is built with .NET 9 and requires .NET 9 to be installed as a prerequisite.
+- PAC CLI 2.x and later versions are built with .NET 10 and require .NET 10 to be installed as a prerequisite.
+- PAC CLI 1.x versions are built with .NET 9 and require .NET 9 to be installed as a prerequisite.
 - If the required .NET version isn't installed, the error can appear as `DotnetToolSettings.xml` missing instead of a clearer runtime message.
 - Even when multiple SDKs are installed, a local `global.json` can force `dotnet` to use an older SDK that can't run the tool.
-- Some users reported this with older SDK patch trains; updating to newer SDK patches can resolve it.
+- Some users reported this problem with older SDK patch trains. Updating to newer SDK patches can resolve the problem.
 
 ### How to fix it
+
+Use the following steps to fix this error.
 
 1. Check the PAC CLI version:
 
@@ -78,9 +84,9 @@ This known .NET tool behavior is tracked in [dotnet/sdk issue #38172](https://gi
    pac
    ```
 
-1. Install the required .NET SDK/runtime for that PAC CLI major version:
+1. Install the required .NET SDK or runtime for that PAC CLI major version:
 
-   - PAC CLI 2.x+ -> install .NET 10
+   - PAC CLI 2.x or later -> install .NET 10
    - PAC CLI 1.x -> install .NET 9
 
 1. Verify the required SDK is available on the machine or build agent:
@@ -101,10 +107,10 @@ This known .NET tool behavior is tracked in [dotnet/sdk issue #38172](https://gi
 
 In CI systems (GitHub Actions and Azure DevOps), explicitly install the required .NET version in the pipeline before PAC CLI runs.
 
-If you see this while installing a different package (not PAC CLI), verify the package is a .NET tool package; non-tool NuGet packages can produce similar messages with `dotnet tool install`.
+If you see this error while installing a different package (not PAC CLI), verify the package is a .NET tool package. Non-tool NuGet packages can produce similar messages with `dotnet tool install`.
 
 ### See also
 
-[Microsoft Power Platform CLI overview](introduction.md)<br />
-[Power Platform CLI command reference](reference/index.md)<br />
+[Microsoft Power Platform CLI overview](introduction.md)   
+[Power Platform CLI command reference](reference/index.md)   
 [pac package command reference](reference/package.md)
