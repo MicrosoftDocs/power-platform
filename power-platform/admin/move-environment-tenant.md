@@ -208,6 +208,8 @@ If the validation operation fails, a banner with a **Download errors** button ap
 
 Use the following table to understand and troubleshoot user mapping results.
 
+:::image type="content" source="media/move-environment-tenant/approverejectpanel1.jpg" alt-text="Screenshot of tenant move request details panel showing environment, migration, tenant IDs, and Approve and Deny buttons.":::
+
 |Error code|Description|Action|
 |-----------|-------------|--------------|
 |SourceUserIdMissingInUserMap|SourceUserId is empty in the mapping.|Check and fix the Source User in the mapping file.|
