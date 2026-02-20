@@ -44,7 +44,7 @@ The generally available platform version is based on your environment's database
 > [!Important]
 > A release wave is a mandatory update and can't be postponed. These updates are essential for maintaining system integrity and security.
 >
->  The exact deployment day and time for your environment can't be calculated.
+> The exact deployment day and time for your environment can't be calculated.
 
 For each region listed, deployment begins on Friday evening dark hours and expected to complete before Monday start of business. For more information about dark hours for your region, see [Maintenance timeline](policies-communications.md#maintenance-timeline).
 
