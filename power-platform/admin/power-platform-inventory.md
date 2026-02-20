@@ -123,7 +123,7 @@ Microsoft offers multiple admin surfaces that display agents, and you might noti
 
 ### Power Platform inventory vs. Microsoft 365 admin center
 
-The [Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide) shows agents that are **available to users in your tenant**. This includes Microsoft first-party agents, third-party ISV agents, and org-created agents that have been published or shared. It functions as a catalog of everything accessible to your employees.
+The [Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps) shows agents that are **available to users in your tenant**. This includes Microsoft first-party agents, third-party ISV agents, and org-created agents that have been published or shared. It functions as a catalog of everything accessible to your employees.
 
 Power Platform inventory, by contrast, shows agents that were **built by people in your organization** on Power Platform. This includes both published and draft agents created in Copilot Studio or Microsoft 365 Copilot Agent Builder. It does not include first-party Microsoft agents or ISV agents.
 
