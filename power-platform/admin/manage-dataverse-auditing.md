@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/18/2026
+ms.date: 02/20/2026
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
@@ -466,7 +466,7 @@ For Unified Interface, in the upper-right corner, select **Settings** > **Advanc
    >
    > To monitor the status of audit delete jobs, see the next section.
 
-## Monitoring system jobs 
+## Monitor system jobs 
 
 For information about how to monitor system jobs, go to [Monitor system jobs](monitor-system-jobs.md).
 
