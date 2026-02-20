@@ -227,8 +227,6 @@
       items:
         - name: Power Platform white papers
           href: white-papers/index.md
-        - name: Enterprise security with Power Platform
-          href: white-papers/enterprise-security.md
         - name: Migrating apps and flows from the default environment
           href: white-papers/migrating-from-default-environment.md
     - name: Resources
