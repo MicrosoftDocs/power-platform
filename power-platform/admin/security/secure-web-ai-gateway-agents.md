@@ -37,7 +37,7 @@ You configure security policies for agents by using the baseline profile in Glob
 
 ## How Secure Web and AI Gateway for Copilot Studio agents works
 
-To enforce consistent network security controls on Copilot Studio agents, forward traffic from the agents to Global Secure Access's globally distributed proxy service. You can enable forwarding of agent traffic in the Power Platform admin center on a per-Environment or per-Environment Group basis. Forwarding applies to all kinds of agent traffic, including traffic from HTTP Node and Tools generated connectors, including custom connectors, the custom Model Context Protocol (MCP) server connector, and a full list of [supported connectors](#supported-connectors).
+To enforce consistent network security controls on Copilot Studio agents, forward traffic from the agents to Global Secure Access's globally distributed proxy service. You can enable forwarding of agent traffic in the Power Platform admin center on a per-Environment or per-Environment Group basis. Forwarding applies to all kinds of agent traffic, including traffic from HTTP Node and Tools generated connectors, including custom connectors, the custom Model Context Protocol (MCP) server connector, custom tools, and a full list of [supported connectors](#supported-connectors).
 
 Once you forward traffic from the agent to GSA, you can enforce the same security controls you use on users to agents, including web content filtering, threat intelligence filtering, network file filtering, and more.
 
@@ -141,63 +141,155 @@ Regular monitoring and maintenance ensure your security configuration remains ef
 - GSA partner ecosystem integrations, for example, third-party Data Loss Prevention (DLP), aren't supported.
 - Copilot Studio Bing search network transactions (including knowledge from _public websites_ and _Wikipedia_) aren't supported.
 - Network requests to Dataverse and Azure SQL knowledge sources aren't supported. 
-- Network requests to the following custom tools aren't supported: prompt, agent flow, Computer Use, and child agents.
 - Network requests to Large Language Model (LLM), either for orchestration or results enhancement, aren't supported.
 - Limited connector support (see [supported connectors](#supported-connectors) for details).
 - Connectors other than those listed in [supported connectors](#supported-connectors) are not supported and may not function reliably.
 
 ## Supported connectors
 
-The following connectors currently support secure web and AI gateway Copilot Studio agents:
+The following connectors currently support secure web and AI gateway Copilot Studio agents. Note, if you have any trouble with these connectors in the preview, please contact support.
 
 :::row:::
     :::column:::
-    - Office 365 Groups
-    - Microsoft Teams
-    - OneDrive for Business
-    - Power Apps for Makers
-    - Microsoft Forms
-    - Power BI
-    - Planner
-    - Power Automate Management
-    - Microsoft Translator V2
-    - Microsoft To-Do (Business)
-    - Power Apps Notification
-    - Power Platform for Admins
-    - Desktop flows
-    - Power Apps for Admins
-    - Office 365 Outlook
-    - Power Automate for Admins
-    - Shifts for Microsoft Teams
-    - Project Online
-    - Slack
-    - Jira
-    - Azure Table Storage
-    - Microsoft Copilot Studio
-    :::column-end:::
-    :::column:::
-    - Smartsheet
-    - Google Drive
-    - OneDrive
-    - Azure Data Factory
-    - Microsoft Learn Docs MCP
-    - Databricks
-    - Microsoft Defender ATP
-    - iAuditor
-    - Azure Log Analytics Data Collector
-    - Blackbaud Altru Constituent
-    - Partner Center Referrals
+    - Adobe PDF Tools
+    - Adobe Sign
+    - Amazon S3
+    - Approvals
+    - ArcGIS
+    - Asana
+    - Azure AD
+    - Azure AD Applications
     - Azure AI Foundry Agent Service
     - Azure AI Foundry Inference
-    - Copilot for Finance
+    - Azure Application Insights
+    - Azure Cognitive Service for Language
+    - Azure Cognitive Services Computer Vision
+    - Azure Cognitive Services Text Analytics
+    - Azure Communication Services Email
+    - Azure Communication Services SMS
+    - Azure Data Factory
+    - Azure Event Hubs
+    - Azure Log Analytics Data Collector
+    - Azure Resource Manager
+    - Azure Table Storage
+    - Azure VM
+    - Bing Maps
+    - Bitly
+    - Blackbaud Altru Constituent
+    - Blackbaud Raiser's Edge NXT
     - Blackbaud RENXT Gifts
     - Blackbaud SKY Add-ins
-    - Luware Nimbus
     - Box MCP Server
-    - Impower ERP
+    - Cards for Power Apps
+    - ClickSend SMS
+    - Cloudmersive Convert
+    - Cognito Forms
+    - Computer Operator
+    - Confluence
+    - Converter by Power2Apps
+    - Copilot for Finance
     - Databricks
-    - Amazon S3
-    - Azure Cognitive Service for Language
+    - Desktop flows
+    - DocuSign
+    - DocuSign Demo
+    - Egnyte
+    - Encodian Convert
+    - Encodian Document Manager
+    - Encodian PDF
+    - Encodian Word
+    - Excel
+    - Experlogix Smart Flows
+    - AI Builder
+    - Formstack
+    - Freshdesk
+    - Freshservice
+    - GitHub
+    - Google Calendar
+    - Google Contacts
+    - Google Drive
+    - Google Tasks
+    :::column-end:::
+    :::column:::
+    - Hash Generator
+    - Hashify
+    - iAuditor
+    - Impower ERP
+    - Jira
+    - JotForm
+    - JotForm Enterprise
+    - kintone
+    - LMS365
+    - Luware Nimbus
+    - Mailchimp
+    - Mail
+    - Microsoft 365 Copilot Automations
+    - Microsoft 365 Message Center
+    - Microsoft 365 Updates App
+    - Microsoft Bookings
+    - Microsoft Copilot Studio
+    - Microsoft Dataverse
+    - Microsoft Defender ATP
+    - Microsoft Defender for Cloud Apps
+    - Microsoft Fabric Data Agent
+    - Microsoft Forms
+    - Microsoft Forms Pro
+    - Microsoft Graph
+    - Microsoft Learn Docs MCP
+    - Microsoft Loop
+    - Microsoft School Data Sync
+    - Microsoft Spatial Services
+    - Microsoft Teams
+    - Microsoft To-Do (Business)
+    - Microsoft Translator V2
+    - Monday.com
+    - Muhimbi PDF
+    - NetDocuments
+    - Office 365 Groups
+    - Office 365 Groups Mail
+    - Office 365 Outlook
+    - OneDrive
+    - OneDrive for Business
+    - OneNote (Business)
+    - Outlook Tasks
+    - PagerDuty
+    - Partner Center Referrals
+    - Planner
+    - Plumsail
+    - Plumsail SP
+    - Power Apps for Admins
+    - Power Apps for Makers
+    - Power Apps Notification
+    - Power Apps Notification V2
+    - Power Automate for Admins
+    - Power Automate Management
+    :::column-end:::
+    :::column:::
+    - Power BI
+    - Power Platform for Admins
+    - Power Platform for Admins V2
+    - Project Online
+    - Project Roadmap
+    - Redmine
+    - SendGrid
+    - ServiceNow
+    - SharePoint
+    - Shifts for Microsoft Teams
+    - Slack
+    - Smartsheet
+    - Snowflake
+    - Stripe
+    - Survey123
+    - SurveyMonkey
+    - TeamForms
+    - Todoist
+    - Trello
+    - Twilio
+    - UiPath Orchestrator
+    - Vena
+    - Webex
+    - WordPress
+    - Yammer
+    - YouTube
     :::column-end:::
 :::row-end:::
 
