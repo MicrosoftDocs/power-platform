@@ -153,6 +153,7 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     :::column:::
     - Adobe PDF Tools
     - Adobe Sign
+    - AI Builder
     - Amazon S3
     - Approvals
     - ArcGIS
@@ -195,11 +196,12 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - Egnyte
     - Encodian Convert
     - Encodian Document Manager
+    :::column-end:::
+    :::column:::
     - Encodian PDF
     - Encodian Word
     - Excel
     - Experlogix Smart Flows
-    - AI Builder
     - Formstack
     - Freshdesk
     - Freshservice
@@ -208,8 +210,6 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - Google Contacts
     - Google Drive
     - Google Tasks
-    :::column-end:::
-    :::column:::
     - Hash Generator
     - Hashify
     - iAuditor
@@ -220,8 +220,8 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - kintone
     - LMS365
     - Luware Nimbus
-    - Mailchimp
     - Mail
+    - Mailchimp
     - Microsoft 365 Copilot Automations
     - Microsoft 365 Message Center
     - Microsoft 365 Updates App
@@ -243,6 +243,8 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - Microsoft Translator V2
     - Monday.com
     - Muhimbi PDF
+    :::column-end:::
+    :::column:::
     - NetDocuments
     - Office 365 Groups
     - Office 365 Groups Mail
@@ -262,8 +264,6 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - Power Apps Notification V2
     - Power Automate for Admins
     - Power Automate Management
-    :::column-end:::
-    :::column:::
     - Power BI
     - Power Platform for Admins
     - Power Platform for Admins V2
