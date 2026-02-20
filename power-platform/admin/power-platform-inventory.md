@@ -4,8 +4,14 @@ description: Learn how to get a comprehensive, unified view of all agents, apps,
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
+<<<<<<< inventory-differences-section
 ms.date: 02/20/2026
+=======
+ms.date: 02/19/2026
+>>>>>>> main
 ms.topic: concept-article
+contributors:
+    - Grayson-Bishop
 
 ---
 
@@ -153,6 +159,8 @@ As a result, the agent counts between the two surfaces differ. The Microsoft 365
 - **Un-published model-driven apps:** Only published, model-driven apps are captured.
   
 - **Model-driven apps in the default environment:** The default environment comes with three preinstalled model-driven apps: Power Platform Environment Settings, Power Pages Management, and Solution Health Hub. These don't appear in the inventory initially unless they're edited and republished.
+
+- **Sovereign cloud**: [Power Platform inventory](power-platform-inventory.md) isn't currently available in the US Government Community Cloud (GCC, GCC-High, and DoD), 21Vianet (China), or Air Gapped environments.
 
 ## Programmatic access
 
