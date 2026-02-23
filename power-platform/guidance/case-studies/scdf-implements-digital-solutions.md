@@ -41,7 +41,7 @@ Key benefits since the start of this journey:
 
   - ADA and ITA are actively used by 2,100 SCDF frontliners across 23 stations.
 
-  - DORA serves approximately 700 non-frontline SCDF staff.
+  - DORA serves approximately 700 nonfrontline SCDF staff.
 
   - FICA was successfully developed in three months by a one-man effort.
 
@@ -107,21 +107,21 @@ The workflow is as follows.
 
 1. An SCDF officer starts a natural language conversation with NEXA.
 
-1. The conversational agent grounds its information on public government websites.
+1. The agent grounds its information on public government websites.
 
-1. In addition, SCDF official documents are used as knowledge sources.
+1. SCDF official documents are used as knowledge source as well.
 
-1. Depending on the identified intent, the agent can also retrieve information from Dataverse, which Power Automate cloud flow populates with data from SharePoint. This approach enables equipment detection and interactive quiz generation.
+1. The agent retrieves information from Dataverse, which Power Automate cloud flow populates with data from SharePoint. This approach enables equipment detection and interactive quiz generation and is used depending on the identified intent.
 
-1. Power Apps empowers SCDF officers. Multiple apps support everyday work.
+1. SCDF officers use multiple Power Apps apps that support everyday work.
 
-1. Power BI is used to analyze the data captured.
+1. SCDF officers use Power BI to analyze the data captured.
 
-1. The SCDF workforce uses Microsoft 365 Copilot as part of its suite of digital tools. Additionally, Copilot is being explored and adopted across various products and services.
+1. The SCDF workforce uses Microsoft 365 Copilot as part of its suite of digital tools. Additionally, AI features are being explored and adopted across various products and services.
 
 ## Takeaways
 
-The case study describes SCDF’s approach to digital transformation, which includes the use of Copilot Studio and Power Platform among other technologies. Here are some key takeaways for IT professionals who are looking to implement a similar solution in their own organizations:
+This case study describes SCDF’s approach to digital transformation, which includes the use of Copilot Studio and Power Platform among other technologies. Here are some key takeaways for IT professionals who are looking to implement a similar solution in their own organizations:
 
 - Build internal capabilities and upskill the workforce by establishing a center of excellence or digital factory team.
 
