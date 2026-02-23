@@ -208,8 +208,6 @@ If the validation operation fails, a banner with a **Download errors** button ap
 
 Use the following table to understand and troubleshoot user mapping results.
 
-:::image type="content" source="media/move-environment-tenant/approverejectpanel1.jpg" alt-text="Screenshot of tenant move request details panel showing environment, migration, tenant IDs, and Approve and Deny buttons.":::
-
 |Error code|Description|Action|
 |-----------|-------------|--------------|
 |SourceUserIdMissingInUserMap|SourceUserId is empty in the mapping.|Check and fix the Source User in the mapping file.|
@@ -219,8 +217,6 @@ Use the following table to understand and troubleshoot user mapping results.
 |TargetUPNDoesNotExistInAAD|TargetUserId UPN isn't found in Microsoft Entra ID for the tenant.|Check and fix the Target User to an existing and valid user in the tenant Entra ID or remove the entry from the mapping file.|
 |RetryableError|A retriable error has occurred during mapping of the user. It might be successful on next retry.|Rerun the user mapping command with the list of users with this error in the mapping file.|
 |ApplicationUserCannotBeMapped|Source user in the map is an application user, which isn't supported by the mapping operation.|Application user mapping isn't supported. No action required. We suggest that you create the application users in the destination tenant. Source tenant app users can't be migrated to the destination tenant. This is by design.|
-|DuplicateTargetApplicationUserExist|A duplicate target user, which is an application user, is found in the organization's system users table. It can't be mapped.|This isn't supported. Anonymize the application user manually using the action mentioned for DuplicateTargetUserExistInOrgDB.|
-|DuplicateTargetUserExistInOrgDB|A duplicate target user is found in the organization's system users table that failed to anonymize. It can't be mapped (this should be taken care by the Map job to itself, incase map job doesn't take care of this. Then follow the below steps).|Anonymize the user using following steps. <br><br>Go to Unify, CDS > System users.<br>Use the interactive search to search each user, and get the system user ID.<br>Run the anonymize system user command for this user.|
 |SkippedMapping|Source user doesn't exist in the organization, and the target user already exists.|No action required. It means the source user was already mapped to the target user in previous run or manually.|
 
 #### When validation succeeds
@@ -242,6 +238,7 @@ After the move operation completes:
 - The source tenant keeps the environment but without the Dataverse organization.
 - The process creates a new environment in the destination tenant with the same name as the source environment and includes the moved Dataverse organization.
 - Update the security groups after migration is completed in the destination tenant. Security group migration isn't supported.
+- Managed environment needs to be re-enabled in destination tenant. Destination tenant should have required license to enable managed environment.
 
 ### Cancel move
 You can cancel the move at any time between submitting the request and completing the environment move. Select the **Cancel move** button on the banner to open the **Cancel move** dialog and cancel the move.
