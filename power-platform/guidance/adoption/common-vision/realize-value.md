@@ -42,7 +42,7 @@ Typical objectives for measuring value and realizing return on investment includ
 - **Share Power Platform value**: [Develop a structured process](../business-value-methods.md#business-value-toolkit) for evaluating and documenting the ROI and value of Power Platform initiatives. Create comprehensive reports that highlight successes, challenges, and lessons learned.
 - **Define KPIs and categories for success stories**: Identify the KPIs and categories that are used to create success stories. Ensure these metrics are relevant, measurable, and aligned with business objectives. Use these stories to inspire and guide future projects.
 - **Define initiatives with pilot groups to drive case studies that demonstrate tangible ROI**: Validate the ROI of Power Platform initiatives through pilot projects.
-- **Start using the [Business Value Toolkit](../../coe/business-value-toolkit.md)**: Use the Business Value Toolkit to enhance ROI measurement and reporting.
+- **Start using the [Business value toolkit](../../coe/business-value-toolkit.md)**: Use the Business value toolkit to enhance ROI measurement and reporting.
 
 ## Measurable key results
 
@@ -90,7 +90,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for mea
   - Collect and document success stories from various Power Platform initiatives.
   - Highlight the ROI and value delivered by these projects.
   - Communicate these stories through internal newsletters, presentations, and the Maker Portal.
-- **Start using the [Business Value Toolkit](../../coe/business-value-toolkit.md)**:
+- **Start using the [Business value toolkit](../../coe/business-value-toolkit.md)**:
   - Familiarize stakeholders with the toolkit and its components.
   - Integrate the toolkit into existing processes for measuring and reporting ROI.
   - Use the toolkit to identify opportunities for optimizing business value.
