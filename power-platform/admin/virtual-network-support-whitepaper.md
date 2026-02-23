@@ -183,7 +183,8 @@ The following best practices help you secure outbound connections from Power Pla
 
 - **Restrict internet access**: By default, containers have unrestricted outbound internet access. Attach a [NAT gateway](#azure-nat-gateway) to the delegated subnet to force all internet-bound traffic through a controlled path, ensuring that containers remain private while maintaining secure outbound connectivity. 
 
-> [!NOTE] If a NAT gateway, can't de deployed it is possible to still restrict internet access by fully forcing all traffic to be routed through your network by configuring a next hop within the virtual network by for example, adding a custom routing table. For more information see [Azure virtual network traffic routing](/azure/virtual-network/virtual-networks-udr-overview)
+> [!NOTE] 
+> If a NAT gateway, can't de deployed it is possible to still restrict internet access by fully forcing all traffic to be routed through your network by configuring a next hop within the virtual network by for example, adding a custom routing table. For more information see [Azure virtual network traffic routing](/azure/virtual-network/virtual-networks-udr-overview)
 
 - **Restrict outbound traffic**: Once your NAT Gateway is deployed, limit the outbound traffic from Power Platform resources to specific endpoints. Use network security groups and Azure Firewall to enforce traffic rules and control access. 
 
