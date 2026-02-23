@@ -32,7 +32,7 @@ Action Apps aimed to provide a solution where sports organizations can own their
 
 Action Apps uses a suite of Microsoft technologies to build smart and secure solutions. By using Power Apps, Azure, and Microsoft 365, they built an Athlete Management System (AMS). The AMS consists of three main modules that centralize analytics and insights based on athlete performance and health data. An operational layer supports day-to-day operations, and an AI agent, called AAVA, lets users ask questions in natural language and get instant answers.
 
-> The Action Apps AMS transformed the way we worked with our data. The data platform allowed us to ingest data in an instant and gave us amazing interactivity with the data visualizations in Power BI. This interactivity allowed us to measure session and game performance faster and helped us make better and more informed decisions.
+> The Action Apps AMS transformed the way we worked with our data. The data platform allowed us to ingest data in an instant and gave us amazing interactivity with the data visualizations in Power BI. This allowed us to measure session and game performance faster and helped us make better and more informed decisions.
 >
 > — *Dan Hodges, Head of Performance at Newcastle United*
 
@@ -64,7 +64,7 @@ Key features include:
 
 - **Integrated coding compliance**: Uses Orchard Sports Injury and Illness Classification System (OSIICS), International Classification of Diseases (ICD), and Sports Medicine Diagnostic Coding System (SMDCS) for consistent data entry and reporting to governing bodies.
 
-The **Scout App** is a Power Apps canvas app optimized for smartphones and tablets that modernize athlete evaluation workflows. Key features include:
+The **Scout App** is a Power Apps canvas app optimized for smartphones and tablets that modernizes athlete evaluation workflows. Key features include:
 
 - **Attribute-based scoring**: Scouts can evaluate athletes across multiple attributes, generating an overall score to identify who to follow up with for continued tracking.
 
