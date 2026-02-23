@@ -31,7 +31,7 @@ By focusing on ROI, organizations can prioritize projects that provide the most 
 
 [!INCLUDE [guidance-adoption-common-goals-objectives](../../../includes/guidance-adoption-common-goals-objectives.md)]
 
-Typical objectives for measuring value and realizing return of investment include:
+Typical objectives for measuring value and realizing return on investment include:
 
 - **Cultivate a value mindset**: Foster a culture that prioritizes return on investment (ROI) in all Power Platform initiatives. Encourage stakeholders to think critically about the financial and strategic benefits of their projects.
 - **Prioritize value/impact-first delivery**: Emphasize the importance of delivering projects that provide significant value and impact. Prioritize initiatives that align with business goals and demonstrate clear benefits.
@@ -59,7 +59,7 @@ Typical key results, aligned with some of the [objectives](#objectives), for mea
 - Capture success stories that showcase business value (metrics) for built apps and automations to drive the value of the platform, with ___% of stories highlighting measurable metrics. 
 - Publish captured stories to enhance the perception of value, aiming for a ___% increase in positive perception. 
 - Improve business time to value in a measurable way, reducing time by ___%. 
-Save costs and innovate more without compromising quality, achieving a cost reduction of ___%. 
+- Save costs and innovate more without compromising quality, achieving a cost reduction of ___%. 
 
 ## Key initiatives
 
