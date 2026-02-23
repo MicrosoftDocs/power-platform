@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: marianaraujo 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 02/19/2026
+ms.date: 02/23/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: maaraujo
