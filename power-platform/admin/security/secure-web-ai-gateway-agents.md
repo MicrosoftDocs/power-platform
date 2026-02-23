@@ -89,7 +89,7 @@ To configure Global Secure Access settings at the environment group-level, compl
 1. Select **Save**.
 
 > [!NOTE]
-> After enabling GSA for Agents for a given environment or environment group, you need to create or update any existing custom connectors for them to route traffic through Global Secure Access.
+> After enabling Global Secure Access for Agents in the environment or environment group, any existing Copilot Studio custom connector must be edited and saved to ensure its traffic is routed through Global Secure Access. Custom connectors created afterward automatically use this configuration.
 
 ## Create security policies for Copilot Studio agents
 
@@ -194,10 +194,10 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - DocuSign
     - DocuSign Demo
     - Egnyte
-    - Encodian Convert
-    - Encodian Document Manager
     :::column-end:::
     :::column:::
+    - Encodian Convert
+    - Encodian Document Manager
     - Encodian PDF
     - Encodian Word
     - Excel
@@ -242,9 +242,9 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - Microsoft To-Do (Business)
     - Microsoft Translator V2
     - Monday.com
-    - Muhimbi PDF
     :::column-end:::
     :::column:::
+    - Muhimbi PDF
     - NetDocuments
     - Office 365 Groups
     - Office 365 Groups Mail
