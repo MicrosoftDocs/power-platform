@@ -71,7 +71,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for enh
 - **Digitize manual processes and shift to value creation tasks**:
     - Identify and understand manual processes per team. 
     - Automate routine support activities and request processes (for example, environment request form). 
-    - Create a Maker Portal (for example, [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site)), with onboarding collateral, development guidelines, self-guided learning, and success stories. 
+    - Create a Maker Portal (for example, [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site)) with onboarding collateral, development guidelines, self-guided learning, and success stories. 
 - **Reduce time to market for Power Platform solutions**: 
     - Develop automation and alerting for key assurance controls. 
     - Implement a peer-review mechanism for popular citizen-developed apps. 
