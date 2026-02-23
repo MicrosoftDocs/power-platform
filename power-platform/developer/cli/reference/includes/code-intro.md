@@ -1,1 +1,2 @@
-Pac code commands support Power Apps capabilities that are only available in an early access preview. You can request to participate in the the early access preview by signing up with the following form: https://aka.ms/paCodeAppsEAP.
+> [!NOTE]
+> Starting with [Power Apps SDK](https://www.npmjs.com/package/@microsoft/power-apps?activeTab=readme) v1.0.4 and higher, the SDK includes an npm-based CLI for code apps. This new CLI reduces prerequisites for building code apps and will replace these commands, which will be deprecated in a future release. To learn more about the new commands and get started, see [Quickstart with new npm CLI](/power-apps/developer/code-apps/how-to/npm-quickstart).
