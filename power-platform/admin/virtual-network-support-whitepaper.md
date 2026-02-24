@@ -71,7 +71,7 @@ Because the container operates within the boundaries of the delegated subnet and
 
 Power Platform doesn't manage the configuration of the delegated subnet. The only requirement is that the delegated subnet can't be used for any other resources or delegated to other services. After a subnet is delegated, the IP addresses within that subnet are reserved for Power Platform.
 
-Internet access from the containers isn't restricted by default. The container can still route to public endpoints if the correct configuration is not applied to the virtual network. For information on restricting internet access, see [Best practices for securing outbound connections](#best-practices-for-securing-outbound-connections-from-power-platform-services).
+Internet access from the containers isn't restricted by default. It is possible to limit or control the egress of network traffic through configuration applied to the virtual network. For information on restricting internet access, see [Best practices for securing outbound connections](#best-practices-for-securing-outbound-connections-from-power-platform-services).
 
 The following table summarizes the ownership of the delegated subnet and the controls that are available to customers and Microsoft.
 
@@ -181,7 +181,7 @@ Network security groups (NSGs) allow you to define security rules that control t
 
 The following best practices help you secure outbound connections from Power Platform services, which are crucial to mitigate data exfiltration risks and ensure compliance with security policies.
 
-- **Restrict internet access**: By default, containers have unrestricted outbound internet access. Attach a [NAT gateway](#azure-nat-gateway) to the delegated subnet to force all internet-bound traffic through a controlled path, ensuring that containers remain private while maintaining secure outbound connectivity. 
+- **Restrict internet access**: By default, containers have unrestricted outbound internet access. Attach a [NAT gateway](#azure-nat-gateway) to the delegated subnet to force all internet-bound traffic through a controlled path, ensuring that containers connectivity is restricted and any connections that are allowed are routed through your private network.
 
 > [!NOTE] 
 > If a NAT gateway, can't de deployed it is possible to still restrict internet access by fully forcing all traffic to be routed through your network by configuring a next hop within the virtual network by for example, adding a custom routing table. For more information see [Azure virtual network traffic routing](/azure/virtual-network/virtual-networks-udr-overview)
