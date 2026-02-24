@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: marianaraujo 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 02/23/2026
+ms.date: 02/24/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: maaraujo
@@ -59,7 +59,7 @@ Dataverse search is an opt-out feature. It's set to **On** for all new productio
 
 You can find this setting in the Power Platform admin center. For more information, see [Search](settings-features.md#search).
 
-:::image type="content" source="https://github.com/user-attachments/assets/ee6047e9-fe9a-4796-89e5-c6f59b518b46" alt-text="Screenshot of the Dataverse search settings in the Power Platform admin center.":::
+:::image type="content" source="media/dataverse-search.png" alt-text="Dataverse search settings in Power Platform admin center." lightbox="media/dataverse-search.png":::
 
 In the Power Platform admin center, admins can [use the Dataverse Search setting](configure-relevance-search-organization.md#managing-dataverse-search) to manage it. The state selected for Dataverse search impacts the ability to use Dataverse data across the enabled experiences for all the organization.
 
