@@ -13,15 +13,13 @@ ms.contributors:
 - vabhavir
 ---
 
-<!-- Should line 55 end with a % sign? -->
-
 # Enhance operational efficiency
 
 This article describes a common goal for Power Platform—enhancing operational efficiency. It follows a [structured framework](../vision.md) that includes defining clear objectives, measurable key results, and actionable initiatives. This article aims to guide you in creating your own vision for Power Platform adoption.
 
 ## Vision
 
-Enhancing operational efficiency is a common vision for Power Platform adoption because it directly impacts an organization’s ability to remain competitive and agile in a rapidly changing business environment. By streamlining processes, automating repetitive tasks, and optimizing resource allocation, Power Platform enables organizations to reduce costs, improve productivity, and accelerate time-to-market for new solutions. This focus on efficiency not only frees up valuable time for employees to engage in higher-value activities but also fosters a culture of continuous improvement and innovation. Enhancing operational efficiency through Power Platform helps organizations achieve their strategic goals, drive growth, and deliver better outcomes for their customers and stakeholders.
+Enhancing operational efficiency is a common vision for Power Platform adoption because it directly impacts an organization's ability to remain competitive and agile in a rapidly changing business environment. By streamlining processes, automating repetitive tasks, and optimizing resource allocation, Power Platform enables organizations to reduce costs, improve productivity, and accelerate time-to-market for new solutions. This focus on efficiency not only frees up valuable time for employees to engage in higher-value activities but also fosters a culture of continuous improvement and innovation. Enhancing operational efficiency through Power Platform helps organizations achieve their strategic goals, drive growth, and deliver better outcomes for their customers and stakeholders.
 
 ## Objectives
 
@@ -34,7 +32,7 @@ Typical objectives for enhancing operational efficiency include:
 - **Reduce time to market for solutions**: Accelerate the development and deployment of Power Platform applications and automations.
 - **Reduce cost and effort to license, build, and deploy**: Minimize the costs and efforts associated with licensing, building, and deploying Power Platform solutions.
 - **Increase productivity for business and IT**: Enhance the productivity of both business and IT teams through effective use of Power Platform.
-- **Develop innovative solutions that increase productivity**: Create innovative solutions that enhance productivity and contribute to the organization’s financial performance.
+- **Develop innovative solutions that increase productivity**: Create innovative solutions that enhance productivity and contribute to the organization's financial performance.
 - **Break down silos, improve process efficiency, and achieve unification**: Foster cross-functional collaboration to eliminate silos, improve process efficiency, and achieve organizational unification.
 
 ## Measurable key results
@@ -52,7 +50,7 @@ Typical key results, aligned with some of the [objectives](#objectives), for enh
     - Reduce the number of IT hours per application by ___%. 
 - **Reduce cost and effort to license, build, and deploy**:
     - Solve bigger technical problems with measurable savings, targeting a cost reduction of ___%. 
-    - Reduce redundant licensing on other platforms by ___. 
+    - Reduce redundant licensing on other platforms by ___%. 
     - Achieve a reduction in running costs by ___%. 
 - **Increase productivity for business and IT**:
     - Increase productivity of IT team members, moving from idea to execution faster, with a target of ___% reduction in time to market. 
