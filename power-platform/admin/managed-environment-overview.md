@@ -3,7 +3,7 @@ title: Managed Environments overview
 description: Use Managed Environments to view and control your Dynamics 365 applications with less effort.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/11/2025
+ms.date: 02/23/2026
 author: mihaelablendea 
 ms.author: mihaelab 
 ms.reviewer: sericks
@@ -49,7 +49,6 @@ A Managed Environment encompasses, but isn't limited to, the following features:
 - [Virtual Network support for Power Platform](vnet-support-overview.md)
 - [Conditional access on individual apps](/power-platform/admin/admin-manage-apps#conditional-access-on-granular-apps-preview)
 - [Control which apps are allowed in your environment](control-app-access-environment.md)
-- [Configure auditing for an environment](manage-dataverse-auditing.md#configure-auditing-for-an-environment)
 - [Create and manage masking rules](create-manage-masking-rules.md)
 
 > [!NOTE]
