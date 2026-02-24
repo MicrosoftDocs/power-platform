@@ -31,7 +31,7 @@ Here are key goals and the stakeholders to engage for alignment.
 Explore common goals that align with your vision.
 
 - [Establish a Center of Excellence with governance patterns and practices](establish-coe.md)
-- [Measure value and realize return of investment](realize-value.md)
+- [Measure value and realize return on investment](realize-value.md)
 - [Get leadership buy-in and organization alignment](get-leadership-buyin.md)
 - [Nurture a maker and champion community](enable-maker-community.md)
 - [Empower innovation and AI culture](empower-innovation.md)
