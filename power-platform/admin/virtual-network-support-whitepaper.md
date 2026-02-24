@@ -189,7 +189,7 @@ The following best practices help you secure outbound connections from Power Pla
 - **Restrict outbound traffic**: Once your NAT Gateway is deployed, limit the outbound traffic from Power Platform resources to specific endpoints. Use network security groups and Azure Firewall to enforce traffic rules and control access. 
 
 > [!NOTE]
-> If only configuring network security groups, without configuring the next hop (that is, attaching a NAT Gateway or adding a custom routing table) traffic is restricted according to the rules specified. However, the traffic still leaves from Power Platform owned IP addresses. 
+> If only configuring network security groups, without configuring the next hop (that is, attaching a NAT Gateway or adding a custom routing table) traffic is restricted according to the rules specified. However, the traffic still originates from Power Platform owned IP addresses. 
 
 - **Use private endpoints**: Use private endpoints for secure communication between Power Platform services and Azure resources. Private endpoints ensure that traffic remains inside the Azure network and doesn't traverse the public internet.
 
