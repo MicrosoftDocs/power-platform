@@ -181,7 +181,7 @@ Network security groups (NSGs) allow you to define security rules that control t
 
 The following best practices help you secure outbound connections from Power Platform services, which are crucial to mitigate data exfiltration risks and ensure compliance with security policies.
 
-- **Restrict internet access**: By default, containers have unrestricted outbound internet access. Attach a [NAT gateway](#azure-nat-gateway) to the delegated subnet to force all internet-bound traffic through a controlled path, ensuring that containers connectivity is restricted and any connections that are allowed are routed through your private network.
+- **Restrict internet access**: By default, containers have unrestricted outbound internet access. Attach a [NAT gateway](#azure-nat-gateway) to the delegated subnet to force all internet-bound traffic through a controlled path, ensuring that all connections are routed through your private network.
 
 > [!NOTE] 
 > If a NAT gateway, can't de deployed it is possible to still restrict internet access by fully forcing all traffic to be routed through your network by configuring a next hop within the virtual network by for example, adding a custom routing table. For more information see [Azure virtual network traffic routing](/azure/virtual-network/virtual-networks-udr-overview)
