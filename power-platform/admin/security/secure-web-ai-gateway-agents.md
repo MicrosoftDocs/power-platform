@@ -194,11 +194,11 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - DocuSign
     - DocuSign Demo
     - Egnyte
-    :::column-end:::
-    :::column:::
     - Encodian Convert
     - Encodian Document Manager
     - Encodian PDF
+    :::column-end:::
+    :::column:::
     - Encodian Word
     - Excel
     - Experlogix Smart Flows
@@ -242,10 +242,10 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - Microsoft To-Do (Business)
     - Microsoft Translator V2
     - Monday.com
-    :::column-end:::
-    :::column:::
     - Muhimbi PDF
     - NetDocuments
+    :::column-end:::
+    :::column:::
     - Office 365 Groups
     - Office 365 Groups Mail
     - Office 365 Outlook
@@ -262,9 +262,11 @@ The following connectors currently support secure web and AI gateway Copilot Stu
     - Power Apps for Makers
     - Power Apps Notification
     - Power Apps Notification V2
+    - Power Automate
     - Power Automate for Admins
     - Power Automate Management
     - Power BI
+    - Power Platform Dataflows
     - Power Platform for Admins
     - Power Platform for Admins V2
     - Project Online
