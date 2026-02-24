@@ -47,7 +47,7 @@ The native experience is supported on:
 - **Excel on Windows desktop**
 
 > [!NOTE]
-> Mac OS X desktop users of Office need to open the spreadsheet in Excel in the browser to access the **Automate** tab.
+> macOS desktop users of Office need to open the spreadsheet in Excel in the browser to access the **Automate** tab.
 
 If the **Automate** tab isn't visible in Excel, verify it's enabled:
 
