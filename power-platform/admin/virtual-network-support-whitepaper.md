@@ -4,7 +4,7 @@ description: Learn how Azure Virtual Network support enhances the security, conn
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/13/2026
+ms.date: 02/24/2026
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
@@ -71,13 +71,13 @@ Because the container operates within the boundaries of the delegated subnet and
 
 Power Platform doesn't manage the configuration of the delegated subnet. The only requirement is that the delegated subnet can't be used for any other resources or delegated to other services. After a subnet is delegated, the IP addresses within that subnet are reserved for Power Platform.
 
-Internet access from the containers isn't restricted by default. It is possible to limit or control the egress of network traffic through configuration applied to the virtual network. For information on restricting internet access, see [Best practices for securing outbound connections](#best-practices-for-securing-outbound-connections-from-power-platform-services).
+Internet access from the containers isn't restricted by default. It's possible to limit or control the egress of network traffic through configuration applied to the virtual network. For information on restricting internet access, see [Best practices for securing outbound connections](#best-practices-for-securing-outbound-connections-from-power-platform-services).
 
 The following table summarizes the ownership of the delegated subnet and the controls that are available to customers and Microsoft.
 
 | Controls | Description | Ownership |
 |----------|-------------|-----------|
-| NAT Gateway | Attach a NAT gateway to the delegated subnet to restrict and control outbound internet traffic from Power Platform containers. | Customer |
+| NAT Gateway | Attach a NAT Gateway to the delegated subnet to restrict and control outbound internet traffic from Power Platform containers. | Customer |
 | Network security groups (NSGs) | Customers can associate NSGs with the delegated subnet. Define and enforce security rules to control inbound and outbound traffic to and from the subnet. | Customer |
 | Route tables | Customers can associate route tables with the delegated subnet. Define custom routing policies to control the flow of traffic within the virtual network and to external networks. | Customer |
 | Network monitoring | Network monitoring helps maintain compliance with security policies by forcing traffic to travel through the enterprise's virtual private network. | Customer|
@@ -167,7 +167,7 @@ The size of the delegated subnet in a virtual network should accommodate future 
 
 ### Azure NAT Gateway
 
-[Azure NAT Gateway](/azure/nat-gateway/nat-overview) provides secure, scalable outbound connectivity for containers in a delegated subnet. When attached to a subnet, the NAT gateway becomes the next hop for all internet-destined traffic, translating private IP addresses to a static public IP address. This gives your organization a centralized point of control for managing outbound internet access.
+[Azure NAT Gateway](/azure/nat-gateway/nat-overview) provides secure, scalable outbound connectivity for containers in a delegated subnet. When attached to a subnet, the NAT Gateway becomes the next hop for all internet-destined traffic, translating private IP addresses to a static public IP address. This gives your organization a centralized point of control for managing outbound internet access.
 
 ### Network monitoring
 
@@ -181,15 +181,15 @@ Network security groups (NSGs) allow you to define security rules that control t
 
 The following best practices help you secure outbound connections from Power Platform services, which are crucial to mitigate data exfiltration risks and ensure compliance with security policies.
 
-- **Restrict internet access**: By default, containers have unrestricted outbound internet access. Attach a [NAT gateway](#azure-nat-gateway) to the delegated subnet to force all internet-bound traffic through a controlled path, ensuring that all connections are routed through your private network.
+- **Restrict internet access**: By default, containers have unrestricted outbound internet access. Attach a [NAT Gateway](#azure-nat-gateway) to the delegated subnet to force all internet-bound traffic through a controlled path, ensuring that all connections are routed through your private network.
 
 > [!NOTE] 
-> If a NAT gateway, can't de deployed it is possible to still restrict internet access by fully forcing all traffic to be routed through your network by configuring a next hop within the virtual network by for example, adding a custom routing table. For more information see [Azure virtual network traffic routing](/azure/virtual-network/virtual-networks-udr-overview)
+> If a NAT Gateway can't de deployed, it's possible to still restrict internet access by fully forcing all traffic to be routed through your network by configuring a next hop within the virtual network by adding a custom routing table, for example. For more information, see [Azure virtual network traffic routing](/azure/virtual-network/virtual-networks-udr-overview).
 
 - **Restrict outbound traffic**: Once your NAT Gateway is deployed, limit the outbound traffic from Power Platform resources to specific endpoints. Use network security groups and Azure Firewall to enforce traffic rules and control access. 
 
 > [!NOTE]
-> If only configuring network security groups, without configuring the next hop (i.e. attaching a NAT gateway or adding a custom routing table) traffic will be restricted according to the rules specified. However, the traffic will still egress from Power Platform owned ip addresses. 
+> If only configuring network security groups, without configuring the next hop (that is, attaching a NAT Gateway or adding a custom routing table) traffic is restricted according to the rules specified. However, the traffic still leaves from Power Platform owned IP addresses. 
 
 - **Use private endpoints**: Use private endpoints for secure communication between Power Platform services and Azure resources. Private endpoints ensure that traffic remains inside the Azure network and doesn't traverse the public internet.
 
