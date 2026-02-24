@@ -306,6 +306,10 @@
                       href: user-channel-override.md
                     - name: Plug-in steps
                       href: plug-ins.md
+                - name: Audit and logs
+                  items:
+                    - name: Monitor system jobs
+                      href: monitor-system-jobs.md
                 - name: Templates
                   items:
                     - name: Access team templates
