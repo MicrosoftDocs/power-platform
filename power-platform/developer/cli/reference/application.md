@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac application
 
-Commands for listing and installing available Dataverse applications from Microsoft Marketplace
+Commands for listing and installing available Dataverse applications from Microsoft Marketplace.
 
 [!INCLUDE [application-intro](includes/application-intro.md)]
 
