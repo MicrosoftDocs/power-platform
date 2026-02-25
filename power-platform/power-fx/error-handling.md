@@ -18,7 +18,7 @@ contributors:
 # Error handling
 
 > [!NOTE]
-> The behavior that this article describes is available only when the **Formula-level error management** preview feature through **Settings** > **Upcoming features** > **Preview** is turned on. More information: [Controlling which features are enabled](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled)
+> The behavior that this article describes is available only when the **Formula-level error management** feature is not disabled through **Settings** > **Updates** > **Retired**. More information: [Controlling which features are enabled](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled)
 
 Errors happen. Networks go down, storage fills up, unexpected values flow in.  It's important that your logic continues to work properly in the face of potential issues.
 
