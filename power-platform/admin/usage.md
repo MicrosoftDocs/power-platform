@@ -1,10 +1,10 @@
 ---
-title: Discover what drives engagement in the Power Platform by using the Usage page
+title: Discover what drives engagement in Power Platform by using the Usage page (preview)
 description: Learn about Usage in the Power Platform admin center.
 author: amchern
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/26/2026
+ms.date: 02/10/2026
 ms.subservice: admin
 ms.author: amchern
 ms.reviewer: sericks
@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
 ---
 
-# Discover what drives engagement in the Power Platform by using the Usage page (preview)
+# Discover what drives engagement in Power Platform by using the Usage page (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 The **Usage** page in the Power Platform admin center is a centralized location for tracking engagement and adoption across Power Apps, Power Automate, and Copilot Studio agents. It highlights high-impact resources to help organizations understand what delivers value and where to focus investments.

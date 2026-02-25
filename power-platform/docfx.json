@@ -56,7 +56,8 @@
          "feedback_system": "Standard",
          "feedback_product_url": "https://powerusers.microsoft.com/",
          "recommendations": true,
-         "uhfHeaderId": "MSDocsHeader-PowerPlatform"
+         "uhfHeaderId": "MSDocsHeader-PowerPlatform",
+         "zone_pivot_group_filename": "zone-pivot-groups.json"
       },
       "fileMetadata": {
          "searchScope": {
@@ -69,6 +70,10 @@
          },
          "ms.date": {
             "developer/cli/reference/**.md": "01/07/2026"
+         },
+         "ms.update-cycle": {
+            "guidance/creator-kit/**.md": "3650-days",
+            "guidance/coe/**.md": "3650-days"
          },
          "ms.subservice": {
             "power-fx/**/*.md": "power-fx",
