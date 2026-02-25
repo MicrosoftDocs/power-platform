@@ -167,6 +167,7 @@ Or view the list of commands in the documentation:
 
 [Microsoft Power Platform CLI release notes](https://www.nuget.org/packages/Microsoft.PowerApps.CLI#releasenotes-body-tab)<br />
 [Microsoft Power Platform CLI Command Groups](reference/index.md)<br />
+[Troubleshoot Microsoft Power Platform CLI](troubleshooting.md)<br />
 [Power Apps component framework](/power-apps/developer/component-framework/overview)<br />
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
