@@ -9,6 +9,11 @@ ms.date: 02/23/2026
 ms.topic: overview
 ---
 
+<!-- In the description in line 3, saving millions of dollars? -->
+<!-- The DORA image contains what seems to be a name: Phua Wee Lik. Is that a real person? We shouldn't disclose someone's identity, at least not without a legal OK. --> 
+<!-- Unsure what "grounds" means in line 115. Is it like "gleans its information from"? -->
+<!-- Is it possible to add a quote from someone involved in this project? -->
+
 # Singapore Civil Defence Force implements digital solutions using Power Platform and Copilot Studio
 
 The Singapore Civil Defence Force (SCDF), operating under the Ministry of Home Affairs (MHA), consistently embraces innovation and technology to enhance its operational capabilities and ensure the safety of its personnel in fulfilling its mission of protecting lives and property.
@@ -25,7 +30,7 @@ To overcome these challenges, SCDF established a Digital Factory team with HTX i
 
 ## Solution
 
-SCDF is embarking on a digital transformation journey to raise the skill levels of its workforce through the development of applications and conversational agents. At the forefront of this initiative is **NEXA (Next Evolution Assistant)**, a Copilot Studio conversational agent that streamlines information retrieval from government websites and internal knowledge repositories. Before building NEXA, SCDF deployed the following apps:
+SCDF is embarking on a digital transformation journey to raise the skill levels of its workforce through the development of applications and conversational agents. At the forefront of this initiative is **NEXA (Next Evolution Assistant)**, a Microsoft Copilot Studio conversational agent that streamlines information retrieval from government websites and internal knowledge repositories. Before building NEXA, SCDF deployed the following apps:
 
 - **Automated Duty Assignment App (ADA)**: Streamlines firefighter duty rostering through automation, improving scheduling efficiency and reducing manual effort.
 
@@ -59,25 +64,25 @@ NEXA is a conversational agent built using Microsoft Copilot Studio to serve as 
 
 ### Automated Duty Assignment App (ADA)
 
-SCDF frontliners require specific competencies to operate various types of specialized equipment and fire appliances safely and effectively. The Automated Duty Assignment App (ADA) manages the complex task of firefighter rostering. This by intelligently assigning personnel to duties and fire appliances based on their individual skill set and driving licenses.
+SCDF frontliners require specific competencies to operate various types of specialized equipment and fire appliances safely and effectively. The Automated Duty Assignment App manages the complex task of firefighter rostering. The app accomplishes this by intelligently assigning personnel to duties and fire appliances based on their individual skill set and driving licenses.
 
-ADA automates the matching process by analyzing each firefighter's qualifications and aligning them with operational needs, ensuring optimal deployment of personnel. This approach enhances resource utilization while strengthening operational readiness and safety across fire stations.
+ADA automates the matching process by analyzing each firefighter's qualifications and aligning them with operational needs, ensuring optimal deployment of personnel. This approach enhances resource use while strengthening operational readiness and safety across fire stations.
 
 ### Food Indentation and Consumption App (FICA)
 
 The Civil Defence Academy (CDA) is SCDF’s training institution that serves over 3,000 meals daily to trainees, instructors, and staff during training programs, courses, and daily operations.
 
-The Food Indent and Consumption App (FICA) was introduced to modernize meal management operations, replacing an outdated system. FICA enables officers to indent and access meal data on the go, allowing the kitchen to respond dynamically to demand. This approach reduces food wastage, cuts operational costs, and supports accurate long-term analysis of meal consumption patterns.
+The Food Indentation and Consumption App was introduced to modernize meal management operations, replacing an outdated system. FICA enables officers to indent and access meal data on the go, allowing the kitchen to respond dynamically to demand. This approach reduces food wastage, cuts operational costs, and supports accurate long-term analysis of meal consumption patterns.
 
 ### Interactive Troubleshooting App (ITA)
 
-The Interactive Troubleshooting App (ITA) empowers officers to perform self-help vehicle maintenance through interactive, step-by-step troubleshooting guides. Officers can use the app to identify, troubleshoot, and resolve problems independently, reducing the need to contact vendors over minor issues.
+The Interactive Troubleshooting App empowers officers to perform self-help vehicle maintenance through interactive, step-by-step troubleshooting guides. Officers can use the app to identify, troubleshoot, and resolve problems independently, reducing the need to contact vendors over minor issues.
 
-By reducing resolution times, ITA ensures appliances return operational ready faster – critical for emergency response operations. The app's self-help capability is valuable when faults occur during firefighting or rescue operations, maintaining operational readiness across SCDF's fleet.
+By reducing resolution times, ITA ensures appliances return operationally ready faster—critical for emergency response operations. The app's self-help capability is valuable when faults occur during firefighting or rescue operations, maintaining operational readiness across SCDF's fleet.
 
 ### Duty Officer Rostering App (DORA)
 
-The Duty Officer Rostering App (DORA) addresses the challenge of regimental duty assignment for SCDF non-frontline personnel. Under the previous system, officers had to sign in to the intranet to search for available duty slots, frequently missing booking windows when occupied with work. This approach created inequitable duty allocation.
+The Duty Officer Rostering App addresses the challenge of regimental duty assignment for SCDF nonfrontline personnel. Under the previous system, officers had to sign in to the intranet to search for available duty slots, frequently missing booking windows when occupied with work. This approach created inequitable duty allocation.
 
 DORA centralizes duty roster information and automates the assignment process, ensuring fair and efficient allocation. The platform also enables officers to view and swap duties, providing flexibility and greater control over their regimental commitments.
 
@@ -87,7 +92,7 @@ In 2021, SCDF began its journey to digitize business administrative and operatio
 
 SCDF actively engaged its officers throughout this journey, ensuring they have the information and skills needed, whether operating on the ground or performing staff work in the office. A digital mindset is now seen as essential across all roles.
 
-To shape this future collaboratively, SCDF adopted agile development methodology and established the Digital Factory team in partnership with HTX. This initiative enabled frontline personnel to participate in the digitization effort and rapidly deliver enterprise applications. With technical expertise from HTX, the Digital Factory team successfully developed eight enterprise-level applications using Power Platform, benefiting over 3,000 users. Their journey began in 2023 with four apps built with Power Apps—ADA, FICA, ITA, and DORA—laying the foundation and building internal expertise.
+To shape this future collaboratively, SCDF adopted agile development methodology and established the Digital Factory team in partnership with HTX. This initiative enabled frontline personnel to participate in the digitization effort and rapidly deliver enterprise applications. With technical expertise from HTX, the Digital Factory team successfully developed eight enterprise-level applications using Power Platform, benefiting over 3,000 users. Their journey began in 2023 with the four apps built with Power Apps—ADA, FICA, ITA, and DORA—laying the foundation and building internal expertise.
 
 In 2024, SCDF expanded its app portfolio and began exploring AI. They experimented with Copilot Studio and developed the conversational agent NEXA to help users retrieve information from government websites.
 
@@ -103,13 +108,13 @@ The following image gives an overview of the technologies used.
 
 :::image type="content" source="media/scdf-implements-digital-solutions/architecture.png" alt-text="Diagram of SCDF digital workflow showing Copilot Studio, Power Apps, Power BI, SharePoint, Power Automate, Microsoft 365 Copilot, Dataverse, and knowledge sources integration." lightbox="media/scdf-implements-digital-solutions/architecture.png":::
 
-The workflow is as follows.
+The workflow is as follows:
 
 1. An SCDF officer starts a natural language conversation with NEXA.
 
 1. The agent grounds its information on public government websites.
 
-1. SCDF official documents are used as knowledge source as well.
+1. SCDF official documents are used as a knowledge source as well.
 
 1. The agent retrieves information from Dataverse, which Power Automate cloud flow populates with data from SharePoint. This approach enables equipment detection and interactive quiz generation and is used depending on the identified intent.
 
@@ -121,7 +126,7 @@ The workflow is as follows.
 
 ## Takeaways
 
-This case study describes SCDF’s approach to digital transformation, which includes the use of Copilot Studio and Power Platform among other technologies. Here are some key takeaways for IT professionals who are looking to implement a similar solution in their own organizations:
+This case study describes SCDF’s approach to digital transformation, which includes the use of Copilot Studio and Power Platform among other technologies. Here are key takeaways for IT professionals who are looking to implement a similar solution in their own organizations:
 
 - Build internal capabilities and upskill the workforce by establishing a center of excellence or digital factory team.
 
