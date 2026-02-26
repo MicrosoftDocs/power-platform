@@ -21,30 +21,30 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 
 |Command Group|Description|
 |---------|---------|
-|[pac admin](admin.md)|Work with your Power Platform Admin Account|
-|[pac application](application.md)|Commands for listing and installing available Dataverse applications from Microsoft Marketplace|
-|[pac auth](auth.md)|Manage how you authenticate to various services|
-|[pac canvas](canvas.md)|Operating with Power Apps .msapp files|
-|[pac catalog](catalog.md)|Commands for working with Catalog in Power Platform|
+|[pac admin](admin.md)|Work with your Power Platform Admin Account.|
+|[pac application](application.md)|Commands for listing and installing available Dataverse applications from Microsoft Marketplace.|
+|[pac auth](auth.md)|Manage how you authenticate to various services.|
+|[pac canvas](canvas.md)|Operating with Power Apps .msapp files.|
+|[pac catalog](catalog.md)|Commands for working with Catalog in Power Platform.|
 |[pac code](code.md)|(Preview) Commands to manage your Code apps.|
 |[pac connection](connection.md)|Commands for working with Dataverse connection.|
-|[pac connector](connector.md)|Commands for working with Power Platform Connectors|
-|[pac copilot](copilot.md)|Tools and utilities for copilot management|
+|[pac connector](connector.md)|Commands for working with Power Platform Connectors.|
+|[pac copilot](copilot.md)|Tools and utilities for copilot management.|
 |[pac data](data.md)|Import and export data from Dataverse.|
 |[pac env](env.md)|Work with your Dataverse organization.|
 |[pac help](help.md)|Show help for the Microsoft Power Platform CLI.|
-|[pac managed-identity](managed-identity.md)|Commands for managing Managed Identity records for Dataverse components|
+|[pac managed-identity](managed-identity.md)|Commands for managing Managed Identity records for Dataverse components.|
 |[pac model](model.md)|(Preview) Commands for working with model-driven apps.|
-|[pac modelbuilder](modelbuilder.md)|Code Generator for Dataverse APIs and Tables|
-|[pac package](package.md)|Commands for working with Dataverse package projects|
+|[pac modelbuilder](modelbuilder.md)|Code Generator for Dataverse APIs and Tables.|
+|[pac package](package.md)|Commands for working with Dataverse package projects.|
 |[pac pages](pages.md)|Commands for working with Power Pages website.|
-|[pac pcf](pcf.md)|Commands for working with Power Apps component framework projects|
-|[pac pipeline](pipeline.md)|Work with Pipelines|
-|[pac plugin](plugin.md)|Commands for working with Dataverse plug-in class library|
-|[pac power-fx](power-fx.md)|(Preview) Commands for working with Power Fx|
-|[pac solution](solution.md)|Commands for working with Dataverse solution projects|
+|[pac pcf](pcf.md)|Commands for working with Power Apps component framework projects.|
+|[pac pipeline](pipeline.md)|Work with Pipelines.|
+|[pac plugin](plugin.md)|Commands for working with Dataverse plug-in class library.|
+|[pac power-fx](power-fx.md)|(Preview) Commands for working with Power Fx.|
+|[pac solution](solution.md)|Commands for working with Dataverse solution projects.|
 |[pac telemetry](telemetry.md)|Manage telemetry settings.|
-|[pac test](test.md)|(Preview) Execution of automated tests for a Power App|
+|[pac test](test.md)|(Preview) Execution of automated tests for a Power App.|
 |[pac tool](tool.md)|Power Platform tools that can be installed and launched.|
 
 
