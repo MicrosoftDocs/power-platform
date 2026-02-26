@@ -1,6 +1,6 @@
 ---
 title: Move apps from the default environment (preview)
-description: The new recommendation in the Power Platform admin center helps administrators move apps from the default environment to designated Managed Environments to improve compliance, security. 
+description: The new recommendation in the Power Platform admin center helps administrators move apps from the default environment to designated Managed Environments to improve compliance and security. 
 author: sidhartg
 ms.component: pa-admin
 ms.topic: concept-article
