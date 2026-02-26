@@ -25,7 +25,7 @@ To overcome these challenges, SCDF established a Digital Factory team with HTX i
 
 ## Solution
 
-SCDF is embarking on a digital transformation journey to upskill its workforce through the development of applications and conversational agents. At the forefront of this initiative is **NEXA (Next Evolution Assistant)**, a Copilot Studio conversational agent that streamlines information retrieval from government websites and internal knowledge repositories. Before building NEXA, SCDF deployed the following apps:
+SCDF is embarking on a digital transformation journey to raise the skill levels of its workforce through the development of applications and conversational agents. At the forefront of this initiative is **NEXA (Next Evolution Assistant)**, a Copilot Studio conversational agent that streamlines information retrieval from government websites and internal knowledge repositories. Before building NEXA, SCDF deployed the following apps:
 
 - **Automated Duty Assignment App (ADA)**: Streamlines firefighter duty rostering through automation, improving scheduling efficiency and reducing manual effort.
 
@@ -43,11 +43,11 @@ Key benefits since the start of this journey:
 
   - DORA serves approximately 700 nonfrontline SCDF staff.
 
-  - FICA was successfully developed in three months by a one-man effort.
+  - FICA was successfully developed in three months by a one-person effort.
 
 - NEXA is successfully deployed to all 6,000 SCDF officers.
 
-- App development timelines are reduced from 2 to 3 years under conventional methods to just 1 to 3 months, through the Digital Factory.
+- App development timelines are reduced from 2 to 3 years under conventional methods to just 1 to 3 months through the Digital Factory.
 
 The following image shows the NEXA agent and the DORA app.
 
