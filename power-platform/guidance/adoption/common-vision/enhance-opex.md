@@ -19,7 +19,7 @@ This article describes a common goal for Power Platform—enhancing operational 
 
 ## Vision
 
-Enhancing operational efficiency is a common vision for Power Platform adoption because it directly impacts an organization’s ability to remain competitive and agile in a rapidly changing business environment. By streamlining processes, automating repetitive tasks, and optimizing resource allocation, Power Platform enables organizations to reduce costs, improve productivity, and accelerate time-to-market for new solutions. This focus on efficiency not only frees up valuable time for employees to engage in higher-value activities but also fosters a culture of continuous improvement and innovation. Enhancing operational efficiency through Power Platform helps organizations achieve their strategic goals, drive growth, and deliver better outcomes for their customers and stakeholders.
+Enhancing operational efficiency is a common vision for Power Platform adoption because it directly impacts an organization's ability to remain competitive and agile in a rapidly changing business environment. By streamlining processes, automating repetitive tasks, and optimizing resource allocation, Power Platform enables organizations to reduce costs, improve productivity, and accelerate time-to-market for new solutions. This focus on efficiency not only frees up valuable time for employees to engage in higher-value activities but also fosters a culture of continuous improvement and innovation. Enhancing operational efficiency through Power Platform helps organizations achieve their strategic goals, drive growth, and deliver better outcomes for their customers and stakeholders.
 
 ## Objectives
 
@@ -29,10 +29,10 @@ Typical objectives for enhancing operational efficiency include:
 
 - **Optimize business processes and align effective resourcing**: Streamline business processes and ensure resources are allocated effectively to maximize efficiency and productivity.
 - **Digitize manual processes and shift to value creation tasks**: Automate manual processes to free up time for employees to focus on higher-value tasks.
-- **Reduce time to market for Power Platform solutions**: Accelerate the development and deployment of Power Platform applications and automations.
+- **Reduce time to market for solutions**: Accelerate the development and deployment of Power Platform applications and automations.
 - **Reduce cost and effort to license, build, and deploy**: Minimize the costs and efforts associated with licensing, building, and deploying Power Platform solutions.
 - **Increase productivity for business and IT**: Enhance the productivity of both business and IT teams through effective use of Power Platform.
-- **Develop innovative solutions that increase productivity**: Create innovative solutions that enhance productivity and contribute to the organization’s financial performance.
+- **Develop innovative solutions that increase productivity**: Create innovative solutions that enhance productivity and contribute to the organization's financial performance.
 - **Break down silos, improve process efficiency, and achieve unification**: Foster cross-functional collaboration to eliminate silos, improve process efficiency, and achieve organizational unification.
 
 ## Measurable key results
@@ -50,7 +50,7 @@ Typical key results, aligned with some of the [objectives](#objectives), for enh
     - Reduce the number of IT hours per application by ___%. 
 - **Reduce cost and effort to license, build, and deploy**:
     - Solve bigger technical problems with measurable savings, targeting a cost reduction of ___%. 
-    - Reduce redundant licensing on other platforms by ___. 
+    - Reduce redundant licensing on other platforms by ___%. 
     - Achieve a reduction in running costs by ___%. 
 - **Increase productivity for business and IT**:
     - Increase productivity of IT team members, moving from idea to execution faster, with a target of ___% reduction in time to market. 
@@ -63,13 +63,13 @@ Typical key results, aligned with some of the [objectives](#objectives), for enh
 Typical initiatives, aligned with some of the [objectives](#objectives), for enhancing operational efficiency are:
 
 - **Optimize business processes and align effective resourcing**:
-    - [Develop return of investment (ROI) metrics](../business-value.md) and value monitoring capability. 
+    - [Develop return on investment (ROI) metrics](../business-value.md) and value monitoring capability. 
     - Define and [implement application lifecycle management (ALM)](../alm.md) processes to streamline and manage app deployments. 
     - [Establish foundational operating roles](../roles.md) to provide clarity on "who does what" to manage the platform. 
 - **Digitize manual processes and shift to value creation tasks**:
     - Identify and understand manual processes per team. 
     - Automate routine support activities and request processes (for example, environment request form). 
-    - Create a Maker Portal, for example [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site), with onboarding collateral, development guidelines, self-guided learning, and success stories. 
+    - Create a Maker Portal (for example, [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site)) with onboarding collateral, development guidelines, self-guided learning, and success stories. 
 - **Reduce time to market for Power Platform solutions**: 
     - Develop automation and alerting for key assurance controls. 
     - Implement a peer-review mechanism for popular citizen-developed apps. 
