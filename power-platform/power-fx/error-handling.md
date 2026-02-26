@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: how-to
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 02/25/2026
+ms.date: 02/26/2026
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
@@ -17,24 +17,24 @@ contributors:
 ---
 # Error handling
 
-The behavior described in this article is available only when the **Formula-level error management** feature is on.
+The behavior described in this article is available only when the **Formula-level error management** feature is turned on.
 
-Power Fx includes a feature that enables formula-level error handling. By default, this feature is turned on for all apps, but in older apps, app Settings might disable it. Don't disable this feature.
+Power Fx supports formula-level error handling. This feature is turned on by default for all new apps. However, some older apps might have it turned off in app **Settings**. We recommend keeping this feature turned on.
 
-1. You can check by opening a canvas app for editing.
-2. Go to **Settings** > **Updates** > **Retired** tab.
-3. Make sure Disable formula-level managent is turned off.
+1. Open the canvas app in edit mode.
+1. Go to **Settings** > **Updates** > **Retired** tab.
+1. Make sure **Disable formula-level management** is turned off.
 
-More information: [Controlling which features are enabled](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled)
+For more information, see [Controlling which features are enabled](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled).
 
 Errors happen. Networks go down, storage fills up, unexpected values flow in. It's important that your logic continues to work properly in the face of potential issues.
 
-By default, errors flow through the formulas of an app and are reported to the end user of the app. In this way, the end user knows something unexpected happened, they can potentially fix the problem themselves with a different input, or they can report the problem to the owner of the app.
+By default, errors flow through the formulas of an app and are reported to the end user of the app. In this way, the end user knows something unexpected happened. They can potentially fix the problem themselves with a different input, or they can report the problem to the owner of the app.
 
 As an app maker, you can take control of errors in your app:
 - **Detecting and handling an error.**  If there's a chance an error might occur, write the app's formulas to detect the error condition and retry the operation. The end user doesn't need to be concerned that an error occurred because the maker took the possibility into account. Capture the error by using the [**IfError**, **IsError**, and **IsErrorOrBlank**](reference/function-iferror.md) functions within a formula.
 - **Reporting an error.**  If an error isn't handled in the formula where you encountered it, the error bubbles up to the **App.OnError** handler. You can't replace the error because it already occurred and is a part of formula calculations. But you can use **App.OnError** to control how the error is reported to the end user, including suppressing the error reporting all together. **App.OnError** also provides a common choke point for error reporting across the entire app.
-- **Creating and rethrowing an error.**  Finally, you might detect an error condition with your own logic, a condition that is specific to your app. Use the [**Error**](reference/function-iferror.md) function to create custom errors. Use the **Error** function to rethrow an error after being interrogated in **IfError** or **App.OnError**.
+- **Creating and rethrowing an error.**  Finally, you might detect an error condition with your own logic, a condition that's specific to your app. Use the [**Error**](reference/function-iferror.md) function to create custom errors. Use the **Error** function to rethrow an error after being interrogated in **IfError** or **App.OnError**.
 
 ## Getting started
 
@@ -127,7 +127,7 @@ Most functions and operators follow the "error in, error out" rule, but there ar
 
 ## Observing errors
 
-Errors aren't observed until their value is used.
+Power Fx doesn't observe errors until the formula uses the error value.
 
 As a result, the **If** and **Select** functions might not return an error if one is passed in. Consider the formula `If( false, 1/0, 3 )`. There's a division by zero error present in this formula, but since the `If` function isn't taking that branch because of the `false` condition, Power Fx and Power Apps don't report an error:
 
@@ -145,7 +145,7 @@ You can observe errors within a formula by using the **IfError**, **IsError**, a
 
 ## Reporting errors
 
-After an error is observed, the next step is to report the error to the end user.
+After Power Fx observes an error, the next step is to report the error to the end user.
 
 Unlike Excel, there's not always a convenient place to show an error result, as the result of a formula might drive a property such as X and Y coordinates of a control for which there's no convenient place to show some text. Each Power Fx host controls how errors are ultimately displayed to the end user and how much control the maker has over this process. In Power Apps, an error banner is shown and **App.OnError** is used to control how the error is reported.
 
@@ -182,7 +182,7 @@ ForAll( [1,0,2,0,3], If( 1/Value > 0, Collect( Collection, Value ) ) );
 
 Since a behavior formula can execute more than one action, it can also encounter more than one error.
 
-By default, the first error is reported to the end user. In this example, both **Patch** calls fail, but the second call fails with a division by zero error. The user sees only the first error about index:
+By default, the app reports the first error to the end user. In this example, both **Patch** calls fail, but the second call fails with a division by zero error. The user sees only the first error about index:
 
 ![First index error displayed in an error banner, the second error is not reported](media/error-handling/pa-behavior-two-errors.png)
 
@@ -190,7 +190,7 @@ The **IfError** function and **App.OnError** can access all the errors encounter
 
 ![Capture of the errors into the global variable PatchErrors where we can see that both errors present](media/error-handling/pa-behavior-allerrors.png)
 
-Non-behavior formulas can also return multiple errors. For example, using the **Patch** function with a batch of records to update can return multiple errors, one for each record that fails.
+Nonbehavior formulas can also return multiple errors. For example, using the **Patch** function with a batch of records to update can return multiple errors, one for each record that fails.
 
 ## Errors in tables
 
@@ -226,13 +226,13 @@ The **Errors** function also returns information about past errors during runtim
 
 ## Rethrowing errors
 
-Sometimes you expect potential errors and can safely ignore them. Inside **IfError** and **App.OnError**, if an error is detected that should be passed on to the next higher handler, rethrow it by using `Error( AllErrors )`.
+Sometimes you expect potential errors and can safely ignore them. Inside **IfError** and **App.OnError**, if an error is detected that should be passed to the next higher handler, rethrow it by using `Error( AllErrors )`.
 
 ## Creating your own errors
 
 You can also create your own errors by using the **Error** function.
 
-If you create your own errors, use values above 1000 to avoid potential conflicts with future system error values.
+If you create your own errors, use values greater than 1,000 to avoid potential conflicts with future system error values.
 
 ## ErrorKind enum values
 
