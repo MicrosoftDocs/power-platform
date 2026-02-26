@@ -156,3 +156,4 @@ SCDF envisions a future where data, apps, and AI work seamlessly together, enabl
 - [What is Microsoft Dataverse?](/power-apps/maker/data-platform/data-platform-intro)
 - [What is Power Automate?](/power-automate/flow-types)
 - [What is Power BI?](/power-bi/fundamentals/power-bi-overview)
+
