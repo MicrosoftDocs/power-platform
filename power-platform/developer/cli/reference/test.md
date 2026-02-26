@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac test
 
-(Preview) Execution of automated tests for a Power App
+(Preview) Execution of automated tests for a Power App.
 
 [!INCLUDE [test-intro](includes/test-intro.md)]
 

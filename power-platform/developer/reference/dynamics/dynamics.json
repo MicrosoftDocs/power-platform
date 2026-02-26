@@ -1,0 +1,278 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API - dynamics",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
+    "version": "2022-03-01-preview"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/dynamics/environments/{environmentId}/finopsadminsettings": {
+      "get": {
+        "tags": [
+          "FinanceAndOperationsMaintenanceSettings"
+        ],
+        "summary": "Get Microsoft Dynamics 365 Finance & Operations maintenance settings.",
+        "description": "Retrieves the Microsoft Dynamics 365 Finance & Operations maintenance settings for an environment managed by Power Platform admin center.",
+        "operationId": "GetFinOpsMaintenanceSettings",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The unique identifier of the environment.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved Finance & Operations maintenance.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsAdminSettingsResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Forbidden.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "FinanceAndOperationsMaintenanceSettings"
+        ],
+        "summary": "Update Finance & Operations maintenance settings.",
+        "description": "Updates the Finance & Operation maintenance settings for an environment managed by Power Platform admin center.",
+        "operationId": "UpdateFinOpsMaintenanceSettings",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The unique identifier of the environment.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/UpdateFinOpsAdminSettingsRequestBody"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully updated Finance & Operations maintenance.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsAdminSettingsResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Forbidden.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "FinOpsDayOfWeek": {
+      "description": "Day of the week (aligned with .NET System.DayOfWeek enum).",
+      "enum": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "type": "string",
+      "example": "Monday"
+    },
+    "FinOpsUpdateCadence": {
+      "description": "Cadence for major version application updates.",
+      "enum": [
+        "EveryUpdate",
+        "EveryOtherUpdate",
+        "Regulated"
+      ],
+      "type": "string",
+      "example": "EveryUpdate"
+    },
+    "UpdateFinOpsAdminSettingsRequestBody": {
+      "description": "Request body for updating Finance & Operations maintenance.",
+      "type": "object",
+      "properties": {
+        "updatedMaintenanceWindowDaysOfWeek": {
+          "description": "The updated maintenance window days of the week.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FinOpsDayOfWeek"
+          },
+          "example": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+          ]
+        },
+        "updatedMaintenanceWindowCadence": {
+          "description": "The updated maintenance window cadence.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/FinOpsUpdateCadence"
+            }
+          ]
+        }
+      }
+    },
+    "FinOpsAdminSettingsResponse": {
+      "description": "Finance & Operations Maintenance response.",
+      "type": "object",
+      "properties": {
+        "maintenanceWindowDaysOfWeek": {
+          "description": "The preferred days of week for RunOne Updates.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FinOpsDayOfWeek"
+          },
+          "example": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+          ]
+        },
+        "maintenanceWindowCadence": {
+          "description": "The cadence for RunOne Updates (Every, Every Other, Regulated).",
+          "allOf": [
+            {
+              "$ref": "#/definitions/FinOpsUpdateCadence"
+            }
+          ]
+        }
+      }
+    },
+    "FinOpsErrorResponse": {
+      "description": "Standard error response.",
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "description": "Error code.",
+              "type": "string",
+              "example": "BadRequest"
+            },
+            "message": {
+              "description": "Error message.",
+              "type": "string",
+              "example": "The request was invalid"
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "scopes": {
+        ".default": ".default"
+      },
+      "description": "Microsoft Entra ID OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [
+        ".default"
+      ]
+    }
+  ]
+}

@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac catalog
 
-Commands for working with Catalog in Power Platform
+Commands for working with Catalog in Power Platform.
 
 [!INCLUDE [catalog-intro](includes/catalog-intro.md)]
 
