@@ -14,6 +14,8 @@ ms.custom:
 
 # Deployment configuration guide
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 The ALM Accelerator for Power Platform uses configuration files in JSON format to automate the deployment of your solutions. They set connection references, environment variables, and permissions, share canvas apps, and update ownership of solution components such as Power Automate flows when solutions are deployed to downstream environments.
 
 The configuration files in this article allow you to configure items that are specific to the environment to which a solution is being deployed. The configuration files you need, and thus the steps you need to follow in this article, depend on the components your solution pipelines deploy. For instance, if your solution contains only Dataverse tables and model-driven apps and no per-environment configuration or data is needed, you can skip some of these steps.

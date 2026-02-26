@@ -19,6 +19,8 @@ search.app:
 
 # Tenant deployment model
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../../includes/guidance-deprecate-alm-accelerator.md)]
+
 The ALM Accelerator for Power Platform can be deployed in a [single demo tenant](#demo-deployment-scenario), a [single enterprise tenant](#enterprise-deployment-scenario), or&mdash;with some manual configuration&mdash;[multiple enterprise tenants](#multi-tenant-deployment-scenario).
 
 ## Factors to consider

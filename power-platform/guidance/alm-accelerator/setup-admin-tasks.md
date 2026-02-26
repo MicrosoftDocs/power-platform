@@ -14,6 +14,8 @@ ms.custom:
 
 # Configure the ALM Accelerator using the admin app
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 You can configure the components of the ALM Accelerator for Power Platform either using its administration app or [manually](setup-components-manually.md). This article guides you through using the admin app and is structured in seven sections:
 
 - [**Prerequisites**](#prerequisites)

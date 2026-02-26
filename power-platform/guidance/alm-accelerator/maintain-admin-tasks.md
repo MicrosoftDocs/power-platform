@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Maintain ALM Accelerator projects
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 After you onboard a project to the ALM Accelerator, you need to perform certain tasks to maintain it. This article describes the maintenance tasks and Azure DevOps project configurations you need to perform for new solutions and projects.
 
 ## Onboard new users to Azure DevOps

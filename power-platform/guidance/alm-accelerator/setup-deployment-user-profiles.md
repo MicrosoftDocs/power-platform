@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Configure deployment profiles
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 Deployment profiles are linked to [deployment user settings](./setup-deployment-user-settings.md). The ALM Accelerator app uses deployment profiles to make decisions for deployment users about where and how to create branches and approvals when they deploy solutions. It also uses them to know how to connect to your Azure DevOps projects and repositories.
 
 ## Create deployment profiles using the ALM Accelerator app

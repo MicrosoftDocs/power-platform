@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Configure user permissions
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 Makers can use the ALM Accelerator app to increase their productivity when they're developing solutions in Power Platform. Before your makers can use the app, you need to set up their user accounts in Microsoft Dataverse and Azure DevOps.
 
 ## Dataverse user setup

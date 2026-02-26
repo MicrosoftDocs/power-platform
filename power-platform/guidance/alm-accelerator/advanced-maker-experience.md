@@ -15,6 +15,8 @@ ms.custom:
 
 # ALM Accelerator for Power Platform advanced maker experience
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 ## Demo: ALM accelerator advanced maker experience
 
 Watch the [demo video](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/WALKTHROUGHS.md#advanced-maker-experience-in-the-alm-accelerator-for-power-platform) to learn more about the advanced maker experience in the ALM Accelerator.

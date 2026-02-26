@@ -14,6 +14,8 @@ ms.custom:
 
 # Use the ALM Accelerator with Power Pages sites
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 Makers can use ALM Accelerator components to apply source control strategies with Azure DevOps, including fully automated builds and deployments, without needing intimate knowledge of downstream technologies or manual intervention by the maker, administrator, developer, or tester. You can switch quickly from developing to source-controlling solutions and, ultimately, push apps to other environments with as few interruptions to your work as possible.
 
 With the ALM Accelerator, you can source-control your Power Pages websites, transport them to downstream environments, and include them during solution commits.

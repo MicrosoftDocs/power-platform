@@ -19,6 +19,8 @@ search.app:
 
 # ALM adoption maturity model
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../../includes/guidance-deprecate-alm-accelerator.md)]
+
 Use the levels and capabilities in the [Power Platform adoption maturity model](../../adoption/maturity-model.md) to evaluate your organization's usage of application lifecycle management (ALM) and how the ALM Accelerator for Power Platform can help.
 
 ## Quick start

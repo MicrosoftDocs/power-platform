@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # What's in the kit?
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 The ALM Accelerator includes several tools and components that help you implement application lifecycle management (ALM) in your Power Platform environments.
 
 ## Azure Pipelines

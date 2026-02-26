@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Configure deployment user settings
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 You can customize the user experience in the ALM Accelerator for Power Platform by using deployment user settings to turn on or off some of the features in the UI. To help all makers use the app effectively, you can create separate experiences for users who are unfamiliar with application lifecycle management (ALM) and for those who are more experienced. User settings are linked to [deployment profiles](./setup-deployment-user-profiles.md).
 
 This section covers how to use the ALM Accelerator administration app to configure user settings. You don't need to do this manually, however. If a user doesn't have an experience assigned, the ALM Accelerator app automatically creates one when the user signs in. The default user setting enables all the app's functionality, including import, delete, and all advanced features.

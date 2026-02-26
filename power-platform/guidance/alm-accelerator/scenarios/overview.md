@@ -19,6 +19,8 @@ search.app:
 
 # Deployment scenarios
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../../includes/guidance-deprecate-alm-accelerator.md)]
+
 As you plan your ALM Accelerator for Power Platform deployment, one or more of the following scenarios might apply to you:
 
 - [Tenant deployments](./tenant-deployments.md) discusses Microsoft Entra configurations across demo, single Microsoft Entra ID, and multiple Microsoft Entra deployment models.

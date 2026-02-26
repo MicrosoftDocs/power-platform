@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Learn more about the ALM Accelerator
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 The ALM Accelerator for Power Platform includes a canvas app that sits on top of Azure Pipelines and Git source control. The app provides a simplified interface for makers to export their [Power Platform solutions](/power-platform/alm/solution-concepts-alm) to source control and have their work reviewed before deploying to target environments as part of an organization's application lifecycle management (ALM) strategy.
 
 The ALM Accelerator complements our [Power Platform ALM guidance](/power-platform/alm/overview-alm) and was originally developed to facilitate ALM for our own CoE Starter Kit team. We're sharing and open-sourcing it to help you apply ALM patterns and practices to your Power Platform solutions. You can use the ALM Accelerator as-is, customize it to meet your requirements, or as a reference implementation to see how we addressed ALM scenarios.

@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # ALM Accelerator for Power Platform new maker experience
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 ## Demo: The ALM Accelerator for Power Platform app new maker experience
 
 Watch the [demo video](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/WALKTHROUGHS.md#new-maker-experience-in-the-alm-accelerator-for-power-platform) to learn more about the new maker experience in the ALM Accelerator.

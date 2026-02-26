@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Configure the ALM Accelerator manually
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 You can configure the components of the ALM Accelerator for Power Platform either using the accompanying [administration app](setup-admin-tasks.md) or manually. This article guides you through configuring the app manually and is structured in seven sections:
 
 - [**Prerequisites**](#prerequisites)

@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # App registration considerations
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 The ALM Accelerator for Power Platform relies on Microsoft Entra app registrations to communicate with required services. This article discusses considerations you should keep in mind and approaches you can take when you design an app registration strategy for the ALM Accelerator.
 
 ## Required API permissions

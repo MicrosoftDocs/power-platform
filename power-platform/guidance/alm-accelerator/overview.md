@@ -14,6 +14,8 @@ contributors:
 
 # ALM Accelerator for Power Platform
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 The ALM Accelerator for Power Platform is a canvas app that provides a simplified interface to Azure Pipelines and Git source control for application lifecycle management (ALM). It's a reference implementation of ALM patterns and practices that uses built-in platform capabilities to help you get started with ALM in Power Platform. It's built using a combination of low-code maker- and administrator-focused canvas apps and Azure Pipelines YAML and PowerShell templates.
 
 With the ALM Accelerator for Power Platform app, makers can perform source control, enable version history, and deploy their solutions in Power Platform. To use the ALM Accelerator, all your Power Platform components&mdash;apps, flows, customizations, and so on&mdash;must be contained in a solution.

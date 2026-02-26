@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Configure pipeline sync
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 We periodically release updates of the ALM Accelerator pipeline templates. Use the pipeline sync template that's included with the ALM Accelerator to keep your pipeline templates up-to-date automatically.
 
 The pipeline sync template only updates the ALM Accelerator pipeline templates. [Upgrade the ALM Accelerator solution components](setup-upgrade-configuration.md) separately.

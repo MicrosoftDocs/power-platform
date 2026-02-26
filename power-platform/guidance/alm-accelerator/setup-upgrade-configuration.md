@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Upgrade the ALM Accelerator
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 We periodically release updates of the ALM Accelerator for Power Platform. When a new version of the solution is available, follow the steps in this article to upgrade it. Upgrade the pipeline templates separately using the [pipeline sync template](setup-pipeline-sync.md) that's included with the ALM Accelerator solution.
 
 Don't use these instructions to install the ALM Accelerator for the first time. Instead, follow one of these guides:

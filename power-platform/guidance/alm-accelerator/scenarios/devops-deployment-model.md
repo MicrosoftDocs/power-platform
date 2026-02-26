@@ -23,6 +23,8 @@ search.app:
 
 # Azure DevOps deployment model
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../../includes/guidance-deprecate-alm-accelerator.md)]
+
 The ALM Accelerator for Power Platform supports three Azure DevOps deployment models:
 
 - [**1:1**](#11-power-platform-to-azure-devops): A single Azure DevOps organization and a single ALM Accelerator project.

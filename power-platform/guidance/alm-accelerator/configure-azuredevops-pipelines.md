@@ -15,6 +15,8 @@ contributors:
 
 # Configure ALM Accelerator pipelines
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 Pipelines are the engines of the ALM Accelerator. They automate the ALM process for Power Platform. They're built using Azure Pipelines, a service of Azure DevOps, and stored in an Azure DevOps project.
 
 Four main pipelines are used to automate the ALM process:

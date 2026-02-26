@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Deployment settings for the ALM Accelerator
 
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
+
 The ALM Accelerator [export pipeline](/power-platform/guidance/coe/almaccelerator-pipelines) uses the deployment settings payload to customize the deployment pipelines for a particular solution and environment. The deployment settings payload is a JSON string that's passed to the export pipeline as a parameter.
 
 The following tables describe the deployment settings that are included in the payload for each deployment environment.
