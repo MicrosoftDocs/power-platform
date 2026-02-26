@@ -1,5 +1,5 @@
 ---
-title: Configure the ALM Accelerator using the admin app
+title: Configure the ALM Accelerator using the admin app (Deprecated)
 description: Learn how to configure the ALM Accelerator for Power Platform using the built-in administration app.
 ms.topic: how-to
 ms.date: 06/13/2024
@@ -12,7 +12,7 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# Configure the ALM Accelerator using the admin app
+# Configure the ALM Accelerator using the admin app (Deprecated)
 
 [!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 

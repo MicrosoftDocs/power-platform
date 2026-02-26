@@ -1,5 +1,5 @@
 ---
-title: Azure DevOps deployment model
+title: Azure DevOps deployment model (Deprecated)
 description: Learn about Azure DevOps deployment models for the ALM Accelerator for Power Platform.
 keywords: 
 author: Grant-Archibald-MS
@@ -21,7 +21,7 @@ search.app:
   - Powerplatform
 ---
 
-# Azure DevOps deployment model
+# Azure DevOps deployment model (Deprecated)
 
 [!INCLUDE [guidance-deprecate-alm-accelerator](../../../includes/guidance-deprecate-alm-accelerator.md)]
 

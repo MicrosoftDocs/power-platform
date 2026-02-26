@@ -1,5 +1,5 @@
 ---
-title: Configure deployment user settings
+title: Configure deployment user settings (Deprecated)
 description: Learn how to use deployment user settings to create a tailored experience for your makers in the ALM Accelerator for Power Platform app.
 ms.topic: how-to
 ms.date: 09/02/2025
@@ -10,7 +10,7 @@ ms.reviewer: sericks
 ms.custom: bap-template
 ---
 
-# Configure deployment user settings
+# Configure deployment user settings (Deprecated)
 
 [!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 

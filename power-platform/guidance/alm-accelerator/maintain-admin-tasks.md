@@ -1,5 +1,5 @@
 ---
-title: Maintain ALM Accelerator projects
+title: Maintain ALM Accelerator projects (Deprecated)
 description: Learn how to perform maintenance tasks and Azure DevOps project configurations in the ALM Accelerator for Power Platform.
 ms.topic: how-to
 ms.date: 08/18/2025
@@ -10,7 +10,7 @@ ms.reviewer: jhaskett-msft
 ms.custom: bap-template
 ---
 
-# Maintain ALM Accelerator projects
+# Maintain ALM Accelerator projects (Deprecated)
 
 [!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 

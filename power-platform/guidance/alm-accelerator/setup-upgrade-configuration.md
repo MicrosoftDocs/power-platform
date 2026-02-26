@@ -1,5 +1,5 @@
 ---
-title: Upgrade the ALM Accelerator
+title: Upgrade the ALM Accelerator (Deprecated)
 description: Learn how to install new releases of the ALM Accelerator for Power Platform.
 ms.topic: upgrade-and-migration-article
 ms.date: 04/13/2023
@@ -10,7 +10,7 @@ ms.reviewer: sericks
 ms.custom: bap-template
 ---
 
-# Upgrade the ALM Accelerator
+# Upgrade the ALM Accelerator (Deprecated)
 
 [!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 

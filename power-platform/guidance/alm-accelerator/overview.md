@@ -1,5 +1,5 @@
 ---
-title: ALM Accelerator for Power Platform
+title: ALM Accelerator for Power Platform (Deprecated)
 description: Learn how the ALM Accelerator for Power Platform helps you to follow ALM practices and enables you to establish source control for your solutions and move them from your development environment to test and production environments using Azure DevOps.
 ms.topic: concept-article
 ms.date: 04/09/2024
@@ -12,7 +12,7 @@ contributors:
 - mikefactorial
 ---
 
-# ALM Accelerator for Power Platform
+# ALM Accelerator for Power Platform (Deprecated)
 
 [!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 

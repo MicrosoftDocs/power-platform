@@ -1,5 +1,5 @@
 ---
-title: ALM maturity model
+title: ALM maturity model (Deprecated)
 description: Learn how to apply the Power Platform adoption maturity model to evaluate ALM usage and how the ALM Accelerator can help.
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# ALM adoption maturity model
+# ALM adoption maturity model (Deprecated)
 
 [!INCLUDE [guidance-deprecate-alm-accelerator](../../../includes/guidance-deprecate-alm-accelerator.md)]
 

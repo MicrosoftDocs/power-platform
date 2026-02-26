@@ -1,5 +1,5 @@
 ---
-title: Deployment settings for the ALM Accelerator
+title: Deployment settings for the ALM Accelerator (Deprecated)
 description: Learn about the settings you can change to customize deployment pipelines with the ALM Accelerator for Power Platform.
 ms.topic: concept-article
 ms.date: 05/22/2023
@@ -10,7 +10,7 @@ ms.reviewer: sericks
 ms.custom: bap-template
 ---
 
-# Deployment settings for the ALM Accelerator
+# Deployment settings for the ALM Accelerator (Deprecated)
 
 [!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 

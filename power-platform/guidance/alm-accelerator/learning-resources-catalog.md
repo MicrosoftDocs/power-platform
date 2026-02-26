@@ -1,5 +1,5 @@
 ---
-title: Learn more about the ALM Accelerator
+title: Learn more about the ALM Accelerator (Deprecated)
 description: Learn about the resources available to help you become familiar with the ALM Accelerator for Power Platform.
 ms.topic: concept-article
 ms.date: 07/29/2025
@@ -10,7 +10,7 @@ ms.reviewer: jhaskett-msft
 ms.custom: bap-template
 ---
 
-# Learn more about the ALM Accelerator
+# Learn more about the ALM Accelerator (Deprecated)
 
 [!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Customize deployment pipelines with templates
+title: Customize deployment pipelines with templates (Deprecated)
 description: Learn how to use your own templates in ALM Accelerator to customize Azure Pipelines for deployments to Power Platform environments.
 ms.component: pa-admin
 ms.topic: how-to
@@ -11,7 +11,7 @@ ms.reviewer: sericks
 ms.custom: bap-template
 ---
 
-# Customize deployment pipelines with templates
+# Customize deployment pipelines with templates (Deprecated)
 
 [!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 

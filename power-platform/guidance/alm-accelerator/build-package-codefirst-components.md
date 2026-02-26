@@ -1,5 +1,5 @@
 ---
-title: Build and package code-first components
+title: Build and package code-first components (Deprecated)
 description: Learn how to use the ALM Accelerator for Power Platform to source control your code-first components, build and run unit test cases, and transport them to downstream environments.
 ms.component: pa-admin
 ms.topic: how-to
@@ -11,7 +11,7 @@ ms.reviewer: sericks
 ms.custom: bap-template
 ---
 
-# Build and package code-first components
+# Build and package code-first components (Deprecated)
 
 [!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 

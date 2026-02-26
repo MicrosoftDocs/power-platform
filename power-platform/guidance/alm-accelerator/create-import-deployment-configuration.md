@@ -1,5 +1,5 @@
 ---
-title: Create an import deployment configuration
+title: Create an import deployment configuration (Deprecated)
 description: Learn how to create a deployment configuration file that contains connection information, environment variables, and other settings that are used to configure a solution that's imported from source control in ALM Accelerator for Power Platform.
 ms.topic: how-to
 ms.date: 05/22/2023

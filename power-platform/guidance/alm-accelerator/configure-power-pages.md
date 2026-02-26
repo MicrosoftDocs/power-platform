@@ -1,5 +1,5 @@
 ---
-title: Use the ALM Accelerator with Power Pages sites
+title: Use the ALM Accelerator with Power Pages sites (Deprecated)
 description: Learn how to use the ALM Accelerator for Power Platform to apply source-control strategies and automate builds and deployment for your Power Pages sites. 
 ms.topic: how-to
 ms.date: 08/18/2025
@@ -12,7 +12,7 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# Use the ALM Accelerator with Power Pages sites
+# Use the ALM Accelerator with Power Pages sites (Deprecated)
 
 [!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: App registration considerations
+title: App registration considerations (Deprecated)
 description: Learn about considerations to keep in mind and approaches you can take when you're designing app registrations for the ALM Accelerator for Power Platform.
 ms.topic: concept-article
 ms.date: 04/12/2023
@@ -10,7 +10,7 @@ ms.reviewer: sericks
 ms.custom: bap-template
 ---
 
-# App registration considerations
+# App registration considerations (Deprecated)
 
 [!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 
