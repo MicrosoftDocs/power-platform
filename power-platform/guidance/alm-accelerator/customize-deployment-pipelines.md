@@ -1,5 +1,5 @@
 ---
-title: Customize deployment pipelines with templates
+title: Customize deployment pipelines with templates (Deprecated)
 description: Learn how to use your own templates in ALM Accelerator to customize Azure Pipelines for deployments to Power Platform environments.
 ms.component: pa-admin
 ms.topic: how-to
@@ -11,7 +11,9 @@ ms.reviewer: sericks
 ms.custom: bap-template
 ---
 
-# Customize deployment pipelines with templates
+# Customize deployment pipelines with templates (Deprecated)
+
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 
 The ALM Accelerator includes out-of-the-box pipelines for deploying to environments based on a [default environment and branching strategy](branching-environment-strategy.md). You can easily customize the ALM Accelerator pipelines using a "bring your own template" (BYOT) approach. BYOT allows you to control what triggers a deployment based on your branching strategy. BYOT also allows you to create pipelines for environments other than the default validation, test, and production environments.
 
