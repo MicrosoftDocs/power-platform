@@ -24,13 +24,13 @@ In this case study, you learn how:
 
 Athlete management processes are typically fragmented, manual, and difficult to scale. Teams rely on disconnected spreadsheets, paper-based evaluations, and inconsistent data entry, leading to unreliable insights and insecure data storage.
 
-Many SaaS-based athlete management solutions attempt to address these challenges, but they typically store the sports teams’ data on shared software systems, offer limited customization, and can’t be tailored to the unique needs of each organization.
+Many software as a service (SaaS)-based athlete management solutions attempt to address these challenges, but they typically store the sports teams’ data on shared software systems, offer limited customization, and can’t be tailored to the unique needs of each organization.
 
-Action Apps aimed to provide a solution where sports organizations can own their data and store it in a secure and customizable software solution. Their goal was to offer a unified platform that adapts to the evolving needs of a modern sports organization - combining flexibility, data integrity, and enterprise-grade security.
+Action Apps aimed to provide a solution where sports organizations can own their data and store it in a secure and customizable software solution. Their goal was to offer a unified platform that adapts to the evolving needs of a modern sports organization—combining flexibility, data integrity, and enterprise-grade security.
 
 ## Solution
 
-Action Apps uses a suite of Microsoft technologies to build smart and secure solutions. By using Power Apps, Azure, and Microsoft 365, they built an Athlete Management System (AMS). The AMS consists of three main modules that centralize analytics and insights based on athlete performance and health data. An operational layer supports day-to-day operations, and an AI agent, called AAVA, lets users ask questions in natural language and get instant answers.
+Action Apps uses a suite of Microsoft technologies to build smart and secure solutions. By using Power Apps, Azure, and Microsoft 365, they built an athlete management system (AMS). The AMS consists of three main modules that centralize analytics and insights based on athlete performance and health data. An operational layer supports day-to-day operations, and an AI agent, called AAVA, lets users ask questions in natural language and get instant answers.
 
 > The Action Apps AMS transformed the way we worked with our data. The data platform allowed us to ingest data in an instant and gave us amazing interactivity with the data visualizations in Power BI. This allowed us to measure session and game performance faster and helped us make better and more informed decisions.
 >
@@ -39,6 +39,9 @@ Action Apps uses a suite of Microsoft technologies to build smart and secure sol
 ### Athlete Management System (AMS)
 
 A model-driven app serves as a central hub for AMS. The **Sports Science** module provides centralized management of athlete data, covering injury tracking, event planning, and player information. It ensures data quality through structured workflows and consistent standards, delivering reliable insights that teams can act on.
+
+
+
 
 Key capabilities include:
 
