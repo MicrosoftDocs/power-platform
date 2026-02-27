@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 02/02/2026
+ms.date: 02/24/2026
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -24,6 +24,33 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Deprecation of Editable Grid and Power Apps Read-Only Grid controls
+
+Effective March 2026, the Editable Grid control and the Power Apps Read-Only Grid control are deprecated in model-driven apps. These controls will continue to function until further notice, after which they are no longer supported. These controls will receive critical security fixes only and no new features.
+
+### Why is this needed?
+
+We are streamlining the grid experience in Power Apps to provide a modern, unified solution. The [Power Apps grid control](/power-apps/maker/model-driven-apps/the-power-apps-grid-control) is the next evolution of grid control, built from the ground up with modern design standards, accessibility compliance, and comprehensive functionality.
+
+- **Editable Grid**: Based on older architecture that does not align with current Microsoft accessibility standards and has limited extensibility.
+- **Power Apps Read-Only Grid**: An interim solution that is no longer necessary, as the Power Apps grid control supports both read-only and editable capabilities in a single control.
+
+### Impact
+
+Makers who have configured apps to use the Editable Grid or Power Apps Read-Only Grid controls need to transition to the Power Apps grid control. Existing implementations will continue to work but only receive critical security fixes and no new features.
+
+### Replacement feature
+
+The [Power Apps grid control](/power-apps/maker/model-driven-apps/the-power-apps-grid-control) is the recommended solution for all grid scenarios in model-driven apps. This modern control offers extensive capabilities including inline editing, infinite scrolling, nested grids, grouping, aggregation, enhanced filtering and sorting, and [many configurable properties](/power-apps/maker/model-driven-apps/the-power-apps-grid-control#configure-the-power-apps-grid-control) to customize the experience for your needs.
+
+### Action required
+
+To ensure a smooth transition:
+
+1. **Identify affected apps**: Review your model-driven apps to identify views and subgrids using the deprecated controls.
+2. **Transition to Power Apps grid control**: [Add the control](/power-apps/maker/model-driven-apps/the-power-apps-grid-control#add-the-power-apps-grid-control-using-form-designer) to your forms, views, and subgrids.
+3. **Configure and test**: Customize the [control properties](/power-apps/maker/model-driven-apps/the-power-apps-grid-control#configure-the-power-apps-grid-control) and validate the experience before publishing.
 
 ## Removal of before-and-after field change values in audit events sent to Microsoft Purview
 Starting in May 2026, Dataverse will no longer include before-and-after field change values in the audit events that are sent to Microsoft Purview. Audit events will continue to flow to Purview; however, the detailed field-level value changes will be excluded.
