@@ -1,6 +1,6 @@
 ---
 title: Singapore Civil Defence Force implements digital solutions using Power Platform and Copilot Studio
-description: Learn how SCDF transformed manual processes into automated solutions, saving millions and empowering 6,000 officers with innovative apps and AI tools.
+description: Learn how SCDF transformed manual processes into automated solutions, saving millions of dollars and empowering 6,000 officers with innovative apps and AI tools.
 #customer intent: As a Power Platform user, I want to learn how SCDF empowers its officers with apps and agents so that I can get inspiration for building apps and agents for my organization.
 author: carcla
 ms.author: v-caclaesson
@@ -8,11 +8,6 @@ ms.reviewer: v-caclaesson
 ms.date: 02/23/2026
 ms.topic: overview
 ---
-
-<!-- In the description in line 3, saving millions of dollars? -->
-<!-- The DORA image contains what seems to be a name: Phua Wee Lik. Is that a real person? We shouldn't disclose someone's identity, at least not without a legal OK. --> 
-<!-- Unsure what "grounds" means in line 115. Is it like "gleans its information from"? -->
-<!-- Is it possible to add a quote from someone involved in this project? -->
 
 # Singapore Civil Defence Force implements digital solutions using Power Platform and Copilot Studio
 
@@ -56,7 +51,7 @@ Key benefits since the start of this journey:
 
 The following image shows the NEXA agent and the DORA app.
 
-:::image type="content" source="media/scdf-implements-digital-solutions/nexa-agent-dora-app.jpg" alt-text="Screenshot of NEXA chat interface with Ask Question, Take Quiz, and Identify Object buttons, and DORA duty calendar showing upcoming duty dates." lightbox="media/scdf-implements-digital-solutions/nexa-agent-dora-app.jpg":::
+:::image type="content" source="media/scdf-implements-digital-solutions/nexa-agent-dora-app.png" alt-text="Screenshot of NEXA chat interface with Ask Question, Take Quiz, and Identify Object buttons, and DORA duty calendar showing upcoming duty dates." lightbox="media/scdf-implements-digital-solutions/nexa-agent-dora-app.png":::
 
 ### Next Evolution Assistant (NEXA)
 
@@ -106,13 +101,13 @@ The Copilot Studio agent NEXA uses official government websites, uploaded docume
 
 The following image gives an overview of the technologies used.
 
-:::image type="content" source="media/scdf-implements-digital-solutions/architecture.png" alt-text="Diagram of SCDF digital workflow showing Copilot Studio, Power Apps, Power BI, SharePoint, Power Automate, Microsoft 365 Copilot, Dataverse, and knowledge sources integration." lightbox="media/scdf-implements-digital-solutions/architecture.png":::
+:::image type="content" source="media/scdf-implements-digital-solutions/architecture.svg" alt-text="Diagram of SCDF digital workflow showing Copilot Studio, Power Apps, Power BI, SharePoint, Power Automate, Microsoft 365 Copilot, Dataverse, and knowledge sources integration." lightbox="media/scdf-implements-digital-solutions/architecture.svg":::
 
 The workflow is as follows:
 
 1. An SCDF officer starts a natural language conversation with NEXA.
 
-1. The agent grounds its information on public government websites.
+1. The agent bases its information on public government websites.
 
 1. SCDF official documents are used as a knowledge source as well.
 
