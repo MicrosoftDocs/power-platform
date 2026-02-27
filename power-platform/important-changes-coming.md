@@ -1073,3 +1073,4 @@ See [Important changes coming in Power Pages](/power-pages/important-changes-dep
 [Removed or deprecated features in Finance and Operations apps](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page)<br/>
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
+
