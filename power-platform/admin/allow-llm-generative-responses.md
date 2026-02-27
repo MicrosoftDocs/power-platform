@@ -4,7 +4,7 @@ description: Learn how to allow external language models for generative response
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/19/2026
+ms.date: 02/27/2026
 author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
