@@ -35,7 +35,7 @@ To configure these rules:
 1. The sharing rules are located in the **Manage sharing** section.
 1. Choose the desired settings, then select **Save** to apply the changes.
 
-:::image type="content" source="media/managed-environment-limit-sharing.png" alt-text="Screenshot of an Edit Environment Management settings screen, with Limit sharing highlighted.":::
+:::image type="content" source="media/managed-environments-sharing-limit.png" alt-text="Screenshot of an Edit Environment Management settings screen, with Limit sharing highlighted.":::
 
 ## Canvas app sharing rules
 
