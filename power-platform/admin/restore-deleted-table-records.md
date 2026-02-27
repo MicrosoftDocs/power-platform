@@ -34,8 +34,8 @@ Developers should read [Restore deleted records with code (preview)](/power-apps
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - This feature is currently being deployed and might not yet be available in your region.
-> - During **preview**, storage from deleted records is not counted toward your organization’s capacity. Starting **GA**, this storage will be counted toward your organization’s database capacity.
-> - The deleted records feature **isn't available** for [Dataverse for Teams](about-teams-environment.md), trial environments, developer environments or default environments.
+> - During **preview**, storage from deleted records isn't counted toward your organization’s capacity. Starting **GA**, this storage is counted toward your organization’s database capacity.
+> - The deleted records feature **isn't available** for [Dataverse for Teams](about-teams-environment.md), trial environments, developer environments, or default environments.
 
 ## Prerequisites
 
@@ -58,7 +58,7 @@ To restore deleted Dataverse records, turn on the **Keep deleted Dataverse recor
 
 You can proactively manage the storage used by deleted records. At any time, you can free up this storage by selecting the **Delete all records** option, which permanently removes all deleted items currently consuming storage.
 
-Viewing and acting on the deleted records is only available for System Administrators during the preview.
+Viewing and acting on the deleted records are only available for System Administrators during the preview.
 
 ### Power Platform admin center
 
@@ -104,7 +104,7 @@ Deleted records might not appear when the  feature is turned on. Verify that the
 
 If the **Status Reason** isn't **Succeeded** and it has been at least 30 minutes since enabling the feature, or despite the success state appearing correct, and you're not seeing the **Restore** option for deleted records, contact a [Microsoft support representative and create a support request](get-help-support.md).
 
-Deleted records only appear after deleted records feature is turned on and for records deleted after enabling the feature. You cannot restore records deleted before deleted records feature was enabled.
+Deleted records only appear after deleted records feature is turned on and for records deleted after enabling the feature. You can't restore records deleted before deleted records feature was enabled.
 
 ### Records deleted through cascading behaviors aren't present in Deleted Records view
 
@@ -114,7 +114,7 @@ For more information about cascading behavior, go to [Configure table relationsh
 
 ## Tables not supported
 
-When the deleted records feature is generally available, it will be enabled for most tables.
+When the deleted records feature is generally available, it is enabled for most tables.
 
 Some tables won't support restoring deleted records. These tables include:
 
