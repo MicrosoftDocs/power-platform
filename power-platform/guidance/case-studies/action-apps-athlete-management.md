@@ -82,7 +82,7 @@ A fourth pillar of the solution is the **operational layer achieved using seamle
 
 **The management layer** of the AMS solution helps Action Apps achieve their unique goals for their application ecosystem:
 
-- **Own your own data**: Organizations manage their data directly within their Microsoft environment using familiar tools. This include Microsoft 365 applications, such as SharePoint, Outlook, Teams, Forms, Word, Excel, and PowerPoint, Power Platform, Dataverse, and Azure services.
+- **Own your own data**: Organizations manage their data directly within their Microsoft environment using familiar tools. This includes Microsoft 365 applications, such as SharePoint, Outlook, Teams, Forms, Word, Excel, and PowerPoint, Power Platform, Dataverse, and Azure services.
 
   - All apps and data reside in the customers’ secure Microsoft environment.
 
@@ -142,7 +142,7 @@ The AMS architecture is designed to unify data from multiple sources while maint
 
 - End users can upload spreadsheets and Comma‑Separated Values (CSV) files, and Data Factory ingests the data.
 
-- Users primarily use tools they're already familiar with - SharePoint, Outlook, Teams, and Forms, integrated directly in the AMS system. It also connects to OneDrive, Office 365 Groups, Word, and Excel. Action Apps uses the applications that customers already use, such as:
+- Users primarily use tools they're already familiar with - SharePoint, Outlook, Teams, and Forms, integrated directly into the AMS system. It also connects to OneDrive, Office 365 Groups, Word, and Excel. Action Apps uses the applications that customers already use, such as:
 
   - Scheduling is done by using Outlook Calendars.
 
