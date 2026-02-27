@@ -60,8 +60,6 @@ To configure these rules:
 | Only share with individuals (no security groups) | If this setting is selected, owners and editors can only share with individuals as viewers. They can't share with a security group. This control doesn't affect an owner's or editor's ability to share with individuals as editors. |
 | Limit number of viewers who can access each agent | If **Only share with individuals (no security groups)** is selected, you can control the maximum number of viewers with whom an agent can be shared with. |
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
-
 To learn more about **Editor** and **Viewer** permissions on agents, go to [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance).
 
 > [!NOTE]
