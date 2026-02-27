@@ -52,13 +52,13 @@ To restore deleted Dataverse records, turn on the **Keep deleted Dataverse recor
 1. Allow 30 minutes for the system to configure the deleted records feature.
 
 > [!NOTE]
-> Only records deleted after the feature has been turned on can be restored.
+> You can only restore records deleted after the feature is turned on.
 
 ## View and restore the deleted records in Power Apps
 
 You can proactively manage the storage used by deleted records. At any time, you can free up this storage by selecting the **Delete all records** option, which permanently removes all deleted items currently consuming storage.
 
-Viewing and acting on the deleted records are only available for System Administrators during the preview.
+Only System Administrators can view and act on the deleted records during the preview.
 
 ### Power Platform admin center
 
@@ -67,7 +67,7 @@ To restore deleted records from the admin center, sign in to the [Power Platform
 1. Select **Manage**.
 1. Select **Environments** and open the environment you want to view and restore deleted records.
 1. Go to **Settings** > **Data management** > **Deleted Records**.
-1. You can view all the deleted records from all tables.
+1. View all the deleted records from all tables.
 1. Select one or more records you wish to restore, and then select **Restore** on the command bar.
 1. Select **OK** to confirm the action to restore.
 
@@ -78,59 +78,59 @@ To restore deleted records from the Power Platform Environment Settings app:
 1. Sign in to the Power Platform environment as a user with the system administrator security role.
 1. Select the **Power Platform Environment Settings** app, or select **Settings** > **Advanced Settings**.
 1. Go to **System** > **Data management** > **Deleted Records**.
-1. You can view all the deleted records from all tables.
+1. View all the deleted records from all tables.
 1. Select one or more records to restore, and then select **Restore** on the command bar.
 1. Select **OK** to confirm the restoration.
 
 ## Limitations
 
-### Deleted records is only supported for delete operations
+### Deleted records feature only supports delete operations
 
 The deleted records feature only supports delete operations, not updates.
 
-### Restore operation is for records
+### Restore operation only supports records
 
-The restore operation is only for records. It doesn't support recovering organizations or tables.
+The restore operation only supports records. It doesn't support recovering organizations or tables.
 
 ### Some records aren't restored
 
 Some organizations add custom business logic that deletes records related to a record that is deleted. To restore related records deleted by custom business logic, you need to apply the opposite logic on the `Restore` operation to recover the records when you restore the original record that was deleted.
 
-Records deleted via the table relationship cascade behavior process can be restored. For more information about cascade behavior, go to [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
+You can restore records deleted through the table relationship cascade behavior process. For more information about cascade behavior, see [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
 
-### Deleted records aren't shown after turning on the deleted records feature
+### Deleted records don't show after turning on the deleted records feature
 
 Deleted records might not appear when the  feature is turned on. Verify that the **Enable RecycleBin for Organization** system job is turned on. Go to the Power Platform admin center, select the environment where this issue is happening, and select **Settings** > **Audit and logs** > **System jobs**. On the **System Jobs** page, search for **Enable RecycleBin**. Confirm that the **Status Reason** is **Succeeded**.
 
-If the **Status Reason** isn't **Succeeded** and it has been at least 30 minutes since enabling the feature, or despite the success state appearing correct, and you're not seeing the **Restore** option for deleted records, contact a [Microsoft support representative and create a support request](get-help-support.md).
+If the **Status Reason** isn't **Succeeded** and it's been at least 30 minutes since you enabled the feature, or despite the success state appearing correct, and you're not seeing the **Restore** option for deleted records, contact a [Microsoft support representative and create a support request](get-help-support.md).
 
-Deleted records only appear after deleted records feature is turned on and for records deleted after enabling the feature. You can't restore records deleted before deleted records feature was enabled.
+Deleted records only appear after you turn on the deleted records feature and for records deleted after enabling the feature. You can't restore records deleted before the deleted records feature was enabled.
 
 ### Records deleted through cascading behaviors aren't present in Deleted Records view
 
 Records deleted through automated, cascading behaviors can't be restored independently. You need to restore these records in the order in which they were deleted. The original record that was deleted must be restored before any related records that were deleted through automated cascading behaviors.
 
-For more information about cascading behavior, go to [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
+For more information about cascading behavior, see [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
 
 ## Tables not supported
 
 When the deleted records feature is generally available, it is enabled for most tables.
 
-Some tables won't support restoring deleted records. These tables include:
+Some tables don't support restoring deleted records. These tables include:
 
 - [Virtual tables](/power-apps/maker/data-platform/create-edit-virtual-entities)
 - Tables that store [solution components](../alm/solution-concepts-alm.md#solution-components)
 - [Elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables)
 
-During the preview, some tables with large numbers of columns aren't currently supported. Currently, the maximum number of columns is 400. This value might go higher or lower as we determine the correct threshold.
+During the preview, some tables with large numbers of columns aren't currently supported. Currently, the maximum number of columns is 400. This value might go higher or lower as Microsoft determines the correct threshold.
 
 Developers can run a [query that returns which tables are enabled for deleted records feature](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-are-enabled-for-recycle-bin) in your environment.
 
-### Tables not currently supported for the deleted records feature
+### Tables that the deleted records feature doesn't support
 
-These tables are returned from the query to [detect which tables don't have deleted records feature enabled](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-dont-have-recycle-bin-enabled) an uncustomized Dataverse environment as of August 2024.
+As of August 2024, the query to [detect which tables don't have deleted records feature enabled](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-dont-have-recycle-bin-enabled) returns these tables in an uncustomized Dataverse environment.
 
-Your environment might have different results. Tables customized by adding large numbers of columns might not be supported.
+Your environment might return different results. Tables might not be supported if you customize them by adding a large number of columns.
 
 :::row:::
    :::column:::
