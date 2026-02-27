@@ -18,6 +18,7 @@ contributors:
 
 
 ---
+
 # Configure Dataverse search for your environment
 
 Dataverse search delivers fast and comprehensive search results across multiple tables in a single list, sorted by [relevance](/azure/search/index-similarity-and-scoring). It gives you an easy and well-informed search experience in model-driven apps. As an administrator with environment-level permissions, you can go to the [Power Platform admin center](/power-platform/admin/new-admin-center) to configure Dataverse search for all the model-driven apps within a specific environment. Use Quick Find views to manage global, quick find, and lookup search behavior.
@@ -32,7 +33,7 @@ Dataverse search delivers fast and comprehensive search results across multiple 
   	
 - **Smart fuzzy search**: Handles variations in spelling and terminology so that it doesn't depend on exact keyword matches.
     
-- **Security and compliance**: Respects Dataverse security roles and permissions. Users can only see search results for records that they have access to.
+- **Security and compliance**: Respects Dataverse security roles and permissions. Users can only view search results for records that they have access to.
   	
 - **Scalability and performance**: Optimized for large datasets and supports multiple data types, such as choice and lookups.
 
@@ -57,7 +58,7 @@ Dataverse search delivers fast and comprehensive search results across multiple 
 
 Dataverse search is an opt-out feature. It's set to **On** for all new production environments and **Default** for all other [environment types](/power-platform/admin/environments-overview#environment-types). Use Dataverse search so users have a search experience in model-driven apps and harness the power of Copilot experiences.
 
-You can find this setting in the Power Platform admin center. For more information, see [Search](settings-features.md#search).
+You can find this setting in the Power Platform admin center. For more information, refer to [Search](settings-features.md#search).
 
 :::image type="content" source="media/dataverse-search.png" alt-text="Dataverse search settings in Power Platform admin center." lightbox="media/dataverse-search.png":::
 
@@ -75,7 +76,7 @@ When you set Dataverse search to **On**, a search box appears at the top of ever
 > Once you set Dataverse search to "On", [quick find search](/powerapps/user/quick-find) (formerly known as _categorized search_) becomes unavailable.
 
 
-[Dataverse search can be extended to other Microsoft search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. By enabling a connector, you can search for and find information from the selected canvas as if you're searching in the app. For example, you can quickly look up a contact's phone number or email address without opening the app. For more information, see [Search for records by using Dataverse search](/power-apps/user/relevance-search).
+[Dataverse search can be extended to other Microsoft search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. By enabling a connector, you can search for and find information from the selected canvas as if you're searching in the app. For example, you can quickly look up a contact's phone number or email address without opening the app. For more information, refer to [Search for records by using Dataverse search](/power-apps/user/relevance-search).
 
 | Dataverse search set to On	|  Dataverse search set to Default	|   Dataverse search set to Off  |
 |-----------------------------|-----------------------------------|--------------------------------|
@@ -126,7 +127,7 @@ When you turn on Dataverse search, you allow global search in all model-driven a
 > - You can't turn off Dataverse search in specific apps.
 > - Dataverse search doesn't turn on any other feature automatically.
 
-When you provision a Dataverse search index, you see an indication that provisioning is in progress.
+When you provision a Dataverse search index, an indication that provisioning is in progress appears.
 
 > [!IMPORTANT]
 > Turning off Dataverse search deprovisions and removes the index within 12 hours. If you turn on Dataverse search after it's been off for 12 hours, it provisions a fresh index that needs to go through a full sync. Syncing can take an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
@@ -139,13 +140,13 @@ After you turn on Dataverse search in the Power Platform admin center, set up Da
 
 1. Review the columns that are searched, the columns that are displayed, and the filter conditions that apply in model-driven Power Apps as detailed in the [_Select searchable fields and filters for each table_](#select-searchable-fields-and-filters-for-each-table-for-global-search) section.
 
-1. Include the tables allowed for Dataverse search in the model-driven app. Use the app designer to verify table inclusion in an app's components. For more information, see [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
+1. Include the tables allowed for Dataverse search in the model-driven app. Use the app designer to verify table inclusion in an app's components. For more information, refer to [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
 
-1. Make sure your table is customizable and that the settings to **Track changes** and **Appear in search results** in the **Advanced options** area are both set to **On**. For more information, see [Create and edit tables using Power Apps](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel).
+1. Make sure your table is customizable and that the settings to **Track changes** and **Appear in search results** in the **Advanced options** area are both set to **On**. For more information, refer to [Create and edit tables using Power Apps](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel).
 
 ### Select tables for Dataverse search's global search
 
-To set up search, review the tables that are allowed for Dataverse search in the context of a solution. By using the new solution explorer, you can see a snapshot of the Dataverse search index on the **Overview** page.
+To set up search, review the tables that are allowed for Dataverse search in the context of a solution. By using the new solution explorer, you can view a snapshot of the Dataverse search index on the **Overview** page.
 
    > [!NOTE]
    > If you're selecting tables for Dataverse search on a Power Apps US Government environment, use the legacy solution explorer to choose the tables to be indexed for Dataverse search.
@@ -161,7 +162,7 @@ Although there's no limit on how many tables you can index for Dataverse search,
 > [!IMPORTANT]
 > Some columns are common to all tables, like **Primary Name** and **ID**, which are part of the 50 fields indexed by default for all tables, and aren't counted for every table.
 
-When you select a table to index for Dataverse search, you can see the number of fields that are added to the index.
+When you select a table to index for Dataverse search, you can view the number of fields that are added to the index.
 
 The number of fields indexed for a table depends on the table's Quick Find view. Additionally, some field types are treated as multiple fields in the Dataverse search index, as indicated in this table.
 
@@ -191,7 +192,7 @@ The table's Quick Find view drives the searchable table fields and filters used 
 - The **Find columns** on a Quick Find view define the searchable fields in the Dataverse search index. Text fields such as _Single Line of Text_ and _Multiple Lines of Text_, _Lookups_, and _Option Sets_ are searchable. **Find columns** of all other data types are ignored.
   
   > [!NOTE]
-  > Add currency fields to the **Find Columns** so the currency symbol that's visible on the record is returned in the search results. If you don't add the currency field to the search index, users see the currency symbol localized according to their language settings.
+  > Add currency fields to the **Find Columns** so the currency symbol that's visible on the record is returned in the search results. If you don't add the currency field to the search index, the currency symbol is localized according to your language settings.
   > To use a **lookup field**, turn on the reference table to be searchable.
 
 - The **View columns** on a Quick Find view define the fields that display in model-driven apps' search results page when the matched results are returned.
@@ -247,13 +248,13 @@ To edit the searchable fields of a table:
 >
 > - Although you can add related table fields as a **View column**, **Find column**, or **Filter column** in a table's Quick Find view, Dataverse search doesn't support related table fields and hence ignores them.
 >
-> - If you change the length of text in a table column and set the column to **Simple Search view**, the import might not succeed and you might see this error: _Length isn't valid because this is an indexed attribute and hence cannot have size greater than 1,700_.
+> - If you change the length of text in a table column and set the column to **Simple Search view**, the import might not succeed and you this error might occur: _Length isn't valid because this is an indexed attribute and hence cannot have size greater than 1,700_.
 >
-> - The indexed attribute can't extend beyond 1,700 bytes. If the corresponding column is registered in the **Quick Find view**, remove the corresponding column from the **Quick Find view** and try to re-export after a time interval. If you change or delete a **Quick Find view** setting, it might take up to 24 hours to be reflected in the index, as it's a once-a-day maintenance job for the on-premises product. For more information, see [Maximum capacity specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver16&preserve-view=true).
+> - The indexed attribute can't extend beyond 1,700 bytes. If the corresponding column is registered in the **Quick Find view**, remove the corresponding column from the **Quick Find view** and try to re-export after a time interval. If you change or delete a **Quick Find view** setting, it might take up to 24 hours to be reflected in the index, as it's a once-a-day maintenance job for the on-premises product. For more information, refer to [Maximum capacity specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server?view=sql-server-ver16&preserve-view=true).
 >
 > - Updates to calculated fields and lookups don't automatically sync in Dataverse search. Data refreshes whenever a field configured for Dataverse search is updated in a record.
 >
-> - Some common fields are part of every table in Dataverse, so you see these fields in the Dataverse search index by default. Some common field examples are:
+> - Some common fields are part of every table in Dataverse, so  these fields appear in the Dataverse search index by default. Some common field examples are:
 >
 >   - **ownerid** (Name of lookup)
 >   - **owningbusinessunit** (Name of lookup)
@@ -265,7 +266,7 @@ To edit the searchable fields of a table:
 
 ### Configure quick actions that appear with Dataverse search in model-driven apps
 
-The Dataverse search experience brings some of the most frequently used actions closer to search results. It helps users complete their tasks without having to navigate to the record page in model-driven apps. _Quick actions_ are a small set of commands specific to a table. Users can see quick actions when they're interacting with search in model-driven apps running on a web browser. Some of the commonly used tables are configured to show a set of commands to help users complete their tasks without losing context.
+The Dataverse search experience brings some of the most frequently used actions closer to search results. It helps users complete their tasks without having to navigate to the record page in model-driven apps. _Quick actions_ are a small set of commands specific to a table. Users can view quick actions when they're interacting with search in model-driven apps running on a web browser. Some of the commonly used tables are configured to show a set of commands to help users complete their tasks without losing context.
 
 | Table            | Quick actions      |
 |-------------|------------------------------------------------------------|
@@ -276,7 +277,7 @@ The Dataverse search experience brings some of the most frequently used actions 
 | Phone call  | Mark complete, Cancel, Set Regarding, Assign, Email a link |
 | Email       | Cancel, Set Regarding, Email a link                        |
 
-Quick actions are a subset of the table's homepage grid commands. For example, when you select an account in its homepage grid, the Account table's quick actions come from the set of commands at the top of the page. You can use the ribbon's **EnableRule** to hide or show quick actions for a table. To learn more about defining ribbon-enable rules in Power Apps, see [Define ribbon enable rules](/powerapps/developer/model-driven-apps/define-ribbon-enable-rules).
+Quick actions are a subset of the table's homepage grid commands. For example, when you select an account in its homepage grid, the Account table's quick actions come from the set of commands at the top of the page. You can use the ribbon's **EnableRule** to hide or show quick actions for a table. To learn more about defining ribbon-enable rules in Power Apps, go to [Define ribbon enable rules](/powerapps/developer/model-driven-apps/define-ribbon-enable-rules).
 
 These three new enable rules give you the flexibility to optimize quick actions:
 
