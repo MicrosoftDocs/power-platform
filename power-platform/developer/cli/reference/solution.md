@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac solution
 
-Commands for working with Dataverse solution projects
+Commands for working with Dataverse solution projects.
 
 [!INCLUDE [solution-intro](includes/solution-intro.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Deployment scenarios
+title: Deployment scenarios (Deprecated)
 description: Get a link to learn more about deployment scenarios for the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI) in Power Platform."
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,9 @@ search.app:
   - Powerplatform
 ---
 
-# Deployment scenarios
+# Deployment scenarios (Deprecated)
+
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../../includes/guidance-deprecate-alm-accelerator.md)]
 
 As you plan your ALM Accelerator for Power Platform deployment, one or more of the following scenarios might apply to you:
 
