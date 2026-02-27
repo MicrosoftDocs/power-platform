@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 02/24/2026
+ms.date: 02/27/2026
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -27,7 +27,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Deprecation of the Microsoft Power Automate for Excel add-in (AppSource)
 
-The [Microsoft Power Automate for Excel add-in](https://marketplace.microsoft.com/en-us/product/office/wa104381701?tab=overview) available through AppSource is deprecated. Users should switch to the native Power Automate integration available in the **Automate** tab of Excel.
+The [Microsoft Power Automate for Excel](https://marketplace.microsoft.com/en-us/product/office/wa104381701?tab=overview) add-in available through AppSource is deprecated. Users should switch to the native Power Automate integration available in the **Automate** tab of Excel.
 
 ### Why is this needed?
 
@@ -35,7 +35,7 @@ Excel now includes a built-in **Automate** tab that provides native Power Automa
 
 ### Impact
 
-Users who currently rely on the Power Automate for Excel add-in from AppSource will need to transition to the native **Automate** tab in Excel. The add-in will no longer be supported.
+If you currently rely on the Power Automate for Excel add-in from AppSource, you need to transition to the native **Automate** tab in Excel. The add-in is no longer supported.
 
 ### Replacement feature
 
@@ -43,18 +43,19 @@ Use the native Power Automate integration in the **Automate** tab of Excel. Lear
 
 The native experience is supported on:
 
-- **Excel on the web**
-- **Excel on Windows desktop**
+- Excel on the web
+- Excel on Windows desktop
 
 > [!NOTE]
-> macOS desktop users of Office need to open the spreadsheet in Excel in the browser to access the **Automate** tab.
+> If you use Office macOS desktop, you need to open the spreadsheet in Excel in the browser to access the **Automate** tab.
 
 If the **Automate** tab isn't visible in Excel, verify it's enabled:
 
-1. Go to **Excel Options** > **Customize Ribbon** > **Main Tabs**.
+1. Select **Excel Options** > **Customize Ribbon** > **Main Tabs**.
 1. Make sure the **Automate** checkbox is selected.
 
 ## Removal of before-and-after field change values in audit events sent to Microsoft Purview
+
 Starting in May 2026, Dataverse will no longer include before-and-after field change values in the audit events that are sent to Microsoft Purview. Audit events will continue to flow to Purview; however, the detailed field-level value changes will be excluded.
 
 ### Why is this needed?
