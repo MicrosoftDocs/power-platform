@@ -10,6 +10,10 @@ ms.date: 02/22/2026
 ms.topic: overview
 ---
 
+<!-- In line 103, is the sentence incomplete or should it end with a colon (:)? -->
+<!-- I'm confused by the sentence in line 141. It ends with a colon, but so does the next line. Is the workflow missing? -->
+
+
 # Action Apps redefines athlete management with Power Platform and Azure AI
 
 Action Apps is a UK-based software company specializing in athlete management systems (AMS) and performance tracking tools. Founded in 2020, the company helps sports teams and individuals make better use of their data to improve productivity and results. Recognizing the limitations of traditional hosted AMS solutions, with fragmented data, limited customization, and constrained scalability, the Action Apps team set out to build a modern, flexible, and robust platform designed to meet the data needs of sports organizations.
@@ -39,9 +43,6 @@ Action Apps uses a suite of Microsoft technologies to build smart and secure sol
 ### Athlete Management System (AMS)
 
 A model-driven app serves as a central hub for AMS. The **Sports Science** module provides centralized management of athlete data, covering injury tracking, event planning, and player information. It ensures data quality through structured workflows and consistent standards, delivering reliable insights that teams can act on.
-
-
-
 
 Key capabilities include:
 
@@ -77,19 +78,19 @@ The **Scout App** is a Power Apps canvas app optimized for smartphones and table
 
 A fourth pillar of the solution is the **operational layer achieved using seamless integration with Microsoft 365**.
 
-- Enhanced collaboration using Microsoft Teams, SharePoint, and Outlook for seamless communication and document management.
+- Enhances collaboration using Microsoft Teams, SharePoint, and Outlook for seamless communication and document management.
 
-- Automates repetitive tasks with Microsoft Power Automate, freeing resources for strategic and performance focused initiatives.
+- Automates repetitive tasks with Microsoft Power Automate, freeing resources for strategic and performance-focused initiatives.
 
 - Supports centralized scheduling to reduce conflicts and optimize resource allocation.
 
 **The management layer** of the AMS solution helps Action Apps achieve their unique goals for their application ecosystem:
 
-- **Own your own data**: Organizations manage their data directly within their Microsoft environment using familiar tools. This includes Microsoft 365 applications, such as SharePoint, Outlook, Teams, Forms, Word, Excel, and PowerPoint, Power Platform, Dataverse, and Azure services.
+- **Own your own data**: Organizations manage their data directly within their Microsoft environment using familiar tools. This includes Microsoft 365 applications, such as SharePoint, Outlook, Teams, Forms, Word, Excel, and PowerPoint, and Power Platform, Dataverse, and Azure services.
 
   - All apps and data reside in the customers’ secure Microsoft environment.
 
-  - Seamless integration across Microsoft stack prevents data silos and ensures full accessibility.
+  - Seamless integration across the Microsoft stack prevents data silos and ensures full accessibility.
 
   - Unlike traditional SaaS AMS solutions where teams upload data into a shared vendor environment, Action Apps ensures customers retain full ownership and control of their data.
 
@@ -97,23 +98,23 @@ A fourth pillar of the solution is the **operational layer achieved using seamle
 
   - Customizable metadata, lookup fields, and on/off configurations are up to the customer to customize and turn the capabilities on and off. It’s brandable and customizable for customers.
 
-  - Low code flexibility enables teams to meet their immediate business needs and scale the impact across the organization.
+  - Low-code flexibility enables teams to meet their immediate business needs and scale the impact across the organization.
 
 - **Enterprise-grade security**: Microsoft Azure provides robust security across its infrastructure. This level of security is bolstered by
 
   - Microsoft Entra ID secures password, role, and permission access.
 
-  - In addition, Microsoft Dataverse provides role-based security, row and field-level authorization, and complete auditing capabilities.
+  - Microsoft Dataverse provides role-based security, row and field-level authorization, and complete auditing capabilities.
 
 - **Compliance-ready**: The system supports the General Data Protection Regulation (GDPR), the Health Insurance Portability and Accountability Act (HIPAA), and other regulatory requirements by ensuring that personal and health data remain within the customer’s environment, protected and governed by Microsoft’s compliance framework.
 
 ### AAVA the AI Agent
 
-Action Apps built their own Large Language Model (LLM), AAVA (Action Apps Virtual Assistant), by using Azure and OpenAI. AAVA helps their clients explore their data by enabling users to ask questions in natural language and receive instant, contextual answers.
+Action Apps built their own large language model (LLM)—AAVA (Action Apps Virtual Assistant)—by using Azure and OpenAI. AAVA helps their clients explore their data by enabling users to ask questions in natural language and receive instant, contextual answers.
 
 AAVA also enables deep analytics on the data. They can collect more than 20 million data points about each player every year. Action Apps also uses RAG (retrieval-augmented generation) to search for data and combine the retrieved content with an enriched prompt, to generate an intelligent response about the information.
 
-The following image shows AAVA in action. The user asks *“What is the average total distance covered by each player in games where they played more than 80 minutes in the most* *recent season?”*
+The following image shows AAVA in action. The user asks, *“What is the average total distance covered by each player in games where they played more than 80 minutes in the most recent season?”*
 
 :::image type="content" source="media/action-apps-athlete-management/aava-agent.png" alt-text="Screenshot of AAVA dashboard with a user query, bar chart of distances, chart controls, and navigation menu." lightbox="media/action-apps-athlete-management/aava-agent.png":::
 
@@ -125,7 +126,7 @@ The following diagram shows the technologies that Action Apps used to build a tr
 
 Core security and capabilities:
 
-- **Compliance**: Azure supports a wide range of industry and regulatory standards, including the Health Insurance Portability and Accountability Act (HIPAA), ISO standards for information security, and Payment Card Industry Data Security Standard (PCI DSS). This support helps organizations ensure that their applications and data meet regulatory requirements and are secure.
+- **Compliance**: Azure supports a wide range of industry and regulatory standards, including HIPAA, ISO standards for information security, and Payment Card Industry Data Security Standard (PCI DSS). This support helps organizations ensure that their applications and data meet regulatory requirements and are secure.
 
 - **Identity and access management**: Microsoft Entra ID provides granular role-based access control to prevent unauthorized access to sensitive data and applications.
 
@@ -133,9 +134,9 @@ Core security and capabilities:
 
 - **Data encryption**: All data is encrypted at REST and in transit.
 
-- **DDoS** **protection**: Azure’s built-in DDoS protection helps mitigate attacks and protect against potential downtime.
+- **DDoS Protection**: Azure’s built-in DDoS Protection helps mitigate attacks and protect against potential downtime.
 
-- **Continuous monitoring and compliance reporting**: Azure continuously monitors its infrastructure and logs and provides compliance reporting helping organizations maintain security readiness.
+- **Continuous monitoring and compliance reporting**: Azure continuously monitors its infrastructure and logs and provides compliance reporting to help organizations maintain security readiness.
 
 The architecture includes the following workflow:
 
@@ -145,11 +146,11 @@ The AMS architecture is designed to unify data from multiple sources while maint
 
 - End users can upload spreadsheets and Comma‑Separated Values (CSV) files, and Data Factory ingests the data.
 
-- Users primarily use tools they're already familiar with - SharePoint, Outlook, Teams, and Forms, integrated directly into the AMS system. It also connects to OneDrive, Office 365 Groups, Word, and Excel. Action Apps uses the applications that customers already use, such as:
+- Users primarily use tools they're already familiar with: SharePoint, Outlook, Teams, and Forms, integrated directly into the AMS system. It also connects to OneDrive, Office 365 Groups, Word, and Excel. Action Apps uses the applications that customers already use, such as:
 
   - Scheduling is done by using Outlook Calendars.
 
-  - Users receive notifications both in-App and in Microsoft Teams.
+  - Users receive notifications both in-app and in Microsoft Teams.
 
 - Application consumption is provided through Power Apps model-driven applications and mobile canvas apps, extended with custom pages for enhanced user experiences.
 
@@ -160,6 +161,10 @@ The AMS architecture is designed to unify data from multiple sources while maint
 - Power Automate flows orchestrate notifications, data sync, scheduling, and workflow automation.
 
 - Authentication and authorization across the system is secured by using Microsoft Entra ID.
+
+
+
+
 
 ## Technologies used
 
