@@ -10,8 +10,10 @@ ms.date: 02/22/2026
 ms.topic: overview
 ---
 
-<!-- In line 103, is the sentence incomplete or should it end with a colon (:)? -->
-<!-- I'm confused by the sentence in line 141. It ends with a colon, but so does the next line. Is the workflow missing? -->
+<!-- In line 105, is the sentence incomplete or should it end with a colon (:)? -->
+<!-- I'm confused by the sentence in line 143. It ends with a colon, but so does the next line. Is the workflow missing? -->
+<!-- In line 179, I removed "services" because the style guide says we no longer include that. -->
+<!-- The first two images show a player named Andy Grimes. Please ensure that this is a fictitious example and not a real person. -->
 
 
 # Action Apps redefines athlete management with Power Platform and Azure AI
@@ -40,7 +42,7 @@ Action Apps uses a suite of Microsoft technologies to build smart and secure sol
 >
 > — *Dan Hodges, Head of Performance at Newcastle United*
 
-### Athlete Management System (AMS)
+### Athlete management system (AMS)
 
 A model-driven app serves as a central hub for AMS. The **Sports Science** module provides centralized management of athlete data, covering injury tracking, event planning, and player information. It ensures data quality through structured workflows and consistent standards, delivering reliable insights that teams can act on.
 
@@ -162,10 +164,6 @@ The AMS architecture is designed to unify data from multiple sources while maint
 
 - Authentication and authorization across the system is secured by using Microsoft Entra ID.
 
-
-
-
-
 ## Technologies used
 
 Action Apps deeply integrates Microsoft’s suite of tools to ensure scalability, security, and innovation:
@@ -178,13 +176,13 @@ Action Apps deeply integrates Microsoft’s suite of tools to ensure scalability
 
 - **Microsoft 365**: Supports collaboration, scheduling, and document management to streamline team operations.
 
-- **AI and LLM capabilities**: By using Azure OpenAI services, the teams can interact with data through natural language and generate real-time insights.
+- **AI and LLM capabilities**: By using Azure OpenAI, the teams can interact with data through natural language and generate real-time insights.
 
 - **Security and compliance**: By building on Microsoft’s compliance frameworks (ISO 27001, SOC 1/2/3), Action Apps ensures robust data protection and audit readiness.
 
 ## Takeaways
 
-This case study demonstrates the potential of using Power Platform, Azure, and Microsoft 365 services to set up an application suite that enables data-driven decision making, tailored for a specific business. Here are some key takeaways:
+This case study demonstrates the potential of using Power Platform, Azure, and Microsoft 365 services to set up an application suite that enables data-driven decision-making, tailored for a specific business. Here are key takeaways:
 
 - Use a mix of Microsoft technologies to build applications that turn captured data into visual insights, empowering smarter, data-driven decisions.
 
@@ -192,7 +190,7 @@ This case study demonstrates the potential of using Power Platform, Azure, and
 
 - Integrate AI agents into existing systems, enabling users to explore data through natural language and gain real-time, actionable insights.
 
-Action Apps successfully deployed their Athlete Management System (AMS) solution globally, and it's used across 12 leagues, 20 brands, and 30 teams.
+Action Apps successfully deployed their athlete management system (AMS) solution globally, and it's used across 12 leagues, 20 brands, and 30 teams.
 
 > Microsoft 365, Azure, and Power Platform gave us the building blocks that we used to create a product that helps practitioners in elite sports enhance the performance of their athletes by turning complex, fragmented athlete data into decisions, predictions, and actions.
 >
