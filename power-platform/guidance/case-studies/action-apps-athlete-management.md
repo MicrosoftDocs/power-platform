@@ -110,7 +110,7 @@ A fourth pillar of the solution is the **operational layer achieved using seamle
 
 - **Compliance-ready**: The system supports the General Data Protection Regulation (GDPR), the Health Insurance Portability and Accountability Act (HIPAA), and other regulatory requirements by ensuring that personal and health data remain within the customer’s environment, protected and governed by Microsoft’s compliance framework.
 
-### AAVA the AI Agent
+### AAVA the AI agent
 
 Action Apps built their own large language model (LLM)—AAVA (Action Apps Virtual Assistant)—by using Azure and OpenAI. AAVA helps their clients explore their data by enabling users to ask questions in natural language and receive instant, contextual answers.
 
