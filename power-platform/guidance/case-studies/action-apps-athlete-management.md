@@ -10,12 +10,6 @@ ms.date: 02/22/2026
 ms.topic: overview
 ---
 
-<!-- In line 105, is the sentence incomplete or should it end with a colon (:)? -->
-<!-- I'm confused by the sentence in line 143. It ends with a colon, but so does the next line. Is the workflow missing? -->
-<!-- In line 179, I removed "services" because the style guide says we no longer include that. -->
-<!-- The first two images show a player named Andy Grimes. Please ensure that this is a fictitious example and not a real person. -->
-
-
 # Action Apps redefines athlete management with Power Platform and Azure AI
 
 Action Apps is a UK-based software company specializing in athlete management systems (AMS) and performance tracking tools. Founded in 2020, the company helps sports teams and individuals make better use of their data to improve productivity and results. Recognizing the limitations of traditional hosted AMS solutions, with fragmented data, limited customization, and constrained scalability, the Action Apps team set out to build a modern, flexible, and robust platform designed to meet the data needs of sports organizations.
@@ -102,7 +96,7 @@ A fourth pillar of the solution is the **operational layer achieved using seamle
 
   - Low-code flexibility enables teams to meet their immediate business needs and scale the impact across the organization.
 
-- **Enterprise-grade security**: Microsoft Azure provides robust security across its infrastructure. This level of security is bolstered by
+- **Enterprise-grade security**: Microsoft Azure provides robust security across its infrastructure. This level of security is bolstered by:
 
   - Microsoft Entra ID secures password, role, and permission access.
 
@@ -139,8 +133,6 @@ Core security and capabilities:
 - **DDoS Protection**: Azure’s built-in DDoS Protection helps mitigate attacks and protect against potential downtime.
 
 - **Continuous monitoring and compliance reporting**: Azure continuously monitors its infrastructure and logs and provides compliance reporting to help organizations maintain security readiness.
-
-The architecture includes the following workflow:
 
 The AMS architecture is designed to unify data from multiple sources while maintaining strong governance:
 
