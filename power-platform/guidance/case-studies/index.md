@@ -7,7 +7,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.topic: overview
-ms.date: 01/23/2026
+ms.date: 03/02/2026
 ---
 
 # Real-world case studies
@@ -25,13 +25,14 @@ Each case study provides an in-depth look at how organizations build application
 - **Understand the impact**: Many case studies include measurable results, such as efficiency gains, cost savings, and higher customer satisfaction. These metrics help you build a strong business case for your initiatives.
 
 - **Get inspired**: Innovative solutions from other organizations can spark new ideas. Whether you're looking to automate processes, improve customer experiences, or drive digital transformation, these case studies can help you identify new opportunities.
- 
+
 ## Current case studies
 
 | Case study | Description |
 | --- | --- |
 | [A1 Inteligência em Viagens boosts efficiency and customer experience](boost-efficiency-experience-case-study.md) | Covers how A1 Inteligência em Viagens boosts team efficiency and customer experience with Power Automate and Copilot Studio. |
 | [ABN AMRO Bank enhances AI capabilities with Copilot Studio and Azure services](abn-amro-enhances-ai.md) | Covers how ABN AMRO enhanced customer and employee interactions using Copilot Studio and Azure. |
+| [Action Apps redefines athlete management with Power Platform and Azure AI](action-apps-athlete-management.md) | Covers how Action Apps uses Power Platform and Azure AI to centralize athlete data, improve decision-making, and enhance sports performance management. |
 | [AECOM simplifies project onboarding with Power Platform, Azure, and Microsoft Fabric](aecom-streamlined-onboarding.md) | Covers how AECOM streamlined project onboarding using Power Platform, Microsoft Azure, and Microsoft Fabric. |
 | [Cineplex automates business processes](automate-business-processes.md) | Covers how Cineplex automates business processes with generative AI and Power Automate. |
 | [The City of Montréal enhances citizen engagement with Copilot Studio](city-montreal-citizen-engagement.md) | This case study covers how the City of Montréal uses AI and Copilot Studio to enhance citizen engagement, improve information access, and strengthen citizen connections. |

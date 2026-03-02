@@ -6,13 +6,13 @@ author: carcla
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
-ms.date: 02/22/2026
+ms.date: 03/02/2026
 ms.topic: overview
 ---
 
 # Action Apps redefines athlete management with Power Platform and Azure AI
 
-Action Apps is a UK-based software company specializing in athlete management systems (AMS) and performance tracking tools. Founded in 2020, the company helps sports teams and individuals make better use of their data to improve productivity and results. Recognizing the limitations of traditional hosted AMS solutions, with fragmented data, limited customization, and constrained scalability, the Action Apps team set out to build a modern, flexible, and robust platform designed to meet the data needs of sports organizations.
+[Action Apps](https://actionapps.co.uk/) is a UK-based software company specializing in athlete management systems (AMS) and performance tracking tools. Founded in 2020, the company helps sports teams and individuals make better use of their data to improve productivity and results. Recognizing the limitations of traditional hosted AMS solutions, with fragmented data, limited customization, and constrained scalability, the Action Apps team set out to build a modern, flexible, and robust platform designed to meet the data needs of sports organizations.
 
 In this case study, you learn how:
 
@@ -24,7 +24,7 @@ In this case study, you learn how:
 
 Athlete management processes are typically fragmented, manual, and difficult to scale. Teams rely on disconnected spreadsheets, paper-based evaluations, and inconsistent data entry, leading to unreliable insights and insecure data storage.
 
-Many software as a service (SaaS)-based athlete management solutions attempt to address these challenges, but they typically store the sports teams’ data on shared software systems, offer limited customization, and can’t be tailored to the unique needs of each organization.
+Many software as a service (SaaS)-based athlete management solutions attempt to address these challenges, but they typically store the sports teams' data on shared software systems, offer limited customization, and can't be tailored to the unique needs of each organization.
 
 Action Apps aimed to provide a solution where sports organizations can own their data and store it in a secure and customizable software solution. Their goal was to offer a unified platform that adapts to the evolving needs of a modern sports organization—combining flexibility, data integrity, and enterprise-grade security.
 
@@ -38,7 +38,7 @@ Action Apps uses a suite of Microsoft technologies to build smart and secure sol
 
 ### Athlete management system (AMS)
 
-A model-driven app serves as a central hub for AMS. The **Sports Science** module provides centralized management of athlete data, covering injury tracking, event planning, and player information. It ensures data quality through structured workflows and consistent standards, delivering reliable insights that teams can act on.
+A model-driven app serves as a central hub for AMS. The Sports Science module provides centralized management of athlete data, covering injury tracking, event planning, and player information. It ensures data quality through structured workflows and consistent standards, delivering reliable insights that teams can act on.
 
 Key capabilities include:
 
@@ -48,9 +48,11 @@ Key capabilities include:
 
 - **Advanced analytics**: Uses Power BI for customizable dashboards and reports, helping teams identify trends and optimize performance.
 
-The following images show the model‑driven app with an athlete profile and a Power BI report presenting athlete analytics.
+The following image shows the model‑driven app with an athlete profile.
 
 :::image type="content" source="media/action-apps-athlete-management/player-overview.png" alt-text="Screenshot of athlete profile page displaying personal details, team info, tasks, timeline, and injury records in a model-driven app." lightbox="media/action-apps-athlete-management/player-overview.png":::
+
+This image shows the Power BI report embedded in the app, which presents athlete performance analytics.
 
 :::image type="content" source="media/action-apps-athlete-management/player-report.png" alt-text="Screenshot of a Power BI player report showing charts, stats panels, and filters for athlete performance analytics." lightbox="media/action-apps-athlete-management/player-report.png":::
 
@@ -84,7 +86,7 @@ A fourth pillar of the solution is the **operational layer achieved using seamle
 
 - **Own your own data**: Organizations manage their data directly within their Microsoft environment using familiar tools. This includes Microsoft 365 applications, such as SharePoint, Outlook, Teams, Forms, Word, Excel, and PowerPoint, and Power Platform, Dataverse, and Azure services.
 
-  - All apps and data reside in the customers’ secure Microsoft environment.
+  - All apps and data reside in the customers' secure Microsoft environment.
 
   - Seamless integration across the Microsoft stack prevents data silos and ensures full accessibility.
 
@@ -92,7 +94,7 @@ A fourth pillar of the solution is the **operational layer achieved using seamle
 
 - **Fully customizable**: Teams can customize their applications to meet their exact needs.
 
-  - Customizable metadata, lookup fields, and on/off configurations are up to the customer to customize and turn the capabilities on and off. It’s brandable and customizable for customers.
+  - Customizable metadata, lookup fields, and on/off configurations are up to the customer to customize and turn the capabilities on and off. It's brandable and customizable for customers.
 
   - Low-code flexibility enables teams to meet their immediate business needs and scale the impact across the organization.
 
@@ -102,7 +104,7 @@ A fourth pillar of the solution is the **operational layer achieved using seamle
 
   - Microsoft Dataverse provides role-based security, row and field-level authorization, and complete auditing capabilities.
 
-- **Compliance-ready**: The system supports the General Data Protection Regulation (GDPR), the Health Insurance Portability and Accountability Act (HIPAA), and other regulatory requirements by ensuring that personal and health data remain within the customer’s environment, protected and governed by Microsoft’s compliance framework.
+- **Compliance-ready**: The system supports the General Data Protection Regulation (GDPR), the Health Insurance Portability and Accountability Act (HIPAA), and other regulatory requirements by ensuring that personal and health data remain within the customer's environment, protected and governed by Microsoft's compliance framework.
 
 ### AAVA the AI agent
 
@@ -110,13 +112,13 @@ Action Apps built their own large language model (LLM)—AAVA (Action Apps Virtu
 
 AAVA also enables deep analytics on the data. They can collect more than 20 million data points about each player every year. Action Apps also uses RAG (retrieval-augmented generation) to search for data and combine the retrieved content with an enriched prompt, to generate an intelligent response about the information.
 
-The following image shows AAVA in action. The user asks, *“What is the average total distance covered by each player in games where they played more than 80 minutes in the most recent season?”*
+The following image shows AAVA in action. The user asks, *"What is the average total distance covered by each player in games where they played more than 80 minutes in the most recent season?"*
 
 :::image type="content" source="media/action-apps-athlete-management/aava-agent.png" alt-text="Screenshot of AAVA dashboard with a user query, bar chart of distances, chart controls, and navigation menu." lightbox="media/action-apps-athlete-management/aava-agent.png":::
 
 ## Architecture
 
-The following diagram shows the technologies that Action Apps used to build a trusted and secure solution for their clients. They deploy the entire platform within each customer’s Microsoft environment, using Azure’s built-in security, governance, and compliance capabilities.
+The following diagram shows the technologies that Action Apps used to build a trusted and secure solution for their clients. They deploy the entire platform within each customer's Microsoft environment, using Azure's built-in security, governance, and compliance capabilities.
 
 :::image type="content" source="media/action-apps-athlete-management/architecture.png" alt-text="Diagram showing the technologies used including Power Apps, Power BI, Power Automate, Dataverse, Microsoft 365, and Azure services." lightbox="media/action-apps-athlete-management/architecture.png":::
 
@@ -130,7 +132,7 @@ Core security and capabilities:
 
 - **Data encryption**: All data is encrypted at REST and in transit.
 
-- **DDoS Protection**: Azure’s built-in DDoS Protection helps mitigate attacks and protect against potential downtime.
+- **DDoS Protection**: Azure's built-in DDoS Protection helps mitigate attacks and protect against potential downtime.
 
 - **Continuous monitoring and compliance reporting**: Azure continuously monitors its infrastructure and logs and provides compliance reporting to help organizations maintain security readiness.
 
@@ -158,19 +160,19 @@ The AMS architecture is designed to unify data from multiple sources while maint
 
 ## Technologies used
 
-Action Apps deeply integrates Microsoft’s suite of tools to ensure scalability, security, and innovation:
+Action Apps deeply integrates Microsoft's suite of tools to ensure scalability, security, and innovation:
 
 - **Power Platform** (Power Apps, Power Automate, Dataverse): Provides a flexible and robust platform for building apps and setting up automation, allowing teams to customize workflows.
 
 - **Power BI**: Provides real-time dashboard and performance analytics.
 
-- **Azure**: Powers the platform’s cloud infrastructure, ensuring scalability, data integrity, and seamless integrations with APIs.
+- **Azure**: Powers the platform's cloud infrastructure, ensuring scalability, data integrity, and seamless integrations with APIs.
 
 - **Microsoft 365**: Supports collaboration, scheduling, and document management to streamline team operations.
 
 - **AI and LLM capabilities**: By using Azure OpenAI, the teams can interact with data through natural language and generate real-time insights.
 
-- **Security and compliance**: By building on Microsoft’s compliance frameworks (ISO 27001, SOC 1/2/3), Action Apps ensures robust data protection and audit readiness.
+- **Security and compliance**: By building on Microsoft's compliance frameworks (ISO 27001, SOC 1/2/3), Action Apps ensures robust data protection and audit readiness.
 
 ## Takeaways
 
