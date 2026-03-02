@@ -69,7 +69,7 @@
             "**.*": "power-platform"
          },
          "ms.date": {
-            "developer/cli/reference/**.md": "01/07/2026"
+            "developer/cli/reference/**.md": "02/25/2026"
          },
          "ms.update-cycle": {
             "guidance/creator-kit/**.md": "3650-days",

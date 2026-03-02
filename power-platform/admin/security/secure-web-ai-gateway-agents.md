@@ -1,7 +1,7 @@
 ---
 title: Global Secure Access for Copilot Studio agents (preview)
 description: Learn how to configure the Secure Web and AI Gateway for Microsoft Copilot Studio agents to enforce network security controls.
-ms.date: 02/17/2026
+ms.date: 02/26/2026
 ms.topic: how-to
 author: fgomulka
 ms.author: frankgomulka
@@ -13,13 +13,13 @@ contributors:
   - fgomulka
 ---
 
-# Configure Global Secure Access, the Secure Web and AI Gateway for agents (preview)
+# Configure Global Secure Access, the Secure Web, and AI Gateway for agents (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-As organizations integrate autonomous and interactive AI agents to perform tasks previously handled by humans, administrators may notice a reduction in visibility and control compared to the traditional user network security policy and management experience.
+As organizations integrate autonomous and interactive AI agents to perform tasks previously handled by humans, administrators might notice a reduction in visibility and control compared to the traditional user network security policy and management experience.
 
-With Global Secure Access (GSA) for Agents, you can now regulate how these agents use knowledge, tools, and actions to access other resources in a way that's similar to how you regulate users.
+By using Global Secure Access (GSA) for agents, you can regulate how these agents use knowledge, tools, and actions to access other resources in a way that's similar to how you regulate users.
 
 :::image type="content" source="media/agent-traffic-flow.png" alt-text="Diagram showing agent traffic flowing through Global Secure Access to protected resources.":::
 
@@ -37,9 +37,9 @@ You configure security policies for agents by using the baseline profile in Glob
 
 ## How Secure Web and AI Gateway for Copilot Studio agents works
 
-To enforce consistent network security controls on Copilot Studio agents, forward traffic from the agents to Global Secure Access's globally distributed proxy service. You can enable forwarding of agent traffic in the Power Platform admin center on a per-Environment or per-Environment Group basis. Forwarding applies to all kinds of agent traffic, including traffic from HTTP Node and Tools generated connectors, including custom connectors, the custom Model Context Protocol (MCP) server connector, and a full list of [supported connectors](#supported-connectors).
+To enforce consistent network security controls on Copilot Studio agents, forward traffic from the agents to Global Secure Access's globally distributed proxy service. You can enable forwarding of agent traffic in the Power Platform admin center on a per-environment or per-environment group basis. Forwarding applies to all kinds of agent traffic, including traffic from HTTP node and tools-generated connectors, custom connectors, custom Model Context Protocol (MCP) servers, custom tools, and a full list of [supported connectors](#supported-connectors).
 
-Once you forward traffic from the agent to GSA, you can enforce the same security controls you use on users to agents, including web content filtering, threat intelligence filtering, network file filtering, and more.
+After you forward traffic from the agent to Global Secure Access, you can enforce the same security controls you use on users to agents, including web content filtering, threat intelligence filtering, network file filtering, and more.
 
 When an agent makes a request to external resources, the Global Secure Access service evaluates the request in real time against the security policies you configured. If the request complies with the configured policies, the service allows it. If the request violates any security policy, the Global Secure Access service denies the request with appropriate logging for audit and monitoring purposes.
 
@@ -69,42 +69,42 @@ The first step is to enable traffic forwarding from Copilot Studio Agents in the
 To configure Global Secure Access settings at the environment level, complete the following steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, select **Security**
+1. On the navigation pane, select **Security**.
 1. On the **Security** pane, select **Identity & access**.
 1. Select **Global Secure Access for Agents**.
-1. Select the appropriate Environment and select **Set up**. 
+1. Select the appropriate environment and select **Set up**. 
 1. Toggle **Enable Global Secure Access for Agents** to *on* for your selected environment.
 1. Select **Save**.
 
 ### Enable network controls at the environment group level
 
-To configure Global Secure Access settings at the environment group-level, complete the following steps:
+To configure Global Secure Access settings at the environment group level, complete the following steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Security**.
 1. On the **Security** pane, select **Identity and access**.
 1. Select **Global Secure Access for Agents**.
-1. Select the **Environment groups** tab to which you want the security setting applied, then select **Set up**.
+1. Select the **Environment groups** tab to which you want the security setting applied, and then select **Set up**.
 1. Toggle **Enable Global Secure Access for Agents** to *on* for the selected environment group.
 1. Select **Save**.
 
 > [!NOTE]
-> After enabling GSA for Agents for a given environment or environment group, you need to create or update any existing custom connectors for them to route traffic through Global Secure Access.
+> After enabling Global Secure Access for Agents in the environment or environment group, you must edit and save any existing Copilot Studio custom connector to ensure its traffic routes through Global Secure Access. Custom connectors created afterward automatically use this configuration.
 
 ## Create security policies for Copilot Studio agents
 
-After enabling network controls, you can enforce Global Secure Access security policies on agent traffic. You can apply web content filtering, threat intelligence filtering, and other security policies. The following example shows how to configure a web content filtering policy:
+After you enable network controls, enforce Global Secure Access security policies on agent traffic. Apply web content filtering, threat intelligence filtering, and other security policies. The following example shows how to configure a web content filtering policy:
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a [Global Secure Access Administrator](/azure/active-directory/roles/permissions-reference).
 1. Browse to **Global Secure Access** > **Secure** > **Web content filtering policies**.
 1. Select **Create policy**.
-1. Enter a descriptive name and a description for the policy, then select **Next**.
+1. Enter a descriptive name and a description for the policy, and then select **Next**.
 1. Select **Add rule**.
-1. Configure rules based on your security to Copilot Studio agent requirements. For example, block access to `Web respositories`, `Illegal software`, not safe for work (NSFW) sites, and more.
+1. Configure rules based on your security to Copilot Studio agent requirements. For example, block access to `Web repositories`, `Illegal software`, not safe for work (NSFW) sites, and more.
 1. Select **Next** to review the policy.
 1. Select **Create policy**.
 
-Next, you can create policies like [threat intelligence](/entra/global-secure-access/how-to-configure-threat-intelligence) to protect agents against malicious destinations or [file policy](/entra/global-secure-access/how-to-network-content-filtering) to safeguard against unintended data exposure and prevent inline data leaks.
+Next, create policies like [threat intelligence](/entra/global-secure-access/how-to-configure-threat-intelligence) to protect agents against malicious destinations or [file policy](/entra/global-secure-access/how-to-network-content-filtering) to safeguard against unintended data exposure and prevent inline data leaks.
 
 ## Link policies to the baseline profile
 
@@ -115,7 +115,7 @@ Group your security policies by linking them to the baseline profile to apply th
 1. Select the **Baseline profile** tab.
 1. Select **Edit** to edit the baseline profile rules.
 1. Select **Link a policy** and then select **Existing policy**.
-1. Select the Copilot Studio agent web repositories policy created earlier and select **Add**.
+1. Select the Copilot Studio agent web repositories policy that you created earlier and select **Add**.
 1. Select **Save** to save the profile changes.
 
 ## Monitor and maintain
@@ -135,72 +135,166 @@ Regular monitoring and maintenance ensure your security configuration remains ef
 
 ## Known limitations
 
-- Currently the agent name returned in the Global Secure Access traffic logs is the agent's unique `schema name`.
-- Currently the block experience for Copilot Studio agents blocked by GSA shows a `502 Bad Gateway` for HTTP Actions or a `403 Forbidden` for connectors. This experience is a known issue, and improvements are coming soon.
-- Currently only the baseline profile is supported for enforcement, so network security policies are per-tenant.
-- GSA partner ecosystem integrations, for example, third-party Data Loss Prevention (DLP), aren't supported.
+- The Global Secure Access traffic logs return the agent name as the agent's unique `schema name`.
+- The block experience for Copilot Studio agents blocked by Global Secure Access shows a `502 Bad Gateway` for HTTP Actions or a `403 Forbidden` for connectors. This experience is a known issue, and improvements are coming soon.
+- Only the baseline profile is supported for enforcement, so network security policies are per-tenant.
+- Global Secure Access partner ecosystem integrations, such as third-party Data Loss Prevention (DLP), aren't supported.
 - Copilot Studio Bing search network transactions (including knowledge from _public websites_ and _Wikipedia_) aren't supported.
 - Network requests to Dataverse and Azure SQL knowledge sources aren't supported. 
-- Network requests to the following custom tools aren't supported: prompt, agent flow, Computer Use, and child agents.
 - Network requests to Large Language Model (LLM), either for orchestration or results enhancement, aren't supported.
 - Limited connector support (see [supported connectors](#supported-connectors) for details).
-- Connectors other than those listed in [supported connectors](#supported-connectors) are not supported and may not function reliably.
+- Connectors other than those listed in [supported connectors](#supported-connectors) aren't supported and might not function reliably.
 
 ## Supported connectors
 
-The following connectors currently support secure web and AI gateway Copilot Studio agents:
+The following connectors currently support secure web and AI gateway Copilot Studio agents. If you have any trouble with these connectors in the preview, contact support.
 
 :::row:::
     :::column:::
-    - Office 365 Groups
-    - Microsoft Teams
-    - OneDrive for Business
-    - Power Apps for Makers
-    - Microsoft Forms
-    - Power BI
-    - Planner
-    - Power Automate Management
-    - Microsoft Translator V2
-    - Microsoft To-Do (Business)
-    - Power Apps Notification
-    - Power Platform for Admins
-    - Desktop flows
-    - Power Apps for Admins
-    - Office 365 Outlook
-    - Power Automate for Admins
-    - Shifts for Microsoft Teams
-    - Project Online
-    - Slack
-    - Jira
-    - Azure Table Storage
-    - Microsoft Copilot Studio
-    :::column-end:::
-    :::column:::
-    - Smartsheet
-    - Google Drive
-    - OneDrive
-    - Azure Data Factory
-    - Microsoft Learn Docs MCP
-    - Databricks
-    - Microsoft Defender ATP
-    - iAuditor
-    - Azure Log Analytics Data Collector
-    - Blackbaud Altru Constituent
-    - Partner Center Referrals
+    - Adobe PDF Tools
+    - Adobe Sign
+    - AI Builder
+    - Amazon S3
+    - Approvals
+    - ArcGIS
+    - Asana
+    - Azure AD
+    - Azure AD Applications
     - Azure AI Foundry Agent Service
     - Azure AI Foundry Inference
-    - Copilot for Finance
+    - Azure Application Insights
+    - Azure Cognitive Service for Language
+    - Azure Cognitive Services Computer Vision
+    - Azure Cognitive Services Text Analytics
+    - Azure Communication Services Email
+    - Azure Communication Services SMS
+    - Azure Data Factory
+    - Azure Event Hubs
+    - Azure Log Analytics Data Collector
+    - Azure Resource Manager
+    - Azure Table Storage
+    - Azure VM
+    - Bing Maps
+    - Bitly
+    - Blackbaud Altru Constituent
+    - Blackbaud Raiser's Edge NXT
     - Blackbaud RENXT Gifts
     - Blackbaud SKY Add-ins
-    - Luware Nimbus
     - Box MCP Server
-    - Impower ERP
+    - Cards for Power Apps
+    - ClickSend SMS
+    - Cloudmersive Convert
+    - Cognito Forms
+    - Computer Operator
+    - Confluence
+    - Converter by Power2Apps
+    - Copilot for Finance
     - Databricks
-    - Amazon S3
-    - Azure Cognitive Service for Language
+    - Desktop flows
+    - DocuSign
+    - DocuSign Demo
+    - Egnyte
+    - Encodian Convert
+    - Encodian Document Manager
+    - Encodian PDF
+    :::column-end:::
+    :::column:::
+    - Encodian Word
+    - Excel
+    - Experlogix Smart Flows
+    - Formstack
+    - Freshdesk
+    - Freshservice
+    - GitHub
+    - Google Calendar
+    - Google Contacts
+    - Google Drive
+    - Google Tasks
+    - Hash Generator
+    - Hashify
+    - iAuditor
+    - Impower ERP
+    - Jira
+    - JotForm
+    - JotForm Enterprise
+    - kintone
+    - LMS365
+    - Luware Nimbus
+    - Mail
+    - Mailchimp
+    - Microsoft 365 Copilot Automations
+    - Microsoft 365 Message Center
+    - Microsoft 365 Updates App
+    - Microsoft Bookings
+    - Microsoft Copilot Studio
+    - Microsoft Dataverse
+    - Microsoft Defender ATP
+    - Microsoft Defender for Cloud Apps
+    - Microsoft Fabric Data Agent
+    - Microsoft Forms
+    - Microsoft Forms Pro
+    - Microsoft Graph
+    - Microsoft Learn Docs MCP
+    - Microsoft Loop
+    - Microsoft School Data Sync
+    - Microsoft Spatial Services
+    - Microsoft Teams
+    - Microsoft To-Do (Business)
+    - Microsoft Translator V2
+    - Monday.com
+    - Muhimbi PDF
+    - NetDocuments
+    :::column-end:::
+    :::column:::
+    - Office 365 Groups
+    - Office 365 Groups Mail
+    - Office 365 Outlook
+    - OneDrive
+    - OneDrive for Business
+    - OneNote (Business)
+    - Outlook Tasks
+    - PagerDuty
+    - Partner Center Referrals
+    - Planner
+    - Plumsail
+    - Plumsail SP
+    - Power Apps for Admins
+    - Power Apps for Makers
+    - Power Apps Notification
+    - Power Apps Notification V2
+    - Power Automate
+    - Power Automate for Admins
+    - Power Automate Management
+    - Power BI
+    - Power Platform Dataflows
+    - Power Platform for Admins
+    - Power Platform for Admins V2
+    - Project Online
+    - Project Roadmap
+    - Redmine
+    - SendGrid
+    - ServiceNow
+    - SharePoint
+    - Shifts for Microsoft Teams
+    - Slack
+    - Smartsheet
+    - Snowflake
+    - Stripe
+    - Survey123
+    - SurveyMonkey
+    - TeamForms
+    - Todoist
+    - Trello
+    - Twilio
+    - UiPath Orchestrator
+    - Vena
+    - Webex
+    - WordPress
+    - Yammer
+    - YouTube
     :::column-end:::
 :::row-end:::
 
-You can find more information about individual connectors at [Connector reference overview](/connectors/connector-reference/).
+For more information about individual connectors, see [Connector reference overview](/connectors/connector-reference/).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

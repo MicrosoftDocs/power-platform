@@ -1,5 +1,5 @@
 ---
-title: Configure the ALM accelerator manually
+title: Configure the ALM accelerator manually (Deprecated)
 description: Learn how to set up the components of the ALM Accelerator for Power Platform manually if you choose not to use the accompanying administration app to configure them.
 ms.topic: how-to
 ms.date: 06/13/2024
@@ -10,7 +10,9 @@ ms.reviewer: sericks
 ms.custom: bap-template
 ---
 
-# Configure the ALM Accelerator manually
+# Configure the ALM Accelerator manually (Deprecated)
+
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 
 You can configure the components of the ALM Accelerator for Power Platform either using the accompanying [administration app](setup-admin-tasks.md) or manually. This article guides you through configuring the app manually and is structured in seven sections:
 

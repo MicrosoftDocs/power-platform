@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac pcf
 
-Commands for working with Power Apps component framework projects
+Commands for working with Power Apps component framework projects.
 
 [!INCLUDE [pcf-intro](includes/pcf-intro.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Deployment configuration guide
+title: Deployment configuration guide (Deprecated)
 description: Learn how to create the configuration files that automate the deployment of solutions to downstream environments with the ALM Accelerator for Power Platform.
 ms.topic: how-to
 ms.date: 04/10/2023
@@ -12,7 +12,9 @@ ms.custom:
   - sfi-image-nochange
 ---
 
-# Deployment configuration guide
+# Deployment configuration guide (Deprecated)
+
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 
 The ALM Accelerator for Power Platform uses configuration files in JSON format to automate the deployment of your solutions. They set connection references, environment variables, and permissions, share canvas apps, and update ownership of solution components such as Power Automate flows when solutions are deployed to downstream environments.
 
