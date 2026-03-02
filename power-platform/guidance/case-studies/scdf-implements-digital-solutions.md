@@ -19,13 +19,13 @@ In this case study, you learn how SCDF empowers its workforce through different 
 
 ## Business challenges
 
-SCDF previously relied on manual processes for tasks such as duty roster management and vehicle maintenance. These processes were time-consuming and reduced their frontliners’ operational efficiency. Traditional IT projects took years to deliver solutions, which was far too long for a frontline organization that depends on timely and reliable digital solutions.
+SCDF previously relied on manual processes for tasks such as duty roster management and vehicle maintenance. These processes were time-consuming and reduced their frontliners' operational efficiency. Traditional IT projects took years to deliver solutions, which was far too long for a frontline organization that depends on timely and reliable digital solutions.
 
 To overcome these challenges, SCDF established a Digital Factory team with HTX in 2023 to support its digitalization ambitions. This initiative streamlines processes and shortens the path from ideation to realization, enabling faster deployment of solutions that enhance day-to-day operations and frontline effectiveness.
 
 ## Solution
 
-SCDF is embarking on a digital transformation journey to raise the skill levels of its workforce through the development of applications and conversational agents. At the forefront of this initiative is **NEXA (Next Evolution Assistant)**, a Microsoft Copilot Studio conversational agent that streamlines information retrieval from government websites and internal knowledge repositories. Before building NEXA, SCDF deployed the following apps:
+SCDF is embarking on a digital transformation journey to raise the skill levels of its workforce through the development of applications and conversational agents. At the forefront of this initiative is NEXA (Next Evolution Assistant), a Microsoft Copilot Studio conversational agent that streamlines information retrieval from government websites and internal knowledge repositories. Before building NEXA, SCDF deployed the following apps:
 
 - **Automated Duty Assignment App (ADA)**: Streamlines firefighter duty rostering through automation, improving scheduling efficiency and reducing manual effort.
 
@@ -65,7 +65,7 @@ ADA automates the matching process by analyzing each firefighter's qualification
 
 ### Food Indentation and Consumption App (FICA)
 
-The Civil Defence Academy (CDA) is SCDF’s training institution that serves over 3,000 meals daily to trainees, instructors, and staff during training programs, courses, and daily operations.
+The Civil Defence Academy (CDA) is SCDF's training institution that serves over 3,000 meals daily to trainees, instructors, and staff during training programs, courses, and daily operations.
 
 The Food Indentation and Consumption App was introduced to modernize meal management operations, replacing an outdated system. FICA enables officers to indent and access meal data on the go, allowing the kitchen to respond dynamically to demand. This approach reduces food wastage, cuts operational costs, and supports accurate long-term analysis of meal consumption patterns.
 
@@ -81,7 +81,7 @@ The Duty Officer Rostering App addresses the challenge of regimental duty assign
 
 DORA centralizes duty roster information and automates the assignment process, ensuring fair and efficient allocation. The platform also enables officers to view and swap duties, providing flexibility and greater control over their regimental commitments.
 
-### Implementation approach
+## Implementation approach
 
 In 2021, SCDF began its journey to digitize business administrative and operational processes with the goal of building a future-ready digital workforce. They recognized that success would require upskilling their personnel and equipping officers with the right technologies and capabilities to cocreate that future.
 
@@ -95,7 +95,7 @@ By 2025, SCDF was integrating data into its apps and AI solutions. NEXA is now p
 
 SCDF's Digital Factory played a key role in helping the organization achieve the highest digital maturity ranking among agencies under the Ministry of Home Affairs in 2023. To date, their success story has attracted over 300 visitors from local and international agencies eager to learn from their experience.
 
-### Architecture
+## Architecture
 
 The Copilot Studio agent NEXA uses official government websites, uploaded documents, and Dataverse as knowledge sources, with data populated from SharePoint through Power Automate.
 
@@ -111,7 +111,7 @@ The workflow is as follows:
 
 1. SCDF official documents are used as a knowledge source as well.
 
-1. The agent retrieves information from Dataverse, which Power Automate cloud flow populates with data from SharePoint. This approach enables equipment detection and interactive quiz generation and is used depending on the identified intent.
+1. The agent retrieves information from Dataverse, which a Power Automate cloud flow populates with data from SharePoint. This approach enables equipment detection and interactive quiz generation and is used depending on the identified intent.
 
 1. SCDF officers use multiple Power Apps apps that support everyday work.
 
@@ -121,7 +121,7 @@ The workflow is as follows:
 
 ## Takeaways
 
-This case study describes SCDF’s approach to digital transformation, which includes the use of Copilot Studio and Power Platform among other technologies. Here are key takeaways for IT professionals who are looking to implement a similar solution in their own organizations:
+This case study describes SCDF's approach to digital transformation, which includes the use of Copilot Studio and Power Platform among other technologies. Here are key takeaways for IT professionals who are looking to implement a similar solution in their own organizations:
 
 - Build internal capabilities and upskill the workforce by establishing a center of excellence or digital factory team.
 
