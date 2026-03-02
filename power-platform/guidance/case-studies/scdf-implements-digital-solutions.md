@@ -4,8 +4,8 @@ description: Learn how SCDF transformed manual processes into automated solution
 #customer intent: As a Power Platform user, I want to learn how SCDF empowers its officers with apps and agents so that I can get inspiration for building apps and agents for my organization.
 author: carcla
 ms.author: v-caclaesson
-ms.reviewer: v-caclaesson
-ms.date: 02/23/2026
+ms.reviewer: jhaskett-msft
+ms.date: 03/02/2026
 ms.topic: overview
 ---
 
