@@ -1,5 +1,5 @@
 ---
-title: Configure user permissions
+title: Configure user permissions (Deprecated)
 description: Learn how to configure user permissions to access the ALM Accelerator for Power Platform app and pipelines.
 ms.topic: how-to
 ms.date: 05/22/2023
@@ -10,7 +10,9 @@ ms.reviewer: sericks
 ms.custom: bap-template
 ---
 
-# Configure user permissions
+# Configure user permissions (Deprecated)
+
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 
 Makers can use the ALM Accelerator app to increase their productivity when they're developing solutions in Power Platform. Before your makers can use the app, you need to set up their user accounts in Microsoft Dataverse and Azure DevOps.
 
