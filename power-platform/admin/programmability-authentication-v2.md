@@ -28,7 +28,7 @@ The following steps are required to obtain a bearer token with the correct permi
 1. Navigate to the [Azure portal](https://portal.azure.com), then go to **Microsoft Entra ID**. Select **+ Add** > **App registration**.
 1. Fill in the **Register and application** page:
     1. **Name** — Give the application a recognizable name, for example **Power Platform Admin SDK**.
-    1. **Supported account types** — Select **Accounts in this organizational directory only (Single tenant)**.
+    1. **Supported account types** — Select **Single tenant only - Your Company Name Here**.
     1. **Redirect URI** — Skip this for now. You configure it in Step 3.
 1. Select **Register** to create the application. After registration completes, note the **Application (client) ID** and **Directory (tenant) ID** from the overview page — you need both later.
 
@@ -85,7 +85,7 @@ az ad app permission admin-consent --id <app-id>
 ## Step 3. Configure platform and redirect URI
 SDKs, PowerShell scripts, and desktop applications that authenticate on behalf of a user require a redirect URI so that Microsoft Entra can return tokens back to your application after authentication.
 
-Within your app registration, navigate to the **Manage - Authentication** tab. Select **Add a platform**, then choose **Mobile and desktop applications**. Select the following built-in redirect URI:
+Within your app registration, navigate to the **Manage - Authentication** tab. Select **Add a Redirect URI**, then choose **Mobile and desktop applications**. Select the following built-in redirect URI:
 
 `https://login.microsoftonline.com/common/oauth2/nativeclient`
 
