@@ -27,7 +27,7 @@ As the team develops, customizations within an environment can be committed to G
    > A limited number of licenses are available in Azure DevOps in the Basic Plan of the service. Go to [Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) for more information on pricing and licensing for Azure DevOps.
 
 - Azure DevOps Services permission for making commits and reading source files is required. Members of the Contributors security group have permission.
-- A Power Platform environment with Dataverse and the system administrator security role is required to connect to Git, which completes the initial binding of your environment or solution to a project in Azure DevOps.
+- A Power Platform environment with Dataverse and the system administrator security role is required to connect to Git or disconnect from Git, which completes the initial binding of your environment or solution to a project in Azure DevOps.
 
 ## Azure DevOps setup
 
