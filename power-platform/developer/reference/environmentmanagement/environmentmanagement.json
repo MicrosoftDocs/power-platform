@@ -138,7 +138,7 @@
           {
             "in": "query",
             "name": "$top",
-            "description": "Number of records to retrieve. If not set, five humdred (500) records are returned.",
+            "description": "Number of records to retrieve. Defaults to 500 if not set.",
             "type": "integer"
           },
           {
@@ -455,8 +455,8 @@
         "tags": [
           "Failover"
         ],
-        "summary": "Gets business continuity state full snapshot for specified environment including properties such as LastSyncTime (Preview).",
-        "description": "Gets business continuity state full snapshot for specified environment including properties such as LastSyncTime.",
+        "summary": "Gets business continuity snapshot for environment (Preview).",
+        "description": "Gets business continuity snapshot including LastSyncTime.",
         "operationId": "GetBusinessContinuityStateFullSnapshot",
         "produces": [
           "text/plain",
@@ -533,13 +533,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -598,13 +598,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -658,13 +658,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -723,13 +723,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -788,13 +788,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -829,8 +829,8 @@
         "tags": [
           "Failover"
         ],
-        "summary": "Performs force failover for the specified environment.\r\nEnvironment will be switched from it's current region to it's paired region as of LastSyncTime. Data changed or updated after this time will not be restored.\r\nBy providing this value, the customer acknowledges that the data might be lost after this time during the failover operation (Preview).",
-        "description": "Performs force failover for the specified environment.\r\nEnvironment will be switched from it's current region to it's paired region as of LastSyncTime. Data changed or updated after this time will not be restored.\r\nBy providing this value, the customer acknowledges that the data might be lost after this time during the failover operation.",
+        "summary": "Force failover for the specified environment (Preview).",
+        "description": "Fails over environment to its paired region as of LastSyncTime.",
         "operationId": "PerformForceFailover",
         "consumes": [
           "application/json",
@@ -853,13 +853,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -921,13 +921,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -981,13 +981,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -1046,13 +1046,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -1180,13 +1180,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -1218,7 +1218,7 @@
         "tags": [
           "EnvironmentCopy"
         ],
-        "summary": "Gets the list of environments that can be copied as the target environment (Preview).",
+        "summary": "Gets copy target candidate environments (Preview).",
         "description": "Gets the list of environments that can be copied as the target environment.",
         "operationId": "GetEnvironmentCopyCandidates",
         "produces": [
@@ -1237,13 +1237,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -1284,7 +1284,7 @@
         "tags": [
           "EnvironmentRestore"
         ],
-        "summary": "Gets the list of restore candidates when restore from the specified environment (Preview).",
+        "summary": "Gets restore candidate environments (Preview).",
         "description": "Gets the list of restore candidates when restore from the specified environment.",
         "operationId": "GetRestoreCandidates",
         "produces": [
@@ -1303,13 +1303,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -1374,13 +1374,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -1444,13 +1444,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -2007,13 +2007,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "The value which indicates whether the operation is a validated only request.\r\nExamples:\r\n    validateOnly=true with validateProperties non-empty: Validate only the listed properties, ignoring others even if present in the body.\r\n    validateOnly=true with empty/absent validateProperties: Validate the entire body (equivalent to full validation).\r\n    validateOnly=false or omitted: Process the full request(validate and execute).",
+            "description": "If true, validates the request without executing it.",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "The value which indicates what properties should be validated. Need to work together with ValidateOnly.\r\nProperties should be separated by ','.\r\nExample: \"property1,property2,property3\".",
+            "description": "Comma-separated property names to validate with ValidateOnly.",
             "type": "string"
           },
           {
@@ -2648,7 +2648,7 @@
       "properties": {
         "lastSyncTime": {
           "format": "date-time",
-          "description": "Gets or sets the last sync time that will be used to perform the force failover operation.",
+          "description": "Last sync time used for the force failover operation.",
           "type": "string"
         }
       },
@@ -2704,7 +2704,7 @@
       "properties": {
         "restorePointDateTime": {
           "format": "date-time",
-          "description": "Date and time of when the restore point is. Date and Time should with timezone offset per RFC 3339 (e.g., 2025-04-30T12:34:56+02:00).",
+          "description": "Restore point date-time with timezone offset per RFC 3339.",
           "type": "string"
         },
         "skipAuditData": {
@@ -2753,7 +2753,7 @@
       "properties": {
         "backupPointDateTime": {
           "format": "date-time",
-          "description": "The backup point date time. \r\nSet when the backup is created.",
+          "description": "The backup point date time. Set when backup is created.",
           "type": "string"
         },
         "label": {
@@ -2762,11 +2762,11 @@
         },
         "backupExpiryDateTime": {
           "format": "date-time",
-          "description": "The backup expiry date time. \r\nSet when the backup is created based on environment's backup retention in days.",
+          "description": "Backup expiry date time based on retention period in days.",
           "type": "string"
         },
         "id": {
-          "description": "The identifier of the environment backup.\r\nIf null, a new Guid will be generated when the backup is created.",
+          "description": "Environment backup ID. Auto-generated GUID if null.",
           "type": "string"
         },
         "createdBy": {

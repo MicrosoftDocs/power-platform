@@ -1988,6 +1988,11 @@
       "source_path": "power-platform/well-architected/intelligent-application/index.yml",
       "redirect_url": "/microsoft-copilot-studio/guidance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/white-papers/enterprise-security.md",
+      "redirect_url": "/power-platform/guidance/adoption/secure-overview",
+      "redirect_document_id": false
     }
   ]
 }

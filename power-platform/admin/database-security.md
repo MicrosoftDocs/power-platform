@@ -1,5 +1,5 @@
 ---
-title: Role-based security roles
+title: Role-based security roles for Dataverse
 description: Learn about how roles are used to control a user's access to a database and resrouces in an environment.
 ms.subservice: admin
 ms.author: paulliew
@@ -20,7 +20,7 @@ ms.custom:
   - sfi-ga-nochange
 ---
 
-# Role-based security roles
+# Role-based security roles for Dataverse
 
 Microsoft Dataverse uses a role-based security model to control access to a database and its resources in an environment. Use security roles to configure access to all resources in an environment or to specific apps and data in the environment. A combination of access levels and permissions in a security role determines which apps and data users can view and how they can interact with those apps and data.
 

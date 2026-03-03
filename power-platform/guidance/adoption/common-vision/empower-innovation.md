@@ -39,7 +39,7 @@ Typical objectives for empowering innovation and AI culture include:
 - **Identify citizen developer quick wins**: Demonstrate the value of citizen development through quick, high-impact projects.
 - **Encourage leaders to prioritize and allocate time to innovate**: Encourage leaders to prioritize innovation and allocate time for their teams to work on innovative projects.
 - **Create a plan for using AI**: Use AI to improve governance, identify inefficiencies, and provide support.
-- **Get senior business leaders to advocate for Power Platform**: Engage senior business leaders to champion the Power Platform and advocate for its adoption.
+- **Get senior business leaders to advocate for Power Platform**: Engage senior business leaders to champion Power Platform and advocate for its adoption.
 - **Foster Power Platform knowledge among interns and early career professionals**: Develop programs to educate and engage interns and early career professionals in Power Platform development.
 
 

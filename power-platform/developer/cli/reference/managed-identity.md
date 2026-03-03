@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac managed-identity
 
-Commands for managing Managed Identity records for Dataverse components
+Commands for managing Managed Identity records for Dataverse components.
 
 [!INCLUDE [managed-identity-intro](includes/managed-identity-intro.md)]
 

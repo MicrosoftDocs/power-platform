@@ -3,7 +3,7 @@ title: Limit sharing
 description: Limit how broadly makers can share canvas apps and solution-aware cloud flows in your Managed Environments.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/23/2025
+ms.date: 03/02/2026
 author: mikferland-msft 
 ms.author: miferlan
 ms.reviewer: sericks
@@ -35,7 +35,7 @@ To configure these rules:
 1. The sharing rules are located in the **Manage sharing** section.
 1. Choose the desired settings, then select **Save** to apply the changes.
 
-:::image type="content" source="media/managed-environment-limit-sharing.png" alt-text="Screenshot of an Edit Environment Management settings screen, with Limit sharing highlighted.":::
+:::image type="content" source="media/managed-environments-sharing-limit.png" alt-text="Screenshot of an Edit Environment Management settings screen, with Limit sharing highlighted.":::
 
 ## Canvas app sharing rules
 
@@ -59,8 +59,6 @@ To configure these rules:
 | Let people grant **Viewer** permissions when agents are shared | **When selected:** Owners and editors can share with any individual as a viewer and any security group.<br><br>**When not selected:** Owners and editors can't share with an individual as a viewer, nor can they share with a security group. This control doesn't prevent them from sharing their copilots with individuals as editors. |
 | Only share with individuals (no security groups) | If this setting is selected, owners and editors can only share with individuals as viewers. They can't share with a security group. This control doesn't affect an owner's or editor's ability to share with individuals as editors. |
 | Limit number of viewers who can access each agent | If **Only share with individuals (no security groups)** is selected, you can control the maximum number of viewers with whom an agent can be shared with. |
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
 
 To learn more about **Editor** and **Viewer** permissions on agents, go to [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance).
 

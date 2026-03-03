@@ -1,5 +1,5 @@
 ---
-title: Security roles and privileges
+title: Security roles and privileges for Dataverse
 description: Learn how to control access to data and resources with security roles and associated privileges.
 ms.subservice: admin
 author: paulliew
@@ -16,7 +16,7 @@ contributors:
   - lavanyapg
 ---
 
-# Security roles and privileges
+# Security roles and privileges for Dataverse
 
 To control who can access restricted or sensitive data and resources and what they can do with them, assign users to security roles. This article provides an overview of security roles and their associated privileges.
 

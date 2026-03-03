@@ -21,7 +21,7 @@ This article describes a common goal for Power Platform—getting leadership buy
 
 [Getting leadership buy-in](../executive-sponsorship.md) and organizational alignment is a common vision for Power Platform adoption because it ensures that the initiative has the necessary support and resources to succeed. Leadership buy-in helps secure funding, allocate resources, and prioritize the adoption efforts within the organization. When leaders are on board, they can champion the initiative, drive cultural change, and set the tone for its importance.
 
-Organizational alignment ensures that all departments and teams are working towards the same goals and understand the benefits of Power Platform. It fosters collaboration, reduces resistance to change, and ensures that the platform is used effectively across the organization. With leadership support and organizational alignment, the adoption process becomes smoother, more efficient, and more likely to deliver the desired outcomes, such as increased productivity, innovation, and return on investment (ROI).
+Organizational alignment ensures that all departments and teams are working toward the same goals and understand the benefits of Power Platform. It fosters collaboration, reduces resistance to change, and ensures that the platform is used effectively across the organization. With leadership support and organizational alignment, the adoption process becomes smoother, more efficient, and more likely to deliver the desired outcomes, such as increased productivity, innovation, and return on investment (ROI).
 
 ## Objectives
 

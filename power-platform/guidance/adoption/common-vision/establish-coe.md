@@ -1,7 +1,7 @@
 ---
 title: Establish a Center of Excellence with governance patterns and practices
 description: Learn how to establish a Center of Excellence with governance patterns and practices to manage and scale Power Platform adoption effectively.
-#customer intent: As a business leader, I want to establish a Center of Excellence with governance patterns and practices so that I can manage and scale the Power Platform effectively.
+#customer intent: As a business leader, I want to establish a Center of Excellence with governance patterns and practices so that I can manage and scale Power Platform effectively.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
@@ -91,12 +91,12 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for est
     - Develop and publish a catalog of [reusable app templates and components](../reusable.md) to help makers build with a reliable, reusable toolkit. Templates reduce development time and promote best practices.
     - [Document your data policy strategy](../dlp-strategy.md), [environment strategy](../environment-strategy.md), and [use case prioritization process](../solution-envisioning.md). [Publish this documentation](../wiki-community.md#sharepoint-communication-site) internally to ensure all stakeholders and makers have access to important information and guidelines.
     - Publish a comprehensive strategy and version-controlled governance documentation to maintain transparency and accountability in platform management.
-    - Create a Maker Portal, for example [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site), that includes onboarding collateral, development guidelines, self-guided learning resources, and success stories to support and inspire makers throughout their development journey.
+    - Create a Maker Portal (for example, [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site)) that includes onboarding collateral, development guidelines, self-guided learning resources, and success stories to support and inspire makers throughout their development journey.
     - Establish a detailed environment strategy that outlines the structure and management of different environments, ensuring optimal performance and security.
-    - Define app classifications and the corresponding Environment Strategy/data protection safeguards to support them, providing clear guidelines for app development and deployment.
+    - Define app classifications and the corresponding environment strategy/data protection safeguards to support them, providing clear guidelines for app development and deployment.
 - **Define and communicate roles and responsibilities**:
     - Establish foundational platform operating roles to provide clarity on "who does what" in managing the platform, ensuring efficient and effective operations.
-    - Define and communicate app classifications and support tiers with clear Service Level Agreements (SLAs). Document each classification and support tier. Share the documentation with all users, providing clarity on the level of support and response times they can expect.
+    - Define and communicate app classifications and support tiers with clear service-level agreements (SLAs). Document each classification and support tier. Share the documentation with all users, providing clarity on the level of support and response times they can expect.
     - Define platform terms and conditions for makers that set clear expectations on ownership, security, and self-support responsibilities. This documentation should outline the roles and responsibilities of makers, including guidelines on data security, compliance, and the maintenance of their applications.
 - **Establish a process to evaluate and prioritize use cases**:
     - Establish an idea intake process to streamline the submission, review, and approval of new solution ideas. This process should include clear guidelines on the required documentation, evaluation criteria, and timelines for each stage.
@@ -105,7 +105,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for est
     - Create a comprehensive decision matrix and incorporate it into the helpdesk request system. This integration ensures that users have access to the decision matrix when submitting support requests, helping them make informed decisions. 
     - Start the baseline of decision trees/matrix for developers. This baseline should include common development scenarios and best practices, serving as a foundation for more detailed and specific decision trees in the future.
 - **Design an [onboarding process](../onboard-makers.md) that doesn't hinder creativity**:
-    - Create a Maker Portal, for example [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site), with comprehensive onboarding collateral, detailed development guidelines, self-guided learning modules, and inspiring success stories. This portal should serve as a one-stop resource for makers, providing them with the tools and information they need to succeed.
+    - Create a Maker Portal (for example, [a SharePoint communication site](../wiki-community.md#sharepoint-communication-site)) with comprehensive onboarding collateral, detailed development guidelines, self-guided learning modules, and inspiring success stories. This portal should serve as a one-stop resource for makers, providing them with the tools and information they need to succeed.
     - Resolve barriers by developing training. Include a starter toolbox with essential resources and incorporate gamification elements and other incentives to encourage participation and engagement.
     - Develop an onboarding newsletter for citizen developers. This newsletter should guide them on Power Platform governance, highlight available training resources, and provide updates on best practices and new features. Regular communication helps keep developers informed and aligned with governance policies.
 - **Provide guidelines for platform maintenance**:
@@ -117,7 +117,7 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for est
     - Partner with the security team to align on roles and responsibilities. Clearly define who is responsible for various aspects of data security, ensuring there are no gaps or overlaps.
     - Work with the cybersecurity team to plan and implement security monitoring routines. Establish regular monitoring and auditing processes to detect and respond to security threats promptly. 
     - Define data sensitivity and security assessment expectations for makers. Provide clear guidelines on how to classify data based on sensitivity and the required security measures for each classification.
-    - Remove integration friction and better utilize authoritative data sources by creating an approved catalog of connectors to Line of Business (LOB) systems. This catalog should include vetted and secure connectors that makers can use confidently.
+    - Remove integration friction and better use authoritative data sources by creating an approved catalog of connectors to line-of-business systems. This catalog should include vetted and secure connectors that makers can use confidently.
     - Define data domains and appoint data stewards for each domain. Data stewards should be responsible for managing data quality, security, and compliance within their respective domains.
     - Establish data management practices for each solution, determining the type of data involved, such as personal data, Sensitive Personally Identifiable Information (SPII), Critical Infrastructure Information (CII), and records retention policies. Ensure that each app complies with relevant data protection regulations and policies.
 - **Drive reusability and standardization**: 
@@ -130,5 +130,5 @@ Typical initiatives, aligned with some of the [objectives](#objectives), for est
     - Develop automation and alerting for key assurance controls. Implement automated processes to monitor compliance with data policies and generate alerts for any violations or potential risks. 
 - **Strive for continuous improvement**:
     - Develop a project pre/postmortem process to ensure lessons learned are actively applied. This process should include structured reviews before and after project completion to identify successes, challenges, and areas for improvement. Document these insights and integrate them into future projects to enhance overall performance.
-    - Establish routine Center of Excellence (CoE) monitoring to ensure full visibility of how the platform is being used. Implement regular audits and reporting mechanisms to track usage patterns, compliance, and performance metrics. Regular monitoring helps maintain oversight and drive continuous improvement. 
+    - Establish routine Center of Excellence (CoE) monitoring to ensure full visibility into how the platform is being used. Implement regular audits and reporting mechanisms to track usage patterns, compliance, and performance metrics. Regular monitoring helps maintain oversight and drive continuous improvement. 
     - Create a transparency and monitoring loop on the objectives. Formalize these efforts by aligning them with organizational goals and establishing clear metrics for success. Regularly review and communicate progress to stakeholders to ensure alignment and accountability.

@@ -1068,24 +1068,24 @@
             "required": true,
             "type": "string",
             "enum": [
-              "AppPass",
               "AI",
-              "PortalLogins",
-              "PortalViews",
-              "PerFlowPlan",
-              "VAConversations",
+              "AppPass",
               "AppPassForTeams",
-              "PAUnattendedRPA",
-              "PowerPagesAuthenticated",
-              "PowerPagesAnonymous",
-              "PAHostedRPA",
               "Invoice",
-              "PortalAddOns",
-              "PowerAutomatePerProcess",
               "MCSSessions",
               "MCSMessages",
+              "PAHostedRPA",
+              "PAUnattendedRPA",
+              "PerFlowPlan",
+              "PortalAddOns",
+              "PortalLogins",
+              "PortalViews",
+              "PowerPagesAuthenticated",
+              "PowerPagesAnonymous",
+              "PowerAutomatePerProcess",
+              "ProcessMiningDataStorage",
               "SCMessages",
-              "ProcessMiningDataStorage"
+              "VAConversations"
             ]
           },
           {
@@ -1843,24 +1843,24 @@
     "ExternalCurrencyType": {
       "description": "Available currency type which can be allocated to environment.",
       "enum": [
-        "AppPass",
         "AI",
-        "PortalLogins",
-        "PortalViews",
-        "PerFlowPlan",
-        "VAConversations",
+        "AppPass",
         "AppPassForTeams",
-        "PAUnattendedRPA",
-        "PowerPagesAuthenticated",
-        "PowerPagesAnonymous",
-        "PAHostedRPA",
         "Invoice",
-        "PortalAddOns",
-        "PowerAutomatePerProcess",
         "MCSSessions",
         "MCSMessages",
+        "PAHostedRPA",
+        "PAUnattendedRPA",
+        "PerFlowPlan",
+        "PortalAddOns",
+        "PortalLogins",
+        "PortalViews",
+        "PowerPagesAuthenticated",
+        "PowerPagesAnonymous",
+        "PowerAutomatePerProcess",
+        "ProcessMiningDataStorage",
         "SCMessages",
-        "ProcessMiningDataStorage"
+        "VAConversations"
       ],
       "type": "string",
       "example": "PowerAutomatePerProcess"
@@ -1893,11 +1893,11 @@
       "type": "object",
       "properties": {
         "allowOtherPremiumConnectors": {
-          "description": "A flag indicating whether metered usage that involves premium connectors may be attributed.",
+          "description": "Whether metered usage with premium connectors may be attributed.",
           "type": "boolean"
         },
         "requiredApis": {
-          "description": "A list of connectors, at least one of which must be involved in the metered usage to be attributed.",
+          "description": "Connectors where at least one must be in the metered usage.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/BillingPolicyConditionsApiModel"
@@ -2285,7 +2285,7 @@
           "$ref": "#/definitions/BillingPolicyStatus"
         },
         "geo": {
-          "description": "Specify the desired resource location for creation of an Azure Power Platform account for billing. Once set, this property cannot be updated. Power Platform environments using this ISV Contract for pay-as-you-go billing must be in the same location.",
+          "description": "Resource location for billing account creation. Immutable.",
           "type": "string",
           "items": {
             "example": [
@@ -2965,19 +2965,37 @@
       },
       "additionalProperties": false
     },
-    "NeptuneReservationErrorInfo": {
+    "IErrorDetail": {
       "type": "object",
       "properties": {
-        "capacityType": {
+        "code": {
           "type": "string"
         },
-        "environmentType": {
+        "message": {
           "type": "string"
         },
-        "trialScenarioType": {
+        "target": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "NeptuneValidationErrorMessage": {
+      "type": "object",
+      "properties": {
+        "message": {
           "type": "string"
         },
-        "tenantCapacityLicenseModel": {
+        "code": {
+          "type": "string"
+        },
+        "operationCode": {
+          "type": "string"
+        },
+        "helpLink": {
+          "type": "string"
+        },
+        "target": {
           "type": "string"
         }
       },
@@ -3002,36 +3020,10 @@
           "type": "string"
         },
         "details": {
-          "type": "array"
-        }
-      },
-      "additionalProperties": false
-    },
-    "NeptuneValidationErrorMessage": {
-      "type": "object",
-      "properties": {
-        "message": {
-          "type": "string",
-          "readOnly": true
-        },
-        "code": {
-          "type": "string",
-          "readOnly": true
-        },
-        "operationCode": {
-          "type": "string",
-          "readOnly": true
-        },
-        "helpLink": {
-          "type": "string",
-          "readOnly": true
-        },
-        "target": {
-          "type": "string",
-          "readOnly": true
-        },
-        "reservationErrorInfo": {
-          "$ref": "#/definitions/NeptuneReservationErrorInfo"
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/IErrorDetail"
+          }
         }
       },
       "additionalProperties": false

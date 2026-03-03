@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac canvas
 
-Operating with Power Apps .msapp files
+Operating with Power Apps .msapp files.
 
 [!INCLUDE [canvas-intro](includes/canvas-intro.md)]
 

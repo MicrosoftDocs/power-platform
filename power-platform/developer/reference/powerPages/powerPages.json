@@ -268,6 +268,83 @@
         }
       }
     },
+    "/powerpages/environments/{environmentId}/websites/{id}/convertToProduction": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Convert a trial Power Pages website to production.",
+        "description": "Convert a trial website to a production website.",
+        "operationId": "ConvertTrialToProduction",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ConvertTrialToProductionRequest"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "headers": {
+              "Operation-Location": {
+                "description": "Location of a resource",
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
     "/powerpages/environments/{environmentId}/websites/{id}/createWafRules": {
       "put": {
         "tags": [
@@ -1486,7 +1563,7 @@
         },
         "selectedBaseLanguage": {
           "format": "int32",
-          "description": "Language unique identifier (ID) of the website - https://go.microsoft.com/fwlink/?linkid=2208135",
+          "description": "Language ID - https://go.microsoft.com/fwlink/?linkid=2208135",
           "type": "integer"
         },
         "subdomain": {
@@ -1496,6 +1573,26 @@
         "websiteRecordId": {
           "description": "Dataverse record unique identifier (ID) of the website",
           "type": "string"
+        }
+      }
+    },
+    "ConvertTrialToProductionRequest": {
+      "type": "object",
+      "properties": {
+        "EnableCDN": {
+          "description": "Enable Content Delivery Network (CDN) for the website",
+          "default": false,
+          "type": "boolean"
+        },
+        "EnableWAF": {
+          "description": "Enable Web Application Firewall (WAF) for the website",
+          "default": false,
+          "type": "boolean"
+        },
+        "UseDynamics365PortalAddOnLicense": {
+          "description": "Use Dynamics 365 Portal Add-On License for the website",
+          "default": false,
+          "type": "boolean"
         }
       }
     },
@@ -1608,7 +1705,7 @@
         },
         "selectedBaseLanguage": {
           "format": "int32",
-          "description": "Language unique identifier (ID) of the website - https://go.microsoft.com/fwlink/?linkid=2208135",
+          "description": "Language ID - https://go.microsoft.com/fwlink/?linkid=2208135",
           "type": "integer"
         },
         "customHostNames": {
