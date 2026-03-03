@@ -4,7 +4,7 @@ description: Overview of Microsoft Entra setup for calling Power Platform API an
 author: laneswenka
 ms.reviewer: sericks
 ms.topic: reference
-ms.date: 03/02/2026
+ms.date: 03/03/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType:
@@ -17,21 +17,20 @@ ms.custom: sfi-ropc-nochange
 This article provides an overview of the Microsoft Entra setup for calling Power Platform API. To access resources available through the Power Platform API, you must get a bearer token from Microsoft Entra and send it as a header along with each request. Depending on the identity type you're supporting (user vs. service principal) there are different flows to obtain this bearer token, as described in this article.
 
 The following steps are required to obtain a bearer token with the correct permissions:
+
 1. Create an application registration in your Microsoft Entra tenant
 2. Configure API permissions
 3. Configure platform and redirect URI
-4. Configure Certificates and Secrets (optional)
+4. Configure certificates and secrets (optional)
 5. Request an access token
 
 ## Step 1. Create an application registration
-Navigate to the [Azure portal](https://portal.azure.com), then go to **Microsoft Entra ID** > **App registrations** > **New registration**.
-
-Fill in the registration form:
-- **Name** — Give the application a recognizable name, for example `Power Platform Admin SDK`.
-- **Supported account types** — Select **Accounts in this organizational directory only (Single tenant)**.
-- **Redirect URI** — Skip this for now. You configure it in Step 3.
-
-Select **Register** to create the application. After registration completes, note the **Application (client) ID** and **Directory (tenant) ID** from the overview page — you need both later.
+1. Navigate to the [Azure portal](https://portal.azure.com), then go to **Microsoft Entra ID**. Select **+ Add** > **App registration**.
+1. Fill in the **Register and application** page:
+    1. **Name** — Give the application a recognizable name, for example **Power Platform Admin SDK**.
+    1. **Supported account types** — Select **Accounts in this organizational directory only (Single tenant)**.
+    1. **Redirect URI** — Skip this for now. You configure it in Step 3.
+1. Select **Register** to create the application. After registration completes, note the **Application (client) ID** and **Directory (tenant) ID** from the overview page — you need both later.
 
 You can also create the registration using Azure CLI:
 
