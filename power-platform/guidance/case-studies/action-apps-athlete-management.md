@@ -6,7 +6,7 @@ author: carcla
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
-ms.date: 03/02/2026
+ms.date: 03/03/2026
 ms.topic: overview
 ---
 
@@ -30,7 +30,7 @@ Action Apps aimed to provide a solution where sports organizations can own their
 
 ## Solution
 
-Action Apps uses a suite of Microsoft technologies to build smart and secure solutions. By using Power Apps, Azure, and Microsoft 365, they built an athlete management system (AMS). The AMS consists of three main modules that centralize analytics and insights based on athlete performance and health data. An operational layer supports day-to-day operations, and an AI agent, called AAVA, lets users ask questions in natural language and get instant answers.
+Action Apps uses a suite of Microsoft technologies to build smart and secure solutions. By using Power Apps, Azure, and Microsoft 365, they built an athlete management system (AMS).
 
 > The Action Apps AMS transformed the way we worked with our data. The data platform allowed us to ingest data in an instant and gave us amazing interactivity with the data visualizations in Power BI. This allowed us to measure session and game performance faster and helped us make better and more informed decisions.
 >
@@ -38,7 +38,11 @@ Action Apps uses a suite of Microsoft technologies to build smart and secure sol
 
 ### Athlete management system (AMS)
 
-A model-driven app serves as a central hub for AMS. The Sports Science module provides centralized management of athlete data, covering injury tracking, event planning, and player information. It ensures data quality through structured workflows and consistent standards, delivering reliable insights that teams can act on.
+The athlete management system (AMS) consists of three main modules that centralize analytics and insights based on athlete performance and health data. An operational layer supports day-to-day operations, and an AI agent, called [AAVA](#aava-the-ai-agent), lets users ask questions in natural language and get instant answers.
+
+#### Sports Science
+
+The Sports Science module, a model-driven app, serves as a central hub for AMS. This module provides centralized management of athlete data, covering injury tracking, event planning, and player information. It ensures data quality through structured workflows and consistent standards, delivering reliable insights that teams can act on.
 
 Key capabilities include:
 
@@ -56,7 +60,9 @@ This image shows the Power BI report embedded in the app, which presents athlete
 
 :::image type="content" source="media/action-apps-athlete-management/player-report.png" alt-text="Screenshot of a Power BI player report showing charts, stats panels, and filters for athlete performance analytics." lightbox="media/action-apps-athlete-management/player-report.png":::
 
-The **Electronic Medical Records** (EMR), also built inside the model-driven app, was developed in collaboration with elite sports teams to meet the specific needs of medical professionals and sports scientists. It centralizes athlete health data and supports clinical decision-making through a robust, secure, and interoperable platform.
+#### Electronic Medical Records
+
+The Electronic Medical Records (EMR) module, also built inside the model-driven app, was developed in collaboration with elite sports teams to meet the specific needs of medical professionals and sports scientists. It centralizes athlete health data and supports clinical decision-making through a robust, secure, and interoperable platform.
 
 Key features include:
 
@@ -66,15 +72,19 @@ Key features include:
 
 - **Integrated coding compliance**: Uses Orchard Sports Injury and Illness Classification System (OSIICS), International Classification of Diseases (ICD), and Sports Medicine Diagnostic Coding System (SMDCS) for consistent data entry and reporting to governing bodies.
 
-The **Scout App** is a Power Apps canvas app optimized for smartphones and tablets that modernizes athlete evaluation workflows. Key features include:
+#### Scout App
 
-- **Attribute-based scoring**: Scouts can evaluate athletes across multiple attributes, generating an overall score to identify who to follow up with for continued tracking.
+The Scout App is a Power Apps canvas app optimized for smartphones and tablets that modernizes athlete evaluation workflows. Key features include:
+
+- **Attribute-based scoring**: Scouts can evaluate athletes across multiple attributes and generate an overall score to identify who to follow up with for continued tracking.
 
 - **Secure data handling**: Role-based permissions ensure that sensitive information is stored safely and data is no longer on paper, reducing the risk of loss or damage.
 
 - **Structured data capture**: The app catalogs athlete evaluations digitally and includes athlete development insights to support long-term tracking and analysis.
 
-A fourth pillar of the solution is the **operational layer achieved using seamless integration with Microsoft 365**.
+#### Operational layer
+
+A fourth pillar of the solution is the operational layer achieved using seamless integration with Microsoft 365. This layer:
 
 - Enhances collaboration using Microsoft Teams, SharePoint, and Outlook for seamless communication and document management.
 
@@ -82,7 +92,9 @@ A fourth pillar of the solution is the **operational layer achieved using seamle
 
 - Supports centralized scheduling to reduce conflicts and optimize resource allocation.
 
-**The management layer** of the AMS solution helps Action Apps achieve their unique goals for their application ecosystem:
+#### Management layer
+
+The management layer of the AMS solution helps Action Apps achieve their unique goals for their application ecosystem:
 
 - **Own your own data**: Organizations manage their data directly within their Microsoft environment using familiar tools. This includes Microsoft 365 applications, such as SharePoint, Outlook, Teams, Forms, Word, Excel, and PowerPoint, and Power Platform, Dataverse, and Azure services.
 
