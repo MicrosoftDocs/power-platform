@@ -5,13 +5,13 @@ description: Learn how SCDF transformed manual processes into automated solution
 author: carcla
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
-ms.date: 03/02/2026
+ms.date: 03/03/2026
 ms.topic: overview
 ---
 
 # Singapore Civil Defence Force implements digital solutions using Power Platform and Copilot Studio
 
-The Singapore Civil Defence Force (SCDF), operating under the Ministry of Home Affairs (MHA), consistently embraces innovation and technology to enhance its operational capabilities and ensure the safety of its personnel in fulfilling its mission of protecting lives and property.
+The [Singapore Civil Defence Force (SCDF)](https://www.scdf.gov.sg/), operating under the Ministry of Home Affairs (MHA), consistently embraces innovation and technology to enhance its operational capabilities and ensure the safety of its personnel in fulfilling its mission of protecting lives and property.
 
 Partnering closely with HTX (Home Team Science and Technology Agency), the statutory board of MHA that integrates science and engineering capabilities to innovate and deliver transformative and operationally ready solutions for public safety and security, SCDF set out to upskill its workforce by creating apps and agents, encouraging everyone to be part of the change and be a digital frontliner.
 
@@ -25,15 +25,15 @@ To overcome these challenges, SCDF established a Digital Factory team with HTX i
 
 ## Solution
 
-SCDF is embarking on a digital transformation journey to raise the skill levels of its workforce through the development of applications and conversational agents. At the forefront of this initiative is NEXA (Next Evolution Assistant), a Microsoft Copilot Studio conversational agent that streamlines information retrieval from government websites and internal knowledge repositories. Before building NEXA, SCDF deployed the following apps:
+SCDF is embarking on a digital transformation journey to raise the skill levels of its workforce through the development of applications and conversational agents. At the forefront of this initiative is [NEXA](#next-evolution-assistant-nexa) (Next Evolution Assistant), a Microsoft Copilot Studio conversational agent that streamlines information retrieval from government websites and internal knowledge repositories. Before building NEXA, SCDF deployed the following apps:
 
-- **Automated Duty Assignment App (ADA)**: Streamlines firefighter duty rostering through automation, improving scheduling efficiency and reducing manual effort.
+- [Automated Duty Assignment App (ADA)](#automated-duty-assignment-app-ada): Streamlines firefighter duty rostering through automation, improving scheduling efficiency and reducing manual effort.
 
-- **Food Indentation and Consumption App (FICA)**: Streamlines food indentation and monitors consumption rates to reduce food wastage.
+- [Food Indentation and Consumption App (FICA)](#food-indentation-and-consumption-app-fica): Streamlines food indentation and monitors consumption rates to reduce food wastage.
 
-- **Interactive Troubleshooting App (ITA)**: Provides interactive troubleshooting guides that enable SCDF frontliners to perform self-help diagnostics and resolve issues independently to enhance appliance operational readiness.
+- [Interactive Troubleshooting App (ITA)](#interactive-troubleshooting-app-ita): Provides interactive troubleshooting guides that enable SCDF frontliners to perform self-help diagnostics and resolve issues independently to enhance appliance operational readiness.
 
-- **Duty Officer Rostering App (DORA)**: Streamlines regimental duty scheduling through automation, ensuring fair rotation and balanced duty allocation.
+- [Duty Officer Rostering App (DORA)](#duty-officer-rostering-app-dora): Streamlines regimental duty scheduling through automation, ensuring fair rotation and balanced duty allocation.
 
 Key benefits since the start of this journey:
 
