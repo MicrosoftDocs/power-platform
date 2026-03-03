@@ -66,7 +66,7 @@ The Electronic Medical Records (EMR) module, also built inside the model-driven 
 
 Key features include:
 
-- **Clinical documentation**: Supports SOAP notes, surgery tracking, metadata capture, and secure document storage for comprehensive medical records.
+- **Clinical documentation**: Supports SOAP (Subjective, Objective, Assessment, and Plan) notes, surgery tracking, metadata capture, and secure document storage for comprehensive medical records.
 
 - **Injury and availability tracking**: Enables monitoring of athlete injuries and player availability to inform training and competition decisions.
 
@@ -130,7 +130,7 @@ The following image shows AAVA in action. The user asks, *"What is the average t
 
 ## Architecture
 
-The following diagram shows the technologies that Action Apps used to build a trusted and secure solution for their clients. They deploy the entire platform within each customer's Microsoft environment, using Azure's built-in security, governance, and compliance capabilities.
+The following diagram shows the technologies that Action Apps used to build a trusted and secure solution for their clients. They deploy the entire platform in each customer's Microsoft environment and use Azure's built-in security, governance, and compliance capabilities.
 
 :::image type="content" source="media/action-apps-athlete-management/architecture.png" alt-text="Diagram showing the technologies used including Power Apps, Power BI, Power Automate, Dataverse, Microsoft 365, and Azure services." lightbox="media/action-apps-athlete-management/architecture.png":::
 
@@ -140,11 +140,11 @@ Core security and capabilities:
 
 - **Identity and access management**: Microsoft Entra ID provides granular role-based access control to prevent unauthorized access to sensitive data and applications.
 
-- **Threat protection**: Various security tools, such as Azure Security Center and Microsoft Sentinel, can detect threats, surface potential vulnerabilities, and offer actionable remediation guidance.
+- **Threat protection**: Various security tools, such as Azure Security Center and Microsoft Sentinel, detect threats, surface potential vulnerabilities, and offer actionable remediation guidance.
 
 - **Data encryption**: All data is encrypted at REST and in transit.
 
-- **DDoS Protection**: Azure's built-in DDoS Protection helps mitigate attacks and protect against potential downtime.
+- **DDoS Protection**: Azure's built-in distributed denial-of-service (DDoS) protection helps mitigate attacks and protect against potential downtime.
 
 - **Continuous monitoring and compliance reporting**: Azure continuously monitors its infrastructure and logs and provides compliance reporting to help organizations maintain security readiness.
 
@@ -152,7 +152,7 @@ The AMS architecture is designed to unify data from multiple sources while maint
 
 - Data from external systems is integrated via APIs, ensuring secure and standardized ingestion.
 
-- End users can upload spreadsheets and Comma‑Separated Values (CSV) files, and Data Factory ingests the data.
+- End users can upload spreadsheets and comma‑separated values (CSV) files, and Data Factory ingests the data.
 
 - Users primarily use tools they're already familiar with: SharePoint, Outlook, Teams, and Forms, integrated directly into the AMS system. It also connects to OneDrive, Office 365 Groups, Word, and Excel. Action Apps uses the applications that customers already use, such as:
 
@@ -204,7 +204,7 @@ Action Apps successfully deployed their athlete management system (AMS) solution
 
 ## Looking ahead
 
-Action Apps plans to build deeper AI integration, including using Copilot Studio to build agents that surface in the Power Apps applications. Action Apps also plans to build advanced player development tools and add API connections to further expand the data ecosystem.
+Action Apps plans to build deeper AI integration, including using Microsoft Copilot Studio to build agents that surface in the Power Apps applications. Action Apps also plans to build advanced player development tools and add API connections to further expand the data ecosystem.
 
 Action Apps continues to lead the way in revolutionizing athlete management, providing organizations with innovative, secure, and future-proof solutions that adapt to the complexities of modern sports performance.
 
