@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 11/19/2025
+ms.date: 03/02/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -15,6 +15,30 @@ search.audienceType:
 # Programmability and extensibility - what's new or changed
 
 Learn about the latest changes and new capabilities for Power Platform API and admin SDKs.
+
+## January 2026
+
+| Item | Type | Description |
+|------|------|-------------|
+| Delete Copilot Agent | API | New endpoint: [Delete Copilot Agent](/rest/api/power-platform/copilotstudio/bots/delete-copilot-agent) |
+| Get Finance and Operations Maintenance Settings | API | New endpoint: [Get Finance and Operations Maintenance Settings](/rest/api/power-platform/dynamics/finance-and-operations-maintenance-settings/get-fin-ops-maintenance-settings) |
+| Update Finance and Operations Maintenance Settings | API | New endpoint: [Update Finance and Operations Maintenance Settings](/rest/api/power-platform/dynamics/finance-and-operations-maintenance-settings/update-fin-ops-maintenance-settings) |
+| Get Rule Set | API | New endpoint: [Get Rule Set](/rest/api/power-platform/governance/rule-sets/get-rule-set) |
+| Create Rule Set | API | New endpoint: [Create Rule Set](/rest/api/power-platform/governance/rule-sets/create-rule-set) |
+| List Rule Sets For Tenant | API | New endpoint: [List Rule Sets For Tenant](/rest/api/power-platform/governance/rule-sets/get-rule-set-list-for-tenant) |
+| Update Rule Set | API | New endpoint: [Update Rule Set](/rest/api/power-platform/governance/rule-sets/update-rule-set) |
+| Delete Rule Set | API | New endpoint: [Delete Rule Set](/rest/api/power-platform/governance/rule-sets/delete-rule-set) |
+| Convert Trial To Production | API | New endpoint: [Convert Trial To Production](/rest/api/power-platform/powerpages/websites/convert-trial-to-production) |
+| Get User Per Flow Capacity Source | API | New endpoint: [Get User Per Flow Capacity Source](/rest/api/power-platform/licensing/user-per-flow-capacity-source/get-user-per-flow-capacity-source) |
+| Get User Per Flow Capacity Source Flow Context Summary | API | New endpoint: [Get User Per Flow Capacity Source Flow Context Summary](/rest/api/power-platform/licensing/user-per-flow-capacity-source/get-user-per-flow-capacity-source-flow-context-summary) |
+| Get User Per Flow Capacity Source Flow Context Summary For User ID | API | New endpoint: [Get User Per Flow Capacity Source Flow Context Summary For User ID](/rest/api/power-platform/licensing/user-per-flow-capacity-source/get-user-per-flow-capacity-source-flow-context-summary-for-user-id) |
+| Get User Per Flow Capacity Source Tenant Context Summary | API | New endpoint: [Get User Per Flow Capacity Source Tenant Context Summary](/rest/api/power-platform/licensing/user-per-flow-capacity-source/get-user-per-flow-capacity-source-tenant-context-summary) |
+| Get User Per Flow Capacity Source User Context Summary | API | New endpoint: [Get User Per Flow Capacity Source User Context Summary](/rest/api/power-platform/licensing/user-per-flow-capacity-source/get-user-per-flow-capacity-source-user-context-summary) |
+| Get User Per Flow Capacity Source User Context Summary For User ID | API | New endpoint: [Get User Per Flow Capacity Source User Context Summary For User ID](/rest/api/power-platform/licensing/user-per-flow-capacity-source/get-user-per-flow-capacity-source-user-context-summary-for-user-id) |
+| Powerplatform-Management (Python) | SDK | [Monthly Release](https://pypi.org/project/powerplatform-management/2.0.3317.207/) |
+| Microsoft.PowerPlatform.Management (C#) | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3317.207) |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/2.3.2) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
 
 ## October 2025
 | Item | Type | Description |
