@@ -72,7 +72,7 @@ From here, you must select the permissions you require. These are grouped by [**
 > [!NOTE]
 > Power Platform API makes use of delegated permissions only at this time. For applications that run with a user context, you request delegated permissions using the **scope** parameter. These permissions delegate the privileges of the signed-in user to your application, allowing it to act as the user when calling Power Platform API endpoints.
 >
->For service principal identities, application permissions aren't used. Instead service principals are treated as Power Platform Administrators today and must be registered by following [PowerShell - Create service principal](powershell-create-service-principal.md).
+> For service principal identities, application permissions aren't used. Instead, after creating your app registration, assign it an RBAC role to grant scoped permissions (such as Contributor or Reader). See [Tutorial: Assign RBAC roles to service principals](programmability-tutorial-rbac-role-assignment.md).
 
 After the required permissions are added to the application, select **Grant admin consent** to complete the setup. Granting admin consent authorizes the permissions for all users in the tenant so they aren't prompted with an interactive consent dialog the first time they use your app. If you prefer interactive consent per user, we recommend following the [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
@@ -138,7 +138,7 @@ Use the **access_token** value in subsequent calls to the Power Platform API wit
 Be sure to read the Certificates and Secrets section above. Then, send a POST request via HTTP to Microsoft Entra ID with a client secret payload. This is often referred to as service principal authentication.
 
 > [!Important]
-> This can only be used after you have registered this client application ID with Microsoft Power Platform following either the related [PowerShell](./powershell-create-service-principal.md) or [REST](./powerplatform-api-create-service-principal.md) documentation.
+> Before using service principal authentication, complete Steps 1-4 above to create and configure your app registration with a certificate or client secret. Then assign the service principal an RBAC role to control its level of access. See [Tutorial: Assign RBAC roles to service principals](programmability-tutorial-rbac-role-assignment.md) for a step-by-step guide.
 
 ```HTTP
 Content-Type: application/x-www-form-urlencoded
@@ -159,7 +159,7 @@ The above example contains placeholders that you can retrieve from your client a
 }
 ```
 
-Use the **access_token** value in subsequent calls to the Power Platform API with the **Authorization** HTTP header. As noted above, the Service Principal flow doesn't use application permissions and is instead, for now, treated as a Power Platform Administrator for all calls that they make.
+Use the **access_token** value in subsequent calls to the Power Platform API with the **Authorization** HTTP header. The service principal's effective permissions are determined by the RBAC role assigned to it. To learn how to assign a role, see [Tutorial: Assign RBAC roles to service principals](programmability-tutorial-rbac-role-assignment.md).
 
 ## Quick start with Azure CLI
 
@@ -291,7 +291,7 @@ asyncio.run(main())
 Confidential client authentication uses a client secret or certificate and doesn't require user interaction. This flow is best for background services, pipelines, and automation.
 
 > [!Important]
-> Before using service principal authentication, you must register the service principal with Microsoft Power Platform by following [PowerShell - Create service principal](powershell-create-service-principal.md) or [REST - Create service principal](powerplatform-api-create-service-principal.md).
+> Before using service principal authentication, complete Steps 1-4 above to create and configure your app registration with a certificate or client secret. Then assign the service principal an RBAC role to control its level of access. See [Tutorial: Assign RBAC roles to service principals](programmability-tutorial-rbac-role-assignment.md).
 
 #### [PowerShell](#tab/powershell-confidential)
 
@@ -377,5 +377,6 @@ asyncio.run(main())
 ---
 
 ### Related content
-[Creating a service principal application via API (preview)](powerplatform-api-create-service-principal.md)<br/>
-[PowerShell - Create service principal](powershell-create-service-principal.md)
+[Tutorial: Assign RBAC roles to service principals](programmability-tutorial-rbac-role-assignment.md)<br/>
+[Role-based access control for Power Platform admin center](security/role-based-access-control.md)<br/>
+[Permission reference](programmability-permission-reference.md)

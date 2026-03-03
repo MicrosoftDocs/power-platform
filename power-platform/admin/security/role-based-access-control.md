@@ -65,7 +65,7 @@ Role assignments are links between a security principal, a built-in role definit
 
 RBAC assignments can be managed via:
 
-- **Power Platform APIs and SDKs:** Programmatic options for managing roles, suitable for automation and integration in larger organizations.  
+- **Power Platform APIs and SDKs:** Programmatic options for managing roles, suitable for automation and integration in larger organizations. For a step-by-step walkthrough, see [Tutorial: Assign RBAC roles to service principals](../programmability-tutorial-rbac-role-assignment.md).
 
 ## Data storage and reliability
 
@@ -85,4 +85,4 @@ The following built-in roles are available to assign to users, groups, and servi
 | Power Platform contributor                        | ff954d61-a89a-4fbe-ace9-01c367b89f87      | /tenants/{0}                                 | Can manage and read all resources, but can't make or change role assignments                                                           |
 | Power Platform owner                              | 0cb07c69-1631-4725-ab35-e59e001c51ea      | /tenants/{0}                                 | All permissions                                                          |
 
-For detailed reference on permissions, roles, and integration, see [Power Platform API reference](/rest/api/power-platform/).
+For detailed reference on permissions, roles, and integration, see [Power Platform API reference](/rest/api/power-platform/). To learn how to assign these roles programmatically, see [Tutorial: Assign RBAC roles to service principals](../programmability-tutorial-rbac-role-assignment.md).

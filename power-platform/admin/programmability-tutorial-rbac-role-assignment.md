@@ -33,8 +33,7 @@ In this tutorial, you'll learn to:
 
 ## Prerequisites
 
-- A Microsoft Entra app registration configured for the Power Platform API. For guidance, see [Authentication - create your first app registration](programmability-authentication-v2.md).
-- A service principal registered with Power Platform. For guidance, see [Creating a service principal](powershell-create-service-principal.md).
+- A Microsoft Entra app registration configured for the Power Platform API, with a certificate or client secret for service principal authentication. For guidance, see [Authentication](programmability-authentication-v2.md).
 - The **Enterprise Application Object ID** for the service principal (found in Microsoft Entra ID > Enterprise applications).
 - The calling identity must have the **Power Platform Administrator** or **Power Platform role-based access control administrator** role.
 
