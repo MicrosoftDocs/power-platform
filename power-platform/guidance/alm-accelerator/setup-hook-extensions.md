@@ -1,5 +1,5 @@
 ---
-title: Configure pipeline extension points
+title: Configure pipeline extension points (Deprecated)
 description: Learn how to use extension points to customize your deployment pipelines in the ALM Accelerator for Power Platform.
 ms.topic: how-to
 ms.date: 04/07/2023
@@ -10,7 +10,9 @@ ms.reviewer: sericks
 ms.custom: bap-template
 ---
 
-# Configure pipeline extension points
+# Configure pipeline extension points (Deprecated)
+
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 
 The pipeline templates in the ALM Accelerator for Power Platform have several extension points, or *hooks*. You can use them to customize the pipelines while minimizing the noise from merge conflicts when you upgrade the pipeline templates to a new release.
 

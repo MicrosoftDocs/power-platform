@@ -1,5 +1,5 @@
 ---
-title: Upgrade the ALM Accelerator
+title: Upgrade the ALM Accelerator (Deprecated)
 description: Learn how to install new releases of the ALM Accelerator for Power Platform.
 ms.topic: upgrade-and-migration-article
 ms.date: 04/13/2023
@@ -10,7 +10,9 @@ ms.reviewer: sericks
 ms.custom: bap-template
 ---
 
-# Upgrade the ALM Accelerator
+# Upgrade the ALM Accelerator (Deprecated)
+
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 
 We periodically release updates of the ALM Accelerator for Power Platform. When a new version of the solution is available, follow the steps in this article to upgrade it. Upgrade the pipeline templates separately using the [pipeline sync template](setup-pipeline-sync.md) that's included with the ALM Accelerator solution.
 

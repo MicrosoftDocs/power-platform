@@ -1,5 +1,5 @@
 ---
-title: What's in the kit?
+title: What's in the kit? (Deprecated)
 description: Learn about the components of the ALM Accelerator for Power Platform that help you follow ALM patterns and practices.
 ms.topic: concept-article
 ms.date: 04/10/2023
@@ -10,7 +10,9 @@ ms.reviewer: sericks
 ms.custom: bap-template
 ---
 
-# What's in the kit?
+# What's in the kit? (Deprecated)
+
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 
 The ALM Accelerator includes several tools and components that help you implement application lifecycle management (ALM) in your Power Platform environments.
 
