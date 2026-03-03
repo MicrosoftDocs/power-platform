@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac plugin
 
-Commands for working with Dataverse plug-in class library
+Commands for working with Dataverse plug-in class library.
 
 [!INCLUDE [plugin-intro](includes/plugin-intro.md)]
 

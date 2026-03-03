@@ -1,5 +1,5 @@
 ---
-title: Learn more about the ALM Accelerator
+title: Learn more about the ALM Accelerator (Deprecated)
 description: Learn about the resources available to help you become familiar with the ALM Accelerator for Power Platform.
 ms.topic: concept-article
 ms.date: 07/29/2025
@@ -10,7 +10,9 @@ ms.reviewer: jhaskett-msft
 ms.custom: bap-template
 ---
 
-# Learn more about the ALM Accelerator
+# Learn more about the ALM Accelerator (Deprecated)
+
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 
 The ALM Accelerator for Power Platform includes a canvas app that sits on top of Azure Pipelines and Git source control. The app provides a simplified interface for makers to export their [Power Platform solutions](/power-platform/alm/solution-concepts-alm) to source control and have their work reviewed before deploying to target environments as part of an organization's application lifecycle management (ALM) strategy.
 

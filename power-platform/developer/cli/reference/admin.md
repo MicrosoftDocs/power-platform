@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac admin
 
-Work with your Power Platform Admin Account
+Work with your Power Platform Admin Account.
 
 [!INCLUDE [admin-intro](includes/admin-intro.md)]
 
