@@ -4,7 +4,7 @@ description: Learn more about how to create alerts to track and monitor the oper
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/20/2025
+ms.date: 03/04/2026
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: sericks
@@ -48,7 +48,9 @@ Keep the following principles in mind:
 1. In the **Alert rule name** field, enter the name of your alert.
 1. In the **Product** list, select the product you want to monitor with the alert, **Power Apps** or **Power Automate**.
 1. In the **Product type** list, select what you're going to monitor with the alert. For example, select **Canvas app** or **Model-driven app** for Power Apps, or **Cloud flow** or **Desktop flow** for Power Automate.
-1. In the **Scope** list, select **Environment** to monitor all items of a specific type&mdash;such as all canvas apps in your production environment. Select **Resource** to monitor a specific item. You'll need to first select the environment where the item is located, and then input its ID in the Resource ID field. Tip: you can copy the resource ID by clicking on the copy app/flow/agent link in its resource panel. 
+1. In the **Scope** list, select **Environment** to monitor all items of a specific type&mdash;such as all canvas apps in your production environment. Select **Resource** to monitor a specific item. You'll need to first select the environment where the item is located, and then input its ID in the **Resource ID** field.
+   > [!Tip]
+   > You can copy the resource ID by clicking on the copy app/flow/agent link in its resource panel. 
 1. In the **Id** field, select the environment that you want to monitor with an alert.
 1. In the **Metric** list, select the metric that you want to create your custom threshold against. The available metrics that alerts support and what they mean can be found in [Metrics and recommendations for Power Apps](/power-platform/admin/monitoring/monitor-power-apps) and [Metrics and recommendations for Power Automate](/power-platform/admin/monitoring/monitor-power-automate).
 1. In the **Operator** list, select an operator to define your threshold. The options are **Is Under**, **Is Over**, or **Equals**.
