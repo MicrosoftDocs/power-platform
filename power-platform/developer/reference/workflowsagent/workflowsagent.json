@@ -223,7 +223,7 @@
         }
       }
     },
-    "/workflowsagent/connections/{connectionId}": {
+    "/workflowsagent/connections/{connectionIdentifier}": {
       "delete": {
         "tags": [
           "DsrCompliance"
@@ -234,7 +234,7 @@
         "parameters": [
           {
             "in": "path",
-            "name": "connectionId",
+            "name": "connectionIdentifier",
             "description": "The connection ID in apiName/connectionName format.",
             "required": true,
             "type": "string"
