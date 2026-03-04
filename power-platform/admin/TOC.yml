@@ -1161,6 +1161,8 @@
               href: unified-experience/partners-systems-implementers.md
             - name: Admin trials for finance and operations apps
               href: unified-experience/admin-trials.md
+            - name: Elastic compute for finance and operations apps
+              href: unified-experience/elastic-compute.md
             - name: Tutorials
               items:
                 - name: "Tutorial: Provision a new environment with an ERP-based template"
