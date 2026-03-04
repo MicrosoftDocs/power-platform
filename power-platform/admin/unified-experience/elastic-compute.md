@@ -79,16 +79,16 @@ The following tables show how PPR accrues and translates to AOS capacity for two
 | Tenant-wide base | — | 500,000 |
 | Per-user license accrual | 20 &times; 5,000 | 100,000 |
 | **Total from licenses** | | **600,000** |
-| **AOS capacity from licenses** | 600,000 &divide; 2,600,000 | **&lt; 1 AOS** (baseline provided) |
+| **AOS from PPR** | 600,000 &divide; 2,600,000 | **&lt; 1 AOS** from PPR alone |
 
-Even when the calculated PPR is less than the cost of a single AOS, the platform still provisions the baseline topology so that the environment is functional. To double their AOS capacity, this customer could purchase add-on PPR packs.
+Every sandbox and production environment is provisioned with a **minimum of 2 AOS instances** regardless of available PPR. This ensures the environment is functional and provides basic redundancy. To double their AOS capacity to 4 AOS, this customer could purchase add-on PPR packs.
 
 | Component | Calculation | PPR |
 |-----------|-------------|-----|
 | Total from licenses | | 600,000 |
-| Add-on packs purchased | 52 packs &times; 50,000 | 2,600,000 |
-| **New total PPR** | | **3,200,000** |
-| **New AOS capacity** | 3,200,000 &divide; 2,600,000 | **~1 AOS** of elastic headroom (doubled from baseline) |
+| Add-on packs purchased | 92 packs &times; 50,000 | 4,600,000 |
+| **New total PPR** | | **5,200,000** |
+| **New AOS capacity** | 5,200,000 &divide; 2,600,000 | **2 additional AOS** beyond baseline (4 AOS total) |
 
 **Large customer: 500 user licenses**
 
@@ -97,16 +97,16 @@ Even when the calculated PPR is less than the cost of a single AOS, the platform
 | Tenant-wide base | — | 500,000 |
 | Per-user license accrual | 500 &times; 5,000 | 2,500,000 |
 | **Total from licenses** | | **3,000,000** |
-| **AOS capacity from licenses** | 3,000,000 &divide; 2,600,000 | **~1 AOS** of elastic headroom |
+| **AOS from PPR** | 3,000,000 &divide; 2,600,000 | **~1 additional AOS** beyond baseline (3 AOS total) |
 
-To double their AOS capacity, this customer could also purchase add-on packs.
+With the minimum of 2 AOS plus ~1 AOS of PPR-based headroom, this customer starts with 3 AOS. To double their total capacity to 6 AOS, this customer could purchase add-on packs.
 
 | Component | Calculation | PPR |
 |-----------|-------------|-----|
 | Total from licenses | | 3,000,000 |
-| Add-on packs purchased | 44 packs &times; 50,000 | 2,200,000 |
-| **New total PPR** | | **5,200,000** |
-| **New AOS capacity** | 5,200,000 &divide; 2,600,000 | **2 AOS** of elastic headroom (doubled) |
+| Add-on packs purchased | 104 packs &times; 50,000 | 5,200,000 |
+| **New total PPR** | | **8,200,000** |
+| **New AOS capacity** | 8,200,000 &divide; 2,600,000 | **~3 additional AOS** beyond baseline (approximately 5-6 AOS total) |
 
 Add-on packs of 50,000 PPR each are available from the [Microsoft 365 admin center](https://admin.microsoft.com). These totals determine the compute capacity available for elastic scaling across all finance and operations environments in the tenant.
 
@@ -118,7 +118,7 @@ Heavy Power Platform usage that generates requests through Dataverse virtual tab
 
 ## Unified Developer Environments
 
-[Unified Developer Environments (UDE)](/power-platform/developer/unified-experience/finance-operations-dev-overview) are an exception to elastic compute scaling. Due to technical limitations with the Visual Studio debugger, **UDE environments are limited to a single AOS instance** and don't scale up or down. This limitation ensures that the debugging experience remains stable and predictable, because the debugger must attach to a specific AOS process.
+[Unified Developer Environments (UDE)](/power-platform/developer/unified-experience/finance-operations-dev-overview) are an exception to elastic compute scaling. While sandbox and production environments have a minimum of 2 AOS instances, **UDE environments are limited to a minimum and maximum of 1 AOS instance** and don't scale up or down. This limitation is due to technical constraints with the Visual Studio debugger, which must attach to a specific AOS process. A single AOS instance ensures that the debugging experience remains stable and predictable.
 
 For development and testing workloads that require multiple AOS instances, use a sandbox environment instead.
 
