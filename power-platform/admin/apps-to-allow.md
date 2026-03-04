@@ -298,3 +298,4 @@ Certain [apps are automatically allowed](#commonly-used-microsoft-first-party-se
 | 8c04f0eb-27fc-44cc-9e48-914b9202890a | ApolloProdFirstParty |
 | d4a55fa7-2c20-434d-8942-689200452979 | DynamicsCRMCortanaCacheService@microsoft.com |
 | e548fb5c-c385-41a6-a31d-6dbc2f0ca8a3 | Microsoft Dynamics Jobs Service |
+| ceecbdd6-288c-4be9-8445-74f139e5db19 | SQLDBCOntrolplanefirstpartyApp |
