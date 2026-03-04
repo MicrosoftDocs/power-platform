@@ -51,8 +51,10 @@ Keep the following principles in mind:
 1. In the **Scope** list one of the following options:
     - Select **Environment** to monitor all items of a specific type&mdash;such as all canvas apps in your production environment.
     - Select **Resource** to monitor a specific item. You'll need to first select the **Environment** where the item is located, and then input its ID in the **Resource** field.
-   > [!Tip]
-   > You can copy the resource ID by selecting the copy app/flow/agent link in its resource panel. 
+
+    > [!Tip]
+    > You can copy the resource ID by selecting the copy app/flow/agent link in its resource panel.
+  
 1. In the **Id** field, select the environment that you want to monitor with an alert.
 1. In the **Metric** list, select the metric that you want to create your custom threshold against. The available metrics that alerts support and what they mean can be found in [Metrics and recommendations for Power Apps](/power-platform/admin/monitoring/monitor-power-apps) and [Metrics and recommendations for Power Automate](/power-platform/admin/monitoring/monitor-power-automate).
 1. In the **Operator** list, select an operator to define your threshold. The options are **Is Under**, **Is Over**, or **Equals**.
