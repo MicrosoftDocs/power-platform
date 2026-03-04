@@ -13,7 +13,7 @@ contributors:
 
 # Power Platform inventory
 
-The Power Platform admin center now offers tenant administrators a comprehensive, unified view of all key resources&mdash;agents, apps, and flows&mdash;across their organization with Power Platform inventory. With this centralized inventory, administrators can effortlessly discover, search, filter, and sort their resources to streamline common administrative tasks.
+Power Platform inventory gives tenant administrators a unified view of all agents, apps, and flows built on Power Platform across their organization. Administrators can discover, search, filter, and sort these resources to streamline common administrative tasks.
 
 Power Platform inventory allows you to easily complete the following tasks:
 
@@ -121,32 +121,34 @@ Quickly search for keywords across all entries currently loaded in the inventory
 
 Microsoft offers multiple admin surfaces that display agents, and you might notice that the agent counts differ across them. Each surface serves a different audience, shows different types of agents, and answers a different question. Understanding these differences helps you interpret the agent counts you see across your organization.
 
-### Power Platform inventory vs. Microsoft 365 admin center
+### Power Platform inventory vs. Microsoft 365 Admin Center
 
-The [Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps) shows agents that are **available to users in your tenant**. This includes Microsoft first-party agents, third-party ISV agents, and org-created agents that have been published or shared. It functions as a catalog of everything accessible to your employees.
+The [Microsoft 365 Admin Center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide) shows agents that are **available to users in your tenant**. This includes Microsoft 1st-party agents, third-party ISV agents, and org-created agents that have been published or shared. Org-created agents in the Microsoft 365 Admin Center come from many authoring surfaces, including Teams Store Platform, Agent Toolkit, Foundry, Fabric, SharePoint, and Groups. It functions as a catalog of everything accessible to your employees.
 
-Power Platform inventory, by contrast, shows agents that were **built by people in your organization** on Power Platform. This includes both published and draft agents created in Copilot Studio or Microsoft 365 Copilot Agent Builder. It does not include first-party Microsoft agents or ISV agents.
+Power Platform inventory, by contrast, shows only agents that were **built on Power Platform**. This includes both published and draft agents created in Copilot Studio or Microsoft 365 Copilot Agent Builder. It does not include 1st-party Microsoft agents, ISV agents, or agents created on other Microsoft surfaces.
 
-As a result, the agent counts between the two surfaces differ. The Microsoft 365 admin center includes agents your organization didn't build, while Power Platform inventory may include agents that don't appear in the Microsoft 365 admin center if those agents haven't been published yet (drafts).
+As a result, the agent counts between the two surfaces will differ. The Microsoft 365 Admin Center includes agents your organization didn't build, while Power Platform inventory may include agents that don't appear in the Microsoft 365 Admin Center if those agents haven't been published yet (drafts).
 
 ### Summary of differences
 
-| | Power Platform inventory | Microsoft 365 admin center |
+| | Power Platform inventory | Microsoft 365 Admin Center |
 |---|---|---|
-| **Designed for** | IT admins (Power Platform) | IT admins (Microsoft 365 admin center) |
-| **Shows** | Org-created agents on Power Platform | All agents available in your tenant |
+| **Designed for** | IT admins (Power Platform) | IT admins (M365) |
+| **Shows** | Agents built on Power Platform | All agents available in your tenant (including agents from Teams Store Platform, Agent Toolkit, Foundry, Fabric, SharePoint, Groups, and more) |
 | **Includes drafts** | Yes | Published and shared only |
-| **Includes first-party/ISV** | No | Yes |
+| **Includes 1st-party / ISV** | No | Yes |
 | **Scoped to** | Environments (rolled up to tenant) | Tenant |
 
 > [!TIP]
-> If you're asked to report on your organization's agent count, clarify what type of count is needed: **total available agents** (Microsoft 365 admin center) or **org-created agents on Power Platform** (Power Platform inventory). Each number is correct within it's own context.
+> If you're asked to report on your organization's agent count, clarify what type of count is needed: **total available agents** (Microsoft 365 Admin Center) or **org-created agents on Power Platform** (Power Platform inventory). Each number is correct within its own context.
 
 ## Known limitations
 
 - **Classic chatbots:** Classic chatbots aren't included in the new inventory page, but can still be found by selecting **Manage > Copilot Studio > Classic chatbots**.
 
 - **Environment name**: Filtering by environment requires the full environment name. Partial matches or substrings aren't supported.
+
+- **Multi-factor authentication (MFA) requirements for Azure Resource Manager**: Power Platform inventory requires access to Azure Resource Manager to retrieve resource information. If your organization enforces MFA via Conditional Access policies for Azure Resource Manager, inventory may fail to load. To resolve this, work with your Entra ID administrator to exclude either the Power Platform Admin Center application (client ID: `00b46ad5-e4ae-43ac-a878-281fc03d0839`) or the "Microsoft Azure Management" resource from your MFA Conditional Access policy.
 
 - **_Modified on_ and _Last modified by_ columns**: These columns are currently nonfunctional for agents and are populated with the **–** (dash) character.
 
