@@ -22,11 +22,6 @@ ms.custom: sfi-image-nochange
 
 The Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality. Each major release includes features that might affect the user experience. The schedule is application-specific. Check the [Release Plans](/dynamics365/release-plans/) to view the feature release schedule for the applications you use.
 
-| Wave release | Early access typical range |
-|---|---|
-| Wave 1 | February through April |
-| Wave 2 | August through October |
-
 > [!NOTE]
 > The legacy opt-in options (**Manage** and **Update Now**) are removed. To opt in to early access features, use the monthly or semi-annual release channel.
 
@@ -78,6 +73,20 @@ You can choose to receive features on a monthly basis or a semi-annual basis.
 |Best for| Dev/Test enviroments|Production environments|
 
 For more information about release channels, see [Release channels for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview).
+
+## What updates are coming, and when?
+
+Each release plan has a list of features coming up for the next release wave.
+For example, the 2025 Wave 2 Release **Plan** contains features that will be shipping in the 2026 April **Release**.
+|Release Plan | Release Wave containing features | Release Build Number |
+|-|-|-|
+| [2025 Wave 1 Plan](/dynamics365/release-plan/2025wave1/)  | 2025 October Release | 9.2.25093 |
+| [2025 Wave 2 Plan](/dynamics365/release-plan/2025wave2/) | 2026 April Release | 9.2.26033 |
+| 2026 Wave 1 Plan* | 2026 October Release | 9.2.26093 |
+
+*2026 April Wave 1 Plan available March 18, 2026. [Release Plan Schedule](/dynamics365/get-started/release-schedule)
+
+You can download a pdf, browse the plan or user the new release planner tool.  Check the release plan links in the table above for more details.  
 
 ## Frequently asked questions (FAQ)
 
