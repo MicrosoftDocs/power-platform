@@ -4,7 +4,7 @@ description: Overview of Microsoft Entra setup for calling Power Platform API an
 author: laneswenka
 ms.reviewer: sericks
 ms.topic: reference
-ms.date: 03/03/2026
+ms.date: 03/05/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType:
@@ -25,10 +25,11 @@ The following steps are required to obtain a bearer token with the correct permi
 1. [Request an access token](#step-5-request-an-access-token)
 
 ## Step 1. Create an application registration in your Microsoft Entra tenant
-1. Navigate to the [Azure portal](https://portal.azure.com), then go to **Microsoft Entra ID**. Select **+ Add** > **App registration**.
-1. Fill in the **Register and application** page:
+1. Navigate to the [Azure portal](https://portal.azure.com).
+1. Select **Microsoft Entra ID** at the top of the page. Then select **+ Add** > **App registration**.
+1. Fill in the **Register an application** page:
     1. **Name** — Give the application a recognizable name, for example **Power Platform Admin SDK**.
-    1. **Supported account types** — Select **Single tenant only - Your Company Name Here**.
+    1. **Supported account types** — Select **Single tenant only - <your company name>**.
     1. **Redirect URI** — Skip this for now. You configure it in Step 3.
 1. Select **Register** to create the application. After registration completes, note the **Application (client) ID** and **Directory (tenant) ID** from the overview page — you need both later.
 
