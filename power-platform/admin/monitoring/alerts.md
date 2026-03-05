@@ -4,7 +4,7 @@ description: Learn more about how to create alerts to track and monitor the oper
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/04/2026
+ms.date: 03/05/2026
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: sericks
@@ -52,8 +52,10 @@ Keep the following principles in mind:
     - Select **Environment** to monitor all items of a specific type&mdash;such as all canvas apps in your production environment.
     - Select **Resource** to monitor a specific item. You'll need to first select the **Environment** where the item is located, and then input its ID in the **Resource** field.
 
-    > [!Tip]
-    > You can copy the resource ID by selecting the copy app/flow/agent link in its resource panel.
+      > [!Tip]
+      > You can copy the resource ID by selecting the **Copy app/flow/agent ID** link when selecting the app/flow/agent.
+
+      :::image type="content" source="media/copy-app-id.png" alt-text="The 'Copy app ID' link." lightbox="media/copy-app-id.png":::
   
 1. In the **Id** field, select the environment that you want to monitor with an alert.
 1. In the **Metric** list, select the metric that you want to create your custom threshold against. The available metrics that alerts support and what they mean can be found in [Metrics and recommendations for Power Apps](/power-platform/admin/monitoring/monitor-power-apps) and [Metrics and recommendations for Power Automate](/power-platform/admin/monitoring/monitor-power-automate).
