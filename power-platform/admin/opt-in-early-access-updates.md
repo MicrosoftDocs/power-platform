@@ -166,7 +166,7 @@ No, the version number doesn't change. The setting only determines application f
 
 #### Do different channel settings cause issues with solution imports?
 
-No. Environments in the same station should have very similar build numbers for the organization and installed applications. **Monthly channel** vs. **Semi-annual channel** doesn't change versions. It only controls feature visibility. This difference shouldn't cause problems when importing solutions between environments with different channel settings.
+No. Environments in the same station have similar build numbers for the organization and installed applications. **Monthly channel** vs. **Semi-annual channel** doesn't change versions. It only controls feature visibility. This difference shouldn't cause problems when importing solutions between environments with different channel settings.
 
 ### Application lifecycle management (ALM) and environment strategies
 
@@ -204,7 +204,7 @@ Yes. Each release plan has a "What's new and planned" section with preview and g
 
 #### Are release notes still published as a single block twice a year?
 
-No. Release notes now use a new system with a weekly publish cadence. The initial Wave 1 2026 plan was published on March 18, 2026, with weekly updates after that.
+No. Release notes now use a new system with a weekly publish cadence. The initial 2026 wave 1 plan is planned for availability on March 18, 2026, with weekly updates after that.
 
 ### Product coverage and availability
 
