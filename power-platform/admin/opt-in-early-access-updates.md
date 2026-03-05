@@ -84,7 +84,7 @@ Each release plan announces the latest updates to customers as features are prep
 | [2025 wave 2 plan](/dynamics365/release-plan/2025wave2/) | 2026 April release | 9.2.26033 |
 | 2026 wave 1 plan* | 2026 October release | 9.2.26093 |
 
-\* The 2026 wave 1 plan is planned for availablility on March 18, 2026. Learn more at [Key dates for the 2026 release wave 1](dynamics365/get-started/release-schedule#key-dates-for-the-2026-release-wave-1).
+\* The 2026 wave 1 plan is planned for availablility on March 18, 2026. Learn more at [Key dates for the 2026 release wave 1](/dynamics365/get-started/release-schedule#key-dates-for-the-2026-release-wave-1).
 
 You can download a PDF, browse the plan, or use the new [release planner tool](https://aka.ms/releaseplanner).
 
