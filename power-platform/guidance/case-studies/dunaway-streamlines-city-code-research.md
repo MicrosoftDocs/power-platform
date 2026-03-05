@@ -40,7 +40,7 @@ Key benefits include:
 - Improved project delivery speed and quality
 - Greater accuracy and confidence in compliance
 
-Instead of spending hours searching websites and databases, engineers now type a question into Atlas and receive an immediate, grounded answer.
+Instead of spending hours searching websites and databases, engineers ask Atlas a question and receive an immediate, grounded answer.
 
 > The speed to getting the answer was the end goal of creating the bot. Previously, if a client had a question in a meeting, our engineers would have to say, 'We'll look into that and get back to you.' Now, they're able to query the bot in a meeting and answer the client's question immediately.
 >
@@ -166,7 +166,7 @@ The solution uses keyword‑based search over page‑grouped JSON documents, pow
 This case study demonstrates how Copilot Studio can centralize complex information from different sources and make it instantly accessible through natural language, so teams can find answers faster and focus their expertise.
 
 > With this new generation of AI tools, intelligence is more accessible and easier to navigate than ever before. Instead of spending hours scrolling through PDFs or hunting for answers, our experts can focus their time and energy on high-leverage work&mdash;the kind that truly requires their judgment and experience. It hasn't just improved efficiency; it's sparked a wave of innovation across our company.
-> 
+>
 > — *Brian Bowden, Vice President of Technology, Dunaway*
 
 The Dunaway team shares three key takeaways:
