@@ -38,7 +38,7 @@ The Microsoft Power Platform and customer engagement apps teams deliver two [maj
 > You might be able to create the copy as an [early release cycle environment](early-release.md), putting it first in line for new rollouts. This option is also known as _First Release_, _Station 1_, or _Station FRE_.
 
 ### Use a release channel
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Go to the [Power Platform admin center](/admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select the environment you want to update.
@@ -70,7 +70,7 @@ You can choose to receive features on a monthly basis or a semi-annual basis.
 |-|-|-|
 |New feature delivery | Monthly | General availability in April or October |
 |Preview feature update frequency | Weekly | No preview features |
-|Best for| Dev/Test enviroments|Production environments|
+|Best for| Dev/Test environments|Production environments|
 
 For more information about release channels, see [Release channels for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview).
 
@@ -78,15 +78,15 @@ For more information about release channels, see [Release channels for your mode
 
 Each release plan announces the latest updates to customers as features are prepared for release. For example, the 2025 wave 2 release plan contains features releasing from October 2025 through March 2026.
 
-|Release plan | Release wave containing features | Release build number |
+| Release plan | Release wave containing features | Release build number |
 |--|--|--|
 | [2025 wave 1 plan](/dynamics365/release-plan/2025wave1/)  | 2025 October release | 9.2.25093 |
 | [2025 wave 2 plan](/dynamics365/release-plan/2025wave2/) | 2026 April release | 9.2.26033 |
 | 2026 wave 1 plan* | 2026 October release | 9.2.26093 |
 
-\* The 2026 wave 1 plan is planned for availablility on March 18, 2026. Learn more at [Key dates for the 2026 release wave 1](/dynamics365/get-started/release-schedule#key-dates-for-the-2026-release-wave-1).
+\* The 2026 wave 1 plan is planned for availability on March 18, 2026. To learn more, see [Key dates for the 2026 release wave 1](/dynamics365/get-started/release-schedule#key-dates-for-the-2026-release-wave-1).
 
-You can download a PDF, browse the plan, or use the new [release planner tool](https://aka.ms/releaseplanner).
+You can download a PDF, browse the plan, or use the new [release planner tool](/aka.ms/releaseplanner).
 
 ## Frequently asked questions (FAQ)
 
@@ -104,7 +104,7 @@ Yes. The **Monthly channel** release channel setting persists for your environme
 
 #### What is the "Auto" channel option and why does it exist?
 
-In October 2024, before cutting over to **Monthly channel**, Microsoft set **Auto** to **Semi-annual channel**. Auto might be used differently in the future as a placeholder. Check the comments on **Auto** for each channel in [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
+In October 2024, before cutting over to **Monthly channel**, Microsoft set **Auto** to **Semi-annual channel**. Microsoft might use **Auto** differently in the future as a placeholder. Check the comments on **Auto** for each channel in [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).
 
 #### How does the org-level setting interact with app-level settings?
 
@@ -141,22 +141,22 @@ For more information, see [monthly-release-schedule](/power-apps/maker/model-dri
 
 **Semi-annual channel** environments automatically enable new features based on the regional location of your environment. For more information, see [General availability deployment](general-availability-deployment.md).
 
-Throughout a release wave, all environments are updated during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environment's region. 
+Throughout a release wave, the service updates all environments during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environment's region. 
 
 ### Controlling production environment updates
 
-#### How can customers minimize changes in production while still controlling when features are deployed?
+#### How can I minimize changes in production while still controlling when features are deployed?
 
-April and October general availability features are no longer _deployed_. To control when features appear in production:
+April and October general availability features no longer _deploy_. To control when features appear in production:
 
 1. Switch from the **Semi-annual channel** to the **Monthly channel** at the environment level, which is equivalent to the early opt-in approach.
 1. After confirming the build number is YY033 (April) or YY093 (October), switch back to the **Semi-annual channel**.
 
-Previously, we recommended opting in production environments at least one week before the general availability date. Release channels provide the same control through channel switching.
+Previously, Microsoft recommended opting in production environments at least one week before the general availability date. Release channels provide the same control through channel switching.
 
-#### Are customers locked into regional deployment dates?
+#### Am I locked into regional deployment dates?
 
-No. Customers can control feature visibility by switching between the **Monthly channel** and the **Semi-annual channel**. However, platform deployments occur on the standard schedule. General availability dates follow the schedule: Wave 1 (April) uses build 9.2.26033.* and Wave 2 (October) uses build 9.2.26093.*.
+No. You can control feature visibility by switching between the **Monthly channel** and the **Semi-annual channel**. However, platform deployments occur on the standard schedule. General availability dates follow the schedule: Wave 1 (April) uses build 9.2.26033.* and Wave 2 (October) uses build 9.2.26093.*.
 
 ### Version numbers and compatibility
 
@@ -164,7 +164,7 @@ No. Customers can control feature visibility by switching between the **Monthly 
 
 No, the version number doesn't change. The setting only determines application feature visibility. The platform and application versions are the same across channels. 
 
-#### Do different channel settings cause issues with solution imports?
+#### Do different channel settings cause problems with solution imports?
 
 No. Environments in the same station have similar build numbers for the organization and installed applications. **Monthly channel** vs. **Semi-annual channel** doesn't change versions. It only controls feature visibility. This difference shouldn't cause problems when importing solutions between environments with different channel settings.
 
@@ -190,13 +190,13 @@ Yes. Switching from **Semi-annual channel** reverts visibility of features that 
 
 #### How does the rollback feature work?
 
-Rollback is controlled through Feature Control Bits (FCBs) in the Unified Client Interface (UCI) in combination with org, app, solution, user, and browser settings. For more information, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).  Application deployments are no longer needed to switch between preview or general availability features.
+Rollback is controlled through Feature Control Bits (FCBs) in the Unified Client Interface (UCI) in combination with org, app, solution, user, and browser settings. For more information, see [Changing release channels for model-driven apps](/power-apps/maker/model-driven-apps/channel-change).  You don't need application deployments to switch between preview or general availability features.
 
 ### Documentation and communication
 
 #### Is there monthly documentation listing new and updated features?
 
-Yes. Release plans are updated weekly as feature information becomes available: [Release plans for Dynamics 365, Power Platform, Cloud for Industry, and Copilot](/dynamics365/release-plans/).
+Yes. Microsoft updates release plans weekly as feature information becomes available. See [Release plans for Dynamics 365, Power Platform, Cloud for Industry, and Copilot](/dynamics365/release-plans/).
 
 #### Does release documentation specify when features are available in Monthly vs. Semi-Annual channels?
 
@@ -210,7 +210,7 @@ No. Release notes now use a new system with a weekly publish cadence. The initia
 
 #### Does the release channel apply to Contact Center and Copilot Studio?
 
-The release channel (Monthly/Semi-Annual) primarily applies to model-driven apps.  There's no change for Contact Center or Copilot Studio.
+The release channel (Monthly or Semi-Annual) primarily applies to model-driven apps.  There's no change for Contact Center or Copilot Studio.
 
 #### When will release channels be available in GCC, GCC High, and DoD?
 
@@ -220,11 +220,11 @@ The rollout follows the [general availability deployment](general-availability-d
 
 #### Can I skip or postpone an update?
 
-No. Deployments happen every week. The release channel isn't for deployment, but a feature flag that turns on or off depending on your channel setting. To ensure you get the best quality of new features and capabilities, all customers must update to the latest release as scheduled.
+No. Microsoft deploys updates every week. The release channel isn't for deployment, but a feature flag that turns on or off depending on your channel setting. To ensure you get the best quality of new features and capabilities, all customers must update to the latest release as scheduled.
 
 #### How do I report problems with updates?
 
-Create a [support ticket](https://dynamics.microsoft.com/support/). Include the name of the application to help route your problem.
+Create a [support ticket](/dynamics.microsoft.com/support/). Include the name of the application to help route your problem.
 
 ## Related content
 
