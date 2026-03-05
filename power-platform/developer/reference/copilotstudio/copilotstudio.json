@@ -264,7 +264,7 @@
       "type": "object",
       "properties": {
         "NewOwnerAadUserId": {
-          "description": "The new owner aad id.",
+          "description": "The new owner AAD ID.",
           "type": "string"
         }
       }
