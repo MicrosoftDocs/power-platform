@@ -95,8 +95,6 @@
           href: reference-architectures/rpa-scale-operations.md
         - name: Use SQL Server with canvas apps
           href: reference-architectures/sqlserver-canvas-app.md
-        - name: Use an autonomous agent in Copilot Studio for document processing
-          href: reference-architectures/document-processing-agent.md
         - name: Use complex relationships with Dataverse
           href: reference-architectures/complex-relationships-dataverse.md
         - name: Extract and analyze agent conversation transcripts
