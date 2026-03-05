@@ -57,7 +57,6 @@ Keep the following principles in mind:
 
       :::image type="content" source="media/copy-app-id.png" alt-text="The 'Copy app ID' link." lightbox="media/copy-app-id.png":::
   
-1. In the **Id** field, select the environment that you want to monitor with an alert.
 1. In the **Metric** list, select the metric that you want to create your custom threshold against. The available metrics that alerts support and what they mean can be found in [Metrics and recommendations for Power Apps](/power-platform/admin/monitoring/monitor-power-apps) and [Metrics and recommendations for Power Automate](/power-platform/admin/monitoring/monitor-power-automate).
 1. In the **Operator** list, select an operator to define your threshold. The options are **Is Under**, **Is Over**, or **Equals**.
 1. In the **Select value** list, use the arrow icons to increase or decrease the value.
