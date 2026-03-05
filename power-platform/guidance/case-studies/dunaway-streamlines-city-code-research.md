@@ -98,11 +98,11 @@ Engineers begin by selecting a city, county, or entity. Once chosen, Atlas immed
 
 :::image type="content" source="media/dunaway/atlas-intro-card.png" alt-text="Screenshot of Atlas showing a welcome page in which the user can select city, county, entity, or a specific document." lightbox="media/dunaway/atlas-intro-card.png":::
 
-This city-level separation helps prevent hallucinations and cross-referencing errors, and it ensures engineers always know exactly which jurisdiction they are working with. For example, selecting Fort Worth immediately returns a card filtered to Fort Worth-specific regulatory documents.
+This city-level separation helps prevent incorrect information and cross-referencing errors, and it ensures engineers always know exactly which jurisdiction they're working with. For example, selecting Fort Worth immediately returns a card filtered to Fort Worth-specific regulatory documents.
 
 :::image type="content" source="media/dunaway/atlas-knowledge-card.png" alt-text="Screenshot of Atlas showing a list of Fort Worth knowledge documents" lightbox="media/dunaway/atlas-knowledge-card.png":::
 
-From here, engineers can open any document stored in SharePoint, ask city-specific questions, or use the preconfigured “Suggest Code Addition” option to flag missing information for review. When new projects introduce new jurisdictions, the goal is for Atlas to already contain the relevant documents by the time the project kicks off. The team also wanted a simple way to show what information is available and what still needs to be added, allowing engineers to continue contributing the documents and details they know they will need later.
+From here, engineers can open any document stored in SharePoint, ask city-specific questions, or use the preconfigured "Suggest Code Addition" option to flag missing information for review. When new projects introduce new jurisdictions, the goal is for Atlas to already contain the relevant documents by the time the project kicks off. The team also wanted a simple way to show what information is available and what still needs to be added, allowing engineers to continue contributing the documents and details they know they'll need later.
 
 :::image type="content" source="media/dunaway/atlas-code-addition-card.png" alt-text="Screenshot of Atlas showing the code addition suggestion card." lightbox="media/dunaway/atlas-code-addition-card.png":::
 
@@ -122,7 +122,7 @@ Each answer includes:
 
 :::image type="content" source="media/dunaway/atlas-response-card.png" alt-text="a response card with the preconfigured options suggest code addition and view similar questions." lightbox="media/dunaway/atlas-response-card.png":::
 
-The preconfigured “View Similar Questions” option allows engineers to view a list of suggested next questions.
+The preconfigured "View Similar Questions" option allows engineers to view a list of suggested next questions.
 
 :::image type="content" source="media/dunaway/atlas-similar-questions-card.png" alt-text="Screenshot of Atlas showing the similar questions card." lightbox="media/dunaway/atlas-similar-questions-card.png":::
 
@@ -136,7 +136,7 @@ If an answer appears unclear or incomplete, engineers can escalate the conversat
 
 The team initially built a knowledge ingestion pipeline using Microsoft Excel, Power Automate, SharePoint, and Dataverse. The Copilot Studio Kit feature SharePoint synchronization helped bring documents from SharePoint into Dataverse as Copilot Studio knowledge documents. To further improve response accuracy and retrieval quality, the team later replaced Dataverse with an Azure AI Search index.
 
-With the Dataverse approach, Atlas used multiple topics, one for each city. During ingestion, each document was placed into the appropriate city topic, which kept the knowledge base organized and improved retrieval accuracy. After moving to Azure AI Search, the team consolidated everything into a single Copilot Studio topic and achieved knowledge isolation through index filtering instead of topic separation.
+With the Dataverse approach, Atlas used multiple Copilot Studio topics, one for each city. During ingestion, each document was placed into the appropriate city topic, which kept the knowledge base organized and improved retrieval accuracy. After moving to Azure AI Search, the team consolidated everything into a single Copilot Studio topic and achieved knowledge isolation through index filtering instead of topic separation.
 
 ### Knowledge ingestion pipeline
 
@@ -162,7 +162,7 @@ Once the agent flow returns the top chunks, Atlas runs each one through a citati
 
 Reliable paragraph‑level citations were essential for building trust. Although many document chunks included paragraph metadata, citations could initially be added correctly only about 70 percent of the time.
 
-The team introduced an Azure Functions app that processes the full PDF text and matches each returned chunk against all paragraphs in the document. This ensures the correct paragraph is identified even when metadata is incomplete.
+The team introduced an Azure Functions app that processes the full PDF text and matches each returned chunk against all paragraphs in the document. This approach ensures the correct paragraph is identified even when metadata is incomplete.
 
 The solution uses keyword‑based search over page‑grouped JSON documents, powered by the BM25 ranking algorithm. This structure makes it straightforward to map each chunk back to its page number. Each chunk is then passed to an AI prompt with its associated URL, enabling Atlas to produce clean, user‑friendly links in the final response.
 
@@ -178,7 +178,7 @@ The Dunaway team shares three key takeaways:
 
 1. **Start now - even small experiments matter**
 
-There’s no perfect time to begin, and waiting is the bigger risk. The ecosystem is moving fast. Start with a small proof of concept, something tangible enough to learn from and concrete enough to demonstrate to others. Even a modest pilot builds momentum and uncovers opportunities you wouldn't have anticipated. The learning compounds quickly once you're in it.
+There’s no perfect time to begin, and waiting is the bigger risk. The ecosystem is moving fast. Start with a small proof of concept, something tangible enough to learn from and concrete enough to demonstrate to others. Even a modest pilot builds momentum and uncovers opportunities you wouldn't anticipate. The learning compounds quickly once you're in it.
 
 1. **Build with people, not just for them**
 
@@ -190,9 +190,9 @@ What's possible today is remarkable, and it's expanding quickly. Initial obstacl
 
 ## Looking ahead
 
-Dunaway plans to expand Atlas’s capabilities, including adding tools that automatically check drawings against city codes to support QA/QC workflows. Atlas currently supports document‑related work in roughly half of Dunaway’s cities, and its coverage will continue to expand to encompass all of them. The team uses Copilot Studio Kit for monitoring and plans to deepen that usage, with conversation transcript analysis as one of the next focus areas.
+Dunaway plans to expand Atlas’s capabilities, including adding tools that automatically check drawings against city codes to support QA/QC workflows. Atlas currently supports document‑related work in roughly half of Dunaway’s cities, and its coverage continues to expand to encompass all of them. The team uses Copilot Studio Kit for monitoring and plans to deepen that usage, with conversation transcript analysis as one of the next focus areas.
 
-Beyond Atlas, the team has launched DAVE, the Dunaway AI Virtual Expert, a company‑wide conversational agent that brings HR, IT, and accounting support into a single experience. Employees can get answers, complete forms, and submit support requests in one place, reducing IT tickets by 80 percent. DAVE has quickly become part of the culture, embraced by teams as a true colleague.
+Beyond Atlas, the team launched DAVE, the Dunaway AI Virtual Expert, a company‑wide conversational agent that brings HR, IT, and accounting support into a single experience. Employees can get answers, complete forms, and submit support requests in one place, reducing IT tickets by 80 percent. DAVE has quickly become part of the culture, embraced by teams as a true colleague.
 
 > We wanted to make the AI agent a team member and part of the company. Everyone has bought into that concept. In meetings, people ask, 'Can DAVE do this?'
 > 
