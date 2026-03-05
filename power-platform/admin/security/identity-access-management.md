@@ -45,7 +45,7 @@ The app access control feature applies only to Managed Environments. It prevents
 
 ## Guest access 
 
-To ensure data security and compliance in the Power Platform ecosystem, it's crucial that you minimize the risk of oversharing. Therefore, all new Dataverse-backed environments prohibit guest accessto dataverse data by default. However, you can allow guest access to dataverse data in an enviornment if your business use case requires it. You can also retroactively turn off (restrict) guest access for dataverse in existing environments. In this case, you block connections to resources that guests previously had access to. Learn More in [Control guest access in Microsoft Power Platform environments](/power-platform/admin/security/guest-access.md)
+To ensure data security and compliance in the Power Platform ecosystem, it's crucial that you minimize the risk of oversharing. Therefore, all new Dataverse-backed environments prohibit guest accessto dataverse data by default. However, you can allow guest access to dataverse data in an enviornment if your business use case requires it. You can also retroactively turn off (restrict) guest access for dataverse in existing environments. In this case, you block connections to resources that guests previously had access to. Learn More in [Control guest access in Microsoft Power Platform environments](./guest-access.md)  
 
 ## Administrator privileges (preview)
 
