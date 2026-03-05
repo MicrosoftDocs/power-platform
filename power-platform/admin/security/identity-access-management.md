@@ -43,41 +43,9 @@ The manage sharing feature applies only to Managed Environments. By using sharin
 
 The app access control feature applies only to Managed Environments. It prevents data exfiltration by controlling which apps are allowed and blocked in each environment. Learn more in [Control which apps are allowed in your environment](/power-platform/admin/control-app-access-environment).
 
-## Guest access (preview)
+## Guest access 
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
-
-To ensure data security and compliance in the Power Platform ecosystem, it's crucial that you minimize the risk of oversharing. Therefore, all new Dataverse-backed environments prohibit guest access by default. However, you can allow guest access for an environment if your business use case requires it. You can also retroactively turn off (restrict) guest access for existing environments. In this case, you block connections to resources that guests previously had access to.
-
-### Configure guest access
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
-1. In the navigation pane, select **Security**.
-1. In the **Security** section, select **Identity and access**.
-1. In the **Identity and access** section, select **Guest access**.
-1. In the **Guest access** pane, select the environment for which you want to turn off guest access.
-1. Select **Configure guest access**.
-1. Turn on the **Turn off guest access** option.
-1. Select **Save**. The **Guest access** pane reappears.
-1. Repeat steps 5 through 8 for other environments as required.
-1. When you finish, close the **Guest access** pane.
-
-### Improve your security score and act on recommendations
-
-Restriction of guest access is a key way to improve your tenant's security posture. You can also take direct action by selecting the **Restrict guest user access** recommendation on the main **Security** page or in the actions page in the Power Platform admin center. After you configure guest access restrictions, your tenant's security score improves, based on the number of environments that are configured.
-
-### Latency considerations
-
-The time that is required to effectively block guest access varies, depending on the volume of environments and resources in those environments. In the most extreme cases, the latency for full enforcement is 24 hours.
-
-### Known limitations
-
-Guest access is a preview feature. More enhancements are planned. It has the following known limitations, among others:
-
-- By blocking guest access, you prevent any guest from saving and using resources. However, a guest might not be prevented from accessing the Power Apps maker portal.
-- Items that are made in Copilot Studio might use graph connectors as knowledge sources from outside Microsoft Power Platform. Currently, the information in them might be accessible to guests, even if guest access is blocked.
+To ensure data security and compliance in the Power Platform ecosystem, it's crucial that you minimize the risk of oversharing. Therefore, all new Dataverse-backed environments prohibit guest accessto dataverse data by default. However, you can allow guest access to dataverse data in an enviornment if your business use case requires it. You can also retroactively turn off (restrict) guest access for dataverse in existing environments. In this case, you block connections to resources that guests previously had access to. Learn More in [Control guest access in Microsoft Power Platform environments](/power-platform/admin/security/guest-access.md)
 
 ## Administrator privileges (preview)
 
