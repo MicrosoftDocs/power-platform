@@ -94,7 +94,7 @@ Atlas includes the following capabilities:
 
 ### City-specific document access
 
-Engineers begin by selecting a city, county, or entity. Once chosen, Atlas immediately displays the regulatory documents associated with it. Engineers can search for a specific document when they know what they need.
+Engineers start by selecting a city, county, or entity. Once chosen, Atlas immediately displays the regulatory documents associated with it. Engineers can search for a specific document when they know what they need.
 
 :::image type="content" source="media/dunaway/atlas-intro-card.png" alt-text="Screenshot of Atlas showing a welcome page in which the user can select city, county, entity, or a specific document." lightbox="media/dunaway/atlas-intro-card.png":::
 
@@ -102,13 +102,13 @@ This city-level separation helps prevent incorrect information and cross-referen
 
 :::image type="content" source="media/dunaway/atlas-knowledge-card.png" alt-text="Screenshot of Atlas showing a list of Fort Worth knowledge documents" lightbox="media/dunaway/atlas-knowledge-card.png":::
 
-From here, engineers can open any document stored in SharePoint, ask city-specific questions, or use the preconfigured "Suggest Code Addition" option to flag missing information for review. When new projects introduce new jurisdictions, the goal is for Atlas to already contain the relevant documents by the time the project kicks off. The team also wanted a simple way to show what information is available and what still needs to be added, allowing engineers to continue contributing the documents and details they know they'll need later.
+From here, engineers can open any document stored in SharePoint, ask city-specific questions, or use the preconfigured "Suggest Code Addition" option to flag missing information for review. When new projects introduce new jurisdictions, the goal is for Atlas to already contain the relevant documents by the time the project kicks off. The team also wanted a simple way to show what information is available and what still needs to be added, so engineers can continue contributing the documents and details they know they'll need later.
 
 :::image type="content" source="media/dunaway/atlas-code-addition-card.png" alt-text="Screenshot of Atlas showing the code addition suggestion card." lightbox="media/dunaway/atlas-code-addition-card.png":::
 
 ### Natural language querying
 
-When querying Atlas, it presents results in a clear, structured format. Inline citations make it easy to trace information back to its original source, while Adaptive Cards provide the consistent layout that keeps every response easy to understand. Engineers can jump straight to the exact paragraph used to generate the answer.
+When you query Atlas, it presents results in a clear, structured format. Inline citations make it easy to trace information back to its original source, while Adaptive Cards provide the consistent layout that keeps every response easy to understand. Engineers can jump straight to the exact paragraph used to generate the answer.
 
 Each answer includes:
 
@@ -122,7 +122,7 @@ Each answer includes:
 
 :::image type="content" source="media/dunaway/atlas-response-card.png" alt-text="a response card with the preconfigured options suggest code addition and view similar questions." lightbox="media/dunaway/atlas-response-card.png":::
 
-The preconfigured "View Similar Questions" option allows engineers to view a list of suggested next questions.
+The preconfigured "View Similar Questions" option shows engineers a list of suggested next questions.
 
 :::image type="content" source="media/dunaway/atlas-similar-questions-card.png" alt-text="Screenshot of Atlas showing the similar questions card." lightbox="media/dunaway/atlas-similar-questions-card.png":::
 
@@ -130,11 +130,11 @@ To make it easier for engineers to view the sources and quickly verify the infor
 
 :::image type="content" source="media/dunaway/pdf-viewer.png" alt-text="Screenshot of a PDF viewer showing City of Houston regulatory information with text certain highlighted in green." lightbox="media/dunaway/pdf-viewer.png":::
 
-If an answer appears unclear or incomplete, engineers can escalate the conversation directly to a subject matter expert. Atlas packages the conversation history and sends it to the appropriate reviewer, ensuring fast follow-up and reducing the risk of misinterpretation.
+If an answer seems unclear or incomplete, engineers can escalate the conversation directly to a subject matter expert. Atlas packages the conversation history and sends it to the appropriate reviewer, ensuring fast follow-up and reducing the risk of misinterpretation.
 
 ## Implementation approach
 
-The team initially built a knowledge ingestion pipeline using Microsoft Excel, Power Automate, SharePoint, and Dataverse. The Copilot Studio Kit feature SharePoint synchronization helped bring documents from SharePoint into Dataverse as Copilot Studio knowledge documents. To further improve response accuracy and retrieval quality, the team later replaced Dataverse with an Azure AI Search index.
+The team initially built a knowledge ingestion pipeline by using Microsoft Excel, Power Automate, SharePoint, and Dataverse. By using the Copilot Studio Kit feature SharePoint synchronization, the team brought documents from SharePoint into Dataverse as Copilot Studio knowledge documents. To further improve response accuracy and retrieval quality, the team later replaced Dataverse with an Azure AI Search index.
 
 With the Dataverse approach, Atlas used multiple Copilot Studio topics, one for each city. During ingestion, each document was placed into the appropriate city topic, which kept the knowledge base organized and improved retrieval accuracy. After moving to Azure AI Search, the team consolidated everything into a single Copilot Studio topic and achieved knowledge isolation through index filtering instead of topic separation.
 
@@ -156,7 +156,7 @@ The city variable is passed into the agent flow, which combines the user’s que
 
 :::image type="content" source="media/dunaway/atlas-ai-flow.png" alt-text="Screenshot of an ai flow configuration, sending an HTTP request to an Azure AI Search index and retrieving a response." lightbox="media/dunaway/atlas-ai-flow.png":::
 
-Once the agent flow returns the top chunks, Atlas runs each one through a citation‑matching step that maps the chunk back to the correct page in the source PDF. Atlas then attaches the page number and metadata to each chunk before passing everything into the AI prompt to generate the final response.
+After the agent flow returns the top chunks, Atlas runs each one through a citation‑matching step that maps the chunk back to the correct page in the source PDF. Atlas then attaches the page number and metadata to each chunk before passing everything into the AI prompt to generate the final response.
 
 ### Improving citation accuracy
 
@@ -170,7 +170,7 @@ The solution uses keyword‑based search over page‑grouped JSON documents, pow
 
 This case study demonstrates how Copilot Studio can centralize complex, distributed information and make it instantly accessible through natural language, transforming how teams find answers and focus their expertise.
 
-> With this new generation of AI tools, intelligence is more accessible and easier to navigate than ever before. Instead of spending hours scrolling through PDFs or hunting for answers, our experts can focus their time and energy on high-leverage work—the kind that truly requires their judgment and experience. It hasn't just improved efficiency; it's sparked a wave of innovation across our company.
+> With this new generation of AI tools, intelligence is more accessible and easier to navigate than ever before. Instead of spending hours scrolling through PDFs or hunting for answers, our experts can focus their time and energy on high-leverage work - the kind that truly requires their judgment and experience. It hasn't just improved efficiency; it's sparked a wave of innovation across our company.
 > 
 > — *Brian Bowden, Vice President of Technology, Dunaway*
 
@@ -178,7 +178,7 @@ The Dunaway team shares three key takeaways:
 
 1. **Start now - even small experiments matter**
 
-There’s no perfect time to begin, and waiting is the bigger risk. The ecosystem is moving fast. Start with a small proof of concept, something tangible enough to learn from and concrete enough to demonstrate to others. Even a modest pilot builds momentum and uncovers opportunities you wouldn't anticipate. The learning compounds quickly once you're in it.
+There's no perfect time to begin, and waiting is the bigger risk. The ecosystem is moving fast. Start with a small proof of concept, something tangible enough to learn from and concrete enough to demonstrate to others. Even a modest pilot builds momentum and uncovers opportunities you wouldn't anticipate. The learning compounds quickly once you're in it.
 
 1. **Build with people, not just for them**
 
@@ -186,7 +186,7 @@ Adoption is the whole game. The most powerful tool in the world doesn't create v
 
 1. **Dream bigger**
 
-What's possible today is remarkable, and it's expanding quickly. Initial obstacles are inevitable, but the broader ecosystem offers more pathways and workarounds than you'd expect. Once you understand the building blocks, you realize that most constraints are architectural challenges, not hard limits. The real opportunity isn't just solving today's problem—it's reimagining how work gets done.
+What's possible today is remarkable, and it's expanding quickly. Initial obstacles are inevitable, but the broader ecosystem offers more pathways and workarounds than you'd expect. Once you understand the building blocks, you realize that most constraints are architectural challenges, not hard limits. The real opportunity isn't just solving today's problem - it's reimagining how work gets done.
 
 ## Looking ahead
 
