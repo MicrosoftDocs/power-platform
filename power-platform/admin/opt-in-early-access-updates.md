@@ -6,7 +6,7 @@ ms.subservice: admin
 ms.author: paulda
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 02/03/2026
+ms.date: 03/05/2026
 search.audienceType: 
   - admin
 contributors:
@@ -74,19 +74,19 @@ You can choose to receive features on a monthly basis or a semi-annual basis.
 
 For more information about release channels, see [Release channels for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview).
 
-## What updates are coming, and when?
+## What updates are coming and when?
 
-Each release plan has a list of features coming up for the next release wave.
-For example, the 2025 Wave 2 Release **Plan** contains features that will be shipping in the 2026 April **Release**.
-|Release Plan | Release Wave containing features | Release Build Number |
-|-|-|-|
-| [2025 Wave 1 Plan](/dynamics365/release-plan/2025wave1/)  | 2025 October Release | 9.2.25093 |
-| [2025 Wave 2 Plan](/dynamics365/release-plan/2025wave2/) | 2026 April Release | 9.2.26033 |
-| 2026 Wave 1 Plan* | 2026 October Release | 9.2.26093 |
+Each release plan announces the latest updates to customers as features are prepared for release. For example, the 2025 wave 2 release plan contains features releasing from October 2025 through March 2026.
 
-*2026 April Wave 1 Plan available March 18, 2026. [Release Plan Schedule](/dynamics365/get-started/release-schedule)
+|Release plan | Release wave containing features | Release build number |
+|--|--|--|
+| [2025 wave 1 plan](/dynamics365/release-plan/2025wave1/)  | 2025 October release | 9.2.25093 |
+| [2025 wave 2 plan](/dynamics365/release-plan/2025wave2/) | 2026 April release | 9.2.26033 |
+| 2026 wave 1 plan* | 2026 October release | 9.2.26093 |
 
-You can download a pdf, browse the plan or user the new release planner tool.  Check the release plan links in the table above for more details.  
+* The 2026 wave 1 plan is planned for availablility on March 18, 2026. Learn more at [Key dates for the 2026 release wave 1](dynamics365/get-started/release-schedule#key-dates-for-the-2026-release-wave-1).
+
+You can download a PDF, browse the plan, or use the new [release planner tool](https://aka.ms/releaseplanner).
 
 ## Frequently asked questions (FAQ)
 
