@@ -23,9 +23,9 @@ ms.custom: sfi-image-nochange
 The Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.  The schedule is application-specific. Check the [Release Plans](/dynamics365/release-plans/) to view the feature release schedule for the applications you use.
 
 > [!NOTE]
-> The legacy opt-in options (**Manage** and **Update Now**) are removed. To opt in to early access features, use the monthly release channel instructions below.  The "Early Access" concept is deprecated and will be replaced with the Monthly Release Channel in future documentation.
+> The legacy opt-in options (**Manage** and **Update Now**) are removed. To opt in to early access features, use the monthly release channel, as explained in [Use a release channel](#use-a-release-channel). The _Early Access_ concept is deprecated and is replaced by the _monthly release channel_.
 
-## How to get early access updates (Monthly Release Channel)
+## How to get early access updates by using the monthly release channel
 
 ### Before you begin
 - Have admin access to the Power Platform admin center.
@@ -53,7 +53,9 @@ Check the following items:
 - Customizations in your applications, if any, are updated to respond to the new capabilities.
 - Internal readiness materials, such as training and communications, for your organization are updated based on new features or user experiences.
 - If you find any problems during validation, such as regressions or functional or performance problems, contact [Support](get-help-support.md) or get help from [Dynamics 365 forum](https://community.dynamics.com/f).
-   *You also have the option of switch back to "Semi-Annual channel" to revert application functionality.
+
+> [!Note]
+> You also have the option to switch back to the **Semi-annual channel** to revert application functionality.
 
 ## Benefits of using release channels vs. legacy opt-in options
 When you save the **Release channel** setting (as described in [Use a release channel](#use-a-release-channel)), your environment immediately starts to behave according to the setting you chose. You don't need to deploy the application to get the features. You can switch between the **Monthly channel** and **Semi-annual channel**. These settings persist for your environment and you don't need to update them every release wave.
