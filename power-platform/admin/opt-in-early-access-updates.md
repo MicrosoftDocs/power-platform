@@ -6,7 +6,7 @@ ms.subservice: admin
 ms.author: paulda
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 03/05/2026
+ms.date: 03/06/2026
 search.audienceType: 
   - admin
 contributors:
@@ -38,7 +38,7 @@ The Microsoft Power Platform and customer engagement apps teams deliver two [maj
 > You might be able to create the copy as an [early release cycle environment](early-release.md), putting it first in line for new rollouts. This option is also known as _First Release_, _Station 1_, or _Station FRE_.
 
 ### Use a release channel
-1. Go to the [Power Platform admin center](/admin.powerplatform.microsoft.com).
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select the environment you want to update.
@@ -86,7 +86,7 @@ Each release plan announces the latest updates to customers as features are prep
 
 \* The 2026 wave 1 plan is planned for availability on March 18, 2026. To learn more, see [Key dates for the 2026 release wave 1](/dynamics365/get-started/release-schedule#key-dates-for-the-2026-release-wave-1).
 
-You can download a PDF, browse the plan, or use the new [release planner tool](/aka.ms/releaseplanner).
+You can download a PDF, browse the plan, or use the new [release planner tool](https://aka.ms/releaseplanner).
 
 ## Frequently asked questions (FAQ)
 
@@ -224,7 +224,7 @@ No. Microsoft deploys updates every week. The release channel isn't for deployme
 
 #### How do I report problems with updates?
 
-Create a [support ticket](/dynamics.microsoft.com/support/). Include the name of the application to help route your problem.
+Create a [support ticket](https://dynamics.microsoft.com/support/). Include the name of the application to help route your problem.
 
 ## Related content
 
