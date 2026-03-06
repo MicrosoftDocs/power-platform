@@ -20,12 +20,12 @@ ms.custom: sfi-image-nochange
 ---
 # Opt in to early access updates
 
-The Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality. Each major release includes features that might affect the user experience. The schedule is application-specific. Check the [Release Plans](/dynamics365/release-plans/) to view the feature release schedule for the applications you use.
+The Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.  The schedule is application-specific. Check the [Release Plans](/dynamics365/release-plans/) to view the feature release schedule for the applications you use.
 
 > [!NOTE]
-> The legacy opt-in options (**Manage** and **Update Now**) are removed. To opt in to early access features, use the monthly or semi-annual release channel.
+> The legacy opt-in options (**Manage** and **Update Now**) are removed. To opt in to early access features, use the monthly release channel instructions below.  The "Early Access" concept is deprecated and will be replaced with the Monthly Release Channel in future documentation.
 
-## How to get early access updates
+## How to get early access updates (Monthly Release Channel)
 
 ### Before you begin
 - Have admin access to the Power Platform admin center.
@@ -44,7 +44,7 @@ The Microsoft Power Platform and customer engagement apps teams deliver two [maj
 1. On the **Environments** page, select the environment you want to update.
 1. Select **Settings**.
 1. On the **Settings** page, select **Product** > **Behavior**.
-1. Set the **Release channel** option to **Monthly channel** or **Semi-annual channel**.
+1. Set the **Release channel** option to **Monthly channel**.
 1. Select **Save**. Changes are applied immediately.
 
 ### Validation steps
@@ -53,6 +53,7 @@ Check the following items:
 - Customizations in your applications, if any, are updated to respond to the new capabilities.
 - Internal readiness materials, such as training and communications, for your organization are updated based on new features or user experiences.
 - If you find any problems during validation, such as regressions or functional or performance problems, contact [Support](get-help-support.md) or get help from [Dynamics 365 forum](https://community.dynamics.com/f).
+   *You also have the option of switch back to "Semi-Annual channel" to revert application functionality.
 
 ## Benefits of using release channels vs. legacy opt-in options
 When you save the **Release channel** setting (as described in [Use a release channel](#use-a-release-channel)), your environment immediately starts to behave according to the setting you chose. You don't need to deploy the application to get the features. You can switch between the **Monthly channel** and **Semi-annual channel**. These settings persist for your environment and you don't need to update them every release wave.
@@ -76,7 +77,7 @@ For more information about release channels, see [Release channels for your mode
 
 ## What updates are coming and when?
 
-Each release plan announces the latest updates to customers as features are prepared for release. For example, the 2025 wave 2 release plan contains features releasing from October 2025 through March 2026.
+Each release plan announces the latest updates to customers as features are prepared for release.  For "Monthly Channel" environments, you will see new features every month, depending on the applications you are using.  For "Semi-annual channel" you will see new features during GA deployments for your region.  Check the corresponding release plans for the upcoming wave release for more details. For example, the 2025 wave 2 release plan contains features releasing from October 2025 through March 2026.
 
 | Release plan | Release wave containing features | Release build number |
 |--|--|--|
