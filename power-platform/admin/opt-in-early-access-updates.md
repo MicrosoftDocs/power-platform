@@ -20,7 +20,7 @@ ms.custom: sfi-image-nochange
 ---
 # Opt in to early access updates
 
-The Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.  The schedule is application-specific. Check the [Release Plans](/dynamics365/release-plans/) to view the feature release schedule for the applications you use.
+The Microsoft Power Platform and customer engagement apps teams deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality. Each application has its own schedule. Check the [Release Plans](/dynamics365/release-plans/) to view the feature release schedule for the applications you use.
 
 > [!NOTE]
 > The legacy opt-in options (**Manage** and **Update Now**) are removed. To opt in to early access features, use the monthly release channel, as explained in [Use a release channel](#use-a-release-channel). The _Early Access_ concept is deprecated and is replaced by the _monthly release channel_.
@@ -54,8 +54,8 @@ Check the following items:
 - Internal readiness materials, such as training and communications, for your organization are updated based on new features or user experiences.
 - If you find any problems during validation, such as regressions or functional or performance problems, contact [Support](get-help-support.md) or get help from [Dynamics 365 forum](https://community.dynamics.com/f).
 
-> [!Note]
-> You also have the option to switch back to the **Semi-annual channel** to revert application functionality.
+> [!NOTE]
+> You can also switch back to the **Semi-annual channel** to revert application functionality.
 
 ## Benefits of using release channels vs. legacy opt-in options
 When you save the **Release channel** setting (as described in [Use a release channel](#use-a-release-channel)), your environment immediately starts to behave according to the setting you chose. You don't need to deploy the application to get the features. You can switch between the **Monthly channel** and **Semi-annual channel**. These settings persist for your environment and you don't need to update them every release wave.
@@ -79,7 +79,7 @@ For more information about release channels, see [Release channels for your mode
 
 ## What updates are coming and when?
 
-Each release plan announces the latest updates to customers as features are prepared for release.  For "Monthly Channel" environments, you will see new features every month, depending on the applications you are using.  For "Semi-annual channel" you will see new features during GA deployments for your region.  Check the corresponding release plans for the upcoming wave release for more details. For example, the 2025 wave 2 release plan contains features releasing from October 2025 through March 2026.
+Each release plan announces the latest updates to customers as features are prepared for release. For "Monthly Channel" environments, you see new features every month, depending on the applications you're using. For "Semi-annual Channel" environments, you see new features during general availability deployments for your region. Check the corresponding release plans for the upcoming wave release for more details. For example, the 2025 wave 2 release plan contains features releasing from October 2025 through March 2026.
 
 | Release plan | Release wave containing features | Release build number |
 |--|--|--|
@@ -126,11 +126,11 @@ Monthly channel releases occur every month. New features can start previewing as
 
 #### How can customers know when monthly releases are deployed?
 
-Release plans show approximate deployment schedules. Deployments happen every weekend. The monthly release is a feature flag that's switched on for a region (station), not an actual deployment. Customers should continue using the version history resources they've been using to track updates and timings.
+Release plans show approximate deployment schedules. The service deploys updates every weekend. The monthly release is a feature flag that's switched on for a region (station), not an actual deployment. Customers should continue using the version history resources they've been using to track updates and timings.
 
 #### When are features available for testing before general availability?
 
-Applications ship approximately six weeks ahead of the **Monthly channel** or **Semi-annual channel** enablement date. Around mid-February and mid-August, all apps have features available in all stations. This timing allows for thorough testing:
+Microsoft ships applications approximately six weeks ahead of the **Monthly channel** or **Semi-annual channel** enablement date. Around mid-February and mid-August, all apps have features available in all stations. This timing allows for thorough testing:
 
 - Customers in the North America station have about eight weeks of testing duration.
 - Environments in Station 1 (early release cycle) can test monthly features for five weeks before reaching Station 2, and eight weeks before reaching Station 5.
@@ -185,7 +185,7 @@ No. You're responsible for creating a sandbox environment from a copy of the pro
 
 #### Does the Semi-annual channel mean no preview features?
 
-Yes, that's correct. Environments using **Semi-annual channel** don't see preview features until they become generally available in April or October.
+Yes. Environments using **Semi-annual channel** don't see preview features until they become generally available in April or October.
 
 #### If I switch from Monthly channel to Semi-annual channel, do features roll back?
 
@@ -223,7 +223,7 @@ The rollout follows the [general availability deployment](general-availability-d
 
 #### Can I skip or postpone an update?
 
-No. Microsoft deploys updates every week. The release channel isn't for deployment, but a feature flag that turns on or off depending on your channel setting. To ensure you get the best quality of new features and capabilities, all customers must update to the latest release as scheduled.
+No. Microsoft deploys updates every week. The release channel isn't for deployment, but a feature flag that turns on or off depending on your channel setting. To ensure you get the best quality of new features and capabilities, update to the latest release as scheduled.
 
 #### How do I report problems with updates?
 
