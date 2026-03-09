@@ -48,12 +48,12 @@ Keep the following principles in mind:
 1. In the **Alert rule name** field, enter the name of your alert.
 1. In the **Product** list, select the product you want to monitor with the alert, **Power Apps** or **Power Automate**.
 1. In the **Product type** list, select what you're going to monitor with the alert. For example, select **Canvas app** or **Model-driven app** for Power Apps, or **Cloud flow** or **Desktop flow** for Power Automate.
-1. In the **Scope** list one of the following options:
-    - Select **Environment** to monitor all items of a specific type&mdash;such as all canvas apps in your production environment.
+1. In the **Scope** list, select one of the following options:
+    - Select **Environment** to monitor all items of a specific type&mdash;such as all canvas apps in your production environment. Then, select the environment.
     - Select **Resource** to monitor a specific item. You'll need to first select the **Environment** where the item is located, and then input its ID in the **Resource** field.
 
       > [!Tip]
-      > You can copy the resource ID by selecting the **Copy app/flow/agent ID** link when selecting the app/flow/agent.
+      > You can create an alert on a specific item with the **Environment** and **Resource** fields already filled in with the correct information, by clicking on the "+ New alert rule" button.
 
       :::image type="content" source="media/copy-app-id.png" alt-text="The 'Copy app ID' link." lightbox="media/copy-app-id.png":::
   
