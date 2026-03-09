@@ -202,19 +202,22 @@ After running these commands, your app registration is ready to use with the SDK
 ## Troubleshooting common issues
 
 ### "Consent required" or "needs admin approval" errors
-This error occurs when the API permissions on your app registration haven't been admin-consented. Go to **App registrations** > your app > **API permissions** and select **Grant admin consent**. Alternatively, run:
+This error occurs when the API permissions on your app registration haven't been consented by the admin. Go to **App registrations** > your app > **API permissions** and select **Grant admin consent**. 
+
+Alternatively, run:
 
 ```bash
 az ad app permission admin-consent --id <app-id>
 ```
 
 ### "User is not assigned to a role for the application" errors
-This error means the Enterprise Application associated with your app registration has **User assignment required** set to **Yes**. When this is enabled, only users or groups explicitly assigned to the application can sign in. To fix this, either:
-- Navigate to **Microsoft Entra ID** > **Enterprise applications** > your app > **Properties** and set **Assignment required** to **No**, or
+This error means the enterprise application associated with your app registration has **User assignment required** set to **Yes**. When this is enabled, only users or groups explicitly assigned to the application can sign in. To fix this, take one of the following actions:
+
+- Navigate to **Microsoft Entra ID** > **Enterprise applications** > your app > **Properties** and set **Assignment required** to **No**.
 - Add the relevant users or security groups under **Users and groups**.
 
-### Conditional Access policies blocking access
-If your organization applies Conditional Access policies, they may block token acquisition for your app registration. Common causes include device compliance requirements, location restrictions, or risk-based policies. Work with your Microsoft Entra administrator to either exclude your app registration from the policy or ensure clients meet the policy requirements.
+### Conditional access policies blocking access
+If your organization applies conditional access policies, they may block token acquisition for your app registration. Common causes include device compliance requirements, location restrictions, or risk-based policies. Work with your Microsoft Entra administrator to either exclude your app registration from the policy or ensure clients meet the policy requirements.
 
 ### "Power Platform API" not found in the API picker
 If searching for **Power Platform API** by name or GUID in the API permissions dialog returns no results, the service principal hasn't been created in your tenant. Follow the force-refresh steps in [Step 2](#step-2-configure-api-permissions) to create it.
@@ -297,7 +300,7 @@ asyncio.run(main())
 Confidential client authentication uses a client secret or certificate and doesn't require user interaction. This flow is best for background services, pipelines, and automation.
 
 > [!Important]
-> Before using service principal authentication, complete Steps 1-4 above to create and configure your app registration with a certificate or client secret. Then assign the service principal an RBAC role to control its level of access. See [Tutorial: Assign RBAC roles to service principals](programmability-tutorial-rbac-role-assignment.md).
+> Before using service principal authentication, complete Steps 1-4 above to create and configure your app registration with a certificate or client secret. Then assign the service principal an RBAC role to control its level of access. For more informaiton, see [Tutorial: Assign RBAC roles to service principals](programmability-tutorial-rbac-role-assignment.md).
 
 #### [PowerShell](#tab/powershell-confidential)
 
