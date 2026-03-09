@@ -21,7 +21,7 @@ The following steps are required to obtain a bearer token with the correct permi
 1. [Create an application registration in your Microsoft Entra tenant](#step-1-create-an-application-registration-in-your-microsoft-entra-tenant)
 1. [Configure API permissions](#step-2-configure-api-permissions)
 1. [Configure platform and redirect URI](#step-3-configure-platform-and-redirect-uri)
-1. [Configure certificates and secrets (optional)](#step-4-configure-certificates-and-secrets-optional)
+1. [(Optional) Configure certificates and secrets](#step-4-optional-configure-certificates-and-secrets)
 1. [Request an access token](#step-5-request-an-access-token)
 
 ## Step 1. Create an application registration in your Microsoft Entra tenant
@@ -141,7 +141,7 @@ The above example contains placeholders that you can retrieve from your client a
 Use the **access_token** value in subsequent calls to the Power Platform API with the **Authorization** HTTP header.
 
 #### Service principal flow
-Be sure to read the [Certificates and Secrets section]( ). Then, send a POST request via HTTP to Microsoft Entra ID with a client secret payload. This is often referred to as service principal authentication.
+Be sure to read the [Configure certificates and secrets](#step-4-optional-configure-certificates-and-secrets) section. Then, send a POST request via HTTP to Microsoft Entra ID with a client secret payload. This is often referred to as service principal authentication.
 
 > [!Important]
 > Before using service principal authentication, complete Steps 1-4 above to create and configure your app registration with a certificate or client secret. Then assign the service principal an RBAC role to control its level of access. See [Tutorial: Assign RBAC roles to service principals](programmability-tutorial-rbac-role-assignment.md) for a step-by-step guide.
