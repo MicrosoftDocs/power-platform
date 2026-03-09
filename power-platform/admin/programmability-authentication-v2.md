@@ -44,9 +44,9 @@ az ad app create --display-name "Power Platform Admin SDK" --sign-in-audience Az
 The command returns a JSON object. Note the `appId` value — this is your client ID.
 
 ## Step 2. Configure API permissions
-Within your new app registration, navigate to the **Manage - API Permissions** tab. Under the **Configure permissions** section, select **Add a Permission**. On the dialog window that opens, select the **APIs my organization uses** tab, and then search for **Power Platform API**. You might see several entries with a name similar to this, so ensure you use the one with the GUID **8578e004-a5c6-46e7-913e-12f58912df43**.
+Within your new app registration, navigate to the **Manage - API Permissions** tab. Under the **Configure permissions** section, select **Add a Permission**. On the dialog window that opens, select the **APIs my organization uses** tab, and then search for **Power Platform API**. You might see several entries with a name similar to this, so ensure that you use the one with the GUID **8578e004-a5c6-46e7-913e-12f58912df43**.
 
-If you don't see Power Platform API showing up in the list when searching by GUID, it's possible that you still have access to it but the visibility isn't refreshed. To force a refresh, run the following script:
+If you don't see Power Platform API displayed in the list when searching by GUID, it's possible that you still have access to it but the visibility isn't refreshed. To force a refresh, run the following script:
 
 ### [PowerShell](#tab/powershell)
 
@@ -72,9 +72,9 @@ From here, you must select the permissions you require. These are grouped by [**
 > [!NOTE]
 > Power Platform API makes use of delegated permissions only at this time. For applications that run with a user context, you request delegated permissions using the **scope** parameter. These permissions delegate the privileges of the signed-in user to your application, allowing it to act as the user when calling Power Platform API endpoints.
 >
-> For service principal identities, application permissions aren't used. Instead, after creating your app registration, assign it an RBAC role to grant scoped permissions (such as Contributor or Reader). See [Tutorial: Assign RBAC roles to service principals](programmability-tutorial-rbac-role-assignment.md).
+> For service principal identities, application permissions aren't used. Instead, after creating your app registration, assign it an RBAC role to grant scoped permissions (such as **Contributor** or **Reader**). For more inforamtion, see [Tutorial: Assign RBAC roles to service principals](programmability-tutorial-rbac-role-assignment.md).
 
-After the required permissions are added to the application, select **Grant admin consent** to complete the setup. Granting admin consent authorizes the permissions for all users in the tenant so they aren't prompted with an interactive consent dialog the first time they use your app. If you prefer interactive consent per user, we recommend following the [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+After the required permissions are added to the application, select **Grant admin consent** to complete the setup. Granting admin consent authorizes the permissions for all users in the tenant so they aren't prompted with an interactive consent dialog the first time they use your app. If you prefer interactive consent per user, we recommend following [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 You can also grant admin consent using Azure CLI:
 
