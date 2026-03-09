@@ -4,7 +4,7 @@ description: Learn how to manage identity and access in the Power Platform admin
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/29/2025
+ms.date: 03/05/2026
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
@@ -124,20 +124,20 @@ The **Authenitcation for agents** feature is a modernized framework of the exist
 
 We recommend that all customers move towards using the **Authentication for agents** setting in the Power Platform admin center to leverage the capability of groups and rules.
 
-## Agent access points (preview)
+## Agent access channels (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 This feature gives administrators control over where agents can be published, allowing customer engagement across multiple platforms. Admins can select multiple available channels, such as Microsoft Teams, Direct Line, Facebook, Dynamics 365 for Customer Service, SharePoint, and WhatsApp. 
  
-The **Agent access points** feature is a modernized framework of the existing [virtual connectors](../wp-data-loss-prevention.md#virtual-connectors). It helps you scale through environment-level configurations and rules. If you're using both virtual connectors and the **Agent access points** settings in the **Security** area of the Power Platform admin center, then access must be allowed in both places for it to be allowed at runtime. If you block channel access in either one of the places, then at runtime the most restrictive behavior is enforced and it will be blocked. For example, consider the information in the following table.
+The **Agent access channels** feature is a modernized framework of the existing [virtual connectors](../wp-data-loss-prevention.md#virtual-connectors). It helps you scale through environment-level configurations and rules. If you're using both virtual connectors and the **Agent access channels** settings in the **Security** area of the Power Platform admin center, then access must be allowed in both places for it to be allowed at runtime. If you block channel access in either one of the places, then at runtime the most restrictive behavior is enforced and it will be blocked. For example, consider the information in the following table.
 
-| Access in the virtual connector | Access in the _Agent access points_ settings in Power Platform admin center| Runtime enforeement |
+| Access in the virtual connector | Access in the _Agent access channels_ settings in Power Platform admin center| Runtime enforeement |
 |------|-----------------------------|----------------------|
 | Blocked | Blocked | Blocked |
 | Allowed | Blocked| Blocked|
 | Blocked| Allowed | Blocked|
 | Allowed| Allowed | Allowed|
 
-We recommend that all customers move towards using the **Agent access points** settings in the Power Platform admin center to leverage the capability of groups and rules.
+We recommend that all customers move towards using the **Agent access channels** settings in the Power Platform admin center to leverage the capability of groups and rules.
