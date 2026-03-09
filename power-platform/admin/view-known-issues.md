@@ -4,7 +4,7 @@ description: Learn how to view known issues in Power Platform admin center.
 author: mamali-ms 
 ms.component: pa-admin
 ms.topic: troubleshooting-known-issue
-ms.date: 06/15/2025
+ms.date: 03/09/2026
 ms.subservice: admin
 ms.author: mamali 
 ms.reviewer: sericks
@@ -54,10 +54,6 @@ Customer trust and transparency are important to us. You can now view existing p
 
 ## Frequently asked questions (FAQs)
 
-### Why am I seeing known issues for Power Automate and Power Apps products only?
-
-The ability to view known issues is currently in preview and is only available for limited features within Power Automate and Power Apps products.
- 
 ### Should I create a support request if my issue is listed under known issues?
 
 No, a fix is in progress and an update will be shared on the known issue details page as soon as it's available. The **Status** will also be updated to reflect progress.
