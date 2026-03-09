@@ -36,7 +36,7 @@ Keep the following principles in mind:
 -	Alerts can only be placed on a managed environment.
 -	You must be using the [new and improved Power Platform admin center](/power-platform/admin/new-admin-center).
 
-## Create an alert 
+## Create an alert on an enviroment
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Monitor**.
 1. In the **Monitor** pane, select **Alerts**. The **Alerts** page is displayed.
@@ -46,18 +46,10 @@ Keep the following principles in mind:
 
 1. Select **+ Alert rule** to create your new alert rule. The **New alert rule** pane is displayed.
 1. In the **Alert rule name** field, enter the name of your alert.
-1. In the **Product** list, select the product you want to monitor with the alert, **Power Apps** or **Power Automate**.
-1. In the **Product type** list, select what you're going to monitor with the alert. For example, select **Canvas app** or **Model-driven app** for Power Apps, or **Cloud flow** or **Desktop flow** for Power Automate.
-1. In the **Scope** list, select one of the following options:
-    - Select **Environment** to monitor all items of a specific type&mdash;such as all canvas apps in your production environment. Then, select the environment.
-    - Select **Resource** to monitor a specific item. You'll need to first select the **Environment** where the item is located, and then input its ID in the **Resource** field.
-
-      > [!Tip]
-      > You can create an alert on a specific item with the **Environment** and **Resource** fields already filled in with the correct information, by clicking on the "+ New alert rule" button.
-
-      :::image type="content" source="media/copy-app-id.png" alt-text="The 'Copy app ID' link." lightbox="media/copy-app-id.png":::
-  
-1. In the **Metric** list, select the metric that you want to create your custom threshold against. The available metrics that alerts support and what they mean can be found in [Metrics and recommendations for Power Apps](/power-platform/admin/monitoring/monitor-power-apps) and [Metrics and recommendations for Power Automate](/power-platform/admin/monitoring/monitor-power-automate).
+1. In the **Product** list, select the product you want to monitor with the alert, **Power Apps**, **Power Automate**, or **Copilot Studio**.
+1. In the **Product type** list, select what you're going to monitor with the alert. For example, select **Canvas app** or **Model-driven app** for Power Apps, **Cloud flow**, **Desktop flow**, **Work queue** for Power Automate, or **Agent** for Copilot Studio.
+1. In the **Scope** list, select **Environment** to monitor all items of a specific type&mdash;such as all canvas apps in your production environment. Then, select the environment.
+1. In the **Metric** list, select the metric that you want to create your custom threshold against. The available metrics that alerts support and what they mean can be found in [Metrics and recommendations for Power Apps](/power-platform/admin/monitoring/monitor-power-apps), [Metrics and recommendations for Power Automate](/power-platform/admin/monitoring/monitor-power-automate), [Metrics and recommendations for Copilot Studio](/power-platform/admin/monitoring/monitor-copilot-studio).
 1. In the **Operator** list, select an operator to define your threshold. The options are **Is Under**, **Is Over**, or **Equals**.
 1. In the **Select value** list, use the arrow icons to increase or decrease the value.
 1. In the **Severity** list, select **Low**, **Medium**, or **High**.
@@ -66,7 +58,19 @@ Keep the following principles in mind:
     - If you select **Email**, you and up to four other recipients&mdash;that you specify in the **Recipient(s)** field&mdash;get an email when the alert is triggered. The email comes from `PowerPlat-noreply@microsoft.com`.
 1. Select **Save**.
 
-After you create your alert, the system runs an on-demand evaluation and scans all the applicable resources under its scope.
+## Create an alert on a resource
+You can create an alert to monitor a specific resource, like a specific canvas app, through these steps:
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Monitor**.
+2. In the **Monitor** pane , go to the Product list page where your resource would be located (e.g. go to the Power Apps product list page to find the canvas app you'd like to create an alert on).
+3. Find your resource, and select it to open up the resource panel that has more detailed metric infomration.
+4. In the top right corner, you'll see a button that says "+ New Alert Rule" if the resource is in a managed environment.
+  :::image type="content" source="media/new-resource-alert.png" alt-text="The '+ New Alert Rule' button." lightbox="media/new-resource-alert.png":::
+5. Clicking on that button will take you to the Alerts experience with the information for **Product**, **Product type**, **Scope**, environment ID, and resource ID auto-filled so that you can create an alert on that specific resource.
+6. Now fill in the infomration for **Alert rule name**, **Metric**, **Operator**, **Threshold Value**, **Severity**, and **Notification type**.
+7. Select **Save**
+
+After you create your alert, the system runs an on-demand evaluation and scans all the applicable resource(s) under its scope.
 
 ## When an alert triggers
 If you select to receive email notifications when any resource triggers an alert, you get an email notification.
