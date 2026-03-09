@@ -86,11 +86,13 @@ az ad app permission admin-consent --id <app-id>
 ## Step 3. Configure platform and redirect URI
 SDKs, PowerShell scripts, and desktop applications that authenticate on behalf of a user require a redirect URI so that Microsoft Entra can return tokens back to your application after authentication.
 
-Within your app registration, navigate to the **Manage - Authentication** tab. Select **Add a Redirect URI**, then choose **Mobile and desktop applications**. Select the following built-in redirect URI:
+1. Within your app registration, navigate to the **Manage - Authentication** tab.
+1. Select **Add a Redirect URI**, then choose **Mobile and desktop applications**.
+1. Select the following built-in redirect URI:
 
-`https://login.microsoftonline.com/common/oauth2/nativeclient`
+    `https://login.microsoftonline.com/common/oauth2/nativeclient`
 
-Select **Configure** to save.
+1. Select **Configure** to save.
 
 You can also add the redirect URI using Azure CLI:
 
@@ -99,18 +101,22 @@ You can also add the redirect URI using Azure CLI:
 az ad app update --id <app-id> --public-client-redirect-uris https://login.microsoftonline.com/common/oauth2/nativeclient
 ```
 
-### Public Client setting
+### Public client setting
 
-Under the **Advanced settings** section on the same Authentication tab, there's a **Allow public client flows** toggle. Set this to **Yes** only if you plan to use the Resource Owner Password Credentials (ROPC) flow, which sends a username and password directly in the token request body. This flow doesn't work for accounts that have multifactor authentication enabled. For interactive browser or device code flows, you don't need to enable this setting.
+Under the **Advanced settings** section on the same **Authentication** tab, there's a **Allow public client flows** toggle. Set this to **Yes** only if you plan to use the Resource Owner Password Credentials (ROPC) flow, which sends a username and password directly in the token request body. 
 
-## Step 4. Configure Certificates and Secrets (optional)
-If your app requires reading and writing resources as itself — also known as a Service Principal — there are two ways to authenticate. To use certificates, navigate to the **Manage - Certificates and secrets** tab. Under the **Certificates** section, upload an x509 certificate that you can use to authenticate. The other way is to use the **Secrets** section to generate a client secret. Save the secret in a safe location for use with your automation needs. The certificate or secret options allow you to authenticate with Microsoft Entra and receive a token for this client, of which you pass along to either the REST APIs or PowerShell cmdlets.
+This flow doesn't work for accounts that have multifactor authentication enabled. For interactive browser or device code flows, you don't need to enable this setting.
+
+## Step 4. (Optional) Configure certificates and secrets 
+If your app requires reading and writing resources as itself, also known as a _service principal_, there are two ways to authenticate. To use certificates, navigate to the **Manage - Certificates and secrets** tab. Under the **Certificates** section, upload an x509 certificate that you can use to authenticate. 
+
+The other way is to use the **Secrets** section to generate a client secret. Save the secret in a safe location for use with your automation needs. The certificate or secret options allow you to authenticate with Microsoft Entra and receive a token for this client, of which you pass along to either the REST APIs or PowerShell cmdlets.
 
 ## Step 5. Request an access token
-There are two ways to obtain an access bearer token. One is for username and password and the other is for Service Principals.
+There are two ways to obtain an access bearer token. One is for username and password and the other is for service principals.
 
 #### Username and password flow
-Be sure to read the Public Client section above. Then, send a POST request via HTTP to Microsoft Entra ID with a username and password payload.
+Be sure to read the [public client section](#public-client-setting). Then, send a POST request via HTTP to Microsoft Entra ID with a username and password payload.
 
 ```HTTP
 Content-Type: application/x-www-form-urlencoded
@@ -135,7 +141,7 @@ The above example contains placeholders that you can retrieve from your client a
 Use the **access_token** value in subsequent calls to the Power Platform API with the **Authorization** HTTP header.
 
 #### Service principal flow
-Be sure to read the Certificates and Secrets section above. Then, send a POST request via HTTP to Microsoft Entra ID with a client secret payload. This is often referred to as service principal authentication.
+Be sure to read the [Certificates and Secrets section]( ). Then, send a POST request via HTTP to Microsoft Entra ID with a client secret payload. This is often referred to as service principal authentication.
 
 > [!Important]
 > Before using service principal authentication, complete Steps 1-4 above to create and configure your app registration with a certificate or client secret. Then assign the service principal an RBAC role to control its level of access. See [Tutorial: Assign RBAC roles to service principals](programmability-tutorial-rbac-role-assignment.md) for a step-by-step guide.
