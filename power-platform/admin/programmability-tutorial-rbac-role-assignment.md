@@ -34,7 +34,7 @@ In this tutorial, you'll learn to:
 ## Prerequisites
 
 - A Microsoft Entra app registration configured for the Power Platform API, with a certificate or client secret for service principal authentication. For guidance, see [Authentication](programmability-authentication-v2.md).
-- The **Enterprise Application Object ID** for the service principal (found in Microsoft Entra ID > Enterprise applications).
+- The **Enterprise Application Object ID** for the service principal (found in **Microsoft Entra ID** > **Enterprise applications**).
 - The calling identity must have the **Power Platform Administrator** or **Power Platform role-based access control administrator** role.
 
 ## Built-in role definitions
@@ -50,7 +50,7 @@ Power Platform provides four built-in roles that can be assigned via RBAC. Each 
 
 ## Step 1. List available role definitions
 
-First, authenticate and retrieve the available role definitions to confirm the Contributor role ID.
+First, authenticate and retrieve the available role definitions to confirm the contributor role ID.
 
 # [PowerShell](#tab/PowerShell)
 
@@ -147,11 +147,11 @@ Power Platform role-based access control administrator: 95e94555-018c-447b-8691-
 
 ---
 
-Power Platform API reference: [Role Based Access Control - List Role Definitions](/rest/api/power-platform/authorization/role-based-access-control/list-role-definitions)
+Power Platform API reference: [Role-Based Access Control - List Role Definitions](/rest/api/power-platform/authorization/role-based-access-control/list-role-definitions)
 
 ## Step 2. Assign the Contributor role to a service principal
 
-Create a role assignment that grants the **Power Platform contributor** role to a service principal at the tenant scope. Replace `YOUR_TENANT_ID` with your tenant GUID and `YOUR_ENTERPRISE_APP_OBJECT_ID` with the Enterprise Application Object ID from Microsoft Entra ID.
+Create a role assignment that grants the **Power Platform contributor** role to a service principal at the tenant scope. Replace `YOUR_TENANT_ID` with your tenant GUID and `YOUR_ENTERPRISE_APP_OBJECT_ID` with the enterprise application object ID from Microsoft Entra ID.
 
 # [PowerShell](#tab/PowerShell)
 
@@ -221,7 +221,7 @@ print(f"Principal: {role_assignment.value[0].principal_object_id}")
 
 ---
 
-Power Platform API reference: [Role Based Access Control - Create Role Assignment](/rest/api/power-platform/authorization/role-based-access-control/create-role-assignment)
+Power Platform API reference: [Role-Based Access Control - Create Role Assignment](/rest/api/power-platform/authorization/role-based-access-control/create-role-assignment)
 
 ## Step 3. Verify the role assignment
 
