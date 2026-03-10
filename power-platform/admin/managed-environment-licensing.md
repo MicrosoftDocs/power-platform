@@ -3,7 +3,7 @@ title: Licensing
 description: Learn about licensing Managed Environments.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/17/2025
+ms.date: 03/10/2025
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -12,6 +12,7 @@ ms.custom: "admin-security"
 ms.contributors:
 - mihaelab
 contributors:
+- sandhangitms
 - akadrno
 - Funken1766
 - mihaelablendea
@@ -44,6 +45,82 @@ To see your current license usage, select **View license consumption (preview)**
 >
 > - There are users without standalone Power Apps licenses using Power Apps in that environment.
 > - Users without standalone Power Automate licenses use flows in that environment, or users use flows without Power Automate per flow licenses in that environment.
+
+## FAQ 
+
+### What is the Managed Environments licensing compliance?
+
+Starting June 2026, users in Power Apps who are using Managed Environments without an appropriate license will receive notifications to help ensure licensing compliance.
+
+- **End-user notifications:** End users who use Power Apps without an appropriate license will receive an in-app notification informing them to obtain a license from their administrator to continue using the app.
+- **Administrator notifications:** Administrators will see recommendations and alerts in the Power Platform admin center and Microsoft 365 Message center guiding them to review and assign licenses.
+
+### Why are licensing compliance notifications being introduced for Managed Environments?
+
+This is not a new licensing requirement. When you activate Managed Environments in an environment, all active users need at least one premium license per user or capacity add-ons to access respective resources. This initiative intends to help organizations achieve and maintain compliance with existing licensing terms by proactively notifying administrators as well as end users who don't have the required license. 
+
+### When do the notifications begin?
+
+In-app notifications for end users are scheduled to begin in June 2026. Administrators will receive advance notifications through the Microsoft 365 Message center and Power Platform admin center starting March 2026.
+
+### Which environments are in scope?
+
+Only environments that have been enabled as **Managed Environments** are in scope. For more information, see [Managed Environments overview](managed-environment-overview.md).
+
+### What licenses satisfy the requirement?
+
+Licensing requirements for Managed Environments are detailed in this content. For the complete and current list of qualifying licenses, refer to the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+### End-user experience
+
+#### What will end users experience?
+
+End users who open a Power App in a Managed Environment without an appropriate license will receive an in-app notification. The notification informs users that the app is in a Managed Environment and that they need to obtain an appropriate license from their administrator to continue using the app. Users can request a license directly from the notification.
+
+#### What happens when a user requests a license?
+
+When a user selects **Request License**, the request is submitted to the tenant administrator. Administrators can review and act on these requests in:
+
+- **Power Platform admin center** — **Actions** > **Recommendations**
+- **Microsoft 365 admin center** — **Billing** > **Licenses** > **Requests**
+
+### Administrator experience
+
+#### How are administrators notified?
+
+Administrators are notified through multiple channels to help them stay ahead of licensing compliance.
+
+Administrator notifications begin in March 2026, ahead of the June 2026 end user notifications.
+
+- **Microsoft 365 Message center** — Message center posts provide advance notice of upcoming changes and required actions.
+
+    After April 2026, additional notifications will be surfaced through Power Platform admin center notifications as well as recommendations.
+
+- **Power Platform admin center recommendations** — Available through **Actions > Recommendations**, these recommendations provide details for users in Managed Environments requiring a license.
+
+#### How can I check which users need a license?
+
+Administrators can identify users who require a license using the Power Apps usage report in the Power Platform admin center. Complete the following steps.
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. In the navigation pane, select **Licensing**.
+3. In the **Licensing** pane, select **Power Apps**.
+4. In the **Summary** tab, select **Download report**. The **Download license information** pane appears.
+5. From the **Usage type** list, select **Active users**.
+6. From the **Lookback window** list, select the desired month.
+7. Select **Download report**.
+8. Filter the report using the following columns:
+
+    - **IsManagedEnvironment** = True — to isolate users in Managed Environments.
+    - **SkuName** — filter for non-premium licenses (for example, “Office 365 E3 Developer” or any other non-premium user/per-app licenses) to identify users who do not have an appropriate license.
+
+    The report includes details on the specific users, the environments they are operating in, and the applications they are using.
+
+    In addition, more capabilities are planned to make it easier for administrators to identify these users.
+
+#### Can administrators assign licenses proactively?
+
+Yes. Administrators can review their Managed Environment users and assign licenses at any time. We recommend enabling the **auto-claim policy** in the Microsoft 365 admin center to benefit from automatic license assignment for active users. Ensure you have sufficient license capacity in the tenant.
 
 ### Related content
 
