@@ -35,7 +35,7 @@ You can reduce the amount of storage space used by removing or deleting informat
 - **Dynamics 365 Project Service Automation**
 - **Dynamics 365 Finance and Operations**
 
-This article gives you 15 methods to better manage storage.
+This article describes 15 methods to help you better manage storage.
 
 Use one or more of these methods to control your total data storage usage. You can delete categories of data as the need arises or set up bulk deletion jobs to reoccur at set intervals. For example, you can delete notes, attachments, import history, and other data.
   
@@ -44,29 +44,29 @@ Use one or more of these methods to control your total data storage usage. You c
 
 ## Prerequisites
 
-An administrator security role is required. All methods (except three and five) require this role, such as System Administrator. An admin role gives you permission to delete records in bulk and delete system jobs.
+An administrator security role is required. All methods except 3 and 5 require this role, such as the **System Administrator**. An admin role gives you permission to delete records in bulk and delete system jobs.
 
 ### Understand how storage works
 
 - Storage consumed doesn't directly correspond to the size reported in Microsoft Dataverse for apps. Consumption includes extra storage for metadata and encryption. For example, removing 10 MB of storage from a file doesn't mean the file size is reduced by 10 MB.
-- Some platform operations require you to wait 24-36 hours to confirm data size changes. These operations include upgrades to new versions and introduction of new workflows. Such operations require system adjustments that might result in a momentary size increase report.
+- Some platform operations require you to wait 24-36 hours to confirm data size changes. These operations include upgrades to new versions and the introduction of new workflows. Such operations require system adjustments that might temporarily increase reported storage size.
 
 ## Free up storage for Dataverse
 
 > [!NOTE]
 > The system can take up to 72 hours to update storage information. We recommend waiting up to 72 hours and monitoring your storage.
 
-Use the following methods to free up storage for each of the capacity types.
+Use the following methods to free up storage for each capacity type.
 
-| Storage | Affected Table(s) |  Method |
+| Storage | Affected table(s) |  Method |
 |---------|-------------------|---------|
 |**Database**     |         | |
-|     | **WorkflowLogBase** | **[Method 1](#method-1-delete-bulk-email-and-workflow-instances-using-a-bulk-deletion-job)**: Delete bulk email and workflow instances using a bulk deletion job        | 
+|     | **WorkflowLogBase** | **[Method 1](#method-1-delete-bulk-email-and-workflow-instances-using-a-bulk-deletion-job)**: Delete bulk email and workflow instances by using a bulk deletion job        | 
 |     | **AsyncOperationBase** | **[Method 2](#method-2-evaluate-and-delete-suspended-workflows)**: Evaluate and delete suspended workflows        | 
 |     | **DuplicateRecordBase**| **[Method 7](#method-7-remove-bulk-duplicate-detection-jobs-and-associated-copies-of-duplicate-records)**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
-|     | **ImportJobBase** | **[Method 8](#method-8-delete-bulk-import-instances-using-a-bulk-deletion-job)**: Delete bulk import instances using a bulk deletion job        | 
+|     | **ImportJobBase** | **[Method 8](#method-8-delete-bulk-import-instances-using-a-bulk-deletion-job)**: Delete bulk import instances by using a bulk deletion job        | 
 |     | **BulkDeleteOperationBase**| **[Method 9](#method-9-delete-bulk-deletion-job-instances-using-a-bulk-deletion-job)**: Delete bulk deletion job instances using a bulk deletion job        | 
-|     | various | **[Method 11](#method-11-remove-unrequired-tables-and-columns-from-dataverse-search)**: Remove unrequired tables and columns from Dataverse search        | 
+|     | Various | **[Method 11](#method-11-remove-unrequired-tables-and-columns-from-dataverse-search)**: Remove unecessary tables and columns from Dataverse search        | 
 |     | **ActivityPointerBase**, **EmailBase**, **EmailHashBase**, **ActivityPartyBase**, and other activity tables | **[Method 12](#method-12-remove-unrequired-data-from-activity-tables)**: Remove unrequired data from activity tables |
 |     | **Postbase**, **PostCommentBase**, **PostFollowBase**, **PostLikeBase**, **PostRegardingBase**, **PostRoleBase**  | **[Method 13](#method-13-remove-unrequired-activity-feeds-records)**: Remove unrequired Activity Feeds records |
 |     | **ExchangeSyncIdMappingBase**  | **[Method 14](#method-14-modify-item-level-monitoring-settings)**: Modify Item Level Monitoring Settings |
