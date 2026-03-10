@@ -53,7 +53,7 @@ To see your current license usage, select **View license consumption (preview)**
 Starting June 2026, users in Power Apps who are using Managed Environments without an appropriate license will receive notifications to help ensure licensing compliance.
 
 - **End-user notifications:** End users who use Power Apps without an appropriate license will receive an in-app notification informing them to obtain a license from their administrator to continue using the app.
-- **Administrator notifications:** Administrators will see recommendations and alerts in the Power Platform admin center and Microsoft 365 Message Center guiding them to review and assign licenses.
+- **Administrator notifications:** Administrators will see recommendations and alerts in the Power Platform admin center and Microsoft 365 Message center guiding them to review and assign licenses.
 
 ### Why are licensing compliance notifications being introduced for Managed Environments?
 
@@ -61,7 +61,7 @@ This is not a new licensing requirement. When you activate Managed Environments 
 
 ### When do the notifications begin?
 
-In-app notifications for end users are scheduled to begin in June 2026. Administrators will receive advance notifications through the Microsoft 365 Message Center and Power Platform admin center starting March 2026.
+In-app notifications for end users are scheduled to begin in June 2026. Administrators will receive advance notifications through the Microsoft 365 Message center and Power Platform admin center starting March 2026.
 
 ### Which environments are in scope?
 
@@ -92,7 +92,7 @@ Administrators are notified through multiple channels to help them stay ahead of
 
 Administrator notifications begin in March 2026, ahead of the June 2026 end user notifications.
 
-- **Microsoft 365 Message Center** — Message Center posts provide advance notice of upcoming changes and required actions.
+- **Microsoft 365 Message center** — Message center posts provide advance notice of upcoming changes and required actions.
 
     After April 2026, additional notifications will be surfaced through Power Platform admin center notifications as well as recommendations.
 
