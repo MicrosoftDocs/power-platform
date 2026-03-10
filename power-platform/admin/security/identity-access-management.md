@@ -60,7 +60,7 @@ The administrator privileges feature applies only to Managed Environments. By li
 The **Administrative privileges** pane provides a proactive recommendation if many users in your tenant have administrative privileges. You can open the recommendation to view a list of environments where many users have the System administrator security role. (Currently, the list shows environments where more than 20 users have that role.) For any environment in the list, select the link in the **System administrators** column to open the **Security roles** page. There, you can select the **System administrator** security role and then select **Membership** to open the **Membership** page. This page shows a list of users who have the role assignment. You can select users to remove from the role, one user at a time.
 
   > [!NOTE]
-  > Only users with appropriate permissions can remove other users from privileged administrative roles. For more information, see [Least privileged roles by task - Microsoft Entra ID](https://learn.microsoft.com/entra/identity/role-based-access-control/delegate-by-task).
+  > Only users with appropriate permissions can remove other users from privileged administrative roles. For more information, see [Least privileged roles by task - Microsoft Entra ID](/entra/identity/role-based-access-control/delegate-by-task).
 
 ### Known problems
 
