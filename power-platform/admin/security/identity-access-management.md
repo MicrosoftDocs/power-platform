@@ -59,8 +59,8 @@ The administrator privileges feature applies only to Managed Environments. By li
 
 The **Administrative privileges** pane provides a proactive recommendation if many users in your tenant have administrative privileges. You can open the recommendation to view a list of environments where many users have the System administrator security role. (Currently, the list shows environments where more than 20 users have that role.) For any environment in the list, select the link in the **System administrators** column to open the **Security roles** page. There, you can select the **System administrator** security role and then select **Membership** to open the **Membership** page. This page shows a list of users who have the role assignment. You can select users to remove from the role, one user at a time.
 
-> [!NOTE]
-> Only users who are assigned to the Global administrator role can remove other users from the Global administrator role.
+  > [!NOTE]
+  > Only users with appropriate permissions can remove other users from privileged administrative roles. For more information, see [Least privileged roles by task - Microsoft Entra ID](https://learn.microsoft.com/entra/identity/role-based-access-control/delegate-by-task).
 
 ### Known problems
 
@@ -70,6 +70,7 @@ Be aware of the following known problems with the feature:
 - After you remove a user from the System administrator role, it takes about 24 hours for the page to show the updated administrator count.
 
 ## Authentication for agents (preview)
+
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
@@ -93,6 +94,7 @@ The **Authentication for agents** feature is a modernized framework of the exist
 We recommend that all customers move toward using the **Authentication for agents** setting in the Power Platform admin center to leverage the capability of groups and rules.
 
 ## Agent access channels (preview)
+
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
@@ -109,3 +111,5 @@ The **Agent access channels** feature is a modernized framework of the existing 
 | Allowed| Allowed | Allowed|
 
 We recommend that all customers move toward using the **Agent access channels** settings in the Power Platform admin center to leverage the capability of groups and rules.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

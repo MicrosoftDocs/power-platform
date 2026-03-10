@@ -41,16 +41,17 @@ When the setting is enabled (On):
 - Apply guest access settings per environment and configure them individually.
 - By blocking guest access, you prevent any guest from saving to Dataverse and using Dataverse resources.
 - **Guests aren't restricted from accessing apps in the environment that aren't using Dataverse.**
-- Items that you create in Copilot Studio might use Graph connectors as knowledge sources from outside Microsoft Power Platform. Currently, guests might access the information in these items even if you block guest access.
+- Items that you create in Copilot Studio might use Microsoft Graph connectors as knowledge sources from outside Microsoft Power Platform. Currently, guests might access the information in these items even if you block guest access.
 
 ## Configure guest access in Power Platform admin center
 
 To manage guest access for an environment:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and select **Security Hub**.
-2. Select **Identity and access**.
-3. Locate the **Guest access** setting.
-4. Select the environment.
-5. Toggle the setting **On** (Restricted) or **Off** (Allowed), and then select **Save**.
+1. Select **Identity and access**.
+1. Locate the **Guest access** setting.
+1. Select the environment.
+1. Toggle the setting **On** (Restricted) or **Off** (Allowed), and then select **Save**.
+
 - **On (Restricted):** Block guest access in the environment.
 - **Off (Allowed):** Permit guest access.
 
@@ -72,3 +73,5 @@ You can also configure guest access by using the Power Platform CLI, which is us
 
 **List settings example:**
 `pac env list-settings --environment "your-environment-url" --filter "guest"`
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
