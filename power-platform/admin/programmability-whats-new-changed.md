@@ -156,8 +156,8 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 
 | Item | Type | Description |
 |------|------|-------------|
-| List Operations for Environment | API | New endpoint: [List Operations For Environment](/rest/api/power-platform/environmentmanagement/operation/list-operations-for-environment) |
-| Get Operation by ID | API | New endpoint: [Get Operation By ID](/rest/api/power-platform/environmentmanagement/operations/get-operation-by-id) |
+| List Operations for Environment | API | New endpoint: [List Operations For Environment](/rest/api/power-platform/environmentmanagement/operation/get-operations-for-environment) |
+| Get Operation by ID | API | New endpoint: [Get Operation By ID](/rest/api/power-platform/environmentmanagement/operation/get-operation-by-id) |
 | Delete Environment by ID | API | New endpoint: [Delete Environment By ID](/rest/api/power-platform/environmentmanagement/environment-delete/delete-environment-by-id) |
 | Create Rule Based Policy | API | New endpoint: [Create Rule Based Policy](/rest/api/power-platform/governance/rule-based-policies/create-rule-based-policy) |
 | List Rule Based Policies | API | New endpoint: [List Rule Based Policies](/rest/api/power-platform/governance/rule-based-policies/list-rule-based-policies) |
