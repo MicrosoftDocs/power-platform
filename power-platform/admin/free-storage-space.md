@@ -51,7 +51,7 @@ An administrator security role is required. All methods (except three and five) 
 - Storage consumed doesn't directly correspond to the size reported in Microsoft Dataverse for apps. Consumption includes extra storage for metadata and encryption. For example, removing 10 MB of storage from a file doesn't mean the file size is reduced by 10 MB.
 - Some platform operations require you to wait 24-36 hours to confirm data size changes. These operations include upgrades to new versions and introduction of new workflows. Such operations require system adjustments that might result in a momentary size increase report.
 
-## Freeing storage for Dataverse
+## Free up storage for Dataverse
 
 > [!NOTE]
 > The system can take up to 72 hours to update storage information. We recommend waiting up to 72 hours and monitoring your storage.
