@@ -549,12 +549,12 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 Tables and table fields enabled for Dataverse search affect the database storage capacity.
 
-- To revise the list of tables selected for Dataverse search results, see [Select tables for Dataverse search's global search](configure-relevance-search-organization.md#select-tables-for-dataverse-searchs-global-search).
-- To revise the list of fields selected for each table for Dataverse search results, see [Select searchable fields and filters for each table for global search](configure-relevance-search-organization.md#select-searchable-fields-and-filters-for-each-table-for-global-search).
+- To revise the list of tables selected for Dataverse search results, refer to [Select tables for Dataverse search's global search](configure-relevance-search-organization.md#select-tables-for-dataverse-searchs-global-search).
+- To revise the list of fields selected for each table for Dataverse search results, refer to [Select searchable fields and filters for each table for global search](configure-relevance-search-organization.md#select-searchable-fields-and-filters-for-each-table-for-global-search).
 
 ### Method 12: Remove unrequired data from activity tables
 
-These tables store records for [activities](/power-apps/developer/data-platform/activity-entities) such as emails, appointments, tasks, calls, etc. To learn more about what data these tables contain, see [Activities data model and storage](/power-apps/developer/data-platform/activities-data-model-storage).
+These tables store records for [activities](/power-apps/developer/data-platform/activity-entities) such as emails, appointments, tasks, calls, etc. To learn more about what data these tables contain, refer to [Activities data model and storage](/power-apps/developer/data-platform/activities-data-model-storage).
 
 ### Method 13: Remove unrequired Activity Feeds records
 
@@ -564,24 +564,24 @@ These tables store post related records for [Activity Feeds](/dynamics365/custom
 
 The ExchangeSyncIdMappingBase table contains references between Dynamics 365 records and the corresponding records in Microsoft Exchange. This table is used by the Server-Side Synchronization feature, which enables synchronization of emails, appointments, contacts, and tasks between Dynamics 365 and Microsoft Exchange.
 
-Extra rows are stored in this table to help with troubleshooting the synchronization of specific items. For more information, see [Troubleshoot item level Server-Side Synchronization issues with Microsoft Dynamics 365](/troubleshoot/dynamics-365/sales/troubleshoot-item-level-server-side-synchronization-issues). This article provides details regarding how you can reduce the default duration (three days) of how long these troubleshooting records exist. This troubleshooting feature can also be disabled. Rows unrelated to this feature can't be deleted and are required for Appointment, Contact, and Task synchronization.
+Extra rows are stored in this table to help with troubleshooting the synchronization of specific items. For more information, refer to [Troubleshoot item level Server-Side Synchronization issues with Microsoft Dynamics 365](/troubleshoot/dynamics-365/sales/troubleshoot-item-level-server-side-synchronization-issues). This article provides details regarding how you can reduce the default duration (three days) of how long these troubleshooting records exist. This troubleshooting feature can also be disabled. Rows unrelated to this feature can't be deleted and are required for Appointment, Contact, and Task synchronization.
 
 ### Method 15: Remove unrequired Alerts (trace logs)
 
 The [Server-Side Synchronization](server-side-synchronization.md) feature logs alerts when different events occur such as a mailbox encountering an error or warning. There are also informational alerts logged when you enable a mailbox. You can view these Alerts when you view a Mailbox or Email Server profile within the Email Configuration area of Advanced Settings. While these records appear in a tab called Alerts, they're actually Trace records. To free space consumed by these Alerts, you can delete any Trace records, which are no longer required. Trace records can be deleted within the Alerts tab of an Email Server Profile or Mailbox record. They can also be deleted using Advanced Find or a [Bulk Delete](delete-bulk-records.md) job.
 
-You can also configure which levels of alerts are logged. See [System Settings Email tab](system-settings-dialog-box-email-tab.md).
+You can also configure which levels of alerts are logged. For more information, refer to [System Settings Email tab](system-settings-dialog-box-email-tab.md).
 
 ## Free up storage used by flow approvals
 
-See [Delete approval history from Power Automate](/power-automate/gdpr-dsr-delete#delete-approval-history-from-power-automate).
+View [Delete approval history from Power Automate](/power-automate/gdpr-dsr-delete#delete-approval-history-from-power-automate).
 
 ## Free up storage used by the SubscriptionTrackingDeletedObject table
 
-See [Subscription Tracking Deleted Object Table](subscription-tracking-deleted-object-retention.md).
+View [Subscription Tracking Deleted Object Table](subscription-tracking-deleted-object-retention.md).
 
-### See also
+### Related content
 
-[Dataverse storage capacity](capacity-storage.md)
+- [Dataverse storage capacity](capacity-storage.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- [!INCLUDE[footer-include](../includes/footer-banner.md)]
