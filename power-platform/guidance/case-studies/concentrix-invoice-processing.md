@@ -109,7 +109,7 @@ This case study shows the potential of using Power Platform and AI to transform 
 
 - **Expect nondeterminism and plan for it** Clear formatting rules, guardrails and validation steps ensure consistency.
 
-- **Centralized visibility strengthens governance** real time tracking and a single review interface reduce errors and improve auditability.
+- **Centralized visibility strengthens governance** Real time tracking and a single review interface reduce errors and improve auditability.
 
 ## Looking ahead
 
