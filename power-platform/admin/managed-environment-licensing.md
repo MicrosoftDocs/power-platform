@@ -3,7 +3,7 @@ title: Licensing
 description: Learn about licensing Managed Environments.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/17/2025
+ms.date: 03/10/2025
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -12,6 +12,7 @@ ms.custom: "admin-security"
 ms.contributors:
 - mihaelab
 contributors:
+- sandhangitms
 - akadrno
 - Funken1766
 - mihaelablendea
