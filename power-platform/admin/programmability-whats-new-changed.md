@@ -43,7 +43,7 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 ## October 2025
 | Item | Type | Description |
 |------|------|-------------|
-| Query Resources | API | New endpoint: [Query Resources](/rest/api/power-platform/resourcequery/resources/query-resources) |
+| Query Resources | API | New endpoint: [Query Resources](/rest/api/power-platform/resourcequery/resource-query/query-resources) |
 | Add Allowed IP Addresses | API | New endpoint: [Add Allowed IP Addresses](/rest/api/power-platform/powerpages/websites/add-allowed-ip-addresses) |
 | Create Environment Rule Based Assignment | Bug fixes | Various bug fixes for [Create Environment Rule Based Assignment](/rest/api/power-platform/governance/rule-based-policies/create-environment-rule-based-assignment) |
 | Create Environment Group Rule Based Assignment | Bug fixes | Various bug fixes for [Create Environment Group Rule Based Assignment](/rest/api/power-platform/governance/rule-based-policies/create-enviornment-group-rule-based-assignment) |
@@ -134,9 +134,9 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 
 | Item | Type | Description |
 |------|------|-------------|
-| Get Bot Quarantine Status | API | New endpoint: [Get Bot Quarantine Status](/rest/api/power-platform/powervirtualagents/bots/get-bot-quarantine-status) |
-| Set Bot As Quarantined | API | New endpoint: [Set Bot As Quarantined](/rest/api/power-platform/powervirtualagents/bots/set-bot-as-quarantined) |
-| Set Bot As Unquarantined | API | New endpoint: [Set Bot As Unquarantined](/rest/api/power-platform/powervirtualagents/bots/set-bot-as-unquarantined) |
+| Get Bot Quarantine Status | API | New endpoint: [Get Bot Quarantine Status](/rest/api/power-platform/copilotstudio/bots/get-bot-quarantine-status) |
+| Set Bot As Quarantined | API | New endpoint: [Set Bot As Quarantined](/rest/api/power-platform/copilotstudio/bots/set-bot-as-quarantined) |
+| Set Bot As Unquarantined | API | New endpoint: [Set Bot As Unquarantined](/rest/api/power-platform/copilotstudio/bots/set-bot-as-unquarantined) |
 | Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.42.1#releasenotes-body-tab) |
 | Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
 
@@ -156,9 +156,9 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 
 | Item | Type | Description |
 |------|------|-------------|
-| List Operations for Environment | API | New endpoint: [List Operations For Environment](/rest/api/power-platform/environmentmanagement/operations/list-operations-for-environment) |
+| List Operations for Environment | API | New endpoint: [List Operations For Environment](/rest/api/power-platform/environmentmanagement/operation/list-operations-for-environment) |
 | Get Operation by ID | API | New endpoint: [Get Operation By ID](/rest/api/power-platform/environmentmanagement/operations/get-operation-by-id) |
-| Delete Environment by ID | API | New endpoint: [Delete Environment By ID](/rest/api/power-platform/environmentmanagement/environments/delete-environment-by-id) |
+| Delete Environment by ID | API | New endpoint: [Delete Environment By ID](/rest/api/power-platform/environmentmanagement/environment-delete/delete-environment-by-id) |
 | Create Rule Based Policy | API | New endpoint: [Create Rule Based Policy](/rest/api/power-platform/governance/rule-based-policies/create-rule-based-policy) |
 | List Rule Based Policies | API | New endpoint: [List Rule Based Policies](/rest/api/power-platform/governance/rule-based-policies/list-rule-based-policies) |
 | Get Rule Based Policy by ID | API | New endpoint: [Get Rule Based Policy By ID](/rest/api/power-platform/governance/rule-based-policies/get-rule-based-policy-by-id) |
