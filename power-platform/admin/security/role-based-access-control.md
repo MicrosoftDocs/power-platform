@@ -1,5 +1,5 @@
 ---
-title: Role-based access control for Power Platform admin center
+title: Role-based access control for Power Platform admin center (preview)
 description: Learn more about role-based access control in the Power Platform admin center. Learn how to use role assignments to control access to Power Platform resources.
 author: laneswenka
 manager: zoraz
@@ -11,7 +11,7 @@ ms.reviewer: sericks
 
 ---
 
-# Role-based access control for Power Platform admin center
+# Role-based access control for Power Platform admin center (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
