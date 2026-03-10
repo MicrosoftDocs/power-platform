@@ -81,8 +81,8 @@ End users who open a Power App in a Managed Environment without an appropriate l
 
 When a user selects **Request License**, the request is submitted to the tenant administrator. Administrators can review and act on these requests in:
 
-- **Power Platform admin center** — Actions > Recommendations
-- **Microsoft 365 Admin Center** — Billing > Licenses > Requests
+- **Power Platform admin center** — **Actions** > **Recommendations**
+- **Microsoft 365 admin center** — **Billing** > **Licenses** > **Requests**
 
 ### Administrator experience
 
@@ -120,7 +120,7 @@ Administrators can identify users who require a license using the Power Apps usa
 
 #### Can administrators assign licenses proactively?
 
-Yes. Administrators can review their Managed Environment users and assign licenses at any time. We recommend enabling the **auto-claim policy** in the Microsoft 365 Admin Center to benefit from automatic license assignment for active users. Ensure you have sufficient license capacity in the tenant.
+Yes. Administrators can review their Managed Environment users and assign licenses at any time. We recommend enabling the **auto-claim policy** in the Microsoft 365 admin center to benefit from automatic license assignment for active users. Ensure you have sufficient license capacity in the tenant.
 
 ### Related content
 
