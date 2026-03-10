@@ -33,24 +33,18 @@ As volumes increased, from around 500 invoices per month to several hundred thou
 
 Concentrix replaced its manual invoice process with a fully automation solution built on Power Automate, Power Apps, AI Builder, and GPT-based extraction. Instead of downloading invoices, typing in data, and handling exceptions manually, the new solution reads invoices automatically, extracts key information, and applies business rules with minimal human involvement.
 
-Key benefits:
+Key benefits include:
 
 - High accuracy at scale
-
   - Processes more than 100,000 invoices per month
-
   - Achieves 96% accuracy overall, reaching 99% in January 2026
 
 - Faster development and lower costs
-
   - Lower per invoice processing cost
-
   - A small team tests new invoice patterns quickly
-
+  
 - Improved operational and customer satisfaction
-
   - High accuracy strengthens confidence across operations
-
   - Customers receive clean, consistent data on time
 
 > We work across all verticals—banking, retail, telecom, education, healthcare—and automation is a key part of how we help our clients operate better and faster.
@@ -63,31 +57,21 @@ The solution is built around four main areas: sources, AI processing, data enric
 
 :::image type="content" source="media/concentrix-invoice-processing/architecture.png" alt-text="Diagram of utility bills automation workflow showing sources, AI processing, data enrichment, and user experience steps." lightbox="media/concentrix-invoice-processing/architecture.png":::
 
-1. **Sources**
+1. **Sources** Invoices arrive through email, shared drives, SharePoint, and a Teams intake channel (where the operations team drops PDFs into a chat). A gateway provides secure access to customer managed shared drives, ensuring all files, whether cloud or on premises, enter the same automated workflow.
 
-Invoices arrive through email, shared drives, SharePoint, and a Teams intake channel (where the operations team drops PDFs into a chat). A gateway provides secure access to customer managed shared drives, ensuring all files, whether cloud or on premises, enter the same automated workflow.
+1. **AI processing** A scheduled Power Automate cloud flows runs every 15 minutes, collects new invoices and processes them in batches to avoid throttling. The solution applies several layers of AI:
 
-1. **AI processing**
+    - Optical Character Recognition (OCR) for patterns requiring text pre‑processing
+    - AI Builder custom models for patterns where they still perform well
+    - AI prompts both general and pattern specific, powered by GPT models
 
-A scheduled Power Automate cloud flows runs every 15 minutes, collects new invoices and processes them in batches to avoid throttling. The solution applies several layers of AI:
+    AI prompts and AI Builder custom models extract data from OCR pre-processed or raw PDF files. This hybrid approach allows the solution to handle a wide variety of invoice formats with consistently high accuracy.
 
-- **Optical Character Recognition** (OCR) for patterns requiring text pre‑processing
+1. **Data enrichment** Extracted data is standardized using Power Automate cloud flow transformations and Dataverse reference tables. This includes mapping cities and ZIP codes and enriching vendor-specific fields before loading the final dataset into SQL Server.
 
-- **AI Builder custom models** for patterns where they still perform well
+1. **User experience** A Power Apps mobile app gives the operations team a simple way to review exceptions. The app displays both the original PDF and the extracted data, allowing quick validation without slowing down the automated pipeline.
 
-- **AI prompts** both general and pattern specific, powered by GPT models
-
-AI prompts and AI Builder custom models extract data from OCR pre-processed or raw PDF files. This hybrid approach allows the solution to handle a wide variety of invoice formats with consistently high accuracy.
-
-1. **Data enrichment**
-
-Extracted data is standardized using cloud flow transformations and Dataverse reference tables. This includes mapping cities and ZIP codes and enriching vendor-specific fields before loading the final dataset into SQL Server.
-
-1. **User experience**
-
-A Power Apps mobile app gives the operations team a simple way to review exceptions. The app displays both the original PDF and the extracted data, allowing quick validation without slowing down the automated pipeline.
-
-:::image type="content" source="media/concentrix-invoice-processing/canvas-app-startpage.png" alt-text="Screenshot of Concentrix invoice automation dashboard showing KPI indicators, AI invoice processing stats, and a Next button." lightbox="media/concentrix-invoice-processingcanvas-app-startpage.png":::
+:::image type="content" source="media/concentrix-invoice-processing/canvas-app-startpage.png" alt-text="Screenshot of Concentrix invoice automation dashboard showing KPI indicators, AI invoice processing stats, and a Next button." lightbox="media/concentrix-invoice-processing/canvas-app-startpage.png":::
 
 ## Implementation approach
 
@@ -101,29 +85,19 @@ The redesign also reshaped team structure. The group responsible for pattern ana
 
 AI prompts form the core of the extraction logic, with around 90 percent of invoices now running through prompts, instead of AI Builder custom models. A general prompt handles most of the simpler layouts, while specialized prompts cover the more unique or complex patterns. Each prompt follows the following structure:
 
-- General instructions
-
-  - Role and overall task
-
-  - The invoice data as input
-
-- Global rules describing how data should be extracted
-
-- Formatting rules defining how to treat missing values and how to structure output
-
-- Data extraction rules, with table definitions
-
+- **General instructions** defining role, overall task, and the invoice data as input
+- **Global rules** describing how data should be extracted
+- **Formatting rules** defining how to treat missing values and how to structure output
+- **Data extraction rules** including table definitions:
   - Header, meter, and charge tables
-
   - Detailed description of how to extract data
-
   - Rules for interpreting each field
-
   - Variations depending on vendor and customer
-
-- A JSON example showing the exact expected output format
+- **JSON example** showing the exact expected output format
 
 The following image shows the beginning of one of these prompts.
+
+:::image type="content" source="media/concentrix-invoice-processing/ai-prompt-data-extraction.png" alt-text="Screenshot of Concentrix invoice automation dashboard showing KPI indicators, AI invoice processing stats, and a Next button." lightbox="media/concentrix-invoice-processing/ai-prompt-data-extraction.png":::
 
 ## Takeaways
 
