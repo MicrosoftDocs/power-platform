@@ -46,11 +46,11 @@ To see your current license usage, select **View license consumption (preview)**
 > - There are users without standalone Power Apps licenses using Power Apps in that environment.
 > - Users without standalone Power Automate licenses use flows in that environment, or users use flows without Power Automate per flow licenses in that environment.
 
-# FAQ 
+## FAQ 
 
-### What is the Managed Environments Licensing Compliance?
+### What is the Managed Environments licensing compliance?
 
-Starting June 2026, users in using Power Apps in  Managed Environments without an appropriate license will begin receiving notifications to help ensure licensing compliance.
+Starting June 2026, users in Power Apps in Managed Environments without an appropriate license will begin receiving notifications to help ensure licensing compliance.
 
 **End-user notifications:** End users who use Power Apps without an appropriate license will receive an in-app notification informing them to obtain a license from their administrator to continue using the app.
 **Administrator notifications:** Administrators will see additional recommendations and alerts in the Power Platform admin center and Microsoft 365 Message Center guiding them to review and assign licenses
