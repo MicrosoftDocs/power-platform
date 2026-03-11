@@ -1,7 +1,7 @@
 ---
 title: Continuous access evaluation (preview)
 description: Learn how continuous access evaluation in Microsoft Power Platform enforces changes to user access and tenant policy in near real time.
-ms.date: 01/16/2026
+ms.date: 03/11/2026
 ms.topic: overview
 author: ritesp
 ms.author: ritesp
@@ -12,6 +12,7 @@ search.audienceType:
   - admin
 ms.custom: bap-template
 contributors:
+  - abhijananddv
   - alaug 
 ---
 
