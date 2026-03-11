@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Microsoft Power Platform REST API - inventory",
+    "title": "Microsoft Power Platform REST API - resourceQuery",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
     "version": "2022-03-01-preview"
   },
@@ -13,10 +13,10 @@
     "/resourcequery/resources/query": {
       "post": {
         "tags": [
-          "Resources"
+          "ResourceQuery"
         ],
         "summary": "Query Power Platform resources.",
-        "description": "Translates the request body into KQL and executes it against Azure Resource Graph. Pagination follows ARG semantics (`Options.Top`, `Options.SkipToken`).",
+        "description": "Executes a KQL query against Azure Resource Graph with ARG paging.",
         "externalDocs": {
           "description": "ARG Query Best Practices (throttling, paging, limits)",
           "url": "https://learn.microsoft.com/azure/governance/resource-graph/concepts/guidance-for-throttled-requests"
@@ -56,12 +56,12 @@
                   "TableName": "PowerPlatformResources",
                   "Clauses": [
                     {
-                      "$type": "extend",
+                      "$­type": "extend",
                       "FieldName": "joinKey",
                       "Expression": "tolower(tostring(properties.environmentId))"
                     },
                     {
-                      "$type": "join",
+                      "$­type": "join",
                       "JoinKind": "leftouter",
                       "LeftColumnName": "joinKey",
                       "RightColumnName": "joinKey",
@@ -69,7 +69,7 @@
                         "TableName": "PowerPlatformResources",
                         "Clauses": [
                           {
-                            "$type": "where",
+                            "$­type": "where",
                             "FieldName": "type",
                             "Operator": "==",
                             "Values": [
@@ -77,7 +77,7 @@
                             ]
                           },
                           {
-                            "$type": "project",
+                            "$­type": "project",
                             "FieldList": [
                               "joinKey = tolower(name)",
                               "environmentName = properties.displayName",
@@ -90,7 +90,7 @@
                       }
                     },
                     {
-                      "$type": "where",
+                      "$­type": "where",
                       "FieldName": "type",
                       "Operator": "in~",
                       "Values": [
@@ -103,7 +103,7 @@
                       ]
                     },
                     {
-                      "$type": "orderby",
+                      "$­type": "orderby",
                       "FieldNamesAscDesc": {
                         "tostring(properties.createdAt)": "desc"
                       }
@@ -174,7 +174,7 @@
       "type": "object",
       "properties": {
         "TableName": {
-          "description": "Target table/resource set (for example, \"PowerPlatformResources\")",
+          "description": "Target table/resource set (e.g., \"PowerPlatformResources\")",
           "type": "string"
         },
         "Clauses": {
@@ -198,7 +198,7 @@
           "type": "integer"
         },
         "Skip": {
-          "description": "Offset; typically zero (0) when using SkipToken",
+          "description": "Offset; typically 0 when using SkipToken",
           "minimum": 0,
           "type": "integer"
         },
@@ -215,7 +215,7 @@
     "Clause": {
       "description": "Base class for all Kusto clauses.",
       "required": [
-        "type"
+        "$­type"
       ],
       "type": "object",
       "allOf": [
@@ -224,8 +224,8 @@
         }
       ],
       "properties": {
-        "type": {
-          "description": "NOTE the name of the property is '$type' but the $ is dropped by docs automation.",
+        "$­type": {
+          "description": "Discriminator for the clause type.",
           "enum": [
             "where",
             "project",
@@ -240,16 +240,16 @@
           "type": "string"
         }
       },
-      "discriminator": "$type"
+      "discriminator": "$­type"
     },
     "ClauseBaseClass": {
       "required": [
-        "type"
+        "$­type"
       ],
       "type": "object",
       "properties": {
-        "type": {
-          "description": "NOTE the name of the property is '$type' but the $ is dropped by docs automation.",
+        "$­type": {
+          "description": "Discriminator for the clause type.",
           "enum": [
             "where",
             "project",
@@ -482,7 +482,7 @@
       ],
       "properties": {
         "JoinKind": {
-          "description": "KQL join kind (for example, innerunique, leftouter)",
+          "description": "KQL join kind (e.g., innerunique, leftouter)",
           "type": "string"
         },
         "LeftColumnName": {
@@ -556,7 +556,7 @@
       }
     },
     "ResourceItem": {
-      "description": "Standard Azure Resource Graph row with Power Platform–specific fields.\nArbitrary properties may exist under `properties`.\n",
+      "description": "ARG row with Power Platform-specific fields.\nArbitrary properties may exist under `properties`.\n",
       "type": "object",
       "properties": {
         "id": {

@@ -204,7 +204,7 @@
             "type": "object",
             "properties": {
               "roleDefinitionId": {
-                "description": "Role definition ID",
+                "description": "Role definition Id",
                 "type": "string",
                 "example": "roleDef1"
               },
@@ -238,17 +238,17 @@
             "type": "object",
             "properties": {
               "roleAssignmentId": {
-                "description": "Role assignment ID",
+                "description": "Role assignment Id",
                 "type": "string",
                 "example": "assignment1"
               },
               "principalObjectId": {
-                "description": "The ID of the assigned principal",
+                "description": "The Id of the assigned principal",
                 "type": "string",
                 "example": "user123"
               },
               "roleDefinitionId": {
-                "description": "The ID of the role definition",
+                "description": "The Id of the role definition",
                 "type": "string",
                 "example": "roleDef1"
               },
@@ -268,7 +268,7 @@
                 "example": "User"
               },
               "createdByPrincipalObjectId": {
-                "description": "The ID of the creator principal",
+                "description": "The Id of the creator principal",
                 "type": "string",
                 "example": "user123"
               },
@@ -288,12 +288,12 @@
       "type": "object",
       "properties": {
         "principalObjectId": {
-          "description": "The ID of the principal to assign",
+          "description": "The Id of the principal to assign",
           "type": "string",
           "example": "user123"
         },
         "roleDefinitionId": {
-          "description": "The ID of the role definition",
+          "description": "The Id of the role definition",
           "type": "string",
           "example": "roleDef1"
         },

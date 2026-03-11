@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac auth
 
-Manage how you authenticate to various services
+Manage how you authenticate to various services.
 
 [!INCLUDE [auth-intro](includes/auth-intro.md)]
 

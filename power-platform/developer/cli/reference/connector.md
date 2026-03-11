@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac connector
 
-Commands for working with Power Platform Connectors
+Commands for working with Power Platform Connectors.
 
 [!INCLUDE [connector-intro](includes/connector-intro.md)]
 

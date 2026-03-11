@@ -7,7 +7,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.topic: overview
-ms.date: 01/23/2026
+ms.date: 03/05/2026
 ---
 
 # Real-world case studies
@@ -38,6 +38,7 @@ Each case study provides an in-depth look at how organizations build application
 | [Daimler Truck transforms policy management](daimler-truck-modernizes-policies.md) | Covers how Daimler Truck modernized policy management using Power Apps, Dataverse, and Managed Environments to enhance efficiency and collaboration. |
 | [Degrees of Change automates nonprofit operations](nonprofit.md) | Covers how Degrees of Change automates nonprofit operations with Power Pages, Power Apps, and AI Builder. |
 | [Deutsche Bahn empowers citizen developers](db-empowers-citizen-devs.md) | Covers how Deutsche Bahn Group accelerated innovation by empowering their employees to build low-code business applications using Power Platform. |
+| [Dunaway streamlines city code research with Copilot Studio](dunaway-streamlines-city-code-research.md) | Covers how Dunaway transformed compliance workflows with a conversational AI agent that delivers instant, accurate regulatory answers. |
 | [Epiq streamlines employee onboarding](streamline-employee-onboarding.md) | Covers how Epiq streamlines employee onboarding with Power Automate, Microsoft Dataverse, and AI Builder. |
 | [EY automates payment processing](global-finance.md) | Covers how the Global Finance team at Ernst & Young used Power Automate, AI Builder, and Dataverse to automate customer payment processing. |
 | [Holland America Line transforms customer experience with Copilot Studio](holland-america-customer-experience.md) | Covers how Holland America Line used Copilot Studio to create a sophisticated virtual agent to create a virtual concierge for their website. |

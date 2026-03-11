@@ -4,7 +4,7 @@ description: Learn how to allow external language models for generative response
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/19/2026
+ms.date: 02/27/2026
 author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
@@ -25,6 +25,8 @@ On January 7, 2026, Anthropic operates as a Microsoft subprocessor and the Micro
 
 > [!NOTE]
 > You must [allow Anthropic access in the Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2341952) and [allow xAI access in Microsoft 365 admin center.](https://go.microsoft.com/fwlink/?linkid=2348423) If enabled there, you can access these settings in the Power Platform admin center.  
+
+[!INCLUDE [models-xai-disclaimer-note](~/../shared-content/shared/models-xai-disclaimer-note.md)]
 
 ## Control external AI models use for an environment
 
