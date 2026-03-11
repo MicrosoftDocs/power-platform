@@ -22,7 +22,7 @@ Keep the following principles in mind:
 
 -	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the **Monitor** area is evaluated every 24 hours after the newest 24-hour aggregates are produced. An alert rule does an on-demand evaluation upon its creation.
 - Alert rules are alerts that admins create to monitor their resources. You can edit, delete, and turn an alert rule on or off. You can place alert rules on an environment and a specific resource.
-- A _triggered alert_ occurs when one or more of the resources that an alert rule monitors pass specific thresholds that the admin defines when configuring the alert rule. You can select the triggered alert to learn what resources triggered the alert rule, and get recommendations for how to improve the resources if it's in a managed environment. 
+- A _triggered alert_ occurs when one or more of the resources that an alert rule monitors pass specific thresholds that the admin defines when configuring the alert rule. You can select the triggered alert to learn what resources triggered the alert rule, and get recommendations for how to improve the resources if it's in a Managed Environment. 
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
@@ -33,7 +33,7 @@ Keep the following principles in mind:
 
 ## Prerequisites
 -	You must be a tenant administrator or an environment administrator to access alerts. 
--	You can only place alerts on a managed environment.
+-	You can only place alerts on a Managed Environment.
 -	You must be using the [new and improved Power Platform admin center](/power-platform/admin/new-admin-center).
 
 ## Create an alert on an environment
@@ -131,7 +131,8 @@ Selecting the three dots next to the predefined alert and then **Details** displ
 ## Frequently asked questions (FAQs)
 
 ### What's the difference between an alert rule and a triggered alert?
-An _alert rule_ is a monitoring rule you configure, including the scope, metric, threshold, severity, and notification.                                                                                                                                               
+An _alert rule_ is a monitoring rule you configure, including the scope, metric, threshold, severity, and notification.                             
+
 A _triggered alert_ is an instance when one or more resources meet the rule's condition. For example, the **Is under 90% for app open success rate** condition is met.
 
 ### Who can create and manage alerts?
