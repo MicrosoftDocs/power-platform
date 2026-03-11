@@ -148,7 +148,7 @@ As a result, the agent counts between the two surfaces will differ. The Microsof
 
 - **Environment name**: Filtering by environment requires the full environment name. Partial matches or substrings aren't supported.
 
-- **Multi-factor authentication (MFA) requirements for Azure Resource Manager**: Power Platform inventory requires access to Azure Resource Manager to retrieve resource information. If your organization enforces MFA via Conditional Access policies for Azure Resource Manager, inventory may fail to load. To resolve this, work with your Entra ID administrator to exclude either the Power Platform Admin Center application (client ID: `00b46ad5-e4ae-43ac-a878-281fc03d0839`) or the "Microsoft Azure Management" resource from your MFA Conditional Access policy.
+- **Multi-factor authentication (MFA) requirements for Azure Resource Manager**: Power Platform inventory requires access to Azure Resource Manager to retrieve resource information. If your organization enforces MFA via Conditional Access policies for Azure Resource Manager, inventory may fail to load. To resolve this, work with your Entra ID administrator to include the Power Platform Admin Center application (client ID: `00b46ad5-e4ae-43ac-a878-281fc03d0839`) and the "Microsoft Azure Management" resource from your MFA Conditional Access policy.
 
 - **_Modified on_ and _Last modified by_ columns**: These columns are currently nonfunctional for agents and are populated with the **–** (dash) character.
 
