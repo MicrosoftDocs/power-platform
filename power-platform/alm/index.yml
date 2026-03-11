@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page
   author: Mattp123
   ms.author: matp
-  ms.date: 09/17/2024
+  ms.date: 03/11/2026
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -47,8 +47,12 @@ landingContent:
             url: solution-layers-alm.md
           - text: Use solutions to customize
             url: use-solutions-for-your-customizations.md
-          - text: Segment solutions
+          - text: Use table segmententation with solutions
             url: segmented-solutions-alm.md
+          - text: Organize solutions
+            url: organize-solutions.md
+          - text: Performance recommendations
+            url: performance-recommendations.md
 
   # Card
   - title: Implement healthy ALM
