@@ -65,13 +65,13 @@ You can create an alert to monitor a specific resource, such as a specific canva
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Monitor**.
-1. In the **Monitor** pane , select the product where your resource is located. For example, if you select **Power Apps**, you see a list of canvas apps for which you can create alerts.
+1. In the **Monitor** pane, select the product where your resource is located. For example, if you select **Power Apps**, you see a list of canvas apps for which you can create alerts.
 1. Find your resource, and select it to open a resource pane, which has more detailed metric information.
-1. In the upper right corner of the pane, you see a link labeled **+ New alert rule** if the resource is in a Managed Environment.
+1. In the upper-right corner of the pane, you see a link labeled **+ New alert rule** if the resource is in a Managed Environment.
    
     :::image type="content" source="media/new-resource-alert.png" alt-text="Select the '+ New Alert Rule' link." lightbox="media/new-resource-alert.png":::
    
-1. Select the **+ New alert rule** link to create an alert. The admin center auto-fills the information for **Product**, **Product type**, **Scope**, **Environment**, and **Resource** so you can create an alert on that specific resource.
+1. Select the **+ New alert rule** link to create an alert. The admin center autofills the information for **Product**, **Product type**, **Scope**, **Environment**, and **Resource** so you can create an alert on that specific resource.
 1. Provide the **Alert rule name**, **Metric**, **Operator**, **Threshold Value**, **Severity**, and **Notification type** as documented in [Create an alert on an environment](#create-an-alert-on-an-environment).
 1. Select **Save**.
 
@@ -118,7 +118,7 @@ Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.co
 
 :::image type="content" source="media/monitor-overview-page.jpg" alt-text="Screenshot of the Monitor overview page displaying two cards summarizing custom and predefined alerts." lightbox="media/monitor-overview-page.jpg":::
 
-The **Triggered custom alerts** card on the left shows you the state of your triggered custom alerts in your tenant. These alerts are ones that you define. The visual in this card breaks down your triggered custom alerts by severity level, and the **Top priorities** section below calls out which of your alerts triggered most recently. Select one of those custom alerts to see which items triggered it. 
+The **Triggered custom alerts** card shows you the state of your triggered custom alerts in your tenant. These alerts are ones that you define. The visual in this card breaks down your triggered custom alerts by severity level, and the **Top priorities** section below calls out which of your alerts triggered most recently. Select one of those custom alerts to see which items triggered it. 
 
 The **Triggered alerts for high-use items** card on the right shows you which of your predefined alerts triggered. Similarly, the visual at the top of the card shows a breakdown of triggered predefined alerts by product type. Select one of the alerts in the **Top alerts from Microsoft** section to view which resources triggered that predefined alert. For example, you can select the **High-use cloud flows have a success rate under 90%** predefined alert and see all the high-use cloud flows in your tenant that triggered this alert, regardless of whether the flow is in a Managed Environment or not. Like the triggered custom alert experience, selecting a specific flow in that list displays a pane that shows you how each metric for that flow has trended over time. 
 
