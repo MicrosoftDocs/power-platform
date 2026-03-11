@@ -1,7 +1,7 @@
 ---
 title: Continuous access evaluation (preview)
 description: Learn how continuous access evaluation in Microsoft Power Platform enforces changes to user access and tenant policy in near real time.
-ms.date: 01/16/2026
+ms.date: 03/11/2026
 ms.topic: overview
 author: ritesp
 ms.author: ritesp
@@ -12,6 +12,7 @@ search.audienceType:
   - admin
 ms.custom: bap-template
 contributors:
+  - abhijananddv
   - alaug 
 ---
 
@@ -22,7 +23,7 @@ contributors:
 OAuth 2.0 authentication traditionally relies on access token expiration to revoke a user's access to modern cloud services. Users whose access rights have been terminated still have access to resources until the access token expires&mdash;for Power Platform, as long as an hour, by default. With continuous access evaluation, however, Power Platform services such as Dataverse continuously evaluate a user's [critical events](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#critical-event-evaluation) and network location changes. They proactively terminate active user sessions, or require reauthentication, and enforce tenant policy changes in near real time instead of waiting for an access token to expire.
 
 > [!NOTE]
-> **Rollout status - January 2026**: Deployment started in early January 2026 and is expected to reach all customers by the end of January 2026. There are no additional steps to enable this capability; it becomes active when the rollout reaches your organization.
+> **Rollout status**: Deployment began in January 2026 and is rolling out in phases. Availability expands over subsequent phases as scenarios are validated across supported clients, network topologies, and conditional access configurations. There are no more steps to enable this capability; it becomes active when the rollout reaches your organization
 
 ## Key benefits
 
