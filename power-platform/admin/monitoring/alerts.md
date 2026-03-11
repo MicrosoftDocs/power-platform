@@ -72,7 +72,7 @@ You can create an alert to monitor a specific resource, such as a specific canva
     :::image type="content" source="media/new-resource-alert.png" alt-text="Select the '+ New Alert Rule' link." lightbox="media/new-resource-alert.png":::
    
 1. Select the **+ New alert rule** link to create an alert. The admin center auto-fills the information for **Product**, **Product type**, **Scope**, **Environment**, and **Resource** so you can create an alert on that specific resource.
-1. Provide the **Alert rule name**, **Metric**, **Operator**, **Threshold Value**, **Severity**, and **Notification type** as documented in [Create an alert on an enviroment](#create-an-alert-on-an-enviroment).
+1. Provide the **Alert rule name**, **Metric**, **Operator**, **Threshold Value**, **Severity**, and **Notification type** as documented in [Create an alert on an environment](#create-an-alert-on-an-environment).
 1. Select **Save**.
 
 After you create your alert, the system runs an on-demand evaluation and scans all the applicable resources under its scope.
