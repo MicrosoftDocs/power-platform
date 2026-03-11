@@ -53,9 +53,11 @@ Keep the following principles in mind:
 1. In the **Operator** list, select an operator to define your threshold. The options are **Is Under**, **Is Over**, or **Equals**.
 1. In the **Select value** list, use the arrow icons to increase or decrease the value.
 1. In the **Severity** list, select **Low**, **Medium**, or **High**.
-1. In the **Notification type** list, select which notification type you'd like this alert to have: **None** or **Email**.
+1. In the **Notification type** list, select which notification type you'd like this alert to have.
+   
     - If you select **None**, you don't get an email and need to return to the **Monitor** area of the admin center to check on the status of your alert.
     - If you select **Email**, you and up to four other recipients&mdash;that you specify in the **Recipient(s)** field&mdash;get an email when the alert is triggered. The email comes from `PowerPlat-noreply@microsoft.com`.
+      
 1. Select **Save**.
 
 ## Create an alert on a resource
