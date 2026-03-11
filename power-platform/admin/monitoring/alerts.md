@@ -59,18 +59,21 @@ Keep the following principles in mind:
 1. Select **Save**.
 
 ## Create an alert on a resource
-You can create an alert to monitor a specific resource, like a specific canvas app, through these steps:
+You can create an alert to monitor a specific resource, like a specific canvas app, by using the following steps.
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Monitor**.
-2. In the **Monitor** pane , go to the Product list page where your resource would be located (e.g. go to the Power Apps product list page to find the canvas app you'd like to create an alert on).
-3. Find your resource, and select it to open up the resource panel that has more detailed metric infomration.
-4. In the top right corner, you'll see a button that says "+ New Alert Rule" if the resource is in a managed environment.
-  :::image type="content" source="media/new-resource-alert.png" alt-text="The '+ New Alert Rule' button." lightbox="media/new-resource-alert.png":::
-5. Clicking on that button will take you to the Alerts experience with the information for **Product**, **Product type**, **Scope**, environment ID, and resource ID auto-filled so that you can create an alert on that specific resource.
-6. Now fill in the infomration for **Alert rule name**, **Metric**, **Operator**, **Threshold Value**, **Severity**, and **Notification type**.
-7. Select **Save**
+2. In the **Monitor** pane , select the product where your resource is located. For example, if you select **Power Apps**, you see a list of canvas apps for which you can create alerts.
+3. Find your resource, and select it to open a resource pane, which has more detailed metric infomration.
+4. In the top right corner of the pane, you'll see a link that says **+ New alert rule** if the resource is in a Managed Environment.
+   
+    :::image type="content" source="media/new-resource-alert.png" alt-text="Select the '+ New Alert Rule' link." lightbox="media/new-resource-alert.png":::
+   
+6. Select the **+ New alert rule** link to create an alert with the information for **Product**, **Product type**, **Scope**, **Environment**, and **Resource** auto-filled so that you can create an alert on that specific resource.
+7. Provide the **Alert rule name**, **Metric**, **Operator**, **Threshold Value**, **Severity**, and **Notification type** as documented in [Create an alert on an enviroment](#create-an-alert-on-an-enviroment).
+8. Select **Save**
 
-After you create your alert, the system runs an on-demand evaluation and scans all the applicable resource(s) under its scope.
+After you create your alert, the system runs an on-demand evaluation and scans all the applicable resources under its scope.
 
 ## When an alert triggers
 If you select to receive email notifications when any resource triggers an alert, you get an email notification.
