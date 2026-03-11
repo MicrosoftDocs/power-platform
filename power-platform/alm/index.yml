@@ -47,8 +47,12 @@ landingContent:
             url: solution-layers-alm.md
           - text: Use solutions to customize
             url: use-solutions-for-your-customizations.md
-          - text: Segment solutions
+          - text: Use table segmentation
             url: segmented-solutions-alm.md
+          - text: Organize solutions
+            url: organize-solutions.md
+          - text: Performance recommendations
+            url: performance-recommendations.md
 
   # Card
   - title: Implement healthy ALM
