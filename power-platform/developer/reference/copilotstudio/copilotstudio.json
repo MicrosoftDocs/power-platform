@@ -49,6 +49,62 @@
         }
       }
     },
+    "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/botAdminOperations/reassign": {
+      "post": {
+        "tags": [
+          "Bots"
+        ],
+        "summary": "Reassign the owner of the bot.",
+        "description": "Reassign the owner of the bot.",
+        "operationId": "ReassignCopilotAgent",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "EnvironmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ReassignBotRequestBody"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Bad Request."
+          },
+          "500": {
+            "description": "Internal Server Error."
+          }
+        }
+      }
+    },
     "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/botQuarantine": {
       "get": {
         "tags": [
@@ -196,6 +252,19 @@
         "lastUpdateTimeUtc": {
           "format": "date-time",
           "description": "The last update time in UTC.",
+          "type": "string"
+        }
+      }
+    },
+    "ReassignBotRequestBody": {
+      "description": "Request body for reassigning bot's owner.",
+      "required": [
+        "NewOwnerAadUserId"
+      ],
+      "type": "object",
+      "properties": {
+        "NewOwnerAadUserId": {
+          "description": "The new owner AAD ID.",
           "type": "string"
         }
       }
