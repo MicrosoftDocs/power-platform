@@ -17,10 +17,6 @@
         ],
         "summary": "Query Power Platform resources.",
         "description": "Executes a KQL query against Azure Resource Graph with ARG paging.",
-        "externalDocs": {
-          "description": "ARG Query Best Practices (throttling, paging, limits)",
-          "url": "https://learn.microsoft.com/azure/governance/resource-graph/concepts/guidance-for-throttled-requests"
-        },
         "operationId": "QueryResources",
         "consumes": [
           "application/json"
@@ -206,10 +202,6 @@
           "description": "Continuation token from previous page",
           "type": "string"
         }
-      },
-      "externalDocs": {
-        "description": "ARG .NET SDK - ResourceQueryRequestOptions",
-        "url": "https://learn.microsoft.com/dotnet/api/azure.resourcemanager.resourcegraph.models.resourcequeryrequestoptions"
       }
     },
     "Clause": {
@@ -289,10 +281,6 @@
             "type": "string"
           }
         }
-      },
-      "externalDocs": {
-        "description": "KQL where operator",
-        "url": "https://learn.microsoft.com/azure/data-explorer/kusto/query/whereoperator"
       }
     },
     "ProjectClause": {
@@ -312,10 +300,6 @@
             "type": "string"
           }
         }
-      },
-      "externalDocs": {
-        "description": "KQL project operator",
-        "url": "https://learn.microsoft.com/azure/data-explorer/kusto/query/projectoperator"
       }
     },
     "TakeClause": {
@@ -333,10 +317,6 @@
           "minimum": 1,
           "type": "integer"
         }
-      },
-      "externalDocs": {
-        "description": "KQL take operator",
-        "url": "https://learn.microsoft.com/azure/data-explorer/kusto/query/takeoperator"
       }
     },
     "OrderByClause": {
@@ -360,10 +340,6 @@
             "type": "string"
           }
         }
-      },
-      "externalDocs": {
-        "description": "KQL sort by operator",
-        "url": "https://learn.microsoft.com/en-us/kusto/query/sort-operator"
       }
     },
     "DistinctClause": {
@@ -383,10 +359,6 @@
             "type": "string"
           }
         }
-      },
-      "externalDocs": {
-        "description": "KQL distinct operator",
-        "url": "https://learn.microsoft.com/azure/data-explorer/kusto/query/distinctoperator"
       }
     },
     "CountClause": {
@@ -395,11 +367,7 @@
         {
           "$ref": "#/definitions/ClauseBaseClass"
         }
-      ],
-      "externalDocs": {
-        "description": "KQL count operator",
-        "url": "https://learn.microsoft.com/azure/data-explorer/kusto/query/countoperator"
-      }
+      ]
     },
     "SummarizeClause": {
       "required": [
@@ -437,10 +405,6 @@
             }
           }
         }
-      },
-      "externalDocs": {
-        "description": "KQL summarize operator",
-        "url": "https://learn.microsoft.com/azure/data-explorer/kusto/query/summarizeoperator"
       }
     },
     "ExtendClause": {
@@ -461,10 +425,6 @@
         "Expression": {
           "type": "string"
         }
-      },
-      "externalDocs": {
-        "description": "KQL extend operator",
-        "url": "https://learn.microsoft.com/azure/data-explorer/kusto/query/extendoperator"
       }
     },
     "JoinClause": {
@@ -494,10 +454,6 @@
         "RightTable": {
           "$ref": "#/definitions/SubQuery"
         }
-      },
-      "externalDocs": {
-        "description": "KQL join operator (join kinds)",
-        "url": "https://learn.microsoft.com/azure/data-explorer/kusto/query/joinoperator"
       }
     },
     "SubQuery": {
@@ -549,10 +505,6 @@
             "$ref": "#/definitions/ResourceItem"
           }
         }
-      },
-      "externalDocs": {
-        "description": "ARG SDK - ResourceQueryResult",
-        "url": "https://learn.microsoft.com/dotnet/api/azure.resourcemanager.resourcegraph.models.resourcequeryresult"
       }
     },
     "ResourceItem": {
@@ -586,16 +538,16 @@
         "managedBy": {
           "type": "string"
         },
-        "sku": { },
-        "plan": { },
+        "sku": {},
+        "plan": {},
         "properties": {
           "description": "Free-form ARG properties bag",
           "type": "object"
         },
-        "tags": { },
-        "identity": { },
-        "zones": { },
-        "extendedLocation": { },
+        "tags": {},
+        "identity": {},
+        "zones": {},
+        "extendedLocation": {},
         "environmentId": {
           "type": "string"
         },
@@ -614,10 +566,6 @@
         "isManagedEnvironment": {
           "type": "boolean"
         }
-      },
-      "externalDocs": {
-        "description": "ARG resource table reference",
-        "url": "https://learn.microsoft.com/azure/governance/resource-graph/reference/supported-tables-resources"
       }
     }
   },
