@@ -133,10 +133,10 @@ For Dynamics 365 finance and operations apps, you need at least:
    |---------|---------|
    |Name     | The name of your environment.        |
    |Region     | Choose a region for the environment.        |
-   |Get new features early     | Select **Yes** for early release cycle.        |
-   |Type     | Choose production, trial, or sandbox.        |
-   |Purpose     | A description of the environment.         |
-   |Add a Dataverse data store | Select **Yes**. |
+   |Get new features early     | Select **Yes** for early release cycle. This setting is available for environments in *United States*, *Europe - Default*, *Australia* and *Canada* regions.        |
+   |Type     | Choose *Trial (subscription-based)*, *Developer*, *Production*, *Trial* or *Sandbox*.        |
+   |Purpose     | Optional, a description of the environment.         |
+   |Add a Dataverse data store | Select **Yes**. This setting cannot be undone. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
 5. Select **Next**.
@@ -174,10 +174,10 @@ You need 1 GB of available database capacity.
    |---------|---------|
    |Name     | The name of your environment.        |
    |Region     | Choose a region for the environment.        |
-   |Get new features early     | Select **Yes** for early release cycle.        |
+   |Get new features early     | Select **Yes** for early release cycle. This setting is available for environments in *United States*, *Europe - Default*, *Australia* and *Canada* regions.       |
    |Type     | You can choose production or trial.        |
-   |Purpose     | A description of the environment.         |
-   |Add a Dataverse data store | Select **No**. |
+   |Purpose     | Optional, a description of the environment.         |
+   |Add a Dataverse data store | Select **No**. Can be added afterwards. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
 5. Select **Save** to apply the changes.
@@ -231,9 +231,7 @@ Users can access resources in an environment if they have:
 
 ### Why do I no longer see Preview (United states) region?
 
-This region is no longer available as a choice. It is now replaced with the **Get new features early** setting when the United States region is selected.
-
-Preview or early release cycle capabilities are available for environments in other regions, in addition to the United States.
+This region is no longer available as a choice. It is now replaced with the **Get new features early** setting.
 
 ### What are the new trial limits for Power Apps customers?
 
