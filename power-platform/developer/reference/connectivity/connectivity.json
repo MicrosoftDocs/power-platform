@@ -10,6 +10,44 @@
     "https"
   ],
   "paths": {
+    "/connectivity/environments/{environmentId}/connections": {
+      "get": {
+        "tags": [
+          "Connections"
+        ],
+        "summary": "List connections in environment.",
+        "description": "Retrieves a list of connections in the specified environment.",
+        "operationId": "ListConnections",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "ID of the environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of connections in the specified environment.",
+            "schema": {
+              "$ref": "#/definitions/ListConnectionsResponse"
+            }
+          }
+        }
+      }
+    },
     "/connectivity/environments/{environmentId}/connectors": {
       "get": {
         "tags": [
@@ -286,6 +324,193 @@
               "example": "None"
             }
           }
+        }
+      }
+    },
+    "ListConnectionsResponse": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Connection"
+          }
+        }
+      }
+    },
+    "Connection": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "shared-contoso-00000000-0000-0000-0000-000000000001"
+        },
+        "id": {
+          "type": "string",
+          "example": "/providers/Microsoft.PowerApps/apis/shared_contoso/connections/shared-contoso-00000000-0000-0000-0000-000000000001"
+        },
+        "type": {
+          "type": "string",
+          "example": "Microsoft.PowerApps/apis/connections"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "apiId": {
+              "type": "string",
+              "example": "/providers/Microsoft.PowerApps/apis/shared_contoso"
+            },
+            "displayName": {
+              "type": "string",
+              "example": "Contoso Connector"
+            },
+            "iconUri": {
+              "format": "uri",
+              "type": "string",
+              "example": "https://conn-afd-prod-endpoint.azurefd.net/releases/v1.0.1800/1.0.1800.4610/contoso/icon.png"
+            },
+            "statuses": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ConnectionStatus"
+              }
+            },
+            "connectionParametersSet": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "oauth2-auth"
+                },
+                "values": {
+                  "type": "object"
+                }
+              }
+            },
+            "connectionParameters": {
+              "type": "object"
+            },
+            "keywordsRemaining": {
+              "type": "integer",
+              "example": 78
+            },
+            "isSsoConnection": {
+              "type": "boolean",
+              "example": false
+            },
+            "createdBy": {
+              "$ref": "#/definitions/ConnectionCreatedBy"
+            },
+            "createdTime": {
+              "format": "date-time",
+              "type": "string",
+              "example": "2025-03-11T22:13:29.0000000+00:00"
+            },
+            "lastModifiedTime": {
+              "format": "date-time",
+              "type": "string",
+              "example": "2025-06-15T10:30:00.0000000+00:00"
+            },
+            "expirationTime": {
+              "format": "date-time",
+              "type": "string",
+              "example": "2025-06-15T11:30:00.0000000+00:00"
+            },
+            "testLinks": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "requestUri": {
+                    "format": "uri",
+                    "type": "string"
+                  },
+                  "method": {
+                    "type": "string",
+                    "example": "get"
+                  }
+                }
+              }
+            },
+            "environment": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "example": "/providers/Microsoft.PowerApps/environments/00000000-0000-0000-0000-000000000001"
+                },
+                "name": {
+                  "type": "string",
+                  "example": "00000000-0000-0000-0000-000000000001"
+                }
+              }
+            },
+            "accountName": {
+              "type": "string",
+              "example": "user@contoso.com"
+            },
+            "metadata": {
+              "type": "object"
+            },
+            "allowSharing": {
+              "type": "boolean",
+              "example": false
+            }
+          }
+        }
+      }
+    },
+    "ConnectionStatus": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "Connected"
+        },
+        "target": {
+          "type": "string",
+          "example": "token"
+        },
+        "error": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string",
+              "example": "Unauthorized"
+            },
+            "message": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "ConnectionCreatedBy": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "example": "00000000-0000-0000-0000-000000000002"
+        },
+        "displayName": {
+          "type": "string",
+          "example": "Jane Smith"
+        },
+        "email": {
+          "type": "string",
+          "example": "user@contoso.com"
+        },
+        "type": {
+          "type": "string",
+          "example": "User"
+        },
+        "tenantId": {
+          "type": "string",
+          "example": "00000000-0000-0000-0000-000000000003"
+        },
+        "userPrincipalName": {
+          "type": "string",
+          "example": "user@contoso.com"
         }
       }
     }
