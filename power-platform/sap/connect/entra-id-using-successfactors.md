@@ -20,7 +20,7 @@ ms.topic: how-to
 ms.date: 12/02/2024
 ms.service: power-platform
 ms.subservice: sap
-# Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID using SuccessFactors, so that users can use single sign-on (SSO).
+# Customer intent: As an administrator, I want to learn how to configure Microsoft Entra ID and SAP SuccessFactors so that users can access SuccessFactors data via SAP OData connectors using single sign-on (SSO)
 ---
 
 # Microsoft Entra ID using SuccessFactors (Preview)
@@ -41,79 +41,107 @@ This guide walks you through setting up the **Microsoft Entra ID using SuccessFa
 - Admin access to SAP SuccessFactors.
 - Admin access within the [Azure Portal](https://aka.ms/azure).
 
-## Parameters for SuccessFactors connection
+## Named values
 
-- **SuccessFactors Token API**
-- **SuccessFactors Client ID**
-- **App Resource URI** (format: `api://<App-ID>`)
-- **SuccessFactors OData Base URI**
-- **Company ID** - Represents the specific SuccessFactors environment for login.
+This section lists named values to make the examples easier to follow. These values are reused throughout the article and referenced in later sections. When following the examples in this article, be sure to replace the named values with your own values.
 
----
-
-## Key configuration notes
-
-- Ensure that the Unique User Identifier claim of the Microsoft Entra ID user aligns precisely with the user alias in SuccessFactors (one-to-one matching).
-- **User Access Control:** Only users or groups listed in the Enterprise Application will be allowed to authenticate with SuccessFactors.
-- **Resource URI:** Found in the Enterprise App settings under **Expose an API** as the Application ID URI.
-- Your **Company ID** is generated based on the enabled SuccessFactors modules.
+| Name | Sample value | Description |
+|------|-------------|-------------|
+| Success Factors token URL | https://<api-server>/oauth/token | SuccessFactors SAML token Recipient field |
+| Service Provider Client Id | API key | SuccessFactors OAuth API key |
+| OData Base URI | https://<odata-sf>/odata/v2 | SuccessFactors Odata base URI |
+| Microsoft Entra Resource URL (Application ID URI) | api://33135bc6-be6a-4cdc-9c96-af918e367425 | A unique string that identifies the SAML service provider  |
+| Company Id | SFSALES012345 | SuccessFactors Company Id |
 
 ## High-Level overview
 
-1. Create an *OAuth 2.0 Client Application* in SuccessFactors.
-2. Establish a *Microsoft Enterprise Application*.
-3. Configure *SAML* settings within the Enterprise Application.
-4. Obtain the Enterprise Application's *SAML Certificate*.
-5. Upload the SAML Certificate to your OAuth 2.0 Client Application within SuccessFactors.
-6. Establish trust.
+This setup enables users to access SAP SuccessFactors securely via Power Automate using single sign-on (SSO) and OAuth. The process involves:
+1. Adding a Enterprise Application in Microsoft Entra ID.
+2. Creating an OAuth 2.0 Client Application in SuccessFactors.
+3. Establishing trust between Microsoft Entra ID and SuccessFactors using SAML.
+4. Mapping users from Entra ID to SuccessFactors to enable seamless SSO.
+In short: we configure the apps on both sides, establish trust, match users, and enable token-based access for API integrations.
 
-### Create an OAuth 2.0 Client Application in SuccessFactors
+### Step 1: Create and configure Microsoft Entra ID Enterprise Application
 
-1. Log in to the *SuccessFactors Web UI* with an admin account.
-2. Go to **Manage OAuth2 Client Applications**.
-3. Select **Register Client Application**.
-4. Fill out the required fields:
-   - **Company:** Auto-populated.
-   - **Application Name:** Any descriptive name.
-   - **Description:** Any descriptive text.
-   - **Application URL:** Placeholder for now; update later.
-   - **X.509 Certificate:** Leave empty initially.
-5. Select **Save**. Your new client application now has an **API Key** that serves as the *Client ID* in the SAML2 session flow and is used in the connection and Enterprise App configuration.
+1. Create Microsoft Entra ID enterprise application:
 
-Later in the process, you'll import a certificate from your Microsoft Entra ID Enterprise App into SuccessFactors.
+    1. Search for and select **Microsoft Entra ID**.
+    1. In the left navigation pane, expand **Manage** > **Enterprise applications**.
+    1. Select **New application**.
+    1. Search for and select **SAP SuccessFactors** from the gallery.
+    1. Enter a **name** for the application and select **Create**.
+       
+1. Configuring **Basic SAML Configuration**:
 
-### Create a Microsoft Entra ID Enterprise Application
+    1. Go to the **Single sign-on** section and select **SAML** as the sign-on method.
+    1. **Identifier (Entity ID):** Set to `api://<Enterprise App ID>`. (e.g., `api://33135bc6-be6a-4cdc-9c96-af918e367425`). Save this value as **Microsoft Entra Resource URL (Application ID URI)** as seen in the [named values table](#named-values)
+    1. **Reply URL:** Use the SuccessFactors SAML token Recipient field. (e.g., `https://<api-server>/oauth/token`).
+    1. **Sign-On URL:** Recommended format: https://<your-sf-url>/sf/start?company=<CompanyID>&logonMethod=SSO.
+    1. Tip: Confirm the correct server URL with your SuccessFactors IT admin if unsure.
+    1. Select **Save**.
 
-1. Open the **Azure Portal** and go to **Microsoft Entra ID** > **Enterprise Applications**.
-1. Select **New application**.
-1. Search for and select  **SAP SuccessFactors**.
-1. Assign a name for the application and select **Create**.
-1. Go to **Single sign-on** and select **SAML**.
-1. Follow the specific guidelines in the **SuccessFactors SSO Configuration Guide**.
-1. Configure the following:
-   - **Identifier (Entity ID):** Set to `api://<Enterprise App ID>` (e.g., `api://33135bc6-be6a-4cdc-9c96-af918e367425`).
-   - **Reply URL:** Used in the SAML token as the `Recipient` field (e.g., `https://<api-server>/oauth/token`).
-   - **Sign-On URL:** Advisable to set as `https://<your-sf-url>/sf/start?company=<CompanyID>&logonMethod=SSO`.
-1. Edit the **Attributes and Claims** section:
-    1. Add a claim for `api_key` with the value of the API Key from SuccessFactors.
-    1. Update the *Unique User Identifier* claim to match the unique ID for each SuccessFactors user.
-1. Download the **Certificate (Base64 format)** from this application.
+1. Confirm the correct attribute is set:
 
-### Configure Enterprise Application
+    1. Go to the **Attributes & Claims** section.
+    1. Select **Edit**. 
+    1. Confirm that **Claim name Unique User Identifier (Name ID)** is set to `user.userprincipalname` [`nameid`="{email address}"].
 
-1. In the **Azure Portal**, go to **App Registrations**.
-2. Under **Expose an API**, locate your **Resource URI** (Application ID URI).
-3. Select **Add a client application**.
-4. Enter the *Client ID for SAP OData*: `6bee4d13-fd19-43de-b82c-4b6401d174c3`.
-5. Select the existing scope from the **Authorized scopes** checklist.
-6. Select **Add application**.
+1. Download the certificates:
 
-### Configure SuccessFactors to trust Microsoft Entra ID
+   1. Go to the **SAML Certificates** section.
+   1. Select the *download links* for:
 
-1. Log in to the SuccessFactors Web UI with an admin account.
-2. Go to **Manage OAuth2 Client Applications**.
-3. Select the *client application* you created earlier.
-4. Update the certificate to the one downloaded from Microsoft Entra ID and paste only the certificate body content without the header and footer.
+       - **Certificate (Base64)**.
+   
+1. Add users and groups:
+
+    1. Go to the **Users and groups** section.
+    1. Select **Add users/group**.
+    1. Select **Users and groups**.
+    1. Search and select **ALL Company** and then select **assign**. 
+
+### Step 2: Create an OAuth 2.0 Client Application in SuccessFactors
+
+1. Log in to the SuccessFactors Web UI using an admin account.
+1. Navigate to **Manage OAuth2 Client Applications**.
+1. Click **Register Client Application**.
+1. Complete the required fields:
+   
+    1. **Company**: Auto-populated. Copy the value and save it as the **Company Id** in the Named values table.
+    1. **Application Name**: Enter any descriptive name.
+    1. **Description**: Enter any descriptive text.
+    1. **API Key**: Auto-populated. Copy value and save it as the **Service Provider Client Id** in the Named values table.
+    1. **Application URL**: Update this with the **Microsoft Entra Resource URL (Application ID URI)** from the Named values table.
+    1. **X.509 Certificate**: Open the certificate downloaded in step 1 with a text editor (e.g., Visual Studio Code), copy everything between -----BEGIN CERTIFICATE----- and -----END CERTIFICATE-----, and paste it.
+
+1. Click **Save**.
+
+### Step 3: Update Microsoft Entra ID Enterprise Application
+
+1. Search for and select **Microsoft Entra ID**.
+1. In the left navigation pane, expand **Manage** > **Enterprise applications**.
+1. Locate and select the enterprise application you created in Step 1.
+
+   1. Navigate to **Manage** > **Single sign-on**.
+   1. Go to **Attributes & Claims**, then select **Edit**.
+   1. Click **Add new claim**, and configure it as follows:
+          **Name**: api_key
+          **Source**: Attribute
+          **Source attribute**: Paste the **Service Provider Client Id** from the Named values table.
+
+### Step 3: Configure Microsoft Entra ID App registrations
+
+1. Search for and select **Microsoft Entra ID**.
+1. In the left navigation pane, go to **Manage** > **App Registrations**.
+2. Under the **All applications** tab, locate and select the application you created in Step 1.
+
+    1. Navigate to **Manage** > **Expose an API**. Under **Application ID URI**, select **Add**, and enter the **Microsoft Entra Resource URL (Application ID URI)** from the Named values table.
+    2. Under **Authorized client applications**, Select **Add a client application**.
+    3. Enter the Client ID for SAP OData: 6bee4d13-fd19-43de-b82c-4b6401d174c3.
+    4. From the Authorized scopes list, select the existing scope.
+    5. Click **Add application**.
+
 
 ### Test the connection
 
