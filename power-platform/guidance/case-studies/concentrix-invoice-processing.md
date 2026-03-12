@@ -71,19 +71,19 @@ The solution is built around four main areas: sources, AI processing, data enric
 
 1. **User experience.** A Power Apps mobile app gives the operations team a simple way to review exceptions. The app displays both the original PDF and the extracted data, allowing quick validation without slowing down the automated pipeline.
 
-:::image type="content" source="media/concentrix-invoice-processing/canvas-app-startpage.png" alt-text="Screenshot of Concentrix invoice automation dashboard showing Key Performance Indicators (KPIs), AI invoice processing stats, and a Next button." lightbox="media/concentrix-invoice-processing/canvas-app-startpage.png":::
+:::image type="content" source="media/concentrix-invoice-processing/canvas-app-startpage.png" alt-text="Screenshot of Concentrix invoice automation dashboard showing key performance indicators (KPIs), AI invoice processing stats, and a Next button." lightbox="media/concentrix-invoice-processing/canvas-app-startpage.png":::
 
 ## Implementation approach
 
-The implementation evolved as invoice volumes grew, and new AI capabilities became available. Initially, AI Builder custom models worked well, but maintaining a large number of patterns became too time‑consuming, and Power Automate began hitting throttling limits as volumes approached 20,000 invoices per month.
+The implementation evolved as invoice volumes grew, and new AI capabilities became available. Initially, AI Builder custom models worked well, but maintaining a large number of patterns became too time‑consuming, and Power Automate began to hit throttling limits as volumes approached 20,000 invoices per month.
 
-GPT‑4 changed the approach. Instead of training multiple models, the team could send the extracted PDF text directly to an AI prompt with defined extraction rules. This approach turned the process into a single step in the flow, reduced complexity, and removed throttling issues. A few complex layouts still required trained models, but later versions, GPT‑4.1 and GPT‑5, handled those patterns with higher accuracy, allowing nearly all extraction to move to prompt‑based logic. Accuracy improved from 65–70% with custom models to about 96% after moving to AI‑prompt‑based extraction.
+GPT‑4 changed the approach. Instead of training multiple models, the team could send the extracted PDF text directly to an AI prompt with defined extraction rules. This approach turned the process into a single step in the flow, reduced complexity, and removed throttling issues. A few complex layouts still required trained models, but later versions, GPT‑4.1 and GPT‑5, handled those patterns with higher accuracy, allowing nearly all extraction to move to prompt‑based logic. Accuracy improved from 65–70% with custom models to about 96% after moving to AI prompt‑based extraction.
 
 The redesign also reshaped team structure. The group responsible for pattern analysis and model updates shrank from about 40 people to 11 who now review new patterns, test them with GPT‑5, and move them into production. Automation now processes around 100,000 invoices per month, reducing the manual processing team from roughly 250 people to about 50–60 and allowing them to focus on higher‑value work.
 
 ### AI prompts for data extraction
 
-AI prompts form the core of the extraction logic, with around 90 percent of invoices now running through prompts, instead of AI Builder custom models. A general prompt handles most of the simpler layouts, while specialized prompts cover the more unique or complex patterns. Each prompt follows the following structure:
+AI prompts form the core of the extraction logic, with around 90 percent of invoices now running through prompts instead of AI Builder custom models. A general prompt handles most of the simpler layouts, while specialized prompts cover the more unique or complex patterns. Each prompt follows the following structure:
 
 - **General instructions** defining role, overall task, and the invoice data as input
 - **Global rules** describing how data should be extracted
