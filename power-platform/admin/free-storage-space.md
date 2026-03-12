@@ -442,10 +442,10 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 ### Method 8: Delete bulk import instances using a bulk deletion job  
 
- Every time you perform a bulk import, there's a system job associated with that import. The system job details show, which records imported successfully and which records failed.  
+Each time you run a bulk import, the system creates a corresponding system job associated with that import. The system job details show which records were imported successfully and which records failed.  
   
 > [!WARNING]
-> After you delete these bulk import jobs, you will not be able to see what data was imported and you cannot roll back the import.
+> After you delete bulk import jobs, you can't view the imported data and you can't roll back the import.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -453,15 +453,15 @@ For example, if you have 100 duplicate records, every time that you run a duplic
 
 3. In the **Manage** pane, select **Environments**, and then select an environment from the list.
 
-4.    Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
+4.    Select **Settings** > **Data management** > **Bulk deletion**. On the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
    :::image type="content" source="media/free-new-storage-method.png" alt-text="Screenshot that shows where the Bulk deletion option is located in the Settings of an environment." lightbox="media/free-new-storage-method.png":::
   
-5. Choose **Next**.  
+5. Select **Next**.  
   
 6. In the **Look for** list, select **System Jobs**.  
   
-7. In the search criteria area, add similar criteria, for example:  
+7. In the search criteria area, add criteria similar to the following:  
   
    **System Job Type** – **Equals** – **Import**  
   
@@ -471,34 +471,34 @@ For example, if you have 100 duplicate records, every time that you run a duplic
   
 8. Group the three criteria rows:  
   
-   1. Choose the arrow next to each criteria row, and then choose **Select Row**.  
+   1. Select the arrow next to each criteria row, and then select **Select Row**.  
   
-   1. With all three rows selected, choose **Group AND**.  
+   1. With all three rows selected, select **Group AND**.  
 
       :::image type="content" source="media/free-storage-method8a.png" alt-text="Screenshot that shows where the Group AND option is located in the Define Search Criteria window. Method 8." lightbox="media/free-storage-method8a.png":::
 
-9. Choose **Next**.  
+9. Select **Next**.  
   
-10. In the **Name** text box, type a name for the bulk deletion job.  
+10. In the **Name** text box, enter a name for the bulk deletion job.  
   
-11. Select a date and time for the job start time; preferably a time when users aren't in customer engagement apps.  
+11. Select a start date and time for the job; preferably when users aren't working in customer engagement apps.  
   
-12. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
+12. Select the **Run this job after every** checkbox, and then in the **days** list, select the frequency you want the job to run.  
   
     :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Run this job every check box is located." lightbox="media/free-storage-method6b.png":::
 
 13. If you want a notification e-mail sent, select the **Send an email to me (myemail@domain.com) when this job is finished** check box.  
 
-14. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.
+14. Choose **Next**, review the job details, and then select **Submit** to create the recurring job.
 
 ### Method 9: Delete bulk deletion job instances using a bulk deletion job  
 
- When you're deleting bulk data, a bulk deletion system job is created and can be deleted.  
+When you delete bulk data, the system creates a bulk deletion system job. You can delete these jobs when they're no longer required.  
   
 > [!WARNING]
-> After you delete these jobs, you will lose the history of the prior bulk deletion jobs that you've run.
+> After you delete these jobs, you lose the history of previously run bulk deletion jobs.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center (https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
@@ -512,7 +512,7 @@ For example, if you have 100 duplicate records, every time that you run a duplic
   
 6. In the **Look for** list, select **System Jobs**.  
   
-7. In the search criteria area, add similar criteria, for example:  
+7. In the search criteria area, add criteria similar to the following:  
   
    **System Job Type** – **Equals** – **Bulk Delete**  
   
@@ -521,21 +521,21 @@ For example, if you have 100 duplicate records, every time that you run a duplic
    **Completed On** – **Older Than X Months** – 1  
   
    > [!NOTE]
-   > You could also delete jobs that have failed or been canceled.  
+   > You can also delete jobs that failed or were canceled.  
   
 8. Group the three criteria rows:  
   
-   1. Choose the arrow next to each criteria row, and then choose **Select Row**.  
+   1. Select the arrow next to each criteria row, and then choose **Select Row**.  
   
-   2. With all three rows selected, choose **Group AND**.  
+   2. With all three rows selected, select **Group AND**.  
 
       :::image type="content" source="media/free-storage-method9a.png" alt-text="Screenshot that shows where The Group AND option is located in the Define Search Criteria window." lightbox="media/free-storage-method9a.png":::
   
 9. Select **Next**.  
   
-10. In the **Name** text box, type a name for the bulk deletion job.  
+10. In the **Name** text box, enter a name for the bulk deletion job.  
   
-11. Select a date and time for the job start time; preferably a time when users aren't in customer engagement apps.  
+11. Select a start date and time for the job; preferably when users aren't working in customer engagement apps.  
   
 12. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.
 
@@ -543,34 +543,36 @@ For example, if you have 100 duplicate records, every time that you run a duplic
   
 13. If you want a notification e-mail sent, select the **Send an email to me (myemail@domain.com) when this job is finished** check box.  
 
-14. Select **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.
+14. Select **Next**, review the job details, and then select **Submit** to create the recurring job.
 
 ### Method 11: Remove unrequired tables and columns from Dataverse search
 
-Tables and table fields enabled for Dataverse search affect the database storage capacity.
+Tables and table fields enabled for Dataverse search affect database storage capacity.
 
-- To revise the list of tables selected for Dataverse search results, refer to [Select tables for Dataverse search's global search](configure-relevance-search-organization.md#select-tables-for-dataverse-searchs-global-search).
+- To update the list of tables selected for Dataverse search results, refer to [Select tables for Dataverse search's global search](configure-relevance-search-organization.md#select-tables-for-dataverse-searchs-global-search).
 - To revise the list of fields selected for each table for Dataverse search results, refer to [Select searchable fields and filters for each table for global search](configure-relevance-search-organization.md#select-searchable-fields-and-filters-for-each-table-for-global-search).
 
 ### Method 12: Remove unrequired data from activity tables
 
-These tables store records for [activities](/power-apps/developer/data-platform/activity-entities) such as emails, appointments, tasks, calls, etc. To learn more about what data these tables contain, refer to [Activities data model and storage](/power-apps/developer/data-platform/activities-data-model-storage).
+Activity tables store records for [activities](/power-apps/developer/data-platform/activity-entities) such as emails, appointments, tasks, calls, etc. To learn more about what data these tables contain, refer to [Activities data model and storage](/power-apps/developer/data-platform/activities-data-model-storage).
 
 ### Method 13: Remove unrequired Activity Feeds records
 
-These tables store post related records for [Activity Feeds](/dynamics365/customerengagement/on-premises/basics/stay-up-date-with-customer-news-with-activity-feed) functionality. To free space, you can delete any Post records, which are no longer required.
+These tables store post related records for [Activity Feeds](/dynamics365/customerengagement/on-premises/basics/stay-up-date-with-customer-news-with-activity-feed) functionality. To free storage space, you can delete any Post records that are no longer required.
 
 ### Method 14: Modify Item Level Monitoring Settings
 
-The ExchangeSyncIdMappingBase table contains references between Dynamics 365 records and the corresponding records in Microsoft Exchange. This table is used by the Server-Side Synchronization feature, which enables synchronization of emails, appointments, contacts, and tasks between Dynamics 365 and Microsoft Exchange.
+The ExchangeSyncIdMappingBase table stores references between Dynamics 365 records and their corresponding records in Microsoft Exchange. Server-Side Synchronization feature uses this table to sync emails, appointments, contacts, and tasks between Dynamics 365 and Microsoft Exchange.
 
-Extra rows are stored in this table to help with troubleshooting the synchronization of specific items. For more information, refer to [Troubleshoot item level Server-Side Synchronization issues with Microsoft Dynamics 365](/troubleshoot/dynamics-365/sales/troubleshoot-item-level-server-side-synchronization-issues). This article provides details regarding how you can reduce the default duration (three days) of how long these troubleshooting records exist. This troubleshooting feature can also be disabled. Rows unrelated to this feature can't be deleted and are required for Appointment, Contact, and Task synchronization.
+The system stores additional rows to help troubleshoot the synchronization of specific items. For more information, refer to [Troubleshoot item level Server-Side Synchronization issues with Microsoft Dynamics 365](/troubleshoot/dynamics-365/sales/troubleshoot-item-level-server-side-synchronization-issues). This article provides details regarding to reduce the default retention period (three days) for troubleshooting records or disable the feature entirely. Rows unrelated to this feature can't be deleted and are required for Appointment, Contact, and Task synchronization.
 
 ### Method 15: Remove unrequired Alerts (trace logs)
 
-The [Server-Side Synchronization](server-side-synchronization.md) feature logs alerts when different events occur such as a mailbox encountering an error or warning. There are also informational alerts logged when you enable a mailbox. You can view these Alerts when you view a Mailbox or Email Server profile within the Email Configuration area of Advanced Settings. While these records appear in a tab called Alerts, they're actually Trace records. To free space consumed by these Alerts, you can delete any Trace records, which are no longer required. Trace records can be deleted within the Alerts tab of an Email Server Profile or Mailbox record. They can also be deleted using Advanced Find or a [Bulk Delete](delete-bulk-records.md) job.
+The [Server-Side Synchronization](server-side-synchronization.md) feature logs alerts when events occur, such as mailbox errors or warnings. The system also logs informational alerts when you enable a mailbox. You can view these alerts when you view a Mailbox or Email Server profile within the Email Configuration area of Advanced Settings. While these records appear in a tab called **Alerts**, they're actually Trace records. 
 
-You can also configure which levels of alerts are logged. For more information, refer to [System Settings Email tab](system-settings-dialog-box-email-tab.md).
+To free storage space, delete trace records that are no longer required. You can delete these records from the **Alerts** tab of an Email Server Profile or Mailbox record, or by using Advanced Find or a [Bulk Delete](delete-bulk-records.md) job.
+
+You can also configure which levels the system logs. For more information, refer to [System Settings Email tab](system-settings-dialog-box-email-tab.md).
 
 ## Free up storage used by flow approvals
 
