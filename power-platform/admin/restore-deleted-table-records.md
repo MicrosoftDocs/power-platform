@@ -4,7 +4,7 @@ description: Learn how to use the Power Platform admin center to view restore de
 author: rijoshi1
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/27/2026
+ms.date: 03/12/2026
 ms.subservice: admin
 ms.author: rijoshi
 ms.reviewer: ellenwehrle
@@ -100,7 +100,7 @@ You can restore records deleted through the table relationship cascade behavior 
 
 ### Deleted records don't show after turning on the deleted records feature
 
-Deleted records might not appear when the  feature is turned on. Verify that the **Enable RecycleBin for Organization** system job is turned on. Go to the Power Platform admin center, select the environment where this issue is happening, and select **Settings** > **Audit and logs** > **System jobs**. On the **System Jobs** page, search for **Enable RecycleBin**. Confirm that the **Status Reason** is **Succeeded**.
+Deleted records might not appear when the  feature is turned on. Verify that the **Enable keeping deleted data for Organization** system job is turned on. Go to the Power Platform admin center, select the environment where this issue is happening, and select **Settings** > **Audit and logs** > **System jobs**. On the **All System Jobs** page, search for **Enable keeping deleted data**. Confirm that the **Status Reason** is **Succeeded**.
 
 If the **Status Reason** isn't **Succeeded** and it's been at least 30 minutes since you enabled the feature, or despite the success state appearing correct, and you're not seeing the **Restore** option for deleted records, contact a [Microsoft support representative and create a support request](get-help-support.md).
 
