@@ -34,7 +34,9 @@ Another set of security roles is assigned to [application users](system-applicat
 
 ### Environments without a Dataverse database
 
-Environment Maker and Environment Admin are the only predefined roles for environments that have no Dataverse database. These roles are described in the following table.
+Environment Maker and Environment Admin are the only predefined roles for environments that have no Dataverse database. To learn more about what these roles are for, who they apply to, and what tables they have access to, complete the following steps.
+
+1. 
 
 | Security role |  Description |
 |---------|---------|
