@@ -70,12 +70,12 @@ In short: we configure the apps on both sides, establish trust, match users, and
     1. In the left navigation pane, expand **Manage** > **Enterprise applications**.
     1. Select **New application**.
     1. Search for and select **SAP SuccessFactors** from the gallery.
-    1. Enter a **name** for the application and select **Create**.
+    1. Enter a name for the application and select **Create**.
        
 1. Configuring **Basic SAML Configuration**:
 
     1. Go to the **Single sign-on** section and select **SAML** as the sign-on method.
-    1. **Identifier (Entity ID):** Set to `api://<Enterprise App ID>`. (e.g., `api://33135bc6-be6a-4cdc-9c96-af918e367425`). Save this value as **Microsoft Entra Resource URL (Application ID URI)** as seen in the [named values table](#named-values)
+    1. **Identifier (Entity ID):** Set to `api://<Enterprise App ID>`. (e.g., `api://33135bc6-be6a-4cdc-9c96-af918e367425`). Save this value as **Microsoft Entra Resource URL (Application ID URI)** in the [named values table](#named-values)
     1. **Reply URL:** Use the SuccessFactors SAML token Recipient field. (e.g., `https://<api-server>/oauth/token`).
     1. **Sign-On URL:** Recommended format: https://<your-sf-url>/sf/start?company=<CompanyID>&logonMethod=SSO.
     1. Tip: Confirm the correct server URL with your SuccessFactors IT admin if unsure.
@@ -111,7 +111,7 @@ In short: we configure the apps on both sides, establish trust, match users, and
     1. **Company**: Auto-populated. Copy the value and save it as the **Company Id** in the Named values table.
     1. **Application Name**: Enter any descriptive name.
     1. **Description**: Enter any descriptive text.
-    1. **API Key**: Auto-populated. Copy value and save it as the **Service Provider Client Id** in the Named values table.
+    1. **API Key**: Auto-populated. Copy the value and save it as the **Service Provider Client Id** in the Named values table.
     1. **Application URL**: Update this with the **Microsoft Entra Resource URL (Application ID URI)** from the Named values table.
     1. **X.509 Certificate**: Open the certificate downloaded in step 1 with a text editor (e.g., Visual Studio Code), copy everything between -----BEGIN CERTIFICATE----- and -----END CERTIFICATE-----, and paste it.
 
@@ -130,17 +130,17 @@ In short: we configure the apps on both sides, establish trust, match users, and
           **Source**: Attribute
           **Source attribute**: Paste the **Service Provider Client Id** from the Named values table.
 
-### Step 3: Configure Microsoft Entra ID App registrations
+### Step 4: Configure Microsoft Entra ID App registrations
 
 1. Search for and select **Microsoft Entra ID**.
 1. In the left navigation pane, go to **Manage** > **App Registrations**.
-2. Under the **All applications** tab, locate and select the application you created in Step 1.
+1. Under the **All applications** tab, locate and select the application you created in Step 1.
 
     1. Navigate to **Manage** > **Expose an API**. Under **Application ID URI**, select **Add**, and enter the **Microsoft Entra Resource URL (Application ID URI)** from the Named values table.
-    2. Under **Authorized client applications**, Select **Add a client application**.
-    3. Enter the Client ID for SAP OData: 6bee4d13-fd19-43de-b82c-4b6401d174c3.
-    4. From the Authorized scopes list, select the existing scope.
-    5. Click **Add application**.
+    1. Under **Authorized client applications**, Select **Add a client application**.
+    1. Enter the Client ID for SAP OData connector: **6bee4d13-fd19-43de-b82c-4b6401d174c3**.
+    1. From the Authorized scopes list, select the existing scope.
+    1. Click **Add application**.
 
 
 ### Test the connection
@@ -149,11 +149,11 @@ In short: we configure the apps on both sides, establish trust, match users, and
 2. Create a new flow (manual trigger type).
 3. Add an **SAP OData** action.
 4. Select **Microsoft Entra ID using SuccessFactors** as the connection.
-5. Fill in the required parameters gathered earlier.
-6. Choose an **Entity** from the dropdown to test.
-7. Save your flow.
-8. Run the flow to test the connection.
-9. Verify the run history for successful authentication and data retrieval.
+5. Fill in the required parameters gathered from Named values table.
+7. Choose an **Entity** from the dropdown to test.
+8. Save your flow.
+9. Run the flow to test the connection.
+10. Verify the run history for successful authentication and data retrieval.
 
 > [!NOTE]
 >
