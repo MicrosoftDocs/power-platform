@@ -47,7 +47,7 @@ If the environment has a Dataverse database, a user must be assigned the System 
 
 Users who make apps that connect to the database and need to create or update entities must have the System Customizer role in addition to the Environment Maker role. The Environment Maker role doesn't have privileges on the environment's data. These security roles do not have the privileges to create or update security roles. 
 
-The list provides the predefined security roles in an environment that has a Dataverse database. You can't edit these roles.
+The following list provides the predefined security roles in an environment that has a Dataverse database. You can't edit these roles.
 
 - App Opener 
 - Basic User 
