@@ -56,7 +56,7 @@ Compute capacity for finance and operations apps in unified environments is gove
 
 ### How PPR translates to AOS capacity
 
-Each AOS instance requires **2,600,000 PPR** of capacity. The more PPR your tenant has available, the more AOS instances the platform can allocate across your environments, and the more room there is for elastic scaling.
+Each AOS instance requires **650,000 PPR** of capacity. The more PPR your tenant has available, the more AOS instances the platform can allocate across your environments, and the more room there is for elastic scaling.
 
 ### How you accrue PPR
 
@@ -79,16 +79,16 @@ The following tables show how PPR accrues and translates to AOS capacity for two
 | Tenant-wide base | — | 500,000 |
 | Per-user license accrual | 20 &times; 5,000 | 100,000 |
 | **Total from licenses** | | **600,000** |
-| **AOS from PPR** | 600,000 &divide; 2,600,000 | **&lt; 1 AOS** from PPR alone |
+| **AOS from PPR** | 600,000 &divide; 650,000 | **&lt; 1 AOS** from PPR alone |
 
 Every sandbox and production environment is provisioned with a **minimum of 2 AOS instances** regardless of available PPR. This ensures the environment is functional and provides basic redundancy. To double their AOS capacity to 4 AOS, this customer could purchase add-on PPR packs.
 
 | Component | Calculation | PPR |
 |-----------|-------------|-----|
 | Total from licenses | | 600,000 |
-| Add-on packs purchased | 92 packs &times; 50,000 | 4,600,000 |
-| **New total PPR** | | **5,200,000** |
-| **New AOS capacity** | 5,200,000 &divide; 2,600,000 | **2 additional AOS** beyond baseline (4 AOS total) |
+| Add-on packs purchased | 14 packs &times; 50,000 | 700,000 |
+| **New total PPR** | | **1,300,000** |
+| **New AOS capacity** | 1,300,000 &divide; 650,000 | **2 additional AOS** beyond baseline (4 AOS total) |
 
 **Large customer: 500 user licenses**
 
@@ -97,16 +97,16 @@ Every sandbox and production environment is provisioned with a **minimum of 2 AO
 | Tenant-wide base | — | 500,000 |
 | Per-user license accrual | 500 &times; 5,000 | 2,500,000 |
 | **Total from licenses** | | **3,000,000** |
-| **AOS from PPR** | 3,000,000 &divide; 2,600,000 | **~1 additional AOS** beyond baseline (3 AOS total) |
+| **AOS from PPR** | 3,000,000 &divide; 650,000 | **~4 additional AOS** beyond baseline (6 AOS total) |
 
-With the minimum of 2 AOS plus ~1 AOS of PPR-based headroom, this customer starts with 3 AOS. To double their total capacity to 6 AOS, this customer could purchase add-on packs.
+With the minimum of 2 AOS plus ~4 AOS of PPR-based headroom, this customer starts with 6 AOS. To double their total capacity to 12 AOS, this customer could purchase add-on packs.
 
 | Component | Calculation | PPR |
 |-----------|-------------|-----|
 | Total from licenses | | 3,000,000 |
-| Add-on packs purchased | 104 packs &times; 50,000 | 5,200,000 |
-| **New total PPR** | | **8,200,000** |
-| **New AOS capacity** | 8,200,000 &divide; 2,600,000 | **~3 additional AOS** beyond baseline (approximately 5-6 AOS total) |
+| Add-on packs purchased | 70 packs &times; 50,000 | 3,500,000 |
+| **New total PPR** | | **6,500,000** |
+| **New AOS capacity** | 6,500,000 &divide; 650,000 | **10 additional AOS** beyond baseline (12 AOS total) |
 
 Add-on packs of 50,000 PPR each are available from the [Microsoft 365 admin center](https://admin.microsoft.com). These totals determine the compute capacity available for elastic scaling across all finance and operations environments in the tenant.
 
