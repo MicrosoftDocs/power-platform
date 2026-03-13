@@ -117,7 +117,11 @@ In short: we configure the apps on both sides, establish trust, match users, and
 
 1. Click **Save**.
 
-### Step 3: Update Microsoft Entra ID Enterprise Application
+### Step 3: Create or update a user in SuccessFactors to map to the user in Microsoft Entra
+
+Ensure that the Unique User Identifier claim for the user in Microsoft Entra ID exactly matches the user alias in SuccessFactors (a one-to-one mapping).
+
+### Step 4: Update Microsoft Entra ID Enterprise Application
 
 1. Search for and select **Microsoft Entra ID**.
 1. In the left navigation pane, expand **Manage** > **Enterprise applications**.
@@ -130,7 +134,7 @@ In short: we configure the apps on both sides, establish trust, match users, and
           **Source**: Attribute
           **Source attribute**: Paste the **Service Provider Client Id** from the Named values table.
 
-### Step 4: Configure Microsoft Entra ID App registrations
+### Step 5: Configure Microsoft Entra ID App registrations
 
 1. Search for and select **Microsoft Entra ID**.
 1. In the left navigation pane, go to **Manage** > **App Registrations**.
