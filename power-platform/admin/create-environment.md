@@ -4,7 +4,7 @@ description: Learn how to create and manage environments in the Power Platform a
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/06/2025
+ms.date: 03/13/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: mbajwa
