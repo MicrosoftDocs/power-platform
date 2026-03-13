@@ -1181,6 +1181,10 @@
                   href: unified-experience/tutorial-backup-restore-unified-environment.md
                 - name: "Tutorial: Schedule environment copy and automated data import using Azure DevOps"
                   href: unified-experience/tutorial-scheduled-copy-with-data-import.md
+                - name: "Tutorial: Set up a nightly build pipeline for finance and operations apps using Azure DevOps"
+                  href: unified-experience/tutorial-build-pipeline-azure-devops.md
+                - name: "Tutorial: Set up a release pipeline for finance and operations apps using Azure DevOps"
+                  href: unified-experience/tutorial-release-pipeline-azure-devops.md
         - name: Performance tuning and optimization
           items:
             - name: Overview

@@ -22,6 +22,7 @@ In this tutorial, learn how to:
 - Create a scheduled pipeline that copies a production environment to a sandbox
 - Automatically import a finance and operations data package after the copy completes
 - Understand the role of the **DBMovementAPI** user for post-copy automation
+- (Optional) Perform a transactionless copy using the Power Platform API for reduced storage consumption
 
 As an example of this scenario, a customer wants to refresh their sandbox environment from production every weekend. After the copy finishes, a data package containing environment-specific settings (such as email parameters, batch job configurations, or integration endpoints) is automatically imported so the sandbox is ready for use on Monday.
 
@@ -292,6 +293,167 @@ In your Azure DevOps pipeline, add the following variables (mark secrets as **se
 > [!NOTE]
 > The Power Platform Build Tools tasks use the service connection with workload identity federation (no secret needed). However, direct API calls to the finance and operations data management endpoint currently require a client credential flow. Store the client secret securely as a pipeline secret variable or in Azure Key Vault.
 
+## Optional: Transactionless copy using the Power Platform API
+
+The `PowerPlatformCopyEnvironment@2` task used in the pipeline above performs a **full copy** of both configuration and transactional data. If you want to perform a **transactionless copy** — which copies code, configuration, master data, and reference data but truncates transaction tables — you need to call the [Power Platform Environment Copy API](/rest/api/power-platform/environmentmanagement/environment-copy/copy-environment) directly. This API exposes the `executeAdvancedCopyForFinanceAndOperations` option that isn't available in the Build Tools task today.
+
+Transactionless copy significantly reduces storage consumption on sandbox environments. To learn more about how it works and which tables are truncated, see [Tutorial: Perform a transaction-less copy between environments](./tutorial-perform-transactionless-copy.md). To perform a transactionless copy through the Power Platform admin center UI instead of a pipeline, follow that tutorial.
+
+### Additional prerequisites for transactionless copy
+
+The Power Platform Environment Copy API uses a different endpoint (`https://api.powerplatform.com`) than the Dataverse APIs used by the Build Tools tasks. This requires two additional authorization steps for your app registration:
+
+1. **Power Platform RBAC role assignment (tenant scope):** Your service principal must be assigned the **Power Platform Contributor** role at the tenant scope. This grants permission to call the environment management APIs. For a step-by-step walkthrough, see [Tutorial: Assign role-based access control roles to service principals](/power-platform/admin/programmability-tutorial-rbac-role-assignment). For background on the RBAC model, see [Role-based access control for Power Platform admin center](/power-platform/admin/security/role-based-access-control).
+
+2. **Dataverse application user (environment scope):** Your service principal must also be registered as an **Application User** with the **System Administrator** security role in both the source and target Dataverse environments. This is needed because the copy operation accesses environment-level resources. For guidance, see [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
+
+> [!NOTE]
+> The RBAC role assignment at tenant scope is only required if you're performing a transactionless copy via the API. The standard full copy using the `PowerPlatformCopyEnvironment@2` task (shown in Step 3) only requires the Dataverse application user and the Build Tools service connection.
+
+### Additional pipeline variables for transactionless copy
+
+Add these variables to your pipeline alongside the existing ones (mark secrets as **secret**):
+
+| Variable | Description | Secret |
+|:---------|:------------|:-------|
+| `SourceEnvironmentId` | The environment ID (GUID) of your source production environment | No |
+| `TargetEnvironmentId` | The environment ID (GUID) of your target sandbox environment | No |
+
+> [!TIP]
+> You can find the environment ID in the Power Platform admin center by navigating to **Environments**, selecting the environment, and copying the ID from the **Environment details** page URL or the **Details** panel.
+
+### Replace the copy stage
+
+To use transactionless copy, replace the `CopyEnvironment` stage in the pipeline YAML with the following. This stage acquires a token for the Power Platform API, initiates the copy with the transactionless option, and polls until completion.
+
+```yaml
+  - stage: CopyEnvironment
+    displayName: 'Transactionless Copy Production to Sandbox'
+    jobs:
+      - job: CopyProdToSandbox
+        displayName: 'Transactionless copy via Power Platform API'
+        timeoutInMinutes: 360
+        steps:
+          - task: PowerShell@2
+            displayName: 'Copy environment (transactionless)'
+            inputs:
+              targetType: 'inline'
+              script: |
+                # --- Configuration ---
+                $tenantId = "$(TenantId)"
+                $clientId = "$(ClientId)"
+                $clientSecret = "$(ClientSecret)"
+                $sourceEnvId = "$(SourceEnvironmentId)"
+                $targetEnvId = "$(TargetEnvironmentId)"
+                $apiVersion = "2022-03-01-preview"
+
+                # --- Step 1: Acquire access token for Power Platform API ---
+                Write-Host "Acquiring access token for api.powerplatform.com..."
+                $tokenUrl = "https://login.microsoftonline.com/$tenantId/oauth2/v2.0/token"
+                $tokenBody = @{
+                    client_id     = $clientId
+                    scope         = "https://api.powerplatform.com/.default"
+                    grant_type    = "client_credentials"
+                    client_secret = $clientSecret
+                }
+
+                $tokenResponse = Invoke-RestMethod -Method Post -Uri $tokenUrl `
+                    -Body $tokenBody -ContentType "application/x-www-form-urlencoded"
+                $accessToken = $tokenResponse.access_token
+
+                $headers = @{
+                    "Authorization" = "Bearer $accessToken"
+                    "Content-Type"  = "application/json"
+                }
+
+                # --- Step 2: Initiate transactionless copy ---
+                Write-Host "Initiating transactionless copy..."
+                Write-Host "  Source: $sourceEnvId"
+                Write-Host "  Target: $targetEnvId"
+
+                $copyUrl = "https://api.powerplatform.com/environmentmanagement/environments/$targetEnvId/copy?api-version=$apiVersion"
+                $copyBody = @{
+                    sourceEnvironmentId = $sourceEnvId
+                    copyType = "Full"
+                    copyOptions = @{
+                        skipAuditData = $true
+                        executeAdvancedCopyForFinanceAndOperations = $true
+                    }
+                } | ConvertTo-Json -Depth 3
+
+                $copyResponse = Invoke-WebRequest -Method Post -Uri $copyUrl `
+                    -Headers $headers -Body $copyBody -UseBasicParsing
+
+                if ($copyResponse.StatusCode -ne 202) {
+                    Write-Error "Copy request failed with status $($copyResponse.StatusCode): $($copyResponse.Content)"
+                    exit 1
+                }
+
+                # The 202 response includes a Location header with the operation URL
+                $operationUrl = $copyResponse.Headers["Location"]
+                if (-not $operationUrl) {
+                    # Some responses return the operation URL in the body
+                    $responseBody = $copyResponse.Content | ConvertFrom-Json
+                    $operationUrl = $responseBody.operationUrl
+                }
+
+                Write-Host "Copy initiated. Polling operation status..."
+                Write-Host "  Operation URL: $operationUrl"
+
+                # --- Step 3: Poll for completion ---
+                $complete = $false
+                $maxRetries = 720   # 6 hours at 30-second intervals
+                $retryCount = 0
+
+                while (-not $complete -and $retryCount -lt $maxRetries) {
+                    Start-Sleep -Seconds 30
+                    $retryCount++
+
+                    try {
+                        $statusResponse = Invoke-RestMethod -Method Get `
+                            -Uri $operationUrl -Headers $headers
+                    }
+                    catch {
+                        Write-Warning "Status check attempt $retryCount failed: $_"
+                        continue
+                    }
+
+                    $state = $statusResponse.state
+                    if ($retryCount % 10 -eq 0) {
+                        Write-Host "Attempt $retryCount - Operation state: $state"
+                    }
+
+                    if ($state -eq "Succeeded") {
+                        Write-Host "Transactionless copy completed successfully."
+                        $complete = $true
+                    }
+                    elseif ($state -eq "Failed") {
+                        Write-Error "Copy operation failed. Details: $($statusResponse | ConvertTo-Json -Depth 5)"
+                        exit 1
+                    }
+                }
+
+                if (-not $complete) {
+                    Write-Error "Copy operation timed out after $retryCount attempts."
+                    exit 1
+                }
+            env:
+              TenantId: $(TenantId)
+              ClientId: $(ClientId)
+              ClientSecret: $(ClientSecret)
+```
+
+The rest of the pipeline (the `ImportDataPackage` stage) remains unchanged and runs after the transactionless copy completes, just as it does with the standard full copy.
+
+### Transactionless copy troubleshooting
+
+| Issue | Resolution |
+|:------|:-----------|
+| 403 Forbidden when calling the Copy API | The service principal is missing the **Power Platform Contributor** RBAC role at tenant scope. Follow the [RBAC role assignment tutorial](/power-platform/admin/programmability-tutorial-rbac-role-assignment) to assign it. |
+| 401 Unauthorized when calling the Copy API | The token was acquired for the wrong audience. Ensure the scope is `https://api.powerplatform.com/.default`, not a Dataverse URL. |
+| Copy succeeds but transactions are still present | Verify that `executeAdvancedCopyForFinanceAndOperations` is set to `$true` in the request body. Also confirm the source environment has the latest platform update — transactionless copy requires a minimum platform version. |
+| Application user not found error | Ensure the app registration is registered as an Application User with **System Administrator** role in both the source and target Dataverse environments. |
+
 ## Step 4: Prepare the data package
 
 1. In your **source** finance and operations environment, go to **Workspaces** > **Data management**.
@@ -324,3 +486,5 @@ In your Azure DevOps pipeline, add the following variables (mark secrets as **se
 - [Copy a Lifecycle Services environment to a unified environment](./tutorial-copy-lifecycle-services-environment-unified-environment.md)
 - [Perform a transaction-less copy between environments](./tutorial-perform-transactionless-copy.md)
 - [Tutorial: Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md)
+- [Role-based access control for Power Platform admin center](/power-platform/admin/security/role-based-access-control)
+- [Tutorial: Assign RBAC roles to service principals](/power-platform/admin/programmability-tutorial-rbac-role-assignment)

@@ -80,7 +80,7 @@ The following table is a reference for each operation type and explains any nuan
 | Backup | Database export | Backup (custom or system-defined)| In Power Platform, a backup is kept in the cloud and never downloaded as a SQL `.bak` or `.bacpac` file. |
 | Restore | Point-in-time restore | Restore (custom or system-defined)| Not applicable |
 | Reset | Not applicable | Reset| This operation isn't yet implemented for environments where **Dynamics 365 Finance and Operations Provisioning App** is installed. |
-| Convert to production | Not applicable | Convert to production | This operation isn't yet implemented for environments where **Finance and Operations Provisioning App** is installed. |
+| Convert to production | Not applicable | Convert to production | Supported for unified environments. For a step-by-step guide, see [Tutorial: Convert a sandbox environment to production for finance and operations apps](./tutorial-convert-sandbox-to-production.md). |
 | Delete | Deallocate/delete | Delete | Restoring a deleted environment where **Dynamics 365 Finance and Operations Provisioning App** is installed, but isn't yet implemented. |
 
 ## Lifecycle Services features not implemented in the Power Platform admin center
