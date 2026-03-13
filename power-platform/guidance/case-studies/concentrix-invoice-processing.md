@@ -9,6 +9,9 @@ ms.date: 03/10/2026
 ms.topic: overview
 ---
 
+<!-- I think the alt text in the third image (line 103) is incorrect because it's identical to the alt text in the second image (line 77). -->
+
+
 # Concentrix modernizes invoice processing with Power Platform and AI
 
 Concentrix supports many of the world’s largest brands by running complex, high-stakes business operations behind the scenes. One of these responsibilities is processing more than 100,000 utility invoices every month, arriving from over 100 providers, in more than 300 layouts, and in multiple languages. What begins as a routine workflow quickly becomes a complex mix of formats and exceptions, making manual processing slow and inconsistent.
@@ -37,7 +40,7 @@ Key benefits include:
 
 - High accuracy at scale
   - Processes more than 100,000 invoices per month
-  - Achieves 96% accuracy overall, reaching 99% in January 2026
+  - Achieves 96 percent accuracy overall, reaching 99 percent in January 2026
 
 - Faster development and lower costs
   - Lower per-invoice processing cost
@@ -77,7 +80,7 @@ The solution is built around four main areas: sources, AI processing, data enric
 
 The implementation evolved as invoice volumes grew, and new AI capabilities became available. Initially, AI Builder custom models worked well, but maintaining a large number of patterns became too time‑consuming, and Power Automate began to hit throttling limits as volumes approached 20,000 invoices per month.
 
-GPT‑4 changed the approach. Instead of training multiple models, the team could send the extracted PDF text directly to an AI prompt with defined extraction rules. This approach turned the process into a single step in the flow, reduced complexity, and removed throttling issues. A few complex layouts still required trained models, but later versions, GPT‑4.1 and GPT‑5, handled those patterns with higher accuracy, allowing nearly all extraction to move to prompt‑based logic. Accuracy improved from 65–70% with custom models to about 96% after moving to AI prompt‑based extraction.
+GPT‑4 changed the approach. Instead of training multiple models, the team could send the extracted PDF text directly to an AI prompt with defined extraction rules. This approach turned the process into a single step in the flow, reduced complexity, and removed throttling issues. A few complex layouts still required trained models, but later versions, GPT‑4.1 and GPT‑5, handled those patterns with higher accuracy, allowing nearly all extraction to move to prompt‑based logic. Accuracy improved from 65–70 percent with custom models to about 96 percent after moving to AI prompt‑based extraction.
 
 The redesign also reshaped team structure. The group responsible for pattern analysis and model updates shrank from about 40 people to 11 who now review new patterns, test them with GPT‑5, and move them into production. Automation now processes around 100,000 invoices per month, reducing the manual processing team from roughly 250 people to about 50–60 and allowing them to focus on higher‑value work.
 
@@ -101,15 +104,15 @@ The following image shows the beginning of one of these prompts.
 
 ## Takeaways
 
-This case study shows the potential of using Power Platform and AI to transform a high volume, high variability process into a scalable, intelligent operation. Key lessons for IT professionals include:
+This case study shows the potential of using Power Platform and AI to transform a high-volume, high-variability process into a scalable, intelligent operation. Key lessons for IT professionals include:
 
-- **Ask the right questions early** Understanding expected volume growth and data‑pattern diversity supports better architectural decisions.
+- **Ask the right questions early.** Understanding expected volume growth and data‑pattern diversity supports better architectural decisions.
 
-- **Design for variation from day one** Flexible extraction logic prevents rework as new patterns appear.
+- **Design for variation from day one.** Flexible extraction logic prevents rework as new patterns appear.
 
-- **Expect nondeterminism and plan for it** Clear formatting rules, guardrails and validation steps ensure consistency.
+- **Expect nondeterminism and plan for it.** Clear formatting rules, guardrails, and validation steps ensure consistency.
 
-- **Centralized visibility strengthens governance** Real time tracking and a single review interface reduce errors and improve auditability.
+- **Centralized visibility strengthens governance.** Real time tracking and a single review interface reduce errors and improve auditability.
 
 ## Looking ahead
 
@@ -117,7 +120,7 @@ Concentrix is exploring deeper cloud integration, including routing all invoice 
 
 The team also plans to support multilingual invoices, beginning with French, Spanish, and Arabic. A major milestone is fully automating all 800,000 monthly invoices, onboarding another 50,000 invoices at a time to ensure stability and performance.
 
-These advancements will enable Concentrix to operate at greater scale, with higher accuracy, and with a more streamlined, cloud driven architecture.
+These advancements will enable Concentrix to operate at greater scale, with higher accuracy, and with a more streamlined, cloud-driven architecture.
 
 ## Related information
 
