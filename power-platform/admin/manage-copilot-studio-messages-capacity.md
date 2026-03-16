@@ -10,6 +10,9 @@ ms.author: ampatra
 ms.custom: bap-template, NewPPAC
 search.audienceType: 
  - admin
+contributors:
+ - radioblazer
+
 ---
 
 # Manage Copilot Studio credits and capacity 
