@@ -9,9 +9,6 @@ ms.date: 03/10/2026
 ms.topic: overview
 ---
 
-<!-- I think the alt text in the third image (line 103) is incorrect because it's identical to the alt text in the second image (line 77). -->
-
-
 # Concentrix modernizes invoice processing with Power Platform and AI
 
 Concentrix supports many of the world’s largest brands by running complex, high-stakes business operations behind the scenes. One of these responsibilities is processing more than 100,000 utility invoices every month, arriving from over 100 providers, in more than 300 layouts, and in multiple languages. What begins as a routine workflow quickly becomes a complex mix of formats and exceptions, making manual processing slow and inconsistent.
@@ -100,7 +97,7 @@ AI prompts form the core of the extraction logic, with around 90 percent of invo
 
 The following image shows the beginning of one of these prompts.
 
-:::image type="content" source="media/concentrix-invoice-processing/ai-prompt-data-extraction.png" alt-text="Screenshot of Concentrix invoice automation dashboard showing KPIs, AI invoice processing stats, and a Next button." lightbox="media/concentrix-invoice-processing/ai-prompt-data-extraction.png":::
+:::image type="content" source="media/concentrix-invoice-processing/ai-prompt-data-extraction.png" alt-text="Screenshot of the Power Automate portal showing an AI prompt configured to extract invoice details." lightbox="media/concentrix-invoice-processing/ai-prompt-data-extraction.png":::
 
 ## Takeaways
 
