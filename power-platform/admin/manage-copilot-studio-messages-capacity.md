@@ -2,7 +2,7 @@
 title: Manage Copilot Studio credits and capacity 
 description: Learn how to manage Copilot Studio credits and capacity.
 author: amiyapatr-zz
-ms.date: 08/29/2025
+ms.date: 03/16/2026
 ms.reviewer: sericks
 ms.topic: how-to
 ms.subservice: admin
@@ -10,6 +10,9 @@ ms.author: ampatra
 ms.custom: bap-template, NewPPAC
 search.audienceType: 
  - admin
+contributors:
+ - radioblazer
+
 ---
 
 # Manage Copilot Studio credits and capacity 
@@ -71,6 +74,9 @@ View the Copilot Studio capacity consumed within that environment. The following
 - **Capacity consumption by product**: This tile provides a product-focused summary of Copilot credits consumed, showing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
 
 - **Copilot credit consumption details**: The grid displays a list of Copilot agents consuming capacity, including the associated product, feature name, and the count of billed versus nonbillable credits.
+
+> [!TIP]
+> To monitor credit consumption for agent flows, look for the **Agent flow actions** feature in the **Copilot credit consumption details** grid. When prepaid capacity is exhausted, new agent flow runs are blocked while the parent agent continues to function for non-flow interactions. Flow authors also see a design-time warning in the Copilot Studio designer. To resolve enforcement, reallocate capacity, purchase more credits, or [enable pay-as-you-go billing](#overage-management). For more information, see [Agent flow enforcement](/microsoft-copilot-studio/requirements-messages-management#agent-flow-enforcement).
 
 ## Manage capacity
 Capacity allocation can be managed in the Power Platform admin center. 
