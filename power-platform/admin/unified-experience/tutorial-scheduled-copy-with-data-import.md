@@ -37,46 +37,32 @@ As an example of this scenario, a customer wants to refresh their sandbox enviro
 
 ### About the DBMovementAPI user
 
-The finance and operations apps include a built-in user account called **DBMovementAPI**. When you perform an environment copy, this account is automatically enabled in the target environment. This is significant because the DBMovementAPI user has the permissions required to call the Data management package APIs, which means your automated pipeline can authenticate and trigger a data import immediately after the copy completes without any manual intervention.
+The finance and operations apps include an optional user account you can create called **DBMovementAPI**. When you perform an environment copy, this account is automatically enabled in the target environment if it was present in the source environment. This is significant because the DBMovementAPI user can be given permissions necessary to call the Data management package APIs, which means your automated pipeline can authenticate and trigger a data import immediately after the copy completes without any manual intervention and without any other users enabled to access the system besides the Administrator account.
 
 > [!IMPORTANT]
-> Ensure the **DBMovementAPI** user is enabled in your source (production) environment before performing the copy. After the copy completes, this user is available in the target sandbox and can be used to execute the data import step. To enable this user, go to **System administration > Users** in your finance and operations apps and search for the **DBMovementAPI** user. Set the account to **Enabled** if it isn't already.
+> Ensure the **DBMovementAPI** user is created in your source (production) environment before performing the copy. You may leave it disabled in the source environment, but you will want to give it appropriate security roles and associate this user to a Microsoft Entra ID Application to have programmatic access to it. After the copy completes, this user is automatically enabled in the target sandbox and can be used to execute the data import step.
 
 ## Step 1: Register an application in Microsoft Entra ID
 
 To allow Azure DevOps to interact with the Power Platform APIs and finance and operations data management APIs, you need a Microsoft Entra ID app registration.
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and go to **Microsoft Entra ID** > **App registrations**.
-1. Select **New registration**.
-1. Enter a name such as `AzDevOps-PowerPlatform-Pipeline` and select **Register**.
-1. Note the **Application (client) ID** and **Directory (tenant) ID** for later use.
+2. Select **New registration**.
+3. Enter a name such as `AzDevOps-PowerPlatform-Pipeline` and select **Register**.
+4. Note the **Application (client) ID** and **Directory (tenant) ID** for later use.
 
 ### Grant API permissions
 
 1. In your app registration, go to **API permissions** > **Add a permission**.
-1. Select **Dynamics CRM** (this covers Dataverse APIs) and grant **user_impersonation** as a delegated permission, or add the app as an **Application User** in Power Platform with the **System Administrator** security role.
-1. For finance and operations data management APIs, the app needs access to your finance and operations environment. Register the app as an application user in your Dataverse environment and assign the appropriate security roles.
+2. Choose the "APIs my organization uses" tab and then search for  **Microsoft Dynamics ERP** (00000015-0000-0000-c000-000000000000) and grant all of the delegated permissions. 
+3. Add the app as an **Application User** in Power Platform with the **System Administrator** security role in both the source and target environments.  System administrator gives the ability to perform environment copy, backup, and restore.
 
 > [!NOTE]
 > For detailed guidance on registering application users in Power Platform, see [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
 
 ## Step 2: Configure a service connection with workload identity federation
 
-Workload identity federation eliminates the need for client secrets by using OpenID Connect (OIDC) to establish trust between Azure DevOps and Microsoft Entra ID.
-
-### Add a federated credential to your app registration
-
-1. In the Azure portal, go to your app registration created in Step 1.
-1. Select **Certificates & secrets** > **Federated credentials** > **Add credential**.
-1. Choose the scenario **Other issuer**.
-1. Set the following values:
-   - **Issuer**: `https://vstoken.dev.azure.com/<AzureDevOpsOrganizationID>`
-   - **Subject identifier**: `sc://<OrgName>/<ProjectName>/<ServiceConnectionName>`
-
-   > [!TIP]
-   > To find your Azure DevOps Organization ID, go to your Azure DevOps organization settings. For the **Subject identifier**, the values correspond to your Azure DevOps organization name, project name, and the name you give your service connection in the next section. Use the exact values displayed on the service connection page in Azure DevOps after creation to avoid misconfiguration.
-
-1. Enter a **Name** for the credential (for example, `azdo-federation`) and select **Add**.
+Workload identity federation eliminates the need for client secrets by using OpenID Connect (OIDC) to establish trust between Azure DevOps and Microsoft Entra ID.  
 
 ### Create the Power Platform service connection in Azure DevOps
 
@@ -84,15 +70,24 @@ Workload identity federation eliminates the need for client secrets by using Ope
 1. Search for and select **Power Platform**.
 1. Choose **Workload Identity federation (preview)** as the authentication method.
 1. Fill in the following fields:
-   - **Server URL**: The URL of your Dataverse environment (for example, `https://yourorg.crm.dynamics.com`)
+   - **Server URL**: The URL of your target Power Platform environment (for example, `https://yourorg.crm.dynamics.com`)
    - **Tenant ID**: Your Microsoft Entra tenant ID
    - **Application ID**: The client ID of the app registration from Step 1
 1. Name the service connection (for example, `PowerPlatform-Prod`) and select **Save**.
 
 > [!IMPORTANT]
-> After saving, verify the **Issuer** and **Subject identifier** values displayed on the service connection page match exactly what you configured in the federated credential. If they don't match, update the federated credential in the Azure portal. Misconfigured values cause authentication failures, but the pipeline logs will output the expected values to help you troubleshoot.
+> After saving, capture the **Issuer** and **Subject identifier** values displayed on the service connection page.
 
-For more information, see the [Power Platform Build Tools discussion on workload identity federation](https://github.com/microsoft/powerplatform-build-tools/discussions/884).
+### Add a federated credential to your app registration
+
+1. In the Azure portal, go to your app registration created in Step 1.
+2. Select **Certificates & secrets** > **Federated credentials** > **Add credential**.
+3. Choose the scenario **Other issuer**.
+4. Set the following values:
+   - **Issuer**: `Value from prior step`
+   - **Subject identifier**: `Value from prior step`
+
+5. Enter a **Name** for the credential (for example, `azdo-federation`) and select **Add**.
 
 ## Step 3: Create a scheduled Azure DevOps pipeline
 
