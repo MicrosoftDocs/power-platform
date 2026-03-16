@@ -335,7 +335,7 @@ To monitor the status of audit delete jobs, see the next section.
 ### Method 1: Delete bulk email and workflow instances using a bulk deletion job  
   
 > [!WARNING]
-> If you delete this data, you will no longer be able to tell if an email was sent through bulk email or if a workflow rule ran against a record. The emails that were sent and the actions that ran against the record in the workflow will remain.
+> If you delete this data, you can no longer determine whether an email was sent through bulk email or whether a workflow rule ran against a record. The emails that were sent and the actions that ran as part of the workflow remain.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -351,7 +351,7 @@ To monitor the status of audit delete jobs, see the next section.
   
 6. In the **Look for** list, select **System Jobs**.  
   
-7. In the search criteria area, add similar criteria similar, for example:  
+7. In the search criteria area, add criteria similar to the following:  
   
    **System Job Type** – **Equals** – **Bulk E-mail**; **Workflow**;  
   
@@ -361,32 +361,32 @@ To monitor the status of audit delete jobs, see the next section.
   
 8. Group the three criteria rows:  
   
-   1. Choose the arrow next to each criteria row, and then choose **Select Row**.  
+   1. Select the arrow next to each criteria row, and then select **Select Row**.  
   
-   2. With all three rows selected, choose **Group AND**.  
+   2. When all three rows are selected, choose **Group AND**.  
 
       :::image type="content" source="media/free-storage-method1b.png" alt-text="Screenshot that shows where the Group AND option is located in the Define Search Criteria window. Method 1." lightbox="media/free-storage-method1b.png":::
   
 9. Select **Next**.  
   
-10. In the **Name** text box, type a name for the bulk deletion job.  
+10. In the **Name** text box, enter a name for the bulk deletion job.  
   
-11. Select a date and time for the job start time; preferably a time when users aren't in customer engagement apps.  
+11. Select a start date and time for the job. Choose a time when users aren't working in customer engagement apps.  
   
-12. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
+12. Select the **Run this job after every** checkbox, and then in the **days** list, select the frequency you want the job to run.  
 
     :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Run this job every check box is located." lightbox="media/free-storage-method6b.png":::
 
-13. If you want a notification e-mail sent, select the **Send an e-mail to me (myemail@domain.com) when this job is finished** check box.  
+13. To receive a notification, select the **Send an e-mail to me (myemail@domain.com) when this job is finished** checkbox.  
 
-14. Select **Next**, review the bulk deletion job, and then select **Submit** to create the recurring job.
+14. Select **Next**, review the bulk deletion job details, and then select **Submit** to create the recurring job.
 
 ### Method 2: Evaluate and delete suspended workflows  
 
- Sometimes workflows enter a suspended state because there's a condition that can't be met or some other reason that doesn't allow the workflow to continue.  
+Some workflows enter a suspended state because there's a condition that can't be met or some other reason that doesn't allow the workflow to continue.  
   
 > [!WARNING]
-> Some workflows are in a suspended state because they're waiting for a condition that has not yet been met, which is expected. For example, a workflow may be waiting for a task to be completed.
+> Some workflows are suspended intentionally because a condition to be met or another issue prevents the workflow from continuing.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -400,7 +400,7 @@ To monitor the status of audit delete jobs, see the next section.
   
 6. In the **Look for** list, select **System Jobs**.  
   
-7. In the search criteria area, add similar criteria similar, for example:  
+7. In the search criteria area, add criteria similar to the following:  
   
    **System Job Type** – **Equals** – **Workflow**  
   
@@ -408,35 +408,35 @@ To monitor the status of audit delete jobs, see the next section.
   
 8. Group the two criteria rows:  
   
-   1. Choose the arrow next to each criteria row, and then choose **Select Row**.  
+   1. Select the arrow next to each criteria row, and then select **Select Row**.  
   
-   2. With both rows selected, choose **Group AND**.  
+   2. When both rows are selected, choose **Group AND**.  
   
    :::image type="content" source="media/free-storage-method2b.png" alt-text="Screenshot that shows where the Group AND is located on the Advanced Find tab." lightbox="media/free-storage-method2b.png":::
 
-9. Choose **Results**.  
+9. Select **Results**.  
   
-10. In the results window, you can open each item to determine whether the workflow can be deleted.
+10. In the results list, open each item workflow to determine whether it can be safely deleted.
 
 ### Method 7: Remove bulk duplicate detection jobs and associated copies of duplicate records  
 
- Every time that a duplicate detection job runs, a copy of each duplicate record is stored in the database as part of the duplicate detection job.
+Each time a duplicate detection job runs, the system stores a copy of each detected duplicate record as part of that job.
 
-For example, if you have 100 duplicate records, every time that you run a duplicate detection job that finds these duplicates, whether it's manual or reoccurring, those 100 duplicate records are stored in the database under that instance of that duplicate job until the duplicates are merged or deleted, or until the instance of that duplicate detection job is deleted.
+For example, if 100 duplicate records, every a duplicate detection job identifies them, whether manual or reccurring, those 100 duplicate records are stored in the database under that instance of that duplicate job. These records remain until you merge or delete the duplicates or delete the duplicate detection job instance.
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Manage**.
 
 3. In the **Manage** pane, select **Environments**, and then select an environment.
 
-4. Select **Settings** > **Data management** > **Duplicate Detection Jobs**.  
+4. Select **Settings** > **Data management** > **Duplicate detection jobs**.  
 
    :::image type="content" source="media/free-storage-method-new.png" alt-text="Screenshot that shows where the Duplicate detection jobs option is located in the Settings of an environment." lightbox="media/free-storage-method-new.png":::
   
-5. Select the duplicate detection job instances you want to delete and then choose **Delete** (X).  
+5. Select the duplicate detection job instances that you want to delete and then select **Delete** (X).  
   
-   To avoid wasting storage space, make sure duplicates are resolved promptly so that they aren't reported in multiple duplicate detection jobs.  
+   To avoid unnecessary storage consumption, resolve duplicate records promptly so that they aren't reported in multiple duplicate detection jobs.  
 
    :::image type="content" source="media/free-storage-method7a.png" alt-text="Screenshot that shows where the X icon is located in the Duplicate Detection Jobs window of Dynamic 365." lightbox="media/free-storage-method7a.png":::
 
