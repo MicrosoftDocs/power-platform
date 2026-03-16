@@ -1,0 +1,1743 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API - workflowsagent",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
+    "version": "2022-03-01-preview"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/workflowsagent/aiFlows/{aiFlowId}/runs/{runId}/actions": {
+      "get": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Get flow run actions for DSR export.",
+        "description": "Returns the action history for a specific flow run.",
+        "operationId": "GetFlowRunActionsForDsr",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "aiFlowId",
+            "description": "The workflow ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "runId",
+            "description": "The run ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Byte offset continuation token for paging.",
+            "type": "integer",
+            "format": "int64"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Flow run action history returned.",
+            "schema": {
+              "$ref": "#/definitions/DsrFlowRunsResponse"
+            },
+            "headers": {
+              "Retry-After": {
+                "description": "Present when additional pages are available. Indicates the recommended delay in seconds before fetching the next page.",
+                "type": "string"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "403": {
+            "description": "Forbidden."
+          },
+          "404": {
+            "description": "Not found. M365 Copilot workflows environment could not be resolved or feature is not enabled."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/approvals": {
+      "get": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Get approvals for DSR export.",
+        "description": "Returns approval records for DSR compliance export.",
+        "operationId": "GetApprovals",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Continuation token for paging.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Approvals returned.",
+            "schema": {
+              "$ref": "#/definitions/DsrPagedResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request."
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "404": {
+            "description": "Not found. M365 Copilot workflows environment could not be resolved."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/approvals/{approvalId}": {
+      "delete": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Delete an approval for DSR compliance.",
+        "description": "Deletes an approval and associated records for DSR compliance.",
+        "operationId": "DeleteApproval",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "approvalId",
+            "description": "The approval ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successfully deleted."
+          },
+          "400": {
+            "description": "Bad request. Approval ID is not a valid GUID."
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "404": {
+            "description": "Not found. M365 Copilot workflows environment could not be resolved."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/connections": {
+      "get": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Get connections for DSR export.",
+        "description": "Returns user connections for DSR compliance export.",
+        "operationId": "GetConnections",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Continuation token for paging.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Connections returned.",
+            "schema": {
+              "$ref": "#/definitions/DsrPagedResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request."
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "404": {
+            "description": "Not found. M365 Copilot workflows environment could not be resolved."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/connections/{connectionIdentifier}": {
+      "delete": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Delete a connection for DSR compliance.",
+        "description": "Deletes a connection for DSR compliance.",
+        "operationId": "DeleteConnection",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "connectionIdentifier",
+            "description": "The connection ID in apiName/connectionName format.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successfully deleted."
+          },
+          "400": {
+            "description": "Bad request. Connection ID is not in expected format."
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "404": {
+            "description": "Not found. M365 Copilot workflows environment could not be resolved."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/conversationTranscripts": {
+      "get": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Get conversation transcripts for DSR export.",
+        "description": "Returns conversation transcripts for DSR compliance export.",
+        "operationId": "GetConversationTranscriptsForDsr",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Continuation token for paging.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Conversation transcripts returned.",
+            "schema": {
+              "$ref": "#/definitions/DsrConversationTranscriptsResponse"
+            },
+            "headers": {
+              "Retry-After": {
+                "description": "Present when additional pages are available. Indicates the recommended delay in seconds before fetching the next page.",
+                "type": "string"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "403": {
+            "description": "Forbidden."
+          },
+          "404": {
+            "description": "Not found. M365 Copilot workflows environment could not be resolved or feature is not enabled."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/environments/{environmentId}/aiFlows/{aiFlowId}/runs/{runId}/actions": {
+      "get": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Get flow run actions for DSR export (environment-scoped).",
+        "description": "Returns action history for a flow run in an environment.",
+        "operationId": "GetFlowRunActionsWithEnvironment",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "aiFlowId",
+            "description": "The workflow ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "runId",
+            "description": "The run ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Byte offset continuation token for paging.",
+            "type": "integer",
+            "format": "int64"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Flow run action history returned.",
+            "schema": {
+              "$ref": "#/definitions/DsrFlowRunsResponse"
+            },
+            "headers": {
+              "Retry-After": {
+                "description": "Present when additional pages are available. Indicates the recommended delay in seconds before fetching the next page.",
+                "type": "string"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "403": {
+            "description": "Forbidden. User does not have read access to the flow run."
+          },
+          "404": {
+            "description": "Not found. Feature is not enabled for this environment."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/environments/{environmentId}/conversationTranscripts": {
+      "get": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Get conversation transcripts for DSR export (environment-scoped).",
+        "description": "Returns conversation transcripts for a given environment.",
+        "operationId": "GetConversationTranscriptsWithEnvironment",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Continuation token for paging.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Conversation transcripts returned.",
+            "schema": {
+              "$ref": "#/definitions/DsrConversationTranscriptsResponse"
+            },
+            "headers": {
+              "Retry-After": {
+                "description": "Present when additional pages are available. Indicates the recommended delay in seconds before fetching the next page.",
+                "type": "string"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "403": {
+            "description": "Forbidden."
+          },
+          "404": {
+            "description": "Not found. Feature is not enabled for this environment."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/environments/{environmentId}/flows/{flowId}/flowRuns": {
+      "get": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Get flow runs for DSR export (environment-scoped).",
+        "description": "Returns flow run records for a flow in an environment.",
+        "operationId": "GetFlowRunsNonSingleton",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "flowId",
+            "description": "The flow ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Continuation token for paging.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Flow runs returned.",
+            "schema": {
+              "$ref": "#/definitions/DsrPagedResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request."
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "404": {
+            "description": "Not found. Specified environment could not be found."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/environments/{environmentId}/flows/{flowId}/runs/{runId}/runHistoryData": {
+      "get": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Get run history customer data for DSR export (environment-scoped).",
+        "description": "Returns run history data for a flow run in an environment.",
+        "operationId": "GetRunHistoryDataNonSingleton",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "flowId",
+            "description": "The flow ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "path",
+            "name": "runId",
+            "description": "The run ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Base64-encoded continuation token for paging.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Run history data returned.",
+            "schema": {
+              "$ref": "#/definitions/DsrPagedResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request."
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "404": {
+            "description": "Not found. Specified environment could not be found."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/flows": {
+      "get": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Get flows for DSR export.",
+        "description": "Returns flows owned by the calling user for DSR export.",
+        "operationId": "GetFlows",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Continuation token for paging.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Flows returned.",
+            "schema": {
+              "$ref": "#/definitions/DsrPagedResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request."
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "404": {
+            "description": "Not found. M365 Copilot workflows environment could not be resolved."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/flows/{flowId}": {
+      "delete": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Delete a flow for DSR compliance.",
+        "description": "Deletes a flow in the M365 Copilot workflows environment for DSR compliance.",
+        "operationId": "DeleteFlow",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "flowId",
+            "description": "The flow ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successfully deleted."
+          },
+          "400": {
+            "description": "Bad request. Flow ID is not a valid GUID."
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "404": {
+            "description": "Not found. M365 Copilot workflows environment could not be resolved."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/flows/{flowId}/flowRuns": {
+      "get": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Get flow runs for DSR export.",
+        "description": "Returns flow run records for a flow for DSR export.",
+        "operationId": "GetFlowRunsSingleton",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "flowId",
+            "description": "The flow ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Continuation token for paging.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Flow runs returned.",
+            "schema": {
+              "$ref": "#/definitions/DsrPagedResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request. Flow ID is not a valid GUID."
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "404": {
+            "description": "Not found. M365 Copilot workflows environment could not be resolved."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/flows/{flowId}/runs/{runId}/runHistoryData": {
+      "get": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Get run history customer data for DSR export.",
+        "description": "Returns run history customer data for a flow run.",
+        "operationId": "GetRunHistoryData",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "flowId",
+            "description": "The flow ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "path",
+            "name": "runId",
+            "description": "The run ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Base64-encoded continuation token for paging.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Run history data returned.",
+            "schema": {
+              "$ref": "#/definitions/DsrPagedResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request."
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "404": {
+            "description": "Not found. M365 Copilot workflows environment could not be resolved."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/prompts": {
+      "get": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Get AI model prompts for DSR export.",
+        "description": "Returns AI prompt records for DSR compliance export.",
+        "operationId": "GetPrompts",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Continuation token for paging.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Prompts returned.",
+            "schema": {
+              "$ref": "#/definitions/DsrPagedResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request."
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "404": {
+            "description": "Not found. M365 Copilot workflows environment could not be resolved."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    },
+    "/workflowsagent/prompts/{promptId}": {
+      "delete": {
+        "tags": [
+          "DsrCompliance"
+        ],
+        "summary": "Delete an AI model prompt for DSR compliance.",
+        "description": "Deletes an AI model prompt for DSR compliance.",
+        "operationId": "DeletePrompt",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "promptId",
+            "description": "The AI model prompt ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successfully deleted."
+          },
+          "400": {
+            "description": "Bad request. Prompt ID is not a valid GUID."
+          },
+          "401": {
+            "description": "Unauthorized."
+          },
+          "404": {
+            "description": "Not found. M365 Copilot workflows environment could not be resolved."
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "DsrFlowRunsResponse": {
+      "description": "Response containing flow run action history for DSR export.",
+      "type": "object",
+      "properties": {
+        "flowId": {
+          "description": "The workflow ID.",
+          "type": "string"
+        },
+        "value": {
+          "description": "List of flow run data entries.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DsrFlowRunData"
+          }
+        },
+        "nextLink": {
+          "description": "URL to retrieve the next page of results, if available.",
+          "type": "string"
+        }
+      }
+    },
+    "DsrFlowRunData": {
+      "description": "Action event data for a single flow run.",
+      "type": "object",
+      "properties": {
+        "runId": {
+          "description": "The run ID.",
+          "type": "string"
+        },
+        "actionEvents": {
+          "description": "List of action events in the run.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ActionEvent"
+          }
+        }
+      }
+    },
+    "ActionEvent": {
+      "description": "An action event in a flow run. Type determines properties.",
+      "required": [
+        "type"
+      ],
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/TriggerEvent"
+        }
+      ],
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/ActionEventType"
+        }
+      },
+      "discriminator": "type"
+    },
+    "ActionEventBase": {
+      "description": "Common properties shared by all action event types.",
+      "required": [
+        "type"
+      ],
+      "type": "object",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/ActionEventType"
+        },
+        "time": {
+          "format": "date-time",
+          "description": "Timestamp of the event.",
+          "type": "string"
+        },
+        "actionId": {
+          "description": "Unique identifier for this action.",
+          "type": "string"
+        },
+        "previousActionIds": {
+          "description": "IDs of actions that preceded this one.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ActionEventType": {
+      "description": "The type of action event.",
+      "enum": [
+        "NotSpecified",
+        "Trigger",
+        "Thought",
+        "ConnectorActionStart",
+        "ConnectorActionEnd",
+        "ActionValidationResponse",
+        "ActionSuggestionRequest",
+        "Output"
+      ],
+      "type": "string"
+    },
+    "TriggerEvent": {
+      "description": "A trigger event that initiated the flow run.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ActionEventBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "$ref": "#/definitions/TriggerProperties"
+            }
+          }
+        }
+      ]
+    },
+    "TriggerProperties": {
+      "description": "Properties of a trigger event.",
+      "type": "object",
+      "properties": {
+        "inputs": {
+          "description": "Trigger input data.",
+          "type": "object"
+        },
+        "inputsLink": {
+          "$ref": "#/definitions/LinkProperties"
+        }
+      }
+    },
+    "ThoughtEvent": {
+      "description": "A thought event representing agent reasoning.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ActionEventBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "$ref": "#/definitions/ThoughtProperties"
+            }
+          }
+        }
+      ]
+    },
+    "ThoughtProperties": {
+      "description": "Properties of a thought event.",
+      "type": "object",
+      "properties": {
+        "text": {
+          "description": "The text content of the thought.",
+          "type": "string"
+        },
+        "images": {
+          "description": "Base64-encoded images associated with the thought.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Base64ThoughtImage"
+          }
+        }
+      }
+    },
+    "Base64ThoughtImage": {
+      "description": "A base64-encoded image associated with a thought.",
+      "type": "object",
+      "properties": {
+        "contentType": {
+          "description": "MIME type of the image.",
+          "type": "string"
+        },
+        "format": {
+          "description": "Encoding format. Always base64.",
+          "enum": [
+            "base64"
+          ],
+          "type": "string"
+        },
+        "data": {
+          "description": "Base64-encoded image data.",
+          "type": "string"
+        }
+      }
+    },
+    "ConnectorActionStartEvent": {
+      "description": "Event marking the start of a connector action execution.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ActionEventBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "$ref": "#/definitions/ConnectorActionStartProperties"
+            },
+            "runningActionType": {
+              "$ref": "#/definitions/RunningActionType"
+            }
+          }
+        }
+      ]
+    },
+    "ConnectorActionStartProperties": {
+      "description": "Properties of a connector action start event.",
+      "type": "object",
+      "properties": {
+        "action": {
+          "$ref": "#/definitions/ActionProperties"
+        },
+        "inputs": {
+          "description": "Input data for the connector action.",
+          "type": "object"
+        },
+        "inputsLink": {
+          "$ref": "#/definitions/LinkProperties"
+        },
+        "validation": {
+          "$ref": "#/definitions/ValidationProperties"
+        }
+      }
+    },
+    "ValidationProperties": {
+      "description": "Validation requirements for a connector action.",
+      "type": "object",
+      "properties": {
+        "requiresInlineApproval": {
+          "description": "Whether the action requires inline user approval before execution.",
+          "type": "boolean"
+        }
+      }
+    },
+    "ConnectorActionEndEvent": {
+      "description": "Event marking the completion of a connector action execution.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ActionEventBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "$ref": "#/definitions/ConnectorActionEndProperties"
+            },
+            "synchronousOperationName": {
+              "description": "Name of the synchronous operation, if applicable.",
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "ConnectorActionEndProperties": {
+      "description": "Properties of a connector action end event.",
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/ActionStatus"
+        },
+        "outputs": {
+          "$ref": "#/definitions/ActionOutputProperties"
+        },
+        "responseMetadata": {
+          "$ref": "#/definitions/ResponseMetadataProperties"
+        },
+        "isRetryable": {
+          "description": "Whether the runtime can retry a failed action.",
+          "default": true,
+          "type": "boolean"
+        },
+        "errorCode": {
+          "description": "Error code from the failed operation, if available.",
+          "type": "string"
+        }
+      }
+    },
+    "ActionValidationResponseEvent": {
+      "description": "Event representing a user validation response to an action requiring approval.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ActionEventBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "$ref": "#/definitions/ActionValidationResponseProperties"
+            }
+          }
+        }
+      ]
+    },
+    "ActionValidationResponseProperties": {
+      "description": "Properties of an action validation response event.",
+      "type": "object",
+      "properties": {
+        "response": {
+          "$ref": "#/definitions/ActionResponse"
+        }
+      }
+    },
+    "ActionSuggestionRequestEvent": {
+      "description": "Event representing an action suggestion from the agent.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ActionEventBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "$ref": "#/definitions/ActionSuggestionRequestProperties"
+            }
+          }
+        }
+      ]
+    },
+    "ActionSuggestionRequestProperties": {
+      "description": "Properties of an action suggestion request event.",
+      "type": "object",
+      "properties": {
+        "action": {
+          "$ref": "#/definitions/ActionProperties"
+        }
+      }
+    },
+    "FlowOutputEvent": {
+      "description": "Event representing the final output of the flow run.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ActionEventBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "$ref": "#/definitions/FlowOutputProperties"
+            }
+          }
+        }
+      ]
+    },
+    "FlowOutputProperties": {
+      "description": "Properties of a flow output event.",
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/RunStatus"
+        },
+        "body": {
+          "$ref": "#/definitions/BodyProperties"
+        }
+      }
+    },
+    "ActionProperties": {
+      "description": "Identifies the connector action being invoked.",
+      "type": "object",
+      "properties": {
+        "api": {
+          "$ref": "#/definitions/ApiProperties"
+        },
+        "connection": {
+          "$ref": "#/definitions/ConnectionProperties"
+        },
+        "operation": {
+          "$ref": "#/definitions/OperationProperties"
+        },
+        "serverName": {
+          "description": "Name of the server handling the action.",
+          "type": "string"
+        },
+        "isA2aServerCall": {
+          "description": "Whether this is an agent-to-agent server call.",
+          "type": "boolean"
+        }
+      }
+    },
+    "ApiProperties": {
+      "description": "Identifies the API for a connector action.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "APIM API name in the environment.",
+          "type": "string"
+        },
+        "logicalName": {
+          "description": "Name of the managed connector in Dataverse, if applicable.",
+          "type": "string"
+        }
+      }
+    },
+    "ConnectionProperties": {
+      "description": "Connection details for a connector action.",
+      "type": "object",
+      "properties": {
+        "connectionId": {
+          "description": "APIM connection ID.",
+          "type": "string"
+        },
+        "connectionReferenceLogicalName": {
+          "description": "The corresponding connection reference in Dataverse.",
+          "type": "string"
+        }
+      }
+    },
+    "OperationProperties": {
+      "description": "Identifies the specific operation within a connector.",
+      "type": "object",
+      "properties": {
+        "operationId": {
+          "description": "The connector operation ID.",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "Display name of the operation.",
+          "type": "string"
+        }
+      }
+    },
+    "LinkProperties": {
+      "description": "Reference to content stored externally.",
+      "type": "object",
+      "properties": {
+        "contentSize": {
+          "format": "int64",
+          "description": "Size of the linked content in bytes.",
+          "type": "integer"
+        },
+        "uri": {
+          "description": "URI of the linked content.",
+          "type": "string"
+        }
+      }
+    },
+    "ActionOutputProperties": {
+      "description": "Output data from a connector action.",
+      "type": "object",
+      "properties": {
+        "statusCode": {
+          "description": "HTTP status code of the connector response.",
+          "type": "integer"
+        },
+        "headers": {
+          "description": "Response headers from the connector.",
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "body": {
+          "$ref": "#/definitions/BodyProperties"
+        }
+      }
+    },
+    "BodyProperties": {
+      "description": "Body content of an action output.",
+      "type": "object",
+      "properties": {
+        "contentLength": {
+          "format": "int64",
+          "description": "Length of the body content in bytes.",
+          "type": "integer"
+        },
+        "contentType": {
+          "description": "MIME type of the body content.",
+          "type": "string"
+        },
+        "category": {
+          "$ref": "#/definitions/ContentTypeCategory"
+        },
+        "value": {
+          "description": "The body content. Structure varies by content type."
+        },
+        "valueLink": {
+          "description": "URL to retrieve the body content if not inlined.",
+          "type": "string"
+        },
+        "fileName": {
+          "description": "File name, if the body represents a file.",
+          "type": "string"
+        }
+      }
+    },
+    "ResponseMetadataProperties": {
+      "description": "Metadata extracted from a connector action response.",
+      "type": "object",
+      "properties": {
+        "sensitivityLabel": {
+          "$ref": "#/definitions/SensitivityLabelProperties"
+        }
+      }
+    },
+    "SensitivityLabelProperties": {
+      "description": "Sensitivity label information from a connector response.",
+      "type": "object",
+      "properties": {
+        "sensitivityLabelId": {
+          "description": "Unique identifier of the sensitivity label.",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "Display name of the sensitivity label.",
+          "type": "string"
+        },
+        "tooltip": {
+          "description": "Tooltip text for the sensitivity label.",
+          "type": "string"
+        },
+        "priority": {
+          "description": "Priority of the sensitivity label.",
+          "type": "integer"
+        },
+        "color": {
+          "description": "Color associated with the sensitivity label.",
+          "type": "string"
+        },
+        "isEncrypted": {
+          "description": "Whether the labeled content is encrypted.",
+          "type": "boolean"
+        }
+      }
+    },
+    "ActionStatus": {
+      "description": "Status of a connector action execution.",
+      "enum": [
+        "NotSpecified",
+        "Succeeded",
+        "Failed"
+      ],
+      "type": "string"
+    },
+    "RunStatus": {
+      "description": "Status of the flow run.",
+      "enum": [
+        "NotSpecified",
+        "Running",
+        "Succeeded",
+        "Failed",
+        "Canceled",
+        "Waiting",
+        "FailedWithRetry"
+      ],
+      "type": "string"
+    },
+    "ActionResponse": {
+      "description": "User response to an action validation request.",
+      "enum": [
+        "NotSpecified",
+        "Approved",
+        "Rejected",
+        "Pending"
+      ],
+      "type": "string"
+    },
+    "RunningActionType": {
+      "description": "Execution model of the connector action.",
+      "enum": [
+        "NotSpecified",
+        "Synchronous",
+        "Webhook"
+      ],
+      "type": "string"
+    },
+    "ContentTypeCategory": {
+      "description": "Category of the body content type.",
+      "enum": [
+        "NotSpecified",
+        "Text",
+        "Json",
+        "Other"
+      ],
+      "type": "string"
+    },
+    "DsrConversationTranscriptsResponse": {
+      "description": "Response containing conversation transcripts for DSR export.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "List of conversation transcripts.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ConversationTranscript"
+          }
+        },
+        "nextLink": {
+          "description": "URL to retrieve the next page of results, if available.",
+          "type": "string"
+        }
+      }
+    },
+    "ConversationTranscript": {
+      "description": "A single conversation transcript record.",
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "description": "The tenant ID.",
+          "type": "string"
+        },
+        "objectId": {
+          "description": "The user object ID.",
+          "type": "string"
+        },
+        "timestamp": {
+          "format": "date-time",
+          "description": "Timestamp of the conversation.",
+          "type": "string"
+        },
+        "serviceRequestCorrelationId": {
+          "description": "Service request correlation ID for tracing.",
+          "type": "string"
+        },
+        "requestCorrelationId": {
+          "description": "Request correlation ID for tracing.",
+          "type": "string"
+        },
+        "systemMetadata": {
+          "$ref": "#/definitions/ConversationTranscriptSystemMetadata"
+        },
+        "request": {
+          "$ref": "#/definitions/ConversationTranscriptRequest"
+        },
+        "response": {
+          "$ref": "#/definitions/ConversationTranscriptResponse"
+        }
+      }
+    },
+    "ConversationTranscriptSystemMetadata": {
+      "description": "System metadata for a conversation transcript.",
+      "type": "object",
+      "properties": {
+        "scenario": {
+          "$ref": "#/definitions/ConversationTranscriptScenario"
+        }
+      }
+    },
+    "ConversationTranscriptScenario": {
+      "description": "The scenario under which the conversation occurred.",
+      "enum": [
+        "WorkflowsAgentRuntime",
+        "WorkflowsAgentAuthoring"
+      ],
+      "type": "string"
+    },
+    "ConversationTranscriptRequest": {
+      "description": "The request portion of a conversation transcript.",
+      "type": "object",
+      "properties": {
+        "messages": {
+          "description": "Messages in the conversation request.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ConversationTranscriptMessage"
+          }
+        },
+        "tools": {
+          "description": "Tools available during the conversation.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ConversationTranscriptTool"
+          }
+        },
+        "toolChoice": {
+          "description": "The tool choice strategy.",
+          "type": "string"
+        }
+      }
+    },
+    "ConversationTranscriptResponse": {
+      "description": "The response portion of a conversation transcript.",
+      "type": "object",
+      "properties": {
+        "completions": {
+          "description": "Completions generated by the model.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ConversationTranscriptCompletion"
+          }
+        },
+        "succeeded": {
+          "description": "Whether the response was successful.",
+          "type": "boolean"
+        }
+      }
+    },
+    "ConversationTranscriptMessage": {
+      "description": "A message in the conversation.",
+      "type": "object",
+      "properties": {
+        "role": {
+          "description": "Role of the message sender (e.g. user, assistant, system, tool).",
+          "type": "string"
+        },
+        "content": {
+          "description": "Text content of the message.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the message sender, if applicable.",
+          "type": "string"
+        },
+        "isCustomerContent": {
+          "description": "Whether this message contains customer content.",
+          "type": "boolean"
+        },
+        "toolCalls": {
+          "description": "Tool calls made in this message.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ConversationTranscriptToolCall"
+          }
+        },
+        "toolCallId": {
+          "description": "ID of the tool call this message is responding to.",
+          "type": "string"
+        }
+      }
+    },
+    "ConversationTranscriptCompletion": {
+      "description": "A completion generated in the conversation response.",
+      "type": "object",
+      "properties": {
+        "text": {
+          "description": "Generated text content.",
+          "type": "string"
+        },
+        "finishReason": {
+          "description": "Reason the completion finished (e.g. stop, tool_calls).",
+          "type": "string"
+        },
+        "toolCalls": {
+          "description": "Tool calls requested by the completion.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ConversationTranscriptToolCall"
+          }
+        }
+      }
+    },
+    "ConversationTranscriptToolCall": {
+      "description": "A tool call within a conversation.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the tool call.",
+          "type": "string"
+        },
+        "type": {
+          "description": "Type of the tool call.",
+          "type": "string"
+        },
+        "function": {
+          "$ref": "#/definitions/ConversationTranscriptFunction"
+        }
+      }
+    },
+    "ConversationTranscriptFunction": {
+      "description": "Function details of a tool call.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Name of the function called.",
+          "type": "string"
+        },
+        "arguments": {
+          "description": "JSON-encoded arguments passed to the function.",
+          "type": "string"
+        }
+      }
+    },
+    "ConversationTranscriptTool": {
+      "description": "A tool available during the conversation.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "Type of the tool.",
+          "type": "string"
+        },
+        "function": {
+          "$ref": "#/definitions/ConversationTranscriptToolFunction"
+        }
+      }
+    },
+    "ConversationTranscriptToolFunction": {
+      "description": "Function definition of a tool.",
+      "type": "object",
+      "properties": {
+        "description": {
+          "description": "Description of what the function does.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the function.",
+          "type": "string"
+        },
+        "parameters": {
+          "description": "JSON Schema defining the function parameters.",
+          "type": "object"
+        }
+      }
+    },
+    "DsrPagedResponse": {
+      "description": "Generic paged response for DSR compliance APIs.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "Collection of records. Structure varies by resource type.",
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "nextLink": {
+          "description": "URL to retrieve the next page of results, if available.",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "scopes": {
+        ".default": ".default"
+      },
+      "description": "Microsoft Entra ID OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [
+        ".default"
+      ]
+    }
+  ]
+}

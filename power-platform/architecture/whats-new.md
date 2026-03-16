@@ -86,12 +86,6 @@ Other updates:
 
 - [Contributors guide](contribute.md) for external contributions
 
-## June 2025
-
-New reference architecture:
-
-- [Use an autonomous agent in Copilot Studio for document processing](reference-architectures/document-processing-agent.md)
-
 ## April 2025
 
 Welcome to the initial launch of the Power Platform and Copilot Studio Architecture Center.
