@@ -11,7 +11,13 @@ ms.reviewer: sericks
 
 # Elastic compute for finance and operations apps
 
-Finance and operations apps in unified environments use **elastic compute** to provide flexible and scalable compute power. Instead of the fixed-size environment tiers that were available in Microsoft Dynamics 365 Lifecycle Services, environments now automatically scale up or down based on actual usage. This approach gives customers the right amount of compute power when they need it, without manual intervention or environment resizing.
+Finance and operations apps in unified environments use **elastic compute** to provide flexible and scalable compute power. Instead of selecting a fixed-size environment tier at purchase time, all your sandbox and production environments now draw from a shared capacity pool and **automatically scale based on actual usage**.
+
+This means:
+
+- **Sandbox and production environments get the same performance model.** Performance testing in a sandbox reflects what you can expect in production—no more guessing across tiers.
+- **You don't pick a tier.** Your compute capacity is determined by your Power Platform Request (PPR) entitlement and scales automatically.
+- **Adding capacity is simple.** Purchase more PPR to increase your compute ceiling, or add storage to create more environments—no contract amendments or support tickets required.
 
 ## How elastic compute works
 
@@ -21,7 +27,7 @@ AOS instances are **stateful** and hold user session state in memory. Requests a
 
 Because AOS instances hold session state in memory, scaling up and scaling down behave differently. Adding new AOS instances (scale-up) is seamless and doesn't disrupt active users. However, removing AOS instances (scale-down) requires draining active sessions, so it's reserved for planned maintenance windows or customization deployments, where a natural downtime already occurs. This approach ensures that users never experience unexpected session loss due to a scale-down event.
 
-An environment supports a maximum of **80 AOS instances** total. This limit is split between interactive AOS instances that serve user requests and batch processor AOS instances that handle background jobs.
+An environment supports a maximum of **80 AOS instances** total, split between up to 40 interactive AOS instances that serve user requests and up to 40 batch processor AOS instances that handle background jobs.
 
 ## Deploy to the middle
 
@@ -68,53 +74,41 @@ PPR accrues to your tenant in three ways:
 | Per-user license accrual | 5,000 PPR per license | Each assigned user license contributes to the tenant's total PPR pool |
 | Add-on packs | 50,000 PPR per pack | Purchased from the [Microsoft 365 admin center](https://admin.microsoft.com) |
 
-### Example: Impact of user licenses on PPR and AOS capacity
+### Minimum and maximum AOS
 
-The following tables show how PPR accrues and translates to AOS capacity for two typical customer sizes.
+Every sandbox and production environment is provisioned with a **minimum of 2 AOS instances** (1 interactive, 1 batch) regardless of available PPR. This ensures the environment is functional and provides basic redundancy. The **maximum is 80 AOS instances** (40 interactive, 40 batch).
 
-**Small customer: 20 user licenses (minimum purchase)**
+### Example: PPR and AOS at different scales
 
-| Component | Calculation | PPR |
-|-----------|-------------|-----|
-| Tenant-wide base | — | 500,000 |
-| Per-user license accrual | 20 &times; 5,000 | 100,000 |
-| **Total from licenses** | | **600,000** |
-| **AOS from PPR** | 600,000 &divide; 650,000 | **&lt; 1 AOS** from PPR alone |
+The following table shows how PPR accrues and translates to AOS capacity across a range of customer sizes. Each row includes only licenses and the tenant-wide base—add-on packs can increase the total further.
 
-Every sandbox and production environment is provisioned with a **minimum of 2 AOS instances** regardless of available PPR. This ensures the environment is functional and provides basic redundancy. To double their AOS capacity to 4 AOS, this customer could purchase add-on PPR packs.
+| User licenses | PPR calculation | Total PPR | AOS capacity |
+|---------------|-----------------|-----------|--------------|
+| 20 (minimum) | 500K + (20 &times; 5K) | 600,000 | 2 AOS (floor) |
+| 100 | 500K + (100 &times; 5K) | 1,000,000 | 2 AOS |
+| 250 | 500K + (250 &times; 5K) | 1,750,000 | 2 AOS |
+| 500 | 500K + (500 &times; 5K) | 3,000,000 | 4 AOS |
+| 1,000 | 500K + (1,000 &times; 5K) | 5,500,000 | 8 AOS |
+| 2,500 | 500K + (2,500 &times; 5K) | 13,000,000 | 20 AOS |
+| 5,000 | 500K + (5,000 &times; 5K) | 25,500,000 | 39 AOS |
+| 10,000+ | 500K + (10,000 &times; 5K) | 50,500,000 | 77 AOS |
 
-| Component | Calculation | PPR |
-|-----------|-------------|-----|
-| Total from licenses | | 600,000 |
-| Add-on packs purchased | 14 packs &times; 50,000 | 700,000 |
-| **New total PPR** | | **1,300,000** |
-| **New AOS capacity** | 1,300,000 &divide; 650,000 | **2 additional AOS** beyond baseline (4 AOS total) |
+If the PPR formula yields fewer than 2 AOS, the environment still receives the 2 AOS minimum. If it yields more than 80, the environment is capped at 80.
 
-**Large customer: 500 user licenses**
+### Increasing capacity with add-on packs
 
-| Component | Calculation | PPR |
-|-----------|-------------|-----|
-| Tenant-wide base | — | 500,000 |
-| Per-user license accrual | 500 &times; 5,000 | 2,500,000 |
-| **Total from licenses** | | **3,000,000** |
-| **AOS from PPR** | 3,000,000 &divide; 650,000 | **~4 additional AOS** beyond baseline (6 AOS total) |
+If your license-based PPR doesn't provide enough AOS capacity, you can purchase **add-on packs of 50,000 PPR each** from the [Microsoft 365 admin center](https://admin.microsoft.com). For example, a customer with 20 licenses (600,000 PPR) could purchase 14 add-on packs (700,000 PPR) to reach 1,300,000 total PPR—enough for 2 AOS from PPR, which combined with the 2 AOS minimum gives 4 AOS total.
 
-With the minimum of 2 AOS plus ~4 AOS of PPR-based headroom, this customer starts with 6 AOS. To double their total capacity to 12 AOS, this customer could purchase add-on packs.
+These totals determine the compute capacity available for elastic scaling across all finance and operations environments in the tenant.
 
-| Component | Calculation | PPR |
-|-----------|-------------|-----|
-| Total from licenses | | 3,000,000 |
-| Add-on packs purchased | 70 packs &times; 50,000 | 3,500,000 |
-| **New total PPR** | | **6,500,000** |
-| **New AOS capacity** | 6,500,000 &divide; 650,000 | **10 additional AOS** beyond baseline (12 AOS total) |
+### PPR serves two purposes
 
-Add-on packs of 50,000 PPR each are available from the [Microsoft 365 admin center](https://admin.microsoft.com). These totals determine the compute capacity available for elastic scaling across all finance and operations environments in the tenant.
+PPR plays two distinct roles, and it's important to understand both:
 
-### Relationship between PPR and scaling
+1. **Capacity entitlement.** PPR determines how many AOS instances your environments can scale to, as described in this article.
+2. **Request throttling limit.** PPR also governs throttling limits for Power Platform operations such as Dataverse calls, plug-ins, and flows.
 
-Although PPR governs compute capacity, it's important to understand the distinction between **PPR as a capacity entitlement** and **PPR as a request throttling limit** for Power Platform operations such as Dataverse calls, plugins, and flows.
-
-Heavy Power Platform usage that generates requests through Dataverse virtual tables into finance and operations apps can increase demand on AOS instances. This demand can trigger elastic scale-up. However, increasing compute capacity doesn't increase Power Platform request limits, and increasing request limits doesn't guarantee additional compute beyond what the elastic scaling model provides.
+These roles are related but independent. Purchasing more PPR increases your AOS compute ceiling *and* raises your Power Platform request limits. However, heavy Dataverse traffic through virtual tables into finance and operations apps can trigger elastic scale-up to handle the load, even though the request limits themselves are a separate mechanism.
 
 ## Unified Developer Environments
 
@@ -124,24 +118,27 @@ For development and testing workloads that require multiple AOS instances, use a
 
 ## Key differences from Lifecycle Services
 
-In Lifecycle Services, sandbox environments were available as fixed tiers—Tier 2, Tier 3, Tier 4, and Tier 5—each with progressively more compute resources. Customers had to select a tier at purchase time, often through their Enterprise Agreement or Cloud Solution Provider (CSP), and changing tiers later required contract amendments. This created significant **operational friction** when customers realized they needed more (or less) compute than they originally purchased. Production environments also had a set of tiers behind the scenes, but this sizing was never fully transparent to customers.
+In Lifecycle Services, environments were tied to fixed tiers and purchased as individual slots. This model created friction in three areas:
 
-This mismatch between sandbox and production tiers led to a critical expectation gap. Customers who performed performance testing in a Tier 2 sandbox often saw dramatically different results in production, because the underlying compute resources didn't match. There was no reliable way to predict production performance from sandbox testing.
+- **Tier lock-in.** Sandbox environments came in fixed tiers (Tier 2–5), each with progressively more compute. Customers selected a tier at purchase time through their Enterprise Agreement or Cloud Solution Provider, and changing tiers later required contract amendments.
+- **Sandbox/production performance gap.** Production environments had different tiers and compute profiles than sandboxes. Performance testing in a Tier 2 sandbox couldn't reliably predict production behavior, because the underlying resources didn't match.
+- **Scaling required support.** To get more compute within a tier, customers had to open support tickets and escalate. To get a second production environment, they needed to create a new Lifecycle Services project with a separate license minimum.
 
-In unified environments, **all sandbox and production environments get equal maximum scale** for a given customer tenant. The elastic compute model ensures that the same PPR-based capacity pool applies across all environments. This means customers who performance-test in a sandbox environment see **relative performance comparable to what they can expect in production**, closing the expectation gap that existed in Lifecycle Services.
+In unified environments, these constraints are eliminated. **All sandbox and production environments draw from the same PPR-based capacity pool.** Performance testing in a sandbox reflects what you can expect in production, because both environment types share the same elastic compute model and maximum scale.
 
 The following table summarizes the key differences.
 
 | Aspect | Lifecycle Services | Unified environments |
 |--------|-------------------|----------------------|
-| Sandbox sizing | Fixed tiers (Tier 2–5) selected at purchase | Elastic, scales automatically based on PPR capacity |
-| Production sizing | Fixed tiers, not fully transparent to customers | Elastic, same capacity model as sandbox |
-| Sandbox vs. production parity | Different tiers led to performance expectation gaps | Equal maximum scale ensures consistent performance testing |
-| Changing compute capacity | Required EA or CSP contract amendments | Purchase PPR add-on packs from the Microsoft 365 admin center |
-| Scaling | Manual tier change with downtime | Automatic scale-up (no downtime), scale-down during maintenance windows |
-| Capacity model | Environment slots purchased up front | PPR-based capacity pool shared across environments |
-| Maximum AOS per environment | Varied by tier | Up to 80 AOS instances (interactive + batch) |
-| Developer environments | All-in-one Azure VMs | UDE with single AOS instance |
+| Compute model | Fixed tiers selected at purchase time | Elastic, scales automatically based on PPR |
+| Sandbox = production? | No—different tiers, different SQL, different AOS counts | Yes—same capacity model and maximum scale |
+| Changing capacity | EA/CSP contract amendments or support tickets | Purchase PPR add-on packs from the Microsoft 365 admin center |
+| Scaling behavior | Manual tier change with downtime | Automatic scale-up (no downtime), scale-down during maintenance |
+| Creating environments | Purchase addon slots per tier | Available storage (1 GB required) |
+| Multiple production environments | Required a new Lifecycle Services project | Provision directly from the tenant capacity pool |
+| Performance testing reliability | Sandbox tier mismatch made results unreliable | Sandbox and production share the same compute ceiling |
+| Maximum AOS per environment | Varied by tier (3–12 AOS) | Up to 80 AOS instances (40 interactive + 40 batch) |
+| Developer environments | Cloud-hosted Azure VMs | Unified Developer Environments with single AOS instance |
 
 ## Related content
 
