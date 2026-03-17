@@ -52,38 +52,22 @@ There are two places in customer engagement apps where you can create a [!INCLUD
 
     4. On the Environments page, go to the command bar and select **Settings**.
     1. Expand **Templates**, then select **Document templates**.
-    1. In Microsoft Dynamics 365, go to the command bar and select **New** to open the *Create template from CRM data* dialog box.
+    1. In the **Available Templates View** page, go to the command bar and select **New** to open the *Create template from Dynamics 365 data* dialog box.
+    2. In the **Create template from Dynamics 365 data** dialog, select **Word Template**.
+    3. Select the entity for which you want to create the template and then select **Select Entity**.
+    4. Specify the entity relationships that you want to use in the template. For example, if you select the Account entity, you can specify 1:N relationship to the Contact entity to include contact information in the template.
+
 
 - **From a list of records**. For example:
 
     1. Sign in to the **Sales Hub** app.
     1. In the navigation pane, select **Opportunities**.
-    1. From the grid view selector in the command bar, select **My Open Opportunities** to display a list of records.
-    1. In the list, select **[!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Templates**, then select **Create [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Template** to open the *Create template from CRM data* dialog box.
+    1. Open any opportunity. On the command bar, select **Word Templates** > **View All My Templates**.
+    2. In the **Personal Documents View** page, select **New** > **Download to Create Word Template**.
+    3. Select the entity for which you want to create the template.
+    4. 
 
-   ![Create a Word template from an entity.](../admin/media/word-template-create-from-entity.png "Create a Word template from an entity")  
 
-> [!TIP]
-> To delete personal document templates, follow these steps:  
->
-> 1. Select **Advanced Find** (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button.PNG "Screen shot of Advanced Find button")).  
-> 1. For *Look for*, select **Personal Document Templates**.  
-> 1. Select **Results** (!).  
-> 1. Choose the personal document template to delete and then select **Delete** (![Delete button.](../admin/media/nb-ua-r1-trashbin.png "Delete button")).  
->
-> To update templates, delete the template and then upload an updated version.
-
-In the *Create template from CRM data* dialog box:
-
-1. Select **[!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Template**.
-1. Choose an entity to filter with.
-1. Select **Select Entity** to open the *Select Entity* dialog box.  
-
- ![Choose Word Template and select entity.](../admin/media/word-template-select-entity.png "Choose Word Template and select entity")  
-
- In the *Select Entity* dialog box you configure the entity relationships.
-
- ![Select entities for the Word template.](../admin/media/word-template-select-entities.png "Select entities for the Word template")  
 
 ### What are 1:N, N:1, and N:N relationships?
 
