@@ -1,10 +1,10 @@
 ---
-title: Move data across regions for Copilots and generative AI features
+title: Move data across regions for Copilots, AI agents, and generative AI features
 description: Learn how to turn on data movement across regions for Copilots and generative AI features.
 author: mikferland-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/09/2025
+ms.date: 03/10/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: miferlan
@@ -37,7 +37,7 @@ ms.contributors:
   - nitemp
 ---
 
-# Move data across regions for Copilots and generative AI features
+# Move data across regions for Copilots, AI agents, and generative AI features
 
 Copilots and generative AI features aren't available in all regions and languages. In some cases, even where there's some in region capacity, data may still have to move outside of the region for availability reasons or because certain features depend on other capacity or Microsoft services. For this reason and depending on where your environment is hosted and what features you use, you might need to allow data movement across regions to use Copilots and generative AI features. This article explains how to do that.
 
