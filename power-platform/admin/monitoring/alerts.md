@@ -1,5 +1,5 @@
 ---
-title: Create alerts for your resources (preview)
+title: Create alerts for your resources
 description: Learn more about how to create alerts to track and monitor the operational health of your resources in Power Platform.
 ms.subservice: admin
 ms.component: pa-admin
@@ -12,9 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Create alerts for your resources (preview)
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Create alerts for your resources
 
 Tenant and environment admins in Power Platform use _alerts_ to track the operational health of their resources. Admins set up custom thresholds and get notifications when metrics for their resources pass specific thresholds. Create alerts on any metrics in the **Monitor** area of the Power Platform admin center.
 
@@ -23,8 +21,6 @@ Keep the following principles in mind:
 -	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the **Monitor** area is evaluated every 24 hours after the newest 24-hour aggregates are produced. An alert rule does an on-demand evaluation upon its creation.
 - Alert rules are alerts that admins create to monitor their resources. You can edit, delete, and turn an alert rule on or off. You can place alert rules on an environment and a specific resource.
 - A _triggered alert_ occurs when one or more of the resources that an alert rule monitors pass specific thresholds that the admin defines when configuring the alert rule. You can select the triggered alert to learn what resources triggered the alert rule, and get recommendations for how to improve the resources if it's in a Managed Environment. 
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## When to use alerts
 - Teams and admins use alerts to find resources that are used more than expected. For example, an admin creates an alert to know if apps in the default environment exceed 50 launches a day.
