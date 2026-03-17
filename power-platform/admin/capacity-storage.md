@@ -127,7 +127,7 @@ In the *add-ons* section, you can also select **Manage** to assign add-ons to en
 
 ### Dataverse tab
 
-On the Capacity page, select **Dataverse**. This page provides similar information as the summary tab, but with an environment-level view of where your organization is using capacity.
+On the Capacity page, select **Dataverse**. This page provides information similar to the summary tab, but with an environment-level view of where your organization is using capacity.
 
 > [!NOTE]
 > There's no technical limit on the size of a Dataverse environment. The limits mentioned on this page are entitlement limits based on product licenses you purchase.
@@ -136,13 +136,12 @@ This table highlights some of the features you can see on the Dataverse page.
 
 |Feature  |Description  |
 |---------|---------|
-|Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
-|Search     | Use **Search** to search by the environment name and the environment type.         |
+|Download     | Select **Download** above the list of environments to download an Excel .csv file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
+|Search     | Use **Search** to search by environment name and environment type.         |
 |Details  | Select the **Details** button (:::image type="icon" source="media/storage-data-details-button.png" border="false":::) to see  an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption.   |
 | Default environment tip | The calculated storage usage in this view only displays what is **above** the default environment's included capacity. Tool tips indicate how to view actual usage in the **Details** section. |
 
 > [!NOTE]
->
 > - The following environments don't count against capacity and show as 0 GB:
 >   - Microsoft Teams
 >   - Trial
@@ -152,7 +151,7 @@ This table highlights some of the features you can see on the Dataverse page.
 > - The default environment has the following included storage capacity: 3 GB Dataverse database capacity, 3 GB Dataverse file capacity, and 1 GB Dataverse log capacity.
 > - You can select an environment that's showing 0 GB and then go to its environment capacity analytics page to see the actual consumption.
 > - For the default environment, the list view shows the amount of capacity consumed beyond the included quota. Select the **Details** button (:::image type="icon" source="media/storage-data-details-button.png" border="false":::) to see usage.
-> - The capacity check - conducted before creating new environments - excludes the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
+> - The capacity check—conducted before creating new environments—excludes the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
 
 #### Environment storage capacity details
 
@@ -173,12 +172,12 @@ The following details are provided:
 
 ### Microsoft Teams tab
 
-On the Capacity page, select **Microsoft Teams**. This tab shows the capacity storage used by your Microsoft Teams environments. Teams environment capacity usage doesn't count towards your organization's Dataverse usage.
+On the Capacity page, select **Microsoft Teams**. This tab shows the capacity storage used by your Microsoft Teams environments. Teams environment capacity usage doesn't count toward your organization's Dataverse usage.
 
 |Feature  |Description  |
 |---------|---------|
-|Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
-|Search     | Use **Search** to search by the environment name and the environment type.         |
+|Download     | Select **Download** above the list of environments to download an Excel .csv file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
+|Search     | Use **Search** to search by environment name and environment type.         |
 
 ### Add-ons tab
 
@@ -189,24 +188,23 @@ On the Capacity page, select **Add-ons**. This tab shows your organization's add
 
 ### Trial tab
 
-On the Capacity page, select **Trial**. This tab shows the capacity storage used by your trial environments. Trial environment capacity usage doesn't count towards your organization's Dataverse usage.
+On the Capacity page, select **Trial**. This tab shows the capacity storage used by your trial environments. Trial environment capacity usage doesn't count toward your organization's Dataverse usage.
 
 |Feature  |Description  |
 |---------|---------|
-|Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
-|Search     | Use **Search** to search by the environment name and the environment type.         |
+|Download     | Select **Download** above the list of environments to download an Excel .csv file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
+|Search     | Use **Search** to search by environment name and environment type.         |
 
 ## Dataverse page in Licenses (preview)
 
 > [!IMPORTANT]
->
 > - This is a preview feature.
 > - Don't use preview features in production environments. Preview features might have restricted functionality. They're subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520). Microsoft makes preview features available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available in your region yet.
 
 ### Track tenant usage
 
-You can track and manage Dataverse capacity in the **Licenses** section of Power Platform admin center.
+You can track and manage Dataverse capacity in the **Licenses** section of the Power Platform admin center.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
@@ -250,13 +248,13 @@ In the **Consumption per table** section, you can view the amount of storage con
 
 In addition to database and file storage, Dataverse search includes the indexes that power different experiences. These indexes support search and generative AI across structured or tabular data and unstructured data stored in Dataverse, such as files.
 
-Storage consumed by Dataverse search is reported at the environment-level as a table called **DataverseSearch**. It was previously named **RelevanceSearch**.
+Storage consumed by Dataverse search is reported at the environment level as a table called **DataverseSearch**. It was previously named **RelevanceSearch**.
 
 #### Dataverse search can also be monitored at the Dataverse Environment report in the Power Platform admin center
 
-The Dataverse Environment report is located at **Licensing** > **Dataverse** > **Environments** tab (consumption per table reporting).
+The Dataverse Environment report is located at the **Licensing** > **Dataverse** > **Environments** tab (consumption per table reporting).
 
-#### How much does the indexed Dataverse search data cost?
+#### Cost of the indexed Dataverse search data
 
 All Dataverse indexes are reported at the Dataverse database capacity rate. Turning on Dataverse search doesn't turn on any other experience automatically. For more information, see [What is Dataverse search?](/power-apps/user/relevance-search-benefits)
 
@@ -285,7 +283,7 @@ When an environment's capacity consumption exceeds the preallocated capacity, yo
 
 Microsoft is making changes for what happens when an organization's storage capacity is close to or exceeds the capacity entitled or purchased through add-ons.
 
-Notifications for capacity approaching storage limits are triggered when any of the three storage capacities (database, file, or log) have less than 15% of space available. Another warning notification that admin operations could be impacted is sent when any of the three storage capacities have less than 5% of space available. The final tier of notification triggers when the tenant is "in overage" (storage usage exceeds capacity entitlements), which alerts the admin that the following operations aren't available until the overage is resolved:
+Notifications for capacity approaching storage limits are triggered when any of the three storage capacities (database, file, or log) have less than 15 percent of space available. Another warning notification that admin operations could be impacted is sent when any of the three storage capacities have less than 5 percent of space available. The final tier of notification triggers when the tenant is "in overage" (storage usage exceeds capacity entitlements), which alerts the admin that the following operations aren't available until the overage is resolved:
 
 - Create a new environment (requires minimum 1-GB capacity available)
 - Copy an environment
@@ -295,7 +293,7 @@ Notifications for capacity approaching storage limits are triggered when any of 
 - Add Dataverse database to an environment
 
 > [!NOTE]
-> The storage driven capacity model calculation of these thresholds also considers the overflow usage allowed in the storage driven model. For example, extra database capacity can be used to cover log and file overuse and extra log capacity can be used to cover file overuse. Therefore, overflow usage is taken into consideration to reduce the number of emails a tenant admin receives.
+> The storage-driven capacity model calculation of these thresholds also considers the overflow usage allowed in the storage-driven model. For example, extra database capacity can be used to cover log and file overuse and extra log capacity can be used to cover file overuse. Therefore, overflow usage is taken into consideration to reduce the number of emails a tenant admin receives.
 
 Tenant admins, Power Platform admins, and Dynamics 365 admins receive these notifications on a weekly basis. At this time, there's no option for a customer to opt out of these notifications or delegate these notifications to someone else. All admin types listed earlier automatically receive these notifications.
 
@@ -358,7 +356,7 @@ This tenant is 10 GB over in log usage but has 20 GB available in database capac
 
 You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, go to the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-</br>You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
+You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
 
 ## Frequently asked questions (FAQ)
 
@@ -374,9 +372,9 @@ As part of moving file-type data such as "Annotation" and "Attachment" out from 
 
 Database storage includes both the database rows and index files used to improve search performance. Indexes are created and optimized for peak performance. The system frequently updates them by analyzing data use patterns. No user action is needed to optimize the indexes, as all Dataverse stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes. Dataverse is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity. Common causes for an increase in index size are:
 
-- An organization makes use of new functionality. This functionality can be custom, out-of-the-box, or part of an update or solution installation.
+- An organization makes use of new functionality. This functionality can be custom, out of the box, or part of an update or solution installation.
 - Data volume or complexity changes.
-- A change in usage patterns that indicate new indexes need reevaluation.
+- A change in usage patterns that indicates new indexes need reevaluation.
 
 If you configure Quick Find lookups for data that's frequently used, this configuration also creates more indexes in the database. Admin-configured Quick Find values can increase the size of the indexes based on:
 
@@ -403,12 +401,12 @@ For more information, see [Managing Dataverse search](configure-relevance-search
 An admin can manage Dataverse search through the three states associated with this setting: On, Default, and Off. Learn more in [Configure Dataverse search for your environment](configure-relevance-search-organization.md).
 
 > [!NOTE]
->
-> - Dataverse search is set to **On** for any new production, sandbox, or default environment type. It's set to **Default** for any new other type of environment.
-> - If you turn on Dataverse search as **On** or **Default**, no other setting is turned on.
+> - Dataverse search is set to **On** for any new production, sandbox, or default environment type. It's set to **Default** for any other type of new environment.
+> - If you set Dataverse search to **On** or **Default**, no other setting is turned on.
 
 ### What actions can makers take?
-Depending on the experience that leverages Dataverse search and its usage, the consumption size might increase. Learn more in [What is Dataverse search?](/power-apps/user/relevance-search-benefits).
+
+Depending on the experience that leverages Dataverse search and its usage, the consumption size might increase. Learn more in [What is Dataverse search?](/power-apps/user/relevance-search-benefits)
   
 > [!IMPORTANT]
 > Don't turn off Dataverse search. Turning off Dataverse search directly impacts all dependent generative AI experiences in your different applications and all users using them.
@@ -426,11 +424,11 @@ Environment admins have 12 hours to turn the feature back on without losing inde
 **After 12 hours:**
 
 - The system permanently deletes all indexed Dataverse data.
-- Turning Dataverse search back on re-triggers the indexing of Dataverse data.
+- Turning Dataverse search back on retriggers the indexing of Dataverse data.
 
 > [!IMPORTANT]
 > Turning off Dataverse search deprovisions and removes the index within a period of 12 hours. If you turn on Dataverse search after it's been off for 12 hours, it provisions a fresh index that needs to go through a full sync. Syncing might take up to an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
-> Index removal (or provisioning) can take multiple days to complete, depending on the amount of Dataverse search consumption. For example, an organization with 10 GB of indexed data might take one day to clean up all indexes, while an organization with 500 GB might take multiple days to see it reflected in Dataverse search reporting. Please wait a few days or a week before submitting a support ticket, to ensure a complete removal of Dataverse search indexed data.
+> Index removal (or provisioning) can take multiple days to complete, depending on the amount of Dataverse search consumption. For example, an organization with 10 GB of indexed data might take one day to clean up all indexes, while an organization with 500 GB might take multiple days to see it reflected in Dataverse search reporting. You should wait a few days to a week before submitting a support ticket, to ensure a complete removal of Dataverse search indexed data.
 
 ### What happens if I turn off Dataverse search?
 
@@ -439,7 +437,7 @@ All experiences that use Dataverse search become limited. For more information, 
 ### Turning on Dataverse search again
 
 - **Selecting On**:
-    When you set Dataverse search to **On** after setting it to **Off**, the system immediately re-triggers all indexes across all enabled experiences for them to work accordingly, and Dataverse search costs resume.
+    When you set Dataverse search to **On** after setting it to **Off**, the system immediately retriggers all indexes across all enabled experiences for them to work accordingly, and Dataverse search costs resume.
 
 - **Selecting Default**:
     When you set Dataverse search to **Default** after setting it to **Off**, the system only regenerates the indexes when triggered. Examples include when a Copilot Studio agent uses a file&mdash;such as a local file, OneDrive file, SharePoint file upload, or Dataverse table&mdash;or if a prompt is submitted to an agent or Copilot. When the indexes are triggered, Dataverse search costs resume.
@@ -465,7 +463,7 @@ Yes. All environments consume 1 GB, regardless of whether they have an associate
 
 ### Do I get notified through email when my organization is over capacity?
 
-Yes, tenant admins receive email notifications on a weekly basis if their organization is at or over capacity. Additionally, tenant admins get notified when their organization reaches 15% of available capacity, and when their organization reaches 5% of available capacity.
+Yes, tenant admins receive email notifications on a weekly basis if their organization is at or over capacity. Additionally, tenant admins get notified when their organization reaches 15 percent of available capacity, and when their organization reaches 5 percent of available capacity.
 
 ### Why am I no longer getting storage notifications?
 
@@ -483,9 +481,9 @@ Not all licenses give per-user entitlement. For example, the Team Member license
 
 Default, production, and sandbox environments count for consumption. Trial, preview, support, and developer environments don't count.
 
-### What are tables ending in "- analytics" in my capacity report?
+### What are tables ending in "– analytics" in my capacity report?
 
-Tables ending in "– Analytics" are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights or analytics dashboards. The data is synched from Dataverse tables. Go to the section **More information** for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
+Tables ending in "– Analytics" are tables used by one or more Insights applications—for example, Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard—to generate predictive insights or analytics dashboards. The data is synched from Dataverse tables. Go to the section **More information** for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
 
 ### Why can't I see the Summary tab in my capacity report?
 
@@ -508,7 +506,7 @@ This change doesn't affect the overall capacity available at the tenant level. A
 
 ### What happens if capacity consumption goes beyond the allocated capacity?
 
-Currently, only *soft enforcement* through email notification is turned on. Admins (Power Platform admins and environment admins) start receiving notifications when capacity usage exceeds 85% of the allocated capacity.
+Currently, only *soft enforcement* through email notification is turned on. Power Platform admins and environment admins start receiving notifications when capacity usage exceeds 85 percent of the allocated capacity.
 
 ### What types of Dataverse capacity can be allocated?
 
