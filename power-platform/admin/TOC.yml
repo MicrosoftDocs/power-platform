@@ -1289,5 +1289,4 @@
           href: ../developer/index.yml
         - name: Guidance documentation
           href: ../guidance/index.yml
-        - name: Administer Power Platform and SAP documentation
-          href: ../sap/index.yml
+
