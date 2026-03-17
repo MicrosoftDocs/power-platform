@@ -26,6 +26,9 @@ ms.custom:
 - sfi-ga-nochange
 ---
 
+<!-- The URL in line 99 links back to this page. Is that correct? -->
+
+
 # Dataverse capacity-based storage details
 
 If you purchased storage after April 2019, or if you have a mix of storage purchases made before and after April 2019, you see your storage capacity entitlement and usage by database, file, and log as it appears in the Microsoft Power Platform admin center today.
@@ -428,6 +431,7 @@ Environment admins have 12 hours to turn the feature back on without losing inde
 
 > [!IMPORTANT]
 > Turning off Dataverse search deprovisions and removes the index within a period of 12 hours. If you turn on Dataverse search after it's been off for 12 hours, it provisions a fresh index that needs to go through a full sync. Syncing might take up to an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
+> 
 > Index removal (or provisioning) can take multiple days to complete, depending on the amount of Dataverse search consumption. For example, an organization with 10 GB of indexed data might take one day to clean up all indexes, while an organization with 500 GB might take multiple days to see it reflected in Dataverse search reporting. You should wait a few days to a week before submitting a support ticket, to ensure a complete removal of Dataverse search indexed data.
 
 ### What happens if I turn off Dataverse search?
