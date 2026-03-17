@@ -2,20 +2,20 @@
 title: SAP + Power Platform white paper
 description: Read this white paper to learn how Microsoft Power Platform supports SAP extensibility and what common Power Platform and SAP patterns exist.
 author: EllenWehrle
-ms.author: edleh
+ms.author: ellenwehrle
 contributors: 
 - tverhasselt
 - EllenWehrle
-- tbrazelton
 - dgalitsky
-- shnair
 - edlehman
+- haowusky
+ms.contributors:
+  - reubenk
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 11/03/2024
+ms.date: 03/17/2026
 ms.service: power-platform
 ms.subservice: sap
-ms.custom: ignite-2024
 ---
 
 # SAP + Power Platform white paper
