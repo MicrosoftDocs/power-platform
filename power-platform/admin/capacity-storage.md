@@ -30,7 +30,7 @@ ms.custom:
 
 If you purchased storage after April 2019, or if you have a mix of storage purchases made before and after April 2019, you see your storage capacity entitlement and usage by database, file, and log as it appears in the Microsoft Power Platform admin center today.
 
-Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organization. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
+Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
 
 > [!NOTE]
 > For licensing information, see the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
@@ -39,7 +39,7 @@ Data volume continues to grow exponentially as businesses advance their digital 
 
 ## Licenses for Microsoft Dataverse capacity-based storage model
 
-The following licenses provide capacity by using the new storage model. If you have any of these licenses, you see the new model report:
+The following licenses provide capacity by using the new storage model. You see the new model report if you have any of these licenses:
 
 - Dataverse for Apps Database Capacity
 - Dataverse for Apps File Capacity
@@ -59,13 +59,14 @@ To view the Capacity add-ons summary page, you need one of the following roles:
 - Tenant administrator
 - Power Platform administrator
 - Dynamics 365 administrator
+
 Alternatively, a user with any of the preceding roles can grant permissions to the environment administrator to view the **Capacity summary** tab within the **Tenant setting** page.
 
-Follow these steps to verify you have the Microsoft Dataverse capacity-based storage model:
+Follow these steps to verify that you have the Microsoft Dataverse capacity-based storage model:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Licensing**.
-1. In the Licensing pane, select **Capacity add-ons** to go to the Capacity add-ons summary page where you can see your tenant's storage, add-ons, and Microsoft Power Platform requests.
+1. On the navigation pane, select **Licensing**.
+1. On the Licensing pane, select **Capacity add-ons** to go to the Capacity add-ons summary page where you can see your tenant's storage, add-ons, and Microsoft Power Platform requests.
 
 Learn more in [Dataverse capacity-based storage overview](whats-new-storage.md).
 
@@ -92,7 +93,7 @@ In the *storage capacity usage* section, you can see:
   - Attachment
   - AnnotationBase
   - Any custom or out-of-the-box table that has columns of datatype file or image (full size)
-  - Any table that is used by one or more install Insights applications and [ends in - *Analytics*](capacity-storage.md)
+  - Any table used by one or more install Insights applications and that [ends in - *Analytics*](capacity-storage.md)
   - WebResourceBase
   - RibbonClientMetadataBase
 
@@ -108,7 +109,7 @@ In the *storage capacity usage* section, you can see:
 
 In the *storage capacity, by source* section, you can see:
 
-- **Org (tenant) default**: The default capacity given at the time of sign up
+- **Org (tenant) default**: The default capacity given at the time of sign-up
 - **User licenses**: More capacity added for every user license purchased
 - **Additional storage**: Any extra storage you bought
 - **Total**: Total storage available
@@ -121,6 +122,7 @@ In the *top storage usage, by environment* section, you can see the environments
 #### Add-ons
 
 In the *add-ons* section, you can see the details of add-ons that your organization purchased. Learn more at [View capacity add-ons in Power Platform admin center](capacity-add-on.md).
+
 In the *add-ons* section, you can also select **Manage** to assign add-ons to environments or **Download reports** to view a downloaded report. Add-on reports expire after 30 days.
 
 ### Dataverse tab
