@@ -42,7 +42,7 @@ You can create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] t
 
 ### Create a Word template from Power Platform admin center
 
-Access requires sufficient permissions, such as System Administrator or System Customizer role. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don't have the correct permissions, contact your system administrator.
+Access requires sufficient permissions, such as the System Administrator or System Customizer role. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don't have the correct permissions, contact your system administrator.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
