@@ -47,7 +47,7 @@ Access requires sufficient permissions, such as the System Administrator or Syst
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**. and choose an environment.
+1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment and then select **Settings** in the command bar.
 1. Expand **Templates**, and then select **Document templates**.
 1. In the **Available Templates View** page, go to the command bar and select **New** to open the **Create template from Dynamics 365** dialog box.
@@ -74,8 +74,8 @@ As a Dynamics 365 user, you can create a personal [!INCLUDE[pn_ms_Word_short](..
    :::image type="content" source="media/create-word-template-dynamics365.png" alt-text="Screenshot of the Download file to create a template dialog.":::
 1. Specify the entity relationships that you want to use in the template. For example, if you select the Account entity, you can specify 1:N relationship to the Contact entity to include contact information in the template. Learn more about relationships in [What are 1:N, N:1, and N:N relationships?](#what-are-1n-n1-and-nn-relationships)
    > [!NOTE]
-   >- The relationships you select on this screen determine what entities and fields are available later when you define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
-   >- Select only the relationships you need to add data to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
+   > - The relationships you select on this screen determine what entities and fields are available later when you define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
+   > - Select only the relationships you need to add data to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
 1. Select **Download** to download a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file on your local computer with the exported entity included as XML data.
    > [!IMPORTANT]
    > You can only use a document template in the environment where you downloaded it. Environment-to-environment migration for Word or Excel templates isn't supported.
@@ -213,9 +213,11 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 ### Upload the Word template from Power Platform admin center
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Open the environment where you want to upload the template.
-1. Go to **Settings** > **Templates** > **Document Templates**.  
-1. Select **Upload Template**.  
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment and then select **Settings** in the command bar.
+1. Select **Templates** > **Document Templates**.  
+1. On the **Available Templates View** page, select **Upload Template** in the command bar. 
 
 1. Drag the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file in the dialog box or browse to the file.  
 
