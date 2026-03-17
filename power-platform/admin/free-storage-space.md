@@ -82,7 +82,7 @@ Use the following methods to free up storage for each capacity type.
 
 ## Reduce file storage
 
-### Method 3: Remove email attachments using Advanced Find  
+### Method 1: Remove email attachments using Advanced Find  
   
 > [!WARNING]
 > If you delete this data, attachments are no longer available in customer engagement apps. However, if you saved attachments in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they're still there.
@@ -113,7 +113,7 @@ Use the following methods to free up storage for each capacity type.
   
    :::image type="content" source="media/free-storage-method3b.png" alt-text="Screenshot that shows the selected emails list based on a search criteria." lightbox="media/free-storage-method3b.png" :::
 
-### Method 4: Remove email messages with attachments using a bulk deletion job  
+### Method 2: Remove email messages with attachments using a bulk deletion job  
   
 > [!WARNING]
 > If you delete this data, attachments are no longer available in customer engagement apps. However, if you saved attachments in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they're still there.
@@ -164,7 +164,7 @@ Use the following methods to free up storage for each capacity type.
 
 14. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.
 
-### Method 5: Remove notes with attachments using Advanced Find  
+### Method 3: Remove notes with attachments using Advanced Find  
   
 > [!WARNING]
 > If you delete this data, notes and their associated attachments are no longer available in customer engagement apps.
@@ -197,7 +197,7 @@ Use the following methods to free up storage for each capacity type.
   
    :::image type="content" source="media/free-storage-method5c.png" alt-text="Screenshot that shows where the X icon is located on the Advanced Find tab." lightbox="media/free-storage-method5c.png":::
 
-### Method 6: Remove notes with attachments using a bulk deletion job  
+### Method 4: Remove notes with attachments using a bulk deletion job  
   
 > [!WARNING]
 > If you delete this data, notes and their associated attachments are no longer available in customer engagement apps.  
@@ -244,7 +244,7 @@ Use the following methods to free up storage for each capacity type.
   
 14. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.
 
-### Method 10: Delete audit logs - legacy process
+### Method 5: Delete audit logs - legacy process
 
  When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete audit logs to free space when they're no longer needed.  
   
@@ -272,7 +272,7 @@ Use the following methods to free up storage for each capacity type.
 > [!NOTE]
 > You can only delete the oldest audit log in the system. To delete more than one audit log repeat deleting the oldest available audit log until you have deleted enough logs.  
   
-### Method 10: Delete audit logs - new process
+### Method 6: Delete audit logs - new process
 
 > [!NOTE]
 > The system can take up to 72 hours to update storage information for the deletion of audit logs. After choosing to delete audit logs, we recommend waiting up to 72 hours and monitoring your storage to see avialable log capacity.
@@ -418,7 +418,7 @@ Some workflows enter a suspended state because there's a condition that can't be
   
 10. In the results list, open each item workflow to determine whether it can be safely deleted.
 
-### Method 7: Remove bulk duplicate detection jobs and associated copies of duplicate records  
+### Method 3: Remove bulk duplicate detection jobs and associated copies of duplicate records  
 
 Each time a duplicate detection job runs, the system stores a copy of each detected duplicate record as part of that job.
 
@@ -440,7 +440,7 @@ For example, if 100 duplicate records, every a duplicate detection job identifie
 
    :::image type="content" source="media/free-storage-method7a.png" alt-text="Screenshot that shows where the X icon is located in the Duplicate Detection Jobs window of Dynamic 365." lightbox="media/free-storage-method7a.png":::
 
-### Method 8: Delete bulk import instances using a bulk deletion job  
+### Method 4: Delete bulk import instances using a bulk deletion job  
 
 Each time you run a bulk import, the system creates a corresponding system job associated with that import. The system job details show which records were imported successfully and which records failed.  
   
@@ -491,7 +491,7 @@ Each time you run a bulk import, the system creates a corresponding system job a
 
 14. Choose **Next**, review the job details, and then select **Submit** to create the recurring job.
 
-### Method 9: Delete bulk deletion job instances using a bulk deletion job  
+### Method 5: Delete bulk deletion job instances using a bulk deletion job  
 
 When you delete bulk data, the system creates a bulk deletion system job. You can delete these jobs when they're no longer required.  
   
@@ -545,28 +545,28 @@ When you delete bulk data, the system creates a bulk deletion system job. You ca
 
 14. Select **Next**, review the job details, and then select **Submit** to create the recurring job.
 
-### Method 11: Remove unrequired tables and columns from Dataverse search
+### Method 6: Remove unrequired tables and columns from Dataverse search
 
 Tables and table fields enabled for Dataverse search affect database storage capacity.
 
 - To update the list of tables selected for Dataverse search results, refer to [Select tables for Dataverse search's global search](configure-relevance-search-organization.md#select-tables-for-dataverse-searchs-global-search).
 - To revise the list of fields selected for each table for Dataverse search results, refer to [Select searchable fields and filters for each table for global search](configure-relevance-search-organization.md#select-searchable-fields-and-filters-for-each-table-for-global-search).
 
-### Method 12: Remove unrequired data from activity tables
+### Method 7: Remove unrequired data from activity tables
 
 Activity tables store records for [activities](/power-apps/developer/data-platform/activity-entities) such as emails, appointments, tasks, calls, etc. To learn more about what data these tables contain, refer to [Activities data model and storage](/power-apps/developer/data-platform/activities-data-model-storage).
 
-### Method 13: Remove unrequired Activity Feeds records
+### Method 8: Remove unrequired Activity Feeds records
 
 These tables store post related records for [Activity Feeds](/dynamics365/customerengagement/on-premises/basics/stay-up-date-with-customer-news-with-activity-feed) functionality. To free storage space, you can delete any Post records that are no longer required.
 
-### Method 14: Modify Item Level Monitoring Settings
+### Method 9: Modify Item Level Monitoring Settings
 
 The ExchangeSyncIdMappingBase table stores references between Dynamics 365 records and their corresponding records in Microsoft Exchange. Server-Side Synchronization feature uses this table to sync emails, appointments, contacts, and tasks between Dynamics 365 and Microsoft Exchange.
 
 The system stores additional rows to help troubleshoot the synchronization of specific items. For more information, refer to [Troubleshoot item level Server-Side Synchronization issues with Microsoft Dynamics 365](/troubleshoot/dynamics-365/sales/troubleshoot-item-level-server-side-synchronization-issues). This article provides details regarding to reduce the default retention period (three days) for troubleshooting records or disable the feature entirely. Rows unrelated to this feature can't be deleted and are required for Appointment, Contact, and Task synchronization.
 
-### Method 15: Remove unrequired Alerts (trace logs)
+### Method 10: Remove unrequired Alerts (trace logs)
 
 The [Server-Side Synchronization](server-side-synchronization.md) feature logs alerts when events occur, such as mailbox errors or warnings. The system also logs informational alerts when you enable a mailbox. You can view these alerts when you view a Mailbox or Email Server profile within the Email Configuration area of Advanced Settings. While these records appear in a tab called **Alerts**, they're actually Trace records. 
 
