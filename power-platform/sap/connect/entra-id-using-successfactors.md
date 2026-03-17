@@ -13,7 +13,7 @@ contributors:
   - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 03/16/2026
+ms.date: 03/17/2026
 ms.service: power-platform
 ms.subservice: sap
 # Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID using SAP SuccessFactors so users can access SuccessFactors data using single sign-on (SSO).
@@ -23,7 +23,7 @@ ms.subservice: sap
 
 [This article is prerelease documentation and is subject to change.]
 
-This guide walks you through how to set up the Microsoft Entra ID using SAP SuccessFactors authentication method in the SAP OData connector for Power Platform. The goal is to enable token-based Single Sign-On (SSO) between Microsoft Entra ID and SAP SuccessFactors.
+This guide walks you through how to set up Microsoft Entra ID using the SAP SuccessFactors authentication method in the SAP OData connector for Power Platform. The goal is to enable token-based Single Sign-On (SSO) between Microsoft Entra ID and SAP SuccessFactors.
 
 ## Prerequisites
 
@@ -117,6 +117,8 @@ In short, you configure the apps on both sides, establish trust, match users, an
 ### Step 3: Create or update a user in SuccessFactors to map to a Microsoft Entra user
 
 Ensure the *Unique User Identifier* claim for the Microsoft Entra ID user is an exact one-to-one match with their SuccessFactors user alias.
+
+To learn how to configure SSO in SuccessFactors, see [Configure SuccessFactors SSO](/entra/identity/saas-apps/successfactors-tutorial#configure-successfactors-sso).
 
 
 ### Step 4: Update Microsoft Entra ID enterprise application
