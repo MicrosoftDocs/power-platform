@@ -51,11 +51,13 @@ Access requires sufficient permissions, such as System Administrator or System C
 1. Expand **Templates**, and then select **Document templates**.
 1. In the **Available Templates View** page, go to the command bar and select **New** to open the *Create template from Dynamics 365 data* dialog box.
 1. In the **Create template from Dynamics 365 data** dialog, select **Word Template**.
-1. Select the entity for which you want to create the template and then select **Select Entity**. 
+1. Select the entity for which you want to create the template and then select **Select Entity**.  
+   :::image type="content" source="media/create-word-template-platform.png" alt-text="Screenshot of Create template from Dynamics 365 data dialog.":::
 1. Specify the entity relationships that you want to use in the template. For example, if you select the Account entity, you can specify 1:N relationship to the Contact entity to include contact information in the template. Learn more about relationships in [What are 1:N, N:1, and N:N relationships?](#what-are-1n-n1-and-nn-relationships)
    > [!NOTE]
    >- The relationships you select on this screen determine what entities and fields are available later when you define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
-   >- Select only the relationships you need to add data to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
+   >- Select only the relationships you need to add data to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
+   :::image type="content" source="media/platform-select-entity.png" alt-text="Screenshot of the entity selection dialog.":::
 1. Select **Download Template** to create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file on your local computer with the exported entity included as XML data.
    > [!IMPORTANT]
    > You can only use a document template in the environment where you downloaded it. Environment-to-environment migration for Word or Excel templates isn't supported.
@@ -67,7 +69,8 @@ As a Dynamics 365 user, you can create a personal [!INCLUDE[pn_ms_Word_short](..
 1. Sign in to the **Sales Hub** app.
 1. Select the entity for which you want to create the template. For example, if you want to create a template for customer accounts, select **Accounts**.
 1. Open any record. On the command bar, select **Word Templates** > **Download Template**.
-   The entity is selected by default based on the record you opened. 
+   The entity is selected by default based on the record you opened.
+   :::image type="content" source="media/create-word-template-dynamics365.png" alt-text="Screenshot of the Download file to create a template dialog.":::
 1. Specify the entity relationships that you want to use in the template. For example, if you select the Account entity, you can specify 1:N relationship to the Contact entity to include contact information in the template. Learn more about relationships in [What are 1:N, N:1, and N:N relationships?](#what-are-1n-n1-and-nn-relationships)
    > [!NOTE]
    >- The relationships you select on this screen determine what entities and fields are available later when you define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
