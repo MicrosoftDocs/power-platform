@@ -28,19 +28,19 @@ AOS instances are stateful and hold user session state in memory. Requests are d
 
 Because AOS instances hold session state in memory, scaling up and scaling down behave differently. Adding new AOS instances (scale-up) is seamless and doesn't disrupt active users. However, removing AOS instances (scale-down) requires draining active sessions, so it's reserved for planned maintenance windows or customization deployments, where a natural downtime already occurs. This approach ensures that users never experience unexpected session loss due to a scale-down event.
 
-An environment supports a maximum of **80 AOS instances** total, split between up to 40 interactive AOS instances that serve user requests and up to 40 batch processor AOS instances that handle background jobs.
+An environment supports a maximum of 80 AOS instances total, split between up to 40 interactive AOS instances that serve user requests and up to 40 batch processor AOS instances that handle background jobs.
 
 ## Deploy to the middle
 
-When Microsoft provisions a finance and operations environment, it deploys to a **mid-sized baseline** topology. This baseline is:
+When Microsoft provisions a finance and operations environment, it deploys to a mid-sized baseline topology. This baseline is:
 
-- **Not the minimum** compute available for the environment
-- **Not the maximum** compute available for the environment
-- Chosen to handle steady-state interactive usage, normal batch processing, and typical Dataverse and Power Platform integration patterns
+- **Not the minimum** compute available for the environment.
+- **Not the maximum** compute available for the environment.
+- Chosen to handle steady-state interactive usage, normal batch processing, and typical Dataverse and Power Platform integration patterns.
 
 By starting in the middle, the platform minimizes the need for cold-start scaling events. Most customer workloads oscillate around this baseline, so the environment is ready for typical usage immediately after provisioning.
 
-### Scale up
+### Scale-up
 
 When the platform detects increased demand, it scales up from the baseline. Scale-up can be triggered by:
 
@@ -49,35 +49,35 @@ When the platform detects increased demand, it scales up from the baseline. Scal
 - Heavy batch job processing
 - Increased Power Platform-initiated calls through Dataverse virtual tables
 
-During scale-up, more AOS instances are added horizontally, and load is redistributed across them. Batch capacity can also increase independently. Scale-up happens **with no downtime** and is transparent to active users.
+During scale-up, more AOS instances are added horizontally, and load is redistributed across them. Batch capacity can also increase independently. Scale-up happens with no downtime and is transparent to active users.
 
-### Scale down
+### Scale-down
 
-Because AOS instances hold session state in memory, scale-down can't happen on demand without risking disruption to active users. Instead, scale-down is **reserved for planned maintenance windows** or when a customer deploys customizations, both of which involve a natural downtime period. During these windows, extra AOS instances are drained and removed, and the environment returns to its baseline topology.
+Because AOS instances hold session state in memory, scale-down can't happen on demand without risking disruption to active users. Instead, scale-down is reserved for planned maintenance windows or when a customer deploys customizations, both of which involve a natural downtime period. During these windows, extra AOS instances are drained and removed, and the environment returns to its baseline topology.
 
-The environment scales down **to the baseline**, not below it. This approach ensures that the environment is always ready for normal workloads when it comes back online.
+The environment scales down to the baseline, not below it. This approach ensures that the environment is always ready for normal workloads when it comes back online.
 
 ## Power Platform Requests and compute capacity
 
-Compute capacity for finance and operations apps in unified environments is governed by **Power Platform Requests (PPR)**. PPR serves as the unit of measure for how much compute power is allocated to your environments.
+Compute capacity for finance and operations apps in unified environments is governed by Power Platform Requests (PPRs). PPRs serve as the unit of measure for how much compute power is allocated to your environments.
 
-### How PPR translates to AOS capacity
+### How PPRs translate to AOS capacity
 
-Each AOS instance requires **650,000 PPR** of capacity. The more PPR your tenant has available, the more AOS instances the platform can allocate across your environments, and the more room there is for elastic scaling.
+Each AOS instance requires 650,000 PPRs of capacity. The more PPRs your tenant has available, the more AOS instances the platform can allocate across your environments, and the more room there is for elastic scaling.
 
-### How you accrue PPR
+### How you accrue PPRs
 
-PPR accrues to your tenant in three ways:
+PPRs accrue to your tenant in three ways:
 
 | Source | Amount | Details |
 |--------|--------|---------|
-| Tenant-wide base | 500,000 PPR | Automatically included with any Dynamics 365 purchase |
-| Per-user license accrual | 5,000 PPR per license | Each assigned user license contributes to the tenant's total PPR pool |
-| Add-on packs | 50,000 PPR per pack | Purchased from the [Microsoft 365 admin center](https://admin.microsoft.com) |
+| Tenant-wide base | 500,000 PPRs | Automatically included with any Dynamics 365 purchase. |
+| Per-user license accrual | 5,000 PPRs per license | Each assigned user license contributes to the tenant's total PPR pool. |
+| Add-on packs | 50,000 PPRs per pack | Purchased from the [Microsoft 365 admin center](https://admin.microsoft.com). |
 
 ### Minimum and maximum AOS
 
-Every sandbox and production environment is provisioned with a **minimum of 2 AOS instances** (1 interactive, 1 batch) regardless of available PPR. This ensures the environment is functional and provides basic redundancy. The **maximum is 80 AOS instances** (40 interactive, 40 batch).
+Every sandbox and production environment is provisioned with a minimum of 2 AOS instances (1 interactive, 1 batch) regardless of available PPRs. This ensures the environment is functional and provides basic redundancy. The maximum is 80 AOS instances (40 interactive, 40 batch).
 
 ### Example: PPR and AOS at different scales
 
