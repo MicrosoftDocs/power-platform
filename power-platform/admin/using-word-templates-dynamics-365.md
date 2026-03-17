@@ -231,19 +231,19 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 
 1. Open a record for the entity type that matches the template you created. For example, open a customer account record in Sales if you created an account template.
 
-2. On the command bar, select  **Word Templates** > **Upload Template**.  
+1. On the command bar, select  **Word Templates** > **Upload Template**.  
 
-3. Browse to the file and select **Upload**.  
+1. Browse to the file and select **Upload**.  
 
 <a name="BKMK_Generate"></a>
 
 ## Step 5: Generate a document from the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template  
 
- To use the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template you created, complete the following steps:  
+To use the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template you created, complete the following steps.  
 
 1. Open a record that matches the entity type of the template you created. For example, open a customer account record in Sales if you created an account template. 
 
-2. On the command bar, select **Word Templates**, and then under **Word Templates** select the template you created.  
+1. On the command bar, select **Word Templates**, and then under **Word Templates** select the template you created.  
 
     If you don't see the template you created, two possibilities exist:  
 
