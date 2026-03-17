@@ -83,16 +83,16 @@ Every sandbox and production environment is provisioned with a minimum of 2 AOS 
 
 The following table shows how PPRs accrue and translate to AOS capacity across a range of customer sizes. Each row includes only licenses and the tenant-wide, base. Add-on packs can increase the total further.
 
-| User licenses | PPRs calculation | Total PPR | AOS capacity |
+| User licenses | PPRs calculation | Total PPRs | AOS capacity |
 |---------------|-----------------|-----------|--------------|
-| 20 (minimum) | 500K + (20 &times; 5K) | 600,000 | 2 AOS (floor) |
-| 100 | 500K + (100 &times; 5K) | 1,000,000 | 2 AOS |
-| 250 | 500K + (250 &times; 5K) | 1,750,000 | 2 AOS |
-| 500 | 500K + (500 &times; 5K) | 3,000,000 | 4 AOS |
-| 1,000 | 500K + (1,000 &times; 5K) | 5,500,000 | 8 AOS |
-| 2,500 | 500K + (2,500 &times; 5K) | 13,000,000 | 20 AOS |
-| 5,000 | 500K + (5,000 &times; 5K) | 25,500,000 | 39 AOS |
-| 10,000+ | 500K + (10,000 &times; 5K) | 50,500,000 | 77 AOS |
+| 20 (minimum) | 500,000 + (20 &times; 5,000) | 600,000 | 2 AOS (floor) |
+| 100 | 500,000 + (100 &times; 5,000) | 1,000,000 | 2 AOS |
+| 250 | 500,000 + (250 &times; 5,000) | 1,750,000 | 2 AOS |
+| 500 | 500,000 + (500 &times; 5,000) | 3,000,000 | 4 AOS |
+| 1,000 | 500,000 + (1,000 &times; 5,000) | 5,500,000 | 8 AOS |
+| 2,500 | 500,000 + (2,500 &times; 5,000) | 13,000,000 | 20 AOS |
+| 5,000 | 500,000 + (5,000 &times; 5,000) | 25,500,000 | 39 AOS |
+| 10,000+ | 500,000 + (10,000 &times; 5,000) | 50,500,000 | 77 AOS |
 
 If the PPR formula yields fewer than 2 AOS, the environment still receives the 2 AOS minimum. If it yields more than 80, the environment is capped at 80.
 
