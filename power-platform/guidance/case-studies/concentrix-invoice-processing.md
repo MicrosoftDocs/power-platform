@@ -1,17 +1,17 @@
 ---
 title: Concentrix modernizes invoice processing with Power Platform and AI
-description: Learn how Concentrix used AI and Power Platform to streamline invoice processing, handle diverse formats, and achieve 96% data extraction accuracy.
+description: Learn how Concentrix used AI and Power Platform to streamline invoice processing, handle diverse formats, and achieve 96 percent data extraction accuracy.
 #customer intent: As a Power Platform user, I want to learn how Concentrix used AI Builder, custom prompts, and Power Automate to build an invoice‑processing solution that handles highly variable invoice formats.
 author: carcla
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
-ms.date: 03/10/2026
+ms.date: 03/17/2026
 ms.topic: overview
 ---
 
 # Concentrix modernizes invoice processing with Power Platform and AI
 
-Concentrix supports many of the world’s largest brands by running complex, high-stakes business operations behind the scenes. One of these responsibilities is processing more than 100,000 utility invoices every month, arriving from over 100 providers, in more than 300 layouts, and in multiple languages. What begins as a routine workflow quickly becomes a complex mix of formats and exceptions, making manual processing slow and inconsistent.
+[Concentrix](https://www.concentrix.com/) supports many of the world's largest brands by running complex, high-stakes business operations behind the scenes. One of these responsibilities is processing more than 100,000 utility invoices every month, arriving from over 100 providers, in more than 300 layouts, and in multiple languages. What begins as a routine workflow quickly becomes a complex mix of formats and exceptions, making manual processing slow and inconsistent.
 
 To modernize this workflow, Concentrix built a large-scale automation solution using Microsoft Power Platform and AI. The solution automatically ingests and interprets invoices, adapts to hundreds of formats, and delivers high accuracy with minimal human involvement.
 
@@ -75,7 +75,7 @@ The solution is built around four main areas: sources, AI processing, data enric
 
 ## Implementation approach
 
-The implementation evolved as invoice volumes grew, and new AI capabilities became available. Initially, AI Builder custom models worked well, but maintaining a large number of patterns became too time‑consuming, and Power Automate began to hit throttling limits as volumes approached 20,000 invoices per month.
+The implementation evolved as invoice volumes grew and new AI capabilities became available. Initially, AI Builder custom models worked well, but maintaining a large number of patterns became too time‑consuming, and Power Automate began to hit throttling limits as volumes approached 20,000 invoices per month.
 
 GPT‑4 changed the approach. Instead of training multiple models, the team could send the extracted PDF text directly to an AI prompt with defined extraction rules. This approach turned the process into a single step in the flow, reduced complexity, and removed throttling issues. A few complex layouts still required trained models, but later versions, GPT‑4.1 and GPT‑5, handled those patterns with higher accuracy, allowing nearly all extraction to move to prompt‑based logic. Accuracy improved from 65–70 percent with custom models to about 96 percent after moving to AI prompt‑based extraction.
 
