@@ -79,11 +79,11 @@ PPRs accrue to your tenant in three ways:
 
 Every sandbox and production environment is provisioned with a minimum of 2 AOS instances (1 interactive, 1 batch) regardless of available PPRs. This ensures the environment is functional and provides basic redundancy. The maximum is 80 AOS instances (40 interactive, 40 batch).
 
-### Example: PPR and AOS at different scales
+### Example: PPRs and AOS capacity at different scales
 
-The following table shows how PPR accrues and translates to AOS capacity across a range of customer sizes. Each row includes only licenses and the tenant-wide base—add-on packs can increase the total further.
+The following table shows how PPRs accrue and translate to AOS capacity across a range of customer sizes. Each row includes only licenses and the tenant-wide, base. Add-on packs can increase the total further.
 
-| User licenses | PPR calculation | Total PPR | AOS capacity |
+| User licenses | PPRs calculation | Total PPR | AOS capacity |
 |---------------|-----------------|-----------|--------------|
 | 20 (minimum) | 500K + (20 &times; 5K) | 600,000 | 2 AOS (floor) |
 | 100 | 500K + (100 &times; 5K) | 1,000,000 | 2 AOS |
