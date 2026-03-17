@@ -3,27 +3,28 @@ title: Elastic compute for finance and operations apps
 description: Learn about elastic compute, which provides flexible and scalable compute power for Dynamics 365 finance and operations apps in unified environments.
 author: laneswenka
 ms.topic: concept-article
-ms.date: 03/04/2026
+ms.date: 03/17/2026
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
+
 ---
 
 # Elastic compute for finance and operations apps
 
-Finance and operations apps in unified environments use **elastic compute** to provide flexible and scalable compute power. Instead of selecting a fixed-size environment tier at purchase time, all your sandbox and production environments now draw from a shared capacity pool and **automatically scale based on actual usage**.
+Finance and operations apps in unified environments use *elastic compute* to provide flexible and scalable compute power. Instead of selecting a fixed-size environment tier at purchase time, all your sandbox and production environments draw from a shared capacity pool and automatically scale based on actual usage.
 
 This means:
 
-- **Sandbox and production environments get the same performance model.** Performance testing in a sandbox reflects what you can expect in production—no more guessing across tiers.
+- **Sandbox and production environments get the same performance model.** Performance testing in a sandbox environment reflects what you can expect in a production environment&mdash;no more guessing across tiers.
 - **You don't pick a tier.** Your compute capacity is determined by your Power Platform Request (PPR) entitlement and scales automatically.
-- **Adding capacity is simple.** Purchase more PPR to increase your compute ceiling, or add storage to create more environments—no contract amendments or support tickets required.
+- **Adding capacity is simple.** Purchase more PPR to increase your compute ceiling, or add storage to create more environments&mdash;no contract amendments or support tickets required.
 
 ## How elastic compute works
 
 In unified environments, the Application Object Server (AOS) tier is the primary compute component for finance and operations apps. Each AOS instance hosts X++ business logic and handles user requests, OData and custom service calls, integration traffic, and batch workloads.
 
-AOS instances are **stateful** and hold user session state in memory. Requests are distributed across AOS instances through internal Azure load balancers, with session affinity ensuring that a user's requests are routed to the same AOS instance for the duration of their session. Persistent data such as metadata and transactional state is stored externally in Azure SQL, caching layers, and blob storage.
+AOS instances are stateful and hold user session state in memory. Requests are distributed across AOS instances through internal Azure load balancers, with session affinity ensuring that a user's requests are routed to the same AOS instance for the duration of their session. Persistent data such as metadata and transactional state is stored externally in Azure SQL, caching layers, and blob storage.
 
 Because AOS instances hold session state in memory, scaling up and scaling down behave differently. Adding new AOS instances (scale-up) is seamless and doesn't disrupt active users. However, removing AOS instances (scale-down) requires draining active sessions, so it's reserved for planned maintenance windows or customization deployments, where a natural downtime already occurs. This approach ensures that users never experience unexpected session loss due to a scale-down event.
 
