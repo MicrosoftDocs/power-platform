@@ -319,8 +319,12 @@ Common error scenarios include:
 
 ---
 
-
 ## Support and Additional Resources
 
 For more information about source control integration with Dataverse:
-- [Overview of Git Integration in Power Platform](https://learn.microsoft.com/en-us/power-platform/alm/git-integration/overview)
+- [Overview of Git Integration in Power Platform](../git-integration/overview)
+- [ConnectToGit Action](..power-apps/developer/data-platform/webapi/reference/connecttogit?)
+- [DisconnectFromGit Action](../power-apps/developer/data-platform/webapi/reference/disconnectfromgit?)
+- [CommitToGit Action](../power-apps/developer/data-platform/webapi/reference/committogit?)
+- [RefreshChangesFromGit Action](../power-apps/developer/data-platform/webapi/reference/refreshchangesfromgit?)
+- [PullChangesFromGit Action](../power-apps/developer/data-platform/webapi/reference/pullchangesfromgit?)
