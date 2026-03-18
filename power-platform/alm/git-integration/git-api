@@ -1,0 +1,326 @@
+---
+title: "Use Git integration API's"
+description: "This article discusses the integration of Dataverse with Git, focusing on how to use Git integration API's."
+author: caburk
+ms.subservice: alm
+ms.author: caburk
+ms.date: 03/18/2026
+ms.custom: 
+ms.topic: concept-article
+ms.reviewer: jdaly
+ms.collection: 
+ms.contributors:
+---
+# ConnectToGit and DisconnectFromGit API Documentation
+
+## Overview
+
+The ConnectToGit and DisconnectFromGit APIs enable you to integrate your Microsoft Dataverse environment with source control systems. These APIs allow you to connect solutions or entire environments to Git repositories hosted on Azure DevOps or GitHub, and manage those connections programmatically. Note: GitHub is currently not supported.
+
+## Prerequisites
+
+Before using these APIs, ensure you have:
+- Access to a Microsoft Dataverse environment
+- Appropriate permissions to manage source control connections
+- A configured Git repository
+- Valid credentials for your source control provider
+
+---
+
+## ConnectToGit API
+
+### Purpose
+Establishes a connection between a Dataverse solution or environment and a Git repository. This enables source control management for your Dataverse components.
+
+### Input Parameters
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `ConnectionType` | OptionSetValue | No | Specifies what to connect: `0` = Solution, `1` = Environment |
+| `GitProvider` | OptionSetValue | No | The Git provider: `0` = Azure DevOps, `1` = GitHub |
+| `Organization` | String | No | Name of the organization you want to connect to. |
+| `Project` | String | No | Name of the project you want to connect to. |
+| `Repository` | String | No | Name of the repository you want to connect to. |
+| `SolutionUniqueName` | String | No | The unique name of the solution you wish to connect to git. |
+| `Branch` | String | Yes | Name of the branch you want to connect to. |
+| `UpstreamBranch` | String | No | Name of the upstream branch you want to connect to. Defaults to default branch of repository. |
+| `RootFolder` | String | No | Name of the Root Folder all your solutions will reside in in solution scope.  |
+| `GitFolder` | String | Yes | Name of the folder you want to bind your solution or environment to. |
+
+### Parameter Details
+
+#### ConnectionType (OptionSetValue)
+- **0 - Solution**: Connects a specific Dataverse solution to Git
+- **1 - Environment**: Connects the entire Dataverse environment to Git
+
+#### GitProvider (OptionSetValue)
+- **0 - Azure DevOps**: Use for repositories hosted on Azure DevOps
+- **1 - GitHub**: Use for repositories hosted on GitHub
+
+---
+
+## DisconnectFromGit API
+
+### Purpose
+Removes the Git connection from a Dataverse solution or environment, disabling source control integration.
+
+### Input Parameters
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `SolutionUniqueName` | String | No | The unique name of the solution you wish to disconnect from git. Omit to disconnect all solutions or the environment. |
+
+### Behavior Notes
+- **Disconnect Single Solution**: Provide `SolutionUniqueName` to disconnect a specific solution
+- **Disconnect All Solutions**: Provide no parameters to disconnect all solution-level connections
+- **Disconnect Environment**: Provide no parameters to disconnect the environment-level connection
+
+---
+
+## Common Use Cases
+
+### Use Case 1: Environment Scope Connect
+
+**Scenario**: Connect your entire Dataverse environment to an Azure DevOps repository. This enables source control for all environment-level configurations and components.
+
+**Required Parameters**:
+- `GitProvider`: 0 (Azure DevOps)
+- `ConnectionType`: 1 (Environment)
+- `Organization`: "Aurora365-User1"
+- `Project`: "GitIntegration"
+- `Repository`: "GitIntegration"
+- `Branch`: "testbranch"
+- `GitFolder`: "EnvironmentFolder"
+
+**Example Request**:
+```csharp
+var request = new OrganizationRequest("ConnectToGit");
+request.Parameters["GitProvider"] = new OptionSetValue(0);
+request.Parameters["ConnectionType"] = new OptionSetValue(1);
+request.Parameters["Organization"] = "Aurora365-User1";
+request.Parameters["Project"] = "GitIntegration";
+request.Parameters["Repository"] = "GitIntegration";
+request.Parameters["Branch"] = "testbranch";
+request.Parameters["GitFolder"] = "EnvironmentFolder";
+```
+
+**JSON Representation**:
+```json
+{
+  "GitProvider": 0,
+  "ConnectionType": 1,
+  "Organization": "Aurora365-User1",
+  "Project": "GitIntegration",
+  "Repository": "GitIntegration",
+  "Branch": "testbranch",
+  "GitFolder": "EnvironmentFolder"
+}
+```
+
+---
+
+### Use Case 2: Environment Scope Disconnect
+
+**Scenario**: Disconnect your entire Dataverse environment from Git source control. This removes the environment-level Git connection.
+
+**Required Parameters**: None (empty parameters)
+
+**Example Request**:
+```csharp
+var request = new OrganizationRequest("DisconnectFromGit");
+// No parameters needed for environment disconnect
+```
+
+**JSON Representation**:
+```json
+{
+}
+```
+
+**Note**: When disconnecting at the environment scope, no parameters are required. The API automatically identifies and removes the environment-level Git connection.
+
+---
+
+### Use Case 3: Solution Scope Connect (Initial)
+
+**Scenario**: Connect the first solution to a Git repository. This is the initial connection that establishes the repository link and folder structure for solution-level source control. 
+
+**Required Parameters**:
+- `GitProvider`: 0 (Azure DevOps)
+- `ConnectionType`: 0 (Solution)
+- `Organization`: "Aurora365-User1"
+- `Project`: "GitIntegration"
+- `Repository`: "GitIntegration"
+- `SolutionUniqueName`: "Solution1"
+- `Branch`: "testbranch"
+- `RootFolder`: "MyRootFolder"
+- `GitFolder`: "Solution1"
+
+**Example Request**:
+```csharp
+var request = new OrganizationRequest("ConnectToGit");
+request.Parameters["GitProvider"] = new OptionSetValue(0);
+request.Parameters["ConnectionType"] = new OptionSetValue(0);
+request.Parameters["Organization"] = "Aurora365-User1";
+request.Parameters["Project"] = "GitIntegration";
+request.Parameters["Repository"] = "GitIntegration";
+request.Parameters["SolutionUniqueName"] = "Solution1";
+request.Parameters["Branch"] = "testbranch";
+request.Parameters["RootFolder"] = "MyRootFolder";
+request.Parameters["GitFolder"] = "Solution1";
+```
+
+**JSON Representation**:
+```json
+{
+  "GitProvider": 0,
+  "ConnectionType": 0,
+  "Organization": "Aurora365-User1",
+  "Project": "GitIntegration",
+  "Repository": "GitIntegration",
+  "SolutionUniqueName": "Solution1",
+  "Branch": "testbranch",
+  "RootFolder": "MyRootFolder",
+  "GitFolder": "Solution1"
+}
+```
+
+---
+
+### Use Case 4: Solution Scope Connect (Subsequent)
+
+**Scenario**: Connect additional solutions to the same Git repository after the initial solution connection has been established. Only the solution-specific parameters are needed; the repository connection details are inherited from the initial connection.
+
+**Required Parameters**:
+- `SolutionUniqueName`: "Solution2"
+- `Branch`: "testbranch"
+- `GitFolder`: "Solution2"
+
+**Example Request**:
+```csharp
+var request = new OrganizationRequest("ConnectToGit");
+request.Parameters["SolutionUniqueName"] = "Solution2";
+request.Parameters["Branch"] = "testbranch";
+request.Parameters["GitFolder"] = "Solution2";
+```
+
+**JSON Representation**:
+```json
+{
+  "SolutionUniqueName": "Solution2",
+  "Branch": "testbranch",
+  "GitFolder": "Solution2"
+}
+```
+
+**Note**: When connecting subsequent solutions, the API uses the repository connection established during the initial solution connection. You only need to specify the solution name, branch, and folder location within the repository.
+
+---
+
+### Use Case 5: Solution Scope Disconnect (Single Solution)
+
+**Scenario**: Disconnect a specific solution from Git source control while keeping other solutions connected. This is useful when you want to remove source control for one solution without affecting others.
+
+**Required Parameters**:
+- `SolutionUniqueName`: "Solution2"
+
+**Example Request**:
+```csharp
+var request = new OrganizationRequest("DisconnectFromGit");
+request.Parameters["SolutionUniqueName"] = "Solution2";
+```
+
+**JSON Representation**:
+```json
+{
+  "SolutionUniqueName": "Solution2"
+}
+```
+
+---
+
+### Use Case 6: Solution Scope Disconnect (All Solutions)
+
+**Scenario**: Disconnect all solutions from Git source control at once. This removes all solution-level Git connections in the environment.
+
+**Required Parameters**: None (empty parameters)
+
+**Example Request**:
+```csharp
+var request = new OrganizationRequest("DisconnectFromGit");
+// No parameters needed to disconnect all solutions
+```
+
+**JSON Representation**:
+```json
+{
+}
+```
+
+**Note**: When no parameters are provided to DisconnectFromGit in a solution scope context, all solution-level Git connections are removed.
+
+---
+
+## Quick Reference: Parameter Requirements by Connection Type
+
+### Solution Connection (ConnectionType = 0)
+**Required On First Connect**:
+- ConnectionType (0)
+- GitProvider
+- Organization
+- Project (if ADO)
+- Repository
+- SolutionUniqueName
+- Branch
+- RootFolder
+- GitFolder
+
+**Optional**:
+- UpstreamBranch
+
+**Required On Subsequent Connects**:
+- SolutionUniqueName
+- Branch
+- GitFolder
+
+---
+
+### Environment Connection (ConnectionType = 1)
+**Always Required**:
+- ConnectionType (1)
+- GitProvider
+- Organization
+- Repository
+- Branch
+- GitFolder
+
+**Required for Azure DevOps**:
+- Project
+
+**Optional**:
+- UpstreamBranch
+
+---
+
+## Response Handling
+
+Both APIs return an `OrganizationResponse` object. A successful execution indicates that the connection has been established or removed. Check for exceptions to handle error cases.
+
+### Success Response
+When successful, the API executes without exceptions. The response may contain additional parameters depending on the operation.
+
+### Error Handling
+Common error scenarios include:
+- **Invalid credentials**: Ensure you have valid authentication to the Git provider
+- **Repository not found**: Verify the organization, project, repository names
+- **Permission denied**: Ensure your Dataverse account has source control management permissions
+- **Solution not found**: Verify the SolutionUniqueName exists in your environment
+- **Branch does not exist**: Confirm the specified branch exists in the repository
+
+---
+
+
+## Support and Additional Resources
+
+For more information about source control integration with Dataverse:
+- [Overview of Git Integration in Power Platform](https://learn.microsoft.com/en-us/power-platform/alm/git-integration/overview)
