@@ -37,7 +37,7 @@ SCDF is embarking on a digital transformation journey to raise the skill levels 
 
 Key benefits since the start of this journey:
 
-- Delivered solutions are valued at $20 million with development costs below $50,000.
+- Delivered solutions are valued at approximately $20 million with development costs below $50,000.
 
   - ADA and ITA are actively used by 2,100 SCDF frontliners across 23 stations.
 
