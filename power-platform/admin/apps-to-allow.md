@@ -7,11 +7,12 @@ ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 03/04/2026
+ms.date: 03/18/2026
 search.audienceType: 
   - admin
 contributors:
   - akiohose
+  - TannerGordon
 
 ---
 
@@ -247,6 +248,7 @@ Certain [apps are automatically allowed](#commonly-used-microsoft-first-party-se
 | cf710c6e-dfcc-4fa8-a093-d47294e44c66 | Azure Analysis Services Client |
 | 57336123-6e14-4acc-8dcf-287b6088aa28 | Microsoft Whiteboard Client |
 | ab9b8c07-8f02-4f72-87fa-80105867a763 | OneDrive SyncEngine |
+| bed12bc0-3a62-470d-998c-e47546e7b039 | OneDrive Photos |
 | af124e86-4e96-495a-b70a-90f90ab96707 | OneDrive iOS App |
 | e9c51622-460d-4d3d-952d-966a5b1da34c | Microsoft Edge |
 | c58637bb-e2e1-4312-8a00-04b5ffcd3403 | SharePoint Online Client Extensibility |
