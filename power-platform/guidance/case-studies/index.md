@@ -7,7 +7,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.topic: overview
-ms.date: 03/02/2026
+ms.date: 03/18/2026
 ---
 
 # Real-world case studies
@@ -32,12 +32,15 @@ Each case study provides an in-depth look at how organizations build application
 | --- | --- |
 | [A1 Inteligência em Viagens boosts efficiency and customer experience](boost-efficiency-experience-case-study.md) | Covers how A1 Inteligência em Viagens boosts team efficiency and customer experience with Power Automate and Copilot Studio. |
 | [ABN AMRO Bank enhances AI capabilities with Copilot Studio and Azure services](abn-amro-enhances-ai.md) | Covers how ABN AMRO enhanced customer and employee interactions using Copilot Studio and Azure. |
+| [Action Apps redefines athlete management with Power Platform and Azure AI](action-apps-athlete-management.md) | Covers how Action Apps uses Power Platform and Azure AI to centralize athlete data, improve decision-making, and enhance sports performance management. |
 | [AECOM simplifies project onboarding with Power Platform, Azure, and Microsoft Fabric](aecom-streamlined-onboarding.md) | Covers how AECOM streamlined project onboarding using Power Platform, Microsoft Azure, and Microsoft Fabric. |
 | [Cineplex automates business processes](automate-business-processes.md) | Covers how Cineplex automates business processes with generative AI and Power Automate. |
 | [The City of Montréal enhances citizen engagement with Copilot Studio](city-montreal-citizen-engagement.md) | This case study covers how the City of Montréal uses AI and Copilot Studio to enhance citizen engagement, improve information access, and strengthen citizen connections. |
+| [Concentrix modernizes invoice processing with Power Platform and AI](concentrix-invoice-processing.md) | This case study covers how Concentrix uses Power Platform and AI to automate invoice processing, improving data extraction accuracy and streamlining operations. |
 | [Daimler Truck transforms policy management](daimler-truck-modernizes-policies.md) | Covers how Daimler Truck modernized policy management using Power Apps, Dataverse, and Managed Environments to enhance efficiency and collaboration. |
 | [Degrees of Change automates nonprofit operations](nonprofit.md) | Covers how Degrees of Change automates nonprofit operations with Power Pages, Power Apps, and AI Builder. |
 | [Deutsche Bahn empowers citizen developers](db-empowers-citizen-devs.md) | Covers how Deutsche Bahn Group accelerated innovation by empowering their employees to build low-code business applications using Power Platform. |
+| [Dunaway streamlines city code research with Copilot Studio](dunaway-streamlines-city-code-research.md) | Covers how Dunaway transformed compliance workflows with a conversational AI agent that delivers instant, accurate regulatory answers. |
 | [Epiq streamlines employee onboarding](streamline-employee-onboarding.md) | Covers how Epiq streamlines employee onboarding with Power Automate, Microsoft Dataverse, and AI Builder. |
 | [EY automates payment processing](global-finance.md) | Covers how the Global Finance team at Ernst & Young used Power Automate, AI Builder, and Dataverse to automate customer payment processing. |
 | [Holland America Line transforms customer experience with Copilot Studio](holland-america-customer-experience.md) | Covers how Holland America Line used Copilot Studio to create a sophisticated virtual agent to create a virtual concierge for their website. |

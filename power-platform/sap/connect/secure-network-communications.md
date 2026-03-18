@@ -1,32 +1,27 @@
 ---
 title: Set up Secure Network Communications
 description: Learn how to create a secure encrypted connection between the on-premises data gateway and SAP using SNC.
-author: ryanb58
-ms.author: tbrazelton
+author: haowusky
+ms.author: hawu1
 contributors:
-  - robinsonshields
-  - microsoft-george
   - tverhasselt
   - galitskyd
   - microsoft-dustin
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
   - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 08/15/2024
+ms.date: 03/17/2026
 ms.service: power-platform
 ms.subservice: sap
-ms.custom: ignite-2024
 ---
 
-# Set up Secure Network Communications
+# Set up secure network communications
 
 Secure Network Communications (SNC) enhances the security of your SAP integration with Power Platform by encrypting the data between an on-premises data gateway and a SAP system. This article walks you through setting up SNC as a proof of concept.
 
 > [!IMPORTANT]
-> **The settings and recommendations presented in this article are not intended for production use.** Consult your security team, internal policies, and Microsoft Partner for guidance in setting up SNC in a production environment.
+> **The settings and recommendations presented in this article aren't intended for production use.** Consult your security team, internal policies, and Microsoft Partner for guidance in setting up SNC in a production environment.
 
 ## Prerequisites
 
@@ -66,13 +61,13 @@ SAP Common Crypto Library enables the SAP Connector for Microsoft .NET (NCo) to 
 
 ## Generate certificates
 
-Now that you've installed SAP Common Crypto Library, you can generate certificates to establish trust and encryption between your on-premises data gateway and the SAP system.
+After you install SAP Common Crypto Library, generate certificates to establish trust and encryption between your on-premises data gateway and the SAP system.
 
 > [!WARNING]
-> This method is for demonstration purposes only and is not recommended for production systems.
+> This method is for demonstration purposes only and isn't recommended for production systems.
 > For production systems, consult your internal PKI guidance or security team.
 
-In this example, our certificates are structured as shown in the following diagram. Root CA [O=Contoso, CN=Root CA] signs the SNC encryption certificate [O=Contoso, CN=SNC] and the user certificates [O=Contoso, CN=`UserIDs`].
+In this example, structure your certificates as shown in the following diagram. Root CA [O=Contoso, CN=Root CA] signs the SNC encryption certificate [O=Contoso, CN=SNC] and the user certificates [O=Contoso, CN=`UserIDs`].
 This article focuses on setting up the Root CA and SNC certificates.
 
 :::image type="content" source="./media/setup-secure-network-communications/fc-pki-demo.svg" alt-text="Diagram showing certificate flow from Root CA to Encryption Cert, Signing Cert, and userIDs.":::
@@ -115,7 +110,7 @@ This article focuses on setting up the Root CA and SNC certificates.
    extendedKeyUsage = clientAuth,emailProtection
    ```
 
-1. Sign the SNC certificate with the Root CA:
+1. Sign the SNC certificate by using the Root CA:
 
    ```powershell
    openssl x509 -req `
@@ -130,9 +125,9 @@ This article focuses on setting up the Root CA and SNC certificates.
       -extensions v3_leaf
    ```
 
-## Create a Personal Secure Environment
+## Create a personal secure environment
 
-Create a Personal Secure Environment (PSE) for the on-premises data gateway. The NCo library looks for the SNC certificate inside the PSE.
+Create a personal secure environment (PSE) for the on-premises data gateway. The NCo library looks for the SNC certificate inside the PSE.
 
 1. Create a PKCS#12 container:
 
@@ -146,9 +141,9 @@ Create a Personal Secure Environment (PSE) for the on-premises data gateway. The
     1. Select **Environment Variables**.
     1. Under **System variables**, select **New**.
     1. Set the variable name to `SECUDIR`.
-    1. Set the value to `C:\sapsecudir` (create this directory if it does not exist).
+    1. Set the value to `C:\sapsecudir` (create this directory if it doesn't exist).
     1. Select **OK**.
-    1. Restart your Powershell session to pick up this new environment variable.
+    1. Restart your PowerShell session to pick up this new environment variable.
 
 1. Import the PKCS#12 container into a PSE:
 
@@ -164,7 +159,7 @@ Create a Personal Secure Environment (PSE) for the on-premises data gateway. The
 1. Select **New Entry** from the top bar and fill in the required information.
 
    :::image type="content" source="./media/setup-secure-network-communications/sap-snc-access-controll-list-for-systems.png" alt-text="Screenshot of the SAP GUI showing the Access Control List for Systems.":::
-1. Select the **Save**.
+1. Select **Save**.
 1. Return to the SAP GUI home screen.
 1. Go to transaction code `RZ10`.
 1. Set these profile parameters:
@@ -234,7 +229,7 @@ Follow the steps to test the secure connection. Once you complete the test succe
     :::image type="content" source="./media/setup-secure-network-communications/sap-stfc_connection-response-in-power-automate.png" alt-text="Screenshot showing the results of a test in a Power Automate flow.":::
 
 > [!IMPORTANT]
-> Make sure that you securely handle private keys and delete them on completion of this setup.
+> Make sure that you securely handle private keys and delete them when you complete this setup.
 
 ## Next step
 
