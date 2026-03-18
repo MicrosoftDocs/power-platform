@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/13/2026
+ms.date: 03/18/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType:
@@ -20,7 +20,7 @@ Customers who develop X++ customizations for finance and operations apps need an
 In this tutorial, learn how to:
 
 - Set up NuGet package feeds with the required build reference packages
-- Create a `packages.config` and `nuget.config` for version management
+- Create a `packages.config` and `nuget.config` files for version management
 - Build an Azure DevOps YAML pipeline that compiles X++ and produces a unified package on a nightly schedule
 - Optionally include one or more Dataverse solutions in the unified package
 
@@ -49,7 +49,7 @@ The X++ build process requires NuGet packages that contain the compiler tools an
 > These NuGet packages are currently downloaded from the **Shared Asset Library** in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com). Any customer operating unified environments in the Power Platform admin center can access the Shared Asset Library in LCS to download these assets. A replacement distribution mechanism that doesn't require LCS is coming soon. We'll update this tutorial when that capability is available.
 
 > [!NOTE]
-> The NuGet packages contain version details that must match or exceed the version of your target finance and operations environment. When a quality update is applied to your environment, download the corresponding NuGet package versions to keep your build aligned. If you're only extending the platform (no Application Suite customizations), you may only need the `CompilerPackage` and `Platform.DevALM.BuildXpp` packages. However, most customers extending application functionality need all five.
+> The NuGet packages contain version details that be equal to or lower than the version of your target finance and operations environment. When a quality update is applied to your environment, download the corresponding NuGet package versions to keep your build aligned. If you're only extending the platform (no Application Suite customizations), you may only need the `CompilerPackage` and `Platform.DevALM.BuildXpp` packages. However, most customers extending application functionality need all five.
 
 ### Publish packages to an Azure Artifacts feed
 
@@ -289,7 +289,7 @@ The pipeline has six core steps:
 
 ## Step 4: Including Dataverse solutions (optional)
 
-A key benefit of unified environments is that finance and operations X++ customizations and Dataverse solutions can be combined into a **single deployable package**. This means your release pipeline uses one `pac package deploy` command to deploy everything.
+A key benefit of unified environments is that finance and operations X++ customizations and Dataverse solutions can be combined into a single deployable package. This means your release pipeline uses one `pac package deploy` command to deploy everything.
 
 To include Dataverse solutions in your nightly build:
 
