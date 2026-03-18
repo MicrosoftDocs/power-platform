@@ -26,9 +26,6 @@ ms.custom:
 - sfi-ga-nochange
 ---
 
-<!-- The URL in line 99 links back to this page. Is that correct? -->
-
-
 # Dataverse capacity-based storage details
 
 If you purchased storage after April 2019, or if you have a mix of storage purchases made before and after April 2019, you see your storage capacity entitlement and usage by database, file, and log as it appears in the Microsoft Power Platform admin center today.
@@ -96,7 +93,7 @@ In the *storage capacity usage* section, you can see:
   - Attachment
   - AnnotationBase
   - Any custom or out-of-the-box table that has columns of datatype file or image (full size)
-  - Any table used by one or more install Insights applications and that [ends in - *Analytics*](capacity-storage.md)
+  - Any table used by one or more install Insights applications and that ends in - *Analytics*
   - WebResourceBase
   - RibbonClientMetadataBase
 
