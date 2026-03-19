@@ -20,7 +20,7 @@ Use the `ConnectToGit` and `DisconnectFromGit` APIs to programmatically integrat
 Before using these APIs, ensure you have:
 
 - Access to a Microsoft Dataverse environment
-- Appropriate permissions to manage source control connections
+- System administrator permissions
 - Read and write access to a Git repository
 - Valid credentials for your source control provider
 
