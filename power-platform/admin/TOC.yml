@@ -98,6 +98,8 @@
               items:
                 - name: Types of licenses
                   href: power-automate-licensing/types.md
+                - name: What's free vs. what's premium
+                  href: power-automate-licensing/free-vs-premium.md
                 - name: Types of add-ons
                   href: power-automate-licensing/add-ons.md
                 - name: Deep dive on specific licenses
