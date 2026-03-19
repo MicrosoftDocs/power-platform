@@ -371,9 +371,9 @@ For more information, see [Create an application user](/power-platform/admin/man
 
 1. After the nightly build completes, the release pipeline triggers automatically.
 1. Monitor **Stage 1 (Test)** in Azure DevOps. The deployment job downloads the unified package artifact and deploys it using `PowerPlatformPackageDeploy@2`.
-1. After Test succeeds, the **24-hour delay** begins. The pipeline shows a "Waiting" status.
+1. After test environment succeeds, the **24-hour delay** begins. The pipeline shows a "Waiting" status.
 1. When the delay completes, the designated approver receives a notification. After approval, **Stage 2 (Pre-Production)** deploys the package.
-1. After Pre-Production succeeds, the **manual validation** step holds the pipeline until the Saturday maintenance window. The approver confirms the timing and approves.
+1. After pre-production environment succeeds, the **manual validation** step holds the pipeline until the Saturday maintenance window. The approver confirms the timing and approves.
 1. The **Production environment approval gate** triggers. After the designated approver approves, **Stage 3 (Production)** deploys the package.
 
 ### Viewing deployment history
@@ -381,18 +381,18 @@ For more information, see [Create an application user](/power-platform/admin/man
 Each deployment is tracked in two places:
 
 - **Azure DevOps**: The **Environments** section shows a full deployment history per environment, including who approved each deployment and when.
-- **Dataverse audit logs**: In the Power Platform admin center, go to the environment > **Settings** > **Auditing** to view the package installation records. These logs capture the package name, version, deployment time, and the identity that performed the installation.
+- **Dataverse audit logs**: In the Power Platform admin center, go to the environment and then select **Settings** > **Auditing** to view the package installation records. These logs capture the package name, version, deployment time, and the identity that performed the installation.
 
 ## Troubleshooting
 
 | Issue | Resolution |
 |:------|:-----------|
-| Deployment times out on Microsoft-hosted agents | Switch to self-hosted Windows agents or increase `timeoutInMinutes` to `240` or higher. Finance and operations package deployments routinely exceed 60 minutes. |
+| Deployment times out on Microsoft-hosted agents | Switch to self-hosted Windows agents or increase **timeoutInMinutes** to **240** or higher. Finance and operations package deployments routinely exceed 60 minutes. |
 | `PowerPlatformPackageDeploy` fails with "unsupported OS" | The deploy task requires a **Windows** agent. Ensure your agent pool uses Windows machines. |
 | Service connection authentication fails | Verify each federated credential's **Subject identifier** matches the service connection name exactly. Check the pipeline logs for the expected issuer and subject values. |
-| Approval notification not received | Ensure the approver is configured on the Azure DevOps **Environment**, not just as a pipeline variable. Go to **Environments** > select the environment > **Approvals and checks**. |
-| Package deploys to wrong environment | Verify the `Environment` input on each `PowerPlatformPackageDeploy@2` task matches the correct environment URL variable for that stage. |
-| Delay job times out | The `WaitForValidation` job has a `timeoutInMinutes` of 2880 (48 hours). If the approval isn't granted within this window, the pipeline is canceled. Increase the timeout or set up notification reminders for approvers. |
+| Approval notification not received | Ensure the approver is configured on the Azure DevOps environment, not just as a pipeline variable. Go to **Environments** > select the environment > **Approvals and checks**. |
+| Package deploys to wrong environment | Verify the **Environment** input on each **PowerPlatformPackageDeploy@2** task matches the correct environment URL variable for that stage. |
+| Delay job times out | The **WaitForValidation** job has a **timeoutInMinutes** of 2880 (48 hours). If the approval isn't granted within this window, the pipeline is canceled. Increase the timeout or set up notification reminders for approvers. |
 
 ## Next steps
 
