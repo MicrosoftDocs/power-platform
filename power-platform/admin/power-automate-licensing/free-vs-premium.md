@@ -69,17 +69,18 @@ Check which action in your flow triggered the error. The error message usually n
 
 ### "Does the person who RUNS the flow need a license, or the person who MADE it?"
 
-The license that matters is the one belonging to the person whose **connections are used** when the flow runs. In most cases, this is the flow maker, because the maker's credentials are saved in the connections.
+The license that determines a flow's capacity depends on how the flow is triggered -- not on whose connections are used in the flow.
 
 The key rules:
 
-- **Manual trigger flows:** The person who selects "Run" uses their own connections. Their license applies.
-- **Automated/scheduled flows:** The flow runs using the connection owner's credentials. That person needs the license. Usually this is the maker.
+- **Automated or scheduled flows:** The **flow owner's** license is used. The flow owner is the person listed as the owner in flow properties (usually the creator). It doesn't matter who created the connections.
+- **Manual (instant) trigger flows:** The **person who triggers** the flow needs the license. Each user who selects "Run" must have the appropriate license.
 - **Flows triggered by Power Apps:** The flow uses the **app's license context**. If the app has a Premium license (per-app plan or the user running the app has Premium), the flow is covered.
 - **Flows triggered by Dynamics 365:** Flows running within a Dynamics 365 context use the Dynamics 365 license. Dataverse connectors are covered.
+- **Process license flows:** The per-flow Process license ($150/flow/mo) applies regardless of who runs the flow. No per-user license is needed for runners.
 
 > [!IMPORTANT]
-> The caller's license determines capacity, not the flow owner's license. If 100 users trigger a shared flow, each user needs the appropriate license (unless the flow uses a Process license, which covers all users).
+> Licensing is independent from whose connections are used in the flow. A flow can use connections created by multiple people, but only the owner's license (for automated/scheduled flows) or the triggering user's license (for instant flows) determines capacity.
 
 ### "What about scheduled flows?"
 
