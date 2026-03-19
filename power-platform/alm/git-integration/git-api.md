@@ -101,6 +101,39 @@ Don't use these parameters with this connection:
 - `SolutionUniqueName`
 - `UpstreamBranch`
 
+#### [Web API](#tab/webapi)
+
+This example shows how to use the [ConnectToGit action](xref:Microsoft.Dynamics.CRM.ConnectToGit) to connect your entire Dataverse environment to an Azure DevOps repository.
+
+**Request**
+
+```http
+POST [Organization URI]/api/data/v9.2/ConnectToGit HTTP/1.1
+Accept: application/json
+Content-Type: application/json; charset=utf-8
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+
+{
+   "GitFolder": "yourGitfolderName",
+   "Branch": "yourBranchName",
+   "ConnectionType": 1,
+   "GitProvider": 0,
+   "Organization": "yourOrganizationName",
+   "Project": "yourProjectName",
+   "Repository": "yourRepositoryName"
+}
+```
+
+**Response**
+
+```http
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+```
+
+[Learn how to invoke Web API actions](/power-apps/developer/data-platform/webapi/use-web-api-actions)
+
 #### [SDK for .NET](#tab/sdk)
 
 This static `ConnectDataverseEnvironment` method shows how to use the `ConnectToGit` message to connect your entire Dataverse environment to an Azure DevOps repository.
@@ -143,7 +176,7 @@ static void ConnectDataverseEnvironment(
 
     OrganizationRequest request = new()
     {
-        RequestName = "ConnectToGit", 
+        RequestName = "ConnectToGit",
         Parameters = parameters
     };
 
@@ -154,64 +187,12 @@ static void ConnectDataverseEnvironment(
 
 [Learn how to invoke Dataverse messages using the SDK for .NET](/power-apps/developer/data-platform/org-service/use-messages)
 
-#### [Web API](#tab/webapi)
-
-This example shows how to use the [ConnectToGit action](xref:Microsoft.Dynamics.CRM.ConnectToGit) to connect your entire Dataverse environment to an Azure DevOps repository.
-
-**Request**
-
-```http
-POST [Organization URI]/api/data/v9.2/ConnectToGit HTTP/1.1
-Accept: application/json
-Content-Type: application/json; charset=utf-8
-OData-MaxVersion: 4.0
-OData-Version: 4.0
-
-{
-   "GitFolder": "yourGitfolderName",
-   "Branch": "yourBranchName",
-   "ConnectionType": 1,
-   "GitProvider": 0,
-   "Organization": "yourOrganizationName",
-   "Project": "yourProjectName",
-   "Repository": "yourRepositoryName"   
-}
-```
-
-**Response**
-
-```http
-HTTP/1.1 204 No Content
-OData-Version: 4.0
-```
-
-[Learn how to invoke Web API actions](/power-apps/developer/data-platform/webapi/use-web-api-actions)
-
 ---
 
 
 ### Disconnect your entire Dataverse environment from Git source control
 
 This action removes the environment-level Git connection.  Don't use the `SolutionUniqueName` parameter for this operation. Dataverse automatically identifies and removes the environment-level Git connection.
-
-#### [SDK for .NET](#tab/sdk)
-
-The static `DisconnectDataverseEnvironment` method disconnects your entire Dataverse environment from Git source control.
-
-```csharp
-static void DisconnectDataverseEnvironment(IOrganizationService service) {
-
-   // Validate required parameters
-    ArgumentNullException.ThrowIfNull(service);
-
-   OrganizationRequest request = new("DisconnectFromGit");
-
-   service.Execute(request);
-
-}
-```
-
-[Learn how to invoke Dataverse messages using the SDK for .NET](/power-apps/developer/data-platform/org-service/use-messages)
 
 #### [Web API](#tab/webapi)
 
@@ -236,6 +217,25 @@ OData-Version: 4.0
 
 [Learn how to invoke Web API actions](/power-apps/developer/data-platform/webapi/use-web-api-actions)
 
+#### [SDK for .NET](#tab/sdk)
+
+The static `DisconnectDataverseEnvironment` method disconnects your entire Dataverse environment from Git source control.
+
+```csharp
+static void DisconnectDataverseEnvironment(IOrganizationService service) {
+
+   // Validate required parameters
+    ArgumentNullException.ThrowIfNull(service);
+
+   OrganizationRequest request = new("DisconnectFromGit");
+
+   service.Execute(request);
+
+}
+```
+
+[Learn how to invoke Dataverse messages using the SDK for .NET](/power-apps/developer/data-platform/org-service/use-messages)
+
 ---
 
 ### Connect the first solution to a Git repository
@@ -246,6 +246,42 @@ You need to include values for these parameters to specify the solution:
  
 - `RootFolder`
 - `SolutionUniqueName`
+
+#### [Web API](#tab/webapi)
+
+This example shows how to use the [ConnectToGit action](xref:Microsoft.Dynamics.CRM.ConnectToGit) to connect the first solution to a Git repository.
+
+
+**Request**
+
+```http
+POST [Organization URI]/api/data/v9.2/ConnectToGit HTTP/1.1
+Accept: application/json
+Content-Type: application/json; charset=utf-8
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+
+{
+   "GitFolder": "yourGitfolderName",
+   "Branch": "yourBranchName",
+   "ConnectionType": 1,
+   "GitProvider": 0,
+   "Organization": "yourOrganizationName",
+   "Project": "yourProjectName",
+   "Repository": "yourRepositoryName",
+   "RootFolder": "yourRootFolderName",
+   "SolutionUniqueName": "yourSolutionUniqueName"
+}
+```
+
+**Response**
+
+```http
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+```
+
+[Learn how to invoke Web API actions](/power-apps/developer/data-platform/webapi/use-web-api-actions)
 
 #### [SDK for .NET](#tab/sdk)
 
@@ -303,42 +339,6 @@ static void ConnectFirstSolution(
 
 [Learn how to invoke Dataverse messages using the SDK for .NET](/power-apps/developer/data-platform/org-service/use-messages)
 
-#### [Web API](#tab/webapi)
-
-This example shows how to use the [ConnectToGit action](xref:Microsoft.Dynamics.CRM.ConnectToGit) to connect the first solution to a Git repository.
-
-
-**Request**
-
-```http
-POST [Organization URI]/api/data/v9.2/ConnectToGit HTTP/1.1
-Accept: application/json
-Content-Type: application/json; charset=utf-8
-OData-MaxVersion: 4.0
-OData-Version: 4.0
-
-{
-   "GitFolder": "yourGitfolderName",
-   "Branch": "yourBranchName",
-   "ConnectionType": 1,
-   "GitProvider": 0,
-   "Organization": "yourOrganizationName",
-   "Project": "yourProjectName",
-   "Repository": "yourRepositoryName",
-   "RootFolder": "yourRootFolderName",
-   "SolutionUniqueName": "yourSolutionUniqueName"
-}
-```
-
-**Response**
-
-```http
-HTTP/1.1 204 No Content
-OData-Version: 4.0
-```
-
-[Learn how to invoke Web API actions](/power-apps/developer/data-platform/webapi/use-web-api-actions)
-
 ---
 
 ### Connect extra solutions to the same Git repository after you connect the initial solution
@@ -353,6 +353,35 @@ Set only these parameters:
 
 > [!IMPORTANT]
 > You must first connect the first solution before this works. See [Connect the first solution to a Git repository](#connect-the-first-solution-to-a-git-repository).
+
+#### [Web API](#tab/webapi)
+
+This example shows how to use the [ConnectToGit action](xref:Microsoft.Dynamics.CRM.ConnectToGit) to connect subsequent solutions to a Git repository.
+
+**Request**
+
+```http
+POST [Organization URI]/api/data/v9.2/ConnectToGit HTTP/1.1
+Accept: application/json
+Content-Type: application/json; charset=utf-8
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+
+{
+   "GitFolder": "yourGitfolderName",
+   "Branch": "yourBranchName",
+   "SolutionUniqueName": "yourSolutionUniqueName"
+}
+```
+
+**Response**
+
+```http
+HTTP/1.1 204 No Content
+OData-Version: 4.0
+```
+
+[Learn how to invoke Web API actions](/power-apps/developer/data-platform/webapi/use-web-api-actions)
 
 #### [SDK for .NET](#tab/sdk)
 
@@ -390,70 +419,11 @@ static void ConnectExtraSolution(
 
 [Learn how to invoke Dataverse messages using the SDK for .NET](/power-apps/developer/data-platform/org-service/use-messages)
 
-#### [Web API](#tab/webapi)
-
-This example shows how to use the [ConnectToGit action](xref:Microsoft.Dynamics.CRM.ConnectToGit) to connect subsequent solutions to a Git repository.
-
-**Request**
-
-```http
-POST [Organization URI]/api/data/v9.2/ConnectToGit HTTP/1.1
-Accept: application/json
-Content-Type: application/json; charset=utf-8
-OData-MaxVersion: 4.0
-OData-Version: 4.0
-
-{
-   "GitFolder": "yourGitfolderName",
-   "Branch": "yourBranchName",
-   "SolutionUniqueName": "yourSolutionUniqueName"
-}
-```
-
-**Response**
-
-```http
-HTTP/1.1 204 No Content
-OData-Version: 4.0
-```
-
-[Learn how to invoke Web API actions](/power-apps/developer/data-platform/webapi/use-web-api-actions)
-
 ---
 
 ### Disconnect a specific solution from Git source control while keeping other solutions connected
 
 Use this approach to remove source control for one solution without affecting others.
-
-#### [SDK for .NET](#tab/sdk)
-
-The static `DisconnectSolution` method removes source control for one solution without affecting others.
-
-```csharp
-static void DisconnectSolution(IOrganizationService service, 
-    string solutionUniqueName)
-{
-
-   // Validate required parameters
-    ArgumentNullException.ThrowIfNull(service);
-    ArgumentException.ThrowIfNullOrWhiteSpace(solutionUniqueName);
-
-    ParameterCollection parameters = new()
-    {
-        { "SolutionUniqueName", solutionUniqueName }
-    };
-
-    OrganizationRequest request = new()
-    {
-        RequestName = "DisconnectFromGit",
-        Parameters = parameters
-    };
-
-    service.Execute(request);
-}
-```
-
-[Learn how to invoke Dataverse messages using the SDK for .NET](/power-apps/developer/data-platform/org-service/use-messages)
 
 #### [Web API](#tab/webapi)
 
@@ -481,6 +451,36 @@ OData-Version: 4.0
 ```
 
 [Learn how to invoke Web API actions](/power-apps/developer/data-platform/webapi/use-web-api-actions)
+
+#### [SDK for .NET](#tab/sdk)
+
+The static `DisconnectSolution` method removes source control for one solution without affecting others.
+
+```csharp
+static void DisconnectSolution(IOrganizationService service,
+    string solutionUniqueName)
+{
+
+   // Validate required parameters
+    ArgumentNullException.ThrowIfNull(service);
+    ArgumentException.ThrowIfNullOrWhiteSpace(solutionUniqueName);
+
+    ParameterCollection parameters = new()
+    {
+        { "SolutionUniqueName", solutionUniqueName }
+    };
+
+    OrganizationRequest request = new()
+    {
+        RequestName = "DisconnectFromGit",
+        Parameters = parameters
+    };
+
+    service.Execute(request);
+}
+```
+
+[Learn how to invoke Dataverse messages using the SDK for .NET](/power-apps/developer/data-platform/org-service/use-messages)
 
 ---
 
