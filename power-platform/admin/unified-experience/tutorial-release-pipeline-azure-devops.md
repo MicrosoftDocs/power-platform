@@ -28,21 +28,21 @@ In this tutorial, learn how to:
 As an example of this scenario, a customer has a nightly build that compiles X++ code and produces a unified package. Each night, the latest package deploys to the test environment. After 24 hours of validation, a designated approver promotes the package to pre-production. The following Saturday at 3:00 AM UTC, after final approval, the package deploys to production.
 
 > [!IMPORTANT]
-> **Self-hosted Windows agents recommended.** The `PowerPlatformPackageDeploy` task requires a **Windows** agent, and deploying finance and operations updates typically takes over an hour to complete. Microsoft-hosted agents have a default job timeout that may not be sufficient for large deployments. We recommend using [self-hosted Windows agents](/azure/devops/pipelines/agents/windows-agent) with an extended timeout to avoid pipeline failures during deployment. If you use Microsoft-hosted agents, set **timeoutInMinutes** to at least **180** on each deployment job and monitor for timeout issues.
+> **Self-hosted Windows agents recommended.** The `PowerPlatformPackageDeploy` task requires a **Windows** agent, and deploying finance and operations updates typically takes over an hour to complete. Microsoft-hosted agents have a default job timeout that might not be sufficient for large deployments. Use [self-hosted Windows agents](/azure/devops/pipelines/agents/windows-agent) with an extended timeout to avoid pipeline failures during deployment. If you use Microsoft-hosted agents, set **timeoutInMinutes** to at least **180** on each deployment job and monitor for timeout problems.
 
 > [!NOTE]
-> **Audit and observability.** All package deployments to unified environments are recorded in Dataverse audit logs, providing a full history of what was deployed, when, and by whom. You can optionally forward these audit logs to Microsoft Purview for centralized compliance reporting, full traceability across environments, and integration with your organization's broader governance and observability tooling.
+> **Audit and observability.** Dataverse audit logs record all package deployments to unified environments, providing a full history of what was deployed, when, and by whom. You can optionally forward these audit logs to Microsoft Purview for centralized compliance reporting, full traceability across environments, and integration with your organization's broader governance and observability tooling.
 
 ## Before you begin
 
 - Complete the [Tutorial: Set up a nightly build pipeline for finance and operations apps using Azure DevOps](./tutorial-build-pipeline-azure-devops.md). This release pipeline consumes the **UnifiedPackage** artifact published by that build pipeline.
-- You need three unified environments in the Power Platform admin center: **Test**, **Pre-Production**, and **Production**. To provision these, see [Tutorial: Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md).
+- You need three unified environments in the Power Platform admin center: **Test**, **Pre-Production**, and **Production**. To provision these environments, see [Tutorial: Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md).
 - Install the [Power Platform Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools) extension (version 2.0.69 or later) in your Azure DevOps organization.
-- Set up a Microsoft Entra ID app registration and Power Platform service connections using workload identity federation as described in [Tutorial: Schedule environment copy and automated data import using Azure DevOps](./tutorial-scheduled-copy-with-data-import.md#step-1-register-an-application-in-microsoft-entra-id). You need one service connection per environment or a single connection with permissions across all three environments.
+- Set up a Microsoft Entra ID app registration and Power Platform service connections by using workload identity federation as described in [Tutorial: Schedule environment copy and automated data import using Azure DevOps](./tutorial-scheduled-copy-with-data-import.md#step-1-register-an-application-in-microsoft-entra-id). You need one service connection per environment or a single connection with permissions across all three environments.
 
 ### Service connections
 
-Create a Power Platform service connection for each target environment using workload identity federation. For each connection, add a corresponding federated credential on the same app registration in Microsoft Entra ID, with the subject identifier matching the connection name.
+Create a Power Platform service connection for each target environment by using workload identity federation. For each connection, add a corresponding federated credential on the same app registration in Microsoft Entra ID, with the subject identifier matching the connection name.
 
 | Service connection name | Target environment URL | Purpose |
 |:------------------------|:-----------------------|:--------|
@@ -50,7 +50,7 @@ Create a Power Platform service connection for each target environment using wor
 | `PowerPlatform-PreProd` | `https://yourpreprod.crm.dynamics.com` | Pre-production deployments |
 | `PowerPlatform-Prod` | `https://yourprod.crm.dynamics.com` | Production deployments |
 
-Each federated credential in the Azure portal uses:
+In the Azure portal, each federated credential uses:
 - **Issuer**: `https://vstoken.dev.azure.com/<AzureDevOpsOrganizationID>`
 - **Subject identifier**: `sc://<OrgName>/<ProjectName>/<ServiceConnectionName>`
 
@@ -61,7 +61,7 @@ For detailed setup instructions, see the [service connection walkthrough](./tuto
 Azure DevOps environments provide approval gates and deployment history tracking. Create three environments that correspond to your Power Platform environments.
 
 1. In your Azure DevOps project, go to **Pipelines** > **Environments**.
-1. Select **New environment** and create the following:
+1. Select **New environment** and create the following environments:
 
    | Environment name | Approvals | Additional checks |
    |:-----------------|:----------|:------------------|
@@ -71,13 +71,13 @@ Azure DevOps environments provide approval gates and deployment history tracking
 
 ### Configure the pre-production approval and delay
 
-1. Select the **PreProduction** environment, then select the **kebab menu (...)** > **Approvals and checks**.
+1. Select the **PreProduction** environment, and then select the **kebab menu (...)** > **Approvals and checks**.
 1. Select **Approvals** and add the user or group that must approve pre-production deployments. Set **Minimum number of approvals** to **1**.
 1. Select **Add check** > **Business Hours** (or **Invoke Azure Function** for a custom delay). Alternatively, you can use the **delayBeforeDeployment** option in the pipeline YAML (shown below) to enforce a 24-hour wait after the test environment completes.
 
 ### Configure the production approval
 
-1. Select the **Production** environment, then select the **kebab menu (...)** > **Approvals and checks**.
+1. Select the **Production** environment, and then select the **kebab menu (...)** > **Approvals and checks**.
 1. Select **Approvals** and add the user or group that must approve production deployments. Set **Minimum number of approvals** to **1**.
 
 ## Step 2: Create the release pipeline
@@ -319,22 +319,22 @@ The following diagram illustrates the flow through the three stages:
 
 ### Stage 2: Pre-production
 
-- **Trigger**: After the test environment succeeds, a 24-hour delay begins. This gives the team a full business day to validate the test envrionment deployment before the package moves forward.
+- **Trigger**: After the test environment succeeds, a 24-hour delay begins. This delay gives the team a full business day to validate the test environment deployment before the package moves forward.
 - **Approvals**: One designated approver must approve before deployment begins. The approver receives a notification from Azure DevOps when the delay completes and can approve or reject directly from the notification.
-- **Purpose**: Final validation in an environment that is as close to production as possible. This is where go/no-go decisions are made.
+- **Purpose**: Final validation in an environment that is as close to production as possible. This stage is where go/no-go decisions are made.
 
 ### Stage 3: Production
 
 - **Trigger**: After the pre-production environment succeeds, a manual validation step holds the pipeline until the approver confirms the Saturday 3:00 AM UTC maintenance window.
-- **Approvals**: One designated approver must approve the environment deployment gate. This is a separate approval from the manual validation step, providing a two-layer confirmation before production changes.
+- **Approvals**: One designated approver must approve the environment deployment gate. This approval is separate from the manual validation step, providing a two-layer confirmation before production changes.
 - **Purpose**: Deploy to production during a low-traffic maintenance window with explicit human approval at each checkpoint.
 
 > [!TIP]
-> For more precise scheduling, configure a business hours check on the production environment in Azure DevOps. Set the allowed deployment window to Saturday 3:00 AM - 7:00 AM UTC. This prevents accidental approvals from triggering a deployment outside the maintenance window.
+> For more precise scheduling, configure a business hours check on the production environment in Azure DevOps. Set the allowed deployment window to Saturday 3:00 AM - 7:00 AM UTC. This configuration prevents accidental approvals from triggering a deployment outside the maintenance window.
 
 ## Step 3: Add federated credentials for each service connection
 
-If you're using a single app registration for all three service connections, you need three federated credentials&mdash;one per connection. Each credential has a unique subject identifier.
+If you use a single app registration for all three service connections, you need three federated credentials&mdash;one for each connection. Each credential has a unique subject identifier.
 
 1. In the Azure portal, go to your app registration > **Certificates & secrets** > **Federated credentials**.
 1. Add three credentials:
@@ -351,12 +351,12 @@ If you're using a single app registration for all three service connections, you
 
 ## Step 4: Register the app user in each environment
 
-The application user tied to your app registration must exist in each target environment with sufficient permissions to deploy packages.
+You must create the application user tied to your app registration in each target environment. The user needs sufficient permissions to deploy packages.
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
-1. On the **Enviroments** page, select your environment.
+1. On the **Environments** page, select your environment.
 1. In the command bar, select **Settings**.
 1. Select **Users + permissions** > **Application users**.
 1. Select **New app user**. The **Create a new app user** pane appears.
@@ -370,17 +370,17 @@ For more information, see [Create an application user](/power-platform/admin/man
 ## Step 5: Run and monitor the pipeline
 
 1. After the nightly build completes, the release pipeline triggers automatically.
-1. Monitor **Stage 1 (Test)** in Azure DevOps. The deployment job downloads the unified package artifact and deploys it using `PowerPlatformPackageDeploy@2`.
-1. After test environment succeeds, the **24-hour delay** begins. The pipeline shows a "Waiting" status.
+1. Monitor **Stage 1 (Test)** in Azure DevOps. The deployment job downloads the unified package artifact and deploys it by using `PowerPlatformPackageDeploy@2`.
+1. After the test environment succeeds, the **24-hour delay** begins. The pipeline shows a "Waiting" status.
 1. When the delay completes, the designated approver receives a notification. After approval, **Stage 2 (Pre-Production)** deploys the package.
-1. After pre-production environment succeeds, the **manual validation** step holds the pipeline until the Saturday maintenance window. The approver confirms the timing and approves.
+1. After the pre-production environment succeeds, the **manual validation** step holds the pipeline until the Saturday maintenance window. The approver confirms the timing and approves.
 1. The **Production environment approval gate** triggers. After the designated approver approves, **Stage 3 (Production)** deploys the package.
 
 ### Viewing deployment history
 
-Each deployment is tracked in two places:
+Track each deployment in two places:
 
-- **Azure DevOps**: The **Environments** section shows a full deployment history per environment, including who approved each deployment and when.
+- **Azure DevOps**: The **Environments** section shows a full deployment history for each environment, including who approved each deployment and when.
 - **Dataverse audit logs**: In the Power Platform admin center, go to the environment and then select **Settings** > **Auditing** to view the package installation records. These logs capture the package name, version, deployment time, and the identity that performed the installation.
 
 ## Troubleshooting
