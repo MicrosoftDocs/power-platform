@@ -1,11 +1,11 @@
 ---
 title: "Tutorial: Schedule environment copy and automated data import using Azure DevOps"
-description: This tutorial demonstrates how to schedule a production to sandbox environment copy using Azure DevOps pipelines with Power Platform Build Tools, and automatically import a finance and operations data package after the copy completes.
+description: This tutorial demonstrates how to schedule a production-to-sandbox environment copy using Azure DevOps pipelines with Power Platform Build Tools, and automatically import a finance and operations data package after the copy completes.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/13/2026
+ms.date: 03/19/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType:
@@ -28,19 +28,19 @@ As an example of this scenario, a customer wants to refresh their sandbox enviro
 
 ## Before you begin
 
-- The **source** environment is your production environment (either a Lifecycle Services environment or a unified environment in the Power Platform admin center).
-- The **target** environment is a unified sandbox environment hosted by Microsoft Dataverse. To learn how to deploy one, go to [Tutorial: Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md).
-- Both environments must be provisioned in the **same region**. For general information on copying environments, go to [Copy an environment](../copy-environment.md).
+- The source environment is your production environment (either a Lifecycle Services environment or a unified environment in the Power Platform admin center).
+- The target environment is a unified sandbox environment hosted by Microsoft Dataverse. To learn how to deploy one, go to [Tutorial: Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md).
+- Both environments must be provisioned in the same region. For general information on copying environments, go to [Copy an environment](../copy-environment.md).
 - You need an [Azure DevOps](https://dev.azure.com) organization and project with permissions to create pipelines and service connections.
-- Install the **Power Platform Build Tools** extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools) in your Azure DevOps organization. Ensure you have version **2.0.69 or later**, which supports workload identity federation.
-- Prepare a **data package (.zip)** in the Data management workspace of your finance and operations apps. This package contains the data entities and configurations you want to import into the sandbox after each copy.
+- Install the **Power Platform Build Tools** extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools) in your Azure DevOps organization. Ensure you have version 2.0.69 or later, which supports workload identity federation.
+- Prepare a data package (.zip) in the data management workspace of your finance and operations apps. This package contains the data entities and configurations you want to import into the sandbox after each copy.
 
 ### About the DBMovementAPI user
 
-The finance and operations apps include an optional user account you can create called **DBMovementAPI**. When you perform an environment copy, this account is automatically enabled in the target environment if it was present in the source environment. This is significant because the DBMovementAPI user can be given permissions necessary to call the Data management package APIs, which means your automated pipeline can authenticate and trigger a data import immediately after the copy completes without any manual intervention and without any other users enabled to access the system besides the Administrator account.
+The finance and operations apps include an optional user account you can create called **DBMovementAPI**. When you perform an environment copy, this account is automatically enabled in the target environment if it was present in the source environment. This is significant because the DBMovementAPI user can be given permissions necessary to call the data management package APIs, which means your automated pipeline can authenticate and trigger a data import immediately after the copy completes without any manual intervention and without any other users enabled to access the system besides the administrator account.
 
 > [!IMPORTANT]
-> Ensure the **DBMovementAPI** user is created in your source (production) environment before performing the copy. You may leave it disabled in the source environment, but you will want to give it appropriate security roles and associate this user to a Microsoft Entra ID Application to have programmatic access to it. After the copy completes, this user is automatically enabled in the target sandbox and can be used to execute the data import step.
+> Ensure the DBMovementAPI user is created in your source (production) environment before performing the copy. You may leave it disabled in the source environment, but give it appropriate security roles and associate this user to a Microsoft Entra ID application to have programmatic access to it. After the copy completes, this user is automatically enabled in the target sandbox and can be used to execute the data import step.
 
 ## Step 1: Register an application in Microsoft Entra ID
 
@@ -48,14 +48,14 @@ To allow Azure DevOps to interact with the Power Platform APIs and finance and o
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and go to **Microsoft Entra ID** > **App registrations**.
 2. Select **New registration**.
-3. Enter a name such as `AzDevOps-PowerPlatform-Pipeline` and select **Register**.
+3. Enter a name such as **AzDevOps-PowerPlatform-Pipeline** and select **Register**.
 4. Note the **Application (client) ID** and **Directory (tenant) ID** for later use.
 
 ### Grant API permissions
 
 1. In your app registration, go to **API permissions** > **Add a permission**.
-2. Choose the "APIs my organization uses" tab and then search for  **Microsoft Dynamics ERP** (00000015-0000-0000-c000-000000000000) and grant all of the delegated permissions. 
-3. Add the app as an **Application User** in Power Platform with the **System Administrator** security role in both the source and target environments.  System administrator gives the ability to perform environment copy, backup, and restore.
+2. Choose the **APIs my organization uses** tab and then search for  **Microsoft Dynamics ERP** (00000015-0000-0000-c000-000000000000) and grant all of the delegated permissions. 
+3. Add the app as an **Application User** in Power Platform with the **System Administrator** security role in both the source and target environments.  The system administrator role gives the ability to perform environment copy, backup, and restore.
 
 > [!NOTE]
 > For detailed guidance on registering application users in Power Platform, see [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
@@ -70,10 +70,10 @@ Workload identity federation eliminates the need for client secrets by using Ope
 1. Search for and select **Power Platform**.
 1. Choose **Workload Identity federation (preview)** as the authentication method.
 1. Fill in the following fields:
-   - **Server URL**: The URL of your target Power Platform environment (for example, `https://yourorg.crm.dynamics.com`)
-   - **Tenant ID**: Your Microsoft Entra tenant ID
-   - **Application ID**: The client ID of the app registration from Step 1
-1. Name the service connection (for example, `PowerPlatform-Prod`) and select **Save**.
+   - **Server URL**: Enter the URL of your target Power Platform environment (for example, `**https://yourorg.crm.dynamics.com**`).
+   - **Tenant ID**: Enter your Microsoft Entra tenant ID.
+   - **Application ID**: Enter the client ID of the app registration from Step 1.
+1. Name the service connection (for example, **PowerPlatform-Prod**) and select **Save**.
 
 > [!IMPORTANT]
 > After saving, capture the **Issuer** and **Subject identifier** values displayed on the service connection page.
@@ -84,10 +84,10 @@ Workload identity federation eliminates the need for client secrets by using Ope
 2. Select **Certificates & secrets** > **Federated credentials** > **Add credential**.
 3. Choose the scenario **Other issuer**.
 4. Set the following values:
-   - **Issuer**: `Value from prior step`
-   - **Subject identifier**: `Value from prior step`
+   - **Issuer**: Enter the value from prior step.
+   - **Subject identifier**: Enter the value from prior step.
 
-5. Enter a **Name** for the credential (for example, `azdo-federation`) and select **Add**.
+5. Enter a **Name** for the credential (for example, **azdo-federation**) and select **Add**.
 
 ## Step 3: Create a scheduled Azure DevOps pipeline
 
@@ -95,7 +95,7 @@ Create a new YAML pipeline in your Azure DevOps project that runs on a schedule,
 
 ### Pipeline YAML
 
-Create a file named `scheduled-copy-and-import.yml` in your repository:
+Create a file named **scheduled-copy-and-import.yml** in your repository.
 
 ```yaml
 trigger: none
@@ -277,37 +277,37 @@ stages:
 
 ### Configure pipeline variables
 
-In your Azure DevOps pipeline, add the following variables (mark secrets as **secret**):
+In your Azure DevOps pipeline, add the following variables (mark secrets as **secret**).
 
 | Variable | Description | Secret |
 |:---------|:------------|:-------|
-| `TenantId` | Your Microsoft Entra tenant ID | No |
-| `ClientId` | The Application (client) ID from your app registration | No |
-| `ClientSecret` | A client secret for the app registration (used for F&O API calls) | Yes |
+| `TenantId` | Your Microsoft Entra tenant ID. | No |
+| `ClientId` | The application (client) ID from your app registration. | No |
+| `ClientSecret` | A client secret for the app registration (used for finance and operations API calls). | Yes |
 
 > [!NOTE]
 > The Power Platform Build Tools tasks use the service connection with workload identity federation (no secret needed). However, direct API calls to the finance and operations data management endpoint currently require a client credential flow. Store the client secret securely as a pipeline secret variable or in Azure Key Vault.
 
 ## Optional: Transactionless copy using the Power Platform API
 
-The `PowerPlatformCopyEnvironment@2` task used in the pipeline above performs a **full copy** of both configuration and transactional data. If you want to perform a **transactionless copy** — which copies code, configuration, master data, and reference data but truncates transaction tables — you need to call the [Power Platform Environment Copy API](/rest/api/power-platform/environmentmanagement/environment-copy/copy-environment) directly. This API exposes the `executeAdvancedCopyForFinanceAndOperations` option that isn't available in the Build Tools task today.
+The **PowerPlatformCopyEnvironment@2** task used in the pipeline above performs a full copy of both configuration and transactional data. If you want to perform a transactionless copy&mdash;which copies code, configuration, master data, and reference data but truncates transaction tables&mdash;you need to call the [Power Platform Environment Copy API](/rest/api/power-platform/environmentmanagement/environment-copy/copy-environment) directly. This API exposes the **executeAdvancedCopyForFinanceAndOperations** option that isn't available in the Build Tools task today.
 
 Transactionless copy significantly reduces storage consumption on sandbox environments. To learn more about how it works and which tables are truncated, see [Tutorial: Perform a transaction-less copy between environments](./tutorial-perform-transactionless-copy.md). To perform a transactionless copy through the Power Platform admin center UI instead of a pipeline, follow that tutorial.
 
 ### Additional prerequisites for transactionless copy
 
-The Power Platform Environment Copy API uses a different endpoint (`https://api.powerplatform.com`) than the Dataverse APIs used by the Build Tools tasks. This requires two additional authorization steps for your app registration:
+The Power Platform Environment Copy API uses a different endpoint (`https://api.powerplatform.com`) than the Dataverse APIs used by the Build Tools tasks. This requires two additional authorization steps for your app registration.
 
 1. **Power Platform RBAC role assignment (tenant scope):** Your service principal must be assigned the **Power Platform Contributor** role at the tenant scope. This grants permission to call the environment management APIs. For a step-by-step walkthrough, see [Tutorial: Assign role-based access control roles to service principals](/power-platform/admin/programmability-tutorial-rbac-role-assignment). For background on the RBAC model, see [Role-based access control for Power Platform admin center](/power-platform/admin/security/role-based-access-control).
 
 2. **Dataverse application user (environment scope):** Your service principal must also be registered as an **Application User** with the **System Administrator** security role in both the source and target Dataverse environments. This is needed because the copy operation accesses environment-level resources. For guidance, see [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
 
 > [!NOTE]
-> The RBAC role assignment at tenant scope is only required if you're performing a transactionless copy via the API. The standard full copy using the `PowerPlatformCopyEnvironment@2` task (shown in Step 3) only requires the Dataverse application user and the Build Tools service connection.
+> The RBAC role assignment at tenant scope is only required if you're performing a transactionless copy through the API. The standard full copy using the **PowerPlatformCopyEnvironment@2** task (shown in Step 3) only requires the Dataverse application user and the Build Tools service connection.
 
 ### Additional pipeline variables for transactionless copy
 
-Add these variables to your pipeline alongside the existing ones (mark secrets as **secret**):
+Add these variables to your pipeline alongside the existing ones (mark secrets as **secret**).
 
 | Variable | Description | Secret |
 |:---------|:------------|:-------|
@@ -315,11 +315,11 @@ Add these variables to your pipeline alongside the existing ones (mark secrets a
 | `TargetEnvironmentId` | The environment ID (GUID) of your target sandbox environment | No |
 
 > [!TIP]
-> You can find the environment ID in the Power Platform admin center by navigating to **Environments**, selecting the environment, and copying the ID from the **Environment details** page URL or the **Details** panel.
+> You can find the environment ID in the Power Platform admin center by navigating to **Environments**, selecting the environment, and copying the ID from the **Environment details** page URL or the **Details** pane.
 
 ### Replace the copy stage
 
-To use transactionless copy, replace the `CopyEnvironment` stage in the pipeline YAML with the following. This stage acquires a token for the Power Platform API, initiates the copy with the transactionless option, and polls until completion.
+To use transactionless copy, replace the **CopyEnvironment** stage in the pipeline YAML with the following. This stage acquires a token for the Power Platform API, initiates the copy with the transactionless option, and polls until completion.
 
 ```yaml
   - stage: CopyEnvironment
@@ -438,26 +438,26 @@ To use transactionless copy, replace the `CopyEnvironment` stage in the pipeline
               ClientSecret: $(ClientSecret)
 ```
 
-The rest of the pipeline (the `ImportDataPackage` stage) remains unchanged and runs after the transactionless copy completes, just as it does with the standard full copy.
+The rest of the pipeline (the **ImportDataPackage** stage) remains unchanged and runs after the transactionless copy completes, just as it does with the standard full copy.
 
 ### Transactionless copy troubleshooting
 
 | Issue | Resolution |
 |:------|:-----------|
 | 403 Forbidden when calling the Copy API | The service principal is missing the **Power Platform Contributor** RBAC role at tenant scope. Follow the [RBAC role assignment tutorial](/power-platform/admin/programmability-tutorial-rbac-role-assignment) to assign it. |
-| 401 Unauthorized when calling the Copy API | The token was acquired for the wrong audience. Ensure the scope is `https://api.powerplatform.com/.default`, not a Dataverse URL. |
-| Copy succeeds but transactions are still present | Verify that `executeAdvancedCopyForFinanceAndOperations` is set to `$true` in the request body. Also confirm the source environment has the latest platform update — transactionless copy requires a minimum platform version. |
+| 401 Unauthorized when calling the Copy API | The token was acquired for the wrong audience. Ensure the scope is `**https://api.powerplatform.com/.default**`, not a Dataverse URL. |
+| Copy succeeds but transactions are still present | Verify that **executeAdvancedCopyForFinanceAndOperations** is set to **$true** in the request body. Also confirm the source environment has the latest platform update&mdash;transactionless copy requires a minimum platform version. |
 | Application user not found error | Ensure the app registration is registered as an Application User with **System Administrator** role in both the source and target Dataverse environments. |
 
 ## Step 4: Prepare the data package
 
-1. In your **source** finance and operations environment, go to **Workspaces** > **Data management**.
-1. Create a new **Export** project that includes the data entities you want to load into the sandbox after each copy (for example, sample transactions, test data, or environment-specific configurations).
-1. Run the export and download the resulting **.zip** file.
-1. Commit this .zip file to the **master** branch of your Azure DevOps repository at `DeveloperData/SampleTransactions.zip`, matching the `DataPackagePath` variable in the pipeline YAML.
+1. In your source finance and operations environment, go to **Workspaces** > **Data management**.
+1. Create a new export project that includes the data entities you want to load into the sandbox after each copy. For example, sample transactions, test data, or environment-specific configurations.
+1. Run the export and download the resulting .zip file.
+1. Commit this .zip file to the master branch of your Azure DevOps repository at **DeveloperData/SampleTransactions.zip**, matching the **DataPackagePath** variable in the pipeline YAML.
 
 > [!TIP]
-> To define what gets imported after a copy, create a **Data project** in the Data management workspace with a name matching the `definitionGroupId` in the pipeline YAML (for example, `SampleTransactions`). This project must exist in the **target** environment. Since it gets overwritten during each copy, you may need to recreate it or include it as part of your data package.
+> To define what gets imported after a copy, create a data project in the data management workspace with a name matching the **definitionGroupId** in the pipeline YAML (for example, **SampleTransactions**). This project must exist in the target environment. Since it gets overwritten during each copy, you may need to recreate it or include it as part of your data package.
 
 ## Step 5: Run and verify the pipeline
 
@@ -474,7 +474,7 @@ The rest of the pipeline (the `ImportDataPackage` stage) remains unchanged and r
 | Service connection authentication fails | Verify the **Issuer** and **Subject identifier** in your federated credential match the values shown on the Azure DevOps service connection page. Check the pipeline logs for the expected values. |
 | Copy operation times out | Environment copies can take several hours for large databases. Increase the `timeoutInMinutes` value on the copy job. |
 | Data import returns 401 Unauthorized | Ensure the **DBMovementAPI** user is enabled in the source environment and that your app registration has the required permissions on the target environment. |
-| Data import status is "Failed" | Review the execution details in **Data management** > **Job history** in your finance and operations environment for specific entity errors. |
+| Data import status is **Failed** | Review the execution details in **Data management** > **Job history** in your finance and operations environment for specific entity errors. |
 
 ## Next steps
 
