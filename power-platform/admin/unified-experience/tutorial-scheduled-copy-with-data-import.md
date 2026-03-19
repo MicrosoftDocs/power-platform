@@ -454,7 +454,7 @@ The rest of the pipeline (the **ImportDataPackage** stage) remains unchanged and
 1. In your source finance and operations environment, go to **Workspaces** > **Data management**.
 1. Create a new export project that includes the data entities you want to load into the sandbox after each copy. For example, sample transactions, test data, or environment-specific configurations.
 1. Run the export and download the resulting .zip file.
-1. Commit this .zip file to the **master branch** of your Azure DevOps repository at **DeveloperData/SampleTransactions.zip**, matching the **DataPackagePath** variable in the pipeline YAML.
+1. Commit this .zip file to the **master** branch of your Azure DevOps repository at **DeveloperData/SampleTransactions.zip**, matching the **DataPackagePath** variable in the pipeline YAML.
 
 > [!TIP]
 > To define what gets imported after a copy, create a data project in the data management workspace with a name matching the **definitionGroupId** in the pipeline YAML (for example, **SampleTransactions**). This project must exist in the target environment. Since it gets overwritten during each copy, you may need to recreate it or include it as part of your data package.
