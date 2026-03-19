@@ -40,7 +40,8 @@ You must have one of the following security roles to access the **Support reques
 - Partner Delegated Admin
 - Power Apps Environment Admin
 - Power Apps Full Admin
-- Power BI Admin
+- Fabric Admin
+
 - Power Platform Admin
 - Security Admin
 - Service Admin
