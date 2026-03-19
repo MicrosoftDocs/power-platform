@@ -22,7 +22,8 @@ A plain-language guide to what your Microsoft 365 license includes and when you 
 | **Premium connectors** (SQL Server, Dataverse, HTTP with Azure AD, Salesforce, SAP, ServiceNow, and similar) | No | Yes | Yes |
 | **Custom connectors** | No | Yes | Yes |
 | **On-premises data gateway** | No | Yes | Yes |
-| **AI Builder / Copilot credits** | Limited | Included (tenant pool) | Included (tenant pool) |
+| **AI Builder credits** (legacy) | Limited | 5K seeded to tenant pool (removed Nov 2026) | 5K seeded to tenant pool (removed Nov 2026) |
+| **Copilot Credits** (for agents) | No | Via Copilot Studio pack or pay-as-you-go | Via Copilot Studio pack or pay-as-you-go |
 | **Desktop flows (attended RPA)** | No | Yes | Yes |
 | **Unattended desktop flows** | No | No | Yes (with add-on) |
 | **Per-flow licensing** (no per-user license needed for runners) | No | No | Yes |
@@ -90,16 +91,24 @@ There's one exception: if a scheduled flow is **manually associated to a Power A
 
 ### "What are Copilot credits and why should I care?"
 
-AI features in Power Automate, like AI Builder actions, Copilot in the designer, and AI-generated expressions, consume **credits** from your tenant's shared pool.
+AI features in Power Automate use **two separate credit currencies**:
 
-- **Premium users** contribute credits to the tenant pool automatically.
-- **M365-only users** get limited access to AI features.
-- Credits are shared across the tenant, not per-user.
+1. **AI Builder credits** (legacy, being phased out) -- used by AI Builder actions in classic cloud flows and Power Apps. Your tenant gets a shared pool from Premium licenses (5,000 credits/license) or AI Builder add-ons (1M credits/add-on). These seeded credits are **being removed November 1, 2026**.
 
-To check your tenant's credit balance: go to **Power Platform admin center** > **Resources** > **Capacity** > **AI Builder credits**.
+1. **Copilot Credits** (new) -- required for Copilot Studio agents and agent flows. Also used as overflow when AI Builder credits run out in classic flows. Sourced from Copilot Studio prepaid packs or pay-as-you-go. New customers can no longer purchase AI Builder add-ons and must use Copilot Credits instead.
 
-> [!NOTE]
-> If your tenant is running low on credits, ask your admin. Credits can be purchased as add-ons, and some features can be turned off to conserve credits.
+**Which credits does my flow use?**
+
+- **Classic cloud flows** (AI Builder actions, Copilot in the designer, AI-generated expressions): AI Builder credits first. If those are exhausted, falls back to Copilot Credits.
+- **Agent flows**: Always Copilot Credits. When you convert a classic flow to an agent flow, it switches to Copilot Credits only.
+
+**How to check your balance:**
+
+- **AI Builder credits**: **Power Platform admin center** > **Licensing** > **Capacity add-ons** > **Summary** tab.
+- **Copilot Credits**: See [Copilot Studio licensing](/microsoft-copilot-studio/requirements-licensing-subscriptions).
+
+> [!IMPORTANT]
+> AI Builder seeded credits from Premium licenses are being removed November 1, 2026. Plan to transition to Copilot Credits. For more details, see [AI Builder credit management](/ai-builder/credit-management) and [Message-based licensing](/ai-builder/message-management).
 
 ### "My flow worked yesterday but now says Premium. What happened?"
 
