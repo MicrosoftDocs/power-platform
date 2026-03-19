@@ -90,7 +90,6 @@ The following examples describe scenarios for using `ConnectToGit` and `Disconne
 - [Connect the first solution to a Git repository](#connect-the-first-solution-to-a-git-repository)
 - [Connect extra solutions to the same Git repository after you connect the initial solution](#connect-extra-solutions-to-the-same-git-repository-after-you-connect-the-initial-solution)
 - [Disconnect a specific solution from Git source control while keeping other solutions connected](#disconnect-a-specific-solution-from-git-source-control-while-keeping-other-solutions-connected)
-- [Disconnect all solutions from Git source control at once](#disconnect-all-solutions-from-git-source-control-at-once)
 
 ### Connect your entire Dataverse environment to an Azure DevOps repository
 
@@ -104,7 +103,7 @@ Don't use these parameters with this connection:
 
 #### [SDK for .NET](#tab/sdk)
 
-This static ConnectDataverseEnvironment method shows how to use the ConnectToGit message to connect your entire Dataverse environment to an Azure DevOps repository.
+This static `ConnectDataverseEnvironment` method shows how to use the `ConnectToGit` message to connect your entire Dataverse environment to an Azure DevOps repository.
 
 ```csharp
 private const int GitProviderAzureDevOps = 0;
@@ -336,6 +335,7 @@ OData-Version: 4.0
 ```
 
 [Learn how to invoke Web API actions](/power-apps/developer/data-platform/webapi/use-web-api-actions)
+
 ---
 
 ### Connect extra solutions to the same Git repository after you connect the initial solution
@@ -476,53 +476,6 @@ OData-Version: 4.0
 
 ---
 
-### Disconnect all solutions from Git source control at once
-
-This action removes all solution-level Git connections in the environment.
-
-**TODO**: How is this different from [Disconnect your entire Dataverse environment from Git source control](#disconnect-your-entire-dataverse-environment-from-git-source-control)??
-
-#### [SDK for .NET](#tab/sdk)
-
-The static `DisconnectDataverseEnvironment` method  removes all solution-level Git connections in the environment.
-
-```csharp
-static void DisconnectDataverseEnvironment(IOrganizationService service) {
-
-   OrganizationRequest request = new("DisconnectFromGit");
-
-   service.Execute(request);
-
-}
-```
-
-[Learn how to invoke Dataverse messages using the SDK for .NET](/power-apps/developer/data-platform/org-service/use-messages)
-
-#### [Web API](#tab/webapi)
-
-This example shows how to use the [DisconnectFromGit action](xref:Microsoft.Dynamics.CRM.DisconnectFromGit) to remove all solution-level Git connections in the environment.
-
-**Request**
-
-```http
-POST [Organization URI]/api/data/v9.2/DisconnectFromGit HTTP/1.1
-Accept: application/json
-Content-Type: application/json; charset=utf-8
-OData-MaxVersion: 4.0
-OData-Version: 4.0
-```
-
-**Response**
-
-```http
-HTTP/1.1 204 No Content
-OData-Version: 4.0
-```
-
-[Learn how to invoke Web API actions](/power-apps/developer/data-platform/webapi/use-web-api-actions)
-
----
-
 ## Error handling
 
 Neither the `ConnectToGit` nor the `DisconnectFromGit` API returns a value when it completes successfully. When an API fails, it returns an error.
@@ -535,7 +488,6 @@ Common error scenarios include:
 - **Solution not found**: Verify the `SolutionUniqueName` exists in your environment.
 - **Branch does not exist**: Confirm the specified branch exists in the repository.
 
----
 
 ## Support and additional resources
 
