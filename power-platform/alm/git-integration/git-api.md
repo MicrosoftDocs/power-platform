@@ -201,6 +201,9 @@ The static `DisconnectDataverseEnvironment` method disconnects your entire Datav
 ```csharp
 static void DisconnectDataverseEnvironment(IOrganizationService service) {
 
+   // Validate required parameters
+    ArgumentNullException.ThrowIfNull(service);
+
    OrganizationRequest request = new("DisconnectFromGit");
 
    service.Execute(request);
@@ -239,7 +242,7 @@ OData-Version: 4.0
 
 This connection establishes the repository link and folder structure for solution-level source control to the first solution in an environment.
 
-You need to include these parameters to specify the solution:
+You need to include values for these parameters to specify the solution:
  
 - `RootFolder`
 - `SolutionUniqueName`
@@ -430,6 +433,11 @@ The static `DisconnectSolution` method removes source control for one solution w
 static void DisconnectSolution(IOrganizationService service, 
     string solutionUniqueName)
 {
+
+   // Validate required parameters
+    ArgumentNullException.ThrowIfNull(service);
+    ArgumentException.ThrowIfNullOrWhiteSpace(solutionUniqueName);
+
     ParameterCollection parameters = new()
     {
         { "SolutionUniqueName", solutionUniqueName }
@@ -493,7 +501,7 @@ Common error scenarios include:
 
 For more information about source control integration with Dataverse, see:
 
-- [Overview of Git Integration in Power Platform](../git-integration/overview)
+- [Overview of Git Integration in Power Platform](overview.md)
 - [ConnectToGit Action](xref:Microsoft.Dynamics.CRM.ConnectToGit)
 - [DisconnectFromGit Action](xref:Microsoft.Dynamics.CRM.DisconnectFromGit)
 - [CommitToGit Action](xref:Microsoft.Dynamics.CRM.CommitToGit)
