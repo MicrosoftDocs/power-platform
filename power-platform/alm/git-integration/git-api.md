@@ -4,7 +4,7 @@ description: "Learn how to use the ConnectToGit and DisconnectFromGit APIs to pr
 author: caburk
 ms.subservice: alm
 ms.author: caburk
-ms.date: 03/18/2026
+ms.date: 03/19/2026
 ms.topic: concept-article
 ms.reviewer: mattp
 ---
@@ -13,7 +13,7 @@ ms.reviewer: mattp
 Use the `ConnectToGit` and `DisconnectFromGit` APIs to programmatically integrate your Microsoft Dataverse environment with Git source control. By using these APIs, you can connect individual solutions or entire environments to Git repositories hosted on Azure DevOps, and manage those connections through code.
 
 > [!IMPORTANT]
-> GitHub isn't currently supported.
+> Azure DevOps is currently the only supported Git provider.
 
 ## Prerequisites
 
@@ -22,7 +22,6 @@ Before using these APIs, ensure you have:
 - Access to a Microsoft Dataverse environment
 - System administrator permissions
 - Read and write access to a Git repository
-- Valid credentials for your source control provider
 
 ## ConnectToGit API
 
