@@ -3,7 +3,7 @@ title: Elastic compute for finance and operations apps
 description: Learn about elastic compute, which provides flexible and scalable compute power for Dynamics 365 finance and operations apps in unified environments.
 author: laneswenka
 ms.topic: concept-article
-ms.date: 03/18/2026
+ms.date: 03/20/2026
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
