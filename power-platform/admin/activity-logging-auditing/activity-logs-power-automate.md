@@ -12,7 +12,7 @@ search.audienceType:
 ---
 # View Power Automate activity logs in Microsoft Purview
 
-You can view Microsoft Power Automate administrative activities in Microsoft Purview, such as:
+You can view Microsoft Power Automate activities in Microsoft Purview, such as:
 
 - flow creations, edits, and deletions
 - flow permission changes
