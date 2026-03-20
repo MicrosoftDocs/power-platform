@@ -35,7 +35,7 @@ As an example of this scenario, a customer has X++ customizations for Dynamics 3
 
 ## Step 1: Obtain the NuGet build reference packages
 
-The X++ build process requires NuGet packages that contain the compiler tools and reference assemblies for the platform and application modules. A full build requires five packages:
+The X++ build process requires NuGet packages that contain the compiler tools and reference assemblies for the platform and application modules. A full build requires five packages.  Note that there is also an "Application" package but it is too large for Azure DevOps so we have split it in to 2 separate packages:
 
 | NuGet package | Purpose | LCS Shared Asset Library name |
 |:-------------|:--------|:------------------------------|
@@ -55,7 +55,7 @@ The X++ build process requires NuGet packages that contain the compiler tools an
 
 1. In your Azure DevOps project, go to **Artifacts** > **Create Feed**. Name the feed (for example, `FinOpsNuGet`) and select **Create**.
 1. Download the NuGet packages from the LCS Shared Asset Library that match your target environment version.
-1. Download [nuget.exe](https://www.nuget.org/downloads) and publish each package to your feed:
+1. Download [nuget.exe](https://www.nuget.org/downloads) and publish each package to your feed.  You may want to use the **Connect to feed** button in Azure DevOps to get the full URL to use in the below examples, as some older projects may have different URL structure.
 
    ```powershell
    nuget.exe push -Source "https://pkgs.dev.azure.com/<org>/<project>/_packaging/<feed>/nuget/v3/index.json" -ApiKey AZ Microsoft.Dynamics.AX.Platform.CompilerPackage.nupkg
@@ -105,7 +105,13 @@ This file specifies the exact versions of each NuGet package. Update the version
 
 ## Step 3: Create the build pipeline
 
-Create a file named `nightly-build.yml` in your repository. This pipeline compiles the X++ code, creates a Power Platform unified package, and publishes the artifacts.
+Create a file named `nightly-build.yml` in your repository using the YAML template below. This pipeline compiles the X++ code, creates a Power Platform unified package, and publishes the artifacts.  
+
+1. From Azure DevOps, click on **Pipelines** in the left navigation and then click the **Create new pipeline** button in the middle of the page.
+2. Under "Where is your code?" choose **Azure Repos Git**.
+3. Choose the name of your code repository.
+4. Under **Configure your pipeline** select **Existing Azure Pipelines YAML file**.
+5. Finally select 'nightly-build.yml' that was created earlier using the YAML template below.
 
 ### Pipeline variables
 
@@ -129,7 +135,7 @@ pool:
 
 variables:
   # -- NuGet package versions --
-  # Update these when applying a new quality update to your environments
+  # Update these only when required if you have new Nuget package versions that you must use.  
   PlatformVersion: '7.0.7367.146'
   ApplicationVersion: '10.0.1935.21'
 
