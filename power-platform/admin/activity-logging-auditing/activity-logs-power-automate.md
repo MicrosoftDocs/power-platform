@@ -3,7 +3,7 @@ title: View Power Automate activity logs in Microsoft Purview
 description: Learn how to access Power Automate activity logs in Microsoft Purview and explore what Power Automate activities you can monitor.
 author: grbarker
 ms.topic: how-to
-ms.date: 01/23/2026
+ms.date: 03/20/2026
 ms.subservice: admin
 ms.author: grbarker
 ms.reviewer: ellenwehrle
@@ -30,8 +30,8 @@ This article covers prerequisites, how to access the logs in Microsoft Purview, 
 To view Power Automate activity logs in Microsoft Purview, make sure you:
 
 - Review and complete all the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
-- Are an admin with a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Are assigned either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview.
+- Have a Microsoft 365 admin role with a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
+- Have either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview.
 
 Learn more:
 
@@ -53,8 +53,8 @@ The SDK layer handles logging, so a single action can trigger multiple logged ac
 |Flows | Created flow | A flow is created.|
 |Flows | Edited flow | An update is made to a flow.|
 |Flows | Deleted flow | A flow is deleted.|
-|Flow permissions | Edited permissions | Each time a user's permissions to a flow changes. For example, when a user is added as co-owner.|
-|Flow permissions | Deleted permissions | Each time a user's permissions to a flow is removed.|
+|Flow permissions | Edited permissions | Each time a user's permissions to a flow change. For example, when you add a user as co-owner.|
+|Flow permissions | Deleted permissions | Each time a user's permissions to a flow are removed.|
 |Trials | Started a paid trial | A user starts a paid trial.|
 |Trials | Renewed a paid trial | A user renews a paid trial.|
 |Hosted RPA | Microsoft Entra ID joined | A hosted RPA bot is joined to a customer's tenant Microsoft Entra ID.|
@@ -86,7 +86,7 @@ Schemas define which Power Automate fields are sent to the Microsoft Purview com
 |User UPN | `UserUPN` | :::no-loc text="Edm.String":::| No | Unique ID of the user. Always equivalent to `UserKey`.|
 ## Limitations
 
-- Purview audit logs capture **flow lifecycle events** (create, edit, delete) and permission changes. Individual flow runs, action executions, and connector calls at runtime aren't included in Purview audit logs.
+- Purview audit logs capture **flow lifecycle events** (create, edit, delete) and permission changes. They don't include individual flow runs, action executions, and connector calls at runtime.
 - Only cloud flow activities appear in the [Microsoft Purview portal](https://compliance.microsoft.com/). Desktop flow activities are available in the Microsoft Dataverse audit logs. You also have the option to [monitor desktop flow runs in Power Automate](/power-automate/desktop-flows/monitor-desktop-flow-runs).
 
 ## Monitor flow runs and performance
