@@ -53,4 +53,5 @@ Power Automate operational health metrics and recommendations are available in t
 | Success rate | Not applicable  |There are one or more runs that need your attention. | Review the list of runs and open flows or run details to troubleshoot.| 
 | Time in queue| Not applicable | Investigate and adjust the machine capacity and prioritization. | Your current machine capacity is preventing your desktop flows from running efficiently. Investigate and adjust the machine capacity and prioritization.  |
 
-
+## Known limitations
+- Only user‑authored Cloud flows are managed in Monitoring Hub. Flows that are system‑generated—such as those created automatically when [configuring service‑level agreements](/dynamics365/customer-service/administer/define-service-level-agreements#create-sla-kpis)—do not appear in the Monitoring area.
