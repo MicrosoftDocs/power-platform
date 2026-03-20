@@ -95,7 +95,7 @@ Select the environment and time period from the drop-down lists, and then select
 
 Currently, Power Apps analytics reports don't display model-driven apps data. Only canvas apps related data is displayed. 
 
-Some fields, such as the creator’s email address and the app or flow display name, may appear blank in exported reports. This is expected behavior, as these values are resolved at runtime and are not part of the underlying stored dataset.
+Some fields, such as the creator's email address and the app or flow display name, may appear blank in exported reports. This is expected behavior, as these values are resolved at runtime and are not part of the underlying stored dataset.
 
 ### Related content
 
