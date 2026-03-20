@@ -162,7 +162,7 @@ As a result, the agent counts between the two surfaces will differ. The Microsof
 
 ## Programmatic access
 
-Power Platform inventory data is available programmatically, supporting advanced scenarios such as automation, reporting, and integration with external tools.
+Power Platform inventory data is available programmatically, supporting advanced scenarios such as automation, reporting, and integration with external tools. For a complete list of resource types and their fields, see [Power Platform inventory schema reference](inventory-schema.md).
 
 ### Power Platform for Admins V2 connector
 
