@@ -16,6 +16,9 @@ contributors:
 
 Provide users with real-time, domain-specific AI insights by integrating Microsoft Copilot Studio agents directly into model-driven app forms. This architecture uses Power Apps Component Framework (PCF) controls to invoke Copilot Studio Agent APIs, enabling intelligent decision support for scenarios like clinical assessments, investment recommendations, and contextual guidance.
 
+> [!NOTE]
+> [Xrm.Copilot (Client API reference)](/power-apps/developer/model-driven-apps/clientapi/reference/xrm-copilot) used in this architecture is currently in preview and not intended for production use.
+
 > [!TIP]
 > This article provides an example scenario and visual representation of how to deliver contextual AI insights within model-driven app forms. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
