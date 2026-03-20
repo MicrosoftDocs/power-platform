@@ -4,7 +4,7 @@ description: Learn more about the metrics and recommendations for Power Automate
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 10/07/2025
+ms.date: 03/20/2026
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
@@ -54,4 +54,4 @@ Power Automate operational health metrics and recommendations are available in t
 | Time in queue| Not applicable | Investigate and adjust the machine capacity and prioritization. | Your current machine capacity is preventing your desktop flows from running efficiently. Investigate and adjust the machine capacity and prioritization.  |
 
 ## Known limitations
-- Only user‑authored Cloud flows are managed in Monitoring Hub. Flows that are system‑generated—such as those created automatically when [configuring service‑level agreements](/dynamics365/customer-service/administer/define-service-level-agreements#create-sla-kpis)—do not appear in the Monitoring area.
+- Only user‑authored cloud flows are managed in the **Monitor** area of the Power Platform admin center. Flows that are system‑generated, such as those created automatically when [configuring service‑level agreements](/dynamics365/customer-service/administer/define-service-level-agreements#create-sla-kpis), don't appear in the **Monitor** area.
