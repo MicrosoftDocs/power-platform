@@ -33,7 +33,7 @@ To view Power Automate activity logs in Microsoft Purview, make sure you:
 - Have a Microsoft 365 admin role with a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
 - Have either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview.
 
-Learn more:
+Learn more about auditing:
 
 - [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 - [Auditing overview](/power-apps/developer/data-platform/auditing/overview)
@@ -79,10 +79,10 @@ Schemas define which Power Automate fields are sent to the Microsoft Purview com
 |User | `UserKey` | :::no-loc text="Edm.String":::| No | A unique identifier of the user in Microsoft Entra ID.|
 |User type | `UserType` | :::no-loc text="Edm.String":::| No | The audit type (admin, regular, or system)|
 |Flow connector names | `FlowConnectorNames` | :::no-loc text="Edm.String":::| No | Connector names listed in the flow definition at the time of the event (for example, when a flow is created or edited).|
-|Sharing Permission | `SharingPermission` | :::no-loc text="Edm.String":::| No | Type of permission shared with another user (3 = "Owner"/ReadWrite, 2 = "Run-only user"/Read).|
+|Sharing permission | `SharingPermission` | :::no-loc text="Edm.String":::| No | Type of permission shared with another user (3 = "Owner"/ReadWrite, 2 = "Run-only user"/Read).|
 |Recipient UPN | `RecipientUPN` | :::no-loc text="Edm.String":::| No | If permission was updated, shows the UPN of the permission recipient.|
-|License Display Name | `LicenseDisplayName` | :::no-loc text="Edm.String":::| No | Display name of the license.|
-|User Type Initiated | `UserTypeInitiated` | :::no-loc text="Edm.Int32":::| No | Which type of user initiated the operation. Applicable for *delete flow* and *edit permissions* (1 = user, 2 = admin).|
+|License display name | `LicenseDisplayName` | :::no-loc text="Edm.String":::| No | Display name of the license.|
+|User type initiated | `UserTypeInitiated` | :::no-loc text="Edm.Int32":::| No | Which type of user initiated the operation. Applicable for *delete flow* and *edit permissions* (1 = user, 2 = admin).|
 |User UPN | `UserUPN` | :::no-loc text="Edm.String":::| No | Unique ID of the user. Always equivalent to `UserKey`.|
 ## Limitations
 
