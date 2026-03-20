@@ -53,7 +53,7 @@ jobs:
           GITHUB_OUTPUT: ${{ steps.validation_run.outputs.GITHUB_OUTPUT }}  
 
       - name: Add PR comment
-        uses: actions/github-script@v6
+        uses: actions/github-script@v8
         with:
           script: |
             github.rest.issues.createComment({
