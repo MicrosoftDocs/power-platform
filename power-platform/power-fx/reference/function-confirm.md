@@ -1,5 +1,5 @@
 ﻿---
-title: Confirm function reference for Power Fx
+title: Confirm function
 description: Learn how to use the Confirm function to display customizable confirmation dialogs in Power Fx apps, including options for titles, subtitles, and button labels.
 author: gregli-msft
 ms.subservice: power-fx
