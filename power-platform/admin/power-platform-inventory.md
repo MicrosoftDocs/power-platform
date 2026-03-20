@@ -4,7 +4,7 @@ description: Learn how to get a comprehensive, unified view of all agents, apps,
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 03/11/2026
+ms.date: 02/20/2026
 ms.topic: concept-article
 contributors:
     - Grayson-Bishop
@@ -15,7 +15,7 @@ contributors:
 
 Power Platform inventory gives tenant administrators a unified view of all agents, apps, and flows built on Power Platform across their organization. Administrators can discover, search, filter, and sort these resources to streamline common administrative tasks.
 
-By using Power Platform inventory, you can easily complete the following tasks:
+Power Platform inventory allows you to easily complete the following tasks:
 
 - **Spot your champions**: Quickly identify who's creating the most resources so you can recognize, nurture, and empower your top innovators.
 
@@ -63,54 +63,54 @@ To view the Power Platform inventory, you must hold one of the following tenant-
 
 ## Where to access Power Platform inventory
 
-You can access Power Platform inventory through multiple interfaces and APIs. By using these options, you can integrate inventory data into your workflows and tools of choice. The following sections list the primary ways to access inventory data.
+Power Platform inventory is available through multiple interfaces and APIs, allowing you to integrate inventory data into your workflows and tools of choice. The following sections list the primary ways to access inventory data.
 
 ### The Power Platform admin center user interface
 
 - **Manage > Inventory**: The main inventory page provides a unified view of all resources across your tenant.
 
-- **Manage > Copilot Studio:** Agents (Copilot Studio + Microsoft 365 Copilot Agent Builder), agent flows, and workflows.
+- **Manage > Copilot Studio:** Agents (Copilot Studio + Microsoft 365 Copilot Agent Builder), agent flows, and workflows
 
-- **Manage > Power Apps > App Inventory tab**: Canvas, model-driven, code, vibe, and App Builder apps.
+- **Manage > Power Apps > App Inventory tab**: Canvas, model-driven, code, vibe, and App Builder apps
 
-- **Manage > Power Automate > Flow Inventory tab**: Cloud flows.
+- **Manage > Power Automate > Flow Inventory tab**: Cloud flows
 
 For programmatic access options, see [Programmatic access](#programmatic-access) later in this article.
 
 ## Apply filters and sorts
 
-Power Platform inventory lets you filter and sort across all resource data, using any column or attribute. You can combine multiple filters to zero in on exactly the resources you need, whether you're tracking down a specific app or analyzing trends across environments. As you refine your criteria, you always see the total count of matching resources displayed directly above the resource table on the top-left, making it easy to gauge the size of your filtered dataset.
+Power Platform inventory lets you filter and sort across all resource data, using any column or attribute. You can combine multiple filters to zero in on exactly the resources you need, whether you're tracking down a specific app or analyzing trends across environments. As you refine your criteria, the total count of matching resources is always displayed directly above the resource table on the top-left, making it easy to gauge the size of your filtered dataset.
 
 For example, you can combine multiple filters to narrow down your results. Each filter you add is cumulative:
 
 1. **Environment type**: Select the **Environment type** column and select **Default**. You see all resources in the default environment.
 
-1. **Owner**: Select the **Owner** column and type the name of the person. You see all resources owned by this person in the default environment.
+2. **Owner**: Select the **Owner** column and type the name of the person. You see all resources owned by this person in the default environment.
 
-1. **Creation date**: Select the **Created on** column and apply the date filters from January 2025 to today's date. You see all resources owned by this person, in the default environment, that they created in the year 2025.
+3. **Creation date**: Select the **Created on** column and apply the date filters from January 2025 to today's date. You see all resources owned by this person, in the default environment, that they created in the year 2025.
 
 To clear all filters and sorts, select any column and choose **Clear all filters**.
 
-## Display more columns
+## Displaying more columns
 
 The inventory table provides the option to display more columns to help you better manage all your resources. To customize displayed columns, complete the following steps.
 
 1. Select the **Add or remove columns** icon next to the **Search** box.
 
-1. Select or clear columns you want to display or hide.
+1. Select or clear columns you wish to display or hide.
 
 ## Search the inventory
 
-Quickly search for keywords across all entries currently loaded in the inventory table. Use the **Search** box to help you find specific resources fast.
+Quickly search for keywords across all entries currently loaded in the inventory table. The **Search** box is designed to help you find specific resources fast.
 
 > [!NOTE]
 > The search only applies to resources visible in the user interface (up to 1,000 at a time). If your inventory exceeds this limit, apply filters to narrow down the results and bring the resources you need into view.
 
 ## View resource details
 
-- Select a resource, and then select the **Details** option in the command bar.
+- Select a resource, then select the **Details** option in the command bar.
 
-- Select the resource's display name to be redirected to its details page in the Copilot Studio, Power Apps, or Power Automate portal.
+- Or select the resource's display name to be redirected to its details page in the Copilot Studio, Power Apps, or Power Automate portal.
 
     > [!NOTE]
     > You need sufficient permission to access the resource details page. Without permission, you see a **This link is broken** error.
@@ -121,60 +121,60 @@ Quickly search for keywords across all entries currently loaded in the inventory
 
 Microsoft offers multiple admin surfaces that display agents, and you might notice that the agent counts differ across them. Each surface serves a different audience, shows different types of agents, and answers a different question. Understanding these differences helps you interpret the agent counts you see across your organization.
 
-### Power Platform inventory vs. Microsoft 365 admin center
+### Power Platform inventory vs. Microsoft 365 Admin Center
 
-The [Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps) shows agents that are **available to users in your tenant**. This view includes Microsoft first-party agents, third-party ISV agents, and org-created agents that you publish or share. Org-created agents in the Microsoft 365 admin center come from many authoring surfaces, including Teams Store Platform, Agent Toolkit, Foundry, Fabric, SharePoint, and more. It functions as a catalog of everything accessible to your employees.
+The [Microsoft 365 Admin Center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide) shows agents that are **available to users in your tenant**. This includes Microsoft 1st-party agents, third-party ISV agents, and org-created agents that have been published or shared. Org-created agents in the Microsoft 365 Admin Center come from many authoring surfaces, including Teams Store Platform, Agent Toolkit, Foundry, Fabric, SharePoint, and Groups. It functions as a catalog of everything accessible to your employees.
 
-Power Platform inventory, by contrast, shows only agents that were **built on Power Platform**. This includes both published and draft agents created in Copilot Studio or Microsoft 365 Copilot Agent Builder. It does not include first-party Microsoft agents, ISV agents, or agents created on other Microsoft surfaces.
+Power Platform inventory, by contrast, shows only agents that were **built on Power Platform**. This includes both published and draft agents created in Copilot Studio or Microsoft 365 Copilot Agent Builder. It does not include 1st-party Microsoft agents, ISV agents, or agents created on other Microsoft surfaces.
 
-As a result, the agent counts between the two surfaces differ. The Microsoft 365 admin center includes agents your organization didn't build. Power Platform inventory might include agents that don't appear in the Microsoft 365 admin center if those agents are in draft form and not yet published.
+As a result, the agent counts between the two surfaces will differ. The Microsoft 365 Admin Center includes agents your organization didn't build, while Power Platform inventory may include agents that don't appear in the Microsoft 365 Admin Center if those agents haven't been published yet (drafts).
 
 ### Summary of differences
 
-| | Power Platform inventory | Microsoft 365 admin center |
+| | Power Platform inventory | Microsoft 365 Admin Center |
 |---|---|---|
-| **Designed for** | IT admins (Power Platform) | IT admins (Microsoft 365) |
+| **Designed for** | IT admins (Power Platform) | IT admins (M365) |
 | **Shows** | Agents built on Power Platform | All agents available in your tenant (including agents from Teams Store Platform, Agent Toolkit, Foundry, Fabric, SharePoint, Groups, and more) |
 | **Includes drafts** | Yes | Published and shared only |
 | **Includes 1st-party / ISV** | No | Yes |
 | **Scoped to** | Environments (rolled up to tenant) | Tenant |
 
 > [!TIP]
-> If you're asked to report on your organization's agent count, clarify what type of count is needed: **total available agents** (Microsoft 365 admin center) or **org-created agents on Power Platform** (Power Platform inventory). Each number is correct within its own context.
+> If you're asked to report on your organization's agent count, clarify what type of count is needed: **total available agents** (Microsoft 365 Admin Center) or **org-created agents on Power Platform** (Power Platform inventory). Each number is correct within its own context.
 
 ## Known limitations
 
-- **Classic chatbots:** The new inventory page doesn't include classic chatbots. However, you can still find them by selecting **Manage** > **Copilot Studio** > **Classic chatbots**.
+- **Classic chatbots:** Classic chatbots aren't included in the new inventory page, but can still be found by selecting **Manage > Copilot Studio > Classic chatbots**.
 
-- **Environment name**: You need to use the full environment name when filtering by environment. Partial matches or substrings don't work.
+- **Environment name**: Filtering by environment requires the full environment name. Partial matches or substrings aren't supported.
 
-- **Multi-factor authentication (MFA) requirements for Azure Resource Manager**: Power Platform inventory needs access to Azure Resource Manager to get resource information. If your organization requires MFA through conditional access policies for Azure Resource Manager, inventory might not load. To fix this problem, work with your Entra ID administrator to include the Power Platform admin center application (client ID: `00b46ad5-e4ae-43ac-a878-281fc03d0839`) and the **Microsoft Azure Management** resource in your MFA conditional access policy.
+- **Multi-factor authentication (MFA) requirements for Azure Resource Manager**: Power Platform inventory requires access to Azure Resource Manager to retrieve resource information. If your organization enforces MFA via Conditional Access policies for Azure Resource Manager, inventory may fail to load. To resolve this, work with your Entra ID administrator to exclude either the Power Platform Admin Center application (client ID: `00b46ad5-e4ae-43ac-a878-281fc03d0839`) or the "Microsoft Azure Management" resource from your MFA Conditional Access policy.
 
-- **_Modified on_ and _Last modified by_ columns**: These columns don't work for agents and show the **–** (dash) character.
+- **_Modified on_ and _Last modified by_ columns**: These columns are currently nonfunctional for agents and are populated with the **–** (dash) character.
 
-- **_Owner_ column**: This column for cloud flows and agent flows currently shows the user who created the flow. It doesn't update when the owner changes.
+- **_Owner_ column**: This column for cloud flows and agent flows is currently populated with the user that created the flow, and isn't yet updated when the owner changes.
 
 - **Un-published model-driven apps:** Only published, model-driven apps are captured.
   
-- **Model-driven apps in the default environment:** The default environment comes with three preinstalled model-driven apps: Power Platform Environment Settings, Power Pages Management, and Solution Health Hub. These apps don't appear in the inventory initially unless you edit and republish them.
+- **Model-driven apps in the default environment:** The default environment comes with three preinstalled model-driven apps: Power Platform Environment Settings, Power Pages Management, and Solution Health Hub. These don't appear in the inventory initially unless they're edited and republished.
 
 - **Sovereign cloud**: [Power Platform inventory](power-platform-inventory.md) isn't currently available in the US Government Community Cloud (GCC, GCC-High, and DoD), 21Vianet (China), or Air Gapped environments.
 
 ## Programmatic access
 
-You can access Power Platform inventory data programmatically. This capability supports advanced scenarios such as automation, reporting, and integration with external tools.
+Power Platform inventory data is available programmatically, supporting advanced scenarios such as automation, reporting, and integration with external tools. For a complete list of resource types and their fields, see [Power Platform inventory schema reference](inventory-schema.md).
 
 ### Power Platform for Admins V2 connector
 
-You can query Power Platform inventory data directly from Power Automate by using the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/). Use the [Query Power Platform resources](/connectors/powerplatformadminv2/#query-power-platform-resources) action to run queries against your inventory and add the results to your automation workflows.
+You can query Power Platform inventory data directly from Power Automate using the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/). Use the [Query Power Platform resources](/connectors/powerplatformadminv2/#query-power-platform-resources) action to execute queries against your inventory and integrate results into your automation workflows.
 
 ### Power Platform API
 
-If you're new to the Power Platform API, see [Getting Started with Power Platform API](powerplatform-api-getting-started.md) for setup instructions and authentication details. After you set up the API, see the [Inventory API documentation](inventory-api.md) to learn how to query your inventory data.
+If you're new to the Power Platform API, review [Getting Started with Power Platform API](powerplatform-api-getting-started.md) for setup instructions and authentication details. Once you're set up, refer to the [Inventory API documentation](inventory-api.md) to learn how to query your inventory data.
 
 ### Azure Resource Graph
 
-You can programmatically query your Power Platform inventory by using Azure Resource Graph (ARG). You can access ARG queries through several Azure interfaces. For step-by-step instructions, see the following Azure Resource Graph quickstart guides:
+You can programmatically query your Power Platform inventory using Azure Resource Graph (ARG). ARG queries can be accessed through several Azure interfaces. For step-by-step instructions, refer to the official Azure Resource Graph quickstart guides for each method:
 
 - [Run Resource Graph query using Azure portal](/azure/governance/resource-graph/first-query-portal)
 
@@ -188,7 +188,7 @@ You can programmatically query your Power Platform inventory by using Azure Reso
 
 The following are example queries you can use with any of the Azure Resource Graph interfaces. All queries use the **PowerPlatformResources** table, which contains your organization's inventory data.
 
-#### Query 1: Total count of all resources
+#### Query 1: Total count of _all_ resources
 
 ```Kusto
 PowerPlatformResources
@@ -205,7 +205,7 @@ PowerPlatformResources
 
 #### Query 3: Discover available fields for a resource type
 
-The inventory schema evolves over time as new data fields are added. Use this query to see all available fields for a specific resource type. This query is the recommended way to stay up to date with available data.
+The inventory schema evolves over time as new data fields are added. Use this query to see all available fields for a specific resource type. This is the recommended way to stay up to date with available data.
 
 ```Kusto
 // Discover all available fields for Copilot Studio agents
@@ -281,7 +281,7 @@ PowerPlatformResources
 ```
 
 > [!TIP]
-> You can find the agent's ID in the Copilot Studio URL when viewing the agent, or in the **Name** column of the inventory table.
+> The agent's ID can be found in the Copilot Studio URL when viewing the agent, or in the **Name** column of the inventory table.
 
 #### Query 8: Items created in the past 24 hours
 
