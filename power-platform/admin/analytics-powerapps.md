@@ -4,7 +4,7 @@ description: Admins can view Microsoft Power Apps analytics in the Power Platfor
 author: Zeffin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/27/2026
+ms.date: 03/19/2026
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -14,6 +14,7 @@ contributors:
   - yingchin
   - isaacwinoto
   - nsalazargonz
+  - EllenWehrle
 ms.custom:
   - NewPPAC
   - sfi-ga-nochange
@@ -22,14 +23,14 @@ ms.custom:
 
 Analytics for the environment admin is available at the Microsoft Power Platform admin center. The admin reports provide a view into environment level usage, errors, service performance to drive governance, and change management services to users. These reports are available for canvas apps only and not available for model-driven apps.
 
-To access these reports:
+To access these Power Apps analytics reports:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, under **Products**, select **Power Apps**.
 1. View the reports on the Power Apps analytics page.
 
-:::image type="content" source="media/powerapps-analytics-menu.png" alt-text="Shows the menu on the Power Apps analytics page." lightbox="media/powerapps-analytics-menu.png":::
+:::image type="content" source="media/analytics-power-apps/analytics-power-apps-menu.png" alt-text="Shows the menu on the Power Apps analytics page." lightbox="media/analytics-power-apps/analytics-power-apps-menu.png":::
 
 ## Who can view these reports?
 
@@ -37,10 +38,11 @@ Admins with the these roles and a [license](pricing-billing-skus.md) can view th
 
 - Environment Admin - can view reports for the environments that the admin has access to.
 - Power Platform admin – can view reports for all environments.
-- Dynamics 365 admin - can view reports for all environments.
+- Dynamics 365 admin - can view reports for multiple environments.
 - Microsoft 365 Global admin – can view reports for all environments.
 
-For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
+> [!IMPORTANT]
+> Be sure to review the article, [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md) to ensure all considerations are understood.
 
 ## Data storage
 
@@ -52,11 +54,11 @@ There are six reports available for Power Apps admins. The last viewed environme
 
 **Usage** report is the default report available to environment admins. It provides total app launches and daily active users across all apps in the environment. As an admin, you can filter the view with attributes like device platform, player version, country/region, state, and city.
 
-:::image type="content" source="media/powerapps-analytics-usage.png" alt-text="Shows the Power Apps usage report." lightbox="media/powerapps-analytics-usage.png":::
+:::image type="content" source="media/analytics-power-apps/analytics-power-apps-usage.png" alt-text="Shows the Power Apps usage report." lightbox="media/analytics-power-apps/analytics-power-apps-usage.png":::
 
 **Toast Errors** report provides insights into the toast error trends, types, and counts per app to help drive improvements in app quality. The toast errors are errors displayed to the end users of the app.
 
-:::image type="content" source="media/powerapps-analytics-toast-errors.png" alt-text="Shows the Power Apps error report." lightbox="media/powerapps-analytics-toast-errors.png":::
+:::image type="content" source="media/analytics-power-apps/analytics-power-apps-toast.png" alt-text="Shows the Power Apps error report." lightbox="media/analytics-power-apps/analytics-power-apps-toast.png":::
 
 **Service Performance** report provides details of all standard and custom connectors to understand performance bottlenecks and client versus service API issues. As an environment admin, you get insights into:  
 
@@ -79,23 +81,23 @@ As an admin, you can analyze the number of connectors linked to each app, the sp
 
 The current iteration of this specific report doesn't have a download report feature.
 
-:::image type="content" source="media/powerapps-analytics-connector.png" alt-text="Shows the Power Apps analytics connector report." lightbox="media/powerapps-analytics-connector.png":::
+:::image type="content" source="media/analytics-power-apps/analytics-power-apps-connector.png" alt-text="Shows the Power Apps analytics connector report." lightbox="media/analytics-power-apps/analytics-power-apps-connector.png":::
 
 ## How do I change environments?
 
 You can change environments by selecting **Change Filter** on the page.
 
-:::image type="content" source="media/powerapps-analytics-filter.png" alt-text="Shows how to select change filter or Filter in Power Apps analytics." lightbox="media/powerapps-analytics-filter.png":::
+:::image type="content" source="media/analytics-power-apps/analytics-power-apps-filter.png" alt-text="Shows how to select change filter or Filter in Power Apps analytics." lightbox="media/analytics-power-apps/analytics-power-apps-filter.png":::
 
 Select the environment and time period from the drop-down lists, and then select **Apply** to save the changes. All Power Apps analytics reports now reflect this selection.
 
-:::image type="content" source="media/powerapps-analytics-change-environments.png" alt-text="Shows how to view and change environments in Power Apps analytics." lightbox="media/powerapps-analytics-change-environments.png":::
+:::image type="content" source="media/analytics-power-apps/analytics-power-apps-change-environments.png" alt-text="Shows how to view and change environments in Power Apps analytics." lightbox="media/analytics-power-apps/analytics-power-apps-change-environments.png":::
 
 ### Limitations of downloaded reports
 
 Currently, Power Apps analytics reports don't display model-driven apps data. Only canvas apps related data is displayed. 
 
-Some fields, such as the creator’s email address and the app or flow display name, may appear blank in exported reports. This is expected behavior, as these values are resolved at runtime and are not part of the underlying stored dataset.
+Some fields, such as the creator's email address and the app or flow display name, may appear blank in exported reports. This is expected behavior, as these values are resolved at runtime and are not part of the underlying stored dataset.
 
 ### Related content
 
