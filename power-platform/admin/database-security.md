@@ -10,7 +10,7 @@ contributors:
   - shahzorkhan123
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/13/2026
+ms.date: 03/23/2026
 search.audienceType: 
   - admin
 ms.custom:
@@ -66,6 +66,8 @@ The following list provides the predefined security roles in an environment that
 - System Customizer 
 - Website App Owner
 - Website Owner
+
+To learn more about these roles, such as their descriptions, see [Role name and description of a security role](security-roles-privileges.md#role-name-and-description-of-a-security-role).
 
 In addition to the predefined security roles described for Dataverse, other security roles might be available in your environment depending on the Power Platform components&mdash;Power Apps, Power Automate, Microsoft Copilot Studio&mdash;you have. The following table provides links to more information.
 
