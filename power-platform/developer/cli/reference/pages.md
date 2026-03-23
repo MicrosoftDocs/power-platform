@@ -180,6 +180,12 @@ Choose from configurationData / configurationDataRefrences / all - based on your
 
 Portal ID for the website under migration.
 
+#### `--resetMigration` `-rs`
+
+Resets the data model migration process.
+
+This parameter requires no value. It's a switch.
+
 #### `--revertToStandardDataModel` `-r`
 
 Revert site from enhanced to standard data model.

@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac package
 
-Commands for working with Dataverse package projects
+Commands for working with Dataverse package projects.
 
 [!INCLUDE [package-intro](includes/package-intro.md)]
 

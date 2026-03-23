@@ -4,7 +4,7 @@ description: Use the Support experience to contact a Microsoft support represent
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/04/2026
+ms.date: 03/19/2026
 ms.subservice: admin
 ms.author: johhar 
 ms.reviewer: sericks
@@ -13,6 +13,7 @@ search.audienceType:
 ms.contributors:
   - lsuresh
 contributors:
+  - royrubinstein
   - prabhav
   - lavanyapg
 ms.custom: sfi-image-nochange
@@ -40,7 +41,8 @@ You must have one of the following security roles to access the **Support reques
 - Partner Delegated Admin
 - Power Apps Environment Admin
 - Power Apps Full Admin
-- Power BI Admin
+- Fabric Admin
+
 - Power Platform Admin
 - Security Admin
 - Service Admin
