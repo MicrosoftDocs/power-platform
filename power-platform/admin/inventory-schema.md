@@ -4,19 +4,19 @@ description: Learn about the resource types and fields available in Power Platfo
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 03/17/2026
+ms.date: 03/23/2026
 ms.topic: concept-article
 ---
 
 # Power Platform inventory schema reference
 
-Power Platform inventory exposes resource data through the `PowerPlatformResources` table in [Azure Resource Graph](/azure/governance/resource-graph/overview). This article describes the resource types and fields available in that table so you can build targeted queries and understand the data model behind the [Power Platform inventory](power-platform-inventory.md) experience.
+Power Platform inventory exposes resource data through the PowerPlatformResources table in [Azure Resource Graph](/azure/governance/resource-graph/overview). This article describes the resource types and fields available in that table so you can build targeted queries and understand the data model behind the [Power Platform inventory](power-platform-inventory.md) experience.
 
 For information about querying the table programmatically, see [Power Platform inventory API](inventory-api.md). For the full REST API reference, see the [Power Platform REST API documentation](/rest/api/power-platform/).
 
 ## Resource types
 
-Every record in the `PowerPlatformResources` table has a `type` field that identifies the resource type. The following table lists all supported types.
+Every record in the PowerPlatformResources table has a **type** field that identifies the resource type. The following table lists all supported types.
 
 | Display name | `type` value |
 |---|---|
@@ -31,9 +31,9 @@ Every record in the `PowerPlatformResources` table has a `type` field that ident
 
 ## Shared resource fields
 
-The following fields are available on all resource types in the `PowerPlatformResources` table.
+The following fields are available on all resource types in the PowerPlatformResources table.
 
-| UX name | API field path | Data type | Description | Example | Status |
+| User experience name | API field path | Data type | Description | Example | Status |
 |---|---|---|---|---|---|
 | Item name | `properties.displayName` | string | The display name of the resource. | `Expense Report App` | Generally available |
 | Item type | `type` | string | The resource type identifier (see [Resource types](#resource-types)). | `microsoft.powerapps/canvasapps` | Generally available |
@@ -171,8 +171,6 @@ The following values can appear in the `properties.channels` array.
 | Dynamics 365 |
 | Facebook |
 | WhatsApp |
-
-
 
 ## Environments
 
