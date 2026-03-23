@@ -1,24 +1,19 @@
 ---
 title: Get started with the SAP ERP connector
 description: Learn how to set up Power Platform's SAP ERP connector so you can start creating solutions that work with your SAP environment.
-author: ryanb58
-ms.author: tbrazelton
+author: haowusky
+ms.author: hawu1
 contributors:
-  - robinsonshields
-  - microsoft-george
   - tverhasselt
   - galitskyd
   - microsoft-dustin
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
   - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 08/15/2024
+ms.date: 03/17/2026
 ms.service: power-platform
 ms.subservice: sap
-ms.custom: ignite-2024
 # Customer intent: As an administrator, I want to learn about the SAP ERP connector, so I can determine which connection method I want to use to connect Power Platform and SAP.
 ---
 
@@ -27,18 +22,18 @@ ms.custom: ignite-2024
 The [SAP ERP connector](/connectors/saperp) for Power Platform helps you seamlessly integrate your SAP systems with Microsoft Power Platform. This article walks you through setting up the connector as a proof of concept.
 
 > [!IMPORTANT]
-> **The settings and recommendations presented in this article are only intended to help you set up a proof of concept and are not intended for production use.** Review the [Microsoft Power Platform admin documentation](/power-platform/admin/) and consult your security team, internal policies, and Microsoft Partner for guidance in setting up the SAP ERP connector in a production environment.
+> **The settings and recommendations presented in this article are only intended to help you set up a proof of concept and aren't intended for production use.** Review the [Microsoft Power Platform admin documentation](/power-platform/admin/) and consult your security team, internal policies, and Microsoft Partner for guidance in setting up the SAP ERP connector in a production environment.
 
 ## Prerequisites
 
-It's important that you review the following to ensure you can move forward with the steps to connect Power Platform and SAP with the SAP ERP connector:
+Review the following prerequisites to ensure you can move forward with the steps to connect Power Platform and SAP by using the SAP ERP connector:
 
 - [Administration](/power-platform/admin/admin-documentation) privileges
-- [SAP ERP connector ](/connectors/saperp/#pre-requisites) requirements.
+- [SAP ERP connector](/connectors/saperp/#pre-requisites) requirements.
 
 ## Set up your on-premises data gateway
 
-An on-premises data gateway acts as a bridge to securely transfer data between on-premises systems and Microsoft cloud services. Installation of the on-premises data gateway includes installing several components on the same network domain as the Windows virtual machine (VM) that hosts the gateway.
+An on-premises data gateway acts as a bridge to securely transfer data between on-premises systems and Microsoft cloud services. When you install the on-premises data gateway, you install several components on the same network domain as the Windows virtual machine (VM) that hosts the gateway.
 
 1. [Download](https://aka.ms/opdg) and [install](/data-integration/gateway/service-gateway-install#download-and-install-a-standard-gateway) the on-premises data gateway on your Windows VM.
 
@@ -84,7 +79,7 @@ To enable the on-premises data gateway to communicate with your SAP system, you 
 
    ``` json {"AppServerHost": "sap.example.com","Client": "100" "SystemNumber": "00", "LogonType": "ApplicationServer"} ```
 
-   For more parameter options, refer to the [documentation](/connectors/saperp/#call-sap-function-(v3)-(preview)).
+   For more parameter options, see the [documentation](/connectors/saperp/#call-sap-function-(v3)-(preview)).
 
 1. For **RFC Name**, enter `STFC_CONNECTION`.
 1. Wait for the input parameters to load.
@@ -92,12 +87,12 @@ To enable the on-premises data gateway to communicate with your SAP system, you 
 1. Save your flow.
 1. Select **Test**.
 
-After you verify that the SAP action is working, learn [best practices](/power-platform/well-architected/) for building powerful Power Platform solutions that work with your SAP system. You can also try out more complex functions in your flows.
+After you verify that the SAP action works, learn [best practices](/power-platform/well-architected/) for building powerful Power Platform solutions that work with your SAP system. You can also try out more complex functions in your flows.
 
 ## Troubleshooting tips
 
-- If you see an *SAP Library load failure* error, make sure that the SAP .NET connector is installed correctly and then restart the on-premises data gateway.
-- For connection issues, double-check your SAP credentials and System ID.
+- If you see an *SAP Library load failure* error, make sure that the SAP .NET connector is installed correctly. Then restart the on-premises data gateway.
+- For connection problems, double-check your SAP credentials and System ID.
 - Remember that the first connection might take up to two minutes to establish.
 
 ## Next step

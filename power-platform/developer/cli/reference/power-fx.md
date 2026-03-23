@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac power-fx
 
-(Preview) Commands for working with Power Fx
+(Preview) Commands for working with Power Fx.
 
 [!INCLUDE [power-fx-intro](includes/power-fx-intro.md)]
 

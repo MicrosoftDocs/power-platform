@@ -1,5 +1,5 @@
 ---
-title: Create an import deployment configuration
+title: Create an import deployment configuration (Deprecated)
 description: Learn how to create a deployment configuration file that contains connection information, environment variables, and other settings that are used to configure a solution that's imported from source control in ALM Accelerator for Power Platform.
 ms.topic: how-to
 ms.date: 05/22/2023
@@ -11,6 +11,8 @@ ms.custom: bap-template
 ---
 
 # Create an import deployment configuration
+
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 
 Makers can use ALM Accelerator components to apply source control strategies with Azure DevOps, including fully automated builds and deployments, without needing intimate knowledge of downstream technologies or manual intervention. The ability to import solutions from source control into a maker environment is a key component of the ALM Accelerator. When makers import a solution from source control, they can select a deployment configuration file that contains connection information, environment variables, and other settings that are used to configure the solution.
 
