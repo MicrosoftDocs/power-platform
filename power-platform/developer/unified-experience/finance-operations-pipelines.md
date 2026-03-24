@@ -79,17 +79,17 @@ After installing or updating to the latest version of the Power Platform Visual 
 1. From within Visual Studio, connect to a Dataverse by clicking **Tools** > **Connect to Dataverse**.
 1. Navigate to **Tools** > **Options** > **Power Platform Tools** > **General**, and then enable the **Download Dynamics 365 FnO NuGets for CI/CD** option.
 
-    :::image type="content" source="media/configure-nuget-download/image1.png" alt-text="Tool configuration options":::
+    :::image type="content" source="media/configure-nuget-download/fno-configure-nuget.png" alt-text="Tool configuration options":::
 
 1. In the **Tools** menu, select **Download Dynamics365 FnO NuGets for CI/CD**.
 
-    :::image type="content" source="media/configure-nuget-download/image2.png" alt-text="Tool menu options":::
+    :::image type="content" source="media/configure-nuget-download/fno-menu-download.png" alt-text="Tool menu options":::
 
 1. After the **Download Packages** form appears, select the application release desired from the drop-down list.
 1. Optionally, check (click) the **Select specific NuGet packages** option to specify the desired packages. Otherwise, all packages for the given release are downloaded.
 1. Specify the location where the package files are going to be downloaded to in the **Download location** field.
 
-    :::image type="content" source="media/configure-nuget-download/image3.png" alt-text="Download form":::
+    :::image type="content" source="media/configure-nuget-download/fno-form-download.png" alt-text="Download form":::
 
 1. Click **Download** to start the download operation.
 
