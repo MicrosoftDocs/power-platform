@@ -72,7 +72,7 @@ Follow these next instructions to link to your deployment pipeline.
 
 ## Download required NuGet packages
 
-To automatically download NuGet packages from Finance and Operations for resolving references during build operations, download the packages using the [Power Platform Visual Studio extension](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatformToolsVS2022).
+To resolve Finance and Operations first party references during build operations, download the packages using the [Power Platform Visual Studio extension](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatformToolsVS2022).
 
 After installing or updating to the latest version of the Power Platform Visual Studio extension, proceed with these next instructions.
 
