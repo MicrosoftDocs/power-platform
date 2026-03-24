@@ -2,7 +2,7 @@
 title: "Continuous integration and deployment"
 description: Learn how to set up continuous integration and deployment using Azure Pipelines.
 author: pvillads
-ms.date: 06/07/2024
+ms.date: 03/23/2026
 ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pvillads
@@ -69,5 +69,33 @@ Follow these next instructions to link to your deployment pipeline.
 1. To deploy the task, provide the path of the generated package from the build pipeline.
 
     :::image type="content" source="../media/unified-experience/pipelines-deploy-packages.png" alt-text="Image of Power Platform Deploy Package task settings.":::
+
+## Download required NuGet packages
+
+To automatically download NuGet packages from Finance and Operations for resolving references during build operations, download the packages using the [Power Platform Visual Studio extension](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatformToolsVS2022).
+
+After installing or updating to the latest version of the Power Platform Visual Studio extension, proceed with these next instructions.
+
+1. From within Visual Studio, connect to a Dataverse by clicking **Tools** > **Connect to Dataverse**.
+1. Navigate to **Tools** > **Options** > **Power Platform Tools** > **General**, and then enable the **Download Dynamics 365 FnO NuGets for CI/CD** option.
+
+    :::image type="content" source="media/configure-nuget-download/image1.png" alt-text="Tool configuration options":::
+
+1. In the **Tools** menu, select **Download Dynamics365 FnO NuGets for CI/CD**.
+
+    :::image type="content" source="media/configure-nuget-download/image2.png" alt-text="Tool menu options":::
+
+1. After the **Download Packages** form appears, select the application release desired from the drop-down list.
+1. Optionally, check (click) the **Select specific NuGet packages** option to specify the desired packages. Otherwise, all packages for the given release are downloaded.
+1. Specify the location where the package files are going to be downloaded to in the **Download location** field.
+
+    :::image type="content" source="media/configure-nuget-download/image3.png" alt-text="Download form":::
+
+1. Click **Download** to start the download operation.
+
+### See Also
+
+- [Continuous integration and deployment](finance-operations-pipelines.md)
+- [Build automation that uses Microsoft-hosted agents and Azure Pipelines](/dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation?utm_source=chatgpt.com#nuget-packages)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]
