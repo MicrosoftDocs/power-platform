@@ -98,7 +98,7 @@ If the PPRs formula yields fewer than 2 AOS, the environment receives the 2 AOS 
 
 ### Increasing capacity with add-on packs
 
-If your license-based PPRs don't provide enough AOS capacity, you can purchase add-on packs of 50,000 PPRs each from the [Microsoft 365 admin center](https://admin.microsoft.com). For example, a customer with 20 licenses (600,000 PPRs) could purchase 14 add-on packs (700,000 PPRs) to reach 1,300,000 total PPRs&mdash;enough for 2 AOS from PPRs, which combined with the 2 AOS minimum gives 4 AOS total.
+If your license-based PPRs don't provide enough AOS capacity, you can purchase add-on packs of 50,000 PPRs each from the [Microsoft 365 admin center](https://admin.microsoft.com). For example, a customer with 20 licenses (600,000 PPRs) could purchase 40 add-on packs (2 million PPRs) to reach 2,600,000 total PPRs&mdash;enough for 2 additional AOS which combined with the 2 AOS minimum gives 4 AOS total.  This would be added as a max allowed number of AOS to every environment created now and in the future.  The number of environments is limited by having available storage.
 
 These totals determine the compute capacity available for elastic scaling across all finance and operations environments in the tenant.
 

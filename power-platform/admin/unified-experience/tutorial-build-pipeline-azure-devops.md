@@ -265,12 +265,26 @@ stages:
                 Write-Host "Added $($solutions.Count) Dataverse solution(s) to the unified package."
 
           # -------------------------------------------------------
-          # Step 6: Publish build artifacts
+          # Step 6: Zip the unified package
+          # -------------------------------------------------------
+          # PowerPlatformPackageDeploy expects a .zip file, not
+          # an unzipped folder. Archive the unified package output
+          # before publishing.
+          - task: ArchiveFiles@2
+            displayName: 'Zip unified package'
+            inputs:
+              rootFolderOrFile: '$(UnifiedPackageOutput)'
+              includeRootFolder: false
+              archiveType: 'zip'
+              archiveFile: '$(Build.ArtifactStagingDirectory)/UnifiedPackage.zip'
+
+          # -------------------------------------------------------
+          # Step 7: Publish build artifacts
           # -------------------------------------------------------
           - task: PublishBuildArtifacts@1
             displayName: 'Publish unified package artifact'
             inputs:
-              PathtoPublish: '$(UnifiedPackageOutput)'
+              PathtoPublish: '$(Build.ArtifactStagingDirectory)/UnifiedPackage.zip'
               ArtifactName: 'UnifiedPackage'
 
           - task: PublishBuildArtifacts@1
@@ -282,7 +296,7 @@ stages:
 
 ### Understanding the pipeline
 
-The pipeline has six core steps:
+The pipeline has seven core steps:
 
 | Step | Task | Purpose |
 |:-----|:-----|:--------|
@@ -291,7 +305,8 @@ The pipeline has six core steps:
 | 3 | `NuGetToolInstaller@1` | Installs NuGet 3.3.0, which is required by the packaging task. Versions 3.4 and later use semantic versioning that is incompatible with the deployable package format. |
 | 4 | `XppCreatePackage@3` | Creates both a traditional deployable package (.zip) and a **Power Platform unified package**. The unified package is the format required for deploying to unified environments via `pac package deploy`. |
 | 5 | `PowerShell@2` | (Optional) Adds Dataverse solution .zip files to the unified package so that X++ customizations and Dataverse solutions are deployed together as a single unit. |
-| 6 | `PublishBuildArtifacts@1` | Publishes both package formats as pipeline artifacts for downstream release pipelines. |
+| 6 | `ArchiveFiles@2` | Zips the unified package folder into a `.zip` file. The `PowerPlatformPackageDeploy` task requires a `.zip` file as input, not an unzipped folder. |
+| 7 | `PublishBuildArtifacts@1` | Publishes both package formats as pipeline artifacts for downstream release pipelines. |
 
 ## Step 4: Including Dataverse solutions (optional)
 
