@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/20/2026
+ms.date: 03/24/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType:
@@ -314,7 +314,7 @@ The following diagram illustrates the flow through the three stages:
 
 ### Stage 3: Production
 
-- **Trigger**: After the pre-production environment succeeds, a manual validation step holds the pipeline until the approver confirms.  The wait time for Saturday is configured on the Environment using the **Business Hours gate**.
+- **Trigger**: After the pre-production environment succeeds, a manual validation step holds the pipeline until the approver confirms. The wait time for Saturday is configured on the environment using the **Business Hours gate**.
 - **Approvals**: One designated approver must approve the environment deployment gate. This approval is separate from the manual validation step, providing a two-layer confirmation before production changes.
 - **Purpose**: Deploy to production during a low-traffic maintenance window with explicit human approval at each checkpoint.
 
