@@ -63,11 +63,11 @@ Azure DevOps environments provide approval gates and deployment history tracking
 1. In your Azure DevOps project, go to **Pipelines** > **Environments**.
 1. Select **New environment** and create the following environments:
 
-   | Environment name | Approvals | Additional checks |
+   | Environment name | Approvals | Other checks |
    |:-----------------|:----------|:------------------|
    | `Test` | None (automatic) | None |
-   | `PreProduction` | 1 approver required | Minimum 24-hour delay via business hours gate |
-   | `Production` | 1 approver required | None (scheduling handled in pipeline) |
+   | `PreProduction` | One approver required | Minimum 24-hour delay via business hours gate |
+   | `Production` | One approver required | None (scheduling handled in pipeline) |
 
 ### Configure the pre-production approval and delay
 
@@ -347,7 +347,7 @@ You must create the application user tied to your app registration in each targe
 1. Select **Users + permissions** > **Application users**.
 1. Select **New app user**. The **Create a new app user** pane appears.
 1. Select **+ Add an app** to choose the registered Microsoft Entra application that was created for the user, and then select **Add**. The selected Microsoft Entra app is displayed under **App**. 1. Under **Business Unit**, select a business unit from the dropdown list.  
-1. Select the **Edit security roles** icon, to select the **System Administor** role. Select **Save**. Confirm the selection.
+1. Select the **Edit security roles** icon, to select the **System Administrator** role. Select **Save**. Confirm the selection.
 1. Select **Create**.
 1. Repeat the procedure for all three environments (Test, Pre-Production, Production).
 
