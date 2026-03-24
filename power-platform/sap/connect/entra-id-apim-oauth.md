@@ -7,11 +7,9 @@ contributors:
   - tverhasselt
   - galitskyd
   - microsoft-dustin
-  - ryanb58
   - Wrighttyler
   - EllenWehrle
   - MartinPankraz
-  - haowusky
 ms.reviewer: ellenwehrle
 ms.service: power-platform
 ms.subservice: sap
