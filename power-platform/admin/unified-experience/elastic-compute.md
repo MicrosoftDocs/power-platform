@@ -3,7 +3,7 @@ title: Elastic compute for finance and operations apps
 description: Learn about elastic compute, which provides flexible and scalable compute power for Dynamics 365 finance and operations apps in unified environments.
 author: laneswenka
 ms.topic: concept-article
-ms.date: 03/20/2026
+ms.date: 03/24/2026
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
@@ -98,7 +98,7 @@ If the PPRs formula yields fewer than 2 AOS, the environment receives the 2 AOS 
 
 ### Increasing capacity with add-on packs
 
-If your license-based PPRs don't provide enough AOS capacity, you can purchase add-on packs of 50,000 PPRs each from the [Microsoft 365 admin center](https://admin.microsoft.com). For example, a customer with 20 licenses (600,000 PPRs) could purchase 40 add-on packs (2 million PPRs) to reach 2,600,000 total PPRs&mdash;enough for 2 additional AOS which combined with the 2 AOS minimum gives 4 AOS total.  This would be added as a max allowed number of AOS to every environment created now and in the future.  The number of environments is limited by having available storage.
+If your license-based PPRs don't provide enough AOS capacity, you can purchase add-on packs of 50,000 PPRs each from the [Microsoft 365 admin center](https://admin.microsoft.com). For example, a customer with 20 licenses (600,000 PPRs) could purchase 40 add-on packs (two million PPRs) to reach 2,600,000 total PPRs&mdash;enough for two additional AOS instances, which combined with the two AOS minimum gives four AOS instances total. This would be added as a maximum allowed number of AOS instances to every environment created now and in the future. The number of environments is limited by having available storage.
 
 These totals determine the compute capacity available for elastic scaling across all finance and operations environments in the tenant.
 
