@@ -49,7 +49,7 @@ The X++ build process requires NuGet packages that contain the compiler tools an
 | `Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp` | Compiled Application Suite module references | PUXX/10.X.XX - Application Suite Build Reference |
 
 > [!IMPORTANT]
-> You can currently download these NuGet packages from the **Shared Asset Library** in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com). Any customer operating unified environments in the Power Platform admin center can access the Shared Asset Library in LCS to download these assets. A replacement distribution mechanism that doesn't require LCS is coming soon. We'll update this tutorial when that capability is available.
+> You can currently download these NuGet packages from the **Shared Asset Library** in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com). Any customer operating unified environments in the Power Platform admin center can access the Shared Asset Library in LCS to download these assets. A replacement distribution mechanism that doesn't require LCS is coming soon. We plan to update this tutorial when that capability is available.
 
 > [!NOTE]
 > The NuGet packages contain version details that must be equal to or lower than the version of your target finance and operations environment. When you apply a quality update to your environment, download the corresponding NuGet package versions to keep your build aligned. If you're only extending the platform (no Application Suite customizations), you might only need the `CompilerPackage` and `Platform.DevALM.BuildXpp` packages. However, most customers extending application functionality need all five.
@@ -305,7 +305,7 @@ The pipeline has seven core steps:
 |:-----|:-----|:--------|
 | 1 | `NuGetCommand@2` | Restores the compiler and reference packages from your Azure Artifacts feed. The `-ExcludeVersion` flag removes version numbers from folder names, so MSBuild paths stay stable across version updates. |
 | 2 | `VSBuild@1` | Compiles the X++ solution using MSBuild with arguments that point to the NuGet package locations for the compiler, platform references, and application references. |
-| 3 | `NuGetToolInstaller@1` | Installs NuGet 3.3.0, which is required by the packaging task. Versions 3.4 and later use semantic versioning that is incompatible with the deployable package format. |
+| 3 | `NuGetToolInstaller@1` | Installs NuGet 3.3.0, which is required by the packaging task. Versions 3.4 and later use semantic versioning that's incompatible with the deployable package format. |
 | 4 | `XppCreatePackage@3` | Creates both a traditional deployable package (.zip) and a **Power Platform unified package**. The unified package is the format required for deploying to unified environments via `pac package deploy`. |
 | 5 | `PowerShell@2` | (Optional) Adds Dataverse solution .zip files to the unified package so that X++ customizations and Dataverse solutions are deployed together as a single unit. |
 | 6 | `ArchiveFiles@2` | Zips the unified package folder into a `.zip` file. The `PowerPlatformPackageDeploy` task requires a `.zip` file as input, not an unzipped folder. |
@@ -351,7 +351,7 @@ When you apply a new quality update (PQU) to your environments, update the build
 | Build fails with missing references | Ensure you publish all five NuGet packages to your Artifacts feed and that the versions in `packages.config` match. If you're only extending the platform, you still need `Application1`, `Application2`, and `ApplicationSuite` for reference resolution. |
 | `XppCreatePackage` fails with version mismatch | The `CloudPackagePlatVersion` and `CloudPackageAppVersion` values must match the NuGet package versions you restored. |
 | NuGet restore fails with 401 | Your pipeline's build service account needs **Reader** access to the Azure Artifacts feed. Go to **Artifacts** > **Feed settings** > **Permissions** and add the build service. |
-| Packaging fails with semantic versioning error | Ensure Step 3 installs NuGet 3.3.0. Versions 3.4 and later introduce semantic versioning that is incompatible with the deployable package generation. |
+| Packaging fails with semantic versioning error | Ensure Step 3 installs NuGet 3.3.0. Versions 3.4 and later introduce semantic versioning that's incompatible with the deployable package generation. |
 | `fnomoduledefinition.json file not found` | The `CloudPackageOutputLocation` path might be incorrect, or the `XppToolsPath` might not point to a valid compiler package. Verify your variable paths. |
 
 ## Next steps
