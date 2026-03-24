@@ -24,7 +24,7 @@ This means:
 
 In unified environments, the Application Object Server (AOS) tier is the primary compute component for finance and operations apps. Each AOS instance hosts X++ business logic and handles user requests, OData and custom service calls, integration traffic, and batch workloads.
 
-AOS instances are stateful and hold user session state in memory. Internal Azure load balancers distribute requests across AOS instances, and session affinity ensures that a user's requests go to the same AOS instance for the duration of their session. The environment stores persistent data such as metadata and transactional state externally in Azure SQL, caching layers, and blob storage.
+AOS instances are stateful and hold user session state in memory. Internal Azure load balancers distribute requests across AOS instances, and session affinity ensures that a user's requests go to the same AOS instance during their session. The environment stores persistent data such as metadata and transactional state externally in Azure SQL, caching layers, and blob storage.
 
 Because AOS instances hold session state in memory, scaling up and scaling down behave differently. Adding new AOS instances (scale-up) is seamless and doesn't disrupt active users. However, removing AOS instances (scale-down) requires draining active sessions, so it's reserved for planned maintenance windows or customization deployments, where a natural downtime already occurs. This approach ensures that users never experience unexpected session loss due to a scale-down event.
 
@@ -94,11 +94,11 @@ The following table shows how PPRs accrue and translate to AOS capacity across a
 | 5,000 | 500,000 + (5,000 &times; 5,000) | 25,500,000 | 39 AOS |
 | 10,000+ | 500,000 + (10,000 &times; 5,000) | 50,500,000 | 77 AOS |
 
-If the PPRs formula yields fewer than 2 AOS, the environment receives the 2 AOS instances as a minimum. If it yields more than 80, the environment is capped at 80.
+If the PPRs formula yields fewer than two AOS instances, the environment receives the two AOS instances as a minimum. If it yields more than 80, the environment is capped at 80.
 
 ### Increasing capacity with add-on packs
 
-If your license-based PPRs don't provide enough AOS capacity, you can purchase add-on packs of 50,000 PPRs each from the [Microsoft 365 admin center](https://admin.microsoft.com). For example, a customer with 20 licenses (600,000 PPRs) could purchase 40 add-on packs (two million PPRs) to reach 2,600,000 total PPRs&mdash;enough for two additional AOS instances, which combined with the two AOS minimum gives four AOS instances total. This would be added as a maximum allowed number of AOS instances to every environment created now and in the future. The number of environments is limited by having available storage.
+If your license-based PPRs don't provide enough AOS capacity, you can purchase add-on packs of 50,000 PPRs each from the [Microsoft 365 admin center](https://admin.microsoft.com). For example, a customer with 20 licenses (600,000 PPRs) could purchase 40 add-on packs (two million PPRs) to reach 2,600,000 total PPRs&mdash;enough for two more AOS instances, which combined with the two AOS minimum gives four AOS instances total. This would be added as a maximum allowed number of AOS instances to every environment created now and in the future. The number of environments is limited by having available storage.
 
 These totals determine the compute capacity available for elastic scaling across all finance and operations environments in the tenant.
 
