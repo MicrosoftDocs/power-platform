@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/18/2026
+ms.date: 03/20/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType:
@@ -35,7 +35,10 @@ As an example of this scenario, a customer has X++ customizations for Dynamics 3
 
 ## Step 1: Obtain the NuGet build reference packages
 
-The X++ build process requires NuGet packages that contain the compiler tools and reference assemblies for the platform and application modules. A full build requires five packages.  Note that there is also an "Application" package but it is too large for Azure DevOps so we have split it in to 2 separate packages:
+The X++ build process requires NuGet packages that contain the compiler tools and reference assemblies for the platform and application modules. A full build requires five packages. 
+
+> [!NOTE]
+> Due to large size for Azure DevOps, Application module is split into two separate packages.
 
 | NuGet package | Purpose | LCS Shared Asset Library name |
 |:-------------|:--------|:------------------------------|
