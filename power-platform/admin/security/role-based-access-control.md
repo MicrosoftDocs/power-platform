@@ -28,7 +28,7 @@ With Power Platform RBAC, administrators can:
 RBAC operates at the Power Platform API layer, representing administrative control over resources, while Dataverse continues to provide its own foundational RBAC for business data within environments.
 
 > [!NOTE]
-> Currently, RBAC is focused on broadening service principal and managed identity support across Power Platform API and the various management SDKs. Read-only, as well as read and write permissions assigned at scopes lower then the whole tenant for the Power Platform admin center user experience are on the roadmap but not yet finished.
+> Currently, RBAC is focused on broadening service principal and managed identity support across Power Platform API and the various management SDKs. Read-only, as well as read and write permissions assigned at scopes lower than the whole tenant for the Power Platform admin center user experience are on the roadmap but not yet finished.
 
 ## Benefits of Power Platform RBAC
 
