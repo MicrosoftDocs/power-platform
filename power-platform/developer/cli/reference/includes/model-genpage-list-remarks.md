@@ -1,8 +1,27 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### Examples
 
-### Remarks
+List all generative pages in the **Contoso Sales Hub** app using its app ID:
 
-Add remarks here...
+```bash
+pac model genpage list --app-id "a1b2c3d4-1234-5678-abcd-000000000001"
+```
 
--->
+List generative pages by app name (the CLI looks up the app ID automatically):
+
+```bash
+pac model genpage list --app-id "Contoso Sales Hub"
+```
+
+Sample output:
+
+```
+Found 2 generated page(s):
+
+  Account Dashboard
+    Page ID: e5f6a7b8-abcd-ef01-2345-000000000010
+    Description: Created: 2026-01-15T10:22:00Z
+
+  Opportunity Tracker
+    Page ID: e5f6a7b8-abcd-ef01-2345-000000000011
+    Description: Created: 2026-02-03T14:05:00Z
+```
