@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 10/31/2025
+ms.date: 03/25/2026
 ms.contributors:
   - samathur
   - kakazemi
@@ -78,7 +78,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 > - Contact a representative for services not listed above for information about customer-managed key support.
 > - Nuance Conversational IVR and [maker welcome content](welcome-content.md) are excluded from customer-managed key encryption.
 > - The connection settings for connectors continue to be encrypted with a Microsoft-managed key.
-> - The configured CMK doesn't encrypt the data sent out from Copilot Studio as part of the Agent 365 security audit logging.
+> - The configured CMK doesn't encrypt the data sent from Copilot Studio as part of the Agent 365 security audit logging.
 > - Power Apps display names, descriptions, and connection metadata continue to be encrypted with a Microsoft-managed key.
 > - The download results link and other data produced by solution checker enforcement during a solution check continues to be encrypted with a Microsoft-managed key.
 
