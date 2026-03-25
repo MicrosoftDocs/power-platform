@@ -26,7 +26,7 @@ ms.custom: sfi-image-nochange
 
 # Free up storage space
 
-You can reduce the amount of storage space used by removing or deleting information from Dynamics 365 apps, such as:
+You can reduce storage space used by removing or deleting data from Dynamics 365 apps, such as:
 
 - **Dynamics 365 Sales**
 - **Dynamics 365 Customer Service**
@@ -35,26 +35,26 @@ You can reduce the amount of storage space used by removing or deleting informat
 - **Dynamics 365 Project Service Automation**
 - **Dynamics 365 Finance and Operations**
 
-This article describes 15 methods to help you better manage storage.
+This article describes 15 methods to help you manage storage more effectively.
 
-Use one or more of these methods to control your total data storage usage. You can delete categories of data as the need arises or set up bulk deletion jobs to reoccur at set intervals. For example, you can delete notes, attachments, import history, and other data.
+Use one or more of these methods to control total data storage usage. You can delete categories of data as needed or set up bulk deletion jobs that reccur at scheduled intervals. For example, you can delete notes, attachments, import history, and other data.
   
 > [!WARNING]
 > You can't restore your data once it's deleted. You might want to increase the amount of storage space in your [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] instead of reducing your storage space used through deletion.  
 
 ## Prerequisites
 
-An administrator security role is required. All methods except 3 and 5 require this role, such as the **System Administrator**. An admin role gives you permission to delete records in bulk and delete system jobs.
+You need an administrator security role. All methods except methods 3 and 5 require this role, such as **System Administrator**. An admin role gives you permission to delete records in bulk and delete system jobs.
 
 ### Understand how storage works
 
-- Storage consumed doesn't directly correspond to the size reported in Microsoft Dataverse for apps. Consumption includes extra storage for metadata and encryption. For example, removing 10 MB of storage from a file doesn't mean the file size is reduced by 10 MB.
-- Some platform operations require you to wait 24-36 hours to confirm data size changes. These operations include upgrades to new versions and the introduction of new workflows. Such operations require system adjustments that might temporarily increase reported storage size.
+- Storage consumption doesn't directly match the size reported in Microsoft Dataverse for apps. Consumption includes additional storage for metadata and encryption. For example, removing 10 MB of data doesn't necessarily reduce storage usage by 10 MB.
+- Some platform operations require you to wait 24-36 hours to confirm data size changes. These operations include upgrades to newer versions and the creation of new workflows. During this time, report storage usage might temporarily increase.
 
 ## Free up storage for Dataverse
 
 > [!NOTE]
-> The system can take up to 72 hours to update storage information. We recommend waiting up to 72 hours and monitoring your storage.
+> The system can take up to 72 hours to update storage information. We recommend that you wait up to 72 hours and monitor your storage.
 
 Use the following methods to free up storage for each capacity type.
 
@@ -322,11 +322,11 @@ To monitor the status of audit delete jobs, see the next section.
 
    :::image type="content" source="media/free-new-storage-method.png" alt-text="Screenshot that shows where the Bulk deletion option is located in an environment." lightbox="media/free-new-storage-method.png":::
 
-6. Review the system job and the **Status Reason** column for details about the status of your job.
+6. Review the system job and the **Status Reason** column.
 
    :::image type="content" source="media/audit-log-delete-job-status.png" alt-text="Screenshot that shows the system job details for bulk delete of audit logs." lightbox="media/audit-log-delete-job-status.png":::
 
-   Select the job to see more details about the results of the delete job.
+7.  Select the job to view details.
 
    :::image type="content" source="media/audit-log-delete-job-details.png" alt-text="Select the job to see more details about the results of the delete job." lightbox="media/audit-log-delete-job-details.png":::
 
