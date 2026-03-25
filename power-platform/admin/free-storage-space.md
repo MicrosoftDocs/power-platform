@@ -63,14 +63,14 @@ Use the following methods to free up storage for each capacity type.
 |**Database**     |         | |
 |     | **WorkflowLogBase** | **[Method 1](#method-1-delete-bulk-email-and-workflow-instances-using-a-bulk-deletion-job)**: Delete bulk email and workflow instances by using a bulk deletion job        | 
 |     | **AsyncOperationBase** | **[Method 2](#method-2-evaluate-and-delete-suspended-workflows)**: Evaluate and delete suspended workflows        | 
-|     | **DuplicateRecordBase**| **[Method 7](#method-7-remove-bulk-duplicate-detection-jobs-and-associated-copies-of-duplicate-records)**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
-|     | **ImportJobBase** | **[Method 8](#method-8-delete-bulk-import-instances-using-a-bulk-deletion-job)**: Delete bulk import instances by using a bulk deletion job        | 
-|     | **BulkDeleteOperationBase**| **[Method 9](#method-9-delete-bulk-deletion-job-instances-using-a-bulk-deletion-job)**: Delete bulk deletion job instances using a bulk deletion job        | 
-|     | Various | **[Method 11](#method-11-remove-unrequired-tables-and-columns-from-dataverse-search)**: Remove unnecessary tables and columns from Dataverse search        | 
-|     | **ActivityPointerBase**, **EmailBase**, **EmailHashBase**, **ActivityPartyBase**, and other activity tables | **[Method 12](#method-12-remove-unrequired-data-from-activity-tables)**: Remove unrequired data from activity tables |
-|     | **Postbase**, **PostCommentBase**, **PostFollowBase**, **PostLikeBase**, **PostRegardingBase**, **PostRoleBase**  | **[Method 13](#method-13-remove-unrequired-activity-feeds-records)**: Remove unrequired Activity Feeds records |
-|     | **ExchangeSyncIdMappingBase**  | **[Method 14](#method-14-modify-item-level-monitoring-settings)**: Modify Item Level Monitoring Settings |
-|     | **TraceLogBase**  | **[Method 15](#method-15-remove-unrequired-alerts-trace-logs)**: Remove unrequired Trace (Alert) records |
+|     | **DuplicateRecordBase**| **[Method 3: Remove bulk duplicate detection jobs and associated copies of duplicate records](#method-3-remove-bulk-duplicate-detection-jobs-and-associated-copies-of-duplicate-records)**       |
+|     | **ImportJobBase** | **[Method 4]: Delete bulk import instances by using a bulk deletion job](#method-4-delete-bulk-import-instances-using-a-bulk-deletion-job)**        | 
+|     | **BulkDeleteOperationBase**| **[Method 5]: Delete bulk deletion job instances using a bulk deletion job](#method-5-delete-bulk-deletion-job-instances-using-a-bulk-deletion-job)**        | 
+|     | Various | **[Method 6: Remove unrequired tables and columns from Dataverse search](#method-6-remove-unrequired-tables-and-columns-from-dataverse-search)**        | 
+|     | **ActivityPointerBase**, **EmailBase**, **EmailHashBase**, **ActivityPartyBase**, and other activity tables | **[Method 7: Remove unrequired data from activity tables](#method-7-remove-unrequired-data-from-activity-tables)** |
+|     | **Postbase**, **PostCommentBase**, **PostFollowBase**, **PostLikeBase**, **PostRegardingBase**, **PostRoleBase**  | **[Method 8: Remove unrequired Activity Feeds records](#method-8-remove-unrequired-activity-feeds-records)** |
+|     | **ExchangeSyncIdMappingBase**  | **[Method 9: Modify Item Level Monitoring Settings](#method-9-modify-item-level-monitoring-settings)** |
+|     | **TraceLogBase**  | **[Method 10: Remove unrequired Trace (Alert) records](#method-10-remove-unrequired-alerts-trace-logs)** |
 |**File** |                   |         |
 |         | **Attachment**        | **[Method 1: Remove email attachments using Advanced Find](#method-1-remove-email-attachments-using-advanced-find)** |
 |     | **Attachment** | **[Method 2: Remove email messages with attachments using a bulk deletion job](#method-2-remove-email-messages-with-attachments-using-a-bulk-deletion-job)**       | 
