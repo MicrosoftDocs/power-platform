@@ -4,9 +4,9 @@ description: "Learn how to use the ConnectToGit and DisconnectFromGit APIs to pr
 author: caburk
 ms.subservice: alm
 ms.author: caburk
-ms.date: 03/19/2026
+ms.date: 03/25/2026
 ms.topic: concept-article
-ms.reviewer: mattp
+ms.reviewer: pehecke
 ---
 # Connect and disconnect Dataverse from a Git repository by using code
 
@@ -74,7 +74,9 @@ The `DisconnectFromGit` API has only one parameter.
 |-----------|------|----------|-------------|
 | `SolutionUniqueName` | String | No | The unique name of the solution you want to disconnect from Git. Omit to disconnect all solutions or the environment. |
 
-### Behavior notes
+### Additional information
+
+Here are a few parameter value options to specify when invoking `DisconnectFromGit`.
 
 - **Disconnect single solution**: Provide `SolutionUniqueName` to disconnect a specific solution.
 - **Disconnect all solutions**: Provide no parameters to disconnect all solution-level connections.
@@ -188,7 +190,6 @@ static void ConnectDataverseEnvironment(
 
 ---
 
-
 ### Disconnect your entire Dataverse environment from Git source control
 
 This action removes the environment-level Git connection.  Don't use the `SolutionUniqueName` parameter for this operation. Dataverse automatically identifies and removes the environment-level Git connection.
@@ -242,14 +243,13 @@ static void DisconnectDataverseEnvironment(IOrganizationService service) {
 This connection establishes the repository link and folder structure for solution-level source control to the first solution in an environment.
 
 You need to include values for these parameters to specify the solution:
- 
+
 - `RootFolder`
 - `SolutionUniqueName`
 
 #### [Web API](#tab/webapi)
 
 This example shows how to use the [ConnectToGit action](xref:Microsoft.Dynamics.CRM.ConnectToGit) to connect the first solution to a Git repository.
-
 
 **Request**
 
@@ -494,7 +494,6 @@ Common error scenarios include:
 - **Permission denied**: Ensure your Dataverse account has source control management permissions.
 - **Solution not found**: Verify the `SolutionUniqueName` exists in your environment.
 - **Branch does not exist**: Confirm the specified branch exists in the repository.
-
 
 ## Support and additional resources
 
