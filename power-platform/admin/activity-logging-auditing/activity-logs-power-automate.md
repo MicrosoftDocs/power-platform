@@ -3,7 +3,7 @@ title: View Power Automate activity logs in Microsoft Purview
 description: Learn how to access Power Automate activity logs in Microsoft Purview and explore what Power Automate activities you can monitor.
 author: grbarker
 ms.topic: how-to
-ms.date: 03/20/2026
+ms.date: 03/25/2026
 ms.subservice: admin
 ms.author: grbarker
 ms.reviewer: ellenwehrle
@@ -12,7 +12,7 @@ search.audienceType:
 ---
 # View Power Automate activity logs in Microsoft Purview
 
-You can view Microsoft Power Automate activities in Microsoft Purview, such as:
+You can view Microsoft Power Automate activities in Microsoft Purview, such as flow lifecycle events and permission changes. This allows you to monitor and audit user activities related to Power Automate in your organization. Examples of activities you can track include:
 
 - flow creations, edits, and deletions
 - flow permission changes
@@ -27,18 +27,16 @@ This article covers prerequisites, how to access the logs in Microsoft Purview, 
 
 ## Prerequisites
 
-To view Power Automate activity logs in Microsoft Purview, make sure you:
+To view Power Automate activity logs in Microsoft Purview, you need to have a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license and the appropriate permissions. A Power Platform system administrator or customizer also needs to:
 
-- Review and complete all the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
-- Have a Microsoft 365 admin role with a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Have either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview.
+- Enable auditing for the Power Platform production environments you want to monitor in Microsoft Purview. See the [prerequisites section](activity-logs-overview.md#prerequisites) in [Power Platform activity logs and auditing in Microsoft Purview](activity-logs-overview.md) for more information.
+- Assign either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview to you. See [Permissions in the Microsoft Purview portal](/purview/purview-permissions) for details on how to assign these roles.
 
 Learn more about auditing:
 
 - [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 - [Auditing overview](/power-apps/developer/data-platform/auditing/overview)
 - [Learn more about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
-- [Permissions in the Microsoft Purview portal](/purview/purview-permissions)
 
 ## Access the logs
 
@@ -84,6 +82,7 @@ Schemas define which Power Automate fields are sent to the Microsoft Purview com
 |License display name | `LicenseDisplayName` | :::no-loc text="Edm.String":::| No | Display name of the license.|
 |User type initiated | `UserTypeInitiated` | :::no-loc text="Edm.Int32":::| No | Which type of user initiated the operation. Applicable for *delete flow* and *edit permissions* (1 = user, 2 = admin).|
 |User UPN | `UserUPN` | :::no-loc text="Edm.String":::| No | Unique ID of the user. Always equivalent to `UserKey`.|
+
 ## Limitations
 
 - Purview audit logs capture **flow lifecycle events** (create, edit, delete) and permission changes. They don't include individual flow runs, action executions, and connector calls at runtime.
@@ -93,9 +92,9 @@ Schemas define which Power Automate fields are sent to the Microsoft Purview com
 
 To track flow execution at runtime, use these tools:
 
-- **[Application Insights](/power-platform/admin/app-insights-cloud-flow)** — Monitor flow runs, trigger and action execution times, and failures. Available in managed environments.
-- **[Cloud flow run records in Dataverse](/power-automate/dataverse/cloud-flow-run-metadata)** — Query per-run records including status, duration, error codes, and trigger type for solution-aware flows.
-- **[Power Automate analytics in the admin center](/power-platform/admin/analytics-flow)** — View aggregated run counts, success and failure rates, and connector usage across environments.
+- **[Application Insights](/power-platform/admin/app-insights-cloud-flow)**: Monitor flow runs, trigger and action execution times, and failures. Available in managed environments.
+- **[Cloud flow run records in Dataverse](/power-automate/dataverse/cloud-flow-run-metadata)**: Query per-run records including status, duration, error codes, and trigger type for solution-aware flows.
+- **[Power Automate analytics in the admin center](/power-platform/admin/analytics-flow)**: View aggregated run counts, success and failure rates, and connector usage across environments.
 
 ### Related content
 
