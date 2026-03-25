@@ -4,7 +4,7 @@ description: Reduce storage space usage by deleting notes, attachments, import h
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/09/2025
+ms.date: 03/25/2026
 ms.subservice: admin
 ms.author: ceian 
 ms.reviewer: sericks
