@@ -84,8 +84,6 @@
               href: git-integration/source-control-operations.md
             - name: Source control canvas apps
               href: git-integration/canvas-apps-git-integration.md
-            - name: Integrate Dataverse with Git using code
-              href: git-integration/git-api.md
             - name: Frequently asked questions
               href: git-integration/faqs.md
         - name: View solution deployments in deployment hub (preview)
