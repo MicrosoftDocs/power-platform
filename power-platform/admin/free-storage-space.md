@@ -72,12 +72,12 @@ Use the following methods to free up storage for each capacity type.
 |     | **ExchangeSyncIdMappingBase**  | **[Method 14](#method-14-modify-item-level-monitoring-settings)**: Modify Item Level Monitoring Settings |
 |     | **TraceLogBase**  | **[Method 15](#method-15-remove-unrequired-alerts-trace-logs)**: Remove unrequired Trace (Alert) records |
 |**File** |                   |         |
-|         | **Attachment**        | **[Method 3](#method-3-remove-email-attachments-using-advanced-find)**: Remove email attachments using Advanced Find |
-|     | **Attachment** | **[Method 4](#method-4-remove-email-messages-with-attachments-using-a-bulk-deletion-job)**: Remove email messages with attachments using a bulk deletion job        | 
-|     | **Attachment**  | **[Method 5](#method-5-remove-notes-with-attachments-using-advanced-find)**: Remove notes with attachments using Advanced Find        | 
-|     | **Attachment**  | **[Method 6](#method-6-remove-notes-with-attachments-using-a-bulk-deletion-job)**: Remove notes with attachments using a bulk deletion job        | 
+|         | **Attachment**        | **[Method 1: Remove email attachments using Advanced Find](#method-1-remove-email-attachments-using-advanced-find)** |
+|     | **Attachment** | **[Method 2: Remove email messages with attachments using a bulk deletion job](#method-2-remove-email-messages-with-attachments-using-a-bulk-deletion-job)**       | 
+|     | **Attachment**  | **[Method 3: Remove notes with attachments using Advanced Find](#method-3-remove-notes-with-attachments-using-advanced-find)**       | 
+|     | **Attachment**  | **[Method 4: Remove notes with attachments using a bulk deletion job](#method-4-remove-notes-with-attachments-using-a-bulk-deletion-job)**        | 
 |**Log**     |         | |
-|     | **AuditBase** | **[Method 10](#method-10-delete-audit-logs---legacy-process)**: Delete audit logs        | 
+|     | **AuditBase** | **[Method 5: Delete audit logs](#method-5-delete-audit-logs-legacy-process)**        | 
 |     | **PluginTraceLogBase** | Delete plug-in trace logs using a [bulk deletion job](delete-bulk-records.md) | 
 
 ## Reduce file storage
