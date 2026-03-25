@@ -93,23 +93,23 @@ Use the following methods to free up storage for each capacity type.
 
 3. In the **Manage** pane, select **Environments**.
 
-4. Select an environment from the list and then select **Open**.
+4. Select an environment from the list, and then select **Open**.
 
 5. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
   
 6. In the **Look for** list, select **Email Messages**.  
   
-7. In the search criteria area, add criteria, for example:  
+7. In the search criteria area, add criteria. For example:  
   
-   **Attachments (Item)**  
+   - **Attachments (Item)**  
   
-   **File Size (Bytes)** – **Is Greater Than** - In the text box, type a byte value, such as 1,048,576 (binary for 1 MB).  
+   - **File Size (Bytes)** – **Is Greater Than** - In the text box, type a byte value, such as 1,048,576 (binary for 1 MB).  
 
    :::image type="content" source="media/free-storage-method3a.png" alt-text="Screenshot that shows where you can find attachments in an Advanced Find." lightbox="media/free-storage-method3a.png":::
 
-8. Choose **Results**.  
+8. Select **Results**.  
   
-9. You now have a list of email messages that have attachments that are larger than 'X' bytes. Review the emails and delete the attachments as needed.  
+9. Review the list of email messages that contain attachments larger than the specified size and then delete the attachments as needed.  
   
    :::image type="content" source="media/free-storage-method3b.png" alt-text="Screenshot that shows the selected emails list based on a search criteria." lightbox="media/free-storage-method3b.png" :::
 
@@ -128,41 +128,40 @@ Use the following methods to free up storage for each capacity type.
 
    :::image type="content" source="media/free-storage-method9a-1.png" alt-text="Screenshot that shows where the New button is located in an environment." lightbox="media/free-storage-method9a-1.png":::
   
-5. Choose **Next**.  
+5. Select **Next**.  
   
 6. In the **Look for** list, select **Email Messages**.  
   
-7. In the search criteria area, add similar criteria, for example:  
+7. In the search criteria area, add criteria. For example:  
   
-   **Status Reason** – **Equals** – **Sent** or **Received**
+   - **Status Reason** – **Equals** – **Sent** or **Received**
   
-   **Actual End** – **Older Than X Months** – 1  
+   - **Actual End** – **Older Than X Months** – 1  
   
-   **Attachments (Item)**  
+   - **Attachments (Item)**  
   
-   **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1,048,576 (binary for 1 MB).  
+   - **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1,048,576 (binary for 1 MB).  
   
 8. Group the first two criteria rows:  
   
-   1. Choose the arrow next to each criteria row, and then choose **Select Row**.  
+   1. Select the arrow next to each row, and then select **Select Row**.  
   
    1. With both rows selected, choose **Group AND**.  
   
       :::image type="content" source="media/free-storage-method4a.png" alt-text="Screenshot that shows the `Group AND` and `Group OR` options in the Define Search Criteria window." lightbox="media/free-storage-method4a.png" :::
 
-9. Choose **Next**.  
+9. Select **Next**.  
   
-10. In the **Name** text box, type a name for the bulk deletion job.  
+10. In the **Name** text box, enter a name for the bulk deletion job.  
   
-11. Select a date and time for the job start time; preferably a time when users aren't in customer engagement apps.  
-  
-12. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.
+11. Select a start date and time; preferably when users aren't working in customer engagement apps.  
+12. Select **Run this job after every**, and then in the **days** list, select the frequency you want the job to run.
 
    :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Run this job every check box is located." lightbox="media/free-storage-method6b.png":::
   
-13. If you want a notification e-mail sent, select the **Send an email to me (myemail@domain.com) when this job is finished** check box.  
+13. If you want to receive a notification, select **Send an email to me (myemail@domain.com) when this job is finished**.  
 
-14. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.
+14. Select **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.
 
 ### Method 3: Remove notes with attachments using Advanced Find  
   
@@ -175,25 +174,25 @@ Use the following methods to free up storage for each capacity type.
 
 3. In the **Manage** pane, select **Environments**.
 
-4. Select an environment from the list and select **Open**.
+4. Select an environment from the list, and then select **Open**.
 
 5. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
   
 6. In the **Look for** list, select **Notes**.  
   
-7. In the search criteria area, add similar criteria, for example:  
+7. In the search criteria area, add criteria. For example:  
   
-   **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1048576.  
+   - **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1048576.  
 
    :::image type="content" source="media/free-storage-method5a.png" alt-text="Screenshot that shows the search criteria in the Advanced Find tab." lightbox="media/free-storage-method5a.png":::
   
-8. Choose **Results**.  
+8. Select **Results**.  
   
-9. You now have a list of attachments that are larger than the size you specified.  
+9. Review the list of attachments that exceed the specified size.  
   
    :::image type="content" source="media/free-storage-method5b.png" alt-text="Screenshot that shows the attachment list results of your search in the Advanced Find tab." lightbox="media/free-storage-method5b.png":::
 
-10. Select individual or multiple attachments, then choose **Delete** (X).  
+10. Select individual or multiple attachments, then select **Delete** (X).  
   
    :::image type="content" source="media/free-storage-method5c.png" alt-text="Screenshot that shows where the X icon is located on the Advanced Find tab." lightbox="media/free-storage-method5c.png":::
 
@@ -206,7 +205,7 @@ Use the following methods to free up storage for each capacity type.
 
 2. In the navigation pane, select **Manage**.
 
-3. In the **Manage** pane, select **Environments**, and select an environment.
+3. In the **Manage** pane, select **Environments**, and then select an environment.
 
 4. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. The Bulk Deletion Wizard opens.  
 
@@ -216,37 +215,36 @@ Use the following methods to free up storage for each capacity type.
   
 6. In the **Look for** list, select **Notes**.  
   
-7. In the search criteria area, add similar criteria, for example:  
+7. In the search criteria area, add criteria. For example:  
   
-   **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1048576.  
+   - **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1048576.  
   
-   **Created On** – **Older Than X Months** – 1  
+   - **Created On** – **Older Than X Months** – 1  
   
 8. Group the two criteria rows:  
   
-   1. Choose the arrow next to each criteria row, and then choose **Select Row**.  
+   1. Select the arrow next to each row, and then select **Select Row**.  
   
-   2. With all three rows selected, choose **Group AND**.  
+   2. With both rows selected, choose **Group AND**.  
 
       :::image type="content" source="media/free-storage-method6a.png" alt-text="Screenshot that shows where the Group AND option is located in the Define Search Criteria window. Method 6." lightbox="media/free-storage-method6a.png" :::
   
-9. Choose **Next**.  
+9. Select **Next**.  
   
-10. In the **Name** text box, type a name for the bulk deletion job.  
+10. In the **Name** box, enter a name for the bulk deletion job.  
   
-11. Select a date and time for the job start time; preferably a time when users aren't in customer engagement apps.  
-  
-12. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
+11. Select a start date and time; preferably when users aren't working in customer engagement apps.  
+12. Select **Run this job after every**, and then in the **days** list, select the frequency you want the job to run.  
   
     :::image type="content" source="media/free-storage-method6b.png" alt-text="Screenshot that shows where the Run this job every check box is located." lightbox="media/free-storage-method6b.png":::
 
-13. If you want a notification e-mail sent, select the **Send an email to me (myemail@domain.com) when this job is finished** check box.  
+13. If you want a receive a notification e-mail, select the **Send an email to me (myemail@domain.com) when this job is finished** check box.  
   
-14. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.
+14. Select **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.
 
-### Method 5: Delete audit logs - legacy process
+### Method 5: Delete audit logs (legacy process)
 
- When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete audit logs to free space when they're no longer needed.  
+When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete audit logs to free space when they're no longer needed.  
   
 > [!WARNING]
 > When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.
@@ -261,28 +259,28 @@ Use the following methods to free up storage for each capacity type.
 
 5. In the upper-right corner of an app, select **Settings** (![Gear button.](media/selection-rule-gear.png "Gear button"))  > **Advanced Settings** > **Settings** > **Auditing**.
 
-6. In the **Audit** area, choose **Audit Log Management**.  
+6. In the **Audit** area, select **Audit Log Management**.  
   
-7. Select the oldest audit log, then choose **Delete Logs**.  
+7. Select the oldest audit log, and then select **Delete Logs**.  
 
    :::image type="content" source="media/free-storage-method10a.png" alt-text="Screenshot that shows where the Delete logs button is located in the Audit Log management window." lightbox="media/free-storage-method10a.png":::
 
-8. In the confirmation message, choose **OK**.
+8. In the confirmation message, select **OK**.
 
 > [!NOTE]
 > You can only delete the oldest audit log in the system. To delete more than one audit log repeat deleting the oldest available audit log until you have deleted enough logs.  
   
-### Method 6: Delete audit logs - new process
+### Method 6: Delete audit logs (new process)
 
 > [!NOTE]
 > The system can take up to 72 hours to update storage information for the deletion of audit logs. After choosing to delete audit logs, we recommend waiting up to 72 hours and monitoring your storage to see avialable log capacity.
 
-Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete experience.
+Microsoft is migrating audit logs to a new storage location. Environments that complete the data migration can use the new audit log deletion experience.
 
 When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete the audit logs to free space when they're no longer needed.  
 
 > [!WARNING]
-> When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.
+> Aftet you delete an audit log, you can no longer view the audit history for the period covered by that audit log.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -294,23 +292,23 @@ When you enable auditing, customer engagement apps create audit logs to store th
 
    :::image type="content" source="media/audit-log-delete-new.png" alt-text="Screenshot that shows where the Delete logs option is located on the Auditing card of an environment." lightbox="media/audit-log-delete-new.png":::
 
-5. Select to delete logs either by table, access type, or by date.
+5. Choose how to delete logs either by table, access type, or date.
 
    :::image type="content" source="media/audit-log-delete-select-new.png" alt-text="Screenshot that shows the Select logs to delete window where you can specify the type of logs you want to delete." lightbox="media/audit-log-delete-select-new.png":::
 
    | Setting  | Description  | System job name |
    | -------- | ------------ | --------------- |
-   |**Delete logs by table** | Select one or more tables for which you want to delete audit logs. By default all tables in the environment are shown, whether or not they contain audit data. | Delete logs for [number of] tables. |
-   |**Delete access logs by people and systems** | Delete all access logs for all users and systems. | Delete access logs. |
-   |**Delete all logs up to and including the selected date** | Delete logs including the date selected. | Delete all logs before and including [timestamp].    |
+   |**Delete logs by table** | Deletes audit logs for selected tables. By default all tables in the environment are shown, whether or not they contain audit data. | Delete logs for [number of] tables. |
+   |**Delete access logs by people and systems** | Deletes all access logs for users and systems. | Delete access logs. |
+   |**Delete all logs up to and including the selected date** | Deletes all logs up to the selected date. | Delete all logs before and including [timestamp].    |
 
-6. Select **Delete**, and then confirm the deletions.
+6. Select **Delete**, and then confirm the deletion.
 
-All data is deleted in an asynchronous background system job that may take up to 72 hours to be scheduled to run.
+All audit logs are deleted by an asynchronous system job that can take up to 72 hours to run.
 
 To monitor the status of audit delete jobs, see the next section.
 
-#### Monitor the status of audit delete jobs in the Power Platform Admin center
+#### Monitor the status of audit delete jobs in the Power Platform admin center
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
