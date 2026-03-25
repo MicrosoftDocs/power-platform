@@ -126,10 +126,10 @@ When you turn on Dataverse search, you allow global search in all model-driven a
 > - You can't turn off Dataverse search in specific apps.
 > - Dataverse search doesn't turn on any other feature automatically.
 
-When you provision a Dataverse search index, an indication that provisioning is in progress appears.
+When you create a Dataverse search index, an indication that provisioning is in progress appears.
 
 > [!IMPORTANT]
-> Turning off Dataverse search deprovisions and removes the index within 12 hours. If you turn on Dataverse search after it's been off for 12 hours, it provisions a fresh index that needs to go through a full sync. Syncing can take an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
+> Turning off Dataverse search deprovisions and removes the index within 12 hours. If you turn on Dataverse search after it's been off for 12 hours, it creates a fresh index that needs to go through a full sync. Syncing can take an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
 
 ## Set up Dataverse search for global search
 
