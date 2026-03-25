@@ -6,20 +6,20 @@ ms.author: dgalitsky
 contributors:
   - edlehman
   - EllenWehrle
+  - haowusky
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/22/2024
+ms.date: 03/17/2026
 ms.service: power-platform
 ms.subservice: sap
 ms.custom:
-  - ignite-2024
   - sfi-image-nochange
 # Customer intent: As an administrator, I want to learn about the SAP OData connector, so I can connect Power Platform to SAP.
 ---
 
 # Get started with the SAP OData Connector
 
-The [SAP OData connector](/connectors/sapodata/) helps you connect your SAP systems to Microsoft Power Platform. The SAP OData connector works with the latest version of the OData specification, [V4](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html), and is backwards compatible with V3 and V2. This connector can link up with SAP systems like ECC, S/4HANA, SuccessFactors, Concur, and other OData APIs on top of SAP systems. With this connector, you can use the powerful features of SAP in Power Platform—all while keeping your SAP core clean.
+The [SAP OData connector](/connectors/sapodata/) helps you connect your SAP systems to Microsoft Power Platform. The SAP OData connector works with the latest version of the OData specification, [V4](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html), and is backwards compatible with V3 and V2. This connector can link up with SAP systems like ECC, S/4HANA, SuccessFactors, Concur, and other OData APIs on top of SAP systems. By using this connector, you can bring the powerful features of SAP into Power Platform—all while keeping your SAP core clean.
 
 ## What's OData?
 
@@ -36,24 +36,24 @@ The SAP OData connector for Power Platform offers the following user connection 
 
 ## Proxy through a corporate firewall
 
-If the SAP system you're integrating with is not accessible from the internet because it's behind a company firewall, you need to *proxy*/route through the corporate firewall. Setting up an **[on-premises data gateway](/data-integration/gateway/)** allows you to access the system. To get started:
+If the SAP system you're integrating with isn't accessible from the internet because it's behind a company firewall, you need to *proxy* or route through the corporate firewall. By setting up an **[on-premises data gateway](/data-integration/gateway/)**, you can access the system. To get started:
 
 1. [download](https://aka.ms/opdg)
-1. [install](/data-integration/gateway/service-gateway-install#download-and-install-a-standard-gateway) the on-premises data gateway on your Windows VM. Be sure to install and configure it in the same region as your Power Automate environment.
+1. [Install](/data-integration/gateway/service-gateway-install#download-and-install-a-standard-gateway) the on-premises data gateway on your Windows VM. Be sure to install and configure it in the same region as your Power Automate environment.
 1. Select **Gateways** to see the gateway installed in your Power Automate environment.
 
 ## Set up and test the OData connector
 
-1. Go to Power Automate
+1. Go to Power Automate.
 1. Create a new flow with a trigger of your choice, such as the *SAP OData query action*.
 :::image type="content" source="media/sap-odata-connector/sap-odata.png" alt-text="Power Automate actions query OData entities":::
 1. Set up a connection to your SAP system. To connect to a system that is only available from within the company firewall (where the on-premises data gateway is installed), select **Data Gateway** and then select your gateway from the list.
 :::image type="content" source="media/sap-odata-connector/connect-odata.png" alt-text="Setting up OData connector in Power Automate":::
-1. Provide the required information using the *OData Base URI L* from your local SAP system. It will look something like this:
+1. Provide the required information by using the *OData Base URI L* from your local SAP system. It looks similar to this URI:
 `https://mylocal.sap.system:50000/sap/opu/odata/iwbep/GWSAMPLE_BASIC`
-1. Test the URL internally to verify that it's not accessible from outside the intranet. Once you know it's working properly you can start creating flows and testing how they work with your SAP system.
+1. Test the URL internally to verify that it's not accessible from outside the intranet. Once you know it's working properly, you can start creating flows and testing how they work with your SAP system.
 
 > [!NOTE]
-> Using the OData connector with SAP ECC or prior versions requires configuration of OData endpoints that are not included in the ECC out-of-box setup.
+> Using the OData connector with SAP ECC or earlier versions requires configuration of OData endpoints that aren't included in the ECC out-of-box setup.
 
-You can learn more about working with the OData connector and Power Platform in [Hurray! SAP OData connector now supports OAuth2 and SAP Principal Propagation](<https://community.powerplatform.com/blogs/post/?postid=c6a609ab-3556-ef11-a317-6045bda95bf0>)
+To learn more about working with the OData connector and Power Platform, see [Hurray! SAP OData connector now supports OAuth2 and SAP Principal Propagation](<https://community.powerplatform.com/blogs/post/?postid=c6a609ab-3556-ef11-a317-6045bda95bf0>).

@@ -1,39 +1,34 @@
 ---
 title: Set up Microsoft Entra ID with certificates for SSO
 description: Set up the SAP ERP connector so your users can access SAP data and run RFC in Microsoft Power Platform using their Microsoft Entra ID for authentication.​
-author: ryanb58
-ms.author: tbrazelton
+author: haowusky
+ms.author: hawu1
 contributors:
-  - robinsonshields
-  - microsoft-george
   - tverhasselt
   - galitskyd
   - microsoft-dustin
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
   - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 03/17/2026
 ms.service: power-platform
 ms.subservice: sap
 ms.custom:
-  - ignite-2024
   - sfi-image-nochange
 # Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID with certificates so users can access SAP data through Power Platform with single sign.
 ---
 
 # Set up Microsoft Entra ID with certificates for SSO
 
-This guide walks you through setting up the SAP ERP connector so your users can access SAP data and run Remote Function Calls (RFCs) in Microsoft Power Platform using their Microsoft Entra ID for authentication. T​he process involves configuring both public and private certificates for secure communication.
+This guide walks you through setting up the SAP ERP connector so your users can access SAP data and run Remote Function Calls (RFCs) in Microsoft Power Platform by using their Microsoft Entra ID for authentication. T​he process involves configuring both public and private certificates for secure communication.
 
 > [!NOTE]
 > While the example in this article uses self-generated public key infrastructure that isn't recommended, ensure settings and certificates align with your business requirements and your [Microsoft partner](https://partner.microsoft.com/partnership/find-a-partner).
 
 ## Prerequisites
 
-Be sure you have already:
+Be sure you already:
 
 - [Set up SAP Connection](sap-erp-connector.md). Be sure to use version July 2024 - 3000.230 or later of the [On-premise data gateway](https://powerapps.microsoft.com/downloads/).
 - [Set up Secure Network Communications](secure-network-communications.md).
@@ -42,11 +37,11 @@ You also need to be familiar with public and private key technologies.
 
 ## Certificate
 
-We generate an example self-signed root certificate similar to those certificates provided by a Certificate Authority. You can use it to issue tokens for your users.
+Generate a self-signed root certificate similar to those certificates provided by a Certificate Authority. You can use it to issue tokens for your users.
 
 ### Create a demo public key infrastructure
 
-Extend the [Set up Secure Network Communication](secure-network-communications.md) documentation by implementing the other half of our demo PKI (Public Key Infrastructure).
+Extend the [Set up Secure Network Communication](secure-network-communications.md) documentation by implementing the other half of the demo PKI (public key infrastructure).
 
 ![Flow Chart of demo PKI](./media/setup-microsoft-entra-id-with-certificates/fc-pki-demo.svg)
 
@@ -60,7 +55,7 @@ mkdir signingUsersCert
 mkdir userCerts
 ```
 
-Create extension files to ensure our certificates are created with the correct metadata and restrictions.
+Create extension files to ensure you create certificates with the correct metadata and restrictions.
 
 `signingUsersCert/extensions.cnf`
 
@@ -88,7 +83,7 @@ if (-Not (Test-Path "signingUsersCert\index.txt")) { New-Item -Path "signingUser
 if (-Not (Test-Path "signingUsersCert\serial")) { Set-Content -Path "signingUsersCert\serial" -Value "0001" }
 ```
 
-Generate our intermediate Users cert.
+Generate the intermediate Users cert.
 
 ```powershell
 openssl genrsa -out signingUsersCert/users.key.pem 2048
@@ -106,7 +101,7 @@ openssl x509 -req -in signingUsersCert/users.csr.pem -days 3650 `
 
 ### Generate user certs
 
-Run the following to generate and sign a certificate for a user with the SAP username `TESTUSER01`:
+Run the following command to generate and sign a certificate for a user with the SAP username `TESTUSER01`:
 
 ```powershell
 # Create the private key.
@@ -123,9 +118,9 @@ openssl x509 -req -days 365 -in userCerts/TESTUSER01.csr.pem -sha256 `
 ```
 
 > [!NOTE]
-> CN=TESTUSER01 should be the first parameter.
+> Use `CN=TESTUSER01` as the first parameter.
 
-You now have a root cert, an intermediate SNC (short for Secure Network Communications) Cert, an intermediate Users Cert, and a certificate to identify the user cert.
+You now have a root cert, an intermediate SNC (short for Secure Network Communications) cert, an intermediate users cert, and a certificate to identify the user cert.
 
 Verify the chain with the following command:
 
@@ -137,9 +132,9 @@ userCerts/TESTUSER01.cert.pem: OK
 
 ## Windows Store
 
-Take these steps to add users signing certificate and certificate chain to Windows Store.
+Follow these steps to add users signing certificates and certificate chains to the Windows Store.
 
-1. Generate .p12 file from users signing certificate & private key.
+1. Generate a `.p12` file from the user's signing certificate and private key.
 
 ```powershell
 openssl pkcs12 -export -out user_signing_cert.p12 -inkey .\signingUsersCert\users.key.pem -in .\signingUsersCert\users.cert.pem
@@ -147,15 +142,15 @@ openssl pkcs12 -export -out user_signing_cert.p12 -inkey .\signingUsersCert\user
 
 1. Open the Windows Certificate Manager:
     1. Press `Win + R`, type `certlm.msc`, and press Enter.
-1. Import the public Root CA certificate.
-    1. Import into `Trusted Root Certification Authorities`.
-1. Import the User Certificate + Key:
-    1. In the Certificate Manager, navigate to the appropriate certificate store (for example, Personal).
+1. Import the public Root CA certificate:
+    1. Import it into `Trusted Root Certification Authorities`.
+1. Import the user certificate and key:
+    1. In the Certificate Manager, go to the appropriate certificate store, such as `Personal`.
     1. Right-click and select `All Tasks > Import`.
-    1. Follow the wizard to import the `.p12` file, ensuring to **mark the key as exportable** so the OPDG (short for On Premises Data Gateway) can use it to encrypt data.
-    1. Right click on `Users Intermediate Cert` and select `All Tasks>Manage Private Keys...`.
-1. Add the `NT SERVICE\PBIEgwService` user to the list of people who have permissions.
-1. Check subject name of certificate in the Windows Certificate Store:
+    1. Follow the wizard to import the `.p12` file. Make sure to **mark the key as exportable** so the on-premises data gateway (OPDG) can use it to encrypt data.
+    1. Right-click on `Users Intermediate Cert` and select `All Tasks > Manage Private Keys`.
+1. Add the `NT SERVICE\PBIEgwService` user to the list of users with permissions.
+1. Check the subject name of the certificate in the Windows Certificate Store:
 
 ```powershell
 Get-ChildItem -Path Cert:\LocalMachine\My | Where-Object { $_.Subject -like "*Users Intermediate Cert*" } | Format-List -Property Subject
@@ -163,19 +158,19 @@ Get-ChildItem -Path Cert:\LocalMachine\My | Where-Object { $_.Subject -like "*Us
 
 ## Entra ID to SAP user mapping
 
-You can map X.509 certificates to users explicitly, using rules, or by adding a user intermediate certificate to SAP.
+You can map X.509 certificates to users explicitly, by using rules, or by adding a user intermediate certificate to SAP.
 
 ### Map X.509 certificates to users explicitly
 
-Explicitly map a small number of Entra ID users to SAP users.
+Explicitly map a small number of Microsoft Entra ID users to SAP users.
 
-Navigate the SAP GUI to T-Code `SM30`.
+In the SAP GUI, go to T-Code `SM30`.
 
 Enter table `VUSREXTID` and select the maintain button.
 
-Select option `DN` when prompted for `Type of ACL`.
+Select option `DN` when prompted for *:::no-loc text="Type of ACL":::*.
 
-Choose `New Entry` and enter `CN=TESTUSER01@CONTOSO.COM` (replacing the content for your own UPN) for the external ID. Make sure CN comes first. Select your UPN for the username field; and last Check the `Activated` option and save the results.
+Choose **New Entry** and enter `CN=TESTUSER01@CONTOSO.COM` (replacing the content for your own UPN) for the external ID. Make sure CN comes first. Select your UPN for the username field, check the **Activated** option, and save the results.
 
 > [!NOTE]
 > DO NOT INCLUDE `p:` prefix.
@@ -210,7 +205,7 @@ on `STRUST` to add the public certificate *users.cert.pem* file to the box.
 
 ## SAP system update
 
-Add the `SsoCertificateSubject` to your SAP System parameters.
+Add the `SsoCertificateSubject` parameter to your SAP system parameters.
 
 ``` "SsoCertificateSubject": "CN=Users Intermediate Cert, O=Contoso", ```
 
@@ -218,13 +213,13 @@ Also enable
 
 ``` "SncSso": "On" ```
 
-Replace the connection with a new one that uses `Microsoft Entra ID (using certificates)` to sign in to SAP with your Microsoft Entra ID account.
+Replace the connection with a new one that uses `Microsoft Entra ID (using certificates)` to sign in to SAP by using your Microsoft Entra ID account.
 
 > [!IMPORTANT]
-> Delete the temporary TESTUSER01 public and private keys on completion of this tutorial.
+> Delete the temporary TESTUSER01 public and private keys when you finish this tutorial.
 
 > [!IMPORTANT]
-> Ensure the secure handling and eventual deletion of private keys upon completion of this setup to maintain security integrity.
+> Ensure you handle private keys securely and delete them when you finish this setup to maintain security.
 
 Learn more:
 [On-premises data gateway FAQ](/data-integration/gateway/service-gateway-onprem-faq)

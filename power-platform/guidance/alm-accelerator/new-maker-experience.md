@@ -1,5 +1,5 @@
 ---
-title: ALM Accelerator for Power Platform new maker experience
+title: ALM Accelerator for Power Platform new maker experience (Deprecated)
 description: Learn how makers can use the ALM Accelerator for Power Platform.
 ms.topic: how-to
 ms.date: 04/10/2023
@@ -10,7 +10,9 @@ ms.reviewer: sericks
 ms.custom: bap-template
 ---
 
-# ALM Accelerator for Power Platform new maker experience
+# ALM Accelerator for Power Platform new maker experience (Deprecated)
+
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 
 ## Demo: The ALM Accelerator for Power Platform app new maker experience
 
