@@ -37,10 +37,10 @@ You can reduce storage space used by removing or deleting data from Dynamics 365
 
 This article describes 15 methods to help you manage storage more effectively.
 
-Use one or more of these methods to control total data storage usage. You can delete categories of data as needed or set up bulk deletion jobs that reccur at scheduled intervals. For example, you can delete notes, attachments, import history, and other data.
+Use one or more of these methods to control total data storage usage. You can delete categories of data as needed or set up bulk deletion jobs that recur at scheduled intervals. For example, you can delete notes, attachments, import history, and other data.
   
 > [!WARNING]
-> You can't restore your data once it's deleted. You might want to increase the amount of storage space in your [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] instead of reducing your storage space used through deletion.  
+> You can't restore your data once you delete it. You might want to increase the amount of storage space in your [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] instead of reducing your storage space used through deletion.  
 
 ## Prerequisites
 
@@ -66,7 +66,7 @@ Use the following methods to free up storage for each capacity type.
 |     | **DuplicateRecordBase**| **[Method 7](#method-7-remove-bulk-duplicate-detection-jobs-and-associated-copies-of-duplicate-records)**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
 |     | **ImportJobBase** | **[Method 8](#method-8-delete-bulk-import-instances-using-a-bulk-deletion-job)**: Delete bulk import instances by using a bulk deletion job        | 
 |     | **BulkDeleteOperationBase**| **[Method 9](#method-9-delete-bulk-deletion-job-instances-using-a-bulk-deletion-job)**: Delete bulk deletion job instances using a bulk deletion job        | 
-|     | Various | **[Method 11](#method-11-remove-unrequired-tables-and-columns-from-dataverse-search)**: Remove unecessary tables and columns from Dataverse search        | 
+|     | Various | **[Method 11](#method-11-remove-unrequired-tables-and-columns-from-dataverse-search)**: Remove unnecessary tables and columns from Dataverse search        | 
 |     | **ActivityPointerBase**, **EmailBase**, **EmailHashBase**, **ActivityPartyBase**, and other activity tables | **[Method 12](#method-12-remove-unrequired-data-from-activity-tables)**: Remove unrequired data from activity tables |
 |     | **Postbase**, **PostCommentBase**, **PostFollowBase**, **PostLikeBase**, **PostRegardingBase**, **PostRoleBase**  | **[Method 13](#method-13-remove-unrequired-activity-feeds-records)**: Remove unrequired Activity Feeds records |
 |     | **ExchangeSyncIdMappingBase**  | **[Method 14](#method-14-modify-item-level-monitoring-settings)**: Modify Item Level Monitoring Settings |
@@ -280,7 +280,7 @@ Microsoft is migrating audit logs to a new storage location. Environments that c
 When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete the audit logs to free space when they're no longer needed.  
 
 > [!WARNING]
-> Aftet you delete an audit log, you can no longer view the audit history for the period covered by that audit log.
+> After you delete an audit log, you can no longer view the audit history for the period covered by that audit log.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
