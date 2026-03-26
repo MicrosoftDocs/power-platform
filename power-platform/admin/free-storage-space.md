@@ -61,8 +61,8 @@ Use the following methods to free up storage for each capacity type.
 | Storage | Affected table(s) |  Method |
 |---------|-------------------|---------|
 |**Database**     |         | |
-|     | **WorkflowLogBase** | **[Method 1](#method-1-delete-bulk-email-and-workflow-instances-using-a-bulk-deletion-job)**: Delete bulk email and workflow instances by using a bulk deletion job        | 
-|     | **AsyncOperationBase** | **[Method 2](#method-2-evaluate-and-delete-suspended-workflows)**: Evaluate and delete suspended workflows        | 
+|     | **WorkflowLogBase** | **[Method 1: Delete bulk email and workflow instances by using a bulk deletion job](#method-1-delete-bulk-email-and-workflow-instances-using-a-bulk-deletion-job)**        | 
+|     | **AsyncOperationBase** | **[Method 2: Evaluate and delete suspended workflows](#method-2-evaluate-and-delete-suspended-workflows)**        | 
 |     | **DuplicateRecordBase**| **[Method 3: Remove bulk duplicate detection jobs and associated copies of duplicate records](#method-3-remove-bulk-duplicate-detection-jobs-and-associated-copies-of-duplicate-records)**       |
 |     | **ImportJobBase** | **[Method 4: Delete bulk import instances by using a bulk deletion job](#method-4-delete-bulk-import-instances-using-a-bulk-deletion-job)**        | 
 |     | **BulkDeleteOperationBase**| **[Method 5: Delete bulk deletion job instances using a bulk deletion job](#method-5-delete-bulk-deletion-job-instances-using-a-bulk-deletion-job)**        | 
