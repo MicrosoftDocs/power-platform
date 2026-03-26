@@ -1,7 +1,7 @@
 ---
 title: Configure Dataverse search for your environment
 description: Configure Dataverse search for your environment to improve search results and performance in model-driven apps. 
-author: marianaraujo 
+author: sericks 
 ms.component: pa-admin
 ms.topic: get-started
 ms.date: 03/25/2026
@@ -12,6 +12,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
+  - marianaraujo
   - seanwat-msft 
   - JasonHQX
   - wobushixinxin67
