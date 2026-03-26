@@ -22,8 +22,7 @@ A plain-language guide to what your Microsoft 365 license includes and when you 
 | **Premium connectors** (SQL Server, Dataverse, HTTP with Azure AD, Salesforce, SAP, ServiceNow, and similar) | No | Yes | Yes |
 | **Custom connectors** | No | Yes | Yes |
 | **On-premises data gateway** | No | Yes | Yes |
-| **AI Builder credits** (legacy) | Limited | 5K seeded to tenant pool (removed Nov 2026) | 5K seeded to tenant pool (removed Nov 2026) |
-| **Copilot Credits** (for agents) | No | Via Copilot Studio pack or pay-as-you-go | Via Copilot Studio pack or pay-as-you-go |
+| **Copilot Credits** (for AI and agents) | No | Via Copilot Studio pack or pay-as-you-go | Via Copilot Studio pack or pay-as-you-go |
 | **Desktop flows (attended RPA)** | No | Yes | Yes |
 | **Unattended desktop flows** | No | No | Yes (with add-on) |
 | **Per-flow licensing** (no per-user license needed for runners) | No | No | Yes |
@@ -93,9 +92,9 @@ There's one exception: if a scheduled flow is **manually associated to a Power A
 
 AI features in Power Automate use **two separate credit currencies**:
 
-1. **AI Builder credits** (legacy, being phased out) -- used by AI Builder actions in classic cloud flows and Power Apps. Your tenant gets a shared pool from Premium licenses (5,000 credits/license) or AI Builder add-ons (1M credits/add-on). These seeded credits are **being removed November 1, 2026**.
+1. **AI Builder credits** (legacy, being phased out) -- used by AI Builder actions in classic cloud flows and Power Apps. Your tenant may have a shared pool from AI Builder add-ons (1M credits/add-on) or seeded from existing Premium subscriptions. Seeded credits are **being removed for existing subscriptions November 1, 2026**, and are **no longer included with new subscriptions**. New customers must use Copilot Credits instead.
 
-1. **Copilot Credits** (new) -- required for Copilot Studio agents and agent flows. Also used as overflow when AI Builder credits run out in classic flows. Sourced from Copilot Studio prepaid packs or pay-as-you-go. New customers can no longer purchase AI Builder add-ons and must use Copilot Credits instead.
+1. **Copilot Credits** (new, the future) -- required for Copilot Studio agents and agent flows. Also used as overflow when AI Builder credits run out in classic flows. Sourced from Copilot Studio prepaid packs or pay-as-you-go.
 
 **Which credits does my flow use?**
 
