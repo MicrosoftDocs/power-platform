@@ -4,7 +4,7 @@ description: Reduce storage space usage by deleting notes, attachments, import h
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/25/2026
+ms.date: 03/26/2026
 ms.subservice: admin
 ms.author: ceian 
 ms.reviewer: sericks
@@ -64,8 +64,8 @@ Use the following methods to free up storage for each capacity type.
 |     | **WorkflowLogBase** | **[Method 1](#method-1-delete-bulk-email-and-workflow-instances-using-a-bulk-deletion-job)**: Delete bulk email and workflow instances by using a bulk deletion job        | 
 |     | **AsyncOperationBase** | **[Method 2](#method-2-evaluate-and-delete-suspended-workflows)**: Evaluate and delete suspended workflows        | 
 |     | **DuplicateRecordBase**| **[Method 3: Remove bulk duplicate detection jobs and associated copies of duplicate records](#method-3-remove-bulk-duplicate-detection-jobs-and-associated-copies-of-duplicate-records)**       |
-|     | **ImportJobBase** | **[Method 4]: Delete bulk import instances by using a bulk deletion job](#method-4-delete-bulk-import-instances-using-a-bulk-deletion-job)**        | 
-|     | **BulkDeleteOperationBase**| **[Method 5]: Delete bulk deletion job instances using a bulk deletion job](#method-5-delete-bulk-deletion-job-instances-using-a-bulk-deletion-job)**        | 
+|     | **ImportJobBase** | **[Method 4: Delete bulk import instances by using a bulk deletion job](#method-4-delete-bulk-import-instances-using-a-bulk-deletion-job)**        | 
+|     | **BulkDeleteOperationBase**| **[Method 5: Delete bulk deletion job instances using a bulk deletion job](#method-5-delete-bulk-deletion-job-instances-using-a-bulk-deletion-job)**        | 
 |     | Various | **[Method 6: Remove unrequired tables and columns from Dataverse search](#method-6-remove-unrequired-tables-and-columns-from-dataverse-search)**        | 
 |     | **ActivityPointerBase**, **EmailBase**, **EmailHashBase**, **ActivityPartyBase**, and other activity tables | **[Method 7: Remove unrequired data from activity tables](#method-7-remove-unrequired-data-from-activity-tables)** |
 |     | **Postbase**, **PostCommentBase**, **PostFollowBase**, **PostLikeBase**, **PostRegardingBase**, **PostRoleBase**  | **[Method 8: Remove unrequired Activity Feeds records](#method-8-remove-unrequired-activity-feeds-records)** |
