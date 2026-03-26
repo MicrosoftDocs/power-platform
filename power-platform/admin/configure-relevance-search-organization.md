@@ -80,10 +80,9 @@ When you set Dataverse search to **On**, a search box appears at the top of ever
 
 | Dataverse search set to On	|  Dataverse search set to Default	|   Dataverse search set to Off  |
 |-----------------------------|-----------------------------------|--------------------------------|
-| The search bar is visible. (Quick Find isn't visible or accessible.)  |	The search bar isn't visible. (Quick Find can be used alternatively.)  |  Quick Find can be used alternatively.  |`
+| The search bar is visible. (Quick Find isn't visible or accessible.)  |	The search bar isn't visible. (Quick Find can be used alternatively.)  |  Quick Find can be used alternatively.  |
 |  Dataverse search is used for all production environments.  |  Dataverse search isn't available for global search in any environment.	|  Dataverse search isn't available for global search in any environment.  |
 |  Dataverse data is automatically indexed and is searchable to be used for global search.  |  Dataverse data isn't indexed and data isn't searchable for global search.	|  Dataverse data isn't indexed and data isn't searchable for global search. |
-
 
 ## What Dataverse search means for generative AI-enabled experiences
 
