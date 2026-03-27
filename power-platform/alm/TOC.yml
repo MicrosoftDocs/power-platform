@@ -24,14 +24,14 @@
           href: update-solutions-alm.md
         - name: Dependencies
           items:
-             - name: Removing dependencies overview
-               href: removing-dependencies.md
-             - name: Field and workflow dependencies
-               href: remove-field-workflow.md
-             - name: Field and view dependencies
-               href: remove-field-view.md
-             - name: Table and model-driven app dependencies
-               href: remove-table-app.md
+            - name: Removing dependencies overview
+              href: removing-dependencies.md
+            - name: Field and workflow dependencies
+              href: remove-field-workflow.md
+            - name: Field and view dependencies
+              href: remove-field-view.md
+            - name: Table and model-driven app dependencies
+              href: remove-table-app.md
         - name: Solution best practices
           items:
             - name: Organize solutions
@@ -75,13 +75,13 @@
       items:
         - name: Manage solutions using PowerShell
           href: powershell-api.md
-        - name: Source control integration 
+        - name: Source control integration
           href: git-integration/overview.md
           items:
             - name: Connect to Git
               href: git-integration/connecting-to-git.md
             - name: Source control operations
-              href: git-integration/source-control-operations.md   
+              href: git-integration/source-control-operations.md
             - name: Source control canvas apps
               href: git-integration/canvas-apps-git-integration.md
             - name: Frequently asked questions
@@ -123,7 +123,7 @@
               href: redeploy-past-solution-versions.md
             - name: Use Copilot to generate deployment notes in pipelines
               href: copilot-deployment-notes-pipelines.md
-        - name: Block unmanaged customizations 
+        - name: Block unmanaged customizations
           href: block-unmanaged-customizations.md
     - name: ALM for developers
       href: alm-for-developers.md
@@ -207,13 +207,15 @@
               href: solution-async.md
             - name: Create patches
               href: create-patches-simplify-solution-updates.md
+        - name: Integrate Dataverse with Git using code
+          href: git-integration/git-api.md
         - name: Edit the customizations file
           href: when-edit-customization-file.md
         - name: Pipeline table reference
           href: ../developer/pipelines/table-reference.md
     - name: Responsible AI
       items:
-      - name: Overview
-        href: ../responsible-ai-overview.md
-      - name:  Copilot to generate deployment notes in pipelines FAQ
-        href: faqs-AI-deployment-notes-pipelines.md
+        - name: Overview
+          href: ../responsible-ai-overview.md
+        - name: Copilot to generate deployment notes in pipelines FAQ
+          href: faqs-AI-deployment-notes-pipelines.md
