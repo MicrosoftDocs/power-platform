@@ -4,7 +4,7 @@ description: "In this tutorial, learn how to configure OpenID Connect (OIDC) and
 author: anpetroc
 ms.author: anpetroc
 ms.subservice: alm
-ms.date: 03/25/2026
+ms.date: 03/27/2026
 ms.reviewer: pehecke
 ms.topic: tutorial
 search.audienceType:
@@ -43,9 +43,9 @@ In this tutorial, you will:
 
 ## Step 2: Create a Microsoft Entra app registration and add FIC
 
-1. In the Azure portal, go to **Microsoft Entra ID** > **App registrations** > **New registration**.
+1. In the [Azure portal](https://portal.azure.com), go to **Microsoft Entra ID** > **App registrations** > **New registration**.
 
-2. Create the app registration and copy the **Application (client) ID** and **Directory (tenant) ID**.
+2. Create the app registration and copy the **Application (client) ID** and **Directory (tenant) ID** values.
 
 3. Open **API permissions** > **Add a permission** > **Dynamics CRM** and grant Dataverse permission.
 
@@ -66,7 +66,7 @@ In this tutorial, you will:
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-2. Add the app registration as an application user and assign required security roles in each target environment.
+2. Add the Entra ID app registration as an application user and assign required security roles in each target environment.
 
 3. For detailed steps, see [Manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users).
 
@@ -117,7 +117,7 @@ jobs:
 
 ```
 
-When the workflow runs, GitHub issues an OIDC token, Microsoft Entra validates the token against your federated credential, and the action authenticates to Dataverse/Power Platform without a client secret.
+When the workflow runs, GitHub issues an OIDC token. Microsoft Entra validates that token against your federated credential, and the action authenticates to Dataverse/Power Platform without a client secret.
 
 ### See also
 
