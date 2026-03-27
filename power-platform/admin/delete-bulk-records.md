@@ -4,7 +4,7 @@ description: Learn what steps you need to take to remove a large amount of speci
 author: bhgoswam 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/24/2025
+ms.date: 03/27/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: bhgoswam
@@ -17,7 +17,7 @@ search.audienceType:
 
 The *bulk deletion* feature helps you delete data you no longer need so you can maintain data quality and manage the consumption of system storage.  
   
- For example, you can delete the following data in bulk:  
+For example, you can delete the following data in bulk:  
   
 - Stale data.  
 - Data that is irrelevant to the business.
@@ -48,12 +48,12 @@ To delete bulk data, take these steps:
 
 ### Permanent deletion
 
-The Bulk Deletion Wizard includes a **Permanent deletion** checkbox. When selected, records deleted by the bulk delete job are permanently removed and can't be recovered. If [deleted record keeping](restore-deleted-table-records.md) is enabled for your environment, this option skips the step of moving data to deleted records tables, which results in faster job execution.
+The Bulk Deletion Wizard includes a **Permanent deletion** checkbox. When selected, records deleted by the bulk delete job are permanently removed and can't be recovered. If [deleted record keeping](restore-deleted-table-records.md) is turned on for your environment, this option skips the step of moving data to deleted records tables, which results in faster job execution.
 
 Permanent deletion is useful when you need to:
 
 - Remove data that is no longer needed in the system, such as logs and activities that are irrelevant after a certain period.
-- Run bulk delete jobs faster, since skipping the move data to deleted tables significantly improves job performance.
+- Run bulk delete jobs faster, since skipping the step of moving data to deleted tables significantly improves job performance.
 
 > [!CAUTION]
 > Use the **Permanent deletion** option judiciously. Data deleted with this option is permanently lost and can't be restored. Ensure the data targeted by the bulk delete job is no longer needed before you select this checkbox.
@@ -64,9 +64,9 @@ To learn how to implement bulk delete in code, go to [Delete data in bulk](/powe
 
 As a system administrator, you can retrieve deleted records within a specified time frame that you configure.
 
-You can learn more about how to restore deleted records using the deleted records feature in [enable deleted records keeping](restore-deleted-table-records.md).
+You can learn more about how to restore deleted records using the deleted records feature in [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md).
 
-If the deleted records keeping isn't enabled, you can learn to [Back up and restore environments](backup-restore-environments.md).
+If the deleted records feature isn't turned on, you can learn to [Back up and restore environments](backup-restore-environments.md).
 
 ### Restore all records deleted by a bulk delete job
 
@@ -100,9 +100,9 @@ To restore deleted records, take these steps:
 
 ## Error handling
 
-Errors encountered during a bulk delete job run are visible under a **Run details** tab.
+Errors encountered during a bulk delete job are visible under a **Run details** tab.
 
-If a job failed to run, open the latest completed job, and select the **Run details** tab to view all the errors that were encountered during the job run.
+If a job failed to run, open the latest completed job, and select the **Run details** tab to view all the errors that were encountered during the job.
 
 The top section clearly displays the following details:
 
@@ -111,9 +111,9 @@ The top section clearly displays the following details:
 - End time
 - Number of records deleted
 - Number of records failed
-- Number of Errors, if any
+- Number of errors, if any
 
-A **Failed** status indicated the job didn't start. Open the job to review failure reasons.
+A **Failed** status indicates that the job didn't start. Open the job to review failure reasons.
 
 ## Solution-aware bulk deletion jobs
 
@@ -131,9 +131,8 @@ Exporting and importing solutions containing bulk deletion jobs works the same a
 > [!NOTE]
 > - Only admins can create and import solutions containing bulk deletion jobs.
 > - Only bulk deletion jobs created in Power Platform environments can be solution-aware.
-> - Only job definitions are portable — deleted data isn't included. 
+> - Only job definitions are portable. Deleted data isn't included. 
 > - Imported bulk deletion jobs run immediately on import. Plan imports carefully.
-
 
 ### Related content
 
