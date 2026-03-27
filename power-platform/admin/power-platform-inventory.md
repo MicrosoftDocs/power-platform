@@ -188,14 +188,14 @@ You can programmatically query your Power Platform inventory by using Azure Reso
 
 The following are example queries you can use with any of the Azure Resource Graph interfaces. All queries use the **PowerPlatformResources** table, which contains your organization's inventory data.
 
-#### Query 1: Total count of all resources
+#### Query: Total count of all resources
 
 ```Kusto
 PowerPlatformResources
 | count
 ```
 
-#### Query 2: Total counts by resource type
+#### Query: Total counts by resource type
 
 ```Kusto
 PowerPlatformResources
@@ -203,7 +203,7 @@ PowerPlatformResources
 | order by resourceCount
 ```
 
-#### Query 3: Discover available fields for a resource type
+#### Query: Discover available fields for a resource type
 
 The inventory schema evolves over time as new data fields are added. Use this query to see all available fields for a specific resource type. This query is the recommended way to stay up to date with available data.
 
@@ -244,7 +244,7 @@ To discover fields for other resource types, replace the `type` filter value. Fo
 > [!NOTE]
 > This query requires at least one resource of the specified type to exist in your tenant.
 
-#### Query 4: Counts by environment (inventory distribution across environments)
+#### Query: Counts by environment (inventory distribution across environments)
 
 ```Kusto
 PowerPlatformResources
@@ -254,7 +254,7 @@ PowerPlatformResources
 | order by resourceCount desc
 ```
 
-#### Query 5: Counts by region (inventory distribution across regions)
+#### Query: Counts by region (inventory distribution across regions)
 
 ```Kusto
 PowerPlatformResources
@@ -262,7 +262,7 @@ PowerPlatformResources
 | order by resourceCount desc
 ```
 
-#### Query 6: Top owners by item count
+#### Query: Top owners by item count
 
 ```Kusto
 PowerPlatformResources
@@ -272,7 +272,7 @@ PowerPlatformResources
 | order by resourceCount desc
 ```
 
-#### Query 7: Finding a single agent in the tenant
+#### Query: Finding a single agent in the tenant
 
 ```Kusto
 PowerPlatformResources
@@ -283,7 +283,7 @@ PowerPlatformResources
 > [!TIP]
 > You can find the agent's ID in the Copilot Studio URL when viewing the agent, or in the **Name** column of the inventory table.
 
-#### Query 8: Items created in the past 24 hours
+#### Query: Items created in the past 24 hours
 
 ```Kusto
 PowerPlatformResources
