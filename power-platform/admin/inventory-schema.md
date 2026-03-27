@@ -4,7 +4,7 @@ description: Learn about the resource types and fields available in Power Platfo
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 03/23/2026
+ms.date: 03/27/2026
 ms.topic: concept-article
 ---
 
@@ -35,7 +35,7 @@ The following fields are available on all resource types in the PowerPlatformRes
 
 | User experience name | API field path | Data type | Description | Example | Status |
 |---|---|---|---|---|---|
-| Item name | `properties.displayName` | string | The display name of the resource. | `Expense Report App` | Generally available |
+| Item name | `properties.displayName` | string | The display name of the resource. | Expense Report App | Generally available |
 | Item type | `type` | string | The resource type identifier (see [Resource types](#resource-types)). | `microsoft.powerapps/canvasapps` | Generally available |
 | Item ID | `name` | string | The unique identifier of the resource. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | Location | `location` | string | The geographic region of the resource. | `unitedstates` | Generally available |
