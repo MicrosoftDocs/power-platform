@@ -61,7 +61,7 @@ Understanding Copilot Studio design and implementation concepts and exploring so
 
 - [Copilot Studio documentation](/microsoft-copilot-studio/)
 - [Copilot Studio guidance](/microsoft-copilot-studio/guidance/)
-- [Architecting agent solutions: Principles and patterns](architecture/overview.md)
+- [Architecting agent solutions: Principles and patterns](/microsoft-copilot-studio/guidance/architecture/)
 - [Copilot Studio implementation guide](https://aka.ms/CopilotStudioImplementationGuide) (PDF)
 - [Copilot Studio resources](https://aka.ms/CopilotStudio/resources)
 - [Introduction to Microsoft Power Platform for developers](../../developer/get-started.md)
