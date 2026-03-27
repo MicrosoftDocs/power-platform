@@ -58,7 +58,7 @@ The `Options` object supports Azure Resource Graph query parameters for paginati
 
 The API supports the clause types highlighted in this section through polymorphic JSON serialization. Each clause type corresponds to KQL operators as documented in the [KQL reference](/azure/data-explorer/kusto/query/):
 
-### 1. Where clause
+### Where clause
 
 Filters data based on field conditions. Translates to the KQL [`where` operator](/azure/data-explorer/kusto/query/whereoperator).
 
@@ -87,7 +87,7 @@ The API supports all standard KQL comparison and string operators. For a complet
 
 *Translates to KQL:* `| where type in~ ('microsoft.powerapps/canvasapps', 'microsoft.copilotstudio/agents')`
 
-### 2. Project clause
+### Project clause
 
 Selects specific fields from the results. Translates to the KQL [`project` operator](/azure/data-explorer/kusto/query/projectoperator).
 
@@ -114,7 +114,7 @@ Selects specific fields from the results. Translates to the KQL [`project` opera
 
 *Translates to KQL:* `| project name, properties.displayName, environmentId = tostring(properties.environmentId), createdDate = properties.createdAt`
 
-### 3. Take clause
+### Take clause
 
 Limits the number of results returned. Translates to the KQL [`take` operator](/azure/data-explorer/kusto/query/takeoperator).
 
@@ -127,7 +127,7 @@ Limits the number of results returned. Translates to the KQL [`take` operator](/
 
 *Translates to KQL:* `| take 50`
 
-### 4. Order by clause
+### Order by clause
 
 Sorts results by specified fields. Translates to the KQL [`sort` operator](/kusto/query/sort-operator?view=azure-data-explorer&preserve-view=true).
 
@@ -156,7 +156,7 @@ Sorts results by specified fields. Translates to the KQL [`sort` operator](/kust
 
 *Translates to KQL:* `| sort by tostring(properties.createdAt) desc, properties.displayName asc`
 
-### 5. Distinct clause
+### Distinct clause
 
 Returns unique values for specified fields. Translates to the KQL [`distinct` operator](/azure/data-explorer/kusto/query/distinctoperator).
 
@@ -170,7 +170,7 @@ Returns unique values for specified fields. Translates to the KQL [`distinct` op
 
 *Translates to KQL:* `| distinct field1, field2`
 
-### 6. Count clause
+### Count clause
 
 Returns the count of matching records. Translates to the KQL [`count` operator](/azure/data-explorer/kusto/query/countoperator).
 
@@ -182,7 +182,7 @@ Returns the count of matching records. Translates to the KQL [`count` operator](
 
 *Translates to KQL:* `| count`
 
-### 7. Summarize clause
+### Summarize clause
 
 Aggregates data using count or argmax operations. Translates to the KQL [`summarize` operator](/azure/data-explorer/kusto/query/summarizeoperator).
 
@@ -232,7 +232,7 @@ Aggregates data using count or argmax operations. Translates to the KQL [`summar
 
 *Translates to KQL:* `| summarize arg_max(createdTime, *) by resourceGroup`
 
-### 8. Extend clause
+### Extend clause
 
 Adds computed columns to the results. Translates to the KQL [`extend` operator](/azure/data-explorer/kusto/query/extendoperator).
 
@@ -256,7 +256,7 @@ Adds computed columns to the results. Translates to the KQL [`extend` operator](
 
 *Translates to KQL:* `| extend environmentId = tostring(properties.environmentId)`https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/scalarfunctions) for available functions.
 
-### 9. Join clause
+### Join clause
 
 Joins with another table/subquery. Translates to the KQL [`join` operator](/azure/data-explorer/kusto/query/joinoperator).
 
@@ -313,9 +313,9 @@ The API supports all KQL join kinds. For a complete list of available join types
 
 ## Complete query examples
 
-### Example 1: Basic Power Platform resource query (PPAC default pattern)
+### Example: Basic Power Platform resource query (Power Platform admin center default pattern)
 
-Get all Power Platform resources with environment information—this is the default query used by Power Platform Admin Center.
+Get all Power Platform resources with environment information—this is the default query used by Power Platform admin center.
 
 ```json
 {
@@ -395,7 +395,7 @@ PowerPlatformResources
 | order by tostring(properties.createdAt) desc
 ```
 
-### Example 2: Count Power Platform resources by type and location
+### Example: Count Power Platform resources by type and location
 
 ```json
 {
@@ -426,7 +426,7 @@ PowerPlatformResources
 | sort by resourceCount desc
 ```
 
-### Example 3: Simple canvas apps query
+### Example: Simple canvas apps query
 
 Get canvas apps with basic filtering and projection:
 
@@ -467,7 +467,7 @@ PowerPlatformResources
 | take 100
 ```
 
-### Example 4: Filter resources by environment and date range
+### Example: Filter resources by environment and date range
 
 ```json
 {
