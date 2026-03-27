@@ -4,8 +4,9 @@ description: Learn how to get a comprehensive, unified view of all agents and ap
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 03/23/2026
+ms.date: 03/27/2026
 ms.topic: concept-article
+
 ---
 
 # Power Platform inventory API
