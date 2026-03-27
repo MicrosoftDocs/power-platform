@@ -19,6 +19,7 @@ In this tutorial, you set up GitHub OIDC and Microsoft Entra federated identity 
 In this tutorial, you will:
 
 > [!div class="checklist"]
+>
 > * Configure OIDC in your GitHub repository
 > * Create a Microsoft Entra app registration and configure FIC
 > * Grant the app access in the Power Platform admin center
@@ -30,17 +31,15 @@ In this tutorial, you will:
 
 1. In GitHub, open your repository and make sure GitHub Actions is enabled.
 
-2. Review OIDC settings and subject claim customization guidance: [OpenID Connect in GitHub Actions](https://docs.github.com/en/actions/reference/security/oidc).
+2. Review OIDC settings and subject claim customization guidance. Refer to [OpenID Connect in GitHub Actions](https://docs.github.com/en/actions/reference/security/oidc).
 
-3. Configure the OIDC subject claim template to be `repository, workflow` for this tutorial. It creates a unique subject claim for each workflow in your repository, which you can then reference in your federated credential configuration in Microsoft Entra ID.
+3. Configure the OIDC subject claim template to be `repository, workflow` for this tutorial, as shown in the figure above. It creates a unique subject claim for each workflow in your repository, which you can then reference in your federated credential configuration in Microsoft Entra ID.
 
    The subject format resolves to values like:
 
-   - `repo:MyOrg/MyRepo:workflow:MyWorkflow`
+   * `repo:MyOrg/MyRepo:workflow:MyWorkflow`
 
 4. Save your repository OIDC configuration.
-
-
 
 ## Step 2: Create a Microsoft Entra app registration and add FIC
 
@@ -54,11 +53,11 @@ In this tutorial, you will:
 
   ![FIC Config](../media/github-actions-oidc-fic/azure-fic-config.png "FIC Config")
 
-5. Use this explicit subject identifier:
+1. Use this explicit subject identifier:
 
    `repo:MyOrg/MyRepo:workflow:MyWorkflow`
 
-6. Save the federated credential.
+2. Save the federated credential.
 
 > [!NOTE]
 > The subject claim in GitHub and the subject identifier in your federated credential must match exactly.
@@ -69,7 +68,7 @@ In this tutorial, you will:
 
 2. Add the app registration as an application user and assign required security roles in each target environment.
 
-3. For detailed steps, see [Manage application users in the Power Platform admin center](https://learn.microsoft.com/en-us/power-platform/admin/manage-application-users).
+3. For detailed steps, see [Manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users).
 
 ## Step 4: Create a GitHub workflow to run Power Platform operations
 
@@ -79,10 +78,10 @@ In this tutorial, you will:
 
 3. Configure your Power Platform GitHub Actions to use:
 
-   - Tenant ID
-   - App (client) ID
-   - Environment URL
-   - OIDC/FIC-based authentication parameters supported by the action
+   * Tenant ID
+   * App (client) ID
+   * Environment URL
+   * OIDC/FIC-based authentication parameters supported by the action
 
 4. Paste your sample workflow YAML in this section and update placeholders for your environment.
 
@@ -122,7 +121,7 @@ When the workflow runs, GitHub issues an OIDC token, Microsoft Entra validates t
 
 ### See also
 
-- [Use GitHub Actions for Microsoft Power Platform](../devops-github-actions.md)
-- [Available GitHub Actions for Power Platform development](../devops-github-available-actions.md)
+* [Use GitHub Actions for Microsoft Power Platform](../devops-github-actions.md)
+* [Available GitHub Actions for Power Platform development](../devops-github-available-actions.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
