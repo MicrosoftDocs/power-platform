@@ -31,15 +31,17 @@ In this tutorial, you will:
 
 1. In GitHub, open your repository and make sure GitHub Actions is enabled.
 
-2. Review OIDC settings and subject claim customization guidance. Refer to [OpenID Connect in GitHub Actions](https://docs.github.com/en/actions/reference/security/oidc).
+   To enable GitHub Actions in the repo, select **Settings** > **Actions** and then under **General** you are presented with an option to enable. If you do not see **Actions** under **Settings**, you do not have the required repo securtity permission.
 
-3. Configure the OIDC subject claim template to be `repository, workflow` for this tutorial, as shown in the figure above. It creates a unique subject claim for each workflow in your repository, which you can then reference in your federated credential configuration in Microsoft Entra ID.
+3. Review OIDC settings and subject claim customization guidance. Refer to [OpenID Connect in GitHub Actions](https://docs.github.com/en/actions/reference/security/oidc).
+
+4. Configure the OIDC subject claim template to be `repository, workflow` for this tutorial, as shown in the figure above. It creates a unique subject claim for each workflow in your repository, which you can then reference in your federated credential configuration in Microsoft Entra ID.
 
    The subject format resolves to values like:
 
    * `repo:MyOrg/MyRepo:workflow:MyWorkflow`
 
-4. Save your repository OIDC configuration.
+5. Save your repository OIDC configuration.
 
 ## Step 2: Create a Microsoft Entra app registration and add FIC
 
