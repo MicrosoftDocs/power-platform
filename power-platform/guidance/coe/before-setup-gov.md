@@ -18,40 +18,27 @@ This article will provide you with prerequisite steps to perform before setting 
 >[!IMPORTANT]
 >Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your environment set up and are signed in with the correct identity.
 
-## Initialize flow approval tables in your environment
+## Set up Microsoft Power Automate Approvals
 
 Many flows in the solution use the built-in approval actions of Power Automate, and therefore require it to be installed in the environment.
 
-If you're installing the solution in a new environment or one in which approvals haven't been used in the past, the approval tables must be initialized before you can install the solution. The easiest way to do this is to create a "dummy" approval flow.
+If you're installing the solution in a new environment or one in which approvals haven't been used in the past, the approval tables must be initialized before you can install the solution. 
 
-1. Go to [Power Automate](https://make.powerautomate.com) and select your CoE environment.
+1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments) and open your CoE environment.
 
-1. Select **+ Create**. 
+1. Click **Dynamics 365 apps** located in the Resources section. 
  
-1. Select **Instant cloud flow**.
+1. From the toolbar, click **Install app**.
 
-1. Pick **manually trigger a flow** as the trigger, and enter **Admin \| Dummy Approval Flow** as the name.
+1. Pick **Microsoft Flow Approvals** and click **Next**.
 
-   ![Build an instant flow.](media/coe14.png "Build an instant flow")
-
-1. Select **+ New Step** to add an approval action to the flow, and then search for and select **Create an approval**.
-
-1. Select a dummy title, and enter your email address under **Assigned to**.
-
-   ![Approval flow.](media/coe16.png "Approval flow")
-
-1. In the upper-right corner, select **Test**, and then select **I'll perform the trigger action**.
-
-1. Select **Save & Test**.
-
-1. Select **Run Flow**.
+1. Agree to the terms of service and then click **Install**.
 
     > [!NOTE]
-    > This flow can take up to ten minutes to run initially. After it runs, you can delete the flow because it won't be needed anymore.
+    > The installation process can take up to ten minutes to run. You can hit **Refresh** to check the status.
 
-1. Select **Solutions** on the left side panel, and you should now see two new Flow Approvals solutions. Note that the presence of these solutions was the point of this step, and the way you know it succeeded.
+1. Go to [Power Apps](https://make.powerapps.com), select **Solutions** on the left side panel, and you should now see two new Flow Approvals solutions. Note that the presence of these solutions was the point of this step, and the way you know it succeeded.
 
-   ![Flow Approval solutions.](media/coe17.png "Flow Approval solutions")
 
 ## Import the governance components solution
 
