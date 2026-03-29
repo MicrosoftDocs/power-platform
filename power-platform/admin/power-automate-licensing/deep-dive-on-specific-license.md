@@ -174,7 +174,7 @@ The following table details each seeded [license entitlement](types.md#license-e
 
 <sup>1</sup> Dynamics 365 Sales Professional and Dynamics 365 Customer Service Professional.<br/><br/>
 <sup>2</sup> Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, and Dynamics 365 Customer Engagement plan.<br/><br/>
-<sup>3</sup> In Dataverse for Teams environments (included in [specific Office licenses)](../powerapps-flow-licensing-faq.<br/><br/>md#which-microsoft-365-subscriptions-include-dataverse-for-teams-and-microsoft-copilot-studio-capabilities-with-teams), users can use custom connectors built on Azure and Dataverse
+<sup>3</sup> In Dataverse for Teams environments (included in [specific M365 licenses)](../powerapps-flow-licensing-faq.md#which-microsoft-365-subscriptions-include-dataverse-for-teams-and-microsoft-copilot-studio-capabilities-with-teams), users can use custom connectors built on Azure and Dataverse.<br/><br/>
 <sup>4</sup> Only included if cloud flow is in-context & associated to a Power App.<br/><br/>
 <sup>5</sup> Only included if cloud flow is in-context & associated to a Dynamic 365 app.<br/><br/>
 <sup>6</sup> Only includes local execution of desktop flow (no orchestration).
