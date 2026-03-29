@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 03/09/2026
+ms.date: 03/29/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -15,6 +15,40 @@ search.audienceType:
 # Programmability and extensibility - what's new or changed
 
 Learn about the latest changes and new capabilities for Power Platform API and admin SDKs.
+
+## February 2026
+
+| Item | Type | Description |
+|------|------|-------------|
+| List Environment Group Role Assignments | API | New endpoint: [List Environment Group Role Assignments (Preview)](/rest/api/power-platform/authorization/role-based-access-control/list-environment-group-role-assignments) |
+| Create Environment Group Role Assignment | API | New endpoint: [Create Environment Group Role Assignment (Preview)](/rest/api/power-platform/authorization/role-based-access-control/create-environment-group-role-assignment) |
+| Delete Environment Group Role Assignment | API | New endpoint: [Delete Environment Group Role Assignment (Preview)](/rest/api/power-platform/authorization/role-based-access-control/delete-environment-group-role-assignment) |
+| List Environment Role Assignments | API | New endpoint: [List Environment Role Assignments (Preview)](/rest/api/power-platform/authorization/role-based-access-control/list-environment-role-assignments) |
+| Create Environment Role Assignment | API | New endpoint: [Create Environment Role Assignment (Preview)](/rest/api/power-platform/authorization/role-based-access-control/create-environment-role-assignment) |
+| Delete Environment Role Assignment | API | New endpoint: [Delete Environment Role Assignment (Preview)](/rest/api/power-platform/authorization/role-based-access-control/delete-environment-role-assignment) |
+| List Connections | API | New endpoint: [List Connections](/rest/api/power-platform/connectivity/connections/list-connections) |
+| Reassign Copilot Agent | API | New endpoint: [Reassign Copilot Agent](/rest/api/power-platform/copilotstudio/bots/reassign-copilot-agent) |
+| Get Flow Run Actions for DSR | API | New endpoint: [Get Flow Run Actions for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-flow-run-actions-for-dsr) |
+| Get Approvals for DSR | API | New endpoint: [Get Approvals for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-approvals) |
+| Delete Approval for DSR | API | New endpoint: [Delete Approval for DSR Compliance](/rest/api/power-platform/workflowsagent/dsr-compliance/delete-approval) |
+| Get Connections for DSR | API | New endpoint: [Get Connections for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-connections) |
+| Delete Connection for DSR | API | New endpoint: [Delete Connection for DSR Compliance](/rest/api/power-platform/workflowsagent/dsr-compliance/delete-connection) |
+| Get Conversation Transcripts for DSR | API | New endpoint: [Get Conversation Transcripts for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-conversation-transcripts-for-dsr) |
+| Get Flow Run Actions (Environment-Scoped) | API | New endpoint: [Get Flow Run Actions for DSR Export (Environment-Scoped)](/rest/api/power-platform/workflowsagent/dsr-compliance/get-flow-run-actions-with-environment) |
+| Get Conversation Transcripts (Environment-Scoped) | API | New endpoint: [Get Conversation Transcripts for DSR Export (Environment-Scoped)](/rest/api/power-platform/workflowsagent/dsr-compliance/get-conversation-transcripts-with-environment) |
+| Get Flow Runs (Environment-Scoped) | API | New endpoint: [Get Flow Runs for DSR Export (Environment-Scoped)](/rest/api/power-platform/workflowsagent/dsr-compliance/get-flow-runs-non-singleton) |
+| Get Run History Data (Environment-Scoped) | API | New endpoint: [Get Run History Data for DSR Export (Environment-Scoped)](/rest/api/power-platform/workflowsagent/dsr-compliance/get-run-history-data-non-singleton) |
+| Get Flows for DSR | API | New endpoint: [Get Flows for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-flows) |
+| Delete Flow for DSR | API | New endpoint: [Delete Flow for DSR Compliance](/rest/api/power-platform/workflowsagent/dsr-compliance/delete-flow) |
+| Get Flow Runs for DSR | API | New endpoint: [Get Flow Runs for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-flow-runs-singleton) |
+| Get Run History Data for DSR | API | New endpoint: [Get Run History Data for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-run-history-data) |
+| Get Prompts for DSR | API | New endpoint: [Get AI Model Prompts for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-prompts) |
+| Delete Prompt for DSR | API | New endpoint: [Delete AI Model Prompt for DSR Compliance](/rest/api/power-platform/workflowsagent/dsr-compliance/delete-prompt) |
+| Query Resources | Bug fixes | Various bug fixes for [Query Resources](/rest/api/power-platform/resourcequery/resource-query/query-resources) |
+| Enable Managed Environment | Bug fixes | Various bug fixes for [Enable Managed Environment](/rest/api/power-platform/environmentmanagement/environment-managed-governance/enable-managed-environment) |
+| Powerplatform-Management (Python) | SDK | [Monthly Release](https://pypi.org/project/powerplatform-management/2.0.3350.223/) |
+| Microsoft.PowerPlatform.Management (C#) | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3350.223) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
 
 ## January 2026
 
