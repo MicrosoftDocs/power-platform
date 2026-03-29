@@ -281,7 +281,7 @@ Yes. Cloud flows included in the [CoE Starter Kit](../../guidance/coe/starter-ki
 
 ### Can I use service principal in flows, and does it count against my action limits?
 
-Yes, flows whose owner is a service principal consume a separate quota called [non-interactive limits](../api-request-limits-allocations.md#non-licensed-user-request-limits). These limits apply only when the service principal is the flow **owner** — not when a service principal is used in a connection inside the flow. Manual flows (button, Power Apps) use the invoking user's action limits even when the owner is a service principal. The invoking user must have a Power Automate Premium license if the flow uses premium connectors.
+Yes, flows whose owner is a service principal consume a separate quota called [non-interactive limits](../api-request-limits-allocations.md#non-licensed-user-request-limits). These limits apply only when the service principal is the flow **owner**, and not when a service principal is used in a connection inside the flow. Manual flows (button, Power Apps) use the invoking user's action limits even when the owner is a service principal. The invoking user must have a Power Automate Premium license if the flow uses premium connectors.
 
 Limits for automated/scheduled service principal flows:
 

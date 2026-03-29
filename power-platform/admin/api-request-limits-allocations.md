@@ -65,7 +65,7 @@ If a user has multiple paid licenses, the total number of requests allowed is th
 
 Microsoft Copilot Studio requests are counted from Power Automate flows triggered from a Microsoft Copilot Studio chatbot or agent. Microsoft Copilot Studio initial sessions pack and additional sessions pack both receive the same daily Power Platform Request limits.
 
-## Nonlicensed user request limits
+## Non-licensed user request limits
 
 A separate limit applies to activities that don't require user interaction, such as a background process that migrates data between databases. These limits are defined and pooled at the tenant level. Dataverse enables you to have identities that don't require any user to interact with the service. These include:
 
@@ -76,27 +76,27 @@ A separate limit applies to activities that don't require user interaction, such
 
 There are also special free ($0) licenses, which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. Learn more in [How Marketing is licensed](/dynamics365/customer-engagement/marketing/purchase-setup#user-and-portal-licensing).
 
-For these nonlicensed identities, every tenant gets an initial base request limit per tenant determined by what paid licenses are on the tenant, plus accrued limits determined by the quantity of paid Dynamics 365 Enterprise and Professional licenses.<sup>1</sup> This pool can only be used by these nonlicensed users and not by users with assigned interactive user licenses.
+For these non-licensed identities, every tenant gets an initial base request limit per tenant determined by what paid licenses are on the tenant, plus accrued limits determined by the quantity of paid Dynamics 365 Enterprise and Professional licenses.<sup>1</sup> This pool can only be used by these non-licensed users and not by users with assigned interactive user licenses.
 
-| Products                                                        | Pooled nonlicensed tenant-level requests per 24 hours                                  |
+| Products                                                        | Pooled non-licensed tenant-level requests per 24 hours                                  |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | Dynamics 365 Enterprise & Professional applications<sup>1</sup> | 500,000 base requests + 5,000 requests accrued per USL<sup>1</sup> up to 10,000,000 max<sup>2</sup> |
 | Power Apps (all licenses)                                       | 25,000 base requests with no per-license accrual for the tenant                         |
 | Power Automate (all licenses)                                   | 25,000 base requests with no per-license accrual for the tenant                         |
 
-<sup>1</sup> This category includes licenses for Dynamics 365 Sales Premium, Dynamics 365 Sales Enterprise, Dynamics 365 Sales Professional, Dynamics 365 Customer Service Enterprise, Dynamics 365 Customer Service Professional, Dynamics 365 Field Service, Microsoft Relationship Sales, Dynamics 365 Project Service Automation, Dynamics 365 Commerce, Dynamics 365 Human Resources, Dynamics 365 Finance, Dynamics 365 Project Operations, Dynamics 365 Supply Chain Management, Dynamics 365 Customer Engagement plan, Dynamics 365 Unified Ops plan, Dynamics 365 Plan, Dynamics CRM Online Enterprise, and Dynamics CRM Online Professional.  Power Platform Request accrued nonlicensed tenant-level limits are only granted with paid base licenses in the Dynamics 365 'base + attach' licensing model.
+<sup>1</sup> This category includes licenses for Dynamics 365 Sales Premium, Dynamics 365 Sales Enterprise, Dynamics 365 Sales Professional, Dynamics 365 Customer Service Enterprise, Dynamics 365 Customer Service Professional, Dynamics 365 Field Service, Microsoft Relationship Sales, Dynamics 365 Project Service Automation, Dynamics 365 Commerce, Dynamics 365 Human Resources, Dynamics 365 Finance, Dynamics 365 Project Operations, Dynamics 365 Supply Chain Management, Dynamics 365 Customer Engagement plan, Dynamics 365 Unified Ops plan, Dynamics 365 Plan, Dynamics CRM Online Enterprise, and Dynamics CRM Online Professional.  Power Platform Request accrued non-licensed tenant-level limits are only granted with paid base licenses in the Dynamics 365 'base + attach' licensing model.
 
-<sup>2</sup>If you think you might exceed the nonlicensed user limits, contact your reseller or Microsoft account team to discuss a custom solution.
+<sup>2</sup>If you think you might exceed the non-licensed user limits, contact your reseller or Microsoft account team to discuss a custom solution.
 
-### More nonlicensed user request limit details
+### More non-licensed user request limit details
 
-Certain products operate in the concept of a service principal and have their limits accrued to the nonlicensed user pool. This is the best way to align limits with how the product operates on the platform.
+Certain products operate in the concept of a service principal and have their limits accrued to the non-licensed user pool. This is the best way to align limits with how the product operates on the platform.
 
-If a tenant has multiple types of subscriptions, their nonlicensed user request capacity uses the product line subscription with the larger number of requests. For example, if a customer has both Dynamics 365 Customer Service Enterprise base license subscriptions (500,000 minimum requests + accrued limits) and Power Apps per user subscriptions (25,000 requests/day), their pooled tenant-level request capacity is 500,000 minimum requests + accrued limits per 24 hours.
+If a tenant has multiple types of subscriptions, their non-licensed user request capacity uses the product line subscription with the larger number of requests. For example, if a customer has both Dynamics 365 Customer Service Enterprise base license subscriptions (500,000 minimum requests + accrued limits) and Power Apps per user subscriptions (25,000 requests/day), their pooled tenant-level request capacity is 500,000 minimum requests + accrued limits per 24 hours.
 
-## What happens if a licensed or nonlicensed user exceeds limits
+## What happens if a licensed or non-licensed user exceeds limits
 
-Power Platform request limits were updated and substantially increased in late 2021 to be at levels that are significantly higher than typical usage for most customers. With the updated limits, expectations are that few users would exceed the documented limits. If you anticipate exceeding the nonlicensed user limits, reach out to your reseller or Microsoft Account team to discuss a custom solution.
+Power Platform request limits were updated and substantially increased in late 2021 to be at levels that are significantly higher than typical usage for most customers. With the updated limits, expectations are that few users would exceed the documented limits. If you anticipate exceeding the non-licensed user limits, reach out to your reseller or Microsoft Account team to discuss a custom solution.
 
 Any possible high usage enforcement won't happen until six months after Power Platform Request usage reporting is generally available in the Power Platform admin center.
 
@@ -104,7 +104,7 @@ Microsoft reserves the right to enforce limits for overages. If you experience h
 
 ## Power Platform Request capacity add-on
 
-Customers that observe in reporting that they're frequently using more requests than limits can avoid high usage enforcement by purchasing the Power Platform Request capacity add-on. This add-on allows customers to increase the limits for specific high usage licensed users or high usage nonlicensed users. Each capacity add-on raises the request limit by another 50,000 per 24 hours. Multiple capacity add-ons can be assigned to increase limits.
+Customers that observe in reporting that they're frequently using more requests than limits can avoid high usage enforcement by purchasing the Power Platform Request capacity add-on. This add-on allows customers to increase the limits for specific high usage licensed users or high usage non-licensed users. Each capacity add-on raises the request limit by another 50,000 per 24 hours. Multiple capacity add-ons can be assigned to increase limits.
 
 You can't assign Power Platform requests capacity add-on packs to users or flows during the [transition period](#power-automate-transition-period). However, Microsoft recommends buying these add-ons to stay within your license terms and to prepare for when the transition period ends.
 
@@ -125,7 +125,7 @@ Review the following resources for information about *current* service protect
 
 ## View detailed Power Platform request usage information in the Power Platform admin center (preview)
 
-To view the consumption of Power Platform requests for licensed users, nonlicensed users, and per flow licensed flow runs, take these steps:
+To view the consumption of Power Platform requests for licensed users, non-licensed users, and per flow licensed flow runs, take these steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
@@ -139,7 +139,7 @@ To view the consumption of Power Platform requests for licensed users, nonlicens
 1. Select the required scope of the report:
 
     - Licensed User
-    - Nonlicensed User
+    - Non-licensed User
     - Per Flow Licensed Flows
 
 1. Select **Submit**.
@@ -172,13 +172,13 @@ Here's a sample of a detailed usage report:
 
 :::image type="content" source="media/ppr-licensed-user-report.png" alt-text="Screenshot of the licensed user report in the Power Platform admin center, displaying a table with columns for Environment ID, Environment Name, Caller ID, Caller Type, Usage Datetime, Entitled quantity, Total consumed quantity, and Power Automate Requests. The table lists several rows of sample data, showing unique environment identifiers, user IDs, usage dates and times, entitlement values, and request counts." lightbox="media/ppr-licensed-user-report.png":::
 
-### Nonlicensed user report
+### Non-licensed user report
 
-The [**Non-licensed user**](api-request-limits-allocations.md#non-licensed-user-request-limits) report shows the Power Platform request usage per day for nonlicensed users and the total entitlement for nonlicensed users for that tenant. The downloadable report contains the following fields:
+The [**Non-licensed user**](api-request-limits-allocations.md#non-licensed-user-request-limits) report shows the Power Platform request usage per day for non-licensed users and the total entitlement for non-licensed users for that tenant. The downloadable report contains the following fields:
 
 | Field    | Description |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| Power platform request entitlement for this tenant    | The total daily entitlement for nonlicensed power platform requests for this tenant. |
+| Power platform request entitlement for this tenant    | The total daily entitlement for non-licensed power platform requests for this tenant. |
 | Environment ID    | The unique Power Platform environment identifier. |
 | Environment Name    | The display name of environment. |
 | Caller ID    | The unique identifier of the calling identity. This can be null or empty. |
@@ -192,7 +192,7 @@ The [**Non-licensed user**](api-request-limits-allocations.md#non-licensed-user-
 
 Here's a sample of a detailed usage report:
 
-:::image type="content" source="media/non-licensed-user-report.png" alt-text="Screenshot of the Nonlicensed user report in the Power Platform admin center, displaying a table with columns for Environment ID, Environment Name, Caller ID, Caller Type, Resource Type, Resource ID, Meter Category, Meter Subcategory, Usage Datetime, and Consumed Quantity. The table lists several rows of sample data." lightbox="media/non-licensed-user-report.png":::
+:::image type="content" source="media/non-licensed-user-report.png" alt-text="Screenshot of the Non-licensed user report in the Power Platform admin center, displaying a table with columns for Environment ID, Environment Name, Caller ID, Caller Type, Resource Type, Resource ID, Meter Category, Meter Subcategory, Usage Datetime, and Consumed Quantity. The table lists several rows of sample data." lightbox="media/non-licensed-user-report.png":::
 
 ### Per flow licensed flows report
 
