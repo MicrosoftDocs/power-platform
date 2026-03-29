@@ -52,7 +52,7 @@ All third-party connectors can be blocked. All Microsoft-owned premium connector
 All connectors driving core Microsoft Power Platform functionality (like Dataverse, Approvals, and Notifications), in addition to connectors that enable core Office customization scenarios like Microsoft Enterprise Plan standard connectors, remain nonblockable to ensure that core user scenarios remain fully functional.
 
 > [!NOTE]
-> These connectors can be limited or blocked using [advanced connector policies](./advanced-connector-policies.md).
+> These connectors can be limited or blocked using [advanced connector policies](./advanced-connector-policies.md). ACP uses a strict allowlist model and can restrict any certified connector, including the nonblockable connectors listed below.
 
 However, these nonblockable connectors can be classified into **Business** or **Non-Business** data groups. These connectors broadly fall into the following categories:
 
@@ -91,6 +91,18 @@ The following connectors can't be blocked by using data policies.
 When editing data policies in the Power Platform admin center, all available and visible connectors are shown, regardless of whether they have been classified in a policy. However, when viewing a data policy in PowerShell or through the Power Platform for Admins connector, you see only the connectors that have been explicitly classified in the Business, Non-business, or Blocked categories. data policies viewed from PowerShell or the Power Platform for Admins connector may include stale references to connectors that are no longer available or visible.
 
 In general, the list of Power Platform connectors can differ depending on where you're viewing them, and there are several reasons for this. Some connectors may require specific licensing, and if your license doesn't include them, they're not visible. Different environments can also have different connectors available due to compliance and regulatory requirements. Microsoft may release updates to connectors, which may not be immediately available across all Power Platform components. Some connectors may only be available in Power Automate and not in Power Apps. Depending on your role and permissions, you may not have access to all connectors.
+
+## Connector classification in advanced connector policies
+
+[Advanced connector policies](./advanced-connector-policies.md) (ACP) take a different approach to connector classification than classic data policies. Instead of the Business/Non-Business/Blocked model, ACP uses a strict allowlist where all connectors are blocked by default unless explicitly allowed.
+
+ACP currently applies to **certified connectors only**. The following connector types are governed differently:
+
+- **Custom connectors**: Not yet supported in ACP. Continue using classic data policies for custom connector governance. Custom connector support in ACP is planned as a separate rule type in a future release.
+- **HTTP connectors**: Not yet supported in ACP. Continue using classic data policies and [connector endpoint filtering](connector-endpoint-filtering.md) for HTTP connector governance.
+- **Virtual connectors**: Not supported by ACP and won't be added in the future. Copilot Studio virtual connectors are evolving into their own dedicated governance rules. Desktop Flow virtual connectors are transitioning to certified connectors, at which point they'll be manageable through ACP.
+
+For more information, see [Supported connector types in ACP](./advanced-connector-policies.md#supported-connector-types).
 
 ## Custom connector classification
 

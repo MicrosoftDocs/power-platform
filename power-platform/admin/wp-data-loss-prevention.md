@@ -50,6 +50,12 @@ Several virtual connectors are provided for governing Microsoft Copilot Studio. 
 
 Explore virtual connectors and their role in [data loss prevention in Microsoft Copilot Studio](/microsoft-copilot-studio/admin-data-loss-prevention).
 
+> [!IMPORTANT]
+> Virtual connectors are **not supported** by [advanced connector policies](./advanced-connector-policies.md) (ACP) and won't be added in the future. ACP's singular focus is to be the most robust governance feature for real certified connectors. The following transition paths apply to virtual connectors:
+>
+> - **Copilot Studio virtual connectors** are evolving into their own dedicated governance rules, separate from both data policies and ACP.
+> - **Desktop Flow virtual connectors** are transitioning to certified connectors, at which point they'll be manageable through ACP.
+
 ### Model Context Protocol (MCP) connectors
 
 Model Context Protocol (MCP) connectors are a class of connectors that provide more metadata to expose MCP-enabled API endpoints, known as _tools_. MCP connectors extend typical connector functionality and enable richer experiences for generative AI in Microsoft Copilot Studio.
