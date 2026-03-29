@@ -22,6 +22,8 @@ As part of the unification of admin experiences of finance and operations apps w
 
 This article gives an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Microsoft Dynamics 365 Lifecycle Services and the new experience. You can also browse more resources and articles that provide detailed information for common tasks.
 
+To understand the different unified environment types (UPE, USE, UDE), which applications are included in each ERP template, and regional availability, see [Unified environment types and templates](./unified-environment-types-and-templates.md).
+
 To learn more about the admin unification journey, see the [Power Platform admin center integration with Lifecycle Services (LCS) TechTalk](https://www.youtube.com/watch?v=HmJIuHhx3Hg).
 
 ## How do finance and operations apps surface in the Power Platform admin center?
@@ -104,6 +106,7 @@ The following table lists features from Lifecycle Services that aren't implement
 
 These continually updated scenario tutorials give a walkthrough for administrators in new experiences.
 
+- [Unified environment types and templates](./unified-environment-types-and-templates.md)
 - [Tutorial: Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md)
 - [Tutorial: Copy a Lifecycle Services environment to a unified environment](./tutorial-copy-lifecycle-services-environment-unified-environment.md)
 - [Unified admin trials](admin-trials.md)
