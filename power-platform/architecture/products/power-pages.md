@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 02/04/2026
+ms.date: 02/11/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -42,6 +42,7 @@ Understanding Power Pages architecture concepts and exploring solution ideas can
 | [**Property rental portal with AI-driven search and payment processing**](../solution-ideas/agent-rental-portal.md) | Build a comprehensive rental portal that uses AI-driven search capabilities and seamless payment processing. |
 | [**Healthcare Patient Support Agent**](../solution-ideas/agent-healthcare-patient-support.md) | Streamline patient interactions and reduce administrative burdens for healthcare providers. |
 | [**AI-enabled donor management solution**](../solution-ideas/agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
+| [**Learning management app using Microsoft Learn content**](../solution-ideas/app-learning-management.md) | Design a learning management solution using Microsoft Power Platform and Microsoft Learn content to enhance trainer and learner experiences. |
 
 ## Related resources
 

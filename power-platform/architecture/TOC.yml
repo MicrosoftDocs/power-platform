@@ -95,8 +95,6 @@
           href: reference-architectures/rpa-scale-operations.md
         - name: Use SQL Server with canvas apps
           href: reference-architectures/sqlserver-canvas-app.md
-        - name: Use an autonomous agent in Copilot Studio for document processing
-          href: reference-architectures/document-processing-agent.md
         - name: Use complex relationships with Dataverse
           href: reference-architectures/complex-relationships-dataverse.md
         - name: Extract and analyze agent conversation transcripts
@@ -105,6 +103,8 @@
           href: reference-architectures/scalable-notification-system.md
         - name: Use Copilot Studio agents in model-driven apps
           href: reference-architectures/contextual-ai-model-driven-app.md
+        - name: Analyze and automate business data with Dataverse SDK for Python
+          href: reference-architectures/dataverse-sdk-for-python.md
     - name: Solution ideas
       items:
         - name: Overview
@@ -133,6 +133,8 @@
           href: solution-ideas/onboarding-agent.md
         - name: AI-enabled donor management solution
           href: solution-ideas/agent-donor-management.md
+        - name: Learning management app using Microsoft Learn content
+          href: solution-ideas/app-learning-management.md
     - name: Power Platform products
       items:
         - name: Power Apps

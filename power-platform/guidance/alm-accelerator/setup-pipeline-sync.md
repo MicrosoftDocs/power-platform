@@ -1,5 +1,5 @@
 ---
-title: Configure pipeline sync
+title: Configure pipeline sync (Deprecated)
 description: Learn how to create a pipeline to sync the latest ALM Accelerator for Power Platform pipeline templates to your Azure DevOps repository.
 ms.topic: how-to
 ms.date: 04/07/2023
@@ -10,7 +10,9 @@ ms.reviewer: sericks
 ms.custom: bap-template
 ---
 
-# Configure pipeline sync
+# Configure pipeline sync (Deprecated)
+
+[!INCLUDE [guidance-deprecate-alm-accelerator](../../includes/guidance-deprecate-alm-accelerator.md)]
 
 We periodically release updates of the ALM Accelerator pipeline templates. Use the pipeline sync template that's included with the ALM Accelerator to keep your pipeline templates up-to-date automatically.
 
