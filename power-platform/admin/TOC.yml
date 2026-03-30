@@ -482,6 +482,9 @@
                   href: inventory-api.md
                 - name: Power Platform inventory schema reference
                   href: inventory-schema.md
+                  items:
+                    - name: Copilot Studio agents schema
+                      href: inventory-schema-copilot-studio-agents.md
         - name: Copilot
           items:
             - name: Track, manage, and scale Copilot adoption
