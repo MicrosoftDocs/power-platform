@@ -83,8 +83,8 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Allow data availability in Microsoft 365 Copilot | When selected, allows Dynamics 365 and Power Apps/Dataverse data in Microsoft 365 Copilot Chat | Off |
-| Turn on Dataverse intelligence (Work IQ) for agents and AI experiences | When selected, allows reusable business context [business skills](https://learn.microsoft.com/power-apps/maker/data-platform/data-platform-business-skill-overview) to be used by your agents | Off |
+| Allow data availability in Microsoft 365 Copilot | When **On**, allows Dynamics 365 and Dataverse data to be available in Microsoft 365 Copilot Chat. | Off |
+| Turn on Dataverse intelligence (Work IQ) for agents and AI experiences | When **On**, allows reusable business context [business skills](/power-apps/maker/data-platform/data-platform-business-skill-overview) to be used by your agents. | Off |
 
 ## Dataverse Model Context Protocol
 
