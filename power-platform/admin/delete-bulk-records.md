@@ -117,7 +117,7 @@ A **Failed** status indicates that the job didn't start. Open the job to review 
 
 ## Solution-aware bulk deletion jobs
 
-Bulk delete jobs are solution-aware, so you can add them to an unmanaged solution to make them portable across environments. This helps admins follow application lifecycle management (ALM) best practices and reduces the risk of misconfigurations.
+Bulk delete jobs are solution-aware, so you can add them to a solution to make them portable across environments. This helps admins follow application lifecycle management (ALM) best practices and reduces the risk of misconfigurations.
 
 To add a bulk deletion job to a solution, go to the Power Apps maker portal, create or open a solution, and then follow these steps:
 
