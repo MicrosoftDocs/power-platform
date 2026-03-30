@@ -3,6 +3,7 @@ title: Power Automate licensing FAQ
 description: Learn the answers to frequently asked Power Automate questions.
 author: PriyaKodukula
 contributors:
+  - radioblazer
   - sericks007
   - cvassallo
   - PriyaKodukula
@@ -10,13 +11,12 @@ contributors:
   - v-aangie
 ms.component: pa-admin
 ms.topic: faq
-ms.date: 06/03/2025
-ms.author: cvassallo
+ms.date: 03/30/2026
+ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
 ---
-
 
 # Power Automate licensing FAQ
 
@@ -24,9 +24,9 @@ Here are some frequently asked questions about Power Automate standalone license
 
 ## How do Power Automate license plans work for flow runs?
 
-If a flow is set to the Power Automate process plan, then it can access premium connectors, has the highest limits, and always uses the process plan request limits, regardless of who runs the flow.
+If a cloud flow has a Process license assigned, then it can access premium connectors, has the highest action limits, and always uses the Process license limits, regardless of who runs the flow.
 
-If the flow is set to the Power Automate Premium user plan, then it gets the plan of its primary owner if the flow is an automated or scheduled flow. If the flow is an instant/button flow, it uses the license of the user running the flow. If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow uses the request limits from both plans.
+If a flow runs under a user license, the action limit depends on the license context. Automated and scheduled flows use the flow owner's license context. Instant flows (button, Power Apps) use the invoking user's license context. Action limits are applied per context — if a user has multiple licenses, each flow gets the limit for the context it runs in, not a combined total. Learn more in [What happens to my action limits if I have multiple plans?](#what-happens-to-my-action-limits-if-i-have-multiple-plans)
 
 The user license plan for Power Automate is the Power Automate Premium plan, but users have a range of other license plan options. Users with the free plan or one of the Microsoft 365 license plans can only access standard connectors, but most of the other license plans and trials provide access to premium connectors.
 
@@ -46,7 +46,7 @@ You need a Process license if your flow meets **one of the following criteria**:
 
 - Your flows use unattended RPA (robotic process automation) to run desktop flows on machines without user interaction.
 - Your flows are running under Application user (flow owner is a Service Principal). Organizations with multiple environments (Dev/Test/Prod) use DevOps pipelines to export and deploy flows into other environments for healthy ALM (application lifecycle management). They run their flows using service principal to avoid giving access to users in production environments.
-- Your flows process large data or need to run frequently, thereby needing a high volume of Power Platform requests.
+- Your flows process large data or need to run frequently, thereby needing a high volume of actions.
 - Your premium flow is invoked by multiple users. In this case, either everyone needs a Premium license, or the flow needs a Process license. If a flow has a Process license, it doesn't require any user to have a license. It provides an organization with the flexibility to pay for licenses based on the number of flows. Larger organizations or solutions that affect many people can benefit from the fixed monthly cost.
 - Your flow uses premium connectors, and your organization has many guest users using the flow, but you don't know if the guest users' home tenant provides them with Premium licenses.
 
@@ -59,15 +59,19 @@ You need a Process license if your flow meets **one of the following criteria**:
 
   Purchase one Process license for each machine. You can add more Process licenses if you need concurrent execution on the machine. All desktop flows (RPA) running on the machine and cloud flows (DPA) that are part of the business process are covered by the Process license.
 
-- Your process only needs DPA (digital process automation): how many core business processes do you want to automate?  
+- Your process only needs DPA (digital process automation): how many core business processes do you want to automate?
 
-  Purchase one process for every core business process. Some examples of core business processes are invoice processing or human resources (HR) onboarding. All cloud flows related to the same business process are included in the license.
+  Purchase one Process license for every core business process. Some examples of core business processes are invoice processing or human resources (HR) onboarding. All cloud flows related to the same business process are included in the license.
+
+- Your flow exceeds 250,000 actions per day: how many Process licenses does it need?
+
+  [Stack additional Process licenses](#can-i-assign-multiple-process-licenses-to-a-single-cloud-flow) on the same flow. Estimate your daily usage — (actions per run) × (runs per day) — and divide by 250,000 to determine how many licenses to stack.
 
 ### How many Process licenses do I need if I have multiple cloud flows, each of them invoking its own RPA flows in unattended mode on a machine?
 
 With one Process license, you can run multiple cloud flows by queueing them. For example, if you have four independent cloud flows, and each one of them invokes its own desktop flow running on the same machine, you can run the first one at 09:00 AM, the second one at 11:00 AM, and so on, in the same virtual machine.
 
-In the following screenshot, all cloud flows are covered by one Process license, as they have a desktop flow running on the same machine. Any child flows, associated flows of these cloud flows are also covered by the Process license on the machine.
+In the following screenshot, all cloud flows are covered by one Process license, as they have a desktop flow running on the same machine.
 
 :::image type="content" source="../media/faqs/many-flows-one-machine.png" alt-text="All cloud flows are covered by one Process license, as they have a desktop flow running on the same machine.":::
 
@@ -75,11 +79,9 @@ In the following screenshot, all cloud flows are covered by one Process license,
 
 Core business processes can vary in size and complexity, ranging from small-scale initiatives to large-scale endeavors spanning multiple flows interconnected by shared data sources. For example, the invoice processing process has multiple flows handling an invoice from creation through approvals to payment. All the flows are part of one business process as they're all handling an invoice through multiple steps to closure. You only need one Process license for a core business process. This encourages microservices architecture best practices where flows can be small with fine-grained functionality resulting in better maintainability.
 
-Identify the flow that starts the process and assign a Process license to that flow. Child flows of the flow with Process license are covered by the Process license. These flows can be in the same solution or in a different solution.
+Currently, each cloud flow that needs Process capacity must have a Process license directly assigned to it. To allow a child flow to consume capacity from its parent flow's Process license, assign a Process license to the child flow and enable **Allow process overage** on it.
 
-Non-parent/child flows can manually be associated to the flow with a Process license. These flows must be in the same solution and use the same data sources.
-
-The flows organized as child flows and associated flows are all treated as one process with one Process license assigned to the main flow and share Power Platform Request limits of the Process license.
+Flow groups (sharing a single pool of Process capacity across multiple related flows) and automatic capacity inheritance from parent flows are planned but not yet available. Once available, you'll be able to assign a single Process license to the main flow and have child flows and associated flows share its action entitlement.
 
 ### My solution has multiple processes. Do I need multiple Process licenses?
 
@@ -91,7 +93,7 @@ Users who need to create general-purpose automations (with the premium connector
 
 More precisely:
 - You need a Premium license for each RPA developer who builds and manages desktop flows on the Power Automate portal. Learn more in [Premium RPA features](/power-automate/desktop-flows/premium-features).
-- The Power Automate process plan has the highest priority among all licenses. This means if a Process license is assigned to a flow, the flow always uses this license and doesn't need an owner or running user to have a Premium license.
+- The Process license has the highest priority among all licenses. This means if a Process license is assigned to a flow, the flow always uses the Process license limits and doesn't need an owner or running user to have a Premium license.
 - Automated and scheduled flows always run in the context of the flow owner regardless of who starts the flow or what accounts are used for connections inside of the flow. Instant flows (button, hybrid triggers) run in the context of the user who invokes them, regardless of the connections used in the flow. If an automated or scheduled flow uses a premium connector, only the owner needs to have a Premium license.
 - If an instant flow has premium connectors, every user who runs the flow needs a Power Automate Premium license. In such cases, instead of licensing every user, you can license the flow with a Process license.
 - If the flow doesn't use a premium connector, you don't need a Premium license. You can use a Microsoft 365 license.
@@ -176,7 +178,7 @@ Yes, they can use Power Automate for the desktop (they have usage rights for it)
 Starting August 1, 2023, Power Automate per flow ($100 per flow/month, with a minimum purchase of 5 licenses) and the Power Automate unattended RPA add-on ($150 per bot/month and required licensing prerequisites) will be removed from the pricing page. They'll be removed from the price list on February 1, 2024. Power Automate process, an all-encompassing license that is easier to manage, licenses a single "automation" bot that can be used for unattended robotic process automation (unattended RPA), or cloud flows using digital process automation (DPA) and can be accessed by unlimited users in the organization. Power Automate Process is priced at $150 per bot/month.
 
 ### How is Process license different from per flow license
-
+request
 For unattended RPA, previously customers needed to buy a per flow license for the cloud flow and an unattended RPA add-on. Now they can purchase a Process license for every RPA session on a machine. All the cloud flows invoking desktop flows on the machine are included as part of the Process license.
 
 For cloud flows, one per flow license entitles the flow with the license and its child flows. One Process license entitles the flow with the license, its child flows, and any flows that are associated. Per flow had a minimum of five packs to be purchased to get started. There's no minimum purchase quantity requirement for Process license.
@@ -185,32 +187,32 @@ For cloud flows, one per flow license entitles the flow with the license and its
 
 Power Automate Premium offer includes all the benefits of Power Automate per user with attended RPA offered at $40 per user/month, plus the process Mining visualize and analyze processes capabilities and is offered at $15 per user/month.
 
-## Power Platform requests questions
+## Action limits and capacity questions
 
-Here are some of the frequently asked questions about PPR limits and their answers.
+Here are some of the frequently asked questions about action limits and their answers. Within Power Automate, every trigger and action execution counts as one action (shown as Power Platform Requests in admin center reports). Actions inside loops run once per iteration, so loops multiply your action count.
 
-### What counts as Power Platform request?
+### What counts as an action?
 
-Based on license, there are limits to the number of actions a cloud flow can run in day. These limits are different from connector throttling limits. You can see the number of actions your flow runs by selecting **Analytics** from the cloud flow details page and looking at the **Actions** tab.
+Based on license, there are limits to the number of actions a cloud flow can run in a day. These limits are different from connector throttling limits. You can see the number of actions your flow runs by selecting **Analytics** from the cloud flow details page and looking at the **Actions** tab.
 
-Even when the flow uses few Power Platform requests, you can still reach your limits if the flow runs more frequently than you expect. For example, you might create a cloud flow that sends you a push notification whenever your manager sends you an email. That flow must run every time you get an email (from anyone) because the flow must check whether the email came from your manager. The limit applies to all runs across all your flows in a 24 hour period. Here are some insights to estimate the request usage of a flow:
+Even when your flow uses few actions per run, you can still reach your limits if the flow runs more frequently than you expect. For example, you might create a cloud flow that sends you a push notification whenever your manager sends you an email. That flow must run every time you get an email (from anyone) because the flow must check whether the email came from your manager. The limit applies to all runs across all your flows in a 24 hour period. Here are some insights to estimate action usage:
 
-1. A simple flow with one trigger and one action results in two "actions" each time the flow runs, consuming two requests.
-1. Every trigger/action in the flow generates Power Platform requests. All kinds of actions like connector actions, HTTP actions, built-in actions (from initializing variables, creating scopes to a simple compose action) generate Power Platform requests. For example, a flow that connects to SharePoint or Exchange, Twitter, Dataverse; all those actions are counted towards Power Platform request limits.
-1. Both succeeded and failed actions count towards these limits. Skipped actions aren't counted towards these limits.
-1. Each action generates one request. If the action is in an apply to each loop, it generates more Power Platform requests as the loop executes.
-1. An action can have multiple expressions but it's counted as one API request.
-1. Retries and extra requests from pagination count as action executions as well.
+- A simple flow with one trigger and one action results in two actions each time the flow runs.
+- Every trigger and action in the flow counts. All kinds of actions — connector actions, HTTP actions, built-in actions (from initializing variables, creating scopes to a simple compose action) — count toward your daily action limit. For example, a flow that connects to SharePoint, Exchange, Twitter, or Dataverse: all those actions are counted.
+- Both succeeded and failed actions count towards these limits. Skipped actions aren't counted.
+- Each action counts as one, including the loop action itself. Actions **inside** a loop (Apply to Each, Do Until) run once per iteration — a loop with 2 actions and 10 iterations uses 21 actions (1 loop + 2 × 10).
+- An action can have multiple expressions but it's counted as one action.
+- Retries and extra requests from pagination count as action executions as well.
 
-Consider the following cloud flow where every email attachment is saved into OneDrive. The trigger consumes one Power Platform request, Apply to each consumes one request, and the actions within Apply to each consume multiple requests based on the number of times the loop runs. If there are four attachments, this section consumes eight Power Platform requests (4 x 2 actions). In total, this flow consumes 10 Power Platform requests.
+Consider the following cloud flow where every email attachment is saved into OneDrive. The trigger counts as 1 action. The Apply to Each loop itself counts as 1 action. The 2 actions inside the loop each run once per attachment — with 4 attachments, that's 4 × 2 = 8 actions. Total: 1 + 1 + 8 = **10 actions**.
 
 :::image type="content" source="../media/faqs/many-flows-one-machine.png" alt-text="Screenshot of a sample flow where every email attachment is saved into OneDrive.":::
 
-### Whose Power Platform request limits are used by the cloud flow?
+### Whose action limits are used by the cloud flow?
 
 - If a cloud flow has a Process / Per-flow license, the flow uses the Process / Per-flow license limit and not the creator/owner/invoking user's limit.
 
-- [Automated and scheduled cloud flows](/power-automate/flow-types#cloud-flows) always use the flow creator/owner's Power Platform request limits regardless of who invoked the flow or what accounts are used for connections inside of the flow. For a solution flow, you can change the owner of the flow using [Web API](/power-automate/web-api#update-a-cloud-flow). After you change the owner, the new owner's API request limit are used. For a non-solution flow, the flow always uses the original creator's limit which can't be changed. If the original creator leaves the company, any co-owners of the flow can export and import the flow as a different owner. After you import the flow, it becomes a new flow and starts using limit from the new owner. Alternatively, you can assign a Process / Per-flow license to the flow.
+- [Automated and scheduled cloud flows](/power-automate/flow-types#cloud-flows) always use the flow creator/owner's action limits regardless of who invoked the flow or what accounts are used for connections inside of the flow. For a solution flow, you can change the owner of the flow using [Web API](/power-automate/web-api#update-a-cloud-flow). After you change the owner, the new owner's action limits are used. For a non-solution flow, the flow always uses the original creator's limits which can't be changed. If the original creator leaves the company, any co-owners of the flow can export and import the flow as a different owner. After you import the flow, it becomes a new flow and starts using the new owner's limits. Alternatively, you can assign a Process / Per-flow license to the flow.
 
 - [Instant cloud flows (button, Power Apps, hybrid triggers)](/power-automate/flow-types#cloud-flows) use the invoking user's limit. 
 
@@ -224,30 +226,23 @@ Consider the following cloud flow where every email attachment is saved into One
 
 - If the child flow has a Process / Per-flow license, it uses the Process / Per-flow limit and not the parent flow's limit.
 
-- If a flow has a Process license, the flow, all child flows (excluding those that have their own Process license) of the flow and any associated flows of the flow share the Process license limit.
+- If a flow has a Process license, currently each child flow that needs to use Process capacity must also have a Process license directly assigned to it (with **Allow process overage** enabled). Automatic capacity inheritance from parent flows and flow groups for sharing capacity across related flows are planned but not yet available.
 
 ### As a maker, what tools do I have to analyze my usage?
 
-If you're experiencing delays or slowdowns when your flow runs, it's likely that you exceeded the PPR limits for the day. For flows that are consistently delayed due to overages, users also receive a notification that informs them about these overages, along with tips and tricks on how to prevent delayed runs of their flows.
+If you're experiencing delays or slowdowns when your flow runs, it's likely that you exceeded your daily action limits. For flows that are consistently delayed due to overages, users also receive a notification that informs them about these overages, along with tips and tricks on how to prevent delayed runs of their flows.
 
 Here's an example of an email that was sent for a flow that was consistently exceeding action limits:
 
-:::image type="content" source="../media/power-automate-licensing/email-overage-example.png" alt-text="Screenshot of an overage email example.":::
-
-Additionally, you can see the action usage for a given flow by selecting the  **Analytics**  action from the flow properties page, and this works across all types of actions. This helps you to understand how many actions are running each day. It can help you understand usage patterns to optimize for capacity:
-
-![Sample of the analytics chart](../media/power-automate-licensing/analytics-chart.png)
-
-:::image type="content" source="../media/power-automate-licensing/analytics-chart.png" alt-text="Screenshot of the analytics chart sample.":::
-
 ### As an admin, what tools do I have to analyze my environment's usage?
 
-The Power Platform admin center contains [reports on Power Automate requests](../api-request-limits-allocations.md#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). These reports help you quickly view adoption and user metrics for your organization. They are currently in public preview. Two reports are available:
-- [User report](../api-request-limits-allocations.md#licensed-user-report) – This report displays the Power Platform request usage by every user in the environment, compared to their assigned limit.
-- [Per flow licensed flows report](../api-request-limits-allocations.md#per-flow-licensed-flows-report) - This report displays the Power Platform request usage by every flow in the environment that has a Per-flow license.
-- [Non-licensed user report](../api-request-limits-allocations.md#non-licensed-user-report) - This report displays the Power Platform request usage for non-licensed users and the total entitlement for non-licensed users for that tenant. In future, Power Platform requests usage of flows running under service principal will be displayed in this report. 
+The Power Platform admin center contains [reports on action usage](../api-request-limits-allocations.md#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). These reports help you quickly view adoption and user metrics for your organization. They are currently in public preview. The following reports are available:
 
-After the reports are generally available, users will have time to react and purchase higher PPR licenses before enforcement begins.
+- [User report](../api-request-limits-allocations.md#licensed-user-report) – Shows action usage (labeled Power Platform Requests) for every user in the environment, compared to their assigned limit.
+- [Per flow licensed flows report](../api-request-limits-allocations.md#per-flow-licensed-flows-report) – Shows action usage for every flow in the environment that has a Per-flow or Process license.
+- [Non-licensed user report](../api-request-limits-allocations.md#non-licensed-user-report) – Shows action usage for non-licensed users and the total entitlement for non-licensed users for that tenant.
+
+After the reports are generally available, users will have time to react and purchase higher action limit licenses before enforcement begins.
 
 ### What happens when my flow runs too many actions?
 
@@ -263,104 +258,120 @@ Users aren't blocked from using an app or flow for occasional and reasonable ove
 
 Here are some things you can do if you exceeded the limits of your license:
 
-- Revisit your design and check for any places that can help reduce the number of actions being called. Check out [Best Practices section to create flows to use less actions](https://support.microsoft.com/topic/troubleshooting-slow-running-flows-2a51dcd6-0b21-33da-5ce8-1e908b1540ef).
+- Revisit your design and check for places that can help reduce the number of actions being called. Learn more in [Redesign your flow to use fewer actions and less data](/troubleshoot/power-platform/power-automate/flow-run-issues/troubleshoot-slow-running-flows.md#resolution-1-redesign-your-flow-to-use-fewer-actions-and-less-data).
+- If the flow is already optimized, but it uses many actions because of the nature of the business, consider a Process license. The Process license provides the highest action entitlement available (250,000 actions per day).
+    - If the flow already has a Process license and still exceeds 250,000 actions, you can [stack additional Process licenses](#can-i-assign-multiple-process-licenses-to-a-single-cloud-flow) on the same flow — each adds 250,000 actions per day.
+    - Use [Power Platform request reports in the admin center](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview) to identify high-usage flows that need additional capacity.
 
-- If the flow is already optimized, but it uses many actions because of the nature of the business, consider buying a higher PPR license. The Process license provides the best performance quota available (250k actions/24 hours).
-
-- Turn on [Pay-as-you-go](#power-platform-requests-pay-as-you-go) for the environment to ensure none of the flows in the environment are throttled.
+- Turn on [Pay-as-you-go](#pay-as-you-go-for-action-overages) for the environment to ensure none of the flows in the environment are throttled.
 
 - Purchase the **Power Apps and Power Automate capacity add-on** for your organization. During the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period), because enforcement is less strict, there's no facility to assign the **Power Apps and Power Automate capacity add-on** to a user or flow. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms. Create a support ticket with the flow details and add on details to get temporary relief (30 days) from throttling. This temporary relief isn't available for flows that already have a Process or Per-flow license assigned to them.
 
-If a flow is consistently above the transition period limits for 14 consecutive days, Power Automate suspends the flow and sends a notification to the owner. You can purchase a higher PPR license, and then turn it on anytime. You can edit and save the flow to reset the 14 day counter while you purchase the license.  
+If a flow is consistently above the transition period limits for 14 consecutive days, Power Automate suspends the flow and sends a notification to the owner. You can purchase a Process license with higher action limits, and then turn it on anytime. You can edit and save the flow to reset the 14 day counter while you purchase the license.  
 
-### What are connector limits and are they different from Power Platform request limits?
+### What are connector limits and are they different from action limits?
 
-The connectors have separate limits as a service protection mechanism. For example, the SharePoint connector limits the number of actions at 600 per minute. A single SharePoint connection that's used across multiple flows can still only execute 600 operations per minute. Most connector pages have a [throttling section](/connectors/sharepointonline/#limits) that documents these limits. This limit is different from the PPR limit. For example, an Office user can run 6,000 actions per day across all their flows but can still get throttled by the connector if they used more than 600 SharePoint actions in a minute despite not reaching the 6,000 actions limit.
+The connectors have separate limits as a service protection mechanism. For example, the SharePoint connector limits the number of actions at 600 per minute. A single SharePoint connection that's used across multiple flows can still only execute 600 operations per minute. Most connector pages have a [throttling section](/connectors/sharepointonline/#limits) that documents these limits. This limit is different from the daily action limit. For example, an Office user can run 6,000 actions per day across all their flows but can still get throttled by the connector if they used more than 600 SharePoint actions in a minute despite not reaching the 6,000 actions limit.
 
 When a flow was throttled because it exceeded the connector limits, you might see an HTTP 429 (too many requests) error in your flow with error text like "Rate limit is exceeded. Try again in 27 seconds."
 
-### I'm using CoE Starter Kit. Will the usage count towards my request limits?
+### I'm using CoE Starter Kit. Will the usage count towards my action limits?
 
-Yes. Cloud flows included in the [CoE Starter Kit](../../guidance/coe/starter-kit.md) also use limits from the owner. Microsoft recommends that you buy more capacity and contact support to get temporary relief from throttling.
+Yes. Cloud flows included in the [CoE Starter Kit](../../guidance/coe/starter-kit.md) use the flow owner's action limits. If CoE flows are being throttled, consider assigning a Process license to high-usage flows or enabling [pay-as-you-go](#pay-as-you-go-for-action-overages) on the environment.
 
-### Can I use service principal in flows, and does it count against my request limits?
+### Can I use service principal in flows, and does it count against my action limits?
 
-Yes, flows whose owner is a service principal consumes a separate quota called [non-interactive limits](../api-request-limits-allocations.md#non-licensed-user-request-limits). These limits are only applicable if the owner of the flow is a service principal. These limits aren't applicable if the flow just uses a service principal in one of the actions. Manual flows (button flows that are shared with run only users / Power Apps invoked flows) use run only user's request limits even when the owner of the flow is a service principal. The run only users must have a Power Automate Premium license if the flow uses premium connectors. During the transition period, manual flows can use up to 100,000 requests/flow/24 hours.
+Yes, flows whose owner is a service principal consume a separate quota called [non-interactive limits](../api-request-limits-allocations.md#non-licensed-user-request-limits). These limits apply only when the service principal is the flow **owner**, and not when a service principal is used in a connection inside the flow. Manual flows (button, Power Apps) use the invoking user's action limits even when the owner is a service principal. The invoking user must have a Power Automate Premium license if the flow uses premium connectors.
 
-Limits for automated/scheduled flows:
+Limits for automated/scheduled service principal flows:
 
- - Service principal flows running [in context of Dynamics 365 applications](faqs.md#what-power-automate-capabilities-are-included-in-dynamics-365-licenses)) listed in the [table](../api-request-limits-allocations.md#non-licensed-user-request-limits) get 500,000 base requests  + 5,000 requests accrued per user license up to 10,000,000 maximum pooled at the tenant level. If a tenant has 1000 Dynamics 365 licenses, that tenant has a pool of 5,500,000 requests available for all Power platform resources like Service principal flows and Dataverse requests, per 24 hours. If a tenant has 2500 Dynamics 365 licenses, that tenant has a pool of 10,000,000 requests available for all Power platform resources like Service principal flows and Dataverse requests, per 24 hours.
+- **Dynamics 365 app context**: 500,000 base + 5,000 per D365 user license, up to 10,000,000 max, pooled at the tenant level. For example, a tenant with 1,000 Dynamics 365 licenses has a pool of 5,500,000 actions/day for all Power Platform resources (service principal flows, Dataverse requests). Learn more in the [non-licensed user request limits table](../api-request-limits-allocations.md#non-licensed-user-request-limits).
 
-- Premium service principal flows that are outside Dynamics 365 app context will each need a Process / Per-flow license. These flows get 250,000 requests per flow per 24 hours.
+- **Premium, outside Dynamics 365 context**: Each flow needs a Process / Per-flow license (250,000 actions per flow per day).
 
-- Standard service principal flows get 25,000 base requests with no per-license accrual for the tenant per 24 hours. 
+- **Standard connectors only**: 25,000 actions/day at the tenant level, no per-license accrual.
 
-If you need more requests, turn on [Pay-as-you-go](#power-platform-requests-pay-as-you-go) for the environment or buy more [power platform requests capacity](add-ons.md#power-automate-capacity-add-ons).
+If you need more capacity, enable [pay-as-you-go](#pay-as-you-go-for-action-overages) on the environment or purchase [Power Automate capacity add-ons](add-ons.md#power-automate-capacity-add-ons).
 
 Learn more in [Associate flows to apps](/power-automate/associate-flow-to-app).
 
-### Will desktop flows usage count consume my Power Platform request limits?
+### Do desktop flow actions count against my action limits?
 
-Only the desktop flow actions that are invoked from cloud flows count against the limit. Actions in the desktop flow aren't counted towards request limits.
+Only the desktop flow actions that are invoked from cloud flows count against the limit. Actions inside the desktop flow itself aren't counted.
 
-### What happens to my Power Platform requests if I have multiple plans?
+### What happens to my action limits if I have multiple plans?
 
-Since limits aren't strictly enforced during the transition period, [stacking of user licenses isn't supported](../api-request-limits-allocations.md). If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow uses the higher plan (Dynamics 365 plan, in this example).
+Action limits are applied per context, not combined across licenses. Each flow runs under the license context that applies to it, and gets that context's limit independently:
 
-After the transition period ends, if a user has multiple plans assigned from different product lines, the total number of requests allowed would be the sum of the requests allocated to each license type. For example, if a user has both a Dynamics 365 Customer Service Enterprise license and a Power Apps per user license, then that user has a total of 40,000 + 40,000 = 80,000 requests available per 24 hour period.
+- A flow with a **Process license** always uses the Process license limit (250,000 actions/day), regardless of the user's license.
+- An **automated or scheduled flow** uses the flow owner's license context. If the owner has both a Dynamics 365 license and a Power Automate Premium license, flows running in Dynamics 365 app context use the Dynamics 365 limit (40,000 actions/day) and standalone flows use the Premium limit (40,000 actions/day). These limits don't add up to 80,000.
+- An **instant flow** (button, Power Apps) uses the invoking user's license context.
 
-If a user has multiple licenses allocated within the same product line, for example if a user has a Dynamics 365 Customer Service Enterprise license as the base license and a Dynamics 365 Sales Enterprise license attached, the total number of requests would be the amount that the base license provides.
+If a user has multiple licenses within the same product line (for example, Dynamics 365 Customer Service Enterprise and Dynamics 365 Sales Enterprise), the flow uses the limit from whichever license applies to its context — the limits don't stack.
 
-### What are performance profiles and how do I know which performance profile my cloud flow uses?
+Only [Process licenses can be stacked](#can-i-assign-multiple-process-licenses-to-a-single-cloud-flow), and only on individual cloud flows (up to 10 per flow).
 
-Based on the license of the owner, a flow gets a performance profile, which in turn decides the Power Platform request limits of the flow. If there are multiple licenses assigned to the owner, Power Automate picks the highest plan from the list:
+### How do I know the action limit for my cloud flow?
 
-| **Performance profile** | **License** | Limits during transition period | Limits after transition period |
-| --- | --- | --- | --- |
-| Low |- Power Automate Free<br>- Microsoft 365 licenses<br>- Power Apps Plan 1 (legacy)<br>-  Power Apps Per App licenses<br>- Power Automate Plan 1 (legacy)<br>- All trial licenses<br>- Dynamics 365 Team Member license| 10,000 | 6000 |
-| Medium |- Power Apps triggered flows<br>-  Power Apps Plan 2 (legacy)<br>- Power Apps Premium license<br>- Power Automate Plan 2 (legacy)<br>-  Power Automate per user (legacy)<br>-  Power Automate Premium license<br>- Dynamics 365 Enterprise licenses<br>-  Dynamics 365 Professional licenses|100,000 | 40,000 |
-| High | - Power Automate Process license<br>- Power Automate Hosted Process license<br>- Power Automate per-flow plan (legacy) |500,000 | 250,000 |
-| Unlimited |- Pay-as-you-go environment|15,000,000 | 15,000,000|
+The action limit for a cloud flow depends on the license context it runs under. Each flow gets the limit for its context — limits from different licenses don't add up across contexts.
 
-### In an organization, eight users have Office 365 licenses and their daily Power Platform requests would be 6,000 requests per user, in each 24 hour period. Does that mean that it will be pooled to the tenant level with a limit of 48,000 requests in each 24 hour period (8X6000) and all users can consume from this pool?
+| **License context** | **Daily action limit** |
+| --- | ---: |
+| Power Automate Free, Microsoft 365, Power Apps Plan 1 (legacy), Power Apps Per App, Power Automate Plan 1 (legacy), all trials, Dynamics 365 Team Member | 6,000 |
+| Power Apps triggered flows, Power Apps Premium, Power Automate Premium, Dynamics 365 Enterprise/Professional | 40,000 |
+| Power Automate Process, Hosted Process, per-flow plan (legacy) | 250,000 |
+| Pay-as-you-go | 15,000,000 |
 
-No, Power Platform requests aren't pooled at the environment nor tenant level. This ensures that a heavy user doesn't consume all the Power Platform requests of the tenant and affect everyone else. Since the license is per user, the limit is per user too. So, all Office customers get 6,000 requests each, whether they use them or not.
+For flows with a Process license, you can [stack multiple Process licenses](#can-i-assign-multiple-process-licenses-to-a-single-cloud-flow) to increase the limit beyond 250,000 actions per day.
 
-### Best practices around PPR
+### Can I assign multiple Process licenses to a single cloud flow?
+
+Yes. Up to 10 Process licenses can be stacked on a single cloud flow to increase its daily action entitlement. Each Process license adds 250,000 actions per day. For example, assigning 3 Process licenses to one cloud flow provides 750,000 actions per day.
+
+Currently, each Process license must be directly assigned to the flow that uses it. To allow a child flow to consume capacity from its parent flow's Process license, assign a Process license to the child flow and enable **Allow process overage** on it. Flow groups (sharing a single pool of Process capacity across multiple related flows) and automatic capacity inheritance from parent flows are planned but not yet available.
+
+> [!NOTE]
+> - The flow must be in a [solution](/power-automate/create-flow-solution) before a Process license can be assigned. To add an existing flow to a solution, go to **Solutions** > select a solution > **Add existing** > **Automation** > **Cloud flow**. Learn more in [Add an existing cloud flow to a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution).
+> - Use [Power Platform request reports in the admin center](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview) to see each flow's actual daily action count and identify flows that need additional Process licenses.
+> - To try Process licenses before purchasing, admins can provision a free 30-day [admin-managed trial](deep-dive-on-specific-license.md#admin-managed-trial-licenses) from the Microsoft 365 admin center. Trial Process licenses have the same entitlements as paid licenses and can be stacked.
+
+### Are action limits pooled across users in my organization?
+
+No. Action limits are applied per context&mdash;each user and each licensed flow gets its own daily limit independently. Limits aren't pooled or combined at the environment or tenant level. For example, if eight users have Office 365 licenses (6,000 actions/day each), they each get 6,000 — the limits aren't combined into 48,000 for the tenant. Similarly, a user's limits from different licenses (such as Premium and Dynamics 365) apply separately to the flows running in each context, not as a combined total.
+
+### Best practices for reducing action usage
+
+Use the following best practices to help with designing and scaling your flows.
 
 #### Best practices for design
 
-Use the fewest number of actions possible to achieve your automation:
+Use the fewest number of actions possible to achieve your automation.
 
 - If you have 'Do until' or 'Apply to each' loops in your flow, see if you can reduce the number of loop iterations, possibly by retrieving fewer items to iterate through.
-
 - Many connectors have 'Filter query' and 'Top count' parameters that you can use to reduce the number of items and the amount of data retrieved by using OData.
-
 - If you have a scheduled flow that runs frequently, consider reducing the frequency. Many flows that run once per minute or once per hour could be revised to occur less often. Use trigger conditions to minimize the run frequency.
-
 - If your flow is interacting with files, be conscious of the file size and try to reduce it if possible.
-
 - If you need to reuse a single property returned by an action with large output size multiple times, consider using 'Initialize Variable' to store that property, and use the variable in later actions. Even if only one property is used from an output of an earlier action, all outputs of that action that will be passed into the later action as inputs.
 
 #### Best practices to scale your flow
 
-- If your flow runs thousands of actions daily, you should consider purchasing a Process license to get better throughput and higher quotas. The Process license provides the best performance quota available (250k actions per day). Contact your tenant administrator to purchase the license and assign it to the flow. Once the license is purchased and assigned, the author of the flow should save it again. Alternatively, cloud flows are updated in the background once per week to reflect current plans.
+- If your flow runs thousands of actions daily, consider a Process license&mdash;the highest action entitlement available (250,000 actions per day, stackable). Contact your tenant administrator to purchase the license and assign it to the flow. Once the license is purchased and assigned, the author of the flow should save it again. Alternatively, cloud flows are updated in the background once per week to reflect current plans.
 
-- Consider splitting the workload across multiple flows to achieve high scale.
+- If a single flow exceeds 250,000 actions per day, [stack additional Process licenses](#can-i-assign-multiple-process-licenses-to-a-single-cloud-flow) rather than splitting the workload. For truly high-scale scenarios, consider splitting across multiple flows.
 
-### Power Platform requests pay-as-you-go
+### Pay-as-you-go for action overages
 
-We revised the Power Platform request limits for all licenses in late 2021. The new limits are designed to be sufficient for most customer scenarios. Learn more about Power Platform request limits in [Requests limits and allocations](../api-request-limits-allocations.md).
+The current action limits are designed to be sufficient for most customer scenarios. Learn more in [Action limits and allocations](../api-request-limits-allocations.md).
 
-For customers with extremely high scale scenarios who need to exceed these limits you can link those environments to Azure subscription. By linking the environment, users and flows in the environment can consume more than their limits without being throttled and only pay for the Power Platform requests used above those limits. Flows can still be licensed with a base license (either Power Automate Premium, Power Automate Process, Office 365, Power Apps, or Dynamics). For example, if you have Power Automate Premium license, you have a limit of 40,000 Power Platform requests/per user/day. If the user used 45,000 requests a day, the extra 5,000 requests are multiplied by a $/request rate and billed to the Azure subscription. The total amount is summed and billed based on the customer’s Azure billing cycle. Multiple [meters](../pay-as-you-go-meters.md) are turned on when you turn on pay-as-you-go on the environment. Learn more in [How to set up Pay-as-you-go](../pay-as-you-go-set-up.md).
+For high-scale scenarios that exceed these limits, you can link an environment to an Azure subscription. Users and flows in that environment can then consume more than their daily action limits without being throttled — you only pay for the actions used above the limit. Flows still need a base license (Power Automate Premium, Process, Office 365, Power Apps, or Dynamics). For example, a user with a Power Automate Premium license has a limit of 40,000 actions/day. If the user runs 45,000 actions in a day, the extra 5,000 are billed to the Azure subscription at a per-action rate. Multiple [meters](../pay-as-you-go-meters.md) are turned on when you enable pay-as-you-go on the environment. Learn more in [How to set up Pay-as-you-go](../pay-as-you-go-set-up.md).
 
-Schema on how overage PPR requests are billed in a pay-as-you-go environment:
+The following screenshot shows how overage actions are billed in a pay-as-you-go environment.
 
 ![An image that displays an overview of pay as you go](../media/power-automate-licensing/pay-as-you-go.png)
 
-### General FAQs about request limits
+### FAQs about action limits
 
-You can consult this [requests limits frequently asked questions](../api-request-limits-allocations.md#frequently-asked-questions) for more information about requests limits.
+Learn more about action limits and allocations in [Action limits frequently asked questions](../api-request-limits-allocations.md#frequently-asked-questions).
 
 ## Office 365 license questions
 
@@ -370,23 +381,23 @@ Here are some frequently asked questions about using Power Automate with an Offi
 
 Limited Power Automate use rights are included with select Office 365 licenses to allow users to customize and extend Office 365 for personal productivity scenarios. For enterprise scenarios, Office recommends the [Premium license](types.md#user-licenses).
 
-Office 365 licenses include the following Power Automate capabilities:
-  
+Office 365 licenses include the following Power Automate capabilities.
+
 - Create and execute automated, scheduled, and button flows.
 - Access to standard connectors.
-- 6,000 [Power Platform requests/day](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate). 10,000 requests/day during [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period).
-  
-The following Power Automate capabilities aren't included:
-  
+- 6,000 [actions per day](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate). 10,000 actions/day during [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period).
+
+The following Power Automate capabilities aren't included.
+
 - Access to premium connectors (except in Dataverse for Teams environments). Learn more about [Dataverse for Teams capabilities](../pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses).
-- Business process flows
-- Custom connectors
-- On-premises gateways
-- Robotic Process Automation
-- AI Builder capacity
-  
+- Business process flows within app context.
+- Custom connectors within app context.
+- On-premises gateways within app context.
+- Robotic process automation (RPA).
+- AI Builder.
+
 The following Office 365 licenses include Power Automate capabilities:
-  
+
 - Office 365 E1
 - Office 365 E3
 - Office 365 E5
@@ -426,7 +437,7 @@ Dynamics 365 licenses include the following Power Automate capabilities:
 - Business process flows within app context.
 - Custom connectors within app context.
 - On-premises gateways within app context.
-- [Power Platform request](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate) limits: Dynamics 365 Team member gets 6,000 requests/day (25,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)), Dynamics 365 professional gets 40,000 requests/day (100,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)), and Dynamics 365 Enterprise gets 40,000 requests/day (100,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)).
+- [Action limits](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate): Dynamics 365 Team member gets 6,000 actions/day, Dynamics 365 Professional gets 40,000 actions/day, and Dynamics 365 Enterprise gets 40,000 actions/day.
 
 The following Power Automate capabilities aren't included in Dynamics 365 licenses:
 
@@ -482,7 +493,7 @@ A limited set of Power Automate capabilities are included as part of a Power App
 - Business process flows within app context.
 - Custom connectors within app context.
 - On-premises gateways within app context.
-- Power Platform request limits: Power Apps Premium gets 40,000 requests/day (100,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)) and Power Apps per app gets 6,000 requests/day (10,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)).
+- Action limits: Power Apps Premium gets 40,000 actions/day and Power Apps Per App gets 6,000 actions/day. Learn more in [action limits and allocations](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate).
 - Power Apps Premium gets 250 MB Dataverse database capacity and 2 GB Dataverse file capacity. Power Apps per app gets 50 MB Dataverse database capacity and 400 MB Dataverse file capacity. Flows invoked by the app created using Power Apps that handle complex objects will consume this storage limit. For example, if a flow parses a 100-page document and makes updates to it, the storage it needs to retain the document in run history for future troubleshooting will consume this limit.
 
 The following Power Automate capabilities aren't included in Power Apps licenses:
@@ -514,12 +525,13 @@ An environment has multiple apps. There are flows for data management that don't
 ## AI Builder license questions
 
 Find global AI Builder licensing information in the following articles:
+
 - [AI Builder licensing summary](https://go.microsoft.com/fwlink/?linkid=2101001)
 - [AI Builder licensing FAQ](https://go.microsoft.com/fwlink/?linkid=2246312).
 
 ### How are licensed AI Builder actions within a Power Automate flow?
 
-In order to add and run AI Builder actions within a flow, you need specific AI Builder licensing: AI Builder actions consume AI Builder credits, which can be obtained within Power Automate Premium licenses, within other Power Platform Premium licenses, or, mainly, within AI Builder capacity add-on. 
+In order to add and run AI Builder actions within a flow, you need specific AI Builder licensing: AI Builder actions consume AI Builder credits, which can be obtained within Power Automate Premium licenses, within other Power Platform Premium licenses, or, mainly, within AI Builder capacity add-on.
 
 Credits must be [available in flow's environment](https://go.microsoft.com/fwlink/?linkid=2238930).
 
@@ -553,27 +565,29 @@ foreach ($env in $environments) {
 }
 ```
 
-#### Write all flows to a CSV file
+### Write all flows to a CSV file
 
 $allFlows | Export-Csv -Path "flows.csv" -NoTypeInformation
 
 Write-Host "All flows at risk of suspension written to flows.csv"
 
-If there are more than 500 environments in the tenant, raise a support ticket so our support team can run the report for you. 
+If there are more than 500 environments in the tenant, raise a support ticket so our support team can run the report for you.
 
 ### I assigned a license but I still see the flow in flows that need my attention in PowerShell. Why?
+
 Once a license is assigned/flow is associated to an app, edit and save the flow. It can take up to 24 hours for the PowerShell to refresh and remove the flow from the PowerShell response.
 
 ### I assigned a license but I still see the banners that my flows need attention in Power Automate portal. Why?
+
 Once a license is assigned/flow is associated to an app, it may take up to seven (7) days for the premium license to appear in the Power Automate portal. To refresh the latest license status, edit and save a flow.
 
 ### How can I easily determine if my flow is in context of a Power Apps/Dynamics 365 app?
 
 Is the flow created to support the Power Apps/Dynamics 365 app? Can the flow be deleted if the corresponding apps are deleted? Is the flow talking to the same data sources as the app? If so, the flow is in context.
 
-### How can I associate in-context flows to Power Apps/Dynamics 365 apps? 
+### How can I associate in-context flows to Power Apps/Dynamics 365 apps?
 
-Flows created to support apps built with Power Apps/Dynamics 365  must run within the context of the app. This means the flow must use the same data sources for triggers or actions as the app. If automated or scheduled cloud flows are created to support the app and are in context of an app, link the flow to the apps using a [PowerShell script](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app). Once the flow is linked, a dependency is established between the app and the flow and they can be managed together. If the linked app is deleted or unused, the flow will be turned off.
+Flows created to support apps built with Power Apps/Dynamics 365 must run within the context of the app. This means the flow must use the same data sources for triggers or actions as the app. If automated or scheduled cloud flows are created to support the app and are in context of an app, link the flow to the apps using a PowerShell script. Once the flow is linked, a dependency is established between the app and the flow and they can be managed together. If the linked app is deleted or unused, the flow will be turned off.
 
 Makers can also associate their flows to apps from the Power Automate portal. Learn more in [Associate flows to apps](/power-automate/associate-flow-to-app).
 
@@ -581,27 +595,27 @@ Makers can also associate their flows to apps from the Power Automate portal. Le
 
 A Power Apps per app plan gives users the ability to run Power Automate flows that use premium features. The flows either need to be triggered by Power Apps or associated to an app through PowerShell or the Power Automate portal.
 
-Learn more in [Associate in context flows to an app](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app).
+Learn more in [Associate in context flows to an app](../powerapps-powershell.md#associate-in-context-flows-to-an-app).
 
 ## Multiplexing
 
-Multiplexing refers to the use of hardware or software that a customer uses to pool connections, reroute information, or reduce the number of users that directly access or use the Power Apps, Power Automate, and Microsoft Copilot Studio. 
+Multiplexing refers to the use of hardware or software that a customer uses to pool connections, reroute information, or reduce the number of users that directly access or use the Power Apps, Power Automate, and Microsoft Copilot Studio.
 
 ### Is it recommended to use multiplexing to reduce the number of licenses?
 
-Using multiplexing as a mechanism to reduce the number of licenses to be purchased is a license violation. Learn more at the multiplexing guidance from [Client Access License (CAL) Requirements](https://download.microsoft.com/download/3/D/4/3D42BDC2-6725-4B29-B75A-A5B04179958B/Licensing_Brief_PLT_Multiplexing.pdf).
+Using multiplexing as a mechanism to reduce the number of licenses to be purchased is a license violation. Learn more at the multiplexing guidance in [Client Access License (CAL) Requirements](https://download.microsoft.com/download/3/D/4/3D42BDC2-6725-4B29-B75A-A5B04179958B/Licensing_Brief_PLT_Multiplexing.pdf).
 
 Here are a few examples of what multiplexing is or isn't:
 
-1. If the premium flow is only moving data from Dataverse into a shared location or sending an email to colleagues, it doesn't fall under multiplexing because the users consume the data, rather than trigger the flow.
+- If the premium flow is only moving data from Dataverse into a shared location or sending an email to colleagues, it doesn't fall under multiplexing because the users consume the data, rather than trigger the flow.
 
-1. If a premium flow triggers when a new item is added to a SharePoint list, saves the details in Dataverse, and then sends an email to the owner of the flow, multiple people can upload items into the list but the email is only sent to the owner. In this case, only the owner needs a license because they're the only person who gets value from the flow.
+- If a premium flow triggers when a new item is added to a SharePoint list, saves the details in Dataverse, and then sends an email to the owner of the flow, multiple people can upload items into the list but the email is only sent to the owner. In this case, only the owner needs a license because they're the only person who gets value from the flow.
 
-1. If the flow mentioned in number two sends an email to the user who uploads the item, both the owner and the user need a Premium license. In this case, the user  indirectly triggers the flow (by uploading an item into SharePoint) and gets value from the flow in the form of an email. Failure to license all the users falls under multiplexing.  
+- If the flow mentioned in number two sends an email to the user who uploads the item, both the owner and the user need a Premium license. In this case, the user indirectly triggers the flow (by uploading an item into SharePoint) and gets value from the flow in the form of an email. Failure to license all the users falls under multiplexing.
 
 ### I have multiple flows running under a shared service account. What licenses do I need?
 
-- **Service account**: Microsoft Entra user account used as a service account. Service accounts are a special type of account that's intended to represent a nonhuman entity, such as an application, API, or other service. User accounts, used as a service account by sharing credentials with other users, pose a security risk and it's difficult to track who made changes to a flow if multiple people have access to the service account. Managing their passwords is also a challenge.  When creating service accounts, provide only the permissions that are required for the task. Evaluate existing service accounts to see if you can reduce privileges. Limit the number of people who have access to the service account to minimize security risks. You can also create different accounts for different scenarios to minimize the exposure. Service accounts aren't recommended as a best practice. In some scenarios, service accounts are used to remove the dependency from the flow to the original owner. In such cases, use Service principal to resolve security threats.
+- **Service account**: Microsoft Entra user account used as a service account. Service accounts are a special type of account that's intended to represent a nonhuman entity, such as an application, API, or other service. User accounts, used as a service account by sharing credentials with other users, pose a security risk and it's difficult to track who made changes to a flow if multiple people have access to the service account. Managing their passwords is also a challenge. When creating service accounts, provide only the permissions that are required for the task. Evaluate existing service accounts to see if you can reduce privileges. Limit the number of people who have access to the service account to minimize security risks. You can also create different accounts for different scenarios to minimize the exposure. Service accounts aren't recommended as a best practice. In some scenarios, service accounts are used to remove the dependency from the flow to the original owner. In such cases, use Service principal to resolve security threats.
 
 - **Service principal**: Microsoft Entra service principal functions as the identity of the application instance. Service principals define who can access the application and what resources the application can access. A service principal is created in each tenant where the application is used and references the globally unique application object.
 
@@ -616,15 +630,15 @@ If you want to run your flow under a service account, here's how to avoid multip
 - If the flow only uses standard connectors and no premium features, all the users who have the credentials of the service account can have a Microsoft/Office 365 license, Power Automate Free, or any Power Automate Premium license.
 
 - If the flow uses premium features (premium connectors, Robotic Process Automation, custom connectors, on-premises gateway, business process flows):
-  - The service account is used by a limited set of users. In this case, licensing all the users and the service account is enough. 
-  - The service account is used by many users. In this case, it's recommended to assign a Process license to the flow to ensure any new users adding to the account are automatically compliant.
+    - The service account is used by a limited set of users. In this case, licensing all the users and the service account is enough.
+    - The service account is used by many users. In this case, it's recommended to assign a Process license to the flow to ensure any new users adding to the account are automatically compliant.
 
-- If the flow is a manually or app-triggered flow/Dataverse ‘Run as user’ flow, all users who run the flow will need a Premium license or the flow needs a process license. Check out this FAQ on [who needs to purchase a Premium license](faqs.md#who-needs-to-purchase-a-premium-license).
+- If the flow is a manually or app-triggered flow/Dataverse ‘Run as user’ flow, all users who run the flow will need a Premium license or the flow needs a process license. Check out this FAQ on who needs to purchase a Premium license.
 
-- Premium flow is in context (the flow shares the data sources of the app) of an app created using Power Apps/Dynamics 365 app: 
-  - All the users who have the credentials for the service account and the service account need a Power Apps/Dynamics 365 license. 
-  - If they don’t have a Power Apps/Dynamics 365 license, all the users and the service account need Power Automate user licenses.
-  - Alternatively, the flow can be licensed with a Process license and none of the users/service account needs a license.
+- Premium flow is in context (the flow shares the data sources of the app) of an app created using Power Apps/Dynamics 365 app:
+    - All the users who have the credentials for the service account and the service account need a Power Apps/Dynamics 365 license.
+    - If they don’t have a Power Apps/Dynamics 365 license, all the users and the service account need Power Automate user licenses.
+    - Alternatively, the flow can be licensed with a Process license and none of the users/service account needs a license.
 
 - Multiple users sharing credentials of a service account and using premium flows with one Power Automate Premium license assigned to the service account is considered multiplexing and the flow isn't compliant.
 
@@ -633,11 +647,11 @@ If you want to run your flow under a service account, here's how to avoid multip
 >
 > This is guidance only and not hard enforcement. Admins are responsible for licensing all the flows correctly to stay compliant.
 
-### There's a premium flow that sends approval requests to a set of users and then waits for the users to approve or reject the request before it continues running.  Do the approvers need a Premium license?
+### There's a premium flow that sends approval requests to a set of users and then waits for the users to approve or reject the request before it continues running. Do the approvers need a Premium license?
 
 Users who respond to approval requests don't need a Premium license.
 
-### Automated flow - User builds a flow that triggers when an item is added to a list created using Microsoft Lists and updates a SQL database (Premium). Multiple people can add items to the list created using Microsoft Lists. Do users need a Premium license?
+Automated flow: User builds a flow that triggers when an item is added to a list created using Microsoft Lists and updates a SQL database (Premium). Multiple people can add items to the list created using Microsoft Lists. Do users need a Premium license?
 
 The flow runs in the context of the owner's license for automated or scheduled flows and the invoking user's license for instant, Power Apps, or Dataverse-triggered flows. So, the person who added the item to the list created using Microsoft Lists doesn't need a Premium license.
 
@@ -649,8 +663,7 @@ Everyone who invokes the flow needs a Premium license because it's an instant fl
 
 You can either license the parent flow or license the child flow with a Process license. However, if the parent flow also has a premium connector, the parent flow owner must have a Premium license or the parent flow must have the Process license.
 
-### My flow uses connections from multiple users. Do I need to license all of them?
-
-Who needs a license is independent from whose connections are used in the flow. Automated or scheduled flows always run under the owner's license and manual flows or  apps always run under the user who triggers the flow.
+My flow uses connections from multiple users. Do I need to license all of them?
+Who needs a license is independent from whose connections are used in the flow. Automated or scheduled flows always run under the owner's license and manual flows or apps always run under the user who triggers the flow.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
