@@ -280,11 +280,11 @@ Reporting for Power Platform request usage in preview is available in the Power 
 
 ### What are the timelines for Power Platform Request limits?
 
-The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Public preview reporting for Power Platform Requests rolled out in June 2022. Following a public preview period, the reports move to general availability. There's no current ETA for when GA happens. Any potential high usage enforcement won't start until at least six months after reports are generally available. However, Power Automate continues to throttle at transition limits until enforcement. Learn more in [FAQs](power-automate-licensing/faqs.md#power-platform-requests-questions).
+The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Public preview reporting for Power Platform Requests rolled out in June 2022. Following a public preview period, the reports move to general availability. There's no current ETA for when GA happens. Any potential high usage enforcement won't start until at least six months after reports are generally available. However, Power Automate continues to throttle at transition limits until enforcement. Learn more in [Power Automate licensing FAQ](power-automate-licensing/faqs.md#action-limits-and-capacity-questions).
 
 ### What account's limits are used for classic workflows or Power Automate flows?
 
-It depends if the process is run on-demand or in the background. Instant flows, which are run on-demand, use the limits of the account who started the process. On the other hand, workflows or automated/scheduled flows that run in the background always use the limits of the owner of the process irrespective of why the process started or what accounts are used for connections inside of the process. Learn more in [Whose Power Platform request limits are used by the flow?](power-automate-licensing/faqs.md#whose-power-platform-request-limits-are-used-by-the-cloud-flow).
+It depends if the process is run on-demand or in the background. Instant flows, which are run on-demand, use the limits of the account who started the process. On the other hand, workflows or automated/scheduled flows that run in the background always use the limits of the owner of the process irrespective of why the process started or what accounts are used for connections inside of the process. Learn more in [Whose action limits are used by the flow?](power-automate-licensing/faqs.md#whose-action-limits-are-used-by-the-cloud-flow).
 
 ### Does the Microsoft Power Platform request limit roll-over from day to day or month to month?
 
