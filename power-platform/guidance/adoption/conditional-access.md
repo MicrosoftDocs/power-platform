@@ -5,10 +5,11 @@ description: Learn how to configure identity and access management for Microsoft
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/18/2025
+ms.date: 03/26/2026
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jhaskett-msft
+ms.reviewer: angieandrews
+ms.contributor: matow
 search.audienceType: 
   - admin
 contributors:
@@ -120,7 +121,7 @@ Consider the following questions:
 - If the identity is compromised by a bad actor, what would the impact to the system be in terms of confidentiality, integrity, and availability?
 - Does the identity need permanent access or can conditional access be considered?
 - Does the identity perform actions that require administrative or elevated permissions?
-- How will the workload interact with third-party services?
+- How will the workload interact with non-Microsoft services?
 
 A role is a *set of permissions* assigned to an identity. Assign roles that only allow the identity to complete the task, and no more. When user's permissions are restricted to their job requirements, it's easier to identify suspicious or unauthorized behavior in the system.
 
@@ -182,7 +183,7 @@ As a customer, you're responsible for:
 - Creating and configuring conditional access policies
 - Creating and assigning security roles
 - Enabling and configuring auditing and monitoring
-- Authentication and security of components that Power Platform may connect to
+- Authentication and security of components that Power Platform might connect to
 
 Understand the key requirements for the Power Platform workload you're implementing. Ask yourself the following questions to help identify the identity and access management features to configure.
 
@@ -212,6 +213,17 @@ Effectively governing makers, users, and guests is essential to maintain securit
 1. **Use Microsoft Entra ID Groups to secure environment access**: Use Microsoft Entra ID groups to manage and secure access to Power Platform environments. By grouping users based on their roles and responsibilities, you can efficiently assign and manage permissions. Microsoft Entra ID groups also simplify the process of updating access controls as organizational needs evolve.
 
 1. **Use Dataverse to have built-in flexible RBAC security model**: Dataverse provides a built-in, flexible role-based access control security model that allows you to manage user permissions and access to data effectively. This model enables you to define custom roles and assign specific permissions based on job functions and responsibilities. Ensure that users have only the necessary access to perform their tasks. With features like granular permissions, hierarchical security, and team-based access, Dataverse's RBAC model enhances data protection, supports compliance with regulatory requirements, and simplifies the management of user access within Power Platform environments.
+
+## Embedded flow authentication and Conditional Access
+
+When configuring Conditional Access policies for Power Platform, be aware that **Microsoft Flow Service** (Application ID: `7df0a125-d3be-4c96-aa54-591f83ff541c`) isn't included in the **Office 365** application target. 
+
+> [!IMPORTANT]
+> If your policies require MFA for the Office 365 app suite, users who access Power Automate flows from SharePoint, Teams, or Excel might see authentication errors because the token exchange between the host application and Power Automate fails.
+>
+> To prevent this issue, either target **All cloud apps** or explicitly add Microsoft Flow Service to your policy alongside the Office 365 app.
+
+Learn more in [Conditional access and multifactor authentication in Power Automate](/troubleshoot/power-platform/power-automate/administration/conditional-access-and-multi-factor-authentication-in-flow).
 
 ## Next steps
 
