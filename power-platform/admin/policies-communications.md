@@ -93,7 +93,7 @@ To limit the impact on customers and their users, we plan the maintenance window
 
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
 
-The following are service update times. Database updates run as soon as possible depending on the system load during the maintenance window of the environment. In addition to the listed update windows, database updates also run 24 hours on weekends (Saturdays and Sundays).
+The following are service update times. Database updates run as soon as possible depending on the system load during the maintenance window of the environment. In addition to the listed update windows, database updates also run 24 hours on weekends (Saturdays and Sundays). Customizing your environment's maintenance window to expand the hours or stagger it from the default window for the region, can significantly improve the speed at which database updates are applied to your organization.
 
 |Region | URL | Window (UTC) |
 | ------------- | ------------- | ------------- |
