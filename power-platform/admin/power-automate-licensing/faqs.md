@@ -178,7 +178,7 @@ Yes, they can use Power Automate for the desktop (they have usage rights for it)
 Starting August 1, 2023, Power Automate per flow ($100 per flow/month, with a minimum purchase of 5 licenses) and the Power Automate unattended RPA add-on ($150 per bot/month and required licensing prerequisites) will be removed from the pricing page. They'll be removed from the price list on February 1, 2024. Power Automate process, an all-encompassing license that is easier to manage, licenses a single "automation" bot that can be used for unattended robotic process automation (unattended RPA), or cloud flows using digital process automation (DPA) and can be accessed by unlimited users in the organization. Power Automate Process is priced at $150 per bot/month.
 
 ### How is Process license different from per flow license
-
+request
 For unattended RPA, previously customers needed to buy a per flow license for the cloud flow and an unattended RPA add-on. Now they can purchase a Process license for every RPA session on a machine. All the cloud flows invoking desktop flows on the machine are included as part of the Process license.
 
 For cloud flows, one per flow license entitles the flow with the license and its child flows. One Process license entitles the flow with the license, its child flows, and any flows that are associated. Per flow had a minimum of five packs to be purchased to get started. There's no minimum purchase quantity requirement for Process license.
@@ -258,7 +258,7 @@ Users aren't blocked from using an app or flow for occasional and reasonable ove
 
 Here are some things you can do if you exceeded the limits of your license:
 
-- Revisit your design and check for places that can help reduce the number of actions being called. Learn more in [Redesign your flow to use fewer actions and less data](/troubleshoot/power-platform/power-automate/flow-run-issues/troubleshoot-slow-running-flows.md#resolution-1-redesign-your-flow-to-use-less-actions-and-less-data).
+- Revisit your design and check for places that can help reduce the number of actions being called. Learn more in [Redesign your flow to use fewer actions and less data](/troubleshoot/power-platform/power-automate/flow-run-issues/troubleshoot-slow-running-flows.md#resolution-1-redesign-your-flow-to-use-fewer-actions-and-less-data).
 - If the flow is already optimized, but it uses many actions because of the nature of the business, consider a Process license. The Process license provides the highest action entitlement available (250,000 actions per day).
     - If the flow already has a Process license and still exceeds 250,000 actions, you can [stack additional Process licenses](#can-i-assign-multiple-process-licenses-to-a-single-cloud-flow) on the same flow — each adds 250,000 actions per day.
     - Use [Power Platform request reports in the admin center](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview) to identify high-usage flows that need additional capacity.

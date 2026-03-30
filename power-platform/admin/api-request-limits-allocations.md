@@ -29,7 +29,7 @@ Power Platform requests limits exist to help ensure service levels, availability
 Requests in Microsoft Power Platform are actions that a user takes across different products.
 
 - **Power Apps**: All API requests to connectors and Microsoft Dataverse.
-- **Power Automate**: All API requests to connectors, process advisor analysis, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both successful and failed actions count toward these limits. Retries and requests from pagination also count as action executions. Learn more in [What counts as Power Platform request?](power-automate-licensing/faqs.md#what-counts-as-power-platform-request).
+- **Power Automate**: All API requests to connectors, process advisor analysis, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both successful and failed actions count toward these limits. Retries and requests from pagination also count as action executions. Learn more in [What counts as an action](power-automate-licensing/faqs.md#what-counts-as-an-action).
 - **Microsoft Copilot Studio**: API requests (or calls) to Power Automate flows.
 - **Dataverse**: All create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, and special operations like share or assign. These operations can be from any client or application (including Dynamics 365) and using any endpoint (SOAP or REST). These operations include plug-ins, classic workflows, and custom controls that perform the earlier mentioned operations.
 
