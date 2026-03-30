@@ -75,6 +75,13 @@ Make sure you have the System Administrator security role or equivalent permissi
 | Allow Copilot Studio to share data with Viva Insights | When **On**, enables Copilot Studio data to flow to Microsoft Viva Insights for [analytical reports](/microsoft-copilot-studio/analytics-viva-insights). Also requires [Microsoft 365 services](geographical-availability-copilot.md#copilots-and-generative-ai-features-that-depend-on-data-movement-across-regions) to be turned on. For information on what data is shared with Viva Insights, see [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). | On |
 | Allow cross-geo boundary sharing of aggregated analytics data of your tenant preferred data location for Viva Insights is different than the location of your Copilot Studio environment | For tenants with Power Platform environments across [multiple geos](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features). When **On**, Microsoft Copilot Studio is sent and stored in the base location of the tenant in Viva Insights, even when crossing geo boundaries. Requires turning on **Allow Copilot Studio to share data with Viva Insights**.  | Off |
 
+## Dataverse Intelligence (preview)
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Allow data availability in Microsoft 365 Copilot | When selected, allows Dynamics 365 and Power Apps/Dataverse data in Microsoft 365 Copilot Chat | Off |
+| Turn on Dataverse intelligence (Work IQ) for agents and AI experiences | When selected, allows reusable business context [business skills](https://learn.microsoft.com/power-apps/maker/data-platform/data-platform-business-skill-overview) to be used by your agents | Off |
+
 ## Dataverse Model Context Protocol
 
 | Setting | Description | Default value |
