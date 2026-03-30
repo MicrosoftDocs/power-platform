@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/20/2026
+ms.date: 03/30/2026
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
@@ -16,8 +16,6 @@ search.audienceType:
   - admin
 ms.custom: sfi-image-nochange
 ---
-
-<!-- from editor: Note that the two Related Content links at the end both go to the same article. -->
 
 # Manage Dataverse auditing
 
@@ -465,7 +463,7 @@ You can use Azure Synapse Link for Dataverse to link the audit table and create 
 
 ### Related content
 
-[Auditing overview](/power-apps/developer/data-platform/auditing-overview) <br />
-[Audit user access](/power-apps/developer/data-platform/audit-user-access)
+[Auditing overview](/power-apps/developer/data-platform/auditing-overview)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
