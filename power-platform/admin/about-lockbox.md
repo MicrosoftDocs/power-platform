@@ -4,7 +4,7 @@ description: This article covers information on how customers can review and app
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/25/2026
+ms.date: 03/30/2026
 ms.update-cycle: 180-days
 author: mihaelablendea
 ms.author: mihaelab
@@ -41,7 +41,7 @@ Power Platform and Dynamics 365 applications and services store customer data in
 
 > [!NOTE]
 >
-> - Currently, the applications and services where lockbox policy is enforced once enabled are Power Apps (excluding Cards for Power Apps), AI Builder, Power Pages, Power Automate, Microsoft Copilot Studio (the configured lockbox doesn't cover data sent out from Copilot Studio as part of the Agent 365 security audit logging), Dataverse, Customer Insights, Customer Service, Sales (except conversation intelligence), Communities, Guides, Connected Spaces, Finance (except Lifecycle Services), Project Operations (except Lifecycle Services), Supply Chain Management (except Lifecycle Services), and the real-time marketing feature area of the Marketing app.
+> - Currently, the applications and services where lockbox policy is enforced once enabled are Power Apps (excluding Cards for Power Apps), AI Builder, Power Pages, Power Automate, Microsoft Copilot Studio (the configured lockbox doesn't cover data sent from Copilot Studio as part of the Agent 365 security audit logging), Dataverse, Customer Insights, Customer Service, Sales (except conversation intelligence), Communities, Guides, Connected Spaces, Finance (except Lifecycle Services), Project Operations (except Lifecycle Services), Supply Chain Management (except Lifecycle Services), and the real-time marketing feature area of the Marketing app.
 > - Features powered by Azure OpenAI Service are excluded from lockbox policy enforcement unless product documentation for a given feature states that lockbox applies.
 > - Nuance Conversational IVR is excluded from lockbox policy enforcement unless product documentation for a given feature states that lockbox applies.
 > - [Maker Welcome Content](welcome-content.md) is excluded from lockbox policy enforcement.
