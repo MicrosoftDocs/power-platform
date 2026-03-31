@@ -111,6 +111,8 @@ To turn on data movement across regions, Bing search, Microsoft 365 services, an
 
 1. Review the terms of use and select the **Allow flex routing during periods of peak load** checkbox.
 
+    When the **Allow flex routing during periods of peak load** checkbox is selected, ... For more information, see [European Union Data Boundary (EUDB) flex routing](/copilot/microsoft-365/copilot-flex-routing).
+
 1. Select **Save**.
 
 ## Copilots and generative AI features that depend on data movement across regions
