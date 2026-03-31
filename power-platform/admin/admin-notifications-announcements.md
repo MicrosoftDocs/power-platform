@@ -1,7 +1,6 @@
 ---
 title: Overview of admin notifications and announcements (preview)
 description: Learn about the Power Platform admin center's notifications and announcements. (preview)
-ms.topic: concept-article
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 03/31/2026
