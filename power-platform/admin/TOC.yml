@@ -60,6 +60,10 @@
                       href: update-apps-to-unified-interface.md
                     - name: Enable the hybrid experience
                       href: enable-hybrid-experience.md
+            - name: Admin notifications and announcements (preview)
+              items:
+              - name: Overview (preview)
+                href: admin-notifications-announcements.md
         - name: Licensing
           items:
             - name: Overview
