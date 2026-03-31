@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 11/06/2025
+ms.date: 03/30/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -31,17 +31,39 @@ The source environment in this tutorial is always a finance and operations apps 
 
 Ensure that both the source and target environments are provisioned in the same region. For general information on copying environments, refer to [Copy an environment](../copy-environment.md).
 
+## Copy options
+
+When you copy an environment that contains finance and operations apps, you can configure the following options to control what data is included in the copy.
+
+| Option | Description |
+|--------|-------------|
+| **Everything** | Copies all application data (both Dataverse and finance and operations), users, customizations, and schemas from the source environment. This is the most common option for refreshing sandbox or developer environments from production. |
+| **Customizations and schemas only** | Copies users, customizations, and schemas from the source environment, but doesn't copy application data. Use this option when you need a clean environment with your configuration but no production data. For a list of Dataverse tables truncated with this option, see [Copy an environment](../copy-environment.md). |
+| **Transactionless copy** | Performs a full copy but truncates finance and operations transaction tables in the target environment after the copy completes, significantly reducing storage consumption. For detailed instructions, see [Tutorial: Perform a transaction-less copy between environments](./tutorial-perform-transactionless-copy.md). |
+| **Skip audit data** | Excludes audit log data from the copy. Copying audit logs can significantly increase the time required to complete the operation. By default, audit data is skipped. |
+
+> [!NOTE]
+> When you combine these options, the **Transactionless copy** option applies only to an **Everything** copy. Selecting **Customizations and schemas only** already excludes all application data, so the transactionless option has no effect.
+
 # [Power Platform admin center](#tab/PPAC)
 
 ## Begin the copy operation
 
-In the Power Platform admin center, go to the source environment you want to copy. From there, select the **Copy** button in the top action pane.  In the slider window that appears, choose to copy **Everything**, which incorporates both the Dataverse and X++ source code, and the data from the source. Select the **Target** environment to be the unified sandbox environment.
+1. In the Power Platform admin center, go to the source environment you want to copy.
+1. Select the **Copy** button in the top action pane.
+1. In the slider window that appears, configure the following settings:
+    - **Copy over**: Select **Everything** to copy all data, customizations, and schemas. Select **Customizations and schemas only** to copy the environment structure without application data.
+    - **Transactionless Copy**: When copying **Everything**, this option appears and defaults to **Yes**. Set it to **No** if you need all transaction data in the target environment. For more information, see [Tutorial: Perform a transaction-less copy between environments](./tutorial-perform-transactionless-copy.md).
+    - **Target**: Select the unified sandbox or developer environment to overwrite with the copy.
+1. Select **Copy** to start the operation.
 
 # [PowerShell](#tab/PowerShell)
 
 ## Copy via PowerShell
 
 Load the PowerShell console and execute the following commands to copy the environment. For more information on how to install and use the PowerShell module, see [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
+
+### Everything copy (full copy)
 
 ```PowerShell
 #Install the module
@@ -60,11 +82,49 @@ Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId
         SourceEnvironmentId = $SourceEnvironmentID
         TargetEnvironmentName = "Copied from source"
         CopyType = "FullCopy"
-        SkipAuditData: true
+        SkipAuditData = $true
     }
 
 Copy-PowerAppEnvironment -EnvironmentName $TargetEnvironmentID -CopyToRequestDefinition $copyToRequest
 ```
+
+### Customizations and schemas only copy
+
+```PowerShell
+    $copyToRequest = \[pscustomobject\]@{
+        SourceEnvironmentId = $SourceEnvironmentID
+        TargetEnvironmentName = "Copied from source"
+        CopyType = "MinimalCopy"
+        SkipAuditData = $true
+    }
+
+Copy-PowerAppEnvironment -EnvironmentName $TargetEnvironmentID -CopyToRequestDefinition $copyToRequest
+```
+
+### Transactionless copy
+
+```PowerShell
+    $copyToRequest = \[pscustomobject\]@{
+        SourceEnvironmentId = $SourceEnvironmentID
+        TargetEnvironmentName = "Copied from source"
+        CopyType = "FullCopy"
+        SkipAuditData = $true
+        ExecuteAdvancedCopyForFinanceAndOperations = $true
+    }
+
+Copy-PowerAppEnvironment -EnvironmentName $TargetEnvironmentID -CopyToRequestDefinition $copyToRequest
+```
+
+The following table describes each parameter in the copy request.
+
+| Parameter | Description |
+|-----------|-------------|
+| `SourceEnvironmentId` | The environment ID of the source environment to copy from. |
+| `TargetEnvironmentName` | A display name assigned to the target environment after the copy. |
+| `CopyType` | Set to `"FullCopy"` for an **Everything** copy, or `"MinimalCopy"` for a **Customizations and schemas only** copy. |
+| `SkipAuditData` | Set to `$true` to exclude audit logs from the copy (recommended). Set to `$false` to include audit logs, which increases copy duration. |
+| `ExecuteAdvancedCopyForFinanceAndOperations` | Set to `$true` to perform a transactionless copy that truncates finance and operations transaction tables in the target environment after the copy completes. Only applies when `CopyType` is `"FullCopy"`. |
+
 ---
 
 ## Different copy or restore scenarios
