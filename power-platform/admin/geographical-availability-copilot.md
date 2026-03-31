@@ -109,11 +109,11 @@ To turn on data movement across regions, Bing search, Microsoft 365 services, an
     > [!NOTE]
     > If the **Move data across regions** checkbox is displayed in the **Generative AI features** pane, you must have it already selected in order to select the **Microsoft 365 services** checkbox.
 
-1. If your environment is in the EU, the **Allow flex routing during periods of peak load** checkbox appears.
+1. If your environment is in the EU, the **Allow flex routing during periods of peak load** checkbox is displayed:
 
-    - If the **Allow flex routing during periods of peak load** checkbox isn't available for you, that indicates that this feature has already been set in the Microsoft 365 admin console. This feature applies to all Copilot experiences.
+    - If the **Allow flex routing during periods of peak load** checkbox is displayed, but you can't select it, that indicates that this feature hasn't been turned on in the Microsoft 365 admin console. For more information, see [European Union Data Boundary (EUDB) flex routing](https://go.microsoft.com/fwlink/?linkid=2356281).
 
-    - If the **Allow flex routing during periods of peak load** checkbox is available, review the terms of use and select the checkbox. This feature allows large language model (LLM) inferencing and the storage of associated pseudonymized data to occur outside the EU Data Boundary during periods of peak demand. For more information, see [European Union Data Boundary (EUDB) flex routing](https://go.microsoft.com/fwlink/?linkid=2356281). This features applies to Copilot Studio, Power Platform, and Dynamcis 365 environments managed from the Power Platform admin center.
+    - If the **Allow flex routing during periods of peak load** checkbox is displayed, review the terms of use and select the checkbox, if desired. This feature allows large language model (LLM) inferencing and the storage of associated pseudonymized data to occur outside the EU Data Boundary during periods of peak demand. For more information, see [European Union Data Boundary (EUDB) flex routing](https://go.microsoft.com/fwlink/?linkid=2356281).
 
 1. Select **Save**.
 
