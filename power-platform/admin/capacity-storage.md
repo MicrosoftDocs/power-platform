@@ -209,31 +209,31 @@ You can track and manage Dataverse capacity in the **Licenses** section of the P
 
 In the **Usage per storage type** tile, you can view the consumption of your database, log, and file storage. This section displays your prepaid entitled capacity along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a pay-as-you-go plan.
 
-The tile provides the following details for Database, File, and Log storage:
+The tile provides the following details for database, file, and log storage:
 
-  - Total prepaid entitlement — Database and File capacity can be pooled across Dataverse and Operations workloads respectively. Log entitlement is provided separately for
+- **Total prepaid entitlement**: Database and file capacity can be pooled across **Dataverse** and **Operations** workloads respectively. Log entitlement is provided separately for
   Dataverse only.
-  - Total consumption — Combined usage from both Dataverse and Finance & Operations environments.
-  - Reserved capacity — Capacity reserved for specific environments. Currently applicable to Dataverse only.
-  - Pay-As-You-Go (PayGo) usage — Any consumption that exceeds prepaid entitlement and is billed under a PayGo plan.
+- **Total consumption**: Combined usage from both Dataverse and finance and operations environments.
+- **Reserved capacity**: Capacity reserved for specific environments. Currently applicable to Dataverse only.
+- **Pay-as-you-go usage**: Any consumption that exceeds prepaid entitlement and is billed under a pay-as-you-go plan.
     
-Dataverse - Database capacity : tracks structured data stored directly in Dataverse — including table rows, metadata, and relational data created by Power Apps, Power Automate, Dynamics 365 customer engagement apps (Sales, Service, Marketing), and custom model-driven apps.
+**Dataverse - Database capacity**: Tracks structured data stored directly in Dataverse, including table rows, metadata, and relational data created by Power Apps, Power Automate, Dynamics 365 customer engagement apps (Dynamics 365 Sales, Dynamics 365 Service, Dynamics 365 Marketing), and custom model-driven apps.
 
-Operations - Database capacity: tracks structured data stored in Finance & Operations environments — including Dynamics 365 Finance, Supply Chain Management, Project Operations, and Commerce.
+**Operations - Database capacity**: Tracks structured data stored in finance and operations environments, including Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Project Operations, and Dynamics 365 Commerce.
 
 Although displayed separately in the admin center, Dataverse and Operations database capacity form a single combined pool for enforcement purposes. Similarly, Dataverse and Operations file capacity are pooled together. This means:
   - Your total Database entitlement covers both Dataverse and Operations database usage combined.
   - Your total File entitlement covers both Dataverse and Operations file usage combined.
   - Log entitlement is tracked separately for Dataverse only.
 
- Select any of the following categories to view a day-by-day usage trend for that storage type:
-  - Dataverse – Database
-  - Operations – Database
-  - Dataverse – File
-  - Operations – File
-  - Dataverse – Log
+Select any of the following categories to view a day-by-day usage trend for that storage type:
+- Dataverse – Database
+- Operations – Database
+- Dataverse – File
+- Operations – File
+- Dataverse – Log
 
-Select "Dataverse capacity per license" in the Summary (Dataverse & Operations) File usage tab to see a detailed breakdown of how your entitlement was calculated — including base capacity and per-user license accruals.
+Select the **See Dataverse capacity per license** button in the **Summary (Dataverse & Operations) Database usage** tab to see a detailed breakdown of how your entitlement was calculated, including base capacity and per-user license accruals.
 
 #### Top environment consuming storage
 
