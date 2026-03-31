@@ -19,7 +19,7 @@ This article describes the fields specific to Copilot Studio agents (`microsoft.
 | `properties.ownerId` | string | The object ID of the resource owner. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.environmentId` | string | The identifier of the environment that contains the resource. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.lastPublishedAt` | datetime | The date and time the agent was last published. Empty if the agent is still in draft. | `2026-01-15T10:30:00Z` | Generally available |
-| `properties.createdIn` | string | The authoring tool where the agent was created: `Copilot Studio` or `Microsoft 365 Copilot Agent Builder`. | `Copilot Studio` | Generally available |
+| `properties.createdIn` | string | The authoring tool where the agent was created: Copilot Studio or Microsoft 365 Copilot Agent Builder. | `Copilot Studio` | Generally available |
 | `properties.schemaName` | string | The Dataverse schema name. Available for Copilot Studio agents and Microsoft 365 Copilot Agent Builder agents. | `cr5e3_agentName` | Generally available |
 | `properties.isQuarantined` | boolean | Whether the agent is quarantined. | `false` | Preview |
 | `properties.quarantinedAt` | datetime | The date and time the agent was last quarantined. | `2026-02-01T08:00:00Z` | Preview |
