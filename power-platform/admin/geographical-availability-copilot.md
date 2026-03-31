@@ -111,9 +111,11 @@ To turn on data movement across regions, Bing search, Microsoft 365 services, an
 
 1. If your environment is in the EU, the **Allow flex routing during periods of peak load** checkbox is displayed:
 
-    - If the **Allow flex routing during periods of peak load** checkbox is displayed, but you can't select it, that indicates that this feature has been turned off in the Microsoft 365 admin console. For more information, see [European Union Data Boundary (EUDB) flex routing](https://go.microsoft.com/fwlink/?linkid=2356281).
+    - If the **Allow flex routing during periods of peak load** checkbox is displayed, but you can't select it, that indicates that this feature has been turned off in the Microsoft 365 admin center.
 
-    - If the **Allow flex routing during periods of peak load** checkbox is displayed, review the terms of use and select the checkbox, if desired. For more information, see [European Union Data Boundary (EUDB) flex routing](https://go.microsoft.com/fwlink/?linkid=2356281).
+    - If the **Allow flex routing during periods of peak load** checkbox is displayed, review the terms of use and select the checkbox, if desired.
+
+    For more information, see [European Union Data Boundary (EUDB) flex routing](https://go.microsoft.com/fwlink/?linkid=2356281).
 
 1. Select **Save**.
 
