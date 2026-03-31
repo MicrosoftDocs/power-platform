@@ -154,6 +154,8 @@
                   href: tutorials/github-actions-build.md
                 - name: Automate deployment using GitHub Actions
                   href: tutorials/github-actions-deploy.md
+                - name: Use OIDC/FIC authentication with GitHub Actions
+                  href: tutorials/github-actions-oidc-fic.md
         - name: Work with solution components
           items:
             - name: Microsoft Power Apps component framework
