@@ -30,8 +30,8 @@ Dataverse is available in developer environments, and these environments are [Ma
 > [!IMPORTANT]
 >
 > - By default, all developer environments created through environment routing are managed.
-> - Managed Environments isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
-> - **Non-managed** developer environments are **unaffected** by this feature. Learn more about the developer environment and developer plan in [About the Power Apps Developer Plan](../developer/plan.md).
+> - Managed Environments isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [Power Apps Developer Plan Guide: Features and Benefits](../developer/plan.md).
+> - **Non-managed** developer environments are **unaffected** by this feature. Learn more about the developer environment and developer plan in [Power Apps Developer Plan Guide: Features and Benefits](../developer/plan.md).
 
 ## Multi-rule environment routing
 
