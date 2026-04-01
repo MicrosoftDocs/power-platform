@@ -19,7 +19,7 @@ The Power Platform admin center provides unified notification and announcement e
 
 ##  Requirements
 
-To see the **Notifications** icon (🔔) and the **Announcements** icon (📣) in the admin center header during preview, you must be assigned one of the following Microsoft Entra ID admin roles:
+To see the **Notifications** icon (🔔) and the **Announcements** icon (📣) in the Power Platform admin center toolbar during preview, you must be assigned one of the following Microsoft Entra ID admin roles:
 
 - Power Platform Administrator
 - Dynamics 365 Administrator
@@ -28,13 +28,13 @@ To see the **Notifications** icon (🔔) and the **Announcements** icon (📣) i
 Both notifications and announcements provide role-based, severity-prioritized communications to Power Platform, Dynamics 365, and Global administrators.
 
 > [!TIP]
-> Notifications and announcements are preview features. To access preview features, be sure to enable preview features in the Power Platform admin center. To learn more, see [What are preview features and how do I enable them?](what-are-preview-features-how-do-i-enable-them.md).
+> Notifications and announcements is a preview feature. To access preview features, be sure to enable preview features in the Power Platform admin center. To learn more, see [What are preview features and how do I enable them?](what-are-preview-features-how-do-i-enable-them.md).
 
 ## Notifications
 
-   The **Notifications** pane shows tenant-specific alerts that require administrative awareness or action. These notifications are operational, compliance-driven, or capacity-related and  help admins respond quickly to issues affecting their Power Platform environments.
+Notifications are tenant-specific alerts that require administrative awareness or action. These notifications are operational, compliance-driven, or capacity-related and  help you respond quickly to issues affecting your Power Platform environments.
 
-You can view different types of notifications in the *Notifications pane*:
+As an admin, you can view different types of notifications in the **Notifications** pane:
 
 | Category                 | Examples                               |
 |--------------------------|----------------------------------------|
@@ -42,7 +42,7 @@ You can view different types of notifications in the *Notifications pane*:
 | **Dataverse Storage**    | Storage nearing limits, overage, etc. |
 
 
-As an admin, you can prioritize notifications by severity:
+You can prioritize notifications by severity:
 
 - **Info**: Informational notices, optional recommendations, non-urgent updates.
 - **Warning**: Potential problems, approaching thresholds, recommended actions.
@@ -52,7 +52,7 @@ As an admin, you can prioritize notifications by severity:
 
 To open and view the **Notifications** pane:
 
-1.  Open the **Power Platform admin center** and select the **bell icon (🔔)** in the upper-right corner of the header to open the **Notifications** pane. It shows:
+1.  Open the **Power Platform admin center** and select the **bell icon (🔔)** in the upper-right corner of the toolbar to open the **Notifications** pane. The pane shows:
 
     - New notifications with *unread indicators*.
     - Notification titles and summaries.
@@ -79,13 +79,13 @@ When you create a new notification, a **toast notification** appears briefly in 
 - Alert you to a new notification.
 - Auto-dismiss after about 15 seconds.
 
-Select a **toast notification** to open the full notification on the **Notifications** pane.
+Select a **toast notification** to open the full notification.
 
 ## Announcements
 
-The **Announcements** pane delivers product-wide updates, feature announcements, and informational communications that aren't tenant-specific but are relevant to Power Platform admins. Announcement messages are informational, promotional, or educational and typically don't require immediate action.
+Announcements are product-wide updates, feature announcements, and informational communications that aren't tenant-specific but are relevant to Power Platform admins. Announcement messages are informational, promotional, or educational and typically don't require immediate action.
 
-You can view different types of announcements on the **Announcements** pane:
+As an admin, you can view different types of announcements on the **Announcements** pane:
 
 | Category | Examples |
 |----|----|
@@ -97,7 +97,7 @@ You can view different types of announcements on the **Announcements** pane:
 
 To open and view the **Announcements** pane:
 
-1.  Open the **Power Platform admin center**. Select the **megaphone icon (📣)** in the upper-right corner of the header to open the **Announcements** pane. The pane shows:
+1.  Open the **Power Platform admin center**. Select the **megaphone icon (📣)** in the upper-right corner of the toolbar to open the **Announcements** pane. The pane shows:
 
     - Announcement title
     - Brief summary
