@@ -112,7 +112,7 @@ Within the Power Platform admin center, the primary delivery mechanism for notif
 
 ## Centralized notification service
 
-A **centralized notification service** powers Power Platform admin center notifications and announcements. This service:
+A **centralized notification service** powers Power Platform admin center notifications. This service:
 
 - Ingests events from Power Platform services such as Dataverse, licensing, capacity, compliance, and ALM.
 - Applies expiry and de-duplication logic to prevent stale or redundant alerts.
@@ -122,28 +122,31 @@ This shared service architecture ensures consistency across the Power Platform a
 
 ## Relationship to other notification systems
 
-Power Platform admin center notifications and announcements complement other Microsoft 365 notification systems and Power Platform monitoring tools to provide a comprehensive view of tenant health and activity.
+Power Platform admin center notifications complement other Microsoft 365 notification systems and Power Platform monitoring tools to provide a comprehensive view of tenant health and activity.
 
-### Microsoft 365 Message Center
+### Microsoft 365 Message center
 
-*Microsoft 365 Message Center* is the authoritative source for planned changes, deprecations, and major service updates across Microsoft 365, including Power Platform. While Message Center content isn't directly embedded in Power Platform admin center today, admin center notifications complement Message Center by surfacing **tenant-specific alerts** that aren't appropriate for broadcast communications.
+*Microsoft 365 Message center* is the authoritative source for planned changes, deprecations, and major service updates across Microsoft 365, including Power Platform. While Message center content isn't directly embedded in Power Platform admin center today, admin center notifications complement Message Center by surfacing **tenant-specific alerts** that aren't appropriate for broadcast communications.
 
 **When to use each**:
 
-- Go to **Microsoft 365 Message Center** for planned changes, feature roll outs, breaking changes, or deprecations.
-- Go to the **Power Platform admin center Notifications** pane for tenant-specific issues, capacity alerts, compliance violations, or operational failures.
+- Go to **Microsoft 365 Message center** in the Microsoft 365 admin center for planned changes, feature roll outs, breaking changes, or deprecations. In the Microsoft 365 admin center, select **Health** > **Message center**.
+- Go to **Notifications** in the Power Platform admin center for tenant-specific issues, capacity alerts, compliance violations, or operational failures. In the Power Platform admin center, select the **Notifications** icon (🔔).
 
-### Service Health
+### Service health
 
-*Service Health* provides incident notifications, advisories, and post-incident reports for Power Platform services. While Service Health is accessed via the Microsoft 365 Admin Center, future Power Platform admin center updates will integrate Service Health signals more tightly into the notification experience.
+*Service health* provides incident notifications, advisories, and post-incident reports for Power Platform services. You can view service health in the Power Platform admin center by going to the navigation pane and selecting **Support** > **Service health**. Future Power Platform admin center updates will integrate service health signals more tightly into the notification experience. You can also the health of Microsoft services in the Microsoft 365 admin center. For more information, go to:
+
+- [How do I check my online service health?](/power-platform/admin/check-online-service-health)
+- [How to check Microsoft 365 service health](/microsoft-365/admin/manage/service-health?view=o365-worldwide).
 
 ### Monitor \> Alerts
 
-In the *Monitor* section in Power Platform admin center, the *Alerts* feature enables admins to create *custom, metric-based alerts* for Microsoft Power Apps, Microsoft Power Automate, and Microsoft Copilot Studio. These rule-based alerts are separate from the centralized Notification Center but might appear as notifications in the future.
+In the **Monitor** section in Power Platform admin center, the **Alerts** feature enables admins to create *custom, metric-based alerts* for Microsoft Power Apps, Microsoft Power Automate, and Microsoft Copilot Studio. These rule-based alerts are separate from the centralized Notification Center but might appear as notifications in the future.
 
 ## What's coming next
 
-The Power Platform admin center notifications and announcements service is evolving toward a comprehensive **Action Center** model that releases new features to complement the existing experiences and make the notifications and announcements service a comprehensive platform.
+The Power Platform admin center notifications service is evolving toward a comprehensive **Action Center** model that releases new features to complement the existing experiences and make the notifications service a comprehensive platform.
 
 ## Frequently asked questions
 
