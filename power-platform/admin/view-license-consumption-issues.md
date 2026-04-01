@@ -9,6 +9,7 @@ ms.subservice: admin
 ms.author: ampatra
 contributors:
  - ampatra
+ - sandhan
  - sericks
  - syalandur
 ms.contributors:
@@ -103,9 +104,19 @@ The **Download Reports** button, near the top of the page, allows you to export 
 
 - **Active users**: Identify which app was launched by a user, last app launch details, and whether an app pass, pay-as-you-go, or subscribed license was used. 
 
-- **All licensed users**: List of all users who have been assigned a license. 
+- **All licensed users**: List of all users who have been assigned a license.
 
-With these exports, you can identify users who have been assigned licenses, but haven't been using them to launch apps. 
+With these exports, you can identify users who have been assigned licenses, but haven't been using them to launch apps.
+
+- **Users requiring licenses in managed environments**: Identify users that have launched apps in managed environments without an appropriate license. See [Managed Environment Licensing requirements](/power-platform/admin/managed-environment-licensing) for more details.
+> [!NOTE]
+> The report shows a list of users based on their app launch activity. Users who have not launched an app in the selected month they will be excluded from the report.
+>
+> Known Issues:
+> - All entries of users launching apps across all managed environments are shown. To identify the unique list of requiring licenses, you can use the the [Remove duplicates feature]([url](https://support.microsoft.com/office/find-and-remove-duplicates-00e35bea-b46a-4d5d-b28e-66a552dc138d)) in Microsot Excel  
+> - Users who has been assigned an appropriate license in the current month will continue to show in the report with their older app launch entries with their previous licenses. These users will be removed from the subsequent month's report as long sa they continue to have the appropriate licenses assigned.
+
+
 
 ## View license consumption for environment  
 
