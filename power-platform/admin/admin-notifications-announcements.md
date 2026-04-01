@@ -52,7 +52,7 @@ As an admin, you can prioritize notifications by severity:
 
 To open and view the **Notifications** pane:
 
-1.  Open the **Power Platform admin center** and select the **bell icon (🔔)** in the upper-right corner of the header to open the Notifications pane. It shows:
+1.  Open the **Power Platform admin center** and select the **bell icon (🔔)** in the upper-right corner of the header to open the **Notifications** pane. It shows:
 
     - New notifications with *unread indicators*.
     - Notification titles and summaries.
@@ -108,7 +108,7 @@ To open and view the **Announcements** pane:
 
 The Power Platform admin center delivers notifications and announcements through multiple channels to ensure admins stay informed.
 
-Within the Power Platform admin center, the primary delivery mechanism for notifications and announcements is **in-product notification and announcement centers**. Notifications appear in real-time within the admin center, so admins stay informed without leaving their workflow.
+Within the Power Platform admin center, the primary delivery mechanism for notifications and announcements is **in-product notification and announcement centers**. Notifications and announcements appear in real-time within the admin center, so admins stay informed without leaving their workflow.
 
 ## Centralized notification service
 
