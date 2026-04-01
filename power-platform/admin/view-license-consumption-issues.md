@@ -27,11 +27,11 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-The Power Apps license consumption experience in the Power Platform admin center lets admins track and manage licensing for Power Apps. It helps answer key questions such as: 
+The Power Apps license consumption experience in the Power Platform admin center helps admins track and manage licensing for Power Apps. It helps answer key questions such as: 
 
-- How many Power Apps licenses are purchased? 
+- How many Power Apps licenses did you purchase? 
 - How many of those licenses are assigned to users? 
-- What types of licenses are being used to launch apps? 
+- What types of licenses are used to launch apps? 
 - How many users are actively consuming Power Apps? 
 - Who are the users actively consuming Power Apps? 
 - Are there users who need standalone Power Apps?
@@ -47,30 +47,30 @@ The Power Apps license consumption experience in the Power Platform admin center
 
 ### Per user licenses 
 
-The **Per user licenses** web part displays a summary count of all per-user licenses purchased that provide Power Apps entitlement, along with assignment and usage. 
+The **Per user licenses** web part displays a summary count of all per-user licenses you purchased that provide Power Apps entitlement, along with assignment and usage. 
 
 The web part contains the following columns:
 
-- **License name**: Name of the license providing Power Apps entitlement, such as Power Apps Premium or Dynamics 365 licenses.
-- **Licenses used**: unique count of licensed users who launched a Power App at least once in the last 90 days.
-- **Assigned licenses**: How many licenses have been assigned to users. 
+- **License name**: Name of the license that provides Power Apps entitlement, such as Power Apps Premium or Dynamics 365 licenses.
+- **Licenses used**: Unique count of licensed users who launched a Power App at least once in the last 90 days.
+- **Assigned licenses**: Number of licenses assigned to users. 
 - **Purchased licenses**: Total number of licenses available.
 
-:::image type="content" source="media/per-user-licenses.png" alt-text="The web part displays a summary count of all per-user licenses purchased that provide Power Apps entitlement, along with assignment and usage." lightbox="media/per-user-licenses.png":::
+:::image type="content" source="media/per-user-licenses.png" alt-text="Screenshot of the web part displaying a summary count of all per-user licenses purchased that provide Power Apps entitlement, along with assignment and usage." lightbox="media/per-user-licenses.png":::
 
 ### Per app licenses 
 
-The **Per app lienses** web part shows allocation and purchased license count of per-app licenses. 
+The **Per app licenses** web part shows allocation and purchased license count of per-app licenses. 
 
 The web part contains the following columns:
 
-- **License name**: Name of the license providing Power Apps entitlement, in this case per app.
+- **License name**: Name of the license that provides Power Apps entitlement, in this case per app.
 
 - **Allocated licenses**: Number of per-app licenses assigned to different environments. 
 
 - **Purchased licenses**: Total number of per-app licenses available. 
 
-The web part allows you to use **Manage capacity** link to adjust allocations. 
+Use the **Manage capacity** link to adjust allocations. 
 
 ### Pay-as-you-go plans 
 
@@ -82,44 +82,44 @@ The web part contains the following columns:
 
 - **Manage billing plans**: Number of active billing plans. 
 
-The web part allows you to use **Manage capacity** link to review or update Azure subscription settings. 
+Use the **Manage capacity** link to review or update Azure subscription settings. 
 
 ### Monthly user license consumption 
 
 The **Monthly user license consumption** web part shows month-over-month trends for per-user license consumption. 
 
-The web part contains a bar chart showing active users per license type over recent months. 
+The web part contains a bar chart that shows active users per license type over recent months. 
 
-:::image type="content" source="media/monthly-user-license-consumption.png" alt-text="The web part contains a bar chart showing active users per license type over recent months." lightbox="media/monthly-user-license-consumption.png":::
+:::image type="content" source="media/monthly-user-license-consumption.png" alt-text="Screenshot of the web part containing a bar chart showing active users per license type over recent months." lightbox="media/monthly-user-license-consumption.png":::
 
 ### Monthly per app license consumption 
 
 The **Monthly per app license consumption** web part displays consumption trends for per-app licenses. The graph shows how many per-app licenses are consumed and how many app usages are billed to pay-as-you-go each month. The app passes consumption resets during end of the month.  
 
-:::image type="content" source="media/monthly-per-app-license-consumption.png" alt-text="The graph shows how many per-app licenses are consumed and how many app usages are billed to pay-as-you-go each month. The app passes consumption resets during end of the month." lightbox="media/monthly-per-app-license-consumption.png":::
+:::image type="content" source="media/monthly-per-app-license-consumption.png" alt-text="Screenshot of the graph showing how many per-app licenses are consumed and how many app usages are billed to pay-as-you-go each month. The app passes consumption resets during end of the month." lightbox="media/monthly-per-app-license-consumption.png":::
 
 ## Additional admin options 
  
-The **Download Reports** button, near the top of the page, allows you to export detailed license consumption data. The following reports can be downloaded:
+Use the **Download Reports** button near the top of the page to export detailed license consumption data. You can download the following reports:
 
-- **Active users**: Identify which app was launched by a user, last app launch details, and whether an app pass, pay-as-you-go, or subscribed license was used. 
+- **Active users**: See which app a user launched, the last app launch details, and whether the user used an app pass, pay-as-you-go, or subscribed license. 
 
-- **All licensed users**: List of all users who have been assigned a license.
+- **All licensed users**: View a list of all users who are assigned a license.
 
-With these exports, you can identify users who have been assigned licenses, but haven't been using them to launch apps.
+By using these exports, you can find users who are assigned licenses but aren't using them to launch apps.
 
-- **Users requiring licenses in Managed Environments**: Identify users that have launched apps in Managed Environments without an appropriate license. See [Managed Environment Licensing requirements](managed-environment-licensing.md) for more details.
+- **Users requiring licenses in Managed Environments**: See users that launched apps in Managed Environments without an appropriate license. For more information, see [Managed Environment Licensing requirements](managed-environment-licensing.md).
 
 > [!NOTE]
-> The report shows a list of users based on their app launch activity. Users who have not launched an app in the selected month are excluded from the report.
+> The report shows a list of users based on their app launch activity. The report excludes users who didn't launch an app in the selected month.
 
 ### Known issues
-- All entries of users launching apps across all Managed environments are shown. To identify the unique list of users requiring licenses, use the [Remove duplicates feature](https://support.microsoft.com/office/find-and-remove-duplicates-00e35bea-b46a-4d5d-b28e-66a552dc138d) in Microsot Excel.  
-- Users who have been assigned an appropriate license in the current month, continue to show in the report with their older app launch entries with their previous licenses. These users will be removed from the subsequent month's report if they continue to have the appropriate licenses assigned.
+- The report shows all entries of users launching apps across all Managed environments. To identify the unique list of users requiring licenses, use the [Remove duplicates feature](https://support.microsoft.com/office/find-and-remove-duplicates-00e35bea-b46a-4d5d-b28e-66a552dc138d) in Microsoft Excel.  
+- The report shows users with older app launch entries that use their previous licenses, even if they're assigned an appropriate license in the current month. The report removes these users from the subsequent month's report if they continue to have the appropriate licenses assigned.
 
 ## View license consumption for environment  
 
-The Environments tab within the **Licensing** area for Power Apps allows admins to track license consumption for the selected environment. 
+The **Environments** tab within the **Licensing** area for Power Apps helps admins track license consumption for the selected environment. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
@@ -131,8 +131,8 @@ The Environments tab within the **Licensing** area for Power Apps allows admins 
 
 1. Select the appropriate environment.
 
-## Who can access set it up 
+## Who can access and set up 
 
-Power Platform admins and Dynamics 365 admins can access summary view, environment view, and can allocate app passes.
+Power Platform admins and Dynamics 365 admins can access the summary view and environment view, and they can allocate app passes.
 
-The environment admin can access the environment view. Tenant admins can also allow environment admins to access summary view by updating the **Tenant licensing summary view** setting in Power Platform settings. 
+Environment admins can access the environment view. Tenant admins can also allow environment admins to access the summary view by updating the **Tenant licensing summary view** setting in Power Platform settings. 
