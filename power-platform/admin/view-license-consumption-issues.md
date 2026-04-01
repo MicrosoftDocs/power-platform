@@ -2,7 +2,7 @@
 title: View license consumption for Power Apps (preview)
 description: Learn how to view your organization's Power Apps license consumption and find potential license issues. 
 author: amiyapatr-zz
-ms.date: 12/04/2025
+ms.date: 04/01/2026
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -108,15 +108,14 @@ The **Download Reports** button, near the top of the page, allows you to export 
 
 With these exports, you can identify users who have been assigned licenses, but haven't been using them to launch apps.
 
-- **Users requiring licenses in managed environments**: Identify users that have launched apps in managed environments without an appropriate license. See [Managed Environment Licensing requirements](/power-platform/admin/managed-environment-licensing) for more details.
+- **Users requiring licenses in Managed Environments**: Identify users that have launched apps in Managed Environments without an appropriate license. See [Managed Environment Licensing requirements](managed-environment-licensing.md) for more details.
+
 > [!NOTE]
-> The report shows a list of users based on their app launch activity. Users who have not launched an app in the selected month they will be excluded from the report.
->
-> Known Issues:
-> - All entries of users launching apps across all managed environments are shown. To identify the unique list of requiring licenses, you can use the the [Remove duplicates feature]([url](https://support.microsoft.com/office/find-and-remove-duplicates-00e35bea-b46a-4d5d-b28e-66a552dc138d)) in Microsot Excel  
-> - Users who has been assigned an appropriate license in the current month will continue to show in the report with their older app launch entries with their previous licenses. These users will be removed from the subsequent month's report as long sa they continue to have the appropriate licenses assigned.
+> The report shows a list of users based on their app launch activity. Users who have not launched an app in the selected month are excluded from the report.
 
-
+### Known issues
+- All entries of users launching apps across all Managed environments are shown. To identify the unique list of users requiring licenses, use the [Remove duplicates feature](https://support.microsoft.com/office/find-and-remove-duplicates-00e35bea-b46a-4d5d-b28e-66a552dc138d) in Microsot Excel.  
+- Users who have been assigned an appropriate license in the current month, continue to show in the report with their older app launch entries with their previous licenses. These users will be removed from the subsequent month's report if they continue to have the appropriate licenses assigned.
 
 ## View license consumption for environment  
 
