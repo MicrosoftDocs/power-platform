@@ -258,7 +258,7 @@ Users aren't blocked from using an app or flow for occasional and reasonable ove
 
 Here are some things you can do if you exceeded the limits of your license:
 
-- Revisit your design and check for places that can help reduce the number of actions being called. Learn more in [Redesign your flow to use fewer actions and less data](/troubleshoot/power-platform/power-automate/flow-run-issues/troubleshoot-slow-running-flows.md#resolution-1-redesign-your-flow-to-use-fewer-actions-and-less-data).
+- Revisit your design and check for places that can help reduce the number of actions being called. Learn more in [Redesign your flow to use fewer actions and less data](/troubleshoot/power-platform/power-automate/flow-run-issues/troubleshoot-slow-running-flows#resolution-1-redesign-your-flow-to-use-fewer-actions-and-less-data).
 - If the flow is already optimized, but it uses many actions because of the nature of the business, consider a Process license. The Process license provides the highest action entitlement available (250,000 actions per day).
     - If the flow already has a Process license and still exceeds 250,000 actions, you can [stack additional Process licenses](#can-i-assign-multiple-process-licenses-to-a-single-cloud-flow) on the same flow — each adds 250,000 actions per day.
     - Use [Power Platform request reports in the admin center](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview) to identify high-usage flows that need additional capacity.
