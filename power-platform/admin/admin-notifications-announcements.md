@@ -19,13 +19,13 @@ The Power Platform admin center provides unified notification and announcement e
 
 ##  Requirements
 
-To open the **Notifications** and **Announcements** panes in the Power Platform admin center, you need to be a user with a specific Microsoft Entra ID admin role assigned to you. These roles include:
+You must be assigned one of the following Microsoft Entra ID admin roles to see the **Notifications** icon (🔔) and the **Announcements** icon (📣) in the admin center header during the preview. These roles include:
 
 - Power Platform Administrator
 - Dynamics 365 Administrator
 - Global Administrator
 
-Both notifications and announcements provide role-based, severity-prioritized communications to Power Platform, Dynamics 365, and Global administrators. You must be assigned one of these admin roles to see the **Notifications** icon (🔔) and the **Announcements** icon (📣) in the admin center header during the preview.
+ Both notifications and announcements provide role-based, severity-prioritized communications to Power Platform, Dynamics 365, and Global administrators.
 
 > [!TIP]
 > Notifications and announcements are preview features. To access preview features, be sure to enable preview features in the Power Platform admin center. To learn more, see [What are preview features and how do I enable them?](what-are-preview-features-how-do-i-enable-them.md).
