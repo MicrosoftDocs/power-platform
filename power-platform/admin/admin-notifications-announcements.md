@@ -97,7 +97,7 @@ As an admin, you can view different types of announcements on the **Announcement
 
 To open and view the **Announcements** pane:
 
-1.  Open the **Power Platform admin center**. Select the **megaphone icon (📣)** in the upper-right corner of the toolbar to open the **Announcements** pane. The pane shows:
+1.  Open the **Power Platform admin center** and select the **megaphone icon (📣)** in the upper-right corner of the toolbar to open the **Announcements** pane. The pane shows:
 
     - Announcement title
     - Brief summary
@@ -138,7 +138,7 @@ Power Platform admin center notifications complement other Microsoft 365 notific
 *Service health* provides incident notifications, advisories, and post-incident reports for Power Platform services. You can view service health in the Power Platform admin center by going to the navigation pane and selecting **Support** > **Service health**. Future Power Platform admin center updates will integrate service health signals more tightly into the notification experience. You can also the health of Microsoft services in the Microsoft 365 admin center. For more information, go to:
 
 - [How do I check my online service health?](/power-platform/admin/check-online-service-health)
-- [How to check Microsoft 365 service health](/microsoft-365/admin/manage/service-health?view=o365-worldwide).
+- [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
 
 ### Monitor \> Alerts
 
