@@ -27,14 +27,11 @@ To see the **Notifications** icon (🔔) and the **Announcements** icon (📣) i
 
 Both notifications and announcements provide role-based, severity-prioritized communications to Power Platform, Dynamics 365, and Global administrators.
 
-> [!TIP]
-> Notifications and announcements is a preview feature. To access preview features, be sure to enable preview features in the Power Platform admin center. To learn more, see [What are preview features and how do I enable them?](what-are-preview-features-how-do-i-enable-them.md).
-
 ## Notifications
 
 Notifications are tenant-specific alerts that require administrative awareness or action. These notifications are operational, compliance-driven, or capacity-related and  help you respond quickly to issues affecting your Power Platform environments.
 
-As an admin, you can view different types of notifications in the **Notifications** pane:
+As an admin, you can view different types of notifications in the **Notifications** pane. This table shows some examples of notifications you might see:
 
 | Category                 | Examples                               |
 |--------------------------|----------------------------------------|
@@ -42,7 +39,7 @@ As an admin, you can view different types of notifications in the **Notification
 | **Dataverse Storage**    | Storage nearing limits, overage, etc. |
 
 
-You can prioritize notifications by severity:
+You can view notifications by severity:
 
 - **Info**: Informational notices, optional recommendations, non-urgent updates.
 - **Warning**: Potential problems, approaching thresholds, recommended actions.
@@ -69,23 +66,23 @@ To open and view the **Notifications** pane:
 To manage notifications, use the following options:
 
 - **Mark as read**: Select *a notification* to automatically **mark it as read**. *Read* notifications stay in your history but lose the unread indicator.
-- **Dismiss**: Select the **Dismiss** button to remove a notification from your active list. Dismissed notifications move to your notification history and you can review them later.
+- **Dismiss**: Select the **Dismiss** button to remove a notification from your notifications list. 
 
 ### Work with toast notifications
 
-When you create a new notification, a **toast notification** appears briefly in the upper-right corner of the admin center. Toast notifications:
+When you receive a new notification, a **toast notification** appears briefly in the upper-right corner of the admin center. Toast notifications:
 
 - Appear automatically on *page refresh* or *sign in*.
 - Alert you to a new notification.
-- Auto-dismiss after about 15 seconds.
+- Auto-dismiss after about 60 seconds.
 
 Select a **toast notification** to open the full notification.
 
 ## Announcements
 
-Announcements are product-wide updates, feature announcements, and informational communications that aren't tenant-specific but are relevant to Power Platform admins. Announcement messages are informational, promotional, or educational and typically don't require immediate action.
+Announcements are product-wide updates, feature announcements, and informational communications that aren't tenant-specific. Announcement messages are informational, promotional, or educational and typically don't require immediate action.
 
-As an admin, you can view different types of announcements on the **Announcements** pane:
+As an admin, you can view different types of announcements on the **Announcements** pane. This table shows some examples of announcements you might see:
 
 | Category | Examples |
 |----|----|
@@ -104,22 +101,6 @@ To open and view the **Announcements** pane:
     - Publication date
 1.  Select an announcement to view the full message and any related links, such as Microsoft Learn documentation or blog posts.
 
-## Notification delivery channels
-
-The Power Platform admin center delivers notifications and announcements through multiple channels to ensure admins stay informed.
-
-Within the Power Platform admin center, the primary delivery mechanism for notifications and announcements is **in-product notification and announcement centers**. Notifications and announcements appear in real-time within the admin center, so admins stay informed without leaving their workflow.
-
-## Centralized notification service
-
-A **centralized notification service** powers Power Platform admin center notifications. This service:
-
-- Ingests events from Power Platform services such as Dataverse, licensing, capacity, compliance, and ALM.
-- Applies expiry and de-duplication logic to prevent stale or redundant alerts.
-- Enforces governance to control notification severity, frequency, and noise.
-
-This shared service architecture ensures consistency across the Power Platform admin center, Power Apps maker portal, and other first-party surfaces.
-
 ## Relationship to other notification systems
 
 Power Platform admin center notifications complement other Microsoft 365 notification systems and Power Platform monitoring tools to provide a comprehensive view of tenant health and activity.
@@ -133,26 +114,11 @@ Power Platform admin center notifications complement other Microsoft 365 notific
 - Go to **Microsoft 365 Message center** in the Microsoft 365 admin center for planned changes, feature roll outs, breaking changes, or deprecations. In the Microsoft 365 admin center, select **Health** > **Message center**.
 - Go to **Notifications** in the Power Platform admin center for tenant-specific issues, capacity alerts, compliance violations, or operational failures. In the Power Platform admin center, select the **Notifications** icon (🔔).
 
-### Service health
-
-*Service health* provides incident notifications, advisories, and post-incident reports for Power Platform services. You can view service health in the Power Platform admin center by going to the navigation pane and selecting **Support** > **Service health**. Future Power Platform admin center updates will integrate service health signals more tightly into the notification experience. You can also the health of Microsoft services in the Microsoft 365 admin center. For more information, go to:
-
-- [How do I check my online service health?](/power-platform/admin/check-online-service-health)
-- [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
-
-### Monitor \> Alerts
-
-In the **Monitor** section in Power Platform admin center, the **Alerts** feature enables admins to create *custom, metric-based alerts* for Microsoft Power Apps, Microsoft Power Automate, and Microsoft Copilot Studio. These rule-based alerts are separate from the centralized Notification Center but might appear as notifications in the future.
-
-## What's coming next
-
-The Power Platform admin center notifications service is evolving toward a comprehensive **Action Center** model that releases new features to complement the existing experiences and make the notifications service a comprehensive platform.
-
 ## Frequently asked questions
 
 ### Can I customize which notifications I receive?
 
-Not at launch. In the initial release (March 2026 public preview), all admin-role users receive the same set of notifications based on their tenant activity. Future updates might include notification preferences and suppression controls.
+Not at launch. In the initial release (April 2026 public preview), all admin-role users receive the same set of notifications based on their tenant activity. Future updates might include notification preferences and suppression controls.
 
 ### Do notifications replace email notifications?
 
@@ -160,7 +126,7 @@ No. Power Platform admin center notifications and announcements *complement* ex
 
 ### What happens to dismissed notifications?
 
-In preview, dismissed notifications are removed from your notifications and announcements and are permanently deleted. In future releases, there will be an experience to view dismissed notifications and announcements and perform filtering and search on the notifications received.
+In preview, dismissed notifications are removed from your notifications and announcements and are permanently deleted.
 
 ### Can I receive notifications in Microsoft Teams?
 
