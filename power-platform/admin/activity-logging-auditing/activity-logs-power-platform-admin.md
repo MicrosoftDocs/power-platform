@@ -254,6 +254,8 @@ Here's an example of the payload of metadata you can expect from one of the even
 > - **Updated DLP Policy**
 > - **Deleted DLP Policy**
 
+:::image type="content" source="https://github.com/user-attachments/assets/07f4b62b-6045-4e81-a08b-0e18415c4b1a" alt-text="Screenshot of the Microsoft Purview audit search page showing the Activities - friendly names dropdown. The three deprecated Power Platform DLP activity names — Created DLP Policy, Updated DLP Policy, and Deleted DLP Policy — are highlighted in a red box." lightbox="https://github.com/user-attachments/assets/07f4b62b-6045-4e81-a08b-0e18415c4b1a":::
+
 All the data policy events appear under the `GovernanceApiPolicyOperation` activity. Each activity event contains a property collection with the following properties:
 
 - Operation name
