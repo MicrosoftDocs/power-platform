@@ -247,6 +247,13 @@ Here's an example of the payload of metadata you can expect from one of the even
 > - Activity logging for data policies isn't currently available in sovereign clouds.
 > - To access data policy logs, you need the appropriate Microsoft licenses. Go to [Microsoft Purview service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-purview-service-description) and [Microsoft Purview licensing guidance](https://www.microsoft.com/licensing/guidance/Microsoft-Purview) to learn more.
 
+> [!IMPORTANT]
+> The following activity names in the **Activities - friendly names** dropdown in Microsoft Purview are deprecated and should no longer be used. They appear under the **Power Platform DLP activities** group:
+>
+> - **Created DLP Policy**
+> - **Updated DLP Policy**
+> - **Deleted DLP Policy**
+
 All the data policy events appear under the `GovernanceApiPolicyOperation` activity. Each activity event contains a property collection with the following properties:
 
 - Operation name
@@ -267,12 +274,9 @@ The data policy events listed in this table are sent to Microsoft Purview.
 | Create Connector Configurations | A connector configuration is created for the data policy.|
 | Update Connector Configurations | A connector configuration is updated for the data policy.|
 | Delete Connector Configurations | A connector configuration is deleted for the data policy.|
-| Create Policy Scope | A new policy scope is created.|
-| Update Policy Scope | A policy scope is updated.|
-| Delete Policy Scope | A policy scope is deleted.|
-| Create Exempt Resources | An exempt resources list is created for the data policy.|
-| Update Exempt Resources | An exempt resources list is updated for the data policy.|
-| Delete Exempt Resources | An exempt resources list is deleted for the data policy.|
+| Create Exempt Resources (Deprecated) | An exempt resources list is created for the data policy.|
+| Update Exempt Resources (Deprecated) | An exempt resources list is updated for the data policy.|
+| Delete Exempt Resources (Deprecated) | An exempt resources list is deleted for the data policy.|
 | Create connector blocking policy | A new connector blocking policy is created.|
 | Update connector blocking policy | A connector blocking policy is updated.|
 | Delete connector blocking policy | A connector blocking policy is deleted.|
