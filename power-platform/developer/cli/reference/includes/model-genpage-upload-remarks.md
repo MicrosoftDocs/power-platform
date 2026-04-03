@@ -60,8 +60,8 @@ pac model genpage upload \
 | `--code-file` | Yes | Path to the `.tsx` source file to deploy. |
 | `--name` | New pages only | Display name shown in the app sitemap. |
 | `--page-id` | Updates only | GUID of the existing page to replace. |
-| `--data-sources` | Dataverse pages | Comma-separated list of Dataverse table logical names (e.g. `"account,contact"`). |
+| `--data-sources` | Dataverse pages | Comma-separated list of Dataverse table logical names (for example, `"account,contact"`). |
 | `--prompt` | Recommended | Natural language summary of what the page does. Stored for regeneration context. |
-| `--model` | Recommended | Model ID used to generate the page (e.g. `claude-sonnet-4-6`). |
+| `--model` | Recommended | Model ID used to generate the page (for example, `claude-sonnet-4-6`). |
 | `--agent-message` | Recommended | Description of what was built or changed. Stored as change history. |
 | `--add-to-sitemap` | New pages only | Adds the page to the app navigation automatically. Omit when updating. |
