@@ -60,6 +60,10 @@
                       href: update-apps-to-unified-interface.md
                     - name: Enable the hybrid experience
                       href: enable-hybrid-experience.md
+            - name: Admin notifications and announcements (preview)
+              items:
+              - name: Overview (preview)
+                href: admin-notifications-announcements.md
         - name: Licensing
           items:
             - name: Overview
@@ -480,6 +484,11 @@
                   href: power-platform-inventory.md
                 - name: Power Platform inventory API
                   href: inventory-api.md
+                - name: Power Platform inventory schema reference
+                  href: inventory-schema.md
+                  items:
+                    - name: Copilot Studio agents schema
+                      href: inventory-schema-copilot-studio-agents.md
         - name: Copilot
           items:
             - name: Track, manage, and scale Copilot adoption
@@ -1258,12 +1267,16 @@
               href: for-partners-delegated-administrator.md
         - name: Support
           items:
-            - name: Get Support
-              href: get-help-support.md
             - name: Support overview
               href: support-overview.md
+            - name: Get support
+              href: get-help-support.md
+            - name: Manage support requests
+              href: manage-support-requests.md
             - name: Use live chat with persistence
               href: live-chat-support.md
+            - name: Manage support requests
+              href: manage-support-requests.md
             - name: View known issues
               href: view-known-issues.md
             - name: View service health

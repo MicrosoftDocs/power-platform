@@ -56,7 +56,7 @@ Optional: The application ID to authenticate with.
 
 #### `--azureDevOpsFederated` `-adof`
 
-(Preview) Use Azure DevOps Federation for Service Principal Auth; requires --tenant and --applicationId arguments
+Use Azure DevOps Federation for Service Principal Auth; requires --tenant and --applicationId arguments
 
 This parameter requires no value. It's a switch.
 
@@ -96,7 +96,7 @@ Default environment (ID, url, unique name, or partial name).
 
 #### `--githubFederated` `-ghf`
 
-(Preview) Use GitHub Federation for Service Principal Auth; requires --tenant and --applicationId arguments
+Use GitHub Federation for Service Principal Auth; requires --tenant and --applicationId arguments
 
 This parameter requires no value. It's a switch.
 
