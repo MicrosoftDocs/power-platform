@@ -118,6 +118,8 @@ variables:
     value: 'https://yourprod.crm.dynamics.com'
   - name: TargetEnvironmentUrl
     value: 'https://yoursandbox.crm.dynamics.com'
+  - name: TargetEnvironmentName
+    value: 'My Sandbox'
   - name: FinOpsEnvironmentUrl
     value: 'https://yoursandbox.operations.dynamics.com'
   - name: DataPackagePath
@@ -142,7 +144,8 @@ stages:
               SourceEnvironmentUrl: '$(SourceEnvironmentUrl)'
               TargetEnvironmentUrl: '$(TargetEnvironmentUrl)'
               CopyType: 'FullCopy'
-              OverrideFriendlyName: false
+              OverrideFriendlyName: true
+              FriendlyName: '$(TargetEnvironmentName)'
               SkipAuditData: true
               MaxAsyncWaitTime: 360  # Wait up to 6 hours for the copy to complete
 
