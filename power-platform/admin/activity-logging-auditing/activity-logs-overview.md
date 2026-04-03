@@ -3,7 +3,7 @@ title: Overview of Power Platform activity logging and auditing in Microsoft Pur
 description: Learn what Microsoft Power Platform admin, maker, and user activities you can view in Microsoft Purview and how to turn on and configure activity logging auditing for each Power Platform environment.
 ms.component: pa-admin
 ms.topic: article
-ms.date: 02/09/2026
+ms.date: 04/03/2026
 author: grbarker
 ms.subservice: admin
 ms.author: grbarker
@@ -28,7 +28,7 @@ Integrating Microsoft Power Platform activity logs into Microsoft Purview auditi
 
 Developers can also access the activity logs through the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
 
-This overview article covers what Power Platform component activity logs you can view in Microsoft Purview, common schema elements, best practices, and prerequisites to review before you try to configure, access, and monitor Power Platform activity logs in the Microsoft Purview portal.
+This overview article covers what Power Platform component activity logs you can view in Microsoft Purview, common schema elements, best practices, and the prerequisite actions to take before you can monitor Power Platform activity logs in the Microsoft Purview portal.
 
 ## Monitor activity log data
 
@@ -67,26 +67,32 @@ To ensure you get the most out of Power Platform activity logs in Microsoft Purv
 
 ## Prerequisites
 
-Auditing needs to be configured and turned on for each Power Platform production environment you want to view in Microsoft Purview. A system admin or customizer only sees the option to turn on audit logging when the minimum Office licensing requirements are met. It's recommended that high-level admins review current subscriptions, licensing, configurations, and roles and make necessary updates to ensure auditing can be configured and users have the appropriate permissions. To get started, see:
+This section covers the prerequisite tasks to complete before viewing Power Platform activity logs in Microsoft Purview. Review and complete the following tasks to ensure you have the necessary licensing, permissions, and configurations in place:
+
+- [Review licensing and manage permissions](#review-licensing-and-manage-permissions).
+- [Configure and turn on auditing for each Power Platform environment](#configure-and-turn-on-auditing-for-each-power-platform-environment).
+- [Manage auditing in Microsoft Purview](#manage-auditing-in-microsoft-purview).
+
+### Review licensing and manage permissions
+
+To view Power Platform activity logs in Microsoft Purview, high-level admins need to review current licensing, configurations, and roles and make necessary updates to ensure auditing can be configured for and viewed in Microsoft Purview. To get started, see:
 
 - [Licensing resources and documents](https://www.microsoft.com/licensing/docs).
-- [Manage high privileged admin roles for Power Platform](/power-platform/admin/manage-high-privileged-admin-roles).
+- [Microsoft Purview service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-purview-service-description)
+- [Manage high privileged admin roles for Power Platform](../manage-high-privileged-admin-roles).
 - [Manage permissions for Microsoft Purview](/purview/purview-permissions).
 
-To turn on and configure auditing, a system admin or customizer needs to take the following steps outlined in the next sections:
-1. [Configure and turn on auditing for each Power Platform environment](#configure-and-turn-on-auditing-for-each-power-platform-environment).
-1. [Manage auditing in Microsoft Purview](#manage-auditing-in-microsoft-purview).
-
-## Configure and turn on auditing for each Power Platform environment
+### Configure and turn on auditing for each Power Platform environment
 
 A Power Platform system admin or customizer needs to configure auditing in the Power Platform admin center and then turn on the **Enable SAS Logging in Purview** setting for each Power Platform production environment so Microsoft Purview auditing solutions can access the environment's activity logs.
 
 > [!NOTE]
 >
+> - The option to turn on audit logging is only visible when the minimum Office licensing requirements are met.
 > - Microsoft Purview auditing solutions capture user activity logs only for production environments.
 > - **Power Platform admin activity collection is already enabled by default** on all tenants in Microsoft Purview. No configuration is needed.
 
-### Configure auditing for each environment
+#### Configure auditing for each environment
 
 Review [Configure auditing for an environment](/power-platform/admin/manage-dataverse-auditing#configure-auditing-for-an-environment) to learn how to configure auditing for each Power Platform production environment and its table and column data. Be sure to turn on activity logging (Read logs) at the environment level first, then turn on auditing for the environment's tables and columns.
 
@@ -95,11 +101,11 @@ For more information about configuring auditing, see:
 - [Configure auditing](/power-apps/developer/data-platform/auditing/configure)
 - [Auditing overview](/power-apps/developer/data-platform/auditing/overview)
 
-### Review and update assigned licenses
+#### Review and update assigned licenses
 
 Review all user, maker, admin, and agent licenses and update them as necessary to ensure all activities and interactions are logged accurately. For more information, see [Assign appropriate licenses](../assign-licenses.md).
 
-### Turn on the Enable SAS Logging in Purview setting for each environment
+#### Turn on the Enable SAS Logging in Purview setting for each environment
 
 > [!IMPORTANT]
 > Before you activate the Shared Access Signature (SAS) feature, add the `https://*.api.powerplatformusercontent.com` domain to the allowlist. If you don't, most SAS functionalities won't work.
@@ -117,9 +123,9 @@ To give Microsoft Purview access to Power Platform environment data, turn on the
 
 To learn more, you can watch [Turn on Purview audit logging](https://www.youtube.com/watch?v=UGys8QrnE4U) and read [Advanced security features](/admin/security/data-storage#advanced-security-features).
 
-## Manage auditing in Microsoft Purview
+### Manage auditing in Microsoft Purview
 
-After you take the steps to configure auditing for each Power Platform production environment and enable SAS logging, you're ready to set up Microsoft Purview. The following articles guide you through the process:
+After you configure auditing for each Power Platform production environment and enable SAS logging, you're ready to set up Microsoft Purview. The following articles guide you through the process:
 
 - [Verify the auditing status for your organization](/purview/audit-log-enable-disable#verify-the-auditing-status-for-your-organization).
 - [Turn on auditing](/purview/audit-log-enable-disable#turn-on-auditing) if it's not already turned on.
