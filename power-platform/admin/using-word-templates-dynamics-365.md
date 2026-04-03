@@ -3,7 +3,7 @@ title: Use Word templates to create standardized documents
 description: Learn how to create a standardized document with one click using Word templates in Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/17/2026
+ms.date: 04/03/2026
 author: chrisgarty
 ms.subservice: admin
 ms.custom: NewPPac
@@ -50,16 +50,15 @@ Access requires sufficient permissions, such as the System Administrator or Syst
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment and then select **Settings** in the command bar.
 1. Expand **Templates**, and then select **Document templates**.
-1. In the **Available Templates View** page, go to the command bar and select **New** to open the **Create template from Dynamics 365** dialog box.
-1. In the **Create template from Dynamics 365** dialog, select **Word Template**.
-1. Select the entity for which you want to create the template and then select **Select Entity**.  
-   :::image type="content" source="media/create-word-template-platform.png" alt-text="Screenshot of Create template from Dynamics 365 data dialog.":::
+1. In the **Available Templates View** page, go to the command bar and select **New** > **Download Word Template**.
+1. In the **Download file to create a template** dialog, select the entity for which you want to create the template.  
+   :::image type="content" source="media/create-word-template-platform.png" alt-text="Screenshot of Download file to create a template dialog.":::
 1. Specify the entity relationships that you want to use in the template. For example, if you select the Account entity, you can specify a 1:N relationship to the Contact entity to include contact information in the template. Learn more about relationships in [What are 1:N, N:1, and N:N relationships?](#what-are-1n-n1-and-nn-relationships)
    > [!NOTE]
    > - The relationships you select on this screen determine what entities and fields are available later when you define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
    > - Select only the relationships you need to add data to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
   :::image type="content" source="media/platform-select-entity.png" alt-text="Screenshot of the entity selection dialog.":::
-1. Select **Download Template** to download a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file on your local computer with the exported entity included as XML data.
+1. Select **Download** to download a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file on your local computer with the exported entity included as XML data.
    > [!IMPORTANT]
    > You can only use a document template in the environment where you downloaded it. Environment-to-environment migration for Word or Excel templates isn't supported.
     
@@ -163,14 +162,14 @@ Use the XML Mapping Pane to define the [!INCLUDE[pn_ms_Word_short](../includes/p
 
    ![The default XML Mapping schema.](../admin/media/word-template-upload-dynamics-365.png "The default XML Mapping schema")  
 
-2. Select the XML schema. It starts with "urn:microsoft-crm/document-template/".  
+1. Select the XML schema. It starts with "urn:microsoft-crm/document-template/".  
 
    ![Select the XML schema.](../admin/media/word-template-select-xml-schema.png "Select the XML schema")  
 
    > [!IMPORTANT]
    > If you have frequent accidental edits that cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze or have performance degradation, be sure to turn off the AutoCorrect options according to the section, [Avoid a known issue when creating templates](#avoid-a-known-issue-when-creating-templates).  
 
-3. Expand the entity, right-click the entity field, and then select **Insert Content Control** > **Plain Text**.  
+1. Expand the entity, right-click the entity field, and then select **Insert Content Control** > **Plain Text**.  
 
    ![Insert the field as Plain Text.](../admin/media/word-template-insertfield-plain-text.png "Insert the field as Plain Text")  
 
@@ -217,9 +216,9 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment and then select **Settings** in the command bar.
 1. Select **Templates** > **Document Templates**.  
-1. On the **Available Templates View** page, select **Upload Template** in the command bar. 
+1. On the **Available Templates View** page, select **Upload Template** > **Upload Word Template** in the command bar.
 
-1. Drag the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file in the dialog box or browse to the file.  
+1. Browse to the template file that you want to upload.  
 
    ![Upload Template dialog box.](../admin/media/word-template-upload-dialog-box.png "Upload Template dialog box")  
 
@@ -291,11 +290,11 @@ To use the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templat
 
 1. Select **Settings** > **Security** > **Security Roles**.  
 
-2. Select a role, and then select the **Business Management** tab.  
+1. Select a role, and then select the **Business Management** tab.  
 
-3. Select **Document Template** to set access for templates available to the entire organization. Select **Personal Document Template** for templates shared to individual users.  
+1. Select **Document Template** to set access for templates available to the entire organization. Select **Personal Document Template** for templates shared to individual users.  
 
-4. Select the circles to adjust the level of access.  
+1. Select the circles to adjust the level of access.  
 
    ![Adjust access using the security role.](../admin/media/excel-template-restrict-access-using-security-role.png "Adjust access using the security role")  
 
