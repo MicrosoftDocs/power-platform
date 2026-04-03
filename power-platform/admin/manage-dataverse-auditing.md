@@ -52,11 +52,11 @@ You can audit the following operations:
 - The N:N association or disassociation of records.
 - Changes to security roles.
 - Deletion of audit logs.
-- For changes made to entity fields that you can localize, such as the Product entity name or description fields, the locale ID (LCID) appears in the audit record.
+- For changes made to entity fields that you can localize, such as the product entity name or description fields, the locale ID (LCID) appears in the audit record.
 
 Auditing isn't supported on table or column definition changes or during authentication. Furthermore, auditing doesn't support retrieve operations or export operations. In addition to Dataverse auditing, you can turn on [Dataverse and model-driven apps activity logging](enable-use-comprehensive-auditing.md) to log data retrieve operations and export operations.
 
-The following list enumerates the noncustomizable tables that you can't audit. This list was obtained by testing for a CanModifyAuditSettings column value of *false* on each table's definition:
+The following list enumerates the noncustomizable tables that you can't audit. This list was obtained by testing for a `CanModifyAuditSettings` column value of *false* on each table's definition:
 
 - ActivityPointer
 - Annotation
@@ -291,7 +291,7 @@ System administrators or customizers can change the default audit settings for t
 
 1. Select **Save**.
 
-    If you turn on the **Read Logs** in the environment's audit settings, you need to turn on the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** auditing settings to see the read audit logs from this table. For more information, see [Activity logging](/power-platform/admin/enable-use-comprehensive-auditing).
+   If you turn on the **Read Logs** in the environment's audit settings, you need to turn on the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** auditing settings to see the read audit logs from this table.
 
 1. Publish the customization. To publish for a single table, choose the table, such as Account, and then select **Publish** on the toolbar. 
 
@@ -311,7 +311,7 @@ Learn more in [Dataverse developer guide: Configure auditing > Configure tables 
 
 By default, the current label description of the **Choice** data type appears in the audit logs. For example, suppose you have a choice column for **color** and the label description can be _red_, _white_, and _blue_. When a user selects _red_ and updates the record, the audit record shows that _red_ was selected. If you later change the label description to _pink_ in the choice data type, the audit record displays _pink_.
 
-If you want to show the original label that the user selected in the audit logs, set this audit setting **{\"StoreLabelNameforPicklistAudits\":true}** to true. Learn how to [enable auditsettings](/power-apps/developer/data-platform/auditing/configure?tabs=webapi#change-auditsettings).
+If you want to show the original label that the user selected in the audit logs, set this :::no-loc text="auditsetting":::, **{\"StoreLabelNameforPicklistAudits\":true}**, to true. Learn how to [enable :::no-loc text="auditsetting":::](/power-apps/developer/data-platform/auditing/configure?tabs=webapi#change-auditsettings).
 
 > [!NOTE]
 > When you set `StoreLabelNameforPicklistAudits` to true, the new audit user experience on viewing the audit records can be found in the [Audit Summary view](#use-the-audit-summary-view). The [audit history in model-driven app](#use-the-audit-history-in-a-model-driven-app) continues to show the _by default_ behavior.
@@ -463,7 +463,7 @@ Use Azure Synapse Link for Dataverse to link the audit table and create reports 
 
 ## Access Power Platform activity log data in Microsoft Purview
 
-You can access Power Platform activity log data in Microsoft Purview to analyze and report on user and system activities within your Power Platform environments. This integration allows you to leverage Purview's data governance and compliance capabilities to meet your organization's auditing requirements. For more information, see [Overview of Power Platform activity logging and auditing in Microsoft Purview](activity-logging-auditing/activity-logs-overview.md).
+Access Power Platform activity log data in Microsoft Purview to analyze and report on user and system activities within your Power Platform environments. This integration allows you to leverage Purview's data governance and compliance capabilities to meet your organization's auditing requirements. For more information, see [Overview of Power Platform activity logging and auditing in Microsoft Purview](activity-logging-auditing/activity-logs-overview.md).
 
 ### Related content
 
