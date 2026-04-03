@@ -239,6 +239,8 @@ After the move operation completes:
 - The process creates a new environment in the destination tenant with the same name as the source environment and includes the moved Dataverse organization.
 - Update the security groups after migration is completed in the destination tenant. Security group migration isn't supported.
 - Managed Environment needs to be re-enabled in destination tenant. The destination tenant should have the required license to enable the Managed Environment.
+- Environment settings that are not copied over and customers must update them post-move.
+- Generative AI feature is at environment level and thus will have default values.
 
 ### Cancel move
 You can cancel the move at any time between submitting the request and completing the environment move. Select the **Cancel move** button on the banner to open the **Cancel move** dialog and cancel the move.
@@ -412,6 +414,10 @@ After moving environments to another tenant:
 -	The environment URL, organization ID (OrgID), and the name stay the same.
 -	The source environment doesn't include Dataverse.
 -	Users not in the mapping file aren't migrated or mapped after migration.
+- Update the security groups after migration is completed in the destination tenant. Security group migration isn't supported.
+- Managed Environment needs to be re-enabled in destination tenant. The destination tenant should have the required license to enable the Managed Environment.
+- Environment settings that are not copied over and customers must update them post-move.
+- Generative AI feature is at environment level and thus will have default values.
 
 Complete the following procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages.
 
