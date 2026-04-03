@@ -94,7 +94,7 @@ A Power Platform system admin or customizer needs to configure auditing in the P
 
 #### Configure auditing for each environment
 
-Review [Configure auditing for an environment](/power-platform/admin/manage-dataverse-auditing#configure-auditing-for-an-environment) to learn how to configure auditing for each Power Platform production environment and its table and column data. Be sure to turn on activity logging (Read logs) at the environment level first, then turn on auditing for the environment's tables and columns.
+Review [Configure auditing for an environment](/power-platform/admin/manage-dataverse-auditing#configure-auditing-for-an-environment) to learn how to turn on and configure auditing for each Power Platform production environment and then its table and column data.
 
 For more information about configuring auditing, see:
 
@@ -108,7 +108,7 @@ Review all user, maker, admin, and agent licenses and update them as necessary t
 #### Turn on the Enable SAS Logging in Purview setting for each environment
 
 > [!IMPORTANT]
-> Before you activate the Shared Access Signature (SAS) feature, add the `https://*.api.powerplatformusercontent.com` domain to the allowlist. If you don't, most SAS functionalities won't work.
+> Before you activate the Shared Access Signature (SAS) feature, add the `https://*.api.powerplatformusercontent.com` domain to the allow list. If you don't, most SAS functionalities won't work.
 
 To give Microsoft Purview access to Power Platform environment data, turn on the **Enable SAS Logging in Purview** setting in the Power Platform admin center for each Power Platform production environment where you want to view audit logs in Microsoft Purview.
 
