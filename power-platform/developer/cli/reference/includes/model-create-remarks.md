@@ -1,12 +1,14 @@
-### Examples
+### pac model create examples
 
-**Create a new model-driven app** in the active environment:
+The following examples show common ways to use the `pac model create` command.
+
+#### Create a new model-driven app in the active environment
 
 ```bash
 pac model create --name "Contoso Sales Hub"
 ```
 
-**Create an app with a description and add it to a solution**, then publish immediately:
+#### Create an app with a description and add it to a solution, then publish immediately
 
 ```bash
 pac model create \
@@ -16,7 +18,7 @@ pac model create \
   --publish
 ```
 
-**Create an app in a specific environment** by providing the environment URL:
+#### Create an app in a specific environment by providing the environment URL
 
 ```bash
 pac model create \
@@ -28,4 +30,4 @@ pac model create \
 ```
 
 > [!TIP]
-> Use `pac model list` to verify the app was created and retrieve its app ID for use with other commands such as `pac model genpage upload`.
+> Use [`pac model list`](../model.md#pac-model-list) to verify the app was created and retrieve its app ID for use with other commands such as [`pac model genpage upload`](../model.md#pac-model-genpage-upload).
