@@ -1,6 +1,14 @@
-### Examples
+### pac model genpage upload examples
 
-**Publish a new generative page** to the Contoso Sales Hub app and add it to the app sitemap:
+The following examples show common ways to use the `pac model genpage upload` command.
+
+- [Publish a new generative page](#publish-a-new-generative-page)
+- [Update an existing generative page](#update-an-existing-generative-page)
+- [Publish a page that uses mock data](#publish-a-page-that-uses-mock-data)
+
+#### Publish a new generative page
+
+Publish a new generative page to the Contoso Sales Hub app and add it to the app sitemap:
 
 ```bash
 pac model genpage upload \
@@ -13,8 +21,9 @@ pac model genpage upload \
   --agent-message "Created account dashboard with card grid, revenue chart, and contact list. Uses account and contact tables." \
   --add-to-sitemap
 ```
+#### Update an existing generative page
 
-**Update an existing generative page** by providing its page ID (omit `--add-to-sitemap` to avoid creating a duplicate sitemap entry):
+Update an existing generative page by providing its page ID (omit `--add-to-sitemap` to avoid creating a duplicate sitemap entry):
 
 ```bash
 pac model genpage upload \
@@ -27,7 +36,9 @@ pac model genpage upload \
   --agent-message "Updated card layout to use a two-column grid; added revenue sparkline chart."
 ```
 
-**Publish a page that uses mock data** (no Dataverse tables — omit `--data-sources`):
+#### Publish a page that uses mock data
+
+Publish a page that uses mock data (no Dataverse tables — omit `--data-sources`):
 
 ```bash
 pac model genpage upload \
@@ -45,7 +56,7 @@ pac model genpage upload \
 > If multiple apps share the same display name, use the GUID to avoid ambiguity.
 > Run `pac model list` to look up app IDs.
 
-### Parameter quick-reference
+### pac model genpage upload parameter quick-reference
 
 | Parameter | Required | Description |
 |---|---|---|
@@ -53,8 +64,8 @@ pac model genpage upload \
 | `--code-file` | Yes | Path to the `.tsx` source file to deploy. |
 | `--name` | New pages only | Display name shown in the app sitemap. |
 | `--page-id` | Updates only | GUID of the existing page to replace. |
-| `--data-sources` | Dataverse pages | Comma-separated list of Dataverse table logical names (e.g. `"account,contact"`). |
+| `--data-sources` | Dataverse pages | Comma-separated list of Dataverse table logical names (for example, `"account,contact"`). |
 | `--prompt` | Recommended | Natural language summary of what the page does. Stored for regeneration context. |
-| `--model` | Recommended | Model ID used to generate the page (e.g. `claude-sonnet-4-6`). |
+| `--model` | Recommended | Model ID used to generate the page (for example, `claude-sonnet-4-6`). |
 | `--agent-message` | Recommended | Description of what was built or changed. Stored as change history. |
 | `--add-to-sitemap` | New pages only | Adds the page to the app navigation automatically. Omit when updating. |
