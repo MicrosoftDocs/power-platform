@@ -65,7 +65,9 @@ In an environment, you can only have one application user for each Microsoft Ent
 
 1. After choosing a business unit, enter an **Email address**.
    
-1. Select edit icon to select security roles for the chosen business unit to add to the new application user. After adding security roles, select **Create**.
+1. Select the edit icon to select security roles for the new application user. After adding security roles, select **Save**.
+
+1. A window appears asking you to confirm the role assignment. Select **Save**.
 
 1. Select **Create**.
 
