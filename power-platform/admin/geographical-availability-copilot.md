@@ -115,7 +115,7 @@ To turn on data movement across regions, Bing search, Microsoft 365 services, an
 
     - If the **Allow flex routing during periods of peak load** checkbox is displayed, review the terms of use and select the checkbox, if desired.
 
-    For more information, see [European Union Data Boundary (EUDB) flex routing](https://go.microsoft.com/fwlink/?linkid=2356281).
+    For more information, see [Flex routing (EU and EFTA)](https://go.microsoft.com/fwlink/?linkid=2356281).
 
 1. Select **Save**.
 
