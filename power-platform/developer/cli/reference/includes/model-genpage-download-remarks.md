@@ -2,6 +2,10 @@
 
 The following examples show common ways to use the `pac model genpage download` command.
 
+- [Download a single generative page by its page ID to a local folder for editing](#download-a-single-generative-page-by-its-page-id-to-a-local-folder-for-editing)
+- [Download all generative pages in an app at once](#download-all-generative-pages-in-an-app-at-once)
+- [Create a subdirectory named after the page ID and writes the following files](#create-a-subdirectory-named-after-the-page-id-and-writes-the-following-files)
+
 #### Download a single generative page by its page ID to a local folder for editing
 
 ```bash

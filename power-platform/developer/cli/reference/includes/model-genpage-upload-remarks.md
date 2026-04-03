@@ -2,6 +2,10 @@
 
 The following examples show common ways to use the `pac model genpage upload` command.
 
+- [Publish a new generative page](#publish-a-new-generative-page)
+- [Update an existing generative page](#update-an-existing-generative-page)
+- [Publish a page that uses mock data](#publish-a-page-that-uses-mock-data)
+
 #### Publish a new generative page
 
 Publish a new generative page to the Contoso Sales Hub app and add it to the app sitemap:

@@ -2,6 +2,9 @@
 
 The following examples show common ways to use the `pac model genpage list` command.
 
+- [List pages using app ID](#list-pages-using-app-id)
+- [List pages using app name](#list-pages-using-app-name)
+
 #### List pages using app ID
 
 List all generative pages in the **Contoso Sales Hub** app using its app ID:
@@ -18,7 +21,7 @@ List generative pages by app name (the CLI looks up the app ID automatically):
 pac model genpage list --app-id "Contoso Sales Hub"
 ```
 
-#### Sample output
+#### pac model genpage sample output
 
 ```
 Found 2 generated page(s):

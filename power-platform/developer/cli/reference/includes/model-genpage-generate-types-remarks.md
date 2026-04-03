@@ -2,6 +2,9 @@
 
 The following examples show common ways to use the `pac model genpage generate-types` command.
 
+- [Generate TypeScript types](#generate-typescript-types)
+- [Generate types for a single table into a specific output directory](#generate-types-for-a-single-table-into-a-specific-output-directory)
+
 #### Generate TypeScript types
 
 Generate TypeScript types for the `account` and `contact` tables and write them to `./src/RuntimeTypes.ts`:

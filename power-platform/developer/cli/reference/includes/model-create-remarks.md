@@ -2,6 +2,10 @@
 
 The following examples show common ways to use the `pac model create` command.
 
+- [Create a new model-driven app in the active environment](#create-a-new-model-driven-app-in-the-active-environment)
+- [Create an app with a description and add it to a solution, then publish immediately](#create-an-app-with-a-description-and-add-it-to-a-solution-then-publish-immediately)
+- [Create an app in a specific environment by providing the environment URL](#create-an-app-in-a-specific-environment-by-providing-the-environment-url)
+
 #### Create a new model-driven app in the active environment
 
 ```bash
