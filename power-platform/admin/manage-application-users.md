@@ -48,10 +48,7 @@ In an environment, you can only have one application user for each Microsoft Ent
 1. In the **Manage** pane, select **Environments**. Then select an environment.
 1. Select **Settings**. 
 1. Select **Users + permissions**, and then select **Application users**.
-1. Select **+ New app user** to open the **Create a new app user** page.
-
-   :::image type="content" source="media/create-new-app-user.png" alt-text="Screenshot of Create a new application user.":::
-
+1. Select **+ New app user** to open the **Create a new app user** pane.
 1. Select **+ Add an app** to choose the registered Microsoft Entra application that was created for the selected user, and then select **Add**.
 
    > [!NOTE]
@@ -59,16 +56,11 @@ In an environment, you can only have one application user for each Microsoft Ent
    >
    > Enterprise applications don't show in the list of applications, only Microsoft Entra app registrations show in the list. Search for the multitenant application by name or ID to assign it to the application user.  
 
-1. The selected Microsoft Entra app is displayed under **App**. You can select **Edit** (![Edit.](media/edit-button.png)) to choose another Microsoft Entra application. Under **Business Unit**, select a business unit from the dropdown list.  
-
-   :::image type="content" source="media/create-new-app-user-business-unit.png" alt-text="Screenshot of select a business unit.":::
-
-1. After choosing a business unit, enter an **Email address**.
-   
+1. The selected Microsoft Entra app is displayed under **App**. You can select **Edit** (![Edit.](media/edit-button.png)) to choose another Microsoft Entra application.
+1. Under **Business Unit**, select a business unit from the dropdown list. 
+1. After choosing a business unit, enter an **Email address**. 
 1. Select the edit icon to select security roles for the new application user. After adding security roles, select **Save**.
-
 1. A window appears asking you to confirm the role assignment. Select **Save**.
-
 1. Select **Create**.
 
 ## View or edit the details of an application user
