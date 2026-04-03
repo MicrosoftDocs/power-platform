@@ -1,4 +1,4 @@
-### `model genpage generate-types` examples
+### pac model genpage generate-types examples
 
 The following examples show common ways to use the `pac model genpage generate-types` command.
 

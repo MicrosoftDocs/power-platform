@@ -1,4 +1,4 @@
-### `pac model create` examples
+### pac model create examples
 
 The following examples show common ways to use the `pac model create` command.
 

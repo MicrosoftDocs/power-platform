@@ -1,4 +1,4 @@
-### `model genpage upload` examples
+### pac model genpage upload examples
 
 The following examples show common ways to use the `pac model genpage upload` command.
 
@@ -52,7 +52,7 @@ pac model genpage upload \
 > If multiple apps share the same display name, use the GUID to avoid ambiguity.
 > Run `pac model list` to look up app IDs.
 
-### `model genpage upload` parameter quick-reference
+### pac model genpage upload parameter quick-reference
 
 | Parameter | Required | Description |
 |---|---|---|

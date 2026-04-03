@@ -1,4 +1,4 @@
-### `model genpage download` examples
+### pac model genpage download examples
 
 The following examples show common ways to use the `pac model genpage download` command.
 
@@ -19,7 +19,7 @@ pac model genpage download \
   --output-directory ./pages
 ```
 
-####  Create a subdirectory named after the page ID and writes the following files
+#### Create a subdirectory named after the page ID and writes the following files
 
 ```
 ./pages/account-dashboard/

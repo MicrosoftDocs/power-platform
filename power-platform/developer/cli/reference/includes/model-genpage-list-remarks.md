@@ -1,4 +1,4 @@
-### `model genpage list` examples
+### pac model genpage list examples
 
 The following examples show common ways to use the `pac model genpage list` command.
 
