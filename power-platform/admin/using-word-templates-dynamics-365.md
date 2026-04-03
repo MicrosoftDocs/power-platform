@@ -57,7 +57,6 @@ Access requires sufficient permissions, such as the System Administrator or Syst
    > [!NOTE]
    > - The relationships you select on this screen determine what entities and fields are available later when you define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
    > - Select only the relationships you need to add data to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.
-  :::image type="content" source="media/platform-select-entity.png" alt-text="Screenshot of the entity selection dialog.":::
 1. Select **Download** to download a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file on your local computer with the exported entity included as XML data.
    > [!IMPORTANT]
    > You can only use a document template in the environment where you downloaded it. Environment-to-environment migration for Word or Excel templates isn't supported.
