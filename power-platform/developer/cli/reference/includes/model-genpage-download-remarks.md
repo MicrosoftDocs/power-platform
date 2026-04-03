@@ -1,6 +1,8 @@
-### Examples
+### `model genpage download` examples
 
-Download a single generative page by its page ID to a local folder for editing:
+The following examples show common ways to use the `pac model genpage download` command.
+
+#### Download a single generative page by its page ID to a local folder for editing
 
 ```bash
 pac model genpage download \
@@ -9,7 +11,7 @@ pac model genpage download \
   --output-directory ./pages/account-dashboard
 ```
 
-Download all generative pages in an app at once:
+#### Download all generative pages in an app at once
 
 ```bash
 pac model genpage download \
@@ -17,7 +19,7 @@ pac model genpage download \
   --output-directory ./pages
 ```
 
-The command creates a subdirectory named after the page ID and writes the following files:
+####  Create a subdirectory named after the page ID and writes the following files
 
 ```
 ./pages/account-dashboard/

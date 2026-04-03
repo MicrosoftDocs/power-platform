@@ -1,6 +1,10 @@
-### Examples
+### `model genpage upload` examples
 
-**Publish a new generative page** to the Contoso Sales Hub app and add it to the app sitemap:
+The following examples show common ways to use the `pac model genpage upload` command.
+
+#### Publish a new generative page
+
+Publish a new generative page to the Contoso Sales Hub app and add it to the app sitemap:
 
 ```bash
 pac model genpage upload \
@@ -13,8 +17,9 @@ pac model genpage upload \
   --agent-message "Created account dashboard with card grid, revenue chart, and contact list. Uses account and contact tables." \
   --add-to-sitemap
 ```
+#### Update an existing generative page
 
-**Update an existing generative page** by providing its page ID (omit `--add-to-sitemap` to avoid creating a duplicate sitemap entry):
+Update an existing generative page by providing its page ID (omit `--add-to-sitemap` to avoid creating a duplicate sitemap entry):
 
 ```bash
 pac model genpage upload \
@@ -27,7 +32,9 @@ pac model genpage upload \
   --agent-message "Updated card layout to use a two-column grid; added revenue sparkline chart."
 ```
 
-**Publish a page that uses mock data** (no Dataverse tables — omit `--data-sources`):
+#### Publish a page that uses mock data
+
+Publish a page that uses mock data (no Dataverse tables — omit `--data-sources`):
 
 ```bash
 pac model genpage upload \
@@ -45,7 +52,7 @@ pac model genpage upload \
 > If multiple apps share the same display name, use the GUID to avoid ambiguity.
 > Run `pac model list` to look up app IDs.
 
-### Parameter quick-reference
+### `model genpage upload` parameter quick-reference
 
 | Parameter | Required | Description |
 |---|---|---|
