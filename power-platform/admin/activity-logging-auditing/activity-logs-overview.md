@@ -79,7 +79,7 @@ To view Power Platform activity logs in Microsoft Purview, high-level admins nee
 
 - [Licensing resources and documents](https://www.microsoft.com/licensing/docs).
 - [Microsoft Purview service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-purview-service-description)
-- [Manage high privileged admin roles for Power Platform](../manage-high-privileged-admin-roles).
+- [Manage high privileged admin roles for Power Platform](../manage-high-privileged-admin-roles.md).
 - [Manage permissions for Microsoft Purview](/purview/purview-permissions).
 
 ### Configure and turn on auditing for each Power Platform environment
