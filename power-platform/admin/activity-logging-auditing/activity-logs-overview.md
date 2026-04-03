@@ -60,7 +60,7 @@ While each Power Platform component has its specific audit schema, most contain 
 
 To ensure you get the most out of Power Platform activity logs in Microsoft Purview, consider these best practices:
 
-- **Regular monitoring**: Check logs periodically for unusual activities.
+- **Monitor regularly**: Check logs periodically for unusual activities.
 - **Establish baselines**: Understand normal usage patterns to better detect anomalies.
 - **Document procedures**: Create standard procedures for log review and incident response.
 - **Combine with other data**: Correlate activity logs with other monitoring data for comprehensive visibility.
