@@ -1,4 +1,4 @@
-### Examples
+### pac model list example
 
 List all model-driven apps in the currently active environment:
 
