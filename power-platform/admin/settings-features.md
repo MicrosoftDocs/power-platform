@@ -103,7 +103,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 ## AI form fill assistance
 
 > [!IMPORTANT]
-> Admin controls for the **AI form fill assistance** is changing to have the primary admin control within Copilot > Settings > Power Apps > Data Entry Agent. In the coming weeks, the new admin controls will appear and provide increased admin control including Environment Groups and Entra Group support. The following settings will be removed from the Environment > Settings > Feature page and be accessed through [Model App Designer Setting](/power-apps/maker/model-driven-apps/app-properties) or [Solution Explorer App Settings](/power-apps/maker/data-platform/create-edit-configure-settings#updating-a-setting-definition). Learn more at [Admin control for Form fill assistance](/power-apps/user/form-filling-assistance#admin-control).
+> Admin controls for the **AI form fill assistance** feature is changing to have the primary admin control within **Copilot > Settings > Power Apps > Data Entry Agent**. In the coming weeks, the new admin controls will appear and provide increased admin control for environment groups and Entra group support. The following settings will be removed from the **Environment > Settings > Features** page and be accessed through [Model App Designer Setting](/power-apps/maker/model-driven-apps/app-properties) or [Solution Explorer App Settings](/power-apps/maker/data-platform/create-edit-configure-settings#updating-a-setting-definition). Learn more at [Admin control for Form fill assistance](/power-apps/user/form-filling-assistance#admin-control).
 
 > [!NOTE]
 > Users might need to clear the cache and refresh the browser twice for the setting change to take effect.
