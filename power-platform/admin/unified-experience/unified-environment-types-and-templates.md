@@ -3,7 +3,7 @@ title: Unified environment types and templates for finance and operations apps
 description: Learn about unified production (UPE), sandbox (USE), and developer (UDE) environments, Dynamics 365 ERP templates, and regional availability for finance and operations apps in Power Platform.
 author: laneswenka
 ms.topic: concept-article
-ms.date: 04/03/2026
+ms.date: 04/06/2026
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
@@ -78,12 +78,12 @@ A *template* is a bundle of Microsoft-published applications that are preinstall
 
 ### Template reference
 
-| Template ID | Display name | License required | Comments |
+| Template ID | Display name | License required |
 |---|---|---|---|
-| D365_FinOps_Finance | Finance (preview) | Dynamics 365 Finance | |
-| D365_FinOps_SCM | Supply Chain Management (preview) | Dynamics 365 Supply Chain Management | |
-| D365_FinOps_ProjOps | Project Operations Integrated (preview) | Dynamics 365 Project Operations or Dynamics 365 Operations Application Partner Sandbox | |
-| D365_FinOps_Commerce | Commerce (preview) | Dynamics 365 Commerce | Available for trials only |
+| D365_FinOps_Finance | Finance (preview) | Dynamics 365 Finance | 
+| D365_FinOps_SCM | Supply Chain Management (preview) | Dynamics 365 Supply Chain Management | 
+| D365_FinOps_ProjOps | Project Operations Integrated (preview) | Dynamics 365 Project Operations or Dynamics 365 Operations Application Partner Sandbox | 
+| D365_FinOps_Commerce<br><br>(Available for trials only)| Commerce (preview) | Dynamics 365 Commerce |  
 
 ### Apps included in each template
 
@@ -179,7 +179,7 @@ The following table shows the production cloud (public) regions and which unifie
 | United States | unitedstates | westus | Yes | Yes | Yes | Yes |
 
 > [!NOTE]
-> Some locations have a secondary Azure region that only supports UDE (developer) and Trial environment types. These secondary regions do not support UPE (production) or USE (sandbox) workloads. For sovereign and government cloud availability, contact Microsoft Support.
+> Some locations have a secondary Azure region that only supports UDE (developer) and trial environment types. These secondary regions do not support UPE (production) or USE (sandbox) workloads. For sovereign and government cloud availability, contact Microsoft Support.
 
 ## Related articles
 
