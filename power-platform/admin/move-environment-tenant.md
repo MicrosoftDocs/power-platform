@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 02/25/2026
+ms.date: 04/06/2026
 ms.topic: concept-article
 author: gakulka 
 contributors:
@@ -239,8 +239,8 @@ After the move operation completes:
 - The process creates a new environment in the destination tenant with the same name as the source environment and includes the moved Dataverse organization.
 - Update the security groups after migration is completed in the destination tenant. Security group migration isn't supported.
 - Managed Environment needs to be re-enabled in destination tenant. The destination tenant should have the required license to enable the Managed Environment.
-- Environment settings that are not copied over and customers must update them post-move.
-- Generative AI feature is at environment level and thus will have default values.
+- Environment settings that aren't copied over must be updated by customers post-move.
+- The generative AI feature is at the environment-level and has default values.
 
 ### Cancel move
 You can cancel the move at any time between submitting the request and completing the environment move. Select the **Cancel move** button on the banner to open the **Cancel move** dialog and cancel the move.
@@ -415,9 +415,9 @@ After moving environments to another tenant:
 -	The source environment doesn't include Dataverse.
 -	Users not in the mapping file aren't migrated or mapped after migration.
 - Update the security groups after migration is completed in the destination tenant. Security group migration isn't supported.
-- Managed Environment needs to be re-enabled in destination tenant. The destination tenant should have the required license to enable the Managed Environment.
-- Environment settings that are not copied over and customers must update them post-move.
-- Generative AI feature is at environment level and thus will have default values.
+- A Managed Environment needs to be re-enabled in the destination tenant. The destination tenant should have the required license to enable the Managed Environment.
+- Environment settings that aren't copied over must be updated by customers post-move.
+- The generative AI feature is at the environment-level and has default values.
 
 Complete the following procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages.
 
