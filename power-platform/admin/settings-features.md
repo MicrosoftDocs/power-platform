@@ -139,7 +139,7 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 ## AI insight cards
 
 > [!IMPORTANT]
-> Admin controls for the **AI insights cards** is changing to have the primary admin control within Copilot > Settings > Power Apps > Data Exploration Agent. In the coming weeks, the new admin controls will appear and provide increased admin control including Environment Groups and Entra Group support. The following settings will be removed from the Environment > Settings > Feature page and be accessed through [Model App Designer Setting](/power-apps/maker/model-driven-apps/app-properties) or [Solution Explorer App Settings](/power-apps/maker/data-platform/create-edit-configure-settings#updating-a-setting-definition). Learn more at [Adming controls for Row summary](/power-apps/user/record-summaries#admin-control).
+> Admin controls for the **AI insights cards** feature is changing to have the primary admin control within **Copilot > Settings > Power Apps > Data Exploration Agent**. In the coming weeks, the new admin controls will appear and provide increased admin control for environment groups and Entra group support. The following settings will be removed from the **Environment > Settings > Features** page and be accessed through [Model App Designer Setting](/power-apps/maker/model-driven-apps/app-properties) or [Solution Explorer App Settings](/power-apps/maker/data-platform/create-edit-configure-settings#updating-a-setting-definition). Learn more at [Adming controls for Row summary](/power-apps/user/record-summaries#admin-control).
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
