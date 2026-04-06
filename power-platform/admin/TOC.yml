@@ -464,7 +464,7 @@
               href: monitoring/monitoring-overview.md
             - name: View event logs and error logs
               href: monitoring/logs.md
-            - name: Create alerts for your resources (preview)
+            - name: Create alerts for your resources
               href: monitoring/alerts.md
             - name: Metrics and recommendations
               items:
