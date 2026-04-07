@@ -45,6 +45,8 @@ The following [rules](environment-groups.md#rules) can be applied to [environmen
 | 19 | [Solution checker enforcement](managed-environment-solution-checker.md) |
 | 20 | [Unmanaged customizations](../alm/block-unmanaged-customizations.md) |
 | 21 | [Usage insights](managed-environment-usage-insights.md) |
+| 22 | [Power Apps code apps](/power-apps/developer/code-apps/overview) |
+| 23 | [Content security policy](/power-platform/admin/content-security-policy) |
 
 > [!NOTE]
 > The rules that have "(preview)" in their name are in public preview, while rules without it are considered generally available.
