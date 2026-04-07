@@ -187,31 +187,6 @@ Design-time enforcement provides consistent violation messaging across the follo
 
 This shift-left approach reduces maker confusion by surfacing policy boundaries early in the development process, eliminating the scenario where makers build and publish resources only to discover violations at runtime.
 
-## Connection parameter filtering
-
-Connection parameter filtering is a metadata-driven capability in advanced connector policies that controls *how* a connector is used, not just whether it's allowed. It replaces the [connector endpoint filtering](connector-endpoint-filtering.md) capability in classic data policies with a more comprehensive approach that extends beyond URL patterns.
-
-### Phase 1 (private preview)
-
-Phase 1 of connection parameter filtering allows administrators to restrict the authentication types and non-secret connection parameters that makers can use when creating connections to a certified connector.
-
-Capabilities include:
-
-- **Authentication type filtering**: Allow or deny specific connection types such as OAuth, service principal, managed identity, SQL Server authentication, API key, and others.
-- **Non-secret parameter filtering**: Allow or deny specific non-secret connection parameters such as client ID, tenant ID, server name, and URL.
-
-:::image type="content" source="media/acp-cpf-phase1.png" alt-text="Connection parameter filtering for SQL Server showing authentication type toggles in the Power Platform admin center." lightbox="media/acp-cpf-phase1.png":::
-
-> [!NOTE]
-> Connection parameter filtering doesn't store or inspect secrets. The policy engine only evaluates non-secret metadata associated with the connection.
-
-### Phase 2 (planned)
-
-Phase 2 extends connection parameter filtering to include:
-
-- **Action-level parameter filtering**: Restrict specific input parameters on individual connector actions.
-- **Unified HTTP and custom connector governance**: Bring HTTP and custom connector URL governance under ACP, providing a single policy surface for all endpoint-based controls.
-
 ## Known limitations
 
 While advanced connector policies offer robust capabilities, consider the following limitations:
