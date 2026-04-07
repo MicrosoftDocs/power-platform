@@ -1,14 +1,12 @@
 ---
-title: "SolutionPackager tool (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
-description: "SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse compressed solution file into multiple XML files." # 115-145 characters including spaces. This abstract displays in the search result.
-ms.custom: ""
-ms.date: 05/01/2024
-ms.reviewer: "pehecke"
-
+title: "SolutionPackager tool (Microsoft Dataverse) | Microsoft Docs"
+description: "SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse compressed solution file into multiple XML files."
+ms.date: 04/07/2026
+ms.reviewer: pehecke
 ms.topic: concept-article
-author: "shmcarth" # GitHub ID
+author: caburk
 ms.subservice: alm
-ms.author: "jdaly" # MSFT alias of Microsoft employees only
+ms.author: caburk
 search.audienceType: 
   - developer
 ---
