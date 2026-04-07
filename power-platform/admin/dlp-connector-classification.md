@@ -3,7 +3,7 @@ title: Connector classification
 description: About ways to categorize connectors within a data policy.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/20/2025
+ms.date: 04/07/2026
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -52,7 +52,7 @@ All third-party connectors can be blocked. All Microsoft-owned premium connector
 All connectors driving core Microsoft Power Platform functionality (like Dataverse, Approvals, and Notifications), in addition to connectors that enable core Office customization scenarios like Microsoft Enterprise Plan standard connectors, remain nonblockable to ensure that core user scenarios remain fully functional.
 
 > [!NOTE]
-> These connectors can be limited or blocked using [advanced connector policies](./advanced-connector-policies.md). ACP uses a strict allowlist model and can restrict any certified connector, including the nonblockable connectors listed below.
+> These connectors can be limited or blocked using [advanced connector policies (ACP)](./advanced-connector-policies.md). ACP uses a strict allowlist model and can restrict any certified connector, including the nonblockable connectors listed below.
 
 However, these nonblockable connectors can be classified into **Business** or **Non-Business** data groups. These connectors broadly fall into the following categories:
 
