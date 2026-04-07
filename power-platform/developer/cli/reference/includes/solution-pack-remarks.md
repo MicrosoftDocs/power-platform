@@ -2,6 +2,9 @@
 
 `pac solution pack` supports two source folder layouts when reading component files: the **XML format** (legacy) and the **YAML source control format**.
 
+> [!IMPORTANT]
+> YAML source control format support requires **Microsoft.PowerApps.CLI version 2.4.1 or later**. Download from [NuGet](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/2.4.1) or update with `pac install latest`.
+
 The format is auto-detected based on the folder contents:
 
 - If the folder contains a `solutions/` subdirectory with `*solution.yml` files → **YAML format** is used.

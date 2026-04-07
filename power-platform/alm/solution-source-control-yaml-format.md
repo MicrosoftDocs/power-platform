@@ -21,6 +21,9 @@ This article is a reference for the YAML-based source control format used when y
 
 The YAML format differs from the classic XML layout. Understanding the structure is important when you want to manually pack a YAML folder back into a `.zip` file that Dataverse can import.
 
+> [!IMPORTANT]
+> YAML source control format support in the `pac` CLI requires **Microsoft.PowerApps.CLI version 2.4.1 or later**. Download the latest version from [NuGet](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/2.4.1) or update via `pac install latest`. SolutionPackager.exe, which ships with the NuGet package, supports the YAML format from the same version.
+
 ## Folder structure overview
 
 A YAML-format repository root contains the following top-level directories:

@@ -2,6 +2,9 @@
 
 `pac solution unpack` extracts solution components from a `.zip` file into the **XML format** by default, creating an `Other\Solution.xml` hierarchy.
 
+> [!IMPORTANT]
+> YAML source control format support requires **Microsoft.PowerApps.CLI version 2.4.1 or later**. Download from [NuGet](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/2.4.1) or update with `pac install latest`.
+
 When working with solutions managed via native [Dataverse Git integration](../../alm/git-integration/overview.md) or extracted via `pac solution clone`, the resulting folder uses the **YAML source control format** instead:
 
 ```
