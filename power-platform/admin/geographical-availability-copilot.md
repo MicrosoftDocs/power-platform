@@ -4,7 +4,7 @@ description: Learn how to turn on data movement across regions for Copilots and 
 author: mikferland-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/10/2026
+ms.date: 04/03/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: miferlan
@@ -55,7 +55,7 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 | Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
 | United States | In region* | United States| 
-| Europe\**  | In EU Data Boundary | United States |
+| Europe\**  | In European Untion (EU) Data Boundary | United States |
 | France<br>Germany<br>Norway<br>Sweden<br>Switzerland\** | In EU Data Boundary | United States|
 | Brazil<br>Canada<br>Japan<br>Korea<br>South Africa<br>United Arab Emirates | United States | United States| 
 | Asia<br>Singapore | In region* or United States | United States |
@@ -69,9 +69,9 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 
 Learn more about EU Data Boundary in [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations).
 
-## Turn on data movement, Bing search, and Microsoft 365 services for Copilots and generative AI features
+## Turn on data movement, Bing search, Microsoft 365 services, and flex routing
 
-To turn on data movement across regions, Bing search, and Microsoft 365 services for Copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you must be a Power Platform administrator or Dynamics 365 administrator.
+To turn on data movement across regions, Bing search, Microsoft 365 services, and flex routing for Copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you must be a Power Platform administrator or Dynamics 365 administrator.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
@@ -108,6 +108,14 @@ To turn on data movement across regions, Bing search, and Microsoft 365 services
 
     > [!NOTE]
     > If the **Move data across regions** checkbox is displayed in the **Generative AI features** pane, you must have it already selected in order to select the **Microsoft 365 services** checkbox.
+
+1. If your environment is in the EU, the **Allow flex routing during periods of peak load** checkbox is displayed:
+
+    - If the **Allow flex routing during periods of peak load** checkbox is displayed, but you can't select it, that indicates that this feature has been turned off in the Microsoft 365 admin center.
+
+    - If the **Allow flex routing during periods of peak load** checkbox is displayed, review the terms of use and select the checkbox, if desired.
+
+    For more information, see [Flex routing (EU and EFTA)](https://go.microsoft.com/fwlink/?linkid=2356281).
 
 1. Select **Save**.
 
