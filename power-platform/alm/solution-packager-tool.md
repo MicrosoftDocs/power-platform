@@ -53,8 +53,74 @@ Find the SolutionPackager.exe executable in the \<extracted-folder-name\>/conten
 |@ \<file path>|Optional. A path and name to a file that contains command-line arguments for the tool.|  
 |/sourceLoc: \<string>|Optional. This argument generates a template resource file, and is valid only on extract.<br /><br /> Possible values are `auto` or an LCID/ISO code for the language you want to export. When this argument is used, the string resources from the given locale are extracted as a neutral .resx file. If `auto` or just the long or short form of the switch is specified, the base locale or the solution is used. You can use the short form of the command: /src.|  
 |/localize|Optional. Extract or merge all string resources into .resx files. You can use the short form of the command: /loc. The localize option supports shared components for .resx files. More information: [Using RESX web resources](/power-apps/developer/model-driven-apps/resx-web-resources)|  
-  
+|/SolutionName: \<name>|Optional. The unique name of the solution to pack or extract when the source folder contains multiple solutions under `solutions/*/solution.yml`. Required when more than one solution is detected. Only applies to the YAML source control format. You can use the short form of the command: /sn.|
+|/remapPluginTypeNames|Optional. When specified, plug-in fully qualified type names are remapped based on the assemblies included in the solution. Enabled by default in the YAML source control format. You can use the short form of the command: /fp.|
+
 <a name="use_command"></a>
+
+## Source control file formats
+
+SolutionPackager supports two folder layouts when extracting and packing solutions.
+
+### XML format (legacy)
+
+The original format. Solution metadata is stored in `Other\Solution.xml` and `Other\Customizations.xml`, and all component files are extracted into a flat folder hierarchy alongside those files. This is the default format when extracting a `.zip` file without additional configuration.
+
+### YAML source control format
+
+Introduced alongside [Dataverse Git integration](git-integration/overview.md), this format stores solution metadata as YAML files distributed across a structured folder hierarchy. It's the format written when you commit solutions using native Git integration in Power Apps.
+
+**Advantages over XML format:**
+- Produces cleaner, more readable per-component diffs in source control
+- Supports multiple solutions in a single repository folder
+- Canvas app `.msapp` files and modern flows are only supported in this format
+- Plug-in type name remapping is enabled by default
+
+**Required folder structure:**
+
+```
+<rootFolder>/
+├── solutions/
+│   └── <SolutionUniqueName>/
+│       ├── solution.yml              (solution metadata)
+│       ├── solutioncomponents.yml    (paths to all component files)
+│       ├── rootcomponents.yml        (root-level components)
+│       └── missingdependencies.yml   (dependency info)
+├── publishers/
+│   └── <PublisherUniqueName>/
+│       └── publisher.yml             (publisher definition)
+├── entities/                         (entity components, if present)
+├── workflows/                        (classic workflows, if present)
+├── modernflows/                      (Power Automate cloud flows, if present)
+├── canvasapps/                       (canvas app .msapp files, if present)
+└── [other component folders]/
+```
+
+> [!IMPORTANT]
+> The YAML format is auto-detected by the presence of a `solutions/` subfolder containing `*solution.yml` files.
+> If your YAML manifest files (`solution.yml`, `solutioncomponents.yml`, and so on) are placed at the **root** of the folder rather than under `solutions/<SolutionUniqueName>/`, the tool doesn't detect the YAML format. It falls back to the XML path and reports a misleading error about a missing `Customizations.xml`. See [Troubleshooting](#troubleshooting) for how to fix this.
+
+**Format auto-detection rules:**
+
+| Condition | Format used |
+|---|---|
+| `solutions/*/solution.yml` found — exactly one solution | YAML format; solution name inferred from folder |
+| `solutions/*/solution.yml` found — multiple solutions | YAML format; `/SolutionName` argument required |
+| No `solutions/` subdirectory present | XML format (legacy) |
+
+**Packing a YAML format folder:**
+
+```
+SolutionPackager.exe /action:Pack /zipfile:MySolution.zip /folder:C:\repos\myrepo
+```
+
+**Packing from a multi-solution folder:**
+
+```
+SolutionPackager.exe /action:Pack /zipfile:SolutionA.zip /folder:C:\repos\myrepo /SolutionName:SolutionA
+```
+
+
 
 ## Use the /map command argument  
 
@@ -270,8 +336,39 @@ If you use Visual Studio to edit resource files created by the solution packager
    ```  
   
    This allows the solution packager to read and import the resource file. This problem has only been observed when using the Visual Studio Resource editor.  
-  
-### See also  
+
+### Error: "Cannot find required file …\Other\Customizations.xml" with a YAML folder
+
+This error appears when you run SolutionPackager (or `pac solution pack`) against a folder that contains YAML files such as `solution.yml`, but those files are placed at the **root of the folder** rather than inside the required `solutions/<SolutionUniqueName>/` subfolder.
+
+**Cause:** The tool detects the YAML source control format by looking for a `solutions/` subfolder containing `*solution.yml` files. When that directory is absent, the tool silently falls back to the XML (legacy) format and expects `Other\Customizations.xml`. The resulting error message refers to an XML file and doesn't mention YAML — this is misleading.
+
+**Fix:** Reorganize the folder so that the YAML manifest files are under the correct paths:
+
+```
+<rootFolder>/
+  solutions/<YourSolutionUniqueName>/   ← move solution.yml here
+    solution.yml
+    solutioncomponents.yml
+    rootcomponents.yml
+    missingdependencies.yml
+  publishers/<YourPublisherUniqueName>/
+    publisher.yml
+```
+
+If you obtained the folder from a Git integration commit or `pac solution clone`, the folder structure should already be correct. A folder that only contains the top-level YAML files without the `solutions/` subdirectory represents an **incomplete extract** and can't be packed directly.
+
+### Warning: component declared in rootcomponents.yml has no source files
+
+This warning appears when a component — such as a canvas app — is listed in `rootcomponents.yml` but no corresponding source files exist in the expected component folder (for example, `canvasapps/<schema-name>/`).
+
+**Effect:** The tool still succeeds (exit code 0) and produces a valid `.zip` file, but the declared component is **omitted** from the packaged solution.
+
+**Cause:** The folder was produced by a partial extract, or the component's source files weren't included in the repository (for example, only the solution manifest files were committed, not the canvas app itself).
+
+**Fix:** Ensure all components declared in `rootcomponents.yml` have corresponding source files present in the folder. For canvas apps, the `.msapp` file must exist under `canvasapps/<schema-name>/`. If any files are missing, re-export the full solution from Dataverse and unpack it again, or use `pac solution clone` to obtain a complete extract.
+
+### See also
 
  [Use Source Control with Solution Files](use-source-control-solution-files.md)<br/>
  [Solution concepts](solution-concepts-alm.md)
