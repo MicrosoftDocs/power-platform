@@ -25,6 +25,6 @@ SolutionPackager.exe /action:Pack /zipfile:SolutionA.zip /folder:C:\repos\myrepo
 ```
 
 > [!NOTE]
-> The YAML source control format is the format written by native [Dataverse Git integration](../../alm/git-integration/overview.md) when you commit solutions from Power Apps. If you're manually packing a folder from a Git-integrated repository, use `pac solution pack` with the `--folder` pointing at the repository root.
+> The YAML source control format is the format written by native [Dataverse Git integration](../../../../alm/git-integration/overview.md) when you commit solutions from Power Apps. If you're manually packing a folder from a Git-integrated repository, use `pac solution pack` with the `--folder` pointing at the repository root.
 
-For more information about the YAML folder structure and which components are supported, see [SolutionPackager tool — Source control file formats](../../alm/solution-packager-tool.md#source-control-file-formats).
+For more information about the YAML folder structure and which components are supported, see [SolutionPackager tool — Source control file formats](../../../../alm/solution-packager-tool.md#source-control-file-formats).

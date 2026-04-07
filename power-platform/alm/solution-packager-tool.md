@@ -45,9 +45,9 @@ Find the SolutionPackager.exe executable in the \<extracted-folder-name\>/conten
 |/packagetype: {Unmanaged&#124;Managed&#124;Both}|Optional. The type of package to process. The default value is Unmanaged. This argument may be omitted in most occasions because the package type can be read from inside the .zip file or component files. When extracting and Both is specified, managed and unmanaged solution .zip files must be present and are processed into a single folder. When packing and Both is specified, managed and unmanaged solution .zip files are produced from one folder. For more information, see the section on working with managed and unmanaged solutions later in this article.|  
 |/allowWrite:{Yes&#124;No}|Optional. The default value is Yes. This argument is used only during an extraction. When /allowWrite:No is specified, the tool performs all operations but is prevented from writing or deleting any files. The extract operation can be safely assessed without overwriting or deleting any existing files.|  
 |/allowDelete:{Yes&#124;No&#124;Prompt}|Optional. The default value is Prompt. This argument is used only during an extraction. When /allowDelete:Yes is specified, any files present in the folder specified by the /folder parameter that aren't expected are automatically deleted. When /allowDelete:No is specified, no deletes occur. When /allowDelete:Prompt is specified, the user is prompted through the console to allow or deny all delete operations. If /allowWrite:No is specified, no deletes occur even if /allowDelete:Yes is also specified.|  
-|/clobber|Optional. This argument is used only during an extraction. When /clobber is specified, files that have the read-only attribute set are overwritten or deleted. When not specified, files with the read-only attribute aren’t overwritten or deleted.|  
+|/clobber|Optional. This argument is used only during an extraction. When /clobber is specified, files that have the read-only attribute set are overwritten or deleted. When not specified, files with the read-only attribute aren't overwritten or deleted.|  
 |/errorlevel: {Off&#124;Error&#124;Warning&#124;Info&#124;Verbose}|Optional. The default value is Info. This argument indicates the level of logging information to output.|  
-|/map: \<file path>|Optional. The path and name of an .xml file containing file mapping directives. When used during an extraction, files typically read from inside the folder specified by the /folder parameter are read from alternate locations as specified in the mapping file. During a pack operation, files that match the directives aren’t written.|  
+|/map: \<file path>|Optional. The path and name of an .xml file containing file mapping directives. When used during an extraction, files typically read from inside the folder specified by the /folder parameter are read from alternate locations as specified in the mapping file. During a pack operation, files that match the directives aren't written.|  
 |/nologo|Optional. Suppress the banner at runtime.|  
 |/log: \<file path>|Optional. A path and name to a log file. If the file already exists, new logging information is appended to the file.|  
 |@ \<file path>|Optional. A path and name to a file that contains command-line arguments for the tool.|  
@@ -136,9 +136,9 @@ Files that are built in an automated build system, such as \.xap Silverlight fil
   
 - Environment variables may be specified by using a %variable% syntax.  
   
-- A folder wildcard “**” may be used to mean "in any subfolder". It can only be used as the final part of a path, for example: “c:\folderA\\\*\*”.  
+- A folder wildcard "**" may be used to mean "in any subfolder". It can only be used as the final part of a path, for example: "c:\folderA\\\*\*".  
   
-- File name wildcards may be used only in the forms “*.ext” or “\*.\*”. No other pattern is supported.  
+- File name wildcards may be used only in the forms "*.ext" or "\*.\*". No other pattern is supported.  
   
   The three types of directives mappings are described here, along with an example that shows you how to use them.  
   
@@ -154,7 +154,7 @@ The following information provides detailed information on folder mapping.
   
 **Description**
 
-File paths that match “folderA” are switched to “folderB”.  
+File paths that match "folderA" are switched to "folderB".  
   
 - The hierarchy of subfolders under each must exactly match.  
   
@@ -282,18 +282,23 @@ The following XML code sample shows a complete mapping file that enables the Sol
  A Dataverse compressed solution (.zip) file can be exported in one of two types as shown here.  
   
  **Managed solution**  
- A completed solution ready to be imported into an organization. Once imported, components can’t be added or removed, although they can optionally allow further customization. This is recommended when development of the solution is complete.  
+ A completed solution ready to be imported into an organization. Once imported, components can't be added or removed, although they can optionally allow further customization. This is recommended when development of the solution is complete.  
   
  **Unmanaged solution**  
  An open solution with no restrictions on what can be added, removed, or modified. This is recommended during development of a solution.  
   
- The format of a compressed solution file will be different based on its type, either managed or unmanaged. The SolutionPackager can process compressed solution files of either type. However, the tool can’t convert one type to another. The only way to convert solution files to a different type, for example from unmanaged to managed, is by importing the unmanaged solution .zip file into a Dataverse server and then exporting the solution as a managed solution.  
+ The format of a compressed solution file will be different based on its type, either managed or unmanaged. The SolutionPackager can process compressed solution files of either type. However, the tool can't convert one type to another. The only way to convert solution files to a different type, for example from unmanaged to managed, is by importing the unmanaged solution .zip file into a Dataverse server and then exporting the solution as a managed solution.  
   
  The SolutionPackager can process unmanaged and managed solution .zip files as a combined set via the /PackageType:Both parameter. To perform this operation, it is necessary to export your solution twice as each type, naming the .zip files as follows.  
-  
-|||  
-|-|-|  
-|Unmanaged .zip file: AnyName.zip|Managed .zip file: AnyName_managed.zip|  
+
+:::row:::
+   :::column span="":::
+      Unmanaged .zip file: AnyName.zip
+   :::column-end:::
+   :::column span="":::
+      Managed .zip file: AnyName_managed.zip
+   :::column-end:::
+:::row-end:::
   
  The tool will assume the presence of the managed zip file in the same folder as the unmanaged file and extract both files into a single folder preserving the differences where managed and unmanaged components exist.  
   
@@ -301,7 +306,7 @@ The following XML code sample shows a complete mapping file that enables the Sol
   
 ## Troubleshooting  
 
-If you use Visual Studio to edit resource files created by the solution packager, you may receive a message when you repack similar to this: `“Failed to determine version id of the resource file <filename>.resx the resource file must be exported from the solutionpackager.exe tool in order to be used as part of the pack process.”` This happens because Visual Studio replaces the resource file’s metadata tags with data tags.  
+If you use Visual Studio to edit resource files created by the solution packager, you may receive a message when you repack similar to this: `"Failed to determine version id of the resource file <filename>.resx the resource file must be exported from the solutionpackager.exe tool in order to be used as part of the pack process."` This happens because Visual Studio replaces the resource file's metadata tags with data tags.  
   
 #### Workaround  
   
