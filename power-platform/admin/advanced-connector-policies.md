@@ -89,8 +89,8 @@ You can also configure an advanced connector policy directly on an individual en
 To configure an advanced connector policy for a single environment:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Go to the environment where you want to configure the policy.
-1. Under **Security**, select **Data and privacy**.
+1. In the navigation pane, select **Security**.
+1. In the **Security** pane, select **Data and privacy**.
 1. Select **Advanced connector policies (preview)**.
 1. Define the policy by using the same connector allow and block controls as the environment group experience.
 1. Select **Save** to apply the policy.
