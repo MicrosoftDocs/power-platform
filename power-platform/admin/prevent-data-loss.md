@@ -3,7 +3,7 @@ title: Manage data policies
 description: Learn how to create, edit, and delete data policies, including the default data group for new connectors.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/20/2025
+ms.date: 04/07/2026
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -93,7 +93,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    <tr>
    <td width="20%"> Blockable</td>
-   <td width="80%"> Indicates if the connectors can be blocked or not. For list of connectors that can't be blocked, see <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked"></a>  </td> 
+   <td width="80%"> Indicates if the connectors can be blocked or not. For list of connectors that can't be blocked, see <a href="dlp-connector-classification.md#list-of-connectors-that-you-cant-block"></a>  </td> 
    </tr>
    <tr> 
    <td width="20%"> Class</td>
@@ -139,7 +139,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    <tr>
    <td width="20%"> Set default group </td>
-   <td width="80%"> The group that maps any new connectors added by Power Platform <i>after</i> your data policy is created. Learn more: <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked">Default data group for new connectors</a>      </td>
+   <td width="80%"> The group that maps any new connectors added by Power Platform <i>after</i> your data policy is created. Learn more: <a href="dlp-connector-classification.md#list-of-connectors-that-you-cant-block">Default data group for new connectors</a>      </td>
    </tr>
    <tr>
    <td width="20%"> Search connectors </td>
