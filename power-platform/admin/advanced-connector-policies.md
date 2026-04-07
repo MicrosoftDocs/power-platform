@@ -34,13 +34,13 @@ Key principles of advanced connector policies:
 By adopting advanced connector policies, administrators gain greater control and granularity in securing and managing connector usage while enhancing the overall governance of their Power Platform environments.
 
 > [!IMPORTANT]
-> Advanced connector policies currently apply to **certified connectors only**. Custom connectors and HTTP connectors are not yet supported and are planned as a separate rule type in the future. For governing custom connectors and HTTP connectors today, continue using classic [data policies](prevent-data-loss.md).
+> Advanced connector policies currently apply to **certified connectors only**. Custom connectors and HTTP connectors aren't yet supported. They're planned as a separate rule type in the future. For governing custom connectors and HTTP connectors today, continue using classic [data policies](prevent-data-loss.md).
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Supported connector types
 
-Advanced connector policies are built on the certified connector catalog. Not all connector types from classic data policies are supported in ACP.
+Advanced connector policies are built on the certified connector catalog. ACP doesn't support all connector types from classic data policies.
 
 | Connector type | ACP support | Notes |
 |---|---|---|
@@ -52,23 +52,23 @@ Advanced connector policies are built on the certified connector catalog. Not al
 
 ### Virtual connector transition
 
-Virtual connectors are governance-only constructs in classic data policies that aren't based on a restful API. ACP is designed around the certified connector catalog and doesn't support virtual connectors. The following transition paths apply:
+Virtual connectors are governance-only constructs in classic data policies that aren't based on a RESTful API. ACP is designed around the certified connector catalog and doesn't support virtual connectors. The following transition paths apply:
 
 - **Copilot Studio virtual connectors**: These connectors are evolving into their own dedicated governance rules, separate from ACP. Administrators should continue using classic data policies for Copilot Studio virtual connector governance until the new rules are available.
-- **Desktop Flow virtual connectors**: Desktop Flow connectors are transitioning to certified connectors. Once certified, they'll be manageable through ACP like any other certified connector.
+- **Desktop Flow virtual connectors**: Desktop Flow connectors are transitioning to certified connectors. Once certified, you manage them through ACP like any other certified connector.
 
 ## Configure an advanced connector policy
 
-Advanced connector policies can be configured at the environment group level for bulk deployment or directly on individual environments for targeted governance.
+You can configure advanced connector policies at the environment group level for bulk deployment or directly on individual environments for targeted governance.
 
 ### Environment group configuration
 
-To configure an advanced connector policy for an environment group, complete the following steps.
+To configure an advanced connector policy for an environment group, complete the following steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environment groups**.
-1. In the **Environment groups** page, select the environment group where you want the policy applied.
+1. In the **Environment groups** page, select the environment group where you want to apply the policy.
 1. The environment group's page is displayed. Select the **Rules** tab.
 1. Select **Advanced connector policies (preview)**. The **Advanced connector policies (preview)** pane is displayed.
 1. Define the policy. Keep the following points in mind:
@@ -76,9 +76,9 @@ To configure an advanced connector policy for an environment group, complete the
    - To add new connectors, select **Add connectors** to choose from all certified connectors.
    - To remove connectors, select them and then select **Remove connector**. You can remove any connector to block it.
 1. When all connectors are set as you require, select **Save**.
-1. The environment group's page is redisplayed. After all rules are updated to your requirements, select **Publish rules** in the command bar.
+1. The environment group's page is redisplayed. After you update all rules to your requirements, select **Publish rules** in the command bar.
 
-During publishing, an environment lifecycle operation is performed on every environment that's part of the group. This operation is available in environment history as *Update Managed Environment Settings* and cascades the new connector policy to the design time and runtime infrastructure.
+During publishing, the system performs an environment lifecycle operation on every environment that's part of the group. This operation appears in environment history as *Update Managed Environment Settings* and cascades the new connector policy to the design time and runtime infrastructure.
 
 ### Single environment configuration
 
@@ -89,27 +89,27 @@ You can also configure an advanced connector policy directly on an individual en
 To configure an advanced connector policy for a single environment:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Navigate to the environment where you want to configure the policy.
+1. Go to the environment where you want to configure the policy.
 1. Under **Security**, select **Data and privacy**.
 1. Select **Advanced connector policies (preview)**.
-1. Define the policy using the same connector allow/block controls as the environment group experience.
+1. Define the policy by using the same connector allow and block controls as the environment group experience.
 1. Select **Save** to apply the policy.
 
 :::image type="content" source="media/acp-single-environment.png" alt-text="Configuring an advanced connector policy on a single environment." lightbox="media/acp-single-environment.png":::
 
 > [!NOTE]
-> Each environment supports a maximum of one effective advanced connector policy. This policy is either directly configured on the environment or inherited from an environment group. If an environment is removed from an environment group, it retains its last known ACP configuration from the group. The policy can then be adjusted individually on that environment.
+> Each environment supports a maximum of one effective advanced connector policy. This policy is either directly configured on the environment or inherited from an environment group. If you remove an environment from an environment group, it retains its last known ACP configuration from the group. You can then adjust the policy individually on that environment.
 
 ### Policy status
 
-A **Status** property is displayed at the top of every advanced connector policy panel, indicating whether the rule is **Applied** or **Not applied**. This provides administrators with a quick visual confirmation of the enforcement state for the current scope.
+A **Status** property is displayed at the top of every advanced connector policy panel, indicating whether the rule is **Applied** or **Not applied**. This property provides administrators with a quick visual confirmation of the enforcement state for the current scope.
 
 ### Remove a rule
 
-A **Remove rule** button is available for advanced connector policies in both environment groups and single environments. Selecting this button disables ACP entirely for that scope, removing the policy enforcement.
+Advanced connector policies include a **Remove rule** button for both environment groups and single environments. When you select this button, you disable ACP entirely for that scope and remove the policy enforcement.
 
 > [!TIP]
-> Previously, disabling ACP was only possible through the API or by adding all connectors as allowed, which wasn't an intuitive experience. The **Remove rule** button provides a straightforward way to disable ACP when needed.
+> Previously, you could disable ACP only through the API or by adding all connectors as allowed, which wasn't an intuitive experience. The **Remove rule** button provides a straightforward way to disable ACP when needed.
 
 ## More visibility and control
 
@@ -119,7 +119,7 @@ In [data policies](managed-environment-data-policies.md), customers couldn't see
 
 ## Easier management experience
 
-Based on customer feedback, the management experience is drastically simplified by making the policy a strict *allowlist*. When configured, all new connectors are blocked. If you configure the allowed actions on a given connector, then no new actions, triggers, or internal actions are allowed. The concept of the business and nonbusiness categories in data policies isn't brought forward, as it wasn't deemed effective in policy management.
+Based on customer feedback, the management experience is drastically simplified by making the policy a strict *allowlist*. When you configure it, you block all new connectors. If you configure the allowed actions on a given connector, then no new actions, triggers, or internal actions are allowed. The concept of the business and nonbusiness categories in data policies isn't brought forward, as it wasn't deemed effective in policy management.
 
 ## Proactive policy management
 
@@ -135,27 +135,27 @@ Within advanced connector policies, administrators can see MCP servers listed al
 
 ## ACP-only mode
 
-ACP-only mode allows administrators to skip classic data policy evaluation entirely and rely solely on advanced connector policies for connector governance. This mode is available at both the environment group level and the single environment level.
+ACP-only mode allows administrators to skip classic data policy evaluation entirely and rely solely on advanced connector policies for connector governance. You can enable this mode at both the environment group level and the single environment level.
 
-When ACP-only mode is enabled:
+When you enable ACP-only mode:
 
 - The policy engine evaluates only ACP rules for the affected environments.
 - All classic data policies are ignored for those environments, even if they're still configured.
 - Data policy configurations aren't deleted. They remain in place but aren't enforced while ACP-only mode is active.
 
 > [!IMPORTANT]
-> ACP-only mode is recommended for organizations that have fully migrated their connector governance to ACP and want to eliminate the complexity of running both policy systems simultaneously.
+> Use ACP-only mode for organizations that fully migrated their connector governance to ACP and want to eliminate the complexity of running both policy systems simultaneously.
 
 ### Why use ACP-only mode?
 
-Running classic data policies and ACP side by side (mixed mode) can create confusion for administrators and makers. Policy violations may come from either system, making it harder to understand and troubleshoot enforcement behavior. ACP-only mode provides a clean break by consolidating governance into a single policy framework.
+Running classic data policies and ACP side by side (mixed mode) can create confusion for administrators and makers. Policy violations can come from either system, making it harder to understand and troubleshoot enforcement behavior. ACP-only mode provides a clean break by consolidating governance into a single policy framework.
 
 ### Enable ACP-only mode
 
-ACP-only mode can be configured:
+You can configure ACP-only mode:
 
-- **On an environment group**: Under the environment group's **Rules** tab, enable the **Advanced connector policies only** rule. This applies to all environments in the group.
-- **On a single environment**: Under the environment's **Security** > **Data and privacy** settings, enable the **Advanced connector policies only** option. This applies to that environment only.
+- **On an environment group**: Under the environment group's **Rules** tab, enable the **Advanced connector policies only** rule. This setting applies to all environments in the group.
+- **On a single environment**: Under the environment's **Security** > **Data and privacy** settings, enable the **Advanced connector policies only** option. This setting applies to that environment only.
 
 ## Data policy mixed mode
 
@@ -164,7 +164,7 @@ Advanced connector policies can run in mixed mode alongside classic data policie
 At runtime, when a connector operation is invoked, it queries the effective policy for the current hosting environment. This query includes a combined policy that merges the most restrictive settings from both classic data policies and ACP to provide full enforcement.
 
 > [!TIP]
-> Mixed mode is useful during migration from classic data policies to ACP. Once your organization has fully adopted ACP, consider enabling [ACP-only mode](#acp-only-mode) to simplify your governance posture and eliminate the dual-evaluation complexity.
+> Mixed mode is useful during migration from classic data policies to ACP. Once your organization fully adopts ACP, consider enabling [ACP-only mode](#acp-only-mode) to simplify your governance posture and eliminate the dual-evaluation complexity.
 
 ## Design-time enforcement
 
@@ -203,7 +203,7 @@ Capabilities include:
 :::image type="content" source="media/acp-cpf-phase1.png" alt-text="Connection parameter filtering for SQL Server showing authentication type toggles in the Power Platform admin center." lightbox="media/acp-cpf-phase1.png":::
 
 > [!NOTE]
-> Connection parameter filtering does not store or inspect secrets. Only non-secret metadata associated with the connection is evaluated by the policy engine.
+> Connection parameter filtering doesn't store or inspect secrets. The policy engine only evaluates non-secret metadata associated with the connection.
 
 ### Phase 2 (planned)
 
@@ -214,14 +214,14 @@ Phase 2 extends connection parameter filtering to include:
 
 ## Known limitations
 
-While advanced connector policies offer robust capabilities, there are a few limitations to consider:
+While advanced connector policies offer robust capabilities, consider the following limitations:
 
-- **Certified connectors only**: ACP currently supports certified connectors only. Custom connector and HTTP connector support is planned for a future date as a separate rule type.
-- **Virtual connectors**: Virtual connectors aren't supported by ACP and won't be supported in the future. See [Virtual connector transition](#virtual-connector-transition) for migration paths.
-- **Connection parameter filtering**: Connection parameter filtering Phase 1 is in private preview. Endpoint filtering from classic data policies isn't available in ACP. See [Connection parameter filtering](#connection-parameter-filtering) for the roadmap.
+- **Certified connectors only**: ACP currently supports certified connectors only. Custom connector and HTTP connector support are planned for a future date as a separate rule type.
+- **Virtual connectors**: ACP doesn't support virtual connectors and won't support them in the future. For migration paths, see [Virtual connector transition](#virtual-connector-transition).
+- **Connection parameter filtering**: Connection parameter filtering Phase 1 is in private preview. Endpoint filtering from classic data policies isn't available in ACP. For the roadmap, see [Connection parameter filtering](#connection-parameter-filtering).
 - **Managed Environments and nonblockable connectors**: In single environment mode, ACP works on both Managed Environments and non-Managed Environments so that all customers using classic data policies can migrate to ACP without extra cost. However, on non-Managed Environments, the nonblockable connectors remain nonblockable. On Managed Environments (single or environment group), you can block any connector or any action, including those that are nonblockable in classic data policies.
 
 ## Provide feedback
 
-Trying out the new advanced connector policies? The product team would love your feedback! Join the Viva Engage network for keeping the conversation going under non-disclosure agreement:
+Are you trying out the new advanced connector policies? The product team would love your feedback! Join the Viva Engage network for keeping the conversation going under non-disclosure agreement:
 [Public Preview - Advanced Connector Policies](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=215134347264&view=all).
