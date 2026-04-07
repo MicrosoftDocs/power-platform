@@ -60,6 +60,10 @@
                       href: update-apps-to-unified-interface.md
                     - name: Enable the hybrid experience
                       href: enable-hybrid-experience.md
+            - name: Admin notifications and announcements (preview)
+              items:
+              - name: Overview (preview)
+                href: admin-notifications-announcements.md
         - name: Licensing
           items:
             - name: Overview
@@ -460,7 +464,7 @@
               href: monitoring/monitoring-overview.md
             - name: View event logs and error logs
               href: monitoring/logs.md
-            - name: Create alerts for your resources (preview)
+            - name: Create alerts for your resources
               href: monitoring/alerts.md
             - name: Metrics and recommendations
               items:
@@ -1164,6 +1168,8 @@
           items:
             - name: Overview of unified admin experience for finance and operations apps
               href: unified-experience/finance-operations-apps-overview.md
+            - name: Unified environment types and templates
+              href: unified-experience/unified-environment-types-and-templates.md
             - name: Administration for partners and systems implementers
               href: unified-experience/partners-systems-implementers.md
             - name: Admin trials for finance and operations apps
@@ -1261,12 +1267,16 @@
               href: for-partners-delegated-administrator.md
         - name: Support
           items:
-            - name: Get Support
-              href: get-help-support.md
             - name: Support overview
               href: support-overview.md
+            - name: Get support
+              href: get-help-support.md
+            - name: Manage support requests
+              href: manage-support-requests.md
             - name: Use live chat with persistence
               href: live-chat-support.md
+            - name: Manage support requests
+              href: manage-support-requests.md
             - name: View known issues
               href: view-known-issues.md
             - name: View service health
