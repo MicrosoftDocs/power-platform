@@ -3,7 +3,7 @@ title: Advanced connector policies (preview)
 description: Learn how to use Advanced connector policies to govern connector usage in Power Platform.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/29/2026
+ms.date: 04/07/2026
 author: laneswenka
 ms.author: laswenka
 ms.reviewer: sericks
@@ -181,9 +181,9 @@ Design-time enforcement is rolling out across maker portals in the following ord
 
 Design-time enforcement provides consistent violation messaging across the following surfaces:
 
-- **Flow Checker** in Power Automate
-- **Email notifications** sent to makers when violations are detected
-- **API error responses** returned by the policy evaluation endpoint
+- **Flow Checker** in Power Automate.
+- **Email notifications** sent to makers when violations are detected.
+- **API error responses** returned by the policy evaluation endpoint.
 
 This shift-left approach reduces maker confusion by surfacing policy boundaries early in the development process, eliminating the scenario where makers build and publish resources only to discover violations at runtime.
 
