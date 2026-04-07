@@ -3,7 +3,7 @@ title: Data policies
 description: You can create data policies that can act as guardrails to help reduce the risk of users from unintentionally exposing organizational data.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 08/12/2025
+ms.date: 04/07/2026
 author: laneswenka
 ms.subservice: admin
 ms.author: laswenka
