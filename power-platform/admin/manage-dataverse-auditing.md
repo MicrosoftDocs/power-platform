@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/03/2026
+ms.date: 04/08/2026
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
@@ -54,7 +54,7 @@ You can audit the following operations:
 - Deletion of audit logs.
 - For changes made to entity fields that you can localize, such as the product entity name or description fields, the locale ID (LCID) appears in the audit record.
 
-Auditing isn't supported on table or column definition changes or during authentication. Furthermore, auditing doesn't support retrieve operations or export operations. In addition to Dataverse auditing, you can turn on [Dataverse and model-driven apps activity logging](enable-use-comprehensive-auditing.md) to log data retrieve operations and export operations.
+Auditing isn't supported on table or column definition changes or during authentication. Furthermore, auditing doesn't support retrieve operations or export operations. In addition to Dataverse auditing, you can turn on [Dataverse and model-driven apps activity logging](activity-logging-auditing/activity-logs-dataverse-model-driven-apps.md) to log data retrieve operations and export operations.
 
 The following list enumerates the noncustomizable tables that you can't audit. This list was obtained by testing for a `CanModifyAuditSettings` column value of *false* on each table's definition:
 
@@ -305,7 +305,7 @@ System administrators or customizers can change the default audit settings for t
 Learn more in [Dataverse developer guide: Configure auditing > Configure tables and columns](/power-apps/developer/data-platform/auditing/configure#configure-tables-and-columns).
 
 > [!NOTE]
-> When you turn off auditing for a column, the before-and-after values are sent as an "*" to [Purview activity logging](enable-use-comprehensive-auditing.md).
+> When you turn off auditing for a column, the before-and-after values are sent as an "*" to Microsoft Purview. Learn more about [Column-level security to control access](field-level-security.md).
 
 ### Turn on or off auditing for Choice data type's original label
 
