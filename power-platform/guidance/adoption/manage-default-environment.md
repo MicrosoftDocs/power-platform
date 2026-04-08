@@ -28,7 +28,7 @@ Maintain robust security and governance by making use of managed environment fea
 
 Connectors are Power Platform services that integrate apps and flows with other services. Power Platform administrators can use [data policies](../../admin/wp-data-loss-prevention.md) to control which integrations are permitted in each environment.
 
-Some connectors that drive core Power Platform functionality [can't be blocked](../../admin/dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked). You need to know if these core connectors are being used so that you can provide policy guidance to your makers. For example, you might want to track the apps and flows in the default environment that use the Exchange connector and direct the makers to move to a different environment that allows outbound emails.
+Some connectors that drive core Power Platform functionality [can't be blocked](../../admin/dlp-connector-classification.md#list-of-connectors-that-you-cant-block). You need to know if these core connectors are being used so that you can provide policy guidance to your makers. For example, you might want to track the apps and flows in the default environment that use the Exchange connector and direct the makers to move to a different environment that allows outbound emails.
 
 The CoE Starter Kit contains schema and flows to report the details of all connectors used by each app or flow in all environments. The data reported in the CoE dashboard is refreshed every 24 hours. You can also search for related flows and apps directly from the Dataverse environment where the CoE Starter Kit is installed. Learn more about [tracking connectors with the CoE Power BI dashboard](../coe/power-bi-monitor.md).
 
