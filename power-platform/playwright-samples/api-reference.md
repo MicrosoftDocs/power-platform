@@ -2,7 +2,7 @@
 title: API reference for Power Platform Playwright Samples
 description: Reference documentation for all classes, methods, and types exported by the power-platform-playwright-toolkit package.
 author: deepakkamboj
-ms.author: deepakkamboj
+ms.author: dekamb
 ms.topic: reference
 ms.date: 04/07/2025
 ms.subservice: developer

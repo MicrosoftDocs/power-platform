@@ -2,7 +2,7 @@
 title: API testing through form context in Power Platform Playwright Samples
 description: Use the FormComponent execute method to run Xrm API calls in-browser and validate Dataverse business logic without navigating the UI.
 author: deepakkamboj
-ms.author: deepakkamboj
+ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/07/2025
 ms.subservice: developer
@@ -186,7 +186,7 @@ The `execute()` callback receives a standard Dynamics 365 form context object. K
 | `data.entity.getEntityName()` | Get the logical entity name |
 | `data.save()` | Save the form programmatically |
 
-For the full Xrm Client API reference, see [Microsoft Dataverse client API reference](https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference).
+For the full Xrm Client API reference, see [Microsoft Dataverse client API reference](/power-apps/developer/model-driven-apps/clientapi/reference).
 
 ## Next steps
 
@@ -198,4 +198,4 @@ For the full Xrm Client API reference, see [Microsoft Dataverse client API refer
 
 - [FormComponent API](api-reference.md#formcomponent)
 - [Sample tests](samples.md)
-- [Xrm Client API reference](https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference)
+- [Xrm Client API reference](/power-apps/developer/model-driven-apps/clientapi/reference)

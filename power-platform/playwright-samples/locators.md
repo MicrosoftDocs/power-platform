@@ -2,7 +2,7 @@
 title: Locators in Power Platform Playwright Samples
 description: Learn how to use the built-in locator classes, selector objects, and LocatorUtils to write reliable, maintainable selectors for Power Platform canvas and model-driven apps.
 author: deepakkamboj
-ms.author: deepakkamboj
+ms.author: dekamb
 ms.topic: concept-article
 ms.date: 04/07/2025
 ms.subservice: developer
@@ -193,7 +193,7 @@ const menuItem = page.locator(LocatorUtils.automationKey('contextualMenu'));
 const button = page.locator(LocatorUtils.ariaLabel('Save'));
 // => [aria-label="Save"]
 
-// Parameterised selector template
+// Parameterized selector template
 const appLink = page.locator(
   LocatorUtils.formatSelector('[role="rowheader"] a:has-text("{0}")', 'My App')
 );
@@ -216,7 +216,7 @@ const root = page.locator(LocatorUtils.id('ApplicationShell'));
 | `automationKey(key)` | `[data-automation-key="key"]` | Fluent UI list/menu items |
 | `ariaLabel(label)` | `[aria-label="label"]` | Elements with aria-label (not associated `<label>`) |
 | `dataTestId(id)` | `[data-test-id="id"]` | Power Apps portal test hooks |
-| `formatSelector(tpl, ...args)` | Template with `{0}`, `{1}` replaced | Parameterised CSS selectors |
+| `formatSelector(tpl, ...args)` | Template with `{0}`, `{1}` replaced | Parameterized CSS selectors |
 | `className(name)` | `.name` or `[class*="name"]` | Class-based selection (use sparingly) |
 | `id(id)` | `#id` | Element ID (use sparingly) |
 

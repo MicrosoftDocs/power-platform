@@ -2,7 +2,7 @@
 title: Authentication guide for Power Platform Playwright Samples
 description: Step-by-step instructions to set up password, certificate, and Azure Key Vault authentication for local development and CI/CD pipelines.
 author: deepakkamboj
-ms.author: deepakkamboj
+ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/07/2025
 ms.subservice: developer

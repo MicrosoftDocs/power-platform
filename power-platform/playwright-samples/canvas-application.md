@@ -2,7 +2,7 @@
 title: Test canvas apps with Power Platform Playwright Samples
 description: Write end-to-end tests for Power Apps canvas apps using the CanvasAppPage object, iframe scoping, and data-control-name selectors.
 author: deepakkamboj
-ms.author: deepakkamboj
+ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/07/2025
 ms.subservice: developer

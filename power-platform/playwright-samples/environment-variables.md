@@ -2,7 +2,7 @@
 title: Environment variables reference for Power Platform Playwright Samples
 description: Complete reference for all environment variables used by Power Platform Playwright Samples, including authentication, app URLs, and configuration flags.
 author: deepakkamboj
-ms.author: deepakkamboj
+ms.author: dekamb
 ms.topic: reference
 ms.date: 04/07/2025
 ms.subservice: developer

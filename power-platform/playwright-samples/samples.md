@@ -2,7 +2,7 @@
 title: Sample tests for Power Platform Playwright Samples
 description: Explore ready-to-run Playwright tests for canvas apps, model-driven apps, and custom pages using the Northwind Traders sample data.
 author: deepakkamboj
-ms.author: deepakkamboj
+ms.author: dekamb
 ms.topic: sample
 ms.date: 04/07/2025
 ms.subservice: developer

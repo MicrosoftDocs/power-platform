@@ -2,7 +2,7 @@
 title: AI-assisted testing overview for Power Platform Playwright Samples
 description: Use generative AI tools — Playwright MCP server, codegen, and test agents — to author, inspect, and maintain Playwright tests for Power Platform apps.
 author: deepakkamboj
-ms.author: deepakkamboj
+ms.author: dekamb
 ms.topic: overview
 ms.date: 04/07/2025
 ms.subservice: developer

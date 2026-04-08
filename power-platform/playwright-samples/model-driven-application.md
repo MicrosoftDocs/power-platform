@@ -2,7 +2,7 @@
 title: Test model-driven apps with Power Platform Playwright Samples
 description: Write end-to-end tests for Dynamics 365 and model-driven Power Apps using the ModelDrivenAppPage, GridComponent, and FormComponent classes.
 author: deepakkamboj
-ms.author: deepakkamboj
+ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/07/2025
 ms.subservice: developer
@@ -171,13 +171,13 @@ test('should create, read, update, and delete an order', async ({ page, context 
   });
   const mda = app.getModelDrivenAppPage();
 
-  // CREATE
-  await mda.navigateToFormView(ENTITY); // opens new record form
+  // Step 1: Create a new order record
+  await mda.navigateToFormView(ENTITY);
   await page.locator('input[data-id="nwind_ordernumber.fieldControl-text-box-text"]').fill('ORD-TEST-001');
   await page.locator('button[aria-label*="Save"]').first().click();
   await page.waitForTimeout(3000);
 
-  // READ
+  // Step 2: Read the record in the grid
   await mda.navigateToGridView(ENTITY);
   await mda.grid.waitForGridLoad();
   await mda.grid.filterByKeyword('ORD-TEST-001');
@@ -187,20 +187,20 @@ test('should create, read, update, and delete an order', async ({ page, context 
   const cellValue = await mda.grid.getCellValue(0, 'Order Number');
   expect(cellValue).toContain('ORD-TEST-001');
 
-  // UPDATE
+  // Step 3: Update the order number
   await mda.grid.openRecord({ rowNumber: 0 });
   await page.locator('input[data-id="nwind_ordernumber.fieldControl-text-box-text"]').fill('ORD-TEST-001-UPDATED');
   await page.locator('button[aria-label*="Save"]').first().click();
   await page.waitForTimeout(3000);
 
-  // DELETE
+  // Step 4: Delete the record
   await mda.navigateToGridView(ENTITY);
   await mda.grid.waitForGridLoad();
   await mda.grid.filterByKeyword('ORD-TEST-001-UPDATED');
   await mda.grid.waitForGridLoad();
   await mda.grid.selectRow(0);
   await page.locator('button[aria-label*="Delete"]').first().click();
-  // Confirm deletion dialog
+  // Confirm the deletion dialog
   const dialog = page.locator('[role="dialog"]');
   await dialog.locator('button:has-text("Delete")').click();
 });

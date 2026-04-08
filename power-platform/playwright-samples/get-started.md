@@ -2,7 +2,7 @@
 title: Get started with Power Platform Playwright Samples
 description: Clone the repository, configure your environment, authenticate, and run your first end-to-end test against a Power Platform app in under 15 minutes.
 author: deepakkamboj
-ms.author: deepakkamboj
+ms.author: dekamb
 ms.topic: get-started
 ms.date: 04/07/2025
 ms.subservice: developer

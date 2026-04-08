@@ -2,7 +2,7 @@
 title: Write, debug, and run tests locally with Power Platform Playwright Samples
 description: Set up your local development environment to write, run, and debug Power Platform Playwright tests using VS Code, Claude Code, and GitHub Copilot.
 author: deepakkamboj
-ms.author: deepakkamboj
+ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/07/2025
 ms.subservice: developer

@@ -2,7 +2,7 @@
 title: AI test authoring with Copilot for Power Platform Playwright Samples
 description: Use Playwright codegen and AI coding assistants to record interactions and generate Playwright tests for Power Platform canvas and model-driven apps.
 author: deepakkamboj
-ms.author: deepakkamboj
+ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/07/2025
 ms.subservice: developer

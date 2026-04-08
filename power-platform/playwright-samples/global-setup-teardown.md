@@ -2,7 +2,7 @@
 title: Global setup and teardown in Power Platform Playwright Samples
 description: Understand how globalSetup and globalTeardown work in the Power Platform Playwright Samples project, and learn how to extend them for authentication, data seeding, environment validation, and cleanup.
 author: deepakkamboj
-ms.author: deepakkamboj
+ms.author: dekamb
 ms.topic: concept-article
 ms.date: 04/07/2025
 ms.subservice: developer
