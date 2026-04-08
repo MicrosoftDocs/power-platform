@@ -64,7 +64,8 @@ export default defineConfig({
       testMatch: '**/mda/**/*.test.ts',
     },
   ],
-  globalSetup: './global-setup.ts',
+  globalSetup: './globals/global-setup',
+  globalTeardown: './globals/global-teardown',
 });
 ```
 
