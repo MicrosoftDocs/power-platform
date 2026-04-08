@@ -3,7 +3,7 @@ title: Rules for environment groups
 description: Learn how to govern your Managed Environments with rules in bulk.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/19/2025
+ms.date: 04/07/2026
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -12,6 +12,7 @@ ms.custom: "admin-security"
 search.audienceType: 
   - admin
 contributors:
+  - jordanchodakWork
   - JesseParsons
   - arjunmayur
   - ASheehi1
@@ -45,6 +46,8 @@ The following [rules](environment-groups.md#rules) can be applied to [environmen
 | 19 | [Solution checker enforcement](managed-environment-solution-checker.md) |
 | 20 | [Unmanaged customizations](../alm/block-unmanaged-customizations.md) |
 | 21 | [Usage insights](managed-environment-usage-insights.md) |
+| 22 | [Power Apps code apps](/power-apps/developer/code-apps/overview) |
+| 23 | [Content security policy](/power-platform/admin/content-security-policy) |
 
 > [!NOTE]
 > The rules that have "(preview)" in their name are in public preview, while rules without it are considered generally available.
