@@ -82,7 +82,8 @@
             "admin/**/*.md": "admin",
             "developer/**/*.md": "developer",
             "well-architected/**/*.md": "well-architected",
-            "test-engine/**/*.md": "developer"
+            "test-engine/**/*.md": "developer",
+            "playwright-samples/**/*.md": "developer"
          },
          "search.app": {
             "power-fx/**/*.md": [
@@ -109,6 +110,11 @@
                "dataverse-docs",
                "powerpages-docs",
                "powervirtualagents-docs"
+            ],
+            "playwright-samples/**/*.md": [
+               "powerapps-docs",
+               "powerautomate-docs",
+               "dataverse-docs"
             ]
          }
       },
