@@ -47,12 +47,12 @@ export default globalSetup;
 
 ```typescript
 // packages/e2e-tests/globals/global-teardown.ts
-async function globalSetup() {
+async function globalTeardown() {
   console.log('===============================================');
   console.log('✅ Teardown Playwright Test Environment');
   console.log('===============================================');
 }
-export default globalSetup;
+export default globalTeardown;
 ```
 
 Both are currently minimal — they print a banner and exit. The actual pre-flight work, which is auth state validation, runs in `playwright.config.ts` before `globalSetup` is called:
