@@ -10,11 +10,11 @@ ms.subservice: developer
 
 # API testing through form context
 
-The `FormComponent.execute()` method lets you run arbitrary JavaScript inside the Dynamics 365 form context — directly against the Xrm API. This opens a hybrid testing approach: use Playwright to navigate to a record, then use `execute()` to validate or manipulate data programmatically, bypassing UI interactions that would otherwise be slow or fragile.
+The `FormComponent.execute()` method runs arbitrary JavaScript inside the Dynamics 365 form context, directly against the Xrm API. This enables a hybrid testing approach. Use Playwright to navigate to a record, then use `execute()` to validate or manipulate data programmatically. This approach replaces UI interactions that are slow or unreliable.
 
 ## How it works
 
-When a model-driven app record is open in the browser, the Xrm object is available on `window.Xrm`. The `execute()` method bridges Playwright's Node.js context and the browser's page context, injecting your function and returning its result:
+When a model-driven app record is open in the browser, the Xrm object is available on `window.Xrm`. The `execute()` method bridges the Playwright Node.js context and the browser page context. It injects your function into the browser and returns the result:
 
 ```typescript
 const result = await modelDrivenApp.form.execute(async (formContext) => {
@@ -64,7 +64,7 @@ await mda.form.execute((ctx) => {
 ```
 
 > [!NOTE]
-> Setting values via `execute()` bypasses browser input events. For fields with `onChange` business rules, this is equivalent to what a plugin or script would do. For fields that depend on browser input focus/blur events, use `mda.form.setAttribute()` which triggers the UI path.
+> Setting values via `execute()` bypasses browser input events. For fields with `onChange` business rules, this is equivalent to what a plug-in or script would do. For fields that depend on browser input focus or blur events, use `mda.form.setAttribute()`, which triggers the UI path.
 
 ## Validate business logic rules
 
@@ -118,9 +118,9 @@ expect(result.length).toBeGreaterThan(0);
 > [!IMPORTANT]
 > `Xrm.WebApi` calls run in the browser context and are subject to Dataverse API limits and the test user's security role. They count against your API call quota.
 
-## Test plugin side effects
+## Test plug-in side effects
 
-After saving a record, use `execute()` to verify that a plugin correctly updated a related field:
+After saving a record, use `execute()` to verify that a plug-in correctly updated a related field:
 
 ```typescript
 // Create a new order via UI
@@ -141,7 +141,7 @@ expect(calculatedTotal).toBeGreaterThan(0);
 
 ## Combine UI navigation with API assertions
 
-A common pattern is to drive navigation through the UI, then validate state through the API:
+A common pattern is to drive navigation through the UI and then validate state through the API:
 
 ```typescript
 test('submit order sets status to Pending', async ({ page, context }) => {
@@ -170,7 +170,7 @@ test('submit order sets status to Pending', async ({ page, context }) => {
 
 ## Form context API reference
 
-The `execute()` callback receives a standard Dynamics 365 `Xrm.Form.FormContext`. Key methods:
+The `execute()` callback receives a standard Dynamics 365 form context object. Key methods:
 
 | Method | Description |
 |---|---|

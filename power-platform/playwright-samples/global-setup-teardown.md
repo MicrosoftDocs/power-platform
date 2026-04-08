@@ -10,7 +10,7 @@ ms.subservice: developer
 
 # Global setup and teardown
 
-Playwright's `globalSetup` and `globalTeardown` hooks run **once** per test run — before the first test starts and after the last test finishes. They run in the main Node.js process, not inside a browser context, making them the right place for work that applies to the whole suite: validating credentials, seeding reference data, or cleaning up test artifacts.
+Playwright's `globalSetup` and `globalTeardown` hooks run **once** per test run — before the first test starts and after the last test finishes. They run in the main Node.js process, not inside a browser context. This makes them the right place for work that applies to the whole suite, such as validating credentials, seeding reference data, or cleaning up test artifacts.
 
 This article explains how these hooks work in this project and walks through the scenarios where you should extend them.
 
@@ -55,7 +55,7 @@ async function globalSetup() {
 export default globalSetup;
 ```
 
-Both are currently minimal — they print a banner and exit. The real pre-flight work (auth state validation) runs in `playwright.config.ts` itself, before `globalSetup` is even called:
+Both are currently minimal — they print a banner and exit. The actual pre-flight work, which is auth state validation, runs in `playwright.config.ts` before `globalSetup` is called:
 
 ```typescript
 // playwright.config.ts — runs at config evaluation time
@@ -151,7 +151,7 @@ export default async function globalSetup() {
 }
 ```
 
-Throwing from `globalSetup` aborts the entire run with a clear error, rather than letting tests fail with cryptic selector timeouts.
+Throwing from `globalSetup` aborts the entire run with a clear error message, instead of letting tests fail with cryptic selector timeouts.
 
 ## Scenario 3: Seed reference data in Dataverse
 
@@ -316,7 +316,7 @@ process.env.MY_SHARED_VALUE = 'hello';
 const value = process.env.MY_SHARED_VALUE; // 'hello'
 ```
 
-Simple, works for strings and GUIDs. Doesn't survive serialisation for complex objects.
+Simple, works for strings and GUIDs. Doesn't survive serialization for complex objects.
 
 ### Pattern 2: Write to a JSON file
 
@@ -336,7 +336,7 @@ Use for structured data that multiple test files need. Add `.playwright-shared/`
 
 ## Extend the current project setup
 
-The current `globals/global-setup.ts` is a stub. To add a new behaviour without replacing the existing banner logging:
+The current `globals/global-setup.ts` is a stub. To add a new behavior without replacing the existing banner logging:
 
 ```typescript
 // globals/global-setup.ts

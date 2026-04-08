@@ -70,9 +70,9 @@ export default defineConfig({
 
 ## Key configuration options
 
-### fullyParallel and workers
+### `fullyParallel` and `workers`
 
-Power Platform tests share a single Dataverse environment. Running tests in parallel creates data conflicts — for example, two tests deleting the same record. Set both to serialize execution:
+Power Platform tests share a single Dataverse environment. Running tests in parallel creates data conflicts, such as two tests deleting the same record. Set both options to serialize execution:
 
 ```typescript
 fullyParallel: false,
@@ -82,15 +82,15 @@ workers: 1,
 > [!NOTE]
 > If you have multiple environments, you can increase `workers` and isolate each project to a different environment using separate `.env` files or environment-level variables.
 
-### retries
+### `retries`
 
-Retries mask flakiness in CI. Use `retries: 1` in CI to handle transient network issues, but set `retries: 0` locally to get immediate feedback:
+Retries can mask flakiness in CI. Use `retries: 1` in CI to handle transient network issues. Set `retries: 0` locally to get immediate feedback:
 
 ```typescript
 retries: process.env.CI ? 1 : 0,
 ```
 
-### trace, screenshot, video
+### `trace`, `screenshot`, `video`
 
 Capture diagnostics only on failure to save disk space:
 
@@ -102,9 +102,9 @@ video: 'retain-on-failure',
 
 In CI, artifacts are uploaded after the test run. See [CI/CD integration](cicd.md).
 
-### projects
+### `projects`
 
-Use Playwright projects to separate canvas and model-driven test suites. Each project can have a different storage state:
+Use Playwright projects to separate canvas and model-driven test suites. Each project can use a different storage state:
 
 ```typescript
 projects: [
@@ -128,9 +128,9 @@ npx playwright test --project=canvas
 npx playwright test --project=mda
 ```
 
-## globalSetup
+## `globalSetup`
 
-The global setup script runs once before all tests. It validates authentication state and runs headless auth if storage state is expired or missing:
+The global setup script runs once before all tests. It validates authentication state and runs headless auth if the storage state is expired or missing:
 
 ```typescript
 // global-setup.ts
@@ -147,7 +147,7 @@ The validation checks:
 - MSAL access token is not expired (canvas/Gen UX tests)
 - CRM session cookies are present and valid (MDA tests)
 
-## tsconfig.json
+## `tsconfig.json`
 
 TypeScript configuration for the test package:
 
@@ -167,9 +167,9 @@ TypeScript configuration for the test package:
 }
 ```
 
-## .env file
+## `.env` file
 
-The `.env` file at `packages/e2e-tests/.env` sets environment variables for local runs. See [Environment variables](environment-variables.md) for the complete reference.
+The `.env` file at `packages/e2e-tests/.env` sets environment variables for local runs. For the complete reference, see [Environment variables](environment-variables.md).
 
 ```ini
 MS_AUTH_EMAIL=testuser@contoso.com
@@ -181,7 +181,7 @@ MODEL_DRIVEN_APP_URL=https://<org>.crm.dynamics.com/main.aspx?appid=<app-id>
 CUSTOM_PAGE_NAME=AccountsCustomPage
 ```
 
-## package.json scripts
+## `package.json` scripts
 
 Scripts available in `packages/e2e-tests/package.json`:
 

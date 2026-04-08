@@ -10,7 +10,14 @@ ms.subservice: developer
 
 # Locators
 
-The toolkit provides four layers of locator support: Playwright's built-in semantic locators, static selector objects for each app surface, a `BaseLocators` class for building custom page objects, and `LocatorUtils` helpers for constructing CSS selector strings. Understanding all four layers lets you pick the right tool for each situation and write selectors that are resilient to DOM changes.
+The toolkit provides four layers of locator support:
+
+- Playwright's built-in semantic locators for standard HTML and Fluent UI elements
+- Static selector objects for each app surface
+- A `BaseLocators` class for building custom page objects
+- `LocatorUtils` helpers for constructing CSS selector strings
+
+Understanding all four layers helps you choose the right tool for each situation and write selectors that resist DOM changes.
 
 ## Locator priority
 
@@ -217,7 +224,7 @@ const root = page.locator(LocatorUtils.id('ApplicationShell'));
 
 ## PowerAppsPageSelectors — Maker Portal selectors
 
-`PowerAppsPageSelectors` is a static object of CSS selector strings organised by portal surface. Use it when writing tests that interact with the Power Apps maker portal itself (not the running app).
+`PowerAppsPageSelectors` is a static object of CSS selector strings organized by portal surface. Use it when writing tests that interact with the Power Apps maker portal itself (not the running app).
 
 ```typescript
 import { PowerAppsPageSelectors } from 'power-platform-playwright-toolkit';
@@ -278,7 +285,7 @@ await portalLocators.canvasDesignerIframe.waitFor({ state: 'visible' });
 
 ## ModelDrivenAppLocators — Runtime selectors
 
-`ModelDrivenAppLocators` covers the model-driven app runtime: the sitemap, grid, form, command bar, and dialogs. The `GridComponent` and `FormComponent` use these internally — use them directly only when you need a selector the component doesn't expose.
+`ModelDrivenAppLocators` covers the model-driven app runtime: the sitemap, grid, form, command bar, and dialogs. The `GridComponent` and `FormComponent` use these internally. Use them directly only when you need a selector that the component doesn't expose.
 
 ```typescript
 import { ModelDrivenAppLocators } from 'power-platform-playwright-toolkit';
@@ -315,7 +322,7 @@ await deleteDialog.locator(ModelDrivenAppLocators.DeleteDialog.DeleteButton).cli
 
 ## CanvasAppLocators — Studio selectors
 
-`CanvasAppLocators` covers the canvas app studio interface (for tests that edit apps, not play them). The runtime canvas app is accessed through `iframe[name="fullscreen-app-host"]` using `data-control-name` attributes, not through these studio selectors.
+`CanvasAppLocators` covers the canvas app studio interface for tests that edit apps, not play them. The runtime canvas app is accessed through `iframe[name="fullscreen-app-host"]` using `data-control-name` attributes, not through these studio selectors.
 
 ```typescript
 import { CanvasAppLocators } from 'power-platform-playwright-toolkit';
@@ -357,7 +364,7 @@ getCanvasDataTestId('my-hook')      // => [data-testid="my-hook"]
 
 ## iframe scoping
 
-All canvas app play-mode selectors must be scoped to the canvas iframe before they can match:
+All canvas app play-mode selectors must be scoped to the canvas iframe to match elements correctly:
 
 ```typescript
 // Get the frame locator
@@ -386,7 +393,7 @@ const item = gallery
 
 ## Chaining and filtering
 
-Playwright locators compose cleanly. Use these patterns to narrow selections without resorting to `nth-child`:
+Playwright locators compose cleanly. Use these patterns to narrow selections without using `nth-child`:
 
 ```typescript
 // Filter a list to the item that contains specific text
