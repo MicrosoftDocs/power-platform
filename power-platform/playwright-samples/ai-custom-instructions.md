@@ -1,11 +1,11 @@
 ---
 title: Custom instructions for AI agents in Power Platform Playwright Samples
 description: Write CLAUDE.md, copilot-instructions.md, and agents.md files that teach AI coding assistants your project conventions for generating Power Platform Playwright tests.
-author: microsoft
-ms.author: deepak.kamboj
+author: deepakkamboj
+ms.author: deepakkamboj
 ms.topic: how-to
 ms.date: 04/07/2025
-ms.subservice: power-platform-playwright-samples
+ms.subservice: developer
 ---
 
 # Custom instructions for AI agents

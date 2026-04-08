@@ -1,11 +1,11 @@
 ---
 title: Authentication overview for Power Platform Playwright Samples
 description: Understand how Power Platform Playwright Samples manages authentication across the Maker Portal and Dynamics 365 domains using storage state files.
-author: microsoft
-ms.author: deepak.kamboj
+author: deepakkamboj
+ms.author: deepakkamboj
 ms.topic: conceptual
 ms.date: 04/07/2025
-ms.subservice: power-platform-playwright-samples
+ms.subservice: developer
 ---
 
 # Authentication overview

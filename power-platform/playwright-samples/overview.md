@@ -1,11 +1,11 @@
 ---
 title: Power Platform Playwright Samples overview
 description: Learn how the Power Platform Playwright Samples framework lets you write reliable end-to-end tests for canvas apps, model-driven apps, custom pages, and AI-generated apps using TypeScript and Playwright.
-author: microsoft
-ms.author: deepak.kamboj
+author: deepakkamboj
+ms.author: deepakkamboj
 ms.topic: overview
 ms.date: 04/07/2025
-ms.subservice: power-platform-playwright-samples
+ms.subservice: developer
 ---
 
 # Power Platform Playwright Samples overview

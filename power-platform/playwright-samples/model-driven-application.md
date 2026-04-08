@@ -1,11 +1,11 @@
 ---
 title: Test model-driven apps with Power Platform Playwright Samples
 description: Write end-to-end tests for Dynamics 365 and model-driven Power Apps using the ModelDrivenAppPage, GridComponent, and FormComponent classes.
-author: microsoft
-ms.author: deepak.kamboj
+author: deepakkamboj
+ms.author: deepakkamboj
 ms.topic: how-to
 ms.date: 04/07/2025
-ms.subservice: power-platform-playwright-samples
+ms.subservice: developer
 ---
 
 # Test model-driven apps

@@ -1,11 +1,11 @@
 ---
 title: API testing through form context in Power Platform Playwright Samples
 description: Use the FormComponent execute method to run Xrm API calls in-browser and validate Dataverse business logic without navigating the UI.
-author: microsoft
-ms.author: deepak.kamboj
+author: deepakkamboj
+ms.author: deepakkamboj
 ms.topic: how-to
 ms.date: 04/07/2025
-ms.subservice: power-platform-playwright-samples
+ms.subservice: developer
 ---
 
 # API testing through form context

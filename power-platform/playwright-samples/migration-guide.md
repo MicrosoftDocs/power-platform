@@ -1,11 +1,11 @@
 ---
 title: Migrate from Power Apps Test Engine to Power Platform Playwright Samples
 description: Step-by-step guide to migrate existing Power Apps Test Engine YAML tests to Playwright TypeScript tests using the Power Platform Playwright Samples toolkit.
-author: microsoft
-ms.author: deepak.kamboj
+author: deepakkamboj
+ms.author: deepakkamboj
 ms.topic: how-to
 ms.date: 04/07/2025
-ms.subservice: power-platform-playwright-samples
+ms.subservice: developer
 ---
 
 # Migrate from Power Apps Test Engine

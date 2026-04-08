@@ -1,11 +1,11 @@
 ---
 title: Locators in Power Platform Playwright Samples
 description: Learn how to use the built-in locator classes, selector objects, and LocatorUtils to write reliable, maintainable selectors for Power Platform canvas and model-driven apps.
-author: microsoft
-ms.author: deepak.kamboj
+author: deepakkamboj
+ms.author: deepakkamboj
 ms.topic: concept-article
 ms.date: 04/07/2025
-ms.subservice: power-platform-playwright-samples
+ms.subservice: developer
 ---
 
 # Locators

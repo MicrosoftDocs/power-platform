@@ -1,11 +1,11 @@
 ---
 title: CI/CD integration for Power Platform Playwright Samples
 description: Configure GitHub Actions and Azure Pipelines to run Power Platform Playwright tests in a continuous integration pipeline with authentication, artifact upload, and reporting.
-author: microsoft
-ms.author: deepak.kamboj
+author: deepakkamboj
+ms.author: deepakkamboj
 ms.topic: how-to
 ms.date: 04/07/2025
-ms.subservice: power-platform-playwright-samples
+ms.subservice: developer
 ---
 
 # CI/CD integration

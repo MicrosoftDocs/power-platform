@@ -1,11 +1,11 @@
 ---
 title: Page Object Model for Power Platform Playwright Samples
 description: Structure your Power Platform Playwright tests using the Page Object Model pattern to encapsulate selectors, improve maintainability, and reuse interaction logic.
-author: microsoft
-ms.author: deepak.kamboj
+author: deepakkamboj
+ms.author: deepakkamboj
 ms.topic: concept-article
 ms.date: 04/07/2025
-ms.subservice: power-platform-playwright-samples
+ms.subservice: developer
 ---
 
 # Page Object Model

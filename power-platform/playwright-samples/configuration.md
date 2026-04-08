@@ -1,11 +1,11 @@
 ---
 title: Configuration reference for Power Platform Playwright Samples
 description: Reference for playwright.config.ts settings, project structure, and reporter configuration for Power Platform Playwright tests.
-author: microsoft
-ms.author: deepak.kamboj
+author: deepakkamboj
+ms.author: deepakkamboj
 ms.topic: reference
 ms.date: 04/07/2025
-ms.subservice: power-platform-playwright-samples
+ms.subservice: developer
 ---
 
 # Configuration reference

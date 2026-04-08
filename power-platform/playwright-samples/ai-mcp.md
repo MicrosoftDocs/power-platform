@@ -1,11 +1,11 @@
 ---
 title: Playwright MCP server for Power Platform Playwright Samples
 description: Connect AI coding assistants to a live Power Platform browser session so they can inspect the DOM, generate selectors, and write Playwright tests.
-author: microsoft
-ms.author: deepak.kamboj
+author: deepakkamboj
+ms.author: deepakkamboj
 ms.topic: how-to
 ms.date: 04/07/2025
-ms.subservice: power-platform-playwright-samples
+ms.subservice: developer
 ---
 
 # Playwright MCP server

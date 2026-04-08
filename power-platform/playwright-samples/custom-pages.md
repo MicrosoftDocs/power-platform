@@ -1,11 +1,11 @@
 ---
 title: Test custom pages in model-driven apps with Power Platform Playwright Samples
 description: Write end-to-end tests for canvas custom pages embedded in Power Apps model-driven apps using iframe scoping and the AppProvider class.
-author: microsoft
-ms.author: deepak.kamboj
+author: deepakkamboj
+ms.author: deepakkamboj
 ms.topic: how-to
 ms.date: 04/07/2025
-ms.subservice: power-platform-playwright-samples
+ms.subservice: developer
 ---
 
 # Test custom pages

@@ -1,11 +1,11 @@
 ---
 title: Advanced testing capabilities for Power Platform Playwright Samples
 description: Visual comparisons, network mocking, and accessibility testing for Power Platform canvas and model-driven apps using Playwright.
-author: microsoft
-ms.author: deepak.kamboj
+author: deepakkamboj
+ms.author: deepakkamboj
 ms.topic: how-to
 ms.date: 04/07/2025
-ms.subservice: power-platform-playwright-samples
+ms.subservice: developer
 ---
 
 # Advanced testing capabilities

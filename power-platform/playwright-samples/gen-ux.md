@@ -1,11 +1,11 @@
 ---
 title: Test AI-generated apps (Gen UX) with Power Platform Playwright Samples
 description: Write end-to-end tests for AI-generated Power Apps using the GenUxPage class and its canvas iframe testing patterns.
-author: microsoft
-ms.author: deepak.kamboj
+author: deepakkamboj
+ms.author: deepakkamboj
 ms.topic: how-to
 ms.date: 04/07/2025
-ms.subservice: power-platform-playwright-samples
+ms.subservice: developer
 ---
 
 # Test AI-generated apps (Gen UX)
