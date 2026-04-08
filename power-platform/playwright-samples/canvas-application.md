@@ -155,13 +155,13 @@ export class MyCanvasAppPage {
 ## Full CRUD test example
 
 ```typescript
-import { test, expect } from '@playwright/test';
+import { test, expect, FrameLocator } from '@playwright/test';
 import { AppProvider, AppType, AppLaunchMode, buildCanvasAppUrlFromEnv } from 'power-platform-playwright-toolkit';
 
 const CANVAS_APP_URL = buildCanvasAppUrlFromEnv();
 
 test.describe('Canvas App - Orders', () => {
-  let canvasFrame: ReturnType<typeof page.frameLocator>;
+  let canvasFrame: FrameLocator;
 
   test.beforeEach(async ({ page, context }) => {
     const app = new AppProvider(page, context);
