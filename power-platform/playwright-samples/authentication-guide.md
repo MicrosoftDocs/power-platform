@@ -82,7 +82,7 @@ Use Azure Key Vault to manage certificates centrally in shared or production env
    AZURE_TENANT_ID=<tenant-id>
    ```
 
-## Configure CI/CD authentication {#cicd}
+## Configure CI/CD authentication
 
 In CI/CD, authentication runs in `globalSetup` before the test suite starts. The script acquires fresh storage state headlessly using the configured credential provider.
 

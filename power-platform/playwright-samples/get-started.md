@@ -113,7 +113,7 @@ npm run auth:mda:headful
 The MDA storage state is saved to `.playwright-ms-auth/state-mda-<email>.json`.
 
 > [!NOTE]
-> Authentication storage states expire with the session. Repeat these steps when tests start failing with authentication errors, or configure [CI/CD authentication](authentication-guide.md#cicd) to renew state automatically.
+> Authentication storage states expire with the session. Repeat these steps when tests start failing with authentication errors, or configure [CI/CD authentication](authentication-guide.md) to renew state automatically.
 
 ## Step 6: Run the tests
 
