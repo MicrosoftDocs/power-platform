@@ -140,7 +140,7 @@ The flexibility of the Power Apps user interface allowed the team to be self-suf
 
 > The enhancements we added in a couple of weeks of internal time would have probably cost $50,000&ndash;$100,000 in custom development.
 >
-> — Tim Herron
+> — *Tim Herron*
 
 :::image type="content" source="media/nonprofit/form-example.png" alt-text="Screenshot showing example of application scoring form." lightbox="media/nonprofit/form-example.png":::
 
@@ -172,7 +172,7 @@ AI Builder provides a selection of prebuilt models and the ability to create cus
 
 > Augmenting our selection process with AI Builder allows us to scale and make the most use of our human assessments.
 >
-> — Tim Herron
+> — *Tim Herron*
 
 ## Related information
 

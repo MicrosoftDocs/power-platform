@@ -78,7 +78,7 @@ When you use a hybrid manual and automated approach, you need to be especially c
 
 [Power Automate](https://azure.microsoft.com/products/power-automate/) enables you to automate Power Platform workloads; for example, custom digital process automation to handle workload tasks like approval flows. With Power Automate, you can construct workflows from built-in connectors and templates. The large ecosystem of software as a service (SaaS) connectors enables you to connect apps like Microsoft 365 and Azure, data, and devices in the cloud. You can use [Power Platform admin connectors](/connectors/powerplatformforadmins/) to connect to the Power Platform service itself and perform operational tasks, such as creating environments or sharing applications.
 
-Power Automate approvals (out of the box) or the [approvals kit](https://www.microsoft.com/power-platform/blog/power-automate/introducing-approvals-kit/) (a custom solution) enable you to implement both simple and complex approval flows that can aid in automation scenarios. Learn more in [Business approvals templates overview](/power-automate/guidance/business-approvals-templates/introduction).
+Power Automate approvals (out of the box) or the [Approvals kit](https://www.microsoft.com/power-platform/blog/power-automate/introducing-approvals-kit/) (a custom solution) enable you to implement both simple and complex approval flows that can aid in automation scenarios. Learn more in [Business approvals templates overview](/power-automate/guidance/business-approvals-templates/introduction).
 
 [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) enables you to build agents and agent flows. With Copilot Studio, you connect to other data sources using either prebuilt or custom plugins.
 
@@ -90,7 +90,7 @@ Power Automate approvals (out of the box) or the [approvals kit](https://www.mic
 
 ## Related information
 
-- [Environment Request Management](/power-platform/guidance/coe/setup-environment-components), part of the CoE Starter Kit
+- [Environment Request management](/power-platform/guidance/coe/setup-environment-components), part of the CoE Starter Kit
 - [Business approvals templates](/power-automate/guidance/business-approvals-templates/introduction)
 
 ## Next steps
