@@ -95,8 +95,18 @@ Example excerpt:
 
 Located at `solutions/<SolutionUniqueName>/rootcomponents.yml`. Lists the root-level components (typically tables and other top-level objects) that belong to this solution.
 
-> [!NOTE]
-> If a component is declared in `rootcomponents.yml` but its source files are absent from the folder, SolutionPackager emits a warning and omits that component from the packed `.zip`. The pack operation still completes successfully with exit code 0.
+ > [!NOTE]
+ > If a component is declared in `rootcomponents.yml` but its source files are absent from the folder
+ > (for example, a canvas app `.msapp` file under `canvasapps/<name>/`), SolutionPackager emits a
+ > warning and omits that component from the packed `.zip`. The pack operation still completes
+ > successfully with exit code 0.
+ >
+ > **Pack success does not guarantee import success.** If `solutioncomponents.yml` omits required
+ > dependency paths — such as parent entity folders or relationship definitions under
+ > `entityrelationships/` — the solution packs without error but fails on import with a message like:
+ > *"Attributes are missing associated relationship definitions."* Always ensure
+ > `solutioncomponents.yml` includes all dependent entities and relationships, not just the
+ > solution-owned ones.
 
 ### missingdependencies.yml
 
