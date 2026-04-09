@@ -1,17 +1,18 @@
 ---
 title: Unified environment types and templates for finance and operations apps
-description: Learn about Unified Production (UPE), Sandbox (USE), and Developer (UDE) environments, D365 ERP templates, and regional availability for finance and operations apps in Power Platform.
+description: Learn about unified production (UPE), sandbox (USE), and developer (UDE) environments, Dynamics 365 ERP templates, and regional availability for finance and operations apps in Power Platform.
 author: laneswenka
 ms.topic: concept-article
-ms.date: 03/29/2026
+ms.date: 04/06/2026
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
+
 ---
 
 # Unified environment types and templates for finance and operations apps
 
-Finance and operations apps are now fully managed in the Power Platform admin center (PPAC) with zero Microsoft Dynamics Lifecycle Services footprint. These environments are referred to as *unified environments* because they bring together Dynamics 365 ERP workloads, Dynamics 365 customer engagement apps, and low-code artifacts in a single Power Platform environment backed by Microsoft Dataverse.
+You manage finance and operations apps in the Power Platform admin center with zero Microsoft Dynamics Lifecycle Services footprint. These environments are *unified environments* because they bring together Dynamics 365 ERP workloads, Dynamics 365 customer engagement apps, and low-code artifacts in a single Power Platform environment backed by Microsoft Dataverse.
 
 This article defines the unified environment types, explains which applications are included in each ERP template, and lists the Azure regions where finance and operations apps are available.
 
@@ -21,7 +22,7 @@ For a general introduction to the unified admin experience, see [Overview of uni
 
 Every unified environment for finance and operations apps maps to a standard Power Platform environment type. The following sections define each unified environment type and its intended purpose.
 
-### Unified Production Environment (UPE)
+### Unified production environment (UPE)
 
 | Property | Value |
 |---|---|
@@ -29,9 +30,9 @@ Every unified environment for finance and operations apps maps to a standard Pow
 | **Purpose** | Live production workloads |
 | **Elastic compute** | Full scaling, up to 80 AOS instances (40 interactive, 40 batch) |
 
-A Unified Production Environment hosts your live finance and operations workload. You can create a UPE by provisioning a new production environment with an ERP template, or by [converting an existing sandbox to production](tutorial-convert-sandbox-to-production.md).
+A unified production environment (UPE) hosts your live finance and operations workload. You can create a UPE by provisioning a new production environment with an ERP template, or by [converting an existing sandbox to production](tutorial-convert-sandbox-to-production.md).
 
-### Unified Sandbox Environment (USE)
+### Unified sandbox environment (USE)
 
 | Property | Value |
 |---|---|
@@ -39,11 +40,11 @@ A Unified Production Environment hosts your live finance and operations workload
 | **Purpose** | Testing, UAT, staging, training |
 | **Elastic compute** | Full scaling, up to 80 AOS instances (40 interactive, 40 batch) |
 
-A Unified Sandbox Environment supports testing, user acceptance, staging, and training scenarios. USE environments support the full set of lifecycle operations, including [copy](tutorial-copy-lifecycle-services-environment-unified-environment.md), [backup and restore](tutorial-backup-restore-unified-environment.md), and [transaction-less copy](tutorial-perform-transactionless-copy.md).
+A unified sandbox environment (USE) supports testing, user acceptance, staging, and training scenarios. USE environments support the full set of lifecycle operations, including [copy](tutorial-copy-lifecycle-services-environment-unified-environment.md), [backup and restore](tutorial-backup-restore-unified-environment.md), and [transaction-less copy](tutorial-perform-transactionless-copy.md).
 
-This is the same Sandbox environment type that Dynamics 365 customer engagement (CRM/CE) customers use for development and testing today.
+This environment type is the same sandbox environment that Dynamics 365 customer engagement (CRM/CE) customers use for development and testing today.
 
-### Unified Developer Environment (UDE)
+### Unified developer environment (UDE)
 
 | Property | Value |
 |---|---|
@@ -51,25 +52,25 @@ This is the same Sandbox environment type that Dynamics 365 customer engagement 
 | **Purpose** | Single-developer X++ development |
 | **Elastic compute** | Limited to 1 AOS instance (no scaling) |
 
-A Unified Developer Environment is a sandbox environment provisioned specifically for X++ development using the Power Platform CLI and Visual Studio. UDE replaces the cloud-hosted developer virtual machines (VMs) that were previously deployed through Lifecycle Services.
+A unified developer environment (UDE) is a sandbox environment provisioned specifically for X++ development by using the Power Platform CLI and Visual Studio. UDE replaces the cloud-hosted developer virtual machines (VMs) that were previously deployed through Lifecycle Services.
 
-Key characteristics of UDE:
+The key characteristics of UDE environments include:
 
-- Provisioned via PowerShell with the `DevToolsEnabled=true` parameter. For step-by-step instructions, see [Tutorial: Provision a new environment with an ERP-based template](tutorial-deploy-new-environment-with-ERP-template.md).
-- Limited to a single AOS instance with no elastic scaling. Learn more in [Elastic compute for finance and operations apps](elastic-compute.md).
+- Provisioned through PowerShell by using the `DevToolsEnabled=true` parameter. For step-by-step instructions, see [Tutorial: Provision a new environment with an ERP-based template](tutorial-deploy-new-environment-with-ERP-template.md).
+- Limited to a single AOS instance with no elastic scaling. To learn more, see [Elastic compute for finance and operations apps](elastic-compute.md).
 - Intended for single-developer use. Not suitable for multi-user development or performance testing.
-- Supports direct database access for development purposes. Learn more in [Request credentials to product database](../../developer/unified-experience/finance-operations-product-db-access.md).
+- Supports direct database access for development purposes. To learn more, see [Request credentials to product database](../../developer/unified-experience/finance-operations-product-db-access.md).
 
 > [!IMPORTANT]
-> **UDE is not the same as the Power Platform Developer environment type.** The Power Platform *Developer* environment type does not support any Dynamics 365 workload today. It provides only a limited Dataverse schema that supports low-code artifacts such as canvas apps, flows, and agents. UDE uses the **Sandbox** environment type with developer tooling enabled, which includes the full Dataverse schema and the finance and operations runtime.
+> UDE isn't the same as the Power Platform developer environment type. The Power Platform *Developer* environment type doesn't support any Dynamics 365 workload today. It provides only a limited Dataverse schema that supports low-code artifacts such as canvas apps, flows, and agents. UDE uses the *Sandbox* environment type with developer tooling enabled, which includes the full Dataverse schema and the finance and operations runtime.
 
 ### Summary of unified environment types
 
 | Unified environment type | Abbreviation | Power Platform environment type | Elastic compute | Typical use |
 |---|---|---|---|---|
-| Unified Production Environment | UPE | Production | Full scaling | Live production workloads |
-| Unified Sandbox Environment | USE | Sandbox | Full scaling | Testing, UAT, staging, training |
-| Unified Developer Environment | UDE | Sandbox | Single AOS (no scaling) | X++ development |
+| Unified production environment | UPE | Production | Full scaling | Live production workloads |
+| Unified sandbox environment | USE | Sandbox | Full scaling | Testing, UAT, staging, training |
+| Unified developer environment | UDE | Sandbox | Single AOS (no scaling) | X++ development |
 
 ## D365_FinOps templates and included apps
 
@@ -77,12 +78,12 @@ A *template* is a bundle of Microsoft-published applications that are preinstall
 
 ### Template reference
 
-| Template ID | Display name | License required | Comments |
+| Template ID | Display name | License required |
 |---|---|---|---|
-| D365_FinOps_Finance | Finance (preview) | Dynamics 365 Finance | |
-| D365_FinOps_SCM | Supply Chain Management (preview) | Dynamics 365 Supply Chain Management | |
-| D365_FinOps_ProjOps | Project Operations Integrated (preview) | Dynamics 365 Project Operations or Dynamics 365 Operations Application Partner Sandbox | |
-| D365_FinOps_Commerce | Commerce (preview) | Dynamics 365 Commerce | Available for trials only |
+| D365_FinOps_Finance | Finance (preview) | Dynamics 365 Finance | 
+| D365_FinOps_SCM | Supply Chain Management (preview) | Dynamics 365 Supply Chain Management | 
+| D365_FinOps_ProjOps | Project Operations Integrated (preview) | Dynamics 365 Project Operations or Dynamics 365 Operations Application Partner Sandbox | 
+| D365_FinOps_Commerce<br><br>(Available for trials only)| Commerce (preview) | Dynamics 365 Commerce |  
 
 ### Apps included in each template
 
@@ -133,13 +134,13 @@ The D365_FinOps_Commerce template installs all of the applications in the Projec
 
 ## Regional availability for finance and operations apps
 
-Finance and operations app availability depends on the Azure region of your Power Platform environment. There are two scenarios to consider:
+Finance and operations app availability depends on the Azure region of your Power Platform environment. Consider two scenarios:
 
-- **New environment with a template**: You select a location during environment creation. The **Azure region** column in the table below is a hint that can currently be used only in PowerShell to target a specific region within a location.
+- **New environment with a template**: You select a location during environment creation. The **Azure region** column in the following table is a hint that you can currently use only in PowerShell to target a specific region within a location.
 - **Installing on an existing environment**: If your existing Dataverse environment is in an Azure region that finance and operations apps don't support, the installation fails with an error. For more information, see [Known limitations](finance-operations-apps-overview.md#known-limitations).
 
 > [!IMPORTANT]
-> Not all Azure regions that Dataverse supports are supported by finance and operations apps. Additional validation is being added to prevent ERP templates from being created in unsupported Azure regions, and to block finance and operations app installation on existing environments in unsupported regions. Until this validation is in place, refer to the table below to confirm your Azure region is supported before provisioning.
+> Not all Azure regions that Dataverse supports are supported by finance and operations apps. Microsoft is adding validation to prevent ERP templates from being created in unsupported Azure regions, and to block finance and operations app installation on existing environments in unsupported regions. Until this validation is in place, refer to the following table to confirm your Azure region is supported before provisioning.
 
 The following table shows the production cloud (public) regions and which unified environment types are supported in each region. The **Location** column is the value you select when creating an environment in the Power Platform admin center or when using the `-LocationName` parameter in PowerShell.
 
@@ -178,7 +179,7 @@ The following table shows the production cloud (public) regions and which unifie
 | United States | unitedstates | westus | Yes | Yes | Yes | Yes |
 
 > [!NOTE]
-> Some locations have a secondary Azure region that only supports UDE (developer) and Trial environment types. These secondary regions do not support UPE (production) or USE (sandbox) workloads. For sovereign and government cloud availability, contact Microsoft Support.
+> Some locations have a secondary Azure region that only supports UDE (developer) and trial environment types. These secondary regions don't support UPE (production) or USE (sandbox) workloads. For sovereign and government cloud availability, contact Microsoft Support.
 
 ## Related articles
 

@@ -4,7 +4,7 @@ description: Learn about the resource types and fields available in Power Platfo
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 03/27/2026
+ms.date: 03/31/2026
 ms.topic: concept-article
 ---
 
@@ -23,8 +23,10 @@ Every record in the PowerPlatformResources table has a **type** field that ident
 | Canvas apps | `microsoft.powerapps/canvasapps` |
 | Model-driven apps | `microsoft.powerapps/modeldrivenapps` |
 | Code apps | `microsoft.powerapps/codeapps` |
+| App Builder apps | `microsoft.powerapps/apps` |
 | Cloud flows | `microsoft.powerautomate/cloudflows` |
 | Agent flows | `microsoft.powerautomate/agentflows` |
+| Workflow agent flows | `microsoft.powerautomate/m365agentflows` |
 | Copilot Studio agents | `microsoft.copilotstudio/agents` |
 | Environments | `microsoft.powerplatform/environments` |
 | Environment groups | `microsoft.powerplatform/environmentgroups` |
@@ -82,10 +84,26 @@ The following fields are available on all resource types in the PowerPlatformRes
 | `properties.lastModifiedAt` | datetime | The date and time the app was last modified. | `2026-01-15T10:30:00Z` | Generally available |
 | `properties.lastModifiedBy` | string | The object ID of the user who last modified the app. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.isQuarantined` | boolean | Whether the app is quarantined. | `false` | Generally available |
-| `properties.subType` | string | The subtype of the code app: `byocApp`, `vibeApp`, or `appBuilderApp`. | `byocApp` | Generally available |
+| `properties.subType` | string | The subtype of the code app: `byocApp` or `vibeApp`. | `byocApp` | Generally available |
 
 > [!NOTE]
-> The subtype values correspond to [code apps](/power-apps/developer/code-apps/overview), [vibe apps](/power-apps/vibe/overview), and [app builder apps](https://www.microsoft.com/power-platform/topics/app-builder), respectively.
+> The subtype values correspond to [code apps](/power-apps/developer/code-apps/overview) and [vibe apps](/power-apps/vibe/overview), respectively.
+
+> [!NOTE]
+> The `properties.isQuarantined` field is available through the API but isn't yet shown in the Power Platform admin center inventory experience.
+
+## App Builder apps
+
+For more information, see [App Builder](https://www.microsoft.com/power-platform/topics/app-builder).
+
+| API field path | Data type | Description | Example | Status |
+|---|---|---|---|---|
+| `properties.ownerId` | string | The object ID of the resource owner. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
+| `properties.environmentId` | string | The identifier of the environment that contains the resource. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
+| `properties.lastModifiedAt` | datetime | The date and time the app was last modified. | `2026-01-15T10:30:00Z` | Generally available |
+| `properties.lastModifiedBy` | string | The object ID of the user who last modified the app. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
+| `properties.isQuarantined` | boolean | Whether the app is quarantined. | `false` | Generally available |
+| `properties.subType` | string | The subtype of the app. Currently `appBuilderApp`. | `appBuilderApp` | Generally available |
 
 > [!NOTE]
 > The `properties.isQuarantined` field is available through the API but isn't yet shown in the Power Platform admin center inventory experience.
@@ -101,6 +119,16 @@ The following fields are available on all resource types in the PowerPlatformRes
 | `properties.workflowEntityId` | string | The Dataverse workflow entity ID. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 
 ## Agent flows
+
+| API field path | Data type | Description | Example | Status |
+|---|---|---|---|---|
+| `properties.ownerId` | string | The object ID of the resource owner. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
+| `properties.environmentId` | string | The identifier of the environment that contains the resource. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
+| `properties.lastModifiedAt` | datetime | The date and time the flow was last modified. | `2026-01-15T10:30:00Z` | Generally available |
+| `properties.lastModifiedBy` | string | The object ID of the user who last modified the flow. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
+| `properties.workflowEntityId` | string | The Dataverse workflow entity ID. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
+
+## Workflow agent flows
 
 | API field path | Data type | Description | Example | Status |
 |---|---|---|---|---|
