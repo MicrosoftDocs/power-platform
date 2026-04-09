@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/06/2026
+ms.date: 04/09/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.custom: NewPPAC
