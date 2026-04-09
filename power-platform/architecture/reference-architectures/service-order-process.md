@@ -30,13 +30,13 @@ ms.reviewer: jhaskett-msft
     - View my assigned tasks
     - Admin button – (Only visible to Admin group members)
 
-1. The process starts when the user creates a new service order by selecting **New Service Order** from the home page. A new service order form appears with different tabs to fill in the service order information. The user can attach documents to the newly created service order. All the documents are stored in SharePoint. The out-of-the-box SharePoint subgrid option is used to upload documents to the SharePoint library.
+1. The process starts when the user creates a new service order by selecting New Service Order from the home page. A new service order form appears with different tabs to fill in the service order information. The user can attach documents to the newly created service order. All the documents are stored in SharePoint. The out-of-the-box SharePoint subgrid option is used to upload documents to the SharePoint library.
 
-1. When the user creates a new service request, they see a custom button at the top of the page to submit the service order request. When the user selects **Send Request**:
+1. When the user creates a new service request, they see a custom button at the top of the page to submit the service order request. When the user selects Send Request:
 
     1. A new service order is created with a new SO ID.
 
-    1. The status of the request updates to **Service Order Requested**.
+    1. The status of the request updates to Service Order Requested.
 
     1. A new task is created in the task table and assigned to the Commercial Responsible group – Owner Team.
 
@@ -45,7 +45,7 @@ ms.reviewer: jhaskett-msft
     1. The business process flow updates to the next stage.
     When the user selects the custom button, a script runs to update the request status and trigger a Power Automate flow that performs all the preceding actions. The script on the model-driven app form checks the request status and assigned user. Based on these criteria, fields are read-only for everyone other than the commercial responsible group. This condition applies to all the custom buttons available at different stages.
 
-1. When the commercial responsible user signs in, they see the assigned task under **My task**.
+1. When the commercial responsible user signs in, they see the assigned task under My task.
 
 1. The commercial responsible user reviews the request and sees two custom buttons:
 
@@ -55,9 +55,9 @@ ms.reviewer: jhaskett-msft
 
 1. On rejection, the request is rejected and a notification is sent to the requester.
 
-1. When the user selects **Assign Primary Responsible**, the request moves to the next stage.
+1. When the user selects Assign Primary Responsible, the request moves to the next stage.
 
-    1. The request status updates to **Pending for PR approval**.
+    1. The request status updates to Pending for PR approval.
 
     1. The business process flow stage updates.
 
@@ -65,15 +65,15 @@ ms.reviewer: jhaskett-msft
 
     1. A notification is sent to the primary responsible user.
 
-1. When the primary responsible user signs in to the application, they see the task under **My task**. The primary responsible (PR) user can **Approve**, **Reject**, or **Send for Amendments**. These custom buttons are visible only to the user who is assigned PR to the request and the request is under status **Pending for PR approval**.
+1. When the primary responsible user signs in to the application, they see the task under My task. The primary responsible (PR) user can Approve, Reject, or Send for Amendments. These custom buttons are visible only to the user who is assigned PR to the request and the request is under status Pending for PR approval.
 
-    1. **Approve**
+    1. Approval
 
         1. On approval, the request status is marked as approved. This status change is implemented through a custom script written on a custom button.
 
         1. A notification is sent to the Commercial Responsible group and the user who created the request.
 
-        1. The request status updates to **Pending final Signing Process**.
+        1. The request status updates to Pending final Signing Process.
 
         1. A task is assigned to the Commercial Responsible group.
 
@@ -85,31 +85,31 @@ ms.reviewer: jhaskett-msft
 
         1. On rejection, the request is marked to “Rejected”
 
-                1. The business process is updated to the Rejected stage.
+        1. The business process is updated to the Rejected stage.
 
-                1. A notification is sent to the user and commercial responsible group.
+        1. A notification is sent to the user and commercial responsible group.
 
     1. Send for amendment
 
-                1. The request is sent back to the user who created the request for amendments.
+        1. The request is sent back to the user who created the request for amendments.
 
-                1. The request status is updated to "Service Order Request in progress" stage.
+        1. The request status is updated to "Service Order Request in progress" stage.
 
-                1. The business process flow is updated to the initial stage.
+        1. The business process flow is updated to the initial stage.
 
-                1. An email notification is sent to the user with a deep link to the service order request.
+        1. An email notification is sent to the user with a deep link to the service order request.
 
-        1. When the user rejects or approves the request, a PDF document is exported and saved to the Service Order SharePoint library. The PDF is generated by using the Document Template feature of Dataverse, where the user creates the template in Word by using XML entity attributes. A Power Automate flow calls the PDF document template API to generate the PDF version and exports all the data of the service request. The Document template ID and Service Order GUID are passed to the Power Automate flow.
+    1. When the user rejects or approves the request, a PDF document is exported and saved to the Service Order SharePoint library. The PDF is generated by using the Document Template feature of Dataverse, where the user creates the template in Word by using XML entity attributes. A Power Automate flow calls the PDF document template API to generate the PDF version and exports all the data of the service request. The Document template ID and Service Order GUID are passed to the Power Automate flow.
 
-1. In the next stage, Final Sign-in process, the commercial responsible user can see two tabs while all other tabs are hidden by using XRM API and JavaScript. The user sees the **Upload signed document** button on the first tab. When the user selects the button, the next tab is highlighted which has the SharePoint document subgrid and the PDF generated document created in the previous step.
+1. In the next stage, Final Sign-in process, the commercial responsible user can see two tabs while all other tabs are hidden by using XRM API and JavaScript. The user sees the Upload signed document button on the first tab. When the user selects the button, the next tab is highlighted which has the SharePoint document subgrid and the PDF generated document created in the previous step.
 
     1. The commercial responsible user can download the PDF document, manually sign it, and upload it in the document library tab.
 
-        1. A **Complete Signing process** custom button on the top is available. When the commercial responsible user selects the button, the request becomes read-only. A notification is sent to the user, the commercial responsible group, and the primary responsible about the completion of the request. The business process flow is marked as completed by using a Power Automate flow and the assigned task is marked as completed.
+    1. A Complete Signing process custom button on the top is available. When the commercial responsible user selects the button, the request becomes read-only. A notification is sent to the user, the commercial responsible group, and the primary responsible about the completion of the request. The business process flow is marked as completed by using a Power Automate flow and the assigned task is marked as completed.
 
 ### SLA workflow
 
-1. When you select **Create New SLA request**, you're taken to the **New SLA** form. In the form, you can select only the completed Service Order Request that you created.
+1. When you select Create New SLA request, you're taken to the New SLA form. In the form, you can select only the completed Service Order Request that you created.
 
 1. The SLA entity approval workflow uses a similar workflow and Business Process Flow as for Service Order approval, except it doesn't include the Sign in Service Order Request stage.
 
@@ -141,7 +141,7 @@ The application also serves as a centralized reference system for the Legal and 
 
 The requirement originated when the customer engaged HCLTech to migrate their existing Service Order Management process from an Angular–Camunda platform to Microsoft Power Platform.
 
-The legacy solution, built on Angular, Camunda Workflow Engine, and PostgreSQL, incurred **high licensing costs**, required a **dedicated technical team** for change requests, and had **long turnaround times** for even minor enhancements. The complexity of the solution and its maintenance overhead prompted the customer to pursue a modern, cost-effective, and easy-to-maintain alternative.
+The legacy solution, built on Angular, Camunda Workflow Engine, and PostgreSQL, incurred high licensing costs, required a dedicated technical team for change requests, and had long turnaround times for even minor enhancements. The complexity of the solution and its maintenance overhead prompted the customer to pursue a modern, cost-effective, and easy-to-maintain alternative.
 
 ### Objectives and drivers
 
@@ -161,19 +161,19 @@ Key drivers for the new solution:
 
 ## Components
 
-The team designed and implemented a **Model-Driven App** on the Microsoft Power Platform, supported by key out-of-the-box (OOTB) features to keep customization minimal while meeting all functional requirements.
+The team designed and implemented a Power Apps model-driven app, supported by key out-of-the-box (OOTB) features to keep customization minimal while meeting all functional requirements.
 
-**User Interface**
+### User Interface
 
 - **Model-driven app** serves as the primary user interface for users.
 
 - **Custom Pages** modernize the user experience by ensuring interactive UI behavior and minimal change for end users as the application migrates from the existing platform.
 
-- **Custom button and JavaScript** manage the business rules and approval process through different stages.
+- **Custom buttons and JavaScript** manage the business rules and approval process through different stages.
 
-- **Business Process Flow** helps users visualize the existing stage.
+- **Business process flow** (BPF) helps users visualize the existing stage.
 
-**PDF Generation**
+### PDF Generation
 
 The previous system's PDF export functionality was highly complex and required frequent technical intervention for even minor template updates.
 
@@ -185,29 +185,29 @@ The new solution uses:
 
 This approach significantly reduces turnaround time and removes the need for development-driven template updates.
 
-**Workflows and Approvals**
+### Workflows and Approvals
 
-**Business Process Flows (BPFs)** orchestrate request routing, approvals, and multistage progress tracking.
+- **Business process flows** orchestrate request routing, approvals, and multistage progress tracking.
 
-**Power Automate** performs various actions at completion of each approval stage, such as sending notifications to Outlook and Teams, assigning tasks, and generating an automatic PDF at the final stage.
+- **Power Automate** flows performs various actions at completion of each approval stage, such as sending notifications to Outlook and Teams, assigning tasks, and generating an automatic PDF at the final stage.
 
-**Lifecycle and termination management**
+### Lifecycle and termination management
 
-Implement scheduled Power Automate flows that run daily to check which SLAs and Service Orders are terminating each day.
+- **Power Automate** flows that run daily to check which SLAs and Service Orders are terminating each day.
 
-**Task Reminders**
+### Task Reminders
 
-Use Power Automate to send reminders to users to whom tasks are assigned when the due date passes.
+- **Power Automate** flows to send reminders to users to whom tasks are assigned when the due date passes.
 
-**Data Source**
+### Data Source
 
-Use Dataverse to manage and store the application data and maintain the audit log history.
+- **Dataverse** to manage and store the application data and maintain the audit log history.
 
-Use SharePoint as the document repository and for document versioning.
+- **SharePoint** as the document repository and for document versioning.
 
-**Reporting**
+### Reporting
 
-Use model-driven app inbuilt reporting displaying the charts and provide insights to application data.
+- **Power Apps** model-driven application inbuilt reporting displaying the charts and provide insights to application data.
 
 ## Considerations
 
@@ -215,7 +215,7 @@ These considerations implement the pillars of Power Platform Well-Architected, w
 
 ### Reliability
 
-1. **Clear expectations** documented with customer for:
+1. Clear expectations documented with customer for:
 
     - Response times
     
@@ -291,7 +291,7 @@ These considerations implement the pillars of Power Platform Well-Architected, w
 
 1. Send timely reminders to users so they complete tasks without delay.
 
-1. Provide quick links to **My Tasks** and **Admin** sections.
+1. Provide quick links to My Tasks and Admin sections.
 
 1. Implement a custom button that users can select to identify what actions they're taking.
 
