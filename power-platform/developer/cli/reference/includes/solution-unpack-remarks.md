@@ -1,4 +1,4 @@
-### Remarks
+### `solution unpack` remarks
 
 `pac solution unpack` extracts solution components from a `.zip` file into the **XML format** by default, creating an `Other\Solution.xml` hierarchy.
 

@@ -1,4 +1,4 @@
-### Remarks
+### `solution pack` remarks
 
 `pac solution pack` supports two source folder layouts when reading component files: the **XML format** (legacy) and the **YAML source control format**.
 
