@@ -94,7 +94,7 @@ The following list enumerates the noncustomizable tables that you can't audit. T
 
 You can configure auditing at three levels: environment, table, and column. First, turn on auditing at the environment level. To log data changes in a table, turn on auditing for the table and for the column. 
 
-To turn on user access auditing (log access) or activity logging (Read logs), turn on auditing at the environment level. The option to turn on activity logging is only visible when the minimum Office licensing requirements are met.
+To turn on user access auditing (log access) or activity logging (Read logs), turn on auditing at the environment level. The option to turn on activity logging is only visible when the minimum MicrosoftOffice licensing requirements are met.
 
 > [!NOTE]
 > User access or activity logging is sent to Purview for production environments only.
@@ -103,9 +103,9 @@ You must have a system administrator or system customizer role or equivalent per
 
 You can configure auditing manually through the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). You can also configure auditing programmatically. For more information, see [Auditing overview](/power-apps/developer/data-platform/auditing/overview).
 
-To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, the system automatically turns on auditing for the following tables when you turn on auditing through the [Compliance page](security/compliance.md). You must be assigned to the Power Platform or Dynamics 365 admin role to turn auditing on or off through the **Compliance** page.
+To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, as a Power Platform or Dynamics 365 admin, you can go to **Security** > **Compliance** to turn on auditing. The system automatically turns on auditing for the following tables when you turn on auditing through the [Compliance page](security/compliance.md).
 
-You can audit other tables, where applicable, but note that auditing is turned on by default for some core tables. 
+You can audit other tables, where applicable, but note that auditing is turned on by default when you select common entities. 
 
 |Category  |Table  |
 |-----------|-----------|

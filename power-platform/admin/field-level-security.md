@@ -136,7 +136,7 @@ _Composite columns_ include data from multiple columns. For example, the [`conta
 
 ## Activity logging data
 
-The column values in the before-and-after audit change events show as "*" in the **Create** and **Update**activity logs in Microsoft Purview. Learn more about [Dataverse and model-driven apps activity logging](activity-logging-auditing/activity-logs-dataverse-model-driven-apps.md). 
+The column values in the before-and-after audit change events show as "*" in the **Create** and **Update** activity logs in Microsoft Purview. Learn more about [Dataverse and model-driven apps activity logging](activity-logging-auditing/activity-logs-dataverse-model-driven-apps.md). 
 
 ### Related information
 
