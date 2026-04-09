@@ -115,13 +115,13 @@ To turn on data movement across regions, Bing search, Microsoft 365 services, an
    
     No matter where LLM inferencing occurs, data is encrypted in transit and at rest. Data at rest continues to be stored inside the EU Data Boundary, except for limited pseudonymized data which may be stored outside the EU Data Boundary for security and operational purposes. For more information, see [Services that transfer a subset of Customer Data, pseudonymized personal data, or Professional Services Data out of the EU Data Boundary on an ongoing basis](/privacy/eudb/eu-data-boundary-ongoing-partial-transfers).
 
-    For tenants that are managed through the Microsoft 365 admin center, the flex routing setting in the Microsoft 365 admin center is shared with the Power Platform admin center.  
+    For tenants that are managed through the Microsoft 365 admin center, the default value of the **Allow flex routing during periods of peak load** setting in the Power Platform admin center is going to be the same as the Microsoft 365 admin center toggle, unless the **Move data across regions** setting is turned off.
 
     - If the **Allow flex routing during periods of peak load** checkbox is displayed, but you can't select it, that indicates that this feature has been turned off in the Microsoft 365 admin center or the **Move data across regions** checkbox is not selected in the Power Platform admin center.
 
-    - Flex routing is on for all other tenants, but can be changed. All tenant administrators are encouraged to check their tenant's flex routing setting to ensure it aligns with their company's requirements.
-      - Select the **Allow flex routing during periods of peak load** checkbox, if desired. This setting allows LLM inferencing and the storage of associated pseudonymized data to occur outside the EU data boundary during periods of peak demand. Typically, these periods are limited in duration and don't run continuously.
-      - If you don’t want to allow flex routing, don't select the **Allow flex routing during periods of peak load** checkbox. LLM inferencing occurs inside the EU Data Boundary, even during periods of peak demand. All Microsoft 365 data processing and data residency commitments continue to apply.
+    - Flex routing is on for all other EU/EFTA tenants, but can be changed. All tenant administrators are encouraged to check their tenant's flex routing setting to ensure it aligns with their company's requirements.
+      - Select the **Allow flex routing during periods of peak load** checkbox, if desired. This setting allows LLM inferencing and the storage of associated pseudonymized data to occur outside the EU data boundary during periods of peak demand.
+      - If you don’t want to allow flex routing, clear the **Allow flex routing during periods of peak load** checkbox. LLM inferencing occurs inside the EU Data Boundary, even during periods of peak demand. All Microsoft 365 data processing and data residency commitments continue to apply.
 
     For more information, see [Flex routing (EU and EFTA)](https://go.microsoft.com/fwlink/?linkid=2356281).
 
