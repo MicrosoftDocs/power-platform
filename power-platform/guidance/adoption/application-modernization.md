@@ -48,7 +48,7 @@ The Power Platform product family relies on a few supporting capabilities and co
 
 | Concept | Description |
 |---|---|
-| **Power Fx** | Power Fx is an [open-sourced](https://github.com/microsoft/Power-Fx) low-code language inspired by Excel formulas. Strongly typed, declarative, and functional, with imperative logic and state management, all expressed in human-friendly text, Power Fx makes common programming tasks easy for citizen developers and pro developers alike. It supports the full spectrum of development, from no-code for those who have never programmed before to "pro-code" for the seasoned professional, empowering diverse teams to collaborate and save time and expense. |
+| **Power Fx** | Power Fx is an [open-sourced](https://github.com/microsoft/Power-Fx) low-code language inspired by Excel formulas. Strongly typed, declarative, and functional, with imperative logic and state management, all expressed in human-friendly text, Power Fx makes common programming tasks easy for citizen developers and pro developers alike. It supports the full spectrum of development, from no-code for those who have never programmed before, to "pro-code" for the seasoned professional, empowering diverse teams to collaborate and save time and expense. |
 | **Connectors**  | Connectors are vital for allowing low-code and traditional coding to work together to deliver modern apps. Connectors are a wrapper around an API that allows Power Apps and Power Automate to use internal and external data sources and services. More than a thousand prebuilt connectors are available, and you can create your own for any RESTful API. The connector definition includes the necessary metadata to make the API easy for low-code apps to consume. |
 | **Dataverse** | Dataverse is a cloud-scale hybrid data store built on Azure data management services—but it's more than a database. It's the underlying data platform for both Dynamics 365 and Power Platform, with server-side logic in the form of workflows and plug-ins, business rules and process flows, a highly sophisticated security model, and an extensible development platform with built-in support for multi-language and multi-currency apps. Applications can be quickly constructed from the data model, making it one of the fastest ways to deploy a form-over-data solution. |
 | **AI Builder** | AI Builder makes it easy to use artificial intelligence in Power Apps and Power Automate to find insights in your data, automate processes, and make your apps more productive. With AI Builder, you don't need coding or data science skills to access the power of AI. Prebuilt, customizable models are turnkey-ready for many common business scenarios, and you can build your own models to meet a specific business need. |
@@ -57,7 +57,7 @@ The Power Platform product family relies on a few supporting capabilities and co
 
 ## Key benefits of Power Platform for app modernization
 
-The benefits of modernizing applications using the Microsoft Power Platform extend beyond the initial business value of having a solution that uses modern technologies. 
+The benefits of modernizing applications using the Microsoft Power Platform extend beyond the initial business value of having a solution that uses modern technologies.
 
 - **Lower costs.** Organizations can save money on app development and maintenance. A [commissioned study](https://info.microsoft.com/ww-landing-forrester-tei-of-power-platform-premium-capabilities.html) by Forrester Consulting found that organizations that use Power Platform can see a 45 percent decrease in application development costs and realize a 140% return on their investment.
 
@@ -65,9 +65,9 @@ The benefits of modernizing applications using the Microsoft Power Platform exte
 
 - **Build the cart, not the wheel.** Traditional software development starts fresh every time, reinventing the wheel with every new project. With low-code, intuitive, maker-friendly Power Platform products as your wheels, you can focus on building a better cart—improving your business processes—and enjoy the benefits of your modernization efforts sooner.
 
-- **Reduce technical debt.** The cost—both financially and in lost opportunities—of upgrading "quick and dirty" software solutions and maintaining legacy infrastructure is high. Power Platform reduces this technical debt by making it easier and cheaper for building solutions right the first time, simplifying data integration and governance with a common data model and connectors, providing a centralized platform for managing solutions, and supporting continuous improvement with analytics and AI.
+- **Reduce technical debt.** The cost—both financially and in lost opportunities—of upgrading "quick and dirty" software solutions and maintaining legacy infrastructure is high. Power Platform reduces this technical debt by making it easier and less expensive to build solutions right the first time. It also simplifies data integration and governance with a common data model and connectors, centralizes solution management, and supports continuous improvement with analytics and AI.
 
-- **Enhance security and ensure compliance.** All Power Platform products include fully integrated, enterprise-grade security, compliance, and governance out-of-the-box, starting with the environments they run in. Managed Environments is a suite of tools that allow admins to manage Power Platform at scale, with more control and less effort.  Among other capabilities, you can limit who can share which flows and apps and with whom and use policies to restrict the connectors makers can use. Native, flexible data security models mean each application doesn't have to build its own.
+- **Enhance security and ensure compliance.** All Power Platform products include fully integrated, enterprise-grade security, compliance, and governance out-of-the-box, starting with the environments they run in. Managed Environments is a suite of tools that allow admins to manage Power Platform at scale, with more control and less effort. Among other capabilities, you can limit who can share which flows and apps and with whom and use policies to restrict the connectors makers can use. Native, flexible data security models mean each application doesn't have to build its own.
 
 - **Modernize as you go.** The more significant the apps are that you want to modernize, the less likely it is that you want to replace them all at once. A low-code approach lends itself well to building solutions in manageable increments.
 
@@ -81,7 +81,7 @@ The benefits of modernizing applications using the Microsoft Power Platform exte
 
 Frontline workers need modern applications they can use on any device, anywhere they're working. They need access to insights in real time to make better decisions faster. They need to collaborate with coworkers and management to keep everything working smoothly. When American Airlines decided to modernize aspects of its operations, they got all that and more.
 
-In partnership with Microsoft, American Airlines created [ConnectMe](https://news.microsoft.com/2022/05/18/american-airlines-and-microsoft-partnership-takes-flight-to-create-a-smoother-travel-experience-for-customers-and-better-technology-tools-for-team-members/), a Microsoft Teams app built on Power Apps and Azure. Using the app on any mobile device, frontline teams have key arrival, boarding, baggage, and gate information at their fingertips in real time, streamlining ground operations, accelerating aircraft turn times, and making travel a more pleasant experience for customers. [Learn more about the airline's transformation.](https://news.aa.com/news/news-details/2022/American-Airlines-and-Microsoft-Partnership-Takes-Flight-to-Create-a-Smoother-Travel-Experience-for-Customers-and-Better-Technology-Tools-for-Team-Members-MKG-OTH-05/default.aspx)
+In partnership with Microsoft, American Airlines created [ConnectMe](https://news.microsoft.com/2022/05/18/american-airlines-and-microsoft-partnership-takes-flight-to-create-a-smoother-travel-experience-for-customers-and-better-technology-tools-for-team-members/), a Microsoft Teams app built on Power Apps and Azure. Using the app on any mobile device, frontline teams have key arrival, boarding, baggage, and gate information at their fingertips in real time. This visibility streamlines ground operations, accelerates aircraft turn times, and makes travel a more pleasant experience for customers. [Learn more about the airline's transformation.](https://news.aa.com/news/news-details/2022/American-Airlines-and-Microsoft-Partnership-Takes-Flight-to-Create-a-Smoother-Travel-Experience-for-Customers-and-Better-Technology-Tools-for-Team-Members-MKG-OTH-05/default.aspx)
 
 ### AI empowerment for knowledge workers
 
@@ -543,7 +543,7 @@ The following diagram illustrates an example of inbound and outbound events in a
 
 Organizations should also consider prebuilt integration options available from third parties on Microsoft Marketplace. For example, Microsoft has a prebuilt solution for organizations that need to integrate SAP with Power Platform. This prebuilt solution incorporates apps and flows and adds new functionalities that facilitate communication between your organization's SAP system and Power Platform.
 
-For example, Ernst & Young used the prebuilt SAP integration to rapidly develop a solution to optimize a high-frequency global finance process. The following diagram of the [company's PowerPost solution](https://www.microsoft.com/customers/story/25003-ey-global-services-limited-power-apps?msockid=3611ba047493699d18b4ae1575ee6814) shows how finance users post documents to its General Ledger SAP ERP system using Power Platform.
+For example, Ernst & Young used the prebuilt SAP integration to rapidly develop a solution to optimize a high-frequency global finance process. The following diagram of the [company's PowerPost solution](https://www.microsoft.com/customers/story/25760-ey-global-services-limited-microsoft-power-platform/) shows how finance users post documents to its General Ledger SAP ERP system using Power Platform.
 
 :::image type="content" source="media/app-mod/image10.png" alt-text="Diagram of the Ernst & Young integrated SAP solution.":::
 
@@ -559,7 +559,7 @@ As solutions move to the cloud, connectivity back to on-premises resources can b
 
 - **Virtual network data gateways** allow Power BI and Power Platform dataflows to connect to data services in an Azure virtual network without the need of an on-premises data gateway on a virtual machine inside the virtual network.
 
-- **Azure Private Link** and Azure networking private endpoints allows apps and flows to access Power BI securely. Private endpoints are used to send data traffic privately using Microsoft's backbone network infrastructure instead of going across the internet. Private endpoints ensure that traffic going into your organization's Power BI resources, such as reports or workspaces, always follow your organization's configured private link network path. 
+- **Azure Private Link** and Azure networking private endpoints allows apps and flows to access Power BI securely. Private endpoints are used to send data traffic privately using Microsoft's backbone network infrastructure instead of going across the internet. Private endpoints ensure that traffic going into your organization's Power BI resources, such as reports or workspaces, always follow your organization's configured private link network path.
 
 - **Azure ExpressRoute** provides an advanced way to connect your on-premises network to Microsoft cloud services using private connectivity. A single ExpressRoute connection can access multiple online services like Power Platform, Dynamics 365, Microsoft 365, and Azure cloud services without traversing the public internet. ExpressRoute requires significant planning and configuration and involves more cost for the ExpressRoute service and the connectivity provider.
 
@@ -696,14 +696,14 @@ Every organization's journey to application modernization is unique. Your Micros
 
 ## Resources
 
-- [The Total Economic Impact™ of Microsoft Power Platform Premium Capabilities](https://info.microsoft.com/ww-landing-forrester-tei-of-power-platform-premium-capabilities.html)
+- [The Total Economic Impact&trade; of Microsoft Power Platform Premium Capabilities](https://info.microsoft.com/ww-landing-forrester-tei-of-power-platform-premium-capabilities.html)
 - [American Airlines ConnectMe app creates a smoother travel experience for customers and better technology tools for team members](https://news.microsoft.com/2022/05/18/american-airlines-and-microsoft-partnership-takes-flight-to-create-a-smoother-travel-experience-for-customers-and-better-technology-tools-for-team-members/)
 - [Power Fx open-sourced repository on GitHub](https://github.com/microsoft/Power-Fx)
 - [CoE Starter Kit](/power-platform/guidance/coe/starter-kit)
 - [Power Platform Adoption Assessment](/assessments/3c62fd23-9d36-491c-8941-26d5553365f8/)
 - [Digital insurance agency automates a complex purchasing process using Power Platform](https://www.microsoft.com/customers/story/1728829430186194098-nsure-power-platform-insurance-usa)
 - [PCF Gallery](https://pcf.gallery/)
-- [EY redesigns its global finance process with Microsoft Power Platform](https://www.microsoft.com/customers/story/25003-ey-global-services-limited-power-apps?msockid=3611ba047493699d18b4ae1575ee6814)
+- [EY transforms its global finance operations with innovative apps and AI-driven agents using Power Platform](https://www.microsoft.com/customers/story/25760-ey-global-services-limited-microsoft-power-platform/)
 - [Azure Private Link](/power-bi/enterprise/service-security-private-links)
 - [Microsoft Azure ExpressRoute](/power-platform/guidance/expressroute/overview)
 - [Power Platform Release Planner](https://releaseplans.microsoft.com?app=Power+Apps)
