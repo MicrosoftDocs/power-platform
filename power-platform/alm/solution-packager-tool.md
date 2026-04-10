@@ -99,6 +99,8 @@ Introduced alongside [Dataverse Git integration](git-integration/overview.md), t
 > The YAML format is autodetected by the presence of a `solutions/` subfolder containing `*solution.yml` files.
 > If your YAML manifest files (`solution.yml`, `solutioncomponents.yml`, and so on) are placed at the root of the folder rather than under `solutions/<SolutionUniqueName>/`, the tool doesn't detect the YAML format. The tool falls back to the XML path and reports a misleading error about a missing `Customizations.xml`. See [Troubleshooting](#troubleshooting) for information on how to fix this issue.
 
+More information: [Solution YAML source control format reference](solution-source-control-yaml-format.md)
+
 #### Format auto-detection rules
 
 | Condition | Format used |
