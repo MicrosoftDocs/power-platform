@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/30/2026
+ms.date: 04/10/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -37,7 +37,7 @@ When you copy an environment that contains finance and operations apps, you can 
 
 | Option | Description |
 |--------|-------------|
-| **Everything** | Copies all application data (both Dataverse and finance and operations), users, customizations, and schemas from the source environment. This is the most common option for refreshing sandbox or developer environments from production. |
+| **Everything** | Copies all application data (both Dataverse and finance and operations data), users, customizations, and schemas from the source environment. This is the most common option for refreshing sandbox or developer environments from production. |
 | **Customizations and schemas only** | Copies users, customizations, and schemas from the source environment, but doesn't copy application data. Use this option when you need a clean environment with your configuration but no production data. For a list of Dataverse tables truncated with this option, see [Copy an environment](../copy-environment.md). |
 | **Transactionless copy** | Performs a full copy but truncates finance and operations transaction tables in the target environment after the copy completes, significantly reducing storage consumption. For detailed instructions, see [Tutorial: Perform a transaction-less copy between environments](./tutorial-perform-transactionless-copy.md). |
 | **Skip audit data** | Excludes audit log data from the copy. Copying audit logs can significantly increase the time required to complete the operation. By default, audit data is skipped. |
@@ -49,9 +49,9 @@ When you copy an environment that contains finance and operations apps, you can 
 
 ## Begin the copy operation
 
-1. In the Power Platform admin center, go to the source environment you want to copy.
-1. Select the **Copy** button in the top action pane.
-1. In the slider window that appears, configure the following settings:
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to the source environment you want to copy.
+1. Select the **Copy** button in the command bar. The **Copy environment** pane is displayed.
+1. Configure the following settings:
     - **Copy over**: Select **Everything** to copy all data, customizations, and schemas. Select **Customizations and schemas only** to copy the environment structure without application data.
     - **Transactionless Copy**: When copying **Everything**, this option appears and defaults to **Yes**. Set it to **No** if you need all transaction data in the target environment. For more information, see [Tutorial: Perform a transaction-less copy between environments](./tutorial-perform-transactionless-copy.md).
     - **Target**: Select the unified sandbox or developer environment to overwrite with the copy.
