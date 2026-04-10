@@ -64,7 +64,7 @@ Implement a Power Automate–based XML invoice ingestion pattern that:
 
 - Monitors shared accounts payable (AP) mailboxes per country/region, extracts XML and PDF attachments, and routes them into an automation.
 
-- Parses each country’s/region's XML into a normalized internal schema (header, lines, taxes, parties, keys like UUID or folio).
+- Parses each country’s/region's XML into a normalized internal schema (header, lines, taxes, parties, keys like universally unique identifier (UUID) or folio).
 
 - Applies country/region‑aware validation (tax ID formats, document type, totals, and taxes, mandatory tags) before creating pending vendor invoices in Dynamics 365.
 
@@ -78,23 +78,23 @@ Implement a Power Automate–based XML invoice ingestion pattern that:
 
 **Data Extraction and Processing**
 
-- [AI Builder Custom Prompt](https://learn.microsoft.com/ai-builder/form-processing-model-overview) Extracts PO reference and UUID from PDF invoices if not present in XML; classifies invoice type in some scenarios
+- [AI Builder Custom Prompt](/ai-builder/form-processing-model-overview) Extracts purshase order (PO) reference and UUID from PDF invoices if not present in XML; classifies invoice type in some scenarios
 
 **ERP Integration**
 
-- [Dynamics 365 Finance & Operations](https://learn.microsoft.com/dynamics365/finance/finance-insights/overview-finance-insights) is the target system where pending vendor invoices are created. The architecture uses the native Dynamics 365 connector (VendorInvoiceHeaderEntity).
+- [Dynamics 365 Finance & Operations](/dynamics365/finance/finance-insights/overview-finance-insights) is the target system where pending vendor invoices are created. The architecture uses the native Dynamics 365 connector (VendorInvoiceHeaderEntity).
 
 **Data Integration and Validation**
 
 - SharePoint Online Lists serves foundational data layer for invoice logging and exception tracking.
 
-- [Microsoft Dataverse](https://learn.microsoft.com/power-apps/maker/data-platform/data-platform-intro) virtual tables enable seamless validation with Dynamics 365 Finance & Operations.
+- [Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro) virtual tables enable seamless validation with Dynamics 365 Finance & Operations.
 
 **Notification and Monitoring**
 
-- [Microsoft Teams](https://www.microsoft.com/microsoft-teams/group-chat-software) provides real-time notifications to finance personnel upon invoice processing results.
+- [Microsoft Teams](/microsoft-teams/group-chat-software) provides real-time notifications to finance personnel upon invoice processing results.
 
-- [Outlook/Exchange Online](https://learn.microsoft.com/exchange/exchange-online) triggers the workflow and failure notifications. Also provides email organization through folder management.
+- [Outlook/Exchange Online](/exchange/exchange-online) triggers the workflow and failure notifications. Also provides email organization through folder management.
 
 ## Considerations
 
