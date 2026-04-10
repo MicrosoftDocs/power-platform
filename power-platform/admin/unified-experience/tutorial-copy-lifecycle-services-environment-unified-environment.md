@@ -17,15 +17,15 @@ contributors:
 
 # Tutorial: Copy a Lifecycle Services environment to a unified environment 
 
-Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to copy environments. Historically, this has been done in Microsoft Dynamics Lifecycle Services, but now everything can be managed in the Power Platform admin center.
+Finance and operations apps are reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to copy environments. Historically, you performed this function in Microsoft Dynamics Lifecycle Services, but now you can manage everything in the Power Platform admin center.
 
 In this tutorial, learn how to copy a Lifecycle Services (LCS) environment to a unified environment.
 
-As an example of this scenario, a customer who operates their finance and operations apps environments through the Lifecycle Services site today would like to copy their production environment data into their new, unified, developer environment in the Power Platform admin center.
+As an example of this scenario, a customer who operates their finance and operations apps environments through the Lifecycle Services site today wants to copy their production environment data into their new, unified, developer environment in the Power Platform admin center.
 
 ## Before you begin
 
-The target environment in this tutorial is always a unified environment that contains finance and operations apps hosted by Microsoft Dataverse. To learn how to deploy one of these environments, see [Tutorial: Provision a new environment with an ERP-based template ](./tutorial-deploy-new-environment-with-ERP-template.md).
+The target environment in this tutorial is always a unified environment that contains finance and operations apps hosted by Microsoft Dataverse. To learn how to deploy one of these environments, see [Tutorial: Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md).
 
 The source environment in this tutorial is always a finance and operations apps environment in Lifecycle Services that was set up through the [Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration).
 
@@ -37,7 +37,7 @@ When you copy an environment that contains finance and operations apps, you can 
 
 | Option | Description |
 |--------|-------------|
-| **Everything** | Copies all application data (both Dataverse and finance and operations data), users, customizations, and schemas from the source environment. This is the most common option for refreshing sandbox or developer environments from production. |
+| **Everything** | Copies all application data (both Dataverse and finance and operations data), users, customizations, and schemas from the source environment. This option is the most common option for refreshing sandbox or developer environments from production. |
 | **Customizations and schemas only** | Copies users, customizations, and schemas from the source environment, but doesn't copy application data. Use this option when you need a clean environment with your configuration but no production data. For a list of Dataverse tables truncated with this option, see [Copy an environment](../copy-environment.md). |
 | **Transactionless copy** | Performs a full copy but truncates finance and operations transaction tables in the target environment after the copy completes, significantly reducing storage consumption. For detailed instructions, see [Tutorial: Perform a transaction-less copy between environments](./tutorial-perform-transactionless-copy.md). |
 | **Skip audit data** | Excludes audit log data from the copy. Copying audit logs can significantly increase the time required to complete the operation. By default, audit data is skipped. |
@@ -143,4 +143,4 @@ The following table describes each parameter in the copy request.
 | Power Platform admin center: Unified production environment    | Power Platform admin center:  Unified sandbox environment                                | Yes                     |
 
 ### If the target environment isn't managed in the Power Platform admin center
-If the target environment isn't managed in the Power Platform admin center, the copy operation is going to copy only Dataverse data, not finance and operations data.
+If the target environment isn't managed in the Power Platform admin center, the copy operation copies only Dataverse data, not finance and operations data.
