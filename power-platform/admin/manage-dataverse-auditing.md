@@ -103,9 +103,24 @@ You must have a system administrator or system customizer role or equivalent per
 
 You can configure auditing manually through the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). You can also configure auditing programmatically. For more information, see [Auditing overview](/power-apps/developer/data-platform/auditing/overview).
 
-To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, as a Power Platform or Dynamics 365 admin, you can go to **Security** > **Compliance** to turn on auditing. The system automatically turns on auditing for the following tables when you turn on auditing through the [Compliance page](security/compliance.md).
+### Turn on auditing for an environment
 
-You can audit other tables, where applicable, but note that auditing is turned on by default when you select common entities. 
+To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, you can automatically turn on auditing through the [Compliance page](security/compliance.md) for common entities across Dynamics 365 apps.
+
+As a system administrator or system customizer role or equivalent permissions, take the following steps:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. From the left-side menu, select **Security** > **Compliance**.
+1. Select the **Auditing** tile.
+1. Select the environment that you want to turn on auditing.
+1. Select **Set up auditing**. In the **Auditing** pane, select **Turn on auditing**.
+1. Select whether you want auditing to cover **Common entities across Dynamics 365 apps**.
+1. Review and update the **Event log retention** by selecting the dropdown menu.
+1. Select the period that meets your data retention policy.
+
+:::image type="content" source="media/common-entities.png" alt-text="Select common entities to enable auditing for these tables.":::
+
+When you select the option, **Common entities across Dynamics 365 apps**, you enable auditing for the following tables:
 
 |Category  |Table  |
 |-----------|-----------|
@@ -150,19 +165,6 @@ You can audit other tables, where applicable, but note that auditing is turned o
 |Security|fieldsecurityprofile|
 |Security|businessunit|
 
-### Turn on auditing
-
-The following steps describe how to turn on auditing for an environment. This task requires the system administrator or system customizer role or equivalent permissions.
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. From the left-side menu, select **Security** > **Compliance**.
-1. Select the **Auditing** tile.
-1. Select the environment that you want to turn on auditing.
-1. Select **Set up auditing**. In the **Auditing** dialog, select **Turn on auditing**.
-1. Review the list of Dataverse data and Dynamics 365 apps entities.
-1. Review and update the **Event log retention** by selecting the dropdown menu.
-1. Select the period that meets your data retention policy.
-
 > [!NOTE]
 > When you set the audit retention period to **Forever**, the system doesn't delete logs. When you set the audit retention period to any other value, the system continuously deletes logs starting at the time an audit record exceeds the time defined in the retention policy.
 >
@@ -180,9 +182,9 @@ The following table describes the retention policy settings available when you t
 > [!IMPORTANT]
 > The audit retention period isn't available for Dynamics 365 Customer Engagement (on-premises) or for environments encrypted with a customer's own encryption key.
 
-## Start or stop auditing for an environment and set retention policy 
+### Start or stop auditing for an environment 
 
-You need the system administrator or system customizer role, or equivalent permissions, to complete this task. The following table describes the settings available for auditing for an environment:
+ The following table describes the settings available for auditing for an environment:
 
    |   Setting |     Description    |
    |--------------------|---------------------|
@@ -190,12 +192,16 @@ You need the system administrator or system customizer role, or equivalent permi
    | Log access | Log whenever the system is accessed, generally by signing in.  |
    | Read logs  | Logs are sent to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/auditlogsearch).|
 
+As a system administrator or system customizer, or someone with equivalent permissions, take the following steps:
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
-1. In the **Manage** pane, select **Environments**. Then select an environment.
-1. Select **Settings** > **Audit and logs** > **Audit settings**.
-1. Set a retention period for how long audit logs are kept in an environment. Under **Retain these logs for**, choose the period of time to retain the logs. 
-1. Select **Save**.
+1. In the **Manage** pane, select **Environments**, and then select an environment.
+1. Select **Settings**.
+1. Expand **Audit and logs** and then select **Audit settings**.
+1. Set a retention period for how long audit logs are kept in an environment. Under **Retain these logs for**, choose the period of time to retain the logs.
+1. Select **Global Audit Settings** to open the Microsoft Dynamics 365 system settings. From there, turn on **Start Auditing** and select the entities you want to audit. Select **OK**.
+1. On the Audit settings page, select **Save**.
 
 > [!NOTE]
 > Use the Security page auditing option to set the retention policy. This option provides the flexibility to apply the retention policy to existing logs. 
@@ -438,10 +444,10 @@ For Unified Interface, in the upper-right corner, select **Settings** > **Advanc
 1. Choose how to select logs to delete. 
 1. Select **Delete** and then confirm.
 
-   > [!NOTE]
-   > Audit logs are deleted in an asynchronous background system job. The duration of the deletion depends on the number of audit records to be deleted. The current rate is approximately 100 million records per day, or approximately 4 million records per hour.
-   >
-   > To monitor the status of audit delete jobs, see the next section.
+> [!NOTE]
+> Audit logs are deleted in an asynchronous background system job. The duration of the deletion depends on the number of audit records to be deleted. The current rate is approximately 100 million records per day, or approximately 4 million records per hour.
+>
+> To monitor the status of audit delete jobs, see the next section.
 
 ## Monitor system jobs 
 
