@@ -1,6 +1,6 @@
 ---
 title: "Solution YAML source control format reference"
-description: "Reference for the YAML-based source control folder format used by Dataverse Git integration and SolutionPackager. Covers folder structure, manifest files, supported component types, and multi-solution repositories."
+description: "Reference for the YAML-based source control folder format used by Dataverse Git integration and SolutionPackager. This article covers folder structure, manifest files, supported component types, and multi-solution repositories."
 ms.custom: ""
 ms.date: 04/07/2026
 ms.reviewer: "pehecke"
@@ -22,7 +22,7 @@ This article is a reference for the YAML-based source control format used when y
 The YAML format differs from the classic XML layout. Understanding the structure is important when you want to manually pack a YAML folder back into a `.zip` file that Dataverse can import.
 
 > [!IMPORTANT]
-> YAML source control format support in the `pac` CLI requires **Microsoft.PowerApps.CLI version 2.4.1 or later**. Download the latest version from [NuGet](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/2.4.1) or update via `pac install latest`. SolutionPackager.exe, which ships with the NuGet package, supports the YAML format from the same version.
+> YAML source control format support in the `pac` CLI requires Microsoft.PowerApps.CLI version 2.4.1 or later. Download the latest version from [NuGet](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/2.4.1) or update via `pac install latest`. SolutionPackager.exe, which ships with the NuGet package, supports the YAML format from the same version.
 
 ## Folder structure overview
 
@@ -55,7 +55,7 @@ A YAML-format repository root contains the following top-level directories:
 └── [other component folders]/
 ```
 
-The `solutions/` and `publishers/` directories are **required**. All component folders at the root are optional and depend on what the solution contains.
+The `solutions/` and `publishers/` directories are required. All component folders at the root are optional and depend on what the solution contains.
 
 > [!IMPORTANT]
 > All YAML manifest files (`solution.yml`, `publisher.yml`, and so on) must be placed under their respective subdirectories (`solutions/<name>/`, `publishers/<name>/`). Placing them at the repository root prevents format detection and causes the SolutionPackager tool to fall back to the XML format — producing a misleading error about a missing `Customizations.xml`. More information: [SolutionPackager tool troubleshooting](solution-packager-tool.md#troubleshooting)
@@ -101,7 +101,7 @@ Located at `solutions/<SolutionUniqueName>/rootcomponents.yml`. Lists the root-l
  > warning and omits that component from the packed `.zip`. The pack operation still completes
  > successfully with exit code 0.
  >
- > **Pack success does not guarantee import success.** If `solutioncomponents.yml` omits required
+ > Pack success does not guarantee import success. If `solutioncomponents.yml` omits required
  > dependency paths — such as parent entity folders or relationship definitions under
  > `entityrelationships/` — the solution packs without error but fails on import with a message like:
  > *"Attributes are missing associated relationship definitions."* Always ensure
@@ -192,20 +192,22 @@ Example structure with two solutions:
     └── myflow/
 ```
 
-**Packing a specific solution from a multi-solution folder:**
+### Packing a specific solution from a multi-solution folder
 
 Using SolutionPackager.exe:
+
 ```
 SolutionPackager.exe /action:Pack /zipfile:SolutionA.zip /folder:C:\repos\myrepo /SolutionName:SolutionA
 ```
 
 Using `pac solution pack` (single-solution folders only — for multi-solution, use SolutionPackager.exe directly with `/SolutionName`):
+
 ```powershell
 pac solution pack --zipfile SolutionA.zip --folder C:\repos\myrepo
 ```
 
 > [!NOTE]
-> When using native Dataverse Git integration with **environment binding**, all solutions in the environment share a single repository root using the multi-solution layout. When using **solution binding**, each solution can be bound to a separate folder.
+> When using native Dataverse Git integration with environment binding, all solutions in the environment share a single repository root using the multi-solution layout. When using solution binding, each solution can be bound to a separate folder.
 
 ## Working with YAML format folders
 
