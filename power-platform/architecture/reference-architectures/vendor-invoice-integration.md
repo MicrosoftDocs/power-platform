@@ -82,7 +82,7 @@ Implement a Power Automate–based XML invoice ingestion pattern that:
 
 **ERP Integration**
 
-- [Dynamics 365 Finance & Operations](/dynamics365/finance/finance-insights/overview-finance-insights) is the target system where pending vendor invoices are created. The architecture uses the native Dynamics 365 connector (VendorInvoiceHeaderEntity).
+- [Dynamics 365 Finance & Operations](/dynamics365/finance) is the target system where pending vendor invoices are created. The architecture uses the native Dynamics 365 connector (VendorInvoiceHeaderEntity).
 
 **Data Integration and Validation**
 
@@ -92,7 +92,7 @@ Implement a Power Automate–based XML invoice ingestion pattern that:
 
 **Notification and Monitoring**
 
-- [Microsoft Teams](/microsoft-teams/group-chat-software) provides real-time notifications to finance personnel upon invoice processing results.
+- [Microsoft Teams](/microsoftteams) provides real-time notifications to finance personnel upon invoice processing results.
 
 - [Outlook/Exchange Online](/exchange/exchange-online) triggers the workflow and failure notifications. Also provides email organization through folder management.
 
