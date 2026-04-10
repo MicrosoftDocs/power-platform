@@ -84,6 +84,16 @@ Before this feature became available, it was common to store managed and unmanag
 
 The feature uses YAML to represent solution content because it's easier to read, understand, and facilitates easier merges.
 
+## What folder structure does the YAML source control format use?
+
+When solutions are committed using Dataverse Git integration, or extracted using `pac solution clone`, they're stored in a specific folder layout under the repository root:
+
+- `solutions/<SolutionUniqueName>/` — contains `solution.yml` and supporting manifest files (`solutioncomponents.yml`, `rootcomponents.yml`, `missingdependencies.yml`)
+- `publishers/<PublisherUniqueName>/` — contains `publisher.yml`
+- Component folders (`entities/`, `workflows/`, `canvasapps/`, and so on) at the repository root
+
+This structure is required when you manually pack the folder back into a `.zip` file using SolutionPackager or `pac solution pack`. Placing the YAML files at the repository root instead of under `solutions/<name>/` causes a misleading error about a missing `Customizations.xml`. For a complete reference, see [Solution YAML source control format](../solution-source-control-yaml-format.md).
+
 ## How can I build and deploy a solution from source code?
 
 Currently, deployment requires synchronizing the Git release branch with a development environment and exporting the managed artifact from the environment. <!-- Update this FAQ when expanded feature becomes available.-->
@@ -136,7 +146,7 @@ Currently, some low-usage legacy object types are unsupported. You receive an er
 
 ## How can I upgrade existing solutions?
 
-You can connect existing solutions in an environment to Git and commit them. If the solution is only in Git, first use developer tools to pack and import the unmanaged solution into a new development environment. We recommend a new source code location to avoid disruptive changes between old and new file formats.
+You can connect existing solutions in an environment to Git and commit them. If the solution is only in Git, first use developer tools to pack and import the unmanaged solution into a new development environment. We recommend a new source code location to avoid disruptive changes between old and new file formats. For more information about packing a YAML source-controlled solution, see [SolutionPackager tool](../solution-packager-tool.md#source-control-file-formats).
 
 ## Can I use Git integration to audit metadata changes? Even for citizen developers?
 
