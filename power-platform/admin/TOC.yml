@@ -464,7 +464,7 @@
               href: monitoring/monitoring-overview.md
             - name: View event logs and error logs
               href: monitoring/logs.md
-            - name: Create alerts for your resources (preview)
+            - name: Create alerts for your resources
               href: monitoring/alerts.md
             - name: Metrics and recommendations
               items:
@@ -1168,6 +1168,8 @@
           items:
             - name: Overview of unified admin experience for finance and operations apps
               href: unified-experience/finance-operations-apps-overview.md
+            - name: Unified environment types and templates
+              href: unified-experience/unified-environment-types-and-templates.md
             - name: Administration for partners and systems implementers
               href: unified-experience/partners-systems-implementers.md
             - name: Admin trials for finance and operations apps
