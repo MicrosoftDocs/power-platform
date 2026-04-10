@@ -15,7 +15,7 @@ search.audienceType:
 SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse compressed solution file into multiple XML files and other files. You can then easily manage these files by using a source control system. The following sections show you how to run the tool and how to use the tool with managed and unmanaged solutions.  
 
 > [!IMPORTANT]
-> The SolutionPackager tool is no longer the recommended way to unpack and pack solutions.  The capabilities of the SolutionPackager tool have been incorporated into the [Power Platform CLI](../developer/cli/introduction.md).  The [`pac solution`](../developer/cli/reference/solution.md) command has a number of verbs including [`unpack`](../developer/cli/reference/solution.md#pac-solution-unpack), [`pack`](../developer/cli/reference/solution.md#pac-solution-pack), [`clone`](../developer/cli/reference/solution.md#pac-solution-clone), and [`sync`](../developer/cli/reference/solution.md#pac-solution-sync) that incorporate the same underlying capabilities of the SolutionPackager tool.
+> The SolutionPackager tool is no longer the recommended way to unpack and pack solutions. The capabilities of the SolutionPackager tool are incorporated into the [Power Platform CLI](../developer/cli/introduction.md). The [`pac solution`](../developer/cli/reference/solution.md) command has many verbs including [`unpack`](../developer/cli/reference/solution.md#pac-solution-unpack), [`pack`](../developer/cli/reference/solution.md#pac-solution-pack), [`clone`](../developer/cli/reference/solution.md#pac-solution-clone), and [`sync`](../developer/cli/reference/solution.md#pac-solution-sync) that incorporate the same underlying capabilities of the SolutionPackager tool.
   
 <a name="bkm_where"></a>
 
@@ -62,7 +62,7 @@ SolutionPackager supports two folder layouts when extracting and packing solutio
 
 ### XML format (legacy)
 
-The original format. Solution metadata is stored in `Other\Solution.xml` and `Other\Customizations.xml`, and all component files are extracted into a flat folder hierarchy alongside those files. This is the default format when extracting a `.zip` file without additional configuration.
+The original format. Solution metadata is stored in `Other\Solution.xml` and `Other\Customizations.xml`, and all component files are extracted into a flat folder hierarchy alongside those files. This format is the default format when extracting a `.zip` file without more configuration.
 
 ### YAML source control format
 
@@ -96,8 +96,8 @@ Introduced alongside [Dataverse Git integration](git-integration/overview.md), t
 ```
 
 > [!IMPORTANT]
-> The YAML format is auto-detected by the presence of a `solutions/` subfolder containing `*solution.yml` files.
-> If your YAML manifest files (`solution.yml`, `solutioncomponents.yml`, and so on) are placed at the root of the folder rather than under `solutions/<SolutionUniqueName>/`, the tool doesn't detect the YAML format. The tool falls back to the XML path and reports a misleading error about a missing `Customizations.xml`. See [Troubleshooting](#troubleshooting) for information on how to fix this.
+> The YAML format is autodetected by the presence of a `solutions/` subfolder containing `*solution.yml` files.
+> If your YAML manifest files (`solution.yml`, `solutioncomponents.yml`, and so on) are placed at the root of the folder rather than under `solutions/<SolutionUniqueName>/`, the tool doesn't detect the YAML format. The tool falls back to the XML path and reports a misleading error about a missing `Customizations.xml`. See [Troubleshooting](#troubleshooting) for information on how to fix this issue.
 
 #### Format auto-detection rules
 
