@@ -1,11 +1,11 @@
 ### `solution unpack` remarks
 
-`pac solution unpack` extracts solution components from a `.zip` file into the **XML format** by default, creating an `Other\Solution.xml` hierarchy.
+By default, `pac solution unpack` extracts solution components from a `.zip` file into the **XML format**, creating an `Other\Solution.xml` hierarchy.
 
 > [!IMPORTANT]
 > YAML source control format support requires **Microsoft.PowerApps.CLI version 2.4.1 or later**. Download from [NuGet](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/2.4.1) or update with `pac install latest`.
 
-When working with solutions managed via native [Dataverse Git integration](../../../../alm/git-integration/overview.md) or extracted via `pac solution clone`, the resulting folder uses the **YAML source control format** instead:
+When you work with solutions managed through native [Dataverse Git integration](../../../../alm/git-integration/overview.md) or extracted by using `pac solution clone`, the resulting folder uses the **YAML source control format** instead:
 
 ```
 <folder>/
@@ -21,9 +21,9 @@ When working with solutions managed via native [Dataverse Git integration](../..
 └── [component folders — entities/, workflows/, canvasapps/, ...]
 ```
 
-To repack a folder in this YAML layout, use `pac solution pack --folder <rootFolder>` — the YAML format is detected automatically from the presence of the `solutions/` subdirectory.
+To repack a folder in this YAML layout, use `pac solution pack --folder <rootFolder>`. The presence of the `solutions/` subdirectory automatically signals the YAML format.
 
 > [!IMPORTANT]
-> If a component is listed in `rootcomponents.yml` but its source files aren't present in the folder (for example, a canvas app `.msapp` file under `canvasapps/<name>/`), the pack operation still succeeds but that component is omitted from the output `.zip`. Re-export and unpack the full solution from Dataverse to ensure all component files are present.
+> If you list a component in `rootcomponents.yml` but don't include its source files in the folder (for example, a canvas app `.msapp` file under `canvasapps/<name>/`), the pack operation still succeeds but omits that component from the output `.zip`. To ensure all component files are present, re-export and unpack the full solution from Dataverse.
 
 For more information about the YAML folder structure and component support, see [SolutionPackager tool — Source control file formats](../../../../alm/solution-packager-tool.md#source-control-file-formats).
