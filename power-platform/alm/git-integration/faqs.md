@@ -126,7 +126,19 @@ There is no tenant or environment level setting to prevent connecting to Git. Ho
 
 ## Can I commit large solutions?
 
-Yes. However, there's a 17 MB limit for single file commits withing Azure DevOps. The system chunks large solutions, containing multiple files into multiple commits and squash-merges them.
+Yes. You can commit large solutions using Git integration. However, Azure DevOps enforces a 17‑MB limit per individual file during a commit operation.
+
+Most solutions consist of many files. Some individual files—such as Canvas app artifacts, plug‑in assemblies, or other binary‑heavy components—may approach or exceed this limit. Although Azure DevOps supports files up to 25 MB, files are base64‑encoded during the commit process, which effectively reduces the supported size to approximately 17 MB.
+
+To handle large solutions, the system automatically:
+
+- Splits the solution into multiple smaller file batches
+- Commits each batch separately
+- Squash‑merges the commits so the Git history remains clean
+
+If a single file within a solution exceeds the 17‑MB limit, the commit may still fail. This is most commonly seen with large Canvas apps, large plug‑in assemblies, PCF control bundles, or other binary‑heavy components.
+
+If you encounter commit failures due to file size, consider reducing the size of the affected component by removing unused resources or splitting large Canvas apps into smaller components or libraries.
 
 ## Are all object types supported?
 
