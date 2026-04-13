@@ -3,7 +3,7 @@ title: Connector action control
 description: You can use connector action control in Power Platform admin center to allow or block individual actions within a given connector.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 10/01/2025
+ms.date: 04/07/2026
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -40,7 +40,7 @@ You can use connector action control to allow or block individual actions or tri
     :::image type="content" source="media/connector-action-control/new-data-connector-actions.png" alt-text="Select Configure connector > Connector actions." lightbox="media/connector-action-control/new-data-connector-actions.png":::
 
    > [!NOTE]
-   > You can configure connector actions for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
+   > You can configure connector actions for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-you-cant-block) and [custom connectors](dlp-custom-connector-parity.md).
 
 1. Use the side panel to allow or deny specific actions.
 

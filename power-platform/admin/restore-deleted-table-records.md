@@ -4,7 +4,7 @@ description: Learn how to use the Power Platform admin center to view restore de
 author: rijoshi1
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/12/2026
+ms.date: 04/06/2026
 ms.subservice: admin
 ms.author: rijoshi
 ms.reviewer: ellenwehrle
@@ -122,7 +122,7 @@ Some tables don't support restoring deleted records. These tables include:
 - Tables that store [solution components](../alm/solution-concepts-alm.md#solution-components)
 - [Elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables)
 
-During the preview, some tables with large numbers of columns aren't currently supported. Currently, the maximum number of columns is 400. This value might go higher or lower as Microsoft determines the correct threshold.
+During the preview, some tables with large numbers of columns aren't currently supported. Currently, the maximum number of columns is 400. This value might go higher or lower as Microsoft determines the correct threshold. Check the attribute count for a specific entity using **{organizationUrl}/api/data/v9.0/EntityDefinitions(LogicalName='account')/Attributes?$count=true**.
 
 Developers can run a [query that returns which tables are enabled for deleted records feature](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-are-enabled-for-recycle-bin) in your environment.
 

@@ -84,6 +84,16 @@ Before this feature became available, it was common to store managed and unmanag
 
 The feature uses YAML to represent solution content because it's easier to read, understand, and facilitates easier merges.
 
+## What folder structure does the YAML source control format use?
+
+When solutions are committed using Dataverse Git integration, or extracted using `pac solution clone`, they're stored in a specific folder layout under the repository root:
+
+- `solutions/<SolutionUniqueName>/` — contains `solution.yml` and supporting manifest files (`solutioncomponents.yml`, `rootcomponents.yml`, `missingdependencies.yml`)
+- `publishers/<PublisherUniqueName>/` — contains `publisher.yml`
+- Component folders (`entities/`, `workflows/`, `canvasapps/`, and so on) at the repository root
+
+This structure is required when you manually pack the folder back into a `.zip` file using SolutionPackager or `pac solution pack`. Placing the YAML files at the repository root instead of under `solutions/<name>/` causes a misleading error about a missing `Customizations.xml`. For a complete reference, see [Solution YAML source control format](../solution-source-control-yaml-format.md).
+
 ## How can I build and deploy a solution from source code?
 
 Microsoft tools can now build the YAML solution format. It's recommended to use the [Power Platform CLI](../developer/cli/introduction.md) [`pack`](../developer/cli/reference/solution.md#pac-solution-pack) command. The [`unpack`](../developer/cli/reference/solution.md#pac-solution-unpack), [`clone`](../developer/cli/reference/solution.md#pac-solution-clone), and [`sync`](../developer/cli/reference/solution.md#pac-solution-sync) commands don't currently support YAML format. 
@@ -116,7 +126,19 @@ There is no tenant or environment level setting to prevent connecting to Git. Ho
 
 ## Can I commit large solutions?
 
-Yes. However, there's a 17 MB limit for single file commits withing Azure DevOps. The system chunks large solutions, containing multiple files into multiple commits and squash-merges them.
+Yes. You can commit large solutions using Git integration. However, Azure DevOps enforces a 17‑MB limit per individual file during a commit operation.
+
+Most solutions consist of many files. Some individual files—such as Canvas app artifacts, plug‑in assemblies, or other binary‑heavy components—may approach or exceed this limit. Although Azure DevOps supports files up to 25 MB, files are base64‑encoded during the commit process, which effectively reduces the supported size to approximately 17 MB.
+
+To handle large solutions, the system automatically:
+
+- Splits the solution into multiple smaller file batches
+- Commits each batch separately
+- Squash‑merges the commits so the Git history remains clean
+
+If a single file within a solution exceeds the 17‑MB limit, the commit may still fail. This is most commonly seen with large Canvas apps, large plug‑in assemblies, PCF control bundles, or other binary‑heavy components.
+
+If you encounter commit failures due to file size, consider reducing the size of the affected component by removing unused resources or splitting large Canvas apps into smaller components or libraries.
 
 ## Are all object types supported?
 
@@ -124,7 +146,7 @@ Currently, some low-usage legacy object types are unsupported. You receive an er
 
 ## How can I upgrade existing solutions?
 
-You can connect existing solutions in an environment to Git and commit them. If the solution is only in Git, first use developer tools to pack and import the unmanaged solution into a new development environment. We recommend a new source code location to avoid disruptive changes between old and new file formats.
+You can connect existing solutions in an environment to Git and commit them. If the solution is only in Git, first use developer tools to pack and import the unmanaged solution into a new development environment. We recommend a new source code location to avoid disruptive changes between old and new file formats. For more information about packing a YAML source-controlled solution, see [SolutionPackager tool](../solution-packager-tool.md#source-control-file-formats).
 
 ## Can I use Git integration to audit metadata changes? Even for citizen developers?
 
