@@ -4,13 +4,15 @@ description: Learn how to manage security in the Power Platform admin center by 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/31/2025
+ms.date: 04/10/2026
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.contributors:
+  - nsalazargonz
 ---
 
 # Security overview
@@ -50,6 +52,11 @@ To access the **Security** > **Overview** page, you must have Microsoft Entra ID
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+> [!Important]
+> Microsoft is actively working on updates to the **Security** area of Power Platform admin center. As part of this effort, we don't plan to invest in changes to the current preview implementation of logic or the security score calcualtion.
+>
+> Given that this functionality is in preview, behaviors may change as we continue to make changes. We recommend using the security score for evaluation purposes only at this time.
 
 The security score is calculated based on the security features that are turned on in your environment. It provides a measurement of your organizational security position for Microsoft Power Platform and Dynamics 365 workloads.
 
