@@ -13,5 +13,6 @@
         "successfactors",
         "tbrazelton",
         "yingchin"
-    ]
+    ],
+    "sarif-viewer.connectToGithubCodeScanning": "off"
 }
