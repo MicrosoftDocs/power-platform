@@ -68,7 +68,7 @@ Make sure that your Azure DevOps Git repo is initialized. New projects and repos
 
 ## Do I integrate my dev, test, and prod environments with source code and use branch merging to push configuration to another environment?
 
-This feature is designed to only have your unmanaged solutions in development environments connected to Git. Deployment to upstream environments requires exporting the managed solution from a development environment, building the solution from source control with the [Power Platform CLI](../developer/cli/introduction.md) [`pack`](../developer/cli/reference/solution.md#pac-solution-pack) command, or using pipelines in Power Platform.
+This feature is designed to only have your unmanaged solutions in development environments connected to Git. Deployment to upstream environments requires exporting the managed solution from a development environment, building the solution from source control with the [Power Platform CLI](../../developer/cli/introduction.md) [`pack`](../../developer/cli/reference/solution.md#pac-solution-pack) command, or using pipelines in Power Platform.
 
 ## How do I work with branches?
 
@@ -86,7 +86,7 @@ The feature uses YAML to represent solution content because it's easier to read,
 
 ## How can I build and deploy a solution from source code?
 
-Microsoft tools can now build the YAML solution format. It's recommended to use the [Power Platform CLI](../developer/cli/introduction.md) [`pack`](../developer/cli/reference/solution.md#pac-solution-pack) command. The [`unpack`](../developer/cli/reference/solution.md#pac-solution-unpack), [`clone`](../developer/cli/reference/solution.md#pac-solution-clone), and [`sync`](../developer/cli/reference/solution.md#pac-solution-sync) commands don't currently support YAML format. 
+Microsoft tools can now build the YAML solution format. It's recommended to use the [Power Platform CLI](../../developer/cli/introduction.md) [`pack`](../../developer/cli/reference/solution.md#pac-solution-pack) command. The [`unpack`](../../developer/cli/reference/solution.md#pac-solution-unpack), [`clone`](../../developer/cli/reference/solution.md#pac-solution-clone), and [`sync`](../../developer/cli/reference/solution.md#pac-solution-sync) commands don't currently support YAML format. 
 
 ## How do I develop with code-first objects where I don't want my compiled binaries checked into source code?
 
@@ -136,7 +136,7 @@ Yes.
 
 ## Can I automatically deploy changes pushed to Git?
 
-Yes, you can trigger an automated build and release with Azure Pipelines or GitHub Actions. The [Power Platform CLI](../developer/cli/introduction.md) [`pack`](../developer/cli/reference/solution.md#pac-solution-pack) command builds the solution artifact that's imported to other environments. Alternatively, you can use pipelines in Power Platform or the Power Platform CLI pac pipeline command to deploy.
+Yes, you can trigger an automated build and release with Azure Pipelines or GitHub Actions. The [Power Platform CLI](../../developer/cli/introduction.md) [`pack`](../../developer/cli/reference/solution.md#pac-solution-pack) command builds the solution artifact that's imported to other environments. Alternatively, you can use pipelines in Power Platform or the Power Platform CLI pac pipeline command to deploy.
 
 ## Can I connect environments located in a different geo than the ADO repo?
 
