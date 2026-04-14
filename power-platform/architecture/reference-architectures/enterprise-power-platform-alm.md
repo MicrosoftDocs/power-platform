@@ -12,6 +12,13 @@ ms.reviewer: jhaskett-msft
 
 # Enterprise Power Platform ALM using Dataverse Git integration, Power Platform pipelines, and AI-assisted release governance
 
+As Power Platform adoption scales, organizations often struggle to maintain a consistent and governed development model across multiple makers, developers, and environments. Common challenges include shared development environments, limited change traceability, inconsistent release documentation, and difficulty applying standard software development life cycle controls in low-code delivery teams. These challenges increase deployment risk, slow collaboration, and make audit and compliance activities harder to support.
+
+This reference architecture addresses these challenges by combining native Dataverse Git integration with Power Platform Pipelines, Azure DevOps governance, and AI-assisted release notes generation to create a repeatable enterprise ALM pattern.
+
+> [!TIP]  
+> This article provides an example scenario and a generalized example architecture to illustrate how to use Dataverse Git integration, Power Platform pipelines, and Copilot Studio to automate deployments. The architecture example can be modified for many different scenarios and industries.
+
 ## Architecture diagram
 
 :::image type="content" source="media/enterprise-power-platform-alm/enterprise-power-platform-alm.png" alt-text="Diagram of Dataverse ALM workflow showing DEV, TEST, UAT, and Production environments with Git and Power Platform Pipelines integration.":::
@@ -62,17 +69,11 @@ ms.reviewer: jhaskett-msft
 
     1. Merge hotfix changes back from the release branch into the main branch to ensure they're kept intact in future releases.
 
-## Use case details
-
-### Business problem
-
-As Power Platform adoption scales, organizations often struggle to maintain a consistent and governed development model across multiple makers, developers, and environments. Common challenges include shared development environments, limited change traceability, inconsistent release documentation, and difficulty applying standard software development life cycle controls in low-code delivery teams. These challenges increase deployment risk, slow collaboration, and make audit and compliance activities harder to support.
-
-### Use case and value created
-
-This reference architecture addresses these challenges by combining native Dataverse Git integration with Power Platform Pipelines, Azure DevOps governance, and AI-assisted release notes generation to create a repeatable enterprise ALM pattern.
+## Scenario details
 
 The architecture is especially valuable for organizations that need to support multiple development environments working in parallel (DEV1, DEV2, DEV-n) while maintaining a shared, governed source of truth in Git. Each developer or small team can work in an isolated environment and synchronize changes through branch-based workflows, enabling teams to collaborate without relying on a single shared development environment.
+
+### Business value
 
 Key value delivered by this architecture includes:
 
@@ -259,4 +260,4 @@ _Microsoft maintains this article. The following contributors wrote this article
 
 Principal authors:
 
-- **[Nick Talsma](https://www.linkedin.com/in/biswapm/)**, Power Platform Technical Architect, Ludia Consulting
+- **[Nick Talsma](https://www.linkedin.com/in/biswapm/)**, Power Platform Technical Architect
