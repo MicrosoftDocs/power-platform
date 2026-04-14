@@ -12,9 +12,9 @@ ms.topic: overview
 
 # mobilezone modernizes service delivery using Microsoft Copilot Studio
 
-[mobilezone](https://www.mobilezone.ch/) is one of Switzerland’s most recognizable telecommunications retailers, serving hundreds of thousands of customers across more than 125 stores and through its digital channels. With rising customer expectations and increasing service volumes, the company has set out to modernize how it supports both customers and employees.
+[mobilezone](https://www.mobilezone.ch/) is one of Switzerland’s most recognizable telecommunications retailers. The company serves hundreds of thousands of customers across more than 125 stores and through its digital channels. With rising customer expectations and increasing service volumes, the company set out to modernize how it supports both customers and employees.
 
-The transformation centered on building two AI agents using Microsoft Copilot Studio, one for customers, and one for internal teams. These agents reduced the load on mobilezone’s external contact center, improved online conversion by guiding customers through product discovery, and streamlined internal IT support through conversational ticketing.
+The transformation centered on building two AI agents using Microsoft Copilot Studio, one for customers and one for internal teams. These agents reduced the load on mobilezone’s external contact center, improved online conversion by guiding customers through product discovery, and streamlined internal IT support through conversational ticketing.
 
 This case study highlights how mobilezone designed and built two Copilot Studio agents while establishing a repeatable architecture for future AI agents.
 
@@ -28,9 +28,9 @@ Internal teams faced a different but equally costly challenge. The IT ticketing 
 
 To support both customer service and internal IT operations, mobilezone built two conversational agents using Copilot Studio. Mia is a multilingual customer-facing assistant designed for high-volume inquiries, while Supporto is an internal IT support agent that streamlines issue intake and automates ticket creation.
 
-Since introducing Supporto, mobilezone has cut employee wait times for incident resolution in half, improving internal support responsiveness.
+Since introducing Supporto, mobilezone cut employee wait times for incident resolution in half, improving internal support responsiveness.
 
-Mia and Supporto together handle more than 1,600 conversations per month across customer-facing and internal scenarios. Mia supports roughly 1,250 active chats per month, with an engagement rate of approximately 47 percent. Conversations primarily take place in German, followed by French, Italian, and English, and most commonly focus on device or subscription consultations, frequently asked questions, and order status inquiries.
+Mia and Supporto together handle more than 1,600 conversations per month across customer-facing and internal scenarios. Mia supports roughly 1,250 active chats per month, with an engagement rate of approximately 47 percent. Conversations primarily take place in German, followed by French, Italian, and English. The most common requests include device or subscription consultations, frequently asked questions, and order status.
 
 Supporto handles around 350 employee chats per month and sees a higher engagement rate of 87 percent, reflecting its intended use for internal support. It automatically adapts responses based on the user’s system language, enabling employees to interact in their working language even when it differs from their native one.
 
@@ -40,7 +40,7 @@ Supporto handles around 350 employee chats per month and sees a higher engagemen
 
 ### Customer-facing agent Mia
 
-Mia is a customer service and sales agent embedded directly on mobilezone's [website.](https://www.mobilezone.ch/) It serves as a digital first-line assistant, handling a large portion of standard customer inquiries and guiding users to the right information or offers.
+Mia is a customer service and sales agent embedded directly on mobilezone's [website](https://www.mobilezone.ch/). It serves as a digital frontline assistant, handling a large portion of standard customer inquiries and guiding users to the right information or offers.
 
 Key capabilities:
 
@@ -60,13 +60,13 @@ Key capabilities:
 
 The following image shows Mia speaking Italian.
 
-:::image type="content" source="media/mobilezone-modernizes-service-delivery/website-agent-mia.png" alt-text="Screenshot of mobilezone website with Mia virtual assistant chat open, showing Italian welcome message and support options." lightbox="media/mobilezone-modernizes-service-delivery/website-agent-mia.png":::
+:::image type="content" source="media/mobilezone-modernizes-service-delivery/website-agent-mia.png" alt-text="Screenshot of mobilezone website with Mia virtual assistant chat open, showing Italian welcome message, and support options." lightbox="media/mobilezone-modernizes-service-delivery/website-agent-mia.png":::
 
-Business Impact:
+Key benefits:
 
 - **Always-on service at scale**: Mia becomes the front door to mobilezone, instantly answering customer questions around the clock and across every national language. It now serves more than 200,000 users and ensures no one waits for support.
 
-- **Significant service deflection:** By handling many repetitive, high-volume inquiries, Mia reduces load on the external contact center and reduces cost per interaction.
+- **Significant service deflection:** Mia reduces load on the external contact center and reduces cost per interaction, by handling many repetitive, high-volume inquiries.
 
 - **Higher online conversion:** With real‑time access to eligible offers, Mia guides customers to the right subscription or device at the moment of intent, accelerating decisions and lifting digital sales.
 
@@ -74,15 +74,15 @@ Business Impact:
 
 > With our customer facing agent “Mia” we created using Copilot Studio, we’re giving customers a similar experience to visiting a mobilezone store. The agent asks whether they’re happy with their current subscription, or what they’re paying, and then searches for options that suit their requirements or lifestyle.
 >
-> — *Mark Schwarz, Chief Digital & Information Officer, mobilezone AG*
+> — *Mark Schwarz, Chief Digital & Information Officer, mobilezone AG*
 
 ### Internal IT support agent Supporto
 
-The internal IT support agent, called Supporto, lives inside Teams and Microsoft 365 and provides a natural, conversational way for employees to request help.
+The internal IT support agent called Supporto, lives inside Teams and Microsoft 365 and provides a natural, conversational way for employees to request help.
 
 Key capabilities:
 
-- Understand issues described in natural language
+- Understands issues described in natural language
 
 - Gathers information on the problem
 
@@ -100,11 +100,11 @@ The following image shows the Supporto in action.
 
 :::image type="content" source="media/mobilezone-modernizes-service-delivery/internal-agent-supporto.png" alt-text="Screenshot of a Teams chat with Supporto showing a user reporting headphone issues and the agent requesting make, model, and error details." lightbox="media/mobilezone-modernizes-service-delivery/internal-agent-supporto.png":::
 
-Business Impact:
+Key benefits:
 
 - **Faster resolutions:** The agent delivers fully formed, context‑rich tickets, eliminating back‑and‑forth clarification and accelerating time to resolution.
 
-- **Higher productivity:** Teams spend their time solving issues rather than searching for missing details, resulting in higher productivity and more meaningful work.
+- **Higher productivity:** The teams spend their time solving issues rather than searching for missing details, resulting in higher productivity and more meaningful work.
 
 - **Enterprise‑wide usage:** All 600 employees rely on the agent, making it a natural part of the company’s daily processes.
 
@@ -112,55 +112,55 @@ Business Impact:
 
 ## Architecture
 
-The architecture is built to support two specialized Copilot Studio agents for customers and employees, while also providing a foundation for future agents. Each agent uses its own knowledge sources, integrated systems, and dedicated channels. They operate alongside Dynamics 365 applications and an MCP server that supplies product data, offers, and service knowledge. This creates a unified architecture that links data, knowledge, and conversational AI across all support scenarios.
+This architecture supports two specialized Copilot Studio agents for customers and employees, while also providing a foundation for future agents. Each agent uses its own knowledge sources, integrated systems, and dedicated channels. They operate alongside Dynamics 365 applications and a model context protocol (MCP) server that supplies product data, offers, and service knowledge. This architecture links data, knowledge, and conversational AI across all support scenarios.
 
 :::image type="content" source="media/mobilezone-modernizes-service-delivery/architecture.png" alt-text="Diagram of Copilot Studio architecture showing employee and customer agents, integrated with Teams, Microsoft 365 Copilot, Dynamics 365, Confluence, and Jira for support workflows." lightbox="media/mobilezone-modernizes-service-delivery/architecture.png":::
 
 User-facing experience:
 
-- **Microsoft Teams** provides the user interface for Supporto
+- **Microsoft Teams** provides the user interface for Supporto.
 
-- **Microsoft 365 Copilot** offers an additional entry point for employees
+- **Microsoft 365 Copilot** offers an extra entry point for employees.
 
-- **Adaptive Cards** are used for welcome messages and ticket creation
+- **Adaptive Cards** are used for welcome messages and ticket creation.
 
-- mobilezone’s website hosts the Mia agent, embedded through the Dynamics 365 Customer Service live chat entry point
+- mobilezone’s website hosts the Mia agent, embedded through the Dynamics 365 Customer Service live chat entry point.
 
 Dynamics 365 family:
 
-- **Dynamics 365 Customer Service** stores knowledge articles and enables handoff to customer service representatives
+- **Dynamics 365 Customer Service** stores knowledge articles and enables handoff to customer service representatives.
 
-- **Dynamics 365 Commerce** maintains valid, up-to-date product offers
+- **Dynamics 365 Commerce** maintains valid, up-to-date product offers.
 
-- **Dynamics 365 Finance and Operations** stores product data
+- **Dynamics 365 Finance and Operations** stores product data.
 
 Integrations:
 
-- The mobilezone MCP server aggregates and exposes product data from Dynamics 365 Finance and Operations, valid offers from Dynamics 365 Commerce, and knowledge articles from Dynamics 365 Customer Service
+- The mobilezone MCP server aggregates and exposes product data from Dynamics 365 Finance and Operations, valid offers from Dynamics 365 Commerce, and knowledge articles from Dynamics 365 Customer Service.
 
-- Supporto integrates with Confluence using out-of-the-box connectors to retrieve information and with Jira via API for ticket creation
+- Supporto integrates with Confluence using out-of-the-box connectors to retrieve information and with Jira via API for ticket creation.
 
 Workflow for Mia:
 
-1. Customers open Mia on [mobilezone.ch](https://www.mobilezone.ch/) and ask questions about plans, contracts, devices, store information, and general service topics.
+1. Customers open Mia on [mobilezone.ch](https://www.mobilezone.ch/) and ask questions about plans, contracts, devices, store information, and general service inquiries.
 
-1. Mia uses an AI prompt to ask clarifying questions, retrieves product and offer data through an MCP server, and grounds responses with internal knowledge articles.
+1. Mia uses an AI prompt to generate clarifying questions, retrieves product and offer data through an MCP server, and grounds responses with internal knowledge articles.
 
-1. The agent escalates complex or sensitive topics to a customer service representative with full context preserved.
+1. The agent escalates complex or sensitive inquiries to a customer service representative with full context preserved.
 
 Workflow for Supporto:
 
 1. Employees describe their issues in Teams or Microsoft 365 Copilot.
 
-1. Supporto uses an AI prompt to ask clarifying questions, retrieves relevant information from Confluence, and creates IT support tickets by sending an HTTP request to the Jira API from a Copilot Studio topic.
+1. Supporto uses an AI prompt to generate clarifying questions, retrieves relevant information from Confluence, and creates IT support tickets by sending an HTTP request to the Jira API from a Copilot Studio topic.
 
 1. Attachments and metadata are added automatically, and IT support teams manage and resolve the tickets.
 
 ## Implementation approach
 
-mobilezone began its Copilot Studio journey with the internal IT support agent, Supporto, as the first production use case. The scenario was considered low risk but high value, as it impacted every employee and provided a controlled environment to introduce agent-based interactions. Beyond delivering immediate operational value, this first rollout helped teach the organization how to “talk to” an agent.
+mobilezone began its Copilot Studio journey with the internal IT support agent, Supporto, as the first production use case. The scenario was low risk but high value, as it impacted every employee and provided a controlled environment to introduce agent-based interactions. Beyond delivering immediate operational value, this first rollout helped teach the organization how to "talk to" an agent.
 
-A key design decision during implementation was the introduction of an MCP server to manage access to product, offer, and knowledge data. The MCP server enables data to be exposed to the agents in a structured and curated way, ensuring that information unsuitable for customers, such as internal cost or margin details, remains protected. Alternative approaches for data retrieval were not explored in depth, as many early ideas proved impractical during the design phase due to technical or business constraints.
+A key design decision during implementation was the introduction of an MCP server to manage access to product, offer, and knowledge data. The MCP server enables data to be exposed to the agents in a structured and curated way, ensuring that information unsuitable for customers, such as internal cost or margin details, remains protected. The team didn't explore alternative approaches for data retrieval in depth, as many early ideas proved impractical during the design phase due to technical or business constraints.
 
 One of the key lessons learned was the importance of keeping workflows simple before introducing AI. Complexity increases quickly during implementation, and security and governance requirements can further limit flexibility. Keeping things simple from the start proved essential to successfully adopting agent-based solutions.
 
@@ -170,7 +170,7 @@ The following images show examples of how the agents are configured in Copilot S
 
 :::image type="content" source="media/mobilezone-modernizes-service-delivery/mia-configuration-overview.png" alt-text="Screenshot of Copilot Studio showing Mia agent overview with details, model selection, analytics, and general instructions." lightbox="media/mobilezone-modernizes-service-delivery/mia-configuration-overview.png":::
 
-This image shows the tools that Mia is using: the MCP server, 4 AI flows (one disabled), and 4 AI prompts.:::image type="content" source="media/mobilezone-modernizes-service-delivery/mia-configuration-tools.png" alt-text="Screenshot of Copilot Studio Tools tab showing Mia agent tools list, including prompts, flows, and MCP servers." lightbox="media/mobilezone-modernizes-service-delivery/mia-configuration-tools.png":::
+This image shows the tools that Mia is using: the MCP server, four AI flows (one disabled), and four AI prompts.:::image type="content" source="media/mobilezone-modernizes-service-delivery/mia-configuration-tools.png" alt-text="Screenshot of Copilot Studio Tools tab showing Mia agent tools list, including prompts, flows, and MCP servers." lightbox="media/mobilezone-modernizes-service-delivery/mia-configuration-tools.png":::
 
 This image shows the start of Supporto’s general instructions.
 
@@ -178,9 +178,9 @@ This image shows the start of Supporto’s general instructions.
 
 ## Takeaways
 
-This case study demonstrates the potential of using Microsoft Copilot Studio, Dynamics 365 and MCP servers to build internal and customer-facing agents. Here are some key takeaways for IT professionals who are looking to implement a similar solution in their own organizations:
+This case study demonstrates the potential of using Microsoft Copilot Studio, Dynamics 365, and MCP servers to build internal and customer-facing agents. Here are some key takeaways for IT professionals who are looking to implement a similar solution in their own organizations:
 
-- **Support users across languages** Multilingual capabilities let users interact in their preferred language, reducing friction and improving overall experience.
+- **Support users across languages** Multilingual capabilities let users interact in their preferred language, reducing friction and improving the overall experience.
 
 - **Improve ticket quality to speed up resolutions** Structured, conversational intake captures complete information upfront, reducing follow‑ups and helping IT teams resolve issues faster.
 
@@ -194,13 +194,13 @@ This case study demonstrates the potential of using Microsoft Copilot Studio, Dy
 
 mobilezone is entering a new phase where AI becomes a core part of how the business operates. The company is expanding from early deployments to a broader agent strategy that spans customer service and internal operations.
 
-A major focus is bringing the same intelligence used in chat into the voice channel, enabling automated call handling, consistent responses, seamless escalation, and deeper integration with existing contact‑center systems. The IT ticketing agent will also advance through a growing knowledge base and increased automation driven by real usage patterns.
+A major focus is bringing the same intelligence used in chat into the voice channel. That approach would enable automated call handling, consistent responses, seamless escalation, and deeper integration with existing contact‑center systems. The IT ticketing agent also advances through a growing knowledge base and increased automation driven by real usage patterns.
 
 mobilezone is building toward an ecosystem of specialized agents, expanding into voice‑first experiences and adding deeper personalization across customer and employee journeys. The work completed so far provides the foundation, and AI is already becoming part of everyday operations.
 
 > We've gone from almost zero to an organization that embraces AI in a short time. What we’ve built using Copilot Studio is the foundation to scale—internally and externally—and create new agents that drive real value.
 >
-> — *Mark Schwarz, Chief Digital & Information Officer, mobilezone AG*
+> — *Mark Schwarz, Chief Digital & Information Officer, mobilezone AG*
 
 ## Related information
 
