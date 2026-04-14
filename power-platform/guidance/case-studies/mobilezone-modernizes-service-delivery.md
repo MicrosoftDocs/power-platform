@@ -45,17 +45,11 @@ Mia is a customer service and sales agent embedded directly on mobilezone's [web
 Key capabilities:
 
 - Consulting device and subscription choices
-
 - Answers questions about store hours, subscriptions, contract details, devices, and order or delivery status
-
 - Retrieves real-time offers from Dynamics 365 Commerce
-
 - Uses knowledge articles stored in Dynamics 365 Customer Service
-
 - Supports German, French, Italian, and English based on website language
-
 - Requests clarifying details to improve accuracy
-
 - Escalates complex or sensitive cases to human agents to customer service representatives
 
 The following image shows Mia speaking Italian.
@@ -83,17 +77,11 @@ The internal IT support agent called Supporto, lives inside Teams and Microsoft 
 Key capabilities:
 
 - Understands issues described in natural language
-
 - Gathers information on the problem
-
 - Creates structured Jira tickets via API
-
 - Attaches screenshots, PDFs, and Word files to tickets
-
 - Distinguishes between incidents and service requests
-
 - Resolves simple issues directly using Confluence knowledge
-
 - Supports German, French, Italian, and English for multilingual employees
 
 The following image shows the Supporto in action.
