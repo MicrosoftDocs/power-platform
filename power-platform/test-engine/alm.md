@@ -14,8 +14,7 @@ contributors:
 
 # ALM in Power Platform with Test Engine (preview)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 
 Application Lifecycle Management (ALM) is a comprehensive approach to managing the lifecycle of applications from initial concept through development, testing, deployment, and ongoing maintenance. In the context of Power Platform, incorporating automated testing with Test Engine into your ALM process ensures that applications are thoroughly tested at each stage of development, resulting in higher quality releases.
 

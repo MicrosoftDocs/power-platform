@@ -13,8 +13,7 @@ contributors:
 
 # Power Apps Test Engine Power Fx Functions (preview)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 
 Test engine uses these existing PowerFx functions:
 

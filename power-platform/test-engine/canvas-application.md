@@ -14,8 +14,7 @@ contributors:
 
 # Test canvas applications with Test Engine (preview)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 
 Testing canvas apps with [Test Engine](./overview.md) requires the following steps:
 

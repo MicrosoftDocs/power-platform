@@ -13,8 +13,7 @@ contributors:
 
 # Generative AI capabilities in Power Apps Test Engine (preview)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 
 Power Apps Test Engine offers comprehensive generative AI capabilities that span the entire testing lifecycle. This page provides an overview of how generative AI can enhance your testing experience, from test creation to execution and validation.
 

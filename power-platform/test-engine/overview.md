@@ -13,8 +13,7 @@ contributors:
 
 # Power Apps Test Engine overview (preview)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 
 Power Apps Test Engine is a testing solution designed specifically for Power Platform applications. Whether you're new to automated testing, familiar with [Test Studio](/power-apps/maker/canvas-apps/test-studio), or an experienced developer with [Playwright](https://playwright.dev/) knowledge, Test Engine offers a scalable approach to testing that aligns with the low-code philosophy of Power Platform.
 
