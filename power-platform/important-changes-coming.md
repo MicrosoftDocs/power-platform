@@ -25,6 +25,15 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Deprecation of Test Engine
+Effective May 2026, Test Engine is deprecated. The documentation and GitHub repository are no longer maintained by Microsoft and will be removed in a future release.
+
+### Why is this needed?
+Test Engine has near-zero usage and failed to meet customer needs in an evolving AI landscape. The Power Fx implementation created unnecessary limitations that are avoided if using Playwright directly (Test Engine is built on Playwright). 
+
+### Replacement feature
+The new Playwright samples for Power Platform guide the use of Playwright for Power Platform test automation. These practical examples resemple how Microsoft tests first-party applications internally, with best-practice guidance baked in. 
+
 ## Deprecation of Editable Grid and Power Apps Read-Only Grid controls
 Effective March 2026, the Editable Grid control and the Power Apps Read-Only Grid control are deprecated in model-driven apps. These controls will continue to function until further notice, after which they are no longer supported. These controls will receive critical security fixes only and no new features.
 ### Why is this needed?
