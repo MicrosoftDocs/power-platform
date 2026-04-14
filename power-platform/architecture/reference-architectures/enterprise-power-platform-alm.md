@@ -17,7 +17,7 @@ As Power Platform adoption scales, organizations often struggle to maintain a co
 This reference architecture addresses these challenges by combining native Dataverse Git integration with pipelines in Power Platform, Azure DevOps governance, and AI-assisted release notes generation to create a repeatable enterprise ALM pattern.
 
 > [!TIP]  
-> This article provides an example scenario and a generalized example architecture to illustrate how to use Dataverse Git integration, pipelines in Power Platform, and Copilot Studio to automate deployments. The architecture example can be modified for many different scenarios and industries.
+> This article provides an example scenario and a generalized example architecture to illustrate how to use Dataverse Git integration, pipelines in Power Platform, and Copilot Studio to automate deployments and generate relates notes. The architecture example can be modified for many different scenarios and industries.
 
 ## Architecture diagram
 
@@ -63,7 +63,7 @@ This reference architecture addresses these challenges by combining native Datav
 
     1. Address urgent production issues in a dedicated hotfix environment.
 
-    1. Connect hotfix environments to the current production Git release branch via Dataverse git integration.
+    1. Connect hotfix environments to the current production Git release branch via Dataverse Git integration.
 
     1. Promote validated hotfixes to production through the same controlled pipeline mechanism.
 
@@ -118,7 +118,7 @@ Although GitHub Projects can provide flexible work tracking, including custom fi
 **Why this architecture favors pipelines in Power Platform:**  
 This architecture includes pipelines in Power Platform as the primary environment promotion mechanism. The reason is that they reduce configuration complexity and specialized CI/CD knowledge requirements while providing a native, governed deployment experience for makers, admins, and pro developers.
 
-[**Copilot Studio Release Notes Agent**](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
+[**Copilot Studio release notes agent**](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
 
 **Role in architecture:** Generates standardized release notes from approved work items and release context.
 
@@ -240,14 +240,20 @@ How experience optimization is achieved:
 
 ## Next steps
 
-1. [Connect your Dataverse development environments to a Git repository](/power-platform/alm/git-integration/connecting-to-git)
-1. [Plan your Azure DevOps organizational structure and strategy](/azure/devops/user-guide/plan-your-azure-devops-org-structure)
-1. [Pull work items from DevOps with Copilot Studio via connectors as tools](/microsoft-copilot-studio/advanced-connectors)
+1. Connect your Dataverse development environments to a Git repository
+1. Plan your Azure DevOps organizational structure and strategy
+1. Pull work items from DevOps with Copilot Studio via connectors as tools
 
 ## Contributors
 
 _Microsoft maintains this article. The following contributors wrote this article._
 
-Principal authors:
+**Principal authors**:
 
 - **[Nick Talsma](https://www.linkedin.com/in/biswapm/)**, Power Platform Technical Architect
+
+## Related resources
+
+- [Dataverse Git integration setup](/power-platform/alm/git-integration/connecting-to-git)
+- [Plan your organizational structure](/azure/devops/user-guide/plan-your-azure-devops-org-structure)
+- [Use Power Platform connectors as tools](/microsoft-copilot-studio/advanced-connectors)
