@@ -24,7 +24,7 @@ ms.reviewer: jhaskett-msft
 
     1. Each development stream maps to a Git environment or feature branch.
 
-    1. Synchronize changes into Git through [Dataverse Git Integration](https://learn.microsoft.com/en-us/power-platform/alm/git-integration/overview).
+    1. Synchronize changes into Git through [Dataverse Git Integration](/power-platform/alm/git-integration/overview).
 
     1. Review feature branches and merge them into Git main branch by using pull requests and branch protection policies when ready for submission into the production testing application lifecycle management (ALM) pathway.
 
@@ -34,19 +34,19 @@ ms.reviewer: jhaskett-msft
 
 1. **Test and validation workflow**
 
-        1. From the main branch, a hosted [Power Platform pipelines](https://learn.microsoft.com/en-us/power-platform/alm/custom-host-pipelines) pipeline promotes the packaged solution into TEST directly from the source code in the main branch by using the Source Control deployment type.
+    1. From the main branch, a hosted [Power Platform pipelines](/power-platform/alm/custom-host-pipelines) pipeline promotes the packaged solution into TEST directly from the source code in the main branch by using the Source Control deployment type.
 
     1. Use TEST for technical validation, integration checks, and smoke testing.
 
-        1. After validation, promote the solution to UAT by using Power Platform pipelines. Create or update the corresponding release branch in Git from the main branch.
+    1. After validation, promote the solution to UAT by using Power Platform pipelines. Create or update the corresponding release branch in Git from the main branch.
 
-        1. Generate release notes from DevOps work items in a UAT status and distribute them to UAT responsible testers. Use a Copilot Studio agent to generate and format these release notes by using the DevOps Get Query Results connector action.
+    1. Generate release notes from DevOps work items in a UAT status and distribute them to UAT responsible testers. Use a Copilot Studio agent to generate and format these release notes by using the DevOps Get Query Results connector action.
 
     1. UAT supports business validation and release-readiness checks before production approval.
 
 1. **Production release workflow**
 
-        1. Promote approved UAT changes to production by using Power Platform pipelines.
+    1. Promote approved UAT changes to production by using Power Platform pipelines.
 
     1. Generate release notes once again from DevOps work items by status for standardized release communication.
 
@@ -249,9 +249,9 @@ How experience optimization is achieved:
 
 ## Next steps
 
-1. [Connect your Dataverse development environments to a Git repository](https://learn.microsoft.com/en-us/power-platform/alm/git-integration/connecting-to-git)
-1. [Plan your Azure DevOps organizational structure and strategy](https://learn.microsoft.com/en-us/azure/devops/user-guide/plan-your-azure-devops-org-structure)
-1. [Pull work items from DevOps with Copilot Studio via connectors as tools](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-connectors)
+1. [Connect your Dataverse development environments to a Git repository](/power-platform/alm/git-integration/connecting-to-git)
+1. [Plan your Azure DevOps organizational structure and strategy](/azure/devops/user-guide/plan-your-azure-devops-org-structure)
+1. [Pull work items from DevOps with Copilot Studio via connectors as tools](/microsoft-copilot-studio/advanced-connectors)
 
 ## Contributors
 
