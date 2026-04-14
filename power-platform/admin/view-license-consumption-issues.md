@@ -113,10 +113,6 @@ By using these exports, you can find users who are assigned licenses but aren't 
 > [!NOTE]
 > The report shows a list of users based on their app launch activity. The report excludes users who didn't launch an app in the selected month.
 
-### Known issues
-- The report shows all entries of users launching apps across all Managed environments. To identify the unique list of users requiring licenses, use the [Remove duplicates feature](https://support.microsoft.com/office/find-and-remove-duplicates-00e35bea-b46a-4d5d-b28e-66a552dc138d) in Microsoft Excel.  
-- The report shows users with older app launch entries that use their previous licenses, even if they're assigned an appropriate license in the current month. The report removes these users from the subsequent month's report if they continue to have the appropriate licenses assigned.
-
 ## View license consumption for environment  
 
 The **Environments** tab within the **Licensing** area for Power Apps helps admins track license consumption for the selected environment. 
