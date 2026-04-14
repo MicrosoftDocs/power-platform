@@ -2,7 +2,7 @@
 title: "Continuous integration and deployment"
 description: Learn how to set up continuous integration and deployment using Azure Pipelines.
 author: pvillads
-ms.date: 03/23/2026
+ms.date: 04/13/2026
 ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pvillads
