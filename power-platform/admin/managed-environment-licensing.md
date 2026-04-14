@@ -102,7 +102,7 @@ Administrator notifications start in March 2026, ahead of the June 2026 end user
 
 Administrators can identify users who require a license by using the [**Users requiring licenses in managed environments**](view-license-consumption-issues.md#additional-admin-options) Power Apps licensing report in the Power Platform admin center.
 
-> [Note!]
+> [!NOTE]
 > - The report lists users that have accessed at least one app in any Managed Environment without an appropriate license.
 > - The report shows a list of unique users based on their app launch activity in the selected month. The report excludes users who didn't launch an app in the selected month.
 > - If a user was assigned an appropriate license but hasn't launched any app since then, they'll continue to show in the report until they next launch an app.
