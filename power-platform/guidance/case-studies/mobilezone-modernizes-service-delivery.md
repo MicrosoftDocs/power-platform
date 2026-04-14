@@ -60,7 +60,7 @@ Key capabilities:
 
 The following image shows Mia speaking Italian.
 
-:::image type="content" source="media/mobilezone-modernizes-service-delivery/website-agent-mia.png" alt-text="Screenshot of mobilezone website with Mia virtual assistant chat open, showing Italian welcome message, and support options." lightbox="media/mobilezone-modernizes-service-delivery/website-agent-mia.png":::
+:::image type="content" source="media/mobilezone/website-agent-mia.png" alt-text="Screenshot of mobilezone website with Mia virtual assistant chat open, showing Italian welcome message, and support options." lightbox="media/mobilezone/website-agent-mia.png":::
 
 Key benefits:
 
@@ -98,7 +98,7 @@ Key capabilities:
 
 The following image shows the Supporto in action.
 
-:::image type="content" source="media/mobilezone-modernizes-service-delivery/internal-agent-supporto.png" alt-text="Screenshot of a Teams chat with Supporto showing a user reporting headphone issues and the agent requesting make, model, and error details." lightbox="media/mobilezone-modernizes-service-delivery/internal-agent-supporto.png":::
+:::image type="content" source="media/mobilezone/internal-agent-supporto.png" alt-text="Screenshot of a Teams chat with Supporto showing a user reporting headphone issues and the agent requesting make, model, and error details." lightbox="media/mobilezone/internal-agent-supporto.png":::
 
 Key benefits:
 
@@ -114,7 +114,7 @@ Key benefits:
 
 This architecture supports two specialized Copilot Studio agents for customers and employees, while also providing a foundation for future agents. Each agent uses its own knowledge sources, integrated systems, and dedicated channels. They operate alongside Dynamics 365 applications and a model context protocol (MCP) server that supplies product data, offers, and service knowledge. This architecture links data, knowledge, and conversational AI across all support scenarios.
 
-:::image type="content" source="media/mobilezone-modernizes-service-delivery/architecture.png" alt-text="Diagram of Copilot Studio architecture showing employee and customer agents, integrated with Teams, Microsoft 365 Copilot, Dynamics 365, Confluence, and Jira for support workflows." lightbox="media/mobilezone-modernizes-service-delivery/architecture.png":::
+:::image type="content" source="media/mobilezone/architecture.png" alt-text="Diagram of Copilot Studio architecture showing employee and customer agents, integrated with Teams, Microsoft 365 Copilot, Dynamics 365, Confluence, and Jira for support workflows." lightbox="media/mobilezone/architecture.png":::
 
 User-facing experience:
 
@@ -135,7 +135,7 @@ Dynamics 365 family:
 - **Dynamics 365 Finance and Operations** stores product data.
 
 Integrations:
-
+mobilezone-modernizes-service-delivery
 - The mobilezone MCP server aggregates and exposes product data from Dynamics 365 Finance and Operations, valid offers from Dynamics 365 Commerce, and knowledge articles from Dynamics 365 Customer Service.
 
 - Supporto integrates with Confluence using out-of-the-box connectors to retrieve information and with Jira via API for ticket creation.
@@ -168,13 +168,15 @@ With this foundation in place, mobilezone expanded the solution to customer-faci
 
 The following images show examples of how the agents are configured in Copilot Studio. The first image shows the start of Mia’s general instructions.
 
-:::image type="content" source="media/mobilezone-modernizes-service-delivery/mia-configuration-overview.png" alt-text="Screenshot of Copilot Studio showing Mia agent overview with details, model selection, analytics, and general instructions." lightbox="media/mobilezone-modernizes-service-delivery/mia-configuration-overview.png":::
+:::image type="content" source="media/mobilezone/mia-configuration-overview.png" alt-text="Screenshot of Copilot Studio showing Mia agent overview with details, model selection, analytics, and general instructions." lightbox="media/mobilezone/mia-configuration-overview.png":::
 
-This image shows the tools that Mia is using: the MCP server, four AI flows (one disabled), and four AI prompts.:::image type="content" source="media/mobilezone-modernizes-service-delivery/mia-configuration-tools.png" alt-text="Screenshot of Copilot Studio Tools tab showing Mia agent tools list, including prompts, flows, and MCP servers." lightbox="media/mobilezone-modernizes-service-delivery/mia-configuration-tools.png":::
+This image shows the tools that Mia is using: the MCP server, four AI flows (one disabled), and four AI prompts.
+
+:::image type="content" source="media/mobilezone/mia-configuration-tools.png" alt-text="Screenshot of Copilot Studio Tools tab showing Mia agent tools list, including prompts, flows, and MCP servers." lightbox="media/mobilezone/mia-configuration-tools.png":::
 
 This image shows the start of Supporto’s general instructions.
 
-:::image type="content" source="media/mobilezone-modernizes-service-delivery/supporto-configuration-overview.png" alt-text="Screenshot of Copilot Studio showing Supporto agent overview, model selection, analytics, and general instructions." lightbox="media/mobilezone-modernizes-service-delivery/supporto-configuration-overview.png":::
+:::image type="content" source="media/mobilezone/supporto-configuration-overview.png" alt-text="Screenshot of Copilot Studio showing Supporto agent overview, model selection, analytics, and general instructions." lightbox="media/mobilezone/supporto-configuration-overview.png":::
 
 ## Takeaways
 
