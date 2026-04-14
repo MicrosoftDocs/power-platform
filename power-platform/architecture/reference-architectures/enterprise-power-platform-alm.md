@@ -1,6 +1,6 @@
 ---
-title: Enterprise Power Platform ALM using Dataverse Git integration, Power Platform pipelines, and AI-assisted release governance
-description: Learn how to streamline Power Platform development and releases by integrating Dataverse Git, Power Platform pipelines, and AI-assisted governance.
+title: Automate deployments with Dataverse Git integration and Power Platform pipelines
+description: Learn how to streamline Power Platform development and releases by integrating Dataverse Git, pipelines in Power Platform, and AI-assisted governance.
 #customer intent: As a developer, I want to integrate Dataverse environments with Git so that I can manage source control and enable collaborative development.
 author: carcla
 ms.author: v-caclaesson
@@ -10,28 +10,28 @@ ms.topic: example-scenario
 ms.reviewer: jhaskett-msft
 ---
 
-# Enterprise Power Platform ALM using Dataverse Git integration, Power Platform pipelines, and AI-assisted release governance
+# Automate deployments with Dataverse Git integration and Power Platform pipelines
 
 As Power Platform adoption scales, organizations often struggle to maintain a consistent and governed development model across multiple makers, developers, and environments. Common challenges include shared development environments, limited change traceability, inconsistent release documentation, and difficulty applying standard software development life cycle controls in low-code delivery teams. These challenges increase deployment risk, slow collaboration, and make audit and compliance activities harder to support.
 
-This reference architecture addresses these challenges by combining native Dataverse Git integration with Power Platform Pipelines, Azure DevOps governance, and AI-assisted release notes generation to create a repeatable enterprise ALM pattern.
+This reference architecture addresses these challenges by combining native Dataverse Git integration with pipelines in Power Platform, Azure DevOps governance, and AI-assisted release notes generation to create a repeatable enterprise ALM pattern.
 
 > [!TIP]  
-> This article provides an example scenario and a generalized example architecture to illustrate how to use Dataverse Git integration, Power Platform pipelines, and Copilot Studio to automate deployments. The architecture example can be modified for many different scenarios and industries.
+> This article provides an example scenario and a generalized example architecture to illustrate how to use Dataverse Git integration, pipelines in Power Platform, and Copilot Studio to automate deployments. The architecture example can be modified for many different scenarios and industries.
 
 ## Architecture diagram
 
-:::image type="content" source="media/enterprise-power-platform-alm/enterprise-power-platform-alm.png" alt-text="Diagram of Dataverse ALM workflow showing DEV, TEST, UAT, and Production environments with Git and Power Platform Pipelines integration.":::
+:::image type="content" source="media/enterprise-power-platform-alm/enterprise-power-platform-alm.png" alt-text="Diagram of Dataverse ALM workflow showing DEV, TEST, UAT, and Production environments with Dataverse Git integration and pipelines in Power Platform.":::
 
 ## Workflow
 
 1. **Development and source control workflow**
 
-    1. Makers and developers build changes in one of several development Dataverse environments. In addition to a primary development environment, you might use extra dev environments. Examples include dev environments for junior developers, external resources, work-in-progress from long-running initiatives, or any other work that shouldn't automatically be promoted into the core production pathway.
+    1. Makers and developers build changes in one of several Dataverse development environments. In addition to a primary development environment, you might use extra dev environments. Examples include dev environments for junior developers, external resources, work-in-progress from long-running initiatives, or any other work that shouldn't automatically be promoted into the core production pathway.
 
     1. Each development stream maps to a Git environment or feature branch.
 
-    1. Synchronize changes into Git through [Dataverse Git Integration](/power-platform/alm/git-integration/overview).
+    1. Synchronize changes into Git through [Dataverse Git integration](/power-platform/alm/git-integration/overview).
 
     1. Review feature branches and merge them into Git main branch by using pull requests and branch protection policies when ready for submission into the production testing application lifecycle management (ALM) pathway.
 
@@ -41,11 +41,11 @@ This reference architecture addresses these challenges by combining native Datav
 
 1. **Test and validation workflow**
 
-    1. From the main branch, a hosted [Power Platform pipelines](/power-platform/alm/custom-host-pipelines) pipeline promotes the packaged solution into TEST directly from the source code in the main branch by using the Source Control deployment type.
+    1. From the main branch, a [custom pipeline host](/power-platform/alm/custom-host-pipelines) promotes the packaged solution into TEST directly from the source code in the main branch by using the Source Control deployment type.
 
     1. Use TEST for technical validation, integration checks, and smoke testing.
 
-    1. After validation, promote the solution to UAT by using Power Platform pipelines. Create or update the corresponding release branch in Git from the main branch.
+    1. After validation, promote the solution to UAT by using pipelines in Power Platform. Create or update the corresponding release branch in Git from the main branch.
 
     1. Generate release notes from DevOps work items in a UAT status and distribute them to UAT responsible testers. Use a Copilot Studio agent to generate and format these release notes by using the DevOps Get Query Results connector action.
 
@@ -53,7 +53,7 @@ This reference architecture addresses these challenges by combining native Datav
 
 1. **Production release workflow**
 
-    1. Promote approved UAT changes to production by using Power Platform pipelines.
+    1. Promote approved UAT changes to production by using pipelines in Power Platform.
 
     1. Generate release notes once again from DevOps work items by status for standardized release communication.
 
@@ -68,28 +68,6 @@ This reference architecture addresses these challenges by combining native Datav
     1. Promote validated hotfixes to production through the same controlled pipeline mechanism.
 
     1. Merge hotfix changes back from the release branch into the main branch to ensure they're kept intact in future releases.
-
-## Scenario details
-
-The architecture is especially valuable for organizations that need to support multiple development environments working in parallel (DEV1, DEV2, DEV-n) while maintaining a shared, governed source of truth in Git. Each developer or small team can work in an isolated environment and synchronize changes through branch-based workflows, enabling teams to collaborate without relying on a single shared development environment.
-
-### Business value
-
-Key value delivered by this architecture includes:
-
-- **Source control as the source of truth** for solution customizations, rather than treating a maker environment as the authoritative deployment source. This approach improves consistency and supports controlled promotion into downstream environments.
-
-- **Safety, auditing, and compliance through SDLC best practices**, including version control, code reviews, change traceability, and integration with enterprise governance processes.
-
-- **Parallel development at scale**, using branches and isolated development environments so multiple contributors can build and iterate simultaneously with less collision risk.
-
-- **Support for short-lived development environments**, enabling teams to rehydrate environments from source control for testing, experimentation, and temporary development scenarios while reducing long-term environment sprawl.
-
-- **Fusion team productivity**, allowing makers, developers, and admins to collaborate through native in-product source control experiences while still aligning to enterprise DevOps practices.
-
-- **Operational protection and recoverability**, because source control preserves version history and supports restoration to prior states when unintended changes occur.
-
-In this architecture, the AI release notes agent additionally extends that value by improving operational communication and release transparency. It transforms approved DevOps work items into standardized, stakeholder-friendly release notes, reducing manual effort while preserving human review and accountability.
 
 ## Components
 
@@ -122,7 +100,7 @@ In this architecture, the AI release notes agent additionally extends that value
 **Why this architecture favors Azure DevOps:**  
 Although GitHub Projects can provide flexible work tracking, including custom fields, roadmap views, and automation, this architecture includes Azure DevOps Boards as the authoritative release work-item source. Azure DevOps Boards currently provides stronger enterprise work item process modeling, shared query and WIQL-based release scoping, and richer built-in development and deployment traceability for governed release operations.
 
-[**Power Platform Pipelines**](/power-platform/alm/custom-host-pipelines)
+[**Pipelines in Power Platform**](/power-platform/alm/custom-host-pipelines)
 
 **Role in architecture:** Promotes solutions across TEST, UAT, and Production, including hotfix promotion paths.
 
@@ -137,8 +115,8 @@ Although GitHub Projects can provide flexible work tracking, including custom fi
 - Azure DevOps or GitHub-only deployment orchestration
 - Fully custom PAC CLI pipeline orchestration
 
-**Why this architecture favors Power Platform Pipelines:**  
-This architecture includes Power Platform pipelines as the primary environment promotion mechanism. The reason is that they reduce configuration complexity and specialized CI/CD knowledge requirements while providing a native, governed deployment experience for makers, admins, and pro developers.
+**Why this architecture favors pipelines in Power Platform:**  
+This architecture includes pipelines in Power Platform as the primary environment promotion mechanism. The reason is that they reduce configuration complexity and specialized CI/CD knowledge requirements while providing a native, governed deployment experience for makers, admins, and pro developers.
 
 [**Copilot Studio Release Notes Agent**](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
 
@@ -158,13 +136,35 @@ This architecture includes Power Platform pipelines as the primary environment p
 **Why this architecture includes AI:**  
 It demonstrates practical, low-risk generative AI augmentation in a high-value operational process, with clear human review and accountability. It's more flexible to changing audiences, projects, and delivery avenues than rigid automation.
 
+## Scenario details
+
+The architecture is especially valuable for organizations that need to support multiple development environments working in parallel (DEV1, DEV2, DEV-n) while maintaining a shared, governed source of truth in Git. Each developer or small team can work in an isolated environment and synchronize changes through branch-based workflows, enabling teams to collaborate without relying on a single shared development environment.
+
+### Business value
+
+Key value delivered by this architecture includes:
+
+- **Source control as the source of truth** for solution customizations, rather than treating a maker environment as the authoritative deployment source. This approach improves consistency and supports controlled promotion into downstream environments.
+
+- **Safety, auditing, and compliance through SDLC best practices**, including version control, code reviews, change traceability, and integration with enterprise governance processes.
+
+- **Parallel development at scale**, using branches and isolated development environments so multiple contributors can build and iterate simultaneously with less collision risk.
+
+- **Support for short-lived development environments**, enabling teams to rehydrate environments from source control for testing, experimentation, and temporary development scenarios while reducing long-term environment sprawl.
+
+- **Fusion team productivity**, allowing makers, developers, and admins to collaborate through native in-product source control experiences while still aligning to enterprise DevOps practices.
+
+- **Operational protection and recoverability**, because source control preserves version history and supports restoration to prior states when unintended changes occur.
+
+In this architecture, the AI release notes agent additionally extends that value by improving operational communication and release transparency. It transforms approved DevOps work items into standardized, stakeholder-friendly release notes, reducing manual effort while preserving human review and accountability.
+
 ## Considerations
 
 These considerations implement the pillars of Power Platform Well-Architected, which is a set of guiding tenets that can be used to improve the quality of a workload. For more information, see [Microsoft Power Platform Well-Architected](https://aka.ms/powa).
 
 ### Reliability
 
-This architecture improves reliability by implementing controlled promotion paths and branch-aware release handling.
+This architecture improves reliability by implementing controlled promotion paths and branch-aware release handling. This approach reduces deployment failure risk and supports recoverability during urgent production support scenarios.
 
 How reliability is achieved:
 
@@ -173,11 +173,9 @@ How reliability is achieved:
 - Reusable pipeline mechanisms instead of manual deployments
 - Validation checkpoints before production promotion
 
-**Reliability outcome:** Reduced deployment failure risk and improved recoverability during urgent production support scenarios.
-
 ### Security
 
-This architecture applies security through least privilege, role separation, and controlled automation identities.
+This architecture applies security through least privilege, role separation, and controlled automation identities. This approach reduces the risk of unauthorized changes and improves change accountability.
 
 How security is achieved:
 
@@ -187,11 +185,9 @@ How security is achieved:
 - auditable branch merge and release activities
 - approved channels for release note distribution
 
-**Security outcome:** Reduced risk of unauthorized changes and improved change accountability.
-
 ### Operational Excellence
 
-This area scores highly for this architecture.
+This area scores highly for this architecture. Operational excellence is improved through a repeatable and scalable release management model that supports governed delivery across multiple teams and environments.
 
 How operational excellence is achieved:
 
@@ -201,11 +197,9 @@ How operational excellence is achieved:
 - Automated release notes generation integrated into release workflow
 - Reduced reliance on tribal knowledge for release communication
 
-**Operational excellence outcome:** Release operations become repeatable, supportable, and easier to scale across teams.
-
 ### Performance Efficiency
 
-This architecture optimizes delivery process efficiency more than runtime app performance, which is appropriate for an ALM reference architecture.
+This architecture optimizes delivery process efficiency more than runtime app performance, which is appropriate for an ALM reference architecture. By supporting parallel development streams and reducing manual coordination across release activities, it increases throughput for change delivery while lowering operational effort per release.
 
 How performance efficiency is achieved:
 
@@ -214,11 +208,9 @@ How performance efficiency is achieved:
 - Standardizing the workflow for faster release cycle execution
 - Scaling to DEV-n parallel streams without redesigning governance
 
-**Performance efficiency outcome:** Increased throughput for change delivery and lower operational effort per release.
-
 ### Experience Optimization
 
-This architecture improves the experience for multiple personas:
+This architecture supports a predictable and well-defined release process across development, testing, and production environments, improving collaboration between makers, developers, release managers, and support teams. It improves the experience for multiple personas:
 
 - **Developers and makers** through clear environment and branch workflows
 - **Release managers** through standardized promotion and traceability
@@ -231,8 +223,6 @@ How experience optimization is achieved:
 - Predictable promotion model
 - Consistent release note format and timing
 - Minimized ambiguity in handoffs between teams
-
-**Experience optimization outcome:** Better collaboration and lower friction across the release lifecycle.
 
 ## Responsible AI
 
