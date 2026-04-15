@@ -114,7 +114,7 @@ Complete the following steps to download the report:
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Power Apps**.
 1. In the **Summary** tab, select **Download report**. The **Download license information** pane appears.
-1. From the **Usage type** list, select **Active users**.
+1. From the **Usage type** list, select **Users requiring licenses in Managed Environments**.
 1. From the **Lookback window** list, select the desired month.
 1. Select **Download report**.
 
