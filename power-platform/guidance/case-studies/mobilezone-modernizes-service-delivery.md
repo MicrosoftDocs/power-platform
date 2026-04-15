@@ -10,9 +10,14 @@ ms.date: 04/14/2026
 ms.topic: overview
 ---
 
+<!-- Don't you hate it when companies make our lives harder by having an all-lowercase name? LOL. Beginning a title or sentence with a lowercase word looks wrong. The style guide says to "always capitalize the first word of a new sentence. Rewrite sentences that start with a word that's always lowercase." So when possible, I rewrote sentences so they don't begin with mobilezone. In the title, though, I have capitalized the first letter. -->
+
+<!-- Line 52 should begin with a verb to sync with the rest of the list. I'm unsure what that verb should be. -->
+
+
 # mobilezone modernizes service delivery using Microsoft Copilot Studio
 
-[mobilezone](https://www.mobilezone.ch/) is one of Switzerland’s most recognizable telecommunications retailers. The company serves hundreds of thousands of customers across more than 125 stores and through its digital channels. With rising customer expectations and increasing service volumes, the company set out to modernize how it supports both customers and employees.
+One of Switzerland’s most recognizable telecommunications retailers, [mobilezone](https://www.mobilezone.ch/), set out to modernize how it supports its many customers and employees. The company serves hundreds of thousands of customers across more than 125 stores and through its digital channels. With rising customer expectations and increasing service volumes, the company needed to improve its support systems.
 
 The transformation centered on building two AI agents using Microsoft Copilot Studio, one for customers and one for internal teams. These agents reduced the load on mobilezone’s external contact center, improved online conversion by guiding customers through product discovery, and streamlined internal IT support through conversational ticketing.
 
@@ -20,7 +25,7 @@ This case study highlights how mobilezone designed and built two Copilot Studio 
 
 ## Business challenges
 
-mobilezone faced growing pressure on both its customer service channels and internal IT support processes. On the customer side, rising inquiry volumes exposed the limits of its legacy website chatbot, which struggled with multilingual support, delivered inconsistent answers, and lacked integration with Dynamics 365. As a result, it couldn’t provide accurate product or pricing information, leading to frequent escalations to an external contact center and higher costs.
+Leadership at mobilezone faced growing pressure on both their customer service channels and internal IT support processes. On the customer side, rising inquiry volumes exposed the limits of its legacy website chatbot, which struggled with multilingual support, delivered inconsistent answers, and lacked integration with Dynamics 365. As a result, it couldn’t provide accurate product or pricing information, leading to frequent escalations to an external contact center and higher costs.
 
 Internal teams faced a different but equally costly challenge. The IT ticketing process required significant back-and-forth because tickets often lacked essential context. Support teams spent time clarifying issues instead of resolving them, and multilingual communication gaps slowed progress even further. The result was longer resolution times, higher operational overhead, and lower satisfaction across the organization.
 
@@ -34,7 +39,7 @@ Mia and Supporto together handle more than 1,600 conversations per month across 
 
 Supporto handles around 350 employee chats per month and sees a higher engagement rate of 87 percent, reflecting its intended use for internal support. It automatically adapts responses based on the user’s system language, enabling employees to interact in their working language even when it differs from their native one.
 
-> Copilot Studio and MCP Servers enabled us to build Mia as a reliable, enterprise-ready customer agent able to answer FAQ as well as consulting on mobile subscriptions and devices. Together with Supporto, an internal IT support agent, they are delivering tangible impact across mobilezone.
+> Copilot Studio and MCP servers enabled us to build Mia as a reliable, enterprise-ready customer agent able to answer FAQ as well as consulting on mobile subscriptions and devices. Together with Supporto, an internal IT support agent, they are delivering tangible impact across mobilezone.
 >
 > — *Fabian Kistler, AI Specialist, mobilezone AG*
 
@@ -50,15 +55,19 @@ Key capabilities:
 - Uses knowledge articles stored in Dynamics 365 Customer Service
 - Supports German, French, Italian, and English based on website language
 - Requests clarifying details to improve accuracy
-- Escalates complex or sensitive cases to human agents to customer service representatives
+- Escalates complex or sensitive cases to human agents 
 
 The following image shows Mia speaking Italian.
 
-:::image type="content" source="media/mobilezone/website-agent-mia.png" alt-text="Screenshot of mobilezone website with Mia virtual assistant chat open, showing Italian welcome message, and support options." lightbox="media/mobilezone/website-agent-mia.png":::
+:::image type="content" source="media/mobilezone/website-agent-mia.png" alt-text="Screenshot of mobilezone website with Mia virtual assistant chat open, showing Italian welcome message and support options." lightbox="media/mobilezone/website-agent-mia.png":::
 
 Key benefits:
 
-- **Always-on service at scale**: Mia becomes the front door to mobilezone, instantly answering customer questions around the clock and across every national language. It now serves more than 200,000 users and ensures no one waits for support.
+
+
+
+
+- **Always-on service at scale:** Mia becomes the front door to mobilezone, instantly answering customer questions around the clock and across every national language. It now serves more than 200,000 users and ensures no one waits for support.
 
 - **Significant service deflection:** Mia reduces load on the external contact center and reduces cost per interaction, by handling many repetitive, high-volume inquiries.
 
