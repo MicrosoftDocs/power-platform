@@ -166,8 +166,6 @@ These considerations implement the pillars of Power Platform Well-Architected, w
 
 This architecture improves reliability by implementing controlled promotion paths and branch-aware release handling. This approach reduces deployment failure risk and supports recoverability during urgent production support scenarios.
 
-How reliability is achieved:
-
 - Standardized deployment progression from TEST to UAT to Production
 - Dedicated hotfix path with release branch traceability
 - Reusable pipeline mechanisms instead of manual deployments
@@ -176,8 +174,6 @@ How reliability is achieved:
 ### Security
 
 This architecture applies security through least privilege, role separation, and controlled automation identities. This approach reduces the risk of unauthorized changes and improves change accountability.
-
-How security is achieved:
 
 - Role‑based access control across Power Platform environments and Azure DevOps
 - service principals or managed identities for pipeline execution
@@ -189,8 +185,6 @@ How security is achieved:
 
 This area scores highly for this architecture. Operational excellence is improved through a repeatable and scalable release management model that supports governed delivery across multiple teams and environments.
 
-How operational excellence is achieved:
-
 - Codified branch strategy (feature, main, release)
 - Repeatable environment promotion process
 - Standardized hotfix handling pattern
@@ -201,8 +195,6 @@ How operational excellence is achieved:
 
 This architecture optimizes delivery process efficiency more than runtime app performance, which is appropriate for an ALM reference architecture. By supporting parallel development streams and reducing manual coordination across release activities, it increases throughput for change delivery while lowering operational effort per release.
 
-How performance efficiency is achieved:
-
 - Automating deployment and release communication steps
 - Reducing manual coordination overhead
 - Standardizing the workflow for faster release cycle execution
@@ -210,19 +202,19 @@ How performance efficiency is achieved:
 
 ### Experience Optimization
 
-This architecture supports a predictable and well-defined release process across development, testing, and production environments, improving collaboration between makers, developers, release managers, and support teams. It improves the experience for multiple personas:
-
-- **Developers and makers** through clear environment and branch workflows
-- **Release managers** through standardized promotion and traceability
-- **Business stakeholders** through readable AI-assisted release summaries
-- **Support teams** through a defined hotfix route
-
-How experience optimization is achieved:
+This architecture supports a predictable and well-defined release process across development, testing, and production environments, improving collaboration between makers, developers, release managers, and support teams.
 
 - Role-aligned workflows
 - Predictable promotion model
 - Consistent release note format and timing
 - Minimized ambiguity in handoffs between teams
+
+It improves the experience for multiple personas:
+
+- **Developers and makers** through clear environment and branch workflows
+- **Release managers** through standardized promotion and traceability
+- **Business stakeholders** through readable AI-assisted release summaries
+- **Support teams** through a defined hotfix route
 
 ## Responsible AI
 
