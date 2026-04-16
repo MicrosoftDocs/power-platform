@@ -118,7 +118,7 @@ To turn on data movement across regions, Bing search, Microsoft 365 services, an
 
     For tenants that are managed through the Microsoft 365 admin center, the default value of the **Allow flex routing during periods of peak load** setting in the Power Platform admin center is the same as the Microsoft 365 admin center toggle, unless the **Move data across regions** setting is turned off.
 
-    - If the **Allow flex routing during periods of peak load** checkbox is displayed, but you can't select it, that indicates that this feature has been turned off in the Microsoft 365 admin center or the **Move data across regions** checkbox is not selected in the Power Platform admin center.
+    - If the **Allow flex routing during periods of peak load** checkbox is visible but unavailable, it means either the feature is currently turned off in the Microsoft 365 admin center or because the **Move data across regions** setting isn't enabled in the Power Platform admin center.
 
     - Flex routing is on for all tenants excluding those customers that are categorized as Enterprise (Commercial and Public Sector) or SME&C Public Sector, but can be changed. All tenant administrators are encouraged to check their tenant's flex routing setting to ensure it aligns with their company's requirements.
       - Select the **Allow flex routing during periods of peak load** checkbox, if desired. This setting allows LLM inferencing and the storage of associated pseudonymized data to occur outside the EU Data Boundary during periods of peak demand.
