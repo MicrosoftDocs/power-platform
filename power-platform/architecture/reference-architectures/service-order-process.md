@@ -1,5 +1,5 @@
 ---
-title: Power Platform–based architecture for service requests, approvals, SLA governance, and termination
+title: Automate service order lifecycle and SLA governance with Power Platform
 description: Learn how to design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Platform components.
 #customer intent: As a Power Platform user, I want to automate service request lifecycles, approvals, and SLA governance so that requests are processed consistently and in compliance with defined service agreements.
 author: carcla
@@ -10,9 +10,11 @@ ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 ---
 
-# Power Platform–based architecture for service requests, approvals, SLA governance, and termination
+# Automate service order lifecycle and SLA governance with Power Platform
 
-Power Platform can be used to automate service order requests, approvals, SLA governance, and termination workflows. This architecture uses Power Apps, Power Automate, Dataverse, and Microsoft 365 to streamline lifecycle management and provide centralized visibility into requests and associated documents.
+This architecture document outlines the design and implementation of a Power Platform–based application for automating the end‑to‑end lifecycle of service orders. The solution streamlines the initiation of service order requests, manages approval workflows across multiple stages, enforces SLA‑based lifecycle management, and handles termination processes.
+
+The application also serves as a centralized reference system for the legal and contracting departments to manage service order contracts and associated signed documents.
 
 > [!TIP]
 > This article provides an example scenario and a generalized example architecture to illustrate how to design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Apps, Power Automate, Dataverse, and Microsoft 365.
@@ -133,17 +135,11 @@ Power Platform can be used to automate service order requests, approvals, SLA go
 
 ## Use case details
 
-### Overview
-
-This architecture document outlines the design and implementation of a Power Platform–based application for automating the end‑to‑end lifecycle of service orders. The solution streamlines the initiation of service order requests, manages approval workflows across multiple stages, enforces SLA‑based lifecycle management, and handles termination processes.
-
-The application also serves as a centralized reference system for the legal and contracting departments to manage service order contracts and associated signed documents.
-
 ### Business context
 
-The requirement originated when the customer engaged HCLTech to migrate their existing Service Order Management process from an Angular–Camunda platform to Microsoft Power Platform.
+The requirement originated when an organization needed to migrate its existing Service Order Management process from an Angular–Camunda platform to Microsoft Power Platform.
 
-The legacy solution, built on Angular, Camunda Workflow Engine, and PostgreSQL, incurred high licensing costs, required a dedicated technical team for change requests, and had long turnaround times for even minor enhancements. The complexity of the solution and its maintenance overhead prompted the customer to pursue a modern, cost-effective, and easy-to-maintain alternative.
+The legacy solution, built on Angular, Camunda Workflow Engine, and PostgreSQL, incurred high licensing costs, required a dedicated technical team for change requests, and had long turnaround times for even minor enhancements. The complexity of the solution and its maintenance overhead prompted the organization to pursue a modern, cost-effective, and easy-to-maintain alternative.
 
 ### Objectives and drivers
 
@@ -165,29 +161,29 @@ Key drivers for the new solution:
 
 The team designed and implemented a Power Apps model-driven app, supported by key out-of-the-box (OOTB) features to keep customization minimal while meeting all functional requirements.
 
-### User Interface
+### User interface
 
 - **Model-driven app** serves as the primary user interface for users.
 
-- **Custom Pages** modernize the user experience by ensuring interactive UI behavior and minimal change for end users as the application migrates from the existing platform.
+- **Custom pages** modernize the user experience by ensuring interactive UI behavior and minimal change for end users as the application migrates from the existing platform.
 
 - **Custom buttons and JavaScript** manage the business rules and approval process through different stages.
 
 - **Business process flow** (BPF) helps users visualize the existing stage.
 
-### PDF Generation
+### PDF generation
 
 The previous system's PDF export functionality was highly complex and required frequent technical intervention for even minor template updates.
 
 The new solution uses:
 
-- **OOTB Entity Document Templates** for Word/PDF generation.
+- **OOTB entity document templates** for Word/PDF generation.
 
 - **Admin-controlled template modifications**, eliminating dependency on technical teams.
 
 This approach significantly reduces turnaround time and removes the need for development-driven template updates.
 
-### Workflows and Approvals
+### Workflows and approvals
 
 - **Business process flows** orchestrate request routing, approvals, and multistage progress tracking.
 
@@ -197,11 +193,11 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 - **Power Automate** flows that run daily to check which SLAs and Service Orders are terminating each day.
 
-### Task Reminders
+### Task reminders
 
 - **Power Automate** flows to send reminders to users to whom tasks are assigned when the due date passes.
 
-### Data Source
+### Data source
 
 - **Dataverse** to manage and store the application data and maintain the audit log history.
 
@@ -220,9 +216,9 @@ These considerations implement the pillars of Power Platform Well-Architected, w
 1. Clear expectations documented with customer for:
 
     - Response times
-    
+
     - Approval timelines
-    
+
     - Daily job windows (SLA expiry, Termination job)
 
 1. Task-based resilience is implemented when the Power Automate step fails:
@@ -309,4 +305,4 @@ _Microsoft maintains this article. The following contributors wrote this article
 
 Principal authors:
 
-- **[Rakhi Jain](https://www.linkedin.com/in/rakhi-jain-39507661/)**, Technical Architect, HCLTech
+- **[Rakhi Jain](https://www.linkedin.com/in/rakhi-jain-39507661/)**, Technical Architect
