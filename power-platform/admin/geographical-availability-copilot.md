@@ -34,6 +34,7 @@ ms.custom:
 ms.collection: 
     - bap-ai-copilot
 ms.contributors:
+  - lapeter
   - nitemp
 ---
 
