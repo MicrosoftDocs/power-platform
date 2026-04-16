@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 03/09/2026
+ms.date: 04/06/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -18,6 +18,8 @@ Power Platform admins often need to orchestrate and automate routine activities 
 
 > [!NOTE]
 > Microsoft shifted from a user experience-first to an API-first development model for Power Platform programmability. New capabilities are introduced in the API first, then quickly synchronized across all supported tools, reducing lag and ensuring consistency. For more background, go to [Power Platform API and SDKs: From UX-first to API-first](https://devblogs.microsoft.com/powerplatform/power-platform-api-and-sdks-from-ux-first-to-api-first/).
+
+:::image type="content" source="media/adminsdk-process.png" alt-text="Architecture diagram showing the Power Platform Admin SDK process and available programmability tools." lightbox="media/adminsdk-process.png":::
 
 ## Customer management plane vs customer data plane
 
