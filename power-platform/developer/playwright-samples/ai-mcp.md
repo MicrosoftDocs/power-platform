@@ -4,8 +4,9 @@ description: Connect AI coding assistants to a live Power Platform browser sessi
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Playwright MCP server

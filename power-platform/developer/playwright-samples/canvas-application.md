@@ -4,8 +4,9 @@ description: Write end-to-end tests for Power Apps canvas apps using the CanvasA
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Test canvas apps
@@ -50,14 +51,14 @@ test.beforeEach(async ({ page, context }) => {
     app: 'Northwind Orders',
     type: AppType.Canvas,
     mode: AppLaunchMode.Play,
-    skipMakerPortal: true,   // bypasses maker portal navigation
+    skipMakerPortal: true,   // bypasses Power Apps navigation
     directUrl: CANVAS_APP_URL,
   });
 });
 ```
 
 > [!TIP]
-> Setting `skipMakerPortal: true` and providing a `directUrl` saves 10–20 seconds per test by bypassing maker portal navigation.
+> Setting `skipMakerPortal: true` and providing a `directUrl` saves 10–20 seconds per test by bypassing Power Apps navigation.
 
 ## Wait for the app to load
 

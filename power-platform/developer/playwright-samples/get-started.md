@@ -4,8 +4,9 @@ description: Clone the repository, configure your environment, authenticate, and
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: get-started
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Get started with Power Platform Playwright Samples
@@ -66,7 +67,7 @@ cp .env.example .env
 Open `.env` and set the required variables:
 
 ```ini
-# Power Apps maker portal
+# Power Apps
 POWER_APPS_BASE_URL=https://make.powerapps.com
 POWER_APPS_ENVIRONMENT_ID=<your-environment-guid>
 
@@ -92,7 +93,7 @@ For the full list of environment variables, see [Environment variables reference
 
 Authentication runs once to capture a browser storage state that all tests reuse.
 
-### Authenticate to the Maker Portal
+### Authenticate to Power Apps
 
 Run the following command. A browser window opens for you to sign in:
 

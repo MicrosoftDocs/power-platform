@@ -10,9 +10,6 @@
           href: alm/index.yml
         - name: Developer documentation
           href: developer/index.yml
-          items:
-            - name: Power Platform Playwright Samples
-              href: playwright-samples/toc.yml
         - name: Guidance documentation
           href: guidance/index.yml
           displayName: CoE adoption guidance best practices

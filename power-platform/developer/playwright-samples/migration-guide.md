@@ -4,8 +4,9 @@ description: Step-by-step guide to migrate existing Power Apps Test Engine YAML 
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Migrate from Power Apps Test Engine

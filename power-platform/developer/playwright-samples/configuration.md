@@ -4,8 +4,9 @@ description: Reference for playwright.config.ts settings, project structure, and
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: reference
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Configuration reference
@@ -188,7 +189,7 @@ Scripts available in `packages/e2e-tests/package.json`:
 
 | Script | Command | Description |
 |---|---|---|
-| `auth:headful` | `ts-node auth/auth-maker-portal.ts` | Interactive auth for Maker Portal (canvas tests) |
+| `auth:headful` | `ts-node auth/auth-maker-portal.ts` | Interactive auth for Power Apps (canvas tests) |
 | `auth:mda:headful` | `ts-node auth/auth-mda.ts` | Interactive auth for model-driven apps |
 | `auth` | `ts-node auth/auth-maker-portal.ts --headless` | Headless auth (CI) |
 | `auth:mda` | `ts-node auth/auth-mda.ts --headless` | Headless MDA auth (CI) |

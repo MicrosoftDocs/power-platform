@@ -1,18 +1,19 @@
 ---
 title: Authentication overview for Power Platform Playwright Samples
-description: Understand how Power Platform Playwright Samples manages authentication across the Maker Portal and Dynamics 365 domains using storage state files.
+description: Understand how Power Platform Playwright Samples manages authentication across the Power Apps and Dynamics 365 domains using storage state files.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: conceptual
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Authentication overview
 
 Power Platform apps span two distinct domains, each requiring a separate authenticated session:
 
-- **Maker Portal domain** (`make.powerapps.com`) — used for canvas apps, Gen UX apps, and any test that navigates through the maker portal
+- **Power Apps domain** (`make.powerapps.com`) — used for canvas apps, Gen UX apps, and any test that navigates through [Power Apps](https://make.powerapps.com).
 - **Dynamics 365/CRM domain** (`<org>.crm.dynamics.com`) — used for model-driven apps and Dynamics 365
 
 The framework handles both domains by acquiring a browser **storage state** once and reusing it across all test runs. This approach avoids logging in on every test, which significantly reduces test suite duration.
@@ -25,7 +26,7 @@ The framework stores two state files:
 
 | File | Domain | Used by |
 |---|---|---|
-| `state-<email>.json` | Maker Portal | Canvas app tests, Gen UX tests |
+| `state-<email>.json` | [Power Apps](https://make.powerapps.com) | Canvas app tests, Gen UX tests |
 | `state-mda-<email>.json` | Dynamics 365 | Model-driven app tests |
 
 Default storage location: `packages/e2e-tests/.playwright-ms-auth/`
@@ -72,7 +73,7 @@ AZURE_CERTIFICATE_NAME=<certificate-name>
 
 Before each test run, the framework validates the storage state file:
 
-- **Maker Portal state:** Validates MSAL access token expiry from localStorage
+- **[Power Apps](https://make.powerapps.com) state:** Validates MSAL access token expiry from localStorage
 - **MDA state:** Validates Dynamics 365 session cookies from the CRM domain
 
 If a state file is expired, the framework removes it and prompts you to re-authenticate. In CI/CD, authentication runs in `globalSetup` to acquire fresh state before every pipeline run.

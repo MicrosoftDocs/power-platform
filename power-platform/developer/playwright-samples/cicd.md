@@ -4,8 +4,9 @@ description: Configure GitHub Actions and Azure Pipelines to run Power Platform 
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # CI/CD integration

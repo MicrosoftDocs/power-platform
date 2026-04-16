@@ -4,8 +4,9 @@ description: Understand how globalSetup and globalTeardown work in the Power Pla
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: concept-article
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Global setup and teardown

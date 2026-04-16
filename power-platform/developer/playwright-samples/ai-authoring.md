@@ -4,8 +4,9 @@ description: Use Playwright codegen and AI coding assistants to record interacti
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # AI test authoring with Copilot

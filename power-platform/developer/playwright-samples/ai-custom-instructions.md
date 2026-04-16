@@ -4,8 +4,9 @@ description: Write CLAUDE.md, copilot-instructions.md, and agents.md files that 
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Custom instructions for AI agents

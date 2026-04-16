@@ -4,8 +4,9 @@ description: Use generative AI tools — Playwright MCP server, codegen, and tes
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: overview
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # AI-assisted testing overview

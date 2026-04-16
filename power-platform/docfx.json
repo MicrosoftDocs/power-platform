@@ -82,8 +82,7 @@
             "admin/**/*.md": "admin",
             "developer/**/*.md": "developer",
             "well-architected/**/*.md": "well-architected",
-            "test-engine/**/*.md": "developer",
-            "playwright-samples/**/*.md": "developer"
+            "test-engine/**/*.md": "developer"
          },
          "search.app": {
             "power-fx/**/*.md": [
@@ -110,12 +109,6 @@
                "dataverse-docs",
                "powerpages-docs",
                "powervirtualagents-docs"
-            ],
-            "playwright-samples/**/*.md": [
-               "powerapps-docs",
-               "powerautomate-docs",
-               "dataverse-docs",
-               "powervirtualagents-docs"
             ]
          }
       },
@@ -126,8 +119,8 @@
          "filename-incomplete": {
             "exclude": [
                "power-fx/reference/includes/**/*.md",
-               "playwright-samples/global-setup-teardown.md",
-               "playwright-samples/locators.md"
+               "developer/playwright-samples/global-setup-teardown.md",
+               "developer/playwright-samples/locators.md"
             ]
          }
       }

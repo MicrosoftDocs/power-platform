@@ -4,8 +4,9 @@ description: Write end-to-end tests for Dynamics 365 and model-driven Power Apps
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Test model-driven apps
@@ -14,7 +15,7 @@ Model-driven apps use ag-Grid for list views and a form runtime for record editi
 
 ## Launch a model-driven app
 
-Use `skipMakerPortal: true` and `directUrl` to bypass maker portal navigation and go straight to the app:
+Use `skipMakerPortal: true` and `directUrl` to bypass [Power Apps](https://make.powerapps.com) navigation and go straight to the app:
 
 ```typescript
 import { test } from '@playwright/test';

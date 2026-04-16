@@ -4,8 +4,9 @@ description: Reference documentation for all classes, methods, and types exporte
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: reference
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # API reference
@@ -33,7 +34,7 @@ interface AppLaunchOptions {
   app: string;                  // Display name of the app
   type: AppType;                // Canvas | ModelDriven
   mode: AppLaunchMode;          // Play | Edit
-  skipMakerPortal?: boolean;    // true: use directUrl, skip maker portal navigation
+  skipMakerPortal?: boolean;    // true: use directUrl, skip make.powerapps.com navigation
   directUrl?: string;           // Full URL when skipMakerPortal is true
 }
 ```
@@ -188,7 +189,7 @@ function buildCanvasAppUrlFromEnv(): string
 
 ### getStorageStatePath
 
-Returns the path to the Maker Portal storage state file for the given email:
+Returns the path to the [Power Apps](https://make.powerapps.com) storage state file for the given email:
 
 ```typescript
 function getStorageStatePath(email: string): string

@@ -4,8 +4,9 @@ description: Learn how to use the built-in locator classes, selector objects, an
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: concept-article
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Locators
@@ -222,9 +223,9 @@ const root = page.locator(LocatorUtils.id('ApplicationShell'));
 
 ---
 
-## PowerAppsPageSelectors — Maker Portal selectors
+## PowerAppsPageSelectors — Power Apps selectors
 
-`PowerAppsPageSelectors` is a static object of CSS selector strings organized by portal surface. Use it when writing tests that interact with the Power Apps maker portal itself (not the running app).
+`PowerAppsPageSelectors` is a static object of CSS selector strings organized by portal surface. Use it when writing tests that interact with the [Power Apps](https://make.powerapps.com) site (not the running app).
 
 ```typescript
 import { PowerAppsPageSelectors } from 'power-platform-playwright-toolkit';

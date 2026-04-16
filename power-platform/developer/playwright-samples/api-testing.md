@@ -4,8 +4,9 @@ description: Use the FormComponent execute method to run Xrm API calls in-browse
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # API testing through form context

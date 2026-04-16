@@ -4,8 +4,9 @@ description: Visual comparisons, network mocking, and accessibility testing for 
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Advanced testing capabilities

@@ -4,8 +4,9 @@ description: Write end-to-end tests for canvas custom pages embedded in Power Ap
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Test custom pages

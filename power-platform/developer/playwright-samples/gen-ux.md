@@ -4,13 +4,14 @@ description: Write end-to-end tests for AI-generated Power Apps using the GenUxP
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Test AI-generated apps (Gen UX)
 
-Gen UX apps are AI-generated Power Apps created through the natural-language experience in the Power Apps maker portal. They use the same canvas runtime as hand-authored canvas apps, so the same iframe-scoping and `data-control-name` patterns apply. The `GenUxPage` class provides helpers tuned for the generated control structure.
+Gen UX apps are AI-generated Power Apps created through the natural-language experience in [Power Apps](https://make.powerapps.com). They use the same canvas runtime as hand-authored canvas apps, so the same iframe-scoping and `data-control-name` patterns apply. The `GenUxPage` class provides helpers tuned for the generated control structure.
 
 ## How Gen UX apps differ from canvas apps
 
@@ -47,7 +48,7 @@ test.beforeEach(async ({ page, context }) => {
 ```
 
 > [!TIP]
-> Use `skipMakerPortal: true` with `directUrl` to bypass the maker portal and reduce startup time by 10–20 seconds.
+> Use `skipMakerPortal: true` with `directUrl` to bypass Power Apps and reduce startup time by 10–20 seconds.
 
 ## Scope locators to the canvas frame
 
@@ -173,7 +174,7 @@ Gen UX control names change when the app is regenerated. To find current control
 
 ## Authentication
 
-Gen UX apps use the Maker Portal domain. Use the standard storage state:
+Gen UX apps use the [Power Apps](https://make.powerapps.com) domain. Use the standard storage state:
 
 ```typescript
 import { getStorageStatePath } from 'power-platform-playwright-toolkit';

@@ -4,8 +4,9 @@ description: Complete reference for all environment variables used by Power Plat
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: reference
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Environment variables reference
@@ -75,7 +76,7 @@ These are computed by the toolkit from `MS_AUTH_EMAIL`. You don't set them direc
 
 | Path | Description |
 |---|---|
-| `.playwright-ms-auth/state-<email>.json` | Maker Portal auth state (canvas/Gen UX tests) |
+| `.playwright-ms-auth/state-<email>.json` | Power Apps auth state (canvas/Gen UX tests) |
 | `.playwright-ms-auth/state-mda-<email>.json` | Dynamics 365 auth state (MDA tests) |
 
 Override the storage state directory:

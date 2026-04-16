@@ -4,8 +4,9 @@ description: Structure your Power Platform Playwright tests using the Page Objec
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: concept-article
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Page Object Model

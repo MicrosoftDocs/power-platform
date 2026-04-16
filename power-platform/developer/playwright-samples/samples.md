@@ -4,8 +4,9 @@ description: Explore ready-to-run Playwright tests for canvas apps, model-driven
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: sample
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Sample tests
@@ -19,7 +20,7 @@ The repository includes a complete set of sample tests targeting a Northwind Tra
 | Canvas app CRUD | `tests/northwind/canvas/canvas-app-crud.test.ts` | Canvas | Create, read, update, delete orders in a gallery |
 | Model-driven CRUD | `tests/northwind/mda/model-driven-crud.test.ts` | Model-driven | Filter grid, open record, edit field, save, delete |
 | Custom page CRUD | `tests/northwind/mda/custom-page-crud.test.ts` | Custom page (MDA) | Create account in embedded canvas page, verify in gallery |
-| Custom page preview | `tests/northwind/mda/custom-page.test.ts` | Custom page (Edit) | Add/delete record via maker portal preview |
+| Custom page preview | `tests/northwind/mda/custom-page.test.ts` | Custom page (Edit) | Add/delete record via [Power Apps](https://make.powerapps.com) preview |
 
 ## Run the samples
 

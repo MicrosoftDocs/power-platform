@@ -4,8 +4,9 @@ description: Step-by-step instructions to set up password, certificate, and Azur
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
-ms.date: 04/07/2025
+ms.date: 04/17/2026
 ms.subservice: developer
+ms.reviewer: jdaly
 ---
 
 # Authentication guide
@@ -59,7 +60,7 @@ Certificate authentication is more secure than passwords and works well for both
 4. Run the authentication scripts:
 
    ```bash
-   npm run auth:headful       # Maker Portal
+   npm run auth:headful       # https://make.powerapps.com
    npm run auth:mda:headful   # Model-driven app (if needed)
    ```
 
@@ -168,7 +169,7 @@ if (check.expired) {
 | `Authentication tokens have expired` | Storage state file expired | Re-run `npm run auth:headful` |
 | `Storage state file does not exist` | Auth was never run | Run `npm run auth:headful` |
 | `Certificate file not found` | Wrong path in `MS_AUTH_LOCAL_FILE_PATH` | Check path is relative to `packages/e2e-tests/` |
-| `ERR_ABORTED` during MDA auth | Maker Portal state expired | Run `npm run auth:headful` before `npm run auth:mda:headful` |
+| `ERR_ABORTED` during MDA auth | [Power Apps](https://make.powerapps.com) state expired | Run `npm run auth:headful` before `npm run auth:mda:headful` |
 | Browser closes unexpectedly | Previous browser process still running | Wait a few seconds and retry |
 
 ## Next steps
