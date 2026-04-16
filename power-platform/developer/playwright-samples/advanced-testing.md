@@ -1,11 +1,10 @@
 ---
-title: Advanced testing capabilities for Power Platform Playwright Samples
+title: Advanced testing capabilities for Power Platform Playwright samples
 description: Visual comparisons, network mocking, and accessibility testing for Power Platform canvas and model-driven apps using Playwright.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
@@ -18,6 +17,8 @@ Beyond functional tests, Playwright provides built-in support for visual regress
 Playwright's `toHaveScreenshot()` assertion captures a baseline screenshot on the first run and compares subsequent runs against it. Pixel-level differences fail the test.
 
 ### Capture a canvas app baseline
+
+The following example launches a canvas app and captures a screenshot of the gallery control to establish a visual baseline for future comparison.
 
 ```typescript
 import { test, expect } from '@playwright/test';
@@ -39,7 +40,7 @@ test('gallery matches visual baseline', async ({ page, context }) => {
     .first()
     .waitFor({ state: 'visible', timeout: 60000 });
 
-  // Capture the canvas frame only (not the MDA shell chrome)
+  // Capture the canvas frame only (not the model-driven app shell chrome)
   const galleryLocator = canvasFrame.locator('[data-control-name="Gallery1"]');
   await expect(galleryLocator).toHaveScreenshot('orders-gallery.png');
 });
@@ -99,6 +100,8 @@ Playwright's `page.route()` intercepts HTTP requests. Use it to mock Dataverse A
 
 ### Mock a Dataverse WebApi response
 
+The following example intercepts a Dataverse WebAPI call and returns a mocked JSON response, so you can test app behavior without relying on live data.
+
 ```typescript
 test('gallery shows mocked orders', async ({ page, context }) => {
   // Intercept Dataverse API calls before launching the app
@@ -132,6 +135,8 @@ test('gallery shows mocked orders', async ({ page, context }) => {
 
 ### Simulate an API error
 
+The following example simulates a server error by returning a 500 status code, so you can verify that the app displays the appropriate error state.
+
 ```typescript
 test('shows error state when API fails', async ({ page, context }) => {
   await page.route('**/api/data/v9.2/nwind_orders*', (route) => {
@@ -150,6 +155,8 @@ test('shows error state when API fails', async ({ page, context }) => {
 
 ### Intercept and observe requests (without mocking)
 
+The following example listens for outgoing POST requests to the Dataverse API without altering them, so you can verify that the app sends the expected requests when a user action occurs.
+
 ```typescript
 test('save triggers a POST to Dataverse', async ({ page, context }) => {
   const apiRequests: string[] = [];
@@ -167,13 +174,15 @@ test('save triggers a POST to Dataverse', async ({ page, context }) => {
 ```
 
 > [!TIP]
-> Combine request observation with mock fulfillment to validate that the correct OData query is sent to Dataverse — useful for verifying that filters and expands are constructed correctly.
+> Combine request observation with mock fulfillment to validate that the correct OData query is sent to Dataverse. This approach is useful for verifying that filters and expands are constructed correctly.
 
 ## Accessibility testing
 
-Playwright integrates with [axe-core](https://github.com/dequelabs/axe-core) via the `@axe-core/playwright` package to audit pages for WCAG compliance.
+Playwright integrates with [axe-core](https://github.com/dequelabs/axe-core) through the `@axe-core/playwright` package to audit pages for [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) compliance.
 
 ### Install axe-core for Playwright
+
+Run the following command to add the axe-core Playwright package as a dev dependency in your test project.
 
 ```bash
 cd packages/e2e-tests
@@ -181,6 +190,8 @@ npm install --save-dev @axe-core/playwright
 ```
 
 ### Audit a canvas app for accessibility violations
+
+The following example launches a canvas app and runs an axe-core audit scoped to WCAG 2.0 Level A and AA rules. The test fails if it finds any violations.
 
 ```typescript
 import { test, expect } from '@playwright/test';
@@ -218,6 +229,8 @@ test('canvas app has no critical accessibility violations', async ({ page, conte
 
 ### Audit a model-driven app form
 
+The following example opens a record in a model-driven app and runs an accessibility audit. It filters the results to only critical and serious violations.
+
 ```typescript
 test('order form has no accessibility violations', async ({ page, context }) => {
   const app = new AppProvider(page, context);
@@ -244,7 +257,7 @@ test('order form has no accessibility violations', async ({ page, context }) => 
 
 ### Report accessibility violations
 
-To get readable output when violations are found, format them in the test output:
+To get readable output when violations are found, format them in the test output.
 
 ```typescript
 if (results.violations.length > 0) {
@@ -258,7 +271,7 @@ if (results.violations.length > 0) {
 
 ### Exclude known violations
 
-If your app has known violations that are accepted or being tracked separately:
+If your app has known violations that you accept or track separately:
 
 ```typescript
 const results = await new AxeBuilder({ page })
@@ -272,7 +285,7 @@ const results = await new AxeBuilder({ page })
 
 ## Combine capabilities
 
-You can combine visual, network, and accessibility tests in the same test file. A common pattern is a **smoke test suite** that runs all three:
+You can combine visual, network, and accessibility tests in the same test file. A common pattern is a **smoke test suite** that runs all three.
 
 ```typescript
 test.describe('Canvas app smoke tests', () => {

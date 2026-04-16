@@ -1,11 +1,10 @@
 ---
-title: Locators in Power Platform Playwright Samples
+title: Locators in Power Platform Playwright samples
 description: Learn how to use the built-in locator classes, selector objects, and LocatorUtils to write reliable, maintainable selectors for Power Platform canvas and model-driven apps.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: concept-article
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
@@ -162,6 +161,8 @@ export class OrderFormLocators extends BaseLocators {
 
 ### Available protected methods in BaseLocators
 
+The following table lists the protected methods available in `BaseLocators` and their Playwright equivalents.
+
 | Method | Maps to |
 |---|---|
 | `getByRole(role, options?)` | `page.getByRole()` |
@@ -211,6 +212,8 @@ const root = page.locator(LocatorUtils.id('ApplicationShell'));
 
 ### LocatorUtils reference
 
+The following table lists the available `LocatorUtils` methods and the CSS selectors they produce.
+
 | Method | Selector produced | Use for |
 |---|---|---|
 | `automationId(id)` | `[data-automation-id="id"]` | Fluent UI components |
@@ -244,6 +247,8 @@ await page.locator(
 ```
 
 ### PowerAppsPageSelectors structure
+
+The following table describes the sections available in `PowerAppsPageSelectors`.
 
 | Section | What it covers |
 |---|---|
@@ -286,7 +291,7 @@ await portalLocators.canvasDesignerIframe.waitFor({ state: 'visible' });
 
 ## ModelDrivenAppLocators — Runtime selectors
 
-`ModelDrivenAppLocators` covers the model-driven app runtime: the sitemap, grid, form, command bar, and dialogs. The `GridComponent` and `FormComponent` use these internally. Use them directly only when you need a selector that the component doesn't expose.
+`ModelDrivenAppLocators` covers the model-driven app runtime: the sitemap, grid, form, command bar, and dialogs. The [`GridComponent`](api-reference.md#gridcomponent)  and [`FormComponent`](api-reference.md#formcomponent)  use these internally. Use them directly only when you need a selector that the component doesn't expose.
 
 ```typescript
 import { ModelDrivenAppLocators } from 'power-platform-playwright-toolkit';
@@ -347,6 +352,8 @@ const galleryItem = canvasFrame.locator(
 ```
 
 ### Helper functions in CanvasAppLocators
+
+These standalone helper functions generate CSS selectors for canvas app controls without requiring a class instance.
 
 ```typescript
 import {
@@ -423,11 +430,13 @@ const visibleSaveButton = page
 
 ## Troubleshoot selector issues
 
+Use the following table to diagnose and fix common selector problems.
+
 | Symptom | Likely cause | Fix |
 |---|---|---|
 | `Locator resolved to N elements` (strict mode) | Selector too broad | Add `.filter()`, `.first()`, or a more specific attribute |
 | `Timeout waiting for locator` in canvas app | Not scoped to iframe | Use `canvasFrame.locator()` instead of `page.locator()` |
-| `nth-child` breaks after grid filter | ag-Grid rebuilds rows | Use `[row-index="${n}"]` (built into `GridComponent`) |
+| `nth-child` breaks after grid filter | [AG Grid](https://www.ag-grid.com/) rebuilds rows | Use `[row-index="${n}"]` (built into [`GridComponent`](api-reference.md#gridcomponent) ) |
 | `getByRole('button')` matches the wrong button | Multiple buttons with same role | Add `{ name: 'exact label' }` to narrow by accessible name |
 | Canvas control not found by `data-control-name` | App was regenerated | Re-inspect in DevTools; control name may have changed |
 | `getByLabel` returns no match | Input has no associated label | Use `getByPlaceholder()` or `getByAriaLabel()` instead |

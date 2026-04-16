@@ -1,23 +1,22 @@
 ---
-title: Global setup and teardown in Power Platform Playwright Samples
-description: Understand how globalSetup and globalTeardown work in the Power Platform Playwright Samples project, and learn how to extend them for authentication, data seeding, environment validation, and cleanup.
+title: Global setup and teardown in Power Platform Playwright samples
+description: "Learn how globalSetup and globalTeardown work in Power Platform Playwright tests. Extend them for authentication, data seeding, and environment validation."
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: concept-article
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
 # Global setup and teardown
 
-Playwright's `globalSetup` and `globalTeardown` hooks run **once** per test run — before the first test starts and after the last test finishes. They run in the main Node.js process, not inside a browser context. This makes them the right place for work that applies to the whole suite, such as validating credentials, seeding reference data, or cleaning up test artifacts.
+Playwright's `globalSetup` and `globalTeardown` hooks run **once** per test run - before the first test starts and after the last test finishes. They run in the main Node.js process, not inside a browser context. This process makes them the right place for work that applies to the whole suite, such as validating credentials, seeding reference data, or cleaning up test artifacts.
 
 This article explains how these hooks work in this project and walks through the scenarios where you should extend them.
 
-## How they are wired up
+## How global setup and teardown are configured
 
-The hooks are registered in `playwright.config.ts`:
+You register the hooks in `playwright.config.ts`:
 
 ```typescript
 // packages/e2e-tests/playwright.config.ts
@@ -28,11 +27,15 @@ export default defineConfig({
 });
 ```
 
-Each file exports a single `async` function. Playwright calls `globalSetup` before spawning any worker, and `globalTeardown` after all workers have finished.
+Each file exports a single `async` function. Playwright calls `globalSetup` before spawning any worker, and `globalTeardown` after all workers finish.
 
 ## Current implementation
 
+The project ships with minimal stubs for both hooks. They log a banner so you can confirm they ran, but they don't perform any real work yet.
+
 ### global-setup.ts
+
+The default setup function prints a startup banner and exits:
 
 ```typescript
 // packages/e2e-tests/globals/global-setup.ts
@@ -45,6 +48,8 @@ export default globalSetup;
 ```
 
 ### global-teardown.ts
+
+The default teardown function prints a completion banner and exits:
 
 ```typescript
 // packages/e2e-tests/globals/global-teardown.ts
@@ -73,6 +78,8 @@ This means **auth validation blocks the run before any test is collected** — a
 
 ## When to use globalSetup vs. other hooks
 
+Playwright offers several hooks that run at different points in the test lifecycle. Use this table to choose the right one for your task:
+
 | Hook | Runs | Frequency | Use for |
 |---|---|---|---|
 | `playwright.config.ts` (top-level code) | Config eval | Once, before everything | Fail-fast validation (auth, env vars) |
@@ -88,7 +95,7 @@ This means **auth validation blocks the run before any test is collected** — a
 
 ## Scenario 1: Headless authentication in CI
 
-In CI, interactive browser windows are not available. `globalSetup` is the standard place to acquire storage state headlessly before any test needs it.
+In CI, you can't use interactive browser windows. Use `globalSetup` to acquire storage state headlessly before any test needs it.
 
 ```typescript
 // globals/global-setup.ts
@@ -242,7 +249,7 @@ export default async function globalSetup() {
 }
 ```
 
-This surfaces network or VPN issues immediately, saving the time of watching 30 tests fail on navigation timeouts.
+This check surfaces network or VPN issues immediately, saving you the time of watching 30 tests fail on navigation timeouts.
 
 ## Scenario 5: Archive reports and notify on failure
 
@@ -301,13 +308,15 @@ Tests can then include the run ID in test data names:
 const accountName = `Test Account ${process.env.TEST_RUN_ID}-${Date.now()}`;
 ```
 
-This makes it easy to find exactly which CI build created a record in Dataverse.
+This approach makes it easy to find exactly which CI build created a record in Dataverse.
 
 ## Pass data from globalSetup to tests
 
-Because workers run in separate processes, you cannot export variables from `globalSetup` and import them in test files. Use one of these patterns:
+Because workers run in separate processes, you can't export variables from `globalSetup` and import them in test files. Use one of these patterns:
 
 ### Pattern 1: Environment variables
+
+Set values on `process.env` in `globalSetup` and read them in any test file:
 
 ```typescript
 // global-setup.ts
@@ -320,6 +329,8 @@ const value = process.env.MY_SHARED_VALUE; // 'hello'
 Simple, works for strings and GUIDs. Doesn't survive serialization for complex objects.
 
 ### Pattern 2: Write to a JSON file
+
+For structured or complex data, write a JSON file during setup and import it in your tests:
 
 ```typescript
 // global-setup.ts
@@ -362,7 +373,9 @@ async function seedReferenceData() {
 
 The same pattern applies to `globals/global-teardown.ts`.
 
-## Troubleshoot global setup failures
+## Troubleshoot global setup and teardown failures
+
+Use this table to diagnose common issues with `globalSetup` and `globalTeardown`:
 
 | Symptom | Likely cause | Fix |
 |---|---|---|

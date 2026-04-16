@@ -1,19 +1,18 @@
 ---
-title: Test custom pages in model-driven apps with Power Platform Playwright Samples
-description: Write end-to-end tests for canvas custom pages embedded in Power Apps model-driven apps using iframe scoping and the AppProvider class.
+title: "Test Custom Pages in Model-Driven Apps With Power Platform Playwright Samples"
+description: Learn how to write end-to-end tests for canvas custom pages in model-driven apps using iframe scoping and the AppProvider class in Playwright.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
-# Test custom pages
+# Test custom pages in model-driven apps
 
 Custom pages are canvas apps embedded inside a model-driven app. They render in an iframe within the model-driven app shell. Testing them requires navigating to the model-driven app, selecting the custom page from the sitemap, and then scoping all control interactions to the inner iframe.
 
-## How custom page testing works
+## How custom page testing works in model-driven apps
 
 When a custom page loads, the model-driven app shell remains on the Dynamics 365 domain. The custom page canvas runtime loads inside:
 
@@ -26,8 +25,8 @@ This is the same iframe used by standalone canvas apps. Once you have the frame 
 ## Navigate to a custom page
 
 1. Launch the model-driven app using `AppProvider`.
-2. Click the custom page item in the sitemap.
-3. Wait for the canvas runtime to initialize.
+1. Select the custom page item in the sitemap.
+1. Wait for the canvas runtime to initialize.
 
 ```typescript
 import { test, expect } from '@playwright/test';
@@ -73,21 +72,27 @@ await canvasFrame
   .waitFor({ state: 'visible', timeout: 30000 });
 ```
 
-### Click buttons
+### Click buttons in custom page controls
+
+Use the `data-control-name` attribute to target specific button controls within the canvas iframe, then locate the inner `[role="button"]` element to trigger a click action.
 
 ```typescript
 await canvasFrame.locator('[data-control-name="IconButton_Accept1"] [role="button"]').click();
 await canvasFrame.locator('[data-control-name="IconButton_Edit1"] [role="button"]').click();
 ```
 
-### Fill form fields
+### Fill form fields in a custom page
+
+Locate input fields by their `aria-label` attribute within the canvas iframe and use the `fill` method to enter values.
 
 ```typescript
 const accountNameInput = canvasFrame.locator('input[aria-label="Account Name"]');
 await accountNameInput.fill('Contoso Ltd');
 ```
 
-### Filter gallery by title
+### Filter a gallery by title in a custom page
+
+To find a specific item in a gallery, filter the list of gallery items by matching the text content of a child control such as `Title1`.
 
 ```typescript
 const galleryItem = canvasFrame
@@ -103,7 +108,7 @@ await galleryItem.waitFor({ state: 'visible', timeout: 30000 });
 
 ## Refresh the custom page after a save
 
-When you save a new record in a custom page backed by Dataverse, the gallery doesn't refresh automatically unless you trigger a full reload. The recommended approach is to navigate to the app root and back:
+When you save a new record in a custom page backed by Dataverse, the gallery doesn't refresh automatically unless you trigger a full reload. The recommended approach is to go to the app root and back:
 
 ```typescript
 // Navigate to app root to force gallery refresh
@@ -123,6 +128,8 @@ await specificItem.waitFor({ state: 'visible', timeout: 60000 });
 ```
 
 ## Full test example: create and verify a record
+
+The following example combines navigation, form entry, save, and gallery verification into a single end-to-end test that creates an account record and confirms it appears in the custom page gallery.
 
 ```typescript
 test('should create an account and verify it in the gallery', async ({ page }) => {
@@ -157,7 +164,7 @@ test('should create an account and verify it in the gallery', async ({ page }) =
 
 ## Authentication for custom pages
 
-Custom pages run on the Dynamics 365 domain. Use the MDA storage state:
+Custom pages run on the Dynamics 365 domain. Use the model-driven app storage state:
 
 ```typescript
 test.use({

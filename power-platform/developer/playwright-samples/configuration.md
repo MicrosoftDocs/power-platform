@@ -1,11 +1,10 @@
 ---
-title: Configuration reference for Power Platform Playwright Samples
+title: Configuration reference for Power Platform Playwright samples
 description: Reference for playwright.config.ts settings, project structure, and reporter configuration for Power Platform Playwright tests.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: reference
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
@@ -71,6 +70,8 @@ export default defineConfig({
 ```
 
 ## Key configuration options
+
+The following sections explain the most important settings in the configuration file and when to change them.
 
 ### `fullyParallel` and `workers`
 
@@ -146,12 +147,12 @@ export default async function globalSetup() {
 The validation checks:
 
 - Storage state file exists
-- MSAL access token is not expired (canvas/Gen UX tests)
+- MSAL access token isn't expired (canvas/Gen UX tests)
 - CRM session cookies are present and valid (MDA tests)
 
 ## `tsconfig.json`
 
-TypeScript configuration for the test package:
+The `tsconfig.json` file controls TypeScript compilation settings for the test package:
 
 ```json
 {
@@ -185,14 +186,14 @@ CUSTOM_PAGE_NAME=AccountsCustomPage
 
 ## `package.json` scripts
 
-Scripts available in `packages/e2e-tests/package.json`:
+The following npm scripts are available in `packages/e2e-tests/package.json` for authentication and test execution:
 
 | Script | Command | Description |
 |---|---|---|
 | `auth:headful` | `ts-node auth/auth-maker-portal.ts` | Interactive auth for Power Apps (canvas tests) |
 | `auth:mda:headful` | `ts-node auth/auth-mda.ts` | Interactive auth for model-driven apps |
 | `auth` | `ts-node auth/auth-maker-portal.ts --headless` | Headless auth (CI) |
-| `auth:mda` | `ts-node auth/auth-mda.ts --headless` | Headless MDA auth (CI) |
+| `auth:mda` | `ts-node auth/auth-mda.ts --headless` | Headless model-driven app auth (CI) |
 | `test` | `playwright test` | Run all tests |
 | `test:ui` | `playwright test --ui` | Run with Playwright UI |
 | `test:debug` | `playwright test --debug` | Run with debug inspector |

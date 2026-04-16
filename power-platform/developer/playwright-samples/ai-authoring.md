@@ -1,11 +1,10 @@
 ---
-title: AI test authoring with Copilot for Power Platform Playwright Samples
+title: AI test authoring with Copilot for Power Platform Playwright samples
 description: Use Playwright codegen and AI coding assistants to record interactions and generate Playwright tests for Power Platform canvas and model-driven apps.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
@@ -15,16 +14,20 @@ Playwright's built-in code generator ([codegen](https://playwright.dev/docs/code
 
 ## How the workflow works
 
-1. **Record** — Run `playwright codegen` against your Power Platform app. Playwright captures every click, fill, and navigation as raw test code.
-2. **Paste** — Drop the recorded code into your AI chat alongside the toolkit API docs or your custom instructions.
-3. **Rewrite** — Ask the AI to rewrite the recording using `AppProvider`, `ModelDrivenAppPage`, `GridComponent`, and other toolkit classes.
-4. **Review** — Check the generated test for correctness, adjust timeouts, and commit.
+1. **Record**: Run `playwright codegen` against your Power Platform app. Playwright captures every click, fill, and navigation as raw test code.
+1. **Paste**: Drop the recorded code into your AI chat alongside the toolkit API docs or your custom instructions.
+1. **Rewrite**: Ask the AI to rewrite the recording using [`AppProvider`](api-reference.md#appprovider), [`ModelDrivenAppPage`](api-reference.md#modeldrivenapppage), [`GridComponent`](api-reference.md#gridcomponent), and other toolkit classes.
+1. **Review**: Check the generated test for correctness, adjust timeouts, and commit.
 
 This workflow is especially useful when you're new to the toolkit API or working with an unfamiliar app.
 
 ## Step 1: Record with Playwright codegen
 
+Use Playwright's codegen tool to record your browser interactions and generate the raw test code that you'll refine in later steps.
+
 ### Install Playwright browsers
+
+Before recording, make sure the Chromium browser is installed for Playwright.
 
 ```bash
 cd packages/e2e-tests
@@ -33,12 +36,14 @@ npx playwright install chromium
 
 ### Run codegen against your app
 
+Start Playwright's code generator pointing at your Power Platform app URL. This opens a browser alongside the Playwright Inspector, which records every interaction as TypeScript.
+
 ```bash
 npx playwright codegen --save-storage=.playwright-ms-auth/state-record.json \
   "https://apps.powerapps.com/play/<your-app-id>"
 ```
 
-This opens a browser and a Playwright Inspector side-by-side. Interact with your app — click buttons, fill forms, navigate. The Inspector records every action as TypeScript.
+This command opens a browser and a Playwright Inspector side-by-side. Interact with your app - click buttons, fill forms, and navigate. The Inspector records every action as TypeScript.
 
 > [!TIP]
 > If your app requires authentication, authenticate first and pass the storage state:
@@ -68,11 +73,13 @@ test('test', async ({ page }) => {
 
 Paste the recording into your AI chat. Then ask:
 
-> "Rewrite this Playwright codegen recording as a proper test using the Power Platform Playwright toolkit. Use `AppProvider` to launch the app, scope the frame locator to a variable, add appropriate `waitFor` calls before interactions, and use `expect` assertions from `@playwright/test`."
+> "Rewrite this Playwright codegen recording as a proper test using the Power Platform Playwright toolkit. Use [`AppProvider`](api-reference.md#appprovider) to launch the app, scope the frame locator to a variable, add appropriate `waitFor` calls before interactions, and use `expect` assertions from `@playwright/test`."
 
 If you have a [custom instructions file](ai-custom-instructions.md) configured, the AI applies your project conventions automatically. Otherwise, share the relevant code snippet from [canvas-application.md](canvas-application.md) or [model-driven-application.md](model-driven-application.md) as context.
 
 ### Example: AI-rewritten canvas test
+
+The following example shows how raw codegen output transforms into a clean, maintainable test using the Power Platform Playwright toolkit.
 
 **Before (codegen output):**
 
@@ -141,17 +148,17 @@ npx playwright codegen --load-storage=.playwright-ms-auth/state-mda-<email>.json
   "https://<org>.crm.dynamics.com/main.aspx?appid=<app-id>"
 ```
 
-Then ask AI to rewrite using `ModelDrivenAppPage`:
+Then ask AI to rewrite using [`ModelDrivenAppPage`](api-reference.md#modeldrivenapppage) :
 
-> "Rewrite this codegen recording to use `ModelDrivenAppPage`. Replace raw `page.locator()` grid clicks with `mda.grid.filterByKeyword()`, `mda.grid.openRecord()`, `mda.form.getAttribute()`, and `mda.form.save()`."
+> "Rewrite this codegen recording to use [`ModelDrivenAppPage`](api-reference.md#modeldrivenapppage) . Replace raw `page.locator()` grid clicks with `mda.grid.filterByKeyword()`, `mda.grid.openRecord()`, `mda.form.getAttribute()`, and `mda.form.save()`."
 
 ## Use GitHub Copilot Chat for test authoring
 
 In VS Code with GitHub Copilot, you can author tests directly in the chat panel without codegen:
 
 1. Open the relevant test file in the editor.
-2. Open Copilot Chat (`Ctrl+Shift+I`).
-3. Ask:
+1. Open Copilot Chat (`Ctrl+Shift+I`).
+1. Ask:
 
    > "@workspace Write a test in `tests/northwind/canvas/canvas-app-crud.test.ts` that opens the gallery, finds the item titled 'Northwind Traders', clicks it, edits the phone field, and saves."
 
@@ -170,7 +177,7 @@ Claude generates all five tests in a single response, following the patterns in 
 
 ## Playwright CLI for quick test generation
 
-The [Playwright CLI](https://github.com/microsoft/playwright-cli) provides additional utilities for test management:
+The [Playwright CLI](https://github.com/microsoft/playwright-cli) provides extra utilities for test management:
 
 ```bash
 # Install
@@ -191,10 +198,10 @@ playwright-cli show-tree packages/e2e-tests
 
 ## Best practices for AI-generated tests
 
-- **Always review generated selectors** — AI may produce selectors that are too brittle or too broad. Verify `data-control-name` values against the actual DOM.
-- **Check timeouts** — AI doesn't know your app's load time. Add 60-second timeouts for gallery `waitFor` calls on Dataverse-backed apps.
-- **Use unique test data** — AI-generated tests often use hardcoded strings. Replace with `Date.now()` suffixes to avoid conflicts between test runs.
-- **Validate with `expect`** — Codegen recordings often lack assertions. Ask AI to add meaningful `expect` calls after each action.
+- **Always review generated selectors**: AI might create selectors that are too brittle or too broad. Check `data-control-name` values against the actual DOM.
+- **Check timeouts**: AI doesn't know your app's load time. Add 60-second timeouts for gallery `waitFor` calls on Dataverse-backed apps.
+- **Use unique test data**: AI-generated tests often use hardcoded strings. Replace them with `Date.now()` suffixes to avoid conflicts between test runs.
+- **Validate with `expect`**: Codegen recordings often lack assertions. Ask AI to add meaningful `expect` calls after each action.
 
 ## Next steps
 

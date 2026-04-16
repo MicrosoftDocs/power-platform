@@ -1,5 +1,5 @@
 items:
-  - name: Power Platform Playwright Samples
+  - name: Power Platform Playwright samples
     items:
       - name: Overview
         href: overview.md

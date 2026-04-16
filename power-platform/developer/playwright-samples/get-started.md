@@ -1,17 +1,16 @@
 ---
-title: Get started with Power Platform Playwright Samples
-description: Clone the repository, configure your environment, authenticate, and run your first end-to-end test against a Power Platform app in under 15 minutes.
+title: Get Started With Power Platform Playwright Samples
+description: Learn how to clone the repository, configure your environment, and run your first end-to-end Power Platform Playwright test.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: get-started
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
-# Get started with Power Platform Playwright Samples
+# Get started with Power Platform Playwright samples
 
-In this guide, you clone the repository, configure your environment variables, authenticate to Power Platform, and run your first end-to-end test.
+This guide helps you get started with Power Platform Playwright samples by cloning the repository, configuring environment variables, authenticating, and running your first end-to-end test.
 
 ## Prerequisites
 
@@ -71,7 +70,7 @@ Open `.env` and set the required variables:
 POWER_APPS_BASE_URL=https://make.powerapps.com
 POWER_APPS_ENVIRONMENT_ID=<your-environment-guid>
 
-# Model-driven app (for MDA tests)
+# Model-driven app (for model-driven app tests)
 MODEL_DRIVEN_APP_URL=https://<org>.crm.dynamics.com/main.aspx?appid=<app-guid>
 
 # Canvas app (for canvas tests)
@@ -111,7 +110,7 @@ If you're testing model-driven apps, run a second authentication against the Dyn
 npm run auth:mda:headful
 ```
 
-The MDA storage state is saved to `.playwright-ms-auth/state-mda-<email>.json`.
+The model-driven app storage state is saved to `.playwright-ms-auth/state-mda-<email>.json`.
 
 > [!NOTE]
 > Authentication storage states expire with the session. Repeat these steps when tests start failing with authentication errors, or configure [CI/CD authentication](authentication-guide.md) to renew state automatically.
@@ -142,7 +141,7 @@ View the HTML report after the run:
 npx playwright show-report
 ```
 
-## Step 7: Write your first test
+## Step 7: Write your first Power Platform Playwright test
 
 The following example shows a minimal canvas app test. Create a file at `tests/my-app/my-app.test.ts`:
 
@@ -178,10 +177,10 @@ npx playwright test tests/my-app/my-app.test.ts --project=default
 
 ## Next steps
 
-- [Authentication guide](authentication-guide.md) — Set up certificate auth for CI/CD
-- [Test canvas apps](canvas-application.md) — Full guide to canvas app testing patterns
-- [Test model-driven apps](model-driven-application.md) — Grid, form, and command bar testing
-- [AI-assisted testing](ai-overview.md) — Use Playwright MCP to generate tests with AI
+- [Authentication guide](authentication-guide.md) Set up certificate auth for CI/CD
+- [Test canvas apps](canvas-application.md) Full guide to canvas app testing patterns
+- [Test model-driven apps](model-driven-application.md) Grid, form, and command bar testing
+- [AI-assisted testing](ai-overview.md) Use Playwright MCP to generate tests with AI
 
 ## See also
 

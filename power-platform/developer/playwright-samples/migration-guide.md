@@ -1,21 +1,22 @@
 ---
-title: Migrate from Power Apps Test Engine to Power Platform Playwright Samples
-description: Step-by-step guide to migrate existing Power Apps Test Engine YAML tests to Playwright TypeScript tests using the Power Platform Playwright Samples toolkit.
+title: Migrate from Power Apps Test Engine to Power Platform Playwright samples
+description: Step-by-step guide to migrate existing Power Apps Test Engine YAML tests to Playwright TypeScript tests using the Power Platform Playwright samples toolkit.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
 # Migrate from Power Apps Test Engine
 
-Power Apps Test Engine uses YAML-based test definitions that run against a specialized test host. Power Platform Playwright Samples uses TypeScript and the standard Playwright test runner, giving you access to the full Playwright API, ecosystem tooling, and CI/CD integrations.
+Power Apps Test Engine uses YAML-based test definitions that run against a specialized test host. Power Platform Playwright samples use TypeScript and the standard Playwright test runner, giving you access to the full Playwright API, ecosystem tooling, and CI/CD integrations.
 
 This guide maps Test Engine concepts to their Playwright equivalents and walks through a concrete migration example.
 
 ## Concept mapping
+
+The following table shows how Test Engine concepts map to their Playwright equivalents.
 
 | Test Engine concept | Playwright equivalent |
 |---|---|
@@ -33,6 +34,8 @@ This guide maps Test Engine concepts to their Playwright equivalents and walks t
 
 ## Before you begin
 
+Complete these prerequisites before starting the migration.
+
 1. Clone the repository and install dependencies:
 
    ```bash
@@ -41,21 +44,23 @@ This guide maps Test Engine concepts to their Playwright equivalents and walks t
    node common/scripts/install-run-rush.js install
    ```
 
-2. Copy your app URL from the Test Engine YAML `appLogicalName` or the Power Apps make portal.
+1. Copy your app URL from the Test Engine YAML `appLogicalName` or the Power Apps make portal.
 
-3. Set up authentication — see [Authentication guide](authentication-guide.md).
+1. Set up authentication - see [Authentication guide](authentication-guide.md).
 
 ## Step 1: Identify your app type
 
 Test Engine supports canvas apps. If you're migrating:
 
-- **Canvas app tests** → Follow [Test canvas apps](canvas-application.md)
-- **Custom page tests** → Follow [Test custom pages](custom-pages.md)
-- **Model-driven app tests** → Follow [Test model-driven apps](model-driven-application.md)
+- **Canvas app tests** → Follow [Test canvas apps](canvas-application.md).
+- **Custom page tests** → Follow [Test custom pages](custom-pages.md).
+- **Model-driven app tests** → Follow [Test model-driven apps](model-driven-application.md).
 
 ## Step 2: Map your test structure
 
 ### Test Engine YAML
+
+A typical Test Engine test definition looks like this.
 
 ```yaml
 testSuite:
@@ -70,6 +75,8 @@ testSuite:
 ```
 
 ### Playwright TypeScript equivalent
+
+Here's the same test rewritten by using Playwright and the Power Platform toolkit.
 
 ```typescript
 import { test, expect } from '@playwright/test';
@@ -125,7 +132,7 @@ Test Engine uses control names from Power Apps Studio directly in YAML. In Playw
 
 ## Step 4: Map environment variables
 
-Test Engine uses an `environmentVariables` section in YAML. Move these to your `.env` file:
+Test Engine uses an `environmentVariables` section in YAML. Move these values to your `.env` file:
 
 ```yaml
 # Test Engine YAML
@@ -140,6 +147,8 @@ CANVAS_APP_URL=https://apps.powerapps.com/play/...
 ```
 
 ## Step 5: Map setup and teardown
+
+Convert Test Engine lifecycle hooks to Playwright's built-in `beforeEach` and `afterEach` functions.
 
 ```yaml
 # Test Engine
@@ -170,6 +179,8 @@ Test Engine uses Power Fx expressions in `Assert()`. Replace with Playwright `ex
 
 ## Key differences to be aware of
 
+Keep these behavioral differences in mind as you migrate your tests.
+
 | Area | Test Engine | Playwright |
 |---|---|---|
 | **Waits** | Automatic (Test Engine handles timing) | Explicit `waitFor()` required |
@@ -180,6 +191,8 @@ Test Engine uses Power Fx expressions in `Assert()`. Replace with Playwright `ex
 
 ## Run your migrated tests
 
+After migrating your tests, authenticate and run them by using these commands.
+
 ```bash
 cd packages/e2e-tests
 npm run auth:headful      # authenticate
@@ -189,10 +202,12 @@ npx playwright test --ui  # run with interactive UI
 
 ## Troubleshoot migration issues
 
+Refer to the following table for common migration problems and their solutions.
+
 | Symptom | Resolution |
 |---|---|
 | Gallery doesn't load | Add `waitFor({ timeout: 60000 })` before interacting |
-| Control not found | Verify `data-control-name` in DevTools — may differ from Power Fx name |
+| Control not found | Verify `data-control-name` in DevTools - it might differ from Power Fx name |
 | Selector matches multiple elements | Use `.filter()` or `.nth(0)` to narrow selection |
 | Tests run but assertion fails immediately | Add explicit `waitFor` or `toBeVisible` before asserting |
 

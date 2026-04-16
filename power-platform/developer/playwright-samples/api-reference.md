@@ -1,19 +1,18 @@
 ---
-title: API reference for Power Platform Playwright Samples
-description: Reference documentation for all classes, methods, and types exported by the power-platform-playwright-toolkit package.
+title: API reference for Power Platform Playwright samples
+description: "Explore the Power Platform Playwright toolkit API reference for classes, methods, and types to automate testing of canvas and model-driven apps. Start building tests today."
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: reference
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
 # API reference
 
-This article documents the public API of the `power-platform-playwright-toolkit` package.
+This Power Platform Playwright toolkit API reference documents public classes, methods, and types you can use to automate end-to-end testing of canvas and model-driven apps.
 
-## AppProvider
+## `AppProvider`
 
 Entry point for launching Power Platform apps. Instantiate once per test, then call `launch()`.
 
@@ -24,10 +23,13 @@ class AppProvider {
   launch(options: AppLaunchOptions): Promise<void>
   getModelDrivenAppPage(): ModelDrivenAppPage
   getCanvasAppPage(): CanvasAppPage
+  getGenUxPage(): GenUxPage
 }
 ```
 
-### AppLaunchOptions
+### `AppLaunchOptions`
+
+Options passed to `AppProvider.launch()` to configure which app to open and how.
 
 ```typescript
 interface AppLaunchOptions {
@@ -39,7 +41,9 @@ interface AppLaunchOptions {
 }
 ```
 
-### AppType
+### `AppType`
+
+Specifies the type of Power Platform app to launch.
 
 ```typescript
 enum AppType {
@@ -48,7 +52,9 @@ enum AppType {
 }
 ```
 
-### AppLaunchMode
+### `AppLaunchMode`
+
+Determines whether the app opens in play mode or edit mode.
 
 ```typescript
 enum AppLaunchMode {
@@ -59,7 +65,7 @@ enum AppLaunchMode {
 
 ---
 
-## ModelDrivenAppPage
+## `ModelDrivenAppPage`
 
 Returned by `AppProvider.getModelDrivenAppPage()`. Provides navigation and component access.
 
@@ -76,9 +82,9 @@ class ModelDrivenAppPage {
 
 ---
 
-## GridComponent
+## `GridComponent`
 
-Wraps the ag-Grid used in model-driven list views. Accessed via `ModelDrivenAppPage.grid`.
+Wraps the [AG Grid](https://www.ag-grid.com/) used in model-driven list views. Accessed via `ModelDrivenAppPage.grid`.
 
 ```typescript
 class GridComponent {
@@ -97,7 +103,9 @@ class GridComponent {
 }
 ```
 
-### OpenRecordOptions
+### `OpenRecordOptions`
+
+Options for identifying which record to open from the grid.
 
 ```typescript
 interface OpenRecordOptions {
@@ -109,7 +117,7 @@ interface OpenRecordOptions {
 
 ---
 
-## FormComponent
+## `FormComponent`
 
 Wraps the Dynamics 365 form runtime. Accessed via `ModelDrivenAppPage.form`.
 
@@ -137,7 +145,7 @@ class FormComponent {
 }
 ```
 
-### execute()
+### `FormComponent.execute()`
 
 Runs arbitrary code in the browser's form context with full access to the Xrm Client API:
 
@@ -151,7 +159,7 @@ See [API testing through form context](api-testing.md) for detailed usage.
 
 ---
 
-## CommandingComponent
+## `CommandingComponent`
 
 Wraps the model-driven app command bar. Accessed via `ModelDrivenAppPage.commanding`.
 
@@ -164,7 +172,7 @@ class CommandingComponent {
 
 ---
 
-## CanvasAppPage
+## `CanvasAppPage`
 
 Returned by `AppProvider.getCanvasAppPage()`. Provides the canvas iframe frame locator.
 
@@ -177,9 +185,80 @@ class CanvasAppPage {
 
 ---
 
+## `GenUxPage`
+
+Returned by `AppProvider.getGenUxPage()`. Provides interactions with the Power Apps Maker Portal GenUX AI designer for creating, generating, inspecting, and publishing model-driven apps from AI prompts.
+
+```typescript
+class GenUxPage {
+  readonly previewFrame: FrameLocator  // UCI Preview iframe locator
+
+  // Power Apps navigation
+  goToAppsPage(): Promise<void>
+  navigateToStartWithPageDesign(): Promise<void>
+  createAppWithName(appName: string): Promise<void>
+  addNewPage(): Promise<void>
+
+  // AI generation
+  waitForUCIPreviewFrameAndFillPrompt(prompt: string): Promise<void>
+  waitForUCIPreviewFrameAndSelectTemplate(templateText: string): Promise<void>
+  verifyThoughtStreaming(): Promise<void>
+  verifyCodeAndPreviewTabsAvailable(): Promise<void>
+  verifyCodeStreaming(): Promise<void>
+
+  // Inspection
+  clickPreviewTab(): Promise<void>
+  clickCodeTab(): Promise<void>
+  waitForGeneratedContent(): Promise<void>
+  waitForCodeTabContent(): Promise<void>
+  getPreviewTabDom(): Promise<string>
+  getCodeTabContent(): Promise<string>
+
+  // Publishing
+  publishApp(): Promise<void>
+  buildCanvasPlayUrl(): string
+
+  // Form interaction
+  submitForm(): Promise<void>
+  waitForSubmitSuccess(timeout?: number): Promise<void>
+
+  // App management
+  getAppIdFromUrl(): string
+  searchAndPlayApp(appName: string, context: BrowserContext): Promise<Page | null>
+  deleteAppsMatchingPrefix(prefix: string): Promise<void>
+  deleteAppFromAppListIfFound(appName: string): Promise<void>
+}
+```
+
+### `GenUxPage.previewFrame`
+
+Exposes the `FrameLocator` for the UCI Preview iframe. Use this property to query generated form elements directly:
+
+```typescript
+const input = genUxPage.previewFrame.getByRole('textbox', { name: 'First Name' });
+await expect(input).toBeVisible();
+```
+
+### `GenUxPage.verifyThoughtStreaming()`
+
+Checks for transient GenUX streaming indicators, such as thought text, Stop button, and Agent Thoughts. Each check is best-effort - generation might complete before all indicators appear. The only hard assertion is that either streaming is in progress or `"Your page is now generated"` is visible.
+
+### `GenUxPage.searchAndPlayApp()`
+
+Returns `null` when Play is disabled (app isn't yet published) rather than throwing an error. Use `test.skip()` on a `null` return:
+
+```typescript
+const appPage = await genUxPage.searchAndPlayApp(appName, context);
+if (!appPage) test.skip();
+```
+
+---
+
 ## Utility functions
 
-### buildCanvasAppUrlFromEnv
+Standalone helper functions for common setup and configuration tasks.
+
+### `buildCanvasAppUrlFromEnv`
 
 Reads `CANVAS_APP_URL` from the environment:
 
@@ -187,7 +266,7 @@ Reads `CANVAS_APP_URL` from the environment:
 function buildCanvasAppUrlFromEnv(): string
 ```
 
-### getStorageStatePath
+### `getStorageStatePath`
 
 Returns the path to the [Power Apps](https://make.powerapps.com) storage state file for the given email:
 
@@ -196,7 +275,9 @@ function getStorageStatePath(email: string): string
 // Returns: packages/e2e-tests/.playwright-ms-auth/state-<email>.json
 ```
 
-### ConfigHelper
+### `ConfigHelper`
+
+Provides configuration helpers, such as checking whether the cached storage state expired.
 
 ```typescript
 class ConfigHelper {
@@ -210,7 +291,11 @@ class ConfigHelper {
 
 ## Locator utilities
 
-### LocatorUtils
+Helper methods for locating Power Apps controls within iframes.
+
+### `LocatorUtils`
+
+Static methods for finding canvas app controls and gallery items by name.
 
 ```typescript
 class LocatorUtils {
@@ -223,7 +308,7 @@ class LocatorUtils {
 
 ## Type exports
 
-All types are exported from the package root:
+Export all types from the package root:
 
 ```typescript
 import {
@@ -236,6 +321,7 @@ import {
   FormComponent,
   CommandingComponent,
   CanvasAppPage,
+  GenUxPage,
   buildCanvasAppUrlFromEnv,
   getStorageStatePath,
   ConfigHelper,

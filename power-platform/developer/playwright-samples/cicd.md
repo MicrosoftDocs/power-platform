@@ -1,17 +1,16 @@
 ---
-title: CI/CD integration for Power Platform Playwright Samples
-description: Configure GitHub Actions and Azure Pipelines to run Power Platform Playwright tests in a continuous integration pipeline with authentication, artifact upload, and reporting.
+title: CI/CD integration for Power Platform Playwright samples
+description: Learn how to configure GitHub Actions and Azure Pipelines to run Power Platform Playwright tests in CI/CD pipelines with authentication, artifact upload, and test reporting.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
 # CI/CD integration
 
-This article shows how to run Power Platform Playwright tests automatically in GitHub Actions and Azure Pipelines. Authentication runs in `globalSetup` before the test suite starts, and test results are published as pipeline artifacts and test reports.
+This article shows how to configure CI/CD integration for Power Platform Playwright tests in GitHub Actions and Azure Pipelines. Automate authentication, run end-to-end tests, and publish results as pipeline artifacts and test reports.
 
 ## Prerequisites
 
@@ -19,11 +18,13 @@ Before configuring your pipeline, make sure you have:
 
 - An Azure Key Vault with a certificate for your test user
 - The service principal for your pipeline granted the **Key Vault Certificate User** role on the vault
-- Your app URLs, tenant ID, and email stored as pipeline secrets/variables
+- Your app URLs, tenant ID, and email stored as pipeline secrets or variables
 
 For local certificate setup, see [Authentication guide](authentication-guide.md).
 
 ## GitHub Actions
+
+The following steps configure a GitHub Actions workflow to run your Power Platform Playwright tests on every push, pull request, or scheduled trigger.
 
 ### Store secrets
 
@@ -144,6 +145,8 @@ To display test results in the PR check view, add the JUnit reporter step after 
 ```
 
 ## Azure Pipelines
+
+The following steps configure an Azure Pipelines definition with reusable templates to run your Power Platform Playwright tests.
 
 ### Variable group
 
@@ -282,7 +285,9 @@ steps:
       publishLocation: pipeline
 ```
 
-## Troubleshoot CI failures
+## Troubleshoot CI/CD pipeline failures
+
+Use the following table to diagnose and resolve common issues when running Playwright tests in a CI pipeline.
 
 | Symptom | Resolution |
 |---|---|

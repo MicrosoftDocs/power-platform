@@ -1,19 +1,20 @@
 ---
-title: Environment variables reference for Power Platform Playwright Samples
-description: Complete reference for all environment variables used by Power Platform Playwright Samples, including authentication, app URLs, and configuration flags.
+title: Environment variables reference for Power Platform Playwright samples
+description: "Explore the complete environment variables reference for Power Platform Playwright samples. Configure authentication, app URLs, and CI/CD flags for your tests."
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: reference
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
 # Environment variables reference
 
-All configuration is passed to tests through environment variables. For local development, set these in `packages/e2e-tests/.env`. In CI/CD, set them as pipeline secrets or variables. See [CI/CD integration](cicd.md) for pipeline-specific instructions.
+This environment variables reference covers all configuration settings for Power Platform Playwright samples. For local development, set these variables in `packages/e2e-tests/.env`. In CI/CD, set them as pipeline secrets or variables. For pipeline-specific instructions, see [CI/CD integration](cicd.md).
 
 ## Authentication variables
+
+These variables control how the test framework authenticates against Power Platform services.
 
 | Variable | Required | Description |
 |---|---|---|
@@ -30,18 +31,20 @@ Required when `MS_AUTH_CREDENTIAL_PROVIDER=azure-keyvault`:
 
 | Variable | Description |
 |---|---|
-| `AZURE_KEYVAULT_URL` | Key Vault URL, e.g., `https://<vault-name>.vault.azure.net/` |
+| `AZURE_KEYVAULT_URL` | Key Vault URL, for example, `https://<vault-name>.vault.azure.net/` |
 | `AZURE_CERTIFICATE_NAME` | Name of the certificate stored in Key Vault |
 | `AZURE_TENANT_ID` | Microsoft Entra tenant ID |
 | `AZURE_CLIENT_ID` | (Optional) Service principal client ID for federated identity |
 
 ## App URL variables
 
+These variables specify the URLs of the apps under test.
+
 | Variable | Required | Description |
 |---|---|---|
 | `CANVAS_APP_URL` | For canvas tests | Full play-mode URL of your canvas app, including `?tenantId=<id>` |
-| `MODEL_DRIVEN_APP_URL` | For MDA tests | Full URL of your model-driven app (`/main.aspx?appid=<id>`) |
-| `CUSTOM_PAGE_NAME` | For custom page tests | Display name of the custom page sitemap item, e.g., `AccountsCustomPage` |
+| `MODEL_DRIVEN_APP_URL` | For model-driven app tests | Full URL of your model-driven app (`/main.aspx?appid=<id>`) |
+| `CUSTOM_PAGE_NAME` | For custom page tests | Display name of the custom page sitemap item, such as `AccountsCustomPage` |
 
 ### Build the canvas app URL
 
@@ -62,9 +65,11 @@ CANVAS_APP_URL=https://apps.powerapps.com/play/e/default-<tenant-id>/a/<app-id>?
 
 ### Get the model-driven app URL
 
+Follow these steps to find the correct URL for your model-driven app.
+
 1. Open the model-driven app in play mode.
-2. Copy the URL from the browser address bar.
-3. Remove query parameters after `appid=<guid>` that are session-specific.
+1. Copy the URL from the browser address bar.
+1. Remove query parameters after `appid=<guid>` that are session-specific.
 
 ```ini
 MODEL_DRIVEN_APP_URL=https://<org>.crm.dynamics.com/main.aspx?appid=<app-guid>
@@ -72,7 +77,7 @@ MODEL_DRIVEN_APP_URL=https://<org>.crm.dynamics.com/main.aspx?appid=<app-guid>
 
 ## Storage state variables
 
-These are computed by the toolkit from `MS_AUTH_EMAIL`. You don't set them directly.
+The toolkit computes these variables from `MS_AUTH_EMAIL`. Don't set them directly.
 
 | Path | Description |
 |---|---|
@@ -87,6 +92,8 @@ MS_AUTH_STORAGE_DIR=../../.auth
 
 ## CI/CD flag
 
+Use this flag to adjust test behavior for continuous integration environments.
+
 | Variable | Default | Description |
 |---|---|---|
 | `CI` | `false` | Set to `true` in CI to enable `retries: 1`, `forbidOnly`, and stricter timeouts |
@@ -94,6 +101,8 @@ MS_AUTH_STORAGE_DIR=../../.auth
 Playwright reads `CI` automatically. You don't need to set it in `.env` — pipeline environments set it by convention.
 
 ## Sample .env file
+
+Use these examples as a starting point for your local `.env` file.
 
 ```ini
 # Authentication
@@ -139,6 +148,8 @@ MODEL_DRIVEN_APP_URL=https://<org>.crm.dynamics.com/...
 ```
 
 ## Security notes
+
+Follow these practices to keep credentials and session data secure.
 
 - Never commit `.env` files to source control. The `.gitignore` in the repo excludes them.
 - Never commit `.playwright-ms-auth/` state files. They contain session tokens.

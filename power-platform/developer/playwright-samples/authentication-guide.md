@@ -1,11 +1,10 @@
 ---
-title: Authentication guide for Power Platform Playwright Samples
+title: Authentication guide for Power Platform Playwright samples
 description: Step-by-step instructions to set up password, certificate, and Azure Key Vault authentication for local development and CI/CD pipelines.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
@@ -25,15 +24,14 @@ Password authentication is the quickest way to get started on a local machine.
    MS_USER_PASSWORD=<password>
    ```
 
-2. Run the authentication script. A browser window opens:
+1. Run the authentication script. A browser window opens:
 
    ```bash
    npm run auth:headful
    ```
 
-3. Complete the sign-in flow. The storage state is saved automatically.
-
-4. If you're testing model-driven apps, authenticate to the CRM domain:
+1. Complete the sign-in flow. The process automatically saves the storage state.
+1. If you're testing model-driven apps, authenticate to the CRM domain:
 
    ```bash
    npm run auth:mda:headful
@@ -44,10 +42,8 @@ Password authentication is the quickest way to get started on a local machine.
 Certificate authentication is more secure than passwords and works well for both local development and CI/CD.
 
 1. Obtain a `.pfx` certificate file for your test user from your Microsoft Entra ID administrator.
-
-2. Place the certificate file in the `cert/` directory at the repository root.
-
-3. Set the following variables in your `.env` file:
+1. Place the certificate file in the `cert/` directory at the repository root.
+1. Set the following variables in your `.env` file:
 
    ```ini
    MS_AUTH_EMAIL=testuser@contoso.com
@@ -57,7 +53,7 @@ Certificate authentication is more secure than passwords and works well for both
    MS_AUTH_CERTIFICATE_PASSWORD=<optional-password>
    ```
 
-4. Run the authentication scripts:
+1. Run the authentication scripts:
 
    ```bash
    npm run auth:headful       # https://make.powerapps.com
@@ -69,10 +65,8 @@ Certificate authentication is more secure than passwords and works well for both
 Use Azure Key Vault to manage certificates centrally in shared or production environments.
 
 1. Upload the certificate to an Azure Key Vault.
-
-2. Grant the pipeline service principal the **Key Vault Certificate User** role on the vault.
-
-3. Set the following variables in your `.env` or pipeline secrets:
+1. Grant the pipeline service principal the **Key Vault Certificate User** role on the vault.
+1. Set the following variables in your `.env` or pipeline secrets:
 
    ```ini
    MS_AUTH_EMAIL=testuser@contoso.com
@@ -88,6 +82,8 @@ Use Azure Key Vault to manage certificates centrally in shared or production env
 In CI/CD, authentication runs in `globalSetup` before the test suite starts. The script acquires fresh storage state headlessly using the configured credential provider.
 
 ### GitHub Actions example
+
+This workflow step authenticates to both the Power Apps and Dynamics 365 domains using a certificate stored in Azure Key Vault, then runs the Playwright test suite.
 
 ```yaml
 - name: Authenticate to Power Platform
@@ -111,6 +107,8 @@ In CI/CD, authentication runs in `globalSetup` before the test suite starts. The
 ```
 
 ### Azure Pipelines example
+
+This pipeline task authenticates to both the Power Apps and Dynamics 365 domains using a certificate from Azure Key Vault, then runs the Playwright test suite.
 
 ```yaml
 - task: Bash@3
@@ -164,17 +162,19 @@ if (check.expired) {
 
 ## Troubleshoot authentication failures
 
+The following table lists common authentication issues and how to resolve them.
+
 | Symptom | Likely cause | Resolution |
 |---|---|---|
 | `Authentication tokens have expired` | Storage state file expired | Re-run `npm run auth:headful` |
 | `Storage state file does not exist` | Auth was never run | Run `npm run auth:headful` |
 | `Certificate file not found` | Wrong path in `MS_AUTH_LOCAL_FILE_PATH` | Check path is relative to `packages/e2e-tests/` |
-| `ERR_ABORTED` during MDA auth | [Power Apps](https://make.powerapps.com) state expired | Run `npm run auth:headful` before `npm run auth:mda:headful` |
+| `ERR_ABORTED` during model-driven app auth | [Power Apps](https://make.powerapps.com) state expired | Run `npm run auth:headful` before `npm run auth:mda:headful` |
 | Browser closes unexpectedly | Previous browser process still running | Wait a few seconds and retry |
 
 ## Next steps
 
-- [CI/CD integration](cicd.md) — Full pipeline configuration for GitHub Actions and Azure Pipelines
+- [CI/CD integration](cicd.md) Full pipeline configuration for GitHub Actions and Azure Pipelines
 - [Test canvas apps](canvas-application.md)
 - [Test model-driven apps](model-driven-application.md)
 

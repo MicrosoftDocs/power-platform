@@ -1,27 +1,26 @@
 ---
-title: Test canvas apps with Power Platform Playwright Samples
-description: Write end-to-end tests for Power Apps canvas apps using the CanvasAppPage object, iframe scoping, and data-control-name selectors.
+title: "Test Canvas Apps with Power Platform Playwright Samples"
+description: Learn how to write end-to-end tests for Power Apps canvas apps using iframe scoping and data-control-name selectors.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
 # Test canvas apps
 
-Canvas apps run inside an `iframe` within the Power Apps player. This guide explains how to launch a canvas app, scope your selectors to the correct frame, and interact with controls using `data-control-name` attributes.
+Canvas apps run inside an `iframe` within the Power Apps player. This guide explains how to launch a canvas app, scope your selectors to the correct frame, and interact with controls by using `data-control-name` attributes.
 
 ## How canvas app testing works
 
-When a canvas app loads in play mode, the runtime is hosted inside:
+When a canvas app loads in play mode, the runtime hosts the app inside an `iframe`:
 
 ```
 iframe[name="fullscreen-app-host"]
 ```
 
-All controls inside the app have a `data-control-name` attribute matching the control name you set in Power Apps Studio. Gallery items have `data-control-part="gallery-item"`.
+All controls inside the app have a `data-control-name` attribute that matches the control name you set in Power Apps Studio. Gallery items have `data-control-part="gallery-item"`.
 
 You scope all locators to this frame before interacting with controls:
 
@@ -31,7 +30,7 @@ const canvasFrame = page.frameLocator('iframe[name="fullscreen-app-host"]');
 
 ## Launch a canvas app
 
-Use `AppProvider` to launch the app and get the `CanvasAppPage` object:
+Use [`AppProvider`](api-reference.md#appprovider) to launch the app and get the [`CanvasAppPage`](api-reference.md#canvasapppage) object:
 
 ```typescript
 import { test, expect } from '@playwright/test';
@@ -79,7 +78,11 @@ await canvasFrame
 
 ## Interact with controls
 
+The following examples show how to interact with common canvas app controls using frame-scoped locators.
+
 ### Click a button
+
+Locate a button by its `data-control-name` attribute, wait for it to be visible, and then click it.
 
 ```typescript
 const addButton = canvasFrame.locator('[data-control-name="icon3"]');
@@ -89,12 +92,16 @@ await addButton.click();
 
 ### Fill a text input
 
+Use the `fill()` method to set the value of a text input, targeting it by its `aria-label`.
+
 ```typescript
 const orderNumberInput = canvasFrame.locator('input[aria-label="Order Number"]');
 await orderNumberInput.fill('ORD-12345');
 ```
 
 ### Select a gallery item
+
+Filter gallery items by their displayed text content to find and click a specific record.
 
 ```typescript
 const galleryItem = canvasFrame
@@ -107,13 +114,15 @@ await galleryItem.click();
 
 ### Count gallery items
 
+Use the `count()` method to verify that the gallery contains the expected number of items.
+
 ```typescript
 const galleryItems = canvasFrame.locator('[data-control-name="Gallery1"] [data-control-part="gallery-item"]');
 const count = await galleryItems.count();
 expect(count).toBeGreaterThan(0);
 ```
 
-## Create a Page Object for your app
+## Create a page object for your canvas app
 
 For maintainability, encapsulate selectors and actions in a Page Object class:
 
@@ -153,7 +162,9 @@ export class MyCanvasAppPage {
 }
 ```
 
-## Full CRUD test example
+## Full CRUD test example for canvas apps
+
+This example combines app launch, gallery verification, and form interaction into a complete test suite.
 
 ```typescript
 import { test, expect, FrameLocator } from '@playwright/test';
@@ -198,13 +209,13 @@ test.describe('Canvas App - Orders', () => {
 });
 ```
 
-## Discover control names
+## Discover control names in canvas apps
 
 To find the `data-control-name` values in your app:
 
 1. Open the app in play mode in a browser.
-2. Open browser DevTools (**F12**).
-3. Use the **Inspector** to hover over controls and look for `data-control-name` attributes.
+1. Open browser developer tools (**F12**).
+1. Use the **Inspector** to hover over controls and look for `data-control-name` attributes.
 
 Alternatively, use the Playwright MCP server to ask an AI assistant to inspect the DOM and generate selectors for you. See [AI-assisted testing](ai-overview.md).
 

@@ -1,25 +1,24 @@
 ---
-title: Page Object Model for Power Platform Playwright Samples
+title: Page Object Model for Power Platform Playwright samples
 description: Structure your Power Platform Playwright tests using the Page Object Model pattern to encapsulate selectors, improve maintainability, and reuse interaction logic.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: concept-article
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
 # Page Object Model
 
-The Page Object Model (POM) is a design pattern that encapsulates the selectors and actions for a specific page or component into a dedicated class. Tests call methods on the page object instead of using raw locators, which makes tests more readable and easier to maintain when the UI changes.
+The Page Object Model (POM) is a design pattern that encapsulates the selectors and actions for a specific page or component into a dedicated class. Tests call methods on the page object instead of using raw locators. This approach makes tests more readable and easier to maintain when the UI changes.
 
 ## Why use POM for Power Platform tests
 
 Power Platform apps have several characteristics that make POM especially valuable:
 
-- **Canvas apps have many `data-control-name` attributes** — centralizing them in a class means renaming a control only requires one change
-- **Model-driven form field schema names** can change if tables are modified — isolating them in a POM limits the blast radius
-- **Common actions** (navigate to gallery, click Add, save record) are repeated across many tests — POM avoids duplication
+- **Canvas apps have many `data-control-name` attributes** — centralizing them in a class means renaming a control only requires one change.
+- **Model-driven form field schema names** can change if tables are modified — isolating them in a POM limits the impact of changes.
+- **Common actions** (navigate to gallery, click Add, save record) are repeated across many tests — POM avoids duplication.
 
 ## Toolkit built-in page objects
 
@@ -27,11 +26,11 @@ The `power-platform-playwright-toolkit` provides ready-made page objects:
 
 | Class | App type | Key methods |
 |---|---|---|
-| `CanvasAppPage` | Canvas | `waitForLoad()`, `getFrame()` |
-| `ModelDrivenAppPage` | Model-driven | `navigateToGridView()`, `navigateToFormView()` |
-| `GridComponent` | MDA grid | `filterByKeyword()`, `getCellValue()`, `openRecord()`, `selectRow()` |
-| `FormComponent` | MDA form | `getAttribute()`, `setAttribute()`, `save()`, `isDirty()` |
-| `CommandingComponent` | MDA command bar | `clickButton()`, `clickMoreCommands()` |
+| [`CanvasAppPage`](api-reference.md#canvasapppage) | Canvas | `waitForLoad()`, `getFrame()` |
+| [`ModelDrivenAppPage`](api-reference.md#modeldrivenapppage)  | Model-driven | `navigateToGridView()`, `navigateToFormView()` |
+| [`GridComponent`](api-reference.md#gridcomponent)  | model-driven app grid | `filterByKeyword()`, `getCellValue()`, `openRecord()`, `selectRow()` |
+| [`FormComponent`](api-reference.md#formcomponent)  | model-driven app form | `getAttribute()`, `setAttribute()`, `save()`, `isDirty()` |
+| [`CommandingComponent`](api-reference.md#commandingcomponent) | model-driven app command bar | `clickButton()`, `clickMoreCommands()` |
 
 Access them through `AppProvider`:
 
@@ -126,6 +125,8 @@ export class AccountsCanvasPage {
 
 ## Use the POM in tests
 
+The following example shows how tests consume the `AccountsCanvasPage` page object to keep test code focused on behavior.
+
 ```typescript
 // tests/accounts/accounts.test.ts
 import { test, expect } from '@playwright/test';
@@ -168,7 +169,7 @@ test.describe('Accounts canvas app', () => {
 
 ## Create a custom POM for model-driven entities
 
-Wrap the toolkit's `ModelDrivenAppPage` for a specific entity:
+Wrap the toolkit's [`ModelDrivenAppPage`](api-reference.md#modeldrivenapppage) for a specific entity:
 
 ```typescript
 // pages/orders/OrdersPage.ts
@@ -223,7 +224,7 @@ export class OrdersPage {
 
 ## Folder structure
 
-Organize page objects alongside tests:
+Organize page objects alongside tests in a mirrored directory structure:
 
 ```
 packages/e2e-tests/
@@ -245,6 +246,8 @@ packages/e2e-tests/
 ```
 
 ## POM design guidelines
+
+Follow these guidelines to keep your page objects consistent and easy to maintain.
 
 - **One class per logical page or major UI section** — don't put the entire app in one class
 - **Expose locators as getters, not strings** — the locator object provides better type safety and auto-wait

@@ -1,31 +1,30 @@
 ---
-title: Custom instructions for AI agents in Power Platform Playwright Samples
+title: Custom instructions for AI agents in Power Platform Playwright samples
 description: Write CLAUDE.md, copilot-instructions.md, and agents.md files that teach AI coding assistants your project conventions for generating Power Platform Playwright tests.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
 # Custom instructions for AI agents
 
-AI coding assistants learn from context. When you provide a custom instructions file that describes your project conventions, the AI generates test code that matches your style, uses the right toolkit APIs, and avoids common mistakes — without you having to explain the same patterns every session.
+AI coding assistants learn from context. When you provide a custom instructions file that describes your project conventions, the AI generates test code that matches your style, uses the right toolkit APIs, and avoids common mistakes - without you having to explain the same patterns every session.
 
 This article shows how to write custom instruction files for different AI assistants and what to include for Power Platform Playwright testing.
 
 ## Why custom instructions matter
 
-Without custom instructions, AI assistants may:
+Without custom instructions, AI assistants might:
 
-- Use raw `page.locator()` instead of `ModelDrivenAppPage` grid and form methods
+- Use raw `page.locator()` instead of [`ModelDrivenAppPage`](api-reference.md#modeldrivenapppage)  grid and form methods
 - Forget to scope locators to `iframe[name="fullscreen-app-host"]`
 - Use short timeouts that fail on Dataverse-backed galleries
 - Generate brittle `nth-child` selectors instead of `[row-index]` attributes
 - Use hardcoded test data that causes conflicts between runs
 
-Custom instructions solve this by giving the AI an always-available reference for your toolkit's API and patterns.
+Custom instructions solve this problem by giving the AI an always-available reference for your toolkit's API and patterns.
 
 ## CLAUDE.md for Claude (Anthropic)
 
@@ -58,11 +57,15 @@ await app.launch({
 
 ### Canvas apps: always scope to the iframe
 
+Canvas apps render inside a nested iframe, so all locator queries must be scoped to that frame to find controls reliably.
+
 ```typescript
 const canvasFrame = page.frameLocator('iframe[name="fullscreen-app-host"]');
 ```
 
 ### Canvas apps: use 60s timeout for gallery waitFor
+
+Gallery controls in canvas apps can take longer to render, so use a 60-second timeout when waiting for gallery items to become visible.
 
 ```typescript
 await canvasFrame.locator('[data-control-part="gallery-item"]').first()
@@ -70,6 +73,8 @@ await canvasFrame.locator('[data-control-part="gallery-item"]').first()
 ```
 
 ### Model-driven apps: use GridComponent and FormComponent
+
+Model-driven apps expose built-in grid and form components that you can interact with directly through the helper page object.
 
 ```typescript
 const mda = app.getModelDrivenAppPage();
@@ -82,13 +87,15 @@ await mda.form.save();
 
 ### Use unique test data to avoid conflicts
 
+Append a timestamp or unique identifier to test data so that parallel test runs don't collide with each other.
+
 ```typescript
 const accountName = `Test Account ${Date.now()}`;
 ```
 
-### MDA grid: use [row-index] not nth-child
+### Model-driven app grid: use [row-index] not nth-child
 
-The GridComponent handles this internally — do not write raw nth-child selectors.
+The [`GridComponent`](api-reference.md#gridcomponent) handles this internally: do not write raw nth-child selectors.
 
 ### Auth: use getStorageStatePath for storageState
 
@@ -109,7 +116,6 @@ import {
   buildCanvasAppUrlFromEnv,
   getStorageStatePath,
 } from 'power-platform-playwright-toolkit';
-```
 ```
 
 ### Advanced Claude Code configuration
@@ -159,7 +165,7 @@ GitHub Copilot reads `.github/copilot-instructions.md` in your repository. Creat
 - Import from `'power-platform-playwright-toolkit'`, not from relative paths
 
 ## App launch
-Always use `AppProvider` with `skipMakerPortal: true` and `directUrl`.
+Always use [`AppProvider`](api-reference.md#appprovider) with `skipMakerPortal: true` and `directUrl`.
 
 ## Canvas apps
 - Scope all locators to `page.frameLocator('iframe[name="fullscreen-app-host"]')`
@@ -167,7 +173,7 @@ Always use `AppProvider` with `skipMakerPortal: true` and `directUrl`.
 - Identify controls via `data-control-name` attribute (inspect in DevTools)
 
 ## Model-driven apps
-- Use `app.getModelDrivenAppPage()` to get `ModelDrivenAppPage`
+- Use `app.getModelDrivenAppPage()` to get [`ModelDrivenAppPage`](api-reference.md#modeldrivenapppage) 
 - Use `mda.grid.*` for grid interactions, `mda.form.*` for form interactions
 - After `filterByKeyword`, always call `mda.grid.waitForGridLoad()`
 
@@ -246,9 +252,9 @@ A good custom instructions file for this project covers:
 | Topic | What to document |
 |---|---|
 | Project structure | Where tests live, where page objects live |
-| App launch | `AppProvider` pattern with `skipMakerPortal` and `directUrl` |
+| App launch | [`AppProvider`](api-reference.md#appprovider) pattern with `skipMakerPortal` and `directUrl` |
 | Canvas apps | Iframe selector, control name discovery, gallery timeout |
-| Model-driven apps | `ModelDrivenAppPage`, `GridComponent`, `FormComponent` methods |
+| Model-driven apps | [`ModelDrivenAppPage`](api-reference.md#modeldrivenapppage) , [`GridComponent`](api-reference.md#gridcomponent) , [`FormComponent`](api-reference.md#formcomponent)  methods |
 | Auth | Storage state file naming and `getStorageStatePath` |
 | Test data | Uniqueness convention (`Date.now()`) |
 | Imports | Toolkit package name, what to import |
@@ -258,9 +264,9 @@ A good custom instructions file for this project covers:
 
 Test your custom instructions by asking the AI to:
 
-1. Write a test for a canvas gallery — verify it uses the iframe and 60s timeout
-2. Write a model-driven CRUD test — verify it uses `GridComponent` methods
-3. Rewrite a codegen recording — verify it uses `AppProvider`
+1. **Write a test for a canvas gallery**: verify it uses the iframe and 60s timeout
+2. **Write a model-driven CRUD test**: verify it uses [`GridComponent`](api-reference.md#gridcomponent)  methods
+3. **Rewrite a codegen recording**: verify it uses `AppProvider`
 
 If the AI still produces raw Playwright code instead of toolkit code, add a more explicit rule to your instructions file.
 

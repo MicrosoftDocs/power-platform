@@ -1,21 +1,20 @@
 ---
-title: API testing through form context in Power Platform Playwright Samples
+title: API testing through form context in Power Platform Playwright samples
 description: Use the FormComponent execute method to run Xrm API calls in-browser and validate Dataverse business logic without navigating the UI.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
 # API testing through form context
 
-The `FormComponent.execute()` method runs arbitrary JavaScript inside the Dynamics 365 form context, directly against the Xrm API. This enables a hybrid testing approach. Use Playwright to navigate to a record, then use `execute()` to validate or manipulate data programmatically. This approach replaces UI interactions that are slow or unreliable.
+The `FormComponent.execute()` method runs arbitrary JavaScript inside the Dynamics 365 form context, directly against the Xrm API. This approach enables a hybrid testing approach. Use Playwright to navigate to a record, and then use `execute()` to validate or manipulate data programmatically. This approach replaces UI interactions that are slow or unreliable.
 
 ## How it works
 
-When a model-driven app record is open in the browser, the Xrm object is available on `window.Xrm`. The `execute()` method bridges the Playwright Node.js context and the browser page context. It injects your function into the browser and returns the result:
+When you open a model-driven app record in the browser, the Xrm object is available on `window.Xrm`. The `execute()` method bridges the Playwright Node.js context and the browser page context. It injects your function into the browser and returns the result:
 
 ```typescript
 const result = await modelDrivenApp.form.execute(async (formContext) => {
@@ -26,7 +25,7 @@ const result = await modelDrivenApp.form.execute(async (formContext) => {
 console.log(`Order number from Xrm: ${result}`);
 ```
 
-`formContext` is the standard Dynamics 365 `Xrm.Form.FormContext` object. Any Xrm Client API method is available.
+`formContext` is the standard Dynamics 365 [`Xrm.Form.FormContext`](/power-apps/developer/model-driven-apps/clientapi/clientapi-form-context) object. You can use any Xrm Client API method.
 
 ## Read field values via Xrm
 
@@ -65,11 +64,11 @@ await mda.form.execute((ctx) => {
 ```
 
 > [!NOTE]
-> Setting values via `execute()` bypasses browser input events. For fields with `onChange` business rules, this is equivalent to what a plug-in or script would do. For fields that depend on browser input focus or blur events, use `mda.form.setAttribute()`, which triggers the UI path.
+> Setting values via `execute()` bypasses browser input events. For fields with `onChange` business rules, this approach is equivalent to what a plug-in or script would do. For fields that depend on browser input focus or blur events, use `mda.form.setAttribute()`, which triggers the UI path.
 
 ## Validate business logic rules
 
-Test that field-level or form-level business rules fire correctly:
+Test that field-level or form-level business rules fire correctly.
 
 ```typescript
 // Open a record
@@ -88,6 +87,8 @@ expect(requiredLevel).toBe('required');
 
 ## Check form validity and dirty state
 
+Use the `isDirty()`, `isValid()`, and `save()` methods to verify that form changes are tracked correctly and that validation passes before and after saving.
+
 ```typescript
 // After making changes, verify the form is dirty
 const isDirty = await mda.form.isDirty();
@@ -101,7 +102,7 @@ expect(await mda.form.isDirty()).toBe(false);
 
 ## Execute Xrm WebApi calls
 
-The full Xrm.WebApi is available inside `execute()`. Use it to query or mutate Dataverse records directly:
+The full [Xrm.WebApi](/power-apps/developer/model-driven-apps/clientapi/reference/xrm-webapi) is available inside `execute()`. Use it to query or mutate Dataverse records directly.
 
 ```typescript
 // Query Dataverse records without navigating the grid
@@ -121,7 +122,7 @@ expect(result.length).toBeGreaterThan(0);
 
 ## Test plug-in side effects
 
-After saving a record, use `execute()` to verify that a plug-in correctly updated a related field:
+After saving a record, use `execute()` to verify that a plug-in correctly updated a related field.
 
 ```typescript
 // Create a new order via UI
@@ -142,7 +143,7 @@ expect(calculatedTotal).toBeGreaterThan(0);
 
 ## Combine UI navigation with API assertions
 
-A common pattern is to drive navigation through the UI and then validate state through the API:
+A common pattern is to drive navigation through the UI and then validate state through the API. The following example opens an order from the grid, clicks the **Submit Order** command bar button, and then uses the Xrm API to assert that the order status was updated to **Pending**.
 
 ```typescript
 test('submit order sets status to Pending', async ({ page, context }) => {
@@ -171,7 +172,7 @@ test('submit order sets status to Pending', async ({ page, context }) => {
 
 ## Form context API reference
 
-The `execute()` callback receives a standard Dynamics 365 form context object. Key methods:
+The `execute()` callback receives a standard Dynamics 365 [form context object](/power-apps/developer/model-driven-apps/clientapi/clientapi-form-context). Key methods:
 
 | Method | Description |
 |---|---|

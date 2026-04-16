@@ -1,26 +1,29 @@
 ---
-title: Write, debug, and run tests locally with Power Platform Playwright Samples
-description: Set up your local development environment to write, run, and debug Power Platform Playwright tests using VS Code, Claude Code, and GitHub Copilot.
+title: Write, debug, and run tests locally with Power Platform Playwright samples
+description: Learn how to write, run, and debug Power Platform Playwright tests locally using VS Code, Claude Code, and GitHub Copilot.
 author: deepakkamboj
 ms.author: dekamb
 ms.topic: how-to
 ms.date: 04/17/2026
-ms.subservice: developer
 ms.reviewer: jdaly
 ---
 
 # Write, debug, and run tests locally
 
-This article covers the full local development loop: writing tests in your editor, running them against a live Power Platform environment, and debugging failures using Playwright's built-in tools — with AI assistance from Claude Code and GitHub Copilot.
+This article covers the full local development loop: writing tests in your editor, running them against a live Power Platform environment, and debugging failures by using Playwright's built-in tools. You get AI assistance from Claude Code and GitHub Copilot.
 
 ## Prerequisites
+
+Before you begin, make sure you have the following tools and access.
 
 - Node.js 18 or later
 - VS Code (recommended) or any TypeScript-capable editor
 - A Power Platform environment with your app deployed
-- Authentication configured — see [Authentication guide](authentication-guide.md)
+- Authentication configured - see [Authentication guide](authentication-guide.md)
 
 ## Set up your workspace
+
+Follow these steps to clone the repository, install dependencies, and open the project in VS Code.
 
 1. Clone the repository:
 
@@ -29,19 +32,19 @@ This article covers the full local development loop: writing tests in your edito
    cd power-platform-playwright-samples
    ```
 
-2. Install dependencies:
+1. Install dependencies:
 
    ```bash
    node common/scripts/install-run-rush.js install
    ```
 
-3. Install the recommended VS Code extensions:
+1. Install the recommended VS Code extensions:
 
-   - **Playwright Test for VS Code** (`ms-playwright.playwright`) — run and debug tests from the sidebar
-   - **GitHub Copilot** (`GitHub.copilot`) — AI test authoring in-editor
-   - **ESLint** (`dbaeumer.vscode-eslint`) — inline linting
+   - **Playwright Test for VS Code** (`ms-playwright.playwright`) - run and debug tests from the sidebar
+   - **GitHub Copilot** (`GitHub.copilot`) - AI test authoring in-editor
+   - **ESLint** (`dbaeumer.vscode-eslint`) - inline linting
 
-4. Open the workspace:
+1. Open the workspace:
 
    ```bash
    code power-platform-playwright-samples.code-workspace
@@ -51,9 +54,11 @@ This article covers the full local development loop: writing tests in your edito
 
 ## Write tests
 
+This section covers where to put test files, how to structure them, and how to find the control names you need for selectors.
+
 ### File naming and location
 
-Place test files in `packages/e2e-tests/tests/`. Use the naming pattern `<feature>.test.ts`:
+Place test files in `packages/e2e-tests/tests/`. Use the naming pattern `<feature>.test.ts`.
 
 ```
 packages/e2e-tests/
@@ -67,6 +72,8 @@ packages/e2e-tests/
 ```
 
 ### Basic test structure
+
+Every test file follows the same pattern: import the toolkit, launch the app in `beforeEach`, and write individual `test()` blocks with assertions.
 
 ```typescript
 import { test, expect } from '@playwright/test';
@@ -101,22 +108,26 @@ test.describe('Feature name', () => {
 });
 ```
 
-### Find control names in your app
+### Find control names in your Power Apps canvas app
 
-You need `data-control-name` values to write selectors for canvas controls:
+To write selectors for canvas controls, you need `data-control-name` values:
 
 1. Open your app in play mode in a browser.
-2. Press **F12** to open DevTools.
-3. Click the **Inspector** (Elements) tab.
-4. Hover over a control — the attribute `data-control-name="Button1"` appears.
+1. Press **F12** to open DevTools.
+1. Click the **Inspector** (Elements) tab.
+1. Hover over a control - the attribute `data-control-name="Button1"` appears.
 
-Alternatively, ask Claude Code or GitHub Copilot to inspect the DOM for you using the [Playwright MCP server](ai-mcp.md).
+Alternatively, ask Claude Code or GitHub Copilot to inspect the DOM for you by using the [Playwright MCP server](ai-mcp.md).
 
 ---
 
 ## Run tests
 
+You can run tests from the command line using the Playwright CLI. The following subsections show common options.
+
 ### Run all tests
+
+To run every test in the project, use the following commands.
 
 ```bash
 cd packages/e2e-tests
@@ -125,17 +136,23 @@ npx playwright test
 
 ### Run a specific file
 
+Pass the file path to run only the tests in that file.
+
 ```bash
 npx playwright test tests/northwind/canvas/canvas-app-crud.test.ts
 ```
 
 ### Run a specific test by name
 
+Use `--grep` to run only tests whose name matches a pattern.
+
 ```bash
 npx playwright test --grep "should create an account"
 ```
 
 ### Run a specific project (canvas or MDA)
+
+Use `--project` to target a specific app type defined in your Playwright config.
 
 ```bash
 npx playwright test --project=canvas
@@ -144,7 +161,7 @@ npx playwright test --project=mda
 
 ### Run with the Playwright UI (recommended for local development)
 
-The Playwright UI gives you a visual test runner with time-travel debugging:
+The Playwright UI provides a visual test runner with time-travel debugging:
 
 ```bash
 npx playwright test --ui
@@ -152,30 +169,36 @@ npx playwright test --ui
 
 Use the UI to:
 
-- See each test listed with pass/fail status
+- See each test listed with pass or fail status
 - Click a test to replay it step by step
 - View screenshots, traces, and network requests at each step
 - Re-run a single test with one click
 
-### Run in headed mode (see the browser)
+### Run in headed mode
+
+Headed mode opens a visible browser window so you can watch the test interact with the app.
 
 ```bash
 npx playwright test --headed
 ```
 
-Headed mode lets you watch the browser as tests execute. Useful for understanding what the app looks like at each step.
+Headed mode lets you watch the browser as tests execute. It's useful for understanding what the app looks like at each step.
 
 ### Run with slow motion
+
+Slow motion adds a delay between each Playwright action so you can follow along visually.
 
 ```bash
 npx playwright test --headed --slow-mo=500
 ```
 
-Each action is delayed by 500 ms, making it easy to follow the test execution visually.
+Each action is delayed by 500 ms, so you can easily follow the test execution visually.
 
 ---
 
 ## Debug tests
+
+When a test fails, use these tools to step through the execution, inspect the DOM, and review traces.
 
 ### Debug with the Playwright Inspector
 
@@ -185,7 +208,7 @@ The Inspector pauses execution and lets you step through actions:
 npx playwright test --debug
 ```
 
-Or add `await page.pause()` inside your test at the point you want to break:
+Or add `await page.pause()` inside your test at the point where you want to break:
 
 ```typescript
 test('should do something', async ({ page }) => {
@@ -202,15 +225,15 @@ test('should do something', async ({ page }) => {
 When paused, the Inspector shows:
 - The current locator highlighted in the browser
 - A locator picker tool to click any element and get its selector
-- Step forward/back controls
+- Step forward and step back controls
 
 ### Debug in VS Code
 
 The **Playwright Test for VS Code** extension adds a **Testing** sidebar (beaker icon). From there you can:
 
 1. Click the play button next to any test to run it.
-2. Click the bug icon to run it in debug mode — VS Code breakpoints work.
-3. Set a breakpoint on any line of your test, hit **Debug Test**, and VS Code pauses there.
+1. Click the bug icon to run it in debug mode - VS Code breakpoints work.
+1. Set a breakpoint on any line of your test, select **Debug Test**, and VS Code pauses there.
 
 To configure the VS Code debugger manually, add to `.vscode/launch.json`:
 
@@ -243,19 +266,19 @@ npx playwright show-report
 ```
 
 The report shows:
-- Pass/fail status for each test
+- Pass or fail status for each test
 - Screenshots captured on failure
 - Full trace for each test (if `trace: 'on-first-retry'` is set)
 
 ### Read the trace viewer
 
-Traces are recorded zip files that let you replay a test execution step by step:
+Traces are recorded ZIP files that you can use to replay a test execution step by step.
 
 ```bash
 npx playwright show-trace test-results/<test-folder>/trace.zip
 ```
 
-Or drag the zip file onto [trace.playwright.dev](https://trace.playwright.dev).
+Or drag the ZIP file onto [trace.playwright.dev](https://trace.playwright.dev).
 
 The trace viewer shows:
 - Every Playwright action with timing
@@ -274,15 +297,17 @@ The trace viewer shows:
 
 ### Set up Claude Code for this project
 
+Complete these steps to install Claude Code and connect it to the Playwright MCP server.
+
 1. Install Claude Code:
 
    ```bash
    npm install -g @anthropic-ai/claude-code
    ```
 
-2. Create `packages/e2e-tests/CLAUDE.md` with your project conventions — see [Custom instructions for AI agents](ai-custom-instructions.md).
+1. Create `packages/e2e-tests/CLAUDE.md` with your project conventions. See [Custom instructions for AI agents](ai-custom-instructions.md).
 
-3. Add the Playwright MCP server to `~/.claude/settings.json`:
+1. Add the Playwright MCP server to `~/.claude/settings.json`:
 
    ```json
    {
@@ -295,7 +320,7 @@ The trace viewer shows:
    }
    ```
 
-4. Start Claude Code from the repo root:
+1. Start Claude Code from the repo root:
 
    ```bash
    claude
@@ -323,7 +348,7 @@ Paste the test output into Claude Code:
 
 > "This test is failing with the following error: [paste error]. Here is the test file: [paste or reference the file]. Diagnose the issue and fix it."
 
-Claude Code reads the file, understands the error, and suggests a fix — often catching issues like wrong selectors, missing `waitFor`, or data conflicts.
+Claude Code reads the file, understands the error, and suggests a fix - often catching problems like wrong selectors, missing `waitFor`, or data conflicts.
 
 ### Run tests from Claude Code
 
@@ -341,9 +366,11 @@ GitHub Copilot integrates directly into VS Code and JetBrains IDEs, providing in
 
 ### Enable Copilot for this project
 
+Complete these steps to activate Copilot and configure project-specific instructions.
+
 1. Install the **GitHub Copilot** extension in VS Code.
-2. Create `.github/copilot-instructions.md` with your project conventions — see [Custom instructions for AI agents](ai-custom-instructions.md).
-3. Open a test file — Copilot reads existing tests and learns the pattern.
+1. Create `.github/copilot-instructions.md` with your project conventions - see [Custom instructions for AI agents](ai-custom-instructions.md).
+1. Open a test file - Copilot reads existing tests and learns the pattern.
 
 ### Use inline completions
 
@@ -366,13 +393,15 @@ Copilot reads your codebase via `@workspace` and generates a test that matches y
 
 ### Fix a failing test with Copilot
 
+Use Copilot Chat to diagnose and fix a test that isn't passing.
+
 1. Open the failing test file.
-2. Select the failing test function.
-3. Open Copilot Chat and ask:
+1. Select the failing test function.
+1. Open Copilot Chat and ask:
 
    > "Fix this test. It's failing because the gallery selector times out. The gallery takes up to 60 seconds to load Dataverse data."
 
-Copilot updates the `waitFor` timeout and may suggest other improvements.
+Copilot updates the `waitFor` timeout and might suggest other improvements.
 
 ### Use Copilot to explain an error
 
@@ -390,19 +419,23 @@ With DevTools open in your browser showing the canvas DOM, copy the relevant HTM
 
 ---
 
-## Recommended local development workflow
+## Recommended local development workflow for Playwright tests
+
+This end-to-end workflow covers the typical steps from initial setup through committing your tests.
 
 1. **Set up once:** Configure `.env`, run `auth:headful`, verify the sample tests pass.
-2. **Inspect first:** Open your app, use DevTools or the Playwright MCP server to find control names.
-3. **Write with AI:** Use Claude Code or Copilot Chat to scaffold the test from a description.
-4. **Run with UI:** `npx playwright test --ui` gives immediate visual feedback.
-5. **Debug with Inspector:** `await page.pause()` at the failure point to inspect state live.
-6. **Read the trace:** If a test is flaky in CI, open the trace zip to see exactly what happened.
-7. **Commit selectively:** Stage only the test files — never commit `.env` or `.playwright-ms-auth/`.
+1. **Inspect first:** Open your app, use DevTools or the Playwright MCP server to find control names.
+1. **Write with AI:** Use Claude Code or Copilot Chat to scaffold the test from a description.
+1. **Run with UI:** `npx playwright test --ui` gives immediate visual feedback.
+1. **Debug with Inspector:** `await page.pause()` at the failure point to inspect state live.
+1. **Read the trace:** If a test is flaky in CI, open the trace zip to see exactly what happened.
+1. **Commit selectively:** Stage only the test files - never commit `.env` or `.playwright-ms-auth/`.
 
 ---
 
 ## Troubleshoot common local issues
+
+Use this table to diagnose and resolve the most frequent problems when running tests locally.
 
 | Symptom | Likely cause | Fix |
 |---|---|---|
@@ -411,7 +444,7 @@ With DevTools open in your browser showing the canvas DOM, copy the relevant HTM
 | `TimeoutError` on gallery | Dataverse load time | Increase timeout to `60000` |
 | `Strict mode violation` — N elements | Selector too broad | Add `.filter()` or `.first()` |
 | Test passes locally, fails in CI | Timing or environment diff | Add `await page.waitForLoadState()`, check retries |
-| `ERR_ABORTED` during MDA auth | Previous browser process alive | Wait a few seconds and retry `npm run auth:mda:headful` |
+| `ERR_ABORTED` during model-driven app auth | Previous browser process alive | Wait a few seconds and retry `npm run auth:mda:headful` |
 | VS Code Playwright extension not finding tests | Wrong `testDir` | Check `playwright.config.ts` → `testDir: './tests'` |
 
 ## Next steps
