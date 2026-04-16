@@ -46,6 +46,7 @@ The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 
 | NOR           | crm19.dynamics.com |
 | SGP           | crm20.dynamics.com |
 | KOR           | crm21.dynamics.com |
+| SWE           | crm22.dynamics.com |
 
 ## Migration process  
  This is the overall process for migrating to a new datacenter.  
