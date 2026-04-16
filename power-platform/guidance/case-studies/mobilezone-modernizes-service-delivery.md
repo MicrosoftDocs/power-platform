@@ -1,5 +1,5 @@
 ---
-title: mobilezone modernizes service delivery using Microsoft Copilot Studio
+title: With Microsoft Copilot Studio, mobilezone modernizes service delivery
 description: Learn how mobilezone improved customer satisfaction and internal efficiency by deploying AI agents Mia and Supporto using Microsoft Copilot Studio.
 #customer intent: As a Power Platform user, I want to learn how to implement AI agents so that I can improve customer service and internal IT support efficiency.
 author: carcla
@@ -10,12 +10,10 @@ ms.date: 04/14/2026
 ms.topic: overview
 ---
 
-<!-- Don't you hate it when companies make our lives harder by having an all-lowercase name? LOL. Beginning a title or sentence with a lowercase word looks wrong. The style guide says to "always capitalize the first word of a new sentence. Rewrite sentences that start with a word that's always lowercase." So when possible, I rewrote sentences so they don't begin with mobilezone. In the title, though, I have capitalized the first letter. -->
-
-<!-- Line 52 should begin with a verb to sync with the rest of the list. I'm unsure what that verb should be. -->
+<!-- Don't you hate it when companies make our lives harder by having an all-lowercase name? LOL. Beginning a title or sentence with a lowercase word looks wrong. The style guide says to "always capitalize the first word of a new sentence. Rewrite sentences that start with a word that's always lowercase." So when possible, I rewrote sentences so they don't begin with mobilezone. If you don't like the change I made to the title and want to use the original, please capitalize the M in mobilezone. Can you also capitalize that first letter in the TOC? -->
 
 
-# mobilezone modernizes service delivery using Microsoft Copilot Studio
+# With Microsoft Copilot Studio, mobilezone modernizes service delivery
 
 One of Switzerland’s most recognizable telecommunications retailers, [mobilezone](https://www.mobilezone.ch/), set out to modernize how it supports its many customers and employees. The company serves hundreds of thousands of customers across more than 125 stores and through its digital channels. With rising customer expectations and increasing service volumes, the company needed to improve its support systems.
 
@@ -49,7 +47,7 @@ Mia is a customer service and sales agent embedded directly on mobilezone's [web
 
 Key capabilities:
 
-- Consulting device and subscription choices
+- Assists with device and subscription choices
 - Answers questions about store hours, subscriptions, contract details, devices, and order or delivery status
 - Retrieves real-time offers from Dynamics 365 Commerce
 - Uses knowledge articles stored in Dynamics 365 Customer Service
