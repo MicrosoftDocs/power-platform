@@ -21,7 +21,7 @@ Relaunch of the Power Platform adoption guidance.
 
 ## April 2025
 
-Launch of the [Microsoft Power Platform and Copilot Studio Architecture Center](../../architecture/whats-new.md).
+Launch of the [Microsoft Power Platform and Copilot Studio Architecture Center](../../architecture/index.yml).
 
 ## June 2025
 
@@ -31,7 +31,7 @@ Added [Power Automate coding guidelines for desktop flows](/power-automate/guida
 
 The ALM Accelerator is deprecated and is no longer supported. Use [Pipelines in Power Platform](/power-platform/alm/pipelines) to bring ALM automation capabilities to Power Platform and Dynamics 365 services. Pipelines can be used with [source code integration](/power-platform/alm/git-integration/overview) or extended to integrate with other providers.
 
-The *Enterprise security with Power Platform* whitepaper was removed, as all relevant content moved to [Security overview and strategy](secure-overview.md).
+The *Enterprise security with Power Platform* whitepaper was removed, as all relevant content moved to the [Security](secure-overview.md) pillar.
 
 ## Customer case studies
 
@@ -48,8 +48,8 @@ The *Enterprise security with Power Platform* whitepaper was removed, as all rel
 
 ### FY26 Q2
 
-- [La Trobe University supercharges academic productivity with AI and Copilot Studio](../case-studies/latrobe-supercharges.md)
 - [The City of Montréal enhances citizen engagement with Copilot Studio](../case-studies/city-montreal-citizen-engagement.md)
+- [La Trobe University supercharges academic productivity with AI and Copilot Studio](../case-studies/latrobe-supercharges.md)
 
 ### FY26 Q1
 
