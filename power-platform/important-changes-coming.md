@@ -27,7 +27,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Deprecation of Test Engine
 
-Effective May 2026, Test Engine is deprecated. The documentation and GitHub repository are no longer maintained by Microsoft and will be removed in a future release.
+Effective April 2026, Test Engine is deprecated. The documentation and GitHub repository are no longer maintained by Microsoft and will be removed in a future release.
 
 ### Why is this needed?
 
