@@ -1,5 +1,5 @@
 ---
-title: "Dataverse and Connector Simulation with Test Engine (preview)"
+title: "Dataverse and Connector Simulation with Test Engine (deprecated)"
 description: "Discusses the ability to simulate interaction with Dataverse and Connectors using Power Fx functions"
 author: caburk
 ms.author: caburk
@@ -11,7 +11,7 @@ contributors:
 - grant-archibald-ms
 ---
 
-# Dataverse and connector simulation with Test Engine (preview)
+# Dataverse and connector simulation with Test Engine (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

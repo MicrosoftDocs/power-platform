@@ -1,5 +1,5 @@
 ---
-title: "Authentication Guide for Power Apps Test Engine (preview)"
+title: "Authentication Guide for Power Apps Test Engine (deprecated)"
 description: "Step-by-step guide for setting up authentication in Test Engine"
 author: caburk
 ms.author: caburk
@@ -12,7 +12,7 @@ contributors:
  - grant-archibald-ms
 ---
 
-# Authentication guide for Power Apps Test Engine (preview)
+# Authentication guide for Power Apps Test Engine (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

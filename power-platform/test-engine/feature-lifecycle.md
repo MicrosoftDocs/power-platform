@@ -1,5 +1,5 @@
 ---
-title: "Test Engine feature lifecycle (preview)"
+title: "Test Engine feature lifecycle (deprecated)"
 description: "Describes how Test Engine features progress from open source to preview to general availability"
 author: caburk
 ms.author: caburk
@@ -12,7 +12,7 @@ contributors:
  - grant-archibald-ms
 ---
 
-# Test Engine feature lifecycle (preview)
+# Test Engine feature lifecycle (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

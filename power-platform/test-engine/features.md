@@ -1,5 +1,5 @@
 ---
-title: Power Apps Test Engine features (preview)
+title: Power Apps Test Engine features (deprecated)
 description: Summary of Power Apps Test Engine features.
 author: caburk
 ms.author: caburk
@@ -11,7 +11,7 @@ contributors:
 - grant-archibald-ms
 ---
 
-# Power Apps Test Engine features (preview)
+# Power Apps Test Engine features (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

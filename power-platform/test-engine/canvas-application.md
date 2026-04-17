@@ -1,5 +1,5 @@
 ---
-title: "Test canvas applications with Test Engine (preview)"
+title: "Test canvas applications with Test Engine (deprecated)"
 description: "Learn how to test Power Apps Canvas applications using Test Engine"
 author: caburk
 ms.author: caburk
@@ -12,7 +12,7 @@ contributors:
  - grant-archibald-ms
 ---
 
-# Test canvas applications with Test Engine (preview)
+# Test canvas applications with Test Engine (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 
@@ -29,7 +29,7 @@ Test plans are defined using [YAML](https://yaml.org/spec/1.2.2/) format. You ca
 
 ### Author your own test plan
 
-Create a yaml file using the test plan schema explained in [Power Apps Test Engine YAML format (preview)](yaml.md).
+Create a yaml file using the test plan schema explained in [Power Apps Test Engine YAML format (deprecated)](yaml.md).
 
 When choosing authoring your own test plan, you can take advantage of the following features:
 

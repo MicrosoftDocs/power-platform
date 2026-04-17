@@ -26,13 +26,16 @@ For deprecation information of other products, see [Other deprecation articles](
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
 ## Deprecation of Test Engine
+
 Effective May 2026, Test Engine is deprecated. The documentation and GitHub repository are no longer maintained by Microsoft and will be removed in a future release.
 
 ### Why is this needed?
+
 Test Engine has near-zero usage and failed to meet customer needs in an evolving AI landscape. The Power Fx implementation created unnecessary limitations that are avoided if using Playwright directly (Test Engine is built on Playwright). 
 
 ### Replacement feature
-The new Playwright samples for Power Platform guide the use of Playwright for Power Platform test automation. These practical examples resemple how Microsoft tests first-party applications internally, with best-practice guidance baked in. 
+
+The [Power Platform Playwright samples](developer/playwright-samples/overview.md) guide the use of Playwright for Power Platform test automation. These practical examples resemble how Microsoft tests first-party applications internally, with best-practice guidance baked in. 
 
 ## Deprecation of Editable Grid and Power Apps Read-Only Grid controls
 Effective March 2026, the Editable Grid control and the Power Apps Read-Only Grid control are deprecated in model-driven apps. These controls will continue to function until further notice, after which they are no longer supported. These controls will receive critical security fixes only and no new features.
@@ -93,11 +96,11 @@ Removing detailed field-level values from Purview-bound audit events reduces the
 ### Impact
 If you have existing monitoring, alerting, or reporting solutions that depend on before-and-after field change values within Purview audit events, those solutions will stop working once this deprecation takes effect. Examples include:
 
--	Rules that compare old/new values for anomaly detection.
+-   Rules that compare old/new values for anomaly detection.
 
--	Data pipelines that analyze field-level deltas.
+-   Data pipelines that analyze field-level deltas.
 
--	Custom compliance checks running in Purview.
+-   Custom compliance checks running in Purview.
 
 These scenarios must be updated to avoid disruption.
 
@@ -105,8 +108,8 @@ These scenarios must be updated to avoid disruption.
 Update your monitoring or downstream workflows to retrieve detailed field-level audit information directly from Dataverse, not from Purview. Dataverse continues to store and expose before-and-after field changes through its native audit APIs and tables.
 
 ### More information
--	No changes are required if your solution uses Dataverse audit logs as the source of truth.
--	Purview continues receiving audit event metadata (such as who made changes, the date of the changes, and the tables affected), but field-level value changes will no longer be included.
+-   No changes are required if your solution uses Dataverse audit logs as the source of truth.
+-   Purview continues receiving audit event metadata (such as who made changes, the date of the changes, and the tables affected), but field-level value changes will no longer be included.
 
 ## Deprecation of Copilot chat in model-driven apps
 Starting January 2026, [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) in environments not [enabled for Dynamics 365 apps](admin/create-environment.md#create-an-environment-with-a-database) will be deprecated. This feature was available as a preview feature in Power Apps.

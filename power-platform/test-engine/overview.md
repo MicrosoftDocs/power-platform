@@ -1,5 +1,5 @@
 ---
-title: Power Apps Test Engine overview (preview)
+title: Power Apps Test Engine overview (deprecated)
 description: Learn about how you can automate tests of standalone canvas apps using the Power Apps Test Engine within Power Platform CLI.
 author: caburk
 ms.author: caburk
@@ -11,7 +11,7 @@ contributors:
 - grant-archibald-ms
 ---
 
-# Power Apps Test Engine overview (preview)
+# Power Apps Test Engine overview (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

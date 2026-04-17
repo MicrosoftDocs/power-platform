@@ -1,5 +1,5 @@
 ---
-title: "Create a C# Power Fx test function (preview)"
+title: "Create a C# Power Fx test function (deprecated)"
 description: "Describes the creating Power Fx functions using C# in Test Engine"
 author: caburk
 ms.author: caburk
@@ -11,7 +11,7 @@ contributors:
 - grant-archibald-ms
 ---
 
-# Create a C# Power Fx test function (preview)
+# Create a C# Power Fx test function (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

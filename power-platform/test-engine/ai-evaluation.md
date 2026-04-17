@@ -1,5 +1,5 @@
 ---
-title: Testing nondeterministic AI in Power Apps (preview)
+title: Testing nondeterministic AI in Power Apps (deprecated)
 description: Learn how to test AI components and verify nondeterministic outputs in Power Platform applications
 author: caburk
 ms.author: caburk
@@ -11,7 +11,7 @@ contributors:
  - grant-archibald-ms
 ---
 
-# Testing nondeterministic AI in Power Apps (preview)
+# Testing nondeterministic AI in Power Apps (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Test Dataverse extensions with Test Engine (preview)"
+title: "Test Dataverse extensions with Test Engine (deprecated)"
 description: "Describes how to perform integration testing of Dataverse extensions with Test Engine."
 author: caburk
 ms.author: caburk
@@ -11,7 +11,7 @@ contributors:
 - grant-archibald-ms
 ---
 
-# Test Dataverse extensions with Test Engine (preview)
+# Test Dataverse extensions with Test Engine (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Test Engine module functions reference (preview)
+title: Test Engine module functions reference (deprecated)
 description: Find available test engine module functions you can use.
 author: caburk
 ms.author: caburk
@@ -11,7 +11,7 @@ contributors:
 - grant-archibald-ms
 ---
 
-# Test Engine module functions reference (preview)
+# Test Engine module functions reference (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

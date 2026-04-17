@@ -14,7 +14,7 @@ contributors:
  - grant-archibald-ms
 ---
 
-# Power Apps Test Engine YAML format (preview)
+# Power Apps Test Engine YAML format (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 
@@ -255,8 +255,8 @@ $env:user1Email = "someone@example.com"
 
 ### See also
 
-[Power Apps Test Engine overview (preview)](overview.md)  
-[Power Apps Test Engine Power Fx functions (preview)](powerfx.md)  
+[Power Apps Test Engine overview (deprecated)](overview.md)  
+[Power Apps Test Engine Power Fx functions (deprecated)](powerfx.md)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Authentication security architecture in Test Engine (preview)"
+title: "Authentication security architecture in Test Engine (deprecated)"
 description: "Technical overview of authentication security implementation in Test Engine"
 author: caburk
 ms.author: caburk
@@ -11,7 +11,7 @@ contributors:
  - grant-archibald-ms
 ---
 
-# Authentication security architecture in Test Engine (preview)
+# Authentication security architecture in Test Engine (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

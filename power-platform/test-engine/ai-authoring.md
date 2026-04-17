@@ -1,5 +1,5 @@
 ---
-title: AI-assisted test authoring with GitHub Copilot (preview)
+title: AI-assisted test authoring with GitHub Copilot (deprecated)
 description: Learn how to use GitHub Copilot and AI tools to author tests for Power Platform applications
 author: caburk
 ms.author: caburk
@@ -11,7 +11,7 @@ contributors:
 - grant-archibald-ms
 ---
 
-# AI-assisted test authoring with GitHub Copilot (preview)
+# AI-assisted test authoring with GitHub Copilot (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

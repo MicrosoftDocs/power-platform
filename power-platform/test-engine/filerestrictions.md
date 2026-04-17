@@ -1,5 +1,5 @@
 ---
-title: "File access restrictions for Test Engine (preview)"
+title: "File access restrictions for Test Engine (deprecated)"
 description: "Learn about the file restrictions for Test Engine in different operating systems"
 author: snamilikonda
 ms.author: snamilikonda
@@ -11,7 +11,7 @@ contributors:
 - grant-archibald-ms
 ---
 
-# File access restrictions for Test Engine (preview)
+# File access restrictions for Test Engine (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

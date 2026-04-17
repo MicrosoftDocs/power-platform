@@ -1,5 +1,5 @@
 ---
-title: "Use Power Fx namespaces in testing (preview)"
+title: "Use Power Fx namespaces in testing (deprecated)"
 description: "Describes the Power Fx namespaces used in Test Engine"
 author: caburk
 ms.author: caburk
@@ -12,7 +12,7 @@ contributors:
  - grant-archibald-ms
 ---
 
-# Use Power Fx namespaces in testing (preview)
+# Use Power Fx namespaces in testing (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Test Engine and Playwright Integration (preview)
+title: Test Engine and Playwright Integration (deprecated)
 description: Learn how Test Engine applies Playwright to provide robust browser automation capabilities.
 author: caburk
 ms.author: caburk
@@ -11,7 +11,7 @@ contributors:
 - grant-archibald-ms
 ---
 
-# Test Engine and Playwright integration (preview)
+# Test Engine and Playwright integration (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

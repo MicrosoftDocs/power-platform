@@ -1,5 +1,5 @@
 ---
-title: "Authentication in Power Apps Test Engine (preview)"
+title: "Authentication in Power Apps Test Engine (deprecated)"
 description: "Simple guide to authentication options in Test Engine"
 author: caburk
 ms.author: caburk
@@ -12,7 +12,7 @@ contributors:
  - grant-archibald-ms
 ---
 
-# Authentication in Power Apps Test Engine (preview)
+# Authentication in Power Apps Test Engine (deprecated)
 
 > [!NOTE]
 > [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]

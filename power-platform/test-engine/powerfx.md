@@ -1,5 +1,5 @@
 ---
-title: "Power Apps Test Engine Power Fx (preview)"
+title: "Power Apps Test Engine Power Fx (deprecated)"
 description: "Describes Power Fx you can use with Power Apps Test Engine."
 author: caburk
 ms.author: caburk
@@ -11,7 +11,7 @@ contributors:
 - grant-archibald-ms
 ---
 
-# Power Apps Test Engine Power Fx (preview)
+# Power Apps Test Engine Power Fx (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 > 

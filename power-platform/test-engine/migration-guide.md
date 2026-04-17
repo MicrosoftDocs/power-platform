@@ -1,5 +1,5 @@
 ---
-title: "Test command migration process for Test Engine (preview)"
+title: "Test command migration process for Test Engine (deprecated)"
 description: "Learn about the process of transitioning Test command between versions of Test Engine"
 author: snamilikonda
 ms.author: snamilikonda
@@ -11,7 +11,7 @@ contributors:
  - grant-archibald-ms
 ---
 
-# Migration Guide (preview)
+# Migration Guide (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 
@@ -43,5 +43,5 @@ Consider the following changes to migrate:
 ## Other Resources
 
 [Power Apps Test Engine release notes](https://github.com/microsoft/PowerApps-TestEngine/releases)  
-[Power Apps Test Engine YAML format (preview)](yaml.md)  
-[Power Apps Test Engine Power Fx functions (preview)](powerfx.md)
+[Power Apps Test Engine YAML format (deprecated)](yaml.md)  
+[Power Apps Test Engine Power Fx functions (deprecated)](powerfx.md)

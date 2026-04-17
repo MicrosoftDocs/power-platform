@@ -1,5 +1,5 @@
 ---
-title: "Understanding Test Engine providers (preview)"
+title: "Understanding Test Engine providers (deprecated)"
 description: "Comprehensive explanation of providers in Power Apps Test Engine"
 author: caburk
 ms.author: caburk
@@ -12,7 +12,7 @@ contributors:
  - grant-archibald-ms
 ---
 
-# Understanding Test Engine providers (preview)
+# Understanding Test Engine providers (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

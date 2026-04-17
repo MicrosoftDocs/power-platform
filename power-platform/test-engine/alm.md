@@ -1,5 +1,5 @@
 ---
-title: ALM in Power Platform with Test Engine (preview)
+title: ALM in Power Platform with Test Engine (deprecated)
 description: Learn how to integrate automated testing into your Application Lifecycle Management (ALM) with Test Engine
 author: caburk
 ms.author: caburk
@@ -12,7 +12,7 @@ contributors:
  - grant-archibald-ms
 ---
 
-# ALM in Power Platform with Test Engine (preview)
+# ALM in Power Platform with Test Engine (deprecated)
 
 [!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
 

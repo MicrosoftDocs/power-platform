@@ -7,4 +7,4 @@ ms.subservice: guidance
 ---
 
 > [!NOTE]
-> **Test Engine is deprecated** and will be removed in a future release. Use [Power Platform Playwright Samples](/power-platform/playwright-samples/overview.md) for test automation capabilities in Power Platform and Dynamics 365 services. 
+> **Test Engine is deprecated** and will be removed in a future release. Use [Power Platform Playwright samples](../developer/playwright-samples/overview.md) for test automation capabilities in Power Platform and Dynamics 365 services. 
