@@ -4,7 +4,7 @@ description: Learn how to use GitHub Copilot and AI tools to author tests for Po
 author: caburk
 ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: article
 contributors:

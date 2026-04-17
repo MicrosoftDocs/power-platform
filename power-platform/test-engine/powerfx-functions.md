@@ -4,7 +4,7 @@ description: "Describes Power Fx functions you can use with Power Apps Test Engi
 author: caburk
 ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/27/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
