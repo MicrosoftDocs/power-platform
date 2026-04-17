@@ -1,5 +1,5 @@
 ---
-title: With Microsoft Copilot Studio, mobilezone modernizes service delivery
+title: Telecom provider mobilezone modernizes service delivery using Microsoft Copilot Studio
 description: Learn how mobilezone improved customer satisfaction and internal efficiency by deploying AI agents Mia and Supporto using Microsoft Copilot Studio.
 #customer intent: As a Power Platform user, I want to learn how to implement AI agents so that I can improve customer service and internal IT support efficiency.
 author: carcla
@@ -10,10 +10,7 @@ ms.date: 04/14/2026
 ms.topic: overview
 ---
 
-<!-- Don't you hate it when companies make our lives harder by having an all-lowercase name? LOL. Beginning a title or sentence with a lowercase word looks wrong. The style guide says to "always capitalize the first word of a new sentence. Rewrite sentences that start with a word that's always lowercase." So when possible, I rewrote sentences so they don't begin with mobilezone. If you don't like the change I made to the title and want to use the original, please capitalize the M in mobilezone. Can you also capitalize that first letter in the TOC? -->
-
-
-# With Microsoft Copilot Studio, mobilezone modernizes service delivery
+# Telecom provider mobilezone modernizes service delivery using Microsoft Copilot Studio
 
 One of Switzerland’s most recognizable telecommunications retailers, [mobilezone](https://www.mobilezone.ch/), set out to modernize how it supports its many customers and employees. The company serves hundreds of thousands of customers across more than 125 stores and through its digital channels. With rising customer expectations and increasing service volumes, the company needed to improve its support systems.
 
@@ -149,7 +146,7 @@ Workflow for Supporto:
 
 ## Implementation approach
 
-The business began its Copilot Studio journey with the internal IT support agent, Supporto, as the first production use case. The scenario was low risk but high value, as it impacted every employee and provided a controlled environment to introduce agent-based interactions. Beyond delivering immediate operational value, this first rollout helped teach the organization how to "talk to" an agent.
+The company began its Copilot Studio journey with the internal IT support agent, Supporto, as the first production use case. The scenario was low risk but high value, as it impacted every employee and provided a controlled environment to introduce agent-based interactions. Beyond delivering immediate operational value, this first rollout helped teach the organization how to "talk to" an agent.
 
 A key design decision during implementation was the introduction of an MCP server to manage access to product, offer, and knowledge data. The MCP server enables data to be exposed to the agents in a structured and curated way, ensuring that information unsuitable for customers, such as internal cost or margin details, remains protected. The team didn't explore alternative approaches for data retrieval in depth, as many early ideas proved impractical during the design phase due to technical or business constraints.
 
