@@ -13,7 +13,7 @@ contributors:
 
 # AI-assisted test authoring with GitHub Copilot (deprecated)
 
-[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Creating comprehensive test plans for Power Platform applications can be time-consuming, especially for complex scenarios. AI-assisted authoring tools like GitHub Copilot can significantly accelerate this process by generating test templates, suggesting test cases, and automating boilerplate code creation.
 

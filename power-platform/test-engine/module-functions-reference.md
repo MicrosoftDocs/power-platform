@@ -13,7 +13,7 @@ contributors:
 
 # Test Engine module functions reference (deprecated)
 
-[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 This table provides an overview of the various modules available in the Power Apps Test Engine and their specialized functions.
 

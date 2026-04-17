@@ -13,7 +13,7 @@ contributors:
 
 # Dataverse and connector simulation with Test Engine (deprecated)
 
-[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 The ability to simulate interaction with Dataverse and Power Platform connectors can play an important role in testing your low code apps by allowing you to define test scenarios without the need for actual data.
 

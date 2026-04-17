@@ -14,7 +14,7 @@ contributors:
 
 # Power Apps Test Engine samples
 
-[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 This page provides an overview of the sample projects available in the Power Apps Test Engine repository. These samples demonstrate various testing capabilities and scenarios to help you understand how to create effective tests for your Power Platform solutions.
 

@@ -13,7 +13,7 @@ contributors:
 
 # Power Apps Test Engine Power Fx Functions (deprecated)
 
-[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Test engine uses these existing PowerFx functions:
 

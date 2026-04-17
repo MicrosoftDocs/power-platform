@@ -16,7 +16,7 @@ contributors:
 
 # Using the Model Context Protocol server with Test Engine (deprecated)
 
-[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Power Apps Test Engine includes a Model Context Protocol (MCP) server implementation that enhances test creation through deterministic analysis of your applications. This guide explains how to use this capability to generate more accurate, contextually relevant tests.
 

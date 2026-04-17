@@ -14,7 +14,7 @@ contributors:
 
 # Authentication guide for Power Apps Test Engine (deprecated)
 
-[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 This guide provides step-by-step instructions for setting up authentication in Test Engine. For a quick overview of authentication options, see [Authentication in Test Engine](./authentication.md).
 

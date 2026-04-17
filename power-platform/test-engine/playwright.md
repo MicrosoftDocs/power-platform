@@ -13,7 +13,7 @@ contributors:
 
 # Test Engine and Playwright integration (deprecated)
 
-[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 ## Overview
 

@@ -13,7 +13,7 @@ contributors:
 
 # Test Dataverse extensions with Test Engine (deprecated)
 
-[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 This article explains how to create integration tests with Dataverse. This functionality applies the Power Fx capability to connect with Dataverse tables.
 

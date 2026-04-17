@@ -14,7 +14,7 @@ contributors:
 
 # Test model-driven applications with Test Engine (deprecated)
 
-[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Testing your model-driven application with [Test Engine](./overview.md) requires the following steps:
 

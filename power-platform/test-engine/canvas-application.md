@@ -14,7 +14,7 @@ contributors:
 
 # Test canvas applications with Test Engine (deprecated)
 
-[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Testing canvas apps with [Test Engine](./overview.md) requires the following steps:
 

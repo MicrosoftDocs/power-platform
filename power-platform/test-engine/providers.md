@@ -14,7 +14,7 @@ contributors:
 
 # Understanding Test Engine providers (deprecated)
 
-[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Test Engine uses a provider-based architecture that allows it to support testing across different application types. Each provider is optimized for a specific application type, allowing for efficient test automation while providing a consistent testing experience.
 

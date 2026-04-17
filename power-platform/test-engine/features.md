@@ -13,7 +13,7 @@ contributors:
 
 # Power Apps Test Engine features (deprecated)
 
-[!INCLUDE [guidance-deprecate-test-engine](../../includes/guidance-deprecate-test-engine.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Power Apps Test Engine provides a comprehensive set of features for effectively testing Power Platform solutions. This page details the capabilities available to help you build robust test suites for your Power Platform applications.
 
