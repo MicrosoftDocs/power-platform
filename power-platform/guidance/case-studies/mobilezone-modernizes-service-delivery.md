@@ -50,7 +50,7 @@ Key capabilities:
 - Uses knowledge articles stored in Dynamics 365 Customer Service
 - Supports German, French, Italian, and English based on website language
 - Requests clarifying details to improve accuracy
-- Escalates complex or sensitive cases to human agents 
+- Escalates complex or sensitive cases to human agents
 
 The following image shows Mia speaking Italian.
 
