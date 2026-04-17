@@ -5,6 +5,7 @@ description: Learn how Concentrix used AI and Power Platform to streamline invoi
 author: carcla
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
+ms.subservice: case-study
 ms.date: 03/17/2026
 ms.topic: overview
 ---
