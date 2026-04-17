@@ -30,17 +30,17 @@ Choose locators in this order, from most to least preferred:
 | 3 | Placeholder | `getByPlaceholder('Search')` | Stable for inputs; visible to screen readers |
 | 4 | Test ID | `getByTestId('create-blank-canvas-app')` | Explicit, purpose-built hook for tests |
 | 5 | Data attribute | `locator('[data-control-name="Gallery1"]')` | Power Platform-specific; stable in canvas apps |
-| 6 | CSS class / id | `locator('.ms-Button')` | Use only when no semantic option exists; fragile |
+| 6 | CSS class / ID | `locator('.ms-Button')` | Use only when no semantic option exists; fragile |
 
 ---
 
 ## Playwright built-in semantic locators
 
-Playwright exposes these directly on `page` and `locator`. Use them first when targeting standard HTML and Fluent UI elements.
+Playwright exposes these locators directly on `page` and `locator`. Use them first when targeting standard HTML and Fluent UI elements.
 
 ### getByRole
 
-Selects by ARIA role and optional accessible name:
+Selects elements by ARIA role and optional accessible name:
 
 ```typescript
 // Click a button by its label
@@ -105,7 +105,7 @@ await page.getByPlaceholder('Enter a name or email address').fill('test@contoso.
 
 ### getByTestId
 
-Selects by `data-testid` attribute (the toolkit uses `data-test-id` in some places — both work via `getByTestId` or CSS):
+Selects elements by `data-testid` attribute. The toolkit uses `data-test-id` in some places. Both attributes work with `getByTestId` or CSS:
 
 ```typescript
 // Using Playwright getByTestId (maps to data-testid)
@@ -117,7 +117,7 @@ await page.locator('[data-test-id="Dialog.Accept"]').click();
 
 ---
 
-## BaseLocators — build custom page objects
+## BaseLocators—build custom page objects
 
 `BaseLocators` is an abstract class that wraps all Playwright semantic locators. Extend it to build page-specific locator classes, keeping selectors in one place.
 
@@ -171,12 +171,12 @@ The following table lists the protected methods available in `BaseLocators` and 
 | `getByPlaceholder(placeholder)` | `page.getByPlaceholder()` |
 | `getByTestId(testId)` | `page.getByTestId()` |
 | `getByAriaLabel(label)` | `page.getByLabel()` (aria-label path) |
-| `locator(selector)` | `page.locator()` — CSS fallback |
+| `locator(selector)` | `page.locator()` CSS fallback |
 | `chain(parent, child)` | Scope a child locator inside a parent |
 
 ---
 
-## LocatorUtils — build CSS selector strings
+## LocatorUtils—build CSS selector strings
 
 `LocatorUtils` is a static helper class that generates CSS selector strings. Use it when you need to build a selector dynamically and pass it to `page.locator()`.
 
@@ -226,7 +226,7 @@ The following table lists the available `LocatorUtils` methods and the CSS selec
 
 ---
 
-## PowerAppsPageSelectors — Power Apps selectors
+## PowerAppsPageSelectors—Power Apps selectors
 
 `PowerAppsPageSelectors` is a static object of CSS selector strings organized by portal surface. Use it when writing tests that interact with the [Power Apps](https://make.powerapps.com) site (not the running app).
 
@@ -250,7 +250,7 @@ await page.locator(
 
 The following table describes the sections available in `PowerAppsPageSelectors`.
 
-| Section | What it covers |
+| Section | Description |
 |---|---|
 | `Root` / `PageHeader` / `MainNavigation` | Top-level page chrome |
 | `AppsPage` | App list grid, New app button, filter buttons |
@@ -289,9 +289,9 @@ await portalLocators.canvasDesignerIframe.waitFor({ state: 'visible' });
 
 ---
 
-## ModelDrivenAppLocators — Runtime selectors
+## ModelDrivenAppLocators—Runtime selectors
 
-`ModelDrivenAppLocators` covers the model-driven app runtime: the sitemap, grid, form, command bar, and dialogs. The [`GridComponent`](api-reference.md#gridcomponent)  and [`FormComponent`](api-reference.md#formcomponent)  use these internally. Use them directly only when you need a selector that the component doesn't expose.
+`ModelDrivenAppLocators` covers the model-driven app runtime: the sitemap, grid, form, command bar, and dialogs. The [`GridComponent`](api-reference.md#gridcomponent) and [`FormComponent`](api-reference.md#formcomponent) use these selectors internally. Use them directly only when you need a selector that the component doesn't expose.
 
 ```typescript
 import { ModelDrivenAppLocators } from 'power-platform-playwright-toolkit';
@@ -326,7 +326,7 @@ await deleteDialog.locator(ModelDrivenAppLocators.DeleteDialog.DeleteButton).cli
 
 ---
 
-## CanvasAppLocators — Studio selectors
+## CanvasAppLocators—Studio selectors
 
 `CanvasAppLocators` covers the canvas app studio interface for tests that edit apps, not play them. The runtime canvas app is accessed through `iframe[name="fullscreen-app-host"]` using `data-control-name` attributes, not through these studio selectors.
 
@@ -370,9 +370,9 @@ getCanvasDataTestId('my-hook')      // => [data-testid="my-hook"]
 
 ---
 
-## iframe scoping
+## Iframe scoping
 
-All canvas app play-mode selectors must be scoped to the canvas iframe to match elements correctly:
+To correctly match elements, scope all canvas app play-mode selectors to the canvas iframe:
 
 ```typescript
 // Get the frame locator
@@ -395,7 +395,7 @@ const item = gallery
 ```
 
 > [!IMPORTANT]
-> Never call `page.locator()` directly for canvas controls — the selectors won't resolve because the controls live inside the iframe. Always start from `canvasFrame.locator()` or `canvasFrame.getBy*()`.
+> Never call `page.locator()` directly for canvas controls. The selectors don't resolve because the controls live inside the iframe. Always start from `canvasFrame.locator()` or `canvasFrame.getBy*()`.
 
 ---
 
@@ -438,7 +438,7 @@ Use the following table to diagnose and fix common selector problems.
 | `Timeout waiting for locator` in canvas app | Not scoped to iframe | Use `canvasFrame.locator()` instead of `page.locator()` |
 | `nth-child` breaks after grid filter | [AG Grid](https://www.ag-grid.com/) rebuilds rows | Use `[row-index="${n}"]` (built into [`GridComponent`](api-reference.md#gridcomponent) ) |
 | `getByRole('button')` matches the wrong button | Multiple buttons with same role | Add `{ name: 'exact label' }` to narrow by accessible name |
-| Canvas control not found by `data-control-name` | App was regenerated | Re-inspect in DevTools; control name may have changed |
+| Canvas control not found by `data-control-name` | App was regenerated | Reinspect in DevTools; control name might have changed |
 | `getByLabel` returns no match | Input has no associated label | Use `getByPlaceholder()` or `getByAriaLabel()` instead |
 
 ## Next steps
