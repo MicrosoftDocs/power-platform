@@ -7,9 +7,9 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: concept-article
-ms.date: 11/19/1015
+ms.date: 11/18/2025
 search.audienceType: 
-  - admin
+- admin
 ---
 
 # Delete unlicensed or removed Microsoft Entra group members 
