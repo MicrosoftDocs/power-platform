@@ -29,7 +29,7 @@ Added [Power Automate coding guidelines for desktop flows](/power-automate/guida
 
 ## February 2026
 
-The ALM Accelerator is deprecated and is no longer supported. Use [Pipelines in Power Platform](/power-platform/alm/pipelines) to bring ALM automation capabilities to Power Platform and Dynamics 365 services. Pipelines can be used with [source code integration](/power-platform/alm/git-integration/overview) or extended to integrate with other providers.
+The ALM Accelerator is deprecated and no new features are being added. Use [Pipelines in Power Platform](/power-platform/alm/pipelines) to bring ALM automation capabilities to Power Platform and Dynamics 365 services. Pipelines can be used with [source code integration](/power-platform/alm/git-integration/overview) or extended to integrate with other providers.
 
 The *Enterprise security with Power Platform* whitepaper was removed, as all relevant content moved to the [Security](secure-overview.md) pillar.
 
@@ -72,6 +72,6 @@ The *Enterprise security with Power Platform* whitepaper was removed, as all rel
 Learn what's new in:
 
 - [Power Platform and Copilot Studio Architecture Center](../../architecture/whats-new.md)
-- [Power Platform Well-Architected](../../well-architected/whats-new.md)
 - [Microsoft Copilot Studio guidance](/microsoft-copilot-studio/guidance/whats-new)
 - [Architecting agent solutions: Principles and patterns](/microsoft-copilot-studio/guidance/architecture/whats-new)
+- [Power Platform Well-Architected](../../well-architected/whats-new.md)
