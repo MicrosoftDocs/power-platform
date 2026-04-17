@@ -1,17 +1,19 @@
 ---
-title: Test Engine module functions reference (preview)
+title: Test Engine module functions reference (deprecated)
 description: Find available test engine module functions you can use.
 author: caburk
 ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: reference
 contributors:
 - grant-archibald-ms
 ---
 
-# Test Engine module functions reference (preview)
+# Test Engine module functions reference (deprecated)
+
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 This table provides an overview of the various modules available in the Power Apps Test Engine and their specialized functions.
 
