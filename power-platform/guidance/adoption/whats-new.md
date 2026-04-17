@@ -21,7 +21,11 @@ Relaunch of the Power Platform adoption guidance.
 
 ## April 2025
 
-Launch of the [Microsoft Power Platform and Copilot Studio Architecture Center](../architecture/whats-new.md).
+Launch of the [Microsoft Power Platform and Copilot Studio Architecture Center](../../architecture/whats-new.md).
+
+## June 2025
+
+Added [Power Automate coding guidelines for desktop flows](/power-automate/guidance/desktop-flow-coding-guidelines/).
 
 ## February 2026
 
@@ -31,7 +35,7 @@ The *Enterprise security with Power Platform* whitepaper was removed, as all rel
 
 ## Customer case studies
 
-[Real-world customer case studies](../case-studies/) provide an in-depth look at how organizations use Power Platform and Copilot Studio to drive digital transformation. Case studies are added regularly. This list highlights articles added over the past year.
+[Real-world customer case studies](../case-studies/index.md) provide an in-depth look at how organizations use Power Platform and Copilot Studio to drive digital transformation. Case studies are added regularly. This list highlights articles added over the past year.
 
 ### FY26 Q3
 
@@ -67,7 +71,7 @@ The *Enterprise security with Power Platform* whitepaper was removed, as all rel
 
 Learn what's new in:
 
-- [Power Platform and Copilot Studio Architecture Center](../architecture/whats-new.md)
-- [Power Platform Well-Architected](../well-architected/whats-new.md)
-- [Copilot Studio guidance](/microsoft-copilot-studio/guidance/whats-new)
+- [Power Platform and Copilot Studio Architecture Center](../../architecture/whats-new.md)
+- [Power Platform Well-Architected](../../well-architected/whats-new.md)
+- [Microsoft Copilot Studio guidance](/microsoft-copilot-studio/guidance/whats-new)
 - [Architecting agent solutions: Principles and patterns](/microsoft-copilot-studio/guidance/architecture/whats-new)
