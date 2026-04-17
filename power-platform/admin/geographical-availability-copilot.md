@@ -4,7 +4,7 @@ description: Learn how to turn on data movement across regions for Copilots and 
 author: mikferland-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/03/2026
+ms.date: 04/16/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: miferlan
@@ -34,6 +34,7 @@ ms.custom:
 ms.collection: 
     - bap-ai-copilot
 ms.contributors:
+  - lapeter
   - nitemp
 ---
 
@@ -109,11 +110,19 @@ To turn on data movement across regions, Bing search, Microsoft 365 services, an
     > [!NOTE]
     > If the **Move data across regions** checkbox is displayed in the **Generative AI features** pane, you must have it already selected in order to select the **Microsoft 365 services** checkbox.
 
-1. If your environment is in the EU, the **Allow flex routing during periods of peak load** checkbox is displayed:
+1. If your environment is in the European Union Data Boundary (EUDB), the **Allow flex routing during periods of peak load** checkbox is displayed.
 
-    - If the **Allow flex routing during periods of peak load** checkbox is displayed, but you can't select it, that indicates that this feature has been turned off in the Microsoft 365 admin center.
+    Flex routing lets customers in the EUDB allow large language model (LLM) inferencing to occur outside the EU Data Boundary during periods of peak demand to help maintain a consistent Copilot experience. Inferencing is the processing step when an AI model executes the prompt to produce an output or response, such as summarizing content or answering a question.
+   
+    No matter where LLM inferencing occurs, data is encrypted in transit and at rest. Data at rest continues to be stored inside the EU Data Boundary, except for limited pseudonymized data which may be stored outside the EU Data Boundary for security and operational purposes. For more information, see [Services that transfer a subset of Customer Data, pseudonymized personal data, or Professional Services Data out of the EU Data Boundary on an ongoing basis](/privacy/eudb/eu-data-boundary-ongoing-partial-transfers).
 
-    - If the **Allow flex routing during periods of peak load** checkbox is displayed, review the terms of use and select the checkbox, if desired.
+    For tenants that are managed through the Microsoft 365 admin center, the default value of the **Allow flex routing during periods of peak load** setting in the Power Platform admin center is the same as the Microsoft 365 admin center toggle, unless the **Move data across regions** setting is turned off.
+
+    - If the **Allow flex routing during periods of peak load** checkbox is visible but unavailable, it means either the feature is currently turned off in the Microsoft 365 admin center or the **Move data across regions** setting isn't enabled in the Power Platform admin center.
+
+    - Flex routing is on for all tenants excluding those customers that are categorized as Enterprise (Commercial and Public Sector) or SME&C Public Sector, but can be changed. All tenant administrators are encouraged to check their tenant's flex routing setting to ensure it aligns with their company's requirements.
+      - Select the **Allow flex routing during periods of peak load** checkbox, if desired. This setting allows LLM inferencing and the storage of associated pseudonymized data to occur outside the EU Data Boundary during periods of peak demand.
+      - If you don’t want to allow flex routing, clear the **Allow flex routing during periods of peak load** checkbox, which results in all LLM inferencing occuring inside the EU Data Boundary, even during periods of peak demand.
 
     For more information, see [Flex routing (EU and EFTA)](https://go.microsoft.com/fwlink/?linkid=2356281).
 

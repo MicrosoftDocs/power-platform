@@ -5,6 +5,7 @@ description: Learn how SCDF transformed manual processes into automated solution
 author: carcla
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
+ms.subservice: case-study
 ms.date: 03/18/2026
 ms.topic: overview
 ---

@@ -5,6 +5,7 @@ description: Design scalable and cost-effective integrations with Power Automate
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
+ms.subservice: architecture-center
 ms.date: 12/11/2025
 ms.topic: overview
 ---
