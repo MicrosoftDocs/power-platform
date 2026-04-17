@@ -54,7 +54,7 @@ This architecture automates the end-to-end invoice processing workflow:
 This use case is based on a company's approach to establishing a robust, secure, and maintainable process for integrating vendor invoices into an ERP system while minimizing manual effort.
 
 > [!NOTE]
-> A similar architectural pattern is used by Cineplex, which built a vendor invoice processing solution using Power Automate, Power Apps, AI Builder custom models, and AI prompts. Learn more in [Cineplex automates business processes with generative AI and Power Automate](/power-platform/guidance/case-studies/automate-business-processes).
+> A similar architectural pattern is used by Concentrix, which built a vendor invoice processing solution using Power Automate, Power Apps, AI Builder custom models, and AI prompts. Learn more in [Concentrix modernizes invoice processing with Power Platform and AI](/power-platform/guidance/case-studies/concentrix-invoice-processing).
 
 ### Business challenge
 
