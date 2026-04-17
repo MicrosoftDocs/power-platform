@@ -91,7 +91,9 @@ You can restore records deleted through the table relationship cascade behavior 
 ### Deleted records don't show after turning on the deleted records feature
 
 In some cases, deleted records may not appear even when the feature is enabled. Verify that the **Enable keeping deleted data for Organization** system job is turned on. Go to the Power Platform admin center, select the environment where this issue is happening, and select **Settings** > **Audit and logs** > **System jobs**. On the **All System Jobs** page, search for **Enable keeping deleted data for Organization**. Confirm that the **Status Reason** is **Succeeded**.
-Please note that **Enable keeping deleted data for Organization** is a system job that’s periodically cleaned up, so it may not be visible at a later date.
+
+> [!NOTE]
+> Note that **Enable keeping deleted data for Organization** is a system job that’s periodically cleaned up, so it may not be visible at a later date.
 
 If the **Status Reason** isn't **Succeeded** and it's been at least 30 minutes since you enabled the feature, or despite the success state appearing correct, and you're not seeing the **Restore** option for deleted records, contact a [Microsoft support representative and create a support request](get-help-support.md).
 
