@@ -4,10 +4,10 @@ description: Learn how to use the Power Platform admin center to view restore de
 author: rijoshi1
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/06/2026
+ms.date: 04/17/2026
 ms.subservice: admin
 ms.author: rijoshi
-ms.reviewer: ellenwehrle
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
@@ -23,19 +23,9 @@ ms.custom: sfi-image-nochange
 
 # Restore deleted Microsoft Dataverse table records
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 As part of the regular business processes with Microsoft Dataverse, users often delete records or transactions either manually or systematically, either planned or by accident, via system processes, single selection, multiple selections, and bulk deletion. Retrieving deleted data is hard and often records aren't always recoverable. To address this limitation, manage deleted records from this environment is available to recover table record data from most types of delete scenarios within a specified configurable time frame.
 
 Developers should read [Restore deleted records with code (preview)](/power-apps/developer/data-platform/restore-deleted-records) to learn how to interact with this feature using code.
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-> - This feature is currently being deployed and might not yet be available in your region.
-> - During **preview**, storage from deleted records isn't counted toward your organization’s capacity. Starting **GA**, this storage is counted toward your organization’s database capacity.
-> - The deleted records feature **isn't available** for [Dataverse for Teams](about-teams-environment.md), trial environments, developer environments, or default environments.
 
 ## Prerequisites
 
