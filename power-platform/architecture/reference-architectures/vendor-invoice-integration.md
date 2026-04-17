@@ -76,25 +76,25 @@ Implement a Power Automate–based XML invoice ingestion pattern that:
 
 ## Components
 
-**Email and workflow services**
+### Email and workflow services
 
 - [Power Automate cloud flow](https://azure.microsoft.com/services/developer-tools/power-automate) is a low-code workflow automation platform that orchestrates the entire invoice processing pipeline. Cloud flows execute on demand when emails arrive with attachments, making it an ideal trigger mechanism for automated invoice ingestion.
 
-**Data extraction and processing**
+### Data extraction and processing
 
 - [AI Builder custom prompt](/ai-builder/form-processing-model-overview) Extracts purchase order (PO) reference and UUID from PDF invoices if not present in XML; classifies invoice type in some scenarios.
 
-**ERP integration**
+### ERP integration
 
 - [Dynamics 365 Finance and Operations](/dynamics365/finance) is the target system where pending vendor invoices are created. The architecture uses the native Dynamics 365 connector (VendorInvoiceHeaderEntity).
 
-**Data integration and validation**
+### Data integration and validation
 
 - SharePoint online lists serve as a foundational data layer for invoice logging and exception tracking.
 
 - [Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro) virtual tables enable seamless validation with Dynamics 365 Finance and Operations.
 
-**Notification and monitoring**
+### Notification and monitoring
 
 - [Microsoft Teams](/microsoftteams) provides real-time notifications to finance personnel upon invoice processing results.
 
