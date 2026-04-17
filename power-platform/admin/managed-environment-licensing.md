@@ -3,7 +3,7 @@ title: Licensing
 description: Learn about licensing Managed Environments.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/31/2026
+ms.date: 04/16/2026
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -100,23 +100,23 @@ Administrator notifications start in March 2026, ahead of the June 2026 end user
 
 #### How can I check which users need a license?
 
-Administrators can identify users who require a license by using the Power Apps usage report in the Power Platform admin center. Complete the following steps:
+Administrators can identify users who require a license by using the [**Users requiring licenses in Managed Environments**](view-license-consumption-issues.md#additional-admin-options) Power Apps licensing report in the Power Platform admin center.
+
+> [!NOTE]
+> - The report lists users who have accessed at least one app in any Managed Environment without an appropriate license.
+> - The report shows a list of unique users based on their app launch activity in the selected month. The report excludes users who didn't launch an app in the selected month.
+> - If a user was assigned an appropriate license but hasn't launched any app since then, they'll continue to show in the report until they launch an app.
+> - The report includes details on the specific users, the environments they operate in, and the applications they use.
+
+Complete the following steps to download the report:
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Power Apps**.
 1. In the **Summary** tab, select **Download report**. The **Download license information** pane appears.
-1. From the **Usage type** list, select **Active users**.
+1. From the **Usage type** list, select **Users requiring licenses in Managed Environments**.
 1. From the **Lookback window** list, select the desired month.
 1. Select **Download report**.
-1. Filter the report by using the following columns:
-
-    - **IsManagedEnvironment** = True — to isolate users in Managed Environments.
-    - **SkuName** — filter for non-premium licenses (for example, "Office 365 E3 Developer" or any other non-premium user/per-app licenses) to identify users who don't have an appropriate license.
-
-    The report includes details on the specific users, the environments they operate in, and the applications they use.
-
-    In addition, more capabilities are planned to make it easier for administrators to identify these users.
 
 #### Can administrators assign licenses proactively?
 
