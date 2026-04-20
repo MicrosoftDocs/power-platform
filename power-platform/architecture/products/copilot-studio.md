@@ -7,16 +7,16 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 02/04/2026
+ms.date: 03/27/2026
 ---
 
 # Copilot Studio reference architectures and solution ideas
 
 Microsoft Copilot Studio is a graphical, low-code platform that allows organizations to create powerful applications and solutions that integrate advanced AI capabilities. You can use Copilot Studio to create custom agents and to extend a Microsoft 365 Copilot with your own enterprise data.
 
-Understanding Copilot Studio architecture concepts and exploring solution ideas can help you unlock new opportunities for automation, optimization, and innovation in your organization. In this article, we look at:
+Understanding Copilot Studio design and implementation concepts and exploring solution ideas can help you unlock new opportunities for automation, optimization, and innovation in your organization. In this article, we look at:
 
-- **Key concepts**: Learn about key architecture concepts that help you build robust, efficient, and maintainable solutions with Copilot Studio.
+- **Key concepts**: Learn about key pillars and responsibilities for implementing Copilot Studio projects to help you build robust, efficient, and maintainable solutions.
 
 - **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Power Apps.
 
@@ -24,15 +24,15 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 
 ## Key concepts
 
-| Title | Description |
+| Pillar | Description |
 | --- | --- |
-| [**Topic authoring best practices in Copilot Studio**](/microsoft-copilot-studio/guidance/topic-authoring-best-practices) | Learn how to create and organize topics in a way that's manageable and maintainable for your context. |
-| [**Using adaptive cards in Copilot Studio**](/microsoft-copilot-studio/guidance/adaptive-cards-overview) | Learn how to use adaptive cards in Copilot Studio to validate information from the customer, ask questions, or enhance the conversation experience. |
-| [**Pass context variables from a webpage to an agent**](/microsoft-copilot-studio/guidance/pass-context-variables-from-webpage-to-copilot) | Learn how to pass context variables from a webpage to an agent to provide tailored and more meaningful interactions with visitors to your website. |
-| [**Generative AI strategies for math and data queries**](/microsoft-copilot-studio/guidance/generative-ai-math-data-queries) | Identify strategies and set expectations when building agents that handle math and data queries. |
-| [**Generative answers based on public websites**](/microsoft-copilot-studio/guidance/generative-ai-public-websites) | Learn more about using public websites or Bing Custom Search as a knowledge source in Copilot Studio. |
-| [**Guidance for using instructions in generative mode**](/microsoft-copilot-studio/guidance/generative-mode-guidance) | Learn how to write the best instructions for your agent when it's using generative orchestration. |
-| [**Introduction to conversational experiences**](/microsoft-copilot-studio/guidance/cux-overview)| Design ideal conversational user experiences. |
+| [**Architect**](/microsoft-copilot-studio/guidance/architecture/overview) | Use principles and patterns of the Architecting agent solutions framework to develop secure and reliable agents. |
+| [**Plan**](/microsoft-copilot-studio/guidance/plan-overview) | Define the project vision, scope, success measures, risks, team roles, and technical readiness to ensure a solid foundation before building your agent. |
+| [**Implement**](/microsoft-copilot-studio/guidance/implement-overview) | Build, integrate, and publish your agent using best practices for topics, tools, orchestration, channels, and solution configuration. |
+| Adopt | Adopt an [agentic AI maturity model for successful adoption](/microsoft-copilot-studio/guidance/maturity-model-overview) and [build thriving Copilot Studio communities](/microsoft-copilot-studio/guidance/community-framework-overview). Review [real-world transformation stories](/microsoft-copilot-studio/guidance/adoption-case-studies) that demonstrate how customers are using Copilot Studio to create innovative solutions. |
+| [**Manage**](/microsoft-copilot-studio/guidance/sec-gov-intro) | Govern, secure, and operate agents at scale through environment controls, data policies, access management, monitoring, and compliance processes. |
+| [**Improve**](/microsoft-copilot-studio/guidance/improve-overview) | Continuously optimize agent performance using analytics, key performance indicators (KPIs), user feedback, and iterative refinement to increase quality and business impact. |
+| Extend | Expand agent capabilities and integrations with [Copilot Studio Kit](/microsoft-copilot-studio/guidance/kit-overview) and SDKs like the [Microsoft 365 Agents SDK](/microsoft-365-copilot/extensibility/m365-agents-sdk) and the [Microsoft Agent 365 SDK](/microsoft-agent-365/developer/). |
 
 ## Reference architectures
 
@@ -61,6 +61,7 @@ Understanding Copilot Studio architecture concepts and exploring solution ideas 
 
 - [Copilot Studio documentation](/microsoft-copilot-studio/)
 - [Copilot Studio guidance](/microsoft-copilot-studio/guidance/)
+- [Architecting agent solutions: Principles and patterns](/microsoft-copilot-studio/guidance/architecture/)
 - [Copilot Studio implementation guide](https://aka.ms/CopilotStudioImplementationGuide) (PDF)
 - [Copilot Studio resources](https://aka.ms/CopilotStudio/resources)
 - [Introduction to Microsoft Power Platform for developers](../../developer/get-started.md)

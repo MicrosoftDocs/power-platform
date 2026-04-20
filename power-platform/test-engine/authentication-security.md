@@ -1,20 +1,19 @@
 ---
-title: "Authentication security architecture in Test Engine (preview)"
+title: "Authentication security architecture in Test Engine (deprecated)"
 description: "Technical overview of authentication security implementation in Test Engine"
 author: caburk
 ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
  - grant-archibald-ms
 ---
 
-# Authentication security architecture in Test Engine (preview)
+# Authentication security architecture in Test Engine (deprecated)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 This technical document outlines the security architecture of the authentication mechanisms in Power Apps Test Engine. For user-focused guidance on selecting and configuring authentication methods, see [Authentication Guide](./authentication-guide.md).
 

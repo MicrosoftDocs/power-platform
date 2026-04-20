@@ -1,10 +1,10 @@
 ---
-title: "Understanding Test Engine providers (preview)"
+title: "Understanding Test Engine providers (deprecated)"
 description: "Comprehensive explanation of providers in Power Apps Test Engine"
 author: caburk
 ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -12,7 +12,9 @@ contributors:
  - grant-archibald-ms
 ---
 
-# Understanding Test Engine providers (preview)
+# Understanding Test Engine providers (deprecated)
+
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Test Engine uses a provider-based architecture that allows it to support testing across different application types. Each provider is optimized for a specific application type, allowing for efficient test automation while providing a consistent testing experience.
 
