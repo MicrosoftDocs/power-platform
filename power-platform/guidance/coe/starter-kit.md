@@ -5,7 +5,7 @@ description: Learn how the Microsoft Power Platform CoE Starter Kit helps organi
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 07/25/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -18,6 +18,8 @@ ms.custom:
 ---
 
 # Microsoft Power Platform Center of Excellence (CoE) Starter Kit
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 A Center of Excellence or Center of Enablement (CoE) in an organization drives innovation and improvement and brings together like-minded people with similar business goals to share knowledge and success, while providing standards, consistency, and governance to the organization. Learn more about the benefits in [Establish a Microsoft Power Platform Center of Excellence](../adoption/coe.md).
 
