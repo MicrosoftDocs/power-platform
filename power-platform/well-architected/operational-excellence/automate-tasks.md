@@ -4,7 +4,7 @@ description: Learn how to establish standards and ensure consistency by automati
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 08/15/2025
+ms.date: 04/08/2026
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -16,7 +16,7 @@ ms.topic: concept-article
 |[OE:08](checklist.md)| **Automate all tasks that don't benefit from the insight and adaptability of human intervention, are highly procedural, and have a shelf-life that yields a return on the automation investment. Prefer off-the-shelf software for automation over custom implementations where available. Treat all automation as workload components, applying Well-Architected pillars to their design and implementation.** |
 |---|---|
 
-This guide describes the recommendations for adopting automation in your workload. You can automate tasks that are repetitive and prone to human error to help your teams gain efficiency and adhere to standards. Automation enables your operations and engineering teams to be more efficient because it gives them more time to work on other improvements. Automation is a powerful tool in all aspects of workload management. Thoughtfully implement automation to empower your organization.
+This guide describes the recommendations for adopting automation in your workload. Automate tasks that are repetitive and prone to human error to help your teams gain efficiency and adhere to standards. Automation enables your operations and engineering teams to be more efficient because it gives them more time to work on other improvements. Automation is a powerful tool in all aspects of workload management. Thoughtfully implement automation to empower your organization.
 
 ## Key design strategies
 
@@ -56,7 +56,7 @@ Adopt automation throughout your entire workload life cycle, from development to
 
 ### Choose an appropriate automation tool
 
-Developing your own automation in-house is time-intensive and can introduce management burden to your development team. They need to maintain an in-house automation tool like they do any other in-house software. It's recommended that you use off-the-shelf tools whenever they can meet your needs. Between commercial, open source, and cloud platform tools, there are many options available. It's likely that you'll use a variety of tools to build the automation that you need. Reflect on the tasks that you plan to address with automation, and invest in the tools that can specifically address those tasks. Don't procure tools that you generally prefer and then consider the tasks afterward.
+Developing your own automation in-house is time-intensive and can introduce management burden to your development team. They need to maintain an in-house automation tool like they do any other in-house software. It's recommended that you use off-the-shelf tools whenever they can meet your needs. Between commercial, open source, and cloud platform tools, there are many options available. It's likely that you'll use various tools to build the automation that you need. Reflect on the tasks that you plan to address with automation, and invest in the tools that can specifically address those tasks. Don't procure tools that you generally prefer and then consider the tasks afterward.
 
 ### Integrate automation into your workload
 
@@ -70,7 +70,7 @@ Complex automation that requires a high degree of maintenance can be difficult f
 
 Be thoughtful about using manual processes. If you decide not to automate an operation, thoroughly document the manual process by creating a step-by-step checklist for operators. This practice reduces the chances of human error, like an operator mistakenly running the wrong process. Documentation also helps you design automation for that process in the future.
 
-When you use a hybrid manual and automated approach, you need to be especially careful. If a script runs most of a process but then defers to a human for a specific part or decision, it's important that you give the person the necessary context and information to make an informed decision.
+When you use a hybrid manual and automated approach, you need to be especially careful. If a script runs most of a process and then defers a specific step or decision to a human, give that person the necessary context and information to make an informed decision.
 
 ## Power Platform facilitation
 
@@ -78,19 +78,19 @@ When you use a hybrid manual and automated approach, you need to be especially c
 
 [Power Automate](https://azure.microsoft.com/products/power-automate/) enables you to automate Power Platform workloads; for example, custom digital process automation to handle workload tasks like approval flows. With Power Automate, you can construct workflows from built-in connectors and templates. The large ecosystem of software as a service (SaaS) connectors enables you to connect apps like Microsoft 365 and Azure, data, and devices in the cloud. You can use [Power Platform admin connectors](/connectors/powerplatformforadmins/) to connect to the Power Platform service itself and perform operational tasks, such as creating environments or sharing applications.
 
-Power Automate approvals (out of the box) or the [approvals kit](https://www.microsoft.com/power-platform/blog/power-automate/introducing-approvals-kit/) (a custom solution) enable you to implement both simple and complex approval flows that can aid in automation scenarios. Learn more in [Business approvals templates overview](/power-automate/guidance/business-approvals-templates/introduction).
+Power Automate approvals (out of the box) or the [Approvals kit](https://www.microsoft.com/power-platform/blog/power-automate/introducing-approvals-kit/) (a custom solution) enable you to implement both simple and complex approval flows that can aid in automation scenarios. Learn more in [Business approvals templates overview](/power-automate/guidance/business-approvals-templates/introduction).
 
 [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) enables you to build agents and agent flows. With Copilot Studio, you connect to other data sources using either prebuilt or custom plugins.
 
-[GitHub Actions](https://help.github.com/articles/about-github-actions) enable developers to build automated software development life cycle workflows. With [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions), you can create workflows in your repository to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Power Platform.
+[GitHub Actions](https://docs.github.com/actions) enable developers to build automated software development life cycle workflows. With [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions), you can create workflows in your repository to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Power Platform.
 
 [Microsoft Power Platform Build Tools](/power-platform/alm/devops-build-tools) can be used to automate common build and deployment tasks related to apps built on Power Platform.
 
-[Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) is a reference implementation that contains a collection of components and tools designed to help you get started with developing a strategy for adopting and supporting Power Platform. Included with the CoE Starter Kit is a rich set of processes that automate your administrative and governance tasks, such as identifying ownerless and highly used applications.
+[Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) is a reference implementation that contains a collection of components and tools that helps you develop a strategy to adopt and support Power Platform. Included with the CoE Starter Kit is a rich set of processes that automate your administrative and governance tasks, such as identifying ownerless and highly used applications.
 
 ## Related information
 
-- [Environment Request Management](/power-platform/guidance/coe/setup-environment-components), part of the CoE Starter Kit
+- [Environment Request management](/power-platform/guidance/coe/setup-environment-components), part of the CoE Starter Kit
 - [Business approvals templates](/power-automate/guidance/business-approvals-templates/introduction)
 
 ## Next steps

@@ -154,6 +154,8 @@
                   href: tutorials/github-actions-build.md
                 - name: Automate deployment using GitHub Actions
                   href: tutorials/github-actions-deploy.md
+                - name: Use OIDC/FIC authentication with GitHub Actions
+                  href: tutorials/github-actions-oidc-fic.md
         - name: Work with solution components
           items:
             - name: Microsoft Power Apps component framework
@@ -183,6 +185,8 @@
               href: solution-packager-tool.md
             - name: Source control with solution files
               href: use-source-control-solution-files.md
+            - name: Solution YAML source control format
+              href: solution-source-control-yaml-format.md
         - name: Verify quality of solutions and packages
           items:
             - name: Use the Power Apps checker web API

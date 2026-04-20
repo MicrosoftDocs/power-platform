@@ -4,13 +4,14 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 01/30/2026
+ms.date: 04/14/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
 ms.reviewer: ellenwehrle
 contributors:
+    - paulliew
     - jekom1
     - sriharibs-msft 
     - V-Camille
@@ -75,6 +76,16 @@ Make sure you have the System Administrator security role or equivalent permissi
 | Allow Copilot Studio to share data with Viva Insights | When **On**, enables Copilot Studio data to flow to Microsoft Viva Insights for [analytical reports](/microsoft-copilot-studio/analytics-viva-insights). Also requires [Microsoft 365 services](geographical-availability-copilot.md#copilots-and-generative-ai-features-that-depend-on-data-movement-across-regions) to be turned on. For information on what data is shared with Viva Insights, see [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). | On |
 | Allow cross-geo boundary sharing of aggregated analytics data of your tenant preferred data location for Viva Insights is different than the location of your Copilot Studio environment | For tenants with Power Platform environments across [multiple geos](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features). When **On**, Microsoft Copilot Studio is sent and stored in the base location of the tenant in Viva Insights, even when crossing geo boundaries. Requires turning on **Allow Copilot Studio to share data with Viva Insights**.  | Off |
 
+## Dataverse intelligence (preview)
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Allow data availability in Microsoft 365 Copilot | When **On**, allows Dynamics 365 and Dataverse data to be available in Microsoft 365 Copilot Chat. | Off |
+| Turn on Dataverse intelligence (Work IQ) for agents and AI experiences | When **On**, allows reusable business context [business skills](/power-apps/maker/data-platform/data-platform-business-skill-overview) to be used by your agents. | Off |
+
 ## Dataverse Model Context Protocol
 
 | Setting | Description | Default value |
@@ -102,14 +113,17 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 ## AI form fill assistance
 
+> [!IMPORTANT]
+> Admin controls for the **AI form fill assistance** feature is changing to have the primary admin control within **Copilot > Settings > Power Apps > Data entry**. In the coming weeks, the new admin controls will appear and provide increased admin control for environment groups and Entra group support. The following settings will be removed from the **Environment > Settings > Features** page and be accessed through [Manage model-driven app settings in the app designer](/power-apps/maker/model-driven-apps/app-properties) or [Solution Explorer App Settings](/power-apps/maker/data-platform/create-edit-configure-settings#updating-a-setting-definition). Learn more at [Use form fill assistance feature for model-driven apps](/power-apps/user/form-filling-assistance#admin-control).
+
 > [!NOTE]
 > Users might need to clear the cache and refresh the browser twice for the setting change to take effect.
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Automatic suggestions | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Use Copilot's form fill assistance feature in model-driven apps](/power-apps/user/form-filling-assistance). | Default<br><br>**Note:** If the **Default** option is selected, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is kept off for users of Power Apps model-driven apps. |
-| Smart paste and file suggestions (production-ready preview) | Smart paste and file suggestions (production-ready preview) use the text or image copied to your clipboard or files you upload via the form fill assist toolbar to suggest text for specific fields. They also provide inline suggestions in the form. Learn more in [Use smart paste](/power-apps/user/form-filling-assistance#use-smart-paste-preview).  | Default<br><br>**Note:** In the monthly channel, if the **Default** option is selected, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is kept off for users of Power Apps model-driven apps. |
-| Form fill assist toolbar | The form fill assist toolbar lets users access form fill assistance features, view and manage suggestions in the form, and provide feedback.  | Default<br><br>**Note:** In the monthly channel, if the **Default** option is selected, the feature is turned on for users of all model-driven apps. The toolbar appears when at least one of the above AI form fill assistance features is enabled.<br><br> You can override this setting for individual apps using the form fill assist toolbar setting in app designer, documented in [Manage model-driven app settings in the app designer](/power-apps/maker/model-driven-apps/app-properties#features).  |
+| Automatic suggestions | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Use form fill assistance feature for model-driven apps](/power-apps/user/form-filling-assistance). | Default<br><br>**Note:** If the **Default** option is selected, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is kept off for users of Power Apps model-driven apps. |
+| Smart paste and file suggestions | Smart paste and file suggestions (production-ready preview) use the text or image copied to your clipboard or files you upload via the form fill assist toolbar to suggest text for specific fields. They also provide inline suggestions in the form. Learn more in [Use smart paste](/power-apps/user/form-filling-assistance#use-smart-paste-preview).  | Default<br><br>**Note:** In the monthly channel, if the **Default** option is selected, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is kept off for users of Power Apps model-driven apps. |
+| Form fill assist toolbar | The form fill assist toolbar lets users access form fill assistance features, view and manage suggestions in the form, and provide feedback.  | Default<br><br>**Note:** In the monthly channel, if the **Default** option is selected, the feature is turned on for users of all model-driven apps. The toolbar appears when at least one of the above AI form fill assistance features is enabled.<br><br> You can override this setting for individual apps using the form fill assist toolbar setting in app designer, documented in [Features](/power-apps/maker/model-driven-apps/app-properties#features).  |
 
 Makers can learn more about form fill assistance in [Manage model-driven app settings in the app designer](/power-apps/maker/model-driven-apps/app-properties#features).
 
@@ -122,25 +136,25 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 |---------|-------------|---------------|
 | Allow users to get AI suggestions when creating formula columns. | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using a GPT-based AI model. Learn more in [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1). | Off |
 
-## Natural language grid and view search (preview)
+## Natural language grid and view search
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+> [!IMPORTANT]
+> Admin controls for the **Natural language grid and view search** and **Visualize data in a view** features are changing to have the primary admin control within **Copilot > Settings > Power Apps > Data exploration**. In the coming weeks, the new admin controls will appear and provide increased admin control for environment groups and Entra group support. The following settings will be removed from the **Environment > Settings > Features** page and be accessed through [Manage model-driven app settings in the app designer](/power-apps/maker/model-driven-apps/app-properties) or [Updating a setting definition](/power-apps/maker/data-platform/create-edit-configure-settings#updating-a-setting-definition). Learn more at [Find data in a view with AI](/power-apps/user/find-data-with-ai#admin-control) and [Visualize data in a view with AI](/power-apps/user/visualize-data-in-copilot#admin-control).
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Enable this feature for:  | When searching for data in a grid, you can ask questions with natural language. For example, requesting "cases with high priority with overdue follow-up by date" filters your view to display only those relevant cases. Learn more in [Smart grid (preview)](/power-apps/user/grid-filters#smart-grid-preview).<br><br>To allow natural language search in an environment, users in that environment must have a Dynamics 365 license. If the environment only has users with Power Apps licensing, other Copilot licenses are required to use this feature in production.   | Users as the feature becomes available (default)<br><br>**Note**: Starting with the December monthly channel, users with Dynamics 365 licenses start seeing the feature in their apps.  We expect this rollout to be gradual. While quality of the feature is maintained for all users, it's possible that different users might see some UI variations in their experience.|
-| Allow AI to generate charts to visualize the data in a view (Preview) | When **On**, users can select the **Visualize** button on the view pages of model-driven apps to see an AI-generated chart that aggregates the records in the view to show trends and distributions. Learn more in [Visualize data in a view with Copilot](/power-apps/user/visualize-data-in-copilot). | Auto<br><br>This feature is turned on by default for all users who have **Natural language grid and view search (preview)** turned on.|
-| Apply AI-generated chart styling to all charts | When **On**, charts created from the legacy chart designer have the same usability enhancements like modern colors and styling as AI-generated charts. Learn more in [Visualize data in a view with Copilot](/power-apps/user/visualize-data-in-copilot). | Auto<br><br>This feature is turned on by default for all users that have **Allow AI to generate charts to visualize the data in a view (Preview)** set to **On** .|
+| Allow AI to generate charts to visualize the data in a view (Preview) | When **On**, users can select the **Visualize** button on the view pages of model-driven apps to see an AI-generated chart that aggregates the records in the view to show trends and distributions. Learn more in [Visualize data in a view with AI](/power-apps/user/visualize-data-in-copilot). | Auto<br><br>This feature is turned on by default for all users who have **Natural language grid and view search** turned on.|
+| Apply AI-generated chart styling to all charts | When **On**, charts created from the legacy chart designer have the same usability enhancements like modern colors and styling as AI-generated charts. Learn more in [Visualize data in a view with AI](/power-apps/user/visualize-data-in-copilot). | Auto<br><br>This feature is turned on by default for all users that have **Allow AI to generate charts to visualize the data in a view** set to **On** .|
 
-## AI insight cards (preview)
+## AI insight cards
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+> [!IMPORTANT]
+> Admin controls for the **AI insights cards** feature is changing to have the primary admin control within **Copilot > Settings > Power Apps > Summary**. In the coming weeks, the new admin controls will appear and provide increased admin control for environment groups and Entra group support. The following settings will be removed from the **Environment > Settings > Features** page and be accessed through [Model App Designer Setting](/power-apps/maker/model-driven-apps/app-properties) or [Solution Explorer App Settings](/power-apps/maker/data-platform/create-edit-configure-settings#updating-a-setting-definition). Learn more at [Adming controls for Row summary](/power-apps/user/record-summaries#admin-control).
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Displays a summary generated by Copilot on records in model-driven app main forms. | If **On**, summaries generated by Copilot are displayed to users for rows (records) on model-driven app main forms. More information: [Configure a row summary for a model-driven app main form](/power-apps/maker/data-platform/configure-form-row-summary) | On |
+| Displays a summary generated by AI on records in model-driven app main forms. | If **On**, summaries generated by AI are displayed to users for rows (records) on model-driven app main forms. More information: [Configure a row summary for a model-driven app main form](/power-apps/maker/data-platform/configure-form-row-summary) | On |
 
 ## Power Automate Process Mining
 

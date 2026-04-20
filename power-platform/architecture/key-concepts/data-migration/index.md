@@ -5,7 +5,7 @@ description: Learn how to move data from external CRM systems to Microsoft Datav
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: overview
-ms.subservice: guidance
+ms.subservice: architecture-center
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.date: 08/19/2025

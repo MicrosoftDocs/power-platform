@@ -12,10 +12,10 @@ contributors:
   - EllenWehrle 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/24/2025
+ms.date: 03/30/2026
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: sericks
+ms.author: matow
+ms.reviewer: angieandrews
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
@@ -29,7 +29,7 @@ Power Platform requests limits exist to help ensure service levels, availability
 Requests in Microsoft Power Platform are actions that a user takes across different products.
 
 - **Power Apps**: All API requests to connectors and Microsoft Dataverse.
-- **Power Automate**: All API requests to connectors, process advisor analysis, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both successful and failed actions count toward these limits. Retries and requests from pagination also count as action executions. See [What counts as Power Platform request?](power-automate-licensing/faqs.md#what-counts-as-power-platform-request) to learn more.
+- **Power Automate**: All API requests to connectors, process advisor analysis, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both successful and failed actions count toward these limits. Retries and requests from pagination also count as action executions. Learn more in [What counts as an action](power-automate-licensing/faqs.md#what-counts-as-an-action).
 - **Microsoft Copilot Studio**: API requests (or calls) to Power Automate flows.
 - **Dataverse**: All create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, and special operations like share or assign. These operations can be from any client or application (including Dynamics 365) and using any endpoint (SOAP or REST). These operations include plug-ins, classic workflows, and custom controls that perform the earlier mentioned operations.
 
@@ -108,7 +108,7 @@ Customers that observe in reporting that they're frequently using more requests 
 
 You can't assign Power Platform requests capacity add-on packs to users or flows during the [transition period](#power-automate-transition-period). However, Microsoft recommends buying these add-ons to stay within your license terms and to prepare for when the transition period ends.
 
-If your Power Automate flows are throttled, try [Pay-as-you-go](power-automate-licensing/faqs.md#power-platform-requests-pay-as-you-go) to make sure none of the flows in the environment are throttled. If you can't use Pay-as-you-go, buy a [Process license](power-automate-licensing/types.md#capacity-licenses) or add-ons and create a Microsoft support ticket with the flow and add-on details so the support team can provide exceptions for your throttled flows.
+If your Power Automate flows are throttled, try [Pay-as-you-go](power-automate-licensing/faqs.md#pay-as-you-go-for-action-overages) to make sure none of the flows in the environment are throttled. If you can't use Pay-as-you-go, buy a [Process license](power-automate-licensing/types.md#capacity-licenses) or add-ons and create a Microsoft support ticket with the flow and add-on details so the support team can provide exceptions for your throttled flows.
 
 > [!NOTE]
 > Currently, you can't assign capacity add-ons to users (including application, administrative, and noninteractive users). The ability to assign capacity add-ons aligns with the timing of high usage enforcement.
@@ -220,7 +220,7 @@ To ensure Power Automate service availability and quality, there are limits to t
 
 The 24-hour limit is based on the user license or on the Process / per flow plan license allocated to a cloud flow:
 
-- If a user has a Power Automate Premium license, they can make 40,000 Power Platform requests across all of their cloud flows in a tenant within a 24-hour period. This limit includes requests the platform makes to third party connectors too.
+- If a user has a Power Automate Premium license, they can make 40,000 Power Platform requests across all of their cloud flows in a tenant within a 24-hour period. This limit includes requests the platform makes to non-Microsoft connectors.
 - If a cloud flow has a Process license, the flow, its child flows, and its associated flows can make 250,000 Power Platform requests across all users of the flow in a 24-hour period.
 - If a cloud flow has a per flow plan (legacy), the flow can make 250,000 Power Platform requests across all users of the flow in a 24-hour period.
 
@@ -249,8 +249,10 @@ Learn more about [Power Automate licenses](/power-platform/admin/power-automate-
 
 > [!NOTE]
 >
-> - The Power Automate Process licenses can be stacked on a cloud flow to increase its PRR limit
-> - [FAQ on Power Platform Request within Power Automate](/power-platform/admin/power-automate-licensing/faqs#power-platform-requests-questions)
+> - Multiple Power Automate Process licenses can be stacked on a single cloud flow; each additional license adds 250,000 PPR to the flow's daily entitlement. The flow must be in a [solution](/power-automate/create-flow-solution).
+> - Learn more:
+    > - [Can I assign multiple Process licenses to a single cloud flow?](/power-platform/admin/power-automate-licensing/faqs#can-i-assign-multiple-process-licenses-to-a-single-cloud-flow)
+    > - [FAQ on Power Platform Request within Power Automate](/power-platform/admin/power-automate-licensing/faqs#power-platform-requests-questions)
 
 ### Power Automate transition period
 
@@ -258,7 +260,7 @@ All organizations are in a transition period. That means that enforcement isn't 
 
 Here are a few things to be aware of during the transition period:
 
-- The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the official limits to prevent potential unintended impact on your apps or flows.
+- The transition period doesn't mean there are no daily limits. It means the currently enforced limits are more generous than the official limits to prevent potential unintended impact on your apps or flows.
 
 - These transition period limits are applied at the cloud flow level during the transition period. Additionally, a separate per user level limit of 1,000,000 cloud flow actions is applied during the transition period to ensure users don't exceed 1M actions across all their flow runs in a day. After the transition period ends, the actual limits are applied at user level for Premium licenses and cloud flow level for Process / Per flow-plan licenses.
 
@@ -278,27 +280,27 @@ Reporting for Power Platform request usage in preview is available in the Power 
 
 ### What are the timelines for Power Platform Request limits?
 
-The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Public preview reporting for Power Platform Requests rolled out in June 2022. Following a public preview period, the reports move to general availability. There's no current ETA for when GA happens. Any potential high usage enforcement won't start until at least six months after reports are generally available. However, Power Automate continues to throttle at transition limits until enforcement. Learn more in [FAQs](power-automate-licensing/faqs.md#power-platform-requests-questions).
+The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Public preview reporting for Power Platform Requests rolled out in June 2022. Following a public preview period, the reports move to general availability. There's no current ETA for when GA happens. Any potential high usage enforcement won't start until at least six months after reports are generally available. However, Power Automate continues to throttle at transition limits until enforcement. Learn more in [Power Automate licensing FAQ](power-automate-licensing/faqs.md#action-limits-and-capacity-questions).
 
 ### What account's limits are used for classic workflows or Power Automate flows?
 
-It depends if the process is run on-demand or in the background. Instant flows, which are run on-demand, use the limits of the account who started the process. On the other hand, workflows or automated/scheduled flows that run in the background always use the limits of the owner of the process irrespective of why the process started or what accounts are used for connections inside of the process. Learn more in [Whose Power Platform request limits are used by the flow?](power-automate-licensing/faqs.md#whose-power-platform-request-limits-are-used-by-the-cloud-flow).
+It depends if the process is run on-demand or in the background. Instant flows, which are run on-demand, use the limits of the account who started the process. On the other hand, workflows or automated/scheduled flows that run in the background always use the limits of the owner of the process irrespective of why the process started or what accounts are used for connections inside of the process. Learn more in [Whose action limits are used by the flow?](power-automate-licensing/faqs.md#whose-action-limits-are-used-by-the-cloud-flow).
 
 ### Does the Microsoft Power Platform request limit roll-over from day to day or month to month?
 
-No it doesn't. All the Microsoft Power Platform requests exist for a 24-hour period. If they aren't consumed, they don't roll-over to the next day nor do they accumulate within a month.
+No it doesn't. All the Microsoft Power Platform requests exist for a 24-hour period. If they aren't consumed, they don't roll over to the next day nor do they accumulate within a month.
 
-### Does each application user, non-interactive user, administrative user, or SYSTEM user get their own tenant-level limit?
+### Does each application user, non-interactive user, administrative user, or system user get their own tenant-level limit?
 
-No they don't. Tenant level limits are shared across all application users, non-interactive users, administrative users, or SYSTEM user within the tenant.
+No they don't. Tenant level limits are shared across all application users, non-interactive users, administrative users, or system user within the tenant.
 
 ### Do the requests generated from classic Dataverse workflows and plug-ins in Dataverse count against the request limits?
 
 Yes, if these requests are making CRUD, assign, or share–type requests, they count. Regarding classic workflows, this logic includes actions such as checking conditions, starting child workflows, or stopping workflows. However, requests generated internally from the platform aren't counted, such as: `sdkmessagerequest`, `solutioncomponentdefinition`, and `ribbonclientmetadatareporting`.
 
-### Should I use a third-party data integration tool instead of Power Automate to avoid hitting my limits?
+### Should I use a non-Microsoft data integration tool instead of Power Automate to avoid hitting my limits?
 
-No, third-party data integration tools are subject to the exact same limits as scheduled, instant, or automated flows. Thus, there's no difference whether you choose to use Power Automate or a third-party tool. Moreover, requests from Power Automate to Dataverse aren't double-counted, a flow that calls one action only counts as one request against their limit, not two.
+No. Non-Microsoft data integration tools are subject to the exact same limits as scheduled, instant, or automated flows. Thus, there's no difference whether you choose to use Power Automate or a non-Microsoft tool. Requests from Power Automate to Dataverse aren't double-counted. A flow that calls one action only counts as one request against their limit, not two.
 
 ### Related content
 

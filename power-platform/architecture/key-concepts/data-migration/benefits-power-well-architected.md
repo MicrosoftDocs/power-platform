@@ -5,7 +5,7 @@ description: Power Platform Well-Architected pillars guide you to plan and execu
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.subservice: guidance
+ms.subservice: architecture-center
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.date: 08/19/2025

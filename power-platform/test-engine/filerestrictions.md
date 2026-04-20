@@ -1,20 +1,19 @@
 ---
-title: "File access restrictions for Test Engine (preview)"
+title: "File access restrictions for Test Engine (deprecated)"
 description: "Learn about the file restrictions for Test Engine in different operating systems"
 author: snamilikonda
 ms.author: snamilikonda
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: reference
 contributors:
 - grant-archibald-ms
 ---
 
-# File access restrictions for Test Engine (preview)
+# File access restrictions for Test Engine (deprecated)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 The test engine is allowed to write files exclusively within designated directories under the `Microsoft/TestEngine` folder located in the temporary directory.
 
