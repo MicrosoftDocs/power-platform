@@ -7,7 +7,7 @@ ms.subservice: guidance-toolkit
 ---
 
 > [!NOTE]
-> **The ALM Accelerator is deprecated and no new features are being added.**
+> **The CoE CLI is deprecated and no new features are being added.**
 > - Issues are no longer reviewed or addressed.
 > - If you identify a potential security issue, please report it to the [Microsoft Security Response Center](https://www.microsoft.com/en-us/msrc/faqs-report-an-issue).
 >

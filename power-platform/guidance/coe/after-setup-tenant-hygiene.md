@@ -3,7 +3,7 @@ title: Establish tenant hygiene with the CoE Starter Kit
 description: Establish tenant hygiene, manage environments, and secure your Power Platform with actionable governance strategies using the CoE Starter Kit.
 author: stjeffer
 ms.topic: how-to
-ms.date: 08/27/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: jhaskett-msft
@@ -17,6 +17,17 @@ ms.custom:
 ---
 
 # Establish tenant hygiene with the CoE Starter Kit
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
+
+> [!TIP]
+> Find resources related to tenant hygiene including environment and resource management in:
+>
+> - [Move apps from the default environment](../../admin/move-apps-from-default-environment.md)
+> - [Environment routing](../../admin/default-environment-routing.md)
+> - [Power Platform admin center inventory capabilities](../../admin/power-platform-inventory.md)
+> - [Power Platform admin center Usage page](../../admin/usage.md)
+> - [Assign valid owners to apps to mitigate business continuity risks](../../admin/security-recommendations.md#assign-valid-owners-to-apps-to-mitigate-business-continuity-risks)
 
 The natural expansion of Microsoft Power Platform can sometimes conflict with an organization's established strategies, such as its environment strategy. This challenge can make it difficult for Center of Excellence (CoE) teams to fully understand the purpose and usage of the various apps, environments, cloud flows, and bots.
 
@@ -59,6 +70,12 @@ Learn more:
 - [CoE Starter Kit &ndash; Environment and data policy management](env-mgmt.md)
 
 ## Manage the default environment
+
+> [!TIP]
+> Find resources related to managing the default environment in:
+>
+> - [Move apps from the default environment](../../admin/move-apps-from-default-environment.md)
+> - [Environment routing](../../admin/default-environment-routing.md)
 
 Every tenant in Power Platform has a [default environment](/power-platform/admin/environments-overview#the-default-environment), containing organic growth of apps and cloud flows. The default environment can't be deleted, but it can be renamed to better reflect its intended purpose.
 
@@ -135,6 +152,12 @@ It's crucial to identify the apps and cloud flows that are heavily used within y
 
 #### CoE Starter Kit: Power BI dashboard
 
+> [!TIP]
+> Find Power Platform admin center functionality related to monitoring resources in:
+>
+> - [Power Platform admin center inventory capabilities](../../admin/power-platform-inventory.md) to obtain a unified view of Power Platform resources across the organization including apps, flows, and agents.
+> - [Power Platform admin center Usage page](../../admin/usage.md) to track engagement and adoption across resources.
+
 The Power BI dashboard in the CoE Starter Kit provides visual representations of usage patterns, the number of users, and other data. These insights help you identify compliance issues and ensure your apps and cloud flows are used effectively.
 
 These visualizations help you understand how your organization is using the Power Platform as you identify areas that need attention. By providing clear and actionable insights, the dashboard helps you ensure that your Power Platform solutions are secure, compliant, and aligned with your organizational policies.
@@ -184,6 +207,9 @@ Learn more:
 - [Quarantine non-compliant apps](governance-components.md#admin--quarantine-non-compliant-apps)
 
 ### Managing apps and cloud flows when the owner leaves the organization
+
+> [!TIP]
+> Find related Power Platform admin center functionality in [Assign valid owners to apps to mitigate business continuity risks](../../admin/security-recommendations.md#assign-valid-owners-to-apps-to-mitigate-business-continuity-risks).
 
 When an employee owns an app or flow within Power Platform and leaves the organization, they might leave built components behind, known as orphaned resources. These resources can pose a security risk if not properly managed or maintained. To address this issue, the CoE Starter Kit includes a process to identify and clean up orphaned resources.
 
