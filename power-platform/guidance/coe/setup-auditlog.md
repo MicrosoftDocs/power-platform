@@ -4,7 +4,7 @@ description: Learn how to set up a custom connector to gather Microsoft 365 app 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/29/2025
+ms.date: 04/20/2026
 ms.update-cycle: 3650-days
 ms.subservice: guidance-toolkit
 ms.author: mapichle
@@ -15,6 +15,8 @@ ms.custom: sfi-image-nochange
 ---
 
 # Collect audit logs using a custom connector (Deprecated)
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 > [!IMPORTANT]
 > Using the dedicated **Center of Excellence - Audit Log** solution and the Office 365 Management custom connector to collect audit log events is deprecated. The solution and custom connector will be removed from the CoE Starter Kit in August 2023.

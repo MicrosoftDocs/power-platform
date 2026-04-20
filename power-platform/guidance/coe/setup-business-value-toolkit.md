@@ -4,7 +4,7 @@ description: Learn how to install, import, and configure the Business value tool
 author: stjeffer
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/18/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: jhaskett-msft
@@ -18,6 +18,8 @@ ms.custom:
 ---
 
 # Set up the Business value toolkit
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article helps you set up the Microsoft Power Platform [Business value toolkit](business-value-toolkit.md), a component of the Center of Excellence (CoE) Starter Kit.
 

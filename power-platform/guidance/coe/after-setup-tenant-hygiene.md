@@ -72,7 +72,7 @@ Learn more:
 ## Manage the default environment
 
 > [!TIP]
-> Find resources related to managing the default environment in:
+> Find Power Platform admin center functionality related to managing the default environment in:
 >
 > - [Move apps from the default environment](../../admin/move-apps-from-default-environment.md)
 > - [Environment routing](../../admin/default-environment-routing.md)

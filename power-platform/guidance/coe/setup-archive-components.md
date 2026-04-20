@@ -4,7 +4,7 @@ description: "Learn how to set up the inactivity notifications components of the
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/13/2024
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -13,6 +13,8 @@ search.audienceType:
 ---
 
 # Set up inactivity processes
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article will help you to set up the inactivity notifications for unused canvas apps and cloud flows, and for how to clean up unused connection references.
 

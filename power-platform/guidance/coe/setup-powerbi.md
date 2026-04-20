@@ -4,7 +4,7 @@ description: Learn how to set up the Microsoft Power BI dashboard to gain an hol
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/18/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -14,6 +14,8 @@ ms.custom: sfi-image-nochange
 ---
 
 # Set up the Power BI dashboard
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 The Microsoft Power BI dashboard provides a holistic overview with visualizations and insights into the resources of your tenant: environments, apps, Power Automate flows, connectors, connection references, makers, and audit logs. When you set up the Center of Excellence (CoE) Starter Kit, telemetry from the audit log is stored so that you can identify trends over time.
 
@@ -92,7 +94,7 @@ Power BI dataflows can transform data from the Azure Storage account into tables
 
 1. Navigate to [app.powerbi.com](https://app.powerbi.com).
 1. Select **Workspaces** > **Create a workspace**.
-1. Provide a name and description, select **Advanced**, and choose **Premium per user** or **Premium per capacity** depending on what’s available in your tenant.
+1. Provide a name and description, select **Advanced**, and choose **Premium per user** or **Premium per capacity** depending on what's available in your tenant.
 1. Select **Large dataset storage format**. You can also use an existing premium workspace, if available.
 
    :::image type="content" source="media/byodlbi-1.png" alt-text="Screenshot that shows the Create a workspace pane you see when creating a new premium workspace." lightbox="media/byodlbi-1.png":::
