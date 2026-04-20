@@ -5,7 +5,7 @@ description: Power Platform adoption guidance delivers best practices, fresh ins
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/17/2026
+ms.date: 04/20/2026
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -15,23 +15,23 @@ ms.reviewer: jhaskett-msft
 
 The Microsoft Power Platform adoption guidance is developed collaboratively with customers, partners, and internal Microsoft teams. New and updated content is released based on new learnings and product changes. Use the new releases to validate and refine your Power Platform adoption approach.
 
-## May 2025
-
-Relaunch of the Power Platform adoption guidance.
-
-## April 2025
-
-Launch of the [Microsoft Power Platform and Copilot Studio Architecture Center](../../architecture/index.yml).
-
-## June 2025
-
-Added [Power Automate coding guidelines for desktop flows](/power-automate/guidance/desktop-flow-coding-guidelines/).
-
 ## February 2026
 
 The ALM Accelerator is deprecated and no new features are being added. Use [Pipelines in Power Platform](/power-platform/alm/pipelines) to bring ALM automation capabilities to Power Platform and Dynamics 365 services. Pipelines can be used with [source code integration](/power-platform/alm/git-integration/overview) or extended to integrate with other providers.
 
 The *Enterprise security with Power Platform* whitepaper was removed, as all relevant content moved to the [Security](secure-overview.md) pillar.
+
+## June 2025
+
+Added [Power Automate coding guidelines for desktop flows](/power-automate/guidance/desktop-flow-coding-guidelines/).
+
+## April 2025
+
+Launch of the [Microsoft Power Platform and Copilot Studio Architecture Center](../../architecture/index.yml).
+
+## May 2025
+
+Relaunch of the Power Platform adoption guidance.
 
 ## Customer case studies
 
