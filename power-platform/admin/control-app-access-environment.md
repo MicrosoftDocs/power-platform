@@ -332,6 +332,9 @@ The following apps are Microsoft first-party services. This list of apps can be 
 | a59cef1e-2e32-4703-8dab-810d9807efeb | ccibots |
 | 96ff4394-9197-43aa-b393-6a41652e21f8 | ccibotsprod |
 | 300e430c-5476-4a1d-b223-35194efd4e57 | Dataverse Organization Routing Service |
+| aeb01831-b358-4750-92ce-722e4f3ea7e8 | Dataverse Question & Answer |
+| 1884bdbf-452a-4a11-9c76-afdbdb1b3768 | Dataverse Search |
+| 1a28d27c-cc86-4773-b5ef-10a70a3da179 | Dataverse Search Enhancements |
 
 ## Related content
 
