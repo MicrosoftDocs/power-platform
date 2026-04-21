@@ -1,20 +1,19 @@
 ---
-title: "Create a C# Power Fx test function (preview)"
+title: "Create a C# Power Fx test function (deprecated)"
 description: "Describes the creating Power Fx functions using C# in Test Engine"
 author: caburk
 ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
 - grant-archibald-ms
 ---
 
-# Create a C# Power Fx test function (preview)
+# Create a C# Power Fx test function (deprecated)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 [Microsoft Power Fx](../power-fx/overview.md) is a powerful low-code language used in Power Apps, and it can be extended using C# to create custom test functions. This article explains how to create a C# Power Fx test function, providing a seamless experience for both makers and developers.
 

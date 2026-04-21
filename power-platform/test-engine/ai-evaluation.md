@@ -1,20 +1,19 @@
 ---
-title: Testing nondeterministic AI in Power Apps (preview)
+title: Testing nondeterministic AI in Power Apps (deprecated)
 description: Learn how to test AI components and verify nondeterministic outputs in Power Platform applications
 author: caburk
 ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: how-to
 contributors:
  - grant-archibald-ms
 ---
 
-# Testing nondeterministic AI in Power Apps (preview)
+# Testing nondeterministic AI in Power Apps (deprecated)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Testing AI-powered applications introduces unique challenges because AI outputs can vary between runs, even with identical inputs. This nondeterministic behavior requires special testing approaches. This guide explains how to validate AI components in your Power Platform applications effectively.
 
