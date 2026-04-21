@@ -1,18 +1,20 @@
 ---
-title: "Example App auditing process | MicrosoftDocs"
+title: Example App auditing process
 description: "The App auditing sample process showcases how your CoE department or IT administrators can automate an auditing process on an app-level basis to gather additional information about an app, like business justification and impact of an outage, from the maker."
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/06/2023
+ms.date: 04/21/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
+
 # App auditing process
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 The components in the Center of Excellence (CoE) Starter Kit are designed for multiple uses. The example process in this article, which uses the starter kit components, is meant to showcase common patterns other organizations have found useful and&mdash;hopefully&mdash;act as inspiration for defining your own processes.
 

@@ -1,10 +1,10 @@
 ---
-title: "Environment capacity management & alerting | MicrosoftDocs"
+title: Environment capacity management & alerting
 description: "This article describes a sample process for managing environment capacity and receiving alerts for overages."
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/18/2020
+ms.date: 04/21/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -12,7 +12,13 @@ search.audienceType:
   - admin
 ms.custom: sfi-image-nochange
 ---
+
 # Environment capacity management & alerting
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
+
+> [!TIP]
+> Learn how the Power Platform admin center helps you monitor license consumption and storage capacity.
 
 [Power Platform capacity](/power-platform/admin/capacity-storage) is measured at the tenant level and is made up of three types: database, log, and file capacity. When you are over your tenant's allocated capacity, [certain environment operations](/power-platform/admin/capacity-storage#changes-for-exceeding-storage-capacity-entitlements) are impacted and you'll no longer be able to create new environments within the tenant. It's therefore important to monitor your capacity and ensure enough capacity is available in the tenant. In addition to monitoring capacity, you may also have a need to cross-charge usage to other departments internally.
 
@@ -53,12 +59,12 @@ Power Platform Admins can also use the Environment Capacity tab of the [Power BI
 ## Frequently Asked Questions
 
 **Does the capacity alerting process in the CoE Starter Kit stop an environment from consuming any more capacity once they reach the approved amount?**
-No, the approved capacity is a soft limit for reporting and alerting only. The environment can still consume more capacity. The goal of the capacity alerting process is to allow you to have a better insight into which environments are consuming the tenant’s capacity and place a soft limit on the environment. If you exceed storage at your organization's tenant level, [certain operations](/power-platform/admin/capacity-storage#changes-for-exceeding-storage-capacity-entitlements) - such as creating, copying, restoring or recovering an environment - will no longer be possible. Learn more: [About Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage#changes-for-exceeding-storage-capacity-entitlements)
+No, the approved capacity is a soft limit for reporting and alerting only. The environment can still consume more capacity. The goal of the capacity alerting process is to allow you to have a better insight into which environments are consuming the tenant's capacity and place a soft limit on the environment. If you exceed storage at your organization's tenant level, [certain operations](/power-platform/admin/capacity-storage#changes-for-exceeding-storage-capacity-entitlements) - such as creating, copying, restoring or recovering an environment - will no longer be possible. Learn more: [About Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage#changes-for-exceeding-storage-capacity-entitlements)
 
 **How is the capacity for Dataverse for Teams environments managed?**
 Dataverse for Teams environments capacity is capped at two (2) GB of combined database and file storage and is separate from this process.
 
-**I’ve received an email saying an environment is at 80% of the capacity, what actions do I take?**
+**I've received an email saying an environment is at 80% of the capacity, what actions do I take?**
 Once you're alerted of an environment approaching or exceeding their approved capacity amount, you should reach out to the environment admin to discuss a strategy for capacity management. For example, you could either increase the approved capacity, [free up space](/power-platform/admin/free-storage-space) to reduce the storage needed, or [purchase more Microsoft Dataverse storage](/power-platform/admin/add-storage).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
