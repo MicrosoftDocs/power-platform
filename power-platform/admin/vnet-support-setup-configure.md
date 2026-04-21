@@ -3,7 +3,7 @@ title: Set up virtual network support for Power Platform
 description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/11/2026
+ms.date: 04/21/2026
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -110,7 +110,7 @@ You can configure and enable virtual network support by using PowerShell scripts
     ```
     ---
 
-1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role. This is specifically relevant when the persona associating the enterprise policy to a power platform environment is different from the one having created the enterprise policy in azure.
+1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role. This is specifically relevant when the persona associating the enterprise policy to a Power Platform environment is different from the one having created the enterprise policy in Azure.
 
 1. To link your newly created policy, run the following command.
 
@@ -262,7 +262,7 @@ You can configure and enable virtual network support by using PowerShell scripts
 
     :::image type="content" source="media/virtual-networks-json-script.png" alt-text="Screenshot of selecting Review and create to finalize the enterprise policy." lightbox="media/virtual-networks-json-script.png":::
 
-1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role. This is specifically relevant when the persona associating the enterprise policy to a power platform environment is different from the one having created the enterprise policy in azure.
+1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role. This is specifically relevant when the persona associating the enterprise policy to a Power Platform environment is different from the one having created the enterprise policy in Azure.
 
 1. To assign your policy to your environment, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
     1. In the navigation pane, select **Security**.
