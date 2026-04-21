@@ -3,9 +3,10 @@ title: View Microsoft Dataverse and model-driven app activity logs in Microsoft 
 description: Learn how to access Dataverse and model-driven app activity logs in Microsoft Purview and explore what activities you can view.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/23/2026
+ms.date: 04/03/2026
 author: grbarker
 contributors:
+  - paulliew
   - yingchin
   - EllenWehrle
 ms.subservice: admin
@@ -22,23 +23,24 @@ Activity logging data supports Data Protection Impact Assessment (DPIA) for Powe
 
 Regularly view Microsoft Dataverse activities in Microsoft Purview to:
 
-- maintain governance, compliance, and security
-- gain operational insights
-- identify and troubleshoot problems
-- mitigate failures.
+- Maintain governance, compliance, and security.
+- Gain operational insights.
+- Identify and troubleshoot problems.
+- Mitigate failures.
 
 This article covers prerequisites, how to access your data in Microsoft Purview's compliance portal, and details about Dataverse and model-driven apps events and schema.
 
 ## Prerequisites
 
-To view Dataverse and model-driven app activity logs in Microsoft Purview, make sure you:
+To view Dataverse and model-driven app activity logs in Microsoft Purview, admins with the appropriate permissions need to:
 
-- Review and complete all the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
-- Are an admin with a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Are assigned either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview.
+- [Review licensing and manage permissions](activity-logs-overview.md#review-licensing-and-manage-permissions).
+- [Configure and turn on auditing for the Power Platform production environments you want to monitor](activity-logs-overview.md#configure-and-turn-on-auditing-for-each-power-platform-environment) in Microsoft Purview.
+- [Manage auditing in Microsoft Purview](activity-logs-overview.md#manage-auditing-in-microsoft-purview) and [assign](/purview/purview-permissions) either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview to you.
 
 Learn more:
 
+- [Prerequisites](activity-logs-overview.md#prerequisites)
 - [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 - [Auditing overview](/power-apps/developer/data-platform/auditing/overview)
 - [Learn more about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
@@ -63,6 +65,9 @@ Logging takes place at the SDK layer, which means a single action can trigger mu
 |Report Viewed  |Logging when a report is viewed. Critical customer content information might be displayed on the report.  |
 |Report Viewer Export  |Exporting a report to different formats moves the data outside of the secure environment and makes it vulnerable to threats.  |
 |Report Viewer Render Image  |Logging multimedia assets that are shown when a report is displayed. They might contain critical customer information.  |
+
+> [!NOTE]
+> [Column-level secured fields](../field-level-security.md) are sent to Purview activity logging with an asterisk (*).
 
 ## Base schema
 
@@ -112,7 +117,7 @@ The customer engagement apps schema contains fields specific to customer engagem
 
 ## See what's logged
 
-For a list of activities that are logged, see [Microsoft.Crm.Sdk.Messages Namespace](/dotnet/api/microsoft.crm.sdk.messages).
+For a list of activities that the system logs, see [Microsoft.Crm.Sdk.Messages Namespace](/dotnet/api/microsoft.crm.sdk.messages).
 
 The system logs all SDK messages except the following messages:
 
