@@ -5,7 +5,7 @@ description: Learn how to automate vendor invoice ingestion by extracting and va
 author: carcla
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 04/10/2026
+ms.date: 04/21/2026
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 search.audienceType:
@@ -18,11 +18,11 @@ search.audienceType:
 Power Automate and AI Builder can be used to automate end-to-end vendor invoice processing from Extensible Markup Language (XML) based e‑invoicing formats. This approach enables organizations to validate and integrate invoice data into Dynamics 365 Finance or other enterprise resource planning (ERP) systems with minimal manual intervention.
 
 > [!TIP]
-> This article provides an example scenario and a visual representation of how to automate vendor invoice processing using Power Automate and AI Builder. This solution is a generalized example architecture, which can be used for many different scenarios and industries. This article is limited to best practices.
+> This article provides an example scenario and a visual representation of how to automate vendor invoice processing by using Power Automate and AI Builder. This solution is a generalized example architecture that you can use for many different scenarios and industries. This article is limited to best practices.
 
 ## Architecture diagram
 
-:::image type="content" source="media/vendor-invoice-integration/vendor-invoice-processing.png" alt-text="Diagram of vendor invoice workflow showing Power Automate trigger, XML processing, logging in SharePoint, Dynamics 365 Finance and Operations, and Outlook steps." lightbox="media/vendor-invoice-integration/vendor-invoice-processing.png":::
+:::image type="content" source="media/vendor-invoice-integration/vendor-invoice-processing.png" alt-text="Diagram of vendor invoice workflow showing Power Automate trigger, XML processing, logging in SharePoint, Dynamics 365 Finance and Operations apps, and Outlook steps." lightbox="media/vendor-invoice-integration/vendor-invoice-processing.png":::
 
 ## Workflow
 
@@ -43,7 +43,7 @@ This architecture automates the end-to-end invoice processing workflow:
 
 1. **Data transformation**: The workflow maps extracted XML fields to the Dynamics 365 entity schema, converts dates to International Organization for Standardization (ISO) 8601 format, converts amounts to decimal, and prepares line items as arrays.
 
-1. **Dynamics 365 integration**: The workflow creates the validated invoice data as a pending vendor invoice record in Dynamics 365 Finance and Operations by using either the Dataverse connector or Dynamics 365 connector.
+1. **Dynamics 365 integration**: The workflow creates the validated invoice data as a pending vendor invoice record in Dynamics 365 Finance and Operations apps by using either the Dataverse connector or Dynamics 365 connector.
 
 1. **Error handling**: If any step fails, the flow logs the error, sends a notification to the finance team, moves the email to a failed folder, and prevents incomplete invoices from entering Dynamics 365.
 
@@ -54,13 +54,13 @@ This architecture automates the end-to-end invoice processing workflow:
 This use case is based on a company's approach to establishing a robust, secure, and maintainable process for integrating vendor invoices into an ERP system while minimizing manual effort.
 
 > [!NOTE]
-> A similar architectural pattern is used by Concentrix, which built a vendor invoice processing solution using Power Automate, Power Apps, AI Builder custom models, and AI prompts. Learn more in [Concentrix modernizes invoice processing with Power Platform and AI](/power-platform/guidance/case-studies/concentrix-invoice-processing).
+> Concentrix used a similar architectural pattern to build a vendor invoice processing solution using Power Automate, Power Apps, AI Builder custom models, and AI prompts. Learn more in [Concentrix modernizes invoice processing with Power Platform and AI](../../guidance/case-studies/concentrix-invoice-processing.md).
 
 ### Business challenge
 
-A multinational company receives large volumes of supplier invoices in XML format from Peru (SUNAT CPE/UBL - Superintendencia Nacional de Aduanas y de Administración Tributaria Comprobante de Pago Electrónico/Universal Business Language), Chile (SII DTE - Servicio de Impuestos Internos Documento Tributario Electrónico), and Mexico (SAT CFDI - Servicio de Administración Tributaria Comprobante Fiscal Digital por Internet).
+A multinational company receives large volumes of supplier invoices in XML format from Peru (SUNAT CPE/UBL&ndash;Superintendencia Nacional de Aduanas y de Administración Tributaria Comprobante de Pago Electrónico/Universal Business Language), Chile (SII DTE - Servicio de Impuestos Internos Documento Tributario Electrónico), and Mexico (SAT CFDI - Servicio de Administración Tributaria Comprobante Fiscal Digital por Internet).
 
-Manually downloading, interpreting, and keying these XML files into Dynamics 365 (or any ERP) is slow, error‑prone, and doesn't consistently enforce local e‑invoicing rules. Teams must also reconcile XML data with PDFs and validate vendor reference data and tax identification number (TIN).
+Manually downloading, interpreting, and keying these XML files into Dynamics 365 (or any ERP system) is slow, error‑prone, and doesn't consistently enforce local e‑invoicing rules. Teams must also reconcile XML data with PDFs and validate vendor reference data and tax identification number (TIN).
 
 ### Solution
 
@@ -68,7 +68,7 @@ Implement a Power Automate–based XML invoice ingestion pattern that:
 
 - Monitors shared accounts payable (AP) mailboxes per country/region, extracts XML and PDF attachments, and routes them into an automation.
 
-- Parses each country’s/region's XML into a normalized internal schema, including header, lines, taxes, parties, keys like universally unique identifier (UUID) or folio.
+- Parses each country's/region's XML into a normalized internal schema, including header, lines, taxes, parties, keys like universally unique identifier (UUID) or folio.
 
 - Applies country/region‑aware validation, such as tax ID formats, document type, totals, taxes, and mandatory tags, before creating pending vendor invoices in Dynamics 365.
 
@@ -76,17 +76,19 @@ Implement a Power Automate–based XML invoice ingestion pattern that:
 
 ## Components
 
+These services and technologies automate vendor invoice ingestion, processing, validation, and integration into Dynamics 365 Finance and Operations apps.
+
 ### Email and workflow services
 
-- [Power Automate cloud flow](https://azure.microsoft.com/services/developer-tools/power-automate) is a low-code workflow automation platform that orchestrates the entire invoice processing pipeline. Cloud flows execute on demand when emails arrive with attachments, making it an ideal trigger mechanism for automated invoice ingestion.
+[Power Automate cloud flow](https://azure.microsoft.com/services/developer-tools/power-automate) is a low-code workflow automation platform that orchestrates the entire invoice processing pipeline. Cloud flows execute on demand when emails arrive with attachments, making it an ideal trigger mechanism for automated invoice ingestion.
 
 ### Data extraction and processing
 
-- [AI Builder custom prompt](/ai-builder/form-processing-model-overview) Extracts purchase order (PO) reference and UUID from PDF invoices if not present in XML; classifies invoice type in some scenarios.
+An [AI Builder custom prompt](/ai-builder/form-processing-model-overview) extracts purchase order (PO) reference and UUID from PDF invoices if not present in XML. It also classifies invoice type in some scenarios.
 
 ### ERP integration
 
-- [Dynamics 365 Finance and Operations](/dynamics365/finance) is the target system where pending vendor invoices are created. The architecture uses the native Dynamics 365 connector (VendorInvoiceHeaderEntity).
+[Dynamics 365 Finance and Operations](/dynamics365/finance) is the target system where pending vendor invoices are created. The architecture uses the native Dynamics 365 connector (VendorInvoiceHeaderEntity).
 
 ### Data integration and validation
 
@@ -102,7 +104,7 @@ Implement a Power Automate–based XML invoice ingestion pattern that:
 
 ## Considerations
 
-These considerations implement the pillars of the Power Platform Well-Architected Framework, ensuring the invoice processing solution is robust, secure, maintainable, and optimized.
+[!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
 ### Reliability
 
@@ -134,17 +136,17 @@ These considerations implement the pillars of the Power Platform Well-Architecte
 
 - **Support process**: Train finance and IT support teams on how to diagnose flow failures by using Power Automate run history, find errors in logs, and execute manual recovery procedures.
 
-- **Change management**: Evaluate all changes to parsing logic, validation rules, and Dynamics 365 mappings in a dev environment before production deployment. Use version control for Power Automate flow exports.
+- **Change management**: Evaluate all changes to parsing logic, validation rules, and Dynamics 365 mappings in a development environment before production deployment. Use version control for Power Automate flow exports.
 
 ### Performance Efficiency
 
-- **Batch mode**: When more than 200 invoices needs to be processed per day, switch to a scheduled flow that runs every 15 minutes instead of using a per-email trigger.
+- **Batch mode**: When more than 200 invoices need to be processed per day, switch to a scheduled flow that runs every 15 minutes instead of using a per-email trigger.
 
 - **Optimization**: Monitor flow run duration and parsing time. For complex XML structures, optimize expressions to minimize processing overhead. Implement caching for vendor lookups to avoid redundant Dynamics 365 queries.
 
 - **Connector throttling**: Be aware of [Power Automate limits](/power-automate/limits-and-config). For high volumes, implement queuing mechanisms by using Dataverse tables.
 
-- **Scalability**: As invoice volume grows, transition from per-email triggers to batch processing by using scheduled flows that process multiple invoices in parallel by using an apply to each loop with concurrency settings.
+- **Scalability**: As invoice volume grows, transition from per-email triggers to batch processing. Use scheduled flows that process multiple invoices in parallel by using an [Apply to each](/power-automate/apply-to-each) loop with concurrency settings.
 
 ### Experience Optimization
 
@@ -154,7 +156,7 @@ These considerations implement the pillars of the Power Platform Well-Architecte
 
 - **Clear notifications**: Structured email format with sections: Summary, Attachments, Error details, Recommended action.
 
-- **Target SLA**: 95 percent automated invoices processed within 2 hours from email receipt.
+- **Target SLA**: 95 percent automated invoices processed within two hours from email receipt.
 
 ## Responsible AI
 
@@ -192,7 +194,7 @@ Principal authors:
 Power Platform:
 
 - [Power Automate cloud flows](/power-automate/overview-cloud)
-- [Create custom prompt](/microsoft-copilot-studio/create-custom-prompt)
+- [Create a custom prompt](/microsoft-copilot-studio/create-custom-prompt)
 
 Dynamics 365:
 
@@ -203,4 +205,4 @@ Compliance:
 
 - [CFDI Specifications](https://www.sat.gob.mx/tramitesauditoriales)
 - [SUNAT Peru](https://www.sunat.gob.pe/)
-- [Well-Architected Framework](https://aka.ms/powa)
+- [Power Platform Well-Architected](https://aka.ms/powa)
