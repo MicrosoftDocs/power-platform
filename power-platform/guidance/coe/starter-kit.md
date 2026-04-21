@@ -1,5 +1,5 @@
 ---
-title: Microsoft Power Platform Center of Excellence Starter Kit, the legacy
+title: Microsoft Power Platform Center of Excellence (CoE) Starter Kit transition to Power Platform admin center
 description: Power Platform Center of Excellence Starter Kit has helped organizations establish governance and best practices. Discover how to transition to Power Platform admin center native functionality.
 author: manuelap-msft
 ms.component: pa-admin
@@ -16,7 +16,7 @@ ms.custom:
   - ai-seo-date:07/11/2025
 ---
 
-# Microsoft Power Platform Center of Excellence (CoE) Starter Kit and transition to Power Platform admin center
+# Microsoft Power Platform Center of Excellence (CoE) Starter Kit transition to Power Platform admin center
 
 [!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
