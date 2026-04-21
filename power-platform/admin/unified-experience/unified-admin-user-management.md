@@ -59,8 +59,8 @@ Each Finance and Operations environment has a single environment admin. When you
 
 You can update the environment admin user in two ways:
 
-- [Make environment admin](#make-environment-admin)    
-- [Remove system administrator role in Power Platform admin center](#remove-system-administrator-role-in-power-platform-admin-center)
+- [Make environment admin](#make-environment-admin-in-finance-and-operations-app)    
+- [Remove system administrator role in Power Platform admin center](#remove-system-admin-role-in-power-platform-admin-center)
 
 ### Make environment admin in Finance and Operations app
 
