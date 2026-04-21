@@ -42,7 +42,7 @@ Core CoE toolkit scenarios map to Power Platform admin center capabilities, as f
 
 - Use [Actions](../../admin/power-platform-advisor.md) to identify risks, enforce best practices, and take action on governance insights across your tenant.
 
-In addition to using the Power Platform admin center user interface, capabilities exist through command-line tools, APIs, and connectors. Consider using the [Microsoft Power Platform CLI](../developer/cli/introduction.md), [Microsoft Power Platform API](/rest/api/power-platform/), [Power Platform inventory API](../admin/inventory-api.md), and the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/).
+In addition to using the Power Platform admin center user interface, capabilities exist through command-line tools, APIs, and connectors. Consider using the [Microsoft Power Platform CLI](../../developer/cli/introduction.md), [Microsoft Power Platform API](/rest/api/power-platform/), [Power Platform inventory API](../../admin/inventory-api.md), and the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/).
 
 ## Related information
 

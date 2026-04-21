@@ -14,7 +14,7 @@ search.audienceType:
 
 # Feedback and support
 
-**The Power Platform CoE Starter Kit is no longer supported.** No new features are being added.
+**The Power Platform CoE Starter Kit is no longer actively maintained.** No new features are being added. Its core governance, visibility, and monitoring capabilities are part of the Power Platform admin center.
 
 If you identify issues with:
 
