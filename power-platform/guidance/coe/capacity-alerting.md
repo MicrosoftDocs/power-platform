@@ -18,7 +18,7 @@ ms.custom: sfi-image-nochange
 [!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 > [!TIP]
-> Learn how the Power Platform admin center helps you monitor license consumption and storage capacity.
+> Learn how the Power Platform admin center helps you [monitor licenses and capacity](../adoption/cds-usage.md).
 
 [Power Platform capacity](/power-platform/admin/capacity-storage) is measured at the tenant level and is made up of three types: database, log, and file capacity. When you are over your tenant's allocated capacity, [certain environment operations](/power-platform/admin/capacity-storage#changes-for-exceeding-storage-capacity-entitlements) are impacted and you'll no longer be able to create new environments within the tenant. It's therefore important to monitor your capacity and ensure enough capacity is available in the tenant. In addition to monitoring capacity, you may also have a need to cross-charge usage to other departments internally.
 
