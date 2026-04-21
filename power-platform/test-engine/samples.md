@@ -1,11 +1,11 @@
 ---
-title: Power Apps Test Engine Samples (preview)
+title: Power Apps Test Engine Samples (deprecated)
 description: Examples and sample tests for Power Apps Test Engine
 # Update samples.md that reads all the folders from https://github.com/microsoft/PowerApps-TestEngine/tree/main/samples and uses any readme.md to summarize the sample. Generate samples as table with link to the sample and a second column with the description
 author: caburk
 ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -14,8 +14,7 @@ contributors:
 
 # Power Apps Test Engine samples
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 This page provides an overview of the sample projects available in the Power Apps Test Engine repository. These samples demonstrate various testing capabilities and scenarios to help you understand how to create effective tests for your Power Platform solutions.
 
