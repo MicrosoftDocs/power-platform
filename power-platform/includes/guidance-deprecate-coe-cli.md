@@ -11,4 +11,4 @@ ms.subservice: guidance-toolkit
 >
 > If you identify a potential security issue, please report it to the [Microsoft Security Response Center](https://www.microsoft.com/msrc/faqs-report-an-issue).
 >
-> For an alternative to using the Power Platform admin center, consider using the [Microsoft Power Platform CLI](../developer/cli/introduction.md), [Power Platform API](/rest/api/power-platform/), [Power Platform inventory API](../admin/inventory-api.md), and the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/).
+> In addition to the Power Platform admin center, consider using the [Microsoft Power Platform CLI](../developer/cli/introduction.md), [Power Platform API](/rest/api/power-platform/), [Power Platform inventory API](../admin/inventory-api.md), and the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/).
