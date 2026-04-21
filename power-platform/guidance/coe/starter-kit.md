@@ -22,7 +22,7 @@ ms.custom:
 
 The Power Platform Center of Excellence (CoE) Starter Kit has historically helped organizations establish governance, visibility, and best practices for Power Platform adoption.
 
-Today, you can find these core capabilities directly within the [Microsoft Power Platform admin](../../admin/index.yml) through in-product experiences such as Inventory, Usage, Monitor, and Actions. These experiences provide real-time visibility into resources, usage, operational health, and governance insights in a centralized, enterprise-scale experience.
+Today, you can find these core capabilities directly within the [Microsoft Power Platform admin center](../../admin/index.yml) through in-product experiences such as Inventory, Usage, Monitor, and Actions. These experiences provide real-time visibility into resources, usage, operational health, and governance insights in a centralized, enterprise-scale experience.
 
 As Microsoft continues to invest in delivering these capabilities natively in product, the CoE Starter Kit is no longer receiving ongoing feature investments or updates.
 
