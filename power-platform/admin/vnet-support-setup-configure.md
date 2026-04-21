@@ -47,9 +47,6 @@ The following diagram shows the functions of the roles in the setup process for 
 
 :::image type="content" source="media/vnet-support/vnet-support-configurations.png" alt-text="Screenshot of the configurations for virtual network support in a Power Platform environment." lightbox="media/vnet-support/vnet-support-configurations.png":::
 
-> [!IMPORTANT]
-> Power Platform performs active health checks when set up within the delegated network. As a result, expect periodic requests to verify your connection to the configured DNS server via TCP on port 53. To ensure health reporting is accurate, *allowlist* this request from the subnet that makes requests. You can validate the functionality of this setting by using the diagnostic tooling with the `Test-NetworkConnectivity` command. Learn more about this topic in [Troubleshoot virtual network issues](/troubleshoot/power-platform/administration/virtual-network).
-
 ## Clarifications
 
 - You must create your [virtual networks](/azure/virtual-network/virtual-networks-overview) in Azure regions associated with your Power Platform environment. For example, if your Power Platform environment region is United States, create your virtual networks in the **eastus** and **westus** Azure regions. For a mapping of environment region to Azure regions, [review the list of supported regions](./vnet-support-overview.md#supported-regions).
@@ -113,7 +110,7 @@ You can configure and enable virtual network support by using PowerShell scripts
     ```
     ---
 
-1. **(Optional)** [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role.
+1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role. This is specifically relevant when the persona associating the enterprise policy to a power platform environment is different from the one having created the enterprise policy in azure.
 
 1. To link your newly created policy, run the following command.
 
@@ -265,7 +262,7 @@ You can configure and enable virtual network support by using PowerShell scripts
 
     :::image type="content" source="media/virtual-networks-json-script.png" alt-text="Screenshot of selecting Review and create to finalize the enterprise policy." lightbox="media/virtual-networks-json-script.png":::
 
-1. **(Optional)** [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role.
+1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role. This is specifically relevant when the persona associating the enterprise policy to a power platform environment is different from the one having created the enterprise policy in azure.
 
 1. To assign your policy to your environment, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
     1. In the navigation pane, select **Security**.
