@@ -1,11 +1,10 @@
 ---
-title: Microsoft Power Platform Center of Excellence Starter Kit
-description: Learn how the Microsoft Power Platform CoE Starter Kit helps organizations drive innovation, establish governance, and accelerate adoption of Power Apps, Power Automate, and Microsoft Copilot Studio.
-#customer intent: As an admin, I want to understand the purpose of the Microsoft Power Platform CoE Starter Kit so that I can evaluate its benefits for my organization.  
+title: Microsoft Power Platform Center of Excellence Starter Kit, the legacy
+description: Power Platform Center of Excellence Starter Kit has helped organizations establish governance and best practices. Discover how to transition to Power Platform admin center native functionality.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 04/20/2026
+ms.date: 04/21/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -17,38 +16,39 @@ ms.custom:
   - ai-seo-date:07/11/2025
 ---
 
-# Microsoft Power Platform Center of Excellence (CoE) Starter Kit
+# Microsoft Power Platform Center of Excellence (CoE) Starter Kit and transition to Power Platform admin center
 
 [!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
-A Center of Excellence or Center of Enablement (CoE) in an organization drives innovation and improvement and brings together like-minded people with similar business goals to share knowledge and success, while providing standards, consistency, and governance to the organization. Learn more about the benefits in [Establish a Microsoft Power Platform Center of Excellence](../adoption/coe.md).
+The Power Platform Center of Excellence (CoE) Starter Kit has historically helped organizations establish governance, visibility, and best practices for Power Platform adoption.
 
-The Microsoft Power Platform CoE Starter Kit is a collection of components and tools designed to help you develop a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps, Power Automate, and Microsoft Copilot Studio.
+Today, you can find these core capabilities directly within the [Microsoft Power Platform admin](../../admin/index.yml) through in-product experiences such as Inventory, Usage, Monitor, and Actions. These experiences provide real-time visibility into resources, usage, operational health, and governance insights in a centralized, enterprise-scale experience.
 
-:::row:::
-   :::column span="":::
-      :::image type="icon" source="media/i-overview-icon.svg":::<br><br>**Overview**<br>Define goals and expected outcomes of your CoE and get started.<br><ul><li>[Overview](overview.md)</li><li>[Download](<https://aka.ms/coestarterkitdownload>)</li></ul>
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="media/i-dashboard-icon.svg":::<br><br>**Admin**<br>Gain insights into your Power Platform adoption.<br><ul><li>[Set up](setup-core-components.md)</li><li>[Use](core-components.md)</li><li>[Deep dive](power-bi.md)</li></ul>
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="media/i-setup-icon.svg":::<br><br>**Govern**<br>Establish required audit and compliance processes.<br><ul><li>[Set up](setup-governance-components.md)</li><li>[Use](governance-components.md)</li><li>[Deep dive](example-processes.md)</li></ul>
-   :::column-end:::
-   :::column span="":::
-      :::image type="icon" source="media/i-get-started-icon.svg":::<br><br>**Nurture**<br>Accelerate your adoption by thriving with a community of makers.<br><ul><li>[Set up](setup-nurture-components.md)</li><li>[Use](nurture-components.md)</li></ul>
-   :::column-end:::
-:::row-end:::
+As Microsoft continues to invest in delivering these capabilities natively in product, the CoE Starter Kit is no longer receiving ongoing feature investments or updates.
 
-[Watch a quick overview](https://www.youtube.com/embed/3eF__GY0Vzg) of the CoE Starter Kit.
+## What this change means
+
+The CoE Starter Kit remains available for existing and new deployments, but it will not be enhanced with new capabilities. Issues are no longer reviewed or addressed. *However,* please report any security vulnerabilities directly through the [Microsoft Security Response Center](https://www.microsoft.com/msrc/faqs-report-an-issue).
+
+Organizations are encouraged to use the Power Platform admin center as the central experience for governance, monitoring, and insights.
+
+Core CoE toolkit scenarios map to Power Platform admin center capabilities, as follows:
+
+- Use the [Inventory](../../admin/power-platform-inventory.md) experience to view and govern all apps, flows, and agents created across your tenant.
+
+- Use the [Usage](../../admin/usage.md) experience to track adoption and identify top resources and their owners.
+
+- Use the [Monitor](../../admin/monitoring/monitoring-overview.md) experience to track the operational health of heavily used resources.
+
+- Use [Actions](../../admin/power-platform-advisor.md) to identify risks, enforce best practices, and take action on governance insights across your tenant.
+
+In addition to using the Power Platform admin center user interface, capabilities exist through command-line tools, APIs, and connectors. Consider using the [Microsoft Power Platform CLI](../developer/cli/introduction.md), [Microsoft Power Platform API](/rest/api/power-platform/), [Power Platform inventory API](../admin/inventory-api.md), and the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/).
 
 ## Related information
 
-- [Microsoft Power Platform admin guide](../../admin/admin-documentation.md)
-- [Application lifecycle management (ALM) with Microsoft Power Platform](../../alm/index.yml)
+- [Power Platform admin center documentation](../../admin/index.yml)
+- [Application lifecycle management (ALM) with Microsoft Power Platform](../../alm/index.yml).
 - [Power BI documentation](/power-bi)
 - [Power Apps documentation](/powerapps)
 - [Power Automate documentation](/power-automate)
 - [Microsoft Copilot Studio documentation](/microsoft-copilot-studio/)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

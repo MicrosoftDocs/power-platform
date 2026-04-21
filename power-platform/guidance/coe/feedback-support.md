@@ -1,25 +1,23 @@
 ---
-title: "Feedback and support for Center of Excellence (CoE) Starter Kit"
-description: "Report issues and feedback for Center of Excellence (CoE) Starter Kit and get help on Microsoft Power Platform."
+title: Feedback and support for Center of Excellence (CoE) Starter Kit
+description: Power Platform CoE Starter Kit support has ended. Find out how to report security issues and access Microsoft Support for core features.
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/10/2020
+ms.date: 04/21/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 ---
+
 # Feedback and support
 
-Although the underlying features and components used to build the Center of Excellence (CoE) Starter Kit (such as Microsoft Dataverse, admin APIs, and connectors) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to implement admin and governance capabilities in their organizations.
+**The Power Platform CoE Starter Kit is no longer supported.** No new features are being added.
 
-If you face issues with:
+If you identify issues with:
 
-- **Using the kit**: Report your issue here: [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues). (Microsoft Support won't help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
+- **Using the CoE Starter Kit**: Report a potential security issue directly to the [Microsoft Security Response Center](https://www.microsoft.com/en-us/msrc/faqs-report-an-issue). No other issues will be reviewed or addressed.
+
 - **The core features in Microsoft Power Platform**: Use your standard channel to contact Microsoft Support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
