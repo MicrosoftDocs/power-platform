@@ -110,7 +110,7 @@ You can configure and enable virtual network support by using PowerShell scripts
     ```
     ---
 
-1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role. This step is specifically relevant when the persona associating the enterprise policy to a Power Platform environment is different from the one who created the enterprise policy in Azure.
+1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role. This step is relevant when the persona associating the enterprise policy to a Power Platform environment is different from the one who created the enterprise policy in Azure.
 
 1. To link your newly created policy, run the following command.
 
@@ -262,7 +262,7 @@ You can configure and enable virtual network support by using PowerShell scripts
 
     :::image type="content" source="media/virtual-networks-json-script.png" alt-text="Screenshot of selecting Review and create to finalize the enterprise policy." lightbox="media/virtual-networks-json-script.png":::
 
-1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role. This step is specifically relevant when the persona associating the enterprise policy to a Power Platform environment is different from the one who created the enterprise policy in Azure.
+1. [Grant read access](customer-managed-key.md#grant-the-power-platform-admin-privilege-to-read-enterprise-policy) for the enterprise policy to users with the Power Platform administrator role. This step is relevant when the persona associating the enterprise policy to a Power Platform environment is different from the one who created the enterprise policy in Azure.
 
 1. To assign your policy to your environment, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
     1. In the navigation pane, select **Security**.
