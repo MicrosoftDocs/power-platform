@@ -58,7 +58,7 @@ This use case is based on a company's approach to establishing a robust, secure,
 
 ### Business challenge
 
-A multinational company receives large volumes of supplier invoices in XML format from Peru (SUNAT CPE/UBL&ndash;Superintendencia Nacional de Aduanas y de Administración Tributaria Comprobante de Pago Electrónico/Universal Business Language), Chile (SII DTE - Servicio de Impuestos Internos Documento Tributario Electrónico), and Mexico (SAT CFDI - Servicio de Administración Tributaria Comprobante Fiscal Digital por Internet).
+A multinational company receives large volumes of supplier invoices in XML format from Peru (SUNAT CPE/UBL&ndash;Superintendencia Nacional de Aduanas y de Administración Tributaria Comprobante de Pago Electrónico/Universal Business Language), Chile (SII DTE&ndash;Servicio de Impuestos Internos Documento Tributario Electrónico), and Mexico (SAT CFDI&ndash;Servicio de Administración Tributaria Comprobante Fiscal Digital por Internet).
 
 Manually downloading, interpreting, and keying these XML files into Dynamics 365 (or any ERP system) is slow, error‑prone, and doesn't consistently enforce local e‑invoicing rules. Teams must also reconcile XML data with PDFs and validate vendor reference data and tax identification number (TIN).
 

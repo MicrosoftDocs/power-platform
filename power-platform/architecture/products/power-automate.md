@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 02/11/2026
+ms.date: 04/21/2026
 ---
 
 # Power Automate reference architectures and solution ideas
@@ -41,6 +41,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Integrate Power Platform with SAP for data management**](../reference-architectures/arch-pattern-sap.md) | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
 | [**Use Dataverse background operations**](../reference-architectures/dataverse-background-operations.md) | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | [**Reduce infrastructure challenges with hosted RPA in Power Automate​**](../reference-architectures/rpa-scale-operations.md) | Use hosted RPA to reduce the time and effort needed to procure, set up, operationalize, and maintain infrastructure for robotic process automations. |
+| [**Automate vendor invoice processing with Power Automate and AI Builder**](../reference-architectures/vendor-invoice-integration.md) | Learn how to automate vendor invoice ingestion by extracting and validating XML invoice data using Power Automate and AI Builder. |
 
 ## Solution ideas
 
