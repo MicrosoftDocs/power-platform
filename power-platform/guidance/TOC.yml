@@ -237,6 +237,8 @@
       items:
         - name: Power Platform white papers
           href: white-papers/index.md
+        - name: Administering and governing the Power Platform for Enterprise
+          href: https://aka.ms/PowerPlatformAdministrationandGovernance
         - name: Migrating apps and flows from the default environment
           href: white-papers/migrating-from-default-environment.md
     - name: Resources
