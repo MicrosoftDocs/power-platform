@@ -14,8 +14,7 @@ search.audienceType:
 
 # Install the CoE CLI (Deprecated)
 
-> [!NOTE]
-> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+[!INCLUDE [guidance-deprecate-coe-cli](../../../includes/guidance-deprecate-coe-cli.md)]
 
 To install the Center of Excellence (CoE) command line interface (CLI):
 
