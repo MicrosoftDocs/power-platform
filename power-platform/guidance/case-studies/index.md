@@ -7,7 +7,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.topic: overview
-ms.date: 04/17/2026
+ms.date: 04/22/2026
 ---
 
 # Real-world case studies
