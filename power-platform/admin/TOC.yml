@@ -965,7 +965,7 @@
               href: disable-delete-address-records.md
             - name: View and take action on bulk deletion jobs
               href: view-take-action-bulk-deletion-jobs.md
-            - name: Restore deleted table records (preview)
+            - name: Restore deleted table records
               href: restore-deleted-table-records.md
             - name: Remove user personal data
               href: remove-user-personal-data.md

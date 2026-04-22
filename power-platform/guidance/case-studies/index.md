@@ -7,7 +7,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.topic: overview
-ms.date: 03/18/2026
+ms.date: 04/22/2026
 ---
 
 # Real-world case studies
@@ -47,6 +47,7 @@ Each case study provides an in-depth look at how organizations build application
 | [John Cockerill streamlines enterprise business processes](engineering-time-tracking.md) | Covers how international engineering company John Cockerill uses Power Platform to develop enterprise apps. |
 | [La Trobe University supercharges academic productivity with AI and Copilot Studio](latrobe-supercharges.md) | Covers how La Trobe University enhances academic productivity and support services with AI and Copilot Studio. |
 | [Lloyds Banking Group bridges language barriers](lloyds-banking-group.md) | Covers how Lloyds Banking Group uses Power Apps and Azure AI services to deliver real-time, inclusive language support in banking. |
+| [Telecom provider mobilezone modernizes service delivery using Microsoft Copilot Studio](mobilezone-modernizes-service-delivery.md) | Covers how mobilezone uses Copilot Studio, Dynamics 365, and MCP servers to modernize service delivery, improve customer interactions, and streamline internal operations. |
 | [Nexi Group revolutionizes customer support with Copilot Studio](nexi-revolutionizes-customer-support.md) | Covers how Nexi Group uses Copilot Studio and Azure AI services to streamline customer interactions, reduce contact center workload, and modernize card-service support. |
 | [Rabobank embraces conversational banking with Copilot Studio](rabobank-conversational-banking.md) | Covers how Rabobank uses Copilot Studio to enhance customer service through conversational AI with text and voice-enabled chatbot functionality. |
 | [Signetic transforms healthcare operations with Power Platform and Copilot Studio](signetic-transforms-healthcare.md) | Covers how Signetic revolutionizes healthcare operations with Power Platform and Copilot Studio to improve workflow efficiency, and patient care. |
