@@ -46,7 +46,6 @@ A cleanup mechanism in Power Platform automatically removes environments that ar
 > [!IMPORTANT]
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center.
 >
-> Inactivity-based cleanup doesn't apply to [early release cycle environments](early-release.md) or [Managed Environments](managed-environment-overview.md).
 
 ## Developer environments
 A cleanup mechanism in Power Platform automatically removes developer environments that aren't being used based on the following schedule. After 30 days of inactivity, environments are automatically disabled. If, after 15 days, the [environment isn't re-enabled](#re-enable-a-disabled-environment), the environment is deleted. You have seven days to [recover the environment](recover-environment.md) once it has been deleted.
@@ -65,6 +64,44 @@ The environment's administrators and the user who created the environment are no
 | 23 days with no [user activity](#definition-of-user-activity) | A warning email is sent stating that the environment will be disabled and a countdown is displayed in the **Environment state** on the **Environments** list page and the **Environment** page. |
 | 27 days with no [user activity](#definition-of-user-activity) | A second warning email is sent stating that the environment will be disabled. |
 | 30 days with no [user activity](#definition-of-user-activity) | The environment is disabled. An email notice is sent stating that the environment has been disabled. The **Environment state** is disabled on the **Environments** list page and the **Environment** page. |
+| 7 days after the environment is disabled | A warning is sent stating that the environment will be deleted and a countdown is displayed in the **Environment state** on the **Environments** list page and the **Environment** page. |
+| 11 days after the environment is disabled | A second warning is sent stating that the environment will be deleted. |
+| 15 days after the environment is disabled | The environment is deleted. An email notice is sent stating that the environment has been deleted. |
+
+A warning message appears on the **Environments** list page and **Environment** page when an environment is disabled.
+
+### Timeline for unused developer environments that are *managed*
+
+Personal developer environments that are managed gets 60 day inactivity threshold instead of 30 days. After 60 days of inactivity, the environment's administrators and the user who created the environment are notified by email according to the schedule described in the following table.
+
+| State of environment | What to expect |
+| --- | --- |
+| 53 days with no [user activity](#definition-of-user-activity) | A warning email is sent stating that the environment will be disabled and a countdown is displayed in the **Environment state** on the **Environments** list page and the **Environment** page. |
+| 57 days with no [user activity](#definition-of-user-activity) | A second warning email is sent stating that the environment will be disabled. |
+| 60 days with no [user activity](#definition-of-user-activity) | The environment is disabled. An email notice is sent stating that the environment has been disabled. The **Environment state** is disabled on the **Environments** list page and the **Environment** page. |
+| 7 days after the environment is disabled | A warning is sent stating that the environment will be deleted and a countdown is displayed in the **Environment state** on the **Environments** list page and the **Environment** page. |
+| 11 days after the environment is disabled | A second warning is sent stating that the environment will be deleted. |
+| 15 days after the environment is disabled | The environment is deleted. An email notice is sent stating that the environment has been deleted. |
+
+A warning message appears on the **Environments** list page and **Environment** page when an environment is disabled.
+
+## Sandbox environments
+A cleanup mechanism in Power Platform automatically removes sandbox environments that aren't being used based on the following schedule. After 60 days of inactivity, environments are automatically disabled. If, after 15 days, the [environment isn't re-enabled](#re-enable-a-disabled-environment), the environment is deleted. You have seven days to [recover the environment](recover-environment.md) once it has been deleted.
+
+As part of this cleanup process, you can expect the following:
+- Admins receive email notifications which warn of upcoming disablement or deletion.
+- [Any activity triggered](#trigger-activity-in-an-inactive-environment) on the environment or [re-enabling the environment](#re-enable-a-disabled-environment) will reset the inactivity period.
+- Environments are deleted 15 days after being disabled due to inactivity.
+  
+### Timeline for unused sandbox environments
+
+After 60 days of inactivity, the environment's administrators and the user who created the environment are notified by email according to the schedule described in the following table.
+
+| State of environment | What to expect |
+| --- | --- |
+| 53 days with no [user activity](#definition-of-user-activity) | A warning email is sent stating that the environment will be disabled and a countdown is displayed in the **Environment state** on the **Environments** list page and the **Environment** page. |
+| 57 days with no [user activity](#definition-of-user-activity) | A second warning email is sent stating that the environment will be disabled. |
+| 60 days with no [user activity](#definition-of-user-activity) | The environment is disabled. An email notice is sent stating that the environment has been disabled. The **Environment state** is disabled on the **Environments** list page and the **Environment** page. |
 | 7 days after the environment is disabled | A warning is sent stating that the environment will be deleted and a countdown is displayed in the **Environment state** on the **Environments** list page and the **Environment** page. |
 | 11 days after the environment is disabled | A second warning is sent stating that the environment will be deleted. |
 | 15 days after the environment is disabled | The environment is deleted. An email notice is sent stating that the environment has been deleted. |
