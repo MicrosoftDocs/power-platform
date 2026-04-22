@@ -41,11 +41,10 @@ If an environment has already been deleted, you have a limited window of time to
 
 ## Inactivity-based cleanup
 
-A cleanup mechanism in Power Platform automatically removes environments that aren't being used. Only Default, Developer, Sandbox, and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
+A cleanup mechanism in Power Platform automatically removes environments that aren't being used. Only default, developer, sandbox, and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
 
 > [!IMPORTANT]
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center.
->
 
 ## Developer environments
 A cleanup mechanism in Power Platform automatically removes developer environments that aren't being used based on the following schedule. After 30 days of inactivity, environments are automatically disabled. If, after 15 days, the [environment isn't re-enabled](#re-enable-a-disabled-environment), the environment is deleted. You have seven days to [recover the environment](recover-environment.md) once it has been deleted.
