@@ -78,6 +78,6 @@ More information: [Core ALM maker add](https://aka.ms/coe-cli/help/alm/maker/add
 
 ## Read next
 
-- Complete the [Install overview](./overview.md#install-overview).
+- Complete the [Installation overview](./overview.md#install-overview).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

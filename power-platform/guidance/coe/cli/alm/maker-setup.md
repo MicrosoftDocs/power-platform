@@ -43,7 +43,7 @@ More information: [CoE ALM user add](https://aka.ms/coe-cli/help/alm/user/add)
 
 ## Maker create solution
 
-Power Platform solutions managed by the ALM Accelerator require a branch to be created in an Azure DevOps repository. This branch, called a "solution branch," allows the maker to build and test changes. Once changes have been verified, they can be merged back into the main branch to deploy to production. The branch command creates a solution branch in Azure DevOps and configures the required Azure Pipelines for the created branch.
+Power Platform solutions managed by the ALM Accelerator require a branch to be created in an Azure DevOps repository. This branch, called a "solution branch," allows the maker to build and test changes. Once changes are verified, they can be merged back into the main branch to deploy to production. The branch command creates a solution branch in Azure DevOps and configures the required Azure Pipelines for the created branch.
 
 1. Switch to the developer environment.
 
@@ -92,8 +92,8 @@ Power Platform solutions managed by the ALM Accelerator require a branch to be c
 1. Select **COMMIT SOLUTION**.
 1. Select the icon to the right of **COMMIT SOLUTION** when it changes to the waiting icon.
 
-    1. Permit permissions for the pipeline to run (variable group, service connection, pipeline).    
-    1. Then re-run the pipeline job.
+    1. Permit permissions for the pipeline to run (variable group, service connection, pipeline).
+    1. Then rerun the pipeline job.
 
 ## Post set up checks
 
@@ -116,15 +116,15 @@ After setting up an advanced maker, you might need to verify the following setup
    ![Azure DevOps Permit](../media/devops-pipeline-permit.jpg)
 
 1. **Optional**. By default, the global variables, service connections, and repositories are restricted and access for each pipeline must be configured. To grant access to all pipelines, follow the instructions:
-     1. **Service Connections** - Go to Project Settings -> Service Connections -> Edit Service Connection -> Grant access permissions to all pipelines. Do this for each Service Connection.
+     1. **Service Connections** - Go to Project Settings -> Service Connections -> Edit Service Connection -> Grant access permissions to all pipelines. Complete this step for each Service Connection.
      1. **Variable Group** - Go to Pipelines -> Library -> Edit alm-accelerator-variable-group -> Pipeline Permissions -> Select ... -> Open Access
      1. **Repository** - Go to Project Settings -> Repositories -> select each pipeline -> Security -> Pipeline permissions -> Select ... -> Open Access
 
 > [!NOTE]
-> If you're using a free Azure subscription, you may receive the error message, "No hosted parallelism has been purchased or granted." To resolve this issue, go to [https://aka.ms/azpipelines-parallelism-request](https://aka.ms/azpipelines-parallelism-request) and request an Azure Pipeline build compute.
+> If you're using a free Azure subscription, you might receive the error message, "No hosted parallelism has been purchased or granted." To resolve this issue, go to [https://aka.ms/azpipelines-parallelism-request](https://aka.ms/azpipelines-parallelism-request) and request an Azure Pipeline build compute.
 
 ## Read next
 
-- Complete the [Install Overview](./overview.md#install-overview)
+- Complete the [Installation overview](./overview.md#install-overview)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

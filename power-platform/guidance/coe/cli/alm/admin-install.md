@@ -8,7 +8,7 @@ ms.date: 09/26/2024
 ms.update-cycle: 3650-days
 ms.subservice: guidance-toolkit
 ms.topic: install-set-up-deploy
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 ---
@@ -17,26 +17,24 @@ search.audienceType:
 
 [!INCLUDE [guidance-deprecate-coe-cli](../../../../includes/guidance-deprecate-coe-cli.md)]
 
-As a first step you'll need to complete the initial steps of an ALM deployment as an administrator. The commands below allow you to quickly automate the install. When you've completed these steps, you can add makers and set up connections to their Power Platform development environments.
+First, complete the initial ALM deployment steps as an administrator. Use the following commands to automate the installation. After you complete these steps, add makers and set up connections to their Power Platform development environments.
 
 ## Overview
 
 The following roles are involved with Power Platform.
 
-- Administrator
-  - Microsoft Entra ID - Permissions to create Microsoft Entra applications with [Admin Level Consent](/azure/active-directory/manage-apps/grant-admin-consent).
-  - Power Platform - Environment administrator to create validation, test, and production environments.
-  - Azure DevOps - Organization and project administrator.
-- Maker
-  - Power Platform - Create development environment.
-  - Azure DevOps - Azure DevOps project user, create solution branch.
+- Administrator:
+  - Microsoft Entra ID: Permissions to create Microsoft Entra applications with [Admin Level Consent](/azure/active-directory/manage-apps/grant-admin-consent).
+  - Power Platform: Environment administrator to create validation, test, and production environments.
+  - Azure DevOps: Organization and project administrator.
+- Maker:
+  - Power Platform: Create development environment.
+  - Azure DevOps: Azure DevOps project user, create solution branch.
 
-It is assumed that this installation will be run by a single user that has the following rights:
+It is assumed that the installation will be run by a single user with the following rights:
 
 - Power Platform [administration role](/microsoft-365/admin/add-users/about-admin-roles)
-
 - DevOps administrator rights
-
 - Microsoft Entra administrator rights
 
 ## Before you start
@@ -44,9 +42,7 @@ It is assumed that this installation will be run by a single user that has the f
 Complete [Before You Start](./before-you-start.md) to ensure that:
 
 - Power Platform environments have been created.
-
 - The Azure DevOps organization and Azure DevOps project have been created.
-
 - The latest version of the CoE CLI is installed.
 
 ## Initial install
@@ -57,7 +53,7 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
    coe alm generate install -o quickstart.json
    ```
 
-   This command generates a file similar to the one below.
+   This command generates a file similar to the following:
 
    ```json
    {
@@ -91,7 +87,7 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
    }
    ```
 
-More information: [COE ALM generate install](https://aka.ms/coe-cli/help/alm/install)
+    More information: [COE ALM generate install](https://aka.ms/coe-cli/help/alm/install)
 
 1. Review the JSON and install using the following command.
 
@@ -99,14 +95,14 @@ More information: [COE ALM generate install](https://aka.ms/coe-cli/help/alm/ins
    coe alm install -f quickstart.json
    ```
 
-More information: [CoE ALM generate install](https://aka.ms/coe-cli/help/alm/install)
+    More information: [CoE ALM generate install](https://aka.ms/coe-cli/help/alm/install)
 
-If you're prompted to create an HTTP with Microsoft Entra ID connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**.
+    If you're prompted to create an HTTP with Microsoft Entra ID connection, enter `https://graph.microsoft.com` for both the **Base Resource URL** and **Azure AD Resource URI**.
 
 1. [Update permissions for the project build service](../../setup-almacceleratorpowerplatform.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git repositories.
 
 ## Read next
 
-- Complete the [Install Overview](./overview.md#install-overview).
+- Complete the [Installation overview](./overview.md#install-overview).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
