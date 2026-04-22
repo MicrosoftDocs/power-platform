@@ -15,6 +15,10 @@ ms.reviewer: jhaskett-msft
 
 The Microsoft Power Platform adoption guidance is developed collaboratively with customers, partners, and internal Microsoft teams. New and updated content is released based on new learnings and product changes. Use the new releases to validate and refine your Power Platform adoption approach.
 
+## April 2026
+
+Added a link to our list of whitepapers: [Administering and governing the Power Platform for Enterprise](https://aka.ms/PowerPlatformAdministrationandGovernance).
+
 ## February 2026
 
 The ALM Accelerator is deprecated and no new features are being added. Use [Pipelines in Power Platform](/power-platform/alm/pipelines) to bring ALM automation capabilities to Power Platform and Dynamics 365 services. Pipelines can be used with [source code integration](/power-platform/alm/git-integration/overview) or extended to integrate with other providers.
