@@ -4,7 +4,7 @@ description: Learn how to use the Power Platform admin center to view restore de
 author: rijoshi1
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/17/2026
+ms.date: 04/22/2026
 ms.subservice: admin
 ms.author: rijoshi
 ms.reviewer: sericks
@@ -25,7 +25,7 @@ ms.custom: sfi-image-nochange
 
 As part of the regular business processes with Microsoft Dataverse, users often delete records or transactions either manually or systematically, either planned or by accident, via system processes, single selection, multiple selections, and bulk deletion. Retrieving deleted data is hard and often records aren't always recoverable. To address this limitation, manage deleted records from this environment is available to recover table record data from most types of delete scenarios within a specified configurable time frame.
 
-Developers should read [Restore deleted records with code (preview)](/power-apps/developer/data-platform/restore-deleted-records) to learn how to interact with this feature using code.
+Developers should read [Restore deleted records with code](/power-apps/developer/data-platform/restore-deleted-records) to learn how to interact with this feature using code.
 
 ## Prerequisites
 
@@ -47,8 +47,6 @@ To restore deleted Dataverse records, turn on the **Keep deleted Dataverse recor
 ## View and restore the deleted records in Power Apps
 
 You can proactively manage the storage used by deleted records. At any time, you can free up this storage by selecting the **Delete all records** option, which permanently removes all deleted items currently consuming storage.
-
-Only System Administrators can view and act on the deleted records during the preview.
 
 ### Power Platform admin center
 
@@ -481,4 +479,4 @@ Your environment might return different results. Tables might not be supported i
 
 ### Related information
 
-[Restore deleted records with code (preview)](/power-apps/developer/data-platform/restore-deleted-records)
+[Restore deleted records with code](/power-apps/developer/data-platform/restore-deleted-records)
