@@ -22,7 +22,7 @@ In this case study, you learn how Tiendas CUADRA uses Copilot Studio, Power Auto
 
 Tiendas CUADRA operates an omnichannel customer service model that includes phone, website chat, email, social media, and WhatsApp. As digital commerce grew, customer expectations changed. Customers wanted immediate answers for order tracking, product availability, promotions, and delivery timelines, regardless of the time of day.
 
-The existing model relied entirely on customer service representatives. While it worked at steady volumes, it struggled outside business hours and during peak retail seasons, such as the Mexican Black Friday "El Buen Fin" and around Christmas. Routine requests like "track my order" overwhelmed a four‑person customer service team, limiting availability and increasing response times.
+The existing model relied entirely on customer service representatives. While it worked at steady volumes, it struggled outside business hours and during peak retail seasons, such as the Mexican Black Friday "El Buen Fin" and around Christmas. Routine requests like "track my order" overwhelmed their customer service team, limiting availability and increasing response times.
 
 > We needed to be available 24/7. Customers want to know where their order is, if a product is in stock, or where they can buy it—at any moment. Before, all of that depended on people answering phones, emails, or chat messages.
 >
