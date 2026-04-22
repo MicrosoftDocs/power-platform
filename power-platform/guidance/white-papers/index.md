@@ -7,7 +7,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 02/16/2026
+ms.date: 04/22/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

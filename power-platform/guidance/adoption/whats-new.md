@@ -17,7 +17,7 @@ The Microsoft Power Platform adoption guidance is developed collaboratively with
 
 ## April 2026
 
-Added a link to our list of whitepapers: [Administering and governing the Power Platform for Enterprise](https://aka.ms/PowerPlatformAdministrationandGovernance).
+Added a link to our list of whitepapers for [Administering and governing the Power Platform for Enterprise](https://aka.ms/PowerPlatformAdministrationandGovernance).
 
 ## February 2026
 
