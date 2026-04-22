@@ -48,6 +48,11 @@ For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](..
 
 These users are the regular synchronized users from Microsoft Entra ID.
 
+### Agent users (Preview)
+
+These users have [Microsoft Entra Agent Identities](https://learn.microsoft.com/en-us/entra/agent-id/agent-identities) and are added into the Dataverse environment to get data access.
+
+
 ### Application users
 
 Identified by the presence of ApplicationId attribute in the system user record. To check the Microsoft Entra application ID, go to [View or edit the details of an application user](manage-application-users.md#view-or-edit-the-details-of-an-application-user).
@@ -366,6 +371,22 @@ You then need to remove the license from the account.
 5. Click **Save changes** to apply the changes.
 
 Go back to the customer engagement app and confirm that the non-interactive user account **Access Mode** is still set for **Non-interactive**.  
+
+## Create an Agent user (Preview)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Users + permissions**, then select **Agents**.
+1. Select **Add agent** from the command bar.
+1. Enter an agent name and choose the agent user from the search list, then select **Add** to add agent.
+1. On the **Manage security roles** page, select a security role for your agent.
+1. Select **Save** to apply the changes.
+
+
+For step-by-step information about creating a Microsoft Entra Agent Identity, see [Create agent identities](https://learn.microsoft.com/entra/agent-id/create-delete-agent-identities?tabs=microsoft-graph-api)
 
 ## Create an application user
 
