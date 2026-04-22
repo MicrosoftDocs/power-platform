@@ -1,13 +1,13 @@
 ---
-title: Restore deleted Microsoft Dataverse table records (preview)
+title: Restore deleted Microsoft Dataverse table records
 description: Learn how to use the Power Platform admin center to view restore deleted Microsoft Dataverse table records.
 author: rijoshi1
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/06/2026
+ms.date: 04/22/2026
 ms.subservice: admin
 ms.author: rijoshi
-ms.reviewer: ellenwehrle
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
@@ -21,21 +21,11 @@ ms.contributors:
 ms.custom: sfi-image-nochange
 ---
 
-# Restore deleted Microsoft Dataverse table records (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Restore deleted Microsoft Dataverse table records
 
 As part of the regular business processes with Microsoft Dataverse, users often delete records or transactions either manually or systematically, either planned or by accident, via system processes, single selection, multiple selections, and bulk deletion. Retrieving deleted data is hard and often records aren't always recoverable. To address this limitation, manage deleted records from this environment is available to recover table record data from most types of delete scenarios within a specified configurable time frame.
 
-Developers should read [Restore deleted records with code (preview)](/power-apps/developer/data-platform/restore-deleted-records) to learn how to interact with this feature using code.
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-> - This feature is currently being deployed and might not yet be available in your region.
-> - During **preview**, storage from deleted records isn't counted toward your organization’s capacity. Starting **GA**, this storage is counted toward your organization’s database capacity.
-> - The deleted records feature **isn't available** for [Dataverse for Teams](about-teams-environment.md), trial environments, developer environments, or default environments.
+Developers should read [Restore deleted records with code](/power-apps/developer/data-platform/restore-deleted-records) to learn how to interact with this feature using code.
 
 ## Prerequisites
 
@@ -57,8 +47,6 @@ To restore deleted Dataverse records, turn on the **Keep deleted Dataverse recor
 ## View and restore the deleted records in Power Apps
 
 You can proactively manage the storage used by deleted records. At any time, you can free up this storage by selecting the **Delete all records** option, which permanently removes all deleted items currently consuming storage.
-
-Only System Administrators can view and act on the deleted records during the preview.
 
 ### Power Platform admin center
 
@@ -100,11 +88,14 @@ You can restore records deleted through the table relationship cascade behavior 
 
 ### Deleted records don't show after turning on the deleted records feature
 
-Deleted records might not appear when the  feature is turned on. Verify that the **Enable keeping deleted data for Organization** system job is turned on. Go to the Power Platform admin center, select the environment where this issue is happening, and select **Settings** > **Audit and logs** > **System jobs**. On the **All System Jobs** page, search for **Enable keeping deleted data**. Confirm that the **Status Reason** is **Succeeded**.
+In some cases, deleted records may not appear even when the feature is enabled. Verify that the **Enable keeping deleted data for Organization** system job is turned on. Go to the Power Platform admin center, select the environment where this issue is happening, and select **Settings** > **Audit and logs** > **System jobs**. On the **All System Jobs** page, search for **Enable keeping deleted data for Organization**. Confirm that the **Status Reason** is **Succeeded**.
+
+> [!NOTE]
+> Note that **Enable keeping deleted data for Organization** is a system job that's periodically cleaned up, so it may not be visible at a later date.
 
 If the **Status Reason** isn't **Succeeded** and it's been at least 30 minutes since you enabled the feature, or despite the success state appearing correct, and you're not seeing the **Restore** option for deleted records, contact a [Microsoft support representative and create a support request](get-help-support.md).
 
-Deleted records only appear after you turn on the deleted records feature and for records deleted after enabling the feature. You can't restore records deleted before the deleted records feature was enabled.
+Deleted records appear only after the deleted records feature is successfully enabled, and only for records deleted after it's turned on. Records deleted before enabling the feature can't be restored.
 
 ### Records deleted through cascading behaviors aren't present in Deleted Records view
 
@@ -124,11 +115,11 @@ Some tables don't support restoring deleted records. These tables include:
 
 During the preview, some tables with large numbers of columns aren't currently supported. Currently, the maximum number of columns is 400. This value might go higher or lower as Microsoft determines the correct threshold. Check the attribute count for a specific entity using **{organizationUrl}/api/data/v9.0/EntityDefinitions(LogicalName='account')/Attributes?$count=true**.
 
-Developers can run a [query that returns which tables are enabled for deleted records feature](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-are-enabled-for-recycle-bin) in your environment.
+Developers can run a [query that returns which tables are enabled for deleted records feature](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-are-enabled-for-deleted-record-keeping) in your environment.
 
 ### Tables that the deleted records feature doesn't support
 
-As of August 2024, the query to [detect which tables don't have deleted records feature enabled](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-dont-have-recycle-bin-enabled) returns these tables in an uncustomized Dataverse environment.
+As of August 2024, the query to [detect which tables don't have deleted records feature enabled](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-arent-enabled-for-deleted-record-keeping) returns these tables in an uncustomized Dataverse environment.
 
 Your environment might return different results. Tables might not be supported if you customize them by adding a large number of columns.
 
@@ -488,4 +479,4 @@ Your environment might return different results. Tables might not be supported i
 
 ### Related information
 
-[Restore deleted records with code (preview)](/power-apps/developer/data-platform/restore-deleted-records)
+[Restore deleted records with code](/power-apps/developer/data-platform/restore-deleted-records)
