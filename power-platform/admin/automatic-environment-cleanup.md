@@ -70,9 +70,9 @@ The environment's administrators and the user who created the environment are no
 
 A warning message appears on the **Environments** list page and **Environment** page when an environment is disabled.
 
-### Timeline for unused developer environments that are *managed*
+### Timeline for unused developer environments that are *Managed Environments*
 
-Personal developer environments that are managed gets 60 day inactivity threshold instead of 30 days. After 60 days of inactivity, the environment's administrators and the user who created the environment are notified by email according to the schedule described in the following table.
+Personal developer environments that are Managed Environments gets 60 day inactivity threshold instead of 30 days. After 60 days of inactivity, the environment's administrators and the user who created the environment are notified by email according to the schedule described in the following table.
 
 | State of environment | What to expect |
 | --- | --- |
@@ -86,11 +86,11 @@ Personal developer environments that are managed gets 60 day inactivity threshol
 A warning message appears on the **Environments** list page and **Environment** page when an environment is disabled.
 
 ## Sandbox environments
-A cleanup mechanism in Power Platform automatically removes sandbox environments that aren't being used based on the following schedule. After 60 days of inactivity, environments are automatically disabled. If, after 15 days, the [environment isn't re-enabled](#re-enable-a-disabled-environment), the environment is deleted. You have seven days to [recover the environment](recover-environment.md) once it has been deleted.
+A cleanup mechanism in Power Platform automatically removes sandbox environments that aren't being used based on the following schedule. After 60 days of inactivity, environments are automatically disabled. If, after 15 days, the [environment isn't re-enabled](#re-enable-a-disabled-environment), the environment is deleted. You have seven days to [recover the environment](recover-environment.md) after it has been deleted.
 
 As part of this cleanup process, you can expect the following:
 - Admins receive email notifications which warn of upcoming disablement or deletion.
-- [Any activity triggered](#trigger-activity-in-an-inactive-environment) on the environment or [re-enabling the environment](#re-enable-a-disabled-environment) will reset the inactivity period.
+- [Any activity triggered](#trigger-activity-in-an-inactive-environment) on the environment or [re-enabling the environment](#re-enable-a-disabled-environment) resets the inactivity period.
 - Environments are deleted 15 days after being disabled due to inactivity.
   
 ### Timeline for unused sandbox environments
@@ -117,7 +117,7 @@ A cleanup mechanism in Power Platform automatically removes Default environments
 - Default environments with Microsoft 365 agents or Microsoft Planner are excluded from deletion.
 - Admins receive two warning notifications before the Default environment is deleted due to inactivity. Default environments are deleted 30 days after the first notification.
 
-As part of this cleanup process, a new replacement Default environment without Dataverse is created, with an option to add Dataverse later. The original Default environment is deleted, but can be recovered as a sandbox environment within seven days. [Any activity triggered](#trigger-activity-in-an-inactive-environment) on the environment resets the inactivity period.
+As part of this cleanup process, a new replacement default environment without Dataverse is created, with an option to add Dataverse later. The original default environment is deleted, but can be recovered as a sandbox environment within seven days. [Any activity triggered](#trigger-activity-in-an-inactive-environment) on the environment resets the inactivity period.
 
 ### Timeline for unused Default environments
 
@@ -127,9 +127,9 @@ The environment's administrators are notified by email according to the followin
 | --- | --- | -- |
 | 372 days with no [user activity](#definition-of-user-activity) | 90 days with no [user activity](#definition-of-user-activity) | A warning is sent stating that the environment will be deleted and a countdown is displayed in the **Environment state** on the **Environments** list page and the **Environment** page. |
 | 387 days with no [user activity](#definition-of-user-activity) | 105 days with no [user activity](#definition-of-user-activity) | A second warning is sent stating that the environment will be deleted.|
-| 402 days with no [user activity](#definition-of-user-activity) | 120 days with no [user activity](#definition-of-user-activity) | The environment is deleted, a new Default environment without Dataverse is created for the tenant. An email notice is sent stating that the environment has been deleted. |
+| 402 days with no [user activity](#definition-of-user-activity) | 120 days with no [user activity](#definition-of-user-activity) | The environment is deleted, a new default environment without Dataverse is created for the tenant. An email notice is sent stating that the environment has been deleted. |
 
-A warning message appears on the **Environments** list page and **Environment** page when the Default environment is within 30 days of deletion.
+A warning message appears on the **Environments** list page and **Environment** page when the default environment is within 30 days of deletion.
 
 ### Definition of user activity
 
