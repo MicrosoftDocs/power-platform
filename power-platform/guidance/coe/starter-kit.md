@@ -47,7 +47,7 @@ In addition to using the Power Platform admin center user interface, capabilitie
 ## Related information
 
 - [Power Platform admin center documentation](../../admin/index.yml)
-- [Application lifecycle management (ALM) with Microsoft Power Platform](../../alm/index.yml).
+- [Application lifecycle management (ALM) with Microsoft Power Platform](../../alm/index.yml)
 - [Power BI documentation](/power-bi)
 - [Power Apps documentation](/powerapps)
 - [Power Automate documentation](/power-automate)
