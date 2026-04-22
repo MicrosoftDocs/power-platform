@@ -6,8 +6,10 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 06/20/2025
+ms.date: 04/22/2026
 ms.subservice: power-fx
+ms.collection:
+  - ai-assisted
 ms.author: gregli
 search.audienceType:
   - maker
@@ -134,6 +136,109 @@ After the previous formulas have been evaluated, the data source ends with these
 | Formula                                                                                                                         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Result                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | **Patch(&nbsp;{&nbsp;Name:&nbsp;"James",&nbsp;Score:&nbsp;90&nbsp;}, {&nbsp;Name:&nbsp;"Jim",&nbsp;Passed:&nbsp;true&nbsp;} )** | Merges two records outside of a data source:<br><ul><li>The values in the **Name** column of each record don't match. The result contains the value (**Jim**) in the record that's closer to the end of the argument list instead of the value (**James**) in the record that's closer to the start.</li><li>The first record contains a column (**Score**) that doesn't exist in the second record. The result contains that column with its value (**90**).</li><li>The second record contains a column (**Passed**) that doesn't exist in the first record. The result contains that column with its value (**true**). | {&nbsp;Name:&nbsp;"Jim", Score:&nbsp;90, Passed:&nbsp;true&nbsp;} |
+
+#### Modify or create a set of records (in a data source)
+
+When using **Patch** with tables instead of single records, you can create or modify multiple records in a single call. The return value is a table of records that corresponds one-for-one with the input tables.
+
+This example updates the **Quantity** for multiple flavors in the **IceCream** data source at once:
+
+```power-fx
+Patch(
+    IceCream,
+    Table(
+        { ID: 1, Flavor: "Chocolate", Quantity: 150 },
+        { ID: 2, Flavor: "Vanilla", Quantity: 200 }
+    ),
+    Table(
+        { Quantity: 300 },
+        { Quantity: 400 }
+    )
+)
+```
+
+The result is a table with the updated records: `{ ID: 1, Flavor: "Chocolate", Quantity: 300 }` and `{ ID: 2, Flavor: "Vanilla", Quantity: 400 }`.
+
+This example creates multiple new records using **Defaults**:
+
+```power-fx
+Patch(
+    IceCream,
+    ForAll(
+        [ "Mint", "Peach" ],
+        Defaults( IceCream )
+    ),
+    Table(
+        { Flavor: "Mint", Quantity: 60 },
+        { Flavor: "Peach", Quantity: 80 }
+    )
+)
+```
+
+> [!NOTE]
+> When you use **Patch** with tables, the number of records in each change table must match the number of records in the base table. Otherwise, an error occurs.
+
+To detect errors when you modify multiple records, use **[IfError](function-iferror.md)** or check the result with the **[Errors](function-errors.md)** function:
+
+```power-fx
+Set(
+    PatchResult,
+    Patch(
+        IceCream,
+        baseRecords,
+        changeRecords
+    )
+);
+If(
+    !IsEmpty( Errors( IceCream ) ),
+    Notify( "Some records failed to update", NotificationType.Error )
+)
+```
+
+#### Patch with Dataverse column types
+
+The following examples apply specifically to **Microsoft Dataverse** data sources. Record shapes vary by data source (for example, SharePoint and SQL Server have different formats).
+
+**Choice column:** To set a Choice column, use the enum value directly. This example sets a **Status** choice column on an **Accounts** table:
+
+```power-fx
+Patch(
+    Accounts,
+    LookUp( Accounts, 'Account Name' = "Contoso" ),
+    { 'Status': 'Status (Accounts)'.Active }
+)
+```
+
+**Lookup column:** To set a Lookup column, provide a record with the primary key of the related table. This example sets the **Primary Contact** lookup on an **Accounts** record:
+
+```power-fx
+Patch(
+    Accounts,
+    LookUp( Accounts, 'Account Name' = "Contoso" ),
+    { 'Primary Contact': LookUp( Contacts, 'Full Name' = "John Smith" ) }
+)
+```
+
+> [!NOTE]
+> These column-type examples are Dataverse-specific. Other data sources, such as SharePoint or SQL Server, might require different record shapes for similar column types. Refer to the documentation for your specific data source for the correct format.
+
+### Delegation in formulas that use Patch
+
+The **Patch** function itself isn't subject to [delegation](/power-apps/maker/canvas-apps/delegation-overview) because it writes to the data source rather than querying it. However, delegation warnings might appear in formulas that use **Patch** if the record-selection portion of the formula (such as **[Filter](function-filter-lookup.md)**, **[LookUp](function-filter-lookup.md)**, or **[ForAll](function-forall.md)**) involves a query that exceeds the data source delegation limits.
+
+When you see a delegation warning in a formula that includes **Patch**, check whether the warning applies to the data retrieval functions rather than to **Patch** itself. For more information about delegation, see [Understand delegation in a canvas app](/power-apps/maker/canvas-apps/delegation-overview).
+
+### Common errors with the Patch function
+
+When you use the **Patch** function, errors might occur because of data source connectivity, permissions, or data conflicts. Use **[IfError](function-iferror.md)** and **[IsError](function-iferror.md)** to detect errors and respond appropriately.
+
+- **"Network error when using Patch function"**: This error typically indicates that the app can't reach the data source. Common causes include a lost internet connection, the data source being temporarily unavailable, or insufficient permissions for the current user. Wrap the **Patch** call in **IfError** to provide a meaningful message to users.
+
+- **"Conflicts exist with changes on the server"**: This error occurs when another user or process modifies the same record between the time your app reads the record and writes the change. Refresh the data source by calling the **[Refresh](function-refresh.md)** function and retry the operation.
+
+- **Permission errors**: If the user doesn't have permission to create or modify records in the data source, the **Patch** call fails. Use **IfError** to catch permission-related errors and guide the user.
+
+For general error-handling patterns, see [Error handling](../error-handling.md).
 
 ### Use of **As** or **ThisRecord**
 
