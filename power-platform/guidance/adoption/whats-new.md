@@ -5,7 +5,7 @@ description: Power Platform adoption guidance delivers best practices, fresh ins
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/20/2026
+ms.date: 04/22/2026
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -36,6 +36,10 @@ Relaunch of the Power Platform adoption guidance.
 ## Customer case studies
 
 [Real-world customer case studies](../case-studies/index.md) provide an in-depth look at how organizations use Power Platform and Copilot Studio to drive digital transformation. Case studies are added regularly. This list highlights articles added over the past year.
+
+### FY26 Q4
+
+- [Telecom provider mobilezone modernizes service delivery using Microsoft Copilot Studio](../case-studies/mobilezone-modernizes-service-delivery.md)
 
 ### FY26 Q3
 
