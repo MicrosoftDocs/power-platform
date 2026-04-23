@@ -10,6 +10,9 @@ ms.date: 04/22/2026
 ms.topic: overview
 ---
 
+<!-- In line 59, is 5 the highest score? -->
+
+
 # Tiendas CUADRA delivers always-on customer service and product discovery with Copilot Studio
 
 [Tiendas CUADRA](http://www.cuadra.com.mx/) is a Mexican premium retail brand specializing in handcrafted leather boots, handbags, jackets, belts, and accessories. Founded in León, a region globally recognized for its leather industry, the company blends traditional craftsmanship with modern omnichannel retail experiences.
@@ -20,9 +23,9 @@ In this case study, you learn how Tiendas CUADRA uses Copilot Studio, Power Auto
 
 ## Business challenges
 
-Tiendas CUADRA operates an omnichannel customer service model that includes phone, website chat, email, social media, and WhatsApp. As digital commerce grew, customer expectations changed. Customers wanted immediate answers for order tracking, product availability, promotions, and delivery timelines, regardless of the time of day.
+Tiendas CUADRA operates an omnichannel customer service model that includes phone, website chat, email, social media, and WhatsApp. As digital commerce grew, customer expectations changed. Customers wanted immediate answers about order tracking, product availability, promotions, and delivery timelines, regardless of the time of day.
 
-The existing model relied entirely on customer service representatives. While it worked at steady volumes, it struggled outside business hours and during peak retail seasons, such as the Mexican Black Friday "El Buen Fin" and around Christmas. Routine requests like "track my order" overwhelmed their customer service team, limiting availability and increasing response times.
+The existing model relied entirely on customer service representatives. While this model worked at steady volumes, it struggled outside business hours and during peak retail seasons, such as Mexico's version of Black Friday ("El Buen Fin") and around Christmas. Routine requests like "track my order" overwhelmed their customer service team, limiting availability and increasing response times.
 
 > We needed to be available 24/7. Customers want to know where their order is, if a product is in stock, or where they can buy it—at any moment. Before, all of that depended on people answering phones, emails, or chat messages.
 >
@@ -32,7 +35,7 @@ The existing model relied entirely on customer service representatives. While it
 
 Tiendas CUADRA partnered with Microsoft partner Algoritmo to build a multi-agent solution using Microsoft Copilot Studio. The solution integrates with Dynamics 365 Customer Service to support escalation to customer service representatives. It also integrates with the company’s e-commerce platform to enable order lookup and product discovery scenarios.
 
-Asistente CUADRA is available on the Tiendas CUADRA website and designed to instantly handle high-volume, repeatable customer questions. It now supports scenarios such as:
+Asistente CUADRA is available on the Tiendas CUADRA website and is designed to instantly handle high-volume, repeatable customer questions. It now supports scenarios such as:
 
 - Order status and shipment tracking
 - Product catalog and promotion inquiries
@@ -73,25 +76,25 @@ Asistente CUADRA uses a multi-agent architecture built on Microsoft Copilot Stud
 
 Atlas is the primary agent and the main entry point for customer interactions.
 
-- Acts as the first point of contact for customers
-- Orchestrates conversations and triggers the Product Set Agent when product recommendations are required
-- Handles inquiries related to the product catalog and store information
-- Retrieves product and order information from Shopify, the e-commerce platform used by Tiendas CUADRA
+- Acts as the first point of contact for customers.
+- Orchestrates conversations and triggers the Product Set Agent when product recommendations are required.
+- Handles inquiries related to the product catalog and store information.
+- Retrieves product and order information from Shopify, the e-commerce platform used by Tiendas CUADRA.
 - Composes responses using knowledge from multiple sources, including:
-  - PDF documents such as offers and product catalogs
-  - Microsoft Excel files with store locations and store manager information
-  - The Tiendas CUADRA website
-- Escalates conversations to customer service by creating cases in Dynamics 365 Customer Service, including conversation summaries, and sends notifications to Microsoft Teams
+  - PDF documents such as offers and product catalogs.
+  - Microsoft Excel files with store locations and store manager information.
+  - The Tiendas CUADRA website.
+- Escalates conversations to customer service by creating cases in Dynamics 365 Customer Service, including conversation summaries, and sends notifications to Microsoft Teams.
 
 The Product Set Agent supports Atlas by generating outfit suggestions, including AI-generated images.
 - Uses Power Automate and Azure OpenAI Service to generate product suggestions and AI-generated product images.
 - Sends product recommendations and generated content to customers via email.
 
-**Power Automate**: Handles system integrations by retrieving product and order data from Shopify, delivers product suggestions and image generations to customers, and creates service cases and Teams notifications.
+**Power Automate:** Handles system integrations by retrieving product and order data from Shopify, delivers product suggestions and image generations to customers, and creates service cases and Teams notifications.
 
-**Dynamics 365 Customer Service**: Provides case management capabilities where customer interactions and conversation summaries are linked to existing customer records.
+**Dynamics 365 Customer Service:** Provides case management capabilities where customer interactions and conversation summaries are linked to existing customer records.
 
-**Microsoft Dataverse**: Serves as the central data layer for customer data, conversation metadata, and case context.
+**Microsoft Dataverse:** Serves as the central data layer for customer data, conversation metadata, and case context.
 
 **AI prompts:** Generate summaries for conversations, product status, and product recommendations.
 
@@ -101,7 +104,7 @@ The Product Set Agent supports Atlas by generating outfit suggestions, including
 
 ## Key features
 
-Customers visit Tiendas CUADRA’s website and start conversations with the agent. The agent provides preconfigured options and also allows submitting questions by using natural language, such as *"How should I care for this type of leather?"* or *“Do you have any current promotions on leather boots?”*
+Customers visit Tiendas CUADRA’s website and start conversations with the agent. The agent provides preconfigured options and also allows customers to submit questions by using natural language, such as *"How should I care for this type of leather?"* or *“Do you have any current promotions on leather boots?”*
 
 The following image shows the available preconfigured options.
 
@@ -109,11 +112,11 @@ The following image shows the available preconfigured options.
 
 The following options are available:
 
-- **Estatus de pedido**: Provides customers with concise order status summaries
-- **Ofertas**: Gives customers quick access to current offers
-- **Crear conjunto**: Allows image uploads and provides outfit suggestions
-- **Contactar asesor**: Connects customers to customer service
-- **Disponibilidad**: Enables customers to search for product availability
+- **Estatus de pedido:** Provides customers with concise order status summaries.
+- **Ofertas:** Gives customers quick access to current offers.
+- **Crear conjunto:** Allows image uploads and provides outfit suggestions.
+- **Contactar asesor:** Connects customers to customer service.
+- **Disponibilidad:** Enables customers to search for product availability.
 
 ### Order status summaries
 
@@ -132,6 +135,8 @@ For product discovery, customers can upload an image of a product they're intere
 The following image shows how the agent prompts the customer to upload a product image and provide an email address to continue the product discovery flow.
 
 :::image type="content" source="media/tiendas-cuadra-customer-service/agent-product-discovery.png" alt-text="Screenshot of Asistente CUADRA prompting to upload a product image and request an email for product discovery.":::
+
+
 
 After the customer submits the image, the agent generates a summarized set of product recommendations and sends them to the customer by email. The email includes suggested products and a generated outfit image to help visualize the recommended combination. From the email, customers can navigate directly to the online store to view details and purchase individual items or the complete set.
 
