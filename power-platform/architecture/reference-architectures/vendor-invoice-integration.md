@@ -5,7 +5,7 @@ description: Learn how to automate vendor invoice ingestion by extracting and va
 author: carcla
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 04/21/2026
+ms.date: 04/23/2026
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 search.audienceType:
@@ -22,7 +22,7 @@ Power Automate and AI Builder can be used to automate end-to-end vendor invoice 
 
 ## Architecture diagram
 
-:::image type="content" source="media/vendor-invoice-integration/vendor-invoice-processing.png" alt-text="Diagram of vendor invoice workflow showing Power Automate trigger, XML processing, logging in SharePoint, Dynamics 365 Finance and Operations apps, and Outlook steps." lightbox="media/vendor-invoice-integration/vendor-invoice-processing.png":::
+:::image type="content" source="media/vendor-invoice-integration/vendor-invoice-processing.png" alt-text="Diagram of vendor invoice workflow showing Power Automate trigger, XML processing, logging in SharePoint, Dynamics 365 finance and operations apps, and Outlook steps." lightbox="media/vendor-invoice-integration/vendor-invoice-processing.png":::
 
 ## Workflow
 
@@ -43,7 +43,7 @@ This architecture automates the end-to-end invoice processing workflow:
 
 1. **Data transformation**: The workflow maps extracted XML fields to the Dynamics 365 entity schema, converts dates to International Organization for Standardization (ISO) 8601 format, converts amounts to decimal, and prepares line items as arrays.
 
-1. **Dynamics 365 integration**: The workflow creates the validated invoice data as a pending vendor invoice record in Dynamics 365 Finance and Operations apps by using either the Dataverse connector or Dynamics 365 connector.
+1. **Dynamics 365 integration**: The workflow creates the validated invoice data as a pending vendor invoice record in Dynamics 365 finance and operations apps by using either the Dataverse connector or Dynamics 365 connector.
 
 1. **Error handling**: If any step fails, the flow logs the error, sends a notification to the finance team, moves the email to a failed folder, and prevents incomplete invoices from entering Dynamics 365.
 
@@ -76,19 +76,19 @@ Implement a Power Automate–based XML invoice ingestion pattern that:
 
 ## Components
 
-These services and technologies automate vendor invoice ingestion, processing, validation, and integration into Dynamics 365 Finance and Operations apps.
+These services and technologies automate vendor invoice ingestion, processing, validation, and integration into Dynamics 365 finance and operations apps.
 
 ### Email and workflow services
 
-[Power Automate cloud flow](https://azure.microsoft.com/services/developer-tools/power-automate) is a low-code workflow automation platform that orchestrates the entire invoice processing pipeline. Cloud flows execute on demand when emails arrive with attachments, making it an ideal trigger mechanism for automated invoice ingestion.
+[Power Automate cloud flows](https://azure.microsoft.com/services/developer-tools/power-automate) orchestrate the entire invoice processing pipeline. Cloud flows can run on demand—for example, when emails arrive with invoice attachments—making them an ideal trigger mechanism for automated invoice ingestion.
 
 ### Data extraction and processing
 
-An [AI Builder custom prompt](/ai-builder/form-processing-model-overview) extracts purchase order (PO) reference and UUID from PDF invoices if not present in XML. It also classifies invoice type in some scenarios.
+An [AI prompt](/microsoft-copilot-studio/create-custom-prompt) extracts purchase order (PO) reference and UUID from PDF invoices when not present in XML. It also classifies invoice type in some scenarios. Alternatively, you can use an [AI Builder document processing model](/ai-builder/form-processing-model-overview), depending on your requirements.
 
 ### ERP integration
 
-[Dynamics 365 Finance and Operations](/dynamics365/finance) is the target system where pending vendor invoices are created. The architecture uses the native Dynamics 365 connector (VendorInvoiceHeaderEntity).
+Pending vendor invoices are created in [Dynamics 365 finance and operations apps](/dynamics365/fin-ops-core/fin-ops/). The architecture uses the native Dynamics 365 connector to interact with Dynamics 365 finance and operations data entities, such as vendor invoice-related entities.
 
 ### Data integration and validation
 
@@ -178,7 +178,7 @@ An [AI Builder custom prompt](/ai-builder/form-processing-model-overview) extrac
 - Plan pilot deployment with two to three major vendors.
 - Configure test environment for user acceptance tests (UAT) and validation.
 - Schedule knowledge transfer sessions with AP team.
-- Establish service level agreement (SLA) targets for invoice processing (target: 95 percent automated within two hours).
+- Establish service level agreement (SLA) targets for invoice processing, such as automating 95 percent of invoices within two hours.
 - Plan Phase 2 to include other document types (POs, receipts, credit notes).
 
 ## Contributors
@@ -195,14 +195,16 @@ Power Platform:
 
 - [Power Automate cloud flows](/power-automate/overview-cloud)
 - [Create a custom prompt](/microsoft-copilot-studio/create-custom-prompt)
+- [Use your prompt in Power Automate](/ai-builder/use-a-custom-prompt-in-flow)
 
 Dynamics 365:
 
-- [Finance and Operation data entities](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities)
-- [Dynamics 365 Connector](/connectors/dynamicsax/)
+- [Dynamics 365 finance and operations application documentation](/dynamics365/fin-ops-core/fin-ops/)
+- [Data entities overview](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities)
+- [Dynamics 365 connector](/connectors/dynamicsax/)
 
 Compliance:
 
-- [CFDI Specifications](https://www.sat.gob.mx/tramitesauditoriales)
+- [CFDI Specifications](/dynamics365/finance/localizations/iberoamerica/latam-mex-cfdi-electronic-invoices)
 - [SUNAT Peru](https://www.sunat.gob.pe/)
 - [Power Platform Well-Architected](https://aka.ms/powa)
