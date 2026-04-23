@@ -92,9 +92,9 @@ Pending vendor invoices are created in [Dynamics 365 finance and operations apps
 
 ### Data integration and validation
 
-- SharePoint online lists serve as a foundational data layer for invoice logging and exception tracking.
+- SharePoint lists serve as a foundational data layer for invoice logging and exception tracking.
 
-- [Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro) virtual tables enable seamless validation with Dynamics 365 Finance and Operations.
+- [Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro) virtual tables enable seamless integration with Dynamics 365 finance and operations apps.
 
 ### Notification and monitoring
 
