@@ -74,19 +74,19 @@ Key business value includes:
 
 ## Components
 
-- [**Power Apps (Model‑driven app)**](https://learn.microsoft.com/en-us/power-apps)  
+- [**Power Apps (Model‑driven app)**](/power-apps)  
   Hosts the core business experience and provides the context for document upload.
 
-- [**Power Apps Custom Page**](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/add-page-to-model-app)  
+- [**Power Apps Custom Page**](/power-apps/maker/model-driven-apps/add-page-to-model-app)  
   Provides a flexible, low‑code UI for file upload and metadata capture, displayed as a modal dialog within the model‑driven app.
 
-- [**Power Automate**](https://learn.microsoft.com/en-us/power-automate/)  
+- [**Power Automate**](/power-automate/)  
   Orchestrates file upload, metadata assignment, and optional downstream processes using native SharePoint and Dataverse connectors.
 
-- [**SharePoint Online**](https://learn.microsoft.com/en-us/sharepoint/)  
+- [**SharePoint Online**](/sharepoint/)  
   Acts as the document repository, providing document management, metadata, versioning, and security.
 
-- [**Microsoft Dataverse**](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/)  
+- [**Microsoft Dataverse**](/power-apps/maker/data-platform/)  
   Stores business data and document location records that link SharePoint documents to model‑driven app records.
 
 ### Alternatives Considered
