@@ -1,6 +1,6 @@
 ---
 title: Use custom page as modal dialog for SharePoint file upload with metadata
-description: Learn how to use a custom page as a modal dialog for SharePoint file uploads with metadata to improve user experience and governance.
+description: Learn how to use a custom page in a model-driven app for SharePoint file uploads with metadata to improve user experience and governance.
 #customer intent: As a Power Platform user, I want to learn how to build a solution that lets users upload documents from a model‑driven app to SharePoint by using a custom page, including adding metadata, so that I can improve user experience and governance.
 author: carcla
 ms.author: v-caclaesson
@@ -11,6 +11,11 @@ ms.topic: example-scenario
 ---
 
 # Use custom page as modal dialog for SharePoint file upload with metadata
+
+This reference architecture describes how to use a custom page in a model‑driven app to capture metadata while uploading documents to SharePoint. The approach improves user experience in model‑driven apps and supports document governance and searchability in SharePoint by enforcing metadata at upload time.
+
+> [!TIP]
+> The article provides an example scenario and visual representation that illustrate how custom pages can be used for metadata‑aware document uploads from model‑driven apps to SharePoint. This solution is a generalized example scenario architecture, which can be used for many different scenarios and industries.
 
 ## Architecture diagram
 
@@ -40,9 +45,9 @@ ms.topic: example-scenario
 
     1. Uploads the files to the target SharePoint document library and/or folder based on desired location logic within the flow.
 
-        1. Sets SharePoint metadata using values provided in the custom page.
+    1. Sets SharePoint metadata using values provided in the custom page.
 
-        1. Creates or updates the corresponding Document Location record in Dataverse to maintain backward compatibility with the out-the-box Dataverse and SharePoint integration.
+    1. Creates or updates the corresponding Document Location record in Dataverse to maintain backward compatibility with the out-the-box Dataverse and SharePoint integration.
 
 1. The uploaded documents are:
 
