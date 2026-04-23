@@ -22,10 +22,10 @@ ms.contributors:
 
 # View Power Platform admin logs in Microsoft Purview
 
-Administration of Microsoft Power Platform products and services can affect various capabilities such as environment settings and operations, data policies, and integration-related settings. It's important to monitor these actions to:
+When you administer Microsoft Power Platform products and services, your actions can affect various capabilities, such as environment settings and operations, data policies, and integration-related settings. It's important to monitor these actions to:
 
-- Help mitigate failures.
-- Help contain systems of security constraints.
+- Mitigate failures.
+- Contain systems of security constraints.
 - Adhere to compliance requirements.
 - Act on security threats.
 
@@ -40,10 +40,13 @@ Each activity event consists of a common schema defined at [Office 365 Managemen
 
 ## Prerequisites
 
-To view Power Platform admin activity logs in Microsoft Purview, make sure you:
+To view Power Platform admin activity logs in Microsoft Purview,admins with the appropriate permissions need to:
 
-- Review and complete the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
-- Confirm that you're assigned either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview.
+- [Review licensing and manage permissions](activity-logs-overview.md#review-licensing-and-manage-permissions).
+- [Manage auditing in Microsoft Purview](activity-logs-overview.md#manage-auditing-in-microsoft-purview) and [assign](/purview/purview-permissions) either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview to you.
+
+> [!NOTE]
+> **Power Platform admin activity collection is enabled by default** on all tenants in Microsoft Purview and you can't disable the activity collection.
 
 Learn more:
 
@@ -51,9 +54,6 @@ Learn more:
 - [Auditing overview](/power-apps/developer/data-platform/auditing/overview)
 - [Learn about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 - [Permissions in the Microsoft Purview portal](/purview/purview-permissions)
-
-> [!NOTE]
-> Admin activities for Power Platform environments are enabled by default on all tenants and you can't disable the activity collection.
 
 ## Access the logs
 
@@ -90,7 +90,7 @@ Each activity event contains a payload of metadata that's specific to the indivi
 
 ## Activity category: Environment groups and rules
 
-All activities for environment groups and rules are recorded under the `PowerPlatformAdministratorActivity` record type.
+The `PowerPlatformAdministratorActivity` record type stores all activities for environment groups and rules.
 Each activity event includes a payload of metadata that's specific to the individual event. The environment group activities listed in the following table are sent to Microsoft Purview.
 
 | Event | Description |

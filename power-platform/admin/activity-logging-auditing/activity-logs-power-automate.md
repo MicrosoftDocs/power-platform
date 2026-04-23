@@ -3,7 +3,7 @@ title: View Power Automate activity logs in Microsoft Purview
 description: Learn how to access Power Automate activity logs in Microsoft Purview and explore what Power Automate activities you can monitor.
 author: grbarker
 ms.topic: how-to
-ms.date: 03/25/2026
+ms.date: 04/03/2026
 ms.subservice: admin
 ms.author: grbarker
 ms.reviewer: ellenwehrle
@@ -12,11 +12,11 @@ search.audienceType:
 ---
 # View Power Automate activity logs in Microsoft Purview
 
-You can view Microsoft Power Automate activities in Microsoft Purview, such as flow lifecycle events and permission changes. This allows you to monitor and audit user activities related to Power Automate in your organization. Examples of activities you can track include:
+You can view Microsoft Power Automate activities in Microsoft Purview, such as flow lifecycle events and permission changes. This feature helps you monitor and audit user activities related to Power Automate in your organization. Examples of activities you can track include:
 
-- flow creations, edits, and deletions
-- flow permission changes
-- trial license events
+- Flow creations, edits, and deletions
+- Flow permission changes
+- Trial license events
 
 You can also view activity logs within specific date ranges to gain insights. Regularly auditing Microsoft Power Automate activities in Microsoft Purview helps you maintain governance, compliance, and security.
 
@@ -27,12 +27,13 @@ This article covers prerequisites, how to access the logs in Microsoft Purview, 
 
 ## Prerequisites
 
-To view Power Automate activity logs in Microsoft Purview, you need to have a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license and the appropriate permissions. A Power Platform system administrator or customizer also needs to:
+To view Power Automate activity logs in Microsoft Purview, admins with the appropriate permissions need to:
 
-- Enable auditing for the Power Platform production environments you want to monitor in Microsoft Purview. See the [prerequisites section](activity-logs-overview.md#prerequisites) in [Power Platform activity logs and auditing in Microsoft Purview](activity-logs-overview.md) for more information.
-- Assign either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview to you. See [Permissions in the Microsoft Purview portal](/purview/purview-permissions) for details on how to assign these roles.
+- [Review licensing and manage permissions](activity-logs-overview.md#review-licensing-and-manage-permissions).
+- [Configure and turn on auditing for the Power Platform production environments you want to monitor](activity-logs-overview.md#configure-and-turn-on-auditing-for-each-power-platform-environment) in Microsoft Purview.
+- [Manage auditing in Microsoft Purview](activity-logs-overview.md#manage-auditing-in-microsoft-purview) and [assign](/purview/purview-permissions) either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview to you.
 
-Learn more about auditing:
+To learn more about auditing, see:
 
 - [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 - [Auditing overview](/power-apps/developer/data-platform/auditing/overview)
