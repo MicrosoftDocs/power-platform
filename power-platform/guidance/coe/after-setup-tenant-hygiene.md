@@ -3,7 +3,7 @@ title: Establish tenant hygiene with the CoE Starter Kit
 description: Establish tenant hygiene, manage environments, and secure your Power Platform with actionable governance strategies using the CoE Starter Kit.
 author: stjeffer
 ms.topic: how-to
-ms.date: 04/20/2026
+ms.date: 04/23/2026
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: jhaskett-msft
@@ -21,7 +21,7 @@ ms.custom:
 [!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 > [!TIP]
-> Find resources related to tenant hygiene including environment and resource management in:
+> Find Power Platform admin center functionality related to Inventory and Usage in:
 >
 > - [Move apps from the default environment](../../admin/move-apps-from-default-environment.md)
 > - [Environment routing](../../admin/default-environment-routing.md)
