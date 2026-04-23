@@ -21,7 +21,7 @@ ms.custom:
 [!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 > [!TIP]
-> Find Power Platform admin center functionality related to Inventory and Usage in:
+> Find resources related to tenant hygiene including environment and resource management in:
 >
 > - [Move apps from the default environment](../../admin/move-apps-from-default-environment.md)
 > - [Environment routing](../../admin/default-environment-routing.md)
@@ -153,7 +153,7 @@ It's crucial to identify the apps and cloud flows that are heavily used within y
 #### CoE Starter Kit: Power BI dashboard
 
 > [!TIP]
-> Find Power Platform admin center functionality related to monitoring resources in:
+> Find Power Platform admin center functionality related to Inventory and Usage in:
 >
 > - [Power Platform admin center inventory capabilities](../../admin/power-platform-inventory.md) to obtain a unified view of Power Platform resources across the organization including apps, flows, and agents.
 > - [Power Platform admin center Usage page](../../admin/usage.md) to track engagement and adoption across resources.
