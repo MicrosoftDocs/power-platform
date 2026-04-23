@@ -55,7 +55,7 @@ For an administrator, the quick start guide should take about 30 minutes. By the
    "devOpsOrganization": "https://dev.azure.com/contoso",
    "project": "alm-sandbox",
    "repository": "alm-sandbox",
-   "pipelineRepository": "coe-alm-accelerator-templates",
+   "pipelineRepository": "pipelines",
    "environments": "https://contoso-prod.crm.dynamics.com/",
    "settings": {
       "installEnvironments": [
@@ -67,8 +67,12 @@ For an administrator, the quick start guide should take about 30 minutes. By the
       "test": "https://contoso-test.crm.dynamics.com/",
       "prod": "https://contoso-prod.crm.dynamics.com/",
       "createSecret": "true",
+      "installSource": "coe",
       "region": [
          "NAM"
+       ],
+       "cloud": [
+         "Public"
       ]
    },
    "importMethod": "api",
