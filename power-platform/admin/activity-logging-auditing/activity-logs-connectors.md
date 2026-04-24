@@ -3,7 +3,7 @@ title: View Power Platform connector activity logs in Microsoft Purview
 description: Learn how to access Power Platform connector activity logs in Microsoft Purview and explore what connector activities you can monitor.
 author: grbarker
 ms.topic: how-to
-ms.date: 01/23/2026
+ms.date: 04/03/2026
 ms.subservice: admin
 ms.author: grbarker
 ms.reviewer: ellenwehrle
@@ -19,31 +19,30 @@ ms.custom: sfi-image-nochange
 
 # View Power Platform connector activity logs in Microsoft Purview
 
-You can view many Microsoft Power Platform connector activities in Microsoft Purview, such as when connectors are created, updated, and deleted, or API calls. You can also view activity logs within specific date ranges to gain insights.
+In Microsoft Purview, you can view many Microsoft Power Platform connector activities, such as when connectors are created, updated, and deleted, or API calls. You can also view activity logs within specific date ranges to gain insights.
 
 Regularly view Power Platform connectors activities in Microsoft Purview to:
 
-- maintain governance, compliance, and security
-- gain operational insights
-- identify and troubleshoot problems
-- mitigate failures.
+- Maintain governance, compliance, and security.
+- Gain operational insights.
+- Identify and troubleshoot problems.
+- Mitigate failures.
 
 This article covers prerequisites, how to access the logs in Microsoft Purview, and details about connector activity event types and categories.
 
 ## Prerequisites
 
-To view connector activity logs in Microsoft Purview, make sure you:
+To view Power Platform connector activity logs in Microsoft Purview, admins with the appropriate permissions need to:
 
-- Review and complete all the [prerequisites](activity-logs-overview.md#prerequisites) in the overview article.
-- Are an admin with a [Microsoft Office 365 E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
-- Are assigned either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview.
+- [Review licensing and manage permissions](activity-logs-overview.md#review-licensing-and-manage-permissions).
+- [Configure and turn on auditing for the Power Platform production environments you want to monitor](activity-logs-overview.md#configure-and-turn-on-auditing-for-each-power-platform-environment) in Microsoft Purview.
+- [Manage auditing in Microsoft Purview](activity-logs-overview.md#manage-auditing-in-microsoft-purview) and [assign](/purview/purview-permissions) either the *Audit Logs* or *View-Only Audit Logs* role in Microsoft Purview to you.
 
 Learn more:
 
 - [Manage Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 - [Auditing overview](/power-apps/developer/data-platform/auditing/overview)
 - [Learn more about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
-- [Permissions in the Microsoft Purview portal](/purview/purview-permissions)
 
 ## Access the logs
 

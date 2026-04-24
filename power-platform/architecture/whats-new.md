@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 02/12/2026
+ms.date: 04/23/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -17,6 +17,12 @@ ms.custom:
 # What's new in the Power Platform and Copilot Studio Architecture Center
 
 Get the latest info about what's new and what's changed in the Power Platform and Copilot Studio Architecture Center.
+
+## April 2026
+
+New in [Reference architectures](reference-architectures/index.md):
+
+- [Automate vendor invoice processing with Power Automate and AI Builder](reference-architectures/vendor-invoice-integration.md)
 
 ## February 2026
 
