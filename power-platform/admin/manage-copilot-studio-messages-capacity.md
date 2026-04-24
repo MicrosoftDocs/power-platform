@@ -8,6 +8,7 @@ ms.topic: how-to
 ms.subservice: admin
 ms.author: ampatra
 ms.custom: bap-template, NewPPAC
+ai-usage: ai-assisted
 search.audienceType: 
  - admin
 contributors:
