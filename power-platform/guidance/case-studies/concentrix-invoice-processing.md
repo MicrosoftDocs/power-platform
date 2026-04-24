@@ -122,7 +122,7 @@ These advancements will enable Concentrix to operate at greater scale, with high
 
 ## Related information
 
-- [Telecom provider mobilezone modernizes service delivery using Microsoft Copilot Studio](mobilezone-modernizes-service-delivery.md)
+- [Automate vendor invoice processing with Power Automate and AI Builder](../../architecture/reference-architectures/vendor-invoice-integration.md)
 - [What is Power Automate?](/power-automate/flow-types)
 - [Use your prompt in Power Automate](/ai-builder/use-a-custom-prompt-in-flow)
 - [Build a model in AI Builder](/ai-builder/build-model)
