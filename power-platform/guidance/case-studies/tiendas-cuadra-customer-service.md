@@ -10,7 +10,7 @@ ms.date: 04/22/2026
 ms.topic: overview
 ---
 
-<!-- In line 59, is 5 the highest score? -->
+<!-- In line 59, is 5 the highest score? I can't tell if it went up moderately or significantly. -->
 
 
 # Tiendas CUADRA delivers always-on customer service and product discovery with Copilot Studio
@@ -22,9 +22,6 @@ As digital sales increased, Tiendas CUADRA needed to respond to customers faster
 In this case study, you learn how Tiendas CUADRA uses Copilot Studio, Power Automate, and Dynamics 365 to deliver scalable, always‑on customer service while preserving a personalized brand experience. You also see how the solution evolved from customer support automation into intelligent product discovery.
 
 ## Business challenges
-
-
-
 
 Tiendas CUADRA operates an omnichannel customer service model that includes phone, website chat, email, social media, and WhatsApp. As digital commerce grew, customer expectations changed. Customers wanted immediate answers about order tracking, product availability, promotions, and delivery timelines, regardless of the time of day.
 
@@ -38,7 +35,7 @@ The existing model relied entirely on customer service representatives. While th
 
 Tiendas CUADRA partnered with Microsoft partner Algoritmo to build a multi-agent solution using Microsoft Copilot Studio. The solution integrates with Dynamics 365 Customer Service to support escalation to customer service representatives. It also integrates with the company’s e-commerce platform to enable order lookup and product discovery scenarios.
 
-Asistente CUADRA is available on the Tiendas CUADRA website and is designed to instantly handle high-volume, repeatable customer questions. It now supports scenarios such as:
+The solution, Asistente CUADRA, is available on the Tiendas CUADRA website and is designed to instantly handle high-volume, repeatable customer questions. It now supports scenarios such as:
 
 - Order status and shipment tracking
 - Product catalog and promotion inquiries
@@ -73,7 +70,7 @@ Team confidence in using AI also increased, opening the door to other use cases 
 
 Asistente CUADRA uses a multi-agent architecture built on Microsoft Copilot Studio to support always-on customer interactions. The solution combines a primary conversational agent, a task-focused agent, and Power Automate for integrations and escalations.
 
-:::image type="content" source="media/tiendas-cuadra-customer-service/architecture.png" alt-text="Diagram of Asistente CUADRA architecture showing Copilot Studio, knowledge sources, Atlas agent, sub agent, Power Automate, and integrations with Dynamics 365 Customer Service, Teams, and Shopify." lightbox="media/tiendas-cuadra-customer-service/architecture.png":::
+:::image type="content" source="media/tiendas-cuadra-customer-service/architecture.png" alt-text="Diagram of Asistente CUADRA architecture showing Copilot Studio, knowledge sources, Atlas agent, subagent, Power Automate, and integrations with Dynamics 365 Customer Service, Teams, and Shopify." lightbox="media/tiendas-cuadra-customer-service/architecture.png":::
 
 **Copilot Studio:** Provides the conversational and orchestration layer for the solution.
 
@@ -90,7 +87,7 @@ Atlas is the primary agent and the main entry point for customer interactions.
 - Escalates conversations to customer service by creating cases in Dynamics 365 Customer Service, including conversation summaries, and sends notifications to Microsoft Teams.
 
 The Product Set Agent supports Atlas by generating outfit suggestions, including AI-generated images.
-- Uses Power Automate and Azure OpenAI Service to generate product suggestions and AI-generated product images.
+- Uses Power Automate and Azure OpenAI to generate product suggestions and AI-generated product images.
 - Sends product recommendations and generated content to customers via email.
 
 **Power Automate:** Handles system integrations by retrieving product and order data from Shopify, delivers product suggestions and image generations to customers, and creates service cases and Teams notifications.
@@ -139,8 +136,6 @@ The following image shows how the agent prompts the customer to upload a product
 
 :::image type="content" source="media/tiendas-cuadra-customer-service/agent-product-discovery.png" alt-text="Screenshot of Asistente CUADRA prompting to upload a product image and request an email for product discovery.":::
 
-
-
 After the customer submits the image, the agent generates a summarized set of product recommendations and sends them to the customer by email. The email includes suggested products and a generated outfit image to help visualize the recommended combination. From the email, customers can navigate directly to the online store to view details and purchase individual items or the complete set.
 
 The following image shows image‑based product discovery and outfit suggestions generated from uploaded product images and delivered to the customer by email.
@@ -151,7 +146,7 @@ The agent uses image‑based product recognition to generate outfit suggestions 
 
 ## Implementation approach
 
-Tiendas CUADRA selected Microsoft Copilot Studio to build Asistente CUADRA, building on its existing investment in Dynamics 365 Customer Service, which serves as the primary system for managing tickets and customer interactions. With customer data stored in Microsoft Dataverse, built‑in connectors, and flexibility to use AI services on Azure, the platform provided a future‑ready foundation.
+Tiendas CUADRA selected Microsoft Copilot Studio to create Asistente CUADRA, building on its existing investment in Dynamics 365 Customer Service, which serves as the primary system for managing tickets and customer interactions. With customer data stored in Microsoft Dataverse, built‑in connectors, and flexibility to use AI services on Azure, the platform provided a future‑ready foundation.
 
 The implementation began with a proof of concept, reflecting a cautious approach to AI adoption. The proof of concept delivered the expected results, built internal confidence, and enabled further expansion of the solution.
 
@@ -179,7 +174,7 @@ AI prompts are used to generate customer‑friendly responses and summaries acro
 
 AI prompts are also used to generate concise summaries for order status and product‑related inquiries. Rather than returning raw system data to the customer, relevant information, such as customer intent, order details, or product context, is processed through AI prompts to produce clear and easy‑to‑understand responses before they're shown to the customer.
 
-This approach helps standardize response quality, improve readability, and reduce unnecessary information in both customer responses and service handoff scenarios.
+This approach helps standardize response quality, improve readability, and reduce unnecessary information in customer responses and service handoff scenarios.
 
 The following image shows the agent’s general instructions.
 
