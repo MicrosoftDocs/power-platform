@@ -33,7 +33,7 @@ This article covers the following supported scenarios:
 
 ## Prerequisites
 
-Before administering admin user management unification as a system admin, follow these steps to turn on **(Preview)Unified admin user management** in the Finance and Operations app:
+Before administering admin user management unification as a system admin, follow these steps to turn on **(Preview) Unified admin user management** in the Finance and Operations app:
 
 1. Go to  **System administration** > **Workspace** > **Feature management**.
 1. Select **All**.
@@ -86,10 +86,6 @@ During synchronization, the system removes the role and promotes another system 
 > [!NOTE]
 >
 > The provisioning (environment) admin can be removed only if there are **at least three System Administrators** in the environment. If fewer than three admins exist, the delete action isn't supported.
-
-## Unified system admin user management
-
-Unified admin user management preserves existing user and team‑based workflows while changing where admin roles are mastered and how changes propagate.
 
 ## Admin user teams management
 
