@@ -13,24 +13,14 @@ ms.topic: reference-architecture
 
 ## Dual Dataverse Synchronization for Master Data Management, Without Azure Complexity
 
+This reference architecture shows how to synchronize master data between two Dataverse environments using only Power Platform components. It demonstrates a one‑to‑one synchronization pattern where one environment acts as the authoritative source and another receives that data.
+
 > [!TIP]
 > This article provides an example scenario and a generalized example architecture to illustrate how to ​maintain master data in one Dataverse environment and synchoronize data to another. The architecture example can be modified for many different scenarios and industries.
 
 ## Architecture diagram
 
 :::image type="content" source="media/sync-dataverse-data/sync-dataverse-data.png" alt-text="Diagram of master data sync from a primary to a secondary Dataverse environment using Power AUtomate cloud flows and Power Platform dataflows." lightbox="media/sync-dataverse-data/sync-dataverse-data.png":::
-
-## Example Use Case
-
-A leisure and hospitality organization manages its core master data (such as hotels and room inventories) in a dedicated Dataverse environment. This primary environment is supported by a model‑driven app used exclusively by the Master Data Management team to maintain accurate and up‑to‑date operational information.
-
-A separate department within the same organization is responsible for several financial and reconciliation processes. To streamline these processes, the department wanted to build its own model‑driven app in an isolated Dataverse environment. However, their application still required access to foundational master data such as hotels and rooms details.
-
-Virtual tables were evaluated but rejected because the financial team needed to enrich these records with their own department‑specific attributes, governed by strict row‑level security.
-
-Embedding the financial app inside the primary MDM environment was also not an option. Allowing financial makers or administrators into the MDM environment would unintentionally expose connectors, solutions, API permissions, and sensitive data which must remain restricted to the MDM development team.
-
-These requirements led the organization to adopt the synchronization architecture described in this article.
 
 ## Workflow
 
@@ -60,24 +50,6 @@ These requirements led the organization to adopt the synchronization architectur
 
 - Manual intervention may be required for data quality issues (e.g., missing keys).
 
-## Use case details
-
-### Business Problem
-
-This solution addresses the challenge of synchronizing multiple tables between two distinct Dataverse environments. The primary environment acts as the authoritative source (server-side), while the secondary environment (client-side) contains existing tables that must be populated and updated with master data.
-
-Using virtual tables is not feasible in this scenario, as the secondary system’s tables already exist and require row-level security.
-
-Importantly, this architecture is designed for a one-to-one relationship: a single master data management environment linked to a single client environment. It is not intended for scenarios where one master environment must synchronize with multiple client environments, as such cases would require a more scalable or distributed solution.
-
-### Value Created
-
-This architecture delivers a robust and maintainable solution for synchronizing master data between two Dataverse environments, even when virtual tables are not an option. By enabling direct population and updates of existing tables in the secondary environment, it ensures data consistency and operational reliability.
-
-The approach leverages only Power Platform components (Dataflows and Power Automate) resulting in a solution that is simple to deploy, easy to manage, and avoids unnecessary complexity.
-
-Because it is tailored for a one-to-one environment relationship, this architecture minimizes overhead and maximizes transparency, making it ideal for organizations that require a straightforward, dependable master data synchronization without the need for large-scale, multi-environment management.
-
 ## Components
 
 - **Microsoft Dataverse**: 2 environments
@@ -95,6 +67,36 @@ Why These Components?
 - Power Automate provides fast, record-specific updates.
 
 - No Azure components: a conscious choice for simplicity and lower maintenance.
+
+## Scenario details
+
+### Business Problem
+
+This solution addresses the challenge of synchronizing multiple tables between two distinct Dataverse environments. The primary environment acts as the authoritative source (server-side), while the secondary environment (client-side) contains existing tables that must be populated and updated with master data.
+
+Using virtual tables is not feasible in this scenario, as the secondary system’s tables already exist and require row-level security.
+
+Importantly, this architecture is designed for a one-to-one relationship: a single master data management environment linked to a single client environment. It is not intended for scenarios where one master environment must synchronize with multiple client environments, as such cases would require a more scalable or distributed solution.
+
+### Example Use Case
+
+A leisure and hospitality organization manages its core master data (such as hotels and room inventories) in a dedicated Dataverse environment. This primary environment is supported by a model‑driven app used exclusively by the Master Data Management team to maintain accurate and up‑to‑date operational information.
+
+A separate department within the same organization is responsible for several financial and reconciliation processes. To streamline these processes, the department wanted to build its own model‑driven app in an isolated Dataverse environment. However, their application still required access to foundational master data such as hotels and rooms details.
+
+Virtual tables were evaluated but rejected because the financial team needed to enrich these records with their own department‑specific attributes, governed by strict row‑level security.
+
+Embedding the financial app inside the primary MDM environment was also not an option. Allowing financial makers or administrators into the MDM environment would unintentionally expose connectors, solutions, API permissions, and sensitive data which must remain restricted to the MDM development team.
+
+These requirements led the organization to adopt the synchronization architecture described in this article.
+
+### Value Created
+
+This architecture delivers a robust and maintainable solution for synchronizing master data between two Dataverse environments, even when virtual tables are not an option. By enabling direct population and updates of existing tables in the secondary environment, it ensures data consistency and operational reliability.
+
+The approach leverages only Power Platform components (Dataflows and Power Automate) resulting in a solution that is simple to deploy, easy to manage, and avoids unnecessary complexity.
+
+Because it is tailored for a one-to-one environment relationship, this architecture minimizes overhead and maximizes transparency, making it ideal for organizations that require a straightforward, dependable master data synchronization without the need for large-scale, multi-environment management.
 
 ## Considerations
 
