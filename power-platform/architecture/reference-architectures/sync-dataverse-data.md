@@ -8,10 +8,9 @@ ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center  
 ms.topic: example-scenario  
 ms.date: 04/24/2026
-ms.topic: reference-architecture
 ---
 
-## Dual Dataverse Synchronization for Master Data Management, Without Azure Complexity
+# Dual Dataverse Synchronization for Master Data Management, Without Azure Complexity
 
 This reference architecture shows how to synchronize master data between two Dataverse environments using only Power Platform components. It demonstrates a one‑to‑one synchronization pattern where one environment acts as the authoritative source and another receives that data.
 
@@ -130,7 +129,7 @@ Here is an Azure example of considerations for inspiration: [Model loan credit r
 
 - Dataflows optimized for bulk operations.
 
-- Event‑driven Power Automate flows minimize latency for critical, record‑level updates. When designing event‑driven flows, ensure that action volume and concurrency remain within Power Automate service limits. High‑frequency CRUD activity can trigger throttling, especially in scenarios where flows execute tens of thousands of actions per day. For business‑critical or high‑throughput integrations, apply appropriate Power Automate licensing to increase throughput limits and [avoid unexpected throttling](https://learn.microsoft.com/en-us/power-automate/guidance/coding-guidelines/understand-limits). This reduces escalation risks and ensures predictable performance.
+- Event‑driven Power Automate flows minimize latency for critical, record‑level updates. When designing event‑driven flows, ensure that action volume and concurrency remain within Power Automate service limits. High‑frequency CRUD activity can trigger throttling, especially in scenarios where flows execute tens of thousands of actions per day. For business‑critical or high‑throughput integrations, apply appropriate Power Automate licensing to increase throughput limits and [avoid unexpected throttling](/power-automate/guidance/coding-guidelines/understand-limits). This reduces escalation risks and ensures predictable performance.
 
 ### Experience Optimization
 
