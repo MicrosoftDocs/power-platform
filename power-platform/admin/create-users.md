@@ -378,19 +378,22 @@ Go back to the customer engagement app and confirm that the non-interactive user
 
 ## Create an Agent user (Preview)
 
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Users + permissions**, then select **Agents**.
-1. Select **Add agent** from the command bar.
-1. Enter an agent name and choose the agent user from the search list, then select **Add** to add agent.
+1. Select **Add agent** from the command bar. The **Add agent** pane appears.
+1. Enter an agent name and choose the agent user from the search list, then select **Add** to add the agent.
 1. On the **Manage security roles** page, select a security role for your agent.
 1. Select **Save** to apply the changes.
 
-
-For step-by-step information about creating a Microsoft Entra Agent Identity, see [Create agent identities](https://learn.microsoft.com/entra/agent-id/create-delete-agent-identities?tabs=microsoft-graph-api)
+For step-by-step information about creating a Microsoft Entra agent identity, see [Create agent identities in agent identity platform](/entra/agent-id/create-delete-agent-identities?tabs=microsoft-graph-api)
 
 ## Create an application user
 
