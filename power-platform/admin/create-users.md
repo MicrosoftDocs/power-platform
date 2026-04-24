@@ -7,10 +7,11 @@ ms.subservice: admin
 ms.author: sericks
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/29/2025
+ms.date: 04/24/2026
 search.audienceType: 
   - admin
 contributors:
+  - paulliew
   - shahzorkhan123 
   - srpoduri
   - val-bc 
@@ -50,8 +51,11 @@ These users are the regular synchronized users from Microsoft Entra ID.
 
 ### Agent users (Preview)
 
-These users have [Microsoft Entra Agent Identities](https://learn.microsoft.com/en-us/entra/agent-id/agent-identities) and are added into the Dataverse environment to get data access.
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
+These users have [agent identities in Microsoft Entra Agent ID](/entra/agent-id/agent-identities) and are added into the Dataverse environment to get data access.
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ### Application users
 
