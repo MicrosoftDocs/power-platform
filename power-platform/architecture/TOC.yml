@@ -105,6 +105,8 @@
           href: reference-architectures/contextual-ai-model-driven-app.md
         - name: Analyze and automate business data with Dataverse SDK for Python
           href: reference-architectures/dataverse-sdk-for-python.md
+        - name: ​Automate vendor invoicing with Power Automate and AI Builder
+          href: reference-architectures/vendor-invoice-integration.md
     - name: Solution ideas
       items:
         - name: Overview
