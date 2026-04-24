@@ -12,10 +12,10 @@ ms.date: 04/24/2026
 
 # Dual Dataverse synchronization for master data management, without Azure complexity
 
-This reference architecture shows how to synchronize master data between two Dataverse environments by using only Power Platform components. It demonstrates a one-to-one synchronization pattern where one environment acts as the authoritative source and another receives that data.
+This reference architecture shows how to synchronize master data between two Dataverse environments by using Power Automate and dataflows in Power Platform. It demonstrates a one-to-one synchronization pattern where one environment acts as the authoritative source and another receives data.
 
 > [!TIP]
-> This article provides an example scenario and a generalized example architecture to illustrate how to maintain master data in one Dataverse environment and synchronize data to another. The architecture example can be modified for many different scenarios and industries.
+> This article provides an example scenario and a generalized example architecture to illustrate how to maintain master data in one Dataverse environment and synchronize to another. The architecture example can be modified for many different scenarios and industries.
 
 ## Architecture diagram
 
@@ -25,42 +25,42 @@ This reference architecture shows how to synchronize master data between two Dat
 
 1. **Event-driven synchronization via Power Automate**
 
-- CRUD actions in the primary Dataverse environment trigger Power Automate flows.
+    - CRUD actions in the primary Dataverse environment trigger Power Automate flows.
 
-- Event-driven synchronization in a two-step flow chain:
+    - Event-driven synchronization in a two-step flow chain:
 
-    1. A cloud flow that sends an HTTP POST to a published endpoint
-    1. A cloud flow acting as a subscriber, triggers by that webhook, processes the payload, and applies the update in the secondary Dataverse environment in near real-time.
+        1. A cloud flow that sends an HTTP POST to a published endpoint.
+        1. A cloud flow that acts as a subscriber triggers by that webhook, processes the payload, and applies the update in the secondary Dataverse environment in near real-time.
 
-- Endpoints are parameterized for application lifecycle management (ALM) and security groups manage access.
+    - Endpoints are parameterized for application lifecycle management (ALM) and security groups manage access.
 
 1. **Bulk synchronization via dataflows**
 
-- The secondary Dataverse environment contains the dataflows.
+    - The secondary Dataverse environment contains the dataflows.
 
-- Each dataflow connects to the primary Dataverse environment as its data source.
+    - Each dataflow connects to the primary Dataverse environment as its data source.
 
-- Dataflows run on a fixed schedule (for example, nightly or after another dataflow runs successfully) or on demand (for example, for initial setup).
+    - Dataflows run on a fixed schedule (for example, nightly or after another dataflow runs successfully) or on demand (for example, for initial setup).
 
-- Upserts, update if data exists and insert if not, are performed by using an alternate key to avoid duplicates.
+    - Upserts are performed by using an alternate key to avoid duplicates. This updates existing data and inserts new records when no match exists.
 
-- Status fields are managed through a dedicated "sync status" column. A Power Automate flow updates the actual status field accordingly. This extra Power Automate flow after the dataflow run is necessary because a dataflow can't change row statuses or delete records that are removed (absent) in the primary Dataverse environment.
+    - Status fields are managed through a dedicated "sync status" column. A Power Automate flow updates the actual status field accordingly. This flow runs after the dataflow. It's needed because a dataflow can't change row statuses or delete records that are removed (absent) in the primary Dataverse environment.
 
 1. **Error handling and reconciliation**
 
-- Nightly dataflows in the secondary environment correct any missed or failed event-driven updates.
+    - Nightly dataflows in the secondary environment correct any missed or failed event-driven updates.
 
-- Manual intervention might be required for data quality problems (for example, missing keys).
+    - Manual intervention might be required for data quality problems (for example, missing keys).
 
 ## Components
 
-- **Microsoft Dataverse**: Two environments.
+- [**Microsoft Dataverse**](/power-apps/maker/data-platform/): Two environments.
 
-- **Dataflows for Power Platform**: Bulk extract, transform, and load (ETL) for scheduled synchronization, configured in the secondary environment.
+- [**Dataflows for Power Platform**](/power-query/dataflows/create-use): Bulk extract, transform, and load (ETL) for scheduled synchronization, configured in the secondary environment.
 
-- **Power Automate**: Fast, record-specific updates and complements certain limitations of dataflows. For example, it can trigger a dataflow when another dataflow successfully completes (such as when one table contains a lookup field to another, and that referenced record must already exist in the secondary Dataverse environment); send an error message when a dataflow fails; update record statuses; and delete records.
+- [**Power Automate cloud flows**](/power-automate/overview-cloud): Fast, record-specific updates and complements certain limitations of dataflows. For example, it can trigger a dataflow when another dataflow successfully completes (such as when one table contains a lookup field to another, and that referenced record must already exist in the secondary Dataverse environment); send an error message when a dataflow fails; update record statuses; and delete records.
 
-- **Security Groups and Service Accounts**: Access management and ownership.
+- [**Security Groups**](/power-platform/admin/control-user-access) and **Service Accounts**: Access management and ownership.
 
 ### Why use these components?
 
@@ -74,15 +74,15 @@ This reference architecture shows how to synchronize master data between two Dat
 
 ### Business problem
 
-This solution addresses the challenge of synchronizing multiple tables between two distinct Dataverse environments. The primary environment acts as the authoritative source (server-side), while the secondary environment (client-side) contains existing tables that you must populate and update with master data.
+This solution addresses the challenge of synchronizing multiple tables between two distinct Dataverse environments. The primary environment acts as the authoritative source, while the secondary environment contains existing tables that you must populate and update with master data.
 
 Using virtual tables isn't feasible in this scenario, as the secondary system's tables already exist and require row-level security.
 
-Importantly, this architecture is designed for a one-to-one relationship: a single master data management (MDM) environment linked to a single client environment. Scenarios where one master environment must synchronize with multiple client environments, as such cases, require a more scalable or distributed solution.
+Importantly, this architecture is designed for a one-to-one relationship: a single master data management (MDM) environment linked to another single environment. Scenarios where one master environment must synchronize with multiple other environments require a more scalable or distributed solution.
 
 ### Example use case
 
-A leisure and hospitality organization manages its core master data, such as hotels and room inventories, in a dedicated Dataverse environment. The primary environment includes a model-driven app that the Master Data Management team uses exclusively to maintain accurate and up-to-date operational information.
+A leisure and hospitality organization manages its core master data, such as hotels and room inventories, in a dedicated Dataverse environment. The primary environment includes a model-driven app that the master data management team uses exclusively to maintain accurate and up-to-date operational information.
 
 A separate department within the same organization is responsible for several financial and reconciliation processes. To streamline these processes, the department wants to build its own model-driven app in an isolated Dataverse environment. However, their application still requires access to foundational master data such as hotels and rooms details.
 
@@ -149,7 +149,7 @@ Principal authors:
 
 ## Related resources
 
-- [An overview of dataflows across Microsoft Power Platform and Dynamics 365 products - Power Query \| Microsoft Learn](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)
-- [Power Automate templates for the dataflows connector - Power Query \| Microsoft Learn](/power-query/dataflows/dataflow-power-automate-connector-templates)
-- [Dataverse as a master data system - Dynamics 365 \| Microsoft Learn](/dynamics365/guidance/reference-architectures/dataverse-master-data-system)
-- [Understand platform limits and avoid throttling - Power Automate \| Microsoft Learn](/power-automate/guidance/coding-guidelines/understand-limits)
+- [What are dataflows?](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)
+- [Power Automate templates for the dataflows connector](/power-query/dataflows/dataflow-power-automate-connector-templates)
+- [Dataverse as a master data system](/dynamics365/guidance/reference-architectures/dataverse-master-data-system)
+- [Understand platform limits and avoid throttling](/power-automate/guidance/coding-guidelines/understand-limits)
