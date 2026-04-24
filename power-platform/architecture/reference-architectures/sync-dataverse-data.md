@@ -72,13 +72,13 @@ This reference architecture shows how to synchronize master data between two Dat
 
 ## Scenario details
 
+This architecture is designed for a one-to-one relationship: a single master data management (MDM) environment linked to another single environment. Scenarios where one master environment must synchronize with multiple other environments require a more scalable or distributed solution.
+
 ### Business problem
 
 This solution addresses the challenge of synchronizing multiple tables between two distinct Dataverse environments. The primary environment acts as the authoritative source, while the secondary environment contains existing tables that you must populate and update with master data.
 
-Using virtual tables isn't feasible in this scenario, as the secondary system's tables already exist and require row-level security.
-
-Importantly, this architecture is designed for a one-to-one relationship: a single master data management (MDM) environment linked to another single environment. Scenarios where one master environment must synchronize with multiple other environments require a more scalable or distributed solution.
+The alternative to use virtual tables isn't feasible when the secondary system's tables already exist and require row-level security.
 
 ### Example use case
 
@@ -89,7 +89,6 @@ A separate department within the same organization is responsible for several fi
 The team evaluated virtual tables but rejected them because the financial team needed to enrich these records with their own department-specific attributes, governed by strict row-level security.
 
 Embedding the financial app inside the primary MDM environment isn't an option either. Allowing financial makers or administrators into the MDM environment would unintentionally expose connectors, solutions, API permissions, and sensitive data, which must remain restricted to the MDM development team.
-Press Ctrl+Enter to confirm, Escape to cancel
 
 These requirements led the organization to adopt the synchronization architecture described in this article.
 
