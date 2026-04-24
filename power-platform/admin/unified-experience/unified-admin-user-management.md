@@ -19,27 +19,27 @@ A common use case is changing the environment admin when the current admin leave
 
 This feature is only available for environments running:
     
-- Platform Update 71 (PU71).
+- Platform Update 71 (PU71) and above.
 - Finance and Operations application version 10.0.47 (for example, 10.0.47 PQU2) or later.
 
 This article covers the following supported scenarios:
 
-- Provisioning admin (environment admin) management
+- Environment admin (provisioning admin) management
 - Unified system admin user creation
 - Unified system admin user updates
 - Unified system admin user removal
-- Admin user management via Teams (Owner type)
+- Admin user management via teams (Owner type)
 
 
 ## Prerequisites
 
-To confirm the unified admin user management feature is turned on, check that Dataverse environment admins are visible in the Finance and Operations app. This check confirms that admin users are now unified and synchronized from Dataverse into Finance and Operations.
-
-If you need to turn on the unified admin user management feature in the Finance and Operations app, follow these steps:
+Before administering admin user management unification as a system admin, follow these steps to turn on **(Preview)Unified admin user management** in the Finance and Operations app:
 
 1. Go to  **System administration** > **Workspace** > **Feature management**.
 1. Select **All**.
 1. Enable **(Preview) Unified admin user management**.
+
+To confirm the unified admin user management feature is turned on, check that **Dataverse environment admins** are visible in the Finance and Operations app. This check confirms that admin users are now unified and synchronized from Dataverse into Finance and Operations.
 
 > [!IMPORTANT] 
 > After you turn on unified admin user management, the Power Platform admin center becomes the source of truth for admin roles. Users aren't removed from Finance and Operations during synchronization. However, admin roles that exist only in Finance and Operations (and not in Dataverse) are removed to prevent role drift.
@@ -64,9 +64,9 @@ You can update the environment admin user in two ways:
 
 ### Make environment admin in Finance and Operations app
 
-To make a user the environment admin, follow these steps in the Finance and Operations app:
+To make a user the environment admin, take these steps in the Finance and Operations app:
 
-1.  Select a user who has the system administrator role.
+1.  Select a *user* who has the **system administrator role**.
 1.  Select **Make environment admin**.
 
 ### Remove system admin role in Power Platform admin center
@@ -85,27 +85,19 @@ During synchronization, the system removes the role and promotes another system 
 
 > [!NOTE]
 >
-> - An admin who signs in can't promote themselves as an environment admin. If they try to do so, an error is thrown: *Admins cannot promote themselves to environment administrator*. Any other system admin can make the signed-in user an environment admin, but the same user can't do that.
-> - A disabled user can't become an environment admin.
+> The provisioning (environment) admin can be removed only if there are **at least three System Administrators** in the environment. If fewer than three admins exist, the delete action isn't supported.
 
 ## Unified system admin user management
 
 Unified admin user management preserves existing user and team‑based workflows while changing where admin roles are mastered and how changes propagate.
 
-Key points about admin user lifecycle behavior:
+## Admin user teams management
 
-- When a user or team is granted the system administrator role in Power Platform Admin Center or directly in the Dataverse environment, the user is automatically provisioned as an admin in Finance and Operations.
-- Removing the system administrator role removes admin access in Finance and Operations while preserving other assigned roles.
-- Admin users can't be created, updated, or removed directly in Finance and Operations.
-- Synchronization is synchronous for direct user assignments and asynchronous for team‑based assignments.
-
-## Team system admin user management
-
-Admin user management also supports teams-based assignments.
+Admin user management also supports *teams-based* assignments.
 
 ### Create an admin team
 
-To create unified system admin users for teams , take the following steps in the Power Platform admin center:
+To create unified system admin users for teams, follow these steps in the Power Platform admin center:
 
 1. Select **Manage** and then select **Environments**.
 1. Select an environment.
@@ -113,16 +105,16 @@ To create unified system admin users for teams , take the following steps in the
 1. Expand **Users and permissions** and select **Teams**.
 1. Select **Create team**. Fill out the *New team* form. Expand **Team type** and select **Owner** (use this type for Finance and Operations).
 1. Add users to the team.
-1. Assign the system administrator role to the team.
+1. Assign the **System administrator** role to the team.
 1. Select **Save**.
 
-This process sets up all team members as system administrators in Finance and Operations. Changes synchronize asynchronously.
+This process sets up all team members as system administrators in Finance and Operations. The changes synchronize asynchronously.
 
 ### Remove the system admin role from the team
 
 When you remove the system admin role from a team, all team members lose admin access in Finance and Operations unless they have the role assigned directly. The changes synchronize asynchronously.
 
-To add or remove the system admin role from the team, take the following steps on the **Teams** settings page in the Power Platform admin center:
+To add or remove the system admin role from the team, follow these steps on the **Teams** settings page in the Power Platform admin center:
 
 1. Select the three dots next to the team that has the system admin role.
 1. Select **Manage security roles**.
@@ -133,7 +125,7 @@ To add or remove the system admin role from the team, take the following steps o
 
 When you add a user to a team with the system administrator role, you grant admin access. When you remove a user from the team, the user loses admin access but keeps the system user role. The changes synchronize asynchronously.
 
-To add or remove team members, take the following steps on the **Teams** settings page in the Power Platform admin center:
+To add or remove team members, follow these steps on the **Teams** settings page in the Power Platform admin center:
 
 1. Select the three dots next to the team that has the system admin role.
 1. Select **Manage Team members**.
@@ -141,5 +133,9 @@ To add or remove team members, take the following steps on the **Teams** setting
 1. Select **Save**.
 
 :::image type="content" source="media/unified-admin-user-management/manage-unified-admin-team.png" alt-text="Shows the Teams settings page in the Power Platform admin center where you can manage unified admin teams.":::
+
+### Not supported scenario
+
+**Non-owner teams are not supported** in public preview. Only teams with **Team type = Owner** are supported for admin user management. Teams that other *types* can't be used to provision or manage system admin access.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
