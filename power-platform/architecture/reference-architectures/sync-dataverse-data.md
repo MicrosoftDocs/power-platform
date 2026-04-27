@@ -152,5 +152,5 @@ Principal authors:
 - [Power Automate templates for the dataflows connector](/power-query/dataflows/dataflow-power-automate-connector-templates)
 - [Dataverse as a master data system](/dynamics365/guidance/reference-architectures/dataverse-master-data-system)
 - [Understand platform limits and avoid throttling](/power-automate/guidance/coding-guidelines/understand-limits)
-- [CRM data migration to Dataverse: Key insights and best practices](https://review.learn.microsoft.com/en-us/power-platform/architecture/key-concepts/data-migration/?branch=carcla-archcenter-dataversesync)
-- [Migrate data between Microsoft Dataverse environments by using the dataflows OData connector](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/dataverse-odata-dataflows-migration)
+- [CRM data migration to Dataverse: Key insights and best practices](/power-platform/architecture/key-concepts/data-migration/)
+- [Migrate data between Microsoft Dataverse environments by using the dataflows OData connector](/power-apps/developer/data-platform/dataverse-odata-dataflows-migration)
