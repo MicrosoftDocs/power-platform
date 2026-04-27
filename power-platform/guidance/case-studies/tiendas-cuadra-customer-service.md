@@ -10,9 +10,6 @@ ms.date: 04/22/2026
 ms.topic: overview
 ---
 
-<!-- In line 59, is 5 the highest score? I can't tell if it went up moderately or significantly. -->
-
-
 # Tiendas CUADRA delivers always-on customer service and product discovery with Copilot Studio
 
 [Tiendas CUADRA](http://www.cuadra.com.mx/) is a Mexican premium retail brand specializing in handcrafted leather boots, handbags, jackets, belts, and accessories. Founded in León, a region globally recognized for its leather industry, the company blends traditional craftsmanship with modern omnichannel retail experiences.
@@ -87,6 +84,7 @@ Atlas is the primary agent and the main entry point for customer interactions.
 - Escalates conversations to customer service by creating cases in Dynamics 365 Customer Service, including conversation summaries, and sends notifications to Microsoft Teams.
 
 The Product Set Agent supports Atlas by generating outfit suggestions, including AI-generated images.
+
 - Uses Power Automate and Azure OpenAI to generate product suggestions and AI-generated product images.
 - Sends product recommendations and generated content to customers via email.
 
