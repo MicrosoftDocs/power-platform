@@ -32,7 +32,7 @@ The existing model relied entirely on customer service representatives. While th
 
 Tiendas CUADRA partnered with Microsoft partner Algoritmo to build a multi-agent solution using Microsoft Copilot Studio. The solution integrates with Dynamics 365 Customer Service to support escalation to customer service representatives. It also integrates with the company’s e-commerce platform to enable order lookup and product discovery scenarios.
 
-The solution, Asistente CUADRA, is available on the Tiendas CUADRA website and is designed to instantly handle high-volume, repeatable customer questions. It now supports scenarios such as:
+The conversational agent appears on the Tiendas CUADRA website as Asistente CUADRA and is designed to instantly handle high-volume, repeatable customer questions. It now supports scenarios such as:
 
 - Order status and shipment tracking
 - Product catalog and promotion inquiries
