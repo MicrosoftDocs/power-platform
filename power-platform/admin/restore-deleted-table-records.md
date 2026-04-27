@@ -31,18 +31,17 @@ Developers should read [Restore deleted records with code](/power-apps/developer
 
 To restore deleted Dataverse records, turn on the **Keep deleted Dataverse records** setting in your environment.
 
-### Turn on the deleted records keeping
+### Keep deleted Dataverse records
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 1. Select **Manage** > **Environments** and then open the environment you want.
 1. Select **Settings** > **Product** > **Features**.
-1. Scroll down to view the **Deleted records** area, and then enable the **Keep deleted Dataverse records** option.
-1. Once **Keep deleted Dataverse records** is enabled, enter the number of days, between 1 and 30, to keep deleted records.
+1. Scroll down to view the **Deleted records** area, and select the **Keep deleted Dataverse records** option.
+1. In the **Keep deleted records (days)** box, enter the number of days, between 1 and 30, to keep deleted records.
 1. Select **Save**.
-1. Allow 30 minutes for the system to configure the deleted records keeping.
-
-> [!NOTE]
-> You can only restore records deleted after the feature is turned on.
+1. Allow 30 minutes for the system to configure the feature.
+    > [!NOTE]
+    > You can only restore records deleted after the feature is turned on.
 
 ## View and restore the deleted records in Power Apps
 
@@ -70,7 +69,7 @@ To restore deleted records from the Power Platform Environment Settings app:
 1. Select one or more records to restore, and then select **Restore** on the command bar.
 1. Select **OK** to confirm the restoration.
 
-## Troubleshooting and Limitations
+## Troubleshooting and limitations
 
 ### Deleted records feature only supports delete operations
 
@@ -86,11 +85,11 @@ Some organizations add custom business logic that deletes records related to a r
 
 You can restore records deleted through the table relationship cascade behavior process. For more information about cascade behavior, see [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
 
-### Deleted records don't appear ever after turning on the deleted records keeping
+### Deleted records don't appear after turning on the _Keep delted Dataverse records_ feature
 
-**Before you troubleshoot**: Deleted records are only kept for records deleted after the feature is enabled. Records deleted before you turned on the feature cannot be restored.
+**Before you troubleshoot**: Deleted records are only kept after the feature is turned on. Records deleted before you turned on the feature can't be restored.
 
-Enabling the Deleted records keeping in Feature Management triggers a background system job called **Enable keeping deleted data for Organization**. This job must complete successfully before deleted records are kept for restore later. The feature appearing enabled in Feature Management does not guarantee the job has finished.
+Turning on the **Keep deleted Dataverse records** feature triggers a background system job called **Enable keeping deleted data for Organization**. This job must complete successfully before deleted records are kept for restoration later. The feature appearing enabled in Feature Management does not guarantee the job has finished.
 
 **How the job works**:
 - When you enable the feature, the system job is automatically created and begins running.
