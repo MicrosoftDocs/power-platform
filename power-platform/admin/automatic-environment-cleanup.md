@@ -3,7 +3,7 @@ title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/23/2026
+ms.date: 04/27/2026
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -41,7 +41,7 @@ If the system already deleted an environment, you have a limited window of time 
 
 ## Inactivity-based cleanup
 
-A cleanup mechanism in Power Platform automatically removes environments that aren't being used. Only default, developer, sandbox, and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
+A cleanup mechanism in Power Platform automatically removes environments that aren't being used. Only default, developer, and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
 
 > [!IMPORTANT]
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for environments in the Power Platform admin center.
@@ -72,29 +72,6 @@ A warning message appears on the **Environments** list page and **Environment** 
 ### Timeline for unused developer environments that are *Managed Environments*
 
 Personal developer environments that are Managed Environments use a 60-day inactivity threshold instead of 30 days. After 60 days of inactivity, the environment's administrators and the user who created the environment receive email notifications according to the schedule described in the following table.
-
-| State of environment | What to expect |
-| --- | --- |
-| 53 days with no [user activity](#definition-of-user-activity) | A warning email is sent stating that the environment will be disabled and a countdown is displayed in the **Environment state** on the **Environments** list page and the **Environment** page. |
-| 57 days with no [user activity](#definition-of-user-activity) | A second warning email is sent stating that the environment will be disabled. |
-| 60 days with no [user activity](#definition-of-user-activity) | The environment is disabled. An email notice is sent stating that the environment is disabled. The **Environment state** is disabled on the **Environments** list page and the **Environment** page. |
-| 7 days after the environment is disabled | A warning is sent stating that the environment will be deleted and a countdown is displayed in the **Environment state** on the **Environments** list page and the **Environment** page. |
-| 11 days after the environment is disabled | A second warning is sent stating that the environment will be deleted. |
-| 15 days after the environment is disabled | The environment is deleted. An email notice is sent stating that the environment is deleted. |
-
-A warning message appears on the **Environments** list page and **Environment** page when an environment is disabled.
-
-## Sandbox environments
-A cleanup mechanism in Power Platform automatically removes sandbox environments that aren't being used based on the following schedule. After 60 days of inactivity, environments are automatically disabled. If, after 15 days, the [environment isn't re-enabled](#re-enable-a-disabled-environment), the environment is deleted. You have seven days to [recover the environment](recover-environment.md) after it is deleted.
-
-As part of this cleanup process, you can expect the following outcomes:
-- Admins receive email notifications that warn of upcoming disablement or deletion.
-- [Any activity triggered](#trigger-activity-in-an-inactive-environment) on the environment or [re-enabling the environment](#re-enable-a-disabled-environment) resets the inactivity period.
-- The system deletes environments 15 days after being disabled due to inactivity.
-  
-### Timeline for unused sandbox environments
-
-After 60 days of inactivity, the environment's administrators and the user who created the environment receive email notifications according to the schedule described in the following table.
 
 | State of environment | What to expect |
 | --- | --- |
