@@ -116,8 +116,8 @@ Turning on the **Keep deleted Dataverse records** setting triggers a background 
 #### When to contact support
 Contact a [Microsoft support representative](get-help-support.md) if any of the following apply:
 - The job shows **Failed** and you can't resolve the error from the details provided.
-- The job is no longer listed (or shows **Succeeded**) but the deleted records still don't appear under **Data management** > **Deleted records**
-- It has been more than 30 minutes since you turned on the setting, but deleted records still don't appear under **Data management** > **Deleted records**.
+- The job is no longer listed (or shows **Succeeded**) but the deleted records still don't appear under **Setting** > **Data management** > **Deleted records**
+- It has been more than 30 minutes since you turned on the setting, but deleted records still don't appear under **Settings** > **Data management** > **Deleted records**.
 
 ### Records deleted through cascading behaviors aren't present in Deleted Records view
 
