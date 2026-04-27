@@ -105,6 +105,8 @@
           href: reference-architectures/contextual-ai-model-driven-app.md
         - name: Analyze and automate business data with Dataverse SDK for Python
           href: reference-architectures/dataverse-sdk-for-python.md
+        - name: Synchronize data across Dataverse environments using Power Platform
+          href: reference-architectures/sync-dataverse-data.md
     - name: Solution ideas
       items:
         - name: Overview

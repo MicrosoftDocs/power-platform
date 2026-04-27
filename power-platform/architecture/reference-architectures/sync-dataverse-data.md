@@ -1,5 +1,5 @@
 ---
-title: Dual Dataverse Synchronization for Master Data Management, Without Azure Complexity
+title: Synchronize data across Dataverse environments using Power Platform
 description: Learn how to manage master data across two Dataverse environments using Power Automate cloud flows and Power Platform dataflows.
 #customer intent: As a Power Platform user, I want to learn how to build a solution for synchronizing master data from a primary to a secondary Dataverse environment so that I can ensure reliable master data management without high complexity.
 author: carcla
@@ -10,7 +10,7 @@ ms.topic: example-scenario
 ms.date: 04/24/2026
 ---
 
-# Dual Dataverse synchronization for master data management, without Azure complexity
+# Synchronize data across Dataverse environments using Power Platform
 
 This reference architecture shows how to synchronize master data between two Dataverse environments by using Power Automate and dataflows in Power Platform. It demonstrates a one-to-one synchronization pattern where one environment acts as the authoritative source and another receives data.
 
@@ -96,7 +96,7 @@ These requirements led the organization to adopt the synchronization architectur
 
 This architecture delivers a robust and maintainable solution for synchronizing master data between two Dataverse environments, even when virtual tables aren't an option. Direct population and updates of existing tables in the secondary environment, ensures data consistency and operational reliability.
 
-The approach uses only Power Platform components, such as Dataflows and Power Automate, resulting in a solution that's simple to deploy, easy to manage, and avoids unnecessary complexity.
+The approach uses only Power Platform components, such as dataflows and Power Automate, resulting in a solution that's simple to deploy, easy to manage, and avoids unnecessary complexity.
 
 Because the architecture is tailored for a one-to-one environment relationship, it minimizes overhead and maximizes transparency. It's ideal for organizations that require a straightforward, dependable master data synchronization without the need for large-scale, multi-environment management.
 
@@ -152,3 +152,5 @@ Principal authors:
 - [Power Automate templates for the dataflows connector](/power-query/dataflows/dataflow-power-automate-connector-templates)
 - [Dataverse as a master data system](/dynamics365/guidance/reference-architectures/dataverse-master-data-system)
 - [Understand platform limits and avoid throttling](/power-automate/guidance/coding-guidelines/understand-limits)
+- [CRM data migration to Dataverse: Key insights and best practices](https://review.learn.microsoft.com/en-us/power-platform/architecture/key-concepts/data-migration/?branch=carcla-archcenter-dataversesync)
+- [Migrate data between Microsoft Dataverse environments by using the dataflows OData connector](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/dataverse-odata-dataflows-migration)
