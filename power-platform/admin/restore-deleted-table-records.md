@@ -4,7 +4,7 @@ description: Learn how to use the Power Platform admin center to view restore de
 author: rijoshi1
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/22/2026
+ms.date: 04/27/2026
 ms.subservice: admin
 ms.author: rijoshi
 ms.reviewer: sericks
@@ -87,37 +87,37 @@ You can restore records deleted through the table relationship cascade behavior 
 
 ### Deleted records don't appear after turning on the _Keep delted Dataverse records_ feature
 
-**Before you troubleshoot**: Deleted records are only kept after the feature is turned on. Records deleted before you turned on the feature can't be restored.
+#### Before you troubleshoot 
+Deleted records are only kept after the **Keep deleted Dataverse records** feature is turned on. Records deleted before you turned on the feature can't be restored.
 
-Turning on the **Keep deleted Dataverse records** feature triggers a background system job called **Enable keeping deleted data for Organization**. This job must complete successfully before deleted records are kept for restoration later. The feature appearing enabled in Feature Management does not guarantee the job has finished.
+Turning on the **Keep deleted Dataverse records** feature triggers a background system job called **Enable keeping deleted data for Organization**. This job must complete successfully before deleted records are kept for restoration later. Even though the feature is turned on, that doesn't guarantee that the job has finished.
 
-**How the job works**:
-- When you enable the feature, the system job is automatically created and begins running.
-- If the job **succeeds**, it is automatically removed from the System Jobs list. Its absence means success.
+#### How the job works
+- When you turn on the feature, the system job is automatically created and begins running.
+- If the job **succeeds**, it is automatically removed from the **System Jobs** list. Its absence means success.
 - If the job **fails**, it remains in the list for a few days so you can open it and view the error details.
 
-**Check the system job status**
+#### Check the system job status
 
-- Open the Power Platform admin center.
-- Select the environment where the issue is occurring.
-- Go to **Settings** > **Audit and logs** > **System jobs**.
-- On the **All System Jobs** page, search for **Enable keeping deleted data for Organization**.
+1. Open the Power Platform admin center.
+1. Select the environment where the issue is occurring.
+1. Go to **Settings** > **Audit and logs** > **System jobs**.
+1. On the **All System Jobs** page, search for **Enable keeping deleted data for Organization**.
 
-**Interpreting what you see**:
+#### Interpreting what you see
 
-| **What you see**        | **What it means** | **Action** |
+| What you see       | What it means | Action |
 |--------------------|------------------|------------------|
-| Job is not listed | Job completed and was automatically removed -- this is the expected outcome | Verify by checking whether the recently deleted record appears under **Data management**> **Deleted records**    | 
-| Job is listed, Status: Succeeded | Job completed successfully and hasn't been cleaned up yet	| No action needed |
-| Job is listed, Status: Failed | Job encountered an error | Open the job to view error details, then contact support |
-| Job is listed, Status: Waiting or In Progress | Job is still running | Wait a few minutes and refresh |
+| Job is not listed | Job completed and was automatically removed. This is the expected outcome. | Verify by checking whether the recently deleted record appears under **Settings** > **Data management** > **Deleted records**.    | 
+| Job is listed, Status: Succeeded | Job completed successfully and hasn't been cleaned up yet.	| No action needed. |
+| Job is listed, Status: Failed | Job encountered an error. | Open the job to view error details, then contact support. |
+| Job is listed, Status: Waiting or In Progress | Job is still running. | Wait a few minutes and refresh. |
 
-**When to contact support**
+#### When to contact support
 Contact a [Microsoft support representative](get-help-support.md) if any of the following apply:
 - The job shows Failed and you cannot resolve the error from the details provided.
-- The job is no longer listed (or shows Succeeded) but the deleted records still do not appear under **Data management** > **Deleted records**
-- It has been more than 30 minutes since you enabled the feature but deleted records still do not appear under **Data management** > **Deleted records**.
-
+- The job is no longer listed (or shows Succeeded) but the deleted records still don't appear under **Data management** > **Deleted records**
+- It has been more than 30 minutes since you turned on the feature, but deleted records still don't appear under **Data management** > **Deleted records**.
 
 ### Records deleted through cascading behaviors aren't present in Deleted Records view
 
