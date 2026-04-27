@@ -107,7 +107,7 @@
           href: reference-architectures/dataverse-sdk-for-python.md
         - name: ​Automate vendor invoicing with Power Automate and AI Builder
           href: reference-architectures/vendor-invoice-integration.md
-        - name: Synchronize data across Dataverse environments using Power Platform
+        - name: Synchronize data across Dataverse environments
           href: reference-architectures/sync-dataverse-data.md
     - name: Solution ideas
       items:
