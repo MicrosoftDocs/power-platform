@@ -138,7 +138,7 @@ Some tables don't support restoring deleted records. These tables include:
 
 Check the attribute count for a specific entity using **{organizationUrl}/api/data/v9.0/EntityDefinitions(LogicalName='account')/Attributes?$count=true**.
 
-Developers can run a [query that returns which tables are enabled for deleted records feature](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-are-enabled-for-deleted-record-keeping) in their environment.
+Developers can [detect which tables are enabled for deleted record keeping](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-are-enabled-for-deleted-record-keeping) in their environment.
 
 ### Tables that the deleted records feature doesn't support
 
