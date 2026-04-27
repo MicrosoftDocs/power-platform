@@ -31,7 +31,7 @@ Developers should read [Restore deleted records with code](/power-apps/developer
 
 To restore deleted Dataverse records, turn on the **Keep deleted Dataverse records** setting in your environment.
 
-### Turn on the deleted records feature
+### Turn on the deleted records keeping
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 1. Select **Manage** > **Environments** and then open the environment you want.
@@ -39,7 +39,7 @@ To restore deleted Dataverse records, turn on the **Keep deleted Dataverse recor
 1. Scroll down to view the **Deleted records** area, and then enable the **Keep deleted Dataverse records** option.
 1. Once **Keep deleted Dataverse records** is enabled, enter the number of days, between 1 and 30, to keep deleted records.
 1. Select **Save**.
-1. Allow 30 minutes for the system to configure the deleted records feature.
+1. Allow 30 minutes for the system to configure the deleted records keeping.
 
 > [!NOTE]
 > You can only restore records deleted after the feature is turned on.
@@ -70,7 +70,7 @@ To restore deleted records from the Power Platform Environment Settings app:
 1. Select one or more records to restore, and then select **Restore** on the command bar.
 1. Select **OK** to confirm the restoration.
 
-## Limitations
+## Troubleshooting and Limitations
 
 ### Deleted records feature only supports delete operations
 
@@ -86,16 +86,39 @@ Some organizations add custom business logic that deletes records related to a r
 
 You can restore records deleted through the table relationship cascade behavior process. For more information about cascade behavior, see [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
 
-### Deleted records don't show after turning on the deleted records feature
+### Deleted records don't appear ever after turning on the deleted records keeping
 
-In some cases, deleted records may not appear even when the feature is enabled. Verify that the **Enable keeping deleted data for Organization** system job is turned on. Go to the Power Platform admin center, select the environment where this issue is happening, and select **Settings** > **Audit and logs** > **System jobs**. On the **All System Jobs** page, search for **Enable keeping deleted data for Organization**. Confirm that the **Status Reason** is **Succeeded**.
+**Before you troubleshoot**: Deleted records are only kept for records deleted after the feature is enabled. Records deleted before you turned on the feature cannot be restored.
 
-> [!NOTE]
-> Note that **Enable keeping deleted data for Organization** is a system job that's periodically cleaned up, so it may not be visible at a later date.
+Enabling the Deleted records keeping in Feature Management triggers a background system job called **Enable keeping deleted data for Organization**. This job must complete successfully before deleted records are kept for restore later. The feature appearing enabled in Feature Management does not guarantee the job has finished.
 
-If the **Status Reason** isn't **Succeeded** and it's been at least 30 minutes since you enabled the feature, or despite the success state appearing correct, and you're not seeing the **Restore** option for deleted records, contact a [Microsoft support representative and create a support request](get-help-support.md).
+**How the job works**:
+- When you enable the feature, the system job is automatically created and begins running.
+- If the job **succeeds**, it is automatically removed from the System Jobs list. Its absence means success.
+- If the job **fails**, it remains in the list for a few days so you can open it and view the error details.
 
-Deleted records appear only after the deleted records feature is successfully enabled, and only for records deleted after it's turned on. Records deleted before enabling the feature can't be restored.
+**Check the system job status**
+
+- Open the Power Platform admin center.
+- Select the environment where the issue is occurring.
+- Go to **Settings** > **Audit and logs** > **System jobs**.
+- On the **All System Jobs** page, search for **Enable keeping deleted data for Organization**.
+
+**Interpreting what you see**:
+
+| **What you see**        | **What it means** | **Action** |
+|--------------------|------------------|------------------|
+| Job is not listed | Job completed and was automatically removed -- this is the expected outcome | Verify by checking whether the recently deleted record appears under **Data management**> **Deleted records**    | 
+| Job is listed, Status: Succeeded | Job completed successfully and hasn't been cleaned up yet	| No action needed |
+| Job is listed, Status: Failed | Job encountered an error | Open the job to view error details, then contact support |
+| Job is listed, Status: Waiting or In Progress | Job is still running | Wait a few minutes and refresh |
+
+**When to contact support**
+Contact a [Microsoft support representative](get-help-support.md) if any of the following apply:
+- The job shows Failed and you cannot resolve the error from the details provided.
+- The job is no longer listed (or shows Succeeded) but the deleted records still do not appear under **Data management** > **Deleted records**
+- It has been more than 30 minutes since you enabled the feature but deleted records still do not appear under **Data management** > **Deleted records**.
+
 
 ### Records deleted through cascading behaviors aren't present in Deleted Records view
 
@@ -112,10 +135,11 @@ Some tables don't support restoring deleted records. These tables include:
 - [Virtual tables](/power-apps/maker/data-platform/create-edit-virtual-entities)
 - Tables that store [solution components](../alm/solution-concepts-alm.md#solution-components)
 - [Elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables)
+- Tables with more than 600 attributes
 
-During the preview, some tables with large numbers of columns aren't currently supported. Currently, the maximum number of columns is 400. This value might go higher or lower as Microsoft determines the correct threshold. Check the attribute count for a specific entity using **{organizationUrl}/api/data/v9.0/EntityDefinitions(LogicalName='account')/Attributes?$count=true**.
+Check the attribute count for a specific entity using **{organizationUrl}/api/data/v9.0/EntityDefinitions(LogicalName='account')/Attributes?$count=true**.
 
-Developers can run a [query that returns which tables are enabled for deleted records feature](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-are-enabled-for-deleted-record-keeping) in your environment.
+Developers can run a [query that returns which tables are enabled for deleted records feature](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-are-enabled-for-deleted-record-keeping) in their environment.
 
 ### Tables that the deleted records feature doesn't support
 
