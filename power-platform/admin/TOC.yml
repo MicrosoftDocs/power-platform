@@ -1176,7 +1176,7 @@
               href: unified-experience/admin-trials.md
             - name: Elastic compute for finance and operations apps
               href: unified-experience/elastic-compute.md
-            - name: Unified admin user management
+            - name: Unified admin user management (preview)
               href: unified-experience/unified-admin-user-management.md
             - name: Tutorials
               items:
