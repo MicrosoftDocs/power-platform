@@ -109,7 +109,7 @@ Turning on the **Keep deleted Dataverse records** feature triggers a background 
 | What you see       | What it means | Action |
 |--------------------|------------------|------------------|
 | Job is not listed | Job completed and was automatically removed. This is the expected outcome. | Verify by checking whether the recently deleted record appears under **Settings** > **Data management** > **Deleted records**.    | 
-| Job is listed, Status: Succeeded | Job completed successfully and hasn't been cleaned up yet.	| No action needed. |
+| Job is listed, Status: Succeeded | Job completed successfully, but isn't cleaned up yet.	| No action needed. |
 | Job is listed, Status: Failed | Job encountered an error. | Open the job to view error details, then contact support. |
 | Job is listed, Status: Waiting or In Progress | Job is still running. | Wait a few minutes and refresh. |
 
