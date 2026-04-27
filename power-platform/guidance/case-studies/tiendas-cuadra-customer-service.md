@@ -6,7 +6,7 @@ author: carcla
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
-ms.date: 04/22/2026
+ms.date: 04/27/2026
 ms.topic: overview
 ---
 
@@ -16,7 +16,7 @@ ms.topic: overview
 
 As digital sales increased, Tiendas CUADRA needed to respond to customers faster and beyond business hours without expanding a small customer service team. By deploying a multi-agent solution built with Microsoft Copilot Studio, the company automated a high volume of routine customer inquiries and improved response quality for its most common questions.
 
-In this case study, you learn how Tiendas CUADRA uses Copilot Studio, Power Automate, and Dynamics 365 to deliver scalable, always‑on customer service while preserving a personalized brand experience. You also see how the solution evolved from customer support automation into intelligent product discovery.
+In this case study, you learn how Tiendas CUADRA uses Copilot Studio, Power Automate, and Dynamics 365 to deliver scalable, always‑on customer service while preserving a personalized brand experience. You also learn how the solution evolved from customer support automation into intelligent product discovery.
 
 ## Business challenges
 
@@ -30,7 +30,7 @@ The existing model relied entirely on customer service representatives. While th
 
 ## Solution
 
-Tiendas CUADRA partnered with Microsoft partner Algoritmo to build a multi-agent solution using Microsoft Copilot Studio. The solution integrates with Dynamics 365 Customer Service to support escalation to customer service representatives. It also integrates with the company’s e-commerce platform to enable order lookup and product discovery scenarios.
+Tiendas CUADRA partnered with Microsoft partner Algoritmo to build a multi-agent solution using Copilot Studio. The solution integrates with Dynamics 365 Customer Service to support escalation to customer service representatives. It also integrates with the company's e-commerce platform to enable order lookup and product discovery scenarios.
 
 The conversational agent appears on the Tiendas CUADRA website as Asistente CUADRA and is designed to instantly handle high-volume, repeatable customer questions. It now supports scenarios such as:
 
@@ -43,13 +43,13 @@ The conversational agent appears on the Tiendas CUADRA website as Asistente CUAD
 
 When human follow-up is required, the solution creates a case in Dynamics 365 Customer Service and summarizes the conversation so customer service representatives receive clear context without reviewing full transcripts.
 
-The following image shows the conversational agent on [Tiendas CUADRA’s website](https://cuadra.com.mx/).
+The following image shows the conversational agent on [Tiendas CUADRA's website](https://cuadra.com.mx/).
 
 :::image type="content" source="media/tiendas-cuadra-customer-service/website-agent.png" alt-text="Screenshot of Tiendas CUADRA website with a conversational agent chat window open showing quick reply buttons." lightbox="media/tiendas-cuadra-customer-service/website-agent.png":::
 
 ### Key benefits
 
-The solution makes customer service smoother and more reliable. It's available at all times, responds quickly even when many people are reaching out, and handles routine questions so customer service representatives can focus on the issues that truly need their attention.
+The solution makes customer service smoother and more reliable. It's always available, responds quickly when demand is high, and handles routine questions so customer service representatives can focus on the issues that truly need their attention.
 
 Key metrics:
 
@@ -57,7 +57,7 @@ Key metrics:
 - Answer quality improved from approximately 57 to 95.5 percent.
 - Automated case creation generates hundreds of cases every week.
 
-Team confidence in using AI also increased, opening the door to other use cases across the organization.
+Team confidence in using AI also increased, creating opportunities for other use cases across the organization.
 
 > We believe the chatbot we built on Copilot Studio enables much more efficient communication. Customers don't get frustrated, they get answers faster, and that moves us away from internal administrative work.
 >
@@ -65,7 +65,7 @@ Team confidence in using AI also increased, opening the door to other use cases 
 
 ## Architecture
 
-Asistente CUADRA uses a multi-agent architecture built on Microsoft Copilot Studio to support always-on customer interactions. The solution combines a primary conversational agent, a task-focused agent, and Power Automate for integrations and escalations.
+Asistente CUADRA uses a multi-agent architecture built on Copilot Studio to support always-on customer interactions. The solution combines a primary conversational agent, a task-focused agent, and Power Automate for integrations and escalations.
 
 :::image type="content" source="media/tiendas-cuadra-customer-service/architecture.png" alt-text="Diagram of Asistente CUADRA architecture showing Copilot Studio, knowledge sources, Atlas agent, subagent, Power Automate, and integrations with Dynamics 365 Customer Service, Teams, and Shopify." lightbox="media/tiendas-cuadra-customer-service/architecture.png":::
 
@@ -102,7 +102,7 @@ The Product Set Agent supports Atlas by generating outfit suggestions, including
 
 ## Key features
 
-Customers visit Tiendas CUADRA’s website and start conversations with the agent. The agent provides preconfigured options and also allows customers to submit questions by using natural language, such as *"How should I care for this type of leather?"* or *“Do you have any current promotions on leather boots?”*
+Customers visit Tiendas CUADRA's website and start conversations with the agent. The agent provides preconfigured options and also allows customers to submit questions by using natural language, such as *"How should I care for this type of leather?"* or *"Do you have any current promotions on leather boots?"*
 
 The following image shows the available preconfigured options.
 
@@ -120,7 +120,7 @@ The following options are available:
 
 When a customer selects the option to retrieve order information, the agent collects the order number together with customer identification details such as an email address or phone number. The e-commerce platform then returns order details, including order lines and the order date. Based on this information, the agent generates a concise and customer-friendly order status summary.
 
-If the order is shipped, the response includes a shipment tracking link that directs the customer to the carrier’s tracking page. If the order can't be found, for example due to an invalid order number or mismatched customer details, the customer is offered the option to submit a request for assistance.
+If the order is shipped, the response includes a shipment tracking link that directs the customer to the carrier's tracking page. If the order can't be found, for example due to an invalid order number or mismatched customer details, the customer is offered the option to submit a request for assistance.
 
 The following image shows an example of order status retrieval, where the customer provides order details and Asistente CUADRA returns order status and tracking information.
 
@@ -128,7 +128,7 @@ The following image shows an example of order status retrieval, where the custom
 
 ### Product discovery
 
-For product discovery, customers can upload an image of a product they're interested in. The agent guides the customer through the process and uses the uploaded image as input to identify complementary products, such as matching apparel and accessories.
+For product discovery, customers can upload an image of a product they're interested in. The agent guides the customer through the upload process and uses the image as input to identify complementary products, such as matching apparel and accessories.
 
 The following image shows how the agent prompts the customer to upload a product image and provide an email address to continue the product discovery flow.
 
@@ -144,7 +144,7 @@ The agent uses image‑based product recognition to generate outfit suggestions 
 
 ## Implementation approach
 
-Tiendas CUADRA selected Microsoft Copilot Studio to create Asistente CUADRA, building on its existing investment in Dynamics 365 Customer Service, which serves as the primary system for managing tickets and customer interactions. With customer data stored in Microsoft Dataverse, built‑in connectors, and flexibility to use AI services on Azure, the platform provided a future‑ready foundation.
+Tiendas CUADRA selected Copilot Studio to create Asistente CUADRA, building on its existing investment in Dynamics 365 Customer Service, which serves as the primary system for managing tickets and customer interactions. With customer data stored in Microsoft Dataverse, built‑in connectors, and flexibility to use AI services on Azure, the platform provided a future‑ready foundation.
 
 The implementation began with a proof of concept, reflecting a cautious approach to AI adoption. The proof of concept delivered the expected results, built internal confidence, and enabled further expansion of the solution.
 
@@ -174,7 +174,7 @@ AI prompts are also used to generate concise summaries for order status and prod
 
 This approach helps standardize response quality, improve readability, and reduce unnecessary information in customer responses and service handoff scenarios.
 
-The following image shows the agent’s general instructions.
+The following image shows the agent's general instructions.
 
 :::image type="content" source="media/tiendas-cuadra-customer-service/agent-configuration.png" alt-text="Screenshot of CUADRA agent configuration page with editable description, instructions, and knowledge panels visible." lightbox="media/tiendas-cuadra-customer-service/agent-configuration.png":::
 
