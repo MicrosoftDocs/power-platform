@@ -68,8 +68,6 @@ This reference architecture shows how to synchronize master data between two Dat
 
 - Power Automate provides fast, record-specific updates.
 
-- No Azure components: a conscious choice for simplicity and lower maintenance.
-
 ## Scenario details
 
 This architecture is designed for a one-to-one relationship: a single master data management (MDM) environment linked to another single environment. Scenarios where one master environment must synchronize with multiple other environments require a more scalable or distributed solution.
