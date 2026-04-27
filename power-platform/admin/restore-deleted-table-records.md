@@ -94,7 +94,7 @@ Turning on the **Keep deleted Dataverse records** feature triggers a background 
 
 #### How the job works
 - When you turn on the feature, the system job is automatically created and begins running.
-- If the job **succeeds**, it is automatically removed from the **System Jobs** list. Its absence means success.
+- If the job **succeeds**, it's automatically removed from the **System Jobs** list. Its absence means success.
 - If the job **fails**, it remains in the list for a few days so you can open it and view the error details.
 
 #### Check the system job status
@@ -108,15 +108,15 @@ Turning on the **Keep deleted Dataverse records** feature triggers a background 
 
 | What you see       | What it means | Action |
 |--------------------|------------------|------------------|
-| Job is not listed | Job completed and was automatically removed. This is the expected outcome. | Verify by checking whether the recently deleted record appears under **Settings** > **Data management** > **Deleted records**.    | 
+| Job isn't listed | Job completed and was automatically removed. This is the expected outcome. | Verify by checking whether the recently deleted record appears under **Settings** > **Data management** > **Deleted records**.    | 
 | Job is listed, Status: Succeeded | Job completed successfully, but isn't cleaned up yet.	| No action needed. |
 | Job is listed, Status: Failed | Job encountered an error. | Open the job to view error details, then contact support. |
 | Job is listed, Status: Waiting or In Progress | Job is still running. | Wait a few minutes and refresh. |
 
 #### When to contact support
 Contact a [Microsoft support representative](get-help-support.md) if any of the following apply:
-- The job shows Failed and you cannot resolve the error from the details provided.
-- The job is no longer listed (or shows Succeeded) but the deleted records still don't appear under **Data management** > **Deleted records**
+- The job shows **Failed** and you can't resolve the error from the details provided.
+- The job is no longer listed (or shows **Succeeded**) but the deleted records still don't appear under **Data management** > **Deleted records**
 - It has been more than 30 minutes since you turned on the feature, but deleted records still don't appear under **Data management** > **Deleted records**.
 
 ### Records deleted through cascading behaviors aren't present in Deleted Records view
@@ -127,7 +127,7 @@ For more information about cascading behavior, see [Configure table relationship
 
 ## Tables not supported
 
-When the deleted records feature is generally available, it is enabled for most tables.
+When the deleted records feature is generally available, it's enabled for most tables.
 
 Some tables don't support restoring deleted records. These tables include:
 
