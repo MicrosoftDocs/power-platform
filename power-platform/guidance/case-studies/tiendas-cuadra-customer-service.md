@@ -16,7 +16,7 @@ ms.topic: overview
 
 As digital sales increased, Tiendas CUADRA needed to respond to customers faster and beyond business hours without expanding a small customer service team. By deploying a multi-agent solution built with Microsoft Copilot Studio, the company automated a high volume of routine customer inquiries and improved response quality for its most common questions.
 
-In this case study, you learn how Tiendas CUADRA uses Copilot Studio, Power Automate, and Dynamics 365 to deliver scalable, always‑on customer service while preserving a personalized brand experience. You also learn how the solution evolved from customer support automation into intelligent product discovery.
+In this case study, you learn how Tiendas CUADRA uses Copilot Studio, Power Automate, and Dynamics 365 to deliver scalable, always‑on customer service while preserving a personalized brand experience. You also discover how the solution evolved from customer support automation into intelligent product discovery.
 
 ## Business challenges
 
