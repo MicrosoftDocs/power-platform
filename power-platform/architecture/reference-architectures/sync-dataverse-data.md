@@ -56,7 +56,7 @@ The following steps describe the workflow shown in the example architecture diag
 
 ## Components
 
-- [**Microsoft Dataverse**](/power-apps/maker/data-platform/): Supports the required two environments.
+- [**Microsoft Dataverse**](/power-apps/maker/data-platform/): Supports the two-environment requirement.
 
 - [**Dataflows for Power Platform**](/power-query/dataflows/create-use): Ideal for bulk operations, such as initial data population and synchronization. Use bulk extract, transform, and load (ETL) for scheduled synchronization, configured in the secondary environment.
 
