@@ -1,5 +1,5 @@
 ---
-title: Use custom page as modal dialog for SharePoint file upload with metadata
+title: Upload files to SharePoint with metadata from model‑driven apps
 description: Learn how to use a custom page in a model-driven app for SharePoint file uploads with metadata to improve user experience and governance.
 #customer intent: As a Power Platform user, I want to learn how to build a solution that lets users upload documents from a model‑driven app to SharePoint by using a custom page, including adding metadata, so that I can improve user experience and governance.
 author: carcla
@@ -10,7 +10,7 @@ ms.subservice: architecture-center
 ms.topic: example-scenario
 ---
 
-# Use custom page as modal dialog for SharePoint file upload with metadata
+# Upload files to SharePoint with metadata from model‑driven apps
 
 This reference architecture describes how to use a custom page in a model‑driven app to capture metadata while uploading documents to SharePoint. This approach improves user experience in model‑driven apps and supports document governance and searchability in SharePoint by enforcing metadata at upload time.
 
@@ -55,7 +55,7 @@ This reference architecture describes how to use a custom page in a model‑driv
 
     1. Searchable and filterable in SharePoint using metadata.
 
-## Use case details
+## Scenario details
 
 Organizations frequently use SharePoint document management with model‑driven apps to store documents related to business records. However, the built-in SharePoint integration doesn't allow users to populate required metadata during upload, leading to:
 
