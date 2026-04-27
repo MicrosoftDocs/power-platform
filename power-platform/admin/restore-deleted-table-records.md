@@ -85,7 +85,7 @@ Some organizations add custom business logic that deletes records related to a r
 
 You can restore records deleted through the table relationship cascade behavior process. For more information about cascade behavior, see [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
 
-### Deleted records don't appear after turning on the _Keep delted Dataverse records_ feature
+### Deleted records don't appear after turning on the _Keep deleted Dataverse records_ feature
 
 #### Before you troubleshoot 
 Deleted records are only kept after the **Keep deleted Dataverse records** feature is turned on. Records deleted before you turned on the feature can't be restored.
