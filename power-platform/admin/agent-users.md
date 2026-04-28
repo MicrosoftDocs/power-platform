@@ -14,7 +14,7 @@ search.audienceType:
 
 # Create Entra agent users
 
-[Microsoft Entra Agent ID](entra/agent-id/what-is-microsoft-entra-agent-id) is an identity and security framework that extends Microsoft Entra capabilities to AI agents by providing purpose‑built identity constructs for nonhuman identities, such as assistive or autonomous software agents. As organizations deploy AI agents to perform tasks such as automation, orchestration, and data interaction, these agents require enterprise identities that can be authenticated, authorized, governed, and audited in the same way as users or application workloads.  
+[Microsoft Entra Agent ID](/entra/agent-id/what-is-microsoft-entra-agent-id) is an identity and security framework that extends Microsoft Entra capabilities to AI agents by providing purpose‑built identity constructs for nonhuman identities, such as assistive or autonomous software agents. As organizations deploy AI agents to perform tasks such as automation, orchestration, and data interaction, these agents require enterprise identities that can be authenticated, authorized, governed, and audited in the same way as users or application workloads.  
 
 [Microsoft Copilot Studio integrates with Microsoft Entra Agent ID](/microsoft-copilot-studio/admin-use-entra-agent-identities) so that agents created in Copilot Studio can automatically receive an Entra agent identity that can be viewed and managed in the Microsoft Entra admin center.  
 
