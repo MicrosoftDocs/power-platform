@@ -132,7 +132,7 @@ For product discovery, customers can upload an image of a product they're intere
 
 The following image shows how the agent prompts the customer to upload a product image and provide an email address to continue the product discovery flow.
 
-:::image type="content" source="media/tiendas-cuadra-customer-service/agent-product-discovery.png" alt-text="Screenshot of Asistente CUADRA prompting to upload a product image and request an email for product discovery.":::
+:::image type="content" source="media/tiendas-cuadra-customer-service/agent-product-discovery.png" alt-text="Screenshot of Asistente CUADRA prompting to upload a product image and request an email for product discovery." lightbox="media/tiendas-cuadra-customer-service/agent-product-discovery.png":::
 
 After the customer submits the image, the agent generates a summarized set of product recommendations and sends them to the customer by email. The email includes suggested products and a generated outfit image to help visualize the recommended combination. From the email, customers can navigate directly to the online store to view details and purchase individual items or the complete set.
 
