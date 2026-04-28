@@ -49,7 +49,7 @@ For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](..
 
 These users are the regular synchronized users from Microsoft Entra ID.
 
-### Agent users (Preview)
+### Agent users (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
@@ -376,7 +376,7 @@ You then need to remove the license from the account.
 
 Go back to the customer engagement app and confirm that the non-interactive user account **Access Mode** is still set for **Non-interactive**.  
 
-## Create an agent user (Preview)
+## Create an agent user (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
