@@ -7,7 +7,7 @@ ms.subservice: admin
 ms.author: sericks
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/24/2026
+ms.date: 04/28/2026
 search.audienceType: 
   - admin
 contributors:
@@ -376,7 +376,7 @@ You then need to remove the license from the account.
 
 Go back to the customer engagement app and confirm that the non-interactive user account **Access Mode** is still set for **Non-interactive**.  
 
-## Create an Agent user (Preview)
+## Create an agent user (Preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
@@ -388,8 +388,8 @@ Go back to the customer engagement app and confirm that the non-interactive user
 1. On the **Environments** page, choose an environment.
 1. In the command bar, select **Settings**. 
 1. Expand **Users + permissions**, then select **Agents**.
-1. Select **Add agent** from the command bar. The **Add agent** pane appears.
-1. Enter an agent name and choose the agent user from the search list, then select **Add** to add the agent.
+1. Select **+ Add agent** from the command bar. The **Add agent** pane appears.
+1. Choose the agent user from the search list, then select **Add** to add the agent.
 1. On the **Manage security roles** page, select a security role for your agent.
 1. Select **Save** to apply the changes.
 
