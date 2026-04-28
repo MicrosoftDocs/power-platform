@@ -53,7 +53,7 @@ The solution makes customer service smoother and more reliable. It's always avai
 
 Key metrics:
 
-- Customer satisfaction score increased from approximately 3.9 to 5.0.
+- Customer satisfaction score increased from approximately 3.9 to 5.0 on a five-point scale.
 - Answer quality improved from approximately 57 to 95.5 percent.
 - Automated case creation generates hundreds of cases every week.
 
