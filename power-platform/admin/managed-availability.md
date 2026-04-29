@@ -23,11 +23,14 @@ Managed availability provides robust capabilities to ensure continuous uptime, s
 Managed availability is a suite of premium capabilities designed to ensure the resilience, responsiveness, and reliability of AI agents built with Microsoft Copilot Studio. It provides seamless failover, self-healing systems, and disaster-proof architecture, allowing businesses to run their intelligent automation workflows securely and at scale. By proactively mitigating disruptions and maintaining uninterrupted operations, managed availability empowers organizations to safeguard their AI-driven processes against a wide range of unforeseen events. 
 
 ## Increased resiliency with Azure availability zones
-Managed availability uses Azure availability zones to replicate production environments across multiple datacenters within a region. These zones are physically separated and operate independently with distinct power, networking, and cooling systems. This provides the following benefits:
-
+Managed availability uses Azure availability zones to replicate production environments across multiple datacenters within a region. These zones are physically separated and operate independently with distinct power, networking, and cooling systems. 
+**  RTP, RPO numbersbelow are not official SLA. please use them as soft guidance only.  
+Benefit of Az deployment:
 - **Near zero data loss**: Synchronous replication across typically two and in some cases three zones.
-- **Rapid failover**: Recovery time objective (RTO) of less than five minutes.
+- **Rapid failover**: Recovery time objective (RTO) of typically less than five minutes. 
 - **Minimal service disruption**: Automatic redirection of traffic during zone-level failures.
+
+We have observed typical replication lag upto 15 minutes (but often under 5 minutes). The platform is designed to complete failover in under 5 minutes for Dynamics 365 CE and under 30 minutes for F&O once initiated. Because customers retain control of when and whether to trigger a cross-region failover, Microsoft does not publish a contractual cross-region RTO — however, customers can monitor real-time replication lag directly in the Power Platform Admin Center (PPAC) to inform their own recovery decisions. It is also important to note that when Power Platform solutions connect to external systems — such as SQL Server, REST APIs, or other third-party services — the RTO and RPO of those integrations are governed by the availability and recovery capabilities of the respective target systems, and fall outside the scope of Power Platform's resiliency commitments.
 
 ## Automated backups and self-serve disaster recovery
 Environments with databases benefit from automated backups that can be restored to any system backup from the past seven days (extendable to 28 days for managed environments). 
