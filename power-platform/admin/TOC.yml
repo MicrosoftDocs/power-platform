@@ -636,7 +636,7 @@
                 - name: Configure user security in an environment
                   href: database-security-configure.md
                 - name: Control guest access
-                  href: guest-access.md
+                  href: security/guest-access.md
                 - name: How access to records is determined
                   href: how-record-access-determined.md
                 - name: Email exfiltration controls for connectors

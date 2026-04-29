@@ -70,7 +70,7 @@ landingContent:
           - text: Add users to an environment
             url: add-users-to-environment.md
           - text: Control guest access
-            url: guest-access.md
+            url: /security/guest-access.md
        - linkListType: learn
          links:
           - text: Get started with security roles in Dataverse
