@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 11/04/2025
+ms.date: 04/28/2026
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -20,9 +20,8 @@ contributors:
 # Business continuity and disaster recovery
 
 > [!NOTE]
-> As of September 3, 2025, the self-service disaster recovery feature supports failover for [Dynamics 365 Contact Center](/dynamics365/contact-center/). With this enhancement, organizations can seamlessly initiate failover for their contact center environments, ensuring smooth execution of disaster recovery drills or continued operations from an alternate region when needed.
->
-> Self-service disaster recovery for finance and operations applications is now available in preview. Sign up [using this form](https://forms.office.com/r/XEXsxwBbLt) if you're interested in participating in the preview.
+> >To further strengthen your availability, regional resiliency, and protection against large-scale regional disruptions, PayGo is **not a mandatory requirement** to enable Self-Service Disaster Recovery (SSDR) on your production environment **starting May 22, 2026**. 
+>This enhancement is designed with your success in mind—giving you greater control, improved operational resilience, and the ability to respond confidently to unexpected events.
 
 Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to document a business continuity plan that minimizes the effects of outages. To recover and resume operations, make sure the plan lists stakeholders, processes, and specific steps.
 
@@ -62,12 +61,10 @@ Customers who need greater distance within a geography can use self-service disa
 ## Cross-region self-service disaster recovery
 
 Most geographies have region pairs separated by at least 300 miles when possible, to help protect your data in large-scale disasters.
-
 Self-service disaster recovery is a Power Platform infrastructure capability that lets you replicate your environment across long distances and start environment failover between regions yourself.
-
 You usually have multiple environments of different types in your tenant. This capability is available only for production environments.
 
-To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md). For more information about managed environments, go to [Managed Environments](managed-environment-overview.md).
+To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md)(note:Paygo will not be a mandatory requirement post May 22). For more information about managed environments, go to [Managed Environments](managed-environment-overview.md).
 
 ## Allow Virtual Network pairing for self-service disaster recovery in Dynamics 365
 
@@ -144,22 +141,21 @@ With the implementation of [availability zones](/azure/reliability/availability-
  
 ### What are the costs associated with using self-service disaster recovery?
 
-- You must turn on [pay-as-you-go](pay-as-you-go-overview.md) for the environment as a prerequisite to turning on self-service disaster recovery on that environment.
+- You must turn on [pay-as-you-go](pay-as-you-go-overview.md) for the environment as a prerequisite to turning on self-service disaster recovery on that environment. (this will not be required post May 22, 2026)
 - The selected environment must be a [Managed Environment](managed-environment-licensing.md). This environment is a premium license tier. 
 - Capacity charges are based on the storage consumption of the environment's paired secondary region for database, file, and log storage types.
 - Capacity consumption is reflected in the familiar licensing experience within the Power Platform admin center. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
 
   For example, suppose a user has 10-GB capacity consumption in the primary location. When self-service disaster recovery is turned on, a copy of data is created in the remote secondary region and this copy consumes another 10 GB. You can pay for this 10 GB in the secondary region through storage entitlements. Only if you exceed your available free storage or available entitlements does a pay-as-you-go plan actively start billing.
   
-- Pay-as-you-go is designed to generate various alerts and warnings at various thresholds to warn administrators of depleting storage. Use the alert mechanism to your advantage.
-- Pay-as-you-go links the selected environment to the Azure subscription by using a billing policy. Once you link an environment to an Azure subscription, the usage of apps and any Dataverse or Power Platform usage that goes above the included storage amounts are billed against the Azure subscription by using Azure meters. For more information, go to [Pay-as-you-go meters](pay-as-you-go-meters.md). If you acquire more storage entitlements, the pay-as-you-go plan stops running the meters and consuming from available free storage and entitlements take precedence. 
+
 
 ### How does billing work for self-service disaster recovery?
 
 - If you configure your environment to draw capacity from your tenant's Dataverse capacity entitlement, the system consumes the entitled capacity first. You still need a pay-as-you-go billing plan to avoid capacity overages.
 - The pay-as-you-go plan generates multiple warnings at various thresholds to ensure that you're well-informed and can take appropriate action to avoid pay-as-you-go charges.  
 - Admins can allocate capacity to the environment, after which the pay-as-you-go plan is billed.
-- You can't turn off the pay-as-you-go plan in the billing experience if you turn on self-service disaster recovery.
+- You can't turn off the pay-as-you-go plan in the billing experience if you turn on self-service disaster recovery. (this check will be removed after May 22, 2026)
 
 ### Can I switch regions during a regional outage?
 
@@ -168,10 +164,12 @@ If there's a regional outage, the system supports failover only to the designate
 ### Is my region supported for self-service disaster recovery?
 Self-service disaster recovery depends on Azure region pairs. Regions that don't have a regional Azure pair aren't supported. For more information, go to [Azure supported regions](/azure/reliability/regions-list). 
 
-As of November 2025,  Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported. Once a region gets a regional pair, it's on our roadmap for Power Platform geo build-out and for supporting self-service disaster. 
+As of November 2025,  Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported for SSDR. Once a region gets a regional pair, it's on our roadmap for Power Platform geo build-out and for supporting self-service disaster. 
 
 > [!NOTE]
-> UAE, Brazil, and South Africa have regional pairs in constrained regions and are on the roadmap for Power Platform geo buildout followed by self-service disaster recovery support. Geo build-out prioritization is influenced by impact, opportunity, and resource constraints. 
+> Brazil, and South Africa have regional pairs in constrained regions and are on the roadmap for Power Platform geo buildout followed by self-service disaster recovery support. Geo build-out prioritization is influenced by impact, opportunity, and resource constraints.
+> UAE SSDR is on the roadmap, coming soon 
+
 
 ### What should I know about the capacity experience?
 
@@ -217,5 +215,5 @@ Field service now supports self-service disaster recovery. You can now manage wo
 - Data lake failover has known issues. Self-service disaster recovery isn't supported yet.
 - Connectors may have recovery issues when dependent on external systems, like SharePoint, SQL Server or third-party applications.
 - For Dynamics 365 Sales, analytics, reporting, and functions dependent on automation, such as sales forecasting, are unavailable.
-- Finance and operations products aren't currently supported for self-serve disaster recovery during regional outages.
+- Finance and operations products are supported in preview.
 - AI Builder may see latency impact.
