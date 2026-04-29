@@ -152,14 +152,12 @@ With the implementation of [availability zones](/azure/reliability/availability-
 
   For example, suppose a user has 10-GB capacity consumption in the primary location. When self-service disaster recovery is turned on, a copy of data is created in the remote secondary region and this copy consumes another 10 GB. You can pay for this 10 GB in the secondary region through storage entitlements. Only if you exceed your available free storage or available entitlements does a pay-as-you-go plan actively start billing.
   
-
-
 ### How does billing work for self-service disaster recovery?
 
 - If you configure your environment to draw capacity from your tenant's Dataverse capacity entitlement, the system consumes the entitled capacity first. You still need a pay-as-you-go billing plan to avoid capacity overages.
 - The pay-as-you-go plan generates multiple warnings at various thresholds to ensure that you're well-informed and can take appropriate action to avoid pay-as-you-go charges.  
 - Admins can allocate capacity to the environment, after which the pay-as-you-go plan is billed.
-- You can't turn off the pay-as-you-go plan in the billing experience if you turn on self-service disaster recovery. (this check will be removed after May 22, 2026)
+- You can't turn off the pay-as-you-go billing plan if you turn on self-service disaster recovery. (This requriement will be removed after May 22, 2026.)
 
 ### Can I switch regions during a regional outage?
 
@@ -168,7 +166,7 @@ If there's a regional outage, the system supports failover only to the designate
 ### Is my region supported for self-service disaster recovery?
 Self-service disaster recovery depends on Azure region pairs. Regions that don't have a regional Azure pair aren't supported. For more information, go to [Azure supported regions](/azure/reliability/regions-list). 
 
-As of November 2025,  Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported for SSDR. Once a region gets a regional pair, it's on our roadmap for Power Platform geo build-out and for supporting self-service disaster. 
+As of November 2025, Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported for self-service disaster recovery. Once a region gets a regional pair, it's on our roadmap for Power Platform geo build-out and for supporting self-service disaster. 
 
 > [!NOTE]
 > Brazil, and South Africa have regional pairs in constrained regions and are on the roadmap for Power Platform geo buildout followed by self-service disaster recovery support. Geo build-out prioritization is influenced by impact, opportunity, and resource constraints.
