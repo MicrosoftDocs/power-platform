@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 04/28/2026
+ms.date: 04/29/2026
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -19,9 +19,10 @@ contributors:
 
 # Business continuity and disaster recovery
 
-> [!NOTE]
-> >To further strengthen your availability, regional resiliency, and protection against large-scale regional disruptions, PayGo is **not a mandatory requirement** to enable Self-Service Disaster Recovery (SSDR) on your production environment **starting May 22, 2026**. 
->This enhancement is designed with your success in mind—giving you greater control, improved operational resilience, and the ability to respond confidently to unexpected events.
+> [!Important]
+> To further strengthen your availability, regional resiliency, and protection against large-scale regional disruptions, a [pay-as-you-go billing plan](pay-as-you-go-overview.md) is **not a mandatory requirement** to enable self-service disaster recovery on your production environment as of May 22, 2026.
+> 
+> This enhancement is designed with your success in mind. It gives you greater control, improved operational resilience, and the ability to respond confidently to unexpected events.
 
 Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to document a business continuity plan that minimizes the effects of outages. To recover and resume operations, make sure the plan lists stakeholders, processes, and specific steps.
 
@@ -64,7 +65,10 @@ Most geographies have region pairs separated by at least 300 miles when possible
 Self-service disaster recovery is a Power Platform infrastructure capability that lets you replicate your environment across long distances and start environment failover between regions yourself.
 You usually have multiple environments of different types in your tenant. This capability is available only for production environments.
 
-To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md)(note:Paygo will not be a mandatory requirement post May 22). For more information about managed environments, go to [Managed Environments](managed-environment-overview.md).
+To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md)
+
+> [!Note]
+> A [pay-as-you-go billing plan](pay-as-you-go-overview.md) is not a mandatory requirement as of May 22, 2026. For more information about Managed Environments, go to [Managed Environments](managed-environment-overview.md).
 
 ## Allow Virtual Network pairing for self-service disaster recovery in Dynamics 365
 
@@ -141,7 +145,7 @@ With the implementation of [availability zones](/azure/reliability/availability-
  
 ### What are the costs associated with using self-service disaster recovery?
 
-- You must turn on [pay-as-you-go](pay-as-you-go-overview.md) for the environment as a prerequisite to turning on self-service disaster recovery on that environment. (this will not be required post May 22, 2026)
+- You must turn on a [pay-as-you-go billing plan](pay-as-you-go-overview.md) as a prerequisite to turning on self-service disaster recovery for that environment. This prerequisite will not be required after May 22, 2026.
 - The selected environment must be a [Managed Environment](managed-environment-licensing.md). This environment is a premium license tier. 
 - Capacity charges are based on the storage consumption of the environment's paired secondary region for database, file, and log storage types.
 - Capacity consumption is reflected in the familiar licensing experience within the Power Platform admin center. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
