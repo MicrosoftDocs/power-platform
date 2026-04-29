@@ -168,6 +168,8 @@ Self-service disaster recovery depends on Azure region pairs. Regions that don't
 
 As of November 2025, Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported for self-service disaster recovery. 
 
+> [!Note)
+> Brazil and South Africa do not have self-service disaster recovery because their regional pairs are in heavily constrained regions. Adding supported regions is influenced by impact, opportunity, and resource constraints. United Arab Emirates has self-service disaster recovery but continues to be capacity-constrained, which has impacted its general availability.
 
 ### What should I know about the capacity experience?
 
