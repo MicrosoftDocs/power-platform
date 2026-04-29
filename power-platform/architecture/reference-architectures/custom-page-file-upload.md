@@ -5,7 +5,7 @@ description: Learn how to use a custom page in a model-driven app for SharePoint
 author: carcla
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
-ms.date: 04/23/2026
+ms.date: 04/29/2026
 ms.subservice: architecture-center
 ms.topic: example-scenario
 ---
@@ -30,16 +30,11 @@ This reference architecture describes how to use a custom page in a model‑driv
 1. The custom page provides:
 
     1. File selection (single or multiple files).
-
     1. Metadata fields aligned to SharePoint document library columns.
-
     1. Validation and guidance based on business rules.
-
     1. Context of the originating record via the record ID in the model-driven app URL.
 
-1. When the user submits the form:
-
-    1. The custom page invokes a Power Automate cloud flow.
+1. When the user submits the form, the custom page invokes a Power Automate cloud flow.
 
 1. Power Automate:
 
@@ -51,18 +46,15 @@ This reference architecture describes how to use a custom page in a model‑driv
 
 1. The uploaded documents are:
 
-    1. Associated with the originating Dataverse record.
-
-    1. Searchable and filterable in SharePoint using metadata.
+    - Associated with the originating Dataverse record.
+    - Searchable and filterable in SharePoint using metadata.
 
 ## Scenario details
 
 Organizations frequently use SharePoint document management with model‑driven apps to store documents related to business records. However, the built-in SharePoint integration doesn't allow users to populate required metadata during upload, leading to:
 
 - Incomplete or inconsistent metadata
-
 - Reduced searchability and compliance
-
 - Manual rework to classify documents after upload
 
 This architecture addresses these limitations by introducing a custom page–based upload experience that captures metadata at the point of upload. This approach improves data quality, user experience, and compliance while remaining fully within the Power Platform and Microsoft 365 ecosystem.
@@ -70,37 +62,30 @@ This architecture addresses these limitations by introducing a custom page–bas
 Key business value includes:
 
 - Improved document governance and metadata quality
-
 - Consistent user experience embedded in model‑driven apps
-
 - Reduced manual intervention and reclassification
-
 - Extensibility for complex workflows without custom code
 
 ## Components
 
-- [**Power Apps (model‑driven app)**](/power-apps)  
-  Hosts the core business experience and provides the context for document upload.
+[**Power Apps (model‑driven app)**](/power-apps): Hosts the core business experience and provides the context for document upload.
 
-- [**Power Apps custom page**](/power-apps/maker/model-driven-apps/add-page-to-model-app)  
-  Provides a flexible, low‑code UI for file upload and metadata capture, displayed as a modal dialog within the model‑driven app.
+[**Power Apps custom page**](/power-apps/maker/model-driven-apps/add-page-to-model-app): Provides a flexible, low‑code UI for file upload and metadata capture, displayed as a modal dialog within the model‑driven app.
 
-- [**Power Automate**](/power-automate/)  
-  Orchestrates file upload, metadata assignment, and optional downstream processes using native SharePoint and Dataverse connectors.
+[**Power Automate**](/power-automate/): Orchestrates file upload, metadata assignment, and optional downstream processes using native SharePoint and Dataverse connectors.
 
-- [**SharePoint**](/sharepoint/)  
-  Acts as the document repository, providing document management, metadata, versioning, and security.
+[**SharePoint**](/sharepoint/): Acts as the document repository, providing document management, metadata, versioning, and security.
 
-- [**Microsoft Dataverse**](/power-apps/maker/data-platform/)  
-  Stores business data and document location records that link SharePoint documents to model‑driven app records.
+[**Microsoft Dataverse**](/power-apps/maker/data-platform/): Stores business data and document location records that link SharePoint documents to model‑driven app records.
 
-### Alternatives considered
+Alternatives considered (higher development and maintenance effort):
 
-- Custom [web resources](/power-apps/developer/model-driven-apps/web-resources) or Power Apps Component Framework (PCF) [code components](/power-apps/developer/component-framework/custom-controls-overview) (higher development and maintenance effort).
+- Custom [web resources](/power-apps/developer/model-driven-apps/web-resources)
+- Power Apps Component Framework (PCF) [code components](/power-apps/developer/component-framework/custom-controls-overview)
 
 ## Considerations
 
-This architecture aligns with the Power Platform Well‑Architected pillars.
+[!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
 ### Reliability
 
@@ -136,13 +121,10 @@ The architecture emphasizes maintainability, observability, and ease of change.
 
 - **Clear separation of concerns**:
 
-  - **Model-driven app**: business context and navigation
-  
-  - **Custom page**: document upload and metadata capture
-  
-  - **Power Automate**: orchestration and integration
-  
-  - **SharePoint**: document management and compliance
+  - **Model-driven app**: Business context and navigation  
+  - **Custom page**: Document upload and metadata capture  
+  - **Power Automate**: Orchestration and integration  
+  - **SharePoint**: Document management and compliance
 
 - **Monitoring and diagnostics**: Power Automate run history and Dataverse auditing provide visibility into upload failures, metadata problems, and user behavior. You can extend this monitoring for use with Azure Application Insights if needed.
 
