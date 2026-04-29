@@ -69,6 +69,8 @@ landingContent:
             url: assign-security-roles.md
           - text: Add users to an environment
             url: add-users-to-environment.md
+          - text: Control guest access
+            url: guest-access.md
        - linkListType: learn
          links:
           - text: Get started with security roles in Dataverse
