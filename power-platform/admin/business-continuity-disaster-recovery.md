@@ -145,7 +145,7 @@ With the implementation of [availability zones](/azure/reliability/availability-
  
 ### What are the costs associated with using self-service disaster recovery?
 
-- You must turn on a [pay-as-you-go billing plan](pay-as-you-go-overview.md) as a prerequisite to turning on self-service disaster recovery for that environment. This prerequisite will not be required after May 22, 2026.
+- You must turn on a [pay-as-you-go billing plan](pay-as-you-go-overview.md) as a prerequisite to turning on self-service disaster recovery for that environment. This prerequisite won't be required after May 22, 2026.
 - The selected environment must be a [Managed Environment](managed-environment-licensing.md). This environment is a premium license tier. 
 - Capacity charges are based on the storage consumption of the environment's paired secondary region for database, file, and log storage types.
 - Capacity consumption is reflected in the familiar licensing experience within the Power Platform admin center. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
@@ -157,7 +157,7 @@ With the implementation of [availability zones](/azure/reliability/availability-
 - If you configure your environment to draw capacity from your tenant's Dataverse capacity entitlement, the system consumes the entitled capacity first. You still need a pay-as-you-go billing plan to avoid capacity overages.
 - The pay-as-you-go plan generates multiple warnings at various thresholds to ensure that you're well-informed and can take appropriate action to avoid pay-as-you-go charges.  
 - Admins can allocate capacity to the environment, after which the pay-as-you-go plan is billed.
-- You can't turn off the pay-as-you-go billing plan if you turn on self-service disaster recovery. (This requriement will be removed after May 22, 2026.)
+- You can't turn off the pay-as-you-go billing plan if you turn on self-service disaster recovery. (This requirement will be removed after May 22, 2026.)
 
 ### Can I switch regions during a regional outage?
 
