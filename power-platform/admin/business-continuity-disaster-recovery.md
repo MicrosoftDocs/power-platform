@@ -166,11 +166,7 @@ If there's a regional outage, the system supports failover only to the designate
 ### Is my region supported for self-service disaster recovery?
 Self-service disaster recovery depends on Azure region pairs. Regions that don't have a regional Azure pair aren't supported. For more information, go to [Azure supported regions](/azure/reliability/regions-list). 
 
-As of November 2025, Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported for self-service disaster recovery. Once a region gets a regional pair, it's on our roadmap for Power Platform geo build-out and for supporting self-service disaster. 
-
-> [!NOTE]
-> Brazil, and South Africa have regional pairs in constrained regions and are on the roadmap for Power Platform geo buildout followed by self-service disaster recovery support. Geo build-out prioritization is influenced by impact, opportunity, and resource constraints.
-> UAE SSDR is on the roadmap, coming soon 
+As of November 2025, Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported for self-service disaster recovery. 
 
 
 ### What should I know about the capacity experience?
