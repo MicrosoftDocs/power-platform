@@ -24,6 +24,7 @@ New in [Reference architectures](reference-architectures/index.md):
 
 - [Automate vendor invoice processing with Power Automate and AI Builder](reference-architectures/vendor-invoice-integration.md)
 - [Upload files to SharePoint with metadata from model-driven apps](reference-architectures/custom-page-file-upload.md)
+- [Synchronize data across Dataverse environments using Power Platform](reference-architectures/sync-dataverse-data.md)
 
 ## February 2026
 
