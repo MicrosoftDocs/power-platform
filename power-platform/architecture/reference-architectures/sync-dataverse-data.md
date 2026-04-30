@@ -7,7 +7,7 @@ ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center  
 ms.topic: example-scenario  
-ms.date: 04/27/2026
+ms.date: 04/30/2026
 ---
 
 # Synchronize data across Dataverse environments using Power Platform
