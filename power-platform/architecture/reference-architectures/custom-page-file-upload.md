@@ -5,7 +5,7 @@ description: Learn how to use a custom page in a model-driven app for SharePoint
 author: carcla
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
-ms.date: 04/29/2026
+ms.date: 04/30/2026
 ms.subservice: architecture-center
 ms.topic: example-scenario
 ---
@@ -23,7 +23,7 @@ This reference architecture describes how to use a custom page in a model‑driv
 
 ## Workflow
 
-1. A user opens a model-driven app and navigates to a record that requires document upload (for example, a Case, Contact, or Application).
+1. A user opens a model-driven app and navigates to a record that requires document upload (for example, a Case, Contact, or Account).
 
 1. The user selects an **Upload document** action (command bar button), which launches a custom page as a dialog within the model-driven app.
 
