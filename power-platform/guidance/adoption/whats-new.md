@@ -5,7 +5,7 @@ description: Power Platform adoption guidance delivers best practices, fresh ins
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/23/2026
+ms.date: 04/29/2026
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -46,6 +46,7 @@ Relaunch of the Power Platform adoption guidance.
 ### FY26 Q4
 
 - [Telecom provider mobilezone modernizes service delivery using Microsoft Copilot Studio](../case-studies/mobilezone-modernizes-service-delivery.md)
+- [Tiendas CUADRA delivers always-on customer service and product discovery with Copilot Studio](../case-studies/tiendas-cuadra-customer-service.md)
 
 ### FY26 Q3
 

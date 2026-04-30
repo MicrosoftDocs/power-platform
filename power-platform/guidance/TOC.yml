@@ -216,7 +216,7 @@
         - name: La Trobe University supercharges academic productivity
           href: case-studies/latrobe-supercharges.md
         - name: Lloyds Banking Group bridges language barriers
-          href: case-studies/lloyds-banking-group.md         
+          href: case-studies/lloyds-banking-group.md
         - name: Nexi revolutionizes customer support
           href: case-studies/nexi-revolutionizes-customer-support.md
         - name: Rabobank embraces conversational banking
@@ -230,7 +230,9 @@
         - name: Teck automates data extraction
           href: case-studies/teck-automates-data-extraction.md
         - name: Telecom provider mobilezone modernizes service delivery
-          href: case-studies/mobilezone-modernizes-service-delivery.md 
+          href: case-studies/mobilezone-modernizes-service-delivery.md
+        - name: Tiendas CUADRA delivers always-on customer service and product discovery
+          href: case-studies/tiendas-cuadra-customer-service.md
         - name: T-Mobile empowers customer service representatives
           href: case-studies/tmobile-empowers-customer-service.md
     - name: White papers
