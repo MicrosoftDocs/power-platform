@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 04/23/2026
+ms.date: 04/30/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -23,6 +23,7 @@ Get the latest info about what's new and what's changed in the Power Platform an
 New in [Reference architectures](reference-architectures/index.md):
 
 - [Automate vendor invoice processing with Power Automate and AI Builder](reference-architectures/vendor-invoice-integration.md)
+- [Upload files to SharePoint with metadata from model-driven apps](reference-architectures/custom-page-file-upload.md)
 
 ## February 2026
 
