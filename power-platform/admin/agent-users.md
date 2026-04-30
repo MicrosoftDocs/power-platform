@@ -18,4 +18,4 @@ search.audienceType:
 
 [Microsoft Copilot Studio integrates with Microsoft Entra Agent ID](/microsoft-copilot-studio/admin-use-entra-agent-identities) so that agents created in Copilot Studio can automatically receive an Entra agent identity that can be viewed and managed in the Microsoft Entra admin center.  
 
-For agents that require data access to a Dataverse environment, an Entra agent user must be created (**link to Create an Entra Agent user account**) and associated with the agent identity so that appropriate security roles can be assigned to enable access to Dataverse APIs and data within the environment.  
+For agents that require data access to a Dataverse environment, an Entra agent user must be created and associated with the agent identity so that appropriate security roles can be assigned to enable access to Dataverse APIs and data within the environment. For more information, see [Create an agent user](create-users.md#create-an-agent-user-preview).
