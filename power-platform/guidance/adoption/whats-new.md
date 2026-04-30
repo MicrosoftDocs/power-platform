@@ -5,7 +5,7 @@ description: Power Platform adoption guidance delivers best practices, fresh ins
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/29/2026
+ms.date: 04/30/2026
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -17,7 +17,7 @@ The Microsoft Power Platform adoption guidance is developed collaboratively with
 
 ## April 2026
 
-The Power Platform Center of Excellence (CoE) Starter Kit is no longer actively maintained. Many of the governance, visibility, and best practice capabilities historically delivered through the CoE Starter Kit are now available natively in the Power Platform admin center. In-product experiences like Inventory, Usage, Monitor, Actions, and Licensing give admins real time insights into resources, adoption, operational health, and governance. As Microsoft continues to invest in these built-in experiences, customers are encouraged to use the Power Platform admin center as the primary destination for managing and governing Power Platform at scale.
+The Power Platform Center of Excellence (CoE) Starter Kit is no longer actively maintained. Many of the governance, visibility, and best practice capabilities historically delivered through the CoE Starter Kit are now available natively in the [Power Platform admin center](../admin/admin-documentation). In-product experiences like Inventory, Usage, Monitor, Actions, and Licensing give administrators real-time insights into resources, adoption, operational health, and governance. As Microsoft continues to invest in these built-in experiences, customers are encouraged to use the Power Platform admin center as the primary destination for managing and governing Power Platform at scale.
 
 Added a link to our list of whitepapers for [Administering and governing the Power Platform for Enterprise](https://aka.ms/PowerPlatformAdministrationandGovernance).
 
