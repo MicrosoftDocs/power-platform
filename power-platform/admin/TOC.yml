@@ -675,6 +675,8 @@
                   href: admin-view-user-licenses.md
                 - name: Create users
                   href: create-users.md
+                - name: Create Entra agent users
+                  href: agent-users.md
                 - name: Assign licenses
                   href: assign-licenses.md
                 - name: Assign security roles
