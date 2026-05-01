@@ -20,7 +20,7 @@ contributors:
 # Business continuity and disaster recovery
 
 > [!Important]
-> To further strengthen your availability, regional resiliency, and protection against large-scale regional disruptions, a [pay-as-you-go billing plan](pay-as-you-go-overview.md) is **not a mandatory requirement** to enable self-service disaster recovery on your production environment as of May 22, 2026.
+> To further strengthen your availability, regional resiliency, and protection against large-scale regional disruptions, a [pay-as-you-go billing plan](pay-as-you-go-overview.md) is not currently required to enable self-service disaster recovery on your production environment.
 > 
 > This enhancement is designed with your success in mind. It gives you greater control, improved operational resilience, and the ability to respond confidently to unexpected events.
 
