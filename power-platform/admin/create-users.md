@@ -7,10 +7,11 @@ ms.subservice: admin
 ms.author: sericks
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/29/2025
+ms.date: 04/28/2026
 search.audienceType: 
   - admin
 contributors:
+  - paulliew
   - shahzorkhan123 
   - srpoduri
   - val-bc 
@@ -47,6 +48,14 @@ For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](..
 ### Regular users
 
 These users are the regular synchronized users from Microsoft Entra ID.
+
+### Agent users (preview)
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+These users have [agent identities in Microsoft Entra Agent ID](/entra/agent-id/agent-identities) and are added into the Dataverse environment to get data access.
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ### Application users
 
@@ -366,6 +375,25 @@ You then need to remove the license from the account.
 5. Click **Save changes** to apply the changes.
 
 Go back to the customer engagement app and confirm that the non-interactive user account **Access Mode** is still set for **Non-interactive**.  
+
+## Create an agent user (preview)
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, choose an environment.
+1. In the command bar, select **Settings**. 
+1. Expand **Users + permissions**, then select **Agents**.
+1. Select **+ Add agent** from the command bar. The **Add agent** pane appears.
+1. Choose the agent user from the search list, then select **Add** to add the agent.
+1. On the **Manage security roles** page, select a security role for your agent.
+1. Select **Save** to apply the changes.
+
+For step-by-step information about creating a Microsoft Entra agent identity, see [Create agent identities in agent identity platform](/entra/agent-id/create-delete-agent-identities?tabs=microsoft-graph-api)
 
 ## Create an application user
 
