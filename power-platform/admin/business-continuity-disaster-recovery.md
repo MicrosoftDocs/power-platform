@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 04/29/2026
+ms.date: 05/01/2026
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -168,7 +168,7 @@ Self-service disaster recovery depends on Azure region pairs. Regions that don't
 
 As of November 2025, Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported for self-service disaster recovery. 
 
-> [!Note)
+> [!Note]
 > Brazil and South Africa do not have self-service disaster recovery because their regional pairs are in heavily constrained regions. Adding supported regions is influenced by impact, opportunity, and resource constraints. United Arab Emirates has self-service disaster recovery but continues to be capacity-constrained, which has impacted its general availability.
 
 ### What should I know about the capacity experience?
