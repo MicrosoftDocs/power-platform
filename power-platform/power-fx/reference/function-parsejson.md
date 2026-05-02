@@ -23,12 +23,6 @@ no-loc: ["ParseJSON"]
 
 Interprets a JSON string and returns a [Dynamic value](../untyped-object.md) or a specific typed value if a type is provided.
 
-> [!IMPORTANT]
-> - Using the second argument to **ParseJSON** to convert to a typed object is an experimental feature.
-> - Experimental features aren't meant for production use and may have restricted functionality. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
-> - The behavior that this article describes is available only when the **User-defined types** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
-> - Your feedback is very valuable to us. Please let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
-
 ## Description
 The ParseJSON function parses a valid JSON string and returns a [Dynamic](../untyped-object.md) value representing the JSON structure. 
 
