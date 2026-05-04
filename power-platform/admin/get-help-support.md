@@ -167,6 +167,7 @@ If the Support Agent is unavailable, isn't performant, or crashes, the backup su
      > - Selecting "Dynamics 365 Customer Service" for customer service *with another* *product* **misroutes and delays a request.**
      > - For administration issues or if you encountered an issue in Power Platform Admin Center (PPAC), select this as the product. 
      
+     
    - Select the best fit **Category** and **Subcategory** to help route the request to the appropriate Support representative. 
       
    - Provide a summary title, then fully and [clearly describe the issue](/power-apps/maker/canvas-apps/service-request-support) in the description field. Provide as much detail as you can to help Microsoft understand the issue. All information is used to find solutions and becomes the **Title** and **Description** of any support request.
@@ -190,6 +191,7 @@ If the Support Agent is unavailable, isn't performant, or crashes, the backup su
     > [!TIP]
     > If the affected environment isn't listed, select **My environment is not listed** and provide the URL of the environment.>
     
+    
   - Select whether your request is [Advisory or Technical](/power-platform/admin/support-overview#technical-support-vs-advisory-services). Some support plans don't have Advisory support.
   - Set the [appropriate severity](/power-platform/admin/support-overview#severity-and-responsiveness) for your request.
   
@@ -198,11 +200,13 @@ If the Support Agent is unavailable, isn't performant, or crashes, the backup su
     > - Selecting Severity A for a low priority issue will results in automatic downgrade to an appropriate severity.
     > - Selecting **Technical** in order to submit an **Advisory** request **will result in closure** of your request. 
     
+    
   - Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
   - Set your contact preferences and advanced diagnostic consent. To learn more, see [advanced diagnostics](/power-platform/admin/support-environment).
   
     > [!IMPORTANT]
     > **Microsoft can't access or run diagnostics on data in your tenant or environment without consent.** If consent is required but not provided, a Microsoft support representative will contact you to update the consent before proceeding.]
+    
     
   - Select **Create support request** to submit. You will see confirmation when successful. You can manage the request on the [Support requests page](https://admin.powerplatform.microsoft.com/support/requests).
   - If offered a customer satisfaction survey, respond with your perspective to improve the experience. Engineers review feedback.
