@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 05/01/2026
+ms.date: 05/04/2026
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -18,11 +18,6 @@ contributors:
 ---
 
 # Business continuity and disaster recovery
-
-> [!Important]
-> To further strengthen your availability, regional resiliency, and protection against large-scale regional disruptions, the pay-as-you-go billing plan is **not a mandatory requirement** to enable self-service disaster recovery on your production environment **starting May 22, 2026**.
-> 
->This enhancement is designed with your success in mind, giving you greater control, improved operational resilience, and the ability to respond confidently to unexpected events.
 
 Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to document a business continuity plan that minimizes the effects of outages. To recover and resume operations, make sure the plan lists stakeholders, processes, and specific steps.
 
@@ -67,8 +62,7 @@ You usually have multiple environments of different types in your tenant. This c
 
 To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md)
 
-> [!Note]
-> A [pay-as-you-go billing plan](pay-as-you-go-overview.md) is not a mandatory requirement as of May 22, 2026. For more information about Managed Environments, go to [Managed Environments](managed-environment-overview.md).
+
 
 ## Allow Virtual Network pairing for self-service disaster recovery in Dynamics 365
 
@@ -123,6 +117,9 @@ After you fix an outage or finish your drill, switch the environment back to its
 Admins check the current disaster recovery state and location of an environment in the **Environment details** page. Admins also select **Disaster Recovery** in the command bar to open the **Disaster Recovery** pane.
 
 To check data replication latency at any time, select **Disaster Recovery**, and then select **Emergency response** as the disaster recovery reason. This action opens a confirmation dialog that shows the last replication time between regions for that environment. You can select **Cancel** if your only purpose is to check the potential loss of data if there's a failover operation. Remember, the last sync time always changes because data is replicated continuously.
+
+## Recovery point and recovery time objectives with business continuity and disaster recovery
+Power Platform and Dataverse are designed with high availability built into every region. Within a region, the platform targets approximately near zero RPO (recovery point objective) and a recovery time of under 5 minutes across availability zones and data centers within a region. For cross-region resiliency, Microsoft provides Self-Service Disaster Recovery (SSDR), which gives customers full visibility and control over the failover process. In this model, typical replication lag is under 15 minutes (often under 5 minutes), and the platform is designed to complete failover within minutes once initiated. Because customers retain control of when and whether to trigger a cross-region failover, Microsoft does not publish a  cross-region RTO commitment— however, customers can monitor real-time replication lag directly in the Power Platform Admin Center (PPAC) to inform their own recovery decisions. It is also important to note that when Power Platform solutions connect to external systems — such as SQL Server, REST APIs, or other third-party services — the RPO of those integrations are governed by the availability and recovery capabilities of the respective target systems, and fall outside the scope of Power Platform's resiliency commitments. 
 
 ## Document your business continuity plan
 
