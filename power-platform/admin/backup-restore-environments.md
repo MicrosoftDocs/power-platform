@@ -7,7 +7,7 @@ ms.subservice: admin
 author: matapg007
 ms.author: matgupta
 ms.reviewer: ellenwehrle
-contributors: 
+contributors:
   - tapas1447
   - ttreen
   - Funken1766
@@ -27,7 +27,7 @@ It's important to protect your data on Microsoft Power Platform and in Dataverse
 
 System backups are automatically created for environments that have a database. By default, backups of all production and nonproduction environments are retained for seven days. However, for production [Managed Environments](managed-environment-overview.md), the retention period can be extended up to 28 days through the Power Platform admin center or PowerShell.
 
-Manual backups are backups that the user initiates. It's recommended for creating manual backups before performing major customizations, applying a version update, or making significant changes to the environment. You can create these backups for production and sandbox environments, but not for the default environment. By default, manual backups are kept for seven days. For production Managed Environments, the retention period can be extended up to 28 days.
+Manual backups are backups that the user initiates. It's recommended that you create manual backups before performing major customizations, applying a version update, or making significant changes to the environment. You can create these backups for production and sandbox environments, but not for the default environment. By default, manual backups are kept for seven days. For production Managed Environments, the retention period can be extended up to 28 days.
 
 ## Supported retention period
 
@@ -41,7 +41,7 @@ Manual backups are backups that the user initiates. It's recommended for creatin
 | Trial | Not backed up | Not supported |
 | Trial (subscription-based) | Not backed up | Not supported |
 
-\* For production [Managed Environments](managed-environment-overview.md), you can extend the retention period beyond seven days, to a maximum of 28 days, through the Power Platform admin center or PowerShell. Learn more in [Change the backup retention period for production managed environments](#change-the-backup-retention-period-for-production-managed-environments).
+\* For production [Managed Environments](managed-environment-overview.md), you can extend the retention period beyond seven days, to a maximum of 28 days, through the Power Platform admin center or PowerShell. Learn more in [Change the backup retention period for production Managed Environments](#change-the-backup-retention-period-for-production-managed-environments).
 
 \*\* We don't support restoring a system backup of the default environment through the Power Platform admin center. Learn more in [Backup and restoration of the default environment](../guidance/adoption/manage-default-environment.md#back-up-and-restore-the-default-environment).
 
@@ -66,7 +66,7 @@ Environments that have a database are automatically backed up and can be restore
 - Backup and restore operations include only apps (created by using Power Apps) and flows (created by using Power Automate) in a Dataverse solution.
 - Downloading a copy of a database backup for offline use isn't supported.
 
-### Change the backup retention period for production managed environments
+### Change the backup retention period for production Managed Environments
 
 For production environments, the default backup retention period is seven days. Tenant admins with a Power Platform admin, Global admin, or Dynamics 365 admin role in Microsoft Entra ID can change the retention period to 7, 14, 21, or 28 days for production [Managed Environments](managed-environment-overview.md) through the Power Platform admin center or PowerShell. The configured retention period applies to both system and manual backups.
 
@@ -79,8 +79,9 @@ For example, you create an environment on January 1. On that day, the system sta
 #### Change the retention period in the Power Platform admin center
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
-1. On the **Environments** page, select a production managed environment.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select a production Managed Environment.
 1. In the command bar, select **Edit**.
 1. In the **Edit details** panel, under **Backup retention**, select the retention period you want (7, 14, 21, or 28 days).
 1. Select **Save**.
@@ -165,7 +166,7 @@ Although automated system backups are great, you should create your own backups 
 
 - You can create backups of production, sandbox, Teams, and developer environments.
 - You can't create backups of the default environment.
-- Manual backups of production environments are kept for up to seven days by default. For production Managed Environments, the retention period can be extended up to 28 days.
+- Manual backups of production environments are kept for up to seven days, by default. For production Managed Environments, the retention period can be extended up to 28 days.
 - Sandbox backups are kept for up to seven days.
 - Check your expiration date.
 
@@ -264,11 +265,11 @@ Because Azure SQL Database continuously makes backups, and there's no specific w
 
 ### How long are my manual, on-demand backups and system backups retained?
 
-System and manual backups are retained for up to seven days by default. For production Managed Environments, the retention period can be extended up to 28 days. Learn more in the section: [Change the backup retention period for production managed environments](#change-the-backup-retention-period-for-production-managed-environments).
+System and manual backups are retained for up to seven days, by default. For production Managed Environments, the retention period can be extended up to 28 days. Learn more in [Change the backup retention period for production Managed Environments](#change-the-backup-retention-period-for-production-managed-environments).
 
 ### How do I determine if backups of a production environment are retained for 28 days?
 
-Production environments default to a seven-day backup retention period. If the environment is a production [Managed Environment](managed-environment-overview.md), an admin can extend the retention period up to 28 days through the Power Platform admin center or PowerShell. Learn more in [Change the backup retention period for production managed environments](#change-the-backup-retention-period-for-production-managed-environments).
+Production environments default to a seven-day backup retention period. If the environment is a production [Managed Environment](managed-environment-overview.md), an admin can extend the retention period up to 28 days through the Power Platform admin center or PowerShell. Learn more in [Change the backup retention period for production Managed Environments](#change-the-backup-retention-period-for-production-managed-environments).
 
 ### Can I move my data from an online environment to an on-premises version?
 
