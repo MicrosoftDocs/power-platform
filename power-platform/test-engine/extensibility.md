@@ -1,19 +1,18 @@
 ---
-title: "Test Engine extensibility (preview)"
+title: "Test Engine extensibility (deprecated)"
 description: Understanding the extensibility model for Test Engine and the role of Microsoft-signed components
 author: caburk
 ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
  - grant-archibald-ms
 ---
-# Test Engine extensibility (preview)
+# Test Engine extensibility (deprecated)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 ## Overview
 

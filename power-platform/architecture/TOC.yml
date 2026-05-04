@@ -105,6 +105,12 @@
           href: reference-architectures/contextual-ai-model-driven-app.md
         - name: Analyze and automate business data with Dataverse SDK for Python
           href: reference-architectures/dataverse-sdk-for-python.md
+        - name: ​Automate vendor invoicing with Power Automate and AI Builder
+          href: reference-architectures/vendor-invoice-integration.md
+        - name: Upload files to SharePoint with metadata from model‑driven apps
+          href: reference-architectures/custom-page-file-upload.md
+        - name: Synchronize data across Dataverse environments
+          href: reference-architectures/sync-dataverse-data.md
         - name: Automate service order lifecycle and SLA governance
           href: reference-architectures/service-order-process.md
     - name: Solution ideas

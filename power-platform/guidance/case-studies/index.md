@@ -7,7 +7,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.topic: overview
-ms.date: 03/18/2026
+ms.date: 04/27/2026
 ---
 
 # Real-world case studies
@@ -47,10 +47,12 @@ Each case study provides an in-depth look at how organizations build application
 | [John Cockerill streamlines enterprise business processes](engineering-time-tracking.md) | Covers how international engineering company John Cockerill uses Power Platform to develop enterprise apps. |
 | [La Trobe University supercharges academic productivity with AI and Copilot Studio](latrobe-supercharges.md) | Covers how La Trobe University enhances academic productivity and support services with AI and Copilot Studio. |
 | [Lloyds Banking Group bridges language barriers](lloyds-banking-group.md) | Covers how Lloyds Banking Group uses Power Apps and Azure AI services to deliver real-time, inclusive language support in banking. |
+| [Telecom provider mobilezone modernizes service delivery using Microsoft Copilot Studio](mobilezone-modernizes-service-delivery.md) | Covers how mobilezone uses Copilot Studio, Dynamics 365, and MCP servers to modernize service delivery, improve customer interactions, and streamline internal operations. |
 | [Nexi Group revolutionizes customer support with Copilot Studio](nexi-revolutionizes-customer-support.md) | Covers how Nexi Group uses Copilot Studio and Azure AI services to streamline customer interactions, reduce contact center workload, and modernize card-service support. |
 | [Rabobank embraces conversational banking with Copilot Studio](rabobank-conversational-banking.md) | Covers how Rabobank uses Copilot Studio to enhance customer service through conversational AI with text and voice-enabled chatbot functionality. |
 | [Signetic transforms healthcare operations with Power Platform and Copilot Studio](signetic-transforms-healthcare.md) | Covers how Signetic revolutionizes healthcare operations with Power Platform and Copilot Studio to improve workflow efficiency, and patient care. |
 | [Singapore Civil Defence Force implements digital solutions using Power Platform and Copilot Studio](scdf-implements-digital-solutions.md) | Covers how the Singapore Civil Defence Force transformed manual processes into automated solutions, saving millions of dollars and empowering its workforce. |
 | [SLB enhances productivity with Power Platform and AI](slb-enhances-productivity.md) | Covers how SLB increases process efficiency and employee productivity using Power Apps, AI Builder, Power Automate, and Dataverse. |
 | [Teck automates data extraction with Power Automate and AI Builder](teck-automates-data-extraction.md) | Covers how Teck uses Power Automate and AI Builder to automate data extraction processes. |
+| [Tiendas CUADRA delivers always-on customer service and product discovery with Copilot Studio](tiendas-cuadra-customer-service.md) | Covers how Tiendas CUADRA uses Copilot Studio to improve customer service response times and enable AI-powered product discovery. |
 | [T-Mobile empowers customer service representatives using Power Apps and Copilot Studio](tmobile-empowers-customer-service.md) | Covers how T-Mobile equips customer service representatives with an app that provides accurate device information and improves customer experiences. |

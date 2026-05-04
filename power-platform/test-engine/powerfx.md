@@ -1,20 +1,19 @@
 ---
-title: "Power Apps Test Engine Power Fx (preview)"
+title: "Power Apps Test Engine Power Fx (deprecated)"
 description: "Describes Power Fx you can use with Power Apps Test Engine."
 author: caburk
 ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
 - grant-archibald-ms
 ---
 
-# Power Apps Test Engine Power Fx (preview)
+# Power Apps Test Engine Power Fx (deprecated)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 > 
 > You can make use of [Learning Playground](https://microsoft.github.io/PowerApps-TestEngine/learning/playground/) to get hands on and try the functions documented in this guide.
 

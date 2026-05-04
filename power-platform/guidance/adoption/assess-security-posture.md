@@ -8,7 +8,7 @@ ms.topic: best-practice
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/14/2025
+ms.date: 04/09/2026
 ---
 
 # Understand your security posture and challenges
@@ -65,7 +65,7 @@ Learn more about individual security features and find answers to frequent secur
 
 ## Evaluate your current security posture
 
-Evaluating your current security posture is important to ensure that your Power Platform environments and workloads are secure and compliant with organizational and regulatory requirements. This process involves thoroughly assessing your existing security measures, tools, and practices to identify gaps and areas for improvement. 
+Evaluating your current security posture is important to ensure that your Power Platform environments and workloads are secure and compliant with organizational and regulatory requirements. This process involves thoroughly assessing your existing security measures, tools, and practices to identify gaps and areas for improvement.
 
 Here's a detailed look at what this evaluation entails:
 
@@ -108,7 +108,7 @@ Here are some of the typical challenges and how Power Platform can help address 
 - Insider threats: Attackers are often insiders who have legitimate permissions to use the systems. These insiders know how to bypass built-in controls and exploit exceptions within the organization. Detecting and mitigating insider threats requires advanced security measures that go beyond standard access controls.
 - Subtle attacks: The most challenging attacks to detect are those that make minor adjustments, benefiting the attacker while causing harm to the organization. These subtle changes can easily go unnoticed without robust monitoring and analysis.
 
-Power Platform offers a range of security controls and tools designed to tackle these challenges effectively - here are some examples of how Power Platform features that support your security posture. Review the other articles in this series for a deeper dive into some of these areas, and review our [security and governance documentation](/power-platform/admin/security) to learn how to set up and maintain security and governance for Power Platform.
+Power Platform offers a range of security controls and tools designed to tackle these challenges effectively - here are some examples of how Power Platform features that support your security posture. Review the other articles in this series for deeper coverage of these areas, and review our [security and governance documentation](/power-platform/admin/security) to learn how to set up and maintain security and governance for Power Platform.
 
 1. **Comprehensive monitoring and integration**: Relying solely on monitoring the activities within your business applications isn't enough to spot problems. You need to integrate these applications with other data sources to identify and respond to suspicious activities that might otherwise go unnoticed. For example, seeing that a cloud flow is getting customer information from Dataverse and sending an email might not be suspicious on its own. However, when combined with other signals, such as frequency of the cloud flow runs, unusual geo-locations, or off-hours activity, you can detect more complex insider threats. Power Platform's integration with [Microsoft Sentinel](/azure/sentinel/overview) allows for advanced threat detection and response. By correlating data from various sources, Microsoft Sentinel can identify patterns and anomalies that indicate potential security threats, enabling proactive measures to mitigate risks.
 
@@ -122,7 +122,7 @@ Power Platform offers a range of security controls and tools designed to tackle 
 
 ## Consider OWASP Top 10 security risks
 
-The Open Worldwide Application Security Project® ([OWASP](https://owasp.org/about/)) is a nonprofit foundation dedicated to improving software security. OWASP identified the [top 10 security risks](https://aka.ms/OWASPLowCodeSecurityRisks) associated with low-code/no-code platforms. This list is regularly updated based on feedback from the security community to ensure it remains relevant and comprehensive.
+The Open Worldwide Application Security Project&reg; ([OWASP](https://owasp.org/about/)) is a nonprofit foundation dedicated to improving software security. OWASP identified the [top 10 risks for citizen development](https://owasp.org/www-project-citizen-development-top10-security-risks/) associated with low-code/no-code platforms. This list is regularly updated based on feedback from the security community to ensure it remains relevant and comprehensive.
 
 These risks are common across all low-code/no-code platforms, and addressing them requires a combination of platform-specific security features and organizational security processes. While using a low-code/no-code platform can mitigate some security risks, it doesn't eliminate all of them.
 
@@ -150,14 +150,14 @@ Make security a priority from day one. Consider the security impacts on scalabil
 
 ## Next step
 
-A comprehensive security strategy for Power Platform adoption creates a framework that protects sensitive data, complies with regulatory standards, and supports enterprise scalability. 
+A comprehensive security strategy for Power Platform adoption creates a framework that protects sensitive data, complies with regulatory standards, and supports enterprise scalability.
 
 > [!div class="nextstepaction"]
 > [Enhance your security posture](security-posture-management.md)
 
 ## Related information
 
-- [Low-code security and governance](https://www.microsoft.com/en-us/power-platform/trusted-cloud?msockid=32e5014d245262fc0dd6128a2508631d)
+- [Low-code security and governance](https://www.microsoft.com/power-platform/trusted-cloud?msockid=32e5014d245262fc0dd6128a2508631d)
 - [Microsoft compliance](/compliance/)
 - [Microsoft Power Platform security and governance documentation](/power-platform/admin/security)
 - [Microsoft Copilot Studio security and governance documentation](/microsoft-copilot-studio/security-and-governance)

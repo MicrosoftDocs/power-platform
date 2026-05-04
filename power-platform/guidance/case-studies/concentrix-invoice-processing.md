@@ -5,6 +5,7 @@ description: Learn how Concentrix used AI and Power Platform to streamline invoi
 author: carcla
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
+ms.subservice: case-study
 ms.date: 03/17/2026
 ms.topic: overview
 ---
@@ -25,7 +26,7 @@ The workflow also lacked centralized visibility. Teams couldn't easily track inv
 
 As volumes increased from around 500 invoices per month to several hundred thousand, with 6,000 to 8,000 arriving each day, the manual approach became unsustainable. The process was slow, error-prone, and increasingly difficult to scale as both volume and vendor variation continued to grow.
 
-> *At that scale, handling invoices manually becomes a nightmare. The requirement itself—extract data and load it—is simple. The real challenge is handling the volume, the variation, and the speed the business demands.*
+> At that scale, handling invoices manually becomes a nightmare. The requirement itself—extract data and load it—is simple. The real challenge is handling the volume, the variation, and the speed the business demands.
 >
 > — *Syed Rasheed, Principal Architect, Concentrix*
 
@@ -47,7 +48,7 @@ Key benefits include:
   - High accuracy strengthens confidence across operations
   - Customers receive clean, consistent data on time
 
-> *We work across all verticals—banking, retail, telecom, education, healthcare—and automation is a key part of how we help our clients operate better and faster.*
+> We work across all verticals—banking, retail, telecom, education, healthcare—and automation is a key part of how we help our clients operate better and faster.
 >
 > — *Syed Rasheed, Principal Architect, Concentrix*
 
@@ -121,6 +122,7 @@ These advancements will enable Concentrix to operate at greater scale, with high
 
 ## Related information
 
+- [Automate vendor invoice processing with Power Automate and AI Builder](../../architecture/reference-architectures/vendor-invoice-integration.md)
 - [What is Power Automate?](/power-automate/flow-types)
 - [Use your prompt in Power Automate](/ai-builder/use-a-custom-prompt-in-flow)
 - [Build a model in AI Builder](/ai-builder/build-model)
