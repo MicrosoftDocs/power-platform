@@ -20,9 +20,9 @@ contributors:
 # Business continuity and disaster recovery
 
 > [!Important]
-> To further strengthen your availability, regional resiliency, and protection against large-scale regional disruptions, a [pay-as-you-go billing plan](pay-as-you-go-overview.md) is not currently required to enable self-service disaster recovery on your production environment.
-> 
-> This enhancement is designed with your success in mind. It gives you greater control, improved operational resilience, and the ability to respond confidently to unexpected events.
+> As of September 3, 2025, the self-service disaster recovery feature supports failover for [Dynamics 365 Contact Center](/dynamics365/contact-center/). With this enhancement, organizations can seamlessly initiate failover for their contact center environments, ensuring smooth execution of disaster recovery drills or continued operations from an alternate region when needed.
+>
+> Self-service disaster recovery for finance and operations applications is now available in preview. Sign up [using this form](https://forms.office.com/r/XEXsxwBbLt) if you're interested in participating in the preview.
 
 Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to document a business continuity plan that minimizes the effects of outages. To recover and resume operations, make sure the plan lists stakeholders, processes, and specific steps.
 
