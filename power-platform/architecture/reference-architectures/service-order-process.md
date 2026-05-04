@@ -5,7 +5,7 @@ description: Learn how to design a solution that automates service request lifec
 author: carcla
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 04/09/2026
+ms.date: 05/04/2026
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 ---
@@ -21,7 +21,8 @@ The application also serves as a centralized reference system for the legal and 
 
 ## Architecture diagram
 
-:::image type="content" source="media/service-order-process/service-order-process.jpg" alt-text="Diagram of Power Platform architecture showing users, security, Dataverse, model-driven app UI, Power Automate, and Microsoft 365 integrations." lightbox="media/service-order-process/service-order-process.jpg":::
+<!-- Art Library Source# ConceptArt-0-000-203 -->
+:::image type="content" source="media/service-order-process/service-order-architecture.svg" alt-text="Diagram of Power Platform architecture showing users, security, Dataverse, model-driven app UI, Power Automate, and Microsoft 365 integrations." border="false" lightbox="media/service-order-process/service-order-architecture.svg":::
 
 ## Workflow
 
@@ -87,7 +88,7 @@ The application also serves as a centralized reference system for the legal and 
 
     1. Rejection
 
-        1. On rejection, the request is marked to “Rejected”
+        1. On rejection, the request is marked as "Rejected."
 
         1. The business process is updated to the Rejected stage.
 
@@ -113,9 +114,9 @@ The application also serves as a centralized reference system for the legal and 
 
 ### SLA workflow
 
-1. When you select Create New SLA request, you're taken to the New SLA form. In the form, you can select only the completed service order request that you created.
+1. When you select **Create New SLA request**, you're taken to the **New SLA** form. In the form, you can select only the completed service order request that you created.
 
-1. The SLA entity approval workflow uses a similar workflow and Business Process Flow as for Service Order approval, except it doesn't include the Sign in Service Order Request stage.
+1. The SLA entity approval workflow uses a similar workflow and Business Process Flow as for Service Order approval, except it doesn't include the **Sign in Service Order Request** stage.
 
 1. An SLA is valid for 18 months by default unless you specify otherwise in the request. A Power Automate backend job runs every day to check the SLA expiration. When the SLA expiry date matches today's date, the job marks the SLA as terminated and the Service Order as terminated. The job updates the corresponding email notifications and Business Process Flow stages for both entities.
 
@@ -151,7 +152,7 @@ Key drivers for the new solution:
 
 - **Streamline change management** by using low-code features and minimizing custom development.
 
-- **Deliver a lean, maintainable Power Platform solution within one month**, meeting the customer’s aggressive timeline.
+- **Deliver a lean, maintainable Power Platform solution within one month**, meeting the customer's aggressive timeline.
 
 - **Ensure seamless migration** of the existing process and underlying data.
 
@@ -187,7 +188,7 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 - **Business process flows** orchestrate request routing, approvals, and multistage progress tracking.
 
-- **Power Automate** flows performs various actions at completion of each approval stage, such as sending notifications to Outlook and Teams, assigning tasks, and generating an automatic PDF at the final stage.
+- **Power Automate** flows perform various actions at completion of each approval stage, such as sending notifications to Outlook and Teams, assigning tasks, and generating an automatic PDF at the final stage.
 
 ### Lifecycle and termination management
 
@@ -239,7 +240,7 @@ These considerations implement the pillars of Power Platform Well-Architected, w
 
 ### Security
 
-1. Controlled access to the model-driven app by using Entra ID security groups mapped to Dataverse owner groups.
+1. Controlled access to the model-driven app by using Microsoft Entra ID security groups mapped to Dataverse owner groups.
 
 1. Defined custom security roles for commercial responsible, primary responsible, requestor, and admin to ensure secure access to data.
 
