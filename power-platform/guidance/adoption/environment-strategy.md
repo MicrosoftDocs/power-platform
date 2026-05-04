@@ -5,11 +5,12 @@ description: Learn how to best use the features of the platform to implement an 
 author: robstand
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/29/2025
+ms.date: 05/04/2026
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.custom: bap-template
 ms.subservice: guidance
+
 ---
  
 # Develop a tenant environment strategy to adopt Power Platform at scale
