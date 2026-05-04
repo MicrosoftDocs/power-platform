@@ -8,7 +8,8 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/14/2025
+ms.date: 05/04/2026
+
 ---
 
 # Ensure data retention and mobility
