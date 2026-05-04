@@ -24,7 +24,7 @@ This article provides recommendations to help you build robust and resilient Pow
 
 Environments that have a database are [automatically backed up and can be restored](../../admin/backup-restore-environments.md) to any selected system backup in the last seven days. These backups include all the data, configurations, and customizations within the environment. 
 
-In addition to automatic backups, administrators can also create manual backups at any time. Manual backups are useful before making significant changes or updates to the environment. You can extend backup retention from seven to 28 days by making an environment a [Managed Environment](../../admin/managed-environment-overview.md).
+In addition to automatic backups, administrators can also create manual backups at any time. Manual backups are useful before making significant changes or updates to the environment. You can extend backup retention from seven to 28 days for production [Managed Environments](../../admin/managed-environment-overview.md).
 
 ## Implement data policies
 
