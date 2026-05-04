@@ -3,7 +3,7 @@ title: Managed availability
 description: Learn how managed availability provides robust capabilities to ensure continuous uptime, seamless failover, and enterprise-grade resilience for mission-critical applications and AI workloads. 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/19/2025
+ms.date: 05/04/2026
 author: rashmansur
 ms.custom: NewPPAC
 ms.author: rashmim 
@@ -30,7 +30,7 @@ Managed availability uses Azure availability zones to replicate production envir
 - **Minimal service disruption**: Automatic redirection of traffic during zone-level failures.
 
 ## Automated backups and self-serve disaster recovery
-Environments with databases benefit from automated backups that can be restored to any system backup from the past seven days (extendable to 28 days for production managed environments). 
+Environments with databases benefit from automated backups that can be restored to any system backup from the past seven days (extendable to 28 days for production Managed Environments). 
 
 Self-serve disaster recovery allows organizations to:
 - Define and test cross-region failover strategies directly from the Power Platform admin center.
