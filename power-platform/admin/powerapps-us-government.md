@@ -4,7 +4,7 @@ description: Provides information about Power Apps US Government service descrip
 author: carrema
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/05/2025
+ms.date: 05/04/2026
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: sericks
@@ -13,6 +13,7 @@ search.audienceType:
 ms.contributors:
  - heortaol
  - nyarbrough
+ - jordanchodak
 ---
 
 # Power Apps US Government
@@ -165,6 +166,7 @@ For those customers that implement network restrictions, ensure access to the fo
 *.windows.net  
 *.crm9.dynamics.com  
 *.dynamics365portals.us
+*.gov.powerplatformusercontent.mi
 
 Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/details.aspx?id=57063) to enable access to environments that users and administrators may create within your tenants well as other Azure services leveraged by the platform:
 
@@ -185,10 +187,12 @@ Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/detai
 *.microsoftonline.us  
 *.microsoftdynamics.us (GCC High)  
 *.crm.microsoftdynamics.us (GCC High)  
-*.high.dynamics365portals.us (GCC High)  
-*.appsplatform.us (DoD)  
+*.high.dynamics365portals.us (GCC High)
+*.high.powerplatformusercontent.microsoft.us (GCC High)
+*.appsplatform.us (DoD)
 *.crm.appsplatform.us (DoD)  
-*.appsplatformportals.us (DoD) 
+*.appsplatformportals.us (DoD)
+*.appsplatformusercontent.us (DoD)
 
 Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/details.aspx?id=57063) to enable access to environments that users and administrators may create within your tenant as well as other Azure services leveraged by the platform:
 
