@@ -68,7 +68,7 @@ Environments that have a database are automatically backed up and can be restore
 
 ### Change the backup retention period for production managed environments
 
-For production environments, the default backup retention period is seven days. Admins who run production [Managed Environments](managed-environment-overview.md) can change the retention period to 7, 14, 21, or 28 days through the Power Platform admin center or PowerShell. The configured retention period applies to both system and manual backups. To change this setting, you must have an admin role, such as Power Platform admin or Dynamics 365 admin in Microsoft Entra ID.
+For production environments, the default backup retention period is seven days. Tenant admins with a Power Platform admin, Global admin, or Dynamics 365 admin role in Microsoft Entra ID can change the retention period to 7, 14, 21, or 28 days for production [Managed Environments](managed-environment-overview.md) through the Power Platform admin center or PowerShell. The configured retention period applies to both system and manual backups.
 
 Keep the these points in mind:
 
@@ -84,6 +84,9 @@ For example, you create an environment on January 1. On that day, the system sta
 1. In the command bar, select **Edit**.
 1. In the **Edit details** panel, under **Backup retention**, select the retention period you want (7, 14, 21, or 28 days).
 1. Select **Save**.
+
+> [!NOTE]
+> To change the backup retention period, you must have a tenant-level admin role, such as Power Platform admin, Global admin, or Dynamics 365 admin in Microsoft Entra ID. If a backup retention rule is already set at the [environment group](environment-groups.md) level, you can't override the setting at the individual environment level.
 
 #### Change the retention period with PowerShell
 
