@@ -5,7 +5,7 @@ description: Learn how to design a solution that automates service request lifec
 author: carcla
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 05/04/2026
+ms.date: 05/05/2026
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 ---
@@ -41,7 +41,7 @@ The workflow is as follows:
     - View assigned tasks
     - Admin button visible to admin group members
 
-1. The user selects **New Service Order** from the home page. A new service order form appears with tabs to enter service order details. The user can attach documents to the newly created service order using the out-of-the-box SharePoint subgrid option.
+1. The user selects **New Service Order** from the home page. A new service order form appears with tabs to enter service order details. The user can attach documents to the newly created service order using the built-in SharePoint subgrid option.
 
 1. To create the service order request, the user selects the **Send Request** custom button at the top of the page. The following actions take place:
 
@@ -183,13 +183,13 @@ The team designed and implemented a Power Apps model-driven app, supported by ke
 
 ### User interface
 
-**Model-driven app** serves as the primary user interface for users.
+[**Model-driven app**](/power-apps/maker/model-driven-apps/model-driven-app-overview) serves as the primary user interface for users.
 
-**Custom pages** modernize the user experience by ensuring interactive UI behavior and minimal change for end users as the application migrates from the existing platform.
+[**Custom pages**](/power-apps/maker/model-driven-apps/add-page-to-model-app) modernize the user experience by ensuring interactive UI behavior and minimal change for end users as the application migrates from the existing platform.
 
 **Custom buttons and JavaScript** manage the business rules and approval process through different stages.
 
-**Business process flow** (BPF) helps users visualize the existing stage.
+[**Business process flows**](/power-automate/business-process-flows-overview) (BPF) help users visualize the existing stage.
 
 ### PDF generation
 
@@ -207,7 +207,7 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 **Business process flows** orchestrate request routing, approvals, and multistage progress tracking.
 
-**Power Automate flows** perform various actions at completion of each approval stage, such as sending notifications to Outlook and Teams, assigning tasks, and generating an automatic PDF at the final stage.
+[**Power Automate flows**](/power-automate/) perform various actions at completion of each approval stage, such as sending notifications to Outlook and Teams, assigning tasks, and generating an automatic PDF at the final stage.
 
 ### Lifecycle and termination management
 
@@ -219,9 +219,9 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 ### Data source
 
-**Dataverse** to manage and store the application data and maintain the audit log history.
+[**Dataverse**](/power-apps/maker/data-platform/) to manage and store the application data and maintain the audit log history.
 
-**SharePoint** as the document repository and for document versioning.
+[**SharePoint**](/sharepoint/) as the document repository and for document versioning.
 
 ### Reporting
 
@@ -256,7 +256,7 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 ### Security
 
-- Control access to the model-driven app using Microsoft Entra ID security groups mapped to Dataverse owner groups.
+- Control access to the model-driven app using [Microsoft Entra ID security groups](/power-platform/admin/control-user-access) mapped to Dataverse owner groups.
 
 - Clearly define security roles for commercial responsible, primary responsible, requester, and administrators to secure data access.
 
@@ -266,7 +266,7 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 - Grant SharePoint permissions through built-in integration with Dataverse and model-driven applications.
 
-- Deploy the application in a Managed Environment and define a specific data policy for it.
+- Deploy the application in a [Managed Environment](/power-platform/admin/managed-environment-overview) and define a specific data policy for it.
 
 - Use Dataverse audit logging to detect data anomalies.
 
@@ -276,7 +276,7 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 ### Operational Excellence
 
-- Define an environment strategy to ensure operational excellence. Set up a Managed Environment, and development, testing, and production environments.
+- Define an environment strategy to ensure operational excellence. Set up a [Managed Environment](/power-platform/admin/managed-environment-overview) and development, testing, and production environments.
 
 - Implement a solution strategy:
 
@@ -294,7 +294,7 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 - Delegate long-running activities, such as SLA expiry and termination execution, to scheduled flows that don't depend on user interaction.
 
-- Use batch APIs for bulk CRUD operations to avoid throttling limits.
+- Use batch APIs for bulk CRUD operations to avoid [throttling limits](/power-automate/guidance/coding-guidelines/understand-limits).
 
 ### Experience Optimization
 
