@@ -276,45 +276,45 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 ### Operational Excellence
 
-1. Define an environment strategy to ensure operational excellence. Set up a Managed Environment, and development, testing, and production environments.
+- Define an environment strategy to ensure operational excellence. Set up a Managed Environment, and development, testing, and production environments.
 
-1. Implement a solution strategy:
+- Implement a solution strategy:
 
-    1. Use an unmanaged solution in the development environment and a managed solution in other environments.
+  - Use an unmanaged solution in the development environment and a managed solution in other environments.
 
-    1. Design solution segmentation to segment UI components, processes, and core components.
+  - Design solution segmentation to segment UI components, processes, and core components.
 
-1. Implement code reviews before moving from the development environment.
+- Implement code reviews before moving from the development environment.
 
-1. Build a model-driven app on low-code constructs for faster enhancements and bug fixes.
+- Build a model-driven app on low-code constructs for faster enhancements and bug fixes.
 
 ### Performance Efficiency
 
-1. Identify transaction volume patterns from old applications and agree with the business on the volume data collected.
+- Identify transaction volume patterns from old applications and agree with the business on the volume data collected.
 
-1. Delegate long-running activities, such as SLA expiry and termination execution, to scheduled flows that don't depend on user interaction.
+- Delegate long-running activities, such as SLA expiry and termination execution, to scheduled flows that don't depend on user interaction.
 
-1. Use batch APIs for bulk CRUD operations to avoid throttling limits.
+- Use batch APIs for bulk CRUD operations to avoid throttling limits.
 
 ### Experience Optimization
 
-1. Create a custom page to enhance the landing page.
+- Create a custom page to enhance the landing page.
 
-1. Send well-formatted emails so users can identify them easily.
+- Send well-formatted emails so users can identify them easily.
 
-1. Include deep links in emails so users can go directly to requests.
+- Include deep links in emails so users can go directly to requests.
 
-1. Send timely reminders to help users complete tasks on time.
+- Send timely reminders to help users complete tasks on time.
 
-1. Add quick links to **My Tasks** and the admin sections.
+- Add quick links to **My Tasks** and the admin sections.
 
-1. Add custom buttons that users can select to identify actions to take.
+- Add custom buttons that users can select to identify actions to take.
 
-1. Notify users of success or failure after each button selection.
+- Notify users of success or failure after each button selection.
 
-1. Hide unnecessary data when requests reach a specific stage.
+- Hide unnecessary data when requests reach a specific stage.
 
-1. Archive data so users see only active items.
+- Archive data so users see only active items.
 
 ## Contributors
 
