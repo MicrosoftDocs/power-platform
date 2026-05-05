@@ -77,7 +77,7 @@ Power Apps US Government services are provided from datacenters physically locat
 
 Access to Power Apps US Government customer content by Microsoft administrators is restricted to personnel who are US citizens. These personnel undergo background investigations in accordance with relevant government standards.
 
-Power Apps support and service engineering staff do not have standing access to customer content hosted in Power Apps US Government. Any staff who request temporary permission elevation that would grant access to customer content must first have passed the following background checks.
+Power Apps support and service engineering staff don't have standing access to customer content hosted in Power Apps US Government. Any staff who request temporary permission elevation that would grant access to customer content must first have passed the following background checks.
 
 | **Microsoft personnel screening and background checks** <sup>1</sup>     | **Description** |
 |---------|----------------------------------------------------------------------------------|
@@ -86,7 +86,7 @@ Power Apps support and service engineering staff do not have standing access to 
 | Education Verification | Verification of highest degree attained  |
 | Social Security Number (SSN) Search   | Verification that the provided SSN is valid      |
 | Criminal History Check  | A seven (7) year criminal record check for felony and misdemeanor offenses at the state, county, and local level and at the federal level  |
-| Office of Foreign Assets Control List (OFAC) | Validation against the Department of Treasury list of groups with whom U.S. persons are not allowed to engage in trade or financial transactions|
+| Office of Foreign Assets Control List (OFAC) | Validation against the Department of Treasury list of groups with whom U.S. persons aren't allowed to engage in trade or financial transactions|
 | Bureau of Industry and Security List (BIS) | Validation against the Department of Commerce list of individuals and entities barred from engaging in export activities   |
 | Office of Defense Trade Controls Debarred Persons List (DDTC) | Validation against the Department of State list of individuals and entities barred from engaging in export activities related to the defense industry  |
 | Fingerprinting Check | Fingerprint background check against FBI databases  |
@@ -108,7 +108,7 @@ Microsoft has designed the platform and our operational procedures to meet the r
 
 ## Power Apps US Government and other Microsoft services
 
-Power Apps US Government includes several features that allow users to connect to and integrate with other Microsoft enterprise service offerings such as Microsoft 365 US Government, Dynamics 365 US Government, and Microsoft Power Automate US Government. Power Apps US Government is deployed within Microsoft datacenters in a manner consistent with a multi-tenant, public cloud deployment model; however, client applications including but not limited to the web-user client, Power Apps mobile applications, or any third-party client application that connects to Power Apps US Government are not part of Power Apps US Government's accreditation boundary and government customers are responsible for managing them.
+Power Apps US Government includes several features that allow users to connect to and integrate with other Microsoft enterprise service offerings such as Microsoft 365 US Government, Dynamics 365 US Government, and Microsoft Power Automate US Government. Power Apps US Government is deployed within Microsoft datacenters in a manner consistent with a multi-tenant, public cloud deployment model; however, client applications including but not limited to the web-user client, Power Apps mobile applications, or any third-party client application that connects to Power Apps US Government aren't part of Power Apps US Government's accreditation boundary and government customers are responsible for managing them.
 
 Power Apps US Government uses the Microsoft 365 customer administrator UI for customer administration and billing—Power Apps US Government maintains the actual resources, information flow, and data management, while relying on Microsoft 365 to provide the visual styles that are presented to the customer administrator through their management console. For purposes of FedRAMP ATO inheritance, Power Apps US Government uses Azure (including Azure Government and Azure DoD) ATOs for infrastructure and platform services, respectively.
 
@@ -116,7 +116,7 @@ If you adopt the use of Active Directory Federation Services (AD FS) 2.0 and set
 
 ## Power Apps US Government and third-party services
 
-Power Apps US Government provides the ability to integrate third-party applications into the service through [connectors](/connectors/index). These third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Power Apps US Government infrastructure and therefore are not covered by the Power Apps US Government compliance and data protection commitments.
+Power Apps US Government provides the ability to integrate third-party applications into the service through [connectors](/connectors/index). These third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Power Apps US Government infrastructure and therefore aren't covered by the Power Apps US Government compliance and data protection commitments.
 
 We recommend that you review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
 
@@ -133,11 +133,11 @@ The customer's AD FS server signs this ticket using one half of an asymmetric ke
 
 The user's identity and group membership information remain encrypted in Microsoft Entra ID. In other words, only limited user-identifiable information is stored in Microsoft Entra ID.
 
-You can find full details of the Microsoft Entra security architecture and control implementation in the Azure SSP.  End-users do not interact directly with Microsoft Entra ID.
+You can find full details of the Microsoft Entra security architecture and control implementation in the Azure SSP.  End-users don't interact directly with Microsoft Entra ID.
 
 ## Power Apps US Government service URLs
 
-You use a different set of URLs to access Power Apps US Government environments, as shown in the following table (the commercial URLs are also shown for contextual reference, in case they are more readily familiar to you).
+You use a different set of URLs to access Power Apps US Government environments, as shown in the following table (the commercial URLs are also shown for contextual reference, in case they're more readily familiar to you).
 
 | **Commercial version URL**     | **US Government version URL**         |
 |--------------------------------|---------------------------------------|
@@ -205,7 +205,7 @@ Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer
 
 ## Connectivity between Power Apps US Government and public Azure Cloud Services
 
-Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a cloud-specific environment, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a Power Apps customer, and you have existing SQL environments in the Azure public cloud that you need to access, you must open specific firewall rules in SQL to the Azure Government cloud IP space, for the following datacenters:
+Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a cloud-specific environment, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you're a Power Apps customer, and you have existing SQL environments in the Azure public cloud that you need to access, you must open specific firewall rules in SQL to the Azure Government cloud IP space, for the following datacenters:
 
 - USGov Virginia
 - USGov Texas
@@ -244,7 +244,7 @@ The following URLs must be added to the allow list to ensure communication throu
 - **GCC and GCC High**: `https://tb.pipe.aria.microsoft.com/Collector/3.0` and `https://tb.events.data.microsoft.com/OneCollector/1.0/`
 - **DoD**: `https://pf.pipe.aria.microsoft.com/Collector/3.0` and `https://pf.events.data.microsoft.com/OneCollector/1.0/`
 
-If you are filtering endpoints by IP ranges, ensure that you unblock the OneDsCollector service tag. 
+If you're filtering endpoints by IP ranges, ensure that you unblock the OneDsCollector service tag. 
 
 ## Power Apps US Government feature limitations
 
@@ -259,7 +259,7 @@ Having a problem with your service? You can create a support request to get the 
   
 More information: [Contact Technical Support](get-help-support.md)
 
-### See also
+### Related content
 [Microsoft Power Automate US Government](/power-automate/us-govt) <br />
 [Dynamics 365 US Government](./microsoft-dynamics-365-government.md)
 
