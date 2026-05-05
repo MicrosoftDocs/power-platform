@@ -41,7 +41,7 @@ Beginning April, 2021, eligible customers may now choose to deploy Power Apps US
 
 ## Customer eligibility
 
-Power Apps US Government is available to (1) US federal, state, local, tribal, and territorial government entities and (2) other entities that handle data that is subject to government regulations and requirements and where use of Power Apps US Government is appropriate to meet these requirements, subject to validation of eligibility. Validation of eligibility by Microsoft will include confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) policy, or other government-regulated or controlled data. Validation might require sponsorship by a government entity with specific requirements for the handling of data. 
+Power Apps US Government is available to (1) US federal, state, local, tribal, and territorial government entities and (2) other entities that handle data that is subject to government regulations and requirements and where use of Power Apps US Government is appropriate to meet these requirements, subject to validation of eligibility. Validation of eligibility by Microsoft includes confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) policy, or other government-regulated or controlled data. Validation might require sponsorship by a government entity with specific requirements for the handling of data. 
 
 Entities with questions about eligibility for Power Apps US Government should consult their account team. Upon renewal of a customer's contract for Power Apps US Government, revalidation of eligibility is required.
 
@@ -59,7 +59,7 @@ Additional information about the differences in functionality between these grou
 
 ## What is customer data and customer content?
 
-Customer data, as defined in the Online Services Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customers through the use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro) entities (for example, contact information). Content is generally considered confidential information and in normal service operation is not sent over the internet without encryption.
+Customer data, as defined in the Online Services Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customers through the use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro) entities (for example, contact information). Content is considered confidential information and in normal service operation is not sent over the internet without encryption.
 
 For more information on Power Apps protection of customer data, see the [Microsoft Online Services Trust Center](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx).
 
@@ -77,7 +77,7 @@ Power Apps US Government services are provided from datacenters physically locat
 
 Access to Power Apps US Government customer content by Microsoft administrators is restricted to personnel who are US citizens. These personnel undergo background investigations in accordance with relevant government standards.
 
-Power Apps support and service engineering staff do not have standing access to customer content hosted in Power Apps US Government. Any staff who request temporary permission elevation which would grant access to customer content must first have passed the following background checks.
+Power Apps support and service engineering staff do not have standing access to customer content hosted in Power Apps US Government. Any staff who request temporary permission elevation that would grant access to customer content must first have passed the following background checks.
 
 | **Microsoft personnel screening and background checks** <sup>1</sup>     | **Description** |
 |---------|----------------------------------------------------------------------------------|
@@ -194,7 +194,7 @@ Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/detai
 *.appsplatformportals.us (DoD)
 *.appsplatformusercontent.us (DoD)
 
-Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/details.aspx?id=57063) to enable access to environments that users and administrators may create within your tenant as well as other Azure services used by the platform:
+Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/details.aspx?id=57063) to enable access to environments that users and administrators may create within your tenant and other Azure services used by the platform:
 
 - GCC and GCC High: (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 - DoD:  Focus on USDoD East and USDoD Central 
