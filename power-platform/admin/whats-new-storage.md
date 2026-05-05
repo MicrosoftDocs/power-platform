@@ -4,7 +4,7 @@ description: Learn about enhancements for Dataverse capacity-based storage that 
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 11/20/2025
+ms.date: 05/05/2026
 ms.subservice: admin
 ms.author: ashi
 ms.reviewer: ellenwehrle
