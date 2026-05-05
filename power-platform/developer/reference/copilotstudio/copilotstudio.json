@@ -3,7 +3,7 @@
   "info": {
     "title": "Microsoft Power Platform REST API - copilotstudio",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
-    "version": "2022-03-01-preview"
+    "version": "2024-10-01"
   },
   "host": "api.powerplatform.com",
   "schemes": [
@@ -39,7 +39,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -81,7 +81,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -137,7 +137,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -182,7 +182,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -227,7 +227,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -236,6 +236,333 @@
             "schema": {
               "$ref": "#/definitions/BotQuarantineStatus"
             }
+          }
+        }
+      }
+    },
+    "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/makerevaluation/testruns": {
+      "get": {
+        "tags": [
+          "Bots"
+        ],
+        "summary": "List Maker Evaluation Test Runs.",
+        "description": "List all maker evaluation test runs for a bot.",
+        "operationId": "ListMakerEvaluationTestRuns",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "EnvironmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response.",
+            "schema": {
+              "$ref": "#/definitions/TestRunCollection"
+            }
+          }
+        }
+      }
+    },
+    "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/makerevaluation/testruns/{TestRunId}": {
+      "get": {
+        "tags": [
+          "Bots"
+        ],
+        "summary": "Get Maker Evaluation Test Run by ID.",
+        "description": "Get the status and results of a specific maker evaluation test run.",
+        "operationId": "GetMakerEvaluationTestRun",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "EnvironmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "TestRunId",
+            "description": "The test run ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response.",
+            "schema": {
+              "$ref": "#/definitions/TestRun"
+            }
+          }
+        }
+      }
+    },
+    "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/makerevaluation/testruns/{TestRunId}/snapshot": {
+      "get": {
+        "tags": [
+          "Bots"
+        ],
+        "summary": "Download Maker Evaluation Snapshot.",
+        "description": "Download the bot content snapshot associated with a specific maker evaluation test run as a ZIP file.",
+        "operationId": "DownloadMakerEvaluationSnapshot",
+        "produces": [
+          "application/zip"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "EnvironmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "TestRunId",
+            "description": "The test run ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The bot content snapshot ZIP file.",
+            "schema": {
+              "format": "binary",
+              "type": "string"
+            },
+            "headers": {
+              "Content-Disposition": {
+                "description": "Attachment filename in the format botcontent_{testRunId}.zip.",
+                "type": "string"
+              }
+            }
+          },
+          "404": {
+            "description": "Test run not found."
+          }
+        }
+      }
+    },
+    "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/makerevaluation/testsets": {
+      "get": {
+        "tags": [
+          "Bots"
+        ],
+        "summary": "List Maker Evaluation Test Sets.",
+        "description": "Retrieves the list of test sets for a bot in a specified environment.",
+        "operationId": "ListMakerEvaluationTestSets",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "EnvironmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response.",
+            "schema": {
+              "$ref": "#/definitions/TestSetCollection"
+            }
+          }
+        }
+      }
+    },
+    "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/makerevaluation/testsets/{TestSetId}": {
+      "get": {
+        "tags": [
+          "Bots"
+        ],
+        "summary": "Get Maker Evaluation Test Set by ID.",
+        "description": "Get a specific test set for maker evaluation of a bot.",
+        "operationId": "GetMakerEvaluationTestSet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "EnvironmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "TestSetId",
+            "description": "The test set ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response.",
+            "schema": {
+              "$ref": "#/definitions/TestSet"
+            }
+          }
+        }
+      }
+    },
+    "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/makerevaluation/testsets/{TestSetId}/run": {
+      "post": {
+        "tags": [
+          "Bots"
+        ],
+        "summary": "Run Maker Evaluation Test Set.",
+        "description": "Trigger a maker evaluation test run for a specific test set.",
+        "operationId": "RunMakerEvaluationTestSet",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "EnvironmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "TestSetId",
+            "description": "The test set ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/RunTestSetRequestBody"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response.",
+            "schema": {
+              "$ref": "#/definitions/RunStatusResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request."
+          },
+          "500": {
+            "description": "Internal Server Error."
           }
         }
       }
@@ -256,6 +583,55 @@
         }
       }
     },
+    "Connection": {
+      "description": "A connector and its associated user connection for a maker evaluation run.",
+      "required": [
+        "connectionId",
+        "connectionReferenceName",
+        "connectorId"
+      ],
+      "type": "object",
+      "properties": {
+        "connectionId": {
+          "description": "User connection ID.",
+          "type": "string"
+        },
+        "connectionReferenceName": {
+          "description": "Connection reference name in the bot definition.",
+          "type": "string"
+        },
+        "connectorId": {
+          "description": "The tool (connector) ID.",
+          "type": "string"
+        }
+      }
+    },
+    "Metric": {
+      "description": "A grader metric associated with a test case in a maker evaluation run.",
+      "required": [
+        "result",
+        "type"
+      ],
+      "type": "object",
+      "properties": {
+        "result": {
+          "description": "Metric result.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/MetricResult"
+            }
+          ]
+        },
+        "type": {
+          "description": "Metric type.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/MetricType"
+            }
+          ]
+        }
+      }
+    },
     "ReassignBotRequestBody": {
       "description": "Request body for reassigning bot's owner.",
       "required": [
@@ -264,8 +640,284 @@
       "type": "object",
       "properties": {
         "NewOwnerAadUserId": {
-          "description": "The new owner AAD ID.",
+          "description": "The new owner Entra ID.",
           "type": "string"
+        }
+      }
+    },
+    "RunStatusResponse": {
+      "description": "The response payload from triggering an evaluation run request.",
+      "required": [
+        "executionState",
+        "lastUpdatedAt",
+        "state"
+      ],
+      "type": "object",
+      "properties": {
+        "callbackUri": {
+          "format": "uri",
+          "description": "The URI to poll for the evaluation run results.",
+          "type": "string"
+        },
+        "executionState": {
+          "description": "The current execution state indicating the progress status.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ExecutionState"
+            }
+          ]
+        },
+        "lastUpdatedAt": {
+          "format": "date-time",
+          "description": "The timestamp when the last status update occurred.",
+          "type": "string"
+        },
+        "runId": {
+          "format": "uuid",
+          "description": "The unique identifier for this evaluation run.",
+          "type": "string"
+        },
+        "state": {
+          "description": "The current state of the run.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/EvaluationRunState"
+            }
+          ]
+        },
+        "testCasesProcessed": {
+          "description": "The number of test cases processed so far in the evaluation run.",
+          "type": "integer"
+        },
+        "totalTestCases": {
+          "description": "Total number of test cases to be processed in the evaluation run.",
+          "type": "integer"
+        }
+      }
+    },
+    "RunTestSetRequestBody": {
+      "description": "Request body for triggering a maker evaluation test run.",
+      "type": "object",
+      "properties": {
+        "evaluationRunName": {
+          "description": "The name of the evaluation run.",
+          "type": "string"
+        },
+        "mcsConnectionId": {
+          "description": "The connection ID for the MCS connector that is used to execute the evaluation run, or leave empty for an anonymous run.",
+          "type": "string"
+        },
+        "runOnPublishedBot": {
+          "description": "Indicates whether the operation should run on a published bot instance. If set to false, the operation will run on a draft bot instance.",
+          "default": false,
+          "type": "boolean"
+        },
+        "toolsConnections": {
+          "description": "The tools connections that will be used to execute the evaluation run. This is a list of tools along with the corresponding user connections that should be used for each tool.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ToolsConnections"
+          }
+        }
+      }
+    },
+    "TestCaseResult": {
+      "description": "The result of a test case in a maker evaluation run.",
+      "required": [
+        "metricsResults",
+        "state",
+        "testCaseId"
+      ],
+      "type": "object",
+      "properties": {
+        "metricsResults": {
+          "description": "The list of grader metrics associated with the test case.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Metric"
+          }
+        },
+        "state": {
+          "description": "The current state of the test case.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/TestCaseState"
+            }
+          ]
+        },
+        "testCaseId": {
+          "format": "uuid",
+          "description": "The ID of the object model entity that the test case is sourced from.",
+          "type": "string"
+        }
+      }
+    },
+    "TestRun": {
+      "description": "The response payload for a get evaluation run details request.",
+      "required": [
+        "cdsBotId",
+        "environmentId",
+        "id",
+        "ownerId",
+        "startTime",
+        "state",
+        "testCasesResults",
+        "testSetId"
+      ],
+      "type": "object",
+      "properties": {
+        "cdsBotId": {
+          "format": "uuid",
+          "description": "The CDS bot ID where the evaluation run is executed.",
+          "type": "string"
+        },
+        "endTime": {
+          "format": "date-time",
+          "description": "The timestamp when the evaluation run ended.",
+          "type": "string"
+        },
+        "environmentId": {
+          "description": "The environment ID where the evaluation run is executed.",
+          "type": "string"
+        },
+        "id": {
+          "format": "uuid",
+          "description": "The unique identifier for this evaluation run.",
+          "type": "string"
+        },
+        "mcsConnectionId": {
+          "description": "The MCS connection ID used in the evaluation run.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the evaluation run.",
+          "type": "string"
+        },
+        "ownerId": {
+          "description": "The ID of the owner who initiated the evaluation run.",
+          "type": "string"
+        },
+        "startTime": {
+          "format": "date-time",
+          "description": "The timestamp when the evaluation run started.",
+          "type": "string"
+        },
+        "state": {
+          "description": "The state of the evaluation run.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/EvaluationRunState"
+            }
+          ]
+        },
+        "testCasesResults": {
+          "description": "The test cases and their results in the evaluation run.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TestCaseResult"
+          }
+        },
+        "testSetId": {
+          "format": "uuid",
+          "description": "The ID of the object model test set entity record that the run is associated with.",
+          "type": "string"
+        },
+        "totalTestCases": {
+          "description": "Number of test cases included in the evaluation run.",
+          "type": "integer"
+        }
+      }
+    },
+    "TestRunCollection": {
+      "description": "A collection of maker evaluation test runs.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The list of test runs.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TestRun"
+          }
+        }
+      }
+    },
+    "TestSet": {
+      "description": "The response payload for a get test set request.",
+      "required": [
+        "id"
+      ],
+      "type": "object",
+      "properties": {
+        "auditInfo": {
+          "description": "Audit information for the test set.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/AuditInfo"
+            }
+          ]
+        },
+        "description": {
+          "description": "Description of the test set.",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "Display name of the test set.",
+          "type": "string"
+        },
+        "id": {
+          "description": "The unique identifier for the test set component.",
+          "type": "string"
+        },
+        "state": {
+          "description": "The state of the test set.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/StateCode"
+            }
+          ]
+        },
+        "totalTestCases": {
+          "description": "The number of test cases in the test set.",
+          "type": "integer"
+        }
+      }
+    },
+    "TestSetCollection": {
+      "description": "A collection of maker evaluation test sets.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The list of test sets.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TestSet"
+          }
+        }
+      }
+    },
+    "ToolsConnections": {
+      "description": "A tool along with the corresponding user connections to use for a maker evaluation run.",
+      "required": [
+        "botId",
+        "botSchemaName",
+        "connections"
+      ],
+      "type": "object",
+      "properties": {
+        "botId": {
+          "description": "The Dataverse bot ID.",
+          "type": "string"
+        },
+        "botSchemaName": {
+          "description": "Bot schema name.",
+          "type": "string"
+        },
+        "connections": {
+          "description": "A list of connections.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Connection"
+          }
         }
       }
     }

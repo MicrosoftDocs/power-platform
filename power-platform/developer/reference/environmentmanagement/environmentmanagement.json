@@ -3,7 +3,7 @@
   "info": {
     "title": "Microsoft Power Platform REST API - environmentmanagement",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
-    "version": "2022-03-01-preview"
+    "version": "2024-10-01"
   },
   "host": "api.powerplatform.com",
   "schemes": [
@@ -68,7 +68,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -153,7 +153,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -240,7 +240,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -314,7 +314,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -368,7 +368,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -429,7 +429,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -477,7 +477,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -548,7 +548,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -613,7 +613,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -673,7 +673,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -738,7 +738,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -803,7 +803,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -868,7 +868,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -936,7 +936,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -996,7 +996,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1061,7 +1061,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -1129,7 +1129,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1195,7 +1195,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1252,7 +1252,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1318,7 +1318,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1389,7 +1389,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -1459,7 +1459,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -1512,7 +1512,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1537,6 +1537,315 @@
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}",
         "x-AccessControl.Permission": "EnvironmentManagement.Operation.Read"
+      }
+    },
+    "/environmentmanagement/provisioning/create": {
+      "post": {
+        "tags": [
+          "EnvironmentProvisioning"
+        ],
+        "summary": "Provisions a new environment.",
+        "description": "Provisions a new environment.",
+        "operationId": "ProvisionNewEnvironment",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The environment creation request.",
+            "schema": {
+              "$ref": "#/definitions/CreateEnvironmentRequest"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
+            }
+          },
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Provisioning.Write"
+      }
+    },
+    "/environmentmanagement/provisioning/environments/{environmentId}/link": {
+      "patch": {
+        "tags": [
+          "EnvironmentProvisioning"
+        ],
+        "summary": "Links a Dataverse instance to an existing environment.",
+        "description": "Links a Dataverse instance to an existing environment.",
+        "operationId": "LinkDataverse",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID to link Dataverse to.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The linked environment metadata.",
+            "schema": {
+              "$ref": "#/definitions/CreateEnvironmentRequestLinkedMetadata"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Provisioning.Write"
+      }
+    },
+    "/environmentmanagement/provisioning/locations": {
+      "get": {
+        "tags": [
+          "EnvironmentProvisioning"
+        ],
+        "summary": "Gets the list of supported locations for environment provisioning.",
+        "description": "Gets the list of supported locations for environment provisioning.",
+        "operationId": "GetSupportedLocations",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/LocationPagedCollection"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Provisioning.Read"
+      }
+    },
+    "/environmentmanagement/provisioning/locations/{location}/currencies": {
+      "get": {
+        "tags": [
+          "EnvironmentProvisioning"
+        ],
+        "summary": "Retrieves available currencies for environment provisioning in a location.",
+        "description": "Retrieves available currencies for environment provisioning in a location.",
+        "operationId": "GetProvisioningCurrencies",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "location",
+            "description": "The location name.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/EnvironmentCurrencyPagedCollection"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Provisioning.Read"
+      }
+    },
+    "/environmentmanagement/provisioning/locations/{location}/languages": {
+      "get": {
+        "tags": [
+          "EnvironmentProvisioning"
+        ],
+        "summary": "Retrieves available languages for environment provisioning in a location.",
+        "description": "Retrieves available languages for environment provisioning in a location.",
+        "operationId": "GetProvisioningLanguages",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "location",
+            "description": "The location name.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/EnvironmentLanguagePagedCollection"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Provisioning.Read"
+      }
+    },
+    "/environmentmanagement/provisioning/locations/{location}/templates": {
+      "get": {
+        "tags": [
+          "EnvironmentProvisioning"
+        ],
+        "summary": "Retrieves available templates for environment provisioning in a location.",
+        "description": "Retrieves available templates for environment provisioning in a location.",
+        "operationId": "GetProvisioningTemplates",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "location",
+            "description": "The location name.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/EnvironmentTemplatePagedCollection"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Provisioning.Read"
       }
     },
     "/environmentmanagement/environmentGroupOperations/{operationId}": {
@@ -1564,7 +1873,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1603,7 +1912,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -1649,7 +1958,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1695,7 +2004,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1743,7 +2052,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -1796,7 +2105,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1847,7 +2156,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1898,7 +2207,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1931,11 +2240,53 @@
         "parameters": [
           {
             "in": "query",
+            "name": "ids",
+            "description": "Comma-separated list of environment IDs to retrieve. When specified, only environments matching these IDs are returned.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "query",
+            "name": "$filter",
+            "description": "OData filter expression to restrict the set of environments returned. Supported filter properties include `dataverseId`, `type`, `geo`, `state`, `environmentGroupId`, and `domainName`.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$select",
+            "description": "Comma-separated list of properties to include in the response.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$top",
+            "description": "Maximum number of environments to return.",
+            "type": "integer",
+            "minimum": 0
+          },
+          {
+            "in": "query",
+            "name": "$skip",
+            "description": "Number of environments to skip before returning results.",
+            "type": "integer",
+            "minimum": 0
+          },
+          {
+            "in": "query",
+            "name": "$orderby",
+            "description": "OData order-by expression for sorting the results.",
+            "type": "string"
+          },
+          {
+            "in": "query",
             "name": "api-version",
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1968,11 +2319,17 @@
           },
           {
             "in": "query",
+            "name": "$select",
+            "description": "Comma-separated list of properties to include in the response.",
+            "type": "string"
+          },
+          {
+            "in": "query",
             "name": "api-version",
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -2022,7 +2379,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -2237,37 +2594,29 @@
       },
       "additionalProperties": false
     },
-    "OperationResponse": {
-      "description": "Represents the response object for APIs in this service.",
+    "FinOpsMetadata": {
+      "description": "Metadata describing a linked FinOps environment.",
       "type": "object",
       "properties": {
-        "objectResult": {
-          "description": "Gets or sets the response's object"
-        },
-        "errors": {
-          "$ref": "#/definitions/ErrorResponse"
-        },
-        "nextLink": {
-          "format": "uri",
-          "description": "Gets or sets the next link if there are more records to be returned",
+        "type": {
+          "description": "The linked FinOps environment type.",
           "type": "string"
         },
-        "debugErrors": {
-          "description": "Gets or sets debug errors, that are only shown for private/local testing",
+        "id": {
+          "description": "The linked FinOps environment ID.",
           "type": "string"
         },
-        "responseMessage": {
-          "description": "Gets or sets the error message.",
+        "url": {
+          "description": "The linked FinOps environment URL.",
           "type": "string"
         }
-      },
-      "additionalProperties": false
+      }
     },
     "EnvironmentResponse": {
       "type": "object",
       "properties": {
         "id": {
-          "description": "The value of id property on the environment object.",
+          "description": "The ID of the environment.",
           "type": "string"
         },
         "displayName": {
@@ -2275,11 +2624,11 @@
           "type": "string"
         },
         "tenantId": {
-          "description": "The value of tenantId property on the environment object.",
+          "description": "The ID of the tenant that the environment belongs to.",
           "type": "string"
         },
         "type": {
-          "description": "The type of environment.",
+          "description": "The type (SKU) of the environment.",
           "type": "string"
         },
         "geo": {
@@ -2294,6 +2643,16 @@
           "description": "The Azure region of the environment.",
           "type": "string"
         },
+        "clusterCategory": {
+          "description": "The cluster category the environment is in.",
+          "type": "string"
+        },
+        "createdBy": {
+          "$ref": "#/definitions/Principal"
+        },
+        "createdFor": {
+          "$ref": "#/definitions/Principal"
+        },
         "createdDateTime": {
           "format": "date-time",
           "description": "The creation date and time of the environment.",
@@ -2305,35 +2664,43 @@
           "type": "string"
         },
         "dataverseId": {
-          "description": "The value of dataverseId property on the environment object.",
+          "description": "The ID of the Dataverse database (organization) associated with the environment.",
           "type": "string"
         },
         "url": {
-          "description": "The URL of the environment.",
+          "description": "The URL of the Dataverse database associated with the environment.",
           "type": "string"
         },
         "version": {
-          "description": "The version of the environment.",
+          "description": "The version of the Dataverse database associated with the environment.",
           "type": "string"
         },
         "domainName": {
-          "description": "The domain name of the environment.",
+          "description": "The domain name of the Dataverse database associated with the environment.",
+          "type": "string"
+        },
+        "securityGroupId": {
+          "description": "The security group that controls access to the environment.",
+          "type": "string"
+        },
+        "connectedGroupId": {
+          "description": "The ID of the AAD group connected to the environment.",
           "type": "string"
         },
         "state": {
-          "description": "The state of the environment.",
+          "description": "The current state of the environment.",
           "type": "string"
         },
         "adminMode": {
-          "description": "The administrative mode of the environment.",
+          "description": "Indicates whether admin-only mode is enabled or disabled for the environment.",
           "type": "string"
         },
         "backgroundOperationsState": {
-          "description": "The background operations state of the environment.",
+          "description": "Indicates whether background operations are enabled or disabled for the environment.",
           "type": "string"
         },
         "protectionLevel": {
-          "description": "The protection level of the environment.",
+          "description": "The protection level applied to the environment.",
           "type": "string"
         },
         "retentionDetails": {
@@ -2346,10 +2713,21 @@
             },
             "availableFromDateTime": {
               "format": "date-time",
-              "description": "The available from date and time of the environment.",
+              "description": "The date and time from which the environment is available for recovery.",
               "type": "string"
             }
           }
+        },
+        "finOpsMetadata": {
+          "$ref": "#/definitions/FinOpsMetadata"
+        },
+        "enterprisePolicies": {
+          "description": "The enterprise policies associated with the environment.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/EnterprisePolicies"
+            }
+          ]
         }
       }
     },
@@ -2361,6 +2739,11 @@
           "items": {
             "$ref": "#/definitions/EnvironmentResponse"
           }
+        },
+        "@odata.nextlink": {
+          "format": "uri",
+          "description": "Opaque URL to retrieve the next page of results. Present only when additional pages are available.",
+          "type": "string"
         }
       }
     },
@@ -2430,47 +2813,6 @@
       },
       "additionalProperties": false
     },
-    "EnvironmentGroup": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "displayName": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "parentGroupId": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "childrenGroupIds": {
-          "type": "array",
-          "items": {
-            "format": "uuid",
-            "type": "string"
-          }
-        },
-        "createdTime": {
-          "format": "date-time",
-          "type": "string"
-        },
-        "createdBy": {
-          "$ref": "#/definitions/Principal"
-        },
-        "lastModifiedTime": {
-          "format": "date-time",
-          "type": "string"
-        },
-        "lastModifiedBy": {
-          "$ref": "#/definitions/Principal"
-        }
-      },
-      "additionalProperties": false
-    },
     "ValidationResponse": {
       "description": "Represents the response for validation of an operation.",
       "type": "object",
@@ -2500,12 +2842,53 @@
       },
       "additionalProperties": false
     },
+    "TemplateAvailability": {
+      "type": "object",
+      "properties": {
+        "environmentSku": {
+          "$ref": "#/definitions/EnvironmentSku"
+        },
+        "isDisabled": {
+          "type": "boolean"
+        },
+        "disabledReason": {
+          "$ref": "#/definitions/DisabledReason"
+        }
+      },
+      "additionalProperties": false
+    },
     "StateChangeRequest": {
       "description": "Represents a request to change the state of an environment.",
       "type": "object",
       "properties": {
         "reason": {
           "description": "The reason of this state change.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "OperationResponse": {
+      "description": "Represents the response object for APIs in this service.",
+      "type": "object",
+      "properties": {
+        "objectResult": {
+          "description": "Gets or sets the response's object"
+        },
+        "errors": {
+          "$ref": "#/definitions/ErrorResponse"
+        },
+        "nextLink": {
+          "format": "uri",
+          "description": "Gets or sets the next link if there are more records to be returned",
+          "type": "string"
+        },
+        "debugErrors": {
+          "description": "Gets or sets debug errors, that are only shown for private/local testing",
+          "type": "string"
+        },
+        "responseMessage": {
+          "description": "Gets or sets the error message.",
           "type": "string"
         }
       },
@@ -2538,6 +2921,15 @@
         }
       },
       "additionalProperties": false
+    },
+    "ProtectionLevel": {
+      "description": "The environment governance protection level.",
+      "enum": [
+        "NotSpecified",
+        "Basic",
+        "Standard"
+      ],
+      "type": "string"
     },
     "OperationStatus": {
       "description": "The status of operation.",
@@ -2624,6 +3016,93 @@
       },
       "additionalProperties": false
     },
+    "LocationPagedCollection": {
+      "type": "object",
+      "properties": {
+        "collection": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Location"
+          }
+        },
+        "continuationToken": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Location": {
+      "description": "Represents a location/geo for environment provisioning.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The location name.",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "The display name.",
+          "type": "string"
+        },
+        "code": {
+          "description": "The location code.",
+          "type": "string"
+        },
+        "isDefault": {
+          "description": "Whether this is the default location.",
+          "type": "boolean"
+        },
+        "isDisabled": {
+          "description": "Whether this location is disabled.",
+          "type": "boolean"
+        },
+        "canProvisionDatabase": {
+          "description": "Whether database provisioning is allowed.",
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentGroup": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "parentGroupId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "childrenGroupIds": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        },
+        "createdTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "createdBy": {
+          "$ref": "#/definitions/Principal"
+        },
+        "lastModifiedTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "lastModifiedBy": {
+          "$ref": "#/definitions/Principal"
+        }
+      },
+      "additionalProperties": false
+    },
     "Identity": {
       "type": "object",
       "properties": {
@@ -2670,6 +3149,45 @@
             "items": {
               "type": "string"
             }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentTemplatePagedCollection": {
+      "type": "object",
+      "properties": {
+        "collection": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnvironmentTemplate"
+          }
+        },
+        "continuationToken": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentTemplate": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "isCustomerEngagement": {
+          "type": "boolean"
+        },
+        "isSupportedForResetOperation": {
+          "type": "boolean"
+        },
+        "availability": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TemplateAvailability"
           }
         }
       },
@@ -2733,6 +3251,67 @@
       },
       "additionalProperties": false
     },
+    "EnvironmentLanguagePagedCollection": {
+      "type": "object",
+      "properties": {
+        "collection": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnvironmentLanguage"
+          }
+        },
+        "continuationToken": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentLanguage": {
+      "type": "object",
+      "properties": {
+        "localeId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "localizedName": {
+          "type": "string"
+        },
+        "isTenantDefault": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentCurrencyPagedCollection": {
+      "type": "object",
+      "properties": {
+        "collection": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnvironmentCurrency"
+          }
+        },
+        "continuationToken": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentCurrency": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "isTenantDefault": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
     "EnvironmentBackupPagedCollection": {
       "type": "object",
       "properties": {
@@ -2790,6 +3369,197 @@
         "dataverseOrganizationUrl": {
           "description": "Dataverse organization Url of the environment.",
           "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "DisabledReason": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CreateEnvironmentRequestParentGroup": {
+      "description": "Parent environment group.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The environment group ID.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CreateEnvironmentRequestLinkedMetadata": {
+      "description": "Metadata for the linked Dataverse environment.",
+      "type": "object",
+      "properties": {
+        "baseLanguage": {
+          "format": "int32",
+          "description": "The base language code (e.g., 1033 for English).",
+          "type": "integer"
+        },
+        "currency": {
+          "$ref": "#/definitions/CreateEnvironmentRequestCurrency"
+        },
+        "templates": {
+          "description": "The templates to apply.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "securityGroupId": {
+          "description": "The security group ID.",
+          "type": "string"
+        },
+        "domainName": {
+          "description": "The domain name.",
+          "type": "string"
+        },
+        "templateMetadata": {
+          "description": "A JSON object payload customized for the selected templates.",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/JToken"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "CreateEnvironmentRequestGovernance": {
+      "description": "Governance configuration.",
+      "type": "object",
+      "properties": {
+        "protectionLevel": {
+          "$ref": "#/definitions/ProtectionLevel"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CreateEnvironmentRequestFinOpsMetadata": {
+      "description": "FinOps metadata for environment provisioning.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The FinOps environment ID.",
+          "type": "string"
+        },
+        "url": {
+          "description": "The FinOps environment URL.",
+          "type": "string"
+        },
+        "type": {
+          "description": "The FinOps environment link type.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CreateEnvironmentRequestCurrency": {
+      "description": "Currency settings for environment provisioning.",
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "The currency code (e.g., USD).",
+          "type": "string"
+        },
+        "name": {
+          "description": "The currency name.",
+          "type": "string"
+        },
+        "symbol": {
+          "description": "The currency symbol.",
+          "type": "string"
+        },
+        "precision": {
+          "format": "int32",
+          "description": "The currency precision.",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CreateEnvironmentRequestCluster": {
+      "description": "Cluster configuration.",
+      "type": "object",
+      "properties": {
+        "category": {
+          "description": "The cluster category. Eg: FirstRelease.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CreateEnvironmentRequestBillingPolicy": {
+      "description": "Billing policy for the environment.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The billing policy ID.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CreateEnvironmentRequest": {
+      "description": "Request model for provisioning a new environment.",
+      "required": [
+        "displayName",
+        "environmentSku"
+      ],
+      "type": "object",
+      "properties": {
+        "location": {
+          "description": "The location where the environment will be provisioned.",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "The display name of the environment.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "environmentSku": {
+          "$ref": "#/definitions/EnvironmentSku"
+        },
+        "description": {
+          "description": "An optional description for the environment.",
+          "type": "string"
+        },
+        "databaseType": {
+          "description": "The type of database to create (e.g., CommonDataService).",
+          "type": "string"
+        },
+        "usedBy": {
+          "$ref": "#/definitions/UserIdentity"
+        },
+        "billingPolicy": {
+          "$ref": "#/definitions/CreateEnvironmentRequestBillingPolicy"
+        },
+        "linkedEnvironmentMetadata": {
+          "$ref": "#/definitions/CreateEnvironmentRequestLinkedMetadata"
+        },
+        "parentEnvironmentGroup": {
+          "$ref": "#/definitions/CreateEnvironmentRequestParentGroup"
+        },
+        "cluster": {
+          "$ref": "#/definitions/CreateEnvironmentRequestCluster"
+        },
+        "governanceConfiguration": {
+          "$ref": "#/definitions/CreateEnvironmentRequestGovernance"
+        },
+        "connectedGroupIdForTeamsEnvironment": {
+          "description": "Microsoft 365 Group Id to be linked to the Teams environment during provisioning. This property is not applicable for non-Teams environments.",
+          "type": "string"
+        },
+        "finOpsMetadata": {
+          "$ref": "#/definitions/CreateEnvironmentRequestFinOpsMetadata"
         }
       },
       "additionalProperties": false
