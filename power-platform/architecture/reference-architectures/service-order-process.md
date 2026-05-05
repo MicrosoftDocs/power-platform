@@ -316,6 +316,15 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 - Archive data so users see only active items.
 
+## Related resources
+
+- [What are model-driven apps in Power Apps?](/power-apps/maker/model-driven-apps/model-driven-app-overview)
+- [Add a custom page to your model-driven app](/power-apps/maker/model-driven-apps/add-page-to-model-app)
+- [Business process flows overview](/power-automate/business-process-flows-overview)
+- [Power Automate documentation](/power-automate/)
+- [Dataverse documentation](/power-apps/maker/data-platform/)
+- [Managed Environments overview](/power-platform/admin/managed-environment-overview)
+
 ## Contributors
 
 _Microsoft maintains this article. The following contributors wrote this article._
