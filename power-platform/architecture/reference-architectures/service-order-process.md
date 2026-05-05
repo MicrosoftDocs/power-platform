@@ -26,43 +26,50 @@ The application also serves as a centralized reference system for the legal and 
 
 ## Workflow
 
+The workflow consists of three main processes: service order workflow, SLA workflow, and termination workflow. Each workflow has different stages and approval processes.
+
 ### Service order workflow
 
-1. User accesses the model-driven app home page, which is a custom page embedded into the model-driven app. The custom page has quick links to access:
+A user starts the service order request process by filling out a form in the model-driven app. Other users, such as the commercial responsible group user and the primary responsible user, are involved in the approval process at different stages.
 
-    - Existing service order, service level agreement (SLA), or termination requests
+The workflow is as follows:
+
+1. The user accesses the home page, which is a custom page embedded in the model-driven app. The custom page has quick links to:
+
+    - Access existing service order, service level agreement (SLA), or termination requests
     - Create new request for service order, SLA, or termination
-    - View my assigned tasks
+    - View assigned tasks
     - Admin button visible to admin group members
 
-1. The process starts when the user creates a new service order by selecting New Service Order from the home page. A new service order form appears with different tabs to fill in the service order information. The user can attach documents to the newly created service order. All the documents are stored in SharePoint. The out-of-the-box SharePoint subgrid option is used to upload documents to the SharePoint library.
+1. The user selects **New Service Order** from the home page. A new service order form appears with tabs to enter service order details. The user can attach documents to the newly created service order using the out-of-the-box SharePoint subgrid option.
 
-1. When the user creates a new service request, they see a custom button at the top of the page to submit the service order request. When the user selects Send Request:
+1. To create the service order request, the user selects the **Send Request** custom button at the top of the page. The following actions take place:
 
     1. A new service order is created with a new service order ID.
 
-    1. The status of the request updates to Service Order Requested.
+    1. The status of the request updates to *Service Order Requested*.
 
     1. A new task is created in the task table and assigned to the Commercial Responsible group – Owner Team.
 
-    1. The user can't edit the request.
+    1. The user can no longer edit the request.
 
     1. The business process flow updates to the next stage.
-    When the user selects the custom button, a script runs to update the request status and trigger a Power Automate flow that performs all the preceding actions. The script on the model-driven app form checks the request status and assigned user. Based on these criteria, fields are read-only for everyone other than the commercial responsible group. This condition applies to all the custom buttons available at different stages.
 
-1. When the commercial responsible user signs in, they see the assigned task under My task.
+    When the user selects the custom button, a script runs to update the request status and trigger a Power Automate flow that performs all the preceding actions. The script on the model-driven app form checks the request status and the assigned user. Fields become read-only for everyone other than the commercial responsible group. This condition applies to all the custom buttons available at the various stages.
 
-1. The commercial responsible user reviews the request and sees two custom buttons:
+The commercial responsible user assigns or rejects the request as follows:
 
-    1. Assign primary responsible
+1. The commercial responsible user signs in and selects the assigned task under **My task**.
 
-    1. Reject request
+1. The commercial responsible user reviews the request and either approves or rejects the request by selecting the corresponding custom button:
+    - **Assign primary responsible**
+    - **Reject request**
 
-1. On rejection, the request is rejected and a notification is sent to the requester.
+1. On rejection, the request is rejected and a notification is sent to the service order requester.
 
-1. When the user selects Assign primary responsible, the request moves to the next stage.
+1. When the user selects **Assign primary responsible**, the request moves to the next stage.
 
-    1. The request status updates to Pending for PR approval.
+    1. The request status updates to *Pending for PR approval*.
 
     1. The business process flow stage updates.
 
@@ -70,77 +77,89 @@ The application also serves as a centralized reference system for the legal and 
 
     1. A notification is sent to the primary responsible user.
 
-1. When the primary responsible user signs in to the application, they see the task under My task. The primary responsible user can Approve, Reject, or Send for amendments. These custom buttons are visible only to the user who is assigned PR to the request and the request is under status Pending for PR approval.
+The primary responsible user approves, rejects, or requests changes as follows:
 
-    1. Approval
+1. The primary responsible user signs in and selects the assigned task under **My task**.
 
-        1. On approval, the request status is marked as approved. This status change is implemented through a custom script written on a custom button.
+1. The primary responsible user chooses to **Approve**, **Reject**, or **Send for amendments**. These custom buttons are visible only to the user who is assigned the PR to the request when the request has the status *Pending for PR approval*.
 
-        1. A notification is sent to the Commercial Responsible group and the user who created the request.
+    - **Approve**:
 
-        1. The request status updates to Pending final Signing Process.
+        1. The request status is marked as approved. This status change is implemented through a custom script written on a custom button.
 
-        1. A task is assigned to the Commercial Responsible group.
+        1. A notification is sent to the commercial responsible group and the service order requester.
+
+        1. The request status updates to *Pending Final Signing Process*.
+
+        1. A task is assigned to the commercial responsible group.
 
         1. The business process flow updates to the next stage.
 
-        1. The primary responsible task is completed.
+        1. The primary responsible user's task is completed.
 
-    1. Rejection
+    - **Reject**:
 
-        1. On rejection, the request is marked as "Rejected."
+        1. The request is marked as rejected.
 
         1. The business process is updated to the Rejected stage.
 
-        1. A notification is sent to the user and commercial responsible group.
+        1. A notification is sent to the service order requester and the commercial responsible group.
 
-    1. Send for amendment
+    - **Send for amendment**:
 
-        1. The request is sent back to the user who created the request for amendments.
+        1. The request is sent back to the service order requester for amendments.
 
-        1. The request status is updated to "Service Order Request in progress" stage.
+        1. The request status is updated to *Service Order Request in Progress* stage.
 
         1. The business process flow is updated to the initial stage.
 
-        1. An email notification is sent to the user with a deep link to the service order request.
+        1. An email notification is sent to the service order requester with a link to the service order request.
 
-    1. When the user rejects or approves the request, a PDF document is exported and saved to the Service Order SharePoint library. The PDF is generated by using the Document Template feature of Dataverse, where the user creates the template in Word by using XML entity attributes. A Power Automate flow calls the PDF document template API to generate the PDF version and exports all the data of the service request. The Document template ID and service order  Globally Unique Identifier (GUID) are passed to the Power Automate flow.
+    When the primary responsible user rejects or approves the request, a PDF document is exported and saved to the Service Order SharePoint library. The PDF is generated by using the Document Template feature of Dataverse, where the user creates the template in Word by using XML entity attributes. A Power Automate flow calls the PDF document template API to generate the PDF version and exports all the data of the service request. The Document template ID and service order  Globally Unique Identifier (GUID) are passed to the Power Automate flow.
 
-1. In the next stage, Final Sign-in process, the commercial responsible user can see two tabs while all other tabs are hidden by using XRM API and JavaScript. The user sees the Upload signed document button on the first tab. When the user selects the button, the next tab is highlighted which has the SharePoint document subgrid and the PDF generated document created in the previous step.
+In the final signing stage, the commercial responsible user signs the document and completes the request. The user can only see the tabs related to the document signing process. All other tabs are hidden. This functionality is implemented by using XRM API and JavaScript on the form.
 
-    1. The commercial responsible user can download the PDF document, manually sign it, and upload it in the document library tab.
+1. On the first tab, the commercial responsible user sees the **Upload signed document** button.
 
-    1. A Complete Signing process custom button on the top is available. When the commercial responsible user selects the button, the request becomes read-only. A notification is sent to the user, the commercial responsible group, and the primary responsible about the completion of the request. The business process flow is marked as completed by using a Power Automate flow and the assigned task is marked as completed.
+1. When the user selects the button, the app highlights the next tab, which contains the SharePoint document subgrid and the PDF document generated in the previous step.
+
+1. The commercial responsible user downloads the PDF document, manually signs it, and uploads it in the document library tab.
+
+1. A **Complete Signing process** custom button on the top becomes available.
+
+1. When the commercial responsible user selects the button, the request becomes read-only.
+
+1. When the request is complete, a notification is sent to the user, the commercial responsible group, and the primary responsible user. A Power Automate flow marks the business process flow and the assigned task as completed.
 
 ### SLA workflow
 
-1. When you select **Create New SLA request**, you're taken to the **New SLA** form. In the form, you can select only the completed service order request that you created.
+The service level agreement (SLA) workflow is initiated after the service order request is approved. The SLA request has a similar workflow to the service order request, with approval stages and task assignments.
 
-1. The SLA entity approval workflow uses a similar workflow and Business Process Flow as for Service Order approval, except it doesn't include the **Sign in Service Order Request** stage.
+The SLA is valid for 18 months by default, and a backend Power Automate job runs daily to check for SLA expiration. When the SLA expiry date matches the current date, the job marks the SLA and the associated service order as terminated and updates the corresponding email notifications and business process flow stages for both entities.
 
-1. An SLA is valid for 18 months by default unless you specify otherwise in the request. A Power Automate backend job runs every day to check the SLA expiration. When the SLA expiry date matches today's date, the job marks the SLA as terminated and the Service Order as terminated. The job updates the corresponding email notifications and Business Process Flow stages for both entities.
+To start the SLA workflow, the user selects **Create New SLA request** to open a **New SLA** form. In this form, the user can select only a completed service order request that they themselves created.
 
 ### Termination workflow
 
-1. When a service order and SLA request need explicit termination, a termination request is created.
+When a service order and SLA request require explicit termination, a termination request is created. The termination request uses a similar workflow to obtain approval from the commercial responsible group and primary responsible user.
 
-1. The termination request uses a similar workflow to get approval from the commercial responsible group and primary responsible user.
+A user can only raise the request for termination for an SLA or service order that they approved and created.
 
-1. You can only raise the request for termination for an SLA or service order that you approved and created.
+When the termination date is reached for any approved termination request, a backend Power Automate flow runs daily to check and:
 
-1. When the termination date is reached for any approved termination request, a backend Power Automate daily flow checks and:
+- If the request is for an SLA, terminate the SLA associated with the termination request.
 
-    1. If the request is for an SLA, terminate the SLA associated with the termination request.
-
-    1. If the request is for a service order, terminate all the SLAs associated with the service order and terminate the service order.
+- If the request is for a service order, terminate all the SLAs associated with the service order and terminate the service order.
 
 ## Use case details
 
+This section summarizes the business context and goals that shaped the service order solution including the decision to move to Power Platform.
+
 ### Business context
 
-The requirement originated when an organization needed to migrate its existing Service Order Management process from an Angular–Camunda platform to Microsoft Power Platform.
+This initiative began when an organization set out to move its service order management process from an Angular–Camunda platform to Microsoft Power Platform.
 
-The legacy solution, built on Angular, Camunda Workflow Engine, and PostgreSQL, incurred high licensing costs, required a dedicated technical team for change requests, and had long turnaround times for even minor enhancements. The complexity of the solution and its maintenance overhead prompted the organization to pursue a modern, cost-effective, and easy-to-maintain alternative.
+The legacy solution, built on Angular, Camunda Workflow Engine, and PostgreSQL, incurred high licensing costs, required a dedicated technical team for change requests, and experienced long turnaround times for even minor enhancements. The complexity of the solution and its maintenance overhead prompted the organization to pursue a modern, cost-effective, and easy-to-maintain alternative.
 
 ### Objectives and drivers
 
@@ -164,13 +183,13 @@ The team designed and implemented a Power Apps model-driven app, supported by ke
 
 ### User interface
 
-- **Model-driven app** serves as the primary user interface for users.
+**Model-driven app** serves as the primary user interface for users.
 
-- **Custom pages** modernize the user experience by ensuring interactive UI behavior and minimal change for end users as the application migrates from the existing platform.
+**Custom pages** modernize the user experience by ensuring interactive UI behavior and minimal change for end users as the application migrates from the existing platform.
 
-- **Custom buttons and JavaScript** manage the business rules and approval process through different stages.
+**Custom buttons and JavaScript** manage the business rules and approval process through different stages.
 
-- **Business process flow** (BPF) helps users visualize the existing stage.
+**Business process flow** (BPF) helps users visualize the existing stage.
 
 ### PDF generation
 
@@ -186,91 +205,88 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 ### Workflows and approvals
 
-- **Business process flows** orchestrate request routing, approvals, and multistage progress tracking.
+**Business process flows** orchestrate request routing, approvals, and multistage progress tracking.
 
-- **Power Automate** flows perform various actions at completion of each approval stage, such as sending notifications to Outlook and Teams, assigning tasks, and generating an automatic PDF at the final stage.
+**Power Automate flows** perform various actions at completion of each approval stage, such as sending notifications to Outlook and Teams, assigning tasks, and generating an automatic PDF at the final stage.
 
 ### Lifecycle and termination management
 
-- **Power Automate** flows that run daily to check which SLAs and Service Orders are terminating each day.
+**Power Automate flows** run daily to check for SLAs and service orders that terminate that day.
 
 ### Task reminders
 
-- **Power Automate** flows to send reminders to users to whom tasks are assigned when the due date passes.
+**Power Automate flows** send reminders to users to whom tasks are assigned when the due date passes.
 
 ### Data source
 
-- **Dataverse** to manage and store the application data and maintain the audit log history.
+**Dataverse** to manage and store the application data and maintain the audit log history.
 
-- **SharePoint** as the document repository and for document versioning.
+**SharePoint** as the document repository and for document versioning.
 
 ### Reporting
 
-- **Power Apps** model-driven application inbuilt reporting displaying the charts and provide insights to application data.
+**Power Apps** model-driven application inbuilt reporting display charts and provide insights to application data.
 
 ## Considerations
 
-These considerations implement the pillars of Power Platform Well-Architected, which is a set of guiding tenets that you can use to improve the quality of a workload.
+[!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
 ### Reliability
 
-1. Clear expectations documented with customer for:
+- Establish clear expectations for:
+  - Response times
+  - Approval timelines
+  - Daily job windows (SLA expiry, Termination job)
 
-    - Response times
+- Implement task-based resilience. For example, if a Power Automate step fails:
 
-    - Approval timelines
+  - Keep the task in Dataverse until the related action finishes.
 
-    - Daily job windows (SLA expiry, Termination job)
+  - Let users retry submission or approval at any stage.
 
-1. Task-based resilience is implemented when the Power Automate step fails:
+  - Update the request status only after all the steps in the workflow execute.
+  
+  - Show the error in the business process flow if a stage update fails.
 
-    1. Task remains in Dataverse until the action related to the task is completed.
+- Handle daily job failures with retry logic and fetch data based on dynamic filters.
 
-    1. User can retry submission or approval at any stage without any problem.
+- Use short-lived, stateless user actions to reduce the chance of stuck workflows.
 
-    1. The request status updates only after all the steps in workflow are executed safely.
-
-    1. If there's an error in updating the stage, the business process flow makes this error visible.
-
-1. Daily job failure is also accommodated by putting retry logic and fetching the data based on dynamic filtering conditions.
-
-1. User actions are short-lived and stateless, reducing the chance of stuck workflows.
-
-1. Logging feature is implemented to ensure reliable data for request and ensure traceability.
+- Use logging to keep request data reliable and support traceability.
 
 ### Security
 
-1. Controlled access to the model-driven app by using Microsoft Entra ID security groups mapped to Dataverse owner groups.
+- Control access to the model-driven app using Microsoft Entra ID security groups mapped to Dataverse owner groups.
 
-1. Defined custom security roles for commercial responsible, primary responsible, requestor, and admin to ensure secure access to data.
+- Clearly define security roles for commercial responsible, primary responsible, requester, and administrators to secure data access.
 
-1. Invited guest users to the Entra ID following organizational policies and added them to a security group after approval. External users can access by using this security group.
+- Invite guest users to Microsoft Entra ID following organizational policies, and add them to the security group only after approval. Use the same security group for approved external users.
 
-1. Implemented Dataverse field-level and row-level security.
+- Use Dataverse field-level and row-level security.
 
-1. Granted SharePoint permissions adequately by using the out-of-the-box integration with Dataverse and model-driven applications.
+- Grant SharePoint permissions through built-in integration with Dataverse and model-driven applications.
 
-1. Deployed the application on a managed environment with a specific data loss prevention (DLP) policy defined for the application.
+- Deploy the application in a Managed Environment and define a specific data policy for it.
 
-1. Enabled Dataverse audit log to detect data anomalies.
+- Use Dataverse audit logging to detect data anomalies.
 
-1. Made data read-only after the request reaches a certain stage.
+- Make data read-only after the request reaches a specific stage.
 
-1. Implemented archival policy to ensure admin has full control on archive data while user can only access the PDF documents generated for each request.
+- Implement an archival policy to ensure admins have full control of archived data, and users can access only the PDF documents generated for each request.
 
 ### Operational Excellence
 
-1. Define an environment strategy to ensure operational excellence by setting up a managed environment and dev, UAT, and production environments.
+1. Define an environment strategy to ensure operational excellence. Set up a Managed Environment, and development, testing, and production environments.
 
-1. Implement a solution strategy
+1. Implement a solution strategy:
 
-    1. Use an unmanaged solution in the dev environment and a managed solution in other environments.
+    1. Use an unmanaged solution in the development environment and a managed solution in other environments.
 
-    1. Design solution segmentation to segment UI components, process, and core components.
+    1. Design solution segmentation to segment UI components, processes, and core components.
 
-1. Implement code reviews before moving from the dev environment.
+1. Implement code reviews before moving from the development environment.
 
-1. Build a model-driven app on low-code constructs to ensure faster enhancement delivery and bug fixing.
+1. Build a model-driven app on low-code constructs for faster enhancements and bug fixes.
 
 ### Performance Efficiency
 
@@ -282,23 +298,23 @@ These considerations implement the pillars of Power Platform Well-Architected, w
 
 ### Experience Optimization
 
-1. Implement a custom page to create an enhanced landing page.
+1. Create a custom page to enhance the landing page.
 
-1. Send well-formatted emails so users can easily identify them.
+1. Send well-formatted emails so users can identify them easily.
 
-1. Include deep linking in the email so users can directly access the request from the email.
+1. Include deep links in emails so users can go directly to requests.
 
-1. Send timely reminders to users so they complete tasks without delay.
+1. Send timely reminders to help users complete tasks on time.
 
-1. Provide quick links to My Tasks and Admin sections.
+1. Add quick links to **My Tasks** and the admin sections.
 
-1. Implement a custom button that users can select to identify what actions they're taking.
+1. Add custom buttons that users can select to identify actions to take.
 
-1. Generate notifications after each button select to inform users about the success or failure.
+1. Notify users of success or failure after each button selection.
 
-1. Hide unnecessary data from users when the request reaches a certain stage.
+1. Hide unnecessary data when requests reach a specific stage.
 
-1. Set up data archival so users see only working items at a time.
+1. Archive data so users see only active items.
 
 ## Contributors
 
