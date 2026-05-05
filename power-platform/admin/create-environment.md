@@ -4,7 +4,7 @@ description: Learn how to create and manage environments in the Power Platform a
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/13/2026
+ms.date: 05/05/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: mbajwa
@@ -251,7 +251,10 @@ Provisioning environments is based on database capacity.
 
 Previously, the limit allowed two environments per Power Apps Plan 2 license. Now, you only need 1 GB of available capacity to provision. All environments with or without Dataverse consume at least 1 GB capacity.
 
-### See also
+### Why are Sales and Customer Service applications installed I choose 'Yes' for 'Enable Dynamics 365 Apps'?
+
+
+### Related content
 
 [Dataverse storage capacity](capacity-storage.md) <br>
 [Control user access to environments: security groups and licenses](control-user-access.md)
