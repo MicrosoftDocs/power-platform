@@ -252,6 +252,7 @@ Provisioning environments is based on database capacity.
 Previously, the limit allowed two environments per Power Apps Plan 2 license. Now, you only need 1 GB of available capacity to provision. All environments with or without Dataverse consume at least 1 GB capacity.
 
 ### Why are Sales and Customer Service applications installed I choose 'Yes' for 'Enable Dynamics 365 Apps'?
+You can determine which users will have access and visibility to these apps using security roles. Learn more in Manage access to Power Apps apps by using security roles.
 
 
 ### Related content
