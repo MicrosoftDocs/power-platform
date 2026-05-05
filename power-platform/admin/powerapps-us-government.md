@@ -4,7 +4,7 @@ description: Provides information about Power Apps US Government service descrip
 author: carrema
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/04/2026
+ms.date: 05/05/2026
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: sericks
