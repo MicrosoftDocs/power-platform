@@ -5,16 +5,14 @@ description: Learn how to design a solution that automates service request lifec
 author: carcla
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 05/05/2026
+ms.date: 05/06/2026
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 ---
 
 # Automate service order lifecycle and SLA governance with Power Platform
 
-This architecture document outlines the design and implementation of a Power Platform–based application for automating the end‑to‑end lifecycle of service orders. The solution streamlines the initiation of service order requests, manages approval workflows across multiple stages, enforces SLA‑based lifecycle management, and handles termination processes.
-
-The application also serves as a centralized reference system for the legal and contracting departments to manage service order contracts and associated signed documents.
+Power Platform can be used to build a solution that automates the end-to-end lifecycle of service orders. This approach streamlines the creation of service order requests, manages approval workflows across multiple stages, enforces SLA-based lifecycle management, and handles termination processes. It also provides a centralized system for legal and contracting teams to manage service order contracts and associated signed documents.
 
 > [!TIP]
 > This article provides an example scenario and a generalized example architecture to illustrate how to design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Apps, Power Automate, Dataverse, and Microsoft 365.
@@ -49,7 +47,7 @@ The workflow is as follows:
 
     1. The status of the request updates to *Service Order Requested*.
 
-    1. A new task is created in the task table and assigned to the Commercial Responsible group – Owner Team.
+    1. A new task is created in the task table and assigned to the owner team for the commercial responsible group.
 
     1. The user can no longer edit the request.
 
@@ -187,7 +185,7 @@ The team designed and implemented a Power Apps model-driven app, supported by ke
 
 [**Custom pages**](/power-apps/maker/model-driven-apps/add-page-to-model-app) modernize the user experience by ensuring interactive UI behavior and minimal change for end users as the application migrates from the existing platform.
 
-**Custom buttons and JavaScript** manage the business rules and approval process through different stages.
+[**Command bar**](/power-apps/maker/model-driven-apps/command-designer-overview) customizations manage the business rules and approval process through different stages.
 
 [**Business process flows**](/power-automate/business-process-flows-overview) (BPF) help users visualize the existing stage.
 
@@ -256,7 +254,7 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 ### Security
 
-- Control access to the model-driven app using [Microsoft Entra ID security groups](/power-platform/admin/control-user-access) mapped to Dataverse owner groups.
+- Control access to the model-driven app using [Microsoft Entra ID security groups](/power-platform/admin/control-user-access) mapped to Dataverse owner teams.
 
 - Clearly define security roles for commercial responsible, primary responsible, requester, and administrators to secure data access.
 
@@ -276,7 +274,7 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 ### Operational Excellence
 
-- Define an environment strategy to ensure operational excellence. Set up a [Managed Environment](/power-platform/admin/managed-environment-overview) and development, testing, and production environments.
+- Define an environment strategy to ensure operational excellence. Set up development, testing, and production environments, and configure them as [Managed Environments](/power-platform/admin/managed-environment-overview) where appropriate.
 
 - Implement a solution strategy:
 
@@ -323,6 +321,8 @@ This approach significantly reduces turnaround time and removes the need for dev
 - [Business process flows overview](/power-automate/business-process-flows-overview)
 - [Power Automate documentation](/power-automate/)
 - [Dataverse documentation](/power-apps/maker/data-platform/)
+- [Manage group teams](/power-platform/admin/manage-group-teams)
+- [Work with Excel and Word templates](/power-apps/maker/model-driven-apps/templates-overview)
 - [Managed Environments overview](/power-platform/admin/managed-environment-overview)
 
 ## Contributors
