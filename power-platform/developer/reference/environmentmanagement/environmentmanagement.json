@@ -2245,8 +2245,7 @@
             "type": "array",
             "items": {
               "type": "string"
-            },
-            "collectionFormat": "multi"
+            }
           },
           {
             "in": "query",
@@ -2594,6 +2593,57 @@
       },
       "additionalProperties": false
     },
+    "EnterprisePolicyLinkStatus": {
+      "description": "The status of the link between an environment and an enterprise policy.",
+      "enum": [
+        "Linking",
+        "Unlinking",
+        "Linked",
+        "Failed",
+        "LinkingOnline",
+        "UnlinkingOnline"
+      ],
+      "type": "string"
+    },
+    "EnterprisePolicyLink": {
+      "description": "A link between the environment and an Azure enterprise policy resource.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The ID of the enterprise policy.",
+          "type": "string"
+        },
+        "resourceId": {
+          "description": "The fully-qualified Azure resource ID of the enterprise policy.",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/EnterprisePolicyLinkStatus"
+        },
+        "error": {
+          "description": "Error details when the link status is Failed.",
+          "type": "string"
+        }
+      }
+    },
+    "EnterprisePolicies": {
+      "description": "The set of enterprise policies linked to the environment.",
+      "type": "object",
+      "properties": {
+        "encryption": {
+          "$ref": "#/definitions/EnterprisePolicyLink"
+        },
+        "identity": {
+          "$ref": "#/definitions/EnterprisePolicyLink"
+        },
+        "networkInjection": {
+          "$ref": "#/definitions/EnterprisePolicyLink"
+        },
+        "privateEndpoint": {
+          "$ref": "#/definitions/EnterprisePolicyLink"
+        }
+      }
+    },
     "FinOpsMetadata": {
       "description": "Metadata describing a linked FinOps environment.",
       "type": "object",
@@ -2722,12 +2772,7 @@
           "$ref": "#/definitions/FinOpsMetadata"
         },
         "enterprisePolicies": {
-          "description": "The enterprise policies associated with the environment.",
-          "allOf": [
-            {
-              "$ref": "#/definitions/EnterprisePolicies"
-            }
-          ]
+          "$ref": "#/definitions/EnterprisePolicies"
         }
       }
     },
@@ -3426,9 +3471,7 @@
         "templateMetadata": {
           "description": "A JSON object payload customized for the selected templates.",
           "type": "object",
-          "additionalProperties": {
-            "$ref": "#/definitions/JToken"
-          }
+          "additionalProperties": true
         }
       },
       "additionalProperties": false

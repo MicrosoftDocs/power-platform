@@ -42,7 +42,7 @@
             },
             "x-examples": {
               "basicPpacQuery": {
-                "summary": "PPAC default query with join to environments.",
+                "summary": "PPAC default query with join to environments",
                 "value": {
                   "Options": {
                     "Top": 1000,
@@ -118,7 +118,7 @@
             },
             "x-examples": {
               "page1": {
-                "summary": "Paged result with continuation.",
+                "summary": "Paged result with continuation",
                 "value": {
                   "totalRecords": 1250,
                   "count": 1,
