@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 04/30/2026
+ms.date: 05/06/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -41,3 +41,4 @@ Reference architectures are essential frameworks that guide the design and imple
 | **[Automate vendor invoice processing with Power Automate and AI Builder](vendor-invoice-integration.md)** | Learn how to automate vendor invoice ingestion by extracting and validating XML invoice data using Power Automate and AI Builder. |
 | **[Upload files to SharePoint with metadata from model-driven apps](custom-page-file-upload.md)** | Learn how to use custom pages for metadata‑aware document uploads from model‑driven apps to SharePoint to improve user experience and governance. |
 | **[Synchronize data across Dataverse environments using Power Platform](sync-dataverse-data.md)** | Learn how to manage master data across two Dataverse environments using Power Automate cloud flows and Power Platform dataflows. |
+| **[Automate service order lifecycle and SLA governance with Power Platform](service-order-process.md)** | Learn how to design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Platform components. |
