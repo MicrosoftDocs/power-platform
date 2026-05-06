@@ -1137,7 +1137,7 @@
         ],
         "responses": {
           "202": {
-            "description": "Accpeted"
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",

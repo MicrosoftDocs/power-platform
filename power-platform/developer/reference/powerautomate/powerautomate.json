@@ -623,7 +623,7 @@
       "type": "string"
     },
     "ModernFlowType": {
-      "description": "Indicates the modernflow type.",
+      "description": "Indicates the modern flow type.",
       "enum": [
         "PowerAutomateFlow",
         "AgentFlow"
