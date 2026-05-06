@@ -2837,7 +2837,7 @@
         },
         "extensions": {
           "type": "object",
-          "additionalProperties": { },
+          "additionalProperties": {},
           "readOnly": true
         }
       },
@@ -3447,7 +3447,7 @@
       "properties": {
         "baseLanguage": {
           "format": "int32",
-          "description": "The base language code (e.g., 1033 for English).",
+          "description": "The base language code (for example, 1033 for English).",
           "type": "integer"
         },
         "currency": {
@@ -3510,7 +3510,7 @@
       "type": "object",
       "properties": {
         "code": {
-          "description": "The currency code (e.g., USD).",
+          "description": "The currency code (for example, USD).",
           "type": "string"
         },
         "name": {
@@ -3534,7 +3534,7 @@
       "type": "object",
       "properties": {
         "category": {
-          "description": "The cluster category. Eg: FirstRelease.",
+          "description": "The cluster category (for example, FirstRelease).",
           "type": "string"
         }
       },
@@ -3576,7 +3576,7 @@
           "type": "string"
         },
         "databaseType": {
-          "description": "The type of database to create (e.g., CommonDataService).",
+          "description": "The type of database to create (for example, CommonDataService).",
           "type": "string"
         },
         "usedBy": {
@@ -3598,7 +3598,7 @@
           "$ref": "#/definitions/CreateEnvironmentRequestGovernance"
         },
         "connectedGroupIdForTeamsEnvironment": {
-          "description": "Microsoft 365 Group Id to be linked to the Teams environment during provisioning. This property is not applicable for non-Teams environments.",
+          "description": "Microsoft 365 Group ID to be linked to the Teams environment during provisioning. This property is not applicable for non-Teams environments.",
           "type": "string"
         },
         "finOpsMetadata": {
