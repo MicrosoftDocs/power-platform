@@ -322,7 +322,7 @@ This approach significantly reduces turnaround time and removes the need for dev
 - [Power Automate documentation](/power-automate/)
 - [Dataverse documentation](/power-apps/maker/data-platform/)
 - [Manage group teams](/power-platform/admin/manage-group-teams)
-- [Work with Excel and Word templates](/power-apps/maker/model-driven-apps/templates-overview)
+- [Use Excel and Word templates](/power-apps/maker/model-driven-apps/templates-overview)
 - [Managed Environments overview](/power-platform/admin/managed-environment-overview)
 
 ## Contributors
