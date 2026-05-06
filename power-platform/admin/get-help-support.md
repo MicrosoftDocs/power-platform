@@ -1,11 +1,11 @@
 ---
-title: Get Support in Power Platform Admin Center
-description: Get support in Power Platform admin center using the AI-powered Support agent or backup webform. Learn how to engage with support resources, as well as create and submit a support request.
-#customer intent: As a Power Platform admin, I want to review service health alerts, known issues and self-help solutions before creating a support request, so that I can identify whether my issue is already being addressed, can be resolved, or requires submission of a support request.
-author: sericks007
+title: Get support in the Power Platform admin center
+description: Get support in the Power Platform admin center using the AI-powered Support agent and learn how to engage with support resources so you can create and submit a support request.
+#customer intent: As a Power Platform admin, I want to review service health alerts, known issues, and self-help solutions before creating a support request, so that I can identify whether my issue is already being addressed, can be resolved, or requires submission of a support request.
+author: johnehart
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/04/2026
+ms.date: 05/06/2026
 ms.subservice: admin
 ms.author: johhar
 ms.reviewer: sericks
@@ -20,9 +20,9 @@ contributors:
 ms.custom: sfi-image-nochange
 ---
 
-# Get support in Power Platform admin center
+# Get support in the Power Platform admin center
 
-Admins can use the [Support experience](https://admin.powerplatform.microsoft.com/support/requests) in the [Power Platform admin center](admin-documentation.md) to get self-help solutions for an issue. If self-help doesn't resolve the issue, continue in the same **Support** experience to engage Microsoft support representatives by using your support plan. If you need to link a plan with your account, enter your access ID and password before creating a support request. For more information, see [Add a support plan](#add-a-support-plan).
+Admins can use the [support experience](https://admin.powerplatform.microsoft.com/support/requests) in the [Power Platform admin center](admin-documentation.md) to get self-help solutions for an issue. If self-help doesn't resolve the issue, continue in the same **support** experience to engage Microsoft support representatives by using your support plan. If you need to link a plan with your account, enter your access ID and password before creating a support request. For more information, see [Add a support plan](#add-a-support-plan).
 
 ## Prerequisites
 
@@ -50,27 +50,28 @@ To access the **Support requests** page in the Power Platform admin center, you 
 - Teams Admin
 
 ### Support plans
-You can access self-help resources in the Support experience without a support plan. However, to create a support request, you must have an active support plan. [Learn more about and purchase support plans](https://www.microsoft.com/en-us/dynamics-365/support).
+You can access self-help resources in the **Support** experience without a support plan. However, to create a support request, you must have an active support plan. [Learn more about and purchase support plans](https://www.microsoft.com/en-us/dynamics-365/support).
 
-- Subscription Support
-- Professional Direct Support
-- Unified Support
+- Subscription support
+- Professional direct support
+- Unified support
 
 > [!NOTE]
 > In the following cases, you might not be able to create a support request:
-> - There's an issue with your Unified or Premier Support contract. Contact your Incident Manager or Customer Success Account Manager (CSAM).
-> - Your Support subscription expired. Renew the subscription.
+> - There's an issue with your Unified or Premier Support contract. Contact your incident manager or customer success account manager (CSAM).
+> - Your support subscription expired. Renew the subscription.
 > - Microsoft couldn't find your support plan.
->    - If you have a Unified or Premier Support plan, contact your Incident Manager or Customer Success Account Manager (CSAM).
->    - If you have a non-Unified/Premier Support plan, verify the plan is active. For support information, see [Community forums](https://community.dynamics.com/forums/thread/).
+>    - If you have a Unified or Premier Support plan, contact your incident manager or customer success account manager (CSAM).
+>    - If you have a non-Unified/Premier Support plan, verify the plan is active. For support information, see [community forums](https://community.dynamics.com/forums/thread/).
+
 ## Request support
-Two experiences exist depending on your tenant and scenario. Most users see the new Support agent, which says **Support agent** at the top of the pane, but some users see the backup support experience if Support agent isn't available or performant.
+Two experiences exist depending on your tenant and scenario. Most users see the new support agent, which says **Support agent** at the top of the pane, but some users see the back-up support experience if the support agent isn't available.
 
-While the Support agent is in preview, users can switch between experiences by selecting the ellipsis icon (**...**) in the upper-right corner of the **Support agent** pane. You can switch back to the Support agent by closing the pane and selecting **Get support** again, or by selecting the **Switch to support agent** toggle at the top of the pane.
+While the support agent is in preview, users can switch between experiences by selecting the ellipsis icon (**...**) in the upper-right corner of the **Support agent** pane. You can switch back to the support agent by closing the pane and selecting **Get support** again, or by selecting the **Switch to support agent** toggle at the top of the pane.
 
-### Use the Support agent
+### Use the support agent
 
-The Support agent is an AI-powered virtual agent that takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. By following these steps, you can find self-help solutions, create a support request, and engage Microsoft representatives:
+The support agent is an AI-powered virtual agent that takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. By following these steps, you can find self-help solutions, create a support request, and engage Microsoft representatives:
 
 :::image type="content" source="media/get-help-support/support-agent-pane.png" alt-text="Screenshot of Support agent pane with Issue step active, Service Health alert, and issue description text box." lightbox="media/get-help-support/support-agent-pane.png":::
 
@@ -141,7 +142,7 @@ The Support agent is an AI-powered virtual agent that takes you through a workfl
    
 ### Use the backup support experience
 
-If the Support Agent is unavailable, isn't performant, or crashes, the backup support experience is available automatically or by selecting the **Switch to webform** button at the top of the panel. Through this experience, you can describe your issue, review any self-help solutions, and create a support request, if needed.
+If the support Agent is unavailable, isn't performant, or crashes, the backup support experience is available automatically or by selecting the **Switch to webform** button at the top of the panel. Through this experience, you can describe your issue, review any self-help solutions, and create a support request, if needed.
 
 :::image type="content" source="media/get-help-support/backup-support-webform-describe-issue.png" alt-text="Screenshot of Get support webform with Service Health alerts shown and, Describe the issue fields for product, title, description, and start date." lightbox="media/get-help-support/backup-support-webform-describe-issue.png":::
 
@@ -149,13 +150,13 @@ If the Support Agent is unavailable, isn't performant, or crashes, the backup su
 
    - Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
    - In the navigation pane, select **Support**. In the **Support** pane, select **Support requests**.
-      - On the **Support requests** page, select **Get support**. Typically, the Support Agent loads. The backup support experience shows in these scenarios:
+      - On the **Support requests** page, select **Get support**. Typically, the support agent loads. The back-up support experience shows in these scenarios:
             
-     | Scenario | Backup Support Behavior |
+     | Scenario | Back-up support Behavior |
      | -------- | -------- |
      | Support agent is unavailable | The backup support experience loads automatically until the root cause is addressed. |
      | Support agent crashes | You're prompted to select the **Switch to webform** button at the top of the panel. An 8-hour cooldown period is triggered where the backup support experience loads by default when selecting **Get support** to allow the issue to be resolved. |
-     | Support agent isn't performant | In the case of a critical timeout, the **Switch to webform** button appears at the top of the panel. You can choose to select it or wait for the Support Agent to respond. |
+     | Support agent isn't performant | In the case of a critical timeout, the **Switch to webform** button appears at the top of the panel. You can choose to select it or wait for the support agent to respond. |
      
    - If you choose to or must switch to the backup experience, leave feedback when prompted so Microsoft can diagnose and address the issues. 
       
@@ -168,7 +169,7 @@ If the Support Agent is unavailable, isn't performant, or crashes, the backup su
      > - For administration issues or if you encountered an issue in Power Platform Admin Center (PPAC), select this as the product. 
      
      
-   - Select the best fit **Category** and **Subcategory** to help route the request to the appropriate Support representative. 
+   - Select the best fit **Category** and **Subcategory** to help route the request to the appropriate support representative. 
       
    - Provide a summary title, then fully and [clearly describe the issue](/power-apps/maker/canvas-apps/service-request-support) in the description field. Provide as much detail as you can to help Microsoft understand the issue. All information is used to find solutions and becomes the **Title** and **Description** of any support request.
       
@@ -240,17 +241,17 @@ Generative answers are created in real time based on your issue description from
 > [!IMPORTANT]
 > It's important to note that AI-generated content might be incorrect. 
 
-### :::image type="content" source="media/get-help-support/support-agent-generative-answer.png" alt-text="Screenshot of Support agent response listing six steps to resolve Power Automate 429 throttling errors with citations and follow-up questions." lightbox="media/get-help-support/support-agent-generative-answer.png":::Dialogs
+### :::image type="content" source="media/get-help-support/support-agent-generative-answer.png" alt-text="Screenshot of support agent response listing six steps to resolve Power Automate 429 throttling errors with citations and follow-up questions." lightbox="media/get-help-support/support-agent-generative-answer.png":::Dialogs
 
 Troubleshooting dialogs guide you toward a solution if generative answers don't resolve the issue. These dialogs often trigger if there's a level of ambiguity about your problem. You need to navigate these dialogs to a solution to proceed in many cases. Product teams create these dialogs to represent frequent problems, questions, and other topics seen in previous support requests. By navigating the dialog, you can both find answers and help Microsoft categorize the problem, so any support request is routed to the correct Microsoft support representative, and the owning product engineering team is alerted.
 
 ### :::image type="content" source="media/troubleshoot-dialog.png" alt-text="Screenshot of nested support dialogs guiding user from App Creation Issues to Create Model Driven App with related documentation links." lightbox="media/troubleshoot-dialog.png":::Documentation search results
 
-(Support Experience only.) You will see the top three search results from Microsoft product documentation based on your selected product and issue description. Select a link to review the articles relevant to your issue.
+(support Experience only.) You will see the top three search results from Microsoft product documentation based on your selected product and issue description. Select a link to review the articles relevant to your issue.
 
 ## :::image type="content" source="media/troubleshoot-documentation-search-results.png" alt-text="Screenshot of documentation search results listing three Power Automate troubleshooting articles with descriptions." lightbox="media/troubleshoot-documentation-search-results.png":::Report an outage
 
-Depending on your tenant, you might be able to access the direct **Report outage** feature. If enabled, the **Report outage** button is visible on any of the Support pages, next to the **Get support** button. If the **Report outage** feature isn't enabled, you can navigate the Support agent or experience workflows to create a high-priority support request, if you have an active support plan.
+Depending on your tenant, you might be able to access the direct **Report outage** feature. If enabled, the **Report outage** button is visible on any of the support pages, next to the **Get support** button. If the **Report outage** feature isn't enabled, you can navigate the support agent or experience workflows to create a high-priority support request, if you have an active support plan.
 
 To use the **Report outage** feature to raise a high-priority support request, complete the following steps:
 
