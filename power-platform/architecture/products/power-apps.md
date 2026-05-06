@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 02/11/2026
+ms.date: 05/06/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -59,6 +59,8 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Implement a scalable notification system with Power Platform**](../reference-architectures/scalable-notification-system.md) | Learn how to implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
 | [**Optimize the performance of canvas apps that require complex business logic**](../reference-architectures/optimize-performance-canvas-apps.md) | Learn how to optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
 | [**Use Copilot Studio agents in model-driven apps**](../reference-architectures/contextual-ai-model-driven-app.md) | Learn how to integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
+| [**Upload files to SharePoint with metadata from model-driven apps**](../reference-architectures/custom-page-file-upload.md) | Learn how to use custom pages for metadata‑aware document uploads from model‑driven apps to SharePoint to improve user experience and governance. |
+| [**Automate service order lifecycle and SLA governance with Power Platform**](../reference-architectures/service-order-process.md) | Learn how to design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Platform components. |
 
 ## Solution ideas
 

@@ -7,7 +7,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.topic: overview
-ms.date: 04/22/2026
+ms.date: 04/27/2026
 ---
 
 # Real-world case studies
@@ -54,4 +54,5 @@ Each case study provides an in-depth look at how organizations build application
 | [Singapore Civil Defence Force implements digital solutions using Power Platform and Copilot Studio](scdf-implements-digital-solutions.md) | Covers how the Singapore Civil Defence Force transformed manual processes into automated solutions, saving millions of dollars and empowering its workforce. |
 | [SLB enhances productivity with Power Platform and AI](slb-enhances-productivity.md) | Covers how SLB increases process efficiency and employee productivity using Power Apps, AI Builder, Power Automate, and Dataverse. |
 | [Teck automates data extraction with Power Automate and AI Builder](teck-automates-data-extraction.md) | Covers how Teck uses Power Automate and AI Builder to automate data extraction processes. |
+| [Tiendas CUADRA delivers always-on customer service and product discovery with Copilot Studio](tiendas-cuadra-customer-service.md) | Covers how Tiendas CUADRA uses Copilot Studio to improve customer service response times and enable AI-powered product discovery. |
 | [T-Mobile empowers customer service representatives using Power Apps and Copilot Studio](tmobile-empowers-customer-service.md) | Covers how T-Mobile equips customer service representatives with an app that provides accurate device information and improves customer experiences. |
