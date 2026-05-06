@@ -13,7 +13,7 @@ contributors:
   - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 03/17/2026
+ms.date: 05/06/2026
 ms.service: power-platform
 ms.subservice: sap
 # Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID using SAP SuccessFactors so users can access SuccessFactors data using single sign-on (SSO).
