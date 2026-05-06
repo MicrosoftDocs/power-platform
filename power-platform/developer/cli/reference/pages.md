@@ -205,7 +205,13 @@ Specifies the target Dataverse. The value may be a Guid or absolute https URL. W
 
 #### `--mode` `-m`
 
-Choose from configurationData / configurationDataRefrences / all - based on your requirement.
+Choose from configurationData / configurationDataReferences / all - based on your requirement.
+
+Use one of these values:
+
+- `configurationData`
+- `configurationDataReferences`
+- `all`
 
 #### `--portalId` `-pid`
 
@@ -230,6 +236,12 @@ Local path to store the site customization report.
 #### `--updateDataModelVersion` `-u`
 
 Update data model version for the site once the data is migrated successfully.
+
+This parameter requires no value. It's a switch.
+
+#### `--verbose` `-v`
+
+Enables verbose mode to provide more details during data model migration.
 
 This parameter requires no value. It's a switch.
 
