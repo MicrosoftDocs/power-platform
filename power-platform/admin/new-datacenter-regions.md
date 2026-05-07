@@ -47,6 +47,23 @@ The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 
 | SGP           | crm20.dynamics.com |
 | KOR           | crm21.dynamics.com |
 
+## Macro Region 
+Macro region represents the data residency boundary aligning with data residency laws for the given geography. Learn more about the countries available in a specific macro region. 
+
+
+| # | Macro Region Geography          | Countries                | Tooltips                                                |
+|---|---------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------|
+|1  |North America                    |United States, Canada                                                             | Your data will reside within the United States or Canada| 
+|2  |The Americas                     |United States, Canada, Brazil | Your data will reside within the Americas, including North and South America |
+|3  | European Union  & EFTA          |France, Germany, Norway, Sweden, Switzerland, Poland, Italy, Ireland, Netherlands      | Your data will reside within EU and EFTA member states which are EUDB regions | 
+|4  |Europe & UK                      | UK, France, Germany, Norway, Sweden, Switzerland, Poland, Italy, Ireland, Netherlands | Your data will reside within European Union & EFTA or the United Kingdom and it should not be considered EUDB |
+|5  |Europe, UK, Middle East, Africa  | UK, France, Germany, Norway, Sweden, Switzerland, Poland, Italy,  Ireland, Netherlands, South Africa, UAE | Your data will reside within Europe, UK, Middle East, or Africa|   
+|6  |Asia-Pacific                     | Singapore, Australia*, India*, Japan, Korea                                           | Your data will reside within the Asia Pacific region |
+
+ 
+'*' Indian and Australia geos have tax-restrictions and need data residency alignment and accountability for compliance with local tax reporting rules and for Auditability within jurisdiction.
+
+
 ## Migration process  
  This is the overall process for migrating to a new datacenter.  
   
