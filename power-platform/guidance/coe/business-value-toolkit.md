@@ -3,7 +3,7 @@ title: Capture and communicate value with the Business value toolkit
 description: Learn how to measure, analyze, and communicate solution benefits with the Business value toolkit to ensure success and return on investment.
 author: stjeffer
 ms.topic: how-to
-ms.date: 08/18/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: jhaskett-msft
@@ -16,6 +16,8 @@ ms.custom:
 ---
 
 # Capture and communicate value with the Business value toolkit
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 Measuring and communicating the value of solutions built in the Power Platform is a crucial step in ensuring success and return on investment. Power Platform provides a low-code/no-code platform for building applications, automating tasks, streamlining business processes, and infusing AI into your solutions. These capabilities bring significant benefits, so it's important to track and measure the value the platform delivers to the business.
 
