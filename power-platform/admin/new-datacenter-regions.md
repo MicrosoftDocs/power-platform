@@ -61,7 +61,7 @@ Macro region represents the data residency boundary aligning with data residency
 |6  |Asia-Pacific                     | Singapore, Australia*, India*, Japan, Korea                                           | Your data resides within the Asia Pacific region. |
 
  
-'*' Indian and Australia geos have tax-restrictions and need data residency alignment and accountability for compliance with local tax reporting rules and for auditability within jurisdiction.
+\* Indian and Australia geos have tax-restrictions and need data residency alignment and accountability for compliance with local tax reporting rules and for auditability within jurisdiction.
 
 ## Migration process  
  This is the overall process for migrating to a new datacenter.  
