@@ -1,5 +1,5 @@
 ---
-title: Set up Microsoft Entra ID using SAP SuccessFactors (preview)
+title: Set up Microsoft Entra ID using SAP SuccessFactors
 description: This guide walks you through setting up a connection between Microsoft Entra ID and SAP SuccessFactors using the SAP OData connector for Power Platform, enabling token-based single sign-on (SSO) between Microsoft Entra ID and SAP SuccessFactors.
 author: haowusky
 ms.author: hawu1
@@ -13,15 +13,13 @@ contributors:
   - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 03/17/2026
+ms.date: 05/06/2026
 ms.service: power-platform
 ms.subservice: sap
 # Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID using SAP SuccessFactors so users can access SuccessFactors data using single sign-on (SSO).
 ---
 
-# Set up Microsoft Entra ID using SAP SuccessFactors (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Set up Microsoft Entra ID using SAP SuccessFactors
 
 This guide walks you through how to set up Microsoft Entra ID using the SAP SuccessFactors authentication method in the SAP OData connector for Power Platform. The goal is to enable token-based Single Sign-On (SSO) between Microsoft Entra ID and SAP SuccessFactors.
 
@@ -40,10 +38,10 @@ This section lists *named values* to make the examples easier to follow. These v
 
 | Name | Sample value | Description |
 |------|-------------|-------------|
-| Success Factors token URL | `https://\<api-server name\>/oauth/token` | SuccessFactors SAML token Recipient field |
+| SuccessFactors token URL | `https://\<api-server name\>/oauth/token` | SuccessFactors SAML token Recipient field |
 | Service Provider Client ID | `API key` | SuccessFactors OAuth API key |
 | OData Base URI | `https://\<odata-sf name\>/odata/v2` | SuccessFactors OData base URI |
-| Microsoft Entra Resource URL (Application ID URI) | `api://33135bc6-be6a-4cdc-9c96-af918e367425` | A unique string that identifies the SAML service provider  |
+| Microsoft Entra Resource URL (Application ID URI) | `https://www.successfactors.com` | Unique SAML service provider identifier (Entity ID) |
 | Company ID | `SFSALES012345` | SuccessFactors Company ID |
 
 > [!IMPORTANT]
@@ -73,7 +71,7 @@ In short, you configure the apps on both sides, establish trust, match users, an
 1. Configure **Basic SAML Configuration**:
 
     1. Go to the **Single sign-on** section and select **SAML** as the sign-on method.
-    1. **Identifier (Entity ID):** Set to *`api://\<enterprise app ID\>`*. (for example,*`api://33135bc6-be6a-4cdc-9c96-af918e367425`*). Save this value as **Microsoft Entra Resource URL (Application ID URI)** in the [*named values* table](#named-values).
+    1. **Identifier (Entity ID):** Set to an identifier which is unique within your organization. (for example,*`https://www.successfactors.com`*). Save this value as **Microsoft Entra Resource URL (Application ID URI)** in the [*named values* table](#named-values).
     1. **Reply URL:** Use the SuccessFactors SAML token *Recipient* field. (for example, *`https://\<api-server name\>/oauth/token`*).
     1. **Sign-On URL:** Recommended format: *https://\<your-sf-url\>/sf/start?company=CompanyID&logonMethod=SSO*. Be sure to confirm the correct server URL with your SuccessFactors IT admin if unsure.
     1. Select **Save**.

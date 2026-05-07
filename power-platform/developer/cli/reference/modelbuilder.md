@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac modelbuilder
 
-Code Generator for Dataverse APIs and Tables.
+(Deprecated) Code Generator for Dataverse APIs and Tables.
 
 [!INCLUDE [modelbuilder-intro](includes/modelbuilder-intro.md)]
 
