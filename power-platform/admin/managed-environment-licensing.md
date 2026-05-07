@@ -23,7 +23,7 @@ contributors:
 
 # Licensing
 
-Power Apps Premium, Power Automate Premium, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses include Managed Environments as an entitlement. When you activate Managed Environments in an environment, all active users need at least one premium license per user or capacity add-ons to access respective resources. For example:
+Power Apps Premium, Power Automate Premium, Microsoft Copilot Studio, Copilot Studio for Microsoft 365 Copilot (only for features related to Copilot Studio), Power Pages, Dynamics 365 Premium, Enterprise, Team Members, and Dynamics 365 Customer Insights licenses include Managed Environments as an entitlement. Pay-as-you-go meters for Power Apps per app, Power Pages, and Copilot Studio also qualify. When you activate Managed Environments in an environment, all active usage requires one of these standalone licenses or pay-as-you-go meters. For example:
 
 - Every user running an app in a Managed Environment must have one of the following licenses: a Power Apps Premium, a Power Automate Premium license, or a Dynamics 365 Enterprise license that gives premium Power Apps usage rights *. If you use capacity-based licenses, a Managed Environment must have Power Apps per app plans such as app passes allocated to it. Use of Power Apps capabilities included with Dynamics 365 Pro licenses must be only within the context of the licensed Dynamics 365 application.
 
@@ -41,10 +41,7 @@ Power Apps Premium, Power Automate Premium, Microsoft Copilot Studio, Power Page
 To see your current license usage, select **View license consumption (preview)** in the Power Platform admin center. For more information, see [View license consumption (preview)](view-license-consumption-issues.md).
 
 > [!IMPORTANT]
-> At this time, enabling [pay-as-you-go](pay-as-you-go-overview.md) for a Managed Environment isn't sufficient to meet Managed Environments licensing requirements, if:
->
-> - There are users without standalone Power Apps licenses using Power Apps in that environment.
-> - Users without standalone Power Automate licenses use flows in that environment, or users use flows without Power Automate per flow licenses in that environment.
+> The Power Apps per app pay-as-you-go meter satisfies the requirement that all active Power Apps usage in the environment requires standalone licenses or meters. However, this meter covers Power Apps usage only; any Power Automate flow usage must be covered by standalone Power Automate licenses or Power Automate per flow plans.
 
 ## FAQ 
 
