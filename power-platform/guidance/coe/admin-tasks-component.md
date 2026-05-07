@@ -1,11 +1,10 @@
 ---
-title: "Using the Power Platform administration planning component | Microsoft Docs"
+title: Use the Power Platform administration planning component
 description: "Get insights into the tasks and time involved in administering Power Platform."
 author: stjeffer
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/07/2022
+ms.date: 04/21/2026
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: sericks
@@ -14,6 +13,8 @@ search.audienceType:
 ---
 
 # Use Microsoft Power Platform administration planning
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 Behind the scenes, your IT and Center of Excellence team spends time configuring, managing and nurturing the adoption of Microsoft Power Platform. Understanding how that time is spent can help you plan who you need on your team and find the highest-impact opportunities to streamline the administrative effort.
 

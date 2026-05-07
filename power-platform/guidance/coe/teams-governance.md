@@ -1,18 +1,20 @@
 ---
-title: "Dataverse for Teams environment management| MicrosoftDocs"
+title: Dataverse for Teams environment management
 description: "This article describes a sample process for managing Microsoft Teams environments by using Microsoft Power Platform."
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/05/2023
+ms.date: 04/21/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
+
 # Microsoft Dataverse for Teams environment management
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 You can take advantage of our philosophy of using Microsoft Power Platform to manage Microsoft Power Platform by building automation to send welcome emails to owners of new [Dataverse for Teams environments](../../admin/about-teams-environment.md) and requesting business justifications for newly created environments. This ensures that central IT teams can effectively engage with the new makers onboarding the platform, and ensure that Dataverse for Teams capacity is used effectively in your tenant and distributed to the most important business use cases. Similar workflows can be used to apply specific data policies to Dataverse for Teams environments as needed, and to invoke cleanup of unused assets to free up capacity for more compelling scenarios in the tenant.
 

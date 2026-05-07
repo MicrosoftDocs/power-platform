@@ -4,7 +4,7 @@ description: Optimize your Power Platform Center of Excellence Starter Kit exper
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: best-practice
-ms.date: 08/27/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -18,6 +18,8 @@ ms.custom:
 ---
 
 # CoE Starter Kit tips and FAQs
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article provides tips on setting up and using the Microsoft CoE Starter Kit and answers frequently asked questions (FAQs).
 

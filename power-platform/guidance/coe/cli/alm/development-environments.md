@@ -14,8 +14,7 @@ search.audienceType:
 
 # CoE ALM Accelerator for Power Platform developer environments (Deprecated)
 
-> [!NOTE]
-> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+[!INCLUDE [guidance-deprecate-coe-cli](../../../../includes/guidance-deprecate-coe-cli.md)]
 
 Each maker needs a development environment created. Advanced makers can use a community environment to work in. Community environments can be accessed from the sign-up page at [https://powerapps.microsoft.com/developerplan/](https://powerapps.microsoft.com/developerplan/), then select **Get started free**.
 
@@ -79,6 +78,6 @@ More information: [Core ALM maker add](https://aka.ms/coe-cli/help/alm/maker/add
 
 ## Read next
 
-- Complete the [Install overview](./overview.md#install-overview).
+- Complete the [Installation overview](./overview.md#install-overview).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

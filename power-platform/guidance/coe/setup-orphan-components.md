@@ -4,7 +4,7 @@ description: Learn how to set up the clean-up for orphaned objects component of 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/29/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -13,6 +13,8 @@ search.audienceType:
 ---
 
 # Set up clean-up for orphaned objects
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article helps you set up clean-up for orphaned objects.
 

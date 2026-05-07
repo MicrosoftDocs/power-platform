@@ -4,7 +4,7 @@ description: Learn how to install and configure nurture components provided in t
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/28/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -13,6 +13,8 @@ search.audienceType:
 ---
 
 # Set up nurture components
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 The Center of Excellence (CoE) Starter Kit includes multiple nurture components that require configuration to install.  These installation instructions are organized based on the set of components that you install together. Each section outlines dependencies on other groups.
 

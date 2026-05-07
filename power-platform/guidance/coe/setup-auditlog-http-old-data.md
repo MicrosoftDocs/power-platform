@@ -4,7 +4,7 @@ description: Learn how to export old LaunchPowerApp events from Microsoft Purvie
 author: pete-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/02/2024
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: petrip
 ms.reviewer: sericks
@@ -15,6 +15,8 @@ contributors:
 ---
 
 # Collect historic audit log events
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This solution collects app launches after they are configured, but it isn't set up to collect historic app launches. Depending on your [Microsoft 365 license](https://www.microsoft.com/licensing/docs), historic data is available for up to one year through the audit log in Microsoft Purview.
 

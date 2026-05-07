@@ -3,13 +3,15 @@ title: Set up inventory components
 description: Learn how to set up inventory components in the Power Platform Center of Excellence Starter Kit to sync, monitor, and manage Power Platform resources.
 author: manuelap-msft
 ms.topic: how-to
-ms.date: 08/28/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ---
 
 # Set up inventory components
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article helps you set up the inventory components of the **Core** solution of the Center of Excellence (CoE) Starter Kit. The inventory is the heart of the CoE. Your Microsoft Power Platform journey is most beneficial when you understand your apps, flows, and makers, and can lay the foundation to monitor new apps and flows being created.
 
