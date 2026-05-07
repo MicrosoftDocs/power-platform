@@ -23,12 +23,6 @@ no-loc: ["ParseJSON"]
 
 Interprets a JSON string and returns a [Dynamic value](../untyped-object.md) or a specific typed value if a type is provided.
 
-> [!IMPORTANT]
-> - Using the second argument to **ParseJSON** to convert to a typed object is an experimental feature.
-> - Experimental features aren't meant for production use and may have restricted functionality. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
-> - The behavior that this article describes is available only when the **User-defined types** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
-> - Your feedback is very valuable to us. Please let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
-
 ## Description
 The ParseJSON function parses a valid JSON string and returns a [Dynamic](../untyped-object.md) value representing the JSON structure. 
 
@@ -61,7 +55,7 @@ Without the second argument, ParseJSON returns a [Dynamic value](../untyped-obje
 | Record Reference | n/a | Record references are unique to datasources and can't be serialized or unserialized. Field values that represent unique keys could be used in JSON to identify records that can then be looked up. | n/a |
 | Table | `[ { "id": 1, "name": "one" }, { "id": 2, "name": "two" } ]`<br/>`[1, 2, 3]` | JSON can contain arrays, which can be converted into tables. These values can be arrays of records, or arrays of values that are effectively single column tables. **ParseJSON()** arrays can only be converted into a single column table of **Dynamic** values, and can be used as such or converted to typed tables of records using **ForAll()**. | **ForAll( Table( ParseJSON( "[ { ""id"": 1, ""name"": ""one"" }, { ""id"": 2, ""name"": ""two"" } ]" ) ), { id: Value(ThisRecord.Value.id), name: Text(ThisRecord.Value.name) } )** |
 | Text | `{ "stringField": "this is text" }` | Text is an explicit type in JSON and can be directly converted. | **Text( ParseJSON( "{ ""stringField"": ""this is text"" }").stringField )** |
-| Two options | `{ "available": true }`<br/>`{ "available": "Yes" }` | Two options are presented as localized strings, backed by a boolean. The [JSON() function](function-json.md) serializes a two options to its boolean value. There's no direct conversion from boolean, number or string to a two options, but the [Switch()]() or [If()]() functions can be used on the text, number or boolean value. | **Switch( Boolean( ParseJSON( "{ ""available"": true }" ).available ), false, Availability.No, true, Availability.Yes )** |
+| Two options | `{ "available": true }`<br/>`{ "available": "Yes" }` | Two options are presented as localized strings, backed by a boolean. The [JSON() function](function-json.md) serializes a two options to its boolean value. There's no direct conversion from boolean, number or string to a two options, but the [Switch()](function-if.md) or [If()](function-if.md) functions can be used on the text, number or boolean value. | **Switch( Boolean( ParseJSON( "{ ""available"": true }" ).available ), false, Availability.No, true, Availability.Yes )** |
 
 ## Examples
 
