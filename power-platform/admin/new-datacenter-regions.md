@@ -50,7 +50,6 @@ The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 
 ## Macro region 
 Macro region represents the data residency boundary aligning with data residency laws for the given geography. Learn more about the countries available in a specific macro region. 
 
-
 | # | Macro region geography          | Countries                | Tooltips                                                |
 |---|---------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------|
 |1  |North America                    |United States, Canada                                                             | Your data resides within the United States or Canada.| 
@@ -59,7 +58,6 @@ Macro region represents the data residency boundary aligning with data residency
 |4  |Europe and United Kingdom (UK)                      | UK, France, Germany, Norway, Sweden, Switzerland, Poland, Italy, Ireland, Netherlands | Your data resides within EU and EFTA or the United Kingdom and it should not be considered EUDB. |
 |5  |Europe, UK, Middle East, Africa  | UK, France, Germany, Norway, Sweden, Switzerland, Poland, Italy,  Ireland, Netherlands, South Africa, United Arab Emirates (UAE) | Your data resides within Europe, UK, Middle East, or Africa.|   
 |6  |Asia-Pacific                     | Singapore, Australia*, India*, Japan, Korea                                           | Your data resides within the Asia Pacific region. |
-
  
 \* Australia and India geographies have tax-restrictions and need data residency alignment and accountability for compliance with local tax reporting rules and for auditability within jurisdiction.
 
