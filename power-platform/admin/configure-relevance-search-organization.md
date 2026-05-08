@@ -87,7 +87,7 @@ The selected state affects how Dataverse data is indexed and used across the glo
 > 
 > If you're using your own encryption key, you can turn off Dataverse search after allowing early access of 2021 release wave 2 in the Power Platform admin center.
 
-## Turn on search indexing to support Dataverse intelligence (Work IQ) in AI and agent experiences
+## Turn on search indexing to support Dataverse intelligence ([Work IQ](/microsoft-365/copilot/extensibility/work-iq)) in AI and agent experiences
 
 Some generative AI experiences use Dataverse search data. When you enable Dataverse search, you can access Copilot chat through the Copilot icon in the navigation bar in a model-driven app. You can open or minimize the Copilot chat pane, as you want. The indexing is on demand. Microsoft performs indexing based on the request from different AI and agent experiences.
 
