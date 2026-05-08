@@ -69,7 +69,7 @@ Complete the following steps to manage Dataverse search.
 1. Expand **Product**, then select **Features**.
 1. Under **Dataverse search**, select the options you want to turn on:
 
-    - **Turn on search indexing to support Dataverse intelligence ([Work IQ](]/microsoft-365/copilot/extensibility/work-iq) in AI and agent experiences**
+    - **Turn on search indexing to support Dataverse intelligence ([Work IQ](miicrosoft-365/copilot/extensibility/work-iq)) in AI and agent experiences**
     - **Show global search bar in all model-driven apps and turn on search indexing to support search-only experiences**
   
 1. Select **Save** to apply your changes.
