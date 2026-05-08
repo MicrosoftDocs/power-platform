@@ -7,7 +7,7 @@ ms.topic: get-started
 ms.date: 05/08/2026
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: jasonjuang
+ms.author: jasonhuang
 ms.reviewer: sericks
 search.audienceType: 
   - admin
