@@ -69,7 +69,7 @@ Complete the following steps to manage Dataverse search.
 1. Expand **Product**, then select **Features**.
 1. Under **Dataverse search**, select the options you want to turn on:
 
-    - **Turn on search indexing to support Dataverse intelligence ([Work IQ](miicrosoft-365/copilot/extensibility/work-iq)) in AI and agent experiences**
+    - **Turn on search indexing to support Dataverse intelligence ([Work IQ](/microsoft-365/copilot/extensibility/work-iq)) in AI and agent experiences**
     - **Show global search bar in all model-driven apps and turn on search indexing to support search-only experiences**
   
 1. Select **Save** to apply your changes.
@@ -78,7 +78,7 @@ The selected state affects how Dataverse data is indexed and used across the glo
 
 > [!NOTE]
 > - You can't turn off Dataverse search in specific apps.
-> - Dataverse search doesn't turn on any other feature automatically.
+> - Dataverse search doesn't turn on any other features automatically.
 > - Both global search and enabled AI experiences are sharing the same indexing data.
 > - When you create a Dataverse search index, an indication that provisioning is in progress appears.
 
@@ -87,16 +87,14 @@ The selected state affects how Dataverse data is indexed and used across the glo
 > 
 > If you're using your own encryption key, you can turn off Dataverse search after allowing early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
+## Turn on search indexing to support Dataverse intelligence (Work IQ) in AI and agent experiences
 
-## Turn on search indexing to support Dataverse intelligence (Work IQ) in AI and agent experiences)
-
-Some generative AI experiences use Dataverse search data. When you enable Dataverse search, you can access Copilot chat through the Copilot icon in the right navigation bar in a model-driven app. You can open or minimize the Copilot chat pane as you want. The indexing is on demand. We will perform indexing based on the request from different AI and agent experiences.
+Some generative AI experiences use Dataverse search data. When you enable Dataverse search, you can access Copilot chat through the Copilot icon in the navigation bar in a model-driven app. You can open or minimize the Copilot chat pane, as you want. The indexing is on demand. Microsoft performs indexing based on the request from different AI and agent experiences.
 
 -	**Power Apps**: [Copilot chat for model-driven apps in Power Apps](/power-apps/maker/model-driven-apps/add-ai-copilot) is a next-generation AI assistant that helps app users get insights about the data in their apps through conversation in natural language.
 - **Copilot Studio**: [Integrating Dataverse tables as your knowledge source](/microsoft-copilot-studio/knowledge-add-dataverse) allows you to ground your agent in the data contained in your tables. This can also happen using [unstructured data as knowledge](/microsoft-copilot-studio/knowledge-unstructured-data) or [Dataverse tools](/microsoft-copilot-studio/advanced-plugin-actions).
 
-
-## Show global search bar in all model driven apps and turn on search indexing to support search-only experiences
+## Show global search bar in all model-driven apps and turn on search indexing to support search-only experiences
 When you set this option to On, a search box appears at the top of every page in model-driven apps in the environment. The search box lets you start a new search and quickly find the information from the searchable tables included in the app. When you turn on Dataverse search, it becomes the default and only global search experience in all model-driven apps in the environment.
 
 [Dataverse search can extend to other Microsoft search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. By enabling a connector, you can search for and find information from these canvases as if you're searching in the app. For example, you can quickly look up a contact's phone number or email address without opening the app. For more information, refer to [Search for records by using Dataverse search](/power-apps/user/relevance-search).
