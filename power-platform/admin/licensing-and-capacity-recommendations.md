@@ -4,7 +4,7 @@ description: Learn how the actions page helps admins manage licenses and capacit
 author: sidhartg
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/11/2025
+ms.date: 05/08/2026
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -40,6 +40,20 @@ This recommendation lists the number of pending license requests in your tenant.
 
 > [!IMPORTANT]
 > You must have adequate permissions on the Microsoft 365 admin center to assign licenses. If you don't have the right privileges, you may share the recommendation with someone in your organization who can assign the licenses to the requested users.
+
+- **Severity**: High  
+- **Refresh Frequency**: Weekly  
+- **Managed environments only**: Yes  
+
+### User(s) are out of compliance in Managed Environments — Action required
+
+There are users in Managed Environments actively using apps without required licenses. Every user running an app in a Managed Environment must have a Power Apps Premium license or a qualifying license that includes premium Power Apps usage rights. Starting June 2026, users without appropriate licenses will receive in-app compliance notifications. Assign licenses now to resolve.
+
+**What can I do?**
+
+Review and assign premium licenses to resolve noncompliance before users are notified. A list of users is available below, along with an option to download detailed reports.
+
+For more information, see [Managed Environments licensing FAQ](/power-platform/admin/managed-environment-licensing#faq).
 
 - **Severity**: High  
 - **Refresh Frequency**: Weekly  
