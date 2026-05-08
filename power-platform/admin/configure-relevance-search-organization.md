@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: sericks 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 03/25/2026
+ms.date: 05/08/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
@@ -57,23 +57,24 @@ Dataverse search delivers fast and comprehensive search results across multiple 
 
 ## Managing Dataverse search
 
-Dataverse search is an opt-out feature. Use Dataverse search so that users have a search experience in model-driven apps and harness the power of Copilot experiences. In the Power Platform admin center, Dataverse search is controlled by two options:
-- **Turn on search indexing to support Dataverse intelligence (Work IQ) in AI and agent experiences)**
-- **Show global search bar in all model driven apps and turn on search indexing to support search-only experiences**
+Dataverse search is an opt-out feature. Use Dataverse search so that users have a search experience in model-driven apps and harness the power of Copilot experiences. 
 
-:::image type="content" source="media/dataverse-search.png" alt-text="Dataverse search settings in Power Platform admin center." lightbox="media/dataverse-search.png":::
+Complete the following steps to manage Dataverse search.
 
-**Take these steps to manage Dataverse search:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a system administrator.
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Product**, then select **Features**.
-1. Under **Dataverse search**, change selected state.
-1. Select **Save** to apply the change.**
+1. Under **Dataverse search**, select the options you want to turn on:
 
-The selected state affects how Dataverse data is indexed and used across the global search and enabled AI experiences in the environment. You can follow [view dataverse search storage](configure-relevance-search-organization.md#view-dataverse-search-storage) to export usage granular reports to View exactly which tables are being indexed and how much capacity each one consumes.
+    - **Turn on search indexing to support Dataverse intelligence (Work IQ) in AI and agent experiences**
+    - **Show global search bar in all model-driven apps and turn on search indexing to support search-only experiences**
+  
+1. Select **Save** to apply your changes.
+
+The selected state affects how Dataverse data is indexed and used across the global search and enabled AI experiences in the environment. You can follow [view dataverse search storage](configure-relevance-search-organization.md#view-dataverse-search-storage) to export usage granular reports to view exactly which tables are being indexed and how much capacity each one consumes.
 
 > [!NOTE]
 > - You can't turn off Dataverse search in specific apps.
