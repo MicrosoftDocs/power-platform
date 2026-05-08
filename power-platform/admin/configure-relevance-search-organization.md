@@ -69,8 +69,8 @@ Complete the following steps to manage Dataverse search.
 1. Expand **Product**, then select **Features**.
 1. Under **Dataverse search**, select the options you want to turn on:
 
-    - **Turn on search indexing to support Dataverse intelligence ([Work IQ](/microsoft-365/copilot/extensibility/work-iq)) in AI and agent experiences**
-    - **Show global search bar in all model-driven apps and turn on search indexing to support search-only experiences**
+    - **[Turn on search indexing to support Dataverse intelligence ([Work IQ](/microsoft-365/copilot/extensibility/work-iq)) in AI and agent experiences](#turn-on-search-indexing-to-support-dataverse-intelligence-work-iq-in-ai-and-agent-experiences)**
+    - **[Show global search bar in all model-driven apps and turn on search indexing to support search-only experiences](#show-global-search-bar-in-all-model-driven-apps-and-turn-on-search-indexing-to-support-search-only-experiences)**
   
 1. Select **Save** to apply your changes.
 
@@ -85,7 +85,7 @@ The selected state affects how Dataverse data is indexed and used across the glo
 > [!IMPORTANT]
 > Turning off Dataverse search deprovisions and removes the index within 12 hours. If you turn on Dataverse search after it's been off for 12 hours, it creates a fresh index that needs to go through a full sync. Syncing can take an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
 > 
-> If you're using your own encryption key, you can turn off Dataverse search after allowing early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+> If you're using your own encryption key, you can turn off Dataverse search after allowing early access of 2021 release wave 2 in the Power Platform admin center.
 
 ## Turn on search indexing to support Dataverse intelligence (Work IQ) in AI and agent experiences
 
@@ -95,15 +95,15 @@ Some generative AI experiences use Dataverse search data. When you enable Datave
 - **Copilot Studio**: [Integrating Dataverse tables as your knowledge source](/microsoft-copilot-studio/knowledge-add-dataverse) allows you to ground your agent in the data contained in your tables. This can also happen using [unstructured data as knowledge](/microsoft-copilot-studio/knowledge-unstructured-data) or [Dataverse tools](/microsoft-copilot-studio/advanced-plugin-actions).
 
 ## Show global search bar in all model-driven apps and turn on search indexing to support search-only experiences
-When you set this option to On, a search box appears at the top of every page in model-driven apps in the environment. The search box lets you start a new search and quickly find the information from the searchable tables included in the app. When you turn on Dataverse search, it becomes the default and only global search experience in all model-driven apps in the environment.
+When turn this option **On**, a search box appears at the top of every page in model-driven apps in the environment. The search box lets you start a new search and quickly find the information from the searchable tables included in the app. When you turn on Dataverse search, it becomes the default and only global search experience in all model-driven apps in the environment.
 
-[Dataverse search can extend to other Microsoft search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. By enabling a connector, you can search for and find information from these canvases as if you're searching in the app. For example, you can quickly look up a contact's phone number or email address without opening the app. For more information, refer to [Search for records by using Dataverse search](/power-apps/user/relevance-search).
+[Dataverse search can extend to other Microsoft search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. By enabling a connector, you can search for and find information from these canvases as if you're searching in the app. For example, you can quickly look up a contact's phone number or email address without opening the app. For more information, see [Search for records by using Dataverse search](/power-apps/user/relevance-search).
 
 > [!NOTE]
-> You can't turn off Dataverse global search for individual apps.
-> When Dataverse global search search is set to "On", [quick find search](/powerapps/user/quick-find) (formerly known as _categorized search_) becomes unavailable.
-> Dataverse search must be turned on to support lifecycle operations such as create, delete, backup, recover, copy, and reset.
-> Dataverse search must be manually set to **On** in required environments to support copying lifecycle operations between environments.
+> - You can't turn off Dataverse global search for individual apps.
+> - When Dataverse global search search is set to **On**, [quick find search](/powerapps/user/quick-find) (formerly known as _categorized search_) becomes unavailable.
+> - Dataverse search must be turned on to support lifecycle operations such as create, delete, backup, recover, copy, and reset.
+> - Dataverse search must be manually set to **On** in required environments to support copying lifecycle operations between environments.
 
 ## Set up Dataverse search for global search
 
