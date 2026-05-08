@@ -45,13 +45,13 @@ Dataverse search delivers fast and comprehensive search results across multiple 
 
 ### Availability and language support
 
-- Dataverse search is available in customer engagement apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.
+- You can use Dataverse search in customer engagement apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation.
 
-- Dataverse search isn't available for customer engagement, on-premises organizations. Quick Find is the only search option for these organizations.
+- You can't use Dataverse search for customer engagement, on-premises organizations. Quick Find is the only search option for these organizations.
 
 - Full-text Quick Find is available for customer engagement, on-premises organizations starting with Dynamics CRM 2015 Update Rollup 1.
 
-- For a detailed comparison, go to [Compare search options in Microsoft Dataverse](/powerapps/user/search).
+- For a detailed comparison, see [Compare search options in Microsoft Dataverse](/powerapps/user/search).
 
 - All searchable fields in Dataverse search are processed in the language that most closely matches the organization's base language, except Kazakh, where all fields are processed by using a basic, language-agnostic text processor.
 
@@ -74,12 +74,12 @@ Complete the following steps to manage Dataverse search.
   
 1. Select **Save** to apply your changes.
 
-The selected state affects how Dataverse data is indexed and used across the global search and enabled AI experiences in the environment. You can follow [view dataverse search storage](configure-relevance-search-organization.md#view-dataverse-search-storage) to export usage granular reports to view exactly which tables are being indexed and how much capacity each one consumes.
+The selected state affects how Dataverse data is indexed and used across the global search and enabled AI experiences in the environment. To export usage granular reports and view exactly which tables are being indexed and how much capacity each one consumes, see [view dataverse search storage](configure-relevance-search-organization.md#view-dataverse-search-storage).
 
 > [!NOTE]
 > - You can't turn off Dataverse search in specific apps.
 > - Dataverse search doesn't turn on any other features automatically.
-> - Both global search and enabled AI experiences are sharing the same indexing data.
+> - Both global search and enabled AI experiences share the same indexing data.
 > - When you create a Dataverse search index, an indication that provisioning is in progress appears.
 
 > [!IMPORTANT]
@@ -239,7 +239,7 @@ To edit the searchable fields of a table:
 
 ### Configure quick actions that appear with Dataverse search in model-driven apps
 
-The Dataverse search experience brings some of the most frequently used actions closer to search results. It helps users complete their tasks without having to navigate to the record page in model-driven apps. _Quick actions_ are a small set of commands specific to a table. Users can view quick actions when they're interacting with search in model-driven apps running on a web browser. Some of the commonly used tables are configured to show a set of commands to help users complete their tasks without losing context.
+The Dataverse search experience brings some of the most frequently used actions closer to search results. It helps users complete their tasks without having to go to the record page in model-driven apps. _Quick actions_ are a small set of commands specific to a table. Users can view quick actions when they're interacting with search in model-driven apps running on a web browser. Some of the commonly used tables are configured to show a set of commands to help users complete their tasks without losing context.
 
 | Table            | Quick actions      |
 |-------------|------------------------------------------------------------|
@@ -250,7 +250,7 @@ The Dataverse search experience brings some of the most frequently used actions 
 | Phone call  | Mark complete, Cancel, Set Regarding, Assign, Email a link |
 | Email       | Cancel, Set Regarding, Email a link                        |
 
-Quick actions are a subset of the table's homepage grid commands. For example, when you select an account in its homepage grid, the Account table's quick actions come from the set of commands at the top of the page. You can use the ribbon's **EnableRule** to hide or show quick actions for a table. To learn more about defining ribbon-enable rules in Power Apps, go to [Define ribbon enable rules](/powerapps/developer/model-driven-apps/define-ribbon-enable-rules).
+Quick actions are a subset of the table's homepage grid commands. For example, when you select an account in its homepage grid, the Account table's quick actions come from the set of commands at the top of the page. Use the ribbon's **EnableRule** to hide or show quick actions for a table. To learn more about defining ribbon-enable rules in Power Apps, see [Define ribbon enable rules](/powerapps/developer/model-driven-apps/define-ribbon-enable-rules).
 
 These three new enable rules give you the flexibility to optimize quick actions:
 
@@ -271,12 +271,12 @@ These three new enable rules give you the flexibility to optimize quick actions:
 
 - **ShowOnGridAndQuickAction rule** is a rule to make a command appear on the homepage grid and as a quick action.
 
-- **ShowOnGrid rule** is a rule to make a command appear only on the homepage grid. You can use this command to hide an existing quick action.
+- **ShowOnGrid rule** is a rule to make a command appear only on the homepage grid. Use this command to hide an existing quick action.
 
   > [!NOTE]
   > Each table can have up to six quick actions.
   >
-  > Quick actions currently show up only in the context of search—alongside suggestions and in the results page on the primary column. The same set of quick actions appears alongside suggestions and in the results page.
+    > Quick actions currently show up only in the context of search, alongside suggestions and in the results page on the primary column. The same set of quick actions appears alongside suggestions and in the results page.
 
 ## Set managed properties for Dataverse search
 
@@ -300,11 +300,11 @@ To set the managed property, follow these steps:
 
 ### Disable sync to the external search index
 
-If you want to change the **Can enable sync to external search index** property to **False**, first _deselect_ the table from Dataverse search. This message appears if the table is included in the Dataverse search:
+To change the **Can enable sync to external search index** property to **False**, first _deselect_ the table from Dataverse search. This message appears if the table is included in the Dataverse search:
 
 _This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can enable sync to external search index** property to **False**._
 
-If **Can enable sync to external search index** is set to **False** and you try to include a table in Dataverse search, this message appears:
+If you set **Can enable sync to external search index** to **False** and try to include a table in Dataverse search, this message appears:
 
 _Entity can't be enabled for Dataverse search because of the configuration of its managed properties_. For custom tables with sensitive data, consider setting the **Can enable sync to external search index** property to **False**.
 
@@ -333,9 +333,9 @@ You can also view Dataverse search in the following locations:
 1. Select an environment, and then select the **Chart** icon for details.
 1. In the **Licensing** pane, select **Dataverse**.
 1. On the **Licenses** page, go to the **Environments** tab, and then select an environment to view.
-2. Click **Download Report** from Search Index section to get a detailed usage report broken down by table.
+1. Click **Download Report** from Search Index section to get a detailed usage report broken down by table.
 
-We recommend turning on Dataverse search so you can enjoy a better search experience in model-driven apps with optimized, generative AI experiences. As an environment admin, you can opt out of this feature by turning it off. When Dataverse search is turned **Off**, generative AI experiences are limited for both makers and end users.
+Turn on Dataverse search so you can enjoy a better search experience in model-driven apps with optimized, generative AI experiences. As an environment admin, you can opt out of this feature by turning it off. When Dataverse search is turned **Off**, generative AI experiences are limited for both makers and end users.
 
 > [!IMPORTANT]
 > Dataverse search counts towards the different storage entitlements you have in the tenant.
@@ -346,7 +346,7 @@ For all FAQs about Dataverse search, go to [Frequently asked questions about Dat
 
 - [Search for tables and rows by using Dataverse search](/powerapps/user/relevance-search)
 - [Configure facets and filters](/power-apps/user/facets-and-filters)
-- [Frequently asked questions about Dataverse search](/power-apps/user/relevance-faq)
+- [Frequently asked questions about Dataverse search](/powerapps/user/relevance-faq)
 - [Dynamics 365 results in Microsoft Search](/microsoftsearch/manage-dynamics365)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
