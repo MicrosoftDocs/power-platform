@@ -57,79 +57,54 @@ Dataverse search delivers fast and comprehensive search results across multiple 
 
 ## Managing Dataverse search
 
-Dataverse search is an opt-out feature. It's set to **On** for all new production environments and to **Default** for all other [environment types](/power-platform/admin/environments-overview#environment-types). Use Dataverse search so that users have a search experience in model-driven apps and harness the power of Copilot experiences.
-
-You can find this setting in the Power Platform admin center. For more information, refer to [Search](settings-features.md#search).
+Dataverse search is an opt-out feature. Use Dataverse search so that users have a search experience in model-driven apps and harness the power of Copilot experiences. In the Power Platform admin center, Dataverse search is controlled by two options:
+- **Turn on search indexing to support Dataverse intelligence (Work IQ) in AI and agent experiences)**
+- **Show global search bar in all model driven apps and turn on search indexing to support search-only experiences**
 
 :::image type="content" source="media/dataverse-search.png" alt-text="Dataverse search settings in Power Platform admin center." lightbox="media/dataverse-search.png":::
 
-In the Power Platform admin center, admins can [use the Dataverse Search setting](configure-relevance-search-organization.md#managing-dataverse-search) to manage it. The selected state affects how Dataverse data is indexed and used across the global search and enabled experiences in the environment.
-
-The following tables show how each Dataverse search setting affects global search experiences including SearchQuery API and generative AI experiences and how admins can use this setting to manage it.
-
-## What the Dataverse search setting means for global search
-
-When you set Dataverse search to **On**, a search box appears at the top of every page in model-driven apps in the environment. The search box lets you start a new search and quickly find the information from the searchable tables included in the app. When you turn on Dataverse search, it becomes the default and only global search experience in all model-driven apps in the environment. 
-
-> [!NOTE]
-> You can't turn off global search for individual apps.
-> 
-> When Dataverse search is set to "On", [quick find search](/powerapps/user/quick-find) (formerly known as _categorized search_) becomes unavailable.
-
-[Dataverse search can extend to other Microsoft search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. By enabling a connector, you can search for and find information from these canvases as if you're searching in the app. For example, you can quickly look up a contact's phone number or email address without opening the app. For more information, refer to [Search for records by using Dataverse search](/power-apps/user/relevance-search).
-
-| Dataverse search set to On	|  Dataverse search set to Default	|   Dataverse search set to Off  |
-|-----------------------------|-----------------------------------|--------------------------------|
-| The search bar is visible. (Quick Find isn't visible or accessible.)  |	The search bar isn't visible. (Quick Find can be used alternatively.)  |  Quick Find can be used alternatively.  |
-|  Dataverse search is used for all production environments.  |  Dataverse search isn't available for global search in any environment.	|  Dataverse search isn't available for global search in any environment.  |
-|  Dataverse data is automatically indexed and is searchable to be used for global search.  |  Dataverse data isn't indexed and data isn't searchable for global search.	|  Dataverse data isn't indexed and data isn't searchable for global search. |
-
-## What Dataverse search means for generative AI-enabled experiences
-
-Some generative AI experiences use Dataverse search data. When you enable Dataverse search, you can access Copilot chat through the Copilot icon in the right navigation bar in a model-driven app. You can open or minimize the Copilot chat pane as you want.
-
--	**Power Apps**: [Copilot chat for model-driven apps in Power Apps](/power-apps/maker/model-driven-apps/add-ai-copilot) is a next-generation AI assistant that helps app users get insights about the data in their apps through conversation in natural language.
-- **Copilot Studio**: [Integrating Dataverse tables as your knowledge source](/microsoft-copilot-studio/knowledge-add-dataverse) allows you to ground your agent in the data contained in your tables. This can also happen using [unstructured data as knowledge](/microsoft-copilot-studio/knowledge-unstructured-data) or [Dataverse tools](/microsoft-copilot-studio/advanced-plugin-actions).
-
-| Dataverse search set to On	|  Dataverse search set to Default	|   Dataverse search set to Off  |
-|-----------------------------|-----------------------------------|--------------------------------|
-|  An enabled, generative AI feature's availability isn't managed by Dataverse search itself. It might be enabled through its own feature setting.  |
-|  Dataverse search is used in all production environments.	|  Dataverse search is used for generative AI experiences in Sandbox, Trial, Developer, and Dataverse for Teams environments.	|  Dataverse search isn't used in any environment.  |
-|  Selected Dataverse data (tables and files) is automatically indexed and data is searchable.  |  Selected Dataverse data (tables and files) is indexed when triggered and data is searchable. 	|  Dataverse data isn't indexed and isn't searchable.  |
-
-Individual users can't switch to [quick find search](/powerapps/user/quick-find), formerly known as _categorized search_. You must include tables in the application you're using with Dataverse search. Be sure that your application includes any table you want users to search.
-
-> [!NOTE]
-> As of September 2025, the **Dataverse search** setting for all previously created environments was migrated once as required to maintain a consistent user experience. Environments that didn't have prior dependencies on Dataverse search or Copilot were designated as **Default** (equivalent to the former **Off** setting), whereas those with Dataverse search enabled retained the **On** configuration.
-
-> [!IMPORTANT]
-> If you're using your own encryption key, you can turn off Dataverse search after allowing early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-> [!NOTE]
-> - Dataverse search must be turned on to support lifecycle operations such as create, delete, backup, recover, copy, and reset.
-> - Dataverse search must be manually set to **On** in required environments to support copying lifecycle operations between environments.
-
-Take these steps to turn on Dataverse search:
-
+**Take these steps to manage Dataverse search:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a system administrator.
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, select **Settings**.
 1. Expand **Product**, then select **Features**.
-1. Under **Dataverse search**, select **On**.
-1. Select **Save** to apply the change.
+1. Under **Dataverse search**, change selected state.
+1. Select **Save** to apply the change.**
 
-When you turn on Dataverse search, you allow global search in all model-driven apps in that environment and allow generative AI experiences to work. 
+The selected state affects how Dataverse data is indexed and used across the global search and enabled AI experiences in the environment. You can follow [view dataverse search storage](configure-relevance-search-organization.md#view-dataverse-search-storage) to export usage granular reports to View exactly which tables are being indexed and how much capacity each one consumes.
 
 > [!NOTE]
 > - You can't turn off Dataverse search in specific apps.
 > - Dataverse search doesn't turn on any other feature automatically.
-
-When you create a Dataverse search index, an indication that provisioning is in progress appears.
+> - Both global search and enabled AI experiences are sharing the same indexing data.
+> - When you create a Dataverse search index, an indication that provisioning is in progress appears.
 
 > [!IMPORTANT]
 > Turning off Dataverse search deprovisions and removes the index within 12 hours. If you turn on Dataverse search after it's been off for 12 hours, it creates a fresh index that needs to go through a full sync. Syncing can take an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
+> 
+> If you're using your own encryption key, you can turn off Dataverse search after allowing early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+
+## Turn on search indexing to support Dataverse intelligence (Work IQ) in AI and agent experiences)
+
+Some generative AI experiences use Dataverse search data. When you enable Dataverse search, you can access Copilot chat through the Copilot icon in the right navigation bar in a model-driven app. You can open or minimize the Copilot chat pane as you want. The indexing is on demand. We will perform indexing based on the request from different AI and agent experiences.
+
+-	**Power Apps**: [Copilot chat for model-driven apps in Power Apps](/power-apps/maker/model-driven-apps/add-ai-copilot) is a next-generation AI assistant that helps app users get insights about the data in their apps through conversation in natural language.
+- **Copilot Studio**: [Integrating Dataverse tables as your knowledge source](/microsoft-copilot-studio/knowledge-add-dataverse) allows you to ground your agent in the data contained in your tables. This can also happen using [unstructured data as knowledge](/microsoft-copilot-studio/knowledge-unstructured-data) or [Dataverse tools](/microsoft-copilot-studio/advanced-plugin-actions).
+
+
+## Show global search bar in all model driven apps and turn on search indexing to support search-only experiences
+When you set this option to On, a search box appears at the top of every page in model-driven apps in the environment. The search box lets you start a new search and quickly find the information from the searchable tables included in the app. When you turn on Dataverse search, it becomes the default and only global search experience in all model-driven apps in the environment.
+
+[Dataverse search can extend to other Microsoft search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. By enabling a connector, you can search for and find information from these canvases as if you're searching in the app. For example, you can quickly look up a contact's phone number or email address without opening the app. For more information, refer to [Search for records by using Dataverse search](/power-apps/user/relevance-search).
+
+> [!NOTE]
+> You can't turn off Dataverse global search for individual apps.
+> When Dataverse global search search is set to "On", [quick find search](/powerapps/user/quick-find) (formerly known as _categorized search_) becomes unavailable.
+> Dataverse search must be turned on to support lifecycle operations such as create, delete, backup, recover, copy, and reset.
+> Dataverse search must be manually set to **On** in required environments to support copying lifecycle operations between environments.
 
 ## Set up Dataverse search for global search
 
@@ -359,6 +334,7 @@ You can also view Dataverse search in the following locations:
 1. Select an environment, and then select the **Chart** icon for details.
 1. In the **Licensing** pane, select **Dataverse**.
 1. On the **Licenses** page, go to the **Environments** tab, and then select an environment to view.
+2. Click **Download Report** from Search Index section to get a detailed usage report broken down by table.
 
 We recommend turning on Dataverse search so you can enjoy a better search experience in model-driven apps with optimized, generative AI experiences. As an environment admin, you can opt out of this feature by turning it off. When Dataverse search is turned **Off**, generative AI experiences are limited for both makers and end users.
 
