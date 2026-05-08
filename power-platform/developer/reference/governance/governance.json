@@ -3,7 +3,7 @@
   "info": {
     "title": "Microsoft Power Platform REST API - governance",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
-    "version": "2022-03-01-preview"
+    "version": "2024-10-01"
   },
   "host": "api.powerplatform.com",
   "schemes": [
@@ -31,7 +31,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -80,7 +80,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -130,7 +130,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -181,7 +181,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -207,6 +207,65 @@
           },
           "404": {
             "description": "Not Found - The specified resource does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "RuleBasedPolicies"
+        ],
+        "summary": "Patch rule based policy.",
+        "description": "Allows adding or updating one or more rule sets to an existing policy.",
+        "operationId": "PatchRuleBasedPolicy",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "policyId",
+            "description": "The unique identifier of the policy.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PolicyRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated policy.",
+            "schema": {
+              "$ref": "#/definitions/Policy"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified policy does not exist."
           },
           "500": {
             "description": "Internal Server Error - Unexpected server error."
@@ -246,7 +305,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -306,7 +365,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -380,7 +439,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -419,6 +478,67 @@
         }
       }
     },
+    "/governance/ruleBasedPolicies/{policyId}/removeRule": {
+      "patch": {
+        "tags": [
+          "RuleBasedPolicies"
+        ],
+        "summary": "Removes a rule set from an existing policy.",
+        "description": "Removes a rule set from an existing policy.",
+        "operationId": "RemoveRuleFromRuleBasedPolicy",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "policyId",
+            "description": "The unique identifier of the policy.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PolicyRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated policy.",
+            "schema": {
+              "$ref": "#/definitions/Policy"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified policy does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    },
     "/governance/ruleBasedPolicies/assignments": {
       "get": {
         "tags": [
@@ -444,7 +564,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -501,7 +621,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -558,7 +678,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -583,7 +703,7 @@
         }
       }
     },
-    "/governance/environments/{environmentId}/environmentGroups/{groupId}/ruleSets": {
+    "/governance/environmentGroups/{groupId}/ruleSets": {
       "get": {
         "tags": [
           "RuleSets"
@@ -595,14 +715,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "in": "path",
-            "name": "environmentId",
-            "description": "The unique identifier of the environment.",
-            "required": true,
-            "type": "string",
-            "format": "uuid"
-          },
           {
             "in": "path",
             "name": "groupId",
@@ -617,7 +729,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -672,14 +784,6 @@
         "parameters": [
           {
             "in": "path",
-            "name": "environmentId",
-            "description": "The unique identifier of the environment.",
-            "required": true,
-            "type": "string",
-            "format": "uuid"
-          },
-          {
-            "in": "path",
             "name": "groupId",
             "description": "The unique identifier of the environment group.",
             "required": true,
@@ -692,7 +796,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -788,7 +892,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -854,7 +958,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -923,7 +1027,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -974,7 +1078,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1011,7 +1115,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1066,7 +1170,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
