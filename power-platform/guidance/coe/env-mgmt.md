@@ -251,9 +251,7 @@ To view and respond to the DLP Policy Change Requests:
 
 ## Create Environment Management components using Power Apps vibe
 
-You can create your own custom solutions using the [vibe experience in Power Apps](/power-apps/vibe/overview). For example, you can use prompts to create an app that standardizes how makers request new environments and data policy changes and how admins review and approve them.
-
-This sample prompt can help you get started.
+You can create your own custom solutions using the [vibe experience in Power Apps](/power-apps/vibe/overview). For example, you can use this sample prompt to create an app that standardizes how makers request new environments and data policy changes and how admins review and approve them. Adapt the prompt to fit your organization's specific needs and processes.
 
 ```agent-prompt
 Build an Environment Management app with two experiences: a Maker view and an Admin view.
