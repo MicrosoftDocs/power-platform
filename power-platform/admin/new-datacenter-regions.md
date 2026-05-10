@@ -5,7 +5,7 @@ author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
 ms.collection: get-started
-ms.date: 05/07/2026
+ms.date: 05/10/2026
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -50,7 +50,7 @@ The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 
 ## Macro region 
 Macro region represents the data residency boundary aligning with data residency laws for the given geography. Learn more about the countries available in a specific macro region. 
 
-| # | Macro region geography          | Countries                | Tooltips                                                |
+| # | Macro region geography          | Countries                | Description                                               |
 |---|---------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------|
 |1  |North America                    |United States, Canada                                                             | Your data resides within the United States or Canada.| 
 |2  |The Americas                     |United States, Canada, Brazil | Your data resides within the Americas, including North and South America. |
