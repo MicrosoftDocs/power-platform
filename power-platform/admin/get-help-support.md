@@ -126,9 +126,9 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
    - Set the [appropriate severity](support-overview.md#severity-and-responsiveness) for your request. 
    
      > [!WARNING]
-     > - Submitting a **Severity A** request **means you can engage 24/7 with Microsoft until the issue is resolved**. If you can't do so, file your case at a lower severity to avoid downgrade.
+     > - Submitting a **Severity A** request means you can engage with Microsoft until the issue is resolved. If you can't do so, file your case at a lower severity to avoid downgrade.
      > - Selecting **Severity A** for a low priority issue results in automatic downgrade to an appropriate severity.
-     > - Selecting **Technical** in order to submit an **Advisory** request **results in closure** of your request. 
+     > - Selecting **Technical** in order to submit an **Advisory** request results in closure of your request. 
      
    - Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
    - Review the generated title and description for your request, and modify as needed. Set the date the issue occurred. If you're unsure, leave as current.
@@ -136,7 +136,7 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
    - Set your contact preferences and advanced diagnostic consent. Learn more about [advanced diagnostics](/power-platform/admin/support-environment).
    
      > [!IMPORTANT]
-     > **Microsoft can't access or run diagnostics on data in your tenant or environment without consent.** If you don't provide consent when it's required, a Microsoft support representative will contact you to update the consent before proceeding.
+     > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If you don't provide consent when it's required, a Microsoft support representative will contact you to update the consent before proceeding.
      
    - If available, a **Live chat** checkbox appears in contact preferences. If left checked, a Microsoft representative will join the chat after support request creation.
    
@@ -150,28 +150,28 @@ If the support agent is unavailable or isn't performant, the back-up support exp
 
 :::image type="content" source="media/get-help-support/backup-support-webform-describe-issue.png" alt-text="Screenshot of Get support webform with Service Health alerts shown and, Describe the issue fields for product, title, description, and start date." lightbox="media/get-help-support/backup-support-webform-describe-issue.png":::
 
-1. **Opening backup support**
+1. **Open back-up support.**
 
    - Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
    - In the navigation pane, select **Support**. In the **Support** pane, select **Support requests**.
-      - On the **Support requests** page, select **Get support**. Typically, the support agent loads. The back-up support experience shows in these scenarios:
+
+     On the **Support requests** page, select **Get support**. Typically, the support agent loads. The back-up support experience shows in these scenarios.
             
      | Scenario | Back-up support Behavior |
      | -------- | -------- |
-     | Support agent is unavailable | The backup support experience loads automatically until the root cause is addressed. |
-     | Support agent crashes | You're prompted to select the **Switch to webform** button at the top of the panel. An 8-hour cooldown period is triggered where the backup support experience loads by default when selecting **Get support** to allow the issue to be resolved. |
+     | Support agent is unavailable | The back-up support experience loads automatically until the root cause is addressed. |
+     | Support agent crashes | You're prompted to select the **Switch to webform** button at the top of the panel. An 8-hour cooldown period is triggered where the back-up support experience loads by default when selecting **Get support** to allow the issue to be resolved. |
      | Support agent isn't performant | In the case of a critical timeout, the **Switch to webform** button appears at the top of the panel. You can choose to select it or wait for the support agent to respond. |
      
-   - If you choose to or must switch to the backup experience, leave feedback when prompted so Microsoft can diagnose and address the issues. 
+   - If you choose to or must switch to the back-up experience, leave feedback when prompted so Microsoft can diagnose and address the issues. 
       
-1. **Describe the problem**
+1. **Describe the problem.**
 
    - Select the product where you experienced the issue.
    
      > [!IMPORTANT]
-     > - Selecting "Dynamics 365 Customer Service" for customer service *with another* *product* **misroutes and delays a request.**
-     > - For administration issues or if you encountered an issue in Power Platform Admin Center (PPAC), select this as the product. 
-     
+     > - Selecting **Dynamics 365 Customer Service** for customer service *with another* *product* **misroutes and delays a request.**
+     > - For administration issues or if you encountered an issue in the Power Platform admin center, select this as the product. 
      
    - Select the best fit **Category** and **Subcategory** to help route the request to the appropriate support representative. 
       
@@ -181,81 +181,91 @@ If the support agent is unavailable or isn't performant, the back-up support exp
       
    - Select **Next** to review available solutions for the issue.
       
-1. __Review solutions__
+1. **Review solutions.**
 
-   - The **Product**, **Title**, and **Description** are used to search Known Issues, Microsoft documentation, and community content, resulting in a generative answer.
+   - The **Product**, **Title**, and **Description** are used to search known issues, Microsoft documentation, and community content, resulting in a generative answer.
       
    - Review the provided answers to see if they address or resolve the issue.
       
    - If the answers don't resolve the issue, select **Next** to create your support request.
       
-1. **Request support**
+1. **Request support.**
 
-  - Provide any requested additional details, such as an affected environment. This information is critical to help Microsoft troubleshoot your issue.
+  - Provide any requested details, such as an affected environment. This information is critical to help Microsoft troubleshoot your issue.
   
     > [!TIP]
-    > If the affected environment isn't listed, select **My environment is not listed** and provide the URL of the environment.>
+    > If the affected environment isn't listed, select **My environment is not listed** and provide the URL of the environment.
     
     
-  - Select whether your request is [Advisory or Technical](/power-platform/admin/support-overview#technical-support-vs-advisory-services). Some support plans don't have Advisory support.
-  - Set the [appropriate severity](/power-platform/admin/support-overview#severity-and-responsiveness) for your request.
+  - Select whether your request is [advisory or technical](support-overview.md#technical-support-vs-advisory-services). Some support plans don't have Advisory support.
+  - Set the [appropriate severity](support-overview.md#severity-and-responsiveness) for your request.
   
     > [!WARNING]
-    > - Submitting a **Severity A** request **means you can engage 24/7 with Microsoft** until the issue is resolved. If you can't do so, file your case at a lower severity to avoid downgrade.
-    > - Selecting Severity A for a low priority issue will results in automatic downgrade to an appropriate severity.
-    > - Selecting **Technical** in order to submit an **Advisory** request **will result in closure** of your request. 
+    > - Submitting a **Severity A** request means you can engage with Microsoft until the issue is resolved. If you can't do so, file your case at a lower severity to avoid downgrade.
+    > - Selecting **Severity A** for a low priority issue results in automatic downgrade to an appropriate severity.
+    > - Selecting **Technical** in order to submit an **Advisory** request results in closure of your request. 
     
     
   - Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
   - Set your contact preferences and advanced diagnostic consent. To learn more, see [advanced diagnostics](/power-platform/admin/support-environment).
   
     > [!IMPORTANT]
-    > **Microsoft can't access or run diagnostics on data in your tenant or environment without consent.** If consent is required but not provided, a Microsoft support representative will contact you to update the consent before proceeding.]
-    
+    > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If consent is required but not provided, a Microsoft support representative contacts you to update the consent before proceeding.
     
   - Select **Create support request** to submit. You will see confirmation when successful. You can manage the request on the [Support requests page](https://admin.powerplatform.microsoft.com/support/requests).
   - If offered a customer satisfaction survey, respond with your perspective to improve the experience. Engineers review feedback.
+
 ## Add a support plan
-To add a support plan or check the support plans currently associated with a product, select the **Support plans** button shown on any of the Power Platform Admin Center / Support pages. Follow these instructions to check associated or add new support plans.
+To add a support plan or check the support plans currently associated with a product, select the **Support plans** button shown on any of the **Support** pages. Follow these instructions to add new support plans.
 
 - **View existing plans:** Choose the product to check the associated plans. The **Support plans** menu lists the resulting plans once loaded.
 
-- **Add a new plan:** Enter your **Access ID** and **Password** and select **Save** to associate the plan. To confirm the plan is ready to use, select a product the plan is associated with and check the value in the **Support plans** menu. It might take a few minutes. Select the refresh button to check again. Once a plan appears in this menu, it's ready to use. 
+- **Add a new plan:** Enter your **Access ID** and **Password** and select **Save** to associate the plan. To confirm the plan is ready to use, select the product the plan is associated with and check the value in the **Support plans** menu. It might take a few minutes. Select the refresh button to check again. Once a plan appears in this menu, it's ready to use. 
 
 > [!NOTE]
->   - If you don't know your access or contract ID, contact your service admin, incident , or Customer Success Account Manager (CSAM).
->   - The Contract ID/Password defaults to the Unified or Premier contract ID. If you changed the password when registering online in the Unified/Premier portal, use the updated password instead of the contract ID.
+>   - If you don't know your access or contract ID, contact your service admin, incident, or customer success account manager (CSAM).
+>   - The **Contract ID**/**Password** defaults to the Unified or Premier contract ID. If you changed the password when registering online in the Unified/Premier portal, use the updated password instead of the contract ID.
 
 ##:::image type="content" source="media/get-help-support/support-plans-add-new-plan-panel.png" alt-text="Screenshot of Support plans panel with Product dropdown set to Microsoft Copilot Studio and fields for Access ID and password." lightbox="media/get-help-support/support-plans-add-new-plan-panel.png":::Self-help content types
 
-During the Solutions phase of Support workflows, you might see several distinct types of content. This content helps pinpoint the causes of the issue and find resolutions. If a particular resource doesn't apply, you can choose to move forward.
+During the solutions phase of support workflows, you might see several distinct types of content. This content helps pinpoint the causes of the issue and find resolutions. If a particular resource doesn't apply, you can choose to move forward.
 
 ### Service health
 
-Service health alerts notify you of active and recently resolved disruptions affecting your products and tenant. Expanding the **Service Health** card shows a title and preview of each alert along with a link to the details page. The details page contains the latest updates from Microsoft. You can notify Microsoft that you're seeking support for these issues by checking the relevant box and selecting **Submit**. You can also view active and recently resolved alerts on the [Support / Service Health](https://admin.powerplatform.microsoft.com/support/serviceHealth) page of the Power Platform Admin Center, and in the Microsoft admin center (where you can subscribe for email updates). For more information, see [View service health](view-service-health.md).
+Service health alerts notify you of active and recently resolved disruptions affecting your products and tenant. Expanding the **Service Health** card shows a title and preview of each alert along with a link to the details page. The details page contains the latest updates from Microsoft. You can notify Microsoft that you're seeking support for these issues by checking the relevant box and selecting **Submit**. You can also view active and recently resolved alerts on the [Support/Service Health](https://admin.powerplatform.microsoft.com/support/serviceHealth) page of the Power Platform admin center, and in the Microsoft admin center (where you can subscribe for email updates). For more information, see [View service health](view-service-health.md).
 
-### :::image type="content" source="media/get-help-support/service-health-card-active-alerts.png" alt-text="Screenshot of expanded Service Health card showing advisory and incident alerts with checkboxes and Submit button." lightbox="media/get-help-support/service-health-card-active-alerts.png":::Known issues
+### Known issues
 
 Known issues represent bugs or product problems that product engineering teams identify and share. The details of the issue and any workarounds are provided. If your new issue seems related to an existing known issue, the support workflow displays details. You can review details by selecting the link. You can also search active and resolved known issues on the **Support Known Issues** page in the Power Platform admin center. For more information, see [View known issues](view-known-issues.md).
 
-### :::image type="content" source="media/support-agent-known-issues-card.png" alt-text="Screenshot of a known issue card describing Power Automate Desktop flow failures with a See workaround link and feedback options." lightbox="media/support-agent-known-issues-card.png":::Generative answers
+:::image type="content" source="media/get-help-support/service-health-card-active-alerts.png" alt-text="Screenshot of expanded Service Health card showing advisory and incident alerts with checkboxes and Submit button." lightbox="media/get-help-support/service-health-card-active-alerts.png":::
+
+### Generative answers
 
 Generative answers are created in real time based on your issue description from Microsoft public documentation, internally authored troubleshooting content, and select [Power Platform](https://community.powerplatform.com/) and [Dynamics 365](https://community.dynamics.com/) community forums and blogs. A generative answer card consists of a reference to the issue as understood, the solution content or resolution steps, clickable citation links, and a navigation prompt to mark if the answer resolved your issue or if you wish to create a support request. If you're using the **Support Agent**, generated answers also show suggested follow-up questions. You can select from these or ask your own. The agent retains context when answering follow-up questions.
 
 > [!IMPORTANT]
-> It's important to note that AI-generated content might be incorrect. 
+> It's important to note that AI-generated content might be incorrect.
 
-### :::image type="content" source="media/get-help-support/support-agent-generative-answer.png" alt-text="Screenshot of support agent response listing six steps to resolve Power Automate 429 throttling errors with citations and follow-up questions." lightbox="media/get-help-support/support-agent-generative-answer.png":::Dialogs
+:::image type="content" source="media/support-agent-known-issues-card.png" alt-text="Screenshot of a known issue card describing Power Automate Desktop flow failures with a See workaround link and feedback options." lightbox="media/support-agent-known-issues-card.png":::
+
+### Dialogs
 
 Troubleshooting dialogs guide you toward a solution if generative answers don't resolve the issue. These dialogs often trigger if there's a level of ambiguity about your problem. You need to navigate these dialogs to a solution to proceed in many cases. Product teams create these dialogs to represent frequent problems, questions, and other topics seen in previous support requests. By navigating the dialog, you can both find answers and help Microsoft categorize the problem, so any support request is routed to the correct Microsoft support representative, and the owning product engineering team is alerted.
 
-### :::image type="content" source="media/troubleshoot-dialog.png" alt-text="Screenshot of nested support dialogs guiding user from App Creation Issues to Create Model Driven App with related documentation links." lightbox="media/troubleshoot-dialog.png":::Documentation search results
+:::image type="content" source="media/get-help-support/support-agent-generative-answer.png" alt-text="Screenshot of support agent response listing six steps to resolve Power Automate 429 throttling errors with citations and follow-up questions." lightbox="media/get-help-support/support-agent-generative-answer.png":::
+
+### Documentation search results
 
 (support Experience only.) You will see the top three search results from Microsoft product documentation based on your selected product and issue description. Select a link to review the articles relevant to your issue.
 
-## :::image type="content" source="media/troubleshoot-documentation-search-results.png" alt-text="Screenshot of documentation search results listing three Power Automate troubleshooting articles with descriptions." lightbox="media/troubleshoot-documentation-search-results.png":::Report an outage
+:::image type="content" source="media/troubleshoot-dialog.png" alt-text="Screenshot of nested support dialogs guiding user from App Creation Issues to Create Model Driven App with related documentation links." lightbox="media/troubleshoot-dialog.png":::
+
+## Report an outage
 
 Depending on your tenant, you might be able to access the direct **Report outage** feature. If enabled, the **Report outage** button is visible on any of the support pages, next to the **Get support** button. If the **Report outage** feature isn't enabled, you can navigate the support agent or experience workflows to create a high-priority support request, if you have an active support plan.
+
+:::image type="content" source="media/troubleshoot-dialog.png" alt-text="Screenshot of nested support dialogs guiding user from App Creation Issues to Create Model Driven App with related documentation links." lightbox="media/troubleshoot-dialog.png":::
 
 To use the **Report outage** feature to raise a high-priority support request, complete the following steps:
 
