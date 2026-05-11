@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 04/30/2026
+ms.date: 05/06/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -17,6 +17,12 @@ ms.custom:
 # What's new in the Power Platform and Copilot Studio Architecture Center
 
 Get the latest info about what's new and what's changed in the Power Platform and Copilot Studio Architecture Center.
+
+## May 2026
+
+New in [Reference architectures](reference-architectures/index.md):
+
+- [Automate service order lifecycle and SLA governance with Power Platform](reference-architectures/service-order-process.md)
 
 ## April 2026
 

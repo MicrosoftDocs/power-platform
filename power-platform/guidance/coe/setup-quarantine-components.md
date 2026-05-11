@@ -5,7 +5,7 @@ author: manuelap-msft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/13/2024
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -16,7 +16,9 @@ ms.custom: sfi-image-nochange
 
 # Set up app quarantine components
 
-This article will help you to set up the app quarantine components of the governance solution. A quarantined app will present end users who launch the app a message indicating they’re unable to access the app. This feature is currently only available for canvas apps. Learn more: [Manage app quarantine state](/power-platform/admin/admin-manage-apps#manage-app-quarantine-state)
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
+
+This article will help you to set up the app quarantine components of the governance solution. A quarantined app will present end users who launch the app a message indicating they're unable to access the app. This feature is currently only available for canvas apps. Learn more: [Manage app quarantine state](/power-platform/admin/admin-manage-apps#manage-app-quarantine-state)
 
 >[!IMPORTANT]
 >This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environments) and are signed in with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).

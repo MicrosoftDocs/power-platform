@@ -111,6 +111,8 @@
           href: reference-architectures/custom-page-file-upload.md
         - name: Synchronize data across Dataverse environments
           href: reference-architectures/sync-dataverse-data.md
+        - name: Automate service order lifecycle and SLA governance
+          href: reference-architectures/service-order-process.md
     - name: Solution ideas
       items:
         - name: Overview

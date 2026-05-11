@@ -73,7 +73,8 @@
          },
          "ms.update-cycle": {
             "guidance/creator-kit/**.md": "3650-days",
-            "guidance/coe/**.md": "3650-days"
+            "guidance/coe/**.md": "3650-days",            
+            "guidance/alm-accelerator/**.md": "3650-days"
          },
          "ms.subservice": {
             "power-fx/**/*.md": "power-fx",
