@@ -1,11 +1,11 @@
 ---
 title: Get support in the Power Platform admin center
-description: Get support in the Power Platform admin center using the AI-powered Support agent and learn how to engage with support resources so you can create and submit a support request.
+description: Get support in the Power Platform admin center using the AI-powered support agent and learn how to engage with support resources so you can create and submit a support request.
 #customer intent: As a Power Platform admin, I want to review service health alerts, known issues, and self-help solutions before creating a support request, so that I can identify whether my issue is already being addressed, can be resolved, or requires submission of a support request.
 author: johnehart
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/06/2026
+ms.date: 05/11/2026
 ms.subservice: admin
 ms.author: johhar
 ms.reviewer: sericks
@@ -22,7 +22,7 @@ ms.custom: sfi-image-nochange
 
 # Get support in the Power Platform admin center
 
-Admins can use the [support experience](https://admin.powerplatform.microsoft.com/support/requests) in the [Power Platform admin center](admin-documentation.md) to get self-help solutions for an issue. If self-help doesn't resolve the issue, continue in the same **support** experience to engage Microsoft support representatives by using your support plan. If you need to link a plan with your account, enter your access ID and password before creating a support request. For more information, see [Add a support plan](#add-a-support-plan).
+Admins can use the [Support experience](https://admin.powerplatform.microsoft.com/support/requests) in the [Power Platform admin center](admin-documentation.md) to get self-help solutions for an issue. If self-help doesn't resolve the issue, continue in the same **support** experience to engage Microsoft support representatives by using your support plan. If you need to link a plan with your account, enter your access ID and password before creating a support request. For more information, see [Add a support plan](#add-a-support-plan).
 
 ## Prerequisites
 
@@ -69,21 +69,25 @@ Two experiences exist depending on your tenant and scenario. Most users see the 
 
 While the support agent is in preview, users can switch between experiences by selecting the ellipsis icon (**...**) in the upper-right corner of the **Support agent** pane. You can switch back to the support agent by closing the pane and selecting **Get support** again, or by selecting the **Switch to support agent** toggle at the top of the pane.
 
-### Use the support agent
+### Use the support agent (preview)
 
-The support agent is an AI-powered virtual agent that takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. By following these steps, you can find self-help solutions, create a support request, and engage Microsoft representatives:
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+The support agent is an AI-powered virtual agent that takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. By following these steps, you can find self-help solutions, create a support request, and engage Microsoft representatives.
 
 :::image type="content" source="media/get-help-support/support-agent-pane.png" alt-text="Screenshot of Support agent pane with Issue step active, Service Health alert, and issue description text box." lightbox="media/get-help-support/support-agent-pane.png":::
 
-1. **Open Support agent**
+1. **Open the support agent.**
 
    - Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
    - In the navigation pane, select **Support**. In the **Support** pane, select **Support requests**.
-   - On the **Support requests** page, select **Get support**. The **Support agent** pane is displayed. Using the chat experience, complete the following steps:
+   - On the **Support requests** page, select **Get support**. The **Support agent** pane is displayed. Using the chat experience, complete the following steps.
       
-1. **Describe the issue**
+1. **Describe the issue.**
 
-   - Fully and [clearly describe the issue](/power-apps/maker/canvas-apps/service-request-support) to the agent. Provide as much detail as you can to help the agent understand and categorize. The agent uses all information to both find solutions and add to the description for any support request.
+   - [Clearly describe the full issue](/power-apps/maker/canvas-apps/service-request-support) to the agent. Provide as much detail as you can to help the agent understand and categorize. The agent uses all information to find solutions and add to the description for any support request.
       
    - Indicate which product you're using. If the predicted product is incorrect, select **No**, and then specify the product name.
    
@@ -91,17 +95,17 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
      > - Selecting "Dynamics 365 Customer Service" for customer service with another product **misroutes and delays a request.**
      > - For administration issues or if you encountered an issue in Power Platform Admin Center (PPAC), select this as the product.
      
-1. **Answer the interview**
+1. **Answer clarifying questions.**
 
-   - The agent uses AI to interpret the issue description and might ask clarifying questions. Do your best to answer the questions. All information you provide is included in any support request description.
+    The agent uses AI to interpret the issue description and might ask clarifying questions. Do your best to answer the questions. All information you provide is included in any support request description.
    
      > [!TIP]
-     > - If you don't have the details requested, reply with *“I don’t have them”* or *“I don’t know”* and the interview continues
+     > - If you don't have the details requested, reply with *“I don’t have them”* or *“I don’t know”* to continue.
      > - Occasionally, the agent asks you to select a best fit **Category** and **Subcategory** to help route a support request to the appropriate Microsoft support representatives and highlight the issue for the responsible product team.
      
-1. **Review solutions**
+1. **Review solutions.**
 
-   - The agent goes through known issues and generates answers from documentation and community content by using a summaryof your description. 
+   - The agent goes through known issues and generates answers from documentation and community content by using a summary of your description. 
       
    - Review the solution content and follow the prompts to progress through solutions.
    
@@ -110,21 +114,21 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
      
    - If the solution content doesn't address or resolve your issue, and you have an active support plan, you can choose to create a support request. 
    
-1. **Request support**
+1. **Request support.**
 
    - Provide any requested details, such as an affected environment. Microsoft uses this information to help troubleshoot your issue. 
    
      > [!TIP]
      > If the affected environment isn't listed, select **My environment is not listed** and provide the URL of the environment.
      
-   - Select whether your request is [Advisory or Technical](/power-platform/admin/support-overview#technical-support-vs-advisory-services). Some support plans don't have Advisory support.
+   - Select whether your request is [advisory or technical](support-overview.md#technical-support-vs-advisory-services). Some support plans don't have Advisory support.
       
-   - Set the [appropriate severity](/power-platform/admin/support-overview#severity-and-responsiveness) for your request. 
+   - Set the [appropriate severity](support-overview.md#severity-and-responsiveness) for your request. 
    
      > [!WARNING]
      > - Submitting a **Severity A** request **means you can engage 24/7 with Microsoft until the issue is resolved**. If you can't do so, file your case at a lower severity to avoid downgrade.
-     > - Selecting Severity A for a low priority issue will results in automatic downgrade to an appropriate severity.
-     > - Selecting **Technical** in order to submit an **Advisory** request **will result in closure** of your request. 
+     > - Selecting **Severity A** for a low priority issue results in automatic downgrade to an appropriate severity.
+     > - Selecting **Technical** in order to submit an **Advisory** request **results in closure** of your request. 
      
    - Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
    - Review the generated title and description for your request, and modify as needed. Set the date the issue occurred. If you're unsure, leave as current.
@@ -134,15 +138,15 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
      > [!IMPORTANT]
      > **Microsoft can't access or run diagnostics on data in your tenant or environment without consent.** If you don't provide consent when it's required, a Microsoft support representative will contact you to update the consent before proceeding.
      
-   - If available, a **Live chat** checkbox will appear in contact preferences. If lef checked, a Microsoft representative will join the chat after support creation.
+   - If available, a **Live chat** checkbox appears in contact preferences. If left checked, a Microsoft representative will join the chat after support request creation.
    
-   - Select **Create support request** to submit your request to Microsoft support. You will receive a confirmation message when the request is created.
+   - Select **Create support request** to submit your request to Microsoft support. You receive a confirmation message when the request is created.
    
    -  If offered a customer satisfaction survey, respond with your perspective to improve the experience. Engineers review your feedback.
    
 ### Use the backup support experience
 
-If the support Agent is unavailable, isn't performant, or crashes, the backup support experience is available automatically or by selecting the **Switch to webform** button at the top of the panel. Through this experience, you can describe your issue, review any self-help solutions, and create a support request, if needed.
+If the support agent is unavailable or isn't performant, the back-up support experience is available automatically or by selecting the **Switch to webform** button at the top of the panel. Through this experience, you can describe your issue, review any self-help solutions, and create a support request, if needed.
 
 :::image type="content" source="media/get-help-support/backup-support-webform-describe-issue.png" alt-text="Screenshot of Get support webform with Service Health alerts shown and, Describe the issue fields for product, title, description, and start date." lightbox="media/get-help-support/backup-support-webform-describe-issue.png":::
 
