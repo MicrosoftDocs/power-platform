@@ -77,7 +77,7 @@ While the support agent is in preview, users can switch between experiences by s
 
 The support agent is an AI-powered virtual agent that takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. By following these steps, you can find self-help solutions, create a support request, and engage Microsoft representatives.
 
-:::image type="content" source="media/get-help-support/support-agent-pane.png" alt-text="Screenshot of Support agent pane with Issue step active, Service Health alert, and issue description text box." lightbox="media/get-help-support/support-agent-pane.png":::
+
 
 1. **Open the support agent.**
 
@@ -136,9 +136,9 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
    - Set your contact preferences and advanced diagnostic consent. Learn more about [advanced diagnostics](/power-platform/admin/support-environment).
    
      > [!IMPORTANT]
-     > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If you don't provide consent when it's required, a Microsoft support representative will contact you to update the consent before proceeding.
+     > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If you don't provide consent when it's required, a Microsoft support representative contacts you to update the consent before proceeding.
      
-   - If available, a **Live chat** checkbox appears in contact preferences. If left checked, a Microsoft representative will join the chat after support request creation.
+   - If available, a **Live chat** checkbox appears in contact preferences. If you leave it checked, a Microsoft representative joins the chat after support request creation.
    
    - Select **Create support request** to submit your request to Microsoft support. You receive a confirmation message when the request is created.
    
@@ -148,7 +148,7 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
 
 If the support agent is unavailable or isn't performant, the back-up support experience is available automatically or by selecting the **Switch to webform** button at the top of the panel. Through this experience, you can describe your issue, review any self-help solutions, and create a support request, if needed.
 
-:::image type="content" source="media/get-help-support/backup-support-webform-describe-issue.png" alt-text="Screenshot of Get support webform with Service Health alerts shown and, Describe the issue fields for product, title, description, and start date." lightbox="media/get-help-support/backup-support-webform-describe-issue.png":::
+
 
 1. **Open back-up support.**
 
@@ -212,7 +212,7 @@ If the support agent is unavailable or isn't performant, the back-up support exp
     > [!IMPORTANT]
     > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If consent is required but not provided, a Microsoft support representative contacts you to update the consent before proceeding.
     
-  - Select **Create support request** to submit. You will see confirmation when successful. You can manage the request on the [Support requests page](https://admin.powerplatform.microsoft.com/support/requests).
+  - Select **Create support request** to submit. You see confirmation when successful. You can manage the request on the [Support requests page](https://admin.powerplatform.microsoft.com/support/requests).
   - If offered a customer satisfaction survey, respond with your perspective to improve the experience. Engineers review feedback.
 
 ## Add a support plan
@@ -226,7 +226,9 @@ To add a support plan or check the support plans currently associated with a pro
 >   - If you don't know your access or contract ID, contact your service admin, incident, or customer success account manager (CSAM).
 >   - The **Contract ID**/**Password** defaults to the Unified or Premier contract ID. If you changed the password when registering online in the Unified/Premier portal, use the updated password instead of the contract ID.
 
-##:::image type="content" source="media/get-help-support/support-plans-add-new-plan-panel.png" alt-text="Screenshot of Support plans panel with Product dropdown set to Microsoft Copilot Studio and fields for Access ID and password." lightbox="media/get-help-support/support-plans-add-new-plan-panel.png":::Self-help content types
+## Self-help content types
+
+:::image type="content" source="media/get-help-support/support-plans-add-new-plan-panel.png" alt-text="Screenshot of Support agent pane with Issue step active." lightbox="media/get-help-support/support-plans-add-new-plan-panel.png":::
 
 During the solutions phase of support workflows, you might see several distinct types of content. This content helps pinpoint the causes of the issue and find resolutions. If a particular resource doesn't apply, you can choose to move forward.
 
@@ -238,34 +240,33 @@ Service health alerts notify you of active and recently resolved disruptions aff
 
 Known issues represent bugs or product problems that product engineering teams identify and share. The details of the issue and any workarounds are provided. If your new issue seems related to an existing known issue, the support workflow displays details. You can review details by selecting the link. You can also search active and resolved known issues on the **Support Known Issues** page in the Power Platform admin center. For more information, see [View known issues](view-known-issues.md).
 
-:::image type="content" source="media/get-help-support/service-health-card-active-alerts.png" alt-text="Screenshot of expanded Service Health card showing advisory and incident alerts with checkboxes and Submit button." lightbox="media/get-help-support/service-health-card-active-alerts.png":::
+:::image type="content" source="media/get-help-support/service-health-card-active-alerts.png" alt-text="Screenshot of Get support webform." lightbox="media/get-help-support/service-health-card-active-alerts.png":::
 
 ### Generative answers
 
-Generative answers are created in real time based on your issue description from Microsoft public documentation, internally authored troubleshooting content, and select [Power Platform](https://community.powerplatform.com/) and [Dynamics 365](https://community.dynamics.com/) community forums and blogs. A generative answer card consists of a reference to the issue as understood, the solution content or resolution steps, clickable citation links, and a navigation prompt to mark if the answer resolved your issue or if you wish to create a support request. If you're using the **Support Agent**, generated answers also show suggested follow-up questions. You can select from these or ask your own. The agent retains context when answering follow-up questions.
+Generative answers are created in real time based on your issue description from Microsoft public documentation, internally authored troubleshooting content, and select [Power Platform](https://community.powerplatform.com/) and [Dynamics 365](https://community.dynamics.com/) community forums and blogs. A generative answer card consists of a reference to the issue as understood, the solution content or resolution steps, clickable citation links, and a navigation prompt to mark if the answer resolved your issue or if you wish to create a support request. If you're using the **Support Agent**, generated answers also show suggested follow-up questions. You can select from these questions or ask your own. The agent retains context when answering follow-up questions.
 
 > [!IMPORTANT]
 > It's important to note that AI-generated content might be incorrect.
 
-:::image type="content" source="media/support-agent-known-issues-card.png" alt-text="Screenshot of a known issue card describing Power Automate Desktop flow failures with a See workaround link and feedback options." lightbox="media/support-agent-known-issues-card.png":::
+:::image type="content" source="media/support-agent-known-issues-card.png" alt-text="Screenshot of Known Issues." lightbox="media/support-agent-known-issues-card.png":::
 
 ### Dialogs
 
 Troubleshooting dialogs guide you toward a solution if generative answers don't resolve the issue. These dialogs often trigger if there's a level of ambiguity about your problem. You need to navigate these dialogs to a solution to proceed in many cases. Product teams create these dialogs to represent frequent problems, questions, and other topics seen in previous support requests. By navigating the dialog, you can both find answers and help Microsoft categorize the problem, so any support request is routed to the correct Microsoft support representative, and the owning product engineering team is alerted.
 
-:::image type="content" source="media/get-help-support/support-agent-generative-answer.png" alt-text="Screenshot of support agent response listing six steps to resolve Power Automate 429 throttling errors with citations and follow-up questions." lightbox="media/get-help-support/support-agent-generative-answer.png":::
+:::image type="content" source="media/get-help-support/support-agent-generative-answer.png" alt-text="Screenshot of expanded Service Health card." lightbox="media/get-help-support/support-agent-generative-answer.png":::
 
 ### Documentation search results
 
-(support Experience only.) You will see the top three search results from Microsoft product documentation based on your selected product and issue description. Select a link to review the articles relevant to your issue.
+(support Experience only.) You see the top three search results from Microsoft product documentation based on your selected product and issue description. Select a link to review the articles relevant to your issue.
 
-:::image type="content" source="media/troubleshoot-dialog.png" alt-text="Screenshot of nested support dialogs guiding user from App Creation Issues to Create Model Driven App with related documentation links." lightbox="media/troubleshoot-dialog.png":::
 
 ## Report an outage
 
-Depending on your tenant, you might be able to access the direct **Report outage** feature. If enabled, the **Report outage** button is visible on any of the support pages, next to the **Get support** button. If the **Report outage** feature isn't enabled, you can navigate the support agent or experience workflows to create a high-priority support request, if you have an active support plan.
+Depending on your tenant, you might be able to access the direct **Report outage** feature. If enabled, the **Report outage** button is visible on any of the support pages, next to the **Get support** button. If the **Report outage** feature isn't enabled, you can use the support agent or experience workflows to create a high-priority support request, if you have an active support plan.
 
-:::image type="content" source="media/troubleshoot-dialog.png" alt-text="Screenshot of nested support dialogs guiding user from App Creation Issues to Create Model Driven App with related documentation links." lightbox="media/troubleshoot-dialog.png":::
+:::image type="content" source="media/troubleshoot-dialog.png" alt-text="Screenshot of a known issue card." lightbox="media/troubleshoot-dialog.png":::
 
 To use the **Report outage** feature to raise a high-priority support request, complete the following steps:
 
