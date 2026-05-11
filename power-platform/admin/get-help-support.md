@@ -77,8 +77,6 @@ While the support agent is in preview, users can switch between experiences by s
 
 The support agent is an AI-powered virtual agent that takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. By following these steps, you can find self-help solutions, create a support request, and engage Microsoft representatives.
 
-
-
 1. **Open the support agent.**
 
    - Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
@@ -191,29 +189,28 @@ If the support agent is unavailable or isn't performant, the back-up support exp
       
 1. **Request support.**
 
-  - Provide any requested details, such as an affected environment. This information is critical to help Microsoft troubleshoot your issue.
+    - Provide any requested details, such as an affected environment. This information is critical to help Microsoft troubleshoot your issue.
   
-    > [!TIP]
-    > If the affected environment isn't listed, select **My environment is not listed** and provide the URL of the environment.
+      > [!TIP]
+      > If the affected environment isn't listed, select **My environment is not listed** and provide the URL of the environment.
     
     
-  - Select whether your request is [advisory or technical](support-overview.md#technical-support-vs-advisory-services). Some support plans don't have Advisory support.
-  - Set the [appropriate severity](support-overview.md#severity-and-responsiveness) for your request.
+    - Select whether your request is [advisory or technical](support-overview.md#technical-support-vs-advisory-services). Some support plans don't have Advisory support.
+    - Set the [appropriate severity](support-overview.md#severity-and-responsiveness) for your request.
   
-    > [!WARNING]
-    > - Submitting a **Severity A** request means you can engage with Microsoft until the issue is resolved. If you can't do so, file your case at a lower severity to avoid downgrade.
-    > - Selecting **Severity A** for a low priority issue results in automatic downgrade to an appropriate severity.
-    > - Selecting **Technical** in order to submit an **Advisory** request results in closure of your request. 
+      > [!WARNING]
+      > - Submitting a **Severity A** request means you can engage with Microsoft until the issue is resolved. If you can't do so, file your case at a lower severity to avoid downgrade.
+      > - Selecting **Severity A** for a low priority issue results in automatic downgrade to an appropriate severity.
+      > - Selecting **Technical** in order to submit an **Advisory** request results in closure of your request. 
     
-    
-  - Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
-  - Set your contact preferences and advanced diagnostic consent. To learn more, see [advanced diagnostics](/power-platform/admin/support-environment).
+    - Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
+    - Set your contact preferences and advanced diagnostic consent. To learn more, see [advanced diagnostics](/power-platform/admin/support-environment).
   
-    > [!IMPORTANT]
-    > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If consent is required but not provided, a Microsoft support representative contacts you to update the consent before proceeding.
+      > [!IMPORTANT]
+      > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If consent is required but not provided, a Microsoft support representative contacts you to update the consent before proceeding.
     
-  - Select **Create support request** to submit. You see confirmation when successful. You can manage the request on the [Support requests page](https://admin.powerplatform.microsoft.com/support/requests).
-  - If offered a customer satisfaction survey, respond with your perspective to improve the experience. Engineers review feedback.
+    - Select **Create support request** to submit. You see confirmation when successful. You can manage the request on the [Support requests page](https://admin.powerplatform.microsoft.com/support/requests).
+    - If offered a customer satisfaction survey, respond with your perspective to improve the experience. Engineers review feedback.
 
 ## Add a support plan
 To add a support plan or check the support plans currently associated with a product, select the **Support plans** button shown on any of the **Support** pages. Follow these instructions to add new support plans.
@@ -257,10 +254,9 @@ Troubleshooting dialogs guide you toward a solution if generative answers don't 
 
 :::image type="content" source="media/get-help-support/support-agent-generative-answer.png" alt-text="Screenshot of expanded Service Health card." lightbox="media/get-help-support/support-agent-generative-answer.png":::
 
-### Documentation search results
+### Documentation search results (Support experience only)
 
-(support Experience only.) You see the top three search results from Microsoft product documentation based on your selected product and issue description. Select a link to review the articles relevant to your issue.
-
+You see the top three search results from Microsoft product documentation based on your selected product and issue description. Select a link to review the articles relevant to your issue.
 
 ## Report an outage
 
