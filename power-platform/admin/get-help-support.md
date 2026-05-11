@@ -112,46 +112,43 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
    
 1. **Request support.**
 
-   - Provide any requested details, such as an affected environment. Microsoft uses this information to help troubleshoot your issue. 
+   1. Provide any requested details, such as an affected environment. Microsoft uses this information to help troubleshoot your issue. 
    
      > [!TIP]
      > If the affected environment isn't listed, select **My environment is not listed** and provide the URL of the environment.
      
-   - Select whether your request is [advisory or technical](support-overview.md#technical-support-vs-advisory-services). Some support plans don't have Advisory support.
+   1. Select whether your request is [advisory or technical](support-overview.md#technical-support-vs-advisory-services). Some support plans don't have Advisory support.
       
-   - Set the [appropriate severity](support-overview.md#severity-and-responsiveness) for your request. 
+   1. Set the [appropriate severity](support-overview.md#severity-and-responsiveness) for your request. 
    
      > [!WARNING]
      > - Submitting a **Severity A** request means you can engage with Microsoft until the issue is resolved. If you can't do so, file your case at a lower severity to avoid downgrade.
      > - Selecting **Severity A** for a low priority issue results in automatic downgrade to an appropriate severity.
      > - Selecting **Technical** in order to submit an **Advisory** request results in closure of your request. 
      
-   - Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
-   - Review the generated title and description for your request, and modify as needed. Set the date the issue occurred. If you're unsure, leave as current.
+   1. Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
+   1. Review the generated title and description for your request, and modify as needed. Set the date the issue occurred. If you're unsure, leave as current.
       
-   - Set your contact preferences and advanced diagnostic consent. Learn more about [advanced diagnostics](/power-platform/admin/support-environment).
+   1. Set your contact preferences and advanced diagnostic consent. Learn more about [advanced diagnostics](/power-platform/admin/support-environment).
    
      > [!IMPORTANT]
      > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If you don't provide consent when it's required, a Microsoft support representative contacts you to update the consent before proceeding.
      
-   - If available, a **Live chat** checkbox appears in contact preferences. If you leave it checked, a Microsoft representative joins the chat after support request creation.
+   1. If available, a **Live chat** checkbox appears in contact preferences. If you leave it checked, a Microsoft representative joins the chat after support request creation.
    
-   - Select **Create support request** to submit your request to Microsoft support. You receive a confirmation message when the request is created.
+   1. Select **Create support request** to submit your request to Microsoft support. You receive a confirmation message when the request is created.
    
-   -  If offered a customer satisfaction survey, respond with your perspective to improve the experience. Engineers review your feedback.
+   1.  If offered a customer satisfaction survey, respond with your perspective to improve the experience. Engineers review your feedback.
    
 ### Use the backup support experience
 
 If the support agent is unavailable or isn't performant, the back-up support experience is available automatically or by selecting the **Switch to webform** button at the top of the panel. Through this experience, you can describe your issue, review any self-help solutions, and create a support request, if needed.
 
-
-
 1. **Open back-up support.**
 
-   - Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-   - In the navigation pane, select **Support**. In the **Support** pane, select **Support requests**.
-
-     On the **Support requests** page, select **Get support**. Typically, the support agent loads. The back-up support experience shows in these scenarios.
+   1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+   1. In the navigation pane, select **Support**. In the **Support** pane, select **Support requests**.
+   1. On the **Support requests** page, select **Get support**. Typically, the support agent loads. The back-up support experience shows in these scenarios.
             
      | Scenario | Back-up support Behavior |
      | -------- | -------- |
@@ -159,56 +156,54 @@ If the support agent is unavailable or isn't performant, the back-up support exp
      | Support agent crashes | You're prompted to select the **Switch to webform** button at the top of the panel. An 8-hour cooldown period is triggered where the back-up support experience loads by default when selecting **Get support** to allow the issue to be resolved. |
      | Support agent isn't performant | In the case of a critical timeout, the **Switch to webform** button appears at the top of the panel. You can choose to select it or wait for the support agent to respond. |
      
-   - If you choose to or must switch to the back-up experience, leave feedback when prompted so Microsoft can diagnose and address the issues. 
+    If you choose to or must switch to the back-up experience, leave feedback when prompted so Microsoft can diagnose and address the issues. 
       
 1. **Describe the problem.**
 
-   - Select the product where you experienced the issue.
+   1. Select the product where you experienced the issue.
    
      > [!IMPORTANT]
      > - Selecting **Dynamics 365 Customer Service** for customer service *with another* *product* **misroutes and delays a request.**
      > - For administration issues or if you encountered an issue in the Power Platform admin center, select this as the product. 
      
-   - Select the best fit **Category** and **Subcategory** to help route the request to the appropriate support representative. 
+   1. Select the best fit **Category** and **Subcategory** to help route the request to the appropriate support representative. 
       
-   - Provide a summary title, then fully and [clearly describe the issue](/power-apps/maker/canvas-apps/service-request-support) in the description field. Provide as much detail as you can to help Microsoft understand the issue. All information is used to find solutions and becomes the **Title** and **Description** of any support request.
+   1. Provide a summary title, then fully and [clearly describe the issue](/power-apps/maker/canvas-apps/service-request-support) in the description field. Provide as much detail as you can to help Microsoft understand the issue. All information is used to find solutions and becomes the **Title** and **Description** of any support request.
       
-   - Set the date the issue occurred to help Microsoft troubleshoot the issue. If you're unsure or it isn't relevant, leave it set to current date and time.
+   1. Set the date the issue occurred to help Microsoft troubleshoot the issue. If you're unsure or it isn't relevant, leave it set to current date and time.
       
-   - Select **Next** to review available solutions for the issue.
+   1. Select **Next** to review available solutions for the issue.
       
 1. **Review solutions.**
 
-   - The **Product**, **Title**, and **Description** are used to search known issues, Microsoft documentation, and community content, resulting in a generative answer.
-      
-   - Review the provided answers to see if they address or resolve the issue.
-      
-   - If the answers don't resolve the issue, select **Next** to create your support request.
+    The **Product**, **Title**, and **Description** are used to search known issues, Microsoft documentation, and community content, resulting in a generative answer.
+
+    Review the provided answers to see if they address or resolve the issue. If the answers don't resolve the issue, select **Next** to create your support request.
       
 1. **Request support.**
 
-    - Provide any requested details, such as an affected environment. This information is critical to help Microsoft troubleshoot your issue.
+    1. Provide any requested details, such as an affected environment. This information is critical to help Microsoft troubleshoot your issue.
   
       > [!TIP]
       > If the affected environment isn't listed, select **My environment is not listed** and provide the URL of the environment.
     
     
-    - Select whether your request is [advisory or technical](support-overview.md#technical-support-vs-advisory-services). Some support plans don't have Advisory support.
-    - Set the [appropriate severity](support-overview.md#severity-and-responsiveness) for your request.
+    1. Select whether your request is [advisory or technical](support-overview.md#technical-support-vs-advisory-services). Some support plans don't have Advisory support.
+    1. Set the [appropriate severity](support-overview.md#severity-and-responsiveness) for your request.
   
       > [!WARNING]
       > - Submitting a **Severity A** request means you can engage with Microsoft until the issue is resolved. If you can't do so, file your case at a lower severity to avoid downgrade.
       > - Selecting **Severity A** for a low priority issue results in automatic downgrade to an appropriate severity.
       > - Selecting **Technical** in order to submit an **Advisory** request results in closure of your request. 
     
-    - Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
-    - Set your contact preferences and advanced diagnostic consent. To learn more, see [advanced diagnostics](/power-platform/admin/support-environment).
+    1. Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
+    1. Set your contact preferences and advanced diagnostic consent. To learn more, see [advanced diagnostics](/power-platform/admin/support-environment).
   
       > [!IMPORTANT]
       > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If consent is required but not provided, a Microsoft support representative contacts you to update the consent before proceeding.
     
-    - Select **Create support request** to submit. You see confirmation when successful. You can manage the request on the [Support requests page](https://admin.powerplatform.microsoft.com/support/requests).
-    - If offered a customer satisfaction survey, respond with your perspective to improve the experience. Engineers review feedback.
+    1. Select **Create support request** to submit. You see confirmation when successful. You can manage the request on the [Support requests page](https://admin.powerplatform.microsoft.com/support/requests).
+    1. If offered a customer satisfaction survey, respond with your perspective to improve the experience. Engineers review feedback.
 
 ## Add a support plan
 To add a support plan or check the support plans currently associated with a product, select the **Support plans** button shown on any of the **Support** pages. Follow these instructions to add new support plans.
