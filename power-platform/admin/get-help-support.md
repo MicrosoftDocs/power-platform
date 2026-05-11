@@ -85,13 +85,13 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
       
 1. **Describe the issue.**
 
-   [Clearly describe the full issue](/power-apps/maker/canvas-apps/service-request-support) to the agent. Provide as much detail as you can to help the agent understand and categorize. The agent uses all information to find solutions and add to the description for any support request.
-      
-   Indicate which product you're using. If the predicted product is incorrect, select **No**, and then specify the product name.
+    1. [Clearly describe the full issue](/power-apps/maker/canvas-apps/service-request-support) to the agent. Provide as much detail as you can to help the agent understand and categorize. The agent uses all information to find solutions and add to the description for any support request.
+          
+    1. Indicate which product you're using. If the predicted product is incorrect, select **No**, and then specify the product name.
    
-    > [!IMPORTANT]
-    > - Selecting "Dynamics 365 Customer Service" for customer service with another product **misroutes and delays a request.**
-    > - For administration issues or if you encountered an issue in Power Platform Admin Center (PPAC), select this as the product.
+      > [!IMPORTANT]
+      > - Selecting "Dynamics 365 Customer Service" for customer service with another product **misroutes and delays a request.**
+      > - For administration issues or if you encountered an issue in Power Platform admin center, select **Power Platfrom Administration** as the product.
      
 1. **Answer clarifying questions from the agent.**
 
@@ -114,25 +114,25 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
 
    1. Provide any requested details, such as an affected environment. Microsoft uses this information to help troubleshoot your issue. 
    
-     > [!TIP]
-     > If the affected environment isn't listed, select **My environment is not listed** and provide the URL of the environment.
+        > [!TIP]
+        > If the affected environment isn't listed, select **My environment is not listed** and provide the URL of the environment.
      
    1. Select whether your request is [advisory or technical](support-overview.md#technical-support-vs-advisory-services). Some support plans don't have Advisory support.
       
    1. Set the [appropriate severity](support-overview.md#severity-and-responsiveness) for your request. 
    
-     > [!WARNING]
-     > - Submitting a **Severity A** request means you can engage with Microsoft until the issue is resolved. If you can't do so, file your case at a lower severity to avoid downgrade.
-     > - Selecting **Severity A** for a low priority issue results in automatic downgrade to an appropriate severity.
-     > - Selecting **Technical** in order to submit an **Advisory** request results in closure of your request. 
+       > [!WARNING]
+       > - Submitting a **Severity A** request means you can engage with Microsoft until the issue is resolved. If you can't do so, file your case at a lower severity to avoid downgrade.
+       > - Selecting **Severity A** for a low priority issue results in automatic downgrade to an appropriate severity.
+       > - Selecting **Technical** in order to submit an **Advisory** request results in closure of your request. 
      
    1. Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
    1. Review the generated title and description for your request, and modify as needed. Set the date the issue occurred. If you're unsure, leave as current.
       
    1. Set your contact preferences and advanced diagnostic consent. Learn more about [advanced diagnostics](/power-platform/admin/support-environment).
    
-     > [!IMPORTANT]
-     > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If you don't provide consent when it's required, a Microsoft support representative contacts you to update the consent before proceeding.
+       > [!IMPORTANT]
+       > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If you don't provide consent when it's required, a Microsoft support representative contacts you to update the consent before proceeding.
      
    1. If available, a **Live chat** checkbox appears in contact preferences. If you leave it checked, a Microsoft representative joins the chat after support request creation.
    
