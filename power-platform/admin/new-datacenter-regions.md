@@ -5,7 +5,7 @@ author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
 ms.collection: get-started
-ms.date: 03/07/2025
+ms.date: 05/10/2026
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -46,6 +46,20 @@ The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 
 | NOR           | crm19.dynamics.com |
 | SGP           | crm20.dynamics.com |
 | KOR           | crm21.dynamics.com |
+
+## Macro region 
+Macro region represents the data residency boundary aligning with data residency laws for the given geography. Learn more about the countries available in a specific macro region. 
+
+| # | Macro region geography          | Countries                | Description                                               |
+|---|---------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------|
+|1  |North America                    |United States, Canada                                                             | Your data resides within the United States or Canada.| 
+|2  |The Americas                     |United States, Canada, Brazil | Your data resides within the Americas, including North and South America. |
+|3  | European Union (EU)  and European Free Trade Association (EFTA)       |France, Germany, Norway, Sweden, Switzerland, Poland, Italy, Ireland, Netherlands      | Your data resides within EU and EFTA member states which are European Union Data Boundary (EUDB) regions. | 
+|4  |Europe and United Kingdom (UK)                      | UK, France, Germany, Norway, Sweden, Switzerland, Poland, Italy, Ireland, Netherlands | Your data resides within EU and EFTA or the United Kingdom and it should not be considered EUDB. |
+|5  |Europe, UK, Middle East, Africa  | UK, France, Germany, Norway, Sweden, Switzerland, Poland, Italy,  Ireland, Netherlands, South Africa, United Arab Emirates (UAE) | Your data resides within Europe, UK, Middle East, or Africa.|   
+|6  |Asia-Pacific                     | Singapore, Australia*, India*, Japan, Korea                                           | Your data resides within the Asia Pacific region. |
+ 
+\* Australia and India geographies have tax-restrictions and need data residency alignment and accountability for compliance with local tax reporting rules and for auditability within jurisdiction.
 
 ## Migration process  
  This is the overall process for migrating to a new datacenter.  
