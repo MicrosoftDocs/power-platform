@@ -206,7 +206,11 @@ If the support agent is unavailable or isn't performant, the back-up support exp
     1. If offered a customer satisfaction survey, respond with your perspective to improve the experience. Engineers review feedback.
 
 ## Add a support plan
-To add a support plan or check the support plans currently associated with a product, select the **Support plans** button shown on any of the **Support** pages. Follow these instructions to add new support plans.
+To add a support plan or check the support plans currently associated with a product, select the **Support plans** button shown on any of the **Support** pages. 
+
+:::image type="content" source="media/get-help-support/support-plans-add-new-plan-panel.png" alt-text="Screenshot of Support agent pane with Issue step active." lightbox="media/get-help-support/support-plans-add-new-plan-panel.png":::
+
+Follow these instructions to add new support plans.
 
 - **View existing plans:** Choose the product to check the associated plans. The **Support plans** menu lists the resulting plans once loaded.
 
@@ -218,19 +222,19 @@ To add a support plan or check the support plans currently associated with a pro
 
 ## Self-help content types
 
-:::image type="content" source="media/get-help-support/support-plans-add-new-plan-panel.png" alt-text="Screenshot of Support agent pane with Issue step active." lightbox="media/get-help-support/support-plans-add-new-plan-panel.png":::
-
 During the solutions phase of support workflows, you might see several distinct types of content. This content helps pinpoint the causes of the issue and find resolutions. If a particular resource doesn't apply, you can choose to move forward.
 
 ### Service health
 
 Service health alerts notify you of active and recently resolved disruptions affecting your products and tenant. Expanding the **Service Health** card shows a title and preview of each alert along with a link to the details page. The details page contains the latest updates from Microsoft. You can notify Microsoft that you're seeking support for these issues by checking the relevant box and selecting **Submit**. You can also view active and recently resolved alerts on the [Support/Service Health](https://admin.powerplatform.microsoft.com/support/serviceHealth) page of the Power Platform admin center, and in the Microsoft admin center (where you can subscribe for email updates). For more information, see [View service health](view-service-health.md).
 
+:::image type="content" source="media/get-help-support/service-health-card-active-alerts.png" alt-text="Screenshot of Get support webform." lightbox="media/get-help-support/service-health-card-active-alerts.png":::
+
 ### Known issues
 
 Known issues represent bugs or product problems that product engineering teams identify and share. The details of the issue and any workarounds are provided. If your new issue seems related to an existing known issue, the support workflow displays details. You can review details by selecting the link. You can also search active and resolved known issues on the **Support Known Issues** page in the Power Platform admin center. For more information, see [View known issues](view-known-issues.md).
 
-:::image type="content" source="media/get-help-support/service-health-card-active-alerts.png" alt-text="Screenshot of Get support webform." lightbox="media/get-help-support/service-health-card-active-alerts.png":::
+:::image type="content" source="media/support-agent-known-issues-card.png" alt-text="Screenshot of Known Issues." lightbox="media/support-agent-known-issues-card.png":::
 
 ### Generative answers
 
@@ -239,13 +243,11 @@ Generative answers are created in real time based on your issue description from
 > [!IMPORTANT]
 > It's important to note that AI-generated content might be incorrect.
 
-:::image type="content" source="media/support-agent-known-issues-card.png" alt-text="Screenshot of Known Issues." lightbox="media/support-agent-known-issues-card.png":::
+:::image type="content" source="media/get-help-support/support-agent-generative-answer.png" alt-text="Screenshot of expanded Service Health card." lightbox="media/get-help-support/support-agent-generative-answer.png":::
 
 ### Dialogs
 
 Troubleshooting dialogs guide you toward a solution if generative answers don't resolve the issue. These dialogs often trigger if there's a level of ambiguity about your problem. You need to navigate these dialogs to a solution to proceed in many cases. Product teams create these dialogs to represent frequent problems, questions, and other topics seen in previous support requests. By navigating the dialog, you can both find answers and help Microsoft categorize the problem, so any support request is routed to the correct Microsoft support representative, and the owning product engineering team is alerted.
-
-:::image type="content" source="media/get-help-support/support-agent-generative-answer.png" alt-text="Screenshot of expanded Service Health card." lightbox="media/get-help-support/support-agent-generative-answer.png":::
 
 ### Documentation search results (Support experience only)
 
