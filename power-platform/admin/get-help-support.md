@@ -79,21 +79,21 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
 
 1. **Open the support agent.**
 
-   - Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-   - In the navigation pane, select **Support**. In the **Support** pane, select **Support requests**.
-   - On the **Support requests** page, select **Get support**. The **Support agent** pane is displayed. Using the chat experience, complete the following steps.
+    1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+    1. In the navigation pane, select **Support**. In the **Support** pane, select **Support requests**.
+    1. On the **Support requests** page, select **Get support**. The **Support agent** pane is displayed. Using the chat experience, complete the following steps.
       
 1. **Describe the issue.**
 
-   - [Clearly describe the full issue](/power-apps/maker/canvas-apps/service-request-support) to the agent. Provide as much detail as you can to help the agent understand and categorize. The agent uses all information to find solutions and add to the description for any support request.
+   [Clearly describe the full issue](/power-apps/maker/canvas-apps/service-request-support) to the agent. Provide as much detail as you can to help the agent understand and categorize. The agent uses all information to find solutions and add to the description for any support request.
       
-   - Indicate which product you're using. If the predicted product is incorrect, select **No**, and then specify the product name.
+   Indicate which product you're using. If the predicted product is incorrect, select **No**, and then specify the product name.
    
-     > [!IMPORTANT]
-     > - Selecting "Dynamics 365 Customer Service" for customer service with another product **misroutes and delays a request.**
-     > - For administration issues or if you encountered an issue in Power Platform Admin Center (PPAC), select this as the product.
+    > [!IMPORTANT]
+    > - Selecting "Dynamics 365 Customer Service" for customer service with another product **misroutes and delays a request.**
+    > - For administration issues or if you encountered an issue in Power Platform Admin Center (PPAC), select this as the product.
      
-1. **Answer clarifying questions.**
+1. **Answer clarifying questions from the agent.**
 
     The agent uses AI to interpret the issue description and might ask clarifying questions. Do your best to answer the questions. All information you provide is included in any support request description.
    
@@ -103,14 +103,12 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
      
 1. **Review solutions.**
 
-   - The agent goes through known issues and generates answers from documentation and community content by using a summary of your description. 
-      
-   - Review the solution content and follow the prompts to progress through solutions.
+    The agent goes through known issues and generates answers from documentation and community content by using a summary of your description. Review the solution content and follow the prompts to progress through solutions.
    
      > [!IMPORTANT]
      > AI-generated content might be incorrect.
      
-   - If the solution content doesn't address or resolve your issue, and you have an active support plan, you can choose to create a support request. 
+    If the solution content doesn't address or resolve your issue, and you have an active support plan, you can choose to create a support request. 
    
 1. **Request support.**
 
