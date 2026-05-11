@@ -121,18 +121,18 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
       
       1. Set the [appropriate severity](support-overview.md#severity-and-responsiveness) for your request. 
    
-        > [!WARNING]
-        > - Submitting a **Severity A** request means you can engage with Microsoft until the issue is resolved. If you can't do so, file your case at a lower severity to avoid downgrade.
-        > - Selecting **Severity A** for a low priority issue results in automatic downgrade to an appropriate severity.
-        > - Selecting **Technical** in order to submit an **Advisory** request results in closure of your request. 
+          > [!WARNING]
+          > - Submitting a **Severity A** request means you can engage with Microsoft until the issue is resolved. If you can't do so, file your case at a lower severity to avoid downgrade.
+          > - Selecting **Severity A** for a low priority issue results in automatic downgrade to an appropriate severity.
+          > - Selecting **Technical** in order to submit an **Advisory** request results in closure of your request. 
      
       1. Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
       1. Review the generated title and description for your request, and modify as needed. Set the date the issue occurred. If you're unsure, leave as current.
       
       1. Set your contact preferences and advanced diagnostic consent. Learn more about [advanced diagnostics](/power-platform/admin/support-environment).
    
-         > [!IMPORTANT]
-         > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If you don't provide consent when it's required, a Microsoft support representative contacts you to update the consent before proceeding.
+           > [!IMPORTANT]
+           > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If you don't provide consent when it's required, a Microsoft support representative contacts you to update the consent before proceeding.
        
       1. If available, a **Live chat** checkbox appears in contact preferences. If you leave it checked, a Microsoft representative joins the chat after support request creation.
          
