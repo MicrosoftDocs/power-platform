@@ -1,6 +1,6 @@
 ---
 title: View licensing and capacity recommendations
-description: Learn how the actions page helps admins manage licenses and capacity with weekly recommendations for better efficiency.
+description: Learn how the actions page in Power Platform admin center helps admins manage licenses and capacity with weekly recommendations for better efficiency.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: concept-article
@@ -21,9 +21,9 @@ ms.custom:
 
 # View licensing and capacity recommendations
 
-The actions page helps you optimize and manage licensing and capacity for your Power Platform tenant with actionable recommendations. These recommendations highlight ways to improve resource allocation, governance, and cost efficiency. You can view licensing and capacity recommendations in the [actions page](power-platform-advisor.md) in the Power Platform admin center.
+The [actions page](power-platform-advisor.md) in the Power Platform admin center helps you optimize and manage licensing and capacity for your Power Platform tenant with actionable recommendations. These recommendations highlight ways to improve resource allocation, governance, and cost efficiency. To see your recommendations on the the actions page, go to the [Power Platform admin center](https://admin.preview.powerplatform.microsoft.com) and select **Actions**.
 
-The following recommendations are grouped by type:
+The following information highlights recommendations that pertain to licenses and capacity, including the severity of the recommendation, refresh frequency, and whether the recommendation applies to managed environments only.
 
 ## Licenses
 
@@ -40,21 +40,21 @@ The following recommendations relate to licenses:
 This recommendation lists the number of pending license requests in your tenant. Delay in license assignment can lead to loss of productivity and might result in noncompliant use of premium apps and resources.
 
 > [!IMPORTANT]
-> You must have adequate permissions on the Microsoft 365 admin center to assign licenses. If you don't have the right privileges, you may share the recommendation with someone in your organization who can assign the licenses to the requested users.
+> You must have adequate permissions in the Microsoft 365 admin center to assign licenses. If you don't have the right privileges, you can share the recommendation with someone in your organization who can assign the licenses to the requested users. For more information, see [About administrator roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 - **Severity**: High  
 - **Refresh Frequency**: Weekly  
 - **Managed environments only**: Yes  
 
-### User(s) are out of compliance in Managed Environments — Action required
+### Users are out of compliance in Managed Environments — Action required
 
-This recommendation lists users in Managed Environments that have used apps without required licenses. Every user running an app in a Managed Environment must have a Power Apps Premium license or a qualifying license that includes premium Power Apps usage rights. Starting June 2026, users without appropriate licenses will receive in-app compliance notifications. For more information, see [Managed Environments licensing compliance FAQ](managed-environment-licensing.md#faq).
+This recommendation lists users in Managed Environments that use apps without required licenses. Every user running an app in a Managed Environment must have a Power Apps Premium license or a qualifying license that includes premium Power Apps usage rights. Starting June 2026, users without appropriate licenses receive in-app compliance notifications. For more information, see [Managed Environments licensing compliance FAQ](managed-environment-licensing.md#faq).
 
-The list shows usage in last 90 days calculated from the refresh date shown in the recommendation. There are following actions available in the recommendation:
+The list shows usage in the last 90 days calculated from the refresh date shown in the recommendation. The recommendation provides the following actions you can take as an admin to review and assign licenses to users in Managed Environments:
 
-1. **Download License Report** - This option navigates admins directly to the **Download Report** panel in the Power Apps Licensing, with the report "Users requiring licenses in Managed Environments" selected. It is recommended that admins download and review this detailed report that provides the app, environment and license information for users in managed environments without required licenses.
+1. **Download License Report** - This option takes you directly to the **Download Report** panel in the Power Apps Licensing, with the report **Users requiring licenses in Managed Environments** selected. You should download and review this detailed report that provides the app, environment, and license information for users in managed environments without required licenses.
 
-2. **Download as CSV** - This option allows downloading only the list of users visible in the recommendation. Since the list only fetches 500 user records at a time, it is advised that administrators utilize the **Download License Report** action and use detailed reports for review.
+1. **Download as CSV** - This option only allows you to download the list of users visible in the recommendation. Since the list only fetches 500 user records at a time, you should use the **Download License Report** action and use detailed reports for review.
 
 - **Severity**: High  
 - **Refresh Frequency**: Daily  
